@@ -4,7 +4,7 @@ description: This article describes how to use agentless exception monitoring in
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 03/13/2017
+ms.date: 03/14/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -12,11 +12,11 @@ ms.topic: article
 ms.assetid: fe53bb3b-9072-4b7d-a518-a210c3e1e17f
 ---
 
-# Client monitoring using Agentless Exception Monitoring in Operations Manager
+# Client monitoring using Error Reporting in Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
-The Client Monitoring feature of System Center 2016 - Operations Manager enables you to monitor operating systems and applications for errors and participate in the Customer Experience Improvement Program (CEIP).  
+The Client Monitoring feature of System Center 2016 - Operations Manager enables you to monitor operating systems and applications for errors and participate in the Error Reporting program.  The Error Reporting program collects diagnostics and usage data about Operations Manager, which is used by Microsoft to improve the installation experience, quality, and security of future releases. 
   
 Agentless Exception Monitoring (AEM) is a component of the Client Monitoring feature in Operations Manager. AEM enables you to monitor operating systems and applications for errors within your organization. By default, when a Microsoft application encounters a severe error, it creates a report that can be sent to Microsoft to consolidate data that can lead to a reduction in errors. Using AEM, you can direct these reports to an Operations Manager management server. Operations Manager can then provide detailed views and reports on this consolidated error data. Using this data, you can determine how often an operating system or application experiences an error and the number of affected computers and users.  
   
@@ -37,14 +37,40 @@ A state view that lists application errors by error group.
   
 **System Error Group View**  
 A state view that lists the computers that have an operating system failure.  
+
+## Forwarding Client Error Reports (Client Monitoring)
+The Microsoft Error Reporting (MER) service collects information about how you use Microsoft programs and about some of the issues you might encounter. Microsoft uses this information to improve the products and features you use most often and to help solve issues. Participation in the program is strictly voluntary.  
   
+When you choose to participate in the reporting service, you configure clients with Group Policy to redirect error reports to an Operations Manager management server, instead of reporting directly to Microsoft. The management servers are configured to forward these reports to Microsoft.  
+  
+> [!IMPORTANT]  
+> The reports do not contain contact information about you or your organization, such as names or an address.  
+  
+The error reports forwarded from your organization to Microsoft are combined with reports from other organizations and individual customers to help Microsoft solve issues and improve the Microsoft products and features that customers use most often. For more information about the Microsoft Error Reporting service, see [the privacy statement for Microsoft Error Reporting Service page](https://privacy.microsoft.com/microsoft-error-reporting-privacy-statement).  
+  
+Use the following procedure to configure error reporting settings. The management server must have access to the Internet to participate in the program.  
+  
+  
+1.  Log on to a management server with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.  
+  
+2.  In the Operations console, click **Administration**.  
+  
+3.  In the **Administration** workspace, expand **Administration**, and then click **Settings**.  
+  
+4.  In **Settings**, expand **Type: General**, right-click **Privacy**, and then click **Properties**.  
+  
+5.  In the **Global Management Server Group Settings - Privacy** dialog box, on the  **Diagnostic and Usage Data Settings** tab, click **Yes, I am willing to send data to Microsoft** to send collected data to Microsoft or click **No, I do not prefer to send data to Microsoft** to decline participation. Then click **OK**.  
+  
+    > [!NOTE]  
+    > You can click **Operations Manager Privacy Statement** to view information about the  program, including the privacy statement.  
+
 ## How to configure a management server for client monitoring
 Use the following procedures to configure a management server for the server component of the Client Monitoring feature of System Center Operations Manager.
 
 > [!IMPORTANT]
-> If you plan to configure the management server to forward error reports to Microsoft and receive links to available solutions for those errors or participate in the Customer Experience Improvement Program (CEIP), you must first configure the management server's proxy settings if it uses a proxy server to access the Internet.
+> If you plan to configure the management server to forward error reports to Microsoft and receive links to available solutions for those errors or participate in Microsoft Error Reporting, you must first configure the management server's proxy settings if it uses a proxy server to access the Internet.
 
-The Operations Manager Client Monitoring Configuration Wizard is used to configure the server component of Client Monitoring on an Operations Manager management server. To configure the server component of Client Monitoring on multiple management servers, run the wizard once for each management server. An example of when you might configure multiple management servers for Client Monitoring is if the connection between specific clients and management servers is less expensive.
+The Operations Manager Client Monitoring Configuration Wizard is used to configure the server component of the feature on an Operations Manager management server. To configure the server component of Client Monitoring on multiple management servers, run the wizard once for each management server. An example of when you might configure multiple management servers for Client Monitoring is if the connection between specific clients and management servers is less expensive.
 
 > [!IMPORTANT]
 > The management server and error reporting clients must be in the same or fully trusted domains.
@@ -60,11 +86,9 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
     > [!NOTE]
     > The **Configure Client Monitoring** option will be unavailable if the selected computer is a gateway server.
 
-### Configure client monitoring using the Client Monitoring Configuration Wizard
+5.  On the **Introduction** page of the **Client Monitoring Configuration Wizard**, click **Next**. The Introduction page is skipped if the wizard has run previously and the **Do not show this page again** check box was selected.
 
-1.  On the **Introduction** page of the **Client Monitoring Configuration Wizard**, click **Next**. The Introduction page is skipped if the wizard has run previously and the **Do not show this page again** check box was selected.
-
-2.  On the **Customer Experience Improvement Program** page, do one of the following:
+6.  On the **Diagnostic and Usage Data** page, do one of the following:
 
     -   Leave the default option of **No** if you do not want your organization to participate in the program, and then click **Next**.
 
@@ -76,47 +100,47 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
     3.  Type the appropriate **Port**, or leave the default of 51907, and then click **Next**.
 
-3.  On the **Error Collection** page, do the following:
+7.  On the **Error Collection** page, do the following:
 
     1.  Type the local or attached **File Share Path**, such as C:\ErrorData, for the management server that will be used to collect error reports. The file share will be created at the local path on the management server and shared with the necessary permissions.
 
         > [!IMPORTANT]
         > The file share path must be on an NTFS partition and have at least 2 GB of free disk space. It is recommended that the path is no longer than 120 characters. The file share path can be a local drive path on the selected management server such as C:\ErrorData, or a UNC path to an existing network share such as \\Server\FileShare\ErrorData.
 
-    2.  Select **Collect application errors from Windows Vista or later computers** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
+    2.  Select **Collect application errors from Windows Vista-bassed or later clients** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
 
-    3.  Type the **Organization Name**, using no more than 22 characters, and then click **Next**. The Organization Name can display on computers experiencing errors that are running Windows Server 2003 and earlier operating systems.
+    3.  Type the **Organization Name to Use**, using no more than 22 characters, and then click **Next**. 
 
-4.  On the **Error Forwarding** page, do one of the following:
+8.  On the **Configure Error Forwarding to Microsoft** page, do one of the following:
 
-    -   Leave the **Automatically forward all collected errors to Microsoft** check box cleared, and then click **Next**.
+    -   Leave the **Forward all collected errors to Microsoft (Recommended)** check box cleared, and then click **Next**.
 
     -   Or
 
-    1.  Select **Automatically forward all collected errors to Microsoft** if the management server is connected to the Internet and you want to forward error reports to Microsoft and receive links to available solutions for those errors.
+    1.  Select **Forward all collected errors to Microsoft (Recommended)** if the management server is connected to the Internet and you want to forward error reports to Microsoft and receive links to available solutions for those errors.
 
-    2.  Select **Detailed** to help ensure Microsoft can provide a solution to the issue, or leave the default setting of **Basic**.
+    2.  Select **Detailed (the error signature and requested additional data)** to help ensure Microsoft can provide a solution to the issue, or leave the default setting of **Basic (only the error signature)**.
 
     3.  Click **Next**.
 
-5.  On the **Create File Share** page, do one of the following:
+9.  On the **Create File Share** page, do one of the following:
 
-    -   Select an **Existing User Account** from the list, and then click **Next**.
+    -   Select an **Existing user account** from the list, and then click **Next**.
 
-    -   Select **Other user account**, type the **User name** and **Password**, select the **Domain** from the list, and then click **Next**.
+    -   Select **Other user account (will not be saved)**, type the **User name** and **Password**, select the **Domain** from the list, and then click **Next**.
 
         > [!IMPORTANT]
-        > The account must have the permissions necessary to create a file share on the path provided in step 3a.
+        > The account must have the permissions necessary to create a file share on the path provided in step 7a.
 
-6.  On the **Create file Share: Task Status** page, after the file share is successfully created, click **Next**.
+10.  On the **Create file Share: Task Status** page, after the file share is successfully created, click **Next**.
 
     > [!NOTE]
     > To modify the Client Monitoring settings on the management server, such as the file share, you must disable and then re-enable Client Monitoring on the management server. You must also then modify the Client Monitoring Group Policy settings on the clients.
 
-7.  On the **Client Configuration Settings** page, type or **Browse** to the location you want to save the settings from the Client Monitoring Configuration Wizard. These settings are saved in a Group Policy template file named *ServerName*.ADM. Click **Finish**.
+11.  On the **Client Configuration Settings** page, type or **Browse** to the location you want to save the settings from the Client Monitoring Configuration Wizard. These settings are saved in a Group Policy template file named *ServerNameFQDN*.ADM. Click **Finish**.
 
     > [!IMPORTANT]
-    > You must use the *ServerName*.ADM file to configure clients to redirect their Client Monitoring data to the management server. For more information, see the procedure below.
+    > You must use the *ServerNameFQDN*.ADM file to configure clients to redirect their Client Monitoring data to the management server. For more information, see the procedure below.
 
 ## How to configure clients for Client Monitoring
 
@@ -127,7 +151,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
 2.  If needed, disable the **Turn off Windows Error Reporting** policy. This policy can be found in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
 
-3.  Add the Agentless Exception Monitoring (AEM) Group Policy administrative template (*ServerName*.ADM) to the domain or local computer policy. The ADM file is created when the Client Monitoring Configuration Wizard is run.
+3.  Add the Agentless Exception Monitoring (AEM) Group Policy administrative template (*ServerNameFQDN*.ADM) to the domain or local computer policy. The ADM file is created when the Client Monitoring Configuration Wizard is run.
 
         > [!NOTE]
         > Use the same procedure to **Disable** the Group Policy settings, thereby disabling Client Monitoring on the clients.
@@ -150,7 +174,7 @@ You can help decrease the time it takes to diagnose and resolve operating system
 7.  In the **Diagnostic Data Collection Configuration** dialog box, specify the **Files**, **WMI Queries**, and **Registry Keys** you want to collect from the computers experiencing the error, and then click **OK**. A computer will send the specified data in an error report to the management server on the next occurrence of an error in the error group.  
   
     > [!NOTE]  
-    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [http://go.microsoft.com\fwlink\?LinkId\=71799](http://go.microsoft.com/fwlink/?LinkId=71799).  
+    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [WMI Documentation](https://msdn.microsoft.com/library/aa394582%28v=vs.85%29.aspx).  
   
 8.  In the **Error Group Responses** dialog box, select **Custom error information**, type the URL for the custom error information, such as **http://server/errors/100.htm**, click **Test Link**, and then click **OK**.  
 
@@ -196,28 +220,3 @@ When you enable Client Monitoring for a management group, you can configure it t
   
 2.  Click **OK**.  
 
-## Forwarding Client Error Reports (Client Monitoring)
-The Microsoft Customer Experience Improvement Program (CEIP) collects information about how you use Microsoft programs and about some of the issues you might encounter. Microsoft uses this information to improve the products and features you use most often and to help solve issues. Participation in the program is strictly voluntary.  
-  
-When you choose to participate in the CEIP, you configure clients with Group Policy to redirect CEIP reports to an Operations Manager management server, instead of reporting directly to Microsoft. The management servers are configured to forward these reports to Microsoft.  
-  
-> [!IMPORTANT]  
-> The CEIP reports do not contain contact information about you or your organization, such as names or an address.  
-  
-The CEIP reports forwarded from your organization to Microsoft are combined with CEIP reports from other organizations and individual customers to help Microsoft solve issues and improve the Microsoft products and features that customers use most often. For more information about the CEIP, see [the CEIP page](http://go.microsoft.com/fwlink/p/?linkid=75040).  
-  
-Use the following procedure to configure CEIP settings. The management server must have access to the Internet to participate in the program.  
-  
-  
-1.  Log on to a management server with an account that is a member of the Operations Manager Administrators role for the Operations Manager management group.  
-  
-2.  In the Operations console, click **Administration**.  
-  
-3.  In the **Administration** workspace, expand **Administration**, and then click **Settings**.  
-  
-4.  In **Settings**, expand **Type: General**, right-click **Privacy**, and then click **Properties**.  
-  
-5.  In the **Global Management Server Group Settings - Privacy** dialog box, on the  **CEIP** tab, click **Join the Customer Experience Improvement Program (recommended)** to join the CEIP program or click **I don't want to join the program at this time** to decline participation. Then click **OK**.  
-  
-    > [!NOTE]  
-    > You can click **Tell me more about the program** to view information about the CEIP program, including the privacy statement.  
