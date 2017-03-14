@@ -94,22 +94,22 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
     Or
 
-    1.  Select **Yes**, if you want your organization to participate in the program.
+      1.  Select **Yes**, if you want your organization to participate in the program.
 
-    2.  Leave **Use Secure Socket Layer (SSL) protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
+      2.  Leave **Use Secure Socket Layer (SSL) protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
 
-    3.  Type the appropriate **Port**, or leave the default of 51907, and then click **Next**.
+      3.  Type the appropriate **Port**, or leave the default of 51907, and then click **Next**.
 
 7.  On the **Error Collection** page, do the following:
 
-    1.  Type the local or attached **File Share Path**, such as C:\ErrorData, for the management server that will be used to collect error reports. The file share will be created at the local path on the management server and shared with the necessary permissions.
+      1.  Type the local or attached **File Share Path**, such as C:\ErrorData, for the management server that will be used to collect error reports. The file share will be created at the local path on the management server and shared with the necessary permissions.
 
         > [!IMPORTANT]
         > The file share path must be on an NTFS partition and have at least 2 GB of free disk space. It is recommended that the path is no longer than 120 characters. The file share path can be a local drive path on the selected management server such as C:\ErrorData, or a UNC path to an existing network share such as \\Server\FileShare\ErrorData.
 
-    2.  Select **Collect application errors from Windows Vista-bassed or later clients** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
+      2.  Select **Collect application errors from Windows Vista-bassed or later clients** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
 
-    3.  Type the **Organization Name to Use**, using no more than 22 characters, and then click **Next**. 
+      3.  Type the **Organization Name to Use**, using no more than 22 characters, and then click **Next**. 
 
 8.  On the **Configure Error Forwarding to Microsoft** page, do one of the following:
 
@@ -117,11 +117,11 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
     Or
 
-    1.  Select **Forward all collected errors to Microsoft (Recommended)** if the management server is connected to the Internet and you want to forward error reports to Microsoft and receive links to available solutions for those errors.
+      1.  Select **Forward all collected errors to Microsoft (Recommended)** if the management server is connected to the Internet and you want to forward error reports to Microsoft and receive links to available solutions for those errors.
 
-    2.  Select **Detailed (the error signature and requested additional data)** to help ensure Microsoft can provide a solution to the issue, or leave the default setting of **Basic (only the error signature)**.
+      2.  Select **Detailed (the error signature and requested additional data)** to help ensure Microsoft can provide a solution to the issue, or leave the default setting of **Basic (only the error signature)**.
 
-    3.  Click **Next**.
+      3.  Click **Next**.
 
 9.  On the **Create File Share** page, do one of the following:
 
@@ -146,15 +146,15 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
 1.  Run the Group Policy Object Editor (gpedit.msc) for the domain or local computer.
 
-        > [!NOTE]
-        > For information about Group Policy, see [http://go.microsoft.com/fwlink/?LinkId=156845](http://go.microsoft.com/fwlink/?LinkId=156845).
+       > [!NOTE]
+       > For information about Group Policy, see [http://go.microsoft.com/fwlink/?LinkId=156845](http://go.microsoft.com/fwlink/?LinkId=156845).
 
 2.  If needed, disable the **Turn off Windows Error Reporting** policy. This policy can be found in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
 
 3.  Add the Agentless Exception Monitoring (AEM) Group Policy administrative template (*ServerNameFQDN*.ADM) to the domain or local computer policy. The ADM file is created when the Client Monitoring Configuration Wizard is run.
 
-        > [!NOTE]
-        > Use the same procedure to **Disable** the Group Policy settings, thereby disabling Client Monitoring on the clients.
+       > [!NOTE]
+       > Use the same procedure to **Disable** the Group Policy settings, thereby disabling Client Monitoring on the clients.
 
 ## How to customize client monitoring data collection and solution response URLs for error groups
 You can help decrease the time it takes to diagnose and resolve operating system and application errors in your organization by customizing the data that is collected in error reports by computers experiencing errors and the solution response URL for an error group. The solution response URL can point to an appropriate location in a knowledge base.  
@@ -208,15 +208,15 @@ When you enable Client Monitoring for a management group, you can configure it t
   
 1.  On the **Error Transmission** tab of the **Global Management Server Settings - Privacy** dialog box, do one or more of the following:  
   
-       1.  Select **Upload diagnostic data collection request,** select the additional diagnostic data that you want to send with error reports from computers reporting errors to the management servers, and then forward from the management server to Microsoft with the error reports.  
+      1.  Select **Upload diagnostic data collection request,** select the additional diagnostic data that you want to send with error reports from computers reporting errors to the management servers, and then forward from the management server to Microsoft with the error reports.  
   
-       2.  Set **Maximum number of CAB files to send to Microsoft per error group** to help Microsoft diagnose the error. Ten is the recommended number.  
+      2.  Set **Maximum number of CAB files to send to Microsoft per error group** to help Microsoft diagnose the error. Ten is the recommended number.  
   
-       3.  Select **Display links to solutions from Microsoft on error reporting computers**. A link to available solutions will display to end users after the error is first encountered and the link to the solution is downloaded to the management server.  
+      3.  Select **Display links to solutions from Microsoft on error reporting computers**. A link to available solutions will display to end users after the error is first encountered and the link to the solution is downloaded to the management server.  
   
-       4.  Select **Display links to surveys from Microsoft on error reporting computers**.  
+      4.  Select **Display links to surveys from Microsoft on error reporting computers**.  
   
-       5.  Specify the **Default solution link when no Microsoft solution is available**. This could be an internal Web page for technical support, for example.  
+      5.  Specify the **Default solution link when no Microsoft solution is available**. This could be an internal Web page for technical support, for example.  
   
 2.  Click **OK**.  
 
