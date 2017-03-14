@@ -33,7 +33,7 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 #### DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
 **Description**: Memory consumption on the DPM Server increases continuously, reaching about 90%, leading to the DPM server slowing down.
 
-**Workaround**: The issue was found to lie in the underlying layers. The Windows Server team will release a fix for it in February, 2017.
+**Workaround**: The issue was found to lie in the underlying layers. The Windows Server team will release a fix for it soon.
 
 
 #### Hyper-V VMs are protected twice on VM upgrade
