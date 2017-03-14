@@ -185,18 +185,13 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To identify the reporting server and instance names used by data warehouse management server  
 
-1.  Log on to the data warehouse management server as a user with administrative credentials.  
-
-     On the Windows desktop, click **Start**, and then click **Run**.  
-
-     In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
-
-     In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\\Common\\Reporting**, and then make note of the following registry values:  
+1. Log on to the data warehouse management server as a user with administrative credentials.  
+2. On the Windows desktop, click **Start**, and then click **Run**.  
+3. In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
+4. In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\\Common\\Reporting**, and then make note of the following registry values:  
 
     -   Server  
-
     -   ServerInstance  
-
     -   WebServiceURL  
 
 #### To identify the service account used by the data warehouse management server  
