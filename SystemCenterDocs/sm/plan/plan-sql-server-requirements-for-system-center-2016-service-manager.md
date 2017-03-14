@@ -1,5 +1,6 @@
 ---
-description: The article describes SQL Server requirements for System Center 2016 - Service Manager.
+title:  SQL Server requirements for Service Manager
+description: The article describes SQL Server requirements for Service Manager.
 manager:  carmonm
 ms.topic:  article
 ms.author: banders
@@ -7,12 +8,11 @@ author: bandersmsft
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 02/02/2017
-title:  SQL Server Requirements for Service Manager
 ms.technology: service-manager
 ms.assetid:  26697203-df1e-4232-b9be-7c9976a362b8
 ---
 
-# SQL Server Requirements for Service Manager
+# SQL Server requirements for System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -36,7 +36,7 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 For information about the specific versions of SQL Server that are supported in System Center 2016 - Service Manager see [Software Requirements for Service Manager](plan-software-requirements-for-system-center-2016-service-manager.md).
 
-## Allow Updates
+## Allow updates
 
 To either install or upgrade System Center 2016 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 2016 - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
 
@@ -54,7 +54,7 @@ In the results table, examine the value for "run_value". If the value of "run va
 sp_configure 'allow updates',0 reconfigure with override
 ```
 
-## AlwaysOn Availability Groups Considerations for Service Manager Databases
+## AlwaysOn Availability Groups considerations for Service Manager databases
 
 SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2016 - Service Manager.
 

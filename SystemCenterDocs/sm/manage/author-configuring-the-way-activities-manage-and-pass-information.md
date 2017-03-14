@@ -1,6 +1,7 @@
 ---
-title: Configuring the Way Activities Manage and Pass Information
-manager: cfreeman
+title: Configure the way activities manage and pass information
+description: You can configure the way that activities manage and pass information in Service Manager authoring.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 1c7f52a4-3af1-4640-a71c-157dcc8e7f49
 ---
 
-# Configuring the Way Activities Manage and Pass Information
+# Configure the way activities manage and pass information in Service Manager authoring
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -30,7 +31,7 @@ The activity properties provide ways to transfer data. For the Woodgrove Bank cu
 
  For larger, more complex workflows, you have an additional option. To pass values from one activity to another, complete the steps in How to Set an Activity Property to Use a Value from Another Activity.  
 
-## How to Set an Activity Property to a Constant Value
+## Set an activity property to a constant value
 
 In the Woodgrove Bank customization scenario, Ken uses this procedure to set the **Active Directory name** property of the **Add AD DS Computer to Group** activity.  
 
@@ -46,7 +47,7 @@ In the Woodgrove Bank customization scenario, Ken uses this procedure to set the
 
      For example, for the **Add AD DS Computer to Group** activity, click **Computer Domain name**, and in the text box, type **woodgrove.com**.  
 
-## How to Set an Activity Property to Use a Value from Another Activity
+## Set an activity property to use a value from another activity
 
 Use this procedure in the Service Manager Authoring Tool to configure an activity to obtain its property values from another activity in the workflow. This process is referred to as "binding" one property to another.  
 
@@ -60,7 +61,7 @@ Use this procedure in the Service Manager Authoring Tool to configure an activit
 
 4.  Click **OK** to close the dialog box.  
 
-## How to Set an Activity Property to Use a Value from the Trigger Class
+## Set an activity property to use a value from the trigger class
 
 Use this procedure in the Service Manager Authoring Tool to set a property to retrieve its value from the Service Manager class used to trigger the workflow. You cannot use this method with a workflow that has a Timer trigger.  
 

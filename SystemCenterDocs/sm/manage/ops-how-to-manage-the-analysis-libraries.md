@@ -1,6 +1,7 @@
 ---
-title: How to Manage the Analysis Libraries
-manager: cfreeman
+title: Manage the analysis libraries
+description: Explains how to manage the analysis libraries in the Service Manager console.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 5f3e94e5-6706-4ef4-a511-a21c5d6b98f8
 ---
 
-# How to Manage the Analysis Libraries
+# Manage the analysis libraries in the Service Manager console
 
 >Applies To: System Center 2016 - Service Manager
 

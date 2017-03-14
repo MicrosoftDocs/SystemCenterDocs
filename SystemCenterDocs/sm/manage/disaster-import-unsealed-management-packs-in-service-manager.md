@@ -1,6 +1,7 @@
 ---
-title: Import Unsealed Management Packs in Service Manager
-manager: cfreeman
+title: Import unsealed management packs
+description: Describes how to import Service Manager unsealed management packs for disaster recovery.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,13 +15,13 @@ ms.topic: article
 ms.assetid: 4b9bfc86-eab3-4dd5-8cb2-6f0004ad36fa
 ---
 
-# Import Unsealed Management Packs in Service Manager
+# Import Service Manager unsealed management packs
 
 >Applies To: System Center 2016 - Service Manager
 
 After you have restored your System Center 2016 - Service Manager management server, the next step is to import unsealed management packs.  
 
-## How to Import Management Packs
+## Import management packs
 
 You can use this procedure to import the unsealed management packs that you saved earlier as part of your disaster recovery procedures for Service Manager.  
 

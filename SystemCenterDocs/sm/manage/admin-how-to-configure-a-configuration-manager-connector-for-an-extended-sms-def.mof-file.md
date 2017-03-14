@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure a Configuration Manager connector for an extended SMS_def.mof file
+description: Describes how you can configure a Configuration Manager connector for an extended SMS_def.mof file used by Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
-ms.technology:  service-manager
-ms.assetid:  26a8586b-a5f5-47a9-9bf8-626ef75d48eb
+ms.technology: service-manager
+ms.assetid: 26a8586b-a5f5-47a9-9bf8-626ef75d48eb
 ---
 
-# How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File
+# Configure a Configuration Manager connector for an extended SMS_def.mof file used by Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +22,7 @@ When you create a Configuration Manager connector in Service Manager, you can se
 
 If the Configuration Manager SMS_def.mof file has been extended to collect additional hardware inventory data, which you also want to import into Service Manager, you must create a new custom management pack that defines that additional data. Then, you have to create a new Configuration Manager connector and configure it to use the new custom management pack.
 
-## Importing Extended Hardware Inventory Data from Configuration Manager
+## Import extended hardware inventory data from Configuration Manager
 To import extended hardware inventory data from Configuration Manager, you must author a custom Configuration Manager connector management pack. There are two approaches to implementing a custom Configuration Manager connector:
 
 -   Create a custom Configuration Manager connector management pack that defines the extended data that you want to import and then create two connectors. Configure one connector to use the default System Center Configuration Manager Connector Configuration management pack to import the data that is defined by default. Configure the second connector to use the custom management pack to import the additional extended data.
@@ -41,7 +41,7 @@ The high-level steps to importing extended hardware inventory data are as follow
 
 4.  The Configuration Manager connector imports the data.
 
-### Working with a Custom Configurations Manager Connector Management Pack
+### Work with a custom Configuration Manager Connector management pack
 Consider the following tips when you are working with a custom Configurations Manager Connector management pack:
 
 -   Semantic errors in the connector configuration templates in the management pack do not prevent the management pack from being imported, and they are logged to the event log. In this case, you must delete the management pack, correct the errors, and reimport the management pack.
@@ -54,17 +54,17 @@ Consider the following tips when you are working with a custom Configurations Ma
 
 -   Unlike other management packs, the custom Configuration Manager Connector management pack cannot be versioned. Importing a later version of the management pack will succeed. However, the connector configuration in the management pack will be ignored, or it might cause validation errors that are logged to the event log.
 
-## Creating a Custom Configuration Manager Connector Configuration Management Pack
+## Create custom Configuration Manager Connector Configuration management pack
 A custom Configuration Manager Connector Configuration management pack is similar in structure to the default Configuration Manager Connector management pack. It must contain the two object templates **DataProvider** and **DataConsumer** that specify how the data should be imported and applied.
 
-### DataProvider Section
+### DataProvider section
 The **DataProvider** section provides information, such as which data to import, that you must have when you are importing data from Configuration Manager into the staging tables of **LinkingFramework**. The **DataProvider** section includes the queries that run on the Configuration Manager site database; directives for staging table creation; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
-### DataConsumer Section
+### DataConsumer section
 
 The **DataConsumer** section provides information about reading the data from staging tables and writing it to the **ServiceManager** database's instances space, such as **Entities** or **Relationships**. The **DataConsumer** section includes queries that run on the staging tables; mapping to the Service Manager type system; custom SQL scripts; and information that is relevant for incremental synchronization, such as watermarking and batching.
 
-### Structure of the DataProvider and DataConsumer Object Templates Sections
+### Structure of the DataProvider and DataConsumer object templates sections
 Basically, the **DataProvider** and the **DataConsumer** are object templates that are targeted to a projection type. The following code shows the general structure of the **DataProvider** and the **DataConsumer** sections:
 
 ```
@@ -85,7 +85,7 @@ In this code, **DataTable**, **Field**, and **DataCollection** are defined as fo
 
 -   **DataCollection**. A set of data tables to be transferred in one data transfer job or session. It defines which data tables are included in this data collection.
 
-## Properties in the Custom Management Pack
+## Properties in the custom management pack
 The following table provides the details about each property in the custom Configuration Manager Connector Configuration management pack. Use these guidelines when you create the custom management pack.
 
 |Property|Expected value|Validation after import|
@@ -123,12 +123,12 @@ The following table provides the details about each property in the custom Confi
 |DataTables|Comma-separated value (CSV) list of tables referencing this collection||
 |Settings|In **DataProvider** template-Not present<br /><br />In **DataConsumer** template-Indicates type mapping|Escaped XML with following syntax:<br /><br />`<TypeName>Microsoft.Windows.Computer</TypeName>`<br /><br />`<MPName>Microsoft.Windows.Library</MPName>`<br /><br />`<MPVersion>version of MP</MPVersion>`<br /><br />`<MPToken>token for MP</MPToken>`|
 
-## Sample of Custom Configuration Manager Connector Configuration Management Packs
+## Custom Configuration Manager Connector Configuration management packs samples
 The following are schema definitions and Configuration Manager Connector management pack samples that import data from the Configuration Manager SCCM_Ext.vex_GS_PC_BIOS view.
 
 Refer to the table earlier in this topic for more information about the properties of these management packs. Use an XML editor, such as the editor in Microsoft Visual Studio, to modify these samples to fit your import scenarios.
 
-### Importing Data from a Hosted Class
+### Import data from a hosted class
 When you are specifying a class that is hosted, the view in the **DataConsumer** template should include columns for the key property of the parent class. In this sample, the class that contains the BIOS information is hosted under a computer.
 
 In this example, the Configuration Manager Connector Configuration management pack has two collections in the **DataProvider** and in the **DataConsumer** sections, one for importing the computers data and the second to import the BIOS data.

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Register source systems to the System Center data warehouse
+description: Describes how you can register source systems to the System Center data warehouse and troubleshoot common problems in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Registering Source Systems to the System Center Data Warehouse
-ms.technology:  service-manager
-ms.assetid:  7f48a1c7-dc88-447d-8bde-8af76783e2d3
+ms.technology: service-manager
+ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
 ---
 
-# Registering Source Systems to the System Center Data Warehouse
+# Register source systems to the System Center data warehouse in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -20,7 +20,7 @@ The data warehouse in Service Manager retrieves data from one or more data sourc
 
 Registering the data warehouse creates a relationship between the data warehouse server and the source system so that information can flow between them. In Service Manager, you can register to Service Manager, Operations Manager, and Configuration Manager directly. You can also use the updated software development kit (SDK) layer on top of the data warehouse, which enables you to push data into the data warehouse directly from other sources. For example, you might want to push data from your Human Resources computer system in the data warehouse.
 
-## How to Register the System Center Data Warehouse to Operations Manager
+## Register the System Center data warehouse to Operations Manager
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse to Operations Manager and then validate the registration.
 
@@ -65,7 +65,7 @@ You can use the following procedures in Service Manager to register the System C
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
 
-## How to Register the System Center Data Warehouse to Configuration Manager
+## Register the System Center data warehouse to Configuration Manager
 
 
 You can use the following steps in Service Manager to register Configuration Manager with the System Center Data Warehouse and then validate the registration.
@@ -107,7 +107,7 @@ You can use the following steps in Service Manager to register Configuration Man
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Configuration Manager**. You might have to refresh your view to see the new data source.
 
-## How to Register the System Center Data Warehouse to a Service Manager Source
+## Register the System Center data warehouse to a Service Manager wource
 
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse with a Service Manager management group and then validate the registration. This makes it possible to host multiple Service Manager management groups in a single data warehouse.
@@ -145,7 +145,7 @@ You can use the following procedures in Service Manager to register the System C
 
 -   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Service Manager**. You might have to refresh your view to see the new data source.
 
-## How to Manage Data Import Jobs for Operations Manager and Configuration Manager
+## Manage data import jobs for Operations Manager and Configuration Manager
 
 
 You can use the following procedure to manage data warehouse data import jobs in Service Manager. Data import jobs are like other data warehouse jobs, and you can manage them with the Service Manager console and also with Windows PowerShell cmdlets. Methods of management include:
@@ -166,11 +166,11 @@ You can use the following procedure to manage data warehouse data import jobs in
 
 4.  You can optionally **Suspend** jobs, and you can **Resume** any that are suspended or Not Started.
 
-## Troubleshooting System Center Data Warehouse Errors
+## Troubleshoot System Center data warehouse errors
 
 This section describes steps you can take to troubleshoot System Center data warehouse errors in Service Manager.
 
-### Using the Operations Manager event log on the Data Warehouse server to troubleshoot errors
+### Use the Operations Manager event log on the Data Warehouse server to troubleshoot errors
 Service Manager event logs are found in the Operations Manager event log. Evaluating events in the log is useful because most errors from the data warehouse are found in this event log. Events in the log are from two different sources: Deployment and Data Warehouse.
 
 Events with a source of **Deployment** are usually generated during management pack deployment, which includes report deployment or assembling the data warehouse, for example, by creating outriggers, dimensions, and fact tables. Errors in the event log usually include instructions about how to recover from the errors. For example, you might read instructions suggesting that you stop and then restart the Service Manager services. The three services on a data warehouse management server are:
@@ -185,7 +185,7 @@ When you start and stop Service Manager services, you must stop and start all th
 
 After the data warehouse is deployed, events are more likely to have a source of **Data Warehouse**. These events are created by jobs within the normal course of operations like extract, transform, and load (ETL) jobs; the MPSync job; and the DWMaintenance job.
 
-### Using the Service Manager console to troubleshoot errors
+### Use the Service Manager console to troubleshoot errors
 In the Service Manager console, click **Data Warehouse Jobs** and you will see ETL job and MPSync job status. If your deployment was successful and your data warehouse is correctly registered to at least one Service Manager management group, you see at least five jobs. Every job should have the status **Running** or **Not Started**.
 
 If you see a job status listed as **Failed**, you can select the job, and then in the **Tasks** pane, click **Modules** to find out which job module has failed. Then, you can examine the  Operations Manager event log on the data warehouse server to determine why the module failed.
@@ -194,7 +194,7 @@ In the **Data Warehouse** workspace, you can click **Management Packs** in the l
 
 If your management pack has defined data warehouse-specific elements, such as outriggers, dimensions, fact tables, or reports, that management pack must be successfully deployed before the new tables and reports will be ready to use.
 
-### Using Windows PowerShell to troubleshoot errors
+### Use Windows PowerShell to troubleshoot errors
 The Windows PowerShell cmdlets in the following table provide detailed information about the data warehouse jobs.
 
 |Command|Description|
@@ -204,7 +204,7 @@ The Windows PowerShell cmdlets in the following table provide detailed informati
 |Get-SCDWJob -JobName *Specific job name* -NumberOfBatches *number* |Use this command to see the latest job, specified by *Specific job name*, completed, when it started, and when it ended. You can calculate how long it ran and what the next batch ID and status is. The job batch ID is always incremental.|
 |Get-SCDWJobModule|This command provides detailed information about the specific modules within the job. This is very useful when you see job failures and you want to find out what caused the failure.|
 
-### Troubleshooting Common Data Warehouse Issues
+### Troubleshoot common data warehouse issues
 This list is not exhaustive, but it covers most of the common problems that you are likely to encounter.
 
 #### Reports are not deployed after registering the data warehouse

@@ -1,6 +1,7 @@
 ---
-title: Workflow Activity Reference
-manager: cfreeman
+title: Workflow activity reference
+description: Provides a reference for Service Manager Authoring Tool workflow activities.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 ---
 
-# Workflow Activity Reference
+# Service Manager Authoring Tool workflow activity reference
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,20 +23,20 @@ This section provides guidance for information technology (IT) developers so tha
 
  For information about how to use WF activities and WF workflows with Service Manager, see [Automating IT Processes with Workflows](author-automating-it-processes-with-workflows.md).  
 
-## Active Directory Activities
+## Active Directory activities
 
 Use Active Directory Domain Services (AD&nbsp;DS) activities to make Active&nbsp;Directory functions part of your workflow in Service Manager.  
 
  The Service Manager Authoring Tool provides two default Service Manager activities in the **Active Directory Activities** group in the **Activities Toolbox** pane. The topics in this section describe these activities.  
 
-### Add AD DS Computer to a Group Activity
+### Add AD DS Computer to a Group activity
 
 This activity adds a computer to a security group in Active Directory Domain Services (AD&nbsp;DS) in Service Manager. The computer and the group must belong to the same domain, and all containers in the domain are searched.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
 
 #### Properties  
@@ -53,7 +54,7 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 |------------------|-------------------|----------|-----------------|  
 |Output|Output|Boolean|The result of the operation: **True** if the addition succeeded, **False** if it failed.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -62,14 +63,14 @@ This activity adds a computer to a security group in Active Directory Domain Ser
 #### Example  
  None.  
 
-### Add AD DS User to Group Activity
+### Add AD DS User to Group activity
 
 This activity adds a user to a security group in Active Directory Domain Services (AD&nbsp;DS) in Service Manager. The user and the group must belong to the same domain, and all the containers in the domain are searched.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  When you use this activity, make sure that the Service Manager Workflow account has sufficient permissions to modify security groups in AD&nbsp;DS.  
 
 #### Properties  
@@ -87,7 +88,7 @@ This activity adds a user to a security group in Active Directory Domain Service
 |------------------|-------------------|----------|-----------------|  
 |Output|Output|Boolean|The result of the operation: **True** if the addition succeeded, **False** if it failed.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -96,19 +97,19 @@ This activity adds a user to a security group in Active Directory Domain Service
 #### Example  
  None.  
 
-## Control Flow Activities
+## Control Flow activities
 
 Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow in Service Manager.  
 
  The Authoring Tool provides four default control flow activities in the **Control Flow** group in the **Activities Toolbox** pane.  
 
-### Delay Activity
+### Delay activity
 This activity introduces a delay between activities in a workflow in Service Manager. The **Delay** activity is derived from the Microsoft .NET&nbsp;Framework **DelayActivity** class.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  None.  
 
 #### Properties  
@@ -121,7 +122,7 @@ This activity introduces a delay between activities in a workflow in Service Man
 
  The **Delay** activity does not produce an output property.  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -130,7 +131,7 @@ This activity introduces a delay between activities in a workflow in Service Man
 #### Example  
  None.  
 
-### For Each Loop Activity
+### For Each Loop activity
 The **For Each Loop** activity takes as an input an array (*collection*) of objects and repeats the set of activities within the loop for each object in the collection. For example, if the input collection has five objects, the loop iterates five times. If the collection is empty, the loop does not iterate. There is no upper limit to the number of objects in the collection. The **For Each Loop** activity always runs on the computer on which the workflow runs.  
 
  The **For Each Loop** activity is a composite activity with two containers for activities:  
@@ -149,10 +150,10 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
     -   Custom activities or other activities that do not inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  None.  
 
 #### Properties  
@@ -163,7 +164,7 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 |Input Collection|InputCollection|Array/Object|N/A|A collection of objects to be passed, one at a time, to the activities within the **For Each Loop** activity. If the activity that resides in the input container produces an array of objects as its output property, **Input Collection** is automatically set to that property. To view the current value of this property, right-click the loop container, and then click **Properties**.|  
 |Current Item|CurrentItem|Object|N/A|An index into **Input Collection** that activities within the loop can use as an input property. For the first activity in the loop container, this property is set automatically.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions:  
 
 -   If any error occurs in the **ForEachLoop** activity and that is not with the child activities, the workflow terminates.  
@@ -180,22 +181,22 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 #### Example  
  None.  
 
-### IfElse Activity
+### IfElse activity
 
 This activity controls the sequence of activities within a workflow based on a Boolean (True/False) condition. You can use the outcome of a previous activity, such as a script activity, for the condition.  
 
  The **IfElse** activity is a Visual Studio activity that uses rules and conditions. For more information about using rules and conditions in Windows Workflow Foundation (WF), see [Tutorial: Use Rules and Conditions in WF](http://go.microsoft.com/fwlink/p/?LinkID=186257) in the MSDN Library.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  None.  
 
 #### Properties  
  None.  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -204,20 +205,20 @@ This activity controls the sequence of activities within a workflow based on a B
 #### Example  
  None.  
 
-### Parallel Activity
+### Parallel activity
 
 This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186258) in the .NET&nbsp;Framework Class Library.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  None.  
 
 #### Properties  
  None.  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -227,21 +228,21 @@ This activity forks the sequence of activities into two simultaneous sequences o
  None.  
 
 
-## Virtual Machine Manager Activities
+## Virtual Machine Manager activities
 
 Use virtual machine management activities in Service Manager to build workflows that allow for creating and updating virtual machines. The virtual machine management activities support System Center Virtual Machine Manager.  
 
  The Service Manager Authoring Tool provides the following five default virtual machine management activities in the **VMM Activities** group in the **Activities Toolbox** pane.  
 
 
-### Get VM Activity
+### Get VM activity
 
 This activity in Service Manager retrieves a list of one or more virtual machine IDs from a Virtual Machine Manager (VMM) Library.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
 
 -   The Virtual Machine Manager console and Service Manager must both be installed on the same server.  
 
@@ -270,7 +271,7 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 |------------------|-------------------|----------|--------------|  
 |VM IDs|VMIDList|Array of strings|Specifies the list of the IDs of virtual machines with names that match all or part of the **VM Name** string.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Get VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -279,14 +280,14 @@ This activity in Service Manager retrieves a list of one or more virtual machine
 #### Example  
  None.  
 
-### Move VM Activity
+### Move VM activity
 
 This activity in Service Manager moves a virtual machine from the Virtual Machine Manager (VMM) Library to a maintenance host.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
 
 -   The Virtual Machine Manager console and Service Manager must both be installed on the same server.  
 
@@ -321,7 +322,7 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 |------------------|-------------------|----------|--------------|  
 |VM ID|VMID|String|Specifies the unique ID of the virtual machine that was moved. The input **VM ID** and the output **VM ID** are equal unless the activity failed to find a virtual machine with a **VM ID** that matches the input **VM ID**. In that case, the output **VM ID** is set to Null.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Move VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -330,16 +331,16 @@ This activity in Service Manager moves a virtual machine from the Virtual Machin
 #### Example  
  None.  
 
-### Shutdown VM Activity
+### Shutdown VM activity
 
 This activity in Service Manager shuts down the guest operating system on a virtual machine.  
 
  You can use the **Shutdown VM** activity on a virtual machine on a Windows-based host (a Hyper-V host or a Virtual Server host) only if virtualization guest services are installed on the virtual machine. For a virtual machine that is deployed on a Hyper-V host, the virtualization guest service is called Integration Components. For a virtual machine that is deployed on a Virtual Server host, the virtualization guest service is called Virtual Machine Additions.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
 
 -   The Virtual Machine Manager console and Service Manager must both be installed on the same server.  
 
@@ -367,7 +368,7 @@ This activity in Service Manager shuts down the guest operating system on a virt
 |------------------|-------------------|----------|--------------|  
 |VM ID|VMID|String|Specifies the unique ID of the virtual machine that was shut down. The input **VM ID** and the output **VM ID** are equal unless the activity failed to find a virtual machine with a **VM ID** that matches the input **VM ID**. In that case, the output **VM ID** is set to Null.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Shutdown VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -376,14 +377,14 @@ This activity in Service Manager shuts down the guest operating system on a virt
 #### Example  
  None.  
 
-### Start VM Activity
+### Start VM activity
 
 This activity in Service Manager starts a stopped or paused virtual machine.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
  None.  
 
 #### Properties  
@@ -408,7 +409,7 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 |------------------|-------------------|----------|--------------|  
 |VM ID|VMID|String|Specifies the unique ID of the virtual machine that was started. The input **VM ID** and the output **VM ID** are equal unless the activity failed to find a virtual machine with a **VM ID** that matches the input **VM ID**. In that case, the output **VM ID** is set to Null.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Start VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -417,14 +418,14 @@ This activity in Service Manager starts a stopped or paused virtual machine.
 #### Example  
  None.  
 
-### Save State VM Activity
+### Save State VM activity
 
 This activity in Service Manager saves the state of a virtual machine and then stops the virtual machine.  
 
-#### Design Time Prerequisites  
+#### Design time prerequisites  
  None.  
 
-#### Run Time Prerequisites  
+#### Run time prerequisites  
 
 -   The Virtual Machine Manager console and Service Manager must be both installed on the same server.  
 
@@ -452,7 +453,7 @@ This activity in Service Manager saves the state of a virtual machine and then s
 |------------------|-------------------|----------|--------------|  
 |VM ID|VMID|String|Specifies the unique ID of the virtual machine that was saved. The input **VM ID** and the output **VM ID** are equal unless the activity failed to find a virtual machine with a **VM ID** that matches the input **VM ID**. In that case, the output **VM ID** is set to Null.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Save State VM** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -462,7 +463,7 @@ This activity in Service Manager saves the state of a virtual machine and then s
  None.  
 
 
-## Script Activities
+## Script activities
 
 Use a script activity in Service Manager to run a script as part of a workflow.  
 
@@ -470,14 +471,14 @@ Use a script activity in Service Manager to run a script as part of a workflow.
 
  The Service Manager Authoring Tool provides the following three default script activities in the **Generic Script Activities** subgroup of the **Script Activities** group in the **Activities Toolbox** pane.  
 
-### Command Script Activity
+### Command Script activity
 
 This activity runs a command-line script as part of a Windows Workflow Foundation (WF) workflow.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  None.  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  None.  
 
 #### Properties  
@@ -493,7 +494,7 @@ This activity runs a command-line script as part of a Windows Workflow Foundatio
 |Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the script to run.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Command Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -503,16 +504,16 @@ This activity runs a command-line script as part of a Windows Workflow Foundatio
  None.  
 
 
-### Windows PowerShell Script Activity
+### Windows PowerShell Script activity
 
 This activity in Service Manager runs a Windows PowerShell script as part of a Windows Workflow Foundation (WF) workflow.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  The **Windows PowerShell Script** activity depends upon the following prerequisites at design time:  
 
 -   Windows PowerShell 2.0  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  Windows PowerShell 2.0  
 
 #### Properties  
@@ -529,22 +530,22 @@ This activity in Service Manager runs a Windows PowerShell script as part of a W
 |Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the script to run.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  The **Windows PowerShell Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
  For more information about Windows PowerShell, see [Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=164777).  
 
-### VBScript Script Activity
+### VBScript Script activity
 
 This activity in Service Manager runs a VBScript script as part of a Windows Workflow Foundation (WF) workflow.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  The **VBScript Script** activity depends on the following prerequisites at design time:  
 
  None.  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  None.  
 
 #### Properties  
@@ -560,7 +561,7 @@ This activity in Service Manager runs a VBScript script as part of a Windows Wor
 |Script Server|Target|String|No|Specifies the Domain Name System (DNS) name of the server that runs the Service Manager console. Do not use **localhost**.|  
 |Script Time Limit|TimeoutSeconds|Integer|No. (The default setting is 300 seconds.)|Specifies the maximum number of seconds to allow for the script to run.|  
 
-### Errors and Exceptions  
+### Errors and exceptions  
  The **VBScript Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
@@ -569,20 +570,20 @@ This activity in Service Manager runs a VBScript script as part of a Windows Wor
 #### Example  
  None.  
 
-## Service Manager Activities
+## Service Manager activities
 
 Use Service Manager activities in Service Manager to make Service Manager functions part of your workflow.  
 
  The  Service Manager Authoring Tool provides the following four default Service Manager activities in the **SM Activities** group in the **Activities Toolbox** pane.  
 
-### Create Incident Activity
+### Create Incident activity
 
 This activity creates and populates an incident in Service Manager.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  None.  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  None.  
 
 #### Properties  
@@ -607,7 +608,7 @@ This activity creates and populates an incident in Service Manager.
 |----------|----------|--------------|  
 |SM Incident|System.WorkItem.Incident|Returns the constructed incident class instance.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -616,14 +617,14 @@ This activity creates and populates an incident in Service Manager.
 #### Example  
  None.  
 
-### Get Incident Activity
+### Get Incident activity
 
 This activity retrieves one or more incidents in Service Manager.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  None.  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  None.  
 
 #### Properties  
@@ -646,7 +647,7 @@ This activity retrieves one or more incidents in Service Manager.
 |------------------|-------------------|----------|--------------|  
 |SM Incidents|SMIncidents|Array of System.Workitem.Incident|Specifies an array of incident objects.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -655,14 +656,14 @@ This activity retrieves one or more incidents in Service Manager.
 #### Example  
  None.  
 
-### Update Incident Activity
+### Update Incident activity
 
 This activity in Service Manager saves property changes to one Service Manager incident.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  None.  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  None.  
 
 #### Properties  
@@ -688,7 +689,7 @@ This activity in Service Manager saves property changes to one Service Manager i
 |------------------|-------------------|----------|-----------------|  
 |SM Incident|SMIncident|System.WorkItem.Incident|Returns an update of the incident class instance. The input **SM Incident** and the output **SM Incident**are equal unless the activity failed to find the **SM Incident**. In that case, the output **SM Incident** is set to Null.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  
@@ -697,14 +698,14 @@ This activity in Service Manager saves property changes to one Service Manager i
 #### Example  
  None.  
 
-### Set Activity Status to Completed Activity
+### Set Activity Status to Completed activity
 
 This activity updates the status of an automated activity in Service Manager.  
 
-#### Design-Time Prerequisites  
+#### Design-time prerequisites  
  None.  
 
-#### Run-Time Prerequisites  
+#### Run-time prerequisites  
  None.  
 
 #### Properties  
@@ -714,7 +715,7 @@ This activity updates the status of an automated activity in Service Manager.
 |------------------|-------------------|----------|--------------|-----------------|  
 |Activity ID|ActivityID|String|Yes|Specifies the identifier of a Service Manager automated activity object.|  
 
-#### Errors and Exceptions  
+#### Errors and exceptions  
  None.  
 
 #### Remarks  

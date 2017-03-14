@@ -1,6 +1,7 @@
 ---
-title: Step 4 - Move the Assembly Files to the Service Manager Console
-manager: cfreeman
+title: Step 4 - Move the assembly files to the Service Manager console
+description: Describes the fourth step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to move the assembly files to the Service Manager console.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 96894b7a-6317-4de3-bc0c-7f06280b6a90
 ---
 
-# Step 4 - Move the Assembly Files to the Service Manager Console
+# Step 4 of the customization scenario - Move the assembly files to the Service Manager console
 
 >Applies To: System Center 2016 - Service Manager
 

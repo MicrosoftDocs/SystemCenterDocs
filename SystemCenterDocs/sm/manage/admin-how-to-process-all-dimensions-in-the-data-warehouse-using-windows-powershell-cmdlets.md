@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Process all dimensions in the data warehouse using cmdlets
+description: Describes how you can process all dimensions in the Service Manager data warehouse using cmdlets.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Process All Dimensions in the Data Warehouse Using Windows PowerShell Cmdlets
-ms.technology:  service-manager
-ms.assetid:  c235b610-c86e-443e-bb4d-337eead6febd
+ms.technology: service-manager
+ms.assetid: c235b610-c86e-443e-bb4d-337eead6febd
 ---
 
-# How to Process All Dimensions in the Data Warehouse Using Windows PowerShell Cmdlets
+# Process all dimensions in the Service Manager data warehouse using cmdlets
 
 >Applies To: System Center 2016 - Service Manager
 

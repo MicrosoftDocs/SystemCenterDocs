@@ -1,5 +1,7 @@
 ---
-title: System Center 2016 - Service Manager Evaluation, Retail, and Select Editions
+title: Service Manager editions
+description: Learn about Service Manager editions.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -12,7 +14,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 23d3104b-5733-42f2-8a92-be48b5924533
 ---
-# System Center 2016 - Service Manager Evaluation, Retail, and Select Editions
+# System Center 2016 - Service Manager editions
 
 >Applies To: System Center 2016 - Service Manager
 

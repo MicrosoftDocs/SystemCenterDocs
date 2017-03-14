@@ -1,6 +1,7 @@
 ---
-title: How to Manually Create a New Incident
-manager: cfreeman
+title: Manually create a new incident
+description: Explains how to manually create a new incident in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: e6541088-f94a-4fb5-80ce-be8afad11b81
 ---
 
-# How to Manually Create a New Incident
+# Manually create a new incident in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

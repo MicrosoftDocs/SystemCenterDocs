@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title: Subscribe to notifications
+description: Describes how you can subscribe to notifications in Service Manager.
+manager: carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Subscribe to Notifications
-ms.technology:  service-manager
-ms.assetid:  a52f6f49-795a-43d1-a6d6-d86140c7d9d6
+ms.technology: service-manager
+ms.assetid: a52f6f49-795a-43d1-a6d6-d86140c7d9d6
 ---
 
-# How to Subscribe to Notifications
+# Subscribe to notifications in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

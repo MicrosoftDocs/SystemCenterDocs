@@ -1,6 +1,7 @@
 ---
-title: Step 11 - Use the New Compliance Change Request Process
-manager: cfreeman
+title: Step 11 - Use the new compliance change request process
+description: Describes the eleventh and final step of the Service Manager Authoring Tool Woodgrove Bank customization scenario to use the new compliance change request process.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 09ee5ec3-4d9f-4b5f-b4c4-4a63f52cf794
 ---
 
-# Step 11 - Use the New Compliance Change Request Process
+# Step 11 of the customization scenario - Use the new compliance change request process
 
 >Applies To: System Center 2016 - Service Manager
 

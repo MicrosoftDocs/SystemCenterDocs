@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create a view for imported configuration items
+description: Describes how you can create a view for imported configuration items in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create a View for Imported Configuration Items
-ms.technology:  service-manager
-ms.assetid:  9507e47e-16d7-4621-a724-39aea32d847c
+ms.technology: service-manager
+ms.assetid: 9507e47e-16d7-4621-a724-39aea32d847c
 ---
 
-# How to Create a View for Imported Configuration Items
+# Create a view for imported configuration items in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

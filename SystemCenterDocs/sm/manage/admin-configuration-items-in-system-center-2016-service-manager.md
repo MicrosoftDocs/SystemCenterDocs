@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title:  Configuration items in Service Manager
+description: Lean about configuration items in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Configuration Items in System Center 2016 - Service Manager
 ms.technology:  service-manager
 ms.assetid:  7e6ab64c-c752-4cee-9057-e4b4413e571d
 ---
 
-# Configuration Items in System Center 2016 - Service Manager
+# Configuration items in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

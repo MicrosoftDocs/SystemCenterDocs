@@ -1,5 +1,5 @@
 ---
-title: Software Requirements for System Center 2016 - Service Manager
+title: Software Requirements for Service Manager
 manager: carmonm
 description: The article describes System Center 2016 - Service Manager software requirements.
 ms.custom: na
@@ -21,7 +21,7 @@ ms.assetid: 787b218d-2f31-41e2-a8c7-3365972d029b
 
 This topic describes the software requirements for Service Manager in System Center 2016 - Service Manager.
 
-## Software Requirements
+## Software requirements
 
  All basic software requirements for System Center 2016 Service Manager are listed at [System Requirements for System Center 2016](../plan/plan-service-manager-system-requirements.md).  
 
@@ -56,14 +56,14 @@ You can create a data mart for Operations Manager.
 
 Service Manager can import configuration items from your Microsoft System Center Configuration Manager environment.
 
-### Network Requirements
+### Network requirements
 
 In Service Manager, you can view external content from within knowledge articles. To view external content, computers that host the Service Manager console must have Internet access, either directly or through a proxy server.  
 
-### SMTP Server
+### SMTP server
 
 You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.  
 
-### Windows Safe Mode
+### Windows safe mode
 
 Service Manager does not operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  

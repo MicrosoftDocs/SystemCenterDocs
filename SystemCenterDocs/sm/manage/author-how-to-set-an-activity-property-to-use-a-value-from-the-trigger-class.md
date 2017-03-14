@@ -1,6 +1,7 @@
 ---
-title: How to Set an Activity Property to Use a Value from the Trigger Class
-manager: cfreeman
+title: Set an activity property to use a value from the trigger class
+description: Describes how you can set an activity property to use a value from the trigger class with the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 5c712a56-66f4-4b8d-91ba-dcf4107e1ee9
 ---
 
-# How to Set an Activity Property to Use a Value from the Trigger Class
+# Set an activity property to use a value from the trigger class with the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

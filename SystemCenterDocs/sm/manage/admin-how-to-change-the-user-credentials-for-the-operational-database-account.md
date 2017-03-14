@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Change the user credentials for the Operational Database account
+description: Describes how you can change the user credentials for the Operational Database account used by Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Change the User Credentials for the Operational Database Account
-ms.technology:  service-manager
-ms.assetid:  04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
+ms.technology: service-manager
+ms.assetid: 04c4c092-e4e4-4e09-bfed-b3f83bb7ae43
 ---
 
-# How to Change the User Credentials for the Operational Database Account
+# Change the user credentials for the Operational Database account used by Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

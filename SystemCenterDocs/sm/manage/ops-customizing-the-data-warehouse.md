@@ -1,6 +1,7 @@
 ---
-title: Customizing the Data Warehouse
-manager: cfreeman
+title: Customize the data warehouse
+description: Provides an overview about customizing the Service Manager data warehouse.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 26cc6924-b9c7-4c0c-b20e-0ab85d9c2140
 ---
 
-# Customizing the Data Warehouse
+# Overview of customizing the Service Manager data warehouse
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +23,7 @@ After the Service Manager data warehouse is deployed and you have viewed its rep
 
  The information in this section can help you determine how to extend and customize the data warehouse to enable in\-depth analyses.  
 
-## About Data Warehouse Dimensional Modeling Using a Star Schema
+## Data warehouse dimensional modeling using a star schema
 
 The data warehouse in Service Manager is a set of databases and processes. The processes add information to the databases automatically. In short, the purpose of the data warehouse is to add information to the data mart where you and other users run reports and perform analyses to help manage your business. Service Manager stores data warehouse data longer in the warehouse than in the Service Manager database because of the usefulness of the data for trending and analysis. Also, data warehouse data often outlives its usefulness for normal transactional processing needs.  
 
@@ -62,7 +63,7 @@ The data warehouse in Service Manager is a set of databases and processes. The p
 
  When you think about extending and customizing your data warehouse, consider the business questions that you want to answer, and investigate dimensional modeling for useful information and best practices. For additional information about customizing the data warehouse, see the other topics in this section.  
 
-# About Fact Tables in the Data Warehouse
+## Fact tables in the data warehouse
 
 This topic describes how to define relationship facts in the data warehouse in Service Manager. A relationship fact in the Service Manager data warehouse is similar to a relationship in Service Manager. You can use a relationship fact to help answer queries, such as the following:  
 
@@ -115,7 +116,7 @@ This topic describes how to define relationship facts in the data warehouse in S
 
  In this example, you can see that although the target dimension is identical for both relationships, the relationships themselves are unique. Therefore, the relationship fact is valid. For more examples of outriggers, dimensions, and relationship facts, you can examine any of the data warehouse management packs that are included in Service Manager. A good example is the base data warehouse management pack named Microsoft.SystemCenter.Datawarehouse.Base.  
 
-# About Outriggers in the Data Warehouse
+## Outriggers in the data warehouse
 
 An outrigger in the data warehouse in Service Manager is essentially a list that can logically group together a set of values. The following tables show two examples that display a logical grouping of values that denote Priority and Windows Operating Systems.  
 
@@ -215,7 +216,7 @@ An outrigger in the data warehouse in Service Manager is essentially a list that
 |ID|A unique identifier for each outrigger attribute|  
 |PropertyPath|PropertyPath syntax, which must uniquely identify the class and attribute that the outrigger attribute is targeting.|
 
-# About Dimensions in the Data Warehouse
+## Dimensions in the data warehouse
 
 A dimension in the Service Manager data warehouse in Service Manager is roughly analogous to a management pack class. Each management class has a list of properties, while each dimension contains a list of attributes. Each dimension attribute corresponds to one property in a class.  
 
@@ -267,7 +268,7 @@ A dimension in the Service Manager data warehouse in Service Manager is roughly 
 
  The HierarchySupport attribute determines which classes are processed and the specific attributes that are included in the dimension. Details for each possible value are described in the following sections.  
 
-## Exact  
+### Exact  
  When the HierarchySupport attribute is Exact, you must manually define each attribute that should be included in the dimension using the \<InclusionAttribute\> tag. These attributes can be either from the target class or any of the target class's base and derived classes. Each inclusion attribute corresponds to one class property. The following table describes each of the attributes in the \<InclusionAttribute\> tag.  
 
 |Attribute|Description|  
@@ -280,7 +281,7 @@ A dimension in the Service Manager data warehouse in Service Manager is roughly 
 
  The Exact HierarchySupport value requires you to manually list each attribute that you want in the dimension. However, you might want all the attributes for a class, as well as attributes from its base and derived classes, to be included in the dimension. In these cases, it can take a lot of effort to list each attribute explicitly. To help, Service Manager includes two other HierarchySupport values that automatically handle these cases for you. These values are described in the following sections.  
 
-## IncludeExtendedClassProperties  
+### IncludeExtendedClassProperties  
  For a dimension with a HierarchySupport of IncludeExtendedClassProperties, all the attributes of the target class and all of its base classes are included in the dimension table and transform. The following illustration shows an example: CarDimension, which targets the class Car and has a HierarchySupport of IncludeExtendedClassProperties.  
 
  ![Diagram of IncludeExtendedClassProperties example](../media/ops-includeextendedclassproperties.png)  
@@ -297,7 +298,7 @@ A dimension in the Service Manager data warehouse in Service Manager is roughly 
 |Horsepower|  
 |CargoSpace|  
 
-## IncludeDerivedClassProperties  
+### IncludeDerivedClassProperties  
  For a dimension with a HierarchySupport of IncludeDerivedClassProperties, all the attributes of the target class, its base classes, and its derived classes are included in the dimension table and its associated transform.  
 
  Slightly modifying the previous example, CarDimension now has a HierarchySupport of IncludeDerivedClassProperties below. Because it processes both the base and derived classes of the target class, the dimension now processes the attributes of three classes: Vehicle, Car, and Sportscar, as shown in the following illustration.  

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create a manual activity template
+description: Learn about how you can create a Service Manager manual activity template.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create a Manual Activity Template
-ms.technology:  service-manager
-ms.assetid:  09be239c-1add-4acc-ac21-a29aa080b216
+ms.technology: service-manager
+ms.assetid: 09be239c-1add-4acc-ac21-a29aa080b216
 ---
 
-# How to Create a Manual Activity Template
+# Create a Service Manager manual activity template
 
 >Applies To: System Center 2016 - Service Manager
 

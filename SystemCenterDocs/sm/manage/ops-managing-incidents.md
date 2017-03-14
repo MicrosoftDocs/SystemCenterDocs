@@ -1,6 +1,7 @@
 ---
-title: Managing Incidents
-manager:  cfreeman
+title: Manage incidents
+description: Provides an overview of managing Service Manager incidents.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,10 @@ ms.topic: article
 ms.assetid: 9b024537-4afc-44bc-9637-9e0821d97a00
 ---
 
-# Managing Incidents
+# Manage Service Manager incidents
 
 >Applies To: System Center 2016 - Service Manager
 
-The procedures in this section describe how to manage incidents by using Service Manager.  
 
 Help desk analysts use incident management to restore regular operations as quickly and as cost\-effectively as possible by creating new incidents. They also work in partnership with Service Manager administrators to ensure that incidents that are created automatically or by end users are correctly categorized and reassigned to appropriate personnel. Methods that analysts use to accomplish these duties include:  
 
@@ -29,10 +29,6 @@ Help desk analysts use incident management to restore regular operations as quic
 -   Reviewing and updating incidents that are created by end users who have sent requests by email.  
 
 -   Combining incidents into parent\-child relationships when incidents are related.  
-
-## Managing Incidents Overview
-
-In Service Manager, help desk analysts use incident management to restore regular operations as quickly and as cost\-effectively as possible.  
 
  Using the E\-mail Incident template to populate a new email\-related incident, you can quickly create an incident and ensure that the correct **Impact**, **Urgency**, **Assigned Analyst**, and **Support Tier** fields are configured.  
 

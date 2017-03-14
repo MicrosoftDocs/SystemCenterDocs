@@ -1,6 +1,7 @@
 ---
-title: Managing Workflows
-manager: cfreeman
+title: Manage workflows
+description: Describes how to manage workflows with the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 42812658-2d83-4cd1-b86f-bacd91add82d
 ---
 
-# Managing Workflows
+# Manage workflows with the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,7 +23,7 @@ Use the procedures in this section to create or delete workflows in the Service 
 
  All workflows run under the security context of the Service Manager Workflow account.  
 
-## How to Create a New Workflow
+## Create a new workflow
 
 Use the Create Workflow Wizard to create a new workflow in the Service Manager Authoring Tool. After you create the workflow, you can populate the workflow with activities, as described in [Adding or Removing Workflow Activities](author-adding-or-removing-workflow-activities.md).  
 
@@ -89,7 +90,7 @@ Use the Create Workflow Wizard to create a new workflow in the Service Manager A
 
 10. On the **Summary** page, review the settings for the new workflow, and then click **Create**. After the wizard is completed, click **Close**.  
 
-## How to Save and Build a Workflow
+## Save and build a workflow
 
 Workflows are saved whenever you save the management pack. In addition, when you save a management pack, the Service Manager Authoring Tool automatically identifies the Windows Workflow Foundation \(WF\) workflow files that are associated with the workflow information in the management pack and builds them into workflow assemblies. \(Each WF workflow may have multiple raw files.\) The tool builds one assembly per workflow.  
 
@@ -97,7 +98,7 @@ Workflows are saved whenever you save the management pack. In addition, when you
 
 -   In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
 
-## How to Copy a Workflow
+## Copy a workflow
 Use this procedure to create a copy of a workflow in the Service Manager Authoring Tool. After you copy the workflow, you can edit the properties of either the copy or the original.  
 
 ### To copy a workflow  
@@ -106,7 +107,7 @@ Use this procedure to create a copy of a workflow in the Service Manager Authori
 
      The Authoring Tool creates a copy of the workflow and gives it a name that consists of the original workflow name and "\_Copy."  
 
-## How to Edit a Workflow's Details
+## Edit a workflow's details
 
 Use this procedure to edit workflow details in the Service Manager Authoring Tool.  
 
@@ -132,7 +133,7 @@ Use this procedure to edit workflow details in the Service Manager Authoring Too
     > [!IMPORTANT]  
     >  You cannot change the type of trigger that the workflow uses. For example, after you create a workflow that uses a timer trigger, you cannot change it to use a query trigger instead.  
 
-## How to Delete a Workflow
+## Delete a workflow
 
 Use this procedure to delete a workflow in the Service Manager Authoring Tool.  
 

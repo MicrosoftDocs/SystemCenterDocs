@@ -1,22 +1,22 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Enable or disable data warehouse job schedules
+description: Describes how you can enable or disable data warehouse job schedules in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Enable or Disable Data Warehouse Job Schedules
-ms.technology:  service-manager
-ms.assetid:  f87dfbc3-d82b-428f-8dc4-e6a8129fd79f
+ms.technology: service-manager
+ms.assetid: f87dfbc3-d82b-428f-8dc4-e6a8129fd79f
 ---
 
-# How to Enable or Disable Data Warehouse Job Schedules
+# Enable or disable data warehouse job schedules in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-# How to Enable Data Warehouse Job Schedules
+# Enable data warehouse job schedules
 
 Use the following procedure to enable the schedule for the ETL jobs as needed; you can use this procedure to enable the schedule for any of the data warehouse jobs. By default, the schedules for the extract, transform, and load (ETL) jobs are enabled. In this release of Service Manger, you can enable the schedules only by using Windows PowerShell.
 
@@ -44,7 +44,7 @@ Use the following procedure to enable the schedule for the ETL jobs as needed; y
 
 3.  Type **exit**, and then press ENTER.
 
-## How to Disable a Data Warehouse Job Schedule
+## Disable a data warehouse job schedule
 
 You can use the following procedure to disable the schedule for the extract, transform, and load (ETL) jobs; however, you can use this procedure to disable the schedule for any data warehouse job. In this release of Service Manager, you can disable the schedules only by using Windows PowerShell cmdlets.
 

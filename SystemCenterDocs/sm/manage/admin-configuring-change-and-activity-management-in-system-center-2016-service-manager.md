@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
+title:  Configure Change and Activity Management in Service Manager
+description: Learn about the Configure Change and Activity Management features in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Configuring Change and Activity Management in Service Manager
 ms.technology:  service-manager
 ms.assetid:  399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
 ---
 
-# Configuring Change and Activity Management in Service Manager
+# Configure Change and Activity Management in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

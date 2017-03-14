@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Manually create configuration items
+description: Describes how you can manually create configuration items in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Manually Create Configuration Items
-ms.technology:  service-manager
-ms.assetid:  24089a9b-eaa2-42f7-b600-2d0e6a2149ec
+ms.technology: service-manager
+ms.assetid: 24089a9b-eaa2-42f7-b600-2d0e6a2149ec
 ---
 
-# How to Manually Create Configuration Items
+# Manually create configuration items in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

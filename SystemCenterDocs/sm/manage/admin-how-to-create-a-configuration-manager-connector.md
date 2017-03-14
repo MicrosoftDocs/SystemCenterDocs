@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create a Configuration Manager connector
+description: Describes how you can create a Configuration Manager connector in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create a Configuration Manager Connector
-ms.technology:  service-manager
-ms.assetid:  70db0991-63d5-464a-978b-45e8783ec539
+ms.technology: service-manager
+ms.assetid: 70db0991-63d5-464a-978b-45e8783ec539
 ---
 
-# How to Create a Configuration Manager Connector
+# Create a Configuration Manager connector in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

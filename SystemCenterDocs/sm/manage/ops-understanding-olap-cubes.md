@@ -1,6 +1,7 @@
 ---
 title: Understanding OLAP Cubes
-manager: cfreeman
+description: Provides an overview to help you learn about Service Manager OLAP cubes.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: a7506c69-aec8-446e-a59d-dc19917403d5
 ---
 
-# Understanding OLAP Cubes
+# Understanding Service Manager OLAP cubes
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: How to Browse a Form in the Authoring Tool
-manager: cfreeman
+title: Browse a form
+description: Learn about how you can browse a form in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: c754a350-a205-4c77-b408-7bbef263edd6
 ---
 
-# How to Browse a Form in the Authoring Tool
+# Browse a form in the Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 

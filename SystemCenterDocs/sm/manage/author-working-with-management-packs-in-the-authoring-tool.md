@@ -1,6 +1,7 @@
 ---
-title: Working with Management Packs in the Authoring Tool
-manager: cfreeman
+title: Work with management packs in the Authoring Tool
+description: Describes how to work with management packs in the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 16ddf6aa-46d8-4b31-99d0-569a63565407
 ---
 
-# Working with Management Packs in the Authoring Tool
+# Work with management packs in the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -24,7 +25,7 @@ Service Manager objects are stored in management packs. To modify an object usin
 
  The procedures in this section describe how to work with management pack files in the Authoring Tool.  
 
-## How to Open a Management Pack File in the Authoring Tool
+## Open a management pack file in the Authoring Tool
 
 If you want to customize objects that are defined in a management pack in Service Manager, you have to open the management pack file that contains these objects in the Service Manager Authoring Tool. You can use the following procedure to open a management pack file in the Authoring Tool.  
 
@@ -57,7 +58,7 @@ If you want to customize objects that are defined in a management pack in Servic
 
  You can now select the management pack file that you opened, and you can expand **Classes**, **Forms**, **Workflows**, or **References** to view the objects of the management pack.
 
-## How to Create a New Management Pack File in the Authoring Tool
+## Create a new management pack file in the Authoring Tool
 
 To be able to implement customizations that you make in the Service Manager Authoring Tool, you have to save them to a management pack file.  
 

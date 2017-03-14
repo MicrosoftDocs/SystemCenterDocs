@@ -1,6 +1,7 @@
 ---
-title: How to Create a Template for Parallel and Sequential Activities
-manager: cfreeman
+title: Create a template for parallel and sequential activities
+description: Explains how to create a template for parallel and sequential activities in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 83ad5318-aca4-4e87-b11c-a287ad9e73e1
 ---
 
-# How to Create a Template for Parallel and Sequential Activities
+# Create a template for parallel and sequential activities in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

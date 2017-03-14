@@ -1,6 +1,7 @@
 ---
-title: Service Manager Performance
-manager: cfreeman
+title: Service Manager performance
+description: Describes how performance for Service Manager server roles and features is affected by different factors.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 82f61204-f9f3-492c-9108-ef3edb5ac622
 ---
 
-# Service Manager Performance
+# System Center 2016 - Service Manager performance
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -26,13 +27,13 @@ Performance for System Center 2016 - Service Manager server roles and features i
 
 -   Workflow completion time. This is the length of time it takes for workflows to automatically apply some kind of action.  
 
-## Connector Performance
+## Connector performance
 
 Connector initial synchronization can take a significant amount of time, for example, 8 to 12 hours for a large initial synchronization with System Center Configuration Manager. As a connector synchronizes initially, you can expect performance to suffer for all Service Manager server roles and processes during this time. This occurs because of the way that data is inserted sequentially into the Service Manager database, which is a Microsoft SQL Server database. Although you cannot hasten the connector's initial synchronization process, you can plan for the initial synchronization and ensure that the synchronization process completes well before Service Manager is put into production.  
 
 When the initial synchronization is complete, Service Manager continues synchronizing the differences, which does not have a measurable impact on performance.  
 
-## Workflow Performance
+## Workflow performance
 
 Workflows are automatic processes that occur. They include sending email notifications, the next step of a change request activating, and automatically applying a template.  
 
@@ -44,7 +45,7 @@ Workflow performance considerations include the following:
 
 When the system is under a heavy load - if, for example, a large number of new incidents are being created and each incident generates many workflows-performance might be negatively affected.  
 
-## Group, Queue, and User Role Impact on Performance
+## Group, queue, and user role impact on performance
 
 You should plan for groups and user roles early. You should create groups sparingly and create them for the smallest scope possible. Then, you should initially populate your database with data from Active Directory Domain Services \(AD DS\), System Center Configuration Manager, and System Center Operations Manager before you create your groups.  
 
@@ -108,13 +109,13 @@ if ( $role.scope.objects.Contains($type.Id) ) {
 
 ```  
 
-## View Performance
+## View performance
 
 When you create views, plan on using "typical" classes in the system whenever possible. Most object classes-for example, Incident Management-have two types: "typical" and "advanced". The typical object type contains simple references to a small subset of data that is related to an item. The advanced type contains many complex references to data that are related to an item. Typical types are simple projections; advanced types are complex projections. Most advanced object types are used to populate different fields in forms that you would not normally want to see displayed in a view. Whenever you create a view based on an advanced object type and when you open the view, Service Manager queries the database and a large amount of data is read. However, very little of the retrieved data is actually displayed or used.  
 
  If you encounter performance problems with the views that you have defined when you use advanced object types in views, switch to using typical types. Or alternatively, you can create your own projection types that contain only the data you need to base a view upon.
 
-## Service Manager Database Performance
+## Service Manager database performance
 
 Performance of the Service Manager database is directly affected by various factors, including the number of concurrent Service Manager consoles that are reading or writing data, the group change check interval, and data that is inserted by connectors. More information is available in this document. Here are a few key points:  
 
@@ -130,15 +131,15 @@ Performance of the Service Manager database is directly affected by various fact
 
  Similarly, all the other best practices for a high\-performing database are applicable, as well. For example, if you can take advantage of a superior disk subsystem, you can benefit from splitting up the groups of tables on respective filegroups and moving them to a different physical drives.  
 
-## Service Manager Management Server Performance
+## Service Manager management server performance
 
 Performance of the Service Manager management server is primarily affected by the number of active concurrent Service Manager consoles. Because all Service Manager roles interact with the management server, consider adding additional management servers if you plan to have a large number of concurrent consoles. You should have 8 GB of RAM for the management server. You should have at least 4 CPU cores per management server, assuming that you have 10 to 12 active consoles per CPU core.  
 
-## Service Manager Console Performance
+## Service Manager console performance
 
 Performance of the Service Manager console is primarily affected by the number of forms that your analysts typically have open and the amount of data that is retrieved by views. You should have 4 GB of RAM on the computer where the Service Manager console is installed. If you have views that retrieve a large amount of data, you will need additional RAM. You should have at least a 4\-core CPU for the computer where the Service Manager console is installed. Because the Service Manager console is an end user application, we recommend that you restart it if you see excessive resource consumption. The Service Manager console aggressively caches information in memory, which can contribute to overall memory usage.  
 
-## Service Manager Data Warehouse Database Performance
+## Service Manager data warehouse database performance
 
 Performance of the data warehouse is directly affected by various factors, including the number of concurrent Service Manager management servers sending data, volume of data stored or the data retention period, rate of data change, and the extraction, transformation, and load \(ETL\) frequency. The amount of data that is stored in the data warehouse increases over time. Ensuring that you archive unnecessary data is important. Another factor that affects data warehouse performance is the BatchSize setting of ETL processes.  
 
@@ -148,16 +149,16 @@ Performance can be negatively affected if all the databases in the system are cr
 
 Service Manager includes built\-in support for filegroups. You can benefit from this by placing the filegroups on separate hard drives. For more information about filegroup best practices, see the SQL Server documentation.  
 
-## Service Manager Data Warehouse Server Performance
+## Service Manager data warehouse server performance
 
 Performance of the data warehouse server is affected by the number of Service Manager management servers that are registered to the data warehouse, the size of your deployment, and the number of data sources. You should generally have a minimum of 8 GB of RAM for the data warehouse server. However, performance will benefit by having additional memory for advanced deployment scenarios where more than one Service Manager management server inserts data into the data warehouse. If you must trade off performance, your highest priority should be for memory for the computer running SQL Server. You should have at least 8 CPU cores to prevent performance problems.  
 
-## Self\-Service Portal Performance
+## Self Service portal performance
 
 The Self-Service Portal is designed for easy access to incident and service request filing. It is not designed to handle thousands of users simultaneously.  
 
 Performance testing for the Self-Service Portal was focused on typical "Monday morning" scenarios-specifically, to ensure that on Monday morning hundreds of users can log in within a span of 5 to 10 minutes and open incidents with acceptable \(less than 4\-to\-5 second\) response times. This goal was achieved with the minimum hardware recommended in this document.  
 
-## Service\-Level Objective Performance
+## Service-level objective performance
 
-There is no specific number of service\-level objectives that Service Manager supports. For example, if an organization typically has few incidents, it can support more service\-level objectives than it might otherwise be capable of. However, a larger incident volume might necessitate either fewer service\-level objectives or a scale\-out of additional hardware and software, as appropriate. We recommend that you create no more than five service\-level objectives for a typical 50,000\-computer Service Manager configuration. You could possibly create more service\-level objectives. However, because conditions vary greatly from organization to organization, Microsoft cannot provide a concrete recommendation for the number of service\-level objectives that you should not exceed. If your deployment configuration suffers from poor performance as a result of the number of service\-level objectives, we recommend that you scale out using the next\-larger deployment scenario, as described in the [Configurations for Deployment Scenarios](plan-configurations-for-deployment-scenarios.md) section of this guide.
+There is no specific number of service\-level objectives that Service Manager supports. For example, if an organization typically has few incidents, it can support more service\-level objectives than it might otherwise be capable of. However, a larger incident volume might necessitate either fewer service\-level objectives or a scale\-out of additional hardware and software, as appropriate. We recommend that you create no more than five service\-level objectives for a typical 50,000\-computer Service Manager configuration. You could possibly create more service\-level objectives. However, because conditions vary greatly from organization to organization, Microsoft cannot provide a concrete recommendation for the number of service\-level objectives that you should not exceed. If your deployment configuration suffers from poor performance as a result of the number of service\-level objectives, we recommend that you scale out using the next\-larger deployment scenario, as described in the [Configurations for Deployment Scenarios](plan-configurations-for-deployment-scenarios.md) article of this guide.

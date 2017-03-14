@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Register the System Center data warehouse to Operations Manager
+description: Describes how you can register the System Center data warehouse in Service Manager to Operations Manager.
+manager: carmonm
+ms.topic: article
 author:  bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Register the System Center Data Warehouse to Operations Manager
-ms.technology:  service-manager
-ms.assetid:  bc5b518f-97c4-4a2d-a1b2-3ece9e7e603e
+ms.technology: service-manager
+ms.assetid: bc5b518f-97c4-4a2d-a1b2-3ece9e7e603e
 ---
 
-# How to Register the System Center Data Warehouse to Operations Manager
+# Register the System Center data warehouse in Service Manager to Operations Manager
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,6 +1,7 @@
 ---
-title: Configuring the Activities Toolbox
-manager: cfreeman
+title: Configure the Activities Toolbox
+description: You can configure the activities toolbox in the Service Manager Authoring Tool to add or remove custom activities and to personalize it.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
 ---
 
-# Configuring the Activities Toolbox
+# Configure the Activities Toolbox in the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -24,13 +25,13 @@ There are two ways to configure the Activities Toolbox in the Service Manager Au
 
 -   Personalize the toolbox. These changes do not require special permissions. Changes made by one user affect only that user.  
 
-## Modifying the Default Toolbox
+## Modify the default toolbox
 
 If the default set of Windows Workflow Foundation \(WF\) activities does not meet the needs of your organization, you can use custom activities with the Service Manager Authoring Tool. Custom activities include activities you or your organization develops or activities that non\-Microsoft parties develop. These activities must be compiled into assembly files \(*activitysetname*.dll\). For information about developing WF activities, see the [Workflow Activity Reference](http://go.microsoft.com/fwlink/p/?LinkID=233694).  
 
  Installing or removing custom activity assemblies changes the set of available activities for all Authoring Tool users. When you install or remove an activity assembly, remember to notify Authoring Tool users of the changes. Custom activities do not appear automatically in the Activities Toolbox; in order to use custom activities, users must add them to personalized activity groups.
 
-### How to Install a Custom Activity Assembly
+### Install a custom activity assembly
 
 So that you can use custom or third\-party Windows Workflow Foundation \(WF\)  activities in workflows, the activity assembly files must first be installed. You must have administrative permissions on the computer running the Service Manager Authoring Tool and the computer running Service Manager. Like the default activities, custom activities must be available on the computer running Service Manager as well as on the computer running the Authoring Tool.  
 
@@ -46,7 +47,7 @@ So that you can use custom or third\-party Windows Workflow Foundation \(WF\)  a
     >  Users can only add custom activities to personalized activity groups; they cannot add custom activities to the default activity groups.  
 
 
-### How to Remove a Custom Activity Assembly
+### Remove a custom activity assembly
 
 To remove a custom activity assembly, you must have administrative permissions on the computer running the Service Manager Authoring Tool and on the computer running the Service Manager console. After the custom activity assembly has been removed, the activities compiled into that assembly are no longer available in personalized activity groups.  
 
@@ -58,14 +59,14 @@ To remove a custom activity assembly, you must have administrative permissions o
 
 3.  After you have removed the custom activity assembly, notify the Authoring Tool users that the custom activities are no longer available.  
 
-## Personalizing the Activities Toolbox
+## Personalize the activities toolbox
 
 Use the procedures in this section to personalize the **Activities Toolbox** pane in the Service Manager Authoring Tool. Each user can personalize the **Activities Toolbox** differently; the Authoring Tool stores this information as part of each user's profile.  
 
 > [!IMPORTANT]  
 >  You can only modify personalized activity groups. You cannot modify the default activity groups.  
 
-### How to Create a Personalized Activity Group
+### Create a personalized activity group
 
 Use these procedures to create activity groups in the **Activities Toolbox** pane in the Service Manager Authoring Tool.  
 
@@ -81,7 +82,7 @@ Use these procedures to create activity groups in the **Activities Toolbox** pan
 
 2.  Enter a name for the new group.  
 
-### How to Rename a Personalized Activity Group
+### Rename a personalized activity group
 
 Use this procedure to change the name of a personalized activity group in the Service Manager Authoring Tool.  
 
@@ -94,7 +95,7 @@ Use this procedure to change the name of a personalized activity group in the Se
 
 2.  Enter a new name for the group.  
 
-### How to Add Activities to a Personalized Activity Group
+### Add activities to a personalized activity group
 
 Use this procedure to add activities to a personalized activity group in the Service Manager Authoring Tool. Activities can belong to more than one group; for example, you can create a **Favorites** group and populate it with both default activities and custom activities that already belong to other groups.  
 
@@ -113,7 +114,7 @@ Use this procedure to add activities to a personalized activity group in the Ser
 
 4.  After you have selected all of the activities for the group, click **OK**.  
 
-### How to Remove Activities from a Personalized Activity Group
+### Remove activities from a personalized activity group
 
 Use this procedure to remove activities from a personalized activity group in the Service Manager Authoring Tool. Note that removing an activity from a group does not remove the activity from the Activity Library or from any other group.  
 
@@ -126,7 +127,7 @@ Use this procedure to remove activities from a personalized activity group in th
 
 2.  In the **Choose Activities for a Group** dialog box, scroll the list to find the activities you want to remove. Clear the check boxes for the activities you want to remove, and then click **OK**.  
 
-### How to Delete a Personalized Activity Group
+### Delete a personalized activity group
 
 Use this procedure to delete an activity group in the Service Manager Authoring Tool. If the activity group contains one or more subgroups, the subgroups will also be deleted. Note that deleting an activity group does not remove its member activities from the Activity Library or from any other groups.  
 

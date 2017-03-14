@@ -1,6 +1,7 @@
 ---
-title: How to Change an Existing Incident
-manager: cfreeman
+title: Change an existing incident
+description: Describes how to change an existing incident in Service Manager
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: cb8118ec-94ac-404a-be0d-bc34b8996cfa
 ---
 
-# How to Change an Existing Incident
+# Change an existing incident in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

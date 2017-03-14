@@ -1,6 +1,7 @@
 ---
-title: How to Choose Changes to Deploy
-manager: cfreeman
+title: Choose changes to deploy
+description: Explains how to choose changes to deploy in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 0e7ff2f4-4aca-4742-9401-e78f654a1d79
 ---
 
-# How to Choose Changes to Deploy
+# Choose changes to deploy in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
