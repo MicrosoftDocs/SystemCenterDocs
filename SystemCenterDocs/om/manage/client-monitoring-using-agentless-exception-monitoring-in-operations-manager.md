@@ -92,7 +92,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
     -   Leave the default option of **No** if you do not want your organization to participate in the program, and then click **Next**.
 
-    Or
+    Or  
 
       1.  Select **Yes**, if you want your organization to participate in the program.
 
@@ -115,7 +115,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
     -   Leave the **Forward all collected errors to Microsoft (Recommended)** check box cleared, and then click **Next**.
 
-    Or
+    Or  
 
       1.  Select **Forward all collected errors to Microsoft (Recommended)** if the management server is connected to the Internet and you want to forward error reports to Microsoft and receive links to available solutions for those errors.
 
