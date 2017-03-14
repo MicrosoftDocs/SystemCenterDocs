@@ -134,13 +134,13 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 
 10.  On the **Create file Share: Task Status** page, after the file share is successfully created, click **Next**.
 
-     > [!NOTE]
-     > To modify the Client Monitoring settings on the management server, such as the file share, you must disable and then re-enable Client Monitoring on the management server. You must also then modify the Client Monitoring Group Policy settings on the clients.
+    > [!NOTE]
+    > To modify the Client Monitoring settings on the management server, such as the file share, you must disable and then re-enable Client Monitoring on the management server. You must also then modify the Client Monitoring Group Policy settings on the clients.
 
 11.  On the **Client Configuration Settings** page, type or **Browse** to the location you want to save the settings from the Client Monitoring Configuration Wizard. These settings are saved in a Group Policy template file named *ServerNameFQDN*.ADM. Click **Finish**.
 
-     > [!IMPORTANT]
-     > You must use the *ServerNameFQDN*.ADM file to configure clients to redirect their Client Monitoring data to the management server. For more information, see the procedure below.
+    > [!IMPORTANT]
+    > You must use the *ServerNameFQDN*.ADM file to configure clients to redirect their Client Monitoring data to the management server. For more information, see the procedure below.
 
 ## How to configure clients for Client Monitoring
 
@@ -173,8 +173,8 @@ You can help decrease the time it takes to diagnose and resolve operating system
   
 7.  In the **Diagnostic Data Collection Configuration** dialog box, specify the **Files**, **WMI Queries**, and **Registry Keys** you want to collect from the computers experiencing the error, and then click **OK**. A computer will send the specified data in an error report to the management server on the next occurrence of an error in the error group.  
   
-     > [!NOTE]  
-     > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [WMI Documentation](https://msdn.microsoft.com/library/aa394582%28v=vs.85%29.aspx).  
+    > [!NOTE]  
+    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [WMI Documentation](https://msdn.microsoft.com/library/aa394582%28v=vs.85%29.aspx).  
   
 8.  In the **Error Group Responses** dialog box, select **Custom error information**, type the URL for the custom error information, such as **http://server/errors/100.htm**, click **Test Link**, and then click **OK**.  
 
@@ -191,8 +191,8 @@ When you enable Client Monitoring for a management group, you can configure it t
   
 5.  In the **Global Management Server Group Settings - Privacy** dialog box, click the **Error Transmission** tab.  
   
-     > [!NOTE]  
-     > Click **Read the privacy statement** to view the privacy statement.  
+    > [!NOTE]  
+    > Click **Read the privacy statement** to view the privacy statement.  
   
 ### How to filter errors that are sent to Microsoft  
   
@@ -208,15 +208,15 @@ When you enable Client Monitoring for a management group, you can configure it t
   
 1.  On the **Error Transmission** tab of the **Global Management Server Settings - Privacy** dialog box, do one or more of the following:  
   
-    1.  Select **Upload diagnostic data collection request,** select the additional diagnostic data that you want to send with error reports from computers reporting errors to the management servers, and then forward from the management server to Microsoft with the error reports.  
+       1.  Select **Upload diagnostic data collection request,** select the additional diagnostic data that you want to send with error reports from computers reporting errors to the management servers, and then forward from the management server to Microsoft with the error reports.  
   
-    2.  Set **Maximum number of CAB files to send to Microsoft per error group** to help Microsoft diagnose the error. Ten is the recommended number.  
+       2.  Set **Maximum number of CAB files to send to Microsoft per error group** to help Microsoft diagnose the error. Ten is the recommended number.  
   
-    3.  Select **Display links to solutions from Microsoft on error reporting computers**. A link to available solutions will display to end users after the error is first encountered and the link to the solution is downloaded to the management server.  
+       3.  Select **Display links to solutions from Microsoft on error reporting computers**. A link to available solutions will display to end users after the error is first encountered and the link to the solution is downloaded to the management server.  
   
-    4.  Select **Display links to surveys from Microsoft on error reporting computers**.  
+       4.  Select **Display links to surveys from Microsoft on error reporting computers**.  
   
-    5.  Specify the **Default solution link when no Microsoft solution is available**. This could be an internal Web page for technical support, for example.  
+       5.  Specify the **Default solution link when no Microsoft solution is available**. This could be an internal Web page for technical support, for example.  
   
 2.  Click **OK**.  
 
