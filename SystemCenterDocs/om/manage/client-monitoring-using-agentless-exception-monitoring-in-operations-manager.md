@@ -107,7 +107,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
         > [!IMPORTANT]
         > The file share path must be on an NTFS partition and have at least 2 GB of free disk space. It is recommended that the path is no longer than 120 characters. The file share path can be a local drive path on the selected management server such as C:\ErrorData, or a UNC path to an existing network share such as \\Server\FileShare\ErrorData.
 
-      2.  Select **Collect application errors from Windows Vista-bassed or later clients** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
+      2.  Select **Collect application errors from Windows Vista-based or later clients** if you are managing Windows Vista or later operating systems with Operations Manager. Type a **Port** number, or leave the default 51906. Leave **Use Secure Socket Layer protocol** selected if you have installed a certificate on your management server, leave **Use Windows Authentication** selected if you want the client computers to authenticate with the management server; otherwise, clear the options.
 
       3.  Type the **Organization Name to Use**, using no more than 22 characters, and then click **Next**. 
 
