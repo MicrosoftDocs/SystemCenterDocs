@@ -1,6 +1,6 @@
 ---
 title: Resolve System Center 2016 - Service Manager upgrade problems
-description: This article helps you resolve System Center 2016 - Service Manager upgrade problems.
+description: This article helps you resolve System Center 2016 - Service Manager upgrade problems and work around them.
 manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
@@ -28,6 +28,7 @@ An upgrade to System Center 2016 – Service Manager might not complete successf
 - Failure occurs in an unpredictable manner after permanent changes are made to the database.
 - The upgrade might also fail as a result of Configuration service Startup timing out.
 
+You can also work around configuration service startup issues after a failed upgrade.
 
 ## Failure occurs during a prerequisite check
 
@@ -100,4 +101,42 @@ This problem occurs because a .NET Framework 2.0 managed assembly that has an Au
 
 For additional information about the cause of this problem, see [Knowledgebase Article 936707](http://go.microsoft.com/fwlink/p/?LinkId=207190) in the Microsoft Knowledge Base.
 
-For information about possible workaround procedures, see [How to Work Around Configuration Service Startup Issues](https://technet.microsoft.com/en-us/library/hh519702(v=sc.12)).
+## Work around configuration service startup issues after a failed upgrade
+
+There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to System Center 2016 - Service Manager fails as a result of Configuration service Startup timing out. You can:  
+
+-   Disable signature verification on the computer that is running Setup.  
+
+-   Increase the service time\-out setting on the computer that is running Setup.  
+
+### To disable signature verification  
+
+1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center 2016\\Service Manager folder.  
+
+2.  In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
+
+3.  Save the changes to the file.  
+
+4.  Attempt the upgrade again.  
+
+### To increase the service time\-out setting  
+
+1.  On the computer that is running Setup, create the following registry value to increase the service time\-out period:  
+
+    ```  
+    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control   
+    ServicesPipeTimeout  
+    DWORD  
+    200000  
+
+    ```  
+
+    > [!CAUTION]  
+    >  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
+
+    > [!NOTE]  
+    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For additional details about the registry key, see [article 922918](http://go.microsoft.com/fwlink/p/?LinkId=207191) in the Microsoft Knowledge Base.  
+
+2.  Start the computer again.  
+
+3.  Attempt the upgrade again.

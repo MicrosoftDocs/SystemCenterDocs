@@ -43,7 +43,7 @@ The following procedure describes how to install the System Center - Service Man
 
 -   Service Manager workflow account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-accounts-required-during-setup.md).  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-preparing-for-system-center-2016-service-manager-deployment.md).  
 
 ### To install the Service Manager management server, Service Manager database, and console  
 
@@ -102,7 +102,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 -   Analysis Services account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-accounts-required-during-setup.md).  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-preparing-for-system-center-2016-service-manager-deployment.md).  
 
  The data warehouse databases include the following three databases: DWStagingAndConfig, DWRepository, and DWDataMart. The first two databases, DWStagingAndConfig and DWRepository, must reside on the same instance of Microsoft SQL&nbsp;Server. The DWDataMart database can reside on a separate instance of SQL&nbsp;Server. The optional OMDWDataMart and CMDWDataMart databases can reside together or separately on their own instances of Microsoft SQL Server.  
 

@@ -1,5 +1,5 @@
 ---
-title: Customize and author forms
+title: Overview of customizing and authoring forms
 description: Learn about how you can customize and author forms with the Service Manager Authoring Tool.
 manager: carmonm
 ms.custom: na
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
 ---
 
-# Customize and author forms with the Service Manager Authoring Tool
+# Overview of customizing and authoring forms with the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
