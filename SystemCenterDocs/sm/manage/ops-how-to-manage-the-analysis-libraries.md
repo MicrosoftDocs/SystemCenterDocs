@@ -1,6 +1,6 @@
 ---
-title: Manage the analysis libraries
-description: Explains how to manage the analysis libraries in the Service Manager console.
+title: Manage and use the analysis libraries
+description: Explains how to manage and use the analysis libraries in the Service Manager console.
 manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 5f3e94e5-6706-4ef4-a511-a21c5d6b98f8
 ---
 
-# Manage the analysis libraries in the Service Manager console
+# Manage and use the analysis libraries in the Service Manager console
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -28,11 +28,18 @@ You can use the following procedure to manage the analysis libraries in the Serv
 ### To manage an analysis library folder  
 
 1.  In the Service Manager console, click **Data Warehouse**, expand the **Data Warehouse** node, and then click **Analysis Libraries**.  
-
 2.  In the **Tasks** pane, click **Add Library Folder**.  
-
 3.  In the **Add Library Folder** dialog box under **Name**, type a name for the new analysis library folder. For example, type **Incident Management Analysis Library**.  
-
 4.  Under **Description**, type a description that identifies the type of information that the folder will contain. For example, type **This folder contains saved incident management\-related workbooks**.  
-
 5.  Under **UNC Path**, type the path that represents the library folder. An example might resemble **\\\\computer1\\IncidentManagmentReports\\**. You can also click **Browse** to search for a location.  
+
+## Use the analysis library in the Reporting workspace
+
+
+You can use the following procedure in Service Manager to view Microsoft Excel workbooks that connect to Microsoft Online Analytical Processing \(OLAP\) data cubes by using the **Analysis Library** node in the Reporting workspace. Workbooks are saved to the Analysis Library by Service Manager so that report users can easily access the workbooks.  
+
+### To use the analysis library  
+
+1.  In the Service Manager console, click **Reporting**, expand the **Analysis Library** node, and then navigate to the folder that contains an Excel workbook that you want to open.  
+2.  Select the Excel workbook that you want to open, and then in the **Tasks** list, click **Open Excel File**.  
+3.  In the Excel workbook, you can refresh the data from the data warehouse. For example, click the **Data** tab and then click **Refresh All** to update the workbook.  
