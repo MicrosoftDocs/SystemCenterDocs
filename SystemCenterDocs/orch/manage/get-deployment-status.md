@@ -53,7 +53,7 @@ above:
 |Connection|Specifies the name of the connection to the Configuration Manager server|
 |Result Count|The number of values returned by the query|
 
-The following tables list the Published Data for the available
+The following list describes the Published Data for the available
 Deployment Types.
 
 ## Program or task sequence
