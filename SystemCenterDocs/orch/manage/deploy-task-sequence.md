@@ -32,11 +32,6 @@ in an update group, use the **Deploy Software Update** activity. To get
 status on deployments you’ve created, use the **Get Deployment Status**
 activity.
 
-## Properties and published data
-
-The following tables list the properties and published data for this
-activity.
-
 ## Deploy Task Sequence properties
 - Deployment Name: The desired name for the new deployment that will be shown in the Configuration Manager console
 - Task Sequence: The display name or ID of an existing task sequence.
@@ -144,13 +139,7 @@ above:
 
     The Schedule tab allows you to define when the deployment becomes available or when it expires, as well as mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
 
-    For more information about mandatory assignments, see [*Mandatory Assignment Schedules*](https://technet.microsoft.com/en-us/library/3950dc80-c200-4144-bc83-7c07fe986745#BKMK_Mandatory_Assignment).
-
     >[!NOTE]
     >When a deployment is set to **Required**, then a mandatory schedule must be defined for the deployment or the activity will fail.
 
-5.  For information about the settings on the **General** and **Run
-    Behavior** tabs, see [*Common Configuration Instructions for all
-    Activities*](https://technet.microsoft.com/en-us/library/3950dc80-c200-4144-bc83-7c07fe986745#BKMK_CommonCMConfigInstructions).
-
-6.  Click **Finish**.
+5.  Click **Finish**.
