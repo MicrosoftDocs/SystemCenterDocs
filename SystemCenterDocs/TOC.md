@@ -178,6 +178,8 @@
 ###### [Configuring SSL ciphers](om/manage/configuring-ssl-ciphers.md)
 ###### [Administering and configuring the UNIX/Linux agent](om/manage/administering-and-configuring-the-unix-linux-agent.md)
 #### [Operations Manager monitoring scenarios](om/manage/operations-manager-monitoring-scenarios.md)
+##### [Agentless monitoring](om/manage/agentless-monitoring-in-operations-manager.md)
+##### [Client monitoring using Agentless Exception Monitoring)(om/manage/client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md)
 ##### [Monitoring networks with Operations Manager](om/manage/monitoring-networks-by-using-operations-manager.md)
 ###### [How to discover network devices](om/manage/how-to-discover-network-devices-in-operations-manager.md)
 ###### [Network device discovery settings](om/manage/how-to-configure-network-device-discovery-settings.md)
