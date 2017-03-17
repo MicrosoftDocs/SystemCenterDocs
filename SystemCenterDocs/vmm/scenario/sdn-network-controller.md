@@ -139,7 +139,7 @@ You create a management logical network in VMM, to mirror your physical manageme
 
 If you want to allocate static IP addresses to network controller VMs, create an IP address pool in the management logical network. If you're using DHCP you can skip this step.
 
-1.  In the VMM console, right-click the management logical network in > **Create IP Pool**.
+1.  In the VMM console, right-click the management logical network and select **Create IP Pool**.
 2.  Provide a **Name** and optional description for the pool and ensure that the management network is selected for the logical network.
 3.  In **Network Site** panel, select the subnet that this IP address pool will service.
 4.  In **IP Address range** panel, type the starting and ending IP addresses.
