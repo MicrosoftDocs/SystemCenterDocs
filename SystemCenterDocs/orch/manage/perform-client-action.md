@@ -69,7 +69,7 @@ Because this activity targets individual computers and bypasses the normal commu
     -   Packet Privacy (default value)
     -   Unchanged
 
- For more information, see [Authentication Level Enumeration](http://go.microsoft.com/fwlink/?LinkId=203420) in the Microsoft MSDN Library
+ For more information, see [Authentication Level Enumeration](http://go.microsoft.com/fwlink/?LinkId=203420) in the Microsoft MSDN Library.
 - Enable Privileges: True or False. When set to True, indicates that user privileges need to be enabled for the connection operation. This property should only be used when the operation performed requires a certain user privilege to be enabled, for example, a computer restart.
 - Impersonation Level: Defines the security impersonation level for the WMI connection. Options are:
     -   Impersonate
@@ -78,7 +78,7 @@ Because this activity targets individual computers and bypasses the normal commu
     -   Identify
     -   Delegate
 
- For more information, see [Impersonation Level Enumeration](http://go.microsoft.com/fwlink/?LinkId=203421) in the Microsoft MSDN Library .
+ For more information, see [Impersonation Level Enumeration](http://go.microsoft.com/fwlink/?LinkId=203421) in the Microsoft MSDN Library.
 - Locale: The client can request data from the WMI server in a client-preferred locale. This string is specified as MS\_xxx format. The default value for this property is “MS\_409”.
 
     For more information, see [Locale IDs](http://go.microsoft.com/fwlink/?LinkId=165561) in the Microsoft MSDN Library.
@@ -89,7 +89,7 @@ Because this activity targets individual computers and bypasses the normal commu
     1.  Kerberos: &lt;Principal name&gt;
     2.  NTLMDOMAIN: &lt;domain name&gt;
 
- For more information, see [Connection Options Authority](http://go.microsoft.com/fwlink/?LinkId=203424) in the Microsoft MSDN Library .
+ For more information, see [Connection Options Authority](http://go.microsoft.com/fwlink/?LinkId=203424) in the Microsoft MSDN Library.
 - Password: The password for the account credentials specified in the Username property
 - Username: The account credentials with WMI access to the remote client, in the format domain\\username
 
