@@ -35,12 +35,17 @@ activity
 ## Get Deployment Status properties
 
 - Deployment Type: The type of deployment for which you want to retrieve information. Options are:
-    1.  Application
-    2.  Program
-    3.  Task Sequence
-    4.  Software Update
+    - Application
+    - Program
+    - Task Sequence
+    - Software Update
 - Filters: Filters available are dependent on the type of deployment selected. Filters modify the query sent to Configuration Manager so that the data returned to Orchestrator is already limited to desired results. This improves performance over returning all data and filtering at the Orchestrator server.
-    To add new filter criteria, click **Add**, select the property on which to filter, select a **Relation**, and then enter a value for the filter.
+    
+To add new filter criteria:
+
+  1. Click **Add** and select the property on which to filter. 
+  2. Select a **Relation** and then enter a value for the filter.
+  
     The type of relation value available will depend on the data type of the property selected.
 
 ## Get Deployment Status published data
@@ -71,11 +76,11 @@ Deployment Types.
 - LastExecutionResult               Last string returned by a status Management Information Format (MIF) file (messages 10007 and 10009) or an error return code (10006)
 - LastState                         Numeric category of the last delivery status message
 - LastStateName                     Short description of the delivery category, including:
-    1.  Accepted – No Further Status
-    2.  Succeeded
-    3.  Failed
-    4.  Waiting
-    5.  No Status
+    - Accepted – No Further Status
+    - Succeeded
+    - Failed
+    - Waiting
+    - No Status
 - LastStatusMessageID               Last delivery status message ID
 - LastStatusMessageIDName           Short description of the last delivery status message.
 - LastStatusMessageIDSeverity
@@ -101,21 +106,21 @@ Deployment Types.
 - DTResultID                  Deployment Type Result ID
 - DeploymentIntent            0 = Required, 1 = Available
 - EnforcementState            The enforcement state. Possible values are:
-    - 0 Enforcement State Unknown
-    - 1 Enforcement Started
-    - 2 Enforcement waiting for content
-    - 3 Waiting for another installation to complete
-    - 4 Waiting for maintenance window before installing
-    - 5 Restart required before installing
-    - 6 General failure
-    - 7 Pending installation
-    - 8 Installing update
-    - 9 Pending system restart
-    - 10 Successfully installed update
-    - 11 Failed to install update
-    - 12 Downloading update
-    - 13 Downloaded update
-    - 14 Failed to download update
+    - Enforcement State Unknown
+    - Enforcement Started
+    - Enforcement waiting for content
+    - Waiting for another installation to complete
+    - Waiting for maintenance window before installing
+    - Restart required before installing
+    - General failure
+    - Pending installation
+    - Installing update
+    - Pending system restart
+    - Successfully installed update
+    - Failed to install update
+    - Downloading update
+    - Downloaded update
+    - Failed to download update
 - ExtendedInfoDescriptionID   Extended information description ID
 - ExtendedInfoID              Extended information ID
 - IsMachineAssignedToUser     True or False. True if the machine is assigned to a user.
@@ -127,10 +132,10 @@ Deployment Types.
 - Revision                    Revision number of the deployment
 - StartTime                   Deployment time
 - StatusType                  Status type:
-    - 1 Success
-    - 2 In Progress
-    - 4 Unknown
-    - 5 Error
+    - Success
+    - In Progress
+    - Unknown
+    - Error
 - Technology                  The deployment technology type, such as:
     - Windows Installer
     - App-V
