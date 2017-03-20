@@ -28,6 +28,7 @@ You can download integration packs from the Microsoft Download Center. Each inte
 - [Hewlett Packard Service Manager](hp-service-manager-integration-pack.md)
 - [IBM Tivoli Netcool Integration Pack](tivoli-netcool-omnibus-integration-pack.md)
 - [REST](representational-state-transfer-rest-integration-pack.md)
+- [Configuration Manager](configuration-manager-integration-pack.md)
 - [Data Protection Manager](integration-pack-for-data-protection-manager.md)
 - [Operations Manager](integration-pack-for-operations-manager.md)
 - [Service Manager](integration-pack-for-service-manager.md)

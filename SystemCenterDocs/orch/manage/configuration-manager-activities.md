@@ -212,3 +212,17 @@ automatically populate the property values needed by activities.
 
 3.  Click the published data element that you want to use, and then click **OK**.
 
+## Activities
+
+This integration pack adds the Microsoft Configuration Manager category to the Activity pane in the Runbook Designer. This category contains the following activities:
+
+- [Deploy Application](deploy-application.md)
+- [Deploy Configuration Baseline](deploy-configuration-baseline.md)
+- [Deploy Program](deploy-program.md)
+- [Deploy Software Update](deploy-software-update.md)
+- [Deploy Task Sequence](deploy-task-sequence.md)
+- [Get Collection Member](get-collection-member.md)
+- [Get Deployment Status](get-deployment-status.md)
+- [Perform Client Action](perform-client-action.md)
+- [Query Configuration Manager](query-configuration-manager.md)
+- [Update Collection Membership](update-collection-membership.md)
