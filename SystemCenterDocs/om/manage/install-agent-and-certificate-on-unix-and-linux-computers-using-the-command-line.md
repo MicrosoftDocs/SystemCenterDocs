@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 03/21/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -52,7 +52,7 @@ Your environment may require that you manually install the agent. Use the follow
 
     `scxadmin -status`
 
-## To install the agent on DPKG-based Universal Linux Servers (Debian and Utuntu)
+## To install the agent on DPKG-based Universal Linux Servers (Debian and Ubuntu)
 
 1.  Transfer the agent (`scx-<version>-universald-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
