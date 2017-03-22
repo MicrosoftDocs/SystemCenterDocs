@@ -78,14 +78,14 @@ If the script doesn't complete any of the  steps, you need to manually complete 
 
 Run the script:
 
-``Param(
+```Param(
  [Parameter(Mandatory=$True)]
    [string]$VMName,
  [Parameter(Mandatory=$true)]
    [boolean]$ReverseRep
 )
 
-# the script running on system with SCVMM Console/PowerShell installed. Also, requires Hyper-V powershell module.
+# the script running on system with SCVMM Console/PowerShell installed. Also, requires Hyper-V powershell module.``
 
 Import-Module hyper-v
 
@@ -259,7 +259,7 @@ foreach($vmAdapter in $VMOnPDAdapter)
     Write-Host -ForegroundColor Green (Get-Date) "Network Adapter '" $counter "' of Failed-over VM connected to " $VMNetwork[$counter]
 
     $counter = $counter + 1
-}``
+}```
 
 
 ## Run the reverse replication/cancel script
@@ -281,7 +281,7 @@ This script should be run for the failover script was run with $ReverseRep set t
 
 Run the script:
 
-``Param(
+```Param(
  [Parameter(Mandatory=$True)]
    [string]$VMName,
  [Parameter(Mandatory=$true)]
@@ -488,4 +488,4 @@ foreach($vmAdapter in $VMOnDRAdapter)
     Write-Host -ForegroundColor Green (Get-Date) "Network Adapter '" $counter "' of Primary VM connected to " $VMNetwork[$counter]
 
     $counter = $counter + 1
-}``
+}```
