@@ -1,3 +1,3 @@
 ---
-recirect_url: automate-runbooks
+redirect_url: automate-runbooks
 ---
