@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 7aa3ae77-88e7-4ff8-bb63-814286b7089d
 ---
 
-# Edit the registry on the Service Manager Management Server in the lab environment before you upgrade.
+# Edit the registry on the Service Manager Management Server in the lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 
