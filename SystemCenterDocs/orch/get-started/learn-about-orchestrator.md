@@ -7,12 +7,12 @@ author:  cfreemanwa
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 03/20/2017
-title:  Learn about orchestrator
+title:  Orchestrator overview
 ms.technology:  orchestrator
 ms.assetid:  8004b0ed-e66e-4105-867d-c65c0d733fef
 ---
 
-# Learn about System Center 2016 - Orchestrator
+# Overview of System Center 2016 - Orchestrator
 
 >Applies To: System Center 2016 - Orchestrator
 
@@ -24,7 +24,7 @@ Using Orchestrator, you can:
 - Standardize best practices to improve operational efficiency.
 - Connect systems from different vendors without having to know how to use scripting and programming languages.
 
-## Orchestrator Architecure 
+## Orchestrator architecure 
 
 The following diagram illustrates each of the Orchestrator features and the communication between each.
 
