@@ -92,7 +92,7 @@ When you build runbooks in System Center 2016 - Orchestrator, it is important to
 
 The workflow control provides the following controls.  
 
-### Snmart Links
+### Smart Links
 
 The links that connect individual activities in a runbook are called smart links. Smart links in System Center 2016 - Orchestrator support precedence between two activities. Smart links invoke the next activity in the runbook as soon as the previous activity finishes successfully. Smart links also provide filtering capabilities for the data so you can limit the data passed to subsequent activities in the workflow.
 
