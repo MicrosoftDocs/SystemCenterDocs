@@ -1,3 +1,3 @@
 ---
-redirect_url: console_overview
+redirect_url: console-overview
 ---
