@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: e9a7de24-e680-4a93-9d81-e8d3bf41a7ce
 ---
 
-# Recommended deployment topology scenarios for Service Manager.
+# Recommended deployment topology scenarios for Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
