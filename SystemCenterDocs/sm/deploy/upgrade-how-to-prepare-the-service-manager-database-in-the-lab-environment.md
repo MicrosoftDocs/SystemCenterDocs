@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 7d3b8b19-77f9-4a96-a117-8ffef08da01a
 ---
 
-# Prepare the Service Manager database in the lab environment before you upgrade.
+# Prepare the Service Manager database in the lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 
