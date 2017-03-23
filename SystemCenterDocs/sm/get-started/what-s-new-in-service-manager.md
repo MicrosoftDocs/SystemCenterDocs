@@ -249,3 +249,7 @@ Now you can configure the SQL management server, instance name and port number t
 
 ## Support for .NET Framework 4.5.1
 Service Manager 2016 now supports the .Net framework 4.5.1
+
+## Next steps
+
+- Review [Planning for Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
