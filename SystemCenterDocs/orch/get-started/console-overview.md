@@ -14,11 +14,11 @@ ms.date: 10/12/2016
 author: cfreemanwa
 manager: carmonm
 ---
-# Overview of the Orchestration console for System Center 2016 - Orchestrator
+# Overview of the Orchestration console
 
 > Applies To: System Center 2016 - Orchestrator
 
-The Orchestration console is comprised of a single webpage made up of multiple panes and workspaces. This topic describes those panes and workspaces and includes procedures for accessing the console and managing runbooks.  
+The Orchestration console is a single webpage made up of multiple panes and workspaces. This topic describes those panes and workspaces and includes procedures for accessing the console and managing runbooks.  
 
 ## Navigation pane  
 The navigation pane is the left pane in the Orchestration console where you can click the workspace that you want to use. Depending on the workspace you click, you can view specific data and use specific options. The following workspaces are available in the navigation pane.  
