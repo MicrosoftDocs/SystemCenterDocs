@@ -19,28 +19,7 @@ manager: cfreeman
 
 > Applies To: System Center 2016 - Orchestrator
 
-The Orchestration console is comprised of a single webpage with the following multiple panes.  
-
-## To start the Orchestration console in a browser  
-
-1.  Open your browser.  
-
-2.  In the address bar, type **http:\/\/<computer name>:<port number>** where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
-
-## To start the Orchestration console in the Runbook Designer  
-
--  Click the **Orchestration Console** button on the toolbar.  
-
-    > [!NOTE]  
-    > If the URL has not been set for the Orchestration console, you will receive an error message. Use the following procedure to set the URL.  
-
-## To set the Orchestration console URL in the Runbook Designer  
-
-1.  Select **Options**, and then select **Orchestration Console**.  
-
-2.  In the **URL** box, type **http:\/\/<computer name>:<port number>** where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
-
-3.  Click **Finish**.  
+The Orchestration console is comprised of a single webpage made up of multiple panes and workspaces. This topic describes the panes and workspaces and includes procedures for accessing the console and managing runbooks.  
 
 ## Navigation pane  
 The navigation pane is the left pane in the Orchestration console where you can click the workspace that you want to use. Depending on the workspace you click, you can view specific data and use specific options. The following workspaces are available in the navigation pane.  
@@ -73,6 +52,27 @@ The **Instances** tab lists the instances that have been created on the runbook 
 
 ### Events workspace  
 The **Events** workspace lets you view log events. By default, log events include all events for the management server and all runbook servers. To limit the events, click **Filter** and provide criteria to limit the events displayed. If an event is specific to a runbook server, it includes the name of the server in the **Source** box. In this case, you can select the event, and then click **View Runbook Server** in the **Actions** pane. Clicking **View Runbook Server** opens the **Jobs** tab in the **Runbook Servers** workspace for that runbook server.  
+
+## To start the Orchestration console in a browser  
+
+1.  Open your browser.  
+
+2.  In the address bar, type **http:\/\/<computer name>:<port number>** where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
+
+## To start the Orchestration console in the Runbook Designer  
+
+-  Click the **Orchestration Console** button on the toolbar.  
+
+    > [!NOTE]  
+    > If the URL has not been set for the Orchestration console, you will receive an error message. Use the following procedure to set the URL.  
+
+## To set the Orchestration console URL in the Runbook Designer  
+
+1.  Select **Options**, and then select **Orchestration Console**.  
+
+2.  In the **URL** box, type **http:\/\/<computer name>:<port number>** where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
+
+3.  Click **Finish**. 
 
 ## Starting and stopping runbooks  
 In addition to viewing the current status of a runbook, you can also start and stop a runbook from the Orchestration console. When you start a runbook, a job is created and waits for an available runbook server to process the runbook. If the first action in a runbook is a monitor, the job runs continuously, potentially producing multiple instances of a runbook, until the runbook or job is stopped. When a runbook server is available, the job provides an instance of the runbook to the runbook server to process. A running runbook has at least one job and one or more instances associated with it.  
