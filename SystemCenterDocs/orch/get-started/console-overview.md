@@ -69,7 +69,7 @@ The **Events** workspace lets you view log events. By default, log events includ
 
 1.  Select **Options**, and then select **Orchestration Console**.  
 
-2.  In the **URL** box, type **<http://computer name:port number>** where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
+2.  In the **URL** box, type `http://computer name:port number` where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
 
 3.  Click **Finish**. 
 
