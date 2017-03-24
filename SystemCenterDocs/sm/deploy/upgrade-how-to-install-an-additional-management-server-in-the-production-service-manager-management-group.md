@@ -1,5 +1,5 @@
 ---
-title: Install an additional Management Server
+title: Install an additional management server
 description: As part of the upgrade process, you need to install an additional Management Server in the production Service Manager management group.
 manager: carmonm
 ms.custom: na
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 03747a1c-cdb9-47ce-83d1-55ee9d6c8119
 ---
 
-# Install an additional Management Server in the production Service Manager management group
+# Install an additional management server in the production Service Manager management group
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -60,3 +60,7 @@ When you install a secondary management server, data retention settings are rese
 13. On the **Installation summary** page, click **Install**.  
 
 14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**.
+
+## Next steps
+
+- Review [Copy customized workflow assembly files before you upgrade](upgrade-how-to-copy-the-workflow-assembly-files.md).

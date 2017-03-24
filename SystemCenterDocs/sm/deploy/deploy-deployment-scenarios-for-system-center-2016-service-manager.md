@@ -33,3 +33,7 @@ System Center - Service Manager provides for many deployment scenarios. However,
  Performing an upgrade from technical preview versions of Service Manager is not supported. Furthermore, for this release, Service Manager setup installs files in predefined folders that might already exist if you have a previous version of Service Manager installed.  
 
  The user installing Service Manager has access to the Service Connection Point \(SCP\) object of Service Manager in the Active Directory. This SCP stores the information about the service. Client applications, such as Service Manager, can connect to services using the SCP. For more information about service connection points, see [Publishing Services in Active Directory](http://technet.microsoft.com/library/cc961733.aspx).  
+
+## Next steps
+
+- Review [Install on a single computer (minimum configuration)](deploy-installing-service-manager-on-a-single-computer-minimum-configuration.md) to install Service Manager on a single computer. This scenario requires you to use a virtual machine for the data warehouse management server. This scenario is useful for evaluation purposes.

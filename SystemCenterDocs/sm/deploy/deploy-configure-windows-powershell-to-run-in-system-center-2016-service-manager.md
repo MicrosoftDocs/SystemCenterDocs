@@ -1,5 +1,5 @@
 ---
-title: Configure Windows PowerShell to run in Service Manager
+title: Configure PowerShell to run in Service Manager
 description: Before you use PowerShell with Service Manager, you need to prepare and then import Service Manager cmdlets.
 manager:  carmonm
 ms.custom: na
@@ -84,3 +84,7 @@ To be able to use the data warehouse cmdlets in Service Manager, you must first 
     ```
 
 3. Type *exit*, and then press ENTER to close the **Administrator: Windows PowerShell** window.
+
+## Next steps
+
+- Review [Register with the data warehouse to enable reporting](deploy-registering-with-the-service-manager-data-warehouse-to-enable-reporting.md) to run the Data Warehouse Registration Wizard to register the Service Manager management group with the Service Manager data warehouse management server. Registering with the data warehouse makes it possible for you to run reports.

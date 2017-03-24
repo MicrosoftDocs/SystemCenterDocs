@@ -54,3 +54,7 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 4.  Save and close the hosts file.  
 
 5.  You can now start the setup procedure for either an additional Service Manager management server or an additional Self-Service Portal.
+
+## Next steps
+
+- Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](deploy-new-self-service-portal-deployment-scenarios-and-troubleshooting.md).
