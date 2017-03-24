@@ -32,3 +32,7 @@ You can use network Load Balancing \(NLB\) in Windows Server to configure a pool
  If you deploy two or more additional Service Manager management servers, you can isolate the initial Service Manager management server from the NLB pool. This reduces the workload on the initial Service Manager management server, resulting in better workflow performance. It also load\-balances all of the Service Manager consoles across the remaining Service Manager management servers. This scenario is shown in the following illustration.  
 
  ![network load balancing two](../media/deploy-networkloadbalancingfiguretwo.png)
+
+## Next steps
+
+- Review [Complete deployment by backing up the encryption key](deploy-completing-deployment-by-backing-up-the-encryption-key.md) to use the Encryption Key Backup or Restore Wizard to back up and restore encryption keys.

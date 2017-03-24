@@ -278,3 +278,8 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 -   Views\\MyRequests\\RequestDetails.cshtml  
 
 -   Views\\Shared\\\_Layout.cshtml  
+
+
+## Next steps
+
+- Review [Deploy the Self-Service portal](deploy-deploy-the-self-service-portal-for-service-manager.md) to deploy the Self-Service portal and customize it.

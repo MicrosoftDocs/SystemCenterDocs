@@ -731,3 +731,8 @@ The following high\-level steps are required to move the data warehouse database
     2.  Microsoft Monitoring Agent  
 
     3.  System Center Management Configuration  
+
+
+## Next steps
+
+- Review [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md) to learn about upgrading Service Manager.

@@ -59,3 +59,7 @@ sp_configure 'allow updates',0 reconfigure with override
 SQL Server AlwaysOn Availability Groups functionality is supported by System Center 2016 - Service Manager.
 
 For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../deploy/deploy-using-sql-server-2014-alwayson-availability-groups-with-service-manager.md).
+
+## Next steps
+
+- Review [Service Manager editions](plan-system-center-2016-service-manager-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.

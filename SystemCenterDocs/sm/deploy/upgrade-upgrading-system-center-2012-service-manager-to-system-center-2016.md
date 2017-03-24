@@ -195,3 +195,7 @@ If you have installed a data warehouse management server in your environment, as
 ### Encryption keys  
 
 When you have finished running Setup to either install or upgrade to System Center 2016 - Service Manager, you are prompted to open the Encryption Backup or Restore Wizard. If you have previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
+
+## Next steps
+
+- Review [Prepare remote SQL Server Reporting Services for upgrade](upgrade-remote-sql-server-reporting-services.md) to prepare your environment if SSRS is remote from the data warehouse management server.

@@ -50,3 +50,7 @@ This article explains how to create a lab environment and populate it with produ
 24. Test everything. Document any discrepancies and fixes. Send feedback through the MS Connect web site.
 25. Backup the Service Manager lab environment; for example, back up the database and encryption keys and VM Snapshots This gives you the ability to recover in case the upgrade fails.
 26. The lab environment is now ready for System Center 2016 – Service Manager in-place upgrade.
+
+## Next steps
+
+- Review [Install an additional management server in the production Service Manager management group](upgrade-how-to-install-an-additional-management-server-in-the-production-service-manager-management-group.md).

@@ -31,3 +31,7 @@ System Center 2016 - Service Manager is available as both a retail edition and a
 |Retail Edition|Evaluation Edition|No|  
 |Retail Edition|Select Edition|No|  
 |Select Edition|Retail Edition|No|
+
+## Next steps
+
+- Review [Supported configurations for Service Manager](plan-supported-configurations-for-system-center-2016-service-manager.md) to learn about the hardware and software configurations for Service Manager. Specific considerations about the memory that servers need to support Service Manager are included.

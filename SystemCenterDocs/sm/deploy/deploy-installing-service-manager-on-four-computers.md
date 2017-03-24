@@ -276,3 +276,7 @@ The procedures in this topic describe how to validate the four\-computer install
 12. Verify that the **DWASDataBase** database is listed.  
 
 13. Exit Microsoft SQL&nbsp;Server Management Studio.
+
+## Next steps
+
+- Review [Manual steps to configure remote SQL Server Reporting Services](deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) to manually configure SSRS in situations where SSRS is not on the same server as the data warehouse management server.
