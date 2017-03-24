@@ -39,7 +39,7 @@ For more information about types of activities, see the following topics:
 
 -   [Common Activity Properties](common-activity-properties.md)  
 
-    Describes configurable properties common to all activities.[Monitoring Activities](../manage/monitoring-activities.md)  
+    Describes configurable properties common to all activities.  
 
 ## Runbook Designer Panes  
 The Runbook Designer interface is organized into the following four panes.  
@@ -51,7 +51,7 @@ The Runbook Designer interface is organized into the following four panes.
 |**Activities**|Contains all the activities available \(either standard activities or activities available from integration packs\) for use in runbooks. You drag activities from the **Activities** pane into the Design workspace, and then link them together to form runbooks.|  
 |**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](../get-started/orchestrator-logs.md).|  
 
-## Sorting activities by activity name and category ame  
+## Sorting activities by activity name and category name  
 System Center 2016 - Orchestrator lets you sort activities alphabetically by activity name, or by category name. By default, activities are sorted by category, such as Runbook Control, Email, File Management, Monitoring, Notification, Scheduling, System, Text File Management, and Tools.  
 
 Use the following steps to sort activities by their activity name and category name.  

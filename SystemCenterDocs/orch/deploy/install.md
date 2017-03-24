@@ -16,6 +16,12 @@ ms.assetid:
 
 >Applies To: System Center 2016 - Orchestrator
 
+A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines. 
+
+For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](..\get-started\learn-about-orchestrator.md).
+
+This topic provides detailed installation instructions for the various Orchestrator roles. 
+
 ## To install an Orchestrator management server
 
 1.  On the server where you want to install Orchestrator, start the **System Center 2016 - Orchestrator Setup Wizard**.
