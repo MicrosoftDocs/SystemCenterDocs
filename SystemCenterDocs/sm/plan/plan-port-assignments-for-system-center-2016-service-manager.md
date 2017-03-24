@@ -41,3 +41,7 @@ As part of your security infrastructure, you may want to keep track of port numb
  \* Includes initial Service Manager management server and subsequent Service Manager management servers  
 
  \*\* Port 2383 is the default port for SQL Server Analysis Services \(SSAS\). However, the port number can be changed. For more information, see [Configure Windows Firewall for Analysis Services Access](http://go.microsoft.com/fwlink/p/?LinkID=216892).  
+
+## Next steps
+
+- Review [Prepare for Service Manager deployment](plan-preparing-for-system-center-2016-service-manager-deployment.md) to learn about preparing a computer to host Service Manager.

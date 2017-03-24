@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 3614b9db-20de-41c0-9780-a27624258da0
 ---
 
-# Guidance for installing Service Manager on virtual machines
+# Install Service Manager on virtual machines
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -37,3 +37,7 @@ This article provides guidance that you should consider when you install System 
 
 ## Deploying Service Manager databases in a virtual environment  
 If you are installing Service Manager and data warehouse databases on virtual machines, we recommend that you use one virtual machine for the Service Manager database and another virtual machine for the data warehouse databases. Furthermore, each virtual machine should be configured for two CPUs.
+
+## Next steps
+
+- Review [Configure PowerShell to run in Service Manager](deploy-configure-windows-powershell-to-run-in-system-center-2016-service-manager.md) to set execution policy to RemoteSigned and import the data warehouse cmdlet module. 

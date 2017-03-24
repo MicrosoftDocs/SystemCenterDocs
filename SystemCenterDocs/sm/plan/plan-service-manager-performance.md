@@ -162,3 +162,7 @@ Performance testing for the Self-Service Portal was focused on typical "Monday m
 ## Service-level objective performance
 
 There is no specific number of service\-level objectives that Service Manager supports. For example, if an organization typically has few incidents, it can support more service\-level objectives than it might otherwise be capable of. However, a larger incident volume might necessitate either fewer service\-level objectives or a scale\-out of additional hardware and software, as appropriate. We recommend that you create no more than five service\-level objectives for a typical 50,000\-computer Service Manager configuration. You could possibly create more service\-level objectives. However, because conditions vary greatly from organization to organization, Microsoft cannot provide a concrete recommendation for the number of service\-level objectives that you should not exceed. If your deployment configuration suffers from poor performance as a result of the number of service\-level objectives, we recommend that you scale out using the next\-larger deployment scenario, as described in the [Configurations for Deployment Scenarios](plan-configurations-for-deployment-scenarios.md) article of this guide.
+
+## Next steps
+
+- Review [Recommended deployment topology scenarios](plan-configurations-for-deployment-scenarios.md) to learn about hardware and software configurations for Service Manager deployment scenarios.

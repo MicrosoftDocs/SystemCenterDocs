@@ -50,3 +50,7 @@ During installation, System Center - Service Manager Setup performs prerequisite
 
 > [!NOTE]  
 >  On the **Installation cannot continue** screen, there is no option to restart the prerequisite checker. You must click **Cancel** to restart the installation process. Make sure that the computer meets all hardware and software requirements before you run Setup again.
+
+## Next steps
+
+- Review [Deployment scenarios for Service Manager](deploy-deployment-scenarios-for-system-center-2016-service-manager.md) to learn about how to deploy Service Manager in one-server, two-server, and four-server topologies.
