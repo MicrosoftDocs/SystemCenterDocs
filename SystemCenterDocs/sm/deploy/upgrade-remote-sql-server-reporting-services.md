@@ -54,3 +54,7 @@ When you installed System Center 2016 - Service Manager, you may have specified 
     ```  
 
 5.  Save the changes, and close the XML editor.
+
+## Next steps
+
+- Review [Upgrade configurations for the Self-Service portal](upgrade-upgrading-the-self-service-portal.md) to upgrade the Self Service portal for a variety of possible configurations.

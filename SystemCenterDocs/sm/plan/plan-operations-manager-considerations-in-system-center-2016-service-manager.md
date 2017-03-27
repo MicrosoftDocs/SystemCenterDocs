@@ -62,4 +62,8 @@ If you have already installed the portal or console to a server that does not ho
 1.  Export the Service Manager key from HKEY\_CLASSES\_ROOT\\Installer\\Products\\\<ServiceManagerGUID\>. You can find the key by searching at the Products node for Data equal to Service Manager.  
 2.  Delete the registry key.  
 3.  Deploy the Operations Manager agent to the server.  
-4.  Import the key you exported from step 2.
+4.  Import the key you exported from step 1.
+
+## Next steps
+
+- Review [Languages supported by Service Manager](plan-language-support-for-system-center-2016-service-manager.md) to learn about the languages that are supported by the Service Manager console and the SQL Server database collations used with Windows locales.

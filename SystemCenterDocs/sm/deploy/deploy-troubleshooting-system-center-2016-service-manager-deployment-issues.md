@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot System Center - Service Manager deployment issues
+title: Troubleshoot deployment issues
 description: Troubleshoot Service Manager deployment issues.
 manager: carmonm
 ms.custom: na
@@ -42,3 +42,7 @@ Additional Error Description : MODIFY FILE encountered operating system error 11
 ```
 
 You have to either increase the amount of free disk space that is available or reduce the amount of space that Service Manager allocates for the database, and then attempt the installation again. If you are installing Service Manager in a nonproduction environment, you can specify as little as 500 MB for the database.
+
+## Next steps
+
+- Review [Deploy Service Manager from a command line](deploy-deploying-service-manager-from-a-command-line.md) to deploy Service Manager using command-line parameters.
