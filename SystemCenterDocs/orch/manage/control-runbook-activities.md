@@ -23,10 +23,11 @@ You set the overall sequence of operations in runbooks by linking activities tog
 
 The activities in your runbook will complete according in the order you set by linking them together. You can control the data that flows between the activities by using the Include and Exclude tabs of the **Link Properties**. For example, you could only include data to be passed to the subsequent activity that meets a particular criteria.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > The rules of the smart link **Exclude** tab supersede the rules on the smart link **Include** tab.  
 
-> [IMPORTANT]  
+
+> [!IMPORTANT]  
 > The rules on each tab are joined by using an **or** condition. Only one of the conditions defined on a tab must be true for the condition to be true.  
 
 The type of data published by an activity determines the type of criteria  you can set for controlling the runbook sequence. Some activities publish binary data, and others publish numeric, or text data. 
@@ -44,7 +45,7 @@ If the published data is text data you can use any of the following to set the c
 |equals|The value of the Published Data item exactly matches the specified text.|  
 |does not equal|The value of the Published Data item does not match the specified text.|  
 
-> [NOTE]  
+> [!NOTE]  
 > Text values are not case\-sensitive.
 
 You can also set criteria using [regular expressions](https://technet.microsoft.com/en-us/system-center-docs/orch/manage/regular-expressions) to perform pattern matching. 
@@ -65,7 +66,7 @@ If the published data is numerical you can use any of the following to set the c
 
 1.  Right-click a smart link to select **Properties** to open the **Link Properties** dialog box.  
 
-    > [IMPORTANT]  
+    > [!IMPORTANT]  
     > To change the values that make up the rule, you have to select each underlined portion of the smart link condition.  
 
 2.  Click the listed activity in the condition to open the **Published Data** dialog box.  
@@ -107,7 +108,7 @@ Loops run one time for each incoming piece of data that is passed to the activit
 ### Exit and Do Not Exit Conditions  
 The rules on the **Exit** tab specify the conditions that determine whether the loop exits. The rules on the **Do Not Exit** tab specify the conditions that cause the loop to continue.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > The rules on the **Do Not Exit** tab supersede the rules on the **Exit** tab.  
 
 The rules within each tab are joined by using an **Or** condition. Only one of the conditions on a tab must be true for the entire tab to be true.  
@@ -118,7 +119,7 @@ Use the following procedure to add or remove an **Exit** condition.
 
 1.  In the **Looping Properties** dialog box, click either the **Exit** tab or **Do Not Exit** tab, and then select the condition listed in the box, or click **Add** to add a condition.  
 
-    > [IMPORTANT]  
+    > [!IMPORTANT]  
     > To change the values that make up the rule, you have to select each underlined portion of the link condition.  
 
 2.  Click the listed activity in the condition to open the **Published Data** dialog box.  
@@ -147,13 +148,13 @@ Schedules use the system clock of the Runbook server that runs the runbook. This
 
 Runbooks that start before a prohibited time run until finished, even if they are still processing when the prohibited time arrives. They will not be interrupted after processing has started.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > The access permissions for schedules can be modified, but the runbook server does not enforce these permissions.  
 
-> [NOTE]  
+> [!NOTE]  
 > If you schedule a runbook to start during an hour that is skipped when the system clock is adjusted forward by one hour, that starting time is skipped, and the runbook starts at the next scheduled time. If you schedule a runbook to start during an hour that occurs two times because the system clock is adjusted backward by one hour, the runbook starts two times.  
 
-> [NOTE]  
+> [!NOTE]  
 > Orchestrator does not support moving multiple schedules with multiple\-selection. To move more than one schedule to another folder, you must move each schedule individually. 
 
 ### To create a schedule  
