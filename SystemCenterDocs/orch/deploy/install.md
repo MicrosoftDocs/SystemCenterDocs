@@ -16,6 +16,12 @@ ms.assetid:
 
 >Applies To: System Center 2016 - Orchestrator
 
+A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines. 
+
+For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](..\get-started\learn-about-orchestrator.md).
+
+This topic provides detailed installation instructions for the various Orchestrator roles. 
+
 ## To install an Orchestrator management server
 
 1.  On the server where you want to install Orchestrator, start the **System Center 2016 - Orchestrator Setup Wizard**.
@@ -283,6 +289,15 @@ For example, you could use the following command to install all of the Orchestra
 ```
 .\Setup.exe /Silent /ServiceUserName:<UserName> /ServicePassword:<password> /Components:All /DbServer:<DBServerName> /DbNameNew:Orchestrator /WebServicePort:81 /WebConsolePort:82 /UseMicrosoftUpdate:1 /SendTelemetryReports:1 /EnableErrorReporting:always
 ```
+## To view runbook server properties
+
+The properties for a runbook server include an optional description and the account information to use for the Runbook Service. You can modify the description but can only view the service credentials.    
+
+1.  In the **Connections**  pane, select the Runbook Servers folder. In the right pane, right-click the runbook server to select **Properties**.  
+
+2.  If you want to add or change the **Description** box, type a description for this runbook server, and then click **Finish**.
+
+
 ## Troubleshoot your installation
 
 The following information provides additional instructions and caveats that you can use during installation to resolve problems you might experience.  
@@ -342,3 +357,8 @@ To solve this problem. you can manually start the RunbookService, or configure t
 If you attempt to uninstall Orchestrator while logged in with an account that is a member of OrchestratorSystemGroup but is not an administrator, uninstall removes all accounts from OrchestratorSystemGroup. If you stop the runbook service and attempt to restart the service, the service fails because the user account does not have the correct permissions to retrieve the orchestration database connection. An account that is an administrator or a member of the OrchestratorSystemGroup is required to retrieve the orchestration database connection.  
 
 To solve this problem, an administrator can add the user back to OrchestratorSystemGroup.
+
+## Next steps
+
+- To learn more about building runbooks see [Design and build runbooks](../manage/design-and-build-runbooks.md).
+- To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)
