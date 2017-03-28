@@ -791,6 +791,7 @@
 ##### [Deploy virtual machines from a VM template](vmm/manage/manage-vm-template.md)
 ##### [Deploy Linux virtual machines](vmm/manage/manage-vm-linux.md)
 ##### [Convert VMware VMs to Hyper-V](vmm/manage/manage-vm-vmware-convert.md)
+##### [Fail over VMs between virtual networks](vmm/manage/manage-vm-failover-virtual-networks.md)
 ##### [Manage virtual machine settings](vmm/manage/manage-vm-settings.md)
 ##### [Manage dynamic and power optimization for virtual machines](vmm/manage/manage-compute-optimization.md)
 ##### [Create VM role templates](vmm/manage/Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
