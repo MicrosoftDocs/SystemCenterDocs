@@ -17,11 +17,11 @@ manager: carmonm
 
 > Applies To: System Center 2016 - Orchestrator
 
-You set the overall sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as "smart links" because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This topic describes how to control sequencing and manipulate data within your runbook.
+You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as "smart links" because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This topic describes how to control sequencing and manipulate data within your runbook.
 
 ## Control activity sequence with smart links
 
-The activities in your runbook will complete according in the order you set by linking them together. You can control the data that flows between the activities by using the Include and Exclude tabs of the **Link Properties**. For example, you could only include data to be passed to the subsequent activity that meets a particular criteria.  
+The activities in your runbook will complete according to the order you set by linking them together. You can control the data that flows between the activities by using the Include and Exclude tabs of the **Link Properties**. For example, you could only include data to be passed to the subsequent activity that meets a particular criteria.  
 
 > [!IMPORTANT]  
 > The rules of the smart link **Exclude** tab supersede the rules on the smart link **Include** tab.  
@@ -220,13 +220,12 @@ Runbooks that start before a prohibited time run until finished, even if they ar
 3.  Do not select a schedule. Click **OK**.  
 
 4.  Click **Finish**. The schedule is removed from the runbook.
-## Manipulate data with a runbook
+
+## Manipulate data with functions
 
 You may need to manipulate string data from text files, returned data, or other sources, and convert it into a usable form for your runbook activities. In addition, you can perform simple arithmetic operations, such as calculating sums and differences, and performing division and multiplication operations. For example, you can extract text from a text file by using a **Text File Management** activity, trim leading and trailing spaces from the text, and then retrieve specific parts of the text that you can pass to other activities as returned data items.  
 
-### Manipulate data with a function
-
-You can insert a data manipulation function into any box that lets you type text. Data manipulation functions must be enclosed in square brackets \('\[' and '\]'\). For example:  
+You manipulate data in the runbook by inserting a function. Data manipulation functions must be enclosed in square brackets \('\[' and '\]'\). For example:  
 
 `[Upper('this will be inserted in upper case')]`  
 
