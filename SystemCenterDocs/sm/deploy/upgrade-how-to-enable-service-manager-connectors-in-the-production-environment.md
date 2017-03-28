@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 0b055821-641a-4f09-96d9-14b1f84a950d
 ---
 
-# Enable Service Manager connectors in the production environment after you upgrade.
+# Enable Service Manager connectors in the production environment after you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

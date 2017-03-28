@@ -1,5 +1,5 @@
 ---
-title: How to create and deploy server images of Service Manager
+title: Create and deploy server images of Service Manager
 description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
 manager:  carmonm
 ms.custom: na
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 ---
 
-# How to create and deploy server images of Service Manager
+# Create and deploy server images of Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -68,3 +68,8 @@ You can use the information in this article to create a system image that contai
     start /wait C:\RunOnce\SCSM\setup.exe /Install:Server /AcceptEula /RegisteredOwner:SCSM /RegisteredOrganization:Microsoft /CreateNewDatabase /SqlServerInstance:%computername% /ManagementGroupName:%computername% /AdminRoleGroup:%ServiceAccountDomain%\%ServiceAccountName% /ServiceRunUnderAccount:%ServiceAccountDomain%\%ServiceAccountName%\%ServiceAccountPassword% /WorkflowAccount:%ServiceAccountDomain%\%ServiceAccountName%\%ServiceAccountPassword% /CustomerExperienceImprovementProgram:Yes /EnableErrorReporting:Yes /silent  
 
     ```  
+
+
+## Next steps
+
+- Review [Guidance for installing Service Manager on virtual machines](deploy-guidance-for-installing-system-center-2016-service-manager-on-virtual-machines.md) for information that you should consider when you install Service Manager in a Hyper-V virtual environment.

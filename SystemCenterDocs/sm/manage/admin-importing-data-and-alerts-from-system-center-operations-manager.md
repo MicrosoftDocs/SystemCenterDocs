@@ -12,7 +12,7 @@ ms.technology: service-manager
 ms.assetid: e233cb46-69de-439d-a4f8-08d8ac993e64
 ---
 
-# Import and alerts from Operations Manager into Service Manager
+# Import data and alerts from Operations Manager into Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

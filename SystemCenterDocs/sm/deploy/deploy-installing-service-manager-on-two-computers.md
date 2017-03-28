@@ -231,3 +231,7 @@ You can use the following procedures to validate the two\-computer installation 
 8.  Verify that the **DWASDataBase** database is listed.  
 
 9. Exit Microsoft SQL Server Management Studio.
+
+## Next steps
+
+- Review [Install Service Manager on four computers](deploy-installing-service-manager-on-four-computers.md) to install Service Manager on four computers. This scenario is useful in a production environment, and it maximizes performance and scalability.
