@@ -21,6 +21,7 @@ ms.assetid:  4398d1ea-d63c-4fc8-b7f0-4e8fc80c00cc
 Service Management Automation (SMA) is an IT process automation solution for Windows Azure Pack for Windows Server. It enables you to automate the creation, monitoring, and deployment of resources in your Windows Azure Pack environment.  SMA runbooks run on the Windows PowerShell engine.
 
 The following diagram illustrates how SMA integrates with Windows Azure Pack for Windows Server.
+
 ![SMA Architecture diagram](../media/smaarchitecture.png)
 
 
