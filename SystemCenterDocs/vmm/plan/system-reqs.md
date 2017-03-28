@@ -5,7 +5,7 @@ description: This article provides information about system requirements for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  01/10/2017
+ms.date:  03/28/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,21 @@ ms.technology:  virtual-machine-manager
 
   >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes the hardware, software, and SQL Server requirements for System Center 2016 - Virtual Machine Manager (VMM), and summarizes support for servers managed in the VMM fabric.
+This article describes the scalability information, hardware, software, and SQL Server requirements for System Center 2016 - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
+
+## Capacity limits
+
+**Entity** | **Recommended maximum count**
+--- | ---
+Physical hosts | 1000
+Virtual Machines | 25000
+Services | 1000
+User roles | 1000
+Clouds | 20
+Virtual networks| 2000
+logical networks| 20
+Library resources| 1000
+Library Objects (templates, profiles)| 100
 
 ## Hardware
 
