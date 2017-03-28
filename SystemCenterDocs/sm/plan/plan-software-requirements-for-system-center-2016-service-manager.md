@@ -19,11 +19,11 @@ ms.assetid: 787b218d-2f31-41e2-a8c7-3365972d029b
 
 >Applies To: System Center 2016 - Service Manager
 
-This topic describes the software requirements for Service Manager in System Center 2016 - Service Manager.
+This article describes the software requirements for Service Manager in System Center 2016 - Service Manager.
 
 ## Software requirements
 
- All basic software requirements for System Center 2016 Service Manager are listed at [System Requirements for System Center 2016](../plan/plan-service-manager-system-requirements.md).  
+ All basic software requirements for System Center 2016 Service Manager are listed at [System requirements for Service Manager](plan-service-manager-system-requirements.md).  
 
 > [!NOTE]  
 >  The Service Manager management server and data warehouse management server must be installed on the 64\-bit edition of the Windows operating system. The Service Manager console can be installed on both the 32\-bit and 64\-bit editions of Windows.  
@@ -67,3 +67,7 @@ You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use t
 ### Windows safe mode
 
 Service Manager does not operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
+
+## Next steps
+
+- Review [SQL Server requirements](plan-sql-server-requirements-for-system-center-2016-service-manager.md) to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016 - Service Manager.

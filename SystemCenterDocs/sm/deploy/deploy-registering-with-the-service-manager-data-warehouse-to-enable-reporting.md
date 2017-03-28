@@ -103,3 +103,7 @@ Several management packs are imported during the data warehouse registration pro
     >  1.  In the **Data Warehouse Jobs** pane, click **MPSyncJob**.  
     > 2.  In the **Tasks** pane, under **Synchronization**, click **Resume**.  
     > 3.  Determine whether management pack deployment is complete by repeating steps 4through 6.
+
+## Next steps
+
+- Review [Deploy additional Service Manager management servers](deploy-deploying-additional-service-manager-management-servers.md) to install additional Service Manager management servers to improve performance.

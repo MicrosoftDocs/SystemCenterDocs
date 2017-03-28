@@ -75,3 +75,7 @@ Network latency was also tested in the baseline. Network latency was introduced 
     >  Expanding service maps in the Service Manager console was slow with any amount of latency.  
 
 -   When network latency exceeded 200 msec, overall Service Manager console response times were observed as poor. If your latency exceeds 200 msec, you should plan to use RDC or another similar remote access solution for operational tasks. However, because occasional administrative tasks are less common you might not need remote access for them.
+
+## Next steps
+
+- Review [Service Manager performance](plan-service-manager-performance.md) to read general guidelines to consider when you are planning for Service Manager software performance.

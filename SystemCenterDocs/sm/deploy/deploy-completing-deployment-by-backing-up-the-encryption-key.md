@@ -63,3 +63,7 @@ Use the Encryption Key Backup or Restore Wizard and the following procedures to 
 7.  On the **Provide a Password** page, type the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, re\-enter the same password, and then click **Next**.  
 
 8.  After you receive the message, **Secure Storage Key Restore Complete**, click **Finish**.
+
+## Next steps
+
+- Review [Index non-English knowledge articles](deploy-indexing-non-english-knowledge-articles.md) to resolve an indexing issue in an environment where you create, or plan to create, knowledge articles in any language other than English.

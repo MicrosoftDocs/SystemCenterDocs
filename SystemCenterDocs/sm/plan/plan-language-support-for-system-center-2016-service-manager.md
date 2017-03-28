@@ -21,9 +21,7 @@ ms.assetid: 19b6c8b8-324b-43b3-afb6-06648a82df50
 
 It is assumed in this article that you are installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager is installed. For information about upgrading Service Manager, see the [Upgrade Guide for Service Manager 2016 - System Center](../deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).  
 
- Including English, System Center 2016 - Service Manager supports a total of 21 languages. There are some search-related issues with six languages: Czech, Danish, Finnish, Greek, Polish, and Turkish. For more information about these issues, see the section "Search Issues" in this topic.  
-
- Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. For more information about SQL Server collations, see the section "Microsoft SQL Server" in [Supported Configurations for System Center 2016 - Service Manager](plan-supported-configurations-for-system-center-2016-service-manager.md) in this guide.  
+ Including English, System Center 2016 - Service Manager supports a total of 21 languages. Setting your Windows locale on a computer that hosts a Service Manager console to one of the supported languages results in Service Manager being displayed in that language. In addition to the languages that Service Manager supports, you must also consider the ability to search and sort data in the Service Manager databases. The ability to search and sort data in a specific language is defined by the collation settings in Microsoft SQL Server. For more information about SQL Server collations, see the section "Microsoft SQL Server" in [Supported Configurations for System Center 2016 - Service Manager](plan-supported-configurations-for-system-center-2016-service-manager.md) in this guide.  
 
  The information in the following table represents the approved collations and the locale identifiers that were tested for Service Manager. In the list of collations in this table, "CI" indicates case-insensitive, and "AS" indicates accent-sensitive.  
 
@@ -53,3 +51,7 @@ It is assumed in this article that you are installing System Center 2016 - Servi
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
 |Turkish \(Turkey\)|Turkish\_100\_CI\_AS|  
+
+## Next steps
+
+- Review [Databases created by Service Manager](plan-databases-created-by-system-center-2016-service-manager.md) to learn about the databases that are created during Service Manager deployment.
