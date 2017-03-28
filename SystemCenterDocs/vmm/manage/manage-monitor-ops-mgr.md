@@ -23,7 +23,7 @@ This article describes how to integrate System Center 2016 - Virtual Machine Man
 - An Operations Manager management group can monitor multiple VMM instances. The VMM fabric can only be monitored by a single Operations Manager management group.
 - The Fabric Health Dashboard is imported to Operations Manager with the VMM management packs. It shows a detailed overview of the health of the VMM fabric and private clouds. You can link to other dashboards to drill into network and storage monitoring.
 
-##Deployment Summary
+## Deployment summary
 
 You set up Operations Manager with VMM as follows:
 
