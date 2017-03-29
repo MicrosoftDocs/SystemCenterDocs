@@ -24,13 +24,13 @@ You can use Service Management Automation (SMA) runbooks to automate routine ope
 
 ## PowerShell workflow runbooks
 
-PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](Creating-or-Importing-a-Runbook.md) into SMA.
+PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](../manage/Creating-or-Importing-a-Runbook.md) into SMA.
 
 ### Advantages
 
 - Implement all complex logic with PowerShell Workflow code.
-- Use [checkpoints](Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints) to resume runbook in case of error.
-- Use [parallel processing](Windows-PowerShell-Workflow-Concepts.md#Parallel) to perform multiple actions in parallel.
+- Use [checkpoints](../manage/Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints) to resume runbook in case of error.
+- Use [parallel processing](../manage/Windows-PowerShell-Workflow-Concepts.md#Parallel) to perform multiple actions in parallel.
 - Can include other PowerShell Workflow runbooks as child runbooks to create high level workflows.
 
 
@@ -44,7 +44,7 @@ PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You dire
 
 ## PowerShell runbooks
 
-PowerShell runbooks are based on Windows PowerShell.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](Creating-or-Importing-a-Runbook.md) into SMA.
+PowerShell runbooks are based on Windows PowerShell.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](../manage/Creating-or-Importing-a-Runbook.md) into SMA.
 
 ### Advantages
 
@@ -54,8 +54,8 @@ PowerShell runbooks are based on Windows PowerShell.  You directly edit the code
 ### Limitations
 
 - Must be familiar with PowerShell scripting.
-- Can't use [parallel processing](Windows-PowerShell-Workflow-Concepts.md#Parallel) to perform multiple actions in parallel.
-- Can't use [checkpoints](Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints)  to resume runbook in case of error.
+- Can't use [parallel processing](../manage/Windows-PowerShell-Workflow-Concepts.md#Parallel) to perform multiple actions in parallel.
+- Can't use [checkpoints](../manage/Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints)  to resume runbook in case of error.
 - PowerShell Workflow runbooks can only be included as child runbooks by using the Start-SMARunbook cmdlet which creates a new job.
 
 ## How SMA executes runbooks
@@ -76,4 +76,4 @@ In order for a runbook to perform its required actions, it must have permissions
 ## Next steps
 - Read more about authoring SMA runbooks [Authoring automation runbooks](../manage/authoring-automation-runbooks.md).
 
-- Read more about PowerShell workflows [Windows PowerShell workflow concepts](..manage/windows-powershell-workflow-concepts.md)
+- Read more about PowerShell workflows [Windows PowerShell workflow concepts](../manage/windows-powershell-workflow-concepts.md)
