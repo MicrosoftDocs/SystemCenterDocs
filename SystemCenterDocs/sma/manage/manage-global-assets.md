@@ -117,7 +117,7 @@ Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "P
 ## Using a PowerShell Credential in a Runbook
 You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
 
--   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](overview-powershell-workflows.md#bkmk_InlineScript) activity to run a set of commands using alternate credentials.
+-   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](windows-powershell-workflow-concepts.md#bkmk_InlineScript) activity to run a set of commands using alternate credentials.
 
     ```powershell
     $myCredential = Get-AutomationPSCredential -Name 'MyCredential'
@@ -290,5 +290,5 @@ Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value '
 ## Next steps
 
 - Read about building integration modules [Building an integration module](building-an-integration-module.md).
-- Read about authoring Automation runbooks [Authoring Automation runbooks](author-automation-runbooks.md).
+- Read about authoring Automation runbooks [Authoring Automation runbooks](authoring-automation-runbooks.md).
 
