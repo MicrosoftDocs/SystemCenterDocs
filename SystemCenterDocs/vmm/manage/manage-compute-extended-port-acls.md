@@ -134,9 +134,11 @@ Create a port ACL and store the object in $portACL:
     `` PS: C:\> $portACL = New-SCPortACL -Name "RDP ACL" -Description "Acl on RDP access" ``
 
 
+
 Create a port ACL rule to allow RDP access from a remote subnet:
 
 `` PS: C:\> New-SCPortACLRule -Name "AllowRDPAccess" -PortACL $portACL -Description "Allow RDP Rule from a subnet" -Action Allow -Type Inbound -Priority 110 -Protocol Tcp -LocalPortRange 3389 -RemoteAddressPrefix 10.184.20.0/24 ``
+
 
 
 Modify the priority of an ACL rule: 
@@ -144,6 +146,7 @@ Modify the priority of an ACL rule:
     `` PS: C:\> $portACLRule = Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> `` PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -Priority 220 ``
     
 The first command gets the port ACL rule "AllowRDPAccess". The second command changes the priority of the rule to 220.
+
 
 
 Modify the port ACL rule for the destination address range and protocol for a rule: 
@@ -173,41 +176,48 @@ PortACL | Optionally attaches the specified port ACL to global settings.
 
 ### Examples
 
-#### Example 1
 
 Attach an ACL to global settings:
 
     ``Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -PortACL $acl`` <br/><br/> ExampleL: `` Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -PortACL $acl ``
+    
+    
 
-#### Example 2
 
 Detach an ACL from global settings:
 
     ``Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -RemovePortACL ``
     
-#### Example 3
+    
+    
 
 Attach an ACL to a VM network during creation:
 
     ``New-SCVMNetwork [–PortACL <NetworkAccessControlList>] [rest of the parameters] ``
+    
+    
  
-#### Example 4
+
     
 Attach an ACL to an existing VM network:
 
     ``Set-SCVMNetwork -PortACL $acl ``
     
-#### Example 5
+    
+    
 
 Attach an ACL to a VM subnet during creation:
 
     ``New-SCVMSubnet [–PortACL <NetworkAccessControlList>] [rest of the parameters] ``
     
-#### Example 6
+
+
 
 Attach an ACL to an existing VM subnet:
 
     `` Set-SCVMSubnet [–PortACL <NetworkAccessControlList> | -RemovePortACL] [rest of the parameters] ``
+    
+    
 
 ## Retrieve and view port ACLs and rules
 
