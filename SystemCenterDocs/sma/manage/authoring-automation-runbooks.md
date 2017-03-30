@@ -199,6 +199,71 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 9.  Click **Publish Draft** if you want to publish the latest draft version of the runbook.
 
+## Publish your runbook
+
+After you have created your runbook you need to publish it to so the runbook worker can execute it. Each runbook in Service Management Automation has a Draft and a Published version. Only the Published version is available to be run, and only the Draft version can be edited. The Published version is unaffected by any changes to the Draft version. When you are ready to make the Draft version available, you publish it which overwrites the Published version with the Draft version.
+
+### To publish a runbook using the management portal
+
+1.  Select the **Automation** workspace.
+
+2.  At the top of the screen, select **Runbooks**.
+
+3.  Locate the runbook to edit and click on its name.
+
+4.  At the top of the screen, click **Author**.
+
+5.  Click **Draft**.
+
+6.  At the bottom of the screen, click **Publish**.
+
+7.  Click **Yes** to the verification message.
+
+### To publish a runbook using Windows PowerShell
+You can use the Publish-SmaRunbook to publish a runbook with Windows PowerShell. The following sample commands show how to publish a runbook.
+
+```powershell
+$webServer = 'https://MyServer'
+$port = 9090
+$runbookPath = 'c:\runbooks\Sample-TestRunbook.ps1'
+$runbookName = 'Test-Runbook'
+
+Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
+```
+
+### To publish a runbook using Windows PowerShell ISE
+Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) allows you to use this tool to write and test Automation runbooks.
+
+1. Open Windows PowerShell ISE.
+
+2. If the **SMA ISE add-on** is not displayed on the right side of the ISE, open the  **Add-ons** menu, and enable **SMA ISE add-on**.
+
+3. Sign in to SMA on the **Configuration** tab.
+
+4. Select the **Runbook** tab.  You should see a list of SMA runbooks.
+
+5. Select the runbook and click **Publish Draft** to publish the latest draft version of the runbook.
+
+## Test your runbook
+
+You can test the Draft version of a runbook in Service Management Automation while leaving the published version of the runbook unchanged. This allows you to verify that the runbook is working correctly before replacing the published version.
+
+When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](Runbook-Output-and-Messages.md#Output) and [Warning and Error](Runbook-Output-and-Messages.md#WarningError) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](Runbook-Output-and-Messages.md#Verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](Runbook-Output-and-Messages.md#PreferenceVariables) is set to **Continue**.
+
+When you test a runbook, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non-production resources.
+
+### To test a runbook in Service Management Automation
+To test a runbook, [open the Draft version of the runbook in the Management Portal](Editing-a-Runbook.md#Portal). Click the **Test** button at the bottom of the screen to start the test.
+
+You can stop or suspend the runbook while it is being tested with the buttons underneath the Output Pane. When you suspend the runbook, it completes the current activity before being suspended. Once the runbook is suspended, you can stop it or restart it.
+
+### To test a runbook Using Windows PowerShell ISE
+The [PowerShell ISE add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) provides cmdlets that emulate the standard activities such as Get-SMACredential and Set-SMAVariable, so you can test the runbook on the local computer just as you would any other script.   
+
+Global assets and their values are downloaded from the automation group to use for local testing.  You can inspect or change these values on the **Assets** tab.  Encrypted values are displayed in orange, and their values are not downloaded.  If you want to use these assets in local testing, then you must set their value locally.
+
+To test the runbook in SMA, click **Test Draft in SMA**.  A new window will be opened.  Click **Start New Job** to start the test.  The output will be displayed in the window.
+
 ## Next steps
 
 - Read about how to call one runbook from another runbook [Child Runbooks](../Service-Management-Automation.md).
