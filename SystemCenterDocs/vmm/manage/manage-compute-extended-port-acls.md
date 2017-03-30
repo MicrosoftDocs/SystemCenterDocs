@@ -94,10 +94,13 @@ CommonParameters | [Learn more](https://msdn.microsoft.com/powershell/reference/
 
 ### Examples
 
-**Action** | **Example**
---- | ---
-Create a port ACL for objects managed by Network Controller "DemoACLManagedByNC" | `` PS: C:\> New-SCPortACL -Name "DemoACLManagedByNC" -Description "PortACL Example Managed by NC" -ManagedByN ``
-Create a port ACL for objects not managed Network Controller "DemPortACL" | `` PS: C:\> New-SCPortACL -Name "DemoPortACL" -Description "Port ACL Example Non Managed by NC" ``
+Create a port ACL for objects managed by Network Controller "DemoACLManagedByNC":
+
+    `` PS: C:\> New-SCPortACL -Name "DemoACLManagedByNC" -Description "PortACL Example Managed by NC" -ManagedByN ``
+
+Create a port ACL for objects not managed Network Controller "DemPortACL":
+
+    `` PS: C:\> New-SCPortACL -Name "DemoPortACL" -Description "Port ACL Example Non Managed by NC" ``
 
 
 ## Define port ACL rules for a port ACL
@@ -126,12 +129,28 @@ Priority | Specify the priority of the rule in in port ACL. Rules are applied ac
 
 ### Examples
 
-**Action** | **Example**
---- | ---
-Create a port ACL and store the object in $portACL | `` PS: C:\> $portACL = New-SCPortACL -Name "RDP ACL" -Description "Acl on RDP access" ``
-Create a port ACL rule to allow RDP access from a remote subnet | `` PS: C:\> New-SCPortACLRule -Name "AllowRDPAccess" -PortACL $portACL -Description "Allow RDP Rule from a subnet" -Action Allow -Type Inbound -Priority 110 -Protocol Tcp -LocalPortRange 3389 -RemoteAddressPrefix 10.184.20.0/24 ``
-Modify the priority of an ACL rule. The first command gets the port acl rule of name "AllowRDPAccess". The second command changes the priority of the rule to 220. | `` PS: C:\> $portACLRule = Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> `` PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -Priority 220 ``
-Modify the port ACL rule for the destination address range and protocol for a rule. The first command retrieves rule "AllowRDPAccess". The second changes the protocol to UDP, and sets the destination to subnet 172.185.21.0/24. | `` PS: C:\> $portACLRule = Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> `` PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -RemoteAddressPrefix 172.185.21.0/24 -Protocol Udp ``
+Create a port ACL and store the object in $portACL:
+
+    `` PS: C:\> $portACL = New-SCPortACL -Name "RDP ACL" -Description "Acl on RDP access" ``
+
+
+Create a port ACL rule to allow RDP access from a remote subnet:
+
+`` PS: C:\> New-SCPortACLRule -Name "AllowRDPAccess" -PortACL $portACL -Description "Allow RDP Rule from a subnet" -Action Allow -Type Inbound -Priority 110 -Protocol Tcp -LocalPortRange 3389 -RemoteAddressPrefix 10.184.20.0/24 ``
+
+
+Modify the priority of an ACL rule: 
+    
+    `` PS: C:\> $portACLRule = Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> `` PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -Priority 220 ``
+    
+The first command gets the port ACL rule "AllowRDPAccess". The second command changes the priority of the rule to 220.
+
+
+Modify the port ACL rule for the destination address range and protocol for a rule: 
+
+    `` PS: C:\> $portACLRule = Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> `` PS: C:\> Set-SCPortACLRule -PortACLRule $portACLRule -RemoteAddressPrefix 172.185.21.0/24 -Protocol Udp ``
+
+The first command retrieves rule "AllowRDPAccess". The second changes the protocol to UDP, and sets the destination to subnet 172.185.21.0/24.
 
 
 ## Attach and detach port ACLs
@@ -154,26 +173,119 @@ PortACL | Optionally attaches the specified port ACL to global settings.
 
 ### Examples
 
-**Action** | **Cmdlet**
---- | ---
-Attach an ACL to global settings | ``Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -PortACL $acl`` <br/><br/> ExampleL: `` Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -PortACL $acl ``
-Detach an ACL from global settings | ``Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -RemovePortACL ``
-Attach an ACL to a VM network during creation | ``New-SCVMNetwork [–PortACL <NetworkAccessControlList>] [rest of the parameters]``
-Attach an ACL to an existing VM network | ``Set-SCVMNetwork -PortACL $acl ``
-Attach an ACL to a VM subnet during creation | ``New-SCVMSubnet [–PortACL <NetworkAccessControlList>] [rest of the parameters] ``
-Attach an ACL to an existing VM subnet | `` Set-SCVMSubnet [–PortACL <NetworkAccessControlList> | -RemovePortACL] [rest of the parameters] ``
+#### Example 1
+
+Attach an ACL to global settings:
+
+    ``Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -PortACL $acl`` <br/><br/> ExampleL: `` Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -PortACL $acl ``
+
+#### Example 2
+
+Detach an ACL from global settings:
+
+    ``Set-SCVMMServer -VMMServer "VMM.Contoso.Local" -RemovePortACL ``
+    
+#### Example 3
+
+Attach an ACL to a VM network during creation:
+
+    ``New-SCVMNetwork [–PortACL <NetworkAccessControlList>] [rest of the parameters] ``
+ 
+#### Example 4
+    
+Attach an ACL to an existing VM network:
+
+    ``Set-SCVMNetwork -PortACL $acl ``
+    
+#### Example 5
+
+Attach an ACL to a VM subnet during creation:
+
+    ``New-SCVMSubnet [–PortACL <NetworkAccessControlList>] [rest of the parameters] ``
+    
+#### Example 6
+
+Attach an ACL to an existing VM subnet:
+
+    `` Set-SCVMSubnet [–PortACL <NetworkAccessControlList> | -RemovePortACL] [rest of the parameters] ``
 
 ## Retrieve and view port ACLs and rules
 
-**Action** | **Cmdlet** | **Parameters**
---- | --- | ---
-Retrieve and view a port ACL<br/><br/> [Get-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportacl) | `` Get-SCPortACL [[-Name] <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>]`` <br/><br/> Example: `` PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL" `` | No parameters retrieves all ACLs<br/><br/> Name/ID: Retrieve by name or GUID<br/><br/> OnBehalfOfUser/OnBehalfOfUserRole: Run with user name or role.<br/><br/> VMMServer: Retrieve ACLs on specific VMM server<br/><br/> [CommonParameters](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_CommonParameters)
-Retrieve and view a port ACL rule<br/><br/> [Get-SCPortACLRule](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportaclrule) | `` Get-SCPortACLRule [-Name <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-PortACL <PortACL> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>] `` <br/><br/> Get rules for specific ACL: `` PS: C:> Get-SCPortACLRule -Name "AllowRDPAccess" `` <br/><br/> Get all rules for ACL: `` PS: C:> Get-SCPortACLRule -PortACL $portACL `` | See previous entry
+1. Open PowerShell in VMM.
+2. Run the [Get-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportacl) cmdlet, to retrieve and view a port ACL:
 
+    ```
+    Get-SCPortACL [[-Name] <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>]
+
+    ```
+3. Run the [Get-SCPortACLRule](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/get-scportaclrule) to retrieve and view a rule:
+
+    ```
+    Get-SCPortACLRule [-Name <String> ] [-ID <Guid> ] [-OnBehalfOfUser <String> ] [-OnBehalfOfUserRole <UserRole> ] [-PortACL <PortACL> ] [-VMMServer <ServerConnection> ] [ <CommonParameters>] 
+    
+    ```
+
+### Parameters
+
+**Parameter** | **Details**
+--- | ---
+No parameters | Retrieves all ACLs
+Name/ID | Retrieve by name or GUID
+OnBehalfOfUser/OnBehalfOfUserRole | Run with user name or role
+VMMServer | Retrieve ACLs on specific VMM server
+CommonParameters | [Learn more](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_CommonParameters)
+
+### Examples
+
+Retrieve a specific ACL:
+    
+    `` PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL" ``
+
+Get rules for a specific ACL:
+
+    `` PS: C:> Get-SCPortACLRule -Name "AllowRDPAccess" `` 
+    
+Get all rules for ACL:
+
+    `` PS: C:> Get-SCPortACLRule -PortACL $portACL ``
 
 ## Modify port ACLs and rules
 
-**Action** | **Cmdlet** | **Parameters**
---- | --- | ---
-Modify a port ACL setting<br/><br/> [Set-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/Set-SCPortACL) | ``` Set-SCPortACL [-PortACL] <PortACL> [[-Description] <String>] [-JobVariable <String>] [-Name <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [<CommonParameters>] ```<br/><br/> Example. Get ACL:  ``` PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL"```. Set description: ``` PS: C:> Set-SCPortACL -PortACL $portACL -Description "Port ACL Example Non Managed by Network Controller" ``` | Name/Description: Name and description of port ACL<br/><br/> JobVariable: Stores job progress<br/><br/>  OnBehalfOfUser/OnBehalfOfUserRole: Run with user name or role.<br/><br/> ProTipID: ID of ProTip that triggered action<br/><br/> RunAsynchronously: Indicates whether job runs asynchronously.
- Remove ACL<br/><br/> [Remove-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/remove-scportacl) | ``` Remove-SCPortACL [-PortACL] <PortACL> [-Confirm] [-JobVariable <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [-WhatIf] [<CommonParameters>] ``` <br/><br/> Example to get and then remove ACL<br/><br/> Get ACL: ``` PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL" `` <br/><br/> Remove ACL:`` PS: C:> Remove-SCPortACL -PortACL $portACL ``` | Confirm: Prompts before running job<br/><br/> WhatIf: Shows what happens without running command
+1. Open PowerShell in VMM.
+2. Run the [Set-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/Set-SCPortACL) cmdlet, to modify a port ACL:
+
+    `` Set-SCPortACL [-PortACL] <PortACL> [[-Description] <String>] [-JobVariable <String>] [-Name <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [<CommonParameters>] ``
+
+3. Run the [Remove-SCPortACL](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/remove-scportacl) to remove an ACL:
+
+    `` Remove-SCPortACL [-PortACL] <PortACL> [-Confirm] [-JobVariable <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [-WhatIf] [<CommonParameters>] ``
+
+ ### Parameters
+ 
+**Parameter** | **Details**
+--- | ---
+Name/Description | Name and description of port ACL
+JobVariable | Stores job progress
+OnBehalfOfUser/OnBehalfOfUserRole | Run with user name or role.
+ProTipID | ID of ProTip that triggered action
+RunAsynchronously | Indicates whether job runs asynchronously.
+Confirm | Prompts before running job
+WhatIf | Shows what happens without running command
+
+
+### Examples
+
+Set an ACL description:
+
+    `` PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL" ``
+    `` PS: C:> Set-SCPortACL -PortACL $portACL -Description "Port ACL Example Non Managed by Network Controller" ``
+
+The first cmdlet retrieves the ACL, the second sets the description on the ACL.
+
+
+Remove an ACL:
+
+`` PS: C:> $portACL = Get-SCPortACL -Name "DemoPortACL" `` 
+`` PS: C:> Remove-SCPortACL -PortACL $portACL ``
+
+The first cmdlet retrieves the ACL, the second removes it.
