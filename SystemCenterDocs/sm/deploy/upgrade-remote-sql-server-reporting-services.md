@@ -1,6 +1,7 @@
 ---
-title: Remote SQL Server Reporting Services
-manager: cfreeman
+title: Prepare remote SQL Server Reporting Services
+description: You need to prepare remote SQL Server Reporting Services for upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: d41be74c-5773-4152-8155-d455f7947144
 ---
 
-# Remote SQL Server Reporting Services
+# Prepare remote SQL Server Reporting Services for upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

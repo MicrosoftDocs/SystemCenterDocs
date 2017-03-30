@@ -34,18 +34,6 @@ This topic summarizes some of the common support information you might need when
 
 -   As a Windows virtual machine in VMWare - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
 
-### System Center 2012 - DPM can't be installed on servers running Windows Server 2012
-
-**Issue**: Operating system not supported.
-
-**Workaround**: Install System Center 2016 in order to get DPM running on a server running Windows Server 2012.
-
-
-### System Center 2012 - DPM with SP1 can't be installed on servers running Windows Server 2012 R2
-
-**Issue**: Operating system not supported.
-
-**Workaround**: You'll need to upgrade to System Center 2012  R2.
 
 ### Sharing a library between different DPM versions isn't supported
 **Issue**: Different versions of DPM (for example DPM 2012 SP1 and DPM 2012 R2) can't function as clients sharing the same library.
@@ -66,33 +54,6 @@ This topic summarizes some of the common support information you might need when
 **Issue**: Operating system limitation.
 
 **Workaround**: Install on 64-bit only. For a full list of system requirements, see [System Requirements for DPM in System Center 2012](http://technet.microsoft.com/library/hh757829.aspx).
-
-### In-place upgrade of the operating system on a server running DPM isn't supported
-**Issue**: In-place upgrade isn't supported.
-
-**Workaround**: Do the following:
-
-1.  Make a backup of the DPM database. You can use the DPMBackup.exe tool to do this. This tool does the following:
-
-    -   Creates a mount point of the backup shadow copies of each replica volume on the DPM server, in the folder Program Files\Microsoft Data Protection Manager\DPM\Volumes\ShadowCopy\\.
-
-    -   Creates database backups of the DPM database (DPMDB.mdf) and the Report database (ReportServer.mdf).
-
-    The tool is located on the DPM server in the folder Program Files\Microsoft Data Protection Manager\DPM\bin.  In order to run the tool the SQL Server 2012 SP1 management tools must be installed on the DPM server. The installation file for these is located at \SCDPM\SQLSVR2012SP1\SQLManagementStudio_X64_ENU.EXE on the DPM installation media. Note that .NET 3.5 is required before installing these tools.
-
-2.  Make a note of the DPM version and the last update that was installed.
-
-3.  Uninstall DPM. Keep replica data.
-
-4.  Upgrade the operating system and ensure that the DPM storage pool disks are imported.
-
-5.  Install DPM 2012 SP1 or R2.
-
-6.  Restore the DPM database using Dpmsymc -restore DB.
-
-7.  Run DPMSync - Sync to create new mount points.
-
-8.  Run a consistency check to get data sources into a green state.
 
 ### Underscore not supported in SQL Server name
 **Issue**: If you specify a remote SQL Server that has an underscore in the name during DPM installation, the installation might fail.
@@ -169,16 +130,6 @@ Both of these scenarios are unsupported. You can only select one of the followin
 
 
 ## <a name="BKMK_Storage"></a>Storage issues
-
-### Using a virtual disk (.vhd/.vhdx) in the DPM storage pool is supported in DPM 2012 R2 only
-**Issue**: Storage scenario not supported.
-
-**Workaround**: Install System Center 2012 R2 - DPM.
-
-### You can't use Storage Spaces for the DPM disk storage pool
-**Issue**: Storage Spaces unsupported.
-
-**Workaround**: None
 
 ### References to old tape libraries aren't removed from the DPM database
 **Issue**: Obsolete tape library are still enumerated and listed in DPM PowerShell cmdlets such as get-dpmlibrary.

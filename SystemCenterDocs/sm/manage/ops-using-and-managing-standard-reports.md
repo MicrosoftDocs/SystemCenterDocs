@@ -1,6 +1,7 @@
 ---
-title: Using and Managing Standard Reports
-manager: cfreeman
+title: Use and manage standard reports
+description: Explains how to use and manage standard reports in Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,11 +15,11 @@ ms.topic: article
 ms.assetid: 4c083343-c3b2-47a6-8cd9-ca5fc0a99a05
 ---
 
-# Using and Managing Standard Reports
+# Use and manage standard reports in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This section describes how to use standard reports in Service Manager.  
+This article describes how to use standard reports in Service Manager.  
 
  The simple reporting infrastructure that is included in Service Manager is built on SQL&nbsp;Server Reporting Services \(SSRS\), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report\-level security, report subscriptions, browser\-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with System Center Operations Manager.  
 
@@ -26,7 +27,7 @@ This section describes how to use standard reports in Service Manager.
 
  For more information about SSRS, see [SQL Server Reporting Services](http://go.microsoft.com/fwlink/p/?LinkId=238589). If you want to see the relationship between high\-level processes and services that are involved between Service Manager and SSRS, refer to the Service Manager architecture diagram \(ArchitectureDiagram.vsd\) that is included in the Service Manager job aids \(SM\_job\_aids.zip\). Because the architecture diagram is too large to see properly in this guide, you can download it and the other jobs aids from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=186291).  
 
-## How to View the Standard Report Catalog
+## View the standard report catalog
 
 You can use the following procedure to view the catalog of reports that is available in Service Manager.  
 
@@ -38,7 +39,7 @@ You can use the following procedure to view the catalog of reports that is avail
 
  The reports that are available appear in the results pane of the **Report** console.  
 
-## How to Add Permissions for Standard Reports
+## Add permissions for standard reports
 
 By default, all System Center 2016 - Service Manager users have access to reports through the Reporting workspace. However, before users who do not have administrator permissions can view the Reporting workspace, you must add permissions through SQL&nbsp;Server Reporting Services \(SSRS\).  
 
@@ -68,7 +69,7 @@ By default, all System Center 2016 - Service Manager users have access to report
 
 9. Click **OK**.   
 
-## How to Run a Standard Report
+## Run a standard report
 
 You can use the following procedure to run a report in Service Manager. In this procedure, you run an incident management report to determine how many incidents were resolved in the previous week.  
 
@@ -134,7 +135,7 @@ You can use the following procedure to run a report in Service Manager. In this 
     > [!NOTE]  
     >  If there is no data in the report, ensure that the ETL process is complete. A delay might occur between the start of the process and when data is available for reports.
 
-## How to Export Standard Report Data
+## Export standard report data
 
 You can use the following procedure to export a report into several different types of files so that you can use the data from the reports in different tools. For example, you can export the report data into a comma\-separated value \(CSV\) file and then import it into Microsoft&nbsp;Office&nbsp;Excel.  
 
@@ -174,7 +175,7 @@ You can use the following procedure to export a report into several different ty
 
 10. Save the file to the desktop with a file name of your choice, and then close the report form.  
 
-## How to Create a Standard Linked Report in Service Manager
+## Create a standard linked report
 
 You can use the following procedure to create a linked report.  
 
@@ -201,7 +202,7 @@ You can use the following procedure to create a linked report.
 > [!NOTE]  
 >  You might have to close and reopen the console after the synchronization job is complete to see the report.  
 
-## How to Add a Standard Report to the Service Manager Favorite Reports Folder
+## Add a standard report to the Favorite Reports folder
 
 You can use the following procedure to add a report to the Favorite Reports folder in Service Manager.  
 
@@ -221,7 +222,7 @@ You can use the following procedure to add a report to the Favorite Reports fold
 
  The new report is displayed.  
 
-## How to Configure Standard Report Subscriptions
+## Configure standard report subscriptions
 
 You can set up subscriptions to your reports in Service Manager through SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. Configuring a subscription to a report enables you to automate the delivery of a report. Report subscriptions can be sent through email, stored on the report server, or even posted to a Microsoft SharePoint site.  
 
@@ -229,7 +230,7 @@ You can set up subscriptions to your reports in Service Manager through SQL&nbsp
 
 -   Complete the procedures in the [Subscriptions and Delivery \(Reporting Services\)](http://go.microsoft.com/fwlink/p/?LinkID=158830) topic.   
 
-# How to Schedule a Standard Service Manager Report
+# Schedule a standard report
 
 In Service Manager, you can schedule a linked report to run on a regular basis to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
 
@@ -243,7 +244,7 @@ In Service Manager, you can schedule a linked report to run on a regular basis t
 
  To configure a schedule for a report, complete the procedure in the [Scheduling Reports, Shared Datasets, and Subscriptions](http://go.microsoft.com/fwlink/?LinkId=158822).  
 
-## How to Add Non-Service Manager Reports to the Report Catalog
+## Add non-Service Manager reports to the report catalog
 
 You can display SQL Server Reporting Services \(SSRS\) reports from any source using the Reporting workspace in the Service Manager console. The Reports workspace in Service Manager displays the folders and reports that are contained in the System Center\\Service Manager folder on the SSRS server. Therefore, you can add any reports that you want to the folder. For example, you might have a financial report that you want to view from the Reporting workspace.  
 
@@ -261,7 +262,7 @@ You can display SQL Server Reporting Services \(SSRS\) reports from any source u
 
 6.  In the **Tasks** pane, click **Run Report**.   
 
-## Standard Reports Available in Service Manager
+## Standard reports available in Service Manager
 
 The following reports are available in Service Manager.  
 

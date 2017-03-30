@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Unpublish a request offering
+description: Describes how to unpublish a request offering in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Unpublish a Request Offering
-ms.technology:  service-manager
-ms.assetid:  be6c5f89-9296-4590-8c0e-8f8ac158fe29
+ms.technology: service-manager
+ms.assetid: be6c5f89-9296-4590-8c0e-8f8ac158fe29
 ---
 
-# How to Unpublish a Request Offering
+# Unpublish a request offering in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

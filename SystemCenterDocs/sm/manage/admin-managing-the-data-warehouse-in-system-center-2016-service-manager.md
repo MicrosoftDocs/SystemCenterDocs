@@ -1,6 +1,7 @@
 ---
-description:  
-manager: cfreeman
+title: Manage the data warehouse
+description: Describes how to manage the Service Manager data warehouse.
+manager: carmonm
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -11,12 +12,11 @@ ms.author: banders
 ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title: Managing the Data Warehouse in Service Manager
-ms.technology:  service-manager
-ms.assetid:  855110b9-cd11-4e06-8139-b21518456215
+ms.technology: service-manager
+ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 ---
 
-# Managing the Data Warehouse in Service Manager
+# Manage the Service Manager data warehouse
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -37,7 +37,7 @@ In order to manage the data warehouse, which is primarily used by reporting, you
 
 During deployment, you registered the Service Manager management group as discussed in Register Service Manager Management Group in the Service Manager Deployment Guide. As a result of that action, management pack deployment started and MPSyncJob started. You should not start or resume any data warehouse jobs until MPSyncJob has finished, as shown in the **Data Warehouse Jobs** pane in the Service Manager console.
 
-## Job Schedule and Frequency
+## Job schedule and frequency
 The schedule for a job defines when a job starts. Frequency refers to how often the job runs after it has started. Regardless of schedule and frequency, a job does not run unless the schedule for that job has been enabled. Except for the Entity (Grooming) job, each job has a default scheduled start time, which is midnight. The following table lists the scheduled start time, frequency, and default schedule setting.
 
 |Data warehouse job|Scheduled start time|Frequency|Enabled by default?|
@@ -50,7 +50,7 @@ The schedule for a job defines when a job starts. Frequency refers to how often 
 
 In this release of Service Manager, grooming functions are handled as a workflow. Settings for this job are not configurable.
 
-## Windows PowerShell Cmdlets
+## PowerShell cmdlets
 The Service Manager Windows PowerShell module contains cmdlets that are used in this scenario to manage data warehouse functions on the server that hosts the data warehouse. You must run all Windows PowerShell cmdlets as an administrator. To view the Windows PowerShell Help, type the **get-help** command, followed by the name of the cmdlet for which you want help. For example, type `get-help Set-SCDWJobSchedule`. The following cmdlets are used in this scenario:
 
 -   **Get-SCDWJobSchedule** Displays the schedule for a data warehouse job.
@@ -67,5 +67,5 @@ The Service Manager Windows PowerShell module contains cmdlets that are used in 
 
 -   **Disable-SCDWJobSchedule** Disables a data warehouse job schedule. Job schedules are disabled by default.
 
-## Getting Started with Data Warehouse Jobs
+## Get started with data warehouse jobs
 When you register with the Service Manager data warehouse, the MPSyncJob starts running. This job can take several hours to complete its initial run. When this job is complete, you can see two extract jobs listed in the Data Warehouse Jobs pane. One extract job is listed as **Extract_*data warehouse management group name***, and the other extract job is listed as **Extract_*Service Manager management group name***. When both of these extract jobs appear, you know that the initial run of the MPSyncJob is complete and that you can now proceed with the subsequent maintenance tasks.

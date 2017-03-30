@@ -1,6 +1,7 @@
 ---
-title: Backing Up Service Manager Management Servers
-manager: cfreeman
+title: Back up Service Manager management servers
+description: Describes how you can back up Service Manager management servers for recovery purposes.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 3fd32574-f1fd-44c7-b466-620d18998b12
 ---
 
-# Backing Up Service Manager Management Servers
+# Back up Service Manager management servers
 
 >Applies To: System Center 2016 - Service Manager
 

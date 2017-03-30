@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 03/07/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -21,10 +21,11 @@ This section describes how to configure your firewall to allow communication bet
 ## Port assignments
 The following table shows Operations Manager feature interaction across a firewall, including information about the ports used for communication between the features, which direction to open the inbound port, and whether the port number can be changed.
 
-|Operations Manager Feature A|Port Number and Direction|Operations Manager Featuret B|Configurable|Note|
+|Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
 |management server|1433 --->|Operations Manager database|Yes (Setup)||
 |management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
+|management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |gateway server|5723 --->|management server|No||
 |management server|1433 --->|Reporting data warehouse|No||
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
@@ -33,9 +34,11 @@ The following table shows Operations Manager feature interaction across a firewa
 |web console server|Web site port --->|management server|No||
 |web console browser|51908 --->|web console server|Yes (IIS Admin)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the Operations Manager web console web site.|
 |connected management server (Local)|5724 --->|connected management server (Connected)|No||
-|Agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
-|Agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
-|Agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||
+|Windows agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
+|Windows agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
+|Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||
+|UNIX/Linux agent discovery and monitoring of agent|TCP 1270 <---|management server or gateway server|No||
+|UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 <---|management server or gateway server|Yes||
 |gateway server|5723 --->|management server|Yes (Setup)||
 |Agent (Audit Collection Services forwarder)|51909 --->|management server Audit Collection Services collector|Yes (Registry)||
 |Agentless Exception Monitoring data from client|51906 --->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||

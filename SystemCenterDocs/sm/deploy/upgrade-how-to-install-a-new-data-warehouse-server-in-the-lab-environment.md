@@ -1,6 +1,7 @@
 ---
-title: How to Install a New Data Warehouse Server in the Lab Environment
-manager: cfreeman
+title: Install a new data warehouse server in the lab environment
+description: Install a new data warehouse server in the lab environment before you upgrade.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 239ee325-d396-4e8c-8d1e-adc7d28f3f04
 ---
 
-# How to Install a New Data Warehouse Server in the Lab Environment
+# Install a new data warehouse server in the lab environment before you upgrade
 
 >Applies To: System Center 2016 - Service Manager
 

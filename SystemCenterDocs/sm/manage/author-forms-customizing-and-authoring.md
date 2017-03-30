@@ -1,6 +1,7 @@
 ---
-title: Forms - Customizing and Authoring
-manager: cfreeman
+title: Overview of customizing and authoring forms
+description: Learn about how you can customize and author forms with the Service Manager Authoring Tool.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: dd99e994-e34d-469e-aea0-5c3547eeab66
 ---
 
-# Forms - Customizing and Authoring
+# Overview of customizing and authoring forms with the Service Manager Authoring Tool
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,24 +23,24 @@ A form is a window that makes it possible for users to interact with objects fro
 
  A Service Manager form consists of the Windows Presentation Foundation \(WPF\) form implementation in a Microsoft .NET&nbsp;Framework assembly and a form definition in a Service Manager management pack. The form definition specifies the class that the form represents, along with the other properties of the form.  
 
-## Forms: Key Concepts
+## Key concepts about forms
 
 Before customizing forms, you should be familiar with the following form concepts.  
 
-### How Forms Are Used  
+### How forms are used  
  When the management pack that contains the form definitions is imported into Service Manager, the form definitions are stored in the database. Later, when the user initiates a Service Manager console task that requires the display of an object, Service Manager must find a form to display the requested object. Service Manager accesses the database and searches for a form that has been defined for that object. If no form is defined for the object, Service Manager searches for a form that is defined for the object's parent object. Service Manager continues to search the entire object's inheritance hierarchy until it finds a defined form.  
 
-### Generic Forms  
+### Generic forms  
  If Service Manager cannot find any form for the object or for any of its parent objects, Service Manager dynamically builds a default *generic form* for that object. The generic form is a system\-generated form that is sufficient for simple form use. The generic form represents a quick and easy way to create a form for objects without any form definitions.  
 
  By default, the generic form displays all the properties of the form in a simple layout that you cannot change. The generic form displays the properties of all the parent objects in the inheritance hierarchy of the form, and you cannot change that behavior. Customizations to the generic form are limited. For example, you can specify the properties that you want the generic form to display; however, the generic form cannot be used as a basis for customization. If you later define a custom form for that object, your custom form overwrites the object's generic form.  
 
  For information about hiding properties in a generic form and other ways that you can customize a generic form, see the blog post [Overview of the Forms Infrastructure and the Generic Form](http://go.microsoft.com/fwlink/p/?LinkID=208536).  
 
-### Combination Classes in Forms  
+### Combination classes in forms  
  Sometimes, you need a form to display information that is derived from more than one class. To do this, you create a *combination class* and then bind a field on the form to the combination class. For more information about combination classes, see [Changes to the System Center Common Schema](author-working-with-management-pack-xml-files.md).  
 
-### Functional Aspects of a Form  
+### Functional aspects of a form  
  A form has the following functional aspects:  
 
 1.  Initialization  
@@ -57,7 +58,7 @@ Before customizing forms, you should be familiar with the following form concept
 
  We recommend that you use the **Loaded** event for control\-related custom initialization and then use the **DataContextChanged** or **PropertyChanged** events on the **DataContext** property for target instance\-related custom initialization.  
 
-#### Size and Location  
+#### Size and location  
  When a form is displayed in a pop\-up window, its initial size is determined based on the form's **Width**, **Height**, **MinWidth**, and **MinHeight** properties. If these properties are not set for the form, the form's initial size is calculated based on its content.  
 
  We recommend that you set these properties as follows:  
@@ -73,7 +74,7 @@ Before customizing forms, you should be familiar with the following form concept
 
  To differentiate between the **DataContextChanged** event that was raised when the form was first loaded and the event that was raised to handle a **Refresh** command, check the **OldValue** property of the event arguments that are passed in with the event. This property is null if the form has just been initialized.  
 
-#### Submit Changes  
+#### Submit changes  
  The form host pop\-up window in Service Manager provides buttons for submitting changes that are made in the form and for closing the pop\-up window.  
 
  When a user clicks the **Apply** button for a form, the form's target instance is submitted for storage. This operation is synchronous; therefore, the user cannot edit the form until the submission operation is complete. If failure occurs during the form submission, an error message appears. The form remains open for further changes. We recommend that users apply their changes frequently to avoid collisions if another instance of the form is being edited at the same time.  
@@ -82,7 +83,7 @@ Before customizing forms, you should be familiar with the following form concept
 
  If the user clicks the **Cancel** button, a dialog box appears that asks the user to confirm the operation. The user can click **Yes** and lose changes, or click **No** and return to the form.   
 
-## Forms: General Guidelines and Best Practices
+## General guidelines and best practices for forms
 
 You can extend features of Service Manager by adding or modifying forms. This topic describes some best practice recommendations for creating and using Service Manager forms, using various tools and scripting form definitions directly.  
 
@@ -110,7 +111,7 @@ You can extend features of Service Manager by adding or modifying forms. This to
 
  For information about these guidelines, see the following sections.  
 
-### Use Standard Controls  
+### Use standard controls  
  Controls that are used on a form can be:  
 
 -   **Standard controls**. This includes .NET library controls, such as combo box and list box.  
@@ -120,7 +121,7 @@ You can extend features of Service Manager by adding or modifying forms. This to
 > [!TIP]  
 >  When you use standard controls wherever possible and avoid creating custom controls, you promote consistency with regard to the user experience of forms. If you must create a custom control, separate the visual appearance and behavior and the logical behavior by using control templates to define the appearance of the control. Preferably, there should be a separate control template for each Windows Theme.  
 
-### Follow General Form Design Guidelines  
+### Follow general form design guidelines  
  When you design a form, use public design guidelines to ensure that the form is user friendly and that it adheres to common user\-interaction paradigms.  
 
  For more information about general Windows design, see [Windows User Experience Interaction Guidelines](http://go.microsoft.com/fwlink/p/?LinkID=134101).  
@@ -133,15 +134,15 @@ You can extend features of Service Manager by adding or modifying forms. This to
 
 -   Avoid setting individual control visual properties, and use styles instead. This makes it possible for you to change the appearance of all controls across a series of forms by modifying the style, and it promotes a consistent appearance across related forms.  
 
-### Avoid Code\-Behind  
+### Avoid code-behind  
  *Code\-behind* is a term that describes the code that is joined with markup\-defined objects when an XAML page is markup compiled. Limit the use of code\-behind in a form as much as possible. It is preferable that you embed the code for a form in the control itself, because later it is easier to change that code. Instead, use the declarative capabilities that are supported by the Service Manager forms infrastructure to define value conversions and validation rules in the form.  
 
  As a general guideline, you should limit the use of code\-behind to situations in which it is not possible to provide the required functionality by using the declarative capabilities of XAML, with classes defined in the WPF and the forms infrastructure library. Even then, consider moving the functionality that is implemented in code\-behind into a helper library, and then reference it from the XAML.  
 
-### Include Exception Handling  
+### Include exception handling  
  Ensure that the code in the form contains exception handling so that the form can be loaded both during the design phase in the Authoring Tool and in the Service Manager console at run time.  
 
-### Consider Forms Customization and Upgrades  
+### Consider forms customization and upgrades  
  When you are designing a new form, you should consider future customizations and upgrades to that form. To ensure that it is possible to customize and to upgrade a form while preserving customizations, follow the guidelines and tips that are provided previously in this section, along with the following guidelines:  
 
 -   Consider future customizations and upgrades early while you are designing the form. Forms are likely to evolve in future versions, and it is important to consider how users will be able to upgrade to new versions of your form while preserving their customizations to the original form. For example, you might provide an updated form after users have already invested heavily in customizing your original form. Users expect their customizations to survive the version upgrade.  
@@ -158,10 +159,10 @@ You can extend features of Service Manager by adding or modifying forms. This to
 
 -   Be aware of how controls are bound. Read\-only controls should use only one\-way bindings.  
 
-### Name all Customizable Controls  
+### Name all customizable controls  
  Ensure that the control names describe what data the control is bound to, or describe what the control does.  
 
-### Bind the Form to Data Sources  
+### Bind the form to data sources  
  The main purpose of a form is to visualize a single object from the Service Manager database. This object is called a **target instance**, which is always specified by the **DataContext** property of a form \(which is inherited from the **FrameworkElement** class\).  
 
 > [!IMPORTANT]  
@@ -183,7 +184,7 @@ You can extend features of Service Manager by adding or modifying forms. This to
 
  The forms infrastructure considers the target instance as the only read\/write data source on the form. Therefore, the implementation of the **Submit** command will only store the changes that are made to the target instance. Other data sources for the form are treated as read only.  
 
-### Use Service Manager Forms Infrastructure Validation Rules, Value Convertors, and Error Templates  
+### Use Service Manager forms infrastructure validation Rules, value convertors, and error templates  
  We recommend that you use forms infrastructure validation rules in forms to designate data input that is not valid. The WPF binding infrastructure supports validation for control properties that are bound to a data source with either one\-way or two\-way bindings. The binding object has a **ValidationRules** collection that can contain any number of **ValidationRule** objects. Whenever data is pushed from the control to the data source, the **ValidationRule** objects are called to validate the value.  
 
  The forms infrastructure library contains a number of validation rules that handle the most common cases. The forms infrastructure takes advantage of the validation rules to determine whether the form contents can be submitted for storing. For example, a form's **Submit** button can be disabled if there is a control that has a validation error on the form.  
@@ -236,7 +237,7 @@ internal bool DoVerify(out string errorMessage)
 
 ```  
 
-### Use Form Infrastructure Commands and Events  
+### Use form infrastructure commands and events  
  The form infrastructure exposes a number of commands that can be run on a form. These commands include:  
 
 -   **FormsCommand.Submit**, which saves the target instance of the form.  

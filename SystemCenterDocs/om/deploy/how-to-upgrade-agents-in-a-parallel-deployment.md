@@ -5,7 +5,7 @@ description: This article provides guidance with upgrading agents when planning 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/09/2016
+ms.date: 03/15/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -35,7 +35,7 @@ If you want to maintain your System Center 2012 R2 Operations Manager environmen
     Your deployment process will need to be updated to inlucde the new agent Windows installer package and dependencies required.  The logic defined to interrogate, install and configure, and verify the agent will need to be updated accordingly.   
 
 
-Once you have completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager 2016 management group, you can reconfigure the agents to remove assignment from the Operations Manager 2012 R2 management group.  This can be accomplished by uninstalling the agent from the Operations console in the Operations Manager 2012 R2 management group, which won't uninstall the agent but will only remove the configuration.  You can also follow the guidance in the Operations Manager SDK to programatically [remove the management group configuration](https://msdn.microsoft.com/library/hh329017.aspx) from the agent.  
+Once you have completed all the post-upgrade steps and are comfortable with the state of your new Operations Manager 2016 management group, you can reconfigure the agents to remove assignment from the Operations Manager 2012 R2 management group.  This can be accomplished by following the guidance in the Operations Manager SDK to programatically [remove the management group configuration](https://msdn.microsoft.com/library/hh329017.aspx) from the agent.  
 
 ## Next steps
 

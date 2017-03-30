@@ -5,9 +5,8 @@ ms.topic:  article
 author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
-ms.technology: system-center-2016
 keywords:
-ms.date: 11/28/2016
+ms.date: 12/21/2016
 title:  Release Notes for System Center 2016
 ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 ---
@@ -16,7 +15,7 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 
 >Applies To: System Center 2016
 
-**The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.**
+The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016.
 
 
 ## System Center 2016 - Data Protection Manager Release Notes
@@ -24,33 +23,18 @@ ms.assetid:  5fad5608-4cb7-48b0-aa31-35ca5cc2d560
 The following release notes apply to System Center 2016 - Data Protection Manager.
 
 
-#### Backups for Windows 10 Anniversary Update clients
-**Description**: Some backup jobs for DPM-protected Windows 10 clients may not start after updating the client with the Anniversary update.
-
-**Workaround**: On the client computer:
-1. Open the Task Scheduler app.
-
-2. In the Task Scheduler library, find and select the scheduled job, **ScheduledDPMClientBackup**.
-
-3. In the **Actions** pane, click **Export** and save the xml output as a backup copy.
-
-4. In the **Actions** pane, click **Properties**.
-
-  The properties dialog box for ScheduledDPMClientBackup opens.
-
-5. In the Properties dialog, select the **Triggers** tab, and click **Edit**.
-
-6. In the **Edit Trigger** dialog, from the **Begin the task** drop-down menu, select **At log on**.
-
-7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. From the **for a duration of** menu, select **Indefinitely**, and then click **OK**.
-
-8. You must reboot the computer for these changes to take effect.
-
 
 #### Silent Installation of System Center DPM with SQL Server 2008
 **Description**: You cannot silently install DPM 2016 RTM on SQL Server 2008.
 
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI.
+
+
+#### DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
+**Description**: Memory consumption on the DPM Server increases continuously, reaching about 90%, leading to the DPM server slowing down.
+
+**Workaround**: The issue was found to lie in the underlying layers. The Windows Server team will release a fix for it soon.
+
 
 #### Hyper-V VMs are protected twice on VM upgrade
 **Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), a new VM representing the upgraded VM may appear in the **Create Protection Group Wizard**. The 2016 version of the VM may appear in addition to the 2012 R2 version of the VM.
@@ -86,6 +70,37 @@ ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
 **Description:** Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
 
 **Workaround:** Do Alternate Location Recovery as a VM, and then transfer those files to the desired location.
+
+#### Recovery Points not being pruned, leading to an accumulation of Recovery Points
+**Description:** DPM prunes the recovery points older than the retention range. During this process, for the recovery points getting pruned, DPM calculates the storage they consumed, which may take some time. The storage calculation hence delays pruning, which may lead to storage pressures.
+
+**Workaround:** DPM can be configured to not calculate the size of the recovery points getting pruned. As a result of this, the pruning script can run fast and prune all the recovery points older than the retention range, relieving any storage pressures. Hence, the Storage consumed per data-source will not be updated once DPM is configured to not calculate the size while pruning. The storage consumption per volume will continue to reflect the correct values.
+The size calculation can be turned back on when needed by running a PowerShell script. 
+To suppress size calculations and do complete size calculations again, you can use the following script:
+
+***Location:*** Program Files\Microsoft System Center 2016\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
+
+***Script:*** Manage-DPMDSStorageSizeUpdate.ps1 -ManageStorageInfo [StopSizeAutoUpdate | StartSizeAutoUpdate | GetSizeAutoUpdateStatus | UpdateSizeInfo ] [-UpdateSizeForDS <FilePath>] [-UpdatedDSSizeReport <FilePath>] [-FailedDSSizeUpdateFile <FilePath>]
+
+  1. ***ManageStorageInfo:*** Specifies the kind of operation needed. 
+  
+    ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes. 
+    
+    ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, please use “UpdateSizeInfo” (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct. 
+   
+   ***GetSizeAutoUpdateStatus:*** Tells whether size calculations are enabled or disabled.
+   
+   ***UpdateSizeInfo:*** This triggers the calculation of sizes and reports the size consumed by a datasource. This can be a long running operation, so please use it only when needed for scenarios as billing. Note that during this time, backups may fail with vhd mount errors. 
+    
+  2. ***UpdateSizeForDS:*** Path to a text file with a list of Datasource IDs for which size needs to be calculated, with a datasourceID on each line. When not passed, size calculation is triggered for all the datasources. 
+    This may be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
+    To get the Datasource IDs of specific datasources, please use “Get-DPMProtectionGroup | Get-DPMDatasource | Format-table -Property Computer,name,ObjectType,Id”.
+    
+  3. ***UpdatedDSSizeReport:*** Path to a file which will store the updated sizes of the datasources when the script is run. When not passed sizes.csv file is created in the execution directory. 
+    This should be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
+    
+  4. ***FailedDSSizeUpdateFile:*** Path to a file to store the Datasource IDs for the datasources for which the storage consumption couldn’t be calculated. This may happen due to reasons as ongoing backups. When not passed failedDS.txt file is created in the execution directory. This file can be given as input to “UpdateSizeForDS” to update the sizes of all the datasources. 
+    This should be used after using “UpdateSizeInfo” in “ManageStorageInfo”.
 
 
 
@@ -263,9 +278,7 @@ When you apply Update Rollup 1 (GA update), the build numbers are as follows:
 #### Create Exchange Connector wizard might crash
 **Description:** Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the "Test Connection" button in the "Server Connection" pane of "Create Exchange Connector" wizard.
 
-**Workaround:** To work around this issue, avoid clicking "Test Connection" button in the "Create Exchange Connector" wizard. Instead, directly click the "Next" button, which internally tests the connection and does not crash the wizard.
-
-If the crash has already occurred, you can restart the wizard and use this workaround.
+**Workaround:** Download and install the Microsoft.SystemCenter.ExchangeConnector.dll.exe from [here](https://www.microsoft.com/en-us/download/details.aspx?id=54655).
 
 #### Browsing domain in AD connector wizard raises error
 **Description:** Error is raised on clicking “Browse” while choosing Domain or OU in AD connector wizard of Service Manager 2016 console.
@@ -453,6 +466,18 @@ Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Ful
 
 **Workaround:** Select OK, close the error dialog box, and retry adding the cluster.
 
+#### Promoting a VM on local storage might fail
+**Description:** You create a VM on local storage, start it, and create checkpoints. If you then try to migrate and promote to VM to highly available in a cluster, migration might fail.
+
+**Workaround:** Before you run the migration, delete the running checkpoint, and stop the VM.
+
+#### Migrating a VM from CSV storage to LUN storage might fail
+**Description:** You create a highly available VM using CSV storage. Then you add a LUN as available storage on the cluster, and migrate the VM from CSV to the LUN. If the VM and LUN storage are on the same node, the migration will succeed. If they're not, migration will fail.
+
+**Workaround:** If the VM isn't on the cluster node on which the LUN storage is registered, move it there. Then migrate the VM to the LUN storage.
+
+
+
 #### Shielding a VM may result in an error
 
 **Description:** If you shield an existing non-shielded VM or if you create a shielded VM from a non-shielded template, the job might fail with the error: *Error (1730) The selected action could not be completed because the virtual machine is not in a state in which the action is valid.*
@@ -561,6 +586,11 @@ Resolve the issue and then try the operation again.*
 
 **Workaround:** You need to delete the "Microsoft System Center 2012" folder under "Program Menu" folder so that, "Microsoft System Center 2016" entry becomes visible.
 
+#### SSAS integration broken with Virtual Machine Manager and Operations Manager 2016 Update Roll up 1
+**Description:** If you are using VMM and OM 2016 Update Roll up 1, you will not be able to configure SSAS for SQL Server.
+
+**Workaround:** Please download latest VMM Management Packs from download center. The updated MPs will also be available with Update Roll up 2.
+
 #### Dynamic IP not supported for NC managed Logical Networks
 **Description:** Although possible through VMM, Dynamic IP configuration for VMs connected to Network Controller managed Logical Networks is not supported by network Controller.
 
@@ -616,13 +646,12 @@ Resolve the issue and then try the operation again.*
 #### SAN migration fails for Nano host
 **Description:** If you attempt to do a SAN migration between two stand-alone Nano Server hosts, you will receive an error.
 
-**Workaround:** Perform a network migration instead of a SAN migration.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
 #### Adding a host to VMM with Storage Spaces Direct enabled will result in a warning
 **Description:**When hosts are added to a cluster with storage spaces direct enabled, a warning "Multipath I/O is not enabled for known storage arrays on host <\hostname>" is generated.
 
-**Workaround:** None, you can ignore the warning.
-
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 #### VM deployment on Scale Out File Server using fast file copy completes with warning
 **Description:** If you deploy a VM on a Scale Out File Server using fast file copy, the action completes successfully with the following warning:
 "VMM could not transfer the file <source location> to <destination location> using fast file copy. The VMM agent on <host> returned an error.
@@ -633,12 +662,12 @@ The user name or password is incorrect (0x8007052E)
 #### When adding a node to a cluster or creating a hyperconverged cluster using VMM, cluster validation is always performed even when the skip cluster validation option is specified
 **Description:** If you add a node to an existing hyperconverged cluster or create a new cluster using Storage Spaces Direct technology using VMM, cluster validation is always performed.
 
-**Workaround:** To skip cluster validation when adding a node to the cluster or creating a hyperconverged cluster, use VMM PowerShell to add the node with the appropriate skip cluster validation option.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
 ####  Classification change on Cluster Shared Volume (CSV) in Hyperconverged cluster does not reflect on all the storage nodes in the cluster
 **Description:** If you change the classification on the  CSV, only the classification of the owner node gets updated. other nodes still has older classification, assigned
 
-**Workaround:** user has to go to remaining node and update the classification.
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
 ####  Creating tiered file share on SOFS completes with error Error (26668): Error code: 43020 [SM_RC_DEDUP_NOT_AVAILABLE] even if dedup option is not selected
 **Description:** if you create a tiered fileshare on SOFS, on the successful completion of VMM job, job throws an error 43020 [SM_RC_DEDUP_NOT_AVAILABLE] even if dedup option is not selected
@@ -648,14 +677,9 @@ The user name or password is incorrect (0x8007052E)
 ####  VMM does not show storage provider and existing volume, physical disk & tiers, for an out-of-band Hyperconverged Cluster (HC) and Storage Spaces Direct (S2D) Scale Out File Server (SOFS).
 **Description:** After you onboard an out-of-band HC or S2D SOFS into VMM, the Storage Provider is not added and SOFS properties like Volume, physical disk and tiers are not available in VMM.
 
-**Workaround:** Add and Refresh the storage provider
+**Workaround:** Install [Update Rollup 2](https://support.microsoft.com/en-in/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager).
 
-1.	Open the VMM console.
+####  Total Capacity and Available capacity of NAS arrays is displayed as 0 GB.
+**Description:** Virtual Machine Manager 2016 shows Total Capacity and Available capacity as 0 GB for existing file shares in the NAS arrays.
 
-2.	Click Fabric Resources > Storage > Providers.
-
-		a. Right-click the provider > Add Storage Devices wizard
-
-		b. Right-click the provider > Rescan
-
-Note: Add/Refresh provider job is completed with a warning and the job details shows SMBIOS GUID error. Even in subsequent provider refresh, you will see this warning, however there is no functional impact on the cluster and the warning can be ignored.
+**Workaround:** None.

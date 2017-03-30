@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  cfreeman
-ms.date: 11/15/2016
+ms.date: 02/14/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2014 Service Pack 2 or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
+System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
 In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.  In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration.  In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.  
 
@@ -25,26 +25,31 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 The following versions of SQL Server are supported for a new or existing installation of Operations Manager.
 
-|Component | SQL Server 2014, SP2 Enterprise/Standard (x64) | SQL Server 2016 Enterprise/Standard (x64) 
-|-----------|---------------|---------------|
-| **Operations Manager** Operational Database | yes | yes |  
-| **Operations Manager** Data Warehouse Database | yes | yes |  
-| **Operations Manager** ACS Database | yes | yes | 
-| **Operations Manager** Reporting Server | yes | yes | 
+|Component | SQL Server 2012, SP3 Enterprise/Standard (x64) | SQL Server 2014, SP2 Enterprise/Standard (x64) | SQL Server 2016 Enterprise/Standard (x64) 
+|-----------|---------------|---------------|---------------|
+| **Operations Manager** Operational Database | yes | yes | yes | 
+| **Operations Manager** Data Warehouse Database | yes | yes | yes |
+| **Operations Manager** ACS Database | yes | yes | yes |
+| **Operations Manager** Reporting Server | yes | yes | yes |
 
 > [!NOTE] 
-> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.
+> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
 
 > [!NOTE] 
 > System Center 2016 – Operations Manager Reporting cannot be installed in a side-by-side fashion with the System Center Operations Manager 2012 R2 Reporting and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
 
 Additional hardware and software considerations apply in your design planning:
 
--  We recommend that you run SQL Server 2014 and 2016 on computers with the NTFS file format. 
+-  We recommend that you run SQL Server 2012, 2014, and 2016 on computers with the NTFS file format. 
 -  There must be at least 1024 MB of free disk space for the operational and data warehouse database. This is enforced at the time of database creation, and it will likely grow significantly after setup.  
 -  .NET Framework 4 is required. 
+-  Reporting Server is not supported on Windows Server Core.
 
 For additional information, please see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
+
+> [!NOTE]
+> During the initial installation of the operational database, only use Windows Authentication on the SQL Server that hosts the Operations Manager operational database. Do not use Mixed Mode (Windows Authentication and SQL Server Authentication) because using SQL Server Authentication mode during the initial installation of the operational database can cause issues. Although enabling Mixed Mode security is possible on the SQL Server hosting the Operations Manager operational database, it is not supported as all contact with the database is accomplished using Windows accounts only.  
+> 
   
 ## SQL Server collation setting
 

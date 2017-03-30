@@ -20,7 +20,7 @@ Use this information to evaluate if your hardware environment is ready to suppor
 
 |System Center 2016 servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
 |---------------------------------|---------------------|---------------------|---------------|---------------|----------------------------|----------------------------|
-|**DPM** Server|1 GHz, dual-core CPU or faster|2.33 GHz quad-core CPU|4 GB|8 GB|3 GB|3 GB|
+|**DPM** Server|2.1 GHz, 4 core CPU or faster|2.33 GHz 8-core CPU|8 GB|16 GB|3 GB|16 GB|
 |**Operations Manager**|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|Use the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)|
 |**Orchestrator** management server|2.1 GHz, dual-core CPU or faster|2.1 GHz, dual-core CPU or faster|1 GB|2 GB|200 MB|200 MB|
 |**Orchestrator** runbook server|2.1 GHz, dual-core CPU or faster|2.1 GHz, dual-core CPU or faster|1 GB|2 GB|200 MB|200 MB|

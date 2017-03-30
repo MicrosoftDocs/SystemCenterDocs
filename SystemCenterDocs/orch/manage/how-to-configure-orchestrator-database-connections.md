@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # How to Configure Orchestrator Database Connections
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 DBSetup allows you to secure an unsecured database. The common scenario is connecting to a restored backup.  
 

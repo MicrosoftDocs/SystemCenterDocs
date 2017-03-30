@@ -1,32 +1,32 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Manage user roles
+description: Describes the user roles used by Service Manager and how to manage them.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Managing User Roles in System Center 2016   Service Manager
-ms.technology:  service-manager
-ms.assetid:  e7cd2a94-13ad-40cf-84c5-f9063072a591
+ms.technology: service-manager
+ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
 ---
 
-# Managing User Roles in System Center 2016 - Service Manager
+# Manage Service Manager user roles
 
 >Applies To: System Center 2016 - Service Manager
 
-This section provides an overview of user roles in [Appendix A - List of User Role Profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md). It includes procedures that you can use to work with user roles.
+This section provides an overview of user roles in [List of User Role Profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md). It includes procedures that you can use to work with user roles.
 
-## About User Roles
+## About user roles
 
 In your organization, some employees are responsible for supporting hardware, such as portable computers and servers. Some of the employees are allowed to create and update configuration items but not delete them, whereas others are allowed to create, update, and delete configuration items.
 
-In Appendix A - List of User Role Profiles Service Manager, the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee's business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
+In the [List of User Role Profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee's business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
 
 In the future, managers at your organization may decide to separate the group of employees who maintain configuration items into two groups: those who handle configuration items for desktop computers and those who handle configuration items for portable computers. They want to retain these two user role profiles, one profile that can create and edit but not delete configuration items, and another profile that can create, edit, and delete configuration items. You would define these user role profiles with different scopes, one for desktops and one for portable computers. If user role profiles define what you are allowed to do, think of scopes as defining what items you are allowed to modify. The combination of a user role profile and a scope is called a user role.
 
-### Understanding User Roles in Service Manager
+### Understanding user roles
 In Service Manager, when you click **Administration**, expand **Security**, and then click **User Roles**, a **User Roles** pane displays a list of user roles. Each of these user roles has been configured with a user role profile and an undefined scope. Because the scope is undefined for these user roles, they can exercise their user profiles on all management packs, queues, groups, tasks, views, and form templates. The following table lists the default user roles, their associated user role profiles, and scope.
 
 |User role|User role profile|Scope|
@@ -73,23 +73,23 @@ As a best practice, assume that members of the asset management team might chang
 
 In the future, if you break the asset management team into two groups, one for desktops and the other for laptops, you can create your own user role by using the same user role profiles, but with different scopes.
 
-### Why Some User Roles Cannot Be Created
+### Why some user roles cannot be created
 When you are creating a user role, notice that three user roles are not available: Administrator, Report User, and Workflows. These three user roles are created and populated during Setup, and, generally speaking, these user roles are used by Service Manager. The following sections describe each of these user roles.
 
 #### Administrator
 The Administrator user role is global in scope; therefore, there is no reason for creating another user role of this type.
 
-#### Report User
+#### Report user
 The user role, Report User, has one purpose in Service Manager: to find the computer hosting Microsoft SQL Server Reporting Services (SSRS) for the user at a Service Manager console. When a user at a Service Manager console tries to run a report, a query is made to the Service Manager management server seeking the computer that is hosting the data warehouse management server. The Service Manager console then queries the data warehouse management server seeking the name of the computer hosting SSRS. With that information, the Service Manager console connects to SSRS. The singular purpose of the user role, Report User, is to make these queries. After the Service Manager console connects to the SSRS, the credentials of the user running the console grant access as defined on the SSRS. Because of the narrow purpose of this user role, there is no reason for creating another user role.
 
 #### Workflows
 Workflows might have to read and write to the Service Manager database. During Setup, you are asked to provide credentials for the Workflows user role, and this user role performs the required actions on the Service Manager database. Like the user role, Report User, the narrow purpose of the Workflow user role means there is no reason for creating other user roles.
 
-## How to Add a Member to a User Role
+## Add a member to a user role
 
 In Service Manager, you can assign users to a user role to define what they can do.
 
-In this example, you have to add members of an asset management team who can create and update, but not delete, configuration items to the user role. Looking at the Configuration Items section of [Appendix A - List of User Role Profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), you see that the Advanced Operators user role profile provides what you need regarding permissions for this team. At this time, all members of the asset management team are responsible for every asset in the company; therefore, they require unlimited scope.
+In this example, you have to add members of an asset management team who can create and update, but not delete, configuration items to the user role. Looking at the Configuration Items section of [User role profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), you see that the Advanced Operators user role profile provides what you need regarding permissions for this team. At this time, all members of the asset management team are responsible for every asset in the company; therefore, they require unlimited scope.
 
 Use the following procedures to add a user to the Service Manager Advanced Operators user role and then validate the assignment of the user to the user role.
 
@@ -115,7 +115,7 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 
 ![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
 
-## How to Create a User Role
+## Create a user role
 
 Use the following procedures to create a user role and assign users to that role in Service Manager and then validate the creation of the user role.
 

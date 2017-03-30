@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Import data from Virtual Machine Manager
+description: Describes how you can import data from Virtual Machine Manager into Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Importing Data from System Center Virtual Machine Manager
-ms.technology:  service-manager
-ms.assetid:  c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
+ms.technology: service-manager
+ms.assetid: c43bfb32-0c1a-4e8e-8f10-373e68fc11a4
 ---
 
-# Importing Data from System Center Virtual Machine Manager
+# Import data from Virtual Machine Manager into Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -20,7 +20,7 @@ You can import objects, such as VM templates, service templates, and storage cla
 
 If, in your environment, your VMM server pushes discovery data to an Operations Manager server, you will want to create an Operations Manager CI connector. You must make sure that the VMM management pack, Microsoft.SystemCenter.VirtualMachineManager.2016.Discovery, is synchronized with the Service Manager management server. You can create the Operations Manager CI connector either before or after creating the Virtual Machine Manager connector.
 
-## How to Create a Virtual Machine Manager Connector
+## Create a Virtual Machine Manager connector
 
 Use the following procedures to create a System Center Virtual Machine Manager connector and validate the creation of the connector.
 
@@ -96,7 +96,7 @@ Use the following procedures to create a System Center Virtual Machine Manager c
 
 
 
-## How to Synchronize a Virtual Machine Manager Connector
+## Synchronize a Virtual Machine Manager connector
 
 To ensure that the Service Manager database is up to date, the Virtual Machine Manager connector synchronizes with Service Manager on a daily basis. You can use the following procedures to synchronize the connector manually and validate that the connector synchronized.
 
@@ -119,9 +119,7 @@ To ensure that the Service Manager database is up to date, the Virtual Machine M
     > [!NOTE]
     > Synchronization events are also written to the Event log in the Applications and Services Logs/Operations Manager folder.
 
-
-
-## How to Disable and Enable a Virtual Machine Manager Connector
+## Disable and enable a Virtual Machine Manager connector
 You can use the following procedures to disable or enable a Virtual Machine Manager connector and validate the status of the connector.
 
 ### To disable a virtual Machine Manager connector

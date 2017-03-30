@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
+title:  About data warehouse module deployment
+description: Learn about data warehouse module deployment in Service Manager.
+manager:  carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  About Data Warehouse Module Deployment
 ms.technology:  service-manager
 ms.assetid:  c7dd72b4-65f1-426b-a700-d54afe55af44
 ---
 
-# About Data Warehouse Module Deployment
+# About Service Manager data warehouse module deployment
 
 >Applies To: System Center 2016 - Service Manager
 
 Data warehouse module deployment in Service Manager starts when a Service Manager management server is registered to a data warehouse management server. The following sections describe module parts, functions, and schedule.
 
-## Management Pack Synchronization
+## Management pack synchronization
 Management pack synchronization is the process by which the data warehouse discovers what classes and relationships exist in source systems. This process is also referred to as MPSync. For every management pack that defines a class or relationship, the data warehouse creates extract job modules to retrieve the data for that class or relationship from the corresponding source. Such management packs and their associated jobs are synchronized between the systems.
 
 Only sealed management packs, and their corresponding data, are synchronized into the data warehouse. If you alter a management pack, you must increase the version number and you cannot introduce any changes that might cause errors; otherwise, the management pack will fail to import. For example, you cannot remove classes, remove properties, or remove relationships. Similarly, you cannot change data types in unsupported ways. For example, you cannot modify a string property to become a numeric property.
@@ -38,7 +38,7 @@ It is possible to remove management packs from the data warehouse. However, keep
 
 Management packs that are imported from Service Manager are Service Manager-specific and data warehouse specific. The Service Manager management packs provide awareness of what the Service Manager database is structured like, and the data warehouse management packs drive the structure and processes of the data warehouse databases.
 
-## Report Deployment
+## Report deployment
 The management pack synchronization process imports management packs from Service Manager, and it defines how those management packs shape the structure, move the data, and copy reports for the data warehouse and reporting. After those management packs are synchronized between Service Manager and the data warehouse, the data is retrieved and reports are deployed for user consumption.
 
 Sequentially, report deployment occurs in the following process:
@@ -61,7 +61,7 @@ Sequentially, report deployment occurs in the following process:
 
 Management packs that contain only Service Manager-specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting-specific elements.
 
-## Understanding the ETL Processes
+## Understanding the ETL processes
 After the data warehouse schema and reports are deployed, the DWDataMart database is populated with actual data for reporting purposes. This is done by the ETL processes. These three processes each serve their own specific purpose:
 
 -   **Extract** is designed specifically for processing large volumes of data from multiple sources, and it allows for moving data into an area that is built for manipulating the data.

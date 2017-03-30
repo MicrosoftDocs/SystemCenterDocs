@@ -5,7 +5,7 @@ description: This article provides a high-level overview of what preparations yo
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -53,19 +53,17 @@ If you install Reporting, you are prompted for one additional account, the **Dat
 
 ### SQL Server requirements
 
-System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2014 SP2 or SQL Server 2016. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server 2014 SP2 or SQL Server 2016 must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.
-
-Operations Manager requires access to an instance of a server running a supported version of Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.
+System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](../plan/planning-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning topic.   
 
 During setup, you are prompted for the following:
 
--   The SQL Server database server name or primary cluster name and instance name. If you have installed SQL Server by using the default instance, you only have to specify the SQL Server name.  
+-   The SQL Server database server name, Always On availability group name, or primary cluster name and instance name. If you have installed SQL Server by using the default instance, you only have to specify the SQL Server name.  
 
 You can accept the default values for or set:
 
 -   SQL Server Port number. By default, 1433.
 
--   A new operational database (for first management server installation in the management group) or an existing operational database (for installing additional management servers in an existing management group).
+-   A new operational database (for first management server installation in the management group) or an existing operational database (when installing additional management servers in an existing management group).
 
 -   The database name. By default, OperationsManager.
 

@@ -1,22 +1,22 @@
 ---
-description:  
-manager:  cfreeman
+title:  Using SQL Server AlwaysOn availability groups with Service Manager
+description: Use SQL Server AlwaysOn availability groups with Service Manager to support a failover environment.
+manager:  carmonm
 ms.topic:  article
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Using SQL Server AlwaysOn availability groups with Service Manager
 ms.technology:  service-manager
 ms.assetid:  706e433d-c641-4dc3-8be5-fe582ef9f4bc
 ---
 
-# Using SQL Server AlwaysOn availability groups with Service Manager
+# Use SQL Server AlwaysOn availability groups with Service Manager to support failover
 
 >Applies To: System Center 2016 - Service Manager
 
-The information in this topic provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. This information is supported only with SQL Server 2012 SP2 and above.
+The information in this topic provides tasks that you need to perform in order for Service Manager to work effectively when using availability groups. AlwaysOn support a failover environment. This information is supported only with SQL Server 2012 SP2 and above.
 
 However, this information is not intended to provide detailed instructions on how to configure a SQL Server AlwaysOn Availability Group. Additionally, Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
 
@@ -54,7 +54,7 @@ Use the following series of tasks when using an existing management group with a
 1. Prepare SQL Server AlwaysOn setup separately. You might also consider SQL Server AlwaysOn with an FCI.
 2. Create an availability group listener(AGL) and choose an appropriate port number. Avoid the default port 1433. For example: AGL name = SMListener and AGL Port = 5122
 3. Open the inbound port for the SQL Server instance and AGL on each computer running SQL Server.
-4. Review the information at [Moving the Service Manager Database](deploy-moving-the-service-manager-database.md)  and follow the steps there, with the following changes:
+4. Review the information at [Move the Service Manager and data warehouse databases](deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md#move-the-service-manager-database)  and follow the steps there, with the following changes:
     1. In step 5, *To Configure Service Manager tables*, use the `AGL Name,AGL Port number` instead of the computer name hosting the Service Manager database, for example: SMListener,5122
     2. In Step 6, use the `AGL Name,AGL Port number` to update the both DWStaging and Config database tables.
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as `AGL Name,AGL Port number`.

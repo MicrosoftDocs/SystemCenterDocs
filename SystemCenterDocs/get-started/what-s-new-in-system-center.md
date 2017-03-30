@@ -6,7 +6,6 @@ manager: cfreeman
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
-ms.technology: system-center-2016
 ms.topic: article
 ms.author: cfreeman
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4

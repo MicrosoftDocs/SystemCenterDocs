@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
+title:  User role profiles in Service Manager
+description: Learn about the scope and properties of user role profiles in Service Manager.
+manager: carmonm
 ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
 keywords:  
 ms.date: 11/28/2016
-title:  Appendix A - List of User Role Profiles in Service Manager
 ms.technology:  service-manager
 ms.assetid:  38118405-3578-4e36-b5ec-e1cc5326e161
 ---
 
-# Appendix A - List of User Role Profiles in Service Manager
+# User role profiles in System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This appendix provides detailed information about the scope and properties of user role profiles in Service Manager.
+This article provides detailed information about the scope and properties of user role profiles in Service Manager.
 
-## Tabs in the Administrator Console
+## Tabs in the Administrator console
 
 The table below shows the tabs and order that they appear in the console.
 
@@ -36,7 +36,7 @@ The table below shows the tabs and order that they appear in the console.
 | Service Request Analyst | 1. Work Items <br> 2. Configurations |
 | Workflow | 1. Work Items <br> 2. Configurations |
 
-## Default User Roles
+## Default user roles
 
 | action | allowed roles |
 | --- | --- |
@@ -165,7 +165,8 @@ ServiceOfferingRelatesToRequestOffering &gt; RequestOffering
 - advanced operator
 - author
 
-## Implied Permissions
+## Implied permissions
+The following are implied permissions for Service Manager.
 
 ### ImpliedIncidentAffectedUser
 The permissions for the implied Affected User profile are granted through the WorkItemAffectedUser relationship.

@@ -1,24 +1,24 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Configure Activity Management workflows
+description: Learn about how you can configure Service Manager Activity Management workflows.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Configure Activity Management Workflows
-ms.technology:  service-manager
-ms.assetid:  2d7b2743-e25d-4a96-9c2d-35406c5ec279
+ms.technology: service-manager
+ms.assetid: 2d7b2743-e25d-4a96-9c2d-35406c5ec279
 ---
 
-# How to Configure Activity Management Workflows
+# Configure Service Manager Activity Management workflows
 
 >Applies To: System Center 2016 - Service Manager
 
 Use the following procedures to automatically assign all unassigned manual activities to a named user and then validate the creation of workflow.
 
-Before you can complete the steps in this procedure, you have to create the following templates:
+Before you can complete the steps in the following procedures, you have to create the following templates:
 
 -   **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](admin-how-to-create-a-manual-activity-template.md).
 

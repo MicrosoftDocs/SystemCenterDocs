@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Use management packs
+description: You use management packs to add functionality to Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  Using Management Packs in Service Manager
-ms.technology:  service-manager
-ms.assetid:  3c42925f-74f3-4c18-934e-8d1cd2edaa3b
+ms.technology: service-manager
+ms.assetid: 3c42925f-74f3-4c18-934e-8d1cd2edaa3b
 ---
 
-# Using Management Packs in Service Manager
+# Use management packs to add functionality to Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -31,7 +31,7 @@ To use a management pack, import it into Service Manager. The management pack is
 
 For more information about management packs key concepts, management packs best practices and other management packs related topics, see [Management Packs: Working with Management Packs](http://go.microsoft.com/fwlink/p/?LinkId=238192).
 
-## How to Create a Management Pack File
+## Create a management pack file
 
 You can use the following procedures to create a management pack file in Service Manager. After you create the management pack file, you can use it to store objects that you create.
 
@@ -59,9 +59,7 @@ For more information about how to create and customize management packs, see [Ma
 
 -   For information about how to use Windows PowerShell to remove management packs, see [Remove-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225416).
 
-
-
-## How to Export a Management Pack
+## Export a management pack
 
 After you create a management pack in Service Manager, you can export the unsealed management pack as a file to back up any customizations in the management pack. The exported management pack is a valid XML-formatted file. After you export an unsealed management pack, you can later import it to restore the objects that the management pack contains.
 
@@ -91,7 +89,7 @@ Use the following procedures to export an unsealed management pack and then vali
 ![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML-formatted file that you can later import into Service Manager or Operations Manager, see [Export-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398).
 
 
-## How to Import a Management Pack
+## Import a management pack
 
 Before you can use a management pack in Service Manager, you must import the management pack by using one of the following methods:
 

@@ -1,6 +1,7 @@
 ---
-title: Installing Service Manager on Four Computers
-manager: cfreeman
+title: Install Service Manager on four computers
+description: You can create an installation topology where each Service Manager part resides on its own computer when moving Service Manager into a production environment, or to maximize performance and scalability.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 474fd861-01b0-44a6-b917-cf320a5d725b
 ---
 
-# Installing Service Manager on Four Computers
+# Installing Service Manager on four computers
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -30,7 +31,7 @@ When you are ready to move System Center - Service Manager into a production env
 >  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL&nbsp;Server.
 
 
-## Install the Service Manager Management Server (Four-Computer Scenario)
+## Install the Service Manager management server (four-computer scenario)
 
 The following procedure describes how to install the System Center - Service Manager management server, the Service Manager database, the data warehouse management server, data warehouse databases, and the Service Manager console in a four\-computer topology. You start the deployment process by installing the Service Manager management server and the Service Manager console on one computer and the Service Manager database on a second computer. Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer that will host the Service Manager database.  
 
@@ -42,7 +43,7 @@ The following procedure describes how to install the System Center - Service Man
 
 -   Service Manager workflow account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-accounts-required-during-setup.md).  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-preparing-for-system-center-2016-service-manager-deployment.md).  
 
 ### To install the Service Manager management server, Service Manager database, and console  
 
@@ -87,7 +88,7 @@ The following procedure describes how to install the System Center - Service Man
 14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
-## Install the Service Manager Data Warehouse (Four-Computer Scenario)
+## Install the Service Manager data warehouse (four-computer scenario)
 
 To start deployment of the System Center - Service Manager data warehouse and data warehouse databases, install the data warehouse management server on one computer \(for example, computer 3\), and all of the data warehouse databases on another computer \(for example, computer 4\).  
 
@@ -101,7 +102,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 -   Analysis Services account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-accounts-required-during-setup.md).  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-preparing-for-system-center-2016-service-manager-deployment.md).  
 
  The data warehouse databases include the following three databases: DWStagingAndConfig, DWRepository, and DWDataMart. The first two databases, DWStagingAndConfig and DWRepository, must reside on the same instance of Microsoft SQL&nbsp;Server. The DWDataMart database can reside on a separate instance of SQL&nbsp;Server. The optional OMDWDataMart and CMDWDataMart databases can reside together or separately on their own instances of Microsoft SQL Server.  
 
@@ -184,11 +185,11 @@ To start deployment of the System Center - Service Manager data warehouse and da
 20. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
-## Validate the Four-Computer Installation
+## Validate the four-computer installation
 
 The procedures in this topic describe how to validate the four\-computer installation of System Center - Service Manager.  
 
-### Step 1: Validate the Installation of the Management Server and Database  
+### Step 1: validate the installation of the management server and database  
 
 #### To validate a Service Manager management server installation  
 
@@ -226,7 +227,7 @@ The procedures in this topic describe how to validate the four\-computer install
 
 5.  Exit **Microsoft SQL Server Management Studio**.  
 
-### Step 2: Validate the Installation of the Data Warehouse Management Server and Database  
+### Step 2: validate the installation of the data warehouse management server and database  
 
 #### To validate a data warehouse management server installation  
 

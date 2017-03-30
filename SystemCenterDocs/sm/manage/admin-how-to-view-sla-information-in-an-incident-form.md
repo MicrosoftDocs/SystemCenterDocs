@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: View SLA information in an incident form
+description: Describes how you can view Service Manager SLA information in an incident form.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to View SLA Information in an Incident Form
-ms.technology:  service-manager
-ms.assetid:  e2014c9a-bb98-445e-b5fa-194cbb3d4634
+ms.technology: service-manager
+ms.assetid: e2014c9a-bb98-445e-b5fa-194cbb3d4634
 ---
 
-# How to View SLA Information in an Incident Form
+# View Service Manager SLA information in an incident form
 
 >Applies To: System Center 2016 - Service Manager
 

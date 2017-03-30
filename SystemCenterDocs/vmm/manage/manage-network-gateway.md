@@ -60,8 +60,8 @@ The service template provides a highly available Windows Server Gateway deployme
 You'll need to install the provider software on the VMM management server and add the gateway to the fabric.
 
 1. Obtain the provider software. You can review a list of supported providers in **Settings** > **Configuration Providers**.
-2. Click **Fabric** > **Home** > **Show **> **Fabric Resources** > **Fabric** > **Networking** > **Network Service**. Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches.
-3. Click **Home** > **Add **> **Add Resources** > **Network Service**.
+2. Click **Fabric** > **Home** > **Show**> **Fabric Resources** > **Fabric** > **Networking** > **Network Service**. Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches.
+3. Click **Home** > **Add**> **Add Resources** > **Network Service**.
 4. In **Add Network Service Wizard** > **Name** specify a name and description for the gateway.
 5. In **Manufacturer and Model** click the required settings.
 6. In **Credentials**, specify a Run As account with permissions in the domain to which the gateway is connected.

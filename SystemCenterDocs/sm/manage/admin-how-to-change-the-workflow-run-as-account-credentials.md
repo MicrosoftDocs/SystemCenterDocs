@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Change the workflow Run As account credentials
+description: Describes how you can change the workflow Run As account credentials used by Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Change the Workflow Run As Account Credentials
-ms.technology:  service-manager
-ms.assetid:  a3b4abd2-a00d-47d8-a578-c54fb32eda21
+ms.technology: service-manager
+ms.assetid: a3b4abd2-a00d-47d8-a578-c54fb32eda21
 ---
 
-# How to Change the Workflow Run As Account Credentials
+# Change the workflow Run As account credentials used by Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -56,6 +56,3 @@ Use the following procedures to define a new user account for the Workflow Run A
 4.  In the **Tasks** pane, click **Properties**.
 
 5.  In the **Workflow Account** page, in the **Password** box, type the new password for the Workflow Run As account, and then click **OK**.
-
-
-

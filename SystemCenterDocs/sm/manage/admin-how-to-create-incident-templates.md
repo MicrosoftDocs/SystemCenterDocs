@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Create incident templates
+description: Describes how you can create Service Manager incident templates.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Create Incident Templates
-ms.technology:  service-manager
-ms.assetid:  5563fbd2-40ee-4b57-b3c9-22c88759a6a1
+ms.technology: service-manager
+ms.assetid: 5563fbd2-40ee-4b57-b3c9-22c88759a6a1
 ---
 
-# How to Create Incident Templates
+# Create Service Manager incident templates
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -89,6 +89,3 @@ Use the following procedures to create two incident templates in Service Manager
 ### To validate that the new incident template was created
 
 -   Verify that the new incident templates are listed in the **Templates** pane.
-
-
-

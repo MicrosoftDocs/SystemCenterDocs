@@ -1,6 +1,7 @@
 ---
-title: Deploying Additional Service Manager Management Servers
-manager:  cfreeman
+title: Deploy additional Service Manager management servers
+description: Deploy additional Service Manager management servers to load-balance additional Service Manager consoles or to support your disaster recovery strategy.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 80e03b05-c500-4b96-8ca0-4193e9cc07b1
 ---
 
-# Deploying Additional Service Manager Management Servers
+# Deploy additional Service Manager management servers
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -22,18 +23,18 @@ You can deploy additional Service Manager management servers to load\-balance ad
 
  This section describes how you can install additional Service Manager management servers. The additional Service Manager management servers can improve performance in a high\-use environment.  
 
-## Management Servers  
+## Management servers  
  You create a management server when you click **Service Manager management server** in the Service Manager Setup Wizard. The initial Service Manager management server hosts data access, workflow services, and authorization services.  
 
-### Initial and Additional Management Servers  
+### Initial and additional management servers  
  When you run Setup for the first time, you install the initial Service Manager management server and define the management group for your installation. The initial management server handles all of the workflows in your Service Manager environment. Any additional Service Manager management servers that you deploy are used to load\-balance additional Service Manager console connections. With this release of Service Manager, we recommend that you deploy an additional Service Manager management server for every 40 to 50 Service Manager consoles that you intend to deploy.  
 
  To associate your additional Service Manager management servers with the initial Service Manager management server and management group, you must specify the Service Manager database that you used for your initial Service Manager management server.  
 
-## Disjoint Namespace Considerations  
- If you are installing an additional management server in an environment with a disjointed namespace, see [Deployment Considerations with a Disjointed Namespace](deploy-deployment-considerations-with-a-disjointed-namespace.md).  
+## Disjointed namespace considerations  
+ If you are installing an additional management server in an environment with a disjointed namespace, see [Deployment considerations with a disjointed namespace](deploy-deployment-considerations-with-a-disjointed-namespace.md).  
 
-## Install an Additional Management Server
+## Install an additional management server
 
 The following procedure shows how to install an additional management server in System Center - Service Manager. You must deploy the initial Service Manager management server and Service Manager database before deploying an additional management server.  
 
@@ -70,4 +71,4 @@ The following procedure shows how to install an additional management server in 
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Complete deployment by backing up the encryption key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).

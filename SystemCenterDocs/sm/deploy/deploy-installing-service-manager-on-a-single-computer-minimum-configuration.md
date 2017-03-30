@@ -1,6 +1,7 @@
 ---
-title: Installing Service Manager on a Single Computer (Minimum Configuration)
-manager: cfreeman
+title: Install Service Manager on a single computer (minimum configuration)
+description: This article helps you to evaluate Service Manager when you want to install it on one computer.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: 08c888e1-57cb-4f94-8b9e-041a54204c09
 ---
 
-# Installing Service Manager on a Single Computer (Minimum Configuration)
+# Install Service Manager on a single computer (minimum configuration)
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -28,7 +29,7 @@ If you want to evaluate System Center - Service Manager and you have a minimal a
 
  If your organization's best practice guidelines do not allow you to install applications on a Hyper\-V host, you can create a second virtual computer to host the Service Manager management server, the Service Manager database, and the data warehouse databases. Use the following procedures to install Service Manager on a single computer.  
 
-## Install Service Manager on a Single Computer
+## Install Service Manager
 
 To install System Center - Service Manager on a single computer, you install the Service Manager management server, database, and console on the computer. Then, you install the data warehouse on a virtual machine on the same computer.  
 
@@ -139,7 +140,7 @@ To install System Center - Service Manager on a single computer, you install the
 18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
-## Validate the Single-Computer Installation
+## Validate the single-computer installation
 
 You can use the following procedures to validate the single\-computer installation of System Center - Service Manager.  
 

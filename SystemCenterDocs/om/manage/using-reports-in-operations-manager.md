@@ -5,7 +5,7 @@ description: This article highlights the section titles contained within this se
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/04/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -16,10 +16,8 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-Reports in Operations Manager allow you to perform detailed analysis on the operational data collected in the management group to help identify issues by noticing trends or tracking down the root cause of a problem, summarizing operational health of your IT services, and 
+Reports in Operations Manager allow you to perform detailed analysis on the operational data collected in the management group to help identify issues by noticing trends or tracking down the root cause of a problem, summarizing operational health of your IT services, and forecast for capacity. 
 
-Dashboards were introduced in System Center 2012 - Operations Manager to allow you to present collected data in the Operations Manager consoles which are more flexible and powerful than views and reports.  Dashboards have access to data that views do not and allow you to present that data using a variety of different visualizations, nor the ability to interactively 
-  
 ## Using reports in Operations Manager topics  
   
 -   [Operations Manager Reports Library](Operations-Manager-Reports-Library.md)  

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Modify an SLA metric view
+description: Describes how you can modify an SLA metric view in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Modify an SLA Metric View
-ms.technology:  service-manager
-ms.assetid:  e8cf3b0b-00a8-4031-8e3e-c2dd450e52ec
+ms.technology: service-manager
+ms.assetid: e8cf3b0b-00a8-4031-8e3e-c2dd450e52ec
 ---
 
-# How to Modify an SLA Metric View
+# Modify an SLA metric view in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -29,6 +29,3 @@ Views let you group SLA metrics that share certain criteria. However, when you p
 3.  Right-click any view column heading to resize columns, to remove items from the results, or to change column sorting and grouping. Repeat this step until you are satisfied with the results.
 
 4.  You can also type in the **Filter** box to show results that are limited items that match what you typed.
-
-
-

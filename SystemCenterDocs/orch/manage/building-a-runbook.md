@@ -16,7 +16,7 @@ manager: cfreeman
 ---
 # Building a Runbook
 
-> Apples To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 This topic describes the basic process for building a System Center 2016 - Orchestrator runbook.  
 

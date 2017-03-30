@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Delete a service offering or a request offering
+description: Describes how you can delete a service offering or a request offering in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Delete a Service Offering or a Request Offering
-ms.technology:  service-manager
-ms.assetid:  cda2d242-0c31-4a9e-a381-9afffad5603d
+ms.technology: service-manager
+ms.assetid: cda2d242-0c31-4a9e-a381-9afffad5603d
 ---
 
-# How to Delete a Service Offering or a Request Offering
+# Delete a service offering or a request offering in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

@@ -1,18 +1,18 @@
 ---
-description:  
-manager:  cfreeman
-ms.topic:  article
+title: Troubleshoot a data warehouse job
+description: Describes how you can troubleshoot a data warehouse job in Service Manager.
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center-2016
 keywords:  
 ms.date: 10/12/2016
-title:  How to Troubleshoot a Data Warehouse Job
-ms.technology:  service-manager
-ms.assetid:  53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8
+ms.technology: service-manager
+ms.assetid: 53e50bfa-c0b9-4fdd-8d96-dd4aea852eb8
 ---
 
-# How to Troubleshoot a Data Warehouse Job
+# Troubleshoot a data warehouse job in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 

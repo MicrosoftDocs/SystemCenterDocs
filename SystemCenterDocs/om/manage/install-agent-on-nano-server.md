@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 03/01/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -92,7 +92,7 @@ Use the following procedure to install the agent with a PowerShell script.
 4.  Run the following script:
 
     ```
-    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <<Management Server Name FQDN>> -ManagementGroupName <<Management Group Name>> -NanoServerFQDN <<Nano server FQDN on which the agent will be installed>> -BinaryFolder ..\
+    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder ..\
     ```
 
     > [!NOTE]
@@ -106,8 +106,6 @@ Use the following procedure to install the agent with a PowerShell script.
 ### Troubleshooting agent installation
 
 If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server you can follow the checklist below for possible solutions.
-
-
 
 |Error Message|Possible Reason|Resolution|
 |-------------|-------------|-------------|
@@ -148,13 +146,13 @@ If you encounter any difficulties with setting up the Operations Manager Agent o
 3.  Run the following script:
 
     ```
-    .\UnInstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <<Management Server Name FQDN>> -ManagementGroupName <<Management Group Name>> -NanoServerFQDN <<Nano Server FQDN from which the agent needs to be uninstalled>>
+    .\UnInstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server>
     ```
 
     > [!NOTE]
     > You can  validate that the Operations Manager agent has been removed by checking that the uninstalllog.txt file in the \NanoAgent\NanoServer folder does not contain any errors and that  you see the message "Successfully un-installed the agent from Nano Server" in the log file.
 
-### Troubleshooting agent uninstall
+## Troubleshooting agent uninstall
 
 If you encounter any difficulties with removing the Operations Manager Agent on a Nano Server you can follow the checklist below for possible solutions.
 
@@ -169,6 +167,29 @@ If you encounter any difficulties with removing the Operations Manager Agent on 
 |Unable to locate agent folder on the Nano Server.|Either the NanoAgent directory has been moved, or the account has insufficient permissions to access the NanoAgent directory.|Make sure the account the script is running under has sufficient permissions to access the NanoAgent directory and that the NanoAgent directory is present and run the uninstall script again.|
 |Unable to remove the agent directory. Try restarting the Nano Server and then re-running this script.|A process may be using the Operations Manager agent.|Make sure there are no processes attached to the Operations Manager agent and run the uninstall script again.|
 
+## Installing updates to the Nano agent
+
+The Nano agent can be updated by one of the following methods:
+
+1. Push updates from a management server.  
+
+    Updates are offered and installed automatically from Microsoft Update to an Operations Manager management server. With Operations Manager 2016, the management server updates will also include the updated files for Nano agent.  
+    
+    After the management server is upgraded, the Nano agents will be placed in a pending management state, as described in the [process manual agent installations](process-manual-agent-installations.md) topic. After approving updates, the agents will receive and apply the update.  Alternatively, you can trigger repair from the Operations console on any Nano agent. This will cause the update to be pushed and installed on the Nano agent from the management server. 
+
+2. Manually install update 
+ 
+    Updates to the Nano agent are available for download by following the instructions in the KB article and applying the update manually. You can install these downloaded updates on a Nano agent machine using the following Powershell script.  
+
+    ```powershell
+      .\UpdateNanoServerScomAgentOnline.ps1 -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder <<Path where the update .cab is already expanded OR path to one or more Nano-agent update .cab files> -IsCabExpanded <$true if BinaryFolder path is to an expanded .cab, $false if it is for a packed .cab file(s)> -RemoveBackup <$true to remove the previous binaries from the agent machine>
+    ```
+
+    For System Center 2016 - Operations Manager RTM, you can download the Nano Agent cab file from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54767&WT.mc_id=rss_windows_allproducts).  
+
+### Uninstalling updates from the Nano Agent
+
+Directly uninstalling the most recent update from the Nano agent is not supported. Instead, you should uninstall the agent completely and reinstall the agent with the desired set of updates.
 
 ## Next steps
 

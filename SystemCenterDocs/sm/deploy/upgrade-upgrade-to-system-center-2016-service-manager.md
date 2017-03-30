@@ -1,20 +1,22 @@
 ---
 title: Upgrade to System Center 2016 - Service Manager
-manager: cfreeman
+description: Use this article to upgrade to System Center 2016 - Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 11/15/2016
+ms.date: 02/23/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
+
 ---
 
-# Upgrade to System Center 2016 - Service Manager
+# Upgrade your environment to System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -33,22 +35,20 @@ You cannot start an upgrade to System Center 2016 - Service Manager if any data 
 
     ![Active Directory Connector wizard](../media/sm-adconnector01.png)
 
-## Prepare Service Manager 2012 R2 for Upgrade
+## Prepare Service Manager 2012 R2 for upgrade
 This topic describes how to prepare your System Center 2012 R2 - Service Manager environment for an upgrade. To do this, perform the following procedures for upgrading the data warehouse management server:  
 
-1.  List the data warehouse jobs that are running.  
+1.  List the data warehouse jobs that are running and disable them.
 
-2.  Disable the data warehouse job schedules.  
-
-3.  Confirm that the data warehouse jobs have stopped running.  
+2.  Confirm that the data warehouse jobs have stopped running.  
 
  When the data warehouse jobs have completed, start the upgrade of the data warehouse management server.  
 
  After the data warehouse has been upgraded, perform the following procedures on the first Service Manager management server:  
 
-1.  Wait 10 minutes, and then start the upgrade of the Service Manager management server.  
+- Wait 10 minutes, and then start the upgrade of the Service Manager management server.  
 
-### To list the data warehouse jobs by using Windows PowerShell cmdlets  
+### To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
 
 1.  On the computer that hosts the data warehouse management server, click **Start**, click **All Programs**, click **Microsoft System Center 2012 R2**, and then click **Service Manager Shell**.  
 
@@ -73,41 +73,8 @@ Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
     get-scdwjob | ? {$_.Name -match 'Extract_'}  | foreach {Disable-SCDWJobSchedule -JobName $_.Name}  
     ```  
 
-3.  A list of the data warehouse jobs appears. Use this list in the next procedure, "To disable data warehouse job schedules by using Windows PowerShell cmdlets."  
+3.  A list of the data warehouse jobs appears.
 
-### To disable data warehouse job schedules by using Windows PowerShell cmdlets  
-
-1.  Type the following commands, and then press ENTER after each command:  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Extract_<data warehouse management group name>  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Extract_<Service Manager management group name>  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Transform.Common  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName Load.Common  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName DWMaintenance  
-    ```  
-
-    ```  
-    Disable-SCDWJobSchedule -JobName MPSyncJob  
-    ```  
-
-    ```  
-    Start-SCDWJob -JobName MPSyncJob  
-    ```  
-
-     The last command to start the **MPSyncJob** will enable the extraction, transformation, and load \(ETL\) jobs to run to completion. After that, because all the schedules have been disabled, the jobs will stop. To close the Windows&nbsp;PowerShell window, type **exit**.  
 
 ### To confirm that the data warehouse jobs have stopped running  
 
@@ -171,10 +138,14 @@ Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
 
 Use the following procedures to upgrade your Service Manager environment to System Center 2016 - Service Manager. These procedures include steps for upgrading the data warehouse management server, the Service Manager management server, and the Service Manager console.  
 
+### Upgrade the Service Manager Self Service portal
+
+Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
+
 ### Upgrade steps for custom development
 With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
-### Data Warehouse Management Server  
+### Upgrade the data warehouse management server  
  Use the following procedure to upgrade the data warehouse management server.  
 
 > [!IMPORTANT]  
@@ -209,7 +180,7 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 
 12. On **The upgrade was completed successfully** page, if you have already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** check box, and then click **Close**.  
 
-### Service Manager Management Server  
+### Upgrade the Service Manager management server  
  Use the following procedure to upgrade the Service Manager management server.  
 
 #### To upgrade the Service Manager management server  
@@ -230,10 +201,10 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 
 8.  On the **The upgrade was completed successfully** page, if you have already backed up the encryption key, clear the **Open the Encryption Backup or Restore Wizard** check box, and then click **Close**.  
 
-### Service Manager Console  
+### Upgrade the Service Manager console  
  Use the following procedure to upgrade the Service Manager console.  
 
-#### To upgrade the Service Manager Console  
+#### To upgrade the Service Manager console  
 
 1.  Log on to the computer that will host the Service Manager console by using an account that is a member of the Administrators group.  
 
@@ -250,7 +221,3 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 7.  On the **Configuration Summary** page, read the information that is provided, and, if it is accurate, click **Install**.  
 
 8.  On **The upgrade was completed successfully** page, click **Close**.
-
-### Service Manager Self Service Portal
-
-Refer the instructions mentioned in article [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md).

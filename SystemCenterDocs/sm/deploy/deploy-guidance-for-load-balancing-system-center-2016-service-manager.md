@@ -1,6 +1,7 @@
 ---
-title: Guidance for Load Balancing System Center - Service Manager
-manager:  cfreeman
+title: Guidance for load balancing System Center - Service Manager
+description: Use network load balancing in Windows Server to configure a pool of computers so that they take turns responding to requests.
+manager:  carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,15 +15,15 @@ ms.topic: article
 ms.assetid: 129bc3fe-8a6f-4edb-b15f-1f0d42e6bf24
 ---
 
-# Guidance for Load Balancing System Center - Service Manager
+# Guidance for load balancing in Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
-This section describes how you can load\-balance Service Manager management servers in Service Manager.  
+This article describes how you can load-balance Service Manager management servers in Service Manager.  
 
-## Load-Balancing Service Manager Management Servers
+## Load-balancing Service Manager management servers
 
-You can use network Load Balancing \(NLB\) in Windows&nbsp;Server&nbsp;2008 to configure a pool of computers so that they take turns responding to requests. In System Center - Service Manager, the initial Service Manager management server that you deploy is the server that processes workflows. You can deploy additional management servers to provide failover for a failed initial management server and to provide load balancing for handling Service Manager console. For more information about Windows&nbsp;Server&nbsp;2008 NLB, see the [Network Load Balancing Deployment Guide](http://go.microsoft.com/fwlink/p/?LinkID=183567). For more information about additional Service Manager management servers, see [Deploying Additional Service Manager Management Servers](deploy-deploying-additional-service-manager-management-servers.md).  
+You can use network Load Balancing \(NLB\) in Windows Server to configure a pool of computers so that they take turns responding to requests. In System Center - Service Manager, the initial Service Manager management server that you deploy is the server that processes workflows. You can deploy additional management servers to provide failover for a failed initial management server and to provide load balancing for handling Service Manager console. For more information about Windows&nbsp;Server&nbsp;2008 NLB, see the [Network Load Balancing Deployment Guide](http://go.microsoft.com/fwlink/p/?LinkID=183567). For more information about additional Service Manager management servers, see [Deploying Additional Service Manager Management Servers](deploy-deploying-additional-service-manager-management-servers.md).  
 
  As a minimum, you have to deploy an initial Service Manager management server-the management server that hosts the workflow processes-and at least one additional Service Manager management server. In an environment of this kind that consists of two Service Manager management servers, configure NLB to use both management servers, as shown in the following illustration.  
 

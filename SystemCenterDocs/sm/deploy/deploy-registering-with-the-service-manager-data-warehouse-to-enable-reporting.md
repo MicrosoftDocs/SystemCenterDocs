@@ -1,6 +1,7 @@
 ---
-title: Registering with the Service Manager Data Warehouse to Enable Reporting
-manager: cfreeman
+title: Enable Service Manager reporting
+description: Use the Data Warehouse Registration wizard to enable reporting.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -14,7 +15,7 @@ ms.topic: article
 ms.assetid: d5795bd5-7c01-47b9-909f-8147362b9cf4
 ---
 
-# Registering with the Service Manager Data Warehouse to Enable Reporting
+# Register with the Service Manager data warehouse to enable reporting
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -24,7 +25,7 @@ After you have deployed the Service Manager management servers and data warehous
 
  To ensure that reporting data will be available, use the procedures in the following topics to register the data warehouse and deploy the management packs.  
 
-## Run the Data Warehouse Registration Wizard
+## Run the Data Warehouse Registration wizard
 
 You can use the following steps in System Center - Service Manager to use the Data Warehouse Registration Wizard to register with the Service Manager data warehouse.  
 
@@ -58,7 +59,7 @@ You can use the following steps in System Center - Service Manager to use the Da
  ![Windows PowerShell](../media/pssymbol.png) You can use a Windows&nbsp;PowerShell command to complete this task. For information about how to use Windows&nbsp;PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](http://go.microsoft.com/fwlink/p/?LinkId=203096).
 
 
-## Determine When Data Warehouse Registration Is Complete
+## Determine when Data Warehouse registration is complete
 
 Several management packs are imported during the data warehouse registration process in Service Manager. Data warehouse registration is complete when all of the management packs have been imported. You will have to determine when that process is complete by using the following procedure.  
 

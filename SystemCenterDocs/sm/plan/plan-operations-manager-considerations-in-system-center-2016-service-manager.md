@@ -1,5 +1,7 @@
 ---
-title: Operations Manager Considerations in System Center 2016 - Service Manager
+title: Considerations for Operations Manager with Service Manager
+description: This article contains information to be aware of when you are combining Operations Manager and Service Manager.
+manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
@@ -13,31 +15,31 @@ ms.topic: article
 ms.assetid: ee5b265f-1ffa-416d-a038-db9d06efc942
 ---
 
-# Operations Manager Considerations in System Center 2016 - Service Manager
+# Considerations for Operations Manager with System Center 2016 - Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
 This topic contains information to be aware of when you are combining Operations Manager and Service Manager.  
 
-## Management Group Names Must be Unique  
+## Management group names must be unique  
 
 When you deploy both a Service Manager and data warehouse management server, you are asked to provide a management group name. You are also asked to provide a management group name when you deploy Operations Manager. The management group names that you use for the Service Manager management group, the data warehouse management group, and the Operations Manager management group must be unique.  
 
 > [!IMPORTANT]  
 >  If Operations Manager and Service Manager share the same management group name, you will have to reinstall the Service Manager management server. Because it is not possible to rename a management group, you will either have to completely reinstall Service Manager with a different management group name or choose not to manage your Service Manager installation with Operations Manager.  
 
-## Database Collations
+## Database collations
 
 You must use the same supported language collations if you intend to import data from Operations Manager into Service Manager. However, this is true only for the OperationsManager database in Operations Manager and the SM DWStagingAndConfig database when you create an Operations Manager Data Source for the data warehouse. Specifically, this appears in the Service Manager console as a Data Warehouse Data Source. This does not affect either the System Center Operations Manager to System Center Service Manager Configuration Item connector or the System Center Operations Manager to System Center Service Manager Alert Incident connector.  
 
 > [!NOTE]  
 >  If you have databases with collations that do not match, then you cannot use the Operations Manager to Service Manager data warehouse connector which imports alerts from the OperationsManager database  in Operations Manager to the Service Manager DWStagingAndConfig database.  
 
-## Service Manager Compatibility With Other System Center Components
+## Service Manager compatibility with other System Center components
 
 You can use any supported database collation of any System Center component with any supported collation of Service Manager.  
 
-## Operations Manager Compatibility  
+## Operations Manager compatibility  
 
 This section describes the compatibility between Operations Manager and Service Manager.  
 
@@ -49,7 +51,7 @@ System Center 2016 - Service Manager includes a System Center 2016 - Operations 
 
 To validate that the Operations Manager Agent was installed, open **Control Panel** and verify that the Operations Manager Agent is present.
 
-### Operations Manager Agents with the Self-Service Portal and Service Manager console  
+### Operations Manager agents with the Self-Service portal and Service Manager console  
 
 If you want to monitor a server that will host Self\-Service Portal components or the Service Manager console that does not already host other Service Manager roles, then you should deploy the Operations Manager agent to the server before you install the Self\-Service portal or the Service Manager console. After you've installed either, you should give special consideration to removing the portal or Self Service console. If an Operations Manager agent is installed on the server that hosts the portal or console and you remove the either, then the Operations Manager agent is also removed.  
 
