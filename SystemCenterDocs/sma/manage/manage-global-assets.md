@@ -114,7 +114,7 @@ $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "Path $certPath "Password $certPwd
 ```
 
-## Using a PowerShell Credential in a Runbook
+## Using a PowerShell credential in a runbook
 You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
 
 -   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](windows-powershell-workflow-concepts.md#bkmk_InlineScript) activity to run a set of commands using alternate credentials.
@@ -141,7 +141,7 @@ You can create and manage credentials with the Windows PowerShell cmdlets in the
 |[Remove-SmaConnection](http://go.microsoft.com/fwlink/?LinkID=306465)|Remove an existing connection.|
 |[Set-SmaConnectionFieldValue](http://go.microsoft.com/fwlink/?LinkID=306474)|Sets the value of a particular field for an existing connection.|
 
-### Runbook Activities
+### Runbook activities
 You can access connections in a runbook with the activities in the following table.
 
 |Activities|Description|
@@ -168,7 +168,8 @@ You can access connections in a runbook with the activities in the following tab
 
 9. Click the check mark to save the connection.
 
-### To create a new connection with Windows PowerShell in Service Management Automation
+### To create a new connection with Windows PowerShell
+
 The following sample commands create a new Virtual Machine Manager connection with the name MyVMMConnection.  Note that we use a hashtable to define the properties of the connection. This is because different types of connections require different sets of properties. A connection of another type would use a different set of field values.
 
 For more information about hash tables, see [about_Hash_Tables](http://go.microsoft.com/fwlink/?LinkID=324844).
@@ -230,7 +231,7 @@ You can create and manage variables with the Windows PowerShell cmdlets in the f
 |[Get-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306458)|Retrieves the value of an existing variable.|
 |[Set-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306477)|Creates a new variable or sets the value for an existing variable.|
 
-### Runbook Activities
+### Runbook activities
 You can access variables in a runbook with the activiies in the following table.
 
 |Activities|Description|
@@ -262,7 +263,8 @@ You can access variables in a runbook with the activiies in the following table.
 
 9. Click the check mark to save the new variable.
 
-### To create a new variable with Windows PowerShell in Service Management Automation
+### To create a new variable with Windows PowerShell
+
 The [Set-SmaVariable](http://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
 
 ```powershell

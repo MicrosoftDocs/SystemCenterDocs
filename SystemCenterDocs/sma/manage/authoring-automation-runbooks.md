@@ -72,11 +72,11 @@ Import-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Path $scriptPath
 Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 ```
-## Editing a Runbook
+## Editing a runbook
 
 Each runbook in Service Management Automation has two versions, Draft and Published. You edit the Draft version of the workflow and then publish it so it can be executed. The Published version cannot be edited.
 
-### To Edit a Runbook with the Management Portal
+### To edit a runbook with the Management Portal
 The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for [Global Assets](#InsertGlobalSetting), [Activities](#InsertActivity), and [Runbooks](#InsertRunbook).
 
 1.  In the Management Portal, select **Automation**.
@@ -95,7 +95,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 8.  Click **Publish** if you want the latest draft version of the runbook to be published.
 
-### To Insert Code for a Runbook into a Runbook
+### To insert code for a runbook into a Runbook
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -111,7 +111,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 7.  If the runbook requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
 
-#### <a name="InsertGlobalSetting"></a>To Insert a Global Asset into a Runbook
+#### <a name="InsertGlobalSetting"></a>To insert a global asset into a runbook
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -123,7 +123,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 5.  Click the check button.
 
-#### <a name="InsertActivity"></a>To Insert an Activity into a Runbook
+#### <a name="InsertActivity"></a>To insert an activity into a runbook
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -145,12 +145,13 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 10. If the activity requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
 
-### To Edit an Automation Runbook Using Windows PowerShell
+### To edit an Automation runbook using Windows PowerShell
+
 To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](http://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](http://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
 
 To create a new runbook from the contents of a script file, see [To import a runbook from a script file with Windows PowerShell](Creating-or-Importing-a-Runbook.md#to-import-a-runbook-from-a-script-file-with-windows-powershell).
 
-### <a name="RetrieveContentsPowerShell"></a>To Retrieve the Contents of a Runbook Using Windows PowerShell
+### <a name="RetrieveContentsPowerShell"></a>To retrieve the contents of a runbook using Windows PowerShell
 The following sample commands show how to retrieve the script for a runbook and save it to a script file. In this example, the Draft version is retrieved. It is also possible to retrieve the Published version of the runbook although this version cannot be changed.
 
 ```powershell
@@ -178,7 +179,7 @@ Edit-SmaRunbook "WebServiceEndpoint $webServer "Port $port -Name $runbookName -P
 Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Path $scriptPath
 ```
 
-## <a name="ISE"></a>To Edit an Automation Runbook Using Windows PowerShell ISE
+## <a name="ISE"></a>To edit an Automation runbook using Windows PowerShell ISE
 Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) allows you to use this tool to write and test Automation runbooks.
 
 1. Open Windows PowerShell ISE.
