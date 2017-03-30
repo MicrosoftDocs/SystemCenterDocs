@@ -4,7 +4,7 @@ description: This article describes how deploy the Operations Manager Web consol
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/03/2017
+ms.date: 03/30/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -106,7 +106,7 @@ After you deploy the Operations Manager web part to a SharePoint site, you can a
   
 To obtain the URI, open the web console and navigate to the desired dashboard view. The address bar will display an address such as the following:  
   
-`http://localhost/OperationsManager/#/dashboard%7Btype=Microsoft.SystemCenter.Visualization.Library!Visualization.SlaDashboardViewInstanceDaily%7D`  
+`http://localhost/OperationsManager/default.aspx?ViewType=DashboardView&ViewID=a30c28f-22c7-745fa-ebf6-2fbc5a713ed`  
   
 The following procedure creates a SharePoint page with the Operations Manager Dashboard Viewer web part that can only be accessed by users who have an Operations Manager user role, such as an Operator or Administrator. To configure the Operations Manager Dashboard Viewer web part so that those who are not Operations Manager users can view it, perform the following steps and then see the procedure [How to configure the web part to use shared credentials](#how-to-configure-the-web-part-to-use-shared-credentials) below.  
   
@@ -128,11 +128,13 @@ The following procedure creates a SharePoint page with the Operations Manager Da
   
 8.  Click the arrow in the top right of the web part, and then click **Edit web part**.  
   
-9. Select the web console server in the **Dashboard Server** field, and enter the URI for the dashboard in the **Dashboard Parameters** field, and then click **OK**.  
+9. Select the web console server in the **Dashboard Server** field, and enter the URI for the dashboard in the **Dashboard Parameters** field.  Append `&disabletree=true` at the end of the URI to disable the tree view from being displayed on the SharePoint page.  
+
+10. Click **OK**.  
   
-10. On the menu bar, click **Page**.  
+11. On the menu bar, click **Page**.  
   
-11. Click **Save & Close**.  
+12. Click **Save & Close**.  
   
 > [!NOTE]  
 > After you correctly set up a dashboard web part in SharePoint, you might receive an error message saying "ticket has expired". This is because there is a very narrow time-out for an override ticket (by default, 5 seconds). If the time on the server running SharePoint and the Web console server differ by more than this value, the connection fails. This is a likely situation if the computers are in different domains and are using a different time source. You can increase the time-out on the SharePoint Server in the web console list, but this would make the server more vulnerable to attack. The best solution is to synchronize the time between the server running SharePoint and the web console server.  
