@@ -47,7 +47,7 @@ You can add a runbook to Service Management Automation by either creating it in 
 
 ### To import a runbook from a file:
 
-.  In the Management portal, select **Automation** and then select an Automation Account.
+1.  In the Management portal, select **Automation** and then select an Automation Account.
 
 2.  Click **Import**.
 
