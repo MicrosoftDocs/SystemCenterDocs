@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: e9a7de24-e680-4a93-9d81-e8d3bf41a7ce
 ---
 
-# Recommended deployment topology scenarios for Service Manager.
+# Recommended deployment topology scenarios for Service Manager
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -253,3 +253,8 @@ This configuration was tested with the following load.
 |Is the Active Directory Connector Enabled?|Yes|  
 |Is the Configuration Manager Connector Enabled?|Yes|  
 |Is the Operations Manager Connector Enabled?|Yes|
+
+
+## Next steps
+
+- Review [Deploy System Center - Service Manager](../deploy/deploy-deploying-system-center-2016-service-manager.md) to learn about deploying Service Manager in one of several different scenarios.

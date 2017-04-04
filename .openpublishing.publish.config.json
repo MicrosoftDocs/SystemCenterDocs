@@ -23,6 +23,5 @@
   ],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "dependent_repositories": [],
-  "package_version": "1.28.3"
+  "dependent_repositories": []
 }

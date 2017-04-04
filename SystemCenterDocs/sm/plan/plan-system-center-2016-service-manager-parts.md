@@ -33,3 +33,7 @@ There are six major parts of a System Center 2016 - Service Manager installation
 
 >[!IMPORTANT]
 All computers that host any part of Service Manager must be domain-joined.
+
+## Next steps
+
+- Review [System requirements](plan-service-manager-system-requirements.md) to learn about general performance and scalability guidance for Service Manager and recommended hardware configurations.

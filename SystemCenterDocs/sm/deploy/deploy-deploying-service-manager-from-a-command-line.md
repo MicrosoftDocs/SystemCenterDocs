@@ -1,5 +1,5 @@
 ---
-title: Deploy Service Manager from a command line
+title: Deploy from a command line
 description: This article describes how to deploy Service Manager using command-line parameters.
 manager:  carmonm
 ms.custom: na
@@ -293,3 +293,8 @@ The following is a list of the error codes that are used in the command-line ins
 |289|AnalysisServicesNotInstalled|  
 |290|DuplicatedASDatabaseID|  
 |3010|SuccessfulNeedReboot|
+
+
+## Next steps
+
+- Review [Move the Service Manager and data warehouse databases to different servers](deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md) to read prescriptive and how-to guidance about moving Service Manager databases.

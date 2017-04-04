@@ -1,5 +1,5 @@
 ---
-title: Indexing Non-English Knowledge Articles
+title: Index non-English knowledge articles
 description: This article helps you resolve issues when you want to index non-English knowledge articles.
 manager:  carmonm
 ms.custom: na
@@ -15,7 +15,7 @@ ms.topic: article
 ms.assetid: 3a0d866d-40b8-4f40-a175-3c5b563bbf83
 ---
 
-# Indexing non-English knowledge articles
+# Index non-English Service Manager knowledge articles
 
 >Applies To: System Center 2016 - Service Manager
 
@@ -124,3 +124,8 @@ If you have existing knowledge articles or are planning to create knowledge arti
 |document\_type|.rtf|  
 |class\_id|E2403E98\-663B\-4DF6\-B234\-687789DB8560|  
 |path|C:\\Windows\\System32\\Rtffilt.dll|
+
+
+## Next steps
+
+- Review [Troubleshoot deployment issues to resolve problems](deploy-troubleshooting-system-center-2016-service-manager-deployment-issues.md) to review logs files that are created when you install Service Manager and how you can use these logs to troubleshoot deployment issues.

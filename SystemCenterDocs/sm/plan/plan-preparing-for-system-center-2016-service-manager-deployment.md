@@ -201,3 +201,7 @@ Use the following procedures to prepare computers for deployment of System Cente
 8.  In the **Connect** pane, click the top entry (`<server>\\<instance>`).  
 
 9. In the **Current Report Server** area, click **Stop**, and then click **Start**.
+
+## Next steps
+
+- Review [Planning for performance and scalability](plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md) to learn about the issues that affect performance and scalability in Service Manager. Also suggests best practices to achieve good performance using suggested hardware configurations.

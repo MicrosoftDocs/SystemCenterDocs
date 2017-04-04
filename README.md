@@ -1,3 +1,8 @@
+## Microsoft Open Source Code of Conduct
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
 # System Center Technical Documentation Contributor Guide
 
 You've found the GitHub repository that houses the source for System Center technical documentation that is published to  [TechNet](https://technet.microsoft.com/system-center-docs/).

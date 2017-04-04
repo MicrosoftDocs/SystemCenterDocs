@@ -1,6 +1,6 @@
 ---
 title: Databases created by Service Manager
-Description: Describes the databases that are created by Service Manager.
+Description: Describes the databases that are created by Service Manager during installation.
 manager: carmonm
 ms.custom: na
 ms.prod: system-center-2016
@@ -28,3 +28,7 @@ Before starting the installation of System Center 2016 - Service Manager, you ma
 
 > [!IMPORTANT]  
 >  Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL Server.
+
+## Next steps
+
+- Review [Port assignments for Service Manager](plan-port-assignments-for-system-center-2016-service-manager.md) to learn about the port numbers that are used throughout your Service Manager environment for your security infrastructure.

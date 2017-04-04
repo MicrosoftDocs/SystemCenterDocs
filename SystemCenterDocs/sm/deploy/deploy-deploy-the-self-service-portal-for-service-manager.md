@@ -179,3 +179,7 @@ You can add or remove shortcuts from the menu, and you can customize them with d
 ### Additional UI customization
 
 For more information about UI customization, see [The Official System Center Service Manager Blog](https://blogs.technet.microsoft.com/servicemanager/2016/03/15/basic-ui-customization-in-new-self-service-portal-html5/).
+
+## Next steps
+
+- Review [Guidance for load balancing](deploy-guidance-for-load-balancing-system-center-2016-service-manager.md) to configure Windows Server Network Load Balancing with Service Manager.

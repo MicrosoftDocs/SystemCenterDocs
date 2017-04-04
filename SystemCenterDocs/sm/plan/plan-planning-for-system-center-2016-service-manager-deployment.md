@@ -43,3 +43,7 @@ For System Center 2016 - Service Manager, several deployment options are availab
  The Service Manager management server and its associated Service Manager database make up a Service Manager management group. The data warehouse management server and its associated databases make up a data warehouse management group. After deploying Service Manager, you will register the Service Manager management group with the data warehouse management group.  
 
  In your enterprise, you might create multiple Service Manager management groups. You can centralize reporting for multiple Service Manager management groups by registering multiple Service Manager management groups with a single data warehouse management group.
+
+## Next steps
+
+- Review [Service Manager parts](plan-system-center-2016-service-manager-parts.md) to learn about the major parts of Service Manager.

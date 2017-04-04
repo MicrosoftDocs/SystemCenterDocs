@@ -1,5 +1,5 @@
 ---
-title: Supported Configurations for Service Manager
+title: Supported configurations for Service Manager
 description: The article describes supported configurations for Service Manager.
 ms.custom: na
 ms.prod: system-center-2016
@@ -34,3 +34,8 @@ The hardware and software tested are based on the following system environment a
 
 >[!NOTE]
 >Using a slow storage subsystem or insufficient memory can reduce Service Manager performance significantly.  
+
+
+## Next steps
+
+- Review [Considerations for Operations Manager with Service Manager](plan-operations-manager-considerations-in-system-center-2016-service-manager.md) to learn about possible issues before you combine Operations Manager and Service Manager.
