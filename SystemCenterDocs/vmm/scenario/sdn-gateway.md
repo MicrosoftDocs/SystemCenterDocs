@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 03/28/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -366,10 +366,10 @@ RoutingSubnets | Static routes that need to be on the L3 interface on the HNV ga
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
 
-## Set up the Traffic Selector from PowerShell
-Here is the procedure to setup the Traffic Selector by using the VMM PowerShell.
+## Set up the traffic selector from PowerShell
+Here is the procedure to setup the traffic selector by using the VMM PowerShell.
 
-1.	Create the Traffic Selector by using the following parameters.
+1.	Create the traffic selector by using the following parameters.
 
     **Note**: Values used are examples only.
 
@@ -387,7 +387,7 @@ Here is the procedure to setup the Traffic Selector by using the VMM PowerShell.
 
             $t.IpAddressEnd=10.100.101.100
 
-2.   Configure the above Traffic Selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
+2.   Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
 
 ## Remove the gateway from the SDN fabric
 
