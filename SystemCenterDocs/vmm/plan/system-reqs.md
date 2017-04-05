@@ -19,6 +19,10 @@ This article describes the scalability information, hardware, software, and SQL 
 
 ## Capacity limits
 
+The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
+
+The [planning guide](https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
+
 **Entity** | **Recommended maximum count**
 --- | ---
 Physical hosts | 1000

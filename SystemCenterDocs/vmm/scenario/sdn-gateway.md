@@ -58,6 +58,8 @@ Both the templates have a default count of three virtual machines which can be c
 2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
 3. In **Network Site**, specify the settings:
 
+    Here are the sample values:
+
     - Network name: GRE VIP
     - Subnet: 31.30.30.0
     - Mask: 24
@@ -364,54 +366,29 @@ RoutingSubnets | Static routes that need to be on the L3 interface on the HNV ga
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
 
-## Set up the traffic selector from PowerShell
-Use the following script to specify the traffic selector for VPN tunnel:
-```
-PS C:\Users\CDMLABUser> $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
+## Set up the Traffic Selector from PowerShell
+Here is the procedure to setup the Traffic Selector by using the VMM PowerShell.
 
-PS C:\Users\CDMLABUser> $t
+1.	Create the Traffic Selector by using the following parameters.
 
-Type           : 0
+    **Note**: Values used are examples only.
 
-ProtocolId     : 0
+            $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
 
-PortStart      :
+            $t.Type=7 // IPV4=7, IPV6=8
 
-PortEnd        :
+            $t.ProtocolId=6 // TCP =6, [reference](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers)
 
-IpAddressStart :
+            $t.PortEnd=5090
 
-IpAddressEnd   :
+            $t.PortStart=5080
 
-TsPayloadId    : 0
+            $t.IpAddressStart=10.100.101.10
 
+            $t.IpAddressEnd=10.100.101.100
 
-PS C:\Users\CDMLABUser> $t.Type=7 // IPV4=7,IPV6=8
+2.   Configure the above Traffic Selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
 
-PS C:\Users\CDMLABUser> $t.ProtocolId=6 // TCP =6
-
-PS C:\Users\CDMLABUser> $t.PortEnd=5090
-
-PS C:\Users\CDMLABUser> $t.PortStart=5080
-
-PS C:\Users\CDMLABUser> $t.IpAddressStart="10.100.101.10"
-
-PS C:\Users\CDMLABUser> $t.IpAddressEnd="10.100.101.100"
-
-PS C:\Users\CDMLABUser> $vmNetwork = Get-SCVMNetwork -ID "f7f62bd6-c609-48ab-a767-65311aa67c06"
-
-PS C:\Users\CDMLABUser>
-
-PS C:\Users\CDMLABUser> $vmSubnet = Get-SCVMSubnet -Name "s1" | where { $_.ID -eq "0bd7f9de-ea43-44cf-9b7e-d065c9b13d01"}
-
-PS C:\Users\CDMLABUser> $gatewayDevice = Get-SCNetworkGateway -ID "3c48ca3a-4b48-4e0b-9716-931b42828973"
-
-PS C:\Users\CDMLABUser> $VmNetworkGateway = Add-SCVMNetworkGateway -Name "tenant_Gateway" -EnableBGP $false -NetworkGateway $gatewayDevice -VMNetwork $vmNetwork -RoutingIPSubnet "10.251.251.0/29"
-
-PS C:\Users\CDMLABUser> $runAsAccount = Get-SCRunAsAccount -ID "bc0e65d9-faf3-4407-8269-5d5ce5f7c4ba"
-
-PS C:\Users\CDMLABUser> $vpnConnection = Add-SCVPNConnection -AuthenticationMethod "PSKOnly" -AuthenticationTransformConstants "SHA196" -CipherTransformConstants "AES256" -DHGroup "Group2" -EncryptionMethod "AES256" -IntegrityCheckMethod "SHA1" -PFSGroup "PFS2048" -Protocol "IKEv2” -Name "test" -TargetIPv4VPNAddress "10.184.200.200" -Secret $runAsAccount -VMNetworkGateway $VmNetworkGateway -LocalTrafficSelectors @($t)
-```
 ## Remove the gateway from the SDN fabric
 
 Use [these steps](sdn-remove-an-sdn.md#remove-the-gateway) to remove the gateway from the SDN fabric.
