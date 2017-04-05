@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 03/04/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -57,6 +57,8 @@ Both the templates have a default count of three virtual machines which can be c
 1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
 2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
 3. In **Network Site**, specify the settings:
+
+    Here are the sample values:
 
     - Network name: GRE VIP
     - Subnet: 31.30.30.0
@@ -363,6 +365,29 @@ GatewaySubnet | Subnet to be used for routing between HVN gateway and tenant vir
 RoutingSubnets | Static routes that need to be on the L3 interface on the HNV gateway. |
 EnableBGP | Option to enable BGP. Default is false. |
 TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
+
+## Set up the traffic selector from PowerShell
+Here is the procedure to setup the traffic selector by using the VMM PowerShell.
+
+1.	Create the traffic selector by using the following parameters.
+
+    **Note**: Values used are examples only.
+
+            $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
+
+            $t.Type=7 // IPV4=7, IPV6=8
+
+            $t.ProtocolId=6 // TCP =6, [reference](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers)
+
+            $t.PortEnd=5090
+
+            $t.PortStart=5080
+
+            $t.IpAddressStart=10.100.101.10
+
+            $t.IpAddressEnd=10.100.101.100
+
+2.   Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
 
 ## Remove the gateway from the SDN fabric
 
