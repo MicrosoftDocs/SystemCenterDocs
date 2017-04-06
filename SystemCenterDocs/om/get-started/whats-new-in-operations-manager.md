@@ -5,7 +5,7 @@ description: This article describes what's new in Operations Manager 2016 compar
 author: mgoedtel
 ms.author: magoedte
 manager: cfreeman
-ms.date: 11/15/2016
+ms.date: 04/06/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -97,15 +97,15 @@ For specific instructions on how to configure System Center 2016 - Operations Ma
 
 ## Scalability improvement with Unix/Linux agent monitoring
 
-Operations Manager includes improved scalability in how many Unix/Linux agents that can be monitored per Management server.  You can now monitor up to 2X the number of Unix/Linux servers per Management server, against the previously supported scale.
+Operations Manager includes improved scalability in how many Unix/Linux agents that can be monitored per Management server.  You can now monitor up to 2X the number of Unix/Linux servers per management server, against the previously supported scale.
 
-Operations Manager now uses by default, the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs. To take advantage of this scalability improvement, you will need to create a new registry key "UseMIAPI" on Management servers monitoring Linux/Unix systems by performing the following steps:
+Operations Manager now uses the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs, which Operations Manager uses by default. To leverage this  scalability improvement, you need to create the new Registry key “UseMIAPI” to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems.  Perform the following steps:
 
 1. Open the **Registry Editor** from an elevated **Command Prompt**.
 
 2. Create registry key **UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
 
-If you need to restore the original configuration of WSMAN Sync APIs, you can delete the UseMIAPI registry key.
+If you need to restore the original configuration using the WSMAN Sync APIs, you can delete the UseMIAPI registry key.
 
 
 ## Extend Operations Manager with Operations Management Suite
