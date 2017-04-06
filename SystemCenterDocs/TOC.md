@@ -405,7 +405,7 @@
 ###### [Delete Folder](orch/manage/delete-folder.md)
 ###### [Download File](orch/manage/download-file.md)
 ###### [List Folders or Files](orch/manage/list-folders-or-files.md)
-###### [Rename Folders or Files](orch/manage/rename-folders-or-files.md)
+###### [Rename Folders or Files](orch/manage/rename-file-or-folder.md)
 ###### [Resume File Download](orch/manage/resume-file-download.md)
 ###### [Synchronize Folder or File](orch/manage/synchronize-folder-or-file.md)
 ###### [Upload File](orch/manage/upload-file.md)
