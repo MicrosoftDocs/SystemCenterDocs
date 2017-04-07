@@ -216,6 +216,10 @@ automatically populate the property values needed by activities.
 
 This integration pack adds the Microsoft Configuration Manager category to the Activity pane in the Runbook Designer. This category contains the following activities:
 
+- [Add Collection Rule](add-collection-rule.md)
+- [Create Collection](create-collection.md)
+- [Delete Collection Rule](delete-collection-rule.md)
+- [Delete Collection](delete-collection.md)
 - [Deploy Application](deploy-application.md)
 - [Deploy Configuration Baseline](deploy-configuration-baseline.md)
 - [Deploy Program](deploy-program.md)
