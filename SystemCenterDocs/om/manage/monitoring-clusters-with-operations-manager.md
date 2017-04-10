@@ -13,7 +13,11 @@ ms.assetid: 6842cddc-b875-4358-8f00-f4b8ab784739
 ---
 
 # Monitoring clusters with Operations Manager
-The purpose of this topic is to explain how to use System Center - 2016 Operations Manager to monitor computers, disks, and shared volumes that are in clustered configurations. For information on monitoring clustered components or services, please review the following:
+System Center - 2016 Operations Manager can monitor computers, disks, and shared volumes that are in clustered configurations running on the Windows Server operating system. Operations Manager can also monitor cluster-aware applications running on a Windows Failover Cluster deployments such as database applications, transaction processing applications, hypervisors, file and print server applications, and other applications.  
+
+Operations Manager discovers an instance of Windows Cluster and basic details of it, but it doesn't provide detailed monitoring of components and overall health of the cluster.  This requires the Windows Server Failover Cluster management pack to proactively monitor availability and performance of cluster nodes, resource groups, and resources supporting the cluster.     
+
+For information on monitoring clustered components or services, please review the following:
 
 * [System Center 2016 Management Pack for Windows Server Operating System](https://www.microsoft.com/download/details.aspx?id=54303) - monitors the availability, health, and performance of the Windows Server 2016 operating system.  It includes discovery and monitoring of clustered shared volumes and disks.
 
@@ -39,7 +43,7 @@ To begin monitoring computers in a cluster, perform the following steps:
   
 2.  Enable agent proxy on all cluster nodes. For more information, see [How to Configure a Proxy for Agentless Monitoring](agentless-monitoring-in-operations-manager.md#how-to-configure-a-proxy-for-agentless-monitoring).  
   
-When discovery occurs, each physical node of the cluster is displayed in the Operations Manager console in the **Agent Managed** pane; the cluster is displayed in the **Agentless Managed** pane. The cluster may show as "not monitored" depending on what cluster-aware application is deployed in the cluster, such as Microsoft Hyper-V, Exchange Server, and SQL Server.  Once you install the management pack for that workload, you will be able to view additional monitoring information which contains monitors that specifically target the cluster object.  Review the management pack deployment guide to understand what configuration steps are required and what monitoring information is discovered and reported.    
+When discovery occurs, each physical node of the cluster is displayed in the Operations Manager console in the **Agent Managed** pane; the cluster is displayed in the **Agentless Managed** pane. The cluster may show as "not monitored" if you have not imported the Windows Failover Cluster management pack at a minimum, or depending on what cluster-aware application is deployed in the cluster, such as Microsoft Hyper-V, Exchange Server, or SQL Server.  Once you install the management pack for that workload, you will be able to view additional monitoring information which contains monitors that specifically target the cluster object.  Review the management pack deployment guide to understand what configuration steps are required and what monitoring information is discovered and reported.    
 
 The agent on the active cluster node will perform all monitoring. If the node fails, the agent on the cluster node that clustering fails over to will begin monitoring, but the agent on the failover node will have no awareness of anything the agent on other node had monitored previously, such as alerts, state changes, and so forth. The agents are independent.  
   
