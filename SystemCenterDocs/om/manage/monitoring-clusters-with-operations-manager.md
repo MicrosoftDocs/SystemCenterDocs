@@ -27,7 +27,7 @@ For information on monitoring clustered components or services, please review th
 
    * Windows Server 2003 with SP2
    * Windows Server 2003 R2 with SP2
-   * Windows 2008 Enterprise and Datcenter edition
+   * Windows 2008 Enterprise and Datacenter edition
    * Windows Server 2008 R2 Enterprise and Datacenter edition
    * Windows Server 2012 and 2012 R2
    * Windows Server 2016. 
