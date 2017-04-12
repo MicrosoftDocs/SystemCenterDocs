@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: cfreeman
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -140,6 +140,8 @@ Now that the gateway service is deployed, you can configure the properties, and 
 
 8. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
 9. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
+
+**Note**: You must configure the gateway BGP peers, if you plan to use GRE connections. 
 
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
