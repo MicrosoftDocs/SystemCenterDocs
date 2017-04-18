@@ -36,6 +36,6 @@ Operations Manager, a component of System Center 2016, collects an immense amoun
 
     The Operations Manager consoles provide find, scope, and search functions to help you filter and locate specific data and objects. This section explains how to use these functions effectively. 
 
--   [Using Views and Dashboards in Operations Manager](using-views-and-dashboards-in-operations-manager.md)
+-   [Using Views and Dashboards in Operations Manager](../../scom/manage-console-using-views-dashboards.md)
 
     Views determine how operational data will be visualized and provided to the different personas in the organization. This section describes the standard views included in Operations Manager, and explains how to create, customize, and target them.

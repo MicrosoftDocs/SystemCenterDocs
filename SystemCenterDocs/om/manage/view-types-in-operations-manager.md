@@ -86,7 +86,7 @@ For information on creating a dashboard view, see [How to Create a Dashboard Vie
   
 ## Next steps
   
-- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](using-views-and-dashboards-in-operations-manager.md).  
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](../../scom/manage-console-using-views-dashboards.md).  
 
 - To understand how to create your own custom views and dashboards in Operations Manager, see [Creating and scoping views in Operations Manager](how-to-create-and-scope-views-in-operations-manager.md). 
 

@@ -137,7 +137,7 @@
 ##### [Finding data and objects in the consoles](scom/manage-console-finding-data.md)
 ###### [Using advanced search](om/manage/using-advanced-search.md)
 ##### [Configure SharePoint to view Operations Manager data](om/manage/using-sharepoint-to-view-operations-manager-data.md)
-##### [Using views and dashboards](om/manage/using-views-and-dashboards-in-operations-manager.md)
+##### [Using views and dashboards](scom/manage-console-using-views-dashboards.md)
 ###### [View types](om/manage/view-types-in-operations-manager.md)
 ###### [Standard views](om/manage/standard-views-in-operations-manager.md)
 ###### [Creating and scoping views](om/manage/how-to-create-and-scope-views-in-operations-manager.md)

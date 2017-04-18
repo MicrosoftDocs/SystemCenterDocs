@@ -342,7 +342,7 @@ You can view all rule and monitor overrides in an overrides summary view. The ov
   
 ## Next steps
  
-- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](using-views-and-dashboards-in-operations-manager.md).    
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](../../scom/manage-console-using-views-dashboards.md).    
 
 - Operations Manager includes a number of views that are created during installation.  To understand what these views provide, see [Standard Views in Operations Manager](standard-views-in-operations-manager.md).  
 
