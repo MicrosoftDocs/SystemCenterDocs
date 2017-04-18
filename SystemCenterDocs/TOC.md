@@ -73,7 +73,7 @@
 ##### [Security considerations monitoring Microsoft Azure and Office 365](om/plan/planning-security-microsoft-cloud.md)
 ### [Deploy](om/deploy/deploying-system-center-2016-operations-manager.md)
 #### [Single-Server deployment of Operations Manager](om/Deploy/single-server-deployment-of-operations-manager.md)
-#### [Distributed deployment of Operations Manager](om/Deploy/distributed-deployment-of-operations-manager.md)
+#### [Distributed deployment of Operations Manager](scom/deploy-distributed-deployment.md)
 ##### [How to install an Operations Manager management server](OM/Deploy/How-to-Install-an-Operations-Manager-Management-Server.md)
 ##### [How to install the Operations console](OM/Deploy/How-to-Install-the-Operations-Console.md)
 ##### [How to install the Operations Manager Web console](OM/Deploy/How-to-install-the-Operations-Manager-Web-Console.md)

@@ -65,17 +65,17 @@ This configuration supports all Operations Manager server roles:
 
 This section of the Deployment Guide contains the following topics:
 
--   [How to install an Operations Manager management server](How-to-Install-an-Operations-Manager-Management-Server.md)
+-   [How to install an Operations Manager management server](../om/deploy/how-to-install-an-operations-manager-management-server.md)
 
--   [How to install the Operations console](How-to-Install-the-Operations-Console.md)
+-   [How to install the Operations console](../om/deploy/how-to-install-the-operations-console.md)
 
--   [How to install the Operations Manager Web console](How-to-Install-the-Operations-Manager-Web-Console.md)
+-   [How to install the Operations Manager Web console](../om/deploy/how-to-install-the-operations-manager-web-console.md)
 
--   [How to install an Audit Collection Services (ACS) collector and database](How-to-Install-an-Audit-Collection-Services-ACS-Collector-and-Database.md)
+-   [How to install an Audit Collection Services (ACS) collector and database](../om/deploy/how-to-install-an-audit-collection-services-acs-collector-and-database.md)
 
--   [How to install the Operations Manager Reporting server](How-to-Install-the-Operations-Manager-Reporting-Server.md)
+-   [How to install the Operations Manager Reporting server](../om/deploy/how-to-install-the-operations-manager-reporting-server.md)
 
--   [How to deploy a gateway server](How-to-Install-A-Gateway-Server.md)
+-   [How to deploy a gateway server](../om/deploy/how-to-install-a-gateway-server.md)
 
 
 
