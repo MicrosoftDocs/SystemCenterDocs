@@ -66,12 +66,12 @@ Setup.exe
 
 2.  On the computer where you will be installing the reporting server, make sure that the SQL&nbsp;Server Reporting Services \(SSRS\) service has started.  
 
-3.  If you are going to deploy the Reporting Server on a computer other than the computer hosting the data warehouse management server, make sure that you have completed the procedure in [Manual Steps to Configure the Remote SQL Server Reporting Services](../../scsm/config-remote-ssrs.md).  
+3.  If you are going to deploy the Reporting Server on a computer other than the computer hosting the data warehouse management server, make sure that you have completed the procedure in [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md).  
 
 ### Determine when installation is complete  
  When installation of either the Service Manager management server or the data warehouse management server is complete, an event with Event&nbsp;ID&nbsp;1033 is written into the Application Event log, as shown in the following illustration.  
 
- ![Command Line Install Event Log](../media/deploy-commandlineinstalleventlog.png)  
+ ![Command Line Install Event Log](./media/deploy-cmd-line/deploy-commandlineinstalleventlog.png)  
 
 
  If you use the **start \/w** command when you are using setup.exe, the command window will remain open when Setup completes, giving you the opportunity to examine any return codes.  
@@ -297,4 +297,4 @@ The following is a list of the error codes that are used in the command-line ins
 
 ## Next steps
 
-- Review [Move the Service Manager and data warehouse databases to different servers](deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md) to read prescriptive and how-to guidance about moving Service Manager databases.
+- Review [Move the Service Manager and data warehouse databases to different servers](../sm/deploy/deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md) to read prescriptive and how-to guidance about moving Service Manager databases.

@@ -45,4 +45,4 @@ You have to either increase the amount of free disk space that is available or r
 
 ## Next steps
 
-- Review [Deploy Service Manager from a command line](../sm/deploy/deploy-deploying-service-manager-from-a-command-line.md) to deploy Service Manager using command-line parameters.
+- Review [Deploy Service Manager from a command line](deploy-cmd-line.md) to deploy Service Manager using command-line parameters.
