@@ -222,7 +222,7 @@ This integration pack adds the Microsoft Configuration Manager category to the A
 - [Delete Collection](delete-collection.md)
 - [Deploy Application](deploy-application.md)
 - [Deploy Configuration Baseline](deploy-configuration-baseline.md)
-- [Deploy Program](../orch/manage/deploy-program.md)
+- [Deploy Program](deploy-program.md)
 - [Deploy Software Update](../orch/manage/deploy-software-update.md)
 - [Deploy Task Sequence](../orch/manage/deploy-task-sequence.md)
 - [Get Collection Member](../orch/manage/get-collection-member.md)
