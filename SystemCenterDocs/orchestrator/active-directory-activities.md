@@ -138,7 +138,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Get Computer](get-computer.md)
 
-[Get Group](../orch/manage/get-group.md)
+[Get Group](get-group.md)
 
 [Get Organizational Unit](../orch/manage/get-organizational-unit.md)
 
