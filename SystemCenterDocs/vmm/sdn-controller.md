@@ -171,7 +171,7 @@ You need to deploy a logical switch on the management logical network. The switc
 
 ### Deploy the logical switch
 
-You must deploy the management logical switch on all of the hosts where you intend to deploy the NC. These hosts must be a part of VMM host group that you created earlier [Learn more](manage/manage-compute-add-networking-hyper-v.md).
+You must deploy the management logical switch on all of the hosts where you intend to deploy the NC. These hosts must be a part of VMM host group that you created earlier [Learn more](hyper-v-network.md).
 
 ## Set up the security certificates
 

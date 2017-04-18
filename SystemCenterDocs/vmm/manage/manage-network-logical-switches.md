@@ -113,4 +113,4 @@ Note that:
 
 ## Next steps
 
-[Apply network settings](manage-compute-add-networking-hyper-v.md) on a host with a logical switch.
+[Apply network settings](../hyper-v-network.md) on a host with a logical switch.

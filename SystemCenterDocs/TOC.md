@@ -800,7 +800,7 @@
 ##### [Provision a Hyper-V host or cluster from bare-metal](vmm/hyper-v-bare-metal.md)
 ##### [Create a guest Hyper-V cluster from a service template](vmm/hyper-v-guest-cluster.md)
 ##### [Manage Hyper-V clusters in the VMM fabric](vmm/hyper-v-cluster.md)
-##### [Set up networking for Hyper-V hosts and clusters](vmm/manage/manage-compute-add-networking-hyper-v.md)
+##### [Set up networking for Hyper-V hosts and clusters](vmm/hyper-v-network.md)
 ##### [Set up storage for Hyper-V hosts and clusters](vmm/manage/manage-compute-add-storage-hyper-v.md)
 ##### [Update Hyper-V hosts and clusters](vmm/manage/manage-compute-update-hyper-v.md)
 ##### [Manage MPIO for Hyper-V hosts and clusters](vmm/manage/manage-compute-mpio-hyper-v.md)
