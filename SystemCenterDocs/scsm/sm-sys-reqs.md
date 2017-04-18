@@ -23,7 +23,7 @@ The article describes general performance and scalability guidance for System Ce
 
 ## Capacity limits for Service Manager
 
-Read [Configurations for deployment scenarios](../sm/plan/plan-configurations-for-deployment-scenarios.md) to learn about the tested capacity limits of Service Manager.
+Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested capacity limits of Service Manager.
 
 ## Hardware
 
@@ -92,6 +92,6 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 - System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
 
 ## Next steps
-- Read [Configurations for deployment scenarios](../sm/plan/plan-configurations-for-deployment-scenarios.md) to learn about the tested limits of Service Manager.
+- Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested limits of Service Manager.
 - Read about Service Manager [hardware performance](plan-hardware-perf.md).
 - Read about [SQL Server requirements](sm-sql-reqs.md).

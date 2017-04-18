@@ -257,4 +257,4 @@ This configuration was tested with the following load.
 
 ## Next steps
 
-- Review [Deploy System Center - Service Manager](../deploy/deploy-deploying-system-center-2016-service-manager.md) to learn about deploying Service Manager in one of several different scenarios.
+- Review [Deploy System Center - Service Manager](../sm/deploy/deploy-deploying-system-center-2016-service-manager.md) to learn about deploying Service Manager in one of several different scenarios.
