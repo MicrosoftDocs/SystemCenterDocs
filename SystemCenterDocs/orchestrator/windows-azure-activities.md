@@ -114,7 +114,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **Windows Azure** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Management Certificate](../orch/manage/add-management-certificate.md)
+[Add Management Certificate](add-management-certificate.md)
 
 [Add OS Image](../orch/manage/add-os-image.md)
 
