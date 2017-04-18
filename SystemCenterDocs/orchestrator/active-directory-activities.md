@@ -168,6 +168,6 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Update Group](update-group.md)
 
-[Update User](../orch/manage/update-user.md)
+[Update User](update-user.md)
 
 
