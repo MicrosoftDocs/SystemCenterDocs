@@ -832,7 +832,7 @@
 ###### [Add an existing SOFS to the VMM fabric](vmm/sofs-existing.md)
 ###### [Create an SOFS cluster from standalone servers](vmm/sofs-cluster.md)
 ###### [Provision SOFS from bare-metal computers](vmm/sofs-bare-metal.md)
-###### [Manage SOFS settings](vmm/manage/manage-sofs.md)
+###### [Manage SOFS settings](vmm/sofs-settings.md)
 ##### [Set up Storage Spaces Direct](vmm/s2d.md)
 ##### [Set up Storage Replica in VMM](vmm/storage-replica.md)
 #### [Manage virtual machines](vmm/manage/manage-vm-overview.md)

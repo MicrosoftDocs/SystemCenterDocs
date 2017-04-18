@@ -118,7 +118,7 @@ You need to create a pool, virtual disks, and CSVs in the Storage Spaces Direct 
 
    ![Select disks](./media/s2d/storage-spaces-disks.png)
 
- 3. Complete the rest of the wizard as described in this [article](manage/manage-sofs.md#create-storage-pools).
+ 3. Complete the rest of the wizard as described in this [article](sofs-settings.md#create-storage-pools).
  4.  Using Windows Powershell, the pool and the storage tier is automatically created with the "Enable-ClusterS2D autoconfig=true" option.
 
 ### Create a CSV
