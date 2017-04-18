@@ -81,7 +81,7 @@ The following procedure describes how you can configure the frequency and minimu
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](How-to-Create-a-Management-Pack-for-Overrides.md).
 
-- To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](Management-Pack-Lifecycle.md).
+- To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](../../scom/manage-mp-lifecycle.md).
 
 - Review the [Operations Manager Reports library](operations-manager-reports-library.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](how-to-create-reports-in-operations-manager.md) to create reports for your operational needs. 
 

@@ -87,7 +87,7 @@ In this common scenario, you must perform the following two tasks:
 
 When you configure an override to a rule, monitor, or discovery in Operations Manager, you will notice an **Enforced** check box in the row for each value that you can override, as shown in the following illustration.  
   
-![Enforced checkbox for overrides](../media/om2016-override-enforced-setting.png)  
+![Enforced checkbox for overrides](./media/manage-mp-overview-override-targets/om2016-override-enforced-setting.png)  
   
 When the Enforced attribute is selected for an override, this setting ensures that the override will take precedence over all other overrides of the same type and context that do not have **Enforced** set.  
   
@@ -104,9 +104,9 @@ If you create an override that applies to COMPUTER1 and sets the threshold to 60
   
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](How-to-Create-a-Management-Pack-for-Overrides.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../om/manage/how-to-create-a-management-pack-for-overrides.md)
 
-- See [How to Import, Export, and Remove an Operations Manager Management Pack](how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
+- See [How to Import, Export, and Remove an Operations Manager Management Pack](../om/manage/how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
 
-- Review [How to Enable Recovery and Diagnostic Tasks](How-to-Enable-Recovery-and-Diagnostic-Tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
+- Review [How to Enable Recovery and Diagnostic Tasks](../om/manage/how-to-enable-recovery-and-diagnostic-tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
   

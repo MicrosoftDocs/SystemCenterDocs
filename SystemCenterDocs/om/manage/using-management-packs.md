@@ -30,7 +30,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
     Lists the management packs that are installed during setup of your Operations Manager management group and what describe what function it provides.
 
-- [Management pack lifecycle](Management-Pack-Lifecycle.md)
+- [Management pack lifecycle](../../scom/manage-mp-lifecycle.md)
 
     Provides an overview of how to approach to managing the lifecycle of management packs deployed in your management group.
 

@@ -42,6 +42,6 @@ After an object has been already discovered, if you want to delete the object an
 
 - Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](../om/manage/how-to-override-a-rule-or-monitor.md) to understand how to configure the change.
 
-- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](../om/manage/using-classes-and-groups-for-overrides.md).
+- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](manage-mp-overview-override-targets.md).
 
 
