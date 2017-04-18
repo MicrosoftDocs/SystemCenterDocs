@@ -25,7 +25,7 @@ If you want to evaluate System Center - Service Manager and you have a minimal a
 
  **Figure 1: Single\-computer installation in which you use a physical computer that is running Windows&nbsp;Server&nbsp;2016 and Hyper\-V**  
 
- ![Minimum Configuration for Service Manager](../media/deploy-minimumconfiguration.png)  
+ ![Minimum Configuration for Service Manager](./media/install-one-computer/deploy-minimumconfiguration.png)  
 
  If your organization's best practice guidelines do not allow you to install applications on a Hyper\-V host, you can create a second virtual computer to host the Service Manager management server, the Service Manager database, and the data warehouse databases. Use the following procedures to install Service Manager on a single computer.  
 
@@ -41,7 +41,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 -   Workflow account  
 
- For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer.  
+ For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer.  
 
 ### To install the Service Manager management server, database, and console  
 
@@ -62,7 +62,7 @@ To install System Center - Service Manager on a single computer, you install the
 7.  On the **Configure the Service Manager database** page, Service Manager checks the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance is displayed, click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -83,7 +83,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).  
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).  
 
 ### To install the data warehouse  
 
@@ -102,7 +102,7 @@ To install System Center - Service Manager on a single computer, you install the
 7.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8.  On the **Configure additional data warehouse datamarts** page, Service Manager will check the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
 
@@ -137,7 +137,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 17. On the **Installation summary** page, click **Install**.  
 
-18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
 ## Validate the single-computer installation
@@ -214,4 +214,4 @@ You can use the following procedures to validate the single\-computer installati
 
 # Next steps
 
-- Review [Install Service Manager on two computers](deploy-installing-service-manager-on-two-computers.md) to install Service Manager on two computers. This scenario is useful for testing Service Manager in a lab environment.
+- Review [Install Service Manager on two computers](../sm/deploy/deploy-installing-service-manager-on-two-computers.md) to install Service Manager on two computers. This scenario is useful for testing Service Manager in a lab environment.

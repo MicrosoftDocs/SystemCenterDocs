@@ -625,7 +625,7 @@
 ##### [Recommended deployment topology scenarios](scsm/deploy-topo-scenarios.md)
 ### [Deploy Service Manager](scsm/deploy-sm.md)
 #### [Deployment scenarios](scsm/deploy-scenarios.md)
-##### [Install on a single computer](sm/deploy/deploy-installing-service-manager-on-a-single-computer-minimum-configuration.md)
+##### [Install on a single computer](scsm/install-one-computer.md)
 ##### [Install on two computers](sm/deploy/deploy-installing-service-manager-on-two-computers.md)
 ##### [Install on four computers](sm/deploy/deploy-installing-service-manager-on-four-computers.md)
 ##### [Manual steps to configure remote SQL Server Reporting Services](sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md)
