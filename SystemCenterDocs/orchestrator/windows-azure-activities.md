@@ -154,7 +154,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Delete Cloud Service](delete-cloud-service.md)
 
-[Delete Container](../orch/manage/delete-container.md)
+[Delete Container](delete-container.md)
 
 [Delete Deployment](../orch/manage/delete-deployment.md)
 

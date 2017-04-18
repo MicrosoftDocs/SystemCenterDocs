@@ -324,7 +324,7 @@
 #######[Create vm deployment](orchestrator/create-vm-deployment.md)
 #######[Delete blob](orchestrator/delete-blob.md)
 #######[Delete cloud service](orchestrator/delete-cloud-service.md)
-#######[Delete container](orch/manage/delete-container.md)
+#######[Delete container](orchestrator/delete-container.md)
 #######[Delete deployment](orch/manage/delete-deployment.md)
 #######[Delete management certificate](orch/manage/delete-management-certificate.md)
 #######[Delete os image](orch/manage/delete-os-image.md)
