@@ -349,7 +349,7 @@
 #######[List os images](orchestrator/list-os-images.md)
 #######[List service certificate](orchestrator/list-service-certificate.md)
 #######[List storage account](orchestrator/list-storage-account.md)
-#######[List vm disks](orch/manage/list-vm-disks.md)
+#######[List vm disks](orchestrator/list-vm-disks.md)
 #######[Put blob](orch/manage/put-blob.md)
 #######[Reboot role instance](orch/manage/reboot-role-instance.md)
 #######[Regenerate storage account key](orch/manage/regenerate-storage-account-key.md)

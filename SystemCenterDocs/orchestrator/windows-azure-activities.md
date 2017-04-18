@@ -204,7 +204,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [List Storage Account](list-storage-account.md)
 
-[List VM Disks](../orch/manage/list-vm-disks.md)
+[List VM Disks](list-vm-disks.md)
 
 [Put Blob](../orch/manage/put-blob.md)
 
