@@ -270,7 +270,7 @@
 #### [How to view orchestrator data with PowerPivot](orch/manage/how-to-view-orchestrator-data-by-using-powerpivot.md)
 #### [How to work with runbooks in the Orchestrator console](orch/manage/how-to-work-with-runbooks-in-the-orchestration-console.md)
 #### [Integration packs](orch/manage/integration-packs.md)
-##### [Active Directory](orch/manage/active-directory-integration-pack.md)
+##### [Active Directory](orchestrator/active-directory-integration-pack.md)
 ###### [Active Directory Activities](orch/manage/active-directory-activities.md)
 ####### [Add Computer To Group](orch/manage/add-computer-to-group.md)
 ####### [Add Group To Group](orch/manage/add-group-to-group.md)
