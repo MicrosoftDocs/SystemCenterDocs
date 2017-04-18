@@ -49,7 +49,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** box.
 
-2.  Select the applicable connection name. Connections that are displayed in the list have been previously configured as described in [System Center Integration Pack for Microsoft SharePoint](../../orchestrator/integration-pack-for-microsoft-sharepoint.md).
+2.  Select the applicable connection name. Connections that are displayed in the list have been previously configured as described in [System Center Integration Pack for Microsoft SharePoint](integration-pack-for-microsoft-sharepoint.md).
 
 ### Filter Behavior
 
@@ -110,32 +110,32 @@ For a list of the data elements that are published by each activity, see the **P
 
 This integration pack adds the **Microsoft SharePoint** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create List Item](../../orchestrator/create-list-item.md)
+[Create List Item](create-list-item.md)
 
-[Delete Attachment](../../orchestrator/delete-attachment.md)
+[Delete Attachment](delete-attachment.md)
 
-[Delete Document](../../orchestrator/delete-document.md)
+[Delete Document](delete-document.md)
 
-[Delete List Item](../../orchestrator/delete-list-item.md)
+[Delete List Item](delete-list-item.md)
 
-[Download Attachment](../../orchestrator/download-attachment.md)
+[Download Attachment](download-attachment.md)
 
-[Download Document](../../orchestrator/download-document.md)
+[Download Document](download-document.md)
 
-[Get Attachments](../../orchestrator/get-attachments.md)
+[Get Attachments](get-attachments.md)
 
-[Get Documents](../../orchestrator/get-documents.md)
+[Get Documents](get-documents.md)
 
-[Get List Items](../../orchestrator/get-list-items.md)
+[Get List Items](get-list-items.md)
 
-[Get View Items](../../orchestrator/get-view-items.md)
+[Get View Items](get-view-items.md)
 
-[Monitor List Items](../../orchestrator/monitor-list-items.md)
+[Monitor List Items](monitor-list-items.md)
 
-[Query List](../../orchestrator/query-list.md)
+[Query List](query-list.md)
 
-[Update List Item](update-list-item.md)
+[Update List Item](../orch/manage/update-list-item.md)
 
-[Upload Attachment](../../orchestrator/upload-attachment.md)
+[Upload Attachment](upload-attachment.md)
 
-[Upload Document](upload-document.md)
+[Upload Document](../orch/manage/upload-document.md)
