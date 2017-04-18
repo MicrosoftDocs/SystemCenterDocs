@@ -904,7 +904,7 @@
 ###### [Schedules](SMA/Manage/Schedules.md)
 ##### [Runbook Output and Messages](sma/overview-runbook-messages-output.md)
 ##### [Child Runbooks in Service Management Automation](sma/link-runbooks.md)
-##### [Building an Integration Module](SMA/Manage/Building-an-Integration-Module.md)
+##### [Building an Integration Module](sma/build-integration-modules.md)
 ## [Service Provider Foundation](SPF/service-provider-foundation.md)
 ### [Get started with SPF](spf/get-started/get-started-overview.md)
 ### [Plan SPF deployment](spf/plan/plan-spf.md)

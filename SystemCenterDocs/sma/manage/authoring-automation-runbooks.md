@@ -269,4 +269,4 @@ To test the runbook in SMA, click **Test Draft in SMA**.  A new window will be o
 
 - Read about how to call one runbook from another runbook [Child Runbooks](../Service-Management-Automation.md).
 
-- Read about how to build an integration module with activities that can be used by a runbook [Building an Integration Module](Building-an-Integration-Module.md).
+- Read about how to build an integration module with activities that can be used by a runbook [Building an Integration Module](../build-integration-modules.md).
