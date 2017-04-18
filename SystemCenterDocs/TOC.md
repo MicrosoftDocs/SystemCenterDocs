@@ -193,7 +193,7 @@
 ###### [Create a service level dashboard](scom/manage-monitor-sla-create-dashboard.md)
 ###### [Running a service level tracking report](scom/manage-monitor-sla-reports.md)
 ##### [Connecting Operations Manager with other management systems](scom/manage-integration-thirdparty-overview.md)
-###### [How to configure a product connector subscription](om/manage/how-to-configure-a-product-connector-subscription.md)
+###### [How to configure a product connector subscription](scom/manage-integration-config-integration.md)
 #### [General tasks in Operations Manager](om/manage/general-tasks-in-operations-manager.md)
 ##### [Managing alerts](om/manage/managing-alerts.md)
 ###### [How heartbeats work](om/manage/how-heartbeats-work.md)

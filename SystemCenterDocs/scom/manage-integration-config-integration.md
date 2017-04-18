@@ -42,7 +42,7 @@ System Center 2016 - Operations Manager supports the ability to synchronize aler
   
 ## Next steps
 
-Review [Connecting Operations Manager With Other Management Systems](../../scom/manage-integration-thirdparty-overview.md) to learn how to integrate Operations Manager with another monitoring platform or ITSM system using a product connector developed using the Operations Manager SDK.  
+Review [Connecting Operations Manager With Other Management Systems](manage-integration-thirdparty-overview.md) to learn how to integrate Operations Manager with another monitoring platform or ITSM system using a product connector developed using the Operations Manager SDK.  
 
   
   

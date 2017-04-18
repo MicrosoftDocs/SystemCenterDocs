@@ -87,7 +87,7 @@ The recommended strategy to raise an alert in Operations Manager if a runbook fa
   
 ## Product Connector installation  
 
-If you want to connect to a particular management system, you should ask the vendor of that management system for a product connector. Installation instructions should be included in the download of the product connector files. After a product connector is installed, you can configure which events you want the product connector to accept or forward using subscriptions. The product connectors you install are displayed in the Administration workspace in **Product Connectors**. See [How to Configure a Product Connector Subscription](../om/manage/how-to-configure-a-product-connector-subscription.md) for more information.  
+If you want to connect to a particular management system, you should ask the vendor of that management system for a product connector. Installation instructions should be included in the download of the product connector files. After a product connector is installed, you can configure which events you want the product connector to accept or forward using subscriptions. The product connectors you install are displayed in the Administration workspace in **Product Connectors**. See [How to Configure a Product Connector Subscription](manage-integration-config-integration.md) for more information.  
   
 
 ## Next steps
