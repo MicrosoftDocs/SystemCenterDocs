@@ -77,7 +77,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Set VM Networks Activity](set-vm-networks-activity.md)
 
-[Start VM Activity](../orch/manage/start-vm-activity.md)
+[Start VM Activity](start-vm-activity.md)
 
 [Stop VM Activity](../orch/manage/stop-vm-activity.md)
 

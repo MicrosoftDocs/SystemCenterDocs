@@ -596,7 +596,7 @@
 #######[Revert vm snapshot activity](orchestrator/revert-vm-snapshot-activity.md)
 #######[Set vm cd or](orchestrator/set-vm-cd-or-dvd-to-iso-image-activity.md)
 #######[Set vm networks activity](orchestrator/set-vm-networks-activity.md)
-#######[Start vm activity](orch/manage/start-vm-activity.md)
+#######[Start vm activity](orchestrator/start-vm-activity.md)
 #######[Stop vm activity](orch/manage/stop-vm-activity.md)
 #######[Suspend vm activity](orch/manage/suspend-vm-activity.md)
 #######[Take vm snapshot activity](orch/manage/take-vm-snapshot-activity.md)
