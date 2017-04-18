@@ -163,7 +163,7 @@
 ###### [Change the way Health State is represented in Visio](om/manage/change-the-way-health-state-is-represented-in-visio.md)
 ###### [Troubleshooting the Visio add-in](om/manage/troubleshooting-the-visio-add-in.md)
 #### [Managing access in Operations Manager](om/manage/managing-access-in-operations-manager.md)
-##### [Implementing user roles](om/manage/implementing-user-roles.md)
+##### [Implementing user roles](scom/manage-security-overview.md)
 ###### [Operations associated with User Profile roles](om/manage/operations-associated-with-user-role-profiles.md)
 ##### [How to create a new Action account](om/manage/how-to-create-a-new-action-account-in-operations-manager.md)
 ##### [How to control access by using the Health Service Lockdown tool](om/manage/how-to-control-access-using-the-health-service-lockdown-tool.md)

@@ -18,7 +18,7 @@ ms.topic: article
 
 ## Managing access topics
 
-- [Implementing user roles](implementing-user-roles.md)
+- [Implementing user roles](../../scom/manage-security-overview.md)
 
     To enable individuals to access monitoring data and perform actions, you assign them to user roles. This section explains how to use user roles to manage access in Operations Manager.
 

@@ -190,7 +190,7 @@ You can use **Run As Configuration** in the Administration workspace to manage R
 
 In System Center 2016 - Operations Manager, operations such as resolving alerts, running tasks, overriding monitors, viewing alerts, viewing events, and so on have been grouped into user roles, with each user role representing a particular job function. Role\-based security allows you to limit privileges that users have for various aspects of Operations Manager. In **Security** in the Administration workspace, you can add and remove users to specific user roles. You can also modify the properties of user roles that you create.  
   
-For more information, see [Implementing User Roles](implementing-user-roles.md).  
+For more information, see [Implementing User Roles](../../scom/manage-security-overview.md).  
   
 ### Settings 
  

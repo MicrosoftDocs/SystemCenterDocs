@@ -37,6 +37,6 @@ The Operations Manager Report Server unattended execution account is used to que
 
 - If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](How-to-Create-a-New-Action-Account-in-Operations-Manager.md).
 
-- Review [Implementing User Roles](implementing-user-roles.md) to understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group. 
+- Review [Implementing User Roles](../../scom/manage-security-overview.md) to understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group. 
 
   
