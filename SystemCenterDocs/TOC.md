@@ -91,7 +91,7 @@
 ##### [How to upgrade agents in a parallel deployment](scom/deploy-upgrade-agents-parallel.md)
 ##### [How to upgrade a Web console to System Center 2016 - Operations Manager](scom/deploy-upgrade-web-console.md)
 ##### [How to upgrade reporting to System Center 2016 - Operations Manager](scom/deploy-upgrade-reporting-server.md)
-##### [How to upgrade from the evaluation version of Operations Manager](om/deploy/how-to-upgrade-from-the-evaluation-version.md)
+##### [How to upgrade from the evaluation version of Operations Manager](scom/deploy-upgrade-eval.md)
 ##### [Post-upgrade tasks when upgrading to System Center 2016 - Operations Manager](scom/deploy-upgrade-post-tasks.md)
 ### [Manage](OM/Manage/Operations-Manager-Operations-Guide.md)
 #### [Quick reference to Operations Manager tasks](scom/manage-quick-reference.md)
