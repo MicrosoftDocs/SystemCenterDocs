@@ -280,7 +280,7 @@
 #######[Create User](orchestrator/create-user.md)
 #######[Delete Computer](orchestrator/delete-computer.md)
 #######[Delete Group](orchestrator/delete-group.md)
-#######[Delete User](orch/manage/delete-user.md)
+#######[Delete User](orchestrator/delete-user.md)
 #######[Disable Computer](orch/manage/disable-computer.md)
 #######[Disable User](orch/manage/disable-user.md)
 #######[Enable Computer](orch/manage/enable-computer.md)
