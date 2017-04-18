@@ -730,7 +730,7 @@
 ##### [Bundle management packs and resource files](scsm/bundle-mps.md)
 ##### [Unbundle a bundled management pack for use with the Authoring Tool](scsm/unbundle-mps.md)
 #### [Customize and author classes with Service Manager authoring](scsm/auth-classes.md)
-#### [Customize and author forms](sm/manage/author-forms-customizing-and-authoring.md)
+#### [Customize and author forms](scsm/auth-forms.md)
 ##### [Customize and author forms with the Service Manager Authoring Tool](sm/manage/author-guidelines-and-best-practices-for-authoring-forms-in-the-authoring-tool.md)
 ##### [Customize the default incident form for the Authoring Tool sample scenario](sm/manage/author-how-to-customize-the-default-incident-form-sample-scenario.md)
 ##### [Form control properties in the Authoring Tool](sm/manage/author-properties-of-form-controls.md)

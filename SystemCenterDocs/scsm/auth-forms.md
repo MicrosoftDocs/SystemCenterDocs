@@ -38,7 +38,7 @@ Before customizing forms, you should be familiar with the following form concept
  For information about hiding properties in a generic form and other ways that you can customize a generic form, see the blog post [Overview of the Forms Infrastructure and the Generic Form](http://go.microsoft.com/fwlink/p/?LinkID=208536).  
 
 ### Combination classes in forms  
- Sometimes, you need a form to display information that is derived from more than one class. To do this, you create a *combination class* and then bind a field on the form to the combination class. For more information about combination classes, see [Changes to the System Center Common Schema](../../scsm/work-mps-xml.md).  
+ Sometimes, you need a form to display information that is derived from more than one class. To do this, you create a *combination class* and then bind a field on the form to the combination class. For more information about combination classes, see [Changes to the System Center Common Schema](work-mps-xml.md).  
 
 ### Functional aspects of a form  
  A form has the following functional aspects:  
