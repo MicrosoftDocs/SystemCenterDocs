@@ -351,7 +351,7 @@
 #######[List storage account](orchestrator/list-storage-account.md)
 #######[List vm disks](orchestrator/list-vm-disks.md)
 #######[Put blob](orchestrator/put-blob.md)
-#######[Reboot role instance](orch/manage/reboot-role-instance.md)
+#######[Reboot role instance](orchestrator/reboot-role-instance.md)
 #######[Regenerate storage account key](orch/manage/regenerate-storage-account-key.md)
 #######[Reimage vm instance](orch/manage/reimage-vm-instance.md)
 #######[Remove vm endpoint](orch/manage/remove-vm-endpoint.md)

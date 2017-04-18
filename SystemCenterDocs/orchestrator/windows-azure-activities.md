@@ -208,7 +208,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Put Blob](put-blob.md)
 
-[Reboot Role Instance](../orch/manage/reboot-role-instance.md)
+[Reboot Role Instance](reboot-role-instance.md)
 
 [Regenerate Storage Account Key](../orch/manage/regenerate-storage-account-key.md)
 
