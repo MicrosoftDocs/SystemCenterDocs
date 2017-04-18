@@ -18,7 +18,7 @@ ms.technology:  virtual-machine-manager
 Read this article to learn about adding and managing infrastructure servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
 
-In addition to the infrastructure servers used by the VMM fabric ([library server](manage-library-overview.md), [PXE servers](manage-compute-bare-metal-hyper-v.md), [IPAM servers](manage-network-ipam.md)), you can add other infrastructure servers such as Active Directory, DNS, DHCP, System Center to the VMM fabric. This allows you to manage and update all of these servers in the same location.
+In addition to the infrastructure servers used by the VMM fabric ([library server](../manage-library-server.md), [PXE servers](manage-compute-bare-metal-hyper-v.md), [IPAM servers](manage-network-ipam.md)), you can add other infrastructure servers such as Active Directory, DNS, DHCP, System Center to the VMM fabric. This allows you to manage and update all of these servers in the same location.
 
 The **Infrastructure** node in the VMM console shows infrastructure servers you add, as well as the VMM management server, vCenter servers, VMM library servers, IPAM and PXE servers if you add them.
 

@@ -785,7 +785,7 @@
 #### [Deploy update rollups](vmm/update-rollups.md)
 #### [Back up and restore VMM](vmm/backup.md)
 ### [Manage](vmm/manage/manage-overview.md)
-#### [Manage the VMM library](vmm/manage/manage-library-overview.md)
+#### [Manage the VMM library](vmm/manage-library-server.md)
 ##### [Add file-based resources to the VMM library](vmm/manage/manage-library-add-files.md)
 ##### [Add profiles to the VMM library](vmm/manage/manage-library-add-profiles.md)
 ##### [Add VM templates to the VMM library](vmm/manage/manage-library-add-vm-templates.md)

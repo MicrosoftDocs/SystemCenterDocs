@@ -37,7 +37,7 @@ The VMM library is a file share that includes a catalog of resources that are us
 - Non-file-based resources such as virtual machine templates and service templates that are used to create VMs and services.
 - Offline virtual machines are stored in the library.
 
-If you have Author permissions you can create templates and profiles in the library. [Learn more](manage-library-overview.md).
+If you have Author permissions you can create templates and profiles in the library. [Learn more](../manage-library-server.md).
 
 ### Share library resources
 

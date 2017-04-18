@@ -41,4 +41,4 @@ Resource type | What can I add?
 
 ## Next steps
 
-[Learn about](manage-library-add-files.md) adding file-based resources to the library.
+[Learn about](manage/manage-library-add-files.md) adding file-based resources to the library.

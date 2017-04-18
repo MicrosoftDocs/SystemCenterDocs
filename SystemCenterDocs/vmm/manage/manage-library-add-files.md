@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-After you've [set up](manage-library-overview.md) the System Center 2016 - Virtual Machine Manager (VMM) library, use this article if you want to add file-based resources to the library, and mark objects in the library as equivalent.
+After you've [set up](../manage-library-server.md) the System Center 2016 - Virtual Machine Manager (VMM) library, use this article if you want to add file-based resources to the library, and mark objects in the library as equivalent.
 
 You can add file-based resources to the library as follows:
 
