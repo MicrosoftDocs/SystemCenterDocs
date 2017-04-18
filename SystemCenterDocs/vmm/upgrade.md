@@ -20,13 +20,13 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 with update rollup 9 or later.
-- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](../../orchestrator/install.md)
-- Make sure you're running a [supported version of SQL Server](../system-reqs.md#sql-server).
+- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](../orchestrator/install.md)
+- Make sure you're running a [supported version of SQL Server](../spf/system-reqs.md#sql-server).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
 	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 2016.
-- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](../../orchestrator/install.md)
-- Make sure you're running a [supported version of SQL Server](../system-reqs.md#sql-server).
+- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](../orchestrator/install.md)
+- Make sure you're running a [supported version of SQL Server](../spf/system-reqs.md#sql-server).
 
 
 
