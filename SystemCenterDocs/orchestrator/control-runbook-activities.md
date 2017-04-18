@@ -75,7 +75,7 @@ If the published data is numerical you can use any of the following to set the c
 
 4.  Select a property from the Published Data and click **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](../get-started/smart-links.md#BMK_Smartlinkcriteria).  
+5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](../orch/get-started/smart-links.md#bmk_smartlinkcriteria).  
 
 6.  Click **Finish**.  
 
@@ -258,4 +258,4 @@ The table below lists the functions supported for runbooks.
 
 ## Next Steps
 
-- To read a guided walk through of creating a sample runbook see [Creating and testing a sample runbook](../../orchestrator/creating-and-testing-a-sample-runbook.md).
+- To read a guided walk through of creating a sample runbook see [Creating and testing a sample runbook](../orch/manage/creating-and-testing-a-sample-runbook.md).
