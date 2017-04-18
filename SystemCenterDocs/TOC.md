@@ -768,7 +768,7 @@
 ##### [Deploy guarded hosts](vmm/guarded-deploy-host.md)
 ##### [Deploy a shielded VHDX and VM template](vmm/guarded-deploy-template.md)
 ##### [Deploy shielded virtual machines](vmm/guarded-deploy-vm.md)
-#### [Scenario: Deploy an SDN in VMM](vmm/scenario/sdn-overview.md)
+#### [Scenario: Deploy an SDN in VMM](vmm/deploy-sdn.md)
 ##### [Deploy an SDN network controller](vmm/scenario/sdn-network-controller.md)
 ##### [Deploy an SDN SLB](vmm/scenario/sdn-slb.md)
 ##### [Deploy an SDN RAS gateway](vmm/scenario/sdn-gateway.md)
