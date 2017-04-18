@@ -238,7 +238,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Update VM Instance](update-vm-instance.md)
 
-[Walk Upgrade Domain](../orch/manage/walk-upgrade-domain.md)
+[Walk Upgrade Domain](walk-upgrade-domain.md)
 
 ## See Also
 
