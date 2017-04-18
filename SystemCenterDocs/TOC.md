@@ -50,7 +50,7 @@
 #### [Manage multiple DPM servers with Central Console](dpm/use-central-console-to-manage-multiple-dpm-servers.md)
 ## [Operations Manager](scom/welcome.md)
 ### [Operations Manager key concepts](om/get-started/operations-manager-key-concepts.md)
-### [Get Started](om/get-started/getting-started-with-system-center-operations-manager.md)
+### [Get Started](scom/get-started.md)
 #### [What's New in Operations Manager](om/get-started/whats-new-in-operations-manager.md)
 #### [Walkthrough: Installing Operations Manager on a Single Server](om/get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md)
 #### [Installing Operations Manager from the Command Prompt](om/deploy/installing-operations-manager-by-using-the-command-prompt-window.md)

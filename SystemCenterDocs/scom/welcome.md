@@ -20,7 +20,7 @@ Welcome to System Center 2016 - Operations Manager.  Operations Manager provides
 
 ## Operations Manager documentation
 
--   [Getting Started with System Center 2016 - Operations Manager](../om/get-started/getting-started-with-system-center-operations-manager.md)
+-   [Getting Started with System Center 2016 - Operations Manager](get-started.md)
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
