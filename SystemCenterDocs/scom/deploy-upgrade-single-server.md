@@ -104,4 +104,4 @@ When you upgrade a single server management group to System Center 2016 - Operat
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](../om/deploy/post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).

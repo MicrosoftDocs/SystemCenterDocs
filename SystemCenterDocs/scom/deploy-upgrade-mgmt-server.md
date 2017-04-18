@@ -16,13 +16,13 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-When you upgrade a distributed management group to System Center 2016 - Operations Manager, you start by upgrading each of the management servers in your management group. There are a number of pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](../../scom/deploy-upgrade-overview.md).
+When you upgrade a distributed management group to System Center 2016 - Operations Manager, you start by upgrading each of the management servers in your management group. There are a number of pre-upgrade tasks that you must perform first. For more information, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-overview.md).
 
 > [!IMPORTANT]
 > Between the time that you upgrade the management servers and upgrade the agents, you might experience Application Platform Monitoring (APM)-related event log entries on the agent-managed servers. These event log entries might occur on agent-managed servers that are not APM-enabled. These event log entries will be resolved when you complete the upgrade of the agents. You might have to restart the health service after the agent is upgraded in order to clear the events.
 
 > [!NOTE]
-> Because the ACS Collector server must be on same machine as a management server, we recommend you perform the steps described in [How to Upgrade an ACS Collector to System Center 2016 - Operations Manager](How-to-Upgrade-an-ACS-Collector-to-System-Center-2016-Operations-Manager.md) along with the upgrade of the management server on which ACS resides.
+> Because the ACS Collector server must be on same machine as a management server, we recommend you perform the steps described in [How to Upgrade an ACS Collector to System Center 2016 - Operations Manager](../om/deploy/how-to-upgrade-an-acs-collector-to-system-center-2016-operations-manager.md) along with the upgrade of the management server on which ACS resides.
 
 > [!IMPORTANT]
 > When upgrading multiple management servers in a distributed management group, you must wait to start upgrade of additional management servers until after setup on the first management server completes. Failing to do so can cause a SQL update script that runs early in the set up process to run on multiple management servers and result in database issues.  This SQL update script only needs to run on the initial management server being upgraded.
@@ -53,7 +53,7 @@ When you upgrade a distributed management group to System Center 2016 - Operatio
 10. When the upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
 
     > [!NOTE]
-    > Upgrading a management server is just one phase of the distributed upgrade process. Upgrade is not completed until you have upgraded all of the other features in your management group. The next step is to upgrade any gateways.  See [How to Upgrade a Gateway Server to System Center 2016 - Operations Manager](How-to-Upgrade-a-Gateway-Server-to-System-Center-2016-Operations-Manager.md) for more information.
+    > Upgrading a management server is just one phase of the distributed upgrade process. Upgrade is not completed until you have upgraded all of the other features in your management group. The next step is to upgrade any gateways.  See [How to Upgrade a Gateway Server to System Center 2016 - Operations Manager](../om/deploy/how-to-upgrade-a-gateway-server-to-system-center-2016-operations-manager.md) for more information.
 
 ### To upgrade a management server from the Command Prompt
 
@@ -77,6 +77,6 @@ After you have upgraded all of the management servers in your management group, 
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  

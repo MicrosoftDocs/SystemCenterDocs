@@ -18,7 +18,7 @@ ms.topic: article
 
 Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 - Operations Manager. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../../scom/plan-system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
 
 ### To upgrade the Reporting server
 
@@ -57,7 +57,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.
 

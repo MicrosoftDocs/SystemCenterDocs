@@ -18,7 +18,7 @@ ms.topic: article
 
 This procedure upgrades a stand-alone Operations console to System Center 2016 - Operations Manager. Perform this procedure locally on the computer that has a stand-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../../scom/plan-system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
 
 ### To upgrade a stand-alone Operations console
 
@@ -64,9 +64,9 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 ## Next steps
 
-- After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 - Operations Manager](How-to-Upgrade-an-Agent-to-System-Center-2016-Operations-Manager.md) for more information.
+- After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 - Operations Manager](../om/deploy/how-to-upgrade-an-agent-to-system-center-2016-operations-manager.md) for more information.
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
 
