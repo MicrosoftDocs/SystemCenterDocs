@@ -113,7 +113,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Checkpoint](../orch/manage/create-checkpoint.md)
+[Create Checkpoint](create-checkpoint.md)
 
 [Create New Disk from VHD](../orch/manage/create-new-disk-from-vhd.md)
 
