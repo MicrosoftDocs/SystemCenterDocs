@@ -167,6 +167,6 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Update VM](../orch/manage/update-vm.md)
 
-[Update User Role Property](../orch/manage/update-user-role-property.md)
+[Update User Role Property](update-user-role-property.md)
 
 [Update User Role Quota](../orch/manage/update-user-role-quota.md)
