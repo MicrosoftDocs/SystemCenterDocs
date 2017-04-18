@@ -494,7 +494,7 @@
 ##### [Operations Manager](orchestrator/integration-pack-for-operations-manager.md)
 ###### [Operations Manager Activities](orch/manage/operations-manager-activities.md)
 #######[Create alert](orchestrator/create-alert.md)
-#######[Get alert](orch/manage/get-alert.md)
+#######[Get alert](orchestrator/get-alert.md)
 #######[Get monitor](orch/manage/get-monitor.md)
 #######[Monitor alert](orch/manage/monitor-alert.md)
 #######[Monitor state](orch/manage/monitor-state.md)
