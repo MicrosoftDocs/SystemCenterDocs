@@ -134,7 +134,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Change Deployment OS](change-deployment-os.md)
 
-[Check Cloud Service Name Availability](../orch/manage/check-cloud-service-name-availability.md)
+[Check Cloud Service Name Availability](check-cloud-service-name-availability.md)
 
 [Copy Blob](../orch/manage/copy-blob.md)
 
