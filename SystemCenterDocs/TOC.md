@@ -908,7 +908,7 @@
 ## [Service Provider Foundation](SPF/service-provider-foundation.md)
 ### [Get started with SPF](spf/get-started/get-started-overview.md)
 ### [Plan SPF deployment](spf/plan-spf.md)
-#### [System requirements](spf/plan/spf-system-reqs.md)
+#### [System requirements](spf/system-reqs.md)
 ### [Upgrade SPF](spf/deploy/deploy-upgrade-spf.md)
 ### [Deploy SPF](spf/deploy/deploy-spf.md)
 ### [Manage SPF](spf/manage/manage-spf.md)
