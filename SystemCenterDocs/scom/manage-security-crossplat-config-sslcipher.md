@@ -71,11 +71,11 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
   
 ## Next steps
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md)
+- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)
 
-- To configure Operations Manager to authenticate with your UNIX and Linux computers, please see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)  
+- To configure Operations Manager to authenticate with your UNIX and Linux computers, please see [How to Set Credentials for Accessing UNIX and Linux Computers](../../z-harvest-om/om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md)  
 
-- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
+- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](../../z-harvest-om/om/manage/how-to-configure-sudo-elevation-and-ssh-keys.md)  
 
   
   

@@ -41,5 +41,5 @@ However, the PAM authentication used by the Operations Manager agent does not re
 
 - To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](../../z-harvest-om/om/manage/how-to-configure-sudo-elevation-and-ssh-keys.md)  
 
-- Review the [Configuring SSL Ciphers](../om/manage/configuring-ssl-ciphers.md) if you need to reconfigure Operations Manager to use a different cipher.   
+- Review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
   
