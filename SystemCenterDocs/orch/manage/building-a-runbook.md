@@ -21,7 +21,7 @@ manager: cfreeman
 This topic describes the basic process for building a System Center 2016 - Orchestrator runbook.  
 
 > [!NOTE]  
-> For a list of topics that contain more details about the information covered here, see [Runbook data processing](../manage/building-a-runbook.md#BMK_Runbookdataprocessing).  
+> For a list of topics that contain more details about the information covered here, see [Runbook data processing](~/orchestrator/design-and-build-runbooks.md#BMK_Runbookdataprocessing).  
 
 |Step|Description|  
 |--------|---------------|  
@@ -77,8 +77,8 @@ This topic describes the basic process for building a System Center 2016 - Orche
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)  
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md)  
 
--   [Designing a Runbook](../../orchestrator/designing-a-runbook.md)  
+-   [Designing a Runbook](designing-a-runbook.md)  
 
--   [How to Test a Runbook](../manage/how-to-test-a-runbook.md)  
+-   [How to Test a Runbook](~/orchestrator/design-and-build-runbooks.md)  

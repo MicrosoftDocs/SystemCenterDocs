@@ -65,4 +65,4 @@ With the shielding helper VHD configured, you can proceed to [shield an existing
 
 ## Next steps
 
-[Provision shielded VMs](scenario/guarded-vms.md)
+[Provision shielded VMs](~/vmm/guarded-deploy-vm.md)

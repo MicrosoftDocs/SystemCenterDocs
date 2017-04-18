@@ -14,7 +14,7 @@ ms.assetid: 7fd5ca6b-cde4-4610-ba6d-6fbb7ca57373
 
 # Connecting Operations Manager with other management systems
 
-Microsoft System Center 2016 - Operations Manager interoperates with other management solutions through [System Center 2016 - Orchestrator](../orch/deploy/orchestrator.md) or product connectors built on the [Operations Manager Connector Framework (OMCF)](https://msdn.microsoft.com/library/hh328935.aspx), which are developed from the Operations Manager Software Development Kit (SDK).  The OMCF provides methods and types that you can use to initialize and manage a connector and to get or send operations data.  With earlier versions of Operations Manager, the primary means of synchronizing alerts between Operations Manager and other systems was through a connector.  An Operations Manager connector specifically created for the other system was required for this purpose, and a variety of connectors have been released by vendors of those management solutions.   
+Microsoft System Center 2016 - Operations Manager interoperates with other management solutions through [System Center 2016 - Orchestrator](~/orchestrator/learn-about-orchestrator.md) or product connectors built on the [Operations Manager Connector Framework (OMCF)](https://msdn.microsoft.com/library/hh328935.aspx), which are developed from the Operations Manager Software Development Kit (SDK).  The OMCF provides methods and types that you can use to initialize and manage a connector and to get or send operations data.  With earlier versions of Operations Manager, the primary means of synchronizing alerts between Operations Manager and other systems was through a connector.  An Operations Manager connector specifically created for the other system was required for this purpose, and a variety of connectors have been released by vendors of those management solutions.   
 
 Orchestrator integrates with System Center, other Microsoft products, and non-Microsoft products to enable interoperability across the data center.   
 
@@ -92,6 +92,6 @@ If you want to connect to a particular management system, you should ask the ven
 
 ## Next steps
 
-- To learn more about System Center 2016 - Orchestrator and how it can support integration between Operations Manager and other System Center or third-party management systems, see [Getting Started with Orchestrator](../orch/deploy/orchestrator.md).
+- To learn more about System Center 2016 - Orchestrator and how it can support integration between Operations Manager and other System Center or third-party management systems, see [Getting Started with Orchestrator](~/orchestrator/learn-about-orchestrator.md).
 
 - Review the [Operations Manager SDK](https://msdn.microsoft.com/library/hh329086.aspx) to understand how to write a custom product connector to integrate with an enterprise management system or automate and extend Operations Manager depending on your advanced requirements.     

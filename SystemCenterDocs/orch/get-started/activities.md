@@ -44,8 +44,8 @@ All activities, regardless of origin or type, share common behaviors. This secti
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md) 
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md) 
 
--   [Runbook Concepts](../get-started/runbook-concepts.md)  
+-   [Runbook Concepts](~/orchestrator/automate-runbooks.md)  
 
 -   [Runbooks](../get-started/runbooks.md)  

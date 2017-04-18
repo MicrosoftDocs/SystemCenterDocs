@@ -64,7 +64,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 ## Next steps
 
-- After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 - Operations Manager](../om/deploy/how-to-upgrade-an-agent-to-system-center-2016-operations-manager.md) for more information.
+- After you have upgraded all of the stand-alone operations consoles in your management group, you can upgrade the agents.  See [How to Upgrade an Agent to System Center 2016 - Operations Manager](~/scom/deploy-upgrade-agents.md) for more information.
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
 

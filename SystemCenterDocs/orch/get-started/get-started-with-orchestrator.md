@@ -26,7 +26,7 @@ Orchestrator provides a workflow management solution for the data center. Orches
 
     Describes the features available in Orchestrator.
 
--   [Orchestrator Architecture](../get-started/orchestrator-architecture.md)
+-   [Orchestrator Architecture](~/orchestrator/learn-about-orchestrator.md)
 
     Describes the architecture of a basic Orchestrator deployment.
 
@@ -38,8 +38,8 @@ Orchestrator provides a workflow management solution for the data center. Orches
 
 ## Other resources for this product
 
--   [Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)
+-   [Administering System Center 2016 - Orchestrator](~/orchestrator/design-and-build-runbooks.md)
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md))
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md))
 
 -   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)

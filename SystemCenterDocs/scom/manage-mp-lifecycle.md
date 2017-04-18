@@ -37,7 +37,7 @@ When you have a new management pack, you should import it to a *pre-production* 
   
 To accurately measure the data that a management pack gathers, you need to expose the agent to the demands of your production environment. The hardware of the management server in the pre-production environment should reflect the hardware that is in use in your production environment. Your pre-production management group should have the same management packs imported to the management server as the production management group. To test interoperability, your pre-production environment should also include the same types of server roles that are in your production environment, just on a smaller scale.  
   
-You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre-production environment, the pre-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Windows Agents](manage-deploy-config-windows-agent.md).  
+You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre-production environment, the pre-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Windows Agents](~/scom/manage-deploy-config-windows-agent.md).  
   
 ## Tune and customize  
 
@@ -106,7 +106,7 @@ At a minimum, each workflow should be evaluated according to the following crite
   
 ## Deploy  
 
-When you are satisfied with the performance and results of the management pack in the pre-production environment, you can deploy the management pack and its customizations in the production environment. The management pack in which you saved the customizations must be exported so that you can import it to other computers. For more information, see [How to Import, Export, and Remove Management Packs](../om/manage/how-to-import-remove-export-management-packs.md). The management pack that contains the overrides that you set is dependent on the original management pack and can be imported only to management groups that have the original management pack installed.  
+When you are satisfied with the performance and results of the management pack in the pre-production environment, you can deploy the management pack and its customizations in the production environment. The management pack in which you saved the customizations must be exported so that you can import it to other computers. For more information, see [How to Import, Export, and Remove Management Packs](~/scom/manage-mp-import-remove-delete.md). The management pack that contains the overrides that you set is dependent on the original management pack and can be imported only to management groups that have the original management pack installed.  
   
 ## Maintain  
 
@@ -138,7 +138,7 @@ The following are some best practices to follow when managing Operations Manager
   
 -   Maintain an archive of management pack versions to enable you to roll back changes when necessary. An efficient method for maintaining the archive is by using version control software, such as Microsoft Team Foundation Server or SharePoint Server. Another method is to use a file share on the network with individual folders for each management pack version.  
   
--   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.SQLServer.2012.Monitoring.mp would be saved to Microsoft.SQLServer.2012.Monitoring\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
+-   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.SQLServer.2012.Monitoring.mp would be saved to Microsoft.SQLServer.2012.Monitoring\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).  
   
 -   When a management pack is updated, update the corresponding \_Overrides.xml file with the new version number. You must use an XML editor to update the version number of the \_Overrides.xml file. If you make changes to an \_Overrides.xml file but do not change the version attribute, you can import the file but the settings in the file will not be applied.  
   
@@ -146,8 +146,8 @@ The following are some best practices to follow when managing Operations Manager
   
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).  
 
-- To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What is in an Operations Manager Management Pack](What-Is-in-an-Operations-Manager-Management-Pack.md).  
+- To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What is in an Operations Manager Management Pack](manage-overview-management-pack.md).  
  
-- See [How to Import, Export, and Remove an Operations Manager Management Pack](../om/manage/how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
+- See [How to Import, Export, and Remove an Operations Manager Management Pack](~/scom/manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.

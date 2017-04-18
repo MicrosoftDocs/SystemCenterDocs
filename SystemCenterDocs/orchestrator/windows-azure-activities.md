@@ -116,7 +116,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Add Management Certificate](add-management-certificate.md)
 
-[Add OS Image](../orch/manage/add-os-image.md)
+[Add OS Image](~/orchestrator/add-os-image.md)
 
 [Add Service Certificate](add-service-certificate.md)
 
@@ -224,7 +224,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Snapshot Blob](snapshot-blob.md)
 
-[Start VM Instance](../orch/manage/start-vm-instance.md)
+[Start VM Instance](~/orchestrator/start-vm-instance.md)
 
 [Swap Deployment](swap-deployment.md)
 

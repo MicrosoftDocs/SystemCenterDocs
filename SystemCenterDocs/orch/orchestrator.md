@@ -29,6 +29,6 @@ You can  read this topics to get an overview if you are new to Orchestrator.
 
 Topics in this section describe how to setup Orchestrator.
 
-[Manage Orchestrator](manage/administering-orchestrator.md)
+[Manage Orchestrator](~/orchestrator/design-and-build-runbooks.md)
 
 Topics in this section provide how to instructions for accomplishing tasks using Orchestrator.

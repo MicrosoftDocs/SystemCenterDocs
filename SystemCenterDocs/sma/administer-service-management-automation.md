@@ -36,10 +36,10 @@ Service Management Automation must be administered separately from Windows Azure
 
     Provides instructions on how to change the endpoint for SMA.
 
--   [Working with integration modules](working-with-integration-modules.md)
+-   [Working with integration modules](~/sma/manage-integration-modules.md)
 
     Provides instructions for how to import an SMA integration module.
 
--   [Automation Runbooks](Automation-Runbooks.md)
+-   [Automation Runbooks](~/sma/manage-runbooks.md)
 
     Describes the default runbooks that ship with Service Management Automation and how to add additional runbooks.

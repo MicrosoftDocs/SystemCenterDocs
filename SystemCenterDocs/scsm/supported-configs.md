@@ -38,4 +38,4 @@ The hardware and software tested are based on the following system environment a
 
 ## Next steps
 
-- Review [Considerations for Operations Manager with Service Manager](om-considerations.md) to learn about possible issues before you combine Operations Manager and Service Manager.
+- Review [Considerations for Operations Manager with Service Manager](~/scsm/om-considerations.md) to learn about possible issues before you combine Operations Manager and Service Manager.

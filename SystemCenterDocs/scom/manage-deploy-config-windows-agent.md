@@ -37,9 +37,9 @@ Do one of the following:
 
 - On the agent-managed computer, in Control Panel, double-click **Microsoft Monitoring Agent**.  In Microsoft Monitoring Agent, on the **Operations Manager** tab, click **Add**, enter the information for the new management group, and then click **OK**.  
  
-- Run the **Discovery Wizard** from the Operations Manager Operations console that is connected to the new management group, select the desired computers, and deploy the agent to them. For more information, see [Install agent on Windows using the Discovery Wizard](install-agent-on-windows-using-the-discovery-wizard.md). (The menu item in the Operations console named **Discovery Wizard** opens the **Computer and Device Management** wizard.)  
+- Run the **Discovery Wizard** from the Operations Manager Operations console that is connected to the new management group, select the desired computers, and deploy the agent to them. For more information, see [Install agent on Windows using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md). (The menu item in the Operations console named **Discovery Wizard** opens the **Computer and Device Management** wizard.)  
 
-- Run the MOMAgent.msi Windows installer package on the desired computers, and modify the installation by adding a new management group. For more information, see [Install Windows Agent Manually Using MOMAgent.msi](../../scom/manage-deploy-windows-agent-manually.md). 
+- Run the MOMAgent.msi Windows installer package on the desired computers, and modify the installation by adding a new management group. For more information, see [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md). 
 
 ## Changing the account configuration for an agent
 
@@ -70,8 +70,8 @@ You can use the following procedure to change the Active Directory integration s
 
 ## Next steps
 
-- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](../../scom/manage-deploy-windows-agent-console.md).
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md).
 
-- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](../../scom/manage-deploy-windows-agent-manually.md).
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md).
 
 - Review [Uninstall Agent from Windows-based Computers](manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your Windows computers. 

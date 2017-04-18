@@ -258,4 +258,4 @@ The table below lists the functions supported for runbooks.
 
 ## Next Steps
 
-- To read a guided walk through of creating a sample runbook see [Creating and testing a sample runbook](../orch/manage/creating-and-testing-a-sample-runbook.md).
+- To read a guided walk through of creating a sample runbook see [Creating and testing a sample runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md).

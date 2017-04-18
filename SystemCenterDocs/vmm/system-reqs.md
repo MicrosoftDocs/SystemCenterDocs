@@ -131,4 +131,4 @@ VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.
 
 ## Next steps</h2>
 
-[Plan VMM installation](../orchestrator/install.md)
+[Plan VMM installation](~/vmm/install.md)

@@ -60,9 +60,9 @@ By default, the web console session is limited to 30 minutes. You can change thi
   
 -   Open a web browser on any computer and enter **http:\/\/***servername*\/**OperationsManager**, where *servername* is the name of the computer hosting the web console.  
   
-For information on installing the Web console, see [Install the Operations Manager Web console](../deploy/how-to-install-the-operations-manager-web-console.md).  
+For information on installing the Web console, see [Install the Operations Manager Web console](~/scom/deploy-install-web-console.md).  
  
 ## Next steps
   
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](using-the-operations-console-in-operations-manager.md).  
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](welcome.md).  
   

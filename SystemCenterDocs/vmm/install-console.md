@@ -25,7 +25,7 @@ The remote console can be installed on:
 ## Before you start
 
 - Review the [system requirements](../orchestrator/system-requirements.md)
-- Make sure you've followed the [planning instructions](../orchestrator/install.md).
+- Make sure you've followed the [planning instructions](~/vmm/install.md).
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 
 

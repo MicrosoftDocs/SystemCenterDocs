@@ -123,4 +123,4 @@ The following table describes the Published Data items common to all activities.
 |Loop: Total duration|The total amount of time \(in seconds\) that the looped activity ran.|  
 
 ## See Also  
-[Building a Runbook](../manage/building-a-runbook.md)  
+[Building a Runbook](~/orchestrator/design-and-build-runbooks.md)  

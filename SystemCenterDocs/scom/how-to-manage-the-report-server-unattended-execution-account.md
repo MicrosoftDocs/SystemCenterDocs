@@ -33,10 +33,10 @@ The Operations Manager Report Server unattended execution account is used to que
   
 ## Next steps
 
-- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](How-to-Create-a-Run-As-Account-and-associate-to-a-profile.md).
+- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](~/scom/manage-security-create-runas-link-profile.md).
 
-- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](How-to-Create-a-New-Action-Account-in-Operations-Manager.md).
+- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](~/scom/manage-security-create-runas-actionaccount.md).
 
-- Review [Implementing User Roles](../../scom/manage-security-overview.md) to understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group. 
+- Review [Implementing User Roles](manage-security-overview.md) to understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group. 
 
   

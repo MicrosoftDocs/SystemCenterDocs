@@ -92,7 +92,7 @@ Hyper-V virtual machines with DPM.
 
 ## Back up virtual machines
 
-1.  Set up your [DPM server](../get-started/get-ready-to-deploy-dpm-servers.md) and [your storage](../get-started/prepare-data-storage.md). When setting up your storage, use these storage capacity guidelines.
+1.  Set up your [DPM server](~/dpm/plan-dpm-deployment.md) and [your storage](~/dpm/plan-long-and-short-term-data-storage.md). When setting up your storage, use these storage capacity guidelines.
     - Average virtual machine size - 100 GB
     - Number of virtual machines per DPM server - 800
     - Total size of 800 VMs - 80 TB

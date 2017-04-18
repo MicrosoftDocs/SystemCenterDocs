@@ -55,4 +55,4 @@ The following table provides the possible values that you can use for the log le
 |7|Full logging.|  
 
 ## See Also  
-[Orchestrator Logs](../get-started/orchestrator-logs.md)  
+[Orchestrator Logs](~/orchestrator/orchestrator-logs.md)  

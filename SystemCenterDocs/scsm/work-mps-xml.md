@@ -787,7 +787,7 @@ ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://ww
 Import-SCSMManagementPack MyServiceManager.ManagementPack.xml  
 ```  
 
- This document does not describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Using Management Packs in Service Manager](../om/manage/management-packs.md).  
+ This document does not describe how to import and use management packs in the Service Manager console. For information about using management packs in the Service Manager console, see [Using Management Packs in Service Manager](~/scsm/management-packs.md).  
 
 ### Full management pack example
  The following code examples represent the full sample management pack that is used for examples in this topic, in addition to the form definition and the C\# code\-behind for the form.  

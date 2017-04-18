@@ -50,6 +50,6 @@ The functions that you can perform in the Orchestration console is a subset of t
 
 -   [Getting Started with System Center 2016 - Orchestrator](../get-started/get-started-with-orchestrator.md)
 
--   [Administering System Center 2016 - Orchestrator](../manage/administering-orchestrator.md)
+-   [Administering System Center 2016 - Orchestrator](~/orchestrator/design-and-build-runbooks.md)
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md)

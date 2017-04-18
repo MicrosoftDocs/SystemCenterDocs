@@ -1,0 +1,400 @@
+{
+ "redirections":
+ [
+
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/accessibility-for-people-with-disabilities.md",
+     "redirect_url": "/system-center/orchestrator/learn-about-orchestrator"
+  },
+  {
+     "source_path" : "SystemCenterDocs/dpm/get-started/Get-started.md",
+     "redirect_url": "/system-center//dpm/dpm-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/DPM/Deploy/Deploy.md",
+     "redirect_url": "/system-center//dpm/dpm-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/DPM/Manage/Manage-and-monitor-DPM.md",
+     "redirect_url": "/system-center//dpm/dpm-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/deploy/trace-logs.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/orchestrator-resources.md",
+     "redirect_url": "/system-center/orchestrator/learn-about-orchestrator"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/runbook-logs.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/plan/perform-post-installation-tasks.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/get-started-with-orchestrator.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/deploy/how-to-install-orchestrator-features.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/Deploy/How-to-Install-Orchestrator-on-a-Single-Computer.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/Orch/Deploy/How-to-install-Orchestrator-from-the-command-prompt.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/how-to-work-with-runbooks-in-the-orchestration-console.md",
+     "redirect_url": "/system-center/orchestrator/console-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/how-to-start-the-orchestration-console.md",
+     "redirect_url": "/system-center/orchestrator/console-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/using-the-console.md",
+     "redirect_url": "/system-center/orchestrator/console-overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/runbook-server-properties.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/deploy/deploy-and-start-runbooks.md",
+     "redirect_url": "/system-center/orchestrator/deploy-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/deploy/deploying-runbooks.md",
+     "redirect_url": "/system-center/orchestrator/deploy-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/running-runbooks.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/runbook-tester.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/activities.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/design-and-build-runbooks.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/building-a-runbook.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/how-to-test-a-runbook.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/runbook-designer.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/data-manipulation.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/schedules.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/get-started/smart-links.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/embedded-loops.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/functions.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/counters.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/monitoring-activities.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/published-data.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/regular-expressions.md",
+     "redirect_url": "/system-center/orchestrator/control-runbook-activities"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/Orchestrator.md",
+     "redirect_url": "/system-center/orchestrator/learn-about-orchestrator"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/plan/plan-overview.md",
+     "redirect_url": "/system-center/orchestrator/system-requirements"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/administering-orchestrator.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/how-to-work-with-runbooks-in-the-orchestration-console.md",
+     "redirect_url": "/system-center/orchestrator/learn-about-orchestrator"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/manage/integration-packs.md",
+     "redirect_url": "/system-center/orchestrator/active-directory-integration-pack"
+  },
+  {
+     "source_path" : "SystemCenterDocs/orch/deploy/troubleshoot-your-orchestrator-installation.md",
+     "redirect_url": "/system-center/orchestrator/install"
+  },
+  {
+     "source_path" : "SystemCenterDocs/sma/manage/Authoring-Automation-Runbooks.md",
+     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Automation-Runbooks.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Service-Management-Automation.md",
+     "redirect_url": "/system-center/sma/overview-of-service-management-automation"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Deploy/How-to-install-the-Service-Management-Automation-web-service.md",
+     "redirect_url": "/system-center/sma/deploy"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Deploy/How-to-install-the-Service-Management-Automation-runbook-worker.md",
+     "redirect_url": "/system-center/sma/deploy"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Deploy/How-to-install-the-Service-Management-Automation-PowerShell-module.md",
+     "redirect_url": "/system-center/sma/deploy"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Deploy/Install-Service-Management-Automation-from-a-Command-Prompt-window.md",
+     "redirect_url": "/system-center/sma/deploy"
+  },
+  {
+     "source_path" : "SystemCenterDocs/sma/Deploy/Post-installation-tasks-for-Service-Management-Automation.md",
+     "redirect_url": "/system-center/sma/deploy"
+  },
+  {
+     "source_path" : "SystemCenterDocs/sma/Deploy/How-to-uninstall-Service-Management-Automation.md",
+     "redirect_url": "/system-center/sma/deploy"
+  },
+  {
+     "source_path" : "SystemCenterDocs/sma/Manage/Runbook-Types-in-Service-Management-Automation.md",
+     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Creating-or-Importing-a-Runbook.md",
+     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Runbook-Settings.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Starting-a-Runbook.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Scheduling-a-Runbook.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/sma/Manage/Tracking-a-Runbook-Job-in-Service-Management-Automation.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/designating-a-runbook-worker.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Credentials.md",
+     "redirect_url": "/system-center/sma/manage-global-assets"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Connections.md",
+     "redirect_url": "/system-center/sma/manage-global-assets"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Variables.md",
+     "redirect_url": "/system-center/sma/manage-global-assets"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Schedules.md",
+     "redirect_url": "/system-center/sma/manage-global-assets"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Runbook-Operations.md",
+     "redirect_url": "/system-center/sma/manage-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Editing-a-Runbook.md",
+     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Publishing-a-Runbook.md",
+     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SMA/Manage/Testing-a-Runbook.md",
+     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
+  },
+  {
+     "source_path" : "SystemCenterDocs/SPF/service-provider-foundation.md",
+     "redirect_url": "/system-center/spf/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/spf/manage/manage-spf.md",
+     "redirect_url": "/system-center/spf/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/VMM/vmm.md",
+     "redirect_url": "/system-center/vmm/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/vmm/plan/plan-fabric.md",
+     "redirect_url": "/system-center/vmm/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/vmm/scenario/scenario-overview.md",
+     "redirect_url": "/system-center/vmm/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/vmm/deploy/deploy-overview.md",
+     "redirect_url": "/system-center/vmm/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/vmm/manage/manage-overview.md",
+     "redirect_url": "/system-center/vmm/overview"
+  },
+  {
+     "source_path" : "SystemCenterDocs/get-started/Release-Notes.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/get-started/Features-Removed-or-Deprecated.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/get-started/upgrade-to-system-center-2016.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/System-Requirements.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/Minimum-Hardware-Recommendations.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/Operating-Systems-Compatibility.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/Client-Operating-System-Compatibility.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/SQL-Server-Version-Compatibility.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/Console-Compatibility.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/PowerShell-Version-Support.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/System-Center-Agents.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/system-requirements/Dot-Net-Version-Support.md",
+     "redirect_url": "/system-center/system-center"
+  },
+  {
+     "source_path" : "SystemCenterDocs/get-started/What-s-New-in-System-Center.md",
+     "redirect_url": "/system-center/system-center"
+  },
+{
+   "source_path" : "SystemCenterDocs/om/manage/general-tasks-in-operations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/getting-information-froperations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/getting-information-from-operations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/initial-monitoring-after-operations-manager-is-installed.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/maintaining-operations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/OM/Manage/Operations-Manager-Operations-Guide.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/managing-access-in-operations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/managing-alerts.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/OM/Manage/Managing-Discovery-and-Agents.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/operations-manager-monitoring-scenarios.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/plan/plan-security-summary.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/OM/Manage/Using-Management-Packs.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/using-reports-in-operations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+{
+   "source_path" : "SystemCenterDocs/om/manage/using-the-operations-console-in-operations-manager.md",
+   "redirect_url": "/system-center/scom/welcome"
+},
+
+ ]
+}
+

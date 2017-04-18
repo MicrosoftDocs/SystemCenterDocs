@@ -74,9 +74,9 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
 - For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
 
-- To understand how to approve agents manually installed, review [Process Manual Agent Installations](../orchestrator/install.md).
+- To understand how to approve agents manually installed, review [Process Manual Agent Installations](~/vmm/install.md).
 
-- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
+- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](~/scom/manage-apply-overrides-object-discovery.md).
 
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 

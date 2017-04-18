@@ -36,9 +36,9 @@ This section provides details about how to design, build, and test, runbooks by 
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../orch/get-started/using-runbooks.md))  
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md))  
 
--   [Runbook Concepts](../orch/get-started/runbook-concepts.md)  
+-   [Runbook Concepts](~/orchestrator/automate-runbooks.md)  
 
 -   [Deploy and Start Runbooks](../orch/deploy/deploy-and-start-runbooks.md)  
 

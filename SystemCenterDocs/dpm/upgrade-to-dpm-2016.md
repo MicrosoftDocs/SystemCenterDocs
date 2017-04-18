@@ -16,7 +16,7 @@ ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 
 >Applies To: System Center 2016
 
-You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. If you are installing DPM 2016 on Windows Server 2012 R2, you must upgrade an existing DPM installation from DPM 2012 R2 with Update Rollup 10 or greater. Before you upgrade or install DPM 2016, please read the [Installation prerequisites](get-started/get-dpm-installed.md#setup-prerequisites).
+You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. If you are installing DPM 2016 on Windows Server 2012 R2, you must upgrade an existing DPM installation from DPM 2012 R2 with Update Rollup 10 or greater. Before you upgrade or install DPM 2016, please read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
 
 
 ## Upgrade path for DPM 2016
@@ -35,7 +35,7 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 1. To install DPM, double-click Setup.exe to open the System Center 2016 Wizard.
 2. Under Install, click Data Protection Manager. This starts Setup. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](get-started/get-dpm-installed.md).
+Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](~/dpm/install-dpm.md).
 
 ## Migrating the DPM database during upgrade
 

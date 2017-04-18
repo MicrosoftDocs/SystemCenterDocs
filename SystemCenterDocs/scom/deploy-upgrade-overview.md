@@ -53,7 +53,7 @@ There are several options for upgrade:
 
 The following steps outline the process for upgrading a distributed management group:
 
-1. Accomplish [Pre-Upgrade Tasks](../om/deploy/pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
+1. Accomplish [Pre-Upgrade Tasks](~/scom/deploy-upgrade-pretasks.md)
 
 2. Upgrade the initial management server and then additional management servers (each management server must be upgraded)
 
@@ -92,6 +92,6 @@ Agents can be upgraded before the new System Center 2016 - Operations Manager ma
 
 ## Next steps
 
-- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](../om/deploy/pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](~/scom/deploy-upgrade-pretasks.md).
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).

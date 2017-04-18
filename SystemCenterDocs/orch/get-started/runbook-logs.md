@@ -161,4 +161,4 @@ The following process describes how to run this stored procedure by using the Mi
 8.  When you receive a message at the bottom of the Logging pane that the query has completed, close **SQL Server Management Studio**.  
 
 ## See Also  
-[Orchestrator Logs](../get-started/orchestrator-logs.md)  
+[Orchestrator Logs](~/orchestrator/orchestrator-logs.md)  

@@ -82,4 +82,4 @@ A sudden increase in the number of alerts is called an alert storm. An alert sto
   
 ## Next steps
 
-- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](How-Heartbeats-Work.md).  
+- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](~/scom/manage-agent-heartbeat-overview.md).  

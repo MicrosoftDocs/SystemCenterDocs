@@ -22,11 +22,11 @@ Before you use either method to manually deploy the agent, ensure the following 
 
 -   The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you are installing agent.
 
--   Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](../om/manage/process-manual-agent-installations.md).
+-   Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](~/scom/manage-deploy-windows-agent-manually.md).
 
 -   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack.  The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers.  The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard.  To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller.  The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.   
 
--   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](../om/manage/process-manual-agent-installations.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+-   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](~/scom/manage-deploy-windows-agent-manually.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 
 > [!NOTE]
@@ -165,15 +165,15 @@ msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
 
 ## Next steps
 
-- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md).
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md).
 
 - If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](manage-deploy-windows-agent-nano.md).
 
-- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](../om/manage/process-manual-agent-installations.md).
+- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](~/scom/manage-deploy-windows-agent-manually.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](manage-deploy-config-windows-agent.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](~/scom/manage-deploy-config-windows-agent.md).
 
-- Review [Uninstall Agent from Windows-based Computers](../om/manage/uninstall-agent-from-windows-based-computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
+- Review [Uninstall Agent from Windows-based Computers](~/scom/manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
 
 

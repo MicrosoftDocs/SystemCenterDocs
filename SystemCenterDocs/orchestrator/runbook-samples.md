@@ -22,7 +22,7 @@ This topic provides instructions about how to build and test sample runbooks by 
 
 ## Samples  
 
--   [Creating and Testing a Sample Runbook](../orch/manage/creating-and-testing-a-sample-runbook.md)  
+-   [Creating and Testing a Sample Runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md)  
 
     Provides step\-by\-step instructions about creating and testing a simple runbook.  
 
@@ -32,9 +32,9 @@ This topic provides instructions about how to build and test sample runbooks by 
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../orch/get-started/using-runbooks.md)  
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md)  
 
--   [Runbook Concepts](../orch/get-started/runbook-concepts.md)  
+-   [Runbook Concepts](~/orchestrator/automate-runbooks.md)  
 
 -   [Design and Build Runbooks](design-and-build-runbooks.md)  
 

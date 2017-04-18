@@ -17,7 +17,7 @@ manager: carmonm
 
 > Applies To: System Center 2016 - Orchestrator
 
-The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the Orchestration console which is described in [Overview of the Orchestration Console](../orch/get-started/console-overview.md).  
+The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the Orchestration console which is described in [Overview of the Orchestration Console](~/orchestrator/console-overview.md).  
 
 To build a runbook you drag activities onto the workspace. Activities are the building blocks of runbooks. In general, individual activities perform three actions:
 
@@ -49,7 +49,7 @@ The Runbook Designer interface is organized into the following four panes.
 |**Connections**|The folder structure where you can organize workflows in the Orchestrator system and edit permissions on folders. Also provides access to **Runbook Servers** and **Global Settings**.|  
 |**Runbook Designer workspace**|The workspace where you build Orchestrator runbooks. The runbooks in the folder selection in the **Connections** pane are listed as tabs across the top of the workspace. When you select a tab in a runbook, it is displayed in the Runbook Designer workspace.|  
 |**Activities**|Contains all the activities available \(either standard activities or activities available from integration packs\) for use in runbooks. You drag activities from the **Activities** pane into the Design workspace, and then link them together to form runbooks.|  
-|**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](../orch/get-started/orchestrator-logs.md).|  
+|**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).|  
 
 ## Sorting activities by activity name and category name  
 System Center 2016 - Orchestrator lets you sort activities alphabetically by activity name, or by category name. By default, activities are sorted by category, such as Runbook Control, Email, File Management, Monitoring, Notification, Scheduling, System, Text File Management, and Tools.  
@@ -130,5 +130,5 @@ After you build a runbook, you can test it before it is run in production. To te
 
 ## Next steps
 
-- To get step by step instructions for building and testing a sample runbook, see [Creating and testing a sample runbook](../orch/manage/creating-and-testing-a-sample-runbook.md)
+- To get step by step instructions for building and testing a sample runbook, see [Creating and testing a sample runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md)
 - To review guidance and best practices for designing runbook, see [Designing a runbook](designing-a-runbook.md).

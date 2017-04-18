@@ -136,7 +136,7 @@ If you want to be notified when a runbook runs for more than a specified length 
 
 If you want to be notified if the runbook does not run, click the **Runbook fails to run** option.  
 
-For more information about Event Notifications, see [Orchestrator Logs](../orch/get-started/orchestrator-logs.md).  
+For more information about Event Notifications, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).  
 
 ## Job Concurrency  
 The job concurrency setting lets you set the maximum number of simultaneous jobs, so that you can carry out multiple requests for the same runbook at the same time. This setting applies to the individual runbook. A runbook server can run 50 runbooks at the same time. If you select a job concurrency setting over 50, your environment requires more runbook servers or the requests to start a runbook will queue.  
@@ -168,4 +168,4 @@ To define the Returned Data for a runbook to return, use **Add**, **Edit**, and 
 
 ## See Also  
 
-[Orchestrator Logs](../orch/get-started/orchestrator-logs.md)  
+[Orchestrator Logs](~/orchestrator/orchestrator-logs.md)  

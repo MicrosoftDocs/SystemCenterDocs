@@ -90,7 +90,7 @@ Use the following procedure to add or remove a condition to a smart link.
 
 4.  Select a property from the Published Data and click **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](../get-started/smart-links.md#BMK_Smartlinkcriteria).  
+5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](control-runbook-activities.md).  
 
 6.  Click **Finish**.  
 

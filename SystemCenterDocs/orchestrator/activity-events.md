@@ -84,4 +84,4 @@ The variable bindings are listed in the following table.
 
 ## See Also  
 
-[Orchestrator Logs](../orch/get-started/orchestrator-logs.md)  
+[Orchestrator Logs](~/orchestrator/orchestrator-logs.md)  

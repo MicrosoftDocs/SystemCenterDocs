@@ -130,7 +130,7 @@ System Center 2016 - Operations Manager provides the reports described in the fo
   
 ## Next steps
 
-- Review [How to create reports in Operations Manager](manage-reports-create-reports.md) to learn how create reports for your operational needs. 
+- Review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md) to learn how create reports for your operational needs. 
 
 - [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.  
 

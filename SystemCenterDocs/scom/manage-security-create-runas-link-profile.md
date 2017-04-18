@@ -139,4 +139,4 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
 - If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](../../z-harvest-om/om/manage/how-to-create-a-new-action-account-in-operations-manager.md).
 
-- To learn about how you can use the The Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](How-to-control-access-using-the-health-service-lockdown-tool.md).  
+- To learn about how you can use the The Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](~/scom/manage-security-overview-hslockdown.md).  

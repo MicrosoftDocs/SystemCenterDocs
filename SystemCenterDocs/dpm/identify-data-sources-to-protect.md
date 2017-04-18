@@ -32,4 +32,4 @@ To protect data sources with DPM you'll need to do the following:
 
 
 ## Next steps
-[Deploy the DPM protection agent](deploy/deploy-the-dpm-protection-agent.md)
+[Deploy the DPM protection agent](~/dpm/deploy-dpm-protection-agent.md)

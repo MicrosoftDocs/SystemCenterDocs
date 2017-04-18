@@ -27,7 +27,7 @@ In System Center 2016 - Operations Manager, if a management pack's default setti
   
 4.  In the **Monitors** or **Rules** section, click the monitor or rule that you want to disable.  
   
-5.  On the Operations console toolbar, click **Overrides** and then point to **Override the Monitor** \(or **Rule**\). You can choose to override this monitor or rule for objects of a specific type or for all objects within a group. After you choose which group of object type to override, the **Override Properties** dialog box opens, enabling you to view the default settings contained in this monitor or rule. For more information about applying an override, see [Using Classes and Groups for Overrides](Using-Classes-and-Groups-for-Overrides.md).  
+5.  On the Operations console toolbar, click **Overrides** and then point to **Override the Monitor** \(or **Rule**\). You can choose to override this monitor or rule for objects of a specific type or for all objects within a group. After you choose which group of object type to override, the **Override Properties** dialog box opens, enabling you to view the default settings contained in this monitor or rule. For more information about applying an override, see [Using Classes and Groups for Overrides](~/scom/manage-mp-overview-override-targets.md).  
   
 6.  In the **Override Properties** dialog box, click to select the **Override** check box that corresponds to the **Enabled** parameter.  
   
@@ -36,15 +36,15 @@ In System Center 2016 - Operations Manager, if a management pack's default setti
   
 7.  In the **Override Setting** column, click **True** to enable the rule or monitor or **False** to disable the rule or monitor.  
   
-8.  In the **Select destination management pack** list, click the appropriate management pack in which to store the override or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](../../scom/manage-mp-create-unsealed-mp.md).  
+8.  In the **Select destination management pack** list, click the appropriate management pack in which to store the override or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
   
 9. When you complete your changes, click **OK**.  
   
 ## Next steps
 
-- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md).
+- To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](~/scom/manage-mp-overview-override-targets.md).
 
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](How-to-Override-a-Rule-or-Monitor.md) to understand how to configure the change.
+- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) to understand how to configure the change.
 
 - Review [How to Enable Recovery and Diagnostic Tasks](How-to-Enable-Recovery-and-Diagnostic-Tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
   

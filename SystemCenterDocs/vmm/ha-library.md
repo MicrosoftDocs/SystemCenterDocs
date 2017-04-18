@@ -20,7 +20,7 @@ This article describes the steps for deploying a highly available System Center 
 
 ## Before you start
 
-Read the [planning steps](plan-ha-install.md) for a highly available VMM deployment.
+Read the [planning steps](~/vmm/plan-ha-install.md) for a highly available VMM deployment.
 
 
 

@@ -51,7 +51,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
-|Remote installation|Install in the same domain and time zone as the DPM server.<br/> Installing SQL Server on a domain controller is not supported for DPM.<br/> Read about [Setting up a remote SQL Server instance](deploy/back-up-sql-server-with-dpm.md).<br/> If you're deploying DPM as an Azure virtual machine you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
+|Remote installation|Install in the same domain and time zone as the DPM server.<br/> Installing SQL Server on a domain controller is not supported for DPM.<br/> Read about [Setting up a remote SQL Server instance](~/dpm/back-up-sql-server.md).<br/> If you're deploying DPM as an Azure virtual machine you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
 
@@ -60,7 +60,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement|Details|
 |-----------|-------|
-|Hardware|See [Hardware Requirements for System Center 2016](../system-requirements/minimum-hardware-recommendations-for-system-center-technical-preview.md)|
+|Hardware|See [Hardware Requirements for System Center 2016](~/system-center.md)|
 |Software|Windows Server 2016, Datacenter and Standard editions<br/>Windows Server 2012 R2, Datacenter and Standard editions|
 |Installation prerequisites|Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Microsoft Visual C++ 2008 Redistributable<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> Setup automatically installs these if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|

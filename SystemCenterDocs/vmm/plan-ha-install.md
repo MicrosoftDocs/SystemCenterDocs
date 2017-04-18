@@ -45,7 +45,7 @@ You shouldn't install SQL Server on the VMM cluster.
 - If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on the cluster nodes. The command line utility is available in the [SQL Server 2012 feature pack](http://go.microsoft.com/fwlink/p/?LinkId=253555).
 - Each node must be joined to a domain, and computer name shouldn't exceed 15 characters.
 - Don't install on a Hyper-V host. You can install VMM on a VM.
-- Before you start you'll need to set up the VMM service account and distributed key management. [Learn more](../orchestrator/install.md)
+- Before you start you'll need to set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
 
 
 

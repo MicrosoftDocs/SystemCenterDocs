@@ -48,7 +48,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
     Describes how to view Orchestrator data by using Microsoft Excel PowerPivot.
 
--   [Orchestrator Logs](../get-started/orchestrator-logs.md)
+-   [Orchestrator Logs](~/orchestrator/orchestrator-logs.md)
 
     Describes the types of logs available in Orchestrator and how to configure them.
 
@@ -68,6 +68,6 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
 -   [Getting Started with System Center 2016 - Orchestrator](../get-started/get-started-with-orchestrator.md)
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)
+-   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md)
 
 -   [Using the Orchestration Console in System Center 2016 - Orchestrator](../get-started/using-the-console.md)

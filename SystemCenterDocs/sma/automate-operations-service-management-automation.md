@@ -36,5 +36,5 @@ The following table compares SMA to the other Microsoft automation tools, Orches
 
 ## Next steps
 
-- Learn how SMA executes runbooks [Runbook execution in Service Management Automation](runbook-execution-in-service-management-automation.md)
-- See the new capabilities added to SMA in the 2016 version [What's new in Service Management Automation](what-s-new-in-service-management-automation-2016.md)
+- Learn how SMA executes runbooks [Runbook execution in Service Management Automation](~/sma/runbook-automation.md)
+- See the new capabilities added to SMA in the 2016 version [What's new in Service Management Automation](~/sma/whats-new-in-service-management-automation.md)

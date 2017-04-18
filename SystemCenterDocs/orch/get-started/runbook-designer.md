@@ -28,7 +28,7 @@ The Runbook Designer interface is organized into the following four panes.
 |**Connections**|The folder structure where you can organize workflows in the Orchestrator system and edit permissions on folders. Also provides access to **Runbook Servers** and **Global Settings**.|  
 |**Runbook Designer workspace**|The workspace where you build Orchestrator runbooks. The runbooks in the folder selection in the **Connections** pane are listed as tabs across the top of the workspace. When you select a tab in a runbook, it is displayed in the Runbook Designer workspace.|  
 |**Activities**|Contains all the activities available \(either standard activities or activities available from integration packs\) for use in runbooks. You drag activities from the **Activities** pane into the Design workspace, and then link them together to form runbooks.|  
-|**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](../get-started/orchestrator-logs.md).|  
+|**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).|  
 
 ## Sorting Activities by Activity Name and Category Name  
 System Center 2016 - Orchestrator lets you sort activities alphabetically by activity name, or by category name. By default, activities are sorted by category, such as Runbook Control, Email, File Management, Monitoring, Notification, Scheduling, System, Text File Management, and Tools.  

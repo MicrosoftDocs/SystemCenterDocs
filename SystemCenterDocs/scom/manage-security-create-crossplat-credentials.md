@@ -27,7 +27,7 @@ These wizards define credentials to be authenticated on the UNIX or Linux comput
   
 ## Credentials for discovering UNIX and Linux computers  
 
-The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](install-agent-on-unix-and-linux-using-the-discovery-wizard.md).  
+The following procedure begins in **Computer and Device Management Wizard**, on the **Discovery Criteria** page, when you click the **Set Credentials** button. For more information, see [Install Agent on UNIX and Linux Using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md).  
   
 ### To set a user (unprivileged) account for discovery of an installed agent with a signed certificate.  
   
@@ -105,7 +105,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
   
 ## Credentials for Run As accounts  
 
-The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../../scom/manage-security-config-crossplat-runas-profile.md).  
+The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](/manage-security-config-crossplat-runas-profile.md).  
   
 ### To set a privileged credential for a monitoring account  
   
@@ -177,7 +177,7 @@ The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard
   
 ## Credentials for upgrading an agent  
 
-The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on the **Credentials** page, when you select **Provide Upgrade Credentials**. For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).  
+The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on the **Credentials** page, when you select **Provide Upgrade Credentials**. For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](~/scom/manage-upgrade-uninstall-crossplat-agent.md).  
   
 ### To set a privileged credential by using an SSH key  
   
@@ -241,7 +241,7 @@ The following procedures begin in the **UNIX\/Linux Agent Upgrade Wizard** on th
   
 ## Credentials for uninstalling an agent  
 
-The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, on the **Credentials** page, when you select **Provide Uninstall Credentials**. For more information, see, [Upgrading and Uninstalling Agents on UNIX and Linux Computers](upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).  
+The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, on the **Credentials** page, when you select **Provide Uninstall Credentials**. For more information, see, [Upgrading and Uninstalling Agents on UNIX and Linux Computers](~/scom/manage-upgrade-uninstall-crossplat-agent.md).  
   
 ### To set a privileged credential by using an SSH key  
   
@@ -303,7 +303,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
 
-- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
+- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](~/scom/manage-security-create-crossplat-sudo-sshkeys.md)  
 
-- Review the [Configuring SSL Ciphers](Configuring-SSL-Ciphers.md) if you need to reconfigure Operations Manager to use a different cipher.   
+- Review the [Configuring SSL Ciphers](~/scom/manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
   

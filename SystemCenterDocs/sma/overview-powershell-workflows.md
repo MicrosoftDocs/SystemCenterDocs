@@ -152,7 +152,7 @@ The most common use for **InlineScript** in a runbook is to run a block of code 
 
 ![Inline script diagram](./media/overview-powershell-workflows/smaauth_inlinescript.png)
 
-In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](../scom/credentials.md) or [Connection](../orchestrator/connections.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
+In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](~/sma/manage-global-assets.md) or [Connection](~/sma/manage-global-assets.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 
 ```powershell
 $con = Get-AutomationConnection -Name 'MyConnection'
@@ -193,6 +193,6 @@ Keep the following recommendations in mind if you do use an **InlineScript** in 
 For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](http://go.microsoft.com/fwlink/?LinkID=324625) and [about_InlineScript](http://go.microsoft.com/fwlink/?LinkID=324624).
 
 ## See Also
-[Runbook Execution in Service Management Automation](runbook-automation.md)
+[Runbook Execution in Service Management Automation](runbook-automation1.md)
 
 [Authoring Automation Runbooks](authoring-automation-runbooks.md)

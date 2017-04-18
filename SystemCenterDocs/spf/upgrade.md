@@ -45,7 +45,7 @@ Here's the recommended upgrade order for the above scenario
 
 6. Uninstall Service Provider Foundation System Center 2012 R2 and the Virtual Machine Manager Console.
 From Control Panel, in Programs, click Uninstall a program. Then under Name, right-click System Center 2012 R2 Service Provider Foundation, and then click **Uninstall**.
-7. Now [install SPF 2016](deploy/deploy-spf.md). Specify the name of the current SQL Server during setup.
+7. Now [install SPF 2016](~/spf/deploy-spf.md). Specify the name of the current SQL Server during setup.
 
 
 ## Next steps

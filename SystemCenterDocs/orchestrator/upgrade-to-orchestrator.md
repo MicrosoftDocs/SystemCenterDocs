@@ -26,7 +26,7 @@ You can upgrade your installation of System Center 2012 R2 - Orchestrator to Sys
 **Prepare to upgrade:**
 
 1. Ensure that there are no pending restarts on the computer.
-2. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator).
+2. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](migrate-orchestrator-between-environments.md).
 3. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2016.
 
 **Perform the upgrade:**

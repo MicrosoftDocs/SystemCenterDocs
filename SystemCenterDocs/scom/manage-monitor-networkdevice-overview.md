@@ -152,5 +152,5 @@ After discovery is complete, the management server resource pool that you specif
 
 - Review [Run As accounts for network monitoring in Operations Manager](manage-monitor-networkdevice-authentication.md) to understand how to configure the Run As accounts before configuring the Run As accounts or network device discovery rules.  
 
-- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](../om/manage/viewing-network-devices-and-data-in-operations-manager.md).  
+- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](~/scom/manage-monitor-networkdevice-viewing-data.md).  
   
