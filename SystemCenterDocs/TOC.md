@@ -665,7 +665,7 @@
 ##### [Install a new data warehouse server in the lab environment before you upgrade](scsm/install-new-dw-server.md)
 ##### [Register the data warehouse server in the lab environment before you upgrade](scsm/register-dw-in-lab.md)
 #### [Upgrade your environment to System Center 2016 - Service Manager](scsm/upgrade-environment.md)
-#### [Tasks to complete after you upgrade to System Center 2016 - Service Manager](sm/deploy/upgrade-after-upgrading-to-system-center-2016-service-manager.md)
+#### [Tasks to complete after you upgrade to System Center 2016 - Service Manager](scsm/tasks-to-complete-after-upgrade.md)
 #### [Identify and resolve System Center 2016 - Service Manager upgrade problems](sm/deploy/upgrade-failed-upgrade-in-system-center-2016-service-manager.md)
 ### [Administrative tasks in System Center 2016 - Service Manager](sm/manage/admin-administering-system-center-2016-service-manager.md)
 #### [Use management packs to add functionality](sm/manage/admin-using-management-packs-in-system-center-2016-service-manager.md)
