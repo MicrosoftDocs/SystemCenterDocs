@@ -813,7 +813,7 @@
 ##### [Manage SDN resources in the VMM fabric](vmm/network-sdn.md)
 ##### [Set up logical networks](vmm/network-logical.md)     
 ##### [Set up VM networks](vmm/network-virtual.md)
-##### [Set up IP address pools](vmm/manage/manage-network-static-address-pools.md)
+##### [Set up IP address pools](vmm/network-pool.md)
 ##### [Add a network gateway](vmm/manage/manage-network-gateway.md)
 ##### [Set up port profiles](vmm/manage/manage-network-port-profiles.md)
 ##### [Set up logical switches](vmm/manage/manage-network-logical-switches.md)

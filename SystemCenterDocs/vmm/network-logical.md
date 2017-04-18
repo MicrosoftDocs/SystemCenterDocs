@@ -83,4 +83,4 @@ If you don't want VMM to create logical and VM networks automatically you can di
 
 ## Next steps
 
-If you created network sites and associated one or more IP subnets with them (you're not using DHCP) you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. [Set up IP address pools](manage/manage-network-static-address-pools.md).
+If you created network sites and associated one or more IP subnets with them (you're not using DHCP) you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. [Set up IP address pools](network-pool.md).
