@@ -46,7 +46,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [Configure the Operations Manager Data Source in Visio](manage-visio-addin-configure-datasource.md)  
   
--   [View an Operations Manager Distributed Application Diagram in Visio](../om/manage/view-an-operations-manager-distributed-application-diagram-in-visio.md)  
+-   [View an Operations Manager Distributed Application Diagram in Visio](manage-visio-addin-view-dad-in-visio.md)  
   
 -   [Link to Operations Manager Objects in a New or Existing Visio Document](../om/manage/link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)  
   
