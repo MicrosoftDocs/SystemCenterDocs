@@ -133,7 +133,7 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Get Move Request](../orch/manage/get-move-request.md)
 
-[Get Move Request Statistics](../orch/manage/get-move-request-statistics.md)
+[Get Move Request Statistics](get-move-request-statistics.md)
 
 [Get Remote Mailbox (Hybrid)](../orch/manage/get-remote-mailbox-hybrid.md)
 
