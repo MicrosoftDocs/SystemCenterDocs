@@ -140,7 +140,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Create Affinity Group](create-affinity-group.md)
 
-[Create Cloud Service](../orch/manage/create-cloud-service.md)
+[Create Cloud Service](create-cloud-service.md)
 
 [Create Container](../orch/manage/create-container.md)
 
