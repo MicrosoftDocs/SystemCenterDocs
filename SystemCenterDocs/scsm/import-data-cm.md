@@ -42,7 +42,7 @@ You can configure the Configuration Manager connector to update the Service Mana
 ## Extended hardware inventory with Configuration Manager
 In Configuration Manager, you can extend the hardware inventory by collecting an inventory of additional Windows Management Instrumentation (WMI) classes, additional WMI class attributes, registry keys, and other customizations to accommodate your organization's requirements. For more information about extending the hardware inventory in Configuration Manager, see [How to Extend Hardware Inventory](http://go.microsoft.com/fwlink/p/?LinkID=160640).
 
-If you have extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](admin-how-to-configure-a-configuration-manager-connector-for-an-extended-sms-def.mof-file.md).
+If you have extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](../sm/manage/admin-how-to-configure-a-configuration-manager-connector-for-an-extended-sms-def.mof-file.md).
 
 ## Importing software configuration items
 You can import software configuration items with the Configuration Manager Connector by importing  the following asset intelligence reporting classes in System Center Configuration Manager. These classes should be enabled in Configuration Manager before you configure the Configuration Manager connector in Service Manager. For more information about enabling Asset  Intelligence in Configuration Manager, see [How to Enable Asset Intelligence](http://go.microsoft.com/fwlink/p/?LinkId=262404).
@@ -106,7 +106,7 @@ You can use the following procedures to create a connector to import data from C
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
-![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
+![PowerShell symbol](./media/import-data-cm/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
 
 ## Disable and enable a Configuration Manager connector
 
@@ -135,7 +135,7 @@ You can use the following procedures to disable or enable a System Center Config
 2.  In the **Connectors** pane, locate the connector for which you have changed status, and verify the value in the **Enabled** column.
 3.  If you enabled the connector, verify that the connector resumes synchronization according to the schedule. If you disabled the connector, verify that the connector no longer synchronizes according to the schedule.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![PowerShell symbol](./media/import-data-cm/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/?LinkId=203113).
 -   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).

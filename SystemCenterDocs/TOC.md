@@ -672,7 +672,7 @@
 #### [Use connectors to import data](scsm/import-data-connectors.md)
 ##### [Import data from Active Directory Domain Services](scsm/import-data-ads.md)
 ##### [Import data and alerts from Operations Manager](scsm/import-data-om.md)
-##### [Import data from Configuration Manager](sm/manage/admin-importing-data-from-system-center-configuration-manager.md)
+##### [Import data from Configuration Manager](scsm/import-data-cm.md)
 ##### [Import runbooks from Orchestrator](sm/manage/admin-importing-runbooks-from-system-center-orchestrator.md)
 ##### [Use a CSV file to import data](sm/manage/admin-using-a-csv-file-to-import-data-into-service-manager.md)
 ##### [Optionally disable ECL logging for faster connector synchronization](sm/manage/admin-optionally-disable-ecl-logging-for-faster-connector-synchronization.md)
