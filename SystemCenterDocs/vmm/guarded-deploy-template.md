@@ -61,7 +61,7 @@ Existing Windows VMs can also be converted to shielded VMs with the use of a shi
 4. In the Shielding Helper VHD section, click **Browse** and select the helper VHD from the list of files in the library shares.
 5. Click **Finish** to save the configuration.
 
-With the shielding helper VHD configured, you can proceed to [shield an existing VM](scenario/scenario/guarded-vms.md#shield-an-existing-vm).
+With the shielding helper VHD configured, you can proceed to [shield an existing VM](guarded-deploy-vm.md#shield-an-existing-vm).
 
 ## Next steps
 
