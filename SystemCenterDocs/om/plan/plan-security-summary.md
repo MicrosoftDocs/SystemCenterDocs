@@ -20,7 +20,7 @@ This section provides you with security-related information as it pertains to th
 
 ## Security planning topics
 
-- Understand the security requirements and how to prepare your environment for Operations Manager by reviewing the [Security Accounts for Operations Manager](planning-security-accounts.md) guidance.
+- Understand the security requirements and how to prepare your environment for Operations Manager by reviewing the [Security Accounts for Operations Manager](../../scom/plan-security-accounts.md) guidance.
 
 - Review how [Run As accounts and Run As profiles](planning-security-run-as-accounts-profiles.md) allow you to run workflows from management packs under different accounts on different computers securely.  
 

@@ -42,7 +42,7 @@ The System Center 2016 - Operations Manager, setup procedure automatically assig
 
 During setup, you are prompted for three accounts, the **management server action account**,  the **System Center Configuration service and System Center Data Access service** account, and the **Data Warehouse Write account**. In Operations Manager, you can use the same account for the **System Center Configuration and System Center Data Access service** services.
 
-If you install Reporting, you are prompted for one additional account, the **Data Reader account**. For further information regarding the specific privileges they need to be granted before running setup and what rights it is assigned during setup, please review the [Service, User, and Security accounts](../plan/planning-security-accounts.md) guidance.  
+If you install Reporting, you are prompted for one additional account, the **Data Reader account**. For further information regarding the specific privileges they need to be granted before running setup and what rights it is assigned during setup, please review the [Service, User, and Security accounts](plan-security-accounts.md) guidance.  
 
 > [!NOTE]
 > If you create a specific account for installation, this account must be a member of the **sysadmin** server role for Microsoft SQL Server, but also have access to the master database.
