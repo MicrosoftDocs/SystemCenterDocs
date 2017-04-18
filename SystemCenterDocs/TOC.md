@@ -437,7 +437,7 @@
 ###### [Monitor entry](orch/manage/monitor-entry.md)
 ###### [Update entry](orch/manage/update-entry.md)
 ##### [Netcool Integration Pack](orchestrator/tivoli-netcool-omnibus-integration-pack.md)
-###### [IBM Netcool Activities](orch/manage/tivoli-netcool-omnibus-activities.md)
+###### [IBM Netcool Activities](orchestrator/tivoli-netcool-omnibus-activities.md)
 ####### [Deploy the IBM Netcool Tivoli Intetration Pack](orch/manage/deploying-the-ibm-tivoli-netcool-omnibus-integration-pack.md)
 #######[Create alert activity](orch/manage/create-alert-activity.md)
 #######[Delete alert activity](orch/manage/delete-alert-activity.md)
