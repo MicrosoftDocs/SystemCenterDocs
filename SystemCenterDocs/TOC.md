@@ -345,7 +345,7 @@
 #######[List blob](orchestrator/list-blob.md)
 #######[List cloud service](orchestrator/list-cloud-service.md)
 #######[List container](orchestrator/list-container.md)
-#######[List management certificate](orch/manage/list-management-certificate.md)
+#######[List management certificate](orchestrator/list-management-certificate.md)
 #######[List os images](orch/manage/list-os-images.md)
 #######[List service certificate](orch/manage/list-service-certificate.md)
 #######[List storage account](orch/manage/list-storage-account.md)

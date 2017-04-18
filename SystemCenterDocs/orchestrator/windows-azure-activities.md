@@ -196,7 +196,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [List Container](list-container.md)
 
-[List Management Certificate](../orch/manage/list-management-certificate.md)
+[List Management Certificate](list-management-certificate.md)
 
 [List OS Images](../orch/manage/list-os-images.md)
 
