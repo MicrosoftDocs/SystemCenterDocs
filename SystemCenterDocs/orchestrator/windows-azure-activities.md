@@ -180,7 +180,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Get Operation Status](get-operation-status.md)
 
-[Get Storage Account Keys](../orch/manage/get-storage-account-keys.md)
+[Get Storage Account Keys](get-storage-account-keys.md)
 
 [Get Storage Account Properties](../orch/manage/get-storage-account-properties.md)
 
