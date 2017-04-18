@@ -151,7 +151,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Update Activity](update-activity.md)
 
-[Update Object](../orch/manage/update-object.md)
+[Update Object](update-object.md)
 
 [Upload Attachment](../orch/manage/upload-attachment.md)
 

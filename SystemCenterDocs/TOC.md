@@ -516,7 +516,7 @@
 #######[Get relationship](orchestrator/get-relationship.md)
 #######[Monitor object](orchestrator/monitor-object.md)
 #######[Update activity](orchestrator/update-activity.md)
-#######[Update object](orch/manage/update-object.md)
+#######[Update object](orchestrator/update-object.md)
 #######[Upload attachment](orch/manage/upload-attachment.md)
 ##### [Virtual Machine Manager](orch/manage/integration-pack-for-virtual-machine-manager.md)
 ###### [Virtual Machine Manager Activities](orch/manage/virtual-machine-manager-activities.md)
