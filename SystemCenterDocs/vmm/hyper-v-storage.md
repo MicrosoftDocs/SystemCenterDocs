@@ -25,9 +25,9 @@ Read this article to allocate provisioned storage to Hyper-V hosts and clusters 
 Before you can allocate provisioned storage to hosts and cluster, it should be discovered and classified in the VMM fabric:
 
 1. Discover and classify storage:
-    - [Add and classify block storage devices](manage-storage-add-device.md). Learn about [classification](manage-storage-classifications.md).
-    - [Add file storage](manage-storage-file.md#add-a-file-share-to-the-vmm-fabric)
-2. [Allocate block storage to host groups](manage-storage-host-groups.md). You can allocate an entire storage pool, or a specific logical unit (LUN).
+    - [Add and classify block storage devices](manage/manage-storage-add-device.md). Learn about [classification](manage/manage-storage-classifications.md).
+    - [Add file storage](manage/manage-storage-file.md#add-a-file-share-to-the-vmm-fabric)
+2. [Allocate block storage to host groups](manage/manage-storage-host-groups.md). You can allocate an entire storage pool, or a specific logical unit (LUN).
 3. Make sure you've completed these steps before you allocate storage to hosts:
     - **MPIO**: If you're using fiber channel or iSCSI storage, the Multipath I/O (MPIO) feature must be enabled on each host.
         - If MPIO is already enabled before you add the host, VMM will automatically enable it for supported storage arrays using Microsoft DSM. If you have vendor specific DSMs these will be used.
