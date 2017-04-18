@@ -36,8 +36,8 @@ After the initial deployment of System Center 2016 – Operations Manager, yo
 
 Operations Manager supports changes to your Operations Manager infrastructure as listed below. Be cautious when performing these operations because they can result in data loss if not performed correctly.
 
-- [Moving the Operational database](../../scom/manage-move-opsdb.md)
+- [Moving the Operational database](manage-move-opsdb.md)
 
-- [Moving the Reporting data warehouse database](../../scom/manage-move-omdwdb.md)
+- [Moving the Reporting data warehouse database](manage-move-omdwdb.md)
 
-- [How to Configure Operations Manager to Communicate with SQL Server](../../scom/manage-sqlserver-communication.md)
+- [How to Configure Operations Manager to Communicate with SQL Server](manage-sqlserver-communication.md)
