@@ -21,69 +21,69 @@ Applies To: System Center 2016 - Orchestrator
 
 This integration pack adds the VMware vSphere category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Network Adapter Activity](add-network-adapter-activity.md)
+[Add Network Adapter Activity](../orch/manage/add-network-adapter-activity.md)
 
-[Add VM Disk Activity](add-vm-disk-activity.md)
+[Add VM Disk Activity](../orch/manage/add-vm-disk-activity.md)
 
-[Clone Linux VM Activity](clone-linux-vm-activity.md)
+[Clone Linux VM Activity](../orch/manage/clone-linux-vm-activity.md)
 
-[Clone Windows VM Activity](clone-windows-vm-activity.md)
+[Clone Windows VM Activity](../orch/manage/clone-windows-vm-activity.md)
 
-[Create VM Activity](create-vm-activity.md)
+[Create VM Activity](../orch/manage/create-vm-activity.md)
 
-[Customize VM Activity](customize-vm-activity.md)
+[Customize VM Activity](../orch/manage/customize-vm-activity.md)
 
-[Delete Network Adapter Activity in System Center 2016](delete-network-adapter-activity-in-system-center-2016.md)
+[Delete Network Adapter Activity in System Center 2016](../orch/manage/delete-network-adapter-activity-in-system-center-2016.md)
 
-[Delete VM Activity](delete-vm-activity.md)
+[Delete VM Activity](../orch/manage/delete-vm-activity.md)
 
-[Delete VM Disk Activity in System Center 2016](delete-vm-disk-activity-in-system-center-2016.md)
+[Delete VM Disk Activity in System Center 2016](../orch/manage/delete-vm-disk-activity-in-system-center-2016.md)
 
-[Get Cluster Properties Activity](get-cluster-properties-activity.md)
+[Get Cluster Properties Activity](../orch/manage/get-cluster-properties-activity.md)
 
-[Get Datastore Capacity Activity](get-datastore-capacity-activity.md)
+[Get Datastore Capacity Activity](../orch/manage/get-datastore-capacity-activity.md)
 
-[Get Host Datastores Activity](get-host-datastores-activity.md)
+[Get Host Datastores Activity](../orch/manage/get-host-datastores-activity.md)
 
-[Get Host Properties Activity](get-host-properties-activity.md)
+[Get Host Properties Activity](../orch/manage/get-host-properties-activity.md)
 
-[Get Hosts Activity](get-hosts-activity.md)
+[Get Hosts Activity](../orch/manage/get-hosts-activity.md)
 
-[Get Resource Pool Properties Activity](get-resource-pool-properties-activity.md)
+[Get Resource Pool Properties Activity](../orch/manage/get-resource-pool-properties-activity.md)
 
-[Get Resource Pools Activity](get-resource-pools-activity.md)
+[Get Resource Pools Activity](../orch/manage/get-resource-pools-activity.md)
 
-[Get VM List Activity](get-vm-list-activity.md)
+[Get VM List Activity](../orch/manage/get-vm-list-activity.md)
 
-[Get VM Properties Activity](get-vm-properties-activity.md)
+[Get VM Properties Activity](../orch/manage/get-vm-properties-activity.md)
 
-[Get VM Status Activity](get-vm-status-activity.md)
+[Get VM Status Activity](../orch/manage/get-vm-status-activity.md)
 
-[Maintenance Mode Activity](maintenance-mode-activity.md)
+[Maintenance Mode Activity](../orch/manage/maintenance-mode-activity.md)
 
-[Migrate VM Activity](migrate-vm-activity.md)
+[Migrate VM Activity](../orch/manage/migrate-vm-activity.md)
 
-[Modify VM Disk Activity in System Center 2016](modify-vm-disk-activity-in-system-center-2016.md)
+[Modify VM Disk Activity in System Center 2016](../orch/manage/modify-vm-disk-activity-in-system-center-2016.md)
 
-[Move VM Activity](move-vm-activity.md)
+[Move VM Activity](../orch/manage/move-vm-activity.md)
 
-[Reconfigure VM Activity](reconfigure-vm-activity.md)
+[Reconfigure VM Activity](../orch/manage/reconfigure-vm-activity.md)
 
-[Reset VM Activity](reset-vm-activity.md)
+[Reset VM Activity](../orch/manage/reset-vm-activity.md)
 
-[Revert VM Snapshot Activity](revert-vm-snapshot-activity.md)
+[Revert VM Snapshot Activity](../orch/manage/revert-vm-snapshot-activity.md)
 
-[Set VM CD/DVD to ISO Image Activity](set-vm-cd-or-dvd-to-iso-image-activity.md)
+[Set VM CD/DVD to ISO Image Activity](../orch/manage/set-vm-cd-or-dvd-to-iso-image-activity.md)
 
-[Set VM Networks Activity](set-vm-networks-activity.md)
+[Set VM Networks Activity](../orch/manage/set-vm-networks-activity.md)
 
-[Start VM Activity](start-vm-activity.md)
+[Start VM Activity](../orch/manage/start-vm-activity.md)
 
-[Stop VM Activity](stop-vm-activity.md)
+[Stop VM Activity](../orch/manage/stop-vm-activity.md)
 
-[Suspend VM Activity](suspend-vm-activity.md)
+[Suspend VM Activity](../orch/manage/suspend-vm-activity.md)
 
-[Take VM Snapshot Activity](take-vm-snapshot-activity.md)
+[Take VM Snapshot Activity](../orch/manage/take-vm-snapshot-activity.md)
 
 ## Common Configuration Instructions for All Activities
 

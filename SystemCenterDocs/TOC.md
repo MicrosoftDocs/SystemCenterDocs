@@ -567,7 +567,7 @@
 #######[Update user role quota](orch/manage/update-user-role-quota.md)
 #######[Update vm](orch/manage/update-vm.md)
 ##### [VMWare vSphere](orchestrator/vsphere-integration-pack.md)
-###### [VMWare vShere Activities](orch/manage/vsphere-activities.md)
+###### [VMWare vShere Activities](orchestrator/vsphere-activities.md)
 #######[Add network adapter activity](orch/manage/add-network-adapter-activity.md)
 #######[Add vm disk activity](orch/manage/add-vm-disk-activity.md)
 #######[Clone linux vm activity](orch/manage/clone-linux-vm-activity.md)
