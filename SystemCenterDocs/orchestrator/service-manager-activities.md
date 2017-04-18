@@ -139,7 +139,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Create Relationship](create-relationship.md)
 
-[Delete Relationship](../orch/manage/delete-relationship.md)
+[Delete Relationship](delete-relationship.md)
 
 [Get Activity](../orch/manage/get-activity.md)
 
