@@ -206,7 +206,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [List VM Disks](list-vm-disks.md)
 
-[Put Blob](../orch/manage/put-blob.md)
+[Put Blob](put-blob.md)
 
 [Reboot Role Instance](../orch/manage/reboot-role-instance.md)
 
