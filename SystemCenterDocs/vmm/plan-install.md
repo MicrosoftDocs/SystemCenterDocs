@@ -21,12 +21,12 @@ This article helps you to plan all the elements required for a successful System
 
 Verify the following:
 
-- **VMM management server**: Verify [hardware](../../system-requirements/minimum-hardware-recommendations.md) and [operating system](../../system-requirements/operating-systems-compatibility.md) requirements.
-- **SQL Server**: Review supported [SQL Server versions](../../system-requirements/sql-server-version-compatibility.md)
-- **VMM console**: Review [operating system requirements ](../../system-requirements/client-operating-system-compatibility.md) and if you want to run the VMM console on a separate computer.
-- **VMM library**: Review the [hardware requirements](../../system-requirements/minimum-hardware-recommendations.md) for remote VMM library shares.
-- **Virtualization hosts**: Review the [supported operating systems](../../system-requirements/operating-systems-compatibility.md) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](../manage/manage-compute-add-vmware.md) for VMware servers.
-- **Other fabric servers**: Review the [supported operating systems](../../system-requirements/operating-systems-compatibility.md) for update and PXE (used for bare metal deployment) servers.
+- **VMM management server**: Verify [hardware](../system-requirements/minimum-hardware-recommendations.md) and [operating system](../system-requirements/operating-systems-compatibility.md) requirements.
+- **SQL Server**: Review supported [SQL Server versions](../system-requirements/sql-server-version-compatibility.md)
+- **VMM console**: Review [operating system requirements ](../system-requirements/client-operating-system-compatibility.md) and if you want to run the VMM console on a separate computer.
+- **VMM library**: Review the [hardware requirements](../system-requirements/minimum-hardware-recommendations.md) for remote VMM library shares.
+- **Virtualization hosts**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](manage/manage-compute-add-vmware.md) for VMware servers.
+- **Other fabric servers**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for update and PXE (used for bare metal deployment) servers.
 
 
 ## Deployment requirements
@@ -36,8 +36,8 @@ Verify the following:
 **Command line utilities for SQL Server** | [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=42295) | If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10 |  You can install from setup, or you can [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
 **Guest operating system** | Windows operating systems [supported by Hyper-V](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows)<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
-**PowerShell** | [Supported versions](../../system-requirements/powershell-version-support.md)
-**.NET** | [Supported versions](../../system-requirements/dot-net-version-support.md)
+**PowerShell** | [Supported versions](../system-requirements/powershell-version-support.md)
+**.NET** | [Supported versions](../system-requirements/dot-net-version-support.md)
 **Host agent** | VMM 2016 | Needed for hosts managed in the VMM compute Fabric
 **Monitoring** | System Center Operations Manager 2016 | You also need SQL Server Analysis Services 2014 or later
 **VMware** | vCenter 5.1, 5.5, 5.8, 6.0<br/><br/> ESX 5.5, ESX 6.0 | vCenter and ESX servers running these versions can be managed in the VMM Fabric
@@ -74,7 +74,7 @@ When you install VMM with this user account SPN will be registered.
 - If you want to manage more than 150 hosts, we recommend that you use a dedicated computer for the VMM management server and do the following:
     - Add one or more remote computers as library servers, and do not use the default library share on the VMM management server.
     - Don't run the SQL Server instance on the VMM management server.
-- For high availability, the VMM management server can be installed on a failover cluster. [Learn more](../plan/plan-ha-deployment.md).
+- For high availability, the VMM management server can be installed on a failover cluster. [Learn more](plan/plan-ha-deployment.md).
 
 ## SQL Server and database
 
@@ -148,4 +148,4 @@ To ensure that VMM retains encrypted data across moves, you can use distributed 
 
 ## Next steps
 
-- [Install VMM](../../orchestrator/install.md)
+- [Install VMM](../orchestrator/install.md)

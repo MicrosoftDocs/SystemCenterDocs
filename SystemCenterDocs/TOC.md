@@ -754,7 +754,7 @@
 #### [What's new in VMM](vmm/whats-new.md)
 ### [Plan](vmm/plan/plan-overview.md)
 #### [System requirements](vmm/system-reqs.md)
-#### [Plan VMM installation](vmm/plan/plan-install.md)
+#### [Plan VMM installation](vmm/plan-install.md)
 #### [Plan a VMM high availability deployment](vmm/plan/plan-ha-deployment.md)
 #### [Plan the VMM fabric](vmm/plan/plan-fabric.md)
 ##### [Plan the VMM compute fabric](vmm/plan/plan-compute.md)
