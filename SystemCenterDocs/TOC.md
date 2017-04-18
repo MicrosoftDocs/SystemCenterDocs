@@ -505,7 +505,7 @@
 ###### [Service manager published data](orchestrator/service-manager-published-data.md)
 ###### [Service Manager Activities](orch/manage/service-manager-activities.md)
 #######[Classes fields and filters](orchestrator/classes-fields-and-filters.md)
-#######[Create change with template](orch/manage/create-change-with-template.md)
+#######[Create change with template](orchestrator/create-change-with-template.md)
 #######[Create incident with template](orch/manage/create-incident-with-template.md)
 #######[Create object](orch/manage/create-object.md)
 #######[Create related object](orch/manage/create-related-object.md)

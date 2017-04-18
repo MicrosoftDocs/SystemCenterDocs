@@ -129,7 +129,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Change with Template](../orch/manage/create-change-with-template.md)
+[Create Change with Template](create-change-with-template.md)
 
 [Create Incident with Template](../orch/manage/create-incident-with-template.md)
 
