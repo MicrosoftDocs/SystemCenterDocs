@@ -92,7 +92,7 @@ In the System Center 2016 – Operations Manager release, we have included suppo
 
 -  Manage updating the Nano-compatible agent directly from the console as you do today with the Windows agent, or manually on Nano Server using a PowerShell script included in this release
 
-For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../om/manage/install-agent-on-nano-server.md).
+For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](manage-deploy-windows-agent-nano.md).
 
 
 ## Scalability improvement with Unix/Linux agent monitoring

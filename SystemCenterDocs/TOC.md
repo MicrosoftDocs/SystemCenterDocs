@@ -100,7 +100,7 @@
 ###### [Discover and install agent on Windows](scom/manage-deploy-windows-agent-console.md)
 ###### [Discover and install agent on UNIX and Linux](scom/manage-deploy-crossplat-agent-console.md)
 ###### [Install Windows agent manually with MOMAgent.msi](scom/manage-deploy-windows-agent-manually.md)
-###### [Install agent on Nano Server](OM/Manage/install-agent-on-nano-server.md)
+###### [Install agent on Nano Server](scom/manage-deploy-windows-agent-nano.md)
 ###### [Configuring Windows agents](om/manage/configuring-windows-agents.md)
 ###### [Install agent and certificate on UNIX and Linux from command line](OM/Manage/Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
 ###### [Manage certificates for UNIX and Linux computers](OM/Manage/Managing-Certificates-for-UNIX-and-Linux-Computers.md)

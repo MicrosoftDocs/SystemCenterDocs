@@ -127,4 +127,4 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 - Review [Uninstall Agent from Windows-based Computers](../om/manage/uninstall-agent-from-windows-based-computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
-- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](../om/manage/install-agent-on-nano-server.md)
+- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](manage-deploy-windows-agent-nano.md)

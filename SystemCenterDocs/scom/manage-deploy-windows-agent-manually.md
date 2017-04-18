@@ -167,7 +167,7 @@ msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
 
 - To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md).
 
-- If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](../om/manage/install-agent-on-nano-server.md).
+- If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](manage-deploy-windows-agent-nano.md).
 
 - After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](../om/manage/process-manual-agent-installations.md).
 

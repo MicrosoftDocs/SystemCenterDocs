@@ -39,7 +39,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
      This section provides the information you need for manually installing the Windows agent and approve them to be monitored by Operations Manager using the MOMAgent.msi Windows Installer package.
 
--   [Install agent on Nano Server](install-agent-on-nano-server.md)
+-   [Install agent on Nano Server](../../scom/manage-deploy-windows-agent-nano.md)
 
     This section provides the information you need for installing the Nano Server agent to be monitored by Operations Manager.
 
