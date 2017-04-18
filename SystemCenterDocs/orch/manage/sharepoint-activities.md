@@ -116,7 +116,7 @@ This integration pack adds the **Microsoft SharePoint** category to the **Activi
 
 [Delete Document](../../orchestrator/delete-document.md)
 
-[Delete List Item](delete-list-item.md)
+[Delete List Item](../../orchestrator/delete-list-item.md)
 
 [Download Attachment](download-attachment.md)
 
