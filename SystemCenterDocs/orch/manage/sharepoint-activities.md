@@ -130,7 +130,7 @@ This integration pack adds the **Microsoft SharePoint** category to the **Activi
 
 [Get View Items](../../orchestrator/get-view-items.md)
 
-[Monitor List Items](monitor-list-items.md)
+[Monitor List Items](../../orchestrator/monitor-list-items.md)
 
 [Query List](query-list.md)
 

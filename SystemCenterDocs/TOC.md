@@ -459,7 +459,7 @@
 ###### [Get Documents](orchestrator/get-documents.md)
 ###### [Get List Items](orchestrator/get-list-items.md)
 ###### [Get View Items](orchestrator/get-view-items.md)
-###### [Monitor List Items](orch/manage/monitor-list-items.md)
+###### [Monitor List Items](orchestrator/monitor-list-items.md)
 ###### [Query List](orch/manage/query-list.md)
 ###### [Update List Item](orch/manage/update-list-item.md)
 ###### [Upload Attachment](orch/manage/upload-attachment-sharepoint.md)
