@@ -148,4 +148,4 @@ To ensure that VMM retains encrypted data across moves, you can use distributed 
 
 ## Next steps
 
-- [Install VMM](../deploy/deploy-install.md)
+- [Install VMM](../../orchestrator/install.md)

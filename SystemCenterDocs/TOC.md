@@ -104,7 +104,7 @@
 ###### [Configuring Windows agents](scom/manage-deploy-config-windows-agent.md)
 ###### [Install agent and certificate on UNIX and Linux from command line](scom/manage-install-crossplat-agent-cmdline.md)
 ###### [Manage certificates for UNIX and Linux computers](scom/manage-crossplat-certificates.md)
-###### [Process manual agent installations](scom/manage-process-manual-agent-install.md)
+###### [Process manual agent installations](orchestrator/install.md)
 ###### [Applying overrides to object discoveries](scom/manage-apply-overrides-object-discovery.md)
 ###### [Upgrading and uninstalling agent on UNIX and Linux computer](scom/manage-upgrade-uninstall-crossplat-agent.md)
 ###### [Manually uninstalling Agents from UNIX and Linux computers](scom/manage-uninstall-crossplat-agent.md)
