@@ -732,7 +732,7 @@
 #### [Customize and author classes with Service Manager authoring](scsm/auth-classes.md)
 #### [Customize and author forms](scsm/auth-forms.md)
 ##### [Customize and author forms with the Service Manager Authoring Tool](scsm/auth-forms-auth-tool.md)
-##### [Customize the default incident form for the Authoring Tool sample scenario](sm/manage/author-how-to-customize-the-default-incident-form-sample-scenario.md)
+##### [Customize the default incident form for the Authoring Tool sample scenario](scsm/customize-default-incident-form.md)
 ##### [Form control properties in the Authoring Tool](sm/manage/author-properties-of-form-controls.md)
 #### [Customize and Author workflows](sm/manage/author-workflows-customizing-and-authoring.md)
 ##### [Automate IT processes with workflows](sm/manage/author-automating-it-processes-with-workflows.md)
