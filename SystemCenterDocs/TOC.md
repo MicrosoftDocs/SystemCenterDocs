@@ -539,7 +539,7 @@
 #######[Get service](orchestrator/get-service-in-system-center-2016.md)
 #######[Get service template](orchestrator/get-service-template-in-system-center-2016.md)
 #######[Get tier](orchestrator/get-tier-in-system-center-2016.md)
-#######[Get user role quota](orch/manage/get-user-role-quota-in-system-center-2016.md)
+#######[Get user role quota](orchestrator/get-user-role-quota-in-system-center-2016.md)
 #######[Get user role](orch/manage/get-user-role.md)
 #######[Get vm host](orch/manage/get-vm-host-in-system-center-2016.md)
 #######[Get vm network](orch/manage/get-vm-network-in-system-center-2016.md)
