@@ -40,7 +40,7 @@ You must run the **UNIX/Linux Agent Upgrade Wizard** to upgrade agents from earl
 
     -   Click **Show Computers** (in the alert text) for a list of the computers that do not have the required credentials specified in Run As Accounts. Then click **Previous** to unselect them and try again.
 
-    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
 
 6.  Click **Upgrade**.
 
@@ -66,7 +66,7 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
     -   Click **Show Computers** (in the alert text) for a list of the computers does not have the required credentials specified in Run As Accounts. Then click **Previous** to unselect them and try again.
 
-    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
 
 6.  Click **Uninstall**.
 

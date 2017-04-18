@@ -49,7 +49,7 @@ Before you run the wizard, gather the following information:
            > [!IMPORTANT]
            > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
-        c.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+        c.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
 
         Alternatively, to use default credentials, check the box **Use Run As Credentials**. If this option is selected, a default Run As account must be defined in the **UNIX/Linux Action Account** and **UNIX/Linux Agent Maintenance Account** Run As profiles. The default account is one that is associated with **All Managed Objects**.
 
