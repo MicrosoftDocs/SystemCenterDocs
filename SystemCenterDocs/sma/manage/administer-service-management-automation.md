@@ -32,7 +32,7 @@ Service Management Automation must be administered separately from Windows Azure
 
     Provides an overview of how to establish trust relationships between other Windows Azure Pack components and Service Management Automation.
 
--   [Set or change the Service Management Automation endpoint](Set-or-change-the-Service-Management-Automation-endpoint.md)
+-   [Set or change the Service Management Automation endpoint](../set-change-endpoint.md)
 
     Provides instructions on how to change the endpoint for SMA.
 

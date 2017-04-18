@@ -25,7 +25,7 @@ The Service Management Automation endpoint requires the following information:
 
 -   The access password for the user account.
 
-For more detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md).
+For more detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](manage/authoring-automation-runbooks.md).
 
 
 

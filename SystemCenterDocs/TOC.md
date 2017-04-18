@@ -879,7 +879,7 @@
 #### [Scaling Service Management Automation up or down](SMA/Manage/Scaling-Service-Management-Automation-up-or-down.md)
 #### [How to purge the Service Management Automation database](SMA/Manage/How-to-purge-the-Service-Management-Automation-database.md)
 #### [Establishing trust between Service Management Automation and Service Provider Foundation](sma/Manage/Establish-trust-between-service-management-automation-and-service-provider-foundation.md)
-#### [Set or change the Service Management Automation endpoint](SMA/Manage/Set-or-change-the-Service-Management-Automation-endpoint.md)
+#### [Set or change the Service Management Automation endpoint](sma/set-change-endpoint.md)
 #### [Working with Integration Modules](SMA/Manage/Working-with-Integration-Modules.md)
 ### [Automation Runbooks](SMA/Manage/Automation-Runbooks.md)
 #### [Service Management Automation system runbooks](sma/manage-runbooks.md)
