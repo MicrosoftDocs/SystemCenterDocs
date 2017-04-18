@@ -210,7 +210,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Reboot Role Instance](reboot-role-instance.md)
 
-[Regenerate Storage Account Key](../orch/manage/regenerate-storage-account-key.md)
+[Regenerate Storage Account Key](regenerate-storage-account-key.md)
 
 [Reimage VM Instance](../orch/manage/reimage-vm-instance.md)
 
