@@ -569,7 +569,7 @@
 ##### [VMWare vSphere](orchestrator/vsphere-integration-pack.md)
 ###### [VMWare vShere Activities](orchestrator/vsphere-activities.md)
 #######[Add network adapter activity](orchestrator/add-network-adapter-activity.md)
-#######[Add vm disk activity](orch/manage/add-vm-disk-activity.md)
+#######[Add vm disk activity](orchestrator/add-vm-disk-activity.md)
 #######[Clone linux vm activity](orch/manage/clone-linux-vm-activity.md)
 #######[Clone windows vm activity](orch/manage/clone-windows-vm-activity.md)
 #######[Create vm activity](orch/manage/create-vm-activity.md)
