@@ -132,7 +132,7 @@
 ###### [How to create reports](scom/manage-reports-create-reports.md)
 ###### [How to run, save, and export reports](scom/manage-reports-run-save-export.md)
 ###### [How to configure and modify report schedules](scom/manage-reports-config-modify-schedules.md)
-##### [Not monitored and gray agents](om/manage/not-monitored-and-gray-agents.md)
+##### [Not monitored and gray agents](scom/manage-agents-not-healthy.md)
 ##### [How to view all rules and monitors running on agent-managed computer](om/manage/how-to-view-all-rules-and-monitors-running-on-an-agent-managed-computer.md)
 ##### [Finding data and objects in the consoles](scom/manage-console-finding-data.md)
 ###### [Using advanced search](om/manage/using-advanced-search.md)
