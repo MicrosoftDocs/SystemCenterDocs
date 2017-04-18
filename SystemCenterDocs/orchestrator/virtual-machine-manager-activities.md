@@ -147,7 +147,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Remove VM](remove-vm.md)
 
-[Repair VM](../orch/manage/repair-vm.md)
+[Repair VM](repair-vm.md)
 
 [Resume VM](../orch/manage/resume-vm.md)
 
