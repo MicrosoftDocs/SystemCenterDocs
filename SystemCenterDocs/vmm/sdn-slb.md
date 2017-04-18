@@ -326,4 +326,4 @@ Once you create the inbound NAT rules, outbound NAT rules are automatically crea
 Use [these steps](scenario/sdn-remove-an-sdn.md#remove-the-software-load-balancer) to remove the SLB from the SDN fabric.
 
 ## Next steps
-[Create a RAS gateway](scenario/sdn-gateway.md)
+[Create a RAS gateway](sdn-gateway.md)

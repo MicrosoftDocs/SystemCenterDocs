@@ -90,7 +90,7 @@ Both the templates have a default count of three virtual machines which can be c
 
 4. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn more](../sdn-controller.md#customize-the-template).
+    **Note**: You can customize the service template. [Learn more](sdn-controller.md#customize-the-template).
 
 ## Deploy the gateway service
 
@@ -181,13 +181,13 @@ A site-to-site IPSec connection allows you to securely access remote virtual mac
 5. Type a subnet as shown in the following diagram.
 This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
-    ![IPsec](../media/sdn-gateway2.png)
+    ![IPsec](./media/sdn-gateway/sdn-gateway2.png)
 6. Type a connection **Name**, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
 7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a user name, and the IPSec key as the password for the account.
 8. In **Routes**, type all the remote subnets that you want to connect to.
 9. If you selected **Enable Border Gateway Protocol (BGP)**, then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
 
-    ![IPsec](../media/sdn-gateway3.png)
+    ![IPsec](./media/sdn-gateway/sdn-gateway3.png)
 10. On the **Advanced** tab, accept the default settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM Network.
 
@@ -203,7 +203,7 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 4. Select **VPN Connections** > **Add** > **Add GRE Tunnel**.
 5. Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be preconfigured in your datacenter.
 
-  ![GRE](../media/sdn-gateway1.png)
+  ![GRE](./media/sdn-gateway/sdn-gateway1.png)
 6. Type a connection **Name**, and specify the IP address of the remote endpoint.
 7. Type the GRE key.
 8. Optionally, you can complete the other fields on this screen but these values aren't needed to set up a connection.
@@ -393,4 +393,4 @@ Here is the procedure to setup the traffic selector by using the VMM PowerShell.
 
 ## Remove the gateway from the SDN fabric
 
-Use [these steps](sdn-remove-an-sdn.md#remove-the-gateway) to remove the gateway from the SDN fabric.
+Use [these steps](scenario/sdn-remove-an-sdn.md#remove-the-gateway) to remove the gateway from the SDN fabric.
