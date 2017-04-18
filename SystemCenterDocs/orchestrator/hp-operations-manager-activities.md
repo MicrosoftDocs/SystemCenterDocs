@@ -137,6 +137,6 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Set Custom Attribute](set-custom-attribute.md)
 
-[Update Annotation](../orch/manage/update-annotation.md)
+[Update Annotation](update-annotation.md)
 
 [Update Message](../orch/manage/update-message.md)

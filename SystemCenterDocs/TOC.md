@@ -427,7 +427,7 @@
 #######[Monitor message](orchestrator/monitor-message.md)
 #######[Own or disown message](orchestrator/own-or-disown-message.md)
 #######[Set custom attribute](orchestrator/set-custom-attribute.md)
-#######[Update annotation](orch/manage/update-annotation.md)
+#######[Update annotation](orchestrator/update-annotation.md)
 #######[Update message](orch/manage/update-message.md)
 #### [Hewlett Packard Service Manager Integration Pack](orch/manage/hp-service-manager-integration-pack.md)
 ##### [HP Service Manager Activities](orch/manage/hp-service-manager-activities.md)

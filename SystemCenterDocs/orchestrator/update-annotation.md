@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Update Annotation activity is used in a runbook to update an annotation to an existing message.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](../../orchestrator/hp-operations-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
 
 ## Update Annotation Required Properties
 
@@ -49,26 +49,26 @@ The following tables list the required properties and published data for this ac
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](../../orchestrator/acknowledge-message.md)
+[Acknowledge Message](acknowledge-message.md)
 
-[Add Annotation to Message](../../orchestrator/add-annotation-to-message.md)
+[Add Annotation to Message](add-annotation-to-message.md)
 
-[Create Message](../../orchestrator/create-message.md)
+[Create Message](create-message.md)
 
-[Delete Annotation](../../orchestrator/delete-annotation.md)
+[Delete Annotation](delete-annotation.md)
 
-[Delete Custom Attribute](../../orchestrator/delete-custom-attribute.md)
+[Delete Custom Attribute](delete-custom-attribute.md)
 
-[Get Annotation](../../orchestrator/get-annotation.md)
+[Get Annotation](get-annotation.md)
 
-[Get Message](../../orchestrator/get-message.md)
+[Get Message](get-message.md)
 
-[Launch Tool](../../orchestrator/launch-tool.md)
+[Launch Tool](launch-tool.md)
 
-[Monitor Message](../../orchestrator/monitor-message.md)
+[Monitor Message](monitor-message.md)
 
-[Own/Disown Message](../../orchestrator/own-or-disown-message.md)
+[Own/Disown Message](own-or-disown-message.md)
 
-[Set Custom Attribute](../../orchestrator/set-custom-attribute.md)
+[Set Custom Attribute](set-custom-attribute.md)
 
-[Update Message](update-message.md)
+[Update Message](../orch/manage/update-message.md)

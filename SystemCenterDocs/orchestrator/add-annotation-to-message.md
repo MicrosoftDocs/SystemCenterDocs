@@ -68,6 +68,6 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Set Custom Attribute](set-custom-attribute.md)
 
-[Update Annotation](../orch/manage/update-annotation.md)
+[Update Annotation](update-annotation.md)
 
 [Update Message](../orch/manage/update-message.md)

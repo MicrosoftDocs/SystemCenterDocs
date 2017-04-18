@@ -94,4 +94,4 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Set Custom Attribute](../../orchestrator/set-custom-attribute.md)
 
-[Update Annotation](update-annotation.md)
+[Update Annotation](../../orchestrator/update-annotation.md)

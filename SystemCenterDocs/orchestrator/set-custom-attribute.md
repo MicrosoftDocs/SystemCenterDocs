@@ -66,6 +66,6 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Own/Disown Message](own-or-disown-message.md)
 
-[Update Annotation](../orch/manage/update-annotation.md)
+[Update Annotation](update-annotation.md)
 
 [Update Message](../orch/manage/update-message.md)
