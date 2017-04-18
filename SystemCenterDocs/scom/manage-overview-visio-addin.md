@@ -54,7 +54,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [Publish a Visio diagram to SharePoint Server](manage-visio-addin-publish-sharepoint.md)  
   
--   [Change the Way Health State is Represented in Visio](../om/manage/change-the-way-health-state-is-represented-in-visio.md)  
+-   [Change the Way Health State is Represented in Visio](manage-visio-addin-change-healthstate-datagraphic.md)  
   
 -   [Troubleshooting the Visio Add-in](../om/manage/troubleshooting-the-visio-add-in.md)  
   
