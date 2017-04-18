@@ -82,7 +82,7 @@
 ##### [How to install a gateway server](scom/deploy-install-gateway-server.md)
 #### [Upgrading to System Center 2016 - Operations Manager](scom/deploy-upgrade-overview.md)
 ##### [Pre-Upgrade tasks when upgrading to System Center 2016 - Operations Manager](scom/deploy-upgrade-pretasks.md)
-##### [How to upgrade a single-server management group to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-a-Single-Server-Management-Group-to-System-Center-2016-Operations-Manager.md)
+##### [How to upgrade a single-server management group to System Center 2016 - Operations Manager](scom/deploy-upgrade-single-server.md)
 ##### [How to upgrade a management server to System Center 2016 - Operations Manager - Upgrading a distributed management group](OM/Deploy/How-to-Upgrade-a-Management-Server-to-System-Center-2016-Operations-Manager-Upgrading-a-Distributed-Management-Group.md)
 ##### [How to upgrade an ACS Collector to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-an-ACS-Collector-to-System-Center-2016-Operations-Manager.md)
 ##### [How to upgrade a gateway server to System Center 2016 - Operations Manager](om/Deploy/How-to-Upgrade-a-Gateway-Server-to-System-Center-2016-Operations-Manager.md)
