@@ -49,7 +49,7 @@ With the release of System Center 2016 - Operations Manager, Operators can acces
 
 ## Management Pack Updates and Recommendations
 
-We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](../manage/Management-Pack-Assessment.md).
+We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](../om/manage/management-pack-assessment.md).
 
 
 ## Alert data management
@@ -92,7 +92,7 @@ In the System Center 2016 – Operations Manager release, we have included suppo
 
 -  Manage updating the Nano-compatible agent directly from the console as you do today with the Windows agent, or manually on Nano Server using a PowerShell script included in this release
 
-For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../manage/install-agent-on-nano-server.md).
+For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../om/manage/install-agent-on-nano-server.md).
 
 
 ## Scalability improvement with Unix/Linux agent monitoring

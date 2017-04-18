@@ -23,7 +23,7 @@ The content in this section describes what's new and changed in System Center 20
 ## What's new topics
 [What's new in DPM](../dpm/get-started/what-s-new-in-dpm-in-system-center-2016.md)
 
-[What's new in Operations Manager](../om/get-started/whats-new-in-operations-manager.md)
+[What's new in Operations Manager](../scom/what-is-new.md)
 
 [What's new in Service Manager](../sm/get-started/what-s-new-in-service-manager.md)
 
