@@ -401,7 +401,7 @@
 ####### [Update Item](orch/manage/update-item.md)
 #### [FTP Integration Pack](orch/manage/ftp-integration-pack.md)
 ##### [FTP Activities](orch/manage/integration-pack-activities.md)
-###### [Create Folder](orch/manage/create-folder.md)
+###### [Create Folder](orchestrator/create-folder.md)
 ###### [Delete File](orch/manage/delete-file.md)
 ###### [Delete Folder](orch/manage/delete-folder.md)
 ###### [Download File](orch/manage/download-file.md)

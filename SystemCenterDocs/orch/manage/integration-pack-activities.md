@@ -102,7 +102,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **FTP** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Folder](create-folder.md)
+[Create Folder](../../orchestrator/create-folder.md)
 
 [Delete File](delete-file.md)
 
