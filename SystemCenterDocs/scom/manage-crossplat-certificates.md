@@ -32,17 +32,17 @@ When you manually deploy an agent, you perform the first two steps that are typi
 
 If there are existing certificates on the system, they are reused during agent installation. New certificates are not created. Certificates are not automatically deleted when you uninstall an agent. You must manually delete the certificates that are listed in the /etc/opt/microsoft/scx/ssl folder. To regenerate the certificates during instalation, you must remove this folder before agent installation.
 
-For instructions on how to manually deploy an agent, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../../scom/manage-install-crossplat-agent-cmdline.md), and then use the following procedure to install the certificates.
+For instructions on how to manually deploy an agent, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md), and then use the following procedure to install the certificates.
 
 ## UNIX and Linux firewall considerations
 
-If you have a firewall on your UNIX or Linux computer, you must open port 1270 (inbound). This port number is not configurable. If you are deploying agents in a low security environment and you use the Discovery Wizard to deploy and sign the certificates, you must open the SSH port. The SSH port number is configurable. By default, SSH uses inbound TCP port 22.  For more information about firewall configuration for Operations Manager, see [Configuring a Firewall for Operations Manager](../../scom/plan-security-config-firewall.md)
+If you have a firewall on your UNIX or Linux computer, you must open port 1270 (inbound). This port number is not configurable. If you are deploying agents in a low security environment and you use the Discovery Wizard to deploy and sign the certificates, you must open the SSH port. The SSH port number is configurable. By default, SSH uses inbound TCP port 22.  For more information about firewall configuration for Operations Manager, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md)
 
 ## Next steps
 
-- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../../scom/manage-install-crossplat-agent-cmdline.md).
+- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
 
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../om/manage/upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).
 
-- Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 

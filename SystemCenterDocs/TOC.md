@@ -103,7 +103,7 @@
 ###### [Install agent on Nano Server](scom/manage-deploy-windows-agent-nano.md)
 ###### [Configuring Windows agents](scom/manage-deploy-config-windows-agent.md)
 ###### [Install agent and certificate on UNIX and Linux from command line](scom/manage-install-crossplat-agent-cmdline.md)
-###### [Manage certificates for UNIX and Linux computers](OM/Manage/Managing-Certificates-for-UNIX-and-Linux-Computers.md)
+###### [Manage certificates for UNIX and Linux computers](scom/manage-crossplat-certificates.md)
 ###### [Process manual agent installations](OM/Manage/Process-Manual-Agent-Installations.md)
 ###### [Applying overrides to object discoveries](OM/Manage/applying-overrides-to-object-discoveries.md)
 ###### [Upgrading and uninstalling agent on UNIX and Linux computer](OM/Manage/Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
