@@ -319,7 +319,7 @@
 #######[Create affinity group](orchestrator/create-affinity-group.md)
 #######[Create cloud service](orchestrator/create-cloud-service.md)
 #######[Create container](orchestrator/create-container.md)
-#######[Create deployment](orch/manage/create-deployment.md)
+#######[Create deployment](orchestrator/create-deployment.md)
 #######[Create storage account](orch/manage/create-storage-account.md)
 #######[Create vm deployment](orch/manage/create-vm-deployment.md)
 #######[Delete blob](orch/manage/delete-blob.md)

@@ -144,7 +144,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Create Container](create-container.md)
 
-[Create Deployment](../orch/manage/create-deployment.md)
+[Create Deployment](create-deployment.md)
 
 [Create Storage Account](../orch/manage/create-storage-account.md)
 
