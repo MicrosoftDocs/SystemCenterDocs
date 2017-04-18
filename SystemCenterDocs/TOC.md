@@ -364,7 +364,7 @@
 #######[Update deployment status](orchestrator/update-deployment-status.md)
 #######[Update os image](orchestrator/update-os-image.md)
 #######[Update storage account](orchestrator/update-storage-account.md)
-#######[Update vm instance](orch/manage/update-vm-instance.md)
+#######[Update vm instance](orchestrator/update-vm-instance.md)
 #######[Upgrade deployment](orch/manage/upgrade-deployment.md)
 #######[Walk upgrade domain](orch/manage/walk-upgrade-domain.md)
 ##### [Exchange Administrator](orch/manage/exchange-admin-integration-pack.md)
