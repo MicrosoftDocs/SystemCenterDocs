@@ -120,7 +120,7 @@ The Operations Manager Integration Pack adds the **SC 2016 Operations Manager** 
 
 [Monitor Alert](monitor-alert.md)
 
-[Monitor State](../orch/manage/monitor-state.md)
+[Monitor State](monitor-state.md)
 
 [Start Maintenance Mode](../orch/manage/start-maintenance-mode.md)
 
