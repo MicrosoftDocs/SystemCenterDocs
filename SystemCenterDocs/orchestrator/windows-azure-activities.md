@@ -130,7 +130,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Capture VM Instance](capture-vm-instance.md)
 
-[Change Deployment Configuration](../orch/manage/change-deployment-configuration.md)
+[Change Deployment Configuration](change-deployment-configuration.md)
 
 [Change Deployment OS](../orch/manage/change-deployment-os.md)
 
