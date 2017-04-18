@@ -29,4 +29,4 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 |**Service Provider Foundation**|||||&#8226;|&#8226;|&#8226;||&#8226;|
 |**Virtual Machine Manager** Database Server|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;
 
-To understand which versions of SQL Server System Center 2016 - Operations Manager supports,  see [SQL Server requirements for Operations Manager](../om/plan/planning-sqlserver-design.md#sql-server-requirements).  
+To understand which versions of SQL Server System Center 2016 - Operations Manager supports,  see [SQL Server requirements for Operations Manager](../scom/plan-sqlserver-design.md#sql-server-requirements).  

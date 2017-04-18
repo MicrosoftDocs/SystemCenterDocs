@@ -41,7 +41,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     Describes the components that an Operations Manager management group is composed of, such as a management server, a SQL Server hosting the operational and data warehouse databases, and the Operations Manager Operations console.  This section also includes important design considerations for each component.  
 
-- [SQL Server Design Considerations](../om/plan/planning-sqlserver-design.md)
+- [SQL Server Design Considerations](plan-sqlserver-design.md)
 
     Describes the most appropriate high availability, disaster recovery, and performance configuration for SQL Server hosting the Operations Manager databases in order to achieve optimal performance and scale in medium to enterprise deployments.
 

@@ -150,9 +150,9 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 ### Operations Manager reporting server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
-- Microsoft SQL Server: See [SQL Server Requirements](../om/plan/planning-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
-- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../om/plan/planning-sqlserver-design.md#sql-server-requirements). 
+- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements). 
 
     > [!NOTE] 
     > System Center 2016 – Operations Manager supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
