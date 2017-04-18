@@ -818,7 +818,7 @@
 ##### [Set up port profiles](vmm/network-port-profile.md)
 ##### [Set up logical switches](vmm/network-switch.md)
 ##### [Set up MAC address pools](vmm/network-mac.md)
-##### [Integrate NLB with service templates](vmm/manage/manage-network-nlb.md)
+##### [Integrate NLB with service templates](vmm/network-nlb.md)
 ##### [Set up an IPAM server](vmm/manage/manage-network-ipam.md)
 #### [Manage the VMM storage fabric](vmm/manage/manage-storage-overview.md)
 ##### [Set up storage classifications](vmm/manage/manage-storage-classifications.md)

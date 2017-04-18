@@ -63,4 +63,4 @@ You'll need to configure network settings for a tier by connecting the tier adap
 
 ## Next steps
 
-[Set up load balancing for a service tier](manage/manage-network-nlb.md)
+[Set up load balancing for a service tier](network-nlb.md)
