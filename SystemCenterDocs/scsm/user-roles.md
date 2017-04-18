@@ -16,13 +16,13 @@ ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
 
 >Applies To: System Center 2016 - Service Manager
 
-This section provides an overview of user roles in [List of User Role Profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md). It includes procedures that you can use to work with user roles.
+This section provides an overview of user roles in [List of User Role Profiles in Service Manager](../sm/manage/admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md). It includes procedures that you can use to work with user roles.
 
 ## About user roles
 
 In your organization, some employees are responsible for supporting hardware, such as portable computers and servers. Some of the employees are allowed to create and update configuration items but not delete them, whereas others are allowed to create, update, and delete configuration items.
 
-In the [List of User Role Profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee's business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
+In the [List of User Role Profiles in Service Manager](../sm/manage/admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), the security rights that allow users to access or update information are defined in a user role profile. A user role profile is a named collection of access rights, and it usually corresponds to an employee's business responsibilities. Each user role profile controls access to such artifacts as knowledge articles, work items (incidents, change requests), authoring, administration, and other credentials. Think of user role profiles as defining what you are allowed to do.
 
 In the future, managers at your organization may decide to separate the group of employees who maintain configuration items into two groups: those who handle configuration items for desktop computers and those who handle configuration items for portable computers. They want to retain these two user role profiles, one profile that can create and edit but not delete configuration items, and another profile that can create, edit, and delete configuration items. You would define these user role profiles with different scopes, one for desktops and one for portable computers. If user role profiles define what you are allowed to do, think of scopes as defining what items you are allowed to modify. The combination of a user role profile and a scope is called a user role.
 
@@ -89,7 +89,7 @@ Workflows might have to read and write to the Service Manager database. During S
 
 In Service Manager, you can assign users to a user role to define what they can do.
 
-In this example, you have to add members of an asset management team who can create and update, but not delete, configuration items to the user role. Looking at the Configuration Items section of [User role profiles in Service Manager](admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), you see that the Advanced Operators user role profile provides what you need regarding permissions for this team. At this time, all members of the asset management team are responsible for every asset in the company; therefore, they require unlimited scope.
+In this example, you have to add members of an asset management team who can create and update, but not delete, configuration items to the user role. Looking at the Configuration Items section of [User role profiles in Service Manager](../sm/manage/admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md), you see that the Advanced Operators user role profile provides what you need regarding permissions for this team. At this time, all members of the asset management team are responsible for every asset in the company; therefore, they require unlimited scope.
 
 Use the following procedures to add a user to the Service Manager Advanced Operators user role and then validate the assignment of the user to the user role.
 
@@ -113,7 +113,7 @@ Use the following procedures to add a user to the Service Manager Advanced Opera
 
 -   Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user roles.
 
-![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
+![PowerShell symbol](./media/user-roles/pssymbol.png)You can use a Windows PowerShell command to view users. For information about how to use Windows PowerShell to retrieve users that are defined in Service Manager, see [Get-SCSMUser](http://go.microsoft.com/fwlink/p/?LinkId=225335).
 
 ## Create a user role
 
@@ -152,7 +152,7 @@ Use the following procedures to create a user role and assign users to that role
 
 2.  Log on to the Service Manager console as one of the users assigned to the user role. Verify that you cannot access data for which you do not have access rights, as specified in the user role.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![PowerShell symbol](./media/user-roles/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new user role in Service Manager, see [New-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225360).
 
