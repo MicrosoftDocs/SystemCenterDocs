@@ -681,7 +681,7 @@
 #### [Configure service level management](scsm/service-level-mgt.md)
 #### [Configure workflows](scsm/workflows.md)
 #### [Configure change and activity management ](scsm/change-activity-mgt.md)
-#### [Configure release management](sm/manage/admin-configuring-release-management-in-system-center-2016-service-manager.md)
+#### [Configure release management](scsm/release-mgt.md)
 #### [Configure Desired Configuration Management to generate incidents](sm/manage/admin-configuring-desired-configuration-management-to-generate-incidents-in-system-center-2016-service-manager.md)
 #### [Configure notifications](sm/manage/admin-configuring-system-center-2016-service-manager-notifications.md)
 #### [Use the service catalog to offer services](sm/manage/admin-using-the-service-catalog-in-system-center-2016-service-manager.md)
