@@ -677,7 +677,7 @@
 ##### [Use a CSV file to import data](scsm/import-data-csv.md)
 ##### [Optionally disable ECL logging for faster connector synchronization](scsm/disable-ecl-logging.md)
 #### [Configuration items](scsm/config-items.md)
-#### [Configure incident management](sm/manage/admin-configuring-incident-management-in-system-center-2016-service-manager.md)
+#### [Configure incident management](scsm/incident-mgt.md)
 #### [Configure service level management](sm/manage/admin-configuring-service-level-management-in-system-center-2016-service-manager.md)
 #### [Configure workflows](sm/manage/admin-configuring-workflows-in-system-center-2016-service-manager.md)
 #### [Configure change and activity management ](sm/manage/admin-configuring-change-and-activity-management-in-system-center-2016-service-manager.md)
