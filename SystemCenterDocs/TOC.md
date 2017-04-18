@@ -300,7 +300,7 @@
 #######[Reset User Password](orchestrator/reset-user-password.md)
 #######[Unlock User](orchestrator/unlock-user.md)
 #######[Update Computer](orchestrator/update-computer.md)
-#######[Update Group](orch/manage/update-group.md)
+#######[Update Group](orchestrator/update-group.md)
 #######[Update User](orch/manage/update-user.md)
 ##### [Azure Integration Pack](orch/manage/windows-azure-integration-pack.md)
 ###### [Azure Integration Pack Activities](orch/manage/windows-azure-activities.md)
