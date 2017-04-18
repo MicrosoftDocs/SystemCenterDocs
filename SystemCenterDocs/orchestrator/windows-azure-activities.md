@@ -226,7 +226,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Start VM Instance](../orch/manage/start-vm-instance.md)
 
-[Swap Deployment](../orch/manage/swap-deployment.md)
+[Swap Deployment](swap-deployment.md)
 
 [Upgrade Deployment](../orch/manage/upgrade-deployment.md)
 
