@@ -113,60 +113,60 @@ For a list of the data elements published by each activity, see the **Published 
 
 The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Checkpoint](create-checkpoint.md)
+[Create Checkpoint](../orch/manage/create-checkpoint.md)
 
-[Create New Disk from VHD](create-new-disk-from-vhd.md)
+[Create New Disk from VHD](../orch/manage/create-new-disk-from-vhd.md)
 
-[Create Network Adapter](create-network-adapter.md)
+[Create Network Adapter](../orch/manage/create-network-adapter.md)
 
-[Create New Disk](create-new-disk.md)
+[Create New Disk](../orch/manage/create-new-disk.md)
 
-[Create User Role](create-user-role.md)
+[Create User Role](../orch/manage/create-user-role.md)
 
-[Create VM from Template](create-vm-from-template.md)
+[Create VM from Template](../orch/manage/create-vm-from-template.md)
 
-[Create VM from VHD](create-vm-from-vhd.md)
+[Create VM from VHD](../orch/manage/create-vm-from-vhd.md)
 
-[Create VM from VM](create-vm-from-vm.md)
+[Create VM from VM](../orch/manage/create-vm-from-vm.md)
 
-[Remove User Role](remove-user-role.md)
+[Remove User Role](../orch/manage/remove-user-role.md)
 
-[Get Checkpoint](get-checkpoint.md)
+[Get Checkpoint](../orch/manage/get-checkpoint.md)
 
-[Get Disk](get-disk.md)
+[Get Disk](../orch/manage/get-disk.md)
 
-[Get Network Adapter](get-network-adapter.md)
+[Get Network Adapter](../orch/manage/get-network-adapter.md)
 
-[Get User Role](get-user-role.md)
+[Get User Role](../orch/manage/get-user-role.md)
 
-[Get VM](get-vm.md)
+[Get VM](../orch/manage/get-vm.md)
 
-[Manage Checkpoint](manage-checkpoint.md)
+[Manage Checkpoint](../orch/manage/manage-checkpoint.md)
 
-[Move VM](move-vm.md)
+[Move VM](../orch/manage/move-vm.md)
 
-[Remove VM](remove-vm.md)
+[Remove VM](re../orch/manage/move-vm.md)
 
-[Repair VM](repair-vm.md)
+[Repair VM](../orch/manage/repair-vm.md)
 
-[Resume VM](resume-vm.md)
+[Resume VM](../orch/manage/resume-vm.md)
 
-[Run VMM PowerShell Script](run-vmm-powershell-script.md)
+[Run VMM PowerShell Script](../orch/manage/run-vmm-powershell-script.md)
 
-[Shut Down VM](shut-down-vm.md)
+[Shut Down VM](../orch/manage/shut-down-vm.md)
 
-[Start VM](start-vm.md)
+[Start VM](../orch/manage/start-vm.md)
 
-[Stop VM](stop-vm.md)
+[Stop VM](../orch/manage/stop-vm.md)
 
-[Suspend VM](suspend-vm.md)
+[Suspend VM](../orch/manage/suspend-vm.md)
 
-[Update Disk](update-disk.md)
+[Update Disk](../orch/manage/update-disk.md)
 
-[Update Network Adapter](update-network-adapter.md)
+[Update Network Adapter](../orch/manage/update-network-adapter.md)
 
-[Update VM](update-vm.md)
+[Update VM](../orch/manage/update-vm.md)
 
-[Update User Role Property](update-user-role-property.md)
+[Update User Role Property](../orch/manage/update-user-role-property.md)
 
-[Update User Role Quota](update-user-role-quota.md)
+[Update User Role Quota](../orch/manage/update-user-role-quota.md)
