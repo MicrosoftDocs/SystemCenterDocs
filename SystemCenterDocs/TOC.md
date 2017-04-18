@@ -40,7 +40,7 @@
 #### [Back up and restore VMM servers](dpm/back-up-vmm-server.md)
 #### [Prepare to back up a generic data source](dpm/back-up-generic-data-source.md)
 #### [Prepare machines in workgroups and untrusted domains for backup](dpm/back-up-machines-in-workgroups-and-untrusted-domains.md)
-#### [Back up the DPM server](DPM/Deploy/Back-up-the-DPM-server.md)
+#### [Back up the DPM server](dpm/back-up-the-dpm-server.md)
 ### [Manage and monitor DPM](DPM/Manage/Manage-and-monitor-DPM.md)
 #### [Monitor DPM](DPM/Manage/Monitor-DPM.md)
 #### [Set up DPM logging](DPM/Manage/Set-up-DPM-logging.md)
