@@ -115,7 +115,7 @@ Create security groups for network controller management and clients.
 
 ## Set up host groups
 
-1. [Create a dedicated host group](manage/manage-compute-host-groups.md) for Hyper-V hosts that will be managed by SDN.
+1. [Create a dedicated host group](host-groups.md) for Hyper-V hosts that will be managed by SDN.
 2. Make sure Hyper-V hosts are running Windows Server 2016 with latest patches installed.
 
 ## Create the management logical network
