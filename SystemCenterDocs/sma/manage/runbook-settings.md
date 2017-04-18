@@ -26,7 +26,7 @@ You cannot change the name of a runbook after it has been created. The **Descrip
 Tags allow you to assign distinct words and phrases to help identify a runbook. You can specify multiple tags for a runbook by separating them with commas.
 
 ### Logging
-By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](Runbook-Output-and-Messages.md).
+By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](../overview-runbook-messages-output.md).
 
 ### Designated Runbook Worker
 By default, a runbook job will be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. For more information on this, see [Designating a runbook worker](designating-a-runbook-worker.md).

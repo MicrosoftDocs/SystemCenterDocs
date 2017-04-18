@@ -249,7 +249,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 You can test the Draft version of a runbook in Service Management Automation while leaving the published version of the runbook unchanged. This allows you to verify that the runbook is working correctly before replacing the published version.
 
-When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](Runbook-Output-and-Messages.md#Output) and [Warning and Error](Runbook-Output-and-Messages.md#WarningError) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](Runbook-Output-and-Messages.md#Verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](Runbook-Output-and-Messages.md#PreferenceVariables) is set to **Continue**.
+When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](../overview-runbook-messages-output.md#Output) and [Warning and Error](../overview-runbook-messages-output.md#WarningError) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](../overview-runbook-messages-output.md#Verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](../overview-runbook-messages-output.md#PreferenceVariables) is set to **Continue**.
 
 When you test a runbook, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non-production resources.
 

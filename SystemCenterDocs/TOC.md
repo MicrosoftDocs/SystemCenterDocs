@@ -902,7 +902,7 @@
 ###### [Connections](SMA/Manage/Connections.md)
 ###### [Variables](SMA/Manage/Variables.md)
 ###### [Schedules](SMA/Manage/Schedules.md)
-##### [Runbook Output and Messages](SMA/Manage/Runbook-Output-and-Messages.md)
+##### [Runbook Output and Messages](sma/overview-runbook-messages-output.md)
 ##### [Child Runbooks in Service Management Automation](sma/Manage/Child-Runbooks-in-Service-Management-Automation.md)
 ##### [Building an Integration Module](SMA/Manage/Building-an-Integration-Module.md)
 ## [Service Provider Foundation](SPF/service-provider-foundation.md)

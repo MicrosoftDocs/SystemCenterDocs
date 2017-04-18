@@ -69,7 +69,7 @@ You can use the following steps to display the Runbook Dashboard.
 ### Job Summary, History, and Source
 You can view a list of all of the jobs that have been created for a particular runbook and their most recent status. You can filter this list by job status and the range of dates for the last change to the job. Click on the name of a job to view its detailed information and its output. The detailed view of the job includes the values for the runbook parameters that were provided to that job.
 
-The job history includes output, warning, and error messages with time stamps of when the record was created. For more information on records that are written to the job history, see [Runbook Output and Messages](Runbook-Output-and-Messages.md).
+The job history includes output, warning, and error messages with time stamps of when the record was created. For more information on records that are written to the job history, see [Runbook Output and Messages](../overview-runbook-messages-output.md).
 
 The source for a job is the source code of the workflow when the job was run. This may not be the same as the current version of the runbook if it was updated after the job was run.
 

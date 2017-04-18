@@ -189,7 +189,7 @@ You can use the following steps to display the Runbook Dashboard.
 ### Job summary, history, and source
 You can view a list of all of the jobs that have been created for a particular runbook and their most recent status. You can filter this list by job status and the range of dates for the last change to the job. Click on the name of a job to view its detailed information and its output. The detailed view of the job includes the values for the runbook parameters that were provided to that job.
 
-The job history includes output, warning, and error messages with time stamps of when the record was created. For more information on records that are written to the job history, see [Runbook Output and Messages](Runbook-Output-and-Messages.md).
+The job history includes output, warning, and error messages with time stamps of when the record was created. For more information on records that are written to the job history, see [Runbook Output and Messages](../overview-runbook-messages-output.md).
 
 The source for a job is the source code of the workflow when the job was run. This may not be the same as the current version of the runbook if it was updated after the job was run.
 
@@ -234,7 +234,7 @@ You cannot change the name of a runbook after it has been created. The **Descrip
 Tags allow you to assign distinct words and phrases to help identify a runbook. You can specify multiple tags for a runbook by separating them with commas.
 
 ### Logging
-By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](Runbook-Output-and-Messages.md).
+By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](../overview-runbook-messages-output.md).
 
 ### Designated runbook worker
 By default, a runbook job will be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. 
