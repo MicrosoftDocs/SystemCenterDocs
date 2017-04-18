@@ -160,7 +160,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Rename User](rename-user.md)
 
-[Reset User Password](../orch/manage/reset-user-password.md)
+[Reset User Password](reset-user-password.md)
 
 [Unlock User](../orch/manage/unlock-user.md)
 
