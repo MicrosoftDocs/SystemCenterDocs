@@ -548,7 +548,7 @@
 #######[Ganage checkpoint](orchestrator/manage-checkpoint.md)
 #######[Monitor vmm job](orchestrator/monitor-vmm-job-in-system-center-2016.md)
 #######[Move vm](orchestrator/move-vm.md)
-#######[Remove user role](orch/manage/remove-user-role.md)
+#######[Remove user role](orchestrator/remove-user-role.md)
 #######[Remove vm](orch/manage/remove-vm.md)
 #######[Repair vm](orch/manage/repair-vm.md)
 #######[Resume vm](orch/manage/resume-vm.md)

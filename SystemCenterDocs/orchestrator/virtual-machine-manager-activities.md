@@ -129,7 +129,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Create VM from VM](create-vm-from-vm.md)
 
-[Remove User Role](../orch/manage/remove-user-role.md)
+[Remove User Role](remove-user-role.md)
 
 [Get Checkpoint](get-checkpoint.md)
 
