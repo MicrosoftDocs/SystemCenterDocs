@@ -181,7 +181,7 @@
 ##### [Agentless monitoring](om/manage/agentless-monitoring-in-operations-manager.md)
 ##### [Client monitoring using Agentless Exception Monitoring](om/manage/client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md)
 ##### [Monitoring clusters with Operations Manager](om/manage/monitoring-clusters-with-operations-manager.md)
-##### [Monitoring networks with Operations Manager](om/manage/monitoring-networks-by-using-operations-manager.md)
+##### [Monitoring networks with Operations Manager](scom/manage-monitor-networkdevice-overview.md)
 ###### [How to discover network devices](om/manage/how-to-discover-network-devices-in-operations-manager.md)
 ###### [Network device discovery settings](om/manage/how-to-configure-network-device-discovery-settings.md)
 ###### [Run As accounts for network monitoring](om/manage/run-as-accounts-for-network-monitoring-in-operations-manager.md)

@@ -160,7 +160,7 @@ You can use **Network Management** in the Administration workspace to discover n
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
 |Discovery Rules|-   To create rules for discovering network devices<br>-   To modify existing discovery rules|[How to Discover Network Devices in Operations Manager](https://technet.microsoft.com/library/hh278846%28v=sc.12%29.aspx)|  
-|Network Devices|To view properties of discovered network devices|[Monitoring Networks by Using Operations Manager](monitoring-networks-by-using-operations-manager.md)|  
+|Network Devices|To view properties of discovered network devices|[Monitoring Networks by Using Operations Manager](../../scom/manage-monitor-networkdevice-overview.md)|  
 |Network Devices Pending Management|To retry or reject discovered network devices that are pending management|[How to Discover Network Devices in Operations Manager](https://technet.microsoft.com/library/hh278846%28v=sc.12%29.aspx)|  
   
 ### Notifications  
