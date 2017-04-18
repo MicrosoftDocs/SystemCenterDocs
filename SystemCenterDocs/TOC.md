@@ -161,7 +161,7 @@
 ###### [Build a simple monitoring dashboard using the Visio Web Part](scom/manage-visio-addin-create-dashboard.md)
 ###### [Publish a Visio diagram to SharePoint Server](scom/manage-visio-addin-publish-sharepoint.md)
 ###### [Change the way Health State is represented in Visio](scom/manage-visio-addin-change-healthstate-datagraphic.md)
-###### [Troubleshooting the Visio add-in](om/manage/troubleshooting-the-visio-add-in.md)
+###### [Troubleshooting the Visio add-in](scom/manage-visio-addin-troubleshoot.md)
 #### [Managing access in Operations Manager](om/manage/managing-access-in-operations-manager.md)
 ##### [Implementing user roles](scom/manage-security-overview.md)
 ###### [Operations associated with User Profile roles](om/manage/operations-associated-with-user-role-profiles.md)

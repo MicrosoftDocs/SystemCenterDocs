@@ -56,5 +56,5 @@ The following topics provide information about how to install, configure, and us
   
 -   [Change the Way Health State is Represented in Visio](manage-visio-addin-change-healthstate-datagraphic.md)  
   
--   [Troubleshooting the Visio Add-in](../om/manage/troubleshooting-the-visio-add-in.md)  
+-   [Troubleshooting the Visio Add-in](manage-visio-addin-troubleshoot.md)  
   
