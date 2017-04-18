@@ -357,7 +357,7 @@
 #######[Remove vm endpoint](orchestrator/remove-vm-endpoint.md)
 #######[Restart vm instance](orchestrator/restart-vm-instance.md)
 #######[Rollback update or upgrade](orchestrator/rollback-update-or-upgrade.md)
-#######[Shutdown vm instance](orch/manage/shutdown-vm-instance.md)
+#######[Shutdown vm instance](orchestrator/shutdown-vm-instance.md)
 #######[Snapshot blob](orch/manage/snapshot-blob.md)
 #######[Start vm instance](orch/manage/start-vm-instance.md)
 #######[Swap deployment](orch/manage/swap-deployment.md)

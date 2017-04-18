@@ -220,7 +220,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Rollback Update or Upgrade](rollback-update-or-upgrade.md)
 
-[Shutdown VM Instance](../orch/manage/shutdown-vm-instance.md)
+[Shutdown VM Instance](shutdown-vm-instance.md)
 
 [Snapshot Blob](../orch/manage/snapshot-blob.md)
 
