@@ -32,21 +32,21 @@ An Operations Manager administrator must define the notification channels and if
   
 ## Subscribing to alert notifications topics  
   
--   [How to create and configure the Notification Action account](how-to-create-and-configure-the-notification-action-account.md)  
+-   [How to create and configure the Notification Action account](../om/manage/how-to-create-and-configure-the-notification-action-account.md)  
   
--   [How to enable an email notification channel](how-to-enable-an-email-notification-channel.md)  
+-   [How to enable an email notification channel](../om/manage/how-to-enable-an-email-notification-channel.md)  
   
--   [How to enable an instant message notification channel](how-to-enable-an-instant-message-notification-channel.md)  
+-   [How to enable an instant message notification channel](../om/manage/how-to-enable-an-instant-message-notification-channel.md)  
   
--   [How to enable a text message (SMS) notification channel](how-to-enable-a-text-message-notification-channel.md)  
+-   [How to enable a text message (SMS) notification channel](../om/manage/how-to-enable-a-text-message-notification-channel.md)  
   
--   [How to enable a command notification channel](how-to-enable-a-command-notification-channel.md)  
+-   [How to enable a command notification channel](../om/manage/how-to-enable-a-command-notification-channel.md)  
   
--   [How to create notification subscribers](how-to-create-notification-subscribers.md)  
+-   [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)  
   
--   [How to create notification subscriptions](how-to-create-notification-subscriptions.md)  
+-   [How to create notification subscriptions](../om/manage/how-to-create-notification-subscriptions.md)  
   
--   [How to customize message content for Notifications](how-to-customize-message-content-for-notifications.md)  
+-   [How to customize message content for Notifications](../om/manage/how-to-customize-message-content-for-notifications.md)  
   
--   [How to subscribe to notifications from an alert](how-to-subscribe-to-notifications-from-an-alert.md)  
+-   [How to subscribe to notifications from an alert](../om/manage/how-to-subscribe-to-notifications-from-an-alert.md)  
   

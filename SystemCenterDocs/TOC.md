@@ -142,7 +142,7 @@
 ###### [Standard views](om/manage/standard-views-in-operations-manager.md)
 ###### [Creating and scoping views](om/manage/how-to-create-and-scope-views-in-operations-manager.md)
 ###### [Personalize a view](om/manage/how-to-personalize-a-view-in-operations-manager.md)
-##### [Subscribing to alert notifications](om/manage/subscribing-to-alert-notifications.md)
+##### [Subscribing to alert notifications](scom/manage-notifications-alert-notifications.md)
 ###### [How to create and configure the notification action account](om/manage/how-to-create-and-configure-the-notification-action-account.md)
 ###### [How to enable an email notification channel](om/manage/how-to-enable-an-email-notification-channel.md)
 ###### [How to enable an instant message notification channel](om/manage/how-to-enable-an-instant-message-notification-channel.md)
