@@ -530,7 +530,7 @@
 #######[Create vm from template](orchestrator/create-vm-from-template.md)
 #######[Create vm from vhd](orchestrator/create-vm-from-vhd.md)
 #######[Create vm from vm](orchestrator/create-vm-from-vm.md)
-#######[Deploy service](orch/manage/deploy-service-in-system-center-2016.md)
+#######[Deploy service](orchestrator/deploy-service-in-system-center-2016.md)
 #######[Get checkpoint](orch/manage/get-checkpoint.md)
 #######[Get cloud](orch/manage/get-cloud-in-system-center-2016.md)
 #######[Get disk](orch/manage/get-disk.md)
