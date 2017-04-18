@@ -410,7 +410,7 @@
 ###### [Resume File Download](orch/manage/resume-file-download.md)
 ###### [Synchronize Folder or File](orch/manage/synchronize-folder-or-file.md)
 ###### [Upload File](orch/manage/upload-file.md)
-##### [Hewlett Packard Integrated Lights-Out](orch/manage/hp-ilo-and-oa-integration-pack.md)
+##### [Hewlett Packard Integrated Lights-Out](orchestrator/hp-ilo-and-oa-integration-pack.md)
 ###### [Hewlett Packard Integrated Lights-Out Activities](orch/manage/hp-ilo-and-oa-activities.md)
 #######[Run ilo command](orch/manage/run-ilo-command.md)
 #######[Run oa command](orch/manage/run-oa-command.md)
