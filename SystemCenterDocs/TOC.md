@@ -336,7 +336,7 @@
 #######[Download blob](orchestrator/download-blob.md)
 #######[Get deployment](orchestrator/get-deployment.md)
 #######[Get operating systems](orchestrator/get-operating-systems.md)
-#######[Get operation status](orch/manage/get-operation-status.md)
+#######[Get operation status](orchestrator/get-operation-status.md)
 #######[Get storage account keys](orch/manage/get-storage-account-keys.md)
 #######[Get storage account properties](orch/manage/get-storage-account-properties.md)
 #######[Get vm data disk](orch/manage/get-vm-data-disk.md)

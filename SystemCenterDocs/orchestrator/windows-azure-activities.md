@@ -178,7 +178,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Get Operating Systems](get-operating-systems.md)
 
-[Get Operation Status](../orch/manage/get-operation-status.md)
+[Get Operation Status](get-operation-status.md)
 
 [Get Storage Account Keys](../orch/manage/get-storage-account-keys.md)
 
