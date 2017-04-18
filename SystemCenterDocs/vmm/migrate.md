@@ -103,4 +103,4 @@ Live VMS migrates a VM and its machine storage in a single action.
 
 - [Migrate a virtual machine](migrate-vm.md)
 - [Migrate storage](migrate-storage.md)
-- [Run a live migration](manage/manage-vm-migrate-live.md)
+- [Run a live migration](migrate-live.md)
