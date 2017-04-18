@@ -75,7 +75,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Set VM CD/DVD to ISO Image Activity](set-vm-cd-or-dvd-to-iso-image-activity.md)
 
-[Set VM Networks Activity](../orch/manage/set-vm-networks-activity.md)
+[Set VM Networks Activity](set-vm-networks-activity.md)
 
 [Start VM Activity](../orch/manage/start-vm-activity.md)
 
