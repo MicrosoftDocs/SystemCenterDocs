@@ -176,7 +176,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Get Deployment](get-deployment.md)
 
-[Get Operating Systems](../orch/manage/get-operating-systems.md)
+[Get Operating Systems](get-operating-systems.md)
 
 [Get Operation Status](../orch/manage/get-operation-status.md)
 
