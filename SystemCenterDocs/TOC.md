@@ -32,7 +32,7 @@
 #### [Deduplicate DPM storage](dpm/deduplicate-dpm-storage.md)
 #### [Back up Hyper-V virtual machines](dpm/back-up-hyper-v-virtual-machines.md)
 #### [Back up Exchange with DPM](dpm/back-up-exchange.md)
-#### [Back up SharePoint with DPM](DPM/Deploy/Back-up-SharePoint-with-DPM.md)
+#### [Back up SharePoint with DPM](dpm/back-up-sharepoint.md)
 #### [Back up SQL Server with DPM](DPM/Deploy/Back-up-SQL-Server-with-DPM.md)
 #### [Back up client computers with DPM](DPM/Deploy/Back-up-client-computers-with-DPM.md)
 #### [Back up file data with DPM](DPM/Deploy/Back-up-file-data-with-DPM.md)
