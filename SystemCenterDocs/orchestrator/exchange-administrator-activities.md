@@ -117,7 +117,7 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Create Mailbox](create-mailbox.md)
 
-[Create Move Request](../orch/manage/create-move-request.md)
+[Create Move Request](create-move-request.md)
 
 [Create Remote Mailbox (Hybrid)](../orch/manage/create-remote-mailbox-hybrid.md)
 
