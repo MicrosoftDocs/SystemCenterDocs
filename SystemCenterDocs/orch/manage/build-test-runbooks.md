@@ -37,7 +37,7 @@ For more information about types of activities, see the following topics:
 
     Describes customization options available in Orchestrator.  
 
--   [Common Activity Properties](common-activity-properties.md)  
+-   [Common Activity Properties](../../orchestrator/common-activity-properties.md)  
 
     Describes configurable properties common to all activities.  
 

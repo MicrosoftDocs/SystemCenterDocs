@@ -42,7 +42,7 @@ When an activity in a runbook runs, it runs one time for each item of data that 
 
 An activity can also retrieve information from an outside source. The **Get** activities and **Monitor** activities demonstrate this behavior. Data output from an activity might be a list of computers for example. Data can be passed on as multiple individual outputs, which invoke the next activity as many times as there are items in the output.  
 
-You also have the option of passing on data as a single output. For information about how to configure Published Data with multiple values, see [Common Activity Properties](../manage/common-activity-properties.md).  
+You also have the option of passing on data as a single output. For information about how to configure Published Data with multiple values, see [Common Activity Properties](../../orchestrator/common-activity-properties.md).  
 
 ## Adding Returned Data to Activity Configurations  
 When an activity has subscribed to Published Data, a placeholder is inserted where the value of the data will be added. An activity can only subscribe to Published Data from a previous activity in the workflow.  

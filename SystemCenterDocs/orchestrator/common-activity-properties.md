@@ -41,7 +41,7 @@ When you enable the Flatten feature, you also choose a multi\-value formatting o
 |Use CSV format|All items are in comma\-separated value format \(.csv file\), which is useful for importing into spreadsheets or databases.|  
 
 ### Event Notifications  
-Some activities are expected to take a limited amount of time to finish. If the activity does not finish within the specified period, the activity can be stalled or another issue prevents the activity from finishing. You can define the number of seconds to wait for completion of the activity, after which a platform event is sent to report the delay in completion. You can also choose whether to generate a platform event if the activity returns a failure. For more information about event notifications, see [Orchestrator Logs](../get-started/orchestrator-logs.md).  
+Some activities are expected to take a limited amount of time to finish. If the activity does not finish within the specified period, the activity can be stalled or another issue prevents the activity from finishing. You can define the number of seconds to wait for completion of the activity, after which a platform event is sent to report the delay in completion. You can also choose whether to generate a platform event if the activity returns a failure. For more information about event notifications, see [Orchestrator Logs](../orch/get-started/orchestrator-logs.md).  
 
 |Event notification setting|Description|  
 |------------------------------|---------------|  

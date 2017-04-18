@@ -38,7 +38,7 @@ All activities, regardless of origin or type, share common behaviors. This secti
 
     Describes customization options available in Orchestrator.  
 
--   [Common Activity Properties](../manage/common-activity-properties.md)  
+-   [Common Activity Properties](../../orchestrator/common-activity-properties.md)  
 
     Describes configurable properties common to all activities.  
 

@@ -245,7 +245,7 @@
 #### [Deploy runbooks](orch/deploy/deploy-runbooks.md)
 ### [Manage](orch/manage/administering-orchestrator.md)
 #### [Audit Trail](orchestrator/track-runbooks-audit-trail.md)
-#### [Common activity properties](orch/manage/common-activity-properties.md)
+#### [Common activity properties](orchestrator/common-activity-properties.md)
 #### [Computer groups](orch/manage/computer-groups.md)
 #### [Counters](orch/manage/counters.md)
 ####[Creating and testing a sample runbook](orchestrator/creating-and-testing-a-sample-runbook.md)
