@@ -388,7 +388,7 @@
 #######[Update remote mailbox hybrid](orchestrator/update-remote-mailbox-hybrid.md)
 ##### [Exchange users Integration Pack](orch/manage/exchange-users-integration-pack.md)
 ###### [Exchange users Activities](orch/manage/exchange-users-activities.md)
-####### [Create and send email](orch/manage/create-and-send-e-mail.md)
+####### [Create and send email](orchestrator/create-and-send-e-mail.md)
 ####### [Create Item](orch/manage/create-item.md)
 ####### [Delete Item](orch/manage/delete-item.md)
 ####### [Find Appointment](orch/manage/find-appointments.md)
