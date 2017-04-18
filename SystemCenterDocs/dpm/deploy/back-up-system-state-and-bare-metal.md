@@ -115,7 +115,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md)
+3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md)
 
 ## Back up system state and bare metal
 Set up a protection group as described in [Deploy protection groups](Deploy-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.

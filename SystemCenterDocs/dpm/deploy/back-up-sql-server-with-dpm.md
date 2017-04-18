@@ -111,7 +111,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
 
 
 ## Configure backup

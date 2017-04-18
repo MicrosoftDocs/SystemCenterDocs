@@ -55,7 +55,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 -   **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
--   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
+-   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
 
 ## Back up VMM
 
