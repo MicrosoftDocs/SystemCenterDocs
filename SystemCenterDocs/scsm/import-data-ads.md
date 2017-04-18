@@ -97,7 +97,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
-![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
+![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
 
 ## Synchronize an Active Directory Connector
 
@@ -160,7 +160,7 @@ You can use the following procedure to disable or enable an Active Directory con
 
 2.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
+![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225378).
 

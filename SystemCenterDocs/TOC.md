@@ -670,7 +670,7 @@
 ### [Administrative tasks in System Center 2016 - Service Manager](scsm/admin-tasks.md)
 #### [Use management packs to add functionality](scsm/management-packs.md)
 #### [Use connectors to import data](scsm/import-data-connectors.md)
-##### [Import data from Active Directory Domain Services](sm/manage/admin-importing-data-from-active-directory-domain-services.md)
+##### [Import data from Active Directory Domain Services](scsm/import-data-ads.md)
 ##### [Import data and alerts from Operations Manager](sm/manage/admin-importing-data-and-alerts-from-system-center-operations-manager.md)
 ##### [Import data from Configuration Manager](sm/manage/admin-importing-data-from-system-center-configuration-manager.md)
 ##### [Import runbooks from Orchestrator](sm/manage/admin-importing-runbooks-from-system-center-orchestrator.md)
