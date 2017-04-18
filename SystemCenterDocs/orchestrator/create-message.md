@@ -90,7 +90,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Delete Annotation](delete-annotation.md)
 
-[Delete Custom Attribute](../orch/manage/delete-custom-attribute.md)
+[Delete Custom Attribute](delete-custom-attribute.md)
 
 [Get Annotation](../orch/manage/get-annotation.md)
 

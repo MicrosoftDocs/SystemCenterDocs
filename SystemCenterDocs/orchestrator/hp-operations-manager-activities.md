@@ -123,7 +123,7 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Delete Annotation](delete-annotation.md)
 
-[Delete Custom Attribute](../orch/manage/delete-custom-attribute.md)
+[Delete Custom Attribute](delete-custom-attribute.md)
 
 [Get Annotation](../orch/manage/get-annotation.md)
 

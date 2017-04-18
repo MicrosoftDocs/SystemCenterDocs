@@ -420,7 +420,7 @@
 #######[Add annotation to message](orchestrator/add-annotation-to-message.md)
 #######[Create message](orchestrator/create-message.md)
 #######[Delete annotation](orchestrator/delete-annotation.md)
-#######[Delete custom attribute](orch/manage/delete-custom-attribute.md)
+#######[Delete custom attribute](orchestrator/delete-custom-attribute.md)
 #######[Get annotation](orch/manage/get-annotation.md)
 #######[Get message](orch/manage/get-message.md)
 #######[Launch tool](orch/manage/launch-tool.md)
