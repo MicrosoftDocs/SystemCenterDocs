@@ -845,7 +845,7 @@
 ##### [Convert VMware VMs to Hyper-V](vmm/vm-convert-vmware.md)
 ##### [Fail over VMs between virtual networks](vmm/manage/manage-vm-failover-virtual-networks.md)
 ##### [Manage virtual machine settings](vmm/vm-settings.md)
-##### [Manage dynamic and power optimization for virtual machines](vmm/manage/manage-compute-optimization.md)
+##### [Manage dynamic and power optimization for virtual machines](vmm/vm-optimization.md)
 ##### [Create VM role templates](vmm/manage/Creating-Virtual-Machine-Role-Templates-by-using-VMM-and-Windows-Azure-Pack.md)
 #### [Migrate virtual machines and storage](vmm/manage/manage-vm-migrate-overview.md)
 ##### [Migrate a virtual machine](vmm/manage/manage-vm-migrate.md)
