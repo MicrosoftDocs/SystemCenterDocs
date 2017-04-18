@@ -274,7 +274,7 @@
 ###### [Active Directory Activities](orchestrator/active-directory-activities.md)
 ####### [Add Computer To Group](orchestrator/add-computer-to-group.md)
 ####### [Add Group To Group](orchestrator/add-group-to-group.md)
-#######[Add User To Group](orch/manage/add-user-to-group.md)
+#######[Add User To Group](orchestrator/add-user-to-group.md)
 #######[Create Computer](orch/manage/create-computer.md)
 #######[Create Group](orch/manage/create-group.md)
 #######[Create User](orch/manage/create-user.md)
