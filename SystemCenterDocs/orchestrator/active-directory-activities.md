@@ -110,7 +110,7 @@ For a list of the data elements published by each activity, see the Published Da
 
 This integration pack adds the Microsoft Active Directory category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Computer To Group](../orch/manage/add-computer-to-group.md)
+[Add Computer To Group](add-computer-to-group.md)
 
 [Add Group To Group](../orch/manage/add-group-to-group.md)
 
