@@ -816,7 +816,7 @@
 ##### [Set up IP address pools](vmm/network-pool.md)
 ##### [Add a network gateway](vmm/network-gateway.md)
 ##### [Set up port profiles](vmm/network-port-profile.md)
-##### [Set up logical switches](vmm/manage/manage-network-logical-switches.md)
+##### [Set up logical switches](vmm/network-switch.md)
 ##### [Set up MAC address pools](vmm/manage/manage-network-mac-address-pools.md)
 ##### [Integrate NLB with service templates](vmm/manage/manage-network-nlb.md)
 ##### [Set up an IPAM server](vmm/manage/manage-network-ipam.md)

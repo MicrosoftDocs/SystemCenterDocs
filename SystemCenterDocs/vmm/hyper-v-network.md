@@ -27,7 +27,7 @@ You can apply network settings to a Hyper-V host or cluster using a logical swit
 
 ## Configure network settings with a logical switch
 
-To do this you'll need to [configure the logical switch](manage/manage-network-logical-switches.md) and [port profiles](network-port-profile.md) you'll apply. Then you need to indicate what the physical network adapter is used for, and configure network settings by applying a logical switch. The network adapters that you configure can be physical or virtual adapters on the hosts.
+To do this you'll need to [configure the logical switch](network-switch.md) and [port profiles](network-port-profile.md) you'll apply. Then you need to indicate what the physical network adapter is used for, and configure network settings by applying a logical switch. The network adapters that you configure can be physical or virtual adapters on the hosts.
 
 
 
