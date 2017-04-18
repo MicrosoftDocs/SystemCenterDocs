@@ -165,7 +165,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Update Network Adapter](update-network-adapter.md)
 
-[Update VM](../orch/manage/update-vm.md)
+[Update VM](update-vm.md)
 
 [Update User Role Property](update-user-role-property.md)
 
