@@ -390,7 +390,7 @@
 ###### [Exchange users Activities](orch/manage/exchange-users-activities.md)
 ####### [Create and send email](orchestrator/create-and-send-e-mail.md)
 ####### [Create Item](orchestrator/create-item.md)
-####### [Delete Item](orch/manage/delete-item.md)
+####### [Delete Item](orchestrator/delete-item.md)
 ####### [Find Appointment](orch/manage/find-appointments.md)
 ####### [Forward Item](orch/manage/forward-item.md)
 ####### [Get Item](orch/manage/get-item.md)
