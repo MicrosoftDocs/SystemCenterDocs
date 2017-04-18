@@ -66,4 +66,4 @@ Use the Encryption Key Backup or Restore Wizard and the following procedures to 
 
 ## Next steps
 
-- Review [Index non-English knowledge articles](../sm/deploy/deploy-indexing-non-english-knowledge-articles.md) to resolve an indexing issue in an environment where you create, or plan to create, knowledge articles in any language other than English.
+- Review [Index non-English knowledge articles](non-eng-articles.md) to resolve an indexing issue in an environment where you create, or plan to create, knowledge articles in any language other than English.
