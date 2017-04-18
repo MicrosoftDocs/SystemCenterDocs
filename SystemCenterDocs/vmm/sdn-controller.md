@@ -371,4 +371,4 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 Use [these steps](scenario/sdn-remove-an-sdn.md#remove-the-network-controller) to remove the network controller from the SDN fabric.
 
 ## Next steps
-[Create a software load balancer](scenario/sdn-slb.md)
+[Create a software load balancer](sdn-slb.md)

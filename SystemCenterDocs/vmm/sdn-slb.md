@@ -26,7 +26,7 @@ You can use VMM to deploy a network controller and a software load balancer. Aft
 Ensure the following:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
-- **Network controller**: You should have an [SDN network controller](../sdn-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
+- **Network controller**: You should have an [SDN network controller](sdn-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
 - **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 - **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 with the latest patches installed.
@@ -134,7 +134,7 @@ Import the service template into the VMM library. For this example, we'll import
 4. Remember that you should have copied the .CER certificate that you previously created to the **NCCertificate.CR** folder.
 5. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn more](../sdn-controller.md#customize-the-template).
+    **Note**: You can customize the service template. [Learn more](sdn-controller.md#customize-the-template).
 
 ## Deploy the SLB service
 
@@ -185,7 +185,7 @@ After you deploy the SLB/MUX, you can validate the deployment by configuring BGP
 
 1. Enter your external router details in the wizard. For example:
 
-    ![IP address](../media/sdn-slb1.png)
+    ![IP address](./media/sdn-slb/sdn-slb1.png)
 
 2. Click **OK** to complete the SLB/MUX service instance configuration.
 3. Check the **Jobs** window to verify that the **Update Fabric Role with required configuration**, and **Associate service instance with fabric role** jobs have completed successfully.
@@ -313,7 +313,7 @@ To complete the BGP peering process, you need to configure a BGP to peer with yo
 4. Select **Network Address Translation** and choose the public VIP pool. Optionally, provide a VIP address. A VIP address will be automatically assigned if you do not choose one.
 5. In **NAT rules** click **Add** and type the rule name, protocol, incoming port value, and the destination address and port for the rule.
 
-    ![NAT](../media/sdn-slb2.png)
+    ![NAT](./media/sdn-slb/sdn-slb2.png)
 
 You should be able to see the recently created NAT rules in the VMM wizard.
 
@@ -323,7 +323,7 @@ Once you create the inbound NAT rules, outbound NAT rules are automatically crea
 
 ## Remove the software load balancer from the SDN fabric
 
-Use [these steps](sdn-remove-an-sdn.md#remove-the-software-load-balancer) to remove the SLB from the SDN fabric.
+Use [these steps](scenario/sdn-remove-an-sdn.md#remove-the-software-load-balancer) to remove the SLB from the SDN fabric.
 
 ## Next steps
-[Create a RAS gateway](sdn-gateway.md)
+[Create a RAS gateway](scenario/sdn-gateway.md)

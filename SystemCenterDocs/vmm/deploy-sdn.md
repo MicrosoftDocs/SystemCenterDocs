@@ -40,5 +40,5 @@ SDN combines a number of technologies, among them:
 - [Deploy SDN components using PowerShell](scenario/sdn-powershell.md)
 - Alternatively, deploy SDN components manually in the VMM console:
     - [Set up a network controller](sdn-controller.md)
-    - [Set up a software load balancer](scenario/sdn-slb.md)
+    - [Set up a software load balancer](sdn-slb.md)
     - [Set up a RAS gateway](scenario/sdn-gateway.md)

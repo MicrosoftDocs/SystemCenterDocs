@@ -770,7 +770,7 @@
 ##### [Deploy shielded virtual machines](vmm/guarded-deploy-vm.md)
 #### [Scenario: Deploy an SDN in VMM](vmm/deploy-sdn.md)
 ##### [Deploy an SDN network controller](vmm/sdn-controller.md)
-##### [Deploy an SDN SLB](vmm/scenario/sdn-slb.md)
+##### [Deploy an SDN SLB](vmm/sdn-slb.md)
 ##### [Deploy an SDN RAS gateway](vmm/scenario/sdn-gateway.md)
 ##### [Deploy SDN using PowerShell](vmm/scenario/sdn-powershell.md)
 #### [Remove an SDN from VMM](vmm/scenario/sdn-remove-an-sdn.md)
