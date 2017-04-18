@@ -576,7 +576,7 @@
 #######[Customize vm activity](orchestrator/customize-vm-activity.md)
 #######[Delete network adapter activity](orchestrator/delete-network-adapter-activity-in-system-center-2016.md)
 #######[Delete vm activity](orchestrator/delete-vm-activity.md)
-#######[Delete vm disk activity](orch/manage/delete-vm-disk-activity-in-system-center-2016.md)
+#######[Delete vm disk activity](orchestrator/delete-vm-disk-activity-in-system-center-2016.md)
 #######[Get cluster properties activity](orch/manage/get-cluster-properties-activity.md)
 #######[Get datastore capacity activity](orch/manage/get-datastore-capacity-activity.md)
 #######[Get host datastores activity](orch/manage/get-host-datastores-activity.md)
