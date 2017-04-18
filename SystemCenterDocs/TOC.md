@@ -490,7 +490,7 @@
 #######[Recover sharepoint](orchestrator/recover-sharepoint.md)
 #######[Recover sql](orchestrator/recover-sql.md)
 #######[Recover vm](orchestrator/recover-vm.md)
-#######[Run dpm powershell script](orch/manage/run-dpm-powershell-script.md)
+#######[Run dpm powershell script](orchestrator/run-dpm-powershell-script.md)
 ##### [Operations Manager](orch/manage/integration-pack-for-operations-manager.md)
 ###### [Operations Manager Activities](orch/manage/operations-manager-activities.md)
 #######[Create alert](orch/manage/create-alert.md)

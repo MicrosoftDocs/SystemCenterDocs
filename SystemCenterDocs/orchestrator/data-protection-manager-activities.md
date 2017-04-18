@@ -128,4 +128,4 @@ The DPM Integration Pack adds the **SC 2016 DPM** category to the **Activities**
 
 [Recover VM](recover-vm.md)
 
-[Run DPM PowerShell Script](../orch/manage/run-dpm-powershell-script.md)
+[Run DPM PowerShell Script](run-dpm-powershell-script.md)
