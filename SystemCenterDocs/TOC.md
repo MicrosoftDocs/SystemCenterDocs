@@ -440,7 +440,7 @@
 ###### [IBM Netcool Activities](orchestrator/tivoli-netcool-omnibus-activities.md)
 ####### [Deploy the IBM Netcool Tivoli Intetration Pack](orch/manage/deploying-the-ibm-tivoli-netcool-omnibus-integration-pack.md)
 #######[Create alert activity](orchestrator/create-alert-activity.md)
-#######[Delete alert activity](orch/manage/delete-alert-activity.md)
+#######[Delete alert activity](orchestrator/delete-alert-activity.md)
 #######[Get alerts activity](orch/manage/get-alerts-activity.md)
 #######[Monitor alerts activity](orch/manage/monitor-alerts-activity.md)
 #######[Update alert activity](orch/manage/update-alert-activity.md)
