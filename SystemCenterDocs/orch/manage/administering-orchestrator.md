@@ -60,7 +60,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
     Describes how to back up an Orchestrator database.
 
--   [How to Use the Integration Toolkit to Extend Orchestrator Capabilities](../manage/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)
+-   [How to Use the Integration Toolkit to Extend Orchestrator Capabilities](../../orchestrator/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)
 
     Provides a link to the MSDN library content that helps you create new integration packs for Orchestrator.
 

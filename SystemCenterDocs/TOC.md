@@ -266,7 +266,7 @@
 #### [How to configure runbook throttling](orchestrator/how-to-configure-runbook-throttling.md)
 #### [How to recover a database](orch/manage/how-to-recover-a-database.md)
 #### [How to recover web components](orchestrator/how-to-recover-web-components.md)
-#### [How to use the integration toolkit](orch/manage/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)
+#### [How to use the integration toolkit](orchestrator/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)
 #### [How to view orchestrator data with PowerPivot](orch/manage/how-to-view-orchestrator-data-by-using-powerpivot.md)
 #### [How to work with runbooks in the Orchestrator console](orch/manage/how-to-work-with-runbooks-in-the-orchestration-console.md)
 #### [Integration packs](orch/manage/integration-packs.md)
