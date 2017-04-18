@@ -25,7 +25,7 @@ Verify the following:
 - **SQL Server**: Review supported [SQL Server versions](../system-requirements/sql-server-version-compatibility.md)
 - **VMM console**: Review [operating system requirements ](../system-requirements/client-operating-system-compatibility.md) and if you want to run the VMM console on a separate computer.
 - **VMM library**: Review the [hardware requirements](../system-requirements/minimum-hardware-recommendations.md) for remote VMM library shares.
-- **Virtualization hosts**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](manage/manage-compute-add-vmware.md) for VMware servers.
+- **Virtualization hosts**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](manage-vmware-hosts.md) for VMware servers.
 - **Other fabric servers**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for update and PXE (used for bare metal deployment) servers.
 
 

@@ -119,7 +119,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations](manage/manage-compute-add-vmware.md)
+Supported | [Features and limitations](manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
 

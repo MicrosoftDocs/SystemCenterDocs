@@ -806,7 +806,7 @@
 ##### [Manage MPIO for Hyper-V hosts and clusters](vmm/hyper-v-mpio.md)
 ##### [Manage Hyper-V extended port ACLs](vmm/hyper-v-acls.md)
 ##### [Service hosts](vmm/hyper-v-service.md)
-#### [Manage VMware servers](vmm/manage/manage-compute-add-vmware.md)
+#### [Manage VMware servers](vmm/manage-vmware-hosts.md)
 #### [Manage infrastructure servers](vmm/manage/manage-compute-infrastructure-servers.md)
 #### [Manage update servers](vmm/manage/manage-compute-update-servers.md)
 #### [Manage the VMM networking fabric](vmm/manage/manage-network-overview.md)
