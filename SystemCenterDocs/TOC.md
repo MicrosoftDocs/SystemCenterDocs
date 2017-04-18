@@ -789,7 +789,7 @@
 ##### [Add file-based resources to the VMM library](vmm/library-files.md)
 ##### [Add profiles to the VMM library](vmm/library-profiles.md)
 ##### [Add VM templates to the VMM library](vmm/library-vm-templates.md)
-##### [Add service templates to the VMM library](vmm/manage/manage-library-resources.md)
+##### [Add service templates to the VMM library](vmm/library-service-templates.md)
 ##### [Manage VMM library resources](vmm/manage/manage-library-add-service-templates.md)
 #### [Manage VMM host groups](vmm/manage/manage-compute-host-groups.md)
 #### [Manage Hyper-V hosts and clusters](vmm/manage/manage-compute-hyper-v-overview.md)
