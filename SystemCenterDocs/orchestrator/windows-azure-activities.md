@@ -148,7 +148,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Create Storage Account](create-storage-account.md)
 
-[Create VM Deployment](../orch/manage/create-vm-deployment.md)
+[Create VM Deployment](create-vm-deployment.md)
 
 [Delete Blob](../orch/manage/delete-blob.md)
 
