@@ -110,7 +110,7 @@ For a list of the data elements that are published by each activity, see the **P
 
 This integration pack adds the **Microsoft SharePoint** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create List Item](create-list-item.md)
+[Create List Item](../../orchestrator/create-list-item.md)
 
 [Delete Attachment](delete-attachment.md)
 

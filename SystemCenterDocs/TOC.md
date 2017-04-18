@@ -449,7 +449,7 @@
 #######[Invoke rest service](orchestrator/invoke-rest-service.md)
 #### [SharePoint](orch/manage/integration-pack-for-microsoft-sharepoint.md)
 ##### [SharePoint activities](orch/manage/sharepoint-activities.md)
-###### [Create List Item](orch/manage/create-list-item.md)
+###### [Create List Item](orchestrator/create-list-item.md)
 ###### [Delete Attachment](orch/manage/delete-attachment.md)
 ###### [Delete Document](orch/manage/delete-document.md)
 ###### [Delete List Item](orch/manage/delete-list-item.md)
