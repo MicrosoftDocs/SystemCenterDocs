@@ -32,7 +32,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
     Describes how to remove and add members to the Orchestrator Users Group.
 
--   [How to Configure Orchestrator Database Connections](../manage/how-to-configure-orchestrator-database-connections.md)
+-   [How to Configure Orchestrator Database Connections](../../orchestrator/how-to-configure-orchestrator-database-connections.md)
 
     Describes how to use DBSetup to configure connections to an Orchestrator database.
 
