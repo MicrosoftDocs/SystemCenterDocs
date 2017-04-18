@@ -566,7 +566,7 @@
 #######[Update user role property](orch/manage/update-user-role-property.md)
 #######[Update user role quota](orch/manage/update-user-role-quota.md)
 #######[Update vm](orch/manage/update-vm.md)
-##### [VMWare vSphere](orch/manage/vsphere-integration-pack.md)
+##### [VMWare vSphere](orchestrator/vsphere-integration-pack.md)
 ###### [VMWare vShere Activities](orch/manage/vsphere-activities.md)
 #######[Add network adapter activity](orch/manage/add-network-adapter-activity.md)
 #######[Add vm disk activity](orch/manage/add-vm-disk-activity.md)
