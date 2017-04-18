@@ -148,7 +148,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Move Group](move-group.md)
 
-[Move User](../orch/manage/move-user.md)
+[Move User](move-user.md)
 
 [Remove Computer From Group](../orch/manage/remove-computer-from-group.md)
 
