@@ -19,7 +19,7 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to create and manage Run As accounts in System Center 2016 - Virtual Machine Manager (VMM) server.
 
-A Run As account is a container for a set of stored credentials. In VMM a Run As account can be provided for any process that requires credentials. Administrators and Delegated Administrators can create Run As accounts. [Learn more](../manage-account.md#run-as-accounts) about different types of Run As accounts.
+A Run As account is a container for a set of stored credentials. In VMM a Run As account can be provided for any process that requires credentials. Administrators and Delegated Administrators can create Run As accounts. [Learn more](manage-account.md#run-as-accounts) about different types of Run As accounts.
 
 
 1.  Click **Settings**, and in **Create** click **Create Run As Account**.

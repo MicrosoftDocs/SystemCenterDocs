@@ -53,4 +53,4 @@ Note that:
 ## Next steps
 
 - [Set up user roles](account-user-role.md)
-- [Set up run as accounts](manage/manage-permissions-runas.md)
+- [Set up run as accounts](account-runas.md)
