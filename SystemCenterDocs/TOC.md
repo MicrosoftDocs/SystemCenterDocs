@@ -763,7 +763,7 @@
 ### [Scenarios](vmm/scenario/scenario-overview.md)
 #### [Scenario: Deploy a VMM cloud](vmm/deploy-cloud.md)
 ##### [Create a VMM cloud](vmm/cloud-create.md)
-##### [Manage a VMM cloud](vmm/scenario/cloud-manage.md)
+##### [Manage a VMM cloud](vmm/cloud-manage.md)
 #### [Scenario: Deploy a guarded host fabric](vmm/scenario/guarded-overview.md)
 ##### [Deploy guarded hosts](vmm/scenario/guarded-hosts.md)
 ##### [Deploy a shielded VHDX and VM template](vmm/scenario/guarded-template.md)
