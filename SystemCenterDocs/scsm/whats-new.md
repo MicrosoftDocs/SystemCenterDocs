@@ -223,7 +223,7 @@ This release contains a new HTML based Self Service Portal which offers the foll
 -   Support of direct URLs for Self Service Portal pages
 -   Rich customization options
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](deploy-self-service-portal.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint-based Self-Service portal has been removed.

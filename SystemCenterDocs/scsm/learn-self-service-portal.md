@@ -66,7 +66,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 -   Google Chrome 46 and later  
 
 ## Deploy the new Self Service portal  
- See the [Deploy the New Self\-Service Portal](../sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md) article for detailed steps about how to deploy the new Self Service Portal. The following sections summarize key deployment considerations.  
+ See the [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) article for detailed steps about how to deploy the new Self Service Portal. The following sections summarize key deployment considerations.  
 
 ### Install the Portal as the default website  
  If you want to install new Self Service Portal on port 80, you must first move the default website in IIS to a different port-for example, port 8080-and then move Self Service Portal to port 80.  
@@ -185,7 +185,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
  Use the following sections to help you troubleshoot deployment issues that might affect you.  
 
 ### Definition changes \(Announcements\/Request Offerings\/Service Offerings\/Knowledge Articles\) are not shown  
- The new Self Service Portal uses a caching mechanism to store static data to provide fast response times. The cache timeout is set to 30 minutes by default, which is configurable. For more information, see [Deploy the New Self\-Service Portal](../sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md) in the Basic Customization section. Any changes to definitions of announcements, request offerings, service offerings, and knowledge articles are not shown until the cache is cleared.  
+ The new Self Service Portal uses a caching mechanism to store static data to provide fast response times. The cache timeout is set to 30 minutes by default, which is configurable. For more information, see [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) in the Basic Customization section. Any changes to definitions of announcements, request offerings, service offerings, and knowledge articles are not shown until the cache is cleared.  
 
  Memory caching used is based on .NET Framework [MemoryCache](https://msdn.microsoft.com/en-us/library/system.runtime.caching.memorycache\(v=vs.110\).aspx). Cached content remains in memory until the IIS Worker process is terminated. Restarting IIS does not help, because IIS does not remove an old process and then start a new one. Instead, it reuses an existing one. To enforce fresh reading and to remove cache data, identify the IIS Worker process that is associated with the instance and select **End task** before you restart IIS.  
 
@@ -203,7 +203,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
  ![pop&#45;up in Internet Explorer](./media/learn-self-service-portal/deploy-sm-ssp-pop-up.png)  
 
- The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](../sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md) in the Basic Customization section.  
+ The pop\-up above appears for the App Insights JavaScript SDK, which is integrated in the Self Service Portal to gather telemetry data. You can disable sending telemetry data by changing the value of the EnableTelemetry configuration parameter, which will remove the pop\-up.  For more information, see [Deploy the New Self\-Service Portal](deploy-self-service-portal.md) in the Basic Customization section.  
 
 ### You can access the portal on the computer that hosts IIS, but you can't access it from a remote computer  
  This issue may occur if Portal and SDK Service are located on different computers \(Stand\-Alone Self Service Portal Deployment\). This causes a double hop scenario when you try to access the portal from a remote computer. Therefore, the default portal configuration that is described under "Windows Authentication" won't work. To resolve this issue, use the "Basic Authentication" configuration instead.  
@@ -282,4 +282,4 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
 ## Next steps
 
-- Review [Deploy the Self-Service portal](../sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md) to deploy the Self-Service portal and customize it.
+- Review [Deploy the Self-Service portal](deploy-self-service-portal.md) to deploy the Self-Service portal and customize it.
