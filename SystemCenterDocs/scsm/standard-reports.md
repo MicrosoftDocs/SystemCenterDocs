@@ -197,7 +197,7 @@ You can use the following procedure to create a linked report.
 
 7.  Close the report.  
 
- After the next data warehouse synchronization, the new linked report is displayed in the folder where you saved it. For information about scheduling a data warehouse synchronization job, see [How to Schedule a Data Warehouse Job](../sm/manage/admin-how-to-schedule-a-data-warehouse-job.md).  
+ After the next data warehouse synchronization, the new linked report is displayed in the folder where you saved it. For information about scheduling a data warehouse synchronization job, see [How to Schedule a Data Warehouse Job](sched-dw-job.md).  
 
 > [!NOTE]  
 >  You might have to close and reopen the console after the synchronization job is complete to see the report.  
