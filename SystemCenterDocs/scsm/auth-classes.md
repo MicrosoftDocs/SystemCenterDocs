@@ -51,7 +51,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  **Inheritance of properties between classes**  
 
- ![Inheritance of properties between classes](../media/author-classinheritance.png)  
+ ![Inheritance of properties between classes](./media/auth-classes/author-classinheritance.png)  
 
  **Entity** has a single property, named **Display Name**. This property is inherited by all classes inheriting from **Entity**. All classes eventually inherit from **Entity**. That is why all classes have a **Display Name** property. No other classes in this example have properties until **Logical Device**, which defines **Name**, **Description**, and **DeviceID**. **DeviceID** is specified as the key property. These properties are all inherited by **Logical Disk** and **Logical Disk \(Server\)**. **Logical Disk \(Server\)** then adds the additional properties **Size**, **Drive Type**, and **File System**. The bottom\-level classes that are specific to the version of the operating system inherit the entire set of properties provided by those classes above them in the inheritance tree.  
 
@@ -105,7 +105,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  **Hosting relationships for SQL&nbsp;Server&nbsp;2008 classes**  
 
- ![Hosting relationship for SQL Server 2008 classes](../media/author-authguide_sqlhostingrelationship.png)  
+ ![Hosting relationship for SQL Server 2008 classes](./media/auth-classes/author-authguide_sqlhostingrelationship.png)  
 
  The **SQL&nbsp;2008 DB Engine** class represents an instance of SQL Server&nbsp;2008 installed on a particular computer. Because a database can be installed on only a single database engine, the **SQL&nbsp;2008 DB Engine** class hosts the **SQL&nbsp;2008 DB** class. There can be several databases with the same name in a management group, but any databases installed on a particular instance of the **SQL Server** class must have a unique name. The database engine, in turn, is hosted by the **Windows Computer** class. There can be several **SQL Server** instances with the same name in a management group. Each one on a particular computer must have a unique name.  
 
@@ -113,7 +113,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
  **Sample database hosting relationships**  
 
- ![Sample Database Hosting Relationship](../media/author-authguide_sampledatabasehosting.png)  
+ ![Sample Database Hosting Relationship](./media/auth-classes/author-authguide_sampledatabasehosting.png)  
 
 ## General guidelines and best practices for classes
 
