@@ -21,7 +21,7 @@
 ### [Get started](dpm/get-started/Get-started.md)
 #### [Add Modern Backup storage](dpm/add-storage.md)
 #### [Get ready to deploy DPM servers](dpm/plan-dpm-deployment.md)
-#### [Get DPM installed](dpm/get-started/Get-DPM-installed.md)
+#### [Get DPM installed](dpm/install-dpm.md)
 #### [Prepare data storage](dpm/plan-long-and-short-term-data-storage.md)
 #### [Preparing your environment for Data Protection Manager](dpm/prepare-environment-for-dpm.md)
 #### [Identify compatible tape libraries](dpm/identify-compatible-tape-libraries.md)

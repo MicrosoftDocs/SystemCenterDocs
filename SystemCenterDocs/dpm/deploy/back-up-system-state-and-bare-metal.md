@@ -111,7 +111,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
 
-    -   [Get DPM installed](../get-started/Get-DPM-installed.md)
+    -   [Get DPM installed](../install-dpm.md)
 
 2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
