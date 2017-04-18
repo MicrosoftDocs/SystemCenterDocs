@@ -34,7 +34,7 @@ You can use service templates to create a guest cluster . That cluster can then 
 
 ## Specify scripts that run when a guest cluster is created
 
-1. [Set up an application profile](manage-library-add-profiles.md#create-an-application-profile).
+1. [Set up an application profile](../library-profiles.md#create-an-application-profile).
 2. In **New Application Profile** > **General** > **Compatibility** leave the default **General** setting enabled.
 3. In **Application Configuration** > **OS Compatibility** select one or more editions of a server operating system (not earlier than Windows Server 2012).
 4. Add the scripts you need for creating the first node of the cluster and then adding other nodes. Provide the scripts as follows:

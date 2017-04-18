@@ -53,4 +53,4 @@ You'll need to be an admin, delegated admin or self-service user to mark objects
 
 ## Next steps
 
-[Learn about](manage/manage-library-add-profiles.md) adding profiles to the VMM library.
+[Learn about](library-profiles.md) adding profiles to the VMM library.
