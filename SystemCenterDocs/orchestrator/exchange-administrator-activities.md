@@ -147,4 +147,4 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Update Move Request](update-move-request.md)
 
-[Update Remote Mailbox (Hybrid)](../orch/manage/update-remote-mailbox-hybrid.md)
+[Update Remote Mailbox (Hybrid)](update-remote-mailbox-hybrid.md)
