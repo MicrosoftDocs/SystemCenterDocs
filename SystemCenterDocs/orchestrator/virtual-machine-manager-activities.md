@@ -119,7 +119,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Create Network Adapter](create-network-adapter.md)
 
-[Create New Disk](../orch/manage/create-new-disk.md)
+[Create New Disk](create-new-disk.md)
 
 [Create User Role](../orch/manage/create-user-role.md)
 

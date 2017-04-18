@@ -525,7 +525,7 @@
 #######[Create checkpoint](orchestrator/create-checkpoint.md)
 #######[Create network adapter](orchestrator/create-network-adapter.md)
 #######[Create new disk from vhd](orchestrator/create-new-disk-from-vhd.md)
-#######[Create new disk](orch/manage/create-new-disk.md)
+#######[Create new disk](orchestrator/create-new-disk.md)
 #######[Create user role](orch/manage/create-user-role.md)
 #######[Create vm from template](orch/manage/create-vm-from-template.md)
 #######[Create vm from vhd](orch/manage/create-vm-from-vhd.md)
