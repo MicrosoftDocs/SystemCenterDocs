@@ -56,7 +56,7 @@ You can create service templates if you have VMM admin or delegated admin permis
 
 ## Add a VM network to the service template
 
-You'll need to configure network settings for a tier by connecting the tier adapters to one or more [VM networks](manage/manage-network-vm-networks.md). To do this you'll add a logical network component and then use the connector tool to connect it to the adapter.
+You'll need to configure network settings for a tier by connecting the tier adapters to one or more [VM networks](network-virtual.md). To do this you'll add a logical network component and then use the connector tool to connect it to the adapter.
 
 1. In the Service Template Designer, click **Service Template Components** > **Add VM Network**.
 2. When the network appears as a component, use the Connector to connect to the appropriate NIC.

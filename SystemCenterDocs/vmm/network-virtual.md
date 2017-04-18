@@ -31,8 +31,8 @@ In a virtualized network environment, we want to abstract virtual machines from 
 
 ## Before you start
 
-- In some circumstances you'll need to create a static IP address pool on the VM network after you've created it. [Learn more](manage-network-static-address-pools.md).
-- By default machines within a specific VM network can connect to each other. If your VM network will connect to other networks you can configure it with a gateway (network service). If you want to add a gateway to the VM network you'll need to create it. [Learn more](manage-network-gateway.md).
+- In some circumstances you'll need to create a static IP address pool on the VM network after you've created it. [Learn more](manage/manage-network-static-address-pools.md).
+- By default machines within a specific VM network can connect to each other. If your VM network will connect to other networks you can configure it with a gateway (network service). If you want to add a gateway to the VM network you'll need to create it. [Learn more](manage/manage-network-gateway.md).
 
 
 ## Create a VM network (network virtualization)

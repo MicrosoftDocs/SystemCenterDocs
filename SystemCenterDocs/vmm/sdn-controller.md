@@ -353,7 +353,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 - Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
 - Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
 
-1. [Create a VM network](manage/manage-network-vm-networks.md) for each tenant.
+1. [Create a VM network](network-virtual.md) for each tenant.
 2. [Create an IP address pool](manage/manage-network-static-address-pools.md) for each VM network.
 
 ### Create tenant virtual machines
