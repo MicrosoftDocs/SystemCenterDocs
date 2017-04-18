@@ -32,7 +32,7 @@ To download this integration pack, see [IBM Tivoli Netcool Integration Pack for 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
 ## Deploying the Integration Pack
-See [Deploying IBM Tivoli Netcool Integration Pack](deploying-the-ibm-tivoli-netcool-omnibus-integration-pack.md)
+See [Deploying IBM Tivoli Netcool Integration Pack](../orch/manage/tivoli-netcool-omnibus-integration-pack.md)
 
 ## Known Issues
 
