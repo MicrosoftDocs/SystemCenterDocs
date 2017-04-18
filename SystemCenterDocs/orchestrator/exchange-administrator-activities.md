@@ -137,7 +137,7 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Get Remote Mailbox (Hybrid)](get-remote-mailbox-hybrid.md)
 
-[Remove Mailbox](../orch/manage/remove-mailbox.md)
+[Remove Mailbox](remove-mailbox.md)
 
 [Remove Remote Mailbox (Hybrid)](../orch/manage/remove-remote-mailbox-hybrid.md)
 
