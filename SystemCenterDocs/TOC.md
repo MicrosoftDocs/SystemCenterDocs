@@ -42,7 +42,7 @@
 #### [Prepare machines in workgroups and untrusted domains for backup](dpm/back-up-machines-in-workgroups-and-untrusted-domains.md)
 #### [Back up the DPM server](dpm/back-up-the-dpm-server.md)
 ### [Manage and monitor DPM](DPM/Manage/Manage-and-monitor-DPM.md)
-#### [Monitor DPM](DPM/Manage/Monitor-DPM.md)
+#### [Monitor DPM](dpm/monitor-dpm.md)
 #### [Set up DPM logging](DPM/Manage/Set-up-DPM-logging.md)
 #### [Generate DPM reports](DPM/Manage/Generate-DPM-reports.md)
 #### [Manage and monitor DPM servers with Operations Manager](dpm/Manage/Manage-and-monitor-DPM-servers-with-Operations-Manager.md)

@@ -18,7 +18,7 @@ ms.author: markgal
 
 This section describes how to manage, maintain, and monitor DPM after you've completed deployment.
 
--   [Monitor DPM](Monitor-DPM.md)
+-   [Monitor DPM](../monitor-dpm.md)
 
 -   [Set up DPM logging](Set-up-DPM-logging.md)
 
