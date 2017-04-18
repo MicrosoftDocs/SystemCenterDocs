@@ -149,7 +149,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Monitor Object](monitor-object.md)
 
-[Update Activity](../orch/manage/update-activity.md)
+[Update Activity](update-activity.md)
 
 [Update Object](../orch/manage/update-object.md)
 
