@@ -37,9 +37,9 @@ However, the PAM authentication used by the Operations Manager agent does not re
   
 ## Next steps
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md)  
+- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
 
-- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
+- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](../../z-harvest-om/om/manage/how-to-configure-sudo-elevation-and-ssh-keys.md)  
 
-- Review the [Configuring SSL Ciphers](Configuring-SSL-Ciphers.md) if you need to reconfigure Operations Manager to use a different cipher.   
+- Review the [Configuring SSL Ciphers](../om/manage/configuring-ssl-ciphers.md) if you need to reconfigure Operations Manager to use a different cipher.   
   

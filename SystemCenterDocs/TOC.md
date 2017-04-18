@@ -174,7 +174,7 @@
 ##### [Accessing UNIX and Linux computers](scom/manage-security-authenticate-crossplat.md)
 ###### [How to set credentials for accessing UNIX and Linux computers](scom/manage-security-create-crossplat-credentials.md)
 ###### [How to configure sudu elevation and SSH keys](scom/manage-security-create-crossplat-sudo-sshkeys.md)
-###### [Required capabilities for UNIX and Linux computers](om/manage/required-capabilities-for-unix-and-linux-accounts.md)
+###### [Required capabilities for UNIX and Linux computers](scom/manage-security-crossplat-capabilities.md)
 ###### [Configuring SSL ciphers](om/manage/configuring-ssl-ciphers.md)
 ###### [Administering and configuring the UNIX/Linux agent](om/manage/administering-and-configuring-the-unix-linux-agent.md)
 #### [Operations Manager monitoring scenarios](om/manage/operations-manager-monitoring-scenarios.md)

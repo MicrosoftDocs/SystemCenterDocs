@@ -50,7 +50,7 @@ In Operations Manager, the system administrator is no longer is required to prov
   
     Describes how to configure an unprivileged account to be elevated to have privileged access on a UNIX or Linux computer.  
   
--   [Required Capabilities for UNIX and Linux Accounts](../om/manage/required-capabilities-for-unix-and-linux-accounts.md)  
+-   [Required Capabilities for UNIX and Linux Accounts](manage-security-crossplat-capabilities.md)  
   
     Describes the permissions on the UNIX or Linux computers that are required to be configured with Run As profiles for use by Operations Manager.  
   
