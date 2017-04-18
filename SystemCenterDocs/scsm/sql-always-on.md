@@ -54,7 +54,7 @@ Use the following series of tasks when using an existing management group with a
 1. Prepare SQL Server AlwaysOn setup separately. You might also consider SQL Server AlwaysOn with an FCI.
 2. Create an availability group listener(AGL) and choose an appropriate port number. Avoid the default port 1433. For example: AGL name = SMListener and AGL Port = 5122
 3. Open the inbound port for the SQL Server instance and AGL on each computer running SQL Server.
-4. Review the information at [Move the Service Manager and data warehouse databases](deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md#move-the-service-manager-database)  and follow the steps there, with the following changes:
+4. Review the information at [Move the Service Manager and data warehouse databases](../sm/deploy/deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md#move-the-service-manager-database)  and follow the steps there, with the following changes:
     1. In step 5, *To Configure Service Manager tables*, use the `AGL Name,AGL Port number` instead of the computer name hosting the Service Manager database, for example: SMListener,5122
     2. In Step 6, use the `AGL Name,AGL Port number` to update the both DWStaging and Config database tables.
     3. In Step 7, *Configure the registry on all the management servers*, change the registry key `HKEY\_LOCAL\_MACHINE\Software\Microsoft\System Center2010\Common\Database` and give `DatabaseServerName` as `AGL Name,AGL Port number`.
@@ -63,4 +63,4 @@ To summarize, you are changing the computer name hosting the Service Manager dat
 
 ## Next steps
 
-- Review [Create and deploy server images of Service Manager](deploy-how-to-create-and-deploy-server-images-of-service-manager.md) to create a system image that contains software needed for use as a template so that you can apply it to new servers.
+- Review [Create and deploy server images of Service Manager](../sm/deploy/deploy-how-to-create-and-deploy-server-images-of-service-manager.md) to create a system image that contains software needed for use as a template so that you can apply it to new servers.
