@@ -906,7 +906,7 @@
 ##### [Child Runbooks in Service Management Automation](sma/link-runbooks.md)
 ##### [Building an Integration Module](sma/build-integration-modules.md)
 ## [Service Provider Foundation](SPF/service-provider-foundation.md)
-### [Get started with SPF](spf/get-started/get-started-overview.md)
+### [Get started with SPF](vmm/overview.md)
 ### [Plan SPF deployment](spf/plan-spf.md)
 #### [System requirements](spf/system-reqs.md)
 ### [Upgrade SPF](spf/upgrade.md)
