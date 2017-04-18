@@ -848,7 +848,7 @@
 ##### [Manage dynamic and power optimization for virtual machines](vmm/vm-optimization.md)
 ##### [Create VM role templates](vmm/vm-role-template.md)
 #### [Migrate virtual machines and storage](vmm/migrate.md)
-##### [Migrate a virtual machine](vmm/manage/manage-vm-migrate.md)
+##### [Migrate a virtual machine](vmm/migrate-vm.md)
 ##### [Migrate virtual machine storage](vmm/manage/manage-vm-migrate-storage.md)
 ##### [Run a live migration](vmm/manage/manage-vm-migrate-live.md)
 #### [Manage roles and accounts](vmm/manage/manage-permissions-overview.md)

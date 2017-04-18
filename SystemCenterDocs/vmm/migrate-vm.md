@@ -26,7 +26,7 @@ To perform a migration, you can do any of the following:
 
 -   **Drag the virtual machine onto a host**: When you drag a virtual machine to a host, VMM uses automatic placement to place the virtual machine on the most suitable volume on the host. The placement is based on available space.
 
--   **Drag the virtual machine onto a host group**: When you drag the virtual machine to a host group, VMM uses automatic placement to place the virtual machine on the most suitable host that is available in the host group, which is based on the virtual machine requirements and the host ratings. The virtual machine is placed on the most suitable volume on the host. The placement is based on available space. During automatic placement, the [host rating process](../provision-vms.md#host-ratings) identifies the most suitable volume on each host.
+-   **Drag the virtual machine onto a host group**: When you drag the virtual machine to a host group, VMM uses automatic placement to place the virtual machine on the most suitable host that is available in the host group, which is based on the virtual machine requirements and the host ratings. The virtual machine is placed on the most suitable volume on the host. The placement is based on available space. During automatic placement, the [host rating process](provision-vms.md#host-ratings) identifies the most suitable volume on each host.
 
 Note the following before you begin migration:
 
