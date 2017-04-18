@@ -21,7 +21,7 @@ Read this article to learn about VM templates and how to manage them in the Syst
 Templates help you to create VMs with consistent settings. VMM provides two types of templates:
 
 - VM templates are database objects that are stored in the VMM library. They're used to quickly set up VMs.
-- [Service templates](manage/manage-library-add-service-templates.md) define how a service is configured. They include information about the VMs that are deployed as part of the service, which applications to install on VMs, and the network settings that should be used. Service templates usually contain VM templates.
+- [Service templates](library-resources.md) define how a service is configured. They include information about the VMs that are deployed as part of the service, which applications to install on VMs, and the network settings that should be used. Service templates usually contain VM templates.
 
 There are two methods for creating a VM template:
 - From an existing virtual hard disk or VM template in the VMM library.

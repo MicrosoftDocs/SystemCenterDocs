@@ -21,7 +21,7 @@ Read this article to learn about integrating Windows network load balancing (NLB
 
 Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.
 
-Service templates can be single or multi tier. A single tier service contains one VM used as a specific app. A multi-tier service contains multiple VMs. [Learn more](manage-library-add-service-templates.md).
+Service templates can be single or multi tier. A single tier service contains one VM used as a specific app. A multi-tier service contains multiple VMs. [Learn more](../library-resources.md).
 
 
 
