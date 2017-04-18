@@ -32,7 +32,7 @@ You can deploy additional Service Manager management servers to load\-balance ad
  To associate your additional Service Manager management servers with the initial Service Manager management server and management group, you must specify the Service Manager database that you used for your initial Service Manager management server.  
 
 ## Disjointed namespace considerations  
- If you are installing an additional management server in an environment with a disjointed namespace, see [Deployment considerations with a disjointed namespace](deploy-deployment-considerations-with-a-disjointed-namespace.md).  
+ If you are installing an additional management server in an environment with a disjointed namespace, see [Deployment considerations with a disjointed namespace](../sm/deploy/deploy-deployment-considerations-with-a-disjointed-namespace.md).  
 
 ## Install an additional management server
 
@@ -71,8 +71,8 @@ The following procedure shows how to install an additional management server in 
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Complete deployment by backing up the encryption key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Complete deployment by backing up the encryption key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 ## Next steps
 
-- Review [Deployment considerations with a disjointed namespace](deploy-deployment-considerations-with-a-disjointed-namespace.md) to perform additional steps when you deploy either an additional Service Manager management server or Self-Service Portal in an environment with a disjointed namespace.
+- Review [Deployment considerations with a disjointed namespace](../sm/deploy/deploy-deployment-considerations-with-a-disjointed-namespace.md) to perform additional steps when you deploy either an additional Service Manager management server or Self-Service Portal in an environment with a disjointed namespace.

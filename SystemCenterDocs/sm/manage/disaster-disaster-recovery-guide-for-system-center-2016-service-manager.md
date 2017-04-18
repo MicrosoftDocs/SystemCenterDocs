@@ -42,7 +42,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 1.  Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
 
-2.  When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](../deploy/deploy-deploying-additional-service-manager-management-servers.md).  
+2.  When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](../../scsm/deploy-additional-ms.md).  
 
  If promoting an additional Service Manager management server is not an option, you have to install a replacement management server. Installing a replacement Service Manager management server involves the following procedures:  
 

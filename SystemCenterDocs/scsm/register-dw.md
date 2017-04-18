@@ -106,4 +106,4 @@ Several management packs are imported during the data warehouse registration pro
 
 ## Next steps
 
-- Review [Deploy additional Service Manager management servers](../sm/deploy/deploy-deploying-additional-service-manager-management-servers.md) to install additional Service Manager management servers to improve performance.
+- Review [Deploy additional Service Manager management servers](deploy-additional-ms.md) to install additional Service Manager management servers to improve performance.

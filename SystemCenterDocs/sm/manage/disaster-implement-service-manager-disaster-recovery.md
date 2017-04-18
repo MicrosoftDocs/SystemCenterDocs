@@ -114,7 +114,7 @@ You can use the following procedure to reinstall a data warehouse management ser
 
 ### Promote a Service Manager management server
 
-When you first ran Setup for Service Manager, you installed the initial Service Manager management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional Service Manager management servers to load\-balance Service Manager console connections. Also, you can promote one of the additional Service Manager management servers to take over the role of a failed initial Service Manager management server. For more information, see [Deploying Additional Service Manager Management Servers](../deploy/deploy-deploying-additional-service-manager-management-servers.md).
+When you first ran Setup for Service Manager, you installed the initial Service Manager management server and you defined the management group for your installation. The initial management server handles all the workflows in your Service Manager environment. You can use additional Service Manager management servers to load\-balance Service Manager console connections. Also, you can promote one of the additional Service Manager management servers to take over the role of a failed initial Service Manager management server. For more information, see [Deploying Additional Service Manager Management Servers](../../scsm/deploy-additional-ms.md).
 
  You can use the following procedures to promote a secondary Service Manager management server.  
 
