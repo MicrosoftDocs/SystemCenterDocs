@@ -518,7 +518,7 @@
 #######[Update activity](orchestrator/update-activity.md)
 #######[Update object](orchestrator/update-object.md)
 #######[Upload attachment](orchestrator/upload-attachment.md)
-##### [Virtual Machine Manager](orch/manage/integration-pack-for-virtual-machine-manager.md)
+##### [Virtual Machine Manager](orchestrator/integration-pack-for-virtual-machine-manager.md)
 ###### [Virtual Machine Manager Activities](orch/manage/virtual-machine-manager-activities.md)
 #######[Apply pending service update ](orch/manage/apply-pending-service-update-in-system-center-2016.md)
 #######[Configure service deployment](orch/manage/configure-service-deployment-in-system-center-2016.md)
