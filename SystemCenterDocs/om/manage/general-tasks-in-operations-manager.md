@@ -24,7 +24,7 @@ ms.topic: article
 
 -   [Running tasks in Operations Manager](../../scom/manage-running-tasks.md)
 
--   [Connecting management groups](connecting-management-groups-in-operations-manager.md)
+-   [Connecting management groups](../../scom/manage-connecting-mgmtgroups.md)
 
 -   [Using Operations Manager Shell](using-operations-manager-shell.md)
 

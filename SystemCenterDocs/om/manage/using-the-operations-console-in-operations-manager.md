@@ -127,7 +127,7 @@ You can connect management groups to enable the forwarding of alerts and other m
   
 Use **Connected Management Groups** in the Administration workspace to connect a management group or to edit the properties of a connected management group.  
   
-For more information, see [Connecting Management Groups in Operations Manager](connecting-management-groups-in-operations-manager.md).  
+For more information, see [Connecting Management Groups in Operations Manager](../../scom/manage-connecting-mgmtgroups.md).  
   
 ### Device management  
 

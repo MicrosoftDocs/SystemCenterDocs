@@ -210,7 +210,7 @@
 ##### [How to suspend monitoring temporarily by using maintenance mode](om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md)
 ##### [Creating and managing groups](scom/manage-create-manage-groups.md)
 ##### [Running tasks in Operations Manager](scom/manage-running-tasks.md)
-##### [Connecting management groups in Operations Manager](om/manage/connecting-management-groups-in-operations-manager.md)
+##### [Connecting management groups in Operations Manager](scom/manage-connecting-mgmtgroups.md)
 ##### [Using Operations Manager shell](om/manage/using-operations-manager-shell.md)
 ##### [How to create and manage resource pools](om/manage/how-to-manage-resource-pools.md)
 ####  [Maintaining the Operations Manager Infrastructure](om/manage/maintaining-operations-manager.md)

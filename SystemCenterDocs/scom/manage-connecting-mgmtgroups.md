@@ -32,7 +32,7 @@ Connecting management groups offers these additional services:
 > [!IMPORTANT]  
 > Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center 2016 - Operations Manager.  
   
-In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Configuring a Firewall for Operations Manager](../../scom/plan-security-config-firewall.md).  
+In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).  
   
 Connected management groups support all Operations Manager user roles and makes use of the Operations Manager Connector Framework to enable bidirectional communication between the connected groups and local groups.  
   
@@ -85,12 +85,12 @@ In this procedure, you create a connection between two management groups. These 
   
 ## Next steps
   
-- To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md).  
+- To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](../om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md).  
 
-- Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](Creating-and-Managing-Groups.md).  
+- Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](../../z-harvest-om/om/manage/creating-and-managing-groups.md).  
 
-- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](Using-Operations-Manager-Shell.md) . 
+- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](../om/manage/using-operations-manager-shell.md) . 
 
-- To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](Running-Tasks-in-Operations-Manager.md).  
+- To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](../../z-harvest-om/om/manage/running-tasks-in-operations-manager.md).  
 
   

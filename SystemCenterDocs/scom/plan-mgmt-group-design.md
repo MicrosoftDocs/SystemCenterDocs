@@ -159,7 +159,7 @@ By connecting Operations Manager 2016 management groups, centralized monitoring 
 - Monitoring of a larger number of manage objects than is possible with a single management group. 
 - Isolation of monitoring activity according to logical business units, such as “Marketing,” or physical locations, such as Rome. 
 
-When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group.  In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console.  In addition, you can run tasks on the monitored computers of the connected management groups.  To learn how to connect management groups, see [Connecting management groups in Operations Manager](../om/manage/connecting-management-groups-in-operations-manager.md). 
+When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group.  In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console.  In addition, you can run tasks on the monitored computers of the connected management groups.  To learn how to connect management groups, see [Connecting management groups in Operations Manager](manage-connecting-mgmtgroups.md). 
 
 ### Installed languages
 
