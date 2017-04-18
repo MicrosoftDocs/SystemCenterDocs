@@ -434,7 +434,7 @@
 ###### [Close entry](orchestrator/close-entry.md)
 ###### [Create entry](orchestrator/create-entry.md)
 ###### [Get entry](orchestrator/get-entry.md)
-###### [Monitor entry](orch/manage/monitor-entry.md)
+###### [Monitor entry](orchestrator/monitor-entry.md)
 ###### [Update entry](orch/manage/update-entry.md)
 ##### [Netcool Integration Pack](orchestrator/tivoli-netcool-omnibus-integration-pack.md)
 ###### [IBM Netcool Activities](orchestrator/tivoli-netcool-omnibus-activities.md)

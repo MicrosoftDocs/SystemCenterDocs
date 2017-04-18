@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Monitor Entry activity invokes a runbook when new entries are generated and/or existing entries are modified in HP Service Manager.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](../../orchestrator/service-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](service-manager-activities.md).
 
 ## Monitor Entry Required Properties
 
@@ -44,10 +44,10 @@ Time synchronization between the Runbook Server and the HP Service Manager syste
 
 The Integration Pack for HP Service Manager contains the following additional activities:
 
-[Close Entry](../../orchestrator/close-entry.md)
+[Close Entry](close-entry.md)
 
-[Create Entry](../../orchestrator/create-entry.md)
+[Create Entry](create-entry.md)
 
-[Get Entry](../../orchestrator/get-entry.md)
+[Get Entry](get-entry.md)
 
-[Update Entry](update-entry.md)
+[Update Entry](../orch/manage/update-entry.md)

@@ -26,7 +26,7 @@ This topic provides instructions about how to build and test sample runbooks by 
 
     Provides step\-by\-step instructions about creating and testing a simple runbook.  
 
--   [Monitor a Folder within a Runbook](../orch/manage/monitor-a-folder-within-a-runbook.md)  
+-   [Monitor a Folder within a Runbook](monitor-a-folder-within-a-runbook.md)  
 
     Provides instructions about how to create a runbook that monitors the activity in a folder.  
 

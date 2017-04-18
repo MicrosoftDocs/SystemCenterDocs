@@ -41,4 +41,4 @@ The Integration Pack for HP Service Manager contains the following additional ac
 
 [Get Entry](../../orchestrator/get-entry.md)
 
-[Monitor Entry](monitor-entry.md)
+[Monitor Entry](../../orchestrator/monitor-entry.md)
