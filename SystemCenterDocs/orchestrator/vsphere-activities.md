@@ -49,7 +49,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Get Hosts Activity](get-hosts-activity.md)
 
-[Get Resource Pool Properties Activity](../orch/manage/get-resource-pool-properties-activity.md)
+[Get Resource Pool Properties Activity](get-resource-pool-properties-activity.md)
 
 [Get Resource Pools Activity](../orch/manage/get-resource-pools-activity.md)
 
