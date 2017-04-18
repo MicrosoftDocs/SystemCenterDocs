@@ -115,7 +115,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Create Checkpoint](create-checkpoint.md)
 
-[Create New Disk from VHD](../orch/manage/create-new-disk-from-vhd.md)
+[Create New Disk from VHD](create-new-disk-from-vhd.md)
 
 [Create Network Adapter](create-network-adapter.md)
 
