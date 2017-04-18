@@ -35,7 +35,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Delete Network Adapter Activity in System Center 2016](delete-network-adapter-activity-in-system-center-2016.md)
 
-[Delete VM Activity](../orch/manage/delete-vm-activity.md)
+[Delete VM Activity](delete-vm-activity.md)
 
 [Delete VM Disk Activity in System Center 2016](../orch/manage/delete-vm-disk-activity-in-system-center-2016.md)
 
