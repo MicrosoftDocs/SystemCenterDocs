@@ -687,7 +687,7 @@
 #### [Use the service catalog to offer services](scsm/service-catalog.md)
 #### [Use groups, queues, and lists in Service Manager](scsm/group-queue-lists.md)
 #### [Use runbooks to automate procedures](scsm/runbooks.md)
-#### [User interface customization](sm/manage/admin-user-interface-customization-in-system-center-2016-service-manager.md)
+#### [User interface customization](scsm/ui-customization.md)
 #### [Manage user roles](sm/manage/admin-managing-user-roles-in-system-center-2016-service-manager.md)
 #### [Manage Run As accounts](sm/manage/admin-managing-run-as-accounts-in-system-center-2016-service-manager.md)
 #### [Manage knowledge articles](sm/manage/admin-managing-knowledge-articles-in-system-center-2016-service-manager.md)
