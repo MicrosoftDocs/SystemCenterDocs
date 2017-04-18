@@ -28,7 +28,7 @@ ms.topic: article
 
 -   [Using Operations Manager Shell](../../scom/manage-using-omcmdlets.md)
 
--   [How to create and manage resource pools](how-to-manage-resource-pools.md) 
+-   [How to create and manage resource pools](../../scom/manage-resource-pools-manage.md) 
 
 
 ## Other resources  

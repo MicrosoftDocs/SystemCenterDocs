@@ -39,7 +39,7 @@ There are two types of membership, automatic and manual.  When you create a reso
 Because membership of the All Management Servers Resource Pool is automatic, any management server that is commissioned is automatically made a member of this resource pool.  In certain architectures and design considerations, such as those incorporating geographically dispersed contingency operations, automatic assignment to the All Management Servers Resource Pool may not be desired.  In these situations, it is possible to change the membership assignment from automatic to manual.  As such, management servers must be added to the All Management Servers Resource Pool through manual assignment.
 
 > [!NOTE] 
-> The membership of the All Management Servers Resource Pool is read-only.  To change its membership from automatic to manual, see [Modifying Pool Membership](../om/manage/how-to-manage-resource-pools.md#modifying-resource-pool-membership).
+> The membership of the All Management Servers Resource Pool is read-only.  To change its membership from automatic to manual, see [Modifying Pool Membership](manage-resource-pools-manage.md#modifying-resource-pool-membership).
 
 With the introduction of resource pools it is recommended that all members are connected by a low latency network (less than 10 ms). Resource pools should not be deployed across multiple data centers or in a hybrid-cloud environment like Microsoft Azure.
 
@@ -120,4 +120,4 @@ Linux/UNIX monitoring in Operations Manager can be assigned to a dedicated resou
 
 ## Next steps
 
-To learn how to create and manage resource pools, see [How to manage resource pools](../om/manage/how-to-manage-resource-pools.md).
+To learn how to create and manage resource pools, see [How to manage resource pools](manage-resource-pools-manage.md).

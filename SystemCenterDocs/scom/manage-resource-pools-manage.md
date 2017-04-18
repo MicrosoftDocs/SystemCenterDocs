@@ -47,7 +47,7 @@ A Resource Pool is a collection of management servers and/or gateway servers use
 
 When you view the resource pools in the **Administration** workspace, you will see that resource pools that you create have a manual membership type and resource pools created when Operations Manager was installed have an automatic membership type, as shown in the following image.
 
-![Resource Pool Membership Type](../media/om2016-resource-pool-membership-type.png)
+![Resource Pool Membership Type](./media/manage-resource-pools-manage/om2016-resource-pool-membership-type.png)
 
 By default, all management servers are members of the resource pools created when Operations Manager is installed, and any management servers added to the management group are automatically added to the resource pools that have an automatic membership type. You can remove individual management servers from those resource pools, however that will change the membership type to manual. If you add a management server to a management group after the membership type of the resource pools created when Operations Manager was installed is changed to manual, you must add the management server to the resource pool manually.
 
@@ -121,4 +121,4 @@ Perform this procedure whenever you add a new management server to the resource 
 
 ## Next steps
 
-For information about deployment considerations for resource pools, see [Planning Resource Pool Design](../../scom/plan-resource-pool-design.md)
+For information about deployment considerations for resource pools, see [Planning Resource Pool Design](plan-resource-pool-design.md)
