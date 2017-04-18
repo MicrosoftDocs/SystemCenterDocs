@@ -217,7 +217,7 @@
 ##### [How to configure Operations Manager to communicate with SQL Server](scom/manage-sqlserver-communication.md)
 ##### [How to move the Operational database](scom/manage-move-opsdb.md)
 ##### [How to move the Reporting data warehouse database](scom/manage-move-omdwdb.md)
-##### [How to configure grooming settings for the Operations Manager database](om/manage/how-to-configure-grooming-settings-for-the-operations-manager-database.md)
+##### [How to configure grooming settings for the Operations Manager database](scom/manage-omdb-grooming-settings.md)
 ##### [How to configure grooming settings for the Reporting data warehouse database](om/manage/how-to-configure-grooming-settings-for-the-reporting-data-warehouse-database.md)
 ## [Orchestrator](orch/Orchestrator.md)
 ### [Get Started](orch/get-started/get-started-with-orchestrator.md)

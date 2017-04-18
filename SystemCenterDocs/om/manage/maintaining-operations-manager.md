@@ -26,6 +26,6 @@ Operations Manager supports changes to your Operations Manager infrastructure as
 
 - [How to Configure Operations Manager to Communicate with SQL Server](../../scom/manage-sqlserver-communication.md)
 
-- [How to configure the grooming settings for the Operations Manager database](how-to-configure-grooming-settings-for-the-operations-manager-database.md)
+- [How to configure the grooming settings for the Operations Manager database](../../scom/manage-omdb-grooming-settings.md)
 
 - [How to configure the grooming settings for the Reporting data warehouse database](how-to-configure-grooming-settings-for-the-reporting-data-warehouse-database.md)  

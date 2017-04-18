@@ -68,5 +68,5 @@ After you have located the dataset and its aggregation type, scroll to the **Max
 ## Next steps
 
 To learn more about the default retention period for the different data types stored in the Operations Manager operational database and how to modify those settings, please see
-[How to configure grooming settings for the Operations Manager database](how-to-configure-grooming-settings-for-the-operations-manager-database.md).
+[How to configure grooming settings for the Operations Manager database](../../scom/manage-omdb-grooming-settings.md).
   
