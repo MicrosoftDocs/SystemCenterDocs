@@ -32,7 +32,7 @@ When connecting to a rebuilt database:
 
 -   You must have database permissions to create the database.  
 
-In contrast, DBconfig only creates a new database; it does not configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](../orch/manage/how-to-change-the-orchestrator-database.md).  
+In contrast, DBconfig only creates a new database; it does not configure the security for the database. DBConfig configures the database schema in the database and creates the contents of **settings.dat**, which contains the connection details for the management server and runbook servers. For more information on running DBConfig, see [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md).  
 
 ### To configure Orchestrator database connections  
 
@@ -47,4 +47,4 @@ In contrast, DBconfig only creates a new database; it does not configure the sec
 3.  After you add a new DB server to your deployment, you must also run permissionsconfig, and then export and import the service master key to the new database server.  
 
 ## See Also  
-[How to Change the Orchestrator Database](../orch/manage/how-to-change-the-orchestrator-database.md)  
+[How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md)  
