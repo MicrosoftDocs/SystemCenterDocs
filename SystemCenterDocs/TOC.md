@@ -191,7 +191,7 @@
 ###### [Reports for network monitoring](scom/manage-monitor-networkdevice-reports.md)
 ##### [Monitoring service level objectives](scom/manage-monitor-sla-overview.md)
 ###### [Create a service level dashboard](scom/manage-monitor-sla-create-dashboard.md)
-###### [Running a service level tracking report](om/manage/running-a-service-level-tracking-report.md)
+###### [Running a service level tracking report](scom/manage-monitor-sla-reports.md)
 ##### [Connecting Operations Manager with other management systems](scom/manage-integration-thirdparty-overview.md)
 ###### [How to configure a product connector subscription](om/manage/how-to-configure-a-product-connector-subscription.md)
 #### [General tasks in Operations Manager](om/manage/general-tasks-in-operations-manager.md)
