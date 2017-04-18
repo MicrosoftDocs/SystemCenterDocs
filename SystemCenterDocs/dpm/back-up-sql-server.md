@@ -103,15 +103,15 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../dpm-protection-matrix.md)
+    -   [What can DPM back up?](dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+    -   [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
-    -   [Get DPM installed](../install-dpm.md)
+    -   [Get DPM installed](install-dpm.md)
 
-2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
+2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 
 ## Configure backup
@@ -120,7 +120,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 2.  In **Select Protection Group Type**, select **Servers**.
 
-3.  In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](../create-dpm-protection-groups.md). Note that:
+3.  In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](create-dpm-protection-groups.md). Note that:
 
     -   You have the option of selecting protection at the instance level or protection of individual databases.
 
