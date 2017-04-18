@@ -424,7 +424,7 @@
 #######[Get annotation](orchestrator/get-annotation.md)
 #######[Get message](orchestrator/get-message.md)
 #######[Launch tool](orchestrator/launch-tool.md)
-#######[Monitor message](orch/manage/monitor-message.md)
+#######[Monitor message](orchestrator/monitor-message.md)
 #######[Own or disown message](orch/manage/own-or-disown-message.md)
 #######[Set custom attribute](orch/manage/set-custom-attribute.md)
 #######[Update annotation](orch/manage/update-annotation.md)

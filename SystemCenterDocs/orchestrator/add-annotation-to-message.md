@@ -62,7 +62,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Launch Tool](launch-tool.md)
 
-[Monitor Message](../orch/manage/monitor-message.md)
+[Monitor Message](monitor-message.md)
 
 [Own/Disown Message](../orch/manage/own-or-disown-message.md)
 

@@ -63,7 +63,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Launch Tool](../../orchestrator/launch-tool.md)
 
-[Monitor Message](monitor-message.md)
+[Monitor Message](../../orchestrator/monitor-message.md)
 
 [Set Custom Attribute](set-custom-attribute.md)
 

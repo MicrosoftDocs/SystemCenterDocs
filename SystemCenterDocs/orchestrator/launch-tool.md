@@ -84,7 +84,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Get Message](get-message.md)
 
-[Monitor Message](../orch/manage/monitor-message.md)
+[Monitor Message](monitor-message.md)
 
 [Own/Disown Message](../orch/manage/own-or-disown-message.md)
 

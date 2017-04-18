@@ -131,7 +131,7 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Launch Tool](launch-tool.md)
 
-[Monitor Message](../orch/manage/monitor-message.md)
+[Monitor Message](monitor-message.md)
 
 [Own/Disown Message](../orch/manage/own-or-disown-message.md)
 
