@@ -361,4 +361,4 @@ To solve this problem, an administrator can add the user back to OrchestratorSys
 ## Next steps
 
 - To learn more about building runbooks see [Design and build runbooks](../orch/manage/design-and-build-runbooks.md).
-- To learn more about deploying runbooks see [Deploy runbooks](../orch/deploy/deploy-runbooks.md)
+- To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)

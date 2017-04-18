@@ -17,7 +17,7 @@ manager: carmonm
 
 > Applies To: System Center 2016 - Orchestrator
 
-The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the Orchestration console which is described in [Overview of the Orchestration Console](../get-started/console-overview.md).  
+The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the Orchestration console which is described in [Overview of the Orchestration Console](../../orchestrator/console-overview.md).  
 
 To build a runbook you drag activities onto the workspace. Activities are the building blocks of runbooks. In general, individual activities perform three actions:
 
