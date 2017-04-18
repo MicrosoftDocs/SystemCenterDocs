@@ -19,7 +19,7 @@ ms.assetid: 4aee1627-a7c4-4299-847a-a5bfb87a4133
 
 >Applies To: System Center 2016 - Service Manager
 
-An installation log file is captured during the installation of System Center 2016 – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](../manage/admin-troubleshooting-a-data-warehouse-job.md).
+An installation log file is captured during the installation of System Center 2016 – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](../sm/manage/admin-troubleshooting-a-data-warehouse-job.md).
 
 
 
@@ -45,4 +45,4 @@ You have to either increase the amount of free disk space that is available or r
 
 ## Next steps
 
-- Review [Deploy Service Manager from a command line](deploy-deploying-service-manager-from-a-command-line.md) to deploy Service Manager using command-line parameters.
+- Review [Deploy Service Manager from a command line](../sm/deploy/deploy-deploying-service-manager-from-a-command-line.md) to deploy Service Manager using command-line parameters.

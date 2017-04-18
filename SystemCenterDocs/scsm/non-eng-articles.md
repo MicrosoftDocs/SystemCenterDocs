@@ -128,4 +128,4 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
 ## Next steps
 
-- Review [Troubleshoot deployment issues to resolve problems](../sm/deploy/deploy-troubleshooting-system-center-2016-service-manager-deployment-issues.md) to review logs files that are created when you install Service Manager and how you can use these logs to troubleshoot deployment issues.
+- Review [Troubleshoot deployment issues to resolve problems](troubleshoot-deployment.md) to review logs files that are created when you install Service Manager and how you can use these logs to troubleshoot deployment issues.
