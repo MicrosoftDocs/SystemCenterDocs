@@ -25,4 +25,4 @@ In the VMM fabric you can:
 - [Add existing Windows servers and clusters](hyper-v-existing.md) with or without the Hyper-V role to the VMM fabric.
 - [Add a Nano server](hyper-v-nano.md) as a Hyper-V host or cluster in the VMM fabric.
 - [Create a Hyper-V cluster](hyper-v-standalone.md) from existing standalone Hyper-V hosts in the VMM fabric.
-- [Provision a Hyper-V host or cluster from bare metal](manage/manage-compute-bare-metal-hyper-v.md) in the VMM fabric.
+- [Provision a Hyper-V host or cluster from bare metal](hyper-v-bare-metal.md) in the VMM fabric.

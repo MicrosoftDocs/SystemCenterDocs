@@ -32,7 +32,7 @@ System Center 2016 - Virtual Machine Manager (VMM) supports using the rolling up
 
 - The cluster must be managed by VMM.
 - The cluster must be running Windows Server 2012 R2.
-- The cluster must meet the [requirements](manage/manage-compute-bare-metal-hyper-v.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade VMM records the node's network and disk configuration and uses that information instead of the computer profile.
+- The cluster must meet the [requirements](hyper-v-bare-metal.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade VMM records the node's network and disk configuration and uses that information instead of the computer profile.
 - You can upgrade nodes that weren't originally provisioned using bare metal as long as those nodes meet bare metal requirements such as BMC. You'll need to provide this information in the upgrade wizard.
 - The VMM library needs a virtual hard disk configured with Windows Server 2016.
 
