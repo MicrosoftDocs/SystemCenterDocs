@@ -34,7 +34,7 @@ Orchestrator provides a workflow management solution for the data center. Orches
 
     Provides additional resources to help you use Orchestrator.
 
--   [Upgrade to Orchestrator 2016](../get-started/upgrade-to-orchestrator.md)
+-   [Upgrade to Orchestrator 2016](../../orchestrator/upgrade-to-orchestrator.md)
 
 ## Other resources for this product
 

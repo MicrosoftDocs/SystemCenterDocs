@@ -224,7 +224,7 @@
 #### [Orchestrator Overview](orch/get-started/learn-about-orchestrator.md)
 #### [Automate with Runbooks](orch/get-started/automate-runbooks.md)
 #### [Overview of the Orchestrator Console](orch/get-started/console-overview.md)
-#### [Upgrade to Orchestrator 2016](orch/get-started/upgrade-to-orchestrator.md)
+#### [Upgrade to Orchestrator 2016](orchestrator/upgrade-to-orchestrator.md)
 #### [Orchestrator Resources](orch/get-started/orchestrator-resources.md)
 #### [Runbook designer](orch/get-started/runbook-designer.md)
 #### [Orchestrator logs](orch/get-started/orchestrator-logs.md)
