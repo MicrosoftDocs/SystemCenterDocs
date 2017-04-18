@@ -592,7 +592,7 @@
 #######[Modify vm disk activity](orchestrator/modify-vm-disk-activity-in-system-center-2016.md)
 #######[Move vm activity](orchestrator/move-vm-activity.md)
 #######[Reconfigure vm activity](orchestrator/reconfigure-vm-activity.md)
-#######[Reset vm activity](orch/manage/reset-vm-activity.md)
+#######[Reset vm activity](orchestrator/reset-vm-activity.md)
 #######[Revert vm snapshot activity](orch/manage/revert-vm-snapshot-activity.md)
 #######[Set vm cd or](orch/manage/set-vm-cd-or-dvd-to-iso-image-activity.md)
 #######[Set vm networks activity](orch/manage/set-vm-networks-activity.md)
