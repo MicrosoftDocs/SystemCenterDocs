@@ -35,7 +35,7 @@ The following tables list the required properties and published data for this ac
 
 The Integration Pack for HP Service Manager contains the following additional activities:
 
-[Close Entry](close-entry.md)
+[Close Entry](../../orchestrator/close-entry.md)
 
 [Create Entry](create-entry.md)
 

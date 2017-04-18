@@ -44,7 +44,7 @@ Time synchronization between the Runbook Server and the HP Service Manager syste
 
 The Integration Pack for HP Service Manager contains the following additional activities:
 
-[Close Entry](close-entry.md)
+[Close Entry](../../orchestrator/close-entry.md)
 
 [Create Entry](create-entry.md)
 

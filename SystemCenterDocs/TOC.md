@@ -431,7 +431,7 @@
 #######[Update message](orchestrator/update-message.md)
 #### [Hewlett Packard Service Manager Integration Pack](orch/manage/hp-service-manager-integration-pack.md)
 ##### [HP Service Manager Activities](orchestrator/service-manager-activities.md)
-###### [Close entry](orch/manage/close-entry.md)
+###### [Close entry](orchestrator/close-entry.md)
 ###### [Create entry](orch/manage/create-entry.md)
 ###### [Get entry](orch/manage/get-entry.md)
 ###### [Monitor entry](orch/manage/monitor-entry.md)

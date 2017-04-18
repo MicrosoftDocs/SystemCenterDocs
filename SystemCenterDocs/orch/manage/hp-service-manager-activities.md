@@ -120,7 +120,7 @@ For a list of the data elements published by each activity, see the Published Da
 
 This integration pack adds the HP Service Manager category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Close Entry](close-entry.md)
+[Close Entry](../../orchestrator/close-entry.md)
 
 [Create Entry](create-entry.md)
 
