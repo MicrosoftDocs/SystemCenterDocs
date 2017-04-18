@@ -761,7 +761,7 @@
 ##### [Plan the VMM networking fabric](vmm/plan-network.md)
 ##### [Supported storage arrays](vmm/supported-arrays.md)
 ### [Scenarios](vmm/scenario/scenario-overview.md)
-#### [Scenario: Deploy a VMM cloud](vmm/scenario/cloud-overview.md)
+#### [Scenario: Deploy a VMM cloud](vmm/deploy-cloud.md)
 ##### [Create a VMM cloud](vmm/scenario/cloud-create.md)
 ##### [Manage a VMM cloud](vmm/scenario/cloud-manage.md)
 #### [Scenario: Deploy a guarded host fabric](vmm/scenario/guarded-overview.md)
