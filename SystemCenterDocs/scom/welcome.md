@@ -1,4 +1,4 @@
----
+﻿---
 ms.assetid: 935c8a61-f878-40d4-86ed-ac4eb71a3f75
 title: Operations Manager
 description: This article is the main landing page for all content related to System Center 2016 - Operations Manager. 
@@ -24,7 +24,7 @@ Welcome to System Center 2016 - Operations Manager.  Operations Manager provides
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
-- [Planning for System Center 2016 - Operations Manager](../vmm)
+- [Planning for System Center 2016 - Operations Manager](plan-overview.md)
 
     Review information to help you plan the deployment of Operations Manager into your organization
 

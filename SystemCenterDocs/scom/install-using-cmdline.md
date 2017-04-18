@@ -62,5 +62,5 @@ The following table lists the command-line parameters for installing features of
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing each one of the features across multiple servers in your management group.  
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing each one of the features across multiple servers in your management group.  
 

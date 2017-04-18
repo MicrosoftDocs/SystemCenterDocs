@@ -22,7 +22,7 @@ This section of the Deployment Guide describes an individual management group de
 
 -   [Single Server Deployment of Operations Manager](deploy-single-server.md)
 
--   [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
+-   [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md)
 
 For information about connecting management groups, see [Connecting Management Groups in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=207755).
 
@@ -30,7 +30,7 @@ For information about connecting management groups, see [Connecting Management G
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center 2016](../../get-started/release-notes.md)
+-   [Release Notes for System Center 2016](~/system-center.md)
 
 -   [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md)
 

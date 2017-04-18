@@ -134,4 +134,4 @@ When you view an instance, you can choose to stop the associated job. Stopping t
   
 ## Next steps
 
-- To learn more about deploying runbooks see [Deploy runbooks](../../orchestrator/deploy-runbooks.md)
+- To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)

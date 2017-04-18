@@ -130,7 +130,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 ## Next steps
 
-- See [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
+- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
 
 
 

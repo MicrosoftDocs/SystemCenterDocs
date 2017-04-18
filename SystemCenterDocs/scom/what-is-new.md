@@ -49,7 +49,7 @@ With the release of System Center 2016 - Operations Manager, Operators can acces
 
 ## Management Pack Updates and Recommendations
 
-We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](../om/manage/management-pack-assessment.md).
+We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](manage-mp-mpassessment.md).
 
 
 ## Alert data management
