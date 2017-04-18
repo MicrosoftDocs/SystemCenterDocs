@@ -238,7 +238,7 @@
 #### [Schedules](orch/get-started/schedules.md)
 #### [Smart links](orch/get-started/smart-links.md)
 ### [Plan](orch/plan/plan-overview.md)
-#### [Database sizing and performance](orch/plan/database-sizing-and-performance.md)
+#### [Database sizing and performance](orchestrator/database-sizing-and-performance.md)
 #### [Feature performance considerations](orch/plan/feature-performance-considerations.md)
 #### [System Requirements](orch/plan/system-requirements.md)
 ### [Deploy](orch/deploy/install.md)

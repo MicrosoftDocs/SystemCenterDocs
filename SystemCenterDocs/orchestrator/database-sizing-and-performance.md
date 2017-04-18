@@ -41,7 +41,7 @@ At a high level the Orchestrator database contains two kinds of data:
 
     Orchestrator creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and be large.  
 
-    The following table lists the types of log data that can be stored in the Orchestrator database. Orchestrator also stores data in separate log files (outside of the database) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](../get-started/orchestrator-logs.md).  
+    The following table lists the types of log data that can be stored in the Orchestrator database. Orchestrator also stores data in separate log files (outside of the database) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](../orch/get-started/orchestrator-logs.md).  
 
     |Type of Log Data|Location in Runbook Designer|Managed by Log Purge?|  
     |--------------------|--------------------------------|-------------------------|  
@@ -73,7 +73,7 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 
 -   *Common Published Data*  
 
-    The set of data items common to all activities. For a list, see the [Runbook Log Options](../get-started/runbook-logs.md#runbook-log-options) section in [runbook logs](../get-started/runbook-logs.md).  
+    The set of data items common to all activities. For a list, see the [Runbook Log Options](../orch/get-started/runbook-logs.md#runbook-log-options) section in [runbook logs](../orch/get-started/runbook-logs.md).  
 
     This logging option generates 6082 bytes for each activity.  
 
@@ -91,7 +91,7 @@ Setting logging options can significantly affect performance and increase databa
 ### Purging Logs  
 The default options specified for the **Log Purge** feature in the **Runbook Designer** is configured to provide the best user experience for an out\-of\-the\-box Orchestrator deployment. Changing these values can change the performance characteristics of the environment, and should be implemented gradually and high\-watermarked, so that the impact of the change can be evaluated.  
 
-For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](../get-started/runbook-logs.md#purging-runbook-logs) section of [runbook logs](../get-started/runbook-logs.md).  
+For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](../orch/get-started/runbook-logs.md#purging-runbook-logs) section of [runbook logs](../orch/get-started/runbook-logs.md).  
 
 ## Creating Performance Benchmarks  
 To create a simple runbook to test logging growth you can use the Standard Activity **Compare Values** to create benchmarks of an Orchestrator environment.  
@@ -249,6 +249,6 @@ Use the following guidelines to manage database sizing and performance:
 -   Identify opportunities for improvement by making normalized comparisons of your measurements.  
 
 ## See Also  
-[Orchestrator Logs](../get-started/orchestrator-logs.md)  
-[Runbook logs](../get-started/runbook-logs.md)  
-[Orchestrator Architecture](../get-started/orchestrator-architecture.md)  
+[Orchestrator Logs](../orch/get-started/orchestrator-logs.md)  
+[Runbook logs](../orch/get-started/runbook-logs.md)  
+[Orchestrator Architecture](../orch/get-started/orchestrator-architecture.md)  

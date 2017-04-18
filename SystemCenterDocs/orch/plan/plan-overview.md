@@ -26,7 +26,7 @@ This guide provides recommendations to help you develop a strategy for deploying
 
     Provides information about how to estimate the capacity required for your automation workload.
 
-- [Database Sizing and Performance](database-sizing-and-performance.md)
+- [Database Sizing and Performance](../../orchestrator/database-sizing-and-performance.md)
 
     Provides information about how to estimate the database requirements for your environment.
 
