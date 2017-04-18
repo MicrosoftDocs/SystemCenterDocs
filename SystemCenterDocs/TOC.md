@@ -285,7 +285,7 @@
 #######[Disable User](orchestrator/disable-user.md)
 #######[Enable Computer](orchestrator/enable-computer.md)
 #######[Enable User](orchestrator/enable-user.md)
-#######[Get Computer](orch/manage/get-computer.md)
+#######[Get Computer](orchestrator/get-computer.md)
 #######[Get Group](orch/manage/get-group.md)
 #######[Get Organizational Unit](orch/manage/get-organizational-unit.md)
 #######[Get User](orch/manage/get-user.md)
