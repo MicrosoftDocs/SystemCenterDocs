@@ -149,7 +149,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Repair VM](repair-vm.md)
 
-[Resume VM](../orch/manage/resume-vm.md)
+[Resume VM](resume-vm.md)
 
 [Run VMM PowerShell Script](../orch/manage/run-vmm-powershell-script.md)
 

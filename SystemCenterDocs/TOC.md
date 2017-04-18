@@ -551,7 +551,7 @@
 #######[Remove user role](orchestrator/remove-user-role.md)
 #######[Remove vm](orchestrator/remove-vm.md)
 #######[Repair vm](orchestrator/repair-vm.md)
-#######[Resume vm](orch/manage/resume-vm.md)
+#######[Resume vm](orchestrator/resume-vm.md)
 #######[Run vmm powershell script](orch/manage/run-vmm-powershell-script.md)
 #######[Scale tier in](orch/manage/scale-tier-in-in-system-center-2016.md)
 #######[Scale tier out](orch/manage/scale-tier-out-in-system-center-2016.md)
