@@ -495,7 +495,7 @@
 ###### [Operations Manager Activities](orch/manage/operations-manager-activities.md)
 #######[Create alert](orchestrator/create-alert.md)
 #######[Get alert](orchestrator/get-alert.md)
-#######[Get monitor](orch/manage/get-monitor.md)
+#######[Get monitor](orchestrator/get-monitor.md)
 #######[Monitor alert](orch/manage/monitor-alert.md)
 #######[Monitor state](orch/manage/monitor-state.md)
 #######[Start maintenance mode](orch/manage/start-maintenance-mode.md)

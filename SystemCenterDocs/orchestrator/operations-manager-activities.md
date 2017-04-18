@@ -116,7 +116,7 @@ The Operations Manager Integration Pack adds the **SC 2016 Operations Manager** 
 
 [Get Alert](get-alert.md)
 
-[Get Monitor](../orch/manage/get-monitor.md)
+[Get Monitor](get-monitor.md)
 
 [Monitor Alert](../orch/manage/monitor-alert.md)
 
