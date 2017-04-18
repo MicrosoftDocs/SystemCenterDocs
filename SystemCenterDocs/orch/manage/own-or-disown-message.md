@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Own/Disown Message activity is used in a runbook to take ownership or remove ownership of a message.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](../../orchestrator/hp-operations-manager-activities.md).
 
 ## Own/Disown Message Required Properties
 

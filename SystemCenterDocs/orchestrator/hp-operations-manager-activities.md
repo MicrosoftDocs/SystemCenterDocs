@@ -115,28 +115,28 @@ For a list of the data elements published by each activity, see the Published Da
 
 This integration pack adds the HP Operations Manager category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Acknowledge Message](acknowledge-message.md)
+[Acknowledge Message](../orch/manage/acknowledge-message.md)
 
-[Add Annotation to Message](add-annotation-to-message.md)
+[Add Annotation to Message](../orch/manage/add-annotation-to-message.md)
 
-[Create Message](create-message.md)
+[Create Message](../orch/manage/create-message.md)
 
-[Delete Annotation](delete-annotation.md)
+[Delete Annotation](../orch/manage/delete-annotation.md)
 
-[Delete Custom Attribute](delete-custom-attribute.md)
+[Delete Custom Attribute](../orch/manage/delete-custom-attribute.md)
 
-[Get Annotation](get-annotation.md)
+[Get Annotation](../orch/manage/get-annotation.md)
 
-[Get Message](get-message.md)
+[Get Message](../orch/manage/get-message.md)
 
-[Launch Tool](launch-tool.md)
+[Launch Tool](../orch/manage/launch-tool.md)
 
-[Monitor Message](monitor-message.md)
+[Monitor Message](../orch/manage/monitor-message.md)
 
-[Own/Disown Message](own-or-disown-message.md)
+[Own/Disown Message](../orch/manage/own-or-disown-message.md)
 
-[Set Custom Attribute](set-custom-attribute.md)
+[Set Custom Attribute](../orch/manage/set-custom-attribute.md)
 
-[Update Annotation](update-annotation.md)
+[Update Annotation](../orch/manage/update-annotation.md)
 
-[Update Message](update-message.md)
+[Update Message](../orch/manage/update-message.md)
