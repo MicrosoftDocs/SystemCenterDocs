@@ -68,4 +68,4 @@ A disaggregated cluster has the following characteristics:
 
 ## Next steps
 
-- [Deploy Storage Spaces Direct](storage-spaces-deploy.md) in the VMM fabric
+- [Deploy Storage Spaces Direct](../storage-spaces-deploy.md) in the VMM fabric

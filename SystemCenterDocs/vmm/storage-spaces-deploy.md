@@ -40,7 +40,7 @@ You can deploy a hyper-converged cluster with a couple of methods, just as you c
 In a hyper-converged topology storage and compute are on the same cluster. Here's what you need to do:
 
 1. Create a Hyper-V cluster in the VMM fabric, and enable S2D on the Hyper-V cluster. Alternatively if you already have a S2D cluster you configured outside VMM, you add it to the VMM fabric.
-2. Set up networking on the cluster. [Learn more](../manage-networks.md).
+2. Set up networking on the cluster. [Learn more](manage-networks.md).
 3. Modify the storage pool, and create cluster-shared volumes (CSVs)
 4. Deploy VMs on the cluster.
 
@@ -48,7 +48,7 @@ In a hyper-converged topology storage and compute are on the same cluster. Here'
 
 1. Click **Fabric Resources** > **Create** > **Hyper-V Cluster**.
 2.  In **General Configuration**, specify a cluster name, select a host group, and select  **Enable Storage Spaces Direct**.
-3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](../hyper-v-existing.md). Note that you have to validate the cluster when S2D is enabled.
+3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](hyper-v-existing.md). Note that you have to validate the cluster when S2D is enabled.
 
 When you create the cluster, VMM does the following:
 
@@ -78,7 +78,7 @@ If you use PowerShell, the pool and the storage tier is automatically created wi
 
 ### Deploy VMs
 
-VMs can be directly deployed on the hyper-converged cluster. Their virtual hard disks are placed on the volumes you create. You [create and deploy these VMs](../provision-vms.md) just as you would any other VM.
+VMs can be directly deployed on the hyper-converged cluster. Their virtual hard disks are placed on the volumes you create. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
 
 # Disaggregated deployment
@@ -91,13 +91,13 @@ apps. Here's what you need to do:
 1. Click **Fabric Resources** > **Create** > **File Server Cluster**.
 2.  In **General Configuration**, specify a cluster name, select a host group, and select  **Storage attached directly to each cluster node (Storage Spaces Direct)**.
 
-    ![Create storage spaces direct cluster](../media/storage-spaces-direct-enable.png)
+    ![Create storage spaces direct cluster](./media/storage-spaces-deploy/storage-spaces-direct-enable.png)
 
 3. In **Resource Type**, specify the RunAs account with local admin permissions on the servers you want to add to the cluster, and specify whether to add existing Windows servers or bare-metal machines.
 4. In **Cluster Nodes**, define a list of computers to add to the cluster.
 5. On the **Summary** page, confirm the settings and then click Finish.
 
-If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](../sofs.md) about adding nodes to an SOFS.
+If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](sofs.md) about adding nodes to an SOFS.
 
 ### Add an existing SOFS cluster with S2D enabled
 
