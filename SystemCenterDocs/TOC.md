@@ -445,7 +445,7 @@
 #######[Monitor alerts activity](orchestrator/monitor-alerts-activity.md)
 #######[Update alert activity](orchestrator/update-alert-activity.md)
 ##### [REST](orchestrator/representational-state-transfer-rest-integration-pack.md)
-###### [REST Activities](orch/manage/rest-activities.md)
+###### [REST Activities](orchestrator/rest-activities.md)
 #######[Invoke rest service](orch/manage/invoke-rest-service.md)
 #### [SharePoint](orch/manage/integration-pack-for-microsoft-sharepoint.md)
 ##### [SharePoint activities](orch/manage/sharepoint-activities.md)
