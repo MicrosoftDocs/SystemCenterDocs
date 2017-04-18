@@ -74,4 +74,4 @@ You can use the following procedure to change the Active Directory integration s
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](../../scom/manage-deploy-windows-agent-manually.md).
 
-- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your Windows computers. 
+- Review [Uninstall Agent from Windows-based Computers](manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your Windows computers. 

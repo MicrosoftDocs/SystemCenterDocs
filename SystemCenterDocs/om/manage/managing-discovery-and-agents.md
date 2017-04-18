@@ -63,7 +63,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
     This section describes the ways to uninstall the UNIX and Linux management packs and agents from UNIX and Linux computers.
 
--   [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md)
+-   [Uninstall Agent from Windows-based Computers](../../scom/manage-uninstall-windows-agent.md)
 
     This section describes the ways to uninstall the Windows agent from Windows computers.
 

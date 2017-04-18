@@ -46,7 +46,7 @@ You must run the **UNIX/Linux Agent Upgrade Wizard** to upgrade agents from earl
 
 ## Uninstalling agents
 
-You can uninstall an agent from the targeted computer by using the **UNIX/Linux Agent Uninstall Wizard**. For information on manually uninstalling agents, see [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md).
+You can uninstall an agent from the targeted computer by using the **UNIX/Linux Agent Uninstall Wizard**. For information on manually uninstalling agents, see [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md).
 
 #### To uninstall an agent
 
@@ -78,7 +78,7 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
 
-- Review [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 
 
 

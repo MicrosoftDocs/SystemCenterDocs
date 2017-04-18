@@ -44,5 +44,5 @@ If you have a firewall on your UNIX or Linux computer, you must open port 1270 (
 
 - To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../om/manage/upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).
 
-- Review [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 

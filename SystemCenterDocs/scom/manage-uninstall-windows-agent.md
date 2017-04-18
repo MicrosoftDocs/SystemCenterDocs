@@ -79,7 +79,7 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 ## Next steps
 
-- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](../../scom/manage-deploy-windows-agent-console.md).
+- To deploy the Windows agent from the Operations console using the Discovery Wizard, review [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md).
 
 - If you would like to install the Nano Server agent using the Discovery Wizard, from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md).
 

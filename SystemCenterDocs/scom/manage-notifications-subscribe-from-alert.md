@@ -51,6 +51,6 @@ You can create a notification subscription from an alert to ensure that you are 
   
 ## Next steps 
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](../../scom/manage-notifications-create-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md)
 
-* Create a [notification subscription](../../scom/manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
