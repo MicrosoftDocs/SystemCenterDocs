@@ -769,7 +769,7 @@
 ##### [Deploy a shielded VHDX and VM template](vmm/guarded-deploy-template.md)
 ##### [Deploy shielded virtual machines](vmm/guarded-deploy-vm.md)
 #### [Scenario: Deploy an SDN in VMM](vmm/deploy-sdn.md)
-##### [Deploy an SDN network controller](vmm/scenario/sdn-network-controller.md)
+##### [Deploy an SDN network controller](vmm/sdn-controller.md)
 ##### [Deploy an SDN SLB](vmm/scenario/sdn-slb.md)
 ##### [Deploy an SDN RAS gateway](vmm/scenario/sdn-gateway.md)
 ##### [Deploy SDN using PowerShell](vmm/scenario/sdn-powershell.md)

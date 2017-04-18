@@ -26,7 +26,7 @@ You can use VMM to deploy a network controller and a software load balancer. Aft
 Ensure the following:
 
 - **Planning**: Read about planning a software defined network, and review the planning topology in [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure) document. The diagram shows a sample 4-node setup. The setup is highly available with Three network controller nodes (VM), and Three SLB/MUX nodes. It shows Two tenants with One virtual network broken into Two virtual subnets to simulate a web tier and a database tier. Both the infrastructure and tenant virtual machines can be redistributed across any physical host.
-- **Network controller**: You should have an [SDN network controller](sdn-network-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
+- **Network controller**: You should have an [SDN network controller](../sdn-controller.md) deployed in the VMM fabric, so that you have the compute and network infrastructure running before you set up the load balancing.
 - **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 - **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 with the latest patches installed.
@@ -134,7 +134,7 @@ Import the service template into the VMM library. For this example, we'll import
 4. Remember that you should have copied the .CER certificate that you previously created to the **NCCertificate.CR** folder.
 5. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn more](sdn-network-controller.md#customize-the-template).
+    **Note**: You can customize the service template. [Learn more](../sdn-controller.md#customize-the-template).
 
 ## Deploy the SLB service
 

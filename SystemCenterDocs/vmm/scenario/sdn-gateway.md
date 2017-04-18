@@ -90,7 +90,7 @@ Both the templates have a default count of three virtual machines which can be c
 
 4. On the **Summary** page, review the details and click **Import**.
 
-    **Note**: You can customize the service template. [Learn more](sdn-network-controller.md#customize-the-template).
+    **Note**: You can customize the service template. [Learn more](../sdn-controller.md#customize-the-template).
 
 ## Deploy the gateway service
 

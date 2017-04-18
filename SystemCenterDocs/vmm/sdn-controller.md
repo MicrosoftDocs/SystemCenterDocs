@@ -63,7 +63,7 @@ Here's what you need to do to set up a SDN network controller
 ## Prepare a virtual hard disk
 1. Prepare the VHD or VHDX based on the type of template you would like to use.
 2. After your prepare the hard disk, install the latest Windows Server 2016 updates, and any language packs you need if you have a non-English environment.
-3.   Import the VHD/VHDX files to the VMM library. [Learn more](../manage/manage-library-add-files.md).
+3.   Import the VHD/VHDX files to the VMM library. [Learn more](manage/manage-library-add-files.md).
 
 ## Download the network controller service template
 
@@ -109,13 +109,13 @@ Create security groups for network controller management and clients.
 
 ## Create a library share for logging
 
-1. Optionally [create a file share](../manage/manage-library-add-files.md) in the VMM library to keep diagnostic logs.
+1. Optionally [create a file share](manage/manage-library-add-files.md) in the VMM library to keep diagnostic logs.
 2. Ensure that the share can be accessed by the network controller. The network controller accesses the share to store diagnostic information. Note the credentials for the account that will have write access to the share.
 
 
 ## Set up host groups
 
-1. [Create a dedicated host group](../manage/manage-compute-host-groups.md) for Hyper-V hosts that will be managed by SDN.
+1. [Create a dedicated host group](manage/manage-compute-host-groups.md) for Hyper-V hosts that will be managed by SDN.
 2. Make sure Hyper-V hosts are running Windows Server 2016 with latest patches installed.
 
 ## Create the management logical network
@@ -171,7 +171,7 @@ You need to deploy a logical switch on the management logical network. The switc
 
 ### Deploy the logical switch
 
-You must deploy the management logical switch on all of the hosts where you intend to deploy the NC. These hosts must be a part of VMM host group that you created earlier [Learn more](../manage/manage-compute-add-networking-hyper-v.md).
+You must deploy the management logical switch on all of the hosts where you intend to deploy the NC. These hosts must be a part of VMM host group that you created earlier [Learn more](manage/manage-compute-add-networking-hyper-v.md).
 
 ## Set up the security certificates
 
@@ -339,7 +339,7 @@ The HNV provider logical network needs an IP address pool, even if DHCP is avail
 6.  Review the summary information and click **Finish** to complete the wizard.
 7. As part of network controller on-boarding, the switch that you deployed on the hosts for the Management logical network connectivity was converted to an SDN switch. This switch can now be used to deploy a network controller managed network including the HNV provider logical network. Ensure you select the network site corresponding to the  HNV provider logical network in the uplink port profile settings for the Management logical switch.
 
-   ![Uplink port](../media/sdn-network-controller2.png)
+   ![Uplink port](./media/sdn-controller/sdn-network-controller2.png)
 
 The HNV provider logical network is now accessible to all the hosts in the network controller managed host group.
 
@@ -353,8 +353,8 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 - Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
 - Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
 
-1. [Create a VM network](../manage/manage-network-vm-networks.md) for each tenant.
-2. [Create an IP address pool](../manage/manage-network-static-address-pools.md) for each VM network.
+1. [Create a VM network](manage/manage-network-vm-networks.md) for each tenant.
+2. [Create an IP address pool](manage/manage-network-static-address-pools.md) for each VM network.
 
 ### Create tenant virtual machines
 
@@ -363,12 +363,12 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 - Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 - You can run the following PowerShell cmdlet to allow ICMPv4 in through the firewall with **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**
 
-1. If you want to create a VM from an existing hard disk, [follow these instructions](../manage/manage-vm-vhd-existing.md).
+1. If you want to create a VM from an existing hard disk, [follow these instructions](manage/manage-vm-vhd-existing.md).
 2. After you deploy at least two VMs connected to the network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
 ## Remove the network controller from the SDN fabric
 
-Use [these steps](sdn-remove-an-sdn.md#remove-the-network-controller) to remove the network controller from the SDN fabric.
+Use [these steps](scenario/sdn-remove-an-sdn.md#remove-the-network-controller) to remove the network controller from the SDN fabric.
 
 ## Next steps
-[Create a software load balancer](sdn-slb.md)
+[Create a software load balancer](scenario/sdn-slb.md)
