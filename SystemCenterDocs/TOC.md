@@ -650,7 +650,7 @@
 #### [Set up a Service Manager 2016 lab environment with production data to prepare for upgrade](scsm/set-up-lab-with-production-data.md)
 ##### [Install an additional Management Server in the production Service Manager management group](scsm/install-additional-ms.md)
 ##### [Copy customized workflow assembly files before you upgrade](scsm/copy-workflow-assembly.md)
-##### [Disable Service Manager connectors in the production environment before you upgrade](sm/deploy/upgrade-how-to-disable-service-manager-connectors-in-the-production-environment.md)
+##### [Disable Service Manager connectors in the production environment before you upgrade](scsm/disable-connectors.md)
 ##### [Disable email notifications in the production environment before you upgrade](sm/deploy/upgrade-how-to-disable-email-notifications-in-the-production-environment.md)
 ##### [Stop Service Manager services on the secondary management server before you upgrade](sm/deploy/upgrade-how-to-stop-service-manager-services-on-the-secondary-management-server.md)
 ##### [Back up the production Service Manager database for future recovery](sm/deploy/upgrade-how-to-back-up-the-production-service-manager-database.md)
