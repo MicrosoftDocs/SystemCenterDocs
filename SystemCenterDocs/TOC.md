@@ -363,7 +363,7 @@
 #######[Swap deployment](orchestrator/swap-deployment.md)
 #######[Update deployment status](orchestrator/update-deployment-status.md)
 #######[Update os image](orchestrator/update-os-image.md)
-#######[Update storage account](orch/manage/update-storage-account.md)
+#######[Update storage account](orchestrator/update-storage-account.md)
 #######[Update vm instance](orch/manage/update-vm-instance.md)
 #######[Upgrade deployment](orch/manage/upgrade-deployment.md)
 #######[Walk upgrade domain](orch/manage/walk-upgrade-domain.md)

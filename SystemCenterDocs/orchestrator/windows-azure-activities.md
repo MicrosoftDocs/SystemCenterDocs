@@ -234,7 +234,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Update OS Image](update-os-image.md)
 
-[Update Storage Account](../orch/manage/update-storage-account.md)
+[Update Storage Account](update-storage-account.md)
 
 [Update VM Instance](../orch/manage/update-vm-instance.md)
 
