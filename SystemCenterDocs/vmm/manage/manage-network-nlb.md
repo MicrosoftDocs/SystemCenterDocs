@@ -31,7 +31,7 @@ You can add a load balancer to load balance requests to VMs in a service tier. Y
 
 To add a load balancer you'll need to do the following:
 
-- Ensure you have [logical networks configured](manage-network-logical-networks.md). The logical networks should have associated network sites. Those network sites should have one or more associated subnets from which you can create static IP address pools. In addition associated each network site with the host group where the service will be deployed.
+- Ensure you have [logical networks configured](../network-logical.md). The logical networks should have associated network sites. Those network sites should have one or more associated subnets from which you can create static IP address pools. In addition associated each network site with the host group where the service will be deployed.
 - [Create an IP address pool](manage-network-static-address-pools.md) for the logical networks. The IP pool must contain a reserved range of virtual IP addresses that can be assigned to the load balancer. You must set up the static IP address pools for the load balancer and for the virtual machines behind the load balancer. These can be from the same pool or from different pools, but you'll need both VIPs and IP addresses for the virtual machines.
 - [Create VM networks](manage-network-vm-networks.md) on top of logical networks.
 - [Create VIP templates](manage-network-nlb.md#create-vip-templates): A virtual IP (VIP) template contains load balanced settings for a specific type of network traffic. After you create a VIP template  you can specify it when you set up load balancing in a service template.

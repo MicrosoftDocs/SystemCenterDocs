@@ -811,7 +811,7 @@
 #### [Manage update servers](vmm/update-server.md)
 #### [Manage the VMM networking fabric](vmm/manage-networks.md)
 ##### [Manage SDN resources in the VMM fabric](vmm/network-sdn.md)
-##### [Set up logical networks](vmm/manage/manage-network-logical-networks.md)     
+##### [Set up logical networks](vmm/network-logical.md)     
 ##### [Set up VM networks](vmm/manage/manage-network-vm-networks.md)
 ##### [Set up IP address pools](vmm/manage/manage-network-static-address-pools.md)
 ##### [Add a network gateway](vmm/manage/manage-network-gateway.md)

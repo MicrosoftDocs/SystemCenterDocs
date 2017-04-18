@@ -21,7 +21,7 @@ This article provides an overview of setting up the System Center 2016 - Virtual
 
 Here's what you'll typically do to set up networking in the VMM fabric:
 
-1. [Set up logical networks](manage/manage-network-logical-networks.md): Create logical networks that maps to your physical networks. You can create network sites that map to network sites in your physical network. For example IP subnets, VLNS, or subnet/VLAN pairs. Then if you're not using DHCP you create IP address pools for the network sites that exist within your physical networks.
+1. [Set up logical networks](network-logical.md): Create logical networks that maps to your physical networks. You can create network sites that map to network sites in your physical network. For example IP subnets, VLNS, or subnet/VLAN pairs. Then if you're not using DHCP you create IP address pools for the network sites that exist within your physical networks.
 2. [Create VM networks](manage/manage-network-vm-networks.md): Create VM networks that map to network sites that exist within your physical networks.
 3. [Set up IP address pools](manage/manage-network-static-address-pools.md): Create address pool to allocate static IP addresses. You'll need to configure pools for logical networks, and in some circumstances for VM networks too.
 4. [Add a gateway](manage/manage-network-gateway.md): You might need to set up network virtualization gateways in the VMM networking fabric. By default, if you're using isolated VM networks in your VMM fabric, VMs associated with a network can only connect to machines in the same subnet. If you want to connect VMs further than the subnet you'll need a gateway.
