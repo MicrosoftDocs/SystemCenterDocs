@@ -24,7 +24,7 @@ To provide real\-world context to the step\-by\-step procedures for the Service 
  The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services \(AD&nbsp;DS\) so that the group software policies apply to the new computers.  
 
 > [!NOTE]  
->  Some procedures in the Woodgrove Bank customization scenario rely on standard usage of the Service Manager console in Service Manager. This guide does not provide details for these common procedures. For more information about these procedures, see the [Administrator's Guide for System Center - Service Manager](../../scsm/admin-tasks.md).  
+>  Some procedures in the Woodgrove Bank customization scenario rely on standard usage of the Service Manager console in Service Manager. This guide does not provide details for these common procedures. For more information about these procedures, see the [Administrator's Guide for System Center - Service Manager](admin-tasks.md).  
 
  Although there are many steps in extending the change management process, Ken has to think about four main things, which are described in the following sections.  
 
@@ -113,7 +113,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 -   **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), and then change the status of the automated activity to "Complete."  
 -   **What information does the workflow need?** The change request provides information about the specific computer and group to use. Properties of the workflow activities can retrieve the change request information from the Service Manager activity that is associated with the change request.  
 
- To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](author-step-1-open-the-woodgrove.automatedactivity.addcomputertoadgroupmp-management-pack.md). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
+ To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](../sm/manage/author-step-1-open-the-woodgrove.automatedactivity.addcomputertoadgroupmp-management-pack.md). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
 
 ### Create a New Workflow  
  Ken uses this procedure to create a workflow named **AddComputerToADGroupWF** in the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack.  
@@ -134,7 +134,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 12. On the **Summary** page, review the settings for the new workflow, and then click **Create**. After the wizard has completed, click **Close**.  
 13. In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
 
-For general information about these steps, see [How to Create a New Workflow](../../scsm/manage-workflows-auth-tool.md) and [How to Save and Build a Workflow](../../scsm/manage-workflows-auth-tool.md).  
+For general information about these steps, see [How to Create a New Workflow](manage-workflows-auth-tool.md) and [How to Save and Build a Workflow](manage-workflows-auth-tool.md).  
 
 ### Add the Workflow Activities  
 Ken uses this procedure to add the WF activities **Add AD DS Computer to Group** and **Set Activity Status to Completed** to his workflow.  
@@ -145,7 +145,7 @@ Ken uses this procedure to add the WF activities **Add AD DS Computer to Group**
 2.  In the **Activities Toolbox** pane, locate the **Active Directory Activities** group.  
 3.  Drag **Add AD DS Computer to Group** to the authoring pane, and drop it between the Workflow Start and End icons.  
 4.  Drag **Set Activity Status to Completed**, and drop it between the previous activity and the End icon.  
-For general information about these steps, see [How to Add an Activity to a Workflow](../../scsm/add-workflow-activities.md).  
+For general information about these steps, see [How to Add an Activity to a Workflow](add-workflow-activities.md).  
 
 ### Configure the Activity Properties  
 
@@ -160,13 +160,13 @@ Ken uses this procedure to set the **Computer Name** and **Group Name** properti
 5.  Click **Activity ID**, and click the ellipsis button \(**...**\) that appears next to the property. On the left side of the dialog box, click **Use a class property**, and then, in the property list, click **ID \(Internal\)**. Click **OK**.  
 6.  In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
 
-For general information about these steps, see [How to Set an Activity Property to Use a Value from the Trigger Class](author-how-to-set-an-activity-property-to-use-a-value-from-the-trigger-class.md) and [How to Set an Activity Property to a Constant Value](../../scsm/configure-activities-information.md).  
+For general information about these steps, see [How to Set an Activity Property to Use a Value from the Trigger Class](../sm/manage/author-how-to-set-an-activity-property-to-use-a-value-from-the-trigger-class.md) and [How to Set an Activity Property to a Constant Value](configure-activities-information.md).  
 
 ## Step 4 - Move the assembly files to the Service Manager console
 
 In this step of the Woodgrove Bank customization scenario, in System Center - Service Manager Ken must move the workflow assembly file and the form assembly file to the Service Manager program directory to use the workflow with the Service Manager console.  
 
-For general information about deploying a workflow to Service Manager, see [How to Deploy a Workflow to Service Manager](../../scsm/deploy-workflow.md).  
+For general information about deploying a workflow to Service Manager, see [How to Deploy a Workflow to Service Manager](deploy-workflow.md).  
 
 ### To move the assembly files  
 
@@ -199,7 +199,7 @@ In this of the Woodgrove Bank customization scenario, Ken needs to bundle the ma
 
 In this step of the Woodgrove Bank customization scenario, Ken extends the **Change Area Enumeration** list by adding a new **Compliance** list item that represents the new change request type.  
 
-The following procedure provides only the high\-level steps for creating a new list item in the Service Manager console. For the complete procedure for creating a new list item, see [How to Add a List Item](../../scsm/group-queue-lists.md).  
+The following procedure provides only the high\-level steps for creating a new list item in the Service Manager console. For the complete procedure for creating a new list item, see [How to Add a List Item](group-queue-lists.md).  
 
 ### To create a new list item  
 
@@ -212,7 +212,7 @@ When Ken works with a compliance change request, he needs to easily access the A
 
  In this step of the Woodgrove Bank customization scenario, to make it easy to access the tool, Ken creates a new task, **Start Active Directory Users and Computers**. He saves this task to the **Woodgrove Automated Activity - Add Computer To Group** management pack. He can later use the new task to start the tool.  
 
- The following procedure provides only the high\-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](../../scsm/troubleshoot-with-tasks.md).  
+ The following procedure provides only the high\-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](troubleshoot-with-tasks.md).  
 
 ### To create a new task  
 
@@ -243,7 +243,7 @@ To continue with the customizations in the Woodgrove Bank scenario, in this step
 
 In this step of the Woodgrove Bank customization scenario, Ken creates a template for the new compliance change request type; the template is named **Apply AppLocker Software Policy to Computer**. The new template helps ensure consistency among all the change requests of this type, and it helps ensure the correct workflow behavior.  
 
- The following procedure provides only the high\-level steps for creating a new template in the Service Manager console. For the complete procedure for creating a new template, see [How to Create Change Request Templates](admin-how-to-create-change-request-templates.md).  
+ The following procedure provides only the high\-level steps for creating a new template in the Service Manager console. For the complete procedure for creating a new template, see [How to Create Change Request Templates](../sm/manage/admin-how-to-create-change-request-templates.md).  
 
 ### To create a new template  
 
@@ -261,7 +261,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates a templat
 
 If System Center - Service Manager is configured with a Simple Mail Transfer Protocol \(SMTP\) server, as part of the Woodgrove Bank customization scenario, Ken can configure an email notification that will be sent to him when a new computer is added to the compliance group. This is an optional step.  
 
-The following procedure provides only the high\-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](admin-how-to-create-notification-templates.md).  
+The following procedure provides only the high\-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).  
 
 ### To create an email notification template and subscription  
 
