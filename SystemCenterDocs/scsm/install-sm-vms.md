@@ -40,4 +40,4 @@ If you are installing Service Manager and data warehouse databases on virtual ma
 
 ## Next steps
 
-- Review [Configure PowerShell to run in Service Manager](deploy-configure-windows-powershell-to-run-in-system-center-2016-service-manager.md) to set execution policy to RemoteSigned and import the data warehouse cmdlet module. 
+- Review [Configure PowerShell to run in Service Manager](../sm/deploy/deploy-configure-windows-powershell-to-run-in-system-center-2016-service-manager.md) to set execution policy to RemoteSigned and import the data warehouse cmdlet module. 

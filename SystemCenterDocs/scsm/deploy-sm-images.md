@@ -72,4 +72,4 @@ You can use the information in this article to create a system image that contai
 
 ## Next steps
 
-- Review [Guidance for installing Service Manager on virtual machines](../sm/deploy/deploy-guidance-for-installing-system-center-2016-service-manager-on-virtual-machines.md) for information that you should consider when you install Service Manager in a Hyper-V virtual environment.
+- Review [Guidance for installing Service Manager on virtual machines](install-sm-vms.md) for information that you should consider when you install Service Manager in a Hyper-V virtual environment.
