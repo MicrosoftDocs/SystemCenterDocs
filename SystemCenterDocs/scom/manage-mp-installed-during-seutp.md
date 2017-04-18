@@ -42,11 +42,11 @@ Do not save any settings, views, or overrides to these management packs. You sho
   
 ## Next steps
 
-- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](Management-Pack-Lifecycle.md)  
+- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](../om/manage/management-pack-lifecycle.md)  
 
-- See [How to import, export and remove a management pack](how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
+- See [How to import, export and remove a management pack](../om/manage/how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](How-to-Create-a-Management-Pack-for-Overrides.md).  
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../om/manage/how-to-create-a-management-pack-for-overrides.md).  
 
 
   

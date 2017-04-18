@@ -26,7 +26,7 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
     Provides an overview of management pack structure and components.
 
-- [Management packs installed with Operations Manager](management-packs-installed-with-operations-manager.md)
+- [Management packs installed with Operations Manager](../../scom/manage-mp-installed-during-seutp.md)
 
     Lists the management packs that are installed during setup of your Operations Manager management group and what describe what function it provides.
 

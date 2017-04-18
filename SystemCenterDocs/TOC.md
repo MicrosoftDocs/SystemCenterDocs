@@ -112,7 +112,7 @@
 ###### [Configure and use Active Directory Integration for agent assignment](scom/manage-ad-integration-agent-assignment.md)
 ##### [Using management packs](OM/Manage/Using-Management-Packs.md)
 ###### [What is in an Operations Manager management pack?](scom/manage-overview-management-pack.md)
-###### [Management packs installed with Operations Manager](om/manage/management-packs-installed-with-operations-manager.md)
+###### [Management packs installed with Operations Manager](scom/manage-mp-installed-during-seutp.md)
 ###### [Management pack lifecycle](OM/Manage/Management-Pack-Lifecycle.md)
 ###### [Using classes and groups for overrides](om/manage/using-classes-and-groups-for-overrides.md)
 ###### [How to import, export, and remove a management pack](OM/Manage/How-to-import-remove-export-management-packs.md)
