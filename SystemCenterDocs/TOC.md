@@ -863,7 +863,7 @@
 ### [Troubleshooting VMM resources](vmm/manage/troubleshooting-vmm-resources.md)
 ## [Service Management Automation](SMA/Service-Management-Automation.md)
 ### [What's new in Service Management Automation 2016](sma/get-started/What-s-new-in-Service-Management-Automation-2016.md)
-### [Overview of Service Management Automation](sma/get-started/Overview-of-Service-Management-Automation.md)
+### [Overview of Service Management Automation](sma/overview-of-service-management-automation.md)
 ### [Architecture of Service Management Automation](sma/get-started/Architecture-of-Service-Management-Automation.md)
 ### [Runbook Execution in Service Management Automation](sma/get-started/Runbook-Execution-in-Service-Management-Automation.md)
 ### [Deploy Service Management Automation](sma/Deploy/Deploy-Service-Management-Automation.md)

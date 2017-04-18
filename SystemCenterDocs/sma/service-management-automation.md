@@ -30,7 +30,7 @@ The following table compares Orchestrator to the other Microsoft automation tool
 
 ## Service Management Automation topics
 
--   [Overview of Service Management Automation](get-started/Overview-of-Service-Management-Automation.md)
+-   [Overview of Service Management Automation](overview-of-service-management-automation.md)
 
     Provides a brief overview of the purpose and capabilities of Service Management Automation.
 
