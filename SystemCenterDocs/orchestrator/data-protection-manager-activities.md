@@ -112,20 +112,20 @@ For a list of the data elements published by each activity, see the **Published 
 
 The DPM Integration Pack adds the **SC 2016 DPM** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Recovery Point](create-recovery-point.md)
+[Create Recovery Point](../orch/manage/create-recovery-point.md)
 
-[Get Data Source](get-data-source.md)
+[Get Data Source](../orch/manage/get-data-source.md)
 
-[Get DPM Server Capacity](get-dpm-server-capacity.md)
+[Get DPM Server Capacity](../orch/manage/get-dpm-server-capacity.md)
 
-[Get Recovery Point](get-recovery-point.md)
+[Get Recovery Point](../orch/manage/get-recovery-point.md)
 
-[Protect Data Source](protect-data-source.md)
+[Protect Data Source](../orch/manage/protect-data-source.md)
 
-[Recover SharePoint](recover-sharepoint.md)
+[Recover SharePoint](../orch/manage/recover-sharepoint.md)
 
-[Recover SQL](recover-sql.md)
+[Recover SQL](../orch/manage/recover-sql.md)
 
-[Recover VM](recover-vm.md)
+[Recover VM](../orch/manage/recover-vm.md)
 
-[Run DPM PowerShell Script](run-dpm-powershell-script.md)
+[Run DPM PowerShell Script](../orch/manage/run-dpm-powershell-script.md)

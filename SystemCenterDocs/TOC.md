@@ -481,7 +481,7 @@
 ####### [Query Configuration Manager](orch/manage/query-configuration-manager.md)
 ####### [Update Collection Membership](orch/manage/update-collection-membership.md)
 ##### [Data Protection Manager](orchestrator/integration-pack-for-data-protection-manager.md)
-###### [Data Protection Manager Activities](orch/manage/data-protection-manager-activities.md)
+###### [Data Protection Manager Activities](orchestrator/data-protection-manager-activities.md)
 #######[Create recovery point](orch/manage/create-recovery-point.md)
 #######[Get data source](orch/manage/get-data-source.md)
 #######[Get dpm server capacity](orch/manage/get-dpm-server-capacity.md)
