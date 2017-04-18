@@ -28,7 +28,7 @@ Using Orchestrator, you can:
 
 The following diagram illustrates each of the Orchestrator features and the communication between each.
 
-![Orchestrator architecture diagram](../media/orch_architecturediagram.png)
+![Orchestrator architecture diagram](./media/learn-about-orchestrator/orch_architecturediagram.png)
 
 The orchestration database is the center of the Orchestrator installation containing all runbooks, configuration settings, and logs. The management server is required as a communication layer between the Runbook Designer and the orchestration database. One or more runbook servers communicate directly with the database to retrieve runbooks to run and store information about the jobs created from the runbooks. The web service also communicates directly with the orchestration database and provides a web browser connection for the Orchestration console.
 
@@ -37,7 +37,7 @@ To automate a task or process in Orchestrator, you use the Runbook Designer to c
 
 The following illustration shows a simple runbook.
 
-![Simple runbook diagram](../media/orch_overview.png)
+![Simple runbook diagram](./media/learn-about-orchestrator/orch_overview.png)
 
 This runbook monitors an event log. When it detects the specified event, the runbook checks the status of a particular process in Windows on a specific computer. If the process is found to be running, it is stopped. The runbook then starts the process and sends an email as a notification of the change of process state.
 

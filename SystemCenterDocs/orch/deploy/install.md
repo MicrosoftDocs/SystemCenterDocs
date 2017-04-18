@@ -18,7 +18,7 @@ ms.assetid:
 
 A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines. 
 
-For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](..\get-started\learn-about-orchestrator.md).
+For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](../../orchestrator/learn-about-orchestrator.md).
 
 This topic provides detailed installation instructions for the various Orchestrator roles. 
 
