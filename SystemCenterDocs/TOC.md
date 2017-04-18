@@ -222,7 +222,7 @@
 ## [Orchestrator](orch/Orchestrator.md)
 ### [Get Started](orch/get-started/get-started-with-orchestrator.md)
 #### [Orchestrator Overview](orchestrator/learn-about-orchestrator.md)
-#### [Automate with Runbooks](orch/get-started/automate-runbooks.md)
+#### [Automate with Runbooks](orchestrator/automate-runbooks.md)
 #### [Overview of the Orchestrator Console](orch/get-started/console-overview.md)
 #### [Upgrade to Orchestrator 2016](orchestrator/upgrade-to-orchestrator.md)
 #### [Orchestrator Resources](orch/get-started/orchestrator-resources.md)
