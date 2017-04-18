@@ -134,7 +134,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates the workf
 12. On the **Summary** page, review the settings for the new workflow, and then click **Create**. After the wizard has completed, click **Close**.  
 13. In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
 
-For general information about these steps, see [How to Create a New Workflow](author-managing-workflows.md) and [How to Save and Build a Workflow](author-managing-workflows.md).  
+For general information about these steps, see [How to Create a New Workflow](../../scsm/manage-workflows-auth-tool.md) and [How to Save and Build a Workflow](../../scsm/manage-workflows-auth-tool.md).  
 
 ### Add the Workflow Activities  
 Ken uses this procedure to add the WF activities **Add AD DS Computer to Group** and **Set Activity Status to Completed** to his workflow.  
