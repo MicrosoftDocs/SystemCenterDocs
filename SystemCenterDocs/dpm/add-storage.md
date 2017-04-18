@@ -42,32 +42,32 @@ First step is to create a Virtual Disk.  Through the File and Storage Services s
 
 Step 1: Add the disks to a Storage Pool and create a virtual disk with Simple Layout
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-1.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-1.png)
 
 Create a virtual disk out of this Storage Pool and select the layout to be Simple
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-2.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-2.png)
 
 Step 2: Now add as many disks as needed and extend the virtual disk, with Simple layout.
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-3.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-3.png)
 
 Extend the Virtual Disk to reflect the added disks.
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-4.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-4.png)
 
 Step 3: Create Volumes on the Storage Pool
 
 After creating the Virtual Disk with sufficient storage, create volumes on the Virtual Disk.
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-5.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-5.png)
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-6.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-6.png)
 
 ## Adding volumes to DPM Disk Storage
 
 To add a volume to DPM, in the Management pane, Rescan the Storage and Click on Add. This will give a list of all the volumes available to be added for DPM Storage. After they are added to the list of selected volumes, they can also be given a Friendly name for easy recall. Clicking on OK will format these volumes to ReFS to enable DPM to use the benefits of Modern Backup Storage.
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-7.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
 ## Configure Workload-Aware Storage
 
@@ -85,8 +85,8 @@ This can be done through PowerShell commandlet, Update-DPMDiskStorage, which upd
 Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
 ```
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-8.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
 
 The changes made through PowerShell are reflected in the UI.
 
-![Review Disk Storage Allocation](../media/dpm2016-add-storage-9.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)

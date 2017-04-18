@@ -18,7 +18,7 @@ ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 
 A major part of your DPM deployment will be figuring out how to store data backed up by DPM. Learn about:
 
-- [Add Modern Backup Storage](./add-storage.md)
+- [Add Modern Backup Storage](../add-storage.md)
 
 -   [Short and long-term storage](#BKMK_Storage)
 
