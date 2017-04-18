@@ -143,7 +143,7 @@
 ###### [Creating and scoping views](scom/manage-console-scope-views.md)
 ###### [Personalize a view](scom/manage-console-personalize-views.md)
 ##### [Subscribing to alert notifications](scom/manage-notifications-alert-notifications.md)
-###### [How to create and configure the notification action account](om/manage/how-to-create-and-configure-the-notification-action-account.md)
+###### [How to create and configure the notification action account](scom/manage-notifications-create-configure.md)
 ###### [How to enable an email notification channel](om/manage/how-to-enable-an-email-notification-channel.md)
 ###### [How to enable an instant message notification channel](om/manage/how-to-enable-an-instant-message-notification-channel.md)
 ###### [How to enable text message (SMS) notification channel](om/manage/how-to-enable-a-text-message-notification-channel.md)

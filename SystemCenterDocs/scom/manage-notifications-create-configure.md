@@ -32,7 +32,7 @@ In System Center 2016 - Operations Manager, when an alert is generated, Operatio
   
 6.  On the **Credentials** page, type the information for the user name, password, and domain (if required) of the user account that to be used for notifications. Click **Next**.  
   
-7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](distribution-and-targeting-for-run-as-accounts-and-profiles.md).  
+7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](../om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md).  
   
 8.  Click **Create**.  
   
@@ -64,7 +64,7 @@ In System Center 2016 - Operations Manager, when an alert is generated, Operatio
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](../om/manage/how-to-create-notification-subscribers.md)
 
-* Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
   

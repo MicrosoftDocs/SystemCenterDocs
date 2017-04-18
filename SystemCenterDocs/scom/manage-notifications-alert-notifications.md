@@ -32,7 +32,7 @@ An Operations Manager administrator must define the notification channels and if
   
 ## Subscribing to alert notifications topics  
   
--   [How to create and configure the Notification Action account](../om/manage/how-to-create-and-configure-the-notification-action-account.md)  
+-   [How to create and configure the Notification Action account](manage-notifications-create-configure.md)  
   
 -   [How to enable an email notification channel](../om/manage/how-to-enable-an-email-notification-channel.md)  
   
