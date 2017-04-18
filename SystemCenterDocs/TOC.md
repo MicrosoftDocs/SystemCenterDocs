@@ -608,7 +608,7 @@
 ### [What's new in Service Manager](scsm/whats-new.md)
 ### [Planning for Service Manager](scsm/plan-sm.md)
 #### [Plan for Service Manager deployment](scsm/plan-deployment.md)
-##### [Service Manager parts](sm/plan/plan-system-center-2016-service-manager-parts.md)
+##### [Service Manager parts](scsm/sm-parts.md)
 ##### [System requirements](sm/plan/plan-service-manager-system-requirements.md)
 ##### [Software requirements](sm/plan/plan-software-requirements-for-system-center-2016-service-manager.md)
 ##### [SQL Server requirements](sm/plan/plan-sql-server-requirements-for-system-center-2016-service-manager.md)

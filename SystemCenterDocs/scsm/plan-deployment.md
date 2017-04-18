@@ -46,4 +46,4 @@ For System Center 2016 - Service Manager, several deployment options are availab
 
 ## Next steps
 
-- Review [Service Manager parts](../sm/plan/plan-system-center-2016-service-manager-parts.md) to learn about the major parts of Service Manager.
+- Review [Service Manager parts](sm-parts.md) to learn about the major parts of Service Manager.
