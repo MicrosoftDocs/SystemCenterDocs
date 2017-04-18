@@ -57,7 +57,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Get VM Properties Activity](get-vm-properties-activity.md)
 
-[Get VM Status Activity](../orch/manage/get-vm-status-activity.md)
+[Get VM Status Activity](get-vm-status-activity.md)
 
 [Maintenance Mode Activity](../orch/manage/maintenance-mode-activity.md)
 
