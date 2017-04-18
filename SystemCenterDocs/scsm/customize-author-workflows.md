@@ -34,7 +34,7 @@ Using Service Manager, you can automate many administrative processes that previ
 
      Describes how to deploy a workflow in Service Manager.  
 
--   [Configuring the Activities Toolbox](../sm/manage/author-configuring-the-activities-toolbox.md)  
+-   [Configuring the Activities Toolbox](config-activities-toolbox.md)  
 
      Describes how to configure the Activities Toolbox.  
 

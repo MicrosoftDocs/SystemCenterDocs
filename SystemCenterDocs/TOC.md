@@ -741,7 +741,7 @@
 ###### [Add or remove workflow activities](scsm/add-workflow-activities.md)
 ###### [Configure the way activities manage and pass information](scsm/configure-activities-information.md)
 ##### [Deploy a workflow to Service Manager using the Authoring Tool](scsm/deploy-workflow.md)
-##### [Configure the Activities Toolbox in the Authoring Tool](sm/manage/author-configuring-the-activities-toolbox.md)
+##### [Configure the Activities Toolbox in the Authoring Tool](scsm/config-activities-toolbox.md)
 ##### [Authoring Tool workflow activity reference](sm/manage/author-workflow-activity-reference.md)
 ###### [Guidelines for creating custom activities in the Authoring Tool](sm/manage/author-guidelines-for-creating-custom-activities.md)
 ###### [Set an activity's status to completed for the Authoring Tool sample activity](sm/manage/author-sample-activity-setting-an-activity-s-status-to-completed.md)
