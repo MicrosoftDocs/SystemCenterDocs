@@ -655,7 +655,7 @@
 ##### [Stop Service Manager services on the secondary management server before you upgrade](scsm/stop-services-secondary-ms.md)
 ##### [Back up the production Service Manager database for future recovery](scsm/back-up-prod-db.md)
 ##### [Enable Service Manager connectors in the production environment after you upgrade](scsm/enable-connectors.md)
-##### [Enable email notifications in the production environment after you upgrade](sm/deploy/upgrade-how-to-enable-email-notifications-in-the-production-environment.md)
+##### [Enable email notifications in the production environment after you upgrade](scsm/enable-email-note-prod.md)
 ##### [Restore the Service Manager database in the lab environment before you upgrade](sm/deploy/upgrade-how-to-restore-the-service-manager-database-in-the-lab-environment.md)
 ##### [Prepare the Service Manager database in the lab environment before you upgrade](sm/deploy/upgrade-how-to-prepare-the-service-manager-database-in-the-lab-environment.md)
 ##### [Edit the registry on the Service Manager Management Server in the lab environment before you upgrade](sm/deploy/upgrade-how-to-edit-the-registry-on-the-service-manager-management-server-in-the-lab-environment.md)
