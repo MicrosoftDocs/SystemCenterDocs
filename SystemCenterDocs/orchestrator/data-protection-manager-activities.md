@@ -114,7 +114,7 @@ The DPM Integration Pack adds the **SC 2016 DPM** category to the **Activities**
 
 [Create Recovery Point](create-recovery-point.md)
 
-[Get Data Source](../orch/manage/get-data-source.md)
+[Get Data Source](get-data-source.md)
 
 [Get DPM Server Capacity](../orch/manage/get-dpm-server-capacity.md)
 
