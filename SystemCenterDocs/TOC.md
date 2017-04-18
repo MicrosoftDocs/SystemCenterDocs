@@ -355,7 +355,7 @@
 #######[Regenerate storage account key](orchestrator/regenerate-storage-account-key.md)
 #######[Reimage vm instance](orchestrator/reimage-vm-instance.md)
 #######[Remove vm endpoint](orchestrator/remove-vm-endpoint.md)
-#######[Restart vm instance](orchestrator/restart-vm-instance.md)
+#######[Restart vm instance](orchestrator/start-vm-instance.md)
 #######[Rollback update or upgrade](orchestrator/rollback-update-or-upgrade.md)
 #######[Shutdown vm instance](orchestrator/shutdown-vm-instance.md)
 #######[Snapshot blob](orchestrator/snapshot-blob.md)
