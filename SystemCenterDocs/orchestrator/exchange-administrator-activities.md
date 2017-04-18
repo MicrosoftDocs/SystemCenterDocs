@@ -141,7 +141,7 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Remove Remote Mailbox (Hybrid)](remove-remote-mailbox-hybrid.md)
 
-[Run Exchange PowerShell Command](../orch/manage/run-exchange-powershell-command.md)
+[Run Exchange PowerShell Command](run-exchange-powershell-command.md)
 
 [Update Mailbox](../orch/manage/update-mailbox.md)
 
