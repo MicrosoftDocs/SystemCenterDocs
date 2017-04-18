@@ -308,7 +308,7 @@
 #######[Add OS image](orchestrator/add-OS-image.md)
 #######[Add service certificate](orchestrator/add-service-certificate.md)
 #######[Add vm data disk](orchestrator/add-vm-data-disk.md)
-#######[Add vm disk](orch/manage/add-vm-disk.md)
+#######[Add vm disk](orchestrator/add-vm-disk.md)
 #######[Add vm endpoint](orch/manage/add-vm-endpoint.md)
 #######[Add vm instance](orch/manage/add-vm-instance.md)
 #######[Capture vm instance](orch/manage/capture-vm-instance.md)
