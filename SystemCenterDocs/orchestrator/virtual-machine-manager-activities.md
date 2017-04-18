@@ -135,7 +135,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Get Disk](get-disk.md)
 
-[Get Network Adapter](../orch/manage/get-network-adapter.md)
+[Get Network Adapter](get-network-adapter.md)
 
 [Get User Role](../orch/manage/get-user-role.md)
 
