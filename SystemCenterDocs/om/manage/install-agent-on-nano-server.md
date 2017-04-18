@@ -32,7 +32,7 @@ Monitoring a Nano Server installation is similar to monitoring any other install
 
 You will need to follow the steps listed below to start monitoring a Nano Server.
 
-1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
+1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](../../scom/manage-deploy-windows-agent-console.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
 
 3.  [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
 
@@ -79,7 +79,7 @@ There are several limitations in this release of the Nano Server agent. The foll
 2.  Add the Microsoft-OneCore-ReverseForwarders package as described in the Getting Started with Nano Server topic.
 
 3.  Join the Nano Server to the same domain as the  Operations Manager Management Server.
-There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Discover and install agent on Windows](Install-Agent-on-Windows-Using-the-Discovery-Wizard.md).
+There are two methods available for installing the Operations Manager agent on Nano Servers, Discovery Wizard from the Operations console or PowerShell script.  The process of installing the agent using the Discovery Wizard is consistent with the steps described in the following document [Discover and install agent on Windows](../../scom/manage-deploy-windows-agent-console.md).
 
 Use the following procedure to install the agent with a PowerShell script.   
 

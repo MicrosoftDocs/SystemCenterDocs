@@ -97,7 +97,7 @@
 #### [Quick reference to Operations Manager tasks](scom/manage-quick-reference.md)
 #### [Initial monitoring after Operations Manager is installed](om/manage/initial-monitoring-after-operations-manager-is-installed.md)
 ##### [Managing discovery and agents](OM/Manage/Managing-Discovery-and-Agents.md)
-###### [Discover and install agent on Windows](OM/Manage/Install-Agent-on-Windows-Using-the-Discovery-Wizard.md)
+###### [Discover and install agent on Windows](scom/manage-deploy-windows-agent-console.md)
 ###### [Discover and install agent on UNIX and Linux](OM/Manage/Install-Agent-on-UNIX-and-Linux-Using-the-Discovery-Wizard.md)
 ###### [Install Windows agent manually with MOMAgent.msi](OM/Manage/install-windows-agent-manually-using-momagent.md)
 ###### [Install agent on Nano Server](OM/Manage/install-agent-on-nano-server.md)

@@ -24,7 +24,7 @@ When agents are pushed out to computers, System Center Operations Manager sends 
 
 If the Discovery Wizard is not right for your needs (for example, if you have a set list of computers to which you want to deploy agents), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
-Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](../../scom/plan-system-requirements.md#microsoft-monitoring-agent-operating-system).
+Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md#microsoft-monitoring-agent-operating-system).
 
 > [!NOTE]
 > For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
@@ -119,12 +119,12 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 ## Next steps
 
-- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](install-windows-agent-manually-using-momagent.md).
+- If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](../om/manage/install-windows-agent-manually-using-momagent.md).
 
-- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
+- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](../om/manage/process-manual-agent-installations.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](configuring-windows-agents.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](../om/manage/configuring-windows-agents.md).
 
-- Review [Uninstall Agent from Windows-based Computers](Uninstall-Agent-from-Windows-based-Computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
+- Review [Uninstall Agent from Windows-based Computers](../om/manage/uninstall-agent-from-windows-based-computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 
-- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](Install-Agent-on-Nano-Server.md)
+- If you would like to install the Nano Server agent from the command line or automate the deployment using a script or other automation solution, review [Install Agent on Nano Server](../om/manage/install-agent-on-nano-server.md)
