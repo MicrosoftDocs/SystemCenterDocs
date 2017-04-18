@@ -22,17 +22,17 @@ You can back up file data on server and client computers.
 
 1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. We recommend that you review the following articles:
 
-    -   [System requirements](../../system-requirements/system-requirements.md)
+    -   [System requirements](../om/plan/system-requirements.md)
 
-    -   [What can DPM back up?](../dpm-protection-matrix.md)
+    -   [What can DPM back up?](dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+    -   [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
-    -   [Get DPM installed](../install-dpm.md)
+    -   [Get DPM installed](install-dpm.md)
 
-2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
+2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - You'll need to install the DPM protection agent on every machine you want to back up. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Back up file data
 After you have your DPM infrastructure set up you can enable protection machines that have file data you want to back up.
@@ -41,7 +41,7 @@ After you have your DPM infrastructure set up you can enable protection machines
 
 2.  In **Select Protection Group Type** select **Servers**.
 
-3.  In **Select Group Members** you'll add the machines for which you want to back up file data to the protection group. On those machines you select the locations, shares, and folders you want to protect.  [Deploy protection groups](../create-dpm-protection-groups.md). You can select different types of folders (such as Desktop) or different file types. You can also exclude specific locations from protection.
+3.  In **Select Group Members** you'll add the machines for which you want to back up file data to the protection group. On those machines you select the locations, shares, and folders you want to protect.  [Deploy protection groups](create-dpm-protection-groups.md). You can select different types of folders (such as Desktop) or different file types. You can also exclude specific locations from protection.
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
