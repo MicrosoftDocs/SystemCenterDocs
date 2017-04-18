@@ -49,7 +49,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     This section provides information to help you make design decisions and to understand the behavior and deployment options with resource pools to provide high availability for the monitoring of network devices, Linux and UNIX computers, and other workloads in Operations Manager.  
 
-- [Design for High Availability and Disaster Recovery](../om/plan/planning-hadr-design.md)
+- [Design for High Availability and Disaster Recovery](plan-hadr-design.md)
 
     Describes the supported and most appropriate high availability and disaster recovery options for your Operations Manager management group to maintain minimum functionality and continued operational insight of the IT services monitored.  
 
