@@ -129,7 +129,7 @@
 ###### [Using My Workspace](scom/manage-consoles-my-workspace.md)
 ##### [Using reports](om/manage/using-reports-in-operations-manager.md)
 ###### [Operations Manager report library](scom/manage-reports-installed-during-setup.md)
-###### [How to create reports](om/manage/how-to-create-reports-in-operations-manager.md)
+###### [How to create reports](scom/manage-reports-create-reports.md)
 ###### [How to run, save, and export reports](om/manage/how-to-run-save-export-reports.md)
 ###### [How to configure and modify report schedules](om/manage/how-to-configure-modify-report-schedules.md)
 ##### [Not monitored and gray agents](om/manage/not-monitored-and-gray-agents.md)

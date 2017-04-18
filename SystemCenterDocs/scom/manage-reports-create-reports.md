@@ -193,6 +193,6 @@ This information is useful when considering service level agreements (SLA). You 
 
 ## Next steps
 
-- [How to Run, Save, and Export a Report](how-to-run-save-export-reports.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.  
+- [How to Run, Save, and Export a Report](../om/manage/how-to-run-save-export-reports.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.  
 
--  See [How to Configure and Modify Report Schedules](how-to-configure-modify-report-schedules.md) to learn how to schedule report delivery for reports available in Operations Manager.  
+-  See [How to Configure and Modify Report Schedules](../om/manage/how-to-configure-modify-report-schedules.md) to learn how to schedule report delivery for reports available in Operations Manager.  
