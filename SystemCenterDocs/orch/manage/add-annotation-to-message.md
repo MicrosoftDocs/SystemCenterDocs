@@ -48,7 +48,7 @@ The following tables list the required properties and published data for this ac
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](acknowledge-message.md)
+[Acknowledge Message](../../orchestrator/acknowledge-message.md)
 
 [Create Message](create-message.md)
 

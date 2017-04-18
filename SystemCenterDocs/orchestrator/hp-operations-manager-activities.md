@@ -115,7 +115,7 @@ For a list of the data elements published by each activity, see the Published Da
 
 This integration pack adds the HP Operations Manager category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Acknowledge Message](../orch/manage/acknowledge-message.md)
+[Acknowledge Message](acknowledge-message.md)
 
 [Add Annotation to Message](../orch/manage/add-annotation-to-message.md)
 
