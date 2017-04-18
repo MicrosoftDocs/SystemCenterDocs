@@ -514,7 +514,7 @@
 #######[Get activity](orchestrator/get-activity.md)
 #######[Get object](orchestrator/get-object.md)
 #######[Get relationship](orchestrator/get-relationship.md)
-#######[Monitor object](orch/manage/monitor-object.md)
+#######[Monitor object](orchestrator/monitor-object.md)
 #######[Update activity](orch/manage/update-activity.md)
 #######[Update object](orch/manage/update-object.md)
 #######[Upload attachment](orch/manage/upload-attachment.md)
