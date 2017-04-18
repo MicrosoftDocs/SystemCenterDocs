@@ -32,7 +32,7 @@ You can deploy additional Service Manager management servers to load\-balance ad
  To associate your additional Service Manager management servers with the initial Service Manager management server and management group, you must specify the Service Manager database that you used for your initial Service Manager management server.  
 
 ## Disjointed namespace considerations  
- If you are installing an additional management server in an environment with a disjointed namespace, see [Deployment considerations with a disjointed namespace](../sm/deploy/deploy-deployment-considerations-with-a-disjointed-namespace.md).  
+ If you are installing an additional management server in an environment with a disjointed namespace, see [Deployment considerations with a disjointed namespace](disjointed-namespaces.md).  
 
 ## Install an additional management server
 
@@ -75,4 +75,4 @@ The following procedure shows how to install an additional management server in 
 
 ## Next steps
 
-- Review [Deployment considerations with a disjointed namespace](../sm/deploy/deploy-deployment-considerations-with-a-disjointed-namespace.md) to perform additional steps when you deploy either an additional Service Manager management server or Self-Service Portal in an environment with a disjointed namespace.
+- Review [Deployment considerations with a disjointed namespace](disjointed-namespaces.md) to perform additional steps when you deploy either an additional Service Manager management server or Self-Service Portal in an environment with a disjointed namespace.

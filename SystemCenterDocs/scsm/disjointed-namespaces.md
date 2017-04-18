@@ -57,4 +57,4 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 ## Next steps
 
-- Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](deploy-new-self-service-portal-deployment-scenarios-and-troubleshooting.md).
+- Review [Learn about deploying the new Self Service portal and troubleshoot installation issues](../sm/deploy/deploy-new-self-service-portal-deployment-scenarios-and-troubleshooting.md).

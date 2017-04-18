@@ -635,7 +635,7 @@
 #### [Configure PowerShell to run in Service Manager](scsm/config-powershell.md)
 #### [Register with the data warehouse to enable reporting](scsm/register-dw.md)
 #### [Deploy additional management servers](scsm/deploy-additional-ms.md)
-#### [Deployment considerations with a disjointed namespace](sm/deploy/deploy-deployment-considerations-with-a-disjointed-namespace.md)
+#### [Deployment considerations with a disjointed namespace](scsm/disjointed-namespaces.md)
 #### [Learn about the new Self Service portal](sm/deploy/deploy-new-self-service-portal-deployment-scenarios-and-troubleshooting.md)
 ##### [Deploy the Self-Service portal](sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md)
 #### [Guidance for load balancing](sm/deploy/deploy-guidance-for-load-balancing-system-center-2016-service-manager.md)
