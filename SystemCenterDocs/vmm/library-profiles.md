@@ -105,4 +105,4 @@ VMM can are used to provision physical computers into Hyper-V hosts or into a sc
 
 ## Next steps
 
-Learn about creating [VM templates](manage/manage-library-add-vm-templates.md) and [service templates](manage/manage-library-add-service-templates.md) in the VMM library, and adding profiles to them.
+Learn about creating [VM templates](library-vm-templates.md) and [service templates](manage/manage-library-add-service-templates.md) in the VMM library, and adding profiles to them.
