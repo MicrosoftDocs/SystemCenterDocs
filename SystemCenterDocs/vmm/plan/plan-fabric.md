@@ -65,4 +65,4 @@ When planning the storage fabric consider the following:
 
 - [Manage Hyper-V hosts and clusters](../hyper-v-hosts.md)
 - [Manage the networking fabric](../manage-networks.md)
-- [Manage the storage fabric](../manage/manage-storage-overview.md)
+- [Manage the storage fabric](../manage-storage.md)

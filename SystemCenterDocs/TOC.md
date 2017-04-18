@@ -820,7 +820,7 @@
 ##### [Set up MAC address pools](vmm/network-mac.md)
 ##### [Integrate NLB with service templates](vmm/network-nlb.md)
 ##### [Set up an IPAM server](vmm/network-ipam.md)
-#### [Manage the VMM storage fabric](vmm/manage/manage-storage-overview.md)
+#### [Manage the VMM storage fabric](vmm/manage-storage.md)
 ##### [Set up storage classifications](vmm/manage/manage-storage-classifications.md)
 ##### [Add storage devices](vmm/manage/manage-storage-add-device.md)
 ##### [Allocate storage to host groups](vmm/manage/manage-storage-host-groups.md)

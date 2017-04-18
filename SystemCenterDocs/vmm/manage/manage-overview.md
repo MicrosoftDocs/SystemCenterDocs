@@ -38,7 +38,7 @@ After you've finished installing System Center 2016 - Virtual Machine Manager (V
 
 ## Manage the VMM storage fabric
 
- VMM can manage storage that you assign to virtual hosts, clusters, and virtual machines. [Learn more](manage-storage-overview.md).
+ VMM can manage storage that you assign to virtual hosts, clusters, and virtual machines. [Learn more](../manage-storage.md).
 
  - **Manage storage classifications**: Storage classifications abstract storage devices, so that you can group together devices with similar characteristics. You can then assign classifications rather than specific storage devices to hosts and clusters. [Get started](manage-storage-classifications.md).
  - **Add storage devices**: To manage storage you need to discover and add it to the VMM storage fabric. [Get started](manage-storage-add-device.md).

@@ -36,10 +36,10 @@ You can use System Center 2016 - Virtual Machine Manager (VMM) to manage your ph
 
 The general process for setting up block-based storage in the VMM fabric is as follows:
 
-1. [Create storage classifications](manage-storage-classifications.md): You create storage classifications to group storage based on shared characteristics, often performance and availability. Then instead of assigning specific storage devices to them, you assign storage to VMM host groups you assign a specific classification so that host groups can use any available storage device with the assigned classification. You don't have to create classifications before you add storage devices. You can create them during storage device discovery.
-2. [Add the storage](manage-storage-add-device.md): You add the storage as a resource in the VMM fabric. When you add the device VMM automatically discovers any existing storage pools and logical units on the device. You can classify storage as you add it.
-3. [Configure storage and allocate capacity](manage-storage-host-groups.md): After a storage array is managed by VMM you can configure settings. You can specify how you want to use rapid provisioning on the device (snapshots or cloning). You can add and modify storage pools and storage logical units (LUNs) in the pools. You can allocate capacity (either entire storage pools) or specific LUNs to one or more host groups.
-4. [Use the storage](../hyper-v-storage.md): After storage is allocated to a host group you can use the storage for a specific host or cluster. When you add a host or cluster to a host group the host and cluster can use storage associated with the group.
+1. [Create storage classifications](manage/manage-storage-classifications.md): You create storage classifications to group storage based on shared characteristics, often performance and availability. Then instead of assigning specific storage devices to them, you assign storage to VMM host groups you assign a specific classification so that host groups can use any available storage device with the assigned classification. You don't have to create classifications before you add storage devices. You can create them during storage device discovery.
+2. [Add the storage](manage/manage-storage-add-device.md): You add the storage as a resource in the VMM fabric. When you add the device VMM automatically discovers any existing storage pools and logical units on the device. You can classify storage as you add it.
+3. [Configure storage and allocate capacity](manage/manage-storage-host-groups.md): After a storage array is managed by VMM you can configure settings. You can specify how you want to use rapid provisioning on the device (snapshots or cloning). You can add and modify storage pools and storage logical units (LUNs) in the pools. You can allocate capacity (either entire storage pools) or specific LUNs to one or more host groups.
+4. [Use the storage](hyper-v-storage.md): After storage is allocated to a host group you can use the storage for a specific host or cluster. When you add a host or cluster to a host group the host and cluster can use storage associated with the group.
 
 ## File storage
 
@@ -48,7 +48,7 @@ VMM can manage file storage that supports the SMB 3.0 protocol. SMB is supported
 - **Windows file server**:  You can add a remote file server as a storage device or you can scale file-based storage Scale-Out File Server (SOFS).
 - **Scaled-out file server (SOFS)**: SOFS provides a file server cluster in which storage is shared between the cluster nodes. Storage for SOFS could be a SAN (SAS, iSCSI, Fibre Channel) or could integrate with Storage Spaces Direct.
 - **Storage Spaces Direct (S2D)**: S2D is the next evolution of Microsoft Storage Spaces, which virtualizes storage by grouping disks into storage pools and creating virtual disks (storage spaces) from the pool capacity. In S2D you can build highly available storage using local storage. This removes the need for remote SAN storage devices and enables use the storage devices that weren't previously available, such as SATA SSD or NVMe flash. [Learn more](https://technet.microsoft.com/library/mt126109.aspx).
-- **Storage replication**: VMM supports Windows Storage Replica for protecting data in a primary storage volume that replicating it to a secondary volume. [Learn more](manage-storage-replica.md).
+- **Storage replication**: VMM supports Windows Storage Replica for protecting data in a primary storage volume that replicating it to a secondary volume. [Learn more](manage/manage-storage-replica.md).
 - **Storage resources**: You can control access to shared storage on an SOFS or VM by setting storage quality-of-service (QoS) policies. These policies set maximum and minimum bandwidth for storage resources.
 
 ## Set up file storage
@@ -62,7 +62,7 @@ The general process for setting up file storage in the VMM fabric is as follows:
 5. **Use the storage**: After storage is allocated to a host group you can use the storage for a specific host or cluster. When you add a host or cluster to a host group the host and cluster can use storage associated with the group.
 6. **Decommission storage**: VMM can decommission the storage it manages.
 
-[Learn more](manage-storage-file.md) about setting up file storage in VMM.
+[Learn more](manage/manage-storage-file.md) about setting up file storage in VMM.
 
 ## Storage classifications
 
@@ -77,4 +77,4 @@ After you've created classifications you assign them to storage pools that inclu
 
 ## Next steps
 
-[Set up storage classifications](manage-storage-classifications.md) in the VMM fabric
+[Set up storage classifications](manage/manage-storage-classifications.md) in the VMM fabric
