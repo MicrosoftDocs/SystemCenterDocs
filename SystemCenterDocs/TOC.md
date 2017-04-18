@@ -560,7 +560,7 @@
 #######[Start vm](orchestrator/start-vm.md)
 #######[Stop service](orchestrator/stop-service-in-system-center-2016.md)
 #######[Stop vm](orchestrator/stop-vm.md)
-#######[Suspend vm](orch/manage/suspend-vm.md)
+#######[Suspend vm](orchestrator/suspend-vm.md)
 #######[Update disk](orch/manage/update-disk.md)
 #######[Update network adapter](orch/manage/update-network-adapter.md)
 #######[Update user role property](orch/manage/update-user-role-property.md)

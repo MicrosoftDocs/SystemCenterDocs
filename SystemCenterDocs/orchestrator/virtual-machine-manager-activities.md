@@ -159,7 +159,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Stop VM](stop-vm.md)
 
-[Suspend VM](../orch/manage/suspend-vm.md)
+[Suspend VM](suspend-vm.md)
 
 [Update Disk](../orch/manage/update-disk.md)
 
