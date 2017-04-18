@@ -506,7 +506,7 @@
 ###### [Service Manager Activities](orch/manage/service-manager-activities.md)
 #######[Classes fields and filters](orchestrator/classes-fields-and-filters.md)
 #######[Create change with template](orchestrator/create-change-with-template.md)
-#######[Create incident with template](orch/manage/create-incident-with-template.md)
+#######[Create incident with template](orchestrator/create-incident-with-template.md)
 #######[Create object](orch/manage/create-object.md)
 #######[Create related object](orch/manage/create-related-object.md)
 #######[Create relationship](orch/manage/create-relationship.md)

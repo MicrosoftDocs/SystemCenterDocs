@@ -131,7 +131,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Create Change with Template](create-change-with-template.md)
 
-[Create Incident with Template](../orch/manage/create-incident-with-template.md)
+[Create Incident with Template](create-incident-with-template.md)
 
 [Create Object](../orch/manage/create-object.md)
 
