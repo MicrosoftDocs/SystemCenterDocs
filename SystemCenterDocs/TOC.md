@@ -824,7 +824,7 @@
 ##### [Set up storage classifications](vmm/storage-classification.md)
 ##### [Add storage devices](vmm/storage-device.md)
 ##### [Allocate storage to host groups](vmm/storage-host-group.md)
-##### [Set up a Microsoft iSCSI Target Server](vmm/manage/manage-storage-microsoft-iscsi.md)
+##### [Set up a Microsoft iSCSI Target Server](vmm/storage-iscsi.md)
 ##### [Set up a Virtual Fibre Channel](vmm/manage/manage-storage-virtual-fibre-channel.md)
 ##### [Set up file storage](vmm/manage/manage-storage-file.md)
 ##### [Set up a scale-out file server (SOFS)](vmm/manage/manage-sofs-overview.md)
