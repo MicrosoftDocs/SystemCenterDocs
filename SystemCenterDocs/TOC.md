@@ -833,7 +833,7 @@
 ###### [Create an SOFS cluster from standalone servers](vmm/manage/manage-sofs-standalone-server.md)
 ###### [Provision SOFS from bare-metal computers](vmm/manage/manage-sofs-bare-metal.md)
 ###### [Manage SOFS settings](vmm/manage/manage-sofs.md)
-##### [Set up Storage Spaces Direct](vmm/manage/manage-storage-spaces-direct-vmm.md)
+##### [Set up Storage Spaces Direct](vmm/s2d.md)
 ##### [Set up Storage Replica in VMM](vmm/manage/manage-storage-replica.md)
 #### [Manage virtual machines](vmm/manage/manage-vm-overview.md)
 ##### [Deploy virtual machines from a blank VHD](vmm/manage/manage-vm-vhd-blank.md)
