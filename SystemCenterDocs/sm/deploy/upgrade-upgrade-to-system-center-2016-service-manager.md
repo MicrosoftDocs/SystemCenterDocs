@@ -168,7 +168,7 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 7.  On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, type the computer name of the server that will host the SQL&nbsp;Server Analysis Services \(SSAS\) database, and then press the Tab key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
 
     > [!IMPORTANT]  
-    >  If you are installing SSAS on a computer other than the computer that hosts the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see "Port Assignments for System Center 2016 - Service Manager" in the [Planning Guide for System Center 2016 - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
+    >  If you are installing SSAS on a computer other than the computer that hosts the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see "Port Assignments for System Center 2016 - Service Manager" in the [Planning Guide for System Center 2016 - Service Manager](../../scsm/plan-sm.md).  
 
 8.  On the **Configure Analysis Services credential** page, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a message saying "The credentials were accepted," click **Next**.  
 

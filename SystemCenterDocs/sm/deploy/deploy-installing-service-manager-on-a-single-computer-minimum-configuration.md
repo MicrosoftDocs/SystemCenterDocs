@@ -41,7 +41,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 -   Workflow account  
 
- For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer.  
+ For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer.  
 
 ### To install the Service Manager management server, database, and console  
 
@@ -62,7 +62,7 @@ To install System Center - Service Manager on a single computer, you install the
 7.  On the **Configure the Service Manager database** page, Service Manager checks the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance is displayed, click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
 
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -102,7 +102,7 @@ To install System Center - Service Manager on a single computer, you install the
 7.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL Server. For more information, see [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
 
 8.  On the **Configure additional data warehouse datamarts** page, Service Manager will check the current computer to see if an instance of SQL&nbsp;Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
 

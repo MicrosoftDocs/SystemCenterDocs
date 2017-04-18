@@ -33,4 +33,4 @@ Service Manager provides an integrated platform for automating and adapting your
 ## Next steps
 
 - Read about [what's new in Service Manager](whats-new.md).
-- Review [planning information for Service Manager](../sm/plan/plan-planning-for-system-center-2016-service-manager.md).
+- Review [planning information for Service Manager](plan-sm.md).

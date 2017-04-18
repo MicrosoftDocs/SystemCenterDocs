@@ -252,4 +252,4 @@ Service Manager 2016 now supports the .Net framework 4.5.1
 
 ## Next steps
 
-- Review [Planning for Service Manager](../sm/plan/plan-planning-for-system-center-2016-service-manager.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
+- Review [Planning for Service Manager](plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
