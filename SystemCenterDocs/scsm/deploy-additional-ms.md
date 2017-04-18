@@ -71,7 +71,7 @@ The following procedure shows how to install an additional management server in 
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Complete deployment by backing up the encryption key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Complete deployment by backing up the encryption key](encryption-key.md).
 
 ## Next steps
 

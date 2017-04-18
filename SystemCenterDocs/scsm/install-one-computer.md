@@ -83,7 +83,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).  
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).  
 
 ### To install the data warehouse  
 
@@ -137,7 +137,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 17. On the **Installation summary** page, click **Install**.  
 
-18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).
 
 
 ## Validate the single-computer installation

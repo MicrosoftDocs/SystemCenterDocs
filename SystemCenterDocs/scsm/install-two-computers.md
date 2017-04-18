@@ -92,7 +92,7 @@ As the second step in the two\-computer installation process for System Center -
 
 17. On the **Installation summary** page, click **Install**.  
 
-18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).
 
 
 ## Install the Service Manager data warehouse (two-computer scenario)
@@ -159,7 +159,7 @@ As the second step in the two\-computer installation process for System Center -
 
 17.   On the **Installation summary** page, click **Install**.  
 
-18.   On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+18.   On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).
 
 
 ## Validate the two-computer installation

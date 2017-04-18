@@ -35,4 +35,4 @@ You can use network Load Balancing \(NLB\) in Windows Server to configure a pool
 
 ## Next steps
 
-- Review [Complete deployment by backing up the encryption key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md) to use the Encryption Key Backup or Restore Wizard to back up and restore encryption keys.
+- Review [Complete deployment by backing up the encryption key](encryption-key.md) to use the Encryption Key Backup or Restore Wizard to back up and restore encryption keys.

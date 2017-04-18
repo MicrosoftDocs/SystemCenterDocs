@@ -85,7 +85,7 @@ The following procedure describes how to install the System Center - Service Man
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).
 
 
 ## Install the Service Manager data warehouse (four-computer scenario)
@@ -182,7 +182,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 19. On the **Installation summary** page, click **Install**.  
 
-20. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+20. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](encryption-key.md).
 
 
 ## Validate the four-computer installation
