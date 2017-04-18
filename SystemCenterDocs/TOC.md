@@ -361,7 +361,7 @@
 #######[Snapshot blob](orchestrator/snapshot-blob.md)
 #######[Start vm instance](orch/manage/start-vm-instance.md)
 #######[Swap deployment](orchestrator/swap-deployment.md)
-#######[Update deployment status](orch/manage/update-deployment-status.md)
+#######[Update deployment status](orchestrator/update-deployment-status.md)
 #######[Update os image](orch/manage/update-os-image.md)
 #######[Update storage account](orch/manage/update-storage-account.md)
 #######[Update vm instance](orch/manage/update-vm-instance.md)

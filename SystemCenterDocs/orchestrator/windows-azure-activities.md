@@ -230,7 +230,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Upgrade Deployment](../orch/manage/upgrade-deployment.md)
 
-[Update Deployment Status](../orch/manage/update-deployment-status.md)
+[Update Deployment Status](update-deployment-status.md)
 
 [Update OS Image](../orch/manage/update-os-image.md)
 
