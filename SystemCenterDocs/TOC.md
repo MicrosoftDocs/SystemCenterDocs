@@ -912,7 +912,7 @@
 ### [Upgrade SPF](spf/deploy/deploy-upgrade-spf.md)
 ### [Deploy SPF](spf/deploy/deploy-spf.md)
 ### [Manage SPF](spf/manage/manage-spf.md)
-#### [Register SPF in Windows Azure Pack](spf/manage/manage-register-spf.md)
+#### [Register SPF in Windows Azure Pack](spf/manage-register-spf.md)
 #### [Manage tenants and user roles](spf/manage/manage-tenants.md)
 #### [Manage usage metering](spf/manage/manage-usage-metering.md)
 #### [Manage gallery resources](spf/manage/manage-gallery.md)
