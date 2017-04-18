@@ -30,7 +30,7 @@ VMM supports virtual machines that contain Linux as the guest operating system. 
 
 ## Create the VM
 
-Create a VM running Linux using any of the available methods in the VMM fabric. [Learn more](../provision-vms.md).
+Create a VM running Linux using any of the available methods in the VMM fabric. [Learn more](provision-vms.md).
 
 ## Install LIS on the VM
 
@@ -58,4 +58,4 @@ When the agent installs on the VM the following files and folders will be create
 
 ## Next steps
 
-[Manage VM settings](manage-vm-settings.md)
+[Manage VM settings](manage/manage-vm-settings.md)

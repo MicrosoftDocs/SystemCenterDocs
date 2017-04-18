@@ -841,7 +841,7 @@
 ##### [Clone existing virtual machines](vmm/vm-clone.md)
 ##### [Deploy virtual machines with rapid provisioning using SAN copy](vmm/vm-san-copy.md)
 ##### [Deploy virtual machines from a VM template](vmm/vm-template.md)
-##### [Deploy Linux virtual machines](vmm/manage/manage-vm-linux.md)
+##### [Deploy Linux virtual machines](vmm/vm-linux.md)
 ##### [Convert VMware VMs to Hyper-V](vmm/manage/manage-vm-vmware-convert.md)
 ##### [Fail over VMs between virtual networks](vmm/manage/manage-vm-failover-virtual-networks.md)
 ##### [Manage virtual machine settings](vmm/manage/manage-vm-settings.md)
