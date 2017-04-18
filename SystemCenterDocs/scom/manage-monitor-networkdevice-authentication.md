@@ -49,4 +49,4 @@ Two Run As profiles are created when you install Operations Manager: SNMP Monito
 
 - To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](manage-monitor-networkdevice-viewing-data.md).  
 
--  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](../om/manage/reports-for-network-monitoring-in-operations-manager.md).   
+-  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).   

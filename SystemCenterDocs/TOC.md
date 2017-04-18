@@ -188,7 +188,7 @@
 ###### [How to delete or restore a network device](scom/manage-monitor-networkdevice-delete-restore.md)
 ###### [How to configure monitoring of network devices](scom/manage-monitor-networkdevice-configure-monitoring.md)
 ###### [Viewing network devices and data](scom/manage-monitor-networkdevice-viewing-data.md)
-###### [Reports for network monitoring](om/manage/reports-for-network-monitoring-in-operations-manager.md)
+###### [Reports for network monitoring](scom/manage-monitor-networkdevice-reports.md)
 ##### [Monitoring service level objectives](scom/manage-monitor-sla-overview.md)
 ###### [Create a service level dashboard](om/manage/creating-a-service-level-dashboard.md)
 ###### [Running a service level tracking report](om/manage/running-a-service-level-tracking-report.md)

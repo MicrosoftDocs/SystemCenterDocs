@@ -142,7 +142,7 @@ Network device discovery consists of the following phases, which are displayed i
   
     Operations Manager correlates network device ports to the servers that the ports are connected to, inserts items into the operational database, and associates Run As accounts.  
   
-After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager]../om/manage/viewing-network-devices-and-data-in-operations-manager.md) and [Reports for Network Monitoring in Operations Manager](../om/manage/reports-for-network-monitoring-in-operations-manager.md).  
+After discovery is complete, the management server resource pool that you specify in the discovery rule begins monitoring the discovered network devices. For more information on monitoring network devices, see [Viewing Network Devices and Data in Operations Manager]../om/manage/viewing-network-devices-and-data-in-operations-manager.md) and [Reports for Network Monitoring in Operations Manager](manage-monitor-networkdevice-reports.md).  
   
 ## Next steps
 
