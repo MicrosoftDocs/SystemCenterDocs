@@ -135,7 +135,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Create Object](create-object.md)
 
-[Create Related Object](../orch/manage/create-related-object.md)
+[Create Related Object](create-related-object.md)
 
 [Create Relationship](../orch/manage/create-relationship.md)
 
