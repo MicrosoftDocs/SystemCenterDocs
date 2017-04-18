@@ -70,7 +70,7 @@
 ##### [Security credentials to access UNIX and Linux computers](scom/plan-security-crossplat-credentials.md)
 ##### [Authentication and data encryption in Operations Manager](scom/plan-security-authentication-data-encryption.md)
 ##### [Data encryption for Web console and Reporting server connections](scom/plan-data-encryption-server-roles.md)
-##### [Security considerations monitoring Microsoft Azure and Office 365](om/plan/planning-security-microsoft-cloud.md)
+##### [Security considerations monitoring Microsoft Azure and Office 365](scom/plan-security-microsoft-cloud.md)
 ### [Deploy](scom/deploy-overview.md)
 #### [Single-Server deployment of Operations Manager](om/Deploy/single-server-deployment-of-operations-manager.md)
 #### [Distributed deployment of Operations Manager](scom/deploy-distributed-deployment.md)

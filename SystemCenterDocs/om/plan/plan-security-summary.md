@@ -24,7 +24,7 @@ This section provides you with security-related information as it pertains to th
 
 - Review how [Run As accounts and Run As profiles](../../scom/plan-security-runas-accounts-profiles.md) allow you to run workflows from management packs under different accounts on different computers securely.  
 
-- Before monitoring Office 365 and workloads hosted in the cloud with Operations Manager, review  [Integration with Microsoft Azure and Office 365](planning-security-microsoft-cloud.md).
+- Before monitoring Office 365 and workloads hosted in the cloud with Operations Manager, review  [Integration with Microsoft Azure and Office 365](../../scom/plan-security-microsoft-cloud.md).
 
 - The [Firewall Configuration for Operations Manager](../../scom/plan-security-config-firewall.md) topic will help you understand the required network ports and communication path between Operations Manager roles and components.
 
