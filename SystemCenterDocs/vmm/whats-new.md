@@ -26,7 +26,7 @@ You can provision and manage Nano Server-based hosts and virtual machines in the
 
 ### Rolling upgrade of a Windows Server 2012 R2 host clusters
 
-You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM fabric from Windows Server 2012 R2 to Windows Server 2016, with no downtime for the host workloads. VMM orchestrates the entire workflow. It drains the node, removes it from the cluster, reinstalls the operating system, and adds it back into the cluster. Learn more about performing rolling upgrades for [Hyper-V clusters](hyper-v-rolling-upgrade.md), and [SOFS clusters](manage/manage-sofs-rolling-upgrade.md).
+You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM fabric from Windows Server 2012 R2 to Windows Server 2016, with no downtime for the host workloads. VMM orchestrates the entire workflow. It drains the node, removes it from the cluster, reinstalls the operating system, and adds it back into the cluster. Learn more about performing rolling upgrades for [Hyper-V clusters](hyper-v-rolling-upgrade.md), and [SOFS clusters](sofs-rolling-upgrade.md).
 
 ### Creating Hyper-V & SOFS clusters
 

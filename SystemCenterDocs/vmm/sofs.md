@@ -19,7 +19,7 @@ Scale-out file server (SOFS) is a file server deployed as an active/active clust
 
 You can add and manage SOFS clusters in the System Center 2016 - Virtual Machine Manager (VMM) fabric. There are a number of ways you can add an SOFS cluster. You can add an existing SOFS cluster to the fabric,  provision an SOFS cluster from existing Windows machines in the fabric, or provision a cluster from bare metal computers.
 
-- [Perform a rolling upgrade of an SOFS cluster](manage/manage-sofs-rolling-upgrade.md)
+- [Perform a rolling upgrade of an SOFS cluster](sofs-rolling-upgrade.md)
 - [Add an existing SOFS to the VMM storage fabric](manage/manage-sofs-add-existing.md)
 - [Create an SOFS cluster from standalone servers in the VMM fabric](manage/manage-sofs-standalone-server.md)
 - [Provision SOFS from bare-metal computers](manage/manage-sofs-bare-metal.md)
