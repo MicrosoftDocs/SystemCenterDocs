@@ -50,6 +50,6 @@ You can download System Center 2016 from the [TechNet Evaluation Center](http://
 
 -   [Orchestrator](orch/Orchestrator.md)
 
--   [Service Manager](sm/Service-Manager.md)
+-   [Service Manager](scsm/service-manager.md)
 
 -   [Virtual Machine Manager](vmm/vmm.md)
