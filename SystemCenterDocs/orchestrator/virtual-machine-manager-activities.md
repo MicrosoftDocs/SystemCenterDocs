@@ -125,7 +125,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Create VM from Template](create-vm-from-template.md)
 
-[Create VM from VHD](../orch/manage/create-vm-from-vhd.md)
+[Create VM from VHD](create-vm-from-vhd.md)
 
 [Create VM from VM](../orch/manage/create-vm-from-vm.md)
 
