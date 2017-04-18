@@ -31,7 +31,7 @@ An agent and the management server use Windows authentication to mutually authen
 An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there is no trust between the two domains, the agents in one domain cannot authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs. 
 A solution to this situation is to install a gateway server in the same domain where the agents reside, and then install certificates on the gateway server and the management server to achieve mutual authentication and data encryption. The use of the gateway server means you need only one certificate in domain B and only one port through the firewall, as shown in the following illustration.
 
-![Monitor Untrusted Agent with Gateway](../media/om2016-untrusted-agent-with-gateway.png)
+![Monitor Untrusted Agent with Gateway](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-with-gateway.png)
 
 ### Setting Up Communication Across a Domain – Workgroup Boundary
 
@@ -40,7 +40,7 @@ In your environment, you may have one or two agents deployed to a workgroup insi
 > [!NOTE]
 > In this scenario, the agent must be manually installed.
 
-![Monitor Untrusted Agent in Workgroup](../media/om2016-untrusted-agent-no-gateway.png)
+![Monitor Untrusted Agent in Workgroup](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-no-gateway.png)
 
 Perform the following steps on both the computer hosting the agent and the management server using the same certification authority (CA) for each:
 
