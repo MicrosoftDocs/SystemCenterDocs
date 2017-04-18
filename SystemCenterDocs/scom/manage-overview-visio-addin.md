@@ -40,21 +40,21 @@ The Visio Add-in and SharePoint  Visio Services Data Provider have the following
   
 The following topics provide information about how to install, configure, and use the Visio Add-in and the SharePoint Visio Services Data Provider.  
   
--   [Install the Visio Add-in](Install-the-Visio-Add-in.md)  
+-   [Install the Visio Add-in](../om/manage/install-the-visio-add-in.md)  
   
--   [Install and Configure the Visio Services Data Provider](Install-and-configure-the-Visio-Services-Data-Provider.md)  
+-   [Install and Configure the Visio Services Data Provider](../om/manage/install-and-configure-the-visio-services-data-provider.md)  
   
--   [Configure the Operations Manager Data Source in Visio](configure-the-operations-manager-data-source-in-visio.md)  
+-   [Configure the Operations Manager Data Source in Visio](../om/manage/configure-the-operations-manager-data-source-in-visio.md)  
   
--   [View an Operations Manager Distributed Application Diagram in Visio](view-an-operations-manager-distributed-application-diagram-in-visio.md)  
+-   [View an Operations Manager Distributed Application Diagram in Visio](../om/manage/view-an-operations-manager-distributed-application-diagram-in-visio.md)  
   
--   [Link to Operations Manager Objects in a New or Existing Visio Document](link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)  
+-   [Link to Operations Manager Objects in a New or Existing Visio Document](../om/manage/link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)  
   
--   [Build a simple monitoring dashboard using the Visio Web Part](build-a-simple-monitoring-dashboard-using-the-visio-web-part.md)  
+-   [Build a simple monitoring dashboard using the Visio Web Part](../om/manage/build-a-simple-monitoring-dashboard-using-the-visio-web-part.md)  
   
--   [Publish a Visio diagram to SharePoint Server](publish-a-visio-diagram-to-sharepoint.md)  
+-   [Publish a Visio diagram to SharePoint Server](../om/manage/publish-a-visio-diagram-to-sharepoint.md)  
   
--   [Change the Way Health State is Represented in Visio](change-the-way-health-state-is-represented-in-visio.md)  
+-   [Change the Way Health State is Represented in Visio](../om/manage/change-the-way-health-state-is-represented-in-visio.md)  
   
--   [Troubleshooting the Visio Add-in](troubleshooting-the-visio-add-in.md)  
+-   [Troubleshooting the Visio Add-in](../om/manage/troubleshooting-the-visio-add-in.md)  
   

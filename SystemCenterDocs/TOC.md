@@ -152,7 +152,7 @@
 ###### [How to create notification subscriptions](om/manage/how-to-create-notification-subscriptions.md)
 ###### [How to customize message content for notifications](om/manage/how-to-customize-message-content-for-notifications.md)
 ###### [How to subscribe to notifications from an alert](om/manage/how-to-subscribe-to-notifications-from-an-alert.md)
-##### [Using the Visio add-in and SharePoint Visio Services Data Provider](om/manage/using-the-visio-add-in-and-sharepoint-visio-services-data-provider.md)
+##### [Using the Visio add-in and SharePoint Visio Services Data Provider](scom/manage-overview-visio-addin.md)
 ###### [Install the Visio add-in](om/manage/install-the-visio-add-in.md)
 ###### [Install and configure the Visio Services data provider](om/manage/install-and-configure-the-visio-services-data-provider.md)
 ###### [Configure the Operations Manager data source in Visio](om/manage/configure-the-operations-manager-data-source-in-visio.md)
