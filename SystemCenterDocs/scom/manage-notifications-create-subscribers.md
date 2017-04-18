@@ -67,4 +67,4 @@ Notification channels must be enabled before you create subscribers. After a sub
   
 ## Next steps
 
-* Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  

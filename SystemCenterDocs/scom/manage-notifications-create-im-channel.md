@@ -56,7 +56,7 @@ Before you begin, gather the following information from your instant message ser
 
 * To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md)
 
-* Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.    
+* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.    
 
 * To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md). 
 
