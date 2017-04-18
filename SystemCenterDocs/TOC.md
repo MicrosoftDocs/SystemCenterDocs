@@ -717,7 +717,7 @@
 ###### [Manage and use the analysis libraries](scsm/manage-analysis-library.md)
 ###### [Advanced analytical reports](scsm/advanced-reports.md)
 ###### [Create and deploy dashboards](scsm/deploy-dashboards.md)
-##### [Customize the data warehouse](sm/manage/ops-customizing-the-data-warehouse.md)
+##### [Customize the data warehouse](scsm/customize-dw.md)
 ### [Disaster recovery for System Center 2016 - Service Manager](sm/manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md)
 #### [Prepare for Service Manager disaster recovery](sm/manage/disaster-prepare-for-service-manager-disaster-recovery.md)
 #### [Implement Service Manager disaster recovery](sm/manage/disaster-implement-service-manager-disaster-recovery.md)

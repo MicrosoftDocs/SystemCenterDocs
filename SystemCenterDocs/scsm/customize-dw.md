@@ -284,7 +284,7 @@ A dimension in the Service Manager data warehouse in Service Manager is roughly 
 ### IncludeExtendedClassProperties  
  For a dimension with a HierarchySupport of IncludeExtendedClassProperties, all the attributes of the target class and all of its base classes are included in the dimension table and transform. The following illustration shows an example: CarDimension, which targets the class Car and has a HierarchySupport of IncludeExtendedClassProperties.  
 
- ![Diagram of IncludeExtendedClassProperties example](../media/ops-includeextendedclassproperties.png)  
+ ![Diagram of IncludeExtendedClassProperties example](./media/customize-dw/ops-includeextendedclassproperties.png)  
 
  Because CarDimension targets the Car class and has a HierarchySupport value of IncludeExtendedClassProperties, it processes both the Car class and its base class, Vehicle. The resulting table and transform contain the attributes in the following table.  
 
@@ -303,7 +303,7 @@ A dimension in the Service Manager data warehouse in Service Manager is roughly 
 
  Slightly modifying the previous example, CarDimension now has a HierarchySupport of IncludeDerivedClassProperties below. Because it processes both the base and derived classes of the target class, the dimension now processes the attributes of three classes: Vehicle, Car, and Sportscar, as shown in the following illustration.  
 
- ![Diagram of IncludeDerivedClassProperties dimension](../media/ops-includederivedclassproperties.png)  
+ ![Diagram of IncludeDerivedClassProperties dimension](./media/customize-dw/ops-includederivedclassproperties.png)  
 
  The CarDimension dimension table and transform contain the attributes in the following table.  
 
