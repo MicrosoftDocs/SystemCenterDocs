@@ -24,7 +24,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 - To complete the steps you must be an Administrator or Delegated Administrator on the VMM server, or a self-service user.
 - If you're a self-service user you need **Deploy** permissions with the **Store and re-deploy** action assigned. You must first deploy the VM to a private cloud, and then store it in the library.
-- The VHD you want to use must be stored in the VMM library. [Learn more](manage-library-add-files.md)
+- The VHD you want to use must be stored in the VMM library. [Learn more](../library-files.md)
 - Use a VHD that has been generalized using Sysprep. If you don't the identity of the cloned VM will be the same as the source VM, and issues might occur if you turn them on together.
 
 ## Create a VM

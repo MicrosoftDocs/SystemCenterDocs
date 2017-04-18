@@ -63,7 +63,7 @@ Here's what you need to do to set up a SDN network controller
 ## Prepare a virtual hard disk
 1. Prepare the VHD or VHDX based on the type of template you would like to use.
 2. After your prepare the hard disk, install the latest Windows Server 2016 updates, and any language packs you need if you have a non-English environment.
-3.   Import the VHD/VHDX files to the VMM library. [Learn more](manage/manage-library-add-files.md).
+3.   Import the VHD/VHDX files to the VMM library. [Learn more](library-files.md).
 
 ## Download the network controller service template
 
@@ -109,7 +109,7 @@ Create security groups for network controller management and clients.
 
 ## Create a library share for logging
 
-1. Optionally [create a file share](manage/manage-library-add-files.md) in the VMM library to keep diagnostic logs.
+1. Optionally [create a file share](library-files.md) in the VMM library to keep diagnostic logs.
 2. Ensure that the share can be accessed by the network controller. The network controller accesses the share to store diagnostic information. Note the credentials for the account that will have write access to the share.
 
 
