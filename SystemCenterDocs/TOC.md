@@ -882,7 +882,7 @@
 #### [Set or change the Service Management Automation endpoint](sma/set-change-endpoint.md)
 #### [Working with Integration Modules](sma/manage-integration-modules.md)
 ### [Automation Runbooks](SMA/Manage/Automation-Runbooks.md)
-#### [Service Management Automation system runbooks](sma/manage-runbooks.md)
+#### [Service Management Automation system runbooks](spf/manage-runbooks.md)
 #### [Service Management Automation sample runbooks](sma/sample-runbooks.md)
 #### [Runbook Operations](SMA/Manage/Runbook-Operations.md)
 ##### [Runbook Settings](SMA/Manage/Runbook-Settings.md)
