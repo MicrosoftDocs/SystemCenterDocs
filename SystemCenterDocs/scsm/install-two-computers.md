@@ -234,4 +234,4 @@ You can use the following procedures to validate the two\-computer installation 
 
 ## Next steps
 
-- Review [Install Service Manager on four computers](../sm/deploy/deploy-installing-service-manager-on-four-computers.md) to install Service Manager on four computers. This scenario is useful in a production environment, and it maximizes performance and scalability.
+- Review [Install Service Manager on four computers](install-four-computers.md) to install Service Manager on four computers. This scenario is useful in a production environment, and it maximizes performance and scalability.

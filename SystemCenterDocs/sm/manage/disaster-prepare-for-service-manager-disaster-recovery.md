@@ -30,7 +30,7 @@ This article describes the steps that you must take for Service Manager disaster
 
 As a best practice, deploy your management servers and associated databases for Service Manager on separate computers. Isolating the management servers and databases provides for a successful disaster recovery operation in the event of potential software and equipment failures.  
 
- You must have a functioning database to restore a failed management server. Recovery of a management server is impossible if the management server and the associated database are on the same physical computer and that computer fails. For more information, see [Installing Service Manager on Four Computers](../deploy/deploy-installing-service-manager-on-four-computers.md).
+ You must have a functioning database to restore a failed management server. Recovery of a management server is impossible if the management server and the associated database are on the same physical computer and that computer fails. For more information, see [Installing Service Manager on Four Computers](../../scsm/install-four-computers.md).
 
 ## Back up Service Manager management servers
 

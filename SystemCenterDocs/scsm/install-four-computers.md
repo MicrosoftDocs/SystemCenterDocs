@@ -23,7 +23,7 @@ When you are ready to move System Center - Service Manager into a production env
 
  **Figure 3: Four\-computer topology**  
 
- ![Four - computer installation of Service Manager](../media/deploy-four_computer_install.png)  
+ ![Four - computer installation of Service Manager](./media/install-four-computers/deploy-four_computer_install.png)  
 
  In this deployment scenario, you install Microsoft SQL&nbsp;Server only on the computers that hosts databases \(computers 2 and 4\). You install SQL&nbsp;Server Reporting Services \(SSRS\) and SQL&nbsp;Server Analysis Services \(SSAS\) on the computer that hosts the data warehouse databases \(computer 4\).  
 
@@ -43,7 +43,7 @@ The following procedure describes how to install the System Center - Service Man
 
 -   Service Manager workflow account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../../scsm/prepare-deploy.md).  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md).  
 
 ### To install the Service Manager management server, Service Manager database, and console  
 
@@ -64,7 +64,7 @@ The following procedure describes how to install the System Center - Service Man
 7.  On the **Configure the Service Manager database** page, in the **Database server** field, type the name of the computer that will host the Service Manager database, and press the TAB key. Ensure that **SQL Server instance** box is set to the desired SQL Server instance and that **Create a new database** is selected, and then click **Next**. For example, type **Computer 2** in the **Database server** box.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8.  On the **Configure the Service Manager management group** page, complete these steps:  
 
@@ -85,7 +85,7 @@ The following procedure describes how to install the System Center - Service Man
 
 13. On the **Installation summary** page, click **Install**.  
 
-14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+14. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
 ## Install the Service Manager data warehouse (four-computer scenario)
@@ -102,13 +102,13 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 -   Analysis Services account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../../scsm/prepare-deploy.md).  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md).  
 
  The data warehouse databases include the following three databases: DWStagingAndConfig, DWRepository, and DWDataMart. The first two databases, DWStagingAndConfig and DWRepository, must reside on the same instance of Microsoft SQL&nbsp;Server. The DWDataMart database can reside on a separate instance of SQL&nbsp;Server. The optional OMDWDataMart and CMDWDataMart databases can reside together or separately on their own instances of Microsoft SQL Server.  
 
 ### To install a data warehouse management server  
 
-1.  Because, in this scenario, the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for Service Manager. See [Manual Steps to Configure the Remote SQL Server Reporting Services](deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) before continuing with this procedure.  
+1.  Because, in this scenario, the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for Service Manager. See [Manual Steps to Configure the Remote SQL Server Reporting Services](../sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) before continuing with this procedure.  
 
 2.  Log on to the computer that will host the data warehouse management server by using an account that has administrator rights. For example, run Setup on Computer&nbsp;3.  
 
@@ -125,7 +125,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 8.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to reinstall SQL&nbsp;Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 9. In the list of the three databases, select **Data Mart**. In the **Database server** box, type the computer name of the server that will host the Data Mart database. For example, type **Computer 4**, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
 
@@ -158,7 +158,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
     2.  Verify that **Default** is displayed in the **Report server instance** box.  
 
-    3.  Because you followed the procedure [Manual Steps to Configure the Remote SQL Server Reporting Services](deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md), select the **I have taken the manual steps to configure the remote SQL Server Reporting Services as described in the Service Manager Deployment Guide** check box, and then click **Next**.  
+    3.  Because you followed the procedure [Manual Steps to Configure the Remote SQL Server Reporting Services](../sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md), select the **I have taken the manual steps to configure the remote SQL Server Reporting Services as described in the Service Manager Deployment Guide** check box, and then click **Next**.  
 
 13. On the **Configure the account for Service Manager services** page, click **Domain account**, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a **The credentials were accepted** message, click **Next**.  
 
@@ -169,7 +169,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 15. On the **Configure Analysis Service for OLAP cubes** page, in the **Database server** box, type the computer name of the server that will host the Analysis Services database, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, click **Next**. For example, type **Computer 4** in the **Database server** box.  
 
     > [!WARNING]  
-    >  If you are installing SQL Server Analysis Services on a computer other than the computer hosting the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see [Port Assignments for Service Manager](../../scsm/ports.md).  
+    >  If you are installing SQL Server Analysis Services on a computer other than the computer hosting the data warehouse management server and there is a firewall in your environment, you must make sure that the proper firewall ports are opened. For more information, see [Port Assignments for Service Manager](../dpm/ports.md).  
 
 16. On the **Configure Analysis Services credential** page, select a domain account, click **Domain account**, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a **The credentials were accepted** message, click **Next**.  
 
@@ -182,7 +182,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 19. On the **Installation summary** page, click **Install**.  
 
-20. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+20. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
 ## Validate the four-computer installation
@@ -279,4 +279,4 @@ The procedures in this topic describe how to validate the four\-computer install
 
 ## Next steps
 
-- Review [Manual steps to configure remote SQL Server Reporting Services](deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) to manually configure SSRS in situations where SSRS is not on the same server as the data warehouse management server.
+- Review [Manual steps to configure remote SQL Server Reporting Services](../sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) to manually configure SSRS in situations where SSRS is not on the same server as the data warehouse management server.
