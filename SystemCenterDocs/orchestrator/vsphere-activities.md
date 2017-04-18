@@ -29,7 +29,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Clone Windows VM Activity](clone-windows-vm-activity.md)
 
-[Create VM Activity](../orch/manage/create-vm-activity.md)
+[Create VM Activity](create-vm-activity.md)
 
 [Customize VM Activity](../orch/manage/customize-vm-activity.md)
 
