@@ -453,7 +453,7 @@
 ###### [Delete Attachment](orchestrator/delete-attachment.md)
 ###### [Delete Document](orchestrator/delete-document.md)
 ###### [Delete List Item](orchestrator/delete-list-item.md)
-###### [Download Attachment](orch/manage/download-attachment.md)
+###### [Download Attachment](orchestrator/download-attachment.md)
 ###### [Download Document](orch/manage/download-document.md)
 ###### [Get Attachments](orch/manage/get-attachments.md)
 ###### [Get Documents](orch/manage/get-documents.md)
