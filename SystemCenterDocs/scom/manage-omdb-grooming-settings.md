@@ -57,7 +57,7 @@ Use the following procedure to specify when specific data types are deleted or g
   
 ## Next steps
 
-- To learn more about the default retention period for the different data types stored in the Operations Manager Reporting data warehouse database and how to modify those settings, please see [How to configure grooming settings for the Operations Manager Reporting data warehouse database](../om/manage/how-to-configure-grooming-settings-for-the-reporting-data-warehouse-database.md).
+- To learn more about the default retention period for the different data types stored in the Operations Manager Reporting data warehouse database and how to modify those settings, please see [How to configure grooming settings for the Operations Manager Reporting data warehouse database](manage-omdwdb-grooming-settings.md).
 
 
   

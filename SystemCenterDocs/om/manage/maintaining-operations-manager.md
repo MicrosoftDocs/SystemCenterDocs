@@ -28,4 +28,4 @@ Operations Manager supports changes to your Operations Manager infrastructure as
 
 - [How to configure the grooming settings for the Operations Manager database](../../scom/manage-omdb-grooming-settings.md)
 
-- [How to configure the grooming settings for the Reporting data warehouse database](how-to-configure-grooming-settings-for-the-reporting-data-warehouse-database.md)  
+- [How to configure the grooming settings for the Reporting data warehouse database](../../scom/manage-omdwdb-grooming-settings.md)  
