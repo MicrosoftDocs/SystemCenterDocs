@@ -114,131 +114,131 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **Windows Azure** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Management Certificate](add-management-certificate.md)
+[Add Management Certificate](../orch/manage/add-management-certificate.md)
 
-[Add OS Image](add-os-image.md)
+[Add OS Image](../orch/manage/add-os-image.md)
 
-[Add Service Certificate](add-service-certificate.md)
+[Add Service Certificate](../orch/manage/add-service-certificate.md)
 
-[Add VM Data Disk](add-vm-data-disk.md)
+[Add VM Data Disk](../orch/manage/add-vm-data-disk.md)
 
-[Add VM Disk](add-vm-disk.md)
+[Add VM Disk](../orch/manage/add-vm-disk.md)
 
-[Add VM Endpoint](add-vm-endpoint.md)
+[Add VM Endpoint](../orch/manage/add-vm-endpoint.md)
 
-[Add VM Instance](add-vm-instance.md)
+[Add VM Instance](../orch/manage/add-vm-instance.md)
 
-[Capture VM Instance](capture-vm-instance.md)
+[Capture VM Instance](../orch/manage/capture-vm-instance.md)
 
-[Change Deployment Configuration](change-deployment-configuration.md)
+[Change Deployment Configuration](../orch/manage/change-deployment-configuration.md)
 
-[Change Deployment OS](change-deployment-os.md)
+[Change Deployment OS](../orch/manage/change-deployment-os.md)
 
-[Check Cloud Service Name Availability](check-cloud-service-name-availability.md)
+[Check Cloud Service Name Availability](../orch/manage/check-cloud-service-name-availability.md)
 
-[Copy Blob](copy-blob.md)
+[Copy Blob](../orch/manage/copy-blob.md)
 
-[Create Affinity Group](create-affinity-group.md)
+[Create Affinity Group](../orch/manage/create-affinity-group.md)
 
-[Create Cloud Service](create-cloud-service.md)
+[Create Cloud Service](../orch/manage/create-cloud-service.md)
 
-[Create Container](create-container.md)
+[Create Container](../orch/manage/create-container.md)
 
-[Create Deployment](create-deployment.md)
+[Create Deployment](../orch/manage/create-deployment.md)
 
-[Create Storage Account](create-storage-account.md)
+[Create Storage Account](../orch/manage/create-storage-account.md)
 
-[Create VM Deployment](create-vm-deployment.md)
+[Create VM Deployment](../orch/manage/create-vm-deployment.md)
 
-[Delete Blob](delete-blob.md)
+[Delete Blob](../orch/manage/delete-blob.md)
 
-[Delete Cloud Service](delete-cloud-service.md)
+[Delete Cloud Service](../orch/manage/delete-cloud-service.md)
 
-[Delete Container](delete-container.md)
+[Delete Container](../orch/manage/delete-container.md)
 
-[Delete Deployment](delete-deployment.md)
+[Delete Deployment](../orch/manage/delete-deployment.md)
 
-[Delete Management Certificate](delete-management-certificate.md)
+[Delete Management Certificate](../orch/manage/delete-management-certificate.md)
 
-[Delete OS Image](delete-os-image.md)
+[Delete OS Image](../orch/manage/delete-os-image.md)
 
-[Delete Service Certificate](delete-service-certificate.md)
+[Delete Service Certificate](../orch/manage/delete-service-certificate.md)
 
-[Delete Storage Account](delete-storage-account.md)
+[Delete Storage Account](../orch/manage/delete-storage-account.md)
 
-[Delete VM Data Disk](delete-vm-data-disk.md)
+[Delete VM Data Disk](../orch/manage/delete-vm-data-disk.md)
 
-[Delete VM Disk](delete-vm-disk.md)
+[Delete VM Disk](../orch/manage/delete-vm-disk.md)
 
-[Delete VM Instance](delete-vm-instance.md)
+[Delete VM Instance](../orch/manage/delete-vm-instance.md)
 
-[Download Blob](download-blob.md)
+[Download Blob](../orch/manage/download-blob.md)
 
-[Get Deployment](get-deployment.md)
+[Get Deployment](../orch/manage/get-deployment.md)
 
-[Get Operating Systems](get-operating-systems.md)
+[Get Operating Systems](../orch/manage/get-operating-systems.md)
 
-[Get Operation Status](get-operation-status.md)
+[Get Operation Status](../orch/manage/get-operation-status.md)
 
-[Get Storage Account Keys](get-storage-account-keys.md)
+[Get Storage Account Keys](../orch/manage/get-storage-account-keys.md)
 
-[Get Storage Account Properties](get-storage-account-properties.md)
+[Get Storage Account Properties](../orch/manage/get-storage-account-properties.md)
 
-[Get VM Data Disk](get-vm-data-disk.md)
+[Get VM Data Disk](../orch/manage/get-vm-data-disk.md)
 
-[Get VM RDP File](get-vm-rdp-file.md)
+[Get VM RDP File](../orch/manage/get-vm-rdp-file.md)
 
-[Get VM instance](get-vm-instance.md)
+[Get VM instance](../orch/manage/get-vm-instance.md)
 
-[List Blob](list-blob.md)
+[List Blob](../orch/manage/list-blob.md)
 
-[List Cloud Service](list-cloud-service.md)
+[List Cloud Service](../orch/manage/list-cloud-service.md)
 
-[List Container](list-container.md)
+[List Container](../orch/manage/list-container.md)
 
-[List Management Certificate](list-management-certificate.md)
+[List Management Certificate](../orch/manage/list-management-certificate.md)
 
-[List OS Images](list-os-images.md)
+[List OS Images](../orch/manage/list-os-images.md)
 
-[List Service Certificate](list-service-certificate.md)
+[List Service Certificate](../orch/manage/list-service-certificate.md)
 
-[List Storage Account](list-storage-account.md)
+[List Storage Account](../orch/manage/list-storage-account.md)
 
-[List VM Disks](list-vm-disks.md)
+[List VM Disks](../orch/manage/list-vm-disks.md)
 
-[Put Blob](put-blob.md)
+[Put Blob](../orch/manage/put-blob.md)
 
-[Reboot Role Instance](reboot-role-instance.md)
+[Reboot Role Instance](../orch/manage/reboot-role-instance.md)
 
-[Regenerate Storage Account Key](regenerate-storage-account-key.md)
+[Regenerate Storage Account Key](../orch/manage/regenerate-storage-account-key.md)
 
-[Reimage VM Instance](reimage-vm-instance.md)
+[Reimage VM Instance](../orch/manage/reimage-vm-instance.md)
 
-[Remove VM Endpoint](remove-vm-endpoint.md)
+[Remove VM Endpoint](../orch/manage/remove-vm-endpoint.md)
 
-[Restart VM Instance](restart-vm-instance.md)
+[Restart VM Instance](../orch/manage/re../orch/manage/start-vm-instance.md)
 
-[Rollback Update or Upgrade](rollback-update-or-upgrade.md)
+[Rollback Update or Upgrade](../orch/manage/rollback-update-or-upgrade.md)
 
-[Shutdown VM Instance](shutdown-vm-instance.md)
+[Shutdown VM Instance](../orch/manage/shutdown-vm-instance.md)
 
-[Snapshot Blob](snapshot-blob.md)
+[Snapshot Blob](../orch/manage/snapshot-blob.md)
 
-[Start VM Instance](start-vm-instance.md)
+[Start VM Instance](../orch/manage/start-vm-instance.md)
 
-[Swap Deployment](swap-deployment.md)
+[Swap Deployment](../orch/manage/swap-deployment.md)
 
-[Upgrade Deployment](upgrade-deployment.md)
+[Upgrade Deployment](../orch/manage/upgrade-deployment.md)
 
-[Update Deployment Status](update-deployment-status.md)
+[Update Deployment Status](../orch/manage/update-deployment-status.md)
 
-[Update OS Image](update-os-image.md)
+[Update OS Image](../orch/manage/update-os-image.md)
 
-[Update Storage Account](update-storage-account.md)
+[Update Storage Account](../orch/manage/update-storage-account.md)
 
-[Update VM Instance](update-vm-instance.md)
+[Update VM Instance](../orch/manage/update-vm-instance.md)
 
-[Walk Upgrade Domain](walk-upgrade-domain.md)
+[Walk Upgrade Domain](../orch/manage/walk-upgrade-domain.md)
 
 ## See Also
 
