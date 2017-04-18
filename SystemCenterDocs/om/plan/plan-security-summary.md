@@ -30,6 +30,6 @@ This section provides you with security-related information as it pertains to th
 
 - [Planning Security Credentials for Accessing UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md) describes the security considerations for monitoring UNIX and Linux computers with Operations Manager.
 
-- If you are planning on monitoring your .NET web-based applications with Operations Manager Application Performance Monitoring to detect performance or faults, read [User Roles for Application Performance Monitoring](planning-security-user-roles-for-apm.md).
+- If you are planning on monitoring your .NET web-based applications with Operations Manager Application Performance Monitoring to detect performance or faults, read [User Roles for Application Performance Monitoring](../../scom/planning-security-user-roles-for-apm.md).
 
 - The [Planning Security Authentication and Data Encryption in Operations Manager](../../scom/plan-security-authentication-data-encryption.md) describes how authentication is performed and identifies connection channels where the data is encrypted between all of the server roles and agents in a management group.
