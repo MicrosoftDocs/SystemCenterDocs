@@ -511,7 +511,7 @@
 #######[Create related object](orchestrator/create-related-object.md)
 #######[Create relationship](orchestrator/create-relationship.md)
 #######[Delete relationship](orchestrator/delete-relationship.md)
-#######[Get activity](orch/manage/get-activity.md)
+#######[Get activity](orchestrator/get-activity.md)
 #######[Get object](orch/manage/get-object.md)
 #######[Get relationship](orch/manage/get-relationship.md)
 #######[Monitor object](orch/manage/monitor-object.md)
