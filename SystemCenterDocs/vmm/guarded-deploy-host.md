@@ -125,4 +125,4 @@ If you update the code integrity policy in the file share and wish to also updat
 
 ## Next steps
 
-- [Set up a shielded template disk, utility disk, and VM template](scenario/guarded-template.md)
+- [Set up a shielded template disk, utility disk, and VM template](guarded-deploy-template.md)

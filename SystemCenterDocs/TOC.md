@@ -766,7 +766,7 @@
 ##### [Manage a VMM cloud](vmm/cloud-manage.md)
 #### [Scenario: Deploy a guarded host fabric](vmm/deploy-guarded-host-fabric.md)
 ##### [Deploy guarded hosts](vmm/guarded-deploy-host.md)
-##### [Deploy a shielded VHDX and VM template](vmm/scenario/guarded-template.md)
+##### [Deploy a shielded VHDX and VM template](vmm/guarded-deploy-template.md)
 ##### [Deploy shielded virtual machines](vmm/scenario/guarded-vms.md)
 #### [Scenario: Deploy an SDN in VMM](vmm/scenario/sdn-overview.md)
 ##### [Deploy an SDN network controller](vmm/scenario/sdn-network-controller.md)
