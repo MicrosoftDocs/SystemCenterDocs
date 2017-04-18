@@ -470,7 +470,7 @@
 ####### [Create Collection](orchestrator/create-collection.md)
 ####### [Delete Collection](orchestrator/delete-collection.md)
 ####### [Delete Collection Rule](orchestrator/delete-collection-rule.md)
-####### [Deploy Application](orch/manage/deploy-application.md)
+####### [Deploy Application](orchestrator/deploy-application.md)
 ####### [Deploy Configuration Baseline](orch/manage/deploy-configuration-baseline.md)
 ####### [Deploy Program](orch/manage/deploy-program.md)
 ####### [Deploy Software Update](orch/manage/deploy-software-update.md)
