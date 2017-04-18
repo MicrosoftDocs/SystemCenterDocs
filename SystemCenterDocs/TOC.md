@@ -463,7 +463,7 @@
 ###### [Query List](orchestrator/query-list.md)
 ###### [Update List Item](orchestrator/update-list-item.md)
 ###### [Upload Attachment](orchestrator/upload-attachment-sharepoint.md)
-###### [Upload Document](orch/manage/upload-document.md)
+###### [Upload Document](orchestrator/upload-document.md)
 ##### [Configuration Manager](orchestrator/configuration-manager-integration-pack.md)
 ###### [Configuration Manager Activities](orchestrator/configuration-manager-activities.md)
 ####### [Add Collection Rule](orchestrator/add-collection-rule.md)

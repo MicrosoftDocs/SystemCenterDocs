@@ -138,4 +138,4 @@ This integration pack adds the **Microsoft SharePoint** category to the **Activi
 
 [Upload Attachment](upload-attachment.md)
 
-[Upload Document](../orch/manage/upload-document.md)
+[Upload Document](upload-document.md)
