@@ -124,7 +124,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Delete Computer](delete-computer.md)
 
-[Delete Group](../orch/manage/delete-group.md)
+[Delete Group](delete-group.md)
 
 [Delete User](../orch/manage/delete-user.md)
 
