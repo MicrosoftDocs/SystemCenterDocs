@@ -798,7 +798,7 @@
 ##### [Add a Nano server as a Hyper-V host or cluster](vmm/hyper-v-nano.md)
 ##### [Create a cluster from standalone Hyper-V hosts](vmm/hyper-v-standalone.md)
 ##### [Provision a Hyper-V host or cluster from bare-metal](vmm/hyper-v-bare-metal.md)
-##### [Create a guest Hyper-V cluster from a service template](vmm/manage/manage-compute-guest-cluster-service-template.md)
+##### [Create a guest Hyper-V cluster from a service template](vmm/hyper-v-guest-cluster.md)
 ##### [Manage Hyper-V clusters in the VMM fabric](vmm/manage/manage-compute-hyper-v-clusters.md)
 ##### [Set up networking for Hyper-V hosts and clusters](vmm/manage/manage-compute-add-networking-hyper-v.md)
 ##### [Set up storage for Hyper-V hosts and clusters](vmm/manage/manage-compute-add-storage-hyper-v.md)

@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 
 Use this article if you want to create a guest cluster (a failover cluster with two or more nodes containing VMs) from a System Center 2016 - Virtual Machine Manager (VMM) service template.
 
-Services in VMM group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that should be used. You can add VM templates, network settings, applications and storage to a service template. [Learn more](../library-resources.md)
+Services in VMM group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that should be used. You can add VM templates, network settings, applications and storage to a service template. [Learn more](library-resources.md)
 
 You can use service templates to create a guest cluster . That cluster can then be configured to run an app such as SQL Server.
 
@@ -34,7 +34,7 @@ You can use service templates to create a guest cluster . That cluster can then 
 
 ## Specify scripts that run when a guest cluster is created
 
-1. [Set up an application profile](../library-profiles.md#create-an-application-profile).
+1. [Set up an application profile](library-profiles.md#create-an-application-profile).
 2. In **New Application Profile** > **General** > **Compatibility** leave the default **General** setting enabled.
 3. In **Application Configuration** > **OS Compatibility** select one or more editions of a server operating system (not earlier than Windows Server 2012).
 4. Add the scripts you need for creating the first node of the cluster and then adding other nodes. Provide the scripts as follows:
@@ -74,7 +74,7 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 
 ## Include the VM template in a service template
 
-1. [Create a service template](../library-resources.md), and add the VM template to the appropriate template tier.
+1. [Create a service template](library-resources.md), and add the VM template to the appropriate template tier.
 2. After you save and validate the template right-click the tier object in the service template designer and click **Properties**.
 3. In **Application Configuration**, add the application profile you created. When the service is deployed the scripts in the application profile will run. Save and validate the service template.
 3. Right-click the service template again > **Properties**.
