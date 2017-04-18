@@ -28,7 +28,7 @@
 #### [Identify data sources you want to protect](dpm/identify-data-sources-to-protect.md)
 ### [Deploy](DPM/Deploy/Deploy.md)
 #### [Deploy the DPM protection agent](dpm/deploy-dpm-protection-agent.md)
-#### [Deploy protection groups](DPM/Deploy/Deploy-protection-groups.md)
+#### [Deploy protection groups](dpm/create-dpm-protection-groups.md)
 #### [Deduplicate DPM storage](dpm/deduplicate-dpm-storage.md)
 #### [Back up Hyper-V virtual machines](DPM/Deploy/Back-up-Hyper-V-virtual-machines.md)
 #### [Back up Exchange with DPM](DPM/Deploy/Back-up-Exchange-with-DPM.md)

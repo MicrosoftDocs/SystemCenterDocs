@@ -120,7 +120,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
 2.  In **Select Protection Group Type**, select **Servers**.
 
-3.  In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](Deploy-protection-groups.md). Note that:
+3.  In **Select Group Members**, select the SQL Server instances on the server you want to protect.  Learn more in [Deploy protection groups](../create-dpm-protection-groups.md). Note that:
 
     -   You have the option of selecting protection at the instance level or protection of individual databases.
 

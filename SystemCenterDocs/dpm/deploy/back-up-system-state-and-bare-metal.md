@@ -118,7 +118,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md)
 
 ## Back up system state and bare metal
-Set up a protection group as described in [Deploy protection groups](Deploy-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
+Set up a protection group as described in [Deploy protection groups](../create-dpm-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
 
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
@@ -127,7 +127,7 @@ Set up a protection group as described in [Deploy protection groups](Deploy-prot
 
 3.  In **Select Group Members** expand the machine and select **BMR** or **system state**
 
-    Remember that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.   Learn more in [Deploy protection groups](Deploy-protection-groups.md).
+    Remember that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.   Learn more in [Deploy protection groups](../create-dpm-protection-groups.md).
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 

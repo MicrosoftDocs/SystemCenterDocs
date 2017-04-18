@@ -61,7 +61,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](Deploy-protection-groups.md).
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](../create-dpm-protection-groups.md).
 
 3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**.
 

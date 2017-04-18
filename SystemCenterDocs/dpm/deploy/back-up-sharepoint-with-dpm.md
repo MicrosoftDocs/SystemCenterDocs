@@ -91,7 +91,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
 3.  In **Select Protection Group Type** select **Servers**.
 
-4.  In **Select Group Members** expand the server that holds the WFE role. If there's more than one WFE server select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](Deploy-protection-groups.md).
+4.  In **Select Group Members** expand the server that holds the WFE role. If there's more than one WFE server select the one on which you installed ConfigureSharePoint.exe. Learn more in [Deploy protection groups](../create-dpm-protection-groups.md).
 
     When you expand the SharePoint server  DPM queries VSS to see what data DPM can protect.  If the SharePoint database is remote DPM connects to it.        If SharePoint data sources don't appear, check that the VSS writer is running on the SharePoint server and any remote SQL Server, and ensure that the DPM agent is installed on both the SharePoint server and remote SQL Server. In addition ensure that SharePoint databases aren't being protected elsewhere as SQL Server databases.
 

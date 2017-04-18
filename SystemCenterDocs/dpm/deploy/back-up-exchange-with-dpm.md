@@ -108,7 +108,7 @@ However native protection might not be enough if application errors, corruptions
 
 2.  In **Select Protection Group Type** select **Servers**.
 
-3.  In **Select Group Members** select all the DAGs that store data you want to protect. For each Exchange server you can also select to do a system state backup or full bare metal backup (which includes the system state. This in useful if you want the ability to recover your entire server and not just data.   [Deploy protection groups](Deploy-protection-groups.md).
+3.  In **Select Group Members** select all the DAGs that store data you want to protect. For each Exchange server you can also select to do a system state backup or full bare metal backup (which includes the system state. This in useful if you want the ability to recover your entire server and not just data.   [Deploy protection groups](../create-dpm-protection-groups.md).
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
