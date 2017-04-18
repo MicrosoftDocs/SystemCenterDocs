@@ -23,7 +23,7 @@ Service Management Automation is a workflow management solution for Windows Azur
 
     Provides an overview of the hardware, software, and security requirements to deploy Service Management Automation.
 
-- [How to upgrade from a previous version of Service Management Automation](How-to-upgrade-from-a-previous-version-of-Service-Management-Automation.md)
+- [How to upgrade from a previous version of Service Management Automation](../upgrade.md)
 
     Provides instructions for upgrading from a previous version of Service Management Automation to the latest version.
 

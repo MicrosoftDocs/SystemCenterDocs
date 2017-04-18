@@ -47,7 +47,7 @@ You can install the web service on any machine that can communicate with Windows
     | **Authentication Credentials** |Select the type of authentication that you want to use. You can use Windows authentication or SQL Server authentication.<br /><br />If you choose SQL Server authentication, enter the user name and password for the computer running SQL Server.|
 
     > [!NOTE]
-    > If you are [upgrading from a previous installation](How-to-upgrade-from-a-previous-version-of-Service-Management-Automation.md), please use the database details from the previous installation.
+    > If you are [upgrading from a previous installation](../upgrade.md), please use the database details from the previous installation.
 
 8.  Provide the following information to configure the Internet Information Settings (IIS) for the web service, and then click **Next**.
 

@@ -19,7 +19,7 @@ This article describes how to upgrade your existing Service Management Automatio
 
 ## Prerequisites
 
-- Review the [System Requirements for Service Management Automation](../system-requirements.md) to determine whether it will support SMA 2016.
+- Review the [System Requirements for Service Management Automation](../orchestrator/system-requirements.md) to determine whether it will support SMA 2016.
 - Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](http://go.microsoft.com/fwlink/p/?LinkId=216936).
 
 ## Upgrading
@@ -31,6 +31,6 @@ When installing SMA with an existing database, you must install the worker serve
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/en-us/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a> for details.
-3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](How-to-install-the-Service-Management-Automation-runbook-worker.md).
-4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](How-to-install-the-Service-Management-Automation-web-service.md).
+3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](deploy/how-to-install-the-service-management-automation-runbook-worker.md).
+4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](deploy/how-to-install-the-service-management-automation-web-service.md).
 5. Remove SMA servers from maintenance mode.
