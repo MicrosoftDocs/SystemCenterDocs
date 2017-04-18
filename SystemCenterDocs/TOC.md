@@ -527,7 +527,7 @@
 #######[Create new disk from vhd](orchestrator/create-new-disk-from-vhd.md)
 #######[Create new disk](orchestrator/create-new-disk.md)
 #######[Create user role](orchestrator/create-user-role.md)
-#######[Create vm from template](orch/manage/create-vm-from-template.md)
+#######[Create vm from template](orchestrator/create-vm-from-template.md)
 #######[Create vm from vhd](orch/manage/create-vm-from-vhd.md)
 #######[Create vm from vm](orch/manage/create-vm-from-vm.md)
 #######[Deploy service](orch/manage/deploy-service-in-system-center-2016.md)

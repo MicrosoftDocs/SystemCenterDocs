@@ -123,7 +123,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Create User Role](create-user-role.md)
 
-[Create VM from Template](../orch/manage/create-vm-from-template.md)
+[Create VM from Template](create-vm-from-template.md)
 
 [Create VM from VHD](../orch/manage/create-vm-from-vhd.md)
 
