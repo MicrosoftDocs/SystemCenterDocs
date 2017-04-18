@@ -827,7 +827,7 @@
 ##### [Set up a Microsoft iSCSI Target Server](vmm/storage-iscsi.md)
 ##### [Set up a Virtual Fibre Channel](vmm/storage-fibre-channel.md)
 ##### [Set up file storage](vmm/storage-file.md)
-##### [Set up a scale-out file server (SOFS)](vmm/manage/manage-sofs-overview.md)
+##### [Set up a scale-out file server (SOFS)](vmm/sofs.md)
 ###### [Perform a rolling upgrade on SOFS](vmm/manage/manage-sofs-rolling-upgrade.md)
 ###### [Add an existing SOFS to the VMM fabric](vmm/manage/manage-sofs-add-existing.md)
 ###### [Create an SOFS cluster from standalone servers](vmm/manage/manage-sofs-standalone-server.md)

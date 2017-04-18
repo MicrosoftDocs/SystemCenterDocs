@@ -97,7 +97,7 @@ apps. Here's what you need to do:
 4. In **Cluster Nodes**, define a list of computers to add to the cluster.
 5. On the **Summary** page, confirm the settings and then click Finish.
 
-If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](../manage/manage-sofs-overview.md) about adding nodes to an SOFS.
+If you want to add additional nodes to the SOFS cluster, VMM automatically discovers any disks associated with the node. When you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool. [Learn more](../sofs.md) about adding nodes to an SOFS.
 
 ### Add an existing SOFS cluster with S2D enabled
 

@@ -138,4 +138,4 @@ In a hyper-converged topology VMs can be directly deployed on the cluster. Their
 
 ## Deploy a disaggregated topology
 
-[Learn more](manage/manage-sofs-overview.md) about adding nodes to an SOFS. When you add a node with Storage Spaces Direct enabled, VMM discovers any disks associated with the node. Then, when you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool.
+[Learn more](sofs.md) about adding nodes to an SOFS. When you add a node with Storage Spaces Direct enabled, VMM discovers any disks associated with the node. Then, when you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool.
