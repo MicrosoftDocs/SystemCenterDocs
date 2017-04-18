@@ -493,7 +493,7 @@
 #######[Run dpm powershell script](orchestrator/run-dpm-powershell-script.md)
 ##### [Operations Manager](orchestrator/integration-pack-for-operations-manager.md)
 ###### [Operations Manager Activities](orch/manage/operations-manager-activities.md)
-#######[Create alert](orch/manage/create-alert.md)
+#######[Create alert](orchestrator/create-alert.md)
 #######[Get alert](orch/manage/get-alert.md)
 #######[Get monitor](orch/manage/get-monitor.md)
 #######[Monitor alert](orch/manage/monitor-alert.md)

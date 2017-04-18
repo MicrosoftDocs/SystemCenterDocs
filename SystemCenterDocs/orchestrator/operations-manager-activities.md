@@ -112,7 +112,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 The Operations Manager Integration Pack adds the **SC 2016 Operations Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Alert](../orch/manage/create-alert.md)
+[Create Alert](create-alert.md)
 
 [Get Alert](../orch/manage/get-alert.md)
 
