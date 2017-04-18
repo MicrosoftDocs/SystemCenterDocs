@@ -38,7 +38,7 @@ This article explains how to create a lab environment and populate it with produ
 15. [Start Service Manager Services on the Secondary Management Server](start-services-on-secondary-ms.md)
 16. Verify that the lab environment works. Try to open the console on the Secondary Management server and see if you can connect to the console. Confirm that the Data Warehouse and Reporting do not appear. After you confirm that this works, complete the rest of the steps.
 17. [Promote a Secondary Management Server in a Lab Environment](promote-secondary-ms.md)
-18. [Enable the Connectors in the Lab Environment](../sm/deploy/upgrade-how-to-enable-the-connectors-in-the-lab-environment.md)
+18. [Enable the Connectors in the Lab Environment](enable-connectors-in-lab.md)
   >[!NOTE]
   Do not enable or delete the Operations Manager alert connector in the lab environment. This will cause the alert connector in the production environment to fail.
 
