@@ -142,7 +142,7 @@ Configuration of agent assignment is managed by an Operations Manager administra
 
 ## Next steps
 
-* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](../om/manage/install-agent-on-windows-using-the-discovery-wizard.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](../om/manage/install-windows-agent-manually-using-momagent.md).  
+* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](../om/manage/install-agent-on-windows-using-the-discovery-wizard.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md).  
 
 * To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](../om/manage/install-agent-on-unix-and-linux-using-the-discovery-wizard.md).   
 

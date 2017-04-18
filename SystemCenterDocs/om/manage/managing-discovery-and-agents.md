@@ -35,7 +35,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
     This section provides the information you need for discovering and installing the UNIX and Linux agents to be monitored by Operations Manager.
 
--   [Install Windows agent manually with MOMAgent.msi](install-windows-agent-manually-using-momagent.md)
+-   [Install Windows agent manually with MOMAgent.msi](../../scom/manage-deploy-windows-agent-manually.md)
 
      This section provides the information you need for manually installing the Windows agent and approve them to be monitored by Operations Manager using the MOMAgent.msi Windows Installer package.
 
