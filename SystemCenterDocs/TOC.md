@@ -695,7 +695,7 @@
 #### [Manage the data warehouse](scsm/manage-dw.md)
 ##### [Register source systems to the data warehouse](scsm/register-sources-to-dw.md)
 #### [Troubleshoot computer problems with tasks](scsm/troubleshoot-with-tasks.md)
-#### [Configure your preference for sharing diagnostic and usage data](sm/manage/admin-configure-system-center-2016-service-manager-ceip-settings.md)
+#### [Configure your preference for sharing diagnostic and usage data](scsm/ceip-settings.md)
 #### [User role profiles](sm/manage/admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md)
 #### [Map Active Directory Domain Services attributes to properties in Service Manager](sm/manage/admin-appendix-b-mapping-active-directory-domain-services-attributes-to-properties-in-system-center-2016-service-manager.md)
 #### [Map Service Manager properties to Configuration Manager database views](sm/manage/admin-appendix-c-mapping-system-center-2016-service-manager-properties-to-configuration-manager-database-views.md)
