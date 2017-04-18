@@ -456,7 +456,7 @@
 ###### [Download Attachment](orchestrator/download-attachment.md)
 ###### [Download Document](orchestrator/download-document.md)
 ###### [Get Attachments](orchestrator/get-attachments.md)
-###### [Get Documents](orch/manage/get-documents.md)
+###### [Get Documents](orchestrator/get-documents.md)
 ###### [Get List Items](orch/manage/get-list-items.md)
 ###### [Get View Items](orch/manage/get-view-items.md)
 ###### [Monitor List Items](orch/manage/monitor-list-items.md)

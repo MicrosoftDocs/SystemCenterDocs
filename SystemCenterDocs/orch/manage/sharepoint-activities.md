@@ -124,7 +124,7 @@ This integration pack adds the **Microsoft SharePoint** category to the **Activi
 
 [Get Attachments](../../orchestrator/get-attachments.md)
 
-[Get Documents](get-documents.md)
+[Get Documents](../../orchestrator/get-documents.md)
 
 [Get List Items](get-list-items.md)
 
