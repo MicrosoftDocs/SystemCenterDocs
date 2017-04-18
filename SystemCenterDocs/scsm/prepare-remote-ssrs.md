@@ -57,4 +57,4 @@ When you installed System Center 2016 - Service Manager, you may have specified 
 
 ## Next steps
 
-- Review [Upgrade configurations for the Self-Service portal](../sm/deploy/upgrade-upgrading-the-self-service-portal.md) to upgrade the Self Service portal for a variety of possible configurations.
+- Review [Upgrade configurations for the Self-Service portal](upgrade-configs-portal.md) to upgrade the Self Service portal for a variety of possible configurations.

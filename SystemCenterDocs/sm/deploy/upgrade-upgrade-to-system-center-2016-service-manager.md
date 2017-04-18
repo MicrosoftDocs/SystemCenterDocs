@@ -140,7 +140,7 @@ Use the following procedures to upgrade your Service Manager environment to Syst
 
 ### Upgrade the Service Manager Self Service portal
 
-Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](upgrade-upgrading-the-self-service-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
+Refer the instructions mentioned in the [Upgrading the Service Manager Self-Service Portal](../../scsm/upgrade-configs-portal.md) article. In some upgrade scenarios, when you upgrade a management server, the Self Service Portal is also upgraded. In these cases, you need to apply a patch before you upgrade.
 
 ### Upgrade steps for custom development
 With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.

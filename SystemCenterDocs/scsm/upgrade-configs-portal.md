@@ -26,7 +26,7 @@ Use the following steps to upgrade your Self Service portal and Service Manager 
 
 On the Service Manager 2012 R2 Silverlight Self Service Portal:
 1. Uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
-2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](../../scsm/service-manager.md)
+2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](../orchestrator/service-manager.md)
 
 ## Upgrade the Self Service Portal from a standalone installation of the Service Manager 2012 R2 HTML5-based Self Service portal
 Use the following step to upgrade your Self Service portal and Service Manger management servers when they are **installed on different computers**.
@@ -67,4 +67,4 @@ Installing the Self Service portal on the same computer as the primary managemen
 
 ## Next steps
 
-- Review [Set up a Service Manager 2016 lab environment with production data to prepare for upgrade](upgrade-setting-up-a-service-manager-2016-lab-environment-with-production-data.md).
+- Review [Set up a Service Manager 2016 lab environment with production data to prepare for upgrade](../sm/deploy/upgrade-setting-up-a-service-manager-2016-lab-environment-with-production-data.md).

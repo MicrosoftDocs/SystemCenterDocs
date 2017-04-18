@@ -646,7 +646,7 @@
 #### [Move the Service Manager and data warehouse databases](scsm/move-databases.md)
 ### [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](scsm/upgrade-to-sm-2016.md)
 #### [Prepare remote SQL Server Reporting Services for upgrade](scsm/prepare-remote-ssrs.md)
-#### [Upgrade configurations for the Service Manager Self-Service portal](sm/deploy/upgrade-upgrading-the-self-service-portal.md)
+#### [Upgrade configurations for the Service Manager Self-Service portal](scsm/upgrade-configs-portal.md)
 #### [Set up a Service Manager 2016 lab environment with production data to prepare for upgrade](sm/deploy/upgrade-setting-up-a-service-manager-2016-lab-environment-with-production-data.md)
 ##### [Install an additional Management Server in the production Service Manager management group](sm/deploy/upgrade-how-to-install-an-additional-management-server-in-the-production-service-manager-management-group.md)
 ##### [Copy customized workflow assembly files before you upgrade](sm/deploy/upgrade-how-to-copy-the-workflow-assembly-files.md)
