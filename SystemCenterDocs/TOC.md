@@ -628,7 +628,7 @@
 ##### [Install on a single computer](scsm/install-one-computer.md)
 ##### [Install on two computers](scsm/install-two-computers.md)
 ##### [Install on four computers](scsm/install-four-computers.md)
-##### [Manual steps to configure remote SQL Server Reporting Services](sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md)
+##### [Manual steps to configure remote SQL Server Reporting Services](scsm/config-remote-ssrs.md)
 ##### [Use SQL Server AlwaysOn availability groups to support failover](sm/deploy/deploy-using-sql-server-2014-alwayson-availability-groups-with-service-manager.md)
 ##### [Create and deploy server images of Service Manager](sm/deploy/deploy-how-to-create-and-deploy-server-images-of-service-manager.md)
 #### [Guidance to install on virtual machines](sm/deploy/deploy-guidance-for-installing-system-center-2016-service-manager-on-virtual-machines.md)

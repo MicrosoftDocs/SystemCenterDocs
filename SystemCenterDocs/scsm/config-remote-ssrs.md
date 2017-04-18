@@ -99,4 +99,4 @@ During deployment of the Service Manager data warehouse management server, you c
 
 ## Next steps
 
-- Review [Use SQL Server AlwaysOn availability groups to support failover](deploy-using-sql-server-2014-alwayson-availability-groups-with-service-manager.md) to use AlwaysOn availability groups with Service Manager to support a failover environment.
+- Review [Use SQL Server AlwaysOn availability groups to support failover](../sm/deploy/deploy-using-sql-server-2014-alwayson-availability-groups-with-service-manager.md) to use AlwaysOn availability groups with Service Manager to support a failover environment.

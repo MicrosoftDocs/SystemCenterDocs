@@ -108,7 +108,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
 ### To install a data warehouse management server  
 
-1.  Because, in this scenario, the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for Service Manager. See [Manual Steps to Configure the Remote SQL Server Reporting Services](../sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) before continuing with this procedure.  
+1.  Because, in this scenario, the computer that hosts SQL&nbsp;Server Reporting Services \(SSRS\) is not the same computer that hosts the data warehouse management server, you have to prepare the computer that will remotely host SSRS for Service Manager. See [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md) before continuing with this procedure.  
 
 2.  Log on to the computer that will host the data warehouse management server by using an account that has administrator rights. For example, run Setup on Computer&nbsp;3.  
 
@@ -158,7 +158,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
 
     2.  Verify that **Default** is displayed in the **Report server instance** box.  
 
-    3.  Because you followed the procedure [Manual Steps to Configure the Remote SQL Server Reporting Services](../sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md), select the **I have taken the manual steps to configure the remote SQL Server Reporting Services as described in the Service Manager Deployment Guide** check box, and then click **Next**.  
+    3.  Because you followed the procedure [Manual Steps to Configure the Remote SQL Server Reporting Services](config-remote-ssrs.md), select the **I have taken the manual steps to configure the remote SQL Server Reporting Services as described in the Service Manager Deployment Guide** check box, and then click **Next**.  
 
 13. On the **Configure the account for Service Manager services** page, click **Domain account**, specify the user name, password, and domain for the account, and then click **Test Credentials**. After you receive a **The credentials were accepted** message, click **Next**.  
 
@@ -279,4 +279,4 @@ The procedures in this topic describe how to validate the four\-computer install
 
 ## Next steps
 
-- Review [Manual steps to configure remote SQL Server Reporting Services](../sm/deploy/deploy-manual-steps-to-configure-the-remote-sql-server-reporting-services.md) to manually configure SSRS in situations where SSRS is not on the same server as the data warehouse management server.
+- Review [Manual steps to configure remote SQL Server Reporting Services](config-remote-ssrs.md) to manually configure SSRS in situations where SSRS is not on the same server as the data warehouse management server.
