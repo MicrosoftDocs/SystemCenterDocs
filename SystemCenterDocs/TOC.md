@@ -479,7 +479,7 @@
 ####### [Get Deployment Status](orchestrator/get-deployment-status.md)
 ####### [Perform Client Action](orchestrator/perform-client-action.md)
 ####### [Query Configuration Manager](orchestrator/query-configuration-manager.md)
-####### [Update Collection Membership](orch/manage/update-collection-membership.md)
+####### [Update Collection Membership](orchestrator/update-collection-membership.md)
 ##### [Data Protection Manager](orchestrator/integration-pack-for-data-protection-manager.md)
 ###### [Data Protection Manager Activities](orchestrator/data-protection-manager-activities.md)
 #######[Create recovery point](orchestrator/create-recovery-point.md)
