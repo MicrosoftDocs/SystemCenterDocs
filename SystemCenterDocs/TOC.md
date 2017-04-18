@@ -373,7 +373,7 @@
 #######[Create move request](orchestrator/create-move-request.md)
 #######[Create remote mailbox hybrid](orchestrator/create-remote-mailbox-hybrid.md)
 #######[Disable mailbox](orchestrator/disable-mailbox.md)
-#######[Disable remote mailbox hybrid](orch/manage/disable-remote-mailbox-hybrid.md)
+#######[Disable remote mailbox hybrid](orchestrator/disable-remote-mailbox-hybrid.md)
 #######[Enable mailbox](orch/manage/enable-mailbox.md)
 #######[Enable remote mailbox hybrid](orch/manage/enable-remote-mailbox-hybrid.md)
 #######[Get mailbox](orch/manage/get-mailbox.md)
