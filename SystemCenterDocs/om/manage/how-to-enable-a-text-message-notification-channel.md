@@ -43,7 +43,7 @@ To configure alert notifications for System Center 2016 - Operations Manager, yo
 
 * Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
 
-* To create an email notification channel, see [How to enable an email notification channel](how-to-enable-an-email-notification-channel.md). 
+* To create an email notification channel, see [How to enable an email notification channel](../../scom/manage-notifications-create-email-channel.md). 
 
 * To create a command channel notification, see [How to enable a command notification channel](how-to-enable-a-command-notification-channel.md).
 

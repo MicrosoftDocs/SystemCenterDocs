@@ -39,7 +39,7 @@ Before you begin, gather the following information:
   - For internal email server, any return address that is within the domain can be specified.  Multiple internal servers can be added to the subscription channel.
   - For an external email server, the email account used for creating the Run As profile must match the return address.  To avoid coexistence issues with other email servers, a subscription channel with an external email account must contain only that email server.  
   
--   Email subject and body text that you want subscribers to receive. For more information, see [How to customize message content for notifications](how-to-customize-message-content-for-notifications.md).  
+-   Email subject and body text that you want subscribers to receive. For more information, see [How to customize message content for notifications](../om/manage/how-to-customize-message-content-for-notifications.md).  
   
 ## To enable an email notification channel  
   
@@ -63,13 +63,13 @@ Before you begin, gather the following information:
     > [!NOTE]  
     > If you have only one SMTP server and it's unavailable, the Retry interval has no effect. The Retry interval is used when you have a secondary server and mail sending to the primary server fails. When this happens, Operations Manager switches to the secondary server and checks the Retry interval time. If the Retry interval time has passed, Operations Manager tries to use the primary server.  
   
-8.  In the **Default e-mail notification format** area, specify the **E-mail subject** and **E-mail message** text or leave the default selections, select the **Importance** level that you want the emails sent with, and then specify the **Encoding** type. You can click the right arrow next to the **E-mail subject** and **E-mail message** boxes for a full list of available variables. For more information, see [How to customize message content for notifications](how-to-customize-message-content-for-notifications.md).  
+8.  In the **Default e-mail notification format** area, specify the **E-mail subject** and **E-mail message** text or leave the default selections, select the **Importance** level that you want the emails sent with, and then specify the **Encoding** type. You can click the right arrow next to the **E-mail subject** and **E-mail message** boxes for a full list of available variables. For more information, see [How to customize message content for notifications](../om/manage/how-to-customize-message-content-for-notifications.md).  
   
 9. Click **Finish**, and then click **Close**.  
   
 
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)
 
-* Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  

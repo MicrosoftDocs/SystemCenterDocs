@@ -34,7 +34,7 @@ An Operations Manager administrator must define the notification channels and if
   
 -   [How to create and configure the Notification Action account](manage-notifications-create-configure.md)  
   
--   [How to enable an email notification channel](../om/manage/how-to-enable-an-email-notification-channel.md)  
+-   [How to enable an email notification channel](manage-notifications-create-email-channel.md)  
   
 -   [How to enable an instant message notification channel](../om/manage/how-to-enable-an-instant-message-notification-channel.md)  
   
