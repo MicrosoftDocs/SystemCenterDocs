@@ -51,7 +51,7 @@ If you are upgrading an installation of System Center 2012 R2 that includes mult
 
 The following topics provide detailed considerations for each component.
 
--    [Upgrade to System Center 2016 - Data Protection Manager](../dpm/get-started/upgrade-to-dpm-2016.md).
+-    [Upgrade to System Center 2016 - Data Protection Manager](../dpm/upgrade-to-dpm-2016.md).
 -    [Upgrade to System Center 2016 - Operations Manager](../om/deploy/upgrading-to-system-center-2016-operations-manager.md)
 -    [Upgrade to System Center 2016 - Orchestrator](../orch/get-started/upgrade-to-orchestrator.md)
 -    [Upgrade to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md)

@@ -17,7 +17,7 @@
 ### [What's new in DPM](dpm/get-started/What-s-new-in-DPM-in-System-Center-2016.md)
 ### [What can DPM back up?](dpm/get-started/What-can-DPM-back-up-.md)
 ### [What's supported and what isn't for DPM?](dpm/get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
-### [Upgrade to DPM 2016](dpm/get-started/upgrade-to-dpm-2016.md)
+### [Upgrade to DPM 2016](dpm/upgrade-to-dpm-2016.md)
 ### [Get started](dpm/get-started/Get-started.md)
 #### [Add Modern Backup storage](dpm/get-started/add-storage.md)
 #### [Get ready to deploy DPM servers](dpm/get-started/Get-ready-to-deploy-DPM-servers.md)
