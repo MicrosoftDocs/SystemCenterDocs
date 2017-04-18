@@ -316,7 +316,7 @@
 #######[Change deployment os](orchestrator/change-deployment-os.md)
 #######[Check cloud service name availability](orchestrator/check-cloud-service-name-availability.md)
 #######[Copy blob](orchestrator/copy-blob.md)
-#######[Create affinity group](orch/manage/create-affinity-group.md)
+#######[Create affinity group](orchestrator/create-affinity-group.md)
 #######[Create cloud service](orch/manage/create-cloud-service.md)
 #######[Create container](orch/manage/create-container.md)
 #######[Create deployment](orch/manage/create-deployment.md)

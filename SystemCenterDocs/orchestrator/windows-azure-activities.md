@@ -138,7 +138,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Copy Blob](copy-blob.md)
 
-[Create Affinity Group](../orch/manage/create-affinity-group.md)
+[Create Affinity Group](create-affinity-group.md)
 
 [Create Cloud Service](../orch/manage/create-cloud-service.md)
 
