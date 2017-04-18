@@ -66,7 +66,7 @@ Configuration Manager server.
 -   Click the ellipsis **(…)** button next to the **Name** field, and
     then select the applicable connection name. Connections displayed in
     the list have been previously configured as described in
-    [Configuration Manager Integration Pack](../orch/manage/configuration-manager-integration-pack.md).
+    [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
 
 **Value Type** properties are common across many of the activities.
 These properties provide flexibility in the type of data you provide to
