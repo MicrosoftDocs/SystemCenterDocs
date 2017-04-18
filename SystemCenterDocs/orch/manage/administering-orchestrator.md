@@ -36,7 +36,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
     Describes how to use DBSetup to configure connections to an Orchestrator database.
 
--   [How to Configure Runbook Servers to Optimize Performance of  .NET Activities](../manage/how-to-configure-runbook-servers-to-optimize-performance-of--.net-activities.md)
+-   [How to Configure Runbook Servers to Optimize Performance of  .NET Activities](../../orchestrator/how-to-configure-runbook-servers-to-optimize-performance-of--.net-activities.md)
 
     Describes how to configure a runbook server to perform optimally with activities that require Microsoft .NET libraries.
 
