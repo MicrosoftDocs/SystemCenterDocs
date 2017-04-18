@@ -202,7 +202,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [List Service Certificate](list-service-certificate.md)
 
-[List Storage Account](../orch/manage/list-storage-account.md)
+[List Storage Account](list-storage-account.md)
 
 [List VM Disks](../orch/manage/list-vm-disks.md)
 

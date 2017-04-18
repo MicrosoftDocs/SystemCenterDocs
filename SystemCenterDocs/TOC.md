@@ -348,7 +348,7 @@
 #######[List management certificate](orchestrator/list-management-certificate.md)
 #######[List os images](orchestrator/list-os-images.md)
 #######[List service certificate](orchestrator/list-service-certificate.md)
-#######[List storage account](orch/manage/list-storage-account.md)
+#######[List storage account](orchestrator/list-storage-account.md)
 #######[List vm disks](orch/manage/list-vm-disks.md)
 #######[Put blob](orch/manage/put-blob.md)
 #######[Reboot role instance](orch/manage/reboot-role-instance.md)
