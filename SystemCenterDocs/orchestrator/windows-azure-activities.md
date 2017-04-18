@@ -232,7 +232,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Update Deployment Status](update-deployment-status.md)
 
-[Update OS Image](../orch/manage/update-os-image.md)
+[Update OS Image](update-os-image.md)
 
 [Update Storage Account](../orch/manage/update-storage-account.md)
 

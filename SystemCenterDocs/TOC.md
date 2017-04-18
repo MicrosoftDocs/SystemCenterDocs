@@ -362,7 +362,7 @@
 #######[Start vm instance](orch/manage/start-vm-instance.md)
 #######[Swap deployment](orchestrator/swap-deployment.md)
 #######[Update deployment status](orchestrator/update-deployment-status.md)
-#######[Update os image](orch/manage/update-os-image.md)
+#######[Update os image](orchestrator/update-os-image.md)
 #######[Update storage account](orch/manage/update-storage-account.md)
 #######[Update vm instance](orch/manage/update-vm-instance.md)
 #######[Upgrade deployment](orch/manage/upgrade-deployment.md)
