@@ -58,7 +58,7 @@ You can add a runbook to Service Management Automation by either creating it in 
 5.  Your new runbook will appear on the **Runbooks** tab for the Automation Account.
 
 ### To import a runbook from a script file with Windows PowerShell
-You can use the [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. To modify the draft version of an existing runbook with the contents of a script file, see [To Change the Contents of a Runbook Using Windows PowerShell](manage/editing-a-runbook.md#changecontentspowershell).
+You can use the [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. 
 
 The following sample commands show how to import a script file into an existing runbook and then publish it.
 
@@ -148,8 +148,6 @@ The Management Portal includes an editor that you can use to view and edit runbo
 ### To edit an Automation runbook using Windows PowerShell
 
 To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](http://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](http://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
-
-To create a new runbook from the contents of a script file, see [To import a runbook from a script file with Windows PowerShell](manage/creating-or-importing-a-runbook.md#to-import-a-runbook-from-a-script-file-with-windows-powershell).
 
 ### <a name="RetrieveContentsPowerShell"></a>To retrieve the contents of a runbook using Windows PowerShell
 The following sample commands show how to retrieve the script for a runbook and save it to a script file. In this example, the Draft version is retrieved. It is also possible to retrieve the Published version of the runbook although this version cannot be changed.
@@ -249,12 +247,12 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 You can test the Draft version of a runbook in Service Management Automation while leaving the published version of the runbook unchanged. This allows you to verify that the runbook is working correctly before replacing the published version.
 
-When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](overview-runbook-messages-output.md#output) and [Warning and Error](overview-runbook-messages-output.md#warningerror) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](overview-runbook-messages-output.md#verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](overview-runbook-messages-output.md#preferencevariables) is set to **Continue**.
+When you test a runbook, the Draft runbook is executed and any actions that it performs are completed. No job history is created, but the [Output](overview-runbook-messages-output.md#Output) and [Warning and Error](overview-runbook-messages-output.md#WarningError) streams are displayed in the Test Output Pane. Messages to the [Verbose Stream](overview-runbook-messages-output.md#Verbose) are displayed in the Output Pane only if the [$VerbosePreference variable](overview-runbook-messages-output.md#PreferenceVariables) is set to **Continue**.
 
 When you test a runbook, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non-production resources.
 
 ### To test a runbook in Service Management Automation
-To test a runbook, [open the Draft version of the runbook in the Management Portal](manage/editing-a-runbook.md#portal). Click the **Test** button at the bottom of the screen to start the test.
+To test a runbook, [open the Draft version of the runbook in the Management Portal](authoring-automation-runbooks.md). Click the **Test** button at the bottom of the screen to start the test.
 
 You can stop or suspend the runbook while it is being tested with the buttons underneath the Output Pane. When you suspend the runbook, it completes the current activity before being suspended. Once the runbook is suspended, you can stop it or restart it.
 

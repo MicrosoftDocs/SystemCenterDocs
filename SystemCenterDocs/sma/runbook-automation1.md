@@ -24,13 +24,13 @@ You can use Service Management Automation (SMA) runbooks to automate routine ope
 
 ## PowerShell workflow runbooks
 
-PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](manage/creating-or-importing-a-runbook.md) into SMA.
+PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](authoring-automation-runbooks.md) into SMA.
 
 ### Advantages
 
 - Implement all complex logic with PowerShell Workflow code.
-- Use [checkpoints](overview-powershell-workflows.md#bk_checkpoints) to resume runbook in case of error.
-- Use [parallel processing](overview-powershell-workflows.md#parallel) to perform multiple actions in parallel.
+- Use [checkpoints](overview-powershell-workflows.md#BK_Checkpoints) to resume runbook in case of error.
+- Use [parallel processing](overview-powershell-workflows.md) to perform multiple actions in parallel.
 - Can include other PowerShell Workflow runbooks as child runbooks to create high level workflows.
 
 
@@ -44,7 +44,7 @@ PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You dire
 
 ## PowerShell runbooks
 
-PowerShell runbooks are based on Windows PowerShell.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](manage/creating-or-importing-a-runbook.md) into SMA.
+PowerShell runbooks are based on Windows PowerShell.  You directly edit the code of the runbook using the editor in the Management Portal.  You can also use any offline text editor and [import the runbook](authoring-automation-runbooks.md) into SMA.
 
 ### Advantages
 
@@ -54,8 +54,8 @@ PowerShell runbooks are based on Windows PowerShell.  You directly edit the code
 ### Limitations
 
 - Must be familiar with PowerShell scripting.
-- Can't use [parallel processing](overview-powershell-workflows.md#parallel) to perform multiple actions in parallel.
-- Can't use [checkpoints](overview-powershell-workflows.md#bk_checkpoints)  to resume runbook in case of error.
+- Can't use [parallel processing](overview-powershell-workflows.md) to perform multiple actions in parallel.
+- Can't use [checkpoints](overview-powershell-workflows.md#BK_Checkpoints)  to resume runbook in case of error.
 - PowerShell Workflow runbooks can only be included as child runbooks by using the Start-SMARunbook cmdlet which creates a new job.
 
 ## How SMA executes runbooks
@@ -68,12 +68,12 @@ The Worker server will create a job that runs on the Worker server that services
 
 ![Runbook execution diagram](./media/runbook-automation1/smaauth_runbookconcept.png)
 
-If a job is suspended or interrupted, it may be resumed on a different Worker server. Because of this, you should be careful about using local resources that are not accessible to all Worker servers such as a file on a local computer. You should leverage [Global Assets](manage-global-assets.md) such as [Variables](~/sma/manage-global-assets.md) as much as possible for sharing information between [checkpoints](overview-powershell-workflows.md#BK_Checkpoints).
+If a job is suspended or interrupted, it may be resumed on a different Worker server. Because of this, you should be careful about using local resources that are not accessible to all Worker servers such as a file on a local computer. You should leverage [Global Assets](manage-global-assets.md) such as [Variables](manage-global-assets.md) as much as possible for sharing information between [checkpoints](overview-powershell-workflows.md#BK_Checkpoints).
 
 ## Permissions
-In order for a runbook to perform its required actions, it must have permissions to access the resources that it works with. Runbooks in Service Management Automation always run in the context of the service account of the Automation Runbook Service. If this account does not have required permissions, then you can use either a [Credentials](~/sma/manage-global-assets.md) or a [Connection](~/sma/manage-global-assets.md) global resource in your runbook to run required commands using credentials with the required permissions. These credentials can either be used with a cmdlet that accepts credentials through a parameter or with [InlineScript](overview-powershell-workflows.md#bkmk_InlineScript) to run a block of code using alternate credentials.
+In order for a runbook to perform its required actions, it must have permissions to access the resources that it works with. Runbooks in Service Management Automation always run in the context of the service account of the Automation Runbook Service. If this account does not have required permissions, then you can use either a [Credentials](manage-global-assets.md) or a [Connection](manage-global-assets.md) global resource in your runbook to run required commands using credentials with the required permissions. These credentials can either be used with a cmdlet that accepts credentials through a parameter or with [InlineScript](overview-powershell-workflows.md#bkmk_InlineScript) to run a block of code using alternate credentials.
 
 ## Next steps
 - Read more about authoring SMA runbooks [Authoring automation runbooks](authoring-automation-runbooks.md).
 
-- Read more about PowerShell workflows [Windows PowerShell workflow concepts](~/sma/overview-powershell-workflows.md)
+- Read more about PowerShell workflows [Windows PowerShell workflow concepts](overview-powershell-workflows.md)

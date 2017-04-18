@@ -16,7 +16,7 @@ ms.assetid:  4503784f-c267-4c81-a423-659adaa1df5a
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
-An [Integration Module](overview-powershell-workflows.md#gk_modules) is a package that contains a [Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325518). For information on writing a Windows PowerShell Module, see [Writing a Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325523). An Integration Module can contain any of the valid Module Types specified in [Windows PowerShell Modules](http://go.microsoft.com/fwlink/?LinkID=325518). This includes Script Modules (.psm1), Binary Modules (.dll), and Manifest Modules (.psd1).
+An [Integration Module](overview-powershell-workflows.md#GK_Modules) is a package that contains a [Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325518). For information on writing a Windows PowerShell Module, see [Writing a Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325523). An Integration Module can contain any of the valid Module Types specified in [Windows PowerShell Modules](http://go.microsoft.com/fwlink/?LinkID=325518). This includes Script Modules (.psm1), Binary Modules (.dll), and Manifest Modules (.psd1).
 
 The Integration Module package is a compressed file with the same name as the module and a .zip extension. It contains a single folder also with the name of the module. The Windows PowerShell module and any supporting files, including a manifest file (.psd1) if the module has one, must be contained in this folder.
 

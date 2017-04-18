@@ -75,7 +75,7 @@ If the published data is numerical you can use any of the following to set the c
 
 4.  Select a property from the Published Data and click **OK**. The criteria expression is changed depending on the type of data that the property returns.  
 
-5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value. For more information about criteria, see [Smart link criteria](../orch/get-started/smart-links.md#bmk_smartlinkcriteria).  
+5.  To change the different parts of the expression, select the underlined text, and then either select or type in an appropriate value.   
 
 6.  Click **Finish**.  
 
