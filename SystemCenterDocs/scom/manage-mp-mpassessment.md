@@ -232,6 +232,6 @@ The following list includes the workloads that are supported by this feature.
 
 ## Next steps
 
-- To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](../../scom/manage-mp-lifecycle.md).
+- To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](manage-mp-lifecycle.md).
 
-- Review the [Operations Manager Reports library](operations-manager-reports-library.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](how-to-create-reports-in-operations-manager.md) to create reports for your operational needs. 
+- Review the [Operations Manager Reports library](../om/manage/operations-manager-reports-library.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](../om/manage/how-to-create-reports-in-operations-manager.md) to create reports for your operational needs. 

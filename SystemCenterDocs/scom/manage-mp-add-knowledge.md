@@ -69,6 +69,6 @@ To add or edit company knowledge, you must have the Author or Administrator user
 
 - See [How to Import, Export, and Remove an Operations Manager Management Pack](how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../../scom/manage-mp-create-unsealed-mp.md)
 
 - Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](How-to-Override-a-Rule-or-Monitor.md) to understand how to configure the change.    

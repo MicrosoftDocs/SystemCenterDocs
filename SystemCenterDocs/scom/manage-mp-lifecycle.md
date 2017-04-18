@@ -138,7 +138,7 @@ The following are some best practices to follow when managing Operations Manager
   
 -   Maintain an archive of management pack versions to enable you to roll back changes when necessary. An efficient method for maintaining the archive is by using version control software, such as Microsoft Team Foundation Server or SharePoint Server. Another method is to use a file share on the network with individual folders for each management pack version.  
   
--   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.SQLServer.2012.Monitoring.mp would be saved to Microsoft.SQLServer.2012.Monitoring\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](../om/manage/how-to-create-a-management-pack-for-overrides.md).  
+-   When you set overrides for a management pack, save them to a management pack that is named *ManagementPack*\_Override, where *ManagementPack* is the name of the sealed management pack to which the overrides apply. For example, overrides to the management pack Microsoft.SQLServer.2012.Monitoring.mp would be saved to Microsoft.SQLServer.2012.Monitoring\_Overrides.xml. For more information, see [Creating a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
   
 -   When a management pack is updated, update the corresponding \_Overrides.xml file with the new version number. You must use an XML editor to update the version number of the \_Overrides.xml file. If you make changes to an \_Overrides.xml file but do not change the version attribute, you can import the file but the settings in the file will not be applied.  
   
@@ -146,7 +146,7 @@ The following are some best practices to follow when managing Operations Manager
   
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../om/manage/how-to-create-a-management-pack-for-overrides.md).  
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md).  
 
 - To understand what an Operations Manager management pack is and how it helps you proactively monitor your services and applications, see [What is in an Operations Manager Management Pack](What-Is-in-an-Operations-Manager-Management-Pack.md).  
  

@@ -24,4 +24,4 @@ Use the Create Attribute Wizard to create a new attribute for a management pack.
 
 - To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](../../scom/manage-mp-overview-override-targets.md).  
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md).  
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../../scom/manage-mp-create-unsealed-mp.md).  

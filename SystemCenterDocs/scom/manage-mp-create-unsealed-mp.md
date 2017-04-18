@@ -22,7 +22,7 @@ Management packs can be sealed or unsealed. A sealed management pack cannot be m
   
 The following illustration shows the unsealed management packs that are installed with Operations Manager.  
   
-![Dropdown menu for selecting management pack](../media/om2016-save-override-to-mp.png)  
+![Dropdown menu for selecting management pack](./media/manage-mp-create-unsealed-mp/om2016-save-override-to-mp.png)  
   
 Never use the management packs that are installed with Operations Manager to save any settings that you change or elements that you create. When you have to select a destination management pack, always select a management pack that you create.  
   
@@ -56,11 +56,11 @@ When you want to remove a sealed management pack, you must first remove any othe
   
 In the following image, overrides for management packs 1, 2, and 3 are all saved to a single unsealed management pack. If you want to remove management pack 1, you first must remove the unsealed management pack. As you can see, you would also remove all overrides for management packs 2 and 3.  
   
-![Overrides saved to single management pack](../media/om2016-mp-reference-example.png)  
+![Overrides saved to single management pack](./media/manage-mp-create-unsealed-mp/om2016-mp-reference-example.png)  
   
 The recommended method is to create an unsealed management pack for each sealed management pack that you want to override, as shown in the following image. Removing management pack 1 and its unsealed management pack does not affect the other management packs.  
   
-![Save overrides to respective management packs](../media/om2016-mp-reference-best-practice.png)  
+![Save overrides to respective management packs](./media/manage-mp-create-unsealed-mp/om2016-mp-reference-best-practice.png)  
   
 ## How to create a management pack for overrides  
 You can create a management pack for overrides before you configure an override or as part of the override procedure.  

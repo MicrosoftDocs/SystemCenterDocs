@@ -36,7 +36,7 @@ In System Center 2016 - Operations Manager, if a management pack's default setti
   
 7.  In the **Override Setting** column, click **True** to enable the rule or monitor or **False** to disable the rule or monitor.  
   
-8.  In the **Select destination management pack** list, click the appropriate management pack in which to store the override or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md).  
+8.  In the **Select destination management pack** list, click the appropriate management pack in which to store the override or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](../../scom/manage-mp-create-unsealed-mp.md).  
   
 9. When you complete your changes, click **OK**.  
   

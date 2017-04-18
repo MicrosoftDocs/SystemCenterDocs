@@ -37,7 +37,7 @@ Some monitors have diagnostic or recovery tasks that are disabled by default. Yo
   
 5.  In the **Override\-controlled parameters** section, click **Enabled** and set the override value to **True**.  
   
-6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md).  
+6.  Either select a management pack from the **Select destination management pack** list or create a new unsealed management pack by clicking **New**. For more information about selecting a destination management pack, see [Creating a Management Pack for Overrides](../../scom/manage-mp-create-unsealed-mp.md).  
   
 7.  Click **OK**. Close the open properties windows.  
   
@@ -45,7 +45,7 @@ Some monitors have diagnostic or recovery tasks that are disabled by default. Yo
 
 - To understand the differences between classes and groups in Operations Manage and how workflows apply to each, review [Using Classes and Groups for Overrides in Operations Manager](Using-Classes-and-Groups-for-Overrides.md)  
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](how-to-create-a-management-pack-for-overrides.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../../scom/manage-mp-create-unsealed-mp.md)
 
 - Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](How-to-Override-a-Rule-or-Monitor.md) to understand how to configure the change.    
 

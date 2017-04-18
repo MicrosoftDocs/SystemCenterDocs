@@ -38,19 +38,19 @@ Management packs might also contain tasks, diagnostics, and recovery tools and g
 
     Provides procedures for downloading and importing management packs, removing, and exporting management packs in your management group.
 
--   [Creating a management pack for overrides](how-to-create-a-management-pack-for-overrides.md)
+-   [Creating a management pack for overrides](../../scom/manage-mp-create-unsealed-mp.md)
 
     Explains how to organize and store the overrides you configure.
 
--   [How to override a rule or monitor](how-to-override-a-rule-or-monitor.md)
+-   [How to override a rule or monitor](../../scom/manage-mp-override-rule-monitor.md)
 
     Explains how to apply an override to change the configuration of a rule, monitor, attribute, or object discovery.  
   
--   [How to add knowledge to a management pack](how-to-add-knowledge-to-a-management-pack.md)
+-   [How to add knowledge to a management pack](../../scom/manage-mp-add-knowledge.md)
 
     Explains how to add or edit custom company knowledge to add additional troubleshooting information and provide company-specific information for operators in your organization.
 
--   [Management pack assessment](Management-Pack-Assessment.md)
+-   [Management pack assessment](../../scom/manage-mp-mpassessment.md)
 
     Provides an overview and procedures on how to use this feature to proactively identify new workloads deployed in your IT infrastructure that were not monitored by Operations Manager or are not up-to-date.  
 
