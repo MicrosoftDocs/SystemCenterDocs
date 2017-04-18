@@ -58,4 +58,4 @@ The activity publishes all of the data from the required and optional properties
 
 The Integration Pack for HP iLO and OA contains the following additional activities:
 
-[Run OA Command](run-oa-command.md)
+[Run OA Command](../orch/manage/run-oa-command.md)

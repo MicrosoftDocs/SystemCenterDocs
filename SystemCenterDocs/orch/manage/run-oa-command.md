@@ -57,4 +57,4 @@ The activity publishes all of the data from the required and optional properties
 
 The Integration Pack for HP iLO and OA contains the following additional activities:
 
-[Run iLO Command](run-ilo-command.md)
+[Run iLO Command](../../orchestrator/run-ilo-command.md)
