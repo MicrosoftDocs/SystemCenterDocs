@@ -809,7 +809,7 @@
 #### [Manage VMware servers](vmm/manage-vmware-hosts.md)
 #### [Manage infrastructure servers](vmm/infrastructure-server.md)
 #### [Manage update servers](vmm/update-server.md)
-#### [Manage the VMM networking fabric](vmm/manage/manage-network-overview.md)
+#### [Manage the VMM networking fabric](vmm/manage-networks.md)
 ##### [Manage SDN resources in the VMM fabric](vmm/manage/manage-network-sdn.md)
 ##### [Set up logical networks](vmm/manage/manage-network-logical-networks.md)     
 ##### [Set up VM networks](vmm/manage/manage-network-vm-networks.md)

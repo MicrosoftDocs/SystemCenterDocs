@@ -40,7 +40,7 @@ You can deploy a hyper-converged cluster with a couple of methods, just as you c
 In a hyper-converged topology storage and compute are on the same cluster. Here's what you need to do:
 
 1. Create a Hyper-V cluster in the VMM fabric, and enable S2D on the Hyper-V cluster. Alternatively if you already have a S2D cluster you configured outside VMM, you add it to the VMM fabric.
-2. Set up networking on the cluster. [Learn more](../manage/manage-network-overview.md).
+2. Set up networking on the cluster. [Learn more](../manage-networks.md).
 3. Modify the storage pool, and create cluster-shared volumes (CSVs)
 4. Deploy VMs on the cluster.
 
