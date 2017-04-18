@@ -244,7 +244,7 @@
 ### [Deploy](orch/deploy/install.md)
 #### [Deploy runbooks](orch/deploy/deploy-runbooks.md)
 ### [Manage](orch/manage/administering-orchestrator.md)
-#### [Audit Trail](orch/manage/audit-trail.md)
+#### [Audit Trail](orchestrator/track-runbooks-audit-trail.md)
 #### [Common activity properties](orch/manage/common-activity-properties.md)
 #### [Computer groups](orch/manage/computer-groups.md)
 #### [Counters](orch/manage/counters.md)

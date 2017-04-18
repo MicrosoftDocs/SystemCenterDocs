@@ -77,4 +77,4 @@ When a file reaches 200 megabytes \(MB\) in size, a new file is created. The tim
 > The ProgramData folder holding the audit files is often a hidden system folder.  
 
 ## See Also  
-[Orchestrator Logs](../get-started/orchestrator-logs.md)  
+[Orchestrator Logs](../orch/get-started/orchestrator-logs.md)  
