@@ -49,7 +49,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
 2.  Stop the System Center services on all the management servers.  
 
-3.  Back up the Service Manager database, as described in [How to Back Up the Production Service Manager Database](../sm/deploy/upgrade-how-to-back-up-the-production-service-manager-database.md).  
+3.  Back up the Service Manager database, as described in [How to Back Up the Production Service Manager Database](back-up-prod-db.md).  
 
 4.  Restore the Service Manager database on the target computer that is running Microsoft SQL Server, as described in [How to Restore the Service Manager Database in the Lab Environment](../sm/deploy/upgrade-how-to-restore-the-service-manager-database-in-the-lab-environment.md).  
 

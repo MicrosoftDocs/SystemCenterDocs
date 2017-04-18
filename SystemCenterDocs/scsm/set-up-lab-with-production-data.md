@@ -28,7 +28,7 @@ This article explains how to create a lab environment and populate it with produ
 5. [Disable Email Notifications in the Production Environment](disable-email-note.md)
 6. Disable all workflows in the production environment that you do not want to be running in the lab environment.
 7. [Stop Service Manager Services on the Secondary Management Server](stop-services-secondary-ms.md)
-8. [Back Up the Production Service Manager Database](../sm/deploy/upgrade-how-to-back-up-the-production-service-manager-database.md)
+8. [Back Up the Production Service Manager Database](back-up-prod-db.md)
 9. [Enable Service Manager Connectors in the Production Environment](../sm/deploy/upgrade-how-to-enable-service-manager-connectors-in-the-production-environment.md)
 10. [Enable Email Notifications in the Production Environment](../sm/deploy/upgrade-how-to-enable-email-notifications-in-the-production-environment.md)
 11. Enable all workflows in the Production Service Manager environment that you disabled in step 6.
