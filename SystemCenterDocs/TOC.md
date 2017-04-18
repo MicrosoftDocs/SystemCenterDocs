@@ -214,7 +214,7 @@
 ##### [Using Operations Manager shell](scom/manage-using-omcmdlets.md)
 ##### [How to create and manage resource pools](scom/manage-resource-pools-manage.md)
 ####  [Maintaining the Operations Manager Infrastructure](om/manage/maintaining-operations-manager.md)
-##### [How to configure Operations Manager to communicate with SQL Server](om/manage/how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
+##### [How to configure Operations Manager to communicate with SQL Server](scom/manage-sqlserver-communication.md)
 ##### [How to move the Operational database](om/manage/how-to-move-the-operational-database.md)
 ##### [How to move the Reporting data warehouse database](om/manage/how-to-move-the-reporting-data-warehouse-database.md)
 ##### [How to configure grooming settings for the Operations Manager database](om/manage/how-to-configure-grooming-settings-for-the-operations-manager-database.md)

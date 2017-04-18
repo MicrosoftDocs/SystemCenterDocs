@@ -40,4 +40,4 @@ Operations Manager supports changes to your Operations Manager infrastructure as
 
 - [Moving the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md)
 
-- [How to Configure Operations Manager to Communicate with SQL Server](how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
+- [How to Configure Operations Manager to Communicate with SQL Server](../../scom/manage-sqlserver-communication.md)
