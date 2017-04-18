@@ -118,7 +118,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Add OS Image](../orch/manage/add-os-image.md)
 
-[Add Service Certificate](../orch/manage/add-service-certificate.md)
+[Add Service Certificate](add-service-certificate.md)
 
 [Add VM Data Disk](../orch/manage/add-vm-data-disk.md)
 
