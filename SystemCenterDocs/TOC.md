@@ -701,7 +701,7 @@
 #### [Map Service Manager properties to Configuration Manager database views](scsm/sm-cm-views.md)
 #### [Registry keys](scsm/registry-keys.md)
 ### [Day-to-day tasks in Service Manager](scsm/day-to-day-tasks.md)
-#### [Search for information](sm/manage/ops-searching-for-information-in-system-center-2016-service-manager.md)
+#### [Search for information](scsm/search-information.md)
 #### [Manage incidents and problems](sm/manage/ops-managing-incidents-and-problems-in-system-center-2016-service-manager.md)
 #### [Manage changes and activities](sm/manage/ops-managing-changes-and-activities-in-system-center-2016-service-manager.md)
 #### [Manage service requests](sm/manage/ops-managing-service-requests-in-system-center-2016-service-manager.md)
