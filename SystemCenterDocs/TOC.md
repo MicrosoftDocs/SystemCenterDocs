@@ -38,7 +38,7 @@
 #### [Back up file data with DPM](dpm/back-up-file-data.md)
 #### [Back up system state and bare metal](dpm/back-up-system-state-and-bare-metal.md)
 #### [Back up and restore VMM servers](dpm/back-up-vmm-server.md)
-#### [Prepare to back up a generic data source](DPM/Deploy/Prepare-to-back-up-a-generic-data-source.md)
+#### [Prepare to back up a generic data source](dpm/back-up-generic-data-source.md)
 #### [Prepare machines in workgroups and untrusted domains for backup](DPM/Deploy/Prepare-machines-in-workgroups-and-untrusted-domains-for-backup.md)
 #### [Back up the DPM server](DPM/Deploy/Back-up-the-DPM-server.md)
 ### [Manage and monitor DPM](DPM/Manage/Manage-and-monitor-DPM.md)
