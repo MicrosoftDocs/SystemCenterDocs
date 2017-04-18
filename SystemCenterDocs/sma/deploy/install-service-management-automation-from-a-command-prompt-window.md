@@ -109,4 +109,4 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 > 3.  Restart the Runbook server service on each computer on which a runbook worker is installed.
 
 ## See also
-[Deploy Service Management Automation](Deploy-Service-Management-Automation.md)
+[Deploy Service Management Automation](../deploy.md)

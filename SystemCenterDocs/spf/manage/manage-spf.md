@@ -20,4 +20,4 @@ After you've deployed System Center 2016 - Service Provider Foundation (SPF), th
 - [Manage tenants and user roles](manage-tenants.md): Set up tenants in SPF, and create a tenant self-service user role in VMM.
 - [Manage usage metering](manage-usage-metering.md): Configure SPF to aggregate usage statistics for queries by the SPF Usage web service.
 - [Manage gallery resources](manage-gallery.md): Use SPF to import gallery items into System Center 2016 - Virtual Machine Manager (VMM) from downloaded resource packages
-- [Automate and invoke runbooks](manage-runbooks.md): Automate and invoke runbooks to provide automated solutions for your tenants.
+- [Automate and invoke runbooks](../../sma/manage-runbooks.md): Automate and invoke runbooks to provide automated solutions for your tenants.

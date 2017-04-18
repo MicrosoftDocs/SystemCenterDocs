@@ -38,6 +38,6 @@ The following table compares Orchestrator to the other Microsoft automation tool
 
     Describes the architecture of a basic Service Management Automation deployment.
 
--   [Deploy Service Management Automation](Deploy/Deploy-Service-Management-Automation.md)
+-   [Deploy Service Management Automation](deploy.md)
 
     Provides a brief overview of the steps to deploy Service Management Automation.
