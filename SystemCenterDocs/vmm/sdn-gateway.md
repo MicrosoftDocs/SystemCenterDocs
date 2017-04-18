@@ -393,4 +393,4 @@ Here is the procedure to setup the traffic selector by using the VMM PowerShell.
 
 ## Remove the gateway from the SDN fabric
 
-Use [these steps](scenario/sdn-remove-an-sdn.md#remove-the-gateway) to remove the gateway from the SDN fabric.
+Use [these steps](sdn-remove.md#remove-the-gateway) to remove the gateway from the SDN fabric.
