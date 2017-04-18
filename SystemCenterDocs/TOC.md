@@ -750,7 +750,7 @@
 #### [Include dashboards and reports in custom views for the Authoring Tool reports sample scenario](scsm/dashboards-reports-in-custom-views.md)
 ### [Glossary for System Center 2016 - Service Manager](scsm/glossary.md)
 ## [Virtual Machine Manager (VMM)](VMM/vmm.md)
-### [Get started](vmm/get-started/get-started-overview.md)
+### [Get started](spf/overview.md)
 #### [What's new in VMM](vmm/get-started/get-started-whats-new.md)
 ### [Plan](vmm/plan/plan-overview.md)
 #### [System requirements](vmm/plan/system-reqs.md)

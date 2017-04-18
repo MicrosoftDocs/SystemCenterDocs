@@ -22,7 +22,7 @@ SPF can be used by service providers to offer infrastructure as a service (IaaS)
 
 The following graphic shows how SPF works.
 
-![SPF overview](../media/spfoverview.png)
+![SPF overview](./media/overview/spfoverview.png)
 
 ## SPF services
 
@@ -117,7 +117,7 @@ Hosters and tenants interact with SPF as follows:
 
 This graphic shows how SPF interacts with VMM
 
-![SPF and VMM](../media/spf-vmm.png)
+![SPF and VMM](./media/overview/spf-vmm.png)
 
 
 ## VMM, SPF and Windows Azure Pack
@@ -128,8 +128,8 @@ Windows Azure Pack provides an Azure-like experience and frontend for organizati
 -	A tenant portal where tenants can sign up for the VM Clouds service, and provision VMs.
 Windows Azure Pack uses SPF to integrate with VMM to provide the VM Clouds service, as illustrated in the following graphic.
 
-    ![SPF and Windows Azure Pack](../media/spf-azurepack.png)
+    ![SPF and Windows Azure Pack](./media/overview/spf-azurepack.png)
 
 ## Next steps
 
-[Plan SPF deployment](../plan/plan-deployment.md)
+[Plan SPF deployment](../scsm/plan-deployment.md)
