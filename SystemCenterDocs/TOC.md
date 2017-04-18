@@ -402,7 +402,7 @@
 #### [FTP Integration Pack](orch/manage/ftp-integration-pack.md)
 ##### [FTP Activities](orch/manage/integration-pack-activities.md)
 ###### [Create Folder](orchestrator/create-folder.md)
-###### [Delete File](orch/manage/delete-file.md)
+###### [Delete File](orchestrator/delete-file.md)
 ###### [Delete Folder](orch/manage/delete-folder.md)
 ###### [Download File](orch/manage/download-file.md)
 ###### [List Folders or Files](orch/manage/list-folders-or-files.md)
