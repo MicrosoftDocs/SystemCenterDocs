@@ -30,7 +30,7 @@ You can download integration packs from the Microsoft Download Center. Each inte
 - [REST](../../orchestrator/representational-state-transfer-rest-integration-pack.md)
 - [Configuration Manager](configuration-manager-integration-pack.md)
 - [Data Protection Manager](../../orchestrator/integration-pack-for-data-protection-manager.md)
-- [Operations Manager](integration-pack-for-operations-manager.md)
+- [Operations Manager](../../orchestrator/integration-pack-for-operations-manager.md)
 - [Service Manager](integration-pack-for-service-manager.md)
 - [Virtual Machine Manager](integration-pack-for-virtual-machine-manager.md)
 - [SharePoint](integration-pack-for-microsoft-sharepoint.md)

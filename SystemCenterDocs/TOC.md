@@ -491,7 +491,7 @@
 #######[Recover sql](orchestrator/recover-sql.md)
 #######[Recover vm](orchestrator/recover-vm.md)
 #######[Run dpm powershell script](orchestrator/run-dpm-powershell-script.md)
-##### [Operations Manager](orch/manage/integration-pack-for-operations-manager.md)
+##### [Operations Manager](orchestrator/integration-pack-for-operations-manager.md)
 ###### [Operations Manager Activities](orch/manage/operations-manager-activities.md)
 #######[Create alert](orch/manage/create-alert.md)
 #######[Get alert](orch/manage/get-alert.md)
