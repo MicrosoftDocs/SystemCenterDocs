@@ -24,7 +24,7 @@ Businesses, small and large, are typically dependent on the services and applica
 
 Using Operations Manager in the environment makes it easier to monitor multiple computers, devices, services, and applications. The Operations console, shown in the following image, enables you to check the health, performance, and availability for all monitored objects in the environment and helps you identify and resolve problems.
 
-![Operations Console](../media/om2016-operations-console-monitoring-view.png)
+![Operations Console](./media/key-concepts/om2016-operations-console-monitoring-view.png)
 
 > [!NOTE]
 > To learn how to use the Operations Manager consoles, see [Using the Operations Manager Consoles](http://go.microsoft.com/fwlink/p/?LinkID=207747) in the Operations Guide.
@@ -45,9 +45,9 @@ When Operations Manager reporting functionality is installed, the management gro
 
 These core components of a management group can exist on a single server, or they can be distributed across multiple servers, as shown in the following image.
 
-![Basic Management Group](../media/om2016-basic-management-group.png)
+![Basic Management Group](./media/key-concepts/om2016-basic-management-group.png)
 
-For information about installing management group features, see [Operations Manager 2016 Deployment Guide](../../scom/deploy-overview.md).
+For information about installing management group features, see [Operations Manager 2016 Deployment Guide](deploy-overview.md).
 
 ### Management servers
 
@@ -55,7 +55,7 @@ The role of the management server is to administer the management group configur
 
 The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload. When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool will not manage the same object at the same time.
 
-A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Planning a management group design](../plan/planning-a-management-group-design.md#gateway-server).
+A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Planning a management group design](../om/plan/planning-a-management-group-design.md#gateway-server).
 
 ### Agents
 
@@ -102,9 +102,9 @@ Discovered objects have a health state, which is reflected in the Operations con
 
 The following image is a simplified illustration of how objects are discovered and monitored.
 
-![Discovery and Monitoring Overview](../media/om2016-windows-computer-discovery.png)
+![Discovery and Monitoring Overview](./media/key-concepts/om2016-windows-computer-discovery.png)
 
-1.  The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Managing Discovery and Agents](../Manage/managing-discovery-and-agents.md).
+1.  The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Managing Discovery and Agents](../om/manage/managing-discovery-and-agents.md).
 
 2.  Computers that meet the specified criteria and are not already managed are identified.
 
@@ -129,17 +129,17 @@ The Operations Manager agent sends alert and discovery data to the primary manag
 
 The agent sends data according to the schedule parameters for each rule and monitor. For optimized collection rules, data is only transmitted if a sample of a counter differs from the previous sample by a specified tolerance, such as 10%. This helps reduce network traffic and the volume of data stored in the operational database.
 
-Additionally, all agents send a packet of data, called a *heartbeat*, to the management server on a regular schedule, by default every 60 seconds. The purpose of the heartbeat is to validate the availability of the agent and communication between the agent and the management server. For more information on heartbeats, see [How Heartbeats Work in Operations Manager](../Manage/how-heartbeats-work.md).
+Additionally, all agents send a packet of data, called a *heartbeat*, to the management server on a regular schedule, by default every 60 seconds. The purpose of the heartbeat is to validate the availability of the agent and communication between the agent and the management server. For more information on heartbeats, see [How Heartbeats Work in Operations Manager](../om/manage/how-heartbeats-work.md).
 
 For each agent, Operations Manager runs a *health service watcher*, which monitors the state of the remote Health Service from the perspective of the management server.
 
 ### Other resources for Operations Manager
 
--   [TechNet Library main page for System Center - Operations Manager](../../scom/welcome.md)
+-   [TechNet Library main page for System Center - Operations Manager](welcome.md)
 
--   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](../../scom/deploy-overview.md)
+-   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](deploy-overview.md)
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../Manage/Operations-Manager-Operations-Guide.md)
+-   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../om/manage/operations-manager-operations-guide.md)
 
 -   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
 

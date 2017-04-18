@@ -49,7 +49,7 @@
 #### [Improve replication performance](dpm/improve-replication-performance.md)
 #### [Manage multiple DPM servers with Central Console](dpm/use-central-console-to-manage-multiple-dpm-servers.md)
 ## [Operations Manager](scom/welcome.md)
-### [Operations Manager key concepts](om/get-started/operations-manager-key-concepts.md)
+### [Operations Manager key concepts](scom/key-concepts.md)
 ### [Get Started](scom/get-started.md)
 #### [What's New in Operations Manager](scom/what-is-new.md)
 #### [Walkthrough: Installing Operations Manager on a Single Server](om/get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md)
