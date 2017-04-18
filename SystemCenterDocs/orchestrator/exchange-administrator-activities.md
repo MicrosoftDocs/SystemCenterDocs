@@ -127,7 +127,7 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Enable Mailbox](enable-mailbox.md)
 
-[Enable Remote Mailbox (Hybrid)](../orch/manage/enable-remote-mailbox-hybrid.md)
+[Enable Remote Mailbox (Hybrid)](enable-remote-mailbox-hybrid.md)
 
 [Get Mailbox](../orch/manage/get-mailbox.md)
 
