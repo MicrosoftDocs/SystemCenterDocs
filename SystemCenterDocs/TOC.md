@@ -23,7 +23,7 @@
 #### [Get ready to deploy DPM servers](dpm/plan-dpm-deployment.md)
 #### [Get DPM installed](dpm/get-started/Get-DPM-installed.md)
 #### [Prepare data storage](dpm/get-started/Prepare-data-storage.md)
-#### [Preparing your environment for Data Protection Manager](dpm/get-started/Prepare-environment-for-DPM.md)
+#### [Preparing your environment for Data Protection Manager](dpm/prepare-environment-for-dpm.md)
 #### [Identify compatible tape libraries](dpm/get-started/Identify-compatible-tape-libraries.md)
 #### [Identify data sources you want to protect](dpm/get-started/Identify-data-sources-you-want-to-protect.md)
 ### [Deploy](DPM/Deploy/Deploy.md)
