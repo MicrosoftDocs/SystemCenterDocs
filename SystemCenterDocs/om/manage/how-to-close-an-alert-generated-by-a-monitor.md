@@ -44,6 +44,6 @@ If the monitor generates an alert when the health state changes to red and you d
 
 ## Next steps
  
-- When an alert is generated, you can [View Active Alerts and Details](viewing-active-alerts-and-alert-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.        
+- When an alert is generated, you can [View Active Alerts and Details](../../scom/manage-alert-view-alerts-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.        
 
 - After investigating and resolving the issue detected by one or more monitors, review [How to Reset Health](how-to-reset-health.md) to manually reset health if the monitor isn't configured to auto-resolve or you don't want to wait for the monitor to detect health state.

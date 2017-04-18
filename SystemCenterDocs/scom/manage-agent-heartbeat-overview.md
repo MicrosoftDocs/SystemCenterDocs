@@ -33,6 +33,6 @@ You can also override the global heartbeat interval for individual agents and th
   
 ## Next steps  
 
-- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](../om/manage/resolving-heartbeat-alerts.md)  
+- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](manage-agent-resolve-heartbeat.md)  
 
   

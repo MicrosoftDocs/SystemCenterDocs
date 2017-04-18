@@ -32,6 +32,6 @@ Generally, before you close an alert, you should verify that the issue is resolv
 
 - Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](../../scom/manage-agent-heartbeat-overview.md).  
 
-- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](resolving-heartbeat-alerts.md).  
+- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](../../scom/manage-agent-resolve-heartbeat.md).  
 
-- When an alert is generated, you can [View Active Alerts and Details](viewing-active-alerts-and-alert-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.     
+- When an alert is generated, you can [View Active Alerts and Details](../../scom/manage-alert-view-alerts-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.     
