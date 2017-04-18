@@ -53,7 +53,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 
--   **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+-   **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
 -   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

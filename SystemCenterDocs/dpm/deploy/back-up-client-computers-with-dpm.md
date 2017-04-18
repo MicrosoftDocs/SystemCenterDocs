@@ -60,7 +60,7 @@ You can deploy DPM to back up client computers.   Depending on the client operat
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
 2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure.
-      Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+      Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
 3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 

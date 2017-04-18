@@ -98,7 +98,7 @@ However native protection might not be enough if application errors, corruptions
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
-2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../get-started/Prepare-data-storage.md).
+2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
 
 3.  **Set up the DPM protection agent** - The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](Deploy-the-DPM-protection-agent.md).
 
