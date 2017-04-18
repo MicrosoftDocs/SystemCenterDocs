@@ -163,7 +163,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Update Disk](update-disk.md)
 
-[Update Network Adapter](../orch/manage/update-network-adapter.md)
+[Update Network Adapter](update-network-adapter.md)
 
 [Update VM](../orch/manage/update-vm.md)
 

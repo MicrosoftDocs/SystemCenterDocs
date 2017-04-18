@@ -562,7 +562,7 @@
 #######[Stop vm](orchestrator/stop-vm.md)
 #######[Suspend vm](orchestrator/suspend-vm.md)
 #######[Update disk](orchestrator/update-disk.md)
-#######[Update network adapter](orch/manage/update-network-adapter.md)
+#######[Update network adapter](orchestrator/update-network-adapter.md)
 #######[Update user role property](orch/manage/update-user-role-property.md)
 #######[Update user role quota](orch/manage/update-user-role-quota.md)
 #######[Update vm](orch/manage/update-vm.md)
