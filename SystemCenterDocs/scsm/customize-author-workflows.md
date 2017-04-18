@@ -22,22 +22,22 @@ Using Service Manager, you can automate many administrative processes that previ
 
 ## Workflows Topics  
 
--   [Automating IT Processes with Workflows](author-automating-it-processes-with-workflows.md)  
+-   [Automating IT Processes with Workflows](../sm/manage/author-automating-it-processes-with-workflows.md)  
 
      Describes how to automate information technology \(IT\) processes using workflows and describes the WF activities that the Authoring Tool provides.  
 
--   [Creating Workflows for IT Processes](author-creating-workflows-for-it-processes.md)  
+-   [Creating Workflows for IT Processes](../sm/manage/author-creating-workflows-for-it-processes.md)  
 
      Describes how to create workflows for IT processes.  
 
--   [How to Deploy a Workflow to Service Manager](author-how-to-deploy-a-workflow-to-service-manager.md)  
+-   [How to Deploy a Workflow to Service Manager](../sm/manage/author-how-to-deploy-a-workflow-to-service-manager.md)  
 
      Describes how to deploy a workflow in Service Manager.  
 
--   [Configuring the Activities Toolbox](author-configuring-the-activities-toolbox.md)  
+-   [Configuring the Activities Toolbox](../sm/manage/author-configuring-the-activities-toolbox.md)  
 
      Describes how to configure the Activities Toolbox.  
 
--   [Workflow Activity Reference](author-workflow-activity-reference.md)  
+-   [Workflow Activity Reference](../sm/manage/author-workflow-activity-reference.md)  
 
      Provides details about the default WF activities in the Activity Library.
