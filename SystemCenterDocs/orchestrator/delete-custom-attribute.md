@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Delete Custom Attribute activity is used in a runbook to delete a custom attribute from an existing message.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
 
 ## Delete Custom Attribute Required Properties
 

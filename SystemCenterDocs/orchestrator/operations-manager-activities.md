@@ -112,18 +112,18 @@ For a list of the data elements published by each activity, see the **Published 
 
 The Operations Manager Integration Pack adds the **SC 2016 Operations Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Alert](create-alert.md)
+[Create Alert](../orch/manage/create-alert.md)
 
-[Get Alert](get-alert.md)
+[Get Alert](../orch/manage/get-alert.md)
 
-[Get Monitor](get-monitor.md)
+[Get Monitor](../orch/manage/get-monitor.md)
 
-[Monitor Alert](monitor-alert.md)
+[Monitor Alert](../orch/manage/monitor-alert.md)
 
-[Monitor State](monitor-state.md)
+[Monitor State](../orch/manage/monitor-state.md)
 
-[Start Maintenance Mode](start-maintenance-mode.md)
+[Start Maintenance Mode](../orch/manage/start-maintenance-mode.md)
 
-[Stop Maintenance Mode](stop-maintenance-mode.md)
+[Stop Maintenance Mode](../orch/manage/stop-maintenance-mode.md)
 
-[Update Alert](update-alert.md)
+[Update Alert](../orch/manage/update-alert.md)

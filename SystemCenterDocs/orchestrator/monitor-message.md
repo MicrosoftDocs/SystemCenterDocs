@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Monitor Message activity invokes a runbook when certain HP Operations Manager messages are created, updated, acknowledged or unacknowledged according to filter criteria that you specify. The activity uses filters to determine which messages should invoke the runbook.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](hp-operations-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
 
 ## Monitor Message Required Properties
 
