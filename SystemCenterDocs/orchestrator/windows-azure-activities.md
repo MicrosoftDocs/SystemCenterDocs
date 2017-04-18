@@ -174,7 +174,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Download Blob](download-blob.md)
 
-[Get Deployment](../orch/manage/get-deployment.md)
+[Get Deployment](get-deployment.md)
 
 [Get Operating Systems](../orch/manage/get-operating-systems.md)
 
