@@ -320,7 +320,7 @@
 #######[Create cloud service](orchestrator/create-cloud-service.md)
 #######[Create container](orchestrator/create-container.md)
 #######[Create deployment](orchestrator/create-deployment.md)
-#######[Create storage account](orch/manage/create-storage-account.md)
+#######[Create storage account](orchestrator/create-storage-account.md)
 #######[Create vm deployment](orch/manage/create-vm-deployment.md)
 #######[Delete blob](orch/manage/delete-blob.md)
 #######[Delete cloud service](orch/manage/delete-cloud-service.md)
