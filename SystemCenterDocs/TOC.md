@@ -807,7 +807,7 @@
 ##### [Manage Hyper-V extended port ACLs](vmm/hyper-v-acls.md)
 ##### [Service hosts](vmm/hyper-v-service.md)
 #### [Manage VMware servers](vmm/manage-vmware-hosts.md)
-#### [Manage infrastructure servers](vmm/manage/manage-compute-infrastructure-servers.md)
+#### [Manage infrastructure servers](vmm/infrastructure-server.md)
 #### [Manage update servers](vmm/manage/manage-compute-update-servers.md)
 #### [Manage the VMM networking fabric](vmm/manage/manage-network-overview.md)
 ##### [Manage SDN resources in the VMM fabric](vmm/manage/manage-network-sdn.md)
