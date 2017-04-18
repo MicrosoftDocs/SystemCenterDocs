@@ -83,7 +83,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Suspend VM Activity](suspend-vm-activity.md)
 
-[Take VM Snapshot Activity](../orch/manage/take-vm-snapshot-activity.md)
+[Take VM Snapshot Activity](take-vm-snapshot-activity.md)
 
 ## Common Configuration Instructions for All Activities
 

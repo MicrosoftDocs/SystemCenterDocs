@@ -599,7 +599,7 @@
 #######[Start vm activity](orchestrator/start-vm-activity.md)
 #######[Stop vm activity](orchestrator/stop-vm-activity.md)
 #######[Suspend vm activity](orchestrator/suspend-vm-activity.md)
-#######[Take vm snapshot activity](orch/manage/take-vm-snapshot-activity.md)
+#######[Take vm snapshot activity](orchestrator/take-vm-snapshot-activity.md)
 #### [Migrate orchestrator between environments](orch/manage/migrate-orchestrator-between-environments.md)
 #### [Monitoring activities](orch/manage/monitoring-activities.md)
 #### [Published data](orch/manage/published-data.md)
