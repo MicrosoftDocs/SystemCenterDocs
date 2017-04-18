@@ -535,7 +535,7 @@
 #######[Get cloud](orchestrator/get-cloud-in-system-center-2016.md)
 #######[Get disk](orchestrator/get-disk.md)
 #######[Get network adapter](orchestrator/get-network-adapter.md)
-#######[Get service configuration](orch/manage/get-service-configuration-in-system-center-2016.md)
+#######[Get service configuration](orchestrator/get-service-configuration-in-system-center-2016.md)
 #######[Get service](orch/manage/get-service-in-system-center-2016.md)
 #######[Get service template](orch/manage/get-service-template-in-system-center-2016.md)
 #######[Get tier](orch/manage/get-tier-in-system-center-2016.md)
