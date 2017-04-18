@@ -40,7 +40,7 @@ The Visio Add-in and SharePoint  Visio Services Data Provider have the following
   
 The following topics provide information about how to install, configure, and use the Visio Add-in and the SharePoint Visio Services Data Provider.  
   
--   [Install the Visio Add-in](../om/manage/install-the-visio-add-in.md)  
+-   [Install the Visio Add-in](manage-visio-addin-install-configure.md)  
   
 -   [Install and Configure the Visio Services Data Provider](../om/manage/install-and-configure-the-visio-services-data-provider.md)  
   
