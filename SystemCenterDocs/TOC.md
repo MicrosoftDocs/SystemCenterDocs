@@ -544,7 +544,7 @@
 #######[Get vm host](orchestrator/get-vm-host-in-system-center-2016.md)
 #######[Get vm network](orchestrator/get-vm-network-in-system-center-2016.md)
 #######[Get vm subnet](orchestrator/get-vm-subnet-in-system-center-2016.md)
-#######[Get vm](orch/manage/get-vm.md)
+#######[Get vm](orchestrator/get-vm.md)
 #######[Ganage checkpoint](orch/manage/manage-checkpoint.md)
 #######[Monitor vmm job](orch/manage/monitor-vmm-job-in-system-center-2016.md)
 #######[Move vm](orch/manage/move-vm.md)

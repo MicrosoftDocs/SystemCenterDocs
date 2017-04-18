@@ -139,7 +139,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Get User Role](get-user-role.md)
 
-[Get VM](../orch/manage/get-vm.md)
+[Get VM](get-vm.md)
 
 [Manage Checkpoint](../orch/manage/manage-checkpoint.md)
 
