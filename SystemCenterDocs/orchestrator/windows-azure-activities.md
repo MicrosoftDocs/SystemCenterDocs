@@ -184,7 +184,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Get Storage Account Properties](get-storage-account-properties.md)
 
-[Get VM Data Disk](../orch/manage/get-vm-data-disk.md)
+[Get VM Data Disk](get-vm-data-disk.md)
 
 [Get VM RDP File](../orch/manage/get-vm-rdp-file.md)
 
