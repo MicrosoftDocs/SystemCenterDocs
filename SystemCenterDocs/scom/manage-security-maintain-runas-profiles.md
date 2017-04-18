@@ -20,7 +20,7 @@ System Center 2016 - Operations Manager workflows, such as rules, tasks, monitor
   
 When a workflow requires rights and privileges that the default action account cannot provide, the workflow can be written to use a Run As profile. A Run As profile can have multiple Run As accounts associated with it. The Run As accounts allow you to specify the necessary credentials for specific computers. Multiple workflows can use the same Run As profile. The following image illustrates the relationship between workflows, Run As profiles, and Run As accounts.  
   
-![Workflows use Run As profile to use Run As account](../media/om2016-run-as-concept.png)  
+![Workflows use Run As profile to use Run As account](./media/manage-security-maintain-runas-profiles/om2016-run-as-concept.png)  
   
 In the image, three workflows use the same Run As profile. The Run As profile has three associated Run As accounts. In this example, each workflow that uses the Run As profile will run on Computer A using the credentials for Run As account 1, on Computer B and C using the credentials for Run As account 2, and on Computer D using the credentials for Run As account 3.  
   
@@ -32,15 +32,15 @@ A Run As account contains a single set of credentials which are stored in the Op
   
 ## Next steps
   
--   [Distribution and Targeting for Run As Accounts and Profiles](Distribution-and-Targeting-for-Run-As-Accounts-and-Profiles.md)  
+-   [Distribution and Targeting for Run As Accounts and Profiles](../om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md)  
   
     This topic explains the difference between distribution and targeting, the options for distributing Run As accounts, and the options for selecting targets for Run As profiles.  
   
--   [How to Create a Run As Account and Associate with a Run As Profile](How-to-Create-a-Run-As-Account-and-associate-to-a-profile.md)  
+-   [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md)  
   
     This topic explains how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account.  
 
-- [How to Create a New Action Account](how-to-create-a-new-action-account-in-operations-manager.md)
+- [How to Create a New Action Account](../om/manage/how-to-create-a-new-action-account-in-operations-manager.md)
 
     This topic explains how to create a new Run As action account that will be used by management servers in the management group.  
   

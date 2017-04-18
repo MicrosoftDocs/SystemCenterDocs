@@ -38,7 +38,7 @@ ms.topic: article
 
     This section explains how to configure and manage access to computers running UNIX and Linux operating systems.
 
-- [Managing Run As accounts and profiles](managing-run-as-accounts-and-profiles.md)
+- [Managing Run As accounts and profiles](../../scom/manage-security-maintain-runas-profiles.md)
 
     Operations Manager workflows, such as rules, tasks, monitors, and discoveries, require credentials to run on a targeted agent or computer. These credentials are configured by using Run As profiles and Run As accounts. This section explains how to create, configure, and manage Run As profiles and accounts.
 

@@ -48,5 +48,5 @@ When discovery occurs, each physical node of the cluster is displayed in the Ope
 The agent on the active cluster node will perform all monitoring. If the node fails, the agent on the cluster node that clustering fails over to will begin monitoring, but the agent on the failover node will have no awareness of anything the agent on other node had monitored previously, such as alerts, state changes, and so forth. The agents are independent.  
   
 > [!NOTE]  
-> You might see alerts from **Cluster discovery connect functionality monitor** and **Cluster state connect functionality monitor** when the Action Account uses low privilege credentials. To resolve this problem, assign higher privilege credentials to the Windows Cluster Action Account. For instructions, see the procedure "To modify Run As account properties" in [Managing run as accounts and profiles](managing-run-as-accounts-and-profiles.md).  
+> You might see alerts from **Cluster discovery connect functionality monitor** and **Cluster state connect functionality monitor** when the Action Account uses low privilege credentials. To resolve this problem, assign higher privilege credentials to the Windows Cluster Action Account. For instructions, see the procedure "To modify Run As account properties" in [Managing run as accounts and profiles](../../scom/manage-security-maintain-runas-profiles.md).  
   
