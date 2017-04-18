@@ -115,7 +115,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **Exchange Admin** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Mailbox](../orch/manage/create-mailbox.md)
+[Create Mailbox](create-mailbox.md)
 
 [Create Move Request](../orch/manage/create-move-request.md)
 
