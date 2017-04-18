@@ -143,7 +143,7 @@ This integration pack adds the **Exchange Admin** category to the **Activity** p
 
 [Run Exchange PowerShell Command](run-exchange-powershell-command.md)
 
-[Update Mailbox](../orch/manage/update-mailbox.md)
+[Update Mailbox](update-mailbox.md)
 
 [Update Move Request](../orch/manage/update-move-request.md)
 
