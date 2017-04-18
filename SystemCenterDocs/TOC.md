@@ -417,7 +417,7 @@
 ##### [Hewlett Packard Operations Manager](orchestrator/hp-operations-manager-integration-pack.md)
 ###### [Hewlett Packard Operations Manager Activities](orchestrator/hp-operations-manager-activities.md)
 #######[Acknowledge message](orchestrator/acknowledge-message.md)
-#######[Add annotation to message](orch/manage/add-annotation-to-message.md)
+#######[Add annotation to message](orchestrator/add-annotation-to-message.md)
 #######[Create message](orch/manage/create-message.md)
 #######[Delete annotation](orch/manage/delete-annotation.md)
 #######[Delete custom attribute](orch/manage/delete-custom-attribute.md)

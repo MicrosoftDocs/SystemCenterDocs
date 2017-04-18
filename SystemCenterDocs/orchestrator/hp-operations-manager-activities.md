@@ -117,7 +117,7 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Acknowledge Message](acknowledge-message.md)
 
-[Add Annotation to Message](../orch/manage/add-annotation-to-message.md)
+[Add Annotation to Message](add-annotation-to-message.md)
 
 [Create Message](../orch/manage/create-message.md)
 

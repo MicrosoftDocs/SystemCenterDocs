@@ -86,7 +86,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Acknowledge Message](../../orchestrator/acknowledge-message.md)
 
-[Add Annotation to Message](add-annotation-to-message.md)
+[Add Annotation to Message](../../orchestrator/add-annotation-to-message.md)
 
 [Delete Annotation](delete-annotation.md)
 
