@@ -662,7 +662,7 @@
 ##### [Start Service Manager services on the secondary management server before you upgrade](scsm/start-services-on-secondary-ms.md)
 ##### [Promote a secondary management server in a lab environment before you upgrade](scsm/promote-secondary-ms.md)
 ##### [Enable the connectors in the lab environment before you upgrade](scsm/enable-connectors-in-lab.md)
-##### [Install a new data warehouse server in the lab environment before you upgrade](sm/deploy/upgrade-how-to-install-a-new-data-warehouse-server-in-the-lab-environment.md)
+##### [Install a new data warehouse server in the lab environment before you upgrade](scsm/install-new-dw-server.md)
 ##### [Register the data warehouse server in the lab environment before you upgrade](sm/deploy/upgrade-how-to-register-the-data-warehouse-server-in-the-lab-environment.md)
 #### [Upgrade your environment to System Center 2016 - Service Manager](sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md)
 #### [Tasks to complete after you upgrade to System Center 2016 - Service Manager](sm/deploy/upgrade-after-upgrading-to-system-center-2016-service-manager.md)
