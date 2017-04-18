@@ -18,6 +18,6 @@ ms.technology:  service-provider-foundation
 Service Provider Foundation (SPF) is provided with System Center 2016 - Orchestrator. SPF exposes an extensible OData web service that interacts with System Center Virtual Machine Manager (VMM). This enables service providers and hosters to design and implement multi-tenant self-service portals, that integrate IaaS capabilities with System Center 2016.
 
 - [Learn about SPF](get-started/get-started-overview.md)
-- [Plan SPF deployment](plan/plan-spf.md)
+- [Plan SPF deployment](plan-spf.md)
 - [Deploy and install SPF](deploy/deploy-spf.md)
 - [Manage SPF after deployment](manage/manage-spf.md)

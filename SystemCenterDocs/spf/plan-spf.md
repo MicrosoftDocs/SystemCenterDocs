@@ -96,4 +96,4 @@ There are two database scenario configurations:
 
 ## Next steps
 
-[Deploy SPF](../deploy/deploy-spf.md)
+[Deploy SPF](deploy/deploy-spf.md)

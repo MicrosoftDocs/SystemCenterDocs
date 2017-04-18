@@ -23,7 +23,7 @@ SPF is part of System Center 2016 - Orchestrator. SPF exposes an extensible ODat
 
 ## Before you begin
 
-- Read the [planning article](../plan/plan-spf.md), to make sure deployment prerequisites are in place.
+- Read the [planning article](../plan-spf.md), to make sure deployment prerequisites are in place.
 - You can install SPF on a single server or on multiple servers.
 - We recommend you install as an administrator, so that you can configure customer experience and Microsoft update settings during installation.
 - Remember you’ll need a SQL Server database for SPF on the same server, or on a remote server.
