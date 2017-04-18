@@ -51,7 +51,7 @@ For more information about how to create and customize management packs, see [Ma
 
 -   In the Service Manager console, open the **Management Packs** view, and verify that the new management pack appears in the **Management Packs** pane.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these tasks, as follows:
+![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new management pack, see [New-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225411).
 
@@ -86,7 +86,7 @@ Use the following procedures to export an unsealed management pack and then vali
 
 -   In Windows Explorer, ensure that you can locate the management pack file.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML-formatted file that you can later import into Service Manager or Operations Manager, see [Export-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398).
+![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML-formatted file that you can later import into Service Manager or Operations Manager, see [Export-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398).
 
 
 ## Import a management pack
@@ -121,7 +121,7 @@ Use the following procedure to import a single management pack, or a management 
 
 -   In the Service Manager console, select the **Management Packs** view, and ensure that the intended management packs appear in the **Management Packs** list.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to import a management pack, see [Import-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396).
 
@@ -134,7 +134,7 @@ Use the following procedure to import a single management pack, or a management 
 ## How to Import the Operations Manager Alert Cube Management Pack
 By default, Service Manager does not automatically import the System Center Alert Management Cube management pack when you register Operations Manager as a data source.
 
-Instead you must manually create a data source for Operations Manager. For more information, see [How to Register the System Center Data Warehouse to Operations Manager](admin-how-to-register-the-system-center-data-warehouse-to-operations-manager.md). Afterward, use the following procedure to import the management pack.
+Instead you must manually create a data source for Operations Manager. For more information, see [How to Register the System Center Data Warehouse to Operations Manager](../sm/manage/admin-how-to-register-the-system-center-data-warehouse-to-operations-manager.md). Afterward, use the following procedure to import the management pack.
 
 ### To import the Operations Manager alert cube management pack
 

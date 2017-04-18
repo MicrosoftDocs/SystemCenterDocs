@@ -668,7 +668,7 @@
 #### [Tasks to complete after you upgrade to System Center 2016 - Service Manager](scsm/tasks-to-complete-after-upgrade.md)
 #### [Identify and resolve System Center 2016 - Service Manager upgrade problems](scsm/resolve-upgrade-problems.md)
 ### [Administrative tasks in System Center 2016 - Service Manager](scsm/admin-tasks.md)
-#### [Use management packs to add functionality](sm/manage/admin-using-management-packs-in-system-center-2016-service-manager.md)
+#### [Use management packs to add functionality](scsm/management-packs.md)
 #### [Use connectors to import data](sm/manage/admin-using-connectors-to-import-data-into-system-center-2016-service-manager.md)
 ##### [Import data from Active Directory Domain Services](sm/manage/admin-importing-data-from-active-directory-domain-services.md)
 ##### [Import data and alerts from Operations Manager](sm/manage/admin-importing-data-and-alerts-from-system-center-operations-manager.md)
