@@ -703,7 +703,7 @@
 ### [Day-to-day tasks in Service Manager](scsm/day-to-day-tasks.md)
 #### [Search for information](scsm/search-information.md)
 #### [Manage incidents and problems](scsm/incidents-problems.md)
-#### [Manage changes and activities](sm/manage/ops-managing-changes-and-activities-in-system-center-2016-service-manager.md)
+#### [Manage changes and activities](scsm/changes-activities.md)
 #### [Manage service requests](sm/manage/ops-managing-service-requests-in-system-center-2016-service-manager.md)
 #### [Manage release records](sm/manage/ops-managing-release-records-in-system-center-2016-service-manager.md)
 #### [Data warehouse reporting and analytics](sm/manage/ops-using-data-warehouse-reporting-and-analytics-in-system-center-2016-service-manager.md)
