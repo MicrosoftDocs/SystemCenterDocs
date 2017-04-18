@@ -40,7 +40,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
  Promoting an additional management server involves the following procedures:  
 
-1.  Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](../sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
+1.  Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](ms-disaster-recovery.md) in this guide.  
 
 2.  When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](deploy-additional-ms.md).  
 
@@ -48,7 +48,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
 
-2.  Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](../sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
+2.  Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](ms-disaster-recovery.md) in this guide.  
 
 3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
@@ -57,7 +57,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
 
-2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](../sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
+2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](ms-disaster-recovery.md) in this guide.  
 
 3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
