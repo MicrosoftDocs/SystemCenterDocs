@@ -18,7 +18,7 @@ ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1
 
 You can use the following procedure, for example, to inventory all the computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in System Center Configuration Manager.
 
-In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).
+In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](../sm/manage/admin-about-importing-data-from-system-center-configuration-manager.md).
 
 You can use desired configuration management in Configuration Manager to monitor software to ensure that it is compliant with defined values. For example, you can monitor software versions, security settings, and software updates. The configurations that you want to monitor are added as Configuration Manager configuration items to configuration baselines so that they can be evaluated for compliance as a group.
 
@@ -75,7 +75,7 @@ You can use the following procedures to configure incident management to automat
 
 6.  Verify that the correct configuration baseline and Configuration Manager configuration items are listed.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![PowerShell symbol](./media/dcm-incidents/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225354).
 
