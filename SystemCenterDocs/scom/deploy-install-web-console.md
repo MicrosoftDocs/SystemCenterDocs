@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center 2016 - Operations Manager](../../scom/plan-system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
+You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -38,7 +38,7 @@ If you plan to use network load balancing with Application Diagnostics console a
 > A Network Load Balancer is not supported for the Operations Manager web console server.
 
 > [!IMPORTANT]
-> The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) does not have Secure Sockets Layer (SSL) configured, you are advised to configure it manually. For more information about security see [Data Encryption for Web console and Reporting server Connections](../../scom/plan-data-encryption-server-roles.md)
+> The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) does not have Secure Sockets Layer (SSL) configured, you are advised to configure it manually. For more information about security see [Data Encryption for Web console and Reporting server Connections](plan-data-encryption-server-roles.md)
 
 If the web console does not have sufficient access to the operational database or the data warehouse database, you will receive a warning during the web console configuration step. You can proceed with Setup, but the web console will not be configured correctly for .NET Application monitoring. To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and data warehouse database:
 

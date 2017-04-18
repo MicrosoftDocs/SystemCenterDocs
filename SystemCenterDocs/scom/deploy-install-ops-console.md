@@ -18,7 +18,7 @@ ms.topic: article
 
 After you install System Center 2016 - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 
-You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center 2016 - Operations Manager](../../scom/plan-system-requirements.md)
+You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md)
 
 #### To install the Operations console
 
