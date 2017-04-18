@@ -24,7 +24,7 @@ The success or failure of a workflow is retained by Service Manager, and it is a
 
 ## Configure incident workflows
 
-You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](../sm/manage/admin-how-to-set-incident-priority.md) and To create a new printer-related incident template in [How to Create Incident Templates](../sm/manage/admin-how-to-create-incident-templates.md).
+You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](../sm/manage/admin-how-to-set-incident-priority.md) and To create a new printer-related incident template in [How to Create Incident Templates](admin-how-to-create-incident-templates.md).
 
 ### To configure an incident workflow
 
