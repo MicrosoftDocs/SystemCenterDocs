@@ -26,7 +26,7 @@ Before you can allocate provisioned storage to hosts and cluster, it should be d
 
 1. Discover and classify storage:
     - [Add and classify block storage devices](storage-device.md). Learn about [classification](storage-classification.md).
-    - [Add file storage](manage/manage-storage-file.md#add-a-file-share-to-the-vmm-fabric)
+    - [Add file storage](storage-file.md#add-a-file-share-to-the-vmm-fabric)
 2. [Allocate block storage to host groups](storage-host-group.md). You can allocate an entire storage pool, or a specific logical unit (LUN).
 3. Make sure you've completed these steps before you allocate storage to hosts:
     - **MPIO**: If you're using fiber channel or iSCSI storage, the Multipath I/O (MPIO) feature must be enabled on each host.

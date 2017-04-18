@@ -62,7 +62,7 @@ The general process for setting up file storage in the VMM fabric is as follows:
 5. **Use the storage**: After storage is allocated to a host group you can use the storage for a specific host or cluster. When you add a host or cluster to a host group the host and cluster can use storage associated with the group.
 6. **Decommission storage**: VMM can decommission the storage it manages.
 
-[Learn more](manage/manage-storage-file.md) about setting up file storage in VMM.
+[Learn more](storage-file.md) about setting up file storage in VMM.
 
 ## Storage classifications
 
