@@ -313,7 +313,7 @@
 #######[Add vm instance](orchestrator/add-vm-instance.md)
 #######[Capture vm instance](orchestrator/capture-vm-instance.md)
 #######[Change deployment configuration](orchestrator/change-deployment-configuration.md)
-#######[Change deployment os](orch/manage/change-deployment-os.md)
+#######[Change deployment os](orchestrator/change-deployment-os.md)
 #######[Check cloud service name availability](orch/manage/check-cloud-service-name-availability.md)
 #######[Copy blob](orch/manage/copy-blob.md)
 #######[Create affinity group](orch/manage/create-affinity-group.md)

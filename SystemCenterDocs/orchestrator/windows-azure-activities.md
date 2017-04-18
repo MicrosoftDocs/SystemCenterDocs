@@ -132,7 +132,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Change Deployment Configuration](change-deployment-configuration.md)
 
-[Change Deployment OS](../orch/manage/change-deployment-os.md)
+[Change Deployment OS](change-deployment-os.md)
 
 [Check Cloud Service Name Availability](../orch/manage/check-cloud-service-name-availability.md)
 
