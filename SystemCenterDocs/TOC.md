@@ -721,7 +721,7 @@
 ### [Disaster recovery for System Center 2016 - Service Manager](scsm/disaster-recovery.md)
 #### [Prepare for Service Manager disaster recovery](scsm/prepare-disaster-recovery.md)
 #### [Implement Service Manager disaster recovery](scsm/implement-disaster-recovery.md)
-### [Author with Service Manager](sm/manage/author-authoring-for-system-center-2016-service-manager.md)
+### [Author with Service Manager](scsm/author-with-sm.md)
 #### [Management packs in the Authoring Tool](sm/manage/author-management-packs-working-with-management-packs.md)
 ##### [Work with management packs in the Service Manager console](sm/manage/author-working-with-management-packs-in-the-service-manager-console.md)
 ##### [Work with management packs in the Service Manager Authoring Tool](sm/manage/author-working-with-management-packs-in-the-authoring-tool.md)

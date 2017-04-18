@@ -59,7 +59,7 @@ In general, we recommend that you use the Service Manager console or the Authori
 
 #### Service Manager console  
 
-The **Administration** pane and the **Authoring** pane in the Service Manager console provide for limited ad hoc customization of Service Manager features. When you customize Service Manager features in the Service Manager console, the customizations are stored in new or existing unsealed management packs and in the Service Manager database. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](author-management-packs-working-with-management-packs.md)).  
+The **Administration** pane and the **Authoring** pane in the Service Manager console provide for limited ad hoc customization of Service Manager features. When you customize Service Manager features in the Service Manager console, the customizations are stored in new or existing unsealed management packs and in the Service Manager database. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](../sm/manage/author-management-packs-working-with-management-packs.md)).  
 
 The Service Manager console provides for the following customizations:  
 
@@ -177,7 +177,7 @@ The **Activities Toolbox** pane displays activities that you can use as building
 
 #### Upgrade management packs to work with the Authoring Tool
 
-During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](author-management-packs-working-with-management-packs.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to System Center 2016 - Service Manager.  
+During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](../sm/manage/author-management-packs-working-with-management-packs.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to System Center 2016 - Service Manager.  
 
 ##### Forms  
 The placement of a control in a form is determined by its top, bottom, left, and right margins in relation to either its parent control or to the form itself. In a customized form, this method can cause controls to be adjusted improperly when the margins of the parent control or of the form are modified.  
