@@ -292,7 +292,7 @@
 #######[Move Computer](orchestrator/move-computer.md)
 #######[Move Group](orchestrator/move-group.md)
 #######[Move User](orchestrator/move-user.md)
-#######[Remove Computer From Group](orch/manage/remove-computer-from-group.md)
+#######[Remove Computer From Group](orchestrator/remove-computer-from-group.md)
 #######[Remove Group From Group](orch/manage/remove-group-from-group.md)
 #######[Remove User From Group](orch/manage/remove-user-from-group.md)
 #######[Rename Group](orch/manage/rename-group.md)
