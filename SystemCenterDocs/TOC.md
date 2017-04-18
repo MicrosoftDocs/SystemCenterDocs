@@ -542,7 +542,7 @@
 #######[Get user role quota](orchestrator/get-user-role-quota-in-system-center-2016.md)
 #######[Get user role](orchestrator/get-user-role.md)
 #######[Get vm host](orchestrator/get-vm-host-in-system-center-2016.md)
-#######[Get vm network](orch/manage/get-vm-network-in-system-center-2016.md)
+#######[Get vm network](orchestrator/get-vm-network-in-system-center-2016.md)
 #######[Get vm subnet](orch/manage/get-vm-subnet-in-system-center-2016.md)
 #######[Get vm](orch/manage/get-vm.md)
 #######[Ganage checkpoint](orch/manage/manage-checkpoint.md)
