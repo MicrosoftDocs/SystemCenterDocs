@@ -593,7 +593,7 @@
 #######[Move vm activity](orchestrator/move-vm-activity.md)
 #######[Reconfigure vm activity](orchestrator/reconfigure-vm-activity.md)
 #######[Reset vm activity](orchestrator/reset-vm-activity.md)
-#######[Revert vm snapshot activity](orch/manage/revert-vm-snapshot-activity.md)
+#######[Revert vm snapshot activity](orchestrator/revert-vm-snapshot-activity.md)
 #######[Set vm cd or](orch/manage/set-vm-cd-or-dvd-to-iso-image-activity.md)
 #######[Set vm networks activity](orch/manage/set-vm-networks-activity.md)
 #######[Start vm activity](orch/manage/start-vm-activity.md)
