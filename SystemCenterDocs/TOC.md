@@ -751,7 +751,7 @@
 ### [Glossary for System Center 2016 - Service Manager](scsm/glossary.md)
 ## [Virtual Machine Manager (VMM)](VMM/vmm.md)
 ### [Get started](spf/overview.md)
-#### [What's new in VMM](vmm/get-started/get-started-whats-new.md)
+#### [What's new in VMM](vmm/whats-new.md)
 ### [Plan](vmm/plan/plan-overview.md)
 #### [System requirements](vmm/plan/system-reqs.md)
 #### [Plan VMM installation](vmm/plan/plan-install.md)

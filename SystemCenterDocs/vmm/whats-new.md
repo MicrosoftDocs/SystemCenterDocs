@@ -22,27 +22,27 @@ This article describes what's new in System Center 2016 - Virtual Machine Manage
 ## Compute
 
 ### Full lifecycle management of Nano Server-based hosts and VMs
-You can provision and manage Nano Server-based hosts and virtual machines in the VMM fabric. [Learn more](../manage/manage-compute-add-nano-hyper-v.md).
+You can provision and manage Nano Server-based hosts and virtual machines in the VMM fabric. [Learn more](manage/manage-compute-add-nano-hyper-v.md).
 
 ### Rolling upgrade of a Windows Server 2012 R2 host clusters
 
-You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM fabric from Windows Server 2012 R2 to Windows Server 2016, with no downtime for the host workloads. VMM orchestrates the entire workflow. It drains the node, removes it from the cluster, reinstalls the operating system, and adds it back into the cluster. Learn more about performing rolling upgrades for [Hyper-V clusters](../manage/manage-compute-rolling-upgrade-hyper-v.md), and [SOFS clusters](../manage/manage-sofs-rolling-upgrade.md).
+You can now upgrade Hyper-V and scale-out file server (SOFS) clusters in the VMM fabric from Windows Server 2012 R2 to Windows Server 2016, with no downtime for the host workloads. VMM orchestrates the entire workflow. It drains the node, removes it from the cluster, reinstalls the operating system, and adds it back into the cluster. Learn more about performing rolling upgrades for [Hyper-V clusters](manage/manage-compute-rolling-upgrade-hyper-v.md), and [SOFS clusters](manage/manage-sofs-rolling-upgrade.md).
 
 ### Creating Hyper-V & SOFS clusters
 
 There's a streamlined workflow for creating Hyper-V and SOFS clusters:
 
-* **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare metal machines is now a single step. [Learn more](../manage/manage-compute-bare-metal-hyper-v.md)
+* **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare metal machines is now a single step. [Learn more](manage/manage-compute-bare-metal-hyper-v.md)
 
-* **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](../manage/manage-compute-bare-metal-hyper-v.md) or [SOFS](../manage/manage-sofs-bare-metal.md) cluster.
+* **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](manage/manage-compute-bare-metal-hyper-v.md) or [SOFS](manage/manage-sofs-bare-metal.md) cluster.
 
 ### New operations for running VMs
 
-You can now increase/decrease static memory and add/remove virtual network adapter for virtual machines that are running. [Learn more](../manage/manage-vm-settings.md).
+You can now increase/decrease static memory and add/remove virtual network adapter for virtual machines that are running. [Learn more](manage/manage-vm-settings.md).
 
 ### Production checkpoints
 
-You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent (compared to standard checkpoints based on saved state technology that aren't. [Learn more](../manage/manage-vm-settings.md).
+You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent (compared to standard checkpoints based on saved state technology that aren't. [Learn more](manage/manage-vm-settings.md).
 
 ### Server App-V
 
@@ -52,12 +52,12 @@ The Server App-V application in service templates is no longer available in VMM 
 
 ### Deploy and manage storage clusters with Storage Spaces Direct (S2D)
 
-[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](../manage/manage-storage-spaces-direct-vmm.md).
+[Storage Spaces Direct in Windows Server 2016](https://technet.microsoft.com/library/mt126109.aspx) enables you to build highly available storage systems on Windows Server. You can use VMM to create a Scale-Out File Server running Windows Server 2016, and configure it with Storage Spaces Direct. After it's configure you can create storage pools and file shares on it. [Learn more](manage/manage-storage-spaces-direct-vmm.md).
 
 
 ### Storage Replica
 
-In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](../manage/manage-storage-replica.md)
+In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](manage/manage-storage-replica.md)
 
 ### Storage Quality of Service (QoS)
 
@@ -76,7 +76,7 @@ In VMM 2016 you can deploy the entire SDN stack using VMM service templates.
 
 ### Network traffic isolation and filtering
 
-You can limit and segregate network traffic by specifying port ACLs on VM networks, virtual subnets, network interfaces, or on an entire VMM stamp using Network Controller and PowerShell. [Learn more](../manage/manage-compute-extended-port-acls.md).
+You can limit and segregate network traffic by specifying port ACLs on VM networks, virtual subnets, network interfaces, or on an entire VMM stamp using Network Controller and PowerShell. [Learn more](manage/manage-compute-extended-port-acls.md).
 
 ### Virtual network adapter naming
 
