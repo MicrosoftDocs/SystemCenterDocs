@@ -145,7 +145,7 @@ Use the following procedures to set the priority of all standard change requests
 Before you can complete the steps in the following procedures, you have to create the following templates:
 
 -   **Set Standard Change Requests to Low Priority**: For more information, see the procedure "To create a priority-modifying template" in [How to Create Change Request Templates](create-change-req-template.md).
--   **New Standard Change Request Received Template**: For more information, see the procedure "To create a notification template for change requests" in [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).
+-   **New Standard Change Request Received Template**: For more information, see the procedure "To create a notification template for change requests" in [How to Create Notification Templates](create-notification-templates.md).
 
 ### To create a workflow to set all standard change requests to low
 
@@ -185,7 +185,7 @@ Use the following procedures to automatically assign all unassigned manual activ
 Before you can complete the steps in the following procedures, you have to create the following templates:
 
 -   **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](create-manual-activity.md).
--   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).
+-   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](create-notification-templates.md).
 
 The new workflow you are about to create applies the **Set *named user* as the Activity Implementer** template, which assigns the named user all the activities that do not have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
 

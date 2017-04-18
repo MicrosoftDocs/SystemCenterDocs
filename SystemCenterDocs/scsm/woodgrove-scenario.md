@@ -261,7 +261,7 @@ In this step of the Woodgrove Bank customization scenario, Ken creates a templat
 
 If System Center - Service Manager is configured with a Simple Mail Transfer Protocol \(SMTP\) server, as part of the Woodgrove Bank customization scenario, Ken can configure an email notification that will be sent to him when a new computer is added to the compliance group. This is an optional step.  
 
-The following procedure provides only the high\-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).  
+The following procedure provides only the high\-level steps for creating the **Computer Added to AppLocker Policy Notification Template** email notification template and subscription in the Service Manager console. For the complete procedure for creating a notification template, see [How to Create Notification Templates](create-notification-templates.md).  
 
 ### To create an email notification template and subscription  
 

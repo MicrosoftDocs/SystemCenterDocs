@@ -230,7 +230,7 @@ You can send notifications to analysts who are responsible for incidents when ea
 7.  On the **Additional Criteria** page, complete these steps:
     1.  In the **Changed From** tab, set **[Service Level Instance Time Information] Status Does Not Equal Warning**.
     2.  On the **Changed To** tab, set **[Service Level Instance Time Information] Status Equals Warning**, and then click **Next**.
-8.  On the **Template** page, select an email template or create a new one targeted at the Service Level Instance Time Information class. For more information about creating email notification templates, see [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md). Click **Next**.
+8.  On the **Template** page, select an email template or create a new one targeted at the Service Level Instance Time Information class. For more information about creating email notification templates, see [How to Create Notification Templates](create-notification-templates.md). Click **Next**.
 9. On the **Recipient** page, click **Add** and select the groups and users to send the notification to, and then click **Next**.
 10. On the **Related Recipient** page, click **Add**, select **[WorkItem]WorkItem has Service Level Instance Information** in the left box, and then select **Primary Owner** and **Assigned To User** in the right box, and then click **Next**.
 11. On the **Summary** page, review the information, and then click **Create**.
