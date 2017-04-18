@@ -60,7 +60,7 @@
 #### [Planning a management group design](scom/plan-mgmt-group-design.md)
 #### [SQL Server design considerations](scom/plan-sqlserver-design.md)
 #### [Resource pool design considerations](scom/plan-resource-pool-design.md)
-#### [Design integration with other enterprise management products](om/plan/planning-integration-with-other-management-solutions.md)
+#### [Design integration with other enterprise management products](scom/plan-thirdparty-integration.md)
 #### [Designing for high availability and disaster recovery](om/plan/planning-hadr-design.md)
 #### [Agent deployment planning](om/plan/planning-agents.md)
 #### [Security](om/plan/plan-security-summary.md)

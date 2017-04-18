@@ -32,11 +32,11 @@ Operations Manager also integrates with [Microsoft Operations Management Suite](
 
 The ports and communication between Operations Manager and the other management products depends on the method of integration used.  If you are using System Center 2016 - Orchestrator,   the Orchestrator runbook server connects to the Operations Manager management server over TCP port 5724.  This is a one-way directed communication.  
 
-![Integration with Orchestrator](../media/om2016-integration-orchestrator.png)
+![Integration with Orchestrator](./media/plan-thirdparty-integration/om2016-integration-orchestrator.png)
 
 If you are using a connector provided by the vendor, please review their documentation in order to understand what ports and which direction the traffic flows.      
 
-![Integration with third-party](../media/om2016-integration-third-party.png)
+![Integration with third-party](./media/plan-thirdparty-integration/om2016-integration-third-party.png)
 
 ## Design considerations
 

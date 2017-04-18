@@ -38,7 +38,7 @@ A management group that you have deployed in your environment can integrate with
 
 ![OM Integration with Microsoft OMS](./media/plan-mgmt-group-design/om2016-integration-oms.png)
 
-Integration with Operations Manager extends to other products such as BMC Remedy, IBM Netcool or other enterprise management solutions used by your organization.  For more information about planning for interoperability with these solutions, check out [Integration with other management solutions](../om/plan/planning-integration-with-other-management-solutions.md).
+Integration with Operations Manager extends to other products such as BMC Remedy, IBM Netcool or other enterprise management solutions used by your organization.  For more information about planning for interoperability with these solutions, check out [Integration with other management solutions](plan-thirdparty-integration.md).
 
 ## Management group components
 

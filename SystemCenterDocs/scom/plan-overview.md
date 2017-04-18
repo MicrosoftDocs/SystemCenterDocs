@@ -53,7 +53,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     Describes the supported and most appropriate high availability and disaster recovery options for your Operations Manager management group to maintain minimum functionality and continued operational insight of the IT services monitored.  
 
-- [Integration with other enterprise management products](../om/plan/planning-integration-with-other-management-solutions.md)
+- [Integration with other enterprise management products](plan-thirdparty-integration.md)
 
     Integration with other ITSM management, monitoring solutions, or custom solutions that extend Operations Manager to support your service operations framework are discussed with design recommendations.
 
