@@ -371,7 +371,7 @@
 ###### [Exchange Administrator Activities](orchestrator/exchange-administrator-activities.md)
 #######[Create mailbox](orchestrator/create-mailbox.md)
 #######[Create move request](orchestrator/create-move-request.md)
-#######[Create remote mailbox hybrid](orch/manage/create-remote-mailbox-hybrid.md)
+#######[Create remote mailbox hybrid](orchestrator/create-remote-mailbox-hybrid.md)
 #######[Disable mailbox](orch/manage/disable-mailbox.md)
 #######[Disable remote mailbox hybrid](orch/manage/disable-remote-mailbox-hybrid.md)
 #######[Enable mailbox](orch/manage/enable-mailbox.md)
