@@ -52,7 +52,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [Build a simple monitoring dashboard using the Visio Web Part](manage-visio-addin-create-dashboard.md)  
   
--   [Publish a Visio diagram to SharePoint Server](../om/manage/publish-a-visio-diagram-to-sharepoint.md)  
+-   [Publish a Visio diagram to SharePoint Server](manage-visio-addin-publish-sharepoint.md)  
   
 -   [Change the Way Health State is Represented in Visio](../om/manage/change-the-way-health-state-is-represented-in-visio.md)  
   
