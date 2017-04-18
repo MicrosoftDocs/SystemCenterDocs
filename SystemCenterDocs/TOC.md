@@ -302,7 +302,7 @@
 #######[Update Computer](orchestrator/update-computer.md)
 #######[Update Group](orchestrator/update-group.md)
 #######[Update User](orchestrator/update-user.md)
-##### [Azure Integration Pack](orch/manage/windows-azure-integration-pack.md)
+##### [Azure Integration Pack](orchestrator/windows-azure-integration-pack.md)
 ###### [Azure Integration Pack Activities](orch/manage/windows-azure-activities.md)
 #######[Add management certificate](orch/manage/add-management-certificate.md)
 #######[Add OS image](orch/manage/add-OS-image.md)
