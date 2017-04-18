@@ -4,5 +4,5 @@
 ## [Orchestrator](orchestrator/index.md)
 ## [Service Manager](scsm/index.md)
 ## [Service Management Automation](sma/index.md)
-## [Service Provider Foundation](spf/index.md)
+## [Service Provider Foundation](spf/toc.md)
 ## [Virtual Machine Manager](vmm/index.md)
