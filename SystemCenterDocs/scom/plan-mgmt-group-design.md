@@ -22,23 +22,23 @@ A management group is identified by a single operational database, one or more m
 
 The simplest Operations Manager implementation is a single management group.  Each additional group requires at least its own operational database and management server.  Each group must also be separately maintained with its own configuration settings, management packs, and integration with other monitoring and ITSM solutions.  
 
-![Example MG Single Server](../media/om2016-simple-mg-config.png)
+![Example MG Single Server](./media/plan-mgmt-group-design/om2016-simple-mg-config.png)
 
 
 The distributed management group implementation will form the foundation of 99 percent of Operations Manager deployments. It allows for the distribution of features and services across multiple servers to allow for scalability and redundancy for some of those features. It can include all Operations Manager server roles and supports the monitoring of devices across trust boundaries through the use of the gateway server.
 
 The following diagram presents one possible option for the distributed management group topology.
 
-![Example OM Distributed MG](../media/om2016-distributed-design.png)
+![Example OM Distributed MG](./media/plan-mgmt-group-design/om2016-distributed-design.png)
 
 > [!NOTE]
 > There is no direct communication between the Operations console and the databases. All communication is directed to a specific management server over port TCP 5724, and then to the database servers using OLE DB on TCP 1433 or a user-defined port specified by the SQL administrator during setup of the SQL Server database engine instance. However, there is direct communication between an Application Diagnostics console (co-located with the Web console) and the SQL Server hosting the operational and data warehouse databases.
 
 A management group that you have deployed in your environment can integrate with [Microsoft Operations Management Suite (OMS)](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview), and by utilizing Log Analytics, you can further correlate, visualize, and act on performance, events and alerts.  This provides you with increased visibility by being able to perform custom searches across the entire dataset in order to correlate data between systems and applications, hosted on-premise or in the cloud.    
 
-![OM Integration with Microsoft OMS](../media/om2016-integration-oms.png)
+![OM Integration with Microsoft OMS](./media/plan-mgmt-group-design/om2016-integration-oms.png)
 
-Integration with Operations Manager extends to other products such as BMC Remedy, IBM Netcool or other enterprise management solutions used by your organization.  For more information about planning for interoperability with these solutions, check out [Integration with other management solutions](planning-integration-with-other-management-solutions.md).
+Integration with Operations Manager extends to other products such as BMC Remedy, IBM Netcool or other enterprise management solutions used by your organization.  For more information about planning for interoperability with these solutions, check out [Integration with other management solutions](../om/plan/planning-integration-with-other-management-solutions.md).
 
 ## Management group components
 
@@ -49,7 +49,7 @@ In System Center 2012 R2 – Operations Manager, the root management server role
 
 The RMS is no longer a single point of failure as all management servers host the services previously hosted only by the RMS.  Roles are distributed to all the management servers.  If one management server becomes unavailable, its responsibilities are automatically redistributed.  An RMS emulator role provides for backwards compatibility for management packs targeting the RMS.  If you do not have any management packs that previously targeted the RMS, you will not need to make use of the RMS Emulator.
 
-The management group can contain multiple management servers to provide additional capacity and continuous availability.  When two or more management servers are added to a management group, the management servers automatically become part of the three default resource pools and work is spread across the members of the pool.  For custom defined resource pools, members are manually added.  When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload.  When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool.  Review [Resource pool design considerations](planning-resource-pool-design.md) to learn more about how they function and recommendations that influence your design plan.  
+The management group can contain multiple management servers to provide additional capacity and continuous availability.  When two or more management servers are added to a management group, the management servers automatically become part of the three default resource pools and work is spread across the members of the pool.  For custom defined resource pools, members are manually added.  When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload.  When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool.  Review [Resource pool design considerations](../om/plan/planning-resource-pool-design.md) to learn more about how they function and recommendations that influence your design plan.  
 
 If a management server is unavailable for any reason, by default agents that rely on it will automatically failover to another management server.  When selecting the number and placement of management servers, this failover ability should be considered if high availability is a requirement.
 
@@ -67,9 +67,9 @@ Operations Manager requires mutual authentication be performed between agents an
 
 Gateway servers are used when a firewall separates the agents from the management servers or when the agents are in a separate, un-trusted domain.  The gateway server acts as a proxy between the agents and the management server.  Without the gateway server, the agents could still perform certificate authentication with a management server, but a X.509 certificate would need to be issued and installed on each agent, and each would require access to the management server through the firewall.  If the agents are in the same domain as the gateway server or if they are in a trusted domain, they may use Kerberos authentication.  In this case, only the gateway server and the connected management servers will require certificates.  This includes monitoring of virtual machines running in Microsoft Azure Infrastructure as a Service (IaaS), with Operations Manager (i.e. hybrid cloud monitoring) that are not joined to the same trusted realm as the roles supporting the Operations Manager management group, or you have deployed Operations Manager in Azure IaaS (a virtual machine with SQL Server hosting the operational databases and one or more virtual machines hosting the management server role) and are monitoring un-trusted on-premise workloads.  
 
-The following presents an example Operations Manager deployment monitoring Azure IaaS resources.<br>![OpsMgr Monitoring Azure Resources](../media/om2016-azure-iaas-simple-monitoring-config.png)
+The following presents an example Operations Manager deployment monitoring Azure IaaS resources.<br>![OpsMgr Monitoring Azure Resources](./media/plan-mgmt-group-design/om2016-azure-iaas-simple-monitoring-config.png)
 
-The following is an example Operations Manager deployment hosted in Azure IaaS.<br>![OpsMgr Hosted in Azure Iaas](../media/om2016-azure-iaas-simple-mg-config.png)<br>
+The following is an example Operations Manager deployment hosted in Azure IaaS.<br>![OpsMgr Hosted in Azure Iaas](./media/plan-mgmt-group-design/om2016-azure-iaas-simple-mg-config.png)<br>
 
 Typically gateway servers are not be used for managing bandwidth utilization because the overall volume of data sent from agents to a management server is similar whether a gateway server is used or not. The intended purpose of a gateway server is to reduce the effort required in managing certificates for agents in un-trusted domains and to reduce the number of communication paths that must be allowed through firewalls.  
 
@@ -150,7 +150,7 @@ Before you deploy System Center 2016 Operations Manager in a production environm
 
 ## Connected management groups
 
-Many enterprises with servers in multiple geographical locations require central monitoring of those servers.  The Connected management group configuration, illustrated in the image below, is a set of workflow processes that are designed to create a hierarchical systems management infrastructure.<br><br> ![Connected management group example](../media/om2016-connected-management-groups.png)
+Many enterprises with servers in multiple geographical locations require central monitoring of those servers.  The Connected management group configuration, illustrated in the image below, is a set of workflow processes that are designed to create a hierarchical systems management infrastructure.<br><br> ![Connected management group example](./media/plan-mgmt-group-design/om2016-connected-management-groups.png)
 
 This configuration can be used to achieve centralized monitoring.  It is designed to support the viewing of alerts and monitoring data, as well as to initiate tasks against a managed object of a connected management group.
 
@@ -159,7 +159,7 @@ By connecting Operations Manager 2016 management groups, centralized monitoring 
 - Monitoring of a larger number of manage objects than is possible with a single management group. 
 - Isolation of monitoring activity according to logical business units, such as “Marketing,” or physical locations, such as Rome. 
 
-When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group.  In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console.  In addition, you can run tasks on the monitored computers of the connected management groups.  To learn how to connect management groups, see [Connecting management groups in Operations Manager](../manage/connecting-management-groups-in-operations-manager.md). 
+When you connect management groups, you are not deploying any new servers; rather, you are allowing the local management group to have access to the alerts and discovery information that is in a connected management group.  In this way, you can view and interact with all the alerts and other monitoring data from multiple management groups in a single Operations console.  In addition, you can run tasks on the monitored computers of the connected management groups.  To learn how to connect management groups, see [Connecting management groups in Operations Manager](../om/manage/connecting-management-groups-in-operations-manager.md). 
 
 ### Installed languages
 

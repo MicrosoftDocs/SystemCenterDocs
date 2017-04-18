@@ -57,7 +57,7 @@
 ### [Plan](scom/plan-overview.md)
 #### [System Requirements](scom/plan-system-requirements.md)
 #### [Supported Versions of UNIX and Linux](scom/plan-supported-crossplat-os.md)
-#### [Planning a management group design](om/plan/planning-a-management-group-design.md)
+#### [Planning a management group design](scom/plan-mgmt-group-design.md)
 #### [SQL Server design considerations](om/plan/planning-sqlserver-design.md)
 #### [Resource pool design considerations](om/plan/planning-resource-pool-design.md)
 #### [Design integration with other enterprise management products](om/plan/planning-integration-with-other-management-solutions.md)

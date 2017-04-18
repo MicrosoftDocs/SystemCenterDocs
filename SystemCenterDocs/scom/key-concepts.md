@@ -55,7 +55,7 @@ The role of the management server is to administer the management group configur
 
 The management group can contain multiple management servers to provide additional capacity and continuous availability. When two or more management servers are added to a management group, the management servers become part of a *resource pool* and work is spread across the members of the pool. When a member of the resource pool fails, other members in the resource pool will pick up that member’s workload. When a new management server is added, the new management server automatically picks up some of the work from existing members in the resource pool. All members in the resource pool will manage a distinct set of remote objects; at any given time, two members in the same pool will not manage the same object at the same time.
 
-A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Planning a management group design](../om/plan/planning-a-management-group-design.md#gateway-server).
+A specialized type of management server is the *gateway server*. A gateway server enables the monitoring of computers in untrusted domains. For more information, see [Planning a management group design](plan-mgmt-group-design.md#gateway-server).
 
 ### Agents
 
