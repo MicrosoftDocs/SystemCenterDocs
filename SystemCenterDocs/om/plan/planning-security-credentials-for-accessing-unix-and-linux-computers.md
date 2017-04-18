@@ -98,7 +98,7 @@ When you specify a Monitoring Run As Account Type, you must specify a user name 
 
 -   Specify a user name and a key. You can include an optional passphrase.
 
-After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../manage/how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md)
+After you created the Run As accounts, you must edit the UNIX and Linux profiles to associate them with the Run As accounts you created.  For detailed instructions, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../../scom/manage-security-config-crossplat-runas-profile.md)
 
 ## Important security considerations
 The Operations Manager Linux/UNIX agent uses the standard PAM (Pluggable Authentication Module) mechanism on the Linux or UNIX computer to authenticate the user name and password specified in the Action Profile and Privilege Profile.  Any user name with a password that PAM authenticates can perform monitoring functions, including running command lines and scripts that collect monitoring data.  Such monitoring functions are always performed in the context of that user name (unless sudo elevation is explicitly enabled for that user name), so the Operations Manager agent provides no more capability than if the user name were to login to the Linux/UNIX system.

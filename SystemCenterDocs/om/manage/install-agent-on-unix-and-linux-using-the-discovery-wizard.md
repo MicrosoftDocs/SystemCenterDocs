@@ -65,7 +65,7 @@ Before you run the wizard, gather the following information:
 
 9. On the **Computer Management** page, after the deployment process is completed, click **Done**.
 
-You must have, at a minimum, a UNIX/Linux Action Account profile configured with a Monitoring Run As Account to monitor the UNIX or Linux computer. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md).
+You must have, at a minimum, a UNIX/Linux Action Account profile configured with a Monitoring Run As Account to monitor the UNIX or Linux computer. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../../scom/manage-security-config-crossplat-runas-profile.md).
 
 > [!NOTE]
 > Solaris Zones are supported on Solaris 10 or newer versions. In monitoring a computer with Zones, each Zone is treated like a separate computer. You must install the agent on each computer that you want to monitor. Install the agent on the global zone first, because sparse zones share files with the global zone. If you try to install on a sparse zone first, the installation fails. For more information about troubleshooting, see [Operating System Issues](http://go.microsoft.com/fwlink/?LinkId=318149).

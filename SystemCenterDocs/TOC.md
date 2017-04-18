@@ -170,7 +170,7 @@
 ##### [Managing Run As Accounts and Profiles](scom/manage-security-maintain-runas-profiles.md)
 ###### [Distribution and targeting for Run As Accounts and Profiles](om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md)
 ###### [How to create a Run As Account and associate with a Profile](om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md)
-###### [How to configure Run As accounts and profiles for UNIX and Linux access](om/manage/how-to-configure-run-as-accounts-and-profiles-for-unix-and-linux-access.md)
+###### [How to configure Run As accounts and profiles for UNIX and Linux access](scom/manage-security-config-crossplat-runas-profile.md)
 ##### [Accessing UNIX and Linux computers](om/manage/accessing-unix-and-linux-computers-in-operations-manager.md)
 ###### [How to set credentials for accessing UNIX and Linux computers](om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md)
 ###### [How to configure sudu elevation and SSH keys](om/manage/how-to-configure-sudo-elevation-and-ssh-keys.md)
