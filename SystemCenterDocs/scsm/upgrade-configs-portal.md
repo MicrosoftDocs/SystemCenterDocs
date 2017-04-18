@@ -67,4 +67,4 @@ Installing the Self Service portal on the same computer as the primary managemen
 
 ## Next steps
 
-- Review [Set up a Service Manager 2016 lab environment with production data to prepare for upgrade](../sm/deploy/upgrade-setting-up-a-service-manager-2016-lab-environment-with-production-data.md).
+- Review [Set up a Service Manager 2016 lab environment with production data to prepare for upgrade](set-up-lab-with-production-data.md).
