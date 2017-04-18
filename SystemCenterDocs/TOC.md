@@ -652,7 +652,7 @@
 ##### [Copy customized workflow assembly files before you upgrade](scsm/copy-workflow-assembly.md)
 ##### [Disable Service Manager connectors in the production environment before you upgrade](scsm/disable-connectors.md)
 ##### [Disable email notifications in the production environment before you upgrade](scsm/disable-email-note.md)
-##### [Stop Service Manager services on the secondary management server before you upgrade](sm/deploy/upgrade-how-to-stop-service-manager-services-on-the-secondary-management-server.md)
+##### [Stop Service Manager services on the secondary management server before you upgrade](scsm/stop-services-secondary-ms.md)
 ##### [Back up the production Service Manager database for future recovery](sm/deploy/upgrade-how-to-back-up-the-production-service-manager-database.md)
 ##### [Enable Service Manager connectors in the production environment after you upgrade](sm/deploy/upgrade-how-to-enable-service-manager-connectors-in-the-production-environment.md)
 ##### [Enable email notifications in the production environment after you upgrade](sm/deploy/upgrade-how-to-enable-email-notifications-in-the-production-environment.md)
