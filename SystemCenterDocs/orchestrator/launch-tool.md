@@ -86,7 +86,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Monitor Message](monitor-message.md)
 
-[Own/Disown Message](../orch/manage/own-or-disown-message.md)
+[Own/Disown Message](own-or-disown-message.md)
 
 [Set Custom Attribute](../orch/manage/set-custom-attribute.md)
 

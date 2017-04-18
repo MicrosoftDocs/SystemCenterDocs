@@ -64,7 +64,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Monitor Message](../../orchestrator/monitor-message.md)
 
-[Own/Disown Message](own-or-disown-message.md)
+[Own/Disown Message](../../orchestrator/own-or-disown-message.md)
 
 [Update Annotation](update-annotation.md)
 
