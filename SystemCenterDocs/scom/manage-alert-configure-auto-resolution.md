@@ -36,7 +36,7 @@ In System Center 2016 - Operations Manager, alerts are resolved automatically af
   
 ## Next steps
  
--  To get better visibility with the alerts being generated in your environment and determine which are candidates for additional configuration to reduce alert noise and improve alert accuracy, see [Data-driven Alert Management](../om/manage/data-driven-alert-management.md) from the Operations console.   
+-  To get better visibility with the alerts being generated in your environment and determine which are candidates for additional configuration to reduce alert noise and improve alert accuracy, see [Data-driven Alert Management](manage-alert-data-driven-management.md) from the Operations console.   
  
 - To understand how alerts are generated for monitored objects in your management group, see [How an Alert is Produced](manage-alert-generation-overview.md).
  

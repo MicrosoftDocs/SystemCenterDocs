@@ -23,25 +23,25 @@ In the System Center 2016 - Operations Manager Operations console, the **Tasks**
   
 Click an alert or object to see tasks for that alert or object. Click a task to run the task.  
   
-![Example of tasks](../media/om2016-tasks-pane.png)  
+![Example of tasks](./media/manage-running-tasks/om2016-tasks-pane.png)  
   
 In the example above, if you click the task **Display Local Users**, you see a **Run Task** dialog box:  
   
-![Example of a run tasks dialog box](../media/om2016-task-run-properties.png)  
+![Example of a run tasks dialog box](./media/manage-running-tasks/om2016-task-run-properties.png)  
   
 Tasks use the default action account, unless you specify other credentials in this dialog box. Tasks can also be configured by a management pack author to use a specific Run As profile.  
   
 Generally, you should accept the defaults and click **Run**. You will then see a **Task Status** window:  
   
-![Example of a task status window](../media/om2016-task-results.png)  
+![Example of a task status window](./media/manage-running-tasks/om2016-task-results.png)  
   
 In this instance, the task completed successfully. **Task Output** provides you with the results of the task, in this case it will return all of the user accounts defined on the server.
   
 ## Next steps
 
-- To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md). 
+- To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](../om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md). 
 
-- Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](Creating-and-Managing-Groups.md).    
+- Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](../../z-harvest-om/om/manage/creating-and-managing-groups.md).    
 
-- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](Using-Operations-Manager-Shell.md).  
+- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](../om/manage/using-operations-manager-shell.md).  
   

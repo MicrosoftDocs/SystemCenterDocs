@@ -36,7 +36,7 @@ Some of the purposes for using groups are:
   
 Using the Operations console in the **Authoring** workspace, you can only create instance groups. To create a computer group, you must use the Authoring console or work directly in the XML of a management pack.  The following image shows the display of groups in the Operations console. 
 
-![Example of Groups Available in Operations Manager](../media/om2016-groups-list.png)  
+![Example of Groups Available in Operations Manager](./media/manage-create-manage-groups/om2016-groups-list.png)  
 
 Computer groups only contain computers. Instance groups can contain all object types, such as an instance of a health service or an instance of a SQL database. Both computer groups and instance groups can contain other computer and instance groups. Another way to view the difference between the group types is:  
   
@@ -48,7 +48,7 @@ To create a group based on a hosting relationship, such as all computers that ar
 
 The most common objects you will place in your groups are **Windows Computer** objects. The most common way to dynamically assign computers to the groups is by using a *property* of the **Windows Computer** class. For example, **Organizational Unit** is a property of the **Windows Computer** class, so you can create a group that makes all computers in a specific organizational unit members of the same group. The following image shows the properties of an object in the **Windows Computer** class, which you can view in the details pane of the **Monitoring** workspace by selecting the **Windows Computers** state view.  
   
-![Properties of a Windows computer object](../media/om2016-windows-computer-properties.png)  
+![Properties of a Windows computer object](./media/manage-create-manage-groups/om2016-windows-computer-properties.png)  
   
 You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of dynamic group queries and formulas, see [Operations Manager Dynamic Group Examples](http://go.microsoft.com/fwlink/p/?LinkId=242241).  
   

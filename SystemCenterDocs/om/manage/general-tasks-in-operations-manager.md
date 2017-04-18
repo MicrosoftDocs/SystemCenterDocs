@@ -20,9 +20,9 @@ ms.topic: article
 
 -   [How to suspend monitoring temporarily by using Maintenance Mode](How-to-Suspend-Monitoring-Temporarily-by-Using-Maintenance-Mode.md)  
 
--   [Creating and managing groups](creating-and-managing-groups.md)
+-   [Creating and managing groups](../../scom/manage-create-manage-groups.md)
 
--   [Running tasks in Operations Manager](running-tasks-in-operations-manager.md)
+-   [Running tasks in Operations Manager](../../scom/manage-running-tasks.md)
 
 -   [Connecting management groups](connecting-management-groups-in-operations-manager.md)
 
