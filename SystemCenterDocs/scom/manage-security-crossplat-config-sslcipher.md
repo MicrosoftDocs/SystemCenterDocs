@@ -1,4 +1,4 @@
----
+﻿---
 ms.assetid: 8b01d791-e5b9-475a-b789-6162e6120397
 title: Configuring SSL Ciphers
 description: This article describes how to configure SSL encrypted communication for UNIX and Linux computers and Operations Manager 2016.
@@ -73,9 +73,9 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)
 
-- To configure Operations Manager to authenticate with your UNIX and Linux computers, please see [How to Set Credentials for Accessing UNIX and Linux Computers](../../z-harvest-om/om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md)  
+- To configure Operations Manager to authenticate with your UNIX and Linux computers, please see [How to Set Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md)  
 
-- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](../../z-harvest-om/om/manage/how-to-configure-sudo-elevation-and-ssh-keys.md)  
+- To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](manage-security-create-crossplat-sudo-sshkeys.md)  
 
   
   

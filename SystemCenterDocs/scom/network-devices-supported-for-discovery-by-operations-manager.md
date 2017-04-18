@@ -19,4 +19,4 @@ Operations Manager provides more detailed processor or memory monitoring for som
   
 ## Next steps
  
-- Review [Monitoring Networks by Using Operations Manager](../../z-harvest-om/om/manage/monitoring-networks-by-using-operations-manager.md) to understand how Operations Manager monitors network devices, what requirements must be met and how they align with your management and security policies for network devices, and how to prepare Operations Manager to monitor them.  
+- Review [Monitoring Networks by Using Operations Manager](manage-monitor-networkdevice-overview.md) to understand how Operations Manager monitors network devices, what requirements must be met and how they align with your management and security policies for network devices, and how to prepare Operations Manager to monitor them.  
