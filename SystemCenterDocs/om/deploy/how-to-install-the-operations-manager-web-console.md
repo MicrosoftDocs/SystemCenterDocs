@@ -38,7 +38,7 @@ If you plan to use network load balancing with Application Diagnostics console a
 > A Network Load Balancer is not supported for the Operations Manager web console server.
 
 > [!IMPORTANT]
-> The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) does not have Secure Sockets Layer (SSL) configured, you are advised to configure it manually. For more information about security see [Data Encryption for Web console and Reporting server Connections](../plan/planning-data-encryption-for-web-console-reporting-server-connections.md)
+> The web console operates with sensitive data, such as clear text user credentials, server names, IP addresses, and so on. If these are exposed on the network, they can represent a significant security risk. If Internet Information Services (IIS) does not have Secure Sockets Layer (SSL) configured, you are advised to configure it manually. For more information about security see [Data Encryption for Web console and Reporting server Connections](../../scom/plan-data-encryption-server-roles.md)
 
 If the web console does not have sufficient access to the operational database or the data warehouse database, you will receive a warning during the web console configuration step. You can proceed with Setup, but the web console will not be configured correctly for .NET Application monitoring. To resolve this issue, you can have your database administrator run the following SQL Server statement on both the operational database and data warehouse database:
 
