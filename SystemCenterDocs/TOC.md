@@ -465,7 +465,7 @@
 ###### [Upload Attachment](orch/manage/upload-attachment-sharepoint.md)
 ###### [Upload Document](orch/manage/upload-document.md)
 ##### [Configuration Manager](orch/manage/configuration-manager-integration-pack.md)
-###### [Configuration Manager Activities](orch/manage/configuration-manager-activities.md)
+###### [Configuration Manager Activities](orchestrator/configuration-manager-activities.md)
 ####### [Add Collection Rule](orchestrator/add-collection-rule.md)
 ####### [Create Collection](orch/manage/create-collection.md)
 ####### [Delete Collection](orch/manage/delete-collection.md)

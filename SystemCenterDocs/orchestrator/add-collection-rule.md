@@ -105,7 +105,7 @@ You can specify the following rule properties:
         value of the property from the data output by a previous
         activity in the runbook.
 
-4.  For information about the settings on the **General** and **Run Behavior** tabs, see [Configuration Manager Activities](../orch/manage/configuration-manager-activities.md).
+4.  For information about the settings on the **General** and **Run Behavior** tabs, see [Configuration Manager Activities](configuration-manager-activities.md).
 
 5.  Click **Finish**.
 

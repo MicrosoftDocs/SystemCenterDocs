@@ -66,7 +66,7 @@ Configuration Manager server.
 -   Click the ellipsis **(…)** button next to the **Name** field, and
     then select the applicable connection name. Connections displayed in
     the list have been previously configured as described in
-    [Configuration Manager Integration Pack](configuration-manager-integration-pack.md).
+    [Configuration Manager Integration Pack](../orch/manage/configuration-manager-integration-pack.md).
 
 **Value Type** properties are common across many of the activities.
 These properties provide flexibility in the type of data you provide to
@@ -216,17 +216,17 @@ automatically populate the property values needed by activities.
 
 This integration pack adds the Microsoft Configuration Manager category to the Activity pane in the Runbook Designer. This category contains the following activities:
 
-- [Add Collection Rule](../../orchestrator/add-collection-rule.md)
-- [Create Collection](create-collection.md)
-- [Delete Collection Rule](delete-collection-rule.md)
-- [Delete Collection](delete-collection.md)
-- [Deploy Application](deploy-application.md)
-- [Deploy Configuration Baseline](deploy-configuration-baseline.md)
-- [Deploy Program](deploy-program.md)
-- [Deploy Software Update](deploy-software-update.md)
-- [Deploy Task Sequence](deploy-task-sequence.md)
-- [Get Collection Member](get-collection-member.md)
-- [Get Deployment Status](get-deployment-status.md)
-- [Perform Client Action](perform-client-action.md)
-- [Query Configuration Manager](query-configuration-manager.md)
-- [Update Collection Membership](update-collection-membership.md)
+- [Add Collection Rule](add-collection-rule.md)
+- [Create Collection](../orch/manage/create-collection.md)
+- [Delete Collection Rule](../orch/manage/delete-collection-rule.md)
+- [Delete Collection](../orch/manage/delete-collection.md)
+- [Deploy Application](../orch/manage/deploy-application.md)
+- [Deploy Configuration Baseline](../orch/manage/deploy-configuration-baseline.md)
+- [Deploy Program](../orch/manage/deploy-program.md)
+- [Deploy Software Update](../orch/manage/deploy-software-update.md)
+- [Deploy Task Sequence](../orch/manage/deploy-task-sequence.md)
+- [Get Collection Member](../orch/manage/get-collection-member.md)
+- [Get Deployment Status](../orch/manage/get-deployment-status.md)
+- [Perform Client Action](../orch/manage/perform-client-action.md)
+- [Query Configuration Manager](../orch/manage/query-configuration-manager.md)
+- [Update Collection Membership](../orch/manage/update-collection-membership.md)
