@@ -189,7 +189,7 @@
 ###### [How to configure monitoring of network devices](om/manage/how-to-configure-monitoring-of-network-devices.md)
 ###### [Viewing network devices and data](om/manage/viewing-network-devices-and-data-in-operations-manager.md)
 ###### [Reports for network monitoring](om/manage/reports-for-network-monitoring-in-operations-manager.md)
-##### [Monitoring service level objectives](om/manage/monitoring-service-level-objectives-by-using-operations-manager.md)
+##### [Monitoring service level objectives](scom/manage-monitor-sla-overview.md)
 ###### [Create a service level dashboard](om/manage/creating-a-service-level-dashboard.md)
 ###### [Running a service level tracking report](om/manage/running-a-service-level-tracking-report.md)
 ##### [Connecting Operations Manager with other management systems](om/manage/connecting-operations-manager-with-other-management-systems.md)

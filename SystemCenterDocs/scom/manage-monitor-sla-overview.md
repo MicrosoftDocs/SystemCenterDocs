@@ -166,6 +166,6 @@ After you create a service level objective, you can monitor it by using a Servic
 
 ## Next steps
 
-- See [Running a Service Level Tracking Report](running-a-service-level-tracking-report.md), to view the service level objective over time to verify the organization is delivering against availability targets defined in your SLAs.    
+- See [Running a Service Level Tracking Report](../om/manage/running-a-service-level-tracking-report.md), to view the service level objective over time to verify the organization is delivering against availability targets defined in your SLAs.    
 
-- [Create a Service Level Dashboard](creating-a-service-level-dashboard.md) to view the service level objective and verify the organization is delivering against availability targets defined in your SLAs.
+- [Create a Service Level Dashboard](../om/manage/creating-a-service-level-dashboard.md) to view the service level objective and verify the organization is delivering against availability targets defined in your SLAs.

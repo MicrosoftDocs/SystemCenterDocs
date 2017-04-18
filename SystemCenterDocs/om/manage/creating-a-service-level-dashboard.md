@@ -44,6 +44,6 @@ The gauge will show the average actual value, along with the target value and a 
   
 ## Next steps
 
-- Learn how to create a service level objective to measure service availability of an application or a set of grouped computers for your service level dashboard by reviewing [Monitoring Service Level Objectives by Using Operations Manager](monitoring-service-level-objectives-by-using-operations-manager.md).
+- Learn how to create a service level objective to measure service availability of an application or a set of grouped computers for your service level dashboard by reviewing [Monitoring Service Level Objectives by Using Operations Manager](../../scom/manage-monitor-sla-overview.md).
  
 - See [Running a Service Level Tracking Report](running-a-service-level-tracking-report.md), to view the service level objective over time to verify the organization is delivering against availability targets defined in your SLAs.  
