@@ -23,7 +23,7 @@ The recommended configuration is 3 virtual machines, each with an installed a ru
 ### SQL Server recommendations
 For the SQL Server database, 8 GB of RAM and 8 cores are recommended.
 
-1 month of data under heavy load (12 jobs per minute for a month) results in 20 GB of database space usage. By default, job purging should keep the space usage from growing much beyond this. For more on settings for database purging, see [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md).
+1 month of data under heavy load (12 jobs per minute for a month) results in 20 GB of database space usage. By default, job purging should keep the space usage from growing much beyond this. For more on settings for database purging, see [How to purge the Service Management Automation database](how-to-purge-the-service-management-automation-database.md).
 
 ### Scale out Service Management Automation
 If runbook jobs are running slowly, you might want to increase the number of runbook workers that are sharing workloads. New runbook worker/web service instances must be installed on their own virtual machines.

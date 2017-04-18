@@ -20,7 +20,7 @@ Service Management Automation must be administered separately from Windows Azure
 
 ## Administration topics
 
--   [Scaling Service Management Automation up or down](manage/scaling-service-management-automation-up-or-down.md)
+-   [Scaling Service Management Automation up or down](scaling-service-management-automation-up-or-down.md)
 
     Describes how to approach and implement adding runbook workers and web services to or removing them from Service Management Automation.
 
