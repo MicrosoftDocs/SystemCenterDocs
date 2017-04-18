@@ -36,7 +36,7 @@ The databases that a business uses to store all its transactions and records are
 
 OLAP cubes can be considered as the final piece of the puzzle for a data warehousing solution. An OLAP cube, also known as multidimensional cube or hypercube, is a data structure in SQL&nbsp;Server Analysis Services \(SSAS\) that is built, using OLAP databases, to allow near\-instantaneous analysis of data. The topology of this system is shown in the following illustration.  
 
- ![Diagram of the Service Manager 2016 DW](../media/ops-dw2012.png)  
+ ![Diagram of the Service Manager 2016 DW](./media/olap-cubes-overview/ops-dw2012.png)  
 
 The useful feature of an OLAP cube is that the data in the cube can be contained in an aggregated form. To the user, the cube seems to have the answers in advance because assortments of values are already precomputed. Without having to query the source OLAP database, the cube can return answers for a wide range of questions almost instantaneously.  
 
@@ -55,7 +55,7 @@ To see how data warehouse cubes are represented in the Service Manager console, 
 
 The following illustration shows an image from SQL&nbsp;Server Business Intelligence Development Studio \(BIDS\) that depicts the main parts that are required for online analytical processing \(OLAP\) cubes. These parts are the data source, data source view, cubes, and dimensions. The following sections describe the OLAP cube parts and the actions that users can take using them.  
 
- ![Image of cube architecture](../media/ops-cubedimensions.png)  
+ ![Image of cube architecture](./media/olap-cubes-overview/ops-cubedimensions.png)  
 
 ### Data source  
 
@@ -77,7 +77,7 @@ A dimension in SSAS references a dimension from the Service Manager data warehou
 
 The following illustration shows an OLAP cube that contains the Date, Region, and Product dimensions.  
 
-![Diagram of cube dimensions](../media/ops-dimensions.png)  
+![Diagram of cube dimensions](./media/olap-cubes-overview/ops-dimensions.png)  
 
 For example, Microsoft team members might want a quick and simple summary of the sales of the Xbox&nbsp;One gaming console in 2016. They can further drill down to get sales figures for a more focused time frame. Business analysts may want to examine how the sales of Xbox&nbsp;One consoles were affected by the launch of the new console design and the Kinect for Xbox&nbsp;One. This helps them determine what sales trends are occurring and what potential revisions of business strategy are needed. By filtering on the date dimension, this information can be quickly delivered and consumed. This slicing and dicing of data is enabled only because the dimensions have been designed with attributes and data that can easily be filtered and grouped by the customer.  
 
@@ -235,7 +235,7 @@ Similar to dimensions, creating new partitions in an OLAP cube requires a Proces
 
 The following diagram illustrates how Service Manager determines what type of processing to perform based on the watermark data.  
 
-![Diagram of cube processing](../media/ops-cubeprocessing.png)  
+![Diagram of cube processing](./media/olap-cubes-overview/ops-cubeprocessing.png)  
 
 When a ProcessAdd task is performed, Service Manager limits the scope of the query using watermarks. For example, if the InsertedBatchId value is 100 and the WatermarkBatchId value is 50, the query loads data only from the data mart where the InsertedBatchId is greater than 50 and less than 100.  
 
