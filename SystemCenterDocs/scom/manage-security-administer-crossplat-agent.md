@@ -135,7 +135,7 @@ cd /opt/microsoft/scx/bin/tools/
   
 ### SSL ciphers 
  
-If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](../../scom/manage-security-crossplat-config-sslcipher.md) topic.  
+If required, the SSL cipher list used by the UNIX/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) topic.  
   
 ### Specifying an alternate temporary path for scripts
 
@@ -170,8 +170,8 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
   
 ## Next steps
 
-- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../../scom/manage-install-crossplat-agent-cmdline.md)
+- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md)
 
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../../scom/manage-upgrade-uninstall-crossplat-agent.md)
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md)
 
   

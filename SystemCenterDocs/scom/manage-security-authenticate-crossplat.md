@@ -54,7 +54,7 @@ In Operations Manager, the system administrator is no longer is required to prov
   
     Describes the permissions on the UNIX or Linux computers that are required to be configured with Run As profiles for use by Operations Manager.  
   
--   [Administering and Configuring the UNIX - Linux Agent](../om/manage/administering-and-configuring-the-unix-linux-agent.md)  
+-   [Administering and Configuring the UNIX - Linux Agent](manage-security-administer-crossplat-agent.md)  
   
     Describes options to administer and configure the UNIX/Linux agent for System Center 2016 - Operations Manager.  
   

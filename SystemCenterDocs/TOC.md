@@ -176,7 +176,7 @@
 ###### [How to configure sudu elevation and SSH keys](scom/manage-security-create-crossplat-sudo-sshkeys.md)
 ###### [Required capabilities for UNIX and Linux computers](scom/manage-security-crossplat-capabilities.md)
 ###### [Configuring SSL ciphers](scom/manage-security-crossplat-config-sslcipher.md)
-###### [Administering and configuring the UNIX/Linux agent](om/manage/administering-and-configuring-the-unix-linux-agent.md)
+###### [Administering and configuring the UNIX/Linux agent](scom/manage-security-administer-crossplat-agent.md)
 #### [Operations Manager monitoring scenarios](om/manage/operations-manager-monitoring-scenarios.md)
 ##### [Agentless monitoring](om/manage/agentless-monitoring-in-operations-manager.md)
 ##### [Client monitoring using Agentless Exception Monitoring](om/manage/client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md)
