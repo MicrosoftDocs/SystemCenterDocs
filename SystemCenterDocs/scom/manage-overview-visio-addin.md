@@ -50,7 +50,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [Link to Operations Manager Objects in a New or Existing Visio Document](manage-visio-addin-link-objects.md)  
   
--   [Build a simple monitoring dashboard using the Visio Web Part](../om/manage/build-a-simple-monitoring-dashboard-using-the-visio-web-part.md)  
+-   [Build a simple monitoring dashboard using the Visio Web Part](manage-visio-addin-create-dashboard.md)  
   
 -   [Publish a Visio diagram to SharePoint Server](../om/manage/publish-a-visio-diagram-to-sharepoint.md)  
   
