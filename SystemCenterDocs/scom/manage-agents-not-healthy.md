@@ -84,7 +84,7 @@ For information on troubleshooting, see the Knowledge Base article [Troubleshoot
 ## What to do for a not monitored state  
 When an object shows as not monitored, check whether the appropriate management pack for monitoring the object is imported. Ensure that the appropriate monitors are enabled.  
   
-Sometimes restarting the Microsoft Monitoring Agent service on the agent-managed computer or clearing the agent cache can resolve the issue. You can also try placing the object in maintenance mode for several minutes. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](../om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md).  
+Sometimes restarting the Microsoft Monitoring Agent service on the agent-managed computer or clearing the agent cache can resolve the issue. You can also try placing the object in maintenance mode for several minutes. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).  
   
 Next, check the DNS configuration for the computer, both FQDN and DNS suffix.  
   

@@ -207,7 +207,7 @@
 ###### [How to set alert resolution states](scom/manage-alert-set-resolution-states.md)
 ###### [How to configure automatic alert resolution](scom/manage-alert-configure-auto-resolution.md)
 ###### [Data driven alert management](scom/manage-alert-data-driven-management.md)
-##### [How to suspend monitoring temporarily by using maintenance mode](om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md)
+##### [How to suspend monitoring temporarily by using maintenance mode](scom/manage-maintenance-mode-overview.md)
 ##### [Creating and managing groups](scom/manage-create-manage-groups.md)
 ##### [Running tasks in Operations Manager](scom/manage-running-tasks.md)
 ##### [Connecting management groups in Operations Manager](scom/manage-connecting-mgmtgroups.md)

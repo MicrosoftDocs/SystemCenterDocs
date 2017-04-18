@@ -39,7 +39,7 @@ In this instance, the task completed successfully. **Task Output** provides you 
   
 ## Next steps
 
-- To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](../om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md). 
+- To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md). 
 
 - Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](../../z-harvest-om/om/manage/creating-and-managing-groups.md).    
 
