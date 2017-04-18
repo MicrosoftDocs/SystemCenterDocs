@@ -154,7 +154,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Remove Group From Group](remove-group-from-group.md)
 
-[Remove User From Group](../orch/manage/remove-user-from-group.md)
+[Remove User From Group](remove-user-from-group.md)
 
 [Rename Group](../orch/manage/rename-group.md)
 
