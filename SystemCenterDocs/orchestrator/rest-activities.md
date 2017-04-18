@@ -80,4 +80,4 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **REST** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
--   [Invoke REST Service](../orch/manage/invoke-rest-service.md)
+-   [Invoke REST Service](invoke-rest-service.md)
