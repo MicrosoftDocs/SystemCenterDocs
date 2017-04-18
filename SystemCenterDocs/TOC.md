@@ -584,7 +584,7 @@
 #######[Get hosts activity](orchestrator/get-hosts-activity.md)
 #######[Get resource pool properties](orchestrator/get-resource-pool-properties-activity.md)
 #######[Get resource pools activity](orchestrator/get-resource-pools-activity.md)
-#######[Get vm list activity](orch/manage/get-vm-list-activity.md)
+#######[Get vm list activity](orchestrator/get-vm-list-activity.md)
 #######[Get vm properties activity](orch/manage/get-vm-properties-activity.md)
 #######[Get vm status activity](orch/manage/get-vm-status-activity.md)
 #######[Maintenance mode activity](orch/manage/maintenance-mode-activity.md)
