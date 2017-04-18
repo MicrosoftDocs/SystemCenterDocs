@@ -37,4 +37,4 @@ To enable FIPS on the reporting server, change the configuration in the applicat
 
 ## Next steps
 
-- To configure SSL encryption and FIPS compliance for the Web console server, see [Configure Authentication with the Web console](configure-authentication-with-web-console.md) 
+- To configure SSL encryption and FIPS compliance for the Web console server, see [Configure Authentication with the Web console](../om/manage/configure-authentication-with-web-console.md) 

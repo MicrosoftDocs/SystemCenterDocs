@@ -71,4 +71,4 @@ Separate certificates will need to be requested and generated before you can pro
 
 - To configure the Web console to use SSL encryption or support FIPS compliance, please review [Configure Authentication with the Web console](../om/manage/configure-authentication-with-web-console.md)
 
-- To configure the Reporting server to support FIPS compliance, please review [Configure Authentication with the Reporting server](../om/manage/configure-authentication-with-reporting-server.md) 
+- To configure the Reporting server to support FIPS compliance, please review [Configure Authentication with the Reporting server](configure-authentication-with-reporting-server.md) 
