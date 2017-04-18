@@ -363,7 +363,7 @@ Now you can create tenant virtual machines connected to the tenant virtual netwo
 - Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
 - You can run the following PowerShell cmdlet to allow ICMPv4 in through the firewall with **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**
 
-1. If you want to create a VM from an existing hard disk, [follow these instructions](manage/manage-vm-vhd-existing.md).
+1. If you want to create a VM from an existing hard disk, [follow these instructions](vm-existing-disk.md).
 2. After you deploy at least two VMs connected to the network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
 
 ## Remove the network controller from the SDN fabric
