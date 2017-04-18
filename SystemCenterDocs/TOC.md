@@ -20,7 +20,7 @@
 ### [Upgrade to DPM 2016](dpm/upgrade-to-dpm-2016.md)
 ### [Get started](dpm/get-started/Get-started.md)
 #### [Add Modern Backup storage](dpm/add-storage.md)
-#### [Get ready to deploy DPM servers](dpm/get-started/Get-ready-to-deploy-DPM-servers.md)
+#### [Get ready to deploy DPM servers](dpm/plan-dpm-deployment.md)
 #### [Get DPM installed](dpm/get-started/Get-DPM-installed.md)
 #### [Prepare data storage](dpm/get-started/Prepare-data-storage.md)
 #### [Preparing your environment for Data Protection Manager](dpm/get-started/Prepare-environment-for-DPM.md)
