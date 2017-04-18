@@ -106,4 +106,4 @@ On the reporting server, you will need to change the connection string to refere
 
 ## Next steps
 
-- See [How to move the Operational database](how-to-move-the-operational-database.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  
+- See [How to move the Operational database](../../scom/manage-move-opsdb.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  

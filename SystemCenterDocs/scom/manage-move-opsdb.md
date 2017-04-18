@@ -25,7 +25,7 @@ During the move, you need to stop services on your management servers, back up t
 
 ## Summary of steps
 
-![Summary steps for moving operational database](../media/om2016-move-operational-database-steps.png)<br> 
+![Summary steps for moving operational database](./media/manage-move-opsdb/om2016-move-operational-database-steps.png)<br> 
 
 ## Moving the Operational database
 
@@ -54,7 +54,7 @@ On all the management servers in the management group, stop the Operations Manag
 
 ### Update the registry and configuration files on the management servers, and Operational database
 
-After moving the Operations Manager operational database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](../../scom/manage-sqlserver-communication.md#how-to-configure-the-operations-manager-operational-database).
+After moving the Operations Manager operational database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-operational-database).
 
 ### Update security credentials on the new SQL Server instance hosting the operational database 
 
@@ -114,4 +114,4 @@ After moving the Operations Manager operational database to a different SQL Serv
  
 ## Next steps
 
-- See [How to move the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md) to understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance.
+- See [How to move the Reporting data warehouse database](../om/manage/how-to-move-the-reporting-data-warehouse-database.md) to understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance.
