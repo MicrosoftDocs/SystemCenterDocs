@@ -228,7 +228,7 @@ You can use the following procedure to disable the schedule for the extract, tra
 You can stop and start data warehouse jobs that are running in Service Manager. For example, you might have to stop all of the data warehouse jobs that are running to ensure that a security update to the data warehouse management server does not interfere with any jobs that might run. After the server has been updated and restarted, you resume all the data warehouse jobs. You can stop and then start jobs by using the Service Manager console or by using Windows PowerShell cmdlets. In this example, only the extract, transform, and load (ETL) jobs are running.
 
 > [!NOTE]
-> For information about using the Service Manager Windows PowerShell cmdlets, see [Configuring and Using the Service Manager Cmdlets for Windows PowerShell](../../scsm/sm-cmdlets.md).
+> For information about using the Service Manager Windows PowerShell cmdlets, see [Configuring and Using the Service Manager Cmdlets for Windows PowerShell](sm-cmdlets.md).
 
 ### To stop and start data warehouse jobs using the Service Manager console
 
@@ -325,7 +325,7 @@ In the following procedure, you configure a schedule for the Transform job to ru
 
 You can process all the dimensions in the data warehouse in one operation using Windows PowerShell cmdlets, instead of processing each dimension individually. On the server that hosts SQL Server Analysis Services (SSAS), use the following Windows PowerShell script. Be sure to specify the fully qualified server name. You can type each command separately, or you can save them all as a Windows PowerShell script (.ps1) file and then run the script.
 
-Before you can use Service Manager cmdlets, you need to configure the Service Manager Shell. For information about configuring the Service Manager Shell, see [Configuring and Using the System Center 2016 - Service Manager Cmdlets for Windows PowerShell](../../scsm/sm-cmdlets.md).
+Before you can use Service Manager cmdlets, you need to configure the Service Manager Shell. For information about configuring the Service Manager Shell, see [Configuring and Using the System Center 2016 - Service Manager Cmdlets for Windows PowerShell](sm-cmdlets.md).
 
 ### To process all dimensions using cmdlets
 
