@@ -134,7 +134,7 @@ This integration pack adds the **Microsoft SharePoint** category to the **Activi
 
 [Query List](query-list.md)
 
-[Update List Item](../orch/manage/update-list-item.md)
+[Update List Item](update-list-item.md)
 
 [Upload Attachment](upload-attachment.md)
 

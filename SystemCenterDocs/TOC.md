@@ -461,7 +461,7 @@
 ###### [Get View Items](orchestrator/get-view-items.md)
 ###### [Monitor List Items](orchestrator/monitor-list-items.md)
 ###### [Query List](orchestrator/query-list.md)
-###### [Update List Item](orch/manage/update-list-item.md)
+###### [Update List Item](orchestrator/update-list-item.md)
 ###### [Upload Attachment](orch/manage/upload-attachment-sharepoint.md)
 ###### [Upload Document](orch/manage/upload-document.md)
 ##### [Configuration Manager](orchestrator/configuration-manager-integration-pack.md)
