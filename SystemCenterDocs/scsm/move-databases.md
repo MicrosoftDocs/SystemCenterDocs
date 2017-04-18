@@ -53,7 +53,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
 4.  Restore the Service Manager database on the target computer that is running Microsoft SQL Server, as described in [How to Restore the Service Manager Database in the Lab Environment](restore-sm-db.md).  
 
-5.  Configure the Service Manager database, as described in [How to Prepare the Service Manager Database in the Lab Environment](../sm/deploy/upgrade-how-to-prepare-the-service-manager-database-in-the-lab-environment.md).  
+5.  Configure the Service Manager database, as described in [How to Prepare the Service Manager Database in the Lab Environment](prepare-sm-db.md).  
 
     > [!IMPORTANT]  
     >  Do not perform step 17 in the procedure for configuring tables.  
