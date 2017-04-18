@@ -20,7 +20,7 @@ This article describes how to manage storage deployed with Storage Spaces Direct
 
 ## Set up QoS policies
 
-Quality-of-service (QoS) in [Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using SOFS storage. QoS mitigates "noisy neighbor" issues, and ensure that a single VM doesn't consume all storage resources. [Learn more](../manage/manage-sofs-qos.md) about setting up QoS policies for a file server, or for specific virtual disks on the server.
+Quality-of-service (QoS) in [Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using SOFS storage. QoS mitigates "noisy neighbor" issues, and ensure that a single VM doesn't consume all storage resources. [Learn more](../manage-sofs-qos.md) about setting up QoS policies for a file server, or for specific virtual disks on the server.
 
 ## Add and remove nodes and disks
 
