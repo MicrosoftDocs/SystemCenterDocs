@@ -73,7 +73,7 @@ The default folder for installing Service Manager is \\Program Files\\Microsoft 
 
 ### Hardware requirements for System Center 2016 - Service Manager  
 
-All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](../sm/plan/plan-hardware-requirements-for-system-center-2016-service-manager.md).  
+All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](hardware-reqs.md).  
 
 ### Software requirements for System Center 2016 - Service Manager
 
