@@ -549,7 +549,7 @@
 #######[Monitor vmm job](orchestrator/monitor-vmm-job-in-system-center-2016.md)
 #######[Move vm](orchestrator/move-vm.md)
 #######[Remove user role](orchestrator/remove-user-role.md)
-#######[Remove vm](orch/manage/remove-vm.md)
+#######[Remove vm](orchestrator/remove-vm.md)
 #######[Repair vm](orch/manage/repair-vm.md)
 #######[Resume vm](orch/manage/resume-vm.md)
 #######[Run vmm powershell script](orch/manage/run-vmm-powershell-script.md)
