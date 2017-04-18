@@ -22,4 +22,4 @@ This section describes how to manage, maintain, and monitor DPM after you've com
 
 -   [Set up DPM logging](../set-up-dpm-logging.md)
 
--   [Generate DPM reports](Generate-DPM-reports.md)
+-   [Generate DPM reports](../generate-dpm-reports.md)
