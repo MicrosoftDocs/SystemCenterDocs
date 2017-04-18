@@ -168,7 +168,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Delete VM Data Disk](delete-vm-data-disk.md)
 
-[Delete VM Disk](../orch/manage/delete-vm-disk.md)
+[Delete VM Disk](delete-vm-disk.md)
 
 [Delete VM Instance](../orch/manage/delete-vm-instance.md)
 
