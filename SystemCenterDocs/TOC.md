@@ -471,7 +471,7 @@
 ####### [Delete Collection](orchestrator/delete-collection.md)
 ####### [Delete Collection Rule](orchestrator/delete-collection-rule.md)
 ####### [Deploy Application](orchestrator/deploy-application.md)
-####### [Deploy Configuration Baseline](orch/manage/deploy-configuration-baseline.md)
+####### [Deploy Configuration Baseline](orchestrator/deploy-configuration-baseline.md)
 ####### [Deploy Program](orch/manage/deploy-program.md)
 ####### [Deploy Software Update](orch/manage/deploy-software-update.md)
 ####### [Deploy Task Sequence](orch/manage/deploy-task-sequence.md)
