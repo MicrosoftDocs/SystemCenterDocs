@@ -72,7 +72,7 @@ To view the details for an alert, in the **Monitoring** workspace, click **Activ
   
 ## Next steps
 
-- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](how-heartbeats-work.md).  
+- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](../../scom/manage-agent-heartbeat-overview.md).  
 
 - To understand how alerts are generated for monitored objects in your management group, see [How an Alert is Produced](how-an-alert-is-produced.md).
 

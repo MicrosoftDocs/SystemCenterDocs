@@ -30,7 +30,7 @@ Generally, before you close an alert, you should verify that the issue is resolv
   
 ## Next steps
 
-- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](how-heartbeats-work.md).  
+- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](../../scom/manage-agent-heartbeat-overview.md).  
 
 - To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](resolving-heartbeat-alerts.md).  
 

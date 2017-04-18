@@ -196,7 +196,7 @@
 ###### [How to configure a product connector subscription](scom/manage-integration-config-integration.md)
 #### [General tasks in Operations Manager](om/manage/general-tasks-in-operations-manager.md)
 ##### [Managing alerts](om/manage/managing-alerts.md)
-###### [How heartbeats work](om/manage/how-heartbeats-work.md)
+###### [How heartbeats work](scom/manage-agent-heartbeat-overview.md)
 ###### [Resolving heartbeat alerts](om/manage/resolving-heartbeat-alerts.md)
 ###### [How an alert is produced](om/manage/how-an-alert-is-produced.md)
 ###### [Viewing active alerts and details](om/manage/viewing-active-alerts-and-alert-details.md)
