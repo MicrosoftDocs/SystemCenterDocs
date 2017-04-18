@@ -20,7 +20,7 @@ The single server management group scenario combines all the management group ro
 
 You deploy Operations Manager in a single-server management group when you want to use it for evaluation, testing, and management pack development, usually in a lab, development, or non-production environment.
 
-![Single Server Deployment](../media/om2016-simple-mg-config.png)
+![Single Server Deployment](./media/deploy-single-server/om2016-simple-mg-config.png)
 
 ## Operations Manager services
 
@@ -96,11 +96,11 @@ In this configuration, you need to make sure that network ports are opened for c
 
 -   Management server to UNIX\Linux computer for special discovery and troubleshooting: TCP 22
 
-For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](../../scom/plan-security-config-firewall.md).
+For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).
 
 ## Next steps
 
-- To deploy Operations Manager in a single server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../../scom/quickstart-install-single-server.md).
+- To deploy Operations Manager in a single server management group, see [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md).
 
 
 

@@ -72,7 +72,7 @@
 ##### [Data encryption for Web console and Reporting server connections](scom/plan-data-encryption-server-roles.md)
 ##### [Security considerations monitoring Microsoft Azure and Office 365](scom/plan-security-microsoft-cloud.md)
 ### [Deploy](scom/deploy-overview.md)
-#### [Single-Server deployment of Operations Manager](om/Deploy/single-server-deployment-of-operations-manager.md)
+#### [Single-Server deployment of Operations Manager](scom/deploy-single-server.md)
 #### [Distributed deployment of Operations Manager](scom/deploy-distributed-deployment.md)
 ##### [How to install an Operations Manager management server](OM/Deploy/How-to-Install-an-Operations-Manager-Management-Server.md)
 ##### [How to install the Operations console](OM/Deploy/How-to-Install-the-Operations-Console.md)
