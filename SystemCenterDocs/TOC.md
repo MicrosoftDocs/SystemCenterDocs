@@ -34,7 +34,7 @@
 #### [Back up Exchange with DPM](dpm/back-up-exchange.md)
 #### [Back up SharePoint with DPM](dpm/back-up-sharepoint.md)
 #### [Back up SQL Server with DPM](dpm/back-up-sql-server.md)
-#### [Back up client computers with DPM](DPM/Deploy/Back-up-client-computers-with-DPM.md)
+#### [Back up client computers with DPM](dpm/back-up-workstations.md)
 #### [Back up file data with DPM](DPM/Deploy/Back-up-file-data-with-DPM.md)
 #### [Back up system state and bare metal](DPM/Deploy/Back-up-system-state-and-bare-metal.md)
 #### [Back up and restore VMM servers](DPM/Deploy/Back-up-and-restore-VMM-servers.md)

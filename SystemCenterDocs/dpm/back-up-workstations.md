@@ -21,13 +21,13 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 ## Prerequisites and limitations
 .Before you deploy DPM to protect client computer data verify the deployment prerequisites:
 
--   Read about the client operating systems you can support in [What can DPM back up?](../dpm-protection-matrix.md)
+-   Read about the client operating systems you can support in [What can DPM back up?](dpm-protection-matrix.md)
 
--   Review the [release notes](../../get-started/release-notes.md) and read about any client protection issues in [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+-   Review the [release notes](../get-started/release-notes.md) and read about any client protection issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
 -   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 
--   To set up client machines for protection you install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe.  If you are using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
+-   To set up client machines for protection you install the DPM protection agent on them. If Windows Firewall is configured on the client computer, the agent installation will set up the firewall exceptions it needs. If you need to reset the firewall, you can reconfigure it by running SetDpmServer.exe.  If you are using a firewall other than Windows Firewall, you'll need to open the necessary ports. Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 -   DPM  can back up client computers that are physically or wirelessly connected to the local area network (LAN)or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
 
@@ -53,22 +53,22 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../dpm-protection-matrix.md)
+    -   [What can DPM back up?](dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+    -   [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
-    -   [Get DPM installed](../install-dpm.md)
+    -   [Get DPM installed](install-dpm.md)
 
 2.  **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure.
-      Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
+      Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - The agent needs to be installed on client computers you want to protect.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Back up client computers
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](../create-dpm-protection-groups.md)
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](create-dpm-protection-groups.md)
 
 3.  In **Select Group Members** click **Add Multiple Computers**. You can add the client computers you want to back up in a text file. In the file  you'll need to enter each computer on a new line. We recommend that you provide the FQDN target computers. For example, enter multiple computers in a .txt file as follows:
 
