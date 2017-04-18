@@ -28,7 +28,7 @@ VMs can be provisioned using a number of methods:
 - [Clone a VM from an existing VM](vm-clone.md): Clone an existing VM in the VMM library to create a new one. We recommend you clone a VM that's been generalized with Sysprep.
 - [Create a VM from a template](manage/manage-vm-template.md): Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
 - **Create a VM in a service deployment**: In VMM you can create services that are logical grouping of VMs that are configured and deployed as s single entity. A single tier service includes a single VM. Multi-tier services have multiple VMs.
-- [Rapidly provision a VM using storage area network (SAN) copy](manage/manage-vm-rapid-san.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
+- [Rapidly provision a VM using storage area network (SAN) copy](vm-san-copy.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
 
 ## VM placement
 

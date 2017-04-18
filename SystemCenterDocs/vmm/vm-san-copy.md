@@ -106,7 +106,7 @@ Create a template from an existing VM.
 
 ## Deploy a VM from the template
 
-New deploy a VM from the SAN-copy capable template. This procedure explains how to deploy a standalone VM. Alternatively you can select the to template when you [create a service](../library-resources.md). Note that:
+New deploy a VM from the SAN-copy capable template. This procedure explains how to deploy a standalone VM. Alternatively you can select the to template when you [create a service](library-resources.md). Note that:
 
 - The hosts where you want to place the VMs must have access to the managed storage pool where the logical unit that is associated with the template resides.
 - If you want to deploy the virtual machines to a private cloud, the storage classification that is assigned to the logical unit that was used to create the SAN clone-capable template must be available to the private cloud.
@@ -127,4 +127,4 @@ New deploy a VM from the SAN-copy capable template. This procedure explains how 
 
 ## Next steps
 
-[Manage the VM settings](manage-vm-settings.md)
+[Manage the VM settings](manage/manage-vm-settings.md)
