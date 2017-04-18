@@ -29,7 +29,7 @@ This article summarizes planning steps you should perform before you set up comp
 
 In the compute fabric you set up all the servers and computers that will be managed in the VMM fabric. It includes the VMM library, virtualization hosts and VMs, and infrastructure servers, including update servers, IPAM servers, and PXE servers used for bare metal deployment.
 
-[Learn more](plan-compute.md) about planning the compute fabric.
+[Learn more](../plan-compute.md) about planning the compute fabric.
 
 
 ## Plan the networking fabric
