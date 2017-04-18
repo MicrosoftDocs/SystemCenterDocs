@@ -290,7 +290,7 @@
 #######[Get Organizational Unit](orchestrator/get-organizational-unit.md)
 #######[Get User](orchestrator/get-user.md)
 #######[Move Computer](orchestrator/move-computer.md)
-#######[Move Group](orch/manage/move-group.md)
+#######[Move Group](orchestrator/move-group.md)
 #######[Move User](orch/manage/move-user.md)
 #######[Remove Computer From Group](orch/manage/remove-computer-from-group.md)
 #######[Remove Group From Group](orch/manage/remove-group-from-group.md)
