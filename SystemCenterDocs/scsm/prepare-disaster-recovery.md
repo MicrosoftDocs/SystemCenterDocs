@@ -44,7 +44,7 @@ When you deploy Service Manager, an encryption key is created and stored in the 
 2.  Install the new management server on a computer that has the same name as the original computer.  
 3.  When you install the management server, select **Use an existing database**, and then specify the name of the computer that hosts the associated database.  
 
- For more information about these steps, see [Implement Service Manager disaster recovery](../sm/manage/disaster-implement-service-manager-disaster-recovery.md).  
+ For more information about these steps, see [Implement Service Manager disaster recovery](implement-disaster-recovery.md).  
 
 ## Back up the Service Manager encryption key
 
