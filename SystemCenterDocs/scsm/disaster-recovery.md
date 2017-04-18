@@ -21,7 +21,7 @@ ms.assetid: 21c80dca-3dee-40bd-b39c-85f28ef1d40c
 
 A recovery plan for potential software and equipment failures in your System Center 2016 - Service Manager environment requires a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases. During installation, you must back up the encryption keys on all the management servers, both the Service Manager management server and data warehouse management servers.  
 
-![cloud symbol](../media/disaster-all_symbols_cloud.png)
+![cloud symbol](./media/disaster-recovery/disaster-all_symbols_cloud.png)
 
 - Did you know that Microsoft Azure provides similar functionality in the cloud? Learn more about [Microsoft Azure storage solutions](http://aka.ms/y03tdi).
 - Create a hybrid storage solution in Microsoft Azure:
@@ -40,30 +40,30 @@ A recovery plan for potential software and equipment failures in your System Cen
 
  Promoting an additional management server involves the following procedures:  
 
-1.  Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
+1.  Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](../sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
 
-2.  When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](../../scsm/deploy-additional-ms.md).  
+2.  When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](deploy-additional-ms.md).  
 
  If promoting an additional Service Manager management server is not an option, you have to install a replacement management server. Installing a replacement Service Manager management server involves the following procedures:  
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
 
-2.  Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
+2.  Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](../sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
 
-3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](../../scsm/deploy-scenarios.md).  
+3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
 ### Data Warehouse management server  
  Only one recovery scenario is possible for the data warehouse management server: you must install a new data warehouse management server on a computer with the same computer name as the computer that failed. Installing a replacement data warehouse management server involves the following procedures:  
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
 
-2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
+2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](../sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
 
-3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](../../scsm/deploy-scenarios.md).  
+3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
 ### Service Manager databases  
  Recovery procedures are the same for both the Service Manager database and the data warehouse database. You use a computer with the same name, and then you restore the Microsoft SQL&nbsp;Server databases using the same instance as the original. Recovery of a Service Manager database and a data warehouse database involves the following procedures:  
 
 1.  Start with a new computer with the same computer name and with the same SQL&nbsp;Server instance as the computer that failed.  
 
-2.  Restore the SQL&nbsp;Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](disaster-database-recovery-in-service-manager.md) in this guide.
+2.  Restore the SQL&nbsp;Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](../sm/manage/disaster-database-recovery-in-service-manager.md) in this guide.

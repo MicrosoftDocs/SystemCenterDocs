@@ -165,7 +165,7 @@ We recommend that you test the upgrade to System Center 2016 - Service Manager i
 
 The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
-1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center 2016 - Service Manager](../sm/manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md).  
+1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center 2016 - Service Manager](disaster-recovery.md).  
 
 2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you will not be able to start them again until after you have completed the upgrade.  
 
@@ -186,7 +186,7 @@ With System Center 2016 - Service Manager, you have the option to install Operat
 
 ### Back up Service Manager before you upgrade  
 
-Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](../sm/manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md) before you continue the upgrade.  
+Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](disaster-recovery.md) before you continue the upgrade.  
 
 ### Register the Service Manager data warehouse  
 
