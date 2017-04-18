@@ -30,6 +30,13 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI.
 
 
+#### Remove Volumes from DPM using Remove-DPMDiskStorage commanndlet
+
+**Description**: When you try to remove volumes from DPM using [Remove-DPMDiskStorage](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) commandlet, the volumes which have datasources being backed up may also be removed. 
+
+**Workaround**: Ensure that the volumes do not have datasources being actively or inactively protected before using the commandlet to remove the volumes.
+
+
 #### DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
 **Description**: Memory consumption on the DPM Server increases continuously, reaching about 90%, leading to the DPM server slowing down.
 
