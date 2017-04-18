@@ -96,6 +96,6 @@ For a list of the data elements published by each activity, see the Published Da
 
 This integration pack adds the HP iLO and OA category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Run iLO Command](run-ilo-command.md)
+[Run iLO Command](../orch/manage/run-ilo-command.md)
 
-[Run OA Command](run-oa-command.md)
+[Run OA Command](../orch/manage/run-oa-command.md)
