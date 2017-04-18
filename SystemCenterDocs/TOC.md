@@ -311,7 +311,7 @@
 #######[Add vm disk](orchestrator/add-vm-disk.md)
 #######[Add vm endpoint](orchestrator/add-vm-endpoint.md)
 #######[Add vm instance](orchestrator/add-vm-instance.md)
-#######[Capture vm instance](orch/manage/capture-vm-instance.md)
+#######[Capture vm instance](orchestrator/capture-vm-instance.md)
 #######[Change deployment configuration](orch/manage/change-deployment-configuration.md)
 #######[Change deployment os](orch/manage/change-deployment-os.md)
 #######[Check cloud service name availability](orch/manage/check-cloud-service-name-availability.md)
