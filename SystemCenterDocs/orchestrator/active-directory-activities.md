@@ -162,7 +162,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Reset User Password](reset-user-password.md)
 
-[Unlock User](../orch/manage/unlock-user.md)
+[Unlock User](unlock-user.md)
 
 [Update Computer](../orch/manage/update-computer.md)
 

@@ -298,7 +298,7 @@
 #######[Rename Group](orchestrator/rename-group.md)
 #######[Rename User](orchestrator/rename-user.md)
 #######[Reset User Password](orchestrator/reset-user-password.md)
-#######[Unlock User](orch/manage/unlock-user.md)
+#######[Unlock User](orchestrator/unlock-user.md)
 #######[Update Computer](orch/manage/update-computer.md)
 #######[Update Group](orch/manage/update-group.md)
 #######[Update User](orch/manage/update-user.md)
