@@ -168,7 +168,7 @@
 ##### [How to create a new Action account](scom/manage-security-create-runas-actionaccount.md)
 ##### [How to control access by using the Health Service Lockdown tool](scom/manage-security-overview-hslockdown.md)
 ##### [Managing Run As Accounts and Profiles](scom/manage-security-maintain-runas-profiles.md)
-###### [Distribution and targeting for Run As Accounts and Profiles](om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md)
+###### [Distribution and targeting for Run As Accounts and Profiles](scom/manage-security-dist-target-runas-profiles.md)
 ###### [How to create a Run As Account and associate with a Profile](om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md)
 ###### [How to configure Run As accounts and profiles for UNIX and Linux access](scom/manage-security-config-crossplat-runas-profile.md)
 ##### [Accessing UNIX and Linux computers](om/manage/accessing-unix-and-linux-computers-in-operations-manager.md)

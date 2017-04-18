@@ -32,7 +32,7 @@ A Run As account contains a single set of credentials which are stored in the Op
   
 ## Next steps
   
--   [Distribution and Targeting for Run As Accounts and Profiles](../om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md)  
+-   [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md)  
   
     This topic explains the difference between distribution and targeting, the options for distributing Run As accounts, and the options for selecting targets for Run As profiles.  
   

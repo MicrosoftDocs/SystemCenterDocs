@@ -32,7 +32,7 @@ In System Center 2016 - Operations Manager, when an alert is generated, Operatio
   
 6.  On the **Credentials** page, type the information for the user name, password, and domain (if required) of the user account that to be used for notifications. Click **Next**.  
   
-7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](../om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md).  
+7.  Select the **More secure** distribution security option. For more information on this option, see [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).  
   
 8.  Click **Create**.  
   

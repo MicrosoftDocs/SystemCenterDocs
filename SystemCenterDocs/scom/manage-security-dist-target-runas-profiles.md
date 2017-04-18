@@ -20,7 +20,7 @@ Run As accounts are associated with Run As profiles to provide the necessary cre
   
 When you configure a Run As profile, you select the Run As accounts you want to associate with the Run As profile. When you create that association, you specify the class, group, or object that the Run As account will be used to manage, as shown in the following image. This establishes the target of the Run As account.  
   
-![Select target for Run As profile and account](../media/om2016-add-run-as-account-target.png)  
+![Select target for Run As profile and account](./media/manage-security-dist-target-runas-profiles/om2016-add-run-as-account-target.png)  
   
 Distribution is an attribute of a Run As account in which you specify which computers will receive the Run As account credentials. You can choose to distribute the Run As account credentials to every agent-managed computer or only to selected computers.  
   
@@ -52,7 +52,7 @@ When you create a Run As account, you are prompted to choose whether the Run As 
   
 ## Next steps
   
-- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](How-to-Create-a-Run-As-Account-and-associate-to-a-profile.md).
+- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md).
  
 
   
