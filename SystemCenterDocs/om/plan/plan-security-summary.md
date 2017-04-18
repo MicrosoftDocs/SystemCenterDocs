@@ -22,7 +22,7 @@ This section provides you with security-related information as it pertains to th
 
 - Understand the security requirements and how to prepare your environment for Operations Manager by reviewing the [Security Accounts for Operations Manager](../../scom/plan-security-accounts.md) guidance.
 
-- Review how [Run As accounts and Run As profiles](planning-security-run-as-accounts-profiles.md) allow you to run workflows from management packs under different accounts on different computers securely.  
+- Review how [Run As accounts and Run As profiles](../../scom/plan-security-runas-accounts-profiles.md) allow you to run workflows from management packs under different accounts on different computers securely.  
 
 - Before monitoring Office 365 and workloads hosted in the cloud with Operations Manager, review  [Integration with Microsoft Azure and Office 365](planning-security-microsoft-cloud.md).
 
