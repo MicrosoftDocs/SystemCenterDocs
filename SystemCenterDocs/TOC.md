@@ -288,7 +288,7 @@
 #######[Get Computer](orchestrator/get-computer.md)
 #######[Get Group](orchestrator/get-group.md)
 #######[Get Organizational Unit](orchestrator/get-organizational-unit.md)
-#######[Get User](orch/manage/get-user.md)
+#######[Get User](orchestrator/get-user.md)
 #######[Move Computer](orch/manage/move-computer.md)
 #######[Move Group](orch/manage/move-group.md)
 #######[Move User](orch/manage/move-user.md)
