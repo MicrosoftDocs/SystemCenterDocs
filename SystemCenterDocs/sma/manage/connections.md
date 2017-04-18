@@ -93,4 +93,4 @@ InlineScript {
 
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
-[Global Assets](Global-Assets.md)
+[Global Assets](../manage-global-assets.md)

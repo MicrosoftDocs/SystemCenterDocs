@@ -71,6 +71,6 @@ Set-SmaSchedule "WebServiceEndpoint $web "Port $port "Name $scheduleName "Schedu
 
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
-[Global Assets](Global-Assets.md)
+[Global Assets](../manage-global-assets.md)
 
 [Scheduling a Runbook](Scheduling-a-Runbook.md)

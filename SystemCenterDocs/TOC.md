@@ -897,7 +897,7 @@
 ##### [Editing a Runbook](SMA/Manage/Editing-a-Runbook.md)
 ##### [Publishing a Runbook](SMA/Manage/Publishing-a-Runbook.md)
 ##### [Testing a Runbook](SMA/Manage/Testing-a-Runbook.md)
-##### [Global Assets](SMA/Manage/Global-Assets.md)
+##### [Global Assets](sma/manage-global-assets.md)
 ###### [Credentials](SMA/Manage/Credentials.md)
 ###### [Connections](SMA/Manage/Connections.md)
 ###### [Variables](SMA/Manage/Variables.md)

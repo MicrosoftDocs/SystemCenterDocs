@@ -112,4 +112,4 @@ Use the **Get-AutomationVariable** activity to use a variable in a runbook.
 
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
-[Global Assets](Global-Assets.md)
+[Global Assets](../manage-global-assets.md)

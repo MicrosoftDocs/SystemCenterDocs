@@ -20,23 +20,23 @@ Global Assets are available to all runbooks in an Automation environment.  You c
 
 The following topics provide details on the different global assets, how to create and edit them using both the Management Portal and Windows PowerShell, and using them with activities in a runbook.
 
--   [Credentials](Credentials.md)
+-   [Credentials](../scom/credentials.md)
 
     An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.
 
--   [Connections](Connections.md)
+-   [Connections](../orchestrator/connections.md)
 
     An Automation Connection contains the information required to connect to a service or application from a runbook.
 
--   [Variables](Variables.md)
+-   [Variables](manage/variables.md)
 
     Automation variables are values that are available to all runbooks.
 
--   [Schedules](Schedules.md)
+-   [Schedules](../orch/get-started/schedules.md)
 
     Automation Schedules are used to schedule runbooks to run automatically.
 
 ## See Also
-[Service Management Automation](../Service-Management-Automation.md)
+[Service Management Automation](service-management-automation.md)
 
-[Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+[Authoring Automation Runbooks](authoring-automation-runbooks.md)

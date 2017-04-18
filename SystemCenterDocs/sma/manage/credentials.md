@@ -131,4 +131,4 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
 
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
-[Global Assets](Global-Assets.md)
+[Global Assets](../manage-global-assets.md)
