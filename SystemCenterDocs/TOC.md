@@ -557,7 +557,7 @@
 #######[Scale tier out](orchestrator/scale-tier-out-in-system-center-2016.md)
 #######[Set pending service update](orchestrator/set-pending-service-update-in-system-center-2016.md)
 #######[Shut down vm](orchestrator/shut-down-vm.md)
-#######[Start vm](orch/manage/start-vm.md)
+#######[Start vm](orchestrator/start-vm.md)
 #######[Stop service](orch/manage/stop-service-in-system-center-2016.md)
 #######[Stop vm](orch/manage/stop-vm.md)
 #######[Suspend vm](orch/manage/suspend-vm.md)

@@ -155,7 +155,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Shut Down VM](shut-down-vm.md)
 
-[Start VM](../orch/manage/start-vm.md)
+[Start VM](start-vm.md)
 
 [Stop VM](../orch/manage/stop-vm.md)
 
