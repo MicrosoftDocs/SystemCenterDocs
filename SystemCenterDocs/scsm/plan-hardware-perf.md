@@ -78,4 +78,4 @@ Network latency was also tested in the baseline. Network latency was introduced 
 
 ## Next steps
 
-- Review [Service Manager performance](../sm/plan/plan-service-manager-performance.md) to read general guidelines to consider when you are planning for Service Manager software performance.
+- Review [Service Manager performance](sm-perf.md) to read general guidelines to consider when you are planning for Service Manager software performance.

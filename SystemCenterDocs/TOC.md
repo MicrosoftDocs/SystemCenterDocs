@@ -621,7 +621,7 @@
 #### [Prepare for Service Manager deployment](scsm/prepare-deploy.md)
 #### [Planning for performance and scalability](scsm/plan-perf-scale.md)
 ##### [Plan for hardware performance](scsm/plan-hardware-perf.md)
-##### [Service Manager performance](sm/plan/plan-service-manager-performance.md)
+##### [Service Manager performance](scsm/sm-perf.md)
 ##### [Recommended deployment topology scenarios](sm/plan/plan-configurations-for-deployment-scenarios.md)
 ### [Deploy Service Manager](sm/deploy/deploy-deploying-system-center-2016-service-manager.md)
 #### [Deployment scenarios](sm/deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md)
