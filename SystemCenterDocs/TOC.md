@@ -792,7 +792,7 @@
 ##### [Add service templates to the VMM library](vmm/library-service-templates.md)
 ##### [Manage VMM library resources](vmm/library-resources.md)
 #### [Manage VMM host groups](vmm/host-groups.md)
-#### [Manage Hyper-V hosts and clusters](vmm/manage/manage-compute-hyper-v-overview.md)
+#### [Manage Hyper-V hosts and clusters](vmm/hyper-v-hosts.md)
 ##### [Run a rolling upgrade of Hyper-V clusters](vmm/manage/manage-compute-rolling-upgrade-hyper-v.md)
 ##### [Add existing Hyper-V hosts and clusters to the fabric](vmm/manage/manage-compute-add-existing-servers.md)
 ##### [Add a Nano server as a Hyper-V host or cluster](vmm/manage/manage-compute-add-nano-hyper-v.md)
