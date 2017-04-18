@@ -407,7 +407,7 @@
 ###### [Download File](orchestrator/download-file.md)
 ###### [List Folders or Files](orchestrator/list-folders-or-files.md)
 ###### [Rename Folders or Files](orchestrator/rename-file-or-folder.md)
-###### [Resume File Download](orch/manage/resume-file-download.md)
+###### [Resume File Download](orchestrator/resume-file-download.md)
 ###### [Synchronize Folder or File](orch/manage/synchronize-folder-or-file.md)
 ###### [Upload File](orch/manage/upload-file.md)
 ##### [Hewlett Packard Integrated Lights-Out](orchestrator/hp-ilo-and-oa-integration-pack.md)
