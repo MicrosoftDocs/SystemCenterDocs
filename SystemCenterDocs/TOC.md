@@ -395,7 +395,7 @@
 ####### [Forward Item](orchestrator/forward-item.md)
 ####### [Get Item](orchestrator/get-item.md)
 ####### [Monitor Item](orchestrator/monitor-item.md)
-####### [Move or Copy Item](orch/manage/move-or-copy-item.md)
+####### [Move or Copy Item](orchestrator/move-or-copy-item.md)
 ####### [Reply to Email](orch/manage/reply-to-e-mail.md)
 ####### [Send Email](orch/manage/send-e-mail.md)
 ####### [Update Item](orch/manage/update-item.md)
