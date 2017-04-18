@@ -187,7 +187,7 @@
 ###### [Run As accounts for network monitoring](scom/manage-monitor-networkdevice-authentication.md)
 ###### [How to delete or restore a network device](scom/manage-monitor-networkdevice-delete-restore.md)
 ###### [How to configure monitoring of network devices](scom/manage-monitor-networkdevice-configure-monitoring.md)
-###### [Viewing network devices and data](om/manage/viewing-network-devices-and-data-in-operations-manager.md)
+###### [Viewing network devices and data](scom/manage-monitor-networkdevice-viewing-data.md)
 ###### [Reports for network monitoring](om/manage/reports-for-network-monitoring-in-operations-manager.md)
 ##### [Monitoring service level objectives](scom/manage-monitor-sla-overview.md)
 ###### [Create a service level dashboard](om/manage/creating-a-service-level-dashboard.md)
