@@ -13,7 +13,7 @@
 ### [System Center Agents](system-requirements/System-Center-Agents.md)
 ### [.Net Version Support](system-requirements/Dot-Net-Version-Support.md)
 ## [Data Protection Manager](dpm/dpm-overview.md)
-### [How does DPM work?](dpm/get-started/How-does-DPM-work-.md)
+### [How does DPM work?](dpm/how-dpm-protects-data.md)
 ### [What's new in DPM](dpm/get-started/What-s-new-in-DPM-in-System-Center-2016.md)
 ### [What can DPM back up?](dpm/get-started/What-can-DPM-back-up-.md)
 ### [What's supported and what isn't for DPM?](dpm/get-started/What-s-supported-and-what-isn-t-for-DPM-.md)

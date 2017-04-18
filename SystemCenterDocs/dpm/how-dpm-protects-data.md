@@ -22,7 +22,7 @@ The method Data Protection Manager (DPM) uses to protect data varies according t
 
 To provide disk-based data protection, the DPM server creates and maintains a replica, or copy, of the data that is on protected servers. The replicas are stored in the storage pool which consists of a set of disks on the DPM server, or on a custom volume. The following illustration shows the basic relationship between a protected volume and its replica.
 
-![Disk-Based Protection Process](../media/dpm-replica-creation.png)
+![Disk-Based Protection Process](./media/how-dpm-protects-data/dpm-replica-creation.png)
 
 Whether you are protecting file data or application data, protection begins with the creation of the replica of the data source.
 
@@ -47,7 +47,7 @@ DPM stores a separate replica for each protection group member in the storage po
 
 In DPM, for a file volume or share on a server, the protection agent uses a volume filter and the change journal to determine which files have changed and then performs a checksum procedure for these files to synchronize only the changed blocks. During synchronization, these changes are transferred to the DPM server and then applied to the replica to synchronize the replica with the data source. The following figure illustrates the file synchronization process.
 
-![File Synchronization Process](../media/dpm-file-synchronization-process.png)
+![File Synchronization Process](./media/how-dpm-protects-data/dpm-file-synchronization-process.png)
 
 If a replica becomes inconsistent with its data source, DPM generates an alert that specifies which computer and which data sources are affected. To resolve the problem, the administrator repairs the replica by initiating a synchronization with consistency check, also known as simply a consistency check, on the replica. During a consistency check, DPM performs a block-by-block verification and repairs the replica to bring it back into consistency with the data source.
 
@@ -117,7 +117,7 @@ As explained in The File Data Synchronization Process and The Application Data S
 
 The following illustration shows how each protection group member is associated with its own replica volume and recovery point volume.
 
-![Protection Group Members, Replicas, and Recovery Points](../media/dpm-protection-group-members-replicas-and-recovery-points.png)
+![Protection Group Members, Replicas, and Recovery Points](./media/how-dpm-protects-data/dpm-protection-group-members-replicas-and-recovery-points.png)
 
 Administrators recover data from available recovery points by using the Recovery Wizard in DPM Administrator Console. When you select a data source and point in time from which to recover, DPM notifies you if the data is on tape, whether the tape is online or offline, and which tapes are needed to complete the recovery.
 
