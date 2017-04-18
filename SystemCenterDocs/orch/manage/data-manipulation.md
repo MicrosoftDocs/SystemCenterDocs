@@ -22,7 +22,7 @@ With System Center 2016 - Orchestrator, you can manipulate string data from text
 
 ## Data Manipulation  
 
--   [Computer Groups](../manage/computer-groups.md)  
+-   [Computer Groups](../../orchestrator/computer-groups.md)  
 
 -   [Counters](../manage/counters.md)  
 

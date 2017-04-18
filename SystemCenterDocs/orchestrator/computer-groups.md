@@ -75,4 +75,4 @@ Use the following procedure to use a computer group.
     When the activity runs, it runs on each computer in the group.  
 
 ## See Also  
-[Data Manipulation](../manage/data-manipulation.md)  
+[Data Manipulation](../orch/manage/data-manipulation.md)  
