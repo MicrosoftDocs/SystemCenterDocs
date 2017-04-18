@@ -110,64 +110,64 @@ For a list of the data elements published by each activity, see the Published Da
 
 This integration pack adds the Microsoft Active Directory category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Computer To Group](add-computer-to-group.md)
+[Add Computer To Group](../orch/manage/add-computer-to-group.md)
 
-[Add Group To Group](add-group-to-group.md)
+[Add Group To Group](../orch/manage/add-group-to-group.md)
 
-[Add User To Group](add-user-to-group.md)
+[Add User To Group](../orch/manage/add-user-to-group.md)
 
-[Create Computer](create-computer.md)
+[Create Computer](../orch/manage/create-computer.md)
 
-[Create Group](create-group.md)
+[Create Group](../orch/manage/create-group.md)
 
-[Create User](create-user.md)
+[Create User](../orch/manage/create-user.md)
 
-[Delete Computer](delete-computer.md)
+[Delete Computer](../orch/manage/delete-computer.md)
 
-[Delete Group](delete-group.md)
+[Delete Group](../orch/manage/delete-group.md)
 
-[Delete User](delete-user.md)
+[Delete User](../orch/manage/delete-user.md)
 
-[Disable Computer](disable-computer.md)
+[Disable Computer](../orch/manage/disable-computer.md)
 
-[Disable User](disable-user.md)
+[Disable User](../orch/manage/disable-user.md)
 
-[Enable Computer](enable-computer.md)
+[Enable Computer](../orch/manage/enable-computer.md)
 
-[Enable User](enable-user.md)
+[Enable User](../orch/manage/enable-user.md)
 
-[Get Computer](get-computer.md)
+[Get Computer](../orch/manage/get-computer.md)
 
-[Get Group](get-group.md)
+[Get Group](../orch/manage/get-group.md)
 
-[Get Organizational Unit](get-organizational-unit.md)
+[Get Organizational Unit](../orch/manage/get-organizational-unit.md)
 
-[Get User](get-user.md)
+[Get User](../orch/manage/get-user.md)
 
-[Move Computer](move-computer.md)
+[Move Computer](../orch/manage/move-computer.md)
 
-[Move Group](move-group.md)
+[Move Group](../orch/manage/move-group.md)
 
-[Move User](move-user.md)
+[Move User](../orch/manage/move-user.md)
 
-[Remove Computer From Group](remove-computer-from-group.md)
+[Remove Computer From Group](../orch/manage/remove-computer-from-group.md)
 
-[Remove Group From Group](remove-group-from-group.md)
+[Remove Group From Group](../orch/manage/remove-group-from-group.md)
 
-[Remove User From Group](remove-user-from-group.md)
+[Remove User From Group](../orch/manage/remove-user-from-group.md)
 
-[Rename Group](rename-group.md)
+[Rename Group](../orch/manage/rename-group.md)
 
-[Rename User](rename-user.md)
+[Rename User](../orch/manage/rename-user.md)
 
-[Reset User Password](reset-user-password.md)
+[Reset User Password](../orch/manage/reset-user-password.md)
 
-[Unlock User](unlock-user.md)
+[Unlock User](../orch/manage/unlock-user.md)
 
-[Update Computer](update-computer.md)
+[Update Computer](../orch/manage/update-computer.md)
 
-[Update Group](update-group.md)
+[Update Group](../orch/manage/update-group.md)
 
-[Update User](update-user.md)
+[Update User](../orch/manage/update-user.md)
 
 

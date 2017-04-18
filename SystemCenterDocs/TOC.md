@@ -271,7 +271,7 @@
 #### [How to work with runbooks in the Orchestrator console](orch/manage/how-to-work-with-runbooks-in-the-orchestration-console.md)
 #### [Integration packs](orch/manage/integration-packs.md)
 ##### [Active Directory](orchestrator/active-directory-integration-pack.md)
-###### [Active Directory Activities](orch/manage/active-directory-activities.md)
+###### [Active Directory Activities](orchestrator/active-directory-activities.md)
 ####### [Add Computer To Group](orch/manage/add-computer-to-group.md)
 ####### [Add Group To Group](orch/manage/add-group-to-group.md)
 #######[Add User To Group](orch/manage/add-user-to-group.md)
