@@ -42,7 +42,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [Install the Visio Add-in](manage-visio-addin-install-configure.md)  
   
--   [Install and Configure the Visio Services Data Provider](../om/manage/install-and-configure-the-visio-services-data-provider.md)  
+-   [Install and Configure the Visio Services Data Provider](manage-visio-addin-install-data-provider.md)  
   
 -   [Configure the Operations Manager Data Source in Visio](../om/manage/configure-the-operations-manager-data-source-in-visio.md)  
   
