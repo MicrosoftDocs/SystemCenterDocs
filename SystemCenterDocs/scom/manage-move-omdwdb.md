@@ -25,7 +25,7 @@ During the move, you need to stop services on your management servers, back up t
 
 ## Summary of steps
 
-![Summary steps for moving Reporting DW database](../media/om2016-move-reporting-dw-database-steps.png)<br> 
+![Summary steps for moving Reporting DW database](./media/manage-move-omdwdb/om2016-move-reporting-dw-database-steps.png)<br> 
 
 ## Moving the Reporting data warehouse database
 
@@ -54,11 +54,11 @@ On all the management servers in the management group, stop the Operations Manag
 
 ### Update the registry on the management servers and Reporting data warehouse database
 
-After moving the Operations Manager Reporting data warehouse database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](../../scom/manage-sqlserver-communication.md#how-to-configure-the-operations-manager-reporting-data-warehouse-database).
+After moving the Operations Manager Reporting data warehouse database to a different SQL Server instance, you will need to follow the steps below to reconfigure all management servers in the management group to reference the new computer name and instance.  This requires modifying the registry, the configuration service configuration file, and several tables in the operational database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-reporting-data-warehouse-database).
 
 ### Update Reporting server
 
-On the reporting server, you will need to change the connection string to reference the new computer name and instance of the SQL Server instance hosting the Reporting data warehouse database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](../../scom/manage-sqlserver-communication.md#update-reporting-server).  
+On the reporting server, you will need to change the connection string to reference the new computer name and instance of the SQL Server instance hosting the Reporting data warehouse database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#update-reporting-server).  
 
 ### Update security credentials on the new SQL Server instance hosting the Reporting data warehouse database 
 
@@ -106,4 +106,4 @@ On the reporting server, you will need to change the connection string to refere
 
 ## Next steps
 
-- See [How to move the Operational database](../../scom/manage-move-opsdb.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  
+- See [How to move the Operational database](manage-move-opsdb.md) to understand the sequence and steps for moving the Operations Manager operational database to a new SQL Server instance.  

@@ -114,4 +114,4 @@ After moving the Operations Manager operational database to a different SQL Serv
  
 ## Next steps
 
-- See [How to move the Reporting data warehouse database](../om/manage/how-to-move-the-reporting-data-warehouse-database.md) to understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance.
+- See [How to move the Reporting data warehouse database](manage-move-omdwdb.md) to understand the sequence and steps for moving the Operations Manager Reporting data warehouse database to a new SQL Server instance.

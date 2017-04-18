@@ -22,7 +22,7 @@ Operations Manager supports changes to your Operations Manager infrastructure as
 
 - [How to move the Operational database](../../scom/manage-move-opsdb.md)
 
-- [How to move the Reporting data warehouse database](how-to-move-the-reporting-data-warehouse-database.md)
+- [How to move the Reporting data warehouse database](../../scom/manage-move-omdwdb.md)
 
 - [How to Configure Operations Manager to Communicate with SQL Server](../../scom/manage-sqlserver-communication.md)
 
