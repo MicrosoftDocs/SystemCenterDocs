@@ -122,7 +122,7 @@ The Operations Manager Integration Pack adds the **SC 2016 Operations Manager** 
 
 [Monitor State](monitor-state.md)
 
-[Start Maintenance Mode](../orch/manage/start-maintenance-mode.md)
+[Start Maintenance Mode](start-maintenance-mode.md)
 
 [Stop Maintenance Mode](../orch/manage/stop-maintenance-mode.md)
 

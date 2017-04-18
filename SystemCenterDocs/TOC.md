@@ -498,7 +498,7 @@
 #######[Get monitor](orchestrator/get-monitor.md)
 #######[Monitor alert](orchestrator/monitor-alert.md)
 #######[Monitor state](orchestrator/monitor-state.md)
-#######[Start maintenance mode](orch/manage/start-maintenance-mode.md)
+#######[Start maintenance mode](orchestrator/start-maintenance-mode.md)
 #######[Stop maintenance mode](orch/manage/stop-maintenance-mode.md)
 #######[Update alert](orch/manage/update-alert.md)
 ##### [Service Manager](orch/manage/integration-pack-for-service-manager.md)
