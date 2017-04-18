@@ -33,7 +33,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager in System Center 2016. 
 
-- [Supported Versions of Linux and UNIX](../om/plan/supported-unix-and-linux-operating-system-versions.md)
+- [Supported Versions of Linux and UNIX](plan-supported-crossplat-os.md)
 
     Provides the supported and required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.  
 
