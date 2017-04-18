@@ -19,11 +19,11 @@ You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts a
 
 - **Bare metal deployment of Nano Server-based hosts and clusters (both compute and storage)**
 
-You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. This process is very similar to bare metal deployment of Full Servers except for the fact that the VHD(x) used for the operating system deployment needs to be a Nano Server-based VHD(x). Details regarding how to create a Nano Server VHD(x) can be found below in this article. For more details regarding bare-metal deployment of Nano Server-based hosts & clusters see [Provision a Hyper-V host or cluster from bare metal computers](manage-compute-bare-metal-hyper-v.md).
+You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. This process is very similar to bare metal deployment of Full Servers except for the fact that the VHD(x) used for the operating system deployment needs to be a Nano Server-based VHD(x). Details regarding how to create a Nano Server VHD(x) can be found below in this article. For more details regarding bare-metal deployment of Nano Server-based hosts & clusters see [Provision a Hyper-V host or cluster from bare metal computers](manage/manage-compute-bare-metal-hyper-v.md).
 
 - **Management of Nano Server-based hosts and clusters (both compute and storage)**
 
-Along with bare metal deployment, you can also add and manage existing Nano Server-based standalone hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For more details, see [Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric](../hyper-v-existing.md).
+Along with bare metal deployment, you can also add and manage existing Nano Server-based standalone hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For more details, see [Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric](hyper-v-existing.md).
 
 
 ## Before you start
@@ -108,7 +108,7 @@ We recommend offline installation of the VMM packages (when creating the VHD) bu
 
 ## Add the Nano server host to the VMM fabric  
 
-After the Nano server host is ready, add it to VMM in the same way that you [add a regular Windows server](../hyper-v-existing.md).
+After the Nano server host is ready, add it to VMM in the same way that you [add a regular Windows server](hyper-v-existing.md).
 
 ## Create a Nano server VM
 

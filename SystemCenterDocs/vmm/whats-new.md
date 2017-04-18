@@ -22,7 +22,7 @@ This article describes what's new in System Center 2016 - Virtual Machine Manage
 ## Compute
 
 ### Full lifecycle management of Nano Server-based hosts and VMs
-You can provision and manage Nano Server-based hosts and virtual machines in the VMM fabric. [Learn more](manage/manage-compute-add-nano-hyper-v.md).
+You can provision and manage Nano Server-based hosts and virtual machines in the VMM fabric. [Learn more](hyper-v-nano.md).
 
 ### Rolling upgrade of a Windows Server 2012 R2 host clusters
 
