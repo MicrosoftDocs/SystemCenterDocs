@@ -30,7 +30,7 @@ Using Service Manager, you can automate many administrative processes that previ
 
      Describes how to create workflows for IT processes.  
 
--   [How to Deploy a Workflow to Service Manager](../sm/manage/author-how-to-deploy-a-workflow-to-service-manager.md)  
+-   [How to Deploy a Workflow to Service Manager](deploy-workflow.md)  
 
      Describes how to deploy a workflow in Service Manager.  
 

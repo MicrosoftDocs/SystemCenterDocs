@@ -166,7 +166,7 @@ For general information about these steps, see [How to Set an Activity Property 
 
 In this step of the Woodgrove Bank customization scenario, in System Center - Service Manager Ken must move the workflow assembly file and the form assembly file to the Service Manager program directory to use the workflow with the Service Manager console.  
 
-For general information about deploying a workflow to Service Manager, see [How to Deploy a Workflow to Service Manager](author-how-to-deploy-a-workflow-to-service-manager.md).  
+For general information about deploying a workflow to Service Manager, see [How to Deploy a Workflow to Service Manager](../../scsm/deploy-workflow.md).  
 
 ### To move the assembly files  
 
