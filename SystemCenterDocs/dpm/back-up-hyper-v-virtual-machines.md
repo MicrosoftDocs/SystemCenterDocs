@@ -31,7 +31,7 @@ DPM can back up virtual machines running on Hyper-V host servers in the followin
 
 -   **[Back up replica virtual machines](#BKMK_Replica)** - Back up replica virtual machines running on a secondary server (DPM 2012 R2 only)
 
-Learn about supported DPM and Hyper-V versions in [What can DPM back up?](../dpm-protection-matrix.md) .
+Learn about supported DPM and Hyper-V versions in [What can DPM back up?](dpm-protection-matrix.md) .
 
 ## <a name="BKMK_Online"></a>Host vs Guest backup
 DPM can perform a host or guest-level backup of Hyper-V VMs. At the host level the DPM protection agent is installed on the Hyper-V host server or cluster and protects the entire VMs and data files running on that host.   At the guest level the agent is installed on each virtual machine and protects the workload present on that machine.

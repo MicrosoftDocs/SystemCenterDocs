@@ -25,7 +25,7 @@ DPM provides backup and recovery for Exchange 2013. You can back up the followin
 ## Prerequisites and limitations
 Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
 
--   Review the [Release Notes for System Center 2016](../../get-started/release-notes.md) and [What's supported and what isn't for DPM?](../dpm-support-issues.md) to check for any Exchange issues.
+-   Review the [Release Notes for System Center 2016](../get-started/release-notes.md) and [What's supported and what isn't for DPM?](dpm-support-issues.md) to check for any Exchange issues.
 
 -   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you'll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
 
@@ -92,15 +92,15 @@ However native protection might not be enough if application errors, corruptions
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../dpm-protection-matrix.md)
+    -   [What can DPM back up?](dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+    -   [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
-    -   [Get DPM installed](../install-dpm.md)
+    -   [Get DPM installed](install-dpm.md)
 
-2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
+2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Configure backup
 
@@ -108,7 +108,7 @@ However native protection might not be enough if application errors, corruptions
 
 2.  In **Select Protection Group Type** select **Servers**.
 
-3.  In **Select Group Members** select all the DAGs that store data you want to protect. For each Exchange server you can also select to do a system state backup or full bare metal backup (which includes the system state. This in useful if you want the ability to recover your entire server and not just data.   [Deploy protection groups](../create-dpm-protection-groups.md).
+3.  In **Select Group Members** select all the DAGs that store data you want to protect. For each Exchange server you can also select to do a system state backup or full bare metal backup (which includes the system state. This in useful if you want the ability to recover your entire server and not just data.   [Deploy protection groups](create-dpm-protection-groups.md).
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
