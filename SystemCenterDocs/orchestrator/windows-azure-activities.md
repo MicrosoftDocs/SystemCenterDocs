@@ -164,7 +164,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Delete Service Certificate](delete-service-certificate.md)
 
-[Delete Storage Account](../orch/manage/delete-storage-account.md)
+[Delete Storage Account](delete-storage-account.md)
 
 [Delete VM Data Disk](../orch/manage/delete-vm-data-disk.md)
 

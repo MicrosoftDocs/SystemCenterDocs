@@ -329,7 +329,7 @@
 #######[Delete management certificate](orchestrator/delete-management-certificate.md)
 #######[Delete os image](orchestrator/delete-os-image.md)
 #######[Delete service certificate](orchestrator/delete-service-certificate.md)
-#######[Delete storage account](orch/manage/delete-storage-account.md)
+#######[Delete storage account](orchestrator/delete-storage-account.md)
 #######[Delete vm data disk](orch/manage/delete-vm-data-disk.md)
 #######[Delete vm disk](orch/manage/delete-vm-disk.md)
 #######[Delete vm instance](orch/manage/delete-vm-instance.md)
