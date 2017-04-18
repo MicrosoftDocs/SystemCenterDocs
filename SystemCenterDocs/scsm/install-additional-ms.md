@@ -63,4 +63,4 @@ When you install a secondary management server, data retention settings are rese
 
 ## Next steps
 
-- Review [Copy customized workflow assembly files before you upgrade](upgrade-how-to-copy-the-workflow-assembly-files.md).
+- Review [Copy customized workflow assembly files before you upgrade](../sm/deploy/upgrade-how-to-copy-the-workflow-assembly-files.md).
