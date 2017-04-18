@@ -116,7 +116,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Add User To Group](add-user-to-group.md)
 
-[Create Computer](../orch/manage/create-computer.md)
+[Create Computer](create-computer.md)
 
 [Create Group](../orch/manage/create-group.md)
 
