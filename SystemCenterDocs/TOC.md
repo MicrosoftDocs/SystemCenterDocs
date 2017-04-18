@@ -133,7 +133,7 @@
 ###### [How to run, save, and export reports](scom/manage-reports-run-save-export.md)
 ###### [How to configure and modify report schedules](scom/manage-reports-config-modify-schedules.md)
 ##### [Not monitored and gray agents](scom/manage-agents-not-healthy.md)
-##### [How to view all rules and monitors running on agent-managed computer](om/manage/how-to-view-all-rules-and-monitors-running-on-an-agent-managed-computer.md)
+##### [How to view all rules and monitors running on agent-managed computer](scom/manage-agents-identify-all-running-workflows.md)
 ##### [Finding data and objects in the consoles](scom/manage-console-finding-data.md)
 ###### [Using advanced search](om/manage/using-advanced-search.md)
 ##### [Configure SharePoint to view Operations Manager data](om/manage/using-sharepoint-to-view-operations-manager-data.md)
