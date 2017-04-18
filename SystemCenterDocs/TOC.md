@@ -305,7 +305,7 @@
 ##### [Azure Integration Pack](orchestrator/windows-azure-integration-pack.md)
 ###### [Azure Integration Pack Activities](orchestrator/windows-azure-activities.md)
 #######[Add management certificate](orchestrator/add-management-certificate.md)
-#######[Add OS image](orch/manage/add-OS-image.md)
+#######[Add OS image](orchestrator/add-OS-image.md)
 #######[Add service certificate](orch/manage/add-service-certificate.md)
 #######[Add vm data disk](orch/manage/add-vm-data-disk.md)
 #######[Add vm disk](orch/manage/add-vm-disk.md)
