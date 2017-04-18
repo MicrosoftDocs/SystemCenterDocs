@@ -693,7 +693,7 @@
 #### [Manage knowledge articles](scsm/knowledge-articles.md)
 #### [Configure and use Service Manager cmdlets](scsm/sm-cmdlets.md)
 #### [Manage the data warehouse](scsm/manage-dw.md)
-##### [Register source systems to the data warehouse](sm/manage/admin-registering-source-systems-to-the-system-center-data-warehouse.md)
+##### [Register source systems to the data warehouse](scsm/register-sources-to-dw.md)
 #### [Troubleshoot computer problems with tasks](sm/manage/admin-using-service-manager-tasks-to-troubleshoot-computer-problems.md)
 #### [Configure your preference for sharing diagnostic and usage data](sm/manage/admin-configure-system-center-2016-service-manager-ceip-settings.md)
 #### [User role profiles](sm/manage/admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md)
