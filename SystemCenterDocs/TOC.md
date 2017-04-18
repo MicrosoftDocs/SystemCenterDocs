@@ -735,7 +735,7 @@
 ##### [Customize the default incident form for the Authoring Tool sample scenario](scsm/customize-default-incident-form.md)
 ##### [Form control properties in the Authoring Tool](scsm/form-control-properties.md)
 #### [Customize and Author workflows](scsm/customize-author-workflows.md)
-##### [Automate IT processes with workflows](sm/manage/author-automating-it-processes-with-workflows.md)
+##### [Automate IT processes with workflows](scsm/automate-processes-workflows.md)
 ##### Create workflows for IT processes
 ###### [Manage workflows with the Authoring Tool](sm/manage/author-managing-workflows.md)
 ###### [Add or remove workflow activities](sm/manage/author-adding-or-removing-workflow-activities.md)
