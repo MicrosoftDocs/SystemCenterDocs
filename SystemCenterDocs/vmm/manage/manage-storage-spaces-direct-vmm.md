@@ -73,7 +73,7 @@ Set up the cluster as follows:
 
     ![Create storage spaces direct cluster](../media/storage-spaces-direct-enable.png)
 
-3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](manage-compute-add-existing-servers.md). Note that you have to validate the cluster when Storage Spaces Direct is enabled.
+3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](../hyper-v-existing.md). Note that you have to validate the cluster when Storage Spaces Direct is enabled.
 
 As part of creating this cluster, VMM performs the following steps:
 

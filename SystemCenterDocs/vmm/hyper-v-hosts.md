@@ -22,7 +22,7 @@ You can manage medium, large, and enterprise-scale Hyper-V deployments in the VM
 In the VMM fabric you can:
 
 - [Perform rolling upgrades](hyper-v-rolling-upgrade.md) of Hyper-V clusters in the VMM fabric.
-- [Add existing Windows servers and clusters](manage/manage-compute-add-existing-servers.md) with or without the Hyper-V role to the VMM fabric.
+- [Add existing Windows servers and clusters](hyper-v-existing.md) with or without the Hyper-V role to the VMM fabric.
 - [Add a Nano server](manage/manage-compute-add-nano-hyper-v.md) as a Hyper-V host or cluster in the VMM fabric.
 - [Create a Hyper-V cluster](manage/manage-compute-create-cluster-from-standalone.md) from existing standalone Hyper-V hosts in the VMM fabric.
 - [Provision a Hyper-V host or cluster from bare metal](manage/manage-compute-bare-metal-hyper-v.md) in the VMM fabric.

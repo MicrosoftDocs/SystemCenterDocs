@@ -48,7 +48,7 @@ In a hyper-converged topology storage and compute are on the same cluster. Here'
 
 1. Click **Fabric Resources** > **Create** > **Hyper-V Cluster**.
 2.  In **General Configuration**, specify a cluster name, select a host group, and select  **Enable Storage Spaces Direct**.
-3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](../manage/manage-compute-add-existing-servers.md). Note that you have to validate the cluster when S2D is enabled.
+3. The rest of the steps are identical to the instructions for [creating a Hyper-V host cluster with an existing server](../hyper-v-existing.md). Note that you have to validate the cluster when S2D is enabled.
 
 When you create the cluster, VMM does the following:
 
