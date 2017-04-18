@@ -157,7 +157,7 @@
 ###### [Install and configure the Visio Services data provider](scom/manage-visio-addin-install-data-provider.md)
 ###### [Configure the Operations Manager data source in Visio](scom/manage-visio-addin-configure-datasource.md)
 ###### [View an Operations Manager distributed diagram in Visio](scom/manage-visio-addin-view-dad-in-visio.md)
-###### [Link to Operations Manager objects in a new or existing Visio dcocument](om/manage/link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)
+###### [Link to Operations Manager objects in a new or existing Visio dcocument](scom/manage-visio-addin-link-objects.md)
 ###### [Build a simple monitoring dashboard using the Visio Web Part](om/manage/build-a-simple-monitoring-dashboard-using-the-visio-web-part.md)
 ###### [Publish a Visio diagram to SharePoint Server](om/manage/publish-a-visio-diagram-to-sharepoint.md)
 ###### [Change the way Health State is represented in Visio](om/manage/change-the-way-health-state-is-represented-in-visio.md)
