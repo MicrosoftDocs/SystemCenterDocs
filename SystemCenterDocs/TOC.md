@@ -54,7 +54,7 @@
 #### [What's New in Operations Manager](scom/what-is-new.md)
 #### [Walkthrough: Installing Operations Manager on a Single Server](om/get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md)
 #### [Installing Operations Manager from the Command Prompt](om/deploy/installing-operations-manager-by-using-the-command-prompt-window.md)
-### [Plan](om/plan/plan-summary.md)
+### [Plan](scom/plan-overview.md)
 #### [System Requirements](om/plan/system-requirements.md)
 #### [Supported Versions of UNIX and Linux](om/plan/supported-unix-and-linux-operating-system-versions.md)
 #### [Planning a management group design](om/plan/planning-a-management-group-design.md)
