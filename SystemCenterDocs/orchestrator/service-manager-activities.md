@@ -143,7 +143,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Get Activity](get-activity.md)
 
-[Get Object](../orch/manage/get-object.md)
+[Get Object](get-object.md)
 
 [Get Relationship](../orch/manage/get-relationship.md)
 
