@@ -99,4 +99,4 @@ You can monitor VMM processes and state in any of the VMM dashboards that appear
 
 ## Next steps
 
-- [Run VMM reports](manage-monitor-overview.md#report-with-operations-manager) in Operations Manager
+- [Run VMM reports](../monitor.md#report-with-operations-manager) in Operations Manager
