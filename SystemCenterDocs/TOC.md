@@ -803,7 +803,7 @@
 ##### [Set up networking for Hyper-V hosts and clusters](vmm/hyper-v-network.md)
 ##### [Set up storage for Hyper-V hosts and clusters](vmm/hyper-v-storage.md)
 ##### [Update Hyper-V hosts and clusters](vmm/hyper-v-update.md)
-##### [Manage MPIO for Hyper-V hosts and clusters](vmm/manage/manage-compute-mpio-hyper-v.md)
+##### [Manage MPIO for Hyper-V hosts and clusters](vmm/hyper-v-mpio.md)
 ##### [Manage Hyper-V extended port ACLs](vmm/manage/manage-compute-extended-port-acls.md)
 ##### [Service hosts](vmm/manage/manage-compute-host-service.md)
 #### [Manage VMware servers](vmm/manage/manage-compute-add-vmware.md)

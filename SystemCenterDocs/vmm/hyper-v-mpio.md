@@ -19,7 +19,7 @@ ms.technology:  virtual-machine-manager
 Read this article to learn about how System Center 2016 - Virtual Machine Manager (VMM) manages Multipath I/O (MPIO) on Hyper-V hosts.
 
 When you add fiber channel or iSCSI storage to a Hyper-V host managed in the VMM fabirc, he Multipath I/O (MPIO) feature must be enabled on each host.
- - If MPIO is enabled on the host, VMM adds it for [supported storage arrays](../supported-arrays.md) using the Microsoft DSM. If you installed vendor-specific DSMs, then the vendor-specific MPIO settings will be used to connect to the storage array.
+ - If MPIO is enabled on the host, VMM adds it for [supported storage arrays](supported-arrays.md) using the Microsoft DSM. If you installed vendor-specific DSMs, then the vendor-specific MPIO settings will be used to connect to the storage array.
  - If you add a host and MPIO isn't enabled, VMM will show a warning message in the **Jobs** window.
  - If you add a host to VMM and enable MPIO afterwards, you need to add the MPIO feature, and then manually configure MPIO to add the discovered device hardware IDs. Alternatively, you can install vendor-specific DSMs.
 
