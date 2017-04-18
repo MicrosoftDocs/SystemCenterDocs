@@ -115,36 +115,36 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **Exchange Admin** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Mailbox](create-mailbox.md)
+[Create Mailbox](../orch/manage/create-mailbox.md)
 
-[Create Move Request](create-move-request.md)
+[Create Move Request](../orch/manage/create-move-request.md)
 
-[Create Remote Mailbox (Hybrid)](create-remote-mailbox-hybrid.md)
+[Create Remote Mailbox (Hybrid)](../orch/manage/create-remote-mailbox-hybrid.md)
 
-[Disable Mailbox](disable-mailbox.md)
+[Disable Mailbox](../orch/manage/disable-mailbox.md)
 
-[Disable Remote Mailbox (Hybrid)](disable-remote-mailbox-hybrid.md)
+[Disable Remote Mailbox (Hybrid)](../orch/manage/disable-remote-mailbox-hybrid.md)
 
-[Enable Mailbox](enable-mailbox.md)
+[Enable Mailbox](../orch/manage/enable-mailbox.md)
 
-[Enable Remote Mailbox (Hybrid)](enable-remote-mailbox-hybrid.md)
+[Enable Remote Mailbox (Hybrid)](../orch/manage/enable-remote-mailbox-hybrid.md)
 
-[Get Mailbox](get-mailbox.md)
+[Get Mailbox](../orch/manage/get-mailbox.md)
 
-[Get Move Request](get-move-request.md)
+[Get Move Request](../orch/manage/get-move-request.md)
 
-[Get Move Request Statistics](get-move-request-statistics.md)
+[Get Move Request Statistics](../orch/manage/get-move-request-statistics.md)
 
-[Get Remote Mailbox (Hybrid)](get-remote-mailbox-hybrid.md)
+[Get Remote Mailbox (Hybrid)](../orch/manage/get-remote-mailbox-hybrid.md)
 
-[Remove Mailbox](remove-mailbox.md)
+[Remove Mailbox](../orch/manage/remove-mailbox.md)
 
-[Remove Remote Mailbox (Hybrid)](remove-remote-mailbox-hybrid.md)
+[Remove Remote Mailbox (Hybrid)](../orch/manage/remove-remote-mailbox-hybrid.md)
 
-[Run Exchange PowerShell Command](run-exchange-powershell-command.md)
+[Run Exchange PowerShell Command](../orch/manage/run-exchange-powershell-command.md)
 
-[Update Mailbox](update-mailbox.md)
+[Update Mailbox](../orch/manage/update-mailbox.md)
 
-[Update Move Request](update-move-request.md)
+[Update Move Request](../orch/manage/update-move-request.md)
 
-[Update Remote Mailbox (Hybrid)](update-remote-mailbox-hybrid.md)
+[Update Remote Mailbox (Hybrid)](../orch/manage/update-remote-mailbox-hybrid.md)

@@ -368,7 +368,7 @@
 #######[Upgrade deployment](orchestrator/upgrade-deployment.md)
 #######[Walk upgrade domain](orchestrator/walk-upgrade-domain.md)
 ##### [Exchange Administrator](orchestrator/exchange-admin-integration-pack.md)
-###### [Exchange Administrator Activities](orch/manage/exchange-administrator-activities.md)
+###### [Exchange Administrator Activities](orchestrator/exchange-administrator-activities.md)
 #######[Create mailbox](orch/manage/create-mailbox.md)
 #######[Create move request](orch/manage/create-move-request.md)
 #######[Create remote mailbox hybrid](orch/manage/create-remote-mailbox-hybrid.md)
