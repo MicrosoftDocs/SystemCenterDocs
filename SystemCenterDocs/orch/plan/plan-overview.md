@@ -22,7 +22,7 @@ This guide provides recommendations to help you develop a strategy for deploying
 
 ## Planning guide topics
 
-- [Feature Performance Considerations](feature-performance-considerations.md)
+- [Feature Performance Considerations](../../orchestrator/feature-performance-considerations.md)
 
     Provides information about how to estimate the capacity required for your automation workload.
 
