@@ -28,7 +28,7 @@ You can deploy DPM for:
 
 -   **Hyper-V backup**: Back up Hyper-V virtual machines (VM) running Windows or Linux. You can back up an entire VM, or run application-aware backups of Microsoft workloads on Hyper-V VMs running Windows.
 
--   Get a full list in [What can DPM back up?](get-started/What-can-DPM-back-up-.md)
+-   Get a full list in [What can DPM back up?](get-started/what-can-dpm-back-up-.md)
 
 DPM can store backup data to:
 
@@ -40,7 +40,7 @@ DPM can store backup data to:
 
 When outages occur and source data is unavailable, you can use DPM to easily restore data to the original source or to an alternate location. That way, if the original data is unavailable because of planned or unexpected issues, you can easily restore data from an alternate location. DPM uses SQL Server as its database and you protect the DPM server itself for disaster recovery purposes. The following diagram provides an overview of DPM backup functionality.
 
-![Overview of DPM backup workflow](./media/dpm-backup.png)
+![Overview of DPM backup workflow](./media/dpm-overview/dpm-backup.png)
 
 ## Next steps
-Learn more in [How does DPM work?](get-started/How-does-DPM-work-.md)
+Learn more in [How does DPM work?](get-started/how-does-dpm-work-.md)

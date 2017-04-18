@@ -44,7 +44,7 @@ You can download System Center 2016 from the [TechNet Evaluation Center](http://
 
 ## Components
 
--   [Data Protection Manager](dpm/Data-Protection-Manager.md)
+-   [Data Protection Manager](dpm/dpm-overview.md)
 
 -   [Operations Manager](om/welcome-to-operations-manager.md)
 
