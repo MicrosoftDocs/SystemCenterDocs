@@ -150,7 +150,7 @@ Before you use these procedures, make sure that you import the SQL Server manage
 4.  Optionally, you can perform actions in the **Tasks** list, in the same manner as you do for other configuration items.
 5.  If you have made any changes to the item, click **OK**; otherwise, click **Cancel** to close the form.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
+![PowerShell symbol](./media/config-items/pssymbol.png)You can use Windows PowerShell commands to display views that are defined in Service Manager. For more information, see [Get-SCSMView](http://go.microsoft.com/fwlink/p/?LinkID=225344).
 
 ## Delete configuration items
 
@@ -176,7 +176,7 @@ You can use the following procedures to initiate the deletion of a configuration
     > [!NOTE]
     > At this point, the configuration item has been moved to a **Deleted Item** view that is only available to members of the Administrator user role. An administrator must permanently delete the configuration item.
 
-![PowerShell icon](../media/pssymbol.png) You can use Windows PowerShell commands to complete these tasks, as follows:
+![PowerShell icon](./media/config-items/pssymbol.png) You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to initiate the deletion of a configuration item by updating the `PendingDelete` property value, see [Update-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225420).
 -   For information about how to use Windows PowerShell to retrieve items that have been marked for deletion in Service Manager, see [Get-SCSMDeleteditem](http://go.microsoft.com/fwlink/p/?LinkId=225322).
@@ -212,7 +212,7 @@ After members of the Advanced Operators, Authors, or Administrators user roles h
 
 6.  In the **Delete Item** dialog box, make sure that you selected the correct items, and then click **Yes**.
 
-![PowerShell icon](../media/pssymbol.png) You can use Windows PowerShell commands to complete these tasks, as follows:
+![PowerShell icon](./media/config-items/pssymbol.png) You can use Windows PowerShell commands to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to permanently remove an instance of a configuration item object, see [Remove-SCSMClassInstance](http://go.microsoft.com/fwlink/p/?LinkID=225414).
 -   For information about how to use Windows PowerShell to restore items that were previously marked for deletion in Service Manager, see [Restore-SCSMDeleteItem](http://go.microsoft.com/fwlink/p/?LinkID=225374).
