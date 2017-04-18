@@ -24,7 +24,7 @@ The success or failure of a workflow is retained by Service Manager, and it is a
 
 ## Configure incident workflows
 
-You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](admin-how-to-set-incident-priority.md) and To create a new printer-related incident template in [How to Create Incident Templates](admin-how-to-create-incident-templates.md).
+You can use the following procedure to create and configure a workflow rule that will change the support tier to **Tier 2** whenever the **Urgency** property of an incident that is related to printing problems is changed to **High**. This procedure assumes that you already created an incident template to change the support tier to **Tier 2**, and it assumes that you already created the priority calculation table. For more information, see [How to Set Incident Priority](../sm/manage/admin-how-to-set-incident-priority.md) and To create a new printer-related incident template in [How to Create Incident Templates](../sm/manage/admin-how-to-create-incident-templates.md).
 
 ### To configure an incident workflow
 
@@ -51,7 +51,7 @@ You can use the following procedure to create and configure a workflow rule that
 4.  In the **Incident Form** page, set the **Urgency** property to **High**, and then click **OK**.
 5.  In a few minutes, press F5. Verify that the value in the **Support Group** box changed to **Tier 2**.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![PowerShell symbol](./media/workflows/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225361).
 -   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
@@ -72,4 +72,4 @@ Use the following procedure to view the success or failure instances of the work
     2.  Click **View related object** to view the form that was used when the workflow ran.
     The status of each workflow is displayed in the **Status** column.
 
-![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
+![PowerShell symbol](./media/workflows/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
