@@ -69,6 +69,6 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Own/Disown Message](../../orchestrator/own-or-disown-message.md)
 
-[Set Custom Attribute](set-custom-attribute.md)
+[Set Custom Attribute](../../orchestrator/set-custom-attribute.md)
 
 [Update Message](update-message.md)
