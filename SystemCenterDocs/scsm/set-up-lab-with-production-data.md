@@ -44,7 +44,7 @@ This article explains how to create a lab environment and populate it with produ
 
 19. If you want to test the email notification and incoming email functionality, use a separate SMTP instance to send emails to eliminate flooding the inboxes of users with test emails. To test the incoming email feature, you can point to a test share and drop the eml files into this share when you are ready to test.
 20. [Install a New Data Warehouse Server in the Lab Environment](install-new-dw-server.md)
-21. [Register the Data Warehouse Server in the Lab Environment](../sm/deploy/upgrade-how-to-register-the-data-warehouse-server-in-the-lab-environment.md)
+21. [Register the Data Warehouse Server in the Lab Environment](register-dw-in-lab.md)
 22. Back up this lab environment; for example, back up the database and encryption keys and VM Snapshots This gives you the ability to recover in case the upgrade fails.
 23. If you are able to successfully complete all the previous steps, you are ready to attempt the in-place upgrade.
 24. Test everything. Document any discrepancies and fixes. Send feedback through the MS Connect web site.
