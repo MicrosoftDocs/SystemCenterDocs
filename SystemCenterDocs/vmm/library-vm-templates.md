@@ -64,4 +64,4 @@ You can create VMs based on the template you've just created.
 
 ## Next steps
 
-You can [create VMs based on the template](manage/manage-vm-template.md) you've just created.
+You can [create VMs based on the template](vm-template.md) you've just created.

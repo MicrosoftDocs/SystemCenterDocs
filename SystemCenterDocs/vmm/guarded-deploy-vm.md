@@ -59,7 +59,7 @@ To manage your imported shielding data files, go to **Library** > **VM Shielding
 3.	In **Select Source**, click **Use an existing virtual machine, VM template, or virtual hard disk** > **Browse**.
 4.	Select a shielded VM template or signed template disk. Both are identified by the shield icon ![Shield Icon in VMM](./media/guarded-deploy-vm/guarded-shield.png).
 5.	In **Select Shielding Data File**, click **Browse** and select a shielding data file. Only shielding data files that can be used to create a new shielded VM will be shown. Click **OK** > **Next** to continue.
-6.	Follow [these instructions](manage/manage-vm-template.md) to complete the wizard, and to deploy the VM on a host/cloud.
+6.	Follow [these instructions](vm-template.md) to complete the wizard, and to deploy the VM on a host/cloud.
 
 When you complete the wizard, VMM creates a new shielded VM from the disk or template:
 
