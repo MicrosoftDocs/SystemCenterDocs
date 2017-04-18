@@ -43,7 +43,7 @@ Two Run As profiles are created when you install Operations Manager: SNMP Monito
   
 ## Next steps
 
-- Learn [How to discover network devices in Operations Manager](how-to-discover-network-devices-in-operations-manager.md).    
+- Learn [How to discover network devices in Operations Manager](../../scom/manage-monitor-networkdevice-overview.md).    
 
 - To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](how-to-delete-or-restore-a-network-device-in-operations-manager.md).    
 
