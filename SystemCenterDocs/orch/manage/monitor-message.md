@@ -125,7 +125,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Delete Custom Attribute](../../orchestrator/delete-custom-attribute.md)
 
-[Get Annotation](get-annotation.md)
+[Get Annotation](../../orchestrator/get-annotation.md)
 
 [Get Message](get-message.md)
 

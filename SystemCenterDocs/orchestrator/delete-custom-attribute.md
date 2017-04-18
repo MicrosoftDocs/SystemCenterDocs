@@ -52,7 +52,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Delete Annotation](delete-annotation.md)
 
-[Get Annotation](../orch/manage/get-annotation.md)
+[Get Annotation](get-annotation.md)
 
 [Get Message](../orch/manage/get-message.md)
 
