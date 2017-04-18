@@ -118,4 +118,4 @@ This integration pack adds the **FTP** category to the **Activity** pane in the 
 
 [Synchronize Folder/File](synchronize-folder-or-file.md)
 
-[Upload File](../orch/manage/upload-file.md)
+[Upload File](upload-file.md)
