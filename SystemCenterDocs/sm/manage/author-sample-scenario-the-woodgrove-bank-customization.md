@@ -145,7 +145,7 @@ Ken uses this procedure to add the WF activities **Add AD DS Computer to Group**
 2.  In the **Activities Toolbox** pane, locate the **Active Directory Activities** group.  
 3.  Drag **Add AD DS Computer to Group** to the authoring pane, and drop it between the Workflow Start and End icons.  
 4.  Drag **Set Activity Status to Completed**, and drop it between the previous activity and the End icon.  
-For general information about these steps, see [How to Add an Activity to a Workflow](author-adding-or-removing-workflow-activities.md).  
+For general information about these steps, see [How to Add an Activity to a Workflow](../../scsm/add-workflow-activities.md).  
 
 ### Configure the Activity Properties  
 

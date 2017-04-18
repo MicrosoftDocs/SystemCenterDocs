@@ -27,7 +27,7 @@ All workflows run under the security context of the Service Manager Workflow acc
 
 ## Create a new workflow
 
-Use the Create Workflow Wizard to create a new workflow in the Service Manager Authoring Tool. After you create the workflow, you can populate the workflow with activities, as described in [Adding or Removing Workflow Activities](../sm/manage/author-adding-or-removing-workflow-activities.md).  
+Use the Create Workflow Wizard to create a new workflow in the Service Manager Authoring Tool. After you create the workflow, you can populate the workflow with activities, as described in [Adding or Removing Workflow Activities](add-workflow-activities.md).  
 
 > [!IMPORTANT]  
 >  All workflows run under the security context of the Service Manager Workflow account.  

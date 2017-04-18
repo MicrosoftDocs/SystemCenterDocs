@@ -33,7 +33,7 @@ Use this procedure to add an activity to a workflow from the **Activities Toolbo
 
 2.  In the **Activities Toolbox** pane, locate the appropriate activity group.  
 
-3.  Drag the activity you want to the authoring pane, and then drop it between the workflow Start and End icons or between two existing activities. The sequence of activities that is displayed in the authoring pane-from the top down-represents the order in which the activities will run. To run activities in a loop or if-else structure, drag the structure activity (such as [For Each Loop](author-workflow-activity-reference.md)) onto the authoring pane first, and then drop the activities into the structure activity.  
+3.  Drag the activity you want to the authoring pane, and then drop it between the workflow Start and End icons or between two existing activities. The sequence of activities that is displayed in the authoring pane-from the top down-represents the order in which the activities will run. To run activities in a loop or if-else structure, drag the structure activity (such as [For Each Loop](../sm/manage/author-workflow-activity-reference.md)) onto the authoring pane first, and then drop the activities into the structure activity.  
 
      For example, drag **Add AD DS Computer to Group** from the **Active Directory Activities** group to the authoring pane, and then drop it between the workflow Start and End icons. Then, drag **Set Activity Status to Completed** and drop it between the previous activity and the End icon.  
 
@@ -100,13 +100,13 @@ The Activity Library includes specialized activities that incorporate Windows Po
 
 Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow. The Service Manager Authoring Tool provides four built\-in control flow activities:  
 
--   [Delay Activity](author-workflow-activity-reference.md) - Introduces a delay between activities in a workflow.  
+-   [Delay Activity](../sm/manage/author-workflow-activity-reference.md) - Introduces a delay between activities in a workflow.  
 
--   [For Each Loop Activity](author-workflow-activity-reference.md) - Takes as an input an array \(*collection*\) of objects, and repeats the set of activities in the **For Each Loop** object in the collection.  
+-   [For Each Loop Activity](../sm/manage/author-workflow-activity-reference.md) - Takes as an input an array \(*collection*\) of objects, and repeats the set of activities in the **For Each Loop** object in the collection.  
 
--   [IfElse Activity](author-workflow-activity-reference.md) - Controls the sequence of activities in a workflow based on a Boolean \(True\/False\) condition.  
+-   [IfElse Activity](../sm/manage/author-workflow-activity-reference.md) - Controls the sequence of activities in a workflow based on a Boolean \(True\/False\) condition.  
 
--   [Parallel Activity](author-workflow-activity-reference.md) - Forks the sequence of activities into two simultaneous sequences of activities.  
+-   [Parallel Activity](../sm/manage/author-workflow-activity-reference.md) - Forks the sequence of activities into two simultaneous sequences of activities.  
 
  To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity's **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
 
