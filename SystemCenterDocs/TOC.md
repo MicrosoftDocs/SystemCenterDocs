@@ -115,7 +115,7 @@
 ###### [Management packs installed with Operations Manager](scom/manage-mp-installed-during-seutp.md)
 ###### [Management pack lifecycle](scom/manage-mp-lifecycle.md)
 ###### [Using classes and groups for overrides](scom/manage-mp-overview-override-targets.md)
-###### [How to import, export, and remove a management pack](OM/Manage/How-to-import-remove-export-management-packs.md)
+###### [How to import, export, and remove a management pack](scom/manage-mp-import-remove-delete.md)
 ###### [Create a management pack for overrides](OM/Manage/how-to-create-a-management-pack-for-overrides.md)
 ###### [How to override a Rule or Monitor](OM/Manage/how-to-override-a-rule-or-monitor.md)
 ###### [How to add knowledge](OM/Manage/how-to-add-knowledge-to-a-management-pack.md)
