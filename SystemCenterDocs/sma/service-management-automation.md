@@ -34,7 +34,7 @@ The following table compares Orchestrator to the other Microsoft automation tool
 
     Provides a brief overview of the purpose and capabilities of Service Management Automation.
 
--   [Architecture of Service Management Automation](get-started/Architecture-of-Service-Management-Automation.md)
+-   [Architecture of Service Management Automation](architecture-of-service-management-automation.md)
 
     Describes the architecture of a basic Service Management Automation deployment.
 
