@@ -28,7 +28,7 @@ This article describes how to deploy a virtual machine that's stored in the Syst
 
 1. In **Library** workspace, navigate to the library server on which the VM is stored, and then click **Stored Virtual Machines and Services**.
 2. Select the VM on the **Virtual Machines** tab > **Actions**, click **Deploy**.
-3. In Deploy Virtual Machine Wizard > **Select Host**, select a host on which to deploy the VM. All available hosts are given a rating of 0–5 stars, based on their suitability to host the virtual machine. You can select any host that has the required disk space, even if the host has a zero host rating. [Learn more](../provision-vms.md#vm-placement).
+3. In Deploy Virtual Machine Wizard > **Select Host**, select a host on which to deploy the VM. All available hosts are given a rating of 0–5 stars, based on their suitability to host the virtual machine. You can select any host that has the required disk space, even if the host has a zero host rating. [Learn more](provision-vms.md#vm-placement).
 
     - In **Network optimization**, if a host has network optimization enabled, a green check mark appears.
     - In **Highly available virtual machines**, to make a VM highly available, you can migrate it to a host in a cluster, even if the VM hasn't been configured as highly available. Conversely, you can migrate a highly available VM to a standalone host.
@@ -45,4 +45,4 @@ This article describes how to deploy a virtual machine that's stored in the Syst
 
 ## Next steps
 
-[Manage the VM settings](../vm-settings.md)
+[Manage the VM settings](vm-settings.md)
