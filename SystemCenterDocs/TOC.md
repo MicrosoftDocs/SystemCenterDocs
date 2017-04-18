@@ -309,7 +309,7 @@
 #######[Add service certificate](orchestrator/add-service-certificate.md)
 #######[Add vm data disk](orchestrator/add-vm-data-disk.md)
 #######[Add vm disk](orchestrator/add-vm-disk.md)
-#######[Add vm endpoint](orch/manage/add-vm-endpoint.md)
+#######[Add vm endpoint](orchestrator/add-vm-endpoint.md)
 #######[Add vm instance](orch/manage/add-vm-instance.md)
 #######[Capture vm instance](orch/manage/capture-vm-instance.md)
 #######[Change deployment configuration](orch/manage/change-deployment-configuration.md)

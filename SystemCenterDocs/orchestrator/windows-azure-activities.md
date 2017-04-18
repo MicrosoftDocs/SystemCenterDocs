@@ -124,7 +124,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Add VM Disk](add-vm-disk.md)
 
-[Add VM Endpoint](../orch/manage/add-vm-endpoint.md)
+[Add VM Endpoint](add-vm-endpoint.md)
 
 [Add VM Instance](../orch/manage/add-vm-instance.md)
 
