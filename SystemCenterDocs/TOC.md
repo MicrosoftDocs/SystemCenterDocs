@@ -728,7 +728,7 @@
 ##### [Work with management pack XML files](scsm/work-mps-xml.md)
 ##### [Seal a management pack](scsm/seal-mp.md)
 ##### [Bundle management packs and resource files](scsm/bundle-mps.md)
-##### [Unbundle a bundled management pack for use with the Authoring Tool](sm/manage/author-how-to-unbundle-a-bundled-management-pack.md)
+##### [Unbundle a bundled management pack for use with the Authoring Tool](scsm/unbundle-mps.md)
 #### [Customize and author classes with Service Manager authoring](sm/manage/author-classes-customizing-and-authoring.md)
 #### [Customize and author forms](sm/manage/author-forms-customizing-and-authoring.md)
 ##### [Customize and author forms with the Service Manager Authoring Tool](sm/manage/author-guidelines-and-best-practices-for-authoring-forms-in-the-authoring-tool.md)
