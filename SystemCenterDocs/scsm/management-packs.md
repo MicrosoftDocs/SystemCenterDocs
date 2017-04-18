@@ -134,7 +134,7 @@ Use the following procedure to import a single management pack, or a management 
 ## How to Import the Operations Manager Alert Cube Management Pack
 By default, Service Manager does not automatically import the System Center Alert Management Cube management pack when you register Operations Manager as a data source.
 
-Instead you must manually create a data source for Operations Manager. For more information, see [How to Register the System Center Data Warehouse to Operations Manager](../sm/manage/admin-how-to-register-the-system-center-data-warehouse-to-operations-manager.md). Afterward, use the following procedure to import the management pack.
+Instead you must manually create a data source for Operations Manager. For more information, see [How to Register the System Center Data Warehouse to Operations Manager](admin-how-to-register-the-system-center-data-warehouse-to-operations-manager.md). Afterward, use the following procedure to import the management pack.
 
 ### To import the Operations Manager alert cube management pack
 
