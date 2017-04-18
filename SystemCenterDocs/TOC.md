@@ -690,7 +690,7 @@
 #### [User interface customization](scsm/ui-customization.md)
 #### [Manage user roles](scsm/user-roles.md)
 #### [Manage Run As accounts](scsm/run-as-accounts.md)
-#### [Manage knowledge articles](sm/manage/admin-managing-knowledge-articles-in-system-center-2016-service-manager.md)
+#### [Manage knowledge articles](scsm/knowledge-articles.md)
 #### [Configure and use Service Manager cmdlets](sm/manage/admin-configuring-and-using-the-system-center-2016-service-manager-cmdlets-for-windows-powershell.md)
 #### [Manage the data warehouse](sm/manage/admin-managing-the-data-warehouse-in-system-center-2016-service-manager.md)
 ##### [Register source systems to the data warehouse](sm/manage/admin-registering-source-systems-to-the-system-center-data-warehouse.md)
