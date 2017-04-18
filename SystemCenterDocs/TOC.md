@@ -636,7 +636,7 @@
 #### [Register with the data warehouse to enable reporting](scsm/register-dw.md)
 #### [Deploy additional management servers](scsm/deploy-additional-ms.md)
 #### [Deployment considerations with a disjointed namespace](scsm/disjointed-namespaces.md)
-#### [Learn about the new Self Service portal](sm/deploy/deploy-new-self-service-portal-deployment-scenarios-and-troubleshooting.md)
+#### [Learn about the new Self Service portal](scsm/learn-self-service-portal.md)
 ##### [Deploy the Self-Service portal](sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md)
 #### [Guidance for load balancing](sm/deploy/deploy-guidance-for-load-balancing-system-center-2016-service-manager.md)
 #### [Complete Service Manager deployment by backing up the encryption key](sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md)
