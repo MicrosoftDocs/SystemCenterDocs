@@ -862,7 +862,7 @@
 ### [VMM ports and protocols](vmm/manage/manage-ports-protocols.md)
 ### [Troubleshooting VMM resources](vmm/manage/troubleshooting-vmm-resources.md)
 ## [Service Management Automation](SMA/Service-Management-Automation.md)
-### [What's new in Service Management Automation 2016](sma/get-started/What-s-new-in-Service-Management-Automation-2016.md)
+### [What's new in Service Management Automation 2016](sma/whats-new-in-service-management-automation.md)
 ### [Overview of Service Management Automation](sma/overview-of-service-management-automation.md)
 ### [Architecture of Service Management Automation](sma/architecture-of-service-management-automation.md)
 ### [Runbook Execution in Service Management Automation](sma/get-started/Runbook-Execution-in-Service-Management-Automation.md)
