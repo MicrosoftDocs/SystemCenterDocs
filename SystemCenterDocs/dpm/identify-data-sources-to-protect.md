@@ -18,7 +18,7 @@ ms.author: markgal
 
 To protect data sources with DPM you'll need to do the following:
 
--   Read [What can DPM back up?](../dpm-protection-matrix.md) to understand what's supported for DPM backup.
+-   Read [What can DPM back up?](dpm-protection-matrix.md) to understand what's supported for DPM backup.
 
 -   DPM applies backup settings to all data sources in a particular protection group. You'll need to figure out how you want to gather data you want to protect into those groups. Examples include:
 
@@ -32,4 +32,4 @@ To protect data sources with DPM you'll need to do the following:
 
 
 ## Next steps
-[Deploy the DPM protection agent](../Deploy/Deploy-the-DPM-protection-agent.md)
+[Deploy the DPM protection agent](deploy/deploy-the-dpm-protection-agent.md)
