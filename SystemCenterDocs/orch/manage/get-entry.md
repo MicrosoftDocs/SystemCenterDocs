@@ -36,7 +36,7 @@ The Integration Pack for HP Service Manager contains the following additional ac
 
 [Close Entry](../../orchestrator/close-entry.md)
 
-[Create Entry](create-entry.md)
+[Create Entry](../../orchestrator/create-entry.md)
 
 [Monitor Entry](monitor-entry.md)
 

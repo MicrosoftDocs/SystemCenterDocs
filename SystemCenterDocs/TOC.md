@@ -432,7 +432,7 @@
 #### [Hewlett Packard Service Manager Integration Pack](orch/manage/hp-service-manager-integration-pack.md)
 ##### [HP Service Manager Activities](orchestrator/service-manager-activities.md)
 ###### [Close entry](orchestrator/close-entry.md)
-###### [Create entry](orch/manage/create-entry.md)
+###### [Create entry](orchestrator/create-entry.md)
 ###### [Get entry](orch/manage/get-entry.md)
 ###### [Monitor entry](orch/manage/monitor-entry.md)
 ###### [Update entry](orch/manage/update-entry.md)
