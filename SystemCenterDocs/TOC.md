@@ -858,7 +858,7 @@
 ##### [Perform self-service user tasks](vmm/self-service-tasks.md)
 ### [Monitor VMM](vmm/monitor.md)
 #### [Set up monitoring and reporting with Operations Manager](vmm/monitors-ops-manager.md)
-### [Add an Azure subscription in VMM](vmm/manage/manage-add-azure-subscription.md)
+### [Add an Azure subscription in VMM](vmm/azure-subscription.md)
 ### [VMM ports and protocols](vmm/plan-ports-protocols.md)
 ### [Troubleshooting VMM resources](vmm/manage/troubleshooting-vmm-resources.md)
 ## [Service Management Automation](SMA/Service-Management-Automation.md)
