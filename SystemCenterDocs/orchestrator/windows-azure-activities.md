@@ -188,7 +188,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Get VM RDP File](../orch/manage/get-vm-rdp-file.md)
 
-[Get VM instance](../orch/manage/get-vm-instance.md)
+[Get VM instance](get-vm-instance.md)
 
 [List Blob](../orch/manage/list-blob.md)
 
