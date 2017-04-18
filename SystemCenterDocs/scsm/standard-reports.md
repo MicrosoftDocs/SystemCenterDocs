@@ -74,7 +74,7 @@ By default, all System Center 2016 - Service Manager users have access to report
 You can use the following procedure to run a report in Service Manager. In this procedure, you run an incident management report to determine how many incidents were resolved in the previous week.  
 
 > [!NOTE]  
->  Before you can run a report, the extract, transform, and load \(ETL\) process must be complete. For more information about the ETL process and about how to schedule it to run, see [How to Enable Data Warehouse Jobs Schedules](admin-how-to-enable-disable-data-warehouse-job-schedules.md).  
+>  Before you can run a report, the extract, transform, and load \(ETL\) process must be complete. For more information about the ETL process and about how to schedule it to run, see [How to Enable Data Warehouse Jobs Schedules](../sm/manage/admin-how-to-enable-disable-data-warehouse-job-schedules.md).  
 >   
 >  The Service Manager data warehouse does not create dimensions for classes or relationships in unsealed management packs. If you are using an unsealed management pack, you will not see any data from that management pack in your reports. Because of this, the best practice is to model all classes and relationships in sealed management packs.  
 >   
@@ -197,7 +197,7 @@ You can use the following procedure to create a linked report.
 
 7.  Close the report.  
 
- After the next data warehouse synchronization, the new linked report is displayed in the folder where you saved it. For information about scheduling a data warehouse synchronization job, see [How to Schedule a Data Warehouse Job](admin-how-to-schedule-a-data-warehouse-job.md).  
+ After the next data warehouse synchronization, the new linked report is displayed in the folder where you saved it. For information about scheduling a data warehouse synchronization job, see [How to Schedule a Data Warehouse Job](../sm/manage/admin-how-to-schedule-a-data-warehouse-job.md).  
 
 > [!NOTE]  
 >  You might have to close and reopen the console after the synchronization job is complete to see the report.  

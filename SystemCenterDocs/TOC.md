@@ -707,7 +707,7 @@
 #### [Manage service requests](scsm/service-requests.md)
 #### [Manage release records](scsm/release-records.md)
 #### [Data warehouse reporting and analytics](scsm/dw-reporting.md)
-##### [Use and manage standard reports](sm/manage/ops-using-and-managing-standard-reports.md)
+##### [Use and manage standard reports](scsm/standard-reports.md)
 ##### [Overview of OLAP cubes for advanced analytics](sm/manage/ops-using-olap-cubes-for-advanced-analytics.md)
 ###### [Model OLAP cubes in management packs](sm/manage/ops-about-modeling-olap-cubes-in-management-packs.md)
 ###### [Troubleshoot OLAP cubes](sm/manage/ops-troubleshooting-olap-cubes.md)
