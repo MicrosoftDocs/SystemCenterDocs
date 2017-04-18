@@ -102,7 +102,7 @@ The Active Directory and SCCM connectors in Service Manager can import large amo
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ECL logging, doesn't affect importing data from connectors. Instead, most logging data doesn't get written to the ECL and history tables, which can result is significant performance improvement.
-Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../sm/manage/admin-optionally-disable-ecl-logging-for-faster-connector-synchronization.md).
+Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](disable-ecl-logging.md).
 
 ## Grooming improvements for ECL logs
 
