@@ -43,7 +43,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
     This section provides the information you need for installing the Nano Server agent to be monitored by Operations Manager.
 
--   [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+-   [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../../scom/manage-install-crossplat-agent-cmdline.md)
 
     This section provides the information you need for manually installing the UNIX and Linux agent and configuring the self-signed certificates required to be monitored by Operations Manager.
 

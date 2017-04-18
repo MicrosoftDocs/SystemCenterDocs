@@ -171,7 +171,7 @@ msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
 
 - After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](../om/manage/process-manual-agent-installations.md).
 
-- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](../om/manage/configuring-windows-agents.md).
+- To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](manage-deploy-config-windows-agent.md).
 
 - Review [Uninstall Agent from Windows-based Computers](../om/manage/uninstall-agent-from-windows-based-computers.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
 

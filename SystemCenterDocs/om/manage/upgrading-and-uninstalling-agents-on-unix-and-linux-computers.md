@@ -72,7 +72,7 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
 ## Next steps
 
-- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md).
+- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../../scom/manage-install-crossplat-agent-cmdline.md).
 
 - To understand how to approve agents manually installed, review [Process Manual Agent Installations](Process-Manual-Agent-Installations.md).
 

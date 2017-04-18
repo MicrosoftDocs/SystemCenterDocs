@@ -37,7 +37,7 @@ When you have a new management pack, you should import it to a *pre-production* 
   
 To accurately measure the data that a management pack gathers, you need to expose the agent to the demands of your production environment. The hardware of the management server in the pre-production environment should reflect the hardware that is in use in your production environment. Your pre-production management group should have the same management packs imported to the management server as the production management group. To test interoperability, your pre-production environment should also include the same types of server roles that are in your production environment, just on a smaller scale.  
   
-You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre-production environment, the pre-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Windows Agents](configuring-windows-agents.md).  
+You can assign an Operations Manager agent to more than one management group, which is called *multihoming*. If you multihome a representative subset of agents in your production environment and your pre-production environment, the pre-production environment should give you much of the information you need to correctly tune the management pack. For more information on multihoming agents, see [Configuring Windows Agents](../../scom/manage-deploy-config-windows-agent.md).  
   
 ## Tune and customize  
 
