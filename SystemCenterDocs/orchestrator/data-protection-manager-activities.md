@@ -122,7 +122,7 @@ The DPM Integration Pack adds the **SC 2016 DPM** category to the **Activities**
 
 [Protect Data Source](protect-data-source.md)
 
-[Recover SharePoint](../orch/manage/recover-sharepoint.md)
+[Recover SharePoint](recover-sharepoint.md)
 
 [Recover SQL](../orch/manage/recover-sql.md)
 

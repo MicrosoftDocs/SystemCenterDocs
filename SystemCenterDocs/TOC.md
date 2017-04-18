@@ -487,7 +487,7 @@
 #######[Get dpm server capacity](orchestrator/get-dpm-server-capacity.md)
 #######[Get recovery point](orchestrator/get-recovery-point.md)
 #######[Protect data source](orchestrator/protect-data-source.md)
-#######[Recover sharepoint](orch/manage/recover-sharepoint.md)
+#######[Recover sharepoint](orchestrator/recover-sharepoint.md)
 #######[Recover sql](orch/manage/recover-sql.md)
 #######[Recover vm](orch/manage/recover-vm.md)
 #######[Run dpm powershell script](orch/manage/run-dpm-powershell-script.md)
