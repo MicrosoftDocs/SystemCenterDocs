@@ -706,7 +706,7 @@
 #### [Manage changes and activities](scsm/changes-activities.md)
 #### [Manage service requests](scsm/service-requests.md)
 #### [Manage release records](scsm/release-records.md)
-#### [Data warehouse reporting and analytics](sm/manage/ops-using-data-warehouse-reporting-and-analytics-in-system-center-2016-service-manager.md)
+#### [Data warehouse reporting and analytics](scsm/dw-reporting.md)
 ##### [Use and manage standard reports](sm/manage/ops-using-and-managing-standard-reports.md)
 ##### [Overview of OLAP cubes for advanced analytics](sm/manage/ops-using-olap-cubes-for-advanced-analytics.md)
 ###### [Model OLAP cubes in management packs](sm/manage/ops-about-modeling-olap-cubes-in-management-packs.md)
