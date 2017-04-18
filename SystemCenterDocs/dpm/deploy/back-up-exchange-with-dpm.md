@@ -92,7 +92,7 @@ However native protection might not be enough if application errors, corruptions
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../dpm-protection-matrix.md)
 
     -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 

@@ -30,7 +30,7 @@ DPM can back up system state and provide bare metal recovery (BMR) protection.
 
 -   **Bare metal backup**: Backs up operating system files and all data except user data on critical volumes. By definition a BMR backup includes a system state backup. Provides protection when a machine won't start and you have to recover everythin.
 
-This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](../dpm-protection-matrix.md)
 
 |Backup|Issue|Recover from DPM backup|Recover from system state backup|BMR|
 |----------|---------|---------------------------|------------------------------------|-------|
@@ -107,7 +107,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../dpm-protection-matrix.md)
 
     -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 

@@ -103,7 +103,7 @@ DPM provides backup and recovery for SQL Server databases. In addition to backin
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../dpm-protection-matrix.md)
 
     -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 

@@ -330,7 +330,7 @@ These workloads can be running on a single server or in a cluster configuration.
 **Workaround**: Run the correct DPM version.
 
 ### AlwaysOn support
-**Issue**: AlwaysOn was introduced in SQL Server 2012. It's supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](./What-can-DPM-back-up-.md).
+**Issue**: AlwaysOn was introduced in SQL Server 2012. It's supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](../dpm-protection-matrix.md).
 
 **Workaround**: None.
 
@@ -383,7 +383,7 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   On premise DPM Server can't protect Azure based workloads.
 
--   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](./What-can-DPM-back-up-.md).
+-   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](../dpm-protection-matrix.md).
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 

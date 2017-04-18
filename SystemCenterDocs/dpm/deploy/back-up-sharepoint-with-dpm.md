@@ -26,7 +26,7 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
 ## Prerequisites and limitations
 
--   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+-   For a list of supported SharePoint versions and the DPM versions required to back them up see [What can DPM back up?](../dpm-protection-matrix.md)
 
 -   By default when you protect SharePoint all content databases \(and the SharePoint\_Config and SharePoint\_AdminContent\* databases\) will be protected. If you want to add customizations such as search indexes, templates or application service databases, or the user profile service you'll need to configure these for protection separately. Be sure that you enable protection for all folders that include these types of features or customization files.
 
@@ -50,7 +50,7 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../get-started/What-can-DPM-back-up-.md)
+    -   [What can DPM back up?](../dpm-protection-matrix.md)
 
     -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 
