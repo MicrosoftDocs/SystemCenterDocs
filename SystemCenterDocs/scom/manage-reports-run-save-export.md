@@ -99,9 +99,9 @@ If you want to manage and distribute reports securely, you can export reports to
 
 ## Next steps
 
-- Review the [Operations Manager Reports library](../../scom/manage-reports-installed-during-setup.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](../../scom/manage-reports-create-reports.md) to create reports for your operational needs. 
+- Review the [Operations Manager Reports library](manage-reports-installed-during-setup.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](manage-reports-create-reports.md) to create reports for your operational needs. 
 
-- See [How to Schedule Reports](how-to-configure-modify-report-schedules.md) to learn how to schedule report delivery for reports available in Operations Manager.  
+- See [How to Schedule Reports](../om/manage/how-to-configure-modify-report-schedules.md) to learn how to schedule report delivery for reports available in Operations Manager.  
 
 - If you are having issues where reports are not returning any data, review [How to Troubleshoot Reports that Return No Data](https://support.microsoft.com/kb/2573329).
 

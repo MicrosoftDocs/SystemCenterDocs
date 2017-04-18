@@ -24,7 +24,7 @@ Reports in Operations Manager allow you to perform detailed analysis on the oper
   
 -   [How to Create Reports in Operations Manager](How-to-Create-Reports-in-Operations-Manager.md)  
   
--   [How to Run, Save, and Export a Report](how-to-run-save-export-reports.md)  
+-   [How to Run, Save, and Export a Report](../../scom/manage-reports-run-save-export.md)  
   
 -   [How to Schedule and Managed Scheduled Reports](how-to-configure-modify-report-schedules.md)  
   
