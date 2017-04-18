@@ -44,4 +44,4 @@ As part of your security infrastructure, you may want to keep track of port numb
 
 ## Next steps
 
-- Review [Prepare for Service Manager deployment](plan-preparing-for-system-center-2016-service-manager-deployment.md) to learn about preparing a computer to host Service Manager.
+- Review [Prepare for Service Manager deployment](../sm/plan/plan-preparing-for-system-center-2016-service-manager-deployment.md) to learn about preparing a computer to host Service Manager.

@@ -31,4 +31,4 @@ Before starting the installation of System Center 2016 - Service Manager, you ma
 
 ## Next steps
 
-- Review [Port assignments for Service Manager](../sm/plan/plan-port-assignments-for-system-center-2016-service-manager.md) to learn about the port numbers that are used throughout your Service Manager environment for your security infrastructure.
+- Review [Port assignments for Service Manager](ports.md) to learn about the port numbers that are used throughout your Service Manager environment for your security infrastructure.
