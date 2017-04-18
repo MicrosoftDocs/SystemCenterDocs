@@ -71,7 +71,7 @@ Change request templates store commonly used settings and apply the information 
 
 ## Create a manual activity template
 
-Use the following procedures to create a manual activity template and then validate it. Manual activity templates help ensure that all manual activities are assigned to the person who is the activity implementer. After you create the manual activity template, you create a workflow that applies the template. For more information about how to create a workflow, see [How to Configure Incident Workflows](../sm/manage/admin-how-to-configure-incident-workflows.md).
+Use the following procedures to create a manual activity template and then validate it. Manual activity templates help ensure that all manual activities are assigned to the person who is the activity implementer. After you create the manual activity template, you create a workflow that applies the template. For more information about how to create a workflow, see [How to Configure Incident Workflows](config-incident-workflows.md).
 
 In the following procedure, you will create a manual activity template named "Set *named user* as the Activity Implementer". This manual activity template is used in the [How to Configure Activity Management Workflows](config-activity-mgt-workflows.md) procedure.
 
