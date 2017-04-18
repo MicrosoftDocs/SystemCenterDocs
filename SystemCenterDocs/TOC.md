@@ -838,7 +838,7 @@
 #### [Manage virtual machines](vmm/provision-vms.md)
 ##### [Deploy virtual machines from a blank VHD](vmm/vm-blank-disk.md)
 ##### [Deploy virtual machines from an existing VHD](vmm/vm-existing-disk.md)
-##### [Clone existing virtual machines](vmm/manage/manage-vm-clone.md)
+##### [Clone existing virtual machines](vmm/vm-clone.md)
 ##### [Deploy virtual machines with rapid provisioning using SAN copy](vmm/manage/manage-vm-rapid-san.md)
 ##### [Deploy virtual machines from a VM template](vmm/manage/manage-vm-template.md)
 ##### [Deploy Linux virtual machines](vmm/manage/manage-vm-linux.md)
