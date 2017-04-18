@@ -509,7 +509,7 @@
 #######[Create incident with template](orchestrator/create-incident-with-template.md)
 #######[Create object](orchestrator/create-object.md)
 #######[Create related object](orchestrator/create-related-object.md)
-#######[Create relationship](orch/manage/create-relationship.md)
+#######[Create relationship](orchestrator/create-relationship.md)
 #######[Delete relationship](orch/manage/delete-relationship.md)
 #######[Get activity](orch/manage/get-activity.md)
 #######[Get object](orch/manage/get-object.md)
