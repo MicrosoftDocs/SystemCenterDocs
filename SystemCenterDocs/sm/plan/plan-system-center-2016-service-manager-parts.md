@@ -36,4 +36,4 @@ All computers that host any part of Service Manager must be domain-joined.
 
 ## Next steps
 
-- Review [System requirements](plan-service-manager-system-requirements.md) to learn about general performance and scalability guidance for Service Manager and recommended hardware configurations.
+- Review [System requirements](../../scom/plan-system-requirements.md) to learn about general performance and scalability guidance for Service Manager and recommended hardware configurations.

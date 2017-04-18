@@ -150,9 +150,9 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 ### Operations Manager reporting server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
-- Microsoft SQL Server: See [SQL Server Requirements](planning-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server: See [SQL Server Requirements](../om/plan/planning-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
-- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](planning-sqlserver-design.md#sql-server-requirements). 
+- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../om/plan/planning-sqlserver-design.md#sql-server-requirements). 
 
     > [!NOTE] 
     > System Center 2016 – Operations Manager supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
@@ -186,4 +186,4 @@ System Center 2016 - Operations Manager supports an in-place upgrade from the fo
 
 ## Active Directory and DNS
 
-Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization.  DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.  For further information regarding what AD and DNS requirements you need to evaluate before deploying Operations Manager in your environment, please review [Active Directory and DNS Planning](planning-adds-dns.md). 
+Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization.  DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.  For further information regarding what AD and DNS requirements you need to evaluate before deploying Operations Manager in your environment, please review [Active Directory and DNS Planning](../om/plan/planning-adds-dns.md). 

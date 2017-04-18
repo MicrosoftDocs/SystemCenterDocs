@@ -15,7 +15,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements](../plan/system-requirements.md).
+You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements](plan-system-requirements.md).
 
 ## Command-line parameters
 

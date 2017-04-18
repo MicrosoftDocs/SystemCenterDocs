@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-System Center Operations Manager can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](../plan/system-requirements.md).
+System Center Operations Manager can monitor computers running Windows, UNIX, and Linux operating systems. For a list of the supported operating system versions, see [Supported Configurations](../../scom/plan-system-requirements.md).
 
 To begin monitoring, computers must be discovered. For a description of the discovery process, see "How Objects Are Discovered and Monitored" in [Key Concepts](../get-started/Operations-Manager-Key-Concepts.md).
 

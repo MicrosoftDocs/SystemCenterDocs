@@ -22,7 +22,7 @@ In this section we provide information on how to connect to the Operations and W
 
 ## How to connect to the Operations console
 
-The System Center 2016 - Operations Manager Operations console can be installed on any computer that meets the [system requirements](../plan/system-requirements.md). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
+The System Center 2016 - Operations Manager Operations console can be installed on any computer that meets the [system requirements](../../scom/plan-system-requirements.md). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
   
 ![Dialog box to connect console to server](../media/om2016-operations-console-connect-to-server.png)  
   

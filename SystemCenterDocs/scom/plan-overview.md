@@ -24,12 +24,12 @@ This guide provides recommendations to help you develop an Operations Manager de
 
 This guide describes sets of tasks for several possible starting points of a System Center 2016 - Operations Manager deployment.  The guide helps you determine the most appropriate deployment strategy for your environment.
 
-The strategies that are presented in this guide are appropriate for many common Operations Manager deployments, and they have been tested and validated for environments that contain up to the capacity limits stated in the [System Requirements](../om/plan/system-requirements.md) article.  
+The strategies that are presented in this guide are appropriate for many common Operations Manager deployments, and they have been tested and validated for environments that contain up to the capacity limits stated in the [System Requirements](plan-system-requirements.md) article.  
 
 
 ## Planning guide topics
 
-- [System Requirements for Operations Manager](../om/plan/system-requirements.md)
+- [System Requirements for Operations Manager](plan-system-requirements.md)
 
     Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager in System Center 2016. 
 

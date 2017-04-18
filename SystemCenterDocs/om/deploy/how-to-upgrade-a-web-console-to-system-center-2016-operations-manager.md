@@ -18,7 +18,7 @@ ms.topic: article
 
 If you have a stand-alone System Center 2012 Service Pack 1 (SP1) Operations Manager Web console server, you must upgrade it to System Center 2012 R2 Operations Manager before proceeding with these steps.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../plan/system-requirements.md)
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../../scom/plan-system-requirements.md)
 
 > [!NOTE]
 > When you upgrade the web console, any customizations that were made to the web.config file after the web console was installed will be reset.  Make a backup copy before proceeding.  
