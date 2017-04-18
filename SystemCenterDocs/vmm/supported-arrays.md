@@ -31,5 +31,5 @@ ms.technology:  virtual-machine-manager
 |NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](https://now.netapp.com) |
 ## Next steps
 
- - [Learn more](manage/manage-storage-add-device.md) about configuring storage in the VMM fabric.
+ - [Learn more](storage-device.md) about configuring storage in the VMM fabric.
  - Learn more about array SMI-S conformance in the [SMI-S Conformance Testing Program](http://www.snia.org/ctp/)

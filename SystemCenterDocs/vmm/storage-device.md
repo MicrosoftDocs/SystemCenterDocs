@@ -42,4 +42,4 @@ Make sure that the storage device is supported before you add it.
 
 ## Next steps
 
-[Allocate storage to host groups](manage-storage-host-groups.md)
+[Allocate storage to host groups](manage/manage-storage-host-groups.md)
