@@ -46,7 +46,7 @@
 #### [Set up DPM logging](dpm/set-up-dpm-logging.md)
 #### [Generate DPM reports](dpm/generate-dpm-reports.md)
 #### [Manage and monitor DPM servers with Operations Manager](dpm/use-ops-manager-to-manage-monitor-dpm.md)
-#### [Improve replication performance](DPM/Manage/Improve-replication-performance.md)
+#### [Improve replication performance](dpm/improve-replication-performance.md)
 #### [Manage multiple DPM servers with Central Console](DPM/Manage/Manage-multiple-DPM-servers-with-Central-Console.md)
 ## [Operations Manager](om/welcome-to-operations-manager.md)
 ### [Operations Manager key concepts](om/get-started/operations-manager-key-concepts.md)
