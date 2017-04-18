@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 This integration pack adds the VMware vSphere category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Add Network Adapter Activity](../orch/manage/add-network-adapter-activity.md)
+[Add Network Adapter Activity](add-network-adapter-activity.md)
 
 [Add VM Disk Activity](../orch/manage/add-vm-disk-activity.md)
 
