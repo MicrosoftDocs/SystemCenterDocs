@@ -758,7 +758,7 @@
 #### [Plan a VMM high availability deployment](vmm/plan-ha-install.md)
 #### [Plan the VMM fabric](vmm/plan/plan-fabric.md)
 ##### [Plan the VMM compute fabric](vmm/plan-compute.md)
-##### [Plan the VMM networking fabric](vmm/plan/plan-network.md)
+##### [Plan the VMM networking fabric](vmm/plan-network.md)
 ##### [Supported storage arrays](vmm/plan/plan-supported-storage-arrays.md)
 ### [Scenarios](vmm/scenario/scenario-overview.md)
 #### [Scenario: Deploy a VMM cloud](vmm/scenario/cloud-overview.md)

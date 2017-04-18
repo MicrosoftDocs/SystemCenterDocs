@@ -42,7 +42,7 @@ In the networking fabric you:
 5. **Create custom port classifications**: If you created a custom virtual port profile you'll probably want to create a custom port classification to abstract it.
 6. **Configure logical switches**: Create a logical switch, apply it to a host and select the network adapters on the host that you want to bind to the switch. When you apply the switch networking settings will be applied to the host.
 
-[Learn more](plan-network.md) about planning the networking fabric
+[Learn more](../plan-network.md) about planning the networking fabric
 
 ## Plan the storage fabric
 

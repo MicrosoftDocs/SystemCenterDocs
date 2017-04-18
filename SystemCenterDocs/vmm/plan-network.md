@@ -117,4 +117,4 @@ The following table provides detailed guidelines. Additional information about I
 
 ## Next steps
 
-- [Set up the networking fabric](../manage/manage-network-overview.md)
+- [Set up the networking fabric](manage/manage-network-overview.md)
