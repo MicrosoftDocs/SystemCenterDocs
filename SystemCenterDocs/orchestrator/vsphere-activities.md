@@ -39,7 +39,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Delete VM Disk Activity in System Center 2016](delete-vm-disk-activity-in-system-center-2016.md)
 
-[Get Cluster Properties Activity](../orch/manage/get-cluster-properties-activity.md)
+[Get Cluster Properties Activity](get-cluster-properties-activity.md)
 
 [Get Datastore Capacity Activity](../orch/manage/get-datastore-capacity-activity.md)
 
