@@ -96,7 +96,7 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
   
 ### To create a view in My Workspace  
   
-1.  Right-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](../om/manage/view-types-in-operations-manager.md).  
+1.  Right-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](manage-console-view-types.md).  
   
 2.  In the view properties, enter a name and description for the view. The view properties dialog box contains two tabs: **Criteria** and **Display**.  
   

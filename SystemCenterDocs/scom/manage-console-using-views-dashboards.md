@@ -23,7 +23,7 @@ After you identify the IT services to monitor, the configuration of how to monit
 
 ## Using views and dashboards in Operations Manager topics  
   
--   [View types in Operations Manager](../om/manage/view-types-in-operations-manager.md)  
+-   [View types in Operations Manager](manage-console-view-types.md)  
 
 -   [Dashboards in Operations Manager](../om/manage/dashboards-in-operations-manager.md)
   
