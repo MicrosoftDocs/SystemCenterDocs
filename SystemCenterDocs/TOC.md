@@ -851,7 +851,7 @@
 ##### [Migrate a virtual machine](vmm/migrate-vm.md)
 ##### [Migrate virtual machine storage](vmm/migrate-storage.md)
 ##### [Run a live migration](vmm/migrate-live.md)
-#### [Manage roles and accounts](vmm/manage/manage-permissions-overview.md)
+#### [Manage roles and accounts](vmm/manage-account.md)
 ##### [Set up user roles](vmm/manage/manage-permissions-user-roles.md)
 ##### [Set up Run As accounts](vmm/manage/manage-permissions-runas.md)
 #### [Manage self-service users](vmm/manage/manage-self-service.md)

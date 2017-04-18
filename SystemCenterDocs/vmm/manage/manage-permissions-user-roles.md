@@ -20,7 +20,7 @@ This article describes how to set up System Center 2016 - Virtual Machine Manage
 
 ## Before you start
 
-- [Learn more](manage-permissions-overview.md#role-based-security) about user roles.
+- [Learn more](../manage-account.md#role-based-security) about user roles.
 - Ensure you have the right permissions to create the role, or to add users to it.
 
     - **Administrator role**: Administrators can add and remove users
