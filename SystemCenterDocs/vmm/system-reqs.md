@@ -119,7 +119,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations](../manage/manage-compute-add-vmware.md)
+Supported | [Features and limitations](manage/manage-compute-add-vmware.md)
 
 ## VMs in the VMM fabric
 
@@ -131,4 +131,4 @@ VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.
 
 ## Next steps</h2>
 
-[Plan VMM installation](../../orchestrator/install.md)
+[Plan VMM installation](../orchestrator/install.md)

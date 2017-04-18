@@ -24,7 +24,7 @@ Welcome to System Center 2016 - Operations Manager.  Operations Manager provides
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
-- [Planning for System Center 2016 - Operations Manager](plan-overview.md)
+- [Planning for System Center 2016 - Operations Manager](../vmm)
 
     Review information to help you plan the deployment of Operations Manager into your organization
 
