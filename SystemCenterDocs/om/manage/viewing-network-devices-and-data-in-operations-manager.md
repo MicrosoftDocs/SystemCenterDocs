@@ -171,4 +171,4 @@ Things to try in the vicinity view:
 
 -  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](reports-for-network-monitoring-in-operations-manager.md). 
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](how-to-delete-or-restore-a-network-device-in-operations-manager.md). 
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](../../scom/manage-monitor-networkdevice-delete-restore.md). 
