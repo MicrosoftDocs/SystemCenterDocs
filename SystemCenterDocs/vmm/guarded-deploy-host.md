@@ -56,25 +56,25 @@ Before you can add guarded hosts to your VMM compute fabric, you must configure 
 2. In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 3. Enter the attestation and key protection URLs in the respective fields. You do not need to configure the code integrity policies and VM shielding helper VHD sections at this time.
 
-   ![Global HGS settings window](../media/guarded-hgs-settings.png)
+   ![Global HGS settings window](./media/guarded-deploy-host/guarded-hgs-settings.png)
 
 4. Click **Finish** to save the configuration.
 
 ## Add or provision a new guarded host
 
 1.	Add the host:
-    -	If you want to add an existing server running Windows Server 2016 as a guarded Hyper-V host, [add it to the fabric](../manage/manage-compute-add-existing-servers.md).
-    -	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](../manage/manage-compute-bare-metal-hyper-v.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
+    -	If you want to add an existing server running Windows Server 2016 as a guarded Hyper-V host, [add it to the fabric](manage/manage-compute-add-existing-servers.md).
+    -	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](manage/manage-compute-bare-metal-hyper-v.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
 2. Continue on to the next section to configure the host as a guarded host.
 
 ## Configure an existing host to be a guarded host
 
 To configure an existing Hyper-V host managed by VMM to be a guarded host, complete the following steps:
 
-1. Place the host in [maintenance mode](../manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
+1. Place the host in [maintenance mode](manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
 2. In **All Hosts**, right-click the host > **Properties** > **Host Guardian Service**.
 
-    ![Enable a host as a guarded host](../media/guarded-enable-host.png)
+    ![Enable a host as a guarded host](./media/guarded-deploy-host/guarded-enable-host.png)
 
 5. Select to enable the Host Guardian Hyper-V Support feature and configure the host. Note that:
     - The global attestation and key protection server URLs will be set on the host.
@@ -102,14 +102,14 @@ To deploy a code integrity policy to a guarded host managed by VMM, complete the
 2. Store the CI policies in a secure file share. The computer accounts for each guarded host require **read access** to the share. Only trusted administrators should have write access.
 3. In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 4. Under the Code Integrity Policies section, click **Add** and specify a friendly name and the path to a CI policy. Repeat this step for each unique CI policy. Be sure to name your policies in a manner that will help you identify which policy should be applied to which hosts.
-    ![Add a code integrity policy](../media/guarded-hgs-settings.png)
+    ![Add a code integrity policy](./media/guarded-deploy-host/guarded-hgs-settings.png)
 5. Click **Finish** to save the configuration.
 
 Now, for each guarded host, complete the following steps to apply a code integrity policy:
-1. Place the host in [maintenance mode](../manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
+1. Place the host in [maintenance mode](manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
 2. In **All Hosts**, right-click the host > **Properties** > **Host Guardian Service**.
 
-    ![Apply a code integrity policy](../media/guarded-enable-host.png)
+    ![Apply a code integrity policy](./media/guarded-deploy-host/guarded-enable-host.png)
 
 3. Select to enable the option to configure the host with a code integrity policy, then select the appropriate policy for the system.
 4. Click **OK** to apply the configuration change. The host may restart to apply the new policy.
@@ -119,10 +119,10 @@ Now, for each guarded host, complete the following steps to apply a code integri
 > Be sure to select the correct code integrity policy for the host. If an incompatible policy is applied to the host, some applications, drivers, or operating system components may no longer work.
 
 If you update the code integrity policy in the file share and wish to also update the guarded hosts, you can do so by completing the following steps:
-1. Place the host in [maintenance mode](../manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
+1. Place the host in [maintenance mode](manage/manage-compute-host-service.md#put-hosts-in-maintenance-mode).
 2. In **All Hosts**, right-click the host > **Apply Latest Code Integrity Policy**.
 3. Take the host out of maintenance mode.
 
 ## Next steps
 
-- [Set up a shielded template disk, utility disk, and VM template](guarded-template.md)
+- [Set up a shielded template disk, utility disk, and VM template](scenario/guarded-template.md)

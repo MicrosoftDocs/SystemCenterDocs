@@ -45,4 +45,4 @@ VMM can be used to:
 
 ## Next steps
 
-- [Provision guarded hosts in the VMM fabric](scenario/guarded-hosts.md)
+- [Provision guarded hosts in the VMM fabric](guarded-deploy-host.md)
