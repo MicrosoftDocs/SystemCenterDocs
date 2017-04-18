@@ -473,7 +473,7 @@
 ####### [Deploy Application](orchestrator/deploy-application.md)
 ####### [Deploy Configuration Baseline](orchestrator/deploy-configuration-baseline.md)
 ####### [Deploy Program](orchestrator/deploy-program.md)
-####### [Deploy Software Update](orch/manage/deploy-software-update.md)
+####### [Deploy Software Update](orchestrator/deploy-software-update.md)
 ####### [Deploy Task Sequence](orch/manage/deploy-task-sequence.md)
 ####### [Get Collection Member](orch/manage/get-collection-member.md)
 ####### [Get Deployment Status](orch/manage/get-deployment-status.md)
