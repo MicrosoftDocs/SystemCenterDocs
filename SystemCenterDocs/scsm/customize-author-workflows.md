@@ -26,7 +26,7 @@ Using Service Manager, you can automate many administrative processes that previ
 
      Describes how to automate information technology \(IT\) processes using workflows and describes the WF activities that the Authoring Tool provides.  
 
--   [Creating Workflows for IT Processes](../sm/manage/author-creating-workflows-for-it-processes.md)  
+-   [Creating Workflows for IT Processes](create-workflows-processes.md)  
 
      Describes how to create workflows for IT processes.  
 
