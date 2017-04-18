@@ -500,7 +500,7 @@
 #######[Monitor state](orchestrator/monitor-state.md)
 #######[Start maintenance mode](orchestrator/start-maintenance-mode.md)
 #######[Stop maintenance mode](orchestrator/stop-maintenance-mode.md)
-#######[Update alert](orch/manage/update-alert.md)
+#######[Update alert](orchestrator/update-alert.md)
 ##### [Service Manager](orch/manage/integration-pack-for-service-manager.md)
 ###### [Service manager published data](orch/manage/service-manager-published-data.md)
 ###### [Service Manager Activities](orch/manage/service-manager-activities.md)
