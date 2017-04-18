@@ -23,7 +23,7 @@ The article describes general performance and scalability guidance for System Ce
 
 ## Capacity limits for Service Manager
 
-Read [Configurations for deployment scenarios](plan-configurations-for-deployment-scenarios.md) to learn about the tested capacity limits of Service Manager.
+Read [Configurations for deployment scenarios](../sm/plan/plan-configurations-for-deployment-scenarios.md) to learn about the tested capacity limits of Service Manager.
 
 ## Hardware
 
@@ -48,7 +48,7 @@ The following versions of Windows Server operating system are supported.
 |**Service Manager** Database or Data Warehouse Database||&#8226;|&#8226;|&#8226;||
 |**Service Manager** Self-Service Portal (HTML 5)||&#8226;|&#8226;|&#8226;|&nbsp;|
 
-Service Manager has a number of software requirements, depending on the type of component to install. See [Software requirements for Service Manager](plan-software-requirements-for-system-center-2016-service-manager.md) for more information.
+Service Manager has a number of software requirements, depending on the type of component to install. See [Software requirements for Service Manager](../sm/plan/plan-software-requirements-for-system-center-2016-service-manager.md) for more information.
 
 
 ## Client operating system
@@ -92,6 +92,6 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 - System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
 
 ## Next steps
-- Read [Configurations for deployment scenarios](plan-configurations-for-deployment-scenarios.md) to learn about the tested limits of Service Manager.
-- Read about Service Manager [hardware performance](plan-hardware-performance.md).
-- Read about [SQL Server requirements](plan-sql-server-requirements-for-system-center-2016-service-manager.md).
+- Read [Configurations for deployment scenarios](../sm/plan/plan-configurations-for-deployment-scenarios.md) to learn about the tested limits of Service Manager.
+- Read about Service Manager [hardware performance](../sm/plan/plan-hardware-performance.md).
+- Read about [SQL Server requirements](../sm/plan/plan-sql-server-requirements-for-system-center-2016-service-manager.md).
