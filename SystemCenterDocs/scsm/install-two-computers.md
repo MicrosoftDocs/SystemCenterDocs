@@ -23,7 +23,7 @@ If you want to evaluate System Center - Service Manager and its reporting capabi
 
  **Figure 2: An installation on two physical computers**  
 
- ![Two - computer installation for Service Manager](../media/deploy-service_manager_deployment_simple.png)  
+ ![Two - computer installation for Service Manager](./media/install-two-computers/deploy-service_manager_deployment_simple.png)  
 
 > [!IMPORTANT]  
 >  For this release, Service Manager does not support case\-sensitive instance names. Setup will display a warning if you attempt to install Service Manager on a case\-sensitive instance of Microsoft SQL&nbsp;Server.  
@@ -38,7 +38,7 @@ As the second step in the two\-computer installation process for System Center -
 
 -   Reporting account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../../scsm/prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
 ### To install a data warehouse management server and data warehouse databases  
 
@@ -57,7 +57,7 @@ As the second step in the two\-computer installation process for System Center -
 7.  On the **Configure data warehouse databases** page, Service Manager checks the computer you are using to see if it can host the data warehouse databases. For this configuration, confirm that the database server is the computer on which you are installing the data warehouse management server, and then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8.  On the **Configure additional data warehouse datamarts** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
 
@@ -92,7 +92,7 @@ As the second step in the two\-computer installation process for System Center -
 
 17. On the **Installation summary** page, click **Install**.  
 
-18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+18. On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
 ## Install the Service Manager data warehouse (two-computer scenario)
@@ -105,7 +105,7 @@ As the second step in the two\-computer installation process for System Center -
 
 -   Reporting account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../../scsm/prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
 ### To install a data warehouse management server and data warehouse databases  
 
@@ -124,7 +124,7 @@ As the second step in the two\-computer installation process for System Center -
 7.  On the **Configure data warehouse databases** page, in the **Database server** box, type the computer name of the physical computer that will host the data warehouse databases, the SQL server port, and Database name for all three data warehouse databases, then click **Next**.  
 
     > [!IMPORTANT]  
-    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](../../scsm/plan-sm.md).  
+    >  A warning message appears if you are using the default collation \(SQL\_Latin1\_General\_CP1\_CI\_AS\). Support for multiple languages in Service Manager is not possible when you are using the default collation. If later you decide to support multiple languages using a different collation, you have to re\-install SQL Server. See [Planning Guide for System Center - Service Manager](plan-sm.md).  
 
 8.   On the **Configure additional data warehouse datamart** page, Service Manager checks the current computer to see if an instance of SQL Server exists. By default, if an instance is found, Service Manager creates a new database in the existing instance. If an instance appears, click **Next**.  
 
@@ -159,7 +159,7 @@ As the second step in the two\-computer installation process for System Center -
 
 17.   On the **Installation summary** page, click **Install**.  
 
-18.   On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](deploy-completing-deployment-by-backing-up-the-encryption-key.md).
+18.   On the **Setup completed successfully** page, we recommend that you leave **Open the Encryption Backup or Restore Wizard** selected, and then click **Close**. For more information about backing up the encryption key, see [Completing Deployment by Backing Up the Encryption Key](../sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md).
 
 
 ## Validate the two-computer installation
@@ -234,4 +234,4 @@ You can use the following procedures to validate the two\-computer installation 
 
 ## Next steps
 
-- Review [Install Service Manager on four computers](deploy-installing-service-manager-on-four-computers.md) to install Service Manager on four computers. This scenario is useful in a production environment, and it maximizes performance and scalability.
+- Review [Install Service Manager on four computers](../sm/deploy/deploy-installing-service-manager-on-four-computers.md) to install Service Manager on four computers. This scenario is useful in a production environment, and it maximizes performance and scalability.

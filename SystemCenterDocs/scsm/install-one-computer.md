@@ -214,4 +214,4 @@ You can use the following procedures to validate the single\-computer installati
 
 # Next steps
 
-- Review [Install Service Manager on two computers](../sm/deploy/deploy-installing-service-manager-on-two-computers.md) to install Service Manager on two computers. This scenario is useful for testing Service Manager in a lab environment.
+- Review [Install Service Manager on two computers](install-two-computers.md) to install Service Manager on two computers. This scenario is useful for testing Service Manager in a lab environment.
