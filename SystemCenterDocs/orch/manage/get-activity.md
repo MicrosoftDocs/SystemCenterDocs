@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Get Activity activity is used to query for activity records for the selected activity class.
 
-The following published data elements are specific to Get Activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
+The following published data elements are specific to Get Activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](../../orchestrator/service-manager-published-data.md).
 
 ## Get Activity Published Data
 

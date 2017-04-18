@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Upload Attachment activity is used to upload a file to an existing Service Manager object.
 
-The following published data elements are specific to Upload Attachment. Additional published data is generated based on the Class that you select when you define the activity. For a list of the data elements published by each Class, see [Service Manager Published Data](service-manager-published-data.md).
+The following published data elements are specific to Upload Attachment. Additional published data is generated based on the Class that you select when you define the activity. For a list of the data elements published by each Class, see [Service Manager Published Data](../../orchestrator/service-manager-published-data.md).
 
 ## Upload Attachment Published Data
 

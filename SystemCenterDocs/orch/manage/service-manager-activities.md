@@ -159,4 +159,4 @@ The activities in the Service Manager Integration Pack use the classes, fields, 
 
 [Classes, Fields, and Filters](classes-fields-and-filters.md)
 
-[Service Manager Published Data](service-manager-published-data.md)
+[Service Manager Published Data](../../orchestrator/service-manager-published-data.md)
