@@ -546,7 +546,7 @@
 #######[Get vm subnet](orchestrator/get-vm-subnet-in-system-center-2016.md)
 #######[Get vm](orchestrator/get-vm.md)
 #######[Ganage checkpoint](orchestrator/manage-checkpoint.md)
-#######[Monitor vmm job](orch/manage/monitor-vmm-job-in-system-center-2016.md)
+#######[Monitor vmm job](orchestrator/monitor-vmm-job-in-system-center-2016.md)
 #######[Move vm](orch/manage/move-vm.md)
 #######[Remove user role](orch/manage/remove-user-role.md)
 #######[Remove vm](orch/manage/remove-vm.md)
