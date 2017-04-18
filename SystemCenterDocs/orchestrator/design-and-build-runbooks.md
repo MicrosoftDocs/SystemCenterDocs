@@ -22,24 +22,24 @@ This section provides details about how to design, build, and test, runbooks by 
 
 ## Runbooks  
 
--   [Designing a Runbook](../../orchestrator/designing-a-runbook.md)  
+-   [Designing a Runbook](designing-a-runbook.md)  
 
     Provides design guidance for building runbooks.  
 
--   [Building a Runbook](../manage/building-a-runbook.md)  
+-   [Building a Runbook](../orch/manage/building-a-runbook.md)  
 
     Describes how to create a runbook, how to add and link activities, and how to configure runbook properties.  
 
--   [How to Test a Runbook](../manage/how-to-test-a-runbook.md)  
+-   [How to Test a Runbook](../orch/manage/how-to-test-a-runbook.md)  
 
     Describes how to test a runbook.  
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md))  
+-   [Using Runbooks in System Center 2016 - Orchestrator](../orch/get-started/using-runbooks.md))  
 
--   [Runbook Concepts](../get-started/runbook-concepts.md)  
+-   [Runbook Concepts](../orch/get-started/runbook-concepts.md)  
 
--   [Deploy and Start Runbooks](../deploy/deploy-and-start-runbooks.md)  
+-   [Deploy and Start Runbooks](../orch/deploy/deploy-and-start-runbooks.md)  
 
--   [Runbook Samples](../../orchestrator/runbook-samples.md)  
+-   [Runbook Samples](runbook-samples.md)  

@@ -47,4 +47,4 @@ Consider the following points as you design your runbook:
 5.  Runbook logs \- By default, logging options are disabled for runbooks. When you enable&nbsp;logging, the data significantly increases the size of your database. As an alternative, you can log to an external system or file.  
 
 ## See Also  
-[Design and Build Runbooks](../orch/manage/design-and-build-runbooks.md)  
+[Design and Build Runbooks](design-and-build-runbooks.md)  

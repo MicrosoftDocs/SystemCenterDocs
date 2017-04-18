@@ -36,6 +36,6 @@ This topic provides instructions about how to build and test sample runbooks by 
 
 -   [Runbook Concepts](../orch/get-started/runbook-concepts.md)  
 
--   [Design and Build Runbooks](../orch/manage/design-and-build-runbooks.md)  
+-   [Design and Build Runbooks](design-and-build-runbooks.md)  
 
 -   [Deploying Runbooks](../orch/deploy/deploying-runbooks.md)  

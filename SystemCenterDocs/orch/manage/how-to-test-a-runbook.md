@@ -45,4 +45,4 @@ After you build a runbook, you can test it before it is run in production. To te
 4.  To continue through to the end of the runbook, click **Run to Breakpoint** again, or to step through it one activity at a time, click **Step**.  
 
 ## See Also  
-[Design and Build Runbooks](../manage/design-and-build-runbooks.md)  
+[Design and Build Runbooks](../../orchestrator/design-and-build-runbooks.md)  

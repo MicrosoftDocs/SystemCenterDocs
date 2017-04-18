@@ -251,7 +251,7 @@
 ####[Creating and testing a sample runbook](orchestrator/creating-and-testing-a-sample-runbook.md)
 #### [Customized activities](orchestrator/customized-activities.md)
 #### [Data manipulation](orch/manage/data-manipulation.md)
-####[Design and build runbooks](orch/manage/design-and-build-runbooks.md)
+####[Design and build runbooks](orchestrator/design-and-build-runbooks.md)
 ##### [Designing a runbook](orchestrator/designing-a-runbook.md)
 ##### [Building a runbook](orch/manage/building-a-runbook.md)
 ##### [How to test a runbook](orch/manage/how-to-test-a-runbook.md)
