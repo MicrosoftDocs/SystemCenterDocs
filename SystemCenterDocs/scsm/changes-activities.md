@@ -91,7 +91,7 @@ You can use the following procedures in Service Manager to create a change reque
 
 You can use the following procedures to add related items to a change request and then validate the addition of the items. You can add related items, such as configuration items, incidents, other change requests, files, and knowledge articles. When you add files, such as saved screen shots, saved written procedures, and knowledge articles, reviewers and implementers can more easily review, approve, and implement the change.  
 
-To add files to any work item, including change requests, you must first enable the appropriate option. For more information, see [How to Configure General Change Settings](../sm/manage/admin-how-to-configure-general-change-settings.md).  
+To add files to any work item, including change requests, you must first enable the appropriate option. For more information, see [How to Configure General Change Settings](config-change-settings.md).  
 
 #### To add related items to a change request  
 
