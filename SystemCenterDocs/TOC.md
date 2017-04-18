@@ -405,7 +405,7 @@
 ###### [Delete File](orchestrator/delete-file.md)
 ###### [Delete Folder](orchestrator/delete-folder.md)
 ###### [Download File](orchestrator/download-file.md)
-###### [List Folders or Files](orch/manage/list-folders-or-files.md)
+###### [List Folders or Files](orchestrator/list-folders-or-files.md)
 ###### [Rename Folders or Files](orch/manage/rename-file-or-folder.md)
 ###### [Resume File Download](orch/manage/resume-file-download.md)
 ###### [Synchronize Folder or File](orch/manage/synchronize-folder-or-file.md)

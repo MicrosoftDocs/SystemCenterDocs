@@ -110,7 +110,7 @@ This integration pack adds the **FTP** category to the **Activity** pane in the 
 
 [Download File](download-file.md)
 
-[List Folders/Files](../orch/manage/list-folders-or-files.md)
+[List Folders/Files](list-folders-or-files.md)
 
 [Rename File/Folder](../orch/manage/rename-file-or-folder.md)
 
