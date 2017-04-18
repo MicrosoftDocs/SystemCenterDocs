@@ -755,7 +755,7 @@
 ### [Plan](vmm/plan/plan-overview.md)
 #### [System requirements](vmm/system-reqs.md)
 #### [Plan VMM installation](vmm/plan-install.md)
-#### [Plan a VMM high availability deployment](vmm/plan/plan-ha-deployment.md)
+#### [Plan a VMM high availability deployment](vmm/plan-ha-install.md)
 #### [Plan the VMM fabric](vmm/plan/plan-fabric.md)
 ##### [Plan the VMM compute fabric](vmm/plan/plan-compute.md)
 ##### [Plan the VMM networking fabric](vmm/plan/plan-network.md)

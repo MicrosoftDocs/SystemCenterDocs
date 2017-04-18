@@ -74,7 +74,7 @@ When you install VMM with this user account SPN will be registered.
 - If you want to manage more than 150 hosts, we recommend that you use a dedicated computer for the VMM management server and do the following:
     - Add one or more remote computers as library servers, and do not use the default library share on the VMM management server.
     - Don't run the SQL Server instance on the VMM management server.
-- For high availability, the VMM management server can be installed on a failover cluster. [Learn more](plan/plan-ha-deployment.md).
+- For high availability, the VMM management server can be installed on a failover cluster. [Learn more](plan-ha-install.md).
 
 ## SQL Server and database
 

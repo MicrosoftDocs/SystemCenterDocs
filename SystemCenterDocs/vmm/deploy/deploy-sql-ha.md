@@ -20,7 +20,7 @@ This article describes the steps for deploying a highly available SQL Server dat
 
 ## Before you start
 
-Read the [planning information](../plan/plan-ha-deployment.md) for a highly available VMM deployment. It includes prerequisites and issues you should be aware of.
+Read the [planning information](../plan-ha-install.md) for a highly available VMM deployment. It includes prerequisites and issues you should be aware of.
 
 
 ## Set up availability groups
