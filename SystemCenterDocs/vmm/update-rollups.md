@@ -37,7 +37,7 @@ The following sections provide information about how to obtain and install the u
 > Ensure the job is complete. Else, follow the error message details, and redo the backup action.
 > 
 
-More information: [Back up the VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) 
+More information: [Back up the VMM database](deploy/back-up-and-restore-vmm.md#back-up-the-vmm-database) 
 
 ### Install update rollups from Microsoft updates
 
@@ -97,7 +97,7 @@ Use the following procedure to check if an update rollup is successfully install
 > [!IMPORTANT]
  
 > 1. It is not recommended that you remove the update rollups. Prior to removing, check all the available options if you can avoid the uninstall. You may also contact Microsoft Support to check and ensure if uninstall is really required.
-> 2. It is recommended that you [back up your VMM database](back-up-and-restore-vmm.md#back-up-the-vmm-database) before you attempt to remove an update rollup.
+> 2. It is recommended that you [back up your VMM database](deploy/back-up-and-restore-vmm.md#back-up-the-vmm-database) before you attempt to remove an update rollup.
 > 3. When you remove, the VMM binaries roll back to their earlier versions. However, the VMM database does not roll back.
 > 4. If you have one or more hotfixes installed on the server, make sure that you replace the hotfix binary with the official update rollup binary, before you start the removal. 
  
@@ -154,7 +154,7 @@ Use the following procedure to check if the update rollup was successfully remov
 
 > 2. Ensure that you restore the database backup that you created prior to the update rollup installation.
 
-For information on how to restore the database back up, see [this article](back-up-and-restore-vmm.md#restore-the-vmm-environment).
+For information on how to restore the database back up, see [this article](deploy/back-up-and-restore-vmm.md#restore-the-vmm-environment).
 
 ### Post-restore tasks
 
@@ -171,7 +171,7 @@ If a host has a virtual machine that was removed since the last backup, the virt
 
     A computer is considered different if it has a different security identifier (SID). For example, if you reinstall the operating system on the computer, the computer will have a different SID, even if you use the same computer name.
 
-    For more information on post-restore tasks,  see [this article](back-up-and-restore-vmm.md#post-restore-tasks).
+    For more information on post-restore tasks,  see [this article](deploy/back-up-and-restore-vmm.md#post-restore-tasks).
 
 > [!NOTE]
 

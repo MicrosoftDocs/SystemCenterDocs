@@ -782,7 +782,7 @@
 ##### [Deploy a highly available VMM management server](vmm/ha-server.md)
 ##### [Deploy a highly available SQL Server database for VMM](vmm/ha-sql.md)
 ##### [Deploy a highly available VMM library](vmm/ha-library.md)
-#### [Deploy update rollups](vmm/deploy/deploy-update-rollups.md)
+#### [Deploy update rollups](vmm/update-rollups.md)
 #### [Back up and restore VMM](vmm/deploy/back-up-and-restore-vmm.md)
 ### [Manage](vmm/manage/manage-overview.md)
 #### [Manage the VMM library](vmm/manage/manage-library-overview.md)
