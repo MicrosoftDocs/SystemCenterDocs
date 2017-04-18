@@ -354,7 +354,7 @@
 #######[Reboot role instance](orchestrator/reboot-role-instance.md)
 #######[Regenerate storage account key](orchestrator/regenerate-storage-account-key.md)
 #######[Reimage vm instance](orchestrator/reimage-vm-instance.md)
-#######[Remove vm endpoint](orch/manage/remove-vm-endpoint.md)
+#######[Remove vm endpoint](orchestrator/remove-vm-endpoint.md)
 #######[Restart vm instance](orch/manage/restart-vm-instance.md)
 #######[Rollback update or upgrade](orch/manage/rollback-update-or-upgrade.md)
 #######[Shutdown vm instance](orch/manage/shutdown-vm-instance.md)

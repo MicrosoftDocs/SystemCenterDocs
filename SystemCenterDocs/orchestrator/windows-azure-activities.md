@@ -214,7 +214,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Reimage VM Instance](reimage-vm-instance.md)
 
-[Remove VM Endpoint](../orch/manage/remove-vm-endpoint.md)
+[Remove VM Endpoint](remove-vm-endpoint.md)
 
 [Restart VM Instance](../orch/manage/re../orch/manage/start-vm-instance.md)
 
