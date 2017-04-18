@@ -63,4 +63,4 @@ To summarize, you are changing the computer name hosting the Service Manager dat
 
 ## Next steps
 
-- Review [Create and deploy server images of Service Manager](../sm/deploy/deploy-how-to-create-and-deploy-server-images-of-service-manager.md) to create a system image that contains software needed for use as a template so that you can apply it to new servers.
+- Review [Create and deploy server images of Service Manager](deploy-sm-images.md) to create a system image that contains software needed for use as a template so that you can apply it to new servers.

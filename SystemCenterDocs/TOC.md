@@ -630,7 +630,7 @@
 ##### [Install on four computers](scsm/install-four-computers.md)
 ##### [Manual steps to configure remote SQL Server Reporting Services](scsm/config-remote-ssrs.md)
 ##### [Use SQL Server AlwaysOn availability groups to support failover](scsm/sql-always-on.md)
-##### [Create and deploy server images of Service Manager](sm/deploy/deploy-how-to-create-and-deploy-server-images-of-service-manager.md)
+##### [Create and deploy server images of Service Manager](scsm/deploy-sm-images.md)
 #### [Guidance to install on virtual machines](sm/deploy/deploy-guidance-for-installing-system-center-2016-service-manager-on-virtual-machines.md)
 #### [Configure PowerShell to run in Service Manager](sm/deploy/deploy-configure-windows-powershell-to-run-in-system-center-2016-service-manager.md)
 #### [Register with the data warehouse to enable reporting](sm/deploy/deploy-registering-with-the-service-manager-data-warehouse-to-enable-reporting.md)
