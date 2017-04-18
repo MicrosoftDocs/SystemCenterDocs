@@ -62,7 +62,7 @@
 #### [Resource pool design considerations](scom/plan-resource-pool-design.md)
 #### [Design integration with other enterprise management products](scom/plan-thirdparty-integration.md)
 #### [Designing for high availability and disaster recovery](scom/plan-hadr-design.md)
-#### [Agent deployment planning](om/plan/planning-agents.md)
+#### [Agent deployment planning](scom/plan-planning-agent-deployment.md)
 #### [Security](om/plan/plan-security-summary.md)
 ##### [Configuring a firewall for Operations Manager](om/plan/planning-security-configuring-a-firewall.md)
 ##### [Service, user, and security accounts](om/plan/planning-security-accounts.md)

@@ -30,7 +30,7 @@ Before you use either method to manually deploy the agent, ensure the following 
 
 
 > [!NOTE]
-> For information about port requirements for agents, see [Communication Between Agents and Management Servers](../plan/planning-agents.md#communication-between-agents-and-management-servers).
+> For information about port requirements for agents, see [Communication Between Agents and Management Servers](../../scom/plan-planning-agent-deployment.md#communication-between-agents-and-management-servers).
 
 MOMAgent.msi can be found in the Operations Manager installation media and in the following folder on a management server *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\<platform\>*.  
 

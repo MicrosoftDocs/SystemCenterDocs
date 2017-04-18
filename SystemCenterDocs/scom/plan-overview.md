@@ -57,7 +57,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     Integration with other ITSM management, monitoring solutions, or custom solutions that extend Operations Manager to support your service operations framework are discussed with design recommendations.
 
-- [Monitoring Agent Overview and Deployment Considerations](../om/plan/planning-agents.md)
+- [Monitoring Agent Overview and Deployment Considerations](plan-planning-agent-deployment.md)
 
     Provides an overview of the Windows and UNIX/Linux agent and the software, security and deployment requirements and considerations that you need to understand before proceeding with your deployment of Operations Manager.
 
