@@ -98,4 +98,4 @@ This integration pack adds the HP iLO and OA category to the **Activity** pane i
 
 [Run iLO Command](run-ilo-command.md)
 
-[Run OA Command](../orch/manage/run-oa-command.md)
+[Run OA Command](run-oa-command.md)
