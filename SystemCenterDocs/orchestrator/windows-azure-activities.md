@@ -212,7 +212,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Regenerate Storage Account Key](regenerate-storage-account-key.md)
 
-[Reimage VM Instance](../orch/manage/reimage-vm-instance.md)
+[Reimage VM Instance](reimage-vm-instance.md)
 
 [Remove VM Endpoint](../orch/manage/remove-vm-endpoint.md)
 
