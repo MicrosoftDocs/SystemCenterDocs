@@ -276,7 +276,7 @@
 ####### [Add Group To Group](orchestrator/add-group-to-group.md)
 #######[Add User To Group](orchestrator/add-user-to-group.md)
 #######[Create Computer](orchestrator/create-computer.md)
-#######[Create Group](orch/manage/create-group.md)
+#######[Create Group](orchestrator/create-group.md)
 #######[Create User](orch/manage/create-user.md)
 #######[Delete Computer](orch/manage/delete-computer.md)
 #######[Delete Group](orch/manage/delete-group.md)
