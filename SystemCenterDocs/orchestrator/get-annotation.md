@@ -66,7 +66,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Delete Custom Attribute](delete-custom-attribute.md)
 
-[Get Message](../orch/manage/get-message.md)
+[Get Message](get-message.md)
 
 [Launch Tool](../orch/manage/launch-tool.md)
 

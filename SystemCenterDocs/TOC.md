@@ -422,7 +422,7 @@
 #######[Delete annotation](orchestrator/delete-annotation.md)
 #######[Delete custom attribute](orchestrator/delete-custom-attribute.md)
 #######[Get annotation](orchestrator/get-annotation.md)
-#######[Get message](orch/manage/get-message.md)
+#######[Get message](orchestrator/get-message.md)
 #######[Launch tool](orch/manage/launch-tool.md)
 #######[Monitor message](orch/manage/monitor-message.md)
 #######[Own or disown message](orch/manage/own-or-disown-message.md)

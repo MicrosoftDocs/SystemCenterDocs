@@ -59,7 +59,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Get Annotation](../../orchestrator/get-annotation.md)
 
-[Get Message](get-message.md)
+[Get Message](../../orchestrator/get-message.md)
 
 [Launch Tool](launch-tool.md)
 

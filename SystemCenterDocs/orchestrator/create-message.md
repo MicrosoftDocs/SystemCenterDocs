@@ -94,7 +94,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Get Annotation](get-annotation.md)
 
-[Get Message](../orch/manage/get-message.md)
+[Get Message](get-message.md)
 
 [Launch Tool](../orch/manage/launch-tool.md)
 
