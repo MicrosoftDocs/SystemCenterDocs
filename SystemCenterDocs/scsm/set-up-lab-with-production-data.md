@@ -23,7 +23,7 @@ This article explains how to create a lab environment and populate it with produ
 
 1. [Install an Additional Management Server in the Production Service Manager Management Group](install-additional-ms.md)
 2. Install any cumulative updates that you installed on the Primary Management server on the Secondary Management Server.
-3. [Copy the Workflow Assembly Files](../sm/deploy/upgrade-how-to-copy-the-workflow-assembly-files.md)
+3. [Copy the Workflow Assembly Files](copy-workflow-assembly.md)
 4. [Disable Service Manager Connectors in the Production Environment](../sm/deploy/upgrade-how-to-disable-service-manager-connectors-in-the-production-environment.md)
 5. [Disable Email Notifications in the Production Environment](../sm/deploy/upgrade-how-to-disable-email-notifications-in-the-production-environment.md)
 6. Disable all workflows in the production environment that you do not want to be running in the lab environment.

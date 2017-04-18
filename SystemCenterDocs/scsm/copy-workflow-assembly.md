@@ -32,4 +32,4 @@ Use the following procedure to copy the workflow assembly files from the Service
 
 ## Next steps
 
-- Review [Disable connectors in the production environment before you upgrade](upgrade-how-to-disable-service-manager-connectors-in-the-production-environment.md).
+- Review [Disable connectors in the production environment before you upgrade](../sm/deploy/upgrade-how-to-disable-service-manager-connectors-in-the-production-environment.md).
