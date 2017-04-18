@@ -58,4 +58,4 @@ If the module should contain a [Connection](Connections.md) type, it must also c
 
 [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
 
-[Working with Integration Modules](Working-with-Integration-Modules.md)
+[Working with Integration Modules](../manage-integration-modules.md)

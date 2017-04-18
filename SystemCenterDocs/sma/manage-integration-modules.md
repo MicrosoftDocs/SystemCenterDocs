@@ -110,6 +110,6 @@ $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,D
 ```
 
 ## See Also
-[Service Management Automation](../Service-Management-Automation.md)
-[Runbook Operations](Runbook-Operations.md)
-[Building an Integration Module](Building-an-Integration-Module.md)
+[Service Management Automation](service-management-automation.md)
+[Runbook Operations](manage/runbook-operations.md)
+[Building an Integration Module](manage/building-an-integration-module.md)
