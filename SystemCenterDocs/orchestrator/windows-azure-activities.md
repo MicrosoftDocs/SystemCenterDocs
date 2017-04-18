@@ -150,7 +150,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Create VM Deployment](create-vm-deployment.md)
 
-[Delete Blob](../orch/manage/delete-blob.md)
+[Delete Blob](delete-blob.md)
 
 [Delete Cloud Service](../orch/manage/delete-cloud-service.md)
 
