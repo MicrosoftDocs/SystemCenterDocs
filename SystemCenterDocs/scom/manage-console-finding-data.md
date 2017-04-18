@@ -25,9 +25,9 @@ The **Scope**, **Search**, **Find**, and **Time** tools apply a temporary filter
   
 |Filter|When to use|For more information, see|  
 |----------|---------------|-----------------------------|  
-|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-change-scope)<br>-   [Using Groups to Scope Views](how-to-create-and-scope-views-in-operations-manager.md)|  
-|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|-   [How to Use Find and Search](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-use-find-and-search)<br>-   [Using Advanced Search](using-advanced-search.md)<br>-   [Examples of Using Advanced Search in Operations Manager](using-advanced-search.md#examples-of-using-advanced-search-in-operations-manager)|  
-|Find|Use to display a known single object.|[How to Use Find and Search](finding-data-and-objects-in-the-operations-manager-consoles.md#how-to-use-find-and-search)|  
+|Scope|Use to limit the data in a view to only those objects that meet your criteria. This scope remains in place until you clear it.|-   [How to Change Scope](manage-console-finding-data.md#how-to-change-scope)<br>-   [Using Groups to Scope Views](../om/manage/how-to-create-and-scope-views-in-operations-manager.md)|  
+|Search|Use to display a list of objects that meet your criteria. You can then act on those objects; however, when you navigate away from this list, the filter is removed, and any view will show all objects (not just those from your search criteria).|-   [How to Use Find and Search](manage-console-finding-data.md#how-to-use-find-and-search)<br>-   [Using Advanced Search](../om/manage/using-advanced-search.md)<br>-   [Examples of Using Advanced Search in Operations Manager](../om/manage/../om/manage/using-advanced-search.md#examples-of-using-advanced-search-in-operations-manager)|  
+|Find|Use to display a known single object.|[How to Use Find and Search](manage-console-finding-data.md#how-to-use-find-and-search)|  
 
 ## How to change scope  
 
@@ -37,7 +37,7 @@ Changing the scope of the monitoring view enables you to view only those objects
   
 2.  Click the **Scope** button on the Operations Manager toolbar. If this button is not available, check to make sure that you have an object, not a folder, selected in the Monitoring pane. The **Change View Scope** dialog box displays a list of existing groups and distributed applications.  
   
-    ![Dialog box to change scope](../media/om2016-operations-console-change-scope.png)  
+    ![Dialog box to change scope](./media/manage-console-finding-data/om2016-operations-console-change-scope.png)  
   
 3.  If the list is too long, you can find a specific group or distributed application by entering a word or phrase in the **Look for** field. After you make a selection, click **OK**. Now only the objects that meet the scope criteria are shown in the Results pane.  
   
@@ -67,4 +67,4 @@ Use the **Find** button when the list of objects in the Results pane is too long
   
 ## Next steps
 
-* See [Using Advanced Search](using-advanced-search.md) to learn how to search for a specific object type that meets your specified criteria.  
+* See [Using Advanced Search](../om/manage/using-advanced-search.md) to learn how to search for a specific object type that meets your specified criteria.  

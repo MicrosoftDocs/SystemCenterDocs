@@ -32,7 +32,7 @@ Operations Manager, a component of System Center 2016, collects an immense amoun
     Operations Manager provides an Operations and Web console that you can use to view and work with the monitoring data for your environment. This section explains how to connect to the management group using each and describes the information and tasks available in each workspace in the Operations console. 
 
 
--   [Finding Data and Objects in the Operations Manager Consoles](finding-data-and-objects-in-the-operations-manager-consoles.md)
+-   [Finding Data and Objects in the Operations Manager Consoles](../../scom/manage-console-finding-data.md)
 
     The Operations Manager consoles provide find, scope, and search functions to help you filter and locate specific data and objects. This section explains how to use these functions effectively. 
 
