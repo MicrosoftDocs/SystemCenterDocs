@@ -249,6 +249,6 @@ If a network device discovery rule fails, the device or devices will be listed i
 
 - To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
 
-- To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](how-to-configure-monitoring-of-network-devices.md).  
+- To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](../../scom/manage-monitor-networkdevice-configure-monitoring.md).  
 
 - To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](../../scom/manage-monitor-networkdevice-delete-restore.md). 

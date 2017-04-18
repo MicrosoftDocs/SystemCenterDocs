@@ -103,6 +103,6 @@ The following monitors that generate alerts are disabled by default. Using overr
 
 ## Next steps
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](../../scom/manage-monitor-networkdevice-delete-restore.md).    
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).    
 
-- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](viewing-network-devices-and-data-in-operations-manager.md).  
+- To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](../om/manage/viewing-network-devices-and-data-in-operations-manager.md).  

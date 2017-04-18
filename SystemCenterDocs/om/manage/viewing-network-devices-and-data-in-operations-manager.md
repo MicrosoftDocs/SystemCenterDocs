@@ -167,7 +167,7 @@ Things to try in the vicinity view:
 
 ## Next steps
 
-- To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](how-to-configure-monitoring-of-network-devices.md).  
+- To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](../../scom/manage-monitor-networkdevice-configure-monitoring.md).  
 
 -  Operations Manager includes several reports that help analyze performance of monitored network devices.  To learn more, see [Reports for network monitoring in Operations Manager](reports-for-network-monitoring-in-operations-manager.md). 
 
