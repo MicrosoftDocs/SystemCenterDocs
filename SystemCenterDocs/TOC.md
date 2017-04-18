@@ -478,7 +478,7 @@
 ####### [Get Collection Member](orchestrator/get-collection-member.md)
 ####### [Get Deployment Status](orchestrator/get-deployment-status.md)
 ####### [Perform Client Action](orchestrator/perform-client-action.md)
-####### [Query Configuration Manager](orch/manage/query-configuration-manager.md)
+####### [Query Configuration Manager](orchestrator/query-configuration-manager.md)
 ####### [Update Collection Membership](orch/manage/update-collection-membership.md)
 ##### [Data Protection Manager](orchestrator/integration-pack-for-data-protection-manager.md)
 ###### [Data Protection Manager Activities](orchestrator/data-protection-manager-activities.md)
