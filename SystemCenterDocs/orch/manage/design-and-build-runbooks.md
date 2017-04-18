@@ -42,4 +42,4 @@ This section provides details about how to design, build, and test, runbooks by 
 
 -   [Deploy and Start Runbooks](../deploy/deploy-and-start-runbooks.md)  
 
--   [Runbook Samples](../get-started/runbook-samples.md)  
+-   [Runbook Samples](../../orchestrator/runbook-samples.md)  

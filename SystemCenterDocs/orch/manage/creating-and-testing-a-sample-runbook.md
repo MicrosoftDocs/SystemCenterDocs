@@ -203,4 +203,4 @@ You can test the runbook by using the Runbook Tester. This tool lets you run the
 9. Open the C:\\Copy folder and ensure that the file has been copied. Also verify that the MasterLog.txt file has the contents of the original file.  
 
 ## See Also  
-[Runbook Samples](../get-started/runbook-samples.md)  
+[Runbook Samples](../../orchestrator/runbook-samples.md)  

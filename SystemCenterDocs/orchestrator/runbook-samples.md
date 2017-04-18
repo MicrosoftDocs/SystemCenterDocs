@@ -22,20 +22,20 @@ This topic provides instructions about how to build and test sample runbooks by 
 
 ## Samples  
 
--   [Creating and Testing a Sample Runbook](../manage/creating-and-testing-a-sample-runbook.md)  
+-   [Creating and Testing a Sample Runbook](../orch/manage/creating-and-testing-a-sample-runbook.md)  
 
     Provides step\-by\-step instructions about creating and testing a simple runbook.  
 
--   [Monitor a Folder within a Runbook](../manage/monitor-a-folder-within-a-runbook.md)  
+-   [Monitor a Folder within a Runbook](../orch/manage/monitor-a-folder-within-a-runbook.md)  
 
     Provides instructions about how to create a runbook that monitors the activity in a folder.  
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)  
+-   [Using Runbooks in System Center 2016 - Orchestrator](../orch/get-started/using-runbooks.md)  
 
--   [Runbook Concepts](../get-started/runbook-concepts.md)  
+-   [Runbook Concepts](../orch/get-started/runbook-concepts.md)  
 
--   [Design and Build Runbooks](../manage/design-and-build-runbooks.md)  
+-   [Design and Build Runbooks](../orch/manage/design-and-build-runbooks.md)  
 
--   [Deploying Runbooks](../deploy/deploying-runbooks.md)  
+-   [Deploying Runbooks](../orch/deploy/deploying-runbooks.md)  

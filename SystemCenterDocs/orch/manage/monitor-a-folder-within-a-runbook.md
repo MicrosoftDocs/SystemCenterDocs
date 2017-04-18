@@ -160,4 +160,4 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 14. On the **Runbook Designer** toolbar, click **Check In**.  
 
 ## See Also  
-[Runbook Samples](../get-started/runbook-samples.md)  
+[Runbook Samples](../../orchestrator/runbook-samples.md)  
