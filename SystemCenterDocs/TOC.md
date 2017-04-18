@@ -166,7 +166,7 @@
 ##### [Implementing user roles](scom/manage-security-overview.md)
 ###### [Operations associated with User Profile roles](scom/manage-security-create-runas-account.md)
 ##### [How to create a new Action account](scom/manage-security-create-runas-actionaccount.md)
-##### [How to control access by using the Health Service Lockdown tool](om/manage/how-to-control-access-using-the-health-service-lockdown-tool.md)
+##### [How to control access by using the Health Service Lockdown tool](scom/manage-security-overview-hslockdown.md)
 ##### [Managing Run As Accounts and Profiles](scom/manage-security-maintain-runas-profiles.md)
 ###### [Distribution and targeting for Run As Accounts and Profiles](om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md)
 ###### [How to create a Run As Account and associate with a Profile](om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md)

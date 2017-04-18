@@ -30,7 +30,7 @@ ms.topic: article
 
     The Operations Manager Report Server unattended execution account is used to query data from the Reporting Data Warehouse and is configured through Microsoft SQL Server. This procedure explains how to manage this account.
 
-- [Controlling access using the Health Service Lockdown tool](how-to-control-access-using-the-health-service-lockdown-tool.md)
+- [Controlling access using the Health Service Lockdown tool](../../scom/manage-security-overview-hslockdown.md)
 
     On computers requiring high security, such as a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.
 

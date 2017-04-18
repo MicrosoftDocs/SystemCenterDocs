@@ -71,8 +71,8 @@ When evaluating allowed and denied listings, know that denies takes priority ove
   
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](how-to-create-a-run-as-account-and-associate-to-a-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md).
 
-- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](How-to-Create-a-New-Action-Account-in-Operations-Manager.md).
+- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](../../z-harvest-om/om/manage/how-to-create-a-new-action-account-in-operations-manager.md).
 
-- Review [Distribution and Targeting for Run As Accounts and Profiles](distribution-and-targeting-for-run-as-accounts-and-profiles.md) to understand how to target Run As account  distribution to agent-managed computers securely.  
+- Review [Distribution and Targeting for Run As Accounts and Profiles](../om/manage/distribution-and-targeting-for-run-as-accounts-and-profiles.md) to understand how to target Run As account  distribution to agent-managed computers securely.  
