@@ -559,7 +559,7 @@
 #######[Shut down vm](orchestrator/shut-down-vm.md)
 #######[Start vm](orchestrator/start-vm.md)
 #######[Stop service](orchestrator/stop-service-in-system-center-2016.md)
-#######[Stop vm](orch/manage/stop-vm.md)
+#######[Stop vm](orchestrator/stop-vm.md)
 #######[Suspend vm](orch/manage/suspend-vm.md)
 #######[Update disk](orch/manage/update-disk.md)
 #######[Update network adapter](orch/manage/update-network-adapter.md)
