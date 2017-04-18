@@ -623,7 +623,7 @@
 ##### [Plan for hardware performance](scsm/plan-hardware-perf.md)
 ##### [Service Manager performance](scsm/sm-perf.md)
 ##### [Recommended deployment topology scenarios](scsm/deploy-topo-scenarios.md)
-### [Deploy Service Manager](sm/deploy/deploy-deploying-system-center-2016-service-manager.md)
+### [Deploy Service Manager](scsm/deploy-sm.md)
 #### [Deployment scenarios](sm/deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md)
 ##### [Install on a single computer](sm/deploy/deploy-installing-service-manager-on-a-single-computer-minimum-configuration.md)
 ##### [Install on two computers](sm/deploy/deploy-installing-service-manager-on-two-computers.md)

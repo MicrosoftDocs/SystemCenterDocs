@@ -35,7 +35,7 @@ This article outlines how to upgrade from System Center 2012 R2 - Service Manage
 You can only upgrade to System Center 2016 from System Center 2012 R2 - Service Manager with Update Rollup 9 or later installed.  
 
 > [!IMPORTANT]  
->  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 R2. For information about installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying System Center 2016 - Service Manager](deploy-deploying-system-center-2016-service-manager.md).  
+>  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 R2. For information about installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying System Center 2016 - Service Manager](../../scsm/deploy-sm.md).  
 
 ## Plan for your upgrade to System Center 2016 - Service Manager
 
@@ -190,7 +190,7 @@ Before you start any upgrade, we recommend that you back up your Service Manager
 
 ### Register the Service Manager data warehouse  
 
-If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](deploy-deploying-system-center-2016-service-manager.md).  
+If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](../../scsm/deploy-sm.md).  
 
 ### Encryption keys  
 

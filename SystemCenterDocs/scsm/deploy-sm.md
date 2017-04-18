@@ -22,7 +22,7 @@ ms.assetid: 125912d9-f349-498d-920c-74519c667f48
 This articles in this guide helps you deploy System Center - Service Manager in one of several different scenarios. The scenarios range from a simple, one\-computer scenario to a four\-computer scenario that is designed to support production\-type environments. In addition, this guide shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You have the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.  
 
 > [!NOTE]  
->  It is assumed that you are installing Service Manager on a computer where no previous version of Service Manager is installed. For information about upgrading to System Center 2016 - Service Manager, see the [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).  
+>  It is assumed that you are installing Service Manager on a computer where no previous version of Service Manager is installed. For information about upgrading to System Center 2016 - Service Manager, see the [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md).  
 
 This articles in this guide also describe how to find and read the Setup log if you encounter issues when you deploy Service Manager. And, finally, information about backing up Service Manager management server encryption keys is included. After you run Setup, the Encryption Key Backup and Restore Wizard starts automatically.  
 
@@ -34,7 +34,7 @@ This section applies only if you are considering deploying a Service Manager dat
 
  The installation of a Service Manager database is not supported on a computer running SQL&nbsp;Server that uses a Turkish language collation. This is true for both the Service Manager and data warehouse databases. If you specify a computer running SQL&nbsp;Server that contains a Turkish language collation during the deployment of a Service Manager database, the following warning message appears.
 
-![Turkish Collation Warning](../media/deploy-turkishcollationwarning.png)
+![Turkish Collation Warning](./media/deploy-sm/deploy-turkishcollationwarning.png)
 
  If you encounter this warning message during the deployment of any of the Service Manager databases, click **OK**. On the **Database Configuration** page, in the **Database server** box, type the name of a computer that is hosting an installation of SQL&nbsp;Server that is configured with a non\-Turkish collation, and then press the TAB key. When **Default** appears in the **SQL Server instance** box, click **Next**.  
 
@@ -53,4 +53,4 @@ During installation, System Center - Service Manager Setup performs prerequisite
 
 ## Next steps
 
-- Review [Deployment scenarios for Service Manager](deploy-deployment-scenarios-for-system-center-2016-service-manager.md) to learn about how to deploy Service Manager in one-server, two-server, and four-server topologies.
+- Review [Deployment scenarios for Service Manager](../sm/deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md) to learn about how to deploy Service Manager in one-server, two-server, and four-server topologies.
