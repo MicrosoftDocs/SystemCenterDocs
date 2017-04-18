@@ -743,7 +743,7 @@
 ##### [Deploy a workflow to Service Manager using the Authoring Tool](scsm/deploy-workflow.md)
 ##### [Configure the Activities Toolbox in the Authoring Tool](scsm/config-activities-toolbox.md)
 ##### [Authoring Tool workflow activity reference](scsm/workflow-activity-ref.md)
-###### [Guidelines for creating custom activities in the Authoring Tool](sm/manage/author-guidelines-for-creating-custom-activities.md)
+###### [Guidelines for creating custom activities in the Authoring Tool](scsm/create-custom-activities.md)
 ###### [Set an activity's status to completed for the Authoring Tool sample activity](sm/manage/author-sample-activity-setting-an-activity-s-status-to-completed.md)
 #### [Woodgrove Bank customization sample scenario for the Authoring Tool](sm/manage/author-sample-scenario-the-woodgrove-bank-customization.md)
 #### [Customize a column title in a view for the authoring views sample scenario](sm/manage/author-views-sample-scenario-how-to-customize-a-column-title-in-a-view.md)

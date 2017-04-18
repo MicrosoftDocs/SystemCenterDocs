@@ -247,7 +247,7 @@ namespace Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary.Validators
 ```  
 
 ### Use the example WF activity in a workflow  
- The **Set Activity Status to Completed** activity is included in the Authoring Tool default **Activities Toolbox** pane. For more information about adding custom activities to the **Activities Toolbox** pane, see [How to Install a Custom Activity Assembly](../../scsm/config-activities-toolbox.md).  
+ The **Set Activity Status to Completed** activity is included in the Authoring Tool default **Activities Toolbox** pane. For more information about adding custom activities to the **Activities Toolbox** pane, see [How to Install a Custom Activity Assembly](config-activities-toolbox.md).  
 
  You can use the authoring pane of the Authoring Tool to author workflows in a manner that is similar to using the Visual Studio workflow design interface. However, the Authoring Tool offers the following benefits:  
 
@@ -395,7 +395,7 @@ WorkflowAuthoring.SetActivityStatusToCompleteWF
 ### Import the management pack  
  For the workflow to run on a particular Service Manager management server, all of the files that are related to the workflow must reside on that server. These files include the following:  
 
--   The WF activity assembly files. If you are using only the Service Manager WF activities, by default, the appropriate files are installed. If you are using custom activities, see [How to Install a Custom Activity Assembly](../../scsm/config-activities-toolbox.md).  
+-   The WF activity assembly files. If you are using only the Service Manager WF activities, by default, the appropriate files are installed. If you are using custom activities, see [How to Install a Custom Activity Assembly](config-activities-toolbox.md).  
 
 -   The workflow assembly file, in this case, SetActivityStatusToCompleteWF.dll. You must manually copy this file to the Service Manager management server.  
 
