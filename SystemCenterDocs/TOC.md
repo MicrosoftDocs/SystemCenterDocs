@@ -273,7 +273,7 @@
 ##### [Active Directory](orchestrator/active-directory-integration-pack.md)
 ###### [Active Directory Activities](orchestrator/active-directory-activities.md)
 ####### [Add Computer To Group](orchestrator/add-computer-to-group.md)
-####### [Add Group To Group](orch/manage/add-group-to-group.md)
+####### [Add Group To Group](orchestrator/add-group-to-group.md)
 #######[Add User To Group](orch/manage/add-user-to-group.md)
 #######[Create Computer](orch/manage/create-computer.md)
 #######[Create Group](orch/manage/create-group.md)
