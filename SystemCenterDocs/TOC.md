@@ -796,7 +796,7 @@
 ##### [Run a rolling upgrade of Hyper-V clusters](vmm/hyper-v-rolling-upgrade.md)
 ##### [Add existing Hyper-V hosts and clusters to the fabric](vmm/hyper-v-existing.md)
 ##### [Add a Nano server as a Hyper-V host or cluster](vmm/hyper-v-nano.md)
-##### [Create a cluster from standalone Hyper-V hosts](vmm/manage/manage-compute-create-cluster-from-standalone.md)
+##### [Create a cluster from standalone Hyper-V hosts](vmm/hyper-v-standalone.md)
 ##### [Provision a Hyper-V host or cluster from bare-metal](vmm/manage/manage-compute-bare-metal-hyper-v.md)
 ##### [Create a guest Hyper-V cluster from a service template](vmm/manage/manage-compute-guest-cluster-service-template.md)
 ##### [Manage Hyper-V clusters in the VMM fabric](vmm/manage/manage-compute-hyper-v-clusters.md)
