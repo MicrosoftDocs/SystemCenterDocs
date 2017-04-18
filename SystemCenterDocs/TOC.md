@@ -379,7 +379,7 @@
 #######[Get mailbox](orchestrator/get-mailbox.md)
 #######[Get move request statistics](orchestrator/get-move-request-statistics.md)
 #######[Get move request](orchestrator/get-move-request.md)
-#######[Get remote mailbox hybrid](orch/manage/get-remote-mailbox-hybrid.md)
+#######[Get remote mailbox hybrid](orchestrator/get-remote-mailbox-hybrid.md)
 #######[Remove mailbox](orch/manage/remove-mailbox.md)
 #######[Remove remote mailbox hybrid](orch/manage/remove-remote-mailbox-hybrid.md)
 #######[Run exchange powershell command](orch/manage/run-exchange-powershell-command.md)
