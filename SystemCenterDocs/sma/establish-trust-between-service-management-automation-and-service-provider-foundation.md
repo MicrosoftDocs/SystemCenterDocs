@@ -41,4 +41,4 @@ For Service Provider Foundation to successfully call the Service Management Auto
 
 Service Provider Foundation should now be able to successfully call the Service Management Automation web service.
 
-For detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](Authoring-Automation-Runbooks.md).
+For detailed guidance to understand, create, test, and publish runbooks, see [Authoring Automation Runbooks](authoring-automation-runbooks.md).

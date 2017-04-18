@@ -22,7 +22,7 @@ Service Management Automation (SMA) is an IT process automation solution for Win
 
 The following diagram illustrates how SMA integrates with Windows Azure Pack for Windows Server.
 
-![SMA Architecture diagram](../media/smaarchitecture.png)
+![SMA Architecture diagram](./media/automate-operations-service-management-automation/smaarchitecture.png)
 
 
 ## Comparison to other automation tools

@@ -20,19 +20,19 @@ Service Management Automation must be administered separately from Windows Azure
 
 ## Administration topics
 
--   [Scaling Service Management Automation up or down](Scaling-Service-Management-Automation-up-or-down.md)
+-   [Scaling Service Management Automation up or down](manage/scaling-service-management-automation-up-or-down.md)
 
     Describes how to approach and implement adding runbook workers and web services to or removing them from Service Management Automation.
 
--   [How to purge the Service Management Automation database](How-to-purge-the-Service-Management-Automation-database.md)
+-   [How to purge the Service Management Automation database](manage/how-to-purge-the-service-management-automation-database.md)
 
     Describes how to approach and implement to install a Service Management Automation PowerShell module.
 
--   [Establish trust between Service Management Automation and Service Provider Foundation](Establish-trust-between-Service-Management-Automation-and-Service-Provider-Foundation.md)
+-   [Establish trust between Service Management Automation and Service Provider Foundation](establish-trust-between-service-management-automation-and-service-provider-foundation.md)
 
     Provides an overview of how to establish trust relationships between other Windows Azure Pack components and Service Management Automation.
 
--   [Set or change the Service Management Automation endpoint](../set-change-endpoint.md)
+-   [Set or change the Service Management Automation endpoint](set-change-endpoint.md)
 
     Provides instructions on how to change the endpoint for SMA.
 
