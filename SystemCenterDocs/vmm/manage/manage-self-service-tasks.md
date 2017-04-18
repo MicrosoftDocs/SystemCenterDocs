@@ -24,7 +24,7 @@ Self-service users can interact with VMM to deploy virtual machines and services
 ## Create and deploy virtual machines
 
 - [Learn about](manage-vm-vhd-existing.md) creating a VM from an existing VHDs
-- [Learn about](manage-vm-vhd-blank.md) creating a VM from a blank VHDs
+- [Learn about](../vm-blank-disk.md) creating a VM from a blank VHDs
 - [Learn about](manage-vm-clone.md) cloning an existing VM
 - [Learn about](manage-vm-template.md) deploying VMs from VM templates
 - [Learn about](manage-vm-linux.md) deploying VMs running Linux

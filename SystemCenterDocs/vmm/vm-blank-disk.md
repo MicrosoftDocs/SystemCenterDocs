@@ -25,7 +25,7 @@ This article describes how to create and deploy virtual machines in the System C
 - To complete the steps you must be an Administrator or Delegated Administrator on the VMM server, or a self-service user.
 - If you're a self-service user you need **Deploy** permissions with the **Store and re-deploy** action assigned. You must first deploy the VM to a private cloud, and then store it in the library.
 - You can only customize static IP address settings if you create a VM from a VM template.
-- You can use VMM to configure the availability settings for the virtual machine. [Learn more](manage-vm-settings.md)
+- You can use VMM to configure the availability settings for the virtual machine. [Learn more](manage/manage-vm-settings.md)
 
 ## Create a VM
 
@@ -46,7 +46,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Deploy the VM in a private cloud
 
-1.  In **Select Cloud** select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. Cloud suggestions are based on a 0-5 star rating. [Learn more](../provision-vms.md#vm-placement). Verify the settings and modify if required:
+1.  In **Select Cloud** select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. Cloud suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 
     -   **Expected utilization**: Expected utilization for a VM created from a blank VHD is based on standard defaults. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
     -   **Make this VM highly available**: With this option selected, only hosts that are located in a cluster are available for selection.
@@ -62,7 +62,7 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Deploy the VM on a host
 
-1. In **Select Host**, view the ratings, click the host on which you want to deploy the VM, and click **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](../provision-vms.md#vm-placement). Verify the settings and modify if required:
+1. In **Select Host**, view the ratings, click the host on which you want to deploy the VM, and click **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](provision-vms.md#vm-placement). Verify the settings and modify if required:
 
     -   **Expected utilization**: Expected utilization for a VM created from a blank VHD is based on standard defaults. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
     -   **Make this VM highly available**: With this option selected, only hosts that are located in a cluster are available for selection.
