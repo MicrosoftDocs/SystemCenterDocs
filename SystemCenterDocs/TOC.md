@@ -618,7 +618,7 @@
 ##### [Languages supported by Service Manager](scsm/sm-languages.md)
 ##### [Databases created by Service Manager](scsm/databases-created.md)
 ##### [Port assignments](scsm/ports.md)
-#### [Prepare for Service Manager deployment](sm/plan/plan-preparing-for-system-center-2016-service-manager-deployment.md)
+#### [Prepare for Service Manager deployment](scsm/prepare-deploy.md)
 #### [Planning for performance and scalability](sm/plan/plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md)
 ##### [Plan for hardware performance](sm/plan/plan-hardware-performance.md)
 ##### [Service Manager performance](sm/plan/plan-service-manager-performance.md)

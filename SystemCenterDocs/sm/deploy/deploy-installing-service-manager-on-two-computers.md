@@ -38,7 +38,7 @@ As the second step in the two\-computer installation process for System Center -
 
 -   Reporting account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-preparing-for-system-center-2016-service-manager-deployment.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](../../scsm/prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
 ### To install a data warehouse management server and data warehouse databases  
 
@@ -105,7 +105,7 @@ As the second step in the two\-computer installation process for System Center -
 
 -   Reporting account  
 
- For more information about the permissions that these accounts require, see [Accounts Required During Setup](../plan/plan-preparing-for-system-center-2016-service-manager-deployment.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
+ For more information about the permissions that these accounts require, see [Accounts Required During Setup](../../scsm/prepare-deploy.md). Before you start, make sure that Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) is installed in the default instance of Microsoft SQL&nbsp;Server.  
 
 ### To install a data warehouse management server and data warehouse databases  
 

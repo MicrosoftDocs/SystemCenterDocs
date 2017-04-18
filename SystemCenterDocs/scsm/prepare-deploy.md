@@ -204,4 +204,4 @@ Use the following procedures to prepare computers for deployment of System Cente
 
 ## Next steps
 
-- Review [Planning for performance and scalability](plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md) to learn about the issues that affect performance and scalability in Service Manager. Also suggests best practices to achieve good performance using suggested hardware configurations.
+- Review [Planning for performance and scalability](../sm/plan/plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md) to learn about the issues that affect performance and scalability in Service Manager. Also suggests best practices to achieve good performance using suggested hardware configurations.
