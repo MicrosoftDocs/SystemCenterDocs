@@ -155,7 +155,7 @@
 ##### [Using the Visio add-in and SharePoint Visio Services Data Provider](scom/manage-overview-visio-addin.md)
 ###### [Install the Visio add-in](scom/manage-visio-addin-install-configure.md)
 ###### [Install and configure the Visio Services data provider](scom/manage-visio-addin-install-data-provider.md)
-###### [Configure the Operations Manager data source in Visio](om/manage/configure-the-operations-manager-data-source-in-visio.md)
+###### [Configure the Operations Manager data source in Visio](scom/manage-visio-addin-configure-datasource.md)
 ###### [View an Operations Manager distributed diagram in Visio](om/manage/view-an-operations-manager-distributed-application-diagram-in-visio.md)
 ###### [Link to Operations Manager objects in a new or existing Visio dcocument](om/manage/link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)
 ###### [Build a simple monitoring dashboard using the Visio Web Part](om/manage/build-a-simple-monitoring-dashboard-using-the-visio-web-part.md)

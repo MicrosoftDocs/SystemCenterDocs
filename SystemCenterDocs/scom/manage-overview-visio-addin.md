@@ -44,7 +44,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [Install and Configure the Visio Services Data Provider](manage-visio-addin-install-data-provider.md)  
   
--   [Configure the Operations Manager Data Source in Visio](../om/manage/configure-the-operations-manager-data-source-in-visio.md)  
+-   [Configure the Operations Manager Data Source in Visio](manage-visio-addin-configure-datasource.md)  
   
 -   [View an Operations Manager Distributed Application Diagram in Visio](../om/manage/view-an-operations-manager-distributed-application-diagram-in-visio.md)  
   
