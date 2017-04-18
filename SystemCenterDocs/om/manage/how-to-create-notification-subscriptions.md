@@ -90,7 +90,7 @@ In the first example, the UNIX administrator would be notified of alerts raised 
     > [!NOTE]  
     > You will also receive notifications when an alert is updated.  
   
-6.  On the **Subscribers** page, click **Add** to add subscribers who are already defined, or click **New** to add new subscribers. For more information on defining subscribers, see [How to Create Notification Subscribers](how-to-create-notification-subscribers.md).  
+6.  On the **Subscribers** page, click **Add** to add subscribers who are already defined, or click **New** to add new subscribers. For more information on defining subscribers, see [How to Create Notification Subscribers](../../scom/manage-notifications-create-subscribers.md).  
   
 7.  Click **Next**.  
   
@@ -115,7 +115,7 @@ In the first example, the UNIX administrator would be notified of alerts raised 
     > [!NOTE]  
     > You will also receive notifications when an alert is updated.  
   
-6.  On the **Subscribers** page, click **Add** to add subscribers who are already defined, or select a subscriber in the **Selected subscribers** box and click **Edit** to change the settings for this subscription. For more information on defining subscribers, see [How to Create Notification Subscribers](how-to-create-notification-subscribers.md).  
+6.  On the **Subscribers** page, click **Add** to add subscribers who are already defined, or select a subscriber in the **Selected subscribers** box and click **Edit** to change the settings for this subscription. For more information on defining subscribers, see [How to Create Notification Subscribers](../../scom/manage-notifications-create-subscribers.md).  
   
 7.  Click **Next**.  
   
@@ -127,5 +127,5 @@ In the first example, the UNIX administrator would be notified of alerts raised 
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](../../scom/manage-notifications-create-subscribers.md)
 

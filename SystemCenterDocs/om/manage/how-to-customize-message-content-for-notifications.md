@@ -109,6 +109,6 @@ When you create a subscription, you can copy an existing channel that you can cu
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](../../scom/manage-notifications-create-subscribers.md)
 
 * Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  

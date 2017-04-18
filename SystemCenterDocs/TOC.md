@@ -148,7 +148,7 @@
 ###### [How to enable an instant message notification channel](scom/manage-notifications-create-im-channel.md)
 ###### [How to enable text message (SMS) notification channel](scom/manage-notifications-create-txt-channel.md)
 ###### [How to enable a command notification channel](scom/manage-notifications-create-command-channel.md)
-###### [How to create notification subscribers](om/manage/how-to-create-notification-subscribers.md)
+###### [How to create notification subscribers](scom/manage-notifications-create-subscribers.md)
 ###### [How to create notification subscriptions](om/manage/how-to-create-notification-subscriptions.md)
 ###### [How to customize message content for notifications](om/manage/how-to-customize-message-content-for-notifications.md)
 ###### [How to subscribe to notifications from an alert](om/manage/how-to-subscribe-to-notifications-from-an-alert.md)

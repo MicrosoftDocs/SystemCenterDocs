@@ -39,7 +39,7 @@ To configure alert notifications for System Center 2016 - Operations Manager, yo
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](manage-notifications-create-subscribers.md)
 
 * Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
 

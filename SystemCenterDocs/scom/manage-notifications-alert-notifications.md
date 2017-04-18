@@ -42,7 +42,7 @@ An Operations Manager administrator must define the notification channels and if
   
 -   [How to enable a command notification channel](manage-notifications-create-command-channel.md)  
   
--   [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)  
+-   [How to create notification subscribers](manage-notifications-create-subscribers.md)  
   
 -   [How to create notification subscriptions](../om/manage/how-to-create-notification-subscriptions.md)  
   
