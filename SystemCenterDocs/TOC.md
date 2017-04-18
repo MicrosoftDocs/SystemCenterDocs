@@ -451,7 +451,7 @@
 ##### [SharePoint activities](orch/manage/sharepoint-activities.md)
 ###### [Create List Item](orchestrator/create-list-item.md)
 ###### [Delete Attachment](orchestrator/delete-attachment.md)
-###### [Delete Document](orch/manage/delete-document.md)
+###### [Delete Document](orchestrator/delete-document.md)
 ###### [Delete List Item](orch/manage/delete-list-item.md)
 ###### [Download Attachment](orch/manage/download-attachment.md)
 ###### [Download Document](orch/manage/download-document.md)
