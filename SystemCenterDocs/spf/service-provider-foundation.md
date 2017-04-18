@@ -19,5 +19,5 @@ Service Provider Foundation (SPF) is provided with System Center 2016 - Orchestr
 
 - [Learn about SPF](overview.md)
 - [Plan SPF deployment](plan-spf.md)
-- [Deploy and install SPF](deploy/deploy-spf.md)
+- [Deploy and install SPF](deploy-spf.md)
 - [Manage SPF after deployment](manage/manage-spf.md)
