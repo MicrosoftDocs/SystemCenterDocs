@@ -683,7 +683,7 @@
 #### [Configure change and activity management ](scsm/change-activity-mgt.md)
 #### [Configure release management](scsm/release-mgt.md)
 #### [Configure Desired Configuration Management to generate incidents](scsm/dcm-incidents.md)
-#### [Configure notifications](sm/manage/admin-configuring-system-center-2016-service-manager-notifications.md)
+#### [Configure notifications](scsm/notifications.md)
 #### [Use the service catalog to offer services](sm/manage/admin-using-the-service-catalog-in-system-center-2016-service-manager.md)
 #### [Use groups, queues, and lists in Service Manager](sm/manage/admin-using-groups-queues-and-lists-in-system-center-2016-service-manager.md)
 #### [Use runbooks to automate procedures](sm/manage/admin-using-runbooks-in-system-center-2016-service-manager.md)

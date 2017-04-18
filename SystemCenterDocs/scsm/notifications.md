@@ -59,7 +59,7 @@ You can use the following procedures to configure notification channels and vali
 2.  In the **Tasks** pane, under **E-Mail Notification Channel**, click **Properties** to open the **Configure E-Mail Notification Channel** dialog box.
 3.  Verify that the configuration you entered is correct.
 
-![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
+![PowerShell symbol](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
 -   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225375).
 -   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225319).
@@ -69,7 +69,7 @@ You can use the following procedures to configure notification channels and vali
 You can use the following procedures to create notification templates for many types of information records or work items that Service Manager records or keeps track of, such as incidents, change requests, activities, release records, and configuration items. After you create the notification templates, you can use a notification subscription to send email messages based on the templates. The notification template determines the type and format of the messages to send.
 
 > [!NOTE]
-> Manually copying and pasting substitution strings from other notification templates will not generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you are creating or updating. For more information about using substitution strings in notification templates, see [About Substitution Strings in Notification Templates](admin-about-substitution-strings-in-notification-templates.md).
+> Manually copying and pasting substitution strings from other notification templates will not generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you are creating or updating. For more information about using substitution strings in notification templates, see [About Substitution Strings in Notification Templates](../sm/manage/admin-about-substitution-strings-in-notification-templates.md).
 
 The following two templates are prerequisites for other procedures:
 
@@ -131,7 +131,7 @@ The following two templates are prerequisites for other procedures:
 
 -   Verify that the new template you created appears in the list of notification templates.
 
-![PowerShell symbol](../media/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
+![PowerShell symbol](./media/notifications/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225355).
 -   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225323).
@@ -208,7 +208,7 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 -   Locate the notification subscription that you created in the list of subscriptions.
 
-![PowerShell symbol](../media/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
+![PowerShell symbol](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
 -   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
 -   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225333).
