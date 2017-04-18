@@ -384,7 +384,7 @@
 #######[Remove remote mailbox hybrid](orchestrator/remove-remote-mailbox-hybrid.md)
 #######[Run exchange powershell command](orchestrator/run-exchange-powershell-command.md)
 #######[Update mailbox](orchestrator/update-mailbox.md)
-#######[Update move request](orch/manage/update-move-request.md)
+#######[Update move request](orchestrator/update-move-request.md)
 #######[Update remote mailbox hybrid](orch/manage/update-remote-mailbox-hybrid.md)
 ##### [Exchange users Integration Pack](orch/manage/exchange-users-integration-pack.md)
 ###### [Exchange users Activities](orch/manage/exchange-users-activities.md)
