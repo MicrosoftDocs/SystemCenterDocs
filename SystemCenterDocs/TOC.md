@@ -865,7 +865,7 @@
 ### [What's new in Service Management Automation 2016](sma/whats-new-in-service-management-automation.md)
 ### [Overview of Service Management Automation](sma/overview-of-service-management-automation.md)
 ### [Architecture of Service Management Automation](sma/architecture-of-service-management-automation.md)
-### [Runbook Execution in Service Management Automation](sma/get-started/Runbook-Execution-in-Service-Management-Automation.md)
+### [Runbook Execution in Service Management Automation](sma/runbook-automation.md)
 ### [Deploy Service Management Automation](sma/Deploy/Deploy-Service-Management-Automation.md)
 #### [System requirements for Service Management Automation](sma/Deploy/System-requirements-for-Service-Management-Automation.md)
 #### [How to upgrade from a previous version of Service Management Automation](sma/Deploy/How-to-upgrade-from-a-previous-version-of-Service-Management-Automation.md)
