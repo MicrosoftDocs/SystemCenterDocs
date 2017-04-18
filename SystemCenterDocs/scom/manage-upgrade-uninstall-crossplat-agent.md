@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Planning Security Credentials for Accessing Unix and Linux Computers](../../scom/plan-security-crossplat-credentials.md).
+This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
 
 ## Upgrading agents
 
@@ -40,13 +40,13 @@ You must run the **UNIX/Linux Agent Upgrade Wizard** to upgrade agents from earl
 
     -   Click **Show Computers** (in the alert text) for a list of the computers that do not have the required credentials specified in Run As Accounts. Then click **Previous** to unselect them and try again.
 
-    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
 
 6.  Click **Upgrade**.
 
 ## Uninstalling agents
 
-You can uninstall an agent from the targeted computer by using the **UNIX/Linux Agent Uninstall Wizard**. For information on manually uninstalling agents, see [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md).
+You can uninstall an agent from the targeted computer by using the **UNIX/Linux Agent Uninstall Wizard**. For information on manually uninstalling agents, see [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md).
 
 #### To uninstall an agent
 
@@ -66,19 +66,19 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
     -   Click **Show Computers** (in the alert text) for a list of the computers does not have the required credentials specified in Run As Accounts. Then click **Previous** to unselect them and try again.
 
-    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+    For detailed instructions on how to set credentials, see [How to Set Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
 
 6.  Click **Uninstall**.
 
 ## Next steps
 
-- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../../scom/manage-install-crossplat-agent-cmdline.md).
+- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
 
-- To understand how to approve agents manually installed, review [Process Manual Agent Installations](../../scom/manage-process-manual-agent-install.md).
+- To understand how to approve agents manually installed, review [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
 
-- Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 
 
 

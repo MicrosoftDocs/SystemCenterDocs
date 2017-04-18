@@ -66,7 +66,7 @@ The Operations Manager Operations console provides standard views such as State,
 
 Knowledge is content, embedded in rules and monitors, that contains information from the management pack author about the causes of an alert and suggestions on how to fix the issue that caused an alert to be raised. Knowledge appears as text in the console, and its goal is to help an operator diagnose and fix problems. The text can include links to tasks, allowing the author of this knowledge to walk an operator through the recovery process. For example, the operator might first be instructed to run task A, and then based on the result of this task, run either task B or task C. Knowledge can also contain links to performance views and to reports, giving the operator direct access to information needed to solve a problem.  
   
-Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is added to the management pack by the management pack author. Administrators can add their own knowledge to rules and monitors to expand the troubleshooting information and provide company\-specific information for operators, which is known as company knowledge. For more information on adding company knowledge to a management pack, see [How to Add Knowledge to a Management Pack](How-to-Add-Knowledge-to-a-Management-Pack.md).  
+Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is added to the management pack by the management pack author. Administrators can add their own knowledge to rules and monitors to expand the troubleshooting information and provide company\-specific information for operators, which is known as company knowledge. For more information on adding company knowledge to a management pack, see [How to Add Knowledge to a Management Pack](../om/manage/how-to-add-knowledge-to-a-management-pack.md).  
   
 ### Tasks  
 
@@ -96,7 +96,7 @@ Although you cannot change the settings in a sealed management pack, you can sti
   
 ## Management pack libraries and dependencies  
 
-Certain management packs are referred to as *libraries*, because they provide a foundation of classes on which other management packs depend. A management pack that you download from the Operations Manager Catalog might include a library management pack. Several library management packs are imported as part of the Operations Manager installation process. For a list of management packs imported during the installation of Operations Manager, see [Management Packs Installed with Operations Manager](Management-Packs-Installed-with-Operations-Manager.md).  
+Certain management packs are referred to as *libraries*, because they provide a foundation of classes on which other management packs depend. A management pack that you download from the Operations Manager Catalog might include a library management pack. Several library management packs are imported as part of the Operations Manager installation process. For a list of management packs imported during the installation of Operations Manager, see [Management Packs Installed with Operations Manager](../om/manage/management-packs-installed-with-operations-manager.md).  
   
 A dependency exists when a management pack references other management packs. You must import all referenced management packs before you can import the management pack that depends on those management packs. Management packs include a management pack guide that should document the dependencies of the management pack. In addition, if you attempt to import a management pack and the management packs that it is dependent on are not present, the **Import Management Packs** dialog box will display a message that the management pack will fail to import and a list of the missing management packs. After you import a management pack, you can view its dependencies in the Operations console.  
   
@@ -112,11 +112,11 @@ A dependency exists when a management pack references other management packs. Yo
   
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](How-to-Create-a-Management-Pack-for-Overrides.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](../om/manage/how-to-create-a-management-pack-for-overrides.md)
  
-- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](Management-Pack-Lifecycle.md)  
+- To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](../om/manage/management-pack-lifecycle.md)  
 
-- See [How to import, export and remove a management pack](how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
+- See [How to import, export and remove a management pack](../om/manage/how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
 
-- If you want to create your own custom knowledge for specific alerts generated by rules or monitors from a sealed management pack, review [How to Add Knowledge to a Management Pack](How-to-Add-Knowledge-to-a-Management-Pack.md)  
+- If you want to create your own custom knowledge for specific alerts generated by rules or monitors from a sealed management pack, review [How to Add Knowledge to a Management Pack](../om/manage/how-to-add-knowledge-to-a-management-pack.md)  
   

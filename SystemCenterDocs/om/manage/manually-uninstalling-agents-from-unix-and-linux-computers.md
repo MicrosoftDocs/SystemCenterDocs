@@ -28,7 +28,7 @@ Use the following procedures to uninstall agents.
 
 ## To delete an agent with the UNIX Linux Agent Uninstall Wizard
 
-1.  For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+1.  For more information, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../../scom/manage-upgrade-uninstall-crossplat-agent.md).
 
 After the UNIX or Linux computer has been deleted from the list of monitored computers, you must log on to the monitored computer and manually uninstall the agent. Use the following procedures to manually uninstall agents from UNIX and Linux computers.
 
@@ -98,6 +98,6 @@ After the UNIX or Linux computer has been deleted from the list of monitored com
 
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
 
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../../scom/manage-upgrade-uninstall-crossplat-agent.md).
 
 

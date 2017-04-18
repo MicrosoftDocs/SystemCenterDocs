@@ -146,4 +146,4 @@ Configuration of agent assignment is managed by an Operations Manager administra
 
 * To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](../om/manage/install-agent-on-unix-and-linux-using-the-discovery-wizard.md).   
 
-* Review [How to configure and use Active Directory Integration for agent assignment](../om/manage/how-to-configure-and-use-ad-integration-for-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.   
+* Review [How to configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.   

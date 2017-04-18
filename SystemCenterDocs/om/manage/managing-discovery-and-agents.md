@@ -55,7 +55,7 @@ Comprehensive monitoring requires that an agent be installed on the discovered c
 
     This section provides the information you need to understand how to limit or restrict discovery for monitored objects in your management group.
 
--   [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md)
+-   [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../../scom/manage-upgrade-uninstall-crossplat-agent.md)
 
     This section describes how to upgrade and uninstall agents on UNIX and Linux computers either from the Operations console.  
 
