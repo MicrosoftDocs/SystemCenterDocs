@@ -748,7 +748,7 @@
 #### [Woodgrove Bank customization sample scenario for the Authoring Tool](sm/manage/author-sample-scenario-the-woodgrove-bank-customization.md)
 #### [Customize a column title in a view for the authoring views sample scenario](sm/manage/author-views-sample-scenario-how-to-customize-a-column-title-in-a-view.md)
 #### [Include dashboards and reports in custom views for the Authoring Tool reports sample scenario](sm/manage/author-reports-sample-scenario-how-to-include-dashboards-and-reports-in-custom-views.md)
-### [Glossary for System Center 2016 - Service Manager](sm/get-started/Glossary-for-System-Center-2016-Service-Manager.md)
+### [Glossary for System Center 2016 - Service Manager](scsm/glossary.md)
 ## [Virtual Machine Manager (VMM)](VMM/vmm.md)
 ### [Get started](vmm/get-started/get-started-overview.md)
 #### [What's new in VMM](vmm/get-started/get-started-whats-new.md)
