@@ -205,7 +205,7 @@
 ###### [How to reset health](scom/manage-health-reset-health.md)
 ###### [Using health explorer to investigate problems](scom/manage-health-using-healthexplorer.md)
 ###### [How to set alert resolution states](scom/manage-alert-set-resolution-states.md)
-###### [How to configure automatic alert resolution](om/manage/how-to-configure-automatic-alert-resolution.md)
+###### [How to configure automatic alert resolution](scom/manage-alert-configure-auto-resolution.md)
 ###### [Data driven alert management](om/manage/data-driven-alert-management.md)
 ##### [How to suspend monitoring temporarily by using maintenance mode](om/manage/how-to-suspend-monitoring-temporarily-by-using-maintenance-mode.md)
 ##### [Creating and managing groups](om/manage/creating-and-managing-groups.md)

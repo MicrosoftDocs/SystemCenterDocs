@@ -199,7 +199,7 @@ The following table summarizes the settings you can manage in **Settings** in th
 |Item|Use|For more information|  
 |--------|-------|------------------------|  
 |Agent Heartbeat|Agents generate a heartbeat at specific intervals to ensure they are operating properly. You can adjust the interval.|[How Heartbeats Work in Operations Manager](../../scom/manage-agent-heartbeat-overview.md)|  
-|Alerts|-   To configure alert resolution states.<br>-   To configure automatic alert resolution.|-   [How to Set Alert Resolution States](../../scom/manage-alert-set-resolution-states.md)<br>-   [How to Configure Automatic Alert Resolution](how-to-configure-automatic-alert-resolution.md)|  
+|Alerts|-   To configure alert resolution states.<br>-   To configure automatic alert resolution.|-   [How to Set Alert Resolution States](../../scom/manage-alert-set-resolution-states.md)<br>-   [How to Configure Automatic Alert Resolution](../../scom/manage-alert-configure-auto-resolution.md)|  
 |Database Grooming|To configure how long different types of data should be retained in the operational database.|[Maintenance of Operations Manager](maintaining-operations-manager.md)|  
 |Privacy|To modify the settings for the following programs:<br><br>-   Customer Experience Improvement Program (CEIP)<br>-   Operational Data Reporting<br>-   Error Reporting|[Sending Data to Microsoft](http://go.microsoft.com/fwlink/?LinkID=207782) in the Deployment Guide|  
 |Reporting|Configure the path for the reporting server.|[Using the Reporting Workspace in Operations Manager](#using-the-reporting-workspace)|  

@@ -40,4 +40,4 @@ An alert is an indication of a significant event requiring attention. Rules and 
 
 -  Review [How to Set Alert Resolution States](../../scom/manage-alert-set-resolution-states.md) to learn how to set custom alert resolution states to align with your incident management process for escalation of issues.  
 
--  To automatically resolve active alerts after a specific number of days, see [How to Configure Automatic Alert Resolution](how-to-configure-automatic-alert-resolution.md).  
+-  To automatically resolve active alerts after a specific number of days, see [How to Configure Automatic Alert Resolution](../../scom/manage-alert-configure-auto-resolution.md).  
