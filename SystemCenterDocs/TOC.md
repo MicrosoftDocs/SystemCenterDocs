@@ -36,7 +36,7 @@
 #### [Back up SQL Server with DPM](dpm/back-up-sql-server.md)
 #### [Back up client computers with DPM](dpm/back-up-workstations.md)
 #### [Back up file data with DPM](dpm/back-up-file-data.md)
-#### [Back up system state and bare metal](DPM/Deploy/Back-up-system-state-and-bare-metal.md)
+#### [Back up system state and bare metal](dpm/back-up-system-state-and-bare-metal.md)
 #### [Back up and restore VMM servers](DPM/Deploy/Back-up-and-restore-VMM-servers.md)
 #### [Prepare to back up a generic data source](DPM/Deploy/Prepare-to-back-up-a-generic-data-source.md)
 #### [Prepare machines in workgroups and untrusted domains for backup](DPM/Deploy/Prepare-machines-in-workgroups-and-untrusted-domains-for-backup.md)

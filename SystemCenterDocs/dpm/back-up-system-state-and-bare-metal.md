@@ -30,7 +30,7 @@ DPM can back up system state and provide bare metal recovery (BMR) protection.
 
 -   **Bare metal backup**: Backs up operating system files and all data except user data on critical volumes. By definition a BMR backup includes a system state backup. Provides protection when a machine won't start and you have to recover everythin.
 
-This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](../dpm-protection-matrix.md)
+This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](dpm-protection-matrix.md)
 
 |Backup|Issue|Recover from DPM backup|Recover from system state backup|BMR|
 |----------|---------|---------------------------|------------------------------------|-------|
@@ -107,18 +107,18 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     -   System requirements for DPM
 
-    -   [What can DPM back up?](../dpm-protection-matrix.md)
+    -   [What can DPM back up?](dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+    -   [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
-    -   [Get DPM installed](../install-dpm.md)
+    -   [Get DPM installed](install-dpm.md)
 
-2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
+2.  **Set up storage**-You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md)
+3.  **Set up the DPM protection agent**-You'll need to install the DPM protection agent on machine you want to back up. Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md)
 
 ## Back up system state and bare metal
-Set up a protection group as described in [Deploy protection groups](../create-dpm-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
+Set up a protection group as described in [Deploy protection groups](create-dpm-protection-groups.md). Note that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.
 
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
@@ -127,7 +127,7 @@ Set up a protection group as described in [Deploy protection groups](../create-d
 
 3.  In **Select Group Members** expand the machine and select **BMR** or **system state**
 
-    Remember that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.   Learn more in [Deploy protection groups](../create-dpm-protection-groups.md).
+    Remember that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.   Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
 
 4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
