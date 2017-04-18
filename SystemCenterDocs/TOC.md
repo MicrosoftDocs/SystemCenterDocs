@@ -709,7 +709,7 @@
 #### [Data warehouse reporting and analytics](scsm/dw-reporting.md)
 ##### [Use and manage standard reports](scsm/standard-reports.md)
 ##### [Overview of OLAP cubes for advanced analytics](scsm/olap-cubes-overview.md)
-###### [Model OLAP cubes in management packs](sm/manage/ops-about-modeling-olap-cubes-in-management-packs.md)
+###### [Model OLAP cubes in management packs](scsm/olap-cubes-mps.md)
 ###### [Troubleshoot OLAP cubes](sm/manage/ops-troubleshooting-olap-cubes.md)
 ###### [Create an OLAP cube using a management pack](sm/manage/ops-how-to-create-an-olap-cube-using-a-management-pack.md)
 ###### [Analyze OLAP cube data with Excel](sm/manage/ops-analyzing-data-with-excel.md)
