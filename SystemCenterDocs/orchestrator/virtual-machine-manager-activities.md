@@ -153,7 +153,7 @@ The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category t
 
 [Run VMM PowerShell Script](run-vmm-powershell-script.md)
 
-[Shut Down VM](../orch/manage/shut-down-vm.md)
+[Shut Down VM](shut-down-vm.md)
 
 [Start VM](../orch/manage/start-vm.md)
 
