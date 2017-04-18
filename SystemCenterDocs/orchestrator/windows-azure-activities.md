@@ -136,7 +136,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Check Cloud Service Name Availability](check-cloud-service-name-availability.md)
 
-[Copy Blob](../orch/manage/copy-blob.md)
+[Copy Blob](copy-blob.md)
 
 [Create Affinity Group](../orch/manage/create-affinity-group.md)
 
