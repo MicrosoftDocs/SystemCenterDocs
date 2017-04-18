@@ -243,7 +243,7 @@ To continue with the customizations in the Woodgrove Bank scenario, in this step
 
 In this step of the Woodgrove Bank customization scenario, Ken creates a template for the new compliance change request type; the template is named **Apply AppLocker Software Policy to Computer**. The new template helps ensure consistency among all the change requests of this type, and it helps ensure the correct workflow behavior.  
 
- The following procedure provides only the high\-level steps for creating a new template in the Service Manager console. For the complete procedure for creating a new template, see [How to Create Change Request Templates](../sm/manage/admin-how-to-create-change-request-templates.md).  
+ The following procedure provides only the high\-level steps for creating a new template in the Service Manager console. For the complete procedure for creating a new template, see [How to Create Change Request Templates](create-change-req-template.md).  
 
 ### To create a new template  
 

@@ -138,7 +138,7 @@ You can use the following procedures to add a manual activity and then assign it
 
 You can use the following procedures to add a dependent activity to an existing change request, which is used as part of the release management process. Although you can add dependent activities to work items, such as release records and service requests, the primary purpose of a dependent activity is for use as a mechanism to associate a change request with a release record. Specifically, a manual activity in a release record is linked to the dependent activity in a change request. When it is completed, the dependent activity indicates that the release management process is complete for the change request.  
 
-If you intend to use release management as part of the standard processes in your organization, consider adding dependent activities to change request templates. For more information about creating change request templates, see [How to Create Change Request Templates](../sm/manage/admin-how-to-create-change-request-templates.md).  
+If you intend to use release management as part of the standard processes in your organization, consider adding dependent activities to change request templates. For more information about creating change request templates, see [How to Create Change Request Templates](create-change-req-template.md).  
 
 #### To add a dependent activity to a change request  
 

@@ -144,7 +144,7 @@ Use the following procedures to set the priority of all standard change requests
 
 Before you can complete the steps in the following procedures, you have to create the following templates:
 
--   **Set Standard Change Requests to Low Priority**: For more information, see the procedure "To create a priority-modifying template" in [How to Create Change Request Templates](../sm/manage/admin-how-to-create-change-request-templates.md).
+-   **Set Standard Change Requests to Low Priority**: For more information, see the procedure "To create a priority-modifying template" in [How to Create Change Request Templates](create-change-req-template.md).
 -   **New Standard Change Request Received Template**: For more information, see the procedure "To create a notification template for change requests" in [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).
 
 ### To create a workflow to set all standard change requests to low
