@@ -46,7 +46,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Add Annotation to Message](add-annotation-to-message.md)
 
-[Create Message](../orch/manage/create-message.md)
+[Create Message](create-message.md)
 
 [Delete Annotation](../orch/manage/delete-annotation.md)
 

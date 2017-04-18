@@ -119,7 +119,7 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Add Annotation to Message](add-annotation-to-message.md)
 
-[Create Message](../orch/manage/create-message.md)
+[Create Message](create-message.md)
 
 [Delete Annotation](../orch/manage/delete-annotation.md)
 
