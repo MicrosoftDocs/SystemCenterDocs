@@ -117,7 +117,7 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
 
 #### To use a PowerShell credential in a runbook
 
--   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) activity to run a set of commands using alternate credentials.
+-   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](../overview-powershell-workflows.md#bkmk_InlineScript) activity to run a set of commands using alternate credentials.
 
     ```powershell
     $myCredential = Get-AutomationPSCredential -Name 'MyCredential'

@@ -31,8 +31,8 @@ PowerShell Workflow runbooks are based on Windows PowerShell Workflow.  You dire
 ### Advantages
 
 - Implement all complex logic with PowerShell Workflow code.
-- Use [checkpoints](Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints) to resume runbook in case of error.
-- Use [parallel processing](Windows-PowerShell-Workflow-Concepts.md#Parallel) to perform multiple actions in parallel.
+- Use [checkpoints](../overview-powershell-workflows.md#BK_Checkpoints) to resume runbook in case of error.
+- Use [parallel processing](../overview-powershell-workflows.md#Parallel) to perform multiple actions in parallel.
 - Can include other PowerShell Workflow runbooks as child runbooks to create high level workflows.
 
 
@@ -56,8 +56,8 @@ PowerShell runbooks are based on Windows PowerShell.  You directly edit the code
 ### Limitations
 
 - Must be familiar with PowerShell scripting.
-- Can't use [parallel processing](Windows-PowerShell-Workflow-Concepts.md#Parallel) to perform multiple actions in parallel.
-- Can't use [checkpoints](Windows-PowerShell-Workflow-Concepts.md#BK_Checkpoints)  to resume runbook in case of error.
+- Can't use [parallel processing](../overview-powershell-workflows.md#Parallel) to perform multiple actions in parallel.
+- Can't use [checkpoints](../overview-powershell-workflows.md#BK_Checkpoints)  to resume runbook in case of error.
 - PowerShell Workflow runbooks can only be included as child runbooks by using the Start-SMARunbook cmdlet which creates a new job.
 
 ### Known Issues

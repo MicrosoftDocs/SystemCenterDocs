@@ -77,7 +77,7 @@ Use the **Get-AutomationConnection** activity to use a connection in a runbook. 
 
 For more information about hash tables, see [about_Hash_Tables](http://go.microsoft.com/fwlink/?LinkID=324844).
 
-The following sample code shows how to use a connection to provide the computer name and credentials for an [InlineScript](Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) block that runs commands on another computer.
+The following sample code shows how to use a connection to provide the computer name and credentials for an [InlineScript](../overview-powershell-workflows.md#bkmk_InlineScript) block that runs commands on another computer.
 
 ```powershell
 $con = Get-AutomationConnection -Name 'MyConnection'

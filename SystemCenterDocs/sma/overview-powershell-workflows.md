@@ -16,7 +16,7 @@ ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 
 >Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
 
-One [type of runbook](Runbook-Types-in-Service-Management-Automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
+One [type of runbook](manage/runbook-types-in-service-management-automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](http://go.microsoft.com/fwlink/?LinkID=324602).
 
 The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](http://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
 
@@ -66,7 +66,7 @@ An *Integration Module* is a package that contains a [Windows PowerShell Module]
 
 Integration Modules that are imported into Automation are automatically available to all runbooks. Since Automation is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import-Module](http://go.microsoft.com/fwlink/?LinkID=324984).
 
-Any Windows PowerShell module can be imported into Automation as long as all of its dependencies can be located in a single folder. If the module depends on registry settings or files not in the default path, then it can be imported, but it will most likely not work because Automation will not be able to locate its dependencies. Modules with external dependencies can be used in a runbook by installing them on another host using and then accessing them with an [InlineScript](Windows-PowerShell-Workflow-Concepts.md#bkmk_InlineScript) script block.
+Any Windows PowerShell module can be imported into Automation as long as all of its dependencies can be located in a single folder. If the module depends on registry settings or files not in the default path, then it can be imported, but it will most likely not work because Automation will not be able to locate its dependencies. Modules with external dependencies can be used in a runbook by installing them on another host using and then accessing them with an [InlineScript](overview-powershell-workflows.md#bkmk_inlinescript) script block.
 
 With Service Management Automation, you can use modules with external dependencies by installing them on each Worker server. While the cmdlets in these modules can be used in runbooks, they will not be discovered by Automation to support such features as the Insert Activity wizard. In order to use this feature, you can create a Portable module using the **New-SmaPortableModule** cmdlet. This cmdlet creates a module that includes a stub for each of its cmdlets and can be imported into Automation. When a runbook uses one of those cmdlets, the stub redirects the call to the actual cmdlet in the external module. That module must be installed on each Worker server or the call will fail.
 
@@ -150,9 +150,9 @@ InlineScript
 
 The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook are not installed in Automation or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
 
-![Inline script diagram](../media/smaauth_inlinescript.png)
+![Inline script diagram](./media/overview-powershell-workflows/smaauth_inlinescript.png)
 
-In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](Credentials.md) or [Connection](Connections.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
+In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](../scom/credentials.md) or [Connection](../orchestrator/connections.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 
 ```powershell
 $con = Get-AutomationConnection -Name 'MyConnection'
@@ -193,6 +193,6 @@ Keep the following recommendations in mind if you do use an **InlineScript** in 
 For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](http://go.microsoft.com/fwlink/?LinkID=324625) and [about_InlineScript](http://go.microsoft.com/fwlink/?LinkID=324624).
 
 ## See Also
-[Runbook Execution in Service Management Automation](../runbook-automation.md)
+[Runbook Execution in Service Management Automation](get-started/runbook-automation.md)
 
-[Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+[Authoring Automation Runbooks](manage/authoring-automation-runbooks.md)

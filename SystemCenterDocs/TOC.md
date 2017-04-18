@@ -892,7 +892,7 @@
 ##### [Tracking a Runbook Job in Service Management Automation](sma/Manage/Tracking-a-Runbook-Job-in-Service-Management-Automation.md)
 #### [Authoring Automation Runbooks](sma/manage/Authoring-Automation-Runbooks.md)
 ##### [Runbook Types in Service Management Automation](sma/Manage/Runbook-Types-in-Service-Management-Automation.md)
-##### [Windows PowerShell Workflow Concepts](SMA/Manage/Windows-PowerShell-Workflow-Concepts.md)
+##### [Windows PowerShell Workflow Concepts](sma/overview-powershell-workflows.md)
 ##### [Creating or Importing a Runbook](SMA/Manage/Creating-or-Importing-a-Runbook.md)
 ##### [Editing a Runbook](SMA/Manage/Editing-a-Runbook.md)
 ##### [Publishing a Runbook](SMA/Manage/Publishing-a-Runbook.md)
