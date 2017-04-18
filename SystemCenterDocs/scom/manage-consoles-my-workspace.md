@@ -75,7 +75,7 @@ You can save useful searches in My Workspace to run at any time.
   
     -   Views  
   
-    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](using-advanced-search.md).  
+    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](../om/manage/using-advanced-search.md).  
   
 4.  In the displayed criteria for the object type, select the condition that you want to search against.  
   
@@ -92,15 +92,15 @@ You can run saved searches right-clicking a search in the list and then clicking
 Views that you create in My Workspace are unique views, not shortcuts to existing views. As an operator, you can create views in the My Workspace pane. You must have the rights of the Author role to create a view in the Monitoring workspace.  
   
 > [!NOTE]  
-> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [How to Create and Scope Views in Operations Manager](how-to-create-and-scope-views-in-operations-manager.md).  
+> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [How to Create and Scope Views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md).  
   
 ### To create a view in My Workspace  
   
-1.  Right-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](view-types-in-operations-manager.md).  
+1.  Right-click in the folder where you want to store the view and point to **New**. You can select any view type. For more information on the view types available, see [View Types in Operations Manager](../om/manage/view-types-in-operations-manager.md).  
   
 2.  In the view properties, enter a name and description for the view. The view properties dialog box contains two tabs: **Criteria** and **Display**.  
   
-    On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Creating and Scoping Views in Operations Manager](how-to-create-and-scope-views-in-operations-manager.md).  
+    On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Creating and Scoping Views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md).  
   
     After you select a condition, you can edit the value for that condition in the **Criteria description** section.  
   
@@ -112,8 +112,8 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
   
 ## Next steps 
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](using-the-operations-console-in-operations-manager.md).  
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).  
   
-- For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](using-health-explorer-to-investigate-problems.md).  
+- For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](../om/manage/using-health-explorer-to-investigate-problems.md).  
 
-- To learn how to customize views in the Operations console defined in management packs imported in the management group, see [How to Personalize a View in Operations Manager](how-to-personalize-a-view-in-operations-manager.md).  
+- To learn how to customize views in the Operations console defined in management packs imported in the management group, see [How to Personalize a View in Operations Manager](../om/manage/how-to-personalize-a-view-in-operations-manager.md).  

@@ -126,7 +126,7 @@
 ###### [How to connect to the Operations and Web console](scom/manage-consoles-how-to-connect.md)
 ###### [Using the Operations console](om/manage/using-the-operations-console-in-operations-manager.md)
 ###### [Using Health Explorer](scom/manage-consoles-overview-healthexplorer.md)
-###### [Using My Workspace](om/manage/using-my-workspace-in-operations-manager.md)
+###### [Using My Workspace](scom/manage-consoles-my-workspace.md)
 ##### [Using reports](om/manage/using-reports-in-operations-manager.md)
 ###### [Operations Manager report library](om/manage/operations-manager-reports-library.md)
 ###### [How to create reports](om/manage/how-to-create-reports-in-operations-manager.md)

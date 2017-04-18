@@ -26,7 +26,7 @@ In System Center 2016 - Operations Manager, the Operations console is the primar
 
 -  **Administration workspace**, where you configure a management group to manage such things as agent deployment, network device discovery, role-based security, and much more.  
 
-- **My Workspace** provides you with a private area in the Operations and Web console that you can customize to display operational data which meet your specific needs.  For more information on how to use My Workspace, see [Using My Workspace](using-my-workspace-in-operations-manager.md)
+- **My Workspace** provides you with a private area in the Operations and Web console that you can customize to display operational data which meet your specific needs.  For more information on how to use My Workspace, see [Using My Workspace](../../scom/manage-consoles-my-workspace.md)
 
 ## Using the Monitoring workspace
 
@@ -40,7 +40,7 @@ The health states that are summarized in the overview only tell you part of what
   
 There are number of views and dashboards in the **Monitoring** workspace that allow you to view the status of your IT services. For information on each view, see [Standard Views in Operations Manager](standard-views-in-operations-manager.md). For information on using dashboards, see [Creating and Scoping Views in Operations Manager](how-to-create-and-scope-views-in-operations-manager.md). You can change the display options of a view and save it as a personalized view. For more information, see [How to Personalize a View in Operations Manager](how-to-personalize-a-view-in-operations-manager.md).  
   
-As you work with Operations Manager, you may discover that there are specific views that you frequently access. You can create a customized workspace that displays your favorite views and searches. For more information, see [Using My Workspace in Operations Manager](using-my-workspace-in-operations-manager.md).  
+As you work with Operations Manager, you may discover that there are specific views that you frequently access. You can create a customized workspace that displays your favorite views and searches. For more information, see [Using My Workspace in Operations Manager](../../scom/manage-consoles-my-workspace.md).  
   
 ## Using the Authoring workspace 
 
