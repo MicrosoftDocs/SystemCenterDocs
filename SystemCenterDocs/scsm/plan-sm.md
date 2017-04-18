@@ -27,7 +27,7 @@ The [Plan for System Center 2016 - Service Manager deployment](plan-deployment.m
 
 The [Prepare for System Center 2016 - Service Manager deployment](prepare-deploy.md) section describes how to prepare a computer to host Service Manager. For example, the topics in this section describe how to uninstall a previous version of Service Manager and how to make sure that SQL&nbsp;Server Reporting Services \(SSRS\) is installed. They also describe the account considerations for you to consider.  
 
-The [Planning for System Center 2016 - Service Manager performance and scalability](../sm/plan/plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md) section describes the issues that affect performance and scalability in Service Manager. Also suggests best practices to achieve good performance using suggested hardware configurations.
+The [Planning for System Center 2016 - Service Manager performance and scalability](plan-perf-scale.md) section describes the issues that affect performance and scalability in Service Manager. Also suggests best practices to achieve good performance using suggested hardware configurations.
 
 ## Next steps
 

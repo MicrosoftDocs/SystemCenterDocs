@@ -619,7 +619,7 @@
 ##### [Databases created by Service Manager](scsm/databases-created.md)
 ##### [Port assignments](scsm/ports.md)
 #### [Prepare for Service Manager deployment](scsm/prepare-deploy.md)
-#### [Planning for performance and scalability](sm/plan/plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md)
+#### [Planning for performance and scalability](scsm/plan-perf-scale.md)
 ##### [Plan for hardware performance](sm/plan/plan-hardware-performance.md)
 ##### [Service Manager performance](sm/plan/plan-service-manager-performance.md)
 ##### [Recommended deployment topology scenarios](sm/plan/plan-configurations-for-deployment-scenarios.md)

@@ -39,4 +39,4 @@ Specifically, the sizing tool:
 
 ## Next steps
 
-- Review [Plan for Service Manager hardware performance](plan-hardware-performance.md) to learn about general guidelines to consider when you are planning for Service Manager hardware performance.
+- Review [Plan for Service Manager hardware performance](../sm/plan/plan-hardware-performance.md) to learn about general guidelines to consider when you are planning for Service Manager hardware performance.
