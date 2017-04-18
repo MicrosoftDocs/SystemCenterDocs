@@ -777,7 +777,7 @@
 ### [Deploy](vmm/deploy/deploy-overview.md)
 #### [Upgrade VMM](vmm/upgrade.md)
 #### [Install VMM](vmm/install.md)
-#### [Install the VMM console](VMM/deploy/deploy-install-console.md)
+#### [Install the VMM console](vmm/install-console.md)
 #### [Deploy VMM for high availability](VMM/deploy/deploy-vmm-ha.md)
 ##### [Deploy a highly available VMM management server](VMM/deploy/deploy-vmm-server-ha.md)
 ##### [Deploy a highly available SQL Server database for VMM](VMM/deploy/deploy-sql-ha.md)
