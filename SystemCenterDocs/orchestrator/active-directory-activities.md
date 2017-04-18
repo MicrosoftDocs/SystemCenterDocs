@@ -134,7 +134,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Enable Computer](enable-computer.md)
 
-[Enable User](../orch/manage/enable-user.md)
+[Enable User](enable-user.md)
 
 [Get Computer](../orch/manage/get-computer.md)
 
