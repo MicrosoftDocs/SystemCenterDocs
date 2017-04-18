@@ -32,7 +32,7 @@ This article explains how to create a lab environment and populate it with produ
 9. [Enable Service Manager Connectors in the Production Environment](enable-connectors.md)
 10. [Enable Email Notifications in the Production Environment](enable-email-note-prod.md)
 11. Enable all workflows in the Production Service Manager environment that you disabled in step 6.
-12. [Restore the Service Manager Database in the Lab Environment](../sm/deploy/upgrade-how-to-restore-the-service-manager-database-in-the-lab-environment.md)
+12. [Restore the Service Manager Database in the Lab Environment](restore-sm-db.md)
 13. [Prepare the Service Manager Database in the Lab Environment](../sm/deploy/upgrade-how-to-prepare-the-service-manager-database-in-the-lab-environment.md)
 14. If possible, block communications to SQL from the Secondary Management server to the production Service Manager Database server.
 15. [Start Service Manager Services on the Secondary Management Server](../sm/deploy/upgrade-how-to-start-service-manager-services-on-the-secondary-management-server.md)
