@@ -52,7 +52,7 @@
 ### [Operations Manager key concepts](scom/key-concepts.md)
 ### [Get Started](scom/get-started.md)
 #### [What's New in Operations Manager](scom/what-is-new.md)
-#### [Walkthrough: Installing Operations Manager on a Single Server](om/get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md)
+#### [Walkthrough: Installing Operations Manager on a Single Server](scom/quickstart-install-single-server.md)
 #### [Installing Operations Manager from the Command Prompt](om/deploy/installing-operations-manager-by-using-the-command-prompt-window.md)
 ### [Plan](scom/plan-overview.md)
 #### [System Requirements](om/plan/system-requirements.md)

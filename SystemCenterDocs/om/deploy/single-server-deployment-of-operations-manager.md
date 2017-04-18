@@ -100,7 +100,7 @@ For a complete listing of ports used, the direction of the communication, and if
 
 ## Next steps
 
-- To deploy Operations Manager in a single server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../get-started/Walkthrough-Installing-Operations-Manager-on-a-Single-Server.md).
+- To deploy Operations Manager in a single server management group, see [Walkthrough: Installing Operations Manager on a Single Server](../../scom/quickstart-install-single-server.md).
 
 
 
