@@ -25,7 +25,7 @@ You can download integration packs from the Microsoft Download Center. Each inte
 - [Exchange Administrator](../../orchestrator/exchange-admin-integration-pack.md)
 - [Hewlett Packard Integrated Lights-Out (HP iLO)](../../orchestrator/hp-ilo-and-oa-integration-pack.md)
 - [Hewlett Packard Operations Manager](../../orchestrator/hp-operations-manager-integration-pack.md)
-- [Hewlett Packard Service Manager](hp-service-manager-integration-pack.md)
+- [Hewlett Packard Service Manager](../../orchestrator/hp-service-manager-integration-pack.md)
 - [IBM Tivoli Netcool Integration Pack](../../orchestrator/tivoli-netcool-omnibus-integration-pack.md)
 - [REST](../../orchestrator/representational-state-transfer-rest-integration-pack.md)
 - [Configuration Manager](../../orchestrator/configuration-manager-integration-pack.md)

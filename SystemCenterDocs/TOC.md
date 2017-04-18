@@ -429,7 +429,7 @@
 #######[Set custom attribute](orchestrator/set-custom-attribute.md)
 #######[Update annotation](orchestrator/update-annotation.md)
 #######[Update message](orchestrator/update-message.md)
-#### [Hewlett Packard Service Manager Integration Pack](orch/manage/hp-service-manager-integration-pack.md)
+#### [Hewlett Packard Service Manager Integration Pack](orchestrator/hp-service-manager-integration-pack.md)
 ##### [HP Service Manager Activities](orchestrator/service-manager-activities.md)
 ###### [Close entry](orchestrator/close-entry.md)
 ###### [Create entry](orchestrator/create-entry.md)
