@@ -22,15 +22,15 @@ The Web console is a web-based user interface which provides access to all the m
 
 Both consoles share a similar layout:  
   
-![Diagram of the console panes](../media/om2016-consoleframe.png)  
+![Diagram of the console panes](./media/manage-consoles-comparison/om2016-consoleframe.png)  
   
 Each navigation button opens a specific workspace, such as Monitoring or Administration. In the Operations console, the following navigation buttons may be available, depending on the user role you are assigned:  
   
-![Navigation buttons in Operations Console](../media/om2016-operations-console-navbuttons.png)  
+![Navigation buttons in Operations Console](./media/manage-consoles-comparison/om2016-operations-console-navbuttons.png)  
   
 In the web console, only Monitoring and My Workspace are available:  
   
-![Navigation buttons in Web console](../media/om2016-web-console-navbuttons.png)  
+![Navigation buttons in Web console](./media/manage-consoles-comparison/om2016-web-console-navbuttons.png)  
   
 > [!TIP]  
 > In the Operations console, you can change the navigation buttons into small icons and increase the space available in the navigation pane by clicking on the top border of the navigation buttons and dragging downward. You can also hide and reveal the navigation and task panes.  
@@ -56,7 +56,7 @@ There are a few differences between the Operations console and Web console that 
 
 ## Next steps
 
-* Learn [How to Connect to the Operations and Web Console](how-to-connect-to-the-operations-and-web-console.md) in order to access and interact with the operational data or perform administrative tasks.  
+* Learn [How to Connect to the Operations and Web Console](../om/manage/how-to-connect-to-the-operations-and-web-console.md) in order to access and interact with the operational data or perform administrative tasks.  
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](using-the-operations-console-in-operations-manager.md).   
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).   
   
