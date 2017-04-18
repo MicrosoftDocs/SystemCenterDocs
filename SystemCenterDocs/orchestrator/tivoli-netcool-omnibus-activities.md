@@ -25,7 +25,7 @@ This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the **Acti
 
 [Delete Alert Activity](delete-alert-activity.md)
 
-[Get Alerts Activity](../orch/manage/get-alerts-activity.md)
+[Get Alerts Activity](get-alerts-activity.md)
 
 [Monitor Alerts Activity](../orch/manage/monitor-alerts-activity.md)
 
