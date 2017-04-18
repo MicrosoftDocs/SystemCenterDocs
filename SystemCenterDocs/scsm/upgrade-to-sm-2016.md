@@ -198,4 +198,4 @@ When you have finished running Setup to either install or upgrade to System Cent
 
 ## Next steps
 
-- Review [Prepare remote SQL Server Reporting Services for upgrade](../sm/deploy/upgrade-remote-sql-server-reporting-services.md) to prepare your environment if SSRS is remote from the data warehouse management server.
+- Review [Prepare remote SQL Server Reporting Services for upgrade](prepare-remote-ssrs.md) to prepare your environment if SSRS is remote from the data warehouse management server.
