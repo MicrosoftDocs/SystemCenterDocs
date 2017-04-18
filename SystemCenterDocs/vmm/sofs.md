@@ -22,4 +22,4 @@ You can add and manage SOFS clusters in the System Center 2016 - Virtual Machine
 - [Perform a rolling upgrade of an SOFS cluster](sofs-rolling-upgrade.md)
 - [Add an existing SOFS to the VMM storage fabric](sofs-existing.md)
 - [Create an SOFS cluster from standalone servers in the VMM fabric](sofs-cluster.md)
-- [Provision SOFS from bare-metal computers](manage/manage-sofs-bare-metal.md)
+- [Provision SOFS from bare-metal computers](sofs-bare-metal.md)

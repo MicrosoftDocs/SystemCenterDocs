@@ -34,7 +34,7 @@ There's a streamlined workflow for creating Hyper-V and SOFS clusters:
 
 * **Bare metal deployment of Hyper-V host clusters**: Deploying a Hyper-V host cluster from bare metal machines is now a single step. [Learn more](hyper-v-bare-metal.md)
 
-* **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](hyper-v-bare-metal.md) or [SOFS](manage/manage-sofs-bare-metal.md) cluster.
+* **Adding a bare-metal node to an existing Hyper-V host cluster or an SOFS Cluster**: You can now directly add a bare-metal computer to an existing [Hyper-V](hyper-v-bare-metal.md) or [SOFS](sofs-bare-metal.md) cluster.
 
 ### New operations for running VMs
 
