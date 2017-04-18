@@ -694,7 +694,7 @@
 #### [Configure and use Service Manager cmdlets](scsm/sm-cmdlets.md)
 #### [Manage the data warehouse](scsm/manage-dw.md)
 ##### [Register source systems to the data warehouse](scsm/register-sources-to-dw.md)
-#### [Troubleshoot computer problems with tasks](sm/manage/admin-using-service-manager-tasks-to-troubleshoot-computer-problems.md)
+#### [Troubleshoot computer problems with tasks](scsm/troubleshoot-with-tasks.md)
 #### [Configure your preference for sharing diagnostic and usage data](sm/manage/admin-configure-system-center-2016-service-manager-ceip-settings.md)
 #### [User role profiles](sm/manage/admin-appendix-a-list-of-user-role-profiles-in-system-center-2016-service-manager.md)
 #### [Map Active Directory Domain Services attributes to properties in Service Manager](sm/manage/admin-appendix-b-mapping-active-directory-domain-services-attributes-to-properties-in-system-center-2016-service-manager.md)

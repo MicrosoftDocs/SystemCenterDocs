@@ -212,7 +212,7 @@ When Ken works with a compliance change request, he needs to easily access the A
 
  In this step of the Woodgrove Bank customization scenario, to make it easy to access the tool, Ken creates a new task, **Start Active Directory Users and Computers**. He saves this task to the **Woodgrove Automated Activity - Add Computer To Group** management pack. He can later use the new task to start the tool.  
 
- The following procedure provides only the high\-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](admin-using-service-manager-tasks-to-troubleshoot-computer-problems.md).  
+ The following procedure provides only the high\-level steps for creating a new task in the Service Manager console. For the complete procedure for creating a new task, see [How to Create a Task](../../scsm/troubleshoot-with-tasks.md).  
 
 ### To create a new task  
 
