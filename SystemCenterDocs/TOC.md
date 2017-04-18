@@ -485,7 +485,7 @@
 #######[Create recovery point](orchestrator/create-recovery-point.md)
 #######[Get data source](orchestrator/get-data-source.md)
 #######[Get dpm server capacity](orchestrator/get-dpm-server-capacity.md)
-#######[Get recovery point](orch/manage/get-recovery-point.md)
+#######[Get recovery point](orchestrator/get-recovery-point.md)
 #######[Protect data source](orch/manage/protect-data-source.md)
 #######[Recover sharepoint](orch/manage/recover-sharepoint.md)
 #######[Recover sql](orch/manage/recover-sql.md)
