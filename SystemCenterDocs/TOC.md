@@ -454,7 +454,7 @@
 ###### [Delete Document](orchestrator/delete-document.md)
 ###### [Delete List Item](orchestrator/delete-list-item.md)
 ###### [Download Attachment](orchestrator/download-attachment.md)
-###### [Download Document](orch/manage/download-document.md)
+###### [Download Document](orchestrator/download-document.md)
 ###### [Get Attachments](orch/manage/get-attachments.md)
 ###### [Get Documents](orch/manage/get-documents.md)
 ###### [Get List Items](orch/manage/get-list-items.md)
