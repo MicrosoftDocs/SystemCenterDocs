@@ -38,6 +38,6 @@ Using Service Manager, you can automate many administrative processes that previ
 
      Describes how to configure the Activities Toolbox.  
 
--   [Workflow Activity Reference](../sm/manage/author-workflow-activity-reference.md)  
+-   [Workflow Activity Reference](workflow-activity-ref.md)  
 
      Provides details about the default WF activities in the Activity Library.

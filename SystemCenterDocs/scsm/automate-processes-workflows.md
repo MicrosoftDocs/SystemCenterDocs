@@ -55,15 +55,15 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 
 The Activity Library in Service Manager Authoring Tool provides a number of workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
 
--   [Active Directory Activities](../sm/manage/author-workflow-activity-reference.md) - Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
+-   [Active Directory Activities](workflow-activity-ref.md) - Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
 
--   [Control Flow Activities](../sm/manage/author-workflow-activity-reference.md) - Activities that provide structure for the workflow, such as loops and if\-else branches.  
+-   [Control Flow Activities](workflow-activity-ref.md) - Activities that provide structure for the workflow, such as loops and if\-else branches.  
 
--   [Virtual Machine Manager Activities](../sm/manage/author-workflow-activity-reference.md) - Activities that you can use to build workflows that perform simple operations with virtual machines.  
+-   [Virtual Machine Manager Activities](workflow-activity-ref.md) - Activities that you can use to build workflows that perform simple operations with virtual machines.  
 
--   [Script Activities](../sm/manage/author-workflow-activity-reference.md) - Activities that run Windows PowerShell, command\-line, or Microsoft Visual Basic Scripting Edition \(VBScript\) scripts.  
+-   [Script Activities](workflow-activity-ref.md) - Activities that run Windows PowerShell, command\-line, or Microsoft Visual Basic Scripting Edition \(VBScript\) scripts.  
 
--   [Service Manager Activities](../sm/manage/author-workflow-activity-reference.md) - Activities that perform Service Manager functions, such as creating or updating incidents.  
+-   [Service Manager Activities](workflow-activity-ref.md) - Activities that perform Service Manager functions, such as creating or updating incidents.  
 
  The following tables list the default activities that are available with the Authoring Tool:  
 
