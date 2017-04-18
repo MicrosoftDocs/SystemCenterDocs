@@ -49,5 +49,5 @@ You can personalize the **Active Alerts** view to add the **Repeat Count** colum
 
 - After investigating and resolving the issue detected by one or more monitors, review [How to Reset Health](manage-health-reset-health.md) to manually reset health if the monitor isn't configured to auto-resolve or you don't want to wait for the monitor to detect health state.  
   
-- To help investigate health issues detected with monitors, review [Using Health Explorer to Investigate Problems](using-health-explorer-to-investigate-problems.md).  
+- To help investigate health issues detected with monitors, review [Using Health Explorer to Investigate Problems](manage-health-using-healthexplorer.md).  
 

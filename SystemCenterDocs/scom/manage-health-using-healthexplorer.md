@@ -22,20 +22,20 @@ By default, when the Health Explorer window opens, all monitors in a failed stat
   
 The following illustration shows monitors in a healthy state:  
   
-![Health explorer showing healthy states](../media/om2016-healthexplorer.png)  
+![Health explorer showing healthy states](./media/manage-health-using-healthexplorer/om2016-healthexplorer.png)  
   
 The following illustration shows some monitors in a critical state:  
   
-![Critical monitors in Health Explorer](../media/om2016-healthexplorer-criticalmonitors.png)  
+![Critical monitors in Health Explorer](./media/manage-health-using-healthexplorer/om2016-healthexplorer-criticalmonitors.png)  
   
 Click a monitor to view more information about the monitor in the **Details** pane. The **State Change Events** tab in the **Details** pane shows you when the state for the monitor changed, and the details give you information for the context of the state change:  
   
-![Details on State Change Events tab](../media/om2016-healthexplorer-statechangeevents.png)  
+![Details on State Change Events tab](./media/manage-health-using-healthexplorer/om2016-healthexplorer-statechangeevents.png)  
   
 ## Next steps
  
-- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](../../scom/manage-agent-heartbeat-overview.md).  
+- Before changing the number of missed heartbeats allowed, first review [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md).  
 
-- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](../../scom/manage-agent-resolve-heartbeat.md).  
+- To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](manage-agent-resolve-heartbeat.md).  
 
-- When an alert is generated, you can [View Active Alerts and Details](../../scom/manage-alert-view-alerts-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.        
+- When an alert is generated, you can [View Active Alerts and Details](manage-alert-view-alerts-details.md) in the Operations and Web console to identify possible issues and help identify next steps towards resolving them.        

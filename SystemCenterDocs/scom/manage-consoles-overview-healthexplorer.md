@@ -49,7 +49,7 @@ When the Health Explorer window is open, you can review a history of diagnostic 
   
 The Health Explorer window refreshes automatically every 30 seconds. Press the F5 function key for an immediate refresh.  
   
-For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](../om/manage/using-health-explorer-to-investigate-problems.md).  
+For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](manage-health-using-healthexplorer.md).  
   
 ## Next steps
   

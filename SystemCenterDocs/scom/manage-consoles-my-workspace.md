@@ -114,6 +114,6 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
 
 - In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).  
   
-- For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](../om/manage/using-health-explorer-to-investigate-problems.md).  
+- For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](manage-health-using-healthexplorer.md).  
 
 - To learn how to customize views in the Operations console defined in management packs imported in the management group, see [How to Personalize a View in Operations Manager](manage-console-personalize-views.md).  

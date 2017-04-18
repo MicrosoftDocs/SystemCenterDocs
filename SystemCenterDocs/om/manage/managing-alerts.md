@@ -36,7 +36,7 @@ An alert is an indication of a significant event requiring attention. Rules and 
 
 -  Review [How to Reset Health](../../scom/manage-health-reset-health.md) to consider the situations when you would manually reset the health state of a monitor.
 
--  [Using Health Explorer to Investigate Problems](using-health-explorer-to-investigate-problems.md) helps identify  which monitor is unhealthy and how it can help support identifying the issue.  
+-  [Using Health Explorer to Investigate Problems](../../scom/manage-health-using-healthexplorer.md) helps identify  which monitor is unhealthy and how it can help support identifying the issue.  
 
 -  Review [How to Set Alert Resolution States](how-to-set-alert-resolution-states.md) to learn how to set custom alert resolution states to align with your incident management process for escalation of issues.  
 
