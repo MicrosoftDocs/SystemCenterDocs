@@ -40,7 +40,7 @@ A Run As account contains a single set of credentials which are stored in the Op
   
     This topic explains how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account.  
 
-- [How to Create a New Action Account](../om/manage/how-to-create-a-new-action-account-in-operations-manager.md)
+- [How to Create a New Action Account](manage-security-create-runas-actionaccount.md)
 
     This topic explains how to create a new Run As action account that will be used by management servers in the management group.  
   

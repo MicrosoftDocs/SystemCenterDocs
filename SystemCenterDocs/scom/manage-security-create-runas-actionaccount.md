@@ -57,10 +57,10 @@ Use the following procedure to create a new management server action account. Th
   
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](how-to-create-a-run-as-account-and-associate-to-a-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md).
 
-- The Report Server unattended execution account is used to query data from the Reporting Data Warehouse.  See [How to Manage the Report Server Unattended Execution Account in Operations Manager](How-to-Manage-the-Report-Server-Unattended-Execution-Account.md) to understand how to reconfigure the user name or password for this account.  
+- The Report Server unattended execution account is used to query data from the Reporting Data Warehouse.  See [How to Manage the Report Server Unattended Execution Account in Operations Manager](../om/manage/how-to-manage-the-report-server-unattended-execution-account.md) to understand how to reconfigure the user name or password for this account.  
 
-- To learn about how you can use the The Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](How-to-control-access-using-the-health-service-lockdown-tool.md).  
+- To learn about how you can use the The Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](../om/manage/how-to-control-access-using-the-health-service-lockdown-tool.md).  
 
 

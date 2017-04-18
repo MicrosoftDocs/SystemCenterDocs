@@ -22,7 +22,7 @@ ms.topic: article
 
     To enable individuals to access monitoring data and perform actions, you assign them to user roles. This section explains how to use user roles to manage access in Operations Manager.
 
-- [How to create a New Action Account in Operations Manager](how-to-create-a-new-action-account-in-operations-manager.md)
+- [How to create a New Action Account in Operations Manager](../../scom/manage-security-create-runas-actionaccount.md)
 
     The action account is used to gather information about, and run responses on, the managed computer. This procedure explains how to create a new action account that Operations Manager uses to run processes and scripts .
 
