@@ -735,4 +735,4 @@ The following high\-level steps are required to move the data warehouse database
 
 ## Next steps
 
-- Review [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md) to learn about upgrading Service Manager.
+- Review [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-to-sm-2016.md) to learn about upgrading Service Manager.

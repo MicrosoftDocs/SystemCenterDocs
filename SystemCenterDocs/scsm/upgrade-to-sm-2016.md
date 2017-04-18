@@ -35,7 +35,7 @@ This article outlines how to upgrade from System Center 2012 R2 - Service Manage
 You can only upgrade to System Center 2016 from System Center 2012 R2 - Service Manager with Update Rollup 9 or later installed.  
 
 > [!IMPORTANT]  
->  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 R2. For information about installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying System Center 2016 - Service Manager](../../scsm/deploy-sm.md).  
+>  It is assumed in this guide that you are performing an *upgrade* to System Center 2012 R2. For information about installing System Center 2016 - Service Manager on a computer where no previous version of Service Manager exists, see the [Deploying System Center 2016 - Service Manager](deploy-sm.md).  
 
 ## Plan for your upgrade to System Center 2016 - Service Manager
 
@@ -73,14 +73,14 @@ The default folder for installing Service Manager is \\Program Files\\Microsoft 
 
 ### Hardware requirements for System Center 2016 - Service Manager  
 
-All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](../plan/plan-hardware-requirements-for-system-center-2016-service-manager.md).  
+All hardware requirements for System Center 2016 - Service Manager are fully documented in [Hardware Requirements for System Center 2016 - Service Manager](../sm/plan/plan-hardware-requirements-for-system-center-2016-service-manager.md).  
 
 ### Software requirements for System Center 2016 - Service Manager
 
 To upgrade to System Center 2016, you must first apply the Update Rollup 9 or later for System Center 2012 R2 - Service Manager.  
 
 
-All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](../../scsm/sm-software-reqs.md).  
+All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](sm-software-reqs.md).  
 
 ### Impact on custom development
 
@@ -165,7 +165,7 @@ We recommend that you test the upgrade to System Center 2016 - Service Manager i
 
 The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
-1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center 2016 - Service Manager](../manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md).  
+1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center 2016 - Service Manager](../sm/manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md).  
 
 2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you will not be able to start them again until after you have completed the upgrade.  
 
@@ -186,11 +186,11 @@ With System Center 2016 - Service Manager, you have the option to install Operat
 
 ### Back up Service Manager before you upgrade  
 
-Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](../manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md) before you continue the upgrade.  
+Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](../sm/manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md) before you continue the upgrade.  
 
 ### Register the Service Manager data warehouse  
 
-If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](../../scsm/deploy-sm.md).  
+If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center 2016 - Service Manager](deploy-sm.md).  
 
 ### Encryption keys  
 
@@ -198,4 +198,4 @@ When you have finished running Setup to either install or upgrade to System Cent
 
 ## Next steps
 
-- Review [Prepare remote SQL Server Reporting Services for upgrade](upgrade-remote-sql-server-reporting-services.md) to prepare your environment if SSRS is remote from the data warehouse management server.
+- Review [Prepare remote SQL Server Reporting Services for upgrade](../sm/deploy/upgrade-remote-sql-server-reporting-services.md) to prepare your environment if SSRS is remote from the data warehouse management server.
