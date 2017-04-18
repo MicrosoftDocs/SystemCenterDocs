@@ -37,4 +37,4 @@ You deploy a private cloud by configuring fabric resources, settings up library 
 
 ## Next steps
 
-- [Create a private cloud in VMM](scenario/cloud-create.md)
+- [Create a private cloud in VMM](cloud-create.md)
