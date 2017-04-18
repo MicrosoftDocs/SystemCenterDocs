@@ -564,7 +564,7 @@
 #######[Update disk](orchestrator/update-disk.md)
 #######[Update network adapter](orchestrator/update-network-adapter.md)
 #######[Update user role property](orchestrator/update-user-role-property.md)
-#######[Update user role quota](orch/manage/update-user-role-quota.md)
+#######[Update user role quota](orchestrator/update-user-role-quota.md)
 #######[Update vm](orch/manage/update-vm.md)
 ##### [VMWare vSphere](orchestrator/vsphere-integration-pack.md)
 ###### [VMWare vShere Activities](orchestrator/vsphere-activities.md)
