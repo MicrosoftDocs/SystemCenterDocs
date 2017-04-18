@@ -260,7 +260,7 @@
 #### [How to backup Orchestrator](orch/manage/how-to-back-up-orchestrator.md)
 #### [How to benchmark](orch/manage/how-to-benchmark.md)
 #### [How to change the Orchestrator database](orchestrator/how-to-change-the-orchestrator-database.md)
-#### [How to change Orchestrator user groups](orch/manage/how-to-change-the-orchestrator-users-group.md)
+#### [How to change Orchestrator user groups](orchestrator/how-to-change-the-orchestrator-users-group.md)
 #### [How to configure Orchestrator database connections](orchestrator/how-to-configure-orchestrator-database-connections.md)
 #### [How to optimize performance of .Net activities](orch/get-started/how-to-optimize-dot-net-activities.md)
 #### [How to configure runbook throttling](orchestrator/how-to-configure-runbook-throttling.md)

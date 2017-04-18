@@ -28,7 +28,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 -   [How to Change the Orchestrator Database](../../orchestrator/how-to-change-the-orchestrator-database.md)
     Describes how to change the location of the orchestration database.
 
--   [How to Change the Orchestrator Users Group](../manage/how-to-change-the-orchestrator-users-group.md)
+-   [How to Change the Orchestrator Users Group](../../orchestrator/how-to-change-the-orchestrator-users-group.md)
 
     Describes how to remove and add members to the Orchestrator Users Group.
 
