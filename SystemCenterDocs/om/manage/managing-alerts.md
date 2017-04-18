@@ -38,6 +38,6 @@ An alert is an indication of a significant event requiring attention. Rules and 
 
 -  [Using Health Explorer to Investigate Problems](../../scom/manage-health-using-healthexplorer.md) helps identify  which monitor is unhealthy and how it can help support identifying the issue.  
 
--  Review [How to Set Alert Resolution States](how-to-set-alert-resolution-states.md) to learn how to set custom alert resolution states to align with your incident management process for escalation of issues.  
+-  Review [How to Set Alert Resolution States](../../scom/manage-alert-set-resolution-states.md) to learn how to set custom alert resolution states to align with your incident management process for escalation of issues.  
 
 -  To automatically resolve active alerts after a specific number of days, see [How to Configure Automatic Alert Resolution](how-to-configure-automatic-alert-resolution.md).  
