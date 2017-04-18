@@ -29,11 +29,11 @@ For System Center 2016 - Service Manager, several deployment options are availab
 
  You might decide that, for the evaluation phase, you will choose the option to install Service Manager on two computers. After installing Service Manager in the lab, you can import data from Active Directory Domain Services \(AD DS\) and System Center Configuration Manager, and then you can import data and alerts from Operations Manager. You would then configure User Roles within Service Manager and, if necessary, manually add users that were not imported from AD DS. The following illustration represents an overview of this installation and initial configuration.  
 
- ![Installation topology at Woodgrove Bank](../media/plan-installation_topology.png)  
+ ![Installation topology at Woodgrove Bank](./media/plan-deployment/plan-installation_topology.png)  
 
  You can limit the number of SQL Server licenses that you need by placing all of the Service Manager databases on the same computer, as shown in the following illustration.  
 
- ![Single SQL Server in a Two&#45;Computer Installation](../media/plan-installation_topology_single_sql_server.png)  
+ ![Single SQL Server in a Two&#45;Computer Installation](./media/plan-deployment/plan-installation_topology_single_sql_server.png)  
 
  You continue the deployment process by creating several templates; configuring initial parameters; creating queues, lists, and groups; and then creating a management pack to save these custom objects.  
 
@@ -46,4 +46,4 @@ For System Center 2016 - Service Manager, several deployment options are availab
 
 ## Next steps
 
-- Review [Service Manager parts](plan-system-center-2016-service-manager-parts.md) to learn about the major parts of Service Manager.
+- Review [Service Manager parts](../sm/plan/plan-system-center-2016-service-manager-parts.md) to learn about the major parts of Service Manager.

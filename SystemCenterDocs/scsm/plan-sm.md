@@ -23,7 +23,7 @@ Welcome to the System Center 2016 - Service Manager Planning Guide. This article
 
  After you've read the planning information in this guide, you should read the [Deployment Guide for System Center 2016 - Service Manager](../sm/deploy/deploy-deploying-system-center-2016-service-manager.md) to fully understand the steps needed to deploy Service Manager and get it configured for use.  
 
-The [Plan for System Center 2016 - Service Manager deployment](../sm/plan/plan-planning-for-system-center-2016-service-manager-deployment.md) section describes the pieces that make up Service Manager, such as the Service Manager management server, the Service Manager database, the data warehouse management server, the data warehouse databases, and the Service Manager console. This section also describes the hardware and software requirements, the databases created by Service Manager, and the port numbers used by Service Manager.  
+The [Plan for System Center 2016 - Service Manager deployment](plan-deployment.md) section describes the pieces that make up Service Manager, such as the Service Manager management server, the Service Manager database, the data warehouse management server, the data warehouse databases, and the Service Manager console. This section also describes the hardware and software requirements, the databases created by Service Manager, and the port numbers used by Service Manager.  
 
 The [Prepare for System Center 2016 - Service Manager deployment](../sm/plan/plan-preparing-for-system-center-2016-service-manager-deployment.md) section describes how to prepare a computer to host Service Manager. For example, the topics in this section describe how to uninstall a previous version of Service Manager and how to make sure that SQL&nbsp;Server Reporting Services \(SSRS\) is installed. They also describe the account considerations for you to consider.  
 
@@ -31,4 +31,4 @@ The [Planning for System Center 2016 - Service Manager performance and scalabili
 
 ## Next steps
 
-- Review [Plan for Service Manager deployment](../sm/plan/plan-planning-for-system-center-2016-service-manager-deployment.md).
+- Review [Plan for Service Manager deployment](plan-deployment.md).
