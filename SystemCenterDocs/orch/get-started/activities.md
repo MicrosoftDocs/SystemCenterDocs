@@ -34,7 +34,7 @@ All activities, regardless of origin or type, share common behaviors. This secti
 
     Describes specialized activities that monitor environment states and event logs.  
 
--   [Customized Activities](../manage/customized-activities.md)  
+-   [Customized Activities](../../orchestrator/customized-activities.md)  
 
     Describes customization options available in Orchestrator.  
 

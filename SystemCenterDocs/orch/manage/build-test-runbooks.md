@@ -33,7 +33,7 @@ For more information about types of activities, see the following topics:
 
     Describes specialized activities that monitor environment states and event logs.  
 
--   [Customized Activities](customized-activities.md)  
+-   [Customized Activities](../../orchestrator/customized-activities.md)  
 
     Describes customization options available in Orchestrator.  
 

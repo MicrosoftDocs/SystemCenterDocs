@@ -249,7 +249,7 @@
 #### [Computer groups](orchestrator/computer-groups.md)
 #### [Counters](orch/manage/counters.md)
 ####[Creating and testing a sample runbook](orchestrator/creating-and-testing-a-sample-runbook.md)
-#### [Customized activities](orch/manage/customized-activities.md)
+#### [Customized activities](orchestrator/customized-activities.md)
 #### [Data manipulation](orch/manage/data-manipulation.md)
 ####[Design and build runbooks](orch/manage/design-and-build-runbooks.md)
 ##### [Designing a runbook](orchestrator/designing-a-runbook.md)
