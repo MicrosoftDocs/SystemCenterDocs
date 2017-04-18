@@ -66,4 +66,4 @@ If you have already installed the portal or console to a server that does not ho
 
 ## Next steps
 
-- Review [Languages supported by Service Manager](plan-language-support-for-system-center-2016-service-manager.md) to learn about the languages that are supported by the Service Manager console and the SQL Server database collations used with Windows locales.
+- Review [Languages supported by Service Manager](../sm/plan/plan-language-support-for-system-center-2016-service-manager.md) to learn about the languages that are supported by the Service Manager console and the SQL Server database collations used with Windows locales.

@@ -614,7 +614,7 @@
 ##### [SQL Server requirements](scsm/sm-sql-reqs.md)
 ##### [Service Manager editions](scsm/sm-editions.md)
 ##### [Supported configurations](scsm/supported-configs.md)
-##### [Considerations for Operations Manager with Service Manager](sm/plan/plan-operations-manager-considerations-in-system-center-2016-service-manager.md)
+##### [Considerations for Operations Manager with Service Manager](scsm/om-considerations.md)
 ##### [Languages supported by Service Manager](sm/plan/plan-language-support-for-system-center-2016-service-manager.md)
 ##### [Databases created by Service Manager](sm/plan/plan-databases-created-by-system-center-2016-service-manager.md)
 ##### [Port assignments](sm/plan/plan-port-assignments-for-system-center-2016-service-manager.md)

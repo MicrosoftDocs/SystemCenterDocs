@@ -48,7 +48,7 @@ This article describes the software requirements for Service Manager in System C
 
 Service Manager has the capability to import alerts and configuration items from your Operations Manager environment.
 
-If you plan to install both Service Manager and Operations Manager in the same environment, see [Operations Manager Considerations in System Center 2016 \- Service Manager](../sm/plan/plan-operations-manager-considerations-in-system-center-2016-service-manager.md).  
+If you plan to install both Service Manager and Operations Manager in the same environment, see [Operations Manager Considerations in System Center 2016 \- Service Manager](om-considerations.md).  
 
 You can create a data mart for Operations Manager.  
 
