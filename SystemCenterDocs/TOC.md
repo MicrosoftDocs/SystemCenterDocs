@@ -605,7 +605,7 @@
 #### [Published data](orch/manage/published-data.md)
 #### [Regular expressions](orch/manage/regular-expressions.md)
 ## [Service Manager](scsm/service-manager.md)
-### [What's new in Service Manager](sm/get-started/what-s-new-in-service-manager.md)
+### [What's new in Service Manager](scsm/whats-new.md)
 ### [Planning for Service Manager](sm/plan/plan-planning-for-system-center-2016-service-manager.md)
 #### [Plan for Service Manager deployment](sm/plan/plan-planning-for-system-center-2016-service-manager-deployment.md)
 ##### [Service Manager parts](sm/plan/plan-system-center-2016-service-manager-parts.md)

@@ -18,7 +18,7 @@ ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 
 System Center 2016 - Service Manager is updated for the release to manufacturing (RTM) version.
 
-For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../../get-started/release-notes.md).
+For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../get-started/release-notes.md).
 
 ## Support for SQL Server 2014 SP2
 
@@ -102,7 +102,7 @@ The Active Directory and SCCM connectors in Service Manager can import large amo
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ECL logging, doesn't affect importing data from connectors. Instead, most logging data doesn't get written to the ECL and history tables, which can result is significant performance improvement.
-Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../manage/admin-optionally-disable-ecl-logging-for-faster-connector-synchronization.md).
+Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../sm/manage/admin-optionally-disable-ecl-logging-for-faster-connector-synchronization.md).
 
 ## Grooming improvements for ECL logs
 
@@ -138,7 +138,7 @@ The AD GroupExpansion functionality is now part of the ADConnector, as opposed t
 
  With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
-![date dimensions](../media/sm-date-dimensions.png)
+![date dimensions](./media/whats-new/sm-date-dimensions.png)
 
 The following new dimensions have been added to Service Manager data warehouse  cubes:
 
@@ -191,7 +191,7 @@ Cube Name: Service Manager Service Catalog library cube
 
 All these dimensions have the following attributes, which you can use for slicing your data:
 
-![dimensions list](../media/sm-dimensions-list.png)
+![dimensions list](./media/whats-new/sm-dimensions-list.png)
 
 #### To add date dimensions for other date fields in custom cubes
 
@@ -223,7 +223,7 @@ This release contains a new HTML based Self Service Portal which offers the foll
 -   Support of direct URLs for Self Service Portal pages
 -   Rich customization options
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../Deploy/deploy-deploy-the-self-service-portal-for-service-manager.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../sm/deploy/deploy-deploy-the-self-service-portal-for-service-manager.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint-based Self-Service portal has been removed.
@@ -237,7 +237,7 @@ Spell check is now enabled for work item forms. It is enabled for 17 out of the 
 A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
 
 ## Support for Lync 2013 and Skype for Business
-System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../manage/ops-how-to-contact-a-user-from-an-incident-form.md).
+System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../sm/manage/ops-how-to-contact-a-user-from-an-incident-form.md).
 
 
 ## Setup changes to support SQL AlwaysOn installation
@@ -245,11 +245,11 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![configure SQL management server and port ](../media/sm-sqlserver-config.png)
+![configure SQL management server and port ](./media/whats-new/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
 Service Manager 2016 now supports the .Net framework 4.5.1
 
 ## Next steps
 
-- Review [Planning for Service Manager](../plan/plan-planning-for-system-center-2016-service-manager.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
+- Review [Planning for Service Manager](../sm/plan/plan-planning-for-system-center-2016-service-manager.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
