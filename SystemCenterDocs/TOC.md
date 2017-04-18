@@ -443,7 +443,7 @@
 #######[Delete alert activity](orchestrator/delete-alert-activity.md)
 #######[Get alerts activity](orchestrator/get-alerts-activity.md)
 #######[Monitor alerts activity](orchestrator/monitor-alerts-activity.md)
-#######[Update alert activity](orch/manage/update-alert-activity.md)
+#######[Update alert activity](orchestrator/update-alert-activity.md)
 ##### [REST](orch/manage/representational-state-transfer-rest-integration-pack.md)
 ###### [REST Activities](orch/manage/rest-activities.md)
 #######[Invoke rest service](orch/manage/invoke-rest-service.md)
