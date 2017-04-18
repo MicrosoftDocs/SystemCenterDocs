@@ -467,7 +467,7 @@
 ##### [Configuration Manager](orchestrator/configuration-manager-integration-pack.md)
 ###### [Configuration Manager Activities](orchestrator/configuration-manager-activities.md)
 ####### [Add Collection Rule](orchestrator/add-collection-rule.md)
-####### [Create Collection](orch/manage/create-collection.md)
+####### [Create Collection](orchestrator/create-collection.md)
 ####### [Delete Collection](orch/manage/delete-collection.md)
 ####### [Delete Collection Rule](orch/manage/delete-collection-rule.md)
 ####### [Deploy Application](orch/manage/deploy-application.md)
