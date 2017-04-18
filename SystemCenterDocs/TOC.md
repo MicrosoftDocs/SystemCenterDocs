@@ -834,7 +834,7 @@
 ###### [Provision SOFS from bare-metal computers](vmm/manage/manage-sofs-bare-metal.md)
 ###### [Manage SOFS settings](vmm/manage/manage-sofs.md)
 ##### [Set up Storage Spaces Direct](vmm/s2d.md)
-##### [Set up Storage Replica in VMM](vmm/manage/manage-storage-replica.md)
+##### [Set up Storage Replica in VMM](vmm/storage-replica.md)
 #### [Manage virtual machines](vmm/manage/manage-vm-overview.md)
 ##### [Deploy virtual machines from a blank VHD](vmm/manage/manage-vm-vhd-blank.md)
 ##### [Deploy virtual machines from an existing VHD](vmm/manage/manage-vm-vhd-existing.md)

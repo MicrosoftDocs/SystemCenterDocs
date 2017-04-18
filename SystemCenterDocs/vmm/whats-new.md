@@ -57,7 +57,7 @@ The Server App-V application in service templates is no longer available in VMM 
 
 ### Storage Replica
 
-In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](manage/manage-storage-replica.md)
+In VMM 2016 you can use Windows Storage Replica to protect data in a volume by synchronously replicating it between primary and secondary (recovery) volumes. You can deploy the primary and secondary volumes to a single cluster, to two different clusters, or to two standalone servers. You use PowerShell to set up Storage Replica and run failover. [Learn more](storage-replica.md)
 
 ### Storage Quality of Service (QoS)
 
