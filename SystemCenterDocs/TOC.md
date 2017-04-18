@@ -588,7 +588,7 @@
 #######[Get vm properties activity](orchestrator/get-vm-properties-activity.md)
 #######[Get vm status activity](orchestrator/get-vm-status-activity.md)
 #######[Maintenance mode activity](orchestrator/maintenance-mode-activity.md)
-#######[Migrate vm activity](orch/manage/migrate-vm-activity.md)
+#######[Migrate vm activity](orchestrator/migrate-vm-activity.md)
 #######[Modify vm disk activity](orch/manage/modify-vm-disk-activity-in-system-center-2016.md)
 #######[Move vm activity](orch/manage/move-vm-activity.md)
 #######[Reconfigure vm activity](orch/manage/reconfigure-vm-activity.md)

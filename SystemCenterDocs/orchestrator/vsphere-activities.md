@@ -61,7 +61,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Maintenance Mode Activity](maintenance-mode-activity.md)
 
-[Migrate VM Activity](../orch/manage/migrate-vm-activity.md)
+[Migrate VM Activity](migrate-vm-activity.md)
 
 [Modify VM Disk Activity in System Center 2016](../orch/manage/modify-vm-disk-activity-in-system-center-2016.md)
 
