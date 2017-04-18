@@ -44,7 +44,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
     Describes how to use the Runbook Server Runbook Throttling tool to change the maximum number of runbooks that can run on a runbook server.
 
--   [How to View Orchestrator Data by Using PowerPivot](../manage/how-to-view-orchestrator-data-by-using-powerpivot.md)
+-   [How to View Orchestrator Data by Using PowerPivot](../../orchestrator/how-to-view-orchestrator-data-by-using-powerpivot.md)
 
     Describes how to view Orchestrator data by using Microsoft Excel PowerPivot.
 
