@@ -22,37 +22,37 @@ Each view type in System Center 2016 - Operations Manager displays a different a
   
 ## Alert view type  
 
-The alert view displays alerts that meet your specific criteria, such as alert severity, resolution state, or alerts that are assigned to you. For information on creating an alert view, see [How to Create an Alert View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-an-alert-view).  
+The alert view displays alerts that meet your specific criteria, such as alert severity, resolution state, or alerts that are assigned to you. For information on creating an alert view, see [How to Create an Alert View](manage-console-scope-views.md#how-to-create-an-alert-view).  
   
 ![Example of an Alerts view](./media/manage-console-view-types/om2016-operations-console-alertview.png)  
   
 ##Event view type  
 
-The event view queries the event logs and displays events that are based on criteria specified in the event view properties. For information on creating an event view, see [How to Create an Event View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-an-event-view).  
+The event view queries the event logs and displays events that are based on criteria specified in the event view properties. For information on creating an event view, see [How to Create an Event View](manage-console-scope-views.md#how-to-create-an-event-view).  
   
 ![Example of an Events view](./media/manage-console-view-types/om2016-operations-console-eventview.png)  
   
 ## State view type  
 
-The state view displays relationships between components, computers, and computer groups. For information on creating a state view, see [How to Create a State View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-a-state-view).  
+The state view displays relationships between components, computers, and computer groups. For information on creating a state view, see [How to Create a State View](manage-console-scope-views.md#how-to-create-a-state-view).  
   
 ![Example of a state view of distributed application](./media/manage-console-view-types/om2016-operations-console-stateview.png)  
   
 ## Performance view type  
 
-The performance view allows you to customize how you want to view performance data collected from performance objects and counters. This includes the ability to view historical and current operational data together. You must select **Show** in the Details pane to display data from a rule in the graph in the Results pane. For information on creating a performance view, see [How to Create a Performance View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-a-performance-view).  
+The performance view allows you to customize how you want to view performance data collected from performance objects and counters. This includes the ability to view historical and current operational data together. You must select **Show** in the Details pane to display data from a rule in the graph in the Results pane. For information on creating a performance view, see [How to Create a Performance View](manage-console-scope-views.md#how-to-create-a-performance-view).  
   
 ![Example of a performance view](./media/manage-console-view-types/om2016-operations-console-performanceview.png)  
   
 ## Diagram view type  
 
-The Diagram view displays a graphical view of a set of managed objects and how they relate to one another. For information on creating a diagram view, see [How to Create a Diagram View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-a-diagram-view).  
+The Diagram view displays a graphical view of a set of managed objects and how they relate to one another. For information on creating a diagram view, see [How to Create a Diagram View](manage-console-scope-views.md#how-to-create-a-diagram-view).  
   
 ![Example of a diagram view](./media/manage-console-view-types/om2016-operations-console-diagramview.png)  
   
 ## Task status view type  
 
-The task status view displays tasks that meet criteria specified in the properties, such as only those tasks that apply to certain object types. For information on creating a task status view, see [How to Create a Task Status View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-a-task-status-view).  
+The task status view displays tasks that meet criteria specified in the properties, such as only those tasks that apply to certain object types. For information on creating a task status view, see [How to Create a Task Status View](manage-console-scope-views.md#how-to-create-a-task-status-view).  
   
 ![Selection window for task status view](./media/manage-console-view-types/om2016-operations-console-taskstatus.png)  
   
@@ -61,7 +61,7 @@ The task status view displays tasks that meet criteria specified in the properti
   
 ## Web page view type  
 
-The Web page view displays a Web page in a separate window in the Operations console. For information on creating a Web page view, see [How to Create a Web Page View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-a-web-page-view).  
+The Web page view displays a Web page in a separate window in the Operations console. For information on creating a Web page view, see [How to Create a Web Page View](manage-console-scope-views.md#how-to-create-a-web-page-view).  
   
 ![Example of web page view](./media/manage-console-view-types/om2016-operations-console-webpageview.png)  
   
@@ -69,7 +69,7 @@ The Web page view displays a Web page in a separate window in the Operations con
 
 You can only create an overrides summary view in My Workspace.  
   
-You can view all rule and monitor overrides in the overrides summary view. The overrides summary view can be used for both sealed and unsealed management packs. You can customize this view by grouping items by multiple column headers. For information on creating an overrides summary view, see [How to Create an Overrides Summary View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-an-overrides-summary-view).  
+You can view all rule and monitor overrides in the overrides summary view. The overrides summary view can be used for both sealed and unsealed management packs. You can customize this view by grouping items by multiple column headers. For information on creating an overrides summary view, see [How to Create an Overrides Summary View](manage-console-scope-views.md#how-to-create-an-overrides-summary-view).  
   
 ![Example of overrides summary view](./media/manage-console-view-types/om2016-operations-console-overridesummaryview.png)  
   
@@ -82,7 +82,7 @@ The dashboard view allows you to present multiple types of data in a single view
   
 ![Sample dashboard view](./media/manage-console-view-types/om2016-operations-console-dashboardview.png)  
   
-For information on creating a dashboard view, see [How to Create a Dashboard View](../om/manage/../om/manage/how-to-create-and-scope-views-in-operations-manager.md#how-to-create-a-dashboard-view).  
+For information on creating a dashboard view, see [How to Create a Dashboard View](manage-console-scope-views.md#how-to-create-a-dashboard-view).  
   
 ## Next steps
   

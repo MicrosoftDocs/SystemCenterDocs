@@ -100,4 +100,4 @@ For additional details of each widget and the configurable properties available,
 
 ## Next steps
 
-- To understand how to create your own custom views and dashboards in Operations Manager,  as well as how to scope them, see [Creating and Scoping Views in Operations Manager](how-to-create-and-scope-views-in-operations-manager.md).  
+- To understand how to create your own custom views and dashboards in Operations Manager,  as well as how to scope them, see [Creating and Scoping Views in Operations Manager](../../scom/manage-console-scope-views.md).  

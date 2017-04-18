@@ -41,7 +41,7 @@ The following table describes the views and folders of the views available when 
 
 - You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).    
 
-- To understand how to create your own custom views and dashboards in Operations Manager, see [Creating Views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md). 
+- To understand how to create your own custom views and dashboards in Operations Manager, see [Creating Views in Operations Manager](manage-console-scope-views.md). 
 
 - Views included in sealed management packs can be modified to include other monitored object properties.  To customize a view, see [How to Personalize a View in Operations Manager](../om/manage/how-to-personalize-a-view-in-operations-manager.md).  
 

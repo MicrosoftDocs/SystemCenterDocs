@@ -140,7 +140,7 @@
 ##### [Using views and dashboards](scom/manage-console-using-views-dashboards.md)
 ###### [View types](scom/manage-console-view-types.md)
 ###### [Standard views](scom/manage-console-standard-views.md)
-###### [Creating and scoping views](om/manage/how-to-create-and-scope-views-in-operations-manager.md)
+###### [Creating and scoping views](scom/manage-console-scope-views.md)
 ###### [Personalize a view](om/manage/how-to-personalize-a-view-in-operations-manager.md)
 ##### [Subscribing to alert notifications](scom/manage-notifications-alert-notifications.md)
 ###### [How to create and configure the notification action account](om/manage/how-to-create-and-configure-the-notification-action-account.md)

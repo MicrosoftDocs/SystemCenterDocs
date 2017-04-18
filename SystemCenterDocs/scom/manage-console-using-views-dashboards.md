@@ -29,7 +29,7 @@ After you identify the IT services to monitor, the configuration of how to monit
   
 -   [Standard views in Operations Manager](manage-console-standard-views.md)  
   
--   [Creating and scoping views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md)  
+-   [Creating and scoping views in Operations Manager](manage-console-scope-views.md)  
 
 -   [Personalize a view in Operations Manager](../om/manage/how-to-personalize-a-view-in-operations-manager.md)
   

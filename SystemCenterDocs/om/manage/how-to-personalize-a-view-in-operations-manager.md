@@ -46,4 +46,4 @@ In System Center 2016 - Operations Manager, views are contained in management pa
 
 - Operations Manager includes a number of views that are created during installation.  To understand what these views provide, see [Standard Views in Operations Manager](../../scom/manage-console-standard-views.md).  
 
-- To understand how to create your own custom views and dashboards in Operations Manager,  as well as how to scope them, see [Creating and Scoping Views in Operations Manager](how-to-create-and-scope-views-in-operations-manager.md).  
+- To understand how to create your own custom views and dashboards in Operations Manager,  as well as how to scope them, see [Creating and Scoping Views in Operations Manager](../../scom/manage-console-scope-views.md).  

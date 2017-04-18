@@ -231,7 +231,7 @@ Widgets in a dashboard view can display data for a particular target class or gr
 > [!NOTE]  
 > When you create a dashboard view that includes a widget that displays data for a target class that contains instances (a non-singleton class), that dashboard view cannot be imported into other management groups.  
   
-You can also create a service level dashboard view to track data for service level objectives that you create. For more information, see [Creating a Service Level Dashboard](creating-a-service-level-dashboard.md).  
+You can also create a service level dashboard view to track data for service level objectives that you create. For more information, see [Creating a Service Level Dashboard](../om/manage/creating-a-service-level-dashboard.md).  
   
 1.  In the Operations console, click **My Workspace**.  
   
@@ -342,10 +342,10 @@ You can view all rule and monitor overrides in an overrides summary view. The ov
   
 ## Next steps
  
-- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](../../scom/manage-console-using-views-dashboards.md).    
+- You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions.  To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md).    
 
-- Operations Manager includes a number of views that are created during installation.  To understand what these views provide, see [Standard Views in Operations Manager](../../scom/manage-console-standard-views.md).  
+- Operations Manager includes a number of views that are created during installation.  To understand what these views provide, see [Standard Views in Operations Manager](manage-console-standard-views.md).  
 
-- Views included in sealed management packs can be modified to include other monitored object properties.  To customize a view, see [How to Personalize a View in Operations Manager](how-to-personalize-a-view-in-operations-manager.md).  
+- Views included in sealed management packs can be modified to include other monitored object properties.  To customize a view, see [How to Personalize a View in Operations Manager](../om/manage/how-to-personalize-a-view-in-operations-manager.md).  
   
   

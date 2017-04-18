@@ -92,7 +92,7 @@ You can run saved searches right-clicking a search in the list and then clicking
 Views that you create in My Workspace are unique views, not shortcuts to existing views. As an operator, you can create views in the My Workspace pane. You must have the rights of the Author role to create a view in the Monitoring workspace.  
   
 > [!NOTE]  
-> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [How to Create and Scope Views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md).  
+> The general instructions in the following procedure do not apply to Diagram, Web Page, or Dashboard views. For more information on creating a view, see the specific view type in [How to Create and Scope Views in Operations Manager](manage-console-scope-views.md).  
   
 ### To create a view in My Workspace  
   
@@ -100,7 +100,7 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
   
 2.  In the view properties, enter a name and description for the view. The view properties dialog box contains two tabs: **Criteria** and **Display**.  
   
-    On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Creating and Scoping Views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md).  
+    On the **Criteria** tab, in the **Show data related to** field, specify the item to target. The item you select will display related conditions in the **Select conditions** section. For more information, see [Creating and Scoping Views in Operations Manager](manage-console-scope-views.md).  
   
     After you select a condition, you can edit the value for that condition in the **Criteria description** section.  
   
