@@ -23,7 +23,7 @@ This section of the Deployment Guide provides information about how to upgrade t
 > [!NOTE]
 > This is the only supported upgrade path to System Center 2016 - Operations Manager. If you are using Operations Manager 2012 Service Pack 1 (SP1), you must first upgrade to System Center Operations Manager 2012 R2 with Update Rollup 9.
 
-It is assumed in this guide that you are performing an upgrade to System Center 2016 -  Operations Manager. For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see [Deploying System Center 2016 - Operations Manager](deploying-system-center-2016-operations-manager.md).
+It is assumed in this guide that you are performing an upgrade to System Center 2016 -  Operations Manager. For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see [Deploying System Center 2016 - Operations Manager](deploy-overview.md).
 
 > [!NOTE]
 > If your Operations Manager 2012 R2 management group is integrated with Microsoft Operations Management Suite (OMS), its configuration will be retained and continue to function normally after the upgrade is complete.  
@@ -39,7 +39,7 @@ It is assumed in this guide that you are performing an upgrade to System Center 
    > 4. Operations Manager
    > 5. Virtual Machine Manager
 
-Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../plan/system-requirements.md).
+Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../om/plan/system-requirements.md).
 
 There are several options for upgrade:
 
@@ -53,7 +53,7 @@ There are several options for upgrade:
 
 The following steps outline the process for upgrading a distributed management group:
 
-1. Accomplish [Pre-Upgrade Tasks](pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
+1. Accomplish [Pre-Upgrade Tasks](../om/deploy/pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
 
 2. Upgrade the initial management server and then additional management servers (each management server must be upgraded)
 
@@ -69,7 +69,7 @@ The following steps outline the process for upgrading a distributed management g
 
 8. Upgrade Reporting Server
 
-9. Perform [Post-Upgrade Tasks](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
+9. Perform [Post-Upgrade Tasks](../om/deploy/post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md)
 
 \*Steps 4 through 8 can be performed in parallel after all management servers have been upgraded.
 
@@ -78,7 +78,7 @@ The following steps outline the process for upgrading a distributed management g
 
 The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center 2012 R2 Operations Manager environment is left intact. Agents that have been upgraded to System Center 2016 Operations Manager are fully capable of working with native System Center 2012 R2 Operations Manager functionality.  
 
-Agents can be upgraded before the new System Center 2016 - Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution or they can be upgraded after by discovering and performing a push-install from the new Operations Manager 2016 management group.  For further information, see [How to Upgrade Agents in a Parallel Deployment](how-to-upgrade-agents-in-a-parallel-deployment.md).  
+Agents can be upgraded before the new System Center 2016 - Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution or they can be upgraded after by discovering and performing a push-install from the new Operations Manager 2016 management group.  For further information, see [How to Upgrade Agents in a Parallel Deployment](../om/deploy/how-to-upgrade-agents-in-a-parallel-deployment.md).  
 
 1. Retain the original System Center 2012 R2 Operations Manager environment.
 
@@ -92,6 +92,6 @@ Agents can be upgraded before the new System Center 2016 - Operations Manager ma
 
 ## Next steps
 
-- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](../om/deploy/pre-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](../om/deploy/post-upgrade-tasks-when-upgrading-to-system-center-2016-operations-manager.md).

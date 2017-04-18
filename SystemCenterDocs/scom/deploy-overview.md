@@ -20,7 +20,7 @@ All System Center 2016 - Operations Manager individual management group deployme
 
 This section of the Deployment Guide describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
 
--   [Single Server Deployment of Operations Manager](Single-Server-Deployment-of-Operations-Manager.md)
+-   [Single Server Deployment of Operations Manager](../om/deploy/single-server-deployment-of-operations-manager.md)
 
 -   [Distributed Deployment of Operations Manager](Distributed-Deployment-of-Operations-Manager.md)
 

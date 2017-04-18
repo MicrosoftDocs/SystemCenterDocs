@@ -28,7 +28,7 @@ Welcome to System Center 2016 - Operations Manager.  Operations Manager provides
 
     Review information to help you plan the deployment of Operations Manager into your organization
 
--   [Deploying System Center 2016 - Operations Manager](../om/deploy/deploying-system-center-2016-operations-manager.md)
+-   [Deploying System Center 2016 - Operations Manager](deploy-overview.md)
 
     Read these topics to learn how to deploy Operations Manager in your environment.
 

@@ -47,7 +47,7 @@ These core components of a management group can exist on a single server, or the
 
 ![Basic Management Group](../media/om2016-basic-management-group.png)
 
-For information about installing management group features, see [Operations Manager 2016 Deployment Guide](../deploy/deploying-system-center-2016-operations-manager.md).
+For information about installing management group features, see [Operations Manager 2016 Deployment Guide](../../scom/deploy-overview.md).
 
 ### Management servers
 
@@ -137,7 +137,7 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 -   [TechNet Library main page for System Center - Operations Manager](../../scom/welcome.md)
 
--   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](../deploy/deploying-system-center-2016-operations-manager.md)
+-   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](../../scom/deploy-overview.md)
 
 -   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../Manage/Operations-Manager-Operations-Guide.md)
 
