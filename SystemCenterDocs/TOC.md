@@ -229,7 +229,7 @@
 #### [Runbook designer](orch/get-started/runbook-designer.md)
 #### [Orchestrator logs](orch/get-started/orchestrator-logs.md)
 #### [Runbook permissions](orch/get-started/runbook-permissions.md)
-#### [Runbook properties](orch/get-started/runbook-properties.md)
+#### [Runbook properties](orchestrator/runbook-properties.md)
 #### [Runbook samples](orchestrator/runbook-samples.md)
 #### [Runbook server properties](orch/get-started/runbook-server-properties.md)
 #### [Runbook tester](orch/get-started/runbook-tester.md)
