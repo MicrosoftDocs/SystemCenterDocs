@@ -282,7 +282,7 @@
 #######[Delete Group](orchestrator/delete-group.md)
 #######[Delete User](orchestrator/delete-user.md)
 #######[Disable Computer](orchestrator/disable-computer.md)
-#######[Disable User](orch/manage/disable-user.md)
+#######[Disable User](orchestrator/disable-user.md)
 #######[Enable Computer](orch/manage/enable-computer.md)
 #######[Enable User](orch/manage/enable-user.md)
 #######[Get Computer](orch/manage/get-computer.md)
