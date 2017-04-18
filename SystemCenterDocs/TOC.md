@@ -578,7 +578,7 @@
 #######[Delete vm activity](orchestrator/delete-vm-activity.md)
 #######[Delete vm disk activity](orchestrator/delete-vm-disk-activity-in-system-center-2016.md)
 #######[Get cluster properties activity](orchestrator/get-cluster-properties-activity.md)
-#######[Get datastore capacity activity](orch/manage/get-datastore-capacity-activity.md)
+#######[Get datastore capacity activity](orchestrator/get-datastore-capacity-activity.md)
 #######[Get host datastores activity](orch/manage/get-host-datastores-activity.md)
 #######[Get host properties activity](orch/manage/get-host-properties-activity.md)
 #######[Get hosts activity](orch/manage/get-hosts-activity.md)
