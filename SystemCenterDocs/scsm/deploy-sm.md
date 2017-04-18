@@ -53,4 +53,4 @@ During installation, System Center - Service Manager Setup performs prerequisite
 
 ## Next steps
 
-- Review [Deployment scenarios for Service Manager](../sm/deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md) to learn about how to deploy Service Manager in one-server, two-server, and four-server topologies.
+- Review [Deployment scenarios for Service Manager](deploy-scenarios.md) to learn about how to deploy Service Manager in one-server, two-server, and four-server topologies.

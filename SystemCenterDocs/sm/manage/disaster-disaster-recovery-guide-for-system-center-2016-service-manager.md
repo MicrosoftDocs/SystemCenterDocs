@@ -50,7 +50,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 2.  Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
 
-3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](../deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md).  
+3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](../../scsm/deploy-scenarios.md).  
 
 ### Data Warehouse management server  
  Only one recovery scenario is possible for the data warehouse management server: you must install a new data warehouse management server on a computer with the same computer name as the computer that failed. Installing a replacement data warehouse management server involves the following procedures:  
@@ -59,7 +59,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 2.  Restore the encryption key that you saved from the original data warehouse management server. For more information, see [How to Restore the Service Manager Encryption Key](disaster-management-server-disaster-recovery-in-service-manager.md) in this guide.  
 
-3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](../deploy/deploy-deployment-scenarios-for-system-center-2016-service-manager.md).  
+3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](../../scsm/deploy-scenarios.md).  
 
 ### Service Manager databases  
  Recovery procedures are the same for both the Service Manager database and the data warehouse database. You use a computer with the same name, and then you restore the Microsoft SQL&nbsp;Server databases using the same instance as the original. Recovery of a Service Manager database and a data warehouse database involves the following procedures:  

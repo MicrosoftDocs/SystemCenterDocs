@@ -36,4 +36,4 @@ System Center - Service Manager provides for many deployment scenarios. However,
 
 ## Next steps
 
-- Review [Install on a single computer (minimum configuration)](deploy-installing-service-manager-on-a-single-computer-minimum-configuration.md) to install Service Manager on a single computer. This scenario requires you to use a virtual machine for the data warehouse management server. This scenario is useful for evaluation purposes.
+- Review [Install on a single computer (minimum configuration)](../sm/deploy/deploy-installing-service-manager-on-a-single-computer-minimum-configuration.md) to install Service Manager on a single computer. This scenario requires you to use a virtual machine for the data warehouse management server. This scenario is useful for evaluation purposes.
