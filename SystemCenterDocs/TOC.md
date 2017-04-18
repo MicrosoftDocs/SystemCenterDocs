@@ -776,7 +776,7 @@
 #### [Remove an SDN from VMM](vmm/sdn-remove.md)
 ### [Deploy](vmm/deploy/deploy-overview.md)
 #### [Upgrade VMM](vmm/upgrade.md)
-#### [Install VMM](vmm/deploy/deploy-install.md)
+#### [Install VMM](vmm/install.md)
 #### [Install the VMM console](VMM/deploy/deploy-install-console.md)
 #### [Deploy VMM for high availability](VMM/deploy/deploy-vmm-ha.md)
 ##### [Deploy a highly available VMM management server](VMM/deploy/deploy-vmm-server-ha.md)
