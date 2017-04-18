@@ -297,4 +297,4 @@ The following is a list of the error codes that are used in the command-line ins
 
 ## Next steps
 
-- Review [Move the Service Manager and data warehouse databases to different servers](../sm/deploy/deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md) to read prescriptive and how-to guidance about moving Service Manager databases.
+- Review [Move the Service Manager and data warehouse databases to different servers](move-databases.md) to read prescriptive and how-to guidance about moving Service Manager databases.

@@ -49,11 +49,11 @@ You must use the following high\-level steps to move the Service Manager databas
 
 2.  Stop the System Center services on all the management servers.  
 
-3.  Back up the Service Manager database, as described in [How to Back Up the Production Service Manager Database](upgrade-how-to-back-up-the-production-service-manager-database.md).  
+3.  Back up the Service Manager database, as described in [How to Back Up the Production Service Manager Database](../sm/deploy/upgrade-how-to-back-up-the-production-service-manager-database.md).  
 
-4.  Restore the Service Manager database on the target computer that is running Microsoft SQL Server, as described in [How to Restore the Service Manager Database in the Lab Environment](upgrade-how-to-restore-the-service-manager-database-in-the-lab-environment.md).  
+4.  Restore the Service Manager database on the target computer that is running Microsoft SQL Server, as described in [How to Restore the Service Manager Database in the Lab Environment](../sm/deploy/upgrade-how-to-restore-the-service-manager-database-in-the-lab-environment.md).  
 
-5.  Configure the Service Manager database, as described in [How to Prepare the Service Manager Database in the Lab Environment](upgrade-how-to-prepare-the-service-manager-database-in-the-lab-environment.md).  
+5.  Configure the Service Manager database, as described in [How to Prepare the Service Manager Database in the Lab Environment](../sm/deploy/upgrade-how-to-prepare-the-service-manager-database-in-the-lab-environment.md).  
 
     > [!IMPORTANT]  
     >  Do not perform step 17 in the procedure for configuring tables.  
@@ -82,7 +82,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
     -   Analysis Management Objects \(AMO\)  
 
-9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](upgrade-how-to-start-service-manager-services-on-the-secondary-management-server.md).  
+9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](../sm/deploy/upgrade-how-to-start-service-manager-services-on-the-secondary-management-server.md).  
 
 10. Install another Service Manager database that has a different name on the same computer that is running SQL Server, by installing another Service Manager management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.  
 
@@ -735,4 +735,4 @@ The following high\-level steps are required to move the data warehouse database
 
 ## Next steps
 
-- Review [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md) to learn about upgrading Service Manager.
+- Review [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md) to learn about upgrading Service Manager.

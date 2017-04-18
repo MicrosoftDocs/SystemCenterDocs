@@ -643,7 +643,7 @@
 #### [Index non-English knowledge articles](scsm/non-eng-articles.md)
 #### [Troubleshoot deployment issues to resolve problems](scsm/troubleshoot-deployment.md)
 #### [Deploy Service Manager from a command line](scsm/deploy-cmd-line.md)
-#### [Move the Service Manager and data warehouse databases](sm/deploy/deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md)
+#### [Move the Service Manager and data warehouse databases](scsm/move-databases.md)
 ### [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](sm/deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016.md)
 #### [Prepare remote SQL Server Reporting Services for upgrade](sm/deploy/upgrade-remote-sql-server-reporting-services.md)
 #### [Upgrade configurations for the Service Manager Self-Service portal](sm/deploy/upgrade-upgrading-the-self-service-portal.md)
