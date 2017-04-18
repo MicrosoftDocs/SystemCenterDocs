@@ -50,7 +50,7 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Create Message](../../orchestrator/create-message.md)
 
-[Delete Annotation](delete-annotation.md)
+[Delete Annotation](../../orchestrator/delete-annotation.md)
 
 [Get Annotation](get-annotation.md)
 

@@ -419,7 +419,7 @@
 #######[Acknowledge message](orchestrator/acknowledge-message.md)
 #######[Add annotation to message](orchestrator/add-annotation-to-message.md)
 #######[Create message](orchestrator/create-message.md)
-#######[Delete annotation](orch/manage/delete-annotation.md)
+#######[Delete annotation](orchestrator/delete-annotation.md)
 #######[Delete custom attribute](orch/manage/delete-custom-attribute.md)
 #######[Get annotation](orch/manage/get-annotation.md)
 #######[Get message](orch/manage/get-message.md)
