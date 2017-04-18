@@ -228,7 +228,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Swap Deployment](swap-deployment.md)
 
-[Upgrade Deployment](../orch/manage/upgrade-deployment.md)
+[Upgrade Deployment](upgrade-deployment.md)
 
 [Update Deployment Status](update-deployment-status.md)
 
