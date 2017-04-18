@@ -65,7 +65,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Modify VM Disk Activity in System Center 2016](modify-vm-disk-activity-in-system-center-2016.md)
 
-[Move VM Activity](../orch/manage/move-vm-activity.md)
+[Move VM Activity](move-vm-activity.md)
 
 [Reconfigure VM Activity](../orch/manage/reconfigure-vm-activity.md)
 

@@ -590,7 +590,7 @@
 #######[Maintenance mode activity](orchestrator/maintenance-mode-activity.md)
 #######[Migrate vm activity](orchestrator/migrate-vm-activity.md)
 #######[Modify vm disk activity](orchestrator/modify-vm-disk-activity-in-system-center-2016.md)
-#######[Move vm activity](orch/manage/move-vm-activity.md)
+#######[Move vm activity](orchestrator/move-vm-activity.md)
 #######[Reconfigure vm activity](orch/manage/reconfigure-vm-activity.md)
 #######[Reset vm activity](orch/manage/reset-vm-activity.md)
 #######[Revert vm snapshot activity](orch/manage/revert-vm-snapshot-activity.md)
