@@ -571,7 +571,7 @@
 #######[Add network adapter activity](orchestrator/add-network-adapter-activity.md)
 #######[Add vm disk activity](orchestrator/add-vm-disk-activity.md)
 #######[Clone linux vm activity](orchestrator/clone-linux-vm-activity.md)
-#######[Clone windows vm activity](orch/manage/clone-windows-vm-activity.md)
+#######[Clone windows vm activity](orchestrator/clone-windows-vm-activity.md)
 #######[Create vm activity](orch/manage/create-vm-activity.md)
 #######[Customize vm activity](orch/manage/customize-vm-activity.md)
 #######[Delete network adapter activity](orch/manage/delete-network-adapter-activity-in-system-center-2016.md)

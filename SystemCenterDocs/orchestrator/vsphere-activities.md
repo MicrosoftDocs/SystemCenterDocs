@@ -27,7 +27,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Clone Linux VM Activity](clone-linux-vm-activity.md)
 
-[Clone Windows VM Activity](../orch/manage/clone-windows-vm-activity.md)
+[Clone Windows VM Activity](clone-windows-vm-activity.md)
 
 [Create VM Activity](../orch/manage/create-vm-activity.md)
 
