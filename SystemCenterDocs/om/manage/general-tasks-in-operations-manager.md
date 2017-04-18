@@ -26,7 +26,7 @@ ms.topic: article
 
 -   [Connecting management groups](../../scom/manage-connecting-mgmtgroups.md)
 
--   [Using Operations Manager Shell](using-operations-manager-shell.md)
+-   [Using Operations Manager Shell](../../scom/manage-using-omcmdlets.md)
 
 -   [How to create and manage resource pools](how-to-manage-resource-pools.md) 
 

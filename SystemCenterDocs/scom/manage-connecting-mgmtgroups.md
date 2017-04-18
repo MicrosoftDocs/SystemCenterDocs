@@ -89,7 +89,7 @@ In this procedure, you create a connection between two management groups. These 
 
 - Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](../../z-harvest-om/om/manage/creating-and-managing-groups.md).  
 
-- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](../om/manage/using-operations-manager-shell.md) . 
+- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](manage-using-omcmdlets.md) . 
 
 - To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](../../z-harvest-om/om/manage/running-tasks-in-operations-manager.md).  
 

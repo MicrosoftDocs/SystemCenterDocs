@@ -43,5 +43,5 @@ In this instance, the task completed successfully. **Task Output** provides you 
 
 - Groups help categorize, classify or arrange one or more monitored objects to manage targeting of visualized data, overrides, reports, and more.  To learn how to create groups and common uses for groups, see [Creating and Managing Groups](../../z-harvest-om/om/manage/creating-and-managing-groups.md).    
 
-- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](../om/manage/using-operations-manager-shell.md).  
+- Operations Manager extends the PowerShell command-line environment and task-based scripting technology to automate most Operations Manager administrative tasks.  See [Using Operations Manager Shell](manage-using-omcmdlets.md).  
   

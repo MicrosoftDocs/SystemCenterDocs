@@ -211,7 +211,7 @@
 ##### [Creating and managing groups](scom/manage-create-manage-groups.md)
 ##### [Running tasks in Operations Manager](scom/manage-running-tasks.md)
 ##### [Connecting management groups in Operations Manager](scom/manage-connecting-mgmtgroups.md)
-##### [Using Operations Manager shell](om/manage/using-operations-manager-shell.md)
+##### [Using Operations Manager shell](scom/manage-using-omcmdlets.md)
 ##### [How to create and manage resource pools](om/manage/how-to-manage-resource-pools.md)
 ####  [Maintaining the Operations Manager Infrastructure](om/manage/maintaining-operations-manager.md)
 ##### [How to configure Operations Manager to communicate with SQL Server](om/manage/how-to-configure-operations-manager-to-communicate-with-sqlserver.md)
