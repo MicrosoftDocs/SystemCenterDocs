@@ -700,7 +700,7 @@
 #### [Map Active Directory Domain Services attributes to properties in Service Manager](scsm/ad-ds-attribs.md)
 #### [Map Service Manager properties to Configuration Manager database views](scsm/sm-cm-views.md)
 #### [Registry keys](scsm/registry-keys.md)
-### [Day-to-day tasks in Service Manager](sm/manage/ops-operations-guide-for-system-center-2016-service-manager.md)
+### [Day-to-day tasks in Service Manager](scsm/day-to-day-tasks.md)
 #### [Search for information](sm/manage/ops-searching-for-information-in-system-center-2016-service-manager.md)
 #### [Manage incidents and problems](sm/manage/ops-managing-incidents-and-problems-in-system-center-2016-service-manager.md)
 #### [Manage changes and activities](sm/manage/ops-managing-changes-and-activities-in-system-center-2016-service-manager.md)
