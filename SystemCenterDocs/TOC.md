@@ -821,7 +821,7 @@
 ##### [Integrate NLB with service templates](vmm/network-nlb.md)
 ##### [Set up an IPAM server](vmm/network-ipam.md)
 #### [Manage the VMM storage fabric](vmm/manage-storage.md)
-##### [Set up storage classifications](vmm/manage/manage-storage-classifications.md)
+##### [Set up storage classifications](vmm/storage-classification.md)
 ##### [Add storage devices](vmm/manage/manage-storage-add-device.md)
 ##### [Allocate storage to host groups](vmm/manage/manage-storage-host-groups.md)
 ##### [Set up a Microsoft iSCSI Target Server](vmm/manage/manage-storage-microsoft-iscsi.md)

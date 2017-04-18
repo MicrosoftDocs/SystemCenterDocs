@@ -40,7 +40,7 @@ After you've finished installing System Center 2016 - Virtual Machine Manager (V
 
  VMM can manage storage that you assign to virtual hosts, clusters, and virtual machines. [Learn more](../manage-storage.md).
 
- - **Manage storage classifications**: Storage classifications abstract storage devices, so that you can group together devices with similar characteristics. You can then assign classifications rather than specific storage devices to hosts and clusters. [Get started](manage-storage-classifications.md).
+ - **Manage storage classifications**: Storage classifications abstract storage devices, so that you can group together devices with similar characteristics. You can then assign classifications rather than specific storage devices to hosts and clusters. [Get started](../storage-classification.md).
  - **Add storage devices**: To manage storage you need to discover and add it to the VMM storage fabric. [Get started](manage-storage-add-device.md).
  - **Allocate storage to host groups**: After storage has been discovered and classified you can assign it to a host groups. You can assign an entire storage pool, or a specific logical unit (LUN). [Get started](manage-storage-host-groups.md).
  - **Set up a Microsoft iSCSI Target server**: Microsoft iSCSI Target Server is a server role that enables a Windows server machine to function as a storage device. You can add and manage this server as storage in the VMM fabric. [Get started](manage-storage-microsoft-iscsi.md).
