@@ -222,7 +222,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Shutdown VM Instance](shutdown-vm-instance.md)
 
-[Snapshot Blob](../orch/manage/snapshot-blob.md)
+[Snapshot Blob](snapshot-blob.md)
 
 [Start VM Instance](../orch/manage/start-vm-instance.md)
 
