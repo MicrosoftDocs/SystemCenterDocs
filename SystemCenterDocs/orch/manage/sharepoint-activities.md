@@ -49,7 +49,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** box.
 
-2.  Select the applicable connection name. Connections that are displayed in the list have been previously configured as described in [System Center Integration Pack for Microsoft SharePoint](integration-pack-for-microsoft-sharepoint.md).
+2.  Select the applicable connection name. Connections that are displayed in the list have been previously configured as described in [System Center Integration Pack for Microsoft SharePoint](../../orchestrator/integration-pack-for-microsoft-sharepoint.md).
 
 ### Filter Behavior
 

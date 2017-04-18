@@ -447,7 +447,7 @@
 ##### [REST](orchestrator/representational-state-transfer-rest-integration-pack.md)
 ###### [REST Activities](orchestrator/rest-activities.md)
 #######[Invoke rest service](orchestrator/invoke-rest-service.md)
-#### [SharePoint](orch/manage/integration-pack-for-microsoft-sharepoint.md)
+#### [SharePoint](orchestrator/integration-pack-for-microsoft-sharepoint.md)
 ##### [SharePoint activities](orch/manage/sharepoint-activities.md)
 ###### [Create List Item](orchestrator/create-list-item.md)
 ###### [Delete Attachment](orchestrator/delete-attachment.md)

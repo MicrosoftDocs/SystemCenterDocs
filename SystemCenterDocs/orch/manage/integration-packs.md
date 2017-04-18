@@ -33,5 +33,5 @@ You can download integration packs from the Microsoft Download Center. Each inte
 - [Operations Manager](../../orchestrator/integration-pack-for-operations-manager.md)
 - [Service Manager](../../orchestrator/integration-pack-for-service-manager.md)
 - [Virtual Machine Manager](../../orchestrator/integration-pack-for-virtual-machine-manager.md)
-- [SharePoint](integration-pack-for-microsoft-sharepoint.md)
+- [SharePoint](../../orchestrator/integration-pack-for-microsoft-sharepoint.md)
 - [VMWare vSphere](../../orchestrator/vsphere-integration-pack.md)
