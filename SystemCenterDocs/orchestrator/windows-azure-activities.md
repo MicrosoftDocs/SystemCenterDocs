@@ -190,7 +190,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Get VM instance](get-vm-instance.md)
 
-[List Blob](../orch/manage/list-blob.md)
+[List Blob](list-blob.md)
 
 [List Cloud Service](../orch/manage/list-cloud-service.md)
 

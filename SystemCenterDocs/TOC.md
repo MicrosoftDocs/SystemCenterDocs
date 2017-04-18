@@ -342,7 +342,7 @@
 #######[Get vm data disk](orchestrator/get-vm-data-disk.md)
 #######[Get vm instance](orchestrator/get-vm-instance.md)
 #######[Get vm rdp file](orchestrator/get-vm-rdp-file.md)
-#######[List blob](orch/manage/list-blob.md)
+#######[List blob](orchestrator/list-blob.md)
 #######[List cloud service](orch/manage/list-cloud-service.md)
 #######[List container](orch/manage/list-container.md)
 #######[List management certificate](orch/manage/list-management-certificate.md)
