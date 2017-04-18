@@ -178,7 +178,7 @@
 ###### [Configuring SSL ciphers](scom/manage-security-crossplat-config-sslcipher.md)
 ###### [Administering and configuring the UNIX/Linux agent](scom/manage-security-administer-crossplat-agent.md)
 #### [Operations Manager monitoring scenarios](om/manage/operations-manager-monitoring-scenarios.md)
-##### [Agentless monitoring](om/manage/agentless-monitoring-in-operations-manager.md)
+##### [Agentless monitoring](scom/agentless-monitoring-in-operations-manager.md)
 ##### [Client monitoring using Agentless Exception Monitoring](om/manage/client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md)
 ##### [Monitoring clusters with Operations Manager](om/manage/monitoring-clusters-with-operations-manager.md)
 ##### [Monitoring networks with Operations Manager](scom/manage-monitor-networkdevice-overview.md)

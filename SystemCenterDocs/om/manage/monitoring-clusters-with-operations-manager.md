@@ -41,7 +41,7 @@ To begin monitoring computers in a cluster, perform the following steps:
   
 1.  Install an agent on each physical node in the cluster.  This allows Operations Manager to discover all nodes in the cluster and the cluster itself.  
   
-2.  Enable agent proxy on all cluster nodes. For more information, see [How to Configure a Proxy for Agentless Monitoring](agentless-monitoring-in-operations-manager.md#how-to-configure-a-proxy-for-agentless-monitoring).  
+2.  Enable agent proxy on all cluster nodes. For more information, see [How to Configure a Proxy for Agentless Monitoring](../../scom/agentless-monitoring-in-operations-manager.md#how-to-configure-a-proxy-for-agentless-monitoring).  
   
 When discovery occurs, each physical node of the cluster is displayed in the Operations Manager console in the **Agent Managed** pane; the cluster is displayed in the **Agentless Managed** pane. The cluster may show as "not monitored" if you have not imported the Windows Failover Cluster management pack at a minimum, or depending on what cluster-aware application is deployed in the cluster, such as Microsoft Hyper-V, Exchange Server, or SQL Server.  Once you install the management pack for that workload, you will be able to view additional monitoring information which contains monitors that specifically target the cluster object.  Review the management pack deployment guide to understand what configuration steps are required and what monitoring information is discovered and reported.    
 

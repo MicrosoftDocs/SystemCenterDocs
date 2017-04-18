@@ -33,10 +33,10 @@ To change an agentless-managed computer to an agent-managed computer, do the fol
   
 1.  Delete the agentless-managed computer from the management group by right-clicking the computer in **Agentless Managed** in the **Administration** workspace and then clicking **Delete**.  
   
-2.  Deploy the agent to the computer. For more information, see [managing discovery and agents](managing-discovery-and-agents.md).  
+2.  Deploy the agent to the computer. For more information, see [managing discovery and agents](../om/manage/managing-discovery-and-agents.md).  
   
 ## Agentless monitoring compared to Agentless Exception Monitoring  
-Agentless monitoring provides monitoring of computers without agents by using a proxy agent and applying those management packs that support agentless monitoring. Agentless Exception Monitoring (AEM) redirects hardware, operating system, and application crash information to Operations Manager, which can aggregate, view, and report on error reports that are sent by the Windows Error Reporting service. For information on AEM, see [Client monitoring using Agentless Exception Monitoring in Operations Manager](client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md).  
+Agentless monitoring provides monitoring of computers without agents by using a proxy agent and applying those management packs that support agentless monitoring. Agentless Exception Monitoring (AEM) redirects hardware, operating system, and application crash information to Operations Manager, which can aggregate, view, and report on error reports that are sent by the Windows Error Reporting service. For information on AEM, see [Client monitoring using Agentless Exception Monitoring in Operations Manager](../om/manage/client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md).  
   
 You can monitor a computer without an agent by using either agentless monitoring, AEM, or both.  
 
@@ -133,7 +133,7 @@ You might also configure a computer to act as a proxy to support specific featur
 > [!NOTE]  
 > If a proxy agent is removed from management, its agentless systems are no longer managed.  
   
-Both the agentless-managed system and its proxy need to have access to the managing server through any firewalls. For more information about interacting with firewalls, see [Configuring a firewall for Operations Manager](../../scom/plan-security-config-firewall.md).  
+Both the agentless-managed system and its proxy need to have access to the managing server through any firewalls. For more information about interacting with firewalls, see [Configuring a firewall for Operations Manager](plan-security-config-firewall.md).  
   
 1.  In the **Administration** workspace, click **Agent Managed**, right-click the computer, and then click **Properties**.  
   
@@ -163,5 +163,5 @@ Both the agentless-managed system and its proxy need to have access to the manag
 
 ## Next steps
   
-Monitoring of applications, features, and services are enabled by importing management packs. See [Using Management Packs](Using-Management-Packs.md) for an explanation of what management packs do, and how to import and manage them.
+Monitoring of applications, features, and services are enabled by importing management packs. See [Using Management Packs](../om/manage/using-management-packs.md) for an explanation of what management packs do, and how to import and manage them.
   
