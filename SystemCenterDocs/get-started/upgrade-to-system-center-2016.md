@@ -54,7 +54,7 @@ The following topics provide detailed considerations for each component.
 -    [Upgrade to System Center 2016 - Data Protection Manager](../dpm/upgrade-to-dpm-2016.md).
 -    [Upgrade to System Center 2016 - Operations Manager](../om/deploy/upgrading-to-system-center-2016-operations-manager.md)
 -    [Upgrade to System Center 2016 - Orchestrator](../orchestrator/upgrade-to-orchestrator.md)
--    [Upgrade to System Center 2016 - Service Manager](../sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md)
+-    [Upgrade to System Center 2016 - Service Manager](../scsm/upgrade-environment.md)
 -    [Upgrade to System Center 2016 - Service Management Automation](../sma/deploy/how-to-upgrade-from-a-previous-version-of-service-management-automation.md)
 -    [Upgrade to System Center 2016 - Virtual Machine Manager](../vmm/deploy/deploy-upgrade.md)
 -    [Upgrade to System Center 2016 - Service Provider Foundation](../spf/deploy/deploy-upgrade-spf.md)
