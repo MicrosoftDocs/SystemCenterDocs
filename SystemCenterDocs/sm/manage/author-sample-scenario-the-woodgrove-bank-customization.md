@@ -160,7 +160,7 @@ Ken uses this procedure to set the **Computer Name** and **Group Name** properti
 5.  Click **Activity ID**, and click the ellipsis button \(**...**\) that appears next to the property. On the left side of the dialog box, click **Use a class property**, and then, in the property list, click **ID \(Internal\)**. Click **OK**.  
 6.  In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
 
-For general information about these steps, see [How to Set an Activity Property to Use a Value from the Trigger Class](author-how-to-set-an-activity-property-to-use-a-value-from-the-trigger-class.md) and [How to Set an Activity Property to a Constant Value](author-configuring-the-way-activities-manage-and-pass-information.md).  
+For general information about these steps, see [How to Set an Activity Property to Use a Value from the Trigger Class](author-how-to-set-an-activity-property-to-use-a-value-from-the-trigger-class.md) and [How to Set an Activity Property to a Constant Value](../../scsm/configure-activities-information.md).  
 
 ## Step 4 - Move the assembly files to the Service Manager console
 

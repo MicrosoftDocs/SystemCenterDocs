@@ -739,7 +739,7 @@
 ##### Create workflows for IT processes
 ###### [Manage workflows with the Authoring Tool](scsm/manage-workflows-auth-tool.md)
 ###### [Add or remove workflow activities](scsm/add-workflow-activities.md)
-###### [Configure the way activities manage and pass information](sm/manage/author-configuring-the-way-activities-manage-and-pass-information.md)
+###### [Configure the way activities manage and pass information](scsm/configure-activities-information.md)
 ##### [Deploy a workflow to Service Manager using the Authoring Tool](sm/manage/author-how-to-deploy-a-workflow-to-service-manager.md)
 ##### [Configure the Activities Toolbox in the Authoring Tool](sm/manage/author-configuring-the-activities-toolbox.md)
 ##### [Authoring Tool workflow activity reference](sm/manage/author-workflow-activity-reference.md)
