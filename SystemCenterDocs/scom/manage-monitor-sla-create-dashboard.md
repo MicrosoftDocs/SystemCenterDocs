@@ -18,7 +18,7 @@ ms.assetid: 08ea756b-01dd-4f6c-8326-4fec3ab3706e
 
 After you configure a service level objective, you can create a service level dashboard view to monitor the service level objective. The service level dashboard view displays a grid of service levels and a grid of service level objectives grid which lists the various objectives which have a goal or target value and whether success is either above or below that target value for the currently selected SLA/instance. When you select an objective in the **Service Level Objectives** grid, a gauge and chart is displayed, as shown in the following image.  
   
-![example of service level dashboard](../media/om2016-operations-console-sladashboard.png)  
+![example of service level dashboard](./media/manage-monitor-sla-create-dashboard/om2016-operations-console-sladashboard.png)  
   
 The gauge will show the average actual value, along with the target value and a indication as to whether the value and goal relationship corresponds to success (green) or failure (red). The chart will show a time history of the actual values, which will be a function of the aggregation of the values in the data warehouse, which will depend on the timeframe of the configured dashboard, as to whether the values come from the Hourly or Daily aggregation table.  
   
@@ -44,6 +44,6 @@ The gauge will show the average actual value, along with the target value and a 
   
 ## Next steps
 
-- Learn how to create a service level objective to measure service availability of an application or a set of grouped computers for your service level dashboard by reviewing [Monitoring Service Level Objectives by Using Operations Manager](../../scom/manage-monitor-sla-overview.md).
+- Learn how to create a service level objective to measure service availability of an application or a set of grouped computers for your service level dashboard by reviewing [Monitoring Service Level Objectives by Using Operations Manager](manage-monitor-sla-overview.md).
  
-- See [Running a Service Level Tracking Report](running-a-service-level-tracking-report.md), to view the service level objective over time to verify the organization is delivering against availability targets defined in your SLAs.  
+- See [Running a Service Level Tracking Report](../om/manage/running-a-service-level-tracking-report.md), to view the service level objective over time to verify the organization is delivering against availability targets defined in your SLAs.  

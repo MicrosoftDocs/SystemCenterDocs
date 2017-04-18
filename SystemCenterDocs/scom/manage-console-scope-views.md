@@ -231,7 +231,7 @@ Widgets in a dashboard view can display data for a particular target class or gr
 > [!NOTE]  
 > When you create a dashboard view that includes a widget that displays data for a target class that contains instances (a non-singleton class), that dashboard view cannot be imported into other management groups.  
   
-You can also create a service level dashboard view to track data for service level objectives that you create. For more information, see [Creating a Service Level Dashboard](../om/manage/creating-a-service-level-dashboard.md).  
+You can also create a service level dashboard view to track data for service level objectives that you create. For more information, see [Creating a Service Level Dashboard](manage-monitor-sla-create-dashboard.md).  
   
 1.  In the Operations console, click **My Workspace**.  
   

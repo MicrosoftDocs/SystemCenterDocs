@@ -54,4 +54,4 @@ Use the following steps to generate a Service Level Tracking Summary report.
 
 - Learn how to create a service level objective to measure service availability of an application or a set of grouped computers for your service level dashboard by reviewing [Monitoring Service Level Objectives by Using Operations Manager](../../scom/manage-monitor-sla-overview.md).
 
-- [Create a Service Level Dashboard](creating-a-service-level-dashboard.md) to view the service level objective and verify the organization is delivering against availability targets defined in your SLAs.
+- [Create a Service Level Dashboard](../../scom/manage-monitor-sla-create-dashboard.md) to view the service level objective and verify the organization is delivering against availability targets defined in your SLAs.
