@@ -69,7 +69,7 @@ You can use the following procedures to configure notification channels and vali
 You can use the following procedures to create notification templates for many types of information records or work items that Service Manager records or keeps track of, such as incidents, change requests, activities, release records, and configuration items. After you create the notification templates, you can use a notification subscription to send email messages based on the templates. The notification template determines the type and format of the messages to send.
 
 > [!NOTE]
-> Manually copying and pasting substitution strings from other notification templates will not generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you are creating or updating. For more information about using substitution strings in notification templates, see [About Substitution Strings in Notification Templates](../sm/manage/admin-about-substitution-strings-in-notification-templates.md).
+> Manually copying and pasting substitution strings from other notification templates will not generally work. Therefore, you should avoid copying them to prevent errors. Instead, you can easily browse for and insert available substitution strings into any notification template that you are creating or updating. For more information about using substitution strings in notification templates, see [About Substitution Strings in Notification Templates](sub-strings.md).
 
 The following two templates are prerequisites for other procedures:
 
