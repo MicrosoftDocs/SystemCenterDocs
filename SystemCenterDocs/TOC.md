@@ -414,7 +414,7 @@
 ###### [Hewlett Packard Integrated Lights-Out Activities](orchestrator/hp-ilo-and-oa-activities.md)
 #######[Run ilo command](orchestrator/run-ilo-command.md)
 #######[Run oa command](orchestrator/run-oa-command.md)
-##### [Hewlett Packard Operations Manager](orch/manage/hp-operations-manager-integration-pack.md)
+##### [Hewlett Packard Operations Manager](orchestrator/hp-operations-manager-integration-pack.md)
 ###### [Hewlett Packard Operations Manager Activities](orch/manage/hp-operations-manager-activities.md)
 #######[Acknowledge message](orch/manage/acknowledge-message.md)
 #######[Add annotation to message](orch/manage/add-annotation-to-message.md)
