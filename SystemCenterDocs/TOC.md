@@ -393,7 +393,7 @@
 ####### [Delete Item](orchestrator/delete-item.md)
 ####### [Find Appointment](orchestrator/find-appointments.md)
 ####### [Forward Item](orchestrator/forward-item.md)
-####### [Get Item](orch/manage/get-item.md)
+####### [Get Item](orchestrator/get-item.md)
 ####### [Monitor Item](orch/manage/monitor-item.md)
 ####### [Move or Copy Item](orch/manage/move-or-copy-item.md)
 ####### [Reply to Email](orch/manage/reply-to-e-mail.md)
