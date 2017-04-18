@@ -332,7 +332,7 @@
 #######[Delete storage account](orchestrator/delete-storage-account.md)
 #######[Delete vm data disk](orchestrator/delete-vm-data-disk.md)
 #######[Delete vm disk](orchestrator/delete-vm-disk.md)
-#######[Delete vm instance](orch/manage/delete-vm-instance.md)
+#######[Delete vm instance](orchestrator/delete-vm-instance.md)
 #######[Download blob](orch/manage/download-blob.md)
 #######[Get deployment](orch/manage/get-deployment.md)
 #######[Get operating systems](orch/manage/get-operating-systems.md)
