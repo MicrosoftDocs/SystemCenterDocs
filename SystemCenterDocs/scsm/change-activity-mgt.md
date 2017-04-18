@@ -71,9 +71,9 @@ Change request templates store commonly used settings and apply the information 
 
 ## Create a manual activity template
 
-Use the following procedures to create a manual activity template and then validate it. Manual activity templates help ensure that all manual activities are assigned to the person who is the activity implementer. After you create the manual activity template, you create a workflow that applies the template. For more information about how to create a workflow, see [How to Configure Incident Workflows](admin-how-to-configure-incident-workflows.md).
+Use the following procedures to create a manual activity template and then validate it. Manual activity templates help ensure that all manual activities are assigned to the person who is the activity implementer. After you create the manual activity template, you create a workflow that applies the template. For more information about how to create a workflow, see [How to Configure Incident Workflows](../sm/manage/admin-how-to-configure-incident-workflows.md).
 
-In the following procedure, you will create a manual activity template named "Set *named user* as the Activity Implementer". This manual activity template is used in the [How to Configure Activity Management Workflows](admin-how-to-configure-activity-management-workflows.md) procedure.
+In the following procedure, you will create a manual activity template named "Set *named user* as the Activity Implementer". This manual activity template is used in the [How to Configure Activity Management Workflows](../sm/manage/admin-how-to-configure-activity-management-workflows.md) procedure.
 
 ### To create a manual activity template
 
@@ -144,8 +144,8 @@ Use the following procedures to set the priority of all standard change requests
 
 Before you can complete the steps in the following procedures, you have to create the following templates:
 
--   **Set Standard Change Requests to Low Priority**: For more information, see the procedure "To create a priority-modifying template" in [How to Create Change Request Templates](admin-how-to-create-change-request-templates.md).
--   **New Standard Change Request Received Template**: For more information, see the procedure "To create a notification template for change requests" in [How to Create Notification Templates](admin-how-to-create-notification-templates.md).
+-   **Set Standard Change Requests to Low Priority**: For more information, see the procedure "To create a priority-modifying template" in [How to Create Change Request Templates](../sm/manage/admin-how-to-create-change-request-templates.md).
+-   **New Standard Change Request Received Template**: For more information, see the procedure "To create a notification template for change requests" in [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).
 
 ### To create a workflow to set all standard change requests to low
 
@@ -184,8 +184,8 @@ Use the following procedures to automatically assign all unassigned manual activ
 
 Before you can complete the steps in the following procedures, you have to create the following templates:
 
--   **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](admin-how-to-create-a-manual-activity-template.md).
--   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](admin-how-to-create-notification-templates.md).
+-   **Set *named user* as the Activity Implementer**: For more information, see [How to Create a Manual Activity Template](../sm/manage/admin-how-to-create-a-manual-activity-template.md).
+-   **New Activity Assigned Received Template**: For more information, see [How to Create Notification Templates](../sm/manage/admin-how-to-create-notification-templates.md).
 
 The new workflow you are about to create applies the **Set *named user* as the Activity Implementer** template, which assigns the named user all the activities that do not have a designated activity implementer. The **New Activity Assigned Received Template** sends notification to a user if the email notification channel is configured.
 
