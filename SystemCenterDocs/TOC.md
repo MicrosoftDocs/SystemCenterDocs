@@ -263,7 +263,7 @@
 #### [How to change Orchestrator user groups](orch/manage/how-to-change-the-orchestrator-users-group.md)
 #### [How to configure Orchestrator database connections](orchestrator/how-to-configure-orchestrator-database-connections.md)
 #### [How to optimize performance of .Net activities](orch/get-started/how-to-optimize-dot-net-activities.md)
-#### [How to configure runbook throttling](orch/manage/how-to-configure-runbook-throttling.md)
+#### [How to configure runbook throttling](orchestrator/how-to-configure-runbook-throttling.md)
 #### [How to recover a database](orch/manage/how-to-recover-a-database.md)
 #### [How to recover web components](orch/manage/how-to-recover-web-components.md)
 #### [How to use the integration toolkit](orch/manage/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)

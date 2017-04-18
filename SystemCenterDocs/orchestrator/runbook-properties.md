@@ -145,7 +145,7 @@ The following limitations apply:
 
 -   You cannot run simultaneous requests for runbooks that start with Monitoring activities. If you try to change the maximum number of simultaneous requests for these runbooks, the Runbook Designer resets the **Maximum number of simultaneous jobs** value to 1 and displays an error message.  
 
--   A runbook server runs simultaneous requests for runbooks up to the maximum processing limit. To change the maximum processing limit, see [How to Configure Runbook Throttling](../orch/manage/how-to-configure-runbook-throttling.md).  
+-   A runbook server runs simultaneous requests for runbooks up to the maximum processing limit. To change the maximum processing limit, see [How to Configure Runbook Throttling](how-to-configure-runbook-throttling.md).  
 
 -   Do not create simultaneous requests for runbooks that contain Modify Counter activities. When you run different copies of the same runbook at the same time that modify \(set, reset, increment, or decrement\), a Counter can cause the Counter value to become unreliable. You can read the value of Counters in runbooks that run at the same time.  
 

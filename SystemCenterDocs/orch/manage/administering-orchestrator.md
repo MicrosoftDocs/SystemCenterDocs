@@ -40,7 +40,7 @@ System Center 2016 - Orchestrator is a workflow management solution for the data
 
     Describes how to configure a runbook server to perform optimally with activities that require Microsoft .NET libraries.
 
--   [How to Configure Runbook Throttling](../manage/how-to-configure-runbook-throttling.md)
+-   [How to Configure Runbook Throttling](../../orchestrator/how-to-configure-runbook-throttling.md)
 
     Describes how to use the Runbook Server Runbook Throttling tool to change the maximum number of runbooks that can run on a runbook server.
 
