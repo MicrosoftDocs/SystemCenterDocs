@@ -746,7 +746,7 @@
 ###### [Guidelines for creating custom activities in the Authoring Tool](scsm/create-custom-activities.md)
 ###### [Set an activity's status to completed for the Authoring Tool sample activity](scsm/activity-status-completed.md)
 #### [Woodgrove Bank customization sample scenario for the Authoring Tool](scsm/woodgrove-scenario.md)
-#### [Customize a column title in a view for the authoring views sample scenario](sm/manage/author-views-sample-scenario-how-to-customize-a-column-title-in-a-view.md)
+#### [Customize a column title in a view for the authoring views sample scenario](scsm/customize-column-title.md)
 #### [Include dashboards and reports in custom views for the Authoring Tool reports sample scenario](sm/manage/author-reports-sample-scenario-how-to-include-dashboards-and-reports-in-custom-views.md)
 ### [Glossary for System Center 2016 - Service Manager](scsm/glossary.md)
 ## [Virtual Machine Manager (VMM)](VMM/vmm.md)
