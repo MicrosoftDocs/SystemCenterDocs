@@ -607,7 +607,7 @@
 ## [Service Manager](scsm/service-manager.md)
 ### [What's new in Service Manager](scsm/whats-new.md)
 ### [Planning for Service Manager](scsm/plan-sm.md)
-#### [Plan for Service Manager deployment](scsm/plan-deployment.md)
+#### [Plan for Service Manager deployment](spf/plan-deployment.md)
 ##### [Service Manager parts](scsm/sm-parts.md)
 ##### [System requirements](scsm/sm-sys-reqs.md)
 ##### [Software requirements](scsm/sm-software-reqs.md)
