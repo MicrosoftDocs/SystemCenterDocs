@@ -218,7 +218,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Restart VM Instance](../orch/manage/re../orch/manage/start-vm-instance.md)
 
-[Rollback Update or Upgrade](../orch/manage/rollback-update-or-upgrade.md)
+[Rollback Update or Upgrade](rollback-update-or-upgrade.md)
 
 [Shutdown VM Instance](../orch/manage/shutdown-vm-instance.md)
 
