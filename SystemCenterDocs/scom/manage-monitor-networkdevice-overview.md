@@ -118,7 +118,7 @@ SNMP trap rules are not supported for SNMP v3 devices.
   
 In the discovery rule configuration, you specify whether Operations Manager will use ICMP, SNMP, or both to communicate with the network device. The network device must support the protocol that you specify. When the discovery rule runs, Operations Manager attempts to contact the network devices that you specify, using the protocol or protocols that you specified. If you specify that a device uses both ICMP and SNMP, Operations Manager must be able to contact the device by using both methods or discovery will fail. If you specify ICMP as the only protocol to use, discovery is limited to the specified device and monitoring is limited to whether the device is online or offline.  
   
-Credentials are also needed to communicate with the device. You associate each discovery rule with Run As accounts that supply the community string (for SNMP v1 and v2 devices) or access credentials (SNMP v3) to Operations Manager. For more information, see [Run As Accounts for Network Monitoring in Operations Manager](../om/manage/run-as-accounts-for-network-monitoring-in-operations-manager.md).  
+Credentials are also needed to communicate with the device. You associate each discovery rule with Run As accounts that supply the community string (for SNMP v1 and v2 devices) or access credentials (SNMP v3) to Operations Manager. For more information, see [Run As Accounts for Network Monitoring in Operations Manager](manage-monitor-networkdevice-authentication.md).  
   
 After Operations Manager successfully accesses a specified network device, if you selected recursive discovery, it attempts to discover other network devices that the specified device knows about through the device's ARP table, its IP address table, or the topology MIB files.  
   
@@ -150,7 +150,7 @@ After discovery is complete, the management server resource pool that you specif
 
 - Learn [How to discover network devices in Operations Manager](manage-monitor-networkdevice-overview.md).  
 
-- Review [Run As accounts for network monitoring in Operations Manager](../om/manage/run-as-accounts-for-network-monitoring-in-operations-manager.md) to understand how to configure the Run As accounts before configuring the Run As accounts or network device discovery rules.  
+- Review [Run As accounts for network monitoring in Operations Manager](manage-monitor-networkdevice-authentication.md) to understand how to configure the Run As accounts before configuring the Run As accounts or network device discovery rules.  
 
 - To view information about the network devices you are monitoring, see [Viewing Network Devices and Data in Operations Manager](../om/manage/viewing-network-devices-and-data-in-operations-manager.md).  
   

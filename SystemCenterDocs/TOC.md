@@ -184,7 +184,7 @@
 ##### [Monitoring networks with Operations Manager](scom/manage-monitor-networkdevice-overview.md)
 ###### [How to discover network devices](scom/manage-monitor-networkdevice-overview.md)
 ###### [Network device discovery settings](scom/manage-monitor-networkdevice-discovery-settings.md)
-###### [Run As accounts for network monitoring](om/manage/run-as-accounts-for-network-monitoring-in-operations-manager.md)
+###### [Run As accounts for network monitoring](scom/manage-monitor-networkdevice-authentication.md)
 ###### [How to delete or restore a network device](om/manage/how-to-delete-or-restore-a-network-device-in-operations-manager.md)
 ###### [How to configure monitoring of network devices](om/manage/how-to-configure-monitoring-of-network-devices.md)
 ###### [Viewing network devices and data](om/manage/viewing-network-devices-and-data-in-operations-manager.md)
