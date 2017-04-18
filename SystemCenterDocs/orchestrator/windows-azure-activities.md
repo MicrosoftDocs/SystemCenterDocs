@@ -156,7 +156,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Delete Container](delete-container.md)
 
-[Delete Deployment](../orch/manage/delete-deployment.md)
+[Delete Deployment](delete-deployment.md)
 
 [Delete Management Certificate](../orch/manage/delete-management-certificate.md)
 
