@@ -135,7 +135,7 @@
 ##### [Not monitored and gray agents](scom/manage-agents-not-healthy.md)
 ##### [How to view all rules and monitors running on agent-managed computer](scom/manage-agents-identify-all-running-workflows.md)
 ##### [Finding data and objects in the consoles](scom/manage-console-finding-data.md)
-###### [Using advanced search](om/manage/using-advanced-search.md)
+###### [Using advanced search](scom/manage-console-using-adv-search.md)
 ##### [Configure SharePoint to view Operations Manager data](om/manage/using-sharepoint-to-view-operations-manager-data.md)
 ##### [Using views and dashboards](scom/manage-console-using-views-dashboards.md)
 ###### [View types](om/manage/view-types-in-operations-manager.md)

@@ -72,6 +72,6 @@ The following table lists examples of using advanced search to find objects in O
   
 ## Next steps
 
-To filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need, see [Finding Data and Objects in the Operations Manager Consoles](../../scom/manage-console-finding-data.md).
+To filter your view of monitoring data so that you can find the exact monitoring object or group of objects that you need, see [Finding Data and Objects in the Operations Manager Consoles](manage-console-finding-data.md).
 
   

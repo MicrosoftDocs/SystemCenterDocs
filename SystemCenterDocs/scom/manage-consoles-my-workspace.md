@@ -75,7 +75,7 @@ You can save useful searches in My Workspace to run at any time.
   
     -   Views  
   
-    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](../om/manage/using-advanced-search.md).  
+    Each object type will display a unique set of criteria for your search. For more information on advanced search criteria, see [Using Advanced Search](manage-console-using-adv-search.md).  
   
 4.  In the displayed criteria for the object type, select the condition that you want to search against.  
   
