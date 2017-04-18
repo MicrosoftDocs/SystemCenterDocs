@@ -139,4 +139,4 @@ This integration pack adds the HP Operations Manager category to the **Activitie
 
 [Update Annotation](update-annotation.md)
 
-[Update Message](../orch/manage/update-message.md)
+[Update Message](update-message.md)

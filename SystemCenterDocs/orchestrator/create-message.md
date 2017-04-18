@@ -106,4 +106,4 @@ The Integration Pack for HP Operations Manager integration contains the followin
 
 [Update Annotation](update-annotation.md)
 
-[Update Message](../orch/manage/update-message.md)
+[Update Message](update-message.md)
