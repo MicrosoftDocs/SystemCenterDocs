@@ -295,7 +295,7 @@
 #######[Remove Computer From Group](orchestrator/remove-computer-from-group.md)
 #######[Remove Group From Group](orchestrator/remove-group-from-group.md)
 #######[Remove User From Group](orchestrator/remove-user-from-group.md)
-#######[Rename Group](orch/manage/rename-group.md)
+#######[Rename Group](orchestrator/rename-group.md)
 #######[Rename User](orch/manage/rename-user.md)
 #######[Reset User Password](orch/manage/reset-user-password.md)
 #######[Unlock User](orch/manage/unlock-user.md)
