@@ -124,7 +124,7 @@ This integration pack adds the HP Service Manager category to the **Activity** p
 
 [Create Entry](../../orchestrator/create-entry.md)
 
-[Get Entry](get-entry.md)
+[Get Entry](../../orchestrator/get-entry.md)
 
 [Monitor Entry](monitor-entry.md)
 

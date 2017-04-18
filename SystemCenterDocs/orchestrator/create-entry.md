@@ -37,7 +37,7 @@ The Integration Pack for HP Service Manager contains the following additional ac
 
 [Close Entry](close-entry.md)
 
-[Get Entry](../orch/manage/get-entry.md)
+[Get Entry](get-entry.md)
 
 [Monitor Entry](../orch/manage/monitor-entry.md)
 

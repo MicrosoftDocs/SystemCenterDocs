@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Get Entry activity is used in a runbook to retrieve existing entries from HP Service Manager.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](../../orchestrator/service-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](../orch/manage/service-manager-activities.md).
 
 ## Get Entry Required Properties
 
@@ -34,10 +34,10 @@ The following tables list the required properties and published data for this ac
 
 The Integration Pack for HP Service Manager contains the following additional activities:
 
-[Close Entry](../../orchestrator/close-entry.md)
+[Close Entry](close-entry.md)
 
-[Create Entry](../../orchestrator/create-entry.md)
+[Create Entry](create-entry.md)
 
-[Monitor Entry](monitor-entry.md)
+[Monitor Entry](../orch/manage/monitor-entry.md)
 
-[Update Entry](update-entry.md)
+[Update Entry](../orch/manage/update-entry.md)

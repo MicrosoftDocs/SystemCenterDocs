@@ -433,7 +433,7 @@
 ##### [HP Service Manager Activities](orchestrator/service-manager-activities.md)
 ###### [Close entry](orchestrator/close-entry.md)
 ###### [Create entry](orchestrator/create-entry.md)
-###### [Get entry](orch/manage/get-entry.md)
+###### [Get entry](orchestrator/get-entry.md)
 ###### [Monitor entry](orch/manage/monitor-entry.md)
 ###### [Update entry](orch/manage/update-entry.md)
 ##### [Netcool Integration Pack](orchestrator/tivoli-netcool-omnibus-integration-pack.md)

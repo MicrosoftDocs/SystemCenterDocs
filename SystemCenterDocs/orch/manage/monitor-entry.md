@@ -48,6 +48,6 @@ The Integration Pack for HP Service Manager contains the following additional ac
 
 [Create Entry](../../orchestrator/create-entry.md)
 
-[Get Entry](get-entry.md)
+[Get Entry](../../orchestrator/get-entry.md)
 
 [Update Entry](update-entry.md)
