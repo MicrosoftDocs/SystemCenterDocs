@@ -53,4 +53,4 @@ To create a command notification channel, you need the following information:
 
 * To create an email notification channel, see [How to enable an email notification channel](../../scom/manage-notifications-create-email-channel.md). 
 
-* To create an instant message notification channel see, [How to enable an instant message notification channel](how-to-enable-an-instant-message-notification-channel.md).
+* To create an instant message notification channel see, [How to enable an instant message notification channel](../../scom/manage-notifications-create-im-channel.md).

@@ -46,7 +46,7 @@ Before you begin, gather the following information from your instant message ser
   
 7.  Click **Next**.  
   
-8.  In the **Default instant messaging notification format** area, in the **IM message** box, specify the text that is sent to notification subscribers. The **IM message** box contains a default message that includes text and variables. You can edit the default message or delete it and replace it with another message. You can click the right arrow next to the **IM message** box for a full list of available variables. For more information, see [How to customize message content for notifications](how-to-customize-message-content-for-notifications.md).  
+8.  In the **Default instant messaging notification format** area, in the **IM message** box, specify the text that is sent to notification subscribers. The **IM message** box contains a default message that includes text and variables. You can edit the default message or delete it and replace it with another message. You can click the right arrow next to the **IM message** box for a full list of available variables. For more information, see [How to customize message content for notifications](../om/manage/how-to-customize-message-content-for-notifications.md).  
   
 9. In the **Encoding** box, select the text format that your IM server and notification subscribers use for transmission. By default, Unicode (UTF-8) is used.  
   
@@ -54,12 +54,12 @@ Before you begin, gather the following information from your instant message ser
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)
 
-* Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.    
+* Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.    
 
-* To create an email notification channel, see [How to enable an email notification channel](../../scom/manage-notifications-create-email-channel.md). 
+* To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md). 
 
-* To create a command channel notification, see [How to enable a command notification channel](how-to-enable-a-command-notification-channel.md).
+* To create a command channel notification, see [How to enable a command notification channel](../om/manage/how-to-enable-a-command-notification-channel.md).
 
-* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](how-to-enable-a-text-message-notification-channel.md).
+* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](../om/manage/how-to-enable-a-text-message-notification-channel.md).
