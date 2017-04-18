@@ -54,7 +54,7 @@ Hyper-converged clusters have the following characteristics:
 - After S2D CSV volumes are available, you provision them as you would any  other Hyper-V deployment.
 - Figure 1 illustrates the hyper-converged deployment stack.
 
-![Hyper-converged](../media/storage-spaces-hyper-converged.png)
+![Hyper-converged](./media/storage-spaces-overview/storage-spaces-hyper-converged.png)
 
 **Figure 1: Hyper-converged deployment**
 
@@ -68,4 +68,4 @@ A disaggregated cluster has the following characteristics:
 
 ## Next steps
 
-- [Deploy Storage Spaces Direct](../storage-spaces-deploy.md) in the VMM fabric
+- [Deploy Storage Spaces Direct](storage-spaces-deploy.md) in the VMM fabric
