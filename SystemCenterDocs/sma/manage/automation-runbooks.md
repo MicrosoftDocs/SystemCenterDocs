@@ -25,7 +25,7 @@ Runbooks in Service Management Automation automate management tasks in Windows A
 
     Information on creating your own runbooks to automate management tasks with Windows Azure Pack resources.
 
--   [Service Management Automation sample runbooks](Service-Management-Automation-sample-runbooks.md)
+-   [Service Management Automation sample runbooks](../sample-runbooks.md)
 
     Sample runbooks to illustrate techniques and best practices for authoring runbooks.
 

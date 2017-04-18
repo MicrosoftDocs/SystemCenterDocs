@@ -883,7 +883,7 @@
 #### [Working with Integration Modules](SMA/Manage/Working-with-Integration-Modules.md)
 ### [Automation Runbooks](SMA/Manage/Automation-Runbooks.md)
 #### [Service Management Automation system runbooks](SMA/Manage/Service-Management-Automation-system-runbooks.md)
-#### [Service Management Automation sample runbooks](SMA/Manage/Service-Management-Automation-sample-runbooks.md)
+#### [Service Management Automation sample runbooks](sma/sample-runbooks.md)
 #### [Runbook Operations](SMA/Manage/Runbook-Operations.md)
 ##### [Runbook Settings](SMA/Manage/Runbook-Settings.md)
 ##### [Designating a Runbook Worker](SMA/Manage/designating-a-runbook-worker.md)
