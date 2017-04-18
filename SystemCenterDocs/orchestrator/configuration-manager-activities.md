@@ -226,7 +226,7 @@ This integration pack adds the Microsoft Configuration Manager category to the A
 - [Deploy Software Update](deploy-software-update.md)
 - [Deploy Task Sequence](deploy-task-sequence.md)
 - [Get Collection Member](get-collection-member.md)
-- [Get Deployment Status](../orch/manage/get-deployment-status.md)
+- [Get Deployment Status](get-deployment-status.md)
 - [Perform Client Action](../orch/manage/perform-client-action.md)
 - [Query Configuration Manager](../orch/manage/query-configuration-manager.md)
 - [Update Collection Membership](../orch/manage/update-collection-membership.md)
