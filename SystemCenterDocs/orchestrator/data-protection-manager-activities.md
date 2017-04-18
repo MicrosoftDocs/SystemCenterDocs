@@ -124,7 +124,7 @@ The DPM Integration Pack adds the **SC 2016 DPM** category to the **Activities**
 
 [Recover SharePoint](recover-sharepoint.md)
 
-[Recover SQL](../orch/manage/recover-sql.md)
+[Recover SQL](recover-sql.md)
 
 [Recover VM](../orch/manage/recover-vm.md)
 

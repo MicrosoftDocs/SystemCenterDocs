@@ -488,7 +488,7 @@
 #######[Get recovery point](orchestrator/get-recovery-point.md)
 #######[Protect data source](orchestrator/protect-data-source.md)
 #######[Recover sharepoint](orchestrator/recover-sharepoint.md)
-#######[Recover sql](orch/manage/recover-sql.md)
+#######[Recover sql](orchestrator/recover-sql.md)
 #######[Recover vm](orch/manage/recover-vm.md)
 #######[Run dpm powershell script](orch/manage/run-dpm-powershell-script.md)
 ##### [Operations Manager](orch/manage/integration-pack-for-operations-manager.md)
