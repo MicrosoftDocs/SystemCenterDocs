@@ -50,4 +50,4 @@ The Integration Pack for HP Service Manager contains the following additional ac
 
 [Get Entry](get-entry.md)
 
-[Update Entry](../orch/manage/update-entry.md)
+[Update Entry](update-entry.md)

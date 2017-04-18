@@ -128,4 +128,4 @@ This integration pack adds the HP Service Manager category to the **Activity** p
 
 [Monitor Entry](monitor-entry.md)
 
-[Update Entry](../orch/manage/update-entry.md)
+[Update Entry](update-entry.md)

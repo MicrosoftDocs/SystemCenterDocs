@@ -41,5 +41,5 @@ The Integration Pack for HP Service Manager contains the following additional ac
 
 [Monitor Entry](monitor-entry.md)
 
-[Update Entry](../orch/manage/update-entry.md)
+[Update Entry](update-entry.md)
 
