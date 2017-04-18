@@ -513,7 +513,7 @@
 #######[Delete relationship](orchestrator/delete-relationship.md)
 #######[Get activity](orchestrator/get-activity.md)
 #######[Get object](orchestrator/get-object.md)
-#######[Get relationship](orch/manage/get-relationship.md)
+#######[Get relationship](orchestrator/get-relationship.md)
 #######[Monitor object](orch/manage/monitor-object.md)
 #######[Update activity](orch/manage/update-activity.md)
 #######[Update object](orch/manage/update-object.md)

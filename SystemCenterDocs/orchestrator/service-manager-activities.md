@@ -145,7 +145,7 @@ The Service Manager Integration Pack adds the **SC 2016 Service Manager** catego
 
 [Get Object](get-object.md)
 
-[Get Relationship](../orch/manage/get-relationship.md)
+[Get Relationship](get-relationship.md)
 
 [Monitor Object](../orch/manage/monitor-object.md)
 

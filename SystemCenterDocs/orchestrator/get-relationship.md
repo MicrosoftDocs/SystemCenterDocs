@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Get Relationship activity is used to generate a list of objects from two different classes that are related by the criteria you specify.
 
-The following published data elements are specific to Get Relationship. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](../../orchestrator/service-manager-published-data.md).
+The following published data elements are specific to Get Relationship. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
 ## Get Relationship Published Data
 
