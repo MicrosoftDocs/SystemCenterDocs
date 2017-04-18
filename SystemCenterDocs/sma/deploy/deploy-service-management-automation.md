@@ -19,7 +19,7 @@ Service Management Automation is a workflow management solution for Windows Azur
 
 ## Deployment topics
 
--   [System requirements for Service Management Automation](System-requirements-for-Service-Management-Automation.md)
+-   [System requirements for Service Management Automation](../system-requirements.md)
 
     Provides an overview of the hardware, software, and security requirements to deploy Service Management Automation.
 

@@ -867,7 +867,7 @@
 ### [Architecture of Service Management Automation](sma/architecture-of-service-management-automation.md)
 ### [Runbook Execution in Service Management Automation](sma/runbook-automation.md)
 ### [Deploy Service Management Automation](sma/Deploy/Deploy-Service-Management-Automation.md)
-#### [System requirements for Service Management Automation](sma/Deploy/System-requirements-for-Service-Management-Automation.md)
+#### [System requirements for Service Management Automation](sma/system-requirements.md)
 #### [How to upgrade from a previous version of Service Management Automation](sma/Deploy/How-to-upgrade-from-a-previous-version-of-Service-Management-Automation.md)
 #### [How to install the Service Management Automation web service](SMA/Deploy/How-to-install-the-Service-Management-Automation-web-service.md)
 #### [How to install the Service Management Automation runbook worker](SMA/Deploy/How-to-install-the-Service-Management-Automation-runbook-worker.md)
