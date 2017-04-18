@@ -131,4 +131,4 @@ After you build a runbook, you can test it before it is run in production. To te
 ## Next steps
 
 - To get step by step instructions for building and testing a sample runbook, see [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook.md)
-- To review guidance and best practices for designing runbook, see [Designing a runbook](designing-a-runbook.md).
+- To review guidance and best practices for designing runbook, see [Designing a runbook](../../orchestrator/designing-a-runbook.md).

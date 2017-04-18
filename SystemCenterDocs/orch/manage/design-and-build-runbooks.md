@@ -22,7 +22,7 @@ This section provides details about how to design, build, and test, runbooks by 
 
 ## Runbooks  
 
--   [Designing a Runbook](../manage/designing-a-runbook.md)  
+-   [Designing a Runbook](../../orchestrator/designing-a-runbook.md)  
 
     Provides design guidance for building runbooks.  
 

@@ -36,7 +36,7 @@ In Orchestrator, different logs are available that provide information about Orc
 
 -   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md))  
 
--   [Designing a Runbook](../manage/designing-a-runbook.md)  
+-   [Designing a Runbook](../../orchestrator/designing-a-runbook.md)  
 
 -   [Building a Runbook](../manage/building-a-runbook.md)  
 

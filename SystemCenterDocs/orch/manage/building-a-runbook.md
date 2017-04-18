@@ -79,6 +79,6 @@ This topic describes the basic process for building a System Center 2016 - Orche
 
 -   [Using Runbooks in System Center 2016 - Orchestrator](../get-started/using-runbooks.md)  
 
--   [Designing a Runbook](../manage/designing-a-runbook.md)  
+-   [Designing a Runbook](../../orchestrator/designing-a-runbook.md)  
 
 -   [How to Test a Runbook](../manage/how-to-test-a-runbook.md)  
