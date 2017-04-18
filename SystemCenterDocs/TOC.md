@@ -398,7 +398,7 @@
 ####### [Move or Copy Item](orchestrator/move-or-copy-item.md)
 ####### [Reply to Email](orchestrator/reply-to-e-mail.md)
 ####### [Send Email](orch/manage/send-e-mail.md)
-####### [Update Item](orch/manage/update-item.md)
+####### [Update Item](orchestrator/update-item.md)
 #### [FTP Integration Pack](orchestrator/ftp-integration-pack.md)
 ##### [FTP Activities](orchestrator/integration-pack-activities.md)
 ###### [Create Folder](orchestrator/create-folder.md)
