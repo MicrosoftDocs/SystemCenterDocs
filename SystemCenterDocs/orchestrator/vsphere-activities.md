@@ -67,7 +67,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Move VM Activity](move-vm-activity.md)
 
-[Reconfigure VM Activity](../orch/manage/reconfigure-vm-activity.md)
+[Reconfigure VM Activity](reconfigure-vm-activity.md)
 
 [Reset VM Activity](../orch/manage/reset-vm-activity.md)
 
