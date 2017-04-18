@@ -26,7 +26,7 @@ Reports in Operations Manager allow you to perform detailed analysis on the oper
   
 -   [How to Run, Save, and Export a Report](../../scom/manage-reports-run-save-export.md)  
   
--   [How to Schedule and Managed Scheduled Reports](how-to-configure-modify-report-schedules.md)  
+-   [How to Schedule and Managed Scheduled Reports](../../scom/manage-reports-config-modify-schedules.md)  
   
 -   [How to Troubleshoot Reports that Return No Data](https://support.microsoft.com/kb/2573329)  
   

@@ -131,7 +131,7 @@
 ###### [Operations Manager report library](scom/manage-reports-installed-during-setup.md)
 ###### [How to create reports](scom/manage-reports-create-reports.md)
 ###### [How to run, save, and export reports](scom/manage-reports-run-save-export.md)
-###### [How to configure and modify report schedules](om/manage/how-to-configure-modify-report-schedules.md)
+###### [How to configure and modify report schedules](scom/manage-reports-config-modify-schedules.md)
 ##### [Not monitored and gray agents](om/manage/not-monitored-and-gray-agents.md)
 ##### [How to view all rules and monitors running on agent-managed computer](om/manage/how-to-view-all-rules-and-monitors-running-on-an-agent-managed-computer.md)
 ##### [Finding data and objects in the consoles](scom/manage-console-finding-data.md)

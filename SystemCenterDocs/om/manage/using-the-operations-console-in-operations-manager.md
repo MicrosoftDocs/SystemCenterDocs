@@ -111,7 +111,7 @@ After you run a report, click **File**, and then click **Save to favorites** to 
 
 You can schedule configured reports to run on a one-time or recurring basis.  
   
-After you run a report, click **File**, and then click **Schedule** to configure the report subscription. For more information, see [How to Configure and Modify Report Schedules](how-to-configure-modify-report-schedules.md).  
+After you run a report, click **File**, and then click **Schedule** to configure the report subscription. For more information, see [How to Configure and Modify Report Schedules](../../scom/manage-reports-config-modify-schedules.md).  
 
 ## Using the Administration workspace
 
