@@ -164,7 +164,7 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 
 [Unlock User](unlock-user.md)
 
-[Update Computer](../orch/manage/update-computer.md)
+[Update Computer](update-computer.md)
 
 [Update Group](../orch/manage/update-group.md)
 
