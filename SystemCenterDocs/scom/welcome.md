@@ -20,23 +20,23 @@ Welcome to System Center 2016 - Operations Manager.  Operations Manager provides
 
 ## Operations Manager documentation
 
--   [Getting Started with System Center 2016 - Operations Manager](get-started/Getting-Started-with-System-Center-Operations-Manager.md)
+-   [Getting Started with System Center 2016 - Operations Manager](../om/get-started/getting-started-with-system-center-operations-manager.md)
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
-- [Planning for System Center 2016 - Operations Manager](plan/plan-summary.md)
+- [Planning for System Center 2016 - Operations Manager](../om/plan/plan-summary.md)
 
     Review information to help you plan the deployment of Operations Manager into your organization
 
--   [Deploying System Center 2016 - Operations Manager](Deploy/Deploying-System-Center-2016-Operations-Manager.md)
+-   [Deploying System Center 2016 - Operations Manager](../om/deploy/deploying-system-center-2016-operations-manager.md)
 
     Read these topics to learn how to deploy Operations Manager in your environment.
 
--   [Initial Monitoring After Operations Manager Is Installed](Manage/Initial-Monitoring-After-Operations-Manager-Is-Installed.md)
+-   [Initial Monitoring After Operations Manager Is Installed](../om/manage/initial-monitoring-after-operations-manager-is-installed.md)
 
     Read these topics to get started with monitoring your environment.
 
--   [System Center 2016 - Operations Manager Operations Guide](Manage/Operations-Manager-Operations-Guide.md)
+-   [System Center 2016 - Operations Manager Operations Guide](../om/manage/operations-manager-operations-guide.md)
 
     Read these topics once you have Operations Manager up and running and are looking for procedures for day to day operations.
 

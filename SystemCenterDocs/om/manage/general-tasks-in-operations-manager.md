@@ -33,7 +33,7 @@ ms.topic: article
 
 ## Other resources  
 
--   [Operations Manager](../welcome-to-operations-manager.md)  
+-   [Operations Manager](../../scom/welcome.md)  
 
 -   [System Center 2016 - Operations Manager Operations Guide](Operations-Manager-Operations-Guide.md)  
 

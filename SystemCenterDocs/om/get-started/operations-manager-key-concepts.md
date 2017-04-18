@@ -135,7 +135,7 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ### Other resources for Operations Manager
 
--   [TechNet Library main page for System Center - Operations Manager](../welcome-to-operations-manager.md)
+-   [TechNet Library main page for System Center - Operations Manager](../../scom/welcome.md)
 
 -   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](../deploy/deploying-system-center-2016-operations-manager.md)
 
