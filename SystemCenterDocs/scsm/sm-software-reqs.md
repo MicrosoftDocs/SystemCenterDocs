@@ -70,4 +70,4 @@ Service Manager does not operate and the services used by Service Manager do not
 
 ## Next steps
 
-- Review [SQL Server requirements](../sm/plan/plan-sql-server-requirements-for-system-center-2016-service-manager.md) to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016 - Service Manager.
+- Review [SQL Server requirements](sm-sql-reqs.md) to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016 - Service Manager.

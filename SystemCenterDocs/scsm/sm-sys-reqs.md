@@ -94,4 +94,4 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 ## Next steps
 - Read [Configurations for deployment scenarios](../sm/plan/plan-configurations-for-deployment-scenarios.md) to learn about the tested limits of Service Manager.
 - Read about Service Manager [hardware performance](../sm/plan/plan-hardware-performance.md).
-- Read about [SQL Server requirements](../sm/plan/plan-sql-server-requirements-for-system-center-2016-service-manager.md).
+- Read about [SQL Server requirements](sm-sql-reqs.md).
