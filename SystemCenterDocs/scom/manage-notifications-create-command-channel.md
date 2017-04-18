@@ -45,12 +45,12 @@ To create a command notification channel, you need the following information:
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](how-to-create-notification-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)
 
-* Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* Create a [notification subscription](../om/manage/how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
 
-* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](../../scom/manage-notifications-create-txt-channel.md).
+* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).
 
-* To create an email notification channel, see [How to enable an email notification channel](../../scom/manage-notifications-create-email-channel.md). 
+* To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md). 
 
-* To create an instant message notification channel see, [How to enable an instant message notification channel](../../scom/manage-notifications-create-im-channel.md).
+* To create an instant message notification channel see, [How to enable an instant message notification channel](manage-notifications-create-im-channel.md).

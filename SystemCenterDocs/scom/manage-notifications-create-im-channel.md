@@ -60,6 +60,6 @@ Before you begin, gather the following information from your instant message ser
 
 * To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md). 
 
-* To create a command channel notification, see [How to enable a command notification channel](../om/manage/how-to-enable-a-command-notification-channel.md).
+* To create a command channel notification, see [How to enable a command notification channel](manage-notifications-create-command-channel.md).
 
 * To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).

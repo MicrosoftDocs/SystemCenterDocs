@@ -45,6 +45,6 @@ To configure alert notifications for System Center 2016 - Operations Manager, yo
 
 * To create an email notification channel, see [How to enable an email notification channel](manage-notifications-create-email-channel.md). 
 
-* To create a command channel notification, see [How to enable a command notification channel](../om/manage/how-to-enable-a-command-notification-channel.md).
+* To create a command channel notification, see [How to enable a command notification channel](manage-notifications-create-command-channel.md).
 
 * To create an instant message notification channel see, [How to enable an instant message notification channel](manage-notifications-create-im-channel.md).

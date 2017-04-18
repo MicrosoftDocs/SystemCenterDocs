@@ -40,7 +40,7 @@ An Operations Manager administrator must define the notification channels and if
   
 -   [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md)  
   
--   [How to enable a command notification channel](../om/manage/how-to-enable-a-command-notification-channel.md)  
+-   [How to enable a command notification channel](manage-notifications-create-command-channel.md)  
   
 -   [How to create notification subscribers](../om/manage/how-to-create-notification-subscribers.md)  
   
