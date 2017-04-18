@@ -52,7 +52,7 @@ When you create a Run As account, you are prompted to choose whether the Run As 
   
 ## Next steps
   
-- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md).
+- To understand how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account see, [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
  
 
   

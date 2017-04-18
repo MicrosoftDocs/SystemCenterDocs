@@ -48,7 +48,7 @@ Both distribution and targeting of Run As accounts must be correctly configured 
 
 7. Click **Next**.
 
-8. On the **Distribution Security** page, select the **Less secure** or **More secure** option as appropriate. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](../../scom/manage-security-dist-target-runas-profiles.md).
+8. On the **Distribution Security** page, select the **Less secure** or **More secure** option as appropriate. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).
 
 9. Click **Create**.
 
@@ -102,7 +102,7 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
 7. In the **Add a Run As Account** window, in the **Run As account** field, select an existing Run As account from the dropdown menu. You can also create an account by clicking **New** and following [Create a Run As Account](#create-a-run-as-account) steps above.
 
-8. Select **All targeted objects** or **A selected class, group, or object**. If you select **A selected class, group, or object**, click **Select**, and then locate and select the class, group, or object that you want the Run As account to be used for. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](../../scom/manage-security-dist-target-runas-profiles.md).
+8. Select **All targeted objects** or **A selected class, group, or object**. If you select **A selected class, group, or object**, click **Select**, and then locate and select the class, group, or object that you want the Run As account to be used for. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).
 
 9. Click **OK** to close the **Add a Run As Account** window. 
 
@@ -135,8 +135,8 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
 ## Next steps
 
-- Review [Distribution and Targeting for Run As Accounts and Profiles](../../scom/manage-security-dist-target-runas-profiles.md) to understand how to target Run As account  distribution to agent-managed computers securely.  
+- Review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md) to understand how to target Run As account  distribution to agent-managed computers securely.  
 
-- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](How-to-Create-a-New-Action-Account-in-Operations-Manager.md).
+- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](../../z-harvest-om/om/manage/how-to-create-a-new-action-account-in-operations-manager.md).
 
 - To learn about how you can use the The Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](How-to-control-access-using-the-health-service-lockdown-tool.md).  

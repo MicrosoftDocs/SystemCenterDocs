@@ -31,30 +31,30 @@ The protocol that is used depends on the action or information that is requested
 > [!NOTE]  
 > All credentials referred to in this topic pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
   
-For detailed instructions for specifying credentials and configuring accounts, see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md).  
+For detailed instructions for specifying credentials and configuring accounts, see [How to Set Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).  
   
 ## Authentication on the UNIX or Linux computer  
 In Operations Manager, the system administrator is no longer is required to provide the root password of the UNIX or Linux computer to the management server. Now by elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer. The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies. For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstall, and agent recovery), support for su, sudo elevation, and support for SSH key authentication (with or without passphrase) is provided. For privileged WS-Management operations (such as viewing secure log file), support for sudo elevation (without password) is added.  
   
 ## Accessing UNIX and Linux computers topics  
   
--   [Planning Security Credentials for Accessing UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md) 
+-   [Planning Security Credentials for Accessing UNIX and Linux Computers](plan-security-crossplat-credentials.md) 
   
     Provides an overview of using credentials to install and maintain agents on UNIX and Linux computers and how they are configured to use Run As accounts and Run As profiles.  
   
--   [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)  
+-   [How to Set Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md)  
   
     Contains specific procedures for specifying credentials for different wizards in Operations Manager.  
   
--   [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
+-   [How to Configure sudo Elevation and SSH Keys](../om/manage/how-to-configure-sudo-elevation-and-ssh-keys.md)  
   
     Describes how to configure an unprivileged account to be elevated to have privileged access on a UNIX or Linux computer.  
   
--   [Required Capabilities for UNIX and Linux Accounts](Required-Capabilities-for-UNIX-and-Linux-Accounts.md)  
+-   [Required Capabilities for UNIX and Linux Accounts](../om/manage/required-capabilities-for-unix-and-linux-accounts.md)  
   
     Describes the permissions on the UNIX or Linux computers that are required to be configured with Run As profiles for use by Operations Manager.  
   
--   [Administering and Configuring the UNIX - Linux Agent](Administering-and-Configuring-the-UNIX-Linux-Agent.md)  
+-   [Administering and Configuring the UNIX - Linux Agent](../om/manage/administering-and-configuring-the-unix-linux-agent.md)  
   
     Describes options to administer and configure the UNIX/Linux agent for System Center 2016 - Operations Manager.  
   

@@ -36,7 +36,7 @@ A Run As account contains a single set of credentials which are stored in the Op
   
     This topic explains the difference between distribution and targeting, the options for distributing Run As accounts, and the options for selecting targets for Run As profiles.  
   
--   [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md)  
+-   [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md)  
   
     This topic explains how to create a Run As account, how to modify an existing Run As account, and how to configure a Run As profile to use a Run As account.  
 

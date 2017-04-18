@@ -57,7 +57,7 @@ Use the following procedure to create a new management server action account. Th
   
 ## Next steps
 
-- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](../om/manage/how-to-create-a-run-as-account-and-associate-to-a-profile.md).
+- To understand how to create a Run As account and associate with a Run As profile, see [How to Create a Run As Account and Associate with a Run As Profile](manage-security-create-runas-link-profile.md).
 
 - The Report Server unattended execution account is used to query data from the Reporting Data Warehouse.  See [How to Manage the Report Server Unattended Execution Account in Operations Manager](../om/manage/how-to-manage-the-report-server-unattended-execution-account.md) to understand how to reconfigure the user name or password for this account.  
 

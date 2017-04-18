@@ -34,7 +34,7 @@ ms.topic: article
 
     On computers requiring high security, such as a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.
 
-- [Accessing UNIX and Linux computers](accessing-unix-and-linux-computers-in-operations-manager.md)
+- [Accessing UNIX and Linux computers](../../scom/manage-security-authenticate-crossplat.md)
 
     This section explains how to configure and manage access to computers running UNIX and Linux operating systems.
 
