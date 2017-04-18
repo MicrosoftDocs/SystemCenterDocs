@@ -29,7 +29,7 @@
 ### [Deploy](DPM/Deploy/Deploy.md)
 #### [Deploy the DPM protection agent](DPM/Deploy/Deploy-the-DPM-protection-agent.md)
 #### [Deploy protection groups](DPM/Deploy/Deploy-protection-groups.md)
-#### [Deduplicate DPM storage](DPM/Deploy/Deduplicate-DPM-storage.md)
+#### [Deduplicate DPM storage](dpm/deduplicate-dpm-storage.md)
 #### [Back up Hyper-V virtual machines](DPM/Deploy/Back-up-Hyper-V-virtual-machines.md)
 #### [Back up Exchange with DPM](DPM/Deploy/Back-up-Exchange-with-DPM.md)
 #### [Back up SharePoint with DPM](DPM/Deploy/Back-up-SharePoint-with-DPM.md)
