@@ -129,34 +129,34 @@ For a list of the data elements published by each activity, see the **Published 
 
 The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Change with Template](create-change-with-template.md)
+[Create Change with Template](../orch/manage/create-change-with-template.md)
 
-[Create Incident with Template](create-incident-with-template.md)
+[Create Incident with Template](../orch/manage/create-incident-with-template.md)
 
-[Create Object](create-object.md)
+[Create Object](../orch/manage/create-object.md)
 
-[Create Related Object](create-related-object.md)
+[Create Related Object](../orch/manage/create-related-object.md)
 
-[Create Relationship](create-relationship.md)
+[Create Relationship](../orch/manage/create-relationship.md)
 
-[Delete Relationship](delete-relationship.md)
+[Delete Relationship](../orch/manage/delete-relationship.md)
 
-[Get Activity](get-activity.md)
+[Get Activity](../orch/manage/get-activity.md)
 
-[Get Object](get-object.md)
+[Get Object](../orch/manage/get-object.md)
 
-[Get Relationship](get-relationship.md)
+[Get Relationship](../orch/manage/get-relationship.md)
 
-[Monitor Object](monitor-object.md)
+[Monitor Object](../orch/manage/monitor-object.md)
 
-[Update Activity](update-activity.md)
+[Update Activity](../orch/manage/update-activity.md)
 
-[Update Object](update-object.md)
+[Update Object](../orch/manage/update-object.md)
 
-[Upload Attachment](upload-attachment.md)
+[Upload Attachment](../orch/manage/upload-attachment.md)
 
 The activities in the Service Manager Integration Pack use the classes, fields, and filters and produce the published data listed in the following topics:
 
-[Classes, Fields, and Filters](classes-fields-and-filters.md)
+[Classes, Fields, and Filters](../orch/manage/classes-fields-and-filters.md)
 
-[Service Manager Published Data](../../orchestrator/service-manager-published-data.md)
+[Service Manager Published Data](service-manager-published-data.md)

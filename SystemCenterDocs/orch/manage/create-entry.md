@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Create Entry activity is used in a runbook to create new incident, service desk request or change request entries in HP Service Manager.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](hp-service-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](../../orchestrator/service-manager-activities.md).
 
 ## Create Entry Required Properties
 

@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The Update Entry activity is used in a runbook to modify existing entries in HP Service Manager.
 
-The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](hp-service-manager-activities.md).
+The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](../../orchestrator/service-manager-activities.md).
 
 ## Update Entry Required Properties
 
