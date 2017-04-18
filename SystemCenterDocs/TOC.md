@@ -121,7 +121,7 @@
 ###### [How to add knowledge](scom/manage-mp-add-knowledge.md)
 ###### [Management Pack assessment](scom/manage-mp-mpassessment.md)
 #### [Getting information from Operations Manager](om/manage/getting-information-from-operations-manager.md)
-##### [Using the Operations Manager consoles](om/manage/using-the-operations-manager-consoles.md)
+##### [Using the Operations Manager consoles](scom/manage-consoles-overview.md)
 ###### [Comparing the Operations and Web console](om/manage/comparing-the-operations-and-web-consoles-in-operations-manager.md)
 ###### [How to connect to the Operations and Web console](om/manage/how-to-connect-to-the-operations-and-web-console.md)
 ###### [Using the Operations console](om/manage/using-the-operations-console-in-operations-manager.md)
