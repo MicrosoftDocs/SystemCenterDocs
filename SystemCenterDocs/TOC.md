@@ -466,7 +466,7 @@
 ###### [Upload Document](orch/manage/upload-document.md)
 ##### [Configuration Manager](orch/manage/configuration-manager-integration-pack.md)
 ###### [Configuration Manager Activities](orch/manage/configuration-manager-activities.md)
-####### [Add Collection Rule](orch/manage/add-collection-rule.md)
+####### [Add Collection Rule](orchestrator/add-collection-rule.md)
 ####### [Create Collection](orch/manage/create-collection.md)
 ####### [Delete Collection](orch/manage/delete-collection.md)
 ####### [Delete Collection Rule](orch/manage/delete-collection-rule.md)
