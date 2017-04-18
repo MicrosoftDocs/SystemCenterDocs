@@ -32,7 +32,7 @@ Before you begin your deployment, you should read the release notes, and ensure 
 
 -   [Release Notes for System Center 2016](../../get-started/release-notes.md)
 
--   [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md)
+-   [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md)
 
 ### Operations Manager Administrators role assignment
 

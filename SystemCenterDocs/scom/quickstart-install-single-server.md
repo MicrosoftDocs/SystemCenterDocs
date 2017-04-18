@@ -28,7 +28,7 @@ This walkthrough guides you through an installation of System Center 2016 - Oper
 
 ## Prerequisites
 
-You must ensure that your server meets the minimum supported configurations for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum supported configurations for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
 
 **Required SQL Server Components**
 

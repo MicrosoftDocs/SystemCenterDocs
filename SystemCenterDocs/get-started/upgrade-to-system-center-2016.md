@@ -19,7 +19,7 @@ If you are already running System Center 2012 R2 you can upgrade your environmen
 
 
 > [!IMPORTANT]
-> Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](../scom/plan-system-requirements.md).
+> Make sure you are upgrading to a supported platform by reviewing the [System Requirements topics](../orchestrator/system-requirements.md).
 
 ## Supported upgrade paths
 Microsoft supports the following upgrade paths.

@@ -55,7 +55,7 @@
 #### [Walkthrough: Installing Operations Manager on a Single Server](scom/quickstart-install-single-server.md)
 #### [Installing Operations Manager from the Command Prompt](scom/install-using-cmdline.md)
 ### [Plan](scom/plan-overview.md)
-#### [System Requirements](scom/plan-system-requirements.md)
+#### [System Requirements](orchestrator/system-requirements.md)
 #### [Supported Versions of UNIX and Linux](scom/plan-supported-crossplat-os.md)
 #### [Planning a management group design](scom/plan-mgmt-group-design.md)
 #### [SQL Server design considerations](scom/plan-sqlserver-design.md)

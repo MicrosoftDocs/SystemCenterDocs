@@ -70,4 +70,4 @@ You can download .Net 3.5 SP1 at:
 Deploying and running Orchestrator on a virtualized operating system is fully supported. The software requirements are the same as those listed above. Any of the Orchestrator roles can also be run on a virtualized server running in Microsoft Azure.
 
 ## Next steps
-[Install Orchestrator](../deploy/install-orchestrator.md)
+[Install Orchestrator](../orch/deploy/install-orchestrator.md)

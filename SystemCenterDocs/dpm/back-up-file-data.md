@@ -22,7 +22,7 @@ You can back up file data on server and client computers.
 
 1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. We recommend that you review the following articles:
 
-    -   [System requirements](../scom/plan-system-requirements.md)
+    -   [System requirements](../orchestrator/system-requirements.md)
 
     -   [What can DPM back up?](dpm-protection-matrix.md)
 
