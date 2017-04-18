@@ -27,7 +27,7 @@ After you identify the IT services to monitor, the configuration of how to monit
 
 -   [Dashboards in Operations Manager](../om/manage/dashboards-in-operations-manager.md)
   
--   [Standard views in Operations Manager](../om/manage/standard-views-in-operations-manager.md)  
+-   [Standard views in Operations Manager](manage-console-standard-views.md)  
   
 -   [Creating and scoping views in Operations Manager](../om/manage/how-to-create-and-scope-views-in-operations-manager.md)  
 
