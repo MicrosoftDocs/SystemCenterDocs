@@ -34,7 +34,7 @@ The functions that you can perform in the Orchestration console is a subset of t
 
 ## Orchestration console topics
 
--   [Overview of Orchestration Console](../get-started/overview-of-orchestration-console.md)
+-   [Overview of Orchestration Console](../../orchestrator/console-overview.md)
 
     Describes the basic features of the Orchestration console.
 
