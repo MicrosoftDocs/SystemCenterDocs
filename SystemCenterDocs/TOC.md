@@ -521,7 +521,7 @@
 ##### [Virtual Machine Manager](orchestrator/integration-pack-for-virtual-machine-manager.md)
 ###### [Virtual Machine Manager Activities](orchestrator/virtual-machine-manager-activities.md)
 #######[Apply pending service update ](orchestrator/apply-pending-service-update-in-system-center-2016.md)
-#######[Configure service deployment](orch/manage/configure-service-deployment-in-system-center-2016.md)
+#######[Configure service deployment](orchestrator/configure-service-deployment-in-system-center-2016.md)
 #######[Create checkpoint](orch/manage/create-checkpoint.md)
 #######[Create network adapter](orch/manage/create-network-adapter.md)
 #######[Create new disk from vhd](orch/manage/create-new-disk-from-vhd.md)
