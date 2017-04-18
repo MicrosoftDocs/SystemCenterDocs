@@ -29,7 +29,7 @@ The **Infrastructure** node in the VMM console shows infrastructure servers you 
 
 ## Update infrastructure servers
 
-In order to update infrastructure servers you'll need to set up a WSUS server and configure update baselines. [Learn more](manage/manage-compute-update-servers.md)
+In order to update infrastructure servers you'll need to set up a WSUS server and configure update baselines. [Learn more](update-server.md)
 
 After the WSUS server is in place you can update infrastructure servers as follows:
 
