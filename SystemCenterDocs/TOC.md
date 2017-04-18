@@ -128,7 +128,7 @@
 ###### [Using Health Explorer](scom/manage-consoles-overview-healthexplorer.md)
 ###### [Using My Workspace](scom/manage-consoles-my-workspace.md)
 ##### [Using reports](om/manage/using-reports-in-operations-manager.md)
-###### [Operations Manager report library](om/manage/operations-manager-reports-library.md)
+###### [Operations Manager report library](scom/manage-reports-installed-during-setup.md)
 ###### [How to create reports](om/manage/how-to-create-reports-in-operations-manager.md)
 ###### [How to run, save, and export reports](om/manage/how-to-run-save-export-reports.md)
 ###### [How to configure and modify report schedules](om/manage/how-to-configure-modify-report-schedules.md)
