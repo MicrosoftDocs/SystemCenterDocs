@@ -819,7 +819,7 @@
 ##### [Set up logical switches](vmm/network-switch.md)
 ##### [Set up MAC address pools](vmm/network-mac.md)
 ##### [Integrate NLB with service templates](vmm/network-nlb.md)
-##### [Set up an IPAM server](vmm/manage/manage-network-ipam.md)
+##### [Set up an IPAM server](vmm/network-ipam.md)
 #### [Manage the VMM storage fabric](vmm/manage/manage-storage-overview.md)
 ##### [Set up storage classifications](vmm/manage/manage-storage-classifications.md)
 ##### [Add storage devices](vmm/manage/manage-storage-add-device.md)
