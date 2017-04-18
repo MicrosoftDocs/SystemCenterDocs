@@ -59,7 +59,7 @@
 #### [Supported Versions of UNIX and Linux](scom/plan-supported-crossplat-os.md)
 #### [Planning a management group design](scom/plan-mgmt-group-design.md)
 #### [SQL Server design considerations](scom/plan-sqlserver-design.md)
-#### [Resource pool design considerations](om/plan/planning-resource-pool-design.md)
+#### [Resource pool design considerations](scom/plan-resource-pool-design.md)
 #### [Design integration with other enterprise management products](om/plan/planning-integration-with-other-management-solutions.md)
 #### [Designing for high availability and disaster recovery](om/plan/planning-hadr-design.md)
 #### [Agent deployment planning](om/plan/planning-agents.md)

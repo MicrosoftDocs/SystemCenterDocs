@@ -121,4 +121,4 @@ Perform this procedure whenever you add a new management server to the resource 
 
 ## Next steps
 
-For information about deployment considerations for resource pools, see [Planning Resource Pool Design](../plan/planning-resource-pool-design.md)
+For information about deployment considerations for resource pools, see [Planning Resource Pool Design](../../scom/plan-resource-pool-design.md)

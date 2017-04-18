@@ -45,7 +45,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     Describes the most appropriate high availability, disaster recovery, and performance configuration for SQL Server hosting the Operations Manager databases in order to achieve optimal performance and scale in medium to enterprise deployments.
 
-- [Resource Pool Design Considerations](../om/plan/planning-resource-pool-design.md)
+- [Resource Pool Design Considerations](plan-resource-pool-design.md)
 
     This section provides information to help you make design decisions and to understand the behavior and deployment options with resource pools to provide high availability for the monitoring of network devices, Linux and UNIX computers, and other workloads in Operations Manager.  
 
