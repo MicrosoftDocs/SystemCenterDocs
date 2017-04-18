@@ -49,19 +49,19 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 ## Before you start
 
--   Review the [release notes](../../get-started/release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](../dpm-support-issues.md)
+-   Review the [release notes](../get-started/release-notes.md) and read about any VMM backup issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
 -   Make sure that the VMM machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 
--   **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](../plan-long-and-short-term-data-storage.md).
+-   **Set up storage** - You can store backed up data on disk, on tape, and in the cloud with Azure. Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
--   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](../deploy-dpm-protection-agent.md).
+-   You'll need to deploy the DPM  protection agent on the VMM server.  Learn more in [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Back up VMM
 
 1.  Click **Protection** > **Actions** > **Create Protection Group** to open the **Create New Protection Group** wizard in the DPM console.
 
-2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](../create-dpm-protection-groups.md).
+2.  In **Select protection group** type click **Clients**. You only select clients if you want to back up data on a Windows computer running a Windows client operating system. For all other workloads select server. Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
 
 3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**.
 
