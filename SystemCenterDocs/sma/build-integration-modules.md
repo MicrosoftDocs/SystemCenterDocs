@@ -56,6 +56,6 @@ If the module should contain a [Connection](../orchestrator/connections.md) type
 ## See Also
 [Service Management Automation](service-management-automation.md)
 
-[Authoring Automation Runbooks](manage/authoring-automation-runbooks.md)
+[Authoring Automation Runbooks](authoring-automation-runbooks.md)
 
 [Working with Integration Modules](manage-integration-modules.md)

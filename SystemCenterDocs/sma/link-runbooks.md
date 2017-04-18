@@ -89,7 +89,7 @@ The following table summarizes the differences between the two methods for calli
 ## See Also
 [To start a runbook with Windows PowerShell](manage/starting-a-runbook.md#powershell)
 
-[Authoring Automation Runbooks](manage/authoring-automation-runbooks.md)
+[Authoring Automation Runbooks](authoring-automation-runbooks.md)
 
 [Automation Runbooks](manage/automation-runbooks.md)
 
