@@ -82,7 +82,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
     -   Analysis Management Objects \(AMO\)  
 
-9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](../sm/deploy/upgrade-how-to-start-service-manager-services-on-the-secondary-management-server.md).  
+9. Start the System Center services on all the management servers, as described in [How to Start Service Manager Services on the Secondary Management Server](start-services-on-secondary-ms.md).  
 
 10. Install another Service Manager database that has a different name on the same computer that is running SQL Server, by installing another Service Manager management server and choosing to create a new database. This step will populate the master database with error message text so that if an error occurs in the future, the error message can describe the specific problem instead of displaying generic text. After the database is installed, you can drop it from the computer that is running SQL Server and uninstall the additional, temporary management server.  
 
