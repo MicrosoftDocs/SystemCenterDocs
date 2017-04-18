@@ -23,11 +23,11 @@ Self-service users can interact with VMM to deploy virtual machines and services
 
 ## Create and deploy virtual machines
 
-- [Learn about](../vm-existing-disk.md) creating a VM from an existing VHDs
-- [Learn about](../vm-blank-disk.md) creating a VM from a blank VHDs
-- [Learn about](../vm-clone.md) cloning an existing VM
-- [Learn about](../vm-template.md) deploying VMs from VM templates
-- [Learn about](../vm-linux.md) deploying VMs running Linux
+- [Learn about](vm-existing-disk.md) creating a VM from an existing VHDs
+- [Learn about](vm-blank-disk.md) creating a VM from a blank VHDs
+- [Learn about](vm-clone.md) cloning an existing VM
+- [Learn about](vm-template.md) deploying VMs from VM templates
+- [Learn about](vm-linux.md) deploying VMs running Linux
 
 ## Create resources in the VMM library
 
@@ -37,7 +37,7 @@ The VMM library is a file share that includes a catalog of resources that are us
 - Non-file-based resources such as virtual machine templates and service templates that are used to create VMs and services.
 - Offline virtual machines are stored in the library.
 
-If you have Author permissions you can create templates and profiles in the library. [Learn more](../manage-library-server.md).
+If you have Author permissions you can create templates and profiles in the library. [Learn more](manage-library-server.md).
 
 ### Share library resources
 

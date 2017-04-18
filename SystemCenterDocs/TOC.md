@@ -855,7 +855,7 @@
 ##### [Set up user roles](vmm/account-user-role.md)
 ##### [Set up Run As accounts](vmm/account-runas.md)
 #### [Manage self-service users](vmm/self-service.md)
-##### [Perform self-service user tasks](vmm/manage/manage-self-service-tasks.md)
+##### [Perform self-service user tasks](vmm/self-service-tasks.md)
 ### [Monitor VMM](vmm/manage/manage-monitor-overview.md)
 #### [Set up monitoring and reporting with Operations Manager](vmm/manage/manage-monitor-ops-mgr.md)
 ### [Add an Azure subscription in VMM](vmm/manage/manage-add-azure-subscription.md)
