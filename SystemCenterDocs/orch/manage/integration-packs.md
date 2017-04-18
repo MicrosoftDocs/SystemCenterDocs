@@ -29,7 +29,7 @@ You can download integration packs from the Microsoft Download Center. Each inte
 - [IBM Tivoli Netcool Integration Pack](../../orchestrator/tivoli-netcool-omnibus-integration-pack.md)
 - [REST](../../orchestrator/representational-state-transfer-rest-integration-pack.md)
 - [Configuration Manager](configuration-manager-integration-pack.md)
-- [Data Protection Manager](integration-pack-for-data-protection-manager.md)
+- [Data Protection Manager](../../orchestrator/integration-pack-for-data-protection-manager.md)
 - [Operations Manager](integration-pack-for-operations-manager.md)
 - [Service Manager](integration-pack-for-service-manager.md)
 - [Virtual Machine Manager](integration-pack-for-virtual-machine-manager.md)
