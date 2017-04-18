@@ -23,7 +23,7 @@ Monitors can have two kinds of tasks associated with them: diagnostic tasks that
   
 Some monitors have diagnostic or recovery tasks that are disabled by default. You can enable any of these tasks that you want the monitor to run. For example, in the following image, you see that some recovery tasks for the **Health Service Heartbeat Failure** monitor are not configured to run automatically.  
   
-![Recovery Task Disabled Example](../media/om2016-recovery-tasks-example.png)  
+![Recovery Task Disabled Example](./media/how-to-enable-recovery-and-diagnostic-tasks/om2016-recovery-tasks-example.png)  
   
 ## To enable a diagnostic or recovery task  
   

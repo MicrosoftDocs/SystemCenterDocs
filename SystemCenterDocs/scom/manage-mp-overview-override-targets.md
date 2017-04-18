@@ -108,5 +108,5 @@ If you create an override that applies to COMPUTER1 and sets the threshold to 60
 
 - See [How to Import, Export, and Remove an Operations Manager Management Pack](../om/manage/how-to-import-remove-export-management-packs.md) to perform common administrative tasks with management packs in your management group.
 
-- Review [How to Enable Recovery and Diagnostic Tasks](../om/manage/how-to-enable-recovery-and-diagnostic-tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
+- Review [How to Enable Recovery and Diagnostic Tasks](how-to-enable-recovery-and-diagnostic-tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
   

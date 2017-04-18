@@ -26,7 +26,7 @@ ms.topic: article
 
     The action account is used to gather information about, and run responses on, the managed computer. This procedure explains how to create a new action account that Operations Manager uses to run processes and scripts .
 
-- [How to manage the report server unattended execution account](how-to-manage-the-report-server-unattended-execution-account.md)
+- [How to manage the report server unattended execution account](../../scom/how-to-manage-the-report-server-unattended-execution-account.md)
 
     The Operations Manager Report Server unattended execution account is used to query data from the Reporting Data Warehouse and is configured through Microsoft SQL Server. This procedure explains how to manage this account.
 

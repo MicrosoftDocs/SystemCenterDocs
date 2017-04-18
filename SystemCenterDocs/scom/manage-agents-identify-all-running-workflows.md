@@ -35,4 +35,4 @@ Administrators for System Center 2016 - Operations Manager sometimes want to kno
 
 ## Next steps
 
-- If you have an agent-managed computer generating an alert that doesn't immediately help you understand what the cause behind it was, review [Identifying the Computer Experiencing a Problem](../om/manage/identifying-the-computer-experiencing-a-problem.md) for further recommendations.    
+- If you have an agent-managed computer generating an alert that doesn't immediately help you understand what the cause behind it was, review [Identifying the Computer Experiencing a Problem](identifying-the-computer-experiencing-a-problem.md) for further recommendations.    
