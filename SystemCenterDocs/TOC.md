@@ -660,7 +660,7 @@
 ##### [Prepare the Service Manager database in the lab environment before you upgrade](scsm/prepare-sm-db.md)
 ##### [Edit the registry on the Service Manager Management Server in the lab environment before you upgrade](scsm/edit-reg-sm-ms.md)
 ##### [Start Service Manager services on the secondary management server before you upgrade](scsm/start-services-on-secondary-ms.md)
-##### [Promote a secondary management server in a lab environment before you upgrade](sm/deploy/upgrade-how-to-promote-a-secondary-management-server-in-a-lab-environment.md)
+##### [Promote a secondary management server in a lab environment before you upgrade](scsm/promote-secondary-ms.md)
 ##### [Enable the connectors in the lab environment before you upgrade](sm/deploy/upgrade-how-to-enable-the-connectors-in-the-lab-environment.md)
 ##### [Install a new data warehouse server in the lab environment before you upgrade](sm/deploy/upgrade-how-to-install-a-new-data-warehouse-server-in-the-lab-environment.md)
 ##### [Register the data warehouse server in the lab environment before you upgrade](sm/deploy/upgrade-how-to-register-the-data-warehouse-server-in-the-lab-environment.md)
