@@ -38,11 +38,11 @@ There's a streamlined workflow for creating Hyper-V and SOFS clusters:
 
 ### New operations for running VMs
 
-You can now increase/decrease static memory and add/remove virtual network adapter for virtual machines that are running. [Learn more](manage/manage-vm-settings.md).
+You can now increase/decrease static memory and add/remove virtual network adapter for virtual machines that are running. [Learn more](vm-settings.md).
 
 ### Production checkpoints
 
-You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent (compared to standard checkpoints based on saved state technology that aren't. [Learn more](manage/manage-vm-settings.md).
+You can now create production checkpoints for VMs. These checkpoints are based on Volume Shadow Copy Service (VSS) and are application-consistent (compared to standard checkpoints based on saved state technology that aren't. [Learn more](vm-settings.md).
 
 ### Server App-V
 

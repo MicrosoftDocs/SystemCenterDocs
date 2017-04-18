@@ -27,7 +27,7 @@ This article describes how to create VMs in the System Center 2016 - Virtual Mac
 - To complete the steps you must be an Administrator or Delegated Administrator on the VMM server, or a self-service user.
 - If you're a self-service user you need **Deploy** permissions with the **Store and re-deploy** action assigned. You must first deploy the VM to a private cloud, and then store it in the library.
 - You can only customize static IP address settings if you create a VM from a VM template.
-- You can use VMM to configure the availability settings for the virtual machine. [Learn more](manage/manage-vm-settings.md).
+- You can use VMM to configure the availability settings for the virtual machine. [Learn more](vm-settings.md).
 
 ## Create a VM
 
@@ -89,4 +89,4 @@ This article describes how to create VMs in the System Center 2016 - Virtual Mac
 
 ## Next steps
 
-- [Configure the VM settings](manage/manage-vm-settings.md)
+- [Configure the VM settings](vm-settings.md)

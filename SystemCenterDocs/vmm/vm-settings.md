@@ -103,7 +103,7 @@ PS C:\> Set-SCVirtualMachine -VM $VM -DynamicMemoryEnabled $True -MemoryMB 1024 
 
 ## Add a servicing window to a VM
 
-You can set up a servicing window for a VM or service so that you can maintain it outside the VMM console. You [set up the window](../hyper-v-service.md#set-up-a-servicing-window), and then assign it to the VM properties.
+You can set up a servicing window for a VM or service so that you can maintain it outside the VMM console. You [set up the window](hyper-v-service.md#set-up-a-servicing-window), and then assign it to the VM properties.
 
 
 ## Create a production checkpoint for a VM

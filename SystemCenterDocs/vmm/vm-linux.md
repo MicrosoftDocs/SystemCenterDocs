@@ -58,4 +58,4 @@ When the agent installs on the VM the following files and folders will be create
 
 ## Next steps
 
-[Manage VM settings](manage/manage-vm-settings.md)
+[Manage VM settings](vm-settings.md)

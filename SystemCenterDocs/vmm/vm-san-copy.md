@@ -127,4 +127,4 @@ New deploy a VM from the SAN-copy capable template. This procedure explains how 
 
 ## Next steps
 
-[Manage the VM settings](manage/manage-vm-settings.md)
+[Manage the VM settings](vm-settings.md)

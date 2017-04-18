@@ -81,4 +81,4 @@ You can enable shielding for a VM currently running on a host in the VMM fabric 
 
 ## Next steps
 
-- [Manage virtual machine settings](manage/manage-vm-settings.md)
+- [Manage virtual machine settings](vm-settings.md)

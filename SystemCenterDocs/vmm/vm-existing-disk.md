@@ -85,4 +85,4 @@ This article describes how to create and deploy virtual machines in the System C
 
 ## Next steps
 
-- [Manage the VM settings](manage/manage-vm-settings.md)
+- [Manage the VM settings](vm-settings.md)

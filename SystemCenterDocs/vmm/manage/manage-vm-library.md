@@ -45,4 +45,4 @@ This article describes how to deploy a virtual machine that's stored in the Syst
 
 ## Next steps
 
-[Manage the VM settings](manage-vm-settings.md)
+[Manage the VM settings](../vm-settings.md)

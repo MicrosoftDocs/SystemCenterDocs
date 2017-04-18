@@ -79,4 +79,4 @@ This article describes how to create and deploy virtual machines by cloning exis
 
 ## Next steps
 
-- [Manage the VM settings](manage/manage-vm-settings.md)
+- [Manage the VM settings](vm-settings.md)
