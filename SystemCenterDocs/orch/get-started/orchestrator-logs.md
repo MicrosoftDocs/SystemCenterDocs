@@ -28,7 +28,7 @@ In Orchestrator, different logs are available that provide information about Orc
 |[Real time log](../get-started/runbook-logs.md#RealTimeLog) section in Runbook Logs.|Live information about a running runbook instance|Orchestration database|**Log** tab in Runbook Designer|  
 |[Historic Log](../get-started/runbook-logs.md#HistoryLog) section in Runbook Logs.|Historical information about instances of a runbook|Orchestration database|**Log History** tab in Runbook Designer|  
 |[Runbook Audit History](../get-started/runbook-logs.md#AuditHistory) section in Runbook Logs.|Audit information about changes to a runbook|Orchestration database|**Audit History** tab in Runbook Designer|  
-|[Activity Events](../get-started/activity-events.md)|Status information about Orchestrator management server, runbook servers, and database|Orchestration database|**Events** tab in Runbook Designer|  
+|[Activity Events](../../orchestrator/activity-events.md)|Status information about Orchestrator management server, runbook servers, and database|Orchestration database|**Events** tab in Runbook Designer|  
 |[Audit Trail](../../orchestrator/track-runbooks-audit-trail.md)|Interaction of a runbook with external tools and systems|Log files|Open files in text editor|  
 |[Trace Logs](../deploy/trace-logs.md)|Troubleshooting information about the Orchestrator environment|Log files|Open files in text editor|  
 
