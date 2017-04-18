@@ -175,7 +175,7 @@ Product connectors are used to synchronize Operations Manager data with other ma
   
 When you install Operations Manager, two internal product connectors are installed. These are used by Operations Manager.  
   
-For more information, see [Connecting Operations Manager With Other Management Systems](connecting-operations-manager-with-other-management-systems.md).  
+For more information, see [Connecting Operations Manager With Other Management Systems](../../scom/manage-integration-thirdparty-overview.md).  
   
 ### Run As configuration  
 
