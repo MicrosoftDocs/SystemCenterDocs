@@ -96,7 +96,7 @@ In this configuration, you need to make sure that network ports are opened for c
 
 -   Management server to UNIX\Linux computer for special discovery and troubleshooting: TCP 22
 
-For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](../plan/planning-security-configuring-a-firewall.md).
+For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](../../scom/plan-security-config-firewall.md).
 
 ## Next steps
 

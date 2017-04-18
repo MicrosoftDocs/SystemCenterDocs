@@ -146,7 +146,7 @@ After discovery is complete, the management server resource pool that you specif
   
 ## Next steps
 
-- Review [Configuring a Firewall for Operations Manager](../om/plan/planning-security-configuring-a-firewall.md) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager.  
+- Review [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md) to understand the firewall ports and direction the communication flows in preparing your environment for network device monitoring with Operations Manager.  
 
 - Learn [How to discover network devices in Operations Manager](../om/manage/how-to-discover-network-devices-in-operations-manager.md).  
 

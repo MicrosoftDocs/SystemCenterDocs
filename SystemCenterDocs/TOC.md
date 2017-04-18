@@ -64,7 +64,7 @@
 #### [Designing for high availability and disaster recovery](scom/plan-hadr-design.md)
 #### [Agent deployment planning](scom/plan-planning-agent-deployment.md)
 #### [Security](om/plan/plan-security-summary.md)
-##### [Configuring a firewall for Operations Manager](om/plan/planning-security-configuring-a-firewall.md)
+##### [Configuring a firewall for Operations Manager](scom/plan-security-config-firewall.md)
 ##### [Service, user, and security accounts](om/plan/planning-security-accounts.md)
 ##### [Run As accounts and Profiles](om/plan/planning-security-run-as-accounts-profiles.md)
 ##### [Security credentials to access UNIX and Linux computers](om/plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)

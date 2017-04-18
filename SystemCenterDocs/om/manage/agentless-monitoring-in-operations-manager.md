@@ -133,7 +133,7 @@ You might also configure a computer to act as a proxy to support specific featur
 > [!NOTE]  
 > If a proxy agent is removed from management, its agentless systems are no longer managed.  
   
-Both the agentless-managed system and its proxy need to have access to the managing server through any firewalls. For more information about interacting with firewalls, see [Configuring a firewall for Operations Manager](../plan/planning-security-configuring-a-firewall.md).  
+Both the agentless-managed system and its proxy need to have access to the managing server through any firewalls. For more information about interacting with firewalls, see [Configuring a firewall for Operations Manager](../../scom/plan-security-config-firewall.md).  
   
 1.  In the **Administration** workspace, click **Agent Managed**, right-click the computer, and then click **Properties**.  
   
