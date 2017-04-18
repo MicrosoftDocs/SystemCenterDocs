@@ -38,7 +38,7 @@ In Operations Manager, the system administrator is no longer is required to prov
   
 ## Accessing UNIX and Linux computers topics  
   
--   [Planning Security Credentials for Accessing UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md) 
+-   [Planning Security Credentials for Accessing UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md) 
   
     Provides an overview of using credentials to install and maintain agents on UNIX and Linux computers and how they are configured to use Run As accounts and Run As profiles.  
   

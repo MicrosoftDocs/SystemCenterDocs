@@ -138,7 +138,7 @@ You can use the `opsuser` account by using the SSH key and sudo elevation for sp
   
 ## Next steps
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)  
+- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md)  
 
 - Review the [Configuring SSL Ciphers](Configuring-SSL-Ciphers.md) if you need to reconfigure Operations Manager to use a different cipher.   
   

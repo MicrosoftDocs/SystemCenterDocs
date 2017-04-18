@@ -71,7 +71,7 @@ Modify omiserver.conf, set the **NoSSLv3** line to be:
   
 ## Next steps
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)
+- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md)
 
 - To configure Operations Manager to authenticate with your UNIX and Linux computers, please see [How to Set Credentials for Accessing UNIX and Linux Computers](How-to-Set-Credentials-for-Accessing-UNIX-and-Linux-Computers.md)  
 

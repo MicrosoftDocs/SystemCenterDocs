@@ -23,7 +23,7 @@ This topic contains procedures for how to set credentials in wizards for the fol
 -  Credentials for Upgrading an Agent  
 -  Credentials for Uninstalling an Agent
   
-These wizards define credentials to be authenticated on the UNIX or Linux computer and follow a similar process. For an overview of how credentials are provided, see [Planning Security Credentials for Accessing Unix and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md).  
+These wizards define credentials to be authenticated on the UNIX or Linux computer and follow a similar process. For an overview of how credentials are provided, see [Planning Security Credentials for Accessing Unix and Linux Computers](../../scom/plan-security-crossplat-credentials.md).  
   
 ## Credentials for discovering UNIX and Linux computers  
 
@@ -301,7 +301,7 @@ The following procedures begin in the  **UNIX\/Linux Agent Uninstall Wizard**, o
   
 ## Next steps 
 
-- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)  
+- To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md)  
 
 - To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](How-to-Configure-sudo-Elevation-and-SSH-Keys.md)  
 

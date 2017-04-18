@@ -67,7 +67,7 @@
 ##### [Configuring a firewall for Operations Manager](scom/plan-security-config-firewall.md)
 ##### [Service, user, and security accounts](scom/plan-security-accounts.md)
 ##### [Run As accounts and Profiles](scom/plan-security-runas-accounts-profiles.md)
-##### [Security credentials to access UNIX and Linux computers](om/plan/planning-security-credentials-for-accessing-unix-and-linux-computers.md)
+##### [Security credentials to access UNIX and Linux computers](scom/plan-security-crossplat-credentials.md)
 ##### [Authentication and data encryption in Operations Manager](om/plan/planning-security-authentication-data-encryption-in-operations-manager.md)
 ##### [Data encryption for Web console and Reporting server connections](om/plan/planning-data-encryption-for-web-console-reporting-server-connections.md)
 ##### [Security considerations monitoring Microsoft Azure and Office 365](om/plan/planning-security-microsoft-cloud.md)

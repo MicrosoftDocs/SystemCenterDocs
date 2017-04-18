@@ -28,7 +28,7 @@ This section provides you with security-related information as it pertains to th
 
 - The [Firewall Configuration for Operations Manager](../../scom/plan-security-config-firewall.md) topic will help you understand the required network ports and communication path between Operations Manager roles and components.
 
-- [Planning Security Credentials for Accessing UNIX and Linux Computers](planning-security-credentials-for-accessing-unix-and-linux-computers.md) describes the security considerations for monitoring UNIX and Linux computers with Operations Manager.
+- [Planning Security Credentials for Accessing UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md) describes the security considerations for monitoring UNIX and Linux computers with Operations Manager.
 
 - If you are planning on monitoring your .NET web-based applications with Operations Manager Application Performance Monitoring to detect performance or faults, read [User Roles for Application Performance Monitoring](planning-security-user-roles-for-apm.md).
 
