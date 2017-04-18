@@ -338,7 +338,7 @@
 #######[Get operating systems](orchestrator/get-operating-systems.md)
 #######[Get operation status](orchestrator/get-operation-status.md)
 #######[Get storage account keys](orchestrator/get-storage-account-keys.md)
-#######[Get storage account properties](orch/manage/get-storage-account-properties.md)
+#######[Get storage account properties](orchestrator/get-storage-account-properties.md)
 #######[Get vm data disk](orch/manage/get-vm-data-disk.md)
 #######[Get vm instance](orch/manage/get-vm-instance.md)
 #######[Get vm rdp file](orch/manage/get-vm-rdp-file.md)
