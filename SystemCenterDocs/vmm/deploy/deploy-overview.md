@@ -20,4 +20,4 @@ Here's what you need to do to deploy System Center 2016 - Virtual Machine Manage
 -  [Upgrade VMM](../../orchestrator/install.md). Follow these instructions to upgrade an older version of VMM to System Center 2016 - VMM.
 -  [Install VMM](../../orchestrator/install.md). Follow these instructions to do a clean installation of VMM on a single server.
 -  [Install the VMM console](../install-console.md).
--  [Set up for high availability](deploy-vmm-ha.md). Follow these articles to set up a highly available VMM deployment, including the VMM management server, database, and library.
+-  [Set up for high availability](../high-availability.md). Follow these articles to set up a highly available VMM deployment, including the VMM management server, database, and library.

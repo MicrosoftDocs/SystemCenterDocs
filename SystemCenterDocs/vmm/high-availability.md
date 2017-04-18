@@ -32,6 +32,6 @@ You'll need to prepare for a  high availability deployment
 
 ## Deploy high availability components
 
-- [Deploy the VMM management server in a failover cluster](deploy-vmm-server-ha.md)
-- [Make library server file shares highly available](deploy-library-ha.md)
-- [Deploy the SQL Server VMM database as highly available](deploy-sql-ha.md)
+- [Deploy the VMM management server in a failover cluster](deploy/deploy-vmm-server-ha.md)
+- [Make library server file shares highly available](deploy/deploy-library-ha.md)
+- [Deploy the SQL Server VMM database as highly available](deploy/deploy-sql-ha.md)
