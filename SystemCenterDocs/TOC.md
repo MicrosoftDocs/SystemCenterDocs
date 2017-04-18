@@ -843,7 +843,7 @@
 ##### [Deploy virtual machines from a VM template](vmm/vm-template.md)
 ##### [Deploy Linux virtual machines](vmm/vm-linux.md)
 ##### [Convert VMware VMs to Hyper-V](vmm/vm-convert-vmware.md)
-##### [Fail over VMs between virtual networks](vmm/manage/manage-vm-failover-virtual-networks.md)
+##### [Fail over VMs between virtual networks](vmm/manage-vm-failover-virtual-networks.md)
 ##### [Manage virtual machine settings](vmm/vm-settings.md)
 ##### [Manage dynamic and power optimization for virtual machines](vmm/vm-optimization.md)
 ##### [Create VM role templates](vmm/vm-role-template.md)
