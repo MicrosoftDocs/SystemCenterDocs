@@ -381,7 +381,7 @@
 #######[Get move request](orchestrator/get-move-request.md)
 #######[Get remote mailbox hybrid](orchestrator/get-remote-mailbox-hybrid.md)
 #######[Remove mailbox](orchestrator/remove-mailbox.md)
-#######[Remove remote mailbox hybrid](orch/manage/remove-remote-mailbox-hybrid.md)
+#######[Remove remote mailbox hybrid](orchestrator/remove-remote-mailbox-hybrid.md)
 #######[Run exchange powershell command](orch/manage/run-exchange-powershell-command.md)
 #######[Update mailbox](orch/manage/update-mailbox.md)
 #######[Update move request](orch/manage/update-move-request.md)
