@@ -112,7 +112,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 The DPM Integration Pack adds the **SC 2016 DPM** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Recovery Point](../orch/manage/create-recovery-point.md)
+[Create Recovery Point](create-recovery-point.md)
 
 [Get Data Source](../orch/manage/get-data-source.md)
 
