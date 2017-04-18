@@ -671,7 +671,7 @@
 #### [Use management packs to add functionality](scsm/management-packs.md)
 #### [Use connectors to import data](scsm/import-data-connectors.md)
 ##### [Import data from Active Directory Domain Services](scsm/import-data-ads.md)
-##### [Import data and alerts from Operations Manager](sm/manage/admin-importing-data-and-alerts-from-system-center-operations-manager.md)
+##### [Import data and alerts from Operations Manager](scsm/import-data-om.md)
 ##### [Import data from Configuration Manager](sm/manage/admin-importing-data-from-system-center-configuration-manager.md)
 ##### [Import runbooks from Orchestrator](sm/manage/admin-importing-runbooks-from-system-center-orchestrator.md)
 ##### [Use a CSV file to import data](sm/manage/admin-using-a-csv-file-to-import-data-into-service-manager.md)
