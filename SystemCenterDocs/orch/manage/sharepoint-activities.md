@@ -136,6 +136,6 @@ This integration pack adds the **Microsoft SharePoint** category to the **Activi
 
 [Update List Item](update-list-item.md)
 
-[Upload Attachment](upload-attachment.md)
+[Upload Attachment](../../orchestrator/upload-attachment.md)
 
 [Upload Document](upload-document.md)
