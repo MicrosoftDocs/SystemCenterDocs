@@ -106,7 +106,7 @@ This integration pack adds the **FTP** category to the **Activity** pane in the 
 
 [Delete File](../../orchestrator/delete-file.md)
 
-[Delete Folder](delete-folder.md)
+[Delete Folder](../../orchestrator/delete-folder.md)
 
 [Download File](download-file.md)
 
