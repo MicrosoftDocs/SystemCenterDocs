@@ -73,4 +73,4 @@ Following are current known issues with PowerShell runbooks.
 You should take into account the following additional considerations when determining which type to use for a particular runbook.
 
 - You can't convert runbooks from one type to another.
-- There are limitations using runbooks of different types as a child runbook.  See [Child runbooks in Service Management Automation](Child-Runbooks-in-Service-Management-Automation.md) for more information.
+- There are limitations using runbooks of different types as a child runbook.  See [Child runbooks in Service Management Automation](../link-runbooks.md) for more information.

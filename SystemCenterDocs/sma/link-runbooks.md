@@ -25,11 +25,11 @@ When you invoke a runbook inline, it runs in the same job as the parent runbook.
 
 When a runbook is published, any child runbooks that it calls must already have a published version. This is because Automation builds an association with any child runbooks when a runbook is compiled. If they aren"t, the parent runbook will appear to publish properly, it but will generate an exception when it"s started. If this happens, you can republish the parent runbook in order to properly reference the child runbooks. You do not need to republish the parent runbook if any of the child runbooks are changed because the association will have already been created.
 
-The parameters of a child runbook called inline can be any data type including complex objects, and there is no [JSON serialization](Starting-a-Runbook.md#Parameters) as there is when you start the runbook using the Management Portal or with the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet.
+The parameters of a child runbook called inline can be any data type including complex objects, and there is no [JSON serialization](manage/starting-a-runbook.md#parameters) as there is when you start the runbook using the Management Portal or with the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet.
 
 ### Runbook types
 
-A runbook can only use another runbook of the same [type](Runbook-Types-in-Service-Management-Automation.md) as a child runbook using inline execution.  This means that a [PowerShell Workflow runbook](Runbook-Types-in-Service-Management-Automation.md)  cannot use a [PowerShell runbook](Runbook-Types-in-Service-Management-Automation.md) as a child using inline execution, and a PowerShell runbook cannot use a PowerShell Workflow runbook.
+A runbook can only use another runbook of the same [type](manage/runbook-types-in-service-management-automation.md) as a child runbook using inline execution.  This means that a [PowerShell Workflow runbook](manage/runbook-types-in-service-management-automation.md)  cannot use a [PowerShell runbook](manage/runbook-types-in-service-management-automation.md) as a child using inline execution, and a PowerShell runbook cannot use a PowerShell Workflow runbook.
 
 When you call a PowerShell Workflow child runbook using inline execution, you just use the name of the runbook.  When you call a PowerShell child runbook, you must preceded its name with *.\\* to specify that the script is located in the local directory.
 
@@ -49,11 +49,11 @@ $output = .\Test-ChildRunbook.ps1 "VM $vm "RepeatCount 2 "Restart $true
 ```
 
 ## <a name="cmdlet"></a>Starting a Child Runbook Using Cmdlet
-You can use the [Start-SMARunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet to start a runbook as described in [To start a runbook with Windows PowerShell](starting-a-runbook.md#PowerShell). When you start a child runbook from a cmdlet, the parent runbook will move to the next line as soon as the job is created for the child runbook. If you need to retrieve any output from the runbook, then you need to access the job using [Get-SMAJobOutput](http://aka.ms/runbookauthor/getsmajoboutput).
+You can use the [Start-SMARunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet to start a runbook as described in [To start a runbook with Windows PowerShell](manage/starting-a-runbook.md#powershell). When you start a child runbook from a cmdlet, the parent runbook will move to the next line as soon as the job is created for the child runbook. If you need to retrieve any output from the runbook, then you need to access the job using [Get-SMAJobOutput](http://aka.ms/runbookauthor/getsmajoboutput).
 
 The job from a child runbook started with a cmdlet will run in a separate job from the parent runbook. This results in more jobs than invoking the workflow inline, increasing overhead on the worker server, and making them more difficult to track. The parent can start multiple child runbooks though without waiting for each to complete. For that same kind of parallel execution calling the child runbooks inline, the parent runbook would need to use the [parallel keyword](http://aka.ms/runbookauthor/parallel).
 
-Parameters for a child runbook started with a cmdlet are provided as a hashtable as described in [Runbook Parameters](Starting-a-Runbook.md#Parameters). Only simple data types can be used, although you can provide the name of a credential asset as described in [Credentials](Starting-a-Runbook.md#Credentials). If the runbook has a parameter with a complex data type, then it must be called inline.
+Parameters for a child runbook started with a cmdlet are provided as a hashtable as described in [Runbook Parameters](manage/starting-a-runbook.md#parameters). Only simple data types can be used, although you can provide the name of a credential asset as described in [Credentials](manage/starting-a-runbook.md#credentials). If the runbook has a parameter with a complex data type, then it must be called inline.
 
 The following example starts a child runbook with parameters and then waits for it to complete. Once completed, its output is collected from the job by the parent runbook.
 
@@ -87,10 +87,10 @@ The following table summarizes the differences between the two methods for calli
 |Publishing|Child runbook must be published before parent runbook is published.|Child runbook must be published any time before parent runbook is started.|
 
 ## See Also
-[To start a runbook with Windows PowerShell](Starting-a-Runbook.md#PowerShell)
+[To start a runbook with Windows PowerShell](manage/starting-a-runbook.md#powershell)
 
-[Authoring Automation Runbooks](Authoring-Automation-Runbooks.md)
+[Authoring Automation Runbooks](manage/authoring-automation-runbooks.md)
 
-[Automation Runbooks](Automation-Runbooks.md)
+[Automation Runbooks](manage/automation-runbooks.md)
 
-[Runbook types](Runbook-Types-in-Service-Management-Automation.md)
+[Runbook types](manage/runbook-types-in-service-management-automation.md)
