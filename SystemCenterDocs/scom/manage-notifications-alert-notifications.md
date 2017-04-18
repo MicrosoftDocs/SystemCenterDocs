@@ -46,7 +46,7 @@ An Operations Manager administrator must define the notification channels and if
   
 -   [How to create notification subscriptions](manage-notifications-create-subscriptions.md)  
   
--   [How to customize message content for Notifications](../om/manage/how-to-customize-message-content-for-notifications.md)  
+-   [How to customize message content for Notifications](manage-notificiations-customize-message.md)  
   
 -   [How to subscribe to notifications from an alert](../om/manage/how-to-subscribe-to-notifications-from-an-alert.md)  
   

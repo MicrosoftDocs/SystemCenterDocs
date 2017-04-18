@@ -46,7 +46,7 @@ Before you begin, gather the following information from your instant message ser
   
 7.  Click **Next**.  
   
-8.  In the **Default instant messaging notification format** area, in the **IM message** box, specify the text that is sent to notification subscribers. The **IM message** box contains a default message that includes text and variables. You can edit the default message or delete it and replace it with another message. You can click the right arrow next to the **IM message** box for a full list of available variables. For more information, see [How to customize message content for notifications](../om/manage/how-to-customize-message-content-for-notifications.md).  
+8.  In the **Default instant messaging notification format** area, in the **IM message** box, specify the text that is sent to notification subscribers. The **IM message** box contains a default message that includes text and variables. You can edit the default message or delete it and replace it with another message. You can click the right arrow next to the **IM message** box for a full list of available variables. For more information, see [How to customize message content for notifications](manage-notificiations-customize-message.md).  
   
 9. In the **Encoding** box, select the text format that your IM server and notification subscribers use for transmission. By default, Unicode (UTF-8) is used.  
   

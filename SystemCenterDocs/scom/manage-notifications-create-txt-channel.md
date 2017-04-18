@@ -31,7 +31,7 @@ To configure alert notifications for System Center 2016 - Operations Manager, yo
   
 4.  Type a name for the channel, such as **SMS channel** and optionally provide a description. Click **Next**.  
   
-5.  In the **Text message** box, specify the text that is sent to SMS notification subscribers. The **Text message** box contains a default message that includes text and variables. You can edit the default message or delete it and replace it with another message. You can click the right arrow next to the **Text message** box for a full list of available variables. For more information, see [How to Customize Message Content for Notifications](../om/manage/how-to-customize-message-content-for-notifications.md).  
+5.  In the **Text message** box, specify the text that is sent to SMS notification subscribers. The **Text message** box contains a default message that includes text and variables. You can edit the default message or delete it and replace it with another message. You can click the right arrow next to the **Text message** box for a full list of available variables. For more information, see [How to Customize Message Content for Notifications](manage-notificiations-customize-message.md).  
   
 6.  In the **Encoding**  box, select the text format for the SMS messages.  
   

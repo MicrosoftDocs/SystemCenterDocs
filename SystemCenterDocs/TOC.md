@@ -150,7 +150,7 @@
 ###### [How to enable a command notification channel](scom/manage-notifications-create-command-channel.md)
 ###### [How to create notification subscribers](scom/manage-notifications-create-subscribers.md)
 ###### [How to create notification subscriptions](scom/manage-notifications-create-subscriptions.md)
-###### [How to customize message content for notifications](om/manage/how-to-customize-message-content-for-notifications.md)
+###### [How to customize message content for notifications](scom/manage-notificiations-customize-message.md)
 ###### [How to subscribe to notifications from an alert](om/manage/how-to-subscribe-to-notifications-from-an-alert.md)
 ##### [Using the Visio add-in and SharePoint Visio Services Data Provider](scom/manage-overview-visio-addin.md)
 ###### [Install the Visio add-in](om/manage/install-the-visio-add-in.md)

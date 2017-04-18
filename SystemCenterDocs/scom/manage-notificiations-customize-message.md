@@ -86,7 +86,7 @@ You can change the format on the **Format** page of the channel type wizard when
   
 4.  Click the button to the right of the box to display the information you can add to the subject or message for notifications, as shown in the following illustration.  
   
-    ![Options for notification messages](../media/om2016-notification-format-options.png)  
+    ![Options for notification messages](./media/manage-notificiations-customize-message/om2016-notification-format-options.png)  
   
 5.  Click any item in that list to add the corresponding variable to the notification message. For example, if you click **Alert Severity**, the following variable will be added to the box:  
   
@@ -109,6 +109,6 @@ When you create a subscription, you can copy an existing channel that you can cu
   
 ## Next steps
 
-* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](../../scom/manage-notifications-create-subscribers.md)
+* To designate when to send notifications and the addresses to which the notifications should be sent to, review [How to Create Notification Subscribers](manage-notifications-create-subscribers.md)
 
-* Create a [notification subscription](../../scom/manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
+* Create a [notification subscription](manage-notifications-create-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
