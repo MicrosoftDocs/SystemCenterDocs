@@ -367,7 +367,7 @@
 #######[Update vm instance](orchestrator/update-vm-instance.md)
 #######[Upgrade deployment](orchestrator/upgrade-deployment.md)
 #######[Walk upgrade domain](orchestrator/walk-upgrade-domain.md)
-##### [Exchange Administrator](orch/manage/exchange-admin-integration-pack.md)
+##### [Exchange Administrator](orchestrator/exchange-admin-integration-pack.md)
 ###### [Exchange Administrator Activities](orch/manage/exchange-administrator-activities.md)
 #######[Create mailbox](orch/manage/create-mailbox.md)
 #######[Create move request](orch/manage/create-move-request.md)

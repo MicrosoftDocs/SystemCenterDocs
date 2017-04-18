@@ -22,7 +22,7 @@ You can download integration packs from the Microsoft Download Center. Each inte
 ## Integration Packs
 
 - [Active Directory](../../orchestrator/active-directory-integration-pack.md)
-- [Exchange Administrator](exchange-admin-integration-pack.md)
+- [Exchange Administrator](../../orchestrator/exchange-admin-integration-pack.md)
 - [Hewlett Packard Integrated Lights-Out (HP iLO)](hp-ilo-and-oa-integration-pack.md)
 - [Hewlett Packard Operations Manager](hp-operations-manager-integration-pack.md)
 - [Hewlett Packard Service Manager](hp-service-manager-integration-pack.md)
