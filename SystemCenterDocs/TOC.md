@@ -598,7 +598,7 @@
 #######[Set vm networks activity](orchestrator/set-vm-networks-activity.md)
 #######[Start vm activity](orchestrator/start-vm-activity.md)
 #######[Stop vm activity](orchestrator/stop-vm-activity.md)
-#######[Suspend vm activity](orch/manage/suspend-vm-activity.md)
+#######[Suspend vm activity](orchestrator/suspend-vm-activity.md)
 #######[Take vm snapshot activity](orch/manage/take-vm-snapshot-activity.md)
 #### [Migrate orchestrator between environments](orch/manage/migrate-orchestrator-between-environments.md)
 #### [Monitoring activities](orch/manage/monitoring-activities.md)
