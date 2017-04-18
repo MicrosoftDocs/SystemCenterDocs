@@ -43,7 +43,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Get Datastore Capacity Activity](get-datastore-capacity-activity.md)
 
-[Get Host Datastores Activity](../orch/manage/get-host-datastores-activity.md)
+[Get Host Datastores Activity](get-host-datastores-activity.md)
 
 [Get Host Properties Activity](../orch/manage/get-host-properties-activity.md)
 
