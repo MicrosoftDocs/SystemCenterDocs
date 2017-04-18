@@ -80,7 +80,7 @@ All hardware requirements for System Center 2016 - Service Manager are fully doc
 To upgrade to System Center 2016, you must first apply the Update Rollup 9 or later for System Center 2012 R2 - Service Manager.  
 
 
-All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](../plan/plan-software-requirements-for-system-center-2016-service-manager.md).  
+All software requirements for System Center 2016 - Service Manager are fully documented in [Software Requirements for System Center 2016 - Service Manager](../../scsm/sm-software-reqs.md).  
 
 ### Impact on custom development
 

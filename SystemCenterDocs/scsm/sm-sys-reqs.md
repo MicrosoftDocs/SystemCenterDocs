@@ -48,7 +48,7 @@ The following versions of Windows Server operating system are supported.
 |**Service Manager** Database or Data Warehouse Database||&#8226;|&#8226;|&#8226;||
 |**Service Manager** Self-Service Portal (HTML 5)||&#8226;|&#8226;|&#8226;|&nbsp;|
 
-Service Manager has a number of software requirements, depending on the type of component to install. See [Software requirements for Service Manager](../sm/plan/plan-software-requirements-for-system-center-2016-service-manager.md) for more information.
+Service Manager has a number of software requirements, depending on the type of component to install. See [Software requirements for Service Manager](sm-software-reqs.md) for more information.
 
 
 ## Client operating system

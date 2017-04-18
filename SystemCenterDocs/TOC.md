@@ -610,7 +610,7 @@
 #### [Plan for Service Manager deployment](scsm/plan-deployment.md)
 ##### [Service Manager parts](scsm/sm-parts.md)
 ##### [System requirements](scsm/sm-sys-reqs.md)
-##### [Software requirements](sm/plan/plan-software-requirements-for-system-center-2016-service-manager.md)
+##### [Software requirements](scsm/sm-software-reqs.md)
 ##### [SQL Server requirements](sm/plan/plan-sql-server-requirements-for-system-center-2016-service-manager.md)
 ##### [Service Manager editions](sm/plan/plan-system-center-2016-service-manager-editions.md)
 ##### [Supported configurations](sm/plan/plan-supported-configurations-for-system-center-2016-service-manager.md)

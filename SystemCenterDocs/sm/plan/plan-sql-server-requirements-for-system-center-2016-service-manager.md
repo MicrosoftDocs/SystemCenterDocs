@@ -34,7 +34,7 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 
 
-For information about the specific versions of SQL Server that are supported in System Center 2016 - Service Manager see [Software Requirements for Service Manager](plan-software-requirements-for-system-center-2016-service-manager.md).
+For information about the specific versions of SQL Server that are supported in System Center 2016 - Service Manager see [Software Requirements for Service Manager](../../scsm/sm-software-reqs.md).
 
 ## Allow updates
 
