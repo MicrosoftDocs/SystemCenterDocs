@@ -23,7 +23,7 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
 -   Read about the client operating systems you can support in [What can DPM back up?](../dpm-protection-matrix.md)
 
--   Review the [release notes](../../get-started/release-notes.md) and read about any client protection issues in [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+-   Review the [release notes](../../get-started/release-notes.md) and read about any client protection issues in [What's supported and what isn't for DPM?](../dpm-support-issues.md)
 
 -   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 
@@ -55,7 +55,7 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
     -   [What can DPM back up?](../dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 

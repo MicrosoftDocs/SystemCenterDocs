@@ -28,9 +28,9 @@ This topic summarizes some of the common support information you might need when
 
 -   As a standalone physical server - DPM can't be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 
--   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](get-dpm-installed.md#setup-prerequisites) in the Setup prerequisites table.
+-   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](get-started/get-dpm-installed.md#setup-prerequisites) in the Setup prerequisites table.
 
--   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
+-   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](get-started/get-dpm-installed.md#setup-prerequisites) in the Setup prerequites table.
 
 -   As a Windows virtual machine in VMWare - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
 
@@ -139,7 +139,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### Virtual tape library support
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](http://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](./identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](http://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](get-started/identify-compatible-tape-libraries.md).
 
 ### USB or removable drives can't be used in the DPM storage pool
 **Issue**: USB and removable storage such as Firewire.
@@ -170,7 +170,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 
 **Workaround**: Deploy DPM as virtual machine.
 
-You can enable deduplication for DPM storage when it runs in a Hyper-V virtual machine and stored backup data to VHDs in shared folders on Windows File Servers with data deduplication enabled. For more information about this scenario read [Deduplicating DPM storage](../Deploy/Deduplicate-DPM-storage.md).
+You can enable deduplication for DPM storage when it runs in a Hyper-V virtual machine and stored backup data to VHDs in shared folders on Windows File Servers with data deduplication enabled. For more information about this scenario read [Deduplicating DPM storage](deploy/deduplicate-dpm-storage.md).
 
 ### Dedup file system can't be protected to a secondary DPM server
 **Issue**: After a dedup file system is protected by a primary DPM server, it can't be protected to a secondary DPM server.
@@ -291,7 +291,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 These workloads can be running on a single server or in a cluster configuration.
 
-**Workaround**: If you want to protect a workload that isn't in a trusted domain, see [Prepare computers in workgroups and untrusted domains](../Deploy/Prepare-machines-in-workgroups-and-untrusted-domains-for-backup.md) for exact details of what's supported and what authentication is required.
+**Workaround**: If you want to protect a workload that isn't in a trusted domain, see [Prepare computers in workgroups and untrusted domains](deploy/prepare-machines-in-workgroups-and-untrusted-domains-for-backup.md) for exact details of what's supported and what authentication is required.
 
 ### Short-term backup to tape isn't supported
 **Issue**: DPM doesn't support short-term backup (incremental backup) to tape for workload data (Exchange, SQL Server, SharePoint, Hyper-V). Only file data (volumes, shares, folders) can be backed up incrementally.
@@ -330,7 +330,7 @@ These workloads can be running on a single server or in a cluster configuration.
 **Workaround**: Run the correct DPM version.
 
 ### AlwaysOn support
-**Issue**: AlwaysOn was introduced in SQL Server 2012. It's supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](../dpm-protection-matrix.md).
+**Issue**: AlwaysOn was introduced in SQL Server 2012. It's supported from DPM 2012 SP1 onwards in accordance with the [DPM protection support matrix](dpm-protection-matrix.md).
 
 **Workaround**: None.
 
@@ -383,8 +383,8 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 
 -   On premise DPM Server can't protect Azure based workloads.
 
--   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](../dpm-protection-matrix.md).
+-   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](dpm-protection-matrix.md).
 
 -   DPM running as an Azure virtual machine can't protect on-premises workloads.
 
-**Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](get-dpm-installed.md#setup-prerequisites).
+**Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](get-started/get-dpm-installed.md#setup-prerequisites).

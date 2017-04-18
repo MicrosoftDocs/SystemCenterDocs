@@ -26,7 +26,7 @@ You can back up file data on server and client computers.
 
     -   [What can DPM back up?](../dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 

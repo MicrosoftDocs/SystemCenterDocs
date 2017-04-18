@@ -109,7 +109,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
     -   [What can DPM back up?](../dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 

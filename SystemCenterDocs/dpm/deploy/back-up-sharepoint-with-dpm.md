@@ -52,7 +52,7 @@ You can deploy DPM to protect SharePoint farms, external SQL Server databases, a
 
     -   [What can DPM back up?](../dpm-protection-matrix.md)
 
-    -   [What's supported and what isn't for DPM?](../get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
+    -   [What's supported and what isn't for DPM?](../dpm-support-issues.md)
 
     -   [Get DPM installed](../get-started/Get-DPM-installed.md)
 
