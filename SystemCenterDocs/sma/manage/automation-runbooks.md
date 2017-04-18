@@ -29,7 +29,7 @@ Runbooks in Service Management Automation automate management tasks in Windows A
 
     Sample runbooks to illustrate techniques and best practices for authoring runbooks.
 
--   [Service Management Automation system runbooks](Service-Management-Automation-system-runbooks.md)
+-   [Service Management Automation system runbooks](../manage-runbooks.md)
 
     Describes the runbooks that are used to govern internal processes in Service Management Automation.
 
