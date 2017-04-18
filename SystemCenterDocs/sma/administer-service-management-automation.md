@@ -24,7 +24,7 @@ Service Management Automation must be administered separately from Windows Azure
 
     Describes how to approach and implement adding runbook workers and web services to or removing them from Service Management Automation.
 
--   [How to purge the Service Management Automation database](manage/how-to-purge-the-service-management-automation-database.md)
+-   [How to purge the Service Management Automation database](how-to-purge-the-service-management-automation-database.md)
 
     Describes how to approach and implement to install a Service Management Automation PowerShell module.
 
