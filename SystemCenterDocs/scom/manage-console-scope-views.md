@@ -346,6 +346,6 @@ You can view all rule and monitor overrides in an overrides summary view. The ov
 
 - Operations Manager includes a number of views that are created during installation.  To understand what these views provide, see [Standard Views in Operations Manager](manage-console-standard-views.md).  
 
-- Views included in sealed management packs can be modified to include other monitored object properties.  To customize a view, see [How to Personalize a View in Operations Manager](../om/manage/how-to-personalize-a-view-in-operations-manager.md).  
+- Views included in sealed management packs can be modified to include other monitored object properties.  To customize a view, see [How to Personalize a View in Operations Manager](manage-console-personalize-views.md).  
   
   

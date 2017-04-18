@@ -116,4 +116,4 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
   
 - For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](../om/manage/using-health-explorer-to-investigate-problems.md).  
 
-- To learn how to customize views in the Operations console defined in management packs imported in the management group, see [How to Personalize a View in Operations Manager](../om/manage/how-to-personalize-a-view-in-operations-manager.md).  
+- To learn how to customize views in the Operations console defined in management packs imported in the management group, see [How to Personalize a View in Operations Manager](manage-console-personalize-views.md).  
