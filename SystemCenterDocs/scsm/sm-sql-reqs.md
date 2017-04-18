@@ -62,4 +62,4 @@ For more information about installing Service Manager with AlwaysOn availability
 
 ## Next steps
 
-- Review [Service Manager editions](../sm/plan/plan-system-center-2016-service-manager-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
+- Review [Service Manager editions](sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
