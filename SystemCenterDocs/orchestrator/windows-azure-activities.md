@@ -162,7 +162,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Delete OS Image](delete-os-image.md)
 
-[Delete Service Certificate](../orch/manage/delete-service-certificate.md)
+[Delete Service Certificate](delete-service-certificate.md)
 
 [Delete Storage Account](../orch/manage/delete-storage-account.md)
 
