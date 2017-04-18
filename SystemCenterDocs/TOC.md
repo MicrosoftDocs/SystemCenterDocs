@@ -399,7 +399,7 @@
 ####### [Reply to Email](orch/manage/reply-to-e-mail.md)
 ####### [Send Email](orch/manage/send-e-mail.md)
 ####### [Update Item](orch/manage/update-item.md)
-#### [FTP Integration Pack](orch/manage/ftp-integration-pack.md)
+#### [FTP Integration Pack](orchestrator/ftp-integration-pack.md)
 ##### [FTP Activities](orch/manage/integration-pack-activities.md)
 ###### [Create Folder](orchestrator/create-folder.md)
 ###### [Delete File](orchestrator/delete-file.md)
