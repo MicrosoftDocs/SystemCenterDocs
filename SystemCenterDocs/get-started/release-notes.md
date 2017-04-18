@@ -30,17 +30,17 @@ The following release notes apply to System Center 2016 - Data Protection Manage
 **Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI.
 
 
-#### Remove Volumes from DPM using Remove-DPMDiskStorage commanndlet
+#### Remove-DPMDiskStorage commandlet may delete volumes with active or inactive backups 
 
-**Description**: When you try to remove volumes from DPM using [Remove-DPMDiskStorage](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) commandlet, the volumes which have datasources being backed up may also be removed. 
+**Description**: When you try to remove volumes from DPM using [Remove-DPMDiskStorage](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) commandlet, if the volume has datasources being backed up actively or inactively, it can be removed too.
 
-**Workaround**: Ensure that the volumes do not have datasources being actively or inactively protected before using the commandlet to remove the volumes.
+**Workaround**: Ensure that the volumes do not have datasources being actively or inactively protected before using the commandlet to remove them.
 
 
 #### DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
 **Description**: Memory consumption on the DPM Server increases continuously, reaching about 90%, leading to the DPM server slowing down.
 
-**Workaround**: The issue was found to lie in the underlying layers. The issue is fixed with [KB4013429](https://support.microsoft.com/en-us/help/4013429/windows-10-update-kb4013429).
+**Workaround**: The issue was found to lie in the underlying layers. The issue is fixed with [KB4013429](https://support.microsoft.com/en-us/help/4013429/windows-10-update-kb4013429) and SC 2016 DPM UR2.
 
 
 #### Hyper-V VMs are protected twice on VM upgrade
