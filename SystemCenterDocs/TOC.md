@@ -43,7 +43,7 @@
 #### [Back up the DPM server](dpm/back-up-the-dpm-server.md)
 ### [Manage and monitor DPM](DPM/Manage/Manage-and-monitor-DPM.md)
 #### [Monitor DPM](dpm/monitor-dpm.md)
-#### [Set up DPM logging](DPM/Manage/Set-up-DPM-logging.md)
+#### [Set up DPM logging](dpm/set-up-dpm-logging.md)
 #### [Generate DPM reports](DPM/Manage/Generate-DPM-reports.md)
 #### [Manage and monitor DPM servers with Operations Manager](dpm/Manage/Manage-and-monitor-DPM-servers-with-Operations-Manager.md)
 #### [Improve replication performance](DPM/Manage/Improve-replication-performance.md)
