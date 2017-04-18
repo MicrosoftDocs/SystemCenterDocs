@@ -14,7 +14,7 @@
 ### [.Net Version Support](system-requirements/Dot-Net-Version-Support.md)
 ## [Data Protection Manager](dpm/dpm-overview.md)
 ### [How does DPM work?](dpm/how-dpm-protects-data.md)
-### [What's new in DPM](dpm/get-started/What-s-new-in-DPM-in-System-Center-2016.md)
+### [What's new in DPM](dpm/what-s-new-in-dpm-2016.md)
 ### [What can DPM back up?](dpm/dpm-protection-matrix.md)
 ### [What's supported and what isn't for DPM?](dpm/get-started/What-s-supported-and-what-isn-t-for-DPM-.md)
 ### [Upgrade to DPM 2016](dpm/upgrade-to-dpm-2016.md)
