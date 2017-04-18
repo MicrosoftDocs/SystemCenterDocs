@@ -49,7 +49,7 @@ To create a command notification channel, you need the following information:
 
 * Create a [notification subscription](how-to-create-notification-subscriptions.md) to define the criteria, notification channel, and subscribers that will receive the notification.  
 
-* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](how-to-enable-a-text-message-notification-channel.md).
+* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](../../scom/manage-notifications-create-txt-channel.md).
 
 * To create an email notification channel, see [How to enable an email notification channel](../../scom/manage-notifications-create-email-channel.md). 
 

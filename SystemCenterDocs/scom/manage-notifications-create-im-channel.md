@@ -62,4 +62,4 @@ Before you begin, gather the following information from your instant message ser
 
 * To create a command channel notification, see [How to enable a command notification channel](../om/manage/how-to-enable-a-command-notification-channel.md).
 
-* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](../om/manage/how-to-enable-a-text-message-notification-channel.md).
+* To create a text message (SMS) notification channel, see [How to enable a text message (SMS) notification channel](manage-notifications-create-txt-channel.md).

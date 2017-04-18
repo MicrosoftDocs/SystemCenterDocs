@@ -94,7 +94,7 @@ In the first example, the UNIX administrator would be notified of alerts raised 
   
 7.  Click **Next**.  
   
-8.  On the **Channels** page, click **Add** to add a channel that is already defined, or click **New** to add a new channel. For more information on defining channels, see [How to Enable an Email Notification Channel](../../scom/manage-notifications-create-email-channel.md), [How to Enable an Instant Message Notification Channel](../../scom/manage-notifications-create-im-channel.md), [How to Enable a Text Message Notification Channel](how-to-enable-a-text-message-notification-channel.md), and [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md).  
+8.  On the **Channels** page, click **Add** to add a channel that is already defined, or click **New** to add a new channel. For more information on defining channels, see [How to Enable an Email Notification Channel](../../scom/manage-notifications-create-email-channel.md), [How to Enable an Instant Message Notification Channel](../../scom/manage-notifications-create-im-channel.md), [How to Enable a Text Message Notification Channel](../../scom/manage-notifications-create-txt-channel.md), and [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md).  
   
 9. In the **Alert aging** section on the **Channels** page, select to send notifications without delay or set a value in minutes that notification should be delayed unless conditions remain unchanged, and then click **Next**.  
   
@@ -119,7 +119,7 @@ In the first example, the UNIX administrator would be notified of alerts raised 
   
 7.  Click **Next**.  
   
-8.  On the **Channels** page, click **Add** to add a channel that is already defined, or click **New** to create a customized copy of an existing channel. For more information on defining channels, see [How to Enable an Email Notification Channel](../../scom/manage-notifications-create-email-channel.md), [How to Enable an Instant Message Notification Channel](how-to-enable-an-instant-message-notification-Channel.md), [How to Enable a Text Message (SMS) Notification Channel](how-to-enable-a-text-message-notification-channel.md), and [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md).  
+8.  On the **Channels** page, click **Add** to add a channel that is already defined, or click **New** to create a customized copy of an existing channel. For more information on defining channels, see [How to Enable an Email Notification Channel](../../scom/manage-notifications-create-email-channel.md), [How to Enable an Instant Message Notification Channel](how-to-enable-an-instant-message-notification-Channel.md), [How to Enable a Text Message (SMS) Notification Channel](../../scom/manage-notifications-create-txt-channel.md), and [How to Enable a Command Notification Channel](how-to-enable-a-command-notification-channel.md).  
   
 9. In the **Alert aging** section on the **Channels** page, select to send notifications without delay or set a value in minutes that notification should be delayed unless conditions remain unchanged, and then click **Next**.  
   
