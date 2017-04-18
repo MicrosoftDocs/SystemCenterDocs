@@ -558,7 +558,7 @@
 #######[Set pending service update](orchestrator/set-pending-service-update-in-system-center-2016.md)
 #######[Shut down vm](orchestrator/shut-down-vm.md)
 #######[Start vm](orchestrator/start-vm.md)
-#######[Stop service](orch/manage/stop-service-in-system-center-2016.md)
+#######[Stop service](orchestrator/stop-service-in-system-center-2016.md)
 #######[Stop vm](orch/manage/stop-vm.md)
 #######[Suspend vm](orch/manage/suspend-vm.md)
 #######[Update disk](orch/manage/update-disk.md)
