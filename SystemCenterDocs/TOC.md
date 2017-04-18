@@ -698,7 +698,7 @@
 #### [Configure your preference for sharing diagnostic and usage data](scsm/ceip-settings.md)
 #### [User role profiles](scsm/user-role-profiles.md)
 #### [Map Active Directory Domain Services attributes to properties in Service Manager](scsm/ad-ds-attribs.md)
-#### [Map Service Manager properties to Configuration Manager database views](sm/manage/admin-appendix-c-mapping-system-center-2016-service-manager-properties-to-configuration-manager-database-views.md)
+#### [Map Service Manager properties to Configuration Manager database views](scsm/sm-cm-views.md)
 #### [Registry keys](sm/manage/admin-appendix-d-system-center-2016-service-manager-registry-keys.md)
 ### [Day-to-day tasks in Service Manager](sm/manage/ops-operations-guide-for-system-center-2016-service-manager.md)
 #### [Search for information](sm/manage/ops-searching-for-information-in-system-center-2016-service-manager.md)
