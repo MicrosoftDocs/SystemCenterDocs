@@ -616,7 +616,7 @@
 ##### [Supported configurations](scsm/supported-configs.md)
 ##### [Considerations for Operations Manager with Service Manager](scsm/om-considerations.md)
 ##### [Languages supported by Service Manager](scsm/sm-languages.md)
-##### [Databases created by Service Manager](sm/plan/plan-databases-created-by-system-center-2016-service-manager.md)
+##### [Databases created by Service Manager](scsm/databases-created.md)
 ##### [Port assignments](sm/plan/plan-port-assignments-for-system-center-2016-service-manager.md)
 #### [Prepare for Service Manager deployment](sm/plan/plan-preparing-for-system-center-2016-service-manager-deployment.md)
 #### [Planning for performance and scalability](sm/plan/plan-planning-for-performance-and-scalability-in-system-center-2016-service-manager.md)

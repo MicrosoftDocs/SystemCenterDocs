@@ -54,4 +54,4 @@ It is assumed in this article that you are installing System Center 2016 - Servi
 
 ## Next steps
 
-- Review [Databases created by Service Manager](../sm/plan/plan-databases-created-by-system-center-2016-service-manager.md) to learn about the databases that are created during Service Manager deployment.
+- Review [Databases created by Service Manager](databases-created.md) to learn about the databases that are created during Service Manager deployment.
