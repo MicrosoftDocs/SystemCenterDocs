@@ -685,7 +685,7 @@
 #### [Configure Desired Configuration Management to generate incidents](scsm/dcm-incidents.md)
 #### [Configure notifications](scsm/notifications.md)
 #### [Use the service catalog to offer services](scsm/service-catalog.md)
-#### [Use groups, queues, and lists in Service Manager](sm/manage/admin-using-groups-queues-and-lists-in-system-center-2016-service-manager.md)
+#### [Use groups, queues, and lists in Service Manager](scsm/group-queue-lists.md)
 #### [Use runbooks to automate procedures](sm/manage/admin-using-runbooks-in-system-center-2016-service-manager.md)
 #### [User interface customization](sm/manage/admin-user-interface-customization-in-system-center-2016-service-manager.md)
 #### [Manage user roles](sm/manage/admin-managing-user-roles-in-system-center-2016-service-manager.md)

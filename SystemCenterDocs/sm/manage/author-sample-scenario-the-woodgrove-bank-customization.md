@@ -199,7 +199,7 @@ In this of the Woodgrove Bank customization scenario, Ken needs to bundle the ma
 
 In this step of the Woodgrove Bank customization scenario, Ken extends the **Change Area Enumeration** list by adding a new **Compliance** list item that represents the new change request type.  
 
-The following procedure provides only the high\-level steps for creating a new list item in the Service Manager console. For the complete procedure for creating a new list item, see [How to Add a List Item](admin-using-groups-queues-and-lists-in-system-center-2016-service-manager.md).  
+The following procedure provides only the high\-level steps for creating a new list item in the Service Manager console. For the complete procedure for creating a new list item, see [How to Add a List Item](../../scsm/group-queue-lists.md).  
 
 ### To create a new list item  
 
