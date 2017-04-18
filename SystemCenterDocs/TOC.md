@@ -722,7 +722,7 @@
 #### [Prepare for Service Manager disaster recovery](scsm/prepare-disaster-recovery.md)
 #### [Implement Service Manager disaster recovery](scsm/implement-disaster-recovery.md)
 ### [Author with Service Manager](scsm/author-with-sm.md)
-#### [Management packs in the Authoring Tool](sm/manage/author-management-packs-working-with-management-packs.md)
+#### [Management packs in the Authoring Tool](scsm/mps-in-auth-tool.md)
 ##### [Work with management packs in the Service Manager console](sm/manage/author-working-with-management-packs-in-the-service-manager-console.md)
 ##### [Work with management packs in the Service Manager Authoring Tool](sm/manage/author-working-with-management-packs-in-the-authoring-tool.md)
 ##### [Work with management pack XML files](sm/manage/author-working-with-management-pack-xml-files.md)

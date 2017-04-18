@@ -48,7 +48,7 @@ Before you work with management packs in Service Manager, you should be familiar
 
  In addition, if a management pack has dependencies on other management packs, those dependent management packs must be imported first. As an alternative, you can bundle the dependent management packs along with the required resources and the depending management pack.  
 
- For more information about how to bundle a management pack with its resources and dependent management packs, see the [How to Bundle Management Packs and Resource Files](author-how-to-bundle-management-packs-and-resource-files.md).  
+ For more information about how to bundle a management pack with its resources and dependent management packs, see the [How to Bundle Management Packs and Resource Files](../sm/manage/author-how-to-bundle-management-packs-and-resource-files.md).  
 
 ### Management pack customization  
  You might have to customize and extend the default, preimported management packs so that information technology \(IT\) professionals and other users in your organization can extend existing solutions and customize them to meet your business and customer needs. To customize features in Service Manager, you can add new objects or modify the objects that are related to that feature.  
