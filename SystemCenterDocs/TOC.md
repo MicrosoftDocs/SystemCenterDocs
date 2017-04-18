@@ -713,7 +713,7 @@
 ###### [Troubleshoot OLAP cubes](scsm/troubleshoot-olap-cubes.md)
 ###### [Create an OLAP cube using a management pack](scsm/create-olap-cube-mps.md)
 ###### [Analyze OLAP cube data with Excel](scsm/olap-cube-excel.md)
-###### [Refresh OLAP data cube information](sm/manage/ops-how-to-refresh-olap-data-cube-information.md)
+###### [Refresh OLAP data cube information](scsm/refresh-olap-cube.md)
 ###### [Manage and use the analysis libraries](sm/manage/ops-how-to-manage-the-analysis-libraries.md)
 ###### [Advanced analytical reports](sm/manage/ops-advanced-analytical-reports-available-in-system-center-2016-service-manager.md)
 ###### [Create and deploy dashboards](sm/manage/ops-creating-and-deploying-dashboards.md)
