@@ -78,7 +78,7 @@ If you use PowerShell, the pool and the storage tier is automatically created wi
 
 ### Deploy VMs
 
-VMs can be directly deployed on the hyper-converged cluster. Their virtual hard disks are placed on the volumes you create. You [create and deploy these VMs](../manage/manage-vm-overview.md) just as you would any other VM.
+VMs can be directly deployed on the hyper-converged cluster. Their virtual hard disks are placed on the volumes you create. You [create and deploy these VMs](../provision-vms.md) just as you would any other VM.
 
 
 # Disaggregated deployment

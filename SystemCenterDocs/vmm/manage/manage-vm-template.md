@@ -50,7 +50,7 @@ This article describes how to create VMs in the System Center 2016 - Virtual Mac
 
 ## Deploy the VM in a private cloud
 
-1.  In **Select Cloud** select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. Cloud suggestions are based on a 0-5 star rating. [Learn more](manage-vm-overview.md#vm-placement). Verify the settings and modify if required:
+1.  In **Select Cloud** select the private cloud on which you want to place the virtual machine. If you are connected as an Administrator, you can select the host on which the virtual machine should be deployed in the private cloud. Cloud suggestions are based on a 0-5 star rating. [Learn more](../provision-vms.md#vm-placement). Verify the settings and modify if required:
 
     -   **Expected utilization**: Expected utilization for a VM created from a blank VHD is based on standard defaults. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
     -   **Make this VM highly available**: With this option selected, only hosts that are located in a cluster are available for selection.
@@ -66,7 +66,7 @@ This article describes how to create VMs in the System Center 2016 - Virtual Mac
 
 ## Deploy the VM on a host
 
-1. In **Select Host**, view the ratings, click the host on which you want to deploy the VM, and click **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](manage-vm-overview.md#vm-placement). Verify the settings and modify if required:
+1. In **Select Host**, view the ratings, click the host on which you want to deploy the VM, and click **Next**. The host suggestions are based on a 0-5 star rating. [Learn more](../provision-vms.md#vm-placement). Verify the settings and modify if required:
 
     -   **Expected utilization**: Expected utilization for a VM created from a blank VHD is based on standard defaults. VMM updates host suggestions and ratings in response to modifications made to the expected virtual machine utilization.
     -   **Make this VM highly available**: With this option selected, only hosts that are located in a cluster are available for selection.

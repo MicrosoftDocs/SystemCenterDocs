@@ -835,7 +835,7 @@
 ###### [Manage SOFS settings](vmm/sofs-settings.md)
 ##### [Set up Storage Spaces Direct](vmm/s2d.md)
 ##### [Set up Storage Replica in VMM](vmm/storage-replica.md)
-#### [Manage virtual machines](vmm/manage/manage-vm-overview.md)
+#### [Manage virtual machines](vmm/provision-vms.md)
 ##### [Deploy virtual machines from a blank VHD](vmm/manage/manage-vm-vhd-blank.md)
 ##### [Deploy virtual machines from an existing VHD](vmm/manage/manage-vm-vhd-existing.md)
 ##### [Clone existing virtual machines](vmm/manage/manage-vm-clone.md)

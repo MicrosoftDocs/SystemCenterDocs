@@ -30,7 +30,7 @@ VMM supports virtual machines that contain Linux as the guest operating system. 
 
 ## Create the VM
 
-Create a VM running Linux using any of the available methods in the VMM fabric. [Learn more](manage-vm-overview.md).
+Create a VM running Linux using any of the available methods in the VMM fabric. [Learn more](../provision-vms.md).
 
 ## Install LIS on the VM
 

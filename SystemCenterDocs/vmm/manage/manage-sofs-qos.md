@@ -32,4 +32,4 @@ You can verify the status of currently defined QoS policies for an SOFS cluster 
 
 ## Next steps
 
-When you deploy a virtual machine and place it on a host, you can select the storage QoS when you review VM settings, in **Virtual Machine Settings** > **Machine Resources** > **Virtual Hard Disk**. [Learn more](../manage/manage-vm-overview.md) about deploying VMs.
+When you deploy a virtual machine and place it on a host, you can select the storage QoS when you review VM settings, in **Virtual Machine Settings** > **Machine Resources** > **Virtual Hard Disk**. [Learn more](../provision-vms.md) about deploying VMs.

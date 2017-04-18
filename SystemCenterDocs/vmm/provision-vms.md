@@ -23,12 +23,12 @@ This article provides an overview of managing virtual machines in the System Cen
 
 VMs can be provisioned using a number of methods:
 
-- [Create VMs from a blank virtual hard disk](manage-vm-vhd-blank.md): You create a VM and install an operating system from an .iso image, removable media, or from a network boot with a PXE server.
-- [Create a VM from an existing virtual hard disk](manage-vm-vhd-existing.md): You create a VM from a virtual hard disk in the VMM library. We recommend a VHD that's been generalized with Sysprep.
-- [Clone a VM from an existing VM](manage-vm-clone.md): Clone an existing VM in the VMM library to create a new one. We recommend you clone a VM that's been generalized with Sysprep.
-- [Create a VM from a template](manage-vm-template.md): Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
+- [Create VMs from a blank virtual hard disk](manage/manage-vm-vhd-blank.md): You create a VM and install an operating system from an .iso image, removable media, or from a network boot with a PXE server.
+- [Create a VM from an existing virtual hard disk](manage/manage-vm-vhd-existing.md): You create a VM from a virtual hard disk in the VMM library. We recommend a VHD that's been generalized with Sysprep.
+- [Clone a VM from an existing VM](manage/manage-vm-clone.md): Clone an existing VM in the VMM library to create a new one. We recommend you clone a VM that's been generalized with Sysprep.
+- [Create a VM from a template](manage/manage-vm-template.md): Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
 - **Create a VM in a service deployment**: In VMM you can create services that are logical grouping of VMs that are configured and deployed as s single entity. A single tier service includes a single VM. Multi-tier services have multiple VMs.
-- [Rapidly provision a VM using storage area network (SAN) copy](manage-vm-rapid-san.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
+- [Rapidly provision a VM using storage area network (SAN) copy](manage/manage-vm-rapid-san.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
 
 ## VM placement
 
@@ -158,4 +158,4 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 ## Next steps
 
-- [Deploy VMs from a blank virtual hard disk](manage-vm-vhd-blank.md)
+- [Deploy VMs from a blank virtual hard disk](manage/manage-vm-vhd-blank.md)
