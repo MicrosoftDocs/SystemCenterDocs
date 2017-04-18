@@ -182,4 +182,4 @@ For more information about UI customization, see [The Official System Center Ser
 
 ## Next steps
 
-- Review [Guidance for load balancing](../sm/deploy/deploy-guidance-for-load-balancing-system-center-2016-service-manager.md) to configure Windows Server Network Load Balancing with Service Manager.
+- Review [Guidance for load balancing](load-balancing.md) to configure Windows Server Network Load Balancing with Service Manager.

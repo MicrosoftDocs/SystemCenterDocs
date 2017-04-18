@@ -638,7 +638,7 @@
 #### [Deployment considerations with a disjointed namespace](scsm/disjointed-namespaces.md)
 #### [Learn about the new Self Service portal](scsm/learn-self-service-portal.md)
 ##### [Deploy the Self-Service portal](scsm/deploy-self-service-portal.md)
-#### [Guidance for load balancing](sm/deploy/deploy-guidance-for-load-balancing-system-center-2016-service-manager.md)
+#### [Guidance for load balancing](scsm/load-balancing.md)
 #### [Complete Service Manager deployment by backing up the encryption key](sm/deploy/deploy-completing-deployment-by-backing-up-the-encryption-key.md)
 #### [Index non-English knowledge articles](sm/deploy/deploy-indexing-non-english-knowledge-articles.md)
 #### [Troubleshoot deployment issues to resolve problems](sm/deploy/deploy-troubleshooting-system-center-2016-service-manager-deployment-issues.md)
