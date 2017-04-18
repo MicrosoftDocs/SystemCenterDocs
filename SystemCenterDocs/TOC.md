@@ -674,7 +674,7 @@
 ##### [Import data and alerts from Operations Manager](scsm/import-data-om.md)
 ##### [Import data from Configuration Manager](scsm/import-data-cm.md)
 ##### [Import runbooks from Orchestrator](scsm/import-data-orch.md)
-##### [Use a CSV file to import data](sm/manage/admin-using-a-csv-file-to-import-data-into-service-manager.md)
+##### [Use a CSV file to import data](scsm/import-data-csv.md)
 ##### [Optionally disable ECL logging for faster connector synchronization](sm/manage/admin-optionally-disable-ecl-logging-for-faster-connector-synchronization.md)
 #### [Configuration items](sm/manage/admin-configuration-items-in-system-center-2016-service-manager.md)
 #### [Configure incident management](sm/manage/admin-configuring-incident-management-in-system-center-2016-service-manager.md)

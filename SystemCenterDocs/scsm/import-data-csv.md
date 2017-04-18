@@ -127,7 +127,7 @@ Before you can import data from a comma-separated value (CSV) file, you have to 
 
 6.  In the **Import Instances from CSV File** dialog box, verify that the numbers next to **Items saved**, **Instances created in memory**, and **Instances committed to database** are equal to the number of rows in the data file, and then click **Close**.
 
-![PowerShell symbol](../media/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
+![PowerShell symbol](./media/import-data-csv/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
 
 ### To validate the import of configuration items from a CSV file
 
