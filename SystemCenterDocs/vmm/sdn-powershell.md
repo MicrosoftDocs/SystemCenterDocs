@@ -25,7 +25,7 @@ You can deploy SDN components in the VMM fabric, including:
 
 There are a couple of ways to deploy these components:
 
-- **VMM console**: Deploy the [network controller](../sdn-controller.md), [SLB](../sdn-slb.md), and [RAS gateway](../sdn-gateway.md) manually in the VMM console.
+- **VMM console**: Deploy the [network controller](sdn-controller.md), [SLB](sdn-slb.md), and [RAS gateway](sdn-gateway.md) manually in the VMM console.
 - **PowerShell**: Deploy all components using PowerShell scripts.
 
 ## Advantages of PowerShell deployment
@@ -42,9 +42,9 @@ There are a couple of ways to deploy these components:
 
 - SET-enabled switch deployment isn't currently supported in a PowerShell deployment. You need to deploy the SET-enabled switch out-of-band, and then specify the name of the switch during deployment.
 - Check you have the prerequisites for SDN component deployment in place:
-    - [Network controller prerequisites](../sdn-controller.md#before-you-start)
-    - [SLB prerequisites](../sdn-slb.md#before-you-start)
-    - [RAS gateway prerequisites](../sdn-gateway.md#before-you-start)
+    - [Network controller prerequisites](sdn-controller.md#before-you-start)
+    - [SLB prerequisites](sdn-slb.md#before-you-start)
+    - [RAS gateway prerequisites](sdn-gateway.md#before-you-start)
 
 ## Deployment steps
 
@@ -52,13 +52,13 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 
 
 1. **Configure hosts and physical network infrastructure**: You need access to your physical network devices to configure VLANs, routing etc. You also need Hyper-V hosts to host the SDN infrastructure and tenant VMs. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
-2. [Prepared virtual hard disk](../sdn-controller.md#prepare-a-virtual-hard-disk) for the service templates in VHD or VHDX format.
-3. Download the [network controller](../sdn-controller.md#download-the-network-controller-service-template) service template, the [SLB service](../sdn-slb.md#download-the-service-template) template, and the [RAS gateway](../sdn-gateway.md#download-the-service-template) service template.
-4. Import the [network controller](../sdn-controller.md#import-the-template), [SLB](../sdn-slb.md#import-the-service-template), and [RAS gateway](../sdn-gateway.md#import-the-service-template) templates into the VMM library.
-5. [Set up Active Directory security groups](../sdn-controller.md#set-up-active-directory-groups). One for network controller management, and another for network controller clients. Each group will need at least one user account in it.
-6. [Set up a VMM library share](../sdn-controller.md#create-a-library-share-for-logging).You can have an optional library file share for keeping diagnostic logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
-7. [Set up a dedicated VMM host group](../sdn-controller.md#set-up-host-groups) for all SDN Hyper-V hosts. Note that hosts must be running the latest version of Windows Server 2016, and have the Hyper-V role enabled.
-8. [Set up a certificate](../sdn-controller.md#set-up-the-security-certificates). You need an SSL certificate for HTTPS communications between VMM and the network controller.
+2. [Prepared virtual hard disk](sdn-controller.md#prepare-a-virtual-hard-disk) for the service templates in VHD or VHDX format.
+3. Download the [network controller](sdn-controller.md#download-the-network-controller-service-template) service template, the [SLB service](sdn-slb.md#download-the-service-template) template, and the [RAS gateway](sdn-gateway.md#download-the-service-template) service template.
+4. Import the [network controller](sdn-controller.md#import-the-template), [SLB](sdn-slb.md#import-the-service-template), and [RAS gateway](sdn-gateway.md#import-the-service-template) templates into the VMM library.
+5. [Set up Active Directory security groups](sdn-controller.md#set-up-active-directory-groups). One for network controller management, and another for network controller clients. Each group will need at least one user account in it.
+6. [Set up a VMM library share](sdn-controller.md#create-a-library-share-for-logging).You can have an optional library file share for keeping diagnostic logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
+7. [Set up a dedicated VMM host group](sdn-controller.md#set-up-host-groups) for all SDN Hyper-V hosts. Note that hosts must be running the latest version of Windows Server 2016, and have the Hyper-V role enabled.
+8. [Set up a certificate](sdn-controller.md#set-up-the-security-certificates). You need an SSL certificate for HTTPS communications between VMM and the network controller.
 9. [Download](https://github.com/manishmsft/SDN/tree/master/VMM/VMM SDN Express) and run the SDN scripts. There are three scripts:
 
     - **VMMExpress.ps1**: This script deploys the SDN stack. After you download it, you can your own customizations.

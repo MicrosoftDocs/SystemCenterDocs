@@ -772,7 +772,7 @@
 ##### [Deploy an SDN network controller](vmm/sdn-controller.md)
 ##### [Deploy an SDN SLB](vmm/sdn-slb.md)
 ##### [Deploy an SDN RAS gateway](vmm/sdn-gateway.md)
-##### [Deploy SDN using PowerShell](vmm/scenario/sdn-powershell.md)
+##### [Deploy SDN using PowerShell](vmm/sdn-powershell.md)
 #### [Remove an SDN from VMM](vmm/scenario/sdn-remove-an-sdn.md)
 ### [Deploy](vmm/deploy/deploy-overview.md)
 #### [Upgrade VMM](vmm/deploy/deploy-upgrade.md)
