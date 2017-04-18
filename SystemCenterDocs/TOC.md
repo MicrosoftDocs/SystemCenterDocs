@@ -523,7 +523,7 @@
 #######[Apply pending service update ](orchestrator/apply-pending-service-update-in-system-center-2016.md)
 #######[Configure service deployment](orchestrator/configure-service-deployment-in-system-center-2016.md)
 #######[Create checkpoint](orchestrator/create-checkpoint.md)
-#######[Create network adapter](orch/manage/create-network-adapter.md)
+#######[Create network adapter](orchestrator/create-network-adapter.md)
 #######[Create new disk from vhd](orch/manage/create-new-disk-from-vhd.md)
 #######[Create new disk](orch/manage/create-new-disk.md)
 #######[Create user role](orch/manage/create-user-role.md)
