@@ -30,18 +30,18 @@ You can start Health Explorer from the **Tasks** pane after you select an object
   
 All monitors and rules that are defined for a selected object display in the appropriate category.  
   
-![Health Explorer](../media/om2016-healthexplorer.png)  
+![Health Explorer](./media/manage-consoles-overview-healthexplorer/om2016-healthexplorer.png)  
   
 The icons used to indicate state are as follows:  
   
 |Icon|Meaning|  
 |--------|-----------|  
-|![White button indicates unknown status](../media/om2016-Unknownicon.png)|Unknown, unmonitored (blank)|  
-|![Green check icon indicates healthy](../media/om2016-healthyicon.png)|Success, health is OK (green)|  
-|![Yellow triangle and exclamation mark is warning](../media/om2016-warningicon.png)|Warning (yellow)|  
-|![Red button with white X indicates critical state](../media/om2016-criticalicon.png)|Critical (red)|  
-|![Wrench icon indicates maintenance mode](../media/om2016-maintenancemodeicon.png)|Maintenance mode (gray)|  
-|![Grayed-out healthy icon](../media/om2016-healthygrayicon.png)|Out of contact (gray)|  
+|![White button indicates unknown status](./media/manage-consoles-overview-healthexplorer/om2016-Unknownicon.png)|Unknown, unmonitored (blank)|  
+|![Green check icon indicates healthy](./media/manage-consoles-overview-healthexplorer/om2016-healthyicon.png)|Success, health is OK (green)|  
+|![Yellow triangle and exclamation mark is warning](./media/manage-consoles-overview-healthexplorer/om2016-warningicon.png)|Warning (yellow)|  
+|![Red button with white X indicates critical state](./media/manage-consoles-overview-healthexplorer/om2016-criticalicon.png)|Critical (red)|  
+|![Wrench icon indicates maintenance mode](./media/manage-consoles-overview-healthexplorer/om2016-maintenancemodeicon.png)|Maintenance mode (gray)|  
+|![Grayed-out healthy icon](./media/manage-consoles-overview-healthexplorer/om2016-healthygrayicon.png)|Out of contact (gray)|  
   
 By default, when the Health Explorer windows first opens, all monitors that are in a failed, or red, state are expanded. If a monitor contains other monitors, as in the case of a roll\-up monitor, all monitors are shown in a hierarchical layout so that monitoring data for all dependent services and applications is displayed. If you want to view more detail on any dependent monitor, right\-click that monitor and then click **Monitor Properties** to open another Health Explorer window.  
   
@@ -49,9 +49,9 @@ When the Health Explorer window is open, you can review a history of diagnostic 
   
 The Health Explorer window refreshes automatically every 30 seconds. Press the F5 function key for an immediate refresh.  
   
-For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](using-health-explorer-to-investigate-problems.md).  
+For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](../om/manage/using-health-explorer-to-investigate-problems.md).  
   
 ## Next steps
   
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](using-the-operations-console-in-operations-manager.md).  
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).  
   
