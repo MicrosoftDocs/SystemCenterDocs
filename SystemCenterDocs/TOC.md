@@ -830,7 +830,7 @@
 ##### [Set up a scale-out file server (SOFS)](vmm/sofs.md)
 ###### [Perform a rolling upgrade on SOFS](vmm/sofs-rolling-upgrade.md)
 ###### [Add an existing SOFS to the VMM fabric](vmm/sofs-existing.md)
-###### [Create an SOFS cluster from standalone servers](vmm/manage/manage-sofs-standalone-server.md)
+###### [Create an SOFS cluster from standalone servers](vmm/sofs-cluster.md)
 ###### [Provision SOFS from bare-metal computers](vmm/manage/manage-sofs-bare-metal.md)
 ###### [Manage SOFS settings](vmm/manage/manage-sofs.md)
 ##### [Set up Storage Spaces Direct](vmm/s2d.md)
