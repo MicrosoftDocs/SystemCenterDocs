@@ -400,7 +400,7 @@
 ####### [Send Email](orch/manage/send-e-mail.md)
 ####### [Update Item](orch/manage/update-item.md)
 #### [FTP Integration Pack](orchestrator/ftp-integration-pack.md)
-##### [FTP Activities](orch/manage/integration-pack-activities.md)
+##### [FTP Activities](orchestrator/integration-pack-activities.md)
 ###### [Create Folder](orchestrator/create-folder.md)
 ###### [Delete File](orchestrator/delete-file.md)
 ###### [Delete Folder](orchestrator/delete-folder.md)
