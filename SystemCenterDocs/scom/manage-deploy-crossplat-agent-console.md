@@ -16,15 +16,15 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-Use the **Computer and Device Management Wizard** to discover and install agents on UNIX and Linux computers. For a list of the supported operating system versions, see [Supported Operating Systems and Versions](../../scom/plan-supported-crossplat-os.md).
+Use the **Computer and Device Management Wizard** to discover and install agents on UNIX and Linux computers. For a list of the supported operating system versions, see [Supported Operating Systems and Versions](plan-supported-crossplat-os.md).
 
 Before you run the wizard, gather the following information:
 
 -   The host name, IP address, or range of IP addresses of the UNIX or Linux computers that you want to discover.
 
--   At a minimum, you will need a low-privileged account established on the UNIX or Linux computer to discover it. To install an agent, you will need privileged access. For more information, see [Planning Security Credentials for UNIX and Linux Computers](../../scom/plan-security-crossplat-credentials.md).
+-   At a minimum, you will need a low-privileged account established on the UNIX or Linux computer to discover it. To install an agent, you will need privileged access. For more information, see [Planning Security Credentials for UNIX and Linux Computers](plan-security-crossplat-credentials.md).
 
--   If defined, the name of the resource pool created to monitor UNIX or Linux computers. Resource pools can contain management servers or gateways for monitoring UNIX or Linux computers. For more information, see [Resource Pool Design Considerations](../../scom/plan-resource-pool-design.md).
+-   If defined, the name of the resource pool created to monitor UNIX or Linux computers. Resource pools can contain management servers or gateways for monitoring UNIX or Linux computers. For more information, see [Resource Pool Design Considerations](plan-resource-pool-design.md).
 
 ## To discover and install an agent on a UNIX or Linux computer
 
@@ -49,7 +49,7 @@ Before you run the wizard, gather the following information:
            > [!IMPORTANT]
            > Discovering only computers with the agent installed requires that the agent is currently installed and configured with a signed certificate.
 
-        c.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
+        c.  To specify the credentials for installing an agent, click **Set credentials**. For detailed instructions, see “Credentials for Installing Agents” in [Setting Credentials for Accessing UNIX and Linux Computers](../om/manage/how-to-set-credentials-for-accessing-unix-and-linux-computers.md).
 
         Alternatively, to use default credentials, check the box **Use Run As Credentials**. If this option is selected, a default Run As account must be defined in the **UNIX/Linux Action Account** and **UNIX/Linux Agent Maintenance Account** Run As profiles. The default account is one that is associated with **All Managed Objects**.
 
@@ -65,20 +65,20 @@ Before you run the wizard, gather the following information:
 
 9. On the **Computer Management** page, after the deployment process is completed, click **Done**.
 
-You must have, at a minimum, a UNIX/Linux Action Account profile configured with a Monitoring Run As Account to monitor the UNIX or Linux computer. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](../../scom/manage-security-config-crossplat-runas-profile.md).
+You must have, at a minimum, a UNIX/Linux Action Account profile configured with a Monitoring Run As Account to monitor the UNIX or Linux computer. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](manage-security-config-crossplat-runas-profile.md).
 
 > [!NOTE]
 > Solaris Zones are supported on Solaris 10 or newer versions. In monitoring a computer with Zones, each Zone is treated like a separate computer. You must install the agent on each computer that you want to monitor. Install the agent on the global zone first, because sparse zones share files with the global zone. If you try to install on a sparse zone first, the installation fails. For more information about troubleshooting, see [Operating System Issues](http://go.microsoft.com/fwlink/?LinkId=318149).
 
 ## Next steps
 
-- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](Install-Agent-and-Certificate-on-UNIX-and-Linux-Computers-Using-the-Command-Line.md)
+- For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](../om/manage/install-agent-and-certificate-on-unix-and-linux-computers-using-the-command-line.md)
 
-- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](Applying-Overrides-to-Object-Discoveries.md).
+- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](../om/manage/applying-overrides-to-object-discoveries.md).
 
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](Upgrading-and-Uninstalling-Agents-on-UNIX-and-Linux-Computers.md).
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](../om/manage/upgrading-and-uninstalling-agents-on-unix-and-linux-computers.md).
 
-- Review [Manually Uninstalling Agents from UNIX and Linux Computers](Manually-Uninstalling-Agents-from-UNIX-and-Linux-Computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](../om/manage/manually-uninstalling-agents-from-unix-and-linux-computers.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
 
 
 
