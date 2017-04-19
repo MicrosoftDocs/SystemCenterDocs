@@ -137,6 +137,6 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
 - Review [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md) to understand how to target Run As account  distribution to agent-managed computers securely.  
 
-- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](../../z-harvest-om/om/manage/how-to-create-a-new-action-account-in-operations-manager.md).
+- If you need to create new credentials for the management server action account, see [How to Create a New Action Account in Operations Manager](manage-security-create-runas-actionaccount.md).
 
 - To learn about how you can use the The Health Service lockdown tool to limit the identities used to run a rule, task, or monitor on agent-managed systems, see [Control Access by Using the Health Service Lockdown Tool in Operations Manager](~/scom/manage-security-overview-hslockdown.md).  

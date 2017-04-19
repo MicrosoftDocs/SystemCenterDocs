@@ -34,4 +34,4 @@ To learn more about Windows PowerShell, see [Windows PowerShell Getting Started 
 
 - To stop monitoring of a computer, group of computers or monitored object temporarily during planned maintenance using a schedule, or to stop monitoring while troubleshooting an issue, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md). 
 
-- To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](../../z-harvest-om/om/manage/running-tasks-in-operations-manager.md).    
+- To learn how to launch common tools or commands from the Operations Manager console to help reduce your time investigating and diagnosing issues, see [Running Tasks in Operations Manager](manage-running-tasks.md).    
