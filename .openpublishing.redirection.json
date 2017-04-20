@@ -78,10 +78,6 @@
      "redirect_url" : "/system-center/dpm/plan-long-and-short-term-data-storage"
 },
 {
-     "source_path" : "SystemCenterDocs/dpm/get-started/upgrade-to-dpm-2016.md",
-     "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
-},
-{
      "source_path" : "SystemCenterDocs/dpm/get-started/What-can-DPM-back-up-.md",
      "redirect_url" : "/system-center/dpm/dpm-protection-matrix"
 },
@@ -288,10 +284,6 @@
 {
      "source_path" : "SystemCenterDocs/om/manage/administering-and-configuring-the-unix-linux-agent.md",
      "redirect_url" : "/system-center/scom/manage-security-administer-crossplat-agent"
-},
-{
-     "source_path" : "SystemCenterDocs/om/manage/agentless-monitoring-in-operations-manager.md",
-     "redirect_url" : "/system-center/scom/agentless-monitoring-in-operations-manager"
 },
 {
      "source_path" : "SystemCenterDocs/OM/Manage/applying-overrides-to-object-discoveries.md",
@@ -866,10 +858,6 @@
      "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
   },
   {
-     "source_path" : "SystemCenterDocs/orch/manage/design-and-build-runbooks.md",
-     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
-  },
-  {
      "source_path" : "SystemCenterDocs/orch/manage/building-a-runbook.md",
      "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
   },
@@ -1431,7 +1419,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/scsm/setup-account.md",
-     "redirect_url": "/system-center/scsm/setup-account-considerations"
+      "redirect_url": "/system-center/scsm/prepare-deploy"
 },
 {
      "source_path" : "SystemCenterDocs/scsm/setup-required-accounts.md",
@@ -1551,7 +1539,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-appendix-a-command-line-option-error-codes.md",
-     "redirect_url" : "/system-center/scsm/error-codes"
+     "redirect_url": "/system-center/scsm/deploy-cmd-line"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-appendix-b-guidance-for-moving-the-service-manager-and-data-warehouse-databases.md",
@@ -1627,11 +1615,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-moving-data-warehouse-databases.md",
-     "redirect_url" : "/system-center/scsm/moving-dw-dbs"
+     "redirect_url": "/system-center/scsm/move-databases"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-moving-the-service-manager-database.md",
-     "redirect_url" : "/system-center/scsm/moving-sm-db"
+     "redirect_url": "/system-center/scsm/move-databases"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-new-self-service-portal-deployment-scenarios-and-troubleshooting.md",
@@ -1639,7 +1627,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-prerequisite-checker-for-system-center-2016-service-manager.md",
-     "redirect_url" : "/system-center/scsm/prereq-checker"
+     "redirect_url": "/system-center/scsm/deploy-sm"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-registering-with-the-service-manager-data-warehouse-to-enable-reporting.md",
@@ -1647,7 +1635,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-self-service-portal-for-system-center-2016-service-manager.md",
-     "redirect_url" : "/system-center/scsm/deploy-ssp"
+     "redirect_url": "/system-center/scsm/learn-self-service-portal"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-troubleshooting-system-center-2016-service-manager-deployment-issues.md",
@@ -1655,7 +1643,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-turkish-language-collations.md",
-     "redirect_url" : "/system-center/scsm/turkish"
+     "redirect_url": "/system-center/scsm/deploy-sm"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-using-sql-server-2014-alwayson-availability-groups-with-service-manager.md",
@@ -1735,7 +1723,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/upgrade-how-to-work-around-configuration-service-startup-issues.md",
-     "redirect_url" : "/system-center/scsm/config-startup-issues"
+     "redirect_url": "/system-center/scsm/resolve-upgrade-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/upgrade-remote-sql-server-reporting-services.md",
@@ -1747,8 +1735,8 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/deploy/upgrade-upgrade-planning-for-system-center-2016-service-manager.md",
-     "redirect_url" : "/system-center/scsm/upgrade-planning"
-},
+     "redirect_url": "/system-center/scsm/upgrade-to-sm-2016"
+,
 {
      "source_path" : "SystemCenterDocs/sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md",
      "redirect_url" : "/system-center/scsm/upgrade-environment"
@@ -1771,15 +1759,15 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-about-data-warehouse-module-deployment.md",
-     "redirect_url" : "/system-center/scsm/about-dw-module-deploy"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-about-reimporting-previously-removed-management-packs.md",
-     "redirect_url" : "/system-center/scsm/reimporting-removed-mps"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-about-substitution-strings-in-notification-templates.md",
-     "redirect_url" : "/system-center/scsm/sub-strings"
+     "redirect_url": "/system-center/scsm/notifications"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-administering-system-center-2016-service-manager.md",
@@ -1843,187 +1831,187 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-add-request-offerings-to-service-offerings.md",
-     "redirect_url" : "/system-center/scsm/request-offerings-to-service-offerings"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-automatically-notify-groups-of-users.md",
-     "redirect_url" : "/system-center/scsm/notify-groups"
+     "redirect_url": "/system-center/scsm/notifications"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-change-the-credentials-for-sql-server-analysis-services-account.md",
-     "redirect_url" : "/system-center/scsm/change-creds-ssas"
+     "redirect_url": "/system-center/scsm/run-as-accounts"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-change-the-credentials-for-sql-server-reporting-services-account.md",
-     "redirect_url" : "/system-center/scsm/change-creds-ssrs"
+     "redirect_url": "/system-center/scsm/run-as-accounts"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-change-the-password-for-the-operational-database-account.md",
-     "redirect_url" : "/system-center/scsm/change-password-db-account"
+     "redirect_url": "/system-center/scsm/run-as-accounts"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-change-the-user-credentials-for-the-operational-database-account.md",
-     "redirect_url" : "/system-center/scsm/change-creds-db"
+     "redirect_url": "/system-center/scsm/run-as-accounts"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-change-the-workflow-run-as-account-credentials.md",
-     "redirect_url" : "/system-center/scsm/change-workflow-run-as"
+     "redirect_url": "/system-center/scsm/run-as-accounts"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-configure-activity-management-workflows.md",
-     "redirect_url" : "/system-center/scsm/config-activity-mgt-workflows"
+     "redirect_url": "/system-center/scsm/change-activity-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-configure-change-management-workflows.md",
-     "redirect_url" : "/system-center/scsm/config-change-mgt-workflows"
+     "redirect_url": "/system-center/scsm/change-activity-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-configure-general-activity-settings.md",
-     "redirect_url" : "/system-center/scsm/config-activity-settings"
+     "redirect_url": "/system-center/scsm/change-activity-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-configure-general-change-settings.md",
-     "redirect_url" : "/system-center/scsm/config-change-settings"
+     "redirect_url": "/system-center/scsm/change-activity-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-configure-incident-workflows.md",
-     "redirect_url" : "/system-center/scsm/config-incident-workflows"
+     "redirect_url": "/system-center/scsm/workflows"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-configure-notification-channels.md",
-     "redirect_url" : "/system-center/scsm/config-notification-channels"
+     "redirect_url": "/system-center/scsm/notifications"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-copy-request-offerings-and-service-offerings.md",
-     "redirect_url" : "/system-center/scsm/copy-request-offerings"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-calendar-item.md",
-     "redirect_url" : "/system-center/scsm/create-calendar-item"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-catalog-item-group.md",
-     "redirect_url" : "/system-center/scsm/create-catalog-group"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-manual-activity-template.md",
-     "redirect_url" : "/system-center/scsm/create-manual-activity"
+     "redirect_url": "/system-center/scsm/change-activity-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-request-offering.md",
-     "redirect_url" : "/system-center/scsm/create-request-offering"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-service.md",
-     "redirect_url" : "/system-center/scsm/admin-how-to-create-a-service"
+     "redirect_url": "/system-center/scsm/config-items"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-service-level-objective.md",
-     "redirect_url" : "/system-center/scsm/create-slo"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-a-service-offering.md",
-     "redirect_url" : "/system-center/scsm/create-service-offering"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-change-request-templates.md",
-     "redirect_url" : "/system-center/scsm/create-change-req-template"
+     "redirect_url": "/system-center/scsm/change-activity-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-notification-templates.md",
-     "redirect_url" : "/system-center/scsm/create-notification-templates"
+     "redirect_url": "/system-center/scsm/notifications"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-service-request-templates-for-new-request-offerings.md",
-     "redirect_url" : "/system-center/scsm/create-sr-templates"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-create-sla-metrics.md",
-     "redirect_url" : "/system-center/scsm/create-sla-metrics"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-delete-a-service-offering-or-a-request-offering.md",
-     "redirect_url" : "/system-center/scsm/del-so-or-ro"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-edit-a-service-offering-or-a-request-offering.md",
-     "redirect_url" : "/system-center/scsm/edit-so-or-ro"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-enable-disable-data-warehouse-job-schedules.md",
-     "redirect_url" : "/system-center/scsm/disable-dw-job-sched"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-extend-the-service-offering-categories.md",
-     "redirect_url" : "/system-center/scsm/extend-so-categories"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-modify-an-sla-metric-view.md",
-     "redirect_url" : "/system-center/scsm/modify-sla-view"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-process-all-dimensions-in-the-data-warehouse-using-windows-powershell-cmdlets.md",
-     "redirect_url" : "/system-center/scsm/process-dw-dimensions"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-publish-a-request-offering.md",
-     "redirect_url" : "/system-center/scsm/publish-ro"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-publish-a-service-offering.md",
-     "redirect_url" : "/system-center/scsm/publish-so"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-reactivate-incidents-with-sla-information.md",
-     "redirect_url" : "/system-center/scsm/reactivate-incidents"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-review-incidents-with-sla-information.md",
-     "redirect_url" : "/system-center/scsm/review-incidents-sla"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-schedule-a-data-warehouse-job.md",
-     "redirect_url" : "/system-center/scsm/sched-dw-job"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-send-sla-notification-information-to-the-assigned-to-user.md",
-     "redirect_url" : "/system-center/scsm/send-sla-info"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-specify-a-user-role-for-catalog-items.md",
-     "redirect_url" : "/system-center/scsm/specify-user-role-cat-items"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-stop-and-start-a-data-warehouse-job.md",
-     "redirect_url" : "/system-center/scsm/stop-start-dw-job"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-subscribe-to-notifications.md",
-     "redirect_url" : "/system-center/scsm/subscribe-notifications"
+     "redirect_url": "/system-center/scsm/notifications"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-troubleshoot-a-data-warehouse-job.md",
-     "redirect_url" : "/system-center/scsm/troubleshoot-dw-job"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-unpublish-a-request-offering.md",
-     "redirect_url" : "/system-center/scsm/unpub-ro"
+     "redirect_url": "/system-center/scsm/service-catalog"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-verify-a-notification-configuration.md",
-     "redirect_url" : "/system-center/scsm/verify-notification-config"
+     "redirect_url": "/system-center/scsm/notifications"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-view-data-warehouse-job-history.md",
-     "redirect_url" : "/system-center/scsm/view-dw-job-history"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-view-sla-information-in-an-incident-form.md",
-     "redirect_url" : "/system-center/scsm/view-sla-info-in-incident"
+     "redirect_url": "/system-center/scsm/service-level-mgt"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-how-to-view-workflow-success-or-failure.md",
-     "redirect_url" : "/system-center/scsm/view-workflow-status"
+     "redirect_url": "/system-center/scsm/workflows"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-importing-data-and-alerts-from-system-center-operations-manager.md",
@@ -2067,7 +2055,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-service-manager-data-warehouse-retention.md",
-     "redirect_url" : "/system-center/scsm/dw-retention"
+     "redirect_url": "/system-center/scsm/manage-dw"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/admin-user-interface-customization-in-system-center-2016-service-manager.md",
@@ -2127,7 +2115,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-creating-workflows-for-it-processes.md",
-     "redirect_url" : "/system-center/scsm/create-workflows-processes"
+     "redirect_url": "/system-center/scsm/manage-workflows-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-forms-customizing-and-authoring.md",
@@ -2143,51 +2131,51 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-high-level-steps-of-the-woodgrove-bank-customization-scenario.md",
-     "redirect_url" : "/system-center/scsm/high-level-steps-woodgrove"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-check-box-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-check-box-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-date-picker-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-date-picker-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-label-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-label-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-list-picker-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-list-picker-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-an-image-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-image-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-panel-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-panel-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-single-instance-picker-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-single-instance-picker-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-tab-control-and-tab-item-controls-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-tab-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-text-box-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-text-box-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-add-a-user-picker-control-to-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/add-user-picker-control"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-browse-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/browse-form"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-bundle-management-packs-and-resource-files.md",
@@ -2195,11 +2183,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-create-a-new-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/create-new-form"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-customize-a-form-in-the-authoring-tool.md",
-     "redirect_url" : "/system-center/scsm/customize-form"
+     "redirect_url": "/system-center/scsm/auth-forms-auth-tool"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-how-to-customize-the-default-incident-form-sample-scenario.md",
@@ -2219,7 +2207,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-introduction-to-the-service-manager-authoring-guide.md",
-     "redirect_url" : "/system-center/scsm/author-guide-intro"
+     "redirect_url": "/system-center/scsm/author-with-sm"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-management-packs-working-with-management-packs.md",
@@ -2231,8 +2219,8 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-prerequisites-for-the-woodgrove-bank-customization-scenario.md",
-     "redirect_url" : "/system-center/scsm/prereqs-woodgrove"
-},
+      "redirect_url": "/system-center/scsm/woodgrove-scenario"
+,
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-properties-of-form-controls.md",
      "redirect_url" : "/system-center/scsm/form-control-properties"
@@ -2251,47 +2239,47 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-10-create-a-notification-template-and-subscription-optional.md",
-     "redirect_url" : "/system-center/scsm/step10-create-template"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-11-use-the-new-compliance-change-request-process.md",
-     "redirect_url" : "/system-center/scsm/step11change-request"
+      "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-1-open-the-woodgrove.automatedactivity.addcomputertoadgroupmp-management-pack.md",
-     "redirect_url" : "/system-center/scsm/step1-open-mp"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-2-customize-the-default-change-request-form.md",
-     "redirect_url" : "/system-center/scsm/step2-customize-cr-form"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-3-create-the-wf-workflow.md",
-     "redirect_url" : "/system-center/scsm/step3-create-wf-workflow"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-4-move-the-assembly-files-to-the-service-manager-console.md",
-     "redirect_url" : "/system-center/scsm/step4-move-assembly-files"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-5-bundle-and-import-the-custom-management-pack-to-service-manager.md",
-     "redirect_url" : "/system-center/scsm/step5-bundle-import-mp"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-6-extend-the-change-area-enumeration-list.md",
-     "redirect_url" : "/system-center/scsm/step6-extend-cr-enumeration"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-7-create-a-new-task.md",
-     "redirect_url" : "/system-center/scsm/step7-create-task"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-8-create-a-new-view.md",
-     "redirect_url" : "/system-center/scsm/step8-create-view"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-step-9-create-a-new-change-request-template.md",
-     "redirect_url" : "/system-center/scsm/step9-create-cr-template"
+     "redirect_url": "/system-center/scsm/woodgrove-scenario"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-views-sample-scenario-how-to-customize-a-column-title-in-a-view.md",
@@ -2319,23 +2307,23 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-backing-up-service-manager-databases.md",
-     "redirect_url" : "/system-center/scsm/back-up-sm-dbs"
+     "redirect_url": "/system-center/scsm/prepare-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-backing-up-service-manager-management-servers.md",
-     "redirect_url" : "/system-center/scsm/back-up-sm-ms"
+     "redirect_url": "/system-center/scsm/prepare-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-backing-up-unsealed-management-packs-in-service-manager.md",
-     "redirect_url" : "/system-center/scsm/back-up-unsealed-mps"
+     "redirect_url": "/system-center/scsm/prepare-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-database-recovery-in-service-manager.md",
-     "redirect_url" : "/system-center/scsm/database-recovery"
+     "redirect_url": "/system-center/scsm/implement-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-deployment-strategy-for-service-manager.md",
-     "redirect_url" : "/system-center/scsm/disaster-deployment-strategy"
+     "redirect_url": "/system-center/scsm/prepare-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-disaster-recovery-guide-for-system-center-2016-service-manager.md",
@@ -2343,7 +2331,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-how-to-back-up-the-encryption-key-in-service-manager.md",
-     "redirect_url" : "/system-center/scsm/back-up-encryption-key"
+     "redirect_url": "/system-center/scsm/prepare-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-implement-service-manager-disaster-recovery.md",
@@ -2351,11 +2339,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-import-unsealed-management-packs-in-service-manager.md",
-     "redirect_url" : "/system-center/scsm/import-unsealed-mps"
+     "redirect_url": "/system-center/scsm/implement-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-management-server-disaster-recovery-in-service-manager.md",
-     "redirect_url" : "/system-center/scsm/ms-disaster-recovery"
+     "redirect_url": "/system-center/scsm/implement-disaster-recovery"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/disaster-prepare-for-service-manager-disaster-recovery.md",
@@ -2363,15 +2351,15 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-about-cube-deployment.md",
-     "redirect_url" : "/system-center/scsm/cube-deployment"
+     "redirect_url": "/system-center/scsm/olap-cubes-overview"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-about-cube-partitioning.md",
-     "redirect_url" : "/system-center/scsm/cube-partitioning"
+     "redirect_url": "/system-center/scsm/olap-cubes-overview"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-about-cube-processing.md",
-     "redirect_url" : "/system-center/scsm/cube-processing"
+     "redirect_url": "/system-center/scsm/olap-cubes-overview"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-about-modeling-olap-cubes-in-management-packs.md",
@@ -2379,7 +2367,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-about-olap-cubes.md",
-     "redirect_url" : "/system-center/scsm/about-olap-cubes"
+     "redirect_url": "/system-center/scsm/olap-cubes-overview"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-advanced-analytical-reports-available-in-system-center-2016-service-manager.md",
@@ -2391,15 +2379,15 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-approving-and-modifying-change-requests.md",
-     "redirect_url" : "/system-center/scsm/approve-cr"
+     "redirect_url": "/system-center/scsm/changes-activities"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-combining-incidents-into-parent-child-groups.md",
-     "redirect_url" : "/system-center/scsm/incidents-groups"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-combining-release-records-into-parent-child-groups.md",
-     "redirect_url" : "/system-center/scsm/combine-rr-groups"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-creating-and-deploying-dashboards.md",
@@ -2407,7 +2395,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-creating-and-using-excel-slicers.md",
-     "redirect_url" : "/system-center/scsm/excel-slicers"
+     "redirect_url": "/system-center/scsm/olap-cube-excel"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-customizing-the-data-warehouse.md",
@@ -2415,23 +2403,23 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-defining-release-package-configuration-items.md",
-     "redirect_url" : "/system-center/scsm/release-package-ci"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-change-an-existing-incident.md",
-     "redirect_url" : "/system-center/scsm/change-incident"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-choose-changes-to-deploy.md",
-     "redirect_url" : "/system-center/scsm/choose-changes"
+      "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-contact-a-user-from-an-incident-form.md",
-     "redirect_url" : "/system-center/scsm/contact-user-from-incident"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-create-an-incident-view-and-personalize-it.md",
-     "redirect_url" : "/system-center/scsm/create-incident-view"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-create-an-olap-cube-using-a-management-pack.md",
@@ -2439,19 +2427,19 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-create-a-release-record.md",
-     "redirect_url" : "/system-center/scsm/create-rr"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-create-a-release-record-template.md",
-     "redirect_url" : "/system-center/scsm/create-rr-template"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-create-a-template-for-parallel-and-sequential-activities.md",
-     "redirect_url" : "/system-center/scsm/create-template-parallel-activities"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-determine-status-and-progress-for-a-change-request-in-the-release-record.md",
-     "redirect_url" : "/system-center/scsm/determine-status-cr"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-manage-the-analysis-libraries.md",
@@ -2459,11 +2447,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-manually-create-a-new-incident.md",
-     "redirect_url" : "/system-center/scsm/manually-create-incident"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-plan-release-activities.md",
-     "redirect_url" : "/system-center/scsm/plan-release-activities"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-refresh-olap-data-cube-information.md",
@@ -2471,31 +2459,31 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-resolve-and-close-an-incident.md",
-     "redirect_url" : "/system-center/scsm/resolve-close-incident"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-skip-a-failed-activity.md",
-     "redirect_url" : "/system-center/scsm/skip-activity"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-use-the-analysis-library.md",
-     "redirect_url" : "/system-center/scsm/use-analysis-library"
+     "redirect_url": "/system-center/scsm/manage-analysis-library"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-how-to-view-and-analyze-an-olap-data-cube-with-excel.md",
-     "redirect_url" : "/system-center/scsm/view-olap-cube-in-excel"
+     "redirect_url": "/system-center/scsm/olap-cube-excel"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-implementing-and-closing-a-change-request.md",
-     "redirect_url" : "/system-center/scsm/implement-close-cr"
+     "redirect_url": "/system-center/scsm/changes-activities"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-initiating-and-classifying-a-change-request.md",
-     "redirect_url" : "/system-center/scsm/initiate-classify-cr"
+     "redirect_url": "/system-center/scsm/changes-activities"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-maintaining-olap-cubes.md",
-     "redirect_url" : "/system-center/scsm/maint-olap-cube"
+     "redirect_url": "/system-center/scsm/olap-cubes-overview"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-managing-changes-and-activities-in-system-center-2016-service-manager.md",
@@ -2503,7 +2491,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-managing-incidents.md",
-     "redirect_url" : "/system-center/scsm/manage-incident"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-managing-incidents-and-problems-in-system-center-2016-service-manager.md",
@@ -2511,7 +2499,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-managing-problems.md",
-     "redirect_url" : "/system-center/scsm/manage-problem"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-managing-release-records-in-system-center-2016-service-manager.md",
@@ -2527,11 +2515,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-sample-scenario-managing-release-records.md",
-     "redirect_url" : "/system-center/scsm/scenario-rr"
+     "redirect_url": "/system-center/scsm/release-records"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-sample-scenarios-managing-incidents-and-problems.md",
-     "redirect_url" : "/system-center/scsm/scenario-incidents-problems"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-searching-for-information-in-system-center-2016-service-manager.md",
@@ -2539,11 +2527,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-suspending-and-resuming-a-change-request.md",
-     "redirect_url" : "/system-center/scsm/suspend-resume-cr"
+     "redirect_url": "/system-center/scsm/changes-activities"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-troubleshooting-incidents.md",
-     "redirect_url" : "/system-center/scsm/troubleshoot-incidents"
+     "redirect_url": "/system-center/scsm/incidents-problems"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-troubleshooting-olap-cubes.md",
@@ -2563,15 +2551,15 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-account-considerations-for-running-setup.md",
-     "redirect_url" : "/system-center/scsm/setup-account-considerations"
+     "redirect_url": "/system-center/scsm/prepare-deploy"
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-accounts-required-during-setup.md",
-     "redirect_url" : "/system-center/scsm/setup-required-accounts"
+     "redirect_url": "/system-center/scsm/prepare-deploy"
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-account-used-for-running-setup.md",
-     "redirect_url" : "/system-center/scsm/setup-account"
+     "redirect_url": "/system-center/scsm/prepare-deploy"
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-configurations-for-deployment-scenarios.md",
@@ -2587,11 +2575,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-hardware-requirements-for-system-center-2016-service-manager.md",
-     "redirect_url" : "/system-center/scsm/hardware-reqs"
+     "redirect_url": "/system-center/scsm/sm-sys-reqs"
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-how-to-prepare-computers-for-service-manager-deployment.md",
-     "redirect_url" : "/system-center/scsm/prepare-computers-deployment"
+     "redirect_url": "/system-center/scsm/prepare-deploy"
 },
 {
      "source_path" : "SystemCenterDocs/sm/plan/plan-language-support-for-system-center-2016-service-manager.md",
@@ -2649,10 +2637,6 @@
      "source_path" : "SystemCenterDocs/sm/plan/plan-system-center-2016-service-manager-parts.md",
      "redirect_url" : "/system-center/scsm/sm-parts"
 },
-  {
-     "source_path" : "SystemCenterDocs/sma/manage/Authoring-Automation-Runbooks.md",
-     "redirect_url": "/system-center/sma/authoring-automation-runbooks"
-  },
   {
      "source_path" : "SystemCenterDocs/SMA/Manage/Automation-Runbooks.md",
      "redirect_url": "/system-center/sma/manage-runbooks"
@@ -2747,7 +2731,7 @@
   },
 {
      "source_path" : "SystemCenterDocs/sma/Deploy/Deploy-Service-Management-Automation.md",
-     "redirect_url" : "/system-center/ sma/deploy"
+     "redirect_url" : "/system-center/sma/deploy"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Deploy/How-to-upgrade-from-a-previous-version-of-Service-Management-Automation.md",
@@ -2775,7 +2759,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/SMA/Manage/Global-Assets.md",
-     "redirect_url" : "/system-center/ sma/manage-global-assets"
+     "redirect_url" : "/system-center/sma/manage-global-assets"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Runbook-Output-and-Messages.md",
