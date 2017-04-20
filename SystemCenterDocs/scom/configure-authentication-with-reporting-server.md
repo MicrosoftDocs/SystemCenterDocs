@@ -3,7 +3,7 @@ ms.assetid: d6e1034d-88be-49f0-a5d1-65da807a77f6
 title: Configure Authentication with Reporting server
 description:  
 author: mgoedtel
-manager: cfreemanwa
+manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -11,7 +11,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configure Authentication with Reporting server
+# Configure authentication with Reporting server
 
 >Applies To: System Center 2016 - Operations Manager
 

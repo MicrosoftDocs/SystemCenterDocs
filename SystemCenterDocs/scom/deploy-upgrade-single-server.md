@@ -3,7 +3,7 @@ title: How to Upgrade a Single Server Management Group to System Center 2016 - O
 description: This article describes how to upgrade a single server management group to Operations Manager 2016.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center-threshold

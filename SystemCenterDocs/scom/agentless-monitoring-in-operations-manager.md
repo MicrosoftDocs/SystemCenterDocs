@@ -3,7 +3,7 @@ title: Agentless Monitoring in Operations Manager
 description: This article describes how to use agentless monitoring in Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 03/13/2017
 ms.custom: na
 ms.prod: system-center-threshold

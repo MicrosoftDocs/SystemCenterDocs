@@ -4,7 +4,7 @@ title: How to Upgrade a Gateway Server to System Center 2016 - Operations Manage
 description: This article describes how to upgrade a Gateway server to Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold

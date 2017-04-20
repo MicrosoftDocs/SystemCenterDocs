@@ -3,7 +3,7 @@ ms.assetid: d837d304-20ff-4d2a-8071-f1c5664d93dd
 title: How to Create an Attribute
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -11,7 +11,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to create an Attribute
+# How to create an attribute
 
 >Applies To: System Center 2016 - Operations Manager
 

@@ -3,7 +3,7 @@ title: How to Discover Network Devices in Operations Manager
 description: This article describes how to discover network devices to be monitored by Operations Manager.   
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold

@@ -3,7 +3,7 @@ ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
 description:  
 author: mgoedtel
-manager: cfreemanwa
+manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -11,11 +11,11 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configure Authentication with the Web console
+# Configure authentication with the Web console
 
 >Applies To: System Center 2016 - Operations Manager
 
-## Configure SSL Encryption
+## Configure SSL encryption
 
 The following steps are necessary to configure Secure Sockets Layer (SSL) encryption after the Operations Manager Web console server has been installed on an Internet Information Services (IIS) 7.0 and higher web server.  Before performing these steps, you should first review  [Configuring Secure Sockets Layer in IIS 7](https://technet.microsoft.com/en-us/library/cc771438%28v=ws.10%29.aspx) and configure IIS to enable SSL for the web server hosting the Web console.  
 
@@ -46,13 +46,13 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 
 In order to use algorithms that are FIPS compliant, follow these steps for the Operations Manager Web console server component. Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory, etc.), also be FIPS compliant.
 
-### To Install the Cryptography DLL
+### To install the cryptography DLL
 
 1.	On the system hosting the Web console, use the Run as Administrator option to open a Command Prompt window.
 2.	Change directories to the SupportTools directory of your installation media, and then change directory to **AMD64**.  
 3.	Run the following **gacutil** command: `gacutil.exe –i Microsoft.EnterpriseManagement.Cryptography.dll`.
 
-### To Edit the Machine.Config Files
+### To edit the machine.config files
 
 1.  Use a plain text editor to open the **machine.config** file in *%WinDir%\Microsoft.NET\Framework\v2.0.50727\CONFIG\*.
 2.  If the following content does not exist within the `<Configuration>` root element, add as follows:

@@ -4,7 +4,7 @@ title:  Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Man
 description:  This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager 2016.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/02/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
+# Post-Upgrade tasks when upgrading to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -59,7 +59,7 @@ Refer to third-party documentation for any installed connectors to determine if 
 
 If you had Audit Collection Services (ACS) enabled for an agent prior to upgrade, it was disabled as part of the agent upgrade process. Re-enable ACS as appropriate.
 
-### Verify That the upgrade was successful
+### Verify that the upgrade was successful
 
 Perform the following tasks to verify that the upgrade was successful.
 

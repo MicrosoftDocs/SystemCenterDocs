@@ -4,7 +4,7 @@ title:  How to Install an Operations Manager Management Server
 description: This article describes how to install an Operations Manager management server. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -168,17 +168,17 @@ Perform the following steps to add additional management servers in your managem
 
 11. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
 
-13. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
+12. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
-14. Review the options on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
+13. Review the options on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
 
-15. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
+14. When Setup is finished, the **Setup is complete** page appears. Click **Close**.
 
-16. On a computer with the Operations console installed, sign on with an account that is a member of the Operations Manager Administrators group and launch the Operations console.
+15. On a computer with the Operations console installed, sign on with an account that is a member of the Operations Manager Administrators group and launch the Operations console.
 
-17. In the Operations console, in the navigation pane, click the **Administration** button, and then expand **Device Management**.
+16. In the Operations console, in the navigation pane, click the **Administration** button, and then expand **Device Management**.
 
-18. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.  
+17. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.  
 
 ## To install the first management server in the management group from the Command Prompt 
 
