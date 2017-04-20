@@ -1736,7 +1736,7 @@
 {
      "source_path" : "SystemCenterDocs/sm/deploy/upgrade-upgrade-planning-for-system-center-2016-service-manager.md",
      "redirect_url": "/system-center/scsm/upgrade-to-sm-2016"
-,
+},
 {
      "source_path" : "SystemCenterDocs/sm/deploy/upgrade-upgrade-to-system-center-2016-service-manager.md",
      "redirect_url" : "/system-center/scsm/upgrade-environment"
@@ -2220,7 +2220,7 @@
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-prerequisites-for-the-woodgrove-bank-customization-scenario.md",
       "redirect_url": "/system-center/scsm/woodgrove-scenario"
-,
+},
 {
      "source_path" : "SystemCenterDocs/sm/manage/author-properties-of-form-controls.md",
      "redirect_url" : "/system-center/scsm/form-control-properties"
@@ -3248,6 +3248,6 @@
 {
      "source_path" : "SystemCenterDocs/vmm/scenario/sdn-remove-an-sdn.md",
      "redirect_url" : "/system-center/vmm/sdn-remove"
-},
+}
  ]
 }
