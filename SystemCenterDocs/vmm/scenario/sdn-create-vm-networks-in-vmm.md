@@ -29,7 +29,6 @@ The following two types of isolation settings are supported in SDN fabric:
 - **No Isolation** :  If a logical network has no isolation, then, only a single VM network can be associated with it. As a service provider, you can host infrastructure workloads using this type of isolation settings.
 
 >[!NOTE]
-
 > VLAN isolation is not supported in SDN fabric.
 
 
@@ -53,27 +52,25 @@ The following two types of isolation settings are supported in SDN fabric:
 1. In the VMM fabric, click **VMs and Services** &gt; **VM Networks** &gt; **Create VM Network**.
 2. In **Create VM Network Wizard** &gt; **Name** , type a name, optional description and select a logical network that was created with network virtualization isolation settings.
 3. In **Isolation** , select **Isolate using Hyper-V network virtualization** , and select IPv4 for IP address protocols. Click **Next**.
+
+ ![VM network in sdn](../media/vm-network-in-sdn-using-vmm.png)
 4. In **VM Subnets** click **Add**, specify the name and subnets for VM network and then click **Next**.
 >[!NOTE]  
-    >  You can add multiple subnets.
-
-   ![VM network in sdn](../media/vm-network-in-sdn-using-vmm.png)
+> You can add multiple subnets.
 
 5. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
+ >[!NOTE]
 
->[!NOTE]  
-
->  By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
+ > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
 
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks, over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option.  Select the **VPN gateway device** that you want to use and confirm the settings.
 
-    Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear, complete the settings based on information from the VPN admin.
+    Based on your selection, the **VPN Connections** and **Border Gateway Protocol** pages appear, complete the settings based on the information provided by the VPN admin.
 
    - **Connect directly to an additional logical network**: Select this option if you want the virtual machines on this VM network to connect directly to an additional logical network. To enable access to internet resources, select **Network Address Translation (NAT)** or select **Direct Routing** to bridge a virtualized IP address space with a physical IP address space.
 
-
-   6.In **Summary**,  verify the settings and click **Finish**.
+6. In **Summary**,  verify the settings and click **Finish**.
 
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
