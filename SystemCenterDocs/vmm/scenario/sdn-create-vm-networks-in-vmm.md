@@ -76,7 +76,7 @@ In **VM Subnets** click **Add**, specify the name and subnets for VM network and
 
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
-**Note:** After you create a VM network with network virtualization, ensure you [create IP Pool](../vmm/manage/manage-network-static-address-pools#set-up-an-ip-address-pool-on-a-vm-network) for this VM network.
+**Note:** After you create a VM network with network virtualization, ensure you [create IP Pool](../vmm/manage/manage-network-static-address-pools.md#set-up-an-ip-address-pool-on-a-vm-network) for this VM network.
 
 ## Create a VM network (no isolation)
 
