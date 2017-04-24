@@ -20,7 +20,7 @@ After you install System Center 2016 - Operations Manager, you can install the O
 
 You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md)
 
-#### To install the Operations console
+## To install the Operations console
 
 1.  Log on to the computer that will host the Operations console with an account that has local administrative credentials.
 
@@ -50,7 +50,7 @@ You must ensure that the computer that will host the Operations console meets th
 > [!IMPORTANT]
 > Company knowledge cannot be edited with the x64 version of Microsoft Word 2010. You must install the x86 version of Microsoft Office 2010 or an earlier version to edit knowledge.
 
-### To install the Operations console from the Command Prompt 
+## To install the Operations console from the Command Prompt 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 

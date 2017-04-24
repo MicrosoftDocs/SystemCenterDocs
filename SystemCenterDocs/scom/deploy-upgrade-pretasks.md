@@ -166,3 +166,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\M
 The default decimal value of DWORD type is 15360 (15 MB) and the recommended value to change it to is 76800 (75 MB).
 
 Once you have completed the upgrade of the management group, you can reset it back to the default value.  
+
+## Next steps
+
+To continue with the upgrade please review [Upgrade overview](deploy-upgrade-overview.md).

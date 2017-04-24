@@ -1,7 +1,7 @@
 ---
 ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
-description:  
+description: This topic describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.   
 author: mgoedtel
 manager: carmonm
 ms.date: 10/12/2016
@@ -44,7 +44,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 
 ## Configure FIPS compliance
 
-In order to use algorithms that are FIPS compliant, follow these steps for the Operations Manager Web console server component. Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory, etc.), also be FIPS compliant.
+Follow these steps for the Operations Manager Web console server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS). Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory, etc.), also be FIPS compliant.
 
 ### To install the cryptography DLL
 
