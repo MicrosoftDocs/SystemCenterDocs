@@ -773,7 +773,7 @@
 ##### [Deploy an SDN SLB](vmm/scenario/sdn-slb.md)
 ##### [Deploy an SDN RAS gateway](vmm/scenario/sdn-gateway.md)
 ##### [Deploy SDN using PowerShell](vmm/scenario/sdn-powershell.md)
-##### [Remove an SDN from VMM](vmm/scenario/sdn-remove-an-sdn.md)
+#### [Remove an SDN from VMM](vmm/scenario/sdn-remove-an-sdn.md)
 #### [Manage SDN workloads](sdn-manage-workloads.md)
 ##### [Set up VM networks in SDN](vmm/scenario/sdn-create-vm-networks-in-vmm.md)
 ### [Deploy](vmm/deploy/deploy-overview.md)
