@@ -5,7 +5,7 @@ description: This article describes the procedure on how to create a VM network 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 04/21/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -43,14 +43,14 @@ The following two types of isolation settings are supported in SDN fabric:
 >[!NOTE]  
 > If you want to deploy the VMs with dynamic IP on "no isolation" network, then IP pools are not required.
 
-- By default, VMs connected to a VM network with network virtualization isolations settings, cannot connect to other networks. If you want your VM network to connect to other networks, you need to first deploy [SDN SLB ](sdn-slb.md) and [SDN gateway](sdn-gateway.md).
+- By default, VMs connected to a VM network with network virtualization isolation setting, cannot connect to other networks. If you want your VM network to connect to other networks, you need to first deploy [SDN SLB ](sdn-slb.md) and [SDN gateway](sdn-gateway.md).
 
 
 
 ## Create a VM network (network virtualization)
 
-1. In the VMM fabric, click **VMs and Services** &gt; **VM Networks** &gt; **Create VM Network**.
-2. In **Create VM Network Wizard** &gt; **Name** , type a name, optional description and select a logical network that was created with network virtualization isolation settings.
+1. In the VMM fabric, click **VMs and Services** > **VM Networks** > **Create VM Network**.
+2. In **Create VM Network Wizard** > **Name**, type a name, optional description and select a logical network that was created with network virtualization isolation settings.
 3. In **Isolation** , select **Isolate using Hyper-V network virtualization** , and select IPv4 for IP address protocols. Click **Next**.
 
  ![VM network in sdn](../media/vm-network-in-sdn-using-vmm.png)
