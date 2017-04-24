@@ -4,7 +4,7 @@ title: How Heartbeats Work in Operations Manager
 description: This article describes how Operations Manager monitors communication between an agent and management server.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
