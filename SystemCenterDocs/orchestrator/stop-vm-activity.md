@@ -25,18 +25,18 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Stop VM Activity Required Properties
+## Stop VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Gracefully shutdown | Indicates whether the guest operating system is shut down instead of powered off. | Boolean   | Yes   |
 | VM Path   | The path to the virtual machine.   | String   | Yes   |
 
-### Stop VM Activity Optional Properties
+## Stop VM Activity Optional Properties
 
 No optional properties are provided for this activity.
 
-### Stop VM Activity Published Data
+## Stop VM Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -47,7 +47,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Stop VM activity.
 
-#### To configure the Stop VM Activity
+### To configure the Stop VM Activity
 
 1.  From the **Activities** pane, drag a **Stop VM** activity to the active runbook.
 
