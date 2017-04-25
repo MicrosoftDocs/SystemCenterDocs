@@ -4,7 +4,7 @@ title: Data Driven Alert Management
 description: This article describes how to use the Tune Management Packs feature to improve alert accuracy in Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -47,7 +47,7 @@ By default, the view is scoped to present 30 or more alerts that have been gener
     f.	Monitor / Rule Name - the name of the monitor or rule that generated the alert  
 
 
-12.	For each alert type you can select **View or Edit settings of this monitor** or **View or Edit settings of this rule** depending on the alert type selected, **View or Override Sources**, or **Overrides** action from the Tasks pane.  
+8.	For each alert type you can select **View or Edit settings of this monitor** or **View or Edit settings of this rule** depending on the alert type selected, **View or Override Sources**, or **Overrides** action from the Tasks pane.  
 
 Selecting **View or Edit settings of this monitor** or **View or Edit settings of this rule**, will open the properties dialog of the particular alert type selected.  
 

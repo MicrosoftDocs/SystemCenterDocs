@@ -4,7 +4,7 @@ title: How to Install an Audit Collection Services ACS Collector and Database
 description: This article describes how to install the Operations Manager Audit Collector and ACS database.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to install an Audit Collection Services (ACS) Collector and database
+# How to install an Audit Collection Services (ACS) collector and database
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -20,7 +20,7 @@ Use the following procedures to install an Audit Collection Services (ACS) colle
 
 The ACS database runs on a supported version of Microsoft SQL Server. The Audit Collection Services Collector Setup wizard creates the ACS database on an existing installation of Microsoft SQL Server. To complete the installation procedure, you must be a member of the local Administrators group on both the ACS collector and the ACS database computers as well as a database administrator on the ACS database. As a best practice for security, consider using Run As to perform this procedure.
 
-### To install an ACS collector and an ACS database
+## To install an ACS collector and an ACS database
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
@@ -63,7 +63,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 14. When the installation is complete, click **Finish**.
 
-### To deploy ACS reporting
+## To deploy ACS reporting
 
 1.  Log on to the server that will be used to host ACS reporting as a user that is an administrator of the SSRS instance.
 

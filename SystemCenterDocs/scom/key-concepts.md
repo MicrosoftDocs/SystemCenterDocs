@@ -4,7 +4,7 @@ title: Operations Manager Key Concepts
 description: This article provides a high-level overview of what Operations Manager is and what capabilities it provides as a monitoring platform.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Operations Manager Key Concepts
+# Operations Manager key concepts
 
 >Applies To: System Center 2016 - Operations Manager
 

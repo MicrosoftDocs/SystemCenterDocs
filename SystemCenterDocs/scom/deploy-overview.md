@@ -3,7 +3,7 @@ ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
 title:  Deploying System Center 2016 Operations Manager
 description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager 2016.  
 author: mgoedtel
-ms.author: magoedte
+ms.author: carmonm
 manager: cfreemanwa
 ms.date: 01/25/2017
 ms.custom: na
