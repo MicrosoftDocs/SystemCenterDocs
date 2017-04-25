@@ -4,7 +4,7 @@ title: Connecting Management Groups in Operations Manager
 description: This article describes how to connect multiple management groups for a consolidated view in a single Operations console.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -38,7 +38,7 @@ Connected management groups support all Operations Manager user roles and makes 
   
 In this procedure, you create a connection between two management groups. These management groups can be in the same domain, or they can be in trusted domains. You can connect to management groups that are in domains that are not trusted, but you cannot view data from those domains until you add an account from the domain of the local management groups to an Operations Manager role for the connected management group. To do this, a trust must be established between the domains.  
   
-### Before you start  
+## Before you start  
   
 1.  To connect management groups, you must provide the fully qualified domain name (FQDN) of a  management server of the connected management group. The management server of the local management group must be able to resolve this FQDN. If the two management groups do not use the same Domain Name System (DNS) service, you must create a secondary DNS zone in the DNS service that the local management group uses. This secondary DNS zone transfers the DNS information from the primary DNS zone of the connected management group. The transferred information is essentially a copy of the DNS information that is available to the management server of the local management group.  
   
@@ -48,7 +48,7 @@ In this procedure, you create a connection between two management groups. These 
   
 4.  Identify users in the domain of the local management group that will need access to data from the connected management groups. They must be added to the appropriate Operations Manager roles in the connected management group.  
   
-### To connect management groups  
+## To connect management groups  
   
 1.  Log on to the computer with an account that is a member of the Operations Manager Administrators user role.  
   
@@ -66,7 +66,7 @@ In this procedure, you create a connection between two management groups. These 
   
 5.  Click **Add**.  
   
-### To grant access to Connected Management Groups  
+## To grant access to Connected Management Groups  
   
 1.  Identify users in the local management group that need access to the connected management groups.  
   
