@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: Use DPM to protect computers that are in untrusted domains or workgroups.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

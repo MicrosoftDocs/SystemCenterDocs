@@ -1,6 +1,6 @@
 ---
 description: A complete matrix of all workloads, data types, and installations that DPM 2016 protects.  
-manager:  cfreemanwa
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

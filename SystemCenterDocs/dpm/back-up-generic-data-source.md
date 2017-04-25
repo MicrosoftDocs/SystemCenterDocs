@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: You can back up a generic data source with DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

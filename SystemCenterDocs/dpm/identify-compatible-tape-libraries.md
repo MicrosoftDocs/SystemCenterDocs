@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article describes how you can identify tape libraries compatible with DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

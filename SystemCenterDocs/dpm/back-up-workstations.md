@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: You can use DPM to back up client computers.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
@@ -19,7 +19,8 @@ ms.author: markgal
 You can deploy DPM to back up client computers.   Depending on the client operating system you can back up volumes, shares, folders, files, bare metal and system state, and deduped volumes.
 
 ## Prerequisites and limitations
-.Before you deploy DPM to protect client computer data verify the deployment prerequisites:
+
+Before you deploy DPM to protect client computer data verify the deployment prerequisites:
 
 -   Read about the client operating systems you can support in [What can DPM back up?](dpm-protection-matrix.md)
 
@@ -124,7 +125,7 @@ You can deploy DPM to back up client computers.   Depending on the client operat
 
 12. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+13. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
 
 14. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
@@ -136,7 +137,7 @@ End-user recovery enables users to independently recover file data by retrieving
 
 -   Users can only recover data stored on disk.
 
--   You'll need to modify the Active Directory schema to enable end-user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](https://technet.microsoft.com/en-us/library/hh758112.aspx) a detailed list of classes and attributes added to AD by DPM.
+-   You'll need to modify the Active Directory schema to enable end-user recovery. DPM extends the schema, creates a container (MS-ShareMapConfiguration), grants the DPM server permissions to change the container contents, and adds mappings between source and replica shares. [View](https://technet.microsoft.com/library/hh758112.aspx) a detailed list of classes and attributes added to AD by DPM.
 
 -   If you enable end-user recovery you can't specify on which file servers end-user recovery is enabled.
 
@@ -150,7 +151,7 @@ To configure end-user recovery here's what you'll need to do:
 
     2.  In  **Configure Active Directory** select **Use current credentials** or type in a user name and password with schema and domain admin permissions. Confirm your settings.
 
-    3.  If you don't have an account that has schedule and domain admin permissions you can ask another user with those permissions to run <drive:>\Program Files\Microsoft Data Protection Manager\DPM\End User Recovery\DPMADSchemaExtension.exe on a computer in the same domain as the DPM server.   When the app runs the user should specify the name of the computer on which you want to enable end-user recovery and the DNS domain name of the DPM server.
+    3.  If you don't have an account that has schedule and domain admin permissions you can ask another user with those permissions to run &lt;drive:&gt;\Program Files\Microsoft Data Protection Manager\DPM\End User Recovery\DPMADSchemaExtension.exe on a computer in the same domain as the DPM server.   When the app runs the user should specify the name of the computer on which you want to enable end-user recovery and the DNS domain name of the DPM server.
 
         Note that if the protected computer and DPM reside in different domains, the schema needs to be extended by running the DPMADSchemaExtension.exe tool on the other domain.
 

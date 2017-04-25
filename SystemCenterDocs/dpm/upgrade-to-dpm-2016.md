@@ -1,6 +1,6 @@
 ---
 description: Learn about the new features when you upgrade to DPM 2016. This article also provides an overview of how to upgrade your DPM installation.
-manager:  cfreeman
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal
@@ -62,7 +62,7 @@ In this example, we will prepare a remote SQL Server cluster to use for the migr
 
 1. On the System Center Data Protection Manager 2012 R2 server or on the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL instance hosting the current DPM 2012 R2 DPMDB.
 2. Right-click the DPM database, and under **Tasks**, select the **Back Up…** option.
- 
+
       ![Select Backup](./media/upgrade-to-dpm-2016/dpm-2016-select-backup.png)
 
 3. Add a backup destination and file name, and then select **OK** to start the backup.
@@ -237,4 +237,4 @@ You can back up a DPM server to Azure. The high level steps are:
 - download vault credentials and the Azure Backup Agent,
 - configure the server's vault credentials and backup policy,
 
-For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM] (https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/).
+For more information on backing up DPM to the cloud, see the article, [Preparing to backup workloads to Azure with DPM](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction).
