@@ -3,7 +3,7 @@ title: Using My Workspace
 description: This article describes how to use My Workspace in the Operations Manager Operations console create personalized views of operational data for your specific needs.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 12/05/2016
 ms.custom: na
 ms.prod: system-center-threshold
