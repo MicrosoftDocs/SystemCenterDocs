@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides an overview of how you can use build an integration module.
 manager:  cfreeman
 ms.topic:  article
 author:  bwren

@@ -1,5 +1,5 @@
 ---
-description:  
+description: Service Management Automation is used to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren

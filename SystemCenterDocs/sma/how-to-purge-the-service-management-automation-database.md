@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides an overview of how you can purge the Service Management Automation database.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren
