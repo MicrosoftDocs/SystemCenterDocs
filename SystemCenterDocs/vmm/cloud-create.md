@@ -7,7 +7,7 @@ ms.author: raynew
 manager: carmonm
 ms.date: 04/26/2017
 ms.topic: article
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
@@ -25,7 +25,7 @@ You can create a private cloud from a host group, or from a VMware resource pool
 
 ## Before you start
 
-  - You need to have the VMM fabric in place. [Learn more](plan-fabric.md).
+  - You need to have the VMM fabric in place. [Learn more](plan-compute.md).
   - You should have one or more [Hyper-V](hyper-v-hosts.md) or [VMware](manage-vmware-hosts.md) virtualization hosts in the fabric. If you're creating a cloud from a VMware resource pool,  a vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be available in the VMM fabric.
     - If you want to provide [self-service users](self-service.md) the ability to store virtual machines to the VMM library, then create a library share, or create a folder in a library share that will serve as the storage location. [Learn more](manage-library-server.md).
 
