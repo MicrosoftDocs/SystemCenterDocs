@@ -3,7 +3,7 @@ title: How to configure and use Active Directory Integration for agent assignmen
 description: This article describes how to configure and use Active Directory integration for agent assignment and failover with your Operations Manager 2016 management group.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 02/27/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -124,7 +124,7 @@ Changing the agent assignment rule can result in computers no longer being assig
   
         For more information about LDAP queries, see  [Creating a Query Filter](http://go.microsoft.com/fwlink/?LinkId=73366) and [Active Directory: LDAP Syntax Filters](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx). 
 
-    3.  Click **OK,** and then click **Next**.  
+    2.  Click **OK,** and then click **Next**.  
     
 9.  On the **Exclusion Criteria** page, type the FQDN of computers that you explicitly want to prevent from being managed by this management server, and then click **Next**.  
   

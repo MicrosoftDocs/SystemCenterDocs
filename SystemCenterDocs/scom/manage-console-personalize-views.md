@@ -3,7 +3,7 @@ title: How to Personalize a View in Operations Manager
 description: This article describes how to customize views in the Operations Manager Operations console.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 11/28/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -21,7 +21,7 @@ In System Center 2016 - Operations Manager, views are contained in management pa
 > [!NOTE]  
 > Personalized views are only visible to the user who personalized the view.  
   
-### To personalize a view  
+## To personalize a view  
   
 1.  In the Operations console, click **Monitoring**.  
   
@@ -32,7 +32,7 @@ In System Center 2016 - Operations Manager, views are contained in management pa
     > [!NOTE]  
     > In a state view, the option to sort by groups is not available. This option is available in other view types, such as the alert view and event view.  
   
-### To restore view defaults  
+## To restore view defaults  
   
 1.  In the Operations console, click **Monitoring**.  
   

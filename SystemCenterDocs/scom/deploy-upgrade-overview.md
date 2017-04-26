@@ -4,14 +4,13 @@ title:  Upgrading to System Center 2016 - Operations Manager
 description: This guide provides information on how to upgrade from Operations Manager 2012 R2 to Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/09/2016
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
-
 
 # Upgrading to System Center 2016 - Operations Manager
 

@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: Deploy the DPM protection agent to identify data that DPM can protect and recover.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal

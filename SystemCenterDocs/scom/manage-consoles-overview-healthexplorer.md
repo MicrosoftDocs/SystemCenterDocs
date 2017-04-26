@@ -3,7 +3,7 @@ title: Using Health Explorer in Operations Manager
 description: This article describes how to use the Operations Manager Health Explorer to view health and state changes for monitored objects.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 11/29/2016
 ms.custom: na
 ms.prod: system-center-threshold

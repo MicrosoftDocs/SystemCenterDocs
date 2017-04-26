@@ -4,10 +4,10 @@ title: Set up networking for Hyper-V hosts and clusters in the VMM fabric
 description: This article describes how to set up networking for Hyper-V hosts and clusters in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -35,7 +35,7 @@ To do this you'll need to [configure the logical switch](network-switch.md) and 
 
 Regardless of any port profiles and logical switches you are using in your network configuration, you must specify whether a network adapter in a host is used for virtual machines, host management, neither, or both. (The host must already be under management in VMM.)
 
-1. Open  **Fabric** > **Servers** > **All Hosts** > host group > **Hosts** > **Host** > **Properties** > **Hardware**.
+1. Open  **Fabric** > **Servers** > **All Hosts** > *host group* > **Hosts** > **Host** > **Properties** > **Hardware**.
 2. Under **Network adapters**, click the physical network adapter that you want to configure.
 
 	- If you want to use this network adapter for virtual machines, ensure that **Available for placement** is checked.
@@ -45,7 +45,7 @@ Regardless of any port profiles and logical switches you are using in your netwo
 
 ## Apply a logical switch
 
-1. Open  **Fabric** > **Servers** > **All Hosts** > host group > **Hosts** > **Host** > **Properties** > **Virtual Switches**.
+1. Open  **Fabric** > **Servers** > **All Hosts** > *host group* > **Hosts** > **Host** > **Properties** > **Virtual Switches**.
 2. Select the logical switch you created. Under **Adapter**, select the physical adapter that you want to apply the logical switch to.
 3. In the **Uplink Port Profile** list, select the uplink port profile that you want to apply. The list contains the uplink port profiles that have been added to the logical switch that you selected. If a profile seems to be missing, review the configuration of the logical switch and then return to this property tab. Click **OK** to finish. Note that if you didn't create the virtual switch earlier and do in now, the host might temporarily lose network connectivity when VMM creates the switch.
 4. Repeat the steps as needed. If you apply the same logical switch and uplink port profile to two or more adapters, the two adapters might be teamed, depending on a setting in the logical switch. To find out if they will be teamed, open the logical switch properties, click the **Uplink** tab, and view the **Uplink mode** setting. If the setting is **Team**, the adapters will be teamed. The specific mode in which they will be teamed is determined by a setting in the uplink port profile.

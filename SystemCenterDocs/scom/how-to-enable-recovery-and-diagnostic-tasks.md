@@ -1,9 +1,9 @@
 ---
 ms.assetid: 6f8cff68-8b1f-49ab-a094-a1d5c17b2482
 title: How to Enable Recovery and Diagnostic Tasks
-description:  
+description:  This topic describes how to create tasks to diagnose issues and take remedial actions.
 author: mgoedtel
-manager: cfreemanwa
+manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -11,7 +11,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Enable Recovery and Diagnostic Tasks
+# How to enable recovery and diagnostic tasks
 
 >Applies To: System Center 2016 - Operations Manager
 

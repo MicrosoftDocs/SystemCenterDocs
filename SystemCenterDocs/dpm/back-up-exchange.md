@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: Backup Exchange mailbox databases with DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal

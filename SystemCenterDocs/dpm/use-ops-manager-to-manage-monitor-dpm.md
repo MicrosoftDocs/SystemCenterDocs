@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description:  Describes how to manage and monitor DPM servers with Operations Manager.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
@@ -113,4 +113,4 @@ Note that:
 4.  Follow the instructions in the Import Management Packs wizard.
 
 ## Next steps
-After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed you can generate DPM reports from Operations Manager
+After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed you can generate DPM reports from Operations Manager.

@@ -1,6 +1,6 @@
 ---
 description: DPM overview article that explains the workloads and types of data you can protect with DPM.  
-manager:  cfreemanwa
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

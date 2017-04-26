@@ -4,10 +4,10 @@ title: Add an Azure subscription in VMM
 description: This article describes how to add an Azure subscription, so that you can manage basic actions for Azure instances
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/26/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -20,7 +20,7 @@ You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machin
 - For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
 - If you already manage your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
     - Add and remove Azure subscriptions in the VMM console.
-    - Get a list view of information about role instances in deployment subscriptions. Instances can be manually refreshed. t
+    - Get a list view of information about role instances in deployment subscriptions. Instances can be manually refreshed. 
     - Perform basic actions on the instances, including start, stop, shutdown, and restart.
     - Connect via RDP
 - This feature isn't designed to provide feature parity with the Azure portal. It provides a small subset of the features to simplify management. You can't manage the Azure subscription, deploy instances, manage Azure storage and networks, migrate on-premises VMs to Azure, or view the dashboard and performance monitoring summaries.

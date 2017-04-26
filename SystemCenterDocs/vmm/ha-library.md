@@ -4,10 +4,10 @@ title: Deploy the VMM library for high availability
 description: This article describes how to set up the VMM library in a highly available deployment
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -20,8 +20,7 @@ This article describes the steps for deploying a highly available System Center 
 
 ## Before you start
 
-Read the [planning steps](~/vmm/plan-ha-install.md) for a highly available VMM deployment.
-
+Read the [planning steps](plan-ha-install.md) for a highly available VMM deployment.
 
 
 ## Set up the failover cluster
@@ -41,7 +40,7 @@ This procedure presumes you're setting up a single failover cluster with two or 
 11. In **Confirmation** review the settings. Clear **Add all eligible storage to the cluster** if you want to configure storage later. Click **Next** to create the cluster.
 12. In **Summary** confirm that the cluster was created and that the cluster name is listed in Failover Cluster Manager.
 
-If you want to build a guest cluster to deploy the file server read Rudolf Vesely's useful [blog post](https://techstronghold.com/blogs/virtualization/building-guest-virtual-file-server-failover-cluster-on-hyper-v-host-with-windows-server-2012-r2).
+If you want to build a guest cluster to deploy the file server, read Rudolf Vesely's useful [blog post](https://techstronghold.com/blogs/virtualization/building-guest-virtual-file-server-failover-cluster-on-hyper-v-host-with-windows-server-2012-r2).
 
 ## Set up the file server role
 

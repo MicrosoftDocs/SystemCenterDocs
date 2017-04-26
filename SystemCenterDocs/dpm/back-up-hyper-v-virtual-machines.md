@@ -1,6 +1,6 @@
 ---
 description: This article contains the procedures for backing up and recovery of virtual machines.  
-manager:  cfreemanwa
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

@@ -4,7 +4,7 @@ title: Install Agent on UNIX and Linux Using the Discovery Wizard
 description: This article describes how to install the Operations Manager agent on UNIX and Linux computers.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold

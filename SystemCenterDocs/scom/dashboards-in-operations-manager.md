@@ -3,7 +3,7 @@ title: Dashboards in Operations Manager
 description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 12/05/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -45,7 +45,7 @@ Summary Dashboards include the following widgets.  
 - State Widget (State) 
 - Alert Widget (Alert) 
 
-### Object State 
+### Object state 
 
 An Object State dashboard includes multiple widgets showing information about a particular object or group.  You cannot configure the individual widgets but can edit the configuration of the dashboard to define the target object or group that all the widgets will include in addition to the criteria for included alerts.  
 
@@ -57,11 +57,11 @@ Object State dashboards include the following widgets.  
 Instance Details Widget (Object Details) that displays the details of the target object or group.  
 - Alert Widget (Alerts) showing the active alerts for the target and any of its contained objects.  If the target is a group, then alerts from the members of the group are included.  You set the criteria for which alerts are included in the configuration for the dashboard itself instead of for this individual widget. 
 
-### Column Layout
+### Column layout
 
 A Column Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of columns that it will have.  The dashboard will start with one cell in each column.  You can add additional cells by clicking the gear icon at the top right of the dashboard and selecting Add Cell.
 
-### Grid Layout
+### Grid layout
 
 A Grid Layout is an empty dashboard that allows you to set your own layout and add and configure your own set of widgets.  When you create the dashboard, you specify the number of cells that it will have and select a layout for the cells.  You can change the layout of the cells after the dashboard has been created, but you can't change the number of cells.
 
@@ -71,13 +71,13 @@ The following table describes each dashboard widget and where they pull their in
 
 Widget | Description | Data Source | Aggregated Data |
 -------|-------------|-------------|-----------------|
-**Performance Widgets** ||||
+**Performance widgets** ||||
 Object by Performance | Displays a list of objects sorted according to the value of a particular performance counter. An average is calculated from the collected data for each object, and then that average value is used for the ranking. | Data Warehouse DB | Yes|
 Performance Chart | Displays a line chart and a table with a list of objects and their current health state. | Data Warehouse DB | Yes|
-**Alert Widgets** ||||
+**Alert widgets** ||||
 Alert List | Displays a table with alerts related to an object or group of objects and that match a specified criteria.| Operational DB | No|
 Contextual Alert | Displays a table with alerts related to an object selected in another control in the dashboard and that match a specified criteria. | Operational DB | No|
-**Object Widgets** ||||
+**Object widgets** ||||
 Instance Details | Displays the health and the values of all properties of a specific object.  | Operational DB | N/A|
 Contextual Health | Displays a table that includes monitors directly targeted at an object selected in another control in the dashboard and that match a specified criteria. | Operational DB | No|
 Details | Displays the health and the values of all properties of an object selected in another control in the dashboard. | Operational DB | N/A|
@@ -85,14 +85,14 @@ Object Detail Tiles | Displays the following set of tiles for an object or the m
 Object Health | Displays a table with a list of monitors for the selected object and its contained objects. | Operational DB | No|
 State | Displays a table with a list of objects with their properties and current health state. | Operational DB | No |
 State Tiles | Displays a summary tile showing the health and number of alerts for the object that match a criteria. | Operational DB | No|
-**PowerShell Widgets** ||||
+**PowerShell widgets** ||||
 PowerShell Grid | Displays the results of a Windows PowerShell script in a grid. | N/A | N/A|
 PowerShell Web Browser | Displays the output of a web page retrieved by a PowerShell script.| N/A | N/A|
-**SLA Widgets** ||||
+**SLA widgets** ||||
 Object SLA | Graphically displays the last measured value each Service Level Objective in one ore more Service Level Agreements. |Data Warehouse DB | N/A|
 SLA | Graphically displays the last measured value of each Service Level Objective in one more Service Level Agreements. | Data Warehouse DB | N/A|
 SLA Tiles | Displays an SLA tile showing the last Service Level Objective value for the object. If there are multiple Service Level Objectives, then the tile cycles through the different values. | Data Warehouse DB | N/A|
-**Miscellaneous Widgets** ||||
+**Miscellaneous widgets** ||||
 Topology | Displays an icon for one or more objects on a selected image. | Operations DB | N/A|
 Web Browser | Displays a web, optionally sending the ID of the management group, the ID of an object selected in another widget in the dashboard, and the ID of an alert selected in another widget in the dashboard.  This allows you to create a web page that could use the Operations Manager SDK to retrieve information or perform some other action dynamically in response to a user selection in the dashboard. | Operational DB | N/A|
 

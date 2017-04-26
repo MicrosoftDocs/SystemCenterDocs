@@ -4,10 +4,10 @@ title: Deploy SQL Server for VMM high availability
 description: This article explains how to set up SQL Server as highly available in a VMM deployment
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 # Deploy SQL Server for VMM high availability
@@ -20,7 +20,7 @@ This article describes the steps for deploying a highly available SQL Server dat
 
 ## Before you start
 
-Read the [planning information](~/vmm/plan-ha-install.md) for a highly available VMM deployment. It includes prerequisites and issues you should be aware of.
+Read the [planning information](plan-ha-install.md) for a highly available VMM deployment. It includes prerequisites and issues you should be aware of.
 
 
 ## Set up availability groups
@@ -38,17 +38,17 @@ Read the [planning information](~/vmm/plan-ha-install.md) for a highly available
 1. On the VMM server, stop the VMM service. For a cluster, in Failover Cluster Manager, stop the VMM role.
 2. Connect to the machine that hosts the VMM database, and in SQL Server Management Studio, right-click the VMM database > **Properties**. In **Options**, set the **Recovery model** for the database to **Full**.
 3. Right-click the VMM database > **Tasks** > **Back Up** and take a backup of the database.
-5. In SQL Server Management Studio > **AlwaysOn High Availability** > right-click the availability group name > **Add Database**.
-6. In **Add Database to Availability Group** > **Select Databases**, select the VMM database.
-7. In **Select Data Synchronization**, leave the **Full** default.
-8. In **Connect to Replicas** > **Connect**, specify permissions for the availability group destination.
-9. Prerequisites are checked in **Validation**. In **Summary**, when you click **Next** AlwaysOn availability support will be initiated for the VMM database. The VMM database is copied and from this point AlwaysOn will keep the VMM database synchronized between the SQL Server AlwaysOn cluster nodes.
-10. Restart the VMM service or cluster role. The VMM server should be able to connect to the SQL Server.
-11. VMM credentials are only stored for the main SQL Server, so you'll need to create a new login on the secondary node of the SQL Server cluster, with the following characteristics:
+4. In SQL Server Management Studio > **AlwaysOn High Availability** > right-click the availability group name > **Add Database**.
+5. In **Add Database to Availability Group** > **Select Databases**, select the VMM database.
+6. In **Select Data Synchronization**, leave the **Full** default.
+7. In **Connect to Replicas** > **Connect**, specify permissions for the availability group destination.
+8. Prerequisites are checked in **Validation**. In **Summary**, when you click **Next** AlwaysOn availability support will be initiated for the VMM database. The VMM database is copied and from this point AlwaysOn will keep the VMM database synchronized between the SQL Server AlwaysOn cluster nodes.
+9. Restart the VMM service or cluster role. The VMM server should be able to connect to the SQL Server.
+10. VMM credentials are only stored for the main SQL Server, so you'll need to create a new login on the secondary node of the SQL Server cluster, with the following characteristics:
 
--   The login name is identical to the VMM service account name.
--   The login has the user mapping to the VMM database.
--   The login is configured with the database owner credentials.
+   -   The login name is identical to the VMM service account name.
+   -   The login has the user mapping to the VMM database.
+   -   The login is configured with the database owner credentials.
 
 ## Run a failover
 

@@ -4,7 +4,7 @@ title: How to Move the Reporting Data Warehouse Database
 description: This article describes how to move the Operations Manager Reporting data warehouse database to a different SQL Server instance after initial deployment.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 11/01/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -38,11 +38,11 @@ On all the management servers in the management group, stop the Operations Manag
 
 ### Backup the Reporting data warehouse database on the old SQL Server instance
 
-2. On the original SQL Server instance hosting the Reporting data warehouse database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManagerDW.
+1. On the original SQL Server instance hosting the Reporting data warehouse database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManagerDW.
   
     For more information, see [How to: Back Up a Database (SQL Server Management Studio)](https://technet.microsoft.com/library/ms187510.aspx).
 
-3. Copy the backup file to a local drive of the new SQL Server instance.
+2. Copy the backup file to a local drive of the new SQL Server instance.
 
 ### Restore the Reporting data warehouse database on the new SQL Server instance
 

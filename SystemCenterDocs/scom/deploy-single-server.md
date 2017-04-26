@@ -4,7 +4,7 @@ title:  Single Server Deployment of Operations Manager
 description: This article provides an overview of the single server deployment of Operations Manager 2016 to prepare you before performing setup.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -72,11 +72,11 @@ This configuration does not include the gateway server role. Because of this, al
 
 The single server, single management group resides on a single set of hardware or virtual machine. This configuration supports only one instance of each server role and therefore does not support agent failover between management servers.
 
-## Common Uses
+## Common uses
 
 This configuration is most commonly used for evaluation, testing, and management pack development purposes, usually in non-production or pre-production environments. Single-server management group configurations generally lack the robustness and performance to support anything but the smallest production loads.
 
-## Ports Used
+## Ports used
 
 In this configuration, you need to make sure that network ports are opened for communication between the agents and the management server, between the Operations console and the management server, and between the Web console and the management server. All other inter-service communication occurs on the management server itself. The ports are as follows:
 

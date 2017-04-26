@@ -4,7 +4,7 @@ title:  Distributed Deployment of Operations Manager
 description: This article highlights the distributed deployment configuration of Operations Manager and references each role to install. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold

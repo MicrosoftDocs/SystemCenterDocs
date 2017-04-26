@@ -4,8 +4,8 @@ title: Provision shielded virtual machines in VMM
 description: Describes how to add and provision shielded VMs in the VMM fabric. Shielding VMs helps keep them secure.
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 11/01/2016
+manager: carmonm
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -81,4 +81,4 @@ You can enable shielding for a VM currently running on a host in the VMM fabric 
 
 ## Next steps
 
-- [Manage virtual machine settings](vm-settings.md)
+Review [Manage virtual machine settings](vm-settings.md) to learn how to configure performance and availability settings for VMs.
