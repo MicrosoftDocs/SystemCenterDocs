@@ -4,10 +4,10 @@ title: Create a guest cluster from a service template
 description: This article provides guidance about creating a guest cluster from a service tempalte
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  210/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 

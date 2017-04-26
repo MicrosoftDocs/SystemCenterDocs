@@ -4,10 +4,10 @@ title: Managing Nano server as a Hyper-V host or a VM in VMM
 description: This article describes how to deploy and manage Nano server-based hosts & VMs in VMM
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -17,11 +17,7 @@ ms.technology:  virtual-machine-manager
 
 You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
-- **Bare metal deployment of Nano Server-based hosts and clusters (both compute and storage)**
-
 You can now configure bare metal machines as Nano Server-based hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. This process is very similar to bare metal deployment of Full Servers except for the fact that the VHD(x) used for the operating system deployment needs to be a Nano Server-based VHD(x). Details regarding how to create a Nano Server VHD(x) can be found below in this article. For more details regarding bare-metal deployment of Nano Server-based hosts & clusters see [Provision a Hyper-V host or cluster from bare metal computers](hyper-v-bare-metal.md).
-
-- **Management of Nano Server-based hosts and clusters (both compute and storage)**
 
 Along with bare metal deployment, you can also add and manage existing Nano Server-based standalone hosts, compute clusters, and storage clusters (both dis-aggregated and hyper-converged) using VMM. For more details, see [Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric](hyper-v-existing.md).
 
@@ -32,7 +28,7 @@ VMM supports full lifecycle management of Nano Server-based VMs, including shiel
 
 - Creation of the Nano Server VHD(X) needs to be done outside of VMM, details on how to create the VHD(X) can be found below in the 'Prepare a Nano server virtual hard disk' section of this article.
 - You can't create a VM template from a Nano Server VM in VMM. As a workaround, create a VM template from scratch using a Nano Server virtual hard disk.
-- There are some known issues when joining a Nano Server-based virtual machine (VM) to a domain. If you try to join the VM to a domain by specifying customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. [Learn more](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server). Note that domain joining of a physical machine during bare metal deployment works fine.
+- There are some known issues when joining a Nano Server-based virtual machine (VM) to a domain. If you try to join the VM to a domain by specifying customization details in a VM template, the domain information is ignored by VMM. The VM is deployed, but doesn't join the domain. As a workaround, deploy the VM and then join it to a domain. Learn more by reviewing the following [getting started with Nano Server topic](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server). Note that domain joining of a physical machine during bare metal deployment works fine.
 
 ## Prepare a Nano server virtual hard disk
 
@@ -63,8 +59,8 @@ To get started with the deployment of a Nano Server-based host or virtual machin
     - Unmount the VHD.
 
 7.  Boot the physical computer into the Nano Server VHD.
-8.  Log on to the Nano server Recovery Console using the administrator and password you supplied while running the script and obtain the IP address of the Nano server-based host. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
-8.  Ensure that the Nano server is joined to the same domain as the VMM server. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
+8.  Log on to the Nano server Recovery Console using the administrator and password you supplied while running the script and obtain the IP address of the Nano server-based host. Learn more by reviewing the [Install Nano Server documentation](https://technet.microsoft.com/library/mt126167.aspx).
+8.  Ensure that the Nano server is joined to the same domain as the VMM server. Learn more by reviewing the [Install Nano Server documentation](https://technet.microsoft.com/library/mt126167.aspx).
 9. Ensure that the VMM service account and the Run As account are added to the administrators group on the Nano server.
 
 ### Install the VMM packages offline on an existing Nano Server VHD(X)
@@ -80,7 +76,8 @@ If you forgot to add the SCVMM packages while creating the Nano Server VHD, you 
     - **Install-NanoServerPackage -Name Microsoft-NanoServer-SCVMM-Package -culture en-US -ToVhd "C:\MyNano.vhd"**
     - **Install-NanoServerPackage -Name Microsoft-NanoServer-SCVMM-Compute-Package -culture en-US -ToVhd "C:\MyNano.vhd"**
 
-    Note: C:\MyNano.vhd is the location of the Nano Server based VHD.
+    > [!NOTE]
+    > C:\MyNano.vhd is the location of the Nano Server based VHD.
 
 ### Install the VMM packages on a running Nano server host
 
@@ -92,18 +89,19 @@ We recommend offline installation of the VMM packages (when creating the VHD) bu
 
     - **dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Package_en-us.cab**
 
-    Note: Ensure that the en-us (Microsoft-NanoServer-SCVMM-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Package.cab) .cab files are in the same directory to make sure in installs both.
+    > [!NOTE]
+    > Ensure that the en-us (Microsoft-NanoServer-SCVMM-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Package.cab) .cab files are in the same directory to make sure in installs both.
 
 4. To install Microsoft-NanoServer-SCVMM-Compute-Package:
 
     - **dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab**
 
-    Note: Ensure that the en-us (Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Compute-Package.cab) .cab files are in the same directory to make sure in installs both.
+    > [!NOTE]
+    > Ensure that the en-us (Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Compute-Package.cab) .cab files are in the same directory to make sure in installs both.
 
 5. Check that the VMM packages and the associated language packs are installed correctly by running the following command: **dism /online /get-packages**.
 6. You should see "Package Identity : Microsoft-NanoServer-SCVMM-Feature-Package~31bf3856ad364e35~amd64~~ 10.0.14300.1003" listed twice, once for Release Type : Language Pack and once for Release Type : Feature Pack. Same applies for the Microsoft-NanoServer-SCVMM-Compute-Package.
 7. Restart the Nano server-based host.
-
 
 
 ## Add the Nano server host to the VMM fabric  
