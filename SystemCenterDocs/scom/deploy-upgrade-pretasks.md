@@ -4,7 +4,7 @@ title:  Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Mana
 description:  This guide provides the pre-upgrade tasks you must perform before attempting to upgrade to Operations Manager 2016. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/29/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
+# Pre-Upgrade tasks when upgrading to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
@@ -116,7 +116,7 @@ To stop a service for a Connector, perform the following steps:
 
 2. In the **Name** column, right-click the Connector that you want to control, and then click **Stop**.
 
-## Verify the Operations Manager database has more Than 50 percent free
+## Verify the Operations Manager database has more than 50 percent free
 
 You must verify that the operational database has more than 50 percent of free space before you upgrade the management group because the upgrade might fail if there is not enough space. You should also ensure that the transactions logs are 50 percent of the total size of the operational database.
 
@@ -166,3 +166,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\M
 The default decimal value of DWORD type is 15360 (15 MB) and the recommended value to change it to is 76800 (75 MB).
 
 Once you have completed the upgrade of the management group, you can reset it back to the default value.  
+
+## Next steps
+
+To continue with the upgrade please review [Upgrade overview](deploy-upgrade-overview.md).

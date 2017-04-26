@@ -3,7 +3,7 @@ title: Resolving Heartbeat Alerts
 description: This article describes how to investigate a Health Service Heartbeat Failure   alert in Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreeman
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -22,7 +22,7 @@ This section shows how to investigate a Health Service Heartbeat Failure alert a
   
 If you want to walk through these procedures, you can cause this alert by disabling the Microsoft Monitoring Agent service on a test system.  
   
-### To cause a Health Service heartbeat failure alert for testing  
+## To cause a Health Service heartbeat failure alert for testing  
   
 1.  On a computer with an agent installed, open Control Panel.  
   

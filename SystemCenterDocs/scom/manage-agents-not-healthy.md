@@ -3,7 +3,7 @@ title: Not Monitored and Gray Agents
 description: This article describes how Operations Manager detects and reports when an agent isn't communicating and reporting monitoring data as expected.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 12/13/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 4a96716d-49f8-48a8-ac34-ca69e8f6363b
 ---
 
-# Not Monitored and gray agents
+# Not monitored and gray agents
 
 >Applies To: System Center 2016 - Operations Manager
 

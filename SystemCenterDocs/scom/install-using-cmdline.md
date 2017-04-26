@@ -3,7 +3,7 @@ ms.assetid: e305673d-88ab-4aa1-9287-31b617a9f1fc
 title: Installing Operations Manager From the Command Prompt 
 description: This article describes the different command-line arguments you would use when installing an Operations Manager component from the Command Prompt. 
 author: mgoedtel
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center-threshold

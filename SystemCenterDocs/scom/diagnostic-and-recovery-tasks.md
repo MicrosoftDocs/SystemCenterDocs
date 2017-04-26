@@ -3,7 +3,7 @@ title:  Diagnostic and Recovery Tasks
 description: This article provides an overview of how you can configure diagnostic and recovery tasks with monitors when health state changes.    
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 12/06/2016
 ms.custom: na
 ms.prod: system-center-threshold

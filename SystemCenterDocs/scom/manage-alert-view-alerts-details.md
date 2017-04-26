@@ -4,7 +4,7 @@ title: View Active Alerts and Details
 description: This article describes how to review the active alerts reported by monitored objects and their details to understand the impact of your affected IT services.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 11/29/2016
 ms.custom: na
 ms.prod: system-center-threshold

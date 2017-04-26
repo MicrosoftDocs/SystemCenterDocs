@@ -4,7 +4,7 @@ title: How to Upgrade a Web Console to System Center 2016 - Operations Manager
 description: This article describes how to upgrade a Web console to Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Upgrade a Web Console to System Center 2016 - Operations Manager
+# How to upgrade a Web Console to System Center 2016 - Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
