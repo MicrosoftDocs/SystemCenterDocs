@@ -6,7 +6,7 @@ ms.topic: article
 author:  bandersmsft
 ms.author: banders
 ms.prod: system-center-2016
-keywords:  
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: bc5b518f-97c4-4a2d-a1b2-3ece9e7e603e
@@ -18,31 +18,31 @@ ms.assetid: bc5b518f-97c4-4a2d-a1b2-3ece9e7e603e
 
 You can use the following procedures in Service Manager to register the System Center Data Warehouse to Operations Manager and then validate the registration.
 
-### To register the data warehouse to Operations Manager
+## To register the data warehouse to Operations Manager
 
-1.  Register System Center Data Warehouse to Service Manager Source.
+1. Register System Center Data Warehouse to Service Manager Source.
 
-2.  Wait for the MPSync job to complete.
+2. Wait for the MPSync job to complete.
 
-3.  Using an account that is a member of the Service Manager and data warehouse management administrators group, log on to the computer that hosts the Service Manager console.
+3. Using an account that is a member of the Service Manager and data warehouse management administrators group, log on to the computer that hosts the Service Manager console.
 
-4.  In the Service Manager console, select **Data Warehouse**.
+4. In the Service Manager console, select **Data Warehouse**.
 
-5.  In the **Administration** pane, expand **Data Warehouse**, and then select **Data Sources**.
+5. In the **Administration** pane, expand **Data Warehouse**, and then select **Data Sources**.
 
-6.  In the **Tasks** list, click **Register data source**.
+6. In the **Tasks** list, click **Register data source**.
 
-7.  In the Register Data Source Wizard, on the **Before You Begin** page, click **Next**.
+7. In the Register Data Source Wizard, on the **Before You Begin** page, click **Next**.
 
-8.  On the **Data Source Type**  page, select **Operations Manager**.
+8. On the **Data Source Type**  page, select **Operations Manager**.
 
 9. Under **Specify a Root Management Server** area, type the following information:
 
-    1.  For **Root Management server name**, type the server name.
+    * For **Root Management server name**, type the server name.
 
-    2.  For **Operational database server**, type the database server name.
+    * For **Operational database server**, type the database server name.
 
-    3.  For **Database name**, type the name of the database.
+    * For **Database name**, type the name of the database.
 
 10. Click **Next**.
 
@@ -55,6 +55,6 @@ You can use the following procedures in Service Manager to register the System C
 
 13. On the **Result** page, when **Data source registration complete.** appears, click **Finish**.
 
-### To validate the Operations Manager registration process
+## To validate the Operations Manager registration process
 
--   In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
+In the **Data Sources** view, the new data source appears in the list of data sources, with the data source type of **Operations Manager**. You might have to refresh your view to see the new data source.
