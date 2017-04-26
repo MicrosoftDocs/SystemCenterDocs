@@ -4,7 +4,7 @@ title: How to Upgrade an Operations Console to System Center 2016 - Operations M
 description: This article describes how to upgrade an Operations console to Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold

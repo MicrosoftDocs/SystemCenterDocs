@@ -4,7 +4,7 @@ title: How to Upgrade a Management Server to System Center 2016 - Operations Man
 description: This article describes how to upgrade a management server in a distributed deployment of Operations Manager 2016. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold

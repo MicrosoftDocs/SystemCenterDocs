@@ -4,7 +4,7 @@ title: Install a Gateway Server
 description: This article describes how to install the Operations Manager Gateway server.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -138,7 +138,7 @@ This procedure installs the gateway server. The server that is to be the gateway
     [INSTALLDIR=<path\Directory>]
     ```
 
-### Importing Certificates with the MOMCertImport.exe tool
+### Importing certificates with the MOMCertImport.exe tool
 
 Perform this operation on each gateway server, management server, and computer that will be agent-managed and that is in a domain that is not trusted.
 

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 954164df-4d78-45a7-868e-a7639747b761
 title: How to Enable or Disable a Rule or Monitor
-description:
+description: This topic provides specific instructions on how to enable or enable Management Pack monitoring rules and monitors.
 author: mgoedtel
 manager: cfreemanwa
 ms.date: 10/12/2016
@@ -11,7 +11,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Enable or Disable a Rule or Monitor
+# How to enable or disable a rule or monitor
 
 >Applies To: System Center 2016 - Operations Manager
 

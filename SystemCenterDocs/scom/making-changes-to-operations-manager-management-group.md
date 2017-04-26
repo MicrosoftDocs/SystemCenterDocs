@@ -4,7 +4,7 @@ title: Making Changes to an Operations Manager Management Group
 description: This article describes the tasks you may perform after after you have deployed or upgraded Operations Manager in your environment.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreeman
+manager: carmonm
 ms.date: 11/02/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Making Changes to an Operations Manager Management Group
+# Making changes to an Operations Manager Management Group
 
 >Applies To: System Center 2016 - Operations Manager
 

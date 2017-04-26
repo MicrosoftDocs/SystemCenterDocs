@@ -1,9 +1,9 @@
 ---
 ms.assetid: d6e1034d-88be-49f0-a5d1-65da807a77f6
 title: Configure Authentication with Reporting server
-description:  
+description: This topic describes how to configure the Operations Manger reporting server to be compliant with Federal Information Processing Standards. 
 author: mgoedtel
-manager: cfreemanwa
+manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -11,11 +11,11 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configure Authentication with Reporting server
+# Configure authentication for the Reporting server
 
 >Applies To: System Center 2016 - Operations Manager
 
-In order to use algorithms that are FIPS compliant, follow these steps for the Operations Manager Reporting server component. Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
+Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
 
 
 ##  Enable FIPS on the Reporting server
