@@ -1,5 +1,6 @@
 ---
-title: Monitor a Folder within a Runbook
+title: Monitor a folder within a runbook
+description: This article describes how you can use a sample to create a simple monitor runbook that monitors a folder for new text files.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,7 +15,7 @@ ms.date: 10/12/2016
 manager: cfreeman
 ---
 
-# Monitor a Folder within a Runbook
+# Monitor a folder within a runbook
 
 > Applies To: System Center 2016 - Orchestrator
 
@@ -85,7 +86,7 @@ The procedures to create, configure, and test a sample runbook that monitors a f
 
 13. In the **Send Event Log Message Properties** dialog box, on the **Details** tab, in the **Properties** section, set the following:  
 
-14. 1.  In the **Computer** box, type the name of the computer to receive the Event message.  
+    1.  In the **Computer** box, type the name of the computer to receive the Event message.  
 
         This is typically the computer where you are running Runbook Designer.  
 
@@ -159,5 +160,6 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 14. On the **Runbook Designer** toolbar, click **Check In**.  
 
-## See Also  
-[Runbook Samples](runbook-samples.md)  
+## Next steps
+
+- Read [Runbook Samples](runbook-samples.md) to learn about building and testing sample runbooks.
