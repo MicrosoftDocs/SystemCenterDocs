@@ -1,5 +1,5 @@
 ---
-description:  
+description:  You can back up file data on server and client computers with DPM.
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto

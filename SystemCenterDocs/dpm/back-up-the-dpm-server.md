@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article helps you create a strategy for backing up the DPM server.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

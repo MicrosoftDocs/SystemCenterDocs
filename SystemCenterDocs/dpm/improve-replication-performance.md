@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article describes the steps you can take to improve replication performance in DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
