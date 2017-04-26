@@ -4,8 +4,8 @@ title: Configure VM failover between virtual networks in VMM
 description: This article describes how to fail over VMs between virtual networks without Azure Site Recovery
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  03/20/2017
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -38,11 +38,11 @@ This sample solution describes the following environment:
 - The replica VM shouldn't be connected to a network
 - Only one IP address should be assigned to each network adapter of the primary VM. Run this command to ensure this. If there's more than one connected network adapter on the VM, run it for adapter by changing the array index.
 
-        ``$VMOnPD = Get-SCVirtualMachine -Name "VM Name" | where {$_.IsPrimaryVM -eq $true}
+        $VMOnPD = Get-SCVirtualMachine -Name "VM Name" | where {$_.IsPrimaryVM -eq $true}
         Get-SCIPAddress –GrantToObjectId $VMOnPD.VirtualNetworkAdapters[0].ID``
 
 - Make sure that the IP address assigned to the VM by the operating system is the same as the IP address shown above. Log onto the VM and run **ipconfig** to check this.
-- Check that lookup tables are correctly set on the primary and replica . To do this, run the following command on each server, and ensure that there is an entry that corresponds to the IP address returned above: **Get-NetVirtualizationLookupRecord**
+- Check that lookup tables are correctly set on the primary and replica . To do this, run the following command on each server, and ensure that there is an entry that corresponds to the IP address returned above: `Get-NetVirtualizationLookupRecord`
 - Check that the IP address is IPv4, and not IPv6
 - Make sure both VMs are turned off before you run the scripts.
 - Make sure that the replication state is enabled on both VMs.
@@ -273,13 +273,13 @@ Here's what this script does:
 
 ### Run the script
 
-This script should be run for the failover script was run with $ReverseRep set to **$false** .This script takes three arguments:
+This script should be run for the failover script with $ReverseRep set to **$false** .This script takes three arguments:
 
 - $VMName: VM name
 - $ReverseRep: Boolean argument to specify whether reverse replication should be performed. $true indicates that reverse replication runs.
 - $CancelFO - Boolean argument to specify whether the failover is cancelled. $true indicates cancellation on primary and recovery sites.
-- One and only one of $ReverseRep and $CancelFO can be passed $true at a time
-- After the script runs successfully, the state on both VMs should be **Replication enabled’**.
+
+One and only one of $ReverseRep and $CancelFO can be passed $true at a time.  After the script runs successfully, the state on both VMs should be **Replication enabled’**.
 
 Run the script:
 
