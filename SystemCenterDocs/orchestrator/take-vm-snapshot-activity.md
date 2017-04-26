@@ -25,7 +25,7 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Take VM Snapshot Activity Required Properties
+## Take VM Snapshot Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -33,13 +33,13 @@ The activity publishes all of the data from the required and optional properties
 | Snapshot VM Memory | Indicates whether the source virtual machine's memory is included in the snapshot | Boolean   | Yes   |
 | VM Path   | The path to the virtual machine to take a snapshot of   | String   | Yes   |
 
-### Take VM Snapshot Activity Optional Properties
+## Take VM Snapshot Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Snapshot Description | A description of the snapshot to be created. | String   | No   |
 
-### Take VM Snapshot Activity Published Data
+## Take VM Snapshot Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -52,7 +52,7 @@ The activity publishes all of the data from the required and optional properties
 
 The following procedure describes the steps required to configure a Take VM Snapshot activity.
 
-#### To configure the Take VM Snapshot activity
+### To configure the Take VM Snapshot activity
 
 1.  From the **Activities** pane, drag a **Take VM Snapshot** activity to the active runbook.
 
