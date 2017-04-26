@@ -3,7 +3,7 @@ title: How to Reset Health
 description: This article describes how to reset health for a monitor after correcting the issue identified.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 11/30/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -21,6 +21,7 @@ Some monitors can set state to critical (red), warning (yellow), and healthy (gr
 > [!NOTE]  
 > Only reset health for a monitor when you are sure that all issues have been resolved.  
   
+## To reset the health for a monitor
 
 1.  In the **Monitoring** workspace of the Operations console, right-click an alert, point to **Open**, and then click **Health Explorer**.  
   

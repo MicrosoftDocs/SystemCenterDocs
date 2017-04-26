@@ -4,7 +4,7 @@ title:  Install Windows Agent Manually Using MOMAgent.msi
 description:  This article describes how to manually install the Operations Manager agent manually on Windows computers.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/28/2016
 ms.custom: na
 ms.prod: system-center-threshold

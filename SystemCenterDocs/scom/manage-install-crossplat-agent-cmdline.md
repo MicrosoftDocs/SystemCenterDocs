@@ -4,7 +4,7 @@ title: Install Agent and Certificate on UNIX and Linux Computers Using the Comma
 description: This article describes how to install the Operations Manager agent manually on UNIX and Linux computers.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 03/21/2017
 ms.custom: na
 ms.prod: system-center-threshold

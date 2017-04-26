@@ -4,7 +4,7 @@ title: Configuring Windows Agents
 description: This article describes the options and how configure the Microsoft Monitoring Agent on Windows computers.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 11/07/2016
 ms.custom: na
 ms.prod: system-center-threshold

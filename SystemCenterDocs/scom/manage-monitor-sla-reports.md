@@ -3,7 +3,7 @@ title: Running a Service Level Tracking Report
 description: This article describes how to use the Service Level Tracking report in Operations Manager to evaluate service levels against defined targets.
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 12/05/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -22,7 +22,7 @@ The Service Level Tracking Summary report shows the results for one or more serv
   
 Use the following steps to generate a Service Level Tracking Summary report.  
   
-### To generate a Service Level Tracking Summary report  
+## To generate a Service Level Tracking Summary report  
   
 1.  Open the Operations console with an account that is a member of the Operations Manager Administrators user role.  
   

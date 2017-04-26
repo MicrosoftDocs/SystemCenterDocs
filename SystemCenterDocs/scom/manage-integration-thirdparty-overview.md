@@ -3,7 +3,7 @@ title: Connecting Operations Manager With Other Management Systems
 description: This article describes how to integrate Operations Manager with other enterprise management systems and System Center components.
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
+ms.manager: carmonm
 ms.date: 12/05/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -58,13 +58,13 @@ Service Manager integrates with Operations Manager through two types of connecto
 * The Configuration Items connector imports objects from Operations Manager as Configuration Items in Service Manager.  Discoveries in Operations Manager locate resources and their properties on managed computers, and the connector allows these objects to be automatically imported into Service Manager. 
 * The Alerts connector imports alerts as they are created from Operations Manager into Service Manager.  They are created in Service manager as incidents where they can be managed.  The incident then remains in synchronization with the alert allowing it to be closed when the incident is resolved.
 
-### Management Pack
+#### Management Pack
 
 The [System Center Monitoring Pack for System Center 2016 - Service Manager](https://www.microsoft.com/download/details.aspx?id=44231) allows Operations Manager 2016 to monitor the health of a Service Manager environment.  It discovers Service Manager management servers and data warehouse and measures the health of its services.  
 
 The Operations Manager agent cannot be installed on a Service Manager management server because Service Manager uses the System Center Management service to process its own management packs.  To monitor a Service Manager management server, you must configure it to use agentless monitoring, which allows Operations Manager to process its management packs on an Operations Manager management server.  Once the computer is added to the Operations Manager management group in this manner, it is monitored like any other computer.  The only exception is that it will not run any rules or monitors that do not support an agentless scenario.
  
-### Orchestrator
+## Orchestrator
 
 The [System Center Integration Pack for System Center 2016 Operations Manager](https://www.microsoft.com/download/details.aspx?id=54098&WT.mc_id=rss_alldownloads_all) includes activities that allow you to create a runbook in System Center 2016 - Orchestrator that interacts with Operations Manager.  You can perform many of the functions that you can perform with Windows PowerShell cmdlets only within the context of an Orchestrator runbook.  
 The activities included in the Operations Manager Integration Pack address the following scenarios:
@@ -79,7 +79,7 @@ If you need to perform an Operations Manager action from a runbook that doesn’
 
 The activities in the Operations Manager Integration Pack connect to Operations Manager using the Operations Manager SDK which means that they connect to the Data Access service on a management server.
 
-#### Management Pack
+### Management Pack
 
 In System Center 2016, the [management pack for Orchestrator](https://www.microsoft.com/download/details.aspx?id=54058) discovers and measures the health of Orchestrator components such as management servers and runbook servers.  It does not discover runbooks, nor does it monitor at the runbook level.  For example, the management pack will send an alert if the runbook service on a runbook server fails, but it will not alert if a runbook fails.  
 

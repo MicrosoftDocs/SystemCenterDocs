@@ -3,7 +3,7 @@ title:  Viewing Network Devices and Data in Operations Manager
 description: This article describes how to view the information about the network devices monitored by Operations Manager.   
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/25/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -142,7 +142,7 @@ The vicinity view shows the relation between network devices and the Windows com
 > [!NOTE]
 > Operations Manager does not display UNIX- and Linux-based devices in the Network Vicinity Dashboard.
 
-### To open Network Vicinity View
+### To open Network Vicinity view
 
 1.  Open Operations console, and then select the **Monitoring** workspace.
 
