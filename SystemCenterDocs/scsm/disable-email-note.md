@@ -21,7 +21,7 @@ ms.assetid: 1317d2e6-b47b-41c0-826b-f7a4b3adf11b
 
 Use the following procedure to disable incoming and outbound E\-mail notifications in the production environment.  
 
-### To disable the outbound email notifications  
+## Disable outbound email notifications  
 
 1.  In the Service Manager console, click **Administration**.  
 
@@ -33,7 +33,7 @@ Use the following procedure to disable incoming and outbound E\-mail notificatio
 
 5.  Clear the **Enable e\-mail notifications** check box.  
 
-### To disable incoming email notifications  
+## Disable incoming email notifications  
 
 1.  In the Service Manager console, select **Administration**.  
 

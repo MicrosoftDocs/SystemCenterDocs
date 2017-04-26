@@ -21,7 +21,7 @@ ms.assetid: 68e697fe-9f0b-4813-bdce-c59cc4019ff3
 
 Use these procedures to move workflows from the Service Manager Authoring Tool to the Service Manager console. First, you must physically move the workflow assembly file and the management pack file that contains the workflow information. Then, you must import the management pack into Service Manager.  
 
-### To move the management pack and workflow files  
+## Move the management pack and workflow files  
 
 1.  On the computer that is running the Authoring Tool, browse to the folder where you saved the management pack, and then copy the management pack and workflow files. The workflow file is automatically created in the same folder as the management pack. For example, copy **AddComputerToADGroupMP.xml** and **AddComputerToADGroupWF.dll**.  
 
@@ -32,7 +32,7 @@ Use these procedures to move workflows from the Service Manager Authoring Tool t
     > [!NOTE]  
     >  You can move the management pack file to a different folder before you import it into the Service Manager console. However, you must place the workflow assembly file in the Service Manager installation folder.  
 
-### To import the management pack into Service Manager  
+## Import the management pack into Service Manager  
 
 1.  In the Service Manager console, click **Administration**.  
 

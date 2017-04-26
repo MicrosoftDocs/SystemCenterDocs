@@ -24,7 +24,7 @@ Use the following procedure to edit the registry on the Service Manager manageme
 >[!CAUTION]
 Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.
 
-## To edit the registry
+## Edit the registry
 
 1. On the computer hosting the Service Manager management server in the lab environment, log on to the computer as a user with administrative credentials.
 2. On the Windows desktop, click **Start**, and then click **Run**.
