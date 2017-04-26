@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: cd7df37b-59f1-4e8f-ae04-7008c2806618
 author: cfreemanwa
 ms.author: cfreeman
@@ -49,7 +49,7 @@ There are no optional properties for this runbook activity.
 ## See Also
 
 
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

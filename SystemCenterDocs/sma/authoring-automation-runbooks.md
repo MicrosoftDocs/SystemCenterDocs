@@ -1,7 +1,7 @@
 ---
 description: Provides guidance and instructions for creating Service Management Automation runbooks
 manager:  carmonm
-ms.topic:  article
+ms.topic:  reference
 author:  cfreemanwa
 ms.author: cfreeman
 ms.prod:  system-center-threshold
