@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article describes logging in DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

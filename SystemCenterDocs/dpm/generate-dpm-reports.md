@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article describes how to create DPM reports using SQL Server Reporting Services.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
@@ -233,7 +233,7 @@ You can send reports to subscribers via email. Reports are sent as file attachme
 3.  On the **E-mail** tab, in **Recipients** type the e-mail addresses of all the subscribers. Only add email addresses that are relevant on the designed server, and separate addresses with a comma. Then select the format.
 
 ## Generate DPM reports in Operations Manager
-Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](https://technet.microsoft.com/en-us/library/hh212876.aspx).
+Operations Manager provides an Operations console and a web console that you can use to view and work with the monitoring data for your environment. To retrieve information you can use predefined views, or search for data and objects using searching and filtering. For more information, see [Getting Information from Operations Manager](https://technet.microsoft.com/library/hh212876.aspx).
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.
 
 DPM provides a number of predefined views that you can use to search more simply than defining your own query or filter.

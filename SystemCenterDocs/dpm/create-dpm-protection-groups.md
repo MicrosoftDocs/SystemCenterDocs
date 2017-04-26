@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article describes what DPM protection groups consist of and why you should use them.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
