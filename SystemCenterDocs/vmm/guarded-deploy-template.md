@@ -4,8 +4,8 @@ title: Set up a template disk, shielding helper disk, and VM template to deploy 
 description: Describes how to configure a shielded template disk and utility disk in VMM to provision new shielded VMs and convert existing VMs to shielded VMs
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 11/07/2016
+manager: carmonm
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -65,4 +65,4 @@ With the shielding helper VHD configured, you can proceed to [shield an existing
 
 ## Next steps
 
-[Provision shielded VMs](~/vmm/guarded-deploy-vm.md)
+Review [Provision shielded VMs](guarded-deploy-vm.md) to understand how to deploy shielded virtual machines in a VMM compute fabric.

@@ -4,10 +4,10 @@ title: Install the VMM console
 description: This article provides installation instructions for the VMM console
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -24,8 +24,8 @@ The remote console can be installed on:
 
 ## Before you start
 
-- Review the [system requirements](../orchestrator/system-requirements.md)
-- Make sure you've followed the [planning instructions](~/vmm/install.md).
+- Review the [system requirements](system-reqs.md)
+- Make sure you've followed the [planning instructions](install.md).
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 
 
@@ -53,14 +53,10 @@ If you want to uninstall the console do the following:
 
 	- **/client** - specifies console installation
 	- **/i ir /x** - specify whether to install (/i) or uninstall (/x) the console.
-	- /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file it will install with default values.
-	- Don't use the /opsmgr parameter
+	- **/f** &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file it will install with default values.
+	- Don't use the **/opsmgr** parameter
 
 3. For example, run **setup.exe /client /i /f C:\Temp\VMClient.ini**.
-
-
-
-
 
 ## Connect to a VMM management server
 

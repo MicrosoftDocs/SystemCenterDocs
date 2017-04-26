@@ -4,10 +4,10 @@ title: Install VMM
 description: This article provides installation instructions for VMM
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -19,7 +19,7 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 
 ## Before you start
 
-- Review the [system requirements](../orchestrator/system-requirements.md) and [planning information](~/vmm/install.md)
+- Review the [system requirements](system-reqs.md) and [planning information](install.md)
 - Make sure you have at least local admin permissions on the computer before you run setup.
 
 ## Run setup
@@ -132,11 +132,11 @@ If there is a problem with setup completing successfully, consult the log files 
 
 ### Uninstall VMM from the command line
 
-To uninstall VMM edit the VMSererUninstall file as described below.
+To uninstall VMM edit the VMServerUninstall.ini file as described below.
 Then run setup.exe for the uninstall. For example, to uninstall using an ini file stored in C:\Temp with an account contoso.SQLAdmin01 type: **setup.exe /server /x /f C:\Temp\VMServerUninstall.ini /SqlDBAdminDomain contoso /SqlDBAdminName SQLAdmin01 /SqlDBAdminPassword password123**
 
 
-#### VMServeRUnisntall.ini
+#### VMServerUnisntall.ini
 
 Option | Details | Default value
 --- | --- | ---
