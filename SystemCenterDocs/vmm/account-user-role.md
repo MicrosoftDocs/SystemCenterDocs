@@ -4,10 +4,10 @@ title: Set up user roles in VMM
 description: This article describes how to set up VMM roles and permissions
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -27,7 +27,7 @@ This article describes how to set up System Center 2016 - Virtual Machine Manage
     - **Delegate Administrator role**: Administrators can create the role. Delegated Administrators can create Delegated Administrator roles that include a subset of their scope, library servers, and Run As accounts.
     - **Read-only Administrator role**: Administrators can create the role. Delegated Administrators can create Read-only Administrator roles that include a subset of their scope, library servers, and Run As accounts.
     - **Tenant Administrator role**: Administrators and Delegated Administrators can create this role.
-- The Administrator role is created by default when you install VMM. The user who performs the installation, and all domain users in the Local Admistrators group on the server, are added to the Administrator role. You can add or remove members in the role properties.
+- The Administrator role is created by default when you install VMM. The user who performs the installation, and all domain users in the local Administrators group on the server, are added to the Administrator role. You can add or remove members in the role properties.
 
 ## Create a role
 

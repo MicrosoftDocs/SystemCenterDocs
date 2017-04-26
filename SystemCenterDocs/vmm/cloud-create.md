@@ -4,8 +4,8 @@ title: Create a private VMM cloud
 description: This article provides instructions for creating a private cloud in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 02/06/2016
+manager: carmonm
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -20,21 +20,25 @@ This article provides instructions for creating a private cloud in System Center
 
 You can create a private cloud from a host group, or from a VMware resource pool. Host groups can contain a single host type or a mix of Hyper-V and VMware ESX hosts.
 
-**Note**: You must be a VMM administrator, or a member of the delegated Administrators user group, with a scope that includes the host groups you'll use for the cloud.
+> [!NOTE]
+> You must be a VMM administrator, or a member of the delegated Administrators user group, with a scope that includes the host groups you'll use for the cloud.
 
 ## Before you start
 
-  - You need to have the VMM fabric in place. [Learn more](plan/plan-fabric.md).
+  - You need to have the VMM fabric in place. [Learn more](plan-fabric.md).
   - You should have one or more [Hyper-V](hyper-v-hosts.md) or [VMware](manage-vmware-hosts.md) virtualization hosts in the fabric. If you're creating a cloud from a VMware resource pool,  a vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be available in the VMM fabric.
     - If you want to provide [self-service users](self-service.md) the ability to store virtual machines to the VMM library, then create a library share, or create a folder in a library share that will serve as the storage location. [Learn more](manage-library-server.md).
 
-        **Note**: Self-service users must have the **Store and re-deploy** permission to store their virtual machines.
+        > [!NOTE]
+        > Self-service users must have the **Store and re-deploy** permission to store their virtual machines.
 
     - You can add independently created library shares as read-only library shares in the VMM when you run the Create Cloud Wizard. For example, outside the VMM, you cannot create the **\\\VMMServer01\Finance\StoredVMs** path, and then add the **\\\VMMServer01\Finance** library share to the VMM library.
     - The self-service user role data path is specified when you create a self-service user role or modify the properties of a self-service user role.
     - If you want to assign read-only shares to the private cloud, where administrators can store read-only resources such as .iso files that they want to make available to self-service users, make sure that one or more library shares exists that you can assign as the read-only library shares.
 
-        **Note**: Self-service users must have the **Author** permission to access the resources.
+        > [!NOTE]
+        > Self-service users must have the **Author** permission to access the resources.
+
     - The library shares that you designate as read-only resource locations for the private cloud must be unique when compared to the library share or shares that are used for stored virtual machines and for the user role data path that is specified for a self-service user role. For example, if the user role data path for a self-service user role is **\\\VMMServer01\Finance**, you cannot create a stored virtual machine path of **\\\VMMServer01\Finance\StoredVMs**. However, if the user role data path is **\\\VMMServer01\Finance\FinanceUserRoleData**, you could specify **\\\VMMServer01\Finance\StoredVMs** as the stored virtual machine path, as the full path is unique. You could also create entirely separate library shares.
 
 

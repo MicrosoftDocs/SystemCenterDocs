@@ -4,10 +4,10 @@ title: Back up and restore VMM
 description: This article describes how to back up and restore the VMM database, and hosts and virtual machines in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -20,7 +20,7 @@ This article describes the backup and recovery process in a System Center 2016 -
 > [!IMPORTANT]
 > Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents nor do they copy data to a separate volume. A checkpoint can serve as temporary backup before updating an operating system on a virtual machine so that you can roll back the update if the update has any adverse effects. You should use a backup application to back up and recover your data in case of catastrophic data loss.
 
-One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](~/dpm/dpm-overview.md).
+One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](../dpm/dpm-overview.md).
 
 Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM the data will be lost if the VMM management server fails.
 
@@ -151,7 +151,7 @@ After you have restored the VMM server, take the following steps:
 ### Restore the VMM server on a different computer
 If you plant to restore the VMM management server onto a different physical computer, first review the hardware requirements in System Requirements.
 
-Next, re-install VMM on the selected server, and point this VMM server to the VMM database. Because this server will have a different SID than the original computer, a few steps are necessary to bring it into synchrony with your environment. These steps include reassociating hosts with the new VMM server (otherwise, they remain mapped to the original computer's machine account).
+Next, re-install VMM on the selected server, and point this VMM server to the VMM database. Because this server will have a different SID than the original computer, a few steps are necessary to bring it current with your environment. These steps include reassociating hosts with the new VMM server (otherwise, they remain mapped to the original computer's machine account).
 
 #### Update hosts with the new VMM management server
 
