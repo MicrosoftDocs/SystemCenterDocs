@@ -21,7 +21,7 @@ ms.assetid: 9b9268e9-2ad8-4781-990c-ee683fd21d02
 
 This article describes the steps needed to recover from potential software and equipment failures in your Service Manager environment. It includes information about how to recover Service Manager databases, management servers, and unsealed management packs.  
 
-## Database recovery
+## Restore a database
 
 To restore a database \(which includes the encryption keys\) for System Center 2016 - Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](http://go.microsoft.com/fwlink/p/?LinkID=131016). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
 
@@ -30,7 +30,7 @@ In addition, you must use the script that you created in the [Backing Up Unseale
 > [!WARNING]  
 >  Long\-term historical data is stored in the Service Manager data warehouse and the current snapshot of the system is stored in the Service Manager database. Recreating the Service Manager data warehouse databases should only be used as a measure of last resort. When possible, you should try to restore the Service Manager data warehouse databases from backups and avoid recreating those databases. If reinstalled, the newly created Service Manager data warehouse databases will be able to synchronize the current snapshot of the system from the Service Manager database-however, historical data will be lost.
 
-## Management server disaster recovery
+## Recover a management server
 
 This section describes how to recover a Service Manager management server or a data warehouse management server. If you installed additional Service Manager management servers, you have the option of promoting an additional Service Manager management server. Regardless of whether you encounter software or hardware failures of the Service Manager management server, your recovery process is based on restoring a computer that has the same computer name.  
 
@@ -54,7 +54,7 @@ You can use the following procedure to restore the encryption keys before you ru
 7.  On the **Provide a Password** page, type the password that you used to back up the encryption key in the **Password** box. In the **Confirm Password** box, reenter the same password, and then click **Next**.  
 8.  After you receive the message, "Secure Storage Key Restore Complete," click **Finish**.
 
-### Recover a Service Manager management server
+### Restore the server
 
 You can use the following procedure to reinstall a management server in System Center 2016 - Service Manager.  
 
@@ -80,14 +80,14 @@ You can use the following procedure to reinstall a management server in System C
 12. On the **Setup completed successfully** page, click **Close**.
 
 
-### Recover a data warehouse management server
+## Recover a data warehouse management server
 
 You can use the following procedure to reinstall a data warehouse management server for System Center 2016 - Service Manager.  
 
 > [!NOTE]  
 >  You must restore the encryption key before starting this procedure.   
 
-#### To recover a data warehouse management server  
+### To recover a data warehouse management server  
 
 1.  Log on to the computer that will host the new data warehouse management server using an account that has administrator rights.  
 2.  On the Service Manager installation media, double\-click the **Setup.exe** file.  

@@ -23,7 +23,7 @@ Service Manager includes a System Center-wide data warehouse. Therefore, data fr
 
 When your data is in a common model, you can manipulate information and have common definitions and a common taxonomy for your whole enterprise. You can do this by deploying OLAP data cubes and accessing the information from the cubes, using standard tools such as Excel and SharePoint. This makes it possible for your users to employ skills that they already know. You control the definition of your business logic in a centralized manner. For example, you can define key performance indicators, such as the incident time\-to\-resolution thresholds, and which values for the thresholds are green, yellow, or red. You can control these choices in a centralized manner and empower your users to easily use the data, yet have the common definition appear in their Excel reports or their SharePoint dashboards.  
 
-## Understanding Service Manager OLAP cubes
+## About Service Manager OLAP cubes
 
 Online analytical processing \(OLAP\) cubes are a feature in Service Manager that use the existing data warehouse infrastructure to provide self\-service business intelligence capabilities to end users.  
 
@@ -144,7 +144,7 @@ The Performance Gain Reaches option defines what percentage of aggregations is b
 Usage\-based optimization makes it possible for SSAS to log the requests for data so that when a query is run, the information is fed into the aggregation design process. SSAS then reviews the data and recommends which aggregations should be built to give the best estimated performance gain.  
 
 
-## Service Manger cube partitioning
+## Service Manager cube partitioning
 
 Each measure group in a cube is divided into partitions, where a partition defines a portion of the fact data that is loaded into a measure group. SQL Server Analysis Services \(SSAS\) on SQL&nbsp;Server Standard Edition allows only one partition per measure group, while multiple partitions are allowed in the Enterprise Edition. Partitions are completely transparent to the end user, but they have an important impact on performance and scalability. For example, partitions can be processed separately and in parallel. They can have different aggregation designs. You can reprocess a partition without affecting all the other partitions in a measure group. Also, SSAS automatically scans only the partitions that contain the necessary data for a query, which can vastly improve query performance.  
 

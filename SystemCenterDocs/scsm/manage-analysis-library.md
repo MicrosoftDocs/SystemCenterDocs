@@ -25,7 +25,7 @@ You can use the following procedure to manage the analysis libraries in the Serv
 
  In order to add a new analysis library folder, the underlying shared folder or other sharing location must already exist and you must have permission to write to it.  
 
-### To manage an analysis library folder  
+## Manage an analysis library folder  
 
 1.  In the Service Manager console, click **Data Warehouse**, expand the **Data Warehouse** node, and then click **Analysis Libraries**.  
 2.  In the **Tasks** pane, click **Add Library Folder**.  
