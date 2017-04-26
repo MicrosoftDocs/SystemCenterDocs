@@ -4,10 +4,10 @@ title: Provision a Hyper-V host or cluster from bare metal computers
 description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/20/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -141,7 +141,7 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 	- If the **Skip cluster validation** option appears, and you don't need support from Microsoft for this cluster, you can skip validation.
 3. In **Discovery Scope** specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
 4. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses), and select the ones you want to include in the cluster.
-5. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, click **Refresh**. Allow or skip deep discovery. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. YThen click **Next**.
+5. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, click **Refresh**. Allow or skip deep discovery. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. Then click **Next**.
 6. In **Deployment Customization** provide information for each computer that you want to include. If you see a computer that you don't want to include, select the BMC (identified by IP address) and then click **Remove**.
 
 	- To configure computers click the BMC IP address. Specify a unique computer name, without wildcard characters.

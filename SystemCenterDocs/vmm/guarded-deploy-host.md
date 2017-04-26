@@ -4,8 +4,8 @@ title: Provision guarded hosts in VMM
 description: Describes how to add and provision guarded hosts in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 11/01/2016
+manager: carmonm
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -54,9 +54,7 @@ Before you can add guarded hosts to your VMM compute fabric, you must configure 
 
 1. Obtain the attestation and key protection URLs for your fabric from your HGS administrator.
 2. In the VMM console, click **Settings** > **Host Guardian Service Settings**.
-3. Enter the attestation and key protection URLs in the respective fields. You do not need to configure the code integrity policies and VM shielding helper VHD sections at this time.
-
-   ![Global HGS settings window](./media/guarded-deploy-host/guarded-hgs-settings.png)
+3. Enter the attestation and key protection URLs in the respective fields. You do not need to configure the code integrity policies and VM shielding helper VHD sections at this time.<br><br> ![Global HGS settings window](./media/guarded-deploy-host/guarded-hgs-settings.png)
 
 4. Click **Finish** to save the configuration.
 
@@ -98,7 +96,7 @@ In guarded fabrics configured to use TPM attestation, each host must be configur
 
 To deploy a code integrity policy to a guarded host managed by VMM, complete the following steps:
 
-1. [Create a code integrity policy](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs#tpm-trusted-attestation-capturing-hardware-and-software-information-that-hgs-uses-in-attestation) for each reference host in your environment. You will need a different CI policy for each unique hardware and software configuration of your guarded hosts.
+1. [Create a code integrity policy](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-deployment-overview) for each reference host in your environment. You will need a different CI policy for each unique hardware and software configuration of your guarded hosts.
 2. Store the CI policies in a secure file share. The computer accounts for each guarded host require **read access** to the share. Only trusted administrators should have write access.
 3. In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 4. Under the Code Integrity Policies section, click **Add** and specify a friendly name and the path to a CI policy. Repeat this step for each unique CI policy. Be sure to name your policies in a manner that will help you identify which policy should be applied to which hosts.

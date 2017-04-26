@@ -4,10 +4,10 @@ title:  Manage port ACLs in VMM 2016
 description: Describes how to manage Hyper-V port access control lists (ACLs)
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  03/30/2017
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -43,7 +43,7 @@ In System Center 2016 - Virtual Machine Manager (VMM), you can centrally configu
 
 ## Unsupported scenarios
 
-Here's what you can't currently do:
+Here is a list of unsupported scenarios:
 
 - Manage individual rules for a single instance, when the ACL is shared with multiple instances. All rules are managed centrally within their parent ACLs, and apply wherever the ACL is attached.
 - Attach more than one ACL to an entity.

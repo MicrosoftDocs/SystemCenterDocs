@@ -4,23 +4,23 @@ title: Deploy VMM for high availability
 description: This article provides instructions for deploying the VMM server in high availability mode
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/20/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 # Deploy a highly available VMM management server
 
->Applies To: System Center 2016 Technical - Virtual Machine Manager
+>Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes the steps for deploying a highly available System Center 2016 - Virtual Machine Manager (VMM) server.
 
 
 ### Before you start
 
-- Read the [planning steps](~/vmm/plan-ha-install.md) for a highly available deployment.
+- Read the [planning steps](plan-ha-install.md) for a highly available deployment.
 - This procedure presumes you're setting up a single failover cluster with two or more file servers.
 
 
