@@ -6,7 +6,7 @@ author:  rayne-wiselman
 ms.author: rayne-wiselman
 manager:  carmonm
 ms.date:  10/16/2016
-ms.topic:  article
+ms.topic:  reference
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
