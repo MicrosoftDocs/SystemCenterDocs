@@ -48,7 +48,7 @@ The following topics provide information about how to install, configure, and us
   
 -   [View an Operations Manager Distributed Application Diagram in Visio](manage-visio-addin-view-dad-in-visio.md)  
   
--   [Link to Operations Manager Objects in a New or Existing Visio Document](link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)  
+-   [Link to Operations Manager Objects in a New or Existing Visio Document](manage-visio-addin-link-objects.md)  
   
 -   [Build a simple monitoring dashboard using the Visio Web Part](manage-visio-addin-create-dashboard.md)  
   
