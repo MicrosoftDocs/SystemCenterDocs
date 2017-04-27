@@ -41,7 +41,7 @@ If you used the add or deny options when running the Health Service Lockdown too
   
 When evaluating allowed and denied listings, know that denies takes priority over allows. If a user is listed as allowed, and the same user is a member of a group that is listed as denied, the user will be denied.  
   
-### To use the health service lockdown tool  
+## To use the health service lockdown tool  
   
 1.  Log on to the computer with an account that is a member of the Administrators group.  
   
@@ -55,7 +55,7 @@ When evaluating allowed and denied listings, know that denies takes priority ove
   
 6.  Type **HSLockdown \[Management Group Name\] /D \[account or group\]** to deny the group or account, and then press ENTER.  
   
-### To unlock the Action account  
+## To unlock the Action account  
   
 1.  Log on to the computer with an account that is a member of the Administrators group.  
   
