@@ -27,7 +27,7 @@ The activity publishes all of the data from the required and optional properties
 
 There are no required properties for this runbook activity.
 
-## List Management Certificate optional rroperties
+## List Management Certificate optional properties
 
 There are no optional properties for this runbook activity.
 
