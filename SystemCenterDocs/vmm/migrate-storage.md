@@ -4,10 +4,10 @@ title: Migrate storage in the VMM fabric
 description: This article describes how to migrate storage in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/20/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -22,7 +22,7 @@ Storage migration enables you to move VM files from one storage location to anot
 
 [Read this article](migrate-live.md#migrate-storage-between-two-locations-on-a-standalone-host) if you want to run a live migration of VM storage between two locations on a standalone host.
 
-Run the migration as follows:
+## How to migrate storage
 
 1.  In **VM"s and Services**, click **All Hosts**, and then select the host on which the virtual machine is deployed.
 
