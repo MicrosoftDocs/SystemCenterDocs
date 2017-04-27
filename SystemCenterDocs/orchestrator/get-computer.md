@@ -2,19 +2,19 @@
 title: Get Computer
 description: You can use the Get Computer activity in a runbook to get the properties of a computer in Active Directory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a2d782b3-10c2-453c-bb23-47ff4f7b0047
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Computer
 
 Applies To: System Center 2016 - Orchestrator

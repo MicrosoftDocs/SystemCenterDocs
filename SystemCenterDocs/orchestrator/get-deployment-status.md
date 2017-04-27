@@ -2,18 +2,17 @@
 title: Get Deployment Status activity
 description: Describes the configurable properties for the Get Deployment Status activity for Configuration Manager Integration Pack.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: ff8803a3-174b-4239-ae68-58e6c1bb1667
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
@@ -76,7 +75,7 @@ Deployment Types.
 - LastExecutionResult               Last string returned by a status Management Information Format (MIF) file (messages 10007 and 10009) or an error return code (10006)
 - LastState                         Numeric category of the last delivery status message
 - LastStateName                     Short description of the delivery category, including:
-    - Accepted – No Further Status
+    - Accepted â€“ No Further Status
     - Succeeded
     - Failed
     - Waiting
@@ -181,23 +180,18 @@ Deployment Types.
 
 1.  From the **Activities** pane, drag a **Get Deployment Status**
     activity to the active runbook.
-
 2.  Double-click the **Get Deployment Status** activity icon. The
     **Properties** dialog box opens.
-
 3.  Configuring the **Details** tab:
-
     1.  In the **Connection** section, click the ellipsis button
         **(...)**, and then select the Configuration Manager server
         connection that you want to use for this activity. Click **OK**.
-
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(…)** button next to the text box to browse
+        click the ellipsis **(â€¦)** button next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the
         value of the property from the data output by a previous
         activity in the runbook.
-
 4.  Click **Finish**.

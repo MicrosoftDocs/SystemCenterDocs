@@ -2,19 +2,19 @@
 title: Get Alerts Activity
 description: The Get Alerts activity retrieves an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer and replicates it to a trouble ticketing system.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e2becb8c-2960-44a3-8644-fd696c48f133
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Alerts Activity
 
 Applies To: System Center 2016 - Orchestrator
@@ -42,18 +42,15 @@ This activity publishes the following alerts:<br>Acknowledged<br>Agent<br>AlertC
 
 The following procedure describes the steps required to configure a Get Alerts activity.
 
-#### To configure the Get Alerts Activity
+### To configure the Get Alerts Activity
 
 1.  From the **Activities** pane, click and drag a **Get Alerts** activity to the active runbook.
-
 2.  Double-click the **Get Alerts** activity icon. The **Properties** dialog box opens.
-
 3.  Configure the settings in the **Details** tab as follows:
-
     1.  In the **Connection** section, click the ellipsis button **(...)**, and then select the IBM Tivoli Netcool/OMNIbus ObjectServer connection that you want to use for this activity. Click **OK**.
     2.  In the **Filters** section, enter a filter. Click **Add**. In the **Name** box, click the down arrow and select a property from the list.
     3.  In the **Relation** box, click the down arrow and select a filter type.
     4.  In the **Value** box, enter the value you want to use. Click **OK** to save the filter settings.
     5.  Add additional filters as needed, and then click **Finish**.
 
-    You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow. <br>For more information about using filters, see Filter Behavior.
+You can also use published data to automatically populate the value of the property from the data output by a previous activity in the workflow. 

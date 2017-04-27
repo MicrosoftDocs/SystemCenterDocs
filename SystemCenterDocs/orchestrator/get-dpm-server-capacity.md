@@ -2,19 +2,19 @@
 title: Get DPM Server Capacity
 description: The Get DPM Server Capacity activity is used in a runbook that queries a Data Protection Manager server for its available free storage capacity.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: be555ca0-71d1-4de6-ad5f-b1d2089ad958
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get DPM Server Capacity
 
 Applies To: System Center 2016 - Orchestrator
