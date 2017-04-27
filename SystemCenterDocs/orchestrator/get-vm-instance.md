@@ -2,19 +2,19 @@
 title: Get VM instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: db87de08-2b60-48da-b908-23d0b83f5146
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get VM instance
 
 Applies To: System Center 2016 - Orchestrator
@@ -70,11 +70,4 @@ There are no optional properties for this runbook activity.
 | VM Deployment Name   | The name of the deployment containing the virtual machine.   | String   |
 | VM Instance Name   | The name of the virtual machine.   | String   |
 | Virtual IP   | Indicates the virtual IP address of the virtual machine.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

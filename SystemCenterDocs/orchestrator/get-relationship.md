@@ -2,19 +2,19 @@
 title: Get Relationship
 description: The Get Relationship activity is used to generate a list of objects from two different classes that are related by the criteria you specify.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 7ccabcbe-6594-4db6-813d-a0dfaa3258df
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Relationship
 
 Applies To: System Center 2016 - Orchestrator

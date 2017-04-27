@@ -2,19 +2,19 @@
 title: Get VM Data Disk
 description: The Get VM Data Disk activity retrieves the specified data disk from a virtual machine.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 55184e52-7605-48e9-81b3-0ad20e06a28e
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get VM Data Disk
 
 Applies To: System Center 2016 - Orchestrator
@@ -49,11 +49,3 @@ There are no optional properties for this runbook activity.
 | Disk Label   | Specifies the description of the data disk.   | String   |
 | Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the disk is located. | String   |
 | Disk Size in GB   | Specifies the size, in GB, of an empty disk to be attached to the role.   | Integer   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
