@@ -1,19 +1,20 @@
 ---
 title: How to Change the Orchestrator Users Group
+description: Describes how to change the Orchestrator users group in a System Center 2016 - Orchestrator environment.
 ms.custom: na
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a1d182f3-b80b-4414-90e6-4c0a10d62f60
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
+
 # How to Change the Orchestrator Users Group
 
 > Applies To: System Center 2016 - Orchestrator
@@ -50,5 +51,5 @@ PermissionsConfig -OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote
 > [!IMPORTANT]  
 > You must run the PermissionsConfig tool at a command prompt with administrative credentials because it modifies group memberships. To do this, right-click the **Command Prompt** icon to select **Run as Administrator**.  
 
-## See Also  
+## Next steps
 [Orchestrator Security Planning](http://technet.microsoft.com/en-us/library/hh420367.aspx)  
