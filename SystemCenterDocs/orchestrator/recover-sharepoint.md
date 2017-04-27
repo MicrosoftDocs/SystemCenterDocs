@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c551fe3-8577-4e26-93ad-caf3f1a8a912
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,15 +17,15 @@ robots: noindex
 ---
 # Recover SharePoint
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Recover SharePoint activity is used in a runbook that recovers a SharePoint farm (configuration and data) to its original location or to a network folder.
 
-Be aware that the term Network Folder is used in this integration pack in the same way that it is used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.
+Be aware that the term *Network Folder* is used in this integration pack in the same way that it is used in the Data Protection Manager user interface. Choosing Network Folder recovers to a local path on a production server. Therefore, the selection of Network Folder requires the name of a production server and a local path on that production server.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Recover SharePoint Required Properties
+## Recover SharePoint required properties
 
 | Element   | Sample value   |
 |--------------------|------------------------------------------------------------------------------------|
@@ -33,14 +33,14 @@ The activity publishes all of the data from the required and optional properties
 | Recovery Type   | Recover to Original Instance, orRecover to Network Folder   |
 | Recovery Source ID | The unique identifier (GUID) of the SharePoint Farm backup up point to be restored |
 
-## Recover SharePoint Optional Properties
+## Recover SharePoint optional properties
 
 | Element   | Sample value   |
 |--------------------|------------------------------------------------------------------------------------|
 | Target Location   | The target location for the recoveryRequired when Recovery Type is Recover to Network Folder.   |
 | Target Server Name | The name of the target server for the recovery Rrequired when Recovery Type is Recover to Network Folder. |
 
-## Recover SharePoint Published Data
+## Recover SharePoint published data
 
 | Element   | Sample value   |
 |--------------------|------------------------------------------------------------------------------------|

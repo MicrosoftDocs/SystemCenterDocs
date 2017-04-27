@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 17575faf-3a92-453f-882f-e00f79b6f44e
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Move User
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 You can use the Move User activity in a runbook to move a user under a new parent path in the Microsoft Active Directory.
 

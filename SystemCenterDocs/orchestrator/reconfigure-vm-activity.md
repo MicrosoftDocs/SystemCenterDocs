@@ -1,5 +1,5 @@
 ---
-title: Reconfigure VM Activity
+title: Reconfigure VM activity
 description: The Reconfigure VM activity is used in a runbook to change the hardware settings of a virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
@@ -8,16 +8,16 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: c9917c4f-376f-4a60-88b5-c141e4200c9f
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-# Reconfigure VM Activity
+# Reconfigure VM activity
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Reconfigure VM activity is used in a runbook to change the hardware settings of a virtual machine. This allows the runbook to increase the number of CPUs and Memory to increase the availability of the application running in the guest operating system.
 
@@ -25,14 +25,14 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Reconfigure VM Activity Required Properties
+### Reconfigure VM activity required properties
 
 | Element | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Notes   | The notes associated with the virtual machine.   | String   | No   |
 | VM Path | The path of the virtual machine to be reconfigured. | String   | Yes   |
 
-### Reconfigure VM Activity Optional Properties
+### Reconfigure VM activity optional properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -59,7 +59,7 @@ The activity publishes all of the data from the required and optional properties
 | Suspend Type   | The action that will occur when the virtual machine is instructed to suspend.   | String   | Yes   |
 | VM Name   | The new name of the virtual machine.   | String   | No   |
 
-### Reconfigure VM Activity Published Data
+### Reconfigure VM activity published data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -88,11 +88,11 @@ The activity publishes all of the data from the required and optional properties
 | VM Name   | The new name of the virtual machine.   | String   |
 | VM Path   | The path to the virtual machine to be reconfigured.   | String   |
 
-## Configuring the Reconfigure VM Activity
+## Configuring the Reconfigure VM activity
 
 The following procedure describes the steps required to configure a Reconfigure VM activity.
 
-#### To configure the Reconfigure VM Activity
+#### To configure the Reconfigure VM activity
 
 1.  From the **Activities** pane, drag a **Reconfigure VM** activity to the active runbook.
 

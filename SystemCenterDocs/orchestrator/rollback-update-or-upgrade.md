@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a4c09c8f-5c17-4603-97fb-1d8b1e577ef7
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Rollback Update or Upgrade
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The **Rollback Update or Upgrade** activity cancels an in progress configuration change (update) or upgrade and returns the deployment to its state before the upgrade or configuration change was started. It is part of the **Azure Deployments** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Rollback Update or Upgrade Required Properties
+## Rollback Update or Upgrade required properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -32,11 +32,11 @@ The activity publishes all of the data from the required and optional properties
 | Rollback Mode   | Specifies whether the rollback should proceed automatically.   | Auto, Manual   |
 | Force Rollback   | Specifies whether the rollback should proceed even when it will cause local data to be lost from some role instances. | True, False   |
 
-## Rollback Update or Upgrade Optional Properties
+## Rollback Update or Upgrade optional properties
 
 There are no optional properties for this runbook activity.
 
-## Rollback Update or Upgrade Published Data
+## Rollback Update or Upgrade published data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -61,11 +61,3 @@ There are no optional properties for this runbook activity.
 | Rollback Mode   | Specifies whether the rollback should proceed automatically.   | String   |
 | Force Rollback   | Specifies whether the rollback should proceed even when it will cause local data to be lost from some role instances. | Boolean   |
 | Label   | A name for the cloud service that is base-64 encoded.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

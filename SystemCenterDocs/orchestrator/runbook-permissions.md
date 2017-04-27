@@ -1,11 +1,10 @@
 ---
-title: Runbook Permissions
+title: Runbook permissions
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
@@ -14,7 +13,7 @@ ms.date: 10/12/2016
 author: cfreemanwa
 manager: cfreeman
 ---
-# Runbook Permissions
+# Runbook permissions
 
 > Applies To: System Center 2016 - Orchestrator
 
@@ -36,5 +35,6 @@ Runbook access permissions are set through the Runbook Designer. By default, onl
 
 5.  To close the **Permissions for Runbook** dialog box and save any changes, click **OK**.  
 
-## See Also  
-[Runbook Concepts](~/orchestrator/automate-runbooks.md)  
+## Next steps  
+
+- Read [Runbook Concepts](~/orchestrator/automate-runbooks.md) for an overview of runbook concepts and operations in System Center Orchestrator.

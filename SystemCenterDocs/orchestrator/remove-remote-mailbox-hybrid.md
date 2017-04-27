@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e13e25d3-2dc1-472d-807d-5a05daa062d7
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Remove Remote Mailbox (Hybrid)
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 You can use the Remove Remote Mailbox activity to delete an existing remote mailbox.
 
@@ -51,8 +51,3 @@ The following tables list the required properties, optional properties, and publ
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
 | Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

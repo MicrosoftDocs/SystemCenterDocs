@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e3763763-05be-47ae-81bc-5efa349863f9
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Monitor Alert
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Monitor Alert activity triggers a runbook when new Operations Manager alerts are generated, and when existing Operations Manager alerts are updated, according to filter criteria that you specify. For example, you can use the Monitor Alert activity to trigger a diagnostic and corrective runbook that responds to critical alerts in your network.
 
 The following tables list the filters, properties, and published data for this activity. The activity publishes all of the data from the required and optional properties into published data.
 
-## Monitor Alert Filters
+## Monitor Alert filters
 
 | Element   | Description   |
 |-----------------------------------|-------------------------------------------------------------------------------------------|
@@ -79,7 +79,7 @@ The following tables list the filters, properties, and published data for this a
 | TimeResolutionStateLastModified   | The time that the resolution state of the alert was last changed   |
 | TimeResolved   | The time that the alert was resolved   |
 
-## Monitor Alert Published Data
+## Monitor Alert published data
 
 | Element   | Description   |
 |-----------------------------------|-------------------------------------------------------------------------------------------|

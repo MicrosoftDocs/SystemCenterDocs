@@ -1,6 +1,6 @@
 ---
-title: Service Manager Published Data
-description: The following tables list the Published Data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
+title: Service Manager published data
+description: The following tables list the published data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center-threshold
@@ -8,20 +8,20 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 20fe155e-61d1-41fa-9d74-9df80c6d4022
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-# Service Manager Published Data
+# Service Manager published data
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
-The following tables list the Published Data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
+The following tables list the published data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
 
-## Active Directory Group Class Published Data
+## Active Directory Group Class published data
 
 Class Category: Visible
 
@@ -60,7 +60,7 @@ Class Category: Visible
 | Organization unit   | string   |
 | Objectguid   | string   |
 
-## Active Directory User or Group Class Published Data
+## Active Directory User or Group Class published data
 
 Class Category: Visible
 
@@ -97,7 +97,7 @@ Class Category: Visible
 | Notes   | string   |
 | Display Name   | string   |
 
-## Active Directory User Class Published Data
+## Active Directory User Class published data
 
 Class Category: Visible
 
@@ -134,7 +134,7 @@ Class Category: Visible
 | Notes   | string   |
 | Display Name   | string   |
 
-## Change Request Class Published Data
+## Change Request Class published data
 
 Class Type: Visible
 
@@ -166,7 +166,7 @@ Class Type: Visible
 | Actual End Date   | Date time  |
 | Display Name   | string   |
 
-## Windows Server Class Published Data
+## Windows Server Class published data
 
 Class Type: Hidden
 
@@ -192,7 +192,7 @@ Class Type: Hidden
 | Asset Status   | enum   |
 | Notes   | string   |
 
-## Windows Server Operating System Class Published Data
+## Windows Server Operating System Class published data
 
 Class Category: Hidden
 
@@ -222,7 +222,7 @@ Class Category: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Trouble Ticket Analyst Comments Class Published Data
+## Trouble Ticket Analyst Comments Class published data
 
 Class Type: Hidden
 
@@ -235,7 +235,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## Star Rating Class Published Data
+## Star Rating Class published data
 
 Class Type: Hidden
 
@@ -247,7 +247,7 @@ Class Type: Hidden
 | Rating Comments   | string   |
 | Display Name   | string   |
 
-## Windows Computer Class Published Data
+## Windows Computer Class published data
 
 Class Type: Hidden
 
@@ -273,7 +273,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Software Items Class Published Data
+## Software Items Class published data
 
 Class Type: Hidden
 
@@ -319,7 +319,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Manual Activity Class Published Data
+## Manual Activity Class published data
 
 Class Type: Visible
 
@@ -342,7 +342,7 @@ Class Type: Visible
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Windows Operating System Class Published Data
+## Windows Operating System Class published data
 
 Class Type: Hidden
 
@@ -372,7 +372,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Program Class Published Data
+## Program Class published data
 
 Class Type: Hidden
 
@@ -391,7 +391,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-## Email Notification Log for Trouble Tickets Class Published Data
+## Email Notification Log for Trouble Tickets Class published data
 
 Class Type: Hidden
 
@@ -406,7 +406,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## System Center Management Group Class Published Data
+## System Center Management Group Class published data
 
 Class Type: Hidden
 
@@ -441,7 +441,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## File Attachment Class Published Data
+## File Attachment Class published data
 
 Class Type: Hidden
 
@@ -455,7 +455,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## System Center Managed Computer (Client Operating System) Class Published Data
+## System Center Managed Computer (Client Operating System) Class published data
 
 Class Type: Hidden
 
@@ -482,7 +482,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Synchronization Status Class Published Data
+## Synchronization Status Class published data
 
 Class Type: Hidden
 
@@ -523,7 +523,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Physical Disk (Concrete) Class Published Data
+## Physical Disk (Concrete) Class published data
 
 Class Type: Hidden
 
@@ -555,7 +555,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## System Center Managed Computer (Server Operating System) Class Published Data
+## System Center Managed Computer (Server Operating System) Class published data
 
 Class Type: Hidden
 
@@ -582,7 +582,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Operations Manager-Generated Incident Class Published Data
+## Operations Manager-Generated Incident Class published data
 
 Class Type: Hidden
 
@@ -631,7 +631,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Configuration Manager DCM Compliant CI Class Published Data
+## Configuration Manager DCM Compliant CI Class published data
 
 Class Type: Hidden
 
@@ -646,7 +646,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Domain User or Group Class Published Data
+## Domain User or Group Class published data
 
 Class Type: Hidden
 
@@ -679,7 +679,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Trouble Ticket Action Log Class Published Data
+## Trouble Ticket Action Log Class published data
 
 Class Type: Hidden
 
@@ -693,7 +693,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## End-user Portal Contact IT Settings Class Published Data
+## End-user Portal Contact IT Settings Class published data
 
 Class Type: Hidden
 
@@ -708,7 +708,7 @@ Class Type: Hidden
 | Chat response time   | string   |
 | Display Name   | string   |
 
-## Desired Configuration Management Incident Class Published Data
+## Desired Configuration Management Incident Class published data
 
 Class Type: Hidden
 
@@ -748,7 +748,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Site Management Server Class Published Data
+## Site Management Server Class published data
 
 Class Type: Hidden
 
@@ -788,7 +788,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Processor (Concrete) Class Published Data
+## Processor (Concrete) Class published data
 
 Class Type: Hidden
 
@@ -816,7 +816,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Active Directory Printer Class Published Data
+## Active Directory Printer Class published data
 
 Class Type: Hidden
 
@@ -868,7 +868,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Microsoft Software Update Class Published Data
+## Microsoft Software Update Class published data
 
 Class Type: Hidden
 
@@ -887,7 +887,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Incident Class Published Data
+## Incident Class published data
 
 Class Type: Visible
 
@@ -920,7 +920,7 @@ Class Type: Visible
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Billable Time Class Published Data
+## Billable Time Class published data
 
 Class Type: Hidden
 
@@ -931,7 +931,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name   | string   |
 
-## Review Activity Class Published Data
+## Review Activity Class published data
 
 Class Type: Visible
 
@@ -959,7 +959,7 @@ Class Type: Visible
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Management Service Watcher (Collection Management Server) Class Published Data
+## Management Service Watcher (Collection Management Server) Class published data
 
 Class Type: Hidden
 
@@ -972,7 +972,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Computer (Deployed) Class Published Data
+## Computer (Deployed) Class published data
 
 Class Type: Hidden
 
@@ -995,7 +995,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Windows Client Class Published Data
+## Windows Client Class published data
 
 Class Type: Hidden
 
@@ -1021,7 +1021,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Network Adapter (Concrete) Class Published Data
+## Network Adapter (Concrete) Class published data
 
 Class Type: Hidden
 
@@ -1052,7 +1052,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Inbound Email Rule Class Published Data
+## Inbound Email Rule Class published data
 
 Class Type: Hidden
 
@@ -1063,7 +1063,7 @@ Class Type: Hidden
 | Service   | string   |
 | Display Name | string   |
 
-## Localization Class Published Data
+## Localization Class published data
 
 Class Type: Hidden
 
@@ -1074,7 +1074,7 @@ Class Type: Hidden
 | Locale ID   | int32   |
 | Display Name | string   |
 
-## Management Service Watcher Group (Collection Management Server) Class Published Data
+## Management Service Watcher Group (Collection Management Server) Class published data
 
 Class Type: Hidden
 
@@ -1087,7 +1087,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Management Service Watcher Group (Gateway Management Server) Class Published Data
+## Management Service Watcher Group (Gateway Management Server) Class published data
 
 Class Type: Hidden
 
@@ -1100,7 +1100,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Text Message Notification Log for Trouble Tickets Class Published Data
+## Text Message Notification Log for Trouble Tickets Class published data
 
 Class Type: Hidden
 
@@ -1113,7 +1113,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## Portal Software Deployment Activity Class Published Data
+## Portal Software Deployment Activity Class published data
 
 Class Type: Hidden
 
@@ -1140,7 +1140,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Logical Disk (Concrete) Class Published Data
+## Logical Disk (Concrete) Class published data
 
 Class Type: Hidden
 
@@ -1201,7 +1201,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Operations Manager Connector Synchronization Class Published Data
+## Operations Manager Connector Synchronization Class published data
 
 Class Type: Hidden
 
@@ -1214,7 +1214,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-## System Center Managed Windows Computer Class Published Data
+## System Center Managed Windows Computer Class published data
 
 Class Type: Hidden
 
@@ -1241,7 +1241,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## System Center Operations Manager Connector Class Published Data
+## System Center Operations Manager Connector Class published data
 
 Class Type: Hidden
 
@@ -1266,7 +1266,7 @@ Class Type: Hidden
 | Is Discovery Data Shared  | boolean   |
 | Display Name   | string   |
 
-## Disk Partition Class Published Data
+## Disk Partition Class published data
 
 Class Type: Hidden
 
@@ -1286,7 +1286,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Windows Domain Controller Class Published Data
+## Windows Domain Controller Class published data
 
 Class Type: Hidden
 
@@ -1313,7 +1313,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Package Class Published Data
+## Package Class published data
 
 Class Type: Hidden
 
@@ -1332,7 +1332,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-## Reviewer Class Published Data
+## Reviewer Class published data
 
 Class Type: Hidden
 
@@ -1346,7 +1346,7 @@ Class Type: Hidden
 | Must Vote   | boolean   |
 | Display Name   | string   |
 
-## Business Service Class Published Data
+## Business Service Class published data
 
 Class Type: Hidden
 
@@ -1366,7 +1366,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Announcement Class Published Data
+## Announcement Class published data
 
 Class Type: Hidden
 
@@ -1379,7 +1379,7 @@ Class Type: Hidden
 | Priority   | enum   |
 | Display Name   | string   |
 
-## Knowledge Article Class Published Data
+## Knowledge Article Class published data
 
 Class Type: Visible
 
@@ -1409,7 +1409,7 @@ Class Type: Visible
 | Notes   | string   |
 | Display Name   | string   |
 
-## System Center Operations Manager Enterprise License Class Published Data
+## System Center Operations Manager Enterprise License Class published data
 
 Class Type: Hidden
 
@@ -1420,7 +1420,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-## Trouble Ticket User Comments Class Published Data
+## Trouble Ticket User Comments Class published data
 
 Class Type: Hidden
 
@@ -1432,7 +1432,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## Software Deployment Process Class Published Data
+## Software Deployment Process Class published data
 
 Class Type: Hidden
 
@@ -1444,7 +1444,7 @@ Class Type: Hidden
 | Description   | string   |
 | Display Name   | string   |
 
-## Problem Class Published Data
+## Problem Class published data
 
 Class Type: Hidden
 
@@ -1477,7 +1477,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Software Updates Class Published Data
+## Software Updates Class published data
 
 Class Type: Hidden
 
@@ -1490,7 +1490,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name  | string   |
 
-## Management Service Watcher (Site Management Server) Class Published Data
+## Management Service Watcher (Site Management Server) Class published data
 
 Class Type:
 
@@ -1503,7 +1503,7 @@ Class Type:
 | Notes   | string   |
 | Display Name   | string   |
 
-## Site Class Published Data
+## Site Class published data
 
 Class Type: Hidden
 
@@ -1543,7 +1543,7 @@ Class Type: Hidden
 | Actual End Date   | date time  |
 | Display Name   | string   |
 
-## Trouble Ticket Audit Log Class Published Data
+## Trouble Ticket Audit Log Class published data
 
 Class Type: Hidden
 
@@ -1555,7 +1555,7 @@ Class Type: Hidden
 | ID   | string   |
 | Display Name | string   |
 
-## Configuration Manager DCM Noncompliant CI Class Published Data
+## Configuration Manager DCM Noncompliant CI Class published data
 
 Class Type: Hidden
 
@@ -1572,7 +1572,7 @@ Class Type: Hidden
 | Notes   | string   |
 | Display Name   | string   |
 
-## Windows Client Operating System Class Published Data
+## Windows Client Operating System Class published data
 
 | Element Name   | Field Type |
 |---------------------------------------|------------|

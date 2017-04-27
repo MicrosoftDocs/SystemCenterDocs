@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e6ea8b08-b182-45dd-a680-2b06bc62ce8e
 author: cfreemanwa
 ms.author: cfreeman
@@ -18,7 +18,7 @@ robots: noindex
 
 # Query ConfigMgr activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Query ConfigMgr activity allows users to run an ad-hoc WQL query
 against Configuration Manager, returning the query results to published

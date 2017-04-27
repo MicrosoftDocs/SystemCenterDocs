@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 5df1e57e-9199-4926-98a6-e07ad6607c76
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,19 +17,19 @@ robots: noindex
 ---
 # Resume VM
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Resume VM activity is used to start a virtual machine that is in a paused state.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Resume VM Required Properties
+## Resume VM required properties
 
 | Element | Description   |
 |:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine |   
 
-## Resume VM Published Data
+## Resume VM published data
 
 | Element   | Description    |
 |:---|:---|

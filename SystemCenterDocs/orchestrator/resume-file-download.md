@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 99aa7184-cdd0-467a-9624-9d75821e38d2
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Resume File Download
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Resume File Download activity is used in a runbook to resume a file download. This activity is only compatible with an FTP configuration.
 
@@ -25,7 +25,7 @@ This activity publishes all of the data from the required properties into publis
 
 The following tables list the required properties and published data for this activity.
 
-## Resume File Download Required Properties
+## Resume File Download required properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -34,7 +34,7 @@ The following tables list the required properties and published data for this ac
 | Representation Type | Determines how data is transferred.   | Ascii<br>Binary  |
 | ModeZ   | Enables Mode Z data decompression.   | True<br>False   |
 
-## Resume File Download Published Data
+## Resume File Download published data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -53,8 +53,3 @@ The following tables list the required properties and published data for this ac
 | Timeout   | The time to wait before a FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

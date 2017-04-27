@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 1eeb6dcd-0579-4e33-b51d-db5241e6b0cc
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Rename File or Folder
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Rename File/Folder activity is used in a runbook to rename a file or folder on a FTP server.
 
@@ -25,7 +25,7 @@ This activity publishes all of the data from the required properties into publis
 
 The following tables list the required properties and published data for this activity.
 
-## Rename File/Folder Required Properties
+## Rename File/Folder required properties
 
 | **Element** | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -33,7 +33,7 @@ The following tables list the required properties and published data for this ac
 | New Name   | The new name of the file or folder.   | String   |
 | Type   | Determines the rename operation. Select Folder for renaming a folder. Select File for renaming a file.   | Folder<br>File   |
 
-## Rename File/Folder Published Data
+## Rename File/Folder published data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -52,8 +52,3 @@ The following tables list the required properties and published data for this ac
 | Timeout   | The time to wait before a FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

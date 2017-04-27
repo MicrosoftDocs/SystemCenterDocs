@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: f8343797-0f78-43ab-a5a5-742233cefa46
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Monitor Message
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Monitor Message activity invokes a runbook when certain HP Operations Manager messages are created, updated, acknowledged or unacknowledged according to filter criteria that you specify. The activity uses filters to determine which messages should invoke the runbook.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).
 
-## Monitor Message Required Properties
+## Monitor Message required properties
 
 | Element   | Description   | Value Type   |
 |:---|:---|:---|
@@ -32,7 +32,7 @@ The following tables list the required properties and published data for this ac
 | Monitor Acknowledged Messages   | The runbook will be invoked if the monitor detects a message that was acknowledged   | True<br>False |
 | Monitor UnAcknowledged Messages | The runbook will be invoked if the monitor detects a message that was unacknowledged | True<br>False |
 
-## Monitor Message Filters
+## Monitor Message filters
 
 | Element   | Description   | Filters   | Value Type   |
 |:---|:---|:---|:---|
@@ -66,7 +66,7 @@ The following tables list the required properties and published data for this ac
 | Number of Annotations   | Number of annotations that have been added to the message.   | Equals<br>Does not equal<br>Is less than<br>Is less than or equal to<br>Is greater than<br>Is greater than or equal to   | Integer   |
 | Source   | Contains the name and version of the template that created the message.   | Equals<br>Does not equal<br>Contains<br>Does not contain<br>Matches pattern<br>Does not match pattern<br>Starts with<br>Ends with | String   |
 
-## Monitor Message Published Data
+## Monitor Message published data
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -109,32 +109,21 @@ The following tables list the required properties and published data for this ac
 | Time Received   | The time at which the management server received the message.   | Datetime   |
 
 >[!TIP]
->When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change. 
+>When editing filters for numeric fields, the **Filter Settings** dialog may change the **Is less than** and **Is greater than** relations to **Is less than or equal to** and **Is greater than or equal to**. To avoid inadvertently modifying the filter, click **Cancel** to dismiss the Filter Settings dialog without committing the change.
 
-## Other Activities
+## Other activities
 
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
-[Acknowledge Message](acknowledge-message.md)
-
-[Add Annotation to Message](add-annotation-to-message.md)
-
-[Create Message](create-message.md)
-
-[Delete Annotation](delete-annotation.md)
-
-[Delete Custom Attribute](delete-custom-attribute.md)
-
-[Get Annotation](get-annotation.md)
-
-[Get Message](get-message.md)
-
-[Launch Tool](launch-tool.md)
-
-[Own/Disown Message](own-or-disown-message.md)
-
-[Set Custom Attribute](set-custom-attribute.md)
-
-[Update Annotation](update-annotation.md)
-
-[Update Message](update-message.md)
+- [Acknowledge Message](acknowledge-message.md)
+- [Add Annotation to Message](add-annotation-to-message.md)
+- [Create Message](create-message.md)
+- [Delete Annotation](delete-annotation.md)
+- [Delete Custom Attribute](delete-custom-attribute.md)
+- [Get Annotation](get-annotation.md)
+- [Get Message](get-message.md)
+- [Launch Tool](launch-tool.md)
+- [Own/Disown Message](own-or-disown-message.md)
+- [Set Custom Attribute](set-custom-attribute.md)
+- [Update Annotation](update-annotation.md)
+- [Update Message](update-message.md)
