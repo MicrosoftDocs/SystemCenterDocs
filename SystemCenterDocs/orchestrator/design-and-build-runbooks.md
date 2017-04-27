@@ -28,7 +28,7 @@ To build a runbook you drag activities onto the workspace. Activities are the bu
 
 - Publish new data 
 
-For more information about types of activities, see [Control runbook activities](control-runbook-activities). 
+For more information about types of activities, see [Control runbook activities](control-runbook-activities.md). 
 
 ## Runbook Designer Panes  
 The Runbook Designer interface is organized into the following four panes.  
