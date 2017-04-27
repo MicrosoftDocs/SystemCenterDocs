@@ -3,7 +3,7 @@ title: How to Configure Grooming Settings for the Operations Manager Database
 description: This article reviews the default grooming settings for the operational database and how to modify those settings.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreeman
+manager: carmonm
 ms.date: 11/10/2016
 ms.custom: na
 ms.prod: system-center-threshold

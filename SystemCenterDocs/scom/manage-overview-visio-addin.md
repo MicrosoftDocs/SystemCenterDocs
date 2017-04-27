@@ -3,7 +3,7 @@ title: Using the Visio Add-in and SharePoint Visio Services Data Provider
 description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 02/16/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -44,17 +44,17 @@ The following topics provide information about how to install, configure, and us
   
 -   [Install and Configure the Visio Services Data Provider](manage-visio-addin-install-data-provider.md)  
   
--   [Configure the Operations Manager Data Source in Visio](~/scom/manage-visio-addin-configure-datasource.md)  
+-   [Configure the Operations Manager Data Source in Visio](manage-visio-addin-configure-datasource.md)  
   
--   [View an Operations Manager Distributed Application Diagram in Visio](~/scom/manage-visio-addin-view-dad-in-visio.md)  
+-   [View an Operations Manager Distributed Application Diagram in Visio](manage-visio-addin-view-dad-in-visio.md)  
   
--   [Link to Operations Manager Objects in a New or Existing Visio Document](~/scom/manage-visio-addin-link-objects.md)  
+-   [Link to Operations Manager Objects in a New or Existing Visio Document](link-to-operations-manager-objects-in-a-new-or-existing-visio-document.md)  
   
--   [Build a simple monitoring dashboard using the Visio Web Part](~/scom/manage-visio-addin-create-dashboard.md)  
+-   [Build a simple monitoring dashboard using the Visio Web Part](manage-visio-addin-create-dashboard.md)  
   
--   [Publish a Visio diagram to SharePoint Server](~/scom/manage-visio-addin-publish-sharepoint.md)  
+-   [Publish a Visio diagram to SharePoint Server](manage-visio-addin-publish-sharepoint.md)  
   
--   [Change the Way Health State is Represented in Visio](~/scom/manage-visio-addin-change-healthstate-datagraphic.md)  
+-   [Change the Way Health State is Represented in Visio](manage-visio-addin-change-healthstate-datagraphic.md)  
   
--   [Troubleshooting the Visio Add-in](~/scom/manage-visio-addin-troubleshoot.md)  
+-   [Troubleshooting the Visio Add-in](manage-visio-addin-troubleshoot.md)  
   

@@ -4,7 +4,7 @@ title: How to Add Knowledge to a Management Pack
 description: This article describes how to add custom knowledge to a workflow in a management pack. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -38,7 +38,7 @@ To add or edit company knowledge, the computer must meet the following software 
   
 To add or edit company knowledge, you must have the Author or Administrator user role.  
   
-### To edit company knowledge  
+## To edit company knowledge  
   
 1.  Log on to the computer with an account that is a member of the Operations Manager Author or Administrator role.  
   
@@ -67,8 +67,8 @@ To add or edit company knowledge, you must have the Author or Administrator user
   
 ## Next steps  
 
-- See [How to Import, Export, and Remove an Operations Manager Management Pack](~/scom/manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
+- See [How to Import, Export, and Remove an Operations Manager Management Pack](manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
 
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
 
-- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) to understand how to configure the change.    
+- Before making changes to the monitoring settings defined in an Operations Manager management pack, review [How to Override a Rule or Monitor](manage-mp-override-rule-monitor.md) to understand how to configure the change.    
