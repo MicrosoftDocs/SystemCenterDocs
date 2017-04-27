@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 728e1e07-f776-4080-8ee2-188affb15224
 author: cfreemanwa
 ms.author: cfreeman
@@ -43,25 +43,25 @@ optional properties into published data.
 - Collection: The display name or ID of an existing collection.                       
 
 - Collection Value Type: Specifies whether the value in the Collection property is a collection name or a collection ID. Options are:
-            
+
   - **ID** (default): the value is a collection ID
-                          
+
   - **Name**: the value is a collection name
-                          
+
 
 - Membership Rule: The name for the rule that is shown in the Configuration Manager console for the collection’s membership rules
 
 - Membership Rule Type: The type of the membership rule to be deleted. Options are:
-                          
+
   - **Direct Rule**: a single user or computer resource
-                          
+
   - **Query Rule**: a WQL query string or a predefined query saved on the Configuration Manager server
-                          
+
   - **Include Collection**: a collection whose members will be included in this collection’s membership
-                          
+
   - **Exclude Collection**: a collection whose members will be excluded in this collection’s membership
-                          
-  
+
+
 ## Delete collection published data
 
 The following values are published in addition to the input values
@@ -96,5 +96,3 @@ above:
     Behavior** tabs.
 
 5.  Click **Finish**.
-
-

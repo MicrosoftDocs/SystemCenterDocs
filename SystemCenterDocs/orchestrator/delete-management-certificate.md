@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 653f1f13-751b-48aa-b5aa-ad3ac5ddbaa8
 author: cfreemanwa
 ms.author: cfreeman
@@ -38,14 +38,10 @@ There are no optional properties for this runbook activity.
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
-| Request ID   | The unique identifier of the request to Windows Azure. | String   |
+| Request ID   | The unique identifier of the request to Azure. | String   |
 | Certificate File Path | The path to the management certificate file.   | String   |
 | Certificate File Type | The type of the management certificate file.   | String   |
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

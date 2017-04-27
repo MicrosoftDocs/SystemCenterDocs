@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a1cf6a81-0362-4d5d-8019-f53605311470
 author: cfreemanwa
 ms.author: cfreeman
@@ -32,7 +32,7 @@ The following tables list the required and optional properties and the published
 
 ### Delete Network Adapter Activity Optional Properties
 
-No optional properties are provided for this activity. 
+No optional properties are provided for this activity.
 
 ### Delete Network Adapter Activity Published Data
 
@@ -41,11 +41,7 @@ No optional properties are provided for this activity.
 | VM Path   | The path of the virtual machine containing the adapter to delete.   | String   |
 | MAC Address | The MAC address of the network adapter to remove. The formats "00:11:22:33:44:55" and "00-11-22-33-44-55" are accepted. | String   |
 
-## To Configure the Delete Network Adapter Activity
-
-The following procedure describes the steps required to configure a Delete Network Adapter activity.
-
-#### To configure the Delete Network Adapter Activity
+## Configure the Delete Network Adapter Activity
 
 1.  From the **Activities** pane, drag a **Delete Network Adapter** activity to the active runbook.
 

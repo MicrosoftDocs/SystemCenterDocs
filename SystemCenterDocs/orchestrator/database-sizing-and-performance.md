@@ -12,7 +12,7 @@ ms.assetid: 589ab8a8-f723-4da1-8488-683d4939c12a
 author: cfreemanwa
 ms.author: cfreeman
 ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
 
 
@@ -28,47 +28,46 @@ The Orchestrator operator experience is based on two components: The **Orchestra
 
 Additionally, while the **Orchestration Console** is dependent on the Web Service, it also has logic unique to its function as a user interface and its own performance characteristics.  
 
-## Key Concepts  
 
-### Configuration Data and Log Data  
+## Configuration Data and Log Data  
 At a high level the Orchestrator database contains two kinds of data:  
 
--   Configuration Data  
+### Configuration Data  
 
-    The Orchestrator infrastructure contains configuration data. This data is not a concern in the context of database growth because the storage requirements for this type of data are small.  
+The Orchestrator infrastructure contains configuration data. This data is not a concern in the context of database growth because the storage requirements for this type of data are small.  
 
--   Log Data  
+### Log Data  
 
-    Orchestrator creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and be large.  
+Orchestrator creates different types of log data, all of which can be viewed and managed in the **Runbook Designer**. The storage requirements for this data can vary in size and be large.  
 
-    The following table lists the types of log data that can be stored in the Orchestrator database. Orchestrator also stores data in separate log files (outside of the database) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).  
+The following table lists the types of log data that can be stored in the Orchestrator database. Orchestrator also stores data in separate log files (outside of the database) for audit trails and tracing. For more information about all the types of log data, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).  
 
-    |Type of Log Data|Location in Runbook Designer|Managed by Log Purge?|  
-    |--------------------|--------------------------------|-------------------------|  
-    |Runbook logs|**Log** and **Log History** tabs|Yes|  
-    |Activity (Platform) events|**Events** tab|No|  
-    |Audit history|**Audit History** tab|No|  
+|Type of Log Data|Location in Runbook Designer|Managed by Log Purge?|  
+|--------------------|--------------------------------|-------------------------|  
+|Runbook logs|**Log** and **Log History** tabs|Yes|  
+|Activity (Platform) events|**Events** tab|No|  
+|Audit history|**Audit History** tab|No|  
 
-### Platform Code and Domain Code  
+## Platform Code and Domain Code  
 Orchestrator runbook activities contains two distinct types of code:  
 
--   Platform Code  
+-  *Platform Code*
 
-    This is common code shared by most activities, and is used to run common tasks performed by Orchestrator activities. Platform code generates Common Published Data.  
+  This is common code shared by most activities, and is used to run common tasks performed by Orchestrator activities. Platform code generates Common Published Data.  
 
--   Domain Code  
+-  *Domain Code*
 
-    Runs a variety of tasks that are specific for the actions for each activity, that are typically not associated with the Orchestrator platform itself. Potentially, there can be great variation between platform code and domain code.  
+  Runs a variety of tasks that are specific for the actions for each activity, that are typically not associated with the Orchestrator platform itself. Potentially, there can be great variation between platform code and domain code.  
 
-    The logging data generated for a given activity can contain data elements that are single or multi\-valued. Every activity produces a single record of single\-value data. Domain code can produce multiple records of multi\-value data and is therefore responsible for determining what the activity does with the common published data it has received from prior activities.  
+The logging data generated for a given activity can contain data elements that are single or multi\-valued. Every activity produces a single record of single\-value data. Domain code can produce multiple records of multi\-value data and is therefore responsible for determining what the activity does with the common published data it has received from prior activities.  
 
-    Essentially, Orchestrator runbooks are designed to pass data between discrete elements of domain code. Also, domain code can optionally generate Activity\-specific Published Data.  
+Essentially, Orchestrator runbooks are designed to pass data between discrete elements of domain code. Also, domain code can optionally generate Activity\-specific Published Data.  
 
 All runbooks have core similarity in that they run activities that consist of domain code and platform code, they loop workflows and they branch. Branching is when a runbook calls other runbooks to do a specific task. When a runbook is first invoked it consists of a single thread. When this thread encounters a runbook activity whose links require a branch, additional threads are created, one for each branch. Each thread takes as input the common published data from the activity that created the branch. This data is correlated back to the prior activities in the runbook to update the common published data that the activities subscribe to.  
 
 Domain code potentially affects database performance more than multi\-threading generated by branching. This is because domain code can potentially generate large amounts of activity\-specific published data.  
 
-### Logging Options  
+## Logging Options  
 The **Logging** tab on the **Properties** for a runbook allows you to optionally store logging entries. The term *default logging* refers to having neither of the two published data options selected, which amounts to 524 bytes generated for each activity. The logging options provide for two categories of common published data:  
 
 -   *Common Published Data*  
@@ -88,7 +87,7 @@ The **Logging** tab on the **Properties** for a runbook allows you to optionally
 
 Setting logging options can significantly affect performance and increase database growth. Consider the scenario where the same runbook activity is run twice, first with data logging at the default level (no published data options selected) and then set with common published data selected. The domain code should take the same amount of time to complete. However, the platform code will take longer to run because it has to support 12 times the amount of common published data logging than it does with just default logging.  
 
-### Purging Logs  
+## Purging Logs  
 The default options specified for the **Log Purge** feature in the **Runbook Designer** is configured to provide the best user experience for an out\-of\-the\-box Orchestrator deployment. Changing these values can change the performance characteristics of the environment, and should be implemented gradually and high\-watermarked, so that the impact of the change can be evaluated.  
 
 For more information on automatic and manual purging of logs, see the [Purging Runbook Logs](design-and-build-runbooks.md) section of [runbook logs](../orch/get-started/runbook-logs.md).  

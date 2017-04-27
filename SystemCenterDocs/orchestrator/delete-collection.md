@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 728e1e07-f776-4080-8ee2-188affb15224
 author: cfreemanwa
 ms.author: cfreeman
@@ -40,13 +40,13 @@ optional properties into published data.
 ## Delete collection properties
 
 - Collection: The display name or ID of an existing collection.
-                                 
+
 - Collection Value Type: Specifies whether the value in the Collection property is a collection name or a collection ID. Options are:
-                                 
+
   -   **ID** (default): the value is a collection ID
-                                 
+
   -   **Name**: the value is a collection name
-                                 
+
 
 - Delete members from database:   True or False (Default = False). When set to True, deletes all of the resources in the collection from the site database.
 
@@ -116,5 +116,3 @@ above:
     to **False**.
 
 5.  Click **Finish**.
-
-
