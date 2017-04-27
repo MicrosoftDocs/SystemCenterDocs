@@ -181,7 +181,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 ### Debugging IIS  
  IIS supports efficient logging to help you debug IIS issues. For more information, see  [IIS Logging Overview](https://msdn.microsoft.com/en-us/library/ms525410\(v=vs.90\).aspx).  
 
-## Troubleshooting deployment issues  
+## Troubleshoot deployment issues  
  Use the following sections to help you troubleshoot deployment issues that might affect you.  
 
 ### Definition changes \(Announcements\/Request Offerings\/Service Offerings\/Knowledge Articles\) are not shown  

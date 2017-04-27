@@ -21,7 +21,7 @@ ms.assetid: 239ee325-d396-4e8c-8d1e-adc7d28f3f04
 
 Use the following procedure to install a new data warehouse server in the lab environment.  
 
-### To install a data warehouse management server and data warehouse databases  
+## Install a data warehouse management server and data warehouse databases  
 
 1.  Log on to the computer by using an account that has administrative rights.  
 
@@ -61,7 +61,7 @@ Use the following procedure to install a new data warehouse server in the lab en
 
 14. On the **Installation summary** page, click **Install**.  
 
-### To validate a data warehouse management server installation  
+## Validate a data warehouse management server installation  
 
 1.  On the computer hosting the data warehouse management server \(the server you ran Setup on\), run services.msc, and verify that the following services have been installed:  
 

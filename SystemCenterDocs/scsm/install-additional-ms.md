@@ -26,7 +26,7 @@ The following procedure shows how to install an additional management server. Yo
 
 When you install a secondary management server, data retention settings are reset. Before you install a secondary management server, make a note of data retention settings. After you have installed the additional management server, adjust the data retention settings to their original values.  
 
-### To install an additional management server  
+## Run Setup
 
 1.  By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, log on to the computer that will host the additional Service Manager Management server.  
 

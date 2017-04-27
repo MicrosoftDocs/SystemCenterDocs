@@ -109,7 +109,7 @@ Sequentially, report deployment occurs in the following process:
 
 Management packs that contain only Service Manager-specific information do not cause the deployment activities to execute. They are only be triggered for new data warehouse and reporting-specific elements.
 
-### Understanding the ETL processes
+### Understand the ETL processes
 
 After the data warehouse schema and reports are deployed, the DWDataMart database is populated with actual data for reporting purposes. This is done by the ETL processes. These three processes each serve their own specific purpose:
 
@@ -160,7 +160,7 @@ Individual fact tables inherit the global retention value when created, or you c
 
 - Use the **Set-SCDWRetentionPeriod** PowerShell cmdlet to set the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Set-SCDWRetentionPeriod](https://technet.microsoft.com/en-us/library/hh541725(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
 
-## Reimporting previously removed management packs containing data warehouse information
+## Reimport previously removed management packs
 
 During development and testing of management packs that contain reports that access data warehouse information, you might need to remove the management packs and then reimport them later. However, after a management pack is uninstalled from the data warehouse, if the new management pack contains the same dimension, fact, or cube name with a schema that is different from the original, you must delete the dimension or fact table from the DWRepository and DWDataMart databases manually and also delete any referencing cube from the SQL Server Analysis Services (SSAS) database.
 
