@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 57ac9277-f810-4efe-a8a4-dd01829113e7
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Remove Mailbox
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox, in an on-premise or online Exchange environment. For an environment such as Microsoft Office 365 online, the Remove Mailbox activity can be used to delete a mailbox.
 
@@ -57,8 +57,3 @@ The following tables list the required properties, optional properties, and publ
 | Skip CN Check   | Indicates whether the client validates that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
 | Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

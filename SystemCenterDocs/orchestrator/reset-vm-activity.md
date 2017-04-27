@@ -1,5 +1,5 @@
 ---
-title: Reset VM Activity
+title: Reset VM activity
 description: The Reset VM activity is used in a runbook to stop and restart a running virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
@@ -8,16 +8,16 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: b9b39a7f-c6c4-4871-9792-988d84e3434d
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-# Reset VM Activity
+# Reset VM activity
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Reset VM activity is used in a runbook to stop and restart a running virtual machine. This allows the runbook to reset a virtual machine of a VMware vSphere server that is no longer responding to ping commands.
 
@@ -25,27 +25,27 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Reset VM Activity Required Properties
+### Reset VM activity required properties
 
 | Element | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | VM Path | The path of the virtual machine to be reset. | String   | Yes   |
 
-### Reset VM Activity Optional Properties
+### Reset VM activity optional properties
 
 No optional properties are provided for this activity.
 
-### Reset VM Activity Published Data
+### Reset VM activity published data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
 | VM Path | The path of the virtual machine. | String   |
 
-## Configuring the Reset VM Activity
+## Configuring the Reset VM activity
 
 The following procedure describes the steps required to configure a Reset VM activity.
 
-#### To configure the Reset VM Activity
+#### To configure the Reset VM activity
 
 1.  From the **Activities** pane, drag a **Reset VM** activity to the active runbook.
 

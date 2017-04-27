@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 47d10330-5980-44f7-a11c-23cc04636ddc
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Monitor State
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Monitor State activity monitors the state of an Operations Manager object that you specify. For example, you can use the Monitor State activity to trigger a corrective runbook when an object with a Warning or Critical state is detected.
 
 The following tables list the properties and published data for this activity. The activity publishes all of the data from the properties into published data.
 
-## Monitor State Required Properties
+## Monitor State required properties
 
 | Element   | Description   | Valid Values   | Lookup |
 |:---|:---|:---|:---|
@@ -31,7 +31,7 @@ The following tables list the properties and published data for this activity. T
 | Object   | The name of the Operations Manager object to be monitored   | String   | Yes   |
 | State   | The health state of the Operations Manager monitoring object   | CriticalHealthyUninitializedWarning | Yes   |
 
-## Monitor State Published Data
+## Monitor State published data
 
 | Element   | Description   |
 |-------------------|---------------------------------------------------------------|

@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 1102ac6c-cbce-4ad6-b36d-7085c3c4c3b7
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Remove VM Endpoint
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The **Remove VM Endpoint** activity removes an external endpoint from the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
 
@@ -26,7 +26,7 @@ The **Remove VM Endpoint** activity removes an external endpoint from the specif
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Remove VM Endpoint Required Properties
+## Remove VM Endpoint required properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -36,11 +36,11 @@ The activity publishes all of the data from the required and optional properties
 | Endpoint Name   | Specifies the name of the external endpoint.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-## Remove VM Endpoint Optional Properties
+## Remove VM Endpoint optional properties
 
 There are no optional properties for this activity.
 
-## Remove VM Endpoint Published Data
+## Remove VM Endpoint published data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|

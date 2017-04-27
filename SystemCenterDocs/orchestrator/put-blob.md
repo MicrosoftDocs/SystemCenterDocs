@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 81fab0b3-5c85-4434-826c-eebf098c7511
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Put Blob
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The **Put Blob** activity creates a new block blob from the specified file, or updates the content of an existing block blob. It is part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Put Blob Required Properties
+## Put Blob required properties
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -32,14 +32,14 @@ The activity publishes all of the data from the required and optional properties
 | Blob Name   | A name for the blob.   | String   |
 | File to Upload (File Path) | The file to upload.   | String   |
 
-## Put Blob Optional Properties
+## Put Blob optional properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Primary Key | The primary key associated with the storage account.   | String   |
 | Metadata   | Metadata to associate with the blob. Should be in the format "Name1:Value1,Name2:Value2" | String   |
 
-## Put Blob Published Data
+## Put Blob published data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -58,11 +58,3 @@ The activity publishes all of the data from the required and optional properties
 | Length (Bytes)   | The size of the blob, in bytes.   | Integer   |
 | Metadata   | Metadata associated with the blob. Should be in the format "Name1:Value1,Name2:Value2" | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 30dc0550-1edc-40dc-8bdd-93e2fc10103e
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Send E-Mail
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Send E-Mail activity is used in a runbook to send e-mail messages.
 
@@ -25,13 +25,13 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-## Send E-Mail Required Properties
+## Send E-Mail required properties
 
 | **Element** | **Description**   | **Valid values** |
 |:---|:---|:---|
 | ID   | The ID of the email message to be sent | String   |
 
-## Send E-Mail Published Data
+## Send E-Mail published data
 
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
@@ -41,7 +41,3 @@ The following tables list the required and optional properties and published dat
 | Timeout (seconds)   | Connection timeout   | Numbers   |
 | Use Autodiscover   | Whether or not the Autodiscover service is being used | Boolean   |
 | User Name   | Username to use to connect to the Exchange server   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016](https://technet.microsoft.com/en-us/library/hh403791.aspx) <br> <br>

@@ -8,20 +8,20 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: c1ad150f-e139-40b7-be6b-4908cc75c501
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-# Modify VM Disk Activity in System Center 2016
+# Modify VM Disk activity in System Center 2016
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine. When targeting version vCenter 5.0 or greater, it can also be used to extend the disk size of the selected disk. The following tables list the required and optional properties and published data for this activity.
 
-### Modify VM Disk Activity Required Properties
+### Modify VM Disk activity required properties
 
 | Element   | Description   | Valid values | Look up |
 |:---|:---|:---|:---|
@@ -29,7 +29,7 @@ The Modify VM Disk activity is used in a runbook to attach a virtual disk to a d
 | SCSI Bus Number | The SCSI bus number of the SCSI controller.   | Integer   | No   |
 | SCSI Unit Key   | The SCSI unit key of the disk.   | Integer   | No   |
 
-### Modify VM Disk Activity Optional Properties
+### Modify VM Disk activity optional properties
 
 | Element   | Description   | Valid values | Look up |
 |:---|:---|:---|:---|
@@ -37,7 +37,7 @@ The Modify VM Disk activity is used in a runbook to attach a virtual disk to a d
 | New SCSI Bus Number | The SCSI bus number of the SCSI controller to which you want to attach the disk. | Integer   | No   |
 | New SCSI Unit Key   | The new SCSI unit key of the disk.   | Integer   | No   |
 
-### Modify VM Disk Activity Published Data
+### Modify VM Disk activity published data
 
 | Element   | Description   | Value type |
 |:---|:---|:---|
@@ -48,7 +48,7 @@ The Modify VM Disk activity is used in a runbook to attach a virtual disk to a d
 | SCSI Bus Number   | The SCSI bus number of the SCSI controller to which the disk is attached.   | Integer   |
 | SCSI Unit Key   | The SCSI unit key of the disk.   | String   |
 
-## To Configure the Modify VM Disk Activity
+## To configure the Modify VM Disk activity
 
 The following procedure describes the steps required to configure a Modify VM Disk activity.
 

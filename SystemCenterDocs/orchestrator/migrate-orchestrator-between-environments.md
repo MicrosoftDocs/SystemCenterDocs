@@ -1,5 +1,6 @@
 ---
-title: Migrate Orchestrator Between Environments
+title: Migrate Orchestrator between environments
+description: Describes how you can automatically move Orchestrator between environments.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,7 +15,7 @@ ms.author: cfreeman
 ms.date: 10/12/2016
 manager: cfreeman
 ---
-# Migrate Orchestrator Between Environments
+# Migrate Orchestrator between environments
 
 > Applies To: System Center 2016 - Orchestrator
 

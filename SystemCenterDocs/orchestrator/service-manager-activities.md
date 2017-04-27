@@ -1,5 +1,5 @@
 ---
-title: System Center Service Manager Activities
+title: System Center Service Manager activities
 description: The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Service Manager.
 ms.custom: na
 ms.date: 12/02/2016
@@ -15,13 +15,13 @@ ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-# System Center Service Manager Activities
+# System Center Service Manager activities
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Service Manager. Links to this section are included in the configuration instructions for each activity.
 
-## Activity Properties
+## Activity properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
@@ -33,11 +33,11 @@ Each activity has a set of required or optional properties that define the confi
 
 In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
-## General Tab
+## General tab
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
-## Details Tab
+## Details tab
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the Connection property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Service Manager management server.
 
@@ -45,7 +45,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Configuration** field.
 
-2.  Select the applicable configuration. Items in the list are created as described in [Configuring the System Center 2016 Service Manager Connections](https://technet.microsoft.com/en-us/library/8bc5a1db-ec7b-4156-80c1-756c557be20b#BKMK_ConfigServiceManagerConnections).
+2.  Select the applicable configuration. Items in the list are created as described in [Configuring the System Center 2016 Service Manager Connections](https://technet.microsoft.com/library/8bc5a1db-ec7b-4156-80c1-756c557be20b#BKMK_ConfigServiceManagerConnections).
 
 3.  Click **OK**.
 
@@ -63,7 +63,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 10. Click **Finish**.
 
-### Filter Behavior
+### Filter behavior
 
 The Monitor and Get activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When matching against values, you select one of the available methods of comparison. An option is provided to either match or not match the filter using each method. For example, the "Does not" version of a method finds messages that do not match the filter to trigger the policy.
 
@@ -82,11 +82,11 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **After**: the property of the message is after the date/time specified in the filter.
 -   **Before**: the property of the message is before the date/time specified in the filter.
 
-## Run Behavior Tab
+## Run Behavior tab
 
 This tab contains the properties that determine how the activity handles multi-value published data and what notifications will be sent if the activity fails or runs for an excessive period of time.
 
-### Multi-Value Published Data Behavior
+### Multi-Value Published Data behavior
 
 Get activities retrieve information from another activity or outside source, and can return one or more values in the published data. For example, when you use the Get Monitor activity, the data output from that activity might be a list of monitors that belong to the specified collection.
 
@@ -98,7 +98,7 @@ By default, the data from the Get activity will be passed on as multiple individ
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-## Event Notifications
+## Event notifications
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
@@ -108,7 +108,7 @@ Some activities are expected to take a limited amount of time to complete. If th
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-## Published Data
+## Published data
 
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
@@ -129,34 +129,21 @@ For a list of the data elements published by each activity, see the **Published 
 
 The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Change with Template](create-change-with-template.md)
-
-[Create Incident with Template](create-incident-with-template.md)
-
-[Create Object](create-object.md)
-
-[Create Related Object](create-related-object.md)
-
-[Create Relationship](create-relationship.md)
-
-[Delete Relationship](delete-relationship.md)
-
-[Get Activity](get-activity.md)
-
-[Get Object](get-object.md)
-
-[Get Relationship](get-relationship.md)
-
-[Monitor Object](monitor-object.md)
-
-[Update Activity](update-activity.md)
-
-[Update Object](update-object.md)
-
-[Upload Attachment](upload-attachment.md)
+- [Create Change with Template](create-change-with-template.md)
+- [Create Incident with Template](create-incident-with-template.md)
+- [Create Object](create-object.md)
+- [Create Related Object](create-related-object.md)
+- [Create Relationship](create-relationship.md)
+- [Delete Relationship](delete-relationship.md)
+- [Get Activity](get-activity.md)
+- [Get Object](get-object.md)
+- [Get Relationship](get-relationship.md)
+- [Monitor Object](monitor-object.md)
+- [Update Activity](update-activity.md)
+- [Update Object](update-object.md)
+- [Upload Attachment](upload-attachment.md)
 
 The activities in the Service Manager Integration Pack use the classes, fields, and filters and produce the published data listed in the following topics:
 
-[Classes, Fields, and Filters](classes-fields-and-filters.md)
-
-[Service Manager Published Data](service-manager-published-data.md)
+- [Classes, Fields, and Filters](classes-fields-and-filters.md)
+- [Service Manager Published Data](service-manager-published-data.md)

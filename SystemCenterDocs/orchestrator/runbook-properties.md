@@ -1,5 +1,6 @@
 ---
-title: Runbook Properties
+title: View and configure Runbook properties
+description: This article describes how you can View and configure Runbook properties.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -14,7 +15,7 @@ ms.date: 10/12/2016
 author: cfreemanwa
 manager: cfreeman
 ---
-# Runbook Properties
+# Runbook properties
 
 > Applies To: System Center 2016 - Orchestrator
 
@@ -84,7 +85,7 @@ On the **General** tab of the **Runbook Properties** dialog box, you can customi
 
 2.  Select a schedule, click **OK**, and then click **Finish**.  
 
-## Runbook Servers  
+## Runbook servers  
 This tab displays the list of runbook servers assigned to run this runbook. If the list is empty, the runbook uses the setting defined in the **Runbook Servers** folder found in the **Connections** pane of the Runbook Designer. If the runbook server that uses the Primary role is available, the runbook runs on it. If the primary runbook server is not available, each runbook server that uses a Standby role is checked until one is found that can run the runbook.  
 
 You can override the default behavior and assign a primary and any number of standby runbook servers to a runbook. It is useful to assign a specific runbook server to a runbook if the runbook requires access to a specialized resource, such as a backup device.  
@@ -129,16 +130,16 @@ Common Published Data is a set of data items that are common to all activities. 
 > [CAUTION]  
 > When you turn on logging, the size of the orchestration database increases.  
 
-## Event Notifications  
+## Event notifications  
 You can enable event notification for the runbook. Notifications appear in views such as the **Log** pane in the Runbook Designer and in the Orchestration console.  
 
 If you want to be notified when a runbook runs for more than a specified length of time, enter a value in the **seconds** box.  
 
 If you want to be notified if the runbook does not run, click the **Runbook fails to run** option.  
 
-For more information about Event Notifications, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).  
+For more information about event notifications, see [Orchestrator Logs](~/orchestrator/orchestrator-logs.md).  
 
-## Job Concurrency  
+## Job concurrency  
 The job concurrency setting lets you set the maximum number of simultaneous jobs, so that you can carry out multiple requests for the same runbook at the same time. This setting applies to the individual runbook. A runbook server can run 50 runbooks at the same time. If you select a job concurrency setting over 50, your environment requires more runbook servers or the requests to start a runbook will queue.  
 
 The following limitations apply:  
@@ -154,7 +155,7 @@ The following limitations apply:
 -   Plan the use of multiple requests carefully. Before you change the maximum number of simultaneous runbook requests, consider the tasks performed by the runbook. Verify that each runbook instance can finish successfully. For example, if your runbook creates a folder, copies files into it, and then deletes the folder when it is finished, one instance of the runbook might delete the folder before other instances are finished with it. In this case, you should keep the maximum number of simultaneous requests for this runbook a value of 1 to avoid conflicts.  
 
 ## Returned Data  
-Returned Data defines the data that a runbook returns when it finishes.&nbsp; Each Returned Data definition can contain either a single or multiple parameter values. To populate the data definitions, end the workflow with a Return Data activity that contains the return values.  
+Returned Data defines the data that a runbook returns when it finishes. Each Returned Data definition can contain either a single or multiple parameter values. To populate the data definitions, end the workflow with a Return Data activity that contains the return values.  
 
 You access the Returned Data values through Published Data in one of several ways.  
 
@@ -166,6 +167,6 @@ You access the Returned Data values through Published Data in one of several way
 
 To define the Returned Data for a runbook to return, use **Add**, **Edit**, and **Remove** to create each parameter.  
 
-## See Also  
+## Next steps  
 
-[Orchestrator Logs](~/orchestrator/orchestrator-logs.md)  
+- View [Orchestrator Logs](orchestrator-logs.md) to see event notifications.
