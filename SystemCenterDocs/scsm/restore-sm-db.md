@@ -20,8 +20,7 @@ ms.assetid: acc6c46d-3377-47ce-9c94-ce20997d376f
 >Applies To: System Center 2016 - Service Manager
 
 Use the following procedure to restore the production Service Manager database using Microsoft&nbsp;SQL&nbsp;Server&nbsp;2016.  
-
-### To restore the Service Manager database  
+ 
 
 1.  After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, click the server name to expand the server tree.  
 

@@ -27,7 +27,7 @@ When you installed System Center 2016 - Service Manager, you may have specified 
 
  If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your Service Manager installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS10.\<INSTANCE\_NAME\>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.  
 
-### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
+## Copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
 
 1.  On the computer that will host the remote SSRS, open an instance of Windows Explorer.  
 
@@ -37,7 +37,7 @@ When you installed System Center 2016 - Service Manager, you may have specified 
 
 4.  In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll** and drag it to the folder that you located in step 2.  
 
-### To add an Extension tag to the Data segment in the rsreportserver.conf file  
+## Add an Extension tag to the rsreportserver.conf file  
 
 1.  On the computer that is hosting SSRS, locate the file rsreportserver.config in the following folder:  
 

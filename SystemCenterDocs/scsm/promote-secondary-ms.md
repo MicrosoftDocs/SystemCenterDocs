@@ -21,8 +21,6 @@ ms.assetid: df0bc01c-a314-441f-a983-27dfd92f95c0
 
 Use the following procedure to promote the secondary management server.  
 
-### To promote the secondary management server  
-
 1.  On the secondary management server, do the following:  
 
     1.  Close the Service Manager console.  
