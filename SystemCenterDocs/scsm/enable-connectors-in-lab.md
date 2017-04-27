@@ -24,7 +24,7 @@ Use the following procedure to enable the Service Manager connectors in the lab 
 > [!WARNING]  
 >  Do not enable or delete the Operations Manager alert connector in the lab environment. Doing so will cause the alert connector in the production environment to fail.  
 
-### To enable a connector  
+## Enable a connector  
 
 1.  In the Service Manager console, click **Administration**.  
 

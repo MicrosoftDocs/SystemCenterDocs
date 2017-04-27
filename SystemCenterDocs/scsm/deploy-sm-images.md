@@ -26,7 +26,7 @@ You can use the information in this article to create a system image that contai
 
  Afterward, modify and save the sample CMD file below to create your own customized version and then run the file.  
 
-### To prepare the server for imaging  
+## Prepare the server for imaging  
 
 1.  Install Windows Server on the new server.  
 
@@ -47,7 +47,7 @@ You can use the information in this article to create a system image that contai
 
 8.  Create a Windows Unattend.xml file to customize Windows when the image is booted and have it run FirstRun.cmd.  
 
-### To create a CMD file that completes image installation  
+### Create a CMD file that completes image installation  
 
 -   Copy the following sample and modify it, as needed.  
 

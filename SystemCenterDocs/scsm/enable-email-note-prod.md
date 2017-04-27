@@ -21,7 +21,7 @@ ms.assetid: 441c09d3-16e6-4cc3-a242-83aad9ec3c4a
 
 Use the following procedure to enable incoming and outbound email notifications in the production environment.  
 
-### To enable the outbound email notifications  
+## Enable outbound email notifications  
 
 1.  In the Service Manager console, click **Administration**.  
 
@@ -33,7 +33,7 @@ Use the following procedure to enable incoming and outbound email notifications 
 
 5.  Select **Enable e\-mail notifications**.  
 
-### To enable incoming email notifications  
+## Enable incoming email notifications  
 
 1.  In the Service Manager console, select **Administration**.  
 

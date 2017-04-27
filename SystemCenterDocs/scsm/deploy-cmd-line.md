@@ -59,7 +59,10 @@ Setup.exe
 |**/ServiceRunUnderAccount**|If this parameter is omitted, the local system account is used.|  
 |**/WorkflowAccount**|If this parameter is omitted, the local system account is used.|  
 
-### Before you run the command line  
+## Before you start
+
+### Prepare the computer
+
  To help prevent an installation failure, perform the following steps on the computer where you will be installing Service Manager:  
 
 1.  Run the UI\-based Setup up to the point where you run the prerequisite checker. Make sure that the prerequisite checker passes, or at least passes with a warning.  
@@ -81,7 +84,7 @@ Setup.exe
 
  The command\-line installation will not check the database name that you supply to see if it already exists. If you supply a database name that already exists, the command\-line installation will fail and a \-1 will be returned as an error code.  
 
-## Deploy a Service Manager management server using the command line
+## Deploy a management server
 
 You can use the following command\-line procedures to deploy the Service Manager management server and the Service Manager database.  
 
@@ -113,11 +116,12 @@ You can use the following command\-line procedures to deploy the Service Manager
 
     ```  
 
-## Deploy a Data Warehouse management server using the command line
+## Deploy a Data Warehouse management server
 
 Use the following procedures to deploy a Service Manager data warehouse and databases, including the Operations Manager and Configuration Manager data mart databases, in System Center - Service Manager.  
 
 ## Deploy the data warehouse  
+
  Use the following procedures to deploy the data warehouse with the Operations Manager and Configuration Manager data mart databases. If you want to install the data warehouse management server and data warehouse databases on the same computer, use the same computer name that you are running Setup on for all instances of **\[computer name\]**. If you want to deploy the databases on a separate computer, adjust the **\[computer name\]** entries accordingly.  
 
  The **/AnalysisServerDatabaseDataFilePath** is optional, and if it is not used, the default path will be used.  
@@ -163,7 +167,7 @@ Use the following procedures to deploy a Service Manager data warehouse and data
     /Silent  
     ```  
 
-## Deploy a Service Manager console using the command line
+## Deploy a Service Manager console
 
 Use the following command\-line procedure to deploy the Service Manager console in System Center - Service Manager.  
 
@@ -190,7 +194,7 @@ Use the following command\-line procedure to deploy the Service Manager console 
     /Silent  
     ```  
 
-## Service Manager command-line option error codes
+## Command-line option error codes
 
 The following is a list of the error codes that are used in the command-line installation of Service Manager.  
 

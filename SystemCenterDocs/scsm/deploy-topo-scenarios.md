@@ -83,7 +83,7 @@ This configuration was tested with the following load.
 |Is the Configuration Manager Connector Enabled?|Yes|  
 |Is the Operations Manager Connector Enabled?|Yes|  
 
-### Medium scenario
+## Medium deployment scenario
 
 The medium deployment scenario contains two servers and supports 2,001 to 5,000 computers. In this configuration, two physical computers host the Service Manager management server and Service Manager data warehouse management server.  
 

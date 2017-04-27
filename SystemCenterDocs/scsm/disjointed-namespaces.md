@@ -23,7 +23,7 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
  We recommend that you complete the following procedures before installing either an additional Service Manager management server or an additional Self-Service Portal in an environment where a disjoint namespace exists. The first procedure shows you how to determine the principal name of your Service Manager management server. The second procedure guides you in editing the hosts file on the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal.  
 
-### To determine the principal name of the Service Manager management server  
+## Determine the principal name of the Service Manager management server  
 
 1.  Start a Service Manager console.  
 
@@ -43,7 +43,7 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 9. At a command prompt, ping the Service Manager management server. You must have the IP address of the Service Manager management server for the following procedure.  
 
-### To edit the hosts file  
+## Edit the hosts file  
 
 1.  On the computer that hosts either the additional Service Manager management server or the additional Self-Service Portal, start Windows Explorer, and then locate the %Systemroot%\\System32\\Drivers\\Etc folder.  
 

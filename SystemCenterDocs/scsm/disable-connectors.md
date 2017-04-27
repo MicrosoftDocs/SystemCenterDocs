@@ -21,8 +21,6 @@ ms.assetid: 4bf9b574-f6d0-46f1-a989-aa0464f9a1ed
 
 Use the following procedure to disable the Service Manager connectors in the production environment.  
 
-### To disable a connector  
-
 1.  In the Service Manager console, click **Administration**.  
 
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.  

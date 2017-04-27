@@ -167,7 +167,7 @@ Use the following procedures to configure the key performance indicators \(KPIs\
 
 5.  To refresh the scorecard, on the **Edit** ribbon tab, inside the **View** group, click **Update**.  
 
-## Create the Incidents by Analyst Report
+## Create the Incidents by Analyst report
 
 Use the following procedure to create an Analytic Grid report named Incidents by Analyst.  
 
