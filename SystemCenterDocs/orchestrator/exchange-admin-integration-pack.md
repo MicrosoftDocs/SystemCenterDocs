@@ -2,19 +2,19 @@
 title: Exchange Admin Integration Pack for Orchestrator in System Center 2016
 description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 3d807dc8-013d-45da-9647-825ab64aba2a
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Exchange Admin Integration Pack for Orchestrator in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
@@ -48,98 +48,74 @@ After you download the integration pack file, you must register it with the Orch
 
 A connection establishes a reusable link between and an Exchange server. You can specify as many connections as you require to create links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-#### To set up an Exchange Configuration connection
+### To set up an Exchange Configuration connection
 
 1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Exchange Admin**. The **Exchange Admin** dialog box appears.
-
 2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
-
 3.  In the **Name** box, enter a name for the connection. This can be the name of the **Exchange** server or a descriptive name to differentiate the type of connection.
-
 4.  Click the **(...)** button and select **Exchange Configuration**.
-
 5.  In the **Exchange Server Host** box, type the name or IP address of the Exchange server. To use a computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN).
-
 6.  In the **Exchange Server Port** box, enter the port that is used to communicate with the Exchange server. If you use SSL, be sure to select the appropriate port.
-
 7.  In the **Exchange PowerShell Application** box, enter the application name segment of the connection URI.
-
 8.  In the **Exchange User Name** and **Exchange User Password** boxes, type the credentials that Orchestrator will use to log on to the Exchange environment. The configured user must have the appropriate Exchange permissions.
-
 9.  Configure the **Exchange Environment** as necessary for connecting to an On-Premise installation or to Office.
-
 10. Set the **Use SSL** property to **True** to have all communication between the runbook server and the Exchange server encrypted over HTTPS.
-
 11. If you use SSL, the **Skip CA Check** property specifies whether the client does not validate that the server certificate is signed by a trusted certification authority (CA).
-
 12. If you use SSL, the **Skip CN Check** property specifies that the certificate common name (CN) of the server does not need to match the hostname of the server.
-
 13. If you use SSL, the **Skip Revocation Check** property specifies whether the revocation status of the server certificate will not be checked for validity.
-
 14. Click **OK**.
-
 15. Add additional connections if applicable.
-
 16. Click **Finish**.
 
 ## Configure Windows PowerShell and WinRM for the Exchange Admin Integration Pack
 
-#### To configure 32-bit PowerShell to run scripts
+### To configure 32-bit PowerShell to run scripts
 
-1.  On the computer where Orchestrator runbooks are executed, make sure that 32-bit PowerShell scripts can be run:
+On the computer where Orchestrator runbooks are executed, make sure that 32-bit PowerShell scripts can be run:
 
-    1.  Start **Windows PowerShell (x86)** command line.
-    2.  To determine whether PowerShell 32-bit scripts can be executed, run the following command:
+1.  Start **Windows PowerShell (x86)** command line.
+2.  To determine whether PowerShell 32-bit scripts can be executed, run the following command:
 
             Get-ExecutionPolicy
 
-    3.  If **Execution Policy** is **Restricted**, you must change it to **RemoteSigned**. Run the following command:
+3.  If **Execution Policy** is **Restricted**, you must change it to **RemoteSigned**. Run the following command:
 
             Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
-#### To configure remote PowerShell rights for the Exchange user
+### To configure remote PowerShell rights for the Exchange user
 
-1.  The configured user must be granted remote PowerShell rights on the Exchange server:
+The configured user must be granted remote PowerShell rights on the Exchange server:
 
-    1.  On the Exchange server, start the **Exchange Management Shell**.
-    2.  To determine whether the user has remote PowerShell rights, run the following command and check the value in the **RemotePowerShellEnabled** field:
+1.  On the Exchange server, start the **Exchange Management Shell**.
+2.  To determine whether the user has remote PowerShell rights, run the following command and check the value in the **RemotePowerShellEnabled** field:
 
             Get-User <UserName>
 
-    3.  To grant the user remote PowerShell rights, run the following command:
+3.  To grant the user remote PowerShell rights, run the following command:
 
             Set-User <UserName> -RemotePowerShellEnabled $true
 
-#### To configure Windows PowerShell to allow Basic Authentication on the Exchange server
+### To configure Windows PowerShell to allow Basic Authentication on the Exchange server
 
 1.  On the Exchange server, make sure that PowerShell Basic Authentication is enabled:
-
 2.  Start **Internet Information Services (IIS) Manager**.
-
 3.  Navigate to the **PowerShell** site.
-
 4.  Open the **Authentication** settings.
-
 5.  Make sure **Basic Authentication** is enabled.
 
-#### To configure WinRM for HTTP unencrypted communication
+### To configure WinRM for HTTP unencrypted communication
 
-1.  On the machine where Orchestrator runbooks are executed, configure WinRM trusted hosts and to allow unencrypted traffic:
+On the machine where Orchestrator runbooks are executed, configure WinRM trusted hosts and to allow unencrypted traffic:
 
-    1.  Open the **Local Group Policy** user interface: Windows Start Button &gt; Run &gt; gpedit.msc.
-    2.  Navigate to Local Computer Policy &gt; Computer Configuration &gt; Administrative Templates &gt; Windows Components &gt; Windows Remote Management (WinRM) &gt; WinRM Client.
-    3.  Make sure that **Allow unencrypted traffic** is Enabled.
-    4.  Add the targeted computer that runs Exchange Server to the **Trusted Hosts** list.
+1.  Open the **Local Group Policy** user interface: Windows Start Button &gt; Run &gt; gpedit.msc.
+2.  Navigate to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Remote Management (WinRM)** &gt; **WinRM Client**.
+3.  Make sure that **Allow unencrypted traffic** is Enabled.
+4.  Add the targeted computer that runs Exchange Server to the **Trusted Hosts** list.
 
-2.  On the Exchange server, make sure that PowerShell does not require SSL:
+On the Exchange server, make sure that PowerShell does not require SSL:
 
-    1.  Start **Internet Information Services (IIS) Manager**.
-    2.  Navigate to the **PowerShell** site.
-    3.  Open **SSL Settings**.
-    4.  Make sure that the **Require SSL check box** is not selected.
+1.  Start **Internet Information Services (IIS) Manager**.
+2.  Navigate to the **PowerShell** site.
+3.  Open **SSL Settings**.
+4.  Make sure that the **Require SSL check box** is not selected.
 
-For more information about configuring Windows PowerShell and WinRM, see [Install and Configure Windows PowerShell](http://help.outlook.com/en-us/140/cc952756.aspx.).
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/system-center-docs/orch/get-started/using-runbooks)

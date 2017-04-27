@@ -2,19 +2,19 @@
 title: System Center Integration Pack for System Center 2016 Operations Manager
 description: The System Center Integration Pack for System Center 2016 Operations Manager is an add-in for System Center 2016 - Orchestrator.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 75c8aa38-f58a-4f31-8f88-73a8cc93919a
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # System Center Integration Pack for System Center 2016 Operations Manager
 
 Applies To: System Center 2016 - Orchestrator
@@ -45,20 +45,14 @@ After you download the integration pack file, you must register it with the Orch
 
 A connection establishes a reusable link between Orchestrator and an Operations Manager management server. You can create as many connections as you require to specify links to multiple Operations Manager management servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-#### To create up a System Center 2016 Operations Manager connection
+### To create up a System Center 2016 Operations Manager connection
 
 1.  In the Runbook Designer, click the **Options** menu, and select **SC 2016 Operations Manager**. The **SC 2016 Operations Manager** dialog box appears.
-
 2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Connection Entry** dialog box appears.
-
 3.  In the **Name** box, type the name or IP address of the server running System Center Operations Manager.
-
 4.  In the **Domain** box, type the domain name of the Operations Manager server, or click the ellipsis button **(...)** to browse for the domain, select it, and then click **Add**.
-
 5.  In the **User name** and **Password** boxes, type the credentials that the Orchestrator server will use to connect to the Operations Manager server.
-
 6.  Click **Test Connection**. When the message "Successfully connected" appears, click **OK**.
-
 7.  Add additional connections if applicable. Click **OK** to close the configuration dialog box, and then click **Finish**.
 
 For System Center 2016 SP1 only: Three new Operations Manager Connection properties were added:

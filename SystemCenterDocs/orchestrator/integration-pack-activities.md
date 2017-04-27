@@ -2,19 +2,19 @@
 title: FTP Integration Pack Activities
 description: The following configuration instructions apply to all activities in this integration pack.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a5d82cba-a523-41e8-b7f6-165662bc5d8a
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # FTP Integration Pack Activities
 
 Applies To: System Center 2016 - Orchestrator
@@ -27,26 +27,24 @@ The procedures in this topic are performed on an activity that has been placed i
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
-#### To view and configure the properties for an activity
+### To view and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
-
 2.  To save your configuration entries, click **Finish**.
 
 In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
-### General Tab
+#### General Tab
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
-### Properties Tab
+#### Properties Tab
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the FTP server.
 
-#### To configure the Configuration Name property
+### To configure the Configuration Name property
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
-
 2.  Select the applicable connection name.
 
 ### Filter Behavior
@@ -76,10 +74,9 @@ The activity will produce a new set of data every time it runs. The **Flatten** 
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or fails to run
+### To be notified when the activity takes longer than a specified time to run or fails to run
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
-
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
 ## Published Data
@@ -88,12 +85,10 @@ Published data is the foundation of a working runbook. It is the data produced a
 
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+### To use published data
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
-
 2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
-
 3.  Click the published data element that you want to use, and then click **OK**.
 
 For a list of the data elements published by each activity, see the **Published Data** table in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
@@ -103,19 +98,11 @@ For a list of the data elements published by each activity, see the **Published 
 This integration pack adds the **FTP** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
 [Create Folder](create-folder.md)
-
 [Delete File](delete-file.md)
-
 [Delete Folder](delete-folder.md)
-
 [Download File](download-file.md)
-
 [List Folders/Files](list-folders-or-files.md)
-
 [Rename File/Folder](rename-file-or-folder.md)
-
 [Resume File Download](resume-file-download.md)
-
 [Synchronize Folder/File](synchronize-folder-or-file.md)
-
 [Upload File](upload-file.md)
