@@ -4,7 +4,7 @@ title: Storage Spaces Direct in VMM - Overview
 description: This article describes Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  03/09/2017
 ms.topic:  article
 ms.prod:  system-center-2016
