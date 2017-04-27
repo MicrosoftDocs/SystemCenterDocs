@@ -4,10 +4,10 @@ title: Integrate VMM with Operations Manager for monitoring and reporting
 description: This article describes how to integrate VMM with Operations Manager for monitoring and reporting
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  03/22/2017
+manager:  carmonm
+ms.date:  04/27/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -15,7 +15,6 @@ ms.technology:  virtual-machine-manager
 # Integrate VMM with Operations Manager for monitoring and reporting
 
 >Applies To: System Center 2016 - Virtual Machine Manager
-
 
 This article describes how to integrate System Center 2016 - Virtual Machine Manager (VMM) with System Center Operations Manager to monitor the health of virtualization hosts, virtual machines, and other resources in the VMM compute fabric.
 
@@ -57,11 +56,11 @@ You set up Operations Manager with VMM as follows:
 ## Install the Operations Manager agent
 
 1. Install the Operations Manager agent on each VMM server, and on each host managed in the VMM fabric.
-2. You can install the agent using a push installation, from Operations Manager setup, or from the command line. [Learn more](https://technet.microsoft.com/library/hh551142.aspx).
+2. You can install the agent from the Operations Manager Operations console, from Operations Manager setup, or from the command line. To understand the different methods for agent deployment, review [Managing discovery and agents](https://technet.microsoft.com/library/hh551142.aspx).
 
 ## Download the management packs
 
-1. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=54113) the latest version of the VMM management packs from the Microsoft download center.
+1. [Download](https://www.microsoft.com/download/details.aspx?id=54113) the latest version of the VMM management packs from the Microsoft download center.
 2. Open the management packs folder on the VMM server. The default location is C:\Program Files\Microsoft System Center 2016\Virtual Machine Manager\ManagementPacks. Back up the existing .mp files.
 3. Extract the new .mp files to the management pack folder, overwriting the existing .mp files.
 
