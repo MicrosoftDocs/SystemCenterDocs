@@ -4,10 +4,10 @@ title: Set up an SDN software load balancer in the VMM fabric
 description: This article describes how to set up a SDN software load balancer in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
+manager: carmonm
 ms.date: 02/21/2017
 ms.topic: article
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
@@ -67,7 +67,7 @@ Both the templates have a default count of three virtual machines which can be c
 
 ### Create an IP address pool for the transit logical network
 
-This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).  
+This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).
 
 **Note**:
 - Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
@@ -75,12 +75,12 @@ This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machi
 
 **Create the IP address pool**:
 
-1.  Right-click the logical network > **Create IP Pool**.
-2.  Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
-3.  In **Network Site**, select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
-4.  In **IP Address range** configure the starting and ending IP address. Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
-5.  Next, configure the default gateway address. Click **Insert** next to the **Default gateways** box, type the address and use the default metric. Optionally configure DNS and WINS.
-6.  Review the summary information and click **Finish** to complete the wizard.
+1. Right-click the logical network > **Create IP Pool**.
+2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
+3. In **Network Site**, select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
+4. In **IP Address range** configure the starting and ending IP address. Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
+5. Next, configure the default gateway address. Click **Insert** next to the **Default gateways** box, type the address and use the default metric. Optionally configure DNS and WINS.
+6. Review the summary information and click **Finish** to complete the wizard.
 
     **Note**: Ensure you associate the logical network with the management switch uplink port profile.
 
@@ -91,35 +91,35 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 
 **Create a private VIP**:
 
-1.  Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
-2. In  **Settings**, select **One Connected Network**.  Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
+1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
+2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
 3. In **Network Site**, add the network site information for your private VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
 **Create a public VIP**:
 
 1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
-2. In **Settings**, select **One Connected Network**.  Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller** and **Public IP Address Network**.
+2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller** and **Public IP Address Network**.
 3. In **Network Site**, add the network site information for your public VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
 
 ### Create IP address pools for the private and public VIP networks
 
-1.  Right-click the private VIP logical network > **Create IP Pool**.
-2.  Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
-3.  Accept the default network site, and click **Next**.
-4.  In **IP Address range** configure the starting and ending IP address.
+1. Right-click the private VIP logical network > **Create IP Pool**.
+2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
+3. Accept the default network site, and click **Next**.
+4. In **IP Address range** configure the starting and ending IP address.
 
     **Note**: Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 
-5.  In **IP addresses reserved for load balancer VIPs**, type the IP address range in the subnet. It should match the start and end addresses you specified.
-6.  You don't need to provide gateway, DNS or WINS information because this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens. type the address and use the default metric. Optionally configure DNS and WINS.
-7.  Review the summary information and click **Finish** to complete the wizard.
+5. In **IP addresses reserved for load balancer VIPs**, type the IP address range in the subnet. It should match the start and end addresses you specified.
+6. You don't need to provide gateway, DNS or WINS information because this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens. type the address and use the default metric. Optionally configure DNS and WINS.
+7. Review the summary information and click **Finish** to complete the wizard.
 8. Repeat the procedure for the public VIP logical network, this time type the IP address range for the public network.
 
 
-## Import the service template ##
+## Import the service template
 
 Import the service template into the VMM library. For this example, we'll import the generation 2 template.
 
@@ -140,16 +140,17 @@ Import the service template into the VMM library. For this example, we'll import
 
 Now deploy an SLB/MUX service instance.
 
-1.  Select the **SLB Production Generation 2 VM.xml** service template > **Configure Deployment**. Type a **Name** and optional destination for the service instance. The destination must map to a host group that contains the hosts you've configured.
-2.  In the **Network Settings** section, map **TransitNetwork** to your transit VM network and **ManagementNetwork** to your management VM network.
+1. Select the **SLB Production Generation 2 VM.xml** service template > **Configure Deployment**. Type a **Name** and optional destination for the service instance. The destination must map to a host group that contains the hosts you've configured.
+2. In the **Network Settings** section, map **TransitNetwork** to your transit VM network and **ManagementNetwork** to your management VM network.
 
     **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
+
 3. On the left of the **Configure Deployment** window, configure the settings as detailed in the following table:
 
     **Setting** | **Requirement** | **Description**
     --- |--- |---
     **Transit network** | Required | Your transit VM network.
-    **LocalAdmin** | Required | Select a Run As Account in your environment, which will be used as the local Administrator on the virtual machines. The user name should be Administrator.   
+    **LocalAdmin** | Required | Select a Run As Account in your environment, which will be used as the local Administrator on the virtual machines. The user name should be Administrator.
     **Management network** | Required | Choose the management VM network that you created for host management.
     **MgmtDomainAccount** | Required | Select a Run As Account with permissions to add the SLB/MUX virtual machines to the Active Directory domain associated with the network controller. This can be the same account you used in MgmtDomainAccount while deploying the network controller.
     **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the SLB/MUX virtual machines will join.
@@ -169,13 +170,12 @@ If you want to scale-in or scale-out a deployed software load balancer service i
 
 Now that the service is deployed, you can configure its properties. you'll need to associate the SLB service instance that you deployed with network controller, and then configuring BGP peering between the SLB/MUX instance and a TOR switch or a BGP router peer.
 
-1. Click **Fabric** > **Network Service**.  Right-click the **network controller** service > **Properties**.
-2.  Select the **Services** tab > **Load Balancer Role** > **Associated Service** > **Browse**.
+1. Click **Fabric** > **Network Service**. Right-click the **network controller** service > **Properties**.
+2. Select the **Services** tab > **Load Balancer Role** > **Associated Service** > **Browse**.
 3. Select the SLB/MUX service instance you created earlier and click **OK**. Select a Run As Account.
-4.  For the **Management IP address**, use an IP address from the private VIP pool you created earlier.  Optionally specify the IP address ranges to be excluded from the outbound NAT.
-5.  Click the SLB/MUX instance listed under **Load Balancer Role** in the wizard. Type the local ASN for your datacenter and details for the devices or BGP peers the SLB/MUX can peer with.
+4. For the **Management IP address**, use an IP address from the private VIP pool you created earlier. Optionally specify the IP address ranges to be excluded from the outbound NAT.
+5. Click the SLB/MUX instance listed under **Load Balancer Role** in the wizard. Type the local ASN for your datacenter and details for the devices or BGP peers the SLB/MUX can peer with.
 6. The SLB service instance is now associated with the SLBM service, and you should see the SLB/MUX virtual machine instance with all the settings listed under the **Load Balancer role**.
-
 
 ## Validate the deployment
 
@@ -193,10 +193,10 @@ After you deploy the SLB/MUX, you can validate the deployment by configuring BGP
 
     You also need to know the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can either log on to the SLB MUX virtual machine and run **ipconfig /all** from the command prompt, or you can get the IP address from the VMM console.
 
-    **Note**: Enter an IP from the transit network.    
+    **Note**: Enter an IP from the transit network.
 5. If you create a new VIP pool after peering is complete, you need to advertise all the VIP address pools using the VMM console.
 
-###  Provision VIPs for tenant VMs
+### Provision VIPs for tenant VMs
 
 You can provision VIPs for tenant virtual machines either individually for each VM, or by using the service templates.
 
@@ -225,7 +225,7 @@ In this procedure we'll provision a VIP for individual VMs. This isn't a typical
 
 The following sample PowerShell script creates a VIP for Two virtual machines. In the script parameters section, substitute the actual values that match your test environment for the samples used in this script. The script should be run on the VMM server, or on a computer running the VMM Console.
 
-```
+```powershell
 param(
 
 [Parameter(Mandatory=$false)]
@@ -306,7 +306,6 @@ To complete the BGP peering process, you need to configure a BGP to peer with yo
 
 **Use the following procedure to configure inbound NAT rules**:
 
-
 1. Click **VMs and Services** > **VM Networks** and double-click the network you want to configure with NAT rules.
 2. In the wizard, select **Connectivity**, select **Connect directly to an additional network** and **Network Address Translation (NAT)**.
 3. In **Gateway Device**, select your network controller service name.
@@ -326,4 +325,5 @@ Once you create the inbound NAT rules, outbound NAT rules are automatically crea
 Use [these steps](sdn-remove.md#remove-the-software-load-balancer) to remove the SLB from the SDN fabric.
 
 ## Next steps
+
 [Create a RAS gateway](sdn-gateway.md)

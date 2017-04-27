@@ -4,10 +4,10 @@ title: Set up Software Defined Network (SDN) components in the VMM fabric using 
 description: This article describes how to use PowerShell to deploy SDN components in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  01/23/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -59,7 +59,7 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
 6. [Set up a VMM library share](sdn-controller.md#create-a-library-share-for-logging).You can have an optional library file share for keeping diagnostic logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
 7. [Set up a dedicated VMM host group](sdn-controller.md#set-up-host-groups) for all SDN Hyper-V hosts. Note that hosts must be running the latest version of Windows Server 2016, and have the Hyper-V role enabled.
 8. [Set up a certificate](sdn-controller.md#set-up-the-security-certificates). You need an SSL certificate for HTTPS communications between VMM and the network controller.
-9. [Download](https://github.com/manishmsft/SDN/tree/master/VMM/VMM SDN Express) and run the SDN scripts. There are three scripts:
+9. [Download](https://github.com/manishmsft/SDN/tree/master/VMM/VMM%20SDN%20Express) and run the SDN scripts. There are three scripts:
 
     - **VMMExpress.ps1**: This script deploys the SDN stack. After you download it, you can your own customizations.
     - **Fabricconfig.psd1**: This file accepts all the inputs for setting up SDN.

@@ -4,10 +4,10 @@ title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to create logical switches in the System Center 2016 - Virtual Machine Manager (VMM) fabric, convert a host virtual switch to a logical switch, and set up virtual switch extensions if you need them.
 
-A logical switch brings virtual switch extensions, port profiles, and port classifications together so that you can configure each network adapter with the settings you need, and have consistent settings on network adapters across multiple hosts. You can team multiple network adapters by applying the same logical switch and uplink port profile to them.  
+A logical switch brings virtual switch extensions, port profiles, and port classifications together so that you can configure each network adapter with the settings you need, and have consistent settings on network adapters across multiple hosts. You can team multiple network adapters by applying the same logical switch and uplink port profile to them.
 
 
 ## Set up virtual switch extensions
@@ -35,9 +35,9 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
 1. Obtain the provider software from your vendor and install the provider on the VMM management server. If you have a cluster install it on all nodes.
 2. Click **Fabric** > **Home** > **Show** > **Fabric Resources** > **Networking** > **Switch Extension Managers**.
-3. In **Add Virtual Switch Extension Manager Wizard** > **General** specify the manufacturer and type the connection string for example myextmanager1.contosol.com:443. The exact syntax is defined by the vendor. Specify the account you want to use to connect to the resource.
-4.  In **Host Groups** specify the host groups for which you want to use the extension manager.
-5.  In **Summary** review settings and click **Finish**. Check that the extension appears in the **Virtual Switch Extension Managers** pane.
+3. In **Add Virtual Switch Extension Manager Wizard** > **General** specify the manufacturer and type the connection string for example myextmanager1.contoso.com:443. The exact syntax is defined by the vendor. Specify the account you want to use to connect to the resource.
+4. In **Host Groups** specify the host groups for which you want to use the extension manager.
+5. In **Summary** review settings and click **Finish**. Check that the extension appears in the **Virtual Switch Extension Managers** pane.
 
 
 ## Set up a logical switch
@@ -47,15 +47,15 @@ You can set up a virtual switch extension manager (network manager) if you want 
 3. In **Create Logical Switch Wizard** > **Getting Started**, review the information.
 4. In **General**, specify a name and optional description.
 5. In **Uplink Mode**, select:
-	- **No Uplink Team** if you're not using teaming.
-	- **Embedded Team** if you want to deploy the switch with SET-based teaming
-	- **Team** if you want to use NIC teaming
+    - **No Uplink Team** if you're not using teaming.
+    - **Embedded Team** if you want to deploy the switch with SET-based teaming
+    - **Team** if you want to use NIC teaming
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting you won't be able to add extensions to the switch.
 7. Enable SR-IOV if you need to. SR-IOV enables virtual machines to bypass the switch and directly address the physical network adapter. If you want to enable:
 
-	- Make sure that you have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
-	- Create a native port profile for virtual network adapters that is also SR-IOV enabled.
-	- When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
+    - Make sure that you have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
+    - Create a native port profile for virtual network adapters that is also SR-IOV enabled.
+    - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
 4. In **Extensions**, if you're using virtual switch extensions select them and arrange the order. extensions process network traffic through the switch in the order you specify. Note that only one forwarding extension can be enabled.
 5. In **Virtual Port** add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
 6. In **Uplink** add an uplink port profile, or [create a new one](network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
@@ -79,10 +79,10 @@ Note that:
 5. In **Virtual Switches**, note the properties, including logical network, and minimum bandwidth mode.
 6. In **Fabric** > **Networking** > **Logical Switches**, right-click the logical switch that you want to convert the host configuration to, and click **Properties**.
 7. In **Logical Switches**, record the information:
-	- In **General**, record the uplink mode, whether SR-IOV is enable, and minimum bandwidth mode.
-	- In **Extensions**, note whether any forwarding extensions have been added to the logical switch.
-	- In **Virtual port**, record the names of the port profiles that are listed. Be sure to note if one of them has SR-IOV in the name.
-	- In **Uplinks**, record the network sites, whether uplink mode is teamed, the load balancing algorithm, and teaming mode.
+    - In **General**, record the uplink mode, whether SR-IOV is enable, and minimum bandwidth mode.
+    - In **Extensions**, note whether any forwarding extensions have been added to the logical switch.
+    - In **Virtual port**, record the names of the port profiles that are listed. Be sure to note if one of them has SR-IOV in the name.
+    - In **Uplinks**, record the network sites, whether uplink mode is teamed, the load balancing algorithm, and teaming mode.
 
 8. In **Fabric** > **Networking**, click **Port Profiles**. For any relevant port profiles, click **Properties**. In **Offload Settings**, see if **Enable Single-root I/O virtualization** is checked.
 9. Now compare the recorded information that you recorded for the logical switch and port profiles, with the virtual switch information.
@@ -108,7 +108,7 @@ Note that:
 2. On the **Virtual Switches** tab, click **Convert to Logical Switch**.
 3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use, and click **Convert**.
 4. The **Jobs** dialog box might appear, depending on your settings. Make sure that the job has a status of **Completed**, and then close the dialog box.
-5.  To verify that the switch was converted, right-click the host, click **Properties**, and then click the **Virtual Switches** tab.
+5. To verify that the switch was converted, right-click the host, click **Properties**, and then click the **Virtual Switches** tab.
 
 
 ## Next steps

@@ -4,10 +4,10 @@ title: Set up an SDN RAS gateway in the VMM fabric
 description: This article describes how to Set up an SDN RAS gateway in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
+manager: carmonm
 ms.date: 04/12/2017
 ms.topic: article
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
@@ -36,9 +36,9 @@ To set up a RAS gateway, do the following:
 
 1. **Download the service template**: Download the service template that you need to deploy the GW.
 2. **Create the VIP logical network**: Create a GRE VIP logical network. It needs an IP address pool for private VIPs, and to assign VIPs to GRE endpoints. The network exists to define VIPs that are assigned to gateway VMs running on the SDN fabric for a site-to-site GRE connection.
-2. **Import the service template**: Import the RAS gateway service template.
-3. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
-4. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
+3. **Import the service template**: Import the RAS gateway service template.
+4. **Deploy the gateway**: Deploy a gateway service instance, and configure its properties.
+5. **Validate the deployment**: Configure site-to-site GRE, IPSec, or L3, and validate the deployment.
 
 
 ## Download the service template
@@ -47,6 +47,7 @@ To set up a RAS gateway, do the following:
 2. Extract the contents to a folder on a local computer. You'll import them to the library later.
 
 The download contains Two templates:
+
 - The EdgeServiceTemplate_Generation 1 VM.xml template is for deploying the GW Service on generation 1 virtual machines.
 - The EdgeServiceTemplate_Generation 2 VM.xml is for deploying the GW Service on Generation 2 virtual machines.
 
@@ -64,7 +65,7 @@ Both the templates have a default count of three virtual machines which can be c
     - Subnet: 31.30.30.0
     - Mask: 24
     - VLAN ID on trunk: NA
-    - Gateway: 31.30.30.1  
+    - Gateway: 31.30.30.1
 
 4. In **Summary**, review the settings and finish the wizard.
 
@@ -76,6 +77,7 @@ Both the templates have a default count of three virtual machines which can be c
 4. Choose a starting and ending IP address for your range.
 
     **Note**: Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2.
+
 5. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 6. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
 7. In **Summary**, review the settings and finish the wizard.
@@ -85,8 +87,9 @@ Both the templates have a default count of three virtual machines which can be c
 1. Click **Library** > **Import Template**.
 2. Browse to your service template folder. As an example,  select the **EdgeServiceTemplate Generation 2.xml** file.
 3. Update the parameters for your environment as you import the service template. Note that the library resources were imported during network controller deployment.
- - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier, during the network controller deployment.
- - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
+
+    - **WinServer.vhdx**: Select the virtual hard drive image that you prepared and imported earlier, during the network controller deployment.
+    - **EdgeDeployment.CR**: Map to the EdgeDeployment.cr library resource in the VMM library.
 
 4. On the **Summary** page, review the details and click **Import**.
 
@@ -101,12 +104,13 @@ This example uses the generation 2 template.
 3. In **Network Settings**, map the management network to the management VM network.
 
     **Note**: The **Deploy Service** dialog appears after mapping is complete. It's normal for the VM instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the VM.
+
 4. On the left of the **Configure Deployment** window, configure the following settings:
 
-  - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs.
-  - **Management Network**. Required. Choose the Management VM network that you created for host management.
-  - **Management Account**. Required. Select a Run as account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
-  - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
+    - **AdminAccount**. Required. Select a RunAs account that will be used as the local administrator on the gateway VMs.
+    - **Management Network**. Required. Choose the Management VM network that you created for host management.
+    - **Management Account**. Required. Select a Run as account with permissions to add the gateway to the Active Directory domain associated with the network controller. This can be the same account used for MgmtDomainAccount while deploying the network controller.
+    - **FQDN**. Required. FQDN for the Active directory domain for the gateway.
 
 5. Click **Deploy Service** to begin the service deployment job.
 
@@ -128,6 +132,7 @@ Now that the gateway service is deployed, you can configure the properties, and 
 4. Select the **Run As account** that will be used by network controller to access the gateway virtual machines.
 
     **Note**: The Run as account must have Administrator privileges on the gateway VMs.
+
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
 7. In **Gateway Capacity**, configure the capacity settings.
@@ -142,7 +147,6 @@ Now that the gateway service is deployed, you can configure the properties, and 
 9. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
 
 **Note**: You must configure the gateway BGP peers, if you plan to use GRE connections.
-
 
 The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
 
@@ -160,7 +164,7 @@ After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connec
     After changing the bandwidth, in case of any further changes to the VPN connection through the SCVMM, the bandwidth settings will be reset to the default value (500 Kbps). You must run the NC PowerShell command once again, to make any changes to the bandwidth settings.
 
 
-- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.  
+- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.
 
 - For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
 
@@ -182,12 +186,14 @@ A site-to-site IPSec connection allows you to securely access remote virtual mac
 This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 
     ![IPsec](./media/sdn-gateway/sdn-gateway2.png)
+
 6. Type a connection **Name**, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
 7. In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a user name, and the IPSec key as the password for the account.
 8. In **Routes**, type all the remote subnets that you want to connect to.
 9. If you selected **Enable Border Gateway Protocol (BGP)**, then you can leave this screen blank and instead fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** tab as shown below:
 
     ![IPsec](./media/sdn-gateway/sdn-gateway3.png)
+
 10. On the **Advanced** tab, accept the default settings.
 11. To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM Network.
 
@@ -203,7 +209,8 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 4. Select **VPN Connections** > **Add** > **Add GRE Tunnel**.
 5. Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be preconfigured in your datacenter.
 
-  ![GRE](./media/sdn-gateway/sdn-gateway1.png)
+    ![GRE](./media/sdn-gateway/sdn-gateway1.png)
+
 6. Type a connection **Name**, and specify the IP address of the remote endpoint.
 7. Type the GRE key.
 8. Optionally, you can complete the other fields on this screen but these values aren't needed to set up a connection.
@@ -216,7 +223,9 @@ A S2S GRE connection allows you to access remote virtual machines and services f
 On the remote peer device, you must specify the GRE VIP address that was assigned to the gateway where your GRE connection is residing.
 To get the GRE VIP, run the following PowerShell command on a network controller VM:
 
-    Get-NetworkControllerVirtualGateway -ConnectionUri <Connection uri of your deployment> | Convertto-Json -Depth 10
+```powershell
+Get-NetworkControllerVirtualGateway -ConnectionUri <Connection uri of your deployment> | Convertto-Json -Depth 10
+```
 
 In the resource, you will find a NetworkConnection resource with **connectionType** as **GRE**. In this resource, check the **sourceIPAddress** field. This is the VIP used by the GRE tunnel. If you have multiple GRE connections, you can identify the relevant one by checking the **destinationIPaddress** field.
 
@@ -229,7 +238,7 @@ An L3 gateway acts as a bridge between the physical infrastructure in the datace
 
 **Note**: In an L3 connection, you can’t use the same VLAN subnet for two different tenants.
 
-```
+```powershell
 param (
     [Parameter(Mandatory=$true)]
     # Name of the L3 VPN connection
@@ -371,25 +380,27 @@ TenantASNRoutingSubnets |ASN number of tenant gateway. Only if BGP is enabled. |
 ## Set up the traffic selector from PowerShell
 Here is the procedure to setup the traffic selector by using the VMM PowerShell.
 
-1.	Create the traffic selector by using the following parameters.
+1. Create the traffic selector by using the following parameters.
 
     **Note**: Values used are examples only.
 
-            $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
+    ```powershell
+    $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
 
-            $t.Type=7 // IPV4=7, IPV6=8
+    $t.Type=7 // IPV4=7, IPV6=8
 
-            $t.ProtocolId=6 // TCP =6, reference: https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
+    $t.ProtocolId=6 // TCP =6, reference: https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
 
-            $t.PortEnd=5090
+    $t.PortEnd=5090
 
-            $t.PortStart=5080
+    $t.PortStart=5080
 
-            $t.IpAddressStart=10.100.101.10
+    $t.IpAddressStart=10.100.101.10
 
-            $t.IpAddressEnd=10.100.101.100
+    $t.IpAddressEnd=10.100.101.100
+    ```
 
-2.   Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
+2. Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
 
 ## Remove the gateway from the SDN fabric
 

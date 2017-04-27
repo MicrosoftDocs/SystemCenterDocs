@@ -11,7 +11,6 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-
 # Configure VM failover between virtual networks
 
 >Applies To: System Center 2016 - Virtual Machine Manager
@@ -38,8 +37,10 @@ This sample solution describes the following environment:
 - The replica VM shouldn't be connected to a network
 - Only one IP address should be assigned to each network adapter of the primary VM. Run this command to ensure this. If there's more than one connected network adapter on the VM, run it for adapter by changing the array index.
 
-        $VMOnPD = Get-SCVirtualMachine -Name "VM Name" | where {$_.IsPrimaryVM -eq $true}
-        Get-SCIPAddress –GrantToObjectId $VMOnPD.VirtualNetworkAdapters[0].ID``
+    ```powershell
+    $VMOnPD = Get-SCVirtualMachine -Name "VM Name" | where {$_.IsPrimaryVM -eq $true}
+    Get-SCIPAddress –GrantToObjectId $VMOnPD.VirtualNetworkAdapters[0].ID``
+    ```
 
 - Make sure that the IP address assigned to the VM by the operating system is the same as the IP address shown above. Log onto the VM and run **ipconfig** to check this.
 - Check that lookup tables are correctly set on the primary and replica . To do this, run the following command on each server, and ensure that there is an entry that corresponds to the IP address returned above: `Get-NetVirtualizationLookupRecord`
@@ -78,7 +79,7 @@ If the script doesn't complete any of the  steps, you need to manually complete 
 
 Run the script:
 
-```
+```powershell
  Param(
  [Parameter(Mandatory=$True)]
    [string]$VMName,
@@ -177,10 +178,10 @@ foreach($vmAdapter in $VMOnPDAdapter)
 }
 
 if ($error.Count -ne 0)
-{    
+{
     write-host -ForegroundColor Red (Get-Date) "....Error is gathering information for $VMName. No changes made"
     write-host -ForegroundColor Red (Get-Date) "....Exiting"
-    exit 1   
+    exit 1
 }
 
 $IP = @()
@@ -198,7 +199,7 @@ foreach($vmAdapter in $VMOnPDAdapter)
 
     ## Revoke IP
     $error.Clear()
-    $IP = $IP +(Get-SCIPAddress –GrantToObjectId $VMOnPD.VirtualNetworkAdapters[$counter].ID)        
+    $IP = $IP +(Get-SCIPAddress –GrantToObjectId $VMOnPD.VirtualNetworkAdapters[$counter].ID)
     Write-Host -ForegroundColor Yellow (Get-Date) "....Revoking IP " $IP[$counter] "from Primary VM"
     Revoke-SCIPAddress $IP[$counter]
     if ($error.count -eq 0)
@@ -263,13 +264,12 @@ foreach($vmAdapter in $VMOnPDAdapter)
 }
 ```
 
-
 ## Run the reverse replication/cancel script
 
 Here's what this script does:
 
-1.	If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
-2.	If you cancel, the script reverses the networking steps, and restores the primary VM connections, after disconnecting the replica VM networks.
+1. If you didn't run reverse replication in the failover script, you can use this script for reverse replication, or to cancel the failover.
+2. If you cancel, the script reverses the networking steps, and restores the primary VM connections, after disconnecting the replica VM networks.
 
 ### Run the script
 
@@ -283,12 +283,12 @@ One and only one of $ReverseRep and $CancelFO can be passed $true at a time.  Af
 
 Run the script:
 
-```
+```powershell
 Param(
  [Parameter(Mandatory=$True)]
    [string]$VMName,
  [Parameter(Mandatory=$true)]
-   [boolean]$ReverseRep,   
+   [boolean]$ReverseRep,
  [Parameter(Mandatory=$true)]
    [boolean]$CancelFO
 )
@@ -416,10 +416,10 @@ foreach($vmAdapter in $VMOnDRAdapter)
 }
 
 if ($error.Count -ne 0)
-{    
+{
     write-host -ForegroundColor Red (Get-Date) "....Error is gathering information for $VMName. No changes made"
     write-host -ForegroundColor Red (Get-Date) "....Exiting"
-    exit 1   
+    exit 1
 }
 
 $IP = @()
@@ -437,7 +437,7 @@ foreach($vmAdapter in $VMOnDRAdapter)
 
     ## Revoke IP
     $error.Clear()
-    $IP = $IP +(Get-SCIPAddress –GrantToObjectId $VMOnDR.VirtualNetworkAdapters[$counter].ID)        
+    $IP = $IP +(Get-SCIPAddress –GrantToObjectId $VMOnDR.VirtualNetworkAdapters[$counter].ID)
     Write-Host -ForegroundColor Yellow (Get-Date) "....Revoking IP " $IP[$counter] "from Replica VM"
     Revoke-SCIPAddress $IP[$counter]
     if ($error.count -eq 0)
