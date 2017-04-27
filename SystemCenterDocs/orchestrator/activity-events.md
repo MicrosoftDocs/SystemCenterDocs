@@ -6,11 +6,11 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.author: cfreeman
 ms.date: 10/12/2016
-author: cfreemanwa
+author: carmonm
 manager: cfreeman
 ---
 
@@ -40,7 +40,7 @@ In addition to viewing the events on the **Events** tab in the Runbook Designer,
 ### Add an SNMP Trap Destination  
 To add an SNMP trap destination, run the **oedc** command one time for each destination that you want to add by using the following syntax:  
 
-**oedc \/snmp \/add \/ip***<Targeted IP Address>***\/port***<Targeted Port>***\/version***<version>***\/community<community>**  
+**oedc /snmp /add /ip** `<`*Targeted IP Address*`>` **/port** `<`*Targeted Port*`>` **/version** `<`*version*`>` **/community** `<`*community*`>`  
 
 For example, use the following procedure to send traps by using SNMP version 1 to an SNMP receiver at IP address 10.1.1.10 on port 162 and a community called public.  
 
@@ -50,14 +50,14 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 
 2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Management Server.  
 
-3.  Type the following command: **oedc \/snmp \/add \/ip 10.1.1.10 \/port 162 \/version SNMP1 \/community public**  
+3.  Type the following command: **oedc /snmp /add /ip 10.1.1.10 /port 162 /version SNMP1 /community public**  
 
 4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 
 ### Remove All SNMP Trap Destinations  
 You cannot remove individual SNMP trap destinations. Instead, you must remove all destinations, and then add back any that you want. To remove all SNMP trap destination, run the **oedc** command with the following syntax:  
 
-**oedc \/snmp \/clear**  
+**oedc /snmp /clear**  
 
 ##### To remove all SNMP trap destinations  
 
@@ -65,7 +65,7 @@ You cannot remove individual SNMP trap destinations. Instead, you must remove al
 
 2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Management Server.  
 
-3.  Type the following command: **oedc \/snmp \/clear**  
+3.  Type the following command: **oedc /snmp /clear**  
 
 4.  Restart the Orchestrator Runbook Service and the Orchestrator Runbook Server Monitor service.  
 

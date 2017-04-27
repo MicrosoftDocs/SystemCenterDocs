@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e58ceb1a-56fe-4675-95e5-a7f8187198ce
 author: cfreemanwa
 ms.author: cfreeman
@@ -54,8 +54,5 @@ The activity publishes all of the data from the required and optional properties
 | Storage Account Name   | The name of the storage account.   | String   |
 
 ## See Also
-
-
-#### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
