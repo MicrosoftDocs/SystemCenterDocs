@@ -2,19 +2,19 @@
 title: Get Checkpoint
 description: The Get Checkpoint activity is used to retrieve a virtual machine checkpoint based on the filters you specify so that it can be used to restore the virtual machine to a previous state.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 047a8606-628d-4689-bfbc-336163cc52ba
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Checkpoint
 
 Applies To: System Center 2016 - Orchestrator

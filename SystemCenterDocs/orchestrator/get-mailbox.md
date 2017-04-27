@@ -2,19 +2,19 @@
 title: Get Mailbox
 description: You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 1e5f6075-259b-426b-97c9-a934d155f665
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Mailbox
 
 Applies To: System Center 2016 - Orchestrator
@@ -418,7 +418,5 @@ This activity has no required properties.
 | Windows Email Address   | Email address.   | String   |
 | Windows Live ID(Live@edu only)   | Windows Live ID associated with the mailbox. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | String   |
 
-#### Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

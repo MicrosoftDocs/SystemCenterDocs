@@ -2,19 +2,19 @@
 title: Get Attachments
 description: The Get Attachments activity is used in a runbook to retrieve details from the attachments of a list item.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 0efdc1f0-978a-46e8-b229-36b9663b4475
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Attachments
 
 Applies To: System Center 2016 - Orchestrator
@@ -56,10 +56,4 @@ The following tables list the filters, required properties, and Published Data f
 | Title   | The title of the attachment.   | String   |
 | URL Path   | The server relative path of the attachment.   | String   |
 
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

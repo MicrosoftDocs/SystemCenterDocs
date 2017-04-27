@@ -2,19 +2,19 @@
 title: Get Documents
 description: The Get Documents activity is used in a runbook to retrieve details about the documents in a Microsoft SharePoint document library.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 53456c0d-b7b8-4ef8-ad38-6b685dda54c6
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Documents
 
 Applies To: System Center 2016 - Orchestrator
@@ -59,11 +59,3 @@ The following tables list the filters, required and optional properties, and Pub
 | Modified   | The date and time when the document was last modified.   | Date/Time   |
 | Modified By   | The name of the user who last modified the document.   | String   |
 | SharePoint Site  | The URL of the SharePoint site.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
