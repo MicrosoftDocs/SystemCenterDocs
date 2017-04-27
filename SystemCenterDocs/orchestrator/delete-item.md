@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 2ae557bc-f457-4ae5-b542-b7f7fca66f8f
 author: cfreemanwa
 ms.author: cfreeman
@@ -42,6 +42,6 @@ The following tables list the required properties and published data for this ac
 | Use Autodiscover   | Whether or not to use Autodiscover to check for changes | Boolean   |
 | User Name   | Username used to connect to the Exchange server   | String   |
 
-#### Other Resources
+## See Also
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx) <br> <br>
