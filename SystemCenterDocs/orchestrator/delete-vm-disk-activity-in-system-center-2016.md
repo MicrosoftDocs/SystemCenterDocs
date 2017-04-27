@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 496a3586-5ecd-4dd4-a885-33988cfea717
 author: cfreemanwa
 ms.author: cfreeman
@@ -48,8 +48,6 @@ No optional properties are provided for this activity.
 ## To Configure the Delete VM Disk Activity
 
 The following procedure describes the steps required to configure a Delete VM Disk activity.
-
-#### To configure the Delete VM Disk Activity
 
 1.  From the **Activities** pane, drag a **Delete VM Disk** activity to the active runbook.
 

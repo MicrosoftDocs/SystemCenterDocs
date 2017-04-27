@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: daa3d513-25e3-4fa4-896a-ffb3526b0ea8
 author: cfreemanwa
 ms.author: cfreeman
@@ -44,8 +44,6 @@ No optional properties are provided for this activity.
 ## Configuring the Delete VM Activity
 
 The following procedure describes the steps required to configure a Delete VM activity.
-
-#### To configure the Delete VM Activity
 
 1.  From the **Activities** pane, drag a **Delete VM** activity to the active runbook.
 

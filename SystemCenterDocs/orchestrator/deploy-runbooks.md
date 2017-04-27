@@ -47,5 +47,5 @@ When a runbook has been changed and is checked in by a user, an entry appears in
 3.  When you select an item, the **Action** type displays beneath the **Activities** box. For example, **Action: Modified** or **Action: Added**. When you select the **Action: Modified** type, the **Attribute**, **Old Value**, and **New Value** are listed in the bottom text box.  
 
 ## Next steps  
-- To learn more about how to design and build runbooks see [Design and build runbooks](design-and-build-runbooks.md)
 
+To learn more about how to design and build runbooks, see [Design and build runbooks](design-and-build-runbooks.md).
