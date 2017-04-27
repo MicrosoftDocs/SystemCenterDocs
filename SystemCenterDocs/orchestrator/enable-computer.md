@@ -2,19 +2,19 @@
 title: Enable Computer
 description: You can use the Enable Computer activity in a runbook to enable a computer in the Microsoft Active Directory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: d187fb68-3036-42e6-958b-92060bf4e545
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Enable Computer
 
 Applies To: System Center 2016 - Orchestrator

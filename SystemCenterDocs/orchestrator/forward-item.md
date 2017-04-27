@@ -2,19 +2,19 @@
 title: Forward Item
 description: The Forward Item activity is used in a runbook to forward an existing email message or appointment.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 147edef0-e9db-49e8-b6f8-f8539a7c610d
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Forward Item
 
 Applies To: System Center 2016 - Orchestrator
@@ -55,6 +55,3 @@ The following tables list the required properties, optional properties, and publ
 | User Name   | User name used to log on to Exchange server   | String   |
 | Use Autodiscover   | Indication of whether or not to use Autodiscover to check for changes | Boolean   |
 
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx) <br> <br>

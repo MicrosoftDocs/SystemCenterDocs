@@ -2,19 +2,19 @@
 title: Disable Computer
 description: You can use the Disable Computer activity in a runbook to disable a computer in the Microsoft Active Directory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 84b51ab5-b50e-4953-b0ac-7e5f2b915f83
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Disable Computer
 
 Applies To: System Center 2016 - Orchestrator

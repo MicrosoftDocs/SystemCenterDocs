@@ -2,19 +2,19 @@
 title: Enable Remote Mailbox (Hybrid)
 description: You can use the Enable Remote Mailbox (Hybrid) activity to create a mailbox in the cloud-based service for an existing user in the on-premises Active Directory (hybrid environment).
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: cb690bb4-e07e-4a9f-9f19-2886c9a8fec4
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Enable Remote Mailbox (Hybrid)
 
 Applies To: System Center 2016 - Orchestrator
@@ -167,8 +167,4 @@ The following tables list the required properties, optional properties, and publ
 | When Created UTC   | UTC date and time when the mailbox was created.   | Datetime   |
 | When Mailbox Created   | Date and time when mailbox was created.   | Datetime   |
 | Windows Email Address   | Email address.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 
