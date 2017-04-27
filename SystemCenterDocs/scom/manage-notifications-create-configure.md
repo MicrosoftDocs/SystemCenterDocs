@@ -4,7 +4,7 @@ title: How to Create and Configure the Notification Action Account
 description:  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/03/2017
 ms.custom: na
 ms.prod: system-center-threshold

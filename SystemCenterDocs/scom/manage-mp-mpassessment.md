@@ -4,7 +4,7 @@ title:  Management Pack Assessment
 description: This article describes how to use the updates and recommendations feature in Operations Manager 2016.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 02/22/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -232,6 +232,6 @@ The following list includes the workloads that are supported by this feature.
 
 ## Next steps
 
-- To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](~/scom/manage-mp-lifecycle.md).
+- To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](manage-mp-lifecycle.md).
 
-- Review the [Operations Manager Reports library](~/scom/manage-reports-installed-during-setup.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md) to create reports for your operational needs. 
+- Review the [Operations Manager Reports library](manage-reports-installed-during-setup.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](manage-reports-create-reports.md) to create reports for your operational needs. 

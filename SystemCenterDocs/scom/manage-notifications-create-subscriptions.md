@@ -3,7 +3,7 @@ title: How to Create Notification Subscriptions
 description: This article describes how to create a notification subscription when exceptions are detected and incident escalation is required.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -67,7 +67,7 @@ Every class in Operations Manager has a base class. A class has all the properti
   
 When you select a specific class as a condition for an alert notification, notifications are sent for alerts raised by any instance of the specified class.  
   
-#### Examples  
+### Examples  
 
 **Example 1:** To send notifications of alerts for UNIX computers to your UNIX administrator, you create a subscription using the condition **Raised by any instance in a specific group**, select the **UNIX\/Linux Computer Group** as the value for the condition, and select the UNIX administrator as the subscriber.  
   

@@ -3,7 +3,7 @@ title: How to Create Notification Subscribers
 description: This article describes how to create notification subscribers that will be added to notification subscriptions in Operations Manager.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
