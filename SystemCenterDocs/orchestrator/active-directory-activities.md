@@ -1,6 +1,6 @@
 ---
 title: Active Directory Activities
-description: The following configuration instructions apply to all activities in this integration pack.
+description: This article contains configuration instructions for Active Directory activities.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center-threshold
@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 73d76ac0-8eee-466a-b11b-3df39e045d6d
 author: cfreemanwa
 ms.author: cfreeman
@@ -169,5 +169,3 @@ This integration pack adds the Microsoft Active Directory category to the **Acti
 [Update Group](update-group.md)
 
 [Update User](update-user.md)
-
-

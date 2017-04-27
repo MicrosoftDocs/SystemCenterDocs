@@ -90,7 +90,7 @@ You can specify special formats of variables to provide dynamic information to y
 ## Workflow Control
 When you build runbooks in System Center 2016 - Orchestrator, it is important to understand the underlying logic of the workflow engine. By using this logic, you can create workflows to automate resource\-based jobs and complex data processing tasks.  
 
-The workflow control provides the following controls.  
+The workflow control provides the following controls: Smart Links and Embedded Loops.  
 
 ### Smart Links
 
@@ -103,4 +103,3 @@ Each activity can create a loop so that you can retry operations if they fail or
 When a loop is configured for an activity, it continues to run with the same input data until a desired exit looping criteria is reached. The exit criteria is built in a similar way as smart link configurations. You can use any published data item from the activity as part of the exit or do not exit configuration. Included in the common published data are special data items such as **Loop: Number of attempts** and **Loop: Total duration** that let you use information from the loop itself in the looping conditions.  
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all three items have been processed, the next activity in the runbook runs.
- 

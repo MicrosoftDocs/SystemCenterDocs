@@ -1,13 +1,13 @@
 ---
 title: Control runbook activities
-Description: Describes how to manipulate data and control the sequence of operations in an Orchestrator runbook. 
+Description: Describes how to manipulate data and control the sequence of operations in an Orchestrator runbook.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 author: cfreemanwa
 ms.author: cfreeman
 ms.date: 10/12/2016
@@ -30,7 +30,7 @@ The activities in your runbook will complete according to the order you set by l
 > [!IMPORTANT]  
 > The rules on each tab are joined by using an **or** condition. Only one of the conditions defined on a tab must be true for the condition to be true.  
 
-The type of data published by an activity determines the type of criteria  you can set for controlling the runbook sequence. Some activities publish binary data, and others publish numeric, or text data. 
+The type of data published by an activity determines the type of criteria  you can set for controlling the runbook sequence. Some activities publish binary data, and others publish numeric, or text data.
 
 If the published data is text data you can use any of the following to set the criteria for execution, inclusion or exclusion.  
 
@@ -48,7 +48,7 @@ If the published data is text data you can use any of the following to set the c
 > [!NOTE]  
 > Text values are not case\-sensitive.
 
-You can also set criteria using [regular expressions](https://technet.microsoft.com/en-us/system-center-docs/orch/manage/regular-expressions) to perform pattern matching. 
+You can also set criteria using [regular expressions](https://technet.microsoft.com/en-us/system-center-docs/orch/manage/regular-expressions) to perform pattern matching.
 
 If the published data is numerical you can use any of the following to set the criteria for execution, inclusion or exclusion.
 
@@ -142,7 +142,7 @@ Use the following procedure to add or remove an **Exit** condition.
 
 ## Set a schedule for a runbook
 
-You can set a schedule to control when a runbook runs. For example, there are times when it is inappropriate to run some runbooks,such as backing up a runbook on a main server during regular business hours. You can create a schedule that runs according to a complex interval, such as the first and third Mondays and Thursdays of every month, except when these days fall on a holiday.  
+You can set a schedule to control when a runbook runs. For example, there are times when it is inappropriate to run some runbooks, such as backing up a runbook on a main server during regular business hours. You can create a schedule that runs according to a complex interval, such as the first and third Mondays and Thursdays of every month, except when these days fall on a holiday.  
 
 Schedules use the system clock of the Runbook server that runs the runbook. This enables schedules to function in virtual machine environments, and to continue running even when the system clock is adjusted because of the move to or from daylight savings time.  
 
@@ -155,7 +155,7 @@ Runbooks that start before a prohibited time run until finished, even if they ar
 > If you schedule a runbook to start during an hour that is skipped when the system clock is adjusted forward by one hour, that starting time is skipped, and the runbook starts at the next scheduled time. If you schedule a runbook to start during an hour that occurs two times because the system clock is adjusted backward by one hour, the runbook starts two times.  
 
 > [!NOTE]  
-> Orchestrator does not support moving multiple schedules with multiple\-selection. To move more than one schedule to another folder, you must move each schedule individually. 
+> Orchestrator does not support moving multiple schedules with multiple\-selection. To move more than one schedule to another folder, you must move each schedule individually.
 
 ### To create a schedule  
 
@@ -229,7 +229,7 @@ You manipulate data in the runbook by inserting a function. Data manipulation fu
 
 `[Upper('this will be inserted in upper case')]`  
 
-When the activity runs, the text 'this will be inserted in uppercase' in the example is replaced with 'THIS WILL BE INSERTED IN UPPERCASE'. 
+When the activity runs, the text 'this will be inserted in uppercase' in the example is replaced with 'THIS WILL BE INSERTED IN UPPERCASE'.
 
 Functions are case\-sensitive. For example, Upper\('Text'\) will be processed, but upper\('Text'\) will not.  
 

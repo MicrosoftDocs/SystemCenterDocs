@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: ab4cf719-4cd3-4a38-92f6-c3019452e8ca
 author: cfreemanwa
 ms.author: cfreeman
@@ -96,7 +96,7 @@ Mandatory Schedule dialog appears.
 
 The Mandatory Schedule dialog box contains the following elements:
 
-  
+
 - Use the following schedule
   * Enables the **Schedule** group which allows you to define a specific schedule.
     * **None**: Specifies that the operation does not recur.

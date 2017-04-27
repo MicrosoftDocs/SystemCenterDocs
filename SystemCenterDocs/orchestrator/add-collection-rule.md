@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 60a8bd5f-fde6-4a8a-8470-4462b5331644
 author: cfreemanwa
 ms.author: cfreeman
@@ -42,16 +42,16 @@ activity. To force re-evaluation of the collection’s membership after
 adding or removing collection rules, use the **Update Collection
 Membership** activity.
 
-For the procedure to configure this object, see: Configuring the Add
-Collection Rule Activity
+For the procedure to configure this object, see: [Configuring the Add
+Collection Rule Activity](add-collection-rule.md#configuring-the-add-collection-rule-activity).
 
-**Properties and Published Data**
+## Properties and Published Data
 
 The following tables list the properties and published data for this
 activity. The activity publishes all the data from the required and
 optional properties into published data.
 
-**Add Collection Rule Properties**
+### Add Collection Rule Properties
 
 You can specify the following rule properties:
 
@@ -62,9 +62,9 @@ You can specify the following rule properties:
   * Direct Rule - a single user or computer
   * Query Rule - a SQL query string or a predefined query saved on a Configuration Manager sever.
   * Include Collection - a collection whose members will be included.
-  * Exclude Collection - a collection whose members will be excluded. 
+  * Exclude Collection - a collection whose members will be excluded.
 - Rule Definition: The allowed values for a rule are determined by the type of rule.   
-  * Direct rules can specify a user or device ID. Device ID's can be the NetBios name or the IP address. The user name can be the name displayed in the Configuration Manager console. User names can be the name displayed in the Configuration Manager console (i.e. “contoso\Admin (Administrator)” ), or the UniqueUserName value specified in the SMS_R_User class in WMI (i.e. “contoso\admin”) 
+  * Direct rules can specify a user or device ID. Device ID's can be the NetBios name or the IP address. The user name can be the name displayed in the Configuration Manager console. User names can be the name displayed in the Configuration Manager console (i.e. “contoso\Admin (Administrator)” ), or the UniqueUserName value specified in the SMS_R_User class in WMI (i.e. “contoso\admin”)
   * Query Rule – a valid WQL query string or the Query ID of an existing Configuration Manager Query
   * Include Collection – the name or Collection ID of a collection of the same type (user or device) as the collection specified above.
   * Exclude Collection – the name or Collection ID of a collection of the same type (user or device) as the collection specified above.
@@ -73,16 +73,16 @@ You can specify the following rule properties:
 > [!Note]
 > When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
 
-**Add Collection Rule Published Data**
+### Add Collection Rule Published Data
 
   **Element**| **Description**|
   ------------|-----------------|
   Connection| Specifies the name of the connection to the Configuration Manager server.|
   Collection ID| Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
 
-**Configuring the Add Collection Rule Activity**
+## Configuring the Add Collection Rule Activity
 
-**To configure the Add Collection Rule activity**
+To configure the Add Collection Rule activity:
 
 1.  From the **Activities** pane, drag a **Add Collection Rule**
     activity to the active runbook.
@@ -108,5 +108,3 @@ You can specify the following rule properties:
 4.  For information about the settings on the **General** and **Run Behavior** tabs, see [Configuration Manager Activities](configuration-manager-activities.md).
 
 5.  Click **Finish**.
-
-

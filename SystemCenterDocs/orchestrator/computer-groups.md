@@ -4,15 +4,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6e085a23-5fae-4592-a08c-55cefb2a2926
 author: cfreemanwa
 ms.author: cfreeman
 ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
 # Computer Groups
 
@@ -49,7 +48,7 @@ Use the following procedure to add a computer group. To add computers by using a
 
 6.  Enter the name of the computer that you are adding, or click the ellipsis **\(...\)** button next to the **Computer** box, and then select the applicable computer. Click **OK** to add the computer.  
 
-7.  To add more computers to the group. repeat the previous two steps.  
+7.  To add more computers to the group, repeat the previous two steps.  
 
 #### To modify settings  
 

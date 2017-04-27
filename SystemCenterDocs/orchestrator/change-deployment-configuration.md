@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e4769f6f-dad7-4132-8d3c-917eee12d18a
 author: cfreemanwa
 ms.author: cfreeman
@@ -27,10 +27,10 @@ The activity publishes all of the data from the required and optional properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
-| Service DNS Prefix   | The DNS prefix name of the Windows Azure cloud service.   | String   |
+| Service DNS Prefix   | The DNS prefix name of the Azure cloud service.   | String   |
 | Deployment Slot   | The deployment slot for the deployment.   | Staging, Production |
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
-| Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
+| Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity. | True, False   |
 
 ## Change Deployment Configuration Optional Properties
 
@@ -49,23 +49,19 @@ There are no optional properties for this runbook activity.
 | Is Upgrading   | Whether the deployment is currently upgrading.   | Boolean   |
 | Number of Upgrade Domains   | The number of upgrade domains in the deployment.   | Integer   |
 | OS Family Number   | The OS family that this deployment runs under.   | Integer   |
-| OS Version String   | The version of the Windows Azure Guest OS on which this deployment runs.   | String   |
-| Private ID   | A unique identifier generated internally by Windows Azure for this deployment.   | String   |
-| Raw XML Output   | The raw XML output returned by Windows Azure for this operation.   | String   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| OS Version String   | The version of the Azure Guest OS on which this deployment runs.   | String   |
+| Private ID   | A unique identifier generated internally by Azure for this deployment.   | String   |
+| Raw XML Output   | The raw XML output returned by Azure for this operation.   | String   |
+| Request ID   | The unique identifier of the request to Azure.   | String   |
 | Upgrade Type   | The upgrade type designated for this deployment.   | String   |
 | Status   | The status of the deployment.   | String   |
-| Service DNS Prefix   | The DNS prefix name of the Windows Azure cloud service.   | String   |
+| Service DNS Prefix   | The DNS prefix name of the Azure cloud service.   | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | String   |
 | Deployment Name   | The name of the deployment.   | String   |
 | Label   | A friendly name for the cloud service.   | String   |
 | Service Configuration File Path | The path to the service configuration file for the deployment.   | String   |
-| Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
+| Wait for Completion   | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
