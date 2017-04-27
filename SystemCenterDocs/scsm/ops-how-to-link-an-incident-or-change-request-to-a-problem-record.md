@@ -21,7 +21,7 @@ ms.assetid: 96b8eff6-d347-4947-babe-90e4211f27b7
 
 In System Center 2016 - Service Manager, you can use the following procedure to link an incident or change request to a problem record if you created a problem record without linking it to an existing incident or change request.  
 
-### To link an incident or change request to a problem record  
+## Create a link
 
 1.  In the Service Manager console, click **Work Items**.  
 
@@ -37,6 +37,6 @@ In System Center 2016 - Service Manager, you can use the following procedure to 
 
 7.  Click **OK** to close the form.  
 
-### To validate the link  
+## Validate the link  
 
 -   In the **Active Problems** view, open the problem record to which you linked a work item, click the **Related Items** tab, and then verify that the items you linked appear under **Work Items**.  

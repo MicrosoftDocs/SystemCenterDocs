@@ -27,7 +27,7 @@ When changes are approved, it is up to release management processes to group the
 
 After changes have been bundled together, a release manager defines the sequence of actions needed for a release with release activities. For example, different changes might have infrastructure update tasks, database modification tasks, tasks to update applications, or other individual tasks. In some cases, it might make sense to group some tasks together with infrastructure updates or perform database updates or application updates. Some tasks can be deployed simultaneously, while other tasks must be deployed sequentially or separately.  
 
-## Managing release records
+## Release record process
 
 The release manager or other person responsible for the release defines the sequence of actions with a release record. The release record might depict the deployment sequence of different changes using parallel activities, sequential activities, and other activities. The release manager can delegate the responsibility for activities to others. When an activity is delegated, the person responsible for the activity can modify the activity and update its status.  
 
@@ -39,7 +39,7 @@ Because releases are often bundled together, you can group multiple release reco
 
 Like change requests, release records contain activities for approval and manual actions. In addition, release records can contain parallel and sequential activities. Parallel and sequential activities are containers for other activities, and they define how constituent activities must be implemented-parallel activities can be implemented simultaneously, while other parallel activities are also in progress. Sequential activities must be completed in the order they are organized, one after another.  
 
-## Sample scenario to manage Service Manager release records
+## Sample scenario
 
 This sample scenario for Service Manager helps you achieve your goal of managing release records by using multiple scenarios end to end. You can think of this sample scenario as a case study that helps put the individual scenarios and procedures in context.  
 
@@ -53,7 +53,7 @@ The next major release for Woodgrove Bank is a deployment of a new version of it
 
 At Woodgrove Bank, Garret configures administrative settings for releases, and he creates a parent release record. He also creates templates for parallel and sequential activities. Then, Phil creates release records, based on the templates that Garret created. Phil chooses which changes to deploy, and then he updates release activities by adding, deleting, or modifying them for each release, as necessary. Garret configures notifications for release records to notify users. Garret and Phil can review the status and the progress of change requests for a release whenever they need to.
 
-## Create a Service Manager release record
+## Create a release record
 
 
 The Release Manager creates a release record in Service Manager using the following procedure.  
@@ -73,7 +73,7 @@ The Release Manager creates a release record in Service Manager using the follow
 6.  As you add an activity, the activity form opens. Enter necessary information, and then click **OK** to save the activity.  
 7.  When you have added all the activities you want, click **OK** to save the release record and close it. The release record then appears in the **Release Records: All** view.  
 
-## Create a Service Manager release record template
+## Create a release record template
 
 A release record template is used to create new release records. A release record template can include predefined release activities. When you use a template for new release records, new release records are created faster than when you create them from scratch.  
 
@@ -96,11 +96,11 @@ The template author creates a template for release records by completing the fol
 8.  As you add an activity, the activity form opens. Enter necessary information, and then click **OK** to save the activity.  
 9. When you have added all the activities you want, click **OK** to save the release record template and close it. The release record template then appears in **Templates** list.  
 
-## Combine Service Manager release records into parent-child groups
+## Combine release records into parent-child groups
 
 Releases are normally deployed to production environments at intervals you define. For example, you can package several releases into monthly batches. You can define each batch as a parent release, which consolidates and links other smaller project\-specific releases into a monthly package. This process can help you verify that all child releases are evaluated together.  
 
-### Promote a release record to a parent release record
+### Promote a release record
 
 The Release Manager can promote a release record to parent release record using the following procedure. A parent release record serves as a container for several releases.  
 
@@ -116,7 +116,7 @@ The following procedure is performed on a release record that is neither a paren
 6.  The **Child Items** tab appears in the form where you can add child release records.  
 7.  In the release record form, click **OK** to close it.  
 
-### Demote a parent release record to a child release record
+### Demote a parent release record
 
 The Release Manager can demote a parent release record using the following procedure. If a parent release record contains child release records, all the child release records that it contains are unlinked from the parent and are no longer child release records.  
 
@@ -133,7 +133,7 @@ The following procedure is performed on a parent release record that may or may 
 7.  The **Child Items** tab no longer appears in the form.  
 8.  In the release record form, click **OK** to close it.  
 
-### Link a child release record to the current release record
+### Link a child release record
 
 The Release Manager can link a child release record while editing a parent release record using the following procedure.  
 
@@ -146,7 +146,7 @@ The Release Manager can link a child release record while editing a parent relea
 5.  In the **Select objects** dialog box, select the release record that you want to link to a parent, and then click **Add**. Click **OK** to close the **Select objects** dialog box.  
 6.  In the parent release record form, click **OK** to close it.  
 
-### Unlink the current release record from a parent release record
+### Unlink the current release record
 
 The Release Manager can unlink a child release record using the following procedure.  
 
@@ -172,7 +172,7 @@ The Release Manager can unlink a child release record while editing a parent rel
 
 5.  In the parent release record form, click **OK** to close it.  
 
-## Define release package configuration items in Service Manager
+## Define release package configuration items
 
 Release packages normally contain a build and an environment that the release is tested with. The topics in this section describe how to build the configuration item parts that are contained in a release package and how they are added to the release package.  
 

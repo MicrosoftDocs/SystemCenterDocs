@@ -21,7 +21,7 @@ ms.assetid: ab0ec9ba-ba35-4a29-b933-472dfd18276a
 
 Use the following procedure to register the newly installed data warehouse server with the lab Service Manager environment.  
 
-### To register a data warehouse  
+## Register a data warehouse  
 
 1.  Log on to the computer that hosts the Service Manager console. Use an account that is a member of the Service Manager and data warehouse management administrators group.  
 
@@ -50,7 +50,7 @@ Use the following procedure to register the newly installed data warehouse serve
 
  You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](http://go.microsoft.com/fwlink/p/?LinkId=203096).  
 
-### To validate the data warehouse registration process  
+## Validate the registration 
 
 1.  On the computer hosting the data warehouse management server, start Windows PowerShell with administrative credentials.  
 

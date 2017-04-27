@@ -21,7 +21,7 @@ ms.assetid: ee5b265f-1ffa-416d-a038-db9d06efc942
 
 This topic contains information to be aware of when you are combining Operations Manager and Service Manager.  
 
-## Management group names must be unique  
+## Management group names
 
 When you deploy both a Service Manager and data warehouse management server, you are asked to provide a management group name. You are also asked to provide a management group name when you deploy Operations Manager. The management group names that you use for the Service Manager management group, the data warehouse management group, and the Operations Manager management group must be unique.  
 
@@ -35,7 +35,7 @@ You must use the same supported language collations if you intend to import data
 > [!NOTE]  
 >  If you have databases with collations that do not match, then you cannot use the Operations Manager to Service Manager data warehouse connector which imports alerts from the OperationsManager database  in Operations Manager to the Service Manager DWStagingAndConfig database.  
 
-## Service Manager compatibility with other System Center components
+## Service Manager compatibility
 
 You can use any supported database collation of any System Center component with any supported collation of Service Manager.  
 
@@ -51,7 +51,7 @@ System Center 2016 - Service Manager includes a System Center 2016 - Operations 
 
 To validate that the Operations Manager Agent was installed, open **Control Panel** and verify that the Operations Manager Agent is present.
 
-### Operations Manager agents with the Self-Service portal and Service Manager console  
+### Operations Manager agents 
 
 If you want to monitor a server that will host Self\-Service Portal components or the Service Manager console that does not already host other Service Manager roles, then you should deploy the Operations Manager agent to the server before you install the Self\-Service portal or the Service Manager console. After you've installed either, you should give special consideration to removing the portal or Self Service console. If an Operations Manager agent is installed on the server that hosts the portal or console and you remove the either, then the Operations Manager agent is also removed.  
 
