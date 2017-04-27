@@ -1,5 +1,5 @@
 ---
-description:  
+description: Describes how to upgrade your existing Service Management Automation.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren

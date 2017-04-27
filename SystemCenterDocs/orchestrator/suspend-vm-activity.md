@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 867cfa59-95c4-403c-a5a8-280ec43dc18b
 author: cfreemanwa
 ms.author: cfreeman
@@ -25,18 +25,18 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Suspend VM Activity Required Properties
+## Suspend VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Enter standby mode | Indicates that the guest operating system will be put in standby mode. If standby mode is not supported by the guest operating system, this option will be ignored. | Boolean   | Yes   |
 | VM Path   | The path to the virtual machine to be suspended   | String   | Yes   |
 
-### Suspend VM Activity Optional Properties
+## Suspend VM Activity Optional Properties
 
 No optional properties are provided for this activity.
 
-### Suspend VM Activity Published Data
+## Suspend VM Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -47,7 +47,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Suspend VM activity.
 
-#### To configure the Suspend VM Activity
+### To configure the Suspend VM Activity
 
 1.  From the **Activities** pane, drag a **Suspend VM** activity to the active runbook.
 

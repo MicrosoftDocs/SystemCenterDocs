@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides an overview of how you can use different output stream in your runbooks.
 manager:  cfreeman
 ms.topic:  article
 author:  bwren

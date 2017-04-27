@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 69fc38af-c6bf-43bd-85c6-06875a321561
 author: cfreemanwa
 ms.author: cfreeman
@@ -25,7 +25,7 @@ The following configuration instructions apply to all runbook activities that ar
 
 Each activity contains a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
-#### To view and configure the properties for an activity
+### To view and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
 
@@ -43,7 +43,7 @@ The **General** tab contains the **Name** and **Description** properties for the
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property on the **Properties** or **Filters** tab. The **Configuration Name** property is used to specify the connection to Windows Azure.
 
-#### To configure the Configuration Name property
+### To configure the Configuration Name property
 
 1.  Click the ellipsis **(...)** button next to the **Name** box.
 
@@ -88,7 +88,7 @@ A **Get** activity will produce a new set of data every time it runs. The **Flat
 
 Some activities are expected to take only a limited amount of time to complete. If they do not complete within an expected tine frame, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this time-out threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or fails to run
+### To be notified when the activity takes longer than a specified time to run or fails to run
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
@@ -99,7 +99,7 @@ Published data is the data produced as a result of the actions of an activity. T
 
 An activity can only subscribe to data from the activities that occur before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+### To use published data
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
 
@@ -243,7 +243,7 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 ## See Also
 
 
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

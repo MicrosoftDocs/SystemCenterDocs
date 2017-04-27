@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides an overview of how you can call one or more child runbooks.
 manager:  cfreeman
 ms.topic:  article
 author:  bwren

@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 5866dc7c-6edb-42ab-ada0-720994e912c5
 author: cfreemanwa
 ms.author: cfreeman
@@ -25,7 +25,7 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Set VM Networks Activity Required Properties
+## Set VM Networks Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -35,11 +35,11 @@ The activity publishes all of the data from the required and optional properties
 | Network Adapter 4 | The name of the network that the fourth network adapter is attached to. | String   | Yes   |
 | VM Path   | The path to the virtual machine.   | String   | Yes   |
 
-### Set VM Networks Activity Optional Properties
+## Set VM Networks Activity Optional Properties
 
 No optional properties are provided for this activity.
 
-### Set VM Networks Activity Published Data
+## Set VM Networks Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -53,7 +53,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Set VM Networks activity.
 
-#### To configure the Set VM Networks Activity
+### To configure the Set VM Networks Activity
 
 1.  From the **Activities** pane, drag a **Set VM Networks** activity to the active runbook.
 

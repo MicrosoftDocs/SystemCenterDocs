@@ -102,6 +102,6 @@ The following tables list the required properties, optional properties, and publ
 | Skip Revocation Check   | Indicates whether the connection does not validate the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
 
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)

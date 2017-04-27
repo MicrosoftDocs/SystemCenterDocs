@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: f16bf32e-0018-4d47-96c4-a90a79d1d37f
 author: cfreemanwa
 ms.author: cfreeman
@@ -25,19 +25,19 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Start VM Activity Required Properties
+## Start VM Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | VM Path | The path of the virtual machine to be started. | String   | Yes   |
 
-### Start VM Activity Optional Properties
+## Start VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Timeout (seconds) | The time allowed for the start operation to complete. | Integer   | No   |
 
-### Start VM Activity Published Data
+## Start VM Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -47,7 +47,7 @@ The activity publishes all of the data from the required and optional properties
 
 The following procedure describes the steps required to configure a Start VM activity.
 
-#### To configure the Start VM activity
+### To configure the Start VM activity
 
 1.  From the **Activities** pane, drag a **Start VM** activity to the active runbook.
 

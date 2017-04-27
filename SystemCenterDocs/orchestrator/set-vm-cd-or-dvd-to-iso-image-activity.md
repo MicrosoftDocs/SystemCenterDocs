@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: ec4ce381-6145-4af2-bfde-51f461e3d9b7
 author: cfreemanwa
 ms.author: cfreeman
@@ -25,7 +25,7 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Set VM CD/DVD to ISO Image Activity Required Properties
+## Set VM CD/DVD to ISO Image Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -33,11 +33,11 @@ The activity publishes all of the data from the required and optional properties
 | Relative File Path | The path to the ISO image relative to the host and datastore. | String   | No   |
 | VM Path   | The path to the virtual machine.   | String   | Yes   |
 
-### Set VM CD/DVD to ISO Image Activity Optional Properties
+## Set VM CD/DVD to ISO Image Activity Optional Properties
 
 No optional properties are provided for this activity.
 
-### Set VM CD/DVD to ISO Image Activity Published Data
+## Set VM CD/DVD to ISO Image Activity Published Data
 
 | Name   | Description   | Valid Values |
 |:---|:---|:---|
@@ -48,7 +48,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Set VM CD/DVD to ISO Image activity.
 
-#### To configure the Set VM CD/DVD to ISO Image Activity
+### To configure the Set VM CD/DVD to ISO Image Activity
 
 1.  From the **Activities** pane, drag a **Set VM CD/DVD to ISO Image** activity to the active runbook.
 

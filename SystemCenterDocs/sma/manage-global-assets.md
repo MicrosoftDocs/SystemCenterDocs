@@ -232,7 +232,7 @@ You can create and manage variables with the Windows PowerShell cmdlets in the f
 |[Set-SmaVariable](http://go.microsoft.com/fwlink/?LinkID=306477)|Creates a new variable or sets the value for an existing variable.|
 
 ### Runbook activities
-You can access variables in a runbook with the activiies in the following table.
+You can access variables in a runbook with the activities in the following table.
 
 |Activities|Description|
 |--------------|---------------|

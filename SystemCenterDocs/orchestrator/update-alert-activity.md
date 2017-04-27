@@ -25,26 +25,145 @@ The following tables list the required properties, optional properties, and publ
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Update Alerts Required Properties
+## Update Alerts Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Connection | The name of the Netcool/OMNIbus ObjectServer connection. | String   | Yes   |
 | Identifier | The name of the alert to update.   | String   | No   |
 
-### Update Alert Optional Properties
+## Update Alert Optional Properties
 
-This activity has the following optional properties:<br>Acknowledged<br>Agent<br>AlertGroup<br>AlertKey<br>BSM\_Identity<br>Class<br>Customer<br>EventId<br>ExpireTime<br>ExtendedAttr<br>FirstOccurrence<br>Flash<br>Grade<br>LastOccurrence<br>LocalNodeAlias<br>LocalPriObj<br>LocalRootObj<br>LocalSecObj<br>Location<br>Manager<br>NmosCauseType<br>NmosDomainName<br>NmosEntityId<br>NmosEventMap<br>NmosManagedStatus<br>NmosObjInst<br>NmosSerial<br>Node<br>NodeAlias<br>OldRow<br>OwnerGID<br>OwnerUID<br>PhysicalCard<br>PhysicalPort<br>PhysicalSlot<br>Poll<br>ProbeSubSecondId<br>ProcessReq<br>RemoteNodeAlias<br>RemotePriObj<br>RemoteRootObj<br>RemoteSecObj<br>ServerName<br>ServerSerial<br>Service<br>Severity<br>Summary<br>SuppressEscl<br>TaskList<br>Type<br>URL<br>X733CorrNotif<br>X733EventType<br>X733ProbableCause<br>X733SpecificProb
+This activity has the following optional properties:
+- Acknowledged
+- Agent
+- AlertGroup
+- AlertKey
+- BSM\_Identity
+- Class
+- Customer
+- EventId
+- ExpireTime
+- ExtendedAttr
+- FirstOccurrence
+- Flash
+- Grade
+- LastOccurrence
+- LocalNodeAlias
+- LocalPriObj
+- LocalRootObj
+- LocalSecObj
+- Location
+- Manager
+- NmosCauseType
+- NmosDomainName
+- NmosEntityId
+- NmosEventMap
+- NmosManagedStatus
+- NmosObjInst
+- NmosSerial
+- Node
+- NodeAlias
+- OldRow
+- OwnerGID
+- OwnerUID
+- PhysicalCard
+- PhysicalPort
+- PhysicalSlot
+- Poll
+- ProbeSubSecondId
+- ProcessReq
+- RemoteNodeAlias
+- RemotePriObj
+- RemoteRootObj
+- RemoteSecObj
+- ServerName
+- ServerSerial
+- Service
+- Severity
+- Summary
+- SuppressEscl
+- TaskList
+- Type
+- URL
+- X733CorrNotif
+- X733EventType
+- X733ProbableCause
+- X733SpecificProb
 
-### Update Alert Published Data
+## Update Alert Published Data
 
-This activity publishes the following alerts:<br>Acknowledged<br>Agent<br>AlertGroup<br>AlertKey<br>BSM\_Identity<br>Class<br>Customer<br>EventId<br>ExpireTime<br>ExtendedAttr<br>FirstOccurrence<br>FirstOccurrence Local Time<br>Flash<br>Grade<br>Identifier<br>InternalLast<br>InternalLast Local Time<br>LastOccurrence<br>LastOccurrence Local Time<br>LocalNodeAlias<br>LocalPriObj<br>LocalRootObj<br>LocalSecObj<br>Location<br>Manager<br>NmosCauseType<br>NmosDomainName<br>NmosEntityId<br>NmosEventMap<br>NmosManagedStatus<br>NmosObjInst<br>NmosSerial<br>Node<br>NodeAlias<br>OldRow<br>OwnerGID<br>OwnerUID<br>PhysicalCard<br>PhysicalPort<br>PhysicalSlot<br>Poll<br>ProbeSubSecondId<br>ProcessReq<br>RemoteNodeAlias<br>RemotePriObj<br>RemoteRootObj<br>RemoteSecObj<br>Serial<br>ServerName<br>ServerSerial<br>Service<br>Severity<br>StateChange<br>StateChange Local Time<br>Summary<br>SuppressEscl<br>Tally<br>TaskList<br>Type<br>URL<br>X733CorrNotif<br>x733EventType<br>x733ProbableCause<br>x733SpecificPro 
+This activity publishes the following alerts:
+- Acknowledged
+- Agent
+- AlertGroup
+- AlertKey
+- BSM\_Identity
+- Class
+- Customer
+- EventId
+- ExpireTime
+- ExtendedAttr
+- FirstOccurrence
+- FirstOccurrence Local Time
+- Flash
+- Grade
+- Identifier
+- InternalLast
+- InternalLast Local Time
+- LastOccurrence
+- LastOccurrence Local Time
+- LocalNodeAlias
+- LocalPriObj
+- LocalRootObj
+- LocalSecObj
+- Location
+- Manager
+- NmosCauseType
+- NmosDomainName
+- NmosEntityId
+- NmosEventMap
+- NmosManagedStatus
+- NmosObjInst
+- NmosSerial
+- Node
+- NodeAlias
+- OldRow
+- OwnerGID
+- OwnerUID
+- PhysicalCard
+- PhysicalPort
+- PhysicalSlot
+- Poll
+- ProbeSubSecondId
+- ProcessReq
+- RemoteNodeAlias
+- RemotePriObj
+- RemoteRootObj
+- RemoteSecObj
+- Serial
+- ServerName
+- ServerSerial
+- Service
+- Severity
+- StateChange
+- StateChange Local Time
+- Summary
+- SuppressEscl
+- Tally
+- TaskList
+- Type
+- URL
+- X733CorrNotif
+- x733EventType
+- x733ProbableCause
+- x733SpecificPro 
 
 ## Configuring the Update Alert Activity
 
 The following procedure describes the steps required to configure an Update Alert activity.
 
-#### To configure the Update Alert Activity
+### To configure the Update Alert Activity
 
 1.  From the **Activities** pane, drag an **Update Alert** activity to the active runbook.
 

@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides an overview of how you can change the Service Management Automation endpoint.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren

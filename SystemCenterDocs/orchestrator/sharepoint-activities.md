@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 998dfa81-2129-4879-b4cf-743b4e3ca609
 author: cfreemanwa
 ms.author: cfreeman
@@ -27,7 +27,7 @@ The procedures in this topic are performed on an activity that has been placed i
 
 Each activity has a set of required or optional properties that define the configuration of that activity. The configuration includes how the activity connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the Runbook Designer workspace.
 
-#### To view and configure the properties for an activity
+### To view and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
 
@@ -84,7 +84,7 @@ The activity produces a new set of data every time it runs. The **Flatten** feat
 
 Some activities are expected to finish in a limited amount of time. If they do not finish within that time, they might be stalled, or another issue might prevent them from finishing. You can define the number of seconds to wait to complete the action. After this period, a platform event is sent, and the issue is reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or when it fails to run
+### To be notified when the activity takes longer than a specified time to run or when it fails to run
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
@@ -96,7 +96,7 @@ Published Data is the data that is produced as a result of the actions of an act
 
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use Published Data to automatically populate the property values that are required by activities.
 
-#### To use Published Data
+### To use Published Data
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
 
