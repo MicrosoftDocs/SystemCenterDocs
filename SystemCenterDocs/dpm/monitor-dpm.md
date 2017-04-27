@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article describes the way that you can monitor DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
@@ -88,10 +88,10 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 
 #### Install the agent and obtain the Management Packs
 
-1.  For agent installation options read [Operations Manager Installation Methods](https://technet.microsoft.com/en-us/library/hh551142.aspx).
-    If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/en-us/download/details.aspx?id=40316) in the Download Center.
+1.  For agent installation options read [Operations Manager Installation Methods](https://technet.microsoft.com/library/hh551142.aspx).
+    If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) in the Download Center.
 
-2.  Download the packs from the [Download Center](https://www.microsoft.com/en-US/download/details.aspx?id=45525).
+2.  Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=45525).
     Note that at the time of release (February 2015) the version for all the packs is 4.2.1277.0
     By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
@@ -103,7 +103,7 @@ Remember to remove any previous versions of the Library or Discover Management P
 1.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
      Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**
 
-2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](https://technet.microsoft.com/en-us/library/hh212691.aspx).
+2.  Follow the instructions in the Import Management Packs wizard. You can get more information about running this wizard in [How to Import an Operations Manager Management Pack](https://technet.microsoft.com/library/hh212691.aspx).
 
 #### Set up Central Console
 You'll need to install the DPM Central Console on the Operations Manager server. This console is used to manage multiple DPM servers in Operations Manager.
@@ -128,4 +128,4 @@ You'll need to install the DPM Central Console on the Operations Manager server.
 
 #### Tweaking Management Pack settings
 
-After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/en-us/library/hh212818.aspx).
+After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. For instructions, see [How to enable or disable a rule or monitor](https://technet.microsoft.com/library/hh212818.aspx).

@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 5c8377f7-403b-4b0f-9e3e-a83f00670d43
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,22 +17,22 @@ robots: noindex
 ---
 # Repair VM
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Repair VM activity is used to run a retry, an undo, or a dismiss action on a virtual machine that is currently not functioning correctly or optimally.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Repair VM Required Properties
+## Repair VM required properties
 
 | Element | Description   |
 |:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine   |   
 | Action  | The repair action to perform. Valid values are: Retry, Undo, or Dismiss |   
 
-## Repair VM Published Data
+## Repair VM published data
 
-| Element   | Description   | 
+| Element   | Description   |
 |:---|:---|
 | Accessibility   | Public or Internal   |   
 | Action   | The repair action to perform. Valid values are: Retry, Undo, or Dismiss   |   

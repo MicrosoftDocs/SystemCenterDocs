@@ -1,6 +1,6 @@
 ---
 description: This article provides an overview of how DPM protects the various data types, the recovery process, and protection policies.
-manager:  cfreeman
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal
@@ -18,7 +18,7 @@ ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
 
 The method Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers Disk-Based protection processes, Tape-Based protection processes, recovery process, as well as the protection policy.
 
-## Disk-Based Protection process
+## Disk-based protection process
 
 To provide disk-based data protection, the DPM server creates and maintains a replica, or copy, of the data that is on protected servers. The replicas are stored in the storage pool which consists of a set of disks on the DPM server, or on a custom volume. The following illustration shows the basic relationship between a protected volume and its replica.
 
@@ -43,7 +43,7 @@ DPM stores a separate replica for each protection group member in the storage po
 >[!NOTE]
 > DPM does not protect data stored in USB drives.
 
-### The File Data Synchronization Process
+### The file data synchronization process
 
 In DPM, for a file volume or share on a server, the protection agent uses a volume filter and the change journal to determine which files have changed and then performs a checksum procedure for these files to synchronize only the changed blocks. During synchronization, these changes are transferred to the DPM server and then applied to the replica to synchronize the replica with the data source. The following figure illustrates the file synchronization process.
 
@@ -55,7 +55,7 @@ You can schedule a daily consistency check for protection groups or initiate a c
 
 At regular intervals that you can configure, DPM creates a recovery point for the protection group member. A recovery point is a version of the data from which data can be recovered.
 
-### The Application Data Synchronization Process
+### The application data synchronization process
 
 For application data, after the replica is created by DPM, changes to volume blocks that belong to application files are tracked by the volume filter.
 
@@ -81,7 +81,7 @@ As with the protection of file data, if a replica becomes inconsistent with its 
 
 You can schedule a daily consistency check for protection groups or initiate a consistency check manually.
 
-### The Difference between File Data and Application Data
+### The difference between file data and application data
 
 Data that exists on a file server and which needs to be protected as a flat file qualifies as file data, such as Microsoft Office files, text files, batch files, and so forth.
 
@@ -95,23 +95,25 @@ Each data source is presented in DPM Administrator Console according to the type
 
 - If you expand Microsoft Virtual Server, DPM displays the host database and virtual machines on that server and will protect any data source selected in that node as application data.
 
-## Tape-based Protection Process
+## Tape-based protection process
 
 When you use short-term disk-based protection and long-term tape-based protection, DPM can back up data from the replica volume to tape so that there is no impact on the protected computer. When you use tape-based protection only, DPM backs up the data directly from the protected computer to tape.
 
 DPM protects data on tape through a combination of full and incremental backups from either the protected data source (for short-term protection on tape or for long-term protection on tape when DPM does not protect the data on disk) or from the DPM replica (for long-term protection on tape when short-term protection is on disk).
 
-> [AZURE.NOTE] If a file was open when the replica was last synchronized, the backup of that file from the replica will be in a crash consistent state. A crash consistent state of the file will contain all data of the file that was persisted to disk at the time of last synchronization. This applies only to file system backups. Application backups will always be consistent with the application state.
+> [!NOTE]
+ If a file was open when the replica was last synchronized, the backup of that file from the replica will be in a crash consistent state. A crash consistent state of the file will contain all data of the file that was persisted to disk at the time of last synchronization. This applies only to file system backups. Application backups will always be consistent with the application state.
 
 For specific backup types and schedules, see Planning Protection Groups
 
-## Recovery Process
+## Recovery process
 
 The method of data protection, disk-based or tape-based, makes no difference to the recovery task. You select the recovery point of data that you want to recover, and DPM recovers the data to the protected computer.
 
 DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points is not met yet, protection jobs will fail.
 
->[AZURE.NOTE] To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
+>[!NOTE]
+To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
 
 As explained in The File Data Synchronization Process and The Application Data Synchronization Process, the process for creating recovery points differs between file data and application data. DPM creates recovery points for file data by taking a shadow copy of the replica on a schedule that you configure. For application data, each synchronization and express full backup creates a recovery point.
 
@@ -123,11 +125,11 @@ Administrators recover data from available recovery points by using the Recovery
 
 DPM gives administrators the ability to enable their end users to perform their own recoveries by leveraging the Previous Versions feature in Windows. If you do not want to provide this capability to your end users, you recover the data for desktop computers using the using the Recovery Wizard.
 
-## Protection Policy
+## Protection policy
 
 DPM configures the protection policy, or schedule of jobs, for each protection group based on the recovery goals that you specify for that protection group. Examples of recovery goals are as follows:
 
-- "Lose no moreo than 1 hour of production data"
+- "Lose no more than 1 hour of production data"
 
 - "Provide me with a retention range of 30 days"
 
@@ -143,13 +145,13 @@ The recovery point schedule establishes how many recovery points of this protect
 
 > [AZURE.NOTE] When you create a protection group, DPM identifies the type of data being protected and offers only the protection options available for the data.
 
-## Auto Discovery process
+## Auto discovery process
 
 Auto discovery is the daily process by which DPM automatically detects new or removed computers on the network. Once a day, at a time that you can schedule, DPM sends a small packet (less than 10 kilobytes) to the closest domain controller. The domain controller responds to the LDAP request with the computers in that domain, and DPM identifies new and removed computers. The network traffic created by the auto discovery process is minimal.
 
 Auto discovery does not discover new and removed computers in other domains. To install a protection agent on a computer in another domain, you must identify the computer by using its fully qualified domain name.
 
-## DPM Directory Structure
+## DPM directory structure
 
 When you begin protecting data with DPM, you will notice that the installation path of DPM contains three folders in the Volumes directory:
 

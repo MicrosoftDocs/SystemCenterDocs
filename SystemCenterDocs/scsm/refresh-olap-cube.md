@@ -23,7 +23,7 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 
  If necessary, you can also manually process an OLAP data cube outside of the processing job.  
 
-### To refresh OLAP data cube information using the Service Manager console  
+## Refresh using the Service Manager console  
 
 1.  In the Service Manager console, click **Data Warehouse**, expand it, and then click **Cubes**.  
 
@@ -31,11 +31,11 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 
 3.  Click **OK** to close the **Process Cube** dialog box.  
 
-### To validate that the OLAP data cube was refreshed in the Service Manager console  
+### Validate refresh
 
 -   Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
 
-### To manually refresh OLAP data cube information  
+## Manually refresh 
 
 -   Run the following script for the OLAP data cube of your choice.  
 

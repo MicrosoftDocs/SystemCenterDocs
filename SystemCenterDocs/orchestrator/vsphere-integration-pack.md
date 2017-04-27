@@ -38,7 +38,6 @@ See [Deploying the VMWare VSphere Integration Pack](vsphere-integration-pack.md)
 
 ## Known Issues
 
-
 You might see the following issues when using this VMware vSphere integration pack.
 
 -   The Set VM Networks activity supports VMs with a maximum of four network adapters. If you use this activity on a VM with more than four adapters, you will see an "Index was out of range" error.

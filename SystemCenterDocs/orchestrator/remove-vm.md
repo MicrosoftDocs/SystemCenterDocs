@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a530a448-c782-49d6-abba-7ba60c2fdfce
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,19 +17,19 @@ robots: noindex
 ---
 # Remove VM
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Remove VM activity is used to delete a VM that is no longer needed. The Remove VM functionality can only be used on a VM that is currently shut down.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Remove VM Required Properties
+## Remove VM required properties
 
 | Element | Description   |
 |:---|:---|
 | VM ID   | The unique identifier (GUID) of the virtual machine |   
 
-## Remove VM Published Data
+## Remove VM published data
 
 | Element   | Description   |
 |:---|:---|

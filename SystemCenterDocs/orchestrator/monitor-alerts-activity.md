@@ -1,5 +1,5 @@
 ---
-title: Monitor Alerts Activity
+title: Monitor Alerts activity
 description: The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria.
 ms.custom: na
 ms.date: 12/02/2016
@@ -8,16 +8,16 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 313a1a9f-f534-441b-be59-08ad98ff241f
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
 robots: noindex
 ---
-# Monitor Alerts Activity
+# Monitor Alerts activity
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria. You can use the Monitor Alerts activity to launch a diagnostic and corrective runbook that responds to critical alerts in your network.
 
@@ -25,7 +25,7 @@ The Monitor Alerts activity uses filters to determine which properties of an ale
 
 The following tables list the triggers, filters and published data for the Monitor Alerts activity. This activity publishes all of the data from the selected filters.
 
-### Monitor Alerts Triggers
+### Monitor Alerts triggers
 
 | Element   | Description   | Value Type |
 |:---|:---|:---|
@@ -33,17 +33,17 @@ The following tables list the triggers, filters and published data for the Monit
 | New Alerts   | The option to start the runbook when the activity detects a new alert.   | Boolean   |
 | Updated Alerts | The option to start the runbook when the activity detects an update to an existing alert. | Boolean   |
 
-### Monitor Alerts Filters
+### Monitor Alerts filters
 
 | Element | Description   | Value Type |
 |:---|:---|:---|
 | Filters | A list of all configured filters. To edit or remove a filter, select the item and click Edit or Remove, respectively. |   |
 
-### Monitor Alerts Published Data
+### Monitor Alerts published data
 
 This activity publishes the following alerts:<br>Acknowledged<br>Agent<br>AlertCount<br>AlertGroup<br>AlertKey<br>BSM\_Identity<br>Class<br>Customer<br>EventId<br>ExpireTime<br>ExtendedAttr<br>FirstOccurrence<br>FirstOccurrence Local Time<br>Flash<br>Grade<br>Identifier<br>InternalLast<br>InternalLast Local Time<br>LastOccurrence<br>LastOccurrence Local Time<br>LocalNodeAlias<br>LocalPriObj<br>LocalRootObj<br>LocalSecObj<br>Location<br>Manager<br>NmosCauseType<br>NmosDomainName<br>NmosEntityId<br>NmosEventMap<br>NmosManagedStatus<br>NmosObjInst<br>NmosSerial<br>Node<br>NodeAlias<br>OldRow<br>OwnerGID<br>OwnerUID<br>PhysicalCard<br>PhysicalPort<br>PhysicalSlot<br>Poll<br>ProbeSubSecondId<br>ProcessReq<br>RemoteNodeAlias<br>RemotePriObj<br>RemoteRootObj<br>RemoteSecObj<br>Serial<br>ServerName<br>ServerSerial<br>Service<br>Severity<br>StateChange<br>StateChange Local Time<br>Summary<br>SuppressEscl<br>Tally<br>TaskList<br>Type<br>URL<br>X733CorrNotif<br>x733EventType<br>x733ProbableCause<br>x733SpecificPro
 
-## Configuring the Monitor Alerts Activity
+## Configuring the Monitor Alerts activity
 
 The following procedure describes the steps required to configure a Monitor Alerts activity.
 

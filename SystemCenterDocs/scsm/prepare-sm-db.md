@@ -21,7 +21,7 @@ ms.assetid: 7d3b8b19-77f9-4a96-a117-8ffef08da01a
 
 Use the following procedure to prepare the Service Manager database in the lab environment. Perform this procedure on the computer that is hosting the Service Manager database that is being used by the secondary management server, the management server in your lab environment.  
 
-### To configure the database  
+## Configure the database  
 
 1.  On the computer hosting the Service Manager database for the secondary management server, click **Start**, click **All Programs**, click **Microsoft SQL Server 2016**, and then click **SQL Server Management Studio**.  
 
@@ -64,7 +64,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
     ALTER DATABASE ServiceManager SET MULTI_USER  
     ```  
 
-### To configure the service account  
+## Configure the service account  
 
 1.  In the **Object Explorer** pane, expand **Security**, and then expand **Logins**.  
 
@@ -107,7 +107,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
     6.  Click **Ok**  
 
-### To configure Service Manager tables  
+## Configure Service Manager tables  
 
 1.  In the **Object Explorer** pane, expand **Databases**, expand **ServiceManager**, and then expand **Tables**.  
 
@@ -149,7 +149,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
 18. Close **Microsoft SQL Server Management Studio**.  
 
-### To configure the lab Service Manager management server to use the lab database  
+## Configure the lab Service Manager management server 
 
 -   Using Registry Editor, expand the following path and update **DatabaseServerName** :  
 

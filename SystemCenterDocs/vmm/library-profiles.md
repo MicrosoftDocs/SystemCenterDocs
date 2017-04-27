@@ -4,10 +4,10 @@ title: Add profiles to the VMM library
 description: This article provides guidance for adding profiles to the library in the VMM compute fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -28,7 +28,7 @@ A VMM profile contains settings that are used when you create a new virtual mach
 **Guest operating system profile** | Defines operating system configuration settings that will be applied to a VM, including the type of operating system, the computer name, administrator password, domain name, product key, time zone, answer file, and RunOnce file. | Yes | No
 **Application profile** | Provides instructions for installing an application. VMM supports multiple mechanisms for application deployment. Two of these mechanisms are for specific application packaging technologies: data\-tier applications \(DAC\) and WebDeploy (MSDeploy). A third mechanism enables you to install any application by running a script. You can use scripts that are created for Windows Installer \(MSI\), Setup.exe installation programs, Windows PowerShell Desired State Configuration (DSC), Puppet software, and Chef software. | No | Yes
 **SQL Server profile** | Provides instructions for customizing an instance of Microsoft SQL Server for a SQL Server DAC when a virtual machine is deployed as part of a service.| No | Yes
-**Capability profile** | Defines limits and capabilities for a specific set of resources, for example settings for network adapters, processor ranges, and memory. Capability profiles are used for hardware profiles or in cloud deployment. For example, you could configure a private cloud and assign it a Hyper-V capability profile that requires all resources to the highly available. Obviously in this example you'll need to set up library resources such as hardware profiles to align with the capability. [Read more](http://social.technet.microsoft.com/wiki/contents/articles/4149.capability-profiles-in-scvmm-2012.aspx) | Yes | Yes
+**Capability profile** | Defines limits and capabilities for a specific set of resources, for example settings for network adapters, processor ranges, and memory. Capability profiles are used for hardware profiles or in cloud deployment. For example, you could configure a private cloud and assign it a Hyper-V capability profile that requires all resources to the highly available. Obviously in this example you'll need to set up library resources such as hardware profiles to align with the capability. [To learn more review,](http://social.technet.microsoft.com/wiki/contents/articles/4149.capability-profiles-in-scvmm-2012.aspx) | Yes | Yes
 **Physical computer profile** | Defines settings used to provision servers | No | No
 
 ## Create a hardware profile
@@ -39,7 +39,7 @@ A VMM profile contains settings that are used when you create a new virtual mach
 4. In **General** you can define how many virtual processors will be assigned to the VM. You can specify memory. startup and dynamic memory range. Startup specifies the memory that will be assigned to the VM during startup. After startup this memory can be reclaimed back from the VM in accordance with the minimum memory settings.
 5. In **Bus Configuration** you add and remove hardware that supports storage device.
 6. In **Network Adapters**, you specify the number of adapters the VM will have, whether they'll have a static IP address or an address allocated from a pool, the MAC address and port profile. The port profile can be used to control how bandwidth is used on the adapters.
-7. In **Advanced** you can specify high availability and performance settings. In **Availability** specify whether the VM should be highly available in deployed in a cluster. In **BIOS** select the order of virtual device and when **Num Lock** is enabled for password entry. In **CPU Priority** specify relative priority of CPU usage for the VM. If you set to High the VM will have more access to resources that those set to Low. In **Virtual NUMA** specify when the VM can use [virtual NUMA](vm-settings.md) In **Memory Weight** specify the relative priority for memory usage that the VM will have.
+7. In **Advanced** you can specify high availability and performance settings. In **Availability** specify whether the VM should be highly available in deployed in a cluster. In **BIOS** select the order of virtual device and when **Num Lock** is enabled for password entry. In **CPU Priority** specify relative priority of CPU usage for the VM. If you set to High the VM will have more access to resources that those set to Low. In **Virtual NUMA** specify when the VM can use [virtual NUMA](vm-settings.md#configure-virtual-numa) In **Memory Weight** specify the relative priority for memory usage that the VM will have.
 8. After you've finished creating the hardware profile, you can right-click it to configure additional properties. In **Dependencies** you see any dependencies for the profile. For example if a library-based file is required we'd see it here. In **Access** you can see the roles or users who have permissions to use this profile. In **Validation Errors** you can check for errors.
 9. After you've created the hardware profile, you can use it when you configure a virtual machine template, or create a virtual machine. You can select a complete hardware profile, or select it and then tweak settings for the individual VM or template.
 
@@ -94,7 +94,7 @@ VMM can are used to provision physical computers into Hyper-V hosts or into a sc
 
 1. In the VMM console click > **Library** > **Create** > **Physical Computer Profile**.
 2. In **New Physical Computer Profile** > **Profile Definition** type in a profile name and description.
-3. In **OS Image** select a virtual hard disk from the library share. It should be running Windows Server 2012 R2 or later. To create the hard disk you can create a VM, install the guest operating system, and then use Syspre with **/generalize** and **/oobe**. If the disk is dynamic VMM converts it to a fixed disk  during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
+3. In **OS Image** select a virtual hard disk from the library share. It should be running Windows Server 2012 R2 or later. To create the hard disk you can create a VM, install the guest operating system, and then use Sysprep with **/generalize** and **/oobe**. If the disk is dynamic VMM converts it to a fixed disk  during deployment. We recommend that you use a fixed disk type to help protect user data and increase performance.
 4. In **Hardware Configuration** set up network adapters, disks and partitions, and any drivers.
 5. In **Network Adapters** click **Connectivity Properties** to set up consistent device naming (CDN) for the adapter. Specify whether to allocate an IP address with DHCP or from a static pool. If it's a physical network adapter connected to a logical switch this option isn't available.
 6. In **Disk** specify the partitioning scheme for the first disk. Select Master Boot Record (MBR) for BIO. or GUID Partition Table (GPT) for EFI. Specify a volume label, what free disk space to use, and what to designate as the boot partition. VMM copies the .vhd or .vhdx file to the boot partition and automatically creates a system partition on the same disk.

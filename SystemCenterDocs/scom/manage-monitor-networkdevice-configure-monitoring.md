@@ -3,7 +3,7 @@ title: How to Configure Monitoring of Network Devices
 description: This article describes how to configure Operations Manager to sample specific performance metrics and alert for certain issues detected on network devices.   
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/26/2017
 ms.custom: na
 ms.prod: system-center-threshold

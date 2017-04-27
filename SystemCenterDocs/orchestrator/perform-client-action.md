@@ -18,7 +18,7 @@ robots: noindex
 
 # Perform Client Action activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Perform Client Action activity is used to initiate Configuration
 Manager client actions by communicating directly with the client. These

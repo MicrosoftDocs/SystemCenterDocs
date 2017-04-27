@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 29ca91cb-1d7f-43b1-a967-23e7cdf2918c
 author: cfreemanwa
 ms.author: cfreeman
@@ -64,8 +64,4 @@ The activity publishes all of the data from the required and optional properties
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

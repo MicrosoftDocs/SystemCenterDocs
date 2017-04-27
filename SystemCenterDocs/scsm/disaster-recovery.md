@@ -52,7 +52,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
-### Data Warehouse management server  
+## Data Warehouse management server  
  Only one recovery scenario is possible for the data warehouse management server: you must install a new data warehouse management server on a computer with the same computer name as the computer that failed. Installing a replacement data warehouse management server involves the following procedures:  
 
 1.  Start with a new computer that has the same computer name as the computer that failed.  
@@ -61,7 +61,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 3.  Install a data warehouse management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
-### Service Manager databases  
+## Service Manager databases  
  Recovery procedures are the same for both the Service Manager database and the data warehouse database. You use a computer with the same name, and then you restore the Microsoft SQL&nbsp;Server databases using the same instance as the original. Recovery of a Service Manager database and a data warehouse database involves the following procedures:  
 
 1.  Start with a new computer with the same computer name and with the same SQL&nbsp;Server instance as the computer that failed.  

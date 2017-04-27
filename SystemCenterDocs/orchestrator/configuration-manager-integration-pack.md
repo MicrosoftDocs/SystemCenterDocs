@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4d2feb46-3f4c-4ed6-adbf-50097f94ea61
 author: cfreemanwa
 ms.author: cfreeman
@@ -58,4 +58,3 @@ Connections provide a way for you to define the way that the Configuration Manag
 6.  Click **Test Connection**. When the message "Successfully connected" appears, click OK.
 
 7. Click OK to close the configuration dialog box, and then click Finish.
-

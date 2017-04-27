@@ -1,6 +1,6 @@
 ---
-description: Information to help you plan for, and prepare to deploy DPM 2016 in your environment.
-manager:  cfreemanwa
+description: Information to help you plan for and prepare to deploy DPM 2016 in your environment.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

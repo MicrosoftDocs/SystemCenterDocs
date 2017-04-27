@@ -1,6 +1,6 @@
 ---
 title: Overview of Orchestration Console
-desc: Provides a summary of the administrative console for Orchestrator and basic functionality procedures. 
+desc: Provides a summary of the administrative console for Orchestrator and basic functionality procedures.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -71,7 +71,7 @@ The **Events** workspace lets you view log events. By default, log events includ
 
 2.  In the **URL** box, type `http://computer name:port number` where computer name is the name of the server where the web service is installed, and port is the port number selected during configuration of the web service. By default, the port is 82.  
 
-3.  Click **Finish**. 
+3.  Click **Finish**.
 
 ## Starting and stopping runbooks  
 In addition to viewing the current status of a runbook, you can also start and stop a runbook from the Orchestration console. When you start a runbook, a job is created and waits for an available runbook server to process the runbook. If the first action in a runbook is a monitor, the job runs continuously, potentially producing multiple instances of a runbook, until the runbook or job is stopped. When a runbook server is available, the job provides an instance of the runbook to the runbook server to process. A running runbook has at least one job and one or more instances associated with it.  
@@ -131,7 +131,7 @@ A job is a request for a runbook to run. A job is created only when you request 
 You cannot start a job; you can only start a runbook.  
 
 When you view an instance, you can choose to stop the associated job. Stopping the job stops the instance, the job, any other associated instances, and the runbook.  
-  
+
 ## Next steps
 
 - To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)

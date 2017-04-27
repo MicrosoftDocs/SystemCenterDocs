@@ -7,7 +7,7 @@ ms.suite: na
 ms.technology:
   - orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
 author: cfreemanwa
 ms.author: cfreeman
@@ -58,7 +58,7 @@ The settings on the Security Credentials tab let you specify the account that ru
 > If you use the Invoke Runbook activity and you modify Security Credentials, the account you use must be a member of the Orchestrator System group to run successfully.  
 
 > [!CAUTION]  
-> If permissions on the Orchestrator installation path are changed and the activity's Security Credentials has a custom user account that does not include **Read\/Execute** permissions to **ExecutionData.dll** on the runbook server, the activity will fail.  
+> If permissions on the Orchestrator installation path are changed and the activity's Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the runbook server, the activity will fail.  
 
 |Option|Behavior|  
 |----------|------------|  

@@ -21,7 +21,7 @@ ms.assetid: bd84d763-c42d-4e53-9803-4786ef182ec6
 
 If you upgrade SQL Server 2012 to SQL 2016 after Service Manager 2016 installation, you must manually copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file in order for SQL Server Reporting Services \(SSRS\) to function properly.  
 
-### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
+## Copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
 
 1.  On the computer that is hosting SSRS, open an instance of Windows Explorer.  
 

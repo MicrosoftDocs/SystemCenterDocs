@@ -1,6 +1,6 @@
 ---
 description: This article explains the supported deployment options for DPM 2016.
-manager:  cfreeman
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal
@@ -30,7 +30,7 @@ This topic summarizes some of the common support information you might need when
 
 -   As an on-premises virtual machine - You can deploy DPM as a Hyper-V virtual machine as a single server or virtual machine cluster. You install DPM in the same way as a physical installation. For detailed information, see the row, [DPM installed as Hyper-V VM](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
--   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequites table.
+-   As an Azure virtual machine - From DPM 2012 R2 Update 3 onwards you can install DPM as an Azure virtual machine. There are a number of restrictions in this deployment. For detailed information, see the row [DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites) in the Setup prerequisites table.
 
 -   As a Windows virtual machine in VMWare - From DPM 2012 R2 Update 5 onwards you can install DPM on a Windows virtual machine in a VMWare environment. In this configuration DPM can protect Microsoft workloads that are all running as Windows virtual machines in VMWare.
 
@@ -58,7 +58,7 @@ This topic summarizes some of the common support information you might need when
 ### Underscore not supported in SQL Server name
 **Issue**: If you specify a remote SQL Server that has an underscore in the name during DPM installation, the installation might fail.
 
-**Workaround**: Specify a SQL Server name that doesn't include the underscore (_) character.
+**Workaround**: Specify a SQL Server name that doesn't include the underscore `_` character.
 
 ### NTFS compression isn't supported on DPM volumes
 **Issue**: NTFS not supported.

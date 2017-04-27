@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: f7816e0c-c185-4f76-967d-5b501fe39f58
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # List Folders or Files
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The List Folders/Files activity is used in a runbook to list the folders and files in the specified folder path.
 
@@ -25,7 +25,7 @@ This activity publishes all of the data from the required and optional propertie
 
 The following tables list the required and optional properties and published data for this activity.
 
-## List Folders/Files Required Properties
+## List Folders/Files required properties
 
 | **Element**  | **Description**   | **Valid Values**   |
 |:---|:---|:---|
@@ -33,7 +33,7 @@ The following tables list the required and optional properties and published dat
 | Recursive   | Determines if all contents of all nested children are returned. | True<br>False   |
 | Filter Scope | Determines what items the list activity will return.   | All<br>File<br>Folder |
 
-## List Folders/Files Optional Properties
+## List Folders/Files optional properties
 
 | **Element**   | **Description**   | **Valid Values** |
 |:---|:---|:---|
@@ -42,7 +42,7 @@ The following tables list the required and optional properties and published dat
 | File Size (Max) | File size maximum filter. Must be used with File Size (Min).   | Integer   |
 | File Size (Min) | File size minimum filter. Must be used with File Size (Max).   | Integer   |
 
-## List Folders/Files Filters
+## List Folders/Files filters
 
 | **Element**   | **Description**   | **Filters**   |
 |:---|:---|:---|
@@ -61,12 +61,12 @@ The following tables list the required and optional properties and published dat
 | System Attribute   | The system attribute of the folder or file.   | Equals   |
 | Temporary Attribute   | The temporary attribute of the folder or file.   | Equals   |
 
-## List Folders/Files Published Data
+## List Folders/Files published data
 
 | **Element**   | **Description**   | **Valid Values**   |
 |:---|:---|:---|
 | Attributes   | File attributes for each item returned.   | String   |
-| Has Attributes   | Has Attibutes for each item returned. Determines if the item has attributes that can be filtered. | Boolean   |
+| Has Attributes   | Has Attributes for each item returned. Determines if the item has attributes that can be filtered. | Boolean   |
 | Count   | Number of folders or files returned   | Integer   |
 | Creation Date Time   | Creation date and time of item.   | Date Time   |
 | Date/Time (Max)   | Last write date maximum filter.   | Date Time   |
@@ -93,8 +93,3 @@ The following tables list the required and optional properties and published dat
 | Timeout   | The time to wait before an FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

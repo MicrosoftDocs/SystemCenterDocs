@@ -1,6 +1,6 @@
 ---
-description:  
-manager:  cfreemanwa
+description: This article helps you identify data sources you want to protect with DPM.
+manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold

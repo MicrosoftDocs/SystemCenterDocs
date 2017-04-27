@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides an overview of how you can work with integration modules.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren

@@ -4,10 +4,10 @@ title: Monitor VMM
 description: This article describes how to monitor VMM with VMM jobs, and System Center Operations Manager
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 

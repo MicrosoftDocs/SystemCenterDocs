@@ -21,7 +21,6 @@ ms.assetid: b897706a-4fdc-4e17-8a89-284554380202
 
 You can use the following procedure to view the details of a service request in the Service Manager console in System Center 2016 - Service Manager.  
 
-### To view service request details  
 
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
 

@@ -21,7 +21,7 @@ ms.assetid: 0b055821-641a-4f09-96d9-14b1f84a950d
 
 Use the following procedure to enable the Service Manager connectors in the production environment.  
 
-### To enable a connector  
+## Enable a connector  
 
 1.  In the Service Manager console, click **Administration**.  
 

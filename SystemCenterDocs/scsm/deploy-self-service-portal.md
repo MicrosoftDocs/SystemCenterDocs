@@ -21,7 +21,7 @@ ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 
 The Self-Service portal provides web-based access to the features of System Center 2016 - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
-### Supported operating systems  
+## Supported operating systems  
  - Windows Server 2016
 
  - Windows Server 2012 R2

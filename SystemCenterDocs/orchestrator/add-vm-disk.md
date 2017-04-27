@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: c191f3ce-e580-41cd-8ae6-ef853ebf2b5c
 author: cfreemanwa
 ms.author: cfreeman
@@ -29,10 +29,10 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | Disk has OS?   | Specifies whether the disk contains an operation system.   | True, False   |
 | Label   | Specifies the description of the disk.   | String   |
-| Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the disk is located. | String   |
+| Media Link   | Specifies the location of the blob in the Azure blob store where the media for the disk is located. | String   |
 | Name   | Specifies a name for the disk.   | String   |
-| OS Type   | The pperting system type for the disk.   | Windows, Linux   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.  | True, False   |
+| OS Type   | The operating system type for the disk.   | Windows, Linux   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity.  | True, False   |
 
 ## Add VM Disk Optional Properties
 
@@ -44,16 +44,12 @@ There are no optional properties for this runbook activity.
 |:---|:---|:---|
 | Disk has OS?   | Specifies whether the disk contains an operation system.   | Boolean   |
 | Label   | Specifies the description of the disk.   | String   |
-| Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the disk is located. | String   |
+| Media Link   | Specifies the location of the blob in the Azure blob store where the media for the disk is located. | String   |
 | Name   | Specifies a name for the disk.   | String   |
 | OS Type   | The operating system type for the disk.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.  | Boolean   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity.  | Boolean   |
+| Request ID   | The unique identifier of the request to Azure.   | String   |
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

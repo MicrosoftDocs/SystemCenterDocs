@@ -19,13 +19,13 @@ ms.assetid: dbb276a9-7df5-4cd9-ae75-9099aabcaa93
 
 >Applies To: System Center 2016 - Service Manager
 
-When you deployed your System Center - Service Manager management server and database, an encryption key was created so that data between the Service Manager and data warehouse management servers and their associated databases could be encrypted. When you deployed the Self-Service Portal, an encryption key was created so that data between the Self-Service Portal and the Service Manager database could be encrypted.  
+When you deployed your System Center - Service Manager management server and database, an encryption key was created, so that data between the Service Manager and data warehouse management servers and their associated databases could be encrypted. When you deployed the Self-Service Portal, an encryption key was created so that data between the Self-Service Portal and the Service Manager database could be encrypted.  
 
 Your disaster recovery strategy depends on you backing up the encryption keys as soon as you complete the Service Manager installation. After you back up the encryption keys and store them in a safe location, you can recover from software or hardware failures on the Service Manager management servers, data warehouse management servers, and Self-Service Portal.  
 
 Use the Encryption Key Backup or Restore Wizard and the following procedures to back up and restore encryption keys on the Service Manager management servers and Self-Service Portal. This wizard is located on the Service Manager installation media in the Tools\\SecureStorageBackup folder.  
 
-### To back up the encryption key  
+## Back up the encryption key  
 
 1.  Log on to the computer that hosts the Service Manager management server, data warehouse management server, or Self-Service Portal by using an account that is a member of the Administrators group.  
 
@@ -46,7 +46,7 @@ Use the Encryption Key Backup or Restore Wizard and the following procedures to 
 
 8.  After you receive the message "Secure Storage Backup Complete," click **Finish**.  
 
-### To restore the encryption key  
+## Restore the encryption key  
 
 1.  Log on to the computer that hosts the Service Manager management server, data warehouse management server, or Self-Service Portal by using an account that is a member of the Administrators group.  
 

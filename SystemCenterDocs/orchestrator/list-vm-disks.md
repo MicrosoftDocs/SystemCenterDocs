@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 43d6d155-7f84-45eb-aa36-9a7ed4a3b95a
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,21 +17,21 @@ robots: noindex
 ---
 # List VM Disks
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The **List VM Disks** activity retrieves a list of the disks in your image repository. It is part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## List VM Disks Required Properties
+## List VM Disks required properties
 
 There are no required properties for this runbook activity.
 
-## List VM Disks Optional Properties
+## List VM Disks optional properties
 
 There are no optional properties for this runbook activity.
 
-## List VM Disks Published Data
+## List VM Disks published data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -49,11 +49,3 @@ There are no optional properties for this runbook activity.
 | OS Type   | The operating system type of the disk.   | String   |
 | Raw XML Body   | The raw XML output returned by Windows Azure for this operation.   | String   |
 | Source Image Name   | The name of the OS Image from which the disk was created.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

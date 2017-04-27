@@ -1,5 +1,5 @@
 ---
-description:  
+description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
 manager:  cfreeman
 ms.topic:  article
 author:  bwren

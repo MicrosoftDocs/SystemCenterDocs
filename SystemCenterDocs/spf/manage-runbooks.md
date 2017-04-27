@@ -11,8 +11,6 @@ ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
 ---
 
-ms.assetid: 38695129-ee8d-49ee-a357-b00a7659ba31
-
 # Automate and invoke runbooks from SPF
 >Apples To: System Center 2016
 

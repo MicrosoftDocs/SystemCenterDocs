@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 8297cf61-e82a-49e9-8052-4aca023b46d2
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Scale Tier Out in System Center 2016
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The Scale Tier Out activity is used in a runbook to add one virtual machine instance to a specified service tier.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Scale Tier Out Required Properties
+## Scale Tier Out required properties
 
 | **Element**  |  **Valid Values**   |
 |:---|:---|
@@ -32,7 +32,7 @@ The activity publishes all of the data from the required and optional properties
 | Start Action |  Default: Don't turn on the virtual machine |
 | Stop Action  | Default: Save State   |
 
-## Scale Tier Out Optional Properties
+## Scale Tier Out optional properties
 
 | **Element**   | **Description**   |
 |:---|:---|
@@ -40,13 +40,6 @@ The activity publishes all of the data from the required and optional properties
 | Computer Name   | The actual computer name of the virtual machine.   |   
 | Description   |   |   
 
-## Scale Tier Out Published Data
+## Scale Tier Out published data
 
 This activity has no published data.
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)

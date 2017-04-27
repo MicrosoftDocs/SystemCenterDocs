@@ -1,5 +1,5 @@
 ---
-description:  
+description: Describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren
@@ -25,7 +25,7 @@ The following recommended configurations should be used.
 |Virtual machines|Three, each with a runbook worker and web service installed<br /><br />Load-balanced incoming traffic<br /><br />Minimum of two cores and 4 GB of RAM for each virtual machine<br /><br />60 GB of available disk space|
 |SQL Server|One computer with 8 GB of RAM and eight cores **Note:** One month of data under heavy load (12 jobs per minute for a month) results in 20 GB of disk space usage. Job purging should be used to keep this usage from growing beyond this amount.|
 
-### Software requirements
+## Software requirements
 The following software must be installed for each role.
 
 |Role|Prerequisites|
@@ -36,7 +36,7 @@ The following software must be installed for each role.
 
 Before installing the web service, use the following procedure to install .NET Framework 4.5 and HTTP Activation on Windows Server 2012 R2:
 
-##### To install .NET Framework 4.5 and HTTP Activation
+#### To install .NET Framework 4.5 and HTTP Activation
 
 1.  On the Windows **Start** screen, click the **Server Manager** tile.
 
@@ -54,12 +54,12 @@ Before installing the web service, use the following procedure to install .NET F
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 
-### Running Service Management Automation on Windows Azure virtual machines
+## Running Service Management Automation on Windows Azure virtual machines
 Service Management Automation runs on Windows Azure just as it does on physical computer systems.
 
 Service Management Automation was tested by Microsoft by installing and using it in a Windows Azure virtual machine. The testing concluded that Service Management Automation was fully functional and operated exactly the same as it does on physical hardware. Stability and performance benchmarks inside a Windows Azure virtual machine were at a level where no special considerations were needed.
 
-### Security Requirements
+## Security Requirements
 The following ports must be opened for each role.
 
 |Role|Requirement|

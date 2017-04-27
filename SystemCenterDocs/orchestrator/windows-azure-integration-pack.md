@@ -42,7 +42,7 @@ After you download the integration pack file, you must register it with the Orch
 
 A connection establishes a reusable link between Orchestrator and Windows Azure. You can specify as many connections as you require to create links to multiple Windows Azure subscriptions.
 
-#### To set up a Windows Azure connection
+### To set up a Windows Azure connection
 
 1.  In the Runbook Designer, click **Options**, and then click **Windows Azure**. The **Windows Azure** dialog box appears.
 

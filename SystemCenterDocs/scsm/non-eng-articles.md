@@ -34,7 +34,7 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
  For this procedure, it is assumed that the file rtffil.dll is located in the C:\\Windows\\System32 folder.  
 
-### To edit the registry  
+## Edit the registry  
 
 1.  On the computer hosting the Service Manager database, log on to the computer as a user with administrative credentials.  
 

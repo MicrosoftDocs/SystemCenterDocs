@@ -4,7 +4,7 @@ title: Using Classes and Groups for Overrides
 description: This article describes how to apply overrides to classes and groups in Operations Manager 2016.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
 ms.prod: system-center-threshold
@@ -104,9 +104,9 @@ If you create an override that applies to COMPUTER1 and sets the threshold to 60
   
 ## Next steps
 
-- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md)
+- To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
 
-- See [How to Import, Export, and Remove an Operations Manager Management Pack](~/scom/manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
+- See [How to Import, Export, and Remove an Operations Manager Management Pack](manage-mp-import-remove-delete.md) to perform common administrative tasks with management packs in your management group.
 
 - Review [How to Enable Recovery and Diagnostic Tasks](how-to-enable-recovery-and-diagnostic-tasks.md) to understand how they can help investigate and auto-remediate issues identified by monitors.  
   

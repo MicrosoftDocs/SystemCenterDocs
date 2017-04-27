@@ -4,10 +4,10 @@ title: Manage the VMM library
 description: This article describes management tasks for the VMM library
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  04/26/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -31,7 +31,7 @@ By default VMM refreshes library shares once every hour.
 	- VMM indexes but doesn't display these file types:
 		- Files associated with stored VMs (VM configuration file, attached virtual hard disks, saved state files, imported snapshots, checkpoints).
 		- Files associated with VM templates.
-		- Configuration file types: Hyper-V (.exp -export, .vsv - saved state, .bin); Virtual server (.vmd, .vsv); VMware .vmtx, ,.vmx)
+		- Configuration file types: Hyper-V (.exp -export, .vsv - saved state, .bin); Virtual server (.vmd, .vsv); VMware (.vmtx, ,.vmx)
 
 
 ## Transfer files
@@ -47,7 +47,7 @@ In addition you can allow unencrypted file transfers to an from a library server
 
 You can remove a file-based resource either temporarily or permanently from the library.
 
-- To disable resources click **Library** > **Library servers** > and select the library share. Select the resource and click **Actions** > **Disable**. click **Enable** to reenable.
+- To disable resources click **Library** > **Library servers** > and select the library share. Select the resource and click **Actions** > **Disable**. click **Enable** to re-enable.
 - To remove files we recommend you use VMM rather than simply deleting the file resources. When you remove the file in the library any resources that use the file are updated automatically. To remove a file click **Library** > **Library servers** > and select the library share. Select the resource and click **Actions** > **Remove**. Select **Yes** to confirm.
 
 
@@ -74,4 +74,4 @@ To remove orphaned resources, you'll need to modify the templates that reference
 1. Click **Library** > **Orphaned Resources**.
 2. You won't be able to delete an orphaned resource until templates that reference it are updated to valid references. To view the templates right-click the orphaned resource > **Properties**. To update the template click it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
 3. Add a new resource that's valid.
-4. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependences right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
+4. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependencies right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.

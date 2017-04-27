@@ -23,7 +23,7 @@ Service Manager reports enable you to collect and view data and trends from acro
 
  Standard reports are viewable for all Service Manager console users in the Reporting workspace. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SQL&nbsp;Server Reporting Services \(SSRS\) server, they can also view reports in work item task lists. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
 
-## Data warehouse and analytics overview
+## Overview
 
 The data warehouse in Service Manager provides three primary functions:  
 
@@ -72,7 +72,7 @@ The data warehouse in Service Manager provides three primary functions:
 
  If you are not familiar with developing management packs, writing custom queries against the data warehouse can be intimidating. However, the schema diagrams are very useful to help get you started. You can download the Visio diagrams, SystemCenterCommonModel\-SCSM2010.vsd and DWDataMart.vsd, as part of the [Service Manager Job aids](http://go.microsoft.com/fwlink/p/?LinkID=186291) \(SM\_job\_aids.zip\). The different types of tables in the data warehouse are color coded in the schema diagram.  
 
-### Service Manager data warehouse databases  
+## Data warehouse databases  
  The data warehouse in Service Manager comprises the following databases:  
 
 -   DWStagingAndConfig-where data is extracted from source systems, such as Service Manager and Operations Manager, is initially stored.  
@@ -86,7 +86,10 @@ The data warehouse in Service Manager provides three primary functions:
 
 Service Manager includes a number of predefined OLAP cubes that users can view in Microsoft Excel and also as SharePoint dashboards. Authors can create their own OLAP cubes for customized data sources and include the cubes in custom management packs.  
 
-### Service Manager Software Development Kit  
+## Software Development Kit (SDK)
  The Service Manager SDK contains information that you might need when you are authoring with Service Manager to extend the data warehouse so that it can manage your own customized data. Before you can utilize the capabilities of the data warehouse, such as OLAP cube processing for customized data, you must first create a custom management pack and import it. Your custom management pack bundle will contain a definition for your data model and, possibly, OLAP cube definitions.  
 
- You can learn more about using the SDK to create your own custom management pack for Service Manager in the [Authoring Guide for System Center 2016 - Service Manager](author-with-sm.md).
+ ## Next steps
+
+ - You can learn more about using the SDK to create your own custom management pack for Service Manager in the [Authoring Guide for System Center 2016 - Service Manager](author-with-sm.md).
+ - [Learn about](standard-reports.md) using standard reports.

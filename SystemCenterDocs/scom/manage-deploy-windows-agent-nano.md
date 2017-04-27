@@ -4,7 +4,7 @@ title: Install Agent on Nano Server
 description: This article describes how to install the Operations Manager agent on Nano Server. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 03/01/2017
 ms.custom: na
 ms.prod: system-center-threshold
@@ -34,11 +34,11 @@ You will need to follow the steps listed below to start monitoring a Nano Server
 
 1.  [Deploy the Operations Manager agent from the Operations console using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md) or [Manually install the Operations Manager agent on a Nano server](#manually-install-the-operations-manager-agent-on-a-nano-server).
 
-3.  [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
+2.  [Validate that the Operations Manager agent has been successfully installed](#validate-that-the-operations-manager-agent-has-been-successfully-installed)
 
-4.  [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md) if you installed the agent manually on Nano Server.
+3.  [Process Manual Agent Installations](manage-deploy-windows-agent-manually.md) if you installed the agent manually on Nano Server.
 
-5.  [Verify that you are monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
+4.  [Verify that you are monitoring your Nano Server](#verify-that-you-are-monitoring-your-nano-server).
 
 There are several limitations in this release of the Nano Server agent. The following operations are not supported in this release:
 
@@ -98,7 +98,7 @@ Use the following procedure to install the agent with a PowerShell script.
     > [!NOTE]
     > If the installation is successful you will see "Installation successful" in the Installlog.txt file which the installer will add to the NanoAgent\NanoServer directory on the Nano Server. You should not see any errors in that file.
 
-8.  Run the following command on the Nano Server:
+5.  Run the following command on the Nano Server:
 
     ```
     Net Start HealthService

@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 817a1bdc-c48e-4c9d-82a1-f864cc6293b6
 author: cfreemanwa
 ms.author: cfreeman
@@ -17,13 +17,13 @@ robots: noindex
 ---
 # Reboot Role Instance
 
-Applies To: System Center 2016 - Orchestrator
+> Applies To: System Center 2016 - Orchestrator
 
 The **Reboot Role Instance** activity requests a reboot of a role instance that is running in a deployment. It is part of the **Azure Deployments** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
-## Reboot Role Instance Required Properties
+## Reboot Role Instance required properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -32,11 +32,11 @@ The activity publishes all of the data from the required and optional properties
 | Instance Name   | The name of the role instance.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-## Reboot Role Instance Optional Properties
+## Reboot Role Instance optional properties
 
 There are no optional properties for this runbook activity.
 
-## Reboot Role Instance Published Data
+## Reboot Role Instance published data
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
@@ -61,11 +61,3 @@ There are no optional properties for this runbook activity.
 | Label   | A friendly name for the cloud service.   | String   |
 | Instance Name   | The name of the role instance.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
