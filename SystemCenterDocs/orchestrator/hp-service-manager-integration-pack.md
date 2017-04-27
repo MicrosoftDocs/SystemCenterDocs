@@ -2,19 +2,19 @@
 title: HP Service Manager Integration Pack for System Center 2016 - Orchestrator
 description: The integration pack for HP Service Manager is an add-on for Orchestrator in System Center 2016 and System Center 2016 - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 6eb5a088-0b37-456c-bd38-8af868e5ae82
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # HP Service Manager Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
@@ -64,93 +64,53 @@ To avoid possible corruption, do not use alternate means to directly connect to 
 #### To set up a SQL Server ODBC connection
 
 1.  Open the **ODBC Data Source Administrator Utility (32-bit)**. To access this utility, click **Start**, **Run**, and then type **\\Windows\\SysWOW64\\odbcad32.exe** in the **Open** box. Click **OK**.
-
 2.  In the **ODBC Data Source Administrator**, click the **System DSN** tab.
-
 3.  Click **Add**.
-
 4.  Select the driver named **SQL Server Native Client 10.0** from the list of available drivers.
-
 5.  Click **Finish**.
-
 6.  Enter a new name and description for the data source.
-
 7.  Enter the HP Service Manager database server name or IP address in the **Server** box.
-
 8.  Click **Next**.
-
 9.  Select the appropriate authentication method for the database server and enter valid credentials.
-
 10. Click **Next**.
-
 11. Ensure the check box **Change the default database to:** is selected.
-
 12. In the drop-down list below the check box select the HP Service Manager database.
-
 13. Click **Next**.
-
 14. Click **Finish**.
-
 15. Click **Test Data Source** to confirm connectivity to the database.
-
 16. When the test completes, click **OK**.
-
 17. Click **OK**.
 
 #### Setting up an Oracle ODBC Connection
 
 1.  Configure an Oracle Net Service name using the Oracle Net Configuration Assistant. For more information on this step refer to the relevant Oracle product documentation.
-
 2.  Open the ODBC Data Source Administrator Utility (32-bit). To access this utility, click **Start**, then **Run**, and then type **\\Windows\\SysWOW64\\odbcad32.exe** in the **Open** box. Click **OK**.
-
 3.  In the ODBC Data Source Administrator, click the **System DSN** tab.
-
 4.  Click **Add**.
-
 5.  Select the Oracle ODBC driver installed with the Oracle client from the list of available drivers.
-
 6.  Click **Finish**.
-
 7.  Enter a new name and description for the data source.
-
 8.  Enter the TNS Service Name for the HP Service Manager database as configured in the Net Configuration Assistant.
-
 9.  Test the connection, supplying credentials if necessary.
-
 10. Select the appropriate authentication method for the database server and enter valid credentials.
-
 11. Click **OK**.
-
 12. Click **OK** to close the ODBC Data Source Administrator.
 
 #### To set up a HP Service Manager connection
 
 1.  In the Runbook Designer, click the **Options** menu, and select **HP Service Manager**. The HP Service Manager dialog box appears.
-
 2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Connection Configuration** dialog box will appear.
-
 3.  In the **Name** box, enter a name for the connection. This could be the name of the HP Service Manager server or a descriptive name to distinguish the type of connection.
-
 4.  In the **Server Address** box, type the name or IP address of the HP Service Manager computer. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN).
-
 5.  In the **Polling Interval** box, enter the how often, in minutes, you want to check the state of the HP Service Manager connection.
-
 6.  In the **ODBC DSN** box, type the name of the ODBC data source from one of the previous procedures.
-
 7.  Enter the database user name in the **DB Username** box.
-
 8.  Enter the database password in the **DB Password** box.
-
 9.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the HP Service Manager server.
-
 10. Click **Test Connection**. When the message "Connected Successfully" appears, click **OK**.
-
 11. In the connection list dialog, select the newly created connection by clicking the appropriate item in the list.
-
 12. Click the **Refresh Field Cache** button to retrieve and store the custom configuration from the HP Service Manager server. This operation may take a few minutes to complete and is essential to allow the integration pack to connect correctly to a new HP Service Manager server.
-
 13. Add additional connections to other HP Service Manager servers, if applicable.
-
 14. Click **OK** to close the configuration dialog box, and then click **Finish**.
 
 >[!TIP]
@@ -164,25 +124,15 @@ If an activity reports an error and indicates that a required field must be spec
 #### To expose a required field
 
 1.  Open the HP Service Manager client.
-
 2.  Connect to the desired HP Service Manager server.
-
 3.  In the System Navigator, navigate to **Tailoring Tools**, then **Web Services**, then **WSDL Configuration** and double click the **WSDL Configuration** option.
-
 4.  In the **External Access Definition** dialog click the **Search** button to list all available objects.
-
 5.  Select the required object from the object list.
-
 6.  Select the **Fields** tab.
-
 7.  Scroll to the bottom of the **Field List**.
-
 8.  Enter the database name of the field to be exposed in the **Field** column.
-
 9.  Enter the name which the web service will refer to this field in the **Caption** column.
-
 10. Ensure the data type is correct in the **Type** column.
-
 11. Click **Save** at the top of the page to save the message.
 
 ## Known Issues

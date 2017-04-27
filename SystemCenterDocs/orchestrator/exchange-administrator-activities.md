@@ -2,19 +2,19 @@
 title: Exchange Administrator Activities
 description: The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 5a15cd3e-3838-4e20-a092-07b2470d5717
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Exchange Administrator Activities
 
 Applies To: System Center 2016 - Orchestrator
@@ -27,25 +27,23 @@ Each procedure in this topic is performed on an activity that has been placed in
 
 Each activity is configured with a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
-#### To view and configure the properties for an activity
+### To view and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
-
 2.  View and configure the activity properties as needed.
-
 3.  To save your configuration entries, click **Finish**.
 
 In the activity properties dialog box, various tabs provide access to general and specific settings for the activity. The number of available tabs for object properties will vary according to the activity.
 
-### General tab
+#### General tab
 
 The **General** tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type and the **Description** is blank. You can modify these properties to provide a more specific name or to add a description as necessary.
 
-### Properties tab
+#### Properties tab
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property on the **Properties** tab. The **Configuration Name** property is used to specify the connection to the Exchange server.
 
-#### To configure the Configuration Name property
+### To configure the Configuration Name property
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
@@ -88,7 +86,7 @@ The **Get** activity will produce a new set of data every time it runs. The **Fl
 
 Some activities are expected to take only a limited amount of time to complete. If they do not complete within an expected timeframe, they may be stalled or there may be another issue preventing completion. You can define the number of seconds to wait for completion of the action. If the processing of the activity exceeds this timeout threshold, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or fails to run
+### To be notified when the activity takes longer than a specified time to run or fails to run
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
@@ -100,51 +98,32 @@ Published data is the data produced as a result of the actions of an activity. T
 
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+### To use published data
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
-
 2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
-
 3.  Click the published data element that you want to use, and then click **OK**.
 
 For a list of the data elements published by each activity, see the **Published Data** table in the specific activity topic. For information about the common published data items, see <span>Common Published Data</span>.
 
 ## Activities
---
 
 This integration pack adds the **Exchange Admin** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
 [Create Mailbox](create-mailbox.md)
-
 [Create Move Request](create-move-request.md)
-
 [Create Remote Mailbox (Hybrid)](create-remote-mailbox-hybrid.md)
-
 [Disable Mailbox](disable-mailbox.md)
-
 [Disable Remote Mailbox (Hybrid)](disable-remote-mailbox-hybrid.md)
-
 [Enable Mailbox](enable-mailbox.md)
-
 [Enable Remote Mailbox (Hybrid)](enable-remote-mailbox-hybrid.md)
-
 [Get Mailbox](get-mailbox.md)
-
 [Get Move Request](get-move-request.md)
-
 [Get Move Request Statistics](get-move-request-statistics.md)
-
 [Get Remote Mailbox (Hybrid)](get-remote-mailbox-hybrid.md)
-
 [Remove Mailbox](remove-mailbox.md)
-
 [Remove Remote Mailbox (Hybrid)](remove-remote-mailbox-hybrid.md)
-
 [Run Exchange PowerShell Command](run-exchange-powershell-command.md)
-
 [Update Mailbox](update-mailbox.md)
-
 [Update Move Request](update-move-request.md)
-
 [Update Remote Mailbox (Hybrid)](update-remote-mailbox-hybrid.md)

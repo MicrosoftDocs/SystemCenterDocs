@@ -2,19 +2,19 @@
 title: Exchange Users Activities
 description: The configuration instructions in this topic apply to all activities in the Exchange Users Integration Pack.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 624f4afd-f248-4e1c-a2c2-e747d2ed3fd4
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Exchange Users Activities
 
 Applies To: System Center 2016 - Orchestrator
@@ -27,23 +27,22 @@ The procedures in this topic are performed on any activity that has been placed 
 
 Each activity has a set of required or optional properties that define the configuration of that activity. The configuration defines how the activity performs its actions and how it connects to other activities as applicable. You can view or modify an activity's properties when the activity has been placed in the runbook window.
 
-#### To view and configure the properties for an activity
+### To view and configure the properties for an activity
 
 1.  Locate the activity in the runbook window and double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
-
 2.  To save your configuration entries, click **Finish**.
 
 In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties varies according to the activity type.
 
-### General Tab
+#### General Tab
 
 The **General** tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or to provide detailed descriptions of the actions of the activity.
 
-### Properties Tab
+#### Properties Tab
 
 The **Properties** tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Exchange server.
 
-#### To configure the Configuration Name property
+### To configure the Configuration Name property
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
@@ -83,10 +82,9 @@ The activity will produce a new set of data every time it runs. The **Flatten** 
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this specified time period, a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or fails to run
+### To be notified when the activity takes longer than a specified time to run or fails to run
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
-
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
 ## Published Data
@@ -95,15 +93,13 @@ Published data is the foundation of a working runbook. It is the data produced a
 
 An activity can subscribe only to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+### To use published data
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
-
 2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
-
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** table in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the **Published Data** table in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
 

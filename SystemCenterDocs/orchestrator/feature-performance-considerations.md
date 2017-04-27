@@ -4,15 +4,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 811115ff-34bf-4c10-9cac-709d72b669c9
 author: cfreemanwa
 ms.author: cfreeman
 ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
 
 # Feature Performance Considerations

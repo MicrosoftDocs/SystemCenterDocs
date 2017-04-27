@@ -2,19 +2,19 @@
 title: Exchange Users Integration Pack for Orchestrator in System Center 2016
 description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 2a7359ab-604e-4e05-89f3-09eb13a14c58
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Exchange users integration pack
 
 Applies To: System Center 2016 Orchestrator
@@ -50,23 +50,14 @@ The basic Exchange Configuration contains connection information that is used by
 ### To set up an Exchange configuration connection
 
 1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Exchange User**. The **Exchange User** dialog box appears.
-
 2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
-
 3.  In the **Name** box, enter a name for the connection. This can be the name of the computer running Exchange Server or a descriptive name to distinguish the type of connection.
-
 4.  In the **Type** box, select **Exchange Configuration**.
-
 5.  In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN). You may leave the **Exchange Server Address** box empty if you enable the **Use Autodiscover** option.
-
 6.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the Exchange server.
-
 7.  In the **Domain** box, type the name of the domain that will authorize access.
-
 8.  In the **Timeout** box, enter a timeout value or leave the default.
-
 9.  Click **OK**.
-
 10.  Add any additional connections if applicable, and then click **Finish**.
 
 The Exchange Item Type Configuration contains connection information and lets users specify an Exchange item type. The Exchange Item Configuration activity is used by activities that dynamically generate optional and required properties, filter and published data, as is the case with the Create Item and Get Item activities.
@@ -74,21 +65,12 @@ The Exchange Item Type Configuration contains connection information and lets us
 ### To set up an Exchange item type connection
 
 1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Exchange User**. The **Exchange User** dialog box appears.
-
 2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
-
 3.  In the **Name** box, enter a name for the connection. This can be the name of the Exchange server or a descriptive name to distinguish the type of connection.
-
 4.  In the Type box, select **Exchange Configuration (Item Activity)**.
-
 5.  In the **Exchange Server Address** box, type the name or IP address of the Exchange server. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN). You may leave the **Exchange Server Address** box empty if you enable the **Use Autodiscover** option.
-
 6.  In the **Username** and **Password** boxes, type the credentials that Orchestrator will use to connect to the Exchange server.
-
 7.  In the **Domain** box, type the name of the domain that will authorize access.
-
 8.  In the **Timeout** box, enter a timeout value or leave the default.
-
 9.  In the **Item Type** box, enter a valid Exchange Item Type.
-
 10.  Add any additional connections if applicable, and then click **Finish**.

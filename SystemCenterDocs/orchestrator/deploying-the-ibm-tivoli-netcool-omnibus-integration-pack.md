@@ -2,19 +2,19 @@
 title: Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
 description: The following sections provide information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center 2016 - Orchestrator.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: de7de32e-a645-4445-ba66-0236585e7517
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
@@ -36,13 +36,13 @@ For more information about installing and configuring System Center 2016 - Orche
 
 ## Downloading the Integration Pack
 
-You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223194).
+You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54103).
 
 ## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to a runbook server.
 
-#### To register the integration pack
+### To register the integration pack
 
 1.  Copy the Netcool/OMNIbus integration pack file to the management server. Confirm that the file is not set to **Read Only**. This can prevent unregistering the integration pack later.
 
@@ -60,7 +60,7 @@ After you download the integration pack file, you must register it with the Orch
 
 8.  Click **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
 
-#### To deploy the integration pack
+### To deploy the integration pack
 
 1.  In the left pane of Deployment Manager, right-click **Integration Packs**, and then click **Deploy IP to Runbook Server or Runbook Designer**. The Integration Pack Deployment Wizard opens.
 

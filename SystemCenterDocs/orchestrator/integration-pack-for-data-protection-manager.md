@@ -2,19 +2,19 @@
 title: System Center Integration Pack for System Center 2016 Data Protection Manager
 description: The System Center Integration Pack for System Center 2016 Data Protection Manager is an add-in for System Center 2016 - Orchestrator that enables you to automate the protection of physical and virtual server resources.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 5e7c74e4-15ac-49e2-a97c-512065b71edc
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # System Center Integration Pack for System Center 2016 Data Protection Manager
 
 Applies To: System Center 2016 - Orchestrator
@@ -52,21 +52,19 @@ The WinRM service is started automatically, but by default, no WinRM listener is
 
 Perform the following tasks on the Orchestrator server and on the DPM server before you use this Integration Pack.
 
-#### To enable Windows Remote Management Trusted Hosts
+### To enable Windows Remote Management Trusted Hosts
 
 1.  On the Orchestrator computer, open the **Local Group Policy Editor**. To do this, click **Start**, click **Run**, type **gpedit.msc**, and then click **OK**.
-
 2.  In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration**, **Administrative Templates**, **Windows Components**, **Windows Remote Management (WinRM)**, **WinRM Client**, and then double-click **Trusted Hosts**.
-
 3.  Select **Enabled**. Add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Click **OK**.
 
-### Execution Policy
+## Execution Policy
 
 The execution policy in Windows PowerShell determines which scripts must be digitally signed before they will run. By default, the execution policy is set to **Restricted.** This prohibits loading any configuration files or running any scripts.
 
 To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned** using the following procedure..
 
-#### To set the execution policy in Windows PowerShell
+### To set the execution policy in Windows PowerShell
 
 1.  Open a Windows PowerShell (x86) console as an administrator.
 
@@ -76,16 +74,15 @@ To run the scripts in this integration pack, you must set the execution policy t
 
 For more information abouthow to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](http://go.microsoft.com/fwlink/?linkID=113394).
 
-### Remote Connection Settings
+## Remote Connection Settings
 
 This integration pack uses Windows PowerShell remote commands to communicate with the DPM server, regardless of whether the server is remote or local. If you have not already done so, you must configure the DPM server and the Orchestrator client computer to receive Windows PowerShell remote commands that are sent by the Orchestrator server.
 
 Run the following command only one time on each computer that will receive commands. You do not have to run it on computers that only send commands. Because the command activates listeners, we recommend that you run it only where it is needed.
 
-#### To enable or confirm remote connection settings in Windows PowerShell
+### To enable or confirm remote connection settings in Windows PowerShell
 
 1.  Open a Windows PowerShell (x86) console as an administrator.
-
 2.  Type *System Drive***:\\PS&gt;enable-psremoting** and press Enter.
 
 For more information about how to use the **Enable-PSRemoting** cmdlet, see [Enable PSRemoting](http://go.microsoft.com/fwlink/?linkID=144300).
@@ -100,21 +97,16 @@ WM-Management also provides provides a setting for MaxConnections (regardless of
 
 Connections provide a way for you to define the way that the DPM Activities will connect to the DPM server(s) in your infrastructure. You must define at least one connection in order to use the DPM activities, but you can define as many as you need in order to connect to different DPM servers or utilize different connection settings or credentials.
 
-#### To configure a System Center 2016 Data Protection Manager connection
+### To configure a System Center 2016 Data Protection Manager connection
 
 1.  In the Runbook Designer, click the **Options** menu, and then select **SC 2016 Data Protection Manager**.
-
 2.  In the **SC 2016 Data Protection Manager** dialog box, on the **Configurations** tab, click **Add** to begin the connection setup.
-
 3.  In the **Name** box, type a name for the connection. The name may be the name of the DPM server or any other name you wish to describe the connection.
-
 4.  Click the ellipsis button (...) next to the **Type** box, select **PowerShell Remoting**, and then click **OK**.
-
 5.  In the **Properties** pane, the elements that are required to define this integration are displayed. Enter a value for each element, as defined in the table below.
-
 6.  Click **OK** to save the configuration, then click **Finish** to close the dialog.
 
-**Data Protection Manager Properties**
+### Data Protection Manager Properties
 
 | Property   | Description   |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
