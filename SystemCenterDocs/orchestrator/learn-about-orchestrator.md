@@ -1,15 +1,18 @@
 ---
-description: This topic provides an overview of System Center 2016 - Orchestrator 
-manager:  carmonm
+title: Orchestrator overview
+description: This topic provides an overview of System Center 2016 - Orchestrator
+ms.custom: na
+ms.date: 4/25/2017
+ms.prod: system-center-threshold
+ms.reviewer: na
+ms.suite: na
+ms.technology: orchestrator
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 8004b0ed-e66e-4105-867d-c65c0d733fef
+author: cfreemanwa
 ms.author: cfreeman
-ms.topic:  article
-author:  cfreemanwa
-ms.prod:  system-center-threshold
-keywords:  
-ms.date: 03/20/2017
-title:  Orchestrator overview
-ms.technology:  orchestrator
-ms.assetid:  8004b0ed-e66e-4105-867d-c65c0d733fef
+manager: carmonm
 ---
 
 # Overview of System Center 2016 - Orchestrator
@@ -17,7 +20,7 @@ ms.assetid:  8004b0ed-e66e-4105-867d-c65c0d733fef
 >Applies To: System Center 2016 - Orchestrator
 
 As an IT administrator, you probably perform a lot of tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process. 
-With System Center 2016 ‑ Orchestrator you tie disparate tasks and procedures together using a graphical user‑interface Runbook Designer to create reliable, flexible, and efficient end‑to‑end solutions in your IT environment.
+With System Center 2016 â€‘ Orchestrator you tie disparate tasks and procedures together using a graphical userâ€‘interface Runbook Designer to create reliable, flexible, and efficient endâ€‘toâ€‘end solutions in your IT environment.
 Using Orchestrator, you can:
 
 - Automate processes in your data center, regardless of hardware or platform.
@@ -58,3 +61,5 @@ The following table shows multiple strategies available for extending the functi
 |integration pack \(IP\)|An integration pack is a collection of custom activities specific to a product or technology. Microsoft and other companies provide integration packs with activities to interact with their product from an Orchestrator runbook.|
 |Orchestrator Integration Toolkit|The Orchestrator Integration Toolkit lets you extend your library of activities beyond the collection of standard activities and integration packs. The Integration Toolkit has wizard\-based tools to create new activities and integration packs for Orchestrator. Developers can also use the Integration Toolkit to create integration packs from custom activities that they build by using the Orchestrator SDK.|
 
+## Next steps
+[How to install System Center 2016 - Orchestrator](install.md)

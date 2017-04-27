@@ -4,15 +4,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9809d0d9-eadf-434a-bea5-4b5aa523ad5a
 author: cfreemanwa
 ms.author: cfreeman
 ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
 # Design and Build Runbooks
 

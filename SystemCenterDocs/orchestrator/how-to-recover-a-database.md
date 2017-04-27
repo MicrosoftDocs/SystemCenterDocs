@@ -1,19 +1,20 @@
 ---
 title: How to Recover a Database
+description: Describes how to restore a database from backup in System Center 2016 - Orchestrator.
 ms.custom: na
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d8d559d9-2bf9-4d2e-a11c-37cf292c2782
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
+
 # How to Recover a Database
 
 > Applies To: System Center 2016 - Orchestrator
@@ -29,7 +30,7 @@ However, the encryption services also depend on the MS SQL Server Service Master
 
 The database key is essentially paired with the service master key on the database server targeted by the installer. If either the database key or the service master key is lost, encrypted data stored in the data is likewise lost. This would include the license key, either entered by the user or an automatically created trial license.  
 
-#### To perform a backup  
+### To perform a backup  
 
 1.  Back up the Microsoft SQL Server service master key using the procedure for [backing up the service master key for Microsoft SQL Server 2016](http://go.microsoft.com/fwlink/?LinkId=249148). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
 
@@ -40,10 +41,9 @@ The database key is essentially paired with the service master key on the databa
 
 2.  Back up the entire Orchestrator database. The backup may be performed when the system is running, but it is best to perform the backup when all runbook authors have checked in any pending changes to their runbooks. Pending changes are cached on the Runbook Designer and are not backed up with a database backup.  
 
-#### To restore the database  
+### To restore the database  
 
 1.  If you are restoring to the same database server from which the backup was taken, and the service master key has not changed, simply restore the backup.  
-
 2.  If you are restoring to a different database server with a different service master key, or you are restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server 2016](http://go.microsoft.com/fwlink/?LinkId=249149) \(http:\/\/go.microsoft.com\/fwlink\/?LinkId\=249149\).  
 
     ```  
@@ -55,15 +55,13 @@ The database key is essentially paired with the service master key on the databa
     > If there are multiple databases using this service master key for encryption on your Microsoft SQL Server, all of these databases could be affected by this change. Consulting with your DBA before performing this administrative task is strongly recommended.  
 
 3.  Restore the database from the backup.  
-
 4.  On the Orchestrator Management Server, run the Data Store Configuration utility from the Start menu.  
-
 5.  Provide the connection details to connect to the new database. Note: Do not use "localhost" or ".". Explicitly specify the database server name and database name.  
-
 6.  Restart the Management Service.  
-
 7.  Run the Data Store Configuration utility on each Runbook Server. This utility is not located in the Start menu on Runbook Servers. It can be found in <SC2016OrchestratorInstallDir>\\Microsoft System Center 2016\\Orchestrator\\Runbook Server. Note: For Runbook Servers installed on the same server as the Management Server one doesn't need to run the Data Store Configuration utility a second time. Running it once will update the configuration for both the Management Server and Runbook Server at the same time.  
-
 8.  Restart the Runbook Server\(s\).  
-
 9. Follow the Web Components Recovery Process to update the Web Components to connect to the new database.  
+
+## Next steps
+[How to Recover Web Components](how-to-recover-web-components.md)
+[How to Configure Orchestrator Database Connections](how-to-configure-orchestrator-database-connections.md)
