@@ -2,19 +2,19 @@
 title: Get VM RDP File
 description: The Get VM RDP File activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 7765b664-92ed-489c-ac4c-d75bed9527e7
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get VM RDP File
 
 Applies To: System Center 2016 - Orchestrator
@@ -46,11 +46,4 @@ There are no optional properties for this runbook activity.
 | VM Instance Name   | The name of the virtual machine.   | String   |
 | Location to Save RDP File | The local path to which the RDP file was saved.   |   |
 | RDP File Name   | The name of the RDP file for the virtual machine.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

@@ -2,19 +2,19 @@
 title: Get VM Properties Activity
 description: The Get VM Properties activity is used in a runbook retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: c10df30c-2768-4407-9599-77eb0e1c7d42
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get VM Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
@@ -25,16 +25,16 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Get VM Properties Activity Required Properties
+## Get VM Properties Activity Required Properties
 
 | Name   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | VM Path | The path of the virtual machine in the vSphere hierarchy. | String   | Yes   |
 
-### Get VM Properties Activity Optional Properties
+## Get VM Properties Activity Optional Properties
 No optional properties are provided for this activity.
 
-### Get VM Properties Activity Published Data
+## Get VM Properties Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -49,7 +49,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Get VM Properties activity.
 
-#### To configure the Get VM Properties Activity
+### To configure the Get VM Properties Activity
 
 1.  From the **Activities** pane, drag a **Get VM Properties** activity to the active runbook.
 

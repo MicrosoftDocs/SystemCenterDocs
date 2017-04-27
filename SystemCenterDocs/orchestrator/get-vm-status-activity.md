@@ -2,19 +2,19 @@
 title: Get VM Status Activity
 description: The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 912dfce9-c159-4de2-853b-c47fc161b5ca
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get VM Status Activity
 
 Applies To: System Center 2016 - Orchestrator
@@ -25,17 +25,17 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Get VM Status Activity Required Properties
+## Get VM Status Activity Required Properties
 
 | Element | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | VM Path | The path of the virtual machine to retrieve the status for. | String   | Yes   |
 
 
-### Get VM Status Activity Optional Properties
+## Get VM Status Activity Optional Properties
 No optional properties are provided for this activity.
 
-### Get VM Status Activity Published Data
+## Get VM Status Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -58,7 +58,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Get VM Status activity.
 
-#### To configure the Get VM Status Activity
+### To configure the Get VM Status Activity
 
 1.  From the **Activities** pane, drag a **Get VM Status** activity to the active runbook.
 

@@ -2,19 +2,19 @@
 title: Get Operation Status
 description: The Get Operation Status activity is used to get the status of the specified operation.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 12a83835-4c84-4474-a8e0-df70d88e2818
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Operation Status
 
 Applies To: System Center 2016 - Orchestrator
@@ -41,11 +41,4 @@ There are no optional properties for this activity.
 | Status   | The status of the asynchronous request. The valid values are InProgress, Succeeded, and Failed   | String   |
 | Error Code   | The management service error code returned if the asynchronous request failed.   | String   |
 | Error Message | The management service error message returned if the asynchronous request failed.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 
