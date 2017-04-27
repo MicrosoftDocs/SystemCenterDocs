@@ -2,19 +2,19 @@
 title: Disable User
 description: You can use the Disable User activity in a runbook to disable a user in the Microsoft Active Directory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e8ddbe63-4f10-4907-838f-e76173295162
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Disable User
 
 Applies To: System Center 2016 - Orchestrator

@@ -2,19 +2,19 @@
 title: Download File
 description: The Download File activity is used in a runbook to download a file from a FTP server.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: e1c357dc-b324-4bca-86be-b252c729b602
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Download File
 
 Applies To: System Center 2016 - Orchestrator
@@ -71,8 +71,4 @@ The following tables list the required and optional properties and published dat
 | Timeout   | The time to wait before a FTP operation times out.   | Integer   |
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

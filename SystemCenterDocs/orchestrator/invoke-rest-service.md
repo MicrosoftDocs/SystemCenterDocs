@@ -2,19 +2,19 @@
 title: Invoke REST Service
 description: The Invoke REST Service activity is used in a runbook to make requests to RESTful web services and retrieve data or execute functions.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 8e13d6ae-5c53-48dc-912d-ba132e5eeb11
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Invoke REST Service
 
 Applies To: System Center 2016 - Orchestrator
@@ -67,10 +67,3 @@ There are no optional properties for this activity.
 | Response Status Line   | The response status line.   | A valid response status line   |
 | Timeout   | The maximum time to wait for a response.   | Integer   |
 | URL   | The URL to use.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)

@@ -2,19 +2,19 @@
 title: Enable Mailbox
 description: You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 1825d27b-c016-4d16-8237-350fbced1686
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Enable Mailbox
 
 Applies To: System Center 2016 - Orchestrator
@@ -256,8 +256,4 @@ The following tables list the required properties, optional properties, and publ
 | When Soft Deleted   | Date and time when mailbox was soft deleted.   | DateTime   |
 | Windows Email Address   | Email address .   | String   |
 | Windows Live ID (Live@edu only)   | Windows Live ID associated with the mailbox.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 
