@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 6565cdb0-f0f7-4d4a-a08d-f4016806e0c6
 author: cfreemanwa
 ms.author: cfreeman

@@ -11,7 +11,7 @@ ms.assetid: 10b8d20a-7bf8-4af8-86fa-8b936319355b
 author: cfreemanwa
 ms.author: cfreeman
 ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
 
 # Creating and Testing a Sample Runbook
@@ -202,5 +202,6 @@ You can test the runbook by using the Runbook Tester. This tool lets you run the
 
 9. Open the C:\\Copy folder and ensure that the file has been copied. Also verify that the MasterLog.txt file has the contents of the original file.  
 
-## See Also  
-[Runbook Samples](runbook-samples.md)  
+## Next steps
+
+See the [Runbook Samples](runbook-samples.md).
