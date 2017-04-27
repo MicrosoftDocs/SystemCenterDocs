@@ -4,10 +4,10 @@ title: Migrate a virtual machine in the VMM fabric
 description: This article describes how to migrate a VM in VMM
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -47,14 +47,15 @@ Note the following before you begin migration:
 	- **Rating Explanation** — Lists the factors that resulted in a 0 star rating.
 	- **SAN Explanation or Deployment and Transfer Explanation** — Lists the factors that make a SAN transfer unavailable. In addition, as of System Center 2016 Virtual Machine Manager, the Deployment and Transfer Explanation tab provides an explanation if fast file copy cannot be used. Fast file copy is a feature that was introduced in VMM, based on the Windows Offloaded Data Transfers (ODX) feature introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](https://technet.microsoft.com/en-us/library/hh831375(v=ws.11).aspx).
 	
-    	**Note: The Fast file copy feature is not utilized when migrating a VM from Host to Library.** 
+    	> [!NOTE]
+    	> The Fast file copy feature is not utilized when migrating a VM from Host to Library. 
 	 
 3. In **Select Path** page, accept the default path, or click **Browse** and browse to the folder in which you want to store the configuration files for the virtual machine, and then click **OK**. Note the following:
 
-    - If the target host is a part of a failover cluster that has Cluster Shared Volumes (CSV) enabled, you can store the virtual machine on a CSV Logical Units (LUs) and associated Number (LUN) that is already in use by other highly available virtual machines (HAVMs). With CSV, multiple HAVMs can share the same LUN. The migration of one HAVM does not affect others that are sharing the same LUN. VMM also supports multiple HAVMs per LUN for VMware environments that are configured with VMware VMFS LUNs.
-    - If you selected a path other than a default virtual machine path and want to store other virtual machines on that path, select the **Add this path to the list of host default paths** check box to add the path to the default paths on the host.
-    - If you use a network transfer, you have the option to specify separate storage locations for each virtual hard disk (.vhd or .vhdx) file for the virtual machine. By default, all .vhd or .vhdx files are stored in the same location that is specified for the virtual machine.
-    - If SAN transfers are enabled for this deployment, the virtual machine by default is transferred to the host over the SAN. If you do not want to perform a SAN transfer, select **Transfer over the network even if a SAN transfer is available**. If SAN transfers are not available for this deployment, that option is not available.
+   - If the target host is a part of a failover cluster that has Cluster Shared Volumes (CSV) enabled, you can store the virtual machine on a CSV Logical Units (LUs) and associated Number (LUN) that is already in use by other highly available virtual machines (HAVMs). With CSV, multiple HAVMs can share the same LUN. The migration of one HAVM does not affect others that are sharing the same LUN. VMM also supports multiple HAVMs per LUN for VMware environments that are configured with VMware VMFS LUNs.  
+   - If you selected a path other than a default virtual machine path and want to store other virtual machines on that path, select the **Add this path to the list of host default paths** check box to add the path to the default paths on the host.  
+   - If you use a network transfer, you have the option to specify separate storage locations for each virtual hard disk (.vhd or .vhdx) file for the virtual machine. By default, all .vhd or .vhdx files are stored in the same location that is specified for the virtual machine.  
+   - If SAN transfers are enabled for this deployment, the virtual machine by default is transferred to the host over the SAN. If you do not want to perform a SAN transfer, select **Transfer over the network even if a SAN transfer is available**. If SAN transfers are not available for this deployment, that option is not available.  
 
 4.  In **Select Networks** , modify the networks, and then attach them to **None** or to any of the virtual networks that are found on the selected host. The networks area lists each of the virtual network adapters that are currently attached to the virtual machine. Network adapters default to **None** (if you selected **None** in the hardware configuration), or to the best matching virtual network according to the network matching rules.
 5.  In **Select Virtual SAN**, select the applicable virtual SANs from the drop-down list for each listed virtual HBA. Then click **Next**.
