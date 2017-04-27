@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4c5d8bf4-cb22-443f-b5fb-ff4361e081a6
 author: cfreemanwa
 ms.author: cfreeman
@@ -31,7 +31,7 @@ The activity publishes all of the data from the required and optional properties
 | Destination   | Description of destination   |   
 | Path   | The path of the virtual machine in the format C:\\VMM   |   
 | Source Template Name   | The name of the virtual machine Template used to create the virtual machine |   
-| Cloud Capability Profile | Specify the Cloud Apability object defined in the VMM 2016 library.   |   
+| Cloud Capability Profile | Specify the Cloud Capability object defined in the VMM 2016 library.   |   
 | VM Name   | An alphanumeric name of your choice for the virtual machine   |   
 
 ## Create VM from Template Optional Properties
@@ -47,7 +47,7 @@ The activity publishes all of the data from the required and optional properties
 | Description   | An alphanumeric description of your choice for the virtual machine   |   
 | Destination Computer Name | The name of the new virtual machine   |   
 | Domain Name   | The name of the domain to join   |   
-| Domain Password   | The password used to join the computer to a domain, if Domain Namehas a value   |   
+| Domain Password   | The password used to join the computer to a domain, if Domain Name has a value   |   
 | Domain User Name   | The user name used to join the computer to a domain, if Join Domain = True   |   
 | Full Name   | The full name of the owner that is specified during Sysprep as part of operating system install   |   
 | Guest OS Profile   | The full path and file name of the library resource that contains the most common settings from a Sysprep.inf file. This includes the computer name and domain or workgroup settings, which can be applied to a virtual machine Template   |   

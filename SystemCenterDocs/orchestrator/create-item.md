@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 5e06c804-4544-4479-a664-d4a92df0c20b
 author: cfreemanwa
 ms.author: cfreeman
@@ -173,6 +173,6 @@ The integration pack provides the ability to create recurring appointments and t
 | The same day each year   | Not required. The day is determined by the start date.   |
 | The same week each year  | Specify a relative index followed by a day of the week. Valid indexes include First, Second, Third, Fourth, and Last. Days of the week include Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Weekday, and WeekendDay. The month is determined by the start date.<br>For example: First Monday |
 
-#### Reference
+## See Also
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/)

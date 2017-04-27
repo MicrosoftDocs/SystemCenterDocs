@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 9edd8363-704d-41dc-8cc6-0c168c27b901
 author: cfreemanwa
 ms.author: cfreeman
@@ -285,7 +285,6 @@ The following tables list the required properties, optional properties, and publ
 | Windows Email Address   | Email address.   | String   |
 | Windows Live ID(Live@edu only)   | Windows Live ID associated with the mailbox.   | String   |
 
-#### Other Resources
+## See Also
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

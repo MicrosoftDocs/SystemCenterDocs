@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 79ca0e5d-9350-43e3-95a0-bdb0f7714cdc
 author: cfreemanwa
 ms.author: cfreeman
@@ -41,14 +41,9 @@ There are no optional properties for this runbook activity.
 | List Name   | The name of the SharePoint list that contains the item that was created. | String   |
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 
-Tips
-
-You can use comma-separated values to specify input values for multi-choice properties.
+>[!Tip]
+> You can use comma-separated values to specify input values for multi-choice properties.
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

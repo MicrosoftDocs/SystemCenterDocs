@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a7102bb9-bc30-4a8b-9ec5-73452cb9a29d
 author: cfreemanwa
 ms.author: cfreeman
@@ -25,7 +25,7 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Create VM Activity Required Properties
+## Create VM Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
@@ -41,13 +41,13 @@ The activity publishes all of the data from the required and optional properties
 | Virtual Disk Size(GB)   | The size of the virtual hard disk assigned to this virtual machine.   | Integer   | No   |
 | Virtual Machine Name   | The name of the virtual machine as it will appear in the vSphere user interface.   | String   | No   |
 
-### Create VM Activity Optional Properties
+## Create VM Activity Optional Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Relative ISO Image Path | The path of the CD ISO image containing the operating system installed on the virtual machine. This path is relative to the provided datastore path. | String   | No   |
 
-### Create VM Activity Published Data
+## Create VM Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
