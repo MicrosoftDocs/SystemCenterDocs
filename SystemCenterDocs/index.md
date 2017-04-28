@@ -20,7 +20,7 @@ description: get-from-content-team
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.png" alt="" />
+                                        <img src="/media/common/i_free-trial.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -83,7 +83,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-configuration.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -96,13 +96,13 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/">
+                                <a href="https://technet.microsoft.com/en-us/system-center-docs/dpm/data-protection-manager">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-data-protection.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -121,7 +121,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-operations-manager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -140,7 +140,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-orchestrator.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -159,7 +159,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-service-manager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -178,7 +178,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-service-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -197,7 +197,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/hubs/systemcenter/system-center-virtual-machine.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -625,17 +625,12 @@ description: get-from-content-team
                 <ul id="SDKs">
                     <li>
                         <a href="#SDKs-all">all</a>
-                        <ul id="SDKs-all" class="cardsF">                        
+                        <ul id="SDKs-all" class="cardsZ">
                             <li>
                                 <a href="https://msdn.microsoft.com/en-us/library/jj130093.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Operations Manager Management Pack Development Kit</h3>
                                                 <p>Learn about programmatic development of Operations Manager Management Packs</p>
@@ -650,11 +645,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Operations Manager SDK</h3>
                                                 <p>Find guidance on how to access Operation Manager with code.</p>
@@ -669,11 +659,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Orchestrator Integration Toolkit</h3>
                                                 <p>Learn how to build Integration Packs for Orchestrator</p>
@@ -688,11 +673,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Orchestrator Web Service SDK</h3>
                                                 <p>Get programmatic access to the Orchestrator Web Service</p>
@@ -707,11 +687,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Service Management Automation SDK</h3>
                                                 <p>Access automation runbooks in your Windows Azure Pack implementation through the SMA REST API.</p>
@@ -726,11 +701,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Service Manager SDK</h3>
                                                 <p>Learn how to access Service Manager programmatically though the Service Manager API.</p>
@@ -745,11 +715,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Service Provider Foundation SDK</h3>
                                                 <p>Learn how to access resources managed by VMM through the SPF API.</p>
@@ -764,11 +729,6 @@ description: get-from-content-team
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
-                                            <div class="cardImageOuter">
-                                                <div class="cardImage">
-                                                    <img src="/media/common/placeholder.svg" alt="" />
-                                                </div>
-                                            </div>
                                             <div class="cardText">
                                                 <h3>Virtual Machine Manager Add-in SDK</h3>
                                                 <p>Extend the VMM console by building a VMM extension.</p>
@@ -838,7 +798,7 @@ description: get-from-content-team
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Forums</h3>
+                                                <h3>System Center Blogs</h3>
                                                 <p><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=dpm">DPM Forum</a></p>
                                                 <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenteroperationsmanager">SCOM Forum</a></p>
                                                 <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenterorchestrator">Orchestrator Forum</a></p>
@@ -856,7 +816,7 @@ description: get-from-content-team
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_virtual-training.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
