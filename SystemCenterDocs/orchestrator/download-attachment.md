@@ -2,19 +2,19 @@
 title: Download Attachment
 description: The Download Attachment activity is used in a runbook to download an attachment from a Microsoft SharePoint list item.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: db57641c-d761-4391-ba2f-871bdea9ce1a
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Download Attachment
 
 Applies To: System Center 2016 - Orchestrator
@@ -48,11 +48,3 @@ There are no optional properties for this runbook activity.
 | ID   | The ID of the list item that contains the attachment that was downloaded.   | Integer   |
 | List Name   | The name of the SharePoint list that contains the item.   | String   |
 | SharePoint Site   | The URL of the SharePoint site.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

@@ -1,10 +1,10 @@
 # Overview
 ## [Service Manager](service-manager.md)
-# Get started 
+# Get started
 ## [What's new in Service Manager](whats-new.md)
-## [Glossary for System Center 2016 - Service Manager](glossary.md)
-# How to 
-## Plan 
+## [Service Manager glossary](glossary.md)
+# How to
+## Plan
 ### [Planning for Service Manager](plan-sm.md)
 #### [Plan for Service Manager deployment](plan-deployment.md)
 ##### [Service Manager parts](sm-parts.md)
@@ -17,12 +17,12 @@
 ##### [Languages supported by Service Manager](sm-languages.md)
 ##### [Databases created by Service Manager](databases-created.md)
 ##### [Port assignments](ports.md)
-#### [Prepare for Service Manager deployment](prepare-deploy
+#### [Prepare for Service Manager deployment](prepare-deploy.md)
 #### [Planning for performance and scalability](plan-perf-scale.md)
 ##### [Plan for hardware performance](plan-hardware-perf.md)
 ##### [Service Manager performance](sm-perf.md)
 ##### [Recommended deployment topology scenarios](deploy-topo-scenarios.md)
-## Deploy 
+## Deploy
 ### [Deploy Service Manager](deploy-sm.md)
 #### [Deployment scenarios](deploy-scenarios.md)
 ##### [Install on a single computer](install-one-computer.md)
@@ -44,7 +44,7 @@
 #### [Troubleshoot deployment issues to resolve problems](troubleshoot-deployment.md)
 #### [Deploy Service Manager from a command line](deploy-cmd-line.md)
 #### [Move the Service Manager and data warehouse databases](move-databases.md)
-## Upgrade 
+## Upgrade
 ### [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-to-sm-2016.md)
 #### [Prepare remote SQL Server Reporting Services for upgrade](prepare-remote-ssrs.md)
 #### [Upgrade configurations for the Service Manager Self-Service portal](upgrade-configs-portal.md)
@@ -68,7 +68,7 @@
 #### [Upgrade your environment to System Center 2016 - Service Manager](upgrade-environment.md)
 #### [Tasks to complete after you upgrade to System Center 2016 - Service Manager](tasks-to-complete-after-upgrade.md)
 #### [Identify and resolve System Center 2016 - Service Manager upgrade problems](resolve-upgrade-problems.md)
-## Administer 
+## Administer
 ### [Administrative tasks in System Center 2016 - Service Manager](admin-tasks.md)
 #### [Use management packs to add functionality](management-packs.md)
 #### [Use connectors to import data](import-data-connectors.md)
@@ -102,7 +102,7 @@
 #### [Map Active Directory Domain Services attributes to properties in Service Manager](ad-ds-attribs.md)
 #### [Map Service Manager properties to Configuration Manager database views](sm-cm-views.md)
 #### [Registry keys](registry-keys.md)
-## Operate 
+## Operate
 ### [Day-to-day tasks in Service Manager](day-to-day-tasks.md)
 #### [Search for information](search-information.md)
 #### [Manage incidents and problems](incidents-problems.md)
@@ -124,7 +124,7 @@
 ### [Disaster recovery for System Center 2016 - Service Manager](disaster-recovery.md)
 #### [Prepare for Service Manager disaster recovery](prepare-disaster-recovery.md)
 #### [Implement Service Manager disaster recovery](implement-disaster-recovery.md)
-## Author 
+## Author
 ### [Author with Service Manager](author-with-sm.md)
 #### [Management packs in the Authoring Tool](mps-in-auth-tool.md)
 ##### [Work with management packs in the Service Manager console](work-mps-console.md)
@@ -140,7 +140,7 @@
 ##### [Form control properties in the Authoring Tool](form-control-properties.md)
 #### [Customize and Author workflows](customize-author-workflows.md)
 ##### [Automate IT processes with workflows](automate-processes-workflows.md)
-##### [Create workflows for IT processes 
+##### [Create workflows for IT processes
 ###### [Manage workflows with the Authoring Tool](manage-workflows-auth-tool.md)
 ###### [Add or remove workflow activities](add-workflow-activities.md)
 ###### [Configure the way activities manage and pass information](configure-activities-information.md)

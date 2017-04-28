@@ -2,19 +2,19 @@
 title: Get Network Adapter
 description: The Get Network Adapter activity is used to retrieve an existing Virtual Network Adapter based on the filters you specify.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 114d69dd-6ae6-488a-bb61-483df029728a
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Network Adapter
 
 Applies To: System Center 2016 - Orchestrator

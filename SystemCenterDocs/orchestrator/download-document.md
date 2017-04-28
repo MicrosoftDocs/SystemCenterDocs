@@ -2,19 +2,19 @@
 title: Download Document
 description: The Download Document activity is used in a runbook to download a document from a Microsoft SharePoint document library.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 982e9a07-fd87-4d05-b486-ca9b5e91c2bb
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Download Document
 
 Applies To: System Center 2016 - Orchestrator
@@ -46,11 +46,4 @@ There are no optional properties for this runbook activity.
 | Document ID   | The ID of the document that was downloaded.   | Integer   |
 | Document Library   | The name of the document library that contained the document that was downloaded.   | String   |
 | SharePoint Site   | The URL of the SharePoint site.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

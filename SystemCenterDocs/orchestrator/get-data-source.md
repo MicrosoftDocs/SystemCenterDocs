@@ -2,19 +2,19 @@
 title: Get Data Source
 description: The Get Data Source activity retrieves information about Data Sources from either a production server (a computer that has the Data Protection Manager Protection Agent installed) or from a protection group (a named entity that holds the backup policy for a workload).
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 36855461-0113-451b-86f9-e10656fd8b15
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Data Source
 
 Applies To: System Center 2016 - Orchestrator

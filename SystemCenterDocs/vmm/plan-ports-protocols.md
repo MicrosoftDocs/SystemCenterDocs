@@ -4,10 +4,10 @@ title: VMM ports and protocols
 description: This article provides information about ports and protocols used in a VMM 2016 deployment
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  12/15/2016
-ms.topic:  article
-ms.prod:  system-center-threshold
+ms.topic:  reference
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 

@@ -1,19 +1,20 @@
 ---
 title: Designing a Runbook
+description: Describes how to design a new runbook for System Center 2016 - Orchestrator.
 ms.custom: na
+ms.date: 04/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a0af32cb-3faf-4f13-b9eb-eadc10effe1b
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
+
 # Designing a Runbook
 
 > Applies To: System Center 2016 - Orchestrator
@@ -21,17 +22,11 @@ manager: cfreeman
 When you plan a new runbook, you should start with a defined process that you want to automate. This process determines your choice of runbook activities. Specifically, determine the following:  
 
 -   When and how often is the runbook going to run?  
-
 -   What steps make up the workflow?  
-
 -   What activities reflect the steps in my workflow?  
-
 -   What type of data is required to begin the workflow?  
-
 -   What data are generated from each activity?  
-
 -   What results are produced at the end of the workflow?  
-
 -   How are the runbook results reported?  
 
 Consider the following points as you design your runbook:  
@@ -46,5 +41,5 @@ Consider the following points as you design your runbook:
 
 5.  Runbook logs \- By default, logging options are disabled for runbooks. When you enable&nbsp;logging, the data significantly increases the size of your database. As an alternative, you can log to an external system or file.  
 
-## See Also  
-[Design and Build Runbooks](design-and-build-runbooks.md)  
+## Next steps
+[Build and test a runbook](build-test-runbooks.md)  

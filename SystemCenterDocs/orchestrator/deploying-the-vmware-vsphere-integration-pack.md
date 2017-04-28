@@ -2,19 +2,19 @@
 title: Deploying the VMware vSphere Integration Pack for System Center 2016 - Orchestrator
 description: The following sections provide important information about downloading and deploying the VMware vSphere integration pack for System Center 2016 - Orchestrator.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 19b40fdf-c370-4534-8073-79e9b73ede6e
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Deploying the VMware vSphere Integration Pack for System Center 2016 - Orchestrator
 
 Applies To: System Center 2016 - Orchestrator
@@ -30,13 +30,13 @@ The Integration Pack for VMware vSphere requires the following software to be in
 
 ## Downloading the Integration Pack
 
-You can download the integration pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=223169).
+You can download the integration pack from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54099).
 
 ## Registering and Deploying the Integration Pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to a runbook server.
 
-#### To register the integration pack
+### To register the integration pack
 
 1.  Copy the VMware vSphere integration pack file to the management server. Confirm that the file is not set to **Read Only**. This can prevent unregistering the integration pack later.
 
@@ -54,7 +54,7 @@ After you download the integration pack file, you must register it with the Orch
 
 8.  Click **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
 
-#### To deploy the integration pack
+### To deploy the integration pack
 
 1.  In the left pane of Deployment Manager, right-click **Integration Packs**, and then click **Deploy IP to Runbook Server or Runbook Designer**.
 
@@ -70,7 +70,7 @@ After you download the integration pack file, you must register it with the Orch
 
 A connection establishes a reusable link between Orchestrator and a VMware vSphere server. You can create as many connections as you require to link to multiple servers running VMware vSphere. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-#### To set up a VMware vSphere connection
+### To set up a VMware vSphere connection
 
 1.  In Runbook Designer, click **Options**, and then click **VMware vSphere**. The VMware vSphere dialog appears.
 

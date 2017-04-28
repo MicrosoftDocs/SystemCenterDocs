@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: b57dd2f6-55d8-4a08-97de-4be6efc8d612
 author: cfreemanwa
 ms.author: cfreeman
@@ -52,4 +52,3 @@ The following tables list the required properties and published data for this ac
 #### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

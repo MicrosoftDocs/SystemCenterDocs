@@ -2,19 +2,19 @@
 title: Get VM Host in System Center 2016
 description: Returns data on all the host within the VMM server
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: b1fe4adf-a477-4455-858f-0158685c23bb
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get VM Host in System Center 2016
 
 Applies To: System Center 2016 - Orchestrator
@@ -40,9 +40,3 @@ VM Host Name
 
 There is no published data for this activity.
 
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)

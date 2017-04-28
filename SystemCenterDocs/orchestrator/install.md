@@ -1,6 +1,6 @@
 ---
 description: Provides installation procedures for System Center 2016 - Orchestrator.
-manager:  cfreeman
+manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
 ms.author: cfreeman
@@ -360,5 +360,5 @@ To solve this problem, an administrator can add the user back to OrchestratorSys
 
 ## Next steps
 
-- To learn more about building runbooks see [Design and build runbooks](design-and-build-runbooks.md).
-- To learn more about deploying runbooks see [Deploy runbooks](~/orchestrator/deploy-runbooks.md)
+- To learn more about building runbooks see [Design and build runbooks](build-test-runbooks.md).
+- To learn more about deploying runbooks see [Deploy runbooks](deploy-runbooks.md)

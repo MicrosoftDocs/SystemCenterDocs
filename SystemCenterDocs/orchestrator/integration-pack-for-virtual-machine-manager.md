@@ -2,19 +2,19 @@
 title: System Center Integration Pack for System Center 2016 Virtual Machine Manager
 description: The System Center Integration Pack for System Center 2016 Virtual Machine Manager is an add-in for System Center 2016 - Orchestrator that enables you to automate VMM activities.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: b4b8abbd-8fe0-45bd-9112-e43e308f510e
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # System Center Integration Pack for System Center 2016 Virtual Machine Manager
 
 Applies To: System Center 2016 - Orchestrator
@@ -65,11 +65,8 @@ PowerShell 2.0 must be installed on both the Orchestrator runbook server and the
 #### To confirm Windows PowerShell 2.0 installation
 
 1.  Open Registry Editor.
-
 2.  Expand the **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\PowerShellEngine** subkey.
-
 3.  Confirm that the value of the Runtime Version entry begins with v2.0.
-
 4.  If this value begins with 1.0, or the subkey is not present, see [Windows Management Framework (Windows PowerShell 2.0, WinRM 2.0, and BITS 4.0)](http://go.microsoft.com/fwlink/?linkID=193574) for information on installing Windows PowerShell 2.0.
 
 ### Confirm Windows Remote Management Installation
@@ -79,9 +76,7 @@ Windows Remote Management 2.0 (WinRM 2.0) must be installed and configured on th
 #### To confirm Windows Remote Management installation
 
 1.  Click **Start** and then **Run**, type **gpedit.msc**, and then click **OK**.
-
 2.  Under **Local Computer Policy**, then expand **Computer Configuration**, then expand **Administrative Templates**, and then expand **Windows Components**
-
 3.  Verify that **Windows Remote Management (WinRM)** is listed.
 
 For more information about how to install and configure WinRM 2.0, see [Installation and Configuration for Windows Remote Management](http://go.microsoft.com/fwlink/?linkID=171111).
@@ -93,13 +88,9 @@ WinRM requires that you explicitly specify the name of any host computers that y
 #### To enable Windows Remote Management Trusted Hosts
 
 1.  On the Orchestrator runbook server, open the **Local Group Policy Editor**. To do this click **Start**, click **Run**, type **gpedit.msc**, and then click **OK**.
-
 2.  Under **Local Computer Policy**, then expand **Computer Configuration**, then expand **Administrative Templates**, then expand **Windows Components**, then expand **Windows Remote Management**, and then select **WinRM Client**.
-
 3.  Double-click **Trusted Hosts**.
-
 4.  In the **Trusted Hosts** dialog box, select **Enabled**.
-
 5.  Add the name or IP address of the computer running the VMM Administration Console to the **TrustedHostsList** . Click **OK**.
 
 ### PowerShell Execution Policy
@@ -109,9 +100,7 @@ The execution policy in Windows PowerShell determines which scripts must be digi
 #### To set the execution policy in Windows PowerShell
 
 1.  Click **Start**, then **All Programs**, then **Accessories**, and then **Windows PowerShell**.
-
 2.  Right-click **Windows PowerShell** and select **Run As Administrator**. Click **Yes** when prompted by **User Account Control**.
-
 3.  Type the following command and press **Enter**:
 
     **set-executionpolicy remotesigned**
@@ -134,20 +123,14 @@ Once you have validated the WinRM configuration, you must add a **Connection** t
 #### To configure a System Center 2016 Virtual Machine Manager connection
 
 1.  In the Runbook Designer, click the **Options** menu, and then select **System Center 2016 Virtual Machine Manager**. The **System Center 2016 Virtual Machine Manager** dialog box appears.
-
 2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Connection Entry** dialog box appears.
-
 3.  In the **Name** box, type a name for the connection. This could be the name of the VMM computer for example.
-
 4.  In the **Properties** box, enter a value for each property according to the table below.
-
 5.  Click **OK**.
-
 6.  Add any additional configurations as required.
-
 7.  Click **Finish**.
 
-**Virtual Machine Manager Properties**
+### Virtual Machine Manager Properties
 
 | Property   | Description   |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

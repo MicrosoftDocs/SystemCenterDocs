@@ -2,19 +2,19 @@
 title: Disable Mailbox
 description: For an on-premises environment, you can use the Disable Mailbox activity in a runbook to disable the mailbox of an existing user or InetOrgPerson object and remove that object's Exchange attributes from Active Directory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 8ddd7efe-2342-4a53-95f9-887cdcd2e67f
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Disable Mailbox
 
 Applies To: System Center 2016 - Orchestrator
@@ -57,8 +57,4 @@ The following tables list the required properties, optional properties, and publ
 | Skip CN Check   | Indicates whether the client skips validation that the certificate common name (CN) of the server matches the hostname of the server.   | String   |
 | Skip Revocation Check   | Indicates whether the connection skips validation of the revocation status of the server certificate.   | String   |
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

@@ -5,8 +5,7 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 author: cfreemanwa

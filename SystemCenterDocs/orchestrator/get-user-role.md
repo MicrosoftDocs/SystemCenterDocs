@@ -2,19 +2,19 @@
 title: Get User Role
 description: Returns data on all the user roles within the VMM server
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 2c0732bd-d486-48c2-ae47-b35d42b45810
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get User Role
 
 Applies To: System Center 2016 - Orchestrator

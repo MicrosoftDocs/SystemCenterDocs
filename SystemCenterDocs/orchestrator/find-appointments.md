@@ -2,19 +2,19 @@
 title: Find Appointments
 description: The Find Appointments activity is used in a runbook to find an existing appointment.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 223820eb-1c24-43ce-938e-935176e2a8bf
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Find Appointments
 
 Applies To: System Center 2016 - Orchestrator
@@ -148,7 +148,3 @@ The following tables list the required properties, optional properties, filters,
 | iCal DateTime Stamp   | Contains the iCalendar DateTimeStamp   | DateTime   |
 | iCal Recurrence ID   | Contains the iCalendar RecurrenceId   | DateTime   |
 | iCal UID   | Contains the Uid   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx) <br> <br>

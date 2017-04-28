@@ -2,19 +2,19 @@
 title: Get Annotation
 description: The Get Annotation activity retrieves annotations for a specified message according to filter criteria that you specify.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 60be0ba1-5e71-4521-bfae-9c7721fdfa03
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Annotation
 
 Applies To: System Center 2016 - Orchestrator
@@ -57,25 +57,14 @@ The following tables list the required properties and published data for this ac
 The Integration Pack for HP Operations Manager integration contains the following additional activities:
 
 [Acknowledge Message](acknowledge-message.md)
-
 [Add Annotation to Message](add-annotation-to-message.md)
-
 [Create Message](create-message.md)
-
 [Delete Annotation](delete-annotation.md)
-
 [Delete Custom Attribute](delete-custom-attribute.md)
-
 [Get Message](get-message.md)
-
 [Launch Tool](launch-tool.md)
-
 [Monitor Message](monitor-message.md)
-
 [Own/Disown Message](own-or-disown-message.md)
-
 [Set Custom Attribute](set-custom-attribute.md)
-
 [Update Annotation](update-annotation.md)
-
 [Update Message](update-message.md)

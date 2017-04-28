@@ -1,20 +1,20 @@
 ---
-
 title: How to add an Integration Pack
+description: Describes how to register and import an integration pack to be used in an Orchestrator runbook.
 ms.custom: na
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b504bdb-6297-4a0a-aec5-1de1dd975b40
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 12/2/2016
-manager: cfreeman
+manager: carmonm
 ---
+
 # How to add an integration pack
 
 > Applies To: System Center 2016 - Orchestrator
@@ -67,3 +67,6 @@ When you install an upgrade of an integration pack, you must first uninstall any
   * Log into each computer and uninstall the integration pack from Programs and Features in Control Panel.
   * On the management server, start the Deployment Manager, and then right click on the deployed integration pack for each Runbook Server or Runbook Designer computer and click Uninstall Integration Pack or Hotfix.
 2.	Register and deploy the upgraded integration pack.
+
+## Next steps
+[Build and test a runbook](build-test-runbooks.md)

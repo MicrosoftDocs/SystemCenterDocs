@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: f6aeb60a-85bb-49ea-9fd3-ca8704ce7225
 author: cfreemanwa
 ms.author: cfreeman
@@ -28,7 +28,7 @@ The activity publishes all of the data from the required and optional properties
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Certificate File Path | The path to the certificate file.   | String   |
-| Service Name   | The name of the Windows Azure cloud service. | String   |
+| Service Name   | The name of the Azure cloud service. | String   |
 | PFX Password   | The type of the management certificate file. | CER, PFX   |
 
 ## Delete Service Certificate Optional Properties
@@ -39,14 +39,10 @@ There are no optional properties for this runbook activity.
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
-| Request ID   | The unique identifier of the request to Windows Azure. | String   |
+| Request ID   | The unique identifier of the request to Azure. | String   |
 | Certificate File Path | The path to the certificate file.   | String   |
-| Service Name   | The name of the Windows Azure cloud service.   | String   |
+| Service Name   | The name of the Azure cloud service.   | String   |
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

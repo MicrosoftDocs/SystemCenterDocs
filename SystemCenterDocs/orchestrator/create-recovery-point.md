@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 178651bc-0edb-4046-8b64-4bbb2998408f
 author: cfreemanwa
 ms.author: cfreeman
@@ -27,16 +27,15 @@ The activity publishes all of the data from the required and optional properties
 
 ## Create Recovery Point Required Properties
 
-|   |   |
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Element   | Sample Value   |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | DataSourceID | The unique identifier (GUID) of the data source for the recovery point. This ID can be obtained using the Get Data Source activity prior to this activity in the runbook and subscribing to the DataSourceId property in published data. |
 
 ## Create Recovery Point Published Data
 
-|   |   |
-|-----------------------------------|------------------------------------------------------------------------------------------------|
-| Element   | Sample Value   |
+
+| Element              | Sample Value   |
+|-----------|-----------------------|
 | AllMediaCatalogued   | True or False   |
 | ComponentName   | The component name   |
 | ComponentType   | The component type   |

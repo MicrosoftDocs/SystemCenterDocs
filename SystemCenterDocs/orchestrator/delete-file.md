@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: a7fe1669-71b4-4f8b-a3c2-7b5c032dae91
 author: cfreemanwa
 ms.author: cfreeman
@@ -50,7 +50,6 @@ The following tables list the required properties and published data for this ac
 | Transfer Type (FTP)   | The transfer type used by FTP.   | Passive<br>Active   |
 | Username   | The user name used to connect to the FTP server.   | String   |
 
-#### Other Resources
+## See Also
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

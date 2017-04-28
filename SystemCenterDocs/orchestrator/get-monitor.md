@@ -2,19 +2,19 @@
 title: Get Monitor
 description: The Get Monitor activity is used in a runbook to retrieve monitoring activities from Operations Manager that match the criteria that you specify.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 196b2938-3b17-4ab8-bfe9-3f5fb17ba159
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Monitor
 
 Applies To: System Center 2016 - Orchestrator

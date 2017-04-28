@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 40e827f1-2dfa-4a05-81c8-e23bfd8643ec
 author: cfreemanwa
 ms.author: cfreeman
@@ -30,9 +30,9 @@ The activity publishes all of the data from the required and optional properties
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
-| Service DNS Prefix  | The DNS prefix name of the Windows Azure cloud service.   | String   |
+| Service DNS Prefix  | The DNS prefix name of the Azure cloud service.   | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | Staging, Production |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | True, False   |
 
 ## Delete Deployment Optional Properties
 
@@ -42,14 +42,11 @@ There are no optional properties for this runbook activity.
 
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
-| Service DNS Prefix  | The DNS prefix name of the Windows Azure cloud service.   | String   |
+| Request ID   | The unique identifier of the request to Azure.   | String   |
+| Service DNS Prefix  | The DNS prefix name of the Azure cloud service.   | String   |
 | Deployment Slot   | The deployment slot of the deployment.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
 
 ## See Also
-
-
-#### Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)

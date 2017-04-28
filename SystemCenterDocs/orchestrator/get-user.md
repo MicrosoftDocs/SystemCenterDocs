@@ -2,19 +2,19 @@
 title: Get User
 description: You can use the Get User activity in a runbook to get the properties of a user in the Microsoft Active Directory.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: c058aab3-9e89-4c52-93d6-d66666d4ba2f
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get User
 
 Applies To: System Center 2016 - Orchestrator

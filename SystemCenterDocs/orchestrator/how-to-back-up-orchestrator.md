@@ -1,19 +1,20 @@
 ---
 title: How to Back up Orchestrator
+description: Describes how to backup a System Center 2016 - Orchestrator environment.
 ms.custom: na
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 44c3460d-4171-4838-84c7-a9c3bd75b28a
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
+
 # How to Back up Orchestrator
 
 > Applies To: System Center 2016 - Orchestrator
@@ -21,9 +22,7 @@ manager: cfreeman
 A complete backup of an Orchestrator environment consists of the following:  
 
 -   Backup of the Orchestrator database.  
-
 -   File backup of the Orchestrator management server.  
-
 -   File backup of each Runbook server and Orchestrator web server.  
 
 System Center 2016 - Orchestrator supports Volume Shadow copy Service \(VSS\) for backup and restore with System Center 2016 - Data Protection Manager (DPM). VSS is a framework that allows volume backups to be performed while an application continues to run.  
@@ -46,3 +45,7 @@ Orchestrator management server, Runbook servers, and web servers do not persist 
 
 ## Orchestrator Database  
 The Orchestrator database is a standard SQL Server database that is supported by DPM. You should make sure to backup the service master key and store it in a secure off\-site location. For more information see [BACKUP SERVICE MASTER KEY \(Transact\-SQL\)](http://go.microsoft.com/fwlink/?LinkID=243093).  
+
+## Next steps
+
+[How to recover a database](how-to-recover-a-database.md)

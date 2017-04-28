@@ -2,19 +2,19 @@
 title: Get Storage Account Properties
 description: The Get Storage Account Properties activity returns system properties for the specified storage account.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: db5fcc47-994c-4e79-b3b2-78c85919ae9d
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Storage Account Properties
 
 Applies To: System Center 2016 - Orchestrator
@@ -51,11 +51,4 @@ There are no optional properties for this runbook activity.
 | Status of Primary   | Indicates whether the primary storage region is available.   | String   |
 | Status of Secondary   | Indicates whether the secondary storage region is available.   | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
-
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

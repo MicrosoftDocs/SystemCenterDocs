@@ -1,19 +1,20 @@
 ---
 title: How to Configure Runbook Servers to Optimize Performance of  .NET Activities
+description: Describes how to configure runbook servers in System Center 2016 - Orchestrator to optimize performance of .NET activities.
 ms.custom: na
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 13a804ec-3aea-479a-add1-5bd6cf73eba6
 author: cfreemanwa
 ms.author: cfreeman
-ms.date: 10/12/2016
-manager: cfreeman
+manager: carmonm
 ---
+
 # How to Configure Runbook Servers to Optimize Performance of  .NET Activities
 
 > Applies To: System Center 2016 - Orchestrator
@@ -22,7 +23,7 @@ If a runbook contains an activity that references the .NET libraries, the first 
 
 The solution to removing the delay is to deactivate **generatePublisherEvidence** in **PolicyModule.exe** or to create a profile for the service account.  
 
-### To deactivate generatePublisherEvidence in policymodule.exe.config  
+## To deactivate generatePublisherEvidence in policymodule.exe.config  
 
 1.  On the runbook server where runbooks that contain an activity referencing the .NET libraries run, locate the file **C:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Runbook Server\\policymodule.exe.config**.  
 
@@ -34,9 +35,9 @@ The solution to removing the delay is to deactivate **generatePublisherEvidence*
     </runtime>  
     ```  
 
-### To create a profile for the service account  
+## To create a profile for the service account  
 
 -   On the runbook server where runbooks run that contain an activity referencing the .NET libraries, log on to the computer that is using the service account credentials. A profile is created on first logon.  
 
-## See Also  
+## Next steps
 [Administering System Center 2016 - Orchestrator](../orch/manage/administering-orchestrator.md)  

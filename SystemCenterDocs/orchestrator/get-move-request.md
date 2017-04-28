@@ -2,19 +2,19 @@
 title: Get Move Request
 description: You can use the Get Move Request activity in a runbook to retrieve detailed information for an existing mailbox move request, for an on-premise environment.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 3b3e9322-cff6-4b32-af10-6b7fa0f22a65
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Move Request
 
 Applies To: System Center 2016 - Orchestrator
@@ -139,7 +139,4 @@ This Activity has no required properties.
 | Target Database   | Mailbox database where the mailbox is being moved to.   | String   |
 | Use SSL   | Indicates whether the communication with the Exchange Server is to be encrypted with SSL.   | String   |
 
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 

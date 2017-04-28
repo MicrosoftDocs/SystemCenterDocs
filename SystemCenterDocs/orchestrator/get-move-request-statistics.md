@@ -2,19 +2,19 @@
 title: Get Move Request Statistics
 description: You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premise environment.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 62e227c1-8233-4201-8bc1-cfbd4aa70f9e
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Move Request Statistics
 
 Applies To: System Center 2016 - Orchestrator
@@ -253,8 +253,3 @@ This activity has no required properties.
 | Use SSL   | Indicates whether SSL encryption is used.   | String   |
 | Validation Message   | Validation message.   | String   |
 | Workload Type   | Workload type.   | String   |
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

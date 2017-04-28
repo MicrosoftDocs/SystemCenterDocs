@@ -2,19 +2,19 @@
 title: Get Resource Pool Properties Activity
 description: The Get Resource Pool Properties activity is used in a runbook to retrieve all the runtime information and static configuration information for a resource pool.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: ffdc4a8b-e875-437d-afa0-9a1a0f1007bf
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # Get Resource Pool Properties Activity
 
 Applies To: System Center 2016 - Orchestrator
@@ -25,17 +25,17 @@ The following tables list the required and optional properties and published dat
 
 The activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.
 
-### Get Resource Pool Properties Activity Required Properties
+## Get Resource Pool Properties Activity Required Properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | ResourcePool Path | The path to the resource pool. | String   | Yes   |
 
-### Get Resource Pool Properties Activity Optional Properties
+## Get Resource Pool Properties Activity Optional Properties
 
 No optional properties are provided for this activity.
 
-### Get Resource Pool Properties Activity Published Data
+## Get Resource Pool Properties Activity Published Data
 
 | Name   | Description   | Value Type |
 |:---|:---|:---|
@@ -71,7 +71,7 @@ No optional properties are provided for this activity.
 
 The following procedure describes the steps required to configure a Get Resource Pool Properties activity.
 
-#### To configure the Get Resource Pool Properties activity
+### To configure the Get Resource Pool Properties activity
 
 1.  From the **Activities** pane, drag a **Get Resource Pool Properties** activity to the active runbook.
 

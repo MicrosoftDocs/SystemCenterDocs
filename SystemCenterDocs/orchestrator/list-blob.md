@@ -2,19 +2,19 @@
 title: List Blob
 description: The List Blob activity returns all user-defined metadata, standard HTTP properties, and system properties for blobs in the specified container.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 4/25/2017
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 1a10dcef-501b-4678-b1dd-ffdd963fa430
 author: cfreemanwa
 ms.author: cfreeman
 manager: carmonm
-robots: noindex
 ---
+
 # List Blob
 
 Applies To: System Center 2016 - Orchestrator
@@ -55,10 +55,4 @@ The activity publishes all of the data from the required and optional properties
 | Metadata   | Metadata associated with the blob in the format "Name1:Value1,Name2:Value2" | String   |
 | Storage Account Name   | The name of the storage account.   | String   |
 
-## See Also
-
-
-#### Other Resources
-
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
 
