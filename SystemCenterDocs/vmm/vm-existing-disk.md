@@ -4,7 +4,7 @@ title: Deploy VMs in the VMM fabric from an existing hard disk
 description: This article describes how to create and deploy VMs in the VMM fabric from an existing virtual hard disk
 author:  rayne-wiselman
 ms.author: rayne
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-2016

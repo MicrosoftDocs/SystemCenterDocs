@@ -4,7 +4,7 @@ title: VMM system requirements
 description: This article provides information about system requirements for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  04/05/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
@@ -129,6 +129,6 @@ Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more
 VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
 
 
-## Next steps</h2>
+## Next steps
 
 [Plan VMM installation](~/vmm/install.md)

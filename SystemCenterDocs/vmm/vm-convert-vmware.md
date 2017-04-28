@@ -4,7 +4,7 @@ title: Convert a VMware VM to Hyper-V in the VMM fabric
 description: This article describes how to convert VMware VMs in VMM fabric to Hyper-V
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
