@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 02ec5f7f-abad-4144-b78c-f32dfc7312af
 author: cfreemanwa
 ms.author: cfreeman
@@ -28,7 +28,7 @@ The activity publishes all of the data from the required and optional properties
 | **Element**   | **Description**   | **Valid values** |
 |:---|:---|:---|
 | Disk Name   | The name of the disk.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | True, False   |
 
 ## Delete VM Disk Optional Properties
 
@@ -39,13 +39,9 @@ There are no optional properties for this runbook activity.
 | **Element**   | **Description**   | **Value type** |
 |:---|:---|:---|
 | Disk Name   | The name of the disk.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
+| Request ID   | The unique identifier of the request to Azure.   | String   |
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

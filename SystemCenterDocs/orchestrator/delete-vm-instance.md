@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 40a56eae-4b1f-4110-a0a7-a1449e8bba6a
 author: cfreemanwa
 ms.author: cfreeman
@@ -30,7 +30,7 @@ The activity publishes all of the data from the required and optional properties
 | VM Service Name   | The name of the cloud service containing the virtual machine.   | String   |
 | VM Deployment Name  | The name of the deployment containing the virtual machine.   | String   |
 | VM Instance Name   | The name of the virtual machine.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | True, False   |
 
 ## Delete VM Instance Optional Properties
 
@@ -43,13 +43,9 @@ There are no optional properties for this runbook activity.
 | VM Service Name   | The name of the cloud service containing the virtual machine.   | String   |
 | VM Deployment Name  | The name of the deployment containing the virtual machine.   | String   |
 | VM Instance Name   | The name of the virtual machine.   | String   |
-| Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
-| Request ID   | The unique identifier of the request to Windows Azure.   | String   |
+| Wait for Completion | Whether to wait for this operation to complete in Azure before moving on to the next activity. | Boolean   |
+| Request ID   | The unique identifier of the request to Azure.   | String   |
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

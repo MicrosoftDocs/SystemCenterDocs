@@ -1,6 +1,6 @@
 ---
 title: Delete Storage Account
-description: The Delete Storage Account activity deletes the specified storage account from Windows Azure.
+description: The Delete Storage Account activity deletes the specified storage account from Azure.
 ms.custom: na
 ms.date: 12/02/2016
 ms.prod: system-center-threshold
@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: c1167698-44e1-4f63-9400-00e964077e62
 author: cfreemanwa
 ms.author: cfreeman
@@ -19,7 +19,7 @@ robots: noindex
 
 Applies To: System Center 2016 - Orchestrator
 
-The **Delete Storage Account** activity deletes the specified storage account from Windows Azure. It is part of the **Azure Storage** category activity.
+The **Delete Storage Account** activity deletes the specified storage account from Azure. It is part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.
 
@@ -41,8 +41,4 @@ There are no optional properties for this runbook activity.
 
 ## See Also
 
-
-#### Other Resources
-
 [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-

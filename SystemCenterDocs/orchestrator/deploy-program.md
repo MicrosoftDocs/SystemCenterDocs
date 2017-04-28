@@ -8,7 +8,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 62285d61-2831-46bb-8a6b-b0de2b69476d
 author: cfreemanwa
 ms.author: cfreeman
@@ -50,28 +50,35 @@ optional properties into published data.
 - Package Value Type: Specifies whether the value in the **Package** property is a name or an application ID. Options are:
     -   **ID** (default): the value is a package ID
     -   **Name**: the value is a package name
+
 - Collection: The display name or ID of an existing collection.
     >[!NOTE]
     >When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to **Name** or the activity will fail.
+
 - Collection Value Type: Specifies whether the value in the **Collection** property is a name or a collection ID. Options are:
     -   **ID** (default): the value is a collection ID
     -   **Name**: the value is a collection name
+
 - Purpose: The deployment intent or purpose. Options are:
     -   **Required** (default): the application is mandatory to be installed or uninstalled
     -   **Available**: the application is made available but not mandatory
     >[!NOTE]
     >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
+
 - Rerun behavior: Specifies whether the program will be rerun on the client computer if it has previously been run before the scheduled mandatory time. Options are:
     -   **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is particularly useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
     -   **Never rerun program**: The program will not be rerun on the client if the program has previously been run on the client, even if the program originally failed or the program files have been changed.
     -   **Rerun if failed previous attempt**: The program will be rerun when the advertisement is scheduled only if it failed on the previous run attempt. This is particularly useful when assigning a mandatory advertisement, so that it will rerun according to the assignment schedule if it has not successfully done so.
     -   **Rerun if succeeded on previous attempt**: The program will be rerun only if it has previously run successfully on the client. This is useful when using recurring advertisements in which the program is routinely updated, and in which each update requires the previous update to have been successfully installed.
+
 - Distribution Point: The name of a distribution point to where the content for this deployment will be distributed. The name is typically in a UNC format, such as: “\\\\server1.contoso.com”
     >[!NOTE]
     >If there are no default distribution point groups associated with the collection, and the content is not already distributed, this property or the **Distribution Point Group** property must have a value or the activity will fail.
+
 - Distribution Point Group: The name of a distribution point group to where the content for this deployment will be distributed.
     >[!WARNING]
     >If there are no default distribution point groups associated with the collection, and the content is not already distributed, this property or the **Distribution Point** property must have a value or the activity will fail.
+
 - Enable peer caching: True or False (Default = True) Select this option to reduce load on the network by allowing clients to download content from other clients on the network that have already downloaded and cached the content. This option utilizes Windows BranchCache and can be used on computers running Windows Vista SP2 and later.
 
 ## Deploy Program optional properties
@@ -83,12 +90,15 @@ optional properties into published data.
 - Fast (LAN) boundary deployment option: Specifies how a program is run when the client is connected within a fast (LAN) network boundary. Options are:
     -   **Download content and run locally** (default): the client will download the content from the Distribution Point before attempting to run the program.
     -   **Run program from Distribution Point**: The client will run the program from the Distribution Point without downloading it first.
+
 - Send Wake-up Packets: True or False (Default = False) Specifies whether the Configuration Manager server will send a Wake On LAN packet to the computer prior to the advertised program.
     >[!NOTE]
     >This setting applies only if the **Purpose** is set to **Required**.
+
 - Slow boundary deployment option: Specifies the options available when the client is within a slow or unreliable network boundary. Options are:
     -   **Do not run program** (default): The program will not be run when a client is connected within a slow or unreliable network boundary.
     -   **Download content and run locally**: the client will download the content from the Distribution Point before attempting to run the program.
+
 - Use default distribution point groups: True or False (Default = True) If distribution point groups are already associated with this collection, the content associated with this deployment will automatically be distributed to those distribution point groups without having to specify individual distribution points or groups.
 
 ## Schedule Tab properties
@@ -97,11 +107,13 @@ optional properties into published data.
 - Deployment Availability Time: The date/time when this deployment will be made available.
     >[!NOTE]
     >If you set **Schedule when this deployment will become available** to **True**, this property is set to the current time unless set otherwise.
+
 - Schedule when this deployment will expire: True or False (Default = False) By default, the deployment does not expire. If you wish to define an expiration, then set this property to **True** and set the associated date/time below.
 - Deployment expiration: The date/time to use for the installation deadline for this deployment.
     >[!NOTE]
     >If you set **Schedule when this deployment will expire** to **True**, this property is set to the current time unless set otherwise.
-- Mandatory Assignments Options: 
+
+- Mandatory Assignments Options:
   - **Use the following schedule options**:
     - **None**: Specifies that the operation does not occur.
     - **Weekly**: Specifies that the operation recurs every N weeks. If this option is selected, you must specify the day of the week on which the operation will occur.
