@@ -15,7 +15,7 @@ Service Management Automation is an IT process automation solution for Windows A
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/sma/get-started/overview-of-service-management-automation">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/sma/overview-of-service-management-automation">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Service Management Automation is an IT process automation solution for Windows A
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/sma/manage/authoring-automation-runbooks">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/sma/authoring-automation-runbooks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Service Management Automation is an IT process automation solution for Windows A
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/sma/get-started/architecture-of-service-management-automation">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/sma/automate-operations-service-management-automation">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
