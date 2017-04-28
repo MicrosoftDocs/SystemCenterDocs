@@ -193,6 +193,6 @@ Keep the following recommendations in mind if you do use an **InlineScript** in 
 For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](http://go.microsoft.com/fwlink/?LinkID=324625) and [about_InlineScript](http://go.microsoft.com/fwlink/?LinkID=324624).
 
 ## See Also
-[Runbook Execution in Service Management Automation](runbook-automation1.md)
+[Runbook Execution in Service Management Automation](runbook-automation.md)
 
 [Authoring Automation Runbooks](authoring-automation-runbooks.md)
