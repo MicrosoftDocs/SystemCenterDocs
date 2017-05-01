@@ -81,7 +81,7 @@ In this example, we will prepare a remote SQL Server cluster to use for the migr
 
 8. After the restore is complete, the restored database will be seen under the **Databases** with the original name. This Database will be used during the upgrade. You can exit **Microsoft SQL Management Studio** and start the upgrade process on the original DPM Server.
 
-      ![Select DPMDB](./media/upgrade-to-dpm-2016/dpm-2016-selSect-dpmdb.png)
+      ![Select DPMDB](./media/upgrade-to-dpm-2016/dpm-2016-select-dpmdb.png)
 
 9. If the new SQL Server is a remote SQL server, install the SQL management tools on the DPM server. The SQL management tools must be the same version matching the SQL server hosting the DPMDB.
 
