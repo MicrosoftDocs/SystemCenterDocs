@@ -14,7 +14,6 @@
 ### [Windows PowerShell Workflow Concepts](overview-powershell-workflows.md)
 ### [Runbook Output and Messages](overview-runbook-messages-output.md)
 ### [Child Runbooks in Service Management Automation](link-runbooks.md)
-### [Service Management Automation sample runbooks](sample-runbooks.md)
 ## [Manage Runbooks](manage-runbooks.md)
 ## Manage SMA
 ### [Set or change the Service Management Automation endpoint](set-change-endpoint.md)

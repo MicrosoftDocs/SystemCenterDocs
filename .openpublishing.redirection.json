@@ -2767,7 +2767,7 @@
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Service-Management-Automation-sample-runbooks.md",
-     "redirect_url" : "/system-center/sma/sample-runbooks"
+     "redirect_url" : "/system-center/sma/authoring-automation-runbooks"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Service-Management-Automation-system-runbooks.md",
