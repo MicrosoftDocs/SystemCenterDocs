@@ -164,7 +164,7 @@ $runbookContent = $runbookDefinition.Content
 Out-File -InputObject $runbookContent -FilePath $scriptPath
 ```
 
-### <a name="ChangeContentsPowerShell"></a>To Change the Contents of a Runbook Using Windows PowerShell
+### <a name="ChangeContentsPowerShell"></a>To Change the contents of a runbook using Windows PowerShell
 The following sample commands show how to replace the existing contents of a runbook with the contents of a script file containing a workflow.
 
 ```powershell
@@ -256,7 +256,7 @@ To test a runbook, [open the Draft version of the runbook in the Management Port
 
 You can stop or suspend the runbook while it is being tested with the buttons underneath the Output Pane. When you suspend the runbook, it completes the current activity before being suspended. Once the runbook is suspended, you can stop it or restart it.
 
-### To test a runbook Using Windows PowerShell ISE
+### To test a runbook using Windows PowerShell ISE
 The [PowerShell ISE add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) provides cmdlets that emulate the standard activities such as Get-SMACredential and Set-SMAVariable, so you can test the runbook on the local computer just as you would any other script.   
 
 Global assets and their values are downloaded from the automation group to use for local testing.  You can inspect or change these values on the **Assets** tab.  Encrypted values are displayed in orange, and their values are not downloaded.  If you want to use these assets in local testing, then you must set their value locally.
@@ -266,8 +266,6 @@ To test the runbook in SMA, click **Test Draft in SMA**.  A new window will be o
 ## Automation runbook samples
 
 The following runbooks ship with Service Management Automation as sample runbooks to illustrate techniques and best practices. They are available to be used in the Automation extension in Windows Azure Pack for Windows Server.
-
-## Sample runbooks
 
 |Runbook name|Description|
 |----------------|---------------|

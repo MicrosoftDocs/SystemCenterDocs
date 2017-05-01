@@ -15,7 +15,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/vmm/plan-overview">
+        <a href="https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/vmm/install">
+        <a href="https://technet.microsoft.com/en-us/system-center-docs/vmm/deploy/deploy-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,13 +51,13 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/vmm/cloud-create">
+        <a href="https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/cloud-create">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="" />
+                            <img src="/media/common/i_vmm-cloud.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -69,13 +69,13 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/vmm/manage-networks">
+        <a href="/system-center/vmm/manage-networks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="" />
+                            <img src="/media/common/i_config-tools.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -87,13 +87,13 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/vmm/manage-storage">
+        <a href="/system-center/vmm/manage-storage">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/placeholder.svg" alt="" />
+                            <img src="/media/common/i_config-tools.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
