@@ -81,7 +81,7 @@ In this example, we will prepare a remote SQL Server cluster to use for the migr
 
 8. After the restore is complete, the restored database will be seen under the **Databases** with the original name. This Database will be used during the upgrade. You can exit **Microsoft SQL Management Studio** and start the upgrade process on the original DPM Server.
 
-      ![Select DPMDB](./media/upgrade-to-dpm-2016/dpm-2016-select-DPMDB.png)
+      ![Select DPMDB](./media/upgrade-to-dpm-2016/dpm-2016-select-dpmdb.png)
 
 9. If the new SQL Server is a remote SQL server, install the SQL management tools on the DPM server. The SQL management tools must be the same version matching the SQL server hosting the DPMDB.
 
@@ -193,7 +193,7 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
   ![Stop protection](./media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
-    The **Remove from Group** dialog opens.
+  The **Remove from Group** dialog opens.
 
 2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Click **OK**.
 
@@ -201,7 +201,7 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
     ![Retain data](./media/upgrade-to-dpm-2016/dpm-2016-retain-data.png)
 
-3. Create a new protection group that uses Modern Backup Storage. and include the unprotected data sources.
+3. Create a new protection group that uses Modern Backup Storage, and include the unprotected data sources.
 
 
 ## Adding Disks to increase legacy storage
