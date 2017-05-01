@@ -24,7 +24,6 @@
 ### [Track runbooks](track-runbooks-audit-trail.md)
 ### [Runbook samples](runbook-samples.md)
 ## Manage Orchestrator Servers
-### [Orchestrator logs](orchestrator-logs.md)
 ### [Runbook permissions](runbook-permissions.md)
 ### [How to backup Orchestrator](how-to-back-up-orchestrator.md)
 ### [How to benchmark](how-to-benchmark.md)
@@ -372,3 +371,4 @@
 ##### [Update user role property](update-user-role-property.md)
 ##### [Update user role quota](update-user-role-quota.md)
 ##### [Update vm](update-vm.md)
+## [Orchestrator logs](orchestrator-logs.md)

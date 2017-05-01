@@ -52,6 +52,18 @@ Service Management Automation(SMA) enables you to automate business processes an
 
 SMA also has deep integration with Windows Azure Pack, however, you no longer need to use Windows Azure Pack portal for authoring SMA runbooks. Authoring can be done within PowerShell ISE through [PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit/). SMA now also supports native PowerShell script type runbooks. You can know more about the new features in SMA over [here](~/sma/whats-new-in-service-management-automation.md)
 
+The following diagram illustrates each of the Service Management Automation features and the communication with a Windows Azure Pack installation.
+
+![SMA Architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+
+-   The Service Management Automation web service communicates with Windows Azure Pack and authenticates users.
+
+-   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
+
+-   Runbook workers run the runbooks, and they can be used for load balancing.
+
+-   The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
+
 > [!IMPORTANT]
 > The [Service Management Automation Developer's Guide](http://go.microsoft.com/fwlink/?LinkId=398741) is now available. This is a set of REST API reference documentation for the Service Management Automation web service.
 

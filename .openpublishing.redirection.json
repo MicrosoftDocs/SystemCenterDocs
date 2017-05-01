@@ -2762,12 +2762,20 @@
      "redirect_url" : "/system-center/sma/manage-global-assets"
 },
 {
+     "source_path" : "SystemCenterDocs/SMA/Manage/administer-service-management-automation.md",
+     "redirect_url" : "/system-center/sma/manage-runbooks"
+},
+{
+     "source_path" : "SystemCenterDocs/SMA/Manage/automate-operations-service-management-automation.md",
+     "redirect_url" : "/system-center/sma/runbook-automation"
+},
+{
      "source_path" : "SystemCenterDocs/sma/Manage/Runbook-Output-and-Messages.md",
      "redirect_url" : "/system-center/sma/overview-runbook-messages-output"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Service-Management-Automation-sample-runbooks.md",
-     "redirect_url" : "/system-center/sma/sample-runbooks"
+     "redirect_url" : "/system-center/sma/authoring-automation-runbooks"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Service-Management-Automation-system-runbooks.md",
