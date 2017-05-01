@@ -15,7 +15,7 @@ Service Manager provides an integrated platform for automating and adapting your
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://technet.microsoft.com/system-center-docs/sm/service-manager">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/service-manager">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/system-center-docs/sm/plan/plan-planning-for-system-center-2016-service-manager">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/plan-sm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/system-center-docs/sm/deploy/deploy-deploying-system-center-2016-service-manager">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/deploy-sm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/system-center-docs/sm/deploy/upgrade-upgrading-system-center-2012-service-manager-to-system-center-2016">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/upgrade-to-sm-2016">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +87,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/system-center-docs/sm/manage/admin-administering-system-center-2016-service-manager">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/admin-tasks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +105,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/system-center-docs/sm/manage/author-authoring-for-system-center-2016-service-manager">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/author-with-sm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

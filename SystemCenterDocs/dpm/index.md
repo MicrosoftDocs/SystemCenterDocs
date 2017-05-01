@@ -15,7 +15,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/dpm/get-started/how-does-dpm-work-">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/how-dpm-protects-data">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/dpm/get-started/what-can-dpm-back-up-">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/dpm-protection-matrix">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/dpm/deploy/deploy">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/deploy-dpm-protection-agent">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="/system-center/dpm/dpm-support-issues">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/dpm-support-issues">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -79,7 +79,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What’s supported for DPM</h3>
+                        <h3>Whatâ€™s supported for DPM</h3>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="/system-center/dpm/monitor-dpm">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/monitor-dpm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

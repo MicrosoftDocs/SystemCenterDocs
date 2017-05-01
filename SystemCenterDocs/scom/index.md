@@ -15,7 +15,7 @@ Operations Manager monitors services, devices, and operations for many computers
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/om/get-started/operations-manager-key-concepts">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scom/key-concepts">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Operations Manager monitors services, devices, and operations for many computers
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/om/plan/plan-summary">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scom/plan-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Operations Manager monitors services, devices, and operations for many computers
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/om/deploy/deploying-system-center-2016-operations-manager">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scom/deploy-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ Operations Manager monitors services, devices, and operations for many computers
         </a>
     </li>
     <li>
-        <a href="/system-center/scom/manage-quick-reference">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scom/manage-quick-reference">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +87,7 @@ Operations Manager monitors services, devices, and operations for many computers
         </a>
     </li>
     <li>
-        <a href="/system-center/scom/manage-overview-management-pack">
+        <a href="https://review.docs.microsoft.com/en-us/system-center/scom/manage-overview-management-pack">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
