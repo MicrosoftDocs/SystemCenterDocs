@@ -26,7 +26,7 @@ With SDN QoS:
 
 For detailed information about the SDN QoS settings available in Network Controller, see [Configure Quality of Service (QoS) for a Tenant VM Network Adapter](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/manage/configure-qos-for-tenant-vm-network-adapter).
 
-SDN QoS settings are managed in VMM through virtual network adapter port profiles associated with a port classification. These settings enable uniformity and ease of application across multiple adapters.
+SDN QoS settings are managed in VMM through virtual network adapter port profiles associated with a port classification. Port profile settings enable uniformity and ease of application across multiple adapters.
 
 ## Before you start
 Ensure you have the network controller deployed in the SDN fabric. [Learn more](sdn-network-controller.md).
@@ -38,13 +38,6 @@ Ensure you have the network controller deployed in the SDN fabric. [Learn more](
    - [Apply port classification to virtual network adapter](#apply-port-classification-to-virtual-network-adapter)
 
 ### Create virtual network adapter port profiles
-Maximum bandwidth (Mbps) and Minimum bandwidth (Weight) are used to reserve a portion of the outbound bandwidth for the vNICs.
-
-> [!NOTE]
-> - Minimum bandwidth (Mbps) is not supported by VMM for SDN.  
-> - Limiting the inbound bandwidth of the vNIC is not supported by VMM.
-
-> - Minimum bandwidth (Weight) sets the **outboundReservedValue** setting on the network controller and maximum bandwidth (Mbps) sets the **outboundMaximumMbps** setting.
 
 To create virtual network adapter port profile, use the following procedure:
 
@@ -54,16 +47,20 @@ To create virtual network adapter port profile, use the following procedure:
 4.	Go to **Bandwidth Settings**.
 
     ![vNIC port profile](../media/bandwidth-settings-vnic-port-profile.png).
-5.	In **Bandwidth Settings**, enter the minimum and maximum bandwidth values that you want to apply to the selected vNIC.
+5.	In **Bandwidth Settings**, enter the minimum and maximum bandwidth values that you want to apply to the selected vNIC. Maximum bandwidth (Mbps) and Minimum bandwidth (Weight) are used to reserve a portion of the outbound bandwidth for the vNICs.
 
-    - Maximum bandwidth (Mbps): Specify the maximum outbound bandwidth that can be used by this vNIC. This is irrespective of the bandwidth mode configured on the switch. A value of 0 implies that the maximum is not configured. Range: 0-100.
+    - **Maximum bandwidth (Mbps)**: Specify the maximum outbound bandwidth that can be used by this vNIC. This is irrespective of the bandwidth mode configured on the switch. A value of 0 implies that the maximum is not configured.
 
-    - Minimum bandwidth (Weight): Specify a weighted portion of the outbound bandwidth that you want to reserve for this vNIC. This will reserve a weighted portion of the total physical NIC(s) bandwidth based on the total weights reserved by all other vNICs for a particular switch.
+    - **Minimum bandwidth (Weight)**: Specify a weighted portion of the outbound bandwidth that you want to reserve for this vNIC. This will reserve a weighted portion of the total physical NIC(s) bandwidth based on the total weights reserved by all other vNICs for a particular switch.
+
 6. In **Summary**, view the settings and click **Finish**.
 
 > [!NOTE]
 
-> Ensure that the minimum and maximum values for bandwidth are within the bandwidth range of the physical NIC(s) that the logical switch is deployed on. Otherwise the bandwidth allocation request will be rejected.
+> - Minimum bandwidth (Mbps) is not supported by VMM for SDN.  
+> - Limiting the inbound bandwidth of the vNIC is not supported by VMM.
+> - Minimum bandwidth (Weight) sets the **outboundReservedValue** setting on the network controller and maximum bandwidth (Mbps) sets the **outboundMaximumMbps** setting.
+- Ensure that the minimum and maximum values for bandwidth are within the bandwidth range of the physical NIC(s) that the logical switch is deployed on. Otherwise the bandwidth allocation request will be rejected.
 
 
 ### Create port classification
@@ -96,7 +93,7 @@ To apply a port classification (and hence the QoS settings) to a virtual network
 
 1.	Go to **VMs and Services**, right-click the selected VM and open its **Properties**.
 2.	Go to the **Hardware Configuration** page and select the virtual network adapter.
-3.	Select the desired port classification from the **lassification** drop-down list.
+3.	Select the desired port classification from the **Classification** drop-down list.
 ![Network adapter hardware configuration](../media/network-adapter-hardware-configuration.png)
 
 
