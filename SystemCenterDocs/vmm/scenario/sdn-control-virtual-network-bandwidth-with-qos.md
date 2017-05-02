@@ -82,10 +82,9 @@ To associate a port classification to the logical switch, use the following proc
 3.	Select  Virtual Ports , click **Add** to open the **Add Virtual Port** dialog.
 ![classification for virtual port](../media/port-classification-for-virtaul-port.png)
 4.	**Browse** to select the port classification (as an example: **TenantA Workload**) and click **OK**.
-5.	Select the **Include the Hyper-V virtual network adapter port profile** option and click **Browse**.
+5.	Select the **Include the Hyper-V virtual network adapter port profile** option and click **Browse**.  Select the vNIC port profile, (as an example, **TenantA**  that you created in the previous procedure) click **OK**.
 
-    Select the vNIC port profile, (as an example, **TenantA**  that you created in the previous procedure) click **OK**.
-![virtual port](../media/configure-virtual-port.png)
+    ![virtual port](../media/configure-virtual-port.png)
 6. Repeat the above steps to add the port classifications required for this logical switch.
 
 ## Apply port classification to virtual network adapter
