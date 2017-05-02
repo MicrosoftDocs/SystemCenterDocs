@@ -103,9 +103,3 @@ To apply a port classification (and hence the QoS settings) to a virtual network
 > [!NOTE]
 - Only the classifications available for the logical switch are displayed here. You can also apply a port classification while creating a VM.
 - You can also apply a port classification to the host virtual network adapter via the host properties Virtual Switches page.
-
-
-
-## Next steps
-
-[to be updated]
