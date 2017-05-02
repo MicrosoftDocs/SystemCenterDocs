@@ -1,0 +1,33 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+  - name: System Center
+    href: /system-center/
+    homepage: /system-center/
+    items:
+    - name: DPM
+      href: /system-center/dpm/
+      homepage: /system-center/dpm/dpm-overview
+    - name: SCOM
+      href: /system-center/scom/
+      homepage: /system-center/scom/welcome
+    - name: Orchestrator 
+      href: /system-center/orchestrator/
+      homepage: /system-center/orchestrator/learn-about-orchestrator
+    - name: SCSM
+      href: /system-center/scsm/
+      homepage: /system-center/scsm/service-manager
+    - name: SMA
+      href: /system-center/sma/
+      homepage: /system-center/sma/service-management-automation
+    - name: SPF
+      href: /system-center/spf/
+      homepage: /system-center/spf/overview
+    - name: VMM
+      href: /system-center/vmm/
+      homepage: /system-center/vmm/vmm
+      
+      
+    
+      
