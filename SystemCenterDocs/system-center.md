@@ -44,12 +44,12 @@ You can download System Center 2016 from the [TechNet Evaluation Center](http://
 
 ## Components
 
--   [Data Protection Manager](dpm/Data-Protection-Manager.md)
+-   [Data Protection Manager](dpm/dpm-overview.md)
 
--   [Operations Manager](om/welcome-to-operations-manager.md)
+-   [Operations Manager](scom/welcome.md)
 
 -   [Orchestrator](orch/Orchestrator.md)
 
--   [Service Manager](sm/Service-Manager.md)
+-   [Service Manager](scsm/service-manager.md)
 
 -   [Virtual Machine Manager](vmm/vmm.md)
