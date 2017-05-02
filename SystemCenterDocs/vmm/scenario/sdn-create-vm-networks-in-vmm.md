@@ -93,7 +93,3 @@ Once the job is successfully completed, you can view the newly created VM networ
 > [!NOTE]
 
 >If you had created an IP pool on the logical network, the same will be directly available for the VM network.
-
-## Next steps
-
-[Create an IP pool for a VM network](../manage/manage-network-static-address-pools.md#set-up-an-ip-address-pool-on-a-vm-network)
