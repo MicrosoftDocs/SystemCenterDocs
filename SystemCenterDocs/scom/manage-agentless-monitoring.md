@@ -36,7 +36,7 @@ To change an agentless-managed computer to an agent-managed computer, do the fol
 2.  Deploy the agent to the computer. For more information, see [managing discovery and agents](../om/manage/managing-discovery-and-agents.md).  
   
 ## Agentless monitoring compared to Agentless Exception Monitoring  
-Agentless monitoring provides monitoring of computers without agents by using a proxy agent and applying those management packs that support agentless monitoring. Agentless Exception Monitoring (AEM) redirects hardware, operating system, and application crash information to Operations Manager, which can aggregate, view, and report on error reports that are sent by the Windows Error Reporting service. For information on AEM, see [Client monitoring using Agentless Exception Monitoring in Operations Manager](client-monitoring-using-agentless-exception-monitoring-in-operations-manager.md).  
+Agentless monitoring provides monitoring of computers without agents by using a proxy agent and applying those management packs that support agentless monitoring. Agentless Exception Monitoring (AEM) redirects hardware, operating system, and application crash information to Operations Manager, which can aggregate, view, and report on error reports that are sent by the Windows Error Reporting service. For information on AEM, see [Client monitoring using Agentless Exception Monitoring in Operations Manager](manage-client-monitoring-using-aem.md).  
   
 You can monitor a computer without an agent by using either agentless monitoring, AEM, or both.  
 

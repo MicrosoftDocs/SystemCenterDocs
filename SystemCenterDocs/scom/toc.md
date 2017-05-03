@@ -68,6 +68,7 @@
 #### [How to import, export, and remove a management pack](manage-mp-import-remove-delete.md)
 #### [Create a management pack for overrides](manage-mp-create-unsealed-mp.md)
 #### [How to override a Rule or Monitor](manage-mp-override-rule-monitor.md)
+#### [How to enable a Rule or Monitor](manage-enable-or-disable-rule-monitor.md)
 #### [How to add knowledge](manage-mp-add-knowledge.md)
 #### [Management Pack assessment](manage-mp-mpassessment.md)
 ### Using the Operations Manager consoles

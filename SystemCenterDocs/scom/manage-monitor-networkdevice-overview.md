@@ -87,7 +87,7 @@ There are additional management packs that are required to relate network device
 
 ## How Network device discovery works  
 
-Network device discovery is performed by discovery rules that you create. For instructions on creating a discovery rule, see [How to discover network devices in Operations Manager](manage-monitor-networkdevice-overview.md) and [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).  
+Network device discovery is performed by discovery rules that you create. For instructions on creating a discovery rule, see [How to discover network devices in Operations Manager](manage-monitor-networkdevice-discover.md) and [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).  
   
 When you create a discovery rule, you designate a management server or gateway server to run the rule. Each management server or gateway server can run only one discovery rule. You may need to strategically place management servers on different network segments so that they can access the network devices that they are discovering.  
   
