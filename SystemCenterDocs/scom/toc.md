@@ -131,7 +131,7 @@
 ### [Agentless monitoring](manage-agentless-monitoring.md)
 ### [Client monitoring using Agentless Exception Monitoring](manage-client-monitoring-using-aem.md)
 ### [Monitoring networks with Operations Manager](manage-monitor-networkdevice-overview.md)
-#### [How to discover network devices](manage-monitor-networkdevice-overview.md)
+#### [How to discover network devices](manage-monitor-networkdevice-discover.md)
 #### [Network device discovery settings](manage-monitor-networkdevice-discovery-settings.md)
 #### [Run As accounts for network monitoring](manage-monitor-networkdevice-authentication.md)
 #### [How to delete or restore a network device](manage-monitor-networkdevice-delete-restore.md)
