@@ -122,4 +122,4 @@ Repeat the preceding step on the following files:
 
 ## Next steps
 
-- To configure FIPS compliance for the Reporting server, see [Configure Authentication for Reporting server](configure-authentication-with-reporting-server.md) 
+- To configure FIPS compliance for the Reporting server, see [Configure Authentication for Reporting server](manage-config-authentication-reporting-server.md) 

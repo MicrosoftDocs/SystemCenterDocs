@@ -4,7 +4,7 @@ title: How to Enable Recovery and Diagnostic Tasks
 description:  This topic describes how to create tasks to diagnose issues and take remedial actions.
 author: mgoedtel
 manager: carmonm
-ms.date: 10/12/2016
+ms.date: 05/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -20,10 +20,14 @@ Monitors in System Center 2016 - Operations Manager can do more than notify you 
 A task is a script or other executable code that runs either on the computer running the Operations console or on the server, client, or device that is being managed. Tasks can potentially perform any kind of activity, including restarting a failed application and deleting files.  
   
 Monitors can have two kinds of tasks associated with them: diagnostic tasks that try to discover the cause of a problem or provide you with additional information to assist with that diagnosis, and recovery tasks that try to fix the problem.  
+
+Diagnostic and recovery tasks can only be created for a specific monitor. A diagnostic or recovery task that you create for one monitor cannot be shared with or associated with a different monitor; you must recreate the task for each monitor. In addition, tasks that you create in the **Authoring** workspace using the **Create Task Wizard** cannot be used as a diagnostic or recovery for a monitor.
   
 Some monitors have diagnostic or recovery tasks that are disabled by default. You can enable any of these tasks that you want the monitor to run. For example, in the following image, you see that some recovery tasks for the **Health Service Heartbeat Failure** monitor are not configured to run automatically.  
   
 ![Recovery Task Disabled Example](./media/how-to-enable-recovery-and-diagnostic-tasks/om2016-recovery-tasks-example.png)  
+
+On this tab, you can also add tasks or edit tasks that you have added previously. For more information on how to add diagnostic and recovery tasks, see [Diagnostics and Recoveries](http://go.microsoft.com/fwlink/?LinkId=230462) in the Author's Guide. Tasks that are configured by a sealed management pack can only be modified by using overrides. 
   
 ## To enable a diagnostic or recovery task  
   

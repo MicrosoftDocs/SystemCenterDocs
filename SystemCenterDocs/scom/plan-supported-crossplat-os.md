@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 05/03/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -67,6 +67,13 @@ The following tables describe the required UNIX and Linux operating systems and 
 |glibc|C Standard Libraries|2.17|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
 |PAM|Pluggable Authentication Modules|1.1.8-1|  
+
+## Red Hat Enterprise Linux Server 7 (Power)  
+|Required Package|Description|Minimum Version|  
+|--------------------|---------------|-------------------|  
+|glibc|C Standard Libraries|2.17|  
+|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
+|PAM|Pluggable Authentication Modules|1.1.8|  
   
 ## Solaris 10 SPARC  
   
