@@ -4,10 +4,10 @@ title: System Requirements for System Center 2016 - Operations Manager
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2016.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreeman
-ms.date: 03/10/2017
+manager: carmonm
+ms.date: 05/03/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -186,4 +186,24 @@ System Center 2016 - Operations Manager supports an in-place upgrade from the fo
 
 ## Active Directory and DNS
 
-Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization.  DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.  For further information regarding what AD and DNS requirements you need to evaluate before deploying Operations Manager in your environment, please review [Active Directory and DNS Planning](planning-adds-dns.md). 
+Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization.  DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.  
+
+### Active Directory Domain Services
+
+System Center 2016 – Operations Manager relies on AD DS for a number of services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
+
+### Domain space naming
+
+An Operations Manager management group cannot be installed into a root Active Directory domain that has a flat DNS namespace. However, you can install the management group into child domains of the root domain. For example, you have a root domain that has a DNS name of "Woodgrove". Because this root domain has a flat DNS namespace, you cannot install an Operations Manager management group into the Woodgrove domain. But, if the Woodgrove domain has a child domain with a DNS name of "National", the fully qualified domain name of the child domain would be national.woodgrove. For more information about configuring Windows for domains with single-label DNS names, see Information about configuring Active Directory domains by using single-label DNS names.
+
+### Domain functional level
+
+Windows Server Active Directory can operate at different functional levels. These levels are distinguished by the version of the Windows Server operating system that is permitted on the domain controllers present in the domain. System Center 2016 – Operations Manager does not have a domain functional level requirement.  
+
+### Forest functional level
+
+The forest functional level is similar to the domain functional level in that it sets a minimum domain controller operating system level across the whole forest. After it is set, domain controllers with down-level operating systems from lower functional levels cannot be introduced into the forest. Operations Manager does not have a forest functional level requirement.
+
+### DNS
+
+DNS must be installed and in a healthy state to support AD DS. Beyond the reliance of Operations Manager on AD DS, there are no specific DNS requirements.
