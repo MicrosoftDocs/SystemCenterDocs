@@ -124,6 +124,8 @@
 #### [Required capabilities for UNIX and Linux computers](manage-security-crossplat-capabilities.md)
 #### [Configuring SSL ciphers](manage-security-crossplat-config-sslcipher.md)
 #### [Administering and configuring the UNIX/Linux agent](manage-security-administer-crossplat-agent.md)
+### [Agentless monitoring](manage-agentless-monitoring.md)
+### [Client monitoring using Agentless Exception Monitoring](manage-client-monitoring-using-aem.md)
 ### [Monitoring networks with Operations Manager](manage-monitor-networkdevice-overview.md)
 #### [How to discover network devices](manage-monitor-networkdevice-overview.md)
 #### [Network device discovery settings](manage-monitor-networkdevice-discovery-settings.md)
