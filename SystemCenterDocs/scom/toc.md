@@ -87,6 +87,7 @@
 ### [Configure SharePoint to view Operations Manager data](manage-console-sharepoint-integration.md)
 ### Using views and dashboards
 #### [View types](manage-console-view-types.md)
+#### [Dashboards overview](manage-dashboards-overview.md)
 #### [Standard views](manage-console-standard-views.md)
 #### [Creating and scoping views](manage-console-scope-views.md)
 #### [Personalize a view](manage-console-personalize-views.md)
@@ -153,6 +154,7 @@
 #### [How to set alert resolution states](manage-alert-set-resolution-states.md)
 #### [How to configure automatic alert resolution](manage-alert-configure-auto-resolution.md)
 #### [Data driven alert management](manage-alert-data-driven-management.md)
+#### [How to enable recovery and diagnostic tasks](manage-enable-recovery-and-diagnostic-tasks.md) 
 ### [How to suspend monitoring temporarily by using maintenance mode](manage-maintenance-mode-overview.md)
 ### [Creating and managing groups](manage-create-manage-groups.md)
 ### [Running tasks in Operations Manager](manage-running-tasks.md)
