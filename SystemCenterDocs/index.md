@@ -14,7 +14,7 @@ description: get-from-content-team
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-2016">
+                <a href="https://www.microsoft.com/evalcenter/evaluate-system-center-2016">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -96,7 +96,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/dpm/data-protection-manager">
+                                <a href="/system-center/dpm/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -115,7 +115,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/om/welcome-to-operations-manager">
+                                <a href="/system-center/scom/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -134,7 +134,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/orch/orchestrator">
+                                <a href="/system-center/orchestrator/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -153,7 +153,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/sm/service-manager">
+                                <a href="/system-center/scsm/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -172,7 +172,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/sma/get-started/overview-of-service-management-automation">
+                                <a href="/system-center/sma/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -191,7 +191,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/system-center-docs/vmm/vmm">
+                                <a href="/system-center/vmm/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
