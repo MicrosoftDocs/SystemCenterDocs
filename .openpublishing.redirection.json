@@ -2,6 +2,10 @@
  "redirections":
  [
   {
+      "source_path" : "SystemCenterDocs/dpm/get-started/upgrade-to-dpm-2016.md",
+      "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
+  },
+  {
      "source_path" : "SystemCenterDocs/dpm/get-started/Get-started.md",
      "redirect_url": "/system-center/dpm/dpm-overview"
   },
@@ -112,6 +116,10 @@
   {
      "source_path" : "SystemCenterDocs/get-started/What-s-New-in-System-Center.md",
      "redirect_url": "/system-center/system-center"
+  },
+  {
+      "source_path" : "SystemCenterDocs/om/manage/agentless-monitoring-in-operations-manager.md",
+      "redirect_url" : "/system-center/scom/agentless-monitoring-in-operations-manager"
   },
 {
    "source_path" : "SystemCenterDocs/om/manage/general-tasks-in-operations-manager.md",
@@ -824,6 +832,10 @@
   {
      "source_path" : "SystemCenterDocs/orch/get-started/how-to-work-with-runbooks-in-the-orchestration-console.md",
      "redirect_url": "/system-center/orchestrator/console-overview"
+  },
+  {
+      "source_path" : "SystemCenterDocs/orch/manage/design-and-build-runbooks.md",
+      "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
   },
   {
      "source_path" : "SystemCenterDocs/orch/manage/how-to-start-the-orchestration-console.md",
@@ -2748,6 +2760,10 @@
 {
      "source_path" : "SystemCenterDocs/sma/get-started/What-s-new-in-Service-Management-Automation-2016.md",
      "redirect_url" : "/system-center/sma/whats-new-in-service-management-automation"
+},
+{
+      "source_path" : "SystemCenterDocs/sma/manage/Authoring-Automation-Runbooks.md",
+      "redirect_url": "/system-center/sma/authoring-automation-runbooks"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Building-an-Integration-Module.md",
