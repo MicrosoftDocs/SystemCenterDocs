@@ -2,6 +2,10 @@
  "redirections":
  [
   {
+      "source_path" : "SystemCenterDocs/system-center.md",
+      "redirect_url" : "/system-center/index"
+  },
+  {
       "source_path" : "SystemCenterDocs/dpm/get-started/upgrade-to-dpm-2016.md",
       "redirect_url" : "/system-center/dpm/upgrade-to-dpm-2016"
   },
