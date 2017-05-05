@@ -15,7 +15,7 @@ Orchestrator is a workflow management solution for the data center. With Orchest
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/orchestrator/automate-runbooks">
+        <a href="/system-center/orchestrator/automate-runbooks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Orchestrator is a workflow management solution for the data center. With Orchest
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/orchestrator/learn-about-orchestrator">
+        <a href="/system-center/orchestrator/learn-about-orchestrator">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Orchestrator is a workflow management solution for the data center. With Orchest
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/orchestrator/design-and-build-runbooks">
+        <a href="/system-center/orchestrator/design-and-build-runbooks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -15,7 +15,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview">
+        <a href="/system-center/vmm/plan-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/vmm/deploy/deploy-overview">
+        <a href="/system-center/vmm/deploy-overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/cloud-create">
+        <a href="/system-center/vmm/cloud-create">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
