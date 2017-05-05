@@ -33,7 +33,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="/system-center/vmm/deploy-overview">
+        <a href="/system-center/vmm/upgrade">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -75,7 +75,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_config-tools.svg" alt="" />
+                            <img src="/media/common/i_management.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_config-tools.svg" alt="" />
+                            <img src="/media/common/i_management.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">

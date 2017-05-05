@@ -51,7 +51,7 @@ Service Management Automation is an IT process automation solution for Windows A
         </a>
     </li>
     <li>
-        <a href="/system-center/sma/automate-operations-service-management-automation">
+        <a href="/system-center/sma/architecture-of-service-management-automation">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
