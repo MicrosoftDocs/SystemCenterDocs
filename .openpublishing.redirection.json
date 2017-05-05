@@ -350,6 +350,10 @@
      "redirect_url" : "/system-center/scom/manage-security-dist-target-runas-profiles"
 },
 {
+     "source_path" : "SystemCenterDocs/om/manage/diagnostic-and-recovery-tasks.md",
+     "redirect_url" : "/system-center/scom/manage-enable-recovery-and-diagnostic-tasks"
+},
+{
      "source_path" : "SystemCenterDocs/om/manage/finding-data-and-objects-in-the-operations-manager-consoles.md",
      "redirect_url" : "/system-center/scom/manage-console-finding-data"
 },
@@ -728,6 +732,10 @@
 {
      "source_path" : "SystemCenterDocs/OM/Manage/what-Is-in-an-operations-manager-management-pack.md",
      "redirect_url" : "/system-center/scom/manage-overview-management-pack"
+},
+{
+     "source_path" : "SystemCenterDocs/om/plan/planning-adds-dns.md",
+     "redirect_url" : "/system-center/scom/plan-system-requirements"
 },
 {
      "source_path" : "SystemCenterDocs/om/plan/planning-agents.md",
