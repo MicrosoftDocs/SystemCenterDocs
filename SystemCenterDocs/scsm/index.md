@@ -15,7 +15,7 @@ Service Manager provides an integrated platform for automating and adapting your
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/service-manager">
+        <a href="/system-center/scsm/service-manager">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/plan-sm">
+        <a href="/system-center/scsm/plan-sm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/deploy-sm">
+        <a href="/system-center/scsm/deploy-sm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/upgrade-to-sm-2016">
+        <a href="/system-center/scsm/upgrade-to-sm-2016">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +87,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/admin-tasks">
+        <a href="/system-center/scsm/admin-tasks">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -105,7 +105,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/scsm/author-with-sm">
+        <a href="/system-center/scsm/author-with-sm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

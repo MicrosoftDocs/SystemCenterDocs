@@ -1,4 +1,4 @@
----
+﻿---
 # aka.ms/skyeye/meta for more information
 layout: LandingPage
 author: MattLusherRO
@@ -15,7 +15,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/how-dpm-protects-data">
+        <a href="/system-center/dpm/how-dpm-protects-data">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -33,7 +33,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/dpm-protection-matrix">
+        <a href="/system-center/dpm/dpm-protection-matrix">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -51,7 +51,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/deploy-dpm-protection-agent">
+        <a href="/system-center/dpm/deploy-dpm-protection-agent">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,7 +69,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/dpm-support-issues">
+        <a href="/system-center/dpm/dpm-support-issues">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -87,7 +87,7 @@ Data Protection Manager (DPM) is a robust enterprise backup and recovery system 
         </a>
     </li>
     <li>
-        <a href="https://review.docs.microsoft.com/en-us/system-center/dpm/monitor-dpm">
+        <a href="/system-center/dpm/monitor-dpm">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
