@@ -33,7 +33,7 @@ For more information about types of activities, see the following topics:
 
     Describes specialized activities that monitor environment states and event logs.  
 
--   [How to extend Orchestrator](how-to-use-the-integration-toolkit to extend-orchestrator-capabilities.md)  
+-   [How to extend Orchestrator](how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)  
 
     Describes customization options available in Orchestrator.  
 
