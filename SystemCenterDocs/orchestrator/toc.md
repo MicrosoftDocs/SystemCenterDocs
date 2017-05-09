@@ -31,13 +31,11 @@
 ### [How to configure runbook throttling](how-to-configure-runbook-throttling.md)
 ### [How to recover a database](how-to-recover-a-database.md)
 ### [How to recover web components](how-to-recover-web-components.md)
-### [How to use the integration toolkit](how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)
 ### [How to add an integration pack](how-to-add-an-integration-pack.md)
 ### [How to view orchestrator data with PowerPivot](how-to-view-orchestrator-data-by-using-powerpivot.md)
 ### [How to change Orchestrator user groups](how-to-change-the-orchestrator-users-group.md)
 ### [Common activity properties](common-activity-properties.md)
 ### [Computer groups](computer-groups.md)
-### [Customized activities](customized-activities.md)
 # Reference
 ## Integration Packs
 ### [Active Directory](active-directory-integration-pack.md)
