@@ -101,7 +101,7 @@ Set-scvirtualharddisk –virtualharddisk $myVHD –Tag $tags
 ```
 ## Add the virtual disk to the library
 
-After you create the virtual hard disk, you must add it to the VMM library with the values you specified. [Learn more](library-files) about adding file-based resources to the library.
+After you create the virtual hard disk, you must add it to the VMM library with the values you specified. [Learn more](library-files.md) about adding file-based resources to the library.
 
 ## Import the Resource Definition packages
 
@@ -130,4 +130,4 @@ The Virtual Machine Role is now available to the tenant as part of the selected 
 
 ## Next steps
 
-Learn about [provisioning VMs](manage-vm-overview.md).
+Learn about [provisioning VMs](provision-vms.md).
