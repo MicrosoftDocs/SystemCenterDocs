@@ -26,8 +26,8 @@ As a hosting provider, you can use System Center 2016 - Virtual Machine Manager 
 
 Azure Pack Gallery Resources provide tenant offerings using standard and reusable components. The VM role gallery enables you to deploy VMs. Usually you need two packages to deploy a VM role:
 
-    - A resource definition package (\*\.resdefpkg) to deploy the VM. This template describes information asked to self-portal tenants about VM size, name etc. These parameters are used by VMM to deploy the role.
-    - A resource extension package (\*\.resextpkg) to install apps on a VM.
+- A resource definition package (\*\.resdefpkg) to deploy the VM. This template describes information asked to self-portal tenants about VM size, name etc. These parameters are used by VMM to deploy the role.
+- A resource extension package (\*\.resextpkg) to install apps on a VM.
 
 Each resource contains a Readme file that explains how to prepare your environment.
 
@@ -44,13 +44,15 @@ For gallery resources that use Resource Extensions, you need to import the exten
 
 1. At the command line, run the following:
 
-``` $libraryShare = Get-SCLibraryShare | Where-Object {$_.Name -eq 'MSSCVMMLibrary'}
+``` 
+$libraryShare = Get-SCLibraryShare | Where-Object {$_.Name -eq 'MSSCVMMLibrary'}
 $resextpkg = $Env:SystemDrive + "\GalleryResources\My-VMRole-Pkg\MyVMRole.resextpkg"
 Import-CloudResourceExtension –ResourceExtensionPath $resextpkg -SharePath $libraryShare -AllowUnencryptedTransfer
 ```
 2. Verify that the import completed with the following cmdlet:
 
-``` Get-CloudResourceExtension
+``` 
+Get-CloudResourceExtension
 ```
 
 ## Create and prepare a virtual hard disk
@@ -62,7 +64,8 @@ To create a template, you need a virtual hard disk file that contains an operati
 1. When you create the hard disk, specify the required operating system in the Operating System property. For data disks this value must be set to None.
 2. Set the property using the VMM console, or PowerShell. The following example shows how to set the virtual hard disk MyVirtualHardDisk to run Windows Server 2012 Datacenter. Your cmdlet with replace the disk name with one of the values in the Readme file.
 
-``` $myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
+```
+$myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
 $WS2012Datacenter = Get-SCOperatingSystem | where { $_.name –eq '64-bit edition of Windows Server 2012 Datacenter' }
 Set-scvirtualharddisk –virtualharddisk $myVHD –OperatingSystem $WS2012Datacenter
 ```
@@ -72,10 +75,12 @@ Set-scvirtualharddisk –virtualharddisk $myVHD –OperatingSystem $WS2012Datace
 1. The Familyname and Release properties of the virtual hard disk must be set in order for the Windows Azure Pack portal to display the virtual hard disk as an available disk for this Gallery Resource. These values are shown in the portal drop-down list.
 
     - The Familyname property values should indicate the contents of the virtual hard disk, including the Windows Server release and edition. The Readme file of the Gallery Resource should include appropriate Familyname values.
-    - Release property values must conform to the Windows Azure versioning scheme of n.n.n.n. Examples include 1.0.0.0 and 1.0.0.1.
+    Release property values must conform to the Windows Azure versioning scheme of n.n.n.n. Examples include 1.0.0.0 and 1.0.0.1.
+    
 2. Set the property using the VMM console, or PowerShell. The following example shows how to set the virtual hard disk MyVirtualHardDisk to a Familyname "Windows Server 2012 Datacenter", and the Release property to "1.0.0.0". Your cmdlet with replace values with one of the values in the Readme file.
 
-``` $myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
+```
+$myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
 $familyName = "Windows Server 2012 DataCenter"
 $release = "1.0.0.0"
 Set-scvirtualharddisk –virtualharddisk $myVHD –FamilyName $familyName –Release $release
@@ -88,7 +93,8 @@ Virtual Machine Role gallery items specify tags that must be included on an oper
 1. When you create the hard disk, specify the required tags using PowerShell.
 2. The following example shows how to set the tag "WindowsServer2012R1" for the virtual hard disk MyVirtualHardDisk. Your cmdlet use the values in the Readme file.
 
-``` $myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
+```
+$myVHD = Get-SCVirtualHardDisk | where {$_.Name –eq 'MyVirtualHardDisk.vhd'}
 $tags = $myVHD.Tag
 if ( $tags -cnotcontains "WindowsServer2012R1" ) { $tags += @("WindowsServer2012R1") }
 Set-scvirtualharddisk –virtualharddisk $myVHD –Tag $tags
@@ -109,7 +115,7 @@ After the Resource Extension and virtual hard disk are in the VMM lbirary, you c
 3. Click the **Gallery** tab > **Import**.
 4. Select and import the Resource Definition Package file for the gallery item. This will be the file with the extension resdefpkg.
 
-The gallery item should now be listed on the Gallery tab.
+The gallery item should now be listed on the **Gallery** tab.
 
 ## Publish the item and add to a plan
 
