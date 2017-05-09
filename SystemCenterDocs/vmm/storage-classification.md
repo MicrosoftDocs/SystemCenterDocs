@@ -1,11 +1,11 @@
 ---
 ms.assetid: 03be2a03-3c30-418f-8c5c-169744ac864f
-title: Set up storage classifications in the VMM fabric
+title: Set up storage classifications in the VMM 2016 fabric
 description: This article describes how to set up storage classifications in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonmc
+ms.date:  05/03/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -28,3 +28,7 @@ To create classifications:
 
 1.  Click **Fabric** > **Storage**, right-click **Classification and Pools** > **Create Classification**.
 2.  In **New Classification**, enter a name and description > **Add**.
+
+## Next steps
+
+[Add storage devices](storage-device.md) to the VMM fabric.

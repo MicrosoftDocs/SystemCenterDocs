@@ -1,11 +1,11 @@
 ---
 ms.assetid: 9d758a26-a2dd-42f0-87a6-eafbbb8a2dbf
-title: Deploy a hyper-converged cluster with S2D in VMM
+title: Deploy a hyper-converged cluster with Storage Spaces Direct in VMM 2016
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  03/09/2017
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -117,7 +117,6 @@ If you want to add additional nodes to the SOFS cluster, VMM automatically disco
 6. In **Capacity** specify the share size and settings.
 7. In **Summary**, verify the settings. After the share is created, a new CSV is added under the storage pool.
 
-### Allocate the storage in Hyper-V
+## Next steps
 
-1. In the Hyper-V properties > **Storage**, specify the file share path.
-2. Now you can create VMs in this path.
+You specify the file share path in the properties of a Hyper-V host or cluster. Learn more about [provisioning storage](hyper-v-storage.md).

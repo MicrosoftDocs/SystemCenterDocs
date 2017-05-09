@@ -1,11 +1,11 @@
 ---
 ms.assetid: 2af73b2d-621a-475e-b144-ddc03f4e2030
-title: Set up a Microsoft iSCSI Target Server in the VMM storage fabric
+title: Set up a Microsoft iSCSI Target Server in the VMM 2016 storage fabric
 description: This article describes how to deploy a Microsoft iSCSI Target Server in the VMM storage fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -78,3 +78,7 @@ Open PowerShell and use the cmdlets described below to manage iSCSI target serve
 |-----------|-----------|
 |`Remove-SCStorageLogicalUnit -StorageLogicalUnit $LUN`|Delete a LUN.|
 |`Remove-SCStorageProvider -StorageProvider (Get-SCStorageProvider -Name "Microsoft iSCSI Target Provider")`|Remove a storage provider.|
+
+## Next Steps
+
+Learn about [provisioning storage](hyper-v-storage.md) for Hyper-V hosts and clusters.

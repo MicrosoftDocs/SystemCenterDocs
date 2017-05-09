@@ -4,8 +4,8 @@ title: Set up update servers in the VMM compute fabric
 description: This article describes how to set up update servers in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  03/12/2017
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,12 +16,11 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to set up update servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric. The article includes prerequisites, instructions for adding a WSUS server to the fabric, explains how to set update baselines and how to run a scan. You can also create update exemptions.
+Learn about setting up update servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
 
+You deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers running Windows Server 2012 R2 or later.
 
-You can deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers running Windows Server 2012 R2 or later. 
-
-To set up update servers, you need to add a WSUS server to the VMM fabric, set up update baselines, and then scan computers for compliance. 
+This article explains the prerequisites, how to add a WSUS server to the fabric, set up update baselines, run a scan, and create update exemptions.
 
 
 ## Before you start
