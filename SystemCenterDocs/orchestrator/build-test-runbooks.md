@@ -25,21 +25,7 @@ To build a runbook you drag activities onto the workspace. Activities are the bu
 
 - Perform some action  
 
-- Publish new data
-
-For more information about types of activities, see the following topics:
-
--  [Monitoring Activities](../orch/manage/monitoring-activities.md)  
-
-    Describes specialized activities that monitor environment states and event logs.  
-
--   [How to extend Orchestrator](how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md)  
-
-    Describes customization options available in Orchestrator.  
-
--   [Common Activity Properties](common-activity-properties.md)  
-
-    Describes configurable properties common to all activities.  
+- Publish new data  
 
 ## Runbook Designer Panes  
 The Runbook Designer interface is organized into the following four panes.  
@@ -131,4 +117,6 @@ After you build a runbook, you can test it before it is run in production. To te
 ## Next steps
 
 - To get step by step instructions for building and testing a sample runbook, see [Creating and testing a sample runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md).
-- To review guidance and best practices for designing runbook, see [Designing a runbook](designing-a-runbook.md).
+- To review guidance and best practices for designing runbooks, see [Designing a runbook](designing-a-runbook.md).
+- To learn more about how to use activities see [Control runbook activities](control-runbook-activities).
+- To get a list of configurable properties common to all activities see [Common Activity Properties](common-activity-properties.md).
