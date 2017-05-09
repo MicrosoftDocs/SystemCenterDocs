@@ -103,7 +103,7 @@ Create security groups for network controller management and clients.
 2. Create another security group for network controller clients
     - Add users with permission to configure and manage networks using network controller. For example, create a group named Network Controller Users.
     - All of the users that you add to the new group must also be members of the Domain Users group in Active Directory.
-    - All Network Controller configuration and management is performed using Representational State Transfer (REST).
+    - All Network Controller configuration and management is performed using Representational State Transfer ( DNS).
     -  The group should be a Domain Local group. After the network controller is deployed, any members of this group will have permissions to communicate with the network controller via the REST based interface.
     - Create at least one user account that is a member of this group. After the network controller is deployed, VMM can be configured to use the user account credentials to establish communication with the network controller.
 
@@ -145,9 +145,8 @@ If you want to allocate static IP addresses to network controller VMs, create an
 4.  In **IP Address range** panel, type the starting and ending IP addresses.
 5. To use an IP as REST IP, type one of the IP addresses from the specified range in **IP addresses to be reserved for other uses** box. In case you want to use the REST End Point, skip this step.
 
-    **Note**:
     - Don't use the first three IP addresses of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .4 or greater.
-    - If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide REST DNS name.   
+    - If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide a REST DNS name.   
 
 6. Specify the default gateway address and optionally configure DNS and WINS settings
 7.  In **Summary** page, review the settings and click **Finish** to complete the wizard.
@@ -290,7 +289,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **MgmtDomainAccountPassword** | Required | Password for the management Run as account mapped to MgmtDomainAccount.
 **MgmtDomainFQDN** | Required | FQDN for the Active directory domain that the network controller virtual machines will join.
 **MgmtSecurityGroup** | Required | Name of the security group you created previously containing network controller management accounts.
-**RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> **Note**: If the nodes are in the same subnet, you must provide REST IP address. If the nodes are in different subnets, you must provide REST DNS name.   
+**RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> If the nodes are in the same subnet, you must provide the REST IP address. If the nodes are in different subnets, provide the REST DNS name.   
 **ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
 
 

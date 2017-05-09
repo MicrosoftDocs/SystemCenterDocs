@@ -1,11 +1,11 @@
 ---
 ms.assetid: 9d758a26-a2dd-42f0-87a6-eafbbb8a2dbf
-title: Manage S2D storage in the VMM fabric
+title: Manage storage deployed with Storage Spaces Direct in the VMM 2016 fabric
 description: This article describes how to manage storage in Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  01/30/2017
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -25,6 +25,9 @@ Quality-of-service (QoS) in [Windows Server 2016](https://technet.microsoft.com/
 ## Add and remove nodes and disks
 
 - You can add a new node on a hyper-converged S2D cluster in VMM, in the same way that you [add a node on any cluster](hyper-v-cluster.md#add-a-node-to-the-cluster). The new node can be an existing Hyper-V server, or a bare-metal physical server.
-- When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D. 
-- If you [remove a node](hyper-v-cluster.md#remove-a-node-from-the-cluster), VMM removes disks
+- When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D.
+- If you [remove a node](hyper-v-cluster.md#remove-a-node-from-the-cluster), VMM removes disks.
 
+## Next steps
+
+Learn about [allocating storage](hyper-v-storage.md) to Hyper-V hosts and clusters
