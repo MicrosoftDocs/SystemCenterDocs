@@ -1,11 +1,11 @@
 ---
 ms.assetid: edd0a7c4-9da7-4727-ae61-940049782dae
-title: Manage Storage Replica in VMM
+title: Manage Storage Replica in VMM 2016
 description: This article describes how to set up Storage Replica in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -170,6 +170,7 @@ If you want to stop replication you'll need to run this cmdlet at the source and
 
 
 
-## See Also
+## Learn more
 
-- [Storage replica overview](https://aka.ms/storagereplica)
+- Learn more about [Storage Replica](https://aka.ms/storagereplica)
+- Learn about [allocating storage](hyper-v-storage.md) to Hyper-V hosts and clusters.
