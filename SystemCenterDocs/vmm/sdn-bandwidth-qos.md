@@ -16,7 +16,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides information about how to configure the QoS for SDN virtual networks, in System Center 2016 - Virtual Machine Manager (VMM).
+This article provides information about how to configure the Quality of Service (QoS) settings for SDN virtual networks, in System Center 2016 - Virtual Machine Manager (VMM).
 Through this configuration, you can limit the bandwidth of the traffic flowing in or out of a virtual network adapter (vNIC) by specifying the minimum reserved bandwidth or maximum bandwidth for the adapter.
 
 - Service providers can prevent a high-traffic VM from blocking other VMs.
