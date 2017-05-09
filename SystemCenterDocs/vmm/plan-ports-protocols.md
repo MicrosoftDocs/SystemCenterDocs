@@ -19,7 +19,7 @@ As part of your Virtual Machine Manager (VMM) deployment, you need to plan for t
 
 ## Set up exceptions 
 
-1. Identify where you need to create the firewall exception, in accordance with the table below.
+1. Identify where you need to create firewall exceptions, in accordance with the table below.
 2. On the server you identify, click **Start** > **Next** > **Administrative Tools** > **Windows Firewall with Advanced Security**.
 2. In the **Windows Firewall with Advanced Security on Local Computer** pane, click on **Inbound Rules**.
 3. In **Actions**, click **New Rule**.
