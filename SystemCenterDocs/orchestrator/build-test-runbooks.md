@@ -118,5 +118,5 @@ After you build a runbook, you can test it before it is run in production. To te
 
 - To get step by step instructions for building and testing a sample runbook, see [Creating and testing a sample runbook](~/orchestrator/creating-and-testing-a-sample-runbook.md).
 - To review guidance and best practices for designing runbooks, see [Designing a runbook](designing-a-runbook.md).
-- To learn more about how to use activities see [Control runbook activities](control-runbook-activities).
+- To learn more about how to use activities see [Control runbook activities](control-runbook-activities.md).
 - To get a list of configurable properties common to all activities see [Common Activity Properties](common-activity-properties.md).
