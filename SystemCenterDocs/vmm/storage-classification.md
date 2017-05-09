@@ -18,13 +18,13 @@ Use storage classifications to abstract storage devices in the System Center 201
 
 Classifications are often based on storage types or performance characteristics. For example, you could create:
 
-    **Name** | **Description** |
-    --- | ---
-    **GOLD** | Storage pool based on solid-state drives (SSDs) that delivers high performance for I/O intensive applications
-    **SILVER** | Fibre Channel Serial Attached SCSI (SAS) storage (RAID 5)
-    **BRONZE** | iSCSI Serial ATA (SATA) storage (RAID 5)
+**Name** | **Description** 
+--- | ---
+**GOLD** | Storage pool based on solid-state drives (SSDs) that delivers high performance for I/O intensive applications
+**SILVER** | Fibre Channel Serial Attached SCSI (SAS) storage (RAID 5)
+**BRONZE** | iSCSI Serial ATA (SATA) storage (RAID 5)
 
-To create classifications:
+## Create classifications:
 
 1.  Click **Fabric** > **Storage**, right-click **Classification and Pools** > **Create Classification**.
 2.  In **New Classification**, enter a name and description > **Add**.
