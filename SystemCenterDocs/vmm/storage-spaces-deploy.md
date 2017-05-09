@@ -61,7 +61,7 @@ When you create the cluster, VMM does the following:
 3.  Creates the cluster.
 4.  Enables S2D, and creates a storage pool with the same name as the one provided in the wizard.
 
-## Add an existing cluster
+### Add an existing cluster
 
 1.  Click **VMs and Services**, right-click **All Hosts**, and select **Add Hyper-V Hosts and Clusters**.
 2. If the cluster isn't in the VMM domain, select **The Windows server computer is in an untrusted Active Directory domain**.
