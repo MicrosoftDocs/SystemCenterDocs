@@ -1,11 +1,11 @@
 ---
 ms.assetid: 88134cd9-4440-47bd-acf0-ab8f90bc2003
-title: Set up file storage in the VMM fabric
+title: Set up file storage in the VMM 2016 fabric
 description: This article describes how to set up file storage in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-You can manage file storage that supports SMB 3.0 in the System Center 2016 - Virtual Machine Manager (VMM) storage fabric. This includes  Windows file servers, scale-out file servers (SOFS), network-attached storage (NAS) devices from third-parties such as EMC, and NetApp.
+You can manage file storage that supports SMB 3.0 in the System Center 2016 - Virtual Machine Manager (VMM) storage fabric. This includes Windows file servers, scale-out file servers (SOFS), network-attached storage (NAS) devices from third-parties such as EMC, and NetApp.
 
 This article describes how to add file storage to the VMM fabric. After file shares are available in the fabric, you can assign them to Hyper-V hosts and clusters.
 
@@ -56,4 +56,8 @@ You can assign file shares on any host on which you want to create VMs that will
 
 3. Click **Host Name Properties** > **Storage** > **Add File Share**.
 4. In **File share path**, select the required SMB 3.0 file share, and then click **OK**. To confirm that the host has access, open the **Jobs** workspace to view the job status. Or, open the host properties again, and then click the **Storage** tab. Under **File Shares**, click the SMB 3.0 file share. Verify that a green check mark appears next to **Access to file share**.
-5. Repeat this procedure for any standalone host that you want to access the SMB 3.0 file share, or for all nodes in a cluster
+5. Repeat this procedure for any standalone host that you want to access the SMB 3.0 file share, or for all nodes in a cluster.
+
+## Next steps
+
+After you set up the Hyper-V host or cluster, learn about [provisioning VMs](provision-vms.md).

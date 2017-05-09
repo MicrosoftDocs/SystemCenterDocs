@@ -1,11 +1,11 @@
 ---
 ms.assetid: 0746e47e-407b-44d7-b83d-655df3f53fb8
-title: Set up dynamic and power optimization in the VMM compute fabric
+title: Set up dynamic and power optimization in the VMM 2016 compute fabric
 description: This article describes how to configure dynamic optimization and power optimization in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -102,3 +102,7 @@ You can run dynamic optimization on demand on a host cluster. within a host clus
 
 1. Click **Fabric** > **Servers** > **All Hosts** > host name.
 2. On the **Host** tab, in the **Host** group click **Power On** or **Power Off**. You can view information about power on and off events in the BMC logs (click on **Hardware** > **Advanced** > **BMC Logs**).
+
+## Next steps
+
+Learn about [provisioning VMs](provision-vms.md).
