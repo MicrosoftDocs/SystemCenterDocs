@@ -1,11 +1,11 @@
 ---
 ms.assetid: ecaa876d-d376-48a0-a20c-15f0c266e616
-title: Upgrade VMM
-description: This article helps you to upgrade your existing VMM servers and databases to System Center 2016 - VMM
+title: Upgrade to VMM in System Center 2016
+description: This article explains how upgrade VMM servers and databases to VMM 2016
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 03/09/2016
+manager: carmonm
+ms.date: 05/07/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -15,18 +15,18 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and describes tasks you should complete after the upgrade finishes.
+This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 with update rollup 9 or later.
-- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](~/vmm/install.md)
-- Make sure you're running a [supported version of SQL Server](../(~/vmm/system-reqs.md#sql-server).
+- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](install.md)
+- Make sure you're running a [supported version of SQL Server](system-reqs.md#sql-server).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
 	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 2016.
-- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](~/vmm/install.md)
-- Make sure you're running a [supported version of SQL Server](../(~/vmm/system-reqs.md#sql-server).
+- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](install.md)
+- Make sure you're running a [supported version of SQL Server](system-reqs.md#sql-server).
 
 
 
@@ -104,7 +104,7 @@ During setup, VMM enables the following firewall rules. These rules remain in ef
 	- If SQL Server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 	- Don't specify a **Port** value if you're using local SQL Server, or if your remote SQL Server uses the default port (1443).
 	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
-	
+
 12. In **Cluster configuration** page type a name for the VMM high availability deployment. Don't use the cluster name or the name of the computer on which you're installing VMM. This name is used when you connect to VMM using the VMM console.
 13. If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
 14. In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
@@ -241,3 +241,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 - After you create a new VMM library, you will want to move the resources from the previous VMM library to the new VMM library.
 - To preserve the custom fields and properties of saved virtual machines in the previous VMM library, deploy the saved virtual machines to a host and then save the virtual machines to the new VMM library.
 -  Note that operating system and hardware profiles cannot be moved. You need to re-create these profiles.
+
+## Next steps
+
+Learn about deploying the latest [update rollups](update-rollups.md).

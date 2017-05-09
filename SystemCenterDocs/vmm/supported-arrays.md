@@ -1,22 +1,24 @@
 ---
 ms.assetid: Supported storage arrays in VMM 2016
-title: Plan VMM deployment
+title: Supported storage arrays in VMM 2016
 description: This article summarizes suupported storage arrays for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  12/15/2016
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-# Supported storage arrays in VMM 2016
+# Supported storage arrays
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
- Virtualized workloads in System Center 2016 - VMM need storage resources to meet capacity and performance requirements. VMM recognizes local and remote storage, and supports the use of block-level storage devices that expose logical unit numbers (LUNs) using fibre channel, iSCSCI, and SAS connections, and the use of network shares for storage.
+ Virtualized workloads in System Center 2016 - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fibre channel, iSCSCI, and SAS connections, and network file shares.
+
+ This article provides a list of supported storage devices for VMM 2016.
 
 
 
@@ -29,7 +31,8 @@ ms.technology:  virtual-machine-manager
 |DELL-EMC <br/><br/> XtremIO All Flash Array	| iSCSI/FC	| XtremIO XMS Server Versions: 4.2.0 and 4.2.1 | Embedded SMI-S V1.6.1 | [Link](http://www.emc.com/en-us/storage/xtremio/benefits.htm) |
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS : 7.2 or later <br/> DSM : 2016 R3 or later| SMI-S <br/>version 1.6 | [Link](http://www.dell.com/us/business/p/dell-compellent?dgc=IR&cid=emcstorcat&lid=1) |
 |NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](https://now.netapp.com) |
+
 ## Next steps
 
  - [Learn more](storage-device.md) about configuring storage in the VMM fabric.
- - Learn more about array SMI-S conformance in the [SMI-S Conformance Testing Program](http://www.snia.org/ctp/)
+ - Learn more about array SMI-S [Conformance Testing Program](http://www.snia.org/ctp/)
