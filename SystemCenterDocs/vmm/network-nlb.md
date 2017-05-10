@@ -4,8 +4,8 @@ title: Integrate load balancing with VMM service templates
 description: This article provides guidance for setting up load balancing for VMM service tiers
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -111,3 +111,7 @@ When the service is deployed, VMM automatically selects a VIP from the reserved 
 1. After the service is deployed click **Fabric** > **Networking** > **Load Balancers**.
 2. Click **Show** > **Service** > **Load Balancer Information for Services** and expand the service to see which VIP is assigned.
 3. Request that the DNS administrator manually create a DNS entry for the VIP. The entry should be the name that users will specify to connect to the service. For example servicename.contosol.com.
+
+## Next steps
+
+You can also [set up a software load balancer](sdn-slb.md) in a software defined networking (SDN) infrastructure in the VMM fabric.

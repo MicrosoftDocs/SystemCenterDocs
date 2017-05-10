@@ -4,8 +4,8 @@ title: Set up static IP address pools in the VMM fabric
 description: This article describes how to set up IP address pools in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -68,3 +68,8 @@ You can release inactive addresses. When you do VMM returns the address to the s
 	- To release addresses in a pool in a logical network click **Logical Networks and IP Pools** expand the logical network and click the IP address pool.
 	- To release addresses in a pool in a VM network click **Logical Networks and IP Pools** expand the VM network and click the IP address pool.
 2. Click **Home** > **Properties** > **Inactive addresses** and select the inactive IP addresses that you want to release.
+
+
+## Next steps
+
+[Create a VM network](network-virtual.md)

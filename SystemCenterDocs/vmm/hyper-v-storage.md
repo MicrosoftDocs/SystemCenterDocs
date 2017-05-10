@@ -5,7 +5,7 @@ description: This article provides information about managing your Hyper-V envir
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  01/23/2016
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -113,3 +113,7 @@ In **Host Cluster Name** >  **Properties** click a tab:
 4.  In the Create New iSCSI Session > **Array** , click the storage array you want to use.
 5.  Click **Create** to create a new session. Click Use advanced settings if you want to modify customized settings, including target listener, name, or the host NIC that you want to use.
 6.  The array that you added appears under **iSCSI Arrays**. Click the array to view more details.
+
+## Next steps
+
+[Set up networking](hyper-v-network.md) for Hyper-V  hosts and clusters.
