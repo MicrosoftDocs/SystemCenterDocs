@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 04/12/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -362,6 +362,13 @@ foreach($route in $RoutingSubnets)
 }
 
 ```
+
+After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the **Add-SCBGPPeer** cmdlet.
+
+Example:
+
+Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15  -VMNetworkGateway $VmNetworkGateway
+
 
 The table below provides examples of dynamic and static L3 connections.
 
