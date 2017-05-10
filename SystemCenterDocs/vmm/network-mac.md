@@ -1,10 +1,10 @@
 ---
 ms.assetid: 6c26db7b-d282-4d74-9456-fe2de97f7786
-title: This article describes how to set up MAC address pools in the VMM networking fabric
+title: Set up MAC address pools in the VMM 2016 networking fabric
 description: This article describes how to manage MAC address pools in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/16/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
@@ -15,8 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides information about System Center 2016 - Virtual Machine Manager (VMM) default MAC addresses and how to create and manage a custom MAC address pool.
-
+This article provides information about System Center 2016 - Virtual Machine Manager (VMM) default MAC addresses, and describes how to create and manage a custom MAC address pool.
 
 VMM uses static MAC address pools to automatically generate and assign MAC address to VMs.  This article describes default MAC address pools in the VMM fabric and explains how to create custom pools.
 
@@ -55,3 +54,7 @@ In some circumstances you might want to remove addresses from the MAC pool. For 
 1. Click **Fabric** > **Networking** > **MAC Address Pools** > **Home** > **Show** > **Fabric Resources**.
 2. In **MAC Pools** click the pool you want to modify > **Properties**.
 3. In **Inactive addresses** select the addresses you want to release.
+
+## Next steps
+
+Learn about [creating an IP address pool](network-pool.md).

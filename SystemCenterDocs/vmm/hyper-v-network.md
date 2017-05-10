@@ -5,7 +5,7 @@ description: This article describes how to set up networking for Hyper-V hosts a
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -35,7 +35,7 @@ To do this you'll need to [configure the logical switch](network-switch.md) and 
 
 Regardless of any port profiles and logical switches you are using in your network configuration, you must specify whether a network adapter in a host is used for virtual machines, host management, neither, or both. (The host must already be under management in VMM.)
 
-1. Open  **Fabric** > **Servers** > **All Hosts** > *host group* > **Hosts** > **Host** > **Properties** > **Hardware**.
+1. Open  **Fabric** > **Servers** > **All Hosts** > host-group-name > **Hosts** > **Host** > **Properties** > **Hardware**.
 2. Under **Network adapters**, click the physical network adapter that you want to configure.
 
 	- If you want to use this network adapter for virtual machines, ensure that **Available for placement** is checked.
@@ -54,3 +54,7 @@ Regardless of any port profiles and logical switches you are using in your netwo
 	- Click **Fabric **> **Networking** > **Logical Switches** > **Home** > **Show** > **Hosts**.
 	- In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
 	- If you have a cluster, check each node.
+
+## Next steps
+
+[Set up storage](hyper-v-storage.md) for Hyper-V hosts.

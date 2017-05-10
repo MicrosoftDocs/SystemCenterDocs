@@ -4,8 +4,8 @@ title: Manage Storage Spaces Direct in VMM
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  11/07/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -139,3 +139,8 @@ In a hyper-converged topology VMs can be directly deployed on the cluster. Their
 ## Deploy a disaggregated topology
 
 [Learn more](sofs.md) about adding nodes to an SOFS. When you add a node with Storage Spaces Direct enabled, VMM discovers any disks associated with the node. Then, when you modify a storage pool and select the new disks to add, VMM makes those disks available to the hosts and VMs that use the share supported by that pool.
+
+
+## Next steps
+
+[Provision VMs](provision-vms.md)

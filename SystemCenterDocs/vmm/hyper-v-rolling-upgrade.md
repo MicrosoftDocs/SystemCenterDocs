@@ -5,7 +5,7 @@ description: This article provides guidance on upgrading Hyper-V host clusters
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -47,7 +47,7 @@ System Center 2016 - Virtual Machine Manager (VMM) supports using the rolling up
 	- Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to make sure thenew name is not in use.
 	- In the network adapter configuration you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet if applicable. If the subnet contains and address pool you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise type an IP address within the logical network.
 
-5. In **Summary** click **Finish** to begin the upgrade. If the wizard finishes the node upgrades successfully all all of the cluster nodes are running Windows Server 2016 the wizard upgrade the cluster functional level to Windows Server 2016.
+5. In **Summary** click **Finish** to begin the upgrade. If the wizard finishes the node upgrades successfully, all of the cluster nodes are running Windows Server 2016 the wizard upgrade the cluster functional level to Windows Server 2016.
 
 
 If for some reason you need to update the cluster functional level of a cluster that was upgraded outside VMM you can upgrade the functional level by right-clicking the **Cluster** > **Update Version**. This could happen if you upgrade the cluster nodes before adding the cluster to the VMM fabric, but the cluster is still functioning as a Windows Server 2012 R2 cluster.

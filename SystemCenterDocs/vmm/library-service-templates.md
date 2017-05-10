@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -31,7 +31,7 @@ By default VMM refreshes library shares once every hour.
 	- VMM indexes but doesn't display these file types:
 		- Files associated with stored VMs (VM configuration file, attached virtual hard disks, saved state files, imported snapshots, checkpoints).
 		- Files associated with VM templates.
-		- Configuration file types: Hyper-V (.exp -export, .vsv - saved state, .bin); Virtual server (.vmd, .vsv); VMware (.vmtx, ,.vmx)
+		- Configuration file types: Hyper-V (.exp -export, .vsv - saved state, .bin); Virtual server (.vmd, .vsv); VMware (.vmtx, .vmx)
 
 
 ## Transfer files
