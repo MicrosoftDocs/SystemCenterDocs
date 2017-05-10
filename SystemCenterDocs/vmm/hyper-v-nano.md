@@ -53,16 +53,16 @@ To get started with the deployment of a Nano Server-based host or virtual machin
 
 For example:
 
-    ```
+```
     New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\NanoServer.vhd -ComputerName Nano-srv1 -OEMDrivers –Clustering –EnableRemoteManagementPort -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
-    ```
+```
     
-   - This example creates a VHD from an ISO mounted as F:
-   - When creating the VHD, it uses a folder called Base in the same folder in which you ran **New-NanoServerImage**
-   - It places the VHD in a folder called **Nano1**, in the folder from which the command runs.
-   - The computer name in this example is **Nano-srv1**. It includes the OEM drivers installed for most common hardware, and has the clustering feature enabled.
-   - The VHD has remote management of the Nano server enabled, even from the systems which are not in the same subnet.
-   - If the server uses UEFI to boot, you need to change the script from **NanoServer.vhd** to **NanoServer.vhdx**.
+  - This example creates a VHD from an ISO mounted as F:
+  - When creating the VHD, it uses a folder called Base in the same folder in which you ran **New-NanoServerImage**
+  - It places the VHD in a folder called **Nano1**, in the folder from which the command runs.
+  - The computer name in this example is **Nano-srv1**. It includes the OEM drivers installed for most common hardware, and has the clustering feature enabled.
+  - The VHD has remote management of the Nano server enabled, even from the systems which are not in the same subnet.
+  - If the server uses UEFI to boot, you need to change the script from **NanoServer.vhd** to **NanoServer.vhdx**.
 
 5. Log in as an administrator on the physical server on which you want to run the Nano Server VHD.
 6.  Copy the VHD that the script creates to the physical computer, and configure it to boot from the new VHD, as follows:
