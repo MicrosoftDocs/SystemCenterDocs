@@ -51,11 +51,11 @@ To get started with the deployment of a Nano Server-based host or virtual machin
     New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetPath .\NanoServerVM\NanoServerVM.vhdx -ComputerName <computername> -OEMDrivers -Package Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
     ```
 
-For example:
+    For example:
 
-```
+    ```
     New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\NanoServer.vhd -ComputerName Nano-srv1 -OEMDrivers –Clustering –EnableRemoteManagementPort -Packages Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
-```
+    ```
     
   - This example creates a VHD from an ISO mounted as F:
   - When creating the VHD, it uses a folder called Base in the same folder in which you ran **New-NanoServerImage**
