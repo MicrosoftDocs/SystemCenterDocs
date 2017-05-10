@@ -143,4 +143,4 @@ In a hyper-converged topology VMs can be directly deployed on the cluster. Their
 
 ## Next steps
 
-[Provision VMs](provision.md)
+[Provision VMs](provision-vms.md)
