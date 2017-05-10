@@ -22,4 +22,3 @@
 ### [How to scale your SMA installation](scaling-service-management-automation-up-or-down.md)
 ### [Working with Integration Modules](manage-integration-modules.md)
 ### [Manage Global Assets](manage-global-assets.md)
-### [Building an Integration Module](build-integration-modules.md)

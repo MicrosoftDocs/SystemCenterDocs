@@ -4,7 +4,7 @@
 # Get started
 ## [Install Orchestrator](install.md)
 ## [How to work with runbooks in the Orchestrator console](console-overview.md)
-## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-folder.md)
+## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
 # How To
 ## Plan 
 ### [Database sizing and performance](database-sizing-and-performance.md)

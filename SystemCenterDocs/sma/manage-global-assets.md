@@ -291,6 +291,6 @@ Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value '
 
 ## Next steps
 
-- Read about building integration modules [Building an integration module](~/sma/build-integration-modules.md).
-- Read about authoring Automation runbooks [Authoring Automation runbooks](authoring-automation-runbooks.md).
+Read about building integration modules [Building an integration module](manage-integration-modules.md).
+Read about authoring Automation runbooks [Authoring Automation runbooks](authoring-automation-runbooks.md).
 
