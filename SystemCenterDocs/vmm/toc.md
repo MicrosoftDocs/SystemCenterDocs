@@ -16,7 +16,7 @@
 ### [Deploy SDN using PowerShell](sdn-powershell.md)
 ### [Remove an SDN from VMM](sdn-remove.md)
 ### [Manage SDN resources in the VMM fabric](network-sdn.md)
-### [Add a virtual network](sdn-create-network.md)
+### [Set up a VM network](sdn-create-network.md)
 ### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
 # How To
 ## Plan
