@@ -12,6 +12,7 @@ ms.assetid: df19c898-2018-441e-a37d-62a38734318b
 ms.author: cfreeman
 ms.date: 03/21/2017
 author: cfreemanwa
+ms.manager: carmonm
 
 ---
 # Automate IT Operations with System Center 2016 - Orchestrator Runbooks
@@ -103,3 +104,14 @@ Each activity can create a loop so that you can retry operations if they fail or
 When a loop is configured for an activity, it continues to run with the same input data until a desired exit looping criteria is reached. The exit criteria is built in a similar way as smart link configurations. You can use any published data item from the activity as part of the exit or do not exit configuration. Included in the common published data are special data items such as **Loop: Number of attempts** and **Loop: Total duration** that let you use information from the loop itself in the looping conditions.  
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all three items have been processed, the next activity in the runbook runs.
+
+## Extending Runbook capabilities 
+
+System Center 2016 - Orchestrator provides two options for extending standard activities. You can either build new activities, or create new Integration Packs (IP). IPs are collections of activities for Microsoft and products of other companies  which are specific to a product or technology. If the functionality that you require is not available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit. 
+
+The System Center 2016 Orchestrator Integration Toolkit is a set of tools to help you create new integrations for Orchestrator. You can use wizards in the Integration Toolkit to easily create new workflow activities and Integration Packs that extend the capabilities of the product. You can also create custom workflow activities using the Orchestrator SDK and C\#, and then package them into an IP using this toolkit.
+
+## Next steps
+
+- Get detailed information about the Integration Tookit at: [System Center 2012 Orchestrator Integration Toolkit](http://go.microsoft.com/fwlink/?LinkId=261687)
+- Learn more about how to design and build runbooks at: [Build and test runbooks for System Center 2016 - Orchestrator](build-test-runbooks.md).

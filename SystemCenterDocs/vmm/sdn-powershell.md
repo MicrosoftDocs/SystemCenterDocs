@@ -5,7 +5,7 @@ description: This article describes how to use PowerShell to deploy SDN componen
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  01/23/2017
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -64,3 +64,7 @@ Here's what you need to do to set up SDN components in VMM with PowerShell.
     - **VMMExpress.ps1**: This script deploys the SDN stack. After you download it, you can your own customizations.
     - **Fabricconfig.psd1**: This file accepts all the inputs for setting up SDN.
     - **Fabricconfig_Example.psd1**: A sample file that contains dummy parameters. You can replace those with your own parameters.
+
+## Next steps
+
+[Configure hosts and physical network infrastructure for SDN ](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).

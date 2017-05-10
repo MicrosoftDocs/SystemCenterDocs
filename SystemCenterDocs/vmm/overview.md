@@ -4,8 +4,8 @@ title: What is VMM?
 description: This article provides an overview of System Center VMM and a summary of what it can do for your business.
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  12/12/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -27,3 +27,7 @@ Welcome to Virtual Machine Manager (VMM) 2016! VMM is part of the System Center 
 
 -  For VMM questions or comments, go to [System Center Virtual Machine Manager Forums](http://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager).
 -  To read blog posts from the VMM engineering team, see [System Center: Virtual Machine Manager Engineering Blog](http://blogs.technet.com/b/scvmm/).
+
+## Next steps
+
+[Learn about](system-reqs.md) system requirements for VMM 2016

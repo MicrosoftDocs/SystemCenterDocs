@@ -1,32 +1,24 @@
 ---
 ms.assetid: 9d758a26-a2dd-42f0-87a6-eafbbb8a2dbf
-title: Deploy a hyper-converged cluster with S2D in VMM
+title: Deploy a hyper-converged or disaggregated cluster with Storage Spaces Direct in VMM 2016
 description: This article describes how to set up Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  03/09/2017
+manager:  carmonm
+ms.date:  05/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-# Deploy a hyper-converged cluster with Storage Spaces Direct in VMM
+# Deploy clusters with Storage Spaces Direct in VMM
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to set up Storage Spaces Direct (S2D) in the System Center 2016 - Virtual Manager (VMM) fabric.
+This article describes how to set up a cluster with Storage Spaces Direct (S2D), in the System Center 2016 - Virtual Manager (VMM) fabric. You can set up a couple of types of clusters:
 
-You can deploy a hyper-converged cluster with a couple of methods, just as you can any other Hyper-V cluster:
-- Enable S2D on a Hyper-V cluster currently managed in the VMM fabric.
-- Add an existing Hyper-V cluster to the VMM fabric, with or without S2D enabled.
-- Provision a Hyper-V cluster and enable S2D from existing Hyper-V hosts
-- Provision a Hyper-V cluster with S2D enabled from bare-metal servers.
-- You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
-
-
-
-
+- A hyper-converged deployment that runs compute and storage resources in the same cluster.
+- A disaggregated deployment in which compute and storage run in separate environments. The storage component is built using S2D and scale-out file server (SOFS), to provide an independently scalable storage repository for VMs and apps.
 
 ## Before you start
 
@@ -35,16 +27,25 @@ You can deploy a hyper-converged cluster with a couple of methods, just as you c
 - You should set up networks on hosts that are nodes in the cluster, before you enable S2D.
 - For hyper-converged deployments, you can enable S2D when you add an existing Hyper-V cluster to the VMM fabric, or when you create a cluster from standalone Hyper-V hosts in the VMM fabric. You can't currently enable S2D on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
 
-## Hyper-converged deployment
+## Deploy a hyper-converged cluster
 
-In a hyper-converged topology storage and compute are on the same cluster. Here's what you need to do:
+You can deploy a hyper-converged cluster in the VMM fabric using the same methods that you would with any other Hyper-V cluster:
 
-1. Create a Hyper-V cluster in the VMM fabric, and enable S2D on the Hyper-V cluster. Alternatively if you already have a S2D cluster you configured outside VMM, you add it to the VMM fabric.
+- Enable S2D on a Hyper-V cluster currently managed in the VMM fabric.
+- Add an existing Hyper-V cluster to the VMM fabric, with or without S2D enabled.
+- Provision a Hyper-V cluster and enable S2D from existing Hyper-V hosts
+- Provision a Hyper-V cluster with S2D enabled from bare-metal servers.
+- You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
+
+
+### Deployment steps
+
+1. Create a Hyper-V cluster in the VMM fabric, and enable S2D on it. Alternatively if you already have a S2D cluster you configured outside VMM, you add it to the VMM fabric.
 2. Set up networking on the cluster. [Learn more](manage-networks.md).
 3. Modify the storage pool, and create cluster-shared volumes (CSVs)
 4. Deploy VMs on the cluster.
 
-### Set up a Hyper-V cluster and enable S2D
+### Create a cluster
 
 1. Click **Fabric Resources** > **Create** > **Hyper-V Cluster**.
 2.  In **General Configuration**, specify a cluster name, select a host group, and select  **Enable Storage Spaces Direct**.
@@ -60,15 +61,16 @@ When you create the cluster, VMM does the following:
 3.  Creates the cluster.
 4.  Enables S2D, and creates a storage pool with the same name as the one provided in the wizard.
 
-### Add an existing Hyper-V cluster with S2D enabled
-
-If you already have a hyper-converged cluster you can add it to the VMM fabric.
+### Add an existing cluster
 
 1.  Click **VMs and Services**, right-click **All Hosts**, and select **Add Hyper-V Hosts and Clusters**.
 2. If the cluster isn't in the VMM domain, select **The Windows server computer is in an untrusted Active Directory domain**.
 3. Specify the cluster, and provide a Run As account. This adds the host cluster into VMM.
+4. If the cluster doesn't have S2D enabled, you need to enable it on the cluster properties.
 
 ### Manage pool and create CSVs
+
+After you [set up networking](manage-networks.md)) on the cluster, create CSVs.
 
 1. Click **Fabric** > **Storage** > **Arrays**, right-click the Storage Spaces Direct cluster > **Manage Pool**. Change the name of the pool that was created by default if you need to.
 2. To create a volume, right-click the cluster > **Properties** > **Shared Volumes**.
@@ -81,10 +83,9 @@ If you use PowerShell, the pool and the storage tier is automatically created wi
 VMs can be directly deployed on the hyper-converged cluster. Their virtual hard disks are placed on the volumes you create. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
 
-# Disaggregated deployment
+## Deploy a disaggregated deployment
 
-In a disaggregated deployment compute and storage run in separate environments. The storage component is built using S2D and scale-out file server (SOFS) to provide an independently scalable storage repository for VMs and
-apps. Here's what you need to do:
+In a disaggregated deployment compute and storage run in separate environments. The storage component is built using S2D and scale-out file server (SOFS) to provide an independently scalable storage repository for VMs and apps. 
 
 ### Set up an SOFS cluster and enable S2D
 
@@ -117,7 +118,6 @@ If you want to add additional nodes to the SOFS cluster, VMM automatically disco
 6. In **Capacity** specify the share size and settings.
 7. In **Summary**, verify the settings. After the share is created, a new CSV is added under the storage pool.
 
-### Allocate the storage in Hyper-V
+## Next steps
 
-1. In the Hyper-V properties > **Storage**, specify the file share path.
-2. Now you can create VMs in this path.
+You specify the file share path in the properties of a Hyper-V host or cluster. Learn more about [provisioning storage](hyper-v-storage.md).

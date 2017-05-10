@@ -1,31 +1,34 @@
 # Overview
-## [Get started](overview.md)
-## [What's new in VMM](whats-new.md)
+## [What is VMM?](overview.md)
+## [What's new in VMM 2016](whats-new.md)
 # Get Started
-## [Scenario: Deploy a VMM cloud](deploy-cloud.md)
+## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
-### [Scenario: Deploy a guarded host fabric](deploy-guarded-host-fabric.md)
+## [Deploy a guarded host fabric](deploy-guarded-host-fabric.md)
 ### [Deploy guarded hosts](guarded-deploy-host.md)
 ### [Deploy a shielded VHDX and VM template](guarded-deploy-template.md)
 ### [Deploy shielded virtual machines](guarded-deploy-vm.md)
-## [Scenario: Deploy an SDN in VMM](deploy-sdn.md)
+## [Deploy a software-defined network (SDN)](deploy-sdn.md)
 ### [Deploy an SDN network controller](sdn-controller.md)
 ### [Deploy an SDN SLB](sdn-slb.md)
 ### [Deploy an SDN RAS gateway](sdn-gateway.md)
 ### [Deploy SDN using PowerShell](sdn-powershell.md)
 ### [Remove an SDN from VMM](sdn-remove.md)
+### [Manage SDN resources in the VMM fabric](network-sdn.md)
+### [Set up a VM network](sdn-create-network.md)
+### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
 # How To
-## [Plan](plan-overview.md)
+## Plan
 ### [System requirements](system-reqs.md)
 ### [Plan VMM installation](plan-install.md)
 ### [Plan a VMM high availability deployment](plan-ha-install.md)
-### [VMM ports and protocols](plan-ports-protocols.md)
+### [Identify VMM ports and protocols](plan-ports-protocols.md)
 ### [Plan the VMM compute fabric](plan-compute.md)
 ### [Plan the VMM networking fabric](plan-network.md)
-### [Supported storage arrays](supported-arrays.md)
-## Upgrade
-### [Upgrade VMM](upgrade.md)
+### [Identify supported storage arrays](supported-arrays.md)
+## Upgrade and install
+### [Upgrade to VMM 2016](upgrade.md)
 ### [Install VMM](install.md)
 ### [Install the VMM console](install-console.md)
 ### [Deploy VMM for high availability](high-availability.md)
@@ -34,36 +37,34 @@
 #### [Deploy a highly available VMM library](ha-library.md)
 ### [Deploy update rollups](update-rollups.md)
 ### [Back up and restore VMM](backup.md)
-## Manage the VMM Library
-### [Manage the VMM library](manage-library-server.md)
-#### [Add file-based resources to the VMM library](library-files.md)
-#### [Add profiles to the VMM library](library-profiles.md)
-#### [Add VM templates to the VMM library](library-vm-templates.md)
-#### [Add service templates to the VMM library](library-service-templates.md)
-#### [Manage VMM library resources](library-resources.md)
-## Manage Virtualization Servers
+## Manage the VMM library
+### [Library overview](manage-library-server.md)
+### [Add file-based resources to the VMM library](library-files.md)
+### [Add profiles to the VMM library](library-profiles.md)
+### [Add VM templates to the VMM library](library-vm-templates.md)
+### [Add service templates to the VMM library](library-service-templates.md)
+### [Manage VMM library resources](library-resources.md)
+## Manage virtualization servers
 ### [Manage VMM host groups](host-groups.md)
-### [Manage Hyper-V hosts and clusters](hyper-v-hosts.md)
-### [Run a rolling upgrade of Hyper-V clusters](hyper-v-rolling-upgrade.md)
 ### [Add existing Hyper-V hosts and clusters to the fabric](hyper-v-existing.md)
 ### [Add a Nano server as a Hyper-V host or cluster](hyper-v-nano.md)
 ### [Create a cluster from standalone Hyper-V hosts](hyper-v-standalone.md)
 ### [Provision a Hyper-V host or cluster from bare-metal](hyper-v-bare-metal.md)
 ### [Create a guest Hyper-V cluster from a service template](hyper-v-guest-cluster.md)
-### [Manage Hyper-V clusters in the VMM fabric](hyper-v-cluster.md)
 ### [Set up networking for Hyper-V hosts and clusters](hyper-v-network.md)
 ### [Set up storage for Hyper-V hosts and clusters](hyper-v-storage.md)
-### [Update Hyper-V hosts and clusters](hyper-v-update.md)
 ### [Manage MPIO for Hyper-V hosts and clusters](hyper-v-mpio.md)
 ### [Manage Hyper-V extended port ACLs](hyper-v-acls.md)
-### [Service hosts](hyper-v-service.md)
+### [Manage Hyper-V clusters](hyper-v-cluster.md)
+### [Update Hyper-V hosts and clusters](hyper-v-update.md)
+### [Run a rolling upgrade of Hyper-V clusters](hyper-v-rolling-upgrade.md)
+### [Service Hyper-V hosts for maintenance](hyper-v-service.md)
 ### [Manage VMware servers](manage-vmware-hosts.md)
-## Manage Management Servers
+## Manage management servers
 ### [Manage infrastructure servers](infrastructure-server.md)
 ### [Manage update servers](update-server.md)
-## Manage Networking
-### [Manage the networking fabric](manage-networks.md)
-### [Manage SDN resources in the VMM fabric](network-sdn.md)
+## Manage networking
+### [Network fabric overview](manage-networks.md)
 ### [Set up logical networks](network-logical.md)
 ### [Set up VM networks](network-virtual.md)
 ### [Set up IP address pools](network-pool.md)
@@ -73,8 +74,8 @@
 ### [Set up MAC address pools](network-mac.md)
 ### [Integrate NLB with service templates](network-nlb.md)
 ### [Set up an IPAM server](network-ipam.md)
-## Manage Storage
-### [Manage the VMM storage fabric](manage-storage.md)
+## Manage storage
+### [Storage fabric overview](manage-storage.md)
 ### [Set up storage classifications](storage-classification.md)
 ### [Add storage devices](storage-device.md)
 ### [Allocate storage to host groups](storage-host-group.md)
@@ -89,8 +90,8 @@
 ### [Add an existing SOFS to the VMM fabric](sofs-existing.md)
 ### [Create an SOFS cluster from standalone servers](sofs-cluster.md)
 ### [Provision SOFS from bare-metal computers](sofs-bare-metal.md)
-#### [Manage SOFS settings](sofs-settings.md)
-## Manage Virtual Machines
+### [Manage SOFS settings](sofs-settings.md)
+## Manage virtual machines
 ### [Provision virtual machines](provision-vms.md)
 ### [Deploy virtual machines from a blank VHD](vm-blank-disk.md)
 ### [Deploy virtual machines from an existing VHD](vm-existing-disk.md)
@@ -101,20 +102,20 @@
 ### [Convert VMware VMs to Hyper-V](vm-convert-vmware.md)
 ### [Manage virtual machine settings](vm-settings.md)
 ### [Manage dynamic and power optimization for virtual machines](vm-optimization.md)
-### [Create VM role templates](vm-role-template.md)
-## Migrate Virtual Machines
-### [Migrate virtual machines and storage](migrate.md)
+### [Create VM role templates with VMM and Azure Pack](vm-role-template.md)
+## Migrate virtual machines
+### [Migration overview](migrate.md)
 ### [Migrate a virtual machine](migrate-vm.md)
 ### [Migrate virtual machine storage](migrate-storage.md)
 ### [Run a live migration](migrate-live.md)
-## Manage Accounts
-### [Manage roles and accounts](manage-account.md)
+## Manage roles and accounts
+### [Roles and accounts overview](manage-account.md)
 ### [Set up user roles](account-user-role.md)
 ### [Set up Run As accounts](account-runas.md)
 ### [Manage self-service users](self-service.md)
 ### [Perform self-service user tasks](self-service-tasks.md)
 ## Monitor VMM
-### [Monitor VMM](monitor.md)
+### [Monitoring overview](monitor.md)
 ### [Set up monitoring and reporting with Operations Manager](monitors-ops-manager.md)
 ## Integrate with Azure
 ### [Add an Azure subscription in VMM](azure-subscription.md)
