@@ -16,7 +16,6 @@
 ### [Child Runbooks in Service Management Automation](link-runbooks.md)
 ## [Manage Runbooks](manage-runbooks.md)
 ## Manage SMA
-### [Set or change the Service Management Automation endpoint](set-change-endpoint.md)
 ### [Establish trust with Service Provider Foundation](establish-trust-between-service-management-automation-and-service-provider-foundation.md)
 ### [How to Purge the SMA database](how-to-purge-the-service-management-automation-database.md)
 ### [How to scale your SMA installation](scaling-service-management-automation-up-or-down.md)
