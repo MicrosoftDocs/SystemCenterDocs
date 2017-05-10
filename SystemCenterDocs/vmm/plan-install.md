@@ -4,8 +4,8 @@ title: Plan VMM installation
 description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 12/07/2016
+manager: carmonm
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -148,4 +148,4 @@ To ensure that VMM retains encrypted data across moves, you can use distributed 
 
 ## Next steps
 
-- [Install VMM](~/vmm/install.md)
+[Install VMM](install.md)
