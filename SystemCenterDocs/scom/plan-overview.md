@@ -5,7 +5,7 @@ description: This article is the landing page for the planning guide supporting 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 05/08/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -24,12 +24,12 @@ This guide provides recommendations to help you develop an Operations Manager de
 
 This guide describes sets of tasks for several possible starting points of a System Center 2016 - Operations Manager deployment.  The guide helps you determine the most appropriate deployment strategy for your environment.
 
-The strategies that are presented in this guide are appropriate for many common Operations Manager deployments, and they have been tested and validated for environments that contain up to the capacity limits stated in the [System Requirements](../orchestrator/system-requirements.md) article.  
+The strategies that are presented in this guide are appropriate for many common Operations Manager deployments, and they have been tested and validated for environments that contain up to the capacity limits stated in the [System Requirements](plan-system-requirements.md) article.  
 
 
 ## Planning guide topics
 
-- [System Requirements for Operations Manager](../orchestrator/system-requirements.md)
+- [System Requirements for Operations Manager](plan-system-requirements.md)
 
     Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager in System Center 2016. 
 
@@ -61,7 +61,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
     Provides an overview of the Windows and UNIX/Linux agent and the software, security and deployment requirements and considerations that you need to understand before proceeding with your deployment of Operations Manager.
 
-- [Security Design](../om/plan/plan-security-summary.md)
+- [Security Design](plan-security-accounts.md)
 
     This section provides you with security-related information as it pertains to the planning of security accounts, roles and privileges required for your deployment of System Center 2016 - Operations Manager.
 
