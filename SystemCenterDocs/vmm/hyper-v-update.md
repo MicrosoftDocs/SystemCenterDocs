@@ -5,7 +5,7 @@ description: This article describes how to update Hyper-V hosts and clusters in 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -38,3 +38,7 @@ You'll need to set up an update (WSUS server) in the VMM fabric, and configure u
 	- If cluster node is already in maintenance mode, select **Allow remediation of clusters with nodes already in maintenance mode**. In maintenance mode VMs can't be created or moved to the host. The host has a zero rating and is excluded from dynamic optimization.
 	- Select **Live migration** to remove virtual machines from a host before performing update remediation so that they remain online. If you don't need to keep them online and want to perform a quicker update, click **Save state** to shut down virtual machines and proceed with remediation.
 5. Click **Remediate** to start updating. After remediation, if no reboot is pending the server or cluster will show as **Compliant**.
+
+## Next steps
+
+[Learn about](update-rollups.md) VMM updates
