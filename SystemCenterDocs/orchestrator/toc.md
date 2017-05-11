@@ -4,6 +4,7 @@
 # Get started
 ## [Install Orchestrator](install.md)
 ## [How to work with runbooks in the Orchestrator console](console-overview.md)
+## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
 # How To
 ## Plan 
 ### [Database sizing and performance](database-sizing-and-performance.md)
@@ -23,7 +24,6 @@
 ### [Monitor activities](activity-events.md)
 ### [Runbook properties](runbook-properties.md)
 ### [Track runbooks](track-runbooks-audit-trail.md)
-### [Runbook samples](runbook-samples.md)
 ## Manage Orchestrator Servers
 ### [Runbook permissions](runbook-permissions.md)
 ### [How to backup Orchestrator](how-to-back-up-orchestrator.md)
