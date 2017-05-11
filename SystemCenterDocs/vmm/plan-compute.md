@@ -4,8 +4,8 @@ title: Plan the VMM compute fabric
 description: This article provides planning steps for setting up and provisioning the VMM compute fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -19,7 +19,7 @@ This article describes how to plan your System Center 2016 - Virtual Machine Man
 
 ## Plan the VMM library
 
-Note the following:
+Before you start:
 
 - You should verify system requirements for the VMM library before you install VMM.
 - VMM deploys the default library share on the VMM server. After setup is complete you can't remove or relocate the default library share so consider it's location before you install VMM.

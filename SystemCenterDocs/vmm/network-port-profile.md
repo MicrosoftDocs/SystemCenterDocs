@@ -1,11 +1,11 @@
 ---
 ms.assetid: ad08f7a3-65dc-40e4-8e9f-a3df4ef39eba
-title: Set up port profiles in the VMM fabric
+title: Set up port profiles in the VMM 2016 fabric
 description: This article describes how to create port profiles in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -25,7 +25,7 @@ Use this article to learn about and set up uplink port profiles and virtual netw
 
 Some guidelines for creating uplink port profiles:
 
-- You'll need at least one uplink port profile for each physical network in your environment. If you do have a simple environment with a single physical network and all hosts are configured the same way, with the same protocols for network adapter teaming, then you might only need a single uplink port profile. This is rare though. You'll probably need to scope or restrict certain logical networks to a specific group of hosts computer, and this need makes it useful to create multiple uplink port profiles.
+- You need at least one uplink port profile for each physical network in your environment. If you do have a simple environment with a single physical network and all hosts are configured the same way, with the same protocols for network adapter teaming, then you might only need a single uplink port profile. This is rare though. You'll probably need to scope or restrict certain logical networks to a specific group of hosts computer, and this need makes it useful to create multiple uplink port profiles.
 - You need to define uplinks for each physical location that has its own VLAN and IP subnets.
 - If you plan to restrict or otherwise scope logical networks to a specific set of host
 computers, you will need to create uplinks for each group of computers.
@@ -88,3 +88,7 @@ After creating a port profile you can create a port classification.
 
 1. Click **Fabric** > **Home** > **Show** > **Fabric Resources**. Click the **Fabric** tab > **Networking** > **Port Classifications** > **Home** > **Create** > **Port Classification**.
 2. In **Create Port Classification Wizard** > **Name** specify a classification name.
+
+## Next steps
+
+[Set up logical switches](network-switch.md)

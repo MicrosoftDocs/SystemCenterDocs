@@ -5,7 +5,7 @@ description: This article provides about provisioning a Hyper-V cluster in the V
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -56,3 +56,8 @@ Here's what VMM does after you create the cluster:
 5.  Creates the cluster with quorum settings, configures any cluster static IP settings that you specified, and enables Cluster Shared Volumes \(CSV\)
 
 6.  For each logical unit that is designated as a CSV, assigns the logical unit as a CSV on the cluster
+
+
+## Next steps
+
+[Provision VMs](provision-vms.md)

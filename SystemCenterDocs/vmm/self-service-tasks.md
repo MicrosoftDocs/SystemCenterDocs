@@ -4,8 +4,8 @@ title: Work with VMM as a self-service user
 description: This article describes how to work with VMM as a self-service user
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -80,3 +80,7 @@ Import resources as follows:
 2. Click **Add** and select the physical resources you want to export. Then click **OK**.
 3. In **Specify a destination for the export files**, click **Browse** and select a destination folder. Then click **OK**.
 4. When you're finished, click **Export**.
+
+## Next steps
+
+[Provision VMs](provision-vms.md)
