@@ -204,4 +204,4 @@ You can test the runbook by using the Runbook Tester. This tool lets you run the
 
 ## Next steps
 
-See the [Runbook Samples](runbook-samples.md).
+See the [Example Runbook: Monitor a folder with a runbook](monitor-a-folder-within-a-runbook.md).
