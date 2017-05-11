@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-In Software Define Networking (SDN) fabric, you can use the Software Load Balancer (SLB) to evenly distribute the network traffic among the workloads managed by the Cloud Service Providers (CSPs) and the tenants. Learn more about [Software Load Balancer (SLB)](sdn.slb.md).
+In Software Define Networking (SDN) fabric, you can use the Software Load Balancer (SLB) to evenly distribute the network traffic among the workloads managed by the Cloud Service Providers (CSPs) and the tenants. Learn more about [Software Load Balancer (SLB)](sdn-slb.md).
 
 System Center Virtual Machine Manager 2016 supports the following two scenarios of load balancing:
 
@@ -32,7 +32,7 @@ This article provides information about how to configure the load balance by usi
 ## Before you start
 
 Ensure the following:
--  [SDN network controller](sdn.controller.md)  and the SDN [software load balancer](sdn.slb.md) are deployed.
+-  [SDN network controller](sdn-controller.md)  and the SDN [software load balancer](sdn-slb.md) are deployed.
 
 - Required VMs are created on appropriate networks and are identified for load balancing.
 
@@ -42,14 +42,14 @@ Use the following procedures to configure the VIPs to load balance the workload 
 
 1. In VMM console, click **Fabric** > **VIP Templates**. Right-click and select **Create VIP Template**.
 
-    ![VIP template name](./media/sdn-load-balance-network-traffic/lb-template-name-image1.png)
+    ![VIP template name](media/sdn-load-balance-network-traffic/lb-template-name-image1.png)
 
 2. In the **Name** page, provide the name and optional description. Specify the **Virtual IP Port** that will be used as front end port for the network traffic. In the **Backend port**, specify the port on which the backend workloads are hosted. Click **Next**.
 
-    ![VIP template name](./media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
+    ![VIP template name](media/sdn-load-balance-network-traffic/lb-template-type-image2.png)
 3. In **Specify a Template type**, select Specific. In **Manufacturer**, select Microsoft.  In **Model**, select Microsoft Network Controller.  Click **Next**.
 
-    ![VIP template name](./media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
+    ![VIP template name](media/sdn-load-balance-network-traffic/lb-protocol-options-image3.png)
 4. In **Specify Protocol options**, select the Custom option and type TCP/UDP in Protocol name. Click **Next**.
 
     > [!NOTE]
@@ -58,7 +58,7 @@ Use the following procedures to configure the VIPs to load balance the workload 
 
 5. For **Persistence** and **Load Balancing**, use the defaults. Click **Next**.
 
-    ![VIP template name](./media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
+    ![VIP template name](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
     > [!NOTE]
 
     > SLB doesn’t support persistence and different Load balancing methods. By default, SLB uses Round Robin algorithm for load balancing.
