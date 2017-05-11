@@ -143,5 +143,6 @@ $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,D
 ```
 
 ## Next steps
-To learn more about Service Management Automation read[Service Management Automation](service-management-automation.md).
-To learn more about how to use runbooks in your environment read[Runbook Operations](manage/runbook-operations.md).
+To learn more about Service Management Automation read [Service Management Automation](service-management-automation.md).
+
+To learn more about how to use runbooks in your environment read [Runbook Operations](manage/runbook-operations.md).
