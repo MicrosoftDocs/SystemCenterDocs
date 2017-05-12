@@ -90,4 +90,4 @@ To summarize:
 
 ## Next steps
 
-Get step by step instructions for creating runbooks at [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook).
+Get step by step instructions for creating runbooks at [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook.md).
