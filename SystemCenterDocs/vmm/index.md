@@ -104,4 +104,40 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </div>
         </a>
     </li>
+    <li>
+        <a href="/system-center/vmm/deploy-guarded-host-fabric">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_management.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Deploy a guarded host fabric</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/system-center/vmm/deploy-sdn">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_management.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Deploy a software-defined network (SDN)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
 </ul>
