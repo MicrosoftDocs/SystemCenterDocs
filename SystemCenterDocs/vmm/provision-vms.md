@@ -5,7 +5,7 @@ description: This article describes how to manage VMs in the VMM compute fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  05/14/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -29,6 +29,13 @@ VMs can be provisioned using a number of methods:
 - [Create a VM from a template](vm-template.md): Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
 - **Create a VM in a service deployment**: In VMM you can create services that are logical grouping of VMs that are configured and deployed as s single entity. A single tier service includes a single VM. Multi-tier services have multiple VMs.
 - [Rapidly provision a VM using storage area network (SAN) copy](vm-san-copy.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
+
+## Guest cluster deployment
+
+On a Hyper-V cluster, you can deploy a guest failover cluster that consists of multiple VMs that uses shared .vhdx files. VMM supports the following:
+
+You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if  Hyper-V uses Cluster Shared Volumes (CSV) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.  Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files. No other storage types are supported, and third-party SMB storage isn't supported.
+
 
 ## VM placement
 
