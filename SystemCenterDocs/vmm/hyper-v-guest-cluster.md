@@ -87,3 +87,7 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 
 
 After you've set up the guest cluster you're ready to deploy the service.
+
+## Next steps
+
+[Deploy VMs from a template](vm-template.md)
