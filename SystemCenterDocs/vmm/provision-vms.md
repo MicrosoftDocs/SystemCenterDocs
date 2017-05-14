@@ -37,7 +37,7 @@ On a Hyper-V cluster, you can deploy a guest failover cluster that consists of m
 You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if  Hyper-V uses Cluster Shared Volumes (CSV) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.  Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files. No other storage types are supported, and third-party SMB storage isn't supported.
 
 
-## Placing VMs on Hyper-V hosts
+## VM placement
 
 When you deploy or migrate a VM, VMM uses intelligent VM placement to evaluate available hosts.
 
