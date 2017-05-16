@@ -4,8 +4,8 @@ title: Set up an IPAM server in the VMM fabric
 description: This article describes how to manage MAC address pools in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -59,3 +59,7 @@ Network site | VIRTUALIZED IP ADDRESS SPACE<br /> Provider IP Address Space: **N
 IP address subnet |IP Address Subnet (same name in IPAM as in VMM)
 IP address pool |IP Address Range
 VM network | VIRTUALIZED IP ADDRESS SPACE<br /> Customer IP Address Space: **VM Network** column
+
+## Next steps
+
+[Set up logical networks](network-logical.md)

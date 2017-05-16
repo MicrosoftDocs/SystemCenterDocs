@@ -4,8 +4,8 @@ title: Set up logical networks in the VMM fabric
 description: This article describes how to set up logical networks in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,15 +15,19 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016  - Virtual Machine Manager
 
-Read this article to learn how to create System Center 2016 - Virtual Machine Manager (VMM) logical networks.
+Read this article to learn how to create logical networks in System Center 2016 - Virtual Machine Manager (VMM).
 
-There are different types of networks in most organizations, including corporate networks, management networks, and others. These networks might be isolated physically or virtually using network virtualization and virtual LANs (VLANs). In VMM each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physicals networks and are used to model your VMM network fabric.
+You have different types of networks in your organization, including corporate networks, management networks, and others. In VMM each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physicals networks.
 
-When you create logical networks to model your environment you assign them properties that match your physical environment. You specify the type of network, the network sites associated with the logical network, and static address pools if you're not using DCHP to assign IP addresses to VMs you create in the network sites.
+When you create logical networks, you assign them properties that match your physical environment. You specify the type of network, the associated network sites associated, and the static address pools if you're not using DCHP to assign IP addresses to VMs you create in the network sites. You also specify whether networks are isolated physically or virtually, using network virtualization and virtual LANs (VLANs).
 
-When you provision virtualization hosts in the VMM fabric, you associate physical adapters on those hosts with logical networks.
+You use logical networks when you provision virtualization hosts in the VMM fabric. You associate physical adapters on hosts with logical networks.
+
+VMM virtual machine (VM) networks are based on logical networks. VM networks provide an interface through which VMs connect to a logical network. A logical network can have a single, or multiple, VM networks mapped to it.
 
 ## Before you start
+
+Before you start, it's important to understand how logical networks work in VMM.
 
 - **Automatic logical networks**: By default, VMM creates logical networks automatically. When you provision a host in the VMM fabric and there's no VMM logical network associated with a physical network adapter on that host, VMM automatically creates a logical network and associates it with an adapter. By default for the logical network VMM first DNS suffix label of the connection-specific DNS suffix. By default VMM also creates a VM network configured with **No isolation**.
 - **Manual logical networks**: When you create a logical network manually you specify:
@@ -42,7 +46,7 @@ When you provision virtualization hosts in the VMM fabric, you associate physica
 
 ## Create logical networks automatically
 
-If you want VMM to automatically create logical and VM networks you can specify how VMM determines the logical network name.
+If you want VMM to automatically create logical networks (and VM networks) you can specify how VMM determines the logical network name.
 
 1. Click **Settings** > **General**. Double-click **Network Settings**.
 2. Configure the **Logical network matching** setting. Note that:

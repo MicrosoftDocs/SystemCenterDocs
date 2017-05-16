@@ -1,6 +1,6 @@
 ---
 ms.assetid: 2e2323c5-6ec6-4fd2-bec5-70537d328fbe
-title: Remove a Software Defined Network (SDN) from VMM 2016
+title: Remove a Software Defined Network (SDN) infrastructure from VMM 2016
 description: This article describes how to remove SDN from the VMM fabric.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-To remove SDN from System Center 2016 Virtual Machine Manager (VMM), you must remove the following objects - in the specified order:
+To remove a SDN from System Center 2016 Virtual Machine Manager (VMM), you must remove the following objects - in the specified order:
 
 - VM networks (associated with the NC managed logical networks).
 - Logical networks (managed by NC).
