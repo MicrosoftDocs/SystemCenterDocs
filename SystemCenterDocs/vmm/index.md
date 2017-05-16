@@ -111,7 +111,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_management.svg" alt="" />
+                            <img src="/media/common/i_deploy.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_management.svg" alt="" />
+                            <img src="/media/common/i_deploy.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
