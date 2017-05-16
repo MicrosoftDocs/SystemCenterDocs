@@ -163,8 +163,8 @@ Write-Output "Created VIP " $vip;
 
 $vip = get-scloadbalancervip -Name $VipName;
 Write-Output "VIP created successfully " $vip;
-
 ```
+
 ### Script for creating VIP to load balance internal network traffic
 
 For the following example script, we created a new VIP template by name ILB-VIP-Template for load balancing the port 443 using the procedure detailed in the [previous section](#create-a-vip-template). The script creates a VIP from tenant VM network to load balance the VMs ILB-001 & ILB-002, which are part of the same tenant VM network.
