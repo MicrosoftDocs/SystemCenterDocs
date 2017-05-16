@@ -37,7 +37,7 @@ In order to remove the delay you can either deactivate **generatePublisherEviden
 
 ## To create a profile for the service account
 
-1. On the runbook server where runbooks run that contain an activity referencing the .NET libraries, log on to the computer that is using the service account credentials. A profile is created on first logon.
+1. On the runbook server where runbooks run that contain an activity referencing the .NET libraries, log on to the computer using the service account credentials. A profile is created on first logon.
 
 ## Next steps
 Learn more about creating runbooks at [Build and test runbooks for System Center 2016 - Orchestrator](design-and-build-runbooks.md).  

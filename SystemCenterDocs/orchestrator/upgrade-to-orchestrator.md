@@ -2,7 +2,7 @@
 title:  Upgrade to Orchestrator-2016
 author:  cfreemanwa
 ms.author: cfreeman
-manager:  cfreeman
+manager:  carmonm
 ms.date:  10/12/2016
 ms.topic:  article
 ms.prod:  system-center-threshold
@@ -37,3 +37,7 @@ You can upgrade your installation of System Center 2012 R2 - Orchestrator to Sys
 4. Install any Orchestrator runbook servers in System Center 2016.
 5. Install the Orchestrator Runbook Designer in System Center 2016.
 6. If needed, install the Orchestrator Web Service in System Center 2016.
+
+## Next Steps
+
+Learn how to deploy runbooks at [Deploy runbooks](deploy-runbooks.md).
