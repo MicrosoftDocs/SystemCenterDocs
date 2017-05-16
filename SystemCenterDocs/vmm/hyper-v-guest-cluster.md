@@ -5,7 +5,7 @@ description: This article provides guidance about creating a guest cluster from 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  05/14/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,17 +15,20 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Use this article if you want to create a guest cluster (a failover cluster with two or more nodes containing VMs) from a System Center 2016 - Virtual Machine Manager (VMM) service template.
+Use this article if you want to create a guest failover cluster using a System Center 2016 - Virtual Machine Manager (VMM) service template.
 
-Services in VMM group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that should be used. You can add VM templates, network settings, applications and storage to a service template. [Learn more](library-resources.md)
+A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that should be used. You can add VM templates, network settings, applications and storage to a service template. [Learn more](library-resources.md)
 
 You can use service templates to create a guest cluster . That cluster can then be configured to run an app such as SQL Server.
 
 
 ## Before you start
 
-- VMs in a guest cluster can only be deployed to host clusters running Windows Server 2012 R2 or later. Otherwise deployment will fail.
-- You'll need a number of scripts to create the guest cluster, including a script to run on the first VM in the cluster, a script to run on the other VMs so that they can join the cluster. Script settings are specified in the service template application settings.
+- VMs in a guest cluster can only be deployed to Hyper-V host clusters running Windows Server 2012 R2 or later. Otherwise deployment will fail.
+- You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if  Hyper-V uses Cluster Shared Volumes (CSV) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.
+- Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files.
+- No other shared storage types are supported for guest clusters. Third-party SMB storage isn't supported.
+- You need a number of scripts to create the guest cluster, including a script to run on the first VM in the cluster, a script to run on the other VMs so that they can join the cluster. Script settings are specified in the service template application settings.
 - To configure shared disks for the cluster you'll need to use new VHDX files. Don't reuse from a previous cluster. Ensure that the hard disk files are in the VMM library.
 - Identify a single path in SCSI-based storage where all the VHDX files for the guest cluster will be placed at deployment time. You can use storage classifications to control the placement of VHDX files but you'll need at least one location in the classification with the capacity to hold all of the VHDX files. VMM doesn't deploy the VHDX files to multiple locations.
 - You can vary the location of VHDX files at deployment time, even if you use the same service template to deploy multiple guest clusters. To do this you'll need to deploy the guest clusters to a host group and not a cloud. Then at deployment you specify a single path for all the shared VHDX files for the cluster. This overrides the location specified in the VM template.
@@ -84,3 +87,7 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 
 
 After you've set up the guest cluster you're ready to deploy the service.
+
+## Next steps
+
+[Deploy VMs from a template](vm-template.md)

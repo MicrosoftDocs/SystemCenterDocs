@@ -1,25 +1,25 @@
 ---
 ms.assetid: 3ab37fed-9dcf-411f-983f-4fc9ea78c4c9
-title: Manage virtual machines in the VMM fabric
+title: Provision and manage virtual machines in the VMM fabric
 description: This article describes how to manage VMs in the VMM compute fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  05/14/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 
-# Manage virtual machines in the VMM fabric
+# Provision virtual machines in the VMM fabric
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article provides an overview of managing virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. It provides information about features offered during provisioning, and includes links to articles that describe different ways to provision and manage virtual machines.
+This article provides an overview of provisioning VMs in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric. Learn about provisioning methods, and features provided by VMM during provisioning.
 
-## Provision VMs
+## Provisioning
 
 VMs can be provisioned using a number of methods:
 
@@ -29,6 +29,13 @@ VMs can be provisioned using a number of methods:
 - [Create a VM from a template](vm-template.md): Create VMs with consistent settings configured in a VM template. VM templates are XML objects stored in the VMM library. They can be used to control and restrict VM settings available to self-service users. Template settings include the guest operating system profile, a hardware profile, and one or more VHDs that can be used to create a new VM.
 - **Create a VM in a service deployment**: In VMM you can create services that are logical grouping of VMs that are configured and deployed as s single entity. A single tier service includes a single VM. Multi-tier services have multiple VMs.
 - [Rapidly provision a VM using storage area network (SAN) copy](vm-san-copy.md): Deploy a VM using SAN copy abilities such as snapshot and clone. You can rapidly provision standalone VMs, or VMs that are provisioned in a service.
+
+## Deploying a VM guest cluster
+
+On a Hyper-V cluster, you can deploy a guest failover cluster that consists of multiple VMs that uses shared .vhdx files. VMM supports the following:
+
+You can deploy a guest failover cluster that uses shared .vhdx files on a Hyper-V failover cluster. In this scenario, if  Hyper-V uses Cluster Shared Volumes (CSV) on block-level storage, then the shared vhdx files are stored on a CSV that's configured as shared storage.  Alternatively, Hyper-V can use SMB file-based storage deployed by Scale-Out File Server (SOFS), as the location of the shared .vhdx files. No other storage types are supported, and third-party SMB storage isn't supported.
+
 
 ## VM placement
 
@@ -82,7 +89,7 @@ A host might be assigned a zero rating if it does not meet conditions to receive
 - VMM blocks migration of Hyper-V hosts to hosts running different virtualization software. Migration of a virtual machine with specific features not allowed by the virtualization software that is running on a host will be blocked. For example, Hyper-V hosts do not allow booting up from a SCSI hard disk.
 
 
-## Generation 1 and 2 VMs
+## Handling generation 1 and 2 VMs
 
 In VMM you can create generation 1 and generation 2 VMs.
 
@@ -97,7 +104,7 @@ In VMM you can create generation 1 and generation 2 VMs.
     - To customize the start order for generation 1 VMs you need to use PowerShell, using the FirstBootDevice parameter when you create a VM. For example, to set the first boot device as the network adapter type: **Set-SCVMTemplate -Template "Generation2template" –FirstBootDevice "NIC,0"**
 
 
-## VM provisioning optimization
+## Optimizing provisioning
 
 ### Differencing disks
 
@@ -125,7 +132,7 @@ Fast file copy improves the performance of file transfers, mostly by leveraging 
 
 
 
-## Provision VMware VMs
+## Provisioning VMware VMs
 
 After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMware VMs like any other VM. Note the following:
 
@@ -143,9 +150,9 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 - VMM doesn't support VMware VMs with VHDs connected to an IDE bus.
 - VMM supports VMware thin provision hard disk through the dynamic disk type. Note that if you create and deploy a VM to a vSphere host configured to use a dynamic disk the disk will be thin provisioned. If a VM was created as a thin provisioned disk out-of-band VM will display it as dynamic. If you save a thin provision disk to the library VMM will save it as thick. It remains thick if you create a VM from it.
 
-## Convert VMware VMs to Hyper-V (V2V)
+## Converting VMware VMs to Hyper-V 
 
-There are currently a couple of methods for converting VMWare VMs to Hyper-V:
+There are currently a couple of methods for converting VMWare VMs to Hyper-V (V2V):
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
     - Supported for vSphere 4.1 onwards.
