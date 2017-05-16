@@ -25,9 +25,9 @@ System Center Virtual Machine Manager 2016 supports the following two scenarios 
 
     > [!NOTE]
 
-    > VMM 2016 supports configuration of load balancing by using PowerShell. Service templates are currently not supported.
+    > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
 
-This article provides information about how to configure the load balance by using PowerShell.
+This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
 ## Before you start
 
@@ -82,7 +82,9 @@ Create a VIP by using the following example scripts. Select the script based on 
 
 ### Script for creating VIP to load balance external network traffic
 
-The following example script creates the VIP from a public IP network to load balance the workload VMs WGB-001 & WGB-002 on port 80. The workload VMs can be connected to a **no isolation** network or **network virtualization** enabled VM networks.
+The following example script creates the VIP from a public IP network to load balance the workload VMs WGB-001 & WGB-002 on port 80.
+
+The workload VMs can be connected to a **no isolation** network or **network virtualization** enabled VM networks.
 
 > [!NOTE]
 
