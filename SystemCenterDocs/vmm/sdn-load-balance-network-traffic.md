@@ -5,7 +5,7 @@ description: This article describes how to configure load balancing for the inte
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/11/2017
+ms.date: 05/16/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -91,80 +91,80 @@ The workload VMs can be connected to a **no isolation** network or **network vir
 > - In the script parameters section, substitute the actual values that match your test environment for the samples used in this script.
 > - Ensure you run the script on a VMM server, or on a computer running the VMM console.
 
-    ```
-    param(
+```powershell
+param(
 
-    [Parameter(Mandatory=$false)]
-    # Name of the Network Controller Network Service
-    # This value should be the name you gave the Network Controller service
-    # when you on-boarded the Network Controller to VMM
-    $LBServiceName = "NC",
+[Parameter(Mandatory=$false)]
+# Name of the Network Controller Network Service
+# This value should be the name you gave the Network Controller service
+# when you on-boarded the Network Controller to VMM
+$LBServiceName = "NC",
 
-    [Parameter(Mandatory=$false)]
-    # Name of the workload VMs you want to load balance.
-    $VipMemberVMNames =  @("WGB-001","WGB-002"),
+[Parameter(Mandatory=$false)]
+# Name of the workload VMs you want to load balance.
+$VipMemberVMNames =  @("WGB-001","WGB-002"),
 
-    [Parameter(Mandatory=$false)]
-    # Name of the VIP VM Network
-    $VipNetworkName = "PublicVIP",
-
-
-    [Parameter(Mandatory=$false)]
-    # VIP address you want to assign from the VIP VM Network IP pool.
-    # Pick any VIP that falls within your VIP IP Pool range.
-    $VipAddress = "44.15.10.253",
+[Parameter(Mandatory=$false)]
+# Name of the VIP VM Network
+$VipNetworkName = "PublicVIP",
 
 
-    [Parameter(Mandatory=$false)]
-    # The name of the VIP template you created via the VMM Console.
-    $VipTemplateName = "WebsiteHTTP",
+[Parameter(Mandatory=$false)]
+# VIP address you want to assign from the VIP VM Network IP pool.
+# Pick any VIP that falls within your VIP IP Pool range.
+$VipAddress = "44.15.10.253",
 
-    [Parameter(Mandatory=$false)]
-    # Arbitrary but good to match the VIP you're using.
-    $VipName = "scvmm_44_15_10_253_80"
 
-    )
+[Parameter(Mandatory=$false)]
+# The name of the VIP template you created via the VMM Console.
+$VipTemplateName = "WebsiteHTTP",
 
-    Import-Module virtualmachinemanager
+[Parameter(Mandatory=$false)]
+# Arbitrary but good to match the VIP you're using.
+$VipName = "scvmm_44_15_10_253_80"
 
-    $lb = Get-scLoadBalancer | where { $_.Service.Name -like $LBServiceName};
-    $vipNetwork = get-scvmnetwork -Name $VipNetworkName;
+)
 
-    $vipMemberNics = @();
-    foreach ($vmName in $VipMemberVMNames)
-    {
-    $vm = get-scvirtualmachine -Name $vmName;
-    #    if ($vm.VirtualNetworkAdapters[0].VMNetwork.ID -ne $vipNetwork.ID)
-    #    {
-    #        $vm.VirtualNetworkAdapters[0] | set-scvirtualnetworkadapter -VMNetwork $vipNetwork;
-    #    }
+Import-Module virtualmachinemanager
 
-    $vipMemberNics += $vm.VirtualNetworkAdapters[0];
-    }
+$lb = Get-scLoadBalancer | where { $_.Service.Name -like $LBServiceName};
+$vipNetwork = get-scvmnetwork -Name $VipNetworkName;
 
-    $existingVip = get-scloadbalancervip -Name $VipName
+$vipMemberNics = @();
+foreach ($vmName in $VipMemberVMNames)
+{
+$vm = get-scvirtualmachine -Name $vmName;
+#    if ($vm.VirtualNetworkAdapters[0].VMNetwork.ID -ne $vipNetwork.ID)
+#    {
+#        $vm.VirtualNetworkAdapters[0] | set-scvirtualnetworkadapter -VMNetwork $vipNetwork;
+#    }
+
+$vipMemberNics += $vm.VirtualNetworkAdapters[0];
+}
+
+$existingVip = get-scloadbalancervip -Name $VipName
     if ($existingVip -ne $null)
-    {
-    #    foreach ($mem in $existingVip.VipMembers)
-    #    {
-    #        $mem | remove-scloadbalancervipmember;
-    #    }
+{
+#    foreach ($mem in $existingVip.VipMembers)
+#    {
+#        $mem | remove-scloadbalancervipmember;
+#    }
 
     $existingVip | remove-scloadbalancervip;
-    }
+}
 
-    $vipt = get-scloadbalancerviptemplate -Name $VipTemplateName;
+$vipt = get-scloadbalancerviptemplate -Name $VipTemplateName;
 
-    $vip = New-SCLoadBalancerVIP -Name $VipName -LoadBalancer $lb
-    -IPAddress $VipAddress -LoadBalancerVIPTemplate $vipt
-    -FrontEndVMNetwork $vipNetwork
-    -BackEndVirtualNetworkAdapters $vipMemberNics;
-    Write-Output "Created VIP " $vip;
+$vip = New-SCLoadBalancerVIP -Name $VipName -LoadBalancer $lb
+-IPAddress $VipAddress -LoadBalancerVIPTemplate $vipt
+-FrontEndVMNetwork $vipNetwork
+-BackEndVirtualNetworkAdapters $vipMemberNics;
+Write-Output "Created VIP " $vip;
 
-    $vip = get-scloadbalancervip -Name $VipName;
-    Write-Output "VIP created successfully " $vip;
+$vip = get-scloadbalancervip -Name $VipName;
+Write-Output "VIP created successfully " $vip;
 
-    ```
+```
 ### Script for creating VIP to load balance internal network traffic
 
 For the following example script, we created a new VIP template by name ILB-VIP-Template for load balancing the port 443 using the procedure detailed in the [previous section](#create-a-vip-template). The script creates a VIP from tenant VM network to load balance the VMs ILB-001 & ILB-002, which are part of the same tenant VM network.
@@ -176,74 +176,74 @@ For the following example script, we created a new VIP template by name ILB-VIP-
 
 > - Ensure you run the script on a VMM server, or on a computer running the VMM console.
 
-    ```
-    param(
+```powershell`
+param(
 
-    [Parameter(Mandatory=$false)]
-    # Name of the Network Controller Network Service
-    # This value should be the name you gave the Network Controller service
-    # when you on-boarded the Network Controller to VMM
-    $LBServiceName = "NC",
+[Parameter(Mandatory=$false)]
+# Name of the Network Controller Network Service
+# This value should be the name you gave the Network Controller service
+# when you on-boarded the Network Controller to VMM
+$LBServiceName = "NC",
 
-    [Parameter(Mandatory=$false)]
-    # Name of the workload VMs you want to load balance.
-    $VipMemberVMNames =  @("ILB-001","ILB-002"),
+[Parameter(Mandatory=$false)]
+# Name of the workload VMs you want to load balance.
+$VipMemberVMNames =  @("ILB-001","ILB-002"),
 
-    [Parameter(Mandatory=$false)]
-    # Name of the VIP VM Network
-    $VipNetworkName = "TenantNetwork",
+[Parameter(Mandatory=$false)]
+# Name of the VIP VM Network
+$VipNetworkName = "TenantNetwork",
 
-    [Parameter(Mandatory=$false)]
-    # VIP address you want to assign from the VIP VM Network IP pool.
-    # Pick any VIP that falls within your VIP IP Pool range.
-    $VipAddress = "192.168.100.75",
+[Parameter(Mandatory=$false)]
+# VIP address you want to assign from the VIP VM Network IP pool.
+# Pick any VIP that falls within your VIP IP Pool range.
+$VipAddress = "192.168.100.75",
 
-    [Parameter(Mandatory=$false)]
-    # The name of the VIP template you created via the VMM Console.
-    $VipTemplateName = "ILB-VIP-Template",
+[Parameter(Mandatory=$false)]
+# The name of the VIP template you created via the VMM Console.
+$VipTemplateName = "ILB-VIP-Template",
 
-    [Parameter(Mandatory=$false)]
-    # Arbitrary but good to match the VIP you're using.
-    $VipName = "scvmm_192_168_100_75_443"
+[Parameter(Mandatory=$false)]
+# Arbitrary but good to match the VIP you're using.
+$VipName = "scvmm_192_168_100_75_443"
 
-    )
+)
 
-    Import-Module virtualmachinemanager
+Import-Module virtualmachinemanager
 
-    $lb = Get-scLoadBalancer | where { $_.Service.Name -like $LBServiceName};
-    $vipNetwork = get-scvmnetwork -Name $VipNetworkName;
+$lb = Get-scLoadBalancer | where { $_.Service.Name -like $LBServiceName};
+$vipNetwork = get-scvmnetwork -Name $VipNetworkName;
 
-    $vipMemberNics = @();
-    foreach ($vmName in $VipMemberVMNames)
-    {
-    $vm = get-scvirtualmachine -Name $vmName;
-    #    if ($vm.VirtualNetworkAdapters[0].VMNetwork.ID -ne $vipNetwork.ID)
-    #    {
-    #        $vm.VirtualNetworkAdapters[0] | set-scvirtualnetworkadapter -VMNetwork $vipNetwork;
-    #    }
+$vipMemberNics = @();
+foreach ($vmName in $VipMemberVMNames)
+{
+$vm = get-scvirtualmachine -Name $vmName;
+#    if ($vm.VirtualNetworkAdapters[0].VMNetwork.ID -ne $vipNetwork.ID)
+#    {
+#        $vm.VirtualNetworkAdapters[0] | set-scvirtualnetworkadapter -VMNetwork $vipNetwork;
+#    }
 
-    $vipMemberNics += $vm.VirtualNetworkAdapters[0];
-    }
+$vipMemberNics += $vm.VirtualNetworkAdapters[0];
+}
 
-    $existingVip = get-scloadbalancervip -Name $VipName
-    if ($existingVip -ne $null)
-    {
-    #    foreach ($mem in $existingVip.VipMembers)
-    #    {
-    #        $mem | remove-scloadbalancervipmember;
-    #    }
+$existingVip = get-scloadbalancervip -Name $VipName
+if ($existingVip -ne $null)
+{
+#    foreach ($mem in $existingVip.VipMembers)
+#    {
+#        $mem | remove-scloadbalancervipmember;
+#    }
 
-    $existingVip | remove-scloadbalancervip;
-    }
+$existingVip | remove-scloadbalancervip;
+}
 
-    $vipt = get-scloadbalancerviptemplate -Name $VipTemplateName;
+$vipt = get-scloadbalancerviptemplate -Name $VipTemplateName;
 
-    $vip = New-SCLoadBalancerVIP -Name $VipName -LoadBalancer $lb
-    -IPAddress $VipAddress -LoadBalancerVIPTemplate $vipt
-    -FrontEndVMNetwork $vipNetwork
-    -BackEndVirtualNetworkAdapters $vipMemberNics;
-    Write-Output "Created VIP " $vip;
+$vip = New-SCLoadBalancerVIP -Name $VipName -LoadBalancer $lb
+-IPAddress $VipAddress -LoadBalancerVIPTemplate $vipt
+-FrontEndVMNetwork $vipNetwork
+-BackEndVirtualNetworkAdapters $vipMemberNics;
+Write-Output "Created VIP " $vip;
 
-    $vip = get-scloadbalancervip -Name $VipName;
-    Write-Output " VIP created successfully " $vip;
-    ```
+$vip = get-scloadbalancervip -Name $VipName;
+Write-Output " VIP created successfully " $vip;
+```
