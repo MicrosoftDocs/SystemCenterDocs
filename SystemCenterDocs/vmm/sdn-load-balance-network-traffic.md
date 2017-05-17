@@ -176,7 +176,7 @@ For the following example script, we created a new VIP template by name ILB-VIP-
 
 > - Ensure you run the script on a VMM server, or on a computer running the VMM console.
 
-```powershell`
+```powershell
 param(
 
 [Parameter(Mandatory=$false)]
