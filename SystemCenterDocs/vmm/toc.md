@@ -18,6 +18,7 @@
 ### [Manage SDN resources in the VMM fabric](network-sdn.md)
 ### [Set up a VM network](sdn-create-network.md)
 ### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
+### [Load balance network traffic ](sdn-load-balance-network-traffic.md)
 # How To
 ## Plan
 ### [System requirements](system-reqs.md)

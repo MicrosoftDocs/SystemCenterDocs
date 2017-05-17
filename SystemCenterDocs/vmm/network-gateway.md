@@ -1,11 +1,11 @@
 ---
 ms.assetid: b75145ed-5980-4952-866e-41c617938f66
 title: Add a network virtualization gateway to the VMM fabric
-description: This article provides about adding a gateway to the VMM fabric
+description: This article provides information about adding a gateway to the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  05/11/2016
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -51,25 +51,30 @@ You can set up your gateway in a number of ways depending on your requirements:
 The service template provides a highly available Windows Server Gateway deployment in active-standby mode.
 
 1. You'll need to download the template from the [Download center](http://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
-2. The download is a compressed zip file. You'll need to extract the file. Files include a Quick Start Guide, two service templates, and a custom resource folder (a folder with a .cr extension) that contains files required for the service templates.
+2. The download is a compressed zip file. You'll need to extract the file. Files include a user guide, two service templates, and a custom resource folder (a folder with a .cr extension) that contains files required for the service templates.
 3. You'll need to decide which template to use, and then follow the instructions in the Quick Start Guide. The guide includes prerequisites for the template deployment, and instructions for setting up logical networks, creating a scale-out file server, preparing virtual hard disks for the gateway VM, and copying the custom resource file to the library. After you've set up the infrastructure it describes how to import and customize the template, and how to deploy it. There's also troubleshooting information if issues arise.
 
 
 ## Add a non-Windows gateway
 
-You'll need to install the provider software on the VMM management server and add the gateway to the fabric.
+> [!NOTE]
 
-1. Obtain the provider software. You can review a list of supported providers in **Settings** > **Configuration Providers**.
-2. Click **Fabric** > **Home** > **Show**> **Fabric Resources** > **Fabric** > **Networking** > **Network Service**. Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches.
-3. Click **Home** > **Add**> **Add Resources** > **Network Service**.
-4. In **Add Network Service Wizard** > **Name** specify a name and description for the gateway.
-5. In **Manufacturer and Model** click the required settings.
-6. In **Credentials**, specify a Run As account with permissions in the domain to which the gateway is connected.
-7. In **Connection String** type the string that the gateway should use. The string syntax is defined by the gateway vendor.
-8. In **Certificates** if listed, verify the thumbprints of the certificates match those installed on the gateway. Select to confirm that the certificates can be imported. If none are listed the gateway probably doesn't need certificate authentication. If they're needed make sure they're installed correctly on the gateway.
-9. In **Provider** select an available provider and click Test to run basic validation test against the gateway.
-10. In **Host Group** select one or more host groups to which the gateway will be available.
-11. In **Summary**, review the settings and click Finish.
-12. After the gateway is added find its listing in **Network Services** and right-click it > **Properties** > **Connectivity**.
-13. Select **Enable front end connection** and select the gateway network adapter and network site that provides connectivity outside the enterprise datacenter or hosting provider. Select **Enable back end connection** and select a gateway network adapter and network site in a logical network within the enterprise. The network must have network virtualization enabled and the network site must have a static IP address.
-14. When you create a VM network you can assign the gateway to it, and select the required connectivity options.
+> You'll need to install the provider software on the VMM management server and add the gateway to the fabric.
+
+> Obtain the provider software. You can review a list of supported providers in **Settings** > **Configuration Providers**
+
+Use the following procedure to add the non-windows gateway:
+
+1. Click **Fabric** > **Network Service**. Right-click and select **Add Network Service** to open the Network Service wizard. Network services include gateways, virtual switch extensions, network managers, and top-of-rack (TOR) switches. or
+ On Home, click  **Add Resources** > **Network Service**.
+2. In **Add Network Service Wizard** > **Name** specify a name and description for the gateway.
+3. In **Manufacturer and Model** click the required settings.
+4. In **Credentials**, specify a Run As account with permissions in the domain to which the gateway is connected.
+5. In **Connection String** type the string that the gateway should use. The string syntax is defined by the gateway vendor.
+6. In **Certificates** if listed, verify the thumbprints of the certificates match those installed on the gateway. Select to confirm that the certificates can be imported. If none are listed the gateway probably doesn't need certificate authentication. If they're needed make sure they're installed correctly on the gateway.
+7. In **Gather Information** click **Scan Provider** to run the basic validation test against the gateway.
+8. In **Host Group** select one or more host groups to which the gateway will be available.
+9. In **Summary**, review the settings and click **Finish**.
+10. After the gateway is added find its listing in **Network Services** and right-click > **Properties** > **Connectivity**.
+11. Select **Enable front end connection** and select the gateway network adapter and network site that provides connectivity outside the enterprise datacenter or hosting provider. Select **Enable back end connection** and select a gateway network adapter and network site in a logical network within the enterprise. The network must have network virtualization enabled and the network site must have a static IP address.
+12. When you create a VM network you can assign the gateway to it, and select the required connectivity options.
