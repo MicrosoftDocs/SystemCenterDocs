@@ -147,3 +147,7 @@ You can use the following procedures to disable or enable a Virtual Machine Mana
 ### To validate the status change of a virtual Machine Manager connector
 
 1.  In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
+
+## Next steps
+
+- Review the [Configuration items](config-items.md) article to learn about storing information about services, computers, software, software updates, users and other undefined imported objects in the Service Manager database.

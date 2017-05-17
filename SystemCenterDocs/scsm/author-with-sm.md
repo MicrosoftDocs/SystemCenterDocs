@@ -217,3 +217,8 @@ Workflows that were developed in System Center Service Manager 2010 are supporte
 The Virtual Machine Management workflow activities in System Center 2016 - Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities do not support System Center 2016 - Virtual Machine Manager.  
 
 If you are trying to automate IT processes that require the use of an activity that supports System Center 2016 - Virtual Machine Manager, using System Center 2016 - Orchestrator runbooks and VMM instead might be helpful.  
+
+## Next steps
+
+- Learn about customizing objects functionality in Service Manager with [Management packs in the Authoring Tool](mps-in-auth-tool.md).
+- [Customize and author classes with Service Manager authoring](auth-classes.md).

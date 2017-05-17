@@ -24,7 +24,7 @@ To provide real\-world context to the step\-by\-step procedures for the Service 
  The Woodgrove Bank customization scenario illustrates how Ken Myer, a server application developer for Woodgrove Bank, can easily extend the default change management process to support a new compliance change request process that the organization needs. The new compliance change request process will automatically add new computers to groups in Active Directory Domain Services \(AD&nbsp;DS\) so that the group software policies apply to the new computers.  
 
 > [!NOTE]  
->  Some procedures in the Woodgrove Bank customization scenario rely on standard usage of the Service Manager console in Service Manager. This guide does not provide details for these common procedures. For more information about these procedures, see the [Administrator's Guide for System Center - Service Manager](admin-tasks.md).  
+>  Some procedures in the Woodgrove Bank customization scenario rely on standard usage of the Service Manager console in Service Manager. This guide does not provide details for these common procedures.
 
  Although there are many steps in extending the change management process, Ken has to think about four main things, which are described in the following sections.  
 
@@ -160,7 +160,7 @@ Ken uses this procedure to set the **Computer Name** and **Group Name** properti
 5.  Click **Activity ID**, and click the ellipsis button \(**...**\) that appears next to the property. On the left side of the dialog box, click **Use a class property**, and then, in the property list, click **ID \(Internal\)**. Click **OK**.  
 6.  In the **Management Pack Explorer**, right\-click the management pack, and then click **Save**.  
 
-For general information about these steps, see [How to Set an Activity Property to Use a Value from the Trigger Class](author-how-to-set-an-activity-property-to-use-a-value-from-the-trigger-class.md) and [How to Set an Activity Property to a Constant Value](configure-activities-information.md).  
+For general information about these steps, see [How to Set an Activity Property to Use a Value from the Trigger Class](configure-activities-information.md) and [How to Set an Activity Property to a Constant Value](configure-activities-information.md).  
 
 ## Step 4 - Move the assembly files to the Service Manager console
 

@@ -142,3 +142,7 @@ Use this procedure to remove an activity from a workflow in the Service Manager 
 ### To remove an activity from a workflow  
 
 -   In the authoring pane, right\-click the activity, and then click **Delete**.  
+
+## Next steps
+
+- [Configure the way activities manage and pass information](configure-activities-information.md).
