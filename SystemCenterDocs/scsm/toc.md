@@ -69,13 +69,14 @@
 #### [Tasks to complete after you upgrade to System Center 2016 - Service Manager](tasks-to-complete-after-upgrade.md)
 #### [Identify and resolve System Center 2016 - Service Manager upgrade problems](resolve-upgrade-problems.md)
 ## Administer
-### [Administrative tasks in System Center 2016 - Service Manager](admin-tasks.md)
+### [Administrative tasks in System Center 2016 - Service Manager]
 #### [Use management packs to add functionality](management-packs.md)
 #### [Use connectors to import data](import-data-connectors.md)
 ##### [Import data from Active Directory Domain Services](import-data-ads.md)
 ##### [Import data and alerts from Operations Manager](import-data-om.md)
 ##### [Import data from Configuration Manager](import-data-cm.md)
 ##### [Import runbooks from Orchestrator](import-data-orch.md)
+##### [Import data from VMM](import-data-vmm.md)
 ##### [Use a CSV file to import data](import-data-csv.md)
 ##### [Optionally disable ECL logging for faster connector synchronization](disable-ecl-logging.md)
 #### [Configuration items](config-items.md)
@@ -99,7 +100,6 @@
 #### [Troubleshoot computer problems with tasks](troubleshoot-with-tasks.md)
 #### [Configure your preference for sharing diagnostic and usage data](ceip-settings.md)
 #### [User role profiles](user-role-profiles.md)
-#### [Map Active Directory Domain Services attributes to properties in Service Manager](ad-ds-attribs.md)
 #### [Map Service Manager properties to Configuration Manager database views](sm-cm-views.md)
 #### [Registry keys](registry-keys.md)
 ## Operate
@@ -118,7 +118,6 @@
 ###### [Analyze OLAP cube data with Excel](olap-cube-excel.md)
 ###### [Refresh OLAP data cube information](refresh-olap-cube.md)
 ###### [Manage and use the analysis libraries](manage-analysis-library.md)
-###### [Advanced analytical reports](advanced-reports.md)
 ###### [Create and deploy dashboards](deploy-dashboards.md)
 ##### [Customize the data warehouse](customize-dw.md)
 ### [Disaster recovery for System Center 2016 - Service Manager](disaster-recovery.md)
@@ -140,7 +139,7 @@
 ##### [Form control properties in the Authoring Tool](form-control-properties.md)
 #### [Customize and Author workflows](customize-author-workflows.md)
 ##### [Automate IT processes with workflows](automate-processes-workflows.md)
-##### [Create workflows for IT processes
+##### [Create workflows for IT processes]
 ###### [Manage workflows with the Authoring Tool](manage-workflows-auth-tool.md)
 ###### [Add or remove workflow activities](add-workflow-activities.md)
 ###### [Configure the way activities manage and pass information](configure-activities-information.md)
@@ -148,7 +147,10 @@
 ##### [Configure the Activities Toolbox in the Authoring Tool](config-activities-toolbox.md)
 ##### [Authoring Tool workflow activity reference](workflow-activity-ref.md)
 ###### [Guidelines for creating custom activities in the Authoring Tool](create-custom-activities.md)
-###### [Set an activity's status to completed for the Authoring Tool sample activity](activity-status-completed.md)
 #### [Woodgrove Bank customization sample scenario for the Authoring Tool](woodgrove-scenario.md)
 #### [Customize a column title in a view for the authoring views sample scenario](customize-column-title.md)
 #### [Include dashboards and reports in custom views for the Authoring Tool reports sample scenario](dashboards-reports-in-custom-views.md)
+# Reference
+## [Advanced analytical reports](advanced-reports.md)
+## [Map Active Directory Domain Services attributes to properties in Service Manager](ad-ds-attribs.md)
+## [Set an activity's status to completed for the Authoring Tool sample activity](activity-status-completed.md)

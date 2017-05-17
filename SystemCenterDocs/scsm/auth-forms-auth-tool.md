@@ -279,3 +279,7 @@ Use the following procedure to add a **User Picker** control to a form.
 3.  In the **Details** pane, select the **Binding Path** property, and then click the ellipsis \(**...**\) icon. In the **Binding Path** dialog box, select the related user class that represents the user instances that you want this control to bind to. On the deployed form, the user can use this control to view and pick one of the user instances of the specified related user class.  
 4.  Click any property in the **Details** pane to customize the properties of the **User Picker** control.  
 5.  Click **File**, and then click **Save All** to save the custom form to a management pack.  
+
+## Next steps
+
+- [Customize the default incident form for the Authoring Tool sample scenario](customize-default-incident-form.md).
