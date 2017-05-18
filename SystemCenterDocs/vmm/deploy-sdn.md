@@ -1,17 +1,17 @@
 ---
 ms.assetid: dbb10ddd-b976-4cb6-9216-ec70eafca4b6
-title: Set up a Software Defined Network (SDN) infrastructure in the VMM fabric
+title: Deploy and manage a Software Defined Network (SDN) infrastructure in VMM 2016
 description: This article provides an overview of setting up an SDN in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  05/18/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-# Set up a Software Defined Network (SDN) infrastructure in the VMM fabric
+# Deploy and manage a Software Defined Network (SDN) infrastructure in the VMM fabric
 
 >Applies To: System Center 2016- Virtual Machine Manager
 
