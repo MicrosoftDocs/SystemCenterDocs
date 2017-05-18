@@ -9,7 +9,7 @@
 ### [Deploy guarded hosts](guarded-deploy-host.md)
 ### [Deploy a shielded VHDX and VM template](guarded-deploy-template.md)
 ### [Deploy shielded virtual machines](guarded-deploy-vm.md)
-## [Deploy and manage SDN in the VMM fabric](deploy-sdn.md)
+## [Deploy and manage an SDN in the VMM fabric](deploy-sdn.md)
 ### [Deploy an SDN network controller](sdn-controller.md)
 ### [Deploy an SDN SLB](sdn-slb.md)
 ### [Deploy an SDN RAS gateway](sdn-gateway.md)

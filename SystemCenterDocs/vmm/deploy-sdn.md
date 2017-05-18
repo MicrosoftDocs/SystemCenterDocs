@@ -1,6 +1,6 @@
 ---
 ms.assetid: dbb10ddd-b976-4cb6-9216-ec70eafca4b6
-title: Deploy and manage a Software Defined Network (SDN) infrastructure in VMM 2016
+title: Deploy and manage a Software Defined Network (SDN) infrastructure using VMM 2016
 description: This article provides an overview of setting up an SDN in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
