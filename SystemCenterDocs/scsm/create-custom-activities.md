@@ -400,3 +400,7 @@ For the workflow to run on a particular Service Manager management server, all o
 - The management pack file, in this case, Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml. You must manually copy this file to the Service Manager management server.
 
 When all of the files are in place, import the management pack into Service Manager. You can do this by using the mpimport.exe command-line tool or the Service Manager console. After you have imported the management pack, the workflow is ready to run whenever the condition that is defined as its trigger is met.
+
+## Next steps
+
+- [Set an activity's status to completed for the Service Manager Authoring Tool sample activity](activity-status-completed.md).

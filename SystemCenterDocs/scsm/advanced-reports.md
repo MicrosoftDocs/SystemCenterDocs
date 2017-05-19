@@ -11,7 +11,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 ---
 

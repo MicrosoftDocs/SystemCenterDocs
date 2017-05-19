@@ -317,3 +317,8 @@ You can extend a class in the Service Manager Authoring Tool by adding propertie
     >  When you are extending a class, do not define a property with an ID that is already in use in that class.  
 
 5.  Locate and select the new property or relationship in the **Class properties and relationship** list, and modify its properties in the **Details** pane as needed.
+
+
+## Next steps
+
+- [Customize and author forms](auth-forms.md) to view and edit the properties of objects.

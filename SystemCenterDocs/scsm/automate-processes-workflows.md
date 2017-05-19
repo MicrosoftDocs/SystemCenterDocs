@@ -99,3 +99,9 @@ The Activity Library in Service Manager Authoring Tool provides a number of work
 |Get Incident|Use this activity to retrieve one or more Service Manager incidents.|  
 |Update Incident|Use this activity to save property changes to one Service Manager incident.|  
 |Set Activity Status To Completed|Use this activity to update the status of a Service Manager automated activity.|  
+
+## Next steps
+
+- [Manage workflows with the Authoring Tool](manage-workflows-auth-tool.md).
+- [Add or remove workflow activities](add-workflow-activities.md).
+- [Configure the way activities manage and pass information](configure-activities-information.md).
