@@ -1,6 +1,6 @@
 ---
-title: Monitoring UNIX and Linux Computers by Using Operations Manager
-description: 
+title: Troubleshooting UNIX and Linux Agent Monitoring
+description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
 ---
 
-# Monitoring UNIX and Linux Computers by Using Operations Manager
+# Troubleshooting monitoring of UNIX and Linux computers with Operations Manager
 
 >Applies To: System Center 2016 - Operations Manager
 
