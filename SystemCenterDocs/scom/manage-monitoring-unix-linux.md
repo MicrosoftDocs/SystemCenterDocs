@@ -12,7 +12,7 @@ ms.topic: article
 ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
 ---
 
-# Troubleshooting monitoring of UNIX and Linux computers with Operations Manager
+# Troubleshooting monitoring of UNIX and Linux computers
 
 >Applies To: System Center 2016 - Operations Manager
 
