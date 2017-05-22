@@ -34,7 +34,7 @@ Before you can monitor UNIX and Linux computers, you must complete the following
 
 1. Import management packs for the by downloading the latest versions from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=29696)  
 2. [Create a dedicated resource pool](manage-resource-pools-manage.md) for monitoring UNIX and Linux computers   
-3. [Configure the certificates](manage-resource-pools-manage.md#configure-certificates-for- unix-and-linux-dedicated-resource-pools) for each management server in the pool  
+3. [Configure the certificates](manage-resource-pools-manage.md#configure-certificates-for-unix-and-linux-dedicated-resource-pools) for each management server in the pool  
 4. Create and [configure Run As accounts](manage-security-create-crossplat-credentials.md)    
 5. Install agent on UNIX and Linux using the [Discovery Wizard](manage-deploy-crossplat-agent-console.md)  
 
