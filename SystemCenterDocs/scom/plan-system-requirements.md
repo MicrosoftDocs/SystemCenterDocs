@@ -128,8 +128,8 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ### Web console 
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).    
-- Client web browser:  Internet Explorer 11 and SilverLight 5 
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
+- Client web browser:  Internet Explorer 11 and SilverLight 5  
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
     - Static Content 
