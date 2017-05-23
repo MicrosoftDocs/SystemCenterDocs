@@ -15,9 +15,11 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes the backup and recovery process of SDN Infrastructure in Virtual Machine Manager (VMM) environment, and provides applicable recommendations.
+This article describes the backup and recovery process of a software defined network (SDN) infrastructure in Virtual Machine Manager (VMM) environment, and provides applicable recommendations.
 
-## Back up the SDN infrastructure
+To back up and restore an SDN, you must back up and restore the network controller (NC) deployed in the SDN. Use the following procedures in the sequence explained.
+
+## Back up the network controller
 
 Backup the network controller database using the network controller Rest API. [Learn more](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/update-backup-restore#a-namebkmkbackupabackup-the-sdn-infrastructure).
 
@@ -33,25 +35,25 @@ Use the following procedures to bring up a new network controller:
 
     ![back up and restore sdn](media/sdn-backup-restore/back-up-restore-sdn.png)
 
-2. Deploy new network controller service instance form the VMM using the same service deployment settings that were  used for the original service instance deployment. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/sdn-controller).
+2. Deploy a new network controller service instance form the VMM using the same service deployment settings that were  used for the original service instance deployment. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/sdn-controller).
 
 3. Verify that the deployment job is successful.  
 
 
 
-## Restore the SDN infrastructure from a backup
+## Restore the network controller from a backup
 
 Restore the network controller from a network controller backup by using the network controller Rest API. [Learn more](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/update-backup-restore#a-namebkmkrestorearestore-the-sdn-infrastructure-from-a-backup).
 
-## Refresh network controller and synchronize VMM and NC
-Depending on the SDN state captured in the network controller backup and current VMM state, some of the resources in VMM and network controller might be out of sync.
+## Refresh the network controller and synchronize VMM and NC
+Depending on the SDN state captured in the network controller backup and the current VMM state, some of the resources in VMM and network controller might be out of sync.
 
-Use the following refresh procedures to find any differences between VMM and NC, and accordingly resolve them in case any.
+Use the following refresh procedures to find any such differences between VMM and NC, and accordingly resolve them in case any.
 
 
 > [!NOTE]
 > - Refresh cmdlets for refreshing network controller objects are available from VMM 2016 UR3.
-> - If the network controller contains any objects which are not present in VMM DB, then the  VMM will not refresh (even if those objects are created using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
+> - If the network controller contains any objects which are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
 
 ### Refresh port ACLs
 1. Get all the NC managed port ACLs from the VMM server by using the following cmdlet:
@@ -127,7 +129,7 @@ server by using the following cmdlet:
     $natConnections
 
     ```
-2.	Run Read- SCNATConnection  to refresh NAT connections and NAT rules.
+2.	Run Read- SCNATConnection cmdlet to refresh NAT connections and NAT rules.
 
     ```powershell
     foreach($natConnection in $natConnections)
@@ -143,7 +145,7 @@ server by using the following cmdlet:
     ```powershell
     Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}
     ```
-2.	Run Read- SCLoadBalancerVIP to refresh all the load balancer VIPs.
+2.	Run Read- SCLoadBalancerVIP cmdlet to refresh all the load balancer VIPs.
 
     ```powershell
     Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}  | Read- SCLoadBalancerVIP  
@@ -153,7 +155,7 @@ server by using the following cmdlet:
 ### Refresh VM Networks
 > [!NOTE]
 
-> Refresh cmdlets for VM networks, VM network gateways, and VM network gateway pools  will be available in the upcoming VMM updates. To manually refresh the VM networks, use the following procedure:
+> Refresh cmdlets for VM networks, VM network gateways, and VM network gateway pools  will be available in the upcoming VMM updates. Manually refresh these  by using the following procedure:
 
 1.	Get all the NC managed HNV VM networks from the VMM server by using the following cmdlet:
 
@@ -173,10 +175,11 @@ server by using the following cmdlet:
 ### Refresh VM network gateways
 
 1.	Get all the VM networks that are configured with VM network gateways by using the following cmdlet:
+
     ```powershell
-$vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'  -and $_.VMNetworkGateways.Count -gt 0}}
-```
-2.	Get the virtual gateways configured in NC using the following cmdlet. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollervirtualgateway):
+    $vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'  -and $_.VMNetworkGateways.Count -gt 0}}
+    ```
+2.	Get the virtual gateways configured in NC by using the following cmdlet. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollervirtualgateway):
     ```powershell
     Get-NetworkControllerVirtualGateway cmdlet.
 
@@ -201,5 +204,5 @@ $vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Micro
     $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway’}
 
     ```
-2.	Get the gateway pool with ResourceId “Default” from NC using the Get-NetworkControllerGatewayPool cmdlet. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollergatewaypool)
-3.	Verify all the properties of the gateway pool are in sync between VMM and NC and update the properties in VMM as required.
+2.	Get the gateway pool with ResourceId “Default” from NC using the Get-NetworkControllerGatewayPool cmdlet. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollergatewaypool).
+3.	Verify that all the properties of the gateway pool are in sync between VMM and NC and update the properties in VMM as required.
