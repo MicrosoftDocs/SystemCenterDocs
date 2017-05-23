@@ -25,13 +25,21 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 **Workaround**: On the client computer:
 
 1. Open the Task Scheduler app.
+
 2. In the Task Scheduler library, find and select the scheduled job, **ScheduledDPMClientBackup**.
+
 3. In the **Actions** pane, click **Export** and save the xml output as a backup copy.
-4. In the **Actions** pane, click **Properties*.
+
+4. In the **Actions** pane, click **Properties**.
+
   The properties dialog box for ScheduledDPMClientBackup opens.
+
 5. In the **Properties** dialog, select the **Triggers** tab, and click **Edit**.
+
 6. In the **Edit Trigger** dialog, from the **Begin the task** drop-down menu, select **At log on**.
+
 7. In **Advanced settings**, check **Repeat task every** and select **15 minutes**. From the **for a duration of** menu, select **Indefinitely**, and then click **OK**.
+
 8. You must reboot the computer for these changes to take effect.
 
 
@@ -67,19 +75,27 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 
 **Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size is not sufficiently large.
 
-**Workaround**: Change the default replica size for BMR datasources using the following registry key: Registry Path : HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
+**Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the the following key: 
+```
+HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
+```
 
 ## Re-protecting the DPM database after upgrading to DPM 2016
+
 **Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
+
 **Workaround**: If you are protecting DPM DB, please ensure that you enable protection for new DPM DB. Protection for the old DPM DB can be removed once DPM upgrade is validated.
 
 
 ## Hyper-V RCT - recover as files for D-T backup fails
+
 **Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
+
 **Workaround**: Do Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
 
 
 ## Next steps
 To install DPM, see the article, [Install DPM](install-dpm.md).
+
 If you would like to consult planning information for your environment, see [Preparing your environment for System Center 2016 Data Protection Manager](prepare-environment-for-dpm.md).
