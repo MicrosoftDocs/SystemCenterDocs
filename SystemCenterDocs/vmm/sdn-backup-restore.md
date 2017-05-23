@@ -15,9 +15,9 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes the backup and recovery process of a software defined network (SDN) infrastructure in Virtual Machine Manager (VMM) environment, and provides applicable recommendations.
+This article describes the backup and recovery process of a software defined network (SDN) infrastructure in a Virtual Machine Manager (VMM) fabric, and provides any applicable recommendations for the process completion.
 
-To back up and restore an SDN, you must back up and restore the network controller (NC) deployed in the SDN. Use the following procedures in the sequence explained.
+To back up and restore an SDN, you must back up and restore the network controller (NC) that is deployed in the SDN. Use the following procedures in the sequence explained.
 
 ## Back up the network controller
 
@@ -27,7 +27,7 @@ Backup the network controller database using the network controller Rest API. [L
 
 Use the following procedures to bring up a new network controller:
 
-1. in the VMM console, **Fabric** > **Network Service**, right-click and select the network controller service, click **Remove**.
+1. in the VMM console, **Fabric** > **Network Service**/ **Services**, select the network controller service, click **Remove**.
 
     > [!NOTE]
 
@@ -48,7 +48,7 @@ Restore the network controller from a network controller backup by using the net
 ## Refresh the network controller and synchronize VMM and NC
 Depending on the SDN state captured in the network controller backup and the current VMM state, some of the resources in VMM and network controller might be out of sync.
 
-Use the following refresh procedures to find any such differences between VMM and NC, and accordingly resolve them in case any.
+Use the following refresh procedures to find any such differences between VMM and NC, and accordingly resolve them.
 
 
 > [!NOTE]
@@ -80,7 +80,7 @@ server by using the following cmdlet:
     Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True}
     ```
 
-2.	Run the Read- SCLogicalNetwork cmdlet on the NC managed logical networks to refresh.
+2.	Run the Read- SCLogicalNetwork cmdlet on all the NC managed logical networks to refresh.
 
     ```powershell
     Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True} | Read-SCLogicalNetwork
