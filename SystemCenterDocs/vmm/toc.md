@@ -14,6 +14,7 @@
 ### [Deploy an SDN SLB](sdn-slb.md)
 ### [Deploy an SDN RAS gateway](sdn-gateway.md)
 ### [Deploy SDN using PowerShell](sdn-powershell.md)
+### [Back up and restore the SDN infrastructure](sdn-backup-restore.md)
 ### [Remove an SDN from VMM](sdn-remove.md)
 ### [Manage SDN resources in the VMM fabric](network-sdn.md)
 ### [Set up a VM network](sdn-create-network.md)
