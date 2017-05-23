@@ -221,6 +221,16 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 **Workaround**: Ensure shares you want to protect aren't located on SOFS.
 
+
+## File server issues
+
+### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
+
+**Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end-user recovery is not available.
+
+**Workaround**: None. File Server EUR is not supported when using MBS.
+
+
 ## <a name="BKMK_Data"></a>Data protection issues
 
 ### Protection might fail when changing the path of a data source
