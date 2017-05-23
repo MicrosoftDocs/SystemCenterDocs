@@ -111,11 +111,12 @@ System Center Operations Manager management server is not affected.
 **Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
 
 ## Telemetry data may be erroneously sent when the "Usage and Connectivity Data" setting is set to "False"
-**Description:**If two operators have Operations Manager consoles open and one sets the Usage and Connectivity Data setting to "Do not send data" data may continue to flow to Microsoft until the second user closes and reopens their instance of the Operations manager console.
+
+**Description:** If two operators have Operations Manager consoles open and one sets the Usage and Connectivity Data setting to "Do not send data" data may continue to flow to Microsoft until the second user closes and reopens their instance of the Operations manager console.
 
 **Workaround:** Restart all Operations Manager console sessions after making changes to the Usage and Connectivity setting.
 
-**Description:**When a new component such as a management server or gateway server are added to an existing Operations Manager environment, usage information about the setup process is sent to Microsoft even though the Usage and Connectivity Data setting is set to "Do not send data". After the component is added, no further usage data will be sent to Microsoft from the component.
+**Description:** When a new component such as a management server or gateway server are added to an existing Operations Manager environment, usage information about the setup process is sent to Microsoft even though the Usage and Connectivity Data setting is set to "Do not send data". After the component is added, no further usage data will be sent to Microsoft from the component.
 
 **Workaround:** None
 
