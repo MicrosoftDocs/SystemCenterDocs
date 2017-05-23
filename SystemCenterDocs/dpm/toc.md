@@ -3,6 +3,7 @@
 ## [How does DPM work?](how-dpm-protects-data.md)
 ## [What can DPM back up?](dpm-protection-matrix.md)
 # Get Started
+## [Release Notes for DPM 2016](dpm-release-notes.md)
 ## [What's new in DPM](what-s-new-in-dpm-2016.md)
 ## [What's supported and what isn't for DPM?](dpm-support-issues.md)
 ### [Upgrade to DPM 2016](upgrade-to-dpm-2016.md)
