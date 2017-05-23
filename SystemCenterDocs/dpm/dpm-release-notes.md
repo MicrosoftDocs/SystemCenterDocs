@@ -75,10 +75,10 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 
 **Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size is not sufficiently large.
 
-**Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the the following key: 
-```
-HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
-```
+**Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
+
+**HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
+
 
 ## Re-protecting the DPM database after upgrading to DPM 2016
 
@@ -91,7 +91,7 @@ HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaS
 
 **Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
 
-**Workaround**: Do Alternate Location Recovery as a VM, and then transfer those files to the desired location.
+**Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
 
 
