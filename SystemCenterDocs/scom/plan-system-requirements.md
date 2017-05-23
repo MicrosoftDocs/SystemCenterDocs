@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/03/2017
+ms.date: 05/23/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -44,6 +44,14 @@ This information helps you understand the performance and scalability characteri
 | URLs monitored per dedicated management group | 12,000 | 
 | URLs monitored per agent | 50 |
 
+## Upgrade sequence
+If you are upgrading an installation of System Center 2012 R2 Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order.  
+
+- Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
+- Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
+- Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
+- Operations Manager  
+- Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts. 
 
 ## Hardware requirements
 
