@@ -5,9 +5,9 @@ description: This article describes how to install the Operations Manager Gatewa
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 05/24/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -152,7 +152,7 @@ Perform this operation on each gateway server, management server, and computer t
 
 Although gateway servers can communicate with any management server in the management group, this must be configured. In this scenario, the secondary management servers are identified as targets for gateway server failover.
 
-Use the Set-ManagementServer-gatewayManagementServer command in the Operations Manager shell, as shown in the following example, to configure a gateway server to failover to multiple management servers. The commands can be run from any Command Shell in the management group.
+Use the Set-SCOMParentManagementServer command in the Operations Manager shell, as shown in the following example, to configure a gateway server to failover to multiple management servers. The commands can be run from any Command Shell in the management group.
 
 ##### To configure gateway server failover between management servers
 
@@ -160,13 +160,7 @@ Use the Set-ManagementServer-gatewayManagementServer command in the Operations M
 
 2.  On the Windows desktop, click **Start**, point to **Programs**, point to **System Center Operations Manager**, and then click **Command Shell**.
 
-3.  In Command Shell, follow the example that is described in the next section.
-
-### Description
-
-The following example can be used to configure gateway server failover to multiple management servers.
-
-### Code
+3.  In Command Shell, run the following commands:
 
     $GatewayServer = Get-SCOMGatewayManagementServer -Name "ComputerName.Contoso.com"
     $FailoverServer = Get-SCOMManagementServer -Name "ManagementServer.Contoso.com","ManagementServer2.Contoso.com"
