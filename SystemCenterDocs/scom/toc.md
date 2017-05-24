@@ -53,6 +53,7 @@
 #### [Install Windows agent manually with MOMAgent.msi](manage-deploy-windows-agent-manually.md)
 #### [Install agent on Nano Server](manage-deploy-windows-agent-nano.md)
 #### [Configuring Windows agents](manage-deploy-config-windows-agent.md)
+#### [Configure agent failover to multiple gateway servers](manage-config-agent-failover-multiple-gateway-servers.md)
 #### [Install agent and certificate on UNIX and Linux from command line](manage-install-crossplat-agent-cmdline.md)
 #### [Manage certificates for UNIX and Linux computers](manage-crossplat-certificates.md)
 #### [Process manual agent installations](manage-process-manual-agent-install.md)

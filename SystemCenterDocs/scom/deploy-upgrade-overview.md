@@ -5,9 +5,9 @@ description: This guide provides information on how to upgrade from Operations M
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/09/2016
+ms.date: 05/24/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -32,11 +32,11 @@ It is assumed in this guide that you are performing an upgrade to System Center 
 >  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:
 > 
-   > 1. Configuration Manager
-   > 2. Data Protection Manager
-   > 3. Orchestrator
+   > 1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
+   > 2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
+   > 3. Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
    > 4. Operations Manager
-   > 5. Virtual Machine Manager
+   > 5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts.
 
 Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
 
