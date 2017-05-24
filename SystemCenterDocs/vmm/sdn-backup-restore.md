@@ -194,4 +194,4 @@ server by using the following cmdlet:
     ```
 
 2.	Get the virtual gateways configured in NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollervirtualgateway):
-3.	Validate all the properties of virtual gateway, VPN connections, BGP routers, BGP peers and check if they are in sync between VMM and NC.
+3.	Validate all the properties of the virtual gateway, VPN connections, BGP routers, BGP peers and check if they are in sync between VMM and NC.
