@@ -5,7 +5,7 @@ ms.topic: article
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-threshold
-ms.technology: Orchestrator
+ms.technology: service-manager
 keywords:
 ms.date: 05/24/2017
 title:  Release Notes for System Center 2016 - Service Manager
