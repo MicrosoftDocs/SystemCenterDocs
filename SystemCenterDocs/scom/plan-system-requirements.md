@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/03/2017
+ms.date: 05/23/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -44,6 +44,14 @@ This information helps you understand the performance and scalability characteri
 | URLs monitored per dedicated management group | 12,000 | 
 | URLs monitored per agent | 50 |
 
+## Upgrade sequence
+If you are upgrading an installation of System Center 2012 R2 Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order.  
+
+1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
+2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
+3. Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
+4. Operations Manager  
+5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts. 
 
 ## Hardware requirements
 
@@ -120,7 +128,8 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ### Web console 
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
+- Client web browser:  Internet Explorer 11 and SilverLight 5  
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
     - Static Content 
