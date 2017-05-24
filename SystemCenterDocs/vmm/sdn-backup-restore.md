@@ -102,7 +102,7 @@ server by using the following cmdlet:
     $fabricRoleResources
     ```
 
-2.	Run Read- SCFabricRoleResource cmdlet to refresh.
+2.	Run Read-SCFabricRoleResource cmdlet to refresh.
 
     ```powershell
     foreach($fabricRoleResource in $fabricRoleResources)
@@ -136,6 +136,7 @@ server by using the following cmdlet:
 	       Read-SCNATConnection -NATConnection $natConnection
     }
     ```
+
 3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
 
 ### Refresh all load balancer VIPs
@@ -149,6 +150,7 @@ server by using the following cmdlet:
     ```powershell
     Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}  | Read- SCLoadBalancerVIP  
     ```
+
 3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
 
 ### Refresh VM Networks
@@ -168,6 +170,7 @@ server by using the following cmdlet:
     ```powershell
     Get-NetworkControllerVirtualNetwork -ResourceId $vmNetwork.ExternalId
     ```
+
 3. Validate if there are any differences between the VMM server and NC, and update the VM network in the VMM server as required.
 
 ### Refresh gateway pools
@@ -178,6 +181,7 @@ server by using the following cmdlet:
     $networkService =  Get-SCNetworkService  | Where-Object {$_.Model -eq 'Microsoft Network Controller'}
     $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway’}
     ```
+
 2.	Get the gateway pool with ResourceId = "Default" from NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollergatewaypool).
 3.	Verify that all the properties of the gateway pool are in sync between VMM and NC and update the properties in VMM as required.
 
@@ -188,5 +192,6 @@ server by using the following cmdlet:
     ```powershell
     $vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'  -and $_.VMNetworkGateways.Count -gt 0}}
     ```
+
 2.	Get the virtual gateways configured in NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollervirtualgateway):
 3.	Validate all the properties of virtual gateway, VPN connections, BGP routers, BGP peers and check if they are in sync between VMM and NC.
