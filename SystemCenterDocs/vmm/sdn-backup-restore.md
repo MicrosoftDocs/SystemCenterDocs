@@ -63,7 +63,7 @@ Use the following refresh procedures to find any such differences between VMM an
     Get-SCPortACL | Where-Object {$_.ManagedByNC -eq $True}
 
     ```
-2. Run the Read-SCPortACL cmdlet on all the NC managed port ACLs to refresh:
+2. Run the Read-SCPortACL cmdlet on all the NC managed port ACLs to refresh.
 
     ```powershell
 
@@ -102,7 +102,7 @@ server by using the following cmdlet:
     $fabricRoleResources
     ```
 
-2.	Run Read-SCFabricRoleResource cmdlet to refresh.
+2.	Run the Read-SCFabricRoleResource cmdlet to refresh.
 
     ```powershell
     foreach($fabricRoleResource in $fabricRoleResources)
@@ -128,7 +128,7 @@ server by using the following cmdlet:
     $natConnections
 
     ```
-2.	Run Read- SCNATConnection cmdlet to refresh NAT connections and NAT rules.
+2.	Run the Read-SCNATConnection cmdlet to refresh NAT connections and NAT rules.
 
     ```powershell
     foreach($natConnection in $natConnections)
@@ -145,7 +145,7 @@ server by using the following cmdlet:
     ```powershell
     Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}
     ```
-2.	Run Read- SCLoadBalancerVIP cmdlet to refresh all the load balancer VIPs.
+2.	Run the Read-SCLoadBalancerVIP cmdlet to refresh all the load balancer VIPs.
 
     ```powershell
     Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}  | Read- SCLoadBalancerVIP  
