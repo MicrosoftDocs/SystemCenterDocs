@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/24/2017
+ms.date: 05/25/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -89,7 +89,7 @@ The following versions of Windows Server operating system are supported for the 
 
 The following versions of Windows client operating system are supported for the Operations Manager Operations console.
 
-| Windows 7 | Windows 8 | Windows 8.1 | Windows 10 Enterprise |
+| Windows 7 | Windows 8 | Windows 8.1 | Windows 10 |
 |:--- |:---|:--- |:--- |
 | yes | yes | yes | yes |
 
