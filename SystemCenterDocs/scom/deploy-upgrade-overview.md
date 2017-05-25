@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade from Operations M
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/24/2017
+ms.date: 05/25/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -28,9 +28,9 @@ It is assumed in this guide that you are performing an upgrade to System Center 
 > If your Operations Manager 2012 R2 management group is integrated with Microsoft Operations Management Suite (OMS), its configuration will be retained and continue to function normally after the upgrade is complete.  
 
 > [!WARNING]
-> If you are upgrading two or more System Center components, you must follow the procedures that are documented in Upgrade Sequencing for System Center 2016.
+> If you are upgrading two or more System Center components, you should review the upgrade process for each component.
 >  
-> The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:
+> The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The following list are the affected System Center components integrated with Operations Manager and the recommended upgrade sequence:
 > 
    > 1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
    > 2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
