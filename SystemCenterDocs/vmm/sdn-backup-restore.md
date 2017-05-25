@@ -5,7 +5,7 @@ description: This article describes the procedure to back up and restore the sof
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/23/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -27,7 +27,7 @@ Backup the network controller database by using the network controller Rest API.
 
 Use the following procedures to bring up a new network controller:
 
-1. In the VMM console, **VMs and Services** > **Services**, select the network controller service instance and remove.
+1. In the VMM console, **VMs and Services** > **Services**, select the network controller service instance and click **Delete**.
 
     > [!NOTE]
 
@@ -60,14 +60,17 @@ Use the following refresh procedures to find any such differences between VMM an
 
     ```powershell
 
-    Get-SCPortACL | Where-Object {$_.ManagedByNC -eq $True}
+    $portACLs = Get-SCPortACL | Where-Object {$_.ManagedByNC -eq $True}
 
     ```
 2. Run the Read-SCPortACL cmdlet on all the NC managed port ACLs to refresh.
 
     ```powershell
+    foreach($portACL in $portACLs)
+    {
+           Read-SCPortACL -PortACL $portACL
+    }
 
-    Get-SCPortACL | Where-Object {$_.ManagedByNC -eq $True} | Read-SCPortACL
     ```
 
 3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
@@ -77,13 +80,16 @@ Use the following refresh procedures to find any such differences between VMM an
 server by using the following cmdlet:
 
     ```powershell
-    Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True}
+    $logicalNetworks = Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True}
     ```
-
 2.	Run the Read-SCLogicalNetwork cmdlet on all the NC managed logical networks to refresh.
 
     ```powershell
-    Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True} | Read-SCLogicalNetwork
+    foreach($logicalNetwork in $logicalNetworks)
+    {
+        Read-SCLogicalNetwork -LogicalNetwork $logicalNetwork
+    }
+
     ```
 
 3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
@@ -143,12 +149,16 @@ server by using the following cmdlet:
 1.	Get all the load balancer VIPs configured on NC by using the following cmdlet:
 
     ```powershell
-    Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}
+    $loadBalancerVIPs = Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}
     ```
 2.	Run the Read-SCLoadBalancerVIP cmdlet to refresh all the load balancer VIPs.
 
     ```powershell
-    Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}  | Read- SCLoadBalancerVIP  
+    foreach($loadBalancerVIP in $loadBalancerVIPs)
+    {
+        Read-SCLoadBalancerVIP -LoadBalancerVIP $loadBalancerVIP
+    }
+
     ```
 
 3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
@@ -182,7 +192,7 @@ server by using the following cmdlet:
     $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway’}
     ```
 
-2.	Get the gateway pool with ResourceId = "Default" from NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollergatewaypool).
+2.	Get the gateway pool with ResourceId as "Default" from NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollergatewaypool).
 3.	Verify that all the properties of the gateway pool are in sync between VMM and NC and update the properties in VMM as required.
 
 ### Refresh VM network gateways
