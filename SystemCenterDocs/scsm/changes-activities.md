@@ -439,3 +439,7 @@ You can use the following procedure to notify reviewers that an activity is avai
 #### To validate receipt of the notification  
 
 -   The reviewer of the review activity or the user that the change request is assigned to receives an email message that indicates that a new review activity requires approval or that the change request was closed.
+
+## Next steps
+
+- [Manage service requests](service-requests.md) to create and offer existing, preauthorized services and features.
