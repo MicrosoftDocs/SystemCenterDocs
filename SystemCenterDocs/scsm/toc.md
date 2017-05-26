@@ -3,6 +3,7 @@
 # Get started
 ## [What's new in Service Manager](whats-new.md)
 ## [Service Manager glossary](glossary.md)
+## [Release Notes](release-notes.md)
 # How to
 ## Plan
 ### [Planning for Service Manager](plan-sm.md)
