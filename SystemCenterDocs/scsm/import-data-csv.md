@@ -136,3 +136,7 @@ Before you can import data from a comma-separated value (CSV) file, you have to 
 2.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.
 
 3.  In the **All Windows Computers** pane, verify that the computers in the CSV file are listed.
+
+## Next steps
+
+- [Optionally disable ECL logging for faster connector synchronization](disable-ecl-logging.md).

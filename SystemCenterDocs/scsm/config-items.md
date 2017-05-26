@@ -254,3 +254,7 @@ Similarly, work items such as incidents, problems, and change requests are often
 1.  In the **Attached files** area, click **Add**.
 2.  In the **Open** dialog box, select the file that you want to add, and then click **Open**.
 3.  Do not attempt to open an attached file before you submit the form.
+
+## Next steps
+
+- [Configure incident management](incident-mgt.md) for configuration scenarios, incident settings, email incident support, and to create an incident template.

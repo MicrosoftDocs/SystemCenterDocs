@@ -78,3 +78,7 @@ You can configure notifications for release records by completing the following 
     9. On the **Summary** page, review your settings, and then click **Create**.
 
     10. On the **Completion** page, click **Close**.
+
+## Next steps
+
+- [Configure Desired Configuration Management to generate incidents](dcm-incidents.md).

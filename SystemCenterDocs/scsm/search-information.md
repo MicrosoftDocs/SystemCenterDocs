@@ -32,3 +32,7 @@ In Service Manager, you can use the search feature in the Service Manager consol
  When you search for most items in Service Manager, only exact keyword matches return results. However, partial matches are returned for configuration items of Windows\-based computers. Searches that use wildcard characters are not supported.  
 
  When you search for items, you open a view that displays a large number of items, and there are more than 5,000 items in the results, the complete results can take a few minutes to appear.
+
+## Next steps
+
+- Read the overview about how to [Manage incidents and problems](incidents-problems.md) in Service Manager.

@@ -295,3 +295,7 @@ After you install an Operations Manager alert connector and configuration item (
 7.  In the **Credentials** dialog box, enter the credentials to connect to Operations Manager, and then click **OK**.
 
 8.  In the **Management Packs** list, select the management packs that define the configuration items that you want to import, and then click **OK**.
+
+## Next steps
+
+- Learn about how to [Import data from Configuration Manager](import-data-cm.md).
