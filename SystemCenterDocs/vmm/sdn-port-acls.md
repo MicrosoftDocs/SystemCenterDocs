@@ -38,7 +38,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Create a port ACL
 
->!NOTE]
+>[!NOTE]
 
 > The parameter **-ManagedByNC** ensures that the port ACL is managed by Network Controller (NC) and can only be attached to NC managed objects.
 
@@ -54,7 +54,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Create a port ACL rule
 
->!NOTE]
+>[!NOTE]
 > -	Priority range for SDN port ACL rules: 1 – 64500
 > - Only TCP/UDP/Any protocol parameters are supported for creating ACL rules.
 
@@ -91,9 +91,10 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $adapter -PortACL $portACL
 
     ```
-    >!NOTE]
 
-    > You can also attach a port ACL while creating the virtual network adapter through New-SCVirtualNetworkAdapter cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvirtualnetworkadapter).
+>[!NOTE]
+>
+ You can also attach a port ACL while creating the virtual network adapter through New-SCVirtualNetworkAdapter cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvirtualnetworkadapter).
 
 
 ## Detach the port ACL from virtual network adapter
@@ -127,12 +128,12 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 2. Attach an existing port ACL to the VM subnet.
     ```powershell
 
-        Set-SCVMSubnet -VMSubnet $vmSubnet -PortACL $portACL
+    Set-SCVMSubnet -VMSubnet $vmSubnet -PortACL $portACL
 
-        ```
-    >[!NOTE]
-
-    > You can also attach a port ACL while creating VM subnet through New-SCVMSubnet cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvmsubnet).
+    ```
+>[!NOTE]
+>
+> You can also attach a port ACL while creating VM subnet through New-SCVMSubnet cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvmsubnet).
 
 ## Detach the port ACL from the VM subnet
 
@@ -140,14 +141,14 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
     ```powershell
 
-        $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
+    $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
 
     ```
 2. Detach the port ACL from the VM subnet.
 
     ```powershell
 
-        Set-SCVMSubnet – VMSubnet $vmSubnet -RemovePortACL
+    Set-SCVMSubnet – VMSubnet $vmSubnet -RemovePortACL
 
     ```
 
@@ -157,7 +158,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
     ```powershell
 
-        $portACLRule = Get-SCPortACLRule –Name “AllowRDPAccess”
+    $portACLRule = Get-SCPortACLRule –Name “AllowRDPAccess”
 
     ```
 
@@ -165,7 +166,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
     ```powershell
 
-        Remove-SCPortACLRule -PortACLRule $portACLRule
+    Remove-SCPortACLRule -PortACLRule $portACLRule
 
     ```
 
@@ -175,7 +176,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
     ```powershell
 
-        $portACL = Get-SCPortACL -Name “DemoACLManagedByNC”
+    $portACL = Get-SCPortACL -Name “DemoACLManagedByNC”
 
     ```
 
