@@ -86,3 +86,7 @@ Use the following procedure to view and use the customized Incident form in the 
      Note that the **Incident** form that is displayed is your customized form.
 
 7. Fill in the form, and then save the incident.
+
+## Next steps
+
+- Review [Form control properties in the Authoring Tool](form-control-properties.md) for information that can help you customize and create forms in the Service Manager Authoring Tool.

@@ -89,7 +89,7 @@ Service Manager includes a number of predefined OLAP cubes that users can view i
 ## Software Development Kit (SDK)
  The Service Manager SDK contains information that you might need when you are authoring with Service Manager to extend the data warehouse so that it can manage your own customized data. Before you can utilize the capabilities of the data warehouse, such as OLAP cube processing for customized data, you must first create a custom management pack and import it. Your custom management pack bundle will contain a definition for your data model and, possibly, OLAP cube definitions.  
 
- ## Next steps
+## Next steps
 
  - You can learn more about using the SDK to create your own custom management pack for Service Manager in the [Authoring Guide for System Center 2016 - Service Manager](author-with-sm.md).
  - [Learn about](standard-reports.md) using standard reports.

@@ -273,3 +273,7 @@ Setting up one of these for each support group will ensure that all your groups 
 ### To test the workflow and mail the enabled universal security group
 
 - Create an incident and assign it to the messaging-enabled universal security group that you created earlier.
+
+## Next steps
+
+- [Use the service catalog to offer services](service-catalog.md).

@@ -253,3 +253,7 @@ However, a drawback to fully processing an SSAS dimension is that all affected O
 
 ### Memory considerations  
 If you run all data warehouse extraction, transformation, and load \(ETL\) operations and OLAP cube functions on one server, carefully consider the memory needs of the operating system, data warehouse, and SSAS to ensure that the server can handle all the data\-intensive operations that can run concurrently. This is especially important because processing OLAP cubes is a memory\-intensive operation.  
+
+## Next steps
+
+- [Model OLAP cubes in management packs](olap-cubes-mps.md).

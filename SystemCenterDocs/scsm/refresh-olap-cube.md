@@ -35,7 +35,7 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 
 -   Select an OLAP data cube and verify that the date and time information under **Last Processed Date** has been updated since you processed the cube and that the cube **Status** is listed as **Processed**.  
 
-## Manually refresh 
+## Manually refresh
 
 -   Run the following script for the OLAP data cube of your choice.  
 
@@ -46,3 +46,7 @@ You can use the following procedures in Service Manager to refresh data in a Mic
 
     where cubename = 'ComputerCube'  
     ```  
+
+## Next steps
+
+- [Manage and use the analysis libraries](manage-analysis-library.md).

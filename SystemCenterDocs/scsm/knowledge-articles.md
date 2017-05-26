@@ -114,3 +114,7 @@ The **Knowledge Search** form displays the knowledge articles that match the sea
 7.  Click **OK** to close the informational message.
 
 8.  In the **Knowledge Search** form, click **Close**.
+
+## Next steps
+
+- [Configure and use Service Manager cmdlets](sm-cmdlets.md).
