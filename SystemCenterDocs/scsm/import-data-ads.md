@@ -190,3 +190,7 @@ Next, in Service Manager, create a new Active Directory connector in the Active 
 
     > [!NOTE]
     > If the two domains are in different forests, you must type the domain name in the **User name** box. For example, type `b.woodgrovetest.net\UserName`.
+
+## Next steps
+
+- Lean about how to [Import data and alerts from Operations Manager](import-data-om.md).

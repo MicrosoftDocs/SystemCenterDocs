@@ -91,3 +91,7 @@ When you view the runbook, you can perform basic actions with the runbook, such 
 3.  In the **Runbooks** view, select a runbook.
 
 4.  In the **Tasks** pane under *RunbookName*, click **View Runbooks** to open the runbook in Internet Explorer.
+
+## Next steps
+
+- Read [User interface customization](ui-customization.md) to customize how items are displayed in Service Manager.

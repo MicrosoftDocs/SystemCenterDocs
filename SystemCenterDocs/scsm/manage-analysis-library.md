@@ -43,3 +43,7 @@ You can use the following procedure in Service Manager to view Microsoft Excel w
 1.  In the Service Manager console, click **Reporting**, expand the **Analysis Library** node, and then navigate to the folder that contains an Excel workbook that you want to open.  
 2.  Select the Excel workbook that you want to open, and then in the **Tasks** list, click **Open Excel File**.  
 3.  In the Excel workbook, you can refresh the data from the data warehouse. For example, click the **Data** tab and then click **Refresh All** to update the workbook.  
+
+## Next steps
+
+- [Create and deploy dashboards](deploy-dashboards.md) to manage SharePoint dashboards and their elements to measure, monitor, and manage business performance with live data from the Service Manager data warehouse.
