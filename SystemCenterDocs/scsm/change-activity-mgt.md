@@ -218,3 +218,8 @@ The new workflow you are about to create applies the **Set *named user* as the A
 
 1.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Status**.
 2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the *named user*** is listed.
+
+
+## Next steps
+
+- [Configure settings and workflows for release management](release-mgt.md).

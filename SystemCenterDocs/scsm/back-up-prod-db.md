@@ -61,3 +61,7 @@ Use the following procedure to back up the production Service Manager database i
 14. Select an Overwrite Media option, by clicking either **Back up to the existing media set** or **Back up to a new media set, and erase all existing backup sets**.
 
 15. In the Reliability section, select either **Verify backup when finished** or **Perform checksum before writing to media**, and then optionally select **Continue on checksum error**. For more information, see [Detecting and Coping with Media Errors During Backup and Restore](http://go.microsoft.com/fwlink/p/?LinkId=236004)
+
+## Next steps
+
+- [Enable Service Manager connectors in the production environment after you upgrade](enable-connectors.md).
