@@ -161,7 +161,8 @@ If you want to use a shared library for multiple DPM servers continue to the nex
 
 #### Set up tape sharing
 
-1.  On the computer that will be the library server for the shared library, enable the medium changer by using Device Manager.
+1.  On the computer that will be the library server for the shared library, use Device Manager to enable the medium changer.
+
     On each library client computer, ensure that the medium changer is not enabled.
 
 2.  Enable the Named Pipes protocol for the SQL Server instances of the library server and library client computers. Then restart the SQL service.
@@ -170,21 +171,21 @@ If you want to use a shared library for multiple DPM servers continue to the nex
 
     -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `AddLibraryServerForDpm.exe -DpmServerWithLibrary <FQDN of library server>` where <FQDN of library server> is the fully qualified domain name of the library server.
+    -   `AddLibraryServerForDpm.exe -DpmServerWithLibrary <FQDN of library server>` where '<FQDN of library server>' is the fully qualified domain name of the library server.
 
 4.  On the library server computer, open an elevated Command Prompt window, and then run the following commands one time for each library client. For example, if your library server supports three library clients, you must run this command three times on the library server.
 
     -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `AddLibraryServerForDpm.exe - ShareLibraryWithDpm <FQDN of library client>` where <FQDN of library client> is the fully qualified domain name of the library client.
+    -   `AddLibraryServerForDpm.exe - ShareLibraryWithDpm <FQDN of library client>` where `<FQDN of library client>` is the fully qualified domain name of the library client.
 
-5.  On each library client computer (and not on the library server), open an elevated Command Prompt window, and then run the following commands. Before you run the commands, on all library client computers ensure that both the SQL Server (MSDPM2012) and SQL Server Agent (MSDPM2012) services use a domain user account as the logon account, not a local account, which is the default configuration, and that the domain account that is used is a member of the local Administrator group on all of the computers that are sharing the library.
+5.  Before you run the following commands on all library client computers, ensure the SQL Server (MSDPM2012) and SQL Server Agent (MSDPM2012) services use a domain user account as the logon account. Also, ensure the domain account is a member of the local Administrator group on all computers that share the library. Then, on each library client computer, open an elevated Command Prompt window and run the following commands.
 
     -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `SetSharedDpmDatabase -DatabaseName <SqlServer\Instance\DatabaseName> [-DoNotMoveData]` where <SQLServer\Instance\Databasename> is the database name of the library server., You can find the name in the **About DPM** window in the DPM Administrator console. You can copy this information from there, using your mouse
+    -   `SetSharedDpmDatabase -DatabaseName <SqlServer\Instance\DatabaseName> [-DoNotMoveData]` where `<SQLServer\Instance\Databasename>` is the database name of the library server. You can find the name in the **About DPM** window in the DPM Administrator console.
 
-6.  On DPM Administrator Console on the library server, perform a rescan, and then perform a rescan or refresh on each of the library client computers.
+6.  In DPM Administrator Console on the library server, perform a rescan. Then perform a rescan or refresh on each of the library client computers.
 
     The quickest way to see all media on all of the DPM servers is to perform a rescan on each, followed by a detailed inventory. Next, on any one of the servers, mark a number of media as free, and then perform a refresh on the other servers.
     After you've configured library sharing, you can use the shared tape library as if it were attached to each DPM server.

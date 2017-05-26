@@ -150,19 +150,23 @@ Run an unattended install as follows:
     # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached>
     ```
 
-6.  After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`. [media location] indicates where you'll run setup.exe from. `<path>` is the location of the .ini file.
+6.  After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`.
+  - `[media location]` indicates where you'll run setup.exe from.
+  - `<path>` is the location of the .ini file.
 
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
 If you want to set up DPM on an RODC you'll need to do a couple of steps before you set up SQL Server and install DPM.
 
 1.  Create the security groups and accounts needed for DPM. To do this click **Start** > **Administrative Tools** > **Active Directory Users and Computers** > **Domain/Builtin** and create these security groups. For each group use the default setting for Scope (Global) and Group type (Security):
 
-    -   DPMDBReaders$<*Computer Name*>; MSDPMTrustedMachines$<*Computer Name*>;
-        DPMRADCOMTrustedMachines$<*Computer Name*>;
-        DPMRADmTrustedMachines$<*Computer Name*>; DPMDBAdministrators$<*Computer Name*>;
-        MSDPMTrustedUsers$<*Computer Name*>;
-        DPMSCOM$<*Computer Name*>;
-        DPMRATrustedDPMRAs$<*Computer Name*>, where <*Computer Name*> is the name of the domain controller.
+    -   DPMDBReaders$<*Computer Name*>;
+    - MSDPMTrustedMachines$<*Computer Name*>;
+    - DPMRADCOMTrustedMachines$<*Computer Name*>;
+    - DPMRADmTrustedMachines$<*Computer Name*>;
+    - DPMDBAdministrators$<*Computer Name*>;
+    - MSDPMTrustedUsers$<*Computer Name*>;
+    - DPMSCOM$<*Computer Name*>;
+    - DPMRATrustedDPMRAs$<*Computer Name*>, where <*Computer Name*> is the name of the domain controller.
 
 2.  Add the local machine account for the domain controller (<*Computer Name*>) to the MSDPMTrustedMachines$<*Computer Name*> group. Then on the primary domain controller create a domain user account with the lowest possible credentials. Assign it a strong password  that doesn't expire and add it to the local administrators group.
 

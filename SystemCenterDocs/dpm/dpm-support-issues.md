@@ -389,12 +389,12 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 ## DPM and Azure
 
 ### DPM as an Azure virtual machine
-**Issue**: DPM can run as an Azure virtual machine from DPM 2012 R2 Update 3 onwards. Note:
+**Issue**: DPM can run as an Azure virtual machine, from DPM 2012 R2 Update 3 onwards. Be aware of these limitations:
 
--   On premise DPM Server can't protect Azure based workloads.
+-   On-premise DPM servers can't protect Azure-based workloads.
 
--   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](dpm-protection-matrix.md).
+-   DPM running as an Iaas virtual machine, in Azure, can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](dpm-protection-matrix.md).
 
--   DPM running as an Azure virtual machine can't protect on-premises workloads.
+-   DPM running as an Azure virtual machine can't protect on-premise workloads.
 
 **Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).
