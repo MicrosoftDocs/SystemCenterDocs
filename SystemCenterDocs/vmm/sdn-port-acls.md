@@ -130,7 +130,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     PS C:\> Set-SCVMSubnet – VMSubnet $vmSubnet -RemovePortACL
     ```
 
-## Remove port ACL rule
+## Remove a port ACL rule
 
 1.	Get the port ACL rule to remove.
 
@@ -144,7 +144,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     PS C:\> Remove-SCPortACLRule -PortACLRule $portACLRule
     ```
 
-## Remove port ACL
+## Remove a port ACL
 
 1.	Get the Port ACL that you want to remove.
 
