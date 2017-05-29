@@ -92,9 +92,9 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
     ```
 
->[!NOTE]
->
- You can also attach a port ACL while creating the virtual network adapter through New-SCVirtualNetworkAdapter cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvirtualnetworkadapter).
+    >[!NOTE]
+    >
+    >You can also attach a port ACL while creating the virtual network adapter through New-SCVirtualNetworkAdapter cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvirtualnetworkadapter).
 
 
 ## Detach the port ACL from virtual network adapter
