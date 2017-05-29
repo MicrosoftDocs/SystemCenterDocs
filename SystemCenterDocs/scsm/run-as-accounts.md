@@ -187,3 +187,7 @@ If the account that is used for the SQL Server Reporting Services account change
 3.  In the **Connect using** area, click **Credentials stored securely in the report server**, type the current credentials in the **User name** and **Password** boxes, and then click **Apply**.
 4.  In the browser tool bar, click the **Back** button to return to the **Service Manager** page.
 5.  Repeat steps 2 and 3 for the remaining Service Manager data sources.
+
+## Next steps
+
+- [Manage knowledge articles](knowledge-articles.md).

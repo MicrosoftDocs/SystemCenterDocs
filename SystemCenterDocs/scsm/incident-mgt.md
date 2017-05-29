@@ -380,3 +380,7 @@ Use the following procedures to create two incident templates in Service Manager
 ### To validate that the new incident template was created
 
 -   Verify that the new incident templates are listed in the **Templates** pane.
+
+## Next steps
+
+- [Configure service level management](service-level-mgt.md) to measure incident and service request timeliness.

@@ -86,3 +86,7 @@ In the Woodgrove Bank customization scenario, Ken uses this procedure to set the
     2. In the **Details** pane, click **Computer Name**, click the ellipsis (**...**) button, click **Use a class property**, click **ComputerName**, and then click **OK**.
 
     For the **Set Activity Status to Completed** activity, click **Activity ID**, and then click the ellipsis (**...**) button that appears next to the property. In the **Define input for the activity setActivityStatusToCompleted1** dialog box, click **Use a class property**, and then in the property list, click **ID (Internal)**. Click **OK**.
+
+## Next steps
+
+- [Deploy a workflow to Service Manager using the Authoring Tool](deploy-workflow.md).

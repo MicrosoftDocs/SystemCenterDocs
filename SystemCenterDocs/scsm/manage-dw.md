@@ -420,3 +420,7 @@ The second procedure can be used to change the default transform job timeout per
 2.  Edit the value, which is in seconds, with a positive value.
 3.  Restart the Microsoft Monitoring Agent service.
 4.  You can resume the Transform.common job to see the change.
+
+## Next steps
+
+- [Register source systems to the data warehouse](register-sources-to-dw.md) to retrieve data from one or more data sources.

@@ -81,3 +81,7 @@ You can read the *ECL logging disable for SCCM and AD connector* status with the
 ### To re-enable ECL logging
 
 - Replace the value `1` in the previous procedure with `0` and run the command.  
+
+## Next steps
+
+- Read [Configuration items](config-items.md) to learn about how they store information about services, computers, software, software updates, users and other undefined imported objects in the Service Manager database.

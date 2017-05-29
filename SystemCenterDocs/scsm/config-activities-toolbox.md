@@ -22,7 +22,6 @@ ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
 There are two ways to configure the Activities Toolbox in the Service Manager Authoring Tool:
 
 - Modify the default toolbox by adding or removing custom activities. These changes require administrative-level permissions, and they are visible to all users of the Authoring Tool.
-
 - Personalize the toolbox. These changes do not require special permissions. Changes made by one user affect only that user.
 
 ## Modify the default toolbox
@@ -122,3 +121,8 @@ Use this procedure to delete an activity group in the Service Manager Authoring 
 > You can only delete personalized activity groups. You cannot delete the default activity groups.
 
 - In the **Activities Toolbox** pane, right-click the group, and then click **Delete Group**.
+
+
+## Next steps
+
+- Review [Guidelines for creating custom activities in the Authoring Tool](create-custom-activities.md).

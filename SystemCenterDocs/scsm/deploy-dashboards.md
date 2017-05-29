@@ -252,3 +252,7 @@ Use the following procedure to deploy the Resolved Incidents Dashboard to the Sh
 4.  In the **Master Page** list, select **Minimal**, and then click **OK**.  
 
 5.  Internet Explorer starts and opens the first dashboard page.  
+
+## Next steps
+
+- Read [Customize the data warehouse](customize-dw.md) to learn about customizing the Service Manager data warehouse.
