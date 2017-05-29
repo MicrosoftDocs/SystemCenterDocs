@@ -11,7 +11,7 @@ ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
-# Allow and block VM traffic with port ACLs in the SDN infrastructure
+# Allow and block VM traffic using SDN port ACLs
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
@@ -38,58 +38,47 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Create a port ACL
 
->[!NOTE]
-
-> The parameter **-ManagedByNC** ensures that the port ACL is managed by Network Controller (NC) and can only be attached to NC managed objects.
-
 1.	Open PowerShell in VMM.
 2.	Create a port ACL.
 
     ```powershell
+    PS C:\> New-SCPortACL -Name "RDPAccess" -Description "PortACL to control RDP access" -ManagedByNC
+    ```
 
-        New-SCPortACL -Name "RDPAccess" -Description "PortACL to control RDP access" -ManagedByNC
-
-        ```
-
+    >[!NOTE]
+    >
+    > The parameter **-ManagedByNC** ensures that the port ACL is managed by Network Controller (NC) and can only be attached to NC managed objects.
+    > The cmdlets provided here use example values.
 
 ## Create a port ACL rule
-
->[!NOTE]
-> -	Priority range for SDN port ACL rules: 1 – 64500
-> - Only TCP/UDP/Any protocol parameters are supported for creating ACL rules.
 
 1.	Get an existing port ACL.
 
     ```powershell
-
-    $porACL = Get-SCPortACL -Name "DemoACLManagedByNC"
-
+    PS C:\> $porACL = Get-SCPortACL -Name "RDPAccess"
     ```
 2.	Create a port ACL rule.
 
     ```powershell
-
-    New-SCPortACLRule -Name "AllowRDPAccess" -PortACL $portACL -Description "Allow RDP Rule from a subnet" -Action Allow -Type Inbound -Priority 110 -Protocol Tcp -LocalPortRange 3389 -RemoteAddressPrefix 10.184.20.0/24
+    PS C:\> New-SCPortACLRule -Name "AllowRDPAccess" -PortACL $portACL -Description "Allow RDP Rule from a subnet" -Action Allow -Type Inbound -Priority 110 -Protocol Tcp -LocalPortRange 3389 -RemoteAddressPrefix 10.184.20.0/24
     ```
-
+    >[!NOTE]
+    > -	Priority range for SDN port ACL rules: 1 – 64500
+    > - Only TCP/UDP/Any protocol parameters are supported for creating ACL rules.
 
 ## Attach an ACL to a virtual network adapter
 
 1.	Get the virtual network adapter.
 
     ```powershell
-
-    $vm = Get-SCVirtualMachine -Name “TenantVM”
-    $adapter = Get-SCvirtualNetworkAdapter -VM $vm"
-
+    PS C:\> $vm = Get-SCVirtualMachine -Name “TenantVM”
+    PS C:\> $adapter = Get-SCvirtualNetworkAdapter -VM $vm"
     ```
 3. Attach an existing port ACL to the virtual network adapter.
 
     ```powershell
-
-    $portACL = Get-SCPortACL -Name "DemoACLManagedByNC"
-    Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $adapter -PortACL $portACL
-
+    PS C:\> $portACL = Get-SCPortACL -Name "RDPAccess"
+    PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $adapter -PortACL $portACL
     ```
 
     >[!NOTE]
@@ -101,18 +90,14 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 1.	Get the virtual network adapter that you want to detach the port ACL from.
 
     ```powershell
-
-    $vm = Get-SCVirtualMachine -Name “TenantVM”
-    $adapter = Get-SCvirtualNetworkAdapter -VM $vm
-
+    PS C:\> $vm = Get-SCVirtualMachine -Name “TenantVM”
+    PS C:\> $adapter = Get-SCvirtualNetworkAdapter -VM $vm
     ```
 
 2.	Detach the port ACL from the virtual network adapter.
 
     ```powershell
-
-    Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $adapter -RemovePortACL
-
+    PS C:\> Set-SCVirtualNetworkAdapter -VirtualNetworkAdapter $adapter -RemovePortACL
     ```
 
 
@@ -121,35 +106,27 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 1.	Get the VM subnet to attach the ACL.
 
     ```powershell
-
-    $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
-
+    PS C:\> $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
     ```
 2. Attach an existing port ACL to the VM subnet.
     ```powershell
-
-    Set-SCVMSubnet -VMSubnet $vmSubnet -PortACL $portACL
-
+    PS C:\> Set-SCVMSubnet -VMSubnet $vmSubnet -PortACL $portACL
     ```
 >[!NOTE]
 >
-> You can also attach a port ACL while creating VM subnet through New-SCVMSubnet cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvmsubnet).
+> You can also attach a port ACL while creating VM subnet through **New-SCVMSubnet cmdlet**. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvmsubnet).
 
 ## Detach the port ACL from the VM subnet
 
 1.	Get the VM subnet that you want to detach the port ACL from.
 
     ```powershell
-
-    $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
-
+    PS C:\> $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
     ```
 2. Detach the port ACL from the VM subnet.
 
     ```powershell
-
-    Set-SCVMSubnet – VMSubnet $vmSubnet -RemovePortACL
-
+    PS C:\> Set-SCVMSubnet – VMSubnet $vmSubnet -RemovePortACL
     ```
 
 ## Remove port ACL rule
@@ -157,17 +134,13 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 1.	Get the port ACL rule to remove.
 
     ```powershell
-
-    $portACLRule = Get-SCPortACLRule –Name “AllowRDPAccess”
-
+    PS C:\> $portACLRule = Get-SCPortACLRule –Name “AllowRDPAccess”
     ```
 
 2. Remove the port ACL rule.
 
     ```powershell
-
-    Remove-SCPortACLRule -PortACLRule $portACLRule
-
+    PS C:\> Remove-SCPortACLRule -PortACLRule $portACLRule
     ```
 
 ## Remove port ACL
@@ -175,15 +148,11 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 1.	Get the Port ACL that you want to remove.
 
     ```powershell
-
-    $portACL = Get-SCPortACL -Name “DemoACLManagedByNC”
-
+    PS C:\> $portACL = Get-SCPortACL -Name “RDPAccess”
     ```
 
 2. Remove the port ACL.
 
     ```powershell
-
-    Remove-SCPortACL -PortACL $portACL
-
+    PS C:\> Remove-SCPortACL -PortACL $portACL
     ```
