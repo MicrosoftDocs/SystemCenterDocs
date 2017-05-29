@@ -55,7 +55,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 1.	Get an existing port ACL.
 
     ```powershell
-    PS C:\> $porACL = Get-SCPortACL -Name "RDPAccess"
+    PS C:\> $portACL = Get-SCPortACL -Name "RDPAccess"
     ```
 2.	Create a port ACL rule.
 
@@ -127,7 +127,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 2. Detach the port ACL from the VM subnet.
 
     ```powershell
-    PS C:\> Set-SCVMSubnet – VMSubnet $vmSubnet -RemovePortACL
+    PS C:\> Set-SCVMSubnet –VMSubnet $vmSubnet -RemovePortACL
     ```
 
 ## Remove a port ACL rule

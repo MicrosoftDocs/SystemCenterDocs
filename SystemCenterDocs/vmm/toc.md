@@ -21,6 +21,7 @@
 ### [Allow and block VM traffic with SDN port ACLs](sdn-port-acls.md)
 ### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
 ### [Load balance network traffic ](sdn-load-balance-network-traffic.md)
+### [Set up NAT for traffic forwarding in an SDN](sdn-set-up-nat.md)
 # How To
 ## Plan
 ### [System requirements](system-reqs.md)
