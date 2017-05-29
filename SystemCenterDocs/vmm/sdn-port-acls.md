@@ -63,7 +63,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     PS C:\> New-SCPortACLRule -Name "AllowRDPAccess" -PortACL $portACL -Description "Allow RDP Rule from a subnet" -Action Allow -Type Inbound -Priority 110 -Protocol Tcp -LocalPortRange 3389 -RemoteAddressPrefix 10.184.20.0/24
     ```
     >[!NOTE]
-    > -	Priority range for SDN port ACL rules: 1 – 64500
+    > -	Priority range for SDN port ACL rules: 1 – 64500.
     > - Only TCP/UDP/Any protocol parameters are supported for creating ACL rules.
 
 ## Attach an ACL to a virtual network adapter
