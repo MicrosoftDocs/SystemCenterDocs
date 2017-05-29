@@ -83,7 +83,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
     >[!NOTE]
     >
-    >You can also attach a port ACL while creating the virtual network adapter through New-SCVirtualNetworkAdapter cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvirtualnetworkadapter).
+    >You can also attach a port ACL while creating the virtual network adapter through **New-SCVirtualNetworkAdapter** cmdlet. [Learn more](https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvirtualnetworkadapter).
 
 
 ## Detach the port ACL from virtual network adapter
@@ -109,6 +109,7 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
     PS C:\> $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
     ```
 2. Attach an existing port ACL to the VM subnet.
+
     ```powershell
     PS C:\> Set-SCVMSubnet -VMSubnet $vmSubnet -PortACL $portACL
     ```
