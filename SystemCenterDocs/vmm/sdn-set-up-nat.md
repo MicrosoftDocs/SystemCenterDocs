@@ -1,6 +1,6 @@
 ---
 ms.assetid: d174e976-e265-4acc-9ef5-1c92b602f761
-title: Setup NAT for traffic forwarding in SDN infrastructure by using VMM 2016.
+title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM 2016.
 description: This article describes how to configure NAT connection and NAT rules for traffic forwarding in the SDN infrastructure.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
