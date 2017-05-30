@@ -151,3 +151,7 @@ You can use the Windows&nbsp;PowerShell command\-line interface to identify and 
     ```  
 
 6.  Save the unsealed management packs on a separate physical computer.
+
+## Next steps
+
+- [Implement Service Manager disaster recovery](implement-disaster-recovery.md).

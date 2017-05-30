@@ -115,3 +115,9 @@ The following guidelines and best practices for working with management packs in
  Ensure that you do not make different customizations to the same management pack in different management groups. To implement customizations across multiple management groups, you can import the same customized management pack in the other management groups.  
 
  For example, if you want to have the same enumerations in multiple management groups, make the change in one management group, and then copy the custom management pack to the rest of the management groups. That way, the version and identity of the management pack is identical in all the management groups.  
+
+## Next steps
+
+- [Work with management packs in the Service Manager console](work-mps-console.md).
+- [Work with management packs in the Service Manager Authoring Tool](work-mps-auth-tool.md).
+- [Work with management pack XML files](work-mps-xml.md).

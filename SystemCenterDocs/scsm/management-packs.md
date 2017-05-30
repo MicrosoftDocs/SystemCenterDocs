@@ -147,3 +147,7 @@ Instead you must manually create a data source for Operations Manager. For more 
     Import-Module .\System.Center.Service.Manager.psd1
     Import-SCSMManagementPack ..\AlertCube.mpb
     ```
+
+## Next steps
+
+- [Use connectors to import data](import-data-connectors.md) in to Service Manager.

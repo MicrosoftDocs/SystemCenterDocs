@@ -133,7 +133,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Deploy a software-defined network (SDN)</h3>
+                        <h3>Deploy and manage a software defined network (SDN) infrastructure</h3>
                     </div>
                 </div>
             </div>

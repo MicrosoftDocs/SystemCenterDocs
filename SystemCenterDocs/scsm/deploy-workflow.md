@@ -45,3 +45,7 @@ Use these procedures to move workflows from the Service Manager Authoring Tool t
 5.  In the **Import Management Packs** dialog box, click **Add** to add the management pack that you want to import.  
 
 6.  Click **Import**, and then click **OK**.  
+
+## Next steps
+
+- [Configure the Activities Toolbox in the Authoring Tool](config-activities-toolbox.md).

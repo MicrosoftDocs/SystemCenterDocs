@@ -71,3 +71,7 @@ When you define an OLAP cube using the schema above and you import the managemen
     - The outrigger dimensions corresponding to the fact are added as cube dimensions so that you can slice the facts on those dimensions. These dimensions include Priority and Status.
     - DateDim is added to the OLAP cube because it is relevant to any fact.
     - EntityStatus and RelationshipStatus cube dimensions are defined for all cubes to indicate whether the entity or relationship is deleted.
+
+## Next steps
+
+- [Analyze OLAP cube data with Excel](olap-cube-excel.md) so that you can manipulate it.

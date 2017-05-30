@@ -67,3 +67,7 @@ A recovery plan for potential software and equipment failures in your System Cen
 1.  Start with a new computer with the same computer name and with the same SQL&nbsp;Server instance as the computer that failed.  
 
 2.  Restore the SQL&nbsp;Server database or databases using the same instance name as the original. For more information, see [Database Recovery in Service Manager](database-recovery.md) in this guide.
+
+## Next steps
+
+- [Prepare for Service Manager disaster recovery](prepare-disaster-recovery.md).

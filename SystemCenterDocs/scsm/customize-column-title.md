@@ -74,3 +74,7 @@ Another customization to a view is adding a column to a predefined view. For mor
     4. In the **Import Management Pack** dialog box, click **Import**. Wait for the import to complete, and then click **OK**.
 
 In the Service Manager console, select the view that you customized to see the new column title.
+
+## Next steps
+
+- [Include dashboards and reports in custom views for the Authoring Tool reports sample scenario](dashboards-reports-in-custom-views.md).

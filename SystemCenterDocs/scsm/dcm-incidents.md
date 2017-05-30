@@ -84,3 +84,7 @@ You can use the following procedures to configure incident management to automat
 -   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225383).
 
 -   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
+
+## Next steps
+
+- [Configure notifications](notifications.md) to create notifications in Service Manager when incidents or changes occur.

@@ -490,3 +490,7 @@ You can use the following procedure to link an incident or change request to a p
 #### To validate the link  
 
 -   In the **Active Problems** view, open the problem record to which you linked a work item, click the **Related Items** tab, and then verify that the items you linked appear under **Work Items**.  
+
+## Next steps
+
+- [Manage changes and activities](changes-activities.md) by providing repeatable, predictable, and measured processes to implement change.
