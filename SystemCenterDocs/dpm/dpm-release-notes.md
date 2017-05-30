@@ -94,6 +94,12 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
 
+## File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
+
+**Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end-user recovery is not available.
+
+**Workaround**: None. File Server EUR is not supported when using MBS.
+
 
 ## Next steps
 To install DPM, see the article, [Install DPM](install-dpm.md).
