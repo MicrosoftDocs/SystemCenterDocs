@@ -221,3 +221,7 @@ With the System Center 2016 - Service Manager release, the product has moved to 
 7.  On the **Configuration Summary** page, read the information that is provided, and, if it is accurate, click **Install**.  
 
 8.  On **The upgrade was completed successfully** page, click **Close**.
+
+## Next steps
+
+- Review [Tasks to complete after you upgrade to System Center 2016 - Service Manager](tasks-to-complete-after-upgrade.md).

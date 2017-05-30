@@ -247,3 +247,7 @@ You can reactivate resolved incidents that have an associated service level obje
 3.  In the **All Incidents** list, locate a resolved incident that you want to reactivate, and select it.
 4.  In the **Tasks** list, under **&lt;IncidentID - IncidentTitle&gt;**, click **Change Incident Status**, and then select **Activate**.
 5.  In the **Activate** box, type a comment describing why you are activating the incident, and then click **OK**.
+
+## Next steps
+
+- [Configure workflows](workflows.md) to create a sequence of activities that automate a business process.

@@ -296,3 +296,8 @@ In this final step of the Woodgrove Bank customization scenario for System Cente
 10. Use the **Start AD Users and Computers** task to start the Active Directory Users and Computers tool, and notice that the **GP\_AUTHAPPS** Active&nbsp;Directory group now contains the new **ADComputer1** computer. At this point, any policies that are configured to be applied to computers in this Active&nbsp;Directory group apply to the computer that was added.  
      Notice that the status of the automated activity has now also changed to **Completed**, due to the last step in the **AddComputerToADGroupWF** workflow.  
 11. Start Microsoft Outlook and locate the email notification that was sent to the process manager about the new computer that was added to the Active&nbsp;Directory group.  
+
+
+## Next steps
+
+- [Customize a column title in a view for the authoring views sample scenario](customize-column-title.md).

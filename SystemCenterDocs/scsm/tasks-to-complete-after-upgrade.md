@@ -106,3 +106,8 @@ This topic describes how to restart the Data Access service if it fails to start
 3.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and then click **Stop**.  
 
 4.  In the **Services** window, in the **Services \(Local\)** pane, right\-click **SQL Server Reporting Services**, and then click **Start**.
+
+
+## Next steps
+
+- If needed, [Identify and resolve System Center 2016 - Service Manager upgrade problems](resolve-upgrade-problems.md).

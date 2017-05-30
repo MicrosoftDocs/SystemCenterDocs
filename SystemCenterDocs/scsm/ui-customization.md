@@ -84,3 +84,7 @@ Templates in a sealed management pack in Service Manager cannot be changed. In t
 8.  In the **Create Template** dialog box, in the **Name** field, type a new name for this template, and then click **OK**.
 
 9. Finish the steps in the Service Request Template Wizard to customize this template for your needs, and when you are finished, click **OK**.
+
+## Next steps
+
+- [Manage user roles](user-roles.md).

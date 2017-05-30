@@ -210,3 +210,8 @@ Service Manager supports the following Windows PowerShell cmdlets, which are imp
 |Start-SCDWJob|Starts a Data Warehouse job.|
 |Unregister-SCDWManagememtPack||
 |Unregister-SCDWSource|Unregisters a data source from the data warehouse.|
+
+
+## Next steps
+
+- [Manage the data warehouse](manage-dw.md) to perform maintenance tasks on data warehouse jobs.

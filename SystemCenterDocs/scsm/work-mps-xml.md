@@ -1020,3 +1020,7 @@ namespace SMFormsDemo
 }  
 
 ```  
+
+## Next steps
+
+- [Seal a management pack](seal-mp.md).
