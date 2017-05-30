@@ -161,3 +161,8 @@ Use the following procedures to create a user role and assign users to that role
 -   For information about how to use Windows PowerShell to set the UserRole property for a Service Manager user, see [Update-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225389).
 
 -   For information about how to use Windows PowerShell to remove a user role from Service Manager, see [Remove-SCSMUserRole](http://go.microsoft.com/fwlink/p/?LinkId=225371).
+
+
+## Next steps
+
+- [Manage Run As accounts](run-as-accounts.md) for password security requirements, password expiration, and user name changes.

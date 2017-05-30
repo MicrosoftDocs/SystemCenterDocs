@@ -175,3 +175,7 @@ You can use the following procedures to duplicate or hide a service request view
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Closed Service Requests**.  
 
 2.  In the **Tasks** pane, click **Hide View**.  
+
+## Next steps
+
+- [Manage release records](release-records.md) to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.

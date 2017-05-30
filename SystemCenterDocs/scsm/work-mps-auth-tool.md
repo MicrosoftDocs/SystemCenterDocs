@@ -81,3 +81,7 @@ To be able to implement customizations that you make in the Service Manager Auth
 5.  Click **Open**.  
 
 6.  In the **Management Pack Explorer**, verify that the new management pack is listed.  
+
+## Next steps
+
+- [Work with management pack XML files](work-mps-xml.md).
