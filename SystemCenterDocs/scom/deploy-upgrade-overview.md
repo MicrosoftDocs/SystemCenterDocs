@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade from Operations M
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/25/2017
+ms.date: 05/31/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -38,7 +38,7 @@ It is assumed in this guide that you are performing an upgrade to System Center 
    > 4. Operations Manager
    > 5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts.
 
-Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
+Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](plan-system-requirements.md).
 
 There are several options for upgrade:
 
@@ -52,7 +52,7 @@ There are several options for upgrade:
 
 The following steps outline the process for upgrading a distributed management group:
 
-1. Accomplish [Pre-Upgrade Tasks](~/scom/deploy-upgrade-pretasks.md)
+1. Accomplish [Pre-Upgrade Tasks](deploy-upgrade-pretasks.md)
 
 2. Upgrade the initial management server and then additional management servers (each management server must be upgraded)
 
@@ -91,6 +91,6 @@ Agents can be upgraded before the new System Center 2016 - Operations Manager ma
 
 ## Next steps
 
-- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](~/scom/deploy-upgrade-pretasks.md).
+- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-pretasks.md).
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
