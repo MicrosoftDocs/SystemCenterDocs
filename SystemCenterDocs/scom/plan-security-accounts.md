@@ -50,7 +50,7 @@ The domain account specified for the action account can be granted either Log on
 * Type: REG_DWORD
 * Value: 4 means Log on as Batch, and 5 means for Log on as Service (default is 2, Allow log on locally).  
 
-This can also be centrally managed using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder C:\Windows\PolicyDefinitions and configuring the setting *Monitoring Action Account Logon Type*.  For further information on working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx). 
+This can also be centrally managed using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder C:\Windows\PolicyDefinitions and configuring the setting **Monitoring Action Account Logon Type** under the folder *Computer Configuration\Administrative Templates\System Center - Operations Manager*.  For further information on working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx). 
 
 ## System Center Configuration Service and System Center Data Access Service account
 
