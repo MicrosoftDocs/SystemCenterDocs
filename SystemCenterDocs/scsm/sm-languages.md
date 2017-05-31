@@ -11,7 +11,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: 19b6c8b8-324b-43b3-afb6-06648a82df50
 ---
 
@@ -51,7 +51,3 @@ It is assumed in this article that you are installing System Center 2016 - Servi
 |Spanish\_Modern\_Sort|Modern\_Spanish\_100\_CI\_AS|  
 |Swedish \(Sweden\)|Finnish\_Swedish\_100\_CI\_AS|  
 |Turkish \(Turkey\)|Turkish\_100\_CI\_AS|  
-
-## Next steps
-
-- Review [Databases created by Service Manager](databases-created.md) to learn about the databases that are created during Service Manager deployment.

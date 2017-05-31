@@ -292,3 +292,7 @@ The following reports are available in Service Manager.
 |Release management|Release Record Detail|Provides detailed information for a specific release record.|  
 |Service Management|Service KPI Trend|Provides key metrics across services, groups and collections for Service Manager, Operations Manager, and Configuration Manager. This report enables trending and flexible grouping.|  
 |Service Management|Service Summary|Provides a scorecard\-like report that includes a comprehensive view of the health of a service, including period\-over\-period analytic capabilities.|  
+
+## Next steps
+
+- Read [Overview of OLAP cubes for advanced analytics](olap-cubes-overview.md) to learn about data that is present in the data warehouse by using predefined and customized Microsoft Online Analytical Processing \(OLAP\) data cubes.
