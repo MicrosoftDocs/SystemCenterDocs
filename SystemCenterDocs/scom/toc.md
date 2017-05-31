@@ -114,7 +114,7 @@
 #### [Publish a Visio diagram to SharePoint Server](manage-visio-addin-publish-sharepoint.md)
 #### [Change the way Health State is represented in Visio](manage-visio-addin-change-healthstate-datagraphic.md)
 #### [Troubleshooting the Visio add-in](manage-visio-addin-troubleshoot.md)
-### Security
+### Security in Operations Manager
 #### [How to configure Report Server authentication](manage-config-authentication-reporting-server.md)
 #### [How to configure Web console authentication](manage-config-authentication-web-console.md)
 #### [Implementing user roles](manage-security-overview.md)
