@@ -22,6 +22,10 @@
 ### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
 ### [Load balance network traffic ](sdn-load-balance-network-traffic.md)
 ### [Set up NAT for traffic forwarding in an SDN](sdn-set-up-nat.md)
+## [Deploy and manage Storage Spaces Direct](s2d.md)
+### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
+### [Set up a disaggregated Storage Spaces Direct cluster](s2d-disaggregated.md)
+### [Manage Storage Spaces Direct clusters](s2d-manage.md)
 # How To
 ## Plan
 ### [System requirements](system-reqs.md)
@@ -86,7 +90,6 @@
 ### [Set up a Microsoft iSCSI Target Server](storage-iscsi.md)
 ### [Set up a Virtual Fibre Channel](storage-fibre-channel.md)
 ### [Set up file storage](storage-file.md)
-### [Set up Storage Spaces Direct](s2d.md)
 ### [Set up Storage Replica in VMM](storage-replica.md)
 ## Manage SOFS
 ### [Set up a scale-out file server](SOFS)](sofs.md)
