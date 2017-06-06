@@ -2,6 +2,7 @@
 ## [What is VMM?](overview.md)
 ## [What's new in VMM 2016](whats-new.md)
 # Get Started
+## [Read the release notes](release-notes.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
