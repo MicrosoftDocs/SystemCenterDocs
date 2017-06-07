@@ -24,7 +24,7 @@ When you have been monitoring applications using .NET Application Performance Mo
 ## Using Application Diagnostics to configure grooming settings for APM events in the Operations database  
 In Application Diagnostics you can select how many APM events you want in the Operations database and how long you want to keep them.  
   
-![Application Diagnostics Operations Database page](../media/om2016-appdiagnostics-groomingsettings.png)  
+![Application Diagnostics Operations Database page](./media/om2016-appdiagnostics-groomingsettings.png)  
   
 1.  Application Diagnostics is installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, click **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, the Application Diagnostics console address is: `http(s)://<web host>/AppDiagnostics` 
   
@@ -42,13 +42,13 @@ In Application Diagnostics you can select how many APM events you want in the Op
 ## Using Application Advisor to configure grooming settings for "Deleted" or "By Design" APM events in Data Warehouse  
 In Application Advisor you can choose the how long you want to keep APM events that have a Deleted or By Design status in Data Warehouse.  
   
-![Application Advisor Operations Database page](../media/om2016-appadvisor-groomingsettings.png)  
+![Application Advisor Operations Database page](./media/om2016-appadvisor-groomingsettings.png)  
   
 1.  Application Advisor is installed along with the Operations Manager web console. To find the web address of the Operations Manager web console, open the Operations console. In the navigation pane, select **Administration**, click **Settings**, and then double-click **Web Addresses**. The Operations Manager web console URL will be specified as: `http(s)://<web host>/OperationsManager`. Using this URL format and the same web host, the Application Advisor console address is: `http(s)://<web host>/AppAdvisor`  
   
     To open Application Advisor, paste the Application Advisor URL into your browser. Application Advisor opens in the web browser window. Different application monitoring reports display in the context of the application features and services you configured when you created application groups to monitor.  
   
-    Access to Application Advisor is controlled through the Application Monitoring Operator, Report Operator and Administrator roles. You must be a member of Application Monitoring Operator and Report Operator roles or the Administrator role. For more information, see [User roles for Application Performance Monitoring](manage-working-with-the-application-diagnostic-console.md#user-roles-for-application-performance-monitoring).
+    Access to Application Advisor is controlled through the Application Monitoring Operator, Report Operator and Administrator roles. You must be a member of Application Monitoring Operator and Report Operator roles or the Administrator role. For more information, see [User roles for Application Performance Monitoring](manage-working-with-the-application-diagnostics-console.md#user-roles-for-application-performance-monitoring).
   
     > [!NOTE]  
     > Application Advisor requires SQL Server Report Services (SSRS). You must have Operations Manager Reporting server installed before using Application Advisor.  
@@ -67,7 +67,7 @@ The Operations Manager APM Data Transfer Rule is targeted to the Operations Mana
   
 The Performance Counter setting is intended for hourly performance aggregations, which potentially can take a lot of space. There is no configurable setting for daily performance aggregations. The default for this is 182. Typically, daily aggregations consume a lot less disk space.  
   
-![Override Properties page](../media/om2016-appmonitor-datatransrule.png)  
+![Override Properties page](./media/om2016-appmonitor-datatransrule.png)  
   
 #### To use the Data Transfer Rule to configure grooming settings for APM events in the Data Warehouse  
   

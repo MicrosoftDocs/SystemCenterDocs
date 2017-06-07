@@ -103,7 +103,7 @@ Your first selection (**Application Errors** and **Performance**) affects the gr
 ## Example: Grouping Application Errors by Exception Class  
 Filtering by application errors and exception class quickly shows you which kinds, or classes, of exception events you are receiving most often.  
   
-![Filter by application errors and exception class](../media/om2016-appmonitoring-appdiagnosticsfilter-excepterror.png)  
+![Filter by application errors and exception class](./media/om2016-appmonitoring-appdiagnosticsfilter-excepterror.png)  
   
  
 1.  Open Application Diagnostics and select **Events** from the Navigation pane.  
@@ -119,7 +119,7 @@ Filtering by application errors and exception class quickly shows you which kind
 ## Example: Grouping Application Errors by Failed Function  
 Filtering by application errors and failed function quickly shows you which functions are failing most often. The functions that are failing the most are the ones you should investigate first to have the highest impact on your application's reliability.  
   
-![Filter by application errors and failed function](../media/om2016-appmonitoring-appdiagnostics-filtererrorsfailedfunct.png)  
+![Filter by application errors and failed function](./media/om2016-appmonitoring-appdiagnostics-filtererrorsfailedfunct.png)  
   
  
 1.  In the navigation pane, in the **Search for** menu, select **Application Errors**.  
@@ -133,7 +133,7 @@ Filtering by application errors and failed function quickly shows you which func
 ## Example: Grouping Performance Events by Heaviest Resource  
 Filtering by application errors and exception class quickly shows you which performance events are triggered by the same resource call. The performance events that are most often triggered by the same resource call are the ones you should investigate first to have the highest impact on you application's performance.  
   
-![Filter by performance and heaviest resource](../media/om2016-appmonitoring-appdiagnosticsfilter-heavyres.png)  
+![Filter by performance and heaviest resource](./media/om2016-appmonitoring-appdiagnosticsfilter-heavyres.png)  
   
  
 1.  In the navigation pane on the left, in the **Search for** menu, select **Performance**.  
@@ -145,6 +145,7 @@ Filtering by application errors and exception class quickly shows you which perf
 4.  To begin investigating the issue and open Event properties, click a **Heaviest Resource** entry. For information about working with events, see [Working with events by using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md)  
   
 ## Next steps 
+
 * Review [prioritizing alerts by using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md) to learn how to prioritize and manage which alerts to address find out and where the most events are occurring.  
    
 * Review [viewing and investigating alerts for .NET applications](manage-viewing-and-investigating-alerts-for-dotnetapps.md) to learn how to view alerts and begin investigating the issues raised.    

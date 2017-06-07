@@ -30,7 +30,7 @@ After you have configured .NET applications to be monitored, you can view alerts
   
     **View alerts by application group**  
   
-    ![View alerts by application group](../media/om2016-appmonitoring-alertview.png)  
+    ![View alerts by application group](./media/om2016-appmonitoring-alertview.png)  
   
     Additional views:  
   
@@ -38,19 +38,19 @@ After you have configured .NET applications to be monitored, you can view alerts
   
         **Application group state view**  
   
-        ![Application group state view](../media/om2016-appmonitoring-stateview-apphealth.png)  
+        ![Application group state view](./media/om2016-appmonitoring-stateview-apphealth.png)  
   
     -   To see application performance, in the application component folder, click **All Performance Data**. This gives you the base information about each component, shown by instance.  
   
         **All performance data**  
   
-        ![All Performance Data view](../media/om2016-appmonitoring-perfview-investigate.png)  
+        ![All Performance Data view](./media/om2016-appmonitoring-perfview-investigate.png)  
   
     -   To see the overall health dashboard view of the components you selected for the application you are monitoring, in the application component folder, click **Overall Component Health**. You will see the application state, active alerts, and a detail view.  
   
         **Overall component health**  
   
-        ![Overall Component Health](../media/om2016-appmonitoring-dashboard-investigate-alerts-by-appgroup.png)  
+        ![Overall Component Health](./media/om2016-appmonitoring-dashboard-investigate-alerts-by-appgroup.png)  
   
     To work with data collected by client-side monitoring, in the Operations console, in the navigation pane, click the **Monitoring** button, expand **Application Monitoring\.NET Monitoring**, and then application name (client) folder. The client-side monitoring process is very similar to server-side monitoring, except that you click **All Performance Data** and **Overall Component Health** in the application name (client) folder to view alerts pertaining to the client-side monitoring for the application group.  
   
@@ -65,7 +65,7 @@ After you have configured .NET applications to be monitored, you can view alerts
   
     **Begin investigating alerts on the Alert Properties page**  
   
-    ![Alert properties](../media/om2016-appmonitoring-investigate-alert-properties.png)  
+    ![Alert properties](./media/om2016-appmonitoring-investigate-alert-properties.png)  
   
     > [!NOTE]  
     > To see details about an alert in any of these views, click the alert you want to investigate and look in the **Alert Details** pane for the **Knowledge** section. You can also open the Alert Properties page, which shows the details of an alert and you can enter alert status. To open the Alert Properties page, double-click an alert or in the **Tasks** pane, in the **Tasks** section, click **Alert Properties**.  
@@ -77,19 +77,19 @@ After you have configured .NET applications to be monitored, you can view alerts
   
 5.  **Application Diagnostics Event properties**  
   
-    ![Application Diagnostics Event properties tab](../media/om2016-appmonitoring-investigate-perf-event.png)  
+    ![Application Diagnostics Event properties tab](./media/om2016-appmonitoring-investigate-perf-event.png)  
   
 6.  On the **Event Properties** tab, expand the **Stack** section. The stack is the order in which events happened. The **Resource Group View** and **Execution Tree View** allow you to expand nodes to investigate the various calls. This view helps answer which tier the problem is in, or where is it occurring.  
   
     **Application Diagnostics tree views lets you see exactly what went wrong where and when.**  
   
-    ![Event properties tab with expanded stack](../media/om2016-appmonitoring-investigate-appdiag-stacktrace.png)  
+    ![Event properties tab with expanded stack](./media/om2016-appmonitoring-investigate-appdiag-stacktrace.png)  
   
 7.  To see how this event relates to other events in the chain of events, on the Application Diagnostics page, click the **Distributed chains** tab. This view shows all of the components that are involved in the request.  
   
     **Application Diagnostics Distributed chains show how events relate to each other.**  
   
-    ![Application Diagnostics Distributed chains tab](../media/om2016-appmonitoring-investigate-appdiag-distchainstab.png)  
+    ![Application Diagnostics Distributed chains tab](./media/om2016-appmonitoring-investigate-appdiag-distchainstab.png)  
   
 8.  To pinpoint the root cause of the problem or incident, click the last event in the chain. This is the latest event that broke the performance threshold. The **Event Properties** tab for that event will open.  
   
@@ -97,19 +97,19 @@ After you have configured .NET applications to be monitored, you can view alerts
   
     **Application Diagnostics Performance counters allow you to compare system performance before, during, and after an event.**  
   
-    ![Performance counters tab](../media/om2016-appmonitoring-investigate-appdiag-perfcounters.png)  
+    ![Performance counters tab](./media/om2016-appmonitoring-investigate-appdiag-perfcounters.png)  
   
 10. On the **Application Diagnostics** page, click the **Similar events** tab. Similar events are the other events that are in the same problem group. On this page you can filter similar events by **Problem** and **Heaviest Resource** to help you identify trends.  
   
     **Application Diagnostics Similar events allow you to compare similar events to identify trends.**  
   
-    ![Application Diagnostics Similar events tab](../media/om2016-appmonitoring-investigate-appdiag-simevents.png)  
+    ![Application Diagnostics Similar events tab](./media/om2016-appmonitoring-investigate-appdiag-simevents.png)  
   
 11. On the **Application Diagnostics** page, click the **Related events** tab. Related events are events that occurred around the same time as the event you are investigating. Related events tell you what else is going on about the same time as the event you are investigating. You can increase or decrease the range of time in which other related events occurred relative to the event you are investigating. In general, specifying a greater time range shows you more related events.  
   
     **Application Diagnostics Related events allows you to see what other events are occurring about the same time as the event you are investigating.**  
   
-    ![Application Diagnostics Related events tab](../media/om2016-appmonitoring-investigate-appdiag-relatedevents.png)  
+    ![Application Diagnostics Related events tab](./media/om2016-appmonitoring-investigate-appdiag-relatedevents.png)  
   
 ## Next steps
 
