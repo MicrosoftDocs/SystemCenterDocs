@@ -4,9 +4,9 @@ description: This article describes how to open and configure the Operations Man
 author: mgoedtel
 ms.author: magoedte
 ms.manager: cfreeman
-ms.date: 11/29/2016
+ms.date: 06/07/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
@@ -22,7 +22,7 @@ In this section we provide information on how to connect to the Operations and W
 
 ## How to connect to the Operations console
 
-The System Center 2016 - Operations Manager Operations console can be installed on any computer that meets the [system requirements](../orchestrator/system-requirements.md). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
+The System Center 2016 - Operations Manager Operations console can be installed on any computer that meets the [system requirements](plan-system-requirements.md). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
   
 ![Dialog box to connect console to server](./media/manage-consoles-how-to-connect/om2016-operations-console-connect-to-server.png)  
   
@@ -47,7 +47,7 @@ In System Center 2016 - Operations Manager, the web console provides a monitorin
 > [!NOTE]  
 > You must use Internet Explorer 11 to connect to the Operations Manager web console. In addition, the Operations Manager web console requires that JavaScript be enabled and Silverlight version 5 is installed on the client computer. To enable JavaScript in Internet Explorer, open **Internet Options**, and click the **Security** tab. Select the zone for the Web console (Internet, Local intranet, or Trusted sites), and then click **Custom level**. Enable **Active scripting**, click **OK**, click **OK**, and then connect to the Web console.  
   
-By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (Program Files\Microsoft System Center 2016\Operations Manager\\WebConsole\WebHost) and changing the *autoSignOutInterval* value from "30" to a shorter or longer interval, or disable the session limit by changing the value to "0", as shown in the following example.  
+By default, the web console session is limited to 30 minutes. You can change this limit by editing the web.config file (C:\Program Files\Microsoft System Center 2016\Operations Manager\\WebConsole\WebHost is the default path) and changing the *autoSignOutInterval* value from "30" to a shorter or longer interval, or disable the session limit by changing the value to "0", as shown in the following example.  
   
 ```  
 <connection autoSignIn="true" autoSignOutInterval="0">  
@@ -58,7 +58,7 @@ By default, the web console session is limited to 30 minutes. You can change thi
   
 ### To connect to a Web console  
   
--   Open a web browser on any computer and enter **http:\/\/***servername*\/**OperationsManager**, where *servername* is the name of the computer hosting the web console.  
+-   Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.  
   
 For information on installing the Web console, see [Install the Operations Manager Web console](~/scom/deploy-install-web-console.md).  
  
