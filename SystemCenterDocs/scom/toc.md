@@ -134,6 +134,13 @@
 #### [Troubleshoot monitoring the UNIX/Linux agent](manage-monitoring-unix-linux.md)
 ### [Agentless monitoring](manage-agentless-monitoring.md)
 ### [Client monitoring using Agentless Exception Monitoring](manage-client-monitoring-using-aem.md)
+### Monitoring .NET applications
+#### [Viewing and investigating alerts for .NET apps](manage-viewing-and-investigating-alerts-for-dotnetapps.md)
+#### [Working with the Application Diagnostics console](manage-working-with-the-application-diagnostics-console.md)
+#### [Working with events using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md)
+#### [Prioritizing alerts using Application Advisor](manage-prioritizing-alerts-using-application-advisor.md)
+#### [Configure grooming settings for .NET APM events](manage-configure-grooming-settings-for-dotnetapp-monitorevents.md)
+#### [Working with sensitive data for .NET applications](manage-working-with-sensitive-data-dotnetapps.md)
 ### [Monitoring networks with Operations Manager](manage-monitor-networkdevice-overview.md)
 #### [How to discover network devices](manage-monitor-networkdevice-discover.md)
 #### [Network device discovery settings](manage-monitor-networkdevice-discovery-settings.md)
