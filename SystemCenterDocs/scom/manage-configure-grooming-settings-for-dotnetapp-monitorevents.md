@@ -33,7 +33,7 @@ In Application Diagnostics you can select how many APM events you want in the Op
     > [!NOTE]  
     > If you are running Operations Manager on a server rather than a client computer, you can access Application Diagnostics from the **Start** menu.  
   
-    Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console. For more information, see [User roles for Application Performance Monitoring](manage-working-with-the-application-diagnostic-console.md#user-roles-for-application-performance-monitoring).   
+    Access to Application Diagnostics is controlled through the Application Monitoring Operator and Administrator roles. You must be a member of one of these roles to have rights to the console. For more information, see [User roles for Application Performance Monitoring](manage-working-with-the-application-diagnostics-console.md#user-roles-for-application-performance-monitoring).   
   
 2.  In Application Diagnostics, click **Tools**, select **Options**, and then click the **Data** tab.  
   
