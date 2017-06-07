@@ -106,4 +106,4 @@ To show how Application Advisor prioritizes alerts, this walkthrough uses a repo
   
 ## Next steps
 
-  
+Review [Working with sensitive data for .NET applications](manage-working-with-sensitive-data-dotnetapps.md) to understand how to work with sensitive data that would be collected and be available for viewing by Application Performance Monitoring.  
