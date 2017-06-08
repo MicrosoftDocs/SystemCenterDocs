@@ -154,6 +154,7 @@
 #### [Running a service level tracking report](manage-monitor-sla-reports.md)
 ### [Connecting Operations Manager with other management systems](manage-integration-thirdparty-overview.md)
 #### [How to configure a product connector subscription](manage-integration-config-integration.md)
+### Manage Alerts
 #### [How heartbeats work](manage-agent-heartbeat-overview.md)
 #### [Resolving heartbeat alerts](manage-agent-resolve-heartbeat.md)
 #### [How an alert is produced](manage-alert-generation-overview.md)
@@ -165,8 +166,8 @@
 #### [How to set alert resolution states](manage-alert-set-resolution-states.md)
 #### [How to configure automatic alert resolution](manage-alert-configure-auto-resolution.md)
 #### [Data driven alert management](manage-alert-data-driven-management.md)
-#### [How to enable recovery and diagnostic tasks](manage-enable-recovery-and-diagnostic-tasks.md) 
-### [How to suspend monitoring temporarily by using maintenance mode](manage-maintenance-mode-overview.md)
+#### [Enable recovery and diagnostic tasks](manage-enable-recovery-and-diagnostic-tasks.md) 
+### [Suspend monitoring temporarily by using maintenance mode](manage-maintenance-mode-overview.md)
 ### [Creating and managing groups](manage-create-manage-groups.md)
 ### [Running tasks in Operations Manager](manage-running-tasks.md)
 ### [Connecting management groups in Operations Manager](manage-connecting-mgmtgroups.md)
