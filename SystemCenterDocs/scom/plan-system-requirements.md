@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/25/2017
+ms.date: 06/09/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -170,11 +170,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ## Virtualization
 
-Microsoft supports running all System Center 2016 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft does not support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager: 
-- Virtual computers running any Operations Manager 2016 component must not make use of any functionality where all activity on the virtual computer is not immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive. 
-- Virtual computers running any Operations Manager 2016 component cannot be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted just as would be done with a physical computer. 
-- Virtual computers that are running any Operations Manager 2016 components cannot be relocated to another host physical server by using any automated process. 
-- If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.
+Microsoft supports running all System Center 2016 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft does not support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:  
+- Virtual computers running any Operations Manager 2016 component must not make use of any functionality where all activity on the virtual computer is not immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.  
+- Virtual computers running any Operations Manager 2016 component cannot be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted just as would be done with a physical computer.  
+- Virtual computers that are running Operations Manager 2016 components can be replicated to another virtualized environment by using [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-workload). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
+- If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.  
 
 System Center 2016 - Operations Manager runs on virtual machines in Microsoft Azure just as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.  
 
