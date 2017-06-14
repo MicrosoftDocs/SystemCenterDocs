@@ -11,7 +11,7 @@ description: Service Management Automation is an IT process automation solution 
 ---
 # Service Provider Foundation (SPF) Documentation
 
-As a service provider you can use SPF to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your frontend portal.
+As a service provider you can use SPF to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your front-end portal.
 
 <ul class="panelContent cardsFTitle">
     <li>
