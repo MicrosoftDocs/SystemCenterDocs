@@ -21,7 +21,7 @@ As a service provider you can use SPF to offer infrastructure as a service (IaaS
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="" />
+                            <img src="/media/common/i_advanced.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -39,7 +39,7 @@ As a service provider you can use SPF to offer infrastructure as a service (IaaS
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="" />
+                            <img src="/media/common/i_setup.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,7 +75,7 @@ As a service provider you can use SPF to offer infrastructure as a service (IaaS
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_architecture.svg" alt="" />
+                            <img src="/media/common/i_upgrade.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
