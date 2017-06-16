@@ -143,7 +143,7 @@
 #### [Working with sensitive data for .NET applications](manage-working-with-sensitive-data-dotnetapps.md)
 ### Monitoring Java Applications
 #### [Monitoring Java applications with Operations Manager](manage-monitoring-java-applications.md)
-#### [Configure monitoring of Java applications](configure-monitoring-java-applications.md)
+#### [Configure monitoring of Java applications](manage-configure-monitoring-java-applications.md)
 ### [Monitoring networks with Operations Manager](manage-monitor-networkdevice-overview.md)
 #### [How to discover network devices](manage-monitor-networkdevice-discover.md)
 #### [Network device discovery settings](manage-monitor-networkdevice-discovery-settings.md)
