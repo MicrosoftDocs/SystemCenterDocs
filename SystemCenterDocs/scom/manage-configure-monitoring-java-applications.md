@@ -87,7 +87,7 @@ Getting started with monitoring Java applications requires these four general st
   
 ### Verify Application Performance Monitoring agent deployment and override monitors  
   
-1.  To verify if Application Performance Monitoring is monitoring an application, right click an application and you can see a list of counters: Monitored Requests\/sec, Average Request Time, Performance Events/sec, Exception Events/sec, and, importantly, values for each counter. Five monitors apply to these. For more information about monitors, see the Management Pack Guide for Java Application Performance Monitoring, available from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=313918).  
+1.  To verify if Application Performance Monitoring is monitoring an application, right click an application and you can see a list of counters: Monitored Requests/sec, Average Request Time, Performance Events/sec, Exception Events/sec, and, importantly, values for each counter. Five monitors apply to these. For more information about monitors, see the Management Pack Guide for Java Application Performance Monitoring, available from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=313918).  
   
     > [!IMPORTANT]  
     > If you do not see values for the counters, Application Performance Monitoring is not enabled for these applications. This means that you might need to wait for Application Performance Monitoring discovery.  

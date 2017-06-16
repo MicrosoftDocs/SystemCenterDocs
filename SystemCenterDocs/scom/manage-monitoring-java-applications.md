@@ -46,7 +46,7 @@ To run the Management Pack for Java Application Performance Monitoring, you must
 When you have a new Java application that you are learning about, you use Java Application Performance Monitoring to get baseline measures before you gradually scale up deployment. Here are some settings to start with that helps you get to know your new application. In addition, it is ideal that you begin monitoring in a test or development environment to establish a baseline configuration before implementing in production.    
   
 ## Monitoring settings for a new application  
-Following this strategy for monitoring a new Java application will help you get to know how the application behaves within your system and for your customer.  
+Following this strategy for monitoring a new Java application will help you get to know how the application behaves within your environment and for your customer.  
   
 ### Start monitoring with a simple monitored system and short-term settings  
 First, keep the configuration simple: monitor one application on one server. Second, when you first configure Java Application Performance Monitoring to monitor a new application, plan to keep the settings you implement long enough for you to understand some trends. A day's worth of data should provide you with insight into the performance and usage patterns of the application.  
