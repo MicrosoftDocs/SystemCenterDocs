@@ -80,7 +80,7 @@ SQL Server 2012 (Enterprise, Standard, 64-bit) | N
 SQL Server 2012 SP1 onwards | Y
 SQL Server 2014 and all service packs | Y
 SQL Server 2016 and all service packs | Y
-SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Version should match SQL Server version.<br/><br/> Not required for VMM installation.
+SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](http://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](http://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.
 
 ## Virtualization
 
