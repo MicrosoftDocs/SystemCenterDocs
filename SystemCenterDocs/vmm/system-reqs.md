@@ -68,7 +68,7 @@ Windows 10 Enterprise | Y
 Windows Server 2008 R2 with SP1 onwards | Y
 Windows Server 2012 | Y
 Windows Server 2012 R2 Standard, Datacenter | Y
-Window Server 2012 Standard, Datacenter | Y
+Window Server 2016 Standard, Datacenter | Y
 
 
 ## SQL Server
