@@ -93,7 +93,7 @@ To set up a SQL Server database:
 
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' <ipv4> port_number].
 
-9. [Download and install SQL Server Management Studio version 16.5](http://go.microsoft.com/fwlink/?LinkID=832812). DPM 2016 requires SSMS version 16.5 or earlier. SSMS is no longer installed with SQL Server. You must install it. You can use SSMS 16.5 or earlier. Do not use SSMS version 17.0 or later. See the article, [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/en-us/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812), for information about the SSMS 16.5 release. 
+9. DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must install it. [Download and install SQL Server Management Studio (SSMS) version 16.5](http://go.microsoft.com/fwlink/?LinkID=832812). SSMS version 17.0 or later is not supported with DPM 2016. See the article, [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/en-us/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812), for information about the SSMS 16.5 release. 
 
 ## <a name="BKMK_Install"></a>Install DPM
 
