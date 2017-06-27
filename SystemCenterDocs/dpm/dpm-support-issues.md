@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/21/2016
+ms.date: 06/26/2017
 title:  What's supported and what isn't for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -84,6 +84,12 @@ This topic summarizes some of the common support information you might need when
 **Issue**: Database deployment not supported.
 
 **Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn't running on a domain controller.
+
+### You cannot install DPM 2016 on SQL 2016 SP1 (or later release)
+**Issue**: Installation on SQL 2016 SP1 (or a later release) is not supported.
+
+**Workaround**: None.
+
 
 ### Moving protected servers with DPM secondary servers
 Moving protected servers between DPM servers that are under secondary protection isn't supported. To illustrate this we have the following:
@@ -232,6 +238,11 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 
 ## <a name="BKMK_Data"></a>Data protection issues
+
+### DPM does not back up shared VHDX
+**Issue**: Backup programs that use the Hyper-V VSS writer can't back up volumes that are backed up by VHDs which are potentially attached to other VMs.
+
+**Workaround**: To avoid potential data loss, use another method to back up data on the shareable VHD.
 
 ### Protection might fail when changing the path of a data source
 **Issue**: When you protect a shared folder, the path to the shared folder includes the logical path on the volume. If you move the shared folder, protection will fail. In addition if you change the path of a protected data source on a volume that uses the Encrypting File System (EFS) and the new file path exceeds 5120 characters, data protection will fail.
