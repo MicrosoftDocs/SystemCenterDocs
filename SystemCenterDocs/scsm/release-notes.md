@@ -7,7 +7,7 @@ ms.author: banders
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:
-ms.date: 05/24/2017
+ms.date: 06/27/2017
 title:  Release Notes for System Center 2016 - Service Manager
 ---
 
@@ -15,6 +15,12 @@ title:  Release Notes for System Center 2016 - Service Manager
 
 **The following release notes apply to System Center 2016 - Service Manager.**
 
+
+## Data warehouse installation might fail when Reporting and Analysis services are hosted on servers without the SQL Server Database Engine service
+
+**Description:** During Service Manager installation, the data warehouse installation might fail when Reporting and Analysis services are hosted on servers without the SQL Server Database Engine service.
+
+**Workaround:** Install a temporary instance of the SQL Server Database Engine on servers with SQL Server Reporting Services and SQL Server Analysis Services, and then remove the temporary instance after installation.
 
 ## Silverlight based Self Service Portal for System Center Service Manager
 
