@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/29/2016
+ms.date: 06/26/2017
 title:  What can DPM back up
 ms.technology:  data-protection-manager
 ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -32,7 +32,7 @@ ms.author: markgal
 |Client computers (64-bit and 32-bit)|Windows Vista with SP1|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
 |Client computers (64-bit and 32-bit)|Windows Vista|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
 |Client computers (64-bit and 32-bit)|Windows Vista|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, file, system state/bare metal), deduped volumes|
-|Servers (32-bit and 64-bit)|Windows Server 2016|Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)<br /><br />Physical server<br /><br />On-premises Hyper-V virtual machine|Y<br /><br />Not Nano server|N|Volume, share, folder, file, system state/bare metal), deduped volumes|
+|Servers (32-bit and 64-bit)|Windows Server 2016|Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)<br /><br />Physical server<br /><br />On-premises Hyper-V virtual machine|Y<br /><br />Not Nano server|N (Windows Server 2016 is not supported on DPM 2012 R2)|Volume, share, folder, file, system state/bare metal), deduped volumes|
 |Servers (32-bit and 64-bit)|Windows Server 2012 R2 - Datacenter and Standard|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y (from DPM 2012 R2 with Update Rollup 3 onwards)|Volume, share, folder, file<br /><br />DPM must be running on at least Windows Server 2012 R2 to protect Windows Server 2012 deduped volumes.|
 |Servers (32-bit and 64-bit)|Windows Server 2012 R2 - Datacenter and Standard|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|Volume, share, folder, file, system state/bare metal)<br /><br />DPM must be running on Windows Server 2012 or 2012 R2 to protect Windows Server 2012 deduped volumes.|
 |Servers (32-bit and 64-bit)|Windows Server 2012/2012 with SP1 - Datacenter and Standard|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, file, system state/bare metal<br /><br />DPM must be running on at least Windows Server 2012 R2 to protect Windows Server 2012 deduped volumes.|

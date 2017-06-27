@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/24/2016
+ms.date: 06/26/2017
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -43,7 +43,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement| Details  |
 |-----------|----------|
-|Version|SQL Server 2016 - Standard or Enterprise 64-bit (from DPM 2016 R2 with Update Rollup 2 onwards) <br/>SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit <br/> SQL Server 2012 SP2 onwards - Standard or Enterprise 64-bit|
+|Version|SQL Server 2016 - Standard or Enterprise 64-bit (from DPM 2016 R2 with Update Rollup 2 onwards) <br/>- Note: **SQL Server 2016 SP1 or later** is not a supported database. <br/> SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit <br/> SQL Server 2012 SP2 onwards - Standard or Enterprise 64-bit|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
 |Required features|Database Engine Services, Reporting Services|
@@ -73,9 +73,10 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Disk|DPM requires:<br/> - Disk for DPM installation including system files, installation files, prerequisite software, and database files<br/> - Disk dedicated to the storage pool| |
 |DPM installation|DPM installation location: 3 GB<br/> Database files drive: 900 MB<br/> System drive: 1 GB<br/> The system drive disk space is required if SQL Server is installed on the DPM server. If SQL Server is remote, you'll need considerably less disk space for the system drive.|On each protected volume you'll need a minimum of 300 MB of free space for the change journal. In addition you'll need space because DPM copies the file catalog to a temporary DPM installation location for archiving. We recommend that the DPM installation volume has 2-3 GB of free space.|
 |Disk for storage pool|1.5 times the size of the protected data|2-3 times the size of the protected data|
-|Logical unit number (LUN)| |Maximum of 17 TB for GUID partition table (GPT) dynamic disks<br/> 2 TB for master boot record (MBR) disks<br/> Requirements are based on the maximum size of the hard disk that appears in the operating system.|
-|Limitations|DPM storage pools must be dynamic.<br/> You can't install DPM on the dis used for the storage pool.<br/> You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. If you're running DPM 2012 R2 with Update Rollup 3 or later you can also use virtual tape libraries with a virtual fibre channel adapter. For more information see [Compatible tape libraries]().<br/>|
-|Virtualized DPM|When DPM is running on a virtual machine it can use this storage:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| |
+|Logical unit number (LUN)<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2 that used legacy storage pool.* | |Maximum of 17 TB for GUID partition table (GPT) dynamic disks<br/> 2 TB for master boot record (MBR) disks<br/> Requirements are based on the maximum size of the hard disk that appears in the operating system.|
+|Limitations<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2 that used legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. If you're running DPM 2012 R2 with Update Rollup 3 or later you can also use virtual tape libraries with a virtual fibre channel adapter. For more information see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
+|Virtualized DPM|- When DPM is running on a virtual machine it can use this storage:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| <br/> |
+|Modern Backup Storage| You must use Volumes. <br/> A single DPM server supports up to 120TB of storage. | <br/> |
 
 
 ## Protected workloads
