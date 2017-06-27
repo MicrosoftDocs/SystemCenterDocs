@@ -1,12 +1,12 @@
 ---
-description: This article contains prerequisite and set up instructions for DPM 2016 and it includes attended and unattended instructions.
+description: This article contains prerequisites and set up instructions for DPM 2016 and it includes attended and unattended instructions.
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 05/23/2017
-title:  Get DPM installed
+ms.date: 06/27/2017
+title:  Installing DPM 2016
 ms.technology:  data-protection-manager
 ms.assetid:  85d424ba-123b-4158-8833-5bc04ea145db
 ms.author: markgal
@@ -93,7 +93,12 @@ To set up a SQL Server database:
 
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' <ipv4> port_number].
 
+9. [Download and install SQL Server Management Studio version 16.5](http://go.microsoft.com/fwlink/?LinkID=832812). DPM 2016 requires SSMS version 16.5 or earlier. SSMS is no longer installed with SQL Server. You must install it. You can use SSMS 16.5 or earlier. Do not use SSMS version 17.0 or later. See the article, [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/en-us/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812), for information about the SSMS 16.5 release. 
+
 ## <a name="BKMK_Install"></a>Install DPM
+
+>[!IMPORTANT]
+> When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDN).
 
 1.  If required, extract the DPM 2016 .exe file onto the machine on which you want to run DPM. To do this, run the exe file and on the **Welcome** screen, click **Next**. In  **Select Destination Location** specify where you want to extract the installation files to. In **Ready to Extract** click **Extract.**. After the extraction finishes go to the specified location and run **Setup.exe**.
 
@@ -110,7 +115,7 @@ Run an unattended install as follows:
 
 1.  Make sure you have the prerequisites installed before you start.
 
-2.  On the remote SQL Server, have to make sure .NET 3.5 is installed on Windows 2016 BEFORE installing SQL.
+2.  On the remote SQL Server, make sure .NET 3.5 is installed on Windows 2016 BEFORE installing SQL.
 
 3.  Use the following code to make sure the firewall is opened:
 
@@ -122,6 +127,9 @@ Run an unattended install as follows:
 4.  Install SQL Server on the local or remote server.
 
 5.  Copy the following text into Notepad (or another text editor) and save the script on the DPM server as DPMSetup.ini. You use the same script whether the SQL Server instance is installed on the DPM server or on a remote server.
+
+  >[!IMPORTANT]
+  > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDN).
 
   When creating DPMSetup.ini, replace the text inside <> with values from your own environment. Lines beginning with the hash (#) are commented out, and DPM setup uses the default values. To specify your own values, type the values within the <> and delete the hash (#).
 
@@ -199,7 +207,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
 6.  After you've complete these steps you can install SQL Server:
 
-    -   Log onto the domain controller on which you want to install DPM using the  domain user account that you created earlier. Let's refer to this account as DPMSQLSvcsAcct.
+    -   Log onto the domain controller on which you want to install DPM using the domain user account that you created earlier. Let's refer to this account as DPMSQLSvcsAcct.
 
     -   Start to install SQL Server. On the **Server Configuration - Service Accounts** page of Setup you specify the login account for the SQL Server services (SQL Server Agent, SQL Server Database Engine, SQL Server Reporting services) to run under the user account DPMSQLSvcsAcct.
 
@@ -211,7 +219,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
     -   On the **Security Settings** page you'll need to enter the same password that you used when you created the DPMR$MACHINENAME user account earlier.
 
-    -   Open SQL Server Management Studio and connect to the instance of SQL Server that DPM is configured to use. Click New Query, copy the text below to the right pane, and then press F5 to run the query.
+    -   Open SQL Server Management Studio and connect to the instance of SQL Server that DPM is configured to use. Click **New Query**, copy the text below to the right pane, and then press F5 to run the query.
 
         ```
         use DPMDB
