@@ -4,7 +4,7 @@ description: This article describes how to configure monitoring of Java applicat
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 06/16/2017
+ms.date: 06/20/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -98,7 +98,7 @@ Getting started with monitoring Java applications requires these four general st
   
 ### View events using Application Diagnostics  
   
-1.  Like .NET Application Performance Monitoring, you can use Application Diagnostics to view event information for Java Application Performance Monitoring. For information about opening and using Application Diagnostics, see [Working with the Application Diagnostics Console](manage-working-with-the-application-diagnostics-console.md) and [Working with Events by Using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).  
+Like .NET Application Performance Monitoring, you can use Application Diagnostics to view event information for Java Application Performance Monitoring. For information about opening and using Application Diagnostics, see [Working with the Application Diagnostics Console](manage-working-with-the-application-diagnostics-console.md) and [Working with Events by Using Application Diagnostics](manage-working-with-events-using-application-diagnostics.md).  
   
-    Due to the way Java statistics are reported, some of the standard Application Performance Monitoring reports do not apply to Java Application Performance Monitoring. For instance, you might see **NA** in some of the report columns where Java Application Performance Monitoring does not apply. Additionally, due to the way that Java application containers map to servers, many server-level reports do not have data.  
+Due to the way Java statistics are reported, some of the standard Application Performance Monitoring reports do not apply to Java Application Performance Monitoring. For instance, you might see **NA** in some of the report columns where Java Application Performance Monitoring does not apply. Additionally, due to the way that Java application containers map to servers, many server-level reports do not have data.  
   
