@@ -209,6 +209,25 @@ description: get-from-content-team
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/system-center/spf/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/systemcenter/system-center-service-provider-foundation.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Service Provider Foundation</h3>
+                                                    <p>Deliver infrastructure-as-a-service to your clients by providing VMM capabilities through the SPF Open Data Protocol interface.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
