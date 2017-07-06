@@ -27,6 +27,9 @@ Each procedure in this topic is performed on an activity that has been placed in
 
 Each activity is configured with a set of required or optional properties. These define how the activity connects to other activities or how the activity performs its actions. When an activity has been placed in the runbook window, you can view or modify its properties.
 
+>[AZURE.NOTE] The property needs to have a value, otherwise the property will not be passed to the activity. An empty string or spaces are not considered valid value.
+e.g. GetMailbox activity has a property Identity. If the value for this property Identity is passed "" or "   ", then the Identity property will be omitted.
+
 ### To view and configure the properties for an activity
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
