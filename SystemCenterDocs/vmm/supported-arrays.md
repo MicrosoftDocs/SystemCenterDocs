@@ -31,6 +31,8 @@ ms.technology:  virtual-machine-manager
 |DELL-EMC <br/><br/> XtremIO All Flash Array	| iSCSI/FC	| XtremIO XMS Server Versions: 4.2.0 and 4.2.1 | Embedded SMI-S V1.6.1 | [Link](http://www.emc.com/en-us/storage/xtremio/benefits.htm) |
 |DELL <br/><br/> SC Series	| iSCSI/FC	| SCOS : 7.2 or later <br/> DSM : 2016 R3 or later| SMI-S <br/>version 1.6 | [Link](http://www.dell.com/us/business/p/dell-compellent?dgc=IR&cid=emcstorcat&lid=1) |
 |NetApp <br/><br/> FAS	| iSCSI/FC/SMB	| 8.2 and later | Proxy NetApp SMIS Provider 5.2.4 or later | [Link](https://now.netapp.com) |
+|Huawei <br/><br/> OceanStor V3 Series	| iSCSI/FC	| V300R006  and later| SMI-S <br/>version 2.1.01 | [Link](http://e.huawei.com/en/products/cloud-computing-dc/storage/unified-storage/mid-range) |
+|Huawei <br/><br/> OceanStor Dorado V3 Series	| iSCSI/FC	| V300R001 and later| SMI-S <br/>version 2.1.01 | [Link](http://e.huawei.com/en/products/cloud-computing-dc/storage/unified-storage/dorado-v3) |
 
 ## Next steps
 
