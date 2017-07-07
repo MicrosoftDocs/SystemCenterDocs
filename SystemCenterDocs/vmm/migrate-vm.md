@@ -28,12 +28,12 @@ To perform a migration, you can do any of the following:
 
 -   **Drag the virtual machine onto a host group**: When you drag the virtual machine to a host group, VMM uses automatic placement to place the virtual machine on the most suitable host that is available in the host group, which is based on the virtual machine requirements and the host ratings. The virtual machine is placed on the most suitable volume on the host. The placement is based on available space. During automatic placement, the [host rating process](provision-vms.md#host-ratings) identifies the most suitable volume on each host.
 
-Note the following before you begin migration:
+**Note the following before you begin migration**:
 
 -   If a correctly configured SAN is available, VMM automatically uses SAN to perform transfers. However, if you use the Migrate Virtual Machine Wizard to perform a transfer, you can override the SAN usage and perform a local area network (LAN) transfer.
 -   If you migrated a virtual machine that is connected to SAN storage, the virtual machine cannot reconnect to the SAN unless the destination host also has access to that SAN. VMM cannot detect if a virtual machine is connected to a SAN or if the destination host is connected to the same SAN, and therefore cannot provide a warning. You must ensure that the new host is configured to enable the virtual machine to reconnect to the SAN before you migrate the virtual machine.
+- To migrate VMs between the hosts with different processors, ensure that you make this exception in the VM **Properties** > **Processor** by selecting **Allow migration to a virtual machine host with a different processor version**. Else, the migration fails.
 -   If you change the permissions for a virtual machine through the file system, and then migrate the virtual machine, VMM re-creates the access control list (ACL). All changes that were made outside VMM will be lost.
-
 -   If you attempt to migrate a virtual machine on a Hyper-V host soon after you have removed a checkpoint from the virtual machine, the migration might fail. If you attempt a migration before Hyper-V has finished deleting the checkpoint, the migration fails, and you must repair the virtual machine by using the **Undo** option. To avoid this issue, you can ensure that the checkpoint has been deleted, or you can wait for Hyper-V to delete it for you. Verify deletion as follows:
 
     1.  In **Virtual Machines** click the virtual machine >  **Actions** > **Stop**.
@@ -46,10 +46,10 @@ Note the following before you begin migration:
 	- **Details** — Indicates the status of the host, the operating system, and the type and status of virtualization software. Lists the virtual machines on the host.
 	- **Rating Explanation** — Lists the factors that resulted in a 0 star rating.
 	- **SAN Explanation or Deployment and Transfer Explanation** — Lists the factors that make a SAN transfer unavailable. In addition, as of System Center 2016 Virtual Machine Manager, the Deployment and Transfer Explanation tab provides an explanation if fast file copy cannot be used. Fast file copy is a feature that was introduced in VMM, based on the Windows Offloaded Data Transfers (ODX) feature introduced in Windows Server 2012 R2. For information about ODX, see [Windows Offloaded Data Transfers Overview](https://technet.microsoft.com/en-us/library/hh831375(v=ws.11).aspx).
-	
+
     	> [!NOTE]
-    	> The Fast file copy feature is not utilized when migrating a VM from Host to Library. 
-	 
+    	> The Fast file copy feature is not utilized when migrating a VM from Host to Library.
+
 3. In **Select Path** page, accept the default path, or click **Browse** and browse to the folder in which you want to store the configuration files for the virtual machine, and then click **OK**. Note the following:
 
    - If the target host is a part of a failover cluster that has Cluster Shared Volumes (CSV) enabled, you can store the virtual machine on a CSV Logical Units (LUs) and associated Number (LUN) that is already in use by other highly available virtual machines (HAVMs). With CSV, multiple HAVMs can share the same LUN. The migration of one HAVM does not affect others that are sharing the same LUN. VMM also supports multiple HAVMs per LUN for VMware environments that are configured with VMware VMFS LUNs.  
