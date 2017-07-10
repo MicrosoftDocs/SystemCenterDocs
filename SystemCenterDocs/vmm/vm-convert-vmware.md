@@ -23,12 +23,12 @@ This article describes how to convert VMware VMs in the System Center 2016 - Vir
 There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
-- Supported for vSphere 4.1 onwards.
-	- You can't convert VMware workstations
-	- You can't convert VMs with virtual hard disks connected to an IDE bus
-	- Online conversions aren't supported. You need to power off the VMware VMs.
-	- Anti-virus apps must be supported.
-	- VMware tools must be uninstalled from the guest operating system of the VM.
+- Support for vSphere (ESXi) 4.1, 5.1, 5.5, 6.0
+- You can't convert VMware workstations
+- You can't convert VMs with virtual hard disks connected to an IDE bus
+- Online conversions aren't supported. You need to power off the VMware VMs.
+- Anti-virus apps must be supported.
+- VMware tools must be uninstalled from the guest operating system of the VM.
 - [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
 - Azure Site Recovery currently doesn't have to ability for a direct VMware to Hyper-V conversion. [Read more](https://feedback.azure.com/forums/256299-site-recovery/suggestions/10050060-asr-to-support-vmware-to-hyper-v-protection-migrat) about up-voting this solution.
 
