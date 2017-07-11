@@ -47,6 +47,24 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 	  ALTER COLUMN Version NVARCHAR(255) NULL;  
 	  GO``
 
+## Upgrade sequence for System Center components
+
+If you're running more than one System Center component, they should be upgraded in a specific order:
+1. Service Management Automation
+2. Orchestrator
+3. Service Manager
+4. Data Protection Manager (DPM)
+5. Operations Manager
+6. Configuration Manager
+7. Virtual Machine Manager (VMM)
+8. App Controller
+9. Service Provider Foundation
+10. Windows Azure Pack for Windows Server
+11. Service Bus Clouds
+12. Windows Azure Pack
+13. Service Reporting
+
+
 ## Upgrade a standalone VMM server
 
 1. Uninstall VMM and select to retain the database. Make sure you remove both the VMM management server and the console.
