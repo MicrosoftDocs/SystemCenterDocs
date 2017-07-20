@@ -127,7 +127,7 @@ $VirtualSwitchName="SETswitch"
 #Replace logical switch ID below with the one got from Get-SCLogicalSwitch cmdlet for the switch created in VMM
 $LogicalSwitchId="45b98a8d-1887-4431-9f20-8b9beed853ce"
 
-#Replace the port profile set name with the one created, and associated with the above logical switch in VMM.
+#Replace the port profile set name with the one created and associated with the above logical switch in VMM.
 $PortProfileSetName="Mgmt_UPP"
 
 #Replace uplink port profile set ID with the one got from Get-SCUplinkPortProfileSet for the port profile set created in VMM
