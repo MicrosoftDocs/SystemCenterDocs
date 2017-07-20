@@ -101,7 +101,7 @@ Note that:
 
 > [!NOTE]
 
-> - The following procedure is not applicable for SET, use the script instead.
+> - The following procedure is not applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
 
 > - The conversion will not interrupt network traffic.
 
