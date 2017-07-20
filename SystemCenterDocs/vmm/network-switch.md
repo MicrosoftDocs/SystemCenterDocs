@@ -101,11 +101,11 @@ Note that:
 
 > [!NOTE]
 
-> The following procedure is not applicable for SET, use the script instead.
+> - The following procedure is not applicable for SET, use the script instead.
 
-> The conversion will not interrupt network traffic.
+> - The conversion will not interrupt network traffic.
 
-> If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
+> - If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
 
 
 1. In VMM, click  **Fabric** > **Servers** > **All Hosts**. Right-click the host > **Properties**.
