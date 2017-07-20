@@ -102,9 +102,7 @@ Note that:
 > [!NOTE]
 
 > - The following procedure is not applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
-
 > - The conversion will not interrupt network traffic.
-
 > - If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
 
 
@@ -119,7 +117,7 @@ Note that:
 > [!NOTE]
 
 > Create a logical switch in VMM with the same name as the SET switch that is deployed on the host.
-> Standard switch will be converted to this logical switch after you run the following script.
+> Standard switch will be converted to this logical switch after you run the following script on the host.
 
 
 ```powershell
