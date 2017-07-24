@@ -757,6 +757,20 @@ description: get-from-content-team
                                 </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://technet.microsoft.com/en-us/library/jj654428(v=sc.20).aspx">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Virtual Machine Manager PowerShell</h3>
+                                                <p>Use VMM PowerShell to automate your deployment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
