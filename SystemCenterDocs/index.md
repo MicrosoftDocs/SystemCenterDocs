@@ -640,7 +640,7 @@ description: get-from-content-team
                 </ul>
             </li> -->
             <li>
-                <a href="#SDKs">SDKs</a>
+                <a href="#SDKs">SDKs and PowerShell</a>
                 <ul id="SDKs">
                     <li>
                         <a href="#SDKs-all">all</a>
