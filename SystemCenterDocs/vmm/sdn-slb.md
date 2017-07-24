@@ -172,10 +172,13 @@ Now that the service is deployed, you can configure its properties. you'll need 
 
 1. Click **Fabric** > **Network Service**. Right-click the **network controller** service > **Properties**.
 2. Select the **Services** tab > **Load Balancer Role** > **Associated Service** > **Browse**.
-3. Select the SLB/MUX service instance you created earlier and click **OK**. Select a Run As Account.
-4. For the **Management IP address**, use an IP address from the private VIP pool you created earlier. Optionally specify the IP address ranges to be excluded from the outbound NAT.
+3. Select the SLB/MUX service instance you created earlier. Select a Run As Account.
+4. For the **Management IP address**, use an IP address from the private VIP pool you created earlier.  Optionally specify the IP address ranges to be excluded from the outbound NAT.
+Under **SLBM VIP Pools**, select both the private and public VIP pools for publishing to NC.
 5. Click the SLB/MUX instance listed under **Load Balancer Role** in the wizard. Type the local ASN for your datacenter and details for the devices or BGP peers the SLB/MUX can peer with.
-6. The SLB service instance is now associated with the SLBM service, and you should see the SLB/MUX virtual machine instance with all the settings listed under the **Load Balancer role**.
+6. Click **OK**.
+
+The SLB service instance is now associated with the SLBM service, and you should see the SLB/MUX virtual machine instance with all the settings listed under the **Load Balancer role**.
 
 ## Validate the deployment
 
@@ -196,129 +199,8 @@ After you deploy the SLB/MUX, you can validate the deployment by configuring BGP
     **Note**: Enter an IP from the transit network.
 5. If you create a new VIP pool after peering is complete, you need to advertise all the VIP address pools using the VMM console.
 
-### Provision VIPs for tenant VMs
+After you validate, you can start using the SLB for load balancing. For related information, see [load balance network traffic](sdn-load-balance-network-traffic.md) and [configure NAT rules](sdn-set-up-nat.md).
 
-You can provision VIPs for tenant virtual machines either individually for each VM, or by using the service templates.
-
-In this procedure we'll provision a VIP for individual VMs. This isn't a typical scenario, but is useful for the evaluation purposes. We'll provision a VIP for Two VMs by using the PowerShell, as follows:
-
-1. Deploy the virtual machine instances using a VM template.
-2. Create a VIP template in the VMM console.
-3. Create a VIP and assign it to the VMs using PowerShell.
-
-    **Note**: Currently, VIP creation through console is not supported.
-
-#### Create a VIP template
-
-1. In VMM console click **Fabric** > **Create VIP Template**. Type a template **Name** and optional description.
-2. In **Virtual IP Port**, specify the port to test. In **Backend Port**, specify the port from which you want to map traffic on the backend. Click **Next**.
-3. In **Specify a Template Type** click **Specific**. Select **Microsoft** for **Manufacturer**. Select **Microsoft network controller** for **Model**. Click **Next**.
-4. In **Specify Protocol Options**, select the protocol you want to create a VIP mapping for. The HTTP and HTTPS options are commonly used, but for a simple example you can select the **Custom** option and type  **TCP**. Click **Next**.
-
-    **Note**: Only TCP or HTTP is supported.
-5. Click **Next**.
-6. For the Load Balancing method, select the default method for your organization and click **Next**.
-7. In **Health Monitors**, insert the appropriate values.
-8. Check the settings, and click **Finish** to create the VIP template.
-
-#### Create the VIP with PowerShell
-
-The following sample PowerShell script creates a VIP for Two virtual machines. In the script parameters section, substitute the actual values that match your test environment for the samples used in this script. The script should be run on the VMM server, or on a computer running the VMM Console.
-
-```powershell
-param(
-
-[Parameter(Mandatory=$false)]
-# Name of the Network Controller Network Service
-# This value should be the name you gave the Network Controller service
-# when you on-boarded the Network Controller to VMM
-$LBServiceName = "NC",
-
-[Parameter(Mandatory=$false)]
-# Name of the VM instances to which you want to assign the VIP
-$VipMemberVMNames =  @("WGB-001","WGB-002"),
-
-[Parameter(Mandatory=$false)]
-# VIP address you want to assign from the VIP pool.
-# Pick any VIP that falls within your VIP IP Pool range.
-$VipAddress = "20.20.20.253",
-
-[Parameter(Mandatory=$false)]
-# Name of the VIP VM Network
-$VipNetworkName = "vip",
-
-[Parameter(Mandatory=$false)]
-# The name of the VIP template you created via the VMM Console.
-$VipTemplateName = "ADVWRKS-VIP",
-
-[Parameter(Mandatory=$false)]
-# Arbitrary but good to match the VIP you're using.
-$VipName = "scvmm_20_20_20_253_5001"
-
-)
-
-Import-Module virtualmachinemanager
-
-$lb = Get-scLoadBalancer | where { $_.Service.Name -like $LBServiceName};
-$vipNetwork = get-scvmnetwork -Name $VipNetworkName;
-
-$vipMemberNics = @();
-foreach ($vmName in $VipMemberVMNames)
-{
-$vm = get-scvirtualmachine -Name $vmName;
-#    if ($vm.VirtualNetworkAdapters[0].VMNetwork.ID -ne $vipNetwork.ID)
-#    {
-#        $vm.VirtualNetworkAdapters[0] | set-scvirtualnetworkadapter -VMNetwork $vipNetwork;
-#    }
-
-$vipMemberNics += $vm.VirtualNetworkAdapters[0];
-}
-
-$existingVip = get-scloadbalancervip -Name $VipName
-if ($existingVip -ne $null)
-{
-#    foreach ($mem in $existingVip.VipMembers)
-#    {
-#        $mem | remove-scloadbalancervipmember;
-#    }
-
-$existingVip | remove-scloadbalancervip;
-}
-
-$vipt = get-scloadbalancerviptemplate -Name $VipTemplateName;
-
-$vip = New-SCLoadBalancerVIP -Name $VipName -LoadBalancer $lb
--IPAddress $VipAddress -LoadBalancerVIPTemplate $vipt
--FrontEndVMNetwork $vipNetwork
--BackEndVirtualNetworkAdapters $vipMemberNics;
-Write-Output "Created VIP " $vip;
-
-$vip = get-scloadbalancervip -Name $VipName;
-Write-Output "VIP with members " $vip;
-```
-
-#### Configure inbound NAT rules
-
-To complete the BGP peering process, you need to configure a BGP to peer with your SLB/MUX instance on the router.
-
-- If you use a hardware router, you need to consult the vendor documentation for instructions to setup BGP peering for that device.
-- Check the IP address of the SLB/MUX instance that you deployed earlier. To do this, you can log on to the SLB/MUX virtual machine and run **ipconfig**.
-
-**Use the following procedure to configure inbound NAT rules**:
-
-1. Click **VMs and Services** > **VM Networks** and double-click the network you want to configure with NAT rules.
-2. In the wizard, select **Connectivity**, select **Connect directly to an additional network** and **Network Address Translation (NAT)**.
-3. In **Gateway Device**, select your network controller service name.
-4. Select **Network Address Translation** and choose the public VIP pool. Optionally, provide a VIP address. A VIP address will be automatically assigned if you do not choose one.
-5. In **NAT rules** click **Add** and type the rule name, protocol, incoming port value, and the destination address and port for the rule.
-
-    ![NAT](./media/sdn-slb/sdn-slb2.png)
-
-You should be able to see the recently created NAT rules in the VMM wizard.
-
-#### Outbound NAT rules
-
-Once you create the inbound NAT rules, outbound NAT rules are automatically created.
 
 ## Remove the software load balancer from the SDN fabric
 

@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/10/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -121,6 +121,27 @@ This example uses the generation 2 template.
     - If you aren't using a volume licensed VHDX (or the product key isn't supplied using an answer file), then deployment will stop at the **Product Key** page during VM provisioning. You need to manually access the VM desktop, and either enter the key, or skip it.
 
     - If you want to scale-in or scale-out a deployed SLB instance, read this [blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
+
+## Gateway limits
+The following are the default limits for NC managed gateway:
+- **MaxVMNetworksSupported**= 50
+- **MaxVPNConnectionsPerVMNetwork**= 10
+- **MaxVMSubnetsSupported**= 550
+- **MaxVPNConnectionsSupported**= 250
+
+### Override the gateway limits
+To override the default limits, append the override string to the network controller service connection string and update in VMM.
+
+- **MaxVMNetworksSupported**= followed by the number of VM networks that can be used with this gateway.
+- **MaxVPNConnectionsPerVMNetwork**= followed by the number of VPN Connections that can be created per VM network with this gateway.
+- **MaxVMSubnetsSupported**= followed by the number of VM network subnets  that can be used with this gateway.
+- **MaxVPNConnectionsSupported**= followed by the number of VPN Connections  that can be used with this gateway.
+
+**Example**:
+
+To override the maximum number of VM networks that can be used with the gateway to 100, update the connection string as follows:
+
+ ``serverurl=https://NCCluster.contoso.com;servicename=NC_VMM_RTM; MaxVMNetworksSupported==100``
 
 ## Configure the gateway manager role
 
