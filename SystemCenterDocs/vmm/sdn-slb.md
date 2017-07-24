@@ -172,10 +172,13 @@ Now that the service is deployed, you can configure its properties. you'll need 
 
 1. Click **Fabric** > **Network Service**. Right-click the **network controller** service > **Properties**.
 2. Select the **Services** tab > **Load Balancer Role** > **Associated Service** > **Browse**.
-3. Select the SLB/MUX service instance you created earlier and click **OK**. Select a Run As Account.
-4. For the **Management IP address**, use an IP address from the private VIP pool you created earlier. Optionally specify the IP address ranges to be excluded from the outbound NAT.
+3. Select the SLB/MUX service instance you created earlier. Select a Run As Account.
+4. For the **Management IP address**, use an IP address from the private VIP pool you created earlier.  Optionally specify the IP address ranges to be excluded from the outbound NAT.
+Under **SLBM VIP Pools**, select both the private and public VIP pools for publishing to NC.
 5. Click the SLB/MUX instance listed under **Load Balancer Role** in the wizard. Type the local ASN for your datacenter and details for the devices or BGP peers the SLB/MUX can peer with.
-6. The SLB service instance is now associated with the SLBM service, and you should see the SLB/MUX virtual machine instance with all the settings listed under the **Load Balancer role**.
+6. Click **OK**.
+
+The SLB service instance is now associated with the SLBM service, and you should see the SLB/MUX virtual machine instance with all the settings listed under the **Load Balancer role**.
 
 ## Validate the deployment
 
