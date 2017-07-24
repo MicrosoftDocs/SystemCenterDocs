@@ -674,6 +674,20 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/operationsmanager/vlatest/operationsmanager">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Operations Manager PowerShell</h3>
+                                                <p>Use the Operations Manager PowerShell cmdlets to automate management tasks.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://msdn.microsoft.com/en-us/library/hh855853.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -681,6 +695,20 @@ description: get-from-content-team
                                             <div class="cardText">
                                                 <h3>Orchestrator Integration Toolkit</h3>
                                                 <p>Learn how to build Integration Packs for Orchestrator</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/dataprotectionmanager">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Data Protection Manager PowerShell</h3>
+                                                <p>See the latest PowerShell cmdlets for Data Protection Manager.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -716,6 +744,20 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/servicemanagementautomation/vlatest/microsoft.systemcenter.servicemanagementautomation">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Service Management Automation PowerShell</h3>
+                                                <p>View the Service Management Automation PowerShell cmdlets.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://msdn.microsoft.com/en-us/library/hh965050.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -723,6 +765,20 @@ description: get-from-content-team
                                             <div class="cardText">
                                                 <h3>Service Manager SDK</h3>
                                                 <p>Learn how to access Service Manager programmatically though the Service Manager API.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                             <li>
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/servicemanager/vlatest/servicemanager">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Service Manager PowerShell</h3>
+                                                <p>Use the Service Manager PowerShell cmdlets.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -744,6 +800,20 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/serviceproviderfoundation/vlatest/spfadmin">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Service Provider Foundation PowerShell</h3>
+                                                <p>Use SPF cmdlets to create and manage tenants, their resources, and their claims-based authentication.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://msdn.microsoft.com/en-us/library/jj860311.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -758,7 +828,7 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/library/jj654428(v=sc.20).aspx">
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/VirtualMachineManager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
