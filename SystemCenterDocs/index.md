@@ -646,6 +646,20 @@ description: get-from-content-team
                         <a href="#SDKs-all">all</a>
                         <ul id="SDKs-all" class="cardsZ">
                             <li>
+                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/dataprotectionmanager">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Data Protection Manager PowerShell</h3>
+                                                <p>See the latest PowerShell cmdlets for Data Protection Manager.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://msdn.microsoft.com/en-us/library/jj130093.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -695,20 +709,6 @@ description: get-from-content-team
                                             <div class="cardText">
                                                 <h3>Orchestrator Integration Toolkit</h3>
                                                 <p>Learn how to build Integration Packs for Orchestrator</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/dataprotectionmanager">
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Data Protection Manager PowerShell</h3>
-                                                <p>See the latest PowerShell cmdlets for Data Protection Manager.</p>
                                             </div>
                                         </div>
                                     </div>
