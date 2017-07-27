@@ -901,7 +901,7 @@ description: get-from-content-team
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Blogs</h3>
+                                                <h3>System Center Forums</h3>
                                                 <p><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=dpm">DPM Forum</a></p>
                                                 <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenteroperationsmanager">SCOM Forum</a></p>
                                                 <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenterorchestrator">Orchestrator Forum</a></p>
