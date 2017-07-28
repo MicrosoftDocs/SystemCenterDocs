@@ -7,7 +7,7 @@ ms.prod:  system-center-threshold
 ms.author: cfreeman
 keywords:  
 ms.date:  10/12/2016
-title:  Upgrade-to-System-Center-2016
+title:  Upgrade to System Center 2016
 ms.technology: system-center-2016
 ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 ---
@@ -48,11 +48,10 @@ If you are upgrading an installation of System Center 2012 R2 that includes mult
 7. Service Provider Foundation
 8. Windows Azure Pack
 
-## Component Specific Notes
 
 The following sections provide detailed considerations for each component.
 
-## DPM Upgrade Notes
+## DPM Upgrade
 
 You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](./dpm/install-dpm.md).
 
