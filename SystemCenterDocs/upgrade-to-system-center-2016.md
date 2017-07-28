@@ -54,7 +54,7 @@ The following sections provide detailed considerations for each component.
 
 ### DPM Upgrade Notes
 
-You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](../dpm/get-started/get-dpm-installed.md#BKMK_Prereq).
+You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](../dpm/install-dpm.md#setup_prerequisites).
 
 
 ### Upgrade path for DPM 2016
@@ -73,44 +73,17 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 1. To install DPM, double-click Setup.exe to open the System Center 2016 Wizard.
 2. Under Install, click Data Protection Manager. This starts Setup. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 2016 features, such as Modern Storage (MDS), require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](../dpm/get-started/get-dpm-installed.md).
+Some DPM 2016 features, such as Modern Storage (MDS), require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](../dpm/install-dpm.md).
 
 ### Adding Storage for Modern Storage (MDS)
 
-To store backups efficiently, DPM 2016 uses Volumes. Disks can also be used to continue storing backups like DPM 2012 R2.
+To store backups efficiently, DPM 2016 uses Volumes. Disks can also be used to continue storing backups like they are in DPM 2012 R2. For complete information on adding storage, inluding Volumes, see the article [Add Storage to DPM 2016](../dpm/add-storage.md)
 
 #### Add Volumes and Disks
 If you run DPM 2016 on Windows Server, you can use volumes to store backup data. Volumes provide storage savings and faster backups. You can give the volume a friendly name, and you can change the name. You apply the friendly name while adding the volume, or later by clicking the **Friendly Name** column of the desired volume. You can also use PowerShell to add or change friendly names for volumes.
 
-To add a volume in the administrator console:
-
-1. In the DPM Administrator console, select the **Management** feature > **Disk Storage** > **Add**.
-
-2. In the **Add Disk Storage** dialog, select an available volume > click **Add** > type a friendly name for the volume ** > click **OK**.
-
-      ![Add volume](../media/dpm-2016-add-volume.png)
-
 If you want to add a disk, it must belong to a protection group with legacy storage. Those disks can only be used for those protection groups. If the DPM server doesn't have sources with legacy protection, the disk won't appear.
 See the topic, [Adding disks to increase legacy storage](upgrade-to-system-center-2016.md#adding-disks-to-increase-legacy-storage), for more information on adding disks. You can't give disks a friendly name.
-
-
-#### Assign Workloads to Volumes
-
-DPM 2016 allows the user to specify which kinds of workloads should be assigned to which volumes. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction Logs.
-To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet, Update-DPMDiskStorage.
-
-**Update-DPMDiskStorage**
-
-**Syntax**
-
-`Parameter Set: Volume`
-
-```
-Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
-```
-
-The changes made through PowerShell are reflected in the UI.
-
 
 ### Protecting Data Sources
 To begin protecting data sources, create a Protection Group. The following procedure highlights changes or additions to the **New Protection Group** wizard.
@@ -123,35 +96,35 @@ To create a Protection Group:
 
     The **Create new Protection Group** wizard opens.
 
-  ![Create protection group](../media/dpm-2016-protection-wiz.png)
+  ![Create protection group](./dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-wiz.png)
 
 3. Click **Next** to advance the wizard to the **Select Protection Group Type** screen.  
 4. On the **Select Protection Group Type** screen, select the type of Protection Group to be created and then click **Next**.
 
-  ![Choose server or client](../media/dpm-2016-protection-group-screen2.png)
+  ![Choose server or client](./dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-group-screen2.png)
 
 5. On the **Select Group Members** screen, in the **Available members** pane, DPM lists the members with protection agents. For the purposes of this example, select volume D:\ and E:\ to add them to the **Selected members** pane. Once you have chosen the members for the protection group, click **Next**.
 
-  ![Select group members for protection group](../media/dpm-2016-protection-screen3.png)
+  ![Select group members for protection group](./dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen3.png)
 
 6. On the **Select Data Protection Method** screen, type a name for the **Protection group**, select the protection method(s) and click **Next**.
     If you want short term protection, you must use Disk backup.
 
-  ![Select data protection method](../media/dpm-2016-protection-screen4.png)
+  ![Select data protection method](.dpm//media/upgrade-to-dpm-2016/dpm-2016-protection-screen4.png)
 
 7. On the **Specify Short-Term Goals** screen specify the details for **Retention Range** and **Synchronization Frequency**, and click **Next**. If desired, click **Modify** to change the schedule when recovery points are taken.
 
-  ![Select data protection method](../media/dpm-2016-protection-screen5.png)
+  ![Select data protection method](.dpm//media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
 
 8. The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
 
-  ![Review Disk Storage Allocation](../media/dpm-2016-protection-screen6.png)
+  ![Review Disk Storage Allocation](./dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen6.png)
 
   The storage volumes are determined based on the workload volume allocation (set using PowerShell) and the available storage. You can change the storage volumes by selecting other volumes from the drop-down menu. If you change the **Target Storage**, the **Available disk storage** dynamically changes to reflect the **Free Space** and **Underprovisioned Space**.
 
   The **Underprovisioned Space** column in **Available disk storage**, reflects the amount of additional storage needed if the data sources grow as planned. Use this value to help plan your storage needs to enable smooth backups. If the value is zero, then there are no potential problems with storage in the foreseeable future. If the value is a number other than zero, then you do not have sufficient storage allocated  - based on your protection policy and the data size of your protected members.
 
-  ![Underallocated disk storage](../media/dpm-2016-underprovision-storage.png)
+  ![Underallocated disk storage](./dpm/media/upgrade-to-dpm-2016/dpm-2016-underprovision-storage.png)
 
 The remainder of the New Protection Group wizard is unchanged from DPM 2012 R2. Continue through the wizard to complete creation of your new protection group.  
 
@@ -160,7 +133,7 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
 1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member, and select **Stop protection of member...**.
 
-  ![Stop protection](../media/dpm-2016-stop-protection1.png)
+  ![Stop protection](./dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
     The **Remove from Group** dialog opens.
 
@@ -168,7 +141,7 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
     If you want to immediately return the used disk space to the free storage pool, select **Delete replica on disk**. This will delete the backup data (and recovery points) associated with that member.
 
-    ![Retain data](../media/dpm-2016-retain-data.png)
+    ![Retain data](./dpm/media/upgrade-to-dpm-2016/dpm-2016-retain-data.png)
 
 3. Create a new protection group that uses Modern Storage. and include the unprotected data sources.
 
@@ -185,7 +158,7 @@ If you want to use legacy storage with DPM 2016, it may become necessary to add 
 
     The **Add Disk Storage** dialog opens.
 
-    ![Add disks](../media/dpm-2016-add-disk-storage.png)
+    ![Add disks](./dpm/media/dpm-2016-add-disk-storage.png)
 
 4. In the **Add Disk Storage** dialog, click **Add disks**.
 
