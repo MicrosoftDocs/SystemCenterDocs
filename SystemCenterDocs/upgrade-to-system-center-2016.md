@@ -54,7 +54,7 @@ The following sections provide detailed considerations for each component.
 
 ### DPM Upgrade Notes
 
-You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](./dpm/install-dpm.md#setup_prerequisites).
+You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](./dpm/install-dpm.md).
 
 
 ### Upgrade path for DPM 2016
