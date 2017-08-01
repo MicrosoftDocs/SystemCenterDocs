@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Gatewa
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/24/2017
+ms.date: 08/01/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -53,7 +53,7 @@ The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only o
 
 ##### To copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
 
-1.  From a target management server, open the Operations Manager installation media \SupportTools\<platform\> (amd64, x86 or ia64) directory.
+1.  From a target management server, open the Operations Manager installation media \SupportTools\<platform\> (amd64 or x86) directory.
 
 2.  Copy the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe from the installation media to the Operations Manager installation directory.
 

@@ -5,7 +5,7 @@ description:  This article describes how to manually install the Operations Mana
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/28/2016
+ms.date: 08/01/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -102,7 +102,7 @@ MOMAgent.msi can be found in the Operations Manager installation media and in th
     |ACTIONSDOMAIN= *DomainName*|Sets the domain for the Agent Action account identified with the ACTIONSUSER parameter.|
     |ACTIONSPASSWORD= *Password*|The password for the user identified with the ACTIONSUSER parameter.|
     |NOAPM=1|Optional parameter. Installs the Operations Manager agent without .NET Application Performance Monitoring. If you are using AVIcode 5.7, NOAPM=1 leaves the AVIcode agent in place. If you are using AVIcode 5.7 and install the Operations Manager agent by using momagent.msi without NOAPM=1, the AVIcode agent will not work correctly and an alert will be generated.|
-    |AcceptEndUserLicenseAgreement=1|Used to specify that you accept the End User License Agreement (EULA).|
+    |AcceptEndUserLicenseAgreement=1|Used to specify that you accept the End User License Agreement (EULA). This parameter is required when you use /qn to perform a fully silent installation of the agent.|
 
 
 ## Examples of installing the agent from the command line
@@ -114,7 +114,7 @@ The following examples show different ways in which you can install the MOMAgent
 The following example shows a fresh installation of an agent and uses a specific Action Account.
 
 ```
-msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp% MOMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword> USE_MANUALLY_SPECIFIED_SETTINGS=1
+msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword> USE_MANUALLY_SPECIFIED_SETTINGS=1 AcceptEndUserLicenseAgreement=1
 
 ```
 
@@ -123,7 +123,7 @@ msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp% MOMAgentinstall.log U
 The following example shows a fresh installation of an agent and uses the Local System for the Action Account.
 
 ```
-msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=1 USE_MANUALLY_SPECIFIED_SETTINGS=1
+msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentinstall.log USE_SETTINGS_FROM_AD=0 MANAGEMENT_GROUP=<MG_Name> MANAGEMENT_SERVER_DNS=<MSDNSName> MANAGEMENT_SERVER_AD_NAME=<MSDNSName> ACTIONS_USE_COMPUTER_ACCOUNT=1 USE_MANUALLY_SPECIFIED_SETTINGS=1 AcceptEndUserLicenseAgreement=1
 
 ```
 
@@ -132,7 +132,7 @@ msiexec.exe /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentinstall.log U
 The following example installs an agent by using Active Directory and a specific Action Account.
 
 ```
-msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%mominst.NoGroupSpecified.log USE_SETTINGS_FROM_AD=1 USE_MANUALLY_SPECIFIED_SETTINGS=0 ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword>
+msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentInstall.log USE_SETTINGS_FROM_AD=1 USE_MANUALLY_SPECIFIED_SETTINGS=0 ACTIONS_USE_COMPUTER_ACCOUNT=0 ACTIONSUSER=<AccountUser> ACTIONSDOMAIN=<AccountDomain> ACTIONSPASSWORD=<AccountPassword> AcceptEndUserLicenseAgreement=1
 
 ```
 
@@ -141,7 +141,7 @@ msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%mominst.NoGroupSpecified.l
 The following example installs an agent by using Active Directory and the Local system account for the Action Account.
 
 ```
-msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\ mominst.NoGroupSpecified.log USE_SETTINGS_FROM_AD=1 ACTIONS_USE_COMPUTER_ACCOUNT=1 USE_MANUALLY_SPECIFIED_SETTINGS=0
+msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentInstall.log USE_SETTINGS_FROM_AD=1 ACTIONS_USE_COMPUTER_ACCOUNT=1 USE_MANUALLY_SPECIFIED_SETTINGS=0 AcceptEndUserLicenseAgreement=1
 
 ```
 
@@ -150,7 +150,7 @@ msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\ mominst.NoGroupSpecified
 The following example upgrades an agent.
 
 ```
-msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentUpgrade.log
+msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentUpgrade.log AcceptEndUserLicenseAgreement=1
 
 ```
 
@@ -159,7 +159,7 @@ msiexec /i path\Directory\MOMAgent.msi /qn /l*v %temp%\MOMAgentUpgrade.log
 The following example uninstalls an agent.
 
 ```
-msiexec /x path\Directory\MOMAgent.msi /qn %temp%\MOMAgentUpgrade.log
+msiexec /x path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentUninstall.log
 
 ```
 
