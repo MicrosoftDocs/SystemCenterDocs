@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Gatewa
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/24/2017
+ms.date: 08/01/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -53,7 +53,7 @@ The Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool is needed only o
 
 ##### To copy Microsoft.EnterpriseManagement.GatewayApprovalTool.exe to management servers
 
-1.  From a target management server, open the Operations Manager installation media \SupportTools\<platform\> (amd64, x86 or ia64) directory.
+1.  From a target management server, open the Operations Manager installation media \SupportTools\ (amd64 or x86) directory.
 
 2.  Copy the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe from the installation media to the Operations Manager installation directory.
 
@@ -124,7 +124,7 @@ This procedure installs the gateway server. The server that is to be the gateway
 3.  Run the following command, where *path\Directory* is the location of the Momgateway.msi, and *path\Logs* is the location where you want to save the log file. Momgateway.msi can be found in the Operations Manager installation media.
 
     ```
-    %WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v path\Logs\GatewayInstall.log
+    %WinDir%\System32\msiexec.exe /i path\Directory\MOMGateway.msi /qn /l*v C:\Logs\GatewayInstall.log
     ADDLOCAL=MOMGateway
     MANAGEMENT_GROUP="<ManagementGroupName>"
     IS_ROOT_HEALTH_SERVER=0
@@ -144,7 +144,7 @@ Perform this operation on each gateway server, management server, and computer t
 
 ##### To import computer certificates by using MOMCertImport.exe
 
-1.  Copy the MOMCertImport.exe tool from the installation media \SupportTools\\<platform\> (amd64, x86 or ia64) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
+1.  Copy the MOMCertImport.exe tool from the installation media \SupportTools\ (amd64 or x86) directory to the root of the target server or to the Operations Manager installation directory if the target server is a management server.
 
 2.  As an administrator, open a Command Prompt window and change the directory to the directory where MOMCertImport.exe is, and then run `momcertimport.exe /SubjectName <certificate subject name>`. This makes the certificate usable by Operations Manager.
 
