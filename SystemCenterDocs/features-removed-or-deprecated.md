@@ -60,3 +60,18 @@ You will not be able to either create or import a service templates with a Serve
 **Status in System Center 2016:** Removed
 
 **Replacement:** Integrate your Windows Azure Pack installation with a third-party billing and utilization system.
+
+
+## Next Steps
+
+See [Upgrade to System Center 2016](upgrade-to-system-center-2016.md).
+Go to the [System Center documentation center](index.md), to see all technologies in System Center 2016.
+See the introductory information or important concepts about each of the technologies in System Center 2016. 
+
+* [Data Protection Manager](./dpm/dpm-overview.md)
+* [Operations Manager](./scom/key-concepts.md)
+* [Orchestrator](./orchestrator/learn-about-orchestrator.md)
+* [Service Manager](./scsm/service-manager.md)
+* [Service Management Automation](./sma/overview-of-service-management-automation.md)
+* [Virtual Machine Manager](./vmm/overview.md)
+* [Service Provider Foundation](./spf/overview.md)
