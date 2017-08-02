@@ -5,7 +5,7 @@ description: This article describes how to upgrade from an evaluation version of
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 08/02/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -23,10 +23,12 @@ To upgrade from an evaluation version of Operations Manager to a licensed versio
 > [!NOTE] 
 > To check whether Operations Manager is licensed, in Operations console, click Help, and then click About. In the **Product version** field, it will show the version **(Retail)** after the version information.  If it shows **(Eval)**, then your installation is an evaluation version.  
 
+Before proceeding, you need to be a member of the Operations Manager administrators role, has local administrative credentials on the management server, and is granted temporary membership of the sysadmin fixed server role on the SQL Server instance hosting the Operations Manager operational database.  
+
 ## To upgrade from the evaluation version of Operations Manager to a licensed version
 
 > [!NOTE]
-> Note To use the Set-SCOMLicense cmdlet, you must use elevated permissions (Run as Administrator).
+> Note To use the Set-SCOMLicense cmdlet, you must use elevated permissions (Run as Administrator).  
 
 1. Open PowerShell as an administrator.
 2. Load the **OperationsManager** module (import-module operationsmanager).
