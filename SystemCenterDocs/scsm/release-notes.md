@@ -7,7 +7,7 @@ ms.author: banders
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:
-ms.date: 06/27/2017
+ms.date: 08/03/2017
 title:  Release Notes for System Center 2016 - Service Manager
 ---
 
@@ -150,6 +150,12 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
 
 **Workaround:** None, however you can use a different Service Manager console to create the VMM connector.
+
+## Service Manager console installed on an Operations Manager management server causes an error
+
+**Description:** Installing the Service Manager console on a Operations Manager management server is not supported.
+
+**Workaround:** None.
 
 
 ## Data Warehouse Setup Might Fail if the Database or Log Path Includes a Single Quotation Mark Character

@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
+ms.date: 08/03/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -20,6 +20,10 @@ ms.assetid: ee5b265f-1ffa-416d-a038-db9d06efc942
 >Applies To: System Center 2016 - Service Manager
 
 This topic contains information to be aware of when you are combining Operations Manager and Service Manager.  
+
+## Service Manager console
+
+Installing the Service Manager console on a Operations Manager management server is not supported. If you install the Service Manager console on an Operations Manager management server, then the System Center Operations Manager SDK service stops.
 
 ## Management group names
 
@@ -51,7 +55,7 @@ System Center 2016 - Service Manager includes a System Center 2016 - Operations 
 
 To validate that the Operations Manager Agent was installed, open **Control Panel** and verify that the Operations Manager Agent is present.
 
-### Operations Manager agents 
+### Operations Manager agents
 
 If you want to monitor a server that will host Self\-Service Portal components or the Service Manager console that does not already host other Service Manager roles, then you should deploy the Operations Manager agent to the server before you install the Self\-Service portal or the Service Manager console. After you've installed either, you should give special consideration to removing the portal or Self Service console. If an Operations Manager agent is installed on the server that hosts the portal or console and you remove the either, then the Operations Manager agent is also removed.  
 
