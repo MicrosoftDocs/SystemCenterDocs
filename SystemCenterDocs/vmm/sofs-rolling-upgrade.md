@@ -26,7 +26,6 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 - **Returns the node to VMM**: Brings the node back under VMM management and installs the VMM agent.
 - **Returns the node to the cluster**: Adds the node back into the SOFS cluster, brings it out of maintenance mode, and returns virtual machine workloads to it.
 
-
 ## Before you start
 
 - The cluster must be managed by VMM.
@@ -35,18 +34,14 @@ This article describes how to perform a cluster rolling upgrade of SOFS managed 
 - You can upgrade nodes that weren't originally provisioned using bare metal as long as those nodes meet bare metal requirements such as BMC. You'll need to provide this information in the upgrade wizard.
 - The VMM library needs a virtual hard disk configured with Windows Server 2016.
 
-
 ## Run the upgrade
 
 1. Click **Fabric** > **Storage** > **File Servers**. Right-click the SOFS > **Upgrade Cluster**.
-2. In the Upgrade Wizard > **Nodes**, click the nodes you want to upgrade or **Select All**. Then click **Physical computer profile**, and select the profile for the nodes.
-3. In **BMC Configuration** select the Run As account with permissions to access the BMC, or create a new account. In **Out-of-band management protocol** click the protocol that the BMCs use. To use DCMI click **IPMI**. DCMI is supported even though it's not listed. Make sure the correct port is listed.
-4. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal BMC settings might not be complete. Fill in the missing information.
+1. In the Upgrade Wizard > **Nodes**, click the nodes you want to upgrade or **Select All**. Then click **Physical computer profile**, and select the profile for the nodes.
+1. In **BMC Configuration** select the Run As account with permissions to access the BMC, or create a new account. In **Out-of-band management protocol** click the protocol that the BMCs use. To use DCMI click **IPMI**. DCMI is supported even though it's not listed. Make sure the correct port is listed.
+1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings it displays a **Missing Settings** alert for the node. For example, if the node wasn't provisioned by bare metal BMC settings might not be complete. Fill in the missing information.
+    - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name, and you want to make sure the new name is not in use.
+    - In the network adapter configuration you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter select a logical network and an IP subnet if applicable. If the subnet contains and address pool you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise type an IP address within the logical network.
+1. In **Summary**, click **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all of the SOFS nodes are running Windows Server 2016. The wizard upgrades the cluster functional level to Windows Server 2016.
 
-	- Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name, and you want to make sure the new name is not in use.
-	- In the network adapter configuration you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter select a logical network and an IP subnet if applicable. If the subnet contains and address pool you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise type an IP address within the logical network.
-
-5. In **Summary**, click **Finish** to begin the upgrade. If the wizard finishes, the node upgrades successfully so that all of the SOFS nodes are running Windows Server 2016. The wizard upgrades the cluster functional level to Windows Server 2016.
-
-
-If for some reason you need to update the functional level of a SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2012 R2 cluster.
+If you need to update the functional level of a SOFS that was upgraded outside VMM, you can do that by right-clicking the **Files Servers** > SOFS name > **Update Version**. This might be necessary if you upgraded the SOFS nodes before adding it to the VMM fabric, but SOFS is still functioning as a Windows Server 2012 R2 cluster.
