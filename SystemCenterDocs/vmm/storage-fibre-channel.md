@@ -5,7 +5,7 @@ description: This article describes how to set up Hyper-V virtual fibre channel 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/03/2017
+ms.date:  08/04/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -21,7 +21,7 @@ Virtual fibre channel provides Hyper-V VMs with direct connectivity to fibre cha
 ## Before you start
 
 - VMM supports the following virtual fibre channel deployments:
-  - Single storage array connected to a single fabric (comprised of single or multiple switches) connected to a single virtual SAN (vSAN). A vSAN is a named group of physical fibre channel Host Bus Adapter (HBA) ports on a host computer that a VMs connects to in order to access fibre channel storage devices.
+  - Single storage array connected to a single fabric (comprised of single or multiple switches) connected to a single virtual SAN (vSAN). A vSAN is a named group of physical fibre channel Host Bus Adapter (HBA) ports on a host computer that VMs connect to access fibre channel storage devices.
   - Single storage array connected to multiple fabrics (comprised of single or multiple switches per fabric) that are connected to a single vSAN.
   - Multiple storage arrays connected to a single fabric (comprised of single or multiple switches) that is connected to a single vSAN.
   - Multiple storage arrays connected to multiple fabrics (comprised of single or multiple switches per fabric) that are connected to multiple vSANs. This configuration provides dual-redundant paths to storage arrays.
@@ -51,7 +51,7 @@ Here's what you need to do:
 1. Click **Fabric** > **Storage** > **Add Resources** > **Storage Devices**.
 1. In **Add Storage Devices Wizard** > **Select Provider Type**  select **Fibre Channel fabric discovered and managed by a SMI-S provider**.
 1. In **Specify Discovery Scope** specify the IP address or FQDN, and the port number of the provider.
-1. If you're using SMI-S specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI WMI** and add the IP address/FQDN and port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML.
+1. If you're using SMI-S specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI** and add the IP address/FQDN and port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML.
 1. Specify an account for connecting to the provider.
 1. In **Gather Information** VMM automatically discovers and imports the fibre channel fabric information. If the discovery process succeeds, the discovered fabric name, switches and fabric World Wide Node Names (WWNN) are listed on the page. When the process successfully completes, click **Next**. To retry the discovery process for an unsuccessful attempt, click **Scan Provider**.
 1. If you selected the option to use an SSL connection for an SMI-S provider note that:
@@ -68,10 +68,10 @@ You can create vSANs and assign HBAs to it. One or more vSANs can be created for
 
 Virtual Host Bus Adapters (vHBAs) represent the virtualization of fibre channel HBAs, and are used by VMs to connect with vSANs. Each vHBA has a World Wide Node Name (WWNN), which is different than the host HBA WWNN. Using N_Port ID Virtualization (NPIV), a host computer HBA can map to multiple vHBAs. HBA ports assigned to a vSAN can be added or removed as needed.
 
-1. Click **Fabric** ight-click the applicable host >  **Properties** > **Hardware** > **New Virtual SAN**.
+1. Click **Fabric** right-click the applicable host >  **Properties** > **Hardware** > **New Virtual SAN**.
 1. In **New Virtual SAN** specify a name and optional describes. In **Fibre Channel adapters**, select the check boxes next to the fibre channel adapters (HBAs) that you want to assign to the vSAN. Click **OK**.
 1. If you want to edit vSAN port assignments, in **Properties** > **Hardware** > **FC Virtual SAN** > **Fibre Channel adapter details** select or unselect the HBA ports.
-1. If you want to add a new vHBA and assign it to a vSAN, click **Properties** > H**ardware Configuration** > **New** > **Fibre Channel Adapter**. In **Virtual SAN name** select a vSAN to assign it. Specify whether you want to assign port settings for the vHBA statically or dynamically.
+1. If you want to add a new vHBA and assign it to a vSAN, click **Properties** > **Hardware Configuration** > **New** > **Fibre Channel Adapter**. In **Virtual SAN name** select a vSAN to assign it. Specify whether you want to assign port settings for the vHBA statically or dynamically.
 1. If you want to change the global default port settings for vHBA click **Properties** > **Hardware** > **Global Settings** and modify settings in **Fibre Channel adapter details**. Note that changing these settings does not affect vHBA ports that have already been created. To apply a new setting to an existing vHBA port, recreate the port by removing it and then adding it again.
 
 ## Create a VM template
