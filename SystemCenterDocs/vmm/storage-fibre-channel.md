@@ -29,7 +29,7 @@ Virtual fibre channel provides Hyper-V VMs with direct connectivity to fibre cha
 Here's what you need:
 
 - One or more vSANs can be created for each host computer. A vSAN can only contain HBAs from a single fabric.
-- Storage arrays, switches and HBAs must have the latest firmware and drivers installed.
+- Storage arrays, switches, and HBAs must have the latest firmware and drivers installed.
 - Make sure that storage arrays can present logical units (LUs).
 - Enable NPIV on fibre channel switches and HBAs.
 - Hyper-V hosts must be running at least Windows Server 2012.
@@ -41,25 +41,25 @@ Here's what you need to do:
 
 1. Discover and classify fibre channel fabrics.
 1. Create vSANs for each host computer by grouping host HBA ports.
-1. Create a VM that can access the virtual fibre vhannel storage.
+1. Create a VM that can access the virtual fibre channel storage.
 1. Create zones that connect each host or VM vHBA to a storage array. Zones are used to connect a fibre channel array to a host computer VM.
-1. Create LUNs and register them for a  host, VM, or service tier.
-1. Create a service template, add VM templates to it. For each vHBA specify dynamic or static WWN assignments and select the classification. Create and deploy a service tier based on the service template, to access Virtual Fibre Channel storage. You zone a fibre channel array to the tier, add a disk, create a LUN and register the LUN to the tier.
+1. Create LUNs and register them for a host, VM, or service tier.
+1. Create a service template, add VM templates to it. For each vHBA, specify dynamic or static WWN assignments and select the classification. Create and deploy a service tier based on the service template, to access Virtual Fibre Channel storage. You zone a fibre channel array to the tier, add a disk, create a LUN, and register the LUN to the tier.
 
 ## Discover and classify fibre channel fabrics
 
 1. Click **Fabric** > **Storage** > **Add Resources** > **Storage Devices**.
-1. In **Add Storage Devices Wizard** > **Select Provider Type**  select **Fibre Channel fabric discovered and managed by a SMI-S provider**.
+1. In **Add Storage Devices Wizard** > **Select Provider Type**  select **Fibre Channel fabric discovered and managed by an SMI-S provider**.
 1. In **Specify Discovery Scope** specify the IP address or FQDN, and the port number of the provider.
-1. If you're using SMI-S specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI** and add the IP address/FQDN and port used to connect to the provider on the remote server. You can enable SSL if you're using CIMXML.
+1. If you're using SMI-S specify whether the provider uses **SMI-S CIMXML** or **SMI-S WMI** and add the IP address/FQDN and port used to connect to the provider on the remote server. If you're using CIMXML, you can enable SSL.
 1. Specify an account for connecting to the provider.
-1. In **Gather Information** VMM automatically discovers and imports the fibre channel fabric information. If the discovery process succeeds, the discovered fabric name, switches and fabric World Wide Node Names (WWNN) are listed on the page. When the process successfully completes, click **Next**. To retry the discovery process for an unsuccessful attempt, click **Scan Provider**.
+1. In **Gather Information**, VMM automatically discovers and imports the fibre channel fabric information. If the discovery process succeeds, the discovered fabric name, switches, and fabric World Wide Node Names (WWNN) are listed on the page. When the process successfully completes, click **Next**. To retry the discovery process for an unsuccessful attempt, click **Scan Provider**.
 1. If you selected the option to use an SSL connection for an SMI-S provider note that:
-    - During discovery, the **Import Certificate** dialog box appears. Check settings and click **Import**. By default the certificate common name (CN) will be verified. This might cause storage discovery to fail if there's no CN or it doesn't match.
-    - If discovery fails because the CN disable CN verification in the registry on the VMM server. In the registry go to **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Storage Management/** and create a new DWORD value - **DisableHttpsCommonNameCheck**. Set the value to 1.
+    - During discovery, the **Import Certificate** dialog box appears. Check settings and click **Import**. By default, the certificate's common name (CN) is verified. Storage discovery may fail if there's no CN or it doesn't match.
+    - If discovery fails because the CN disable CN verification in the registry on the VMM server. In the registry, go to **HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Storage Management/** and create a new DWORD value - **DisableHttpsCommonNameCheck**. Set the value to 1.
 1. On the **Fibre Channel Fabrics** page, do the following for each storage fabric that requires a classification:
     1. In the **Storage Device** column, select the check box next to a fibre channel fabric that you want VMM to manage.
-    1. In the **Classification** column, select the classification that you want to assign to the fabric. Note that the fabric classification task is separate from that for storage classification, although the concept is similar.
+    1. In the **Classification** column, select the classification that you want to assign to the fabric. The fabric classification task is separate from that for storage classification, although the concept is similar.
 1. On the **Summary** page, confirm the settings, and then click **Finish**.
 
 ## Create vSANs and assign HBAs
@@ -79,7 +79,7 @@ Virtual Host Bus Adapters (vHBAs) represent the virtualization of fibre channel 
 vHBAs are used by VMs to connect with vSANs. In order for vHBAs to connect to vSANs, they first must be added to the hardware profile of a VM template.
 
 1. Use the **Create Virtual Machine Wizard** to create a new VM, and then add a new fibre channel adapter (vHBA) to the **Configure Hardware** page of the VM template. For each vHBA that you create, specify dynamic or static WWPN assignments and select the fabric classification.
-1. Still using the **Create Virtual Machine Wizard**, place and deploy the VM to a destination host. Make sure the host contains a virtual SAN that matches the storage fabric. .
+1. Still using the **Create Virtual Machine Wizard**, place and deploy the VM to a destination host. Make sure the host contains a virtual SAN that matches the storage fabric.
 
 After you deploy the VM to a host, you can zone a virtual fibre channel storage array to the VM. Then, you create a LUN and register (unmask) it to the VM.
 
