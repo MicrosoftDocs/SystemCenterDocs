@@ -18,7 +18,7 @@ Use storage classifications to abstract storage devices in the System Center 201
 
 Classifications are often based on storage types or performance characteristics. For example, you could create:
 
-**Name** | **Description** 
+**Name** | **Description**
 --- | ---
 **GOLD** | Storage pool based on solid-state drives (SSDs) that delivers high performance for I/O intensive applications
 **SILVER** | Fibre Channel Serial Attached SCSI (SAS) storage (RAID 5)

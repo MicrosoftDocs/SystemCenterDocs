@@ -19,7 +19,6 @@ ms.technology:  virtual-machine-manager
 
 Use this article to learn about System Center 2016 - Virtual Machine Manager (VMM) profiles, and how to add them to the VMM library.
 
-
 A VMM profile contains settings that are used when you create a new virtual machine or virtual machine template. Profiles make deployment easier by helping you to quickly create VMs with consistent settings. Profiles can be used to restrict the settings that are available to self-service users who create new VMs.
 
 **Profile** | **Details** | **Used for VM templates** | **Used for service templates**
@@ -87,7 +86,6 @@ The exact settings for a capability profile will depend on the profile in use. A
 6. Complete the wizard. After you've created the profile you can select and enable it in V**Ms and Services** > cloud name > **Properties** > **Capability Profiles**.
 7. Remember that other profiles and templates used for VMs in the cloud will need to match the capability profile requirements and the high availability setting.  
 
-
 ## Create a physical computer profile
 
 VMM can are used to provision physical computers into Hyper-V hosts or into a scale-out file server (SOFS). When you're provisioning physical computers you can use a physical computer profile to specify settings for the machine. Create a physical computer profile as follows:
@@ -101,7 +99,6 @@ VMM can are used to provision physical computers into Hyper-V hosts or into a sc
 5. In Driver filter specify the driver files to be applied to the operating system during deployment. You can filter drives with plug and play IDs or with specific tags. With the tag option you'll need to add driver files to the library and assign corresponding tags to the library share before deployment.
 3. In **OS Configuration** set up the domain, the password for the local admin, name and organization, product team, time zone, and an answer file for additional setup options. In GUIRunOnce you can specify commands or scripts that should run the first time a user signs into the machine.
 4. Verify the settings in **Summary** and click **Finish**. You can check that the physical computer profile in **Library** > **Profiles** > **Physical Computer Profiles**.
-
 
 ## Next steps
 

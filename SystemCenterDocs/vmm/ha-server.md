@@ -5,7 +5,7 @@ description: This article provides instructions for deploying the VMM server in 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  08/04/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -17,12 +17,10 @@ ms.technology:  virtual-machine-manager
 
 This article describes the steps for deploying a highly available System Center 2016 - Virtual Machine Manager (VMM) server.
 
-
-### Before you start
+## Before you start
 
 - Read the [planning steps](plan-ha-install.md) for a highly available deployment.
 - This procedure presumes you're setting up a single failover cluster with two or more file servers.
-
 
 ## Set up the failover cluster
 
@@ -48,7 +46,7 @@ This article describes the steps for deploying a highly available System Center 
 5. IN **EULA and CEIP** accept the EULA and specify whether you want to participate in CEIP.
 6. In **Installation Location** accept the default settings.
 7. In **Prerequisites** VMMs check whether prereqs are in place and will install missing components. If you don't have the Windows ADK installed you'll need to download and install it.
-8. In **Database configuration** specify the database you'll use for VMM. The database should be highly available and deployed in a separate failover cluster. This dialog appears if VMM isn't clustered, or if it's clustered but not using AlwaysOn Availability Groups. Specify the cluster name.
+8. In **Database configuration** specify the database you'll use for VMM. The database should be highly available and deployed in a separate failover cluster. This dialog appears if VMM isn't clustered, or if it's clustered but not using Always On Availability Groups. Specify the cluster name.
 9. In **Cluster configuration** specify the name of the VMM cluster for example **HAVMMM**.
 9. In **Configure service account and distributed key management** specify the service account and key location you created earlier. VMM Run As accounts are stored as encrypted in the VMM database. For a high availability deployment you'll need to access encrypted keys from a central location so you should have created a distributed key management container in Active Directory before you ran setup.
 10. In **Port configuration** modify port settings if you need to.
