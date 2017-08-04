@@ -23,13 +23,12 @@ Verify the following:
 
 - **VMM management server**: Verify [hardware](../system-requirements/minimum-hardware-recommendations.md) and [operating system](../system-requirements/operating-systems-compatibility.md) requirements.
 - **SQL Server**: Review supported [SQL Server versions](../system-requirements/sql-server-version-compatibility.md)
-- **VMM console**: Review [operating system requirements ](../system-requirements/client-operating-system-compatibility.md) and if you want to run the VMM console on a separate computer.
+- **VMM console**: Review [operating system requirements](../system-requirements/client-operating-system-compatibility.md) and if you want to run the VMM console on a separate computer.
 - **VMM library**: Review the [hardware requirements](../system-requirements/minimum-hardware-recommendations.md) for remote VMM library shares.
 - **Virtualization hosts**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](manage-vmware-hosts.md) for VMware servers.
 - **Other fabric servers**: Review the [supported operating systems](../system-requirements/operating-systems-compatibility.md) for update and PXE (used for bare metal deployment) servers.
 
-
-## Deployment requirements
+## Additonal deployment requirements
 
 **Component** | **Details**
 --- | ---
@@ -64,54 +63,40 @@ If you can't do this, you can also register the SPN during VMM installation. A d
 
 When you install VMM with this user account SPN will be registered.
 
-
 ## VMM management server
 
-- You can't run the VMM management server on a Nano server
+- You can't run the VMM management server on Nano server
 - The management server computer name cannot exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).
 - If you want to manage more than 150 hosts, we recommend that you use a dedicated computer for the VMM management server and do the following:
-    - Add one or more remote computers as library servers, and do not use the default library share on the VMM management server.
-    - Don't run the SQL Server instance on the VMM management server.
+  - Add one or more remote computers as library servers, and do not use the default library share on the VMM management server.
+  - Don't run the SQL Server instance on the VMM management server.
 - For high availability, the VMM management server can be installed on a failover cluster. [Learn more](~/vmm/plan-ha-install.md).
 
 ## SQL Server and database
 
 - The instance of SQL Server that you are using must allow for case-insensitive database objects.
-
 - The SQL Server’s computer name cannot exceed 15 characters in length.
-
 - If the VMM management server and the SQL Server computer are not members of the same Active Directory domain, then a two-way trust must exist between the two domains.
-
 - When you install SQL Server, select the **Database Engine Services** and **Management Tools - Complete** features.
-
 - You can perform an in-place upgrade to a supported version of SQL Server (without moving the VMM database). Make sure no jobs are running when you perform the upgrade, or jobs may fail and may need to be restarted manually.
-
 - For the VMM database, for better performance, do not store database files on the disk that is used for the operating system.
-
 - If you are using Software Defined Networking (SDN) in VMM, then all networking information is stored in the VMM database. Because of this, you might want to consider high availability for the VMM database, using the following guidelines:
-
-    - Failover clustering is supported and is the recommended configuration for availability within a single geographical area or datacenter. [Read more](http://technet.microsoft.com/library/ms189134.aspx).
-
-    - Use of AlwaysOn Availability Groups in Microsoft SQL Server is supported, but it's important to review the differences between the two availability modes, synchronous-commit and asynchronous-commit. [Learn more](http://msdn.microsoft.com/library/ff877884.aspx#AvailabilityModes).
-
-        - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege.
-
-        - You can use synchronous-commit mode as a configuration for remote-site availability scenarios.
-
+  - Failover clustering is supported and is the recommended configuration for availability within a single geographical area or datacenter. [Read more](http://technet.microsoft.com/library/ms189134.aspx).
+  - Use of Always On Availability Groups in Microsoft SQL Server is supported, but it's important to review the differences between the two availability modes, synchronous-commit and asynchronous-commit. [Learn more](http://msdn.microsoft.com/library/ff877884.aspx#AvailabilityModes).
+    - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege.
+    - You can use synchronous-commit mode as a configuration for remote-site availability scenarios.
 - The SQL Server service must use an account that has permission to access Active Directory Domain Services (AD DS). For example, you can specify the Local System Account, or a domain user account. Do not specify a local user account.
-
 - You don't need to configure collation. During deployment, Setup automatically configures CI collation according to the language of the server operating system.
-
 - Dynamic port is supported.
 - If you want to create the VMM database prior to VMM installation:
-	- Make sure you have permissions or create a SQL database, or ask the SQL Server admin to do it.
-	- Configure the database as follows:
+  - Make sure you have permissions or create a SQL database, or ask the SQL Server admin to do it.
+  - Configure the database as follows:
 
-		1. Create a new database with settings: Name: VirtualManagerDB; Collation: Latin1_General_100_CI_AS, but aligned with the specific SQL Server instance collation.
-		2. Grant db_owner permissions for the database to the VMM service account.
-		3. In VMM setup you'll select the option to use an existing database and specify the database details and VMM service account as the database user.
+    1. Create a new database with settings: Name: VirtualManagerDB; Collation: Latin1_General_100_CI_AS, but aligned with the specific SQL Server instance collation.
+    1. Grant db_owner permissions for the database to the VMM service account.
+    1. In VMM setup you'll select the option to use an existing database and specify the database details and VMM service account as the database user.
 
 ## Library server
 
@@ -120,7 +105,6 @@ When you install VMM with this user account SPN will be registered.
 - If you want to manage Virtual hard disks in the .vhdx file format, the VMM library server must run Windows Server 2012 or later.
 - VMM does not provide a method for replicating physical files in the VMM library or a method for transferring metadata for objects that are stored in the VMM database. Instead, if necessary, you need to replicate physical files outside of VMM, and you need to transfer metadata by using scripts or other means.
 - VMM does not support file servers that are configured with the case-sensitive option for Windows Services for UNIX, because the Network File System (NFS) case control is set to **Ignore**.
-
 
 ## Account and domain requirements
 
@@ -144,7 +128,6 @@ To ensure that VMM retains encrypted data across moves, you can use distributed 
 - You create the container in the same domain as the user account with which you are installing VMM. If you specify that the VMM service uses a domain account, that account must be in the same domain. For example, if the installation account and the service account are both in the corp.contoso.com domain, you must create the container in that domain. So, if you want to create a container that is named VMMDKM, you specify the container location as CN=VMMDKM,DC=corp,DC=contoso,DC=com. The account with which you're installing VMM needs Full Control permissions to the container in AD DS. The permissions must apply to this object, and to all descendant objects.
 - If you are installing a highly available VMM management server, you must use distributed key management to store encryption keys in Active Directory. You need distributed key management because if VMM fails over to a node, that node will need access to the encryption keys.
 - When you configure the service account and distributed key in setup, you must type the location of the container in AD DS, for example: CN=VMMDKM,DC=corp,DC=contoso,DC=com
-
 
 ## Next steps
 

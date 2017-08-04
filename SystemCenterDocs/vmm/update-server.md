@@ -25,7 +25,7 @@ This article explains the prerequisites, how to add a WSUS server to the fabric,
 
 ## Before you start
 
-- A WSUS server must be running a 64-bit edition of Windows Server Update Service (WSUS) 4.0 or later.
+- A WSUS server must be running Windows Server Update Service (WSUS) 4.0 or later.
 - The WSUS server must be running Windows Server 2012 R2, or Windows Server 2016, with the latest updates.
 - The WSUS server must be in the same domain as the VMM server, or in a domain with full trust.
 - VMM can use a WSUS root server or downstream WSUS server. You can't use a WSUS replica server.
@@ -34,7 +34,6 @@ This article explains the prerequisites, how to add a WSUS server to the fabric,
 - VMM can work with System Center Updates Publisher but only full content updates are supported. Metadata-only updates can't be added to a baseline.
 - After you add a WSUS server to VMM you should manage it in the VMM console and not in the WSUS console. In VMM, you update the properties of the update server to configure a proxy server for synchronizations and to change the update categories, products, and supported languages that are synchronized by the WSUS server.
 - In VMM, administrators and delegated administrators manage fabric updates. Only administrators can manage the update server and synchronize updates. Delegated administrators can scan and remediate updates on computers that are within the scope of their user roles. Delegated administrators can use baselines created by administrators and other delegated administrators. But delegated administrators cannot modify or delete baselines created by others.
-
 
 ## Add a WSUS server to the VMM fabric
 
@@ -46,7 +45,6 @@ This article explains the prerequisites, how to add a WSUS server to the fabric,
 6. In addition, you can click **Update Classification** to select the update classification that you want to synchronize, click **Product** to select the products that want to include when synchronizing, and **Language** to select the supported synchronization languages.
 
 After you've added the server you can update the WSUS settings and perform manual synchronization in **Servers** > WSUS server name > **Update Server**.
-
 
 ## Add WSUS servers that are managed in Configuration Manager
 
@@ -67,11 +65,10 @@ After you've added the WSUS server to the fabric you can configure update baseli
 - During a compliance scan, computers that are assigned to a baseline are graded for compliance with their assigned baselines. After a computer is found noncompliant, an administrator brings the computer into compliance through update remediation.
 - If a host is moved from one host group to another, the baselines for the new host group are applied to the host, and the baselines for the preceding host group no longer apply - that is, unless the baseline is assigned to both host groups. Explicit baseline assignments to a managed host stay with the host when it is moved from one host group to another. It is only when the baseline is assigned to a host group that baseline assignments get revoked during the move.
 - You can use two methods to prepare update baselines for remediation:
-	- A VMM built-in update baseline: Sample Baseline for Critical Updates and Sample Baseline for Security Updates.
-	- A custom update baseline.
+  - A VMM built-in update baseline: Sample Baseline for Critical Updates and Sample Baseline for Security Updates.
+  - A custom update baseline.
 
-
-### Assign servers to a build-in baseline
+### Assign servers to a built-in baseline
 
 1. Click **Library** > **Update Catalog and Baselines** > **Update Baselines**.
 2. In **Baselines**, click the baseline you want to use.
@@ -99,9 +96,9 @@ After you assign computers to an update baseline you can scan them to determine 
 - After a compliance scan, for every computer, each update has a compliance status of Compliant, Non Compliant, Error, Pending Reboot, or Unknown. You can view compliance properties for additional information.
 - The compliance scan focuses only on the updates that the administrator has identified as important by adding them to a baseline. That enables organizations to monitor for compliance for what is deemed important for their organization.
 - The following changes can cause an Unknown update status for a computer, and should be followed by a scan operation to access the computer's compliance status:
-	- A host is moved from one host group to another host group.
-	- An update is added to or removed from a baseline that is assigned to a computer.
-	- The computer is added to the scope of a baseline.
+  - A host is moved from one host group to another host group.
+  - An update is added to or removed from a baseline that is assigned to a computer.
+  - The computer is added to the scope of a baseline.
 
 To check compliance:
 
@@ -110,8 +107,6 @@ To check compliance:
 3. Since you haven't yet scanned computers the compliance status will show as **Unknown**, with an operational status **Pending Compliance Scan**.
 4. Select the computers you want to check, and click **Scan**.
 5. While the scan is in progress status will be Unknown. After it's finished compliance status for each update will be **Compliant**, **Non-Compliant**, or **Error**.
-
-
 
 ## Manage update exemptions
 

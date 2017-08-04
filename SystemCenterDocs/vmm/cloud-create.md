@@ -26,7 +26,7 @@ You can create a private cloud from a host group, or from a VMware resource pool
 ## Before you start
 
   - You need to have the VMM fabric in place. [Learn more](plan-compute.md).
-  - You should have one or more [Hyper-V](hyper-v-hosts.md) or [VMware](manage-vmware-hosts.md) virtualization hosts in the fabric. If you're creating a cloud from a VMware resource pool,  a vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be available in the VMM fabric.
+  - You should have one or more [Hyper-V](hyper-v-hosts.md) or [VMware](manage-vmware-hosts.md) virtualization hosts in the fabric. If you're creating a cloud from a VMware resource pool, a vCenter Server and the VMware ESX host or host cluster that contains the VMware resource pool must be available in the VMM fabric.
     - If you want to provide [self-service users](self-service.md) the ability to store virtual machines to the VMM library, then create a library share, or create a folder in a library share that will serve as the storage location. [Learn more](manage-library-server.md).
 
         > [!NOTE]
@@ -40,8 +40,6 @@ You can create a private cloud from a host group, or from a VMware resource pool
         > Self-service users must have the **Author** permission to access the resources.
 
     - The library shares that you designate as read-only resource locations for the private cloud must be unique when compared to the library share or shares that are used for stored virtual machines and for the user role data path that is specified for a self-service user role. For example, if the user role data path for a self-service user role is **\\\VMMServer01\Finance**, you cannot create a stored virtual machine path of **\\\VMMServer01\Finance\StoredVMs**. However, if the user role data path is **\\\VMMServer01\Finance\FinanceUserRoleData**, you could specify **\\\VMMServer01\Finance\StoredVMs** as the stored virtual machine path, as the full path is unique. You could also create entirely separate library shares.
-
-
 
 ## Create a private cloud from a host group
 
@@ -82,7 +80,6 @@ View status in **Jobs** and ensure the job is complete.
 
 To verify that the private cloud was created, check **VMs and Services** > **Clouds**. You can also verify in **Library** > **Cloud Libraries**, to view the read-only library shares.
 
-
 ## Create a private cloud from a VMware resource pool
 
 1. Click **VMs and Services** > **Create** > **Create Cloud**, to open the Create Cloud Wizard.
@@ -98,9 +95,9 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
     **Quota Type** | **Description**
     --- |---
-    **Virtual CPUs**  |Sets a limit on processing capacity within the private cloud that is equivalent to the capacity that can be provided by a specified number of CPUs. Applied against running virtual machines. Setting a CPU quota does not guarantee contiguous capacity; it only guarantees total CPU capacity available among hosts in the private cloud.
+    **Virtual CPUs**  | Sets a limit on processing capacity within the private cloud that is equivalent to the capacity that can be provided by a specified number of CPUs. Applied against running virtual machines. Setting a CPU quota does not guarantee contiguous capacity; it only guarantees total CPU capacity available among hosts in the private cloud.
     **Memory** | Sets a quota on memory (in gigabytes) that is available for virtual machines that are deployed on the private cloud. Applied against running virtual machines only. Setting a memory quota does not guarantee contiguous capacity. For example, the private cloud might have 2 GB of memory available on one host and 2 GB of memory on the other.
-    **Storage**  |Sets a quota on storage capacity (in gigabytes) that is available to virtual machines that are deployed on the private cloud. For dynamic virtual hard disks, quota calculations are based on maximum size.
+    **Storage**  | Sets a quota on storage capacity (in gigabytes) that is available to virtual machines that are deployed on the private cloud. For dynamic virtual hard disks, quota calculations are based on maximum size.
     **Custom quota (points)** | Sets a quota on virtual machines that are deployed on the private cloud based on total quota points that are assigned to the virtual machines through their virtual machine templates. Quota points are an arbitrary value that can be assigned to a virtual machine template based on the anticipated size of the virtual machines. Custom quotas are provided for backward compatibility with self-service user roles that were created in VMM 2008 R2.
     **Virtual machines** | Limits the total number of virtual machines that can be deployed on the private cloud.
 

@@ -21,7 +21,7 @@
 ### [Set up a VM network](sdn-create-network.md)
 ### [Allow and block VM traffic with SDN port ACLs](sdn-port-acls.md)
 ### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
-### [Load balance network traffic ](sdn-load-balance-network-traffic.md)
+### [Load balance network traffic](sdn-load-balance-network-traffic.md)
 ### [Set up NAT for traffic forwarding in an SDN](sdn-set-up-nat.md)
 ## [Deploy and manage Storage Spaces Direct](s2d.md)
 ### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
@@ -93,7 +93,7 @@
 ### [Set up file storage](storage-file.md)
 ### [Set up Storage Replica in VMM](storage-replica.md)
 ## Manage SOFS
-### [Set up a scale-out file server](SOFS)](sofs.md)
+### [Set up a scale-out file server (SOFS)](sofs.md)
 ### [Perform a rolling upgrade on SOFS](sofs-rolling-upgrade.md)
 ### [Add an existing SOFS to the VMM fabric](sofs-existing.md)
 ### [Create an SOFS cluster from standalone servers](sofs-cluster.md)
