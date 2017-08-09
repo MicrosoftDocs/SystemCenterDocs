@@ -9,7 +9,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
-ms.author: cfreeman
+ms.author: raynew
 ms.date: 10/12/2016
 author: cfreemanwa
 manager: carmonm

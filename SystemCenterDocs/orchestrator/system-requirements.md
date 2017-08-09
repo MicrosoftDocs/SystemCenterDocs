@@ -2,7 +2,7 @@
 ms.assetid: 46cc3ac5-8ed0-4007-a35b-cf13d04a2806
 title: System Requirements for System Center 2016 - Orchestrator
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of your Orchestrator deployment.
-ms.author: CFreeman
+ms.author: raynew
 manager: CarmonM
 ms.date: 1/4/2017
 ms.custom: na
