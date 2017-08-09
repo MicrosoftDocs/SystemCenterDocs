@@ -85,7 +85,7 @@ above:
 
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(â€¦)** button next to the text box to browse
+        click the ellipsis **(...)** button next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the
