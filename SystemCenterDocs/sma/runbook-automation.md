@@ -3,7 +3,7 @@ description: Provides details on how you can automate operations in your Windows
 manager: carmonm
 ms.topic: article
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod: system-center-threshold
 keywords:  
 ms.date: 03/29/2017

@@ -3,7 +3,7 @@ description: Provides step by step instructions for setting up Service Managemen
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 03/28/2017

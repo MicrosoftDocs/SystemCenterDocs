@@ -3,7 +3,7 @@ description: Provides guidance and procedures for using global assets in an Auto
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  03/31/2017

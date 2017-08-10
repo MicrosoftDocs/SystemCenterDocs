@@ -9,7 +9,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
-ams.author: cfreeman
+ams.author: raynew
 ms.date: 10/12/2016
 author: cfreemanwa
 manager: carmonm

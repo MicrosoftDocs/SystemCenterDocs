@@ -3,7 +3,7 @@ description: Provides installation procedures for System Center 2016 - Orchestra
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 03/22/2017

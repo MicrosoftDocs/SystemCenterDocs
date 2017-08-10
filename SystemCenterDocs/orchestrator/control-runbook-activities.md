@@ -9,7 +9,7 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.date: 10/12/2016
 manager: carmonm
 ---
