@@ -4,7 +4,7 @@ manager: cfreeman
 ms.topic:  article
 author:  cfreemanwa
 ms.prod:  system-center-threshold
-ms.author: cfreeman
+ms.author: raynew
 keywords:  
 ms.date:  10/12/2016
 title:  Upgrade to System Center 2016

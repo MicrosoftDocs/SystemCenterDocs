@@ -3,7 +3,7 @@ description: Release Notes for System Center 2016 -Orchestrator
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 ms.technology: Orchestrator
 keywords:

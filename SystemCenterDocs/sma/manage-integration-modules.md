@@ -3,7 +3,7 @@ description: Provides an overview of how you can work with integration modules.
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 10/12/2016

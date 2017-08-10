@@ -3,7 +3,7 @@ description: Provides guidance and instructions for creating Service Management 
 manager:  carmonm
 ms.topic:  reference
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  03/29/2017

@@ -1,7 +1,7 @@
 ---
 title:  Upgrade to Orchestrator-2016
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager:  carmonm
 ms.date:  10/12/2016
 ms.topic:  article
