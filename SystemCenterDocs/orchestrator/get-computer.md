@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: a2d782b3-10c2-453c-bb23-47ff4f7b0047
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 

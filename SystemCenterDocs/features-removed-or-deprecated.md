@@ -3,7 +3,7 @@ description: This topic lists the features and functionality that have been remo
 manager:  cfreeman
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:
 ms.date:  2016-10-12
