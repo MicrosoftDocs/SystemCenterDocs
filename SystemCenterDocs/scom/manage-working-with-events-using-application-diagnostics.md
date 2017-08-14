@@ -4,7 +4,7 @@ description: This article describes how to use the Application Diagnostics conso
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 06/06/2017
+ms.date: 08/14/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -113,7 +113,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
   
 2.  To view the event details of an event in the list, click the link in the **Description** column.  
   
-    In the related events you might notice that response time is very slow for all events during a certain time. This could indicate a problem with the system, not the code, and so might go to the IT pro for a solution.  
+    In the related events you might notice that response time is very slow for all events during a certain time. This could indicate a problem with the system, not the code, and so it might be redirected to the IT pro for a solution.  
   
 ## Next steps
 
