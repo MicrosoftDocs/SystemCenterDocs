@@ -14,7 +14,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-A common question that arises during Data Protection Manager (DPM) server and DPM agent deployment concerns which ports have to be opened on the firewall. This article introduces the firewall ports and protocols that DPM uses for network traffic. For more information about firewall exceptions for DPM clients, go to: [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#<a name="BKMK_Firewall">).  
+A common question that arises during Data Protection Manager (DPM) server and DPM agent deployment concerns which ports have to be opened on the firewall. This article introduces the firewall ports and protocols that DPM uses for network traffic. For more information about firewall exceptions for DPM clients, go to: [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#set-up-firewall-exceptions).  
   
 |Protocol|Port|Details|  
 |--------------|----------|-------------|  
@@ -31,7 +31,7 @@ A common question that arises during Data Protection Manager (DPM) server and DP
   
  Note:  
   
--   If you’re looking for information about how to set up firewall exceptions for computers that DPM helps protect, see [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#<a name="BKMK_Firewall">).  
+-   If you’re looking for information about how to set up firewall exceptions for computers that DPM helps protect, see [Configure firewall exceptions for the agent](deploy-dpm-protection-agent.md#set-up-firewall-exceptions).  
   
 -   If Windows Firewall wasn’t available when you installed DPM, see [How to configure Windows Firewall manually](#BKMK_Manual).  
   
