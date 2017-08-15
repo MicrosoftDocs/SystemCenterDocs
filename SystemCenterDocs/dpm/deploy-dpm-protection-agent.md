@@ -29,13 +29,13 @@ want to back up with DPM. It consists of two components - the protection agent i
 
 You'll set up the agent as follows:
 
--   If the computer containing data you want to back up is behind a firewall you'll need to [set up firewall exceptions](#BKMK_Firewall).
+-   If the computer containing data you want to back up is behind a firewall you'll need to [set up firewall exceptions](./deploy-dpm-protection-agent.md#set-up-firewall-exceptions).
 
 -   If the computer isn't behind a firewall, or you've configured firewall exceptions to allow access, you can [Install the agent from the DPM console](#BKMK_Console).
 
 -   Alternatively if you don't have access through the firewall, the computer you want to protect is in a workgroup or untrusted domain, or you simply need to use a different installation method, you can [Install the agent manually](#BKMK_Manual) and then [Attach the agent](#BKMK_Attach).
 
-## <a name="BKMK_Firewall"></a>Set up firewall exceptions
+## Set up firewall exceptions
 For a protection agent to communicate with the DPM server through a firewall, firewall exceptions are required.
 
 Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Server, to allow TCP on port 80.The report server listens for HTTP requests on port 80. The following table lists the protocols and ports required for communication between the DPM server and protected servers and clients.
@@ -95,7 +95,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
     For example, you can run the following command on the computer to configure Windows Firewall: **netsh advfirewall firewall add rule name="Allow DPM Remote Agent Push" dir=in action=allow service=any enable=yes profile=any remoteip=&lt;IPAddress&gt;**, where IPAddress is the address of the DPM server.
 
-    To configure the ports exception on the firewall, see [Configure firewall exceptions for the agent](https://technet.microsoft.com/en-us/library/Hh758204.aspx).
+    To configure the ports exception on the firewall, see [Configure firewall exceptions for the agent](configure-firewall-settings-for-dpm.md).
 
 2.  On the computer that you want to protect, open an elevated Command Prompt window, and then run the following commands:
 
