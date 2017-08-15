@@ -4,7 +4,7 @@ description: This article describes how to use the Application Diagnostics conso
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 06/06/2017
+ms.date: 08/14/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -19,7 +19,7 @@ Working with alerts is a standard part of working with System Center 2016 - Oper
 > Deep troubleshooting of alerts from Application Performance Monitoring often requires access to the application source code and might require input from developers. You can install the Team Foundation Server Work Item Synchronization Management Pack and forward alerts to Team Foundation Server used by the development team. The Team Foundation Server Work Item Synchronization Management Pack tracks and synchronizes changes made to Team Foundation Server work items and changes made to associated Operations Manager alerts.  
   
 ## Investigating .NET Application alerts  
-Decreasing the time it takes to determine, assign, and resolve issues is the central goal of application monitoring in Operations Manager. When you receive an alert, you need to know what caused it-the system hosting the application or the code, be able to show the data to back up that conclusion, and clearly see who should fix the problem. To know if it is a system issue, you need to know the state of your system at the time of the event. To know where the root problem occurred, you need to know the chain of calls that occurred. To further investigate you need to compare similar events and related events that happened at the same time. Together, the event details, performance counters, and distributed chains will help you triage who should look at this problem first. If it is a system error you can adjust the available resources or configuration of the host system and address the issue at the host level. If it is an application failure, the problem will need to go to the application team along with the line of code where the failure occurred. Here are some strategies for using the views, filters, and settings in Application Diagnostics to help you get to the root cause, find a resolution, and better know who needs to be involved to fix the problem.  
+Decreasing the time it takes to determine, assign, and resolve issues is the central goal of application monitoring in Operations Manager. When you receive an alert, you need to know what caused it - the system hosting the application or the code, be able to show the data to back up that conclusion, and clearly see who should fix the problem. To know if it is a system issue, you need to know the state of your system at the time of the event. To know where the root problem occurred, you need to know the chain of calls that occurred. To further investigate you need to compare similar events and related events that happened at the same time. Together, the event details, performance counters, and distributed chains will help you triage who should look at this problem first. If it is a system error you can adjust the available resources or configuration of the host system and address the issue at the host level. If it is an application failure, the problem will need to go to the application team along with the line of code where the failure occurred. Here are some strategies for using the views, filters, and settings in Application Diagnostics to help you get to the root cause, find a resolution, and better know who needs to be involved to fix the problem.  
   
 ### Open Application Diagnostics from an alert  
   
@@ -113,7 +113,7 @@ Use the following procedures to investigate your alert. IT Pros will most likely
   
 2.  To view the event details of an event in the list, click the link in the **Description** column.  
   
-    In the related events you might notice that response time is very slow for all events during a certain time. This could indicate a problem with the system, not the code, and so might go to the IT pro for a solution.  
+    In the related events you might notice that response time is very slow for all events during a certain time. This could indicate a problem with the system, not the code, and so it might be redirected to the IT pro for a solution.  
   
 ## Next steps
 
