@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 06/27/2017
+ms.date: 08/14/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -109,6 +109,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
+### Operations Manager operational, data warehouse, and ACS audit database
+
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+
 ### Management server/Gateway server 
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
@@ -120,7 +125,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
-- Microsoft Report Viewer 2015 runtime.  
+- [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).  
 
     > [!NOTE] 
     > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295).  The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server. 
