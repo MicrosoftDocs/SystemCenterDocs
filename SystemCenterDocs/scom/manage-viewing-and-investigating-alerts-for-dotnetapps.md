@@ -4,7 +4,7 @@ description: This article describes the .NET application monitoring feature and 
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 06/06/2017
+ms.date: 08/11/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -15,14 +15,14 @@ ms.assetid: e29fed7f-28ec-48fe-b195-0e776a4778da
 # Viewing and investigating alerts for .NET applications 
 In System Center 2016 – Operations Manager, you can monitor web applications from server- and client-side perspectives to get details about application performance and reliability that can help you pinpoint the root causes of incidents. When you specify settings, the types of events to collect, the performance goals to measure, and servers to monitor, Operations Manager application monitoring reveals how web-based applications are running. You can see how frequently a problem is occurring, how a server was performing when a problem occurred, and the chain of events related to the slow request or method that is unreliable. This information is required to partner with software developers and database administrators to help ensure that applications perform correctly and reliably at optimal levels.
 
-## A New 2-step application monitoring strategy
+## A new 2-step application monitoring strategy
 
 Application monitoring in Operations Manager has two new monitoring features that allow you to prioritize alerts and then investigate and troubleshoot individual issues:
 
-* **Step 1**: Identify problem areas Use Application Advisor to help you prioritize and manage which performance and exception events to address. Application Advisor identifies and lists which applications are causing the most problems within an environment. These are the applications you should address first because they are causing most SLA violations. If you are responsible for applications, Application Advisor provides a helpful view into your application’s overall health.
-* **Step 2**: Diagnose problems Use Application Diagnostics to help you investigate and troubleshoot specific events. You can view event properties, performance counters, distributed chains, similar and related events to narrow the cause of the issue and help identify who should correct the problem. Application Diagnostics is available as a standalone web console or through links in the Alert descriptions in the Operations Manager consoles.
+* **Step 1**: Identify problem areas. Use Application Advisor to help you prioritize and manage which performance and exception events to address. Application Advisor identifies and lists which applications are causing the most problems within an environment. These are the applications you should address first because they are causing most SLA violations. If you are responsible for applications, Application Advisor provides a helpful view into your application’s overall health.
+* **Step 2**: Diagnose problems. Use Application Diagnostics to help you investigate and troubleshoot specific events. You can view event properties, performance counters, distributed chains, similar and related events to narrow the cause of the issue and help identify who should correct the problem. Application Diagnostics is available as a standalone web console or through links in the Alert descriptions in the Operations Manager consoles.
 
-After you have configured .NET applications to be monitored, you can view alerts and begin investigating the issues.  To configure monitoring of your .NET application, review the [Before you begin monitoring.NET applications](https://technet.microsoft.com/library/hh543994%28v=sc.12%29.aspx) topic to understand requirements and configuration steps.  
+After you have configured .NET applications to be monitored, you can view alerts and begin investigating the issues.  To configure monitoring of your .NET application, review the [Before you begin monitoring .NET applications](https://technet.microsoft.com/library/hh543994%28v=sc.12%29.aspx) topic to understand requirements and configuration steps.  
   
 ### View and investigate alerts for .NET applications (server-side example)  
   
@@ -52,9 +52,9 @@ After you have configured .NET applications to be monitored, you can view alerts
   
         ![Overall Component Health](./media/om2016-appmonitoring-dashboard-investigate-alerts-by-appgroup.png)  
   
-    To work with data collected by client-side monitoring, in the Operations console, in the navigation pane, click the **Monitoring** button, expand **Application Monitoring\.NET Monitoring**, and then application name (client) folder. The client-side monitoring process is very similar to server-side monitoring, except that you click **All Performance Data** and **Overall Component Health** in the application name (client) folder to view alerts pertaining to the client-side monitoring for the application group.  
+    To work with data collected by client-side monitoring, in the Operations console, on the navigation pane, click the **Monitoring** button, expand **Application Monitoring\.NET Monitoring**, and then application name (client) folder. The client-side monitoring process is very similar to server-side monitoring, except that you click **All Performance Data** and **Overall Component Health** in the application name (client) folder to view alerts pertaining to the client-side monitoring for the application group.  
   
-    To make sure client-side application monitoring is working, go to the application group state view and the **CSM Application Component** will have application monitoring status filled in.  
+    To verify client-side application monitoring is working, go to the application group state view and the **CSM Application Component** will have application monitoring status filled in.  
   
     > [!NOTE]  
     > Client-side monitoring is an extension of server-side monitoring that is not enabled by default. You set it up through the same template as server-side monitoring. It might take a few minutes to discover the objects after you set up client-side monitoring.  
