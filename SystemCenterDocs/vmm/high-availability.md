@@ -5,7 +5,7 @@ description: This article describes how to deploy the VMM server in high availab
 author:  rayne-wiselman
 ms.author: raynew
 manager:  cfreeman
-ms.date:  10/16/2016
+ms.date:  08/16/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -29,7 +29,7 @@ Prepare for a high availability deployment by considering the following:
   - Windows ADK needs to be installed on each computer. Install from setup or the [download center](http://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
   - If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](http://go.microsoft.com/fwlink/p/?LinkId=253555) or [SQL Server 2014 feature pack](http://go.microsoft.com/fwlink/?LinkID=529794) or [SQL Server 2016 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676).
 - Don't install on a Hyper-V host parent partition. You can install VMM on a VM.
-- Before you start, set up the VMM service account and distributed key management. [Learn more](~/vmm/install.md)
+- Before you start, set up the VMM service account and distributed key management. [Learn more](https://technet.microsoft.com/en-us/library/gg697604(v=sc.12).aspx)
 
 ## Deploy high availability components
 
