@@ -820,7 +820,7 @@
 {
      "source_path" : "SystemCenterDocs/orchestrator/build-test-runbooks.md",
      "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
-  },    
+  },
 {
      "source_path" : "SystemCenterDocs/orch/manage/accessibility-for-people-with-disabilities.md",
      "redirect_url": "/system-center/orchestrator/learn-about-orchestrator"
@@ -2551,7 +2551,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-operations-guide-for-system-center-2016-service-manager.md",
-     "redirect_url" : "/system-center/scsm/day-to-day-tasks"
+     "redirect_url" : "/system-center/scsm/search-information"
+},
+{
+     "source_path" : "SystemCenterDocs/sm/manage/day-to-day-tasks.md",
+     "redirect_url" : "/system-center/scsm/search-information"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-sample-scenario-managing-release-records.md",
