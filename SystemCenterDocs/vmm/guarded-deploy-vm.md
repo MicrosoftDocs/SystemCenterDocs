@@ -29,10 +29,7 @@ You can deploy shielded VMs in VMM in a couple of ways:
 1. **Prepare an HGS server**: You should have an HGS server deployed. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 2. **Set up VMM**: You need to configure global HGS settings in VMM, and set up at least one guarded host. If guarded hosts belong to a cloud, the cloud should be enabled to support shielded VMs. [Learn more](guarded-deploy-host.md).
 3. **Prepare a shielded VHDX and VM template**: You deploy shielded VMs from a shielded virtual hard disk (VHDX), optionally using a VM template. [Learn more](guarded-deploy-template.md) about preparing these.
-[note]
-
 > [!NOTE]
-
 > You cannot use a  service template to create a shielded VM. Use a script instead.
 
 4. **Prepare shielding data files**: To use the signed template disks in the VMM library, tenants must prepare one or more shielding data files. This file contains all the secrets that a tenant needs to deploy a VM, including the unattend file used to specialize the VM, certificates, administrator account passwords. The file also specifies which guarded fabric a tenant trusts to host their VM and information about the signed template disks. The file is encrypted and can only be read by a host in a guarded fabric trusted by the tenant. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data).
