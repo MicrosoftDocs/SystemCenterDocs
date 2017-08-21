@@ -33,7 +33,7 @@ This article describes the steps for deploying a highly available System Center 
 7. In **Select Servers or a Cluster** specify the NetBIOS or FQDN of a node you're adding and click **Add**. In **Testing Options** click **Run all tests (recommended)**.
 8. In **Summary**, if the tests completed correctly click **Create the cluster now using the validated nodes**. Click **View Report** to troubleshoot any issues.
 9. In **Access Point for Administering the Cluster** specify the cluster name. For example **VMMLibrary**.
- When the cluster is created this name is registered as the cluster computer object (CNO) in Active Directory. If you specify a NetBIOS name for the cluster the CNO is created in the same location where the computer objects for the cluster node reside (either the default Computers container or an OU). You can specify a different location by adding the distinguished OU name. For example CN=ClusterName, OU=Clusters,DC=Contoso. For more information, see [distributed key management](plan-install#distributed-key-management.md).
+ When the cluster is created this name is registered as the cluster computer object (CNO) in Active Directory. If you specify a NetBIOS name for the cluster the CNO is created in the same location where the computer objects for the cluster node reside (either the default Computers container or an OU). You can specify a different location by adding the distinguished OU name. For example CN=ClusterName, OU=Clusters,DC=Contoso. For more information, see [distributed key management](plan-install.md#distributed-key-management).
 10. If the server isn't configured to use DHCP specify a static IP address for the cluster. Select each network you want to use for cluster management and in **Address** select the IP address. This is the IP address that is associated with the cluster in DNS.
 11. In **Confirmation** review the settings. Clear **Add all eligible storage to the cluster** if you want to configure storage later. Click **Next** to create the cluster.
 12. In **Summary** confirm that the cluster was created and that the cluster name is listed in Failover Cluster Manager.
@@ -51,7 +51,7 @@ This article describes the steps for deploying a highly available System Center 
 9. In **Cluster configuration** specify the name of the VMM cluster for example **HAVMMM**.
 10. In **Configure service account and distributed key management** specify the service account and key location you created earlier. VMM Run As accounts are stored as encrypted in the VMM database. For a high availability deployment, you need to access encrypted keys from a central location so you should have created a distributed key management container in Active Directory before you ran setup.
 
- Learn more about distributed key management container  [here](plan-install#distributed-key-management.md).
+ Learn more about distributed key management container  [here](plan-install.md#distributed-key-management).
 11. In **Port configuration** modify port settings if you need to.
 12. Finish installing VMM. You can't specify a library share right now. In a highly available deployment you create the library share after installation is complete.
 
