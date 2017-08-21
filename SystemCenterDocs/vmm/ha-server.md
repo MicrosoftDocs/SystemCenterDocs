@@ -49,9 +49,7 @@ This article describes the steps for deploying a highly available System Center 
 7. In **Prerequisites** VMM checks whether all prerequisites are met and installs missing components. If you don't have the Windows ADK installed, download and install it.
 8. In **Database configuration** specify the database to use for VMM. The database should be highly available and deployed in a separate failover cluster. This dialog appears if VMM isn't clustered, or if it's clustered but not using Always On Availability Groups. Specify the cluster name.
 9. In **Cluster configuration** specify the name of the VMM cluster for example **HAVMMM**.
-10. In **Configure service account and distributed key management** specify the service account and key location you created earlier. VMM Run As accounts are stored as encrypted in the VMM database. For a high availability deployment, you need to access encrypted keys from a central location so you should have created a distributed key management container in Active Directory before you ran setup.
-
- Learn more about distributed key management container  [here](plan-install.md#distributed-key-management).
+10. In **Configure service account and distributed key management** specify the service account and key location you created earlier. VMM Run As accounts are stored as encrypted in the VMM database. For a high availability deployment, you need to access encrypted keys from a central location so you should have created a distributed key management container in Active Directory before you ran setup. Learn more about distributed key management container  [here](plan-install.md#distributed-key-management).
 11. In **Port configuration** modify port settings if you need to.
 12. Finish installing VMM. You can't specify a library share right now. In a highly available deployment you create the library share after installation is complete.
 
