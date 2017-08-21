@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  08/21/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -26,7 +26,7 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 
 1. Close any open programs and ensure that no restarts are pending on the computer.
 2. To start the Virtual Machine Manager Setup wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
-3. In the main setup page, click **Install**. 
+3. In the main setup page, click **Install**.
 4. On the **Select features to install** page, select the **VMM management server** check box, and then click **Next**. The VMM console will be automatically installed. If you're installing on a cluster node you'll be asked if you want to make the management server highly available.
 5. On the **Product registration information** page, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires in 180 days after installation.
 6. On the **Please read this license agreement** page, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
@@ -38,6 +38,8 @@ Use this article to install the System Center 2016 - Virtual Machine Manager (VM
 12. Don't specify a **Port** value if you don't have a remote instance of SQL Server, or if you have a remote SQL Server that uses the default port (1443).
 13. Specify the SQL Server instance name and whether to use an existing or new database. You'll need an account with permissions to connect to the instance.
 14. On the **Configure service account and distributed key management** page, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
+
+ Learn more about distributed key management [here](plan-install#distributed-key-management.md).
 15. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 16. On the **Port configuration** page, use the default port number for each feature or provide a unique port number that is appropriate in your environment. You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
 17. On the **Library configuration** page, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named MSSCVMMLibrary, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
