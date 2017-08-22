@@ -50,6 +50,8 @@ Migrate a VM between clusters. Note that the VM temporarily loses its high avail
 > [!NOTE]
 > You cannot live migrate storage for a shared VHDX file.  You can move the other VM files and perform normal live migration.
 
+> To move the shared VHDX file to another location, you must shut down the VMs and then move the file.
+
 You can run a live migration of VM storage between locations on standalone hosts. You can move the entire virtual machine, which includes virtual hard disks (VHDs) and configuration information, or move only specific VHDs to a different location.
 
 1.  In **VMs and Services** > **All Hosts**, click the standalone host where the VM is located.
