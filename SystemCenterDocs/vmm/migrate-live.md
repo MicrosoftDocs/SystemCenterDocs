@@ -5,7 +5,7 @@ description: This article describes how to run a live migration in the VMM fabri
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  08/22/2016
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -46,6 +46,9 @@ Migrate a VM between clusters. Note that the VM temporarily loses its high avail
 7. To verify that the virtual machine was migrated, check the **VMs** list on the destination node to make sure the VM is running.
 
 ## Migrate storage between two locations on a standalone host
+
+> [Note!]
+> You cannot live migrate storage for a shared VHDX file.  You can move the other VM files and perform normal live migration. 
 
 You can run a live migration of VM storage between locations on standalone hosts. You can move the entire virtual machine, which includes virtual hard disks (VHDs) and configuration information, or move only specific VHDs to a different location.
 
