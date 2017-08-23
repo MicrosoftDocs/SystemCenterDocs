@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/22/2017
+ms.date: 08/23/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -20,9 +20,9 @@ Your environment may require that you manually install the agent. Use the follow
 
 ## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
-1.  Transfer the Red Hat Enterprise agent (`scx-<version>.rehl.<version>.<arch>.sh`) to the Linux server, type:
+1.  Transfer the Red Hat Enterprise agent (`scx-<version>.rhel.<version>.<arch>.sh`) to the Linux server, type:
 
-    `scx-<version>.rehl.<version>.<arch>.sh`  
+    `scx-<version>.rhel.<version>.<arch>.sh`  
 
     or for SUSE Linux Enterprise Server, type:  
 
@@ -30,11 +30,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To install the Red Hat Enterprise package, type:
 
-    `rpm -i sscx-<version>.rehl.<version>.<arch>.sh` 
+    `sh ./sscx-<version>.rhel.<version>.<arch>.sh --install` 
 
     or for SUSE Linux Enterprise package, type:
 
-    `rpm -i sscx-<version>.sles.<version>.<arch>.sh`  
+    `sh ./sscx-<version>.sles.<version>.<arch>.sh --install`  
 
 3.  To verify that the package is installed, type:
 
@@ -50,7 +50,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To install the package, type:
 
-    `rpm -i scx-<version>.universalr.<version>.<arch>.sh`
+    `sh ./scx-<version>.universalr.<version>.<arch>.sh --install`
 
 3.  To verify that the package is installed, type:
 
@@ -66,7 +66,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To install the package, type:
 
-    `dpkg -i scx-<version>.universald.<version>.<arch>.sh`
+    `sh ./scx-<version>.universald.<version>.<arch>.sh --install`
 
 3.  To verify that the package is installed, type:
 
@@ -82,19 +82,15 @@ Your environment may require that you manually install the agent. Use the follow
 
     `scx-<version>.solaris.<version>.<arch>.sh`
 
-2.  Run the following command:
-
-    `uncompress scx-<version>.solaris.<version>.<arch>.sh`
-
-3.  To install the package, type:
+2.  To install the package, type:
 
     `pkgadd -d scx-<version>.solaris.<version>.<arch>.sh MSFTscx`
 
-4.  To verify that the package is installed, type:
+3.  To verify that the package is installed, type:
 
     `pkginfo –l MSFTscx`
 
-5.  To verify that the Microsoft SCX CIM Server is running, type:
+4.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `svcs omiserver`
 
@@ -104,19 +100,15 @@ Your environment may require that you manually install the agent. Use the follow
 
     `cp scx-<version>.hpux.<version>.<arch>.sh`
 
-2.  To unzip the package, type:
+2.  To install the package, type:
 
-    `gzip –d scx-<version>.hpux.<version>.<arch>.sh
+    `swinstall –s /path/scx-<version>.hpux.<version>.<arch>.sh scx`
 
-3.  To install the package, type:
-
-    `swinstall –s /path/scx-<version>.hpux.<version>.<arch> scx`
-
-4.  To verify that the package is installed, type:
+3.  To verify that the package is installed, type:
 
     `swlist scx`
 
-5.  To verify that the Microsoft SCX CIM Server is running, type:
+4.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `ps –ef|grep scx`
 
@@ -130,19 +122,15 @@ Your environment may require that you manually install the agent. Use the follow
 
     `cp scx-<version>.aix.<version>.<arch>.sh`
 
-2.  To unzip the package, type:
+2.  To install the package, type:
 
-    `gzip –d scx-<version>.aix.<version>.<arch>.sh`
+    `/usr/sbin/installp -a -d scx-<version>.aix.<version>.<arch>.sh scx`
 
-3.  To install the package, type:
+3.  To verify that the package is installed, type:
 
-    `/usr/sbin/installp -a -d scx-<version>.aix.<version>.<arch> scx`
+    `lslpp -l “scx*"`
 
-4.  To verify that the package is installed, type:
-
-    `swlist scx`
-
-5.  To verify that the Microsoft SCX CIM Server is running, type:
+4.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `ps –ef|grep omi`
 

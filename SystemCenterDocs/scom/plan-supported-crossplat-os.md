@@ -17,6 +17,10 @@ ms.topic: article
 >Applies To: System Center 2016 - Operations Manager
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.  
+
+>[!NOTE]
+>Monitoring UNIX and Linux computers with System Center Operations Manager 2012 R2 management server is supported when using the System Center 2016 - Operations Manager agent.  It is not supported or recommended to import the required management packs from Operations Manager 2016 media for the specific version of UNIX/Linux you need to monitor, using the Operations Manager 2012 R2 version is sufficient.  When you are ready to migrate the UNIX/Linux computer to an Operations Manager 2016 management group, you cannot discover and install the agent using the **Computer and Device Management Wizard**.  It can only be completed following the command-line based deployment.  
+>
   
 ## IBM AIX 6.1  
   
