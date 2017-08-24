@@ -88,7 +88,7 @@ When you install VMM with this user account SPN will be registered.
     - With asynchronous-commit mode, the replica of the database can be out of date for a period of time after each commit. This can make it appear as if the database were back in time which might cause loss of customer data, inadvertent disclosure of information, or possibly elevation of privilege.
     - You can use synchronous-commit mode as a configuration for remote-site availability scenarios.
 - The SQL Server service must use an account that has permission to access Active Directory Domain Services (AD DS). For example, you can specify the Local System Account, or a domain user account. Do not specify a local user account.
-- You don't need to configure collation. During deployment, Setup automatically configures CI collation according to the language of the server operating system. However, target database collate and the VMM server collate must be the same if the database is part of SQL AO group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/en-us/library/ee176844.aspx) command from the PowerShell.
+- You don't need to configure collation. During deployment, Setup automatically configures CI collation according to the language of the server operating system. However, target database collate and the VMM server collate must be the same if the database is part of SQL AO group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/en-us/library/ee176844.aspx) PowerShell command.
 - Dynamic port is supported.
 - If you want to create the VMM database prior to VMM installation:
   - Make sure you have permissions or create a SQL database, or ask the SQL Server admin to do it.
