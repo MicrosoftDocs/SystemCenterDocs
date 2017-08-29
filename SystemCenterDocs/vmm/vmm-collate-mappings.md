@@ -11,9 +11,12 @@ ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
-# Collate mapping
+# VMM server collate mapping
 
 >Applies To: System Center 2016 - Virtual Machine Manager
+
+This article provides the code and associated details for the VMM server collate mapping.
+
 **Collation Name = Latin1_General_100_CI_AS**
 
 **Code** | **Details**
