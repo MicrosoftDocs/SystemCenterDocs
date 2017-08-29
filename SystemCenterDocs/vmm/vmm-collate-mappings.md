@@ -158,7 +158,7 @@ This article provides the code and associated details for the VMM server collate
 
 **Code** | **Details**
 --- | ---
-     1044 |Norwegian (Norwegian (Bokmål, Norway) )
+     1044 |Norwegian (Norwegian (Bokmål, Norway) 
      2068|Norwegian (Nynorsk, Norway)
 
 
