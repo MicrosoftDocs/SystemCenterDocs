@@ -38,7 +38,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 > [!NOTE]
 
-While building S2D from bare metal computers, you may need to configure your NICs' RDMA settings. Use the [PCP post deployment script](hyper-v-bare-metal#post-deployment-script) to configure these settings.   
+While building S2D from bare metal computers, you may need to configure your NICs' RDMA settings. Use the [PCP post deployment script](hyper-v-bare-metal.md#post-deployment-script) to configure these settings.   
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
