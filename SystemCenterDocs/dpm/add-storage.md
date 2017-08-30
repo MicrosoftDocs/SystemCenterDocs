@@ -40,7 +40,8 @@ DPM 2016 accepts volumes as disk storage.  This helps customers in maintaining f
 
 First step is to create a Virtual Disk.  Through the File and Storage Services section of the Server Manager, create a Storage Pool, and add the available disks to it. Create a Virtual Disk from that Storage Pool with Simple Layout.
 
-Step 1: Add the disks to a Storage Pool and create a virtual disk with Simple Layout
+Step 1: Add the disks to a Storage Pool and create a virtual disk with Simple Layout. Adding only one disk to the pool will keep the column count as 1. This will give the freedom to add as many disks as needed later. 
+If multiple disks are added to the pool while creating it, the number of disks will be stored as the number of columns, and when more disks are added, they can only be a multiple of the number of columns.
 
 ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-1.png)
 
