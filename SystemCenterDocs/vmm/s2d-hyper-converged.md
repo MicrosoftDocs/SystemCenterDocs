@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  06/04/2017
+ms.date:  08/30/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -17,7 +17,9 @@ ms.technology:  virtual-machine-manager
 
 Read this article to set up a hyper-converged cluster running Storage Spaces Direct (S2D) in System Center 2016 - Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
 
-You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts, or by provisioning from bare-metal servers. You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
+You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts, or by provisioning from bare-metal servers.
+
+You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
 
 After you enable a cluster with S2D, VMM does the following:
 1. The File Server role and the Failover Clustering feature is enabled.
@@ -34,7 +36,11 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 - Make sure you're running VMM 2016.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed, and be configured to host VMs.
 
-After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the luster, or export the storage to other resources using SOFS.
+> [!NOTE]
+
+While building S2D from bare metal computers, you may need to configure your NICs' RDMA settings. Use the [PCP post deployment script](hyper-v-bare-metal#post-deployment-script) to configure these settings.   
+
+After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
 
 
@@ -43,10 +49,12 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 ### Provision a cluster from Hyper-V hosts
 
 1.	If you need to add the Hyper-V hosts to the VMM fabric, [follow these steps](hyper-v-existing.md). If they’re already in the VMM fabric, skip to the next step.
-2.	 Follow the instructions for [provisioning a cluster from standalone Hyper-V hosts managed in the VMM fabric](hyper-v-standalone.md). Note the following:
-•	When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard.
-•	In **Resource Type*, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
-•	If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
+2.	 Follow the instructions for [provisioning a cluster from standalone Hyper-V hosts managed in the VMM fabric](hyper-v-standalone.md).
+
+**Note the following**:
+- When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard.
+-In **Resource Type*, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
+- If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
 ### Provision a cluster from bare metal machines
 

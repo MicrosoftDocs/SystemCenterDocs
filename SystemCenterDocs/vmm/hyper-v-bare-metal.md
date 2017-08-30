@@ -1,11 +1,11 @@
 ---
 ms.assetid: 350b385c-dc51-421c-a954-623a7fd416c2
 title: Provision a Hyper-V host or cluster from bare metal computers
-description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric
+description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric.
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/20/2016
+ms.date:  08/30/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -45,9 +45,6 @@ Here's how you do this:
 **Physical computer profile** | Answer file | If you want a physical computer profile to include references to an answer file (Unattend.xml file) or to custom resources (for example, an application installer that is referenced in post-deployment script commands), create the answer file or obtain the custom resources before deployment, and add them to a VMM library share. Within a library share, place custom resources in one or more folders with a .CR (custom resource) extension. VMM recognizes them as custom resources. For example, you might want to create an answer file to enable Remote Desktop Services and place it on a library share. Then you can select that file when you configure a physical computer profile.<br/><br/> By default when you deploy servers or clusters from bare metal, VMM automatically performs the following (no answer file or post-deployment commands needed): Installs the Hyper-V role for Hyper-V hosts. Installs the Hyper-V role, failover cluster feature, and multipath I/O (MPIO) for Hyper-V clusters.
 **Accounts** | You need two Run As accounts.<br/><br/> A Run As account for joining computers to the domain. You can create a Run As account in the Settings workspace.<br/><br/> A Run As account for access to the baseboard management controller (BMC) on each computer.
 
-
-
-
 ## Add a PXE server to the VMM fabric
 
 1. Click **Fabric** > **Servers** > **Add** > **Add Resources** > **PXE Server**.
@@ -82,14 +79,95 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 8. In **Host Settings** specify the path of the host to store the files that are associated with virtual machines placed on the host. Don't specify drive C because it's not available for placement. If you don't specify a path, VMM placement determines the most suitable location.
 9. In **Summary** verify the settings. Wait until Jobs shows a status of completed, and then verify the profile in **Library** > **Profiles** > **Physical Computer Profiles**.
 
+### PCP post deployment script
+After you successfully create and deploy the PCP,  use the following script to configure additional settings such as QoS, RDMA, SET.
+
+```powershell
+<########################################################################
+ #                                                                      #
+ #    Copyright (C) Microsoft Corporation. All rights reserved.         #
+ #                                                                      #
+ ########################################################################>
+
+
+# Install data center bridging
+Install-WindowsFeature Data-Center-Bridging
+
+#Enable RDMA, assuming customer chosen switch name for storage as Storage1Switch and Storage2Switch
+Enable-NetAdapterRDMA "Storage1Switch"
+Enable-NetAdapterRDMA "Storage2Switch"
+
+# set Qos Policy
+New-NetQosPolicy "SMB" -NetDirectPortMatchCondition 445 -PriorityValue8021Action 3
+
+# Enable net qos flow control
+Enable-NetQosFlowControl  -Priority 3
+
+# Disable net qos flow control other than 3
+Disable-NetQosFlowControl  -Priority 0,1,2,4,5,6,7
+
+# Enable net adapter qos on all adapters
+Enable-NetAdapterQos  -InterfaceAlias "*"
+
+# set qos traffic class
+New-NetQosTrafficClass "SMB"  -Priority 3  -BandwidthPercentage 50  -Algorithm ETS
+
+# Install windows feature
+Install-WindowsFeature –Name Hyper-V
+
+Install-WindowsFeature –Name RSAT-Hyper-V-Tools
+
+# set net adapter property "encapsulated overhead"
+NetAdapterAdvancedProperty -Name "*" -DisplayName "Encapsulated Overhead" -DisplayValue "160"
+
+#disable ipv6
+netsh int ipv6 isatap set state disabled
+
+#Configure SET team mapping between virtual network adapter to physical network adapters. (Note: to get names of adapters, use command Get-NetAdapater. For team mapping use command
+$physicalAdapters = Get-NetAdapter -Physical
+$virtualStorageAdapter1 = Get-VMNetworkAdapter -ManagementOS | Where-Object {$_.Name -eq "Storage1Switch"}
+$virtualStorageAdapter1 = Get-VMNetworkAdapter -ManagementOS | Where-Object {$_.Name -eq "Storage2Switch"}
+
+Set-VMNetworkAdapterTeamMapping -ManagementOS -PhysicalNetAdapterName $physicalAdapters[0].Name -VMNetworkAdapterName $virtualStorageAdapter1.Name
+Set-VMNetworkAdapterTeamMapping -ManagementOS -PhysicalNetAdapterName $physicalAdapters[1].Name -VMNetworkAdapterName $virtualStorageAdapter2.Name
+
+#Set firewall rules.
+[System.String[]]$Alias=@("vEthernet (WssdStorage2)", "vEthernet WssdStorage1)");
+$Profile ='Any'
+$Name="File and Printer Sharing"
+$rules = Get-NetFirewallRule -DisplayGroup $Name
+
+foreach ($rule in $rules)
+     {
+   		 $rule | Get-NetFirewallAddressFilter | Set-NetFirewallAddressFilter -  
+         LocalAddress Any -RemoteAddress Any
+     }
+
+ Set-NetFirewallRule -DisplayGroup $Name -Enabled True -Profile $Profile – InterfaceAlias $Alias
+ $Profile='Any'
+ $Name=='FPS-LLMNR-In-UDP'
+ Set-NetFirewallRule -Name $Name -Enabled True -Profile $Profile
+ [System.String[]]$Alias=@("Storage2Switch", "Storage1Switch", "ManagementSwitch");
+ $Profile ='Any'
+ $Name="Windows Remote Management"
+ Set-NetFirewallRule -DisplayGroup $Name -Enabled True -Profile $Profile –InterfaceAlias $Alias
+
+ #Set assurance settings
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard /v EnableVirtualizationBasedSecurity /t REG_DWORD /d 1 /f
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard /v RequirePlatformSecurityFeatures /t REG_DWORD /d 2 /f
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\LSA /v LsaCfgFlags /t REG_DWORD /d 1 /f
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\LSA /v DisableRestrictedAdmin /t REG_DWORD /d 0 /f
+
+ ```
+
 ## Provision a Hyper-V host from bare metal
 
-When you deploy a Hyper-V host from bare metal VMM does the following:
+When you deploy a Hyper-V host from bare metal, VMM does the following:
 
-1. Discovers the physical computer through out-of-band management
-2. Deploys an operating system image on the computer through the physical computer profile
-3. Enables the Hyper-V role on the computer
-4. Brings the computer under VMM management as a managed Hyper-V host
+1. Discovers the physical computer through out-of-band management.
+2. Deploys an operating system image on the computer through the physical computer profile.
+3. Enables the Hyper-V role on the computer.
+4. Brings the computer under VMM management as a managed Hyper-V host.
 
 Provision as follows:
 
@@ -145,3 +223,5 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 1. When you have filled in needed information for all the computers you want to provision, click Next.
 1. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 1. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
+
+You can add a new node to an existing S2D deployment by using the [PCP post deployment script](#pcp-post-deployment-script).
