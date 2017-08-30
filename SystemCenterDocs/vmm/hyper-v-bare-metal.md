@@ -79,7 +79,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 8. In **Host Settings** specify the path of the host to store the files that are associated with virtual machines placed on the host. Don't specify drive C because it's not available for placement. If you don't specify a path, VMM placement determines the most suitable location.
 9. In **Summary** verify the settings. Wait until Jobs shows a status of completed, and then verify the profile in **Library** > **Profiles** > **Physical Computer Profiles**.
 
-### PCP post deployment script
+### PCP post deployment settings
 After you successfully create and deploy the PCP,  use the following script to configure additional settings such as QoS, RDMA, SET.
 
 ```powershell
@@ -224,4 +224,4 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 1. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 1. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
 
-You can add a new node to an existing S2D deployment by using the [PCP post deployment script](#pcp-post-deployment-script).
+You can add a new node to an existing S2D deployment by using the script available for [post deployment settings](#pcp-post-deployment-settings).
