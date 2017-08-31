@@ -15,12 +15,14 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using site-to-site VPN using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site VPN using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 ## Before you start
 
 Ensure the following:
+
 •	SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md) and [SDN RAS gateway](sdn-gateway.md) are deployed.
+
 •	An SDN VM network with network virtualization is created.
 
 ## Configure Site-to-Site VPN connections using VMM
@@ -72,17 +74,17 @@ On the remote peer device, use the  **VM network endpoint IP address** from the 
 ![remote site](./media/sdn-route-network-traffic/sdn-route-network-traffic3.png)
 
 
-## L3 Forwarding  
+## Configure L3 forwarding  
 
 An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 > [!NOTE]
 
-- Ensure you're logged on as an administrator on the VMM server.
-- In an L3 connection, you can’t use the same VLAN subnet for two different tenants.
-- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.
-- For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
+>- Ensure you're logged on as an administrator on the VMM server.
+>- In an L3 connection, you can’t use the same VLAN subnet for two different tenants.
+>- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.
+>- For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
 
 **Run the following script**:
 
@@ -226,3 +228,29 @@ The table below provides examples of dynamic and static L3 connections.
 **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway.
 **EnableBGP** |  Option to enable BGP. **Default**: false.
 **TenantASNRoutingSubnets** | ASN number of tenant gateway. Only if BGP is enabled.
+
+## Set up the traffic selector from VMM PowerShell
+ Use the following procedure;
+
+> [!NOTE]
+> Values used are examples only.
+
+1. Create the traffic selector by using the following parameters.
+
+    ```powershell
+    $t= new-object Microsoft.VirtualManager.Remoting.TrafficSelector
+
+    $t.Type=7 // IPV4=7, IPV6=8
+
+    $t.ProtocolId=6 // TCP =6, reference: https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers
+
+    $t.PortEnd=5090
+
+    $t.PortStart=5080
+
+    $t.IpAddressStart=10.100.101.10
+
+    $t.IpAddressEnd=10.100.101.100
+    ```
+
+2. Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection**or **Set-SCVPNConnection**.
