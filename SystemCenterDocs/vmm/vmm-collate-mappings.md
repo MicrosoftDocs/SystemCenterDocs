@@ -120,7 +120,7 @@ This article provides the code and associated details for the VMM server collate
   1041|Japanese (Japan XJIS)
   263185|Japanese (Japan)
 
-**Collation Name = Modern_Spanish_100_CI_AS **
+**Collation Name = Modern_Spanish_100_CI_AS**
 
 **Code** | **Details**
  --- | ---
@@ -158,7 +158,7 @@ This article provides the code and associated details for the VMM server collate
 
 **Code** | **Details**
 --- | ---
-     1044 |Norwegian (Norwegian (Bokmål, Norway) 
+     1044 |Norwegian (Norwegian (Bokmål, Norway)
      2068|Norwegian (Nynorsk, Norway)
 
 
