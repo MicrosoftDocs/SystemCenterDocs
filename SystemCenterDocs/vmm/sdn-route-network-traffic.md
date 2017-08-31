@@ -39,10 +39,9 @@ For Cloud Service Providers (CSPs) that host many tenants in their datacenter, S
 4.	Select the **VPN Connections** > **Add** > **Add IPSec Tunnel**.
 5.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
 ![site to site VPN](./media/sdn-route-network-traffic/sdn-route-network-traffic1.png)
-
-6.	Type the **Name** for the connection, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
+6.	Type a  name for the connection, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
 7.	In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a user name, and the IPSec key as the password for the account.
-8.	In **Routes**, type all the remote subnets that you want to connect to. If you have selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, routes are not required.
+8.	In **Routes**, type all the remote subnets that you want to connect to. If you have selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes are not required.
 9.	On the **Advanced** tab, accept the default settings.
 10.	If you have selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** wizard page as shown below:
 ![site to site VPN](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
@@ -61,8 +60,8 @@ Since the GRE protocol is lightweight and support for GRE is available on most o
 5.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM network. This subnet doesn't need to be preconfigured in your datacenter.
 ![GRE tunneling](./media/sdn-route-network-traffic/sdn-route-network-traffic4.png)
 6.	Type a connection name, and specify the IP address of the remote endpoint.
-7.	Type the GRE key.
-8.	Optionally, you can complete the other fields on this screen but these values aren't needed to set up a connection.
+7.	Type the **GRE key**.
+8.	Optionally, you can complete the other fields on this screen, these values aren't needed to set up a connection.
 9.	In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protoco** tab.
 10.	You can use the defaults for the remaining settings.
 11.	To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
@@ -215,6 +214,11 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway
     ```
 
+After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the **Add-SCBGPPeer** cmdlet.
+
+**Example**:
+Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway.
+
 The table below provides examples of dynamic and static L3 connections.
 
 **Parameter** | **Details/example values**
@@ -230,9 +234,10 @@ The table below provides examples of dynamic and static L3 connections.
 **TenantASNRoutingSubnets** | ASN number of tenant gateway. Only if BGP is enabled.
 
 ## Set up the traffic selector from VMM PowerShell
- Use the following procedure;
+ **Use the following procedure**:
 
 > [!NOTE]
+
 > Values used are examples only.
 
 1. Create the traffic selector by using the following parameters.
