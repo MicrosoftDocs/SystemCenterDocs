@@ -66,7 +66,7 @@ Since the GRE protocol is lightweight and support for GRE is available on most o
 10.	You can use the defaults for the remaining settings.
 11.	To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
-## Set up remote sites for IPSec and GRE connections
+## Configure IPsec and GRE Connections on the remote site
 
 On the remote peer device, use the  **VM network endpoint IP address** from the VMM UI as destination Address while setting up the IPSec\GRE connection.
 
@@ -231,7 +231,7 @@ The table below provides examples of dynamic and static L3 connections.
 **GatewaySubnet** |  Subnet to be used for routing between HNV gateway and tenant virtual network. **Example**:192.168.2.0/24
 **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway.
 **EnableBGP** |  Option to enable BGP. **Default**: false.
-**TenantASNRoutingSubnets** | ASN number of tenant gateway. Only if BGP is enabled.
+**TenantASNRoutingSubnets** | ASN number of the tenant gateway, only if BGP is enabled.
 
 ## Set up the traffic selector from VMM PowerShell
  **Use the following procedure**:
@@ -258,4 +258,4 @@ The table below provides examples of dynamic and static L3 connections.
     $t.IpAddressEnd=10.100.101.100
     ```
 
-2. Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection**or **Set-SCVPNConnection**.
+2. Configure the above traffic selector by using **-LocalTrafficSelectors** parameter of **Add-SCVPNConnection** or **Set-SCVPNConnection**.
