@@ -194,34 +194,36 @@ Provision as follows:
 ## Provision a Hyper-V cluster from bare metal
 
 When you deploy a Hyper-V cluster from bare metal VMM does the following:
-1. Discovers the physical computers through out-of-band management.
-2. Deploys an operating system image on the computers by using the selected physical computer profile.
-3. Installs the failover clustering feature, and the Hyper-V role and MPIO feature.
-4. Brings the provisioned cluster under VMM management
+- Discovers the physical computers through out-of-band management.
+- Deploys an operating system image on the computers by using the selected physical computer profile.
+- Installs the failover clustering feature, and the Hyper-V role and MPIO feature.
+- Brings the provisioned cluster under VMM management
 
 
 1. Click **Fabric** > **Servers** > **Add** > **Add Resources** > **Hyper-V Hosts and Clusters**.
-1. In **General Configuration**, specify a name for the host cluster. Choose a storage configuration if required:
+2. In **General Configuration**, specify a name for the host cluster. Choose a storage configuration if required:
     - For shared storage, click **Storage connected to the cluster using shared SAS, FC, or iSCSI**.
     - For Storage Spaces Direct, click **Disk subsystem directly connected to individual nodes in the cluster**.
-1. In **Resource Type** > select **Physical computers to be provisioned**:
+3. In **Resource Type** > select **Physical computers to be provisioned**:
     - Specify the administrator Run As account to use for creating the cluster.
     - Select the physical computer profile (which provides the domain name and administrator Run As account for each node).
     - Next to the **BMC Run As** account box, click **Browse**, and select a Run As account that has permissions to access the BMC.
     - In the **Out-of-band management** protocol list, click the protocol that your BMCs use. If you want to use Data Center Management Interface (DCMI), click Intelligent Platform Management Interface (IPMI). Although DCMI 1.0 is not listed, it is supported. Ensure that the correct port is selected.
     - If the **Skip cluster validation** option appears, and you don't need support from Microsoft for this cluster, you can skip validation.
-1. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
-1. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses), and select the ones you want to include in the cluster.
-1. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, click **Refresh**. Allow or skip deep discovery. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. Then click **Next**.
-1. In **Deployment Customization** provide information for each computer that you want to include. If you see a computer that you don't want to include, select the BMC (identified by IP address) and then click **Remove**.
+4. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
+5. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses), and select the ones you want to include in the cluster.
+6. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, click **Refresh**. Allow or skip deep discovery. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. Then click **Next**.
+7. In **Deployment Customization** provide information for each computer that you want to include. If you see a computer that you don't want to include, select the BMC (identified by IP address) and then click **Remove**.
     - To configure computers click the BMC IP address. Specify a unique computer name, without wildcard characters.
     - Select or clear **Skip Active Directory for this computer name**. The Active Directory check prevents deployment if the computer account already exists. Note that if you skip the check and there's an existing computer account in AD other than the Run As account that was specified in the physical computer profile, the deployment process fails to join the computer to the domain.
     - For the computer you are configuring, click a network adapter. You can modify the configuration, or fill in more information.
     - You can specify the MAC address of the management NIC (not the BMC) and static IP settings for this network adapter. If you specify an address select a logical network and an IP subnet if applicable.  If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet. If you select an IP subnet, make sure that it corresponds to the physical location where you are deploying the host and to the network that the adapter is connected to. Otherwise, deployment may fail.
-1. Configure the network adapter settings for each network adapter. Note that if the number of physical network adapters in a computer does not match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then click **Remove**.
-1. Repeat the configuration for each BMC IP address in the list.
-1. When you have filled in needed information for all the computers you want to provision, click Next.
-1. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
-1. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
+8. Configure the network adapter settings for each network adapter. Note that if the number of physical network adapters in a computer does not match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then click **Remove**.
+9. Repeat the configuration for each BMC IP address in the list.
+10. When you have filled in needed information for all the computers you want to provision, click Next.
+11. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
+12. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
 
- To add a new node to an existing S2D deployment from bare metal, you must configure RDMA settings.  Use [this script](#pcp-post-deployment-settings) to configure the RDMA settings.
+>[!NOTE] 
+
+>To add a new node to an existing S2D deployment from bare metal, you must configure RDMA settings.  Use [this script](#pcp-post-deployment-settings) to configure the RDMA settings.
