@@ -30,6 +30,7 @@ Here's how you do this:
 
 
 ## Before you start
+Ensure the following prerequisites:
 
 **Component** | **Prerequisite** | **Details**
 --- | --- | ---
@@ -194,11 +195,12 @@ Provision as follows:
 ## Provision a Hyper-V cluster from bare metal
 
 When you deploy a Hyper-V cluster from bare metal VMM does the following:
-- Discovers the physical computers through out-of-band management.
-- Deploys an operating system image on the computers by using the selected physical computer profile.
-- Installs the failover clustering feature, and the Hyper-V role and MPIO feature.
-- Brings the provisioned cluster under VMM management
+1. Discovers the physical computers through out-of-band management.
+2. Deploys an operating system image on the computers by using the selected physical computer profile.
+3. Installs the failover clustering feature, and the Hyper-V role and MPIO feature.
+4. Brings the provisioned cluster under VMM management
 
+Provision as follows:
 
 1. Click **Fabric** > **Servers** > **Add** > **Add Resources** > **Hyper-V Hosts and Clusters**.
 2. In **General Configuration**, specify a name for the host cluster. Choose a storage configuration if required:
@@ -224,6 +226,4 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 11. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 12. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
 
->[!NOTE] 
-
->To add a new node to an existing S2D deployment from bare metal, you must configure RDMA settings.  Use [this script](#pcp-post-deployment-settings) to configure the RDMA settings.
+To add a new node to an existing S2D deployment from bare metal, you must configure RDMA settings.  Use [this script](#pcp-post-deployment-settings) to configure the RDMA settings.
