@@ -5,7 +5,7 @@ description: This article describes about how to route network traffic between p
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 08/31/2017
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -66,7 +66,7 @@ Since the GRE protocol is lightweight and support for GRE is available on most o
 10.	You can use the defaults for the remaining settings.
 11.	To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
-## Configure IPsec and GRE Connections on the remote site
+## Configure IPsec and GRE connections on the remote site
 
 On the remote peer device, use the  **VM network endpoint IP address** from the VMM UI as destination Address while setting up the IPSec\GRE connection.
 
