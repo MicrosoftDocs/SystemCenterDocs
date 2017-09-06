@@ -1,11 +1,11 @@
 ---
 ms.assetid: 350b385c-dc51-421c-a954-623a7fd416c2
 title: Provision a Hyper-V host or cluster from bare metal computers
-description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric
+description: This article explains how to provision Hyper-V hosts or clusters from bare metal computers in the VMM fabric.
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/20/2016
+ms.date:  09/05/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -30,6 +30,7 @@ Here's how you do this:
 
 
 ## Before you start
+Ensure the following prerequisites:
 
 **Component** | **Prerequisite** | **Details**
 --- | --- | ---
@@ -44,9 +45,6 @@ Here's how you do this:
 **Networking** | Logical networks | If you have already configured logical networks or logical switches in VMM, you can include those configurations in a physical computer profile.<br/><br/> To include a logical switch that you want to apply to physical NICs in a physical computer profile (for hosts or host clusters), you must first take certain steps. Make sure that you have installed the intended number of NICs on the host computer or computers. In addition, before you create the physical computer profile in VMM, create the logical switch.<br/><br/> To include static IP addressing controlled through a logical network in a physical computer profile configure the logical network. The logical network must include at least one network site and static IP address pool. The network site must also be available to the host group or to a parent host group where you want to assign the hosts that you are creating from bare metal.</br><br/> To include a virtual NIC for hosts in a physical computer profile (for hosts or host clusters), you must first take certain steps. Make sure that you have installed the intended number of physical NICs on the computer or computers that are to become hosts. In addition, on the VMM management server, install all necessary virtual switch extensions and extension providers, create at least one VM network, and create a logical switch. In the logical switch, as a best practice, include one or more port classifications for the virtual ports.
 **Physical computer profile** | Answer file | If you want a physical computer profile to include references to an answer file (Unattend.xml file) or to custom resources (for example, an application installer that is referenced in post-deployment script commands), create the answer file or obtain the custom resources before deployment, and add them to a VMM library share. Within a library share, place custom resources in one or more folders with a .CR (custom resource) extension. VMM recognizes them as custom resources. For example, you might want to create an answer file to enable Remote Desktop Services and place it on a library share. Then you can select that file when you configure a physical computer profile.<br/><br/> By default when you deploy servers or clusters from bare metal, VMM automatically performs the following (no answer file or post-deployment commands needed): Installs the Hyper-V role for Hyper-V hosts. Installs the Hyper-V role, failover cluster feature, and multipath I/O (MPIO) for Hyper-V clusters.
 **Accounts** | You need two Run As accounts.<br/><br/> A Run As account for joining computers to the domain. You can create a Run As account in the Settings workspace.<br/><br/> A Run As account for access to the baseboard management controller (BMC) on each computer.
-
-
-
 
 ## Add a PXE server to the VMM fabric
 
@@ -82,14 +80,87 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 8. In **Host Settings** specify the path of the host to store the files that are associated with virtual machines placed on the host. Don't specify drive C because it's not available for placement. If you don't specify a path, VMM placement determines the most suitable location.
 9. In **Summary** verify the settings. Wait until Jobs shows a status of completed, and then verify the profile in **Library** > **Profiles** > **Physical Computer Profiles**.
 
+### PCP post deployment settings
+After you successfully create and deploy the PCP,  use the following script to configure additional settings such as QoS, RDMA, SET.
+
+```powershell
+# Install data center bridging
+Install-WindowsFeature Data-Center-Bridging
+
+#Enable RDMA, assuming customer chosen switch name for storage as Storage1Switch and Storage2Switch
+Enable-NetAdapterRDMA "Storage1Switch"
+Enable-NetAdapterRDMA "Storage2Switch"
+
+# set Qos Policy
+New-NetQosPolicy "SMB" -NetDirectPortMatchCondition 445 -PriorityValue8021Action 3
+
+# Enable net qos flow control
+Enable-NetQosFlowControl  -Priority 3
+
+# Disable net qos flow control other than 3
+Disable-NetQosFlowControl  -Priority 0,1,2,4,5,6,7
+
+# Enable net adapter qos on all adapters
+Enable-NetAdapterQos  -InterfaceAlias "*"
+
+# set qos traffic class
+New-NetQosTrafficClass "SMB"  -Priority 3  -BandwidthPercentage 50  -Algorithm ETS
+
+# Install windows feature
+Install-WindowsFeature –Name Hyper-V
+
+Install-WindowsFeature –Name RSAT-Hyper-V-Tools
+
+# set net adapter property "encapsulated overhead"
+NetAdapterAdvancedProperty -Name "*" -DisplayName "Encapsulated Overhead" -DisplayValue "160"
+
+#disable ipv6
+netsh int ipv6 isatap set state disabled
+
+#Configure SET team mapping between virtual network adapter to physical network adapters. (Note: to get names of adapters, use command Get-NetAdapater. For team mapping use command
+$physicalAdapters = Get-NetAdapter -Physical
+$virtualStorageAdapter1 = Get-VMNetworkAdapter -ManagementOS | Where-Object {$_.Name -eq "Storage1Switch"}
+$virtualStorageAdapter1 = Get-VMNetworkAdapter -ManagementOS | Where-Object {$_.Name -eq "Storage2Switch"}
+
+Set-VMNetworkAdapterTeamMapping -ManagementOS -PhysicalNetAdapterName $physicalAdapters[0].Name -VMNetworkAdapterName $virtualStorageAdapter1.Name
+Set-VMNetworkAdapterTeamMapping -ManagementOS -PhysicalNetAdapterName $physicalAdapters[1].Name -VMNetworkAdapterName $virtualStorageAdapter2.Name
+
+#Set firewall rules.
+[System.String[]]$Alias=@("vEthernet (WssdStorage2)", "vEthernet WssdStorage1)");
+$Profile ='Any'
+$Name="File and Printer Sharing"
+$rules = Get-NetFirewallRule -DisplayGroup $Name
+
+foreach ($rule in $rules)
+     {
+   		 $rule | Get-NetFirewallAddressFilter | Set-NetFirewallAddressFilter -  
+         LocalAddress Any -RemoteAddress Any
+     }
+
+ Set-NetFirewallRule -DisplayGroup $Name -Enabled True -Profile $Profile – InterfaceAlias $Alias
+ $Profile='Any'
+ $Name=='FPS-LLMNR-In-UDP'
+ Set-NetFirewallRule -Name $Name -Enabled True -Profile $Profile
+ [System.String[]]$Alias=@("Storage2Switch", "Storage1Switch", "ManagementSwitch");
+ $Profile ='Any'
+ $Name="Windows Remote Management"
+ Set-NetFirewallRule -DisplayGroup $Name -Enabled True -Profile $Profile –InterfaceAlias $Alias
+
+ #Set assurance settings
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard /v EnableVirtualizationBasedSecurity /t REG_DWORD /d 1 /f
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard /v RequirePlatformSecurityFeatures /t REG_DWORD /d 2 /f
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\LSA /v LsaCfgFlags /t REG_DWORD /d 1 /f
+ reg add HKLM\SYSTEM\CurrentControlSet\Control\LSA /v DisableRestrictedAdmin /t REG_DWORD /d 0 /f
+ ```
+
 ## Provision a Hyper-V host from bare metal
 
-When you deploy a Hyper-V host from bare metal VMM does the following:
+When you deploy a Hyper-V host from bare metal, VMM does the following:
 
-1. Discovers the physical computer through out-of-band management
-2. Deploys an operating system image on the computer through the physical computer profile
-3. Enables the Hyper-V role on the computer
-4. Brings the computer under VMM management as a managed Hyper-V host
+1. Discovers the physical computer through out-of-band management.
+2. Deploys an operating system image on the computer through the physical computer profile.
+3. Enables the Hyper-V role on the computer.
+4. Brings the computer under VMM management as a managed Hyper-V host.
 
 Provision as follows:
 
@@ -121,27 +192,30 @@ When you deploy a Hyper-V cluster from bare metal VMM does the following:
 3. Installs the failover clustering feature, and the Hyper-V role and MPIO feature.
 4. Brings the provisioned cluster under VMM management
 
+Provision as follows:
 
 1. Click **Fabric** > **Servers** > **Add** > **Add Resources** > **Hyper-V Hosts and Clusters**.
-1. In **General Configuration**, specify a name for the host cluster. Choose a storage configuration if required:
+2. In **General Configuration**, specify a name for the host cluster. Choose a storage configuration if required:
     - For shared storage, click **Storage connected to the cluster using shared SAS, FC, or iSCSI**.
     - For Storage Spaces Direct, click **Disk subsystem directly connected to individual nodes in the cluster**.
-1. In **Resource Type** > select **Physical computers to be provisioned**:
+3. In **Resource Type** > select **Physical computers to be provisioned**:
     - Specify the administrator Run As account to use for creating the cluster.
     - Select the physical computer profile (which provides the domain name and administrator Run As account for each node).
     - Next to the **BMC Run As** account box, click **Browse**, and select a Run As account that has permissions to access the BMC.
     - In the **Out-of-band management** protocol list, click the protocol that your BMCs use. If you want to use Data Center Management Interface (DCMI), click Intelligent Platform Management Interface (IPMI). Although DCMI 1.0 is not listed, it is supported. Ensure that the correct port is selected.
     - If the **Skip cluster validation** option appears, and you don't need support from Microsoft for this cluster, you can skip validation.
-1. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
-1. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses), and select the ones you want to include in the cluster.
-1. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, click **Refresh**. Allow or skip deep discovery. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. Then click **Next**.
-1. In **Deployment Customization** provide information for each computer that you want to include. If you see a computer that you don't want to include, select the BMC (identified by IP address) and then click **Remove**.
+4. In **Discovery Scope**, specify the IP address scope that includes the IP addresses of the BMCs. You can enter a single IP address, an IP subnet, or an IP address range. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. You can allow or skip deep discovery.
+5. If you specified a single IP address on the previous page, skip this step. Otherwise, the **Target Resources** page appears. Review the list of discovered BMCs (identified by IP addresses), and select the ones you want to include in the cluster.
+6. If you don't see all the BMCs that you expect, confirm that they are on a network accessible to the VMM server, and as needed, click **Refresh**. Allow or skip deep discovery. Deep discovery provides detailed information about a computer (for example, MAC addresses of network adapters) but restarts the computer, and requires additional time. Then click **Next**.
+7. In **Deployment Customization** provide information for each computer that you want to include. If you see a computer that you don't want to include, select the BMC (identified by IP address) and then click **Remove**.
     - To configure computers click the BMC IP address. Specify a unique computer name, without wildcard characters.
     - Select or clear **Skip Active Directory for this computer name**. The Active Directory check prevents deployment if the computer account already exists. Note that if you skip the check and there's an existing computer account in AD other than the Run As account that was specified in the physical computer profile, the deployment process fails to join the computer to the domain.
     - For the computer you are configuring, click a network adapter. You can modify the configuration, or fill in more information.
     - You can specify the MAC address of the management NIC (not the BMC) and static IP settings for this network adapter. If you specify an address select a logical network and an IP subnet if applicable.  If the selected IP subnet includes IP address pool, you can check **Obtain an IP address corresponding to the selected subnet**. Otherwise, type an IP address that is in within the logical network or its subnet. If you select an IP subnet, make sure that it corresponds to the physical location where you are deploying the host and to the network that the adapter is connected to. Otherwise, deployment may fail.
-1. Configure the network adapter settings for each network adapter. Note that if the number of physical network adapters in a computer does not match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then click **Remove**.
-1. Repeat the configuration for each BMC IP address in the list.
-1. When you have filled in needed information for all the computers you want to provision, click Next.
-1. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
-1. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
+8. Configure the network adapter settings for each network adapter. Note that if the number of physical network adapters in a computer does not match the number of physical network adapters that are defined in the physical computer profile, you must specify any information that is missing for the adapters. If you decide not to provision this computer right now (for example, if physical hardware needs to be installed or uninstalled), you can select the computer's BMC IP address from the list and then click **Remove**.
+9. Repeat the configuration for each BMC IP address in the list.
+10. When you have filled in needed information for all the computers you want to provision, click Next.
+11. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
+12. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
+
+To add a new node to an existing S2D deployment from bare metal, you must configure RDMA settings.  Use [this script](#pcp-post-deployment-settings) to configure the RDMA settings.
