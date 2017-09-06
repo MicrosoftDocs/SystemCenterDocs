@@ -84,13 +84,6 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 After you successfully create and deploy the PCP,  use the following script to configure additional settings such as QoS, RDMA, SET.
 
 ```powershell
-<########################################################################
- #                                                                      #
- #    Copyright (C) Microsoft Corporation. All rights reserved.         #
- #                                                                      #
- ########################################################################>
-
-
 # Install data center bridging
 Install-WindowsFeature Data-Center-Bridging
 
@@ -158,7 +151,6 @@ foreach ($rule in $rules)
  reg add HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard /v RequirePlatformSecurityFeatures /t REG_DWORD /d 2 /f
  reg add HKLM\SYSTEM\CurrentControlSet\Control\LSA /v LsaCfgFlags /t REG_DWORD /d 1 /f
  reg add HKLM\SYSTEM\CurrentControlSet\Control\LSA /v DisableRestrictedAdmin /t REG_DWORD /d 0 /f
-
  ```
 
 ## Provision a Hyper-V host from bare metal
