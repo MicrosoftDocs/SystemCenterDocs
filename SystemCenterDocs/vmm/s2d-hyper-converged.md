@@ -35,10 +35,8 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 - Make sure you're running VMM 2016.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed, and be configured to host VMs.
+- Note that you need to configure RDMA, QOS and SET for S2D nodes while deploying. Learn more.
 
-> [!NOTE]
-
-> While building S2D from bare metal computers, you may need to configure your NICs' RDMA settings. Use the [PCP post deployment script](hyper-v-bare-metal.md#pcp-post-deployment-settings) to configure these settings.   
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
@@ -57,6 +55,12 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
 ### Provision a cluster from bare metal machines
+
+> [!NOTE]
+
+> To configure RDMA and SET while building S2D from bare metal computers, you can use the PCP post deployment script. Here is the [sample script](hyper-v-bare-metal.md#sample-script).
+
+> Also, to add a new node to an existing S2D deployment from bare metal, you need to configure RDMA and SET. You can use the above script to configure these.
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. Note that:
 

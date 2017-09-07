@@ -81,7 +81,10 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 9. In **Summary** verify the settings. Wait until Jobs shows a status of completed, and then verify the profile in **Library** > **Profiles** > **Physical Computer Profiles**.
 
 ### PCP post deployment settings
-After you successfully create and deploy the PCP,  use the following script to configure additional settings such as QoS, RDMA, SET.
+After you successfully create and deploy the PCP,  you can configure additional settings such as RDMA, QoS, and SET using the PCP post deployment script.
+
+#### Sample script
+Here is the example script to configure RDMA, SET and QoS.
 
 ```powershell
 # Install data center bridging
@@ -218,4 +221,6 @@ Provision as follows:
 11. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 12. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
 
-To add a new node to an existing S2D deployment from bare metal, you must configure RDMA settings.  Use [this script](#pcp-post-deployment-settings) to configure the RDMA settings.
+>[!NOTE]
+
+> To add a new node to an existing S2D deployment from bare metal, you need to configure RDMA and SET. You can use the PCP post deployment script to configure these. Here is the [sample script](#sample-script).
