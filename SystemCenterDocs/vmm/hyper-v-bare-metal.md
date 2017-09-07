@@ -84,7 +84,7 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 After you successfully create and deploy the PCP,  you can configure additional settings such as RDMA, QoS, and SET using the PCP post deployment script.
 
 #### Sample script
-Here is the example script to configure RDMA, SET and QoS.
+Here is the sample script to configure RDMA, SET and QoS.
 
 ```powershell
 # Install data center bridging
