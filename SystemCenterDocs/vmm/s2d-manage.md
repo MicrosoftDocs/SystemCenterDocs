@@ -5,7 +5,7 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  08/08/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -23,9 +23,14 @@ You can [view and configure cluster settings](hyper-v-cluster.md#configure-clust
 
 ## Add a node to a hyper-converged cluster
 
-•	You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server, or a bare-metal physical server.
-•	When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D.
-•	VMM disables maintenance mode on disks, before adding them.
+-	You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server, or a bare-metal physical server.
+
+> [!NOTE]
+
+> To add a new node to an existing S2D deployment from bare metal, you need to configure RDMA and SET. You can use the PCP post deployment script to configure these. Here is the [sample script](hyper-v-bare-metal.md#sample-script).
+
+-	When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D.
+-	VMM disables maintenance mode on disks, before adding them.
 
 ## Control storage resources with QoS
 
