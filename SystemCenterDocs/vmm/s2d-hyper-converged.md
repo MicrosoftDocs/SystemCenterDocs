@@ -35,7 +35,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 - Make sure you're running VMM 2016.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed, and be configured to host VMs.
-- Note that you need to configure RDMA, QOS and SET for S2D nodes while deploying. Learn more.
+- Note that you need to configure RDMA, QoS and SET for S2D nodes while deploying. [Learn more](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming).
 
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
