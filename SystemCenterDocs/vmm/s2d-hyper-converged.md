@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  09/05/2017
+ms.date:  09/11/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -35,10 +35,8 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 - Make sure you're running VMM 2016.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed, and be configured to host VMs.
+- Note that you need to configure RDMA, QoS and SET for S2D nodes while deploying. [Learn more](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming).
 
-> [!NOTE]
-
-> While building S2D from bare metal computers, you may need to configure your NICs' RDMA settings. Use the [PCP post deployment script](hyper-v-bare-metal.md#pcp-post-deployment-settings) to configure these settings.   
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
@@ -57,6 +55,12 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
 ### Provision a cluster from bare metal machines
+
+> [!NOTE]
+
+> Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
+
+>You can also use this script to add a new node to an existing S2D deployment from bare metal computers.
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. Note that:
 

@@ -5,7 +5,7 @@ description: This article describes how to set up and manage Storage Spaces Dire
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  09/09/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -23,9 +23,16 @@ You can [view and configure cluster settings](hyper-v-cluster.md#configure-clust
 
 ## Add a node to a hyper-converged cluster
 
-•	You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server, or a bare-metal physical server.
-•	When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D.
-•	VMM disables maintenance mode on disks, before adding them.
+-	You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server, or a bare-metal physical server.
+
+> [!NOTE]
+
+> Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
+
+> You can also use this script to add a new node to an existing S2D deployment from bare metal computers.
+
+-	When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D.
+-	VMM disables maintenance mode on disks, before adding them.
 
 ## Control storage resources with QoS
 
