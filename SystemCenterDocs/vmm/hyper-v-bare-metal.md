@@ -5,7 +5,7 @@ description: This article explains how to provision Hyper-V hosts or clusters fr
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  09/05/2017
+ms.date:  09/09/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -220,7 +220,3 @@ Provision as follows:
 10. When you have filled in needed information for all the computers you want to provision, click Next.
 11. In **Summary** confirm the settings, and then click **Finish** to deploy the new Hyper-V hosts and bring them under VMM management. Depending on your settings, the Jobs dialog box might appear. Make sure that all steps in the job have a status of Completed, and then close the dialog box.
 12. To confirm that the host was added click **Fabric** > **Servers** > **All Hosts** > and locate and click the new host cluster. In the **Hosts** pane, in the **Host Status** column, verify that each node in the cluster is OK.
-
->[!NOTE]
-
-> To add a new node to an existing S2D deployment from bare metal, you need to configure RDMA and SET. You can use the PCP post deployment script to configure these. Here is the [sample script](#sample-script).

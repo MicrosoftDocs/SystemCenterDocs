@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  09/05/2017
+ms.date:  09/09/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -58,9 +58,9 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 > [!NOTE]
 
-> To configure RDMA and SET while building S2D from bare metal computers, you can use the PCP post deployment script. Here is the [sample script](hyper-v-bare-metal.md#sample-script).
+> Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
 
-> Also, to add a new node to an existing S2D deployment from bare metal, you need to configure RDMA and SET. You can use the above script to configure these.
+>You can also use this script to add a new node to an existing S2D deployment from bare metal computers.
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. Note that:
 
