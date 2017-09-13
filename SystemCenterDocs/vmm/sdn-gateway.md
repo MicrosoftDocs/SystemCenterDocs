@@ -176,9 +176,9 @@ The service instance you deployed is now associated with the gateway Manager rol
 After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 For additional information, see the following contents:
 
-- [Create and validate site-to-site IPSec connections](sdn-route-network-traffic.md#configure_ipsec_connection)
-- [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure_gre_tunneling)
-- [Create and validate L3 connections](sdn-route-network-traffic.md#configure_l3_forwarding)
+- [Create and validate site-to-site IPSec connections](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?branch=pr-en-us-1505#configure-ipsec-connection)
+- [Create and validate site-to-site GRE connections](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?branch=pr-en-us-1505#configure-gre-tunneling)
+- [Create and validate L3 connections](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?branch=pr-en-us-1505#configure-l3-forwarding)
 
 
 **Note**:
