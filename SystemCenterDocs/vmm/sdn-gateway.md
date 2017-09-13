@@ -176,13 +176,12 @@ The service instance you deployed is now associated with the gateway Manager rol
 After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connection types, and validate them.
 For additional information, see the following contents:
 
-- [Create and validate site-to-site IPSec connections](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?branch=pr-en-us-1505#configure-ipsec-connection)
-- [Create and validate site-to-site GRE connections](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?branch=pr-en-us-1505#configure-gre-tunneling)
-- [Create and validate L3 connections](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?branch=pr-en-us-1505#configure-l3-forwarding)
+- [Create and validate site-to-site IPSec connections](sdn-route-network-traffic.md#configure-ipsec-connection)
+- [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure-gre-tunneling)
+- [Create and validate L3 connections](sdn-route-network-traffic.md#configure-l3-forwarding)
 
 
-**Note**:
-- Currently, SCVMM console does not support bandwidth changes for a VPN connection. By default, the inbound and outbound bandwidth is set as 500 Kbps.
+**Note**:sdn-route-network-traffic#configure-ipsec-connection)dwidth is set as 500 Kbps.
 
     To change bandwidth settings, you must use the following network controller PowerShell command:
 
