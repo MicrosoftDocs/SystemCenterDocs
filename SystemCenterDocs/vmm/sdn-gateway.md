@@ -177,7 +177,7 @@ After you deploy the gateway, you can configure S2S GRE, S2S IPSec, or L3 connec
 For additional information, see the following contents:
 
 - [Create and validate site-to-site IPSec connections](sdn-route-network-traffic.md#configure_ipsec_connection)
-- [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure_gre_tunnelling)
+- [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure_gre_tunneling)
 - [Create and validate L3 connections](sdn-route-network-traffic.md#configure_l3_forwarding)
 
 
