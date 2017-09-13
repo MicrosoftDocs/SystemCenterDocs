@@ -60,7 +60,7 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 > Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
 
->You can also use this script to add a new node to an existing S2D deployment from bare metal computers.
+> You can also use this script to configure RDMA, QoS and SET while adding a new node to an existing S2D deployment from bare metal computers.
 
 1.	Read the [prerequisites](hyper-v-bare-metal.md#before-you-start) for bare-metal cluster deployment. Note that:
 
