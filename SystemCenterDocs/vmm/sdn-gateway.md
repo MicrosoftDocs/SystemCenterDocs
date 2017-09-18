@@ -180,21 +180,6 @@ For additional information, see the following contents:
 - [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure-gre-tunneling)
 - [Create and validate L3 connections](sdn-route-network-traffic.md#configure-l3-forwarding)
 
-
-**Note**:sdn-route-network-traffic#configure-ipsec-connection)dwidth is set as 500 Kbps.
-
-    To change bandwidth settings, you must use the following network controller PowerShell command:
-
-    **New-NetworkControllerVirtualGatewayNetworkConnection** with the parameters **OutboundKiloBitsPerSecond** and **InboundKiloBitsPerSecond**.
-
-    After changing the bandwidth, in case of any further changes to the VPN connection through the SCVMM, the bandwidth settings will be reset to the default value (500 Kbps). You must run the NC PowerShell command once again, to make any changes to the bandwidth settings.
-
-
-- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.
-
-- For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
-
-
 For more information on connection types, see [this](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
 
 
