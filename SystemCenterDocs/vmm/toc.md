@@ -23,7 +23,7 @@
 ### [Control SDN virtual network bandwidth with QoS](sdn-bandwidth-qos.md)
 ### [Load balance network traffic](sdn-load-balance-network-traffic.md)
 ### [Set up NAT for traffic forwarding in an SDN](sdn-set-up-nat.md)
-### [Route traffic across networks in the SDN infrastructure](sdn-route-network-traffic)
+### [Route traffic across networks in the SDN infrastructure](sdn-route-network-traffic.md)
 ## [Deploy and manage Storage Spaces Direct](s2d.md)
 ### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
 ### [Set up a disaggregated Storage Spaces Direct cluster](s2d-disaggregated.md)
