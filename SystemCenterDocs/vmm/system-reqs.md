@@ -5,7 +5,7 @@ description: This article provides information about system requirements for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/05/2017
+ms.date:  09/25/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -40,7 +40,7 @@ Library Objects (templates, profiles)| 100
   **Hardware** | **VMM server** | **VMM database** | **VMM  library** | **VMM console**
   --- | --- | --- | --- | ---
   **Processor (minimum)** | 8 core Pentium 4, 2GHx (x64) | 8 core Pentium 4, 2.8GHx | 4 core Pentium 4, 2.8GHz | 2 core Pentium 4, 1 GHz CPU
-  **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.66 GHz CPU | 2 core 2 GHz CPU
+  **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
   **RAM (minimum)** | 4 GB | 8 GB | 2 GB | 4 GB
   **RAM (recommended)** | 16 GB | 16 GB | 4 GB | 4 GB
   **Hard drive (minimum)** | 4 GB | 50 GB | Based on size/amount of stored files | 10 GB
