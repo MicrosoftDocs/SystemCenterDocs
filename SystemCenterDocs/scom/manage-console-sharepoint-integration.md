@@ -4,7 +4,7 @@ description: This article describes how deploy the Operations Manager Web consol
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/30/2017
+ms.date: 09/27/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -118,23 +118,19 @@ The following procedure creates a SharePoint page with the Operations Manager Da
   
 3.  Enter a name for the page, and then click **Create**.  
   
-4.  The new page opens with editing tools available. Below **Editing Tools**, click **Insert**.  
+4.  The new page opens with editing tools available. Click **Insert**.  
   
 5.  On the **Insert** toolbar, click **Web Part**.  
   
-6.  In **Categories**, click **Microsoft System Center**.  
+6.  In **Categories**, select **Media and Content** and then select **Page Viewer**.  Click **Add** to the page.    
   
-7.  In **Web Parts**, click **Operations Manager Dashboard Viewer Web Part**, and then click **Add**.  
+7.  Click the arrow in the top right of the web part, and then click **Edit web part**.  
   
-8.  Click the arrow in the top right of the web part, and then click **Edit web part**.  
-  
-9. Select the web console server in the **Dashboard Server** field, and enter the URI for the dashboard in the **Dashboard Parameters** field.  Append `&disabletree=true` at the end of the URI to disable the tree view from being displayed on the SharePoint page.  
+8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard.  Append `&disabletree=true` at the end of the URL to disable the tree view from being displayed on the SharePoint page.  
 
-10. Click **OK**.  
-  
-11. On the menu bar, click **Page**.  
-  
-12. Click **Save & Close**.  
+9. Configure the appearance, layout, and Advance properties of the SharePoint page, and then click **OK**.
+
+10. On the menu bar, click **Save & Close**.  
   
 > [!NOTE]  
 > After you correctly set up a dashboard web part in SharePoint, you might receive an error message saying "ticket has expired". This is because there is a very narrow time-out for an override ticket (by default, 5 seconds). If the time on the server running SharePoint and the Web console server differ by more than this value, the connection fails. This is a likely situation if the computers are in different domains and are using a different time source. You can increase the time-out on the SharePoint Server in the web console list, but this would make the server more vulnerable to attack. The best solution is to synchronize the time between the server running SharePoint and the web console server.  
