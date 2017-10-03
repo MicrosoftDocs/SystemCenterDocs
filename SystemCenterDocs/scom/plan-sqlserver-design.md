@@ -4,8 +4,8 @@ title: SQL Server Design Considerations
 description:  This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.  
 author: mgoedtel
 ms.author: magoedte
-manager:  cfreeman
-ms.date: 02/14/2017
+manager:  carmonm
+ms.date: 10/02/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -23,14 +23,12 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 ## SQL Server requirements
 
-The following versions of SQL Server are supported for a new or existing installation of Operations Manager.
+The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-|Component | SQL Server 2012, SP3 Enterprise/Standard (x64) | SQL Server 2014, SP2 Enterprise/Standard (x64) | SQL Server 2016 Enterprise/Standard (x64) 
-|-----------|---------------|---------------|---------------|
-| **Operations Manager** Operational Database | yes | yes | yes | 
-| **Operations Manager** Data Warehouse Database | yes | yes | yes |
-| **Operations Manager** ACS Database | yes | yes | yes |
-| **Operations Manager** Reporting Server | yes | yes | yes |
+* SQL Server 2016, Service Pack 1 (x64)
+* SQL Server 2016 (x64)
+* SQL Server 2014, Service Pack 2 (x64)
+* SQL Server 2012, Service Pack 3 (x64)
 
 > [!NOTE] 
 > System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
@@ -143,6 +141,40 @@ To set up an availability group you'll need to deploy a Windows Server Failover 
 - [Learn more](https://msdn.microsoft.com/en-us/library/ff878487.aspx) about Always On prerequisites
 - [Learn more](https://msdn.microsoft.com/en-us/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
 - [Learn more](https://msdn.microsoft.com/en-us/library/ff878265.aspx) about setting up an availability group
+
+### Multisubnet string
+
+Operations Manager does not support the connection string key words (MultiSubnetFailover=True).  Because an availability group has a listener name (known as the network name or Client Access Point in the WSFC Cluster Manager) depending on multiple IP addresses from different subnets, such as when you deploy in a cross-site failover configuration, client-connection requests from management servers to the availability group listener will hit a connection timeout.  
+
+The recommended approach to work around this when you have deployed server nodes in the availability group in a multi-subnet environment, is to do the following:
+
+1.	Set the network name of your availability group listener to only register a single active IP address in DNS 
+2.	Configure the cluster to use a low TTL value for the registered DNS record
+
+These settings allow, when failover to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
+
+Run the following Powershell query on any one of the SQL nodes to modify its settings.
+
+    ```
+    Import-Module FailoverClusters
+    Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
+    Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
+    Stop-ClusterResource "Cluster Name"
+    Start-ClusterResource "Cluster Name"
+    ```
+If you are using Always On with a listener name, you should also make these configurations changes on the listener. 
+
+Run the following Powershell query on the SQL node currently hosting the listener to modify its settings.
+
+    ```
+    Import-Module FailoverClusters
+    Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
+    Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter HostRecordTTL 300
+    Stop-ClusterResource <Listener Cluster Resource name>
+    Start-ClusterResource <Listener Cluster Resource name>
+    ```
+
+When a SQL cluster failover between different subnets occurs, you will have to restart the Operations Manager Data Access service on all your Management Servers.
 
 ## Optimizing SQL Server
 
