@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 08/01/2017
+ms.date: 10/10/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -69,6 +69,12 @@ The communication between the Operations Manager management server and UNIX/Linu
 > [!NOTE] 
 > All credentials referred to in this topic pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
 
+To support the new scalability improvements with how many UNIX and Linux systems System Center 2016 - Operations Manager can monitor per management server, Operations Manager now uses the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs, which it uses by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. Perform the following steps:
+
+1. Open the **Registry Editor** from an elevated command prompt.
+2. Create registry key** UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
+
+If you need to restore the original configuration using the WSMAN Sync APIs, you can delete the **UseMIAPI** registry key.
 
 ## Agent security 
 
