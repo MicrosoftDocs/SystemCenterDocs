@@ -166,22 +166,22 @@ This procedure requires no additional VMM servers, but has increased risk for do
 	- Don't specify a port value if you're using local SQL server, or if your remote SQL server uses the default port (1443).
 	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
 9.	In **Cluster configuration** page, type a name for the VMM high availability deployment.
->[!NOTE]
-> Don't use the cluster name or the name of the computer on which you're installing the VMM. This name is used when you connect to VMM using the VMM console.
+	>[!NOTE]
+	> Don't use the cluster name or the name of the computer on which you're installing the VMM. This name is used when you connect to VMM using the VMM console.
 
 10.	If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
 11.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
-	>{!NOTE]
-> You can't change the identity of the VMM service account after installation.
+	>[!NOTE]
+	> You can't change the identity of the VMM service account after installation.
 
 12.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
-	>{!NOTE]
+	>[!NOTE]
 	> Choose the settings carefully for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
 
 13.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
-	>{!NOTE]
+	>[!NOTE]
 	>You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
 
 14.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
