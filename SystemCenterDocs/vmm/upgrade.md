@@ -171,12 +171,13 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 10.	If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
 11.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
->{!NOTE]
+
+	>{!NOTE]
 > You can't change the identity of the VMM service account after installation.
 
 12.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
->{!NOTE]
-> Choose the settings carefully for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
+	>{!NOTE]
+	> Choose the settings carefully for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
 
 13.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
