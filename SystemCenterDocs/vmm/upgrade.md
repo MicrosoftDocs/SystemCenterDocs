@@ -5,7 +5,7 @@ description: This article explains how upgrade VMM servers and databases to VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/07/2017
+ms.date: 13/10/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -98,7 +98,7 @@ During setup, VMM enables the following firewall rules. These rules remain in ef
 
 ## Upgrade a highly available VMM server
 
-You can upgrade a highly available (HA) VMM 2012 R2 UR9 or a later version to VMM 2016.
+You can upgrade a highly available (HA) VMM 2012 R2 UR9 server or a later version to VMM 2016.
 
 The following two modes of upgrade are supported:
 
@@ -110,14 +110,12 @@ The following two modes of upgrade are supported:
 > SQL Server upgrade can be performed any time, independent of VMM upgrade.
 
 ### Mixed mode upgrade with no additional VMM servers
-> [!NOTE]
->
-This procedure requires no additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM. and the active VMM node fails while you are upgrading the passive. In this scenario, your VMM server will not have a failover node available.
+This procedure requires no additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you are upgrading the passive. In this scenario, your VMM server will not have a failover node available.
 
-**Follow these steps to upgrade**:  
+**Follow these steps**:  
 
 1.	Backup and retain the VMM database.
-2.	Uninstall VMM 2012 R2 UR9 from HA passive node by using the following steps:
+2.	Uninstall VMM 2012 R2 UR9 (or a later version) from HA passive node by using the following steps:
 
 	- Go to **Add remove programs**, select **VMM** and click **Uninstall**.
  	- On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
@@ -125,27 +123,24 @@ This procedure requires no additional VMM servers, but has increased risk for do
 	- Review the summary and click **Uninstall**.
 3.	On the passive VMM node, upgrade the management OS to Windows Server 2016 .
 4.	Upgrade to the Windows 10 version of the ADK.
-5.	Install VMM 2016 on the passive node by using [these steps](##installation-procedure)
+5.	Install VMM 2016 on the passive node by using [these steps](#installation-procedure).
 6.	Failover the active VMM node to the newly upgraded VMM server.
 7.	 Repeat the steps 2 to 5 for the procedure on  other VMM nodes.
 8.	[Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
-> [!NOTE]
+This procedure requires additional VMM servers, however, ensures almost no downtime in all the scenarios.
 
-> This procedure requires additional VMM servers, however, ensures almost no downtime in all scenarios.
-
-**Follow these steps to upgrade**:
+**Follow these steps**:
 
 1.	Backup and retain the VMM database.
-2.	Add same number of additional servers with Windows Server 2016 Management OS that equals to the server number present in the HA cluster.
+2.	Add the same number of additional servers (with Windows Server 2016 Management OS) that equals to the server number present in the HA cluster.
 3.	Install VMM 2016 on one of the newly added servers by using [this procedure](#installation-procedure).   
 4.	Repeat the installation steps for all other newly added servers.
 5.	Failover the active VMM node to one of the newly added servers.
 6.	Uninstall VMM 2012 R2 from all nodes and evict the nodes from cluster .
 
 > [!NOTE]
-
 >  
 - Once the HA VMM upgrade is successful, upgrade the host agent manually, by using the VMM.  
 - No user driven action present in VMM to update guest agents.
@@ -157,7 +152,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 3.	In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
 4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement **check box, and then click **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then click **Next**.
-6.	If Microsoft Update appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
+6.	If **Microsoft Update** page appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
 7.	In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**.
 8.	In **Database configuration**:
 	- 	[Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server
@@ -177,12 +172,12 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 12.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 	>[!NOTE]
-	> Choose the settings carefully for the service account and distributed key management. Depending on what you choose encrypted data such as passwords in templates might not be available after the upgrade and you'll need to enter them manually.
+	> Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
 
 13.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
 	>[!NOTE]
-	>You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, because that port number is preassigned.
+	>You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, this port number is preassigned.
 
 14.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 15.	In **Upgrade compatibility report**, review the settings, click **Next** to proceed with the upgrade.
