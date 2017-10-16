@@ -80,6 +80,7 @@ Use the following procedures:
 - On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
 - On database options page, select **Retain database**.
 - Review the summary and click **Uninstall**.
+
 ### Install VMM 2016
 
 1.	In the main setup page, click **Install** .
