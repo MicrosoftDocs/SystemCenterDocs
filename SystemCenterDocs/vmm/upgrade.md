@@ -164,7 +164,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 > [!NOTE]
 >  
-- Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
+ Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
 
 
 ## Upgrade the VMM SQL Server database
