@@ -71,7 +71,7 @@ Use the following procedures:
 
 ### Backup and upgrade OS
 1.	Backup and retain the VMM database.
-2.	Uninstall the VMM. Ensure to remove both the management server and console. [Learn more](#uninstall-the-vmm).
+2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
 3.	Upgrade the management OS to Windows Server 2016.
 4.	Upgrade to the Windows 10 version of the ADK.
 
@@ -164,8 +164,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 > [!NOTE]
 >  
-- Once the HA VMM upgrade is successful, upgrade the host agent manually, by using the VMM.  
-- No user driven action present in VMM to update guest agents.
+- Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
 
 
 ## Upgrade the VMM SQL Server database
