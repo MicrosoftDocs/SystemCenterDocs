@@ -71,15 +71,15 @@ Use the following procedures:
 
 ### Backup and upgrade OS
 1.	Backup and retain the VMM database.
-2.	Uninstall the VMM. Ensure to remove both the management server and console.
-    #### Uninstall the VMM
-	- Go to **Add remove programs**, select **VMM** and click **Uninstall**.
-	- On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
-	- On database options page, select **Retain database**.
-	- Review the summary and click **Uninstall**.
+2.	Uninstall the VMM. Ensure to remove both the management server and console. [Learn more](#uninstall-the-vmm).
 3.	Upgrade the management OS to Windows Server 2016.
 4.	Upgrade to the Windows 10 version of the ADK.
 
+#### Uninstall the VMM
+- Go to **Add remove programs**, select **VMM** and click **Uninstall**.
+- On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
+- On database options page, select **Retain database**.
+- Review the summary and click **Uninstall**.
 ### Install VMM 2016
 
 1.	In the main setup page, click **Install** .
@@ -90,7 +90,7 @@ Use the following procedures:
 6.	If **Microsoft Update** page appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
 7.	In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**.
 8.	In **Database configuration**:
-	- 	[Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server
+	- 	[Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
 	-  If you're using a remote SQL instance, specify the SQL server computer name.
 	-	If SQL server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 	- Don't specify a port value if you're using local SQL server, or if your remote SQL server uses the default port (1443).
