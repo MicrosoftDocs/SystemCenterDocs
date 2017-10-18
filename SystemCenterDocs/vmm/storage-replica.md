@@ -33,7 +33,7 @@ You can use Storage Replica to replicate Hyper-V cluster data or file data. Usin
 
 ## Before you start
 
-* VMM must be running on System Center 2016 Datacenter Edition.
+* VMM must be running on Windows Server 2016 Datacenter Edition.
 * Hyper-V must be running on Windows Server 2016 Datacenter, Server Core, or Nano.
 * Only synchronous replication is supported. Asynchronous isn't supported.
 * You need two sets of storage, either volume or file storage. Both the source and destination locations must have the same type of storage (file or volume) but the actual storage can be mixed. For example you could have Fibre Channel SAN at one end and Spaces Direct (in hyper-converged or disaggregated mode) at the other.
