@@ -34,7 +34,7 @@ The following directory-specific exclusions for Operations Manager includes real
 
 |Component | Directory Exclusion |
 |----------|----------|
-|SQL Server database server | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, as well as the **master** and **tempdb** databases. |
+|SQL Server database server | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, and the **master** and **tempdb** databases. |
 |Management server | C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\Health Service State |
 | Gateway server | C:\Program Files\System Center Operations Manager\Gateway\Health Service State |
 | Agent | C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State |
