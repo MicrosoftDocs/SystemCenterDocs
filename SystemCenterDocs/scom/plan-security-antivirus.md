@@ -24,10 +24,10 @@ If exclusions are configured based on process executable, exclude the following 
 * Monitoringhost.exe
 
 >[!NOTE]
->You must be very careful when you add exclusions that are based on executables. Incorrectly configured exclusions may prevent some potentially dangerous programs from being detected.  Because of this, we do not recommend relying on exclusions that are based on any process executables for Operations Manager servers.
+>You must be careful when you add exclusions that are based on executables. Incorrectly configured exclusions may prevent some potentially dangerous programs from being detected.  Therefore, we do not recommend relying on exclusions that are based on any process executables for Operations Manager servers.
 
 ## Exclusions by directories
-The following directory-specific exclusions for Operations Manager include real-time scans, scheduled scans and local scans. The directories that are listed here are default application directories so you may have to modify these paths based on your specific environment. Only the following Operations Manager related directories should be excluded.
+The following directory-specific exclusions for Operations Manager includes real-time scans, scheduled scans, and local scans. The directories that are listed here are default application directories so you may have to modify these paths based on your specific environment. Only the following Operations Manager related directories should be excluded.
 
 >[!NOTE]
 >When a directory that is to be excluded has a directory name greater than 8 characters long, add both the short and long directory names of the directory to the exclusion list. These names are required by some antivirus programs to traverse sub-directories.
@@ -45,8 +45,8 @@ The following file name extension-specific exclusions for Operations Manager 201
 
 |Component | File Type Extension Exclusion |
 |----------|----------|
-| SQL Server database server | Exclude file type extension .ldf and .mdf.<br>These exclusions include SQL Server database files for all Operations Manager databases,<br>Report Server databases, and the system database files for **master** and **tempdb**. |
-| Management Servers<br>Gateway Servers<br>Agents | Exclude file type extensions .edb, .chk, and .log.<br>These exclusions include the queue and log files used by Operations Manager. |
+| SQL Server database server | Exclude file type extension .ldf and .mdf.<br>These exclusions includes SQL Server database files for all Operations Manager databases,<br>Report Server databases, and the system database files for **master** and **tempdb**. |
+| Management Servers<br>Gateway Servers<br>Agents | Exclude file type extensions .edb, .chk, and .log.<br>These exclusions includes the queue and log files used by Operations Manager. |
 
 ## Next steps
 
