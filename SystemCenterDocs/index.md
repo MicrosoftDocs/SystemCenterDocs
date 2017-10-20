@@ -768,6 +768,27 @@ description: get-from-content-team
                             </li>
                             <li>
                                 <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                    <div class="cardText">
+                                                    <h3>System Center Release Notes</h3>
+                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/dpm/dpm-release-notes">DPM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/scom/get-started-release-notes">SCOM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/orchestrator/release-notes">Orchestrator Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/scsm/release-notes">SM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/vmm/release-notes">VMM Release Notes</a></p>
+                                                </div>
+                                            </div>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
