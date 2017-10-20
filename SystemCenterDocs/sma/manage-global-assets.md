@@ -3,7 +3,7 @@ description: Provides guidance and procedures for using global assets in an Auto
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  03/31/2017
@@ -291,6 +291,6 @@ Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value '
 
 ## Next steps
 
-- Read about building integration modules [Building an integration module](~/sma/build-integration-modules.md).
-- Read about authoring Automation runbooks [Authoring Automation runbooks](authoring-automation-runbooks.md).
+Read about building integration modules [Building an integration module](manage-integration-modules.md).
+Read about authoring Automation runbooks [Authoring Automation runbooks](authoring-automation-runbooks.md).
 

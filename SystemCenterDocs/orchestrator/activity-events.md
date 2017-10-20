@@ -1,5 +1,6 @@
 ---
 title: Activity Events
+description: This topic describes how to capture events triggered by activities in a runbook for monitoring success or performance issues.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -8,19 +9,19 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
-ms.author: cfreeman
+ms.author: raynew
 ms.date: 10/12/2016
-author: carmonm
-manager: cfreeman
+author: cfreemanwa
+manager: carmonm
 ---
 
-# Activity Events
+# Capture activity events to monitor runbooks
 
 > Applies To: System Center 2016 - Orchestrator
 
 Each activity in an Orchestrator runbook has the ability to send an event whenever it fails to run or is taking too long to run. These events are presented on the **Events** tab of the Runbook Designer or can be configured to be delivered to a receiver as an SNMP trap. Runbook activity events are only sent for those activities that you specifically configure to do so.  
 
-### To configure an activity to send events  
+## To configure an activity to send events  
 
 1.  Open the runbook in the **Runbook Designer**.  
 
@@ -44,7 +45,7 @@ To add an SNMP trap destination, run the **oedc** command one time for each dest
 
 For example, use the following procedure to send traps by using SNMP version 1 to an SNMP receiver at IP address 10.1.1.10 on port 162 and a community called public.  
 
-##### To add an SNMP trap destination  
+### To add an SNMP trap destination  
 
 1.  Open a command prompt with administrative credentials.  
 
@@ -59,7 +60,7 @@ You cannot remove individual SNMP trap destinations. Instead, you must remove al
 
 **oedc /snmp /clear**  
 
-##### To remove all SNMP trap destinations  
+### To remove all SNMP trap destinations  
 
 1.  Open a command prompt with administrative credentials.  
 
@@ -82,6 +83,7 @@ The variable bindings are listed in the following table.
 |Orchestrator Event Information IDs|Orchestrator Event Type - 1<br /><br />Orchestrator Event Summary - 2<br /><br />Orchestrator Event Details - 3|  
 |Example|Orchestrator Event Type - 1.3.6.1.4.1.4217.100.100.1<br /><br />Orchestrator Event Summary - 1.3.6.1.4.1.4217.100.100.2<br /><br />Orchestrator Event Details - 1.3.6.1.4.1.4217.100.100.3|  
 
-## See Also  
+## Next steps  
 
-[Orchestrator Logs](~/orchestrator/orchestrator-logs.md)  
+Look up the data that is captured when activities fire at [Orchestrator Logs](orchestrator-logs.md)  
+Read more about SNMP traps at [SNMP Traps in Windows Server](https://blogs.technet.microsoft.com/networking/2009/06/25/snmp-traps-in-windows-server/).

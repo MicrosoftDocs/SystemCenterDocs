@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/23/2017
+ms.date: 10/10/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -69,6 +69,12 @@ The communication between the Operations Manager management server and UNIX/Linu
 > [!NOTE] 
 > All credentials referred to in this topic pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
 
+To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which they use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
+
+1. Open the **Registry Editor** from an elevated command prompt.
+2. Create registry key** UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
+
+If you need to restore the original configuration using the WSMAN Sync APIs, you can delete the **UseMIAPI** registry key.
 
 ## Agent security 
 
@@ -78,6 +84,12 @@ In Operations Manager, the system administrator is no longer is required to prov
 
 
 For detailed instructions for specifying credentials and configuring accounts, see [How to Set Credentials for Accessing UNIX and Linux Computers](manage-security-create-crossplat-credentials.md).
+
+### Authentication with gateway server
+
+Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of management groups.  Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication. 
+
+This will require you to request certificates for each agent that will report to a gateway server and import those certificates into the target computer using the MOMCertImport.exe tool, which is located on the installation media SupportTools\ (amd64 or x86) directory.  You need to have access to a certification authority (CA) which can be a public CA such as VeriSign, or you can use Microsoft Certificate Services.  
 
 ## Agent deployment
 

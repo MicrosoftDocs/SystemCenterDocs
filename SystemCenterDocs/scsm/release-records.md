@@ -325,3 +325,7 @@ The change manager reviews the status and progress of a change request in the cu
         -   Filtering:  
             -   You can filter any returned search results by keywords and also by criteria such as class, last modified dates, and name.  
 6.  You can double\-click an activity to view its status and the details of its progress.  
+
+## Next steps
+
+- Read [Data warehouse reporting and analytics](dw-reporting.md) to learn about how Service Manager reports enable you to collect and view data and trends from across the business environment.

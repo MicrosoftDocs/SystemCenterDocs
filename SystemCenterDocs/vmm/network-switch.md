@@ -5,7 +5,7 @@ description: This article describes how to create logical switches in the VMM fa
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  07/20/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -99,17 +99,58 @@ Note that:
 
 ### Convert a host to use a logical switch
 
-Note that:
+> [!NOTE]
 
-- The conversion will not interrupt network traffic.
-- If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
+> - The following procedure is not applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
+> - The conversion will not interrupt network traffic.
+> - If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
 
-1. In VMM, click  **Fabric** ? **Servers** > **All Hosts**. Right-click the host > **Properties**.
+
+1. In VMM, click  **Fabric** > **Servers** > **All Hosts**. Right-click the host > **Properties**.
 2. On the **Virtual Switches** tab, click **Convert to Logical Switch**.
 3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use, and click **Convert**.
 4. The **Jobs** dialog box might appear, depending on your settings. Make sure that the job has a status of **Completed**, and then close the dialog box.
 5. To verify that the switch was converted, right-click the host, click **Properties**, and then click the **Virtual Switches** tab.
 
+#### Script for SET switch conversion
+
+> [!NOTE]
+
+> Create a logical switch in VMM with the same name as the SET switch that is deployed on the host.
+> Standard switch will be converted to this logical switch after you run the following script on the host.
+
+
+```powershell
+#Replace Virtual Switch name with already deployed switch name on host
+$VirtualSwitchName="SETswitch"
+
+#Replace logical switch ID below with the one got from Get-SCLogicalSwitch cmdlet for the switch created in VMM
+$LogicalSwitchId="45b98a8d-1887-4431-9f20-8b9beed853ce"
+
+#Replace the port profile set name with the one created and associated with the above logical switch in VMM
+$PortProfileSetName="Mgmt_UPP"
+
+#Replace uplink port profile set ID with the one got from Get-SCUplinkPortProfileSet for the port profile set created in VMM
+$PortProfileSetId="fd9e4c9a-4ffa-4845-808d-930e6616b62f"
+
+$vswitch=Get-VMSwitch -Name $VirtualSwitchName
+$VMMPortFeatureId="1f59a509-a6ba-4aba-8504-b29d542d44bb"
+$defaultPortFeature = Get-VMSystemSwitchExtensionPortFeature -FeatureId $VMMPortFeatureId
+$VMMFeatureId="8b54c928-eb03-4aff-8039-99171dd900ff"
+$currentFeature = Get-VMSwitchExtensionSwitchFeature -SwitchName $VirtualSwitchName -FeatureId $VMMFeatureId
+$defaultFeature = Get-VMSystemSwitchExtensionSwitchFeature -FeatureId $VMMFeatureId
+$defaultFeature.SettingData.LogicalSwitchId=$LogicalSwitchId
+$defaultFeature.SettingData.LogicalSwitchName=$VirtualSwitchName
+Add-VMSwitchExtensionSwitchFeature -SwitchName $VirtualSwitchName -VMSwitchExtensionFeature $defaultFeature
+
+$defaultPortFeature = Get-VMSystemSwitchExtensionPortFeature -FeatureId $VMMPortFeatureId
+$defaultPortFeature.SettingData.PortProfileSetId=$PortProfileSetId
+$defaultPortFeature.SettingData.PortProfileSetName=$PortProfileName
+$defaultPortFeature.SettingData.NetCfgInstanceId="{" + $vswitch.Id +"}"
+Add-VMSwitchExtensionPortFeature -SwitchName $VirtualSwitchName -VMSwitchExtensionFeature $defaultPortFeature –ExternalPort
+```
+
+After you run the script, refresh the host in VMM and verify if VMM recognizes the switch as logical switch.
 
 ## Next steps
 

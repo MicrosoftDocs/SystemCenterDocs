@@ -3,7 +3,7 @@ description: Provides guidance and instructions for creating Service Management 
 manager:  carmonm
 ms.topic:  reference
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date:  03/29/2017
@@ -297,6 +297,6 @@ The following runbooks ship with Service Management Automation as sample runbook
 
 ## Next steps
 
-- Read about how to call one runbook from another runbook [Child Runbooks](service-management-automation.md).
+Read about how to call one runbook from another runbook [Child Runbooks](service-management-automation.md).
 
-- Read about how to build an integration module with activities that can be used by a runbook [Building an Integration Module](build-integration-modules.md).
+Read about how to build and manage an integration module with activities that can be used by a runbook [Working with integration modules](manage-integration-modules.md).

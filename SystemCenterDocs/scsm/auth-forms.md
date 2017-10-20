@@ -331,3 +331,9 @@ RoutedCommand="{x:Static scwpf:FormCommands.Refresh}"/>
     </scwpf:BusinessLogic.Rules>
 
 ```
+
+
+## Next steps
+
+- [Customize and author forms with the Service Manager Authoring Tool](auth-forms-auth-tool.md).
+- [Customize the default incident form for the Authoring Tool sample scenario](customize-default-incident-form.md).

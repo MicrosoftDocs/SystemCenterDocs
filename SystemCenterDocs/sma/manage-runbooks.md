@@ -3,7 +3,7 @@ description:  Proivides guidance and instructions on how to schedule, track, and
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 03/31/2017

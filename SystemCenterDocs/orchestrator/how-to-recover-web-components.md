@@ -11,17 +11,16 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: edc3c49a-93e9-4ec4-81e3-c454b54ae976
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
-# How to Recover Web Components
+# How to recover web components
 
 > Applies To: System Center 2016 - Orchestrator
 
-The Web Service database reference does not get modified by the Database Configuration Utility \(only the installer performs this task\). You will need to manually modify it.  
+When you use the Database Configuration utility to modify the Orchestrator database, the tool will not modify the Web Service database reference \(only the installer performs this task\). You will need to manually modify it after updating with the database configuration utility.  
 
-## Web Components Recovery Process  
 To do this, you will need to complete the following actions:  
 
 ### To modify the Web Service database reference  
@@ -41,4 +40,4 @@ To do this, you will need to complete the following actions:
     ```  
 
 ## Next steps
-[Administering System Center 2016 - Orchestrator](../orch/manage/administering-orchestrator.md)  
+To learn more about the Orchestrator Web components read [Orchestrator Overview](learn-about-orchestrator.md)  

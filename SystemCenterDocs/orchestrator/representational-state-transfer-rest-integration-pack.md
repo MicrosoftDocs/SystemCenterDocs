@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 69144c68-e635-408f-897f-6530e04bcd2a
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
@@ -38,4 +38,4 @@ To download this integration pack, see [System Center Integration Packs](https:/
 
 ## Registering and deploying the integration pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and installed Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and installed Runbook Designers. For the procedures on installing integration packs, see [How to add an Integration Pack](how-to-add-an-integration-pack.md).

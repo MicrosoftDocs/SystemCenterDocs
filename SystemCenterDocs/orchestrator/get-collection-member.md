@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: ee86105b-c786-4aee-b2ec-8cfcd88f8fc5
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
@@ -85,7 +85,7 @@ above:
 
     2.  In the **Fields** section, enter a value for each of the
         required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(â€¦)** button next to the text box to browse
+        click the ellipsis **(...)** button next to the text box to browse
         for a value.
 
         You can also use published data to automatically populate the

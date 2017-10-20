@@ -11,7 +11,7 @@ ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: reference
 ms.assetid: f286c692-7648-4f78-a510-fb7e5553b04d
 ---
 
@@ -33,7 +33,3 @@ There are six major parts of a System Center 2016 - Service Manager installation
 
 >[!IMPORTANT]
 All computers that host any part of Service Manager must be domain-joined.
-
-## Next steps
-
-- Review [System requirements](../orchestrator/system-requirements.md) to learn about general performance and scalability guidance for Service Manager and recommended hardware configurations.

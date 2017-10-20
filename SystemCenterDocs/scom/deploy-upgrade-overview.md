@@ -5,9 +5,9 @@ description: This guide provides information on how to upgrade from Operations M
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/09/2016
+ms.date: 05/31/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -17,7 +17,7 @@ ms.topic: article
 >Applies To: System Center 2016 - Operations Manager
 
 
-This section of the Deployment Guide provides information about how to upgrade to System Center 2016 - Operations Manager from System Center Operations Manager 2012 R2.
+This section of the Deployment Guide provides information about how to upgrade to System Center 2016 - Operations Manager from System Center Operations Manager 2012 R2. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
 
 > [!NOTE]
 > This is the only supported upgrade path to System Center 2016 - Operations Manager. If you are using Operations Manager 2012 Service Pack 1 (SP1), you must first upgrade to System Center Operations Manager 2012 R2 with Update Rollup 9.
@@ -28,17 +28,17 @@ It is assumed in this guide that you are performing an upgrade to System Center 
 > If your Operations Manager 2012 R2 management group is integrated with Microsoft Operations Management Suite (OMS), its configuration will be retained and continue to function normally after the upgrade is complete.  
 
 > [!WARNING]
-> If you are upgrading two or more System Center components, you must follow the procedures that are documented in Upgrade Sequencing for System Center 2016.
+> If you are upgrading two or more System Center components, you should review the upgrade process for each component.
 >  
-> The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:
+> The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The following list are the affected System Center components integrated with Operations Manager and the recommended upgrade sequence:
 > 
-   > 1. Configuration Manager
-   > 2. Data Protection Manager
-   > 3. Orchestrator
+   > 1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
+   > 2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
+   > 3. Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
    > 4. Operations Manager
-   > 5. Virtual Machine Manager
+   > 5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts.
 
-Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
+Before you upgrade to System Center 2016 - Operations Manager, you must first determine whether all servers in your Operations Manager management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](plan-system-requirements.md).
 
 There are several options for upgrade:
 
@@ -52,7 +52,7 @@ There are several options for upgrade:
 
 The following steps outline the process for upgrading a distributed management group:
 
-1. Accomplish [Pre-Upgrade Tasks](~/scom/deploy-upgrade-pretasks.md)
+1. Accomplish [Pre-Upgrade Tasks](deploy-upgrade-pretasks.md)
 
 2. Upgrade the initial management server and then additional management servers (each management server must be upgraded)
 
@@ -91,6 +91,6 @@ Agents can be upgraded before the new System Center 2016 - Operations Manager ma
 
 ## Next steps
 
-- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](~/scom/deploy-upgrade-pretasks.md).
+- To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-pretasks.md).
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).

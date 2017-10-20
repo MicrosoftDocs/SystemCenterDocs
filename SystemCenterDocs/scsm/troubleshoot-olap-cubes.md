@@ -83,3 +83,7 @@ select * from infra.WorkItem where BatchId = {BatchId from previous query}
 update infra.workitem set statusid = 3 where workitemId = {workitemId for the step that is hung with the corresponding processmoduleid for ManageCubePartitions/ManageCubeTranslations)  
 
 ```  
+
+## Next steps
+
+- [Create an OLAP cube using a management pack](create-olap-cube-mps.md).

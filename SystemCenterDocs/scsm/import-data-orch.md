@@ -134,3 +134,7 @@ You can use the following procedures to disable or enable an Orchestrator connec
 ### To validate the status change of an Orchestrator connector
 
 - In the middle pane, locate the connector for which you have changed status, and then verify the value in the **Enabled** column.
+
+## Next steps
+
+- Learn about how to [Import data from VMM](import-data-vmm.md).

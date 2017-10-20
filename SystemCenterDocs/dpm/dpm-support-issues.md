@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/21/2016
+ms.date: 06/26/2017
 title:  What's supported and what isn't for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -84,6 +84,12 @@ This topic summarizes some of the common support information you might need when
 **Issue**: Database deployment not supported.
 
 **Workaround**: If you want to use a remote instance of SQL Server as your DPM database, ensure that the SQL Server instance isn't running on a domain controller.
+
+### You cannot install DPM 2016 on SQL 2016 SP1 (or later release)
+**Issue**: Installation on SQL 2016 SP1 (or a later release) is not supported.
+
+**Workaround**: None.
+
 
 ### Moving protected servers with DPM secondary servers
 Moving protected servers between DPM servers that are under secondary protection isn't supported. To illustrate this we have the following:
@@ -221,7 +227,22 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 **Workaround**: Ensure shares you want to protect aren't located on SOFS.
 
+
+## File server issues
+
+### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
+
+**Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end-user recovery is not available.
+
+**Workaround**: None. File Server EUR is not supported when using MBS.
+
+
 ## <a name="BKMK_Data"></a>Data protection issues
+
+### DPM does not back up shared VHDX
+**Issue**: Backup programs that use the Hyper-V VSS writer can't back up volumes that are backed up by VHDs which are potentially attached to other VMs.
+
+**Workaround**: To avoid potential data loss, use another method to back up data on the shareable VHD.
 
 ### Protection might fail when changing the path of a data source
 **Issue**: When you protect a shared folder, the path to the shared folder includes the logical path on the volume. If you move the shared folder, protection will fail. In addition if you change the path of a protected data source on a volume that uses the Encrypting File System (EFS) and the new file path exceeds 5120 characters, data protection will fail.
@@ -379,12 +400,12 @@ Workaround: We recommend that in this scenario you use host-level backup of the 
 ## DPM and Azure
 
 ### DPM as an Azure virtual machine
-**Issue**: DPM can run as an Azure virtual machine from DPM 2012 R2 Update 3 onwards. Note:
+**Issue**: DPM can run as an Azure virtual machine, from DPM 2012 R2 Update 3 onwards. Be aware of these limitations:
 
--   On premise DPM Server can't protect Azure based workloads.
+-   On-premise DPM servers can't protect Azure-based workloads.
 
--   DPM running on Azure as an Iaas virtual machine can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](dpm-protection-matrix.md).
+-   DPM running as an Iaas virtual machine, in Azure, can protect some workloads running as Azure virtual machines. For details see the [DPM protection support matrix](dpm-protection-matrix.md).
 
--   DPM running as an Azure virtual machine can't protect on-premises workloads.
+-   DPM running as an Azure virtual machine can't protect on-premise workloads.
 
 **Workaround**: For more information about this scenario see [Install DPM as an Azure virtual machine](~/dpm/install-dpm.md#setup-prerequisites).

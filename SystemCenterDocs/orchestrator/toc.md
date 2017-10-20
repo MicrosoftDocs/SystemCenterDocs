@@ -4,6 +4,8 @@
 # Get started
 ## [Install Orchestrator](install.md)
 ## [How to work with runbooks in the Orchestrator console](console-overview.md)
+## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
+## [Release notes](release-notes.md)
 # How To
 ## Plan 
 ### [Database sizing and performance](database-sizing-and-performance.md)
@@ -20,9 +22,9 @@
 ### [Design and build runbooks](design-and-build-runbooks.md)
 ### [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook.md)
 ### [Control runbook activities](control-runbook-activities.md)
+### [Monitor activities](activity-events.md)
 ### [Runbook properties](runbook-properties.md)
 ### [Track runbooks](track-runbooks-audit-trail.md)
-### [Runbook samples](runbook-samples.md)
 ## Manage Orchestrator Servers
 ### [Runbook permissions](runbook-permissions.md)
 ### [How to backup Orchestrator](how-to-back-up-orchestrator.md)
@@ -234,7 +236,7 @@
 ###### [Upload Document](upload-document.md)
 ### [VMWare vSphere](vsphere-integration-pack.md)
 #### [Deploy the VMWare vSphere Integration Pack](deploying-the-vmware-vsphere-integration-pack.md)
-#### [VMWare vShere Activities](vsphere-activities.md)
+#### [VMWare vSphere Activities](vsphere-activities.md)
 ##### [Add network adapter activity](add-network-adapter-activity.md)
 ##### [Add vm disk activity](add-vm-disk-activity.md)
 ##### [Clone linux vm activity](clone-linux-vm-activity.md)

@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a1d182f3-b80b-4414-90e6-4c0a10d62f60
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
@@ -52,4 +52,4 @@ PermissionsConfig -OrchestratorUsersGroup "Contoso\Orchestrator Users" -remote
 > You must run the PermissionsConfig tool at a command prompt with administrative credentials because it modifies group memberships. To do this, right-click the **Command Prompt** icon to select **Run as Administrator**.  
 
 ## Next steps
-[Orchestrator Security Planning](http://technet.microsoft.com/en-us/library/hh420367.aspx)  
+Review best practices for Orchestrator security at [Orchestrator Security Planning](http://technet.microsoft.com/en-us/library/hh420367.aspx).  

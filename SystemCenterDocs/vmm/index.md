@@ -1,7 +1,7 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: LandingPage
-author: MattLusherRO
+author: MattLusherRT
 ms.author: apexprodleads
 ms.date: 04-05-2017
 ms.service-OR-ms.prod: get-from-content-team
@@ -98,6 +98,42 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
                     </div>
                     <div class="cardText">
                         <h3>Manage the Storage fabric</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/system-center/vmm/deploy-guarded-host-fabric">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_deploy.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Deploy a guarded host fabric</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/system-center/vmm/deploy-sdn">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_deploy.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Deploy and manage a software defined network (SDN) infrastructure</h3>
                     </div>
                 </div>
             </div>

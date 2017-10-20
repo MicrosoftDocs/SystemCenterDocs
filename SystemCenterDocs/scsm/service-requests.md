@@ -138,6 +138,16 @@ Service requests are often created by end users by accessing the service catalog
 
 4.  Update any information in form as necessary, and then click **OK** to close the form.  
 
+## View service request details
+
+You can use the following procedure to view the details of a service request in the Service Manager console in System Center 2016 - Service Manager.  
+
+
+1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  
+2.  In the list, select a service request to view, and then in the **Tasks** pane under **\<Service Request ID - Service Request Name\>**, click **Edit**. For example, select **Request Membership to Active Directory Group**.  
+3.  Review information in service request form, and then click **OK** to close the form.  
+
+
 ## Duplicate or hide views for service requests
 
 You can use the following procedures to duplicate or hide a service request view in the Service Manager console in Service Manager. You can use the **Unhide** task if you want to show the hidden view. You can modify the title or other view criteria using the **Edit View** task.  
@@ -165,3 +175,7 @@ You can use the following procedures to duplicate or hide a service request view
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Closed Service Requests**.  
 
 2.  In the **Tasks** pane, click **Hide View**.  
+
+## Next steps
+
+- [Manage release records](release-records.md) to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.

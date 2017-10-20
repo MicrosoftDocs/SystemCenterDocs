@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8004b0ed-e66e-4105-867d-c65c0d733fef
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
@@ -20,7 +20,7 @@ manager: carmonm
 >Applies To: System Center 2016 - Orchestrator
 
 As an IT administrator, you probably perform a lot of tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process. 
-With System Center 2016 â€‘ Orchestrator you tie disparate tasks and procedures together using a graphical userâ€‘interface Runbook Designer to create reliable, flexible, and efficient endâ€‘toâ€‘end solutions in your IT environment.
+With System Center 2016 - Orchestrator you tie disparate tasks and procedures together using a graphical user interface Runbook Designer to create reliable, flexible, and efficient end-to-end solutions in your IT environment.
 Using Orchestrator, you can:
 
 - Automate processes in your data center, regardless of hardware or platform.

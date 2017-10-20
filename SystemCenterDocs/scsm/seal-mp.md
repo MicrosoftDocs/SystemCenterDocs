@@ -36,3 +36,7 @@ When a management pack in Service Manager contains base definitions that other m
 3.  In the **Seal Management Pack** dialog box, in the **Key File** box, enter the location of the key file that you previously created. The file must have an .snk extension. You must also fill in the **Company** box. Filling in the other boxes is optional.  
 
 4.  Click **Seal** to create a sealed management pack, which will be stored in the folder that you specify in the **Output Directory** box.  
+
+## Next steps
+
+- [Bundle management packs and resource files](bundle-mps.md).

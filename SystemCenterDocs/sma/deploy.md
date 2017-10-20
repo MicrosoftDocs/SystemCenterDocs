@@ -3,7 +3,7 @@ description: Provides step by step instructions for setting up Service Managemen
 manager:  carmonm
 ms.topic:  article
 author:  cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 03/28/2017
@@ -184,6 +184,18 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 >
 >     **New-SmaRunbookWorkerDeployment -<ComputerName\> "<WebServiceEndpoint\>**
 > 3.  Restart the Runbook server service on each computer on which a runbook worker is installed.
+
+## To set or change the SMA endpoint
+
+The **QuickStart** tab for Automation in Windows Azure Pack for Windows Server provides a link that enables you to set up or change the Service Management Automation endpoint. If the Service Management Automation endpoint is not yet registered, click **Register the Service Management Automation endpoint** to configure it. To change the Service Management Automation endpoint settings after an endpoint has been set up, click **Current Service Management Automation endpoint**.
+
+The Service Management Automation endpoint requires the following information:
+
+-   The service URL and port. The port number is set when you install Service Management Automation.
+
+-   The user name of a user account that can access the Service Management Automation web service. Accounts with access to the Service Management Automation web service are also set during installation.
+
+-   The access password for the user account.
 
 ## Uninstall SMA 
 

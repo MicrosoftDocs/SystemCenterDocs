@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/03/2017
+ms.date: 08/14/2017
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -44,6 +44,14 @@ This information helps you understand the performance and scalability characteri
 | URLs monitored per dedicated management group | 12,000 | 
 | URLs monitored per agent | 50 |
 
+## Upgrade sequence
+If you are upgrading an installation of System Center 2012 R2 Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order.  
+
+1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
+2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
+3. Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
+4. Operations Manager  
+5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts. 
 
 ## Hardware requirements
 
@@ -75,13 +83,14 @@ The following versions of Windows Server operating system are supported for the 
 | **Operations Manager** Web Console | yes | yes | |
 | **Operations Manager** ACS Collector | yes | yes | |
 | **Operations Manager** Operations console | yes | yes | |
-
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes | yes | |
+| **Operations Manager** Reporting server | yes | yes | |
 
 ### Client operating system 
 
 The following versions of Windows client operating system are supported for the Operations Manager Operations console.
 
-| Windows 7 | Windows 8 | Windows 8.1 | Windows 10 Enterprise |
+| Windows 7 | Windows 8 | Windows 8.1 | Windows 10 |
 |:--- |:---|:--- |:--- |
 | yes | yes | yes | yes |
 
@@ -89,7 +98,7 @@ The following versions of Windows client operating system are supported for the 
 
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager.
 
-Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows Embedded Standard 7 Service Pack 1,  Windows Server 2008 R2, Windows Server 2008 Service Pack 2, Windows Server 2012, Windows XP Professional 64-Bit Edition (Itanium), Windows XP Service Pack 2, Windows XP Service Pack 3.
+Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
 
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
@@ -99,6 +108,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
 
 > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
+
+### Operations Manager operational, data warehouse, and ACS audit database
+
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
 
 ### Management server/Gateway server 
 
@@ -111,7 +125,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
-- Microsoft Report Viewer 2015 runtime.  
+- [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).  
 
     > [!NOTE] 
     > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295).  The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server. 
@@ -120,7 +134,8 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ### Web console 
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
+- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
+- Client web browser:  Internet Explorer 11 and SilverLight 5  
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
     - Static Content 
@@ -161,11 +176,11 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows 10, Windows 8 Ente
 
 ## Virtualization
 
-Microsoft supports running all System Center 2016 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft does not support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager: 
-- Virtual computers running any Operations Manager 2016 component must not make use of any functionality where all activity on the virtual computer is not immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive. 
-- Virtual computers running any Operations Manager 2016 component cannot be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted just as would be done with a physical computer. 
-- Virtual computers that are running any Operations Manager 2016 components cannot be relocated to another host physical server by using any automated process. 
-- If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.
+Microsoft supports running all System Center 2016 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft does not support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:  
+- Virtual computers running any Operations Manager 2016 component must not make use of any functionality where all activity on the virtual computer is not immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.  
+- Virtual computers running any Operations Manager 2016 component cannot be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted just as would be done with a physical computer.  
+- Virtual computers that are running Operations Manager 2016 components can be replicated to another virtualized environment by using [Azure Site Recovery](https://aka.ms/asr-scom). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
+- If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.  
 
 System Center 2016 - Operations Manager runs on virtual machines in Microsoft Azure just as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.  
 

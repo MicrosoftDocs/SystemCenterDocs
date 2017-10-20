@@ -806,6 +806,22 @@
      "redirect_url" : "/system-center/scom/welcome"
 },
 {
+     "source_path" : "SystemCenterDocs/orchestrator/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md",
+     "redirect_url" : "/system-center/orchestrator/automate-runbooks"
+},
+{
+     "source_path" : "SystemCenterDocs/orchestrator/how-to-configure-runbook-servers-to-optimize-performance-of--.net-activities.md",
+     "redirect_url" : "/system-center/orchestrator/how-to-optimize-dot-net-activities"
+},
+{
+     "source_path" : "SystemCenterDocs/orchestrator/customized-activities.md",
+     "redirect_url": "/system-center/orchestrator/automate-runbooks"
+  },
+{
+     "source_path" : "SystemCenterDocs/orchestrator/build-test-runbooks.md",
+     "redirect_url": "/system-center/orchestrator/design-and-build-runbooks"
+  },
+{
      "source_path" : "SystemCenterDocs/orch/manage/accessibility-for-people-with-disabilities.md",
      "redirect_url": "/system-center/orchestrator/learn-about-orchestrator"
   },
@@ -2535,7 +2551,11 @@
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-operations-guide-for-system-center-2016-service-manager.md",
-     "redirect_url" : "/system-center/scsm/day-to-day-tasks"
+     "redirect_url" : "/system-center/scsm/search-information"
+},
+{
+     "source_path" : "SystemCenterDocs/sm/manage/day-to-day-tasks.md",
+     "redirect_url" : "/system-center/scsm/search-information"
 },
 {
      "source_path" : "SystemCenterDocs/sm/manage/ops-sample-scenario-managing-release-records.md",
@@ -2782,8 +2802,12 @@
       "redirect_url": "/system-center/sma/authoring-automation-runbooks"
 },
 {
+     "source_path" : "SystemCenterDocs/sma/build-integration-modules.md",
+     "redirect_url" : "/system-center/sma/manage-integration-modules"
+},
+{
      "source_path" : "SystemCenterDocs/sma/Manage/Building-an-Integration-Module.md",
-     "redirect_url" : "/system-center/sma/build-integration-modules"
+     "redirect_url" : "/system-center/sma/manage-integration-modules"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Child-Runbooks-in-Service-Management-Automation.md",
@@ -2816,6 +2840,10 @@
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Set-or-change-the-Service-Management-Automation-endpoint.md",
      "redirect_url" : "/system-center/sma/set-change-endpoint"
+},
+{
+     "source_path" : "SystemCenterDocs/sma/set-change-endpoint.md",
+     "redirect_url" : "/system-center/sma/deploy"
 },
 {
      "source_path" : "SystemCenterDocs/sma/Manage/Windows-PowerShell-Workflow-Concepts.md",

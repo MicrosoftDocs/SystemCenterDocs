@@ -340,3 +340,7 @@ You can use the following procedures to edit a service offering or a request off
 9. Optionally, on the **Request Offering** page, add related request offerings associated with the service offering.
 10. On the  **Publish** page in the **Offering status** list, select **Published**, and then set the **Offering owner** to yourself.
 11. Click **OK** to close the **Edit Service Offering** form.
+
+## Next steps
+
+- [Use groups, queues, and lists in Service Manager](group-queue-lists.md).

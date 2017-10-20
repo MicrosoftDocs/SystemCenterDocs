@@ -113,3 +113,7 @@ Use this procedure to delete a workflow in the Service Manager Authoring Tool.
 
 1.  In the **Management Pack Explorer**, expand **Workflow**, right\-click the workflow you want to delete, and then click **Delete**.  
 2.  To make sure that the workflow is permanently deleted, save the management pack.  
+
+## Next steps
+
+- Read [Add or remove workflow activities](add-workflow-activities.md) to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.

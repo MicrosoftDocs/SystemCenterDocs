@@ -59,3 +59,7 @@ The most useful reporting data available from Service Manager is in the form of 
  When you use a regular PivotTable report filter to filter on multiple items, the filter indicates only that multiple items are filtered, and you have to open a drop\-down list to find the filtering details. However, a slicer clearly labels the filter that is applied and provides details so that you can easily understand the data that is displayed in the filtered PivotTable report.  
 
  For more information about Excel slicers, see [Use slicers to filter PivotTable data](http://go.microsoft.com/fwlink/p/?LinkId=246040) on the Microsoft Office website.  
+
+## Next steps
+
+- [Refresh OLAP data cube information](refresh-olap-cube.md).

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 05/25/2017
 title:  Back up system state and bare metal
 ms.technology:  data-protection-manager
 ms.assetid:  7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -54,11 +54,11 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 1.  When a system state back up runs DPM communicates with WSB request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. This is the drive WSB will use to do backups to.
 
-2.  You can customize the drive that DPM uses for the system state backup. To do this on the protected server, go to C:\Program Files\Microsoft Data Protection Manager\DPM\Datasources. Open the PSDataSourceConfig.XML file for editing. Change the<FilesToProtect> value for the drive letter. Close and save the file. If there's a protection group protecting the system state of the computer run a consistency check. In case an alert is generated click Modify protection group link in the alert, and then step through the wizard. Then run another consistency check.
+2.  You can customize the drive that DPM uses for the system state backup. To do this on the protected server, go to *drive*:\Program Files\Microsoft Data Protection Manager\DPM\Datasources. Open the PSDataSourceConfig.XML file for editing. Change the <FilesToProtect> value for the drive letter. Save and close the file. If a protection group protects the computer's system state, run a consistency check. If the consistency check generates an alert, click **Modify protection group** link in the alert, and then step through the wizard. After finishing, run another consistency check.
 
 3.  Note that if the protection server is in a cluster it's possible that a cluster drive will be selected as the drive with the most free space. It's important to be aware of this because if that drive ownership has been switched to another node and a system state backup runs, the drive won't be available and the backup will fail. In this situation, you'll need to modify the PSDataSourceConfig.XML to point it to a local drive.
 
-4.  WSB will then create a folder called WindowsImageBackup on the root of the. As it creates the backup, all of the data will be placed in this folder. When the backup completes the file will then be transferred over to the DPM server. Note that:
+4.  Windows Server Backup (WSB) creates a folder called WindowsImageBackup on the root of the. As it creates the backup, all data is placed in this folder. When the backup completes the file will then be transferred over to the DPM server. Note that:
 
     -   This folder and its contents do not get cleaned up after the backup or transfer is done. The best way to think of this is that the space is being reserved for the next time a backup is done.
 
@@ -85,6 +85,19 @@ This table summarizes what you can back up and recover. You can see detailed inf
 -   Windows Server Backup must be installed on the protected computer for BMR.
 
 -   For BMR protection (unlike system state protection) DPM doesn't have any space requirements on the protected computer. WSB directly transfers the backups to the DPM server. Note that the job for this doesn't appear in the DPM Jobs view.
+
+- If you use Modern Backup Storage and want to increase the BMR default replica size > 30 GB, use the registry key: HKLM\Software\Microsoft\Microsoft Data Protection Manager\Configuration ReplicaSizeInGBForSystemProtectionWithBMR (DWORD).
+
+- If you use Modern Backup Storage, SystemState and BMR backups consume more storage (than legacy storage) due to ReFS cloning. Each SystemState or BMR backup is a full recovery point. To mitigate this storage consumption, you may want to:
+  - schedule fewer System State or BMR recovery points,
+  - use a smaller retention period for the recovery points,
+  - increase the available storage for System State or BMR backups.  
+
+> [!NOTE]
+> The following limitations do NOT apply to Modern Backup Storage (MBS). The following limitations apply only when using legacy storage, after upgrading DPM 2012 R2 to DPM 2016.
+>
+>
+
 
 -   DPM reserves 30 GB of space on the replica volume for BMR. You can change this on the Disk Allocation page in the Modify Protection Group Wizard or using the Get-DatasourceDiskAllocation and Set-DatasourceDiskAllocation PowerShell cmdlets. On the recovery point volume, BMR protection requires about 6 GB for retention of five days.
     Note that you can't reduce the replica volume size to less than 15 GB.

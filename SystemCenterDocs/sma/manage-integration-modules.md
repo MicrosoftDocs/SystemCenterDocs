@@ -1,8 +1,9 @@
 ---
 description: Provides an overview of how you can work with integration modules.
-manager:  cfreemanwa
+manager:  carmonm
 ms.topic:  article
-author:  bwren
+author:  cfreemanwa
+ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 10/12/2016
@@ -11,15 +12,47 @@ ms.technology:  service-management-automation
 ms.assetid:  a99b8b42-665a-48eb-ab8e-5ebe8462c50a
 ---
 
-# Working with Integration Modules
+# Working with integration modules
 
->Applies To: System Center 2016
+>Applies To: System Center 2016 - Service Management Automation
+
+An [Integration Module](overview-powershell-workflows.md#GK_Modules) is a package that contains a [Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325518). For information on writing a Windows PowerShell Module, see [Writing a Windows PowerShell Module](http://go.microsoft.com/fwlink/?LinkID=325523). An Integration Module can contain any of the valid Module Types specified in [Windows PowerShell Modules](http://go.microsoft.com/fwlink/?LinkID=325518). This includes Script Modules (.psm1), Binary Modules (.dll), and Manifest Modules (.psd1).
+The Integration Module package is a compressed file with the same name as the module and a .zip extension. It contains a single folder also with the name of the module. The Windows PowerShell module and any supporting files, including a manifest file (.psd1) if the module has one, must be contained in this folder.
+
+If the module should contain a [Connection](~/sma/manage-global-assets.md) type, it must also contain a file with the name <ModuleName\>-Automation.json that specifies the connection type properties. This is a json file with the following format.
+
+```powershell
+{
+   "ConnectionFields": [
+   {
+      "IsEncrypted":  false,
+      "IsOptional":  false,
+      "Name":  "ComputerName",
+      "TypeName":  "System.String"
+   },
+   {
+      "IsEncrypted":  false,
+      "IsOptional":  true,
+      "Name":  "Username",
+      "TypeName":  "System.String"
+   },
+   {
+      "IsEncrypted":  true,
+      "IsOptional":  false,
+      "Name":  "Password",
+   "TypeName":  "System.String"
+   }],
+   "ConnectionTypeName":  "DataProtectionManager",
+   "IntegrationModuleName":  "DataProtectionManager"
+}
+
+```
 
 The steps for creating and working with Automation runbooks are different depending on whether you using a management portal or Windows PowerShell. The basic steps for various common operations using both methods are provided in the following sections.
 
-## Enumerating Installed Modules
+## Enumerating installed modules
 
-### To Get a List of Installed Modules using the management portal
+### To Get a list of installed modules using the management portal
 
 1. Select the **Automation** workspace.
 
@@ -29,7 +62,7 @@ The steps for creating and working with Automation runbooks are different depend
 
 4. Inspect the assets in the list with a Type of **Module**.
 
-### To Get a List of Installed Modules in Service Management Automation using Windows PowerShell
+### To Get a list of installed modules in Service Management Automation using Windows PowerShell
 
 The following sample commands retrieve all modules installed in Automation.
 
@@ -39,14 +72,14 @@ $port = 9090
 Get-SmaModule "WebServiceEndpoint $webServer "Port $port
 ```
 
-## Importing a Module
+## Importing a module
 
 A module is a compressed file with a .zip extension that contains a folder which includes one of the following file types:
 
 - A module (psm1 file)
 - A module manifest (psd1 file)
 
-### To Import a Module using management portal
+### To import a module using the management portal
 
 1. Select the Automation workspace.
 
@@ -59,7 +92,7 @@ A module is a compressed file with a .zip extension that contains a folder which
 5. Click the checkmark button on the dialog box.
 
 
-### To Import a Module in Service Management Automation using Windows PowerShell
+### To import a module in Service Management Automation using Windows PowerShell
 
 The following sample commands show how to import a module.
 
@@ -72,7 +105,7 @@ Import-SmaModule "WebServiceEndpoint $webServer "Port $port "Path $modulePath
 
 ## Enumerating Activities in a Module
 
-### To Get a List of Activities in a Module using management portal
+### To Get a list of activities in a module using the management portal
 
 1. Select the Automation workspace.
 
@@ -86,7 +119,7 @@ Import-SmaModule "WebServiceEndpoint $webServer "Port $port "Path $modulePath
 
 6. Optionally, click the magnifying glass icon to filter for particular activities.
 
-### To Get a List of Activities in a Module in Service Management Automation using Windows PowerShell
+### To get a list of activities in a module in Service Management Automation using Windows PowerShell
 
 The following sample commands show how to retrieve the activities in a particular module.
 
@@ -98,7 +131,7 @@ $module = Get-SmaModule "WebServiceEndpoint $webServer "Port $port "Name $module
 $module.Activities
 ```
 
-### To Get a List of Activities in All Modules in Service Management Automation using Windows PowerShell
+### To get a list of activities in all modules in Service Management Automation using Windows PowerShell
 
 The following sample commands show how to retrieve the activities in all modules installed in Automation.
 
@@ -109,7 +142,7 @@ $modules = Get-SmaModule "WebServiceEndpoint $webServer "Port $port
 $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,Description
 ```
 
-## See Also
-[Service Management Automation](service-management-automation.md)
-[Runbook Operations](manage/runbook-operations.md)
-[Building an Integration Module](~/sma/build-integration-modules.md)
+## Next steps
+To learn more about Service Management Automation read [Service Management Automation](service-management-automation.md).
+
+To learn more about how to use runbooks in your environment read [Runbook Operations](manage/runbook-operations.md).

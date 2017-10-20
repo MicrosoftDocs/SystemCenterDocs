@@ -224,3 +224,7 @@ The ability to define customized management pack elements was used to model the 
 -   CustomMdx  
 
  Each customization that is defined in a CubeExtension element can also be defined in a SystemCenterCube object. The only customization that is not allowed is the addition of facts or measure groups and substitutions to the cube.  
+
+## Next steps
+
+- If needed, [Troubleshoot OLAP cubes](troubleshoot-olap-cubes.md).

@@ -5,9 +5,9 @@ description:  This article provides an overview of the security accounts require
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/06/2016
+ms.date: 05/31/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -33,17 +33,24 @@ The account that a MonitoringHost.exe process runs as is called the action accou
 
 Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
-When you install Operations Manager, you have the option of specifying either a domain account or using Local System.  The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.
+When you install Operations Manager, you have the option of specifying either a domain account or using Local System.  The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.   
 
 You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2008 R2 or higher, the account must have the following minimum privileges:
 
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
-- “Allow log on locally” permission (SetInteractiveLogonRight)  
+- “Allow log on locally” (SetInteractiveLogonRight) permission.  
 
 > [!NOTE] 
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account.  Other Run As accounts can have lower privileges.  The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
 
+The domain account specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  This can be achieved by modifying the registry value HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Parameters:
+
+* Name:  Worker Process Logon Type
+* Type: REG_DWORD
+* Value: 4 means Log on as Batch and 5 means for Log on as Service.  The default is 2, Allow log on locally.  
+
+This can also be centrally managed using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder C:\Windows\PolicyDefinitions and configuring the setting **Monitoring Action Account Logon Type** under the folder *Computer Configuration\Administrative Templates\System Center - Operations Manager*.  For further information on working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx). 
 
 ## System Center Configuration Service and System Center Data Access Service account
 

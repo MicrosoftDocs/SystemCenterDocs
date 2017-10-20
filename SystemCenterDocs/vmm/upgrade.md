@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and tasks you should complete after the upgrade finishes.
+This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and tasks you should complete after the upgrade finishes. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
 
 ## Requirements and limitations
 
@@ -37,7 +37,7 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 3. Close any other programs that are running on the VMM management server.
 4. Ensure that there are no pending restarts on VMM servers.
 5. Perform a full backup of the VMM database.
-6. If the current SQL Server database used AlwaysOn availability groups:
+6. If the current SQL Server database used Always On availability groups:
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
 7. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
@@ -46,6 +46,25 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 	  ``ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]  
 	  ALTER COLUMN Version NVARCHAR(255) NULL;  
 	  GO``
+
+## Upgrade sequence for System Center components
+
+If you're running more than one System Center component, they should be upgraded in a specific order:
+
+1. Service Management Automation
+2. Orchestrator
+3. Service Manager
+4. Data Protection Manager (DPM)
+5. Operations Manager
+6. Configuration Manager
+7. Virtual Machine Manager (VMM)
+8. App Controller
+9. Service Provider Foundation
+10. Windows Azure Pack for Windows Server
+11. Service Bus Clouds
+12. Windows Azure Pack
+13. Service Reporting
+
 
 ## Upgrade a standalone VMM server
 
@@ -79,16 +98,14 @@ During setup, VMM enables the following firewall rules. These rules remain in ef
 
 ## Upgrade a highly available VMM server
 
-
 1. Uninstall VMM from the cluster nodes that you want to upgrade, while choosing to retain the database.
 2. Upgrade the operating system to Windows Server 2016 on the VMM management server.
-
-	- If you choose to not upgrade Windows, delete the high availability VMM resource group from the failover cluster.
-	- If you choose to upgrade Windows:
-		- During the upgrade, choose the upgrade option, not a fresh installation, to retain data.
-	  	- Note the name of your cluster, and then destroy the cluster.
-	  	- Upgrade the operating system on all the nodes in the cluster that you want to upgrade.
-	  	- Recreate the cluster using its previous name.
+    - If you choose to not upgrade Windows, delete the high availability VMM resource group from the failover cluster.
+    - If you choose to upgrade Windows:
+      - During the upgrade, choose the upgrade option, not a fresh installation, to retain data.
+      - Note the name of your cluster, and then destroy the cluster.
+      - Upgrade the operating system on all the nodes in the cluster that you want to upgrade.
+      - Recreate the cluster using its previous name.
 3. Run VMM setup on each cluster node.
 4. In the main setup page, click **Install**.
 5. In **Select features to install**, select the **VMM management server** and then click **Next**. The VMM console will be automatically installed.
@@ -99,11 +116,11 @@ During setup, VMM enables the following firewall rules. These rules remain in ef
 10. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**. The computer you're upgrading is checked to ensure prerequisites are in place. If the computer does not meet a prerequisite, a page that contains information about the prerequisite and how to resolve the issue appears.
 11. In **Database configuration**:
 
-	- Learn more if you need to [upgrade the VMM SQL Server](#upgrade-the-vmm-sql-server-database)
-	- If you're using a remote SQL instance specify the SQL Server computer name.
-	- If SQL Server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
-	- Don't specify a **Port** value if you're using local SQL Server, or if your remote SQL Server uses the default port (1443).
-	- Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
+    - Learn more if you need to [upgrade the VMM SQL Server](#upgrade-the-vmm-sql-server-database)
+    - If you're using a remote SQL instance specify the SQL Server computer name.
+    - If SQL Server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+    - Don't specify a **Port** value if you're using local SQL Server, or if your remote SQL Server uses the default port (1443).
+    - Select **Existing Database** and select the database you backed up from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
 
 12. In **Cluster configuration** page type a name for the VMM high availability deployment. Don't use the cluster name or the name of the computer on which you're installing VMM. This name is used when you connect to VMM using the VMM console.
 13. If you are using static IPv4 addresses, specify the IP address to assign to the clustered service name. The clustered service name and its assigned IP address will be registered in DNS. If you are using IPv6 addresses or DHCP, you don't need to do this.
@@ -114,9 +131,6 @@ During setup, VMM enables the following firewall rules. These rules remain in ef
 18. In **Upgrade compatibility report**, review settings > **Next** to proceed with upgrade.
 19. In **Installation Summary**, review settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
 20. In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, you can ensure that **Open the VMM console when this wizard closes** is checked, or you can click the **Virtual Machine Manager Console** icon on the desktop.
-
-
-
 
 ## Upgrade the VMM SQL Server database
 
@@ -139,9 +153,8 @@ Before you upgrade, collect information about the VMM database:
 
 1. Back up the existing VMM database, and copy the backup to a computer running a supported version of SQL Server.
 2. Use SQL Server tools to restore the database.
-	- If you are upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
-	- If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQl Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
-
+    - If you are upgrading VMM, you'll specify the new SQL Server location in VMM setup > **Database Configuration**.
+    - If you want to upgrade the database without upgrading VMM, you need to uninstall and then reinstall VMM. When you uninstall, **Database Options** page, select **Retain database**. Then, reinstall with the same settings you used for the original installation. On the **Database Configuration** you specify the new SQl Server details. After reinstall apply the update rollups and check that the deployment is working as expected.
 
 ### Upgrade a highly available database
 
@@ -158,8 +171,6 @@ Before you upgrade, collect information about the VMM database:
 When uninstalling VMM server from last node, you may get a message about unsuccessful SPN registration. This is a known issue with no functional impact.
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to new SQL Cluster.
-
-
 
 ## Update VMM agents
 
@@ -194,16 +205,15 @@ Read this [blog entry](https://azure.microsoft.com/blog/azure-site-recovery-wind
 
 After the upgrade, reconnect VMM to Operations Manager. Note that you shouldn't install any management pack on VMM 2016 RTM. Update Rollup 1 or later must be installed. If you have installed any management packs on the RTM version, uninstall them before you install Update Rollup 1.
 
-## Configure AlwaysOn Availability Groups
+## Configure Always On Availability Groups
 
-If you upgraded a database that was configured with AlwaysOn Availability Groups, you need to complete a few tasks to ensure that the upgraded database is properly configured with AlwaysOn Availability Groups.
+If you upgraded a database that was configured with Always On Availability Groups, you need to complete a few tasks to ensure that the upgraded database is properly configured with Always On Availability Groups.
 
 1. Add the VMM database to the availability group. You can use Microsoft SQL Server Management Studio to perform this task.
 2. On the secondary node computer in the cluster that is running SQL Server, create a new sign-in account. Configure the sign-in name so that it is identical to the VMM service account name. Include user mapping to the VMM database, and configure the database owner credentials.
 3. Initiate a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service (scvmmservice).
 4. Repeat the last two steps for every secondary node in the cluster that is running SQL Server.
 5. If this is a high availability VMM setup, continue to install other high availability VMM nodes.
-
 
 ## Update virtual machine templates
 
@@ -216,7 +226,6 @@ All virtual machine templates that were upgraded need to correctly specify the v
 
 If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
 
-
 ## Update driver packages
 
 Driver packages that were previously added to the VMM library must be removed and added again to be correctly discovered.
@@ -224,7 +233,6 @@ Driver packages that were previously added to the VMM library must be removed an
 If you plan to assign custom drivers, the driver files must exist in the library. You can tag the drivers in the library, so that you can later filter them by tag.  After files are added, when you configure a physical computer profile, you can specify the driver files. VMM installs the specified drivers when it installs the operating system on a physical computer.
 
 In the physical computer profile, you can select to filter the drivers by tags, or you can select to filter drivers with matching Plug and Play (PnP) IDs on the physical computer. If you select to filter the drivers by tags, VMM determines the drivers to apply by matching the tags that you assign to the drivers in the library to the tags that you assign in the profile. If you select to filter drivers with matching PnP IDs, you don't need to assign custom tags.
-
 
 1. Locate a driver package that you want to add to the library.
 2. In the library share that is located on the library server associated with the group where you want to deploy the physical computers, create a folder to store the drivers, and then copy the driver package to the folder.
@@ -234,13 +242,12 @@ In the physical computer profile, you can select to filter the drivers by tags, 
 6. In the **Physical Library Objects**, right-click the driver .inf file, and then click **Properties**.
 7. In the **Driver File Name Properties** > **Custom tags**, enter custom tags separated by a semi-colon, or click **Select** to assign available tags or to create and assign new ones. If you click **Select**, and then click **New Tag**, you can change the name of the tag after you click **OK**. For example, if you added a network adapter driver file, you could create a tag that is named ServerModel NetworkAdapterModel, where ServerModel is the server model and NetworkAdapterModel is the network adapter model.
 
-
 ## Relocate the VMM library
 
 - If you upgraded to a high availability VMM management server, we recommend that you relocate your VMM library to a high availability file server.
 - After you create a new VMM library, you will want to move the resources from the previous VMM library to the new VMM library.
 - To preserve the custom fields and properties of saved virtual machines in the previous VMM library, deploy the saved virtual machines to a host and then save the virtual machines to the new VMM library.
--  Note that operating system and hardware profiles cannot be moved. You need to re-create these profiles.
+- Note that operating system and hardware profiles cannot be moved. You need to re-create these profiles.
 
 ## Next steps
 

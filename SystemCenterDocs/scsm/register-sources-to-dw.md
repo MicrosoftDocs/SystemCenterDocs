@@ -427,3 +427,7 @@ To troubleshoot this problem, check if the password for each Run As account has 
 It is easy to update the password if it is expired. However it is more difficult to update the system if you change the Run As account. We do not recommend that you modify Run As accounts.
 
 If the job failure is not related to the password, make sure that the Run As account for the failed job can be used to connect to the target database. For example, ensure that the Extract job Run As account can be used to connect to the Service Manager database. If not, make sure that the Structured Query Language (SQL) service that is hosting the database is running.
+
+## Next steps
+
+- [Troubleshoot computer problems with tasks](troubleshoot-with-tasks.md).

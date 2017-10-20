@@ -4,8 +4,8 @@ title: Set up an SDN network controller in the VMM fabric
 description: This article describes how to set up a Software Defined Network (SDN) infrastructure in the System Center VMM fabric.
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 02/21/2017
+manager: carmonm
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cfcc2e1e-9dd0-46fd-8fdc-3dfcf3c11573
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
-# How to Configure Orchestrator Database Connections
+# How to configure Orchestrator database connections
 
 > Applies To: System Center 2016 - Orchestrator
 
-DBSetup allows you to secure an unsecured database. The common scenario is connecting to a restored backup.  
+As part of your day-to-day operations of Orchestrator you may need to change the connection settings to the Orchestrator database. You can us the DBSetup utility to change this setting. The common scenario is connecting to a restored backup.  
 
 This utility provides two functions:  
 
@@ -44,4 +44,4 @@ In contrast, DBconfig only creates a new database; it does not configure the sec
 3.  After you add a new DB server to your deployment, you must also run permissionsconfig, and then export and import the service master key to the new database server.  
 
 ## Next steps
-[How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md)  
+Learn more about how to change the Orchestrator database at [How to Change the Orchestrator Database](how-to-change-the-orchestrator-database.md). 

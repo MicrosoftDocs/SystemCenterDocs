@@ -4,7 +4,7 @@ description: This article describes how to install all Operations Manager 2016 r
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 01/25/2017
+ms.date: 05/31/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -28,7 +28,7 @@ This walkthrough guides you through an installation of System Center 2016 - Oper
 
 ## Prerequisites
 
-You must ensure that your server meets the minimum supported configurations for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
+You must ensure that your server meets the minimum supported configurations for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
 
 **Required SQL Server Components**
 
@@ -212,7 +212,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ## Next steps
 
-Now that you have installed System Center 2016 - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Managing Discovery and Agents](../om/manage/managing-discovery-and-agents.md) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
+Now that you have installed System Center 2016 - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
 
 
 

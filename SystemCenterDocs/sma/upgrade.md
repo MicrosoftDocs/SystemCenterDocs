@@ -15,7 +15,7 @@ ms.assetid:  c849610a-81ea-474d-a77f-bc15694e65f0
 
 >Applies To:
 
-This article describes how to upgrade your existing Service Management Automation 2012 R2 Service Management Automation installation.
+This article describes how to upgrade your existing Service Management Automation 2012 R2 Service Management Automation installation. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
 
 ## Prerequisites
 

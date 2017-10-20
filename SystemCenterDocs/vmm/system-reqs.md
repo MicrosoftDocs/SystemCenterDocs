@@ -5,7 +5,7 @@ description: This article provides information about system requirements for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/05/2017
+ms.date:  09/25/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -40,7 +40,7 @@ Library Objects (templates, profiles)| 100
   **Hardware** | **VMM server** | **VMM database** | **VMM  library** | **VMM console**
   --- | --- | --- | --- | ---
   **Processor (minimum)** | 8 core Pentium 4, 2GHx (x64) | 8 core Pentium 4, 2.8GHx | 4 core Pentium 4, 2.8GHz | 2 core Pentium 4, 1 GHz CPU
-  **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.66 GHz CPU | 2 core 2 GHz CPU
+  **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
   **RAM (minimum)** | 4 GB | 8 GB | 2 GB | 4 GB
   **RAM (recommended)** | 16 GB | 16 GB | 4 GB | 4 GB
   **Hard drive (minimum)** | 4 GB | 50 GB | Based on size/amount of stored files | 10 GB
@@ -65,10 +65,10 @@ Windows 7 | N
 Windows 8 | N
 Windows 8.1 | Y
 Windows 10 Enterprise | Y
-Windows Server 2008 R2 with SP1 onwards | Y
+Windows Server 2008 R2 with SP1 onwards | N
 Windows Server 2012 | Y
 Windows Server 2012 R2 Standard, Datacenter | Y
-Window Server 2012 Standard, Datacenter | Y
+Window Server 2016 Standard, Datacenter | Y
 
 
 ## SQL Server
@@ -80,7 +80,7 @@ SQL Server 2012 (Enterprise, Standard, 64-bit) | N
 SQL Server 2012 SP1 onwards | Y
 SQL Server 2014 and all service packs | Y
 SQL Server 2016 and all service packs | Y
-SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Version should match SQL Server version.<br/><br/> Not required for VMM installation.
+SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](http://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](http://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.
 
 ## Virtualization
 

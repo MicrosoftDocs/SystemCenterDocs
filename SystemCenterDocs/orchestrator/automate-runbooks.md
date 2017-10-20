@@ -9,9 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: df19c898-2018-441e-a37d-62a38734318b
-ms.author: cfreeman
+ms.author: raynew
 ms.date: 03/21/2017
 author: cfreemanwa
+ms.manager: carmonm
 
 ---
 # Automate IT Operations with System Center 2016 - Orchestrator Runbooks

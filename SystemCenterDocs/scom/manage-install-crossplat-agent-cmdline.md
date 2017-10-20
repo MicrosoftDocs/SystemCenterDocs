@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/21/2017
+ms.date: 08/23/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -16,17 +16,25 @@ ms.topic: article
 
 >Applies To: System Center 2016 - Operations Manager
 
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager 2016 - Operations Manager.
+Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager 2016 - Operations Manager.  The agent packages can be found in the the following folder on a management server - *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits* after you import  the required management packs for the specific version of UNIX/Linux you need to monitor.  The management pack are available in the Operations Manager installation media, in the *\ManagementPacks* directory or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=29696).
 
 ## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
-1.  Transfer the agent (`scx-<version>-<os>-<arch>.rpm`) to the Linux server, type:
+1.  Transfer the Red Hat Enterprise agent (`scx-<version>.rhel.<version>.<arch>.sh`) to the Linux server, type:
 
-    `scx-<version>-<os>-<arch>.rpm`
+    `scx-<version>.rhel.<version>.<arch>.sh`  
 
-2.  To install the package, type:
+    or for SUSE Linux Enterprise Server, type:  
 
-    `rpm -i scx-<version>-<os>-<arch>.rpm`
+    `scx-<version>.sles.<version>.<arch>.sh`  
+
+2.  To install the Red Hat Enterprise package, type:
+
+    `sh ./sscx-<version>.rhel.<version>.<arch>.sh --install` 
+
+    or for SUSE Linux Enterprise package, type:
+
+    `sh ./sscx-<version>.sles.<version>.<arch>.sh --install`  
 
 3.  To verify that the package is installed, type:
 
@@ -38,11 +46,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 ## To install the agent on RPM based Universal Linux Servers (Oracle and Centos)
 
-1.  Transfer the agent (`scx-<version>-universalr-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
+1.  Transfer the agent (`scx-<version>.universalr.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
 2.  To install the package, type:
 
-    `rpm -i scx-<version>-universalr-<arch>.rpm`
+    `sh ./scx-<version>.universalr.<version>.<arch>.sh --install`
 
 3.  To verify that the package is installed, type:
 
@@ -54,11 +62,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 ## To install the agent on DPKG-based Universal Linux Servers (Debian and Ubuntu)
 
-1.  Transfer the agent (`scx-<version>-universald-<arch>.rpm`) to the Linux server. This should be done via SCP or FTP in binary mode.
+1.  Transfer the agent (`scx-<version>.universald.<version>.<arch>.sh`) to the Linux server. This should be done via SCP or FTP in binary mode.
 
 2.  To install the package, type:
 
-    `dpkg -i scx-<version>-universald-<arch>.deb`
+    `sh ./scx-<version>.universald.<version>.<arch>.sh --install`
 
 3.  To verify that the package is installed, type:
 
@@ -70,45 +78,37 @@ Your environment may require that you manually install the agent. Use the follow
 
 ## To install the agent on Solaris
 
-1.  Transfer the agent (`scx-<version>-<os>-<arch>.pkg.Z`) to the Solaris server, type:
+1.  Transfer the agent (`scx-<version>.solaris.<version>.<arch>.sh`) to the Solaris server, type:
 
-    `scx-<version>-<os>-<arch>.pkg.Z`
+    `scx-<version>.solaris.<version>.<arch>.sh`
 
-2.  Run the following command:
+2.  To install the package, type:
 
-    `uncompress scx-<version>-<os>-<arch>.pkg.Z`
+    `pkgadd -d scx-<version>.solaris.<version>.<arch>.sh MSFTscx`
 
-3.  To install the package, type:
-
-    `pkgadd -d scx-<version>-<os>-<arch>.pkg MSFTscx`
-
-4.  To verify that the package is installed, type:
+3.  To verify that the package is installed, type:
 
     `pkginfo –l MSFTscx`
 
-5.  To verify that the Microsoft SCX CIM Server is running, type:
+4.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `svcs omiserver`
 
 ## To install the agent on HP-UX
 
-1.  Transfer the agent (`scx-<version>-<os>-<arch>.gz`) to the HP server:
+1.  Transfer the agent (`scx-<version>.hpux.<version>.<arch>.sh`) to the HP server:
 
-    `cp scx-<version>-<os>-<arch>.gz`
+    `cp scx-<version>.hpux.<version>.<arch>.sh`
 
-2.  To unzip the package, type:
+2.  To install the package, type:
 
-    `gzip –d scx-<version>-<os>-<arch>.gz`
+    `swinstall –s /path/scx-<version>.hpux.<version>.<arch>.sh scx`
 
-3.  To install the package, type:
-
-    `swinstall –s /path/scx-<version>-<os>-<arch> scx`
-
-4.  To verify that the package is installed, type:
+3.  To verify that the package is installed, type:
 
     `swlist scx`
 
-5.  To verify that the Microsoft SCX CIM Server is running, type:
+4.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `ps –ef|grep scx`
 
@@ -118,23 +118,19 @@ Your environment may require that you manually install the agent. Use the follow
 
 ## To install the agent on AIX
 
-1.  Transfer the agent (`scx-<version>-<os>-<arch>.gz`) to the AIX server, type:
+1.  Transfer the agent (`scx-<version>.aix.<version>.<arch>.sh`) to the AIX server, type:
 
-    `cp scx-<version>-<os>-<arch>.gz`
+    `cp scx-<version>.aix.<version>.<arch>.sh`
 
-2.  To unzip the package, type:
+2.  To install the package, type:
 
-    `gzip –d scx-<version>-<os>-<arch>.gz`
+    `/usr/sbin/installp -a -d scx-<version>.aix.<version>.<arch>.sh scx`
 
-3.  To install the package, type:
+3.  To verify that the package is installed, type:
 
-    `/usr/sbin/installp -a -d scx-<version>-<os>-<arch> scx`
+    `lslpp -l “scx*"`
 
-4.  To verify that the package is installed, type:
-
-    `swlist scx`
-
-5.  To verify that the Microsoft SCX CIM Server is running, type:
+4.  To verify that the Microsoft SCX CIM Server is running, type:
 
     `ps –ef|grep omi`
 

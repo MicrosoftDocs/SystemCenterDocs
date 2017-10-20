@@ -5,7 +5,7 @@ description: This article provides information about how to configure SDN QoS by
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/07/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -25,12 +25,6 @@ Through this configuration, you can limit the bandwidth of the traffic flowing i
 For detailed information about the SDN QoS settings available in Network Controller, see [Configure Quality of Service (QoS) for a Tenant VM Network Adapter](https://technet.microsoft.com/windows-server-docs/networking/sdn/manage/configure-qos-for-tenant-vm-network-adapter).
 
 QoS settings are managed in VMM through virtual network adapter port profiles associated with a port classification. Port profile settings enable uniformity and ease of application across multiple adapters.
-
-**You must do the following to configure QoS**:
-   - Create virtual network adapter port profiles
-   - Create port classification
-   - Associate port classifications to logical switch
-   - Apply port classification to virtual network adapter
 
 ## Before you start
 Ensure you have the network controller deployed in the SDN fabric. [Learn more](sdn-controller.md).

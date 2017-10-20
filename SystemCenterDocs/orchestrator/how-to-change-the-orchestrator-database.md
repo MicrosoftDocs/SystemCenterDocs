@@ -11,11 +11,11 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: acf45816-d68e-4ad5-ac9c-f29eb8254d5b
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
-# How to Change the Orchestrator Database
+# How to change the Orchestrator database
 
 > Applies To: System Center 2016 - Orchestrator
 
@@ -66,4 +66,5 @@ The web service supporting the Orchestration console does not use the **Settings
     **C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\aspnet\_regiis.exe \-pef "connectionStrings" "C:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Web Service\\Orchestrator2016"**  
 
 ## Next steps
-[Administering System Center 2016 - Orchestrator](../orch/manage/administering-orchestrator.md)  
+Read more about best practices for planning your Orchestrator implementation at [Database sizing and performance](database-sizing-and-performance.md).
+Get an overview of the Orchestrator architecure at [Orchestrator overview](learn-about-orchestrator.md).  

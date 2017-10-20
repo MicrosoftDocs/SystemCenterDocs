@@ -35,3 +35,9 @@ If you are creating a new connector to replace an existing connector, create the
 
 > [!TIP]
 > ![PowerShell symbol](./media/import-data-connectors/pssymbol.png)You can use a Windows PowerShell command to remove a connector from Service Manager. For more information, see [Remove-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225363).
+
+## Next steps
+
+- Learn about how to [Import data from Active Directory Domain Services](import-data-ads.md).
+- Learn about how to [Import data and alerts from Operations Manager](import-data-om.md).
+- Learn about how to [Import data from Configuration Manager](import-data-cm.md).

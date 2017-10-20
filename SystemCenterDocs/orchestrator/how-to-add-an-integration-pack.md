@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b504bdb-6297-4a0a-aec5-1de1dd975b40
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
@@ -44,8 +44,6 @@ When you install an upgrade of an integration pack, you must first uninstall any
 7.	In the Completing the Integration Pack Wizard dialog box, click Finish.
 8.	On the End User Agreement dialog box, read the Microsoft Software License Terms, and then click Accept.
 
-
-
 ### To deploy an integration pack
 1.	In the navigation pane of Deployment Manager, right-click Integration Packs, click Deploy IP to Action Server or Client.
 2.	Select the integration pack that you want to deploy, and then click Next.
@@ -69,4 +67,4 @@ When you install an upgrade of an integration pack, you must first uninstall any
 2.	Register and deploy the upgraded integration pack.
 
 ## Next steps
-[Build and test a runbook](build-test-runbooks.md)
+Learn more about creating runbooks at [Build and test runbooks for System Center 2016 - Orchestrator](design-and-build-runbooks.md).

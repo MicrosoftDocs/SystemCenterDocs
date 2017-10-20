@@ -1,6 +1,6 @@
 ---
-title: Monitor a folder within a runbook
-description: This article describes how you can use a sample to create a simple monitor runbook that monitors a folder for new text files.
+title: Example Runbook Monitoring a folder with a runbook
+description: This article describes how you can use a sample to create a simple monitoring runbook that monitors a folder for new text files.
 ms.custom: na
 ms.prod: system-center-threshold
 ms.reviewer: na
@@ -10,23 +10,23 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9be981fc-6708-4d00-a42a-2a15f0addbf0
 author: cfreemanwa
-ms.author: cfreeman
-ms.date: 10/12/2016
-manager: cfreeman
+ms.author: raynew
+ms.date: 5/10/2017
+manager: carmonm
 ---
 
-# Monitor a folder within a runbook
+# Example Runbook: Monitor a folder with a runbook
 
 > Applies To: System Center 2016 - Orchestrator
 
-This sample shows you how to create a simple monitor runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
+This sample shows you how to create a simple runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
 ![Monitor Folder](./media/monitor-a-folder-within-a-runbook/Orch2016_Sample_MonitorFolder.png)  
 
 ## Create and test a monitor runbook  
 The procedures to create, configure, and test a sample runbook that monitors a folder are described below.  
 
-#### To create the workflow  
+### To create the workflow  
 
 1.  In the Runbook Designer **Connections** pane, right-click the **Runbooks** folder to select **New**, and then click **Runbook**.  
 
@@ -36,13 +36,13 @@ The procedures to create, configure, and test a sample runbook that monitors a f
 
 4.  Type a name for the runbook, such as **Monitor Runbook**, and then press Enter.  
 
-5.  In the **Activities** pane, click **File Management** to expand the category, and then drag the **Monitor Folder** activity into the **Runbook Designer** Design workspace.  
+5. In the **Activities** pane, click **File Management** to expand the category, and then drag the **Monitor Folder** activity into the **Runbook Designer** Design workspace.  
 
-6.  In the **Activities** pane, click **Notification** to expand the category, and then drag the **Send Event Log Message** activity into the **Runbook Designer** Design workspace, to the right of the **Monitor Folder** activity.  
+6. In the **Activities** pane, click **Notification** to expand the category, and then drag the **Send Event Log Message** activity into the **Runbook Designer** Design workspace, to the right of the **Monitor Folder** activity.  
 
-7.  In the **Runbook Designer** Design workspace, move your pointer over the right side of the **Monitor Folder** activity to display the smart link arrow.  
+7. In the **Runbook Designer** Design workspace, move your pointer over the right side of the **Monitor Folder** activity to display the smart link arrow.  
 
-8.  Click the smart link arrow, and then drag it to the **Send Event Log Message** activity.  
+8. Click the smart link arrow, and then drag it to the **Send Event Log Message** activity.  
 
 9. In the **Activities** pane, click **Runbook Control** to expand the category, and then drag the **Invoke Runbook** activity into the **Runbook Designer** Design workspace, to the right of the **Send Event Log Message** activity.  
 
@@ -50,7 +50,7 @@ The procedures to create, configure, and test a sample runbook that monitors a f
 
 11. Click the smart link arrow, and then drag it to the **Invoke Runbook** activity.  
 
-#### To configure the workflow  
+## To configure the workflow  
 
 1.  In the **Runbook Designer** Design workspace, double\-click the **Monitor Folder** activity.  
 
@@ -93,12 +93,12 @@ The procedures to create, configure, and test a sample runbook that monitors a f
     2.  In the **Message** box, type the message to display in the Event log, for example, **File Detected**.  
 
     3.  Leave the **Severity** level at **Information**.  
-15. Click **Finish**.  
+14. Click **Finish**.  
 
     > [!NOTE]  
     > In this sample, the **Invoke Runbook** activity is not configured.  
 
-#### To modify runbook settings  
+## To modify runbook settings  
 
 1.  Above the **Runbook Designer** Design workspace, right-click the **Monitor Runbook** tab to select **Properties**.  
 
@@ -113,7 +113,7 @@ In the Runbook Tester, you can test runbooks in a simulated runtime and debuggin
 
 Use the following steps to test your runbook in the **Runbook Tester**.  
 
-#### To prepare your computer  
+### To prepare your computer  
 
 1.  Right-click **Start** to select **Open Windows Explorer**.  
 
@@ -123,7 +123,7 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 4.  In the **C:\\Source** folder, create a file with a **txt** extension, for example **text.txt**.  
 
-#### To test the runbook  
+### To test the runbook  
 
 1.  In the **Runbook Designer** Design workspace, select the **Monitor Runbook** tab.  
 
@@ -162,4 +162,5 @@ Use the following steps to test your runbook in the **Runbook Tester**.
 
 ## Next steps
 
-- Read [Runbook Samples](runbook-samples.md) to learn about building and testing sample runbooks.
+Read [Design and build runbooks](design-and-build-runbooks.md) to learn more about building runbooks and get best practice guidance for designing runbooks.
+Read [Control runbook activities](control-runbook-activities.md) to learn more about the options for controlling runbook execution.

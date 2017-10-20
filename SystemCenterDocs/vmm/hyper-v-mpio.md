@@ -1,11 +1,11 @@
 ---
 ms.assetid: c3f7b5fa-cb86-4906-b151-24dfbfede61b
-title: Manage MPIO for Hyper-V hosts in the VMM fabric
-description: This article provides information about managing MPIO for Hyper-V hosts
+title: Manage MPIO for Hyper-V hosts in the VMM 2016 fabric
+description: This article provides information about managing MPIO for Hyper-V hosts in VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  01/23/2016
+ms.date:  05/10/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -42,3 +42,7 @@ If you don't want VMM to claim any storage device IDs for MPIO purposes, do the 
 3. Add the device IDs from the default list. Make sure you use the same spacing.
 4. Restart the VMM service.
 5. Add the Hyper-V host in the VMM.
+
+## Next steps
+
+[Provision a VM](provision-vms.md)

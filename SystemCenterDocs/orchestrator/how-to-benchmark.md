@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0755be30-3648-47c0-a009-e2f0ff85040d
 author: cfreemanwa
-ms.author: cfreeman
+ms.author: raynew
 manager: carmonm
 ---
 
@@ -19,10 +19,12 @@ manager: carmonm
 
 > Applies To: System Center 2016 - Orchestrator
 
+You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark you should analyze the activities in your runbook.
+
 Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself \(with notable exceptions, such as **Invoke Runbook**, **Junction**, and others\). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a SOAP\-based web service. The platform code will be very similar for most activities, since it is built on a common framework. However, there will potentially be great variation in domain code for different activities.  
 
 ## Data Logging  
-Another aspect of runbook performance is data logging. For the purpose of understanding performance consider two logging configurations: Default logging and Common Published Data logging. Default logging results in approximately 524 bytes of data being written to the Orchestrator database each time an activity is run. Logging of common published data writes approximately 6,082 bytes of data \(12 times the default logging level\). There is a notable difference in performance between these logging levels.  
+Data logging has a major impact on runbook performance. For the purpose of understanding performance consider two logging configurations: Default logging and Common Published Data logging. Default logging results in approximately 524 bytes of data being written to the Orchestrator database each time an activity is run. Logging of common published data writes approximately 6,082 bytes of data \(12 times the default logging level\). There is a notable difference in performance between these logging levels.  
 
 Consider the scenario where the same runbook activity is run twice, once with data logging at the default level and once with logging of common published data enabled. The domain code should take the same amount of time to complete. However, the platform code will take longer to run with common published data logging enabled. Essentially, the platform code has to support logging 12 times more data with common published data enabled than it did when running at the default logging level.  
 
@@ -85,3 +87,7 @@ To summarize:
 -   Develop an understanding of how much time your runbooks spend running domain code compared to running platform code.  
 -   Estimate platform code costs using the techniques outlined in this document. Use as a reference in considering where to make improvements in runbook performance.  
 -   Use the techniques outlined in this document to gain a deeper understanding of the relative performance of your different runtime environments. Identify opportunities for improvement by making normalized comparisons of your measurements.  
+
+## Next steps
+
+Get step by step instructions for creating runbooks at [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook.md).

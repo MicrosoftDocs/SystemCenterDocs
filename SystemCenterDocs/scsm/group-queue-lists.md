@@ -204,3 +204,7 @@ You can use these procedures to add a list item to an existing list and then val
 1.  Select the same list again, click **Properties** in the **Tasks** pane, and then verify that the new list item appears.
 
 2.  In the Service Manager console, create a new incident, and then locate the new list item in the **Classification Category** list. For example, expand **Printer Problems**, and then locate the **Laser Printer** and **Check-Writing Printer** list items.
+
+## Next steps
+
+- [Use runbooks to automate procedures](runbooks.md).

@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  10/14/2016
+ms.date:  08/04/2017
 title:  Upgrade to DPM-2016
 ms.technology:  system-center-2016
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
@@ -29,6 +29,7 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 - Upgrade DPM Remote Administrator on all production servers.
 - Backups will continue without rebooting your production server.
 
+For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
 
 ### Upgrade steps for DPM
 
