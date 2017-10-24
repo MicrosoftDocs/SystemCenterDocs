@@ -6,8 +6,17 @@
       "docset_name": "SystemCenterDocs",
       "build_source_folder": "SystemCenterDocs",
       "build_output_subfolder": "system-center",
-      "locale": "en-us",      
-      "moniker_ranges": [ ">= sc-dpm-2016", ">= sc-orch-2016",">= sc-om-2016","> sc-sm-2016","> sc-sma-2016","> sc-spf-2016","> sc-vmm-2016"],
+      "locale": "en-us", 
+      "monikers": [],     
+      "moniker_ranges": [
+         ">= sc-dpm-2016", 
+         ">= sc-orch-2016",
+         ">= sc-om-2016",
+         "> sc-sm-2016",
+         "> sc-sma-2016",
+         "> sc-spf-2016",
+         "> sc-vmm-2016"
+        ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
