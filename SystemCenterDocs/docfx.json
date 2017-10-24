@@ -4,14 +4,12 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml",
-          "breadcrumb/toc.yml"
+          "**/*.yml"
         ],
         "group": "dpm",
         "src": "dpm",
         "exclude": [
           "**/obj/**",
-          "**/media/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -27,8 +25,7 @@
         "group": "orchestrator",
         "src": "orchestrator",
         "exclude": [
-          "**/obj/**",
-          "**/media/**",
+          "**/obj/**",         
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -44,8 +41,7 @@
         "group": "scom",
         "src": "scom",
         "exclude": [
-          "**/obj/**",
-          "**/media/**",
+          "**/obj/**",         
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -61,8 +57,7 @@
         "group": "scsm",
         "src": "scsm",
         "exclude": [
-          "**/obj/**",
-          "**/media/**",
+          "**/obj/**",         
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -78,8 +73,7 @@
         "group": "sma",
         "src": "sma",
         "exclude": [
-          "**/obj/**",
-          "**/media/**",
+          "**/obj/**",          
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -90,14 +84,12 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml",
-          "breadcrumb/toc.yml"
+          "**/*.yml"
         ],
         "group": "spf",
         "src": "spf",
         "exclude": [
-          "**/obj/**",
-          "**/media/**",
+          "**/obj/**",          
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -108,14 +100,12 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml",
-          "breadcrumb/toc.yml"
+          "**/*.yml"         
         ],
         "group": "vmm",
         "src": "vmm",
         "exclude": [
-          "**/obj/**",
-          "**/media/**",
+          "**/obj/**",         
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -237,7 +227,7 @@
         "moniker_range": "> sc-sma-2016"
       },
       "spf": {
-        "dest": "pf",
+        "dest": "spf",
         "moniker_range": "> sc-spf-2016"
       },
       "vmm": {
