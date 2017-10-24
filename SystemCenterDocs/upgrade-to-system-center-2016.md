@@ -139,7 +139,7 @@ Upgrading:
 
 Before you upgrade:
 
-1. Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](http://go.microsoft.com/fwlink/p/?LinkId=216936).
+1. Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=216936).
 2. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Service Management Automation in System Center 2016.
 
 Upgrade:
@@ -193,7 +193,7 @@ Installing the Self Service portal on the same computer as the primary managemen
 
 #### Upgrading the HTML5-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager **secondary** management server
 1.	**Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state**
-2.	Download and install the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](http://go.microsoft.com/fwlink/?LinkID=798214) (installation instructions are available on the same link)
+2.	Download and install the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214) (installation instructions are available on the same link)
 3.	Upgrade both primary and secondary Management Servers from Service Manager 2012 R2 to Service Manager 2016.
 4.	Self Service Portal will also get upgraded along with the secondary management server.
 
@@ -201,7 +201,7 @@ Installing the Self Service portal on the same computer as the primary managemen
 *Installing the Self Service portal on the same computer as the primary management server is not recommended.* However, in the event that you are using this combination, then use the following steps to upgrade to Service Manager 2016.
 
 1.	**Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state **
-2.	Download and install the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](http://go.microsoft.com/fwlink/?LinkID=798214) (installation instructions are available on the same link)
+2.	Download and install the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214) (installation instructions are available on the same link)
 3.	Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
 4.	Self Service Portal will also get upgraded along with the primary management server.
 

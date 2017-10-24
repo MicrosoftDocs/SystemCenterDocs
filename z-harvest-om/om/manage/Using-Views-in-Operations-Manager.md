@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Using Views in Operations Manager
-For a description of the differences between dashboard views and reports, see this [System Center Operations Manager blog post](http://go.microsoft.com/fwlink/p/?LinkId=234126).  
+For a description of the differences between dashboard views and reports, see this [System Center Operations Manager blog post](https://go.microsoft.com/fwlink/p/?LinkId=234126).  
   
 ## Using Views in Operations Manager topics  
   

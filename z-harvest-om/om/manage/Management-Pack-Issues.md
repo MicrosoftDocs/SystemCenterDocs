@@ -41,15 +41,15 @@ The following examples show how to use the *ExecuteCommand* and *ExecuteShellCom
   
 -   To pass the command\-line arguments to the console without starting a shell process:  
   
-    `<p:ExecuteCommand_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> service syslog status </p:Command> <p:timeout>10</p:timeout> </p:ExecuteCommand_INPUT>`  
+    `<p:ExecuteCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> service syslog status </p:Command> <p:timeout>10</p:timeout> </p:ExecuteCommand_INPUT>`  
   
 -   To pass the command\-line arguments to a shell process that references an explicit shell:  
   
-    `<p:ExecuteCommand_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> /bin/sh ps -ef syslog | grep -v grep </p:Command> <p:timeout>10</p:timeout> </p:ExecuteCommand_INPUT>`  
+    `<p:ExecuteCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> /bin/sh ps -ef syslog | grep -v grep </p:Command> <p:timeout>10</p:timeout> </p:ExecuteCommand_INPUT>`  
   
 -   To pass the command arguments to a shell process that uses the user's default shell:  
   
-    `<p:ExecuteShellCommand_INPUT xmlns:p="http://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |&nbsp; awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`  
+    `<p:ExecuteShellCommand_INPUT xmlns:p="https://schemas.microsoft.com/wbem/wscim/1/cim-schema/2/SCX_OperatingSystem"> <p:Command> uptime |&nbsp; awk '{print $10}' |awk -F"," '{print $1}' </p:Command> <p:timeout>10</p:timeout> </p:ExecuteShellCommand_INPUT>`  
   
 ## See Also  
 [Using Templates for Additional Monitoring of UNIX and Linux](../../om/manage/Using-Templates-for-Additional-Monitoring-of-UNIX-and-Linux.md)  

@@ -30,7 +30,7 @@ The System Center Integration Pack for System Center 2016 Virtual Machine Manage
 -   Move virtual machines to a new host to manage availability and performance
 -   Create and restore virtual machine checkpoints
 
-For more information about the System Center integration pack for System Center 2016 - Virtual Machine Manager (VMM) and for other options for automating VMM, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
+For more information about the System Center integration pack for System Center 2016 - Virtual Machine Manager (VMM) and for other options for automating VMM, see the [System Center 2016 Integration Guide](https://go.microsoft.com/fwlink/?LinkID=275796).
 
 ## System Requirements
 
@@ -67,7 +67,7 @@ PowerShell 2.0 must be installed on both the Orchestrator runbook server and the
 1.  Open Registry Editor.
 2.  Expand the **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\PowerShellEngine** subkey.
 3.  Confirm that the value of the Runtime Version entry begins with v2.0.
-4.  If this value begins with 1.0, or the subkey is not present, see [Windows Management Framework (Windows PowerShell 2.0, WinRM 2.0, and BITS 4.0)](http://go.microsoft.com/fwlink/?linkID=193574) for information on installing Windows PowerShell 2.0.
+4.  If this value begins with 1.0, or the subkey is not present, see [Windows Management Framework (Windows PowerShell 2.0, WinRM 2.0, and BITS 4.0)](https://go.microsoft.com/fwlink/?linkID=193574) for information on installing Windows PowerShell 2.0.
 
 ### Confirm Windows Remote Management Installation
 
@@ -79,7 +79,7 @@ Windows Remote Management 2.0 (WinRM 2.0) must be installed and configured on th
 2.  Under **Local Computer Policy**, then expand **Computer Configuration**, then expand **Administrative Templates**, and then expand **Windows Components**
 3.  Verify that **Windows Remote Management (WinRM)** is listed.
 
-For more information about how to install and configure WinRM 2.0, see [Installation and Configuration for Windows Remote Management](http://go.microsoft.com/fwlink/?linkID=171111).
+For more information about how to install and configure WinRM 2.0, see [Installation and Configuration for Windows Remote Management](https://go.microsoft.com/fwlink/?linkID=171111).
 
 ### Windows Remote Management Trusted Hosts
 
@@ -105,13 +105,13 @@ The execution policy in Windows PowerShell determines which scripts must be digi
 
     **set-executionpolicy remotesigned**
 
-For more information about how to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](http://go.microsoft.com/fwlink/?linkID=113394) in the Microsoft TechNet Library.
+For more information about how to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/?linkID=113394) in the Microsoft TechNet Library.
 
 ### Windows PowerShell Remote Connection Quota
 
 You can use WS-Management quotas in Windows PowerShell remoting to protect the Orchestrator runbook server and the computer running the VMM Administration Console from excessive resource use, both accidental and malicious. The **MaxConcurrentOperationsPerUser** quota setting in the **WSMan:\\&lt;ComputerName&gt;\\Service** node provides this protection by imposing a limit on the number of VMM objects that can run concurrently.
 
-By default, MaxConcurrentOperationsPerUser is set to 5. This means that a maximum of five VMM objects can run concurrently across all VMM activities. If this default setting does not meet the needs of your organization, see [About\_Remote\_Troubleshooting](http://go.microsoft.com/fwlink/?linkID=135188) in the Microsoft TechNet Library for information about how to configure remote operations in Windows PowerShell.
+By default, MaxConcurrentOperationsPerUser is set to 5. This means that a maximum of five VMM objects can run concurrently across all VMM activities. If this default setting does not meet the needs of your organization, see [About\_Remote\_Troubleshooting](https://go.microsoft.com/fwlink/?linkID=135188) in the Microsoft TechNet Library for information about how to configure remote operations in Windows PowerShell.
 
 >[!NOTE]
 >The **MaxConcurrentOperationsPerUser** affects all Windows PowerShell objects whether or not they are from a runbook. If there are remote sessions from other applications, they will be included in this limit.
@@ -138,7 +138,7 @@ Once you have validated the WinRM configuration, you must add a **Connection** t
 | User   | The name of a user with access to VMM. This user account must have permissions to the VMM Administration Console and to the VMM server to perform the actions requested by the activities.<br>If you leave this property empty, the configuration will use the credentials from the Runbook Service Account. If this account has appropriate permissions to VMM, then you do not need to provide credentials for the configuration.   |
 | Domain   | The domain that the user account resides in.   |
 | Password   | The password for the specified user account.   |
-| Authentication Type (Remote only) | The type of authentication to use. This is only required if the runbook server and VMM Administration Console are installed on different computers.<br>The authentication method that you choose must be enabled in WinRM. You can enable the authentication methods using the **Local Group Policy Editor**. For more information see [Installation and Configuration for Windows Remote Management](http://go.microsoft.com/fwlink/?linkID=171111). |
+| Authentication Type (Remote only) | The type of authentication to use. This is only required if the runbook server and VMM Administration Console are installed on different computers.<br>The authentication method that you choose must be enabled in WinRM. You can enable the authentication methods using the **Local Group Policy Editor**. For more information see [Installation and Configuration for Windows Remote Management](https://go.microsoft.com/fwlink/?linkID=171111). |
 | Port (Remote only)   | The port used for PowerShell remoting between the Orchestrator runbook server and the computer with the VMM Administration Console. This is only required if the runbook server and VMM Administration Console are installed on different computers.   |
 | Use SSL (Remote only)   | Specifies whether SSL should be used for the connection. This is only required if the runbook server and VMM Administration Console are installed on different computers.   |
 | Cache Session Timeout (min.)   | The number of minutes before the session will timeout from lack of activity and need to reconnect.   |

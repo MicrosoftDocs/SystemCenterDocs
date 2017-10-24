@@ -163,7 +163,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
         **Select distinct MajorVersionNumber,MinorVersionNumber ,BuildNumber, FileName FROM dbo.tbl\_AM\_AgentPatch order byMajorVersionNumber,MinorVersionNumber,BuildNumber**
 
-    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups see [List of Build Numbers for System Center Data Protection Manager (DPM)](http://social.technet.microsoft.com/wiki/contents/articles/4058.list-of-build-numbers-for-system-center-data-protection-manager-dpm.aspx).
+    If nothing is returned in the query results, or if the DPM server was upgraded from previous versions but no new update rollup was installed since then, there won't be an entry for the major, minor for a base installation of DPM. To check the DPM versions associated with update rollups see [List of Build Numbers for System Center Data Protection Manager (DPM)](https://social.technet.microsoft.com/wiki/contents/articles/4058.list-of-build-numbers-for-system-center-data-protection-manager-dpm.aspx).
 
 ### Back up to Azure
 
@@ -297,9 +297,9 @@ To recover:
 ## Back up with native SQL Server backup to a local disk
 You can simply back up the DPM database to a local disk with native SQL Server backup, independent of DPM.
 
-1.  Get an [overview](http://technet.microsoft.com/library/ms187048(v=sql.110).aspx) of SQL Server backup.
+1.  Get an [overview](https://technet.microsoft.com/library/ms187048(v=sql.110).aspx) of SQL Server backup.
 
-2.  [Learn more](http://technet.microsoft.com/library/jj919148(v=sql.110).aspx) about backing up SQL Server to the cloud.
+2.  [Learn more](https://technet.microsoft.com/library/jj919148(v=sql.110).aspx) about backing up SQL Server to the cloud.
 
 ## Back up with native SQL Server backup to a share protected by DPM
 This backup option leverages native SQL to back up the DPM database to a share, protects the share with DPM, and uses Windows VSS previous versions to facilitate the restore.
@@ -335,7 +335,7 @@ This backup option leverages native SQL to back up the DPM database to a share, 
     <?xml version="1.0" encoding="utf-8"?>
     <ScriptConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
+    xmlns="https://schemas.microsoft.com/2003/dls/ScriptingConfig.xsd">
     <DatasourceScriptConfig DataSourceName="C:">
     <PreBackupScript>C:\DPMDBBACKUP\bkupdb.cmd</PreBackupScript>
     <TimeOut>120</TimeOut>
@@ -361,9 +361,9 @@ This backup option leverages native SQL to back up the DPM database to a share, 
 
 You can back up the DPM database as you would any other SQL Server database using SQL Server native backup.
 
--   Get an [overview](http://technet.microsoft.com/library/ms187048(v=sql.110).aspx) of SQL Server backup.
+-   Get an [overview](https://technet.microsoft.com/library/ms187048(v=sql.110).aspx) of SQL Server backup.
 
--   [Learn more](http://technet.microsoft.com/library/jj919148(v=sql.110).aspx) about backing up SQL Server to the cloud.
+-   [Learn more](https://technet.microsoft.com/library/jj919148(v=sql.110).aspx) about backing up SQL Server to the cloud.
 
 **Recover the database**
 

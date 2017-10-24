@@ -81,13 +81,13 @@ There are up to eight databases in a System Center 2016 - Service Manager enviro
 
 The first four databases in this list need to connect and exchange data with the Service Manager and data warehouse management servers. Data is encrypted during these exchanges. On the management servers, the encryption keys are backed up and restored as necessary, as explained in this article. For the servers that host databases, the encryption keys are stored in the databases themselves.  
 
-If a computer that hosts a database fails, all you need for recovery is the ability to restore the databases, which include the encryption keys, to a computer with the same name as the original computer. Your disaster recovery strategy for the Service Manager databases should be based on procedures for general SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](http://go.microsoft.com/fwlink/p/?LinkID=131016).  
+If a computer that hosts a database fails, all you need for recovery is the ability to restore the databases, which include the encryption keys, to a computer with the same name as the original computer. Your disaster recovery strategy for the Service Manager databases should be based on procedures for general SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](https://go.microsoft.com/fwlink/p/?LinkID=131016).  
 
 As part of your disaster recovery preparation, you run a script to capture the Security log to preserve user role information for each database. After you deploy Service Manager and, if necessary, run the Data Warehouse Registration Wizard, you use the SQL&nbsp;Server Script Wizard to create a script that captures SQL&nbsp;Server logon permissions and object\-level permissions. Then, if you need to restore a new server for the Service Manager databases, you can use this script to recreate the necessary logon permissions and object\-level permissions.  
 
 ### Enable common language runtime on SQL&nbsp;Server  
 
-During installation of the Service Manager database, Service Manager Setup enables common language runtime \(CLR\) on the computer that is running SQL&nbsp;Server. If you restore a Service Manager database to another computer running SQL&nbsp;Server, you must enable CLR manually. For more information, see [Enabling CLR Integration](http://go.microsoft.com/fwlink/p/?LinkId=217932).  
+During installation of the Service Manager database, Service Manager Setup enables common language runtime \(CLR\) on the computer that is running SQL&nbsp;Server. If you restore a Service Manager database to another computer running SQL&nbsp;Server, you must enable CLR manually. For more information, see [Enabling CLR Integration](https://go.microsoft.com/fwlink/p/?LinkId=217932).  
 
 ### Start the SQL Server Script wizard
 

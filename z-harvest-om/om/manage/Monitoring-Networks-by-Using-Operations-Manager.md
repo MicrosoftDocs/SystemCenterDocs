@@ -69,13 +69,13 @@ Network discovery and monitoring requires the following management packs, which 
   
 There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs from the following list are installed for each of the operating systems in your environment.  
   
--   [Windows Server 2003 Operating System](http://go.microsoft.com/fwlink/p/?LinkId=219547)  
+-   [Windows Server 2003 Operating System](https://go.microsoft.com/fwlink/p/?LinkId=219547)  
   
--   [Windows Server 2008 Operating System](http://go.microsoft.com/fwlink/p/?LinkId=219547)  
+-   [Windows Server 2008 Operating System](https://go.microsoft.com/fwlink/p/?LinkId=219547)  
   
--   [Windows 7 Client Operating Systems](http://go.microsoft.com/fwlink/p/?LinkId=219548)  
+-   [Windows 7 Client Operating Systems](https://go.microsoft.com/fwlink/p/?LinkId=219548)  
   
--   [Windows Vista Client Operating Systems](http://go.microsoft.com/fwlink/p/?LinkId=219548)  
+-   [Windows Vista Client Operating Systems](https://go.microsoft.com/fwlink/p/?LinkId=219548)  
   
 ## <a name="bkmk_hownetworkdevicediscoveryworks"></a>How Network Device Discovery Works  
 Network device discovery is performed by discovery rules that you create. For instructions on creating a discovery rule, see [How to Discover Network Devices in Operations Manager](../../om/manage/How-to-Discover-Network-Devices-in-Operations-Manager.md) and [Network Device Discovery Settings](../../om/manage/Network-Device-Discovery-Settings.md).  

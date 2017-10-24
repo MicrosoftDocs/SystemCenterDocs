@@ -27,7 +27,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 No other applications that are using SQL Server Reporting Services can be installed on this instance of SQL Server.
 
-Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2012)](http://go.microsoft.com/fwlink/p/?LinkId=146943).
+Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2012)](https://go.microsoft.com/fwlink/p/?LinkId=146943).
 
 > [!NOTE]
 > Before you continue with this procedure, ensure that the account you plan to use for the Data Warehouse Write account has SQL Server logon rights and is an Administrator on the computers hosting both the operational database and the Reporting data warehouse database. Otherwise, Setup fails, and all changes are rolled back, which might leave SQL Server Reporting Services in an inoperable state.

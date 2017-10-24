@@ -22,7 +22,7 @@ ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
 
 This article provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 
-Use the following guidelines when you are authoring forms in the Service Manager Authoring Tool. For more information about how Windows Presentation Foundation \(WPF\) forms work and WPF customization guidelines, see [Windows Presentation Foundation](http://go.microsoft.com/fwlink/p/?LinkID=194437) on MSDN.  
+Use the following guidelines when you are authoring forms in the Service Manager Authoring Tool. For more information about how Windows Presentation Foundation \(WPF\) forms work and WPF customization guidelines, see [Windows Presentation Foundation](https://go.microsoft.com/fwlink/p/?LinkID=194437) on MSDN.  
 
 -   When you are customizing existing default forms by adding new controls, first create a new **Tab** control, and then add the new controls to the new **Tab** control.  
 -   Store all customizations of a particular form in a single management pack.  
@@ -191,7 +191,7 @@ The **List Picker** control in the Service Manager Authoring Tool is a custom co
 
 One of the characteristics of the control that you have to set is the list of items that will populate the **List Picker** control that you are creating. You can either choose an existing list, such as the **Activity Priority** list, or you can create a new list while you are creating the control.  
 
-To add list items to a newly created list, you must use the Service Manager console. You cannot use the Authoring Tool to add list items to a newly created list. For more information about using the Service Manager console to add list items, see [How to Add a List Item](http://go.microsoft.com/fwlink/p/?LinkId=231881).  
+To add list items to a newly created list, you must use the Service Manager console. You cannot use the Authoring Tool to add list items to a newly created list. For more information about using the Service Manager console to add list items, see [How to Add a List Item](https://go.microsoft.com/fwlink/p/?LinkId=231881).  
 
 Use the following procedure to add a **List Picker** control to a form.  
 

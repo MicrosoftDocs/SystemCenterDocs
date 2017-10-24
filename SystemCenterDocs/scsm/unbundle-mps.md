@@ -23,7 +23,7 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
 
  In this version of the Service Manager Authoring Tool, you cannot directly open an .mpb file to access its individual files. Instead, you must manually unbundle the .mpb file and store all the .mp, .xml, and other resource files in a single folder that is accessible to the Authoring Tool. Then, you can open and customize the individual files in the Authoring Tool in the same manner that you customize other management packs. After you complete the customizations, you have to rebundle the files and generate a new .mpb management pack file.  
 
- You can extract most of the resource files from an .mpb file by using a Windows&nbsp;PowerShell script. The following procedures provide Windows&nbsp;PowerShell sample scripts that extract files from an .mpb file. For more information about how to use the Service Manager SDK to create other scripts, see [Service Manager SDK](http://go.microsoft.com/fwlink/p/?LinkID=198541).  
+ You can extract most of the resource files from an .mpb file by using a Windows&nbsp;PowerShell script. The following procedures provide Windows&nbsp;PowerShell sample scripts that extract files from an .mpb file. For more information about how to use the Service Manager SDK to create other scripts, see [Service Manager SDK](https://go.microsoft.com/fwlink/p/?LinkID=198541).  
 
  You cannot extract sealed management packs from an .mpb file. Package owners must provide each file separately for a sealed management pack.  
 

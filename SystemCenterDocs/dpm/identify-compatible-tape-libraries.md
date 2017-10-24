@@ -16,7 +16,7 @@ ms.author: markgal
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
+Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](https://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
 
 ## Virtual tape library support
 Virtual tape libraries configured with a virtual fibre channel adapter are supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
@@ -36,7 +36,7 @@ Before you run the tool, do the following:
 
 To acquire and run the compatibility tool:
 
-1.  Download the [DPM Tape Library Compatibility Test Tool](http://go.microsoft.com/fwlink/?LinkId=203337).
+1.  Download the [DPM Tape Library Compatibility Test Tool](https://go.microsoft.com/fwlink/?LinkId=203337).
 
 2.  Extract the files. Open an elevated command prompt, and navigate to the folder to which you extracted the tool.
 

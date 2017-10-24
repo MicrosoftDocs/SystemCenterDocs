@@ -51,7 +51,7 @@ An alert is an indication of a significant event requiring attention. Rules and 
   
 ## Other resources for this component  
   
--   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)  
+-   [TechNet Library main page for Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=223634)  
   
 -   [Operations Guide for System Center 2012 - Operations Manager](../../om/manage/Operations-Guide-for-System-Center-2012---Operations-Manager.md)  
   
@@ -69,5 +69,5 @@ An alert is an indication of a significant event requiring attention. Rules and 
   
 -   [Connecting Management Groups in Operations Manager](../../om/manage/Connecting-Management-Groups-in-Operations-Manager.md)  
   
--   [Operations Manager Report Authoring Guide](http://go.microsoft.com/fwlink/p/?LinkID=217092)  
+-   [Operations Manager Report Authoring Guide](https://go.microsoft.com/fwlink/p/?LinkID=217092)  
   

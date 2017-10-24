@@ -126,7 +126,7 @@ This activity introduces a delay between activities in a workflow in Service Man
  None.  
 
 #### Remarks  
- For more information about this activity, see [DelayActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186252) in the .NET&nbsp;Framework Class Library.  
+ For more information about this activity, see [DelayActivity Class](https://go.microsoft.com/fwlink/p/?LinkID=186252) in the .NET&nbsp;Framework Class Library.  
 
 #### Example  
  None.  
@@ -185,7 +185,7 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
 This activity controls the sequence of activities within a workflow based on a Boolean (True/False) condition. You can use the outcome of a previous activity, such as a script activity, for the condition.  
 
- The **IfElse** activity is a Visual Studio activity that uses rules and conditions. For more information about using rules and conditions in Windows Workflow Foundation (WF), see [Tutorial: Use Rules and Conditions in WF](http://go.microsoft.com/fwlink/p/?LinkID=186257) in the MSDN Library.  
+ The **IfElse** activity is a Visual Studio activity that uses rules and conditions. For more information about using rules and conditions in Windows Workflow Foundation (WF), see [Tutorial: Use Rules and Conditions in WF](https://go.microsoft.com/fwlink/p/?LinkID=186257) in the MSDN Library.  
 
 #### Design time prerequisites  
  None.  
@@ -200,14 +200,14 @@ This activity controls the sequence of activities within a workflow based on a B
  None.  
 
 #### Remarks  
- For more information about the **IfElse** activity, see [IfElseActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=164775) in the .NET&nbsp;Framework&nbsp;4 Class Library.  
+ For more information about the **IfElse** activity, see [IfElseActivity Class](https://go.microsoft.com/fwlink/p/?LinkID=164775) in the .NET&nbsp;Framework&nbsp;4 Class Library.  
 
 #### Example  
  None.  
 
 ### Parallel activity
 
-This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](http://go.microsoft.com/fwlink/p/?LinkID=186258) in the .NET&nbsp;Framework Class Library.  
+This activity forks the sequence of activities into two simultaneous sequences of activities. The **Parallel** activity is a Visual Studio activity. For more information about the **ParallelActivity** class, see [ParallelActivity Class](https://go.microsoft.com/fwlink/p/?LinkID=186258) in the .NET&nbsp;Framework Class Library.  
 
 #### Design time prerequisites  
  None.  
@@ -534,7 +534,7 @@ This activity in Service Manager runs a Windows PowerShell script as part of a W
  The **Windows PowerShell Script** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions as appropriate if any of the script properties cannot be resolved.  
 
 #### Remarks  
- For more information about Windows PowerShell, see [Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=164777).  
+ For more information about Windows PowerShell, see [Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=164777).  
 
 ### VBScript Script activity
 
