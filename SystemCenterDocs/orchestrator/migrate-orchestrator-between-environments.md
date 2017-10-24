@@ -38,10 +38,10 @@ The following steps are required to enable an automatic migration of Orchestrato
 6.  Deploy Orchestrator components in environment B  
 
 > [!NOTE]  
-> See [http://go.microsoft.com/fwlink/?LinkId=246817](http://go.microsoft.com/fwlink/?LinkId=246817) for information on using the Sqlcmd utility.  
+> See [https://go.microsoft.com/fwlink/?LinkId=246817](https://go.microsoft.com/fwlink/?LinkId=246817) for information on using the Sqlcmd utility.  
 
 ## <a name="SCO_Migrate1"></a>Back up SQL Server service master key in environment A  
-Back up the SQL Server 2008 R2 service master key using the following procedure as described in [http://go.microsoft.com/fwlink/?LinkID=243093](http://go.microsoft.com/fwlink/?LinkID=243093).  This is a one-time operation.  
+Back up the SQL Server 2008 R2 service master key using the following procedure as described in [https://go.microsoft.com/fwlink/?LinkID=243093](https://go.microsoft.com/fwlink/?LinkID=243093).  This is a one-time operation.  
 
 Create a batch script with the following command:  
 
@@ -72,10 +72,10 @@ Back up the entire Orchestrator database.  You can perform the backup when the s
     ```  
 
 ## <a name="SCO_Migrate3"></a>Deploy SQL Server 2008 R2 in environment B  
-Deploy SQL Server to environment B. See [http://go.microsoft.com/fwlink/?LinkID=246815](http://go.microsoft.com/fwlink/?LinkID=246815) for information about creating a Sysprep image of SQL Server 2008 R2.  
+Deploy SQL Server to environment B. See [https://go.microsoft.com/fwlink/?LinkID=246815](https://go.microsoft.com/fwlink/?LinkID=246815) for information about creating a Sysprep image of SQL Server 2008 R2.  
 
 ## <a name="SCO_Migrate4"></a>Restore the SQL Server service master key in environment B  
-Restore the Microsoft SQL Sevver 2008 R2 service master key by using the procedure described at [http://go.microsoft.com/fwlink/?LinkID=243093](http://go.microsoft.com/fwlink/?LinkID=243093).  This will enable decryption of Orchestrator data on the new SQL server.  
+Restore the Microsoft SQL Sevver 2008 R2 service master key by using the procedure described at [https://go.microsoft.com/fwlink/?LinkID=243093](https://go.microsoft.com/fwlink/?LinkID=243093).  This will enable decryption of Orchestrator data on the new SQL server.  
 
 Create a batch script with the following command:  
 

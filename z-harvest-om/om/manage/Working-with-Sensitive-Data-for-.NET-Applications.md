@@ -65,5 +65,5 @@ If you do not want to get this sensitive information at all, here is how to avoi
 5.  Click **OK**.  
   
 ## See Also  
-[Operations Manager Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=190868)  
+[Operations Manager Privacy Statement](https://go.microsoft.com/fwlink/?LinkID=190868)  
   

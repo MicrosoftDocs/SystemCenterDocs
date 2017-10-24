@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The integration pack (IP) for System Center 2016 - Service Manager is an add-in for System Center 2016 - Orchestrator that enables you to use Service Manager to coordinate and use operational data in an existing IT environment comprised of service desk systems, configuration management systems, and event monitoring systems.
 
-For more information about the System Center integration pack for System Center 2016 - Service Manager and for other options for automating Service Manager, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
+For more information about the System Center integration pack for System Center 2016 - Service Manager and for other options for automating Service Manager, see the [System Center 2016 Integration Guide](https://go.microsoft.com/fwlink/?LinkID=275796).
 
 ## System Requirements
 

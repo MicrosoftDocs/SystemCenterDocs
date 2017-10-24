@@ -106,7 +106,7 @@ System.MissingMethodException: Method not found: 'System.Security.SecureString S
   
 ```  
   
-To resolve this problem, install [Microsoft .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=131605), available from http://go.microsoft.com/fwlink/?LinkID\=131605.  
+To resolve this problem, install [Microsoft .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=131605), available from https://go.microsoft.com/fwlink/?LinkID\=131605.  
   
 ### The state graphic is not displayed  
 

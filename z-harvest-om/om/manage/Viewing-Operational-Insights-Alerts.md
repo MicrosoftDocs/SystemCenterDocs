@@ -19,14 +19,14 @@ Operational Insights collects data from your installations, analyzes it, and gen
   
 In previous versions of Operational Insights called System Center Advisor, the Advisor agent used a gateway to communicate with the Advisor service, however it is not supported by Operational Insights. Using Operational Insights as an attached service in Operations Manager extends the value of Operational Insights to Operations Manager.  
   
-You can learn more about Operational Insights, including the workloads that it analyzes, in the online help system, available at [http:\/\/go.microsoft.com\/fwlink\/?LinkID\=194601](http://go.microsoft.com/fwlink/?LinkID=194601).  
+You can learn more about Operational Insights, including the workloads that it analyzes, in the online help system, available at [http:\/\/go.microsoft.com\/fwlink\/?LinkID\=194601](https://go.microsoft.com/fwlink/?LinkID=194601).  
   
 Use the following information to configure the Operations console so you can view Operational Insights alerts.  
   
 ## Pre\-requisites  
 Before you can view Operational Insights alerts in the Operations console, ensure the following pre\-requisites are met:  
   
--   If you want to view Operational Insights alerts about SharePoint Server 2010 or Lync Server 2010, you need to configure a Run As account. See [Set the Run As Account for SharePoint](http://go.microsoft.com/fwlink/?LinkID=247268) for information about creating this account for SharePoint Server and [Set the Run As Account for Lync Server](http://go.microsoft.com/fwlink/?LinkID=266611) for information for Lync Server.  
+-   If you want to view Operational Insights alerts about SharePoint Server 2010 or Lync Server 2010, you need to configure a Run As account. See [Set the Run As Account for SharePoint](https://go.microsoft.com/fwlink/?LinkID=247268) for information about creating this account for SharePoint Server and [Set the Run As Account for Lync Server](https://go.microsoft.com/fwlink/?LinkID=266611) for information for Lync Server.  
   
     > [!NOTE]  
     > The Run As account you use must be a Windows account.  
@@ -40,7 +40,7 @@ Use the following steps to configure the Operations console to view Operational 
   
 3.  Follow the instructions in the Operational Insights Onboarding wizard to complete your configuration.  
   
-4.  If your environment requires the use of a proxy server to communicate with the internet, configure the proxy server. See [Firewall Information for Operational Insights](http://go.microsoft.com/fwlink/?LinkId=294186) for details on the domains and URLs that need to be accessible through the firewall.  
+4.  If your environment requires the use of a proxy server to communicate with the internet, configure the proxy server. See [Firewall Information for Operational Insights](https://go.microsoft.com/fwlink/?LinkId=294186) for details on the domains and URLs that need to be accessible through the firewall.  
   
 5.  Add computers to analyze with Operational Insights. Click **Operational Insights** and then **Operational Insights Managed** in the navigation pane. Click **Add a Computer**, and then follow the instructions in the UI.  
   
@@ -59,7 +59,7 @@ You can view, close, or ignore an Operational Insights alert through the Operati
   
 To close an alert, click **Close Alert** in the Operational Insights Tasks list.  
   
-To ignore an alert, click the specific alert in the results pane, and then click **Ignore Alert**. You can manage alerts, including those that you have ignored, by clicking **Manage Alert Rules**. For more information about ignoring Operational Insights alerts, see [Ignore an Alert](http://go.microsoft.com/fwlink/?LinkID=245622) in the Operational Insights online help system.  
+To ignore an alert, click the specific alert in the results pane, and then click **Ignore Alert**. You can manage alerts, including those that you have ignored, by clicking **Manage Alert Rules**. For more information about ignoring Operational Insights alerts, see [Ignore an Alert](https://go.microsoft.com/fwlink/?LinkID=245622) in the Operational Insights online help system.  
   
 ## View configuration information  
 In addition to viewing alerts from Operational Insights, you can also view the configuration information that Operational Insights collects about the computers listed as "Operational Insights Managed." To view configuration information, from the Operational Insights page on the Monitoring workspace, click **View Configuration** in the Operational Insights Tasks list.  

@@ -22,7 +22,7 @@ ms.assetid: 3614b9db-20de-41c0-9780-a27624258da0
 This article provides guidance that you should consider when you install System Center - Service Manager in a Hyper\-V virtual environment. If you are installing Microsoft SQL&nbsp;Server into an environment without Hyper\-V, consult your vendor's documentation for guidance regarding the use of SQL&nbsp;Server.  
 
 ## Deploy SQL&nbsp;Server in a virtual environment  
- Before you deploy SQL&nbsp;Server in a Hyper\-V environment, see [Running SQL Server&nbsp;2008 in a Hyper\-V Environment](http://go.microsoft.com/fwlink/p/?LinkID=144622). Keep the following in mind when you prepare a virtual environment for SQL&nbsp;Server:  
+ Before you deploy SQL&nbsp;Server in a Hyper\-V environment, see [Running SQL Server&nbsp;2008 in a Hyper\-V Environment](https://go.microsoft.com/fwlink/p/?LinkID=144622). Keep the following in mind when you prepare a virtual environment for SQL&nbsp;Server:  
 
 -   Using a dynamic virtual hard drive \(VHD\) can decrease performance. We do not recommend using a VHD.  
 

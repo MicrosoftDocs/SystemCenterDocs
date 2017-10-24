@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Using the Authoring Workspace in Operations Manager
 The options in the Authoring workspace allow you to create new monitoring scenarios. This could be to change or add monitoring in an existing management pack or to create a new management pack for an application that doesn't have one.  
   
-Authoring is described in detail in the [Operations Manager&nbsp;2012 Authoring Guide](http://go.microsoft.com/fwlink/p/?LinkID=212377). The sections below describe the different options in the Authoring workspace.  
+Authoring is described in detail in the [Operations Manager&nbsp;2012 Authoring Guide](https://go.microsoft.com/fwlink/p/?LinkID=212377). The sections below describe the different options in the Authoring workspace.  
   
 ## Management Pack Templates  
 *Management Pack Templates* allow you to create complete monitoring scenarios with minimal input. Once you complete a wizard, the management pack template creates monitors, rules, and even classes to implement the particular scenario. There is no requirement for you to understand the management pack elements that are created since you can continue to use the template to perform configuration. It will make any necessary modifications to the underlying elements.  

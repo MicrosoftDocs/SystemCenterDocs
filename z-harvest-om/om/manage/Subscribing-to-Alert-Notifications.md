@@ -55,7 +55,7 @@ An Operations Manager administrator must configure the Run As account for notifi
   
 ## Other resources for this component  
   
--   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)  
+-   [TechNet Library main page for Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=223634)  
   
 -   [Operations Guide for System Center 2012 - Operations Manager](../../om/manage/Operations-Guide-for-System-Center-2012---Operations-Manager.md)  
   

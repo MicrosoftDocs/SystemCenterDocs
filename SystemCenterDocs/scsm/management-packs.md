@@ -29,13 +29,13 @@ By default, Service Manager contains several pre-imported, sealed management pac
 
 To use a management pack, import it into Service Manager. The management pack is stored in a .xml, .mp, or a .mpb file that you can import by using the Service Manager console.
 
-For more information about management packs key concepts, management packs best practices and other management packs related topics, see [Management Packs: Working with Management Packs](http://go.microsoft.com/fwlink/p/?LinkId=238192).
+For more information about management packs key concepts, management packs best practices and other management packs related topics, see [Management Packs: Working with Management Packs](https://go.microsoft.com/fwlink/p/?LinkId=238192).
 
 ## Create a management pack file
 
 You can use the following procedures to create a management pack file in Service Manager. After you create the management pack file, you can use it to store objects that you create.
 
-For more information about how to create and customize management packs, see [Management Packs: Working with Management Packs](http://go.microsoft.com/fwlink/p/?LinkID=207159).
+For more information about how to create and customize management packs, see [Management Packs: Working with Management Packs](https://go.microsoft.com/fwlink/p/?LinkID=207159).
 
 ### To create a management pack file
 
@@ -53,17 +53,17 @@ For more information about how to create and customize management packs, see [Ma
 
 ![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new management pack, see [New-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225411).
+-   For information about how to use Windows PowerShell to create a new management pack, see [New-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225411).
 
--   For information about how to use Windows PowerShell to seal a management pack, preventing it from being modified, see [Protect-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225413).
+-   For information about how to use Windows PowerShell to seal a management pack, preventing it from being modified, see [Protect-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225413).
 
--   For information about how to use Windows PowerShell to remove management packs, see [Remove-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225416).
+-   For information about how to use Windows PowerShell to remove management packs, see [Remove-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225416).
 
 ## Export a management pack
 
 After you create a management pack in Service Manager, you can export the unsealed management pack as a file to back up any customizations in the management pack. The exported management pack is a valid XML-formatted file. After you export an unsealed management pack, you can later import it to restore the objects that the management pack contains.
 
-When you export a sealed management pack, from the Service Manager console or by using the Windows PowerShell cmdlet [Export-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398), Service Manager generates an equivalent, unsealed management pack and stores it as a .XML file on the hard drive. You can then edit this management pack file to increase the version of the management pack, and re-seal it so it can be re-imported into Service Manager.
+When you export a sealed management pack, from the Service Manager console or by using the Windows PowerShell cmdlet [Export-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225398), Service Manager generates an equivalent, unsealed management pack and stores it as a .XML file on the hard drive. You can then edit this management pack file to increase the version of the management pack, and re-seal it so it can be re-imported into Service Manager.
 
 Use the following procedures to export an unsealed management pack and then validate the export.
 
@@ -86,7 +86,7 @@ Use the following procedures to export an unsealed management pack and then vali
 
 -   In Windows Explorer, ensure that you can locate the management pack file.
 
-![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML-formatted file that you can later import into Service Manager or Operations Manager, see [Export-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225398).
+![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete this task. For information about how to use Windows PowerShell to export a management pack as a valid XML-formatted file that you can later import into Service Manager or Operations Manager, see [Export-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225398).
 
 
 ## Import a management pack
@@ -95,7 +95,7 @@ Before you can use a management pack in Service Manager, you must import the man
 
 -   Use the Service Manager console, as described in this topic.
 
--   Use the **Import-SCSMManagementPack** cmdlet from the Service Manager module for Windows PowerShell. For more information about this cmdlet, see [Import-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396).
+-   Use the **Import-SCSMManagementPack** cmdlet from the Service Manager module for Windows PowerShell. For more information about this cmdlet, see [Import-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225396).
 
 When you reimport a sealed management pack, the version of the new management pack must be greater than the version of the initial management pack. The imported, sealed management pack must pass backward-compatibility verification, and then the objects of the new management pack and the objects of the initial management pack are merged. When you reimport an unsealed management pack, the objects from the new management pack overwrite the objects from the initial management pack.
 
@@ -123,11 +123,11 @@ Use the following procedure to import a single management pack, or a management 
 
 ![PowerShell symbol](./media/management-packs/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to import a management pack, see [Import-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396).
+-   For information about how to use Windows PowerShell to import a management pack, see [Import-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225396).
 
--   For information about how to use Windows PowerShell to test the validity of a management pack, see [Test-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225419).
+-   For information about how to use Windows PowerShell to test the validity of a management pack, see [Test-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225419).
 
--   For information about how to use Windows PowerShell to retrieve objects that represent management packs that have been imported, see [Get-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225404).
+-   For information about how to use Windows PowerShell to retrieve objects that represent management packs that have been imported, see [Get-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225404).
 
 
 

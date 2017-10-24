@@ -34,7 +34,7 @@ This article describes how to deploy a virtual machine that's stored in the Syst
     -   **Details**: Indicates the status of the host, the operating system, and the type and status of the virtualization software.
     -   **Rating Explanation**: Provides an explanation if a host received a zero rating.
     -   **SAN Explanation** or **Deployment and Transfer Explanation**: Lists any factors that make a storage area network (SAN) transfer unavailable. VMM does not recognize a virtual machine that is stored on a SAN as available for deployment by using SAN transfer if the virtual machine was stored directly in the library when it was created or was added to the library during a library refresh. To avoid this issue, deploy the virtual machine to a host by using a LAN transfer, and then store the virtual machine in the same VMM library, library share, and logical unit number (LUN).
-    - The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). To learn more, review [overview of Windows ODX](http://technet.microsoft.com/library/hh831628.aspx).
+    - The **Deployment and Transfer Explanation** tab provides an explanation if fast file copy cannot be used. Fast file copy is based on the Windows Offloaded Data Transfers (ODX). To learn more, review [overview of Windows ODX](https://technet.microsoft.com/library/hh831628.aspx).
 4. In **Select Path**, specify where you want to store the configuration files for the VM.
 
     - If you didn't select the default path, and you want to store other VMs on the path, select **Add this path to the list of host default paths**.

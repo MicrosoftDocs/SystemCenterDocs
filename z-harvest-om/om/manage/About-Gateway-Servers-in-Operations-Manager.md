@@ -23,7 +23,7 @@ To support the mandatory secure mutual authentication between the gateway server
   
 ![Authentication with gateway server](../../om/manage/media/OM12Gateway.gif "OM12Gateway")  
   
-For information about installing a gateway server, see [Deploying a Gateway Server](http://go.microsoft.com/fwlink/p/?LinkId=231391) in the Deployment Guide.  
+For information about installing a gateway server, see [Deploying a Gateway Server](https://go.microsoft.com/fwlink/p/?LinkId=231391) in the Deployment Guide.  
   
 ## See Also  
 [Monitoring Across Untrusted Boundaries in Operations Manager](../../om/manage/Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)  

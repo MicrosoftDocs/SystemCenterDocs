@@ -21,15 +21,15 @@ Before you configure certificates, ensure that the following actions have been c
   
     -   An agent is installed on the computer that will serve as the ACS Forwarder. For more information, see [Operations Manager Agent Installation Methods](../Topic/Operations%20Manager%20Agent%20Installation%20Methods.md).  
   
-    -   A certificate and certification authority \[CA\] certificate is installed on the computer hosting the agent. For more information, see [Authentication and Data Encryption for Windows Computers](http://go.microsoft.com/fwlink/p/?LinkID=227146) in the Deployment Guide.  
+    -   A certificate and certification authority \[CA\] certificate is installed on the computer hosting the agent. For more information, see [Authentication and Data Encryption for Windows Computers](https://go.microsoft.com/fwlink/p/?LinkID=227146) in the Deployment Guide.  
   
 -   On the ACS Collector:  
   
-    -   A certificate \(and CA certificate\) is installed on the management server hosting the ACS Collector. For more information, see [Authentication and Data Encryption for Windows Computers](http://go.microsoft.com/fwlink/p/?LinkID=227146) in the Deployment Guide.  
+    -   A certificate \(and CA certificate\) is installed on the management server hosting the ACS Collector. For more information, see [Authentication and Data Encryption for Windows Computers](https://go.microsoft.com/fwlink/p/?LinkID=227146) in the Deployment Guide.  
   
     -   The pending agent is approved and communication between the agent and the management server is operating properly. For more information, see [Process Manual Agent Installations](../Topic/Process%20Manual%20Agent%20Installations.md).  
   
-    -   The ACS Collector and database is installed. For more information, see [How to Install an Audit Collection Services \(ACS\) Collector and Database](http://go.microsoft.com/fwlink/?LinkID=229042) in the Deployment Guide.  
+    -   The ACS Collector and database is installed. For more information, see [How to Install an Audit Collection Services \(ACS\) Collector and Database](https://go.microsoft.com/fwlink/?LinkID=229042) in the Deployment Guide.  
   
 The following is a high\-level overview of the steps that need to be performed to use certificates with ACS.  
   

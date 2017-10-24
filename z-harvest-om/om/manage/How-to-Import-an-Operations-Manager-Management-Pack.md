@@ -15,7 +15,7 @@ manager:cfreemanwa
 # How to Import an Operations Manager Management Pack
 There are numerous management packs available for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)]. You have several options for importing management packs:  
   
--   Import directly from the catalog on the [Microsoft Pinpoint Site](http://go.microsoft.com/fwlink/?LinkId=82105) by using the Operations console.  
+-   Import directly from the catalog on the [Microsoft Pinpoint Site](https://go.microsoft.com/fwlink/?LinkId=82105) by using the Operations console.  
   
 -   Import from disk \(local storage or a network file share\) by using the Operations console.  
   
@@ -26,9 +26,9 @@ There are numerous management packs available for [!INCLUDE[om12long](../../om/m
 > [!NOTE]  
 > Using the management pack catalog service requires an Internet connection. If the computer running Operations Manager cannot be connected to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible to the Operations Manager management server.  
   
-The catalog on the [Microsoft Pinpoint Site](http://go.microsoft.com/fwlink/?LinkId=82105) contains management packs not developed by Microsoft. You can obtain management packs directly from these  companies and import them by using the procedure to import from disk. You can also search for management packs created by the community.  
+The catalog on the [Microsoft Pinpoint Site](https://go.microsoft.com/fwlink/?LinkId=82105) contains management packs not developed by Microsoft. You can obtain management packs directly from these  companies and import them by using the procedure to import from disk. You can also search for management packs created by the community.  
   
-The Operations Manager community also maintains a list of Management Packs developed by Microsoft  on the following web site [Microsoft Management Pack list](http://social.technet.microsoft.com/wiki/contents/articles/16174.microsoft-management-packs.aspx)  
+The Operations Manager community also maintains a list of Management Packs developed by Microsoft  on the following web site [Microsoft Management Pack list](https://social.technet.microsoft.com/wiki/contents/articles/16174.microsoft-management-packs.aspx)  
   
 > [!NOTE]  
 > Microsoft neither endorses nor provides support for third\-party products. Please contact the specific provider for support issues.  
@@ -134,7 +134,7 @@ You should always review the management pack guide before you import a managemen
   
 ### To download a management pack by using an Internet browser  
   
-1.  Open a browser and go to the catalog on the  [Microsoft Pinpoint Site](http://go.microsoft.com/fwlink/?LinkId=82105).  
+1.  Open a browser and go to the catalog on the  [Microsoft Pinpoint Site](https://go.microsoft.com/fwlink/?LinkId=82105).  
   
 2.  Browse the list of management packs, or use the **Search Applications** field to locate the management pack that you want to download.  
   

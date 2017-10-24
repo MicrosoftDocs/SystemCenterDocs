@@ -53,7 +53,7 @@ DebugView is an alternative method to EnableOpsmgrModuleLogging for troubleshoot
   
 #### To use DebugView  
   
-1.  Download DebugView from: [http:\/\/go.microsoft.com\/fwlink\/?Linkid\=129486](http://go.microsoft.com/fwlink/?Linkid=129486).  
+1.  Download DebugView from: [http:\/\/go.microsoft.com\/fwlink\/?Linkid\=129486](https://go.microsoft.com/fwlink/?Linkid=129486).  
   
 2.  Launch DebugView on the Management Server performing the discovery.  
   

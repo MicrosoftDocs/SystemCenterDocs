@@ -33,7 +33,7 @@ By default, the web console session is limited to 30 minutes. You can change thi
   
 -   Open a web browser on any computer and enter **http:\/\/***servername*\/**OperationsManager**, where *servername* is the name of the computer hosting the web console.  
   
-For information on installing the web console, see [Deployment Guide for Operations Manager&nbsp;2012](http://go.microsoft.com/fwlink/p/?LinkID=213291).  
+For information on installing the web console, see [Deployment Guide for Operations Manager&nbsp;2012](https://go.microsoft.com/fwlink/p/?LinkID=213291).  
   
 ## See Also  
 [Comparing the Operations Console and Web Console in Operations Manager](../../om/manage/Comparing-the-Operations-Console-and-Web-Console-in-Operations-Manager.md)  

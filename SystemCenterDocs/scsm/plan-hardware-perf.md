@@ -38,7 +38,7 @@ We do not recommend any specific virtual\-to\-physical\-computer ratio because t
 
 Database servers are vulnerable to poor performance on virtual machines if the following planning guidance is not followed:  
 
--   [Running SQL Server in a Hyper\-V Environment](http://go.microsoft.com/fwlink/p/?LinkID=144622).  
+-   [Running SQL Server in a Hyper\-V Environment](https://go.microsoft.com/fwlink/p/?LinkID=144622).  
 -   You should never use dynamic disks on virtual machines that are intended to host SQL Server. Use fixed\-size virtual hard drives or pass\-through.  
 -   Hyper\-V allows only four virtual CPUs per guest, which might constrain the Service Manager server if you have many consoles.  
 

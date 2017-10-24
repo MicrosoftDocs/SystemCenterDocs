@@ -20,9 +20,9 @@ System Center 2016 - Operations Manager can monitor physical network routers and
   
 Operations Manager can show you how your network is connected to the computers you are monitoring through the [Network Vicinity View](manage-monitor-networkdevice-viewing-data.md#network-vicinity-dashboard) dashboard. Using Network Vicinity View, you can see how your topology is laid out, as well as the health of each network device, computer, and the connection between each.  
   
-Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see  [Network Devices with Extended Monitoring Capability spreadsheet](http://go.microsoft.com/fwlink/p/?LinkID=231254). The devices worksheet includes processor and memory columns for each device to indicate whether Operations Manager can provide extended monitoring for either or both aspects for each device.  
+Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see  [Network Devices with Extended Monitoring Capability spreadsheet](https://go.microsoft.com/fwlink/p/?LinkID=231254). The devices worksheet includes processor and memory columns for each device to indicate whether Operations Manager can provide extended monitoring for either or both aspects for each device.  
 
-With System Center 2016 - Operations Manager, a Network Monitoring Management Pack generation tool is included to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  In addition to that, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](http://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). 
+With System Center 2016 - Operations Manager, a Network Monitoring Management Pack generation tool is included to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  In addition to that, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). 
   
 ## Network device monitoring capabilities and scope  
 
@@ -76,9 +76,9 @@ Network discovery and monitoring requires the following management packs, which 
   
 There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs from the following list are installed for each of the operating systems in your environment.  
   
--   [Windows Server 2003, 2008, 2008 R2, 2012, and 2012 R2 Operating System](http://go.microsoft.com/fwlink/p/?LinkId=219547)  
+-   [Windows Server 2003, 2008, 2008 R2, 2012, and 2012 R2 Operating System](https://go.microsoft.com/fwlink/p/?LinkId=219547)  
   
--   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](http://go.microsoft.com/fwlink/p/?LinkId=219548)  
+-   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://go.microsoft.com/fwlink/p/?LinkId=219548)  
 
 -   [Windows 8 and 8.1 Client Operating System](https://www.microsoft.com/download/details.aspx?id=38434) 
   

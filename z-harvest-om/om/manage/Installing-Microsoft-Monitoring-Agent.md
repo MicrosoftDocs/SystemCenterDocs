@@ -21,13 +21,13 @@ You can obtain and install Microsoft Monitoring Agent in several ways. You can m
 > [!NOTE]  
 > System Center versions before [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] delivered the agent as the MOMAgent.msi file. You can still find the file that has the same name on the [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] installation media. However, the file now installs Microsoft Monitoring Agent. If you get Microsoft Monitoring Agent from the Download Center, you can download either the 32\-bit \(MMASetup\-i386.exe\) version or the 64\-bit \(MMASetup\-AMD64.exe\) version of the agent.  
   
-To install Microsoft Monitoring Agent from the [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] installation media, see [Install Agent Using the MOMAgent.msi Setup Wizard](http://go.microsoft.com/fwlink/?LinkId=323496).  
+To install Microsoft Monitoring Agent from the [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] installation media, see [Install Agent Using the MOMAgent.msi Setup Wizard](https://go.microsoft.com/fwlink/?LinkId=323496).  
   
-To install Microsoft Monitoring Agent from the **Administration** pane in [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)], see [Install Agent on Windows Using the Discovery Wizard](http://go.microsoft.com/fwlink/?LinkId=323497).  
+To install Microsoft Monitoring Agent from the **Administration** pane in [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)], see [Install Agent on Windows Using the Discovery Wizard](https://go.microsoft.com/fwlink/?LinkId=323497).  
   
 ### To install Microsoft Monitoring Agent from the Download Center for stand\-alone monitoring  
   
-1.  Open the Microsoft Monitoring Agent download page in the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=309771).  
+1.  Open the Microsoft Monitoring Agent download page in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=309771).  
   
     > [!IMPORTANT]  
     > Local collection requires Microsoft .NET Framework&nbsp;3.5 and the Windows PowerShell&nbsp;2.0 command\-line interface. Some features, such as downloadable Help and pre\-imported monitoring Windows PowerShell modules, are not available unless you have Windows PowerShell&nbsp;3.0.  

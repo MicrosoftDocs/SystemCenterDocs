@@ -71,7 +71,7 @@ WG-Chi-5, 172.30.14.30, CHICAGO
 ```
 
 ## Create the format file
-A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Using the CSV import feature](http://go.microsoft.com/fwlink/p/?LinkID=159957) and download the file CSVImport.docx.
+A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Using the CSV import feature](https://go.microsoft.com/fwlink/p/?LinkID=159957) and download the file CSVImport.docx.
 
 For the type of data being imported, you find that the **Microsoft.Windows.Computer** class is the best suited for the object type and property set. Start by declaring the class of the object that is being imported:
 
@@ -127,7 +127,7 @@ Before you can import data from a comma-separated value (CSV) file, you have to 
 
 6.  In the **Import Instances from CSV File** dialog box, verify that the numbers next to **Items saved**, **Instances created in memory**, and **Instances committed to database** are equal to the number of rows in the data file, and then click **Close**.
 
-![PowerShell symbol](./media/import-data-csv/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](http://go.microsoft.com/fwlink/p/?LinkId=225348).
+![PowerShell symbol](./media/import-data-csv/pssymbol.png) You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to import configuration items from a CSV file, see [Import-SCSMInstance](https://go.microsoft.com/fwlink/p/?LinkId=225348).
 
 ### To validate the import of configuration items from a CSV file
 

@@ -37,7 +37,7 @@ sslciphersuite=<cipher spec>
   
 where <cipher spec> specifies the ciphers that are allowed, disallowed, and the order in which allowed ciphers are chosen.  
   
-The format for <cipher spec> is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](http://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
+The format for <cipher spec> is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](https://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
   
 After setting the **sslCipherSuite** configuration option, you must restart the UNIX and Linux agent for the change to take effect. To restart the UNIX and Linux agent, run the following command, which is located in the **\/etc\/opt\/microsoft\/scx\/bin\/tools** directory.  
   
@@ -61,7 +61,7 @@ scxcimconfig -s sslCipherSuite='<cipher spec>' -p
   
 where `<cipher spec>` specifies the ciphers that are allowed, disallowed, and the order in which allowed ciphers are chosen.  
   
-The format for `<cipher spec>` is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](http://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website.&nbsp;Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
+The format for `<cipher spec>` is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](https://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website.&nbsp;Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
   
 After setting the **sslCipherSuite** configuration option, you must restart the UNIX and Linux agent for the change to take effect. To restart the UNIX and Linux agent, run the following command, also located in the **\/etc\/opt\/microsoft\/scx\/bin\/tools** directory.  
   

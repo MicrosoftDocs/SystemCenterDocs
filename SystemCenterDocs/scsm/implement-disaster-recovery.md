@@ -23,7 +23,7 @@ This article describes the steps needed to recover from potential software and e
 
 ## Restore a database
 
-To restore a database \(which includes the encryption keys\) for System Center 2016 - Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](http://go.microsoft.com/fwlink/p/?LinkID=131016). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
+To restore a database \(which includes the encryption keys\) for System Center 2016 - Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](https://go.microsoft.com/fwlink/p/?LinkID=131016). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
 
 In addition, you must use the script that you created in the [Backing Up Unsealed Management Packs in Service Manager](back-up-unsealed-mps.md) article in this guide. You use this script to restore permissions for the recreated database.  
 
