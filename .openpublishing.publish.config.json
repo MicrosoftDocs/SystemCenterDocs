@@ -7,15 +7,7 @@
       "build_source_folder": "SystemCenterDocs",
       "build_output_subfolder": "system-center",
       "locale": "en-us", 
-      "monikers": [
-        "sc-dpm-2016","sc-dpm-1711",
-        "sc-orch-2016","sc-orch-1711",
-        "sc-om-2016","sc-om-1711",
-        "sc-sm-2016","sc-sm-1711",
-        "sc-sma-2016","sc-sma-1711",
-        "sc-spf-2016","sc-spf-1711",
-        "sc-vmm-2016","sc-vmm-1711"
-      ],     
+      "monikers": [],           
       "moniker_ranges": [
          ">= sc-dpm-2016", 
          ">= sc-orch-2016",
