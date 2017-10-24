@@ -84,7 +84,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "breadcrumb/toc.yml"
         ],
         "group": "spf",
         "src": "spf",
@@ -100,7 +101,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "breadcrumb/toc.yml"
         ],
         "group": "vmm",
         "src": "vmm",
