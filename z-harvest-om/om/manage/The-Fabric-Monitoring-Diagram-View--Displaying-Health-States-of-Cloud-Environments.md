@@ -35,5 +35,5 @@ The Fabric Monitoring Diagram view gives you a diagram of the entire infrastruct
   
 -   [Monitoring a Private Cloud \- video series](https://curah.microsoft.com/217123/monitoring-a-private-cloud-video-series)  
   
--   [How Healthy is Your Cloud? Fabric Monitoring Can Tell...](http://curah.microsoft.com/42340/how-healthy-is-your-cloud-fabric-monitoring-can-tell)  
+-   [How Healthy is Your Cloud? Fabric Monitoring Can Tell...](https://curah.microsoft.com/42340/how-healthy-is-your-cloud-fabric-monitoring-can-tell)  
   

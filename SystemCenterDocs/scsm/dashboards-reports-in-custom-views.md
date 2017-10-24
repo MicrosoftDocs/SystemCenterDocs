@@ -154,7 +154,7 @@ One of the benefits of using System Center - Service Manager with Microsoft Shar
             <Presentation>
               <Header />
               <Content>
-                <WebBrowser xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="wb1" Source="http://Dashboards/IncidentDashboard.aspx"/>
+                <WebBrowser xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml" Name="wb1" Source="http://Dashboards/IncidentDashboard.aspx"/>
               </Content>
             </Presentation>
           </Configuration>

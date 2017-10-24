@@ -50,7 +50,7 @@ ms.author: markgal;
 |SQL Server|SQL Server 2016|Physical server <br /><br /> On-premises Hyper-V virtual machine <br /> <br /> Azure virtual machine <br /><br /> Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y (UR2 Onwards)|N|All deployment scenarios: database|
 |SQL Server|SQL Server 2014|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y (from DPM 2012 R2 Update Rollup 3 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2014|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|All deployment scenarios: database|
-|SQL Server|SQL Server 2012 with SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y (from DPM 2012 R2 with [Update rollup 4](http://go.microsoft.com/fwlink/?LinkId=518078))|All deployment scenarios: database|
+|SQL Server|SQL Server 2012 with SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y (from DPM 2012 R2 with [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078))|All deployment scenarios: database|
 |SQL Server|SQL Server 2012 with SP2|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y (from DPM 2012 R2 with Update Rollup 3 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2012 with SP2|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2012, SQL Server 2012 with SP1|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|All deployment scenarios: database|

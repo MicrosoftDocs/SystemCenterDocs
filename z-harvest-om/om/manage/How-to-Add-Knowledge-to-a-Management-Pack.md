@@ -31,7 +31,7 @@ To add or edit company knowledge, the computer must meet the following software 
     > [!NOTE]  
     > Only the 32\-bit version of Word&nbsp;2010 is supported. The knowledge template will not work with the 64\-bit version of Word&nbsp;2010.  
   
--   Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime at [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=74969](http://go.microsoft.com/fwlink/?LinkId=74969). You must use this version of the Visual Studio&nbsp;2005 Tools for Office.  
+-   Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime at [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=74969](https://go.microsoft.com/fwlink/?LinkId=74969). You must use this version of the Visual Studio&nbsp;2005 Tools for Office.  
   
 To add or edit company knowledge, you must have the Author or Administrator user role.  
   

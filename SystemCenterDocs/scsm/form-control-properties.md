@@ -21,7 +21,7 @@ ms.assetid: 7d62ce9b-fd6d-4521-932d-f2ede5920955
 
 The table in this topic lists the properties of Service Manager form controls. This information can help you customize and create forms in the Service Manager Authoring Tool.  
 
- Most properties of Service Manager forms are based on Windows Presentation Foundation (WPF) properties, and other properties are defined by Service Manager. The following table provides details about the WPF-based property groups and their respective properties, when they are applicable. For more information about WPF properties, see [System.Windows.Controls Namespace](http://go.microsoft.com/fwlink/p/?LinkID=204425) on MSDN.  
+ Most properties of Service Manager forms are based on Windows Presentation Foundation (WPF) properties, and other properties are defined by Service Manager. The following table provides details about the WPF-based property groups and their respective properties, when they are applicable. For more information about WPF properties, see [System.Windows.Controls Namespace](https://go.microsoft.com/fwlink/p/?LinkID=204425) on MSDN.  
 
 **Group** | **Name** | **Source** | **WPF** | **Details**
 --- | --- | --- | --- | ---

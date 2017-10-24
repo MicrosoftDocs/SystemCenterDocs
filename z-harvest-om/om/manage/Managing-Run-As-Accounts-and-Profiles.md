@@ -51,7 +51,7 @@ A Run As account contains a single set of credentials which are stored in the Op
   
 ## Other resources for Operations Manager  
   
--   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/?LinkID=213297)  
+-   [TechNet Library main page for Operations Manager](https://go.microsoft.com/fwlink/?LinkID=213297)  
   
 -   [Operations Guide for System Center 2012 - Operations Manager](../../om/manage/Operations-Guide-for-System-Center-2012---Operations-Manager.md)  
   

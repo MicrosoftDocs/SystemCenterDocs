@@ -27,7 +27,7 @@ The System Center Integration Pack for System Center 2016 Data Protection Manage
 -   Automated system state protection
 -   Ad hoc backups
 
-For more information on the System Center integration pack for DPM and for other options for automating DPM, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
+For more information on the System Center integration pack for DPM and for other options for automating DPM, see the [System Center 2016 Integration Guide](https://go.microsoft.com/fwlink/?LinkID=275796).
 
 ## System Requirements
 
@@ -72,7 +72,7 @@ To run the scripts in this integration pack, you must set the execution policy t
 
 3.  When prompted, type **Y** and press Enter.
 
-For more information abouthow to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](http://go.microsoft.com/fwlink/?linkID=113394).
+For more information abouthow to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/?linkID=113394).
 
 ## Remote Connection Settings
 
@@ -85,13 +85,13 @@ Run the following command only one time on each computer that will receive comma
 1.  Open a Windows PowerShell (x86) console as an administrator.
 2.  Type *System Drive***:\\PS&gt;enable-psremoting** and press Enter.
 
-For more information about how to use the **Enable-PSRemoting** cmdlet, see [Enable PSRemoting](http://go.microsoft.com/fwlink/?linkID=144300).
+For more information about how to use the **Enable-PSRemoting** cmdlet, see [Enable PSRemoting](https://go.microsoft.com/fwlink/?linkID=144300).
 
 You can use WS-Management quotas in Windows PowerShell remoting to protect the Orchestrator and DPM computers from excessive resource use, both accidental and malicious. The MaxConcurrentOperationsPerUser quota setting in the WSMan:\\*ComputerName*\\Service node provides this protection by imposing a limit on the number of remote connections that can run concurrently.
 
 By default, MaxConcurrentOperationsPerUser is set to 15 in Windows Server 2008 R2. This means that you can run a maximum of 15 DPM activities (shells) concurrently across all DPM runbooks.
 
-WM-Management also provides provides a setting for MaxConnections (regardless of users), which is set to 25 by default in Windows Server 2008 R2. If these default settings do not meet the needs of your organization, see [About\_Remote\_Troubleshooting](http://go.microsoft.com/fwlink/?linkID=135188) for information about how to configure remote operations in Windows PowerShell.
+WM-Management also provides provides a setting for MaxConnections (regardless of users), which is set to 25 by default in Windows Server 2008 R2. If these default settings do not meet the needs of your organization, see [About\_Remote\_Troubleshooting](https://go.microsoft.com/fwlink/?linkID=135188) for information about how to configure remote operations in Windows PowerShell.
 
 ## Configuring the System Center 2016 Data Protection Manager Connections
 
@@ -115,7 +115,7 @@ Connections provide a way for you to define the way that the DPM Activities will
 | User   | The name of a user with access to DPM. This user account must have permissions to the DPMserver to perform the actions requested by the activities.<br>If you leave this property empty, the configuration will use the credentials from the Runbook Service Account. If this account has appropriate permissions to DPM, then you do not need to provide credentials for the configuration.   |
 | Domain   | The domain that the user account resides in.   |
 | Password   | The password for the specified user account.   |
-| Authentication Type (Remote only) | The type of authentication to use. This is only required if the runbook server and DPMare installed on different computers. Options are as follows:<br> Default - Use the authentication method implemented by the WS-Management protocol. This is the default.<br> Basic - a scheme in which the user name and password are sent in clear text to the server or proxy.<br> Negotiate - a challenge-response scheme that negotiates with the server or proxy to determine the scheme to use for authentication<br> NegotiateWithImplicitCredential - The connection is made using the credentials cached on the local computer.<br> Digest - a challenge-response scheme that uses a server-specified data string for the challenge.<br> Kerberos - The client computer and the server mutually authenticate by using Kerberos certificates.<br> The authentication method that you choose must be enabled in WinRM. You can enable the authentication methods using the **Local Group Policy Editor**. For more information see [Installation and Configuration for Windows Remote Management](http://go.microsoft.com/fwlink/?linkID=171111). |
+| Authentication Type (Remote only) | The type of authentication to use. This is only required if the runbook server and DPMare installed on different computers. Options are as follows:<br> Default - Use the authentication method implemented by the WS-Management protocol. This is the default.<br> Basic - a scheme in which the user name and password are sent in clear text to the server or proxy.<br> Negotiate - a challenge-response scheme that negotiates with the server or proxy to determine the scheme to use for authentication<br> NegotiateWithImplicitCredential - The connection is made using the credentials cached on the local computer.<br> Digest - a challenge-response scheme that uses a server-specified data string for the challenge.<br> Kerberos - The client computer and the server mutually authenticate by using Kerberos certificates.<br> The authentication method that you choose must be enabled in WinRM. You can enable the authentication methods using the **Local Group Policy Editor**. For more information see [Installation and Configuration for Windows Remote Management](https://go.microsoft.com/fwlink/?linkID=171111). |
 | Port (Remote only)   | Specifies the port to use when the client connects to the WinRM service on the remote server. By default, the port used is 5985.   |
 | Use SSL (Remote only)   | Specifies whether SSL should be used for the connection.   |
 | Cache Session Timeout (min.)   | The number of minutes before the session will timeout from lack of activity and need to reconnect. By default, this is 10 minutes.   |

@@ -86,6 +86,6 @@ The Performance Counter setting is intended for hourly performance aggregations,
     Store Event Period lets you determine how many days you want to keep APM events. Store Performance Counters Interval lets you determine how many days of performance counters you want to keep in Data Warehouse.  
   
 ## See Also  
-[How to Configure Grooming Settings for the Operations Manager Database](http://go.microsoft.com/fwlink/?LinkId=252382)  
-[How to Configure Grooming Settings for the Reporting Data Warehouse Database](http://go.microsoft.com/fwlink/?LinkId=252383)  
+[How to Configure Grooming Settings for the Operations Manager Database](https://go.microsoft.com/fwlink/?LinkId=252382)  
+[How to Configure Grooming Settings for the Reporting Data Warehouse Database](https://go.microsoft.com/fwlink/?LinkId=252383)  
   

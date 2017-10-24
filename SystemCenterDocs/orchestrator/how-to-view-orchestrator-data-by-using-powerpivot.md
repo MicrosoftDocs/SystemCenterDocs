@@ -28,7 +28,7 @@ PowerPivot for Excel requires Excel 2010 \(64\-bit or 32\-bit\).
 
 ### To install PowerPivot  
 
--  Follow the instructions found at [Install PowerPivot for Excel](http://go.microsoft.com/fwlink/p/?LinkID=184678).  
+-  Follow the instructions found at [Install PowerPivot for Excel](https://go.microsoft.com/fwlink/p/?LinkID=184678).  
 
 Use PowerPivot to configure a connection to Orchestrator web service. Orchestrator uses the Open Data Protocol \(OData\), which PowerPivot can consume.  
 
@@ -101,7 +101,7 @@ You can now modify the default labels and format your table for presentation.
 
 For more information about the workflow of a runbook and an explanation of runbook jobs and runbook instances, see [Orchestrator Architecture](~/orchestrator/learn-about-orchestrator.md) in the [getting started with system center 2016 - orchestrator](../orch/get-started/get-started-with-orchestrator.md).  
 
-For more information about PowerPivot for Excel, see [Introducing PowerPivot for Excel](http://go.microsoft.com/fwlink/p/?LinkID=187006).  
+For more information about PowerPivot for Excel, see [Introducing PowerPivot for Excel](https://go.microsoft.com/fwlink/p/?LinkID=187006).  
 
 ## Next steps 
 [Administering System Center 2016 - Orchestrator](../orch/manage/administering-orchestrator.md)  

@@ -20,7 +20,7 @@ Monitoring of Linux computers running as persistent virtual machines in Windows 
   
 -   [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] and supporting services \(SQL Server and Active Directory\) deployed in your on\-premises data center with a site\-to\-site VPN connection to the Windows Azure virtual network where the Linux virtual machines are deployed.  
   
-    -   More information about Windows Azure site\-to\-site VPN connections can be found [here](http://go.microsoft.com/fwlink/?LinkId=325539).  
+    -   More information about Windows Azure site\-to\-site VPN connections can be found [here](https://go.microsoft.com/fwlink/?LinkId=325539).  
   
 -   [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] and supporting services \(SQL Server and Active Directory\) deployed in Windows Azure, with virtual network connectivity between the Operations Manager Management Server and Linux virtual machines.  
   
@@ -32,9 +32,9 @@ All Linux operating systems and versions supported both by [!INCLUDE[omblue_1](.
   
 For more information about supported Linux operating systems, see the following:  
   
--   [System Center 2012 R2 - Operations Manager supported Linux operating systems](http://go.microsoft.com/fwlink/?LinkID=325541)  
+-   [System Center 2012 R2 - Operations Manager supported Linux operating systems](https://go.microsoft.com/fwlink/?LinkID=325541)  
   
--   [Windows Azure supported Linux operating systems](http://go.microsoft.com/fwlink/?LinkID=325542)  
+-   [Windows Azure supported Linux operating systems](https://go.microsoft.com/fwlink/?LinkID=325542)  
   
 ## Certificate and Name Resolution Requirements  
 Whether Linux computers are running on\-premises or in Windows Azure, the following requirements for [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] monitoring of Linux computers apply:  
@@ -65,7 +65,7 @@ For Linux virtual machines deployed in Windows Azure, additional configuration m
   
 #### Option 2: Configure DNS and DNS Search Suffixes  
   
-1.  Configure the Windows Azure virtual network with your DNS server addresses.  More information can be found [here](http://go.microsoft.com/fwlink/?LinkID=325543).  
+1.  Configure the Windows Azure virtual network with your DNS server addresses.  More information can be found [here](https://go.microsoft.com/fwlink/?LinkID=325543).  
   
 2.  Configure the appropriate DHCP client settings on the Linux virtual machines so that the correct search suffix is configured \(in `/etc/resolv.conf`\).  The following steps demonstrate this configuration on CentOS, SUSE Linux Enterprise Server, and Ubuntu Server.  
   
@@ -159,7 +159,7 @@ For Linux virtual machines deployed in Windows Azure, additional configuration m
         ```  
   
 ### Correcting Certificate Issues  
-If the agent certificate was created with an incorrect fully\-qualified domain name for the Linux virtual machine, the **scxsslconfig** utility can be used to regenerate the certificate.  More information and troubleshooting steps can be found [here](http://go.microsoft.com/fwlink/?LinkID=325544).  
+If the agent certificate was created with an incorrect fully\-qualified domain name for the Linux virtual machine, the **scxsslconfig** utility can be used to regenerate the certificate.  More information and troubleshooting steps can be found [here](https://go.microsoft.com/fwlink/?LinkID=325544).  
   
 ## Additional Configuration  
 The following additional configuration steps may be necessary when managing Linux virtual machines in Windows Azure with [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)].  
@@ -213,19 +213,19 @@ The SUSE Linux Enterprise Server management packs include a default monitor for 
   
 ## Additional Resources  
   
--   [Monitoring UNIX and Linux Computers by Using Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325545)  
+-   [Monitoring UNIX and Linux Computers by Using Operations Manager](https://go.microsoft.com/fwlink/?LinkID=325545)  
   
--   [Install Agent on UNIX and Linux Using the Discovery Wizard](http://go.microsoft.com/fwlink/?LinkID=325546)  
+-   [Install Agent on UNIX and Linux Using the Discovery Wizard](https://go.microsoft.com/fwlink/?LinkID=325546)  
   
--   [Accessing UNIX and Linux Computers in Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325547)  
+-   [Accessing UNIX and Linux Computers in Operations Manager](https://go.microsoft.com/fwlink/?LinkID=325547)  
   
--   [Troubleshooting UNIX\/Linux Agent Discovery in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325548)  
+-   [Troubleshooting UNIX\/Linux Agent Discovery in System Center 2012 \- Operations Manager](https://go.microsoft.com/fwlink/?LinkID=325548)  
   
--   [Configuring sudo Elevation for UNIX and Linux Monitoring with System Center 2012 - Operations Manager](http://go.microsoft.com/fwlink/?LinkID=325549)  
+-   [Configuring sudo Elevation for UNIX and Linux Monitoring with System Center 2012 - Operations Manager](https://go.microsoft.com/fwlink/?LinkID=325549)  
   
--   [Introduction to Linux on Windows Azure](http://go.microsoft.com/fwlink/?LinkID=325550)  
+-   [Introduction to Linux on Windows Azure](https://go.microsoft.com/fwlink/?LinkID=325550)  
   
--   [Create a Virtual Machine Running Linux](http://go.microsoft.com/fwlink/?LinkID=325551)  
+-   [Create a Virtual Machine Running Linux](https://go.microsoft.com/fwlink/?LinkID=325551)  
   
--   [Windows Azure Name Resolution](http://go.microsoft.com/fwlink/?LinkID=325552)  
+-   [Windows Azure Name Resolution](https://go.microsoft.com/fwlink/?LinkID=325552)  
   

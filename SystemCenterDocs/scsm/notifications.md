@@ -61,8 +61,8 @@ You can use the following procedures to configure notification channels and vali
 
 ![PowerShell symbol](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225375).
--   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](http://go.microsoft.com/fwlink/p/?LinkId=225319).
+-   For information about how to use Windows PowerShell to set the properties of an email notification channel in Service Manager, see [Set-SCSMChannel](https://go.microsoft.com/fwlink/p/?LinkId=225375).
+-   For information about how to use Windows PowerShell to retrieve the Email Notification channels that are defined in Service Manager, see [Get-SCSMChannel](https://go.microsoft.com/fwlink/p/?LinkId=225319).
 
 ## Create notification templates
 
@@ -133,11 +133,11 @@ The following two templates are prerequisites for other procedures:
 
 ![PowerShell symbol](./media/notifications/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225355).
--   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkID=225323).
--   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](http://go.microsoft.com/fwlink/p/?LinkID=225324).
--   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](http://go.microsoft.com/fwlink/p/?LinkID=225384).
--   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](http://go.microsoft.com/fwlink/p/?LinkId=246064).
+-   For information about how to use Windows PowerShell to create a new Email template in Service Manager, see [New-SCSMEmailTemplate](https://go.microsoft.com/fwlink/p/?LinkID=225355).
+-   For information about how to use Windows PowerShell to retrieve Email templates that are defined in Service Manager, see [Get-SCSMEmailTemplate](https://go.microsoft.com/fwlink/p/?LinkID=225323).
+-   For information about how to use Windows PowerShell to retrieve the content of a Service Manager Email template, see [Get-SCSMEmailTemplateContent](https://go.microsoft.com/fwlink/p/?LinkID=225324).
+-   For information about how to use Windows PowerShell to update properties of an Email template, see [Update-SCSMEmailtemplate](https://go.microsoft.com/fwlink/p/?LinkID=225384).
+-   For information about how to use Windows PowerShell to remove an Email template from Service Manager, see [Remove-SCSMEmailTemplate](https://go.microsoft.com/fwlink/p/?LinkId=246064).
 
 ## Subscribe to notifications
 
@@ -210,10 +210,10 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ![PowerShell symbol](./media/notifications/pssymbol.png)You can use a Windows PowerShell command to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225359).
--   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225333).
--   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225388).
--   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](http://go.microsoft.com/fwlink/p/?LinkID=225370).
+-   For information about how to use Windows PowerShell to create a new subscription in Service Manager, see [New-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225359).
+-   For information about how to use Windows PowerShell to retrieve subscriptions that are configured in Service Manager, see [Get-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225333).
+-   For information about how to use Windows PowerShell to update subscription properties in Service Manager, see [Update-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225388).
+-   For information about how to use Windows PowerShell to remove a subscription from Service Manager, see [Remove-SCSMSubscription](https://go.microsoft.com/fwlink/p/?LinkID=225370).
 
 ## Verify a notification configuration
 

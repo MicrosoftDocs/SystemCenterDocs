@@ -27,7 +27,7 @@ Using Operations Manager in the environment makes it easier to monitor multiple 
 ![Operations Console](./media/key-concepts/om2016-operations-console-monitoring-view.png)
 
 > [!NOTE]
-> To learn how to use the Operations Manager consoles, see [Using the Operations Manager Consoles](http://go.microsoft.com/fwlink/p/?LinkID=207747) in the Operations Guide.
+> To learn how to use the Operations Manager consoles, see [Using the Operations Manager Consoles](https://go.microsoft.com/fwlink/p/?LinkID=207747) in the Operations Guide.
 
 Operations Manager will tell you which monitored objects are not healthy, send alerts when problems are identified, and provide information to help you identify the cause of a problem and possible solutions. As the administrator, you configure what will be monitored by selecting computers and devices to be monitored and importing management packs that provide monitoring for specific features and applications. To decide which objects to monitor and what to monitor for, you need to understand the features that comprise the Operations Manager infrastructure and how Operations Manager works.
 
@@ -65,7 +65,7 @@ Every agent reports to a management server in the management group. This managem
 
 Agents watch data sources on the monitored computer and collect information according to the configuration that is sent to it from its management server. The agent also calculates the health state of the monitored computer and objects on the monitored computer and reports back to the management server. When the health state of a monitored object changes or other criteria are met, an alert can be generated from the agent. This lets operators know that something requires attention. By providing health data about the monitored object to the management server, the agent provides an up-to-date picture of the health of the device and all the applications that it hosts.
 
-An agent can be configured to act as a *proxy agent*. A proxy agent is an agent that can forward data to a management server on behalf of a computer or network device other than its host computer. For example, an agent that is installed on the physical node of an SQL cluster can be enabled to act as proxy to monitor the cluster resource. Proxy agents enable monitoring of computers and devices on which an agent cannot be installed. For more information, see [Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkID=207757).
+An agent can be configured to act as a *proxy agent*. A proxy agent is an agent that can forward data to a management server on behalf of a computer or network device other than its host computer. For example, an agent that is installed on the physical node of an SQL cluster can be enabled to act as proxy to monitor the cluster resource. Proxy agents enable monitoring of computers and devices on which an agent cannot be installed. For more information, see [Agentless Monitoring](https://go.microsoft.com/fwlink/p/?LinkID=207757).
 
 ### Services
 
@@ -121,7 +121,7 @@ The following image is a simplified illustration of how objects are discovered a
 8.  As changes occur to discovered objects, such as applications being added or uninstalled, the agent sends the updated information to the management server, which then sends updated monitoring logic.
 
 > [!NOTE]
-> Operations Manager can also discover and monitor network devices, computers running UNIX and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372) in the Operations Guide.
+> Operations Manager can also discover and monitor network devices, computers running UNIX and Linux operating systems, and provide agentless monitoring. For more information, see [Operations Manager Monitoring Scenarios](https://go.microsoft.com/fwlink/p/?LinkID=218372) in the Operations Guide.
 
 ### Communication between agents and management servers
 
@@ -141,6 +141,6 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 -   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../om/manage/operations-manager-operations-guide.md)
 
--   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](http://go.microsoft.com/fwlink/p/?LinkID=212377)
+-   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](https://go.microsoft.com/fwlink/p/?LinkID=212377)
 
--   [Operations Manager Community](http://go.microsoft.com/fwlink/p/?LinkID=221328)
+-   [Operations Manager Community](https://go.microsoft.com/fwlink/p/?LinkID=221328)

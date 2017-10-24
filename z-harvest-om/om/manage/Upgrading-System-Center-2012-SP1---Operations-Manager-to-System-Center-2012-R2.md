@@ -16,7 +16,7 @@ manager:cfreemanwa
 This Upgrade Guide provides information about how to upgrade from [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)].  
   
 > [!WARNING]  
-> If you are upgrading two or more System Center components, you must follow the procedures that are documented in [Upgrade Sequencing for System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=328675).  
+> If you are upgrading two or more System Center components, you must follow the procedures that are documented in [Upgrade Sequencing for System Center 2012 R2](https://go.microsoft.com/fwlink/?LinkId=328675).  
 >   
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
 >   
@@ -29,12 +29,12 @@ This Upgrade Guide provides information about how to upgrade from [!INCLUDE[sc20
 > 7.  [!INCLUDE[conceroshort](../../om/manage/includes/conceroshort_md.md)]  
   
 > [!WARNING]  
-> The only supported upgrade path to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] is from [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. If you are upgrading from [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)], you must first upgrade to [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] before upgrading to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)]. See [Upgrading to System Center 2012 \- Operations Manager](assetId:///2c9094d2-a57f-4d77-b430-f7ee2cbede6f) and [Upgrading System Center 2012 - Operations Manager to System Center 2012 SP1](http://go.microsoft.com/fwlink/?LinkId=309041) for complete upgrade information.  
+> The only supported upgrade path to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] is from [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. If you are upgrading from [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)], you must first upgrade to [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] before upgrading to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)]. See [Upgrading to System Center 2012 \- Operations Manager](assetId:///2c9094d2-a57f-4d77-b430-f7ee2cbede6f) and [Upgrading System Center 2012 - Operations Manager to System Center 2012 SP1](https://go.microsoft.com/fwlink/?LinkId=309041) for complete upgrade information.  
   
 > [!IMPORTANT]  
-> It is assumed in this guide that you are performing an *upgrade* to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)]. For information about installing [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] on a computer where no previous version of [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] exists, see [Deploying System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/?LinkId=309317).  
+> It is assumed in this guide that you are performing an *upgrade* to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)]. For information about installing [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] on a computer where no previous version of [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] exists, see [Deploying System Center 2012 \- Operations Manager](https://go.microsoft.com/fwlink/?LinkId=309317).  
   
-Before you upgrade to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)], you must first determine whether all servers in your [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2012 R2 Operations Manager](http://go.microsoft.com/fwlink/?LinkId=309038)  
+Before you upgrade to [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)], you must first determine whether all servers in your [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] management group meet the minimum supported configurations. For more information, see [System Requirements: System Center 2012 R2 Operations Manager](https://go.microsoft.com/fwlink/?LinkId=309038)  
   
 There are several options for upgrade:  
   

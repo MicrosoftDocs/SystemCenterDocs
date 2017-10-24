@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Certificate Renewal for Gateway Servers and Management Servers
 Eventually, the certificates that were obtained and installed on the gateway server and collection management servers will expire and will need to be replaced with new ones. You might also need to replace an existing certificate if, for security reasons, the certificate has been revoked.  
   
-To do this, follow the procedures that were used to obtain and import the certificates in the first place. For more information, see [Deploying a Gateway Server](http://go.microsoft.com/fwlink/p/?LinkId=231391) in the Deployment Guide. It is not necessary to rerun the Gateway Approval Tool.  
+To do this, follow the procedures that were used to obtain and import the certificates in the first place. For more information, see [Deploying a Gateway Server](https://go.microsoft.com/fwlink/p/?LinkId=231391) in the Deployment Guide. It is not necessary to rerun the Gateway Approval Tool.  
   
 ## See Also  
 [Monitoring Across Untrusted Boundaries in Operations Manager](../../om/manage/Monitoring-Across-Untrusted-Boundaries-in-Operations-Manager.md)  
