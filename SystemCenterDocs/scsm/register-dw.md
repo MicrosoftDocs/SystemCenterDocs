@@ -56,7 +56,7 @@ You can use the following steps in System Center - Service Manager to use the Da
 
 11. In a few minutes, after you close the Data Warehouse Registration Wizard, the **Data Warehouse** button will be added to the Service Manager console. In the Service Manager console, click the arrow at the lower right corner of the Service Manager console buttons, and then click **Show More Buttons**.  
 
- ![Windows PowerShell](./media/register-dw/pssymbol.png) You can use a Windows&nbsp;PowerShell command to complete this task. For information about how to use Windows&nbsp;PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](http://go.microsoft.com/fwlink/p/?LinkId=203096).
+ ![Windows PowerShell](./media/register-dw/pssymbol.png) You can use a Windows&nbsp;PowerShell command to complete this task. For information about how to use Windows&nbsp;PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](https://go.microsoft.com/fwlink/p/?LinkId=203096).
 
 
 ## Determine when Data Warehouse registration is complete

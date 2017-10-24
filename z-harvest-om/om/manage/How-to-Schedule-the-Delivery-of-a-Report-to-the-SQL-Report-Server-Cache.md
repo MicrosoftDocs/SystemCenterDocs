@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How to Schedule the Delivery of a Report to the SQL Report Server Cache
-You can create a schedule for sending reports to the cache in the SQL Server&nbsp;Report Server and thereby shorten the time required to retrieve a report if the report is large or accessed frequently. For more information about report caching, see [Caching Reports \(SSRS\)](http://go.microsoft.com/fwlink/?LinkId=77536).  
+You can create a schedule for sending reports to the cache in the SQL Server&nbsp;Report Server and thereby shorten the time required to retrieve a report if the report is large or accessed frequently. For more information about report caching, see [Caching Reports \(SSRS\)](https://go.microsoft.com/fwlink/?LinkId=77536).  
   
 The example in this procedure uses an availability report that you have already created and saved as a favorite. For more information about creating an availability report, see [How to Create an Availability Report](../../om/manage/How-to-Create-an-Availability-Report.md). For more information about saving a report as a favorite, see [How to Save a Report](../../om/manage/How-to-Save-a-Report.md).  
   

@@ -147,7 +147,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 1.  Run the Group Policy Object Editor (gpedit.msc) for the domain or local computer.
 
        > [!NOTE]
-       > For information about Group Policy, see [http://go.microsoft.com/fwlink/?LinkId=156845](http://go.microsoft.com/fwlink/?LinkId=156845).
+       > For information about Group Policy, see [https://go.microsoft.com/fwlink/?LinkId=156845](https://go.microsoft.com/fwlink/?LinkId=156845).
 
 2.  If needed, disable the **Turn off Windows Error Reporting** policy. This policy can be found in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
 

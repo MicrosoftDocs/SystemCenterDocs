@@ -68,6 +68,6 @@ After you have located the dataset and its aggregation type, scroll to the **Max
 [How and When to Clear the Cache](../../om/manage/How-and-When-to-Clear-the-Cache.md)  
 [How to Restart a Management Server](../../om/manage/How-to-Restart-a-Management-Server.md)  
 [How to Configure Grooming Settings for the Operations Manager Database](../../om/manage/How-to-Configure-Grooming-Settings-for-the-Operations-Manager-Database.md)  
-[How to Configure Grooming Settings for .NET Application Performance Monitoring Events](http://go.microsoft.com/fwlink/?LinkId=255375)  
+[How to Configure Grooming Settings for .NET Application Performance Monitoring Events](https://go.microsoft.com/fwlink/?LinkId=255375)  
 [Recommendations for Daily, Weekly, and Monthly Operations Manager Tasks](../../om/manage/Recommendations-for-Daily--Weekly--and-Monthly-Operations-Manager-Tasks.md)  
   

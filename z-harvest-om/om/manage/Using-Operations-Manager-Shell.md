@@ -23,9 +23,9 @@ To open the Operations Manager Shell, click **Start**, click **All Programs**, c
 Import-Module -Name OperationsManager  
 ```  
   
-You can access cmdlet help in the Operations Manager Shell by typing Get\-Help *cmdlet name* or view the help online at [Cmdlets in System Center&nbsp;2012&nbsp;-&nbsp;Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=235161).  
+You can access cmdlet help in the Operations Manager Shell by typing Get\-Help *cmdlet name* or view the help online at [Cmdlets in System Center&nbsp;2012&nbsp;-&nbsp;Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=235161).  
   
-To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=235162).  
+To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?LinkId=235162).  
   
 ## See Also  
 [General Tasks in Operations Manager_1](../Topic/General%20Tasks%20in%20Operations%20Manager_1.md)  

@@ -19,7 +19,7 @@ The Fabric Health Dashboard shows a detailed overview of the health of your priv
   
 #### To view the Fabric Health Dashboard  
   
-1.  Before you can begin to monitor the fabric of your private clouds, you must integrate [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] and Virtual Machine Manager. For more information, see [Configuring Operations Manager Integration with VMM](http://go.microsoft.com/fwlink/?LinkId=325587). During the integration, the management pack for VMM Fabric Dashboard 2012 R2 is imported automatically.  
+1.  Before you can begin to monitor the fabric of your private clouds, you must integrate [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] and Virtual Machine Manager. For more information, see [Configuring Operations Manager Integration with VMM](https://go.microsoft.com/fwlink/?LinkId=325587). During the integration, the management pack for VMM Fabric Dashboard 2012 R2 is imported automatically.  
   
 2.  To view the Fabric Health Dashboard, after you integrate [!INCLUDE[omblue_1](../../om/manage/includes/omblue_1_md.md)] and Virtual Machine Manager, click **Monitoring**, and in **Cloud Health Dashboard**, click **Cloud Health**.  
   
@@ -45,5 +45,5 @@ The **Active Alerts** and **Number of VMs** fields on this dashboard help indica
   
 -   [Monitoring a Private Cloud \- video series](https://curah.microsoft.com/217123/monitoring-a-private-cloud-video-series)  
   
--   [How Healthy is Your Cloud? Fabric Monitoring Can Tell...](http://curah.microsoft.com/42340/how-healthy-is-your-cloud-fabric-monitoring-can-tell)  
+-   [How Healthy is Your Cloud? Fabric Monitoring Can Tell...](https://curah.microsoft.com/42340/how-healthy-is-your-cloud-fabric-monitoring-can-tell)  
   

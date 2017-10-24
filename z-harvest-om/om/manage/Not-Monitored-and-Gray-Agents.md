@@ -74,7 +74,7 @@ The **Show Gray Agent Connectivity Data** task will help you identify why an age
   
     -   The management server that the agent reports to.  
   
-For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](http://go.microsoft.com/fwlink/p/?LinkID=200488). Although the article was written for Operations Manager&nbsp;2007, the troubleshooting steps will also be helpful for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)].  
+For information on troubleshooting, see the Knowledge Base article [Troubleshooting gray agent state](https://go.microsoft.com/fwlink/p/?LinkID=200488). Although the article was written for Operations Manager&nbsp;2007, the troubleshooting steps will also be helpful for [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)].  
   
 ## What to do for a not monitored state  
 When an object shows as not monitored, check whether the appropriate management pack for monitoring the object is imported. Ensure that the appropriate monitors are enabled.  
@@ -85,7 +85,7 @@ Next, check the DNS configuration for the computer, both FQDN and DNS suffix.
   
 An agent can also show as not monitored because the new agent has the same NetBIOS name as a previously installed agent. When the agent is deleted from Operations Manager, the grooming of the deleted agent is occurs after two days. Therefore, the agent is not immediately groomed out of the database completely. To work around this limitation, wait three days after deleting the agent to install the new agent.  
   
-For more ideas for troubleshooting, see the blog post [Getting headaches trying to figure out why you are seeing the 'Not Monitored' state for Management Servers or Agents?](http://go.microsoft.com/fwlink/p/?LinkId=229513).  
+For more ideas for troubleshooting, see the blog post [Getting headaches trying to figure out why you are seeing the 'Not Monitored' state for Management Servers or Agents?](https://go.microsoft.com/fwlink/p/?LinkId=229513).  
   
 ## See Also  
 [Using the Operations Manager Consoles](../../om/manage/Using-the-Operations-Manager-Consoles.md)  

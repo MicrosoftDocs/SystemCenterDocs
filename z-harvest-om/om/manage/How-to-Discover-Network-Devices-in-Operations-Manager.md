@@ -161,7 +161,7 @@ You must ensure the following firewall configuration before creating the network
     10. Click **OK**. This returns you to the **Devices** page.  
   
         > [!NOTE]  
-        > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see "Network Device Discovery Settings" in the [Operations Manager&nbsp;2012&nbsp;Operations Guide](http://go.microsoft.com/fwlink/p/?LinkID=207751).  
+        > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see "Network Device Discovery Settings" in the [Operations Manager&nbsp;2012&nbsp;Operations Guide](https://go.microsoft.com/fwlink/p/?LinkID=207751).  
   
     11. Add other SNMP v3 devices and Run As accounts as necessary, and then click **Next**.  
   
@@ -178,7 +178,7 @@ You must ensure the following firewall configuration before creating the network
         -   **172.23.135.\*** \(include any IP address in 172.23.135\/255.255.255.0\)  
   
         > [!NOTE]  
-        > For more information on formatting an IP address range, see "Network Device Discovery Settings" in the [Operations Manager&nbsp;2012&nbsp;Operations Guide](http://go.microsoft.com/fwlink/p/?LinkID=207751).  
+        > For more information on formatting an IP address range, see "Network Device Discovery Settings" in the [Operations Manager&nbsp;2012&nbsp;Operations Guide](https://go.microsoft.com/fwlink/p/?LinkID=207751).  
   
     2.  On the **Exclude Filters** page, leave the default setting to not exclude any of the discovered devices. If you want to filter an IP address from being discovered, click **Add** and specify an IP address. Click **Next** when complete.  
   

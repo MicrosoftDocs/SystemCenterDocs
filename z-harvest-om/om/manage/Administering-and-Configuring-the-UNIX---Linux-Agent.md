@@ -126,7 +126,7 @@ cd /opt/microsoft/scx/bin/tools/
 ## Additional Configuration Topics  
   
 ### SSL Ciphers  
-If required, the SSL cipher list used by the UNIX\/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](http://technet.microsoft.com/library/hh528918.aspx) topic.  
+If required, the SSL cipher list used by the UNIX\/Linux agent can be customized. For more information about this configuration, see the [Configuring SSL Ciphers](https://technet.microsoft.com/library/hh528918.aspx) topic.  
   
 ### Universal Linux - Operating System Name\/Version  
 The Universal Linux Agent, which supports Linux operating systems such as CentOS, Debian GNU\/Linux, Oracle Linux, and Ubuntu Server, parses release files to determine the host's operating system name and version. If required, these properties can be customized. To customize the operating system properties presented to [!INCLUDE[omblue_2](../../om/manage/includes/omblue_2_md.md)] for a Universal Linux Agent host, use the following procedure:  

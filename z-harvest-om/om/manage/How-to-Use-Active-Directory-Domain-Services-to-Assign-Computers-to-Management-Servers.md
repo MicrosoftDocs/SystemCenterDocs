@@ -66,7 +66,7 @@ Changing the agent assignment rule can result in computers no longer being assig
     2.  Click **OK,** and then click **Next**.  
   
         > [!NOTE]  
-        > The following LDAP query will return computers with a name starting with MsgOps, **\(&\(sAMAccountType\=805306369\)\(objectCategory\=computer\)\(cn\=MsgOps\*\)\)**.  For more information about LDAP queries, see  [Creating a Query Filter](http://go.microsoft.com/fwlink/?LinkId=73366).  
+        > The following LDAP query will return computers with a name starting with MsgOps, **\(&\(sAMAccountType\=805306369\)\(objectCategory\=computer\)\(cn\=MsgOps\*\)\)**.  For more information about LDAP queries, see  [Creating a Query Filter](https://go.microsoft.com/fwlink/?LinkId=73366).  
   
 4.  On the **Exclusion Criteria** page, type the FQDN of computers that you explicitly want to prevent from being managed by this management server, and then click **Next**.  
   

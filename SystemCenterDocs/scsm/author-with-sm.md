@@ -105,7 +105,7 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 ##### Additional requirements  
 
--   [Microsoft .NET Framework 3.5](http://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
+-   [Microsoft .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
 -   Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  
@@ -120,7 +120,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 ##### To install the Authoring Tool  
 
 1.  Verify that the computer on which you plan to install the Authoring Tool meets the requirements.  
-2.  Download the [SCSM2016\_AuthoringTool\_RTM.exe](http://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM2016\_AuthoringTool\_RTM.exe**.  
+2.  Download the [SCSM2016\_AuthoringTool\_RTM.exe](https://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM2016\_AuthoringTool\_RTM.exe**.  
 3.  In the **WinZip Self\-Extractor - SCSM2016\_AuthoringTool\_RTM.exe** dialog box, type a path to which to extract the files, and then click **Unzip**.  
 4.  Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe**. Double\-click **Setup.exe** to start Setup.  
 5.  In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  

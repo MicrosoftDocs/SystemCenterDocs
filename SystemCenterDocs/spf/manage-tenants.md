@@ -22,7 +22,7 @@ If you don't have an existing CA certificate to use, you can generate a self-sig
 
 ## Obtain a self-signed certificate
 
-Create a certificate using [makecert.exe (Certificate Creation Tool)](http://technet.microsoft.com/library/bfsktky3).  
+Create a certificate using [makecert.exe (Certificate Creation Tool)](https://technet.microsoft.com/library/bfsktky3).  
 
 1.  Open a command prompt as administrator.  
 2.  Generate the certificate by running the following command:  

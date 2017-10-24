@@ -25,7 +25,7 @@ In addition, when you configure an Active Directory connector to import data fro
 
 When you have created an Active Directory connector, **Select objects** in the connector cannot be updated. Instead, you create security groups in Active Directory that map to User Roles in Service Manager. For example, you can create a Security Group in Active Directory Domain Services (AD DS), named Incident Resolvers. In Service Manager, you can assign this security group to the Incident Resolvers user role. When you create the Active Directory connector and you select **Automatically add users of AD Groups imported by this connector**, when a user who is a member of the Incident Resolvers security group starts the Service Manager console, they will be granted Incident Resolver rights and permissions.
 
-If you are importing data from several OUs or subdomains, you have the option of creating a Lightweight Directory Access Protocol (LDAP) query that specifies computers, printers, users, or user groups to import with the connector. For example, an LDAP filter of all objects that are in either Dallas or Austin and that have the first name of John looks like `(&(givenName=John) (|(l=Dallas) (l=Austin)))`. You can test your queries, and all errors must be corrected before you can configure the Active Directory connector. For more information about LDAP queries, see [Search Filter Syntax](http://go.microsoft.com/fwlink/?LinkId=149908).
+If you are importing data from several OUs or subdomains, you have the option of creating a Lightweight Directory Access Protocol (LDAP) query that specifies computers, printers, users, or user groups to import with the connector. For example, an LDAP filter of all objects that are in either Dallas or Austin and that have the first name of John looks like `(&(givenName=John) (|(l=Dallas) (l=Austin)))`. You can test your queries, and all errors must be corrected before you can configure the Active Directory connector. For more information about LDAP queries, see [Search Filter Syntax](https://go.microsoft.com/fwlink/?LinkId=149908).
 
 If you must later perform maintenance operations on the Service Manager database, you can temporarily disable the connector and suspend the importation of data. Later, you can resume the importation of data by re-enabling the connector.
 
@@ -97,7 +97,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of imported configuration items.
 
-![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](http://go.microsoft.com/fwlink/?LinkId=225349).
+![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use a Windows PowerShell command to create a new Service Manager Active Directory connector. For information about how to use Windows PowerShell to create a new Service Manager Active Directory connector, see [New-SCADConnector](https://go.microsoft.com/fwlink/?LinkId=225349).
 
 ## Synchronize an Active Directory Connector
 
@@ -162,11 +162,11 @@ You can use the following procedure to disable or enable an Active Directory con
 
 ![PowerShell symbol](./media/import-data-ads/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225378).
+-   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkID=225378).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225320).
+-   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkID=225320).
 
--   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+-   For information about how to use Windows PowerShell to update properties of a Service Manager connector, see [Update-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkID=225382).
 
 ## Import data from other domains
 

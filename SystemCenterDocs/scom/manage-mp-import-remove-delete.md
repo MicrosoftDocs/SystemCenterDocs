@@ -33,7 +33,7 @@ You have several options for importing management packs:
 > [!NOTE]
 > Using the management pack catalog service requires an Internet connection. If the computer running Operations Manager cannot be connected to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible to the Operations Manager management server.
 
-The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](http://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk). 
+The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk). 
 
 > [!NOTE]
 > Microsoft neither endorses nor provides support for third-party products. Please contact the specific provider for support issues.
@@ -135,7 +135,7 @@ You should always review the management pack guide before you import a managemen
 
 ### Download a management pack by using an Internet browser
 
-1.  Open a browser and go to the [Microsoft Management Pack List](http://go.microsoft.com/fwlink/?LinkId=82105).
+1.  Open a browser and go to the [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105).
 
 2.  Browse the list of management packs to locate the management pack that you want to download.
 

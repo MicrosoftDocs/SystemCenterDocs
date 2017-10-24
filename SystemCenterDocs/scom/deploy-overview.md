@@ -24,7 +24,7 @@ This section of the Deployment Guide describes an individual management group de
 
 -   [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md)
 
-For information about connecting management groups, see [Connecting Management Groups in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=207755).
+For information about connecting management groups, see [Connecting Management Groups in Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=207755).
 
 ## Before you begin
 

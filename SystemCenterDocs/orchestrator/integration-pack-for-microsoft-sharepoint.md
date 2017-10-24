@@ -35,7 +35,7 @@ The integration pack for SharePoint requires the following software to be instal
 
 ## Downloading the Integration Pack
 
-To download this integration pack, see the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=309210).
+To download this integration pack, see the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=309210).
 
 ## Registering and Deploying the Integration Pack
 

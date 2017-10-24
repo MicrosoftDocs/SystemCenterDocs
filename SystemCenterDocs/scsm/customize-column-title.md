@@ -23,7 +23,7 @@ System Center - Service Manager contains predefined views that you can use to di
 
 For example, you can use the following procedure to customize a column title of a predefined view to reflect processes that are used in your organization.
 
-Another customization to a view is adding a column to a predefined view. For more information about adding a column to an existing view, see the [Editing a View in a Management Pack](http://go.microsoft.com/fwlink/p/?LinkID=204706) blog.
+Another customization to a view is adding a column to a predefined view. For more information about adding a column to an existing view, see the [Editing a View in a Management Pack](https://go.microsoft.com/fwlink/p/?LinkID=204706) blog.
 
 ## To customize a column title in a view
 
