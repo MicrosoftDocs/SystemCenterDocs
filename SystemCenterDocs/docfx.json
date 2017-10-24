@@ -6,11 +6,114 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "dpm",
+        "src": "dpm",
         "exclude": [
           "**/obj/**",
-          "system-center/**"
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "orchestrator",
+        "src": "orchestrator",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "scom",
+        "src": "scom",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "scsm",
+        "src": "scsm",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "sma",
+        "src": "sma",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "spf",
+        "src": "spf",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "vmm",
+        "src": "vmm",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       }
+
     ],
     "resource": [
       {
@@ -21,9 +124,76 @@
         ],
         "exclude": [
           "**/obj/**",
-          "system-center/**"
-        ]
-      }
+          "**/includes/**"
+        ],
+        "group": "dpm",
+        "src": "dpm"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "orchestrator",
+        "src": "orchestrator"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "scom",
+        "src": "scom"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "scsm",
+        "src": "scsm"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "spf",
+        "src": "spf"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "vmm",
+        "src": "vmm"
+      }      
     ],
     "overwrite": [],
     "externalReference": [],
@@ -34,6 +204,36 @@
     "template": [
       null
     ],
-    "dest": "system-center"
+    "dest": "system-center",
+    "groups": {
+      "dpm": {
+        "dest": "dpm",
+        "moniker_range": ">= sc-dpm-2016"
+      },
+      "orchestrator": {
+        "dest": "orchestrator",
+        "moniker_range": ">= sc-orch-2016"
+      },
+      "scom": {
+        "dest": "scom",
+        "moniker_range": ">= sc-om-2016"
+      },
+      "scsm": {
+        "dest": "scsm",
+        "moniker_range": "> sc-sm-2016"
+      },
+      "sma": {
+        "dest": "sma",
+        "moniker_range": "> sc-sma-2016"
+      },
+      "spf": {
+        "dest": "pf",
+        "moniker_range": "> sc-spf-2016"
+      },
+      "vmm": {
+        "dest": "vmm",
+        "moniker_range": "> sc-vmm-2016"
+      }
+    }
   }
 }
