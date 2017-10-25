@@ -20,8 +20,8 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
 ## Before you start
 
-- VMM should be running with [Update Rollup 4](https://support.microsoft.com/help/4041074).
-- Security fixes should be up-to-date on the VMM server.
+- VMM should be running [Update Rollup 4](https://support.microsoft.com/help/4041074).
+- Security fixes should be up-to-date on the VMM server, and the server running the VMM database.
 - The VMM server should be runnning . NET version 4.6. Follow [these instructions](https://docs.microsoft.com/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed.md) to determine which version of .NET is installed.
 - To work with TLS 1.2, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2. 
 
@@ -56,42 +56,42 @@ Disable all SCHANNEL protocols except for TLS 1.2.
 
 Instead of modifying the registry values manually, you can use the following PowerShell script.
 
-    ```
-    $ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2") 
-    $ProtocolSubKeyList = @("Client", "Server") 
-    $DisabledByDefault = "DisabledByDefault" 
-    $Enabled = "Enabled" 
-    $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\" 
+```
+$ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2") 
+$ProtocolSubKeyList = @("Client", "Server") 
+$DisabledByDefault = "DisabledByDefault" 
+$Enabled = "Enabled" 
+$registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\" 
+
+foreach($Protocol in $ProtocolList) 
+{ 
+    Write-Host " In 1st For loop" 
+        foreach($key in $ProtocolSubKeyList) 
+        {         
+            $currentRegPath = $registryPath + $Protocol + "\" + $key 
+            Write-Host " Current Registry Path $currentRegPath" 
+            if(!(Test-Path $currentRegPath)) 
+            { 
+                Write-Host "creating the registry" 
+                    New-Item -Path $currentRegPath -Force | out-Null             
+            } 
+            if($Protocol -eq "TLS 1.2") 
+            { 
+                Write-Host "Working for TLS 1.2" 
+                    New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null 
+                    New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null 
+            } 
+            else 
+            { 
+                Write-Host "Working for other protocol" 
+                    New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null 
+                    New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null 
+            }     
+    } 
+} 
   
-    foreach($Protocol in $ProtocolList) 
-    { 
-        Write-Host " In 1st For loop" 
-    foreach($key in $ProtocolSubKeyList) 
-    {         
-    $currentRegPath = $registryPath + $Protocol + "\" + $key 
-    Write-Host " Current Registry Path $currentRegPath" 
-    if(!(Test-Path $currentRegPath)) 
-    { 
-        Write-Host "creating the registry" 
-    New-Item -Path $currentRegPath -Force | out-Null             
-    } 
-    if($Protocol -eq "TLS 1.2") 
-    { 
-        Write-Host "Working for TLS 1.2" 
-    New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null 
-    New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null 
-        } 
-    else 
-    { 
-        Write-Host "Working for other protocol" 
-    New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null 
-    New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null 
-    }     
-    } 
-    } 
-  
-    Exit 0
-    ```
+Exit 0
+```
 
 ## Configure VMM to use TLS 1.2
 
@@ -105,14 +105,15 @@ Instead of modifying the registry values manually, you can use the following Pow
 
 You can modify the registry settings using the following PowerShell script.
 
-    ```
-    # Tighten up the .NET Framework
-    $NetRegistryPath = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319"
-    New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+```
+# Tighten up the .NET Framework
+$NetRegistryPath = "HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319"
+New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
 
-    $NetRegistryPath = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319"
-    New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
-    ```
+$NetRegistryPath = "HKLM:\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319"
+New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -PropertyType DWORD -Force | Out-Null
+```
 
 ## Next steps
 
+[Learn more](https://tools.ietf.org/html/rfc5246) about the TLS 1.2 protocol.
