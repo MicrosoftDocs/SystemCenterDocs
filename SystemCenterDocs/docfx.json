@@ -17,10 +17,12 @@
       },
       {
         "files": [
-          "dpm/**/*.md",
-          "dpm/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "dpm",
+        "src": "dpm",
+        "dest": "dpm",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -32,10 +34,12 @@
       },
       {
         "files": [
-          "orchestrator/**/*.md",
-          "orchestrator/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "orchestrator",
+        "src": "orchestrator",
+        "dest": "orchestrator",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -47,10 +51,12 @@
       },
       {
         "files": [
-          "scom/**/*.md",
-          "scom/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "scom",
+        "src": "scom",
+        "dest": "scom",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -62,10 +68,12 @@
       },
       {
         "files": [
-          "scsm/**/*.md",
-          "scsm/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "scsm",
+        "src": "scsm",
+        "dest": "scsm",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -77,10 +85,12 @@
       },
       {
         "files": [
-          "sma/**/*.md",
-          "sma/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "sma",
+        "src": "sma",
+        "dest": "sma",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -92,10 +102,12 @@
       },
       {
         "files": [
-          "spf/**/*.md",
-          "spf/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "spf",
+        "src": "spf",
+        "dest": "spf",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -107,10 +119,12 @@
       },
       {
         "files": [
-          "vmm/**/*.md",
-          "vmm/**/*.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
         "group": "vmm",
+        "src": "vmm",
+        "dest": "vmm",
         "exclude": [
           "**/obj/**",         
           "**/includes/**",
@@ -125,75 +139,87 @@
     "resource": [
       {
         "files": [
-          "dpm/**/*.png",
-          "dpm/**/*.jpg",
-          "dpm/**/*.gif"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "dpm"
+        "group": "dpm",
+        "src": "dpm",
+        "dest": "dpm"
       },
       {
         "files": [
-          "orchestrator/**/*.png",
-          "orchestrator/**/*.jpg",
-          "orchestrator/**/*.gif"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "orchestrator"
+        "group": "orchestrator",
+        "src": "orchestrator",
+        "dest": "orchestrator"
       },
       {
         "files": [
-          "scom/**/*.png",
-          "scom/**/*.jpg",
-          "scom/**/*.gif"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "scom"
+        "group": "scom",
+        "src": "scom",
+        "dest": "scom"
       },
       {
         "files": [
-          "scsm/**/*.png",
-          "scsm/**/*.jpg",
-          "scsm/**/*.gif"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "scsm"
+        "group": "scsm",
+        "src": "scsm",
+        "dest": "scsm"
       },
       {
         "files": [
-          "spf/**/*.png",
-          "spf/**/*.jpg",
-          "spf/**/*.gif"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "spf"
+        "group": "spf",
+        "src": "spf",
+        "dest": "spf"
       },
       {
         "files": [
-          "vmm/**/*.png",
-          "vmm/**/*.jpg",
-          "vmm/**/*.gif"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "vmm"
+        "group": "vmm",
+        "src": "vmm",
+        "dest": "vmm"
       }
     ],
     "overwrite": [],
