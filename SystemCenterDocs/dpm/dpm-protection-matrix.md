@@ -9,7 +9,7 @@ ms.date: 06/26/2017
 title:  What can DPM back up
 ms.technology:  data-protection-manager
 ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
-ms.author: markgal
+ms.author: markgal;
 ---
 
 # What can DPM back up?
@@ -21,17 +21,17 @@ ms.author: markgal
 |Workload|Version|DPM installation|DPM - System Center 2016|DPM - System Center 2012 R2|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |System Center VMM|VMM 2016,<br/>VMM 2012, SP1, R2|Physical server<br /><br />Hyper-V virtual machine|Y|Y|All deployment scenarios: Database|
-|Client computers (64-bit and 32-bit)|Windows 10|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Y|Y<br />From Update rollup 7 onwards|Files<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows 8.1|Physical server<br /><br />Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows 8.1|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y<br /><br />From Update Rollup 5 onwards|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows 8|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows 8|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y<br /><br />From Update Rollup 5 onwards|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows 7|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows 7|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from Update Rollup 5 onwards)|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows Vista with SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows Vista with SP1|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows Vista|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Files<br /><br />Protected volumes must be NTFS and at least 1 GB.|
-|Client computers (64-bit and 32-bit)|Windows Vista|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, file, system state/bare metal), deduped volumes|
+|Client computers (64-bit and 32-bit)|Windows 10|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Y|Y<br />From Update rollup 7 onwards|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows 8.1|Physical server<br /><br />Hyper-V virtual machine|Y|Y|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows 8.1|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y<br /><br />From Update Rollup 5 onwards|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows 8|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y<br /><br />From Update Rollup 5 onwards|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows 8|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from Update Rollup 5 onwards)|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows 7|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y<br /><br />From Update Rollup 5 onwards|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows 7|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from Update Rollup 5 onwards)|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows Vista with SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows Vista with SP1|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows Vista|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
+|Client computers (64-bit and 32-bit)|Windows Vista|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS and at least 1 GB.|
 |Servers (32-bit and 64-bit)|Windows Server 2016|Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)<br /><br />Physical server<br /><br />On-premises Hyper-V virtual machine|Y<br /><br />Not Nano server|N (Windows Server 2016 is not supported on DPM 2012 R2)|Volume, share, folder, file, system state/bare metal), deduped volumes|
 |Servers (32-bit and 64-bit)|Windows Server 2012 R2 - Datacenter and Standard|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y (from DPM 2012 R2 with Update Rollup 3 onwards)|Volume, share, folder, file<br /><br />DPM must be running on at least Windows Server 2012 R2 to protect Windows Server 2012 deduped volumes.|
 |Servers (32-bit and 64-bit)|Windows Server 2012 R2 - Datacenter and Standard|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|Volume, share, folder, file, system state/bare metal)<br /><br />DPM must be running on Windows Server 2012 or 2012 R2 to protect Windows Server 2012 deduped volumes.|
@@ -50,7 +50,7 @@ ms.author: markgal
 |SQL Server|SQL Server 2016|Physical server <br /><br /> On-premises Hyper-V virtual machine <br /> <br /> Azure virtual machine <br /><br /> Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y (UR2 Onwards)|N|All deployment scenarios: database|
 |SQL Server|SQL Server 2014|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y (from DPM 2012 R2 Update Rollup 3 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2014|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|All deployment scenarios: database|
-|SQL Server|SQL Server 2012 with SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y (from DPM 2012 R2 with [Update rollup 4](http://go.microsoft.com/fwlink/?LinkId=518078))|All deployment scenarios: database|
+|SQL Server|SQL Server 2012 with SP2|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y (from DPM 2012 R2 with [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078))|All deployment scenarios: database|
 |SQL Server|SQL Server 2012 with SP2|Azure virtual machine (when workload is running as Azure virtual machine)|Y|Y (from DPM 2012 R2 with Update Rollup 3 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2012 with SP2|Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Y|Y (from DPM 2012 R2 with Update Rollup 5 onwards)|All deployment scenarios: database|
 |SQL Server|SQL Server 2012, SQL Server 2012 with SP1|Physical server<br /><br />On-premises Hyper-V virtual machine|Y|Y|All deployment scenarios: database|

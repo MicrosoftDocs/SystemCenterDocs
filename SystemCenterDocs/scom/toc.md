@@ -17,6 +17,7 @@
 ### [Agent deployment planning](plan-planning-agent-deployment.md)
 ### Security 
 #### [Configuring a firewall for Operations Manager](plan-security-config-firewall.md)
+#### [Configure antivirus exclusions](plan-security-antivirus.md)
 #### [Service, user, and security accounts](plan-security-accounts.md)
 #### [Run As accounts and Profiles](plan-security-runas-accounts-profiles.md)
 #### [Security credentials to access UNIX and Linux computers](plan-security-crossplat-credentials.md)

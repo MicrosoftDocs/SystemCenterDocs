@@ -41,5 +41,5 @@ In [!INCLUDE[sc2012sp1_long](../../om/manage/includes/sc2012sp1_long_md.md)], [!
 3.  Repeat the previous step for each team project that will be used in synchronization.  
   
 ## See Also  
-[witAdmin: Administering Objects for Tracking Work Items](http://go.microsoft.com/fwlink/p/?LinkId=271477)  
+[witAdmin: Administering Objects for Tracking Work Items](https://go.microsoft.com/fwlink/p/?LinkId=271477)  
   

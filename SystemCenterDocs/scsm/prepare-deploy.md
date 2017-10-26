@@ -104,7 +104,7 @@ The user accounts and group accounts that are required for the installation of S
 
  When you are assigning Active Directory accounts for use with Service Manager Run As Accounts, it is a best practice to use service accounts. We strongly recommend against using Active Directory user accounts that are associated with individual people.  
 
- For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](http://go.microsoft.com/fwlink/p/?LinkID=167160).
+ For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](https://go.microsoft.com/fwlink/p/?LinkID=167160).
 
 #### Accounts used when you install a data warehouse management server  
 

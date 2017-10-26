@@ -98,7 +98,7 @@ System.MissingMethodException: Method not found: 'System.Security.SecureString S
   
 ```  
   
-To resolve this problem, install [Microsoft .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=131605), available from http:\/\/go.microsoft.com\/fwlink\/?LinkID\=131605.  
+To resolve this problem, install [Microsoft .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=131605), available from http:\/\/go.microsoft.com\/fwlink\/?LinkID\=131605.  
   
 ### The state graphic is not displayed  
 The state graphic does not appear on a stencil even though you have linked the shape with the **Link Shape to Data** option.  

@@ -407,7 +407,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 
 ```  
 
-<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:SMFormsDemo" x:Class="SMFormsDemo.TestControl" x:Name="Control" Width="574" Height="390" Opacity="1" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">  
+<UserControl xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:SMFormsDemo" x:Class="SMFormsDemo.TestControl" x:Name="Control" Width="574" Height="390" Opacity="1" xmlns:d="https://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">  
    <UserControl.Resources>  
       <ObjectDataProvider ObjectType="{x:Type local:helper}" MethodName="GetStatusValues" x:Key="getStatusValues"/>  
    </UserControl.Resources>  
@@ -594,7 +594,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
             </Adapter>  
 </Adapters>  
 <ItemsSource>  
-  <AdvancedListSupportClass DataTypeName="" AdapterName="viewframework://adapters/AdvancedList" FullUpdateAdapter="dataportal:EnterpriseManagementObjectAdapter" FullUpdateFrequency='1' DataSource="mom:ManagementGroup" IsRecurring="true" RecurrenceFrequency="5000"  treaming='true' xmlns="clr-namespace:Microsoft.EnterpriseManagement.UI.ViewFramework;assembly=Microsoft.EnterpriseManagement.UI.ViewFramework" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" >  
+  <AdvancedListSupportClass DataTypeName="" AdapterName="viewframework://adapters/AdvancedList" FullUpdateAdapter="dataportal:EnterpriseManagementObjectAdapter" FullUpdateFrequency='1' DataSource="mom:ManagementGroup" IsRecurring="true" RecurrenceFrequency="5000"  treaming='true' xmlns="clr-namespace:Microsoft.EnterpriseManagement.UI.ViewFramework;assembly=Microsoft.EnterpriseManagement.UI.ViewFramework" xmlns:av="https://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" >  
     <AdvancedListSupportClass.Parameters>  
                 <QueryParameter Parameter="TargetClass" Value="System.ConfigItem.Projector"/>  
     </AdvancedListSupportClass.Parameters>  
@@ -604,7 +604,7 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 </Data>  
 <Presentation>  
 <Columns>  
-            <mux:ColumnCollection xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mux="http://schemas.microsoft.com/SystemCenter/Common/UI/Views/GridView" xmlns:s="clr-namespace:System;assembly=mscorlib">  
+            <mux:ColumnCollection xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mux="https://schemas.microsoft.com/SystemCenter/Common/UI/Views/GridView" xmlns:s="clr-namespace:System;assembly=mscorlib">  
               <mux:Column Name="SerialNumber" DisplayMemberBinding="{Binding Path=SerialNumber}" Width="100" DisplayName="SerialNumber" Property="SerialNumber" DataType="s:Int32" />  
               <mux:Column Name="Location" DisplayMemberBinding="{Binding Path=Location}" Width="100" DisplayName="Location" Property="Location" DataType="s:String" />  
               <mux:Column Name="Condition" DisplayMemberBinding="{Binding Path=Condition.DisplayName}" Width="100" DisplayName="Condition" Property="Condition.DisplayName" DataType="s:String" />  
@@ -781,7 +781,7 @@ ManagementPack xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://ww
 ```  
 
 ### Import a management pack by using a cmdlet  
- You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](http://go.microsoft.com/fwlink/p/?LinkID=225396) cmdlet to import a Service Manager management pack, for example:  
+ You can use the Windows&nbsp;PowerShell [Import\-SCSMManagementPack](https://go.microsoft.com/fwlink/p/?LinkID=225396) cmdlet to import a Service Manager management pack, for example:  
 
 ```  
 Import-SCSMManagementPack MyServiceManager.ManagementPack.xml  
@@ -878,7 +878,7 @@ Import-SCSMManagementPack MyServiceManager.ManagementPack.xml
     </Adapters>  
     <ItemsSource>  
     <AdvancedListSupportClass DataTypeName="" AdapterName="viewframework://adapters/AdvancedList" FullUpdateAdapter="dataportal:EnterpriseManagementObjectAdapter" FullUpdateFrequency='1' DataSource="mom:ManagementGroup"   
-  IsRecurring="true" RecurrenceFrequency="5000"  Streaming='true' xmlns="clr-namespace:Microsoft.EnterpriseManagement.UI.ViewFramework;assembly=Microsoft.EnterpriseManagement.UI.ViewFramework" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" >  
+  IsRecurring="true" RecurrenceFrequency="5000"  Streaming='true' xmlns="clr-namespace:Microsoft.EnterpriseManagement.UI.ViewFramework;assembly=Microsoft.EnterpriseManagement.UI.ViewFramework" xmlns:av="https://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" >  
     <AdvancedListSupportClass.Parameters>  
                 <QueryParameter Parameter="TargetClass" Value="System.ConfigItem.Projector"/>  
     </AdvancedListSupportClass.Parameters>  
@@ -888,7 +888,7 @@ Import-SCSMManagementPack MyServiceManager.ManagementPack.xml
     </Data>  
     <Presentation>  
     <Columns>  
-<mux:ColumnCollection xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mux="http://schemas.microsoft.com/SystemCenter/Common/UI/Views/GridView" xmlns:s="clr-namespace:System;assembly=mscorlib">  
+<mux:ColumnCollection xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mux="https://schemas.microsoft.com/SystemCenter/Common/UI/Views/GridView" xmlns:s="clr-namespace:System;assembly=mscorlib">  
               <mux:Column Name="SerialNumber" DisplayMemberBinding="{Binding Path=SerialNumber}" Width="100" DisplayName="SerialNumber" Property="SerialNumber" DataType="s:Int32" />  
               <mux:Column Name="Location" DisplayMemberBinding="{Binding Path=Location}" Width="100" DisplayName="Location" Property="Location" DataType="s:String" />  
               <mux:Column Name="Condition" DisplayMemberBinding="{Binding Path=Condition.DisplayName}" Width="100" DisplayName="Condition" Property="Condition.DisplayName" DataType="s:String" />  
@@ -950,12 +950,12 @@ Import-SCSMManagementPack MyServiceManager.ManagementPack.xml
 ```  
 
 <UserControl  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"  
     xmlns:local="clr-namespace:SMFormsDemo"  
     x:Class="SMFormsDemo.TestControl"  
     x:Name="Control"  
-    Width="574" Height="390" Opacity="1" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">  
+    Width="574" Height="390" Opacity="1" xmlns:d="https://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">  
   <UserControl.Resources>  
     <ObjectDataProvider ObjectType="{x:Type local:helper}"  MethodName="GetStatusValues" x:Key="getStatusValues" />  
   </UserControl.Resources>  

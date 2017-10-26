@@ -53,7 +53,7 @@ This topic summarizes some of the common support information you might need when
 ### DPM 2010 and later versions can't run on a server running a 32-bit operating system
 **Issue**: Operating system limitation.
 
-**Workaround**: Install on 64-bit only. For a full list of system requirements, see [System Requirements for DPM in System Center 2012](http://technet.microsoft.com/library/hh757829.aspx).
+**Workaround**: Install on 64-bit only. For a full list of system requirements, see [System Requirements for DPM in System Center 2012](https://technet.microsoft.com/library/hh757829.aspx).
 
 ### Underscore not supported in SQL Server name
 **Issue**: If you specify a remote SQL Server that has an underscore in the name during DPM installation, the installation might fail.
@@ -145,7 +145,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### Virtual tape library support
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](http://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
 
 ### USB or removable drives can't be used in the DPM storage pool
 **Issue**: USB and removable storage such as Firewire.
@@ -346,7 +346,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ## <a name="BKMK_SQL"></a>SQL Server protection issues
 
 ### SQL Server 2014 support
-**Issue**: You can protect SQL Server 2014 and SQL Server 2012 with SP2 with DPM 2012 R2 with [Update rollup 4](http://go.microsoft.com/fwlink/?LinkId=518078).
+**Issue**: You can protect SQL Server 2014 and SQL Server 2012 with SP2 with DPM 2012 R2 with [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078).
 
 **Workaround**: Run the correct DPM version.
 

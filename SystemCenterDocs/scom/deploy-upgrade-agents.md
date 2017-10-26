@@ -109,7 +109,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 -   In the Operations console, in the **Administration** pane, run the **UNIX/Linux Upgrade Wizard**.
 
-    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=223881).
+    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=223881).
 
 #### To manually upgrade UNIX and Linux agents
 

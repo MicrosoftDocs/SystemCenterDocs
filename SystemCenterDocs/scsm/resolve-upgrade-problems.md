@@ -99,7 +99,7 @@ A timeout was reached (30000 milliseconds) while waiting for the System Center M
 
 This problem occurs because a .NET Framework 2.0 managed assembly that has an Authenticode signature takes longer than usual to load. The signature is always verified when the .NET Framework 2.0 managed assembly that has an Authenticode signature is loaded. In addition, the .NET Framework 2.0 managed assembly may take longer than usual to load because of various other settings. For example, the .NET Framework 2.0 managed assembly may take longer than usual to load because of the network configuration.
 
-For additional information about the cause of this problem, see [Knowledgebase Article 936707](http://go.microsoft.com/fwlink/p/?LinkId=207190) in the Microsoft Knowledge Base.
+For additional information about the cause of this problem, see [Knowledgebase Article 936707](https://go.microsoft.com/fwlink/p/?LinkId=207190) in the Microsoft Knowledge Base.
 
 ## Work around configuration service startup issues after a failed upgrade
 
@@ -135,7 +135,7 @@ There are two workaround procedures that you can use to try to resolve the issue
     >  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  
 
     > [!NOTE]  
-    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For additional details about the registry key, see [article 922918](http://go.microsoft.com/fwlink/p/?LinkId=207191) in the Microsoft Knowledge Base.  
+    >  You may have to increase this value further if the service still fails to start. The value in this example is in milliseconds. For additional details about the registry key, see [article 922918](https://go.microsoft.com/fwlink/p/?LinkId=207191) in the Microsoft Knowledge Base.  
 
 2.  Start the computer again.  
 

@@ -15,7 +15,7 @@ manager:cfreemanwa
 # Audit Collection Services Performance Counters
 In [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)], the Audit Collection Services \(ACS\) collector service includes two performance objects that have a total of 16 counters: the Collector object and the Collector Client object. The Collector object has 14 counters, and the Collector Client object has two counters. The counters in the Collector object record performance statistics from the perspective of the ACS collector. The Collector Client counters record performance statistics from the perspective of a single ACS forwarder.  
   
-Performance objects and counters are viewable in System Monitor, which is a part of Performance Console available in Windows Server products. For more information about monitoring performance and System Monitor, see [System Monitor Overview](http://go.microsoft.com/fwlink/?LinkId=74157).  
+Performance objects and counters are viewable in System Monitor, which is a part of Performance Console available in Windows Server products. For more information about monitoring performance and System Monitor, see [System Monitor Overview](https://go.microsoft.com/fwlink/?LinkId=74157).  
   
 ## Collector Object  
 The following table describes each counter in the Collector performance object. If the counter describes information that is added to a specific table in the ACS database, that table is defined in the counter description.  

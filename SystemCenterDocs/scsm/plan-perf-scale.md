@@ -29,7 +29,7 @@ This article describes general performance and scalability planning guidance for
 
 ## Service Manager Sizing Helper Tool
 
- The Service Manager Sizing Helper tool can help you size the hardware and software pieces that you will deploy using the details in this guide. The tool is included in the [Service Manager job aids](http://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\). Although the tool was created for a previous version of Service Manager, its recommendations are still valid for System Center 2016 - Service Manager.
+ The Service Manager Sizing Helper tool can help you size the hardware and software pieces that you will deploy using the details in this guide. The tool is included in the [Service Manager job aids](https://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\). Although the tool was created for a previous version of Service Manager, its recommendations are still valid for System Center 2016 - Service Manager.
 
 Specifically, the sizing tool:  
 

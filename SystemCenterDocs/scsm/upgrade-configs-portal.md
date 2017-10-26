@@ -49,7 +49,7 @@ Installing the Self Service portal on the same computer as the primary managemen
 
 ## Upgrade the HTML5-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager **secondary** management server
 1.	**Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state**
-2.	Download the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](http://go.microsoft.com/fwlink/?LinkID=798214), and install it on the server where the 2012 R2 Self Service Portal is installed.
+2.	Download the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214), and install it on the server where the 2012 R2 Self Service Portal is installed.
 3.	Upgrade both primary and secondary Management Servers from Service Manager 2012 R2 to Service Manager 2016.
 4.	Self Service Portal will also get upgraded along with the secondary management server.
 
@@ -57,7 +57,7 @@ Installing the Self Service portal on the same computer as the primary managemen
 *Installing the Self Service portal on the same computer as the primary management server is not recommended.* However, in the event that you are using this combination, then use the following steps to upgrade to Service Manager 2016.
 
 1.	Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state
-2.	Download the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](http://go.microsoft.com/fwlink/?LinkID=798214), and install it on the server where the 2012 R2 Self Service Portal is installed.
+2.	Download the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214), and install it on the server where the 2012 R2 Self Service Portal is installed.
 3.	Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
 4.	Self Service Portal will also get upgraded along with the primary management server.
 

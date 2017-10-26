@@ -29,7 +29,7 @@ Understanding what is going on behind the scenes of the Authoring Tool can benef
 
 ## Workflow activities and the WorkflowActivityBase class
 
-Service Manager workflows use WF activities. To work smoothly with the Authoring Tool, these activities derive from the base class **WorkflowActivityBase**, which belongs to the **Microsoft.EnterpriseManagement.Workflow.Common** namespace. The **WorkflowActivityBase** base class introduces properties and methods that are not available in the generic **Activity** base class for WF activities. For more information about how to define WF activities by using the generic **Activity** base class, see [Activity Class](http://go.microsoft.com/fwlink/p/?LinkID=193539).
+Service Manager workflows use WF activities. To work smoothly with the Authoring Tool, these activities derive from the base class **WorkflowActivityBase**, which belongs to the **Microsoft.EnterpriseManagement.Workflow.Common** namespace. The **WorkflowActivityBase** base class introduces properties and methods that are not available in the generic **Activity** base class for WF activities. For more information about how to define WF activities by using the generic **Activity** base class, see [Activity Class](https://go.microsoft.com/fwlink/p/?LinkID=193539).
 
 ### Benefits of using the WorkflowActivityBase class
 
@@ -312,7 +312,7 @@ namespace WorkflowAuthoring
 WF uses the XOML format for some of the workflow definitions. In the case of the example workflow, the Authoring Tool creates the file SetActivityStatusToCompleteWF.xoml with the following content:
 
 ```xml
-<SequentialWorkflowActivity x:Class="WorkflowAuthoring.SetActivityStatusToCompleteWF" x:Name="SetActivityStatusToCompleteWF" xmlns:ns0="clr-namespace:Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary;Assembly=Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+<SequentialWorkflowActivity x:Class="WorkflowAuthoring.SetActivityStatusToCompleteWF" x:Name="SetActivityStatusToCompleteWF" xmlns:ns0="clr-namespace:Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary;Assembly=Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml" xmlns="https://schemas.microsoft.com/winfx/2006/xaml/workflow">
 <ns0:SetActivityStatusToCompleted ActivityId="{ActivityBind SetActivityStatusToCompleteWF,Path=ActivityId}" x:Name="setActivityStatusToCompleted1" PropertyToBind="{x:Null}" />
 </SequentialWorkflowActivity>
 ```

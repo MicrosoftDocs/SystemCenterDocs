@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # Monitoring Clusters by Using Operations Manager
-The purpose of this topic is to explain how to use [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] to monitor computers that are in clustered configurations. For information on monitoring clustering services, see the guide for the management pack you are using, such as [Windows Server 2003 Cluster Management Pack Guide](http://go.microsoft.com/fwlink/p/?LinkID=120674) or [Windows Server Failover Cluster Management Pack Guide](http://go.microsoft.com/fwlink/p/?LinkId=239811).  
+The purpose of this topic is to explain how to use [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] to monitor computers that are in clustered configurations. For information on monitoring clustering services, see the guide for the management pack you are using, such as [Windows Server 2003 Cluster Management Pack Guide](https://go.microsoft.com/fwlink/p/?LinkID=120674) or [Windows Server Failover Cluster Management Pack Guide](https://go.microsoft.com/fwlink/p/?LinkId=239811).  
   
 To begin monitoring computers in a cluster, perform the following steps:  
   
