@@ -3,11 +3,9 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "*.md",
+          "*.yml"
         ],
-        "group": "dpm",
-        "src": "dpm",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -19,13 +17,27 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "dpm/**/*.md",
+          "dpm/**/*.yml"
+        ],
+        "group": "dpm",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "orchestrator/**/*.md",
+          "orchestrator/**/*.yml"
         ],
         "group": "orchestrator",
-        "src": "orchestrator",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -35,13 +47,12 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "scom/**/*.md",
+          "scom/**/*.yml"
         ],
         "group": "scom",
-        "src": "scom",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -51,13 +62,12 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "scsm/**/*.md",
+          "scsm/**/*.yml"
         ],
         "group": "scsm",
-        "src": "scsm",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -67,13 +77,12 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "sma/**/*.md",
+          "sma/**/*.yml"
         ],
         "group": "sma",
-        "src": "sma",
         "exclude": [
-          "**/obj/**",          
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -83,13 +92,12 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "spf/**/*.md",
+          "spf/**/*.yml"
         ],
         "group": "spf",
-        "src": "spf",
         "exclude": [
-          "**/obj/**",          
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -99,11 +107,10 @@
       },
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"         
+          "vmm/**/*.md",
+          "vmm/**/*.yml"
         ],
         "group": "vmm",
-        "src": "vmm",
         "exclude": [
           "**/obj/**",         
           "**/includes/**",
@@ -118,82 +125,76 @@
     "resource": [
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "dpm/**/*.png",
+          "dpm/**/*.jpg",
+          "dpm/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "dpm",
-        "src": "dpm"
+        "group": "dpm"
       },
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "orchestrator/**/*.png",
+          "orchestrator/**/*.jpg",
+          "orchestrator/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "orchestrator",
-        "src": "orchestrator"
+        "group": "orchestrator"
       },
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "scom/**/*.png",
+          "scom/**/*.jpg",
+          "scom/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "scom",
-        "src": "scom"
+        "group": "scom"
       },
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "scsm/**/*.png",
+          "scsm/**/*.jpg",
+          "scsm/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "scsm",
-        "src": "scsm"
+        "group": "scsm"
       },
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "spf/**/*.png",
+          "spf/**/*.jpg",
+          "spf/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "spf",
-        "src": "spf"
+        "group": "spf"
       },
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "vmm/**/*.png",
+          "vmm/**/*.jpg",
+          "vmm/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "vmm",
-        "src": "vmm"
-      }      
+        "group": "vmm"
+      }
     ],
     "overwrite": [],
     "externalReference": [],
