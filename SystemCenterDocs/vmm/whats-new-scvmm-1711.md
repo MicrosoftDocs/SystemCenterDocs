@@ -30,7 +30,7 @@ Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and
 
 SCVMM 1711 supports management of ARM-based VMs that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions).
 
-Classic Azure VMs use certificate-based authentication and authorization, which are generated on the classic Azure portal.  The new Azure portal supports Azure Active Directory (AD) based authentication and authorization along with provision and managing ARM-based VMs.  [Learn more]
+Classic Azure VMs use certificate-based authentication and authorization, which are generated on the classic Azure portal.  The new Azure portal supports Azure Active Directory (AD) based authentication and authorization along with provision and managing ARM-based VMs.  
 
 ### Nested virtualization
 Nested Virtualization is a new functionality in Windows Server 2016 that allows you to create one or more VMs inside another VM.
