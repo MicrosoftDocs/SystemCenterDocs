@@ -3,11 +3,27 @@
     "content": [
       {
         "files": [
+          "*.md",
+          "*.yml",
+          "breadcrumb/toc.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
           "**/*.md",
           "**/*.yml"
         ],
         "group": "dpm",
         "src": "dpm",
+        "dest": "dpm",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -24,8 +40,9 @@
         ],
         "group": "orchestrator",
         "src": "orchestrator",
+        "dest": "orchestrator",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -40,8 +57,9 @@
         ],
         "group": "scom",
         "src": "scom",
+        "dest": "scom",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -56,8 +74,9 @@
         ],
         "group": "scsm",
         "src": "scsm",
+        "dest": "scsm",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -72,8 +91,9 @@
         ],
         "group": "sma",
         "src": "sma",
+        "dest": "sma",
         "exclude": [
-          "**/obj/**",          
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -88,8 +108,9 @@
         ],
         "group": "spf",
         "src": "spf",
+        "dest": "spf",
         "exclude": [
-          "**/obj/**",          
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -100,10 +121,11 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"         
+          "**/*.yml"
         ],
         "group": "vmm",
         "src": "vmm",
+        "dest": "vmm",
         "exclude": [
           "**/obj/**",         
           "**/includes/**",
@@ -127,7 +149,8 @@
           "**/includes/**"
         ],
         "group": "dpm",
-        "src": "dpm"
+        "src": "dpm",
+        "dest": "dpm"
       },
       {
         "files": [
@@ -140,7 +163,8 @@
           "**/includes/**"
         ],
         "group": "orchestrator",
-        "src": "orchestrator"
+        "src": "orchestrator",
+        "dest": "orchestrator"
       },
       {
         "files": [
@@ -153,7 +177,8 @@
           "**/includes/**"
         ],
         "group": "scom",
-        "src": "scom"
+        "src": "scom",
+        "dest": "scom"
       },
       {
         "files": [
@@ -166,7 +191,8 @@
           "**/includes/**"
         ],
         "group": "scsm",
-        "src": "scsm"
+        "src": "scsm",
+        "dest": "scsm"
       },
       {
         "files": [
@@ -179,7 +205,8 @@
           "**/includes/**"
         ],
         "group": "spf",
-        "src": "spf"
+        "src": "spf",
+        "dest": "spf"
       },
       {
         "files": [
@@ -192,13 +219,14 @@
           "**/includes/**"
         ],
         "group": "vmm",
-        "src": "vmm"
-      }      
+        "src": "vmm",
+        "dest": "vmm"
+      }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": { 
-        "breadcrumb_path": "~/breadcrumb/toc.yml"
+        "breadcrumb_path": "/system-center/breadcrumb/toc.json"
      },
     "fileMetadata": {},
     "template": [
