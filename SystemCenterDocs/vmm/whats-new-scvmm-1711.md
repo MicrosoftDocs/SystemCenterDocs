@@ -30,7 +30,7 @@ Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and
 
 SCVMM 1711 supports management of ARM-based VMs that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions).
 
-Classic Azure VMs use certificate-based authentication and authorization, which are generated on the classic Azure portal.  The new Azure portal supports Azure Active Directory (AD) based authentication and authorization along with provision and managing ARM-based VMs.  [Learn more](link to the new article detailing this feature).
+Classic Azure VMs use certificate-based authentication and authorization, which are generated on the classic Azure portal.  The new Azure portal supports Azure Active Directory (AD) based authentication and authorization along with provision and managing ARM-based VMs.  [Learn more]
 
 ### Nested virtualization
 Nested Virtualization is a new functionality in Windows Server 2016 that allows you to create one or more VMs inside another VM.
@@ -39,7 +39,7 @@ Using this feature, You can leverage this functionality to reduce your infrastru
 
 Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can enable or disable the nested virtualization feature using SCVMM 1711. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.  [Learn more](link to the article detailing this feature).
+You can enable or disable the nested virtualization feature using SCVMM 1711. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.  [Learn more]
 
 
 ### Migration of VMware VM (EFI firmware based VM) to Hyper-V VM
@@ -51,21 +51,21 @@ The SCVMM 1711 release enables migration of EFI based VMware VMs to Hyper-V. VMw
 As part of this release, the **Convert Virtual machine** wizard enables this migration based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately:
 
 1.	BIOS-based VMs are migrated to Hyper-V VM generation 1.
-2.	EFI-based VMs are migrated to Hyper-V VM generation 2 . [Learn more](link to the article detailing this feature).
+2.	EFI-based VMs are migrated to Hyper-V VM generation 2 . [Learn more].
 
 
 ### Performance improvement in host refresher
 
 The SCVMM 1711 host refresher has undergone certain updates for performance improvement.
 
-With these updates, in scenarios where the organization is managing large number of hosts and VMs with checkpoints – you would be able to observe significant and noticeable improvements in the performance of the job. [Learn more](link to the detailing article).
+With these updates, in scenarios where the organization is managing large number of hosts and VMs with checkpoints – you would be able to observe significant and noticeable improvements in the performance of the job. [Learn more].
 
 This improvement in performance has been validated in our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs.
 
 ### Configuration of  SLB VIPs through VMM service templates
 SDN in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of  SLB Virtual IPs (VIPs) using power shell.
 
-With SCVMM 1711, VMM supports configuration of SLB VIPs while deploying multi-tier application by using the service templates. [Learn more](link to the detailing article).
+With SCVMM 1711, VMM supports configuration of SLB VIPs while deploying multi-tier application by using the service templates. [Learn more].
 
 ### Configuration of encrypted networks through VMM
 Windows Server and SCVMM has been working steadily towards providing a guarded fabric to protect client data against malicious administrators who have access to the data center.
@@ -76,7 +76,7 @@ Currently the VM traffic, unless otherwise protected by the guest OS, can be int
 
 SCVMM 1711 supports encryption of networks. Using the new encrypted networks feature, end-to-end encryption can be easily configured on VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same subnet, from being read and manipulated.
 
-The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network. VMM recognizes the VM network to be encrypted if any one of the subnets has encryption enabled on it.  [Learn more](link to the detailing article).
+The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network. VMM recognizes the VM network to be encrypted if any one of the subnets has encryption enabled on it.  [Learn more].
 
 T
 
@@ -87,13 +87,13 @@ T
 ## Storage
 
 ### Improvement in VMM Storage QoS
-Storage Quality of Service (SQoS) provides a way to centrally monitor and manage storage performance for virtual machines using Hyper-V and the Scale-Out File Server (SOFS) roles. The feature automatically improves storage resource fairness between multiple VMs using the same cluster and allows policy-based performance goals. [Learn more](link to the detailing article)
+Storage Quality of Service (SQoS) provides a way to centrally monitor and manage storage performance for virtual machines using Hyper-V and the Scale-Out File Server (SOFS) roles. The feature automatically improves storage resource fairness between multiple VMs using the same cluster and allows policy-based performance goals. [Learn more]
 
 SCVMM 1711 supports the following improvements in SQoS:
 
-1.	[Extension of SQoS support beyond S2D](link to the section in the article that has this feature explanation)
-2.	 [Support for VMM private cloud](link to the section in the article that has this feature explanation)
-3.	 [Availability of storage QoS policies as templates](link to the section in the article that has this feature explanation)
+1.	[Extension of SQoS support beyond S2D]
+2.	 [Support for VMM private cloud]
+3.	 [Availability of storage QoS policies as templates]
 
 
 ## Networking
@@ -106,13 +106,13 @@ With the introduction of the network controller, VMs, which are connected to the
 
 SCVMM 1711 release supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
-SCVMM 1711 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node. [Learn more](link to the detailing article).
+SCVMM 1711 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node. [Learn more].
 
 ### Enhanced console session in VMM
 Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through
 **Type Clipboard Text** menu option.
 
-SCVMM 1711 supports enhanced session that enables Cut **(Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, there by copy/paste commands for text and files are possible from and to the VM. [Learn more](link to the detailing article)
+SCVMM 1711 supports enhanced session that enables Cut **(Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, there by copy/paste commands for text and files are possible from and to the VM. [Learn more]
 
 
 ## Security
@@ -129,4 +129,4 @@ Being at the heart of providing attestation and key protection services to run s
 Using SCVMM 1711, a guarded host can be configured with a primary and a secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
 
 The primary HGS URLs will always be used in favor of the secondary.  If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be re-attempted against the secondary.  Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
-[Learn more](link to the detailing article).
+[Learn more].
