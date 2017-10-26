@@ -43,6 +43,53 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 6. In **Select Networks** select the logical network, virtual network, and the VLAN as applicable. The list matches whatever is configured on the physical adapters of the host.
 7. In **Add Properties** configure settings. In **Summary** review the settings and select **Start the virtual machine after deploying it** if required. Then click **Create** to start the conversion. Verify the VM was converted in **VMs and Services** > **Home** > **Show** > **VMs**.
 
+::: moniker range="sc-vmm-1711"
+
+## Convert  EFI based VM to Hyper-V generation 2 VM (Technical preview content - under construction)
+The System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) release enables migration of EFI based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
+
+As part of this release, the **Convert Virtual Machine** wizard enables the VM's migration based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+
+- BIOS-based VMs are migrated to Hyper-V VM generation 1.
+- EFI-based VMs are migrated to Hyper-V VM generation 2.
+
+### Before you start
+Ensure the following prerequisites are met:
+1.	VMware VMs with firmware type as EFI
+2.	VMware ESXi Hosts added in System Center VMM
+
+### Conversion procedure
+1. To convert, follow the [above procedure](#convert-using-the-wizard), select **Generation 2** in step 4.
+
+    ![vm conversion to gen 2](media\vm-conversion\vm-conversion-select-gen2.png)
+
+2. Once the VM is converted, you can see the Generation 2 VM as follows:
+
+    ![vm conversion to gen 2](media\vm-conversion\vm-conversion-gen2-created.png)
+
+> ![NOTE]
+>
+- Disk conversion (from “vmdk” to “VHDX/VHD”) is enhanced to be ~50% faster than earlier.
+- PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.   
+
+## PowerShell commands
+```powershell
+
+New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>] [-EnableMACAddressSpoofing
+<bool>] [-VMMServer <ServerConnection>] [-LibraryServer <LibraryServer>] [-JobGroup <guid>] [-Trigger] [-VhdType
+{UnknownType | DynamicallyExpanding | FixedSize}] [-VhdFormat {VHD | VHDX}] [-Description <string>] [-Name
+<string>] [-Owner <string>] [-UserRole <UserRole>] [-Path <string>] [-StartVM] [-CPUCount <byte>]
+[-CPURelativeWeight <int>] [-CPUType <ProcessorType>] [-MemoryMB <int>] [-Generation <int>] [-DelayStartSeconds
+<int>] [-StartAction {NeverAutoTurnOnVM | AlwaysAutoTurnOnVM | TurnOnVMIfRunningWhenVSStopped}] [-StopAction
+{SaveVM | TurnOffVM | ShutdownGuestOS}] [-LogicalNetwork <LogicalNetwork>] [-VMNetwork <VMNetwork>]
+[-NoConnection] [-MACAddress <string>] [-MACAddressType <string>] [-SourceNetworkConnectionID <string>]
+[-VirtualNetwork <VirtualNetwork>] [-VirtualNetworkAdapter <VirtualNetworkAdapter>] [-VLanEnabled <bool>] [-VLanID
+<uint16>] [-OverridePatchPath <string>] [-SkipInstallVirtualizationGuestServices] [-NetworkLocation <string>]
+[-NetworkTag <string>] [-RunAsynchronously] [-PROTipID <guid>] [-JobVariable <string>]  [<CommonParameters>]
+```
+
+::: moniker-end
+
 ## Next steps
 
 [Manage the VM settings](vm-settings.md)
