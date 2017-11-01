@@ -22,7 +22,7 @@ You can use System Center Data Protection Manager (DPM) to back up file data on 
 
 1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. We recommend that you review the following articles:
 
-    -   [System requirements](../orchestrator/system-requirements.md)
+    -   [System requirements](prepare-environment-for-dpm.md)
 
     -   [What can DPM back up?](dpm-protection-matrix.md)
 
