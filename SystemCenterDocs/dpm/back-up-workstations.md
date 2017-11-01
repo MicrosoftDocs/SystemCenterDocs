@@ -24,7 +24,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
 -   Read about the client operating systems you can support in [What can DPM back up?](dpm-protection-matrix.md)
 
--   Review the [release notes](../get-started/release-notes.md) and read about any client protection issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
+-   Review the [release notes](dpm-release-notes.md) and read about any client protection issues in [What's supported and what isn't for DPM?](dpm-support-issues.md)
 
 -   Make sure that client machines you want to back up  are in the DPM server domain, or in a domain with a two-way trust relationship with the DPM domain.
 
