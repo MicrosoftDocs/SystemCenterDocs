@@ -5,7 +5,7 @@ description: This article describes Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  03/09/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,9 +15,9 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides an overview of Storage Spaces Direct (S2D) deployment in the System Center 2016 Virtual Machine Manager (VMM) fabric.
+This article provides an overview of Storage Spaces Direct (S2D) deployment in the System Center - Virtual Machine Manager (VMM) fabric.
 
-Windows Server 2016 introduces S2D, which virtualizes storage by grouping physical storage drives into virtual storage pools. Using S2D you can:
+S2D was introduced in Windows Server 2016. It virtualizes storage by grouping physical storage drives into virtual storage pools. Using S2D you can:
 
 - Manage multiple physical storage sources as a single virtual entity.
 - Get inexpensive virtual storage, with or without external physical storage devices.

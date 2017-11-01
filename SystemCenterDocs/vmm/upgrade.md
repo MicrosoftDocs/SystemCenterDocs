@@ -5,7 +5,7 @@ description: This article explains how upgrade VMM servers and databases to VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/07/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager

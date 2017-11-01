@@ -5,9 +5,9 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/01/2016
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to convert VMware VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric to Hyper-V.
+This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric, to Hyper-V.
 
 
 There are currently a couple of methods for converting VMWare VMs to Hyper-V:

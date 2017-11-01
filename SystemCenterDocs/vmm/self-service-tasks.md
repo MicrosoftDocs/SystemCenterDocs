@@ -5,7 +5,7 @@ description: This article describes how to work with VMM as a self-service user
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to work with System Center 2016 - Virtual Machine Manager (VMM) as a self-service user.
+This article describes how to work with System Center - Virtual Machine Manager (VMM) as a self-service user.
 
 Self-service users can interact with VMM to deploy virtual machines and services to private clouds. Depending on your permissions, you can deploy VMs from VHDs and templates, and create and share your own templates and profiles. You interact with VMM using the VMM console (or PowerShell).
 

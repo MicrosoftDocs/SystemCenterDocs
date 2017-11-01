@@ -5,7 +5,7 @@ description: This article describes how to allow and block network traffic to a 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/26/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-In System Center 2016 Virtual Machine Manager (VMM), you can centrally configure and manage software defined network (SDN) port access control lists (ACLs).
+In System Center Virtual Machine Manager (VMM), you can centrally configure and manage software defined network (SDN) port access control lists (ACLs).
 
 - A port ACL is a set of port ACL rules that filter the traffic at layer 2 port level.
 - A port ACL in VMM filters access to a specific VMM network object.

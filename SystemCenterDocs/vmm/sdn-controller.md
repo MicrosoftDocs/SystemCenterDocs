@@ -5,7 +5,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/10/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology: virtual-machine-manager
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
+This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center - Virtual Machine Manager (VMM) fabric.
 
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-controller/network-controller).
 

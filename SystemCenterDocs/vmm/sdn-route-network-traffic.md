@@ -5,7 +5,7 @@ description: This article describes about how to route network traffic between p
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 09/05/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -14,6 +14,8 @@ ms.technology: virtual-machine-manager
 # Route traffic across networks in the SDN infrastructure
 
 >Applies To: System Center 2016 - Virtual Machine Manager
+
+This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual MAchine Manager (VMM) fabric.
 
 An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site VPN using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
