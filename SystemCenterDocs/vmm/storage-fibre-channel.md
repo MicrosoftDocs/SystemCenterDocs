@@ -5,7 +5,7 @@ description: This article describes how to set up Hyper-V virtual fibre channel 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/04/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to set up Hyper-V virtual fibre channel in the System Center 2016 - Virtual Machine Manager (VMM) storage fabric.
+Read this article to set up Hyper-V virtual fibre channel in the System Center - Virtual Machine Manager (VMM) storage fabric.
 
 Virtual fibre channel provides Hyper-V VMs with direct connectivity to fibre channel-based storage. Hyper-V provides fibre channel ports within guest operating systems, so that you can virtualize applications and workloads that have dependencies on fibre channel storage. You can also cluster guest operating systems over fibre channel.
 

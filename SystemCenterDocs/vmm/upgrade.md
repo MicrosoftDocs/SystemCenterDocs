@@ -5,7 +5,7 @@ description: This article explains how upgrade VMM servers and databases to VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 05/07/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -15,8 +15,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and tasks you should complete after the upgrade finishes. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
-
+This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and tasks you should complete after the upgrade finishes. 
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 with update rollup 9 or later.

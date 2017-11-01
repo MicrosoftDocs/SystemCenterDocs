@@ -4,8 +4,8 @@ title: Manage SOFS settings in the VMM fabric
 description: This article describes how to manage SOFS settings in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-You can manage scale-out file server (SOFS) in the System Center 2016 - Virtual Machine Manager (VMM) fabric as follows:
+You can manage scale-out file server (SOFS) in the System Center - Virtual Machine Manager (VMM) fabric as follows:
 
 - **Create storage pools**: Create storage pools from physical disks on SOFS nodes. You can then allocate those storage pools.
 - **Create file shares**: You can create file shares on a SOFS in the VMM fabric. You can set the storage type for a share as a storage pool, local pool, or volume.

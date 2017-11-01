@@ -5,7 +5,7 @@ description: This article provides information about preparing the VMM network f
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to plan your networking fabric in System Center 2016 - Virtual Machine Manager (VMM).
+This article describes how to plan your networking fabric in System Center - Virtual Machine Manager (VMM).
 
 ## Networking components
 

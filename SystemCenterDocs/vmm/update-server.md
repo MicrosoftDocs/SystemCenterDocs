@@ -5,7 +5,7 @@ description: This article describes how to set up update servers in the VMM fabr
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/07/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Learn about setting up update servers in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
+Learn about deploying update servers in the System Center - Virtual Machine Manager (VMM) fabric.
 
 You deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers running Windows Server 2012 R2 or later.
 

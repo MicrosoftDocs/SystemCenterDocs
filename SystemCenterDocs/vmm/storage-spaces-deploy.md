@@ -5,7 +5,7 @@ description: This article describes how to set up Storage Spaces Direct in the V
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/07/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,15 +15,15 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to set up a cluster with Storage Spaces Direct (S2D), in the System Center 2016 - Virtual Manager (VMM) fabric. You can set up a couple of types of clusters:
+This article describes how to set up a cluster with Storage Spaces Direct (S2D), in the System Center - Virtual Manager (VMM) fabric. You can set up a couple of types of clusters:
 
 - A hyper-converged deployment that runs compute and storage resources in the same cluster.
 - A disaggregated deployment in which compute and storage run in separate environments. The storage component is built using S2D and scale-out file server (SOFS), to provide an independently scalable storage repository for VMs and apps.
 
 ## Before you start
 
-- Make sure you're running VMM 2016.
-- Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed and configured to host VMs.
+- Make sure you're running VMM 2016 or a later version.
+- Hyper-V hosts in a cluster should be running Windows Server 2016 or later, with the Hyper-V Role installed and configured to host VMs.
 - You should set up networks on hosts that are nodes in the cluster, before you enable S2D.
 - For hyper-converged deployments, you can enable S2D when you add an existing Hyper-V cluster to the VMM fabric, or when you create a cluster from standalone Hyper-V hosts in the VMM fabric. You can't currently enable S2D on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
 

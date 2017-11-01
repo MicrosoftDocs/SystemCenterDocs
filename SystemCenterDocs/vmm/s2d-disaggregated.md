@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct disagg
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  06/04/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to set up a disaggregated cluster running Storage Spaces Direct (S2D) in System Center 2016 - Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
+Read this article to set up a disaggregated cluster running Storage Spaces Direct (S2D) in System Center - Virtual Machine Manager (VMM). [Learn more](s2d.md) about S2D.
 
 You can deploy a disaggregated S2D cluster by provisioning a cluster running Hyper-V hosts, and a separate storage cluster running scale-out file server (SOFS) with S2D.
 

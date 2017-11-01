@@ -5,7 +5,7 @@ description: This article provides an overview of System Center VMM and a summar
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Welcome to Virtual Machine Manager (VMM) 2016! VMM is part of the System Center suite, used to configure, manage and transform traditional datacenters, and helping to provide a unified management experience across on-premises, service provider, and the Azure cloud. VMM capabilities include:
+Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the System Center suite, used to configure, manage and transform traditional datacenters, and helping to provide a unified management experience across on-premises, service provider, and the Azure cloud. VMM capabilities include:
 
 - **Datacenter**: Configure and manage your datacenter components as a single fabric in VMM. Datacenter components include virtualization servers, networking components, and storage resources. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds.
 - **Virtualization hosts**: VMM can add, provision, and manage Hyper-V and VMware virtualization hosts and clusters.

@@ -5,9 +5,9 @@ description: This article describes how to create port profiles in the VMM fabri
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Use this article to learn about and set up uplink port profiles and virtual network adapter port profiles in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
+Use this article to learn about and set up uplink port profiles and virtual network adapter port profiles in the System Center  Virtual Machine Manager (VMM) networking fabric.
 
 - **Uplink port profiles**: You create uplink port profiles and then apply them to physical network adapters when you deploy switches. Uplink port profiles define the load balancing algorithm for an adapter, and specify how to team multiple network adapters on a host that use the same uplink port profile. This profile is used in conjunction with the logical network that you associated with the adapter.
 - **Virtual network adapter port profiles**. You apply virtual network adapter port profiles to virtual network adapters. These profiles define specific capabilities, such as bandwidth limitations, and priority. VMM includes a number of built-in profiles.

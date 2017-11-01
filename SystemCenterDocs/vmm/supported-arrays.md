@@ -5,7 +5,7 @@ description: This article summarizes suupported storage arrays for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/07/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,9 +16,9 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
- Virtualized workloads in System Center 2016 - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fibre channel, iSCSCI, and SAS connections, and network file shares.
+ Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fibre channel, iSCSCI, and SAS connections, and network file shares.
 
- This article provides a list of supported storage devices for VMM 2016.
+ This article provides a list of supported storage devices for VMM 2016 onwards.
 
 
 

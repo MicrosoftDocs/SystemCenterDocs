@@ -5,7 +5,7 @@ description: This article provides guidance for setting up load balancing for VM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to learn about integrating Windows network load balancing (NLB), and hardware load balancers with System Center 2016 - Virtual Machine Manager (VMM) service templates.
+Read this article to learn about integrating Windows network load balancing (NLB), and hardware load balancers with System Center - Virtual Machine Manager (VMM) service templates.
 
 
 Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.

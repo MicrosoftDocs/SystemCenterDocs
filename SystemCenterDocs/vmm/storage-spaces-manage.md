@@ -4,8 +4,8 @@ title: Manage storage deployed with Storage Spaces Direct in the VMM 2016 fabric
 description: This article describes how to manage storage in Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  05/07/2017
+manager:  carmonm
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,12 +15,12 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to manage storage deployed with Storage Spaces Direct (S2D) in the System Center 2016 - Virtual Manager (VMM) fabric.
+This article describes how to manage storage deployed with Storage Spaces Direct (S2D) in the System Center - Virtual Manager (VMM) fabric.
 
 
 ## Set up QoS policies
 
-Quality-of-service (QoS) in [Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using SOFS storage. QoS mitigates "noisy neighbor" issues, and ensure that a single VM doesn't consume all storage resources. [Learn more](manage-sofs-qos.md) about setting up QoS policies for a file server, or for specific virtual disks on the server.
+Quality-of-service (QoS) in [Windows Server](https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using SOFS storage. QoS mitigates "noisy neighbor" issues, and ensure that a single VM doesn't consume all storage resources. [Learn more](manage-sofs-qos.md) about setting up QoS policies for a file server, or for specific virtual disks on the server.
 
 ## Add and remove nodes and disks
 
