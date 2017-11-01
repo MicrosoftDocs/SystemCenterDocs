@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/16/2016
+ms.date: 11/01/2017
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  ee706e89-20fd-4883-82e3-75565a705751
@@ -18,7 +18,7 @@ ms.author: markgal
 
 Every organization needs a business continuity and disaster recovery (BCDR) strategy to make sure resources are available during planned and unplanned outages, and that you're able to recover to normal working conditions when things go wrong. Your BCDR strategy requires keeping your data safe and recoverable, and keeping your business workloads, applications, and services continuously available. System Center Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
 
-You can deploy DPM for:
+You can deploy System Center Data Protection Manager (DPM) for:
 
 -   **Application-aware backup**: Application-aware back up of Microsoft workloads, including SQL Server, Exchange, and SharePoint.
 

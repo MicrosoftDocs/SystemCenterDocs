@@ -6,8 +6,8 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
-title:  How does DPM work
+ms.date: 11/01/2017
+title:  How does DPM work?
 ms.technology:  data-protection-manager
 ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
 ---
@@ -16,7 +16,7 @@ ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-The method Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers Disk-Based protection processes, Tape-Based protection processes, recovery process, as well as the protection policy.
+The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers Disk-Based protection processes, Tape-Based protection processes, recovery process, as well as the protection policy.
 
 ## Disk-based protection process
 

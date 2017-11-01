@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2017
 title:  Deduplicate DPM storage
 ms.technology:  data-protection-manager
 ms.assetid:  af49cdc3-1f63-4c10-843a-d1cd27af473a
@@ -15,6 +15,8 @@ ms.author: markgal
 # Deduplicate DPM storage
 
 >Applies To: System Center 2016 - Data Protection Manager
+
+System Center Data Protection Manager (DPM) can use data deduplication.
 
 Data deduplication \(dedup\) finds and removed duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](http://go.microsoft.com/fwlink/?LinkId=522614).
 

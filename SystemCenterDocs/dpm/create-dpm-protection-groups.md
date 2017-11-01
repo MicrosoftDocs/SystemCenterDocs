@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2016
 title:  Deploy protection groups
 ms.technology:  data-protection-manager
 ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
@@ -16,7 +16,7 @@ ms.author: markgal
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-A DPM protection group is a collection of data sources, such as volumes, shares, or application workloads which have common backup and restore settings. The protection group settings specify:
+A System Center Data Protection Manager (DPM) protection group is a collection of data sources, such as volumes, shares, or application workloads which have common backup and restore settings. The protection group settings specify:
 
 -   **Data sources** - The servers, computers, and workloads you want to protect.
 

@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: markgalioto
 ms.author: markgal
 manager: carmonm
-ms.date: 05/23/2017
+ms.date: 11/01/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: data-protection-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 >Applies To: System Center 2016 - DPM
 
-The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center DPM 2016.  
+The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center Data Protection Manager (DPM) 2016.  
 
 
 ## Silent Installation of System Center DPM with SQL Server 2008

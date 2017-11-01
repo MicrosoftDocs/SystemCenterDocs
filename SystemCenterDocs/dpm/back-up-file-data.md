@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 1/9/2017
+ms.date: 11/01/2017
 title:  Back up file data with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
@@ -16,13 +16,13 @@ ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-You can back up file data on server and client computers.
+You can use System Center Data Protection Manager (DPM) to back up file data on server and client computers.
 
 ## Before you start
 
 1.  **Deploy DPM** - Verify that DPM is installed and deployed correctly. We recommend that you review the following articles:
 
-    -   [System requirements](../orchestrator/system-requirements.md)
+    -   [System requirements](prepare-environment-for-dpm.md)
 
     -   [What can DPM back up?](dpm-protection-matrix.md)
 

@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 06/26/2017
+ms.date: 11/01/2017
 title:  What can DPM back up
 ms.technology:  data-protection-manager
 ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -15,6 +15,8 @@ ms.author: markgal;
 # What can DPM back up?
 
 >Applies To: System Center 2016 - Data Protection Manager
+
+This article summarizes System Center Data Protection Manager (DPM) protection support.
 
 ## Protection support matrix
 

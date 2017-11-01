@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2017
 title:  Back up the DPM server
 ms.technology:  data-protection-manager
 ms.assetid:  e5a31d08-e483-4dda-abd3-1b562656b24f
@@ -16,7 +16,7 @@ ms.author: markgal
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-To ensure that data can be recovered if DPM fails you'll need a strategy for backing up the DPM server. If it  isn't backed up you'll need to rebuild it manually after a failure, and disk\-based recovery points won't be recoverable. You can back up DPM servers using a couple of methods:
+To ensure that data can be recovered if System Center Data Protection Manager (DPM) fails, you'll need a strategy for backing up the DPM server. If it  isn't backed up you'll need to rebuild it manually after a failure, and disk\-based recovery points won't be recoverable. You can back up DPM servers using a couple of methods:
 
 -   **Back up the DPM server** - You can back up a primary DPM server with a secondary DPM server. The secondary server will protect the primary server database and the data source replicas stored on the primary server. If the primary server fails, the secondary server can continue to protect workloads that are protected by the primary server, until the primary server is available again. If you need to rebuild the primary server you can restore the databases and replicas to it from the secondary server. You can also restore data to protected computers directly from the secondary server when the primary server isn't available. You can set up two servers, one as primary and the another as secondary, or configure each server to act as the primary for the other. You can also configure a chain of DPM servers that protect each other according to the chain order.
 

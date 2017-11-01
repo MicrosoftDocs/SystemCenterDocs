@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2017
 title:  Identify compatible tape libraries
 ms.technology:  data-protection-manager
 ms.assetid:  4ed6e64f-21d4-4c93-9979-3f1a48317cbe
@@ -16,10 +16,10 @@ ms.author: markgal
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-Use the TechNet wiki to find the latest list of [compatible tape libraries for DPM](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx).
+Use the TechNet wiki to find the latest list of [compatible tape libraries](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx) for System Center Data Protection Manager (DPM).
 
 ## Virtual tape library support
-Virtual tape libraries configured with a virtual fibre channel adapter are supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
+Virtual tape libraries configured with a virtual fibre channel adapter are supported with certified hardware listed in the wiki. To check if your tape library is supported by the virtual fibre channel adapter, ask your tape hardware vendor to verify tape library compatibility.
 
 ## Verify tape library compatibility
 If the tape is listed in the [Windows Server Catalog](http://www.windowsservercatalog.com/) in the Hardware, Storage section, and is shown as compatible with Windows 2008 64-bit, or Windows 2008 R2 64-bit - it will probably work with DPM. Note that any driver incompatibilities with Windows 2012 would need to be addressed by the vendor.
