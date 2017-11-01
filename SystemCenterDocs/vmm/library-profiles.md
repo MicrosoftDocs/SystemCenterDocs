@@ -5,7 +5,7 @@ description: This article provides guidance for adding profiles to the library i
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/04/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Use this article to learn about System Center 2016 - Virtual Machine Manager (VMM) profiles, and how to add them to the VMM library.
+Use this article to learn about System Center - Virtual Machine Manager (VMM) profiles, and how to add them to the VMM library.
 
 A VMM profile contains settings that are used when you create a new virtual machine or virtual machine template. Profiles make deployment easier by helping you to quickly create VMs with consistent settings. Profiles can be used to restrict the settings that are available to self-service users who create new VMs.
 

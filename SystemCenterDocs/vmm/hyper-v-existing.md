@@ -5,7 +5,7 @@ description: This article describes how to provision Windows server as Hyper-V h
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016- Virtual Machine Manager
 
-Read this article to learn about adding an existing Windows server as a Hyper-V host server or cluster to the System Center 2016 - Virtual Machine Manager (VMM) fabric, and configuring the host and cluster properties.
+Read this article to learn about adding an existing Windows server as a Hyper-V host server or cluster to the System Center - Virtual Machine Manager (VMM) fabric, and configuring the host and cluster properties.
 
 The article is relevant for adding Windows server computers with or without the Hyper-V role. If you add a Windows server that doesn't have Hyper-V installed, VMM will install the Hyper-V role as long as the server meets the prerequisites.
 

@@ -5,7 +5,7 @@ description: Describes how to set up guarded hosts and provision shielded VMs in
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,9 +15,9 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in a System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
+This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in a System Center - Virtual Machine Manager (VMM) compute fabric.
 
-Guarded fabrics provide additional protections for VMs to prevent tampering and theft by malicious administrators and malware. As a cloud service provider or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HGS), one or more guarded Hyper-V host servers, and one or more shielded VMs running on those hosts. [Learn more about guarded fabrics](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) in Windows Server 2016.
+Guarded fabrics provide additional protections for VMs to prevent tampering and theft by malicious administrators and malware. As a cloud service provider or private cloud administrator, you can deploy a guarded fabric that typically consists of a server running the host guardian service (HGS), one or more guarded Hyper-V host servers, and one or more shielded VMs running on those hosts. [Learn more about guarded fabrics](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
 
 ## Why do I need to protect VMs?
 

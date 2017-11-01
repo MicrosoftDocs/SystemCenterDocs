@@ -5,7 +5,7 @@ description: This article provides guidance for adding files to the library in t
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-After you've [set up](manage-library-server.md) the System Center 2016 - Virtual Machine Manager (VMM) library, use this article if you want to add file-based resources to the library, and mark objects in the library as equivalent.
+After you've [set up](manage-library-server.md) the System Center - Virtual Machine Manager (VMM) library, use this article if you want to add file-based resources to the library, and mark objects in the library as equivalent.
 
 You can add file-based resources to the library as follows:
 

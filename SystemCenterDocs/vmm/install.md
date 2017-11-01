@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/21/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Use this article to install the System Center 2016 - Virtual Machine Manager (VMM) management server.
+Use this article to install the System Center - Virtual Machine Manager (VMM) management server.
 
 ## Before you start
 
