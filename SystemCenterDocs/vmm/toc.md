@@ -45,6 +45,7 @@
 #### [Deploy a highly available VMM management server](ha-server.md)
 #### [Deploy a highly available SQL Server database for VMM](ha-sql.md)
 #### [Deploy a highly available VMM library](ha-library.md)
+### [Set up TLS 1.2](install-tls.md)
 ### [Deploy update rollups](update-rollups.md)
 ### [Back up and restore VMM](backup.md)
 ## Manage the VMM library
