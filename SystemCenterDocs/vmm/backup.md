@@ -17,15 +17,17 @@ ms.technology:  virtual-machine-manager
 
 This article describes the backup and recovery process in a System Center - Virtual Machine Manager (VMM) environment, and provides some recommendations.
 
-> [!IMPORTANT]
-> Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents nor do they copy data to a separate volume. A checkpoint can serve as temporary backup before updating an operating system on a virtual machine so that you can roll back the update if the update has any adverse effects. You should use a backup application to back up and recover your data in case of catastrophic data loss.
+## Before you start
 
-One option for backing up and recovering VMM is Data Protection Manager (DPM). [Learn more](../dpm/dpm-overview.md).
-
-Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM the data will be lost if the VMM management server fails.
+- Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents, nor do they copy data to a separate volume.
+- You can use a a checkpoint to serve as temporary backup, before updating an operating system on a virtual machine. This allows you to roll back the update if it has adverse effects.
+- You should use a backup application to back up and recover your data in case of catastrophic data loss. One option is System Center Data Protection Manager (DPM). 
+- Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you reinstall VMM. However, some encrypted data such as Virtual Machine Roles cannot be reentered.
+- You can't back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM.
+- The data will be lost if the VMM management server fails.
 
 ## Create and implement a backup plan
-Two basic elements of a backup plan are a list of what needs to be backed up, and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment.
+Basic elements of a backup plan include a list of what needs to be backed up, and an outline of what is changed frequently (and therefore need to be backed up frequently) in your environment.
 
 ## Back up the VMM database
 The VMM database contains information such as configurations, service templates, profiles, virtual machine templates, services, scale-out services, and other critical data that is required for VMM to function correctly. Back up the VMM database regularly.
