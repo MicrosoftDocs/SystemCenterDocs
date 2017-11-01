@@ -4,8 +4,8 @@ title: Set up the VMM networking fabric
 description: This article describes how to set up infrastructure servers in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 >Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article provides an overview of setting up the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
+This article provides an overview of setting up the System Center - Virtual Machine Manager (VMM) networking fabric.
 
 Here's what you'll typically do to set up networking in the VMM fabric:
 

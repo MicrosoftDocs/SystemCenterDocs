@@ -5,17 +5,17 @@ description: Describes how to configure a shielded template disk and utility dis
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 04/26/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
-#  Set up a template disk, shielding helper disk, and VM template to deploy shielded VMs in the VMM fabric
+#  Set up a disks and a VM template to deploy shielded VMs
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-You deploy shielded virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX), and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs and convert existing VMs to shielded VMs in VMM.
+You deploy shielded virtual machines in the System Center - Virtual Machine Manager (VMM) compute fabric using a signed virtual machine hard disk (VHDX), and optionally with a VM template. This article describes how to add signed template disks to VMM, configure a shielding utility disk, deploy new shielded VMs and convert existing VMs to shielded VMs in VMM.
 
 ## Before you start
 

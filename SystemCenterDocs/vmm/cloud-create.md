@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 04/26/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -16,7 +16,7 @@ ms.technology: virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article provides instructions for creating a private cloud in System Center 2016 - Virtual Machine Manager (VMM).
+This article provides instructions for creating a private cloud in System Center - Virtual Machine Manager (VMM).
 
 You can create a private cloud from a host group, or from a VMware resource pool. Host groups can contain a single host type or a mix of Hyper-V and VMware ESX hosts.
 

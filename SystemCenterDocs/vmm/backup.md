@@ -5,7 +5,7 @@ description: This article describes how to back up and restore the VMM database,
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,12 +15,12 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes the backup and recovery process in a System Center 2016 - Virtual Machine Manager (VMM) environment, and provides some recommendations.
+This article describes the backup and recovery process in a System Center - Virtual Machine Manager (VMM) environment, and provides some recommendations.
 
 > [!IMPORTANT]
 > Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents nor do they copy data to a separate volume. A checkpoint can serve as temporary backup before updating an operating system on a virtual machine so that you can roll back the update if the update has any adverse effects. You should use a backup application to back up and recover your data in case of catastrophic data loss.
 
-One option for backing up and recovering VMM is Data Protection Manager (DPM). For more information, see [Data Protection Manager](../dpm/dpm-overview.md).
+One option for backing up and recovering VMM is Data Protection Manager (DPM). [Learn more](../dpm/dpm-overview.md).
 
 Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you re-install VMM. However, some encrypted data such as Virtual Machine Roles cannot be re-entered. You cannot back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM the data will be lost if the VMM management server fails.
 

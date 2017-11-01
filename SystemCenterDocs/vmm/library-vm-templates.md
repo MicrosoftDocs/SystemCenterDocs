@@ -5,7 +5,7 @@ description: This article provides guidance for adding VM templates to the libra
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to learn about VM templates and how to manage them in the System Center 2016 - Virtual Machine Manager (VMM) library.
+Read this article to learn about VM templates and how to manage them in the System Center - Virtual Machine Manager (VMM) library.
 
 Templates help you to create VMs with consistent settings. VMM provides two types of templates:
 

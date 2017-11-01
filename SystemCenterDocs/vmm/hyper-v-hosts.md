@@ -4,8 +4,8 @@ title: Manage Hyper-V hosts and clusters in the VMM compute fabric
 description: This article provides information about managing your Hyper-V environment in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 >Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to learn how set up and manage Hyper-V hosts and clusters in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
+Read this article to learn how set up and manage Hyper-V hosts and clusters in the System Center - Virtual Machine Manager (VMM) compute fabric.
 
 You can manage medium, large, and enterprise-scale Hyper-V deployments in the VMM fabric. VMM provides a number of features that allow you to manage and scale growing numbers of Hyper-V servers more easily than in Hyper-V Manager.
 
