@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 06/26/2017
+ms.date: 11/01/2017
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -16,8 +16,8 @@ ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-Keep these requirements and considerations in mind when you deploy System Center 2016 Data Protection Manager (DPM).
-If you’re evaluating your environment, see [System Requirements for System Center 2016](../orchestrator/system-requirements.md).
+Keep these requirements and considerations in mind when you deploy System Center - Data Protection Manager (DPM).
+
 
 ## First things first
 

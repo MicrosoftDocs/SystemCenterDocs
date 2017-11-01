@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 06/27/2017
+ms.date: 11/01/2017
 title:  Installing DPM 2016
 ms.technology:  data-protection-manager
 ms.assetid:  85d424ba-123b-4158-8833-5bc04ea145db
@@ -16,7 +16,7 @@ ms.author: markgal
 
 >Applies To: System Center 2016 - Data Protection Manager
 
-Here's what you need to do to set up DPM:
+Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
 1.  Read the [Setup prerequisites](#setup-prerequisites)
 
