@@ -31,8 +31,8 @@ Azure Pack Gallery Resources provide tenant offerings using standard and reusabl
 
 Each resource contains a Readme file that explains how to prepare your environment.
 
-1. Download the [Microsoft Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx). You use this to download the gallery resources.
-2. Start the installer, click the **Options** link at the bottom, and type the link http://www.microsoft.com/web/webpi/partners/servicemodels.xml into **Custom Feeds**. Click **Add Feed** > **OK**. A **Service Models** tab should appear.
+1. Download the [Microsoft Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx). You use this to download the gallery resources.
+2. Start the installer, click the **Options** link at the bottom, and type the link https://www.microsoft.com/web/webpi/partners/servicemodels.xml into **Custom Feeds**. Click **Add Feed** > **OK**. A **Service Models** tab should appear.
 3. In the **Service Models** tab, select **Gallery Resources**.
 4. Select the resource you want, and click **Add** > **Install**.
 5. Accept the license terms if appropriate, and then click **Continue**. A window will be opened for the folder on the local computer where the resource is downloaded.

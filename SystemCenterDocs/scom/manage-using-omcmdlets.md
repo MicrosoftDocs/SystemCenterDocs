@@ -28,7 +28,7 @@ Import-Module -Name OperationsManager
   
 You can access cmdlet help in the Operations Manager Shell by typing Get-Help *cmdlet name* or view the help online at [Cmdlets in System Center 2016 - Operations Manager](https://technet.microsoft.com/library/hh918542%28v=sc.30%29.aspx).  
   
-To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=235162).  
+To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?LinkId=235162).  
   
 ## Next steps
 

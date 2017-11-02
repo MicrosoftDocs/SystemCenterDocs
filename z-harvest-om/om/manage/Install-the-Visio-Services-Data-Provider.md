@@ -21,10 +21,10 @@ The Visio Services Data Provider for [!INCLUDE[om12long](../../om/manage/include
   
 -   SharePoint 2010 Enterprise  
   
--   [The Microsoft .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=131605)  
+-   [The Microsoft .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=131605)  
   
 > [!NOTE]  
-> You must install SharePoint Server 2010 in a farm environment versus standalone \(on a single server with a built\-in database by using the default settings\) so that Visio Services can be configured to run as a domain account with [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] access. For more information about installing SharePoint Server 2010 on a single server farm, see [Deploy a single server with SQL Server \(SharePoint Server 2010\)](http://go.microsoft.com/fwlink/?LinkID=102798). For more information about installing SharePoint Server 2010 on a multiple server farm, see [Multiple servers for a three\-tier farm \(SharePoint Server 2010\)](http://go.microsoft.com/fwlink/?LinkID=244297).  
+> You must install SharePoint Server 2010 in a farm environment versus standalone \(on a single server with a built\-in database by using the default settings\) so that Visio Services can be configured to run as a domain account with [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)] access. For more information about installing SharePoint Server 2010 on a single server farm, see [Deploy a single server with SQL Server \(SharePoint Server 2010\)](https://go.microsoft.com/fwlink/?LinkID=102798). For more information about installing SharePoint Server 2010 on a multiple server farm, see [Multiple servers for a three\-tier farm \(SharePoint Server 2010\)](https://go.microsoft.com/fwlink/?LinkID=244297).  
   
 ### To install the Visio Services data provider  
   

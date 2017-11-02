@@ -30,7 +30,7 @@ manager:cfreemanwa
   
 ## Other resources for this component  
   
--   [TechNet Library main page for Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)  
+-   [TechNet Library main page for Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=223634)  
   
 -   [Operations Guide for System Center 2012 - Operations Manager](../../om/manage/Operations-Guide-for-System-Center-2012---Operations-Manager.md)  
   
@@ -44,7 +44,7 @@ manager:cfreemanwa
   
 -   [Maintenance of Operations Manager](../../om/manage/Maintenance-of-Operations-Manager.md)  
   
--   [Operations Manager Report Authoring Guide](http://go.microsoft.com/fwlink/p/?LinkID=217092)  
+-   [Operations Manager Report Authoring Guide](https://go.microsoft.com/fwlink/p/?LinkID=217092)  
   
 -   [Managing Discovery and Agents](../Topic/Managing%20Discovery%20and%20Agents.md)  
   

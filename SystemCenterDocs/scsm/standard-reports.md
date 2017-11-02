@@ -25,7 +25,7 @@ This article describes how to use standard reports in Service Manager.
 
  The Reporting workspace contains the catalog of reports that users can run on demand. Reports are viewable for all Service Manager console users. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SSRS server, they can also view reports in work item task lists. Like in Operations Manager, you can run a report in context. For example, you can select a computer in a view in the console and then run the Computer Details report about that computer. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  
 
- For more information about SSRS, see [SQL Server Reporting Services](http://go.microsoft.com/fwlink/p/?LinkId=238589). If you want to see the relationship between high\-level processes and services that are involved between Service Manager and SSRS, refer to the Service Manager architecture diagram \(ArchitectureDiagram.vsd\) that is included in the Service Manager job aids \(SM\_job\_aids.zip\). Because the architecture diagram is too large to see properly in this guide, you can download it and the other jobs aids from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkID=186291).  
+ For more information about SSRS, see [SQL Server Reporting Services](https://go.microsoft.com/fwlink/p/?LinkId=238589). If you want to see the relationship between high\-level processes and services that are involved between Service Manager and SSRS, refer to the Service Manager architecture diagram \(ArchitectureDiagram.vsd\) that is included in the Service Manager job aids \(SM\_job\_aids.zip\). Because the architecture diagram is too large to see properly in this guide, you can download it and the other jobs aids from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkID=186291).  
 
 ## View the standard report catalog
 
@@ -228,7 +228,7 @@ You can set up subscriptions to your reports in Service Manager through SQL&nbsp
 
 ### To create report subscriptions  
 
--   Complete the procedures in the [Subscriptions and Delivery \(Reporting Services\)](http://go.microsoft.com/fwlink/p/?LinkID=158830) topic.   
+-   Complete the procedures in the [Subscriptions and Delivery \(Reporting Services\)](https://go.microsoft.com/fwlink/p/?LinkID=158830) topic.   
 
 # Schedule a standard report
 
@@ -242,7 +242,7 @@ In Service Manager, you can schedule a linked report to run on a regular basis t
 
 -   Schedule the expiration of a cached report to occur at a predefined time so that it can be refreshed later.  
 
- To configure a schedule for a report, complete the procedure in the [Scheduling Reports, Shared Datasets, and Subscriptions](http://go.microsoft.com/fwlink/?LinkId=158822).  
+ To configure a schedule for a report, complete the procedure in the [Scheduling Reports, Shared Datasets, and Subscriptions](https://go.microsoft.com/fwlink/?LinkId=158822).  
 
 ## Add non-Service Manager reports to the report catalog
 

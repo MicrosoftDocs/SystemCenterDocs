@@ -70,7 +70,7 @@ C:\Windows\system32>netsh advfirewall firewall add rule name="Analysis Services"
 
     ```  
 
-2.  Check the CoordinatorExecutionMode property on the SSAS service, and ensue that it is set properly. You can read more about this problem on the [SQL Server forums](http://go.microsoft.com/fwlink/p/?LinkId=403946).  
+2.  Check the CoordinatorExecutionMode property on the SSAS service, and ensue that it is set properly. You can read more about this problem on the [SQL Server forums](https://go.microsoft.com/fwlink/p/?LinkId=403946).  
 
 ## The DWMaintenance task stops on the ManageCubePartitions or ManageCubeTranslations step  
  In this situation, the most common cause is a nonresponsive SSAS server. The workaround is the same for the first step in the previous section, "OLAP Cube Processing Stops." To determine the relevant cube processing workitem, you can run the following queries on the DWStagingAndConfig database. Note that these queries are shown individually; however, you can easily join them together in one query:  

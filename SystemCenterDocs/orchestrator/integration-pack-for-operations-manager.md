@@ -21,7 +21,7 @@ Applies To: System Center 2016 - Orchestrator
 
 The System Center Integration Pack for System Center 2016 Operations Manager is an add-in for System Center 2016 - Orchestrator. It enables you to connect an Orchestrator Runbook server to an Operations Manager management server to automate various actions.
 
-For more information about the System Center integration pack for System Center 2016 - Operations Manager and for other options for automating System Center 2016 - Operations Manager, see the [System Center 2016 Integration Guide](http://go.microsoft.com/fwlink/?LinkID=275796).
+For more information about the System Center integration pack for System Center 2016 - Operations Manager and for other options for automating System Center 2016 - Operations Manager, see the [System Center 2016 Integration Guide](https://go.microsoft.com/fwlink/?LinkID=275796).
 
 ## System Requirements
 

@@ -27,7 +27,7 @@ If the Discovery Wizard is not right for your needs (for example, if you have a 
 Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md).
 
 > [!NOTE]
-> For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
+> For information about port requirements for agents, see [Agent and Agentless Monitoring](https://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
 
 ## To install an agent on a computer running Windows by using the Discovery Wizard
 

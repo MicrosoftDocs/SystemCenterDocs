@@ -36,8 +36,8 @@ Deployment requirements for SPF include:
     - Feature: Management OData IIS Extension
     - Feature: .NET Framework 4.5 features, WCF Services, HTTP Activation
 -	Install the following web services:
-    - [WCF Data Services 5.0 for OData V3](http://go.microsoft.com/fwlink/p/?LinkId=263941)
-    - [ASP.NET MVC 4](http://go.microsoft.com/fwlink/?LinkID=277086)
+    - [WCF Data Services 5.0 for OData V3](https://go.microsoft.com/fwlink/p/?LinkId=263941)
+    - [ASP.NET MVC 4](https://go.microsoft.com/fwlink/?LinkID=277086)
 -	You need an SSL server certificate. You can generate a test certificate automatically during setup but we recommend you use that for testing purposes only, and obtain a certificate from a CA for your production environment.
 -	A side-by-side installation of different SPF versions on the same server isn’t supported.
 -	You can install on a VM.

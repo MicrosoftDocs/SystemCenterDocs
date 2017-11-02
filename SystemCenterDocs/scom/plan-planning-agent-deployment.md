@@ -113,7 +113,7 @@ Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TC
 - If enabled, Windows Firewall Group Policy settings for Allow remote administration exception and Allow file and printer sharing exception must be set to Allow unsolicited incoming messages from to the IP address and subnets for the primary and secondary management servers for the agent. 
 - An account that has local administrator rights on the target computer.
 - Windows Installer 3.1. To install, see article 893803 in the Microsoft Knowledge Base 
-http://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
+https://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
 - Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation will install MSXML 6 on the target device if it is not already installed. <verify if we need to continue calling this out>
 
 ### Agent deployment to UNIX and Linux system

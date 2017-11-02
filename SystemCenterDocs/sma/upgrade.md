@@ -20,7 +20,7 @@ This article describes how to upgrade your existing Service Management Automatio
 ## Prerequisites
 
 - Review the [System Requirements for Service Management Automation](../orchestrator/system-requirements.md) to determine whether it will support SMA 2016.
-- Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](http://go.microsoft.com/fwlink/p/?LinkId=216936).
+- Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can standard tools and processes for [backing up SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=216936).
 
 ## Upgrading
 

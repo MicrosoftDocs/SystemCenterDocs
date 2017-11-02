@@ -17,11 +17,11 @@ The Visio 2010 Add\-in for [!INCLUDE[om12long](../../om/manage/includes/om12long
   
 -   System Center 2012 - Operations Manager Operations or Authoring console.  
   
-    You can download the Authoring console from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=136356) \(http:\/\/go.microsoft.com\/fwlink\/?LinkID\=136356\).  
+    You can download the Authoring console from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=136356) \(http:\/\/go.microsoft.com\/fwlink\/?LinkID\=136356\).  
   
 -   Microsoft Office Visio 2010 Professional or Premium.  
   
--   [The Microsoft .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkID=131605) \(http:\/\/go.microsoft.com\/fwlink\/?LinkID\=131605\).  
+-   [The Microsoft .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkID=131605) \(http:\/\/go.microsoft.com\/fwlink\/?LinkID\=131605\).  
   
 When you run the Setup program for the Visio Add\-in, your system is checked against these requirements. If your system does not meet the requirements, a link is provided so that you can download the missing software.  
   

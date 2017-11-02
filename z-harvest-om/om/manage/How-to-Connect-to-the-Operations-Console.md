@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # How to Connect to the Operations Console
-The [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] Operations console can be installed on any computer that meets the [system requirements](http://go.microsoft.com/fwlink/?LinkID=%20212502). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
+The [!INCLUDE[om12long](../../om/manage/includes/om12long_md.md)] Operations console can be installed on any computer that meets the [system requirements](https://go.microsoft.com/fwlink/?LinkID=%20212502). When you open the Operations console on a management server, the console connects to that management server, however you can use the following procedure to connect to a different management server. When you initially open the Operations console on a computer that is not a management server, you must specify the management server to connect to. The following image shows the **Connect To Server** dialog box.  
   
 ![Dialog box to connect console to server](../../om/manage/media/Connecttoserver.gif "Connecttoserver")  
   

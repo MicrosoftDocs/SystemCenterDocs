@@ -27,7 +27,7 @@ The most common objects you will place in your groups are **Windows Computer** o
   
 ![Properties of a Windows computer object](../../om/manage/media/WindowsComputerProperties.gif "WindowsComputerProperties")  
   
-You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of dynamic group queries and formulas, see [Operations Manager Dynamic Group Examples](http://go.microsoft.com/fwlink/p/?LinkId=242241).  
+You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of dynamic group queries and formulas, see [Operations Manager Dynamic Group Examples](https://go.microsoft.com/fwlink/p/?LinkId=242241).  
   
 ### To create a group in [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]  
   

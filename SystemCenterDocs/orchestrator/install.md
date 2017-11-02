@@ -346,7 +346,7 @@ Enable the following firewall rules on your computer:
 |64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center 2016\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 |32\-bit|%ProgramFiles\\Microsoft System Center 2016\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 
-For more information about adding firewall rules, see [Add or Edit a Firewall Rule](http://go.microsoft.com/fwlink/p/?LinkID=201019).  
+For more information about adding firewall rules, see [Add or Edit a Firewall Rule](https://go.microsoft.com/fwlink/p/?LinkID=201019).  
 
 ### <a name="BKMK_RunbookServicefailstostart"></a>RunbookService fails to start after computer reboot  
 When you reboot your runbook server, the RunbookService attempts to connect to the orchestration database. If the database is not available, the RunbookService fails. The event log message is **This computer was unable to communicate with the computer providing the server.**. Typically, this can occur when the SQL server and the runbook server are installed on the same computer.  

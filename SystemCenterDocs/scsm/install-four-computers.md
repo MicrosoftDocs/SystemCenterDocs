@@ -154,7 +154,7 @@ To start deployment of the System Center - Service Manager data warehouse and da
     1.  In the **Report server** box, enter the name of the computer that will host the reporting server. In this example, this will be the computer that hosts the data warehouse database, enter **Computer 4**, and then press the TAB key.  
 
         > [!NOTE]  
-        >  The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, you will need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see the TechNet article [Configure a URL](http://go.microsoft.com/fwlink/p/?LinkId=230712).  
+        >  The URL that you are presented with might not be in the form of a fully qualified domain name \(FQDN\). If the URL as presented cannot be resolved in your environment, you will need to configure SQL Server Reporting URLs so that the FQDN is listed in the **Web service URL** field. For more information see the TechNet article [Configure a URL](https://go.microsoft.com/fwlink/p/?LinkId=230712).  
 
     2.  Verify that **Default** is displayed in the **Report server instance** box.  
 

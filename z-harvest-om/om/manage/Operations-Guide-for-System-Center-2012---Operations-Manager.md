@@ -19,9 +19,9 @@ The Operations Guide is a comprehensive resource that can be used to understand 
   
 **Before you read the Operations Guide:**  
   
-If you are new to Operations Manager, you should read [Key Concepts](http://go.microsoft.com/fwlink/p/?LinkID=224022) to understand what a management group is and how Operations Manager works.  
+If you are new to Operations Manager, you should read [Key Concepts](https://go.microsoft.com/fwlink/p/?LinkID=224022) to understand what a management group is and how Operations Manager works.  
   
-If you are familiar with Operations Manager&nbsp;2007, you should read [What's New in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223462) to review the differences between Operations Manager&nbsp;2007 and Operations Manager for System Center&nbsp;2012.  
+If you are familiar with Operations Manager&nbsp;2007, you should read [What's New in System Center 2012 \- Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=223462) to review the differences between Operations Manager&nbsp;2007 and Operations Manager for System Center&nbsp;2012.  
   
 ## In the Operations Guide  
   
@@ -55,16 +55,16 @@ If you are familiar with Operations Manager&nbsp;2007, you should read [What's N
   
 ## Related Resources  
   
--   [TechNet Library main page for System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223634)  
+-   [TechNet Library main page for System Center 2012 \- Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=223634)  
   
--   [What's New in System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=223462)  
+-   [What's New in System Center 2012 \- Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=223462)  
   
--   [System Center 2012 \- Operations Manager Release Notes](http://go.microsoft.com/fwlink/p/?LinkID=221147)  
+-   [System Center 2012 \- Operations Manager Release Notes](https://go.microsoft.com/fwlink/p/?LinkID=221147)  
   
--   [Deployment Guide for System Center 2012 \- Operations Manager](http://go.microsoft.com/fwlink/?LinkID=213291)  
+-   [Deployment Guide for System Center 2012 \- Operations Manager](https://go.microsoft.com/fwlink/?LinkID=213291)  
   
--   [System Center 2012 \- Operations Manager Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkId=223642)  
+-   [System Center 2012 \- Operations Manager Supported Configurations](https://go.microsoft.com/fwlink/p/?LinkId=223642)  
   
 ## Downloadable Documentation  
-You can download a [copy of this technical documentation from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=246682). Always use the TechNet library for the most up\-to\-date information.  
+You can download a [copy of this technical documentation from the Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=246682). Always use the TechNet library for the most up\-to\-date information.  
   
