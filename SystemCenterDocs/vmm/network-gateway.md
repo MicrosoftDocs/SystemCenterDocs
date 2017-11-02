@@ -50,7 +50,7 @@ You can set up your gateway in a number of ways depending on your requirements:
 
 The service template provides a highly available Windows Server Gateway deployment in active-standby mode.
 
-1. You'll need to download the template from the [Download center](http://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
+1. You'll need to download the template from the [Download center](https://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
 2. The download is a compressed zip file. You'll need to extract the file. Files include a user guide, two service templates, and a custom resource folder (a folder with a .cr extension) that contains files required for the service templates.
 3. You'll need to decide which template to use, and then follow the instructions in the Quick Start Guide. The guide includes prerequisites for the template deployment, and instructions for setting up logical networks, creating a scale-out file server, preparing virtual hard disks for the gateway VM, and copying the custom resource file to the library. After you've set up the infrastructure it describes how to import and customize the template, and how to deploy it. There's also troubleshooting information if issues arise.
 

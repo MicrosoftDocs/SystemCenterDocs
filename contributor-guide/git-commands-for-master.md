@@ -63,7 +63,7 @@ Follow the steps in this article to create a local working branch on your comput
 
 15. Optionally verify your published article or changes at
 
- http://technet.microsoft.com/system-center-docs///*name-of-your-article-without-the-MD-extension*
+ https://technet.microsoft.com/system-center-docs///*name-of-your-article-without-the-MD-extension*
 
 ## Publishing
 

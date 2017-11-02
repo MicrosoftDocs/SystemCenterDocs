@@ -30,7 +30,7 @@ Getting started with monitoring Java applications requires these four general st
     > [!IMPORTANT]  
     > Although the Management Pack for JEE supports several types of application servers, Java Application Monitoring only supports Tomcat.  
   
-    Download the Management Pack for JEE and the Management Pack Guide for JEE. This management pack monitors JEE application servers and is available for IBM WebSphere, Oracle WebLogic, Red Hat JBoss, and Apache Tomcat. Go to the [System Center Management Pack for Java Enterprise Edition \(JEE\) on the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=325020), click **Download**, and then select the files you want to download. For example, select the management pack \(SC2012OM\_JEE\_MP.msi\) and select the Management Pack Guide for Tomcat \(OpsMgr\_MP\_Tomcat.docx\).  
+    Download the Management Pack for JEE and the Management Pack Guide for JEE. This management pack monitors JEE application servers and is available for IBM WebSphere, Oracle WebLogic, Red Hat JBoss, and Apache Tomcat. Go to the [System Center Management Pack for Java Enterprise Edition \(JEE\) on the Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=325020), click **Download**, and then select the files you want to download. For example, select the management pack \(SC2012OM\_JEE\_MP.msi\) and select the Management Pack Guide for Tomcat \(OpsMgr\_MP\_Tomcat.docx\).  
   
     > [!IMPORTANT]  
     > Make sure to download the corresponding management pack guide \(.docx file\) for the application server you are using. It contains the details of how to install the management pack and describes what is monitored.  
@@ -47,7 +47,7 @@ Getting started with monitoring Java applications requires these four general st
   
 ### To import the Management Pack for Java Application Performance Monitoring  
   
-1.  Now that the Management Pack for Java Enterprise Edition is imported and configured through deep monitoring and BeanSpy deployed, import the Management Pack for Java Application Performance Monitoring. Download the management pack from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=313918).  
+1.  Now that the Management Pack for Java Enterprise Edition is imported and configured through deep monitoring and BeanSpy deployed, import the Management Pack for Java Application Performance Monitoring. Download the management pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=313918).  
   
 2.  The Management Pack for Java Application Performance Monitoring \(JavaAPMManagementPack.msi\) contains these files:  
   
@@ -81,13 +81,13 @@ Getting started with monitoring Java applications requires these four general st
   
 2.  To enable Java Application Performance Monitoring, in the **Monitoring** pane, in the **Tasks** pane, click **Deep Monitored Configurations**, and then select a deep monitoring application server.  
   
-3.  After you select an application server to enable Java Application Performance Monitoring on, in the **Tasks** pane, in **Monitored application server instance Tasks**, click **Extract APM Jar files**. This extracts the Java agent files to either the monitored machine \(when a server is running Windows\), or to the gateway or management server \(when a server is running Linux\). The Task output tells you which machine the files have been extracted to and where they were extracted. For more information, see the Management Pack Guide for Java Application Performance Monitoring available from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=313918).  
+3.  After you select an application server to enable Java Application Performance Monitoring on, in the **Tasks** pane, in **Monitored application server instance Tasks**, click **Extract APM Jar files**. This extracts the Java agent files to either the monitored machine \(when a server is running Windows\), or to the gateway or management server \(when a server is running Linux\). The Task output tells you which machine the files have been extracted to and where they were extracted. For more information, see the Management Pack Guide for Java Application Performance Monitoring available from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=313918).  
   
 4.  Next, reconfigure the Java application server. To enable Java Application Performance Monitoring, specify command line options that use Jar file as class loader and then restart the application. Another discovery after you install the agent enables Application Performance Monitoring.  
   
 ### To verify Application Performance Monitoring agent deployment and override monitors  
   
-1.  To verify if Application Performance Monitoring is monitoring an application, right click an application and you can see a list of counters: Monitored Requests\/sec, Average Request Time, Performance Events\/sec, Exception Events\/sec, and, importantly, values for each counter. Five monitors apply to these. For more information about monitors, see the Management Pack Guide for Java Application Performance Monitoring, available from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=313918).  
+1.  To verify if Application Performance Monitoring is monitoring an application, right click an application and you can see a list of counters: Monitored Requests\/sec, Average Request Time, Performance Events\/sec, Exception Events\/sec, and, importantly, values for each counter. Five monitors apply to these. For more information about monitors, see the Management Pack Guide for Java Application Performance Monitoring, available from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=313918).  
   
     > [!IMPORTANT]  
     > If you do not see values for the counters, Application Performance Monitoring is not enabled for these applications. This means that you might need to wait for Application Performance Monitoring discovery.  

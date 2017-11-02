@@ -13,7 +13,7 @@ author:mgoedtel
 manager:cfreemanwa
 ---
 # AdtAdmin.exe SetQuery
-An ACS collector can use Windows Management Instrumentation \(WMI\) Query Language \(WQL\) queries as filters to limit the events that are stored in the ACS database. The *\/SetQuery* parameter implements the filter before events are saved to the ACS database. For more information on WQL and WQL queries, see [Querying with WQL](http://go.microsoft.com/fwlink/?LinkId=74151).  
+An ACS collector can use Windows Management Instrumentation \(WMI\) Query Language \(WQL\) queries as filters to limit the events that are stored in the ACS database. The *\/SetQuery* parameter implements the filter before events are saved to the ACS database. For more information on WQL and WQL queries, see [Querying with WQL](https://go.microsoft.com/fwlink/?LinkId=74151).  
   
 > [!NOTE]  
 > Because ACS supports only event queries, it does not support WQL aggregation operators.  

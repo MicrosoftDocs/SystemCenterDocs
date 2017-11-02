@@ -80,7 +80,7 @@ SQL Server 2012 (Enterprise, Standard, 64-bit) | N
 SQL Server 2012 SP1 onwards | Y
 SQL Server 2014 and all service packs | Y
 SQL Server 2016 and all service packs | Y
-SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](http://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](http://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.
+SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.
 
 ## Virtualization
 
@@ -98,7 +98,7 @@ These components should be installed on the server, before you install VMM.
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
 Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn&#39;t exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | Available in the [Download Center](http://go.microsoft.com/fwlink/p/?LinkID=263698) | Not applicable
+Windows ADK | Available in the [Download Center](https://go.microsoft.com/fwlink/p/?LinkID=263698) | Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 .NET | 4.6 | 4,5, 4.5.1, 4.5.2, 4.6
 

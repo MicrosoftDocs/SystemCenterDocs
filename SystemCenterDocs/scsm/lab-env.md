@@ -33,9 +33,9 @@ Use the following procedure to restore the production Service Manager database u
 3.  Right\-click the database, point to **Tasks**, and then click **Restore**. The Back Up Database dialog box appears.  
 4.  Click **Database**, which opens the **Restore Database** dialog box  
 5.  On the **General** page, the name of the restoring database appears in the **To database** list box. To create a new database, enter its name in the list box.  
-6.  In the **To a point in time** text box, either retain the default \(Most recent possible\) or select a specific date and time by clicking the browse button which opens the **Point in Time Restore** dialog box. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](http://go.microsoft.com/fwlink/p/?LinkId=236006).  
+6.  In the **To a point in time** text box, either retain the default \(Most recent possible\) or select a specific date and time by clicking the browse button which opens the **Point in Time Restore** dialog box. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](https://go.microsoft.com/fwlink/p/?LinkId=236006).  
 7.  To specify the source and location of the backup sets to restore, click either **From database** or **From device**.  
-8.  In the **Select the backup sets to restore** grid, select the backups to restore. For more information see [Restore Database \(General Page\)](http://go.microsoft.com/fwlink/p/?LinkId=236009).  
+8.  In the **Select the backup sets to restore** grid, select the backups to restore. For more information see [Restore Database \(General Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236009).  
 9. To view or select the advanced options, click **Options** in the **Select a page pane**.  
 10. In the **Restore options** panel, choose one of the following options most appropriate for your situation:  
     -   Overwrite the existing database  
@@ -43,8 +43,8 @@ Use the following procedure to restore the production Service Manager database u
     -   Prompt before restoring each backup  
     -   Restrict access to the restored database  
 
-     For more information, see [Restore Database \(Options Page\)](http://go.microsoft.com/fwlink/p/?LinkId=236010)  
-11. Optionally, you can restore the database to a new location by specifying a new restore destination for each file in **Restore the database files as**. For more information see [Restore Database \(Options Page\)](http://go.microsoft.com/fwlink/p/?LinkId=236010).  
+     For more information, see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010)  
+11. Optionally, you can restore the database to a new location by specifying a new restore destination for each file in **Restore the database files as**. For more information see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010).  
 12. In the **Recovery state** panel, select one of the following options most appropriate for your environment:  
     -   **Leave the database ready to use by rolling back the uncommitted transactions. Additional transaction logs cannot be restored. \(RESTORE WITH RECOVERY\)**  
 
@@ -54,7 +54,7 @@ Use the following procedure to restore the production Service Manager database u
     -   **Leave the database non\-operational, and do not roll back the uncommitted transactions. Additional transaction logs can be restored. \(RESTORE WITH NORECOVERY\)**  
     -   **Leave the database in read\-only mode. Undo uncommitted transactions, but save the undo actions in a standby file so that recovery effects can be reverted. \(RESTORE WITH STANDBY\)**  
 
-     For more information see [Restore Database \(Options Page\)](http://go.microsoft.com/fwlink/p/?LinkId=236010).
+     For more information see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010).
 
 
 ## Prepare the Service Manager database in the lab environment
@@ -304,7 +304,7 @@ Use the following procedure to register the newly installed data warehouse serve
 10. A dialog box states that the report deployment process has not finished. This is to be expected. On the **System Center Service Manager** dialog box, click **OK**.  
 11. In a few minutes, after closing the Data Warehouse Registration wizard, the **Data Warehouse** button will be added to the Service Manager console. In the Service Manager console, click the arrow at the lower right corner of the Service Manager console buttons, and then click **Show More Buttons**.  
 
- You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](http://go.microsoft.com/fwlink/p/?LinkId=203096).  
+ You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](https://go.microsoft.com/fwlink/p/?LinkId=203096).  
 
 ### Validate the registration
 

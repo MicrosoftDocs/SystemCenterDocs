@@ -29,7 +29,7 @@ Connecting management groups offers these additional services:
 > [!IMPORTANT]  
 > Both management groups must be running the same build of Operations Manager. For example, both management groups must be running System Center&nbsp;2012&nbsp;-&nbsp;Operations Manager.  
   
-In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Operations Manager&nbsp;Supported Configurations](http://go.microsoft.com/fwlink/p/?LinkID=219650).  
+In addition to all of the communications channels used in the multiple server, single management group configuration, connected management groups require communication between the management servers of the local group and the management servers of the connected group over TCP 5723 and 5724. For a complete list of ports used by Operations Manager, see [Operations Manager&nbsp;Supported Configurations](https://go.microsoft.com/fwlink/p/?LinkID=219650).  
   
 Connected management groups support all Operations Manager user roles and makes use of the Operations Manager Connector Framework to enable bidirectional communication between the connected groups and local groups.  
   

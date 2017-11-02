@@ -181,7 +181,7 @@ In this of the Woodgrove Bank customization scenario, Ken needs to bundle the ma
 
 1.  Ensure that the Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml file and its associated resource files, such as the Woodgrovebank.jpg image file and the AddComputerToGroupFormAssembly.dll file, are in the same folder. For example, put all the files in the AuthoringSample folder.  
 2.  Copy the folder that contains the files to the Service Manager management server.  
-3.  Bundle the files using the Windows&nbsp;PowerShell cmdlet [New\-SCSMManagementPackBundle](http://go.microsoft.com/fwlink/p/?LinkID=225397). For example:  
+3.  Bundle the files using the Windows&nbsp;PowerShell cmdlet [New\-SCSMManagementPackBundle](https://go.microsoft.com/fwlink/p/?LinkID=225397). For example:  
 
     ```  
     New-SCSMManagementPackBundle -Name AddComputerToGroup.mpb -ManagementPack Woodgrove.AutomatedActivity.AddComputerToGroupMP.xml   

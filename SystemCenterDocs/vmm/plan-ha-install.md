@@ -45,8 +45,8 @@ You shouldn't install SQL Server on the VMM cluster.
 	- All cluster nodes that will act as VMM servers must be running Windows Server 2016.
 	- Each cluster node must be joined to a domain and must have a computer name that does not exceed 15 characters.
 	- The VMM service network name must not exceed 15 characters.
-	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](http://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
-	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](http://go.microsoft.com/fwlink/p/?LinkId=253555) or [SQL Server 2014 feature pack](http://go.microsoft.com/fwlink/?LinkID=529794) or [SQL Server 2016 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676).
+	- Windows ADK needs to be installed on each computer. Install from setup or the [download center](https://go.microsoft.com/fwlink/p/?LinkId=614942). Select **Deployment Tools** and **Windows Preinstallation Environment** when you install.
+	- If you plan to deploy VMM services that use SQL Server data-tier applications, install the related command-line utilities on your VMM management server. The command line utility is available in the [SQL Server 2012 feature pack](https://go.microsoft.com/fwlink/p/?LinkId=253555) or [SQL Server 2014 feature pack](https://go.microsoft.com/fwlink/?LinkID=529794) or [SQL Server 2016 feature pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676).
 
 
 ## Plan a highly available VMM library

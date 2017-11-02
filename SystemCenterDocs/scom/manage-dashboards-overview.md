@@ -20,7 +20,7 @@ A dashboard has a particular layout, which specifies the arrangement of the cell
 Dashboards in Operations Manager deliver the following benefits:
  
 * A dashboard is defined and shared in a management pack.  
-* Authoring a dashboard is a simple process for an Operations Manager user.  A new dashboard can be created or an existing dashboard modified in both the Operations console and the Web console with the **New Dashboard and Widget** wizard.  However, if the default dashboard templates do not meet your requirements, you can [author custom dashboards](http://social.technet.microsoft.com/wiki/contents/articles/24639.aspx) and create [custom widgets](http://social.technet.microsoft.com/wiki/contents/articles/24641.operations-manager-management-pack-authoring-custom-widgets.aspx) with Visual Studio using the [Visual Studio Authoring Extensions](https://www.microsoft.com/download/details.aspx?id=30169).   
+* Authoring a dashboard is a simple process for an Operations Manager user.  A new dashboard can be created or an existing dashboard modified in both the Operations console and the Web console with the **New Dashboard and Widget** wizard.  However, if the default dashboard templates do not meet your requirements, you can [author custom dashboards](https://social.technet.microsoft.com/wiki/contents/articles/24639.aspx) and create [custom widgets](https://social.technet.microsoft.com/wiki/contents/articles/24641.operations-manager-management-pack-authoring-custom-widgets.aspx) with Visual Studio using the [Visual Studio Authoring Extensions](https://www.microsoft.com/download/details.aspx?id=30169).   
 * Once created, a dashboard is available from the Operations console, the Web console and the SharePoint Web Part.   
 
 ## Dashboard templates
@@ -96,7 +96,7 @@ SLA Tiles | Displays an SLA tile showing the last Service Level Objective value 
 Topology | Displays an icon for one or more objects on a selected image. | Operations DB | N/A|
 Web Browser | Displays a web, optionally sending the ID of the management group, the ID of an object selected in another widget in the dashboard, and the ID of an alert selected in another widget in the dashboard.  This allows you to create a web page that could use the Operations Manager SDK to retrieve information or perform some other action dynamically in response to a user selection in the dashboard. | Operational DB | N/A|
 
-For additional details of each widget and the configurable properties available, please see [Operations Manager Dashboard Widgets](http://social.technet.microsoft.com/wiki/contents/articles/24133.operations-manager-dashboard-widgets.aspx) from the Management Pack Authoring Guide.   
+For additional details of each widget and the configurable properties available, please see [Operations Manager Dashboard Widgets](https://social.technet.microsoft.com/wiki/contents/articles/24133.operations-manager-dashboard-widgets.aspx) from the Management Pack Authoring Guide.   
 
 ## Next steps
 

@@ -70,7 +70,7 @@ The data warehouse in Service Manager provides three primary functions:
 ### System Center Common Model and data warehouse database schema  
  Diagrams that represent the System Center common model and the data warehouse database schema are available for Service Manager. The database schema is based on the common management pack model, which means the relational database objects and relationships benefit from class inheritance.  
 
- If you are not familiar with developing management packs, writing custom queries against the data warehouse can be intimidating. However, the schema diagrams are very useful to help get you started. You can download the Visio diagrams, SystemCenterCommonModel\-SCSM2010.vsd and DWDataMart.vsd, as part of the [Service Manager Job aids](http://go.microsoft.com/fwlink/p/?LinkID=186291) \(SM\_job\_aids.zip\). The different types of tables in the data warehouse are color coded in the schema diagram.  
+ If you are not familiar with developing management packs, writing custom queries against the data warehouse can be intimidating. However, the schema diagrams are very useful to help get you started. You can download the Visio diagrams, SystemCenterCommonModel\-SCSM2010.vsd and DWDataMart.vsd, as part of the [Service Manager Job aids](https://go.microsoft.com/fwlink/p/?LinkID=186291) \(SM\_job\_aids.zip\). The different types of tables in the data warehouse are color coded in the schema diagram.  
 
 ## Data warehouse databases  
  The data warehouse in Service Manager comprises the following databases:  

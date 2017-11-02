@@ -77,13 +77,13 @@ You can use the following procedures to configure incident management to automat
 
 ![PowerShell symbol](./media/dcm-incidents/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225354).
+-   For information about how to use Windows PowerShell to create a desired configuration management workflow in Service Manager, see [New-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225354).
 
--   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in Service Manager, see [Get-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225321).
+-   For information about how to use Windows PowerShell to retrieve the list of all DCM workflows that are defined in Service Manager, see [Get-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225321).
 
--   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225383).
+-   For information about how to use Windows PowerShell to update properties of a desired configuration management workflow, see [Update-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225383).
 
--   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225365).
+-   For information about how to use Windows PowerShell to remove a desired configuration management workflow from Service Manager, see [Remove-SCSMDCMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225365).
 
 ## Next steps
 

@@ -21,13 +21,13 @@ You must be running System Center 2012 R2 Update Rollup 1 \(UR1\) or later; Syst
 When you download an Update Rollup, you must find an updated version of the Team Foundation Server Work Item Synchronization Management Pack, which is included in the Update Rollup download.  
   
 ## TFS Process Templates: What to Know  
-Each team project in TFS is based on a process template that can be customized for your needs. There are many versions of existing process model templates. Several are included with TFS and you can find more on the Visual Studio Gallery and other community sources. Many of these process templates are also non\-English versions. You can customize any of the process templates based on your style of managing development projects. For more information see, [Customizing Work Item Types in Team Foundation Server](http://go.microsoft.com/fwlink/?LinkId=391715). Because there are many variations of TFS process model templates, you might need to configure Operations Manager to work with the process model currently used by your team projects.  
+Each team project in TFS is based on a process template that can be customized for your needs. There are many versions of existing process model templates. Several are included with TFS and you can find more on the Visual Studio Gallery and other community sources. Many of these process templates are also non\-English versions. You can customize any of the process templates based on your style of managing development projects. For more information see, [Customizing Work Item Types in Team Foundation Server](https://go.microsoft.com/fwlink/?LinkId=391715). Because there are many variations of TFS process model templates, you might need to configure Operations Manager to work with the process model currently used by your team projects.  
   
 ## Customizing Integration  
-If you are using a non\-English version of TFS or want to customize a pre\-defined Operational Issue WIDT, you must customize the integration between Operations Manager and TFS. To do this, you must modify the English version of the Work Item Type Definition \(WITD\) that comes with Operations Manager to match the process model and the language used in TFS. Your customization must follow the guidelines listed in [Localization and globalization of WITD child elements](http://go.microsoft.com/fwlink/?LinkId=392521).  
+If you are using a non\-English version of TFS or want to customize a pre\-defined Operational Issue WIDT, you must customize the integration between Operations Manager and TFS. To do this, you must modify the English version of the Work Item Type Definition \(WITD\) that comes with Operations Manager to match the process model and the language used in TFS. Your customization must follow the guidelines listed in [Localization and globalization of WITD child elements](https://go.microsoft.com/fwlink/?LinkId=392521).  
   
 > [!IMPORTANT]  
-> If you customized the WITD or are using your own WITD, you must manually import it into TFS because automatic import will default to an English version of a process model template with no customizations. For more information, see, [How to Manually Import an Operational Issue WITD in TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391717).  
+> If you customized the WITD or are using your own WITD, you must manually import it into TFS because automatic import will default to an English version of a process model template with no customizations. For more information, see, [How to Manually Import an Operational Issue WITD in TFS in System Center 2012 R2](https://go.microsoft.com/fwlink/?LinkId=391717).  
   
 ## Preparing Operations Manager  
   
@@ -37,14 +37,14 @@ If you are using a non\-English version of TFS or want to customize a pre\-defin
   
 2.  Make sure you have imported the Alert Attachment management pack. For more information, see [How to Configure File Attachments for Operations Manager Alerts in System Center 2012 R2](../../om/manage/How-to-Configure-File-Attachments-for-Operations-Manager-Alerts-in-System-Center-2012-R2.md)  
   
-3.  Follow the [How to Configure Integration with TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391721), but don't automatically import the Work Item Type Operational Issue.  
+3.  Follow the [How to Configure Integration with TFS in System Center 2012 R2](https://go.microsoft.com/fwlink/?LinkId=391721), but don't automatically import the Work Item Type Operational Issue.  
   
 4.  After completing the TFS Work Item Synchronization configuration wizard, click **Create**. On the **Import Operational Issue Work Item Type Definition** page, click **Cancel**. You don't need to supply a password. Then on the **TFS Work Item Synchronization** page, click **Save** to save the integration settings without automatically importing the Operational Issue Work Item Type Definition.  
   
 5.  Your configuration is saved, but you can't use it yet. You will receive an alert from the TFS Work Item Synchronization Management Pack indicating that synchronization is in an unhealthy state. This alert will disappear after you provide a valid WITD and configure the required overrides.  
   
 ## Synchronizing with a WITD other than the Operational Issue Work Item Type Definition  
-By default, synchronization happens using Operational Issue \(as spelled in English\) WITD, but if you want to synchronize with a different WITD or if you'd like to customize or change the WITD default name, such as spelling Operational Issue WITD in a language other than English, you need to customize the Operational Issue Work Item Type template which is on the Operations Manager installation media and then manually import it to each of the team projects used in synchronization. For more information, see [How to Manually Import an Operational Issue WITD to TFS in System Center 2012 R2](http://go.microsoft.com/fwlink/?LinkId=391717). For information about customization, see [Customizing Work Item Types](http://go.microsoft.com/fwlink/?LinkId=391715).  
+By default, synchronization happens using Operational Issue \(as spelled in English\) WITD, but if you want to synchronize with a different WITD or if you'd like to customize or change the WITD default name, such as spelling Operational Issue WITD in a language other than English, you need to customize the Operational Issue Work Item Type template which is on the Operations Manager installation media and then manually import it to each of the team projects used in synchronization. For more information, see [How to Manually Import an Operational Issue WITD to TFS in System Center 2012 R2](https://go.microsoft.com/fwlink/?LinkId=391717). For information about customization, see [Customizing Work Item Types](https://go.microsoft.com/fwlink/?LinkId=391715).  
   
 **How much can I customize?**  
   
@@ -71,7 +71,7 @@ Additionally, you must change these overrides if you changed any of these elemen
 -   Provide the values for the Work Item Microsoft.VSTS.Common.Severity codes. Matching values for each of the alert severity states. You need to specify which of the values of the Work Item Microsoft.VSTS.Common.Severity corresponds to the original definition of the Operational Issue WITD. You can keep the original English values or use values you have in your process model and\/or in the language you want.  
   
 ### To customize the Operational Issue WITD to work with your process model in TFS  
-Customizing a WITD is an advanced operation and requires a good understanding managing team artifacts in TFS. For more information see, [Customizing Work Item Types in Team Foundation Server](http://go.microsoft.com/fwlink/?LinkId=391715).  
+Customizing a WITD is an advanced operation and requires a good understanding managing team artifacts in TFS. For more information see, [Customizing Work Item Types in Team Foundation Server](https://go.microsoft.com/fwlink/?LinkId=391715).  
   
 1.  Locate existing OperationalIssue.xml and make a local copy of the file. You can find the correct Operational Issue WITD for your version of TFS on the installation media for Operations Manager in System Center 2012 R2 in the **SupportTools** folder.  
   

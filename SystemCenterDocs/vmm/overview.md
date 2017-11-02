@@ -25,7 +25,7 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 ## Resources
 
-- For VMM questions or comments, go to [System Center Virtual Machine Manager Forums](http://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager).
+- For VMM questions or comments, go to [System Center Virtual Machine Manager Forums](https://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager).
 - To read blog posts from the VMM engineering team, see [System Center: Virtual Machine Manager Engineering Blog](http://blogs.technet.com/b/scvmm/).
 
 ## Next steps

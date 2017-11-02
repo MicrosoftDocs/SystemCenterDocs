@@ -26,7 +26,7 @@ There are two ways to configure the Activities Toolbox in the Service Manager Au
 
 ## Modify the default toolbox
 
-If the default set of Windows Workflow Foundation (WF) activities does not meet the needs of your organization, you can use custom activities with the Service Manager Authoring Tool. Custom activities include activities you or your organization develops or activities that non-Microsoft parties develop. These activities must be compiled into assembly files (*activitysetname*.dll). For information about developing WF activities, see the [Workflow Activity Reference](http://go.microsoft.com/fwlink/p/?LinkID=233694).
+If the default set of Windows Workflow Foundation (WF) activities does not meet the needs of your organization, you can use custom activities with the Service Manager Authoring Tool. Custom activities include activities you or your organization develops or activities that non-Microsoft parties develop. These activities must be compiled into assembly files (*activitysetname*.dll). For information about developing WF activities, see the [Workflow Activity Reference](https://go.microsoft.com/fwlink/p/?LinkID=233694).
 
 Installing or removing custom activity assemblies changes the set of available activities for all Authoring Tool users. When you install or remove an activity assembly, remember to notify Authoring Tool users of the changes. Custom activities do not appear automatically in the Activities Toolbox; in order to use custom activities, users must add them to personalized activity groups.
 

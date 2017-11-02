@@ -62,7 +62,7 @@ Install the agent as follows:
 
 1.  Install the agent on each DPM server you want to monitor.
 
-2.  [Get](http://go.microsoft.com/fwlink/?LinkId=524729) the latest agent version.
+2.  [Get](https://go.microsoft.com/fwlink/?LinkId=524729) the latest agent version.
 
 ### <a name="BKMK_Import"></a>Import the DPM discovery and library management packs
 DPM provides the following management packs:
@@ -76,7 +76,7 @@ DPM provides the following management packs:
 
 1.  On the Operations Manager server remove any existing DPM management packs.
 
-2.  [Download](http://go.microsoft.com/fwlink/?LinkId=524726) the DPM management packs.
+2.  [Download](https://go.microsoft.com/fwlink/?LinkId=524726) the DPM management packs.
 
     By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
@@ -100,7 +100,7 @@ Note that:
 
 -   DPM adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
 
--   If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](http://go.microsoft.com/fwlink/p/?LinkId=245527).
+-   If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=245527).
 
 ### <a name="BKMK_ImportReporting"></a>Import the reporting management pack
 
