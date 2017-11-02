@@ -9,6 +9,7 @@ ms.date: 11/01/2017
 title:  What's new in System Center DPM 1711
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
+monikerRange: 'sc-dpm-1711'
 ms.author: markgal
 ---
 
