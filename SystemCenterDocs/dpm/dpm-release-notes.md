@@ -10,13 +10,14 @@ ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: data-protection-manager
 ms.topic: article
+monkierRange: 'sc-dpm-1711'
 ---
 
-# Release Notes for System Center Data Protection Manager (DPM) 2016
+# Release Notes for System Center Data Protection Manager (DPM) 1711
 
 >Applies To: System Center 2016 - DPM
 
-The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center Data Protection Manager (DPM) 2016.  
+The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center Data Protection Manager (DPM) 1711.  
 
 
 ## Silent Installation of System Center DPM with SQL Server 2008
