@@ -1,26 +1,23 @@
 ---
 ms.assetid: 0683ab30-6f03-4ffc-a50d-8d91d61768fe
-title: What's new in System Center Preview Virtual Machine Manager version 1711
-description: This article describes the new features supported in System Center Preview VMM 1711.
+title: What's new in System Center Virtual Machine Manager version 1711
+description: This article describes the new features supported in System Center VMM 1711.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  riyazp
-ms.date:  10/26/2017
+ms.date:  11/02/2017
 ms.topic:  article
-ms.prod:  system-center-1711
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
----
-
----
 monikerRange: 'sc-vmm-1711'
 ---
 
-# What's new in System Center Preview Virtual Machine Manager 1711 (Technical preview content - under construction)
+# What's new in System Center Preview Virtual Machine Manager 1711 (Technical preview content - page under construction)
 
 
 >Applies To: System Center 1711 - Virtual Machine Manager
 
-This article describes about the new features in System Center Preview Virtual Machine Manager 1711 - Virtual Machine Manager (SCVMM 1711).
+This article describes about the new features in System Center Virtual Machine Manager 1711 CVMM 1711).
 
 ## Compute
 
@@ -28,7 +25,7 @@ This article describes about the new features in System Center Preview Virtual M
 
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure region.
 
-SCVMM 1711 supports management of ARM-based VMs that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions).
+VMM 1711 supports management of ARM-based VMs that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions).
 
 Classic Azure VMs use certificate-based authentication and authorization, which are generated on the classic Azure portal.  The new Azure portal supports Azure Active Directory (AD) based authentication and authorization along with provision and managing ARM-based VMs.  
 
@@ -86,7 +83,7 @@ T
 
 ## Storage
 
-### Improvement in VMM Storage QoS
+### Improvement in VMM storage QoS
 Storage Quality of Service (SQoS) provides a way to centrally monitor and manage storage performance for virtual machines using Hyper-V and the Scale-Out File Server (SOFS) roles. The feature automatically improves storage resource fairness between multiple VMs using the same cluster and allows policy-based performance goals. [Learn more]
 
 SCVMM 1711 supports the following improvements in SQoS:
@@ -104,9 +101,9 @@ VMM currently supports guest clustering.  However, with the advent of the networ
 
 With the introduction of the network controller, VMs, which are connected to the virtual network are only permitted to use the IP address that the network controller assigns for communication. The network controller does not support floating IP addresses which are essential for technologies such as Microsoft failover clustering to work.
 
-SCVMM 1711 release supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
+VMM 1711 release supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
-SCVMM 1711 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node. [Learn more].
+VMM 1711 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node. [Learn more].
 
 ### Enhanced console session in VMM
 Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through
