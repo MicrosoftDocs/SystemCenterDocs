@@ -30,8 +30,12 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 - Anti-virus apps must be supported.
 - VMware tools must be uninstalled from the guest operating system of the VM.
 - [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
+
+::: moniker range="sc-vmm-2016"
+
 - Azure Site Recovery currently doesn't have to ability for a direct VMware to Hyper-V conversion. [Read more](https://feedback.azure.com/forums/256299-site-recovery/suggestions/10050060-asr-to-support-vmware-to-hyper-v-protection-migrat) about up-voting this solution.
 
+::: moniker-end
 
 ## Convert using the wizard
 
@@ -45,13 +49,13 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 ::: moniker range="sc-vmm-1711"
 
-## Convert  EFI based VM to Hyper-V generation 2 VM (Technical preview content - under construction)
-The System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) release enables migration of EFI based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
+## Convert  EFI based VM to Hyper-V generation 2 VM (Technical preview)
+The System Center VMM 1711 (SCVMM 1711) version enables migration of EFI based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
 
-As part of this release, the **Convert Virtual Machine** wizard enables the VM's migration based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
+As part of VMM 1711 release, the **Convert Virtual Machine** wizard enables this migration based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
 
-- BIOS-based VMs are migrated to Hyper-V VM generation 1.
-- EFI-based VMs are migrated to Hyper-V VM generation 2.
+- BIOS-based VMs are migrated to Hyper-V VM Generation 1.
+- EFI-based VMs are migrated to Hyper-V VM Generation 2.
 
 ### Before you start
 Ensure the following prerequisites are met:
@@ -63,14 +67,14 @@ Ensure the following prerequisites are met:
 
     ![vm conversion to gen 2](media\vm-conversion\vm-conversion-select-gen2.png)
 
-2. Once the VM is converted, you can see the Generation 2 VM as follows:
+2. Once the VM is converted, you can see the Generation 2 VM as shown in the following image:
 
     ![vm conversion to gen 2](media\vm-conversion\vm-conversion-gen2-created.png)
 
-> ![NOTE]
+> [!NOTE]
 >
 - Disk conversion (from “vmdk” to “VHDX/VHD”) is enhanced to be ~50% faster than earlier.
-- PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.   
+- PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
 
 ## PowerShell commands
 ```powershell

@@ -46,7 +46,7 @@ Administrators/delegated administrators can configure nested virtualization by u
 ### Enable nested virtualization on an existing virtual machine
 
 
-1.	Identify the VM that meets the above [pre-requisites](before-you-start).
+1.	Identify the VM that meets the above [pre-requisites](#before-you-start).
 2.	Ensure the VM is in **stopped** state.
 
     ![stopped VM](media/nested-vm/nested-vm-stopped-state.png)
