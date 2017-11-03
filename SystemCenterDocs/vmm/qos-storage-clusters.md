@@ -53,7 +53,7 @@ The following new parameters are added:
 
    With VMM 1711 you can select storage QoS policies in a template as well.
 
-   For information on how to create templates for QoS policies, see [Create a VM template](library-vm-templates.md#create-a-vm-template-based-on-an-existing-vhd-or-vm-template-in-the-library.md).
+   For information on how to create templates for QoS policies, see the procedure on [create a VM template](library-vm-templates.md).
 
 
 ## [Next steps]

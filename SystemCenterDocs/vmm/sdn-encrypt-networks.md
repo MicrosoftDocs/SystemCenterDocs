@@ -48,13 +48,15 @@ This feature is managed through the SDN Network Controller (NC). If you do not a
 
     > - In the article pointed above in step 2- you do not have to perform the actions detailed in  **Creating a Certificate Credential** and **Configuring a Virtual Network for Encryption**. You will configure those settings using VMM, in the following steps:
 
-3. [Set up an HNV provider network](sdn-controller#create-the-hnv-provider-network.md) for tenant VM connectivity, which will be managed by the NC.
-4. [Create a tenant VM Network and a subnet](sdn-controller#create-tenant-vm-networks-and-ip-pools). While creating the subnet, select **Enable Encryption** under **VM Subnets**. In the next step, paste the thumbprint of the certificate that you created.
+3. Set up an HNV provider network for tenant VM connectivity, which will be managed by the NC. [Learn more](sdn-controller#validate-the-deployment.md).
+4. Create a tenant VM Network and a subnet. While creating the subnet, select **Enable Encryption** under **VM Subnets**. [Learn more](sdn-controller#validate-the-deployment.md).
+
+    In the next step, paste the thumbprint of the certificate that you created.
 
     ![network encryption](media/encrypt-networks/enable-encryption.png)
 
     ![encryption details](media/encrypt-networks/details-encrypted-network.png)
-5.	[Create two VMs](sdn-controller#create-tenant-virtual-machines.md) on two separate physical hosts, and connect them to the above subnet.
+5.	Create two VMs on two separate physical hosts, and connect them to the above subnet. [Learn more](sdn-controller#validate-the-deployment.md).
 6.	Attach any packet sniffing application on the two network interfaces of the two hosts, where the tenant VMs are placed.
 7.	Send traffic, ping, HTTP or any other packets, between the two hosts and check the packets in the packet sniffing application. The packets should not have any discernible plaintext like parameters of an HTTP request.
 
