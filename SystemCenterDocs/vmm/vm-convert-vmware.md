@@ -14,9 +14,6 @@ ms.technology:  virtual-machine-manager
 
 # Convert a VMware VM to Hyper-V in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
-
-
 This article describes how to convert VMware VMs in the System Center - Virtual Machine Manager (VMM) fabric, to Hyper-V.
 
 
@@ -77,6 +74,9 @@ Ensure the following prerequisites are met:
 - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
 
 ## PowerShell commands
+
+Here are the sample commands:
+
 ```powershell
 
 New-SCV2V -VMHost <Host> -VMXPath <string> [-EnableVMNetworkOptimization <bool>] [-EnableMACAddressSpoofing
