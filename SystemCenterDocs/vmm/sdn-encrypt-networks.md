@@ -22,7 +22,7 @@ Using the new encrypted networks feature in VMM 1711, end-to-end encryption can 
 
 The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network.
 
-This feature is managed through the SDN Network Controller (NC). If you do not already have a Software Defined Network (SDN) infrastructure with an NC, see [deploy SDN](sdn-deploy.md) for more information.
+This feature is managed through the SDN Network Controller (NC). If you do not already have a Software Defined Network (SDN) infrastructure with an NC, see [deploy SDN](deploy-sdn.md) for more information.
 
 > ![NOTE]
 
