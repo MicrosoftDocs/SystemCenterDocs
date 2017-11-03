@@ -41,7 +41,13 @@ You can use **Device Management** to perform configuration of specific managemen
 |UNIX/Linux Servers|To modify the configuration of agent-managed UNIX and Linux servers.|-   [Agent deployment planning](plan-planning-agent-deployment.md)<br>-   [Discover and install agent on UNIX/Linux](manage-deploy-crossplat-agent-console.md)|  
   
 ## Management Packs  
-When you select **Management Packs** in the Administration workspace, you see a list of all management packs imported into your management group. When you right-click an individual management pack in the results pane, you can view its properties, delete it, or export any customizations to another management group. You can use links in the tasks pane to create, import, and download management packs.  
+Under the  **Management Packs** node in the Administration workspace, you can perform several tasks related to the management of the management packs imported into your management group.  The following table summarizes the uses of the items under Management Packs and provides links to more detailed information.
+
+|Item|Use|For more information|  
+|--------|-------|------------------------|  
+|Installed Management Packs | Lists all management packs imported into your management group.|[How to import, export, remove management packs](manage-mp-import-remove-delete.md)|
+|Tune Management Packs| Highlight the management packs and its workflows which generate a high volume of alerts.| [Data driven alert management](manage-alert-data-driven-management.md)|
+|Updates and Recommendations | Identify new technologies or workloads that are not monitored by Operations Manager or not monitored with the latest version of a management pack.| [Review MP Updates and Recommendations](manage-mp-mpassessment.md)
   
 For more information, see [Management pack overview](manage-overview-management-pack.md).  
   
