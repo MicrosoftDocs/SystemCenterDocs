@@ -20,7 +20,7 @@ You can leverage the functionality to reduce your infrastructure expense for dev
 
 System Center VMM Preview 1711 (VMM 1711) allows you to enable and disable the nested virtualization through VMM console. You can configure the nested VM as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
 
->[!NOTE]:
+>[!NOTE]
 
 > Virtualization applications other than Hyper-V are not supported in Hyper-V virtual machines, and are likely to fail. This includes any software that requires hardware virtualization extensions.
 
@@ -33,7 +33,7 @@ Ensure the following prerequisites are met:
 - A Hyper-V VM with configuration version 8.0 or greater.
 - An Intel processor with VT-x and EPT technology.
 
-## Procedure to configure a nested VM as a host
+## Procedure - configure a nested VM as a host
 
 Enable the nested virtualization on a VM and then configure it as a host.
 Administrators/delegated administrators can configure nested virtualization by using VMM. Use the following two procedures:
