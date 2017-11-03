@@ -74,7 +74,7 @@ SCVMM 1711 supports the following improvements in SQoS:
 
 - Extension of SQoS support beyond S2D - You can now assign storage QoS policies to clusters. [Learn more](qos-storage-clusters.md).
 - Support for VMM private - You can assign a storage QoS policy while creating a cloud. [Learn more](cloud-create.md).
-- Availability of storage QoS policies as templates - You can get storage QoS policies as templates. [Learn more](libary-vm-templates.md).
+- Availability of storage QoS policies as templates - You can get storage QoS policies as templates. [Learn more](library-vm-templates.md).
 
 
 ## Networking
