@@ -120,8 +120,8 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 ## Assign QoS policies to a private cloud (Technical Preview)
 System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) supports QoS policies on a private cloud.
 
-The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant admins and self-service users can consume these while deploying the VMs and services. This will enable the cloud providers to guarantee and/or limit the amount of storage performance as per the subscription opted by the tenants. [Learn more](Link to appropriate article)
- about managing QoS policies and [Storage QoS] (Link to appropriate article).
+The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant admins and self-service users can consume these while deploying the VMs and services. This will enable the cloud providers to guarantee and/or limit the amount of storage performance as per the subscription opted by the tenants.  
+
 
 The fabric admin can now offer storage QoS policies, while authoring the VMM private clouds. After which, the authorized users (admin and self-service users) with access to this cloud can consume the available QoS policies for provisioning VMs and Services on the cloud.
 
