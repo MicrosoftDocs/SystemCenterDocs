@@ -24,7 +24,7 @@ The control of encryption is at the subnet level and encryption can be enabled/d
 
 This feature is managed through the SDN Network Controller (NC). If you do not already have a Software Defined Network (SDN) infrastructure with an NC, see [deploy SDN](deploy-sdn.md) for more information.
 
-> ![NOTE]
+> [!NOTE]
 
 > This feature currently provides protection from third-party and network admins, and doesn’t offer any protection against fabric admins. Protection against fabric admins is in the pipeline and will be available soon.
 
@@ -42,9 +42,9 @@ This feature is managed through the SDN Network Controller (NC). If you do not a
 
     You can either create a self-signed certificate or get a certificate from a CA. For information on how to generate a self-signed certificate and place them in the appropriate locations of each host you will be using, [see this article ](https://docs.microsoft.com/en-us/windows-server/networking/sdn/vnet-encryption/sdn-config-vnet-encryption#bkmk_Certificate).
 
-    > ![NOTE]
+    > [!NOTE]
 
-    > - Make a note of the **Thumbprint** of the certificate that you generate.
+    >  - Make a note of the **Thumbprint** of the certificate that you generate.
 
     > - In the article pointed above in step 2- you do not have to perform the actions detailed in  **Creating a Certificate Credential** and **Configuring a Virtual Network for Encryption**. You will configure those settings using VMM, in the following steps:
 
