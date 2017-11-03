@@ -54,7 +54,9 @@ There are two methods for creating a VM template:
 1. In **Configure Hardware**, click **Next**.
 
 ::: moniker range="sc-vmm-1711"
+
     To create a storage QoS policy template, click **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**
+    
 ::: moniker-end
 
 1. In **Configure Operating System**, specify the guest operating system settings. You can use a guest OS profile or configure specific settings. To learn more, review [how to create a guest OS profile](library-profiles.md#create-a-guest-os-profile).
