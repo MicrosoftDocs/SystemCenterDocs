@@ -15,6 +15,8 @@
 ### [Deploy shielded linux virtual machine](guarded-deploy-linux-vm.md)
 ## [Deploy and manage a software defined network (SDN) infrastructure](deploy-sdn.md)
 ### [Deploy an SDN network controller](sdn-controller.md)
+### [Encrypt networks](sdn-encrypt-networks.md)
+### [Configure SDN guest clusters](sdn-guest-clusters.md)
 ### [Deploy an SDN SLB](sdn-slb.md)
 ### [Deploy an SDN RAS gateway](sdn-gateway.md)
 ### [Deploy SDN using PowerShell](sdn-powershell.md)
@@ -31,6 +33,7 @@
 ### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
 ### [Set up a disaggregated Storage Spaces Direct cluster](s2d-disaggregated.md)
 ### [Manage Storage Spaces Direct clusters](s2d-manage.md)
+### [Assign storage QoS policies for Clusters](qos-storage-clusters.md)
 # How To
 ## Plan
 ### [System requirements](system-reqs.md)
