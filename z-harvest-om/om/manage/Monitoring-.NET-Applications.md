@@ -43,5 +43,5 @@ Application monitoring in [!INCLUDE[om12short](../../om/manage/includes/om12shor
 [Working with Events by Using Application Diagnostics](../../om/manage/Working-with-Events-by-Using-Application-Diagnostics.md)  
 [User Roles for Application Performance Monitoring](../../om/manage/User-Roles-for-Application-Performance-Monitoring.md)  
 [Notes for AVIcode 5.7 Customers](../../om/manage/Notes-for-AVIcode-5.7-Customers.md)  
-[.NET Application Performance Monitoring Template](http://go.microsoft.com/fwlink/?LinkId=230647)  
+[.NET Application Performance Monitoring Template](https://go.microsoft.com/fwlink/?LinkId=230647)  
   

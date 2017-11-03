@@ -26,13 +26,13 @@ However, there are a few key considerations when restoring.
 ## Orchestrator Cryptography  
 System Center 2016 Orchestrator provides a set of services for encryption and decryption of runbook properties and published data. These services are based on Microsoft SQL Server 2008 R2 cell\-level encryption. The Orchestrator database has a database encryption key that is created during its installation. This key is generated using a random passphrase. When a full database backup is performed, the key is backed up with the database. Likewise, the key is restored when the database is restored.  
 
-However, the encryption services also depend on the MS SQL Server Service Master Key. The service master key should be backed up and stored in a secure, off\-site location. Creating this backup should be one of the first administrative actions performed on the server. The procedure for doing this is documented for [Microsoft SQL Server 2016](http://go.microsoft.com/fwlink/?LinkId=249148) \(http:\/\/go.microsoft.com\/fwlink\/?LinkId\=249148\).  
+However, the encryption services also depend on the MS SQL Server Service Master Key. The service master key should be backed up and stored in a secure, off\-site location. Creating this backup should be one of the first administrative actions performed on the server. The procedure for doing this is documented for [Microsoft SQL Server 2016](https://go.microsoft.com/fwlink/?LinkId=249148) \(http:\/\/go.microsoft.com\/fwlink\/?LinkId\=249148\).  
 
 The database key is essentially paired with the service master key on the database server targeted by the installer. If either the database key or the service master key is lost, encrypted data stored in the data is likewise lost. This would include the license key, either entered by the user or an automatically created trial license.  
 
 ### To perform a backup  
 
-1.  Back up the Microsoft SQL Server service master key using the procedure for [backing up the service master key for Microsoft SQL Server 2016](http://go.microsoft.com/fwlink/?LinkId=249148). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
+1.  Back up the Microsoft SQL Server service master key using the procedure for [backing up the service master key for Microsoft SQL Server 2016](https://go.microsoft.com/fwlink/?LinkId=249148). This is a one\-time operation. Note "password" is the password that will be used to protect the service master key in the file that is created. If the password is lost, the service master key cannot be recovered from the file.  
 
     ```  
     BACKUP SERVICE MASTER KEY TO FILE = 'path_to_file'  
@@ -44,7 +44,7 @@ The database key is essentially paired with the service master key on the databa
 ### To restore the database  
 
 1.  If you are restoring to the same database server from which the backup was taken, and the service master key has not changed, simply restore the backup.  
-2.  If you are restoring to a different database server with a different service master key, or you are restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server 2016](http://go.microsoft.com/fwlink/?LinkId=249149) \(http:\/\/go.microsoft.com\/fwlink\/?LinkId\=249149\).  
+2.  If you are restoring to a different database server with a different service master key, or you are restoring to the same database from which the backup was taken but the service master key has changed, the service master key must be restored to match the one used during the database backup. Use the procedure for [restoring the service master key for Microsoft SQL Server 2016](https://go.microsoft.com/fwlink/?LinkId=249149) \(http:\/\/go.microsoft.com\/fwlink\/?LinkId\=249149\).  
 
     ```  
     BACKUP SERVICE MASTER KEY TO FILE = 'c:\temp_backups\keys\service_master_key'   

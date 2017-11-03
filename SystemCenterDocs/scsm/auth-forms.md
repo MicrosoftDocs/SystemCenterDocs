@@ -36,7 +36,7 @@ Before customizing forms, you should be familiar with the following form concept
 
  By default, the generic form displays all the properties of the form in a simple layout that you cannot change. The generic form displays the properties of all the parent objects in the inheritance hierarchy of the form, and you cannot change that behavior. Customizations to the generic form are limited. For example, you can specify the properties that you want the generic form to display; however, the generic form cannot be used as a basis for customization. If you later define a custom form for that object, your custom form overwrites the object's generic form.
 
- For information about hiding properties in a generic form and other ways that you can customize a generic form, see the blog post [Overview of the Forms Infrastructure and the Generic Form](http://go.microsoft.com/fwlink/p/?LinkID=208536).
+ For information about hiding properties in a generic form and other ways that you can customize a generic form, see the blog post [Overview of the Forms Infrastructure and the Generic Form](https://go.microsoft.com/fwlink/p/?LinkID=208536).
 
 ### Combination classes in forms
 
@@ -122,7 +122,7 @@ Controls that are used on a form can be:
 
 When you design a form, use public design guidelines to ensure that the form is user friendly and that it adheres to common user\-interaction paradigms.
 
- For more information about general Windows design, see [Windows User Experience Interaction Guidelines](http://go.microsoft.com/fwlink/p/?LinkID=134101).
+ For more information about general Windows design, see [Windows User Experience Interaction Guidelines](https://go.microsoft.com/fwlink/p/?LinkID=134101).
 
  In addition:
 

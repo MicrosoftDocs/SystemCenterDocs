@@ -212,7 +212,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ## Next steps
 
-Now that you have installed System Center 2016 - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager 2016 Monitoring Scenarios](http://go.microsoft.com/fwlink/p/?LinkID=218372).
+Now that you have installed System Center 2016 - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager 2016 Monitoring Scenarios](https://go.microsoft.com/fwlink/p/?LinkID=218372).
 
 
 

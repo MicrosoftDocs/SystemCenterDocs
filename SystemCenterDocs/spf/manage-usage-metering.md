@@ -32,7 +32,7 @@ Here's what you need:
 
 Before you set up metering, check these resources:
 
-- [Learn about the SPF cmdlets](http://technet.microsoft.com/library/jj612525.aspx).
+- [Learn about the SPF cmdlets](https://technet.microsoft.com/library/jj612525.aspx).
 - [Read a blog post](http://blogs.technet.com/b/privatecloud/archive/2013/10/01/configuring-spf-and-windows-azure-pack-for-iaas-usage-and-metering.aspx) about usage metering.
 
 Then set up metering as follows:

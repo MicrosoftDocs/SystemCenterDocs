@@ -32,7 +32,7 @@ You can help decrease the time it takes to diagnose and resolve operating system
 7.  In the **Diagnostic Data Collection Configuration** dialog box, specify the **Files**, **WMI Queries**, and **Registry Keys** you want to collect from the computers experiencing the error, and then click **OK**. A computer will send the specified data in an error report to the management server on the next occurrence of an error in the error group.  
   
     > [!NOTE]  
-    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=71799](http://go.microsoft.com/fwlink/?LinkId=71799).  
+    > You can use variables, such as **%ProgramFiles%**, for file paths. For information about WMI, see [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=71799](https://go.microsoft.com/fwlink/?LinkId=71799).  
   
 8.  In the **Error Group Responses** dialog box, select **Custom error information**, type the URL for the custom error information, such as **http:\/\/server\/errors\/100.htm**, click **Test Link**, and then click **OK**.  
   

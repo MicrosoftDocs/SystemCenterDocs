@@ -36,7 +36,7 @@ Before you run the tool, do the following:
 
 To acquire and run the compatibility tool:
 
-1.  Download the [DPM Tape Library Compatibility Test Tool](http://go.microsoft.com/fwlink/?LinkId=203337).
+1.  Download the [DPM Tape Library Compatibility Test Tool](https://go.microsoft.com/fwlink/?LinkId=203337).
 
 2.  Extract the files. Open an elevated command prompt, and navigate to the folder to which you extracted the tool.
 

@@ -195,13 +195,13 @@ There are two phases for creating the Alert connector. The first part involves c
 
 ![PowerShell symbol](./media/import-data-om/pssymbol.png)You can use a Windows PowerShell command to complete these tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New-SCOMAlertConnector](http://go.microsoft.com/fwlink/p/?LinkID=225351).
+-   For information about how to use Windows PowerShell to create a new Operations Manager alert connector in Service Manager, see [New-SCOMAlertConnector](https://go.microsoft.com/fwlink/p/?LinkID=225351).
 
--   For information about how to use Windows PowerShell to create an alert rule to be used with an Operations Manager alert connector in Service Manager, see [New-SCSMAlertRule](http://go.microsoft.com/fwlink/p/?LinkId=225353).
+-   For information about how to use Windows PowerShell to create an alert rule to be used with an Operations Manager alert connector in Service Manager, see [New-SCSMAlertRule](https://go.microsoft.com/fwlink/p/?LinkId=225353).
 
--   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](http://go.microsoft.com/fwlink/p/?LinkID=225352).
+-   For information about how to use Windows PowerShell to create a new Operations Manager CI connector in Service Manager, see [New-SCOMConfigurationItemConnector](https://go.microsoft.com/fwlink/p/?LinkID=225352).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
+-   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and to view their status, see [Get-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkId=225320).
 
 ## Synchronize an Operations Manager connector
 
@@ -234,7 +234,7 @@ You can use the following procedures to disable or enable a System Center Operat
 
 For example, after you configure an Operations Manager connector, if you must perform maintenance operations on the Service Manager database, you can temporarily disable the connector and suspend the data import. You can resume the data import by re-enabling the connector.
 
-For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](http://go.microsoft.com/fwlink/?LinkId=188974) on Kevin Holman's System Center blog.
+For more information about how to delete a product connector from System Center Operations Manager, see [Removing an Old Product Connector](https://go.microsoft.com/fwlink/?LinkId=188974) on Kevin Holman's System Center blog.
 
 ### To disable an Operations Manager connector
 
@@ -268,11 +268,11 @@ For more information about how to delete a product connector from System Center 
 
 ![PowerShell symbol](./media/import-data-om/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225378).
+-   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkId=225378).
 
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
+-   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkId=225320).
 
--   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+-   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkID=225382).
 
 ## Edit an Operations Manager connector
 

@@ -23,7 +23,7 @@ When a management pack in Service Manager contains base definitions that other m
 
  For more information about how to modify objects that are stored in a management pack that you have already sealed, see [Management Packs: Key Concepts](mps-in-auth-tool.md).  
 
- Sealing a management pack requires using a key file that provides additional identity to a management pack, and it contains a public\/private key pair. Before you can seal a management pack, you must create this file in advance. For more information about how to create the required key file, see [How to: Create a Public/Private Key Pair](http://go.microsoft.com/fwlink/p/?LinkID=193188). After you create the key file, store it in a safe location.  
+ Sealing a management pack requires using a key file that provides additional identity to a management pack, and it contains a public\/private key pair. Before you can seal a management pack, you must create this file in advance. For more information about how to create the required key file, see [How to: Create a Public/Private Key Pair](https://go.microsoft.com/fwlink/p/?LinkID=193188). After you create the key file, store it in a safe location.  
 
  We recommend that you sign a management pack after it is sealed. Signing a management pack is important in ensuring that the file is not modified when you transfer the file between locations. The key that you use for signing a management pack is the same key that is used in the process of cryptographically signing any file. You can use the same key for both sealing and signing a management pack, because the public portion of the key is used for sealing.  
 

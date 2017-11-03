@@ -34,7 +34,7 @@ The VMM database contains information such as configurations, service templates,
 
 The VMM database can be stored on the VMM management server or on a separate server running Microsoft SQL Server. To back up the VMM database, you can use one or more of the following:
 
--   SQL Server tools. For more information, see [Create a Full Database Backup (SQL Server)](http://technet.microsoft.com/library/ms187510.aspx).
+-   SQL Server tools. For more information, see [Create a Full Database Backup (SQL Server)](https://technet.microsoft.com/library/ms187510.aspx).
 
 -   Other backup tools that are used in your environment.
 
@@ -43,7 +43,7 @@ The VMM database can be stored on the VMM management server or on a separate ser
 In addition to backing up the database, we recommend that you create a system state backup of the VMM management server so that you can re-create the server with the same security identifier (SID) in case of a catastrophic data loss. The SID is an integral part of how VMM is authorized on virtual machine hosts.
 
 > [!IMPORTANT]
-> -   There are several ways to recover the VMM database file that you create through either of the following backup procedures. One way, which requires the VMM management server to be functioning, is to use the **SCVMMRecover.exe** tool, as described in [Backup-SCVMMServer](http://technet.microsoft.com/library/jj647705.aspx) (although **SCVMMRecover.exe** is not a cmdlet). Another way, which does not require the VMM management server to be functioning, is to restore by using SQL Server tools for restoring and attaching a database file.
+> -   There are several ways to recover the VMM database file that you create through either of the following backup procedures. One way, which requires the VMM management server to be functioning, is to use the **SCVMMRecover.exe** tool, as described in [Backup-SCVMMServer](https://technet.microsoft.com/library/jj647705.aspx) (although **SCVMMRecover.exe** is not a cmdlet). Another way, which does not require the VMM management server to be functioning, is to restore by using SQL Server tools for restoring and attaching a database file.
 > -   To use the following procedures, you must be a member of the Administrator user role.
 
 ### Back up the VMM database by using the VMM console
@@ -60,7 +60,7 @@ In addition to backing up the database, we recommend that you create a system st
 
 1.  Start a Windows PowerShell session.
 
-2.  At the Windows PowerShell command prompt, run the [Get-SCVMMServer](http://technet.microsoft.com/library/jj613273.aspx) and [Backup-SCVMMServer](http://technet.microsoft.com/library/jj647705.aspx) cmdlets, using the following syntax:
+2.  At the Windows PowerShell command prompt, run the [Get-SCVMMServer](https://technet.microsoft.com/library/jj613273.aspx) and [Backup-SCVMMServer](https://technet.microsoft.com/library/jj647705.aspx) cmdlets, using the following syntax:
 
     ```
     get-scvmmserver <VMM management server name> | backup-scvmmserver -Path <BackupFileDir>
@@ -81,7 +81,7 @@ Inventory your hosts, and then back up all of the hosted virtual machines. To ge
 $vmhost = get-scvmmserver <VMM management server name> | get-scvmhost
 ```
 
-For more information, see [Get-SCVMMServer](http://technet.microsoft.com/library/jj613273.aspx) and [Get-SCVMHost](http://technet.microsoft.com/library/jj654380.aspx).
+For more information, see [Get-SCVMMServer](https://technet.microsoft.com/library/jj613273.aspx) and [Get-SCVMHost](https://technet.microsoft.com/library/jj654380.aspx).
 
 Back up all of the configuration and resource files on each VMM host by using backup software that supports the VMM VSS writer. Backup software that supports VMM can minimize the number of steps required to archive and restore virtual machines, help minimize downtime, and help ensure consistency of the data that is being archived or restored.
 
@@ -94,7 +94,7 @@ To back up the data on library servers, use System Center Data Protection Manage
 $libraryservers = get-scvmmserver <VMM management server name> | get-sclibraryserver
 ```
 
-For more information, see [Get-SCVMMServer](http://technet.microsoft.com/library/jj613273.aspx) and [Get-SCLibraryServer](http://technet.microsoft.com/library/jj647755.aspx).
+For more information, see [Get-SCVMMServer](https://technet.microsoft.com/library/jj613273.aspx) and [Get-SCLibraryServer](https://technet.microsoft.com/library/jj647755.aspx).
 
 Back up all files on library shares to a shared folder on a remote file server, including files with the following extensions:
 
@@ -137,9 +137,9 @@ For any other non-Microsoft applications, refer to the applications" specific ba
 ## Restore the VMM environment
 
 ### Restore the VMM database if necessary
-If the VMM database must be restored, restore it first, using the process that corresponds to your backup method. For example, to restore using SQL Server tools, see [Restore and Recovery Overview (SQL Server)](http://technet.microsoft.com/library/ms191253.aspx).
+If the VMM database must be restored, restore it first, using the process that corresponds to your backup method. For example, to restore using SQL Server tools, see [Restore and Recovery Overview (SQL Server)](https://technet.microsoft.com/library/ms191253.aspx).
 
-If the VMM database is the only element that you need to restore, and you want information about the **SCVMMRecover.exe** tool, see [Backup-SCVMMServer](http://technet.microsoft.com/library/jj647705.aspx).
+If the VMM database is the only element that you need to restore, and you want information about the **SCVMMRecover.exe** tool, see [Backup-SCVMMServer](https://technet.microsoft.com/library/jj647705.aspx).
 
 ### Restore the VMM server on the same computer
 If you are using the same computer for the VMM server, perform a system state restore on that computer (otherwise, skip this section). If you do this, the SID of the VMM server remains the same, and fewer steps are required to restore your VMM environment.
@@ -213,7 +213,7 @@ Depending on your VMM configuration, you might need to do some of the following 
 If the VMM database was configured by using SQL Server Always On Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with an availability group.
 
 ## Reinstall Windows Azure Pack
-If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](http://technet.microsoft.com/library/dn296435.aspx).
+If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](https://technet.microsoft.com/library/dn296435.aspx).
 
 ## Install additional VMM consoles
 If you had to replace any servers on which VMM consoles were installed, re-install the consoles on those servers.

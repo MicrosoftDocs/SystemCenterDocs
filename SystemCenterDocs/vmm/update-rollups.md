@@ -49,7 +49,7 @@ Follow these steps on a computer that has a VMM component installed and latest u
 
 ### Install update rollups from Microsoft Download Center
 
-To manually download the update rollups from the Microsoft download center, [visit](http://www.catalog.update.microsoft.com/Home.aspx) the Microsoft Download Center, search for the desired KB and manually download the update rollup packages.
+To manually download the update rollups from the Microsoft download center, [visit](https://www.catalog.update.microsoft.com/Home.aspx) the Microsoft Download Center, search for the desired KB and manually download the update rollup packages.
 
 ### Install update rollups through command prompt
 

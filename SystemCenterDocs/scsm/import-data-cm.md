@@ -24,7 +24,7 @@ You can import data from the System Center Configuration Manager site database i
 
 By using a Configuration Manager connector, you can import configuration baselines from System Center Configuration Manager and then use these configuration baselines to automatically generate incidents for noncompliant configuration items.
 
-For information about Microsoft Operations Framework (MOF) implementation of change and configuration, see [Position of the Change and Configuration SMF Within the MOF IT Service Lifecycle](http://go.microsoft.com/fwlink/p/?LinkID=115631).
+For information about Microsoft Operations Framework (MOF) implementation of change and configuration, see [Position of the Change and Configuration SMF Within the MOF IT Service Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=115631).
 
 ## Complete the data warehouse registration process
 Before you create the Configuration Manager connector, you must make sure that the Data Warehouse Registration process is complete.
@@ -40,12 +40,12 @@ Software request data will be used in support of self-service software request i
 You can configure the Configuration Manager connector to update the Service Manager database on a recurring schedule. You can also temporarily suspend the importation of data from Configuration Manager by disabling the connector. For example, you can disable the connector when maintenance is performed on the Configuration Manager site database because you know that the maintenance process temporarily creates inaccurate data. When appropriate, you can re-enable the connector and resume importing data.
 
 ## Extended hardware inventory with Configuration Manager
-In Configuration Manager, you can extend the hardware inventory by collecting an inventory of additional Windows Management Instrumentation (WMI) classes, additional WMI class attributes, registry keys, and other customizations to accommodate your organization's requirements. For more information about extending the hardware inventory in Configuration Manager, see [How to Extend Hardware Inventory](http://go.microsoft.com/fwlink/p/?LinkID=160640).
+In Configuration Manager, you can extend the hardware inventory by collecting an inventory of additional Windows Management Instrumentation (WMI) classes, additional WMI class attributes, registry keys, and other customizations to accommodate your organization's requirements. For more information about extending the hardware inventory in Configuration Manager, see [How to Extend Hardware Inventory](https://go.microsoft.com/fwlink/p/?LinkID=160640).
 
 If you have extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](admin-how-to-configure-a-configuration-manager-connector-for-an-extended-sms-def.mof-file.md).
 
 ## Importing software configuration items
-You can import software configuration items with the Configuration Manager Connector by importing  the following asset intelligence reporting classes in System Center Configuration Manager. These classes should be enabled in Configuration Manager before you configure the Configuration Manager connector in Service Manager. For more information about enabling Asset  Intelligence in Configuration Manager, see [How to Enable Asset Intelligence](http://go.microsoft.com/fwlink/p/?LinkId=262404).
+You can import software configuration items with the Configuration Manager Connector by importing  the following asset intelligence reporting classes in System Center Configuration Manager. These classes should be enabled in Configuration Manager before you configure the Configuration Manager connector in Service Manager. For more information about enabling Asset  Intelligence in Configuration Manager, see [How to Enable Asset Intelligence](https://go.microsoft.com/fwlink/p/?LinkId=262404).
 
 -   SMS_InstalledSoftware
 
@@ -64,7 +64,7 @@ If software for a particular computer does not appear in the **All Software** vi
 You can use the following procedures to create a connector to import data from Configuration Manager into System Center 2016 - Service Manager and confirm the status of the connector.
 
 > [!IMPORTANT]
-> Before you can create the Configuration Manager connector, you have to verify that System Center Configuration Manager is installed in your environment, and you have to turn on Windows User Account Control (UAC). For more information about UAC, see [User Account Control](http://go.microsoft.com/fwlink/p/?LinkID=177523).
+> Before you can create the Configuration Manager connector, you have to verify that System Center Configuration Manager is installed in your environment, and you have to turn on Windows User Account Control (UAC). For more information about UAC, see [User Account Control](https://go.microsoft.com/fwlink/p/?LinkID=177523).
 
 ### To create a Configuration Manager connector
 
@@ -106,7 +106,7 @@ You can use the following procedures to create a connector to import data from C
 
 -   View the columns in the **Connector** pane; the columns contain information about the start time, the finish time, the status, and the percentage of completion.
 
-![PowerShell symbol](./media/import-data-cm/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New-SCCMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225350).
+![PowerShell symbol](./media/import-data-cm/pssymbol.png)You can use a Windows PowerShell command to create a new Configuration Manager connector. For information about how to use Windows PowerShell to create a new Configuration Manager connector in Service Manager, see [New-SCCMConnector](https://go.microsoft.com/fwlink/p/?LinkId=225350).
 
 ## Disable and enable a Configuration Manager connector
 
@@ -137,9 +137,9 @@ You can use the following procedures to disable or enable a System Center Config
 
 ![PowerShell symbol](./media/import-data-cm/pssymbol.png)You can use Windows PowerShell commands to complete these tasks and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](http://go.microsoft.com/fwlink/?LinkId=203113).
--   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkId=225320).
--   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](http://go.microsoft.com/fwlink/p/?LinkID=225382).
+-   For information about how to use Windows PowerShell to start a Service Manager connector, see [Start-SCSMConnector](https://go.microsoft.com/fwlink/?LinkId=203113).
+-   For information about how to use Windows PowerShell to retrieve connectors that are defined in Service Manager and view their status, see [Get-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkId=225320).
+-   For information about how to use Windows PowerShell to update the properties of a Service Manager connector, see [Update-SCSMConnector](https://go.microsoft.com/fwlink/p/?LinkID=225382).
 
 ## Synchronize a Configuration Manager connector
 
@@ -650,10 +650,10 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataCollection']/DataCollectionName$">Sample_SMS_Computers_COLLECTION</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataCollection']/DataTables$">Sample_SMS_Computer</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataCollection']/Settings$"><![CDATA[
-<TypeName xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">Microsoft.Windows.Computer</TypeName>
-<MPName xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">Microsoft.Windows.Library</MPName>
-<MPVersion xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">7.0.5229.0</MPVersion>
-<MPToken xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">31bf3856ad364e35</MPToken>
+<TypeName xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">Microsoft.Windows.Computer</TypeName>
+<MPName xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">Microsoft.Windows.Library</MPName>
+<MPVersion xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">7.0.5229.0</MPVersion>
+<MPToken xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">31bf3856ad364e35</MPToken>
 ]]>
 </Property>
       </Object>
@@ -662,9 +662,9 @@ In this example, the Configuration Manager Connector Configuration management pa
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataCollection']/DataCollectionName$">Sample_SMS_BIOS_CONSUMER_COLLECTION</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataCollection']/DataTables$">Sample_SMS_BIOS_CONSUMER_VIEW</Property>
         <Property Path="$Context/Property[Type='LFX!System.LinkingFramework.DataCollection']/Settings$"><![CDATA[
-<TypeName xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">HostedCustomClass</TypeName>
-<MPName xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">SampleBIOSMP</MPName>
-<MPVersion xmlns="http://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">1.0.0.0</MPVersion>
+<TypeName xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">HostedCustomClass</TypeName>
+<MPName xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">SampleBIOSMP</MPName>
+<MPVersion xmlns="https://schemas.microsoft.com/sdm/servicedesk/linking/2005/09">1.0.0.0</MPVersion>
         ]]>
         </Property>
       </Object>

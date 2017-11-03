@@ -20,12 +20,12 @@ When you choose to participate in the CEIP, you configure clients with Group Pol
 > [!IMPORTANT]  
 > The CEIP reports do not contain contact information about you or your organization, such as names or an address.  
   
-The CEIP reports forwarded from your organization to Microsoft are combined with CEIP reports from other organizations and individual customers to help Microsoft solve issues and improve the Microsoft products and features that customers use most often. For more information about the CEIP, see [the CEIP page](http://go.microsoft.com/fwlink/p/?linkid=75040).  
+The CEIP reports forwarded from your organization to Microsoft are combined with CEIP reports from other organizations and individual customers to help Microsoft solve issues and improve the Microsoft products and features that customers use most often. For more information about the CEIP, see [the CEIP page](https://go.microsoft.com/fwlink/p/?linkid=75040).  
   
 Use the following procedure to configure CEIP settings. The management server must have access to the Internet to participate in the program.  
   
 > [!IMPORTANT]  
-> CEIP is a component of the Client Monitoring feature of [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. Client Monitoring must be enabled on at least one management server and managed computers to participate in the CEIP. For information about enabling the Client Monitoring feature of [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)], see [Client Monitoring Using Agentless Exception Monitoring](http://go.microsoft.com/fwlink/?LinkID=217096). After a management server has been configured for client monitoring, all agents that are participating in CEIP should be configured via Group Policy to send their CEIP data to that management server.  
+> CEIP is a component of the Client Monitoring feature of [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)]. Client Monitoring must be enabled on at least one management server and managed computers to participate in the CEIP. For information about enabling the Client Monitoring feature of [!INCLUDE[om12short](../../om/manage/includes/om12short_md.md)], see [Client Monitoring Using Agentless Exception Monitoring](https://go.microsoft.com/fwlink/?LinkID=217096). After a management server has been configured for client monitoring, all agents that are participating in CEIP should be configured via Group Policy to send their CEIP data to that management server.  
   
 ### To configure the CEIP settings for Operations Manager  
   

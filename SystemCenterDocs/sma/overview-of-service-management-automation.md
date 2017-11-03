@@ -65,7 +65,7 @@ The following diagram illustrates each of the Service Management Automation feat
 -   The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
 
 > [!IMPORTANT]
-> The [Service Management Automation Developer's Guide](http://go.microsoft.com/fwlink/?LinkId=398741) is now available. This is a set of REST API reference documentation for the Service Management Automation web service.
+> The [Service Management Automation Developer's Guide](https://go.microsoft.com/fwlink/?LinkId=398741) is now available. This is a set of REST API reference documentation for the Service Management Automation web service.
 
 ## Next steps
 

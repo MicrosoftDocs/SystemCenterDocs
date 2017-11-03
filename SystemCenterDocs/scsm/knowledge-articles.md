@@ -49,7 +49,7 @@ You can use the following procedure to create a knowledge article in Service Man
 
     3.  In the **Category** list, select an applicable category. For example, select **Software**.
 
-6.  Expand the **External Content** area. In the **URL** box, type the web address if the information source of the article is known. For example, type **http://support.microsoft.com/kb/935791**.
+6.  Expand the **External Content** area. In the **URL** box, type the web address if the information source of the article is known. For example, type **https://support.microsoft.com/kb/935791**.
 
 7.  Expand **Internal Content**. In the box, type or paste information about how the user can apply information from the **External Content** box to fix a problem that is specific to your organization. For example, type **Visit the URL to read about how to download the latest service pack for Windows 10**.
 

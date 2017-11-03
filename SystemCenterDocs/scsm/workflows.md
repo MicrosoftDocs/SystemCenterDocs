@@ -53,10 +53,10 @@ You can use the following procedure to create and configure a workflow rule that
 
 ![PowerShell symbol](./media/workflows/pssymbol.png)You can use Windows PowerShell commands to complete these and other related tasks, as follows:
 
--   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225361).
--   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
--   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](http://go.microsoft.com/fwlink/p/?LinkID=225392).
--   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](http://go.microsoft.com/fwlink/p/?LinkID=225372).
+-   For information about how to use Windows PowerShell to create a new workflow in Service Manager, see [New-SCSMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225361).
+-   For information about how to use Windows PowerShell to retrieve configuration and status information for  Service Manager workflows, see [Get-SCSMWorkflowStatus](https://go.microsoft.com/fwlink/p/?LinkID=225347).
+-   For information about how to use Windows PowerShell to update workflow properties, see [Update-SCSMWorkflow cmdlet](https://go.microsoft.com/fwlink/p/?LinkID=225392).
+-   For information about how to use Windows PowerShell to remove a workflow from Service Manager, see [Remove-SCSMWorkflow](https://go.microsoft.com/fwlink/p/?LinkID=225372).
 
 ## View workflow success or failure in Service Manager
 
@@ -72,7 +72,7 @@ Use the following procedure to view the success or failure instances of the work
     2.  Click **View related object** to view the form that was used when the workflow ran.
     The status of each workflow is displayed in the **Status** column.
 
-![PowerShell symbol](./media/workflows/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](http://go.microsoft.com/fwlink/p/?LinkID=225347).
+![PowerShell symbol](./media/workflows/pssymbol.png)You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to retrieve the status of workflows in Service Manager, see [Get-SCSMWorkflowStatus](https://go.microsoft.com/fwlink/p/?LinkID=225347).
 
 
 ## Next steps

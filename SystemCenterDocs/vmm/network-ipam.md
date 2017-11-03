@@ -28,7 +28,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 - Make sure you have an IPAM server. [Learn more](https://technet.microsoft.com/library/hh831353.aspx?f=255&MSPPError=-2147217396). The server can be running Windows Server 2012 R2 or Windows Server 2016.
 - Create or identify a domain account and set it to never expire. On the IPAM server add the account to these groups:
-	- **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](http://technet.microsoft.com/library/jj878348.aspx).
+	- **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](https://technet.microsoft.com/library/jj878348.aspx).
 	- **Remote Management Users**: A built-in group that provides access to WMI resources through management protocols, such as WS-Management through the Windows Remote Management service.
 - Check that the time is synchronized on the IPAM and VMM servers. This depends on settings for the Windows Time Service. If you can't synchronize them you'll need to update permissions on the IPAM software so that VMM can query the current time setting on the server. To do this, on the IPAM server run **mimgmt.msc** to open the WMI Control (Local) snap-in. Right-click **WMI Control (Local)** > **Properties** > **Security**. Navigate to **Root\CIMV2**, click the Security button Security and select the account you configured. For **Remote Enable**, select **Allow**.
 - Verify the FQDN of the IPAM server to use as a connection string.
