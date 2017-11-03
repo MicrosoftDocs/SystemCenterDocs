@@ -81,6 +81,7 @@
 #### [Using My Workspace](manage-consoles-my-workspace.md)
 #### [Finding data and objects in the consoles](manage-console-finding-data.md)
 #### [Using advanced search](manage-console-using-adv-search.md)
+#### [Using the Administration workspace](manage-using-the-admin-workspace.md)
 ### Using reports
 #### [Operations Manager report library](manage-reports-installed-during-setup.md)
 #### [How to create reports](manage-reports-create-reports.md)
@@ -92,6 +93,15 @@
 ### Using views and dashboards
 #### [View types](manage-console-view-types.md)
 #### [Dashboards overview](manage-dashboards-overview.md)
+#### [Web console dashboards]
+##### [Overview](overview-html5-webconsole.md)
+##### [Create dashboard with Alert widget](create-web-dashboard-alerts.md)
+##### [Create dashboard with State widget](create-web-dashboard-state.md)
+##### [Create dashboard with Perf widget](create-web-dashboard-perf.md)]
+##### [Create dashboard with Topology widget](create-web-dashboard-topology.md)
+##### [Create dashboard with Tile widget](create-web-dashboard-tile.md)
+##### [Create dashboard with Custom widget](create-web-dashboard-custom.md)
+##### [Manage dashboard and widget config(manage-web-console-dashboard-config.md)
 #### [Standard views](manage-console-standard-views.md)
 #### [Creating and scoping views](manage-console-scope-views.md)
 #### [Personalize a view](manage-console-personalize-views.md)
