@@ -20,7 +20,7 @@ This article describes about the new features supported in System Center Virtual
 
 ### Management of ARM-based and region-specific Azure subscriptions
 
-Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure region.
+Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
 
 VMM 1711 supports management of ARM-based VMs that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions).
 
