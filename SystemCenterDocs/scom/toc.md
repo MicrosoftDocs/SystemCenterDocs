@@ -165,6 +165,10 @@
 #### [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md)
 #### [Viewing network devices and data](manage-monitor-networkdevice-viewing-data.md)
 #### [Reports for network monitoring](manage-monitor-networkdevice-reports.md)
+### Monitor Linux log files
+#### [Overview of Linux log file monitoring](manage-linux-logfiles.md)
+#### [Sample configuration file](manage-sample-configuration-file.md)
+#### [Sample management pack](manage-sample-management-pack.md)
 ### [Monitoring service level objectives](manage-monitor-sla-overview.md)
 #### [Create a service level dashboard](manage-monitor-sla-create-dashboard.md)
 #### [Running a service level tracking report](manage-monitor-sla-reports.md)
