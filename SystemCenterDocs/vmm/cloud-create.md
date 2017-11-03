@@ -74,6 +74,13 @@ You can create a private cloud from a host group, or from a VMware resource pool
 
 13. In **Capability Profiles**, select each virtual machine capability profile that you want to add, and then click **Next**. Select the capability profiles that match the type of hypervisor platforms that are running in the selected host groups. The built-in capability profiles represent the minimum and maximum values that can be configured for a virtual machine for each supported hypervisor platform.
 14. In **Replication Groups**, select the replication groups for the private cloud, and click **Next**.
+
+::: moniker range="sc-vmm-1711"
+
+15. In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
+
+::: moniker-end
+
 15. In **Summary** page, confirm the settings, and then click **Finish**.
 
 View status in **Jobs** and ensure the job is complete.
@@ -107,6 +114,41 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 View status in **Jobs** and ensure the job is complete.
 
 To verify that the private cloud was created, check **VMs and Services** > **Clouds**. You can also verify in **Library** > **Cloud Libraries**, to view the read-only library shares.
+
+::: moniker range="sc-vmm-1711"
+
+## Assign QoS policies to a private cloud (Technical Preview)
+System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) supports QoS policies on a private cloud.
+
+The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant admins and self-service users can consume these while deploying the VMs and services. This will enable the cloud providers to guarantee and/or limit the amount of storage performance as per the subscription opted by the tenants.  
+
+
+The fabric admin can now offer storage QoS policies, while authoring the VMM private clouds. After which, the authorized users (admin and self-service users) with access to this cloud can consume the available QoS policies for provisioning VMs and Services on the cloud.
+
+> [!NOTE]
+
+> A cloud with at least one QoS policy is offered, will not allow the deployment of disks without a policy. This helps in preventing the cloud consumers to pick infinite resources with a null policy. Also, the change in IOPS by self-service users will not be allowed after this release, to avoid the same scenario of selecting unauthorized performance.
+
+**Storage QoS Policies** option in the **Create cloud** wizard helps the fabric admin to select the list of policies, which should be made available for the cloud consumers.
+
+
+follow these steps:
+
+1. Follow the [create a private cloud from a host group](#create-a-cloud-from-a-host-group) procedure until step 14.
+2. In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
+3. proceed to step 15, complete the remaining steps.
+4. Review the summary and click **Finish**.
+
+> [!NOTE]
+
+> This list contains only those policies that are available in scope of all the clusters selected in the Resources section of the cloud wizard. This helps the self-service user to choose between the available plans, even after the VM is placed .
+
+ 
+**On Upgrade**
+1.	After the upgrade, the existing clouds will not have any QoS policy in their offering. Admin needs to update the cloud with the policy offerings.
+2.	The existing VMs on the cloud, which have disks with a QoS policy already assigned, will go to inconsistent state. Their policy stays intact, but the VMM UI displays it as blank. Admins can either remove those policies, or offer these   in the affected clouds.
+
+::: moniker-end
 
 ## Assign private clouds to user roles
 

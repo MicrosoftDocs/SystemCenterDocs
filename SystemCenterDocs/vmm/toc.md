@@ -1,6 +1,7 @@
 # Overview
 ## [What is VMM?](overview.md)
-## [What's new in VMM 2016](whats-new.md)
+
+## [What's new in VMM 1711](Whats-new-vmm-1711.md)
 # Get Started
 ## [Read the release notes](release-notes.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
@@ -8,10 +9,14 @@
 ### [Manage a VMM cloud](cloud-manage.md)
 ## [Deploy a guarded host fabric](deploy-guarded-host-fabric.md)
 ### [Deploy guarded hosts](guarded-deploy-host.md)
+### [Deploy fall back HGS](guarded-fallback-hgs.md)
 ### [Deploy a shielded VHDX and VM template](guarded-deploy-template.md)
 ### [Deploy shielded virtual machines](guarded-deploy-vm.md)
+### [Deploy shielded linux virtual machine](guarded-deploy-linux-vm.md)
 ## [Deploy and manage a software defined network (SDN) infrastructure](deploy-sdn.md)
 ### [Deploy an SDN network controller](sdn-controller.md)
+### [Encrypt networks](sdn-encrypt-networks.md)
+### [Configure SDN guest clusters](sdn-guest-clusters.md)
 ### [Deploy an SDN SLB](sdn-slb.md)
 ### [Deploy an SDN RAS gateway](sdn-gateway.md)
 ### [Deploy SDN using PowerShell](sdn-powershell.md)
@@ -28,6 +33,7 @@
 ### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
 ### [Set up a disaggregated Storage Spaces Direct cluster](s2d-disaggregated.md)
 ### [Manage Storage Spaces Direct clusters](s2d-manage.md)
+### [Assign storage QoS policies for Clusters](qos-storage-clusters.md)
 # How To
 ## Plan
 ### [System requirements](system-reqs.md)
@@ -41,6 +47,7 @@
 ### [Upgrade to VMM 2016](upgrade.md)
 ### [Install VMM](install.md)
 ### [Install the VMM console](install-console.md)
+### [Enable enhanced console session](enhanced-console-session.md)
 ### [Deploy VMM for high availability](high-availability.md)
 #### [Deploy a highly available VMM management server](ha-server.md)
 #### [Deploy a highly available SQL Server database for VMM](ha-sql.md)
@@ -108,7 +115,8 @@
 ### [Clone existing virtual machines](vm-clone.md)
 ### [Deploy virtual machines with rapid provisioning using SAN copy](vm-san-copy.md)
 ### [Deploy virtual machines from a VM template](vm-template.md)
-### [Deploy Linux virtual machines](vm-linux.md)
+### [Deploy Linux shielded virtual machines](vm-linux.md)
+### [Deploy nested VM](vm-nested-virtualization.md)
 ### [Convert VMware VMs to Hyper-V](vm-convert-vmware.md)
 ### [Manage virtual machine settings](vm-settings.md)
 ### [Manage dynamic and power optimization for virtual machines](vm-optimization.md)

@@ -5,15 +5,13 @@ description: This article provides guidance for adding VM templates to the libra
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/08/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 # Add VM templates to the VMM library
-
->Applies To: System Center 2016 - Virtual Machine Manager
 
 Read this article to learn about VM templates and how to manage them in the System Center - Virtual Machine Manager (VMM) library.
 
@@ -54,6 +52,13 @@ There are two methods for creating a VM template:
 1. In  the Create VM Template Wizard > select **Source** > **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
 1. In **Identity**, type in a template name and description. Note that the template will destroy the source VM and data on it could be lost. Clone it if it's important to you.
 1. In **Configure Hardware**, click **Next**.
+
+::: moniker range="sc-vmm-1711"
+
+    To create a storage QoS policy template, click **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**
+    
+::: moniker-end
+
 1. In **Configure Operating System**, specify the guest operating system settings. You can use a guest OS profile or configure specific settings. To learn more, review [how to create a guest OS profile](library-profiles.md#create-a-guest-os-profile).
 1. In **Select Library Server**, click the library server for the VM you're using for the template and in **Select Path** specify the share/folder.
 1. In **Summary**, review the settings and click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
