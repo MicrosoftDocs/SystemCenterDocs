@@ -44,9 +44,9 @@ This feature is managed through the SDN Network Controller (NC). If you do not a
 
     > [!NOTE]
 
-     - Make a note of the "Thumbprint" of the certificate that you generate.
+    > - Make a note of the "Thumbprint" of the certificate that you generate.
 
-     - In the article pointed above in step 2- you do not have to perform the actions detailed in "Creating a Certificate Credential" and "Configuring a Virtual Network for Encryption". You will configure those settings using VMM, in the following steps:
+    > - In the article pointed above in step 2- you do not have to perform the actions detailed in "Creating a Certificate Credential" and "Configuring a Virtual Network for Encryption". You will configure those settings using VMM, in the following steps:
 
 3. Set up an HNV provider network for tenant VM connectivity, which will be managed by the NC. [Learn more](sdn-controller.md#validate-the-deployment).
 4. Create a tenant VM Network and a subnet. While creating the subnet, select **Enable Encryption** under **VM Subnets**. [Learn more](sdn-controller.md#validate-the-deployment).
