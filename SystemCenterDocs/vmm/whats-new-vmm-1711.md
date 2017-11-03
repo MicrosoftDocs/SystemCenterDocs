@@ -12,12 +12,9 @@ ms.technology:  virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# What's new in System Center Preview Virtual Machine Manager 1711 (Technical preview content - page under construction)
+# What's new in System Center VMM 1711 (Technical preview content - page under construction)
 
-
->Applies To: System Center 1711 - Virtual Machine Manager
-
-This article describes about the new features in System Center Virtual Machine Manager 1711 CVMM 1711).
+This article describes about the new features in System Center Virtual Machine Manager 1711 (VMM 1711).
 
 ## Compute
 
