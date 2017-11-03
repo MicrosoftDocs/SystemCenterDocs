@@ -1,5 +1,5 @@
 ---
-ms.assetid:625286e3-1d38-4ea8-8088-a53fffd7c721
+ms.assetid: 625286e3-1d38-4ea8-8088-a53fffd7c721
 title: Enable enhanced console session in VMM 1711
 description: This article explains about how to enable enhanced console session in System Center VMM preview 1711.
 author: JYOTHIRMAISURI
