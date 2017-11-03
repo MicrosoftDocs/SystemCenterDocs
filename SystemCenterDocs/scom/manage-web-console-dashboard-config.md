@@ -19,6 +19,13 @@ ms.topic: article
 
 To delete dashboard, click **Delete dashboard** option available from the top banner of the dashboard. ![Delete dashboard option on page](./media/manage-web-console-dashboard-config/dashboard-banner-01.png)<br>  You are prompted to confirm you wish to proceed with deleting the dashboard.  This notification appears at the bottom of the page.  Click **Yes** to continue or **No** to cancel the operation.<br><br> ![Delete dashboard notification](./media/manage-web-console-dashboard-config/dashboard-delete-notify.png)
 
+## Add dashboards or views to My workspace
+
+1. Right-click on a dashboard or view in the monitoring tree of the Web console and click **Add to My Workspace** from the context menu.
+2. On the **Add to My Workspace** pane on the right side of the page, specify which folder in **My Workspace** this dashboard or view should be added.  You can also choose to create a new folder by clicking on **New Folder** to better organize your workspace.
+3. After specifying the location where to create the new folder, click **OK** and your dashboard or view will be added to your **My Workspace** view.  
+3. 
+
 ## Modify widget configuration
 
 To edit the widget, perform the following steps.
