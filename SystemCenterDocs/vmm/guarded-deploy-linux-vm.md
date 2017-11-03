@@ -31,9 +31,9 @@ With Windows Server 1709, Hyper-V introduces the support for provisioning Linux 
 3.	Generate shielding data file (PDK)
 4.	Create a Linux shielded VM using the VM template and the PDK.
 
->![NOTE]
+    >[!NOTE]
 
-> WAP users can provision Linux shielded VMs in the same manner as Windows shielded VMs.
+    > WAP users can provision Linux shielded VMs in the same manner as Windows shielded VMs.
 
 ### Create a template disk
 You must first create a template and then sign it. Use the following procedures:
@@ -74,7 +74,7 @@ Use the following steps:
 3.	In **Configure Hardware** Configuration:
     - Under **Firmware**, select **Enable secure boot Template** and select **OpenSourceShieldedVM** from Secure boot template drop-down menu.
 
-        >[!note]
+        > [!NOTE]
 
         > This boot template is a new addition to RS3 hosts. If there are no RS3 hosts already added to VMM, this option wouldn’t show up in the Secure boot templates drop-down.
 
@@ -83,8 +83,9 @@ Use the following steps:
         ![hardware configuration Linux shielded VM](media/linux-shield/vm-create-linux-template-1.png)
 4.	In **Configure Operating System**:
 
-        - Select the Guest OS profile as **Create new Linux Operating System customization settings**.
-        - Select the OS present on the template disk created earlier (Ubuntu Linux).
+    - Select the Guest OS profile as **Create new Linux Operating System customization settings**.
+
+    - Select the OS present on the template disk created earlier (Ubuntu Linux).
 
         ![configure operating system VM](media/linux-shield/vm-create-linux-template-configure-os.png)
 

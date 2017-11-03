@@ -53,7 +53,7 @@ Make sure you have deployed and configured the Host Guardian Service before proc
  - **AttestationFallbackServerUrl**
  - **KeyProtectionFallbackServerUrl**
 
- **Syntax**
+ Here is the sample syntax.
 
  ```powershell
 
