@@ -12,10 +12,10 @@
          ">= sc-dpm-2016", 
          ">= sc-orch-2016",
          ">= sc-om-2016",
-         "> sc-sm-2016",
-         "> sc-sma-2016",
-         "> sc-spf-2016",
-         "> sc-vmm-2016"
+         ">= sc-sm-2016",
+         ">= sc-sma-2016",
+         ">= sc-spf-2016",
+         ">= sc-vmm-2016"
         ],
       "open_to_public_contributors": false,
       "type_mapping": {

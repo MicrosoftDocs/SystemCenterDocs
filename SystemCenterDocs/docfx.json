@@ -248,19 +248,19 @@
       },
       "scsm": {
         "dest": "scsm",
-        "moniker_range": "> sc-sm-2016"
+        "moniker_range": ">= sc-sm-2016"
       },
       "sma": {
         "dest": "sma",
-        "moniker_range": "> sc-sma-2016"
+        "moniker_range": ">= sc-sma-2016"
       },
       "spf": {
         "dest": "spf",
-        "moniker_range": "> sc-spf-2016"
+        "moniker_range": ">= sc-spf-2016"
       },
       "vmm": {
         "dest": "vmm",
-        "moniker_range": "> sc-vmm-2016"
+        "moniker_range": ">= sc-vmm-2016"
       }
     }
   }
