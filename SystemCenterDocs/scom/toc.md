@@ -94,7 +94,7 @@
 ### Using views and dashboards
 #### [View types](manage-console-view-types.md)
 #### [Dashboards overview](manage-dashboards-overview.md)
-#### [Web console dashboards]
+#### Web console dashboards
 ##### [Overview](overview-html5-webconsole.md)
 ##### [Create dashboard with Alert widget](create-web-dashboard-alerts.md)
 ##### [Create dashboard with State widget](create-web-dashboard-state.md)
