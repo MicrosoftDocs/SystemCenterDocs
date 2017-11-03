@@ -36,7 +36,7 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 
         > [!NOTE]
 
-        > Cluster should have a **ProbePort** parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
+        > Cluster should have a "ProbePort* parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
 
         > Note the reserved IP address you are using for this cluster. This IP will be required later while creating a VIP using the VIP template.
 
@@ -62,3 +62,4 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
     “$VipTemplateName” – name of the VIP template created in step 3, above.
     “$VipName” – any friendly name you want to refer to the VIP by.
     ```
+## Next steps
