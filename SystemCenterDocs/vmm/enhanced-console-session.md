@@ -35,13 +35,13 @@ Ensure the following prerequisites:
 1.	Right-click the host in **VMs & Services** and navigate to **Enhanced Session** option.
 2.	Select **Allow enhanced session mode** and click **OK**.
 
-    ![allow enhanced session](media\enhanced-console\enhanced-console-enable.png)
+    ![allow enhanced session](media/enhanced-console/enhanced-console-enable.png)
 
 3.	In VMM console, navigate to the VM on this host.
 4.	Right-click the VM and click **Connect via Console**.
 5.	Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the Enhanced Session window.
 
-    ![enhanced console session](media\enhanced-console\enhanced-console-enabled-status.png)
+    ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status.png)
 
     > [!NOTE]
 
