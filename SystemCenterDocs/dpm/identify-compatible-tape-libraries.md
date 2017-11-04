@@ -14,8 +14,6 @@ ms.author: markgal
 
 # Identify compatible tape libraries
 
->Applies To: System Center 2016 - Data Protection Manager
-
 Use the TechNet wiki to find the latest list of [compatible tape libraries](http://social.technet.microsoft.com/wiki/contents/articles/17105.compatible-tape-libraries-for-system-center-2012-dpm.aspx) for System Center Data Protection Manager (DPM).
 
 ## Virtual tape library support

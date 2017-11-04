@@ -14,8 +14,6 @@ ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
 
 # Preparing your environment for System Center 2016 Data Protection Manager
 
->Applies To: System Center 2016 - Data Protection Manager
-
 Keep these requirements and considerations in mind when you deploy System Center - Data Protection Manager (DPM).
 
 

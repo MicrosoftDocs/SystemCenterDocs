@@ -14,8 +14,6 @@ ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
 
 # Back up Exchange with DPM
 
->Applies To: System Center 2016 - Data Protection Manager
-
 System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013. You can back up the following:
 
 -   Exchange mailbox databases under a database availability group (DAG)

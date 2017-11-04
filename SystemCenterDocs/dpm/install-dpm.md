@@ -14,8 +14,6 @@ ms.author: markgal
 
 # Get DPM installed
 
->Applies To: System Center 2016 - Data Protection Manager
-
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
 1.  Read the [Setup prerequisites](#setup-prerequisites)

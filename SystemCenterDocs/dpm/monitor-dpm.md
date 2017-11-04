@@ -14,8 +14,6 @@ ms.author: markgal
 
 # Monitor DPM
 
->Applies To: System Center 2016 - Data Protection Manager
-
 You can monitor a single System Center Data Protection Manager (DPM) server from the DPM Administrator console, multiple DPM servers from the Central Console, or monitor DPM activity with Operations Manager.
 
 ## Monitor with the DPM console
