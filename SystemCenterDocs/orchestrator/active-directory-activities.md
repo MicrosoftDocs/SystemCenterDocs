@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Active Directory Activities
 
-Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in this integration pack.
 
 ## Activity properties

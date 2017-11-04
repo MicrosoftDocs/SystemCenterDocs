@@ -17,8 +17,6 @@ manager: carmonm
 
 # Overview of System Center 2016 - Orchestrator
 
->Applies To: System Center 2016 - Orchestrator
-
 As an IT administrator, you probably perform a lot of tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process. 
 With System Center 2016 - Orchestrator you tie disparate tasks and procedures together using a graphical user interface Runbook Designer to create reliable, flexible, and efficient end-to-end solutions in your IT environment.
 Using Orchestrator, you can:

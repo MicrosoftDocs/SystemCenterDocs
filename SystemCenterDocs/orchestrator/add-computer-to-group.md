@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Add Computer To Group
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Add Computer To Group activity in a runbook to add a computer to a group in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

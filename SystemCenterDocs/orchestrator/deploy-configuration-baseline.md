@@ -18,8 +18,6 @@ robots: noindex
 
 # Deploy Configuration Baseline activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The objective of this activity is to assign a configuration baseline to
 a collection. It requires a pre-existing baseline as well as a
 collection to which the baseline will be assigned.

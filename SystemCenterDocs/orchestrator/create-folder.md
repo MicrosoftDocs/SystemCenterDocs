@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Folder
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Folder activity is used in a runbook to create a folder on a FTP server.
 
 This activity publishes all of the data from the required properties into published data.

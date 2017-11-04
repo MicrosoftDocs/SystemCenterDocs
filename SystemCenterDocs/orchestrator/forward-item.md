@@ -17,8 +17,6 @@ manager: carmonm
 
 # Forward Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The Forward Item activity is used in a runbook to forward an existing email message or appointment.
 
 The following tables list the required properties, optional properties, and published data for this activity.

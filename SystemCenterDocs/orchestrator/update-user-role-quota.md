@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update User Role Quota
 
-Applies To: System Center 2016 - Orchestrator
-
 Updates the quotas for a certain user role and cloud.
 
 ## Update User Role Quota Required Properties

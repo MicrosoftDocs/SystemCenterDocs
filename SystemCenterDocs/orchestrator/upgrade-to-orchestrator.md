@@ -14,8 +14,6 @@ keywords:
 
 # Upgrade to Orchestrator 2016
 
->Applies To: System Center 2016 - Orchestrator
-
 You can upgrade your installation of System Center 2012 R2 - Orchestrator to System Center 2016 Orchestrator by following the steps described below. Before doing so, make sure your environment is upgraded to the supported versions as described in [System Requirements for System Center 2016](system-requirements.md).
 
 >[!Note]

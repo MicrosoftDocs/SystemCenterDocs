@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create List Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Create List Item** activity is used in a runbook to create a new item in a SharePoint list.
 
 The following tables list the required properties and Published Data for this activity. Additional required and optional properties are generated, which are based on the SharePoint list that is retrieved when you define the activity.

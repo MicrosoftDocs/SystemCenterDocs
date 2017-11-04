@@ -17,8 +17,6 @@ manager: carmonm
 
 # Enable Mailbox
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object. This activity creates additional mailbox attributes on the user object in Active Directory. When the user logs on to the mailbox or receives email messages, the system creates a mailbox object in the Exchange database.
 
 For an online cloud-based environment, you can use this activity with the Archive parameter to enable an archive for an existing mailbox.

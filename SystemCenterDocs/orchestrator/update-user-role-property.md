@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update User Role Property
 
-Applies To: System Center 2016 - Orchestrator
-
 Updates User Role Property
 
 ## Update User Role Property Required Properties

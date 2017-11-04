@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Computer
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Get Computer activity in a runbook to get the properties of a computer in Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Windows Azure Activities
 
-Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all runbook activities that are available in the Windows Azure integration pack.
 
 ## Activity properties

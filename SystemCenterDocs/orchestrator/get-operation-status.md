@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Operation Status
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Get Operation Status** activity is used to get the status of the specified operation. After calling another activity with 'Wait for Completion' set to false, you can use the Get Operation Status activity to determine whether the operation requested by that activity has succeeded, failed, or is still in progress. Get Operation Status is part of the Azure Deployments category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Alert
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Alert activity is used in a runbook to retrieve alerts from Operations Manager that match the criteria that you specify. You can use the Get Alert activity to retrieve an alert and replicate the information to a ticketing system for troubleshooting.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

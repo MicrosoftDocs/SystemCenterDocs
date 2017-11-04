@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Set VM Networks Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Set VM Networks activity is used in a runbook to replace the first virtual machine network switch with one that is specified. This allows the runbook to change the network switch that a virtual machine is using.
 
 The following tables list the required and optional properties and published data for this activity.

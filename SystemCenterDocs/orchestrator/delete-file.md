@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete File
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete File activity is used in a runbook to delete a file on a FTP server.
 
 This activity publishes all of the data from the required properties into published data.

@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get DPM Server Capacity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get DPM Server Capacity activity is used in a runbook that queries a Data Protection Manager server for its available free storage capacity. This information helps you determine the placement of backup data.
 
 The Data Protection Manager server's storage pool returns capacity information in raw gigabytes (GB). For example, the value returned might be "120716263424". This data value requires additional calculation using standard activities such as Run .Net Script to perform real-world capacity checks. Typically, Data Protection Manager needs two to three times the storage space used by the primary data.

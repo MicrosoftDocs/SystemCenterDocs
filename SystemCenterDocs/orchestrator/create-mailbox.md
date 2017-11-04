@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Mailbox
 
-Applies To: System Center 2016 - Orchestrator
-
 For an on-premises Exchange environment, the Create Mailbox activity creates a new mailbox and a new Active Directory user associated with the new mailbox.
 
 For the Office 365 online environment, the Create Mailbox activity can create a new user with a mailbox in the cloud-based email service.

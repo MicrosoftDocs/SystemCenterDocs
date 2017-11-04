@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Move Request Statistics
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Get Move Request Statistics activity to retrieve statistical information about existing move requests for an on-premise environment.
 
 The following tables list the optional properties, filters, and published data for this activity.

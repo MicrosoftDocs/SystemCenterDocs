@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Container
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete Container** activity marks the specified container for deletion. The container and any blobs contained within it are later deleted during garbage collection. It is part of the **Azure Storage** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

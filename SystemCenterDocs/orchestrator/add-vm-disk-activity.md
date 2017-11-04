@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Add VM Disk Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Add VM Disk activity is used in a runbook to add a virtual disk to a virtual machine controlled by the VMware vSphere server. This can be used to increase the amount of disk space allocated to an existing virtual machine.
 
 For System Center 2016: If a SCSI controller is not associated with the SCSI bus number specified in the activity, choosing a SCSI controller type will add a new controller and attach the new disk to it.

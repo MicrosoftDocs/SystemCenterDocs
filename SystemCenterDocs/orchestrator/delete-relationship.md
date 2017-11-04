@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Relationship
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete Relationship activity is used to remove an existing relationship between two entities.
 
 The following published data element is specific to Delete Relationship. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

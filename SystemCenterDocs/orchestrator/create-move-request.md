@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Move Request
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Create Move Request activity to create a new mailbox move request and to begin the process of an asynchronous mailbox or personal archive move for an on-premises environment.
 
 The following tables list the required properties, optional properties, and published data for this activity.

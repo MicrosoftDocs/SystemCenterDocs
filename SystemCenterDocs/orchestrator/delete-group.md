@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Group
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Delete Group activity in a runbook to delete a group in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

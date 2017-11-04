@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get VM Properties Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get VM Properties activity is used in a runbook retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory. This, for example, enables the runbook to retrieve the information of the virtual machine and populate it into a CMDB.
 
 The following tables list the required and optional properties and published data for this activity.

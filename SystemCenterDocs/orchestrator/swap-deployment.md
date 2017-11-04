@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Swap Deployment
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Swap Deployment** activity initiates a virtual IP swap between the staging and production deployment environments for a service. It is part of the **Azure Deployments** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # System Center 2016 Data Protection Manager Activities
 
-Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Data Protection Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity Properties

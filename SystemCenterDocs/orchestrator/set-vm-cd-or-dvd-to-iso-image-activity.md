@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Set VM CD or DVD to ISO Image Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Set VM CD/DVD to ISO Image activity is used in a runbook to set the CD/DVD drive of a virtual machine to an ISO image. This allows the runbook to attach a CD/DVD image of a software application for automatic provisioning.
 
 The following tables list the required and optional properties and published data for this activity.

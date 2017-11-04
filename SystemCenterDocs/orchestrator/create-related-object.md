@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Related Object
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Related Object activity is used to create a new Service Manager object that is related to other existing objects either by membership or by a hosted relationship.
 
 The following published data elements are specific to Create Related Object. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see Service Manager Published Data.

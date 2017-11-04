@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create User Role
 
-Applies To: System Center 2016 - Orchestrator
-
 This activity creates a user role within a designated cloud.
 
 ## Create User Role Activity Required Properties

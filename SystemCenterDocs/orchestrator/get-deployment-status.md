@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Deployment Status activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Deployment Status activity is used to retrieve the status of an
 application, program, task sequence, or software update deployment
 assigned to a computer or collection to determine if a software

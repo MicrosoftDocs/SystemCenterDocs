@@ -17,8 +17,6 @@ manager: carmonm
 
 # System Center Integration Pack for System Center 2016 Virtual Machine Manager
 
-Applies To: System Center 2016 - Orchestrator
-
 The System Center Integration Pack for System Center 2016 Virtual Machine Manager is an add-in for System Center 2016 - Orchestrator that enables you to automate the following activities:
 
 -   Manage the self-service virtual machine library

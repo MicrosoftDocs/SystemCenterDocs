@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Alerts Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Alerts activity retrieves an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer and replicates it to a trouble ticketing system.
 
 The following tables list the required properties, optional properties, and published data for this activity.

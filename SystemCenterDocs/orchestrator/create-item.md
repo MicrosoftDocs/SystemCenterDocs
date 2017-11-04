@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Item activity is used in a runbook to create new appointment, contact group, and Email Message or task items.
 
 The following tables list the required properties, optional properties, and published data for Create Item activities. The required and optional properties are presented according to item type: appointment, contact group, task, and email message.

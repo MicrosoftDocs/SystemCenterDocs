@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Item activity is used in a runbook to retrieve details of existing appointment, contact group, email message, and task items that satisfy a set of filter criteria.
 
 The following tables list the required properties, filters, and published data for use of the Get Item activity. The tables for filters and published data are presented according to item type: appointment, contact group, and task.
