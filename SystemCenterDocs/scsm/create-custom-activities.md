@@ -17,8 +17,6 @@ ms.assetid: 50891279-b22e-4d84-baf7-1488f6e9585b
 
 # Guidelines for creating custom activities in the Service Manager Authoring Tool
 
-> Applies To: System Center 2016 - Service Manager
-
 Service Manager automates a variety of information technology (IT) processes. For the Incident Management process, for example, Service Manager includes various automated steps, such as automated notifications to users when incidents are created or resolved and automatic routing of incidents to various queues, based on categorization. This automation is implemented by using workflows that are defined for the various solutions, and it uses Windows Workflow Foundation (WF) capabilities to describe, execute, and track the automated operations.
 
 Customers and partners can extend the included automation by defining new workflows and adding them into a process. Workflows can be set to occur on a fixed schedule or on a specified condition occurring in the database, for example, when an incident is created or when it changes to a specified state, such as **Active** or **Resolved**.
