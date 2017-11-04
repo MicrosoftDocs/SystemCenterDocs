@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Protect Data Source
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Protect Data Source activity is used to protect a workload by adding a data source to an existing protection group. A protection group is a named entity that holds the backup policy for a workload.
 
 >[!IMPORTANT]

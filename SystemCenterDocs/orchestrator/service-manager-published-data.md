@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Service Manager published data
 
-> Applies To: System Center 2016 - Orchestrator
-
 The following tables list the published data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
 
 ## Active Directory Group Class published data

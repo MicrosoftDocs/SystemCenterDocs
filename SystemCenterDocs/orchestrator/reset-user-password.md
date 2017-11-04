@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Reset User Password
 
-> Applies To: System Center 2016 - Orchestrator
-
 You can use the Reset User Password activity in a runbook to reset the user password in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

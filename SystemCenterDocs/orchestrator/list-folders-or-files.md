@@ -17,8 +17,6 @@ robots: noindex
 ---
 # List Folders or Files
 
-> Applies To: System Center 2016 - Orchestrator
-
 The List Folders/Files activity is used in a runbook to list the folders and files in the specified folder path.
 
 This activity publishes all of the data from the required and optional properties into published data.

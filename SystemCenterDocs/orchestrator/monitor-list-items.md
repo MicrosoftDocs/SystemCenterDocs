@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Monitor List Items
 
-> Applies To: System Center 2016 - Orchestrator
-
 The **Monitor List Items** activity is used in a runbook to monitor a Microsoft SharePoint list for new and/or modified items.
 
 The following tables list the filters, required properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint list that is retrieved when you define the activity.

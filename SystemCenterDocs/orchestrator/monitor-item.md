@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Monitor Item
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Monitor Item activity is used in a runbook to monitor new or modified items.
 
 The following tables list the required properties, filters, and published data for this activity. The tables for filters and published data are presented according to the supported item types: appointment, contact group, email message, and task.

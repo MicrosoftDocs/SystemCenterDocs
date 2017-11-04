@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Regenerate Storage Account Key
 
-> Applies To: System Center 2016 - Orchestrator
-
 The **Regenerate Storage Account Key** activity regenerates the primary or secondary access key for the specified storage account. It is part of the **Azure Storage** category activity.
 
 >[!NOTE]

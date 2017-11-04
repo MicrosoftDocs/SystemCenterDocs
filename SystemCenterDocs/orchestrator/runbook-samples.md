@@ -16,8 +16,6 @@ manager: cfreeman
 
 # Runbook Samples
 
-> Applies To: System Center 2016 - Orchestrator
-
 This topic provides instructions about how to build and test sample runbooks by using the standard activities found in System Center 2016 - Orchestrator.  
 
 ## Samples  

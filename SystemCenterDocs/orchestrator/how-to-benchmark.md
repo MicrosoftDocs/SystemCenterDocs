@@ -17,8 +17,6 @@ manager: carmonm
 
 # How to create a benchmark runbook
 
-> Applies To: System Center 2016 - Orchestrator
-
 You will need to create a performance benchmark in order to optimize the performance for your Orchestrator runbook. As part of creating the benchmark you should analyze the activities in your runbook.
 
 Orchestrator runbook activities can be thought of as having two distinct types of code:  platform code and domain code. The term *domain code* is used to identify code within a runbook activity that is typically not associated with the Orchestrator platform itself \(with notable exceptions, such as **Invoke Runbook**, **Junction**, and others\). For example, the **Invoke Web Service** standard activity would contain Orchestrator platform code \(the "plumbing" of the activity\) as well as domain code unique to invoking a SOAP\-based web service. The platform code will be very similar for most activities, since it is built on a common framework. However, there will potentially be great variation in domain code for different activities.  

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Move Computer
 
-> Applies To: System Center 2016 - Orchestrator
-
 You can use the Move Computer activity in a runbook to move a computer under a new parent path in the Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

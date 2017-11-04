@@ -16,8 +16,6 @@ manager: cfreeman
 ---
 # Common Activity Properties
 
-> Applies To: System Center 2016 - Orchestrator
-
 All activities have properties. The Properties dialog box for each activity has multiple tabs that provide access to the settings for the activity. The particular set of tabs varies between activities, but there are several common property types.  
 
 ## Details  

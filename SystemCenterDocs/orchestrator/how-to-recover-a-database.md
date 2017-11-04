@@ -17,8 +17,6 @@ manager: carmonm
 
 # How to Recover a Database
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Orchestrator database can be backed up and restored using most standard MS SQL Server database backup\/restore mechanisms. This includes Microsoft SQL Server Backup, DPM SQL Server backup, and others. Orchestrator provides a VSS Writer that will discover the database server that is associated with the Management Server and back up the database when the Management Server is backed up.  
 
 However, there are a few key considerations when restoring.  

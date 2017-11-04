@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Modify VM Disk activity in System Center 2016
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Modify VM Disk activity is used in a runbook to attach a virtual disk to a different virtual device node within a virtual machine. When targeting version vCenter 5.0 or greater, it can also be used to extend the disk size of the selected disk. The following tables list the required and optional properties and published data for this activity.
 
 ### Modify VM Disk activity required properties

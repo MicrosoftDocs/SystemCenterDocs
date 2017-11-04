@@ -16,8 +16,6 @@ manager: carmonm
 ---
 # Overview of the Orchestration console
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Orchestration console is a single webpage made up of multiple panes and workspaces. This topic describes those panes and workspaces and includes procedures for accessing the console and managing runbooks.  
 
 ## Navigation pane  

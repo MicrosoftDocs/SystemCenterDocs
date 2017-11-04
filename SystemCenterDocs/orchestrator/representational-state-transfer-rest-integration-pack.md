@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Representational State Transfer (REST) Integration Pack guide for Orchestrator in System Center 2016
 
-> Applies To: System Center 2016 - Orchestrator
-
 The integration pack for Representational State Transfer (REST) is an add-on for Orchestrator in System Center 2016 that enables you to create activities within runbooks that make requests to REST web services to get data or perform functions.
 
 Microsoft is committed to protecting your privacy. For more information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
