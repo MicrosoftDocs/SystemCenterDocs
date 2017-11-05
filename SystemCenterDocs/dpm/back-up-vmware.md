@@ -10,6 +10,7 @@ title:  Back up VMware Virtual Machines
 ms.technology:  data-protection-manager
 ms.assetid:
 ms.author: markgal
+monikerRange: 'sc-dpm-1711'
 ---
 
 # Use DPM 1711 to back up VMware virtual machines
