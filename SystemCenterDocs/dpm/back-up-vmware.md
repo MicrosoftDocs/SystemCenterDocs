@@ -59,12 +59,12 @@ Note the following details about credentials:
 
 1. In the DPM Administrator Console, click **Management**.
 
-    ![steps to open ](./media/open-vmware-mgmt.png)
+    ![steps to open ](./media/back-up-vmware/open-vmware-mgmt.png)
 
 2. In the list of assets to manage, click **Production Servers**.
 3. In the tool ribbon, click **Manage VMware Credentials**.
     The **Manage Credentials** dialog opens. Using the **Manage Credentials** dialog, you can add, update, or delete credentials.
-   ![open Manage Credentials dialog](./media/manage-credentials-dialog.png)
+    ![open Manage Credentials dialog](./media/back-up-vmware/manage-credentials-dialog.png)
 
    See the following sections for detailed information on adding, updating, or deleting credentials.
 
@@ -73,7 +73,7 @@ Note the following details about credentials:
 You add a credential to the DPM server so you can pair it up with credential on the VMware server. Remember, the credential on the DPM server must be identical to the credential on the VMware server. To add a credential, in the **Manage Credentials** dialog:
 
 1. Click **Add** to open the Add Credential dialog.
-  ![open Add Credentials dialog](./media/add-credentials-dialog.png)
+   ![open Add Credentials dialog](./media/back-up-vmware/add-credentials-dialog.png)
 
 2. Type your information in the **Name**, **Description**, **User name**, and **Password** fields. Once you've added text in the required fields, the **Add** button becomes active.
    - **Name** is what appears in the **Credential** column of the Manage Credentials dialog. **Name** is a required field and is the identifier for the credentials. This field cannot be edited later. If you want to change the name of a credential, you must add a new credential.
@@ -91,13 +91,13 @@ Once you have matching credentials in DPM, update the VMware server credentials 
 2. In the list of assets to manage, click **Production Servers**.
 3. In the list of computers, select the VMware server whose credentials need to be updated.
    In the example image, *demovcenter1.Contoso.com* is the VMware server with broken credentials.
-   ![open Add Credentials dialog](./media/broken-credentials.png)
+   ![open Add Credentials dialog](./media/back-up-vmware/broken-credentials.png)
 4. On the Administrator console tool ribbon, click **Change Settings**.
     The Change Settings dialog opens. It displays all credentials on the DPM server. In the example image, *demovcenter_002* is the DPM credential to pair with demovcenter1.Contoso.com.
-   ![open Add Credentials dialog](./media/change-settings-dialog.png)
+   ![open Add Credentials dialog](./media/back-up-vmware/change-settings-dialog.png)
 5. From the list, select the credential on the DPM server to match the VMware credential and click **Update**.
     In the image, notice demovcenter_002 authenticates a production server, and demovcenter1.Contoso.com is now protected.
-   ![open Add Credentials dialog](./media/update-server-credential.png)
+   ![open Add Credentials dialog](./media/back-up-vmware/update-server-credential.png)
 
 #### Delete VMware server credentials
 
@@ -115,34 +115,34 @@ DPM communicates with the VMware server securely over an HTTPS channel. To creat
 
 To verify there is a secure communication channel between DPM and vCenter, open a browser on the DPM server and access the VMware server. If you are using Chrome, and you do not have a valid certificate you see the strikethrough in the URL, like this example:
 
-![no secure communication channel ](./media/no-secure-communication-chrome.png)
+![no secure communication channel ](./media/back-up-vmware/no-secure-communication-chrome.png)
 
 Or if you are using Internet Explorer, and you don't have a valid certificate, you see this message when you access the URL:
 
-![no secure communication channel ](./media/no-secure-communication-ie.png)
+![no secure communication channel ](./media/back-up-vmware/no-secure-communication-ie.png)
 
 To fix the error, install a valid certificate on the DPM server and the VMware server. In the previous images, the DPM server has a valid certificate, but the certificate is not in the trusted root certification authority store. To fix this situation, add the certificate to the VMware server.
 
 1. On the Certificate dialog, on the **Certification Path** tab, click **View Certificate**.
 
-   ![open View Certificate dialog ](./media/certification-path-add-certificate.png)
+   ![open View Certificate dialog ](./media/back-up-vmware/certification-path-add-certificate.png)
 
 2. In the new Certificate dialog, click the **Details** tab, and then click **Copy to File** to open the Certificate Export Wizard.
 
-   ![open View Certificate dialog ](./media/add-new-certificate.png)
+   ![open View Certificate dialog ](./media/back-up-vmware/add-new-certificate.png)
 
 3. In the **Certificate Export Wizard**, click **Next**, and on the **Export File Format** screen, select **DER encoded binary X.509 (.CER)**, then click **Next**.
 4. On the **File to Export** screen, type a name for your certificate and click **Next**.
 5. Click **Finish** to complete the **Certificate Export Wizard**.
 6. Locate the exported certificate. Right-click the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
-   ![click install Certificate ](./media/install-certificate.png)
+   ![click install Certificate ](./media/back-up-vmware/install-certificate.png)
 7. In the **Certificate Import wizard**, click **Local Machine** and then click **Next**.
 8. To find the location where you want to place the certificateOn the **Certificate Store** screen, click **Place all certificates in the following store** and click **Browse**.
 9. In the **Select Certificate Store** dialog, select **Trusted Root Authority Certificate** and click **OK**.
-  ![click install Certificate ](./media/trusted-authority-store.png)
+  ![click install Certificate ](./media/back-up-vmware/trusted-authority-store.png)
 10. Click **Next** and then click **Finish** to import the certificate successfully.
 11. Once you have added the certificate, sign into your vCenter server to verify the connection is secure.
-  ![click install Certificate ](./media/secure-communication-established.png)
+  ![click install Certificate ](./media/back-up-vmware/secure-communication-established.png)
 
 ### Add a new user account in VMware server
 
@@ -169,7 +169,7 @@ The recommended steps for assigning these privileges:
 1. In the vSphere Web Client, from the **Navigator** menu, click **Administration** > **Roles**.
 2. From the **Roles provider** drop-down menu, select the vCenter Server to which the role applies.
 3. On the **Roles** pane, click '+' to open the **Create Role** dialog and create a role.
-    ![create a new role ](./media/create-new-role-dialog.png)
+    ![create a new role ](./media/back-up-vmware/create-new-role-dialog.png)
 4. Name the role, **BackupAdminRole**.
 5. Select the privileges (identified in the preceding bulleted list) for the role and click **OK**.
 
@@ -198,9 +198,9 @@ When you create a user, that user must be in the same domain as the objects you 
 ### Add a VMware server to DPM
 
 1. In the DPM Administrator Console, click **Management** > **Production Servers** > **Add** to open the Production Server Addition Wizard.
-    ![open the Production Server Addition wizard ](./media/add-production-server.png)
+    ![open the Production Server Addition wizard ](./media/back-up-vmware/add-production-server.png)
 2. On the **Select Production Server type screen, select **VMware Servers**, and click **Next**.
-    ![select VMware server ](./media/add-production-server-choose-vmware.png)
+    ![select VMware server ](./media/back-up-vmware/add-production-server-choose-vmware.png)
 3. On the **Select Computers** screen, provide the following information:
    - **Server Name/IP Address**: enter the VMware server fully qualified domain name (fQDN) or IP address.
    - **SSL Port**: select the SSL port number used to communicate with the VMware server. DPM uses Https to communicate with VMware servers over a secured connection. To successfully communicate with VMware servers, DPM requires the SSL port number configured for that VMware server. If the VMware servers are not explicitly configured with different SSL ports, continue with default port, 443.
@@ -234,7 +234,7 @@ DPM can protect individual VMs, as well as cascading levels of folders that cont
 
 In large VMware deployments, a single vCenter server can manage thousands of VMs. DPM supports scale-out protection of VMware server clusters. The new scale-out feature removes the limit of a one-to-one relationship between a VMware cluster and a DPM server. You can add a VM to a protection group on any of the recognized DPM servers. Scale-out protection is only available for VMs hosted on servers running Windows Server 2012. Multiple DPM servers can be used to protect VMs managed by a single vCenter server. However, only one DPM server can protect a VM or folder at any given time. VMs and folders that are already protected by one DPM server cannot be selected by another DPM server. To deploy scale-out protection, there must be a minimum of two DPM servers. In the following example graphic, D1 and D2 are visible to all virtual machines hosted on nodes N1, N2, N3, and N4. When protection groups on D1 or D2 are created, any virtual machine can be added.
 
-![conceptual diagram of a scale-out farm ](./media/scale-out-protection-diagram.png)
+![conceptual diagram of a scale-out farm ](./media/back-up-vmware/scale-out-protection-diagram.png)
 
 ### Backing up virtual machines to disk or cloud
 
@@ -248,10 +248,10 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
 1. In the Administrator Console, click **Protection**.
 2. On the tool ribbon, click **New** to open the **Create New Protection Group** wizard.
 3. In the **Select Protection Group Type** screen, select **Servers** and click **Next**.
-    ![create new protection group ](./media/create-new-protection-group-wizard.png)
+    ![create new protection group ](./media/back-up-vmware/create-new-protection-group-wizard.png)
 4. In the **Select Group Members** screen, expand the **Available members** folders and select the folders to protect and click **Next**.
     Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server cannot be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
-    ![select members for the new protection group ](./media/select-group-members.png)
+    ![select members for the new protection group ](./media/back-up-vmware/select-group-members.png)
 5. On the **Select Data Protection Method** screen, type a **Protection group name**, and then select the protection method.
     For protection method, you can choose: short-term protection to a hard drive, or online protection to the cloud. Tape protection is not supported for VMware VMs. Once you've selected your protection method, click **Next**.
 6.	On the **Specify Short-Term Goals** screen, for the **Retention Range** specify the number of days your data is kept on disk.
@@ -278,17 +278,17 @@ This section explains how to use DPM to restore VMware VM [recovery points](http
 
 1. In the DPM Administrator Console, click **Recovery** view.
 2. Using the Browse pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
-    ![open recovery points panel](./media/recovery-points-panel.png)
+    ![open recovery points panel](./media/back-up-vmware/recovery-points-panel.png)
 3. In the **Recovery points for** field, use the calendar and drop-down menus to select a date when a recovery point was taken. Calendar dates in bold have available recovery points.
 4. On the tool ribbon, click **Recover** to open the **Recovery Wizard**.
-    ![open Recovery wizard ](./media/recovery-wizard.png)
+    ![open Recovery wizard ](./media/back-up-vmware/recovery-wizard.png)
 5. Click **Next** to advance to the **Specify Recovery Options** screen.
 6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, click **Modify**. To leave network throttling disabled, click **Next**. No other options on this wizard screen are available for VMware VMs.
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
 7. On the **Select Recovery Type** screen, choose whether to recover to the original instance, or to a new location, and click **Next**.
   - If you choose **Recover to original instance**, you don't need to make any more choices in the wizard. The data for the original instance is used.
   - If you choose **Recover as virtual machine on any host**, then on the **Specify Destination** screen, provide the information for **ESXi Host**, **Resource Pool**, **Folder**, and **Path**.
-     ![open Recovery wizard ](./media/select-recovery-type.png)
+     ![open Recovery wizard ](./media/back-up-vmware/select-recovery-type.png)
 8. On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
 The **Recovery status** screen shows the progression of the recovery operation.
 
@@ -298,19 +298,19 @@ You can restore individual files from a protected VM recovery point. This featur
 
 1. In the DPM Administrator Console, click **Recovery** view.
 2. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
-    ![open Recovery points ](./media/view-available-recovery-points.png)
+    ![open Recovery points ](./media/back-up-vmware/view-available-recovery-points.png)
 3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
     Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, make sure you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** drop-down menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
 4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
     Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** does not search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You cannot recover items from multiple folders in the same recovery job.
 5. When you have selected the item(s) for recovery, in the Administrator Console tool ribbon, click **Recover** to open the **Recovery Wizard**.
     In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
-    ![review Recovery points ](./media/review-recovery-point-selection.png)
+    ![review Recovery points ](./media/back-up-vmware/review-recovery-point-selection.png)
 6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, click **Modify**. To leave network throttling disabled, click **Next**. No other options on this wizard screen are available for VMware VMs.
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
 7. On the **Select Recovery Type** screen, click **Next**. You can only recover your file(s) or folder(s) to a network folder.
 8. On the **Specify Destination** screen, click **Browse** to find a network location for your files or folders. DPM creates a folder where all recovered items are copied. The folder name has the prefix, DPM_day-month-year. When you select a location for the recovered files or folder, the details for that location (Destination, Destination path, and available space) are provided.
-    ![specify destination for files or folders ](./media/specify-destination.png)
+    ![specify destination for files or folders ](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** are not enabled.
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation.
