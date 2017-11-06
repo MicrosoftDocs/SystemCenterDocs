@@ -137,3 +137,4 @@
 ### [Set up monitoring and reporting with Operations Manager](monitors-ops-manager.md)
 ## Integrate with Azure
 ### [Add an Azure subscription in VMM](azure-subscription.md)
+### [Manage ARM-based and region-specific Azure subscriptions](vms-manage-azure-ad-and-region-specific.md)
