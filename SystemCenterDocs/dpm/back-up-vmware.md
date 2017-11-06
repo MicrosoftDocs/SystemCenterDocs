@@ -198,7 +198,9 @@ When you create a user, that user must be in the same domain as the objects you 
 ### Add a VMware server to DPM
 
 1. In the DPM Administrator Console, click **Management** > **Production Servers** > **Add** to open the Production Server Addition Wizard.
+
     ![open the Production Server Addition wizard ](./media/back-up-vmware/add-production-server.png)
+
 2. On the **Select Production Server type screen, select **VMware Servers**, and click **Next**.
     ![select VMware server ](./media/back-up-vmware/add-production-server-choose-vmware.png)
 3. On the **Select Computers** screen, provide the following information:
@@ -206,6 +208,7 @@ When you create a user, that user must be in the same domain as the objects you 
    - **SSL Port**: select the SSL port number used to communicate with the VMware server. DPM uses Https to communicate with VMware servers over a secured connection. To successfully communicate with VMware servers, DPM requires the SSL port number configured for that VMware server. If the VMware servers are not explicitly configured with different SSL ports, continue with default port, 443.
    - **Specify Credential**: Select the credential needed to authenticate with this VMware server. If the required credential has not yet been added to DPM, choose **Add New Credential**. Then, provide the Name, Description, User name, and Password for the credential.
     Once you have filled out the fields, click **Add** to add the server to the list of VMware Servers. If you would like to add more VMware servers to the list, repeat this step. If you are finished adding servers to the list, click **Next**.
+
 4. On the **Summary** screen, select the server you want to add, and click **Add**.
     After adding the VMware servers to DPM, see [Configure Backup](back-up-vmware.md#configure-backup) for information about the available methods of protection.
 
@@ -214,9 +217,13 @@ When you create a user, that user must be in the same domain as the objects you 
 If your organization does not want to use secure communication protocol (HTTPS), you can create a registry key to disable it. To create this registry key:
 
 1. Copy and paste the following text into a .txt file.
-    `Windows Registry Editor Version 5.00`
-    `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
-    `"IgnoreCertificateValidation"=dword:00000001`
+
+  `Windows Registry Editor Version 5.00`
+
+  `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
+
+  `"IgnoreCertificateValidation"=dword:00000001`
+
 2. Save the file with the name, **DisableSecureAuthentication.reg**, to your DPM server.
 3. Double-click the file to activate the registry entry.
 
