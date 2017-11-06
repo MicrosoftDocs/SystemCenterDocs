@@ -5,7 +5,7 @@ description: This article provides an overview of the Linux log file monitoring 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/3/2017
+ms.date: 11/6/2017
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1711'
@@ -17,7 +17,7 @@ ms.topic: article
 System Center Preview 1711 - Operations Manager now has enhanced log file monitoring capabilities for Linux servers by using the newest version of the agent that uses Fluentd. This update provides the following improvements over previous log file monitoring:
 
 - Wild card characters in log file name and path.
-- New match patterns for customizable log search like simple match, exclusive match, correlated match repeated correlation and exclusive correlation.
+- New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated correlation and exclusive correlation.
 - Support for generic Fluentd plugins published by the fluentd community.
 
 
@@ -25,7 +25,7 @@ System Center Preview 1711 - Operations Manager now has enhanced log file monito
 The basic operation of log file monitoring in Linux includes the following steps:
 
 1. Record is written to a log on a Linux agent.
-2. Fluentd collects the record and creates an event.
+2. Fluentd collects the record and creates an event on pattern match.
 3. Event is sent to OMED service on management server.
 3. Rules and monitors in a custom management pack collect events and create alerts in Operations Manager.
 
@@ -33,23 +33,26 @@ The basic operation of log file monitoring in Linux includes the following steps
 ## Overview of configuration
 The following steps are required to enable log file monitoring on Linux agents.  Each of these steps is described in detail in the following sections.
 
-1. Install the latest version of the Linux agent on each Linux computer to be monitored.
+1. Import the latest Linux management pack.
+2. Install the latest version of the Linux agent on each Linux computer to be monitored.
 2. Create Fluentd configuration file to collect logs.
 3. Copy configuration file to Linux agents.
-3. Install the [management pack].
-4. Create rules and monitors using the management pack to collect events from the log and create alerts.
+3. Create rules and monitors using the management pack to collect events from the log and create alerts.
 
 
 ## Install the latest version of the Linux agent
-The latest version of the Linux agent supports Fluentd which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Linux agent for Operations Manager].
+The latest version of the Linux agent supports Fluentd which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md).
 
+## Configure Linux Log File monitoring
+The Linux Management pack bundle has the latest Operations Manager agent (with Fluentd). To configure Linux log file monitoring, users should perform the following:
 
-## Install and configure [management pack]
-The [management pack] provides the modules required to collect Fluentd events into SCOM.  In addition to the management pack itself, you must enable the OMED service on each management server in the resource pool managing the Linux agents.
+1. Import the latest Linux Management pack using the standard process for installing a management pack.
+2. Install the new Linux agent on the Linux servers, this can be done through discovery wizard or manually.
+3. Enable the OMED service on each management server in the resource pool managing the Linux agents. 
 
-Install the [management pack] using the standard process for installing a management pack.
+The OMED service collects events from Fluentd and converts them to Operations Manager events. Users should import a custom management pack which can generate alerts based on the events received from the Linux servers.
 
-The OMED service collects events from Fluentd and converts them to Operations Manager events that can be collected by the [management pack].  You must enable this service using the following process.
+You enable the OMED service using the following process.
 
 1. From the Operations Console, go to **Monitoring** > **Operations Manager** > **Management Server** > **Management Servers State**.
 2. Select the management server in the **Management Servers** state pane.
@@ -77,9 +80,9 @@ A complete sample configuration file for log monitoring is available at [Sample 
 
 
 #### Source
-The **Source** directive defines the source of the data you're collecting.  This is where you define the details of your log file. Fluentd picks up each record written to the source and submits an event for it into Fluentd's routing engine.  The event includes the **tag** that you specify here to identify the event.
+The **Source** directive defines the source of the data you're collecting.  This is where you define the details of your log file. Fluentd picks up each record written to the source and submits an event for it into Fluentd's routing engine.  You need to specify a tag here in this directive. The tag is a string that is used as the directions for Fluentd’s internal routing engine to correlate different directives.
 
-This example shows syslog records collected and tagged for processing by SCOM.
+This example shows syslog records collected and tagged for processing by Operations Manager.
 
     <source>
 
@@ -102,7 +105,7 @@ This example shows syslog records collected and tagged for processing by SCOM.
 #### Match
 The **match** directive defines how to process events collected from the source with matching tags.  Only events with a **tag** matching the pattern will be sent to the output destination.  When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns.  The **type** parameter that specifies which plugin to use for these events.  
 
-This example processes events with tags matching **scom.log.**** and  **scom.alert** (** matches zero or more tag parts). It specifies the **out_scom** plugin which allows the events to be collected by the SCOM management pack.
+This example processes events with tags matching **scom.log.**** and  **scom.alert** (** matches zero or more tag parts). It specifies the **out_scom** plugin which allows the events to be collected by the Operations Manager management pack.
 
     <match scom.log.** scom.event>
 
@@ -148,7 +151,7 @@ There are six filter plugins for log file monitoring described here.  Use one or
 
 #### Simple match: filter_scom_simple_match
 
-Takes up to 20 input patterns.  Sends an event to SCOM whenever any pattern is matched. 
+Takes up to 20 input patterns.  Sends an event to Operations Manager whenever any pattern is matched. 
 
     <filter tag>
         type filter_scom_simple_match
@@ -165,7 +168,7 @@ Takes up to 20 input patterns.  Sends an event to SCOM whenever any pattern is m
 
 
 #### Exclusive match: filter_scom_excl_match
-Takes two input patterns. Sends an event to SCOM when a single record matches pattern 1 but does not match pattern 2.
+Takes two input patterns. Sends an event to Operations Manager when a single record matches pattern 1 but does not match pattern 2.
 
     <filter tag>
         type filter_scom_excl_match
@@ -175,7 +178,7 @@ Takes two input patterns. Sends an event to SCOM when a single record matches pa
     </filter>
 
 #### Repeated correlation: filter_scom_repeated_cor
-Takes three inputs: a patterns, a time interval, and a number of occurrences. When a match is found for the first pattern, a timer starts.  An event is sent to SCOM if the pattern is matched the specified number of times before the timer ends.
+Takes three inputs: a patterns, a time interval, and a number of occurrences. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if the pattern is matched the specified number of times before the timer ends.
 
     <filter tag>
         type filter_scom_repeated_cor
@@ -187,7 +190,7 @@ Takes three inputs: a patterns, a time interval, and a number of occurrences. Wh
 
 
 #### Correlated match: filter_scom_cor_match
-Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to SCOM if there is a match for the second pattern before the timer ends.
+Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if there is a match for the second pattern before the timer ends.
 
     <filter tag>
         type filter_scom_cor_match
@@ -199,7 +202,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
 
 
 #### Exclusive correlation: filter_scom_excl_correlation
-Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to SCOM if there is no match for the second pattern before the timer ends.
+Takes three inputs: two patterns and a time interval. When a match is found for the first pattern, a timer starts.  An event is sent to Operations Manager if there is no match for the second pattern before the timer ends.
 
     <filter tag>
         type filter_scom_excl_correlation
@@ -209,8 +212,8 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
         time_interval <interval in seconds>
     </filter>
 
-#### SCOM converter: filter_scom_converter
-Sends an event to SCOM for all records it receives. Sends the specified event id and description as part of the event. 
+#### Operations Manager converter: filter_scom_converter
+Sends an event to Operations Manager for all records it receives. Sends the specified event id and description as part of the event. 
 
     <filter tag>
         type filter_scom_converter
@@ -224,7 +227,9 @@ The fluentd configuration file must be copied to **/etc/opt/microsoft/omsagent/s
 
 
 ## Create rules and monitors
-The [management pack] only provides the modules required to collect events from FluentD, but it doesn't include any rules or monitors to actually collect those events or create alerts.  You need to create your own management pack with custom rules and monitors that use the module **Microsoft.Linux.OMED.EventDataSource** which collects the events from Fluentd.  A sample management pack is available at [sample-management-pack].
+The Linux MP does not provide modules to collect events from FluentD. The Linux MP is bundled with the Linux agent. It is the fluentd module in the Linux agent and the OMED service on the management and gateway server that provides the capabilities for enhanced log file monitoring.
+
+You need to create your own management pack with custom rules and monitors that use the module **Microsoft.Linux.OMED.EventDataSource** which collects the events from Fluentd.  
 
 The following table lists the parameters of **Microsoft.Linux.OMED.EventDataSource**.
 
