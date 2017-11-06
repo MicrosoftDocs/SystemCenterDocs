@@ -4,7 +4,7 @@
 ## [What's new in VMM 1711](Whats-new-vmm-1711.md)
 # Get Started
 ## [Read the release notes](release-notes.md)
-## [Read the release notes](release-notes-1711.md)
+## [Read the release notes for VMM 1711](release-notes-1711.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
