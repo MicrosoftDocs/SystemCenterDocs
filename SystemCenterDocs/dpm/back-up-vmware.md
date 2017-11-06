@@ -197,7 +197,7 @@ When you create a user, that user must be in the same domain as the objects you 
 
 ### Add a VMware server to DPM
 
-1. In the DPM Administrator Console, click **Management** > **Production Servers** > **Add** to open the Production Server Addition Wizard.
+1. In the DPM Administrator Console, click **Management** > **Production Servers** > **Add** to open the Production Server Addition Wizard. </b>
     ![open the Production Server Addition wizard ](./media/back-up-vmware/add-production-server.png)
 2. On the **Select Production Server type screen, select **VMware Servers**, and click **Next**.
     ![select VMware server ](./media/back-up-vmware/add-production-server-choose-vmware.png)
@@ -213,10 +213,11 @@ When you create a user, that user must be in the same domain as the objects you 
 
 If your organization does not want to use secure communication protocol (HTTPS), you can create a registry key to disable it. To create this registry key:
 
-1. Copy and paste the following text into a .txt file.
+1. Copy and paste the following text into a .txt file. </b>
     `Windows Registry Editor Version 5.00`
     `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
     `"IgnoreCertificateValidation"=dword:00000001`
+
 2. Save the file with the name, **DisableSecureAuthentication.reg**, to your DPM server.
 3. Double-click the file to activate the registry entry.
 
