@@ -83,9 +83,9 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 ### Assign Storage QoS Policies while creating  a cloud
 
-Follow the steps until 14 in the [above procedure](#create-a-private-cloud from-a-host-group).
+1. Follow the steps until 14 in the [above procedure](#create-a-private-cloud from-a-host-group).
 
-In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
+2. In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
 
 ::: moniker-end
 
