@@ -66,6 +66,7 @@ You can create VMs based on the template you've just created.
 After step 3 in the [previous procedure](#Create-a-VM-template-based-on-a VM-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
 
 ::: moniker-end
+
 ## Next steps
 
 Review the following on how to [create VMs based on the template](vm-template.md) you've just created.
