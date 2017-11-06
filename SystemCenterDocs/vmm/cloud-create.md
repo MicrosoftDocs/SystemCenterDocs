@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/01/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,8 +13,6 @@ ms.technology: virtual-machine-manager
 
 
 # Scenario: Create a private cloud
-
->Applies To: System Center 2016 - Virtual Machine Manager
 
 This article provides instructions for creating a private cloud in System Center - Virtual Machine Manager (VMM).
 
@@ -75,17 +73,21 @@ You can create a private cloud from a host group, or from a VMware resource pool
 13. In **Capability Profiles**, select each virtual machine capability profile that you want to add, and then click **Next**. Select the capability profiles that match the type of hypervisor platforms that are running in the selected host groups. The built-in capability profiles represent the minimum and maximum values that can be configured for a virtual machine for each supported hypervisor platform.
 14. In **Replication Groups**, select the replication groups for the private cloud, and click **Next**.
 
-::: moniker range="sc-vmm-1711"
-
-15. In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
-
-::: moniker-end
-
 15. In **Summary** page, confirm the settings, and then click **Finish**.
 
 View status in **Jobs** and ensure the job is complete.
 
 To verify that the private cloud was created, check **VMs and Services** > **Clouds**. You can also verify in **Library** > **Cloud Libraries**, to view the read-only library shares.
+
+::: moniker range="sc-vmm-1711"
+
+### Assign Storage Qos Policies for a cloud
+
+Follow the steps until 14 in the [above procedure](#create-a-private-cloud from-a-host-group).
+
+In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
+
+::: moniker-end
 
 ## Create a private cloud from a VMware resource pool
 
