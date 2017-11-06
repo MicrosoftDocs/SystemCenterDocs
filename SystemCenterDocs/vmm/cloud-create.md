@@ -81,7 +81,7 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 ::: moniker range="sc-vmm-1711"
 
-### Assign Storage Qos Policies for a cloud
+### Assign Storage QoS Policies while creating  a cloud
 
 Follow the steps until 14 in the [above procedure](#create-a-private-cloud from-a-host-group).
 

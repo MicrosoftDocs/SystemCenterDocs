@@ -49,22 +49,23 @@ There are two methods for creating a VM template:
 ### Create a VM template based on a VM deployed on a host
 
 1. Click **Library** > **Create** > **Create VM Template**.
-1. In  the Create VM Template Wizard > select **Source** > **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
-1. In **Identity**, type in a template name and description. Note that the template will destroy the source VM and data on it could be lost. Clone it if it's important to you.
-1. In **Configure Hardware**, click **Next**.
+2. In  the Create VM Template Wizard > select **Source** > **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
+3. In **Identity**, type in a template name and description. Note that the template will destroy the source VM and data on it could be lost. Clone it if it's important to you.
+4. In **Configure Hardware**, click **Next**.
 
-::: moniker range="sc-vmm-1711"
-
-    To create a storage QoS policy template, click **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**
-    
-::: moniker-end
-
-1. In **Configure Operating System**, specify the guest operating system settings. You can use a guest OS profile or configure specific settings. To learn more, review [how to create a guest OS profile](library-profiles.md#create-a-guest-os-profile).
-1. In **Select Library Server**, click the library server for the VM you're using for the template and in **Select Path** specify the share/folder.
-1. In **Summary**, review the settings and click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
+5. In **Configure Operating System**, specify the guest operating system settings. You can use a guest OS profile or configure specific settings. To learn more, review [how to create a guest OS profile](library-profiles.md#create-a-guest-os-profile).
+6. In **Select Library Server**, click the library server for the VM you're using for the template and in **Select Path** specify the share/folder.
+7. In **Summary**, review the settings and click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
 
 You can create VMs based on the template you've just created.
 
+### Assign a storage Qos policy template
+
+::: moniker range="sc-vmm-1711"
+
+After step 3 in the above procedure, in **Configure Hardware*, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**
+
+::: moniker-end
 ## Next steps
 
 Review the following on how to [create VMs based on the template](vm-template.md) you've just created.

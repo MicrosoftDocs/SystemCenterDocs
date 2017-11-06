@@ -34,7 +34,7 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 
 **Use the following steps**:
 
-1.	Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering).
+1.	Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
     > [!NOTE]
 
