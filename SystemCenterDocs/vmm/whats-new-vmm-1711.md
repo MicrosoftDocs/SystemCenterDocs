@@ -60,9 +60,9 @@ Storage Quality of Service (SQoS) provides a way to centrally monitor and manage
 
 VMM 1711 supports the following improvements in SQoS:
 
-- Extension of SQoS support beyond S2D - You can now assign storage QoS policies to clusters. [Learn more](qos-storage-clusters.md).
-- Support for VMM private - You can assign a storage QoS policy while creating a cloud. [Learn more](cloud-create.md).
-- Availability of storage QoS policies as templates - You can get storage QoS policies as templates. [Learn more](library-vm-templates.md).
+- Extension of SQoS support beyond S2D - You can now assign storage QoS policies to storage area networks (SAN). [Learn more](qos-storage-clusters.md).
+- Support for VMM private cloud - storage QoS policies can now be consumed by the VMM cloud tenants. [Learn more](cloud-create.md).
+- Availability of storage QoS policies as templates - You can set storage QoS policies through VM templates. [Learn more](library-vm-templates.md).
 
 
 ## Networking

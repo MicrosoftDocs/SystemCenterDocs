@@ -47,15 +47,15 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 
  - In **Type**, select **Microsoft Network Controller**.
 
-  ![network controller](media/sdn-guest-clustering/select-controller.png)
+ ![network controller](media/sdn-guest-clustering/select-controller.png)
 
  - In **Load Balancing**, select **Enable Floating IP** Checkbox.
 
-  ![floating IP](media/sdn-guest-clustering/enable-floating.png)
+ ![floating IP](media/sdn-guest-clustering/enable-floating.png)
 
  - In **Health Monitor**, add the probe which would be used on the guest cluster VMs. Here, you must add the same port which was configured while clustering the hosts in the previous step.
 
-  ![health monitor](media/sdn-guest-clustering/health-monitors.png)
+ ![health monitor](media/sdn-guest-clustering/health-monitors.png)
 
 3.	Using PowerShell, create a VIP using the VIP template.
 
