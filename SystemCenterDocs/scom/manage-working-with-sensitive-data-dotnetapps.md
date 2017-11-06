@@ -16,7 +16,7 @@ ms.assetid: 69f2c1e7-4732-49f0-8643-4d95bdbb144c
 Here are some ways to work with sensitive data and .NET Application Performance Monitoring in System Center 2016 - Operations Manager.  
   
 ## Masking sensitive data for .NET applications  
-Masking sensitive data allows you to use a regular expression to filter out common parameters and insert **\** or some other character in place of the real value. This is used for functions and exceptions where you might capture sensitive information, such as credit card information, passwords, and other personally identifiable information.  
+Masking sensitive data allows you to use a regular expression to filter out common parameters and insert \**\** or some other character in place of the real value. This is used for functions and exceptions where you might capture sensitive information, such as credit card information, passwords, and other personally identifiable information.  
   
 1.  To open the .NET Application Performance Monitoring template, in the Operations Manager Operations console, in the navigation pane, select **Authoring**, expand **Management Pack Objects**, click **Rules**, and then click **change scope** in the right-hand side of the information bar to see the current scoping.  
   
