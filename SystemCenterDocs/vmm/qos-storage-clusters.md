@@ -51,9 +51,7 @@ The following new parameters are added:
 ## Create a storage QoS Policy from templates
    Templates usage is a common way for deploying VMs and Services on a cloud.
 
-   With VMM 1711 you can select storage QoS policies in a template as well.
-
-   For information on how to create templates for QoS policies, see the procedure on [create a VM template](library-vm-templates.md).
+   With VMM 1711 you can select storage QoS policies in a template as well.    For information on how to create templates for QoS policies, see the procedure on [create a VM template](library-vm-templates.md).
 
 
 ## [Next steps]
