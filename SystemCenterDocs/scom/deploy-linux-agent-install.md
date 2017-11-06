@@ -16,7 +16,7 @@ ms.topic: article
 # Linux agent for Operations Manager
 This article provides details of the latest version of the Linux agent for System Center  Preview 1711 - Operations Manager and the process for installing it. 
 
-This version of the Linux agent supports [Fluentd](https://www.fluentd.org/) is an open source data collector for Linux that collects data from a variety of sources.  The existing OMI based monitoring for currently supported Linux workloads will continue to work without change.
+This version of the Linux agent supports [Fluentd](https://www.fluentd.org/), an open source data collector for Linux that collects data from a variety of sources.  The existing OMI based monitoring for currently supported Linux workloads will continue to work without change.
 
 ## What's new in this Technical Preview 
 1. A new converter plugin is included that enables customers to use third party plugins for Operations Manager log file monitoring.
@@ -26,6 +26,7 @@ This version of the Linux agent supports [Fluentd](https://www.fluentd.org/) is 
 
 ## Supported platforms
 The Linux distributions in the following table are supported in this technical preview.
+
 | Linux Operating System | Version Supported |
 |:---|:---|
 | Red Hat Enterprise Linux Server | 5 (x86/x64)<br>6 (x86/x64)<br>7 (x86/x64) |
@@ -40,7 +41,7 @@ Technical preview will only support new installations. Upgrade from existing SCO
 
 You can choose to install the latest version of the Linux agent for Operations Manager using automatic discovery or manual installation.  Automatic discovery hasn't changed since the previous version, and you can follow the same procedure at [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md).
 
-Before performing either procedure, download and install the [management pack].
+Use the following procedures to manually install agents to UNIX and Linux computers. The agent packages can be found in the the following folder on a management server - %ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits after you import the required management packs for the specific version of UNIX/Linux you need to monitor. The management pack are available in the Operations Manager installation media, in the \ManagementPacks directory.
 
 ## Manual installation
 The agent is provided as a self-extracting, installable shell script bundle. This bundle contains both Debian and RPM packages for each of the agent components and can be installed directly or extracted to retrieve the individual packages. Separate bundles are available for x64 and x86 architectures. 
@@ -80,17 +81,9 @@ In the previous version of the Linux agent, the management server accessed each 
 
 
 ### Discovery
-With the agent in place, you need to have Operations Manager perform a discovery to recognize the new agents.  
+After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the Discovery type, select Discover only computers with the UNIX/Linux agent installed. For more information see [Install Agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).
 
-1.  In the Operations Console, go to **Administration**.
-2.  Right-click **Device Management** and select **Discovery Wizard**.
-3.	Select **UNIX/Linux Computers**  and click **Next**.
-4.  Click **Add**.
-4.	Enter the IP of the Linux Server under **Discover Scope** and keep the SSH Port of 22.
-6.  For **Discovery Type**, keep the default of **All Computers**
-8.  Either select **Use Run As Credentials** or click **Set Credentials** and select credentials with access to the agent computer.
-9.  Click **Save** to save the Discovery Criteria.
-5.	Select the **target resource pool** for your Linux agents.
-10. Click **Discover**.
-6.	Select the Linux computer that was discovered under **Manageable computers** and click **Manage**.
-
+Next steps
+- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](manage-apply-overrides-object-discovery.md).
+- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md).
+- Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers. 
