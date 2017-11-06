@@ -901,9 +901,9 @@ description: get-from-content-team
                                                 </div>
                                                     <div class="cardText">
                                                     <h3>What's New articles in System Center Preview 1711</h3>
-                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/dpm/what-s-new-in-dpm-2016">What's New in DPM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/scom/what-is-new">What's New in SCOM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/en-us/system-center/vmm/whats-new-vmm-1711">What's New in VMM</a></p>
+                                                    <p><a href="./dpm/what-s-new-in-dpm-2016">What's New in DPM</a></p>
+                                                    <p><a href="./scom/what-is-new">What's New in SCOM</a></p>
+                                                    <p><a href="./vmm/whats-new-vmm-1711">What's New in VMM</a></p>
                                                 </div>
                                             </div>
                                       </div>
