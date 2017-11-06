@@ -69,13 +69,12 @@ VMM 1711 supports the following improvements in SQoS:
 
 ### Configuration of guest clusters in SDN through VMM
 
-VMM currently supports guest clustering with HNV1 networks.  However, with the advent of software defined network (SDN) and network HNV2 networks, Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
+With the advent of the software defined network (SDN), in Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
 
-With the introduction of the network controller, VMs, which are connected to the virtual network are only permitted to use the IP address that the network controller assigns for communication. The SDN  design is controller inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
+With the introduction of the SDN, VMs which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
 
-VMM 1711 also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDNs scenarios.
-
-VMM 1711 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node. [Learn more](sdn-guest-clusters.md).
+VMM 1711 release also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1711 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
+. [Learn more](sdn-guest-clusters.md).
 
 ### Configuration of  SLB VIPs through VMM service templates
 SDN in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of  SLB Virtual IPs (VIPs) using power shell.
