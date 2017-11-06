@@ -56,4 +56,5 @@ Ensure the following prerequisites:
    - For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
 
 
-## [Next steps]
+## Next steps
+[Use local resources on Hyper-v VM with VMconnect](Use local resources on Hyper-V virtual machine with VMConnect )

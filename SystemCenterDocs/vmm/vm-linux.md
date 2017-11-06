@@ -58,4 +58,6 @@ When the agent installs on the VM the following files and folders will be create
 
 ## Next steps
 
-[Manage VM settings](vm-settings.md)
+- [Guarded Fabric and Shielded VMs Overview](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms)
+
+- [Linux Shielded VM Tools]((https://github.com/Microsoft/lsvmtools)

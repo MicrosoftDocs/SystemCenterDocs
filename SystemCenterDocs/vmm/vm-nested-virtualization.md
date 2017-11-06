@@ -92,4 +92,5 @@ Administrators/delegated administrators can configure nested virtualization by u
 
     > Check the note at the bottom of the wizard page before you disable nested virtualization.
 
-## [Next steps](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
+## Next steps
+[Run Hyper-v in a nested VM](Run Hyper-V in a Virtual Machine with Nested Virtualization )
