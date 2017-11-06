@@ -49,7 +49,7 @@ Ensure the following prerequisites:
 
     > The certificate is required only if you choose to use certificate-based authentication to manage your Azure subscription.
 
-## Procedure to manage
+## Procedure - manage Azure AD-based authentication & authorization and region-specific Azure subscriptions
 
 **Use the following steps**:
 
@@ -79,8 +79,7 @@ Ensure the following prerequisites:
 ![verify subscription authentication](media\azure-arm-based\verify-azure-subscription.png)
 
 
-## [Next steps]
+## Next steps
 
 - [Create Certificates](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-certs-create#what-are-management-certificates)
-
 - [Create active directory](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)

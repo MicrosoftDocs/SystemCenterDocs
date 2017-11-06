@@ -26,9 +26,8 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 
 ## Before you start
 
-Ensure the following prerequisites are met:
-
-Make sure you have deployed and configured the Host Guardian Service before proceeding. Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
+Ensure you have deployed and configured the Host Guardian Service before proceeding.
+Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 
 
 ## Configure fallback HGS
@@ -93,5 +92,4 @@ Make sure you have deployed and configured the Host Guardian Service before proc
 ## Next steps
 
 - [Deploy the Host Guardian Service (HGS)](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
-
 - [Manage host guardian services](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)

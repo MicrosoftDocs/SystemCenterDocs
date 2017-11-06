@@ -28,7 +28,7 @@ Ensure the following prerequisites:
 2.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2.
 3.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
 
-## Procedure to enable the enhanced sessions
+## Procedure - enable the enhance console session
 
 **Use the following steps**:
 
