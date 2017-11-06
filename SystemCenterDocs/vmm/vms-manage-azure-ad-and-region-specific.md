@@ -35,7 +35,7 @@ Ensure the following prerequisites:
     -   Azure Active Directory ID
     - 	Azure Active Directory - Application ID & Application Key
 
- [Learn more]((https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create an Azure AD App.  
+ [Learn more](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create an Azure AD App.  
 
 - **A management certificate** - with the configuration as described in [this article](https://technet.microsoft.com/en-us/system-center-docs/vmm/manage/manage-add-azure-subscription).
 

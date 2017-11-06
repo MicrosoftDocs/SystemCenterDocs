@@ -25,7 +25,9 @@ VMM 1711 enables this feature by emulating the floating IP functionality through
 SCVMM 1711 supports guest clustering in SDN through an Internal Load Balancer(ILB) Virtual IP(VIP). The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
 
 ## Before you start
+
 Ensure the following prerequisite:
+
 Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](#sdn-controller.md) and [SLB](#sdn-slb.md).   
 
 ## Procedure - configure guest clusters
