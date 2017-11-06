@@ -57,7 +57,7 @@
 #### [Configuring Windows agents](manage-deploy-config-windows-agent.md)
 #### [Configure agent failover to multiple gateway servers](manage-config-agent-failover-multiple-gateway-servers.md)
 #### [Install agent on UNIX and Linux from command line](manage-install-crossplat-agent-cmdline.md)
-#### [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md)
+#### [Install agent on Linux from command line](deploy-linux-agent-install.md)
 #### [Manage certificates for UNIX and Linux computers](manage-crossplat-certificates.md)
 #### [Process manual agent installations](manage-process-manual-agent-install.md)
 #### [Applying overrides to object discoveries](manage-apply-overrides-object-discovery.md)

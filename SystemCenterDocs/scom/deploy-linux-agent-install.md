@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title:  Linux Agent for System Center Preview 1711 - Operations Manager
-description: This article describes the new Linux agent and how to install it manually from the command-line.    
+title:  Install agent and certificate on Linux computers using the command line
+description: This article describes the new Linux agent and how to install manually on System Center Preview 1711 - Operations Manager.    
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Linux agent for Operations Manager
+# Install agent and certificate on Linux computers using the command line
 This article provides details of the latest version of the Linux agent for System Center  Preview 1711 - Operations Manager and the process for installing it. 
 
 This version of the Linux agent supports [Fluentd](https://www.fluentd.org/), an open source data collector for Linux that collects data from a variety of sources.  The existing OMI based monitoring for currently supported Linux workloads will continue to work without change.
