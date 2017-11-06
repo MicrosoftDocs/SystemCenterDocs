@@ -15,20 +15,19 @@ monikerRange: 'sc-vmm-1711'
 # Provision fallback HGS (Technical preview)
 
 
-This article describes about how to deploy fallback Host Guarding Service (HGS) in System Center VMM preview 1711 (VMM 1711). For information about guarded fabrics, see [this article](guarded-deploy-host.md).
+This article describes how to define the fallback HGS URLs in VMM 1711 global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster.
 
- With fallback HGS configuration feature in VMM 1711, a guarded host can be configured with a primary and secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
+With fallback HGS configuration feature in VMM 1711, a guarded host can be configured with a primary and secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
 
 The primary HGS URLs will always be used in favor of the secondary.  If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be re-attempted against the secondary.  Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
 
 
 ## Before you start
 
-Ensure the following prerequisites are met:
-
-Make sure you have deployed and configured the Host Guardian Service before proceeding. Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
+Ensure you have deployed and configured the Host Guardian Service before proceeding.
+Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs).
 
 
 ## Configure fallback HGS
@@ -90,4 +89,7 @@ Make sure you have deployed and configured the Host Guardian Service before proc
 
     ```
 
-## [Next steps](https://docs.microsoft.com/en-us/system-center/vmm/guarded-deploy-template)
+## Next steps
+
+- [Deploy the Host Guardian Service (HGS)](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
+- [Manage host guardian services](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)

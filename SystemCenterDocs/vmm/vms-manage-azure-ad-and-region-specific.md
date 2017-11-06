@@ -22,7 +22,7 @@ VMM 1711 supports management of Azure subscriptions through azure active directo
 
 Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 
-Management of  VMs using Azure AD based authentication and authorization requires Azure AD application VMs.
+Management of  VMs using Azure AD based authentication and authorization requires Azure AD application.
 
 
 ## Before you start
@@ -35,12 +35,11 @@ Ensure the following prerequisites:
     -   Azure Active Directory ID
     - 	Azure Active Directory - Application ID & Application Key
 
- [Learn more]((https://technet.microsoft.com/en-us/system-center-docs/vmm/manage/manage-add-azure-subscription)) on how to create an Azure AD App.  
+ [Learn more](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) on how to create an Azure AD App.  
 
 - **A management certificate** - with the configuration as described in [this article](https://technet.microsoft.com/en-us/system-center-docs/vmm/manage/manage-add-azure-subscription).
 
-    - The subscription must have a management certificate associated with it so that VMM can use the service management API in Azure. Learn more about service certificates.
-
+    - The subscription must have a management certificate associated with it so that VMM can use the service management API in Azure.
     - Make note of the subscription ID and the certificate thumbprint.
     - Certificates must be x509 v3 compliant.
     - The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.  
@@ -50,7 +49,7 @@ Ensure the following prerequisites:
 
     > The certificate is required only if you choose to use certificate-based authentication to manage your Azure subscription.
 
-## Procedure to manage
+## Procedure - manage Azure AD-based authentication & authorization and region-specific Azure subscriptions
 
 **Use the following steps**:
 
@@ -80,4 +79,7 @@ Ensure the following prerequisites:
 ![verify subscription authentication](media\azure-arm-based\verify-azure-subscription.png)
 
 
-## [Next steps](https://technet.microsoft.com/en-us/library/mt125377)
+## Next steps
+
+- [Create Certificates](https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-certs-create#what-are-management-certificates)
+- [Create active directory](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)

@@ -25,14 +25,16 @@ VMM 1711 enables this feature by emulating the floating IP functionality through
 SCVMM 1711 supports guest clustering in SDN through an Internal Load Balancer(ILB) Virtual IP(VIP). The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
 
 ## Before you start
+
 Ensure the following prerequisite:
+
 Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](#sdn-controller.md) and [SLB](#sdn-slb.md).   
 
 ## Procedure - configure guest clusters
 
 **Use the following steps**:
 
-1.	Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering).
+1.	Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
     > [!NOTE]
 
@@ -44,12 +46,16 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
 
  - In **Type**, select **Microsoft Network Controller**.
+
  ![network controller](media/sdn-guest-clustering/select-controller.png)
+
  - In **Load Balancing**, select **Enable Floating IP** Checkbox.
-   ![floating IP](media/sdn-guest-clustering/enable-floating.png)
+
+ ![floating IP](media/sdn-guest-clustering/enable-floating.png)
 
  - In **Health Monitor**, add the probe which would be used on the guest cluster VMs. Here, you must add the same port which was configured while clustering the hosts in the previous step.
-  ![health monitor](media/sdn-guest-clustering/health-monitors.png)
+
+ ![health monitor](media/sdn-guest-clustering/health-monitors.png)
 
 3.	Using PowerShell, create a VIP using the VIP template.
 
@@ -62,4 +68,3 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
     “$VipTemplateName” – name of the VIP template created in step 3, above.
     “$VipName” – any friendly name you want to refer to the VIP by.
     ```
-## Next steps

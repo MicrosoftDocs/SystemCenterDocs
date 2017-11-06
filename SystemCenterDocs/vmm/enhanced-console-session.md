@@ -28,7 +28,7 @@ Ensure the following prerequisites:
 2.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2.
 3.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
 
-## Procedure to enable the enhanced sessions
+## Procedure - enable the enhance console session
 
 **Use the following steps**:
 
@@ -56,4 +56,5 @@ Ensure the following prerequisites:
    - For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
 
 
-## [Next steps]
+## Next steps
+[Use local resources on Hyper-v VM with VMconnect](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)

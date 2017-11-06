@@ -44,7 +44,7 @@ By default, LIS is included with some distributions of Linux. If LIS is not incl
 4. Open the new folder on the VM, and run the following command: **chmod +x install**.
 5. Run either of these commands, depending on the operating system.
 
-    ```
+     ```powershell
     ./install scvmmguestagent.1.0.0.544.x64.tar
     ./install scvmmguestagent.1.0.0.544.x86.tar
     ```
@@ -58,4 +58,5 @@ When the agent installs on the VM the following files and folders will be create
 
 ## Next steps
 
-[Manage VM settings](vm-settings.md)
+- [Guarded Fabric and Shielded VMs Overview](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms)
+- [Linux Shielded VM Tools](https://github.com/Microsoft/lsvmtools)

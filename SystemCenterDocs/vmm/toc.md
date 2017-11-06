@@ -4,12 +4,13 @@
 ## [What's new in VMM 1711](Whats-new-vmm-1711.md)
 # Get Started
 ## [Read the release notes](release-notes.md)
+## [Read the release notes for VMM 1711](release-notes-1711.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
 ## [Deploy a guarded host fabric](deploy-guarded-host-fabric.md)
 ### [Deploy guarded hosts](guarded-deploy-host.md)
-### [Deploy fall back HGS](guarded-fallback-hgs.md)
+### [Configure fallback HGS](guarded-fallback-hgs.md)
 ### [Deploy a shielded VHDX and VM template](guarded-deploy-template.md)
 ### [Deploy shielded virtual machines](guarded-deploy-vm.md)
 ### [Deploy shielded linux virtual machine](guarded-deploy-linux-vm.md)
@@ -18,6 +19,7 @@
 ### [Encrypt networks](sdn-encrypt-networks.md)
 ### [Configure SDN guest clusters](sdn-guest-clusters.md)
 ### [Deploy an SDN SLB](sdn-slb.md)
+### [Configure SLB VIPs using VMM service templates](sdn-configure-slb-vip.md)
 ### [Deploy an SDN RAS gateway](sdn-gateway.md)
 ### [Deploy SDN using PowerShell](sdn-powershell.md)
 ### [Back up and restore the SDN infrastructure](sdn-backup-restore.md)
@@ -137,3 +139,4 @@
 ### [Set up monitoring and reporting with Operations Manager](monitors-ops-manager.md)
 ## Integrate with Azure
 ### [Add an Azure subscription in VMM](azure-subscription.md)
+### [Manage ARM-based and region-specific Azure subscriptions](vms-manage-azure-ad-and-region-specific.md)
