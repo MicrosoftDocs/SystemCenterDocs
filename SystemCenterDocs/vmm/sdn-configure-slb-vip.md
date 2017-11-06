@@ -100,5 +100,3 @@ When the service is deployed, VMM automatically selects a VIP from the reserved 
 1.	After the service is deployed click Fabric > Networking > Load Balancers.
 2.	Click Show > Service > Load Balancer Information for Services and expand the service to see which VIP is assigned.
 3.	If users use the DNS name to access the service, request that the DNS administrator manually create a DNS entry for the VIP. The entry should be the name that users will specify to connect to the service.  For example, servicename.contosol.com.
-
-## [Next steps]

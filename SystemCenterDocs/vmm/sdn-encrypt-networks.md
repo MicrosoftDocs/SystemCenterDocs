@@ -59,5 +59,3 @@ This feature is managed through the SDN Network Controller (NC). If you do not a
 5.	Create two VMs on two separate physical hosts, and connect them to the above subnet. [Learn more](sdn-controller.md#validate-the-deployment).
 6.	Attach any packet sniffing application on the two network interfaces of the two hosts, where the tenant VMs are placed.
 7.	Send traffic, ping, HTTP or any other packets, between the two hosts and check the packets in the packet sniffing application. The packets should not have any discernible plaintext like parameters of an HTTP request.
-
-## [Next steps]

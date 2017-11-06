@@ -149,6 +149,7 @@ follow these steps:
 **On Upgrade**
 1.	After the upgrade, the existing clouds will not have any QoS policy in their offering. Admin needs to update the cloud with the policy offerings.
 2.	The existing VMs on the cloud, which have disks with a QoS policy already assigned, will go to inconsistent state. Their policy stays intact, but the VMM UI displays it as blank. Admins can either remove those policies, or offer these   in the affected clouds.
+3. Proceed with rest of the step and complete the wizard.
 
 ::: moniker-end
 

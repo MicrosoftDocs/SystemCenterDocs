@@ -68,4 +68,3 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
     “$VipTemplateName” – name of the VIP template created in step 3, above.
     “$VipName” – any friendly name you want to refer to the VIP by.
     ```
-## Next steps

@@ -63,7 +63,9 @@ You can create VMs based on the template you've just created.
 
 ::: moniker range="sc-vmm-1711"
 
-After step 3 in the [previous procedure](#Create-a-VM-template-based-on-a VM-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
+- After step 3 in the [previous procedure](#Create-a-VM-template-based-on-a VM-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
+
+- Proceed with rest of the steps to complete the wizard
 
 ::: moniker-end
 
