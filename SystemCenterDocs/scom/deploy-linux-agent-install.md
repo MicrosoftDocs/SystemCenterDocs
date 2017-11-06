@@ -35,7 +35,7 @@ The Linux distributions in the following table are supported in this technical p
 | Debian | 6 (x86/x64)<br>7 (x86/x64)<br>8 (x86/x64) |
 | Oracle Linux | 5 (x86/x64)<br>6 (x86/x64)<br>7 (x64) |
 | SUSE Linux Enterprise Server | 11 (x86/x64)<br>12 (x64) |
-Technical preview will only support new installations. Upgrade from existing SCOM/OMS agents is not currently supported. 
+Technical preview only supports new installations. Upgrade from existing Operations Manager/OMS agents is not currently supported. 
 
 ## Agent installation
 
