@@ -109,4 +109,4 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
 
-VMM 1711 supports management of ARM-based VMs, Azure Active Directory (AD) based authentication that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions).
+VMM 1711 supports management of ARM-based VMs, Azure Active Directory (AD) based authentication that are created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](vms-manage-azure-ad-and-region-specific.md).
