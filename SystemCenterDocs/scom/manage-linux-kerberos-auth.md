@@ -79,7 +79,7 @@ To validate that Kerberos authentication is working successfully from the Operat
 
 3. Confirm that the task runs successfully.
 
-   ![Task Output](./media/./media/manage-linux-kerberos-auth/menory-information-linux-agent.png)
+   ![Task Output](./media/manage-linux-kerberos-auth/menory-information-linux-agent.png)
 
 ## Verify Kerberos Authentication from the Command Line
 
