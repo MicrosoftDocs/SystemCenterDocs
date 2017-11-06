@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Host Datastores Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Host Datastores activity is used in a runbook to retrieve a list of datastores available for a specified host managed by the VMware vSphere server. This can be used to check capacity of the system when automatically adding a new VM to the managed host.
 
 The following tables list the required and optional properties and published data for this activity.

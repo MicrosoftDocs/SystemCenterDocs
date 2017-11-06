@@ -14,8 +14,6 @@ ms.assetid:  4bb2487c-5a91-44d2-9a85-f4112aff40ac
 
 # Configure your preference for sharing Service Manager diagnostic and usage data
 
-> Applies To: System Center 2016 - Service Manager
-
 During setup in Service Manager, on the **Diagnostic and usage data** page, for sharing your Service Manager diagnostic and usage data with Microsoft. This feature is on by default. Administrators can turn off this feature anytime by using the choice options in Service Manager Console and Self Service Portal’s Web.config file (may also require service restart)
 
 ## To configure your preference for sharing data from the Service Manager console

@@ -13,8 +13,6 @@ ms.technology:  service-management-automation
 
 # Manage runbooks for Service Management Automation
 
-> Applies To: System Center 2016 - Service Management Automation
-
 As an administrator of a Service Management Automation (SMA) installation, you will need to configure runbooks for execution. Configuring includes both initial setup of the runbook workers, as well as scheduling and tracking runbooks. There are two system runbooks that are included with SMA in addition to the runbooks you have authored. These are:
 
 - DiscoverAllLocalModules: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system where the runbook worker has been installed, and extracts activities and activity metadata for these modules so that their activities can be used when authoring runbooks in Windows Azure Pack. 

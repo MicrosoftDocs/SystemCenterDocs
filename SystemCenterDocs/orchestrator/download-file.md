@@ -17,8 +17,6 @@ manager: carmonm
 
 # Download File
 
-Applies To: System Center 2016 - Orchestrator
-
 The Download File activity is used in a runbook to download a file from a FTP server.
 
 This activity publishes all of the data from the required and optional properties into published data.

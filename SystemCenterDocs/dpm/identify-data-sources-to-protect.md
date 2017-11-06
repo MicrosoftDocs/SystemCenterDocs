@@ -14,8 +14,6 @@ ms.author: markgal
 
 # Identify data sources you want to protect
 
->Applies To: System Center 2016 - Data Protection Manager
-
 To protect data sources with System Center Data Protection Manager (DPM) you'll need to do the following:
 
 -   Read [What can DPM back up?](dpm-protection-matrix.md) to understand what's supported for DPM backup.

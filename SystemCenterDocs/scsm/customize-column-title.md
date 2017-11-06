@@ -17,8 +17,6 @@ ms.assetid: 0a48640f-1ecf-4636-912e-42d9000cebc7
 
 # Customize a column title in a view for the authoring views sample scenario
 
-> Applies To: System Center 2016 - Service Manager
-
 System Center - Service Manager contains predefined views that you can use to display information and status of various work items and configuration items in the Service Manager console. Views are defined in unsealed management packs, allowing for some customizations of views.
 
 For example, you can use the following procedure to customize a column title of a predefined view to reflect processes that are used in your organization.

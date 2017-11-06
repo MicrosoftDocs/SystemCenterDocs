@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Computer
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Update Computer activity in a runbook to update the properties of a computer in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

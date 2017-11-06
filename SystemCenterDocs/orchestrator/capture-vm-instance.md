@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Capture VM Instance
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Capture VM Instance** activity makes a running virtual machine available as an image for reuse. For Windows-based virtual machines, the image should be sysprepped before capture. After performing the capture, the virtual machine is deleted. This activity is part of the **Azure Virtual Machines** category activity.
 
 >[!CAUTION]

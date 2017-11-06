@@ -18,8 +18,6 @@ robots: noindex
 
 # Deploy Software Update activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The Deploy Software Update activity is used in a runbook to create a
 Software Deployment (advertisement) to deploy software updates to a
 collection of computers. This activity requires that the updates have

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Relationship
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Relationship activity is used to create a relationship between two existing entities. For example, you can create a one-to-many relationship between incidents and customers.
 
 The following published data elements are specific to Create Relationship. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

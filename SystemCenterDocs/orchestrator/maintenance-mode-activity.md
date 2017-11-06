@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Maintenance Mode activity
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Maintenance Mode activity is used in a runbook to enter and exit maintenance mode for an ESX host controlled by the VMware vSphere vCenter server. Entering maintenance mode prevents VMs powering up or failing over to the host if it is taking part in a high availability cluster. This allows the runbook to enable Maintenance mode before powering off the host for hardware maintenance.
 
 The following tables list the required and optional properties and published data for this activity.

@@ -17,8 +17,6 @@ manager: carmonm
 
 # How to View Orchestrator Data by Using PowerPivot
 
-> Applies To: System Center 2016 - Orchestrator
-
 You can use Microsoft PowerPivot for Microsoft Excel to create reports for System Center 2016 - Orchestrator. You configure PowerPivot to use the Orchestrator web service as a data feed, filter the Source Tables for the data you want to use, and import the tables into the PowerPivot worksheet. PowerPivot lets you create relationships between tables, and manipulate the data to fit your requirements. By using the PivotTable feature in PowerPivot, you can generate a report that uses any of the data contained within the PowerPivot workbook.  
 
 ## Connect the Orchestrator web service to PowerPivot for Excel  

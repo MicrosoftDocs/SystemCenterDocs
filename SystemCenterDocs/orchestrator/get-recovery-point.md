@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Recovery Point
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Recovery Point activity is used in a runbook that queries a data source for all its associated recovery points or only the most recent recovery point.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

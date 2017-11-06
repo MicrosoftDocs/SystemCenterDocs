@@ -17,8 +17,6 @@ manager: carmonm
 
 # How to Change the Orchestrator Users Group
 
-> Applies To: System Center 2016 - Orchestrator
-
 You might want to change the Orchestrator users group after installation because of changes in your environment. For example, you might want to use a local group during installation, and then change it to a domain account later.  
 
 ## PermissionsConfig tool  

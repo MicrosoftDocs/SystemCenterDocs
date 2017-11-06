@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Resume File Download
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Resume File Download activity is used in a runbook to resume a file download. This activity is only compatible with an FTP configuration.
 
 This activity publishes all of the data from the required properties into published data.

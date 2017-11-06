@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Add OS Image
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Add OS Image** activity adds an operating system image that is currently stored in a storage account in your subscription to the image repository. It is part of the **Azure Virtual Machine Images** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get User Role
 
-Applies To: System Center 2016 - Orchestrator
-
 Returns data on all the user roles within the VMM server
 
 >[!IMPORTANT]

@@ -17,8 +17,6 @@ manager: carmonm
 
 # Download Document
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Download Document** activity is used in a runbook to download a document from a Microsoft SharePoint document library.
 
 The following tables list the required properties and Published Data for this activity.

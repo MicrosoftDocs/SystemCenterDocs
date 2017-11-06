@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create User
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Create User activity in a runbook to create a user in the Microsoft Active Directory.
 
 This activity publishes all of the data from the required and optional properties into published data except user password. Additional published data is generated based on the class that you select when you define the activity.

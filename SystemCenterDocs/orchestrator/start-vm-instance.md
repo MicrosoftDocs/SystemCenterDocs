@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Start VM Instance
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Start VM Instance** activity starts the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

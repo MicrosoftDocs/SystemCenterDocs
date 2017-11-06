@@ -18,8 +18,6 @@ robots: noindex
 
 # Add Collection Rule Activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 
 The Add Collection Rule activity is used to define the membership of a
 collection by adding collection membership rules to the collection.

@@ -14,8 +14,6 @@ ms.technology:  virtual-machine-manager
 
 # Manage roles and permissions in VMM
 
-> Applies To: System Center 2016 - Virtual Machine Manager
-
 System Center - Virtual Machine Manager (VMM) allows you to manage roles and permissions. VMM provides:
 
 - **Role-based security**: Roles specify what users can do in the VMM environment. Roles consist of a profile that defines a set of available operations for the role, scope which define the set of objects on which the role can operate, and a membership list that defines the Active Directory user accounts and security groups that are assigned to the role.

@@ -14,8 +14,6 @@ ms.author: markgal
 
 # What's new in System Center DPM 1711
 
->Applies To: System Center 2016 - Data Protection Manager
-
 
 Before you begin, check the [Release Notes for System Center 1711](dpm-release-notes.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MDS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
 

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Move VM Activity
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Move VM activity is used in a runbook to move the virtual disk to a specific location, and can also associate the virtual machine with a different host. This allows the runbook to move virtual machines from one host to another. When a virtual machine is moved, the disk files are moved and the host association is changed. To change the host association without moving the disk files, use the Migrate VM activity.
 
 The following tables list the required and optional properties and published data for this activity.

@@ -14,8 +14,6 @@ ms.author: markgal;
 
 # What can DPM back up?
 
->Applies To: System Center 2016 - Data Protection Manager
-
 This article summarizes System Center Data Protection Manager (DPM) protection support.
 
 ## Protection support matrix

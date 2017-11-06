@@ -16,8 +16,6 @@ manager: carmonm
 ---
 # Runbook permissions
 
-> Applies To: System Center 2016 - Orchestrator
-
 Runbook access permissions are set through the Runbook Designer. By default, only users in the Orchestrator Users Group have full access to a runbook. You give access to additional users to run, start, stop, view, and change runbooks at either the folder level or the individual runbook level.  
 
 ### To view or modify the permissions of a runbook  

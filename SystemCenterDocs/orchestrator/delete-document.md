@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Document
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete Document** activity is used in a runbook to delete a document from a Microsoft SharePoint document library.
 
 The following tables list the required properties and Published Data for this activity.

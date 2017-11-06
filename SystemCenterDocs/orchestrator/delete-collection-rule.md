@@ -18,8 +18,6 @@ robots: noindex
 
 # Delete collection rule activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete Collection Rule activity is used to redefine the membership
 of a collection by removing collection membership rules from the
 collection. Membership rules determine the resources that are included

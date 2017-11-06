@@ -14,8 +14,6 @@ ms.assetid:  98626f09-e4b1-4cbb-9195-651d54e118d1
 
 # Back up file data with DPM
 
->Applies To: System Center 2016 - Data Protection Manager
-
 You can use System Center Data Protection Manager (DPM) to back up file data on server and client computers.
 
 ## Before you start

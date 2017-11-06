@@ -17,8 +17,6 @@ manager: carmonm
 
 # Find Appointments
 
-Applies To: System Center 2016 - Orchestrator
-
 The Find Appointments activity is used in a runbook to find an existing appointment.
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.

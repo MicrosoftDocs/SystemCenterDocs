@@ -17,8 +17,6 @@ manager: carmonm
 
 # System Center Integration Pack for Microsoft SharePoint
 
-Applies To: System Center 2016 - Orchestrator
-
 Integration packs are add-ons for Orchestrator, a component of Microsoft System Center 2016, that helps you optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by non-Microsoft products.
 
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint, for example, to create list items, to upload and download documents, and to monitor a list for changes.

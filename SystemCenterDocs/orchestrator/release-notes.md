@@ -13,8 +13,6 @@ title:  Release Notes for System Center 2016 - Orchestrator
 
 # Release Notes for System Center 2016 - Orchestrator
 
->Applies To: System Center 2016 - Orchestrator
-
 The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center 2016 -Orchestrator.
 
 ## Orchestrator Web Console is not compatible with the Microsoft Edge web browser

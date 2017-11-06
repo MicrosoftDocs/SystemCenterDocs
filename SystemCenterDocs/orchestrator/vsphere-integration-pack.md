@@ -17,8 +17,6 @@ robots: noindex
 ---
 # VMware vSphere Integration Pack for System Center 2016 - Orchestrator
 
-Applies To: System Center 2016 - Orchestrator
-
 The integration pack for VMware vSphere is an add-on for System Center 2016 - Orchestrator that assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
 
 Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).

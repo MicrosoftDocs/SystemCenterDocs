@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Mailbox
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment. The Get Mailbox activity lets you filter against various mailbox attributes.
 
 The following tables list the required properties, filters, optional properties, and published data for this activity.

@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Move Request
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Get Move Request activity in a runbook to retrieve detailed information for an existing mailbox move request, for an on-premise environment.
 
 The following tables list the filters, optional properties, and published data for this activity.

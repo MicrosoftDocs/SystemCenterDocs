@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Attachment
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete Attachment** activity is used in a runbook to delete an attachment from a Microsoft SharePoint list item.
 
 The following tables list the required properties and Published Data for this activity.

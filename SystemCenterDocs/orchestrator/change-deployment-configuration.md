@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Change Deployment Configuration
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Change Deployment Configuration** activity initiates a change to the deployment configuration. It is part of the Azure Deployments category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

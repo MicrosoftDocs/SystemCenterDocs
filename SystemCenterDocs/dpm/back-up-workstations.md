@@ -14,8 +14,6 @@ ms.author: markgal
 
 # Back up client computers with DPM
 
->Applies To: System Center 2016 - Data Protection Manager
-
 You can deploy System Center Data Protection Manager (DPM) to back up client computers. Depending on the client operating system, you can back up volumes, shares, folders, files, bare metal and system state, and deduped volumes.
 
 ## Prerequisites and limitations

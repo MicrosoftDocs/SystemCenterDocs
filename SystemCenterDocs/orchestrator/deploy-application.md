@@ -18,8 +18,6 @@ robots: noindex
 
 # Deploy application activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Deploy Application activity is used to create new application
 deployments and assign them to collections. This activity uses the new
 Configuration Manager application model and relies on applications

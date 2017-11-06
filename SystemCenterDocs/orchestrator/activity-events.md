@@ -17,8 +17,6 @@ manager: carmonm
 
 # Capture activity events to monitor runbooks
 
-> Applies To: System Center 2016 - Orchestrator
-
 Each activity in an Orchestrator runbook has the ability to send an event whenever it fails to run or is taking too long to run. These events are presented on the **Events** tab of the Runbook Designer or can be configured to be delivered to a receiver as an SNMP trap. Runbook activity events are only sent for those activities that you specifically configure to do so.  
 
 ## To configure an activity to send events  

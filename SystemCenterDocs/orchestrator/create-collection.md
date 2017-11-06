@@ -18,8 +18,6 @@ robots: noindex
 
 # Create collection activity for System Center 2016 Configuration Manager
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Collection activity is used in a runbook to create a new
 Configuration Manager user or device collection. Collections are the
 primary means of defining targets for Configuration Manager actions such

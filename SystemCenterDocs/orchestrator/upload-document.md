@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Upload Document
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Upload Document** activity is used in a runbook to upload a document to a Microsoft SharePoint document library.
 
 The following tables list the optional and required properties and Published Data for this activity.

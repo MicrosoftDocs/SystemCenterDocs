@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Add VM Endpoint
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Add VM Endpoint** activity adds an external endpoint to the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
 
 >[!NOTE]

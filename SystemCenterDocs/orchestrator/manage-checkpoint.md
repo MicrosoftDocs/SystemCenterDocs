@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Manage Checkpoint
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Manage Checkpoint activity is used to restore a virtual machine to the state when the checkpoint was created or to remove a checkpoint that is no longer needed.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

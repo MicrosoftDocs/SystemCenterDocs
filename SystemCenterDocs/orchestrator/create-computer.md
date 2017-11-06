@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Computer
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Create Computer activity in a runbook to create an entry for a computer in the Microsoft Active Directory. Typically, you would do this if you would like to pre-assign the Organizational Unit (OU) in which certain computers should go once they join the domain.
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

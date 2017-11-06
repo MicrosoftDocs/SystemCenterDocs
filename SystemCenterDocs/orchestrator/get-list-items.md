@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get List Items
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Get List Items** activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list.
 
 The following tables list the filters, required and optional properties, and Published Data for this activity. Additional filters and Published Data are generated, which are based on the SharePoint list that is retrieved when you define the activity.

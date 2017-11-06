@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Send E-Mail
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Send E-Mail activity is used in a runbook to send e-mail messages.
 
 This activity publishes all of the data from the required and optional properties into published data.

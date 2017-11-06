@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The Update Item activity is used in a runbook to update an existing item.
 
 The following tables list the required properties, optional properties, and published data for this activity. Optional properties are presented in separate tables according to item type: appointment, contact group, task, and email message.

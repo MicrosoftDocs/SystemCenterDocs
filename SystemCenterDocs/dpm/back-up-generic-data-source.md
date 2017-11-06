@@ -14,8 +14,6 @@ ms.author: markgal
 
 # Prepare to back up a generic data source
 
->Applies To: System Center 2016 - Data Protection Manager
-
 System Center Data Protection Manager (DPM) provides the Generic Data Source (GDS) infrastructure  so that you can protect any Microsoft workload as long as it has a VSS writer.
 
 Here's what you can do:
