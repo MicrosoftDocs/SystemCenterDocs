@@ -1,5 +1,6 @@
 # Overview
 ## [Orchestrator Overview](learn-about-orchestrator.md)
+## [What's new](whats-new-1711.md)
 ## [Automate with runbooks](automate-runbooks.md)
 # Get started
 ## [Install Orchestrator](install.md)
@@ -7,7 +8,7 @@
 ## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
 ## [Release notes](release-notes.md)
 # How To
-## Plan 
+## Plan
 ### [Database sizing and performance](database-sizing-and-performance.md)
 ### [Feature performance considerations](feature-performance-considerations.md)
 ### [System Requirements](system-requirements.md)
@@ -18,7 +19,7 @@
 ### [How to configure Orchestrator database connections](how-to-configure-orchestrator-database-connections.md)
 ### [Migrate Orchestrator between environments](migrate-orchestrator-between-environments.md)
 ### [How to change the Orchestrator database](how-to-change-the-orchestrator-database.md)
-## Manage Runbooks 
+## Manage Runbooks
 ### [Design and build runbooks](design-and-build-runbooks.md)
 ### [Creating and testing a sample runbook](creating-and-testing-a-sample-runbook.md)
 ### [Control runbook activities](control-runbook-activities.md)

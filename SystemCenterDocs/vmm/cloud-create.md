@@ -81,13 +81,13 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 ::: moniker range="sc-vmm-1711"
 
-### Assign Storage QoS Policies while creating  a cloud
+### Assign Storage QoS Policies while creating  a cloud (Technical Preview)
 
 1. Follow the steps until 14 in the [above procedure](#create-a-private-cloud-from-a-host-group).
 
-2. In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
+2. In **Storage QoS Policies**, select the policies that you want to assign to this cloud.
 
-3. Proceed with rest of the steps and complete the wizard.
+3. Proceed with rest of the steps and complete the wizard. 
 
 ::: moniker-end
 
@@ -121,8 +121,8 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 
 ::: moniker range="sc-vmm-1711"
 
-## Assign QoS policies to a private cloud (Technical Preview)
-System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) supports QoS policies on a private cloud.
+## Assign storage QoS policies to a private cloud (Technical Preview)
+System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) supports storage QoS policies on a private cloud.
 
 The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant admins and self-service users can consume these while deploying the VMs and services. This will enable the cloud providers to guarantee and/or limit the amount of storage performance as per the subscription opted by the tenants.  
 
@@ -138,7 +138,7 @@ The fabric admin can now offer storage QoS policies, while authoring the VMM pri
 **follow these steps**:
 
 1. Follow the [create a private cloud from a host group](#create-a-cloud-from-a-host-group) procedure until step 14.
-2. In **Storage QoS Policies**. select the policies that you want to assign to this cloud.
+2. In **Storage QoS Policies**, select the policies that you want to assign to this cloud.
 3. proceed to step 15, complete the remaining steps.
 4. Review the summary and click **Finish**.
 

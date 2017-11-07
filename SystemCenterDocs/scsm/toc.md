@@ -1,5 +1,6 @@
 # Overview
 ## [Service Manager](service-manager.md)
+## [What's new](whats-new-1711.md)
 # Get started
 ## [What's new in Service Manager](whats-new.md)
 ## [Service Manager glossary](glossary.md)

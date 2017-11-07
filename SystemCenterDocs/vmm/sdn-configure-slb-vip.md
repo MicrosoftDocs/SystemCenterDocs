@@ -1,17 +1,17 @@
 ---
-ms.assetid:
+ms.assetid: 1e144c7f-4ab3-4f06-abd9-1c45dea099f9
 title: Configure SLB VIPs using VMM service templates  in System Center Preview Virtual Machine Manager preview version 1711
-description: This article explains about how to configure SLB VIPs through VMM service templates using VMM 1711.
+description: This article explains about how to configure SLB VIPs through VMM service templates using preview VMM 1711.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/02/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
-#	Configure SLB VIPs through VMM service templates
+#	Configure SLB VIPs through VMM service templates (Technical Preview)
 
 Software Defined Networking (SDN) in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 only supports deploying SLB Virtual IPs (VIPs) using power shell.
 
@@ -97,6 +97,6 @@ Ensure the following prerequisites are met:
 
 When the service is deployed, VMM automatically selects a VIP from the reserved range in the static IP address pool, and assigns it to the load-balanced service tier. To enable users to connect to the service, after the service is deployed you need to determine the VIP and configure a DNS entry for it.
 
-1.	After the service is deployed click Fabric > Networking > Load Balancers.
-2.	Click Show > Service > Load Balancer Information for Services and expand the service to see which VIP is assigned.
+1.	After the service is deployed click **Fabric** > **Networking** > **Load Balancers**.
+2.	Click **Show** > **Service** > **Load Balancer Information for Services** and expand the service to see which VIP is assigned.
 3.	If users use the DNS name to access the service, request that the DNS administrator manually create a DNS entry for the VIP. The entry should be the name that users will specify to connect to the service.  For example, servicename.contosol.com.

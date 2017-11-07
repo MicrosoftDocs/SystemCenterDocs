@@ -12,7 +12,7 @@ ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# Provision shielded Linux virtual machines in the preview VMM 1711 fabric (Technical preview)
+# Provision shielded Linux virtual machines in the preview VMM 1711 fabric (Technical Preview)
 
 This article describes how to deploy Linux shielded virtual machines in the System Center Virtual Machine Manager Preview, 1711 (VMM 1711) compute fabric.
 
@@ -133,4 +133,6 @@ New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Own
   While provisioning, the VMM specialization agent reads the Linux configuration file in PDK and customizes the VM.
 
 
-## [Next steps]
+## Next steps
+- [Guarded Fabric and Shielded VMs Overview](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms)
+- [Linux Shielded VM Tools](https://github.com/Microsoft/lsvmtools)

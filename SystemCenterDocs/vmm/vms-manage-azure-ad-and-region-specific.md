@@ -1,7 +1,7 @@
 ---
 ms.assetid: d4b3e835-cd9b-4993-bfe0-e491f5f18508
 title:  Manage arm-based and region-specific VMs using System Center VMM preview 1711.
-description: This article provides information about how to manage arm-based and region-specific VMs using VMM 1711.
+description: This article provides information about how to manage VMs with arm-based and region-specific Azure subscriptions using VMM 1711.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp

@@ -12,7 +12,7 @@ ms.technology:  virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# What's new in System Center VMM 1711 (Technical preview)
+# What's new in System Center VMM 1711 (Technical Preview)
 
 This article describes about the new features supported in System Center Virtual Machine Manager preview 1711 (VMM 1711).
 
@@ -89,12 +89,12 @@ The control of encryption is at the subnet level and encryption can be enabled/d
 
 ## Security
 
-### Linux shielded VM
+### Support to Linux shielded VM
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS based VMs. Shielded VMs provide protection against malicious administrator actions both when VM’s data is at rest or an untrusted software is running on Hyper-V hosts.
 
 With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs and the same has been extended to VMM 1711. [Learn more](guarded-deploy-linux-vm.md).
 
-### Fallback HGS configuration in VMM
+### Configuration of fallback HGS
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster. Windows Server 1709 added support for fallback HGS.
 
 Using VMM 1711, a guarded host can be configured with a primary and a secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.

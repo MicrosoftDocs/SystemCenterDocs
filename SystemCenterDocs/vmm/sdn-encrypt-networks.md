@@ -12,7 +12,7 @@ ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# Configure encrypted networks in SDN using VMM 1711 (Technical preview)
+# Configure encrypted networks in SDN using VMM 1711 (Technical Preview)
 
 This article explains about how to encrypt the VM networks in software defined network (SDN) using  System Center Virtual Machine Manager preview 1711 (VMM 1711).
 
@@ -30,6 +30,7 @@ This feature is managed through the SDN Network Controller (NC). If you do not a
 
 ## Before you start
 
+Ensure the following prerequisites are met:
 
 - At least two hosts for tenant VMs, to validate the encryption.
 - HNV based VM network with encryption enabled and a  certificate, which can be created and distributed by fabric administrator. Not that The certificate along with its private key must be stored in the local certificate store of all the hosts, where the VMs (of that network) reside.

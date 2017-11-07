@@ -12,7 +12,7 @@ ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# Enable enhanced console session (Technical preview)
+# Enable enhanced console session (Technical Preview)
 This article provides information about how to configure enhanced console session in System Center VMM Preview 1711 (VMM 1711).
 
 Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Currently, the console connect in VMM supports only basic session where clipboard text can only be pasted through **Type Clipboard Text menu** option.
@@ -28,7 +28,7 @@ Ensure the following prerequisites:
 2.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2.
 3.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
 
-## Procedure - enable the enhance console session
+## Procedure - enable the enhanced console session
 
 **Use the following steps**:
 
@@ -39,7 +39,7 @@ Ensure the following prerequisites:
 
 3.	In VMM console, navigate to the VM on this host.
 4.	Right-click the VM and click **Connect via Console**.
-5.	Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the Enhanced Session window.
+5.	Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
 
     ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status.png)
 
