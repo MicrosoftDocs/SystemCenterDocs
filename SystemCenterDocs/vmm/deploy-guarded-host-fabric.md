@@ -5,7 +5,7 @@ description: Describes how to set up guarded hosts and provision shielded VMs in
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Scenario - Deploy guarded hosts and shielded virtual machines in VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
+]
 
 This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in a System Center - Virtual Machine Manager (VMM) compute fabric.
 

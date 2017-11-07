@@ -5,7 +5,7 @@ description: This article describes how to set up host groups in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2016
+ms.date:  11/07/2016
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up host groups in the VMM compute fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 Read this article to learn about setting up and managing host groups in the System Center - Virtual Machine Manager (VMM) fabric.
 

@@ -13,7 +13,6 @@ ms.technology:  virtual-machine-manager
 
 # Deploy and manage a Software Defined Network (SDN) infrastructure in the VMM fabric
 
->Applies To: System Center 2016- Virtual Machine Manager
 
 System Center - Virtual Machine Manager (VMM) can be used to deploy and manage a Software Defined Network (SDN) infrastructure.
 
