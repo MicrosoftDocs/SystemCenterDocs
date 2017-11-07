@@ -12,7 +12,7 @@ ms.technology:  virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# VMM 1711 release notes (Technical preview)
+# VMM 1711 release notes (Technical Preview)
 
 This articles summarizes the release notes for System Center Virtual Machine Manager preview 1711 ( VMM 1711).
 
