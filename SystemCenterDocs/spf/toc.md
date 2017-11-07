@@ -1,5 +1,6 @@
 # Overview
 ## [Get started with SPF](overview.md)
+## [What's new](whats-new-1711)
 # How To
 ## Plan
 ### [Plan SPF deployment](plan-spf.md)

@@ -9,6 +9,7 @@ ms.date:  11/08/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
+monikerRange: 'sc-vmm-1711'
 ---
 
 # Manage storage QoS for clusters (Technical Preview)
