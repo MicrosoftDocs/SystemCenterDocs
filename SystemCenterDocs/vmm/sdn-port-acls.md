@@ -5,7 +5,7 @@ description: This article describes how to allow and block network traffic to a 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Allow and block VM traffic using SDN port ACLs
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 In System Center Virtual Machine Manager (VMM), you can centrally configure and manage software defined network (SDN) port access control lists (ACLs).
 

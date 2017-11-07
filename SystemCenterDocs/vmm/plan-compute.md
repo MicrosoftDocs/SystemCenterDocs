@@ -5,7 +5,7 @@ description: This article provides planning steps for setting up and provisionin
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Plan the VMM compute fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes how to plan the System Center - Virtual Machine Manager (VMM) compute fabric. The VMM compute fabric consists of the VMM library, virtualization hosts, host groups, and other infrastructure servers.
 

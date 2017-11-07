@@ -5,7 +5,7 @@ description: This article describes how to create port profiles in the VMM fabri
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up port profiles in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 Use this article to learn about and set up uplink port profiles and virtual network adapter port profiles in the System Center  Virtual Machine Manager (VMM) networking fabric.
 

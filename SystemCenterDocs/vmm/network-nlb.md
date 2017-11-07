@@ -5,7 +5,7 @@ description: This article provides guidance for setting up load balancing for VM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 
 # Integrate load balancing with VMM service templates
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 Read this article to learn about integrating Windows network load balancing (NLB), and hardware load balancers with System Center - Virtual Machine Manager (VMM) service templates.
 

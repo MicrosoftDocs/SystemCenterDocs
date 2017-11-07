@@ -5,7 +5,7 @@ description: This article describes about how to route network traffic between p
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Route traffic across networks in the SDN infrastructure
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual MAchine Manager (VMM) fabric.
 

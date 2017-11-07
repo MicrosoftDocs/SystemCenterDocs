@@ -5,7 +5,7 @@ description: This article explains about how to configure SLB VIPs through VMM s
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/02/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager

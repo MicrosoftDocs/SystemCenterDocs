@@ -5,7 +5,7 @@ description: This article describes how to fail over VMs between virtual network
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Configure VM failover between virtual networks
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to handle replication and failover of VMs in System Center Virtual Machine Manager (VMM), between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
+
+This article describes how to handle replication and failover of VMs in System Center - Virtual Machine Manager (VMM), between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
 
 - We recommend that you use Azure Site Recovery for replicating VMs. VMM doesn't manage Hyper-V Replica without Site Recovery, and you need to use Hyper-V Replica PowerShell cmdlets to automate Hyper-V Replica operations.
 - For disaster recovery, we recommend that you use separate primary and secondary virtual networks. Primary VMs connect to the primary network, and replica VMs to the secondary network. This ensures that both VMs can be connected to a network at the same time.

@@ -5,7 +5,7 @@ description: This article describes how to set up the VMM storage fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,6 @@ ms.technology:  virtual-machine-manager
 
 # Set up the VMM storage fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 
 You can use System Center - Virtual Machine Manager (VMM) to manage your physical and virtualized infrastructure. As part of that management VMM can manage storage that you assign to virtual hosts and clusters, and VMs.
