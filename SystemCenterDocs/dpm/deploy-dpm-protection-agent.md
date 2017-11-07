@@ -61,7 +61,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
     -   The first time you use the wizard DPM queries Active Directory to get a list of available computers. After the first installation, DPM stores the list of computers in its database, which is updated once each day by the auto-discovery process.
 
-    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name of the computer that you want to protect (for example, *&lt;Computer1&gt;*.Domain1.contoso.com**, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contoso.com* is the domain to which the target computer belongs.
+    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name of the computer that you want to protect (for example, *&lt;Computer1&gt;.Domain1.contoso.com*, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contoso.com* is the domain to which the target computer belongs.
 
     -   The **Advanced** button page is enabled only when there is more than one version of a protection agent available for installation on the computers. You can use this option to install a previous version of the protection agent that was installed before you upgraded DPM server to a more recent version.
 
