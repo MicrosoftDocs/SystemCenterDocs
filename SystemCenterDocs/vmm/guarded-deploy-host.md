@@ -5,7 +5,7 @@ description: Describes how to add and provision guarded hosts in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Provision guarded hosts in VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes how to deploy guarded Hyper-V hosts in a System Center - Virtual Machine Manager (VMM) compute fabric. [Learn more](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms) about guarded fabric..
 

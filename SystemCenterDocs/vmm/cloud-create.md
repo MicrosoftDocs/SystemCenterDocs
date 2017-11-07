@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
