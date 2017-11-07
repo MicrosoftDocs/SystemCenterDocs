@@ -68,10 +68,10 @@ See [Upgrade to System Center 2016](upgrade-to-system-center-2016.md).
 Go to the [System Center documentation center](index.md), to see all technologies in System Center 2016.
 See the introductory information or important concepts about each of the technologies in System Center 2016. 
 
-* [Data Protection Manager](./dpm/dpm-overview.md)
-* [Operations Manager](./scom/key-concepts.md)
-* [Orchestrator](./orchestrator/learn-about-orchestrator.md)
-* [Service Manager](./scsm/service-manager.md)
-* [Service Management Automation](./sma/overview-of-service-management-automation.md)
-* [Virtual Machine Manager](./vmm/overview.md)
-* [Service Provider Foundation](./spf/overview.md)
+* [Data Protection Manager](/system-center/dpm/dpm-overview)
+* [Operations Manager](/system-center/scom/key-concepts)
+* [Orchestrator](/system-center/orchestrator/learn-about-orchestrator)
+* [Service Manager](/system-center/scsm/service-manager)
+* [Service Management Automation](/system-center/sma/overview-of-service-management-automation)
+* [Virtual Machine Manager](/system-center/vmm/overview)
+* [Service Provider Foundation](/system-center/spf/overview)
