@@ -1,6 +1,6 @@
 # Overview
 ## [What is VMM?](overview.md)
-
+## [What's new in VMM](whats-new.md)
 ## [What's new in VMM 1711](Whats-new-vmm-1711.md)
 # Get Started
 ## [Read the release notes](release-notes.md)

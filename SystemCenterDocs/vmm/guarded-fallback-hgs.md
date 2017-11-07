@@ -14,7 +14,6 @@ monikerRange: 'sc-vmm-1711'
 
 # Provision fallback HGS (Technical Preview)
 
-
 This article describes how to define the fallback HGS URLs in VMM 1711 global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster.
