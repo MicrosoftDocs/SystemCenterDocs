@@ -5,7 +5,7 @@ description: This article describes how to manage storage in Storage Spaces Dire
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Manage storage in Storage Spaces Direct in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes how to manage storage deployed with Storage Spaces Direct (S2D) in the System Center - Virtual Manager (VMM) fabric.
 

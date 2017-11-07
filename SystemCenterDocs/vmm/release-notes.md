@@ -5,7 +5,7 @@ description: This article details release notes for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -14,7 +14,7 @@ monikerRange: 'sc-vmm-2016'
 
 # VMM release notes
 
-  >Applies To: System Center 2016 - Virtual Machine Manager
+ 
 
 This articles summarizes the release notes for System Center 2016 - Virtual Machine Manager (VMM).
 

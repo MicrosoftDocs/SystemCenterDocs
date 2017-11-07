@@ -5,7 +5,7 @@ description:  This article summarizes troubleshooting resources available for VM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Resources for troubleshooting
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 Resource | Description
 --- | ---

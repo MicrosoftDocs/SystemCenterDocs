@@ -5,7 +5,7 @@ description: This article describes how to manage SOFS settings in the VMM fabri
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Manage SOFS settings in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 You can manage scale-out file server (SOFS) in the System Center - Virtual Machine Manager (VMM) fabric as follows:
 

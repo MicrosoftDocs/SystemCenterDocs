@@ -5,7 +5,7 @@ description: This article provides information about how to deploy and manage th
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Deploy and manage update rollups in VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article provides information about how to install, verify, and remove update rollups for System Center Virtual Machine Manager (VMM).
 

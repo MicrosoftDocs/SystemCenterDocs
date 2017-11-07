@@ -5,7 +5,7 @@ description: This article provides links to planning System Center VMM 2016 depl
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Plan VMM deployment
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 There are a number of planning steps you should take before you start deploying System Center - Virtual Machine Manager (VMM). These steps help  deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
 

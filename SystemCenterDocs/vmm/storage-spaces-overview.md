@@ -5,7 +5,7 @@ description: This article describes Storage Spaces Direct in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Scenario: Deploy Storage Spaces Direct with VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article provides an overview of Storage Spaces Direct (S2D) deployment in the System Center - Virtual Machine Manager (VMM) fabric.
 

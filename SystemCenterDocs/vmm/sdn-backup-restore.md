@@ -5,7 +5,7 @@ description: This article describes the procedure to back up and restore the sof
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Back up and restore the SDN infrastructure
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes the backup and recovery process of a software defined network (SDN) infrastructure in the System Center Virtual Machine Manager (VMM) fabric, and provides any applicable recommendations for the process completion.
 

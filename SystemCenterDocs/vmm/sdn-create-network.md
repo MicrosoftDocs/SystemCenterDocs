@@ -5,7 +5,7 @@ description: This article describes the procedure on how to create a VM network 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: virtual-machine-manager
@@ -14,7 +14,7 @@ ms.technology: virtual-machine-manager
 
 # Set up VM networks in SDN using VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article provides information about how to create VM networks in an SDN, using System Center - Virtual Machine Manager (VMM).
 

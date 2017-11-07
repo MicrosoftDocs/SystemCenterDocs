@@ -5,7 +5,7 @@ description: This article describes how to migrate a VM in VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/08/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 
 # Migrate a virtual machine in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes how to migrate a VM in System Center - Virtual Machine Manager (VMM).
 
