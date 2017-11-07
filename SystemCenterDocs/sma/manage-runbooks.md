@@ -21,7 +21,7 @@ As an administrator of a Service Management Automation (SMA) installation, you w
 
 ## Configuring runbook workers
 
-When you start a runbook job in Service Management Automation, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. RunbookWorker configuration property helps you achieve that. For more information on how runbooks are executed, see [Runbook Execution in Service Management Automation](~/sma/runbook-automation.md).
+When you start a runbook job in Service Management Automation, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. RunbookWorker configuration property helps you achieve that. For more information on how runbooks are executed, see [Runbook Execution in Service Management Automation](runbook-automation.md).
 
 
 ### Designating a runbook worker through the PowerShell ISE Add-on.
