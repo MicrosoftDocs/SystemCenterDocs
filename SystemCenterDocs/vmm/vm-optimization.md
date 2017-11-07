@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up dynamic and power optimization in the VMM compute fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 Read this article to learn about enabling dynamic optimization and power optimization for VMs in the System Center - Virtual Machine Manager (VMM) compute fabric. The article includes a feature overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
