@@ -12,7 +12,7 @@ ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# Configure guest clusters in SDN though VMM (Technical Preview)
+# Configure guest clusters in SDN through VMM (Technical Preview)
 
 This article explains about how to configure guest clusters in SDN using the System Center Virtual machine Manager preview 1711 (VMM 1711).
 
