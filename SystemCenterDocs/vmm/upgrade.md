@@ -9,7 +9,7 @@ ms.date: 11/07/2017
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-2916'
+monikerRange: 'sc-vmm-2016'
 ---
 
 # Upgrade to System Center 2016 - VMM
