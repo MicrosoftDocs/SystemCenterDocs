@@ -59,13 +59,13 @@ There are two methods for creating a VM template:
 
 You can create VMs based on the template you've just created.
 
-### Assign a storage QoS policy template
-
 ::: moniker range="sc-vmm-1711"
 
-- After step 3 in the [previous procedure](#Create-a-VM-template-based-on-a VM-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
+### Assign a storage QoS policy template (Technical Preview)
 
-- Proceed with rest of the steps to complete the wizard
+1. After step 3 in the [previous procedure](#Create-a-VM-template-based-on-a-VM-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
+
+2. Proceed with rest of the steps to complete the wizard.
 
 ::: moniker-end
 

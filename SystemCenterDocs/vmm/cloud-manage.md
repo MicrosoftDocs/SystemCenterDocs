@@ -5,15 +5,13 @@ description: This article provides instructions for managing a private cloud in 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/01/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
 # Manage VMM cloud settings
-
->Applies To: System Center 2016 - Virtual Machine Manager
 
 This article describes how to manage System Center - Virtual Machine Manager (VMM) cloud settings.
 

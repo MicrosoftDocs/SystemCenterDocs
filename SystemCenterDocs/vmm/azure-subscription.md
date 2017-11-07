@@ -5,7 +5,7 @@ description: This article describes how to add an Azure subscription, so that yo
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/01/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,7 +13,6 @@ ms.technology:  virtual-machine-manager
 
 # Add an Azure subscription in VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.
 

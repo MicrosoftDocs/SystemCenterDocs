@@ -10,6 +10,7 @@ keywords:
 ms.date: 01/04/2017
 ms.technology:  service-manager
 ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
+monikerRange: 'sc-sm-2016'
 ---
 
 # What's new in System Center 2016 - Service Manager
@@ -18,7 +19,7 @@ ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 
 System Center 2016 - Service Manager is updated for the release to manufacturing (RTM) version.
 
-For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](../get-started/release-notes.md).
+For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](release-notes.md).
 
 ## Support for SQL Server 2014 SP2
 

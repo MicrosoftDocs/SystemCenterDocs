@@ -12,7 +12,7 @@ ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# Manage storage QoS for clusters (Technical preview)
+# Manage storage QoS for clusters (Technical Preview)
 
 This article describes about how to manage storage quality-of-service (QoS) policies for clusters in the System Center Virtual Machine Manager preview, 1711 (VMM 1711).  
 
@@ -49,10 +49,11 @@ The following new parameters are added:
 **Get-SCStorageQoSPolicy**	 |-HostCluster | Specifies a HostCluster object for which we want to query the QoS policies. **Optional**.
 
 
-## Create a storage QoS Policy from templates
+## Assign  a storage QoS Policy from templates
    Templates usage is a common way for deploying VMs and Services on a cloud.
 
-   With VMM 1711 you can select storage QoS policies in a template as well. For information on how to create storage QoS policies from templates, see the procedure on [create a VM template](library-vm-templates.md).
+   With VMM 1711, you can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in  [create a VM template](library-vm-templates.md) article.
 
 
-## [Manage QoS](https://docs.microsoft.com/en-us/system-center/vmm/manage-sofs-qos )
+## Next steps
+  [Manage QoS](https://docs.microsoft.com/en-us/system-center/vmm/manage-sofs-qos )

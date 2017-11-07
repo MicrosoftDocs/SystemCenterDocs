@@ -77,7 +77,7 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
 ### Connectivity issues for SLB addresses.
 
 **Description**: For frontend and backend IP addresses assigned to Software Load Balancer MUX VMs, you might experience connectivity issues if **Register this connection's address in DNS** is select.
-**Workaround**: Clear the setting to avoid issues with these IP addresses. 
+**Workaround**: Clear the setting to avoid issues with these IP addresses.
 
 
 
@@ -85,7 +85,7 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
 
 ### Upgrading a cluster's functional level does not refresh file server information
 **Description**: If you upgrade the functional level for a cluster that includes a file server, the platform information isn't automatically updated in the VMM database.
-**Workaround**: After upgrading the cluster functional level, refresh the storage provider for the File Server. 
+**Workaround**: After upgrading the cluster functional level, refresh the storage provider for the File Server.
 
 ### Updating a Storage Spaces Direct cluster in VMM will fail
 **Description**: Updating a Storage Spaces Direct cluster (hyper-converged or disaggregated) using VMM isn't supported, and might cause data loss.
@@ -101,7 +101,7 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
 
 ### Cluster rolling upgrade doesn't do live migration of VMs that aren't highly available
 **Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it does not live VMs that aren't high-available aren't migrated live, and are moved to a saved state.
-**Workaround**: Either make all cluster VMs highly available before the upgrade, or do a manual live migration for them. 
+**Workaround**: Either make all cluster VMs highly available before the upgrade, or do a manual live migration for them.
 
 ### You need manual steps to add a Nano Server-based host located in an untrusted domain
 **Description**: Trying to add a Nano Server-based host in an untrusted domain fails.
@@ -109,16 +109,16 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
 
 1.  Enable WINRM over HTTPS:
 
-      `` 
+      ``
       New-Item -Path WSMan:\LocalHost\Listener -Transport HTTPS -Address * -CertificateThumbPrint $cert.Thumbprint –Force
       ``
 
 2.  Create an firewall exception on the host, to allow WINRM over HTTPS:
 
-      `` 
+      ``
       New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
       ``
-      
+
 
 ### You can't add Nano Server-based hosts located in a perimeter network
 **Description:** Trying to add a Nano Server-based host located in a perimter network using the Add Resource Wizard fails.
@@ -136,7 +136,7 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
     New-NetFirewallRule -DisplayName 'Windows Remote Management (HTTPS-In)' -Name 'Windows Remote Management (HTTPS-In)' -Profile Any -LocalPort 5986 -Protocol TCP
     ``
 
-### Bare metal deployment of hosts might fail during a highly available upgrade 
+### Bare metal deployment of hosts might fail during a highly available upgrade
 **Description**: After a highly available upgrade to VMM 2016, VMM might incorrectly update the Windows Deployment Services (WDS) registry key, HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER, to 'HOST/VIRT-VMM-1', instead of 'SCVMM/VIRT-VMM-1'. This will cause failures in bare metal deployment.
 **Workaround**: Manually change the registry entry for HKLM\SYSTEM\CCS\SERVICES\WDSSERVER\PROVIDER\WDSPXE\PROVIDES\VMMOSDPROVIDER to 'SCVMM/VIRT-VMM-1'.
 
@@ -172,7 +172,7 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
 **Workaround**: Ignore the error.
 
 ###  VMM doesn't show correct information for a hyper-converged  cluster, or Storage Spaces Direct SOFS
-**Description**: After you add an existing hyper-converged cluster or Storage Spaces Direct SOFS cluster to the VMM fabric, the Storage Provider isn't added, and some properties aren't available. 
+**Description**: After you add an existing hyper-converged cluster or Storage Spaces Direct SOFS cluster to the VMM fabric, the Storage Provider isn't added, and some properties aren't available.
 **Workaround**: Install the latest VMM update rollup. The issue was fixed in update rollup 2.
 
 
@@ -220,15 +220,4 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ## SQL Server Analysis Services (SSAS) integration doesn't work in VMM and Operations Manager Update Rollup 1.
 **Description**: If you're runnning Upate Rollup 1, you can't configure SSAS for SQL Server.
-**Workaround:** Dowload the latest Update Rollups. The issue was fixed in Update Rollup 2. 
-
-
-
-
-
-
-
-
-
-
-
+**Workaround:** Dowload the latest Update Rollups. The issue was fixed in Update Rollup 2.
