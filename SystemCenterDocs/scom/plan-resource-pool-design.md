@@ -14,8 +14,6 @@ ms.topic: article
 
 # Resource pool design considerations
 
->Applies To: System Center 2016 - Operations Manager
-
 A Resource Pool is a logical grouping of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In other words, they provide high availability and scalability for workflows.  When designing a management group, considerations must be made for monitoring of network devices, Linux/UNIX systems, and other workloads that are designed to take advantage of a resource pool.  
 
 ## Overview

@@ -17,8 +17,6 @@ ms.assetid: e481f3b8-4074-4b51-9faa-93e35f4ffe68
 
 # Prepare for Service Manager disaster recovery
 
->Applies To: System Center 2016 - Service Manager
-
 This article describes the steps that you must take for Service Manager disaster recovery before problems occur. The steps that you take to recover from a disaster are based on completion of the steps that are outlined here. In general, preparing your Service Manager environment for disaster recovery involves the following:  
 
 1.  Deploying Service Manager with management servers and databases on separate computers.  

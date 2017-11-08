@@ -14,8 +14,6 @@ ms.assetid:  26697203-df1e-4232-b9be-7c9976a362b8
 
 # SQL Server requirements for System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Microsoft SQL Server hosts the databases that System Center 2016 - Service Manager creates. In addition, System Center 2016 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 - Service Manager reporting.
 
 Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016. Use this information whether you are deploying one or multiple components of System Center.

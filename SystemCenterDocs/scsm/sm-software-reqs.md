@@ -17,8 +17,6 @@ ms.assetid: 787b218d-2f31-41e2-a8c7-3365972d029b
 
 # Software Requirements for System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This article describes the software requirements for Service Manager in System Center 2016 - Service Manager.
 
 ## Software requirements

@@ -15,8 +15,6 @@ monikerRange: 'sc-sm-2016'
 
 # What's new in System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 System Center 2016 - Service Manager is updated for the release to manufacturing (RTM) version.
 
 For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](release-notes.md).

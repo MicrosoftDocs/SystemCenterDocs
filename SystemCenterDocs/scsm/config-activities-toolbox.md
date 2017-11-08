@@ -17,8 +17,6 @@ ms.assetid: fed6eb78-2fb6-432d-9c47-8d3502956ab4
 
 # Configure the Activities Toolbox in the Service Manager Authoring Tool
 
->Applies To: System Center 2016 - Service Manager
-
 There are two ways to configure the Activities Toolbox in the Service Manager Authoring Tool:
 
 - Modify the default toolbox by adding or removing custom activities. These changes require administrative-level permissions, and they are visible to all users of the Authoring Tool.

@@ -14,8 +14,6 @@ ms.assetid:  b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 
 # Features Removed or Deprecated from System Center 2016
 
->Applies To: System Center 2016
-
 The features and capabilities  listed below  are not included in the System Center 2016. Applications, code, or usage that depends  on these features will not function in this release unless you employ an alternate method. This list is subject to change in subsequent releases and may not include every removed feature or capability.
 
 ## Silverlight based Self Service Portal for System Center Service Manager

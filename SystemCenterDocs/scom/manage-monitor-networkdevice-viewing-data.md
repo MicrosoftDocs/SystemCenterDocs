@@ -14,8 +14,6 @@ ms.assetid:  f210ed66-1bed-4571-b506-868258f33329
 
 # Viewing network devices and data in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 After System Center Operations Manager discovers your network devices, you can view information about the devices using the following procedures.
 
 > [!IMPORTANT]

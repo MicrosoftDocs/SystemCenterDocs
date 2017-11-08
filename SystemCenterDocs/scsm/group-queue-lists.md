@@ -14,8 +14,6 @@ ms.assetid:  360fa976-6b9c-4521-a9d4-77250233449e
 
 # Using Groups, Queues, and Lists in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 In Service Manager, you can use groups to manage configuration items, queues to manage work items, and lists to customize forms to classify different objects, such as incidents, change requests, activities, or configuration items. Use the overview and the procedures in the following topics to help manage these items.
 
 The **Library** pane in Service Manager contains items, such as groups, queues, and lists. You can use groups to manage configuration items, and you can use queues to manage work items. You can use lists to customize forms.

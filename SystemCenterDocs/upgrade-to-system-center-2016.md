@@ -14,8 +14,6 @@ ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 
 # Upgrade to System Center 2016
 
->Applies To: System Center 2016
-
 If you are already running System Center 2012 R2 you can upgrade your environment to System Center 2016 by following the procedures and guidance in this article. Microsoft only supports upgrading from System Center 2012 R2 from one of the supported update rollup installations listed in the supported upgrade paths sections.
 
 

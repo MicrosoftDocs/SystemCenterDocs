@@ -14,8 +14,6 @@ ms.assetid: 8dfd8f03-85ac-4231-8861-1d98e354cf94
 
 # How to configure grooming settings for the Reporting data warehouse database
 
->Applies To: System Center 2016 - Operations Manager
-
 The Reporting data warehouse stores data for a specified length of time, depending on the data (Alert, State, Event, Aem, or Performance) and the aggregation type (raw data, hourly aggregations, daily aggregations).  The database is set up to delete older data in order to maintain performance by managing its size.  Deleting the older data is called **grooming**.  
   
 The following table highlights the default data types and retention period after initial setup of the data warehouse database.

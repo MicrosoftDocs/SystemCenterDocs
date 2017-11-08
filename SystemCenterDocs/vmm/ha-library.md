@@ -13,8 +13,6 @@ ms.technology:  virtual-machine-manager
 
 # Deploy a highly available VMM library
 
->Applies To: System Center 2016 - Virtual Machine Manager
-
 This article describes the steps for deploying a highly available System Center - Virtual Machine Manager (VMM) library. You set up a Windows failover cluster running the File Server role. Then you create file shares on the cluster, and assign them as VMM library shares.
 
 

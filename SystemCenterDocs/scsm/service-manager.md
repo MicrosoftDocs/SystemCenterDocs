@@ -15,8 +15,6 @@ ms.assetid: e55f0638-e18b-403f-b255-5f8aa464d7e5
 
 # System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
 
 - The what's new section describes new capabilities and changes in Service Manager.

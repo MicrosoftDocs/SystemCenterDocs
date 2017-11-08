@@ -13,8 +13,6 @@ ms.assetid:  09b8fca5-e1db-4775-910d-48cb8214401b
 
 # How to purge the Service Management Automation database
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
-
 In Service Management Automation, database purging is automatic, but you can adjust it to your needs.
 
 To enable the automatic database purge, you must enable the SQL Server Agent (MSSQLSERVER) service for Automatic start. The service is not turned on by default, but it is frequently started by SQL Server database administrators for other tasks.

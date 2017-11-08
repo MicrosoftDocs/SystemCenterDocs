@@ -14,8 +14,6 @@ ms.topic:  article
 
 # Planning Security Credentials for Accessing Unix and Linux Computers
 
->Applies To: System Center 2016 - Operations Manager
-
 This topic describes the credentials required to install, maintain, upgrade, and uninstall agents on a UNIX or Linux computer.
 
 In Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:

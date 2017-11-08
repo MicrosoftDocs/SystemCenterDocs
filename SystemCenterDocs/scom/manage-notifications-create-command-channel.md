@@ -14,8 +14,6 @@ ms.assetid: 230eadbd-2a79-4987-903f-4bd0c85536fd
 
 # How to enable a command notification channel
 
->Applies To: System Center 2016 - Operations Manager
-
 To configure alert notifications for System Center 2016 - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that runs an executable program automatically in response to an alert.  
   
 To create a command notification channel, you need the following information:  

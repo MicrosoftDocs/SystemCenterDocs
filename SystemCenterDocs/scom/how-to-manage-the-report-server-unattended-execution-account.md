@@ -13,8 +13,6 @@ ms.topic: article
 
 # How to Manage the Report Server Unattended Execution Account in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 The Operations Manager Report Server unattended execution account is used to query data from the Reporting data warehouse. Be sure to use an account that has minimum permissions (read-only access with network connection permissions is sufficient). This account is not managed from within the Operations Manager user interface. Use this procedure to change the user name or password for this account.  
   
 ### To manage the Report Server unattended execution account  

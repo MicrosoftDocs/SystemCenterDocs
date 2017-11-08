@@ -17,8 +17,6 @@ ms.assetid: 21c80dca-3dee-40bd-b39c-85f28ef1d40c
 
 # Disaster recovery for System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 A recovery plan for potential software and equipment failures in your System Center 2016 - Service Manager environment requires a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases. During installation, you must back up the encryption keys on all the management servers, both the Service Manager management server and data warehouse management servers.  
 
 ![cloud symbol](./media/disaster-recovery/disaster-all_symbols_cloud.png)

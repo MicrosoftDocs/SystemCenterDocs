@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to manage resource pools
 
->Applies To: System Center 2016 - Operations Manager
-
 A Resource Pool is a collection of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In this section we will cover how to create and modify resource pools and their membership, as well as properly configure a resource pool dedicated to monitor UNIX and Linux computers.
 
 

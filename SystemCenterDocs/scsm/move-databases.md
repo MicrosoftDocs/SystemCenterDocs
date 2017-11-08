@@ -17,8 +17,6 @@ ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 
 # Move the Service Manager and data warehouse databases to different servers
 
->Applies To: System Center 2016 - Service Manager
-
 After you have deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following:  
 
 -   You need to replace hardware that is experiencing issues and that is no longer considered reliable.  
@@ -124,8 +122,6 @@ You must use the following high\-level steps to move the Service Manager databas
     ```  
 
 ## Move data warehouse databases
-
->Applies To: System Center 2016 - Service Manager
 
 The following high\-level steps are required to move the data warehouse databases. Each step in this list links to an associated procedure later in this document.  
 

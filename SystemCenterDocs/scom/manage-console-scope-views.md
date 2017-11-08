@@ -14,8 +14,6 @@ ms.assetid: ac556a83-37b4-4388-b033-d1a59c52ab79
 
 # How to create and scope views in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager Operations console views and dashboards display information that meets specific criteria. When you select a view, a query is sent to the Operations Manager database and the results of the query are displayed in the results pane. With dashboards, the performance widget queries the data warehouse database.     
 
 You can use the standard views created when Operations Manager is installed, views provided by management packs, or create your own custom views.  

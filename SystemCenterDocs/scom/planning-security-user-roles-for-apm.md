@@ -13,8 +13,6 @@ ms.topic: article
 ---
 
 # User Roles for Application Performance Monitoring
-
->Applies To: System Center 2016 - Operations Manager
   
 ## .NET Application Performance Monitoring tasks and user roles  
 

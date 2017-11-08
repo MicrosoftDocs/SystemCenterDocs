@@ -17,8 +17,6 @@ ms.assetid: 95b4f9e4-e6f3-4d04-9b11-aeba6bea22ec
 
 # Install Service Manager on two computers
 
->Applies To: System Center 2016 - Service Manager
-
 If you want to evaluate System Center - Service Manager and its reporting capabilities in a lab environment, we recommend that you install the Service Manager management server and data warehouse management server on two computers. The first computer hosts the Service Manager management server and the Service Manager database. The second computer hosts the data warehouse management server and the data warehouse databases. This deployment topology is shown in figure&nbsp;1.  
 
  **Figure 1: An installation on two physical computers**  

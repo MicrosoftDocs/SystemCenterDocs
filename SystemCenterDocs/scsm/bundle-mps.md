@@ -17,8 +17,6 @@ ms.assetid: c9cb6eaf-d744-4f91-b1d4-3294812953df
 
 # Bundle management packs and resource files
 
->Applies To: System Center 2016 - Service Manager
-
 A custom management pack might include references to resources, such as an image or a form assembly. To import such a management pack into Service Manager, you must first bundle the management pack file and its associated resources into a single .mpb management pack file.  
 
  In Service Manager, to bundle a management pack file with its resources, use the Windows&nbsp;PowerShell cmdlet **New\-SCSMManagementPackBundle**. For more information about this cmdlet, see [New\-SCSMManagementPackBundle](https://go.microsoft.com/fwlink/p/?LinkID=225397).  

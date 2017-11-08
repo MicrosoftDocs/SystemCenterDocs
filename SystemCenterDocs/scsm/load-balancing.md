@@ -17,8 +17,6 @@ ms.assetid: 129bc3fe-8a6f-4edb-b15f-1f0d42e6bf24
 
 # Guidance for load balancing in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This article describes how you can load-balance Service Manager management servers in Service Manager.  
 
 ## Load-balancing Service Manager management servers

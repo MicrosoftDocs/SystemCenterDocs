@@ -17,8 +17,6 @@ manager: carmonm
 
 # Exchange users integration pack
 
-Applies To: System Center 2016 Orchestrator
-
 Integration packs are add-ons for Orchestrator, a component of System Center 2016. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third party products. The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to send email messages, create appointments, or update tasks.
 
 Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).

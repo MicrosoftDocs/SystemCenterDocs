@@ -17,8 +17,6 @@ ms.assetid: 9b9268e9-2ad8-4781-990c-ee683fd21d02
 
 # Implement Service Manager disaster recovery
 
->Applies To: System Center 2016 - Service Manager
-
 This article describes the steps needed to recover from potential software and equipment failures in your Service Manager environment. It includes information about how to recover Service Manager databases, management servers, and unsealed management packs.  
 
 ## Restore a database

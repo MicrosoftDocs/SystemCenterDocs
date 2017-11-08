@@ -13,8 +13,6 @@ ms.topic: article
 
 # How to create an attribute
 
->Applies To: System Center 2016 - Operations Manager
-
 Use the Create Attribute Wizard to create a new attribute for a management pack. For more information, see [Attributes](https://technet.microsoft.com/library/hh457609.aspx) in the Authoring Guide.
 
 > [!WARNING]

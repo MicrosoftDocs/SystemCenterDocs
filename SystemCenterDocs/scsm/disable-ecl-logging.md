@@ -16,8 +16,6 @@ ms.assetid: 805b479a-9312-4039-be44-01dda07086d8
 
 # Optionally disable Service Manager ECL logging for faster connector synchronization
 
->Applies To: System Center 2016 - Service Manager
-
 You can watch this [video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Optionally-Disable-ECL-Logging-for-Faster-Connector-Synchronization-with-Service-Manager?ocid=player) for a quick overview of this feature. For more details, continue reading the article.
 
 The Active Directory (AD) and System Center Configuration Manager (SCCM) connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem in some cases, it can slow down the system significantly.

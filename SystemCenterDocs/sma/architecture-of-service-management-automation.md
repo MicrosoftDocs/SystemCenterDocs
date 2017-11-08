@@ -14,8 +14,6 @@ ms.assetid:  cefc0b34-d77a-4f17-8f69-68b4282beea7
 
 # Architecture of Service Management Automation
 
->Applies To: System Center 2016 - Service Management Automation
-
 The following diagram illustrates each of the Service Management Automation features and the communication between them.
 
 ![SMA Architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)

@@ -17,8 +17,6 @@ ms.assetid: 1f621771-00da-4dd8-a96f-9a0b243c3d88
 
 # Work with Service Manager management pack XML files
 
->Applies To: System Center 2016 - Service Manager
-
 For elaborate customizations of management packs, the Service Manager console and the Service Manager Authoring Tool might not be sufficient, and you might need to author or modify management pack files directly. Working directly with management pack files requires in\-depth knowledge in several areas, such as the System Center Common Schema and the structure of management packs.  
 
  This section provides background information and guidelines that can help you author and modify management packs to customize Service Manager.  

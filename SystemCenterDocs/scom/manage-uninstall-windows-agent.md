@@ -14,8 +14,6 @@ ms.topic: article
 
 # Uninstall Agent from Windows-based Computers
 
->Applies To: System Center 2016 - Operations Manager
-
 Use one of the following procedures to uninstall an System Center Operations Manager agent from an agent-managed computer.
 
 ## Uninstall the agent by using the Operations console

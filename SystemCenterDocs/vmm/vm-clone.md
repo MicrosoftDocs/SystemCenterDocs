@@ -14,8 +14,6 @@ ms.technology:  virtual-machine-manager
 
 # Clone VMs from another VM in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
-
 This article describes how to create and deploy virtual machines by cloning existing VMs in the System Center - Virtual Machine Manager (VMM) fabric.
 
 

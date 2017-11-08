@@ -14,9 +14,9 @@ ms.topic: article
 
 # How to upgrade a gateway server to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
 
-After you upgrade the management servers in your management group, you upgrade any gateway servers.  The procedure to upgrade a gateway server to System Center 2016 - Operations Manager is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, make sure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements)
+After you upgrade the management servers in your management group, you upgrade any gateway servers.  The procedure to upgrade a gateway server to System Center 2016 - Operations Manager is performed locally on the gateway server. You can then verify whether the upgrade is successful. Before you begin the upgrade process, make sure that your gateway server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md)
+
 
 ## To upgrade a gateway server
 

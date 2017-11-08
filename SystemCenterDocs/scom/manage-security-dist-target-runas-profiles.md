@@ -14,8 +14,6 @@ ms.topic: article
 
 # Distribution and targeting for Run As accounts and profiles
 
->Applies To: System Center 2016 - Operations Manager
-
 Run As accounts are associated with Run As profiles to provide the necessary credentials for workflows that use that Run As profile to run successfully. Both distribution and targeting of Run As accounts must be correctly configured for the Run As profile to work properly.  
   
 When you configure a Run As profile, you select the Run As accounts you want to associate with the Run As profile. When you create that association, you specify the class, group, or object that the Run As account will be used to manage, as shown in the following image. This establishes the target of the Run As account.  

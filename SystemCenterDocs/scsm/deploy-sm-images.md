@@ -17,8 +17,6 @@ ms.assetid: 22f049e0-a591-447c-b299-df44e3d95784
 
 # Create and deploy server images of Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 You can use the information in this article to create a system image that contains Windows server, SQL Server, and Service Manager for use as a template that you can apply to new servers. Follow the basic steps below to prepare the image. You can modify them, as needed for your environment. For more information about the Windows System Preparation Tool, [What is Sysprep?](https://go.microsoft.com/fwlink/p/?LinkId=271473)  
 
 > [!NOTE]  

@@ -13,8 +13,6 @@ ms.topic: article
 
 # Configure authentication for the Reporting server
 
->Applies To: System Center 2016 - Operations Manager
-
 Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
 
 

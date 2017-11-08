@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to upgrade a Web Console to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 If you have a stand-alone System Center 2012 Service Pack 1 (SP1) Operations Manager Web console server, you must upgrade it to System Center 2012 R2 Operations Manager before proceeding with these steps.
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements)

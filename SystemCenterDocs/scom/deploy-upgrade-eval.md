@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to upgrade from the evaluation version of Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 The System Center 2016 – Operations Manager evaluation version expires 180 days after you install it. 
 
 To upgrade from an evaluation version of Operations Manager to a licensed version, you must obtain a valid product key from Microsoft. For information about Operations Manager licensing, see [System Center 2016 Licensing](https://www.microsoft.com/cloud-platform/system-center-2016). 

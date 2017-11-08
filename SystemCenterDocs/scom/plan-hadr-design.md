@@ -14,8 +14,6 @@ ms.topic: article
 
 # High Availability and Disaster Recovery
 
->Applies To: System Center 2016 - Operations Manager
-
 Various System Center 2016 – Operations Manager servers and features can potentially fail, impacting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to recover the failing feature. 
 
 ## High availability

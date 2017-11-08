@@ -17,8 +17,6 @@ ms.assetid: 1d7437cd-2451-417e-b415-735bdca051b8
 
 # Customize and author classes with Service Manager authoring
 
->Applies To: System Center 2016 - Service Manager
-
 A class is the main element that is used to represent objects that are used in Service Manager. A class can represent a computer, a user, an incident, or a form.  
 
  Class definitions that represent a larger element, such as a Service Manager feature, are often grouped together. Class definitions are stored in management packs that must be imported into Service Manager to enable Service Manager functionality.  
