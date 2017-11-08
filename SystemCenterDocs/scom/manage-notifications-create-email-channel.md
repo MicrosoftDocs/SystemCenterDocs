@@ -14,8 +14,6 @@ ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
 
 # How to enable an email notification channel
 
->Applies To: System Center 2016 - Operations Manager
-
 To configure alert notifications for System Center 2016 - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
   
 Before you begin, gather the following information:  

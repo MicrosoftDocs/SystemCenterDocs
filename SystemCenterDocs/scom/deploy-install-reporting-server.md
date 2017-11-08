@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to install the Operations Manager Reporting server
 
->Applies To: System Center 2016 - Operations Manager
-
 In this procedure, the Reporting server is installed on a stand-alone server that is hosting the SQL Server database and SQL Server Reporting Services.
 
 > [!WARNING]

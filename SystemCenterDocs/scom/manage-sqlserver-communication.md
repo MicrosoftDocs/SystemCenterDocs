@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to configure Operations Manager to communicate with SQL Server
 
->Applies To: System Center 2016 - Operations Manager
-
 If after installing System Center 2016 - Operations Manager, you move the Operations Manager operational or data warehouse database to a different SQL Server instance, move the databases to a SQL Server Always On availability group, or reconfigure the SQL Server instance, you will need to follow the steps below to reconfigure the management group to reference the new TCP/IP Port, instance name, or computer name.  
 
 ## How to configure the Operations Manager operational database

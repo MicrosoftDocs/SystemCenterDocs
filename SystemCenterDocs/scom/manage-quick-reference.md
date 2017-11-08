@@ -14,8 +14,6 @@ ms.topic: article
 
 # Quick reference to Operations Manager tasks
 
->Applies To: System Center 2016 - Operations Manager
-
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 
 |To perform this task|Do this|

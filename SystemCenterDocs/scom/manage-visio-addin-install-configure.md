@@ -14,8 +14,6 @@ ms.assetid: ac69f3db-00ab-4ca3-a2fc-f87d4503f1ed
 
 # Install the Visio Add-in
 
->Applies To: System Center 2016 - Operations Manager
-
 You can download the Visio Add-in from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=29268).  
 
 The Visio Add-in for System Center 2016 - Operations Manager has the following prerequisites:  

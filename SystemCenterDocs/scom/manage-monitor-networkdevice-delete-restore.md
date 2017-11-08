@@ -14,8 +14,6 @@ ms.assetid: 85dae573-5813-4fd1-b81a-6a05f6e1cb7f
 
 # How to delete or restore a network device in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 After System Center 2016 - Operations Manager has discovered and is monitoring a network device, you might want to stop monitoring the device because it is being replaced or because there is no business value in monitoring that particular device or for any other reason. To stop monitoring a device, you can use maintenance mode or you can delete the network device from the discovery rule. You can also restore a deleted device that was discovered by a recursive discovery rule.  
   
 To delete a device that is the starting point for recursive discovery, you must first delete the discovery rule or remove the device from the discovery rule.  

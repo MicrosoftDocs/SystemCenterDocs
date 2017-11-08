@@ -13,8 +13,6 @@ ms.topic: article
 
 # How to enable or disable a rule or monitor
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, if a management pack's default settings contain a monitor or rule that is not necessary in your environment, you can use overrides to disable this monitor or rule. In addition, some management packs ship with some rules or monitors disabled; you should read the management pack guide to identify the workflows that are disabled by default and determine if you should enable any of them for your monitoring needs. For example, the management packs for network monitoring contain rules and monitors that are vendor-specific. Many vendor-specific rules and monitors in the network management pack are disabled to avoid performance impact. You should identify the devices used in your environment and use overrides to enable the rules and monitors specific to your devices.  
   
 ## To enable or disable a monitor or rule using overrides  

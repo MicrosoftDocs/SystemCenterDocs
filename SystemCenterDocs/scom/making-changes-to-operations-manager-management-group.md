@@ -14,8 +14,6 @@ ms.topic: article
 
 # Making changes to an Operations Manager Management Group
 
->Applies To: System Center 2016 - Operations Manager
-
 After the initial deployment of System Center 2016 – Operations Manager, you might need to make changes or upgrades to the original deployment for reasons such as the following: 
 
 - You need to replace hardware that is experiencing problems and that is no longer considered reliable.  

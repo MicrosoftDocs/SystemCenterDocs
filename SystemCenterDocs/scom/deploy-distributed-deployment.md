@@ -14,8 +14,6 @@ ms.topic: article
 
 # Distributed deployment of Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 The distributed management group installation will form the foundation of 99 percent of Operations Manager deployments. It allows for the distribution of features and services across multiple servers to allow for scalability. It can include all Operations Manager server roles and supports the monitoring of devices across trust boundaries through the use of the gateway server.
 
 ## System Center 2016 - Operations Manager features

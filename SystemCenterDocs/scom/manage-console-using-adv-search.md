@@ -14,8 +14,6 @@ ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
 
 # Using advanced search
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, advanced search is available in My Workspace, when you create a new search. You can also open advanced search in the Monitoring workspace on the **Tools** menu.  
   
 Use advanced search to search for a specific object type that meets specified criteria. Advanced search has two steps:  

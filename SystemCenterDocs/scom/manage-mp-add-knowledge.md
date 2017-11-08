@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to add knowledge to a management pack
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.  
   
 Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is embedded in a rule or monitor when it is authored. Company knowledge is added by management group administrators to expand the troubleshooting information and provide company\-specific information for operators. Administrators can use company knowledge to document any overrides implemented for a monitor or rule, along with the explanation for the customization and any other information that might be useful.  

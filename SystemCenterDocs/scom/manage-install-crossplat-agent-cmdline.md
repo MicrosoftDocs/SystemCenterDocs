@@ -14,8 +14,6 @@ ms.topic: article
 
 # Install agent and certificate on UNIX and Linux computers using the command line
 
->Applies To: System Center 2016 - Operations Manager
-
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager 2016 - Operations Manager.  The agent packages can be found in the the following folder on a management server - *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits* after you import  the required management packs for the specific version of UNIX/Linux you need to monitor.  The management pack are available in the Operations Manager installation media, in the *\ManagementPacks* directory or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=29696).
 
 ## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server

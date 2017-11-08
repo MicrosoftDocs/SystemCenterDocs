@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to upgrade agents in a parallel deployment
 
->Applies To: System Center 2016 - Operations Manager
-
 When you perform a side-by-side deployment of System Center 2016 - Operations Manager (also referred to as a parallel deployment) with your existing System Center 2012 R2 Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.  The agents reporting to the Operations Manager 2012 R2 management group can be upgraded to System Center 2016 - Operations Manager and are fully capable of communicating with both management groups until you complete your migration and retire the Operations Manager 2012 R2 management group.  
 
 ## Upgrading agents to System Center 2016 - Operations Manager
