@@ -13,7 +13,7 @@ ms.assetid: c2b63b0a-4c6e-40b3-a75e-2ca514df3bc4
 ---
 
 # Operations Guide for System Center 2012 - Operations Manager
-Operations Manager, a component of System Center, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by using numerous views that show state, health, and performance information, as well as alerts generated indicating availability, performance, configuration and security issues affecting the health of the service.  
+Operations Manager, a component of System Center, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by receiving alerts and using numerous views providing insight into health, security, performance, or configuration issues affecting the health of the service.  
   
 The Operations Guide is a comprehensive resource that can be used to understand and use Operations Manager. The Operations Guide covers administrative, monitoring, reporting, and operating tasks typically performed by an administrator or operator. It follows the Operations Manager Deployment Guide in order of use during an Operations Manager implementation project, but does not assume that the administrator or operator participated in the installation of the Operations Manager infrastructure.  
   
@@ -31,7 +31,7 @@ If you are familiar with earlier versions of Operations Manage, you should read 
   
 -   Managing discovery and agents
 
-    This section provides guidance for managing discovery and agent installation on a Windows, UNIX, Linux and Nano Server operating systems from the Operations console or manually from the command-line.  
+    This section provides guidance for managing discovery and agent installation on a Windows, UNIX, Linux, and Nano Server operating systems from the Operations console or manually from the command line.  
 
 -   [Using management packs](manage-overview-management-pack.md)
 
@@ -47,7 +47,7 @@ If you are familiar with earlier versions of Operations Manage, you should read 
   
 -   [Using Reports](manage-reports-installed-during-setup.md)
 
-    This section covers the reports provided in Operations Manager, how to create custom reports, save, run and export them, and schedule specific reports for distrubtion or save to a centralized location for operations, service owners, or engineering to review.       
+    This section covers the reports provided in Operations Manager, how to create custom reports, run, save, and export reports, and schedule specific reports for distribution for operations, service owners, or engineering to review.       
   
 -   [Subscribe to alert notifications](manage-notifications-alert-notifications.md)
 
@@ -55,7 +55,7 @@ If you are familiar with earlier versions of Operations Manage, you should read 
 
 -   [Using views and dashboards](manage-console-view-types.md)
 
-    This section provides guidance on how to view the operational data collected from the environment and gain insight into the performance of your service, its health state, or the issues detected through different visualizations availble in the Operations and Web consoles.  
+    This section provides guidance on how to view the operational data collected from the environment and gain insight into the performance of your service, its health state, or the issues detected through different visualizations available in the Operations and Web consoles.  
 
 -   [Manage alerts](manage-alert-generation-overview.md)
 
