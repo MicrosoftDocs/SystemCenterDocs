@@ -18,8 +18,6 @@ robots: noindex
 
 # Deploy Program activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The Deploy Program activity is used to assign legacy application
 deployments (packages and programs) to a Collection. This activity
 requires an existing Configuration Manager package and program.

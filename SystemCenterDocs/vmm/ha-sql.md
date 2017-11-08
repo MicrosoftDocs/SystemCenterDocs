@@ -5,14 +5,14 @@ description: This article explains how to set up SQL Server as highly available 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 # Deploy SQL Server for VMM high availability
 
->Applies To: System Center 2016 - Virtual Machine Manager
+
 
 This article describes the steps for deploying a highly available SQL Server database for System Center 2016 - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with Always On Availability Groups.
 

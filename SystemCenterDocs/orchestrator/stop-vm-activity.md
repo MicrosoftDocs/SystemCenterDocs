@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Stop VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Stop VM activity is used in a runbook to stop a virtual machine that has already been added to a VMware vSphere server. This allows the runbook to stop a virtual machine before deleting it using the Delete VM activity.
 
 The following tables list the required and optional properties and published data for this activity.

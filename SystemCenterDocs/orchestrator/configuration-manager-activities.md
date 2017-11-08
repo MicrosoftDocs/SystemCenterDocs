@@ -18,8 +18,6 @@ robots: noindex
 
 # Configuration Manager Integration Pack Activities for System Center 2016 - Orchestrator
 
-Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in this integration pack.
 
 **Activity Properties**

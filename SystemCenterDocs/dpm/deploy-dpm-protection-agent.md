@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2016
 title:  Deploy the DPM protection agent
 ms.technology:  data-protection-manager
 ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
@@ -14,9 +14,7 @@ ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
 
 # Deploy the DPM protection agent
 
->Applies To: System Center 2016 - Data Protection Manager
-
-The DPM protection agent is software that you install on each computer that contains data you
+The System Center Data Protection Manager (DPM) protection agent is software that you install on each computer that contains data you
 want to back up with DPM. It consists of two components - the protection agent itself and an agent coordinator. Here's what it does:
 
 -   Identifies data that DPM can protect and recover.
@@ -61,7 +59,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
     -   The first time you use the wizard DPM queries Active Directory to get a list of available computers. After the first installation, DPM stores the list of computers in its database, which is updated once each day by the auto-discovery process.
 
-    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name of the computer that you want to protect (for example, *&lt;Computer1&gt;*.Domain1.contoso.com**, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contoso.com* is the domain to which the target computer belongs.
+    -   To find a computer in another domain that has a two-way trust relationship with the domain that the DPM server is located in, you must type the fully qualified domain name of the computer that you want to protect (for example, *&lt;Computer1&gt;.Domain1.contoso.com*, where *Computer1* is the name of the computer that you want to protect, and *Domain1.contoso.com* is the domain to which the target computer belongs.
 
     -   The **Advanced** button page is enabled only when there is more than one version of a protection agent available for installation on the computers. You can use this option to install a previous version of the protection agent that was installed before you upgraded DPM server to a more recent version.
 

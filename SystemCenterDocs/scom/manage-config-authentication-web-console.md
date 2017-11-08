@@ -13,8 +13,6 @@ ms.topic: article
 
 # Configure authentication with the Web console
 
->Applies To: System Center 2016 - Operations Manager
-
 ## Configure SSL encryption
 
 The following steps are necessary to configure Secure Sockets Layer (SSL) encryption after the Operations Manager Web console server has been installed on an Internet Information Services (IIS) 7.0 and higher web server.  Before performing these steps, you should first review  [Configuring Secure Sockets Layer in IIS 7](https://technet.microsoft.com/en-us/library/cc771438%28v=ws.10%29.aspx) and configure IIS to enable SSL for the web server hosting the Web console.  
@@ -38,7 +36,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 4. Save and close the file when finished.
 5. Click **Start**, click **Run**, type **regedit&**, and then click **OK**.
 
-5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\**, double-click the value **HTTP_GET_ENABLED** and change its value to **false**.  Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.  
+5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\***, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
 6. After completing the above steps, reset the Web site hosting the Operations Manager Web console.  
 
 

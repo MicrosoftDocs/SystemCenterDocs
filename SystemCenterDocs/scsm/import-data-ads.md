@@ -14,8 +14,6 @@ ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
 
 # Import data from Active Directory Domain Services
 
->Applies To: System Center 2016 - Service Manager
-
 The Service Manager database in Service Manager contains information about your enterprise, and it is used by all the parts of your service management structure. You can use an Active Directory connector to add users, groups, printers, and computers (and only these object types) as configuration items into the Service Manager database.
 
 > [!NOTE]

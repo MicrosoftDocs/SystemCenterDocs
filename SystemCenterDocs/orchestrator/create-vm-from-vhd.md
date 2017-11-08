@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create VM from VHD
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create VM from VHD activity is used to create a new virtual machine from an existing virtual hard disk.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

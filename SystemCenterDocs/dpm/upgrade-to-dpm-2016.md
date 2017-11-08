@@ -6,15 +6,13 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  08/04/2017
+ms.date:  11/01/2017
 title:  Upgrade to DPM-2016
 ms.technology:  system-center-2016
 ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
 ---
 
 # Upgrade to DPM 2016
-
->Applies To: System Center 2016
 
 You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. If you are installing DPM 2016 on Windows Server 2012 R2, you must upgrade an existing DPM installation from DPM 2012 R2 with Update Rollup 10 or greater. Before you upgrade or install DPM 2016, please read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
 
@@ -29,7 +27,6 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 - Upgrade DPM Remote Administrator on all production servers.
 - Backups will continue without rebooting your production server.
 
-For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
 
 ### Upgrade steps for DPM
 

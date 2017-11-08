@@ -13,8 +13,6 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ---
 
 # Comparing the Operations and Web console
-
->Applies To: System Center 2016 - Operations Manager
   
 System Center 2016 – Operations Manager includes two consoles, the Operations console and Web console.  The Operations console is the primary tool used for managing your Operations Manager deployment. In the Operations console, you view and interact with alerts and monitoring data, manage and edit monitoring configuration, generate and view reports,  administer management group settings, and build a personal workspace that is customized to your needs.
 
@@ -58,5 +56,5 @@ There are a few differences between the Operations console and Web console that 
 
 * Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.  
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).   
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](manage-consoles-overview.md).   
   

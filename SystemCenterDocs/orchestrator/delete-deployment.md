@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Deployment
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete Deployment** activity deletes the specified deployment. It is part of the **Azure Deployments** category activity.
 
 >[!IMPORTANT]

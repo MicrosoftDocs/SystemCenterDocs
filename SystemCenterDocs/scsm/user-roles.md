@@ -14,8 +14,6 @@ ms.assetid: e7cd2a94-13ad-40cf-84c5-f9063072a591
 
 # Manage Service Manager user roles
 
->Applies To: System Center 2016 - Service Manager
-
 This section provides an overview of user roles in [List of User Role Profiles in Service Manager](user-role-profiles.md). It includes procedures that you can use to work with user roles.
 
 ## About user roles

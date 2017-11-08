@@ -14,8 +14,6 @@ ms.assetid: 4a96716d-49f8-48a8-ac34-ca69e8f6363b
 
 # Not monitored and gray agents
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, you may see discovered objects in the Operations console displayed as not monitored or gray, as shown in the following illustration.  
   
 ![State view showing "not monitored"](./media/manage-agents-not-healthy/om2016-operations-console-windowscomputer-healthstate.png)  
@@ -96,5 +94,5 @@ An agent can also show as not monitored because the new agent has the same NetBI
 
 -  To understand how Operations Manager monitors the communication channel between an agent and it's primary management server to ensure it is responsive and available, see [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md). 
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md). 
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](manage-consoles-overview.md). 
   

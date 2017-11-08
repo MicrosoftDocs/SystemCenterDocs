@@ -17,8 +17,6 @@ ms.assetid: 240ef642-dba3-416a-b048-df98d947cbaf
 
 # Seal a Service Manager management pack
 
->Applies To: System Center 2016 - Service Manager
-
 When a management pack in Service Manager contains base definitions that other management packs have to reference, such as a list, it must be sealed. After you seal a management pack, you cannot directly modify objects in the sealed management pack, and you cannot unseal the sealed management pack, but you can define references to objects in the sealed management packs.  
 
  For more information about how to modify objects that are stored in a management pack that you have already sealed, see [Management Packs: Key Concepts](mps-in-auth-tool.md).  

@@ -17,8 +17,6 @@ manager: carmonm
 
 # Download Attachment
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Download Attachment** activity is used in a runbook to download an attachment from a Microsoft SharePoint list item.
 
 The following tables list the required properties and Published Data for this activity.

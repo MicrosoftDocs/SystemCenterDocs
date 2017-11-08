@@ -5,7 +5,7 @@ description: This article provides information about adding a gateway to the VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/11/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Add a network virtualization gateway to the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to learn about setting up network virtualization gateways in the System Center 2016 - Virtual Machine Manager (VMM) networking fabric.
+
+Read this article to learn about setting up network virtualization gateways in the System Center - Virtual Machine Manager (VMM) networking fabric.
 
 By default, if you're using isolated VM networks in your VMM fabric, VMs associated with a network can only connect to machines in the same subnet. If you want to connect VMs further than the subnet you'll need a gateway.
 

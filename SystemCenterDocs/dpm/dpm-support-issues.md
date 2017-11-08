@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 06/26/2017
+ms.date: 11/01/2017
 title:  What's supported and what isn't for DPM
 ms.technology:  data-protection-manager
 ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -14,9 +14,7 @@ ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
 
 # What's supported and what isn't for DPM?
 
->Applies To: System Center 2016 - Data Protection Manager
-
-This topic summarizes some of the common support information you might need when deploying and maintaining System Center 2016 - Data Protection Manager.
+This topic summarizes some of the common support information you might need when deploying and maintaining System Center - Data Protection Manager.
 
 
 ## <a name="BKMK_Install"></a>Installation and deployment issues

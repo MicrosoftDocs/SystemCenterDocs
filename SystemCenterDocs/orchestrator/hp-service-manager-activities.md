@@ -17,8 +17,6 @@ manager: carmonm
 
 # HP Service Manager Activities
 
-Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in this integration pack.
 
 ## Activity Properties

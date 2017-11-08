@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create and Send E-Mail
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create and Send E-Mail activity is used in a runbook to create and send an email message to one or more recipients.
 
 The following tables list the required properties, optional properties, and published data for this activity.

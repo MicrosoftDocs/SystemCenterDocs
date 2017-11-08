@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Hosts Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Hosts activity is used in a runbook to retrieve all the hosts attached to a vCenter instance. This allows the runbook to determine the list of hosts before cloning or creating virtual machines on a designated host.
 
 The following tables list the required and optional properties and published data for this activity.

@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to suspend monitoring temporarily by using maintenance mode
 
->Applies To: System Center 2016 - Operations Manager
-
 Maintenance mode in Operations Manager enables you to avoid any alerts or errors that might occur when a monitored object, such as a computer, a SQL database, or distributed application, is taken offline for maintenance. Maintenance mode suspends the following features:
 
 -   Rules and monitors
@@ -176,7 +174,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 > [!NOTE]  
 > To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
 
-> In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the ***Start-SCOMAgentMaintenanceMode** cmdlet:
+> In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the **Start-SCOMAgentMaintenanceMode** cmdlet:
 > `Set-ItemProperty -Path "HKLM:\software\Microsoft\Microsoft Operations Manager\3.0\MaintenanceMode" -Name record -Value "" `  
 
 

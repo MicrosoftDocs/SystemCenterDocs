@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Checkpoint
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Checkpoint is used to save the state of a virtual hard disk that is attached to a virtual machine and all of the disk's contents, including application data files. For virtual machines on Hyper-V and VMware ESX Server hosts, a checkpoint also saves the hardware configuration information.
 
 You can create a checkpoint as a temporary backup before you update the operating system or an application, or before you make a configuration change on a virtual machine. The checkpoint allows you to restore the virtual machine to its previous state if the operation fails or adversely affects the virtual machine. You can create checkpoints only for a virtual machine that is deployed on a virtual machine host. You cannot create checkpoints for a virtual machine that is stored in the library. For a virtual machine that is running on a Hyper-V or VMware host, you can create a checkpoint without stopping the virtual machine. For a virtual machine that is running on a Virtual Server host, you must shut down the virtual machine before you create a checkpoint.

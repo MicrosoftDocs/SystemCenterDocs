@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2016
 title:  Prepare machines in workgroups and untrusted domains for backup
 ms.technology:  data-protection-manager
 ms.assetid:  e63b86d4-1f83-48ef-82bb-636b9dc745e2
@@ -14,9 +14,7 @@ ms.author: markgal
 
 # Prepare machines in workgroups and untrusted domains for backup
 
->Applies To: System Center 2016 - Data Protection Manager
-
-DPM can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account (NTLM authentication), or using certificates. For both types of authentication you'll need to prepare the infrastructure before you can set up a protection group that contains the sources you want to back up.
+System Center Data Protection Manager (DPM) can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account (NTLM authentication), or using certificates. For both types of authentication you'll need to prepare the infrastructure before you can set up a protection group that contains the sources you want to back up.
 
 1.  **Install a certificate**-If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
 

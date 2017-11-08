@@ -17,8 +17,6 @@ manager: cfreeman
 ---
 # Runbook properties
 
-> Applies To: System Center 2016 - Orchestrator
-
 A runbook is essentially a series of activities that are using data, performing tasks, and publishing data for use by other activities in the runbook. Each runbook has a collection of configurable properties. These properties let you customize the behavior of a runbook.  
 
 ### To view the properties of a runbook  

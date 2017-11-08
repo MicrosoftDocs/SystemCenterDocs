@@ -18,8 +18,6 @@ robots: noindex
 
 # Deploy Task Sequence activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The Deploy Task Sequence activity creates a new Configuration
 Manager Task Sequence Deployment that assigns an existing task sequence
 to a collection. This enables you to deploy an operating system and

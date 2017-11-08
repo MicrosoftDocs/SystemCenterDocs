@@ -14,8 +14,6 @@ ms.assetid:  db18c324-ee25-4b6f-a7e6-2ea019a623d6
 
 # Runbook Output and Messages
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016- Service Management Automation
-
 Most Automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
 
 The following table provides a brief description of each of the streams and their behavior in the Management Portal both when running a published runbook and when [testing a runbook](manage/testing-a-runbook.md). Further details on each stream are provided in subsequent sections.

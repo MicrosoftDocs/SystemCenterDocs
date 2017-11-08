@@ -1,11 +1,11 @@
 ---
 ms.assetid:
 title: Release Notes for System Center DPM 2016
-description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of.
+description: These release notes provide general information about the DPM 2016 and 1711 release.
 author: markgalioto
 ms.author: markgal
 manager: carmonm
-ms.date: 05/23/2017
+ms.date: 11/08/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: data-protection-manager
@@ -14,10 +14,7 @@ ms.topic: article
 
 # Release Notes for System Center Data Protection Manager (DPM) 2016
 
->Applies To: System Center 2016 - DPM
-
-The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center DPM 2016.  
-
+The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center Data Protection Manager (DPM) 2016 and Technical Preview 1711.  
 
 ## Silent Installation of System Center DPM with SQL Server 2008
 

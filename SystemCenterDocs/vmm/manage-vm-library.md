@@ -5,7 +5,7 @@ description: This article describes how to create VMs in the VMM fabric from the
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,9 +14,8 @@ ms.technology:  virtual-machine-manager
 
 # Deploy a virtual machine from the VMM library
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to deploy a virtual machine that's stored in the System Center 2016 - Virtual Machine Manager (VMM) library.
+This article describes how to deploy a virtual machine that's stored in the System Center - Virtual Machine Manager (VMM) library.
 
 ## Before you start
 

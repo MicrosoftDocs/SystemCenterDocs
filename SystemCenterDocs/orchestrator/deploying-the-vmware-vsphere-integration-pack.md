@@ -17,8 +17,6 @@ manager: carmonm
 
 # Deploying the VMware vSphere Integration Pack for System Center 2016 - Orchestrator
 
-Applies To: System Center 2016 - Orchestrator
-
 The following sections provide important information about downloading and deploying the VMware vSphere integration pack for System Center 2016 - Orchestrator.
 
 ## System Requirements

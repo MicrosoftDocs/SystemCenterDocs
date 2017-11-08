@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete VM Disk
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete VM Disk** activity deletes the specified data or operating system disk from your image repository. It is part of the **Azure Virtual Machine Disks** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

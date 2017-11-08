@@ -14,8 +14,6 @@ ms.assetid: c9dabbc3-0ac5-46fe-8a34-b82b67c0e6ad
 
 # Troubleshooting the Visio Add-in
 
->Applies To: System Center 2016 - Operations Manager
-
 The following sections provide information about troubleshooting the Visio Add-in:  
   
 -   Enabling trace logging on the data provider  

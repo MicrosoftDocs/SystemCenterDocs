@@ -4,8 +4,8 @@ title: Plan VMM deployment
 description: This article provides links to planning System Center VMM 2016 deployment
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreemanwa
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Plan VMM deployment
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-There are a number of planning steps you should take before you start deploying System Center 2016 - Virtual Machine Manager (VMM). These steps help  deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
+
+There are a number of planning steps you should take before you start deploying System Center - Virtual Machine Manager (VMM). These steps help  deployment processes go smoothly by making sure prerequisites are in place for installing and deploying VMM.
 
 -  [Plan a VMM installation](install.md). Make sure that installation prerequisites are in place.
 -  [Plan a VMM high availability deployment](~/vmm/plan-ha-install.md). You can optionally deploy the VMM management server, SQL Server database, and library server in high availability mode.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # IBM Tivoli Netcool OMNIbus Activities
 
-Applies To: System Center 2016 - Orchestrator
-
 This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
 [Create Alert Activity](create-alert-activity.md)

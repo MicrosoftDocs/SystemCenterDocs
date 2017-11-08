@@ -17,8 +17,6 @@ robots: noindex
 ---
 # System Center Service Manager activities
 
-> Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Service Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties

@@ -15,8 +15,6 @@ manager: carmonm
 ---
 # Computer Groups
 
-> Applies To: System Center 2016 - Orchestrator
-
 System Center 2016 - Orchestrator is designed to interact with all of your data center systems. Computer groups let you target selected activities against a set of similar computer systems instead of a single computer. By configuring the activities in your runbook to use a computer group, you have the flexibility to add computers dynamically by adding them to the computer group.  
 
 You can create computer groups by using Active Directory queries, and you can manage the list of computers in a group outside of Orchestrator. For example, if you have a computer group that is created from an Active Directory query that retrieves all instances of Microsoft SQL Server, when an instance of SQL Server is added to your Active Directory system, it is automatically included in that group.  
@@ -73,5 +71,4 @@ Use the following procedure to use a computer group.
 
     When the activity runs, it runs on each computer in the group.  
 
-## See Also  
-[Data Manipulation](../orch/manage/data-manipulation.md)  
+

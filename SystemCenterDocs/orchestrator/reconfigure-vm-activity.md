@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Reconfigure VM activity
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Reconfigure VM activity is used in a runbook to change the hardware settings of a virtual machine. This allows the runbook to increase the number of CPUs and Memory to increase the availability of the application running in the guest operating system.
 
 The following tables list the required and optional properties and published data for this activity.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Remove Mailbox
 
-> Applies To: System Center 2016 - Orchestrator
-
 You can use the Remove Mailbox activity to delete an existing mailbox and the Active Directory user that is associated with that mailbox, in an on-premise or online Exchange environment. For an environment such as Microsoft Office 365 online, the Remove Mailbox activity can be used to delete a mailbox.
 
 The following tables list the required properties, optional properties, and published data for this activity.

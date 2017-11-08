@@ -14,8 +14,6 @@ ms.assetid:  b6044e0c-0caa-459c-9489-c379a154136b
 
 # How to deploy Service Management Automation 
 
->Applies To: System Center 2016 - Service Management Automation
-
 In order to deploy Service Management Automation (SMA) you must install the SMA Web Service, setup the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation. 
 
 You can install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.

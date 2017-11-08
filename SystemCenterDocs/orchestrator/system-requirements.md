@@ -14,8 +14,6 @@ ms.topic: article
 
 # System requirements for System Center 2016 - Orchestrator
 
->Applies To: System Center 2016 - Orchestrator
-
 The topic describes general performance and scalability guidance for System Center 2016 - Orchestrator and recommends hardware configurations for a variety of workloads. Because System Center 2016 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware

@@ -14,8 +14,6 @@ ms.topic: article
 
 # Service, User and Security Accounts
 
->Applies To: System Center 2016 - Operations Manager
-
 During the setup and operation of Operations Manager, you will be asked to provide credentials for several accounts. The beginning of this section provides information about each of those accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 
 If you use domain accounts and your domain Group Policy object (GPO) has the default password expiration policy set as required, you will either have to change the passwords on the service accounts according to the schedule, use low maintenance system accounts, or configure the accounts so that the passwords never expire.

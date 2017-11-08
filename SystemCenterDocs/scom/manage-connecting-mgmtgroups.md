@@ -14,8 +14,6 @@ ms.topic: article
 
 # Connecting management groups in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 Connecting management groups in System Center 2016 - Operations Manager enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer-to-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.  
   
 > [!NOTE]  

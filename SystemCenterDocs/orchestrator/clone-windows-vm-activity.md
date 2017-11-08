@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Clone Windows VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Clone Windows VM activity is used in a runbook to create a copy of an existing Windows virtual machine or template. This creates virtual machines quickly and easily using existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.

@@ -18,8 +18,6 @@ ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
 
 # Upgrade your environment to System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 You cannot start an upgrade to System Center 2016 - Service Manager if any data warehouse jobs or workflows are running. You can use the procedures in this section to stop the data warehouse job schedules and wait for them to complete before you upgrade the data warehouse management server. Before you upgrade the Service Manager management server, stop the Self-Service Portal, if it is installed, and then wait 10 minutes to let any running workflows finish before you start the upgrade.  
 
  Complete the procedures in the following section, in order, to upgrade to System Center 2016 - Service Manager.  

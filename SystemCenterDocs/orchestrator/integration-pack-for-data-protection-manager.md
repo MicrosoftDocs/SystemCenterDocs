@@ -17,8 +17,6 @@ manager: carmonm
 
 # System Center Integration Pack for System Center 2016 Data Protection Manager
 
-Applies To: System Center 2016 - Orchestrator
-
 The System Center Integration Pack for System Center 2016 Data Protection Manager is an add-in for System Center 2016 - Orchestrator that enables you to automate the protection of physical and virtual server resources. You can use the activities in this integration pack to create runbooks that provide the following:
 
 -   Automated virtual machine protection and recovery

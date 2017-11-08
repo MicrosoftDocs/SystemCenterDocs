@@ -17,8 +17,6 @@ robots: noindex
 ---
 # List OS Images
 
-> Applies To: System Center 2016 - Orchestrator
-
 The **List OS Images** activity retrieves a list of the operating system images from the image repository. It is part of the **Azure Virtual Machine Images** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

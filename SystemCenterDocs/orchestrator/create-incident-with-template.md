@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Incident with Template
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Incident with Template activity is used to create a new incident from an existing Incident Template. You have the option to overwrite template values with existing incident values or apply template values.
 
 >[!IMPORTANT]

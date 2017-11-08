@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Alert
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Alert activity is used in a runbook to create a new alert in an Operations Manager management group.
 
 The first time you run this activity in a runbook, it installs the Orchestrator Integration Library Management Pack in Operations Manager. The Create Alert activity creates an event in Operations Manager, which the Orchestrator Integration Library Management Pack then translates into a System Center Operations Manager alert.

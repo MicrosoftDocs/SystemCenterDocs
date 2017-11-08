@@ -13,8 +13,6 @@ ms.assetid:  00e55889-02fc-49a9-9a52-f8cbdaf36255
 
 # Scaling Service Management Automation up or down
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
-
 Use the guidance in this section to scale out a machine tier in a service that is deployed in Service Management Automation. You can add runbook workers and web services to add additional capacity for runbook processing.
 
 ## Initial recommendations

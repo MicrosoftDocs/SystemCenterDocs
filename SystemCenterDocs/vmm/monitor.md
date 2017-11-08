@@ -5,7 +5,7 @@ description: This article describes how to monitor VMM with VMM jobs, and System
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Monitor VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-You configure monitoring and reporting in System Center 2016 - Virtual Machine Manager (VMM) as follows:
+
+You configure monitoring and reporting in System Center - Virtual Machine Manager (VMM) as follows:
 
 - **VMM jobs**: In the VMM console you can monitor the status of processes and operations with VMM jobs.
 - **Monitoring in Operations Manager**: To monitor the health and status of VMM servers and the VMM fabric you integrate VMM with System Center Operations Manager

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Cloud Service
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete Cloud Service** activity deletes the specified cloud service from Azure. It is part of the **Azure Cloud Services** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

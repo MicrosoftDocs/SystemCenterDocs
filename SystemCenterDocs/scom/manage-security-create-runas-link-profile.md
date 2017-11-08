@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to create a Run As account and associate with a Run As profile
 
->Applies To: System Center 2016 - Operations Manager
-
 This procedure describes how you create a Run As Account by using a set of Windows credentials as an example. Then it shows you how to edit the properties of the Run As Account to modify the security level and distribution of the credentials. You use this same procedure for all other account types. Once you are completed creating the Run As account, you will associate it with a Run As Profile.  
 
 The credentials that you provide in a Run As Account are used to run tasks, rules, monitors and discoveries as defined by the management pack that they are in. The management pack guide has the settings that you need for configuring the Run As Account and the Run As Profile.

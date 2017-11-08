@@ -17,8 +17,6 @@ ms.assetid: 4aee1627-a7c4-4299-847a-a5bfb87a4133
 
 # Troubleshoot Service Manager deployment issues to resolve problems
 
->Applies To: System Center 2016 - Service Manager
-
 An installation log file is captured during the installation of System Center 2016 – Service Manager. After Service Manager is running, various events are captured in the Windows Event Log. In addition, there are some Windows PowerShell commands that you can use to help troubleshoot data warehouse jobs. For more information, see [Troubleshoot Data Warehouse Jobs](manage-dw.md).
 
 

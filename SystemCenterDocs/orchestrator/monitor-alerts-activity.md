@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Monitor Alerts activity
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria. You can use the Monitor Alerts activity to launch a diagnostic and corrective runbook that responds to critical alerts in your network.
 
 The Monitor Alerts activity uses filters to determine which properties of an alert launch the runbook.

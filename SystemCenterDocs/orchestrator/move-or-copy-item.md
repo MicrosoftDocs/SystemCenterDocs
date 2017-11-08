@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Move Or Copy Item
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Move Or Copy Item activity is used in a runbook to move or copy an item to another folder. This activity supports all item types.
 
 The following tables list the required properties and published data for this activity.

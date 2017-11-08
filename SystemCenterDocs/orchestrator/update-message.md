@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Message
 
-Applies To: System Center 2016 - Orchestrator
-
 The Update Message activity is used in a runbook to update an existing message.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).

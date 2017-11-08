@@ -17,8 +17,6 @@ ms.assetid: 6ca01c52-86ea-4ba2-afce-00c8453a4df5
 
 # Databases created by System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Before starting the installation of System Center 2016 - Service Manager, you may want to meet with your SQL Server administration team and discuss the impact that Service Manager will have on your computers running SQL Server-specifically, the databases that will be created. The databases that are created by a deployment of Service Manager are listed in the following table.  
 
 |Service Manager parts|Database name|Contents|  

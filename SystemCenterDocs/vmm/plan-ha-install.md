@@ -5,7 +5,7 @@ description: This article provides planning information for deploying VMM and it
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/04/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,10 +13,10 @@ ms.technology:  virtual-machine-manager
 
 # Plan a highly available VMM deployment
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article helps you to plan a highly available System Center 2016 - Virtual Machine Manager (VMM) deployment.
+
+This article helps you to plan a highly available System Center - Virtual Machine Manager (VMM) deployment.
 
 For resilience and scalability you can deploy VMM in high availability mode, as follows:
 

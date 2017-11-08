@@ -5,7 +5,7 @@ description: This article describes how to deploy and manage Nano server-based h
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # Deploy and manage Nano server-based Hyper-V hosts or VMs in VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
-
-You can use System Center 2016 - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
+You can use System Center - Virtual Machine Manager (VMM) to manage hosts and virtual machines running Nano server.
 
 Using VMM, you can add and manage existing hosts running Nano, configure bare metal machines as Nano Server-based hosts, deploy compute clusters, and storage clusters (disaggregated and hyper-converged). You can manage Nano-based VMs, including shielded VMs.
 

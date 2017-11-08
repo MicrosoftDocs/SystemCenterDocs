@@ -17,8 +17,6 @@ ms.assetid: 08c888e1-57cb-4f94-8b9e-041a54204c09
 
 # Install Service Manager on a single computer (minimum configuration)
 
->Applies To: System Center 2016 - Service Manager
-
 If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server. For more information about the hardware requirements for Hyper\-V, see [Hyper\-V Server&nbsp;2016 system requirements](https://technet.microsoft.com/en-us/hyper-v-server-docs/).  
 
  To install Service Manager on a single computer, start with a physical computer that is running Windows&nbsp;Server&nbsp;2016 and Hyper\-V, and make sure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Make sure that at least 200&nbsp;GB of free space is available on the hard disk drive.  

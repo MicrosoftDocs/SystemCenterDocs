@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Object
 
-Applies To: System Center 2016 - Orchestrator
-
 The Update Object activity is used to change the values of one or more properties of an existing object.
 
 The following published data element is specific to Update Object activity. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).

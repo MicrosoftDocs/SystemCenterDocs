@@ -14,8 +14,6 @@ ms.topic: article
 
 # Install agent on Nano Server
 
->Applies To: System Center 2016 - Operations Manager
-
 Windows Server 2016 Nano Server is a new installation option introduced in Windows Server 2016. Nano Server is optimized for private cloud and datacenter operations. With System Center 2016  - Operations Manager you can now monitor Nano Server by installing the Operations Manager agent.
 
 ## Nano Server monitoring capabilities

@@ -14,8 +14,6 @@ ms.assetid: 21d8f3a5-2ac8-4776-b063-f6895a21cd5a
 
 # Build a simple monitoring dashboard using the Visio Web Part
 
->Applies To: System Center 2016 - Operations Manager
-
 SharePoint Enterprise edition includes a Web part for Visio Services called the Visio Web Access Web Part. You can add this Web part to any SharePoint Web part page to build a dashboard that uses published Visio diagrams to provide visualizations.  
   
 ## To build a monitoring dashboard for your Visio diagram  

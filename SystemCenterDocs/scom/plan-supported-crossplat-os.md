@@ -14,8 +14,6 @@ ms.topic: article
 
 # Supported UNIX and Linux Operating System Versions
 
->Applies To: System Center 2016 - Operations Manager
-
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.  
 
 >[!NOTE]

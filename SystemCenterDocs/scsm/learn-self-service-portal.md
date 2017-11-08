@@ -17,8 +17,6 @@ ms.assetid: 762cd06f-cd61-49ad-a757-8c7d45330125
 
 # Learn about deploying the new Self Service portal and troubleshoot installation issues
 
->Applies To: System Center 2016 - Service Manager
-
 The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During installation, the Web app is configured to connect directly to the SDK Service running on the Service Manager server browser. A basic, newly\-configured Self\-Service Portal setup works as shown in the following diagram.  
 
  ![sm&#45;ssp&#45;scenario&#45;01](./media/learn-self-service-portal/deploy-sm-ssp-scenario-01.png)  

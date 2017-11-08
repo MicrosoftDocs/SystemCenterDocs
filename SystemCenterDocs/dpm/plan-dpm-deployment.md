@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/28/2016
+ms.date: 11/01/2016
 title:  Get ready to deploy DPM servers
 ms.technology:  data-protection-manager
 ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
@@ -14,9 +14,7 @@ ms.author: markgal
 
 # Get ready to deploy DPM servers
 
->Applies To: System Center 2016 - Data Protection Manager
-
-There are a few planning steps to consider before you begin to deploy your DPM servers:
+There are a few planning steps to consider before you begin to deploy your System Center Data Protection Manager (DPM) servers:
 
 -   [Plan for DPM server deployment](#BKMK_Server) - Figure out how many DPM servers you'll need and where to place them.
 

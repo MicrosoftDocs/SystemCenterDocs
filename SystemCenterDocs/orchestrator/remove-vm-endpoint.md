@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Remove VM Endpoint
 
-> Applies To: System Center 2016 - Orchestrator
-
 The **Remove VM Endpoint** activity removes an external endpoint from the specified virtual machine. It is part of the **Azure Virtual Machines** category activity.
 
 >[!NOTE]

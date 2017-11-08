@@ -5,7 +5,7 @@ description: This article describes how to set up networking for Hyper-V hosts a
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,9 +14,7 @@ ms.technology:  virtual-machine-manager
 
 # Set up networking for Hyper-V hosts and clusters in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
-
-Read this article to set up network settings for Hyper-V hosts and clusters in the System Center 2016 - Virtual Machine Manager (VMM) compute fabric.
+Read this article to set up network settings for Hyper-V hosts and clusters in the System Center - Virtual Machine Manager (VMM) compute fabric.
 
 You can apply network settings to a Hyper-V host or cluster using a logical switch. Applying a logical switch ensure that logical networks, and other network settings, are consistently assigned to multiple physical network adapters.
 

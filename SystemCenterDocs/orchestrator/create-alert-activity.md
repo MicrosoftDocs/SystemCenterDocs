@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Alert Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Alert activity is used in a runbook to create a new alert on the IBM Tivoli Netcool/OMNIbus ObjectServer that can be used to create an alert in IBM Tivoli Netcool/OMNIbus ObjectServer that originated from another system monitor product.
 
 The following tables list the required properties, optional properties, and published data for this activity.

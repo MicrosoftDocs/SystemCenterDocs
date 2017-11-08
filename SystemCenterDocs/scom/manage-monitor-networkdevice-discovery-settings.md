@@ -14,8 +14,6 @@ ms.assetid:  f7229aef-0a5c-40de-9219-c1df83fd3aa9
 
 # Network device discovery settings
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center Operations Manager offers a number of settings that you can use to configure discovery of network devices. The following table explains the available settings and how to configure them in the Network Devices Discovery Wizard.
 
 |Setting|Location|Notes|
@@ -29,7 +27,7 @@ System Center Operations Manager offers a number of settings that you can use to
 |**ICMP time-out (in milliseconds)**|**Devices** page, **Advanced Discovery Settings** button|If you specify **ICMP and SNMP** or **ICMP** for **Access mode**, the management server attempts to contact the network device by using **ping**. The default setting is 1500 milliseconds (1.5 seconds).|
 |**SNMP time-out (in milliseconds)**|**Devices** page, **Advanced Discovery Settings** button|If you specify **ICMP and SNMP** or **SNMP** for **Access mode**, the management server attempts to contact the network device by using SNMP. The default setting is 1500 milliseconds (1.5 seconds).|
 |**Maximum number of devices to discover**|**Devices** page, **Advanced Discovery Settings** button|This setting applies during recursive discovery and sets a limit on the number of devices to discover. The default is 1500. If you know you are going to discovery more than 1500 devices, you must change this setting.|
-|**IP address range**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Use this field to limit the recursive discovery to IP addresses that meet the specified criteria. This field uses a wildcard format.<br><br>For example, if you enter **192.168.1.\**, the discovery rule discovers devices that use any IP address between 192.168.1.1 and 192.168.1.255.<br><br>If you enter **192.168.1.<1-140>**, the discovery rule discovers devices that use any IP address between 192.168.1 and 192.168.140.|
+|**IP address range**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Use this field to limit the recursive discovery to IP addresses that meet the specified criteria. This field uses a wildcard format.<br><br>For example, if you enter **192.168.1.\*, the discovery rule discovers devices that use any IP address between 192.168.1.1 and 192.168.1.255.<br><br>If you enter **192.168.1.<1-140>**, the discovery rule discovers devices that use any IP address between 192.168.1 and 192.168.140.|
 |**Included device types**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|Any devices that you select are included in the recursive discovery. Clear the selection for any type of device that you do not want discovered.|
 |**Include only network devices with the following system attributes (OIDs) - Name**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching name are discovered. This field allows a wildcard format.|
 |**Include only network devices with the following system attributes (OIDs) - Object ID (OID)**|**Include Filters** page, **Add** button, when configuring a recursive discovery rule|If you enter a value here, only devices with a matching OID are discovered. This field allows a wildcard format.|
@@ -37,7 +35,7 @@ System Center Operations Manager offers a number of settings that you can use to
 |**IP Address or Host Name**|**Exclude Filters** page, **Add** button, when configuring a recursive discovery rule|Enter either a fully qualified domain name (FQDN), an IPv4 address, or an IPv6 address to exclude from discovery. You can add multiple IP address individually.|
 
 ## Wildcard matching for IP address range
-Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly, so for example, the pattern *abc* does not match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it is interpreted as if there were an asterisk at the beginning. For example, the pattern ~*[0-9] matches any string that does not contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates "except for an empty string."
+Wildcard pattern matching is done from left to right, one character or basic wildcard pattern at a time. The pattern and the incoming string must match exactly, so for example, the pattern *abc* does not match the string *abcd*. Compound patterns consist of basic patterns separated by an ampersand (&) or a tilde (~). If the first character of a compound pattern is an ampersand or tilde, it is interpreted as if there were an asterisk at the beginning. For example, the pattern ~[0-9] matches any string that does not contain a digit. A trailing ampersand can only match an empty string, and a trailing tilde indicates "except for an empty string."
 
 Spaces are significant characters, and are subject to matching.
 

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Rename File or Folder
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Rename File/Folder activity is used in a runbook to rename a file or folder on a FTP server.
 
 This activity publishes all of the data from the required properties into published data.

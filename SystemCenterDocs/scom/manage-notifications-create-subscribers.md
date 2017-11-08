@@ -14,8 +14,6 @@ ms.assetid: 94fe3ff6-c9d9-46c9-8dde-288d8361ccc0
 
 # How to create notification subscribers
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
   
 These procedures explain how to create subscribers for notifications. A notification subscriber defines when to send notifications and the addresses to which the notifications should be sent. A subscriber can be an individual user account or a distribution list.  

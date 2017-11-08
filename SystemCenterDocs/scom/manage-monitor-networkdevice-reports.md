@@ -14,8 +14,6 @@ ms.assetid: acd07be8-9878-4997-86c4-4a932f5e27e2
 
 # Reports for network monitoring in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager provides the reports described in the following table. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**.   
   
 > [!NOTE]  

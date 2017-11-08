@@ -5,19 +5,18 @@ description: This article describes how to rapidly provision VMs in the VMM fabr
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  12/14/2016
+ms.date:  11/07/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 
 # Deploy VMs with rapid provisioning using SAN copy in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to rapidly provision VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric using SAN copy.
+This article describes how to rapidly provision VMs in the System Center - Virtual Machine Manager (VMM) fabric using SAN copy.
 
 Rapid provisioning provides a method for deploying new virtual machines to storage arrays without needing to copy VMs over the network. VMM uses the SAN infrastructure for cloning VMs, with a VM template to customize the guest operating system.
 

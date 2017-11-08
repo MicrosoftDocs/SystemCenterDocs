@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete VM activity is used in a runbook to permanently delete a virtual machine and all of its associated files that has already been added to the VMware ESX server host. Using the Delete VM activity is the same as selecting **Delete from disk** from the VMware VirtualCenter server console. This allows the runbook to delete a virtual machine that is no longer needed.
 
 The following tables list the required and optional properties and published data for this activity.

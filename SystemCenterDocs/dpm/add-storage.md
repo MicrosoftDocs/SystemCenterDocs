@@ -6,19 +6,19 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  10/14/2016
+ms.date:  11/01/2017
 title:  Upgrade to DPM 2016
 ms.technology:  system-center-2016
 ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce
 ---
 
-# Add Storage to DPM 2016
+# Add storage to DPM 2016
 
->Applies To: System Center 2016
+Modern Backup Storage (MBS) is provided by System Center Data Protection Manager (DPM) to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. 
 
-DPM 2016 comes with Modern Backup Storage which delivers 50% storage savings, 3x faster backups, and more efficient storage with Workload-Aware storage. Modern Backup Storage can be used by setting up DPM 2016 on Windows Server 2016.
-
-If DPM 2016 runs on an older version of Windows Server, DPM 2016 will protect the workloads the legacy way. More information on preparing storage to back up the legacy way can be found here.
+- MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server older than Windows Server 2016, it doesn't use MBS.
+- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each datasource needs two volumes, one for the the initial backup and the other for delta changes.
+- MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/). 
 
 DPM 2016 accepts volumes for storage. Hence, once a volume is added, DPM will format it to ReFS to use the new features of Modern Backup Storage. 
 
@@ -27,73 +27,77 @@ To take care of this, you can create a storage pool from the Disks available, cr
 
 Hence, to add a volume, and to expand it later if needed, here is the suggested workflow:
 
-1.	Setup DPM 2016 on a VM
-2.	Create a volume on a virtual Disk in a Storage Pool:
+## Setting up MBS
 
-    a.	Add a disk to a Storage Pool and create a virtual disk with Simple Layout
+Setting up MBS consists of the following steps:
 
-    b.	Add any more disks, and extend the virtual disk
+1. Make sure you're running DPM 2016 or later on a VM running Windows Server 2016 or later.
+2. Create a volume on a virtual disk in a storage pool. To do this:
+    a. Add a disk to the storage pool
+    b. Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
+    c. Create volumes on the virtual disk
+3. Add the volumes to DPM.
+4. Configure workload-aware storage.
 
-    c.	Create Volumes on the virtual disk
 
-3.	Add these volumes to DPM
-4.	Configure Workload-Aware Storage
+    
 
-## Create a volume for DPM Modern Backup Storage
+## Create a volume
 
-DPM 2016 accepts volumes as disk storage.  This helps customers in maintaining full control over the storage.  While the volume can be coming from a single disk, for future extension purposes, we propose creating volume out of a disk crated out of storage spaces.  This will help in expanding volume needed for backup storage.  This section provides best practice for creating a volume with this configuration.
+1. Create a storage pool in the File and Storage Services of Server Manager.
+2. Add the available physical disks to the storage pool.
+    - Adding only one disk to the pool keeps the column count to 1. You can then add disks as needed afterwards.
+    - If multiple disks are added to the pool, the number of disks will be stored as the number of columns. This means that when more disks are added, they can only be a multiple of the number of columns.
+    
+    ![Add disks to storage pool](./media/add-storage/dpm2016-add-storage-1.png)
 
-First step is to create a Virtual Disk.  Through the File and Storage Services section of the Server Manager, create a Storage Pool, and add the available disks to it. Create a Virtual Disk from that Storage Pool with Simple Layout.
+3. Create a virtual disk from the storage pool, with the layout set to Simple.
 
-Step 1: Add the disks to a Storage Pool and create a virtual disk with Simple Layout. Adding only one disk to the pool will keep the column count as 1. This will give the freedom to add as many disks as needed later. 
-If multiple disks are added to the pool while creating it, the number of disks will be stored as the number of columns, and when more disks are added, they can only be a multiple of the number of columns.
+    ![Create virtual disk](./media/add-storage/dpm2016-add-storage-2.png)
+     
+4. Now add as many physical disks as needed.
+    
+    ![Add additional disks](./media/add-storage/dpm2016-add-storage-3.png)
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-1.png)
+5. Extend the virtual disk with the Simple layout, to reflect any physical disks you added.
 
-Create a virtual disk out of this Storage Pool and select the layout to be Simple
+    ![Extend virtual disks](./media/add-storage/dpm2016-add-storage-4.png)
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-2.png)
+6. Now, create volumes on the virtual disk.
 
-Step 2: Now add as many disks as needed and extend the virtual disk, with Simple layout.
+    ![Create volume](./media/add-storage/dpm2016-add-storage-5.png)
+    ![Select volume server and sisk](./media/add-storage/dpm2016-add-storage-6.png)
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-3.png)
 
-Extend the Virtual Disk to reflect the added disks.
+## Add volumes to DPM storage
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-4.png)
 
-Step 3: Create Volumes on the Storage Pool
+1. In the DPM Management console > **Disk Storage**, click **Rescan**.
+2. In **Add Disk Storage**, click **Add**. 
+3. After the volumes are added, you can give them a friendly name.
+4. Click **OK** to format the volumes to ReFS, so that DPM can use them as MBS.
 
-After creating the Virtual Disk with sufficient storage, create volumes on the Virtual Disk.
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-5.png)
-
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-6.png)
-
-## Adding volumes to DPM Disk Storage
-
-To add a volume to DPM, in the Management pane, Rescan the Storage and Click on Add. This will give a list of all the volumes available to be added for DPM Storage. After they are added to the list of selected volumes, they can also be given a Friendly name for easy recall. Clicking on OK will format these volumes to ReFS to enable DPM to use the benefits of Modern Backup Storage.
 
 ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
-## Configure Workload-Aware Storage
+## Configure workload-aware storage
 
-With Workload Aware Storage, the volumes can be selected to preferentially store certain kinds of workloads. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction Logs. Other workloads that are backed up less frequently, say VMs, can be backed up to other low-cost volumes.
+Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs.  Workloads that are backed up less frequently,for example VMs, can be backed up to low-cost volumes.
 
-This can be done through PowerShell commandlet, Update-DPMDiskStorage, which updates the properties of a volume in the storage pool on a DPM server.
+You configure workload-aware storage using Windows PowerShell cmdlets.
 
-**Update-DPMDiskStorage**
+### Update the volume properties
 
-**Syntax**
+1. Run the **Update-DPMDiskStorage** to update the properties of a volume in the storage pool on a DPM server. The syntax is **Parameter Set: Volume**.
+2. Run the cmdlet with these parameters.
 
-`Parameter Set: Volume`
+    ```
+    Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
+    ```
 
-```
-Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
-```
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
-
-The changes made through PowerShell are reflected in the UI.
+3. The changes made using the PowerShell cmdlet are reflected in the DPM Management console.
 
 ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 

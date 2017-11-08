@@ -17,8 +17,6 @@ ms.assetid: 9a959a9d-495c-456c-91e9-012adf58830f
 
 # Automate IT processes with workflows in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Using Service Manager, you can automate many administrative processes that previously required manual tasks. The feature that makes this automation possible is the Windows Workflow Foundation \(WF\) workflow. A WF workflow comprises workflow activities, which are also referred to as *WF activities* to differentiate them from other Service Manager activity types. Each workflow activity performs a function, such as joining a user or a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), creating a Service Manager incident, or running a script. You can assemble WF activities into a workflow that performs a set of tasks, and you can specify the conditions under which the workflow runs.  
 
 This article describes functionality in Service Manager that you can use to automate processes. It describes the relationships between workflows and management packs, and it describes the Windows Workflow Foundation \(WF\) activities that the Service Manager Authoring Tool provides in the default Activity Library.  

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Change with Template
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Change with Template activity is used to configure a change record based on an existing template.
 
 >[!IMPORTANT]

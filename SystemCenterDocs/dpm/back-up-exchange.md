@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2017
 title:  Back up Exchange with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
@@ -14,9 +14,7 @@ ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
 
 # Back up Exchange with DPM
 
->Applies To: System Center 2016 - Data Protection Manager
-
-DPM provides backup and recovery for Exchange 2013. You can back up the following:
+System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013. You can back up the following:
 
 -   Exchange mailbox databases under a database availability group (DAG)
 
@@ -25,7 +23,7 @@ DPM provides backup and recovery for Exchange 2013. You can back up the followin
 ## Prerequisites and limitations
 Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
 
--   Review the [Release Notes for System Center 2016](../get-started/release-notes.md) and [What's supported and what isn't for DPM?](dpm-support-issues.md) to check for any Exchange issues.
+-   Review the release notes and [What's supported and what isn't for DPM?](dpm-support-issues.md), to check for any Exchange issues.
 
 -   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you'll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
 

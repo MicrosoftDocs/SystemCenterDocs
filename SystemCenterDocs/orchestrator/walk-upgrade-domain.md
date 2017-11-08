@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Walk Upgrade Domain
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Walk Upgrade Domain** activity specifies the next upgrade domain to be walked during manual in-place upgrade or configuration change. It is part of the **Azure Deployments** category activity.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -14,8 +14,6 @@ ms.topic: article
 
 # Post-Upgrade tasks when upgrading to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 After you have completed the upgrade process to System Center 2016 - Operations Manager, you must perform a number of post-upgrade tasks.
 
 ## Post-upgrade tasks

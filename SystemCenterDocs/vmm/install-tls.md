@@ -5,22 +5,22 @@ description: This article provides instructions for setting up TLS with VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/25/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-# Install the VMM Console
+# Set up TLS for VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center 2016 - Virtual Machine Manager (VMM) server. 
+
+This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Virtual Machine Manager (VMM) server. 
 
 
 ## Before you start
 
-- VMM should be running [Update Rollup 4](https://support.microsoft.com/help/4041074).
+- VMM should be running VMM 2016 with [Update Rollup 4](https://support.microsoft.com/help/4041074), or later.
 - Security fixes should be up-to-date on the VMM server, and the server running the VMM database.
 - The VMM server should be runnning . NET version 4.6. Follow [these instructions](https://docs.microsoft.com/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed.md) to determine which version of .NET is installed.
 - To work with TLS 1.2, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2. 

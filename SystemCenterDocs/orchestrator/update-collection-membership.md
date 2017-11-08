@@ -18,8 +18,6 @@ robots: noindex
 
 # Update Collection Membership activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The Update Collection Membership activity is used to initiate collection
 evaluation. It ensures that the membership of a collection is current
 before other activities are performed on the collection or its members.

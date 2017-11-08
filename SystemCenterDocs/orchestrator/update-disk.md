@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Disk
 
-Applies To: System Center 2016 - Orchestrator
-
 The Update Disk activity is used to add more disk space and to change some of the properties of an existing disk.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -4,18 +4,18 @@ title: Manage the SDN infrastructure in the VMM fabric
 description: This article describes how manage SDN networking elements in the System Center VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  01/24/2017
+manager:  carmonm
+ms.date:  11/07/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 # Manage SDN resources in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
- This article summarizes the software-defined network (SDN) operations that you can manage in the VMM fabric. For operations that can't be managed in the fabric, you need to use REST APIs or Windows Server PowerShell.
+
+ This article summarizes the software-defined network (SDN) operations that you can managed in the System Center Virtual Machine Manager (VMM) fabric. For operations that can't be managed in the fabric, you need to use REST APIs or Windows Server PowerShell.
 
  A software-defined network (SDN) abstract physical hardware network infrastructure into virtual networks. In the VMM fabric you can deploy and manage an SDN infrastructure, including network controller, software load balancers, and gateways, to provision and manage virtual networks at scale. Learn more(../scenario/sdn-overview.md).
 

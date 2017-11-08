@@ -14,8 +14,6 @@ ms.topic: article
 
 # Install agent on UNIX and Linux using the Discovery Wizard
 
->Applies To: System Center 2016 - Operations Manager
-
 Use the **Computer and Device Management Wizard** to discover and install agents on UNIX and Linux computers. For a list of the supported operating system versions, see [Supported Operating Systems and Versions](plan-supported-crossplat-os.md).
 
 Before you run the wizard, gather the following information:

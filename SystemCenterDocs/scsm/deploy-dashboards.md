@@ -17,8 +17,6 @@ ms.assetid: 08d397c0-f3af-424c-a2cf-9490b4825834
 
 # Create and deploy Service Manager dashboards
 
->Applies To: System Center 2016 - Service Manager
-
 You can use PerformancePoint Dashboard Designer with Service Manager to create and manage SharePoint dashboards and their elements to measure, monitor, and manage business performance with live data from the Service Manager data warehouse. Dashboards are mechanisms that display hierarchical arrangements of key performance indicators \(KPIs\).  
 
  You can use Dashboard Designer to define multiple filters for a dashboard, such as filters that are defined over time, by geography, or against different KPI destinations. When you publish dashboards to a SharePoint site, end users can navigate them by using page filters and drill\-up and drill\-down functionality. You can also use Dashboard Designer to create views and elements, such as scorecard elements, KPIs, data sources, indicators, and reports for use in dashboards.  

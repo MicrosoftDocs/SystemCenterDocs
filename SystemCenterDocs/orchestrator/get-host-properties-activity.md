@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Host Properties Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Host Properties activity is used in a runbook to retrieve a list of properties for a specified host in the VMware vSphere cluster. Examples of these properties include Connection Status (Powered on, disconnected, etc) and Maintenance Mode state.
 
 The following tables list the required and optional properties and published data for this activity.

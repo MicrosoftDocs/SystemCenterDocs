@@ -17,8 +17,6 @@ ms.assetid: aee0c089-e64e-4d2b-8313-a30a0efc5659
 
 # Author with System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Authoring in Service Manager refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
 ## Introduction to authoring with the Service Manager Authoring Tool

@@ -14,8 +14,6 @@ ms.assetid: f3631fac-5b64-4903-8343-8254b107db15
 
 # Run As accounts for network monitoring in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager uses Run As accounts to discover and monitor network devices. The information you include in the Run As account enable management servers to communicate with the network devices. You can monitor devices that use SNMP v1, v2, and v3.  
   
 Network devices that use SNMP v1 or v2 require a Run As account that specifies a community string, which acts like a password to provide read-only access to the device.  
