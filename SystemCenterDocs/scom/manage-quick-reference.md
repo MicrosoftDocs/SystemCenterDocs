@@ -19,7 +19,7 @@ The following table gives a quick reference for where to perform common tasks an
 |To perform this task|Do this|
 |------------------------|-----------|
 |Check for problems in a management group|-  Check the **Management Group Health** view in the Operations Manager folder in the **Monitoring** workspace<br> - See the **State and Alerts** summary on the Monitoring Overview page  Check **Active Alerts** in the **Monitoring** workspace<br> - Check **Task Status** in the **Monitoring** workspace|
-|Start monitoring a computer|On the Administration Overview page, click **Configure computers and devices to manage**. For more information, see [Managing Discovery and Agents](../om/manage/managing-discovery-and-agents.md).|
+|Start monitoring a computer|On the Administration Overview page, click **Configure computers and devices to manage**. For more information, see [Managing Discovery and Agents](/system-center/scom/manage/managing-discovery-and-agents).|
 |Create or modify a resource pool|In the **Administration** workspace, click **Resource Pools**. For more information, see [How to Create a Resource Pool](manage-resource-pools-manage.md#to-create-a-resource-pool) and [Managing Resource Pools for UNIX and Linux Computers](manage-resource-pools-manage.md#configure-certificates-for-unix-and-linux-dedicated-resource-pools).|
 |-   Create a group<br>-   View available groups<br>-   View group members<br>-   View state of a group<br>-   View diagram of a group<br>-   Modify a group|Click **Groups** in the **Authoring** workspace<br><br>For instructions, see [Creating and Managing Groups](manage-create-manage-groups.md)|
 |Create a view|In the **Monitoring** workspace or **My Workspace**, at the bottom of the navigation pane, click **New View**. For more information, see [Using Views in Operations Manager](https://technet.microsoft.com/library/hh212694.aspx).|
@@ -37,7 +37,7 @@ The following table gives a quick reference for where to perform common tasks an
 
 ## Next steps
 
-To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](../om/manage/operations-manager-operations-guide.md)
+To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](/system-center/scom/manage/operations-manager-operations-guide)
 
 
 

@@ -19,7 +19,7 @@ You can upgrade your installation of System Center 2012 R2 - Orchestrator to Sys
 >[!Note]
 >Upgrading from System Center 2012 R2 - Orchestrator is only supported if you have installed Upgrade Rollup 8 or later.
 
-For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
+For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016).
 
 ## Orchestrator upgrade steps
 

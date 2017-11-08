@@ -102,7 +102,7 @@ The following image is a simplified illustration of how objects are discovered a
 
 ![Discovery and Monitoring Overview](./media/key-concepts/om2016-windows-computer-discovery.png)
 
-1.  The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Managing Discovery and Agents](../om/manage/managing-discovery-and-agents.md).
+1.  The administrator configures Operations Manager to search for computers to manage. For more information about discovering computers, see [Managing Discovery and Agents](/system-center/scom/manage/managing-discovery-and-agents).
 
 2.  Computers that meet the specified criteria and are not already managed are identified.
 
@@ -137,7 +137,7 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 -   To learn how to install Operations Manager and deploy a management group, see [Deploying System Center 2016 - Operations Manager](deploy-overview.md)
 
--   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](../om/manage/operations-manager-operations-guide.md)
+-   To learn how to use Operations Manager after the management group is set up, see [System Center 2016 - Operations Manager Operations Guide](/system-center/scom/manage/operations-manager-operations-guide)
 
 -   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center 2012](https://go.microsoft.com/fwlink/p/?LinkID=212377)
 

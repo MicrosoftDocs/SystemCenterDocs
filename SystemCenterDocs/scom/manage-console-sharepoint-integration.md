@@ -284,4 +284,4 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
 
 * You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md). 
   
-* To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](../om/manage/using-reports-in-operations-manager.md). 
+* To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](/system-center/scom/manage/using-reports-in-operations-manager). 
