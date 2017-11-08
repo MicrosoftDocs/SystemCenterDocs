@@ -17,8 +17,6 @@ ms.assetid: d5795bd5-7c01-47b9-909f-8147362b9cf4
 
 # Register with the Service Manager data warehouse to enable reporting
 
->Applies To: System Center 2016 - Service Manager
-
 After you have deployed the Service Manager management servers and data warehouse management servers, for reporting to function you must run the Data Warehouse Registration Wizard. This wizard registers the Service Manager management group with the data warehouse management group. It also deploys management packs from the Service Manager management server to the data warehouse management server.  
 
  The management pack deployment process can take several hours to complete. It is a best practice not to turn off any Service Manager computers or stop any Service Manager services during this time. During this registration process, you can continue to use the Service Manager console to perform any Service Manager functions that you want.  

@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to configure sudo elevation and SSH keys
 
->Applies To: System Center 2016 - Operations Manager
-
 With System Center 2016 - Operations Manager, you can provide credentials for an unprivileged account to be elevated on a UNIX or Linux computer by using the sudo program, which allows users to run programs that have the security privileges of another user account. You can also use Secure Shell (SSH) keys instead of a password for secure communication between Operations Manager and the targeted computer.  
   
 This topic provides examples for creating an account for a low-privileged user, implementing sudo, and creating an SSH key on a computer that is running Red Hat Enterprise Linux Server 6. These are examples only, and might not reflect your environment. The following examples provide a user with access to a full set of privileges.  

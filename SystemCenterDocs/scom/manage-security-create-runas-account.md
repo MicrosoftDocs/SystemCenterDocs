@@ -14,8 +14,6 @@ ms.topic: article
 
 # Operations associated with user role profiles
 
->Applies To: System Center 2016 - Operations Manager
-
 This topic provides a list of the operations in System Center 2016 - Operations Manager that are associated with each profile.  
   
 ## Report Operator  

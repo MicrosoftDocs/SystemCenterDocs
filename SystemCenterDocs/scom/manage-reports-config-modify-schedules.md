@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to configure and modify report schedules
 
->Applies To: System Center 2016 - Operations Manager
-
 Operations Manager Reporting server component provides report-specific schedules to help you control processing and distribution of reports.  Once you have configured a schedule for a report, it can be managed from the Reporting workspace, under the Scheduled Reports node in the Operations console.  
 
 ## To create a report schedule

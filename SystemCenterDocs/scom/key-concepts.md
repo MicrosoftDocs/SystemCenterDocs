@@ -14,8 +14,6 @@ ms.topic: article
 
 # Operations Manager key concepts
 
->Applies To: System Center 2016 - Operations Manager
-
 Operations Manager, a component of Microsoft System Center 2016, is software that helps you monitor services, devices, and operations for many computers from a single console. This topic explains basic concepts about Operations Manager for the administrator who manages the Operations Manager infrastructure and the operator who monitors and supports the IT services for your business.
 
 ## What Operations Manager does

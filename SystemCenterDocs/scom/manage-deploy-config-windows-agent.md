@@ -14,8 +14,6 @@ ms.topic: article
 
 # Configuring Windows agents
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 – Operations Manager, when you install an agent on a computer, an Microsoft Monitoring Agent application is added to Control Panel. You can use the application to change the account that the agent will use when performing actions requested by the management server, to remove a management group from an agent configuration, and to configure the Active Directory integration setting for the agent. To perform these tasks, you must have local Administrator permissions on the computer.
 
 > [!NOTE]

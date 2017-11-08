@@ -14,8 +14,6 @@ ms.topic: article
 
 # Configuring a Firewall for Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 This section describes how to configure your firewall to allow communication between the different Operations Manager features on your network.  
 
 ## Port assignments

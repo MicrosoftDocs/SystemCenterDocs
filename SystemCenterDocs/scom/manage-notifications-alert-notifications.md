@@ -14,8 +14,6 @@ ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8
 
 # Subscribing to alert notifications
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system.  
   
 A notification requires the following elements:  

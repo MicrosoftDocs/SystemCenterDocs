@@ -14,8 +14,6 @@ ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 
 # Windows PowerShell Workflow Concepts
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
-
 One [type of runbook](manage/runbook-types-in-service-management-automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](https://go.microsoft.com/fwlink/?LinkID=324602).
 
 The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](http://aka.ms/runbookauthor/azure) although the two will typically work with different resources.

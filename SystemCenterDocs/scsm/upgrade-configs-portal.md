@@ -17,8 +17,6 @@ ms.assetid: e31341b7-64ec-4f93-8b89-08f48fac128f
 
 # Upgrade configurations for the Service Manager Self-Service portal
 
->Applies To: System Center 2016 - Service Manager
-
 The Service Manager Self-Service portal was updated for Service Manager 2012 R2 and Service Manager 2016. The new HTML 5-based version replaces the Sliverlight-based version. Use the following section that applies to the version that you want to replace.
 
 ## Upgrade the Self Service portal from a standalone installation of the Service Manager 2012 R2 Silverlight-based Self Service portal

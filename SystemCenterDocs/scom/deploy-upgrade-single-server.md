@@ -14,8 +14,6 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 
 # How to upgrade a single server management group to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 When you upgrade a single server management group to System Center 2016 - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
 
 ### To upgrade a single server management group

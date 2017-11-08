@@ -14,8 +14,6 @@ ms.topic: article
 
 # Authentication and Data Encryption in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 – Operations Manager consists of features such as the management server, gateway server, Reporting server, Operational database, Reporting data warehouse, agent, web console, and Operations console. This section explains how authentication is performed and identifies connection channels where the data is encrypted.
 
 ## Certificate-Based Authentication

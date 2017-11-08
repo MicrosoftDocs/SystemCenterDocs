@@ -17,8 +17,6 @@ ms.assetid: 3614b9db-20de-41c0-9780-a27624258da0
 
 # Install Service Manager on virtual machines
 
->Applies To: System Center 2016 - Service Manager
-
 This article provides guidance that you should consider when you install System Center - Service Manager in a Hyper\-V virtual environment. If you are installing Microsoft SQL&nbsp;Server into an environment without Hyper\-V, consult your vendor's documentation for guidance regarding the use of SQL&nbsp;Server.  
 
 ## Deploy SQL&nbsp;Server in a virtual environment  

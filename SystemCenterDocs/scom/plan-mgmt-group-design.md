@@ -14,8 +14,6 @@ ms.topic: article
 
 # Planning a Management Group Design
 
->Applies To: System Center 2016 - Operations Manager
-
 ## Overview
 
 A management group is identified by a single operational database, one or more management servers, and one or more monitored agents and devices.  Connecting management groups allows alerts and other monitoring data to be viewed and edited from a single console.  Tasks can also be initiated from a local management group to run on the managed objects of a connected management group.

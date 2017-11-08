@@ -14,8 +14,6 @@ ms.topic: article
 
 # Manually uninstalling agents from UNIX and Linux computers
 
->Applies To: System Center 2016 - Operations Manager
-
 There are three ways to uninstall the UNIX and Linux management packs and agents.
 
 1.  Delete selected UNIX or Linux system management packs from the Operations Manager Operations Console.

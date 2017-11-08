@@ -14,8 +14,6 @@ ms.topic: article
 
 # Configuring antivirus exclusions for Operations Manager agent and components
 
->Applies To: System Center 2016 - Operations Manager
-
 This article outlines antivirus exclusions as they pertain to System Center 2016 – Operations Manager.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
 
 ## Exclusions by process executable

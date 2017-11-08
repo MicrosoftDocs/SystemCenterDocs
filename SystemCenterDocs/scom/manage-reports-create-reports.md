@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to create reports in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 Operations Manager includes a number of reports when you install a management group, to help you review the operational telemetry and configuration information to help troubleshoot issues or problems, review the day-to-day health of your IT services, and make decisions that drive changes in capacity planning or service operations of the service.  
   
 ## Operational Data report

@@ -14,8 +14,6 @@ ms.assetid:  8453a3e9-56ee-4750-b111-81e241c480a4
 
 # Configure Incident Management in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This article provides an overview of how to configure Incident management in Service Manager. This article also contains procedures that cover incident management configuration scenarios, including configuring incident settings, configuring email incident support, and creating an incident template.
 
 Several features in Service Manager let you streamline the creation of incidents. You can configure incident settings such as the following in Service Manager:

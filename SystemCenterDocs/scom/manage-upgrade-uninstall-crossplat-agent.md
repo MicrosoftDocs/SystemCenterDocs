@@ -14,8 +14,6 @@ ms.topic: article
 
 # Upgrading and uninstalling agents on UNIX and Linux computers
 
->Applies To: System Center 2016 - Operations Manager
-
 This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
 
 ## Upgrading agents

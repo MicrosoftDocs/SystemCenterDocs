@@ -14,8 +14,6 @@ ms.assetid: 4a96716d-49f8-48a8-ac34-ca69e8f6363b
 
 # Not monitored and gray agents
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, you may see discovered objects in the Operations console displayed as not monitored or gray, as shown in the following illustration.  
   
 ![State view showing "not monitored"](./media/manage-agents-not-healthy/om2016-operations-console-windowscomputer-healthstate.png)  

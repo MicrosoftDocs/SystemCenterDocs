@@ -14,8 +14,6 @@ ms.assetid: 225d3776-a502-485d-a7ea-096b14f590a6
 
 # Using the Visio Add-in and SharePoint Visio Services Data Provider
 
->Applies To: System Center 2016 - Operations Manager
-
 The Visio Add-in for System Center 2016 - Operations Manager combines the strengths of two applications widely used in enterprise IT to simplify the creation of customized dashboards that show the health of an environment. The Visio Add-in lets you create diagrams in Visio 2010, 2013, and 2016 that shows:
 
 - Objects by geography on a map, by location in a data center or building

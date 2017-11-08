@@ -17,8 +17,6 @@ ms.assetid: 5e89257d-9ec5-411f-b1a4-0b856917ab9d
 
 # Planning for System Center 2016 - Service Manager performance and scalability
 
->Applies To: System Center 2016 - Service Manager
-
 This article describes general performance and scalability planning guidance for System Center 2016 - Service Manager. While Service Manager is built to meet a performance standard on minimum recommended hardware, the hardware requirements for your specific scenario may be higher or lower than the generalized guidelines presented here. This section also describes considerations for Service Manager software.  
 
  Service Manager is a three\-tiered application, consisting of a database, a data access module, and a console:  

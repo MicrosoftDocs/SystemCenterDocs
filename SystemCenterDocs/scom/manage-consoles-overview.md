@@ -13,8 +13,6 @@ ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ---
 
 # Using the Operations Manager consoles
-
->Applies To: System Center 2016 - Operations Manager
   
 System Center 2016 – Operations Manager includes two consoles, the Operations console and Web console.  The [Comparing the Operations and Web console](manage-consoles-comparison.md) section provides information on the difference between them, how to configure them after installation, and how to use the consoles to view the operational data reported by the monitored services in the enterprise.  
 

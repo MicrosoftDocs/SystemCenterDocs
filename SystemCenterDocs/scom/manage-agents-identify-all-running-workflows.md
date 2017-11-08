@@ -14,8 +14,6 @@ ms.assetid: 5ec7aa58-3789-4589-a051-63fdd6f2dec1
 
 # How to view all rules and monitors running on an agent-managed computer
 
->Applies To: System Center 2016 - Operations Manager
-
 Administrators for System Center 2016 - Operations Manager sometimes want to know which rules and monitors are running on a computer. This is simple to do with the **Show Running Rules and Monitors for this Health Service** task.  
   
 ## To view all rules and monitors running on a computer  

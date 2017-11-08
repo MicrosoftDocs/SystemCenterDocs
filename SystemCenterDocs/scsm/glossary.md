@@ -14,8 +14,6 @@ ms.assetid:  70310c2d-c8f0-4e6c-a276-1284c52f096f
 
 # Glossary of terms in System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 |Term|Definition|
 |--------|--------------|
 |action log|A record of the actions that have been taken during the lifetime of an incident to resolve the incident. Examples include comments by the analyst, communications from the user, attachments, and task outputs.|

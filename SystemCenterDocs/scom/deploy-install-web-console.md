@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to install the Operations Manager Web console
 
->Applies To: System Center 2016 - Operations Manager
-
 You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
 
 > [!IMPORTANT]

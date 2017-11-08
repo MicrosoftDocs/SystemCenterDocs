@@ -14,8 +14,6 @@ ms.topic: article
 
 # Accessing UNIX and Linux computers in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:  
   
 -   Secure Shell (SSH)  

@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to upgrade an agent to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 Use the following procedures to upgrade to System Center 2016 - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
 
 > [!NOTE]
