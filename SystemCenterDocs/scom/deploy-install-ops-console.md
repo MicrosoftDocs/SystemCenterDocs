@@ -5,18 +5,18 @@ description: This article describes how to install the Operations Manager Operat
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 11/08/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How to Install the Operations console
 
-After you install System Center 2016 - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
+After you install System Center - Operations Manager, you can install the Operations console on other servers and computers. For example, you might want to view monitoring data from your desktop computer.
 
-You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements)
+You must ensure that the computer that will host the Operations console meets the minimum system requirements. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md)
 
 ## To install the Operations console
 
@@ -26,7 +26,7 @@ You must ensure that the computer that will host the Operations console meets th
 
 3.  On the **Getting Started**, **Select features to install** page, select **Operations console**. To read more about what each feature provides and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default location of **C:\Program Files\System Center 2016\Operations Manager**, or type a new location or browse to one, and then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default location, or type a new location or browse to one, and then click **Next**.
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again**.
 
