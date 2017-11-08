@@ -161,5 +161,5 @@ Both the agentless-managed system and its proxy need to have access to the manag
 
 ## Next steps
   
-Monitoring of applications, features, and services are enabled by importing management packs. See [Using Management Packs](../om/manage/using-management-packs.md) for an explanation of what management packs do, and how to import and manage them.
+Monitoring of applications, features, and services are enabled by importing management packs. See [Using Management Packs](/system-center/scom/manage/using-management-packs) for an explanation of what management packs do, and how to import and manage them.
   
