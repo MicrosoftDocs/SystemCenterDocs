@@ -5,9 +5,9 @@ description: This article highlights the distributed deployment configuration of
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 11/08/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -16,9 +16,9 @@ ms.topic: article
 
 The distributed management group installation will form the foundation of 99 percent of Operations Manager deployments. It allows for the distribution of features and services across multiple servers to allow for scalability. It can include all Operations Manager server roles and supports the monitoring of devices across trust boundaries through the use of the gateway server.
 
-## System Center 2016 - Operations Manager features
+## System Center - Operations Manager features
 
-This configuration supports all System Center 2016 - Operations Manager features:
+This configuration supports all System Center - Operations Manager features:
 
 -   Monitoring and alerting, targeted for up to 15,000 agents
 

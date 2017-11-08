@@ -5,18 +5,16 @@ description: This article describes how to upgrade a Windows agent to Operations
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 11/08/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How to upgrade an agent to System Center 2016 - Operations Manager
 
-
-Use the following procedures to upgrade to System Center 2016 - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
-
+Use the following procedures to upgrade to System Center 2016 - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](plan-system-requirements.md).
 
 > [!NOTE]
 > If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.
@@ -109,7 +107,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 -   In the Operations console, in the **Administration** pane, run the **UNIX/Linux Upgrade Wizard**.
 
-    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=223881).
+    Any existing Run As profiles and Run As accounts continue to have valid configurations. For information about changes to Run As profiles and accounts for UNIX and Linux monitoring in Operations Manager, see [Accessing UNIX and Linux Computers in Operations Manager](http://go.microsoft.com/fwlink/p/?LinkID=223881).
 
 #### To manually upgrade UNIX and Linux agents
 

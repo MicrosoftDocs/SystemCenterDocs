@@ -4,16 +4,16 @@ description: This article describes how to use agentless monitoring in Operation
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/13/2017
+ms.date: 11-08/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 # Agentless Monitoring in Operations Manager
 
-System Center 2016 - Operations Manager can gather performance and availability data on a computer that does not have an agent installed by using a proxy agent that is installed on another computer. Use agentless-monitoring of computers when it is not possible or desirable to install an agent on a computer.  
+System Center - Operations Manager can gather performance and availability data on a computer that does not have an agent installed by using a proxy agent that is installed on another computer. Use agentless-monitoring of computers when it is not possible or desirable to install an agent on a computer.  
   
 An agentless-managed computer is a Windows-based computer that is discovered by using the Operations console. You assign a management server or agent-managed computer to provide remote (proxy) agent functionality for the computers.  
   
@@ -31,7 +31,7 @@ To change an agentless-managed computer to an agent-managed computer, do the fol
   
 1.  Delete the agentless-managed computer from the management group by right-clicking the computer in **Agentless Managed** in the **Administration** workspace and then clicking **Delete**.  
   
-2.  Deploy the agent to the computer. For more information, see [managing discovery and agents](../om/manage/managing-discovery-and-agents.md).  
+2.  Deploy the agent to the computer. For more information, first review the planning guidance [Operations Manager agents](plan-planning-agent-deployment.md).  
   
 ## Agentless monitoring compared to Agentless Exception Monitoring  
 Agentless monitoring provides monitoring of computers without agents by using a proxy agent and applying those management packs that support agentless monitoring. Agentless Exception Monitoring (AEM) redirects hardware, operating system, and application crash information to Operations Manager, which can aggregate, view, and report on error reports that are sent by the Windows Error Reporting service. For information on AEM, see [Client monitoring using Agentless Exception Monitoring in Operations Manager](manage-client-monitoring-using-aem.md).  
@@ -161,5 +161,5 @@ Both the agentless-managed system and its proxy need to have access to the manag
 
 ## Next steps
   
-Monitoring of applications, features, and services are enabled by importing management packs. See [Using Management Packs](/system-center/scom/manage/using-management-packs) for an explanation of what management packs do, and how to import and manage them.
+Monitoring of applications, features, and services are enabled by importing management packs. See [What is an Operations Manager management pack](manage-overview-management-pack.md) for an explanation of what management packs do, and how to import and manage them.
   
