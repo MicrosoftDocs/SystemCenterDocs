@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Cluster Properties Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Cluster Properties activity is used in a runbook to retrieve information about a virtual machine cluster in VMware vSphere. This allows the runbook to obtain the information about a cluster before cloning or creating virtual machines on that cluster.
 
 The following tables list the required and optional properties and published data for this activity.

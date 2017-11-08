@@ -17,8 +17,6 @@ ms.assetid: 34e9880c-5faf-4e67-ac1b-7043ab4dc8ad
 
 # Set up a Service Manager 2016 lab environment with production data to prepare for upgrade
 
->Applies To: System Center 2016 - Service Manager
-
 This article explains how to create a lab environment and populate it with production data so that upgrades can be performed and tested before an actual upgrade in the production environment. The procedures in this article show you how to configure Service Manager in a lab environment with production data. You then perform an in-place upgrade to System Center 2016 – Service Manager. It is important to follow the steps in this article in the order that they appear.
 
 In the [production environment](prod-env.md):

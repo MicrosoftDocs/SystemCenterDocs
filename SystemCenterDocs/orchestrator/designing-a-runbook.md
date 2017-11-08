@@ -17,8 +17,6 @@ manager: carmonm
 
 # Designing a Runbook
 
-> Applies To: System Center 2016 - Orchestrator
-
 When you plan a new runbook, you should start with a defined process that you want to automate. This process determines your choice of runbook activities. Specifically, determine the following:  
 
 -   When and how often is the runbook going to run?  

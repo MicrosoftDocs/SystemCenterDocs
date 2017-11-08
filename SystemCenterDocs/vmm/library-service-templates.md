@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/04/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,8 @@ ms.technology:  virtual-machine-manager
 
 # Manage the VMM library
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to learn how to manage the System Center 2016 - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
+Read this article to learn how to manage the System Center - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
 
 ## Refresh the library
 

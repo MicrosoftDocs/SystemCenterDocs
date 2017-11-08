@@ -14,8 +14,6 @@ ms.assetid: f6b1c3b7-4354-4a2d-ab0f-c2f859456caa
 
 # Change the way health state is represented in Visio
 
->Applies To: System Center 2016 - Operations Manager
-
 By default, health state is depicted by using the System Center 2016 - Operations Manager health icons (such as the green check mark for a healthy state). You can customize the way that health state is shown by changing the data graphic associated with the object in your Visio drawing. For example, you can show the health state by filling the shape with red, yellow, green, or grey color to represent the three health states and to represent a managed object in maintenance mode.  
   
 1.  Open the drawing in Visio.

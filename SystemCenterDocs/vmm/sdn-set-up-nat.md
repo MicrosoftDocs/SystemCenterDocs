@@ -5,7 +5,7 @@ description: This article describes how to configure NAT connection and NAT rule
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/29/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,9 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Set up NAT for traffic forwarding in the SDN infrastructure
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-Network Address Translation (NAT) allows Virtual Machines (VMs) in an isolated SDN virtual network to obtain external connectivity.  Virtual Machine Manager (VMM) configures a Virtual IP (VIP) to forward the traffic to, and from an external network.
+
+This article describes how to set up Network Address Translation (NAT) for traffic forwarding in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
+
+NAT allows virtual machines (VMs) in an isolated SDN virtual network to obtain external connectivity. VMM configures a Virtual IP (VIP) to forward the traffic to and from an external network.
 
 The following two NAT types are supported by VMM.
 

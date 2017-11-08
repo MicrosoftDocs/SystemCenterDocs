@@ -17,8 +17,6 @@ ms.assetid: 08966e4d-19ef-47d8-a415-776409b51a32
 
 # Service Manager Authoring Tool workflow activity reference
 
->Applies To: System Center 2016 - Service Manager
-
 This section provides guidance for information technology (IT) developers so that they can create custom Windows Workflow Foundation (WF) activities that IT pros can use to build WF workflows that are specific to their IT processes. Custom WF activities extend the Activity Library-the activities that are distributed with the Service Manager Authoring Tool. The Workflow Activity Reference section of this document provides details of the default WF activities in the Activity Library. This information is intended to help developers (or IT pros acting as developers) create custom WF activities, as needed.  
 
  For information about how to use WF activities and WF workflows with Service Manager, see [Automating IT Processes with Workflows](automate-processes-workflows.md).  

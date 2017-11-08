@@ -18,8 +18,6 @@ robots: noindex
 
 # Delete collection activity for System Center 2016 Configuration Manager
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete Collection activity is used to remove an existing collection
 from a Configuration Manager site and optionally delete the members of
 that collection from the Configuration Manager database. You cannot

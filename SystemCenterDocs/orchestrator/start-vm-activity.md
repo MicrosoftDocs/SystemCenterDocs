@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Start VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Start VM activity is used in a runbook to start a virtual machine that has been added to a VMware vSphere server and is not already running. The Start VM activity waits for the guest operating system to complete its boot up sequence before continuing to the next object in the runbook. This allows the runbook to start a virtual machine after it has been paused by the Suspend VM activity.
 
 The following tables list the required and optional properties and published data for this activity.

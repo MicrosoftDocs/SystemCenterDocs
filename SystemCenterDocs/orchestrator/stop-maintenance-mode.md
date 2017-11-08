@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Stop Maintenance Mode
 
-Applies To: System Center 2016 - Orchestrator
-
 The Stop Maintenance Mode activity takes a monitor out of maintenance mode. If you put a monitor into maintenance mode using the Start Maintenance Mode Activity, you can use the Stop Maintenance Mode activity to put that monitor back in service before the configured duration has elapsed.
 
 If you choose to take a computer (Microsoft.Windows.Computer or Microsoft.Unix.Computer) out of maintenance mode, then all child monitors for that computer will also be taken out of maintenance mode.

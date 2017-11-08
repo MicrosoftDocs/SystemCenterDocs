@@ -5,7 +5,7 @@ description: This article describes how to configure load balancing for the inte
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/16/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -13,11 +13,10 @@ ms.technology: virtual-machine-manager
 
 # Load balance network traffic in an SDN fabric using VMM
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 In Software Define Networking (SDN) fabric, you can use the Software Load Balancer (SLB) to evenly distribute the network traffic among the workloads managed by the Cloud Service Providers (CSPs) and the tenants. Learn more about [Software Load Balancer (SLB)](sdn-slb.md).
 
-System Center Virtual Machine Manager 2016 supports the following two scenarios of load balancing:
+System Center Virtual Machine Manager (VMM) supports the following two scenarios of load balancing:
 
 - **Load balancing the external network traffic**: This scenario includes load balancing the network traffic coming from an external network. Load balancing is done through a public Virtual IP (VIP). The workload VMs can be connected to a **no isolation** VM network or to a **network virtualization** enabled VM network.
 

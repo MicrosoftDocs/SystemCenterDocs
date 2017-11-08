@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Synchronize Folder or File
 
-Applies To: System Center 2016 - Orchestrator
-
 The Synchronize Folder/File activity is used in a runbook to perform a one way synchronization of a folder/File.
 
 This activity publishes all of the data from the required and optional properties into published data.

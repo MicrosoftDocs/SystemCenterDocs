@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Revert VM Snapshot activity
 
-> Applies To: System Center 2016 - Orchestrator
-
 The Revert VM Snapshot activity is used in a runbook to revert a virtual machine to the last available snapshot. This allows the runbook to revert a snapshot to its previous state after you have finished using it.
 
 The following tables list the required and optional properties and published data for this activity.

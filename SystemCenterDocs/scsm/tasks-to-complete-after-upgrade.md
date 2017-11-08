@@ -17,8 +17,6 @@ ms.assetid: a21c98a9-c10a-41db-8d8c-9eac164c2517
 
 # Tasks to complete after you upgrade to System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This topic describes how to restart the Data Access service if it fails to start after an upgrade to System Center 2016 - Service Manager. After the upgrade, you will also have to start the Service Manager workflows and restart the data warehouse jobs. This topic also describes how to stop and then start SQL&nbsp;Server Reporting Services \(SSRS\) after an upgrade.  
 
 ## Restart the Data Access service and workflows on the Data Warehouse management server  

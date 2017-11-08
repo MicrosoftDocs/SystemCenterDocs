@@ -17,8 +17,6 @@ manager: carmonm
 
 # How to back up Orchestrator
 
-> Applies To: System Center 2016 - Orchestrator
-
 A complete backup of an Orchestrator environment consists of the following:  
 
 -   Backup of the Orchestrator database.  

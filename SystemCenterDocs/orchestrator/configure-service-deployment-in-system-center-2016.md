@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Configure Service Deployment in System Center 2016
 
-Applies To: System Center 2016 - Orchestrator
-
 The Configure Service Deployment activity is used in a runbook to configure a VMM service for deployment.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

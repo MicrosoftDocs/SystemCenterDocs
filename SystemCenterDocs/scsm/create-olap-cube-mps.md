@@ -17,8 +17,6 @@ ms.assetid: 3ed8ab2f-0e0d-4b6f-b3e4-a0f44775ec13
 
 # Create a Service Manager OLAP cube using a management pack
 
-> Applies To: System Center 2016 - Service Manager
-
 A System Center online analytical processing (OLAP) cube is defined as a collection of the following management pack elements:
 
 - Measure groups, which points to the facts that are included

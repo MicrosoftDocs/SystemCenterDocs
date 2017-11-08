@@ -17,8 +17,6 @@ manager: carmonm
 
 # Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
 
-Applies To: System Center 2016 - Orchestrator
-
 The following sections provide information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center 2016 - Orchestrator.
 
 ## System Requirements

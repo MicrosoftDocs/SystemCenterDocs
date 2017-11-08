@@ -17,8 +17,6 @@ ms.assetid: f286c692-7648-4f78-a510-fb7e5553b04d
 
 # System Center 2016 - Service Manager parts
 
->Applies To: System Center 2016 - Service Manager
-
 There are six major parts of a System Center 2016 - Service Manager installation, as described in the following table.  
 
 

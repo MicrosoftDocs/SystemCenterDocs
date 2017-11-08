@@ -5,7 +5,7 @@ description: This article provides instructions for deploying the VMM server in 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/21/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Deploy a highly available VMM management server
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes the steps for deploying a highly available System Center 2016 - Virtual Machine Manager (VMM) server.
+
+This article describes the steps for deploying a highly available System Center - Virtual Machine Manager (VMM) server.
 
 ## Before you start
 

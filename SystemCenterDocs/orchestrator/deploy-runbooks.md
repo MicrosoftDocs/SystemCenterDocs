@@ -15,8 +15,6 @@ manager: carmonm
 ---
 # Deploy runbooks with System Center 2016 - Orchestrator
 
->Applies To: System Center 2016 - Orchestrator
-
 There are tools available in Orchestrator to help you manage the versions of your runbooks. These tools are described in the following sections.  
 
 ## Version control  

@@ -14,8 +14,6 @@ ms.topic: article
 
 # Security Considerations for Microsoft Azure and Office 365
 
->Applies To: System Center 2016 - Operations Manager
-
 ## Integration with Azure
 
 The Azure monitoring pack runs on a specified agent and uses various Windows Azure APIs to remotely discover and collect instrumentation information about a specified Windows Azure application.  Secure communication and authentication with Azure is performed by certificate authentication, which is required in order to successfully monitor workloads hosted in Azure with Operations Manager.  

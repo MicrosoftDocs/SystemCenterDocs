@@ -13,8 +13,6 @@ ms.technology:  service-provider-foundation
 
 # SPF system requirements
 
->Applies To: System Center 2016 - Service Provider Foundation
-
 This article describes the hardware and software requirements for System Center 2016 - Service Provider Foundation (SPF).
 
 

@@ -5,7 +5,7 @@ description: This article describes how to integrate VMM with Operations Manager
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,9 +14,8 @@ ms.technology:  virtual-machine-manager
 
 # Integrate VMM with Operations Manager for monitoring and reporting
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to integrate System Center 2016 - Virtual Machine Manager (VMM) with System Center Operations Manager to monitor the health of virtualization hosts, virtual machines, and other resources in the VMM compute fabric.
+This article describes how to integrate System Center - Virtual Machine Manager (VMM) with System Center Operations Manager to monitor the health of virtualization hosts, virtual machines, and other resources in the VMM compute fabric.
 
 - Operations Manager monitors the VMM server and all hosts and virtual machines in the VMM fabric.
 - An Operations Manager management group can monitor multiple VMM instances. The VMM fabric can only be monitored by a single Operations Manager management group.

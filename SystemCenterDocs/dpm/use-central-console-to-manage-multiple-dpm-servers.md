@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 11/01/2016
 title:  Manage multiple DPM servers with Central Console
 ms.technology:  data-protection-manager
 ms.assetid:  6e08e911-36e0-48d6-b71e-df4741811a0a
@@ -14,9 +14,7 @@ ms.author: markgal
 
 # Manage multiple DPM servers with Central Console
 
->Applies To: System Center 2016 - Data Protection Manager
-
-Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. It provides:
+Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple System Center Data Protection Manager (DPM) servers from a single location. It provides:
 
 -   Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status of servers, tasks, protected resources, tape libraries, available storage and disk space.
 

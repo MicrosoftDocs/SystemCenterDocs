@@ -14,8 +14,6 @@ ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 
 # Using SharePoint to view Operations Manager data
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager includes a SharePoint Web Part that displays selected dashboards from the Web console. A configured Web Part allows you to see at a glance the availability and performance metrics for applications in your environment.  
   
 The Operations Manager Web Part is particularly useful for providing current status views to individuals in your organization who are not Operations Manager users. Use the following procedures, as applicable, to set up dashboards on a SharePoint page.  
@@ -286,4 +284,4 @@ As with deploying the Operations Manager Web Part, you can uninstall the Web Par
 
 * You can use views and dashboards to visualize operational data from different perspectives to make meaningful decisions. To understand how to do this, see [Using Views and Dashboards in Operations Manager](manage-console-using-views-dashboards.md). 
   
-* To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](../om/manage/using-reports-in-operations-manager.md). 
+* To learn how you can use reports in Operations Manager to view historical operational data, see [Using reports in Operations Manager](/system-center/scom/manage/using-reports-in-operations-manager). 

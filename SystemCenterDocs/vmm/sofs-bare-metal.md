@@ -4,8 +4,8 @@ title: Provision a scale-out file server (SOFS) cluster from bare metal computer
 description: This article provides about provisioning an SOFS in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Provision a scale-out file server (SOFS) cluster from bare metal computers in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-In addition to adding existing file servers to an SOFS cluster in the System Center 2016 - Virtual Machine Manager (VMM)  fabric, VMM can discover provision bare-metal machines as SOFS cluster nodes. This article includes the steps for setting up a bare metal SOFS cluster in VMM.
+
+In addition to adding existing file servers to an SOFS cluster in the System Center - Virtual Machine Manager (VMM)  fabric, VMM can discover provision bare-metal machines as SOFS cluster nodes. This article includes the steps for setting up a bare metal SOFS cluster in VMM.
 
 ## Before you start
 

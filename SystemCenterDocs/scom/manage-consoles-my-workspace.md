@@ -14,8 +14,6 @@ ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
 
 # Using My Workspace 
 
->Applies To: System Center 2016 - Operations Manager
-
 My Workspace provides you with a private area in the Operations console that you can customize for your specific needs.  Using My Workspace, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you. Your configuration of My Workspace will be available to you in any Operations or Web console that you log in to using the same Windows credentials.  
   
 ## Create folders in My Workspace  
@@ -112,7 +110,7 @@ Views that you create in My Workspace are unique views, not shortcuts to existin
   
 ## Next steps 
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).  
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group administration by [Using the Operations Manager Operations console](manage-consoles-overview.md).  
   
 - For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](manage-health-using-healthexplorer.md).  
 

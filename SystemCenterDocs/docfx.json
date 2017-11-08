@@ -3,14 +3,139 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "*.md",
+          "*.yml",
+          "breadcrumb/toc.yml"
         ],
         "exclude": [
           "**/obj/**",
-          "system-center/**"
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "dpm",
+        "src": "dpm",
+        "dest": "dpm",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "orchestrator",
+        "src": "orchestrator",
+        "dest": "orchestrator",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "scom",
+        "src": "scom",
+        "dest": "scom",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "scsm",
+        "src": "scsm",
+        "dest": "scsm",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "sma",
+        "src": "sma",
+        "dest": "sma",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "spf",
+        "src": "spf",
+        "dest": "spf",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "vmm",
+        "src": "vmm",
+        "dest": "vmm",
+        "exclude": [
+          "**/obj/**",         
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
         ]
       }
+
     ],
     "resource": [
       {
@@ -21,19 +146,122 @@
         ],
         "exclude": [
           "**/obj/**",
-          "system-center/**"
-        ]
+          "**/includes/**"
+        ],
+        "group": "dpm",
+        "src": "dpm",
+        "dest": "dpm"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "orchestrator",
+        "src": "orchestrator",
+        "dest": "orchestrator"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "scom",
+        "src": "scom",
+        "dest": "scom"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "scsm",
+        "src": "scsm",
+        "dest": "scsm"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "spf",
+        "src": "spf",
+        "dest": "spf"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "vmm",
+        "src": "vmm",
+        "dest": "vmm"
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": { 
-        "breadcrumb_path": "~/breadcrumb/toc.yml"
+        "breadcrumb_path": "/system-center/breadcrumb/toc.json"
      },
     "fileMetadata": {},
     "template": [
       null
     ],
-    "dest": "system-center"
+    "dest": "system-center",
+    "groups": {
+      "dpm": {
+        "dest": "dpm",
+        "moniker_range": ">= sc-dpm-2016"
+      },
+      "orchestrator": {
+        "dest": "orchestrator",
+        "moniker_range": ">= sc-orch-2016"
+      },
+      "scom": {
+        "dest": "scom",
+        "moniker_range": ">= sc-om-2016"
+      },
+      "scsm": {
+        "dest": "scsm",
+        "moniker_range": ">= sc-sm-2016"
+      },
+      "sma": {
+        "dest": "sma",
+        "moniker_range": ">= sc-sma-2016"
+      },
+      "spf": {
+        "dest": "spf",
+        "moniker_range": ">= sc-spf-2016"
+      },
+      "vmm": {
+        "dest": "vmm",
+        "moniker_range": ">= sc-vmm-2016"
+      }
+    }
   }
 }

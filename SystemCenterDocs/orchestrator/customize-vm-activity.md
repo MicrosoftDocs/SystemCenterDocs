@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Customize VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Customize VM activity is used in a runbook to customize a virtual machine using a designated script. This allows the runbook to perform advanced customization using a pre-made Customization Spec.
 
 The following tables list the required and optional properties and published data for this activity.

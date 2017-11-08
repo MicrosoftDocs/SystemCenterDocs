@@ -16,8 +16,6 @@ ms.topic: article
 
 # Set up a Service Manager 2016 production environment to prepare it for upgrade
 
->Applies To: System Center 2016 - Service Manager
-
 Use the following procedures to prepare for Service Manager upgrade by creating a production environment and preparing it for production data.
 
 ## Install an additional management server in the production Service Manager management group

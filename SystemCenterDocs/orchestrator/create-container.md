@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Container
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Create Container** activity creates a new container under the specified account. It is part of the **Azure Storage** category activity.
 
 >[!NOTE]

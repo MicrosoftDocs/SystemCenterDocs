@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Remove Remote Mailbox (Hybrid)
 
-> Applies To: System Center 2016 - Orchestrator
-
 You can use the Remove Remote Mailbox activity to delete an existing remote mailbox.
 
 The following tables list the required properties, optional properties, and published data for this activity.

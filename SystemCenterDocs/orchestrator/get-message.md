@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Message
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Message activity retrieves message from a management server according to filter criteria that you specify. The activity uses filters to determine which messages retrieved from the management server should be published.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Operations Manager Activities](operations-manager-activities.md).

@@ -14,8 +14,6 @@ ms.topic: article
 
 # Upgrading and uninstalling agents on UNIX and Linux computers
 
->Applies To: System Center 2016 - Operations Manager
-
 This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
 
 ## Upgrading agents
@@ -74,7 +72,7 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 
 - For more information on how to install the agent and understand the steps for signing the agent certificate, see [Install Agent and Certificate on UNIX and Linux Computers Using the Command Line](manage-install-crossplat-agent-cmdline.md).
 
-- To understand how to approve agents manually installed, review [Process Manual Agent Installations](~/vmm/install.md).
+- To understand how to approve agents manually installed, review [Process Manual Agent Installations](/system-center/vmm/install).
 
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](~/scom/manage-apply-overrides-object-discovery.md).
 

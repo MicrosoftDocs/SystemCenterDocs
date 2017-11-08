@@ -14,11 +14,9 @@ ms.topic: article
 
 # How to upgrade an Operations console to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 This procedure upgrades a stand-alone Operations console to System Center 2016 - Operations Manager. Perform this procedure locally on the computer that has a stand-alone Operations console installed. You do not have to perform this procedure to upgrade Operations consoles that are installed locally on a management server.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements).
 
 ### To upgrade a stand-alone Operations console
 

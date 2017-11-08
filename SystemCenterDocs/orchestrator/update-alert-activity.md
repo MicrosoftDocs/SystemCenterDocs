@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Update Alert Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Update Alert activity updated an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This activity can change the information in an alert based on results from automated diagnostics performed by a runbook.
 
 The following tables list the required properties, optional properties, and published data for this activity.

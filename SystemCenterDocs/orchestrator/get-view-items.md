@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get View Items
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Get View Items** activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list by using one of the list's views.
 
 The following tables list the required properties and Published Data for this activity. Additional Published Data is generated, which is based on the SharePoint list that is retrieved when you define the activity.

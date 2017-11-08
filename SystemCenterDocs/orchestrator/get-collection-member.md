@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Collection Member activity for Configuration Manager Integration Pack
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Collection Member activity is used in a runbook that queries an
 existing Configuration Manager collection for its member computers. This
 lets you specify computers individually to obtain status or perform

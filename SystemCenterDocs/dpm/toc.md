@@ -30,6 +30,7 @@
 ### [Back up client computers with DPM](back-up-workstations.md)
 ### [Back up file data with DPM](back-up-file-data.md)
 ### [Back up system state and bare metal](back-up-system-state-and-bare-metal.md)
+### [Back up and restore VMware servers](back-up-vmware.md)
 ### [Back up and restore VMM servers](back-up-vmm-server.md)
 ### [Prepare to back up a generic data source](back-up-generic-data-source.md)
 ### [Prepare machines in workgroups and untrusted domains for backup](back-up-machines-in-workgroups-and-untrusted-domains.md)

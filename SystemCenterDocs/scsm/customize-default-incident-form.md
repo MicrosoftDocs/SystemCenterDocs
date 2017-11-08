@@ -17,8 +17,6 @@ ms.assetid: 2af8b9d4-f736-4f96-b058-a96b10a64aca
 
 # Customize the default incident form for the Service Manager Authoring Tool sample scenario
 
-> Applies To: System Center 2016 - Service Manager
-
 This sample scenario describes how to apply simple customizations to a default form in the Service Manager Authoring Tool. In this scenario, you customize the Incident form, which is the default form for interacting with incidents. You customize the form in the Authoring Tool and then save the customized form in a new management pack. Then, in the Service Manager console, you import this new management pack. Afterwards, whenever you create or view an incident, Service Manager displays the customized form. The Incident form, System.WorkItem.Incident.ConsoleForm, is defined in the Service Manager Incident Management Library management pack.
 
 The sample scenario for customizing the default Incident form consists of three steps.

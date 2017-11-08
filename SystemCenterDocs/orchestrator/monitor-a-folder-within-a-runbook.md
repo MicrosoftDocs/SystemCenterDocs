@@ -17,8 +17,6 @@ manager: carmonm
 
 # Example Runbook: Monitor a folder with a runbook
 
-> Applies To: System Center 2016 - Orchestrator
-
 This sample shows you how to create a simple runbook that monitors a folder for new text files. When a file is detected, the runbook sends an event log message, and then starts another runbook.  
 
 ![Monitor Folder](./media/monitor-a-folder-within-a-runbook/Orch2016_Sample_MonitorFolder.png)  

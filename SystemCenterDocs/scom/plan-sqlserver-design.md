@@ -14,8 +14,6 @@ ms.topic: article
 
 # SQL Server Design Considerations
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
 In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.  In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration.  In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.  
@@ -309,7 +307,7 @@ It is important to understand that there is no right answer here, and the optimi
 ### Virtualizing SQL Server
 
 In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use Operations Manager Sizing Helper to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task . 
-See also [Operations Manager virtualization support](../orchestrator/system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
+See also [Operations Manager virtualization support](/system-center/orchestrator/system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 

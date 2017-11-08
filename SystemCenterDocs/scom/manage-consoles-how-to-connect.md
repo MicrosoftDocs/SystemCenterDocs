@@ -14,8 +14,6 @@ ms.assetid: 12dba3ee-d394-4575-8fc0-2c403b2818ed
 
 # How to connect to the Operations and Web Console
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager includes two consoles, the Operations console and Web console. To view operational data and administer the management group configuration, you use the Operations console.  The Web console provides a light-weight interface with  essential functionality to view the monitoring data, which avoids having to manage the lifecycle deployment of the Operations console.  
 
 In this section we provide information on how to connect to the Operations and Web console.    

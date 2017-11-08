@@ -14,8 +14,6 @@ ms.assetid: 4b55aeec-869a-4072-89f5-0ae8e5a860ea
 
 # Running a service level tracking report
 
->Applies To: System Center 2016 - Operations Manager
-
 You can create a report that shows how your application or group is performing in relation to the defined service level objectives. The report that is generated provides both high-level information to give you a picture of the overall status at a glance, and detailed low-level information to provide specific information on availability and performance metrics.  
   
 The Service Level Tracking Summary report shows the results for one or more service levels in comparison to the defined target objectives. From this report, you can examine a more detailed report, the State view, or the Service Level Agreement view.  

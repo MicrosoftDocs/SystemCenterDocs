@@ -17,8 +17,6 @@ manager: carmonm
 
 # How to configure Orchestrator database connections
 
-> Applies To: System Center 2016 - Orchestrator
-
 As part of your day-to-day operations of Orchestrator you may need to change the connection settings to the Orchestrator database. You can us the DBSetup utility to change this setting. The common scenario is connecting to a restored backup.  
 
 This utility provides two functions:  

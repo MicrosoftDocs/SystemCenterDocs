@@ -5,7 +5,7 @@ description: This article describes how to create VM role templates that can be 
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/07/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Create VM templates using VMM and Windows Azure Pack
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-As a hosting provider, you can use System Center 2016 - Virtual Machine Manager (VMM) in combination with Windows Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises, and in service-provider hosting environments.
+
+As a hosting provider, you can use System Center - Virtual Machine Manager (VMM) in combination with Windows Azure Pack to increase the features that you offer to tenants. To help tenants create virtual machines with specific operating systems and applications already installed, you can create VM role templates. Tenants can use these templates to create VMs on-premises, and in service-provider hosting environments.
 
 ## Before you begin
 

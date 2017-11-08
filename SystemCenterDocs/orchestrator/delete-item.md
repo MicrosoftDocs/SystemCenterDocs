@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete Item activity is used in a runbook to delete existing appointments, contact groups, email messages, and task items.
 
 The following tables list the required properties and published data for this activity.

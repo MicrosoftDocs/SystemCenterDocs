@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete Alert Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Delete Alert activity deletes an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer. This can be used to delete an alert that has been replaced by a newer one.
 
 The following tables list the required properties, optional properties, and published data for this activity.

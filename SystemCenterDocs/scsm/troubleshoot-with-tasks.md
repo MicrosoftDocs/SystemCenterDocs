@@ -14,8 +14,6 @@ ms.assetid: 7814be87-cbc7-42fe-a5c8-5a8720e3921c
 
 # Troubleshoot computer problems with Service Manager tasks
 
->Applies To: System Center 2016 - Service Manager
-
 If you want to view the logs on a remote computer that is exhibiting problems, you must first create a task that opens Event Viewer. Event Viewer reads logs from remote computers.
 
 In Service Manager, administrators can create and use tasks to automate and simplify lengthy, complex, or repetitive processes. Operators typically use tasks to help troubleshoot user incidents. After creating a task, operators can run the task directly from the Service Manager console.

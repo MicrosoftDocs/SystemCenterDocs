@@ -17,8 +17,6 @@ ms.manager: carmonm
 ---
 # Automate IT Operations with System Center 2016 - Orchestrator Runbooks
 
-> Applies To: System Center 2016 - Orchestrator
-
 The power of System Center 2016 - Orchestrator lies in providing runbooks and the individual activities that make up a runbook. Runbooks contain the instructions for an automated task or process. The individual steps throughout a runbook are called activities. Within the runbook,  additional controls provide information and instructions to control the sequence of activities in the runbook. Runbooks, activities, and each runbook control have configurable properties. You modify these properties to configure the behavior that your runbook requires.  
 
 ## Starting Point

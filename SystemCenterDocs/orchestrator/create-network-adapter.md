@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create Network Adapter
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create Network Adapter activity is used to create a new network adapter and attach it to a specified virtual machine.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

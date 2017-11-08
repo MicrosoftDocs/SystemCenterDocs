@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Suspend VM
 
-Applies To: System Center 2016 - Orchestrator
-
 The Suspend VM activity is used to suspend a virtual machine that is currently running. A virtual machine in a suspended state can be resumed, stopped, or started.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

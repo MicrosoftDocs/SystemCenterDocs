@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Start VM
 
-Applies To: System Center 2016 - Orchestrator
-
 The Start VM activity is used to start a virtual machine that has been paused, shut down, or stopped.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

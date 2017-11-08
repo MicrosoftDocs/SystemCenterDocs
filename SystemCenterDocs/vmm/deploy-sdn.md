@@ -1,11 +1,11 @@
 ---
 ms.assetid: dbb10ddd-b976-4cb6-9216-ec70eafca4b6
-title: Deploy and manage a Software Defined Network (SDN) infrastructure using VMM 2016
-description: This article provides an overview of setting up an SDN in the VMM fabric
+title: Deploy and manage a Software Defined Network (SDN) infrastructure in System Center VMM
+description: This article provides an overview of setting up n SDN in the System Center VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/18/2017
+ms.date:  11/01/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,8 @@ ms.technology:  virtual-machine-manager
 
 # Deploy and manage a Software Defined Network (SDN) infrastructure in the VMM fabric
 
->Applies To: System Center 2016- Virtual Machine Manager
 
-System Center 2016 - Virtual Machine Manager (VMM) can be used to deploy and manage a Software Defined Network (SDN) infrastructure.
+System Center - Virtual Machine Manager (VMM) can be used to deploy and manage a Software Defined Network (SDN) infrastructure.
 
 ## Software Defined Network overview
 SDN virtualizes your network to abstract physical hardware network elements such as switches and routers. Using SDN you can dynamically manage your datacenter networking to meet workload and app requirements. Network policies can be implemented consistently, at scale, even as you deploy new workloads, or move workloads across virtual or physical networks.

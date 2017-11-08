@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Delete List Item
 
-Applies To: System Center 2016 - Orchestrator
-
 The **Delete List Item** activity is used in a runbook to delete an item from a Microsoft SharePoint list.
 
 The following tables list the required properties and published data for this activity.

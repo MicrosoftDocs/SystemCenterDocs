@@ -14,8 +14,6 @@ ms.assetid:  392af14e-a6ba-4e54-b3a0-64621b30dad6
 
 # Registry keys used by Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 
 > [!CAUTION]
 > Incorrectly editing the registry can severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.

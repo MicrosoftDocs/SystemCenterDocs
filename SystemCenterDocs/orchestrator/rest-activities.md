@@ -17,8 +17,6 @@ robots: noindex
 ---
 # REST activities
 
-> Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties

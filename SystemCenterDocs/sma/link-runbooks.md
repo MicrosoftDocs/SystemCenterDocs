@@ -14,8 +14,6 @@ ms.assetid:  4ccce671-6f5e-405c-a007-05f2e43f7124
 
 # Child Runbooks in Service Management Automation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
-
 It is a best practice in Service Management Automation to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be best for your different scenarios.
 
 ## <a name="InlineExecution"></a>Invoking a Child Runbook Using Inline Execution

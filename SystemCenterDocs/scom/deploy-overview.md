@@ -14,8 +14,6 @@ ms.topic: article
 
 # Deploying System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 All System Center 2016 - Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
 
 This section of the Deployment Guide describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
@@ -30,9 +28,9 @@ For information about connecting management groups, see [Connecting Management G
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center 2016](~/system-center.md)
+-   [Release Notes for System Center Technical Preview 1711](release-notes-tp1711.md)
 
--   [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md)
+-   [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements)
 
 ### Operations Manager Administrators role assignment
 

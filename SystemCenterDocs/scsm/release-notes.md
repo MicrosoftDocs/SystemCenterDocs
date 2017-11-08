@@ -9,6 +9,7 @@ ms.technology: service-manager
 keywords:
 ms.date: 08/03/2017
 title:  Release Notes for System Center 2016 - Service Manager
+monikerRange: 'sc-sm-2016'
 ---
 
 # Release Notes for System Center 2016 - Service Manager

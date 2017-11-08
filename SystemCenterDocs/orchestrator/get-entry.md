@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Entry
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Entry activity is used in a runbook to retrieve existing entries from HP Service Manager.
 
 The following tables list the required properties and published data for this activity. For more information on configuring activities, see [HP Service Manager Activities](service-manager-activities.md).

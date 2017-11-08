@@ -16,8 +16,6 @@ manager: carmonm
 ---
 # Orchestrator logs
 
-> Applies To: System Center 2016 - Orchestrator
-
 This article provides information on common troubleshooting issues and the available tools that can assist in identifying root problems.  
 
 ## Log files  

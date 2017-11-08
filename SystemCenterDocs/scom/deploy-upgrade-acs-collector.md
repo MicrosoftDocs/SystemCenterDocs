@@ -14,14 +14,12 @@ ms.topic: article
 
 # How to upgrade an ACS Collector to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 Perform this procedure to upgrade the Audit Collection Services (ACS) Collector to System Center 2016 - Operations Manager locally on the ACS Collector. During this procedure, the ACS database is also upgraded without any additional steps.
 
 > [!WARNING]
 > A computer that hosts an ACS Collector must also be an Operations Manager management server or gateway server.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements).
 
 ##To upgrade an ACS Collector
 

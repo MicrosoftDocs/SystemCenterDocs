@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/28/2016
+ms.date: 11/01/2016
 title:  Prepare data storage
 ms.technology:  data-protection-manager
 ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
@@ -14,9 +14,7 @@ ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 
 # Prepare data storage
 
->Applies To: System Center 2016 - Data Protection Manager
-
-A major part of your DPM deployment will be figuring out how to store data backed up by DPM. Learn about:
+A major part of your System Center Data Protection Manager (DPM) deployment will be figuring out how to store data backed up by DPM. Learn about:
 
 - [Add Modern Backup Storage](add-storage.md)
 

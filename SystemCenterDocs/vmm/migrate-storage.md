@@ -5,7 +5,7 @@ description: This article describes how to migrate storage in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/20/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,9 +14,9 @@ ms.technology:  virtual-machine-manager
 
 # Migrate storage in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-This article describes how to migrate storage in the VMM fabric
+
+This article describes how to migrate storage in the System Center Virtual Machine Manager (VMM) fabric.
 
 Storage migration enables you to move VM files from one storage location to another, on the same VM host. If the virtual machine is running, you can perform a quick storage migration, which results in little or no service outage for users of the virtual machine. If the virtual machine has more than one virtual hard disk, you can specify a separate location for each virtual hard disk (.vhd or .vhdx) file.
 

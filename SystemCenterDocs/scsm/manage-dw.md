@@ -18,8 +18,6 @@ ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
 
 # Manage the Service Manager data warehouse
 
->Applies To: System Center 2016 - Service Manager
-
 In order to manage the data warehouse, which is primarily used by reporting, you must perform maintenance tasks on data warehouse jobs. For example, you can view their status, pause and resume, set a schedule, enable and disable schedules, and troubleshoot data warehouse jobs. You can perform all of these maintenance tasks by using Windows PowerShell cmdlets. In addition, you can perform some of these tasks through the Service Manager console.
 
 During deployment, you registered the Service Manager management group as discussed in Register Service Manager Management Group in the Service Manager Deployment Guide. As a result of that action, management pack deployment started and MPSyncJob started. You should not start or resume any data warehouse jobs until MPSyncJob has finished, as shown in the **Data Warehouse Jobs** pane in the Service Manager console.

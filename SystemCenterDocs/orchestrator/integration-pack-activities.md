@@ -17,8 +17,6 @@ manager: carmonm
 
 # FTP Integration Pack Activities
 
-Applies To: System Center 2016 - Orchestrator
-
 The following configuration instructions apply to all activities in this integration pack. Links to this section are included in the configuration instructions for each activity.
 
 The procedures in this topic are performed on an activity that has been placed in the runbook window of the Orchestrator Runbook Designer.

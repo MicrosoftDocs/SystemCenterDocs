@@ -14,8 +14,6 @@ ms.assetid:  59ac2317-06dc-4f83-b074-47a1bd4b98ac
 
 # How to configure monitoring of network devices
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center Operations Manager includes the following management packs specific to network device discovery and monitoring:
 
 -   Network Management - Core Monitoring

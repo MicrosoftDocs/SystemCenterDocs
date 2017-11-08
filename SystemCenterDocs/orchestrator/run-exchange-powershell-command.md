@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Run Exchange PowerShell Command
 
-> Applies To: System Center 2016 - Orchestrator
-
 You can use the Run Exchange PowerShell Command activity in a runbook to run Exchange 2010 cmdlets.
 
 The following tables list the required properties and published data for this activity.

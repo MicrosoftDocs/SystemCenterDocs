@@ -5,7 +5,7 @@ description: This article describes how to run a live migration in the VMM fabri
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  08/22/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,10 +14,10 @@ ms.technology:  virtual-machine-manager
 
 # Run a live migration in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to run a live migration of virtual machines(VMs) or VM storage, in the System Center 2016 - Virtual Machine Manager (VMM). VMM provides live migration support between standalone Hyper-V hosts, or between cluster hosts that have live migration enabled. [Learn more](migrate.md#live-migration).
+
+This article describes how to run a live migration of virtual machines (VMs) or VM storage, in the System Center - Virtual Machine Manager (VMM) fabric. VMM provides live migration support between standalone Hyper-V hosts, or between cluster hosts that have live migration enabled. [Learn more](migrate.md#live-migration).
 
 
 ## Migrate a VM between two standalone hosts

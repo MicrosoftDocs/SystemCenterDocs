@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get VM Status Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get VM Status activity is used in a runbook to retrieve the state and other related information about a virtual machine. This, for example, enables the runbook to retrieve the current status of a virtual machine to ensure that is has been properly shut down before performing a backup.
 
 The following tables list the required and optional properties and published data for this activity.

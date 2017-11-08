@@ -5,7 +5,7 @@ description: This article describes how to create and deploy VMs in the VMM fabr
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -14,10 +14,10 @@ ms.technology:  virtual-machine-manager
 
 # Deploy VMs in the VMM fabric from a blank virtual hard disk
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to create and deploy virtual machines in the System Center 2016 - Virtual Machine Manager (VMM) fabric from a virtual hard disk (VHD).
+
+This article describes how to create and deploy virtual machines in the System Center - Virtual Machine Manager (VMM) fabric from a virtual hard disk (VHD).
 
 
 ## Before you start

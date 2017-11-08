@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get VM List Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get VM List activity is used in a runbook retrieve the virtual hardware information about a virtual machine in the VMware vSphere inventory. This allows the runbook to retrieve the information of the virtual machine and populate it into a CMDB.
 
 The following tables list the required and optional properties and published data for this activity.

@@ -5,7 +5,7 @@ description: This article provides information about managing MPIO for Hyper-V h
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/10/2017
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,11 +14,12 @@ ms.technology:  virtual-machine-manager
 
 # Manage MPIO for Hyper-V hosts in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-Read this article to learn about how System Center 2016 - Virtual Machine Manager (VMM) manages Multipath I/O (MPIO) on Hyper-V hosts.
 
-When you add fiber channel or iSCSI storage to a Hyper-V host managed in the VMM fabirc, he Multipath I/O (MPIO) feature must be enabled on each host.
+Read this article to learn about how System Center - Virtual Machine Manager (VMM) manages Multipath I/O (MPIO) on Hyper-V hosts.
+
+When you add fiber channel or iSCSI storage to a Hyper-V host managed in the VMM fabric, the Multipath I/O (MPIO) feature must be enabled on each host.
+
  - If MPIO is enabled on the host, VMM adds it for [supported storage arrays](supported-arrays.md) using the Microsoft DSM. If you installed vendor-specific DSMs, then the vendor-specific MPIO settings will be used to connect to the storage array.
  - If you add a host and MPIO isn't enabled, VMM will show a warning message in the **Jobs** window.
  - If you add a host to VMM and enable MPIO afterwards, you need to add the MPIO feature, and then manually configure MPIO to add the discovered device hardware IDs. Alternatively, you can install vendor-specific DSMs.

@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Clone Linux VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template. This can be used to create new virtual machines quickly and easily using existing virtual machines or templates as models.
 
 The following tables list the required and optional properties and published data for this activity.

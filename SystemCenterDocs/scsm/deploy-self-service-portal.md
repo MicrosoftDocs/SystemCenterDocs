@@ -17,8 +17,6 @@ ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 
 # Deploy the Self-Service portal for Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 The Self-Service portal provides web-based access to the features of System Center 2016 - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
 ## Supported operating systems  

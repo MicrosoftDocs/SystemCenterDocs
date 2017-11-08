@@ -13,8 +13,6 @@ ms.technology:  service-management-automation
 
 # Manage runbooks for Service Management Automation
 
-> Applies To: System Center 2016 - Service Management Automation
-
 As an administrator of a Service Management Automation (SMA) installation, you will need to configure runbooks for execution. Configuring includes both initial setup of the runbook workers, as well as scheduling and tracking runbooks. There are two system runbooks that are included with SMA in addition to the runbooks you have authored. These are:
 
 - DiscoverAllLocalModules: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system where the runbook worker has been installed, and extracts activities and activity metadata for these modules so that their activities can be used when authoring runbooks in Windows Azure Pack. 
@@ -23,7 +21,7 @@ As an administrator of a Service Management Automation (SMA) installation, you w
 
 ## Configuring runbook workers
 
-When you start a runbook job in Service Management Automation, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. RunbookWorker configuration property helps you achieve that. For more information on how runbooks are executed, see [Runbook Execution in Service Management Automation](~/sma/runbook-automation.md).
+When you start a runbook job in Service Management Automation, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. RunbookWorker configuration property helps you achieve that. For more information on how runbooks are executed, see [Runbook Execution in Service Management Automation](runbook-automation.md).
 
 
 ### Designating a runbook worker through the PowerShell ISE Add-on.
@@ -143,11 +141,11 @@ If the RunbookWorker property of the runbook is populated, then that Worker serv
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![Job Statuses - PowerShell Workflow](./media/manage-runbooks1/sma-runbook-execution-workflow.png)
+![Job Statuses - PowerShell Workflow](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![Job Statuses - PowerShell Script](./media/manage-runbooks1/sma-runbook-execution-script.png)
+![Job Statuses - PowerShell Script](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-script.png)
 
 ### <a name="jobstatuses"></a>Job statuses
 The following table describes the different statuses that are possible for a job.

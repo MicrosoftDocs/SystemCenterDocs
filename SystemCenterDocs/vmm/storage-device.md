@@ -5,17 +5,17 @@ description: This article describes how to discover storage devices in the VMM f
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/07/2017
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
 # Add storage devices to the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-To manage storage in System Center 2016 - Virtual Machine Manager (VMM), you discover and add it to the VMM storage fabric.
+
+To manage storage in System Center - Virtual Machine Manager (VMM), you discover and add it to the VMM storage fabric.
 
 ## Before you start
 

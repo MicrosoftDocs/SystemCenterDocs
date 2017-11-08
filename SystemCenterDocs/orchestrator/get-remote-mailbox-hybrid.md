@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Remote Mailbox (Hybrid)
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Get Remote Mailbox (Hybrid) activity to retrieve the mail-related attributes of one or more users in on-premises Active Directory that are associated with mailboxes in the cloud-based service (hybrid environment).
 
 The following tables list the required properties, optional properties, filters, and published data for this activity.

@@ -12,7 +12,6 @@ ms.technology:  service-provider-foundation
 ---
 
 # What is Service Provider Foundation?
->Applies To: System Center 2016
 
 System Center 2016 – Virtual Machine Manager (VMM), provides all the resources needed to build, maintain, and monitor a cloud infrastructure. However, service providers and large enterprises need additional features to support multiple tenants, integrate infrastructures with sophisticated web-based self-service portals, and distribute management workloads across multiple datacenters.
 

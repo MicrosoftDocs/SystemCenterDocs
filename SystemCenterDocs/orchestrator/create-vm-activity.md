@@ -17,8 +17,6 @@ robots: noindex
 ---
 # Create VM Activity
 
-Applies To: System Center 2016 - Orchestrator
-
 The Create VM activity is added to a runbook to create a new virtual machine. The runbook can be used to create virtual machines on demand based on self-service provisioning processes.
 
 The following tables list the required and optional properties and published data for this activity.

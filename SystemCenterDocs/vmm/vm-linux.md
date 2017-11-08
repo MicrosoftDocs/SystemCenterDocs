@@ -5,7 +5,7 @@ description: This article describes how to create and deploy Linux VMs in the VM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  10/16/2016
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,10 +14,10 @@ ms.technology:  virtual-machine-manager
 
 # Create and deploy Linux virtual machines in the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
 
-This article describes how to create and deploy Linux VMs in the System Center 2016 - Virtual Machine Manager (VMM) fabric.
+
+This article describes how to create and deploy Linux VMs in the System Center - Virtual Machine Manager (VMM) fabric.
 
 ## Before you start
 
@@ -44,7 +44,7 @@ By default, LIS is included with some distributions of Linux. If LIS is not incl
 4. Open the new folder on the VM, and run the following command: **chmod +x install**.
 5. Run either of these commands, depending on the operating system.
 
-    ```
+     ```powershell
     ./install scvmmguestagent.1.0.0.544.x64.tar
     ./install scvmmguestagent.1.0.0.544.x86.tar
     ```
@@ -57,5 +57,4 @@ When the agent installs on the VM the following files and folders will be create
 - A configuration file (scvmm.conf). This file contains the location of the log file and is used to control logging during deployment and specialization.
 
 ## Next steps
-
-[Manage VM settings](vm-settings.md)
+[vm-settings](vm-settings.md)

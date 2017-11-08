@@ -17,8 +17,6 @@ manager: cfreeman
 ---
 # Migrate Orchestrator between environments
 
-> Applies To: System Center 2016 - Orchestrator
-
 This topic describes how to automatically move Orchestrator between environments. This could be useful when you want to just move to a new SQL Server 2008 R2 or if you want to move some or all of the components of Orchestrator.  
 
 The following processes and scripts enable you to easily move between environments. They are based on a full migration of all System Center 2016 - Orchestrator components to a new SQL Server 2008 R2 with a restored Orchestrator database.  

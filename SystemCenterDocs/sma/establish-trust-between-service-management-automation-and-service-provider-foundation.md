@@ -13,8 +13,6 @@ ms.assetid:  1b1ce164-f5c2-4a94-bce9-9271e3666f89
 
 # Establish trust between Service Management Automation and Service Provider Foundation
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016
-
 For Service Provider Foundation to successfully call the Service Management Automation web service, the Service Management Automation web service certificate must be trusted by the server on which Service Provider Foundation is installed. This topic applies whether you are using a self-signed certificate or a certification authority certificate for your Service Management Automation web service.
 
 ## To trust the Service Management Automation certificate

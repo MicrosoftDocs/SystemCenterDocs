@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get VM Subnet in System Center 2016
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get VM Subnet activity is used in a runbook to return all virtual subnets on the VMM management server that meet the filtering criteria.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

@@ -14,8 +14,6 @@ ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 
 # Walkthrough Installing Operations Manager on a Single Server
 
->Applies To: System Center 2016 - Operations Manager
-
 This walkthrough guides you through an installation of System Center 2016 - Operations Manager on a single server. The features installed include the following:
 
 -   Management server

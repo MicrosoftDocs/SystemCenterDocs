@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Organizational Unit
 
-Applies To: System Center 2016 - Orchestrator
-
 You can use the Get Organizational Unit activity in a runbook to get the properties of an organizational unit in Active Directory Domain Services (AD DS).
 
 This activity publishes all of the data from the required and optional properties into published data. Additional published data is generated based on the class that you select when you define the activity.

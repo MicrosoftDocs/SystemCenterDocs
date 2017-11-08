@@ -14,8 +14,6 @@ ms.topic: article
 
 # Single server deployment of Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 The single server management group scenario combines all the management group roles that can coexist onto a single server running as a member server in an Active Directory domain. This instance can be on dedicated hardware or on a virtual computer. You can deploy the Operations console to computers other than the single server, and access the web console  with a browser.
 
 You deploy Operations Manager in a single-server management group when you want to use it for evaluation, testing, and management pack development, usually in a lab, development, or non-production environment.

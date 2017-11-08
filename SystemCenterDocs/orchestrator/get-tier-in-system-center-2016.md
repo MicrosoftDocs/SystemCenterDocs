@@ -17,8 +17,6 @@ manager: carmonm
 
 # Get Tier in System Center 2016
 
-Applies To: System Center 2016 - Orchestrator
-
 The Get Tier activity is used in a runbook to returns data on all tiers within the VMM management server. The Published Data below is returned for each tier.
 
 The activity publishes all of the data from the required and optional properties into published data. The following tables list the required and optional properties and published data for this activity.

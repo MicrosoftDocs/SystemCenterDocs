@@ -4,8 +4,8 @@ title: Add an existing SOFS to the VMM fabric
 description: This article provides about managing your Hyper-V environment in the VMM fabric
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  10/16/2016
+manager:  carmonm
+ms.date:  11/07/2017
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology:  virtual-machine-manager
 
 # Add an existing SOFS to the VMM fabric
 
->Applies To: System Center 2016 - Virtual Machine Manager
 
-You can add an existing scale-out file server (SOFS) to the System Center 2016 - Virtual Machine Manager (VMM) storage fabric. When you add a file server, VMM automatically discovers all file shares on it.
+
+You can add an existing scale-out file server (SOFS) to the System Center - Virtual Machine Manager (VMM) storage fabric. When you add a file server, VMM automatically discovers all file shares on it.
 
 1. Click **Fabric** > **Storage** > **Home** > **Add Resource** > **Storage Devices** to open the **Add Storage Devices Wizard**.
 1. If the file server is in a domain that's not trusted by the Hyper-V hosts for which it will provide storage, select **This computer is in an untrusted Active Directory domain**. Click **Browse** and select a Run As account with admin permissions on the SOFS. Or create a Run As account if you don't have one.
