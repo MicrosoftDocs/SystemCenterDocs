@@ -1,7 +1,7 @@
 ---
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title:  How to Install the Operations Manager Web console
-description: This article describes how to install the Operations Manager Web console. 
+description: This article describes how to install the Operations Manager Web console.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
@@ -14,7 +14,9 @@ ms.topic: article
 
 # How to install the Operations Manager Web console
 
+
 You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
+
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -70,7 +72,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
+    >
     > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
@@ -112,7 +114,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
+    >
     > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
@@ -140,7 +142,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
-    > 
+    >
     > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     > [!NOTE]

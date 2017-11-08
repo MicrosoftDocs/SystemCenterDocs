@@ -56,5 +56,5 @@ There are a few differences between the Operations console and Web console that 
 
 * Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.  
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md).   
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](manage-consoles-overview.md).   
   

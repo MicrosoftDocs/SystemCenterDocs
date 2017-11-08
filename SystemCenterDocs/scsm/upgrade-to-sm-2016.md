@@ -20,7 +20,7 @@ ms.assetid: ae385dce-3613-47b5-88a4-1b3148f2cce1
 This article outlines how to upgrade from System Center 2012 R2 - Service Manager to Service Manager in System Center 2016. 
 
 > [!WARNING]  
->  If you are planning to upgrade two or more System Center components, it is imperative that you first consult the guide [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md). The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
+>  If you are planning to upgrade two or more System Center components, it is imperative that you first consult the guide [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016). The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
 >   
 > 1.  Orchestrator  
 > 2.  Service Manager  

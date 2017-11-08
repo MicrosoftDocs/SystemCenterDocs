@@ -14,7 +14,7 @@ ms.technology:  service-provider-foundation
 # Upgrade to SPF 2016
 >Apples To: System Center 2016
 
-This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](../upgrade-to-system-center-2016.md).
+This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016).
 
 The upgrade instructions in this article assume the following scenario:
 
