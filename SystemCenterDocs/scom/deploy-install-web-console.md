@@ -1,11 +1,11 @@
 ---
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title:  How to Install the Operations Manager Web console
-description: This article describes how to install the Operations Manager Web console.
+description: This article describes how to install the Operations Manager Web console. 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 11/08/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,9 +14,7 @@ ms.topic: article
 
 # How to install the Operations Manager Web console
 
-
-You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
-
+You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -32,7 +30,7 @@ When you install the web console, the following three components are installed:
 > [!NOTE]
 > If Application Diagnostics console is not installed, when viewing APM alerts, you will not be able to use the link embedded in the alert description to launch the APM event details. To use this feature, install the web console within the management group.
 
-If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](https://go.microsoft.com/fwlink/p/?linkID=158320). For more information about sessions, see [Support for Sessions](https://go.microsoft.com/fwlink/p/?linkID=251693).
+If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](http://go.microsoft.com/fwlink/p/?linkID=158320). For more information about sessions, see [Support for Sessions](http://go.microsoft.com/fwlink/p/?linkID=251693).
 
 > [!NOTE]
 > A Network Load Balancer is not supported for the Operations Manager web console server.
@@ -63,7 +61,7 @@ The local and remote parameters are as follows:
 
 3.  On the **Getting Started**, **Select features to install** page, select **Web console**. To read more about what each feature provides and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default location of **C:\Program Files\System Center 2016\Operations Manager**, or type in a new location or browse to one, and then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default location, or type in a new location or browse to one, and then click **Next**.
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -72,7 +70,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    >
+    > 
     > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
@@ -114,7 +112,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    >
+    > 
     > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
@@ -142,7 +140,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
-    >
+    > 
     > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     > [!NOTE]

@@ -5,18 +5,18 @@ description: This article describes how to install an Operations Manager managem
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How to install an Operations Manager management server
 
-In System Center 2016 - Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server.  If you are hosting the Operations Manager operational and data warehouse database on a SQL Always On Availability Group, be sure to use the node planned for the initial Primary replica for initial installation of these databases.  
+In System Center - Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server.  If you are hosting the Operations Manager operational and data warehouse database on a SQL Always On Availability Group, be sure to use the node planned for the initial Primary replica for initial installation of these databases.  
 
-You must ensure that your server meets the minimum system requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
 
 Once you have installed the first management server and created the management group, you can follow the steps for installing an additional management server if you are planning to include additional management servers to provide high availability and increased capacity for your monitoring workloads.  
 
@@ -28,7 +28,7 @@ Once you have installed the first management server and created the management g
 
 3.  On the **Getting Started**, **Select features to install** page, select the **Management server** feature. You can also select any of the additional features listed. For example, to also install the Operations console, select **Operations console**. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\System Center 2016\Operations Manager**. Or, type a new location or browse to one, and then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default value, type a new location or browse to one, and then click **Next**.
 
 5.  On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -127,7 +127,7 @@ Perform the following steps to add additional management servers in your managem
 
 3.  On the **Getting Started**, **Select features to install** page, select the **Management server** feature. You can also select any of the additional features listed. For example, to also install the Operations console, select **Operations console**. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\System Center 2016\Operations Manager**. Or, type a new location or browse to one, and then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default value, type a new location or browse to one, and then click **Next**.
 
 5. On the **Configuration, Specify an installation option** page, select **Add a Management server to an existing management group**, and then click **Next**.
 

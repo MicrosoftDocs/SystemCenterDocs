@@ -5,9 +5,9 @@ description: This article describes how to install the Operations Manager Report
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 11/08/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -19,13 +19,13 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 > [!WARNING]
 > Although SQL Server Reporting Services is installed on the stand-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console. If you want to access published reports via the web console, you must install the Operations Manager web console on the same computer as Operations Manager Reporting server.
 
-You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements).
+You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
 
 ## Installing Operations Manager reporting
 
 No other applications that are using SQL Server Reporting Services can be installed on this instance of SQL Server.
 
-Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2012)](https://go.microsoft.com/fwlink/p/?LinkId=146943).
+Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](http://go.microsoft.com/fwlink/p/?LinkId=146943).
 
 > [!NOTE]
 > Before you continue with this procedure, ensure that the account you plan to use for the Data Warehouse Write account has SQL Server logon rights and is an Administrator on the computers hosting both the operational database and the Reporting data warehouse database. Otherwise, Setup fails, and all changes are rolled back, which might leave SQL Server Reporting Services in an inoperable state.
@@ -62,7 +62,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
 3.  On the **Getting Started**, **Select features to install** page, select the **Reporting server** feature. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature, and then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\System Center 2016\Operations Manager** or type a new location or browse to one, and then click **Next**.
+4.  On the **Getting Started**, **Select installation location** page, accept the default value, or type a new location or browse to one, and then click **Next**.
 
 5.  On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 

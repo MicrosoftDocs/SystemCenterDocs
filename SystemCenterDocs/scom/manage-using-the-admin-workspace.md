@@ -14,7 +14,7 @@ ms.topic: article
 
 # Using the Administration workspace in Operations Manager
 
-In the System Center 2016 - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
+In the System Center - Operations Manager Operations console, the Administration workspace is the primary workspace for administrators. You use the Administration workspace to configure a management group.  
   
 When you first open the Administration workspace or when you click **Administration** in the navigation pane, the Administration Overview opens, which displays task links for any required or optional configuration steps that have not been completed yet.  
   
@@ -45,7 +45,7 @@ Under the  **Management Packs** node in the Administration workspace, you can pe
 |--------|-------|------------------------|  
 |Installed Management Packs | Lists all management packs imported into your management group.|[How to import, export, remove management packs](manage-mp-import-remove-delete.md)|
 |Tune Management Packs| Highlight the management packs and its workflows which generate a high volume of alerts.| [Data driven alert management](manage-alert-data-driven-management.md)|
-|Updates and Recommendations | Identify new technologies or workloads that are not monitored by Operations Manager or not monitored with the latest version of a management pack.| [Review MP Updates and Recommendations](manage-mp-mpassessment.md)
+|Updates and Recommendations | Identify new technologies or workloads that are not monitored by Operations Manager or not monitored with the latest version of a management pack.| [MP Updates and Recommendations](manage-mp-mpassessment.md)
   
 For more information, see [Management pack overview](manage-overview-management-pack.md).  
   
