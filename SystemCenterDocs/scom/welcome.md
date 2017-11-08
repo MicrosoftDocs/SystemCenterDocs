@@ -14,25 +14,23 @@ ms.topic: article
 
 # Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
-Welcome to System Center 2016 - Operations Manager.  Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
+Welcome to System Center - Operations Manager.  Operations Manager provides infrastructure monitoring that is flexible and cost-effective, helps ensure the predictable performance and availability of vital applications, and offers comprehensive monitoring for your datacenter and cloud, both private and public.
 
 ## Operations Manager documentation
 
--   [Getting Started with System Center 2016 - Operations Manager](get-started.md)
+-   [Getting Started with System Center - Operations Manager](get-started.md)
 
     Written for customers who are either new to Operations Manager or are looking for “What’s New” information.
 
-- [Planning for System Center 2016 - Operations Manager](plan-overview.md)
+- [Planning for System Center - Operations Manager](plan-overview.md)
 
     Review information to help you plan the deployment of Operations Manager into your organization
 
--   [Deploying System Center 2016 - Operations Manager](deploy-overview.md)
+-   [Deploying System Center - Operations Manager](deploy-overview.md)
 
     Read these topics to learn how to deploy Operations Manager in your environment.
 
--   [System Center 2016 - Operations Manager Operations Guide](manage-operations-guide-overview.md)
+-   [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
 
     Read these topics once you have Operations Manager up and running and are looking to start monitoring your environment, as well as procedures for day to day operations.
 

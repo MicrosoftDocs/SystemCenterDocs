@@ -1,7 +1,7 @@
 ---
 ms.assetid: dd7742fd-dcec-4546-b0f3-59ddaf94459a
 title: Quick Reference to Operations Manager Tasks
-description: This article summarizes the common tasks to perform after installing Operations Manager 2016 in your environment.
+description: This article summarizes the common tasks to perform after installing Operations Manager in your environment.
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
@@ -13,8 +13,6 @@ ms.topic: article
 ---
 
 # Quick reference to Operations Manager tasks
-
->Applies To: System Center 2016 - Operations Manager
 
 The following table gives a quick reference for where to perform common tasks and links to relevant information.
 
@@ -40,7 +38,7 @@ The following table gives a quick reference for where to perform common tasks an
 
 ## Next steps
 
-To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center 2016 - Operations Manager](manage-operations-guide-overview.md)
+To learn more about what to manage, how to manage, or how to support an Operations Manager management group, see the [Operations Guide for System Center - Operations Manager](manage-operations-guide-overview.md)
 
 
 
