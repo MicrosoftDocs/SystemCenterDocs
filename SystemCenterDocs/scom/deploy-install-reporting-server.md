@@ -21,7 +21,7 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 > [!WARNING]
 > Although SQL Server Reporting Services is installed on the stand-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console. If you want to access published reports via the web console, you must install the Operations Manager web console on the same computer as Operations Manager Reporting server.
 
-You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](../orchestrator/system-requirements.md).
+You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements).
 
 ## Installing Operations Manager reporting
 

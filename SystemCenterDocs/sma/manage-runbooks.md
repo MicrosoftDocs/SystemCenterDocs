@@ -141,11 +141,11 @@ If the RunbookWorker property of the runbook is populated, then that Worker serv
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![Job Statuses - PowerShell Workflow](./media/manage-runbooks1/sma-runbook-execution-workflow.png)
+![Job Statuses - PowerShell Workflow](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![Job Statuses - PowerShell Script](./media/manage-runbooks1/sma-runbook-execution-script.png)
+![Job Statuses - PowerShell Script](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-script.png)
 
 ### <a name="jobstatuses"></a>Job statuses
 The following table describes the different statuses that are possible for a job.

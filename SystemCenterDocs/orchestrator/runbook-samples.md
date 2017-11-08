@@ -30,10 +30,10 @@ This topic provides instructions about how to build and test sample runbooks by 
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](~/orchestrator/automate-runbooks.md)  
+-   [Using Runbooks in System Center 2016 - Orchestrator](automate-runbooks.md)  
 
--   [Runbook Concepts](~/orchestrator/automate-runbooks.md)  
+-   [Runbook Concepts](automate-runbooks.md)  
 
 -   [Design and Build Runbooks](design-and-build-runbooks.md)  
 
--   [Deploying Runbooks](../orch/deploy/deploying-runbooks.md)  
+-   [Deploying Runbooks](deploy-runbooks.md)  

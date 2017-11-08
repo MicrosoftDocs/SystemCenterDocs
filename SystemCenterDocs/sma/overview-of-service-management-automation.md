@@ -19,7 +19,7 @@ Service Management Automation is a set of tools that is integrated as the Servic
 
 The following diagram illustrates how SMA integrates with Windows Azure Pack for Windows Server.
 
-![SMA Architecture diagram](./media/automate-operations-service-management-automation/smaarchitecture.png)
+![SMA Architecture diagram](/system-center/sma/media/automate-operations-service-management-automation/smaarchitecture.png)
 
 ## Service Management Automation Components
 Service Management Automation uses the following three underlying components that are connected to Windows Azure Pack through the Service Management Automation service endpoint:
@@ -54,7 +54,7 @@ SMA also has deep integration with Windows Azure Pack, however, you no longer ne
 
 The following diagram illustrates each of the Service Management Automation features and the communication with a Windows Azure Pack installation.
 
-![SMA Architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+![SMA Architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
 
 -   The Service Management Automation web service communicates with Windows Azure Pack and authenticates users.
 

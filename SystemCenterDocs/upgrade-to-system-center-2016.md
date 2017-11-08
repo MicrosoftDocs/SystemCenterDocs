@@ -53,7 +53,7 @@ The following sections provide detailed considerations for each component.
 
 ## DPM Upgrade
 
-You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](./dpm/install-dpm.md).
+You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](/system-center/dpm/install-dpm).
 
 
 ### Upgrade path for DPM 2016
@@ -66,7 +66,7 @@ If you are going to upgrade from a previous version of DPM to DPM 2016, make sur
 - Upgrade DPM Remote Administrator on all production servers.
 - Backups will continue without rebooting your production server.
 
-For complete instructions, see the article, [Upgrade to DPM 2016](./dpm/upgrade-to-dpm-2016.md).
+For complete instructions, see the article, [Upgrade to DPM 2016](/system-center/dpm/upgrade-to-dpm-2016).
 
 ## Operations Manager Upgrade
 [!NOTE]
@@ -129,7 +129,7 @@ Upgrading:
 
 1. Stop all Orchestrator runbooks.
 2. Uninstall the Orchestrator management server, any runbook servers, the Web Service, and the Runbook Designer.
-3. Install the Orchestrator management server in System Center 2016, as described [here](./orchestrator/install.md).
+3. Install the Orchestrator management server in System Center 2016, as described [here](/system-center/orchestrator/install).
 4. Install any Orchestrator runbook servers in System Center 2016.
 5. Install the Orchestrator Runbook Designer in System Center 2016.
 6. If needed, install the Orchestrator Web Service in System Center 2016.
@@ -146,8 +146,8 @@ Upgrade:
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/en-us/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a> for details.
-3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](./sma/deploy.md#to-setup-the-sma-runbook-worker).
-4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](./sma/deploy.md#to-install-the-service-automation-web-service).
+3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](/system-center/sma/deploy.md#to-setup-the-sma-runbook-worker).
+4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](/system-center/sma/deploy.md#to-install-the-service-automation-web-service).
 5. Remove SMA servers from maintenance mode.
 
 ## SM Upgrade
@@ -159,7 +159,7 @@ Upgrade:
 
     In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
 
-    ![Active Directory Connector wizard](./scsm/media/upgrade-environment/sm-adconnector01.png)
+    ![Active Directory Connector wizard](/system-center/scsm/media/upgrade-environment/sm-adconnector01.png)
 
 ### Upgrade steps for custom development
 With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
@@ -170,7 +170,7 @@ Use the following steps to upgrade your Self Service portal and Service Manager 
 
 On the Service Manager 2012 R2 Silverlight Self Service Portal:
 1. Uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
-2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](./scsm/deploy-self-service-portal.md)
+2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](/system-center/scsm/deploy-self-service-portal.md)
 
 #### Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 HTML5-based Self Service portal
 Use the following step to upgrade your Self Service portal and Service Manger management servers when they are **installed on different computers**.
@@ -222,7 +222,7 @@ You will follow  the same general steps for upgrading to System Center 2016 from
 3. Install any other software required by the component (see list below).
 4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
-- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](./vmm/system-reqs.md#sql-server) for the list of supported versions of SQL Server.
+- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](/system-center/vmm/system-reqs.md#sql-server) for the list of supported versions of SQL Server.
 - You can upgrade both host and guest VMM agents from the VMM console.
 
 #### Upgrading a highly available VMM environment.
