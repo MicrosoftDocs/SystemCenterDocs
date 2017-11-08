@@ -17,8 +17,6 @@ ms.assetid: 2847c2cf-422d-4cfa-8e36-6f7eb7856afa
 
 # Manage Service Manager release records
 
->Applies To: System Center 2016 - Service Manager
-
 The key to understanding release management in System Center 2016 - Service Manager is realizing how objects, such as change requests and activities, interact when facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.  
 
 Often, there are multiple parts of a project, and there is more than one change request that can be deployed at different times that can affect a project. The overall goal of change management and release management is to protect the production environment from unnecessary changes, so that every change to it must first be approved. Release management deals only with approved changes.  

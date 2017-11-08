@@ -17,8 +17,6 @@ ms.assetid: 90c721f6-6b0e-4c35-ac85-3fb2e4134ecc
 
 # Data warehouse reporting and analytics in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Service Manager reports enable you to collect and view data and trends from across the business environment. For example, you can generate a report that shows the number of incidents that occur in a specific time frame. You can then use that information to calculate the cost of each incident \(in hours\) and also to identify any trends and take preventative measures to reduce the cost and occurrence of incidences.  
 
  Standard reports are viewable for all Service Manager console users in the Reporting workspace. If users can view work items and have permission to the SystemCenter and ServiceManager folders on the SQL&nbsp;Server Reporting Services \(SSRS\) server, they can also view reports in work item task lists. Any user can export report data from a report they view. Exported reports are saved in a variety of file formats.  

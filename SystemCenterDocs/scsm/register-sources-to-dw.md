@@ -14,8 +14,6 @@ ms.assetid: 7f48a1c7-dc88-447d-8bde-8af76783e2d3
 
 # Register source systems to the System Center data warehouse in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 The data warehouse in Service Manager retrieves data from one or more data sources. These data sources are the transactional processing systems that produce and govern data that you will eventually want to measure and analyze. For example, incidents and change requests are created and managed in Service Manager, software updates and power policies are managed in Configuration Manager, and other systems produce and govern other data sets.
 
 Registering the data warehouse creates a relationship between the data warehouse server and the source system so that information can flow between them. In Service Manager, you can register to Service Manager, Operations Manager, and Configuration Manager directly. You can also use the updated software development kit (SDK) layer on top of the data warehouse, which enables you to push data into the data warehouse directly from other sources. For example, you might want to push data from your Human Resources computer system in the data warehouse.

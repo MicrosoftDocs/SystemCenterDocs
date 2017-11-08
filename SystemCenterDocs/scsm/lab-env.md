@@ -16,8 +16,6 @@ ms.topic: article
 
 # Set up a Service Manager 2016 lab environment to prepare it for upgrade
 
->Applies To: System Center 2016 - Service Manager
-
 Use the following procedures to prepare for Service Manager upgrade by creating a lab environment and preparing it for production data.
 
 Many of the procedures in this article are lengthy and might take a considerable amount of time to complete. As long as you complete the procedures in order, you do not need to complete them without stopping.

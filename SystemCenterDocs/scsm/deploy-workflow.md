@@ -17,8 +17,6 @@ ms.assetid: 68e697fe-9f0b-4813-bdce-c59cc4019ff3
 
 # Deploy a workflow to Service Manager using the Service Manager Authoring Tool
 
->Applies To: System Center 2016 - Service Manager
-
 Use these procedures to move workflows from the Service Manager Authoring Tool to the Service Manager console. First, you must physically move the workflow assembly file and the management pack file that contains the workflow information. Then, you must import the management pack into Service Manager.  
 
 ## Move the management pack and workflow files  

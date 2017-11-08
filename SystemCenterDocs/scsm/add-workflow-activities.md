@@ -17,8 +17,6 @@ ms.assetid: 32de708f-02f7-4021-882b-14ed140ebc89
 
 # Add or remove Service Manager workflow activities
 
->Applies To: System Center 2016 - Service Manager
-
 Workflow activities are the building blocks of a workflow. You can use the procedures in this section to add activities to a workflow; remove, copy, and paste activities; and configure specialized activities to import Windows PowerShell scripts into your workflow.  
 
 ## Add an activity to a workflow

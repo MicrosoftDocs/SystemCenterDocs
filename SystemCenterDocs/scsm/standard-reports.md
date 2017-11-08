@@ -17,8 +17,6 @@ ms.assetid: 4c083343-c3b2-47a6-8cd9-ca5fc0a99a05
 
 # Use and manage standard reports in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This article describes how to use standard reports in Service Manager.  
 
  The simple reporting infrastructure that is included in Service Manager is built on SQL&nbsp;Server Reporting Services \(SSRS\), where data is accessed from the Service Manager data warehouse. The SSRS infrastructure provides for basic reporting functionality, such as report\-level security, report subscriptions, browser\-based access to reports, linked reports, and customization. This reporting functionally is similar to the experience that is included with System Center Operations Manager.  

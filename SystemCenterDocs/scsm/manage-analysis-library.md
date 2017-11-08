@@ -17,8 +17,6 @@ ms.assetid: 5f3e94e5-6706-4ef4-a511-a21c5d6b98f8
 
 # Manage and use the analysis libraries in the Service Manager console
 
->Applies To: System Center 2016 - Service Manager
-
 You can use the following procedure to manage the analysis libraries in the Service Manager console in Service Manager. The analysis libraries are file storage areas, such as network shares, Universal Naming Convention \(UNC\) paths, and Microsoft SharePoint. The libraries are used to house Microsoft Excel data files, which are generated from Microsoft Online Analytical Processing \(OLAP\) data cubes. When they are saved to an analysis library, you can easily access Excel files and the cube data they connect to without having to open the Service Manager console. Instead, you can open the storage location directly or from the Reporting workspace.  
 
  You might want to create many analysis library folders for different departments in your organization.  

@@ -14,8 +14,6 @@ ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1
 
 # Configure Desired Configuration Management to generate incidents in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 You can use the following procedure, for example, to inventory all the computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in System Center Configuration Manager.
 
 In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).

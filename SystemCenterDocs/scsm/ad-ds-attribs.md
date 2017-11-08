@@ -14,8 +14,6 @@ ms.assetid:  fb609f10-418e-4e1c-a514-ee36f9fdc560
 
 # Mapping Active Directory Domain Services attributes to properties in System Center - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 Using an Active Directory connector, Service Manager synchronizes data with the User, Group, Computer, and Printer Active Directory Domain Services (AD DS) objects. The following tables describe the mapping between the attributes of the Active Directory objects and the corresponding Service Manager class properties.
 
 ## User/Microsoft.AD.User

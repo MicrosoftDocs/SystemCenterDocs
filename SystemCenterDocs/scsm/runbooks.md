@@ -14,8 +14,6 @@ ms.assetid: a0863ac5-05d9-46b3-8e18-1f76e50ee07d
 
 # Use Service Manager runbooks to automate procedures
 
->Applies To: System Center 2016 - Service Manager
-
 Runbooks in Service Manger are used to automate procedures. The following sections provide details about the purpose and use of runbooks.
 
 ## Runbooks in Service Manager
