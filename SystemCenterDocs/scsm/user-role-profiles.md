@@ -14,8 +14,6 @@ ms.assetid:  38118405-3578-4e36-b5ec-e1cc5326e161
 
 # User role profiles in System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This article provides detailed information about the scope and properties of user role profiles in Service Manager.
 
 ## Tabs in the Administrator console

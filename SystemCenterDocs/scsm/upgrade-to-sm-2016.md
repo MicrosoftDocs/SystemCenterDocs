@@ -17,8 +17,6 @@ ms.assetid: ae385dce-3613-47b5-88a4-1b3148f2cce1
 
 # Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This article outlines how to upgrade from System Center 2012 R2 - Service Manager to Service Manager in System Center 2016. 
 
 > [!WARNING]  

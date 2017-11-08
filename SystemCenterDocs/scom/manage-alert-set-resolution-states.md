@@ -14,8 +14,6 @@ ms.assetid: d2717f98-84fc-43d7-8c06-bdd5aaf386c0
 
 # How to set alert resolution states
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016- Operations Manager there are seven default resolution states for alerts: 
 
    | Resolution State | ID | 

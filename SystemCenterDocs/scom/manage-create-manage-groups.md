@@ -14,8 +14,6 @@ ms.topic: article
 
 # Creating and managing groups
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. You create a group by using the Create Group Wizard. You can explicitly assign membership to a group or you can create rules that will generate a dynamic group membership.  
   
 Some of the purposes for using groups are:  

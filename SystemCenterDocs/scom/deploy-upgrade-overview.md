@@ -14,8 +14,6 @@ ms.topic: article
 
 # Upgrading to System Center 2016 - Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 
 This section of the Deployment Guide provides information about how to upgrade to System Center 2016 - Operations Manager from System Center Operations Manager 2012 R2. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016).
 

@@ -14,8 +14,6 @@ ms.topic: article
 
 # Operations Manager reports library
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
   
 > [!NOTE]  

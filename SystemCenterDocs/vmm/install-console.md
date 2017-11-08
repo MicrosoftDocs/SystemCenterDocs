@@ -13,8 +13,6 @@ ms.technology:  virtual-machine-manager
 
 # Install the VMM Console
 
->Applies To: System Center 2016 - Virtual Machine Manager
-
 This article describes how to install the System Center Virtual Machine Manager (VMM) console on a remote computer, and connect to the VMM server. When you install the VMM management server, the console is installed on it automatically.
 
 The remote console can be installed on:

@@ -14,8 +14,6 @@ ms.topic: article
 
 # How to install an Operations Manager management server
 
->Applies To: System Center 2016 - Operations Manager
-
 In System Center 2016 - Operations Manager, the first feature you install is the management server. The setup procedure creates the operational database and data warehouse database. The procedure described in this topic assumes that you have already installed a supported version of Microsoft SQL Server.  If you are hosting the Operations Manager operational and data warehouse database on a SQL Always On Availability Group, be sure to use the node planned for the initial Primary replica for initial installation of these databases.  
 
 You must ensure that your server meets the minimum system requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).

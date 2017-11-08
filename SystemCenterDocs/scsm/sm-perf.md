@@ -17,8 +17,6 @@ ms.assetid: 82f61204-f9f3-492c-9108-ef3edb5ac622
 
 # System Center 2016 - Service Manager performance
 
->Applies To: System Center 2016 - Service Manager
-
 Performance for System Center 2016 - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 
 -   Service Manager console responsiveness. This is the length of time it takes from the moment you take some sort of action in the console until it completes.  

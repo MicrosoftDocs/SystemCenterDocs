@@ -17,8 +17,6 @@ ms.assetid: 7f6da179-5a54-46fb-adc4-3fcaa7bd9864
 
 # Modeling Service Manager OLAP cubes in management packs overview
 
->Applies To: System Center 2016 - Service Manager
-
 The ability to define customized management pack elements was used to model the online analytical processing \(OLAP\) cube management pack elements that are included in Service Manager. These management pack elements make it possible for the user to declaratively define and customize an OLAP cube at a higher level of abstraction. Based on the definition, the deployment of these management pack elements create the correct relationships, components, and fundamental building blocks of the OLAP cube at a greater level of detail, without any further user guidance. The following are the two main management pack elements that are included in OLAP cubes:  
 
 -   SystemCenterCube  

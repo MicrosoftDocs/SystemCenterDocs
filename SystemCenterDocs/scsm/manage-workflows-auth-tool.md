@@ -17,8 +17,6 @@ ms.assetid: 42812658-2d83-4cd1-b86f-bacd91add82d
 
 # Manage workflows with the Service Manager Authoring Tool
 
->Applies To: System Center 2016 - Service Manager
-
 To use a workflow to automate a process in the Service Manager Authoring Tool, you must define what the workflow should do, when it should run, and what information it needs. You can start with general definitions and then refine them until you have details that you can work with in Service Manager.
 
 Use the procedures in this section to create or delete workflows in the Service Manager Authoring Tool. The Authoring Tool provides a wizard to help you create workflows.  

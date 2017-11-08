@@ -14,8 +14,6 @@ ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
 
 # Troubleshooting monitoring of UNIX and Linux computers
 
->Applies To: System Center 2016 - Operations Manager
-
 System Center 2016 - Operations Manager provides monitoring of UNIX and Linux computers similar to monitoring of Windows computers. You can monitor health, performance, obtain reports, run tasks, and implement custom monitoring instrumentation.  
   
 You can monitor the following aspects of UNIX and Linux computers:  

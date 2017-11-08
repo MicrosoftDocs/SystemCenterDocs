@@ -14,8 +14,6 @@ ms.topic: article
 
 # Running tasks in Operations Manager
 
->Applies To: System Center 2016 - Operations Manager
-
 In the System Center 2016 - Operations Manager Operations console, the **Tasks** pane provides links to tasks. A task is a user-initiated action from the Operations console that is run on an Operations Manager agent or on the computer where the Operations console is launched from. The tasks that are available depend on the management packs that are installed. For example, Operations Manager comes with a core set of functionality that provides the ping task. When you install the SQL Server management pack, it adds SQL-specific tasks, such as a task to start or stop the SQL Server agent.  
   
 > [!NOTE]  

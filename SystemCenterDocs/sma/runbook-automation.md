@@ -13,8 +13,6 @@ ms.technology: service-management-automation
 
 # Automate Windows Azure Pack operations with Service Management Automation
 
->Applies To: System Center 2016 - Service Management Automation
-
 You can use Service Management Automation (SMA) runbooks to automate routine operations in your Windows Azure Pack for Window Server environment. There are two distinct types of SMA runbooks:
 
 | Type |  Description |

@@ -17,8 +17,6 @@ ms.assetid: d79b0585-58e7-483c-904a-800fa9480493
 
 # Advanced analytical reports available in Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 The following analytical reports - which are presented as Microsoft Online Analytical Processing \(OLAP\) data cubes - are available in Service Manager. The data cubes that are included in Service Manager contain measures and dimensions.  
 
 ## Dimensions  

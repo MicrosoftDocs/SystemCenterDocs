@@ -13,8 +13,6 @@ ms.technology:  service-management-automation
 
 # Simplify Service Management Automation runbook authoring with global assets
 
->Applies To: Windows Azure Pack for Windows Server, System Center 2016 - Service Management Automation
-
 Global Assets are available to all runbooks in an Automation environment.  You create and configure them using either the Automation workspace in the management portal or with the appropriate cmdlets in Windows PowerShell. From a runbook, you can retrieve and set values for global assets with activities in the **RunbookConstructs** module. The Windows PowerShell cmdlets are available to use in runbooks in Service Management Automation, but the activities are recommended as they are more efficient because they do not have to work through the Automation web service.
 
 ## Get or set credentials

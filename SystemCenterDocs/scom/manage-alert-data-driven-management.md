@@ -14,8 +14,6 @@ ms.topic: article
 
 # Data driven alert management
 
->Applies To: System Center 2016 - Operations Manager
-
 To drive towards improved accuracy of issues detected and alerted for infrastructure services and application monitored by System Center 2016 - Operations Manager, the Tune Management Packs feature is available to highlight the management packs and its workflows which generate a high volume of alerts.  
 
 Now you can get better visibility with the alerts being generated in your environment through the console as opposed having to run reports or utilize custom scripts to expose this data.  For monitors and rules from a management pack that are generating a significant volume of alerts, you can directly review the configuration of the rule or monitor, review which monitored objects are generating the alert volume, or modify its configuration by setting an override without having to navigate to the Monitoring or Authoring view.  

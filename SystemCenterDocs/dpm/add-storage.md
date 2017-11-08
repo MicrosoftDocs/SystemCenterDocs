@@ -14,8 +14,6 @@ ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce
 
 # Add storage to DPM 2016
 
->Applies To: System Center 2016
-
 Modern Backup Storage (MBS) is provided by System Center Data Protection Manager (DPM) to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. 
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server older than Windows Server 2016, it doesn't use MBS.

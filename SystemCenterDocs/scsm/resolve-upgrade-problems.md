@@ -17,8 +17,6 @@ ms.assetid: 41d83462-5e56-4eb3-8eb8-b67d34060c86
 
 # Identify and resolve System Center 2016 - Service Manager upgrade problems
 
->Applies To: System Center 2016 - Service Manager
-
 An upgrade to System Center 2016 – Service Manager might not complete successfully. There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
 
 - Failure occurs during the prerequisite check.

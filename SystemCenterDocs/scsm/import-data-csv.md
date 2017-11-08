@@ -14,8 +14,6 @@ ms.assetid: d968e937-59c1-4a9a-8786-8ff0bbf62db0
 
 # Use a CSV file to import data into Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 This artilce provides an overview and procedures for importing data and configuration items into Service Manager by using comma-separated value (CSV) files.
 
 ## Import data from comma-separated files

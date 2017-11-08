@@ -14,8 +14,6 @@ ms.assetid: dba97a37-aeb4-4cc0-8423-85bb3489d1e7
 
 # Administrative tasks in System Center 2016 - Service Manager
 
->Applies To: System Center 2016 - Service Manager
-
 The articles in this section provide concepts that are important to Service Manager administrators, and it includes procedures that Service Manager administrators must perform to configure Service Manager. These procedures are typically performed one time after Service Manager is deployed. The procedures in this guide help you configure Service Manager to match the policies and requirements defined by your organization. These articles provide information and detailed procedures to:
 
 - Create, import, and export management packs.
