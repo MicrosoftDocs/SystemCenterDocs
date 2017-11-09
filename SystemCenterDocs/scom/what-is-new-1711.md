@@ -22,7 +22,7 @@ The content in this section describes what's new and changed in System Center Pr
 You can now use a Linux agent with FluentD support for log file monitoring at par with Windows Server.  This update provides the following improvements over previous log file monitoring:
 
 - Wild card characters in log file name and path.
-- New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated correlation and exclusive correlation.
+- New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated correlation, and exclusive correlation.
 - Support for generic Fluentd plugins published by the fluentd community.
 
 ## Improved HTML console experience
@@ -30,7 +30,7 @@ You can now use a Linux agent with FluentD support for log file monitoring at pa
 The Web console has been redesigned and is now a fully HTML-based console and no longer has a dependency on Silverlight.  The monitoring tree and dashboards support the HTLM5 markup language.  
 
 ## Enhanced SDK Client performance 
-We have made performance improvements in the Operations console that typically prevent the console from responding while a new management pack is being imported or deleted, or a configuration change to a MP is saved.  
+We have introduced performance improvements in the Operations console that typically prevent the console from responding while a new management pack is being imported or deleted, or a configuration change to an MP is saved.  
 
 ## Updates and recommendations for third-party Management Packs
 
