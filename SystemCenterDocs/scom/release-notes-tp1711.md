@@ -1,9 +1,10 @@
+---
 title: System Center 1711 Preview - Operations Manager Release Notes
 description: This article describes issues and workarounds for System Center 1711 Preview Operations Manager.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/10/2017
+ms.date: 11/09/2017
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1711'
