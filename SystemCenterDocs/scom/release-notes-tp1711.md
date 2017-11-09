@@ -1,9 +1,10 @@
+---
 title: System Center 1711 Preview - Operations Manager Release Notes
 description: This article describes issues and workarounds for System Center 1711 Preview Operations Manager.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/03/2017
+ms.date: 11/09/2017
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1711'
@@ -38,26 +39,25 @@ The following release notes apply to System Center 1711 Preview - Operations Man
 
 **Workaround:** You can reposition them using Edge or Chrome browser.
 
-## Custom widget
+## Localization
 
-**Description: Custom widget might create an additional scroll bar**
+**Description:** Sign in screen is not localized in this preview
 
-**Workaround:**  
-* Sign in screen is not localized in this preview
-* **Send us feedback** pane is not localized in this preview
-* Edit company knowledge action in the alerts drill down page is not working for localized languages in this preview.
+**Workaround:** None
+
+**Description:** Send us feedback pane is not localized in this preview
+
+**Workaround:** None
+
+**Description:** Edit company knowledge action in the alerts drill down page is not working for localized languages in this preview
+
+**Workaround:** None
 
 ## My workspace
 
 **Description:** When there are no views in My Workspace and you add a view to My Workspace from the Web console, the view is not displayed.
 
 **Workaround:** You must access My Workspace from Operations Console one time. Afterwards, this behavior never reoccurs.  
-
-## UNIX/Linux inbox HTML5 dashboard
-
-**Description:** **Top 20** does not work in **Total % Processor Time** and **Swap Space Used** widgets in this build, currently these widgets will display all the entries.
-
-**Workaround:** None
 
 ## Using Operations Console with SSL
 

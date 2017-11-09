@@ -4,6 +4,7 @@
 ## [Release notes](get-started-release-notes.md)
 ## [Release notes - Preview 1711](release-notes-tp1711.md)
 ## [What's new in Operations Manager](what-is-new.md)
+## [What's new in Operations Manager - 1711](what-is-new-1711.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
 # How To
