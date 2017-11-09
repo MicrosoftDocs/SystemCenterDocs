@@ -14,7 +14,7 @@ ms.topic: article
 
 # What's New in Operations Manager
 
-The content in this section describes what's new and changed in System Center 2016 - Operations Manager.
+The content in this section describes what's new and changed in System Center - Operations Manager.
 
 ::: moniker range="sc-om-1711"
 
