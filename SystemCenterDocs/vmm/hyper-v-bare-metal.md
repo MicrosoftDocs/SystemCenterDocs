@@ -13,8 +13,6 @@ ms.technology:  virtual-machine-manager
 
 # Provision a Hyper-V host or cluster from bare metal computers
 
-
-
 Use this article to provision a Hyper-V host or cluster from bare metal computers with nothing installed on them, in the System Center - Virtual Machine Manager (VMM) fabric.
 
 In addition to adding existing Windows servers to the fabric as Hyper-V hosts and clusters, VMM can discover physical bare-metal machines, automatically install an operating system, and provision them as Hyper-V server hosts  and clusters.
@@ -30,6 +28,15 @@ Here's how you do this:
 
 
 ## Before you start
+
+> [!NOTE]
+
+> VMM doesn't support bare metal provisioning of physical Machines in disjoint namespace. As a workaround, follow these steps:
+1.  provision the bare metal in a non-disjoint namespace domain.
+2.  remove the provisioned host from VMM.
+3. Join the host to the disjoint namespace domain of interest.
+4. Add the host back to VMM. (Use [this procedure](https://technet.microsoft.com/en-us/library/gg610641(v=sc.12)).
+
 Ensure the following prerequisites:
 
 **Component** | **Prerequisite** | **Details**
