@@ -35,7 +35,7 @@ Here's how you do this:
 1.  provision the bare metal in a non-disjoint namespace domain.
 2.  remove the provisioned host from VMM.
 3. Join the host to the disjoint namespace domain of interest.
-4. Add the host back to VMM. Use [this procedure](https://technet.microsoft.com/en-us/library/gg610641(v=sc.12).
+4. Add the host back to VMM. (Use [this procedure](https://technet.microsoft.com/en-us/library/gg610641(v=sc.12)).
 
 Ensure the following prerequisites:
 
