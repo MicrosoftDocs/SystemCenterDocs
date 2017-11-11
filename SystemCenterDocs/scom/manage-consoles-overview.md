@@ -22,7 +22,7 @@ System Center – Operations Manager includes two consoles, the Operations con
 
 - In the Operations and Web console, learn how to [Use My Workspace](manage-consoles-my-workspace.md) to customize views and dashboards for your specific needs.
 
-- Learn what actions you can perform in the [Monitoring workspace](manage-using-monitoring-workspace.md), [Authoring workspace](manage-using-authoring-workspace.md), [Administration workspace](manage-using-administration-workspace.md), and [Reporting workspace](manage-using-reporting-workspace.md).  
+- Learn what actions you can perform in the [Monitoring workspace](manage-using-monitoring-workspace.md), [Authoring workspace](manage-using-authoring-workspace.md), [Administration workspace](manage-using-admin-workspace.md), and [Reporting workspace](manage-using-reporting-workspace.md).  
 
 - Understand how [Finding data and objects in the Operations console](manage-console-finding-data.md) and [Using Advanced Search](manage-console-using-adv-search.md) help you quickly locate the data you need.  
 

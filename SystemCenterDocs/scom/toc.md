@@ -85,7 +85,7 @@
 #### [Finding data and objects in the consoles](manage-console-finding-data.md)
 #### [Using advanced search](manage-console-using-adv-search.md)
 #### [Using the Montoring workspace](manage-using-monitoring-workspace.md)
-#### [Using the Administration workspace](manage-using-the-admin-workspace.md)
+#### [Using the Administration workspace](manage-using-admin-workspace.md)
 #### [Using the Authoring workspace](manage-using-authoring-workspace.md)
 #### [Using the Reporting workspace](manage-using-reporting-workspace.md)
 ### Using reports
