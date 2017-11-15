@@ -166,3 +166,7 @@ If you are deploying DPM to protect data over a WAN and your protection group in
 If you choose manual replica creation, DPM specifies the precise locations on the DPM server where you must create the replicas. Typically, you create the replicas by restoring your most recent backup of the data source from removable media such as tape. After you restore the data, you complete the process by running synchronization with consistency check for each of the replicas.
 
 It is crucial that when you restore the data to the DPM server to create the replica, you retain the original directory structure and properties of the data source, such as time stamps and security permissions. The more discrepancies that exist between the replicas and the protected data source, the longer the consistency checking part of the process takes. If you do not preserve the original directory structure and properties, manual replica creation can take as long as automatic replica creation.
+
+## Naming a Protection Group
+
+When you name the protection group, provide a unique, meaningful name for the group. The name can include any combination of alphanumeric characters and can include spaces, but cannot exceed 64 characters.
