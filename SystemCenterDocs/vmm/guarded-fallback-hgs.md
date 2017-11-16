@@ -12,7 +12,7 @@ ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1711'
 ---
 
-# Provision fallback HGS (Technical Preview)
+# Configure HGS fallback URLs in VMM (Technical Preview)
 
 This article describes how to define the fallback HGS URLs in VMM 1711 global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
