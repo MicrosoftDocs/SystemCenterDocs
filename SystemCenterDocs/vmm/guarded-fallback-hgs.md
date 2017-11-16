@@ -91,4 +91,5 @@ Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-
 ## Next steps
 
 - [Deploy the Host Guardian Service (HGS)](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs)
-- [Manage host guardian services](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)
+- [Manage HGS ](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-manage-hgs)
+- [Set up a fallback HGS for a branch office](http://blogs.technet.microsoft.com/datacentersecurity/2017/11/15/improved-branch-office-support-for-shielded-vms-in-windows-server-version-1709)
