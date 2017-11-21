@@ -5,15 +5,13 @@ description: This article describes the VMM server collate mapping from VMM code
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 08/29/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
 ---
 
 # VMM server collate mapping
-
->Applies To: System Center 2016 - Virtual Machine Manager
 
 This article provides the code and associated details for the VMM server collate mapping.
 
