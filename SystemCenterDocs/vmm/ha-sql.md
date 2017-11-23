@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 
 
 
-This article describes the steps for deploying a highly available SQL Server database for System Center 2016 - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with Always On Availability Groups.
+This article describes the steps for deploying a highly available SQL Server database for System Center - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with Always On Availability Groups.
 
 ## Before you start
 

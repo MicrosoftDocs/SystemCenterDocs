@@ -15,8 +15,6 @@ ms.technology:  virtual-machine-manager
 
 # Set up VMware servers in the VMM compute fabric
 
-
-
 Read this article to learn about managing VMware servers and VMs in the System Center - Virtual Machine Manager (VMM) fabric.
 
 VMM enables you to deploy and manage virtual machines and services across multiple hypervisor platforms, including VMware vSphere hosts and vCenter servers.
@@ -30,7 +28,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 ## Before you start
 
-- VMM supports the management of hosts and clusters running VMware ESX/ESXi 4.1, ESXi 5.0, 5.1, 5.5 and 6.0.
+- VMM supports the management of hosts and clusters running VMware. [Learn more](system-reqs.md#vmware-servers-in-the-vmm-fabric) for supported versions of VMware.
 - You need a vCenter server in your deployment. vSphere hosts and host clusters should be managed by a vCenter server, which in turn is managed by VMM.
 - The following features are supported by VMM when hosts and clusters are managed with a vCenter server:
 	- VMM command shell (same shell across all hypervisors)
