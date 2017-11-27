@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 # Perform a rolling upgrade of a Hyper-V host cluster to Windows Server 2016 in VMM
 
 
-Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](https://technet.microsoft.com/library/dn850430.aspx) about rolling upgrade requirements and architecture.
+Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements.aspx) about rolling upgrade requirements and architecture.
 
 ## Cluster rolling upgrade in VMM
 
@@ -29,6 +29,8 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 
 ## Before you start
 
+Review the platform [restrictions and limitations](https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
+
 - The cluster must be managed by VMM.
 - The cluster must be running Windows Server 2012 R2.
 - The cluster must meet the [requirements](hyper-v-bare-metal.md#before-you-start) for bare metal deployment. The only exception is that the physical computer profile doesn't need to include network or disk configuration details. During the upgrade VMM records the node's network and disk configuration and uses that information instead of the computer profile.
@@ -41,7 +43,7 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 1. In the Upgrade Wizard > **Nodes**, click the nodes you want to upgrade or **Select All**. Then click **Physical computer profile**, and select the profile for the nodes.
 1. In **BMC Configuration**, select the Run As account with permissions to access the BMC or create a new one. In **Out-of-band management protocol** click the protocol that the BMCs use. To use DCMI click IPMI. DCMI is supported even though it's not listed. Make sure the correct port is listed.
 1. In **Deployment Customization**, review the nodes to upgrade. If the wizard couldn't figure out all of the settings it displays a **Missing Settings** alert for the node. For example if the node wasn't provisioned by bare metal BMC settings might not be complete. Fill in the missing information.
-    - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to make sure thenew name is not in use.
+    - Enter the BMC IP address if required. You can also change the node name. Don't clear **Skip Active Directory check for this computer name** unless you're changing the node name and you want to make sure the new name is not in use.
     - In the network adapter configuration you can specify the MAC address. Do this if you're configuring the management adapter for the cluster, and you want to configure it as a virtual network adapter. It's not the MAC address of the BMC. If you choose to specify static IP settings for the adapter, select a logical network and an IP subnet if applicable. If the subnet contains and address pool you can select **Obtain an IP address corresponding to the selected subnet**. Otherwise type an IP address within the logical network.
 5. In **Summary** click **Finish** to begin the upgrade. If the wizard finishes the node upgrades successfully, all of the cluster nodes are running Windows Server 2016 the wizard upgrade the cluster functional level to Windows Server 2016.
 

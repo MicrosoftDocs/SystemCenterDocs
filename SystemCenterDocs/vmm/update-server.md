@@ -18,15 +18,14 @@ ms.technology:  virtual-machine-manager
 
 Learn about deploying update servers in the System Center - Virtual Machine Manager (VMM) fabric.
 
-You deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers running Windows Server 2012 R2 or later.
+You deploy update servers in the VMM fabric to manage compliance and remediation for virtualization hosts, library servers, the VMM management server, PXE servers, the WSUS server itself, and any infrastructure servers. [Learn more](system-reqs.md).
 
-This article explains the prerequisites, how to add a WSUS server to the fabric, set up update baselines, run a scan, and create update exemptions.
+This article explains the prerequisites, information about how to add a WSUS server to the fabric, set up update baselines, run a scan, and create update exemptions.
 
 
 ## Before you start
 
-- A WSUS server must be running Windows Server Update Service (WSUS) 4.0 or later.
-- The WSUS server must be running Windows Server 2012 R2, or Windows Server 2016, with the latest updates.
+- The WSUS server must be running Windows Server Update Service (WSUS) 4.0 or later and supported versions of Windows Server, as detailed in [system requirements](system-reqs.md#servers-in-the-vmm-fabric).
 - The WSUS server must be in the same domain as the VMM server, or in a domain with full trust.
 - VMM can use a WSUS root server or downstream WSUS server. You can't use a WSUS replica server.
 - The WSUS server can be dedicated to VMM or an existing server.
