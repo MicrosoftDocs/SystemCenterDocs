@@ -26,7 +26,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 ## Before you start
 
-- Make sure you have an IPAM server. [Learn more](https://technet.microsoft.com/library/hh831353.aspx?f=255&MSPPError=-2147217396). The server can be running Windows Server 2012 R2 or Windows Server 2016.
+- Make sure you have an IPAM server. [Learn more](https://technet.microsoft.com/library/hh831353.aspx?f=255&MSPPError=-2147217396). The IPAM server can be running these versions of [Windows Servers](system-reqs.md#servers-in-the-vmm-fabric). 
 - Create or identify a domain account and set it to never expire. On the IPAM server add the account to these groups:
 	- **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](https://technet.microsoft.com/library/jj878348.aspx).
 	- **Remote Management Users**: A built-in group that provides access to WMI resources through management protocols, such as WS-Management through the Windows Remote Management service.

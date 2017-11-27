@@ -15,14 +15,11 @@ ms.technology:  virtual-machine-manager
 
 This article describes how to install the System Center Virtual Machine Manager (VMM) console on a remote computer, and connect to the VMM server. When you install the VMM management server, the console is installed on it automatically.
 
-The remote console can be installed on:
-
-- Client operating systems running Windows 8.1 or later
-- Server operating systems running Windows Server 2012 or later
+Here are the [supported operating systems](system-reqs.md#server-operating-system).
 
 ## Before you start
 
-- Review the [system requirements](system-reqs.md)
+- Review and ensure you meet the [system requirements](system-reqs.md).
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 
 ## Run setup
@@ -37,7 +34,7 @@ The remote console can be installed on:
 
 If you want to uninstall the console do the following:
 
-1. In the Control Panel click to uninstall a program and select Microsoft System Center 2016 Virtual Machine Manager.
+1. In the Control Panel click to uninstall a program and select Microsoft System Center Virtual Machine Manager.
 2. In **Select features to remove** click **VMM console**. On the VMM management server, you can't uninstall the console without uninstalling VMM management.
 3. In **Summary** review the settings and click **Uninstall**.
 
