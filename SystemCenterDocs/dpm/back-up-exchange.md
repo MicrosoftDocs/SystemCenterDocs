@@ -14,20 +14,18 @@ ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
 
 # Back up Exchange with DPM
 
-System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013. You can back up the following:
-
--   Exchange mailbox databases under a database availability group (DAG)
-
--   In addition to backing up mail databases, to fully protect your Exchange deployment you'll need to backup other Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers. You can configure protection for volumes, system state or full bare metal recovery backup to ensure that all Exchange data and configuration settings are protected.
+System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so you can protect your Exchange deployment. If you have a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment you should back up Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers. 
 
 ## Prerequisites and limitations
-Before you deploy DPM to protection Exchange 2013 verify the deployment prerequisites:
+Before you deploy DPM to protect Exchange 2013, verify the deployment prerequisites:
 
--   Review the release notes and [What's supported and what isn't for DPM?](dpm-support-issues.md), to check for any Exchange issues.
+-  Review the [DPM release notes](dpm-release-notes.md)
 
--   Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll.  If you update these files on the Exchange server you'll need to update them on the DPM server too. The .ese and .eseutil files are usually in C:\Program Files\Microsoft\Exchange Server\V15\Bin folder.
+-  Review the article, [What's supported and what isn't for DPM?](dpm-support-issues.md), for any Exchange issues.
 
-    To maintain up-to-date copies do the following:
+-  Make sure the same versions of Eseutil.exe and Ese.dll are installed on both the Exchange and the DPM server. For example, if you're using the 64-bit version of DPM, you must have the 64-bit version of eseutil.exe and ese.dll. If you update these files on the Exchange server, you must update the files on the DPM server too. The `.ese` and `.eseutil` files are usually in the location, `C:\Program Files\Microsoft\Exchange Server\V15\Bin`.
+
+    To maintain up-to-date copies:
 
     1.  At the command prompt, navigate to the `<DPM installation folder>\Bin` directory.
 
@@ -35,19 +33,17 @@ Before you deploy DPM to protection Exchange 2013 verify the deployment prerequi
 
         For example in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
--   Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://go.microsoft.com/fwlink/?LinkId=266498).
+-  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://go.microsoft.com/fwlink/?LinkId=266498).
 
--   To protect an Exchange 2013 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
+-  To protect an Exchange 2013 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
--   DPM 2012 (and later) have a storage pool size limit of 120 terabytes (TB). There is an 80 TB limit for DPM replica volumes, and 40 TB limit for recovery point volumes. When protecting a large Exchange deployment, it is important to know the user mailbox size limit and the number of users or mailboxes. The number of users, or mailboxes, determines the maximum size of a mailbox, or number of Exchange databases a single DPM can protect, while staying within supported limits. To calculate the maximum size possible for each Exchange database, use the number of mailbox users assigned to a database, and the mailbox limit. 
-  - For example, if the maximum size of a user's mailbox is eight GB, a single DPM server can protect up to 10,000 mailboxes. 
-  - If the maximum size of a user's mailbox is greater than eight GB, or if you ned to protect more than 10,000 user mailboxes, use a database availability group (DAG) to configure the Exchange server, and protect the Exchange server with additional DPM servers. You can only protect an Exchange node with a single DPM server. The number of Exchange nodes must be equal to, or greater than the number of DPM servers used to protect all Exchange nodes.  
+-  DPM 2012 (and later) have a storage pool size limit of 120 terabytes (TB). There is an 80 TB limit for DPM replica volumes, and 40 TB limit for recovery point volumes. When protecting a large Exchange deployment, it is important to know the user mailbox size limit and the number of users or mailboxes. The number of users or mailboxes, determines the maximum size of a mailbox. Provided the mailboxes stay within limits, the number of mailboxes determine the number of Exchange databases a single DPM can protect. Use the number of users assigned to a database, and their mailbox limits, to calculate the maximum size possible for each Exchange database. For example, if the maximum size of a user's mailbox 8 GB, a single DPM server can protect up to 10,000 mailboxes. If the maximum size of a user mailbox is greater than 8 GB, or if more than 10,000 user mailboxes require protection, configure the Exchange server with a DAG. Use additional DPM servers to provide full protection. An Exchange node can only be protected by a single DPM server. Therefore, the number of Exchange nodes should be equal to, or greater than the number of DPM servers required to protect all Exchange databases.   
 
--   DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
+-  DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
--   You should configure at least one full backup per day and a synchronization frequency to suit your requirements for Exchange log truncations When you protect more than one copy of an Exchange mailbox database (for example, when you are protecting multiple members of a DAG), you should configure one node for full backups and the rest for copy backups. Copy backups do not truncate log files.
+-  Configure one full backup per day, and a synchronization frequency to suit your requirements for Exchange log truncations. When protecting more than one copy of an Exchange mailbox database (for example, when protecting members of a DAG), configure one node for full backups and the rest for copy backups. Copy backups do not truncate log files.
 
--   Protect at least two copies of each mailbox database whether Exchange is implemented with inexpensive Serial ATA (Serial Advanced Technology Attachment or SATA) or several disks/drives (JBOD) disks.
+-  Protect at least two copies of each mailbox database. You can use inexpensive Serial Advanced Technology Attachment (SATA) drives, or several JBOD disks for storage.
 
 -   Set the minimum frequency to greater than 15 minutes for mailbox synchronization. Start by setting up your current backup policy, and then gradually increase the number of recovery points. Performing one or two express full backups per day, in addition to a synchronization frequency of two hours, is a sound approach. For an optimal synchronization frequency consider the volume of your data, the performance impact, and the volume required to store the replicas.
 
