@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2017
+ms.date: 11/30/2017
 title:  Back up client computers with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  0e12f557-0396-465d-b60f-7695b44bbd12
@@ -30,7 +30,7 @@ Before you deploy DPM to protect client computer data verify the deployment prer
 
 -   DPM  can back up client computers that are physically or wirelessly connected to the local area network (LAN)or back up over VPN. For VPN backup the ICMP should be enabled on the client computer.
 
--   Each DPM server can protect up to 3000 client computers
+-   Each DPM server can protect up to 3000 client computers. When protecting client computers at scale, Microsoft recommends you create multiple protection groups, and stagger the recovery point times for those protection groups. The more clients that belong to a protection group, the longer it takes to enumerate the changes to the protection group.
 
 -   You can tweak the performance of client data backup as follows:
 
