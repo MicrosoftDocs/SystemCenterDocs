@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2017
+ms.date: 11/30/2017
 title:  Back up Exchange with DPM
 ms.technology:  data-protection-manager
 ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
@@ -39,7 +39,9 @@ Before you deploy DPM to protection Exchange 2013 verify the deployment prerequi
 
 -   To protect an Exchange 2013 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
--   You can protect up to 80 terabytes (TB) of data with a single DPM server. Therefore, you can protect DAGs that have up to 20 nodes with a single server or up to 10,000 mailboxes with a DPM server.
+-   DPM 2012 (and later) have a storage pool size limit of 120 terabytes (TB). There is an 80 TB limit for DPM replica volumes, and 40 TB limit for recovery point volumes. When protecting a large Exchange deployment, it is important to know the user mailbox size limit and the number of users or mailboxes. The number of users, or mailboxes, determines the maximum size of a mailbox, or number of Exchange databases a single DPM can protect, while staying within supported limits. To calculate the maximum size possible for each Exchange database, use the number of mailbox users assigned to a database, and the mailbox limit. 
+  - For example, if the maximum size of a user's mailbox is eight GB, a single DPM server can protect up to 10,000 mailboxes. 
+  - If the maximum size of a user's mailbox is greater than eight GB, or if you ned to protect more than 10,000 user mailboxes, use a database availability group (DAG) to configure the Exchange server, and protect the Exchange server with additional DPM servers. You can only protect an Exchange node with a single DPM server. The number of Exchange nodes must be equal to, or greater than the number of DPM servers used to protect all Exchange nodes.  
 
 -   DPM functions with any database role. You can configure DPM to protect a server that hosts a collection of active or passive mailbox databases.
 
