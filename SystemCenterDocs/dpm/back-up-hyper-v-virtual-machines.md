@@ -43,8 +43,9 @@ Both methods have pros and cons:
 ## Online and offline backup
 
 > [!IMPORTANT]
-> Depending on your DPM configuration, and what you are protecting, DPM's online and offline backup behavior differs.  If you use DPM 2012 R2 with UR3 (or later) to protect Hyper-V on Windows Server 2012 R2 (or later), the VMs continue running during the backup process. If you protect a Hyper-V server on Windows Server 2012, or you use DPM 2012 R2 with UR1 or UR2, the following behavior applies: 
->
+> Depending on your DPM configuration, and what you are protecting, DPM's online and offline backup behavior differs.  If you use DPM 2012 R2 with UR3 (or later) to protect Hyper-V on Windows Server 2012 R2 (or later), the VMs continue running during the backup process. In this case, the rest of this section does not apply. 
+
+If you protect a Hyper-V server on Windows Server 2012, or if you use DPM 2012 R2 with UR1 or UR2, the following section applies to your configuration: 
 
 DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS) writer to ensure that consistent versions of virtual machines are captured and protected without affecting virtual machine access. The ability to back up open files is critical for business continuity. By default, DPM performs online backups that don't affect the availability of virtual machines. To perform an online backup the following is required:
 
