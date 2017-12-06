@@ -16,4 +16,4 @@ ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 
 Standard activities enable you to create runbooks to automate your data center procedures.
 
-Activities are organized into categories to help you find the appropriate activity for the task you want to perform. [Learn more](https://msdn.microsoft.com/en-us/library/hh225055(v=sc.12.aspx).
+Activities are organized into categories to help you find the appropriate activity for the task you want to perform. [Learn more](https://msdn.microsoft.com/en-us/library/hh225055).
