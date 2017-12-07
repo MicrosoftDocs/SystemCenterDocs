@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2017
+ms.date: 12/06/2017
 title:  Back up Hyper V virtual machines
 ms.technology:  data-protection-manager
 ms.assetid:  3a5b0841-04c8-4ffa-8375-ef12b7b459bb
@@ -41,7 +41,13 @@ Both methods have pros and cons:
 -   Guest-level back is useful if you want to protect specific workloads running on a virtual machine. At host-level you can recover an entire VM or specific files, but it won't provide recover in the context of a specific application. For example to be able to recover specific SharePoint items from a backed up VM then you should do guest-level backup of that VM. Note that you must use guest-level backup if you want to protect data stored on passthrough disks. Passthrough allow the virtual machine to directly access the storage device and don't store virtual volume data in a VHD file.
 
 ## Online and offline backup
-DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS)  writer to ensure that consistent versions of virtual machines are captured and protected without affecting virtual machine access. The ability to back up open files is critical for business continuity. By default DPM performs online backups that don't affect the availability of virtual machines. To perform an online backup the following is required:
+
+> [!IMPORTANT]
+> Depending on your DPM configuration, and what you are protecting, DPM's online and offline backup behavior differs.  If you use DPM 2012 R2 with UR3 (or later) to protect Hyper-V on Windows Server 2012 R2 (or later), the VMs continue running during the backup process. In this case, the rest of this section does not apply. 
+
+If you protect a Hyper-V server on Windows Server 2012, or if you use DPM 2012 R2 with UR1 or UR2, the following section applies to your configuration: 
+
+DPM works seamlessly with the Hyper-V Volume Shadow Copy Services (VSS) writer to ensure that consistent versions of virtual machines are captured and protected without affecting virtual machine access. The ability to back up open files is critical for business continuity. By default, DPM performs online backups that don't affect the availability of virtual machines. To perform an online backup the following is required:
 
 -   The Backup integration service must be enabled, so the operating system running on the virtual machine running must support Hyper-V integration services.
 
