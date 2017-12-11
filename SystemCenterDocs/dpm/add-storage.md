@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  11/01/2017
+ms.date:  12/11/2017
 title:  Upgrade to DPM 2016
 ms.technology:  system-center-2016
 ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce
@@ -20,12 +20,12 @@ Modern Backup Storage (MBS) is provided by System Center Data Protection Manager
 - MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each datasource needs two volumes, one for the the initial backup and the other for delta changes.
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/). 
 
-DPM 2016 accepts volumes for storage. Hence, once a volume is added, DPM will format it to ReFS to use the new features of Modern Backup Storage. 
+DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
 
 While you can directly give a volume to DPM, you may face issues in extending the volume if a need arises at a lter point of time. 
-To take care of this, you can create a storage pool from the Disks available, create volumes on it and then expose them to DPM. These virtual volumes can then be extended as and when needed. 
+To take care of this, you can create a storage pool from the disks available, create volumes on it and then expose the volumes to DPM. These virtual volumes can then be extended when needed. 
 
-Hence, to add a volume, and to expand it later if needed, here is the suggested workflow:
+The remainder of this article explains how to add a volume and to expand it later, if needed.
 
 ## Setting up MBS
 
