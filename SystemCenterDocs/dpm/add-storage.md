@@ -17,22 +17,22 @@ ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce
 Modern Backup Storage (MBS) is provided by System Center Data Protection Manager (DPM) to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. 
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server older than Windows Server 2016, it doesn't use MBS.
-- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each datasource needs two volumes, one for the the initial backup and the other for delta changes.
+- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each datasource needs two volumes, one for the initial backup and the other for delta changes.
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/). 
 
 DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
 
-While you can directly give a volume to DPM, you may face issues in extending the volume if a need arises at a lter point of time. 
-To take care of this, you can create a storage pool from the disks available, create volumes on it and then expose the volumes to DPM. These virtual volumes can then be extended when needed. 
+While you can directly give a volume to DPM, you may face issues in extending the volume if a need arises later. 
+To prepare DPM for future expansion, Use the available disks to create a storage pool, then create volumes on the storage pool, and expose the volumes to DPM. These virtual volumes can then be extended when needed. 
 
-The remainder of this article explains how to add a volume and to expand it later, if needed.
+The remainder of this article provides the detail on how to add a volume and to expand it later.
 
 ## Setting up MBS
 
 Setting up MBS consists of the following steps:
 
 1. Make sure you're running DPM 2016 or later on a VM running Windows Server 2016 or later.
-2. Create a volume on a virtual disk in a storage pool. To do this:
+2. To create a volume on a virtual disk in a storage pool:
     a. Add a disk to the storage pool
     b. Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
     c. Create volumes on the virtual disk
@@ -47,7 +47,7 @@ Setting up MBS consists of the following steps:
 1. Create a storage pool in the File and Storage Services of Server Manager.
 2. Add the available physical disks to the storage pool.
     - Adding only one disk to the pool keeps the column count to 1. You can then add disks as needed afterwards.
-    - If multiple disks are added to the pool, the number of disks will be stored as the number of columns. This means that when more disks are added, they can only be a multiple of the number of columns.
+    - If multiple disks are added to the storage pool, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
     
     ![Add disks to storage pool](./media/add-storage/dpm2016-add-storage-1.png)
 
@@ -66,7 +66,7 @@ Setting up MBS consists of the following steps:
 6. Now, create volumes on the virtual disk.
 
     ![Create volume](./media/add-storage/dpm2016-add-storage-5.png)
-    ![Select volume server and sisk](./media/add-storage/dpm2016-add-storage-6.png)
+    ![Select volume server and disk](./media/add-storage/dpm2016-add-storage-6.png)
 
 
 ## Add volumes to DPM storage
@@ -82,7 +82,7 @@ Setting up MBS consists of the following steps:
 
 ## Configure workload-aware storage
 
-Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs.  Workloads that are backed up less frequently,for example VMs, can be backed up to low-cost volumes.
+Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs. Workloads that are backed up less frequently, such as VMs, can be backed up to low-cost volumes.
 
 You configure workload-aware storage using Windows PowerShell cmdlets.
 
@@ -112,23 +112,23 @@ For Example, to exclude F:\ and C:\MountPoint1, here are the steps:
 ```
 Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
 ```
-2. Rescan the storage through UI, or using Start-DPMDiskRescan commandlet.
+2. Rescan the storage through UI, or use Start-DPMDiskRescan cmdlet.
 
-The volumes and mountpoints thus configured will be excluded,
-To remove volume exclusion, run the following: 
+The configured volumes and mountpoints are excluded.
+To remove volume exclusion, run the following cmdlet: 
 ```
 Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
 ```
-This, followed by a rescan will lead to all volumes and mount points to be available to be used as DPM storage (other than System Volumes)
+After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Backup Storage Migration
 
-Once all your backups are on MBS, in scenarios as storage upgrade, or when a volume is getting full, there may be a need to migrate certain datasources from one volume to another. This can be achieved using PowerShell, or UI. The details can be found [here](https://go.microsoft.com/fwlink/?linkid=861519). 
+Once all your backups are on MBS, there may be a need to migrate certain datasources from one volume to another. For example, scenarios where you need to upgrade storage, or when a volume is getting full. You can use PowerShell or the user interface to migrate datasources. The details can be found [in this blog entry](https://go.microsoft.com/fwlink/?linkid=861519). 
 
-Please note that the datasource being migrated should have all its recovery points on Modern Storage. Migration of datasources with backups on both disks and volumes (as in the case of DPM server upgrades when the disk backups havent expired) is not supported. 
-Further, migration is like Modification of a PG. Hence, you cannot trigger an ad-hoc job while migration is in progress. The scheduled jobs will continue as configured. Further, at the time when migration completes, any running jobs in the PG will be pre-empted.
+The migrating datasource should have all recovery points on Modern Storage. Migrating datasources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported. 
+Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. The scheduled jobs continue as configured. When the migration completes, any running jobs in the protection group are pre-empted.
 
 ## Custom Size Allocation
 
-DPM 2016 consumes storage thinly, as, and when needed. To do so DPM calculates the size of the data being backed up when its configured for protection. However, if a lot of files and folders are being backed up together, as in the case of a file server, size calculation can take long time. With DPM 2016, you can configure DPM to accept the volume size as default instead of calculating the size of each file, hence saving time. The corresponding registry key is "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage" with the Key, "EnableCustomAllocationOnReFSStorage" as a String set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
+DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time. With DPM 2016, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage" with the Key, "EnableCustomAllocationOnReFSStorage" as a String set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
 
