@@ -22,7 +22,7 @@ This article helps you to plan all the elements required for a successful System
 Verify the following:
 
 - **VMM management server**: Verify [hardware](system-reqs.md#hardware) and [operating system](system-reqs.md#server-operating-system) requirements.
-- **SQL Server**: Review supported [SQL Server versions](system-reqs.md#sql-server
+- **SQL Server**: Review supported [SQL Server versions](system-reqs.md#sql-server)
 - **VMM console**: Review [operating system requirements](system-reqs.md#client-console-operating-system) and if you want to run the VMM console on a separate computer.
 - **VMM library**: Review the [hardware requirements](system-reqs.md#hardware) for remote VMM library shares.
 - **Virtualization hosts**: Review the [supported operating systems](system-reqs.md#servers-in-the-vmm-fabric) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](system-reqs.md#vmware-servers-in-the-vmm-fabric) for VMware servers.
