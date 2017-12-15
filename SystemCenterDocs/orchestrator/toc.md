@@ -40,6 +40,10 @@
 ### [Common activity properties](common-activity-properties.md)
 ### [Computer groups](computer-groups.md)
 # Reference
+## Standard Activities
+### [Orchestrator Standard Activities ](standard-activities.md)
+## Integration Toolkit
+### [Install Orchestrator Integration Toolkit](integration-toolkit.md)
 ## Integration Packs
 ### [Active Directory](active-directory-integration-pack.md)
 #### [Active Directory Activities](active-directory-activities.md)
