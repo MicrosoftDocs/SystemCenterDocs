@@ -37,6 +37,7 @@ ms.technology:  virtual-machine-manager
 |IBM <br/><br/> FlashSystem A9000/A9000R	| iSCSI/FC	| 12.1.0  and later|Embeded SMI-S <br/>v1.6.1 | [Link](https://www.ibm.com/support/knowledgecenter/STJKMM_12.1.0/fs9k_kc_api_reference.html) |
 |IBM <br/><br/> Spectrum Virtualize Family Product - SAN Volume Controller(SVC)/Storwize V7000, Storwize V5000, IBM FlashSystem V9000	| iSCSI/FC	| 7.8.0 and later|Embeded SMI-S <br/>v1.6.1 | [Link](https://www.ibm.com/support/knowledgecenter/STVLF4_7.8.1/spectrum.virtualize.781.doc/svc_sdkintro_215ebp.html) |
 |Pure Storage <br/><br/> FlashArray M	| FC	| Purity 4.9 and later|SMI-S <br/>v1.6.1 | [Link](https://support.purestorage.com/Solutions/Microsoft_Platform_Guide/System_Center_Suite/SMI-S_Provider_Guide) |
+|Huawei  <br/><br/> OceanStor V5 Series	| iSCSI/FC	| V500R007  and later |Huawei SMI-S Provider<br/>v 2.1.03 and later | TBA |
 
 
 ## Next steps
