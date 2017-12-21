@@ -174,7 +174,6 @@ server by using the following cmdlet:
 
     ```powershell
     foreach($VMNetwork in $VMNetworks)
-
     {
         Read-SCVMNetwork -VMNetwork $VMNetwork
     }
@@ -189,17 +188,17 @@ server by using the following cmdlet:
 
     ```powershell
     $networkService =  Get-SCNetworkService  | Where-Object {$_.Model -eq 'Microsoft Network Controller'}
-$gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway ’}
+    $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway ’}
 
     ```
 
 2. Run the **Read-SCFabricRole** cmdlet to refresh the fabric role.
 
     ```powershell
-foreach($fabricRole in $gatewayFabricRole )
-{
+    foreach($fabricRole in $gatewayFabricRole )
+    {
         Read-SCFabricRole -FabricRole $fabricRole
-}
+    }
     ```
 3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
 
