@@ -176,7 +176,7 @@ server by using the following cmdlet:
     foreach($VMNetwork in $VMNetworks)
 
     {
-            Read-SCVMNetwork -VMNetwork $VMNetwork
+        Read-SCVMNetwork -VMNetwork $VMNetwork
     }
 
     ```
