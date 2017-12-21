@@ -5,7 +5,7 @@ description: This article describes the procedure to back up and restore the sof
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/07/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -63,12 +63,12 @@ Use the following refresh procedures to find any such differences between VMM an
     $portACLs = Get-SCPortACL | Where-Object {$_.ManagedByNC -eq $True}
 
     ```
-2. Run the Read-SCPortACL cmdlet on all the NC managed port ACLs to refresh.
+2. Run the **Read-SCPortACL** cmdlet on all the NC managed port ACLs to refresh.
 
     ```powershell
     foreach($portACL in $portACLs)
     {
-           Read-SCPortACL -PortACL $portACL
+       Read-SCPortACL -PortACL $portACL
     }
 
     ```
@@ -82,12 +82,12 @@ server by using the following cmdlet:
     ```powershell
     $logicalNetworks = Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True}
     ```
-2.	Run the Read-SCLogicalNetwork cmdlet on all the NC managed logical networks to refresh.
+2.	Run the **Read-SCLogicalNetwork** cmdlet on all the NC managed logical networks to refresh.
 
     ```powershell
     foreach($logicalNetwork in $logicalNetworks)
     {
-        Read-SCLogicalNetwork -LogicalNetwork $logicalNetwork
+         Read-SCLogicalNetwork -LogicalNetwork $logicalNetwork
     }
 
     ```
@@ -103,17 +103,17 @@ server by using the following cmdlet:
     $fabricRoleResources = @()
     foreach($fabricRole in $fabricRoles)
     {
-	       $fabricRoleResources += $fabricRole.ServiceVMs
+	     $fabricRoleResources += $fabricRole.ServiceVMs
     }
     $fabricRoleResources
     ```
 
-2.	Run the Read-SCFabricRoleResource cmdlet to refresh.
+2.	Run the **Read-SCFabricRoleResource** cmdlet to refresh.
 
     ```powershell
     foreach($fabricRoleResource in $fabricRoleResources)
     {
-	       Read-SCFabricRoleResource -FabricResource $fabricRoleResource
+	     Read-SCFabricRoleResource -FabricResource $fabricRoleResource
     }
     ```
 
@@ -129,17 +129,17 @@ server by using the following cmdlet:
     $natConnections = @()
     foreach($vmNetwork in $vmNetworks)
     {
-	       $natConnections += $vmNetwork.NATConnections
+	     $natConnections += $vmNetwork.NATConnections
     }
     $natConnections
 
     ```
-2.	Run the Read-SCNATConnection cmdlet to refresh NAT connections and NAT rules.
+2.	Run the **Read-SCNATConnection** cmdlet to refresh NAT connections and NAT rules.
 
     ```powershell
     foreach($natConnection in $natConnections)
     {
-	       Read-SCNATConnection -NATConnection $natConnection
+	     Read-SCNATConnection -NATConnection $natConnection
     }
     ```
 
@@ -151,7 +151,7 @@ server by using the following cmdlet:
     ```powershell
     $loadBalancerVIPs = Get-SCLoadBalancerVIP |  Where-Object {$_.LoadBalancer.Model -eq 'Microsoft Network Controller'}
     ```
-2.	Run the Read-SCLoadBalancerVIP cmdlet to refresh all the load balancer VIPs.
+2.	Run the **Read-SCLoadBalancerVIP** cmdlet to refresh all the load balancer VIPs.
 
     ```powershell
     foreach($loadBalancerVIP in $loadBalancerVIPs)
@@ -164,24 +164,23 @@ server by using the following cmdlet:
 3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
 
 ### Refresh VM Networks
-> [!NOTE]
-
-> Refresh cmdlets for VM networks, VM network gateways, and gateway pools  will be available in the upcoming VMM updates. Manually refresh these  by using the following procedure:
 
 1.	Get all the NC managed HNV VM networks from the VMM server by using the following cmdlet:
 
     ```powershell
-    Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'}
+    $VMNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'}
     ```
-2.	For each VM network, fetch the corresponding virtual network in the NC by using the NC REST API using ResourceId as ExternalId of the VM Network. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollervirtualnetwork).
-
-    Use the following example cmdlet to get the virtual network from NC.
+2.	Run the **Read-SCVMNetwork** cmdlet on all the VM networks to refresh.
 
     ```powershell
-    Get-NetworkControllerVirtualNetwork -ResourceId $vmNetwork.ExternalId
+    foreach($VMNetwork in $VMNetworks)
+    {
+        Read-SCVMNetwork -VMNetwork $VMNetwork
+    }
+
     ```
 
-3. Validate if there are any differences between the VMM server and NC, and update the VM network in the VMM server as required.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
 
 ### Refresh gateway pools
 
@@ -189,19 +188,41 @@ server by using the following cmdlet:
 
     ```powershell
     $networkService =  Get-SCNetworkService  | Where-Object {$_.Model -eq 'Microsoft Network Controller'}
-    $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway’}
+    $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Object {$_. RoleType -eq ‘Gateway ’}
+
     ```
 
-2.	Get the gateway pool with ResourceId as "Default" from NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollergatewaypool).
-3.	Verify that all the properties of the gateway pool are in sync between VMM and NC and update the properties in VMM as required.
+2. Run the **Read-SCFabricRole** cmdlet to refresh the fabric role.
+
+    ```powershell
+    foreach($fabricRole in $gatewayFabricRole )
+    {
+        Read-SCFabricRole -FabricRole $fabricRole
+    }
+    ```
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
 
 ### Refresh VM network gateways
 
-1.	Get all the VM networks that are configured with VM network gateways by using the following cmdlet:
+1.	Get all the VM network gateways that are configured for the  VM networks by using the following cmdlet:
 
     ```powershell
-    $vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'  -and $_.VMNetworkGateways.Count -gt 0}}
+    $vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network  Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'  -and $_.VMNetworkGateways.Count -gt 0}}
+    $VMNetworkGateways = @()
+    foreach($vmNetwork in $vmNetworks)
+	{
+	     $VMNetworkGateways += $vmNetwork.$VMNetworkGateways
+	}
+
     ```
 
-2.	Get the virtual gateways configured in NC by using the NC REST API. [Learn more](https://technet.microsoft.com/en-us/itpro/powershell/windows/networkcontroller/get-networkcontrollervirtualgateway):
-3.	Validate all the properties of the virtual gateway, VPN connections, BGP routers, BGP peers and check if they are in sync between VMM and NC.
+2. Run the **Read-SCVMNetworkGateway** cmdlet to refresh the gateways.
+
+    ```powershell
+    foreach($VMNetworkGateway in $VMNetworkGateways)
+    {
+        Read-SCVMNetworkGateway -VMNetworkGateway $VMNetworkGateway
+    }
+    ```
+
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
