@@ -176,7 +176,7 @@ server by using the following cmdlet:
     foreach($VMNetwork in $VMNetworks)
 
     {
-        Read-SCVMNetwork - VMNetwork $VMNetwork
+        Read-SCVMNetwork -VMNetwork $VMNetwork
     }
 
     ```
@@ -198,7 +198,7 @@ $gatewayFabricRole = Get-SCFabricRole -NetworkService $networkService | Where-Ob
     ```powershell
 foreach($fabricRole in $gatewayFabricRole )
 {
-     Read-SCFabricRole -FabricRole $fabricRole
+      Read-SCFabricRole -FabricRole $fabricRole
 }
     ```
 3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
@@ -209,8 +209,8 @@ foreach($fabricRole in $gatewayFabricRole )
 
     ```powershell
     $vmNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network  Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'  -and $_.VMNetworkGateways.Count -gt 0}}
-     $VMNetworkGateways = @()
-     foreach($vmNetwork in $vmNetworks)
+    $VMNetworkGateways = @()
+    foreach($vmNetwork in $vmNetworks)
 	{
 	     $VMNetworkGateways += $vmNetwork.$VMNetworkGateways
 	}
