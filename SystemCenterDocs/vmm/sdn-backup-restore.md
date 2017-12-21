@@ -218,13 +218,11 @@ server by using the following cmdlet:
 
 2. Run the **Read-SCVMNetworkGateway** cmdlet to refresh the gateways.
 
- ```powershell
-
- foreach($VMNetworkGateway in $VMNetworkGateways)
- {
+    ```powershell
+    foreach($VMNetworkGateway in $VMNetworkGateways)
+    {
         Read-SCVMNetworkGateway -VMNetworkGateway $VMNetworkGateway
- }
-
- ```
+    }
+    ```
 
 3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
