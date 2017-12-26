@@ -19,7 +19,7 @@ The following release notes apply to System Center 1711 Preview - Operations Man
 
 ## Telemetry
 
-**Description:** Usage telemetry collected from Application Insights and presented in HTLM5 dashboards are enabled by default and cannot be disabled in this preview.  For more information on what telemetry is collected by Application Insights, see [Usage analysis with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-usage-overview).
+**Description:** Usage telemetry collected from Application Insights and presented in HTLM5 dashboards are enabled by default and cannot be disabled in this preview.  For more information on what telemetry is collected by Application Insights, see [Usage analysis with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-usage-overview).
 
 **Workaround:** None
 
