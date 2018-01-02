@@ -14,7 +14,7 @@ ms.technology:  virtual-machine-manager
 # Perform a rolling upgrade of a Hyper-V host cluster to Windows Server 2016 in VMM
 
 
-Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements.aspx) about rolling upgrade requirements and architecture.
+Cluster rolling upgrade was introduced in Windows Server 2016. It enables you to upgrade the operating system of cluster nodes without stopping Hyper-V workloads running on the nodes. [Read more](https://docs.microsoft.com/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#requirements.aspx) about rolling upgrade requirements and architecture.
 
 ## Cluster rolling upgrade in VMM
 
@@ -29,7 +29,7 @@ System Center - Virtual Machine Manager (VMM) supports using the rolling upgrade
 
 ## Before you start
 
-Review the platform [restrictions and limitations](https://docs.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
+Review the platform [restrictions and limitations](https://docs.microsoft.com/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade#restrictions--limitations) before you start Cluster rolling upgrade.
 
 - The cluster must be managed by VMM.
 - The cluster must be running Windows Server 2012 R2.
