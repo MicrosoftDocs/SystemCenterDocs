@@ -14,6 +14,8 @@ ms.assetid: bea86d42-4838-46b0-96ac-75a0e8988e3c
 # How and When to Clear the Cache
 In System Center Operations Manager, when troubleshooting an issue with the Operations console or with an agent, you may see recommendations to "clear the cache." For example, see the Knowledge Base article [Troubleshooting gray agent state](http://go.microsoft.com/fwlink/p/?LinkID=200488). 
 
+## To clear the cache
+
 The following table explains how and when to clear the console cache or agent cache.  
   
 |Cache|How to clear|When|Results|  
