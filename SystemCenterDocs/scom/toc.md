@@ -202,6 +202,7 @@
 ### [Using Operations Manager shell](manage-using-omcmdlets.md)
 ### [How to create and manage resource pools](manage-resource-pools-manage.md)
 ### Maintaining Operations Manager infrastructure
+#### [How and when to clear the cache](manage-clear-healthservice-cache.md)
 #### [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md)
 #### [How to move the Operational database](manage-move-opsdb.md)
 #### [How to move the Reporting data warehouse database](manage-move-omdwdb.md)

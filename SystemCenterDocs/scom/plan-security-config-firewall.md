@@ -4,7 +4,7 @@ title:  Configuring a Firewall for Operations Manager
 description: This article provides design guidance for which ports and protocols need to be allowed for Operations Manager to communicate through network firewalls and proxy servers.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmomm
 ms.date: 01/04/2018
 ms.custom: na
 ms.prod: system-center-2016
