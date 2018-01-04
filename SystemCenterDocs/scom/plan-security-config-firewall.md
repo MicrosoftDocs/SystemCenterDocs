@@ -5,9 +5,9 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 03/07/2017
+ms.date: 01/04/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -21,29 +21,31 @@ The following table shows Operations Manager feature interaction across a firewa
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|management server|1433 --->|Operations Manager database|Yes (Setup)||
-|management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
+|Management server|1433/TCP ---> <br>  1434/UDP --->|Operations Manager database|Yes (Setup)||
+|Management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
-|gateway server|5723 --->|management server|No||
-|management server|1433 --->|Reporting data warehouse|No||
+|Gateway server|5723 --->|management server|No||
+|Management server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|No||
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |Operations console|5724 --->|management server|No||
 |Connector framework source|51905 --->|management server|No||
-|web console server|Web site port --->|management server|No||
-|web console browser|51908 --->|web console server|Yes (IIS Admin)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the Operations Manager web console web site.|
-|connected management server (Local)|5724 --->|connected management server (Connected)|No||
+|Web console server|Web site port<br> --->|management server|No||
+|Web console browser|51908 --->|web console server|Yes (IIS Admin)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the Operations Manager web console web site.|
+|Web console for Application Diagnostics|1433/TCP ---><br>  1434 --->|Operations Manager database|Yes (Setup)||
+|Web console for Application Advisor|1433/TCP ---><br>  1434 --->|Reporting data warehouse|Yes (Setup)||
+|Connected management server (Local)|5724 --->|connected management server (Connected)|No||
 |Windows agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
 |Windows agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
-|Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||
+|Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
 |UNIX/Linux agent discovery and monitoring of agent|TCP 1270 <---|management server or gateway server|No||
 |UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 <---|management server or gateway server|Yes||
-|gateway server|5723 --->|management server|Yes (Setup)||
+|Gateway server|5723 --->|management server|Yes (Setup)||
 |Agent (Audit Collection Services forwarder)|51909 --->|management server Audit Collection Services collector|Yes (Registry)||
 |Agentless Exception Monitoring data from client|51906 --->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||
 |Customer Experience Improvement Program data from client|51907 --->|management server (Customer Experience Improvement Program End) Point|Yes (Client Monitoring Wizard)||
 |Operations console (reports)|80 --->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
-|Reporting server|1433 --->|Reporting data warehouse|Yes||
-|management server (Audit Collection Services collector)|1433 --->|Audit Collection Services database|Yes||
+|Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes||
+|Management server (Audit Collection Services collector)1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
 
 
 If SQL Server 2014 Service Pack 2 or SQL Server 2016 is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
