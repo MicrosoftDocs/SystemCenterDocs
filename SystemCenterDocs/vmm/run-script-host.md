@@ -9,7 +9,7 @@ ms.date: 04/01/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: =>'sc-vmm-2016'
+monikerRange: ='sc-vmm-2016'
 ---
 
 # Run a script on a remote host by using Run Script command
@@ -19,7 +19,7 @@ monikerRange: =>'sc-vmm-2016'
 
 
 ## Example scenario 1 - Start a service
-The example scenario below provides information on how you can start a service **sftlist** on a VMM host using the Run Script command.
+The following example scenario provides information on how you can start a service **sftlist** on a VMM host using the Run Script command.
 
 1. In the VMM console, from the toolbar click  **Host** and select **Run Script Command**.
 
@@ -38,7 +38,7 @@ The example scenario below provides information on how you can start a service *
 
     > ![NOTE]
 
-    > The **/q** turns the echo off for the command line and **/c** carries out the command and then terminates. If you do not use these switches, the outcome will be a return code 0 from the cmd.exe process and will not display the actual result of the command in the job.
+    > The **/q** turns off the echo for the command line and **/c** carries out the command and then terminates. If you do not use these switches, the outcome will be a return code 0 from the cmd.exe process and will not display the actual result of the command in the job.
 
     ![run script form](media/run-script-command/run-script-filled.png)
 
@@ -71,4 +71,4 @@ In this example, at step 2, we use the following values, rest of the steps remai
  ![run script custom form](media/run-script-command/run-script-filled-custom.png)
 
 The batch file performs a net stop sftlist/y and then a net start sftlist.
-In this scenario, the custom resource folder will be transferred to the agent host and copied under windows\temp. A folder with the format, **scvmm.xxxxxxxx**, will be created to contain all the files. From here, it executes the batch file and the agent returns the corresponding outcome to VMM and displays it in the job. If the script generates an error, it creates a log under the specified location.
+In this scenario, the custom resource folder is transferred to the agent host and copied under windows\temp. A folder with the format, **scvmm.xxxxxxxx**, is  created to contain all the files. From here, it executes the batch file and the agent returns the corresponding outcome to VMM and displays it in the job. If the script generates an error, it creates a log under the specified location.
