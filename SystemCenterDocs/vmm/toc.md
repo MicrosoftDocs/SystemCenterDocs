@@ -68,6 +68,7 @@
 ### [Manage VMM host groups](host-groups.md)
 ### [Add existing Hyper-V hosts and clusters to the fabric](hyper-v-existing.md)
 ### [Add a Nano server as a Hyper-V host or cluster](hyper-v-nano.md)
+### [Run a script on host](run-script-host.md)
 ### [Create a cluster from standalone Hyper-V hosts](hyper-v-standalone.md)
 ### [Provision a Hyper-V host or cluster from bare-metal](hyper-v-bare-metal.md)
 ### [Create a guest Hyper-V cluster from a service template](hyper-v-guest-cluster.md)
