@@ -9,7 +9,7 @@ ms.date: 04/01/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1711'
+monikerRange: 'sc-vmm-2016'
 ---
 
 # Run a script on a remote host by using Run Script command
