@@ -50,6 +50,7 @@
 #### [Post-upgrade tasks when upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md)
 ## Manage 
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
+### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
 ### Managing discovery and agents 
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
@@ -93,6 +94,7 @@
 #### [How to create reports](manage-reports-create-reports.md)
 #### [How to run, save, and export reports](manage-reports-run-save-export.md)
 #### [How to configure and modify report schedules](manage-reports-config-modify-schedules.md)
+### [Monitor failover clusters](manage-monitor-clusters-overview.md)
 ### [Not monitored and gray agents](manage-agents-not-healthy.md)
 ### [How to view all rules and monitors running on agent-managed computer](manage-agents-identify-all-running-workflows.md)
 ### [Configure SharePoint to view Operations Manager data](manage-console-sharepoint-integration.md)
