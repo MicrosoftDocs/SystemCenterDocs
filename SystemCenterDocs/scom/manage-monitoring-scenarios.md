@@ -3,7 +3,7 @@ title: Operations Manager Monitoring Scenarios
 description: This topic provides a high level overview of the supported monitoring scenarios with System Center Operations Manager.
 author: MGoedtel
 manager: carmonm
-ms.date: 01/03/2018
+ms.date: 01/04/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -12,7 +12,7 @@ ms.assetid:
 ---
 
 # Operations Manager Monitoring Scenarios
-System Center 2016 - Operations Manager supports a variety of methods to actively monitor different services and the components and devices that support them.  This article summarizes each scenario supported with a link to the detailed supporting documentation describing how to plan and configure monitoring each scenario.  
+System Center Operations Manager supports a variety of methods to actively monitor different services and the components and devices that support them.  This article summarizes each scenario supported with a link to the detailed supporting documentation describing how to plan and configure monitoring each scenario.  
   
 ## Operations Manager monitoring scenarios topics 
   
