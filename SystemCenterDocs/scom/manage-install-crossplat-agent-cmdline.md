@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager agent 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 08/23/2017
+ms.date: 01/04/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -13,6 +13,8 @@ ms.topic: article
 ---
 
 # Install agent and certificate on UNIX and Linux computers using the command line
+
+>Applies To: System Center 2016 - Operations Manager
 
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager 2016 - Operations Manager.  The agent packages can be found in the the following folder on a management server - *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits* after you import  the required management packs for the specific version of UNIX/Linux you need to monitor.  The management pack are available in the Operations Manager installation media, in the *\ManagementPacks* directory or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=29696).
 
@@ -28,11 +30,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To install the Red Hat Enterprise package, type:
 
-    `sh ./sscx-<version>.rhel.<version>.<arch>.sh --install` 
+    `sh ./scx-<version>.rhel.<version>.<arch>.sh --install` 
 
     or for SUSE Linux Enterprise package, type:
 
-    `sh ./sscx-<version>.sles.<version>.<arch>.sh --install`  
+    `sh ./scx-<version>.sles.<version>.<arch>.sh --install`  
 
 3.  To verify that the package is installed, type:
 
@@ -82,11 +84,11 @@ Your environment may require that you manually install the agent. Use the follow
 
 2.  To install the package, type:
 
-    `pkgadd -d scx-<version>.solaris.<version>.<arch>.sh MSFTscx`
+    `pkgadd -d ./scx-<version>.solaris.<version>.<arch>.sh –install`
 
 3.  To verify that the package is installed, type:
 
-    `pkginfo –l MSFTscx`
+    `pkginfo –l scx`
 
 4.  To verify that the Microsoft SCX CIM Server is running, type:
 
