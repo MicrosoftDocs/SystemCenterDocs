@@ -96,5 +96,5 @@ An agent can also show as not monitored because the new agent has the same NetBI
 
 -  To understand how Operations Manager monitors the communication channel between an agent and it's primary management server to ensure it is responsive and available, see [How Heartbeats Work in Operations Manager](manage-agent-heartbeat-overview.md). 
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](../om/manage/using-the-operations-console-in-operations-manager.md). 
+- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](manage-consoles-overview.md). 
   
