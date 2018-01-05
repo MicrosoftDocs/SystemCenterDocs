@@ -16,29 +16,29 @@ System Center Operations Manager supports a variety of methods to actively monit
   
 ## Operations Manager monitoring scenarios topics 
   
--   [Agentless Monitoring](manage-agentless-monitoring.md)  
+-   [Agentless monitoring](manage-agentless-monitoring.md)  
   
--   [Monitoring Across Untrusted Boundaries](plan-security-authentication-data-encryption.md)  
+-   [Monitoring across untrusted boundaries](plan-security-authentication-data-encryption.md)  
   
--   [Client Monitoring Using Agentless Exception Monitoring](manage-client-monitoring-using-aem.md)  
+-   [Client monitoring using Agentless Exception Monitoring](manage-client-monitoring-using-aem.md)  
   
--   [Monitoring Failover Clusters](manage-monitor-clusters-overview.md)  
+-   [Monitoring failover clusters](manage-monitor-clusters-overview.md)  
   
--   [Monitoring Networks](manage-monitor-networkdevice-overview.md)  
+-   [Monitoring networks](manage-monitor-networkdevice-overview.md)  
   
 -   [Monitoring Service Level Objectives](manage-monitor-sla-overview.md)  
   
--   [Monitoring .NET Applications](manage-viewing-and-investigating-alerts-for-dotnetapps.md)  
+-   [Monitoring .NET applications](manage-viewing-and-investigating-alerts-for-dotnetapps.md)  
   
--   [Monitoring Java Applications](manage-monitoring-java-applications.md)  
+-   [Monitoring Java applications](manage-monitoring-java-applications.md)  
   
--   [Monitoring UNIX and Linux Computers](plan-planning-agent-deployment.md#linuxunix-agent)  
+-   [Monitoring UNIX and Linux computers](plan-planning-agent-deployment.md#linuxunix-agent)  
 
 -   [Monitoring Linux log files](manage-linux-logfiles.md)  
   
--   [Connecting Operations Manager With Other Management Systems](manage-integration-thirdparty-overview.md)  
+-   [Connecting Operations Manager with other management systems](manage-integration-thirdparty-overview.md)  
   
--   [Monitoring Operations Manager from a Second Management Group](manage-connecting-mgmtgroups.md)  
+-   [Monitoring Operations Manager from a second management group](manage-connecting-mgmtgroups.md)  
   
 -   [Integrating with Active Directory](manage-ad-integration-agent-assignment.md)  
   

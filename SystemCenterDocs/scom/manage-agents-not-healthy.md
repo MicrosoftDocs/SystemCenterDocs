@@ -4,7 +4,7 @@ description: This article describes how Operations Manager detects and reports w
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 12/13/2016
+ms.date: 01/04/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -13,6 +13,8 @@ ms.assetid: 4a96716d-49f8-48a8-ac34-ca69e8f6363b
 ---
 
 # Not monitored and gray agents
+
+>Applies To: System Center 2016 - Operations Manager
 
 In System Center 2016 - Operations Manager, you may see discovered objects in the Operations console displayed as not monitored or gray, as shown in the following illustration.  
   
@@ -53,7 +55,7 @@ The **Show Gray Agent Connectivity Data** task will help you identify why an age
   
 1.  Open the Operations console and click **Monitoring**.  
   
-2.  Navigate to the Operations Manager\Agent Details\Agent Health State view.  
+2.  Navigate to the **Operations Manager\Agent Details\Agent Health State** view.  
   
 3.  In **Agent State from Health Service Watcher**, click the agent you want to check connectivity for.  
   
@@ -82,7 +84,7 @@ For information on troubleshooting, see the Knowledge Base article [Troubleshoot
 ## What to do for a not monitored state  
 When an object shows as not monitored, check whether the appropriate management pack for monitoring the object is imported. Ensure that the appropriate monitors are enabled.  
   
-Sometimes restarting the Microsoft Monitoring Agent service on the agent-managed computer or clearing the agent cache can resolve the issue. You can also try placing the object in maintenance mode for several minutes. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).  
+Sometimes restarting the Microsoft Monitoring Agent service on the agent-managed computer or clearing the agent cache can resolve the issue. To clear the cache on the agent, see [How to clear the cache](manage-clear-healthservice-cache.md).  You can also try placing the object in maintenance mode for several minutes. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).  
   
 Next, check the DNS configuration for the computer, both FQDN and DNS suffix.  
   
