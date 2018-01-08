@@ -1,11 +1,11 @@
-﻿---
+---
 ms.assetid: e68783da-5a7e-43f3-b7d1-0b82bd597d03
 title: Install Agent on Windows Using the Discovery Wizard
 description: This topic describes how to deploy the Operations Manager agent on Windows computers using the Discovery Wizard.
 author: mgoedtel
 ms.author: magoedtel
 manager: carmonm
-ms.date: 11/28/2016
+ms.date: 01/05/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,9 @@ ms.topic: article
 
 # Install Agent on Windows Using the Discovery Wizard
 
-You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called “discovery.” One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
+>Applies To: System Center 2016 - Operations Manager
+
+You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called discovery. One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 
 The Discovery Wizard does not show computers that the management group is already monitoring. If you are doing a phased rollout of your management group, you can run the wizard to add new computers to the group. Also, after your initial deployment, you can use the Discovery Wizard to add newly installed computers to be managed.
 
@@ -25,7 +27,7 @@ If the Discovery Wizard is not right for your needs (for example, if you have a 
 Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md).
 
 > [!NOTE]
-> For information about port requirements for agents, see [Agent and Agentless Monitoring](https://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
+> For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
 
 ## To install an agent on a computer running Windows by using the Discovery Wizard
 
@@ -119,7 +121,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).
 
-- After manually installing the Operations Manager agent on Windows or UNIX and Linux computers, you need to [Process Manual Agent Installations](~/scom/manage-deploy-windows-agent-manually.md).
+- To learn how to upgrade the agent on Windows computers from a previous version, see [How to upgrade an agent to System Center Operations Manager](deploy-upgrade-agents.md).    
 
 - To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](~/scom/manage-deploy-config-windows-agent.md).
 

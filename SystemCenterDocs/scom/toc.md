@@ -65,7 +65,7 @@
 #### [Applying overrides to object discoveries](manage-apply-overrides-object-discovery.md)
 #### [Upgrading and uninstalling agent on UNIX and Linux computer](manage-upgrade-uninstall-crossplat-agent.md)
 #### [Manually uninstalling Agents from UNIX and Linux computers](manage-uninstall-crossplat-agent.md)
-#### [Upgrading and uninstalling agent on Windows computer](manage-uninstall-windows-agent.md)
+#### [Uninstall agent on Windows computer](manage-uninstall-windows-agent.md)
 #### [Configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md)
 ### Using management packs
 #### [What is in an Operations Manager management pack?](manage-overview-management-pack.md)
