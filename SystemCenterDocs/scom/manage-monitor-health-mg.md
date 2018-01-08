@@ -3,7 +3,7 @@ title: Monitoring the Health of the Management Group
 description: This topic provides a high level overview of the supported monitoring scenarios with System Center Operations Manager.
 author: MGoedtel
 manager: carmonm
-ms.date: 01/04/2018
+ms.date: 01/08/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: 42973387-51b3-4276-a2e4-522f1eba2435
 # Monitoring the Health of the Management Group
 System Center Operations Manager introduces a new dashboard view that provides a comprehensive picture of the health of your management group. The dashboard tries to answer the question, "do I need to do anything?"  
   
-The **Management Group Health** view allows you to see at a glance the health state of all management group functions, such as resource pools, and the management group infrastructure, such as management servers. It also shows you recent agent health state including gray agents, agent configuration for agents pending management, and agent versions.  
+The **Management Group Health** view under the **Operations Manager** folder, allows you to see at a glance the health state of all management group functions, such as resource pools, and the management group infrastructure, such as management servers. It also shows you recent agent health state including gray agents, agent configuration for agents pending management, and agent versions.  
   
 You can display **Management Group Health** on a SharePoint site by integrating with Operations Manager, giving all authorized users a useful summary of management group status. For more information, see [Using SharePoint to view Operations Manager data](manage-console-sharepoint-integration.md).  
   
