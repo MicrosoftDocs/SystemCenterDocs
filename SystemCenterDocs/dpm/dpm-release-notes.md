@@ -116,6 +116,20 @@ To suppress size calculations and do complete size calculations again, you can u
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
 
+::: moniker range="sc-dpm-1801"
+
+## Installing the DPM agent on Windows Server may require a reboot
+
+**Description**: Installing or updating a DPM agent on a Windows Server may require a reboot.
+
+**Workaround**: To understand if the production server requires a reboot when the agent is updated, check the version of the *Microsoft Visual C++ 2012 Redistributable(x64)*. If the version is less than 11.0.51106, the agent installation process tries to update the agent, which can cause the server to reboot. Avoid pushing the agent to servers whose *Microsoft Visual C++ 2012 Redistributable(x64) is less than 11.0.51106. 
+
+If your server is less than 11.0.51106, on the production server, open the DPM setup folder(<DPM Installation Path>\DPM\ ProtectionAgents\AC\<DPM Version>\amd64), select *vcredist2012_x64* and install it. After installing *vcredist2012_x64*, you control whether to reboot or not. 
+
+After manually installing the update, you can push the agents.
+
+::: moniker-end
+
 ## Next steps
 To install DPM, see the article, [Install DPM](install-dpm.md).
 
