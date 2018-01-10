@@ -5,7 +5,7 @@ description: This article provides information about system requirements for VMM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  01/10/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -57,7 +57,7 @@ Windows Server 2016 | Y | N | If supported by SQL Server version
 Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
 Windows Server 2016 Nano | N | N | If supported by SQL Server version
 
-## Client console operating system
+## VMM console operating system
 
 **Operating system** | **Supported**
 --- | ---
