@@ -18,7 +18,7 @@ This article describes how to install the System Center Virtual Machine Manager 
 
 ## Before you start
 
-- Check the [supported operating systems](system-reqs.md#vmm-console) for the console.
+- Check the [supported operating systems](system-reqs.md#vmm-console-operating-system) for the console.
 - Review and ensure you meet [system requirements](system-reqs.md).
 - Make sure you have at least local administrator permissions on the computer on which you're installing the console.
 - The VMM version of the console must match the System Center version of the VMM server. For example, to connect to a VMM server running System Center 2016, the VMM console version must also be 2016.
