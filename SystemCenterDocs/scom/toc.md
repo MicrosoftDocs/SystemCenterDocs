@@ -2,9 +2,9 @@
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Release notes](get-started-release-notes.md)
-## [Release notes - Preview 1711](release-notes-tp1711.md)
-## [What's new in Operations Manager](what-is-new.md)
-## [What's new in Operations Manager - 1711](what-is-new-1711.md)
+## [Release notes - 1801](release-notes-1801.md)
+## [What's new in Operations Manager 2016](what-is-new.md)
+## [What's new in Operations Manager - 1801](what-is-new-1801.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
 # How To
