@@ -1,26 +1,20 @@
 ---
-title: Configuration Manager Integration Pack Activities
-description: Configuration instructions for activities provided by the Configuration Manager integration pack.
-ms.custom: na
-ms.date: 03/08/2017
+title: Configuration Manager integration pack activities
+description: This article contains configuration instructions for activities provided by the Configuration Manager integration pack.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: ab4cf719-4cd3-4a38-92f6-c3019452e8ca
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
 
-# Configuration Manager Integration Pack Activities for System Center 2016 - Orchestrator
+# Configuration Manager integration pack activities
 
 The following configuration instructions apply to all activities in this integration pack.
 
-**Activity Properties**
+## Activity properties
 
 Each activity has a set of required or optional properties that define
 the configuration of that activity. This includes how it connects to
@@ -28,7 +22,7 @@ other activities or how the activity performs its actions. You can view
 or modify activity properties when the activity is placed in the current
 runbook.
 
-**To configure the properties for an activity**
+## Configure activity properties
 
 - Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
 - To save your configuration entries, click **Finish**.
@@ -43,7 +37,7 @@ from activity to activity, all activities will have a **General** tab, a
 **Details** tab, and a **Run Behavior** tab. Some activities may have
 additional tabs.
 
-**General Tab**
+## General tab
 
 This tab contains the **Name** and **Description** properties for the
 activity. By default, the **Name** of the activity is the same as its
@@ -51,7 +45,7 @@ activity type, and the **Description** is blank. You can modify these
 properties to create a more descriptive name or provide a detailed
 description of the actions of the activity.
 
-**Details Tab**
+## Details tab
 
 This tab contains properties that are specific to the activity. All
 activities in this integration pack except for the Perform Client Action
@@ -59,7 +53,7 @@ activity have the **Connection Name** property at the top of the
 **Details** tab. This property is used to specify the connection to the
 Configuration Manager server.
 
-**To configure the Connection Name property**
+## Configure the Connection Name property
 
 -   Click the ellipsis **(…)** button next to the **Name** field, and
     then select the applicable connection name. Connections displayed in
@@ -72,13 +66,13 @@ the activity, allowing you to specify ID values or names of objects to
 be used. Each Value Type property is linked directly to another property
 listed immediately above the Value Type property.
 
-**To configure Value Type properties**
+## Configure Value Type properties
 
 -   Click the ellipsis **(…)** button next to the **Value Type** field,
     and then select the setting that correctly identifies the type of
     value in the associated property.
 
-**Schedule Tab**
+## Schedule tab
 
 The **Schedule** tab allows you to define availability, expiration and
 mandatory assignments for deployments. Options available on the tab may
@@ -87,7 +81,7 @@ cause Configuration Manager to automatically run the program at a
 specific time or according to a specific event, such as user
 Logon/Logoff. The settings on this tab are optional.
 
-**Mandatory Assignment Schedules**
+## Mandatory assignment schedules
 
 To add a new mandatory assignment, click the **New** button. The
 Mandatory Schedule dialog appears.
@@ -107,40 +101,26 @@ The Mandatory Schedule dialog box contains the following elements:
     * **Logon**: Specifies that the program will automatically run the next time a user logs on to the client.
     * **Logoff**: Specifies that the program will automatically run the next time a user logs off the client.
 
-**To add a mandatory assignment**
+## Add a mandatory assignment
 
--   Click **Add**. The **Mandatory Schedule** dialog box opens.
-
--   To schedule the advertisement at a specified date and time select
-    **Use the following schedule**.
-
-    1.  To schedule the event, click the ellipsis **(…)** button to open
-        the **Date Time Selection** dialog. Modify the date and time
-        according to your needs, and then click **OK**.
-
-    2.  If you want all clients to run the program at the same time
-        regardless of time zone, select the **UTC** check box.
-
-    3.  If you want the advertisement to run on a recurring schedule,
-        select one of the options: **Weekly**, **Monthly** or **Custom
-        Interval** and set the properties according to your needs.
-
--   To run the advertisement after an event, select **Assign immediately
-    after this event**. Select the applicable option **As soon as
-    possible**, **Logoff**, or **Logon**.
-
--   Click **OK** to save the schedule.
+1. Click **Add**. The **Mandatory Schedule** dialog box opens.
+2. To schedule the advertisement at a specified date and time select **Use the following schedule**.
+3. To schedule the event, click the ellipsis **(…)** button to open the **Date Time Selection** dialog. Modify the date and time according to your needs, and then click **OK**.
+4. If you want all clients to run the program at the same time regardless of time zone, select the **UTC** check box.
+5. If you want the advertisement to run on a recurring schedule, select one of the options: **Weekly**, **Monthly** or **Custom Interval** and set the properties according to your needs.
+6. To run the advertisement after an event, select **Assign immediately after this event**. Select the applicable option **As soon as possible**, **Logoff**, or **Logon**.
+7. Click **OK** to save the schedule.
 
 > [!Note]
 > You can create multiple mandatory assignments.
 
-**Run Behavior Tab**
+## Run Behavior tab
 
 This tab contains the properties that determine how the activity handles
 multi-value published data and what notifications will be sent if the
 activity fails or runs for an excessive period of time.
 
-**Returned Data Behavior**
+## Returned data behavior
 
 The “Get” activities retrieve information from another activity or
 outside source, and can return one or more values in the published data.
@@ -169,7 +149,7 @@ The activity will produce a new set of data every time it runs. The
 **Flatten** feature does not flatten data across multiple executions of
 the same activity.
 
-**Event Notifications**
+## Event notifications
 
 Some activities are expected to take a limited amount of time to
 complete. If they do not complete within that time they may be stalled
@@ -188,7 +168,7 @@ run or fails to run**
 2.  Select the **Report if activity fails to run** check box to generate
     run failure notifications.
 
-**Published Data**
+## Published data
 
 Published data is the foundation of a working runbook. It is the data
 produced as a result of the actions of an activity. This data is
@@ -201,7 +181,7 @@ An activity can only subscribe to published data from the activities
 that are linked before it in the runbook. You can use published data to
 automatically populate the property values needed by activities.
 
-**To use published data**
+To use published data:
 
 1.  Right-click the property value box, click **Subscribe**, and then
     click **Published Data**.

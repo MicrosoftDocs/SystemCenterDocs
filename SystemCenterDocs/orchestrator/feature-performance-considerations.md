@@ -1,22 +1,17 @@
 ---
-title: Feature Performance Considerations
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 811115ff-34bf-4c10-9cac-709d72b669c9
-author: cfreemanwa
-ms.author: raynew
-ms.date: 10/12/2016
+title: Feature performance considerations
+description: Provides performance guidance for System Center - Orchestra
+author: rayne-wiselman
 manager: carmonm
+ms.date: 01/17/2018
+ms.prod: system-center-threshold
+ms.technology: orchestrator
+ms.topic: article
+ms.author: raynew
 ---
 
-# Feature Performance Considerations
 
->Apples To: System Center 2016 - Orchestrator
+# Feature performance considerations
 
 Despite the great deal of variance in their design and visual complexity, runbooks are essentially very simple. Runbooks all essentially do three things: Run activities, manage published data, and branch.  
 
@@ -33,8 +28,8 @@ The data produced by a given activity can contain data elements that are single 
 
 Branching is a fundamental concept for Orchestrator. A given runbook activity will create a branch if it is the origin of two or more links whose filter conditions indicate there is data to pass to the activity at the end of the link. When a runbook is first invoked it consists of a single thread. When this thread encounters a runbook activity whose links require a branch, additional threads are created, one for each branch. Each thread takes as input the published data from the activity that created the branch. This data is correlated back to the prior activities in the runbook \(hence the ability to subscribe to published data from prior activities\).  
 
-The operator experience is based on two components: The Orchestration Console and the Web Service. The Orchestration Console is a Silverlight application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Hence the Web Service and Orchestration Console are very dependent on the performance of the Orchestrator 2016 database.  
+The operator experience is based on two components: The Orchestration Console and the Web Service. The Orchestration Console is a Silverlight application that depends on the Web Service for its connection to the Orchestrator database. The Web Service is an IIS application that connects to the database. Hence the Web Service and Orchestration Console are very dependent on the performance of the Orchestrator database.  
 
-Parts of the Orchestrator 2016 database are new to the product and directly support the Web Service. However, parts of the Web Service depend on the legacy Opalis 6.3 database structure.  
+Parts of the Orchestrator database are new to the product and directly support the Web Service. However, parts of the Web Service depend on the legacy Opalis 6.3 database structure.  
 
 Additionally, while the Orchestration Console is dependent on the Web Service, it also has logic unique to its function as a user interface that will have its own performance characteristics.  

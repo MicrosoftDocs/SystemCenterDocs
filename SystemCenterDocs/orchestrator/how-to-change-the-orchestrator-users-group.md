@@ -1,21 +1,16 @@
 ---
-title: How to Change the Orchestrator Users Group
-description: Describes how to change the Orchestrator users group in a System Center 2016 - Orchestrator environment.
-ms.custom: na
-ms.date: 4/25/2017
+title: Modify the Orchestrator users group
+description: Describes how to change the users group for System Center - Orchestrator.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: a1d182f3-b80b-4414-90e6-4c0a10d62f60
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
 
-# How to Change the Orchestrator Users Group
+# Modify the Orchestrator users group
 
 You might want to change the Orchestrator users group after installation because of changes in your environment. For example, you might want to use a local group during installation, and then change it to a domain account later.  
 

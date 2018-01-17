@@ -14,7 +14,10 @@ monikerRange: 'sc-orch-1711'
 ---
 
 # What's new in System Center Orchestrator preview 1711
-This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/en-us/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
-[Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016) for more information about how to set up, configure and run your environment to use TLS 1.2.
+This release of System Center - Orchestrator contains:
+
+- Bug fixes included in System Center - Orchestra 2016 [Update Rollup 4](https://support.microsoft.com/en-us/help/4047355/update-rollup-4-for-system-center-2016-orchestrator).
+- Support for the TLS 1.2 protocol. [Learn more](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+
 
 This build should be used for validating the SCO integration scenarios with other System Center components included in the 1711 preview.

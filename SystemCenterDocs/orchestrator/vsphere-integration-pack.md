@@ -1,40 +1,34 @@
 ---
-title: VMware vSphere Integration Pack for System Center 2016 - Orchestrator
-description: The integration pack for VMware vSphere is an add-on for System Center 2016 - Orchestrator that assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
-ms.custom: na
-ms.date: 12/02/2016
+title: VMware vSphere integration pack for System Center - Orchestrator
+description: This article describes the integration pack for VMware vSphere in System Center - Orchestrator.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 9d2764e2-9c2d-48e7-8798-978fd7b047f1
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# VMware vSphere Integration Pack for System Center 2016 - Orchestrator
+# VMware vSphere integration pack
 
-The integration pack for VMware vSphere is an add-on for System Center 2016 - Orchestrator that assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
+The integration pack for VMware vSphere is an add-on for System Center - Orchestrator, It assists you in automating actions in VMware vSphere, enabling full management of your virtualized computing infrastructure.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+[Learn more](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx) about privacy in Orchestrator.
 
-## Downloading the Integration Pack
+## Download the pack
 
-To download this integration pack, see [HP Service Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54099).
+Download the pack from the [download center](https://www.microsoft.com/en-us/download/details.aspx?id=54099).
 
-## Registering and Deploying the Integration Pack
+## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-## Deploying the Integration Pack
+## Deploy the Integration Pack
 
-See [Deploying the VMWare VSphere Integration Pack](vsphere-integration-pack.md)
+Learn about [deploying the VMWare VSphere Integration Pack](vsphere-integration-pack.md)
 
 
-## Known Issues
+## Known issues
 
 You might see the following issues when using this VMware vSphere integration pack.
 

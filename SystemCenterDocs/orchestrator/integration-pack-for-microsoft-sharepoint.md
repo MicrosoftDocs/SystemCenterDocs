@@ -1,49 +1,44 @@
 ---
-title: System Center Integration Pack for Microsoft SharePoint
-description: Integration packs are add-ons for Orchestrator, a component of Microsoft System Center 2016, that helps you optimize IT operations across heterogeneous environments.
-ms.custom: na
-ms.date: 4/25/2017
+title: System Center integration pack for SharePoint
+description: This article describes the SharePoint integration pack for System Center - Orchestrator. 
+ms.date:01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: e9d99612-366f-47be-aa7b-39713095e285
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
 
-# System Center Integration Pack for Microsoft SharePoint
+# Integration pack for \ SharePoint
 
-Integration packs are add-ons for Orchestrator, a component of Microsoft System Center 2016, that helps you optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by non-Microsoft products.
+Integration packs are add-ons for System Center - Orchestrator. They help you to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by non-Microsoft products.
 
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint, for example, to create list items, to upload and download documents, and to monitor a list for changes.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience that you want. For more information, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+[Learn more](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).about Orchestrator privacy.
+
 
 ## System Requirements
 
-The integration pack for SharePoint requires the following software to be installed and configured before you implement the integration. For more information about installing and configuring System Center 2016 and the Integration Pack for SharePoint, refer to the respective product documentation.
+The integration pack for SharePoint requires the following software to be installed and configured before you implement the integration. 
 
--   System Center 2016 Orchestrator
+-   System Center - Orchestrator
 -   Microsoft .NET Framework 4
--   Microsoft SharePoint 2013
+-   Microsoft SharePoint
 
-## Downloading the Integration Pack
+## Download the pack
 
-To download this integration pack, see the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=309210).
+Download the pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=309210).
 
-## Registering and Deploying the Integration Pack
+## Register and deploy the integration pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures about how to install integration packs, see [How to install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. Learn about [installing the pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
 
-## Configuring the SharePoint Integration Pack Connections
+## Configure the pack connections
 
 A connection establishes a reusable link between Orchestrator and a SharePoint site. You can create as many connections as you require to specify links to multiple sites. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-#### To set up an SharePoint connection
 
 1.  In the **Orchestrator Runbook Designer**, click **Options**, and then click **Microsoft SharePoint.** The **Microsoft SharePoint** dialog box appears.
 2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.

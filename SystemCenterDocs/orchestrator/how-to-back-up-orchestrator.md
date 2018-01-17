@@ -1,21 +1,16 @@
 ---
-title: How to Back up Orchestrator
-description: Describes how to backup a System Center 2016 - Orchestrator environment.
-ms.custom: na
-ms.date: 4/25/2017
+title: Back up Orchestrator
+description: Describes how to backup a System Center - Orchestrator environment.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 44c3460d-4171-4838-84c7-a9c3bd75b28a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
 
-# How to back up Orchestrator
+# Back up Orchestrator
 
 A complete backup of an Orchestrator environment consists of the following:  
 
@@ -23,7 +18,7 @@ A complete backup of an Orchestrator environment consists of the following:
 -   File backup of the Orchestrator management server.  
 -   File backup of each Runbook server and Orchestrator web server.  
 
-System Center 2016 - Orchestrator supports Volume Shadow copy Service \(VSS\) for backup and restore with System Center 2016 - Data Protection Manager (DPM). VSS is a framework that allows volume backups to be performed while an application continues to run.  
+Orchestrator supports Volume Shadow copy Service \(VSS\) for backup and restore with System Center - Data Protection Manager (DPM). VSS is a framework that allows volume backups to be performed while an application continues to run.  
 
 ## Registering Orchestrator with VSS  
 The **SCOExpressWriter** command\-line utility registers an Orchestrator database as a component associated with the Orchestrator management server. This association instructs DPM to back up the Orchestrator database when it performs a backup of the management server. Without this registration DPM must perform an individual backup of each component.  
@@ -47,4 +42,4 @@ The Orchestrator database is a standard SQL Server database that is supported by
 
 ## Next steps
 
-Learn more about recovering the Orchestrator database[How to recover a database](how-to-recover-a-database.md).
+Learn more about [recovering a database](how-to-recover-a-database.md).
