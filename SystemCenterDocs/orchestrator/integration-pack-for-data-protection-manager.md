@@ -10,9 +10,9 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# Integration pack for System Center DPM
+# Integration pack for System Center - DPM
 
-The integration pack for System Center - Data Protection Manager (DPM) is an add-in for System Center - Orchestrator, that enables you to automate the protection of physical and virtual server resources. You can use the activities in this integration pack to create runbooks that provide the following:
+The integration pack for System Center - Data Protection Manager (DPM) is an add-in for System Center - Orchestrator. The pack enables you to automate the protection of physical and virtual server resources. You can use the activities in this integration pack to create runbooks that provide the following:
 
 -   Automated virtual machine protection and recovery
 -   Automated SharePoint farm protection and recovery
@@ -24,41 +24,35 @@ The integration pack for System Center - Data Protection Manager (DPM) is an add
 
 ## System requirements
 
-The DPM integration pack requires the following software to be installed and configured before you implement the integration. 
+The DPM integration pack requires the following software to be installed and configured, before you implement the integration. 
 
 - System Center - Orchestrator
 - System Center - Data Protection Manager (DPM)
--  Windows Management Framework
+- Windows Management Framework
 
 ## Download the integration pack
 
-Download from the [System Center - Orchestrator Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+Download the pack from [System Center - Orchestrator Component Add-ons and Extensions](https://www.microsoft.com/download/details.aspx?id=54098).
 
 ## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack) about installing an integration pack.
 
 ## Windows Management Framework
 
-The DPM integration pack uses Windows PowerShell remoting on the Runbook Designer and on the Runbook Server to run commands on the DPM server. 
-
-The WinRM service is started automatically, but by default, no WinRM listener is configured. Even if the WinRM service is running, WS-Management protocol messages that request data cannot be received or sent.
+The DPM integration pack uses Windows PowerShell remoting on the Runbook Designer, and on the Runbook Server, to run commands on the DPM server. The WinRM service is started automatically. By default, no WinRM listener is configured. Even if the WinRM service is running, WS-Management protocol messages that request data can't be received or sent.
 
 
 
 ## Enable Windows Remote Management trusted hosts
 
-1.  On the Orchestrator computer, open the **Local Group Policy Editor**. To do this, click **Start**, click **Run**, type **gpedit.msc**, and then click **OK**.
-2.  In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration**, **Administrative Templates**, **Windows Components**, **Windows Remote Management (WinRM)**, **WinRM Client**, and then double-click **Trusted Hosts**.
-3.  Select **Enabled**. Add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Click **OK**.
+1.  On the Orchestrator computer, click **Start** >  **Run**. Then type **gpedit.msc**, and click  **OK** to open the **Local Group Policy Editor**. 
+2.  In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Remote Management (WinRM)** > **WinRM Client**. Double-click **Trusted Hosts**.
+3.  Select **Enabled**, and add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Then, click **OK**.
 
 ## Set the execution policy
 
-The execution policy in Windows PowerShell determines which scripts must be digitally signed before they will run. By default, the execution policy is set to **Restricted.** This prohibits loading any configuration files or running any scripts.
-
-To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned** using the following procedure..
-
-
+The execution policy in Windows PowerShell determines which scripts must be digitally signed before they run. By default, the execution policy is set to **Restricted.** This prohibits loading any configuration files or running any scripts. To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned**, as follows:
 
 1.  Open a Windows PowerShell (x86) console as an administrator.
 
@@ -66,13 +60,13 @@ To run the scripts in this integration pack, you must set the execution policy t
 
 3.  When prompted, type **Y** and press Enter.
 
-For more information abouthow to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/?linkID=113394).
+Learn more about [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/?linkID=113394).
 
 ## Configure remote connection settings
 
-This integration pack uses Windows PowerShell remote commands to communicate with the DPM server, regardless of whether the server is remote or local. If you have not already done so, you must configure the DPM server and the Orchestrator client computer to receive Windows PowerShell remote commands that are sent by the Orchestrator server.
+This integration pack uses Windows PowerShell remote commands to communicate with the DPM server, regardless of whether the server is remote or local. You must configure the DPM server and the Orchestrator client computer, to receive Windows PowerShell remote commands that are sent by the Orchestrator server.
 
-Run the following command only one time on each computer that will receive commands. You do not have to run it on computers that only send commands. Because the command activates listeners, we recommend that you run it only where it is needed.
+Run the following command once on each computer that will receive commands. You don't need to run it on computers that only send commands. Because the command activates listeners, we recommend that you run it only where it is needed.
 
 
 1.  Open a Windows PowerShell (x86) console as an administrator.
@@ -88,8 +82,7 @@ WM-Management also provides provides a setting for MaxConnections (regardless of
 
 ## Configure connections
 
-Connections provide a way for you to define the way that the DPM Activities will connect to the DPM server(s) in your infrastructure. You must define at least one connection in order to use the DPM activities, but you can define as many as you need in order to connect to different DPM servers or utilize different connection settings or credentials.
-
+Connections provide a way for you to define how DPM Activities connect to the DPM servers in your infrastructure. You must define at least one connection, in order to use the DPM activities. You can define as many as you need, to connect to different DPM servers, or to use different connection settings or credentials.
 
 
 1.  In the Runbook Designer, click the **Options** menu, and then select DPM.
