@@ -1,39 +1,33 @@
 ---
-title: How to View Orchestrator Data by Using PowerPivot
-description: Describes how to use PowerPivot for Excel to analyze operations data in System Center 20106 - Orchestrator.
-ms.custom: na
-ms.date: 4/25/2017
+title: View Orchestrator data with PowerPivot
+description: Describes how to use PowerPivot for Excel to analyze operations data in System Center  - Orchestrator.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 7707e8ac-d885-4453-b72f-14f208eaf531
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
 
-# How to View Orchestrator Data by Using PowerPivot
+# View Orchestrator data usingsing PowerPivot
 
-You can use Microsoft PowerPivot for Microsoft Excel to create reports for System Center 2016 - Orchestrator. You configure PowerPivot to use the Orchestrator web service as a data feed, filter the Source Tables for the data you want to use, and import the tables into the PowerPivot worksheet. PowerPivot lets you create relationships between tables, and manipulate the data to fit your requirements. By using the PivotTable feature in PowerPivot, you can generate a report that uses any of the data contained within the PowerPivot workbook.  
+You can use Microsoft PowerPivot for Microsoft Excel to create reports for System Center - Orchestrator. You configure PowerPivot to use the Orchestrator web service as a data feed, filter the Source Tables for the data you want to use, and import the tables into the PowerPivot worksheet. PowerPivot lets you create relationships between tables, and manipulate the data to fit your requirements. By using the PivotTable feature in PowerPivot, you can generate a report that uses any of the data contained within the PowerPivot workbook.  
 
-## Connect the Orchestrator web service to PowerPivot for Excel  
-You must install PowerPivot for Excel to enable the product.  
 
-PowerPivot for Excel requires Excel 2010 \(64\-bit or 32\-bit\).  
 
-### To install PowerPivot  
+## Install PowerPivot  
 
--  Follow the instructions found at [Install PowerPivot for Excel](https://go.microsoft.com/fwlink/p/?LinkID=184678).  
+You must install PowerPivot for Excel to enable the product.  [Learn more](https://go.microsoft.com/fwlink/p/?LinkID=184678).  
+
+
+## Create a connection to an Orchestrator feed  
 
 Use PowerPivot to configure a connection to Orchestrator web service. Orchestrator uses the Open Data Protocol \(OData\), which PowerPivot can consume.  
 
 > [!NOTE]  
 > The OData provider in PowerPivot does not support the data contained in the Runbook Diagram box. Attempts to add a Runbook Diagram table will fail.  
 
-#### To create a connection to an Orchestrator feed  
 
 1.  Open Excel.  
 2.  Click the **PowerPivot** tab above the ribbon.  
@@ -59,13 +53,13 @@ Use PowerPivot to configure a connection to Orchestrator web service. Orchestrat
 11. Click **Finish**. The data is imported.  
 12. Click **Close**.  
 
-## Create a Summary of Runbook Results  
+## Create a summary of runbook results  
 The following procedure describes the steps to create a pivot table containing a list of all runbooks and the count of results, grouped by the runbook server that ran the runbook instance.  
 
 > [!NOTE]  
 > For this example, the orchestration database must contain results from at least one runbook for PowerPivot to import a table.  
 
-### To create a connection to the data&nbsp;feed  
+## Create a connection to the data&nbsp;feed  
 
 1.  Open Excel.  
 2.  Click the **PowerPivot** tab above the ribbon.  
@@ -77,7 +71,7 @@ The following procedure describes the steps to create a pivot table containing a
 8.  Click **Finish**. The data is imported.  
 9. Click **Close**.  
 
-### To create relationships in PowerPivot  
+## Create relationships in PowerPivot  
 
 1.  In the **PowerPivot for Excel** window, select the **RunbookInstance** tab.  
 2.  Right-click the header of the **RunbookId** column to select **Create Relationship**.  
@@ -85,7 +79,7 @@ The following procedure describes the steps to create a pivot table containing a
 4.  Right-click the header of the **RunbookServerId** column to select **Create Relationship**.  
 5.  In the **Related Lookup Table** list, select **RunbookServers**, and in the **Related Lookup Column** list, select **Id**, and then click **Create**.  
 
-### To create a pivot table  
+## Create a pivot table  
 
 1.  In the **PowerPivot for Excel** window, click **PivotTable** on the ribbon, and select **PivotTable**.  
 2.  In the **Create PivotTable** dialog box, select **New Worksheet**, and then click **OK**.  
@@ -97,7 +91,6 @@ The following procedure describes the steps to create a pivot table containing a
 
 You can now modify the default labels and format your table for presentation.  
 
-For more information about the workflow of a runbook and an explanation of runbook jobs and runbook instances, see [Orchestrator Architecture](learn-about-orchestrator.md).  
-
-For more information about PowerPivot for Excel, see [Introducing PowerPivot for Excel](https://go.microsoft.com/fwlink/p/?LinkID=187006).  
+- [Learn more ](learn-about-orchestrator.md) about the runbook workflows and jobs.
+- [Learn more ](https://go.microsoft.com/fwlink/p/?LinkID=187006) about PowerPivot for Excel.
 

@@ -1,21 +1,17 @@
 ---
-title: Clone Linux VM Activity
-description: The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template.
+title: Clone Linux VM activity
+description: The articles describes the Clone Linux VM activity,  to create a copy of an existing Linux virtual machine or template in a runbook.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: fb9a0b61-045c-4d60-892b-63e2c228b546
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# Clone Linux VM Activity
+
+# Clone Linux VM activity
 
 The Clone Linux VM activity is used in a runbook to create a copy of an existing Linux virtual machine or template. This can be used to create new virtual machines quickly and easily using existing virtual machines or templates as models.
 
@@ -26,7 +22,7 @@ The activity publishes all of the data from the required and optional properties
 With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
 
 >[!IMPORTANT]
->For System Center 2016: To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties can support a comma-separated list of values. Each list must contain the same number of values. The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
+>To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties can support a comma-separated list of values. Each list must contain the same number of values. The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
 For example, to assign network details to three network adapters, use the following format:
 - IP Address = 192.168.0.2, DHCP, 10.0.0.3
 - Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
@@ -38,7 +34,7 @@ For example, to assign network details to three network adapters, use the follow
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
 | Clone Task Timeout in seconds | The number of seconds to wait for the clone operation to complete. After the timeout has been reached the activity will fail if the clone operation has not completed.   | Integer   | No   |
-| Customize   | Indicates whether the virtual machine guest settings are customized after the virtual machine is cloned. For System Center 2016, if set to False, guest customizations (IP address, DNS name, etc) will not be applied. | Boolean   | Yes   |
+| Customize   | Indicates whether the virtual machine guest settings are customized after the virtual machine is cloned. If set to False, guest customizations (IP address, DNS name, etc) will not be applied. | Boolean   | Yes   |
 | Datastore Path   | The data store name for the cloned virtual machine.   | String   | Yes   |
 | Folder Path   | The path to the folder where the cloned virtual machine will be saved.   | String   | Yes   |
 | Host System Path   | The path to the host system of the cloned virtual machine.   | String   | Yes   |
@@ -53,7 +49,6 @@ For example, to assign network details to three network adapters, use the follow
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
-| DHCP (not available in System Center 2016) | Indicates whether to use DHCP for assigning an IP address to the cloned virtual machine.   | Boolean   | Yes   |
 | DNS Name   | The Hostname or Short DNS Name with no spaces or periods (.).   | String   | No   |
 | DNS Server   | The name of the DNS server that will resolve name requests for the clone virtual machine.   | String   | No   |
 | Domain Name   | The name of the domain that the cloned virtual machine will belong to.   | String   | No   |
@@ -69,7 +64,6 @@ For example, to assign network details to three network adapters, use the follow
 | Clone Task Timeout in seconds   | The timeout setting for the clone operation.   | Integer   |
 | Customize   | Indicates whether the virtual machine computer settings were customized after cloning.   | Boolean   |
 | Datastore Path   | The path of the data store.   | String   |
-| DHCP (not available in System Center 2016) | Indicates which type of IP address allocation the cloned virtual machine uses: DHCP or static.   | Boolean   |
 | DNS Name   | The name of the virtual machine in the domain naming service.   | String   |
 | DNS Server   | The name of the DNS server.   | String   |
 | Domain Name   | The name of the domain that the cloned virtual machine uses.   | String   |

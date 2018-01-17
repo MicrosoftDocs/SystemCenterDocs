@@ -1,29 +1,23 @@
 ---
-title: System Center 2016 Operations Manager activities
-description: The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Operations Manager.
-ms.custom: na
-ms.date: 12/02/2016
+title: Operations Manager activities in the System Center - Orchestra integration pack
+description: This article describes all activities in the System Center integration pack for System Center - Operations Manager.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 021c3d3a-459d-466d-b193-e695289554fb
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# System Center 2016 Operations Manager activities
+# Operations Manager integration pack activities
 
-The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Operations Manager. Links to this section are included in the configuration instructions for each activity.
+The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Operations Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
-#### To configure the properties for an activity
+Configure activity properties as follows:
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
 
@@ -39,11 +33,11 @@ This tab contains the **Name** and **Description** properties for the activity. 
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the **Server** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the Operations Manager management server.
 
-#### To configure the Configuration Name property
+### Set the Configuration Name property
 
 1.  Click the ellipsis **(...)** button next to the **Connection** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the System Center 2016 Operations Manager Connections](https://technet.microsoft.com/en-us/library/1fdff9ee-5e37-4523-8011-afdddf14ff37#BKMK_ConfigOMConnect).
+2.  Select the applicable connection name. 
 
 ### Filter behavior
 
@@ -68,7 +62,7 @@ The Monitor and Get activities use filters to determine the values that will inv
 
 This tab contains the properties that determine how the activity handles multi-value published data and what notifications will be sent if the activity fails or runs for an excessive period of time.
 
-### Returned Data behavior
+### Returned data behavior
 
 Get activities retrieve information from another activity or outside source, and can return one or more values in the published data. For example, when you use the Get Monitor activity, the data output from that activity might be a list of monitors that belong to the specified collection.
 
@@ -84,7 +78,9 @@ The activity will produce a new set of data every time it runs. The **Flatten** 
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or fails to run
+### Set a notification
+
+To be notified when the activity takes longer than a specified time to run or fails to run:
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
@@ -96,7 +92,7 @@ Published data is the foundation of a working runbook. It is the data produced a
 
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+Use published data as follows:
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
 
@@ -108,7 +104,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 ## Activities
 
-The Operations Manager Integration Pack adds the **SC 2016 Operations Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
+The Operations Manager Integration Pack adds the Operations Manager category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
 - [Create Alert](create-alert.md)
 - [Get Alert](get-alert.md)

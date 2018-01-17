@@ -1,20 +1,19 @@
 ---
-ms.assetid: 46cc3ac5-8ed0-4007-a35b-cf13d04a2806
-title: System Requirements for System Center 2016 - Orchestrator
+title: System requirements for System Center - Orchestrator
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of your Orchestrator deployment.
-ms.author: raynew
-manager: CarmonM
-ms.date: 1/4/2017
-ms.custom: na
-author: CFreemanwa
+author: rayne-wiselman
+manager: carmon
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
 ms.topic: article
+ms-author: raynew
 ---
 
-# System requirements for System Center 2016 - Orchestrator
 
-The topic describes general performance and scalability guidance for System Center 2016 - Orchestrator and recommends hardware configurations for a variety of workloads. Because System Center 2016 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+# System requirements for System Center - Orchestrator
+
+The topic describes general performance and scalability guidance for System Center - Orchestrator and recommends hardware configurations for a variety of workloads. Because System Center is built to be flexible and scalable, the actual hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 

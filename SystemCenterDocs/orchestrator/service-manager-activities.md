@@ -1,23 +1,17 @@
 ---
 title: System Center Service Manager activities
-description: The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Service Manager.
-ms.custom: na
-ms.date: 12/02/2016
+description: This article describes all activities in the System Center Integration Pack for System Center - Service Manager.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 3f59e9b8-405e-48d9-a113-aac3ed05fe49
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# System Center Service Manager activities
+# Service Manager activities
 
-The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Service Manager. Links to this section are included in the configuration instructions for each activity.
+The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Service Manager. Links to this section are included in the configuration instructions for each activity.
 
 ## Activity properties
 
@@ -43,7 +37,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Configuration** field.
 
-2.  Select the applicable configuration. Items in the list are created as described in [Configuring the System Center 2016 Service Manager Connections](https://technet.microsoft.com/library/8bc5a1db-ec7b-4156-80c1-756c557be20b#BKMK_ConfigServiceManagerConnections).
+2.  Select the applicable configuration. 
 
 3.  Click **OK**.
 
@@ -125,7 +119,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 ## Activities
 
-The Service Manager Integration Pack adds the **SC 2016 Service Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
+The Service Manager Integration Pack adds the Service Manager category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
 - [Create Change with Template](create-change-with-template.md)
 - [Create Incident with Template](create-incident-with-template.md)

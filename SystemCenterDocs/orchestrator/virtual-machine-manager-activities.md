@@ -1,29 +1,23 @@
 ---
-title: System Center Virtual Machine Manager Activities
-description: The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Virtual Machine Manager.
-ms.custom: na
-ms.date: 12/02/2016
+title: System Center VMM activities
+description: This article describes all activities in the System Center integration iack for System Center - VMM.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: 33f8f179-021e-497e-a56d-276c63aa23fb
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# System Center Virtual Machine Manager Activities
+# System Center VMM Activities
 
-The following configuration instructions apply to all activities in the System Center Integration Pack for System Center 2016 Virtual Machine Manager. Links to this section are included in the configuration instructions for each activity.
+The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Virtual Machine Manager (VMM). 
 
-## Activity Properties
+## Activity properties
 
 Each activity has a set of required or optional properties that define the configuration of that activity. This includes how it connects to other activities or how the activity performs its actions. You can view or modify activity properties when the activity is placed in the runbook window.
 
-#### To configure the properties for an activity
+To configure the properties for an activity:
 
 1.  Double-click the activity. Alternatively, you can right-click the activity, and then click **Properties**.
 
@@ -31,22 +25,22 @@ Each activity has a set of required or optional properties that define the confi
 
 In the activity properties dialog box, several tabs along the left side provide access to general and specific settings for the activity. The number of available tabs for object properties differs between different activities.
 
-## General Tab
+## General tab
 
 
 This tab contains the **Name** and **Description** properties for the activity. By default, the **Name** of the activity is the same as its activity type, and the **Description** is blank. You can modify these properties to create more descriptive names or provide detailed descriptions of the actions of the activity.
 
-## Properties Tab
+## Properties tab
 
 This tab contains properties that are specific to the activity. All activities in this integration pack have the **Configuration Name** property at the top of the **Properties** or **Filters** tab. This property is used to specify the connection to the VMM server.
 
-#### To configure the Configuration Name property
+### Set the Configuration Name property
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
 2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the System Center 2016 Virtual Machine Manager Connections](https://technet.microsoft.com/en-us/library/25d52eb0-ac74-4182-9811-b926b685cb2b#BKMK_ConfigureVMMConnections).
 
-### Filter Behavior
+### Filter behavior
 
 The Monitor and Get activities use filters to determine the values that will invoke a runbook or retrieve activities. Property values of potential candidates are compared to the values of the filters to determine if they meet the criteria. When matching against values, you select one of the available methods of comparison. An option is provided to either match or not match the filter using each method. For example, the "Does not" version of a method finds messages that do not match the filter to trigger the policy.
 
@@ -65,11 +59,11 @@ The Monitor and Get activities use filters to determine the values that will inv
 -   **After**: the property of the message is after the date/time specified in the filter.
 -   **Before**: the property of the message is before the date/time specified in the filter.
 
-## Run Behavior Tab
+## Run Behavior tab
 
 This tab contains the properties that determine how the activity handles multi-value published data and what notifications will be sent if the activity fails or runs for an excessive period of time.
 
-### Multi-Value Published Data Behavior
+### Multi-Value Published Data behavior
 
 Get activities retrieve information from another activity or outside source, and can return one or more values in the published data. For example, when you use the Get VM activity, the data output from that activity might be a list of computers that belong to the specified collection.
 
@@ -81,23 +75,23 @@ By default, the data from the Get activity will be passed on as multiple individ
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 
-## Event Notifications
+## Event notifications
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-#### To be notified when the activity takes longer than a specified time to run or fails to run
+To be notified when the activity takes longer than a specified time to run or fails to run:
 
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-## Published Data
+## Published data
 
 Published data is the foundation of a working runbook. It is the data produced as a result of the actions of an activity. This data is published to an internal data bus that is unique for each runbook. Subsequent activities in the runbook can subscribe to this data and use it in their configuration. Link conditions also use this information to add decision-making capabilities to runbooks.
 
 An activity can only subscribe to data from the activities that are linked before it in the runbook. You can use published data to automatically populate the property values needed by activities.
 
-#### To use published data
+To use published data:
 
 1.  Right-click the property value box, click **Subscribe**, and then click **Published Data**.
 
@@ -109,7 +103,7 @@ For a list of the data elements published by each activity, see the **Published 
 
 ## Activities
 
-The VMM integration pack adds the **SC 2016 Virtual Machine Manager** category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
+The VMM integration pack adds the Virtual Machine Manager category to the **Activities** pane in the Runbook Designer. This category contains the following activities:
 
 [Create Checkpoint](create-checkpoint.md)
 
