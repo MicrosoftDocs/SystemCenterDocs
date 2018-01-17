@@ -852,24 +852,6 @@ description: get-from-content-team
                         <a href="#more-all"></a>
                         <ul id="more-all" class="cardsF">
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/media/common/i_reference.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>OMS documentation</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -957,6 +939,25 @@ description: get-from-content-team
                                 </div>
                             </li>
                             <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="/media/common/i_blog.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>System Center UserVoice Channels</h3>
+                                                <p><a href="https://systemcentervmm.uservoice.com/forums/280803-general-vmm-feedback">VMM UserVoice</a></p>
+                                                <p><a href="https://systemcenterom.uservoice.com/forums/293064-general-operations-manager-feedback">SCOM UserVoice</a></p>
+                                                <p><a href="https://feedback.azure.com/forums/258995-azure-backup-and-scdpm">DPM UserVoice</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
                                 <a href="https://mva.microsoft.com/product-training/system-center#!lang=1033">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -974,6 +975,24 @@ description: get-from-content-team
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-overview">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>OMS documentation</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                          
                             <li>
                                 <a href="https://channel9.msdn.com/Blogs/hybrid-it-management">
                                     <div class="cardSize">
