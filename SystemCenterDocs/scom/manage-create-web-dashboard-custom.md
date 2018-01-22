@@ -5,10 +5,10 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/6/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -16,12 +16,85 @@ ms.topic: article
 # How create a dashboard with the Custom widget in the Web console
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a  dashboard in the new HTML5 Web console.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
 
-## Script structure  
+## Script structure 
 A Custom Widget script has three major sections:
 
-1. Defining the API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, and performance data.
+1. Defining the API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data. 
 2. Specify business logic to identify the results to present in the visualization, such as identifying a class or group, conditions such as severity, health state, or a specific performance object instance.
-3. Third party visualization are open source libraries hosted on cloudflare.com that are required to render depending on the chart type selected.   
+3. Third party visualization, which are open source libraries hosted on cloudflare.com that are required to render, depending on the chart type selected.   
+
+### Widget properties
+In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://<servername>/operationsmanager/data/<dataitem>* and value for **dataitem** is one of the following:
+
+* *alert* represents a monitoring alert 
+* *state* represents monitoring health state data
+* *performance* represents monitoring performance data 
+
+```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var criticalCounter = 0;
+        var informationCounter = 0;
+        var warningCounter = 0;
+
+        window.onload = function () {
+            $.ajax({
+                url: "/OperationsManager/data/alert",
+                type: "POST",
+```
+
+To scope the monitoring data for each data type, you can select a class to see all instances of that class, or to see only a subset of objects of the selected class, you can also include a group.  For example, to specify all objects of class Windows Server DC Computer, you would modify the property value for *classId*. 
+
+>[!NOTE]
+>This is only applicable to state data, not alert or performance.  For performance data you specify a group or monitored object.
+
+```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var criticalCounter = 0;
+        var informationCounter = 0;
+        var warningCounter = 0;
+
+        window.onload = function () {
+            $.ajax({
+                url: "/OperationsManager/data/alert",
+                type: "POST",
+                data: {
+                    "classId": "Microsoft.Windows.Library!Micr…ft.Windows.Server.DC.Computer",
+                    "objectIds": { },
+```
+
+To specify a group that contains a subset of objects of the same class specified for the property *classId*, modify the value *objectIds* and specify the GUID of the group. The value must be in quotes.  
+
+```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var criticalCounter = 0;
+        var informationCounter = 0;
+        var warningCounter = 0;
+
+        window.onload = function () {
+            $.ajax({
+                url: "/OperationsManager/data/alert",
+                type: "POST",
+                data: {
+                    "classId": null,
+                    "objectIds": { "3c8ac4f3-475e-44dd-4163-8a97af363705": -1 },
+```
+
+Once you have specified the target class and optionally a group to further scope the results, next you specify the criteria.  
 
 ## Widget examples
 The widget supports rendering monitoring data in the following chart types:

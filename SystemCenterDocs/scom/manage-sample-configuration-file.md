@@ -1,20 +1,20 @@
 ---
 ms.assetid: 
 title:  Sample configuration file for collecting Linux log files
-description: This article describes a sample configuration file for collecting Linux log files on Linux in System Center Preview 1711 Operations Manager.    
+description: This article describes a sample configuration file for collecting Linux log files on Linux in System Center Operations Manager 1801.    
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/3/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Sample configuration file for collecting Linux log files
-This is a sample configuration file for collecting log files from Linux with System Center Preview 1711 - Operations Manager.
+This is a sample configuration file for collecting log files from Linux with System Center Operations Manager version 1801.
 
     # Have a source directive for each log file source file.
     <source>
@@ -219,3 +219,7 @@ This is a sample configuration file for collecting log files from Linux with Sys
         max_retry_wait 9m
 
     </match>
+
+## Next steps
+
+To configure agents to collect log files for monitoring using the configuration file, see [Copy configuration file to agent](manage-linux-logfiles.md#copy-configuration-file-to-agent).

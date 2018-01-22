@@ -1,22 +1,20 @@
 ---
 ms.assetid: ac2e1b48-2f24-44c1-8d06-9405b2db9c26
-title: How to Upgrade a Web Console to System Center 2016 - Operations Manager
-description: This article describes how to upgrade a Web console to Operations Manager 2016.
+title: How to Upgrade a Web Console
+description: This article describes how to upgrade a Web console to the latest release of System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 01/15/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade a Web Console to System Center 2016 - Operations Manager
+# How to upgrade a Web console
 
-If you have a stand-alone System Center 2012 Service Pack 1 (SP1) Operations Manager Web console server, you must upgrade it to System Center 2012 R2 Operations Manager before proceeding with these steps.
-
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements)
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations for System Center Operations Manager.  This process is not applicable for version 1801. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 > [!NOTE]
 > When you upgrade the web console, any customizations that were made to the web.config file after the web console was installed will be reset.  Make a backup copy before proceeding.  
@@ -48,13 +46,20 @@ If you made changes after you set up your web console to either enable or disabl
 
 ### To upgrade the Web console server
 
-1.  Log on to the computer that hosts the Web console server with an Operations Manager Administrators role account for your Operations Manager management group.
+1.  Log on to the computer that hosts the web console server with an Operations Manager Administrators role account for your Operations Manager management group.
 
 2.  On the Operations Manager source media, run **Setup.exe**, and then click **Install**.
 
-3.  On the **Getting Started**, **System Center 2016 Operations Manager Upgrade** page, review the features that will be upgraded, and then click **Next**.
+    > [!NOTE]
+    > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
 
-4.  On the **Select installation location** page, accept the default value of **C:\Program Files\Microsoft System Center 2016\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
+3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
+
+4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+
+    > [!NOTE]
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > 
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -81,7 +86,7 @@ If you made changes after you set up your web console to either enable or disabl
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
 

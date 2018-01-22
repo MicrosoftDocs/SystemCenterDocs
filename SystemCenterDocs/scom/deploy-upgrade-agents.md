@@ -15,7 +15,7 @@ ms.topic: article
 
 # How to upgrade an Operations Manager agent 
 
-Use the following procedures to upgrade an agent running on Windows or Linux to System Center 1801 - Operations Manager. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 1801. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 > [!NOTE]
 > If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.

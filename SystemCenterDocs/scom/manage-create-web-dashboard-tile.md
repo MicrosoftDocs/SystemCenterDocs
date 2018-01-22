@@ -5,16 +5,16 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/30/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How create a dashboard with the Tile widget in the Web console
-In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Tile widget to a  dashboard in the new HTML5 Web console.  It displays a summary tile showing the health and number of alerts for the object that match a criteria. 
+In System Center Operations Manager version 1801, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Tile widget to a  dashboard in the new HTML5 Web console.  It displays a summary tile showing the health and number of alerts for the object that match a criteria. 
 
 ## Add widget to dashboard
 
@@ -32,3 +32,6 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 After the widget has been created, it displays a summary tile showing the health and number of alerts for the object that match a criteria defined. The tile represents health information into the following categories - *A* for availability, *P* for performance, *C* for configuration, and *S* for security.  The color for each category represents the overall health of all the monitors under that category for the specified object.<br><br> ![Completed example of Tile widget in dashboard](./media/create-web-dashboard-tile/web-console-new-dashboard-tile-01.png)
 
 Click on the object name in the Tile widget to launch Health Explorer for the specific object.
+
+## Next steps
+To learn how to create a dashboard in the new web console with the Topology widget, see [How create a dashboard with the Topology widget in the Web console](manage-create-web-dashboard-topology.md)

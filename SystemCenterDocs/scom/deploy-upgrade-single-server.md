@@ -4,7 +4,7 @@ description: This article describes how to upgrade a single server management gr
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/11/2018
+ms.date: 01/15/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 
 # How to upgrade a single server management group 
 
-When you upgrade a single server management group to System Center 2016 - Operations Manager or System Center Operations Manager 1801, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+When you upgrade a single server management group to System Center 2016 - Operations Manager or version 1801, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 ### To upgrade a single server management group
 
@@ -99,10 +99,9 @@ When you upgrade a single server management group to System Center 2016 - Operat
 
 ### To confirm the health of the management server
 
+1. In the Operations console, in the navigation pane, click **Administration**.
 
-1. In the Operations console, select the Administration workspace.
-
-2. Under Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+2. Under **Device Management**, click **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
 
 ## Next steps
 

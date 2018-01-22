@@ -31,7 +31,20 @@ Before proceeding, you need to be a member of the Operations Manager administrat
 2. Click **Activate** and on the **Enter Product Key** window in the **Product key** box, enter a valid product key including the dashes. Press **Continue**  to save your changes.
 3. On the **Please read this license agreement**, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Accept**.
 
-After the change is applied, the Operations console title bar will no longer show how many days are remaining for evaluation period as well as in the **About** dialog window.  
+After the change is applied, the Operations console title bar will no longer show how many days are remaining for evaluation period as well as in the **About** window.  
+
+### Upgrade after the evaluation period
+
+If you did not activate your license for the management group before the evaluation period expires, which is 180 days, after the evaluation period has expired you will receive a notification when you open the Operations console or launch the Operations Manager command shell.  
+
+You perform the following steps to upgrade from the evaluation period using PowerShell directly on a management server or from a remote computer that has the Operations Manager Command Shell installed.  
+
+Before proceeding, you need to be a member of the Operations Manager administrators role to ensure this completes successfully.  
+
+1. Open the Operations Manager Command Shell.
+2. Run the `Set-SCOMLicense -ManagementServer <Server name or IP address> -ProductId <your licensekey> -Credential <PSCredential>` command.  If you do not include the `-Credential` parameter, after you enter the command, an authentication dialog box appears prompting you to enter credentials.  
+3. The cmdlet asks for confirmation.  Enter `Y` to allow it to complete the action.  If the command is successful, it returns a message indicating it was licensed successfully.
+4. Restart the System Center Data Access Service service on all management servers in the management group in order for the setting to take effect.  
 
 ::: moniker-end
 
