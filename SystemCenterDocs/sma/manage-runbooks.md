@@ -1,11 +1,10 @@
 ---
-description:  Describes how to schedule, track, and configure runbooks for Service Management Automation.
+description:  Describes how to schedule, track, and configure runbooks for System Center Service MAnagement Automation.
 manager:  carmonm
 ms.topic:  article
 author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
-keywords:  
 ms.date: 01/22/2018
 title:  Manage runbooks
 ms.technology:  service-management-automation
@@ -13,7 +12,7 @@ ms.technology:  service-management-automation
 
 # Manage runbooks for Service Management Automation
 
-As an administrator of a Service Management Automation (SMA) installation, you need to configure runbooks for execution. This including setting up the runbook workers, and scheduling and tracking runbooks. There are two system runbooks that are included with SMA, in addition to runbooks you author"
+As a Service Management Automation (SMA) administrator, you need to configure and run runbooks. Activities including setting up the runbook workers, and scheduling and tracking runbooks. There are two system runbooks that are included with SMA, in addition to runbooks you author:
 
 - **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules, so that their activities can be used when you authori runbooks in Windows Azure Pack. 
 - **SetAutomationModuleActivityMetadata**: Runs immediately after you import a module into SMA. This runbook extracts activities and activity metadata from a newly imported module, so that its activities can be used when you author runbooks in Windows Azure Pack.
@@ -73,7 +72,7 @@ You can create a schedule with the Management Portal, or with Windows PowerShell
 4.  Specify a **Start Time**, and the other options as required. The time zone of the start time will match the time zone of the local computer.
 
 #### Create a schedule with Windows PowerShell
-You can use the [Set-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a schedule, or modify an existing schedule. You must specify the start time for the schedule, and whether it should run once or repeatedly.
+You can use the [Set-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a schedule, or to modify an existing schedule. You must specify the start time for the schedule, and whether it should run once or repeatedly.
 
 The following sample creates a new schedule called **My Daily Schedule**. It starts on the current day, and continues for one year every day at noon.
 
@@ -142,8 +141,8 @@ The following table describes the different statuses that are possible for a job
 |Running|The job is running.|
 |Stopped|The job was stopped by the user before it was completed.|
 |Stopping|The system is in the process of stopping the job.|
-|Suspended|The job was suspended by the user, by the system, or by a command in the runbook. A job that is suspended can be started again and will resume from its last checkpoint or from the beginning of the runbook if it has no checkpoints.<br /><br />The runbook will only be suspended by the system in the case of an exception where there is a possibility of resuming. By default, [ErrorActionPreference](http://aka.ms/runbookauthor/preferencevariables) is set to **Continue** meaning that the job will keep running on an exception. If this preference variable is set to **Stop** then the job will suspend on an exception.|
-|Suspending|The system is attempting to suspend the job at the request of the user. The runbook must reach its next checkpoint before it can be suspended. If it has already passed its last checkpoint, then it will complete before it can be suspended.|
+|Suspended|The job was suspended by the user, by the system, or by a command in the runbook. A job that is suspended can be started again. It resumes from its last checkpoint, or from the beginning of the runbook if it has no checkpoints.<br /><br />The runbook is only suspended by the system, in the case of an exception that has a possibility to resume. By default, [ErrorActionPreference](http://aka.ms/runbookauthor/preferencevariables) is set to **Continue**, meaning that the job keeps running when an exception occurs. If this variable is set to **Stop**, then the job is suspended when an exception occurs.|
+|Suspending|The system attempts to suspend the job at the request of the user. The runbook must reach its next checkpoint, before it can be suspended. If it has already passed its last checkpoint, then it completes before it can be suspended.|
 
 ### View job status in the Management Portal
 
@@ -151,19 +150,19 @@ The Automation Dashboard shows a summary of all of the runbooks in the SMA envir
 
 - The summary graph shows the number of total jobs for all runbooks that entered each status over a given number of days or hours.
 - You can select the time range on the top right corner of the graph.
-- The time axis of the chart will change according to the type of time range that you select.
+- The time axis of the chart changes according to the type of time range that you select.
 - You can choose whether to display the line for a particular status by clicking on it at the top of screen.
 
-To display the Automation Dashboard:
+Display the dashboard as follows:
 
 1.  In the Management Portal, select **Automation**.
 2.  Select the **Dashboard** tab.
 
 ### Display the dashboard
 
-The Runbook Dashboard shows a summary for a single runbook. The summary graph shows the number of total jobs for the runbook that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
+The Runbook Dashboard shows a summary for a single runbook. The summary graph shows the number of total jobs for the runbook that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart changes according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
 
-You can use the following steps to display the Runbook Dashboard.
+Display the dashboard as follows:
 
 1.  In the Management Portal, select **Automation**.
 2.  Click the name of a runbook.
@@ -192,7 +191,7 @@ You can use the following steps to view the jobs for a runbook.
 
 You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook, and the details of a particular job.
 
-- If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job.
+- If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it returns the resulting job.
 - Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job"s output.
 
 The following sample commands retrieves the last job for a sample runbook, and displays its status, the values provided for the runbook parameters, and the output from the job.
@@ -223,7 +222,7 @@ Tags allow you to assign distinct words and phrases to help identify a runbook. 
 By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](overview-runbook-messages-output.md).
 
 ### Designated runbook worker
-By default, a runbook job will be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. 
+By default, a runbook job is be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. 
 
 ## Change runbook settings in the Management Portal
 You can change settings for a runbook in the Management Portal from the **Configure** page for the runbook.
@@ -239,7 +238,7 @@ You can change settings for a runbook in the Management Portal from the **Config
 ## Change runbook settings with PowerShell
 You can use the [Set-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
 
-The following sample commands show how to set the properties for a runbook. This sample adds a description and specifies that verbose records should be logged.
+The following sample commands show how to set the properties for a runbook. This sample adds a description and specifies that verbose records should be logged:
 
 ```powershell
 $webServer = 'https://MyServer'
