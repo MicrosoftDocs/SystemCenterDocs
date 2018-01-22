@@ -1,6 +1,6 @@
 ---
 title: Automate and invoke runbooks from SPF
-description: Provides information about integrating SPF and Service Management Automation to help tenants.
+description: Provides information about integrating System Center SPF and SMA.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
@@ -13,12 +13,12 @@ ms.technology: service-provider-foundation
 # Automate and invoke runbooks from SPF
 
 
-You can use SPF and Service Management Automation together to provide automated solutions for your tenants. You can configure events in Service Provider Foundation that the Service Management Automation web service will use.
+You can use System Center Service Provider Foundation (SPF) and Service Management Automation (SMA) together to provide automated solutions for your tenants. You can configure events in SPF that the SMA web service will use.
 
 
 ## Automate runbooks
 
-You can automate runbooks using Service Management Automation provided that you have configured the Service Management Automation to use SPF, by using the Set\-SCSPFEventRegisration and Get\-SCSPFEventRegistation cmdlets, as shown in the following example.  
+You can automate runbooks using SMA, provided that you have configured SMA to use SPF,using the Set\-SCSPFEventRegisration and Get\-SCSPFEventRegistation cmdlets. This is shown in the following example:  
 
 ```powershell  
 PS C:\> # This command sets a runbook to be invoked when the Create event for a new virtual machine is raised.  
@@ -29,20 +29,20 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 
 ```  
 
-## Invoke runbooks (old scenario)
+## Invoke runbooks
 
 
-You can set a runbook in System Center - Orchestrator, to run whenever a new VM or service is created by remote calls to SPF with VMM.
+You can set a runbook in System Center - Orchestrator, to run whenever a new VM or service is created by remote calls to SPF with System Center Virtual Machine Manager (VMM).
 
-- You can set the runbook to be invoked by using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet.
-- SPF raises internal events to invoke the runbook and the runbook will continue to be invoked continuously as long as the extensible event handler is enabled.
-- SPF won't invoke the runbook if the VM or service was created by other means, such as by using Windows PowerShell cmdlets, or by using the VMM console.
-- To support the infrastructure for invoking a runbook, Service Provider Foundation calls the **Start-SCOrchestratorRunbook** cmdlet internally and it does to need to be explicitly called by the user.
-- Make sure you have the following information and settings applied before you call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler cmdlet:
-    - The URL to the Orchestrator web service.
-    -   The identity settings for the Service Provider Foundation Application Pools in **Internet Information Services \(IIS\) Manager** must be included in the Orchestrator Users Group.  
+- You can set the runbook to be invoked using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet.
+- SPF raises internal events to invoke the runbook. The runbook is continuously invoked, as long as the extensible event handler is enabled.
+- SPF won't invoke the runbook if the VM or service was created by other means. For example, using Windows PowerShell cmdlets, or by using the VMM console.
+- To support the infrastructure for invoking a runbook, SPF calls the **Start-SCOrchestratorRunbook** cmdlet internally. It doesn't need to be explicitly called by the user.
+- Ensure you have applied the following before you call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler cmdlet:
+    - The URL of the Orchestrator web service.
+    - The identity settings for the SPF application pools in **Internet Information Services \(IIS\) Manager** must be included in the Orchestrator Users Group.  
 
-Invoke a runbook as follows:
+Then, invoke a runbook as follows:
 
 1. Call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler with following parameters:  
 
@@ -59,19 +59,19 @@ Invoke a runbook as follows:
     PS C:\> Set-SCSPFExtensibleEventHandler -EventName "VirtualMachineCreated" -OrchestratorUri "http://east.contoso.com:82/Orchestrator2016/Orchestrator.svc" -RunbookPath "\SPF Runbooks\Extensibility\VM Created" -Enable  
     ```  
 
-2. To determine what the extensible event handler is set to, call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler cmdlet.  
-3. If you want to disable a runbook from being invoked, repeat the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler command, but without the *Enable* parameter. You can also specify empty strings for the *OrchestratorUri* and *Runbookpath* parameters as shown in the following example:  
+2. To determine the setting for the extensible event handler, call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler cmdlet.  
+3. To disable a runbook from being invoked, repeat the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler command, but without the **Enable*** parameter. You can also specify empty strings for the **OrchestratorUrl** and **Runbookpath** parameters, as shown in the following example:  
 
     ```  
     PS C:\> Set-SCSPFExtensibleEventHandler -EventName "VirtualMachineCreated" -OrchestratorUri "" -RunbookPath ""  
     ```  
 ## Runbook parameters
 
-This list of parameters is automatically provided to the runbook. A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.  
+This list of parameters is automatically provided to the runbook. A runbook doesn't need to process all the parameters it receives. It ignores parameters that have no purpose in the runbook.  
 
 ### Parameters for a new VM  
 
-The following table lists the parameters available when a new virtual machine is created. All parameters are optional unless indicated as required.  
+The following table lists the parameters available when a new VM is created. All parameters are optional unless indicated.  
 
 |Parameter|Data Type|  
 |-------------|-------------|  
@@ -117,7 +117,7 @@ The following table lists the parameters available when a new virtual machine is
 |LinuxDomainName|String|  
 
 ### Parameters for a new service  
-The following table lists the parameters available when a new service is created. All parameters are optional unless indicated as required.  
+The following table lists the parameters available when a new service is created. All parameters are optional unless indicated.  
 
 |Parameter|Data Type|  
 |-------------|-------------|  
