@@ -14,7 +14,7 @@
 ### [System requirements](system-requirements.md)
 ### [Design a runbook](designing-a-runbook.md)
 ## Deploy
-### [Upgrade to Orchestrator 2016](upgrade-to-orchestrator-2016.md)
+### [Upgrade to Orchestrator 2016](upgrade-to-orchestrator.md)
 ### [Deploy runbooks](deploy-runbooks.md)
 ### [Configure Orchestrator database connections](how-to-configure-orchestrator-database-connections.md)
 ### [Migrate Orchestrator between environments](migrate-orchestrator-between-environments.md)
@@ -345,7 +345,7 @@
 ##### [Get Cloud](get-cloud.md)
 ##### [Get Disk](get-disk.md)
 ##### [Get Network Adapter](get-network-adapter.md)
-##### [Get Service Configuration](get-service-configuratio.md)
+##### [Get Service Configuration](get-service-configuration.md)
 ##### [Get Service](get-service.md)
 ##### [Get Service template](get-service-template.md)
 ##### [Get Tier](get-tier.md)
