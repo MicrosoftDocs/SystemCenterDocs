@@ -5,7 +5,7 @@ description: This article describes what's new in System Center 1801 - Operation
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/10/2018
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -19,7 +19,10 @@ The content in this section describes what's new and changed in System Center 18
 
 ## Enter product key from the Operations console
 
-In previous versions of Operations Manager you had to upgrade from the evaluation version to a licensed version using the PowerShell cmdlet **Set-SCOMLicense** after initial deployment of a new management group.  Registering the product key can now be performed immediately after setup or after evaluation version has expired.  
+In previous versions of Operations Manager you had to upgrade from the evaluation version to a licensed version using the PowerShell cmdlet **Set-SCOMLicense** after initial deployment of a new management group.  Registering the product key can now be performed during or after setup in the Operations console. The PowerShell cmdlet **Set-SCOMLicense** has been updated to support registering the license key remotely from a management server.
+
+
+ or after evaluation version has expired.  
 
 ## Linux monitoring 
 

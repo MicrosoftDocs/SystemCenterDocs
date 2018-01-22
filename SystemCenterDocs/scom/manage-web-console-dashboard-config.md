@@ -5,10 +5,10 @@ description: This article describes how to manage the configuration of the HTML5
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/30/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---

@@ -1,20 +1,20 @@
 ---
 ms.assetid: 0bbddc74-0324-4cf5-8613-ab7e85c3d0d3
-title:  Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
-description:  This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager 2016.  
+title:  Post-Upgrade Tasks When Upgrading to System Center Operations Manager
+description:  This guide provides the post-upgrade tasks you must perform after upgrading to Operations Manager.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/02/2016
+ms.date: 01/11/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Post-Upgrade tasks when upgrading to System Center 2016 - Operations Manager
+# Post-Upgrade tasks when upgrading to System Center Operations Manager
 
-After you have completed the upgrade process to System Center 2016 - Operations Manager, you must perform a number of post-upgrade tasks.
+After you have completed the upgrade process to System Center 2016 - Operations Manager or version 1801, you must perform a number of post-upgrade tasks.
 
 ## Post-upgrade tasks
 
@@ -46,7 +46,7 @@ After the upgrade has finished, use the following procedure to re-enable subscri
 
 ### Restart or re-enable the connector services
 
-Refer to third-party documentation for any installed connectors to determine if the connectors are supported for System Center 2016 - Operations Manager. If you stopped a connector for any reason during upgrade, restart the service.
+Refer to third-party documentation for any installed connectors to determine if the connectors are supported for System Center Operations Manager. If you stopped a connector for any reason during upgrade, restart the service.
 
 #### To restart a connector service
 

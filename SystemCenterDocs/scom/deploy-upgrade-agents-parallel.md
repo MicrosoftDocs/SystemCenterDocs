@@ -20,8 +20,8 @@ When you perform a side-by-side deployment of System Center 2016 - Operations Ma
 
 The following coexistence scenarios are supported for the Operations Manager agent in a parallel deployment scenario with System Center Operations Manager 1801.
 
-* System Center 2016 - Operations Manager URx
-* System Center Operations Manager 2012 R2 URx
+* System Center 2016 - Operations Manager RTM and higher
+* System Center Operations Manager 2012 R2 RTM and higher
 
 Agents reporting to your Operations Manager 2012 R2 or 2016 management group can be upgraded to System Center Operations Manager 1801 and are fully capable of communicating with both management groups until you complete your migration and retire the old management group.  
 

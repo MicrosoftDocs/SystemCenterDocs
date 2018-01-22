@@ -5,24 +5,24 @@ description: This article provides an overview of the new HTML5 Web console and 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/30/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Overview of HTML5 Web console and dashboards 
 
-This is content that applies only to System Center Operations Manager Current Branch.
+This topic applies only to System Center Operations Manager version 1801.
 
 System Center Operations Manager now delivers HTML5 based dashboards, which enhance the authoring and visualization experiences for Web console users. With these improvements you are able to visualize operational data with richer data visualizations, faster performance, and drill-down.  You can access these dashboards from multiple browsers (such as Chrome) and are no longer dependent on Silverlight.
 
-For this technical preview, there are six dashboard widgets available to use.  
+In this release, there are six dashboard widgets available to use.  
 
 ## Supported scenarios
-With this release, you can take advantage of the following HTML5 dashboard capabilities:
+You can take advantage of the following HTML5 dashboard capabilities:
 
 1.	You can create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
 2.	User can visualize their environment data in HTML 5 dashboards with 
@@ -70,4 +70,4 @@ With this release, you can take advantage of the following HTML5 dashboard capab
 
 
 ## Supported browsers
-For this technical preview, we support Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.
+System Center Operations Manager version 1801 Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.

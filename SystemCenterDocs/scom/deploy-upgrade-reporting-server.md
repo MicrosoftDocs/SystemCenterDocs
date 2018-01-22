@@ -1,22 +1,22 @@
 ---
 ms.assetid: ae000f5e-9d67-4d0d-b093-8d103dce2047
-title: How to Upgrade Reporting to System Center 2016 - Operations Manager
-description: This article describes how to upgrade the Reporting server to Operations Manager 2016.
+title: How to Upgrade a Reporting Server 
+description: This article describes how to upgrade the Reporting server to the latest version of System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 01/15/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade Reporting to System Center 2016 - Operations Manager
+# How to upgrade a Reporting server 
 
-Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 - Operations Manager. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
+Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 - Operations Manager or version 1801. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
-Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements).
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 ### To upgrade the Reporting server
 
@@ -24,9 +24,16 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 2.  On the Operations Manager source media, run **Setup.exe**, and then click **Install**.
 
-3.  On the **Getting Started**, **System Center 2016 Operations Manager Upgrade** page, review the features that will be upgraded. In this case, it is Operations Manager Reporting. Click **Next**.
+    > [!NOTE]
+    > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
 
-4.  On the **Select installation location** page, accept the default value of **C:\Program Files\ Microsoft System Center 2016\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
+3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
+
+4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+
+    > [!NOTE]
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > 
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -55,7 +62,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.
 
