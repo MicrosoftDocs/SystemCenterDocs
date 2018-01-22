@@ -12,9 +12,9 @@ ms.technology:  service-management-automation
 
 ---
 
-# Runbook Output and Messages
+# Runbook output and messages
 
-Most Automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
+Most automation runbooks will have some form of output such as an error message to the user or a complex object intended to be consumed by another workflow. Windows PowerShell provides [multiple streams](http://aka.ms/runbookauthor/streams) to send output from a workflow. Service Management Automation works with each of these streams differently, and you should follow best practices for how to use each when you are creating a runbook.
 
 The following table provides a brief description of each of the streams and their behavior in the Management Portal both when running a published runbook and when [testing a runbook](manage/testing-a-runbook.md). Further details on each stream are provided in subsequent sections.
 
@@ -27,7 +27,7 @@ The following table provides a brief description of each of the streams and thei
 |Progress|Records automatically generated before and after each activity in the runbook. The runbook should not attempt to create its own progress records since they are intended for an interactive user.|Written to job history only if progress logging is turned on for the runbook.|Not displayed in the Test Output Pane.|
 |Debug|Messages intended for an interactive user. Should not be used in runbooks.|Not written to job history.|Not written to Test Output Pane.|
 
-## Output Stream
+## Output stream
 The Output stream is intended for output of objects created by a workflow when it runs correctly. In Automation, this stream is primarily used for objects intended to be consumed by [parent runbooks that call the current runbook](~/sma/link-runbooks.md). When you [call a runbook inline](~/sma/link-runbooks.md#InlineExecution) from a parent runbook, it returns data from the output stream to the parent. You should only use the output stream to communicate general information back to the user if you know the runbook will never be called by another runbook. As a best practice, however, you should typically use the [Verbose Stream](overview-runbook-messages-output.md#verbose) to communicate general information to the user.
 
 You can write data to the output stream using [Write-Output](http://aka.ms/runbookauthor/cmdlet/writeoutput) or by putting the object on its own line in the runbook.
@@ -126,12 +126,12 @@ Write-Verbose "Message "This is a verbose message."
 ### Debug stream
 The Debug stream is intended for use with an interactive user and should not be used in runbooks.
 
-## >Progress records
+## Progress records
 If you configure a runbook to log progress records (on the **Configure** tab of the runbook in the Management Portal), then a record will be written to the job history before and after each activity is run. In most cases, you should keep the default setting of not logging progress records for a runbook in order to maximize performance. Turn on this option only to troubleshoot or debug a runbook. When testing a runbook, progress messages are not displayed even if the runbook is configured to log progress records.
 
 The [Write-Progress](http://aka.ms/runbookauthor/cmdlet/writeprogress) cmdlet is not valid in a runbook, since this is intended for use with an interactive user.
 
-## >Preference variables
+## Preference variables
 Windows PowerShell uses [preference variables](http://aka.ms/runbookauthor/preferencevariables) to determine how to respond to data sent to different output streams. You can set these variables in a runbook to control how it will respond to data sent into different streams.
 
 The following table lists the preference variables that can be used in runbooks with their valid and default values. Note that this table only includes the values that are valid in a runbook. Additional values are valid for the preference variables when used in Windows PowerShell outside of Service Management Automation.
