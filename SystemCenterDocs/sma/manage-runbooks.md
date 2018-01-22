@@ -13,15 +13,14 @@ ms.technology:  service-management-automation
 
 # Manage runbooks for Service Management Automation
 
-As an administrator of a Service Management Automation (SMA) installation, you will need to configure runbooks for execution. Configuring includes both initial setup of the runbook workers, as well as scheduling and tracking runbooks. There are two system runbooks that are included with SMA in addition to the runbooks you have authored. These are:
+As an administrator of a Service Management Automation (SMA) installation, you need to configure runbooks for execution. Configuring includes both initial setup of the runbook workers, as well as scheduling and tracking runbooks. There are two system runbooks that are included with SMA, in addition to the runbooks you have authored. These are:
 
-- DiscoverAllLocalModules: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system where the runbook worker has been installed, and extracts activities and activity metadata for these modules so that their activities can be used when authoring runbooks in Windows Azure Pack. 
-
-- SetAutomationModuleActivityMetadata: Runs immediately after you import a module into Service Management Automation. This runbook extracts activities and activity metadata from a newly imported module so that its activities can be used when authoring runbooks in Windows Azure Pack.
+- **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system where the runbook worker has been installed, and extracts activities and activity metadata for these modules so that their activities can be used when authoring runbooks in Windows Azure Pack. 
+- **SetAutomationModuleActivityMetadata**: Runs immediately after you import a module into SMA. This runbook extracts activities and activity metadata from a newly imported module so that its activities can be used when authoring runbooks in Windows Azure Pack.
 
 ## Configure runbook workers
 
-When you start a runbook job in Service Management Automation, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. RunbookWorker configuration property helps you achieve that. For more information on how runbooks are executed, see [Runbook Execution in Service Management Automation](runbook-automation.md).
+When you start a runbook job in SMA, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. The RunbookWorker configuration property helps you to do that. [Learn more](runbook-automation.md) about runbook execution.
 
 
 
@@ -60,11 +59,11 @@ Get-SmaRunbookWorkerDeployment -WebServiceEndpoint $webServer -Port $port
 ```
 
 > [!NOTE]
-Currently, you can not use Windows Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets to do it.
+Currently, you can't use Windows Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets to do it.
 
 ## Schedule runbooks
 
-To schedule a runbook in Service Management Automation to start at a specified time, you link it to one or more schedules. A schedule can be configured to either run one time or recurring every specified number of days. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
+To schedule a runbook to start at a specified time, you link it to one or more schedules. A schedule can be configured to either run one time or recurring every specified number of days. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
 
 ### Create a schedule
 You can either create a new schedule with the Management Portal or with Windows PowerShell. You also have the option of creating a new schedule when you link a runbook to a schedule using the Management Portal.
@@ -166,7 +165,7 @@ The following table describes the different statuses that are possible for a job
 
 ### View job status in the Management Portal
 
-The Automation Dashboard shows a summary of all of the runbooks in the Service Management Automation environment. The summary graph shows the number of total jobs for all runbooks that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
+The Automation Dashboard shows a summary of all of the runbooks in the SMA environment. The summary graph shows the number of total jobs for all runbooks that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
 
 You can use the following steps to display the Automation Dashboard.
 
@@ -175,6 +174,7 @@ You can use the following steps to display the Automation Dashboard.
 2.  Select the **Dashboard** tab.
 
 ### Runbook dashboard
+
 The Runbook Dashboard shows a summary for a single runbook. The summary graph shows the number of total jobs for the runbook that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
 
 You can use the following steps to display the Runbook Dashboard.
@@ -186,6 +186,7 @@ You can use the following steps to display the Runbook Dashboard.
 3.  Select the **Dashboard** tab.
 
 ### Job summary, history, and source
+
 You can view a list of all of the jobs that have been created for a particular runbook and their most recent status. You can filter this list by job status and the range of dates for the last change to the job. Click on the name of a job to view its detailed information and its output. The detailed view of the job includes the values for the runbook parameters that were provided to that job.
 
 The job history includes output, warning, and error messages with time stamps of when the record was created. For more information on records that are written to the job history, see [Runbook Output and Messages](overview-runbook-messages-output.md).
@@ -206,7 +207,7 @@ You can use the following steps to view the jobs for a runbook.
 
 6.  From the **History** tab, click **View Source** at the bottom of the screen to the source for the job.
 
-### >Retrieve job status using Windows PowerShell
+### Retrieve job status using Windows PowerShell
 You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook and the details of a particular job. If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job. Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job"s output.
 
 The following sample commands retrieves the last job for a sample runbook and displays its status, the values provide for the runbook parameters, and the output from the job.
@@ -226,10 +227,11 @@ Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream 
 
 Each runbook in Service Management Automation has multiple settings. You can use these settings to help locate and manage runbooks. You also can change runbook logging by configuring these settings. Each of these settings is described below followed by procedures on how to modify them.
 
-### <a name="Name"></a>Name and description
+### Name and description
+
 You cannot change the name of a runbook after it has been created. The **Description** is optional and can be up to 512 characters.
 
-### <a name="Tags"></a>Tags
+### Tags
 Tags allow you to assign distinct words and phrases to help identify a runbook. You can specify multiple tags for a runbook by separating them with commas.
 
 ### Logging
@@ -250,7 +252,7 @@ You can change settings for a runbook in the Management Portal from the **Config
 4.  Select the **Configure** tab.
 
 ## Change runbook settings with PowerShell
-You can use the [Set-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for Tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set Tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
+You can use the [Set-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
 
 The following sample commands show how to set the properties for a runbook. This sample adds a description and specifies that verbose records should be logged.
 
