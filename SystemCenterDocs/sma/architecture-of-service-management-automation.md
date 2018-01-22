@@ -6,10 +6,9 @@ author:  bwren
 ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  10/12/2016
+ms.date:  01/22/2018
 title:  Architecture of Service Management Automation
 ms.technology:  service-management-automation
-ms.assetid:  cefc0b34-d77a-4f17-8f69-68b4282beea7
 ---
 
 # Architecture of Service Management Automation

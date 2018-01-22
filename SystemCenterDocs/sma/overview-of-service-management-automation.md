@@ -5,7 +5,7 @@ ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
+ms.date: 01/22/2018
 title:  Overview of Service Management Automation
 ms.technology:  service-management-automation
 ms.assetid:  490faacf-b798-40ea-bb6e-106e6ad7ebaf
@@ -19,7 +19,8 @@ The following diagram illustrates how SMA integrates with Windows Azure Pack for
 
 ![SMA Architecture diagram](/system-center/sma/media/automate-operations-service-management-automation/smaarchitecture.png)
 
-## Service Management Automation Components
+## Service Management Automation c
+omponents
 Service Management Automation uses the following three underlying components that are connected to Windows Azure Pack through the Service Management Automation service endpoint:
 
 **Web service**
@@ -42,11 +43,11 @@ Service Management Automation uses the following three underlying components tha
 
 -   Enables Service Management Automation management by using Windows PowerShell cmdlets
 
-### Should I use Service Management Automation or System Center 2016 - Orchestrator?
+### Should I use Service Management Automation or System Center - Orchestrator?
 
-In System Center 2016, the Orchestrator component enables you to automate business processes and IT operations in your data center without scripting or programming. If you prefer a graphical authoring approach, use Orchestrator.
+The System Center - Orchestrator component enables you to automate business processes and IT operations in your data center without scripting or programming. If you prefer a graphical authoring approach, use Orchestrator.
 
-Service Management Automation(SMA) enables you to automate business processes and IT operations via PowerShell. With the support for the latest PowerShell features, you can use SMA to automate the management of any software that provides PowerShell cmdlets including other System Center 2016 components (even Orchestrator). If you would like to automate via PowerShell, use Service Management Automation to manage your all your automation from a single place.
+Service Management Automation(SMA) enables you to automate business processes and IT operations via PowerShell. With the support for the latest PowerShell features, you can use SMA to automate the management of any software that provides PowerShell cmdlets including other System Center components (even Orchestrator). If you would like to automate via PowerShell, use Service Management Automation to manage your all your automation from a single place.
 
 SMA also has deep integration with Windows Azure Pack, however, you no longer need to use Windows Azure Pack portal for authoring SMA runbooks. Authoring can be done within PowerShell ISE through [PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit/). SMA now also supports native PowerShell script type runbooks. You can know more about the new features in SMA over [here](~/sma/whats-new-in-service-management-automation.md)
 
@@ -67,5 +68,4 @@ The following diagram illustrates each of the Service Management Automation feat
 
 ## Next steps
 
-- Learn how SMA executes runbooks [Runbook execution in Service Management Automation](runbook-automation.md)
-- See the new capabilities added to SMA in the 2016 version [What's new in Service Management Automation](whats-new-in-service-management-automation.md)
+Learn how [SMA executes runbooks](runbook-automation.md)

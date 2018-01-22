@@ -2,16 +2,15 @@
 description: Provides guidance and instructions for creating Service Management Automation runbooks
 manager:  carmonm
 ms.topic:  reference
-author:  cfreemanwa
+author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  03/29/2017
-title:  Authoring Automation Runbooks
+ms.date:  01/22/2018
+title:  Author Automation Runbooks
 ms.technology:  service-management-automation
-ms.assetid:  a8b7e82f-e3fc-4286-8570-8d5ded944b27
 ---
-# Authoring Sevice Management Automation Runbooks
+# Author Sevice Management Automation runbooks
 
 Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
@@ -29,11 +28,11 @@ The additional services provided by Automation for working with Windows PowerShe
 
 -   Set of cmdlets for managing and starting runbooks.
 
-## Creating or importing a runbook
+## Create or import a runbook
 
 You can add a runbook to Service Management Automation by either creating it in the management portal, or by importing it from a file.
 
-### To create a runbook in the Management Portal:
+### Create a runbook in the Management Portal
 
 1.  In the Management Portal, click, **New**, **App Services**, **Automation**, **Runbook**, **Quick Create**.
 
@@ -43,7 +42,7 @@ You can add a runbook to Service Management Automation by either creating it in 
 
 4.  Your new runbook will appear on the **Runbooks** tab.
 
-### To import a runbook from a file:
+### Import a runbook from a file
 
 1.  In the Management portal, select **Automation** and then select an Automation Account.
 
@@ -55,7 +54,7 @@ You can add a runbook to Service Management Automation by either creating it in 
 
 5.  Your new runbook will appear on the **Runbooks** tab for the Automation Account.
 
-### To import a runbook from a script file with Windows PowerShell
+## Import a runbook from a script file with Windows PowerShell
 You can use the [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. 
 
 The following sample commands show how to import a script file into an existing runbook and then publish it.
@@ -70,11 +69,11 @@ Import-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Path $scriptPath
 Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 
 ```
-## Editing a runbook
+## Edit a runbook
 
 Each runbook in Service Management Automation has two versions, Draft and Published. You edit the Draft version of the workflow and then publish it so it can be executed. The Published version cannot be edited.
 
-### To edit a runbook with the Management Portal
+### Edit a runbook with the Management Portal
 The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for [Global Assets](#InsertGlobalSetting), [Activities](#InsertActivity), and [Runbooks](#InsertRunbook).
 
 1.  In the Management Portal, select **Automation**.
@@ -93,7 +92,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 8.  Click **Publish** if you want the latest draft version of the runbook to be published.
 
-### To insert code for a runbook into a Runbook
+### Insert code into a Runbook
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -109,7 +108,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 7.  If the runbook requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
 
-#### <a name="InsertGlobalSetting"></a>To insert a global asset into a runbook
+#### Insert a global asset into a runbook
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -121,7 +120,7 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 5.  Click the check button.
 
-#### <a name="InsertActivity"></a>To insert an activity into a runbook
+#### Insert an activity into a runbook
 
 1.  Open the runbook in the Management Portal editor.
 
@@ -143,7 +142,8 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 10. If the activity requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
 
-### To edit an Automation runbook using Windows PowerShell
+### Edit an Automation runbook with 
+PowerShell
 
 To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](http://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](http://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
 
@@ -175,7 +175,7 @@ Edit-SmaRunbook "WebServiceEndpoint $webServer "Port $port -Name $runbookName -P
 Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "Path $scriptPath
 ```
 
-## <a name="ISE"></a>To edit an Automation runbook using Windows PowerShell ISE
+## Edit an Automation runbook with PowerShell ISE
 Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) allows you to use this tool to write and test Automation runbooks.
 
 1. Open Windows PowerShell ISE.
@@ -200,7 +200,7 @@ Windows PowerShell Integrated Scripting Environment (ISE) is an application that
 
 After you have created your runbook you need to publish it to so the runbook worker can execute it. Each runbook in Service Management Automation has a Draft and a Published version. Only the Published version is available to be run, and only the Draft version can be edited. The Published version is unaffected by any changes to the Draft version. When you are ready to make the Draft version available, you publish it which overwrites the Published version with the Draft version.
 
-### To publish a runbook using the management portal
+### Publish a runbook using the management portal
 
 1.  Select the **Automation** workspace.
 
@@ -216,7 +216,7 @@ After you have created your runbook you need to publish it to so the runbook wor
 
 7.  Click **Yes** to the verification message.
 
-### To publish a runbook using Windows PowerShell
+### Publish a runbook using PowerShell
 You can use the Publish-SmaRunbook to publish a runbook with Windows PowerShell. The following sample commands show how to publish a runbook.
 
 ```powershell
@@ -228,7 +228,7 @@ $runbookName = 'Test-Runbook'
 Publish-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 ```
 
-### To publish a runbook using Windows PowerShell ISE
+### Publish a runbook using PowerShell ISE
 Windows PowerShell Integrated Scripting Environment (ISE) is an application that allows you to run commands and write, test, and debug scripts.  The [SMA PowerShell ISE Add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) allows you to use this tool to write and test Automation runbooks.
 
 1. Open Windows PowerShell ISE.
@@ -249,12 +249,12 @@ When you test a runbook, the Draft runbook is executed and any actions that it p
 
 When you test a runbook, it still executes the workflow normally and performs any actions against resources in the environment. For this reason, you should only test runbooks against non-production resources.
 
-### To test a runbook in Service Management Automation
+### Test a runbook in Service Management Automation
 To test a runbook, [open the Draft version of the runbook in the Management Portal](authoring-automation-runbooks.md). Click the **Test** button at the bottom of the screen to start the test.
 
 You can stop or suspend the runbook while it is being tested with the buttons underneath the Output Pane. When you suspend the runbook, it completes the current activity before being suspended. Once the runbook is suspended, you can stop it or restart it.
 
-### To test a runbook using Windows PowerShell ISE
+### Test a runbook using PowerShell ISE
 The [PowerShell ISE add-on](https://www.powershellgallery.com/packages/SMAAuthoringToolkit) provides cmdlets that emulate the standard activities such as Get-SMACredential and Set-SMAVariable, so you can test the runbook on the local computer just as you would any other script.   
 
 Global assets and their values are downloaded from the automation group to use for local testing.  You can inspect or change these values on the **Assets** tab.  Encrypted values are displayed in orange, and their values are not downloaded.  If you want to use these assets in local testing, then you must set their value locally.
@@ -295,6 +295,5 @@ The following runbooks ship with Service Management Automation as sample runbook
 
 ## Next steps
 
-Read about how to call one runbook from another runbook [Child Runbooks](service-management-automation.md).
-
-Read about how to build and manage an integration module with activities that can be used by a runbook [Working with integration modules](manage-integration-modules.md).
+- [Read about](service-management-automation.md) how to call one runbook from another runbook.
+- [Read about](manage-integration-modules.md)

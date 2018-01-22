@@ -2,7 +2,7 @@
 description: Provides details on how you can automate operations in your Windows Azure Pack environment with Service Management Automation
 manager: carmonm
 ms.topic: article
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center-threshold
 keywords:  
@@ -72,6 +72,5 @@ If a job is suspended or interrupted, it may be resumed on a different Worker se
 In order for a runbook to perform its required actions, it must have permissions to access the resources that it works with. Runbooks in Service Management Automation always run in the context of the service account of the Automation Runbook Service. If this account does not have required permissions, then you can use either a [Credentials](manage-global-assets.md) or a [Connection](manage-global-assets.md) global resource in your runbook to run required commands using credentials with the required permissions. These credentials can either be used with a cmdlet that accepts credentials through a parameter or with [InlineScript](overview-powershell-workflows.md#bkmk_InlineScript) to run a block of code using alternate credentials.
 
 ## Next steps
-- Read more about authoring SMA runbooks [Authoring automation runbooks](authoring-automation-runbooks.md).
-
-- Read more about PowerShell workflows [Windows PowerShell workflow concepts](overview-powershell-workflows.md).
+- Read more about [authoring automation runbooks](authoring-automation-runbooks.md).
+- Read more about [Windows PowerShell workflow concepts](overview-powershell-workflows.md).

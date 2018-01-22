@@ -5,18 +5,16 @@ ms.topic:  article
 author:  bwren
 ms.author: bwren
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  10/12/2016
+ms.date:  01/22/2018
 title:  Child Runbooks in Service Management Automation
 ms.technology:  service-management-automation
-ms.assetid:  4ccce671-6f5e-405c-a007-05f2e43f7124
 ---
 
-# Child Runbooks in Service Management Automation
+# Child runbooks in Service Management Automation
 
 It is a best practice in Service Management Automation to write reusable, modular runbooks with a discrete function that can be used by other runbooks. A parent runbook will often call one or more child runbooks to perform required functionality. There are two ways to call a child runbook, and each has distinct differences that you should understand so that you can determine which will be best for your different scenarios.
 
-## <a name="InlineExecution"></a>Invoking a Child Runbook Using Inline Execution
+## Invoke a child runbook Using inline execution
 To invoke a runbook inline from another runbook, you use the name of the runbook and provide values for its parameters exactly like you would use an activity or cmdlet.  All runbooks in the same Service Management Automation environment are available to all others to be used in this manner. The parent runbook will wait for the child runbook to complete before moving to the next line, and any output is returned directly to the parent.
 
 When you invoke a runbook inline, it runs in the same job as the parent runbook. There will be no indication in the job history of the child runbook that it ran. Any exceptions and any stream output from the child runbook will be associated with the parent. This results in fewer jobs and makes them easier to track and to troubleshoot since any exceptions thrown by the child runbook and any of its stream output are associated with the parent runbook"s job.
@@ -25,7 +23,8 @@ When a runbook is published, any child runbooks that it calls must already have 
 
 The parameters of a child runbook called inline can be any data type including complex objects, and there is no [JSON serialization](manage-runbooks.md) as there is when you start the runbook using the Management Portal or with the [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet.
 
-### Runbook types
+###
+ Runbook types
 
 A runbook can only use another runbook of the same [type](manage/runbook-types-in-service-management-automation.md) as a child runbook using inline execution.  This means that a [PowerShell Workflow runbook](manage/runbook-types-in-service-management-automation.md)  cannot use a [PowerShell runbook](manage/runbook-types-in-service-management-automation.md) as a child using inline execution, and a PowerShell runbook cannot use a PowerShell Workflow runbook.
 
@@ -46,7 +45,29 @@ $vm = Get-VM "Name "MyVM" "ComputerName "MyServer"
 $output = .\Test-ChildRunbook.ps1 "VM $vm "RepeatCount 2 "Restart $true
 ```
 
-## <a name="cmdlet"></a>Starting a Child Runbook Using Cmdlet
+## Start a child runbook using cmdlets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 You can use the [Start-SMARunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook) cmdlet to start a runbook as described in [To start a runbook with Windows PowerShell](manage-runbooks.md). When you start a child runbook from a cmdlet, the parent runbook will move to the next line as soon as the job is created for the child runbook. If you need to retrieve any output from the runbook, then you need to access the job using [Get-SMAJobOutput](http://aka.ms/runbookauthor/getsmajoboutput).
 
 The job from a child runbook started with a cmdlet will run in a separate job from the parent runbook. This results in more jobs than invoking the workflow inline, increasing overhead on the worker server, and making them more difficult to track. The parent can start multiple child runbooks though without waiting for each to complete. For that same kind of parallel execution calling the child runbooks inline, the parent runbook would need to use the [parallel keyword](http://aka.ms/runbookauthor/parallel).
@@ -73,7 +94,7 @@ While ($doLoop) {
 Get-SmaJobOutput "WebServiceEndpoint $webServer "Port $port -Id $job.Id "Stream Output
 ```
 
-## Comparison of Methods for Calling a Child Runbook
+## Compare methods for calling a child runbook
 The following table summarizes the differences between the two methods for calling a runbook from another runbook.
 
 ||Inline|Cmdlet|
@@ -84,11 +105,9 @@ The following table summarizes the differences between the two methods for calli
 |Parameters|Values for the child runbook parameters are specified separately and can use any data type.|Values for the child runbook parameters must be combined into a single hashtable and can only include simple, array, and object data types that leverage JSON serialization.|
 |Publishing|Child runbook must be published before parent runbook is published.|Child runbook must be published any time before parent runbook is started.|
 
-## See Also
-[To start a runbook with Windows PowerShell](manage-runbooks.md)
+## Next steps
 
-[Authoring Automation Runbooks](authoring-automation-runbooks.md)
+Learn about about [automation runbooks](manage/automation-runbooks.md)
 
-[Automation Runbooks](manage/automation-runbooks.md)
 
-[Runbook types](manage/runbook-types-in-service-management-automation.md)
+

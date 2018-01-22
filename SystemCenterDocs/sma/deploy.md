@@ -2,25 +2,24 @@
 description: Provides step by step instructions for setting up Service Management Automation
 manager:  carmonm
 ms.topic:  article
-author:  cfreemanwa
+author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 03/28/2017
+ms.date: 01/22/2018
 title:  Deploy Service Management Automation
 ms.technology:  service-management-automation
-ms.assetid:  b6044e0c-0caa-459c-9489-c379a154136b
 ---
 
-# How to deploy Service Management Automation 
+# Deploy Service Management Automation 
 
-In order to deploy Service Management Automation (SMA) you must install the SMA Web Service, setup the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation. 
+To deploy Service Management Automation (SMA), you must install the SMA Web Service, setup the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation. 
 
 You can install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.
 
-## To install the Service Automation web service
+## Install the Service Automation web service
 
-1.  In the folder where you downloaded the System Center 2016 Orchestrator installation software, click Setup to start the Setup wizard.
+1.  In the folder where you downloaded the System Center - Orchestrator installation software, click Setup to start the Setup wizard.
 
 2.  Under **Service Management**, click **Web Service**, and then click **Install**.
 
@@ -71,17 +70,17 @@ You can install the web service on any machine that can communicate with Windows
 
     After the installation is complete, install a runbook worker as described in [How to install the Service Management Automation runbook worker](~/sma/deploy.md).
 
-## To install the SMA PowerShell module
+## Install the SMA PowerShell module
 
-1.  In the folder where you downloaded the System Center 2016 Orchestrator installation software, start the Setup wizard.
+1.  In the folder where you downloaded the System enter Orchestrator installation software, start the Setup wizard.
 
 2.  Under **Service Management**, click **PowerShell administration**, and then click **Install**.
 
 3.  Follow the instructions in the Setup wizard.
 
-## To setup the SMA runbook worker
+## Set up the SMA runbook worker
 
-1.  In the folder where you downloaded the System Center 2016 Orchestrator installation software, click Setup to start the Setup wizard.
+1.  In the folder where you downloaded the Orchestrator installation software, click Setup to start the Setup wizard.
 
 2.  Under **Service Management**, click **Runbook Worker**, and then click **Install**.
 
@@ -183,7 +182,7 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 >     **New-SmaRunbookWorkerDeployment -<ComputerName\> "<WebServiceEndpoint\>**
 > 3.  Restart the Runbook server service on each computer on which a runbook worker is installed.
 
-## To set or change the SMA endpoint
+## Set or change the SMA endpoint
 
 The **QuickStart** tab for Automation in Windows Azure Pack for Windows Server provides a link that enables you to set up or change the Service Management Automation endpoint. If the Service Management Automation endpoint is not yet registered, click **Register the Service Management Automation endpoint** to configure it. To change the Service Management Automation endpoint settings after an endpoint has been set up, click **Current Service Management Automation endpoint**.
 
@@ -201,4 +200,4 @@ Any of the SMA components can be removed in the **Control Panel** by selecting t
 
 ## Next steps
 
-- Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](https://technet.microsoft.com/en-us/library/dn296435.aspx).
+- Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](https://technet.microsoft.com/library/dn296435.aspx).

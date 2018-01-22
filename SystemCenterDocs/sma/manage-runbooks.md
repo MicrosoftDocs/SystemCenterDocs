@@ -1,12 +1,12 @@
 ---
-description:  Proivides guidance and instructions on how to schedule, track, and configure runbooks for Service Management Automation.
+description:  Provides guidance and instructions on how to schedule, track, and configure runbooks for Service Management Automation.
 manager:  carmonm
 ms.topic:  article
-author:  cfreemanwa
+author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 03/31/2017
+ms.date: 01/22/2018
 title:  Manage runbooks
 ms.technology:  service-management-automation
 ---
@@ -19,12 +19,13 @@ As an administrator of a Service Management Automation (SMA) installation, you w
 
 - SetAutomationModuleActivityMetadata: Runs immediately after you import a module into Service Management Automation. This runbook extracts activities and activity metadata from a newly imported module so that its activities can be used when authoring runbooks in Windows Azure Pack.
 
-## Configuring runbook workers
+## Configure runbook workers
 
 When you start a runbook job in Service Management Automation, by default, it is picked by a runbook worker selected at random. However, sometimes you might want to run a runbook against a particular runbook worker for various reasons. RunbookWorker configuration property helps you achieve that. For more information on how runbooks are executed, see [Runbook Execution in Service Management Automation](runbook-automation.md).
 
 
-### Designating a runbook worker through the PowerShell ISE Add-on.
+
+### Designate a runbook worker through the PowerShell ISE Add-on.
 
 - In the SMA ISE Add-on, under the **Configuration** tab,
 sign in using your SMA account.
@@ -34,7 +35,7 @@ sign in using your SMA account.
 - In the **Configure Runbook properties** dialog, select a runbook worker from the drop-down menu. Click **Make changes**.
 
 
-### Designating a runbook worker through the SMA PowerShell module
+### Designate a runbook worker through the SMA PowerShell module
 
 You can also set the runbook worker property using the following command to do the same via command line
 
@@ -61,14 +62,14 @@ Get-SmaRunbookWorkerDeployment -WebServiceEndpoint $webServer -Port $port
 > [!NOTE]
 Currently, you can not use Windows Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets to do it.
 
-## Scheduling runbooks
+## Schedule runbooks
 
 To schedule a runbook in Service Management Automation to start at a specified time, you link it to one or more schedules. A schedule can be configured to either run one time or recurring every specified number of days. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
 
-### <a name="Create"></a>Creating a schedule
+### Create a schedule
 You can either create a new schedule with the Management Portal or with Windows PowerShell. You also have the option of creating a new schedule when you link a runbook to a schedule using the Management Portal.
 
-#### To create a new schedule with the Management Portal
+#### Create a schedule in the Management Portal
 
 1.  In the Management Portal, select **Automation**.
 
@@ -84,7 +85,7 @@ You can either create a new schedule with the Management Portal or with Windows 
 
 7.  Specify a **Start Time** and the other options depending on the type of schedule that you selected. The time zone of the start time will match the time zone of the local computer.
 
-#### To create a new schedule with Windows PowerShell
+#### Create a schedule with Windows PowerShell
 You can use the [Set-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a new schedule or modify an existing schedule in Automation. You must specify the start time for the schedule and whether it should run one time or daily.
 
 The following sample Windows PowerShell commands create a new schedule called My Daily Schedule that starts on the current day and continues for one year every day at noon.
@@ -99,10 +100,10 @@ $expiryTime = $startTime.AddYears(1)
 Set-SmaSchedule "WebServiceEndpoint $webServer "Port $port "Name $scheduleName "ScheduleType OneTimeSchedule "StartTime $startTime "ExpiryTime $expiryTime "DayInterval 1
 ```
 
-## <a name="Link"></a>Linking a schedule to a runbook
+## Link a schedule to a runbook
 A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it. If a runbook has parameters, then you can provide values for them that are used when the runbook is started. You must provide values for any mandatory parameters.
 
-### To link a schedule to a runbook with the Management Portal
+### Link a schedule in the Management Portal
 
 1.  In the Management Portal, select **Automation**.
 
@@ -118,7 +119,7 @@ A runbook can be linked to multiple schedules, and a schedule can have multiple 
 
 7.  If the runbook has parameters, you will be prompted for their values.
 
-### To link a schedule to a runbook with Windows PowerShell
+### Link schedule with Windows PowerShell
 You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values for the runbook"s parameters with the **Parameters** parameter. See [Starting a Runbook](~/sma/manage-runbooks.md) for more information on specifying parameter values.
 
 The following sample commands show how to link a schedule to a runbook.
@@ -133,7 +134,7 @@ Start-SmaRunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName "
 
 ```
 
-## Tracking runbooks
+## Track runbooks
 
 When you start a runbook in Service Management Automation, a job is created. A job is a single execution instance of a runbook. A single runbook may have multiple jobs, each with their own set of values for the runbook"s parameters.
 
@@ -147,7 +148,7 @@ The following diagram shows the lifecycle of a runbook job for PowerShell script
 
 ![Job Statuses - PowerShell Script](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-script.png)
 
-### <a name="jobstatuses"></a>Job statuses
+### Job status
 The following table describes the different statuses that are possible for a job.
 
 |Status|Description|
@@ -163,7 +164,7 @@ The following table describes the different statuses that are possible for a job
 |Suspended|The job was suspended by the user, by the system, or by a command in the runbook. A job that is suspended can be started again and will resume from its last checkpoint or from the beginning of the runbook if it has no checkpoints.<br /><br />The runbook will only be suspended by the system in the case of an exception where there is a possibility of resuming. By default, [ErrorActionPreference](http://aka.ms/runbookauthor/preferencevariables) is set to **Continue** meaning that the job will keep running on an exception. If this preference variable is set to **Stop** then the job will suspend on an exception.|
 |Suspending|The system is attempting to suspend the job at the request of the user. The runbook must reach its next checkpoint before it can be suspended. If it has already passed its last checkpoint, then it will complete before it can be suspended.|
 
-### <a name="Portal"></a>Viewing job status using the Management Portal
+### View job status in the Management Portal
 
 The Automation Dashboard shows a summary of all of the runbooks in the Service Management Automation environment. The summary graph shows the number of total jobs for all runbooks that entered each status over a given number of days or hours. You can select the time range on the top right corner of the graph. The time axis of the chart will change according to the type of time range that you select. You can choose whether to display the line for a particular status by clicking on it at the top of screen.
 
@@ -205,7 +206,7 @@ You can use the following steps to view the jobs for a runbook.
 
 6.  From the **History** tab, click **View Source** at the bottom of the screen to the source for the job.
 
-### <a name="PowerShell"></a>Retrieving job status using Windows PowerShell
+### >Retrieve job status using Windows PowerShell
 You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook and the details of a particular job. If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it will return the resulting job. Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job"s output.
 
 The following sample commands retrieves the last job for a sample runbook and displays its status, the values provide for the runbook parameters, and the output from the job.
@@ -237,7 +238,7 @@ By default, Verbose and Progress records are not written to job history. You can
 ### Designated runbook worker
 By default, a runbook job will be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. 
 
-## Changing runbook settings with the Management Portal
+## Change runbook settings in the Management Portal
 You can change settings for a runbook in the Management Portal from the **Configure** page for the runbook.
 
 1.  In the Management Portal, select **Automation**.
@@ -248,7 +249,7 @@ You can change settings for a runbook in the Management Portal from the **Config
 
 4.  Select the **Configure** tab.
 
-## Changing runbook settings with Windows PowerShell
+## Change runbook settings with PowerShell
 You can use the [Set-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for Tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set Tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
 
 The following sample commands show how to set the properties for a runbook. This sample adds a description and specifies that verbose records should be logged.
@@ -264,5 +265,5 @@ Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $ru
 
 ## Next steps
 
-- Read about managing global assets [Manage global assets](manage-global-assets.md).
-- Learn about the role of SMA in a Windows Azure Pack implementation [SMA Whitepaper](https://gallery.technet.microsoft.com/Service-Management-fcd75828). 
+- Read about [managing global assets](manage-global-assets.md).
+- Learn about the [role of SMA](https://gallery.technet.microsoft.com/Service-Management-fcd75828) in a Windows Azure Pack implementation. 

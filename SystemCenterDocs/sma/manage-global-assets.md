@@ -2,11 +2,10 @@
 description: Provides guidance and procedures for using global assets in an Automation runbook.
 manager:  carmonm
 ms.topic:  article
-author:  cfreemanwa
+author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
-keywords:  
-ms.date:  03/31/2017
+ms.date:  01/22/2018
 title:  Simplify runbook authoring with global assets
 ms.technology:  service-management-automation
 ---
@@ -19,7 +18,7 @@ Global Assets are available to all runbooks in an Automation environment.  You c
 
 An Automation Credential is either a username and password that can be used with Windows PowerShell commands or a certificate that is uploaded to the server.  The properties for a credential are stored securely in the Automation database and can be accessed in the runbook with either the **Get-AutomationPSCredential** or **Get-AutomationCertificate** activity.
 
-### Windows PowerShell cmdlets for managing credentials
+### PowerShell for managing credentials
 You can use the cmdlets in the following table to create and manage credentials with Windows PowerShell in Service Management Automation.
 
 
@@ -32,7 +31,7 @@ You can use the cmdlets in the following table to create and manage credentials 
 |[Set-SmaCertificate](https://go.microsoft.com/fwlink/?LinkID=306473)|Creates a new certificate or sets the properties for an existing certificate including uploading the certificate file and setting the password for a .pfx.|
 |[Set-SmaCredential](https://go.microsoft.com/fwlink/?LinkID=306475)|Creates a new Automation PowerShell credential or sets the properties for an existing credential.|
 
-### Windows PowerShell cmdlets for working with credential in runbook activities
+###  PowerShell for working with credentials
 You can use the activities in the following table to access credentials in a runbook.
 
 |Activities|Description|
@@ -43,7 +42,7 @@ You can use the activities in the following table to access credentials in a run
 > [!NOTE]
 > You should avoid using variables in the "Name parameter of **Get-AutomationPSCredential** and **Get-AutomationCertificate** since this can complicate discovering dependencies between runbooks and Automation variables.
 
-### To create a new PowerShell credential with the Management Portal
+### Create a PowerShell credential in the Management Portal
 
 1.  Select the **Automation** workspace.
 
@@ -63,7 +62,9 @@ You can use the activities in the following table to access credentials in a run
 
 9. Click the check mark to save the credential.
 
-### To create a new certificate with the Management Portal
+### Create a certificate in the
+
+ Management Portal
 
 1.  Select the **Automation** workspace.
 
@@ -85,7 +86,7 @@ You can use the activities in the following table to access credentials in a run
 
 10. Click the check mark to save the certificate.
 
-### To create a new PowerShell credential with Windows PowerShell in Service Management Automation
+### Create a credential with PowerShell
 The following sample commands show how to create a new credential.
 
 ```powershell
@@ -112,7 +113,7 @@ $certPwd = ConvertTo-SecureString -String 'P@$$w0rd' -AsPlainText -Force
 Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "Path $certPath "Password $certPwd
 ```
 
-## Using a PowerShell credential in a runbook
+## Use a PowerShell credential in a runbook
 You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
 
 -   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](overview-powershell-workflows.md#bkmk_InlineScript) activity to run a set of commands using alternate credentials.
@@ -146,7 +147,7 @@ You can access connections in a runbook with the activities in the following tab
 |--------------|---------------|
 |Get-AutomationConnection|Gets a connection to use in a runbook.|
 
-### To create a new connection with the management portal
+### Create a connection in the management portal
 
 1.  Select the **Automation** workspace.
 
@@ -166,7 +167,7 @@ You can access connections in a runbook with the activities in the following tab
 
 9. Click the check mark to save the connection.
 
-### To create a new connection with Windows PowerShell
+### Create a connection with Windows PowerShell
 
 The following sample commands create a new Virtual Machine Manager connection with the name MyVMMConnection.  Note that we use a hashtable to define the properties of the connection. This is because different types of connections require different sets of properties. A connection of another type would use a different set of field values.
 
@@ -180,7 +181,40 @@ $fieldValues = @{"Username"="MyUser";"Password"="password";"ComputerName"="MyCom
 New-SmaConnection "WebServiceEndpoint $webServer "port $port "Name $connectionName "ConnectionTypeName "VirtualMachineManager" "ConnectionFieldValues $fieldValues
 ```
 
-### Using a connection in a runbook
+### Use
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ a connection in a runbook
 
 Use the **Get-AutomationConnection** activity to use a connection in a runbook.  This activity retrieves the values of the different fields in the connection and returns them as a hashtable which can then be used with the appropriate commands in the runbook.
 
@@ -241,7 +275,7 @@ You can access variables in a runbook with the activities in the following table
 > You should avoid using variables in the "Name parameter of Get-AutomationVariable since this can complicate discovering dependencies between runbooks and Automation variables.
 
 
-### To create a new variable with the management portal
+### Create a new variable in the management portal
 
 1.  Select the **Automation** workspace.
 
@@ -272,7 +306,7 @@ $port = 9090
 Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value 'My String'
 ```
 
-### To use a variable in a runbook
+### Use a variable in a runbook
 
 -   The following sample code shows how to set and retrieve a variable in a runbook. In this sample, it is assumed that variables of type integer named NumberOfIterations and NumberOfRunnings and a variable of type string named SampleMessage have already been created.
 
@@ -289,6 +323,6 @@ Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value '
 
 ## Next steps
 
-Read about building integration modules [Building an integration module](manage-integration-modules.md).
-Read about authoring Automation runbooks [Authoring Automation runbooks](authoring-automation-runbooks.md).
+Read about [building an integration module](manage-integration-modules.md).
+Read about [authoring automation runbooks](authoring-automation-runbooks.md).
 

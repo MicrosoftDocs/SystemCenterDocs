@@ -1,20 +1,19 @@
 ---
-ms.assetid: 8522-4f67-9853-2a4639442b0d
-title: Upgrade to SPF 2016
+title: Upgrade to System Center Service Provider Foundation (SPF) 2016
 description: This article describes how to upgrade to System Center Service Provider Foundation (SPF) 2016
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  11/04/2016
+manager:  carmonm
+ms.date:  01/22/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
 ---
 
 # Upgrade to SPF 2016
->Apples To: System Center 2016
 
-This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016).
+
+This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016. 
 
 The upgrade instructions in this article assume the following scenario:
 
@@ -50,4 +49,4 @@ From Control Panel, in Programs, click Uninstall a program. Then under Name, rig
 
 ## Next steps
 
-[Manage SPF](manage/manage-spf.md)
+[Manage SPF](/manage--register-spf.md)

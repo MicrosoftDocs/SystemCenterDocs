@@ -1,17 +1,15 @@
 ---
 description: Provides an overview of how you can purge the Service Management Automation database.
-manager:  cfreemanwa
+manager:  carmonm
 ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
-keywords:  
-ms.date: 10/12/2016
-title:  How to purge the Service Management Automation database
+ms.date: 01/22/2018
+title:  Purge the Service Management Automation database
 ms.technology:  service-management-automation
-ms.assetid:  09b8fca5-e1db-4775-910d-48cb8214401b
 ---
 
-# How to purge the Service Management Automation database
+# Purge the Service Management Automation database
 
 In Service Management Automation, database purging is automatic, but you can adjust it to your needs.
 

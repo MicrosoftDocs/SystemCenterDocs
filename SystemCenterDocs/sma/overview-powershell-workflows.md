@@ -6,7 +6,7 @@ author:  bwren
 ms.author: bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date:  10/12/2016
+ms.date:  01/22/2018
 title:  Windows PowerShell Workflow Concepts
 ms.technology:  service-management-automation
 ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
@@ -48,7 +48,7 @@ Workflow Test-Runbook
 }
 ```
 
-### <a name="BK_Naming"></a>Naming
+### Naming
 The name of the workflow should conform to the Verb-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](https://go.microsoft.com/fwlink/?LinkID=324604) for a list of approved verbs to use. The name of the workflow must match the name of the Automation runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
 
 ### Limitations
@@ -59,7 +59,7 @@ An activity is a specific task in a workflow. Just as a script is composed of on
 
 Workflow activities share a set of common parameters to configure their operation. For details about the workflow common parameters, see [about_WorkflowCommonParameters](https://go.microsoft.com/fwlink/?LinkID=324606).
 
-## <a name="GK_Modules"></a>Integration Modules
+## Integration Modules
 An *Integration Module* is a package that contains a [Windows PowerShell Module](https://go.microsoft.com/fwlink/?LinkID=325518) and can be imported into Automation. Windows PowerShell Modules contain cmdlets that can be used in Automation runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
 
 Integration Modules that are imported into Automation are automatically available to all runbooks. Since Automation is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import-Module](https://go.microsoft.com/fwlink/?LinkID=324984).
@@ -110,7 +110,7 @@ Parallel
 <Activity5>
 ```
 
-## <a name="BK_Checkpoints"></a>Checkpoints
+## Checkpoints
 A checkpoint is a snapshot of the current state of the workflow that includes the current value for variables and any output generated to that point. The last checkpoint to complete in a runbook is saved to the Automation database so that the workflow can resume even in the case of an outage. The checkpoint data is removed once the runbook job is complete.
 
 You can set a checkpoint in a workflow with the **Checkpoint-Workflow** activity. When you include this activity in a runbook, a checkpoint is immediately taken. If the runbook is suspended by an error, when the job is resumed, it will resume from the point of the last checkpoint set.
@@ -129,12 +129,12 @@ You should set checkpoints in a runbook after activities that may be prone to er
 
 For more information about checkpoints, see [Adding Checkpoints to a Script Workflow](https://go.microsoft.com/fwlink/?LinkID=324993).
 
-## Suspending a Runbook
+## Suspend a Runbook
 You can force a runbook to suspend itself with the **Suspend-Workflow** activity. This activity will set a checkpoint and cause the workflow to immediately suspend. Suspending a workflow is useful for runbooks that may require a manual step to be performed before another set of activities are run.
 
 For more information about suspending a workflow, see [Making a Workflow Suspend Itself](https://go.microsoft.com/fwlink/?LinkID=324997).
 
-## <a name="bkmk_InlineScript"></a>InlineScript
+## InlineScript
 The **InlineScript** activity runs a block of commands in a separate, non-workflow session and returns its output to the workflow. While commands in a workflow are sent to Windows Workflow Foundation for processing, commands in an InlineScript block are processed by Windows PowerShell. The activity uses the standard workflow common parameters including **PSComputerName** and **PSCredential** which allow you to specify that the code block be run on another computer or using alternate credentials.
 
 InlineScript uses the syntax shown below.
@@ -190,7 +190,6 @@ Keep the following recommendations in mind if you do use an **InlineScript** in 
 
 For further details on using **InlineScript**, see [Running Windows PowerShell Commands in a Workflow](https://go.microsoft.com/fwlink/?LinkID=324625) and [about_InlineScript](https://go.microsoft.com/fwlink/?LinkID=324624).
 
-## See Also
-[Runbook Execution in Service Management Automation](runbook-automation.md)
+## Next steps
 
-[Authoring Automation Runbooks](authoring-automation-runbooks.md)
+[Author automation runbooks](authoring-automation-runbooks.md)

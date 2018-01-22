@@ -1,23 +1,20 @@
 ---
-ms.assetid: b7528d59-28b7-4e98-988e-5fd29590fd6f
 title: Automate and invoke runbooks from SPF
 description: Provides information about integrating SPF and Service Management Automation to help tenants.
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 10/16/2016
+manager: carmonm
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
 ---
 
 # Automate and invoke runbooks from SPF
->Apples To: System Center 2016
 
-You can use SPF and Service Management Automation together to provide automated solutions for your tenants.
 
-- You can configure events in Service Provider Foundation that the Service Management Automation web service will use.
-- You can use the older invoke runbook scenario that was included in System Center 2012.
+You can use SPF and Service Management Automation together to provide automated solutions for your tenants. You can configure events in Service Provider Foundation that the Service Management Automation web service will use.
+
 
 ## Automate runbooks
 
@@ -35,7 +32,7 @@ PS C:\> $event_backup = Get-SCSPFEventRegistration -Action "Backup"
 ## Invoke runbooks (old scenario)
 
 
-You can set a runbook in System Center 2016 or 2012 Orchestrator or System Center 2012 Orchestrator to be run whenever a new VM or service is created by remote calls to SPF with VMM.
+You can set a runbook in System Center - Orchestrator, to run whenever a new VM or service is created by remote calls to SPF with VMM.
 
 - You can set the runbook to be invoked by using the Windows PowerShell T:Microsoft.SystemCenter.Foundation.Cmdlet.Set\-SCSPFExtensibleEventHandler  cmdlet.
 - SPF raises internal events to invoke the runbook and the runbook will continue to be invoked continuously as long as the extensible event handler is enabled.
@@ -72,7 +69,7 @@ Invoke a runbook as follows:
 
 This list of parameters is automatically provided to the runbook. A runbook is not required to process all the parameters it receives, and will simply ignore the parameters which have no purpose in the runbook.  
 
-### Parameters for a new virtual machine  
+### Parameters for a new VM  
 
 The following table lists the parameters available when a new virtual machine is created. All parameters are optional unless indicated as required.  
 
