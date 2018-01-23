@@ -1,27 +1,23 @@
 ---
-title: Install Service Manager on a single computer (minimum configuration)
-description: This article helps you to evaluate Service Manager when you want to install it on one computer.
+title: Install System Center - Service Manager on a single computer (minimum configuration)
+description: This article helps you to evaluate System Center - Service Manager when you want to install it on one computer.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 08c888e1-57cb-4f94-8b9e-041a54204c09
 ---
 
 # Install Service Manager on a single computer (minimum configuration)
 
-If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server. For more information about the hardware requirements for Hyper\-V, see [Hyper\-V Server&nbsp;2016 system requirements](https://technet.microsoft.com/en-us/hyper-v-server-docs/).  
+If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server. 
 
- To install Service Manager on a single computer, start with a physical computer that is running Windows&nbsp;Server&nbsp;2016 and Hyper\-V, and make sure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Make sure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
+ To install Service Manager on a single computer, start with a physical computer that is running Windows Server and Hyper\-V, and make sure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Make sure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
 
- **Figure 1: Single\-computer installation in which you use a physical computer that is running Windows&nbsp;Server&nbsp;2016 and Hyper\-V**  
+ **Figure 1: Single\-computer installation in which you use a physical computer that is running Windows Server and Hyper\-V**  
 
  ![Minimum Configuration for Service Manager](./media/install-one-computer/deploy-minimumconfiguration.png)  
 
@@ -39,7 +35,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 -   Workflow account  
 
- For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server&nbsp;2016 is installed on the computer.  
+ For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server is installed on the computer.  
 
 ### To install the Service Manager management server, database, and console  
 
@@ -47,7 +43,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 2.  On the Service Manager installation media, double\-click the **Setup.exe** file.  
 
-3.  On the **Microsoft System Center 2016** page, click **Service Manager management server**.  
+3.  On the **Microsoft System Center <version>** page, click **Service Manager management server**.  
 
 4.  On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key that you received with Service Manager, or alternatively, select **Install as an evaluation edition \(180 day trial\)**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
 
@@ -89,7 +85,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 2.  On the Service Manager installation media, double\-click the **Setup.exe** file.  
 
-3.  On the **Microsoft System Center 2016** page, click **Service Manager data warehouse management server**.  
+3.  On the **Microsoft System Center <version>** page, click **Service Manager data warehouse management server**.  
 
 4.  On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key you received with Service Manager, or as an alternative, select **Install as an evaluation edition \(180 day trial**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
 
@@ -144,7 +140,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the Service Manager management server installation  
 
-1.  On the physical computer that hosts the Service Manager management server, verify that the Program Files\\Microsoft System Center 2016\\Service Manager\\ folder exists.  
+1.  On the physical computer that hosts the Service Manager management server, verify that the Program Files\\Microsoft System Center <version>\\Service Manager\\ folder exists.  
 
 2.  Run **services.msc**, and then verify that the following services are installed, that they have a status of **Started**, and that the startup type is **Automatic**:  
 
@@ -170,7 +166,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the Service Manager database  
 
-1.  On the physical computer, click **Start**, click **All Programs**, click **Microsoft SQL Server&nbsp;2016**, and then click **SQL Server Management Studio**.  
+1.  On the physical computer, click **Start**, click **All Programs**, click **Microsoft SQL Server**, and then click **SQL Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, follow these steps:  
 
@@ -188,7 +184,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the data warehouse installation  
 
-1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server&nbsp;2016**, and then click **SQL&nbsp;Server Management Studio**.  
+1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server **, and then click **SQL&nbsp;Server Management Studio**.  
 
 2.  In the **Connect to Server** dialog box, complete these steps:  
 

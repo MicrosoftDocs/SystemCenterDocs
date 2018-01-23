@@ -1,23 +1,18 @@
 ---
-title: Service Manager performance
-description: Describes how performance for Service Manager server roles and features is affected by different factors.
+title: System Center - Service Manager performance
+description: Describes how performance for System Center - Service Manager server roles and features is affected by different factors.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 82f61204-f9f3-492c-9108-ef3edb5ac622
 ---
 
-# System Center 2016 - Service Manager performance
+# System Center - Service Manager performance
 
-Performance for System Center 2016 - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
+Performance for System Center - Service Manager server roles and features is affected by different factors. Generally, there are three areas where positive and negative performance is most noticeable in Service Manager:  
 
 -   Service Manager console responsiveness. This is the length of time it takes from the moment you take some sort of action in the console until it completes.  
 

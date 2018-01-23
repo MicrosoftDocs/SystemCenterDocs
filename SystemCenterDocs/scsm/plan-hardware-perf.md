@@ -2,22 +2,17 @@
 title: Plan for hardware performance
 description: Describes planning considerations for Service Manager hardware performance.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 6c28cc61-e50c-4d3b-a26e-9410267278c6
 ---
 
 # Plan for Service Manager hardware performance
 
-An important part of System Center 2016 - Service Manager performance depends on a hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you are planning for adequate hardware performance.  
+An important part of System Center - Service Manager performance depends on a hardware configuration and deployment topology that is planned to handle the needs of your organization. The following sections provide general guidelines to consider when you are planning for adequate hardware performance.  
 
 ## Hardware performance  
 
