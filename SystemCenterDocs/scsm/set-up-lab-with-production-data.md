@@ -15,7 +15,7 @@ This article explains how to create a lab environment and populate it with produ
 
 In the [production environment](prod-env.md):
 
-1. [Install an additional management server in the production service manager management group](prod-env.md#install-an-additional-management-server-in-the-production-service-manager-management-group)
+1. [Install an additional management server in the production service manager management group](prod-env.md#install-an-additional-management-server)
 2. Install any cumulative updates that you installed on the Primary Management server on the Secondary Management Server.
 3. [Copy the Workflow Assembly Files](prod-env.md#copy-customized-workflow-assembly-files)
 4. [Disable Service Manager Connectors in the Production Environment](prod-env.md#disable-service-manager-connectors-in-the-production-environment)
