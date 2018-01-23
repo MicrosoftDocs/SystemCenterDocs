@@ -16,22 +16,22 @@ This article summarizes considerations for deploying System Center - Operations 
 
 ## Service Manager console
 
-Installing the Service Manager console on a Operations Manager management server isn't supported. If you do, then the System Center Operations Manager SDK service stops.
+Installing the Service Manager console on an Operations Manager management server isn't supported. If you do, then the System Center Operations Manager SDK service stops.
 
 ## Management group names
 
 When you deploy both a Service Manager and data warehouse management server, you are asked to provide a management group name. You are also asked to provide a management group name when you deploy Operations Manager.
 
 - The names that you use for each of these must be unique.
-- If Operations Manager and Service Manager share the same management group name, you will have to reinstall the Service Manager management server, because a management group can't be renamed. Alternatively, if you do this, you can choose not to manage your Service Manager installation with Operations Manager.  
+- If Operations Manager and Service Manager share the same management group name, you have to reinstall the Service Manager management server, because a management group can't be renamed. Alternatively, if you do this, you can choose not to manage your Service Manager installation with Operations Manager.  
 
 ## Database collations
 
 - You must use the same supported language collations if you intend to import data from Operations Manager into Service Manager. 
-- This is true only for the OperationsManager database in Operations Manager and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse.
+- This is true only for the Operations Manager database in Operations Manager and the SM DWStagingAndConfig database, when you create an Operations Manager Data Source for the data warehouse.
 - Specifically, this appears in the Service Manager console as a Data Warehouse Data Source.
 - This does not affect either the Operations Manager to Service Manager Configuration Item connector, or the Operations Manager to  Service Manager Alert Incident connector.  
-- If you have databases with collations that don't match, then you can't use the Operations Manager to Service Manager data warehouse connector which imports alerts from the OperationsManager database  in Operations Manager to the Service Manager DWStagingAndConfig database. 
+- If you have databases with collations that don't match, then you can't use the Operations Manager to Service Manager data warehouse connector which imports alerts from the Operations Manager database, to the Service Manager DWStagingAndConfig database. 
 
 
 ## Service Manager compatibility
