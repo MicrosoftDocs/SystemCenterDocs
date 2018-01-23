@@ -31,5 +31,5 @@ System Center - Service Manager provides an integrated platform for automating a
 
 ## Next steps
 
-- Read about [what's new in Service Manager](whats-new-1801.md).
+- Read about [what's new in Service Manager](whats-new-1701.md).
 - Review [planning information for Service Manager](plan-sm.md).
