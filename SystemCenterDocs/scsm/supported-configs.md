@@ -24,11 +24,11 @@ This article summarized the workloads for which System Center - Service Manager 
 The hardware and software tested are based on the following conditions:
 
 - Up to 20,000 users, with up to 40 to 50 IT analysts providing concurrent support.
-- Up to 50,000 users (and up to 80 to 100 IT analysts) can be supported if 32 GB of memory is installed on the SQL Server machines.
-- Up to 20,000 supported computers, assuming up to 10 to 12 configuration items of installed software, software updates, and hardware components, per computer.
-- Up to 50,000 computers can be supported if 32 GB of memory is installed on the SQL Server machines.  
-- 5,000 incidents per week with three months of retention, for a total of 60,000 incidents in the Service Manager database for the 20,000\-computer configuration, and 2.5 times that for the 50,000\-computer configuration.  
--   1,000 change requests a week with three months of retention, for a total of 12,000 change requests in the Service Manager database for the 20,000\-computer configuration, and 2.5 times that for the 50,000\-computer configuration.  
+- Up to 50,000 users (and up to 80 to 100 IT analysts) can be supported. Assumes that 32 GB of memory is installed on the SQL Server machines.
+- Up to 20,000 supported computers. This assumes up to 10 to 12 configuration items of installed software, software updates, and hardware components, per computer.
+- Up to 50,000 computers can be supported. Assumes 32 GB of memory is installed on the SQL Server machines.  
+- 5,000 incidents per week with three months of retention. Based on a total of 60,000 incidents in the Service Manager database for the 20,000\-computer configuration. Based on 2.5 times that for the 50,000\-computer configuration.  
+-   1,000 change requests a week with three months of retention. Based on a total of 12,000 change requests in the Service Manager database for the 20,000\-computer configuration. Based on 2.5 times that for the 50,000\-computer configuration.  
 
 >[!NOTE]
 >Using a slow storage subsystem or insufficient memory can reduce Service Manager performance significantly.  
