@@ -1,22 +1,18 @@
 ---
 title: Supported configurations for Service Manager
 description: The article describes supported configurations for Service Manager.
-ms.custom: na
 ms.prod: system-center-2016
 manager: carmonm
 author: bandersmsft
 ms.author: banders
-ms.date: 02/06/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: 847fcf88-bee5-49e5-a783-92ed432db3a4
+
 
 ---
 
-# Supported configurations for System Center 2016 - Service Manager
+# Supported configurations for System Center - Service Manager
 
 Service Manager has been tested up to the workload described in this topic, based on recommended hardware. The test environment contains one Service Manager management server supporting 80 to 100 concurrent Service Manager consoles. High\-performance storage using 15,000\-RPM SCSI drives is used on the database servers.  
 
@@ -36,4 +32,4 @@ The hardware and software tested are based on the following system environment a
 
 ## Next steps
 
-- Review [Considerations for Operations Manager with Service Manager](~/scsm/om-considerations.md) to learn about possible issues before you combine Operations Manager and Service Manager.
+[Learn about](~/scsm/om-considerations.md) combining Operations Manager and Service Manager.

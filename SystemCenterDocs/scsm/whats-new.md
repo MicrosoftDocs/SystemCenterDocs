@@ -1,23 +1,20 @@
 ---
-title:  What's new in Service Manager
+title:  What's new in System Center - Service Manager 2016
 description: Describes new features and other changes in System Center 2016 - Service Manager.
 manager:  carmonn
 ms.topic:  article
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-keywords:  
-ms.date: 01/04/2017
+ms.date: 01/23/2018
 ms.technology:  service-manager
-ms.assetid:  3eeb3265-88e0-47ed-b761-07f4e0634959
 monikerRange: 'sc-sm-2016'
 ---
 
 # What's new in System Center 2016 - Service Manager
 
-System Center 2016 - Service Manager is updated for the release to manufacturing (RTM) version.
+This article summarizes features released in System Center 2016 - Service Manager.
 
-For details about known issues that could affect you before you install System Center 2016 - Service Manager, read the [Release Notes for System Center ](release-notes.md).
 
 ## Support for SQL Server 2014 SP2
 

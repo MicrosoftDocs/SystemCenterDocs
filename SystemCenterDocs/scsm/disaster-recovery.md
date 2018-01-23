@@ -1,23 +1,18 @@
 ---
 title: Disaster recovery for Service Manager
-description: Describes the process used for disaster recovery for System Center 2016 - Service Manager.
+description: Describes the process used for disaster recovery for System Center - Service Manager.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 21c80dca-3dee-40bd-b39c-85f28ef1d40c
 ---
 
-# Disaster recovery for System Center 2016 - Service Manager
+# Disaster recovery for System Center - Service Manager
 
-A recovery plan for potential software and equipment failures in your System Center 2016 - Service Manager environment requires a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases. During installation, you must back up the encryption keys on all the management servers, both the Service Manager management server and data warehouse management servers.  
+A recovery plan for potential software and equipment failures in your System Center - Service Manager environment requires a deployment strategy that separates the Service Manager and data warehouse management servers from the computers that host their respective databases. During installation, you must back up the encryption keys on all the management servers, both the Service Manager management server and data warehouse management servers.  
 
 ![cloud symbol](./media/disaster-recovery/disaster-all_symbols_cloud.png)
 

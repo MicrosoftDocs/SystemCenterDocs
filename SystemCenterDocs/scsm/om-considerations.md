@@ -2,20 +2,15 @@
 title: Considerations for Operations Manager with Service Manager
 description: This article contains information to be aware of when you are combining Operations Manager and Service Manager.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 08/03/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: ee5b265f-1ffa-416d-a038-db9d06efc942
 ---
 
-# Considerations for Operations Manager with System Center 2016 - Service Manager
+# Considerations for Operations Manager with System Center - Service Manager
 
 This topic contains information to be aware of when you are combining Operations Manager and Service Manager.  
 
@@ -45,11 +40,11 @@ You can use any supported database collation of any System Center component with
 
 This section describes the compatibility between Operations Manager and Service Manager.  
 
-### System Center - Operations Manager 2016
+### System Center - Operations Manager
 
- System Center Operations Manager 2016 is supported by Service Manager and Service Manager for connectors and agents. However, other System Center Operations Manager versions are not supported for data source registration. Only corresponding System Center versions are supported when you register a data source in the Data Warehouse workspace.  
+ System Center Operations Manager is supported by Service Manager and Service Manager for connectors and agents. However, other System Center Operations Manager versions are not supported for data source registration. Only corresponding System Center versions are supported when you register a data source in the Data Warehouse workspace.  
 
-System Center 2016 - Service Manager includes a System Center 2016 - Operations Manager agent and it is automatically installed when you deploy Service Manager. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
+Service Manager includes an Operations Manager agent and it is automatically installed when you deploy Service Manager. After Service Manager Setup completes, you must manually configure the agent to communicate with the Operations Manager management server.  
 
 To validate that the Operations Manager Agent was installed, open **Control Panel** and verify that the Operations Manager Agent is present.
 

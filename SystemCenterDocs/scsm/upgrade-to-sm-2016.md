@@ -2,17 +2,13 @@
 title: Upgrade to System Center 2016 - Service Manager
 description: This article outlines the order that you need to follow to upgrade from System Center 2012 R2 - Service Manager to Service Manager in System Center 2016 and planning considerations.  
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/22/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: ae385dce-3613-47b5-88a4-1b3148f2cce1
+monikerRange: 'sc-sm-2016'
 ---
 
 # Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager

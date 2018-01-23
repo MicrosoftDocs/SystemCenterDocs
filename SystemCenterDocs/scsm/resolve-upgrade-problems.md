@@ -1,23 +1,20 @@
 ---
-title: Resolve System Center 2016 - Service Manager upgrade problems
-description: This article helps you resolve System Center 2016 - Service Manager upgrade problems and work around them.
+title: Troubleshoot upgrade issues in System Center - Service Manager
+description: This article helps you resolve System Center - Service Manager upgrade problems and work around them.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 41d83462-5e56-4eb3-8eb8-b67d34060c86
 ---
 
-# Identify and resolve System Center 2016 - Service Manager upgrade problems
+# Troubleshoot upgrade issues
 
-An upgrade to System Center 2016 – Service Manager might not complete successfully. There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
+This article helps you to troubleshoot upgrade issues in System Center – Service Manager.
+
+ There are five phases of the upgrade where a failure might occur. The steps that you take to recover from a failed upgrade depend on the phase in which the failure occurs:
 
 - Failure occurs during the prerequisite check.
 - Failure occurs during predicted checks.
@@ -30,7 +27,7 @@ You can also work around configuration service startup issues after a failed upg
 
 ## Failure occurs during a prerequisite check
 
-Before the installation of System Center 2016 – Service Manager begins, a prerequisite check is made for certain requirements. If a condition is found in which Service Manager will continue to function, you receive a warning. Warnings are identified with an explanation point (!) in a yellow triangle. Conditions that have been identified as a Warning will not prevent you from installing Service Manager.
+Before the installation of SService Manager begins, a prerequisite check is made for certain requirements. If a condition is found in which Service Manager will continue to function, you receive a warning. Warnings are identified with an explanation point (!) in a yellow triangle. Conditions that have been identified as a Warning will not prevent you from installing Service Manager.
 
 If a condition is found that is an absolute requirement for Service Manager, a failure indication appears. Failure indications are identified with an X in a red circle.
 
@@ -101,7 +98,7 @@ For additional information about the cause of this problem, see [Knowledgebase A
 
 ## Work around configuration service startup issues after a failed upgrade
 
-There are two workaround procedures that you can use to try to resolve the issue in which an upgrade to System Center 2016 - Service Manager fails as a result of Configuration service Startup timing out. You can:  
+There are two workaround procedures that you can use to try to resolve the issue in which an upgrade toService Manager fails as a result of Configuration service Startup timing out. You can:  
 
 -   Disable signature verification on the computer that is running Setup.  
 
@@ -109,7 +106,7 @@ There are two workaround procedures that you can use to try to resolve the issue
 
 ### To disable signature verification  
 
-1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center 2016\\Service Manager folder.  
+1.  On the computer that is running Setup, edit the Microsoft.Mom.ConfigServiceHost.exe.config file, which is located in the Program Files\\Microsoft System Center <version>\\Service Manager folder.  
 
 2.  In the `<runtime> </runtime>` section, add `<generatePublisherEvidence enabled="false">`.  
 

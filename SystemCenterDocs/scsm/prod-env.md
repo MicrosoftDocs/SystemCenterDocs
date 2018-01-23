@@ -1,24 +1,20 @@
 ---
-title: Create a production environment for upgrade
-description: To prepare for upgrade, create a production environment and prepare it for production data.
+title: Create a production environment for System Center - Service Manager upgrade
+description: Learn about create a production environment to test System Center - Service Manager upgrade.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 05/30/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/20172018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 
-# Set up a Service Manager 2016 production environment to prepare it for upgrade
+# Prepare a production environment for upgrade
 
-Use the following procedures to prepare for Service Manager upgrade by creating a production environment and preparing it for production data.
+Use the following procedures to prepare for System Center - Service Manager upgrade by creating a production environment and preparing it for production data, for the purposes of upgrade testing.
 
-## Install an additional management server in the production Service Manager management group
+## Install an additional management server
 
 The following procedure shows how to install an additional management server. You must deploy the initial Service Manager management server and Service Manager Database before deploying an additional management server.  
 
@@ -27,11 +23,11 @@ The following procedure shows how to install an additional management server. Yo
 
 When you install a secondary management server, data retention settings are reset. Before you install a secondary management server, make a note of data retention settings. After you have installed the additional management server, adjust the data retention settings to their original values.  
 
-### Run Setup
+### Run setup
 
 1.  By using an account that has administrator rights and that is also a member of the Service Manager Management group administrators, log on to the computer that will host the additional Service Manager Management server.  
-2.  On the System Center 2016 - Service Manager installation media, double\-click Setup.exe.  
-3.  On the **Microsoft System Center 2016 Service Manager** page, click **Install a Service Manager Management server**.  
+2.  On the System Center - Service Manager installation media, double\-click Setup.exe.  
+3.  On the **Microsoft System Center <version> Service Manager** page, click **Install a Service Manager Management server**.  
 4.  On the **Product registration** page, type information in the boxes. In the **Product key** boxes, type the product key you received with Service Manager, or alternatively, select **Install as an evaluation edition \(180 day trial\)?**. Read the Microsoft Software License Terms, and, if applicable, click **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.  
 5.  On the **Installation location** page, verify that sufficient free disk space is available, and then click **Next**. If necessary, click **Browse** to change the location where the additional Service Manager Management server will be installed.  
 6.  On the **System check results** page, make sure that the prerequisite check passed or at least passed with warnings, and then click **Next**.  
@@ -110,7 +106,7 @@ Use the following procedure to stop the Service Manager services.
 
 ## Back up the production Service Manager database for future recovery
 
-Use the following procedure to back up the production Service Manager database in Microsoft SQL Server 2016.
+Use the following procedure to back up the production Service Manager database in Microsoft SQL Server.
 
 ### To back up the Service Manager database
 

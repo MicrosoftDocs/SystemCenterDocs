@@ -1,27 +1,21 @@
 ---
-title: Set up a Service Manager 2016 lab environment with production data
-description: Create a lab environment and populate it with production data so that upgrades can be performed and tested before you upgrade a production environment.
-manager: carmonm
-ms.custom: na
+title: Set up a System Center - Service Manager lab environment with production data
+description: Learn to create a lab with production data to test a System Center - Service Manager upgrade.
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 34e9880c-5faf-4e67-ac1b-7043ab4dc8ad
 ---
 
-# Set up a Service Manager 2016 lab environment with production data to prepare for upgrade
+# Set up a lab environment with production data
 
-This article explains how to create a lab environment and populate it with production data so that upgrades can be performed and tested before an actual upgrade in the production environment. The procedures in this article show you how to configure Service Manager in a lab environment with production data. You then perform an in-place upgrade to System Center 2016 – Service Manager. It is important to follow the steps in this article in the order that they appear.
+This article explains how to create a lab environment and populate it with production data, so that upgrades can be performed and tested before an actual upgrade in the production environment. The procedures in this article show you how to configure Service Manager in a lab environment with production data. You then perform an in-place upgrade. It is important to follow the steps in this article in the order that they appear.
 
 In the [production environment](prod-env.md):
 
-1. [Install an Additional Management Server in the Production Service Manager Management Group](prod-env.md#install-an-additional-management-server-in-the-production-service-manager-management-group)
+1. [Install an additional management server in the production service manager management group](prod-env.md#install-an-additional-management-server-in-the-production-service-manager-management-group)
 2. Install any cumulative updates that you installed on the Primary Management server on the Secondary Management Server.
 3. [Copy the Workflow Assembly Files](prod-env.md#copy-customized-workflow-assembly-files)
 4. [Disable Service Manager Connectors in the Production Environment](prod-env.md#disable-service-manager-connectors-in-the-production-environment)
@@ -52,7 +46,7 @@ In the [lab environment](lab-env.md):
 12. If you are able to successfully complete all the previous steps, you are ready to attempt the in-place upgrade.
 13. Test everything. Document any discrepancies and fixes. Send feedback through the MS Connect web site.
 14. Backup the Service Manager lab environment; for example, back up the database and encryption keys and VM Snapshots This gives you the ability to recover in case the upgrade fails.
-15. The lab environment is now ready for System Center 2016 – Service Manager in-place upgrade.
+15. The lab environment is now ready for a Service Manager in-place upgrade.
 
 ## Next steps
 

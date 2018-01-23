@@ -6,15 +6,13 @@ ms.topic:  article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-keywords:  
-ms.date: 10/12/2016
+ms.date: 01/23/2018
 ms.technology:  service-manager
-ms.assetid:  27337337-38a7-476f-974a-6ffa16027bf1
 ---
 
-# Configure Desired Configuration Management to generate incidents in Service Manager
+# Set up incident generation in Service Manager
 
-You can use the following procedure, for example, to inventory all the computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in System Center Configuration Manager.
+This article provides an example that shows how to inventory all computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in System Center Configuration Manager.
 
 In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).
 
@@ -28,7 +26,7 @@ In Service Manager, you can import configuration baselines from System Center Co
 
 You can use the following procedures to configure incident management to automatically generate desired configuration management-based incidents and validate that the desired configuration management is configured.
 
-## To configure incident management to automatically generate desired configuration management-based incidents
+## Automatically generate management-based incidents
 
 1.  In the Service Manager console, click **Administration**.
 
@@ -85,4 +83,4 @@ You can use the following procedures to configure incident management to automat
 
 ## Next steps
 
-- [Configure notifications](notifications.md) to create notifications in Service Manager when incidents or changes occur.
+[Configure notifications](notifications.md) to create notifications in Service Manager when incidents or changes occur.

@@ -2,20 +2,15 @@
 title: Author with Service Manager
 description: Provides an overview of using, authoring, and customizing management packs, which enable customizations in Service Manager.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: aee0c089-e64e-4d2b-8313-a30a0efc5659
 ---
 
-# Author with System Center 2016 - Service Manager
+# Author with System Center - Service Manager
 
 Authoring in Service Manager refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
@@ -25,7 +20,7 @@ Service Manager automates help desk functions, such as ticketing and change requ
 
 Service Manager uses management pack files that contain object definitions for the various features of the product. You can customize the behavior of Service Manager and extend it by creating and modifying management packs. This authoring guide describes the use, authoring, and customization of management packs.  
 
-The Service Manager 2016 Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager 2016 SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](https://msdn.microsoft.com/library/hh965050.aspx).  
+The Service Manager Software Development Kit \(SDK\) contains information that you might need when you are authoring with Service Manager. The SDK includes reference information for the class libraries and documents that the schema uses to create XML\-based management packs. To download the documentation for the System Center Service Manager SDK, see [System Center Service Manager Software Development Kit \(SDK\) Documentation](https://msdn.microsoft.com/library/hh965050.aspx).  
 
 ### Overview of management packs
 
@@ -41,7 +36,7 @@ You can use management packs to extend Service Manager with the definitions and 
 By default, the Service Manager installation folder contains several preimported management packs that enable core Service Manager features, such as incident management and change management.  
 
 > [!IMPORTANT]  
->  Unsealed management packs are not automatically upgraded during an upgrade to System Center 2016 - Service Manager.  
+>  Unsealed management packs are not automatically upgraded during an upgrade to Service Manager.  
 
 ### Overview of authoring methods for Service Manager
 
@@ -111,15 +106,15 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 #### Set up the Authoring Tool
 
-The SCSM2016\_AuthoringTool\_RTM.exe program file contains the Service Manager Authoring Tool .msi installation package and support files. This includes the files that are required for customizing default Service Manager forms. Ensure that the user who will be running the Authoring Tool has access to the local folder that you used to extract the files from the SCSM2016\_AuthoringTool\_RTM.exe program file.  
+The SCSM<version>\_AuthoringTool\_RTM.exe program file contains the Service Manager Authoring Tool .msi installation package and support files. This includes the files that are required for customizing default Service Manager forms. Ensure that the user who will be running the Authoring Tool has access to the local folder that you used to extract the files from the SCSM<version>\_AuthoringTool\_RTM.exe program file.  
 
 If Windows Error Reporting is enabled on the computer that is running the Authoring Tool, errors are reported automatically.  
 
 ##### To install the Authoring Tool  
 
 1.  Verify that the computer on which you plan to install the Authoring Tool meets the requirements.  
-2.  Download the [SCSM2016\_AuthoringTool\_RTM.exe](https://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM2016\_AuthoringTool\_RTM.exe**.  
-3.  In the **WinZip Self\-Extractor - SCSM2016\_AuthoringTool\_RTM.exe** dialog box, type a path to which to extract the files, and then click **Unzip**.  
+2.  Download the [SCSM<version>\_AuthoringTool\_RTM.exe](https://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM<version>\_AuthoringTool\_RTM.exe**.  
+3.  In the **WinZip Self\-Extractor - SCSM<version>\_AuthoringTool\_RTM.exe** dialog box, type a path to which to extract the files, and then click **Unzip**.  
 4.  Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe**. Double\-click **Setup.exe** to start Setup.  
 5.  In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  
 6.  Continue through the **Product registration** and the **Installation location** pages.  
@@ -131,7 +126,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 ##### To start the Authoring Tool  
 
 1.  On your desktop, click **Start**.  
-2.  Click **Programs**, click **Microsoft System Center**, and then click **Service Manager 2016 Authoring**.  
+2.  Click **Programs**, click **Microsoft System Center**, and then click **Service Manager <version> Authoring**.  
 3.  Click **Service Manager Authoring Tool**, and wait for the Authoring Tool to open.  
 4.  In the **Class Browser** pane, click **Refresh**. This populates the browser with all the classes that are defined in management packs from the \<Installation folder\>\/Library folder. When you opened the Authoring Tool for the first time, this pane was empty.  
 
@@ -175,14 +170,14 @@ The **Activities Toolbox** pane displays activities that you can use as building
 
 #### Upgrade management packs to work with the Authoring Tool
 
-During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](mps-in-auth-tool.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to System Center 2016 - Service Manager.  
+During an upgrade to Service Manager, all customized Service Manager management packs are unsealed. \(Unsealed management packs are management packs that you can modify. For more information about sealed and unsealed management packs, see [Management Packs: Key Concepts](mps-in-auth-tool.md)). Management packs are copied to the new Service Manager folders without any further upgrade\-related processing. Using these custom management packs that were authored in previous versions of System Center Service Manager is supported. However, there are some issues to be aware of, and you may have to make some updates to these management packs to ensure that they work properly and as intended after the upgrade to Service Manager.  
 
 ##### Forms  
 The placement of a control in a form is determined by its top, bottom, left, and right margins in relation to either its parent control or to the form itself. In a customized form, this method can cause controls to be adjusted improperly when the margins of the parent control or of the form are modified.  
 
-As a result of updated styles that were implemented in System Center 2012 - Service Manager, some custom forms that were authored in System Center Service Manager 2010 might have layout issues when they are imported into System Center 2012 or 2016 - Service Manager. Depending on the customization, some controls might be placed incorrectly, causing issues such as overlapping and clipping. Some of these issues affect only how the form looks, and other issues can prevent some intended functionality of the form.  
+As a result of updated styles that were implemented in System Center 2012 - Service Manager, some custom forms that were authored in System Center Service Manager 2010 might have layout issues when they are imported into Service Manager. Depending on the customization, some controls might be placed incorrectly, causing issues such as overlapping and clipping. Some of these issues affect only how the form looks, and other issues can prevent some intended functionality of the form.  
 
-The following sections describe the issues that you might encounter when you import into System Center 2016 - Service Manager forms that were authored in System Center Service Manager 2010. These sections also describe how you can use the System Center 2016 - Service Manager Authoring Tool to rectify these issues to ensure that these forms look and function as intended.  
+The following sections describe the issues that you might encounter when you import into Service Manager forms that were authored in System Center Service Manager 2010. These sections also describe how you can use the Service Manager Authoring Tool to rectify these issues to ensure that these forms look and function as intended.  
 
 ###### Clipping and overlapping controls  
 
@@ -208,13 +203,13 @@ To rectify this issue, use the Authoring Tool to do one of the following:
 
 ##### Workflows  
 
-Workflows that were developed in System Center Service Manager 2010 are supported in System Center 2016 - Service Manager.  
+Workflows that were developed in System Center Service Manager 2010 are supported in Service Manager.  
 
 ###### Virtual Machine management activities  
 
-The Virtual Machine Management workflow activities in System Center 2016 - Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities do not support System Center 2016 - Virtual Machine Manager.  
+The Virtual Machine Management (VMM) workflow activities in Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities do not support System Center VMM. 
 
-If you are trying to automate IT processes that require the use of an activity that supports System Center 2016 - Virtual Machine Manager, using System Center 2016 - Orchestrator runbooks and VMM instead might be helpful.  
+If you are trying to automate IT processes that require the use of an activity that supports VMM, using System Center - Orchestrator runbooks and VMM instead might be helpful.  
 
 ## Next steps
 
