@@ -1,43 +1,37 @@
 ---
-ms.assetid: dd27bbbb-300a-40f6-ba63-81484962394f
-title: VMM 2016 release notes
-description: This article details release notes for VMM 2016
+title: System Center Virtual Machine Manager (VMM) 2016 release notes
+description: This article summarizes the release notes for VMM 2016.
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  01/24/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 monikerRange: 'sc-vmm-2016'
 ---
 
-# VMM release notes
+# VMM 2016 release notes
 
- 
 
-This articles summarizes the release notes for System Center 2016 - Virtual Machine Manager (VMM).
+This article summarizes the release notes for System Center 2016 - Virtual Machine Manager (VMM).
 
 ## VMM deployment
 
-### Importing the admin console might fail
+### VMM admin console import might fail
 **Description**: If you import the VMM admin console add-in as a non-administrator, the console will crash. This occurs because the console add-in is stored in location “C:\Program Files\”, and only admins have access to this location.
-**Workaround**: Store the console add-in at a location that doesn't need admin access, and then import the add-in.
-
-### Microsoft System Center 2012 displayed in Start Menu
-**Description:** After you install Update Rollup 2 or later, on top of Update Rollup 1, you will see "Microsoft System Center 2012" displayed in the Start menu. You can ignore this.
-**Workaround:=**: Delete the "Microsoft System Center 2012" folder in the "Program Menu" folder so that "Microsoft System Center 2016" becomes visible.
+**Workaround**: Store the console add-in at a location that doesn't need admin access, and then import it. 
 
 
 ## Storage
 
 ### **Promoting a VM to highly available might fail**
-**Description**: You create a VM on local storage, start it, and create checkpoints. If you then try to migrate and promote to VM as highly available in a cluster, migration might fail.
+**Description**: You create a VM on local storage, start it, and create checkpoints. If you try to migrate and promote the VM as highly available in a cluster, the migration might fail.
 **Workaround**: Before you run the migration, delete the running checkpoint, and stop the VM.
 
-### Migrating a VM from CSV storage to LUN storage might fail
+### Migrating a VM from CSV to LUN storage might fail
 **Description**: You create a highly available VM using CSV storage, add a LUN as available storage on the cluster, and migrate the VM from CSV to the LUN. If the VM and LUN storage are on the same node, the migration will succeed. If they're not, migration will fail.
-**Workaround**: If the VM isn't on the cluster node on which the LUN storage is registered, move it there. Then, migrate the VM to the LUN storage.
+**Workaround**: If the VM isn't located on the cluster node on which the LUN storage is registered, move it there. Then, migrate the VM to the LUN storage.
 
 ###  Capacity of NAS arrays is displayed as 0 GB.
 **Description**: VMM shows **Total Capacity** and **Available Capacity** as 0 GB for existing file shares in the NAS arrays.
@@ -46,65 +40,65 @@ This articles summarizes the release notes for System Center 2016 - Virtual Mach
 
 ## Networking
 
-### Dynamic IP addresses aren't supported for logical networks managed by SDN network controller
-**Description**: Dynamic IP address configuration for VMs connected to logical networks managed by SDN network conroller in the VMM fabric isn't supported.
+### Logical networks managed by SDN network controller can't use dynamic IP addresses
+**Description**: Using dynamic IP addresses for VMs connected to logical networks that are managed by SDN network controller in the VMM fabric isn't supported.
 **Workaround**: Configure static IP addresses.
 
 ### SET switch shows as ‘Internal’ in VMM
-**Description**: If you deploy an SET switch outside the VMM console, and then start managing it with VMM, The switch type will show as "internal" in the VMM fabric. This doesn't impact switch functionality.
+**Description**: If you deploy an SET switch outside the VMM console, and then start managing it in the VMM fabric, The switch type will show as "internal".. This doesn't impact switch functionality.
 **Workaround**: None
 
 ### LACP teamed switch doesn't work after upgrade
-**Description**: An LACP team configured in a logical switch is non-functional after upgrading to VMM 2016
-**Workaround**: Redeploy the switch, or remove and re-add a physical NIC in the team.
+**Description**: An LACP team configured in a logical switch doesn't work after upgrading to VMM 2016.
+**Workaround**: Redeploy the switch, or remove and re-add a physical network adapter in the team.
 
 ### Backend adapter connectivity for SLB MUX doesn't work as expected
 **Description**: Backend adapter connectivity of SLB MUX might not work as expected after VM migration.
-**Workaround**: Users scale in/scale out in the SLB MUX VM as a workaround.
+**Workaround**: Use scale in/scale out in the SLB MUX VM as a workaround.
 
-### .CNG-based CA certificate isn't supported
-**Description**: If you're using certificates from a CA, you can't use .CNG certificates for SDN deployment in VMM.
-**Workaround**: Use other certificate formats
+### CNG-based CA certificate isn't supported
+**Description**: If you're using certificates from a CA, you can't use CNG certificates for SDN deployment in VMM.
+**Workaround**: Use other certificate formats.
 
-### A virtual adapter connected to a Network Controller-managed network must be restarted when you change the IP address
-**Description**: If there's a change in the assigned IP address on any of the vNICs connected to a Network Controller-managed VM network, you need to manually restart the associated vNICs.
+### A virtual adapter connected to a network managed by Network Controller must be restarted if you change the IP address
+**Description**: If there's a change in the assigned IP address on any of the virtual network adapters connected to a VM network managed by Network Controller, you need to manually restart the associated adapters.
 **Workaround**: No workaround.
 
-### IPv6 isn't supported for a Network Controller-managed infrastructure
-**Description**: IPv6 isn't supported with System Center 2016 - VMM.
+### IPv6 isn't supported for a network infrastructure managed by Network Controller
+**Description**: IPv6 isn't supported by Network Controller in the VMM fabric.
 **Workaround:** Use IPv4.
 
 ### Connectivity issues for SLB addresses.
 
-**Description**: For frontend and backend IP addresses assigned to Software Load Balancer MUX VMs, you might experience connectivity issues if **Register this connection's address in DNS** is select.
-**Workaround**: Clear the setting to avoid issues with these IP addresses.
+**Description**: For frontend and backend IP addresses assigned to SLB MUX VMs, you might experience connectivity issues if **Register this connection's address in DNS** is selected.
+**Workaround**: Clear the setting to avoid issues.
 
 
 
 ## Cluster management
 
-### Upgrading a cluster's functional level does not refresh file server information
+### Upgrading the functional level of a cluster doesn't refresh file server information
 **Description**: If you upgrade the functional level for a cluster that includes a file server, the platform information isn't automatically updated in the VMM database.
 **Workaround**: After upgrading the cluster functional level, refresh the storage provider for the File Server.
 
 ### Updating a Storage Spaces Direct cluster in VMM will fail
 **Description**: Updating a Storage Spaces Direct cluster (hyper-converged or disaggregated) using VMM isn't supported, and might cause data loss.
-**Workaround**: Update the clusters outside VMM using cluster-aware updating (CAU) in Windows.
+**Workaround**: Update the clusters outside VMM, using cluster-aware updating (CAU) in Windows.
 
-### Cluster Rolling Upgrade (CRU) of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server-based host cluster will fail
-**Description**: When you try to upgrade the nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server-based hosts using Cluster Rolling Upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server <servername>. Failed with error MI RESULT 7 The requested operation is not supported.:
+### A cluster rolling upgrade of a Windows Server 2012 R2 host cluster to a Windows Server 2016 Nano Server host cluster will fail
+**Description**: When you try to upgrade the host nodes of a Windows Server 2012 R2 cluster to Windows Server 2016 - Nano Server using cluster rolling upgrade functionality in VMM, the upgrade will fail with error 20406: "VMM could not enumerate instances of class MSFT_StorageNodeToDisk on the server <servername>. Failed with error MI RESULT 7 The requested operation is not supported.:
 **Workaround**: Manually upgrade the Windows Server 2012 R2 host cluster to Nano outside of VMM. Note that rolling upgrade from Windows Server 2012 R2 to Windows Server 2016 Full Server works fine. This issue is specific to Nano.
 
-### Adding a cluster via the VMM Admin console might cause an error
-**Description**: When you add a cluster as a resource in the VMM Administrative console you may receive an error stating "There were no computers discovered based on your inputs".
-**Workaround**: Select OK, close the error dialog box, and retry adding the cluster.
+### Adding a cluster in the VMM Admin console might cause an error
+**Description**: When you add a cluster as a resource in the VMM Administrative console, you might receive an error stating "There were no computers discovered based on your inputs".
+**Workaround**: Select **OK**, and close the error dialog box. Then try to add the cluster again.
 
-### Cluster rolling upgrade doesn't do live migration of VMs that aren't highly available
-**Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it does not live VMs that aren't high-available aren't migrated live, and are moved to a saved state.
-**Workaround**: Either make all cluster VMs highly available before the upgrade, or do a manual live migration for them.
+### A cluster rolling upgrade doesn't do live migration of VMs that aren't highly available
+**Description**: When you run a rolling upgrade of Windows Server 2012 R2 clusters to Windows Server 2016 using VMM, it does not perform live migration of VMs that aren't highly-available. They are moved to a saved state.
+**Workaround**: Either make all cluster VMs highly available before the upgrade, or do a manual live migration for the specific VMs.
 
 ### You need manual steps to add a Nano Server-based host located in an untrusted domain
-**Description**: Trying to add a Nano Server-based host in an untrusted domain fails.
+**Description**: You can't add a Nano Server-based host in an untrusted domain.
 **Workaround:** Perform these steps on the host and then add it to the VMM fabric as an untrusted host.
 
 1.  Enable WINRM over HTTPS:

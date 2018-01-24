@@ -1,10 +1,10 @@
 # Overview
 ## [What is VMM?](overview.md)
-## [What's new in VMM](whats-new.md)
 ## [What's new in VMM 1711](Whats-new-vmm-1711.md)
+## [What's new in VMM](whats-new.md)
 # Get Started
-## [Read the release notes](release-notes.md)
-## [Read the release notes for VMM 1711](release-notes-1711.md)
+## [Release notes - VMM 1711](release-notes-1711.md)
+## [Release notes - VMM 2016](release-notes.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
@@ -38,7 +38,7 @@
 ### [Assign storage QoS policies for Clusters](qos-storage-clusters.md)
 # How To
 ## Plan
-### [System requirements](system-reqs.md)
+### [System requirements for VMM 2016](system-reqs.md)
 ### [Plan VMM installation](plan-install.md)
 ### [Plan a VMM high availability deployment](plan-ha-install.md)
 ### [Identify VMM ports and protocols](plan-ports-protocols.md)
@@ -111,22 +111,22 @@
 ### [Provision SOFS from bare-metal computers](sofs-bare-metal.md)
 ### [Manage SOFS settings](sofs-settings.md)
 ## Manage virtual machines
-### [Provision virtual machines](provision-vms.md)
-### [Deploy virtual machines from a blank VHD](vm-blank-disk.md)
-### [Deploy virtual machines from an existing VHD](vm-existing-disk.md)
-### [Clone existing virtual machines](vm-clone.md)
-### [Deploy virtual machines with rapid provisioning using SAN copy](vm-san-copy.md)
-### [Deploy virtual machines from a VM template](vm-template.md)
-### [Deploy Linux virtual machines](vm-linux.md)
-### [Deploy nested VM](vm-nested-virtualization.md)
+### [Provision VMs](provision-vms.md)
+### [Deploy VMs from a blank VHD](vm-blank-disk.md)
+### [Deploy VMs from an existing VHD](vm-existing-disk.md)
+### [Clone existing VMs](vm-clone.md)
+### [Deploy VMs with rapid provisioning using SAN copy](vm-san-copy.md)
+### [Deploy VMs from a VM template](vm-template.md)
+### [Deploy Linux VMs](vm-linux.md)
+### [Deploy nested VMs](vm-nested-virtualization.md)
 ### [Convert VMware VMs to Hyper-V](vm-convert-vmware.md)
-### [Manage virtual machine settings](vm-settings.md)
-### [Manage dynamic and power optimization for virtual machines](vm-optimization.md)
+### [Manage VM settings](vm-settings.md)
+### [Manage dynamic and power optimization for VMs](vm-optimization.md)
 ### [Create VM role templates with VMM and Azure Pack](vm-role-template.md)
-## Migrate virtual machines
+## Migrate VMs
 ### [Migration overview](migrate.md)
-### [Migrate a virtual machine](migrate-vm.md)
-### [Migrate virtual machine storage](migrate-storage.md)
+### [Migrate a VM](migrate-vm.md)
+### [Migrate VM storage](migrate-storage.md)
 ### [Run a live migration](migrate-live.md)
 ## Manage roles and accounts
 ### [Roles and accounts overview](manage-account.md)
