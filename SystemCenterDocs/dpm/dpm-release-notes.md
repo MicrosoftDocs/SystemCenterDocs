@@ -116,7 +116,7 @@ To suppress size calculations and do complete size calculations again, you can u
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
 
-::: moniker range="sc-dpm-1711"
+::: moniker range="sc-dpm-1801"
 
 ## Installing the DPM agent on Windows Server may require a reboot
 
