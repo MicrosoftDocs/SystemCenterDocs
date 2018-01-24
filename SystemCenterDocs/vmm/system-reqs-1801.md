@@ -1,25 +1,24 @@
 ---
-ms.assetid: c875ed10-4374-46fb-978e-06318512350d
+ms.assetid: 0b604566-dab0-4e9e-90e1-ff62861c4396
 title: VMM system requirements
-description: This article provides information about system requirements for VMM 2016
-author:  rayne-wiselman
-ms.author: raynew
-manager:  carmonm
-ms.date:  01/10/2018
+description: This article provides information about system requirements for VMM 1801.
+author:  JYOTHIRMAISURI
+ms.author: v-jysur
+manager:  vvithal
+ms.date:  01/24/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
+monikerRange: 'sc-vmm-1711'
 ---
 
-# VMM system requirements
+# VMM 1801 system requirements
 
- 
-
-This article describes the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
+This article describes the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM) 1801, and summarizes the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
+The following table provides the scale limits that were tested for System Center 1801 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
 
 The [planning guide](https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
 
@@ -51,22 +50,16 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-Windows Server 2012 Standard/Datacenter | N | N | If supported by SQL Server version
 Windows Server 2012 R2 Standard/Datacenter | N | Y | If supported by SQL Server version
 Windows Server 2016 | Y | N | If supported by SQL Server version
 Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
-Windows Server 2016 Nano | N | N | If supported by SQL Server version
+Windows Server 1709 | Y | Y | Y
 
 ## VMM console operating system
 
 **Operating system** | **Supported**
 --- | ---
-Windows 7 | N
-Windows 8 | N
-Windows 8.1 | Y
 Windows 10 Enterprise | Y
-Windows Server 2008 R2 with SP1 onwards | N
-Windows Server 2012 | Y
 Windows Server 2012 R2 Standard, Datacenter | Y
 Window Server 2016 Standard, Datacenter | Y
 
@@ -77,10 +70,9 @@ Window Server 2016 Standard, Datacenter | Y
 --- | ---
 SQL Server 2008 R2 (SP1, SP2) | N
 SQL Server 2012 (Enterprise, Standard, 64-bit) | N
-SQL Server 2012 SP1 onwards | Y
 SQL Server 2014 and all service packs | Y
 SQL Server 2016 and all service packs | Y
-SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.
+SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)  <br/> or <br/> Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676 )<br/><br/> Not required for VMM installation.
 
 ## Virtualization
 
@@ -111,13 +103,13 @@ Windows Server 2012 Standard/Datacenter | N | N | N | N
 Windows Server 2012 R2 Standard/Datacenter | Y | Y | Y | Y
 Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
-Windows Server 2016 Nano | Y | Y | N | N
+Windows Server 1709 | Y | Y | N | N
 
 ## VMWare servers in the VMM fabric
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.5, 6.0
+ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
 Supported | [Features and limitations](manage-vmware-hosts.md)
 
