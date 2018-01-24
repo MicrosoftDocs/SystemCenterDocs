@@ -1,12 +1,15 @@
 # Overview
 ## [Get started with SPF](overview.md)
-## [What's new](whats-new-1711.md)
+## [What's new](whats-new-1801.md)
+## [Release notes 1801](release-notes-1801.md)
 # How To
 ## Plan
 ### [Plan SPF deployment](plan-spf.md)
 #### [System requirements](system-reqs.md)
+#### [System requirements for SPF 1801](system-reqs-1801.md)
 ## Deploy
 ### [Upgrade SPF](upgrade.md)
+### [Upgrade to SPF 1801](upgrade-1801.md)
 ### [Deploy SPF](deploy-spf.md)
 ## Manage
 ### [Register SPF in Windows Azure Pack](manage-register-spf.md)

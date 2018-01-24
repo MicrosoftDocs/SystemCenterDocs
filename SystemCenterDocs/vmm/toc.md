@@ -1,10 +1,10 @@
 # Overview
 ## [What is VMM?](overview.md)
 ## [What's new in VMM](whats-new.md)
-## [What's new in VMM 1711](Whats-new-vmm-1711.md)
+## [What's new in VMM 1801](Whats-new-vmm-1801.md)
 # Get Started
 ## [Read the release notes](release-notes.md)
-## [Read the release notes for VMM 1711](release-notes-1711.md)
+## [Read the release notes 1801](release-notes-1801.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
@@ -39,6 +39,7 @@
 # How To
 ## Plan
 ### [System requirements](system-reqs.md)
+### [System requirements VMM 1801](system-reqs-1801.md)
 ### [Plan VMM installation](plan-install.md)
 ### [Plan a VMM high availability deployment](plan-ha-install.md)
 ### [Identify VMM ports and protocols](plan-ports-protocols.md)
@@ -47,6 +48,7 @@
 ### [Identify supported storage arrays](supported-arrays.md)
 ## Upgrade and install
 ### [Upgrade to VMM 2016](upgrade.md)
+### [Upgrade to VMM 1801](upgrade-1801.md)
 ### [Install VMM](install.md)
 ### [Install the VMM console](install-console.md)
 ### [Enable enhanced console session](enhanced-console-session.md)

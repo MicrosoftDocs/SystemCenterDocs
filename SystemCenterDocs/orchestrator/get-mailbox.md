@@ -2,7 +2,7 @@
 title: Get Mailbox
 description: You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 01/24/2018
 ms.prod: system-center-threshold
 ms.reviewer: na
 ms.suite: na
@@ -19,6 +19,8 @@ manager: carmonm
 
 You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment. The Get Mailbox activity lets you filter against various mailbox attributes.
 
+This activity calls the Exchange Get-Mailbox PowerShell cmdlet to do the underlying work. For additional information, [see this article](https://technet.microsoft.com/en-us/library/bb123685%28v=exchg.141%29.aspx) about the Get-Mailbox cmdlet that shares the same parameters set.
+
 The following tables list the required properties, filters, optional properties, and published data for this activity.
 
 ## Required properties for the Get Mailbox activity
@@ -26,6 +28,10 @@ The following tables list the required properties, filters, optional properties,
 This activity has no required properties.
 
 ## Filters for the Get Mailbox activity
+
+The values in this section are used to filter the results returned from the underlying call to the Exchange Get-Mailbox PowerShell cmdlet.
+
+The filter values mentioned here filters only the returned results from the cmdlet and do not pass any values specified here as parameters to the underlying cmdlet.
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
@@ -196,6 +202,10 @@ This activity has no required properties.
 | Needs To Suppress PII   | Needs to Suppress PII (Personally Identifiable Information).   | Equals<br>Does not equal   |
 
 ### Optional properties for the Get Mailbox activity
+
+The values in this section directly correlate to the parameter values defined for the Exchange Get-Mailbox PowerShell cmdlet. The only exceptions are the **Active Directory Password** and **Active Directory User Name*** values, which correlate to the **Credential** parameter of the cmdlet.
+
+If the value specified for any of these optional properties is empty or null, (null is the default value) the parameter switch will not be passed to the cmdlet.
 
 | Element   | Description   | Valid values |
 |:---|:---|:---|
@@ -415,6 +425,3 @@ This activity has no required properties.
 | When Soft Deleted   | Date and time when mailbox was soft deleted.   | DateTime   |
 | Windows Email Address   | Email address.   | String   |
 | Windows Live ID(Live@edu only)   | Windows Live ID associated with the mailbox. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | String   |
-
-
-

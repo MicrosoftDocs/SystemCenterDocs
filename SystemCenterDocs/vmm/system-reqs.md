@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # VMM system requirements
 
- 
+
 
 This article describes the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
 
@@ -117,7 +117,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.5, 6.0
+ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
 Supported | [Features and limitations](manage-vmware-hosts.md)
 
