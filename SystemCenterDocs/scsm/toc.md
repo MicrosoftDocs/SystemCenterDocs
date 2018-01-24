@@ -3,6 +3,7 @@
 ## [What's new in Service Manager 1801](whats-new-1801.md)
 ## [What's new in Service Manager 2016](whats-new.md)
 # Get started
+## [Evaluation and activation of Service Manager 1801](sm-license.md)
 ## [Service Manager components](sm-parts.md)
 ## [Supported configurations](supported-configs.md)
 ## [System requirements - Service Manager 2016](sm-sys-reqs.md)
