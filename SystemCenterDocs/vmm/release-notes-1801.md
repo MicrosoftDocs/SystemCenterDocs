@@ -33,4 +33,17 @@ This article summarizes the release notes for System Center Virtual Machine Mana
 
  **Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM Console.
 
- **Workaround**: We recommend using .NET 4.7.1 while installing the VMM Console. For detailed information on .NET 4.7.1 migration, see [the article on .NET migration ](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/retargeting/4.7-4.7.1).
+ **Workaround**: We recommend using .NET 4.7.1 while installing the VMM Console. For detailed information on .NET 4.7.1 migration, see [the article on .NET migration
+  ](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/retargeting/4.7-4.7.1).
+
+## Backend adapter connectivity for SLB MUX doesn't work as expected
+
+**Description**: Backend adapter connectivity of SLB MUX might not work as expected after VM migration.
+
+**Workaround**: Users scale in/scale out in the SLB MUX VM as a workaround.
+
+## Connectivity issues for SLB addresses.
+
+**Description**: For frontend and backend IP addresses assigned to Software Load Balancer MUX VMs, you might experience connectivity issues if **Register this connection's address in DNS** is selected.
+
+**Workaround**: Clear the setting to avoid issues with these IP addresses.
