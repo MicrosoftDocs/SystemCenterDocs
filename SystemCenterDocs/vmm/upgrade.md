@@ -1,11 +1,10 @@
 ---
-ms.assetid: ecaa876d-d376-48a0-a20c-15f0c266e616
 title: Upgrade to VMM in System Center 2016
 description: This article explains how upgrade VMM servers and databases to VMM 2016
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -15,7 +14,8 @@ monikerRange: 'sc-vmm-2016'
 # Upgrade to System Center 2016 - VMM
 
 
-This article describes prerequisites for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes upgrade steps, and tasks you should complete after the upgrade finishes. 
+This article summarizes the steps for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes. 
+
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 with update rollup 9 or later.
@@ -23,9 +23,7 @@ This article describes prerequisites for upgrading to System Center 2016 - Virtu
 - Make sure you're running a [supported version of SQL Server](system-reqs.md#sql-server).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
-	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 2016.
-- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](install.md)
-- Make sure you're running a [supported version of SQL Server](system-reqs.md#sql-server).
+	- You should verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) requirements for VMM 2016.
 
 
 
@@ -159,7 +157,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 6.	Failover the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/en-us/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
@@ -175,7 +173,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 6.	Failover the active VMM node to one of the newly added servers.
 7. Remove 2012 R2 nodes from the cluster after failover.
 8. Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/en-us/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 

@@ -1,18 +1,17 @@
 ---
-ms.assetid: dd27bbbb-300a-40f6-ba63-81484962394f
-title: VMM 2016 release notes
+title: System Center Virtual Machine Manager (VMM) 2016 release notes
 description: This article details release notes for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  01/24/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 monikerRange: 'sc-vmm-2016'
 ---
 
-# VMM release notes
+# VMM 2016 release notes
 
  
 
