@@ -65,8 +65,10 @@ Use the following procedures:
 ### Back up and upgrade OS
 1.	Back up and retain the VMM database.
 2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
-3.	Upgrade the management OS to Windows Server 2016/1701.
-4.	Upgrade to the Windows 10 version of the ADK.
+3.	Upgrade the management OS to Windows Server 2016/1709.
+4.	Install Windows 10 or 1709 version of ADK respectively.
+
+
 
 #### Uninstall the VMM
 1. Go to **Add remove programs**, select **VMM** and click **Uninstall**.
@@ -145,7 +147,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 	- Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster is not supported.
  	- Upgrade the management OS to WS 1709.
 
-4.	Upgrade to the Windows 10 version of the ADK.
+4.	Upgrade to the Windows 10/1709 version of the ADK.
 5. Install VMM 1801 on the passive node by using the following steps:
 	-	In the main setup page, click **Install**.
     -   In **Select features to install**, select  **VMM management server** and then click **Next**. The VMM console will be automatically installed.
@@ -170,7 +172,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 	- Add new WS 2016 nodes and install VMM 1801 on all of these new nodes.
 	- Remove all the WS 2012 R2 nodes from the cluster.
     - Upgrade the management OS to WS 1709.
-3. Install Windows 10 version of the ADK on the newly added 2016 servers.
+3. Install Windows 10/1709 version of the ADK on the newly added 2016 servers.
 4. Install VMM 1801 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode- upgrade-with-no-additional-VMM-servers).    
 5.	Repeat the installation steps for all the other newly added servers.
 6.	Failover the active VMM node to one of the newly added servers.

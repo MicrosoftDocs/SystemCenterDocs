@@ -13,7 +13,6 @@
 ### [Configure fallback HGS](guarded-fallback-hgs.md)
 ### [Deploy a shielded VHDX and VM template](guarded-deploy-template.md)
 ### [Deploy shielded virtual machines](guarded-deploy-vm.md)
-### [Deploy shielded Linux virtual machine](guarded-deploy-linux-vm.md)
 ## [Deploy and manage a software defined network (SDN) infrastructure](deploy-sdn.md)
 ### [Deploy an SDN network controller](sdn-controller.md)
 ### [Encrypt networks](sdn-encrypt-networks.md)
