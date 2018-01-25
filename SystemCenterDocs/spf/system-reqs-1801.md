@@ -9,7 +9,7 @@ ms.date:  01/24/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
-monikerRange: 'sc-spf-1711'
+monikerRange: 'sc-spf-1801'
 ---
 
 # System requirements for System Center 1801 - Service Provider Foundation

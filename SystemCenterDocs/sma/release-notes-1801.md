@@ -10,7 +10,7 @@ ms.technology: service-management-automation
 keywords:
 ms.date: 01/18/2018
 title:  Release Notes for System Center 1801 - Service Management Automation
-monikerRange: 'sc-sma-1711'
+monikerRange: 'sc-sma-1801'
 ---
 
 # Release Notes for System Center 1801 - Service Management Automation

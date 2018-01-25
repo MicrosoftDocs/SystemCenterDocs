@@ -10,7 +10,7 @@ keywords:
 ms.date: 01/24/2018
 title:  Release Notes for System Center 1801 - Service Manager
 ms.assetid:
-monikerRange: 'sc-sm-1711'
+monikerRange: 'sc-sm-1801'
 ---
 
 # Release Notes for System Center 1801 - Service Manager

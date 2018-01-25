@@ -10,7 +10,7 @@ keywords:
 ms.date: 01/24/2018
 ms.technology:  service-management-automation
 ms.assetid:  63d6f604-f51c-4ea8-b2ce-a00bab78fd05
-monikerRange: 'sc-sma-1711'
+monikerRange: 'sc-sma-1801'
 ---
 
 # What's new in System Center Service Management Automation 1801

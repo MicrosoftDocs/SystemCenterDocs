@@ -10,7 +10,7 @@ ms.date: 01/24/2018
 title:  System requirements for Service Management Automation 1801
 ms.technology:  service-management-automation
 ms.assetid:  4a87ff3b-0d96-472c-8836-be98f1aec00f
-monikerRange: 'sc-sma-1711'
+monikerRange: 'sc-sma-1801'
 ---
 
 # System requirements for Service Management Automation 1801

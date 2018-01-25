@@ -10,7 +10,7 @@ keywords:
 ms.date: 01/24/2018
 ms.technology: system-center-threshold
 ms.assetid:  49342436-7e22-4c6b-9602-2adddf8f58c9
-monikerRange: 'sc-spf-1711'
+monikerRange: 'sc-spf-1801'
 ---
 
 # What's new in System Center Service Provider Foundation 1801

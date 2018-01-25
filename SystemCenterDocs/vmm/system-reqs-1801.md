@@ -9,7 +9,7 @@ ms.date:  01/24/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-1711'
+monikerRange: 'sc-vmm-1801'
 ---
 
 # VMM 1801 system requirements

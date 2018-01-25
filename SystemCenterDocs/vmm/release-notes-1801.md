@@ -5,11 +5,11 @@ description: This article details release notes for System Center Virtual Machin
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  riyazp
-ms.date:  01/24/2018
+ms.date:  01/26/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-1711'
+monikerRange: 'sc-vmm-1801'
 ---
 
 # VMM 1801 release notes

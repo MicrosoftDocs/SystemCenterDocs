@@ -10,7 +10,7 @@ keywords:
 ms.date: 01/24/2018
 ms.technology:  service-manager
 ms.assetid:  34650906-a8dd-417e-a79f-ca3f4f0da6e8
-monikerRange: 'sc-sm-1711'
+monikerRange: 'sc-sm-1801'
 ---
 
 # What's new in System Center Service Manager 1801
