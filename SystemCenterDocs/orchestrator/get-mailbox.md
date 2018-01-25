@@ -31,7 +31,7 @@ This activity has no required properties.
 
 The values in this section are used to filter the results returned from the underlying call to the Exchange Get-Mailbox PowerShell cmdlet.
 
-The filter values mentioned here filters only the returned results from the cmdlet and do not pass any values specified here as parameters to the underlying cmdlet.
+The filter values mentioned here only filters the returned results from the cmdlet and do not pass any values specified here as parameters to the underlying cmdlet.
 
 | **Element**   | **Description**   | **Valid values**   |
 |:---|:---|:---|
