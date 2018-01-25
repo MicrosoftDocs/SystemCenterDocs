@@ -42,7 +42,7 @@ This article summarizes the release notes for System Center Virtual Machine Mana
 
 **Workaround**: Users scale in/scale out in the SLB MUX VM as a workaround.
 
-## Connectivity issues for SLB addresses.
+## Connectivity issues for SLB addresses
 
 **Description**: For frontend and backend IP addresses assigned to Software Load Balancer MUX VMs, you might experience connectivity issues if **Register this connection's address in DNS** is selected.
 

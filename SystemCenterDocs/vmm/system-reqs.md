@@ -1,6 +1,5 @@
 ---
-ms.assetid: c875ed10-4374-46fb-978e-06318512350d
-title: VMM system requirements
+title: System Center 2016 - Virtual Machine Manager (VMM) system requirements
 description: This article provides information about system requirements for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
@@ -9,19 +8,20 @@ ms.date:  01/10/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
+monikerRange: 'sc-vmm-2016'
 ---
 
-# VMM system requirements
+# VMM 2016 system requirements
 
 
 
-This article describes the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
+This article describes the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM) 2016, and summarizes the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
 The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
 
-The [planning guide](https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
+The [planning guide](https://technet.microsoft.com/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
 
 **Entity** | **Recommended maximum count**
 --- | ---
@@ -125,7 +125,7 @@ Supported | [Features and limitations](manage-vmware-hosts.md)
 
 **Guest operating system** | **Supported**
 --- | ---
-Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/en-us/library/mt126277.aspx).
+Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/library/mt126277.aspx).
 VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
 
 
