@@ -236,31 +236,31 @@
     "groups": {
       "dpm": {
         "dest": "dpm",
-        "moniker_range": ">= sc-dpm-2016 < sc-dpm-1801"
+        "moniker_range": ">= sc-dpm-2016 <= sc-dpm-1801"
       },
       "orchestrator": {
         "dest": "orchestrator",
-        "moniker_range": ">= sc-orch-2016 < sc-orch-1801"
+        "moniker_range": ">= sc-orch-2016 <= sc-orch-1801"
       },
       "scom": {
         "dest": "scom",
-        "moniker_range": ">= sc-om-2016 < sc-om-1801"
+        "moniker_range": ">= sc-om-2016 <= sc-om-1801"
       },
       "scsm": {
         "dest": "scsm",
-        "moniker_range": ">= sc-sm-2016 < sc-sm-1801"
+        "moniker_range": ">= sc-sm-2016 <= sc-sm-1801"
       },
       "sma": {
         "dest": "sma",
-        "moniker_range": ">= sc-sma-2016 < sc-sma-1801"
+        "moniker_range": ">= sc-sma-2016 <= sc-sma-1801"
       },
       "spf": {
         "dest": "spf",
-        "moniker_range": ">= sc-spf-2016 < sc-spf-1801"
+        "moniker_range": ">= sc-spf-2016 <= sc-spf-1801"
       },
       "vmm": {
         "dest": "vmm",
-        "moniker_range": ">= sc-vmm-2016 < sc-vmm-1801"
+        "moniker_range": ">= sc-vmm-2016 <= sc-vmm-1801"
       }
     }
   }
