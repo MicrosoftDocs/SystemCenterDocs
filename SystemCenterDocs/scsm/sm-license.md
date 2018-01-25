@@ -16,7 +16,7 @@ monikerRange: 'sc-sm-1711'
 
 # Evaluation and Licensing experience for System Center 1801 - Service Manager
 
-System Center 1801 - Service Manager (SM) has introduced a new feature to enahnce the experience of evaluating Service Manager and then activating the product for retail use.  
+System Center 1801 - Service Manager (SM) has introduced a new feature to enhance the experience of evaluating Service Manager and then activating the product for retail use.  
 
 The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801, you can view the information about the evaluation period, and accordingly activate your  SM.
 
@@ -66,18 +66,19 @@ You can active Service Manager 1801 using the product key from console and  Powe
 
 ## Activate  Service Manager through PowerShell
 
-To activate Service Manager through Powershell, use the following procedure:
+To activate Service Manager through PowerShell, use the following procedure:
 
 1. Open a PowerShell window on the computer where the SM console is installed.
 
 2. Type the following command and press enter.
 
-    **Set-SCSMLicense -ManagementServer <ManagementServer> -ProductId <Product Key>**
+    ```  
+    Set-SCSMLicense -ManagementServer <ManagementServer> -ProductId <Product Key>
+    ```      
+On executing the command, you get a prompt asking for the required credential to execute the command. Provide the credentials as appropriate.
 
-    On executing the command, you get a prompt asking for the required credential to execute the command. Provide the credentials as appropriate.
+A confirmation message appears.
 
-    A confirmation message appears.
-
-3.  Read and accept the confirmation message. upon successful confirmation,     Licensing complete information appears as shown below:  
+3.  Read and accept the confirmation message. Upon successful confirmation, licensing complete information appears as shown below:  
 
     ![SM license completion](./media/sm-licensing/licensing-complete.png)
