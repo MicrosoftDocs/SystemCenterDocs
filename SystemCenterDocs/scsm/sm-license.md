@@ -16,7 +16,7 @@ monikerRange: 'sc-sm-1711'
 
 # Evaluation and Licensing experience for System Center 1801 - Service Manager
 
-System Center 1801 - Service Manager (SM) has introduced a new feature to enhance the experience of evaluating Service Manager and then activating the product for retail use.  
+System Center 1801 - Service Manager (SM) supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
 The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801, you can view the information about the evaluation period, and accordingly activate your  SM.
 
