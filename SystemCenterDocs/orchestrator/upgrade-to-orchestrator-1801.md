@@ -10,7 +10,7 @@ ms.prod:  system-center-threshold
 ms.technology:  system-center-2016
 description: This article provides an overview of how to upgrade your System Center Orchestrator installation to release 1801.
 keywords:
-monikerRange: 'sc-orch-1711'
+monikerRange: 'sc-orch-1801'
 ---
 
 # Upgrade to System Center 1801 - Orchestrator

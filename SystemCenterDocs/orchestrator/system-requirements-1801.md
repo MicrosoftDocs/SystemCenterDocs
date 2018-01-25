@@ -10,7 +10,7 @@ author: JYOTHIRMAISURI
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
 ms.topic: article
-monikerRange: 'sc-orch-1711'
+monikerRange: 'sc-orch-1801'
 ---
 
 # System requirements for System Center 1801 - Orchestrator

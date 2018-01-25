@@ -13,7 +13,7 @@ ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 5a6b1532-d4e0-4fb0-b721-086e934b4b5f
-monikerRange: 'sc-sm-1711'
+monikerRange: 'sc-sm-1801'
 ---
 
 # System requirements for System Center 1801 - Service Manager

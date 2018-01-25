@@ -9,12 +9,12 @@ ms.date:  01/24/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
-monikerRange: 'sc-spf-1711'
+monikerRange: 'sc-spf-1801'
 ---
 
 # Upgrade System Center 1801 -  Service Provider Foundation
 
-This article describes how to upgrade from System Center 2012 R2 UR 12/2016 UR2 - Service Provider Foundation (SPF)  to SPF 1801. 
+This article describes how to upgrade from System Center 2012 R2 UR 12/2016 UR2 - Service Provider Foundation (SPF)  to SPF 1801.
 
 The upgrade instructions in this article assume the following scenario:
 

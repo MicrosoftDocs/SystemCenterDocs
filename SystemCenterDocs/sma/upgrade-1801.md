@@ -10,7 +10,7 @@ ms.date: 01/24/2018
 title:  How to upgrade from a previous version of Service Management Automation to 1801
 ms.technology:  service-management-automation
 ms.assetid:  23356ae4-74ba-46f0-8484-22f896a5e0f5
-monikerRange: 'sc-sma-1711'
+monikerRange: 'sc-sma-1801'
 ---
 
 # Upgrade System Center 1801 - Service Management Automation

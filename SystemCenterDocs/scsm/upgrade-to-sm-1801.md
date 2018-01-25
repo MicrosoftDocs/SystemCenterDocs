@@ -13,7 +13,7 @@ ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0584ca74-1a8e-462a-9578-c2e1a503a4fd
-monikerRange: 'sc-sm-1711'
+monikerRange: 'sc-sm-1801'
 ---
 
 # Upgrade System Center 1801 - Service Manager

@@ -10,7 +10,7 @@ keywords:
 ms.date: 01/24/2018
 ms.technology: Orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
-monikerRange: 'sc-orch-1711'
+monikerRange: 'sc-orch-1801'
 ---
 
 # What's new in System Center Orchestrator 1801
