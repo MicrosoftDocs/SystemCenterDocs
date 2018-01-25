@@ -1,28 +1,25 @@
 ---
 ms.assetid: 
 title: What's New in Operations Manager - 1801
-description: This article describes what's new in System Center 1801 - Operations Manager compared to previous versions. 
+description: This article describes what's new in System Center Operations Manager 1801 compared to previous versions. 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/16/2018
+ms.date: 01/24/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# What's New in System Center 1801 - Operations Manager
+# What's New in System Center Operations Manager 1801
 
-The content in this section describes what's new and changed in System Center 1801 - Operations Manager.
+The content in this section describes what's new and changed in System Center Operations Manager 1801.
 
 ## Enter product key from the Operations console
 
 In previous versions of Operations Manager you had to upgrade from the evaluation version to a licensed version using the PowerShell cmdlet **Set-SCOMLicense** after initial deployment of a new management group.  Registering the product key can now be performed during or after setup in the Operations console. The PowerShell cmdlet **Set-SCOMLicense** has been updated to support registering the license key remotely from a management server.
-
-
- or after evaluation version has expired.  
 
 ## Linux monitoring 
 
