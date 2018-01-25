@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -23,7 +23,7 @@ Verify the following:
 
 - **VMM management server**: Verify [hardware](system-reqs.md#hardware) and [operating system](system-reqs.md#server-operating-system) requirements.
 - **SQL Server**: Review supported [SQL Server versions](system-reqs.md#sql-server)
-- **VMM console**: Review [operating system requirements](system-reqs.md#client-console-operating-system) and if you want to run the VMM console on a separate computer.
+- **VMM console**: Review [operating system requirements](system-reqs.md#vmm-console-operating-system) and if you want to run the VMM console on a separate computer.
 - **VMM library**: Review the [hardware requirements](system-reqs.md#hardware) for remote VMM library shares.
 - **Virtualization hosts**: Review the [supported operating systems](system-reqs.md#servers-in-the-vmm-fabric) for Hyper-V and SOFS servers in the VMM fabric. [Review requirements](system-reqs.md#vmware-servers-in-the-vmm-fabric) for VMware servers.
 - **Other fabric servers**: Review the [supported operating systems](system-reqs.md#servers-in-the-vmm-fabric) for update and PXE (used for bare metal deployment) servers.
@@ -94,7 +94,7 @@ When you install VMM with this user account SPN will be registered.
 
 > [!NOTE]
 
-> Target database collate and the VMM server collate must be the same if the database is part of SQL Always On (AO) group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/en-us/library/ee176844.aspx) PowerShell command. Learn more about [VMM server collate mappings](vmm-collate-mappings.md).
+> Target database collate and the VMM server collate must be the same if the database is part of SQL Always On (AO) group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/library/ee176844.aspx) PowerShell command. Learn more about [VMM server collate mappings](vmm-collate-mappings.md).
 
 ::: moniker-end
 - Dynamic port is supported.
