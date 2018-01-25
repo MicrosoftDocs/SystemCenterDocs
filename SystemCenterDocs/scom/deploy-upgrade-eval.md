@@ -21,7 +21,7 @@ To upgrade from an evaluation version of Operations Manager to a licensed versio
 > [!NOTE] 
 > To check whether Operations Manager is licensed, in the Operations console, click **Help**, and then click **About**. In the **Product version** field, it will show the version **(Retail)** after the version information.  If it shows **(Eval)**, then your installation is an evaluation version.  
 
-::: moniker range="sc-om-1711"
+::: moniker range="sc-om-1801"
 
 ## To upgrade from the evaluation version of System Center Operations Manager 1801
 

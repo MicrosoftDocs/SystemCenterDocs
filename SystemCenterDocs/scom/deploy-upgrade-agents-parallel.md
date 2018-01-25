@@ -16,7 +16,7 @@ ms.topic: article
 
 When you perform a side-by-side deployment of System Center 2016 - Operations Manager or System Center Operations Manager 1801 from a previous version (also referred to as a parallel deployment) with your existing Operations Manager management group, you can continue to proactively monitor your workloads and maintain insight into the availability of your critical services.  
 
-::: moniker range="sc-om-1711"
+::: moniker range="sc-om-1801"
 
 The following coexistence scenarios are supported for the Operations Manager agent in a parallel deployment scenario with System Center Operations Manager 1801.
 
