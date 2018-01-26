@@ -1,27 +1,27 @@
 ---
-description: Use DPM to back up VMware VM.
+description: Use DPM 1801 to back up and restore VMware VMs.
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/08/2017
-title:  Back up VMware Virtual Machines
+ms.date: 1/25/2018
+title:  Back up and restore VMware Virtual Machines
 ms.technology:  data-protection-manager
 ms.assetid:
 ms.author: markgal
-monikerRange: 'sc-dpm-1711'
+monikerRange: 'sc-dpm-1801'
 ---
 
-# Use DPM 1711 to back up VMware virtual machines
+# Use DPM 1801 to back up and restore VMware virtual machines
 
-This article explains how to use Data Protection Manager (DPM) 1711 to back up virtual machines running on the 5.5 and 6.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM), version 1801 to back up virtual machines running on the 5.5 and 6.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 ## Supported VMware features
 
-DPM 1711 provides the following features when backing up VMware virtual machines:
+DPM 1801 provides the following features when backing up VMware virtual machines:
 
-- Agentless backup: DPM 1711 does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
+- Agentless backup: DPM 1801 does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
 - Cloud Integrated Backup: DPM protects workloads to both disk and cloud. DPM's backup and recovery workflow helps you manage long-term retention and offsite backup.
 - Detect and protect VMs managed by vCenter: DPM detects and protects VMs deployed on a VMware server (vCenter or ESXi server). As your deployment size grows, use vCenter to manage your VMware environment. DPM also detects VMs managed by vCenter, allowing you to protect large deployments.
 - Folder level auto protection: vCenter lets you organize your VMs in VM folders. DPM detects these folders and lets you protect VMs at the folder level and includes all subfolders. When protecting folders, DPM not only protects the VMs in that folder, but also protects VMs added later. DPM detects new VMs on a daily basis and protects them automatically. As you organize your VMs in recursive folders, DPM automatically detects and protects the new VMs deployed in the recursive folders.
@@ -117,7 +117,7 @@ To verify there is a secure communication channel between DPM and vCenter, open 
 
 ![no secure communication channel ](./media/back-up-vmware/secure-communication-chrome.png)
 
-Or if you are using Internet Explorer, and you don't have a valid certificate, you see this message when you access the URL:
+If you are using Internet Explorer, and you don't have a valid certificate, you see this message when you access the URL:
 
 ![no secure communication channel ](./media/back-up-vmware/no-secure-communication-ie.png)
 
