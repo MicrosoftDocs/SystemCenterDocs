@@ -2,7 +2,7 @@
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
 ## [Features removed or deprecated](features-removed-or-deprecated.md)
-## [Release notes](get-started-release-notes.md)
+## [Release notes - 2016](get-started-release-notes.md)
 ## [Release notes - 1801](release-notes-1801.md)
 ## [What's new in Operations Manager 2016](what-is-new.md)
 ## [What's new in Operations Manager - 1801](what-is-new-1801.md)
