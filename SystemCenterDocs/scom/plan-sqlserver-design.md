@@ -276,7 +276,7 @@ In one customer deployment of Operations Manager 2012, which was monitoring mult
 
 ### Initial database sizing
 
-Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper]((https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors which can influence growth in the near term versus long term.  
+Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors which can influence growth in the near term versus long term.  
 
 The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then re-indexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database. 
 
