@@ -4,7 +4,7 @@ description: This article describes how to install all Operations Manager roles 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/24/2018
+ms.date: 01/29/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -51,7 +51,7 @@ You must ensure that your server meets the minimum supported configurations for 
 5.  On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    > Installation of the System Center 2016 - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+    > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
     > [!IMPORTANT]
     > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:

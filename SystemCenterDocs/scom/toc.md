@@ -82,6 +82,7 @@
 ### [Using the Operations Manager consoles](manage-consoles-overview.md)
 #### [Comparing the Operations and Web console](manage-consoles-comparison.md)
 #### [How to connect to the Operations and Web console](manage-consoles-how-to-connect.md)
+#### [Operations console refresh improvements](manage-overview-console-refresh.md)
 #### [Using Health Explorer](manage-consoles-overview-healthexplorer.md)
 #### [Using My Workspace](manage-consoles-my-workspace.md)
 #### [Finding data and objects in the consoles](manage-console-finding-data.md)
