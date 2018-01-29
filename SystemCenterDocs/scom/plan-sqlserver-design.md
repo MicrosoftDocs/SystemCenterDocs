@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  carmonm
-ms.date: 10/02/2017
+ms.date: 01/29/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # SQL Server Design Considerations
 
-System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
+System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
 In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.  In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration.  In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.  
 
@@ -29,10 +29,10 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 * SQL Server 2012, Service Pack 3 (x64)
 
 > [!NOTE] 
-> System Center 2016 – Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
+> System Center Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
 
 > [!NOTE] 
-> System Center 2016 – Operations Manager Reporting cannot be installed in a side-by-side fashion with the System Center Operations Manager 2012 R2 Reporting and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
+> System Center Operations Manager Reporting cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
 
 Additional hardware and software considerations apply in your design planning:
 
@@ -49,7 +49,7 @@ For additional information, please see [Hardware and Software Requirements for I
   
 ## SQL Server collation setting
 
-The following SQL Server and Windows collations are supported by System Center 2016 - Operations Manager.  
+The following SQL Server and Windows collations are supported by System Center Operations Manager.  
 
 ### SQL Server collation
 - SQL_Latin1_General_CP1_CI_AS 
@@ -172,7 +172,7 @@ Run the following Powershell query on the SQL node currently hosting the listene
     Start-ClusterResource <Listener Cluster Resource name>
     ```
 
-When a SQL cluster failover between different subnets occurs, you will have to restart the Operations Manager Data Access service on all your Management Servers.
+When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc). 
 
 ## Optimizing SQL Server
 
@@ -187,7 +187,7 @@ Such examples are,
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  Operations Manager’s I/O behavior pattern is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes quite noticeable in Operations Manager.
 
-It is very important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Leverage the [SQLIO disk subsystem benchmarking tool](https://www.microsoft.com/download/details.aspx?id=20163) to determine the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides very detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](http://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the Operations Manager Sizing Helper  for initial guidance. 
+It is very important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Leverage the [SQLIO disk subsystem benchmarking tool](http://www.microsoft.com/download/details.aspx?id=20163) to determine the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides very detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](http://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance. 
 
 ### NTFS allocation unit size
 
@@ -306,8 +306,8 @@ It is important to understand that there is no right answer here, and the optimi
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use Operations Manager Sizing Helper to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task . 
-See also [Operations Manager virtualization support](/system-center/orchestrator/system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
+In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task . 
+See also [Operations Manager virtualization support](plan-system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 
@@ -327,3 +327,5 @@ The Reporting Services instance acts as a proxy for access to data in the Data W
 
 Behind the scenes of Reporting Services, there is a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply. 
 
+## Next steps
+Review the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/) to help estimate storage and system requirements to host the Operations Manager databases in support of your design planning.  
