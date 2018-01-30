@@ -8,13 +8,14 @@ ms.prod:  system-center-threshold
 ms.technology:  system-center-2016
 ms.topic:  article
 ms.author: raynew
+monikerRange: 'sc-orch-2016'
 ---
 
 
 
 # Upgrade in Orchestrator
 
-You can upgrade to the latest version of  System Center - Orchestrator to System Center using the steps below. 
+You can upgrade to the latest version of  System Center - Orchestrator to System Center using the steps below.
 
 
 ## Before you start
@@ -58,7 +59,7 @@ ms.author: raynew
 
 # Upgrade in Orchestrator
 
-You can upgrade to the latest version of  System Center - Orchestrator to System Center using the steps below. 
+You can upgrade to the latest version of  System Center - Orchestrator to System Center using the steps below.
 
 
 ## Before you start

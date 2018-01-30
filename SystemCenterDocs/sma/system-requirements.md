@@ -8,6 +8,7 @@ keywords:
 ms.date: 01/22/2018
 title:  System requirements for Service Management Automation 2016
 ms.technology:  service-management-automation
+monikerRange: 'sc-sma-2016'
 ---
 
 # System requirements for Service Management Automation 2016
