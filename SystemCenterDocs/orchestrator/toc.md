@@ -31,7 +31,7 @@
 ### [Track runbooks](track-runbooks-audit-trail.md)
 ## Manage Orchestrator Servers
 ### [Runbook permissions](runbook-permissions.md)
-### [Back u Orchestrator](how-to-back-up-orchestrator.md)
+### [Back up Orchestrator](how-to-back-up-orchestrator.md)
 ### [Bench mark](how-to-benchmark.md)
 ### [Optimize performance of .Net activities](how-to-optimize-dot-net-activities.md)
 ### [Configure runbook throttling](how-to-configure-runbook-throttling.md)
