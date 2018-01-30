@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager

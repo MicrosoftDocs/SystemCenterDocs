@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -16,9 +16,9 @@ ms.assetid: 0584ca74-1a8e-462a-9578-c2e1a503a4fd
 monikerRange: 'sc-sm-1801'
 ---
 
-# Upgrade System Center 1801 - Service Manager
+# Upgrade to System Center 1801 - Service Manager
 
-This article provides information about how to upgrade  System Center 2012 R2 and 2016 Service Manager to release 1801.  
+This article provides information about how to upgrade System Center 2012 R2 and 2016 Service Manager to release 1801.  
 
 > [!WARNING]  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  

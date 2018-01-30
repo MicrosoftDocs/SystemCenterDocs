@@ -5,7 +5,7 @@ description: This article explains about how to configure guest clusters in SDN 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 01/26/2018
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
@@ -14,7 +14,7 @@ monikerRange: 'sc-vmm-1801'
 
 # Configure guest clusters in SDN through VMM
 
-This article explains about how to configure guest clusters in SDN using the System Center Virtual machine Manager 1801.
+This article explains about how to configure guest clusters in SDN using the System Center 1801 - Virtual machine Manager (VMM).
 
 VMM currently supports guest clustering.  However, with the advent of the network controller (NC), Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
 

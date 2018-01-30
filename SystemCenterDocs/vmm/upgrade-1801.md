@@ -5,16 +5,16 @@ description: This article provides information about how to upgrade VMM servers 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
 monikerRange: 'sc-vmm-1801'
 ---
 
-# Upgrade to System Center 1801 - VMM
+# Upgrade to System Center 1801 - Virtual Machine Manager
 
-This article provides information about how to upgrade to System Center 1801 - Virtual Machine Manager (VMM). It also includes upgrade steps, and tasks you should complete after the upgrade finishes.
+This article provides information about how to upgrade to System Center 1801 - Virtual Machine Manager (VMM). Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 

@@ -1,10 +1,10 @@
 # Overview
 ## [What is VMM?](overview.md)
-## [What's new in VMM](whats-new.md)
-## [What's new in VMM 1801](Whats-new-vmm-1801.md)
+## [What's new in Virtual Machine Manager 2016](whats-new.md)
+## [What's new in Virtual Machine Manager 1801](Whats-new-vmm-1801.md)
 # Get Started
-## [Release notes - VMM 2016](release-notes.md)
-## [Release notes - VMM 1801](release-notes-1801.md)
+## [Release notes - Virtual Machine Manager 2016](release-notes.md)
+## [Release notes - Virtual Machine Manager 1801](release-notes-1801.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
@@ -37,8 +37,8 @@
 ### [Assign storage QoS policies for Clusters](qos-storage-clusters.md)
 # How To
 ## Plan
-### [System requirements for VMM 2016](system-reqs.md)
-### [System requirements VMM 1801](system-reqs-1801.md)
+### [System requirements - Virtual Machine Manager 2016](system-reqs.md)
+### [System requirements - Virtual Machine Manager 1801](system-reqs-1801.md)
 ### [Plan VMM installation](plan-install.md)
 ### [Plan a VMM high availability deployment](plan-ha-install.md)
 ### [Identify VMM ports and protocols](plan-ports-protocols.md)
@@ -46,8 +46,8 @@
 ### [Plan the VMM networking fabric](plan-network.md)
 ### [Identify supported storage arrays](supported-arrays.md)
 ## Upgrade and install
-### [Upgrade to VMM 2016](upgrade.md)
-### [Upgrade to VMM 1801](upgrade-1801.md)
+### [Upgrade to Virtual Machine Manager 2016](upgrade.md)
+### [Upgrade to Virtual Machine Manager 1801](upgrade-1801.md)
 ### [Install VMM](install.md)
 ### [Install the VMM console](install-console.md)
 ### [Enable enhanced console session](enhanced-console-session.md)

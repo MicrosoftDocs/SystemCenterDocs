@@ -6,7 +6,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 title:  How to upgrade from a previous version of Service Management Automation to 1801
 ms.technology:  service-management-automation
 ms.assetid:  23356ae4-74ba-46f0-8484-22f896a5e0f5

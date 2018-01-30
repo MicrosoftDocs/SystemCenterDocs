@@ -5,7 +5,7 @@ description: This article provides information about hardware and software syste
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  01/24/2018
+ms.date:  02/05/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation

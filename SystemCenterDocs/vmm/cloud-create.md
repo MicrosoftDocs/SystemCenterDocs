@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -122,7 +122,7 @@ To verify that the private cloud was created, check **VMs and Services** > **Clo
 ::: moniker range="sc-vmm-1801"
 
 ## Assign storage QoS policies to a private cloud
-System Center Virtual Machine Manager 1801 (SCVMM) supports storage QoS policies on a private cloud.
+System Center 1801 - Virtual Machine Manager (SCVMM) supports storage QoS policies on a private cloud.
 
 The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant admins and self-service users can consume these while deploying the VMs and services. This will enable the cloud providers to guarantee and/or limit the amount of storage performance as per the subscription opted by the tenants.  
 

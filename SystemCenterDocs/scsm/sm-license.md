@@ -7,7 +7,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.technology:  service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: 'sc-sm-1801'

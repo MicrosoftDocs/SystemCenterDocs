@@ -5,7 +5,7 @@ description: This article explains about how to configure encrypted networks in 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 01/26/2018
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
@@ -14,7 +14,7 @@ monikerRange: 'sc-vmm-1801'
 
 # Configure encrypted networks in SDN using VMM 1801
 
-This article explains about how to encrypt the VM networks in software defined network (SDN) using  System Center Virtual Machine Manager 1801.
+This article explains about how to encrypt the VM networks in software defined network (SDN) using  System Center 1801 - Virtual Machine Manager (VMM).
 
 Today, network traffic can be encrypted by the guest OS or an application using technologies like IPSec and TLS. However, these technologies are difficult to implement because of their inherent complexity and challenges related to interoperability between systems because of the nature of implementation.
 
