@@ -17,7 +17,7 @@ ms.assetid:
 You can install System Center Data Protection Manager (DPM) version 1801 on Windows Server 2012 R2, or on Windows Server 2016. DPM 1801 is the first release in the System Center Semi-Annual Channel (SAC). You can upgrade to DPM 1801 from either DPM 2012 R2 Update Rollup 14 (UR14), or from DPM 2016 Update Rollup 4 (UR4). Before you upgrade or install DPM 2016, read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
 
 
-## Upgrade path for DPM 2016
+## Upgrade path for DPM 1801
 If you are going to upgrade from DPM 2012 R2 or DPM 2016, to DPM 1801, make sure your installation has the necessary updates:
 
 - Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 14. If you are upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 4. You can download the Update Rollups from Windows Update.
@@ -32,15 +32,15 @@ If you are going to upgrade from DPM 2012 R2 or DPM 2016, to DPM 1801, make sure
 1. To install DPM, double-click Setup.exe to open the System Center 1801 wizard.
 2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. You can run DPM on Windows Server 2012 R2 with UR14. However, to use features such as Modern Backup Storage or RCT-based Hyper-V VM backup, you must use Windows Server 2016. For instructions on installing DPM, see the article, [Installing DPM](~/dpm/install-dpm.md).
+Some DPM 1801 features, such as Modern Backup Storage, require Windows Server 2016. You can run DPM 1801 on Windows Server 2012 R2 with UR14. However, to use features such as Modern Backup Storage or RCT-based Hyper-V VM backup, you must use Windows Server 2016. For instructions on installing DPM, see the article, [Installing DPM](~/dpm/install-dpm.md).
 
 ## Migrating the DPM database during upgrade
 
-You may want to move the DPM Database as part of an upgrade.  For example, you are merging instances of SQL Server. You are moving to a remote more powerful SQL server. You want to add fault tolerance by using a SQL Server cluster; or you want to move from a remote SQL server to a local SQL server or vice versa. DPM 2016 setup allows you to migrate the DPM database to different SQL Servers during an upgrade.
+You may want to move the DPM Database as part of an upgrade.  For example, you are merging instances of SQL Server. You are moving to a remote more powerful SQL server. You want to add fault tolerance by using a SQL Server cluster; or you want to move from a remote SQL server to a local SQL server or vice versa. DPM 1801 setup allows you to migrate the DPM database to different SQL Servers during an upgrade.
 
 ### Possible database migration scenarios
 
-The following scenarios exist when upgrading DPM 2012 R2 or DPM 2016 using a:
+The following scenarios exist when upgrading DPM 2012 R2 or DPM 2016 to DPM 1801 using a:
 1. Local instance and migrating to a remote instance of SQL Server during setup.
 2. Remote instance and migrating to a local instance of SQL Server during setup.
 3. Local instance and migrating to a remote SQL Server Cluster instance during setup.
