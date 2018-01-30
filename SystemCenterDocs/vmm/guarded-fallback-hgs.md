@@ -5,7 +5,7 @@ description: This article explains about how to configure the fallback HGS in VM
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 01/26/2018
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
@@ -14,7 +14,7 @@ monikerRange: 'sc-vmm-1801'
 
 # Configure HGS fallback URLs in VMM 1801
 
-This article describes how to define the fallback HGS URLs in VMM 1801 global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
+This article describes how to define the fallback HGS URLs in System Center 1801 - Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster.
 

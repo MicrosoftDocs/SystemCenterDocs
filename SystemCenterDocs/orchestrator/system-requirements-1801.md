@@ -1,10 +1,10 @@
 ---
 ms.assetid: 1e6e82dd-2ba6-45f2-8340-8efaeae1d4a6
 title: System Requirements for System Center 1801 - Orchestrator
-description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of your Orchestrator deployment.
+description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of your System Center 1801 - Orchestrator deployment.
 ms.author: v-jysur
 manager: vvithal
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.custom: na
 author: JYOTHIRMAISURI
 ms.prod: system-center-threshold

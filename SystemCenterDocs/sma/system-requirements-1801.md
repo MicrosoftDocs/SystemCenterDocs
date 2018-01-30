@@ -6,7 +6,7 @@ author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 title:  System requirements for Service Management Automation 1801
 ms.technology:  service-management-automation
 ms.assetid:  4a87ff3b-0d96-472c-8836-be98f1aec00f

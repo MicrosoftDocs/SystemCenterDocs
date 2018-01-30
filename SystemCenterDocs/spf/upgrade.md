@@ -8,12 +8,13 @@ ms.date:  01/22/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
+monikerRange: 'sc-spf-2016'
 ---
 
 # Upgrade to SPF 2016
 
 
-This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016. 
+This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016.
 
 The upgrade instructions in this article assume the following scenario:
 

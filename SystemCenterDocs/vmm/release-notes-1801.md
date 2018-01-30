@@ -5,7 +5,7 @@ description: This article details release notes for System Center Virtual Machin
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  riyazp
-ms.date:  01/26/2018
+ms.date:  02/05/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -14,7 +14,7 @@ monikerRange: 'sc-vmm-1801'
 
 # VMM 1801 release notes
 
-This article summarizes the release notes for System Center Virtual Machine Manager 1801 (VMM 1801).
+This article summarizes the release notes for System Center 1801 - Virtual Machine Manager (VMM).
 
 ## VM template created from Windows Server 1709 VM resets the Operating System incorrectly to Windows Server 2012 R2
 

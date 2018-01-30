@@ -9,6 +9,7 @@ ms.date:  01/22/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
+monikerRange: 'sc-spf-2016'
 ---
 
 # SPF 2016 system requirements

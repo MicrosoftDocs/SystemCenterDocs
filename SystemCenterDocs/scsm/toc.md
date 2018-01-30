@@ -8,8 +8,8 @@
 ## [Supported configurations](supported-configs.md)
 ## [System requirements - Service Manager 2016](sm-sys-reqs.md)
 ## [System requirements - Service Manager 1801](sm-sys-reqs-1801.md)
-## [Release Notes - Service Manager 2016](release-notes.md)
-## [Release Notes - Service Manager 1801](release-notes-1801.md)
+## [Release notes - Service Manager 2016](release-notes.md)
+## [Release notes - Service Manager 1801](release-notes-1801.md)
 # How to
 ## Plan
 ### [Planning for Service Manager](plan-sm.md)
@@ -47,7 +47,7 @@
 #### [Move databases](move-databases.md)
 ## Upgrade
 ### [Upgrade to Service Manager 2016](upgrade-to-sm-2016.md)
-### [Upgrade System Center Service Manager to 1801](upgrade-to-sm-1801.md)
+### [Upgrade to Service Manager 1801](upgrade-to-sm-1801.md)
 ### [Upgrade the self-service portal to Service Manager 2016](upgrade-configs-portal.md)
 ### [Upgrade SQL Server Reporting Services](prepare-remote-ssrs.md)
 ### [Set up a  lab environment for upgrade](set-up-lab-with-production-data.md)

@@ -8,7 +8,7 @@ ms.author: V-JYSUR
 ms.prod:  system-center-threshold
 ms.technology: service-provider-foundation
 keywords:
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 title:  Release Notes for System Center 1801 - Service Provider Foundation
 monikerRange: 'sc-spf-1801'
 ---

@@ -8,7 +8,7 @@ ms.author: V-JYSUR
 ms.prod:  system-center-threshold
 ms.technology: service-management-automation
 keywords:
-ms.date: 01/18/2018
+ms.date: 02/05/2018
 title:  Release Notes for System Center 1801 - Service Management Automation
 monikerRange: 'sc-sma-1801'
 ---

@@ -5,7 +5,7 @@ description: This article describes how to set storage QoS policies for clusters
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  riyazp
-ms.date:  01/26/2018
+ms.date:  02/05/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
@@ -14,7 +14,7 @@ monikerRange: 'sc-vmm-1801'
 
 # Manage storage QoS for clusters
 
-This article describes about how to manage storage quality-of-service (QoS) policies for clusters in the System Center Virtual Machine Manager (VMM) 1801.  
+This article describes about how to manage storage quality-of-service (QoS) policies for clusters in the System Center 1801 - Virtual Machine Manager (VMM).  
 
 
 ## Assign storage QoS policy for clusters

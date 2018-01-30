@@ -1,19 +1,19 @@
 # Overview
 ## [Orchestrator Overview](learn-about-orchestrator.md)
-## [What's new](whats-new-1801.md)
+## [What's new in Orchestrator 1801](whats-new-1801.md)
 ## [Automate with runbooks](automate-runbooks.md)
 # Get started
 ## [Install Orchestrator](install.md)
 ## [Work with runbooks in the Orchestrator console](console-overview.md)
 ## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
-## [Release notes](release-notes.md)
-## [Release notes 1801](release-notes-1801.md)
+## [Release notes - Orchestrator 2016](release-notes.md)
+## [Release notes - Orchestrator 1801](release-notes-1801.md)
 # How To
 ## Plan
 ### [Database sizing and performance](database-sizing-and-performance.md)
 ### [Feature performance considerations](feature-performance-considerations.md)
-### [System requirements](system-requirements.md)
-### [System Requirements 1801](system-requirements-1801.md)
+### [System requirements - Orchestrator 2016](system-requirements.md)
+### [System requirements - Orchestrator 1801](system-requirements-1801.md)
 ### [Design a runbook](designing-a-runbook.md)
 ## Deploy
 ### [Upgrade to Orchestrator 2016](upgrade-to-orchestrator.md)
@@ -31,7 +31,7 @@
 ### [Track runbooks](track-runbooks-audit-trail.md)
 ## Manage Orchestrator Servers
 ### [Runbook permissions](runbook-permissions.md)
-### [Back u Orchestrator](how-to-back-up-orchestrator.md)
+### [Back up Orchestrator](how-to-back-up-orchestrator.md)
 ### [Bench mark](how-to-benchmark.md)
 ### [Optimize performance of .Net activities](how-to-optimize-dot-net-activities.md)
 ### [Configure runbook throttling](how-to-configure-runbook-throttling.md)
