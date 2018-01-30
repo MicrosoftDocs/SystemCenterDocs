@@ -14,7 +14,7 @@ ms.assetid:
 
 # Upgrade to DPM 1801
 
-You can install System Center Data Protection Manager (DPM) version 1801 on Windows Server 2012 R2, or on Windows Server 2016. DPM 1801 is the first release in the System Center Semi-Annual Channel (SAC). You can upgrade to DPM 1801 from either DPM 2012 R2 Update Rollup 14 (UR14), or from DPM 2016 Update Rollup 4 (UR4). Before you upgrade or install DPM 2016, please read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
+You can install System Center Data Protection Manager (DPM) version 1801 on Windows Server 2012 R2, or on Windows Server 2016. DPM 1801 is the first release in the System Center Semi-Annual Channel (SAC). You can upgrade to DPM 1801 from either DPM 2012 R2 Update Rollup 14 (UR14), or from DPM 2016 Update Rollup 4 (UR4). Before you upgrade or install DPM 2016, read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
 
 
 ## Upgrade path for DPM 2016
@@ -30,9 +30,9 @@ If you are going to upgrade from DPM 2012 R2 or DPM 2016, to DPM 1801, make sure
 ### Upgrade steps for DPM
 
 1. To install DPM, double-click Setup.exe to open the System Center 1801 wizard.
-2. Under Install, click Data Protection Manager. This starts Setup. Agree to the license terms and conditions and follow the setup wizard.
+2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. You can run DPM on Windows Server 2012 R2 with UR14, however if you want features such as Modern Backup Storage or RCT-based Hyper-V VM backup, you must upgrade Windows Server installation to Windows Server 2016. For instructions on installing DPM, see the article, [Installing DPM](~/dpm/install-dpm.md).
+Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. You can run DPM on Windows Server 2012 R2 with UR14. However, to use features such as Modern Backup Storage or RCT-based Hyper-V VM backup, you must use Windows Server 2016. For instructions on installing DPM, see the article, [Installing DPM](~/dpm/install-dpm.md).
 
 ## Migrating the DPM database during upgrade
 
@@ -40,22 +40,27 @@ You may want to move the DPM Database as part of an upgrade.  For example, you a
 
 ### Possible database migration scenarios
 
-1. Upgrading DPM 2012 R2 or DPM 2016 using a local instance and migrating to a remote instance of SQL Server during setup.
-2. Upgrading DPM 2012 R2 or DPM 2016 using a remote instance and migrating to a local instance of SQL Server during setup.
-3. Upgrading DPM 2012 R2 or DPM 2016 using a local instance and migrating to a remote SQL Server Cluster instance during setup.
-4. Upgrading DPM 2012 R2 or DPM 2016 using a local instance and migrating to a different local instance of SQL Server during setup.
-5. Upgrading DPM 2012 R2 or DPM 2016 using a remote instance and migrating to a different remote instance of SQL Server during setup.
-6. Upgrading DPM 2012 R2 or DPM 2016 using a remote instance and migrating to a remote SQL Server Cluster instance during setup.
+The following scenarios exist when upgrading DPM 2012 R2 or DPM 2016 using a:
+1. Local instance and migrating to a remote instance of SQL Server during setup.
+2. Remote instance and migrating to a local instance of SQL Server during setup.
+3. Local instance and migrating to a remote SQL Server Cluster instance during setup.
+4. Local instance and migrating to a different local instance of SQL Server during setup.
+5. Remote instance and migrating to a different remote instance of SQL Server during setup.
+6. Remote instance and migrating to a remote SQL Server Cluster instance during setup.
 
 ### Preparing for a database migration
 
-The new SQL Server that you want to use to migrate the DPM database must have the same SQL Server requirements, setup configuration, firewall rules, and DPM Support files (sqlprep) installed before performing the DPM Upgrade.
+If you want to use a new SQL server to migrate the DPM database, before you upgrade DPM, be sure both SQL Servers have the same:
+- SQL Server requirements, 
+- setup configuration, 
+- firewall rules, 
+- and DPM Support files (sqlprep).
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
 ### Pre-upgrade steps: Backup and restore DPM 2012 R2 DPM database to a new SQL instance
 
-In this example, we will prepare a remote SQL Server cluster to use for the migration.
+This example prepares a remote SQL Server cluster to use in a migration.
 
 1. On the System Center Data Protection Manager 2012 R2 server or on the remote SQL Server hosting the DPM database, start **Microsoft SQL Management Studio** and connect to the SQL instance hosting the current DPM 2012 R2 DPMDB.
 2. Right-click the DPM database, and under **Tasks**, select the **Back Up…** option.
@@ -66,7 +71,7 @@ In this example, we will prepare a remote SQL Server cluster to use for the migr
 
       ![Confirm](./media/upgrade-to-dpm-2016/dpm-2016-confirm.png)
 
-4. After the backup is complete, copy the output file to the remote SQL Server.  If this is a SQL Cluster, copy it to the active node hosting the SQL instance you want to use in the DPM upgrade.  You have to copy it to the Shared Cluster disk before you can restore it.
+4. After the backup is complete, copy the output file to the remote SQL Server.  If this is a SQL Cluster, copy it to the active node hosting the SQL instance you want to use in the DPM upgrade.  Before you can restore the DPM database, you must copy it to the Shared Cluster disk.
 5. On the Remote SQL Server, start **Microsoft SQL Management Studio** and connect to the SQL instance you want to use in the DPM upgrade.  If this is a SQL Cluster, do this on the Active node that you copied the DPM backup file to.  The backup file should now be located on the shared cluster disk.
 6. Right-click the Databases icon, then select the **Restore Database…** option. This starts the restore wizard.
 
