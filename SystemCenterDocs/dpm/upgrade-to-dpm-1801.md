@@ -1,39 +1,38 @@
 ---
-description: Learn about the new features when you upgrade to DPM 2016. This article also provides an overview of how to upgrade your DPM installation.
+description: This article explains how to upgrade your DPM installation to version 1801.
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  1/29/2018
-title:  Upgrade to DPM-2016
+ms.date:  1/30/2018
+title:  Upgrade to DPM 1801
 ms.technology:  system-center-2016
-ms.assetid:  7f507ce9-676c-48df-9229-c02f2284a406
+ms.assetid:
 ---
 
-# Upgrade to DPM 2016
+# Upgrade to DPM 1801
 
-You can install DPM 2016 on Windows Server 2012 R2, or on Windows Server 2016. If you are installing DPM 2016 on Windows Server 2012 R2, you must upgrade an existing DPM installation from DPM 2012 R2 with Update Rollup 10 or greater. Before you upgrade or install DPM 2016, please read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
+You can install System Center Data Protection Manager (DPM) version 1801 on Windows Server 2012 R2, or on Windows Server 2016. DPM 1801 is the first release in the System Center Semi-Annual Channel (SAC). You can upgrade to DPM 1801 from either DPM 2012 R2 Update Rollup 14 (UR14), or from DPM 2016 Update Rollup 4 (UR4). Before you upgrade or install DPM 2016, please read the [Installation prerequisites](~/dpm/install-dpm.md#setup-prerequisites).
 
 
 ## Upgrade path for DPM 2016
-If you are going to upgrade from a previous version of DPM to DPM 2016, make sure your installation has the necessary updates:
+If you are going to upgrade from DPM 2012 R2 or DPM 2016, to DPM 1801, make sure your installation has the necessary updates:
 
-- Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 10. You can obtain the Update Rollups from Windows Update.
-- Upgrade DPM 2012 R2 Update Rollup 10 to DPM 2016.
+- Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 14. If you are upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 4. You can download the Update Rollups from Windows Update.
+- Upgrade the DPM server to DPM 1801.
 - Update the agents on the protected servers.
-- Upgrade Windows Server 2012 R2 to Windows Server 2016.
-- Upgrade DPM Remote Administrator on all production servers.
-- Backups will continue without rebooting your production server.
+- Upgrade the DPM Remote Administrator on all production servers.
+- Backups continue without rebooting your production server.
 
 
 ### Upgrade steps for DPM
 
-1. To install DPM, double-click Setup.exe to open the System Center 2016 Wizard.
+1. To install DPM, double-click Setup.exe to open the System Center 1801 wizard.
 2. Under Install, click Data Protection Manager. This starts Setup. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. It is possible to upgrade DPM 2016 from DPM 2012 R2, running on Windows Server 2012 R2. However, customers receiving DPM 2016 will want the latest features, so Microsoft recommends installing DPM 2016 on a new installation of Windows Server 2016 RTM. For instructions on installing DPM, see the article, [Installing DPM 2016](~/dpm/install-dpm.md).
+Some DPM 2016 features, such as Modern Backup Storage, require the Windows Server 2016 RTM build. You can run DPM on Windows Server 2012 R2 with UR14, however if you want features such as Modern Backup Storage or RCT-based Hyper-V VM backup, you must upgrade Windows Server installation to Windows Server 2016. For instructions on installing DPM, see the article, [Installing DPM](~/dpm/install-dpm.md).
 
 ## Migrating the DPM database during upgrade
 
@@ -41,18 +40,18 @@ You may want to move the DPM Database as part of an upgrade.  For example, you a
 
 ### Possible database migration scenarios
 
-1. Upgrading DPM 2012 R2 using a local instance and migrating to a remote instance of SQL Server during setup.
-2. Upgrading DPM 2012 R2 using a remote instance and migrating to a local instance of SQL Server during setup.
-3. Upgrading DPM 2012 R2 using a local instance and migrating to a remote SQL Server Cluster instance during setup.
-4. Upgrading DPM 2012 R2 using a local instance and migrating to a different local instance of SQL Server during setup.
-5. Upgrading DPM 2012 R2 using a remote instance and migrating to a different remote instance of SQL Server during setup.
-6. Upgrading DPM 2012 R2 using a remote instance and migrating to a remote SQL Server Cluster instance during setup.
+1. Upgrading DPM 2012 R2 or DPM 2016 using a local instance and migrating to a remote instance of SQL Server during setup.
+2. Upgrading DPM 2012 R2 or DPM 2016 using a remote instance and migrating to a local instance of SQL Server during setup.
+3. Upgrading DPM 2012 R2 or DPM 2016 using a local instance and migrating to a remote SQL Server Cluster instance during setup.
+4. Upgrading DPM 2012 R2 or DPM 2016 using a local instance and migrating to a different local instance of SQL Server during setup.
+5. Upgrading DPM 2012 R2 or DPM 2016 using a remote instance and migrating to a different remote instance of SQL Server during setup.
+6. Upgrading DPM 2012 R2 or DPM 2016 using a remote instance and migrating to a remote SQL Server Cluster instance during setup.
 
 ### Preparing for a database migration
 
-The new SQL Server that you want to use to migrate the DPM database to must have the same SQL Server requirements, setup configuration, firewall rules, and DPM Support files (sqlprep) installed before performing the DPM Upgrade.
+The new SQL Server that you want to use to migrate the DPM database must have the same SQL Server requirements, setup configuration, firewall rules, and DPM Support files (sqlprep) installed before performing the DPM Upgrade.
 
-Once you have the new instance of SQL Server installed and prepped for being used by DPM, you must make a backup of the current DPM 2012 R2 UR10 KB3143871 (4.2.1473.0) or a later database and restore it on the new SQL Server.
+Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
 ### Pre-upgrade steps: Backup and restore DPM 2012 R2 DPM database to a new SQL instance
 
