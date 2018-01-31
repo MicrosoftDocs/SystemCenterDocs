@@ -5,7 +5,7 @@ description: This article provides an overview of the new HTML5 Web console and 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/16/2018
+ms.date: 01/29/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'

@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade to Operations Man
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/11/2018
+ms.date: 01/31/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -17,7 +17,7 @@ ms.topic: article
 This section of the Deployment Guide provides information about how to upgrade to System Center 2016 - Operations Manager or version 1801 from an older supported version. For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016).
 
 > [!NOTE]
-> This is the only supported upgrade path to System Center 2016 - Operations Manager. If you are using Operations Manager 2012 Service Pack 1 (SP1), you must first upgrade to System Center Operations Manager 2012 R2 with Update Rollup 9.
+> This is the only supported upgrade path to System Center 2016 - Operations Manager or version 1801. If you are using Operations Manager 2012 Service Pack 1 (SP1), you must first upgrade to System Center Operations Manager 2012 R2 with Update Rollup 9 if you are going to upgrade to System Center 2016 - Operations Manager.
 
 It is assumed in this guide that you are performing an upgrade to System Center 2016 -  Operations Manager or version 1801. For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see [Deploying System Center Operations Manager](deploy-overview.md).
 
@@ -74,7 +74,7 @@ The following steps outline the process for upgrading a distributed management g
 
 ### High level overview System Center Operations Manager - upgrading agents and running two environments
 
-The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center 2012 R2 Operations Manager or Operations Manager 2016 environment is left intact. Agents that have been upgraded to System Center 2016 Operations Manager or version 1801 depending on your upgrade path, are fully capable of working with native System Center 2012 R2 URx Operations Manager or Operations Manager 2016 URx functionality.  
+The following upgrade path supports customers in an Operations Manager scenario with parallel environments, sharing agents, so that the original System Center 2012 R2 Operations Manager or Operations Manager 2016 environment is left intact. Agents that have been upgraded to System Center 2016 Operations Manager or version 1801 depending on your upgrade path, are fully capable of working with native System Center 2012 R2 Operations Manager or Operations Manager 2016 functionality.  
 
 Agents can be upgraded before the new Operations Manager management group is deployed and then configured to multi-home between the original management group and the new management group using your existing automation solution or they can be upgraded after by discovering and performing a push-install from the new Operations Manager management group.  For further information, see [How to Upgrade Agents in a Parallel Deployment](deploy-upgrade-agents-parallel.md).  
 
