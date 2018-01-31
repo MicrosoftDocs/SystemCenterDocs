@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/16/2018
+ms.date: 01/31/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -14,14 +14,14 @@ ms.topic: article
 ---
 
 # How create a dashboard with the Custom widget in the Web console
-In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a  dashboard in the new HTML5 Web console.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
 
 ## Script structure 
 A Custom Widget script has three major sections:
 
 1. Defining the API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data. 
 2. Specify business logic to identify the results to present in the visualization, such as identifying a class or group, conditions such as severity, health state, or a specific performance object instance.
-3. Third party visualization, which are open source libraries hosted on cloudflare.com that are required to render, depending on the chart type selected.   
+3. Third party visualization, which are open source libraries hosted on cloudflare.com that are required to render the data, depending on the chart type selected.   
 
 ### Widget properties
 In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://<servername>/operationsmanager/data/<dataitem>* and value for **dataitem** is one of the following:
@@ -94,7 +94,7 @@ To specify a group that contains a subset of objects of the same class specified
                     "objectIds": { "3c8ac4f3-475e-44dd-4163-8a97af363705": -1 },
 ```
 
-Once you have specified the target class and optionally a group to further scope the results, next you specify the criteria.  
+Once you have specified the target class and optionally a group to further scope the results, you then specify the criteria to limit the type of data to display according to the values of one or more properties.   
 
 ## Widget examples
 The widget supports rendering monitoring data in the following chart types:
