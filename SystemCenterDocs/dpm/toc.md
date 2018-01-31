@@ -3,19 +3,21 @@
 ## [How does DPM work?](how-dpm-protects-data.md)
 ## [What can DPM back up?](dpm-protection-matrix.md)
 # Get Started
-## [Release Notes for DPM 2016](dpm-release-notes.md)
+## [DPM release notes](dpm-release-notes.md)
 ## [What's new in DPM](what-s-new-in-dpm-2016.md)
-## [What's supported and what isn't for DPM?](dpm-support-issues.md)
-### [Upgrade to DPM 2016](upgrade-to-dpm-2016.md)
+## [What DPM supports](dpm-support-issues.md)
 # How To
 ## Plan Your DPM Environment
 ### [Get ready to deploy DPM servers](plan-dpm-deployment.md)
-### [Preparing your environment for Data Protection Manager](prepare-environment-for-dpm.md)
+### [Prepare your environment for DPM](prepare-environment-for-dpm.md)
 ### [Prepare data storage](plan-long-and-short-term-data-storage.md)
 ### [Identify compatible tape libraries](identify-compatible-tape-libraries.md)
 ### [Identify data sources you want to protect](identify-data-sources-to-protect.md)
 ## Install DPM
-### [Get DPM installed](install-dpm.md)
+### [Install DPM ](install-dpm.md)
+### Upgrade your DPM installation
+#### [Upgrade to DPM 2016](upgrade-to-dpm-2016.md)
+#### [Upgrade to DPM 1801](upgrade-to-dpm-1801.md)
 ### [Add Modern Backup storage](add-storage.md)
 ### [Deduplicate DPM storage](deduplicate-dpm-storage.md)
 ## Deploy DPM
@@ -39,6 +41,6 @@
 ### [Monitor DPM](monitor-dpm.md)
 ### [Set up DPM logging](set-up-dpm-logging.md)
 ### [Generate DPM reports](generate-dpm-reports.md)
-### [Manage and monitor DPM servers with Operations Manager](use-ops-manager-to-manage-monitor-dpm.md)
+### [Use SCOM to manage and monitor DPM servers](use-ops-manager-to-manage-monitor-dpm.md)
 ### [Improve replication performance](improve-replication-performance.md)
-### [Manage multiple DPM servers with Central Console](use-central-console-to-manage-multiple-dpm-servers.md)
+### [Use central console to manage DPM servers](use-central-console-to-manage-multiple-dpm-servers.md)
