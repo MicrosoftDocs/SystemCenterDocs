@@ -20,17 +20,17 @@ The following table provides a brief description of tasks you can accomplish wit
   
 |Tasks|Categories|  
 |-----------|----------------|  
-|Run system commands.|[System](system.md)|  
-|Perform schedule-based activities.|[Scheduling](scheduling.md)|  
-|Monitor processes or system-level events.|[Monitoring](monitoring.md)|  
-|Manage file interactions such as copying and moving files.|[File Management](file-management.md)|  
-|Send e-mail notifications.|[Email](email.md)|  
-|Support other notification types.|[Notification](notification.md)|  
-|Search for or modify data within a workflow.|[Utilities](utilities.md)|  
-|Manipulate text files.|[Text File Management](text-file-management.md)|  
-|Manage workflows.|[Runbook Control](runbook-control.md)|  
+|Run system commands.|[System](./standard-activities/system.md)|  
+|Perform schedule-based activities.|[Scheduling](./standard-activities/scheduling.md)|  
+|Monitor processes or system-level events.|[Monitoring](./standard-activities/monitoring.md)|  
+|Manage file interactions such as copying and moving files.|[File Management](./standard-activities/file-management.md)|  
+|Send e-mail notifications.|[Email](./standard-activities/email.md)|  
+|Support other notification types.|[Notification](./standard-activities/notification.md)|  
+|Search for or modify data within a workflow.|[Utilities](./standard-activities/utilities.md)|  
+|Manipulate text files.|[Text File Management](./standard-activities/text-file-management.md)|  
+|Manage workflows.|[Runbook Control](./standard-activities/runbook-control.md)|  
 
-[Here](alphabetical-list-of-standard-activities.md) is the alphabetical list of Orchestrator standard activities.
+[Here](./standard-activities/alphabetical-list-of-standard-activities.md) is the alphabetical list of Orchestrator standard activities.
   
 ## See Also  
   

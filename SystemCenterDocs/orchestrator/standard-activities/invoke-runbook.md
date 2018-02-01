@@ -53,9 +53,9 @@ The Invoke Runbook activity launches a runbook that you have specified. You can 
  The Invoke Runbook activity returns any data that the invoked runbook has defined in the Returned Data tab of the runbook properties. The values of these properties must be populated using [Return Data](return-data.md) activity in that workflow. If the current runbook needs to return data from the invoked runbook, then it must have its own [Return Data](return-data.md) activity that includes these values.  
   
 ### Credentials  
- If you use the Invoke Runbook activity and you use [Security Credentials](common-activity-properties.md#BKMK_SecurityCredentials), the account you use must be a member of the Orchestrator System group to run successfully.  
+ If you use the Invoke Runbook activity and you use [Security Credentials](common-activity-properties.md#security-credentials), the account you use must be a member of the Orchestrator System group to run successfully.  
   
 ## See Also  
  [Initialize Data](initialize-data.md)   
  [Return Data](return-data.md)   
- [Security Credentials](common-activity-properties.md#BKMK_SecurityCredentials)
+ [Security Credentials](common-activity-properties.md#security-credentials)
