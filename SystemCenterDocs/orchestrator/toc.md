@@ -47,7 +47,7 @@
 ### [Orchestrator standard activities](standard-activities.md)
 ### [Alphabetical list of Standard Activities](./standard-activities/alphabetical-list-of-standard-activities.md)
 ### [Ports and protocols of Standard Activities](./standard-activities/ports-and-protocols-of-standard-activities.md)
-### System
+### [System](./standard-activities/system.md)
 #### [Run Program](./standard-activities/run-program.md)
 #### [Run .NET Script](./standard-activities/run-net-script.md)
 #### [End Process](./standard-activities/end-process.md)
@@ -60,10 +60,10 @@
 #### [Monitor SNMP Trap](./standard-activities/monitor-snmp-trap.md)
 #### [Send SNMP Trap](./standard-activities/send-snmp-trap.md)
 #### [Set SNMP Variable](./standard-activities/set-snmp-variable.md)
-### Scheduling
+### [Scheduling](./standard-activities/scheduling.md)
 #### [Monitor Date/Time](./standard-activities/monitor-date-time.md)
 #### [Check Schedule](./standard-activities/check-schedule.md)
-### Monitoring
+### [Monitoring](./standard-activities/monitoring.md)
 #### [Monitor Event Log](./standard-activities/monitor-event-log.md)
 #### [Monitor Service](./standard-activities/monitor-service.md)
 #### [Get Service Status](./standard-activities/get-service-status.md)
@@ -76,7 +76,7 @@
 #### [Monitor Internet Application](./standard-activities/monitor-internet-application.md)
 #### [Get Internet Application Status](./standard-activities/get-internet-application-status.md)
 #### [Monitor WMI](./standard-activities/monitor-wmi.md)
-### File Management
+### [File Management](./standard-activities/file-management.md)
 #### [Compress File](./standard-activities/compress-file.md)
 #### [Copy File](./standard-activities/copy-file.md)
 #### [Create Folder](./standard-activities/create-folder.md)
@@ -92,13 +92,13 @@
 #### [PGP Encrypt File](./standard-activities/pgp-encrypt-file.md)
 #### [Print File](./standard-activities/print-file.md)
 #### [Rename File](./standard-activities/rename-file.md)
-### Email
+### [Email](./standard-activities/email.md)
 #### [Send Email](./standard-activities/send-email.md)
-### Notification
+### [Notification](./standard-activities/notification.md)
 #### [Send Event Log Message](./standard-activities/send-event-log-message.md)
 #### [Send Syslog Message](./standard-activities/send-syslog-message.md)
 #### [Send Platform Event](./standard-activities/send-platform-event.md)
-### Utilities
+### [Utilities](./standard-activities/utilities.md)
 #### [Apply XSLT](./standard-activities/apply-xslt.md)
 #### [Query XML](./standard-activities/query-xml.md)
 #### [Map Published Data](./standard-activities/map-published-data.md)
@@ -117,7 +117,7 @@
 #### [Disconnect Network Path](./standard-activities/disconnect-network-path.md)
 #### [Get Dial-up Status](./standard-activities/get-dial-up-status.md)
 #### [Connect/Disconnect Dial-up](./standard-activities/connect-disconnect-dial-up.md)
-### Text File Management
+### [Text File Management](./standard-activities/text-file-management.md)
 #### [Append Line](./standard-activities/append-line.md)
 #### [Delete Line](./standard-activities/delete-line.md)
 #### [Find Text](./standard-activities/find-text.md)
@@ -125,7 +125,7 @@
 #### [Insert Line](./standard-activities/insert-line.md)
 #### [Read Line](./standard-activities/read-line.md)
 #### [Search and Replace Text](./standard-activities/search-and-replace-text.md)
-### Runbook Control
+### [Runbook Control](./standard-activities/runbook-control.md)
 #### [Invoke Runbook](./standard-activities/invoke-runbook.md)
 #### [Initialize Data](./standard-activities/initialize-data.md)
 #### [Junction](./standard-activities/junction.md)
