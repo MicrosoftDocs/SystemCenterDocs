@@ -13,7 +13,7 @@ ms.author: bwren
 manager: cfreeman
 ---
 # Ports and Protocols of Standard Activities
-[!INCLUDE[orchshort](./includes/orchshort-md.md)] standard activities can communicate between the runbook servers where the runbook is deployed and any resource. If you have firewalls in your environment, when you use a standard activity, you must enable the ports between the runbook servers and resource as indicated in the following table.  
+Orchestrator standard activities can communicate between the runbook servers where the runbook is deployed and any resource. If you have firewalls in your environment, when you use a standard activity, you must enable the ports between the runbook servers and resource as indicated in the following table.  
   
 |Standard activity|Port on runbook server|Port on resource server|Notes|  
 |-----------------------|----------------------------|-----------------------------|-----------|  

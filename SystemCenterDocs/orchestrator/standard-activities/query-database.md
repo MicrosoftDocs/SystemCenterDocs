@@ -57,7 +57,7 @@ The Query Database activity queries a database and returns the resulting rows as
 |**Database type**|Select the **Database type** from the drop-down list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server|  
   
 > [!IMPORTANT]
->  When [!INCLUDE[orchshort](../../../SystemCenterDocs/orchestrator/standard-activities/includes/orchshort-md.md)] is installed on a non-English operating system, and you set the **Connection** for **Database type** to **SQL Server**, the Server input value cannot be **localhost**. You must use the actual computer name.  
+>  When Orchestrator is installed on a non-English operating system, and you set the **Connection** for **Database type** to **SQL Server**, the Server input value cannot be **localhost**. You must use the actual computer name.  
   
  Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.  
   

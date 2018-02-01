@@ -41,4 +41,4 @@ The following table provides a brief description of tasks you can accomplish whe
 |Rename files.|[Rename File](rename-file.md)|  
   
 > [!CAUTION]
->  If permissions on the [!INCLUDE[orchshort](./includes/orchshort-md.md)] installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.
+>  If permissions on the Orchestrator installation path are changed, and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.
