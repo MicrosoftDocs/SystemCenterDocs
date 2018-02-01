@@ -24,5 +24,5 @@ The following table provides a brief description of tasks you can accomplish whe
   
 |Tasks|Scheduling Activities|  
 |-----------|---------------------------|  
-|Invoke a runbook at a scheduled time.|[Monitor Date/Time](../../../SystemCenterDocs/orchestrator/standard-activities/monitor-date-time.md)|  
-|Verify that a runbook can run at its scheduled time.|[Check Schedule](../../../SystemCenterDocs/orchestrator/standard-activities/check-schedule.md)|
+|Invoke a runbook at a scheduled time.|[Monitor Date/Time](monitor-date-time.md)|  
+|Verify that a runbook can run at its scheduled time.|[Check Schedule](check-schedule.md)|

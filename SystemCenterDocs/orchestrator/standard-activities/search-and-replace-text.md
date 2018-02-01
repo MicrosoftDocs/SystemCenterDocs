@@ -45,7 +45,7 @@ The Search and Replace Text activity searches for and replaces text that you spe
 |**File encoding**|Click the ellipsis button **(...)** to open the **File Encoding** dialog box and select the format that the file is encoded in from the **File Encoding** drop-down list. Verify that you select the correct encoding format: if the file uses a different encoding format, the activity fails.|  
 |**Search text**|Type the text that you are searching for in the file.|  
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|  
-|**Use regular expressions**|Select this option to use regular expressions in your search. [!INCLUDE[crdefault](../../../SystemCenterDocs/orchestrator/standard-activities/includes/crdefault-md.md)][Using Regular Expressions](../Topic/Using%20Regular%20Expressions.md).|  
+|**Use regular expressions**|Select this option to use regular expressions in your search. |  
 |**Replacement text**|Type the text that you want to replace the search text with.|  
   
 ### Published Data  

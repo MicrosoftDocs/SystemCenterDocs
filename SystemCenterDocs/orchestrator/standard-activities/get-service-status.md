@@ -20,7 +20,7 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Get Service Status
-The Get Service Status activity will check the status of a service on any computer. Use the Get Service Status to check the status of service before performing another action. For example, if you have an SQL Server backup runbook that requires that SQL Server is stopped before performing the backup, you can check the status and then stop the service using the [Start/Stop Service](../../../SystemCenterDocs/orchestrator/standard-activities/start-stop-service.md) activity.  
+The Get Service Status activity will check the status of a service on any computer. Use the Get Service Status to check the status of service before performing another action. For example, if you have an SQL Server backup runbook that requires that SQL Server is stopped before performing the backup, you can check the status and then stop the service using the [Start/Stop Service](start-stop-service.md) activity.  
   
 ## Configuring the Get Service Status Activity  
  Before you configure the Get Service Status activity, you need to determine the following:  

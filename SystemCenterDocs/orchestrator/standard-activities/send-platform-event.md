@@ -22,7 +22,7 @@ manager: "cfreeman"
 # Send Platform Event
 The Send Platform Event activity creates an activity event with text that you specify. You can use the Send Platform Event activity to create notifications of any problems or general information that occur in the runbook.  
   
- For more information about activity events, see [Activity Events](../Topic/Activity%20Events.md).  
+ For more information about activity events, see [Activity Events](../activity-events.md).  
   
 ## Activity Properties  
   

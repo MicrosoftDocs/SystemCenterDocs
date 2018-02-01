@@ -43,7 +43,7 @@ The Find Text activity finds lines in a text file. Use the Find Text activity to
 |**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the File encoding drop-down list. Verify that you select the correct encoding format: if the file uses a different encoding format, the activity fails.|  
 |**Search text**|Type the text that you are searching for in the file.|  
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|  
-|**Use regular expressions**|Select this option to use regular expressions in your search. For more information on regular expressions, see [Using Regular Expressions](../Topic/Using%20Regular%20Expressions.md).|  
+|**Use regular expressions**|Select this option to use regular expressions in your search.|  
 |**Result**|Select one of the following options for your results:<br /><br /> **Only the first line that matches the text will be returned**<br /><br /> **All lines that match the text will be returned**|  
   
 ### Published Data  

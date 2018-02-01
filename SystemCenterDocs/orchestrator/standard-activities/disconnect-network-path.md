@@ -20,7 +20,7 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Disconnect Network Path
-The Disconnect Network Path activity allows you to disconnect a network path. You can disconnect network paths you mapped using the [Map Network Path](../../../SystemCenterDocs/orchestrator/standard-activities/map-network-path.md) activity or using another method.  
+The Disconnect Network Path activity allows you to disconnect a network path. You can disconnect network paths you mapped using the [Map Network Path](map-network-path.md) activity or using another method.  
   
 ## Configuring the Disconnect Network Path Activity  
  Before you configure the Disconnect Network Path activity, you need to determine the network path you want to disconnect.  

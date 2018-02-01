@@ -24,10 +24,10 @@ The following table provides a brief description of tasks you can accomplish wit
   
 |Tasks|Activity|  
 |-----------|--------------|  
-|Create a starting point in your runbook.|[Initialize Data](../../../SystemCenterDocs/orchestrator/standard-activities/initialize-data.md)|  
-|Return data from your runbook to another runbook or to an external system.|[Return Data](../../../SystemCenterDocs/orchestrator/standard-activities/return-data.md)|  
-|Publish data from any branch.|[Junction](../../../SystemCenterDocs/orchestrator/standard-activities/junction.md)|  
-|Run a runbook.|[Invoke Runbook](../../../SystemCenterDocs/orchestrator/standard-activities/invoke-runbook.md)|  
+|Create a starting point in your runbook.|[Initialize Data](initialize-data.md)|  
+|Return data from your runbook to another runbook or to an external system.|[Return Data](return-data.md)|  
+|Publish data from any branch.|[Junction](junction.md)|  
+|Run a runbook.|[Invoke Runbook](invoke-runbook.md)|  
   
 ## See Also  
- [Standard Activities](../../../SystemCenterDocs/orchestrator/standard-activities/standard-activities.md)
+ [Standard Activities](../standard-activities.md)

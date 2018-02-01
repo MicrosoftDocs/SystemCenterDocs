@@ -24,21 +24,21 @@ The following table provides a brief description of tasks you can accomplish whe
   
 |Tasks|File Management Activities|  
 |-----------|--------------------------------|  
-|Compress files into zip archives.|[Compress File](../../../SystemCenterDocs/orchestrator/standard-activities/compress-file.md)|  
-|Copy files from one directory to another.|[Copy File](../../../SystemCenterDocs/orchestrator/standard-activities/copy-file.md)|  
-|Create new folders.|[Create Folder](../../../SystemCenterDocs/orchestrator/standard-activities/create-folder.md)|  
-|Decompress files contained in a zip archive file.|[Decompress File](../../../SystemCenterDocs/orchestrator/standard-activities/decompress-file.md)|  
-|Delete files.|[Delete File](../../../SystemCenterDocs/orchestrator/standard-activities/delete-file.md)|  
-|Delete a folder, sub-folder, or the entire folder tree of a directory.|[Delete Folder](../../../SystemCenterDocs/orchestrator/standard-activities/delete-folder.md)|  
-|Verify that a file exists.|[Get File Status](../../../SystemCenterDocs/orchestrator/standard-activities/get-file-status.md)|  
-|Invoke a runbook when files in folders and sub-folder change.|[Monitor File](../../../SystemCenterDocs/orchestrator/standard-activities/monitor-file.md)|  
-|Invoke a runbook when a folder or files within a folder change.|[Monitor Folder](../../../SystemCenterDocs/orchestrator/standard-activities/monitor-folder.md)|  
-|Move a file from one directory to another.|[Move File](../../../SystemCenterDocs/orchestrator/standard-activities/move-file.md)|  
-|Move a folder and its sub-folders from one directory to another.|[Move Folder](../../../SystemCenterDocs/orchestrator/standard-activities/move-folder.md)|  
-|Decrypt a file or an entire folder tree.|[PGP Decrypt File](../../../SystemCenterDocs/orchestrator/standard-activities/pgp-decrypt-file.md)|  
-|Encrypt a file or an entire folder tree.|[PGP Encrypt File](../../../SystemCenterDocs/orchestrator/standard-activities/pgp-encrypt-file.md)|  
-|Print text files.|[Print File](../../../SystemCenterDocs/orchestrator/standard-activities/print-file.md)|  
-|Rename files.|[Rename File](../../../SystemCenterDocs/orchestrator/standard-activities/rename-file.md)|  
+|Compress files into zip archives.|[Compress File](compress-file.md)|  
+|Copy files from one directory to another.|[Copy File](copy-file.md)|  
+|Create new folders.|[Create Folder](create-folder.md)|  
+|Decompress files contained in a zip archive file.|[Decompress File](decompress-file.md)|  
+|Delete files.|[Delete File](delete-file.md)|  
+|Delete a folder, sub-folder, or the entire folder tree of a directory.|[Delete Folder](delete-folder.md)|  
+|Verify that a file exists.|[Get File Status](get-file-status.md)|  
+|Invoke a runbook when files in folders and sub-folder change.|[Monitor File](monitor-file.md)|  
+|Invoke a runbook when a folder or files within a folder change.|[Monitor Folder](monitor-folder.md)|  
+|Move a file from one directory to another.|[Move File](move-file.md)|  
+|Move a folder and its sub-folders from one directory to another.|[Move Folder](move-folder.md)|  
+|Decrypt a file or an entire folder tree.|[PGP Decrypt File](pgp-decrypt-file.md)|  
+|Encrypt a file or an entire folder tree.|[PGP Encrypt File](pgp-encrypt-file.md)|  
+|Print text files.|[Print File](print-file.md)|  
+|Rename files.|[Rename File](rename-file.md)|  
   
 > [!CAUTION]
->  If permissions on the [!INCLUDE[orchshort](../../../SystemCenterDocs/orchestrator/standard-activities/includes/orchshort-md.md)] installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.
+>  If permissions on the [!INCLUDE[orchshort](./includes/orchshort-md.md)] installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.

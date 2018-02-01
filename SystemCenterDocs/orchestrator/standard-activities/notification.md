@@ -24,6 +24,6 @@ The following table provides a brief description of tasks you can accomplish whe
   
 |Tasks|Notification Activities|  
 |-----------|-----------------------------|  
-|Create an entry in the Application Windows Event Log.|[Send Event Log Message](../../../SystemCenterDocs/orchestrator/standard-activities/send-event-log-message.md)|  
-|Create a message on the Syslog server.|[Send Syslog Message](../../../SystemCenterDocs/orchestrator/standard-activities/send-syslog-message.md)|  
-|Create an entry in the Application Windows Event Log.|[Send Platform Event](../../../SystemCenterDocs/orchestrator/standard-activities/send-platform-event.md)|
+|Create an entry in the Application Windows Event Log.|[Send Event Log Message](send-event-log-message.md)|  
+|Create a message on the Syslog server.|[Send Syslog Message](send-syslog-message.md)|  
+|Create an entry in the Application Windows Event Log.|[Send Platform Event](send-platform-event.md)|

@@ -20,7 +20,7 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Get Process Status
-The Get Process Status activity checks the status of a running process on any computer. Use the Get Process Status activity to check the status of a process before performing another action. For example, you can check that a process that was detected by the [Monitor Process](../../../SystemCenterDocs/orchestrator/standard-activities/monitor-process.md) activity is still running before shutting it down with the [End Process](../../../SystemCenterDocs/orchestrator/standard-activities/end-process.md) activity.  
+The Get Process Status activity checks the status of a running process on any computer. Use the Get Process Status activity to check the status of a process before performing another action. For example, you can check that a process that was detected by the [Monitor Process](monitor-process.md) activity is still running before shutting it down with the [End Process](end-process.md) activity.  
   
 > [!IMPORTANT]
 >  The Get Process Status activity returns a status of **failed** if the named process is not running. If the activity returns **failed**, the overall status of the runbook is set to **warning** or **failed**, depending on the number of activities in the runbook.  

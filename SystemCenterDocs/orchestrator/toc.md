@@ -103,7 +103,7 @@
 #### [Query XML](./standard-activities/query-xml.md)
 #### [Map Published Data](./standard-activities/map-published-data.md)
 #### [Compare Values](./standard-activities/compare-values.md)
-#### [Write Web Pages](./standard-activities/write-web-pages.md)
+#### [Write Web Pages](./standard-activities/write-web-page.md)
 #### [Read Text Log](./standard-activities/read-text-log.md)
 #### [Write to Database](./standard-activities/write-to-database.md)
 #### [Query Database](./standard-activities/query-database.md)

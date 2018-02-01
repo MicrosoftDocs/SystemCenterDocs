@@ -23,14 +23,14 @@ manager: "cfreeman"
 The following table provides a brief description of tasks you can accomplish when using each Text File Management activity.  
   
 > [!CAUTION]
->  If permissions on the [!INCLUDE[orchshort](../../../SystemCenterDocs/orchestrator/standard-activities/includes/orchshort-md.md)] installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.  
+>  If permissions on the installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.  
   
 |Tasks|Text File Management Activities|  
 |-----------|-------------------------------------|  
-|Append a line of text into a text file.|[Append Line](../../../SystemCenterDocs/orchestrator/standard-activities/append-line.md)|  
-|Delete lines from a text file.|[Delete Line](../../../SystemCenterDocs/orchestrator/standard-activities/delete-line.md)|  
-|Find lines in a text file.|[Find Text](../../../SystemCenterDocs/orchestrator/standard-activities/find-text.md)|  
-|Get multiple lines from a text file.|[Get Lines](../../../SystemCenterDocs/orchestrator/standard-activities/get-lines.md)|  
-|Insert lines into a text file on a line number you specify.|[Insert Line](../../../SystemCenterDocs/orchestrator/standard-activities/insert-line.md)|  
-|Read lines from a text file.|[Read Line](../../../SystemCenterDocs/orchestrator/standard-activities/read-line.md)|  
-|Search for and replaces text in a file.|[Search and Replace Text](../../../SystemCenterDocs/orchestrator/standard-activities/search-and-replace-text.md)|
+|Append a line of text into a text file.|[Append Line](append-line.md)|  
+|Delete lines from a text file.|[Delete Line](delete-line.md)|  
+|Find lines in a text file.|[Find Text](find-text.md)|  
+|Get multiple lines from a text file.|[Get Lines](get-lines.md)|  
+|Insert lines into a text file on a line number you specify.|[Insert Line](insert-line.md)|  
+|Read lines from a text file.|[Read Line](read-line.md)|  
+|Search for and replaces text in a file.|[Search and Replace Text](search-and-replace-text.md)|

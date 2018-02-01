@@ -43,4 +43,4 @@ The Junction activity allows you to wait for multiple branches in a runbook to c
 |Selected branch|The activity that was selected to have its data published.|  
   
 ## See Also  
- [Standard Activities](../../../SystemCenterDocs/orchestrator/standard-activities/standard-activities.md)
+ [Standard Activities](../standard-activities.md)
