@@ -4,7 +4,7 @@ description: This article describes how deploy the Operations Manager Web consol
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/01/2018
+ms.date: 02/02/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -16,7 +16,11 @@ ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 
 System Center - Operations Manager can display select dashboards from the Web console in SharePoint to see at a glance the status of operational metrics, such as availability and performance of your managed services.  This is especially beneficial to members of your organization who don't need access to Operations Manager, such as service managers, executives, and even end-users of the service.  
 
-Use the following procedures to configure dashboards on a SharePoint page.  This is accomplished using the Page Viewer Web Part included with SharePoint, which lets you view another web page from within your SharePoint page.  If the user hasn't already been granted rights to view operational data from either console available in Operations Manager, they will need to be [assigned membership](manage-security-overview.md#how-to-assign-members-to-built-in-user-roles) to one of the built-in user roles.  If the user will only need to view the data but not interact with it from the Operations or web console, such as close an alert or perform some other related task, consider adding them to the **Read-only Operator** role.  
+Use the following procedures to configure dashboards on a SharePoint page.  This is accomplished using the Page Viewer Web Part included with SharePoint, which lets you view another web page from within your SharePoint page.  If the user hasn't already been granted rights to view operational data from either console available in Operations Manager, they will need to be [assigned membership](manage-security-overview.md#how-to-assign-members-to-built-in-user-roles) to one of the built-in user roles.  If the user will only need to view the data but not interact with it from the Operations or web console, such as close an alert or perform some other related task, consider adding them to the **Read-only Operator** role.
+
+> [!NOTE]
+> Silverlight-based dashboards made accessible from the SharePoint web part can only be viewed using Internet Explorer. 
+> 
   
 ## How to configure the web part to connect to a Web console  
 
@@ -34,10 +38,10 @@ Use the following procedures to configure dashboards on a SharePoint page.  This
   
 7.  Click the arrow in the top right of the web part, and then click **Edit web part**.  
   
-8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard.  Append `&disabletree=true` at the end of the URL to disable the tree view from being displayed on the SharePoint page.  
+8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard view.  Append `&disabletree=true` at the end of the URL to disable the tree view from being displayed with the SharePoint web part.  
 
     > [!IMPORTANT]
-    > Adding the URL parameter `&disabletree=true` to disable the monitoring tree from the web part only works with the System Center 2016 - Operations Manager web console.  It does not work with dashboards accessible from version 1801 web console.  
+    > Adding the URL parameter `&disabletree=true` to disable the monitoring tree from the web part only works with the System Center 2016 - Operations Manager web console.  It does not work with dashboard views accessible from version 1801 web console.  
     > 
 
 9. Configure the appearance, layout, and Advance properties of the SharePoint page, and then click **OK**.
