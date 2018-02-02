@@ -135,7 +135,7 @@
 ### [Installation](./orch-integration-toolkit/installation.md)
 ### [Command Line Activity Wizard](./orch-integration-toolkit/command-line-activity-wizard.md)
 ### [Integration Pack Wizard](./orch-integration-toolkit/integration-pack-wizard.md)
-## Integration Packs
+## [Integration Packs](list-of-orchestrator-integration-packs.md)
 ### [Active Directory](active-directory-integration-pack.md)
 #### [Active Directory activities](active-directory-activities.md)
 ##### [Add Computer To Group](add-computer-to-group.md)
