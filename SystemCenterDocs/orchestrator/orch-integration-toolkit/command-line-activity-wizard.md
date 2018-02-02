@@ -56,7 +56,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
   
 10. When you are finished adding and modifying commands, click **Next**. The assembly file specified at the start of the wizard is compiled, and when the process is complete, the final wizard page displays.  
   
-11. If you wish to immediately build an Integration Pack from this new assembly, click the **Build Integration Pack** button, which launches the Integration Pack Wizard and pre-loads the information from the assembly. Then, follow the instructions in [Creating a New Integration Pack](integration-pack-wizard.md#creating-new-ip) to create the Integration Pack.  
+11. If you wish to immediately build an Integration Pack from this new assembly, click the **Build Integration Pack** button, which launches the Integration Pack Wizard and pre-loads the information from the assembly. Then, follow the instructions in [Creating a New Integration Pack](integration-pack-wizard.md#creating-a-new-integration-pack) to create the Integration Pack.  
   
 12. If you wish to test your assembly using the Invoke .NET activity or just skip the IP build process for now, click **Finish**.  
   

@@ -131,11 +131,11 @@
 #### [Junction](./standard-activities/junction.md)
 #### [Return Data](./standard-activities/return-data.md)
 ## Integration Toolkit
-### [Orchestrator Integration Toolkit](oit-landing-page.md)
-#### [Overview of Orchestrator Integration Toolkit](orchestrator-integration-toolkit-overview.md)
-#### [Installation](installation.md)
-#### [Command Line Activity Wizard](command-line-activity-wizard.md)
-#### [Integration Pack Wizard](integration-pack-wizard.md)
+### [Orchestrator Integration Toolkit](./orch-integration-toolkit/oit-landing-page.md)
+#### [Overview of Orchestrator Integration Toolkit](./orch-integration-toolkit/orchestrator-integration-toolkit-overview.md)
+#### [Installation](./orch-integration-toolkit/installation.md)
+#### [Command Line Activity Wizard](./orch-integration-toolkit/command-line-activity-wizard.md)
+#### [Integration Pack Wizard](./orch-integration-toolkit/integration-pack-wizard.md)
 ## Integration Packs
 ### [Active Directory](active-directory-integration-pack.md)
 #### [Active Directory activities](active-directory-activities.md)
