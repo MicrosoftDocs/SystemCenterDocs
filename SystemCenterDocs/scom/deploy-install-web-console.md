@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/29/2018
+ms.date: 02/02/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -72,11 +72,6 @@ The local and remote parameters are as follows:
     > [!NOTE]
     > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
-    > [!IMPORTANT]
-    > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
-    > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
-
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
 7.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Next**.
@@ -115,11 +110,6 @@ The local and remote parameters are as follows:
 
     > [!NOTE]
     > Installation of the System Center 2016 - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
-
-    > [!IMPORTANT]
-    > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
-    > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
@@ -163,6 +153,8 @@ The local and remote parameters are as follows:
     ```
 
 ## To configure permissions inheritance for the Web console
+
+The following steps are for configuring permission inheritance for the System Center 2016 - Operations Manager Web console.  
 
 1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, C:\Program Files\System Center 2016\Operations Manager\WebConsole\MonitoringView), right-click the TempImages folder, and click **Properties**.
 

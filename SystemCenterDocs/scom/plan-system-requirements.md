@@ -5,14 +5,14 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/24/2018
+ms.date: 02/02/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# System requirements for System Center 2016 - Operations Manager
+# System requirements for System Center Operations Manager
 
 The topic describes general performance and scalability guidance for System Center 2016 - Operations Manager and version 1801.  It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 
@@ -56,8 +56,7 @@ If you are upgrading an installation of System Center 2012 R2 Operations Manager
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager or version 1801, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853).
 
 > [!NOTE] 
-> While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 or 1801 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  This will be addressed in an updated release of the sizing helper document.  
-
+> While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 or 1801 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  
 
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
@@ -130,10 +129,17 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
-### Web console 
+### Web console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
-- Client web browser:  Internet Explorer 11 and SilverLight 5  
+- Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
+- Client web browser for HTLM5 web console:  
+
+    - Internet Explorer version 11 
+    - Microsoft Edge version 40 and higher
+    - Google Chrome version 61 and higher
+    - Firefox version 56 and higher
+  
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
     - Static Content 
@@ -155,10 +161,6 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 > [!NOTE]
 > Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
-
-> [!WARNING]
-> You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the Run As Administrator option, and then run the following command:
-**%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 ### Operations Manager reporting server
 
