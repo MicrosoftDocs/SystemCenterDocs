@@ -152,7 +152,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     - Static Content Compression
     - Web Server (IIS) Support
     - IIS 6 Metabase Compatibility
-    - ASP.NET (both the 2.0 and 4.0 versions of ASP.NET are required.) 
+    - ASP.NET (both the 3.5 and 4.5 or higher versions of ASP.NET are required.) 
     - Windows Authentication 
  <br>
 - Selected website for web console: Requires a configured http or https binding.
