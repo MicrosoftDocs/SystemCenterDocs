@@ -124,7 +124,6 @@ System Center Orchestrator enables integration, efficiency, and business alignme
 -   Activities developed using the Opalis API and then packaged into an Integration Pack using the QIK Wizard also require a two-step process which involves modifying the source code using the process defined in QIK API Custom Activity Migration, and repackaging the IP using the new Integration Pack Wizard using the process defined in QIK IP Migration.  
   
 ## See Also  
- [TechNet Library home page for Orchestrator](http://go.microsoft.com/fwlink/?linkid=219453)   
- [Orchestrator Integration Packs](http://go.microsoft.com/fwlink/?linkid=220929)   
- [Integration Toolkit Documentation](http://go.microsoft.com/fwlink/?linkid=225844)   
+ [Orchestrator documentation](../learn-about-orchestrator.md)   
+ [Orchestrator Integration Packs](../list-of-orchestrator-integration-packs.md)      
  [Orchestrator SDK](https://msdn.microsoft.com/en-us/library/hh855054.aspx)
