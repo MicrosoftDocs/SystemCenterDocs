@@ -130,9 +130,12 @@
 #### [Initialize Data](./standard-activities/initialize-data.md)
 #### [Junction](./standard-activities/junction.md)
 #### [Return Data](./standard-activities/return-data.md)
-## Integration Toolkit
-### [Install Orchestrator Integration Toolkit](integration-toolkit.md)
-## Integration Packs
+## [Orchestrator Integration Toolkit](./orch-integration-toolkit/oit-landing-page.md)
+### [Overview of Orchestrator Integration Toolkit](./orch-integration-toolkit/orchestrator-integration-toolkit-overview.md)
+### [Installation](./orch-integration-toolkit/installation.md)
+### [Command Line Activity Wizard](./orch-integration-toolkit/command-line-activity-wizard.md)
+### [Integration Pack Wizard](./orch-integration-toolkit/integration-pack-wizard.md)
+## [Integration Packs](list-of-orchestrator-integration-packs.md)
 ### [Active Directory](active-directory-integration-pack.md)
 #### [Active Directory activities](active-directory-activities.md)
 ##### [Add Computer To Group](add-computer-to-group.md)
