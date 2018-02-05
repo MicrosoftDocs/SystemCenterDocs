@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/31/2018
+ms.date: 02/05/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -14,12 +14,15 @@ ms.topic: article
 ---
 
 # How create a dashboard with the Custom widget in the Web console
-In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
+
+## Using the Operations Manager REST API reference
+Use the [REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](https://github.com/MicrosoftDocs/opsmgr-docs-rest-apis), if you haven't already seen it. 
 
 ## Script structure 
 A Custom Widget script has three major sections:
 
-1. Defining the API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data. 
+1. Defining the REST API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data. 
 2. Specify business logic to identify the results to present in the visualization, such as identifying a class or group, conditions such as severity, health state, or a specific performance object instance.
 3. Third party visualization, which are open source libraries hosted on cloudflare.com that are required to render the data, depending on the chart type selected.   
 
