@@ -17,7 +17,7 @@ ms.topic: article
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
 
 ## Using the Operations Manager REST API reference
-Use the [REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](https://github.com/MicrosoftDocs/opsmgr-docs-rest-apis), if you haven't already seen it. 
+Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](https://github.com/MicrosoftDocs/opsmgr-docs-rest-apis), if you haven't already seen it. 
 
 ## Script structure 
 A Custom Widget script has three major sections:
