@@ -4,7 +4,7 @@ description: This article describes issues and workarounds for System Center Ope
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/24/2018
+ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -29,3 +29,8 @@ The following release notes apply to System Center Operations Manager 1801.
 
 ## Access Silverlight dashboards in Web Console using a different URL
 **Description:** With HTML5 dashboards in Operations Manager 1801, the entire Web console is HTML based. Silverlight dashboards cannot be displayed in the Web console. To access  existing Silverlight dashboards, you have to access using the following URL using Internet Explorer with Silverlight enabled - `http(s)://<Servername>/dashboard` and this will display all Silverlight dashboards. 
+
+## Attempting to upgrade Reporting server fails prerequisites check
+**Description:** While attempting to perform an upgrade of System Center 2016 - Operations Manager Reporting server to version 1801, the prerequisites checker will report the following error: **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.** and the upgrade cannot proceed.  This error occurs in a distributed management group scenario where the Reporting server is on a server  separate from one or more management servers in the management group.   
+
+**Workaround:** Install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 1801.  Once the upgrade is successfully completed, you can uninstall the upgraded Operations console from the Reporting server.  
