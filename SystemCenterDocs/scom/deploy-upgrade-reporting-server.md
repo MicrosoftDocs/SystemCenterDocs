@@ -5,7 +5,7 @@ description: This article describes how to upgrade the Reporting server to the l
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/15/2018
+ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -18,7 +18,18 @@ Use this procedure to upgrade a stand-alone Reporting server to System Center 20
 
 Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
-### To upgrade the Reporting server
+## Before performing the upgrade
+
+When you try to upgrade System Center 2016 Operations Manager Reporting server to System Center Operations Manager 1801 reporting server, the upgrade fails for the following configuration:
+
+  * Server A is configured as the System Center 2016 Operations Manager management server.
+  * Server B is configured with SQL Server hosting the System Center 2016 Operations Manager operational and data warehouse database, and Operations Manager Reporting server or a standalone SQL Server hosting Reporting server.
+
+The prerequisites checker will report the following error:  **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.**
+
+To work around this issue, install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 1801.  Once the upgrade is successfully completed, you can re-run setup and uninstall the upgraded Operations console from the Reporting server.  
+
+## To upgrade the Reporting server
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
 
@@ -43,7 +54,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 
 8.  When upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
 
-### To upgrade the Reporting server from the Command Prompt
+## To upgrade the Reporting server from the Command Prompt
 
 1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
 
