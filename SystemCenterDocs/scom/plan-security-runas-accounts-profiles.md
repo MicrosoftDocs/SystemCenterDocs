@@ -4,10 +4,10 @@ title: Run As Accounts and Profiles
 description:  This article describes how to use run as accounts and profiles to securely monitor objects on agent-managed systems with Operations Manager 2016. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -73,7 +73,7 @@ Example of Run As account distribution: SQL Server1 and SQL Server2 are two diff
 
 ## Run As account security
 
-In System Center 2016 - Operations Manager, Run As account credentials are distributed only to computers that you specify (the more secure option). If Operations Manager automatically distributed the Runs As account according to discovery, a security risk would be introduced into your environment as illustrated in the following example. This is why an automatic distribution option was not included in Operations Manager.
+In System Center Operations Manager, Run As account credentials are distributed only to computers that you specify (the more secure option). If Operations Manager automatically distributed the Runs As account according to discovery, a security risk would be introduced into your environment as illustrated in the following example. This is why an automatic distribution option was not included in Operations Manager.
 
 For example, Operations Manager identifies a computer as hosting SQL Server 2016 based on the presence of a registry key. It is possible to create that same registry key on a computer that is not actually running an instance of SQL Server 2016. If Operations Manager were to automatically distribute the credentials to all agent managed computers that have been identified as SQL Server 2016 computers, the credentials would be sent to the imposter SQL Server and they would be available to anyone with administrator rights on that server.
 

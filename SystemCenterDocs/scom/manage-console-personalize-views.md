@@ -4,9 +4,9 @@ description: This article describes how to customize views in the Operations Man
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 11/28/2016
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
@@ -14,7 +14,7 @@ ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f
 
 # How to personalize a view in Operations Manager
 
-In System Center 2016 - Operations Manager, views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view but you cannot save any changes to it. However, you can change the display options of the view and then save it as a personalized view.  
+In System Center Operations Manager, views are contained in management packs. If a view is contained in a sealed management pack, you can open the properties of the view but you cannot save any changes to it. However, you can change the display options of the view and then save it as a personalized view.  
   
 > [!NOTE]  
 > Personalized views are only visible to the user who personalized the view.  

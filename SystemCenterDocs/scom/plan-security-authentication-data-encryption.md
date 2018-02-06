@@ -1,20 +1,20 @@
 ---
 ms.assetid: 4be928cd-4a38-4f73-9d5f-87d438db2d4b
 title: Authentication and Data Encryption in Operations Manager
-description: This article provides design guidance explaining how secure authentication occurs with Operations Manager 2016 and options available.
+description: This article provides design guidance explaining how secure authentication occurs with Operations Manager and options available.
 author: mgoedtel
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 02/03/2017
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Authentication and Data Encryption in Operations Manager
 
-System Center 2016 – Operations Manager consists of features such as the management server, gateway server, Reporting server, Operational database, Reporting data warehouse, agent, web console, and Operations console. This section explains how authentication is performed and identifies connection channels where the data is encrypted.
+System Center Operations Manager consists of features such as the management server, gateway server, Reporting server, Operational database, Reporting data warehouse, agent, web console, and Operations console. This section explains how authentication is performed and identifies connection channels where the data is encrypted.
 
 ## Certificate-Based Authentication
 

@@ -4,17 +4,17 @@ title: Control Access by Using the Health Service Lockdown Tool in Operations Ma
 description: This article describes how to configure the Operations Manager agent Health Service with restricted privileges.   
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Control access by using the Health Service Lockdown Tool in Operations Manager
 
-On computers requiring high security, for example a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command\-line options to control and limit the identities used to run a rule, task, or monitor.  
+On computers requiring high security, for example a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
   
 > [!NOTE]  
 > You will be unable to start the System Center Management service if you have used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the System Center Management service, follow the second procedure in this topic to unlock the Action Account.  
