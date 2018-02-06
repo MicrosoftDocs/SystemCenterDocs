@@ -1,11 +1,11 @@
 ---
-description: Use DPM 1801 to back up and restore VMware VMs.
+description: Use DPM to back up and restore VMware VMs.
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 1/25/2018
+ms.date: 2/8/2018
 title:  Back up and restore VMware Virtual Machines
 ms.technology:  data-protection-manager
 ms.assetid:
@@ -15,7 +15,7 @@ monikerRange: 'sc-dpm-1801'
 
 # Use DPM 1801 to back up and restore VMware virtual machines
 
-This article explains how to use Data Protection Manager (DPM), version 1801 to back up virtual machines running on the 5.5 and 6.0 versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM), version 1801 to back up virtual machines running on the 5.5, 6.0, or 6.5  versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 ## Supported VMware features
 
