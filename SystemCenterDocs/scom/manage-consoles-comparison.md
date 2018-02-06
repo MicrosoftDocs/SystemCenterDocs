@@ -3,18 +3,18 @@ title: Comparing the Operations and Web Console
 description: This article describes both of the Operations Manager consoles and the differences between them for viewing monitoring data and performing administration in the management group.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
-ms.date: 12/05/2016
+ms.manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572
 ---
 
 # Comparing the Operations and Web console
-  
-System Center 2016 – Operations Manager includes two consoles, the Operations console and Web console.  The Operations console is the primary tool used for managing your Operations Manager deployment. In the Operations console, you view and interact with alerts and monitoring data, manage and edit monitoring configuration, generate and view reports,  administer management group settings, and build a personal workspace that is customized to your needs.
+
+System Center Operations Manager includes two consoles, the Operations console and Web console.  The Operations console is the primary tool used for managing your Operations Manager deployment. In the Operations console, you view and interact with alerts and monitoring data, manage and edit monitoring configuration, generate and view reports,  administer management group settings, and build a personal workspace that is customized to your needs.
 
 The Web console is a web-based user interface which provides access to all the monitoring data and tasks that are actions that can be run against monitored computers from the Operations console.  It does not have the full functionality of the Operations console, however, and provides access to only the Monitoring and My Workspace views. 
 
@@ -49,12 +49,11 @@ There are a few differences between the Operations console and Web console that 
   
 -   There are no subscription options in the Web console.  
 
--   Dashboard views are not supported.  You need to access the Operations Manager 2012 R2 Web console to interact with dashboards.  
-
+-   Silverlight dashboard views are not supported.  For backwards compatibility, you access Silverlight-enabled dashboards using the following URL in Internet Explorer: `http://<servername>/dashboard`.     
 
 ## Next steps
 
 * Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.  
 
-- In the Operations console, you view monitoring data, manage monitoring configuration, create your own custom views and dashboards that are personalized for your experience, and perform management group configuration administration by [Using the Operations Manager Operations console](manage-consoles-overview.md).   
+- Learn what actions you can perform in the [Monitoring workspace](manage-using-monitoring-workspace.md), [Authoring workspace](manage-using-authoring-workspace.md), [Administration workspace](manage-using-admin-workspace.md), and [Reporting workspace](manage-using-reporting-workspace.md).   
   

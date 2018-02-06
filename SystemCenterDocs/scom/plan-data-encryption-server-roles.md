@@ -4,8 +4,8 @@ title: Data Encryption for Web console and Reporting server Connections
 description: This article provides design guidance for Operations Manager 2016 roles where secure communication is required in the enterprise.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -43,7 +43,7 @@ To configure SQL Server Reporting Services Native mode for SSL encryption before
 
 After you install these two roles, you need to manually edit several configuration files to enable this algorithm on the IIS web server hosting the Web console, and the SQL Server report server.
 
-Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
+Enabling FIPS compliance for System Center Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
 
 The following is a summarized list of steps required to configure FIPS for your Web console server.
 

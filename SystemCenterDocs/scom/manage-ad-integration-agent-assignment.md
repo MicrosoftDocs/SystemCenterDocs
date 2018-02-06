@@ -1,10 +1,10 @@
 ---
 title: How to configure and use Active Directory Integration for agent assignment
-description: This article describes how to configure and use Active Directory integration for agent assignment and failover with your Operations Manager 2016 management group.
+description: This article describes how to configure and use Active Directory integration for agent assignment and failover with your Operations Manager management group.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/27/2017
+ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 
 # How to configure and use Active Directory Integration for agent assignment
 
-System Center 2016 – Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups. This topic will help you create and manage the configuration of the container in Active Directory, and agent assignment of management servers agents should report to.
+System Center 2016 Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups. This topic will help you create and manage the configuration of the container in Active Directory, and agent assignment of management servers agents should report to.
 
 ## Create an Active Directory Domain Services Container for a management group
 You can use the following command-line syntax and procedure to create an Active Directory Domain Service (AD DS) container for a System Center 2016 - Operations Manager management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager management server. MOMADAdmin.exe must be run by an administrator of the specified domain.  
@@ -60,6 +60,10 @@ Use the following procedure to create the AD DS container.
 2.  At the prompt, for example, type the following:  
   
      `"C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\MOMADAdmin.exe" "Message Ops" MessageDom\MessageOMAdmins MessageDom\MessageADIntAcct MessageDom**` 
+
+    >[!NOTE]
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > 
   
 3.  The preceding command-line example will:  
   
@@ -120,7 +124,7 @@ Changing the agent assignment rule can result in computers no longer being assig
     
         The following LDAP query will only return computers running the Windows Server operating system and exclude domain controllers - `(&(objectCategory=computer)(operatingsystem=*server*))`.  This example LDAP query will only return computers running the Windows Server operating system and excludes domain controllers and servers hosting the Operations Manager or Service Manager management server role - `(&(objectCategory=computer)(operatingsystem=*server*)(!(userAccountControl:1.2.840.113556.1.4.803:=8192)(!(servicePrincipalName=*MSOMHSvc*))))`.  
   
-        For more information about LDAP queries, see  [Creating a Query Filter](https://go.microsoft.com/fwlink/?LinkId=73366) and [Active Directory: LDAP Syntax Filters](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx). 
+        For more information about LDAP queries, see  [Creating a Query Filter](http://go.microsoft.com/fwlink/?LinkId=73366) and [Active Directory: LDAP Syntax Filters](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx). 
 
     2.  Click **OK,** and then click **Next**.  
     
