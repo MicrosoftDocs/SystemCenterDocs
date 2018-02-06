@@ -23,7 +23,7 @@ Before you begin the upgrade process, make sure that your server meets the minim
 When you try to upgrade System Center 2016 Operations Manager Reporting server to System Center Operations Manager 1801 reporting server, the upgrade fails for the following configuration:
 
   * Server A is configured as the System Center 2016 Operations Manager management server.
-  * Server B is configured with SQL Server hosting the System Center 2016 Operations Manager operational and data warehouse database, and Operations Manager Reporting server.
+  * Server B is configured with SQL Server hosting the System Center 2016 Operations Manager operational and data warehouse database, and Operations Manager Reporting server or a standalone SQL Server hosting Reporting server.
 
 The prerequisites checker will report the following error:  **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.**
 
