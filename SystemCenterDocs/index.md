@@ -660,6 +660,20 @@ description: get-from-content-team
                                 </a>
                             </li>
                             <li>
+                                <a href="https://docs.microsoft.com/en-us/rest/operationsmanager">
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Operations Manager REST APIs </h3>
+                                                <p>Use REST APIs to access operational data with the new HTML-based Web console in Operations Manager.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>                            
+                            <li>
                                 <a href="https://msdn.microsoft.com/en-us/library/jj130093.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
