@@ -4,17 +4,17 @@ title: Using Operations Manager Shell
 description: This article describes how to use the Operations Manager shell to perform administrative tasks with PowerShell.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
+manager: carmonm
 ms.date: 01/03/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Using Operations Manager Shell
 
-In System Center 2016 - Operations Manager, the Operations Manager Shell is installed with the Operations Manager console; it provides a command-line environment and task-based scripting technology that you can use to automate many Operations Manager administrative tasks.  
+In System Center Operations Manager, the Operations Manager Shell is installed with the Operations Manager console; it provides a command-line environment and task-based scripting technology that you can use to automate many Operations Manager administrative tasks.  
   
 The Operations Manager Shell is built on Windows PowerShell. The Operations Manager Shell extends Windows PowerShell with an additional set of *cmdlets*, which can either be run directly from the command shell prompt or called from within a script. Cmdlets can be used individually to perform a specific task, or they can be combined with other cmdlets to perform complex administrative tasks. Unlike traditional command-line environments that work by returning text results to the end user or routing ("piping") text to different command-line utilities, Windows PowerShell manipulates Microsoft .NET Framework objects directly. This provides a more robust and efficient mechanism for interacting with the system.  
   
@@ -24,9 +24,9 @@ To open the Operations Manager Shell, from the Windows start screen, type **Oper
 Import-Module -Name OperationsManager  
 ```  
   
-You can access cmdlet help in the Operations Manager Shell by typing Get-Help *cmdlet name* or view the help online at [Cmdlets in System Center 2016 - Operations Manager](https://technet.microsoft.com/library/hh918542%28v=sc.30%29.aspx).  
+You can access cmdlet help in the Operations Manager Shell by typing Get-Help *cmdlet name* or view the help online at [Cmdlets in System Center Operations Manager](https://technet.microsoft.com/library/hh918542%28v=sc.30%29.aspx).  
   
-To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?LinkId=235162).  
+To learn more about Windows PowerShell, see [Windows PowerShell Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=235162).  
   
 ## Next steps
 

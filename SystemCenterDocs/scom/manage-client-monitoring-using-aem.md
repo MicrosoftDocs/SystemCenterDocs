@@ -1,6 +1,6 @@
 ---
 title: Client Monitoring Using Agentless Exception Monitoring in Operations Manager
-description: This article describes how to use agentless exception monitoring in Operations Manager 2016.
+description: This article describes how to use agentless exception monitoring in Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
@@ -14,7 +14,7 @@ ms.assetid: fe53bb3b-9072-4b7d-a518-a210c3e1e17f
 
 # Client monitoring using error reporting in Operations Manager
 
-The Client Monitoring feature of System Center 2016 - Operations Manager enables you to monitor operating systems and applications for errors and participate in the Error Reporting program.  The Error Reporting program collects diagnostics and usage data about Operations Manager, which is used by Microsoft to improve the installation experience, quality, and security of future releases. 
+The Client Monitoring feature of System Center Operations Manager enables you to monitor operating systems and applications for errors and participate in the Error Reporting program.  The Error Reporting program collects diagnostics and usage data about Operations Manager, which is used by Microsoft to improve the installation experience, quality, and security of future releases. 
   
 Agentless Exception Monitoring (AEM) is a component of the Client Monitoring feature in Operations Manager. AEM enables you to monitor operating systems and applications for errors within your organization. By default, when a Microsoft application encounters a severe error, it creates a report that can be sent to Microsoft to consolidate data that can lead to a reduction in errors. Using AEM, you can direct these reports to an Operations Manager management server. Operations Manager can then provide detailed views and reports on this consolidated error data. Using this data, you can determine how often an operating system or application experiences an error and the number of affected computers and users.  
   
@@ -145,7 +145,7 @@ The Operations Manager Client Monitoring Configuration Wizard is used to configu
 1.  Run the Group Policy Object Editor (gpedit.msc) for the domain or local computer.
 
        > [!NOTE]
-       > For information about Group Policy, see [https://go.microsoft.com/fwlink/?LinkId=156845](https://go.microsoft.com/fwlink/?LinkId=156845).
+       > For information about Group Policy, see [http://go.microsoft.com/fwlink/?LinkId=156845](http://go.microsoft.com/fwlink/?LinkId=156845).
 
 2.  If needed, disable the **Turn off Windows Error Reporting** policy. This policy can be found in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings.
 

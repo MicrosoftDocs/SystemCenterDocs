@@ -14,7 +14,7 @@ ms.assetid: d19b28c0-a346-4806-8973-18d5f40ce4fb
 
 # Using SharePoint to view Operations Manager data
 
-System Center - Operations Manager can display select dashboards from the Web console in SharePoint to see at a glance the status of operational metrics, such as availability and performance of your managed services.  This is especially beneficial to members of your organization who don't need access to Operations Manager, such as service managers, executives, and even end-users of the service.  
+System Center Operations Manager can display select dashboards from the Web console in SharePoint to see at a glance the status of operational metrics, such as availability and performance of your managed services.  This is especially beneficial to members of your organization who don't need access to Operations Manager, such as service managers, executives, and even end-users of the service.  
 
 Use the following procedures to configure dashboards on a SharePoint page.  This is accomplished using the Page Viewer Web Part included with SharePoint, which lets you view another web page from within your SharePoint page.  If the user hasn't already been granted rights to view operational data from either console available in Operations Manager, they will need to be [assigned membership](manage-security-overview.md#how-to-assign-members-to-built-in-user-roles) to one of the built-in user roles.  If the user will only need to view the data but not interact with it from the Operations or web console, such as close an alert or perform some other related task, consider adding them to the **Read-only Operator** role.
 
