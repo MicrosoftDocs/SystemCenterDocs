@@ -29,7 +29,7 @@ The remainder of this article provides the detail on how to add a volume and to 
 
 ## Setting up MBS
 
-Setting up MBS consists of the following steps:
+Setting up MBS consists of the following steps. Please note you cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server.
 
 1. Make sure you're running DPM 2016 or later on a VM running Windows Server 2016 or later.
 2. To create a volume on a virtual disk in a storage pool:
