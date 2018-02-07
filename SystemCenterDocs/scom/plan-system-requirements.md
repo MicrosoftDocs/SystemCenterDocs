@@ -208,7 +208,7 @@ System Center 2016 - Operations Manager supports an in-place upgrade from the fo
 
 System Center Operations Manager 1801 supports an in-place upgrade from the following versions:
 
-- System Center 2012 R2 RTM to the latest update rollup  
+- System Center 2012 R2 UR12 to the latest update rollup  
 - System Center 2016 RTM to the latest update rollup  
 
 ## Active Directory and DNS
