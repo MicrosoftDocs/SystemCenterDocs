@@ -12,9 +12,10 @@ ms.technology: data-protection-manager
 ms.topic: article
 ---
 
-# Release Notes for System Center Data Protection Manager (DPM) 2016
+# Release Notes for System Center Data Protection Manager (DPM)
 
 The following set of notes lists known issues and steps to mitigate the issue. These notes apply to System Center Data Protection Manager (DPM) 2016 and 1801. By default you see the notes for 2016 and 1801 releases. If you are only interested in the 2016 release, select 2016 in the version picker.
+
 
 ## Silent Installation of System Center DPM with SQL Server 2008
 
@@ -115,19 +116,13 @@ The size calculation can be turned back on when needed by running a PowerShell s
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
 
-::: moniker range="sc-dpm-1801"
+## Bugs fixed in the DPM 1801 release
 
-## Installing the DPM agent on Windows Server may require a reboot
+The following bugs have been fixed in the DPM 1801 release:
+- Upgrading the DPM agent on the production server causes an unexpected reboot.
+- Consistency checks for Hyper-V VMs transferred more data than the size of the VMs.
 
-**Description**: Installing or updating a DPM agent on a Windows Server may require a reboot.
 
-**Workaround**: To understand if the production server requires a reboot when the agent is updated, check the version of the *Microsoft Visual C++ 2012 Redistributable(x64)*. If the version is less than 11.0.51106, the agent installation process tries to update the agent, which can cause the server to reboot. Avoid pushing the agent to servers whose *Microsoft Visual C++ 2012 Redistributable(x64) is less than 11.0.51106. 
-
-If your server is less than 11.0.51106, on the production server, open the DPM setup folder(<DPM Installation Path>\DPM\ ProtectionAgents\AC\<DPM Version>\amd64), select *vcredist2012_x64* and install it. After installing *vcredist2012_x64*, you control whether to reboot or not. 
-
-After manually installing the update, you can push the agents.
-
-::: moniker-end
 
 ## Next steps
 To install DPM, see the article, [Install DPM](install-dpm.md).
