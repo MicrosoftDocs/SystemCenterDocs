@@ -4,7 +4,7 @@
 ## [What can DPM back up?](dpm-protection-matrix.md)
 # Get Started
 ## [DPM release notes](dpm-release-notes.md)
-## [What's new in DPM](what-s-new-in-dpm-2016.md)
+## [What's new in DPM](what-s-new-in-dpm.md)
 ## [What DPM supports](dpm-support-issues.md)
 # How To
 ## Plan Your DPM Environment

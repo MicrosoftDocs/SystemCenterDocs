@@ -876,11 +876,13 @@ description: get-from-content-team
                                                 </div>
                                                     <div class="cardText">
                                                     <h3>System Center Release Notes</h3>
-                                                    <p><a href="https://docs.microsoft.com/system-center/dpm/dpm-release-notes-1711">DPM Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scom/release-notes-tp1711">SCOM Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/release-notes">Orchestrator Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scsm/release-notes">SM Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/vmm/release-notes-1711">VMM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/dpm/dpm-release-notes">DPM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scom/release-notes-1801">SCOM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/release-notes-1801">Orchestrator Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scsm/release-notes-1801">SM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/sma/release-notes-1801">SMA Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-1801">SPF Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/vmm/release-notes-1801">VMM Release Notes</a></p>
                                                 </div>
                                             </div>
                                       </div>
@@ -896,14 +898,14 @@ description: get-from-content-team
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
-                                                    <h3>What's New articles in System Center Preview 1711</h3>
-                                                    <p><a href="https://docs.microsoft.com/system-center/dpm/what-s-new-in-dpm-2016">What's New in DPM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scom/what-is-new-1711">What's New in SCOM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/vmm/whats-new-vmm-1711">What's New in VMM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-1711">What's New in Orchestrator</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-1711">What's New in SM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-1711">What's New in SMA</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-1711">What's New in SPF</a></p>
+                                                    <h3>What's New articles in System Center 1801</h3>
+                                                    <p><a href="https://docs.microsoft.com/system-center/dpm/what-s-new-in-dpm">What's New in DPM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scom/what-is-new-1801">What's New in SCOM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/vmm/whats-new-vmm-1801">What's New in VMM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-1801">What's New in Orchestrator</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-1801">What's New in SM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-1801">What's New in SMA</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-1801">What's New in SPF</a></p>
                                                 </div>
                                             </div>
                                       </div>
