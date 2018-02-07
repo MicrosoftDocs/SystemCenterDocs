@@ -5,7 +5,7 @@ description: This article describes what's new in System Center Operations Manag
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/05/2018
+ms.date: 02/07/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -36,7 +36,7 @@ The Web console has been redesigned and is now a fully HTML-based console and no
 * Simplified widget and dashboard authoring
 * Accessible from multiple browsers
 * Enhanced troubleshooting experience with drill down pages
-* Extensibility with custom widget (REST API’s)
+* Extensibility with a custom widget using a new [REST API](https://docs.microsoft.com/rest/operationsmanager)
 * Export and share dashboards
 
 Network authentication is enabled with the new web console.  
