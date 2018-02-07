@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2017
+ms.date: 2/8/2018
 title:  What's new in System Center DPM 2016 and 1801
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -14,14 +14,13 @@ ms.author: markgal
 
 # What's new in System Center DPM
 
-
-Before you begin, check the [Release Notes for System Center DPM](dpm-release-notes.md) for last minute issues. System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MDS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
+Before you begin, check the [Release Notes for System Center DPM](dpm-release-notes.md) for last minute issues. Also, if you are upgrading to DPM 1801, see the [bugs that have been fixed](dpm-release-notes.md#bugs-fixed-in-the-1801-release). System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
 
 ::: moniker range="sc-dpm-1801"
 
 ## New features in DPM 1801
 
-If you install System Center DPM Technical Preview 1801, then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups. 
+If you install System Center DPM 1801, then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups. 
 
 ::: moniker-end
 
