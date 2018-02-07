@@ -1,20 +1,20 @@
 ---
 ms.assetid: d830d226-80d0-4132-8b3c-d3de545f5fa2
 title: Creating and Managing Groups
-description: This article describes how to create and configure groups for scoping in Operations Manager 2016.
+description: This article describes how to create and configure groups for scoping in Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Creating and managing groups
 
-In System Center 2016 - Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. You create a group by using the Create Group Wizard. You can explicitly assign membership to a group or you can create rules that will generate a dynamic group membership.  
+In System Center Operations Manager, groups are logical collections of objects, such as Windows-based computers, hard disks, or instances of Microsoft SQL Server. You create a group by using the Create Group Wizard. You can explicitly assign membership to a group or you can create rules that will generate a dynamic group membership.  
   
 Some of the purposes for using groups are:  
   
@@ -48,7 +48,7 @@ The most common objects you will place in your groups are **Windows Computer** o
   
 ![Properties of a Windows computer object](./media/manage-create-manage-groups/om2016-windows-computer-properties.png)  
   
-You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of dynamic group queries and formulas, see [Operations Manager Dynamic Group Examples](https://go.microsoft.com/fwlink/p/?LinkId=242241).  
+You can assign both explicit and dynamic members in the same group definition, and you can exclude explicit members. For examples of dynamic group queries and formulas, see [Operations Manager Dynamic Group Examples](http://go.microsoft.com/fwlink/p/?LinkId=242241).  
   
 ## To create a group in Operations Manager  
   
