@@ -12,9 +12,15 @@ ms.technology: data-protection-manager
 ms.topic: article
 ---
 
-# Release Notes for System Center Data Protection Manager (DPM) 2016
+# Release Notes for System Center Data Protection Manager (DPM)
 
 The following set of notes lists known issues and steps to mitigate the issue. These notes apply to System Center Data Protection Manager (DPM) 2016 and 1801. By default you see the notes for 2016 and 1801 releases. If you are only interested in the 2016 release, select 2016 in the version picker.
+
+## Bugs fixed in the DPM 1801 release
+
+The following bugs have been fixed in the DPM 1801 release:
+- Upgrading the DPM agent on the production server causes an unexpected reboot.
+- Consistency checks for Hyper-V VMs transferred more data than the size of the VMs.
 
 ## Silent Installation of System Center DPM with SQL Server 2008
 
