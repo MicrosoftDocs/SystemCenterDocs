@@ -116,15 +116,13 @@ The size calculation can be turned back on when needed by running a PowerShell s
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
 
-::: moniker range="sc-dpm-1801"
-
 ## Bugs fixed in the DPM 1801 release
 
 The following bugs have been fixed in the DPM 1801 release:
 - Upgrading the DPM agent on the production server causes an unexpected reboot.
 - Consistency checks for Hyper-V VMs transferred more data than the size of the VMs.
 
-::: moniker-end
+
 
 ## Next steps
 To install DPM, see the article, [Install DPM](install-dpm.md).
