@@ -1,11 +1,11 @@
 ---
 ms.assetid:
-title: Release Notes for System Center DPM 2016
-description: These release notes provide general information about the DPM 2016 and 1711 release.
+title: Release Notes for System Center DPM
+description: Release notes about the DPM 2016 and 1801 releases.
 author: markgalioto
 ms.author: markgal
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 2/8/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: data-protection-manager
@@ -14,19 +14,19 @@ ms.topic: article
 
 # Release Notes for System Center Data Protection Manager (DPM) 2016
 
-The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center Data Protection Manager (DPM) 2016 and Technical Preview 1711.  
+The following set of notes lists known issues and steps to mitigate the issue. These notes apply to System Center Data Protection Manager (DPM) 2016 and 1801. By default you see the notes for 2016 and 1801 releases. If you are only interested in the 2016 release, select 2016 in the version picker.
 
 ## Silent Installation of System Center DPM with SQL Server 2008
 
 **Description**: You cannot silently install DPM 2016 RTM on SQL Server 2008.
 
-**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI
+**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup user interface.
 
 ## Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups 
 
 **Description**: If the volume's datasources are being backed up (actively or inactively) when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too. 
 
-**Workaround**: Prior to using the cmdlet to remove the volumes, ensure the volumes do not have datasources being actively or inactively backed up (or protected). 
+**Workaround**: Prior to using the cmdlet to remove the volumes, ensure the volumes do not have datasources being actively or inactively backed up. 
 
 
 ## DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
@@ -67,7 +67,7 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 
 **Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
 
-**Workaround**: If you are protecting DPM database, ensure that you enable protection for new DPM DB. Protection for the old DPM database can be removed once DPM upgrade is validated.
+**Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
 
 
 ## Recovery Points not being pruned, leading to an accumulation of Recovery Points
