@@ -1,20 +1,20 @@
 ---
 ms.assetid: 
 title:  Sample Linux log file management pack 
-description: This article describes a sample management pack for creating an alert from a log file on Linux in System Center Preview 1711 Operations Manager.    
+description: This article describes a sample management pack for creating an alert from a log file on Linux in System Center Operations Manager.    
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/3/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Sample Linux log file management pack
-This is a sample management pack to create an alert from a log file in Linux with System Center Preview 1711 - Operations Manager.  You can copy and paste the contents into an XML file and install in Operations Manager.
+This is a sample management pack to create an alert from a log file in Linux with System Center Operations Manager version 1801.  You can copy and paste the contents into an XML file and install in your Operations Manager management group.
 
 This management pack will create an alert for every collected event.  There is another rule in the comments of the management pack that will only create an alert for events with a specific event number.  To use this rule, remove the comments and replace the event number with one that you require.
 
@@ -131,3 +131,8 @@ This management pack will create an alert for every collected event.  There is a
             </LanguagePack>
         </LanguagePacks>
     </ManagementPack>
+
+
+## Next steps
+
+To create a Fluentd configuration file to collect logs, see [Sample configuration file for collecting Linux log files](manage-sample-configuration-file.md).

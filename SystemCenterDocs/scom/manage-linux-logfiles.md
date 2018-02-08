@@ -1,25 +1,24 @@
 ---
 ms.assetid: 
-title:  Log file monitoring in System Center Preview 1711 - Operations Manager
-description: This article provides an overview of the Linux log file monitoring in System Center Preview 1711 Operations Manager.    
+title:  Log file monitoring in System Center Operations Manager
+description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager 1801.    
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/6/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Linux Log file monitoring in System Center Preview 1711 - Operations Manager
-System Center Preview 1711 - Operations Manager now has enhanced log file monitoring capabilities for Linux servers by using the newest version of the agent that uses Fluentd. This update provides the following improvements over previous log file monitoring:
+# Linux Log file monitoring in System Center Operations Manager
+System Center Operations Manager version 1801 now has enhanced log file monitoring capabilities for Linux servers by using the newest version of the agent that uses Fluentd. This update provides the following improvements over previous log file monitoring:
 
 - Wild card characters in log file name and path.
 - New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated correlation and exclusive correlation.
 - Support for generic Fluentd plugins published by the fluentd community.
-
 
 ## Basic operation
 The basic operation of log file monitoring in Linux includes the following steps:
@@ -37,7 +36,7 @@ The following steps are required to enable log file monitoring on Linux agents. 
 2. Install the latest version of the Linux agent on each Linux computer to be monitored.
 2. Create Fluentd configuration file to collect logs.
 3. Copy configuration file to Linux agents.
-3. Create rules and monitors using the management pack to collect events from the log and create alerts.
+3. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
 
 
 ## Install the latest version of the Linux agent
@@ -52,11 +51,20 @@ The Linux Management pack bundle has the latest Operations Manager agent (with F
 
 The OMED service collects events from Fluentd and converts them to Operations Manager events. Users should import a custom management pack which can generate alerts based on the events received from the Linux servers.
 
-You enable the OMED service using the following process.
+You enable the OMED service either from the Operations console or manually on the management server or gateway server.  
+
+### From Operations console
 
 1. From the Operations Console, go to **Monitoring** > **Operations Manager** > **Management Server** > **Management Servers State**.
 2. Select the management server in the **Management Servers** state pane.
 3. In the **Tasks** pane, select **Health Service Tasks** > **Enable System Center OMED Server**.
+
+### Manually
+
+1. Click **Start**, in the **Start Search** box, type **services.msc** , and then press **Enter**.
+2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and then click **Properties**.
+3. On the **General** tab, in **Startup** type , click **Automatic**, and then click **OK**.
+4. In the details pane, right-click the service and then click **Start**.
 
 ## Create FluentD configuration file
 You configure Fluentd operation with a configuration file.  For log monitoring, you need to create a configuration file that includes such information as source log file name and path and filters to define which data to collect.
@@ -76,7 +84,7 @@ or
 
 You can get details on Fluentd configuration files at [Fluentd Configuration file syntax](https://docs.fluentd.org/v0.12/articles/config-file).  The following sections describe settings in different directives of the configuration file unique to log file monitoring.  Each includes sample settings that you can paste into a configuration file and modify for your requirements.
 
-A complete sample configuration file for log monitoring is available at [Sample configuration file for lo monitoring].
+A complete [sample configuration file for log monitoring](manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.  
 
 
 #### Source
@@ -240,3 +248,8 @@ The following table lists the parameters of **Microsoft.Linux.OMED.EventDataSour
 | EventNumber | Integer | Optional. Indicates the event number of the event to retrieve. If this option is omitted, the module returns all events generated for that computer and managed entity. |
 
 
+## Next steps
+
+* To create a custom view to review the monitoring data from your custom log file management pack, review [Using views in Operations Manager](https://technet.microsoft.com/library/hh212694.aspx).  
+
+* Review [Viewing active alerts and details](manage-alert-view-alerts-details.md) to learn how to investigate issues identified by your custom log file management pack.  

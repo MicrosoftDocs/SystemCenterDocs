@@ -2,21 +2,17 @@
 title: Create a lab environment for upgrade
 description: To prepare for upgrade, create a lab environment and prepare it for production data.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 05/30/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
 ---
 
-# Set up a Service Manager 2016 lab environment to prepare it for upgrade
+# Set up a lab environment for upgrade testing
 
-Use the following procedures to prepare for Service Manager upgrade by creating a lab environment and preparing it for production data.
+Use the following procedures to prepare for Service Manager upgrade by creating a lab environment and preparing it for production data, for the purposes of upgrade testing.
 
 Many of the procedures in this article are lengthy and might take a considerable amount of time to complete. As long as you complete the procedures in order, you do not need to complete them without stopping.
 
@@ -360,4 +356,4 @@ Use the following procedure to register the newly installed data warehouse serve
 
 ## Next steps
 
-- [Upgrade your environment to System Center 2016 - Service Manager](upgrade-environment.md)
+- [Run an upgrade](upgrade-environment.md)

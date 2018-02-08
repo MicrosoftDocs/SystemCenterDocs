@@ -2,23 +2,18 @@
 title: Service Manager editions
 description: Learn about Service Manager editions.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 23d3104b-5733-42f2-8a92-be48b5924533
 ---
-# System Center 2016 - Service Manager editions
+# System Center - Service Manager editions
 
-System Center 2016 - Service Manager is available as both a retail edition and a select edition. Both editions offer the same functionality. The retail edition is purchased separately, and it includes a product key that you enter during setup. The select edition is delivered as part of a Microsoft Volume Licensing plan, and a product key is not required.  
+System Center - Service Manager is available as both a retail edition and a select edition. Both editions offer the same functionality. The retail edition is purchased separately, and it includes a product key that you enter during setup. The select edition is delivered as part of a Microsoft Volume Licensing plan, and a product key is not required.  
 
- During setup of the retail edition of System Center 2016 - Service Manager, you have the option of performing the installation without a product key and instead installing Service Manager as an evaluation edition. The evaluation edition times out 180 days after installation. If you start with an evaluation version of Service Manager and you rerun Setup and install the retail edition or select edition, and you decide to use the existing databases that you created originally, your installation will time out after the original expiration date.  
+ During setup of the retail edition of System Center - Service Manager, you have the option of performing the installation without a product key and instead installing Service Manager as an evaluation edition. The evaluation edition times out 180 days after installation. If you start with an evaluation version of Service Manager and you rerun Setup and install the retail edition or select edition, and you decide to use the existing databases that you created originally, your installation will time out after the original expiration date.  
 
  The following table describes the interactions between the various editions of Service Manager.  
 
@@ -32,4 +27,4 @@ System Center 2016 - Service Manager is available as both a retail edition and a
 
 ## Next steps
 
-- Review [Supported configurations for Service Manager](supported-configs.md) to learn about the hardware and software configurations for Service Manager. Specific considerations about the memory that servers need to support Service Manager are included.
+- Review [supported configurations](supported-configs.md), to learn about the hardware and software configurations for Service Manager. Specific considerations about the memory that servers need to support Service Manager are included.

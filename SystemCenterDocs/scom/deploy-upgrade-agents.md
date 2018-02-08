@@ -1,20 +1,21 @@
 ---
 ms.assetid: 4d1cf6ab-ed6e-4cd8-8ab8-f5d294877e4a
-title: How to Upgrade an Agent to System Center 2016 - Operations Manager
-description: This article describes how to upgrade a Windows agent to Operations Manager 2016.
+title: How to Upgrade an Agent to System Center Operations Manager
+description: This article describes how to upgrade an Operations Manager agent to System Center 1801.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 01/11/2018
 ms.custom: na
 ms.prod: system-center-2016
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade an agent to System Center 2016 - Operations Manager
+# How to upgrade an Operations Manager agent 
 
-Use the following procedures to upgrade to System Center 2016 - Operations Manager agents. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements: System Center 2016 - Operations Manager](plan-system-requirements.md).
+Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 1801. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 > [!NOTE]
 > If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.
@@ -24,9 +25,9 @@ When you upgrade an agent, the Operations Manager installer service runs and is 
 > [!NOTE]
 > If you have Audit Collection Services (ACS) enabled for an agent prior to this upgrade, it is disabled as part of the agent upgrade process. ACS must be re-enabled after upgrade completes.
 
-If you are upgrading agents that are deployed to a computer that has other System Center 2012 R2 Operations Manager features installed, you must do the following:
+If you are upgrading agents that are deployed to a computer that has other System Center 2012 R2 or 2016 Operations Manager features installed, you must do the following:
 
--   If the agent is installed on a computer that has System Center 2012 R2 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2012 R2 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
+-   If the agent is installed on a computer that has System Center 2012 R2 or 2016 Operations Manager Operations console or Web console installed, you must first uninstall the consoles before you upgrade the agents. You can do this by uninstalling System Center 2012 R2 or 2016 Operations Manager in Programs and Features. You can reinstall these consoles after upgrade is completed.
 
 > [!NOTE]
 > If UAC is enabled, you must run the agent upgrade from an elevated command prompt.
@@ -143,7 +144,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
 

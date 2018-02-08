@@ -2,22 +2,17 @@
 title: Prepare for Service Manager deployment
 description: Describes Service Manager deployment preparation considerations.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: f5b2cb5d-96d6-4b49-a2ce-251372baf9a5
 ---
 
-# Prepare for System Center 2016 - Service Manager deployment
+# Prepare for System Center - Service Manager deployment
 
-Before you start the deployment of System Center 2016 - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Make sure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager. Keep the following in mind when you are installing Service Manager and Operations Manager on the same server:  
+Before you start the deployment of System Center - Service Manager, you create a group of users in Active Directory Domain Services \(AD DS\), and you create or identify a domain account that will be used during the Setup process. Make sure that the domain account is a member of the appropriate groups that are necessary for proper operation of Service Manager. Keep the following in mind when you are installing Service Manager and Operations Manager on the same server:  
 
 - Operations Manager can share the database server with Service Manager.  
 
@@ -31,13 +26,13 @@ Before you start the deployment of System Center 2016 - Service Manager, you cre
 
 ## Account considerations before you run Setup
 
-Before running Setup for System Center 2016 - Service Manager, review the following sections to make sure that the requirements that are needed to install Service Manager have been met. During Setup, you will be prompted to provide domain users or groups for various Service Manager functions. Review this information to make sure that you are ready for the setup process.
+Before running Setup for Service Manager, review the following sections to make sure that the requirements that are needed to install Service Manager have been met. During Setup, you will be prompted to provide domain users or groups for various Service Manager functions. Review this information to make sure that you are ready for the setup process.
 
 
 ### Account used when you install Service Manager
 
 
-This section describes the permissions that you need when you are installing a Service Manager management server and Service Manager console databases and when you are registering the Service Manager management group with the data warehouse management group in System Center 2016 - Service Manager.
+This section describes the permissions that you need when you are installing a Service Manager management server and Service Manager console databases and when you are registering the Service Manager management group with the data warehouse management group in Service Manager.
 
 > [!NOTE]  
 >  The account that you use to run Setup is automatically made an administrator in Service Manager.
@@ -85,7 +80,7 @@ You need the following permissions when you are registering Service Manager with
 
 ### Accounts required when you install Service Manager
 
-You will have to provide credentials for the accounts in the following table during the installation of the System Center 2016 - Service Manager and data warehouse management servers.  
+You will have to provide credentials for the accounts in the following table during the installation of the Service Manager and data warehouse management servers.  
 
 > [!NOTE]  
 The user accounts and group accounts that are required for the installation of Service Manager must reside in the Users organizational unit \(OU\) in Active Directory Domain Services \(AD DS\).  
@@ -153,7 +148,7 @@ The user accounts and group accounts that are required for the installation of S
 ## Prepare computers for Service Manager deployment
 
 
-Use the following procedures to prepare computers for deployment of System Center 2016 - Service Manager.  
+Use the following procedures to prepare computers for deployment of Service Manager.  
 
 ### To prepare computers for Service Manager deployment  
 

@@ -17,7 +17,7 @@ monikerRange: 'sc-vmm-2016'
 
 
 
-This article describes what's new in System Center 2016 - Virtual Machine Manager (VMM).
+This article describes features that were introduced in System Center 2016 - Virtual Machine Manager (VMM).
 
 
 ## Compute

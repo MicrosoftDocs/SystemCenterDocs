@@ -1,26 +1,27 @@
 ---
-title: Service Manager
-description: Overview article that describes the System Center 2016 - Service Manager documentation.
+title: About System Center - Service Manager
+description: This article provides an overview of System Center - Service Manager.
 manager: carmonm
 ms.topic: article
 author: bandersmsft
 ms.author: banders
 ms.prod: system-center-2016
-keywords:  
-ms.date: 10/12/2016
+ms.date: 01/23/2018
 title: Service Manager
 ms.technology: service-manager
-ms.assetid: e55f0638-e18b-403f-b255-5f8aa464d7e5
+
 ---
 
-# System Center 2016 - Service Manager
+# About System Center - Service Manager
 
-Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
+System Center - Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
+
+## Service Manager articles
 
 - The what's new section describes new capabilities and changes in Service Manager.
 - The planning section helps you understand the hardware and software requirements as well as software roles you need to prepare for Service Manager before deploying it for use in your organization.
 - The deploy section helps you deploy Service Manager in one of several different scenarios.
-- The upgrade section shows you how to upgrade from System Center - Service Manager 2012 R2 to System Center 2016 – Service Manager.
+- The upgrade section shows you how to upgrade from older versions of Service Manager.
 - The administrative tasks section provide concepts that are important to Service Manager administrators and it includes procedures that Service Manager administrators must perform to configure Service Manager.
 - The day-to-day tasks section provides information about using the Service Manager console for day-to-day tasks that you perform to manage service desk functions for your organization's computer infrastructure.
 - The author section provides an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool, and contains tasks to author and customize management packs, which enable customizations in Service Manager.  
@@ -30,5 +31,5 @@ Service Manager provides an integrated platform for automating and adapting your
 
 ## Next steps
 
-- Read about [what's new in Service Manager](whats-new.md).
+- Read about [what's new in Service Manager](whats-new-1801.md).
 - Review [planning information for Service Manager](plan-sm.md).

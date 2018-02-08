@@ -1,26 +1,21 @@
 ---
-title: Database Sizing and Performance
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology:
-  - orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 589ab8a8-f723-4da1-8488-683d4939c12a
-author: cfreemanwa
-ms.author: raynew
-ms.date: 10/12/2016
+title: Database sizing and performance
+description: Provides guidance for sizing the System Center - Orchestrator database
+author: rayne-wiselman
 manager: carmonm
+ms.date: 01/17/2018
+ms.prod: system-center-threshold
+ms.technology: orchestrator
+ms.topic: article
+ms.author: raynew
 ---
 
 
-# Database Sizing and Performance
 
->Apples To: System Center 2016 - Orchestrator
 
-Database sizing is the key to understanding the performance of System Center 2016 - Orchestrator. The runbook servers, management server, and web components all depend on the Orchestrator database for their operations. Problems with Orchestrator deployments can arise from an incomplete understanding of the types of data in the database and how to manage them.  
+# Database sizing and performance
+
+Database sizing is the key to understanding the performance of System Center - Orchestrator. The runbook servers, management server, and web components all depend on the Orchestrator database for their operations. Problems with Orchestrator deployments can arise from an incomplete understanding of the types of data in the database and how to manage them.  
 
 Because the Runbook Designer communicates with the Orchestrator database (through the management server), poor database performance will impede that communication.  
 

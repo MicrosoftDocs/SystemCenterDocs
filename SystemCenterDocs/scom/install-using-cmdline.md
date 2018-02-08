@@ -4,7 +4,7 @@ title: Installing Operations Manager From the Command Prompt
 description: This article describes the different command-line arguments you would use when installing an Operations Manager component from the Command Prompt. 
 author: mgoedtel
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 01/24/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -13,7 +13,7 @@ ms.topic: article
 
 # Installing Operations Manager from the Command Prompt 
 
-You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for System Center 2016 - Operations Manager. For more information, see [System Requirements](plan-system-requirements.md).
+You can install features of Operations Manager by using the **setup.exe** command in the Command Prompt window. Gateway and agent installations require the use of MOMGateway.msi and MOMAgent.msi. You must ensure that all servers meet the minimum supported configuration requirements for System Center Operations Manager. For more information, see [System Requirements](plan-system-requirements.md).
 
 ## Command-line parameters
 
@@ -26,7 +26,7 @@ The following table lists the command-line parameters for installing features of
 |-------------|---------|
 |/silent|Does not display the installation wizard.|
 |/install|Runs an installation. Use **/components** to indicate specific features to install.|
-|/InstallPath|Runs an installation specifying an alternative location, to Change the default path for install to another drive.  For example: `/InstallPath: "D:\Program Files\System Center Operations Manager 2016"` to change from the default location of drive C.|
+|/InstallPath|Runs an installation specifying an alternative location, to Change the default path for install to another drive.  For example: `/InstallPath: "D:\Program Files\System Center\Operations Manager"` to change from the default location of drive C.|
 |/components|OMServer: install a management server.<br><br>OMConsole: install an Operations console.<br><br>OMWebConsole: install a web console.<br><br>OMReporting: install a Reporting server.|
 |/ManagementGroupName:|The name of the management group|
 |/ManagementServicePort:|Change the Management Server port on install|
@@ -49,7 +49,7 @@ The following table lists the command-line parameters for installing features of
 |/EnableErrorReporting:|Never: Do not opt in to sending automatic error reports.<br><br>Queued: Opt in to sending error reports, but queue the reports for review before sending.<br><br>Always: Opt in to automatically send error reports.|
 |/SendCEIPReports:|0 : Do not opt in to the Customer Experience Improvement Program (CEIP).<br><br>1 : Opt in to CEIP.|
 |/UseMicrosoftUpdate:|0 : Do not opt in to Microsoft Update.<br><br>1 : Opt in to Microsoft Update.|
-|/AcceptEndUserLicenseAgreement:|0 : Do not accept the End User License Agreement (EULA).<br><br>1 : Accept the End User License Agreement (EULA).<br><br>When performing a clean installation of System Center 2016 - Operations Manager, this switch is needed for all management servers. It is also needed for other scripted installations.|
+|/AcceptEndUserLicenseAgreement:|0 : Do not accept the End User License Agreement (EULA).<br><br>1 : Accept the End User License Agreement (EULA).<br><br>When performing a clean installation of System Center Operations Manager, this switch is needed for all management servers. It is also needed for other scripted installations.|
 |/ManagementServer|Used to specify the name of the management server associated with a web console and/or Reporting server that is not installed on a management server.|
 |/WebSiteName:|The name of the website. For default web installation, specify "**Default Web Site**".<br <br>Used for web console installations.|
 |/WebConsoleUseSSL|Specify only if your website has Secure Sockets Layer (SSL) activated.<br><br>Used for web console installations.|

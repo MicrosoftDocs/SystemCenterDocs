@@ -2,25 +2,24 @@
 description: Provides step by step instructions for setting up Service Management Automation
 manager:  carmonm
 ms.topic:  article
-author:  cfreemanwa
+author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 03/28/2017
+ms.date: 01/22/2018
 title:  Deploy Service Management Automation
 ms.technology:  service-management-automation
-ms.assetid:  b6044e0c-0caa-459c-9489-c379a154136b
 ---
 
-# How to deploy Service Management Automation 
+# Deploy Service Management Automation 
 
-In order to deploy Service Management Automation (SMA) you must install the SMA Web Service, setup the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation. 
+To deploy Service Management Automation (SMA), you must install the SMA Web Service, set up the SMA runbook worker, and setup the SMA PowerShell module. You can also install the Service Management Automation components by using an unattended installation. 
 
 You can install the web service on any machine that can communicate with Windows Azure Pack and an instance of SQL Server.
 
-## To install the Service Automation web service
+## Install the Service Automation web service
 
-1.  In the folder where you downloaded the System Center 2016 Orchestrator installation software, click Setup to start the Setup wizard.
+1.  In the folder containing the downloaded System Center - Orchestrator installation software, click **Setup** to start the Setup wizard.
 
 2.  Under **Service Management**, click **Web Service**, and then click **Install**.
 
@@ -30,7 +29,7 @@ You can install the web service on any machine that can communicate with Windows
 
 5.  Review the Diagnostic and Usage Data Notice, and then click **Next**.
 
-6.  This will launch the prerequisite check. Review the results of the check. If all items are installed, click **Next**.
+6.  This launches the prerequisites check. Review the results of the check. If all items are installed, click **Next**.
 
     > [!NOTE]
     > If you see an X next to any of the prerequisite software, you must install the item, and then run the prerequisite check again. You cannot complete installation of the service endpoint until you pass the prerequisite check.
@@ -57,7 +56,7 @@ You can install the web service on any machine that can communicate with Windows
 
 9. Enter the port number for the web service to use. By default, this is 9090.
 
-10. Choose the security certificate to use to encrypt communication between Windows Azure Pack and the Service Management Automation web service endpoint.
+10. Choose the security certificate to use to encrypt communication between Windows Azure Pack and the SMA web service endpoint.
 
     You can have the installer generate a self-signed certificate to use, or you can select an existing certificate in your local certificate store.
 
@@ -69,19 +68,19 @@ You can install the web service on any machine that can communicate with Windows
 
 13. Review the installation summary, and then click **Install**.
 
-    After the installation is complete, install a runbook worker as described in [How to install the Service Management Automation runbook worker](~/sma/deploy.md).
+    After the installation is complete, install a runbook worker as described in [How to install the SMA runbook worker](~/sma/deploy.md).
 
-## To install the SMA PowerShell module
+## Install the SMA PowerShell module
 
-1.  In the folder where you downloaded the System Center 2016 Orchestrator installation software, start the Setup wizard.
+1.  In the folder containing the downloaded System Center Orchestrator installation software, start the Setup wizard.
 
 2.  Under **Service Management**, click **PowerShell administration**, and then click **Install**.
 
 3.  Follow the instructions in the Setup wizard.
 
-## To setup the SMA runbook worker
+## Set up the SMA runbook worker
 
-1.  In the folder where you downloaded the System Center 2016 Orchestrator installation software, click Setup to start the Setup wizard.
+1.  In the folder containing the downloaded Orchestrator installation software, click Setup to start the Setup wizard.
 
 2.  Under **Service Management**, click **Runbook Worker**, and then click **Install**.
 
@@ -90,11 +89,11 @@ You can install the web service on any machine that can communicate with Windows
 After the installation is complete, use administrative credentials to configure Automation in the Windows Azure Pack management portal.
 
 >[!IMPORTANT]
->Each Service Management Automation component is installed on an Internet Information Services (IIS) website that, by default, is configured with a self-signed certificate. Because these self-signed certificates are not issued by any of the trusted root certification authorities that your browser loads on startup, your browser displays a security warning when you attempt to connect to any of the sites. We recommend that you replace the self-signed certificates with certificates that are issued by a trusted root certification authority to avoid this experience.
+>Each SMA component is installed on an Internet Information Services (IIS) website that, by default, is configured with a self-signed certificate. Because these self-signed certificates are not issued by any of the trusted root certification authorities that your browser loads on startup, your browser displays a security warning when you attempt to connect to any of the sites. We recommend that you replace the self-signed certificates with certificates that are issued by a trusted root certification authority to avoid this experience.
 
-## Setup SMA from a command prompt
+## Set up SMA from a command prompt
 
-Your installation media contains Windows Installer files for each Service Management Automation of the following features:
+Your installation media contains Windows Installer files for each SMA of the following features:
 
 -   PowerShell module: PowershellModuleInstaller.msi
 
@@ -106,7 +105,7 @@ Your installation media contains Windows Installer files for each Service Manage
 > The installation options must be entered at a command prompt. An answer file is not supported.
 
 ### PowerShell module installation options
-The Service Management Automation PowerShell module is a required prerequisite of the Service Management Automation web service, so you must install the Service Management Automation PowerShell module before you deploy the Service Management Automation web service. The PowerShell module installer takes no parameters. For example, you could use the following command:
+The SMA PowerShell module is a required prerequisite of the SMA web service, so you must install the SMA PowerShell module before you deploy the SMA web service. The PowerShell module installer takes no parameters. For example, you could use the following command:
 
 ```
 msiexec.exe /i PowershellModuleInstaller.msi
@@ -117,7 +116,7 @@ The following variables can be specified at a command prompt to override default
 
 
 
-|**Installation item** |**Command line switch** |**Valid values** |
+|**Installation item** |**Command-line switch** |**Valid values** |
 |------------|--------------|--------------|
 |IIS application pool|APPOOLACCOUNT|String|
 |IIS application pool|APPOOLPASSWORD|String|
@@ -147,11 +146,11 @@ msiexec.exe /i WebServiceInstaller.msi /L*v C:\Andreas\WebServiceInstaller.log C
 ```
 
 ### Runbook worker installation options
-A runbook worker cannot be installed on the same computer as another runbook worker. Also, you must install the runbook worker on a computer that has access to the same SQL Server instance that the Service Management Automation web service is using.
+A runbook worker cannot be installed on the same computer as another runbook worker. Also, you must install the runbook worker on a computer that has access to the same SQL Server instance that the SMA web service is using.
 
 The following variables can be specified at a command prompt to override default behaviors.
 
-|**Installation item** |**Command line switch** |**Valid values** |
+|**Installation item** |**Command-line switch** |**Valid values** |
 |---------------|---------------|-------------|
 |Windows service|SERVICEACCOUNT|String|
 |Windows service|SERVICEPASSWORD|String|
@@ -162,7 +161,7 @@ The following variables can be specified at a command prompt to override default
 |SQL Server database|SQLSERVER|In the format "Server name, port number" (The default values are "localhost, 1433." Supply a port number of 0 to specify a dynamic port.)|
 |SQL Server database|SQLINSTANCE|String (optional server instance name)|
 |SQL Server database|SQLDATABASE|String (the default database name value is SMA)|
-|File install location|INSTALLFOLDER|String (the default value is C:\Program Files\Microsoft System Center 2012 R2\Service Management Automation)|
+|File installation location|INSTALLFOLDER|String (the default value is C:\Program Files\Microsoft System Center <version>\Service Management Automation)|
 |Event tracing (ETW)|ETWMANIFEST|"Yes" or "No" (the default value is "Yes")|
 |**Usage and Diagnostics Data sent to Microsoft**|SENDTELEMETRYREPORTS|"Yes" or "No" (the default value is "Yes")|
 |Automatic Microsoft Update|MSUPDATE|"Yes" (opt-in) or "No" (no change; this is the default value)|
@@ -183,15 +182,15 @@ msiexec.exe /i WorkerInstaller.msi /L*v C:\Andreas\WorkerInstaller.log CREATEDAT
 >     **New-SmaRunbookWorkerDeployment -<ComputerName\> "<WebServiceEndpoint\>**
 > 3.  Restart the Runbook server service on each computer on which a runbook worker is installed.
 
-## To set or change the SMA endpoint
+## Set or change the SMA endpoint
 
-The **QuickStart** tab for Automation in Windows Azure Pack for Windows Server provides a link that enables you to set up or change the Service Management Automation endpoint. If the Service Management Automation endpoint is not yet registered, click **Register the Service Management Automation endpoint** to configure it. To change the Service Management Automation endpoint settings after an endpoint has been set up, click **Current Service Management Automation endpoint**.
+The **QuickStart** tab for Automation in Windows Azure Pack for Windows Server provides a link that enables you to set up or change the SMA endpoint. If the Service Management Automation endpoint is not yet registered, click **Register the Service Management Automation endpoint** to configure it. To change the SMA endpoint settings after an endpoint has been set up, click **Current Service Management Automation endpoint**.
 
-The Service Management Automation endpoint requires the following information:
+The SMA endpoint requires the following information:
 
--   The service URL and port. The port number is set when you install Service Management Automation.
+-   The service URL and port. The port number is set when you install SMA.
 
--   The user name of a user account that can access the Service Management Automation web service. Accounts with access to the Service Management Automation web service are also set during installation.
+-   The user name of a user account that can access the SMA web service. Accounts with access to the SMA web service are also set during installation.
 
 -   The access password for the user account.
 
@@ -201,4 +200,4 @@ Any of the SMA components can be removed in the **Control Panel** by selecting t
 
 ## Next steps
 
-- Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](https://technet.microsoft.com/en-us/library/dn296435.aspx).
+- Learn more about Windows Azure Pack for Windows Server [Windows Azure Pack for Windows Server](https://technet.microsoft.com/library/dn296435.aspx).

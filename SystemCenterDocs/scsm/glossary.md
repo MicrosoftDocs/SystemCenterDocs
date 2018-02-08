@@ -1,18 +1,16 @@
 ---
-title:  Glossary for System Center 2016 Service Manager
-description: This glossary defines the terms used in Service Manager.
+title:  Glossary for System Center - Service Manager
+description: This glossary defines terms used in Service Manager.
 manager:  carmon
 ms.topic:  article
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-keywords:  
-ms.date: 10/12/2016
+ms.date: 01/23/2018
 ms.technology:  service-manager
-ms.assetid:  70310c2d-c8f0-4e6c-a276-1284c52f096f
 ---
 
-# Glossary of terms in System Center 2016 - Service Manager
+# Glossary of terms in System Center - Service Manager
 
 |Term|Definition|
 |--------|--------------|
@@ -27,7 +25,7 @@ ms.assetid:  70310c2d-c8f0-4e6c-a276-1284c52f096f
 |change request|A means of proposing a change to any component of an IT infrastructure or any aspect of an IT Service. It may be a document or record in which the nature and details of and the justification and authorization for the proposed change are entered.|
 |child record|A work item that is subordinate to a parent.|
 |class|A named descriptor for a set of objects that share the same attributes, operations, methods, relationships, and behaviors.|
-|classification|The placement of an incident into a hierarchy of descriptors that indicate what the incident is generally about. For example, an incident could be classified as being related to software, and then to Microsoft, and then to Word 2016.|
+|classification|The placement of an incident into a hierarchy of descriptors that indicate what the incident is generally about. For example, an incident could be classified as being related to software, and then to Microsoft, and then to Word.|
 |combination class|A feature in Service Manager that is used mostly in reports and in views to display information from multiple classes that are defined in Service Manager.|
 |configuration item|Any component that needs to be managed to deliver a service. In Service Manager, configuration items might include services, hardware, software, buildings, people, and formal documentation, such as process documentation and service level agreements (SLA).|
 |configuration item class|A collection of configuration items. Groups can contain members of different configuration items classes (for example, a computer and a user).|

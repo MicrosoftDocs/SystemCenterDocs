@@ -1,20 +1,19 @@
 ---
-ms.assetid: b64a106a-93d5-4cfd-bcd6-a39462713ca3
 title: Manage usage metering in SPF
 description: Provides information about setting up usage metering in SPF
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 10/16/2016
+manager: carmonm
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
 ---
 
 # Manage usage metering in SPF
->Apples To: System Center 2016
 
-You can configure System Center 2016 - Service Provider Foundation (SPF) to aggregate usage statistics for queries by the SPF Usage web service.
+
+You can configure System Center - Service Provider Foundation (SPF) to aggregate usage statistics for queries by the SPF Usage web service.
 
 ## Before you start
 
@@ -26,7 +25,7 @@ Here's what you need:
 - A server running SQL Server with the Operations Manager Data Warehouse (OMDW).
 - You can have the database for the OMDW and the database for Service Provider Foundation on the same server. Connection settings are stored in the Service Provider Foundation database.
 - A Usage application pool identity credential that must be specified as a logon account to the OMDW databases. This account must have the db_DataReader and OpsMgrReader user mappings on each OMDW database. This is the same account specified for the Service Provider Foundation database.
-- One or more virtual machines hosted by Hyper V (or VMM), and System Center 2016 Operations Manager themselves.
+- One or more virtual machines hosted by Hyper V (or VMM), and System Center Operations Manager.
 
 ## Set up metering
 

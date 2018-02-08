@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: carmomm
-ms.date: 01/04/2018
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -39,6 +39,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
 |UNIX/Linux agent discovery and monitoring of agent|TCP 1270 <---|management server or gateway server|No||
 |UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 <---|management server or gateway server|Yes||
+|OMED Service|TCP 8886 <---|management server or gateway server|Yes||
 |Gateway server|5723 --->|management server|Yes (Setup)||
 |Agent (Audit Collection Services forwarder)|51909 --->|management server Audit Collection Services collector|Yes (Registry)||
 |Agentless Exception Monitoring data from client|51906 --->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||

@@ -1,20 +1,20 @@
 ---
 ms.assetid: c1f1417e-c520-4b9c-9e8c-e0bff263d311
-title:  Pre-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager
-description:  This guide provides the pre-upgrade tasks you must perform before attempting to upgrade to Operations Manager 2016. 
+title:  Pre-Upgrade Tasks When Upgrading System Center Operations Manager
+description:  This guide provides the pre-upgrade tasks you must perform before attempting to upgrade to the newest release of Operations Manager. 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/29/2016
+ms.date: 01/15/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Pre-Upgrade tasks when upgrading to System Center 2016 - Operations Manager
+# Pre-Upgrade tasks when upgrading to System Center Operations Manager
 
-Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
+Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process to System Center 2016 - Operations Manager or version 1801.
 
 1. Review the Operations Manager Event Logs
 
@@ -44,7 +44,7 @@ Review the event logs for Operations Manager on the management servers to look f
 
 ## Cleanup the database (ETL table)
 
-As part of upgrade to System Center 2016 - Operations Manager installation (setup) includes a script to cleanup ETL tables, grooming the database. However, in cases where there are a large number of rows (greater than 100,000) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre-upgrade task in all circumstances ensures a more efficient installation.
+As part of upgrade to System Center Operations Manager installation (setup) includes a script to cleanup ETL tables, grooming the database. However, in cases where there are a large number of rows (greater than 100,000) to cleanup, we recommend running the script before starting the upgrade to promote a faster upgrade and prevent possible timeout of setup. Performing this pre-upgrade task in all circumstances ensures a more efficient installation.
 
 ### To cleanup ETL
 

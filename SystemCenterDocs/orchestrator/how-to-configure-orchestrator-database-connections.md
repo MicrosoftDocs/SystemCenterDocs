@@ -1,19 +1,16 @@
 ---
-title: How to Configure Orchestrator Database Connections
-description: Describes how to configure database connections in System Center 2016 - Orchestrator.
-ms.custom: na
-ms.date: 4/25/2017
+title: Configure Orchestrator database donnections
+description: Describes how to configure database connections in System Center - Orchestrator.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: cfcc2e1e-9dd0-46fd-8fdc-3dfcf3c11573
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
+
+
 
 # How to configure Orchestrator database connections
 
@@ -37,7 +34,7 @@ In contrast, DBconfig only creates a new database; it does not configure the sec
 
 ## To create a new database on a new database server  
 
-1.  Run the System Center 2016 - Orchestrator Setup Wizard and install a new management server.  
+1.  Run the Orchestrator Setup Wizard, and install a new management server.  
 2.  On the **Configure the database server** page in the setup wizard, point to the new database server.  
 3.  After you add a new DB server to your deployment, you must also run permissionsconfig, and then export and import the service master key to the new database server.  
 

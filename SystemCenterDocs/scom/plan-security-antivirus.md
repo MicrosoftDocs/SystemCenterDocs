@@ -4,17 +4,17 @@ title: Configure Antivirus for Operations Manager Components
 description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles. 
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 10/19/2017
+manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Configuring antivirus exclusions for Operations Manager agent and components
+# Configuring antivirus exclusions for agent and components
 
-This article outlines antivirus exclusions as they pertain to System Center 2016 – Operations Manager.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
+This article outlines antivirus exclusions as they pertain to System Center 2016 - Operations Manager and version 1801.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
 
 ## Exclusions by process executable
 
@@ -33,7 +33,7 @@ The following directory-specific exclusions for Operations Manager includes real
 |Component | Directory Exclusion |
 |----------|----------|
 |SQL Server database server | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, and the **master** and **tempdb** databases. |
-|Management server | C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\Health Service State |
+|Management server | C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\Health Service State for Operations Manager 2016<br> C:\Program Files\Microsoft System Center\Operations Manager\Server\Health Service State for Operations Manager 1801 |
 | Gateway server | C:\Program Files\System Center Operations Manager\Gateway\Health Service State |
 | Agent | C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State |
 

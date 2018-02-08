@@ -1,24 +1,24 @@
 ---
 ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
-title: System Requirements for System Center 2016 - Operations Manager
-description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2016.  
+title: System Requirements for System Center Operations Manager
+description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 08/14/2017
+ms.date: 02/02/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# System requirements for System Center 2016 - Operations Manager
+# System requirements for System Center Operations Manager
 
-The topic describes general performance and scalability guidance for System Center 2016 - Operations Manager and recommends hardware configurations for a variety of workloads. Because System Center 2016 – Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+The topic describes general performance and scalability guidance for System Center 2016 - Operations Manager and version 1801.  It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 
 ## Capacity limits for Operations Manager
 
-This information helps you understand the performance and scalability characteristics of the various Operations Manager components and the management group which is comprised of these different components.  
+This information helps you understand the performance and scalability characteristics of the various Operations Manager components supporting a management group.  
 
 | Monitored Item | Recommended Limit |
 |:--- |:---|
@@ -43,7 +43,7 @@ This information helps you understand the performance and scalability characteri
 | URLs monitored per agent | 50 |
 
 ## Upgrade sequence
-If you are upgrading an installation of System Center 2012 R2 Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order.  
+If you are upgrading an installation of System Center 2012 R2 Operations Manager or System Center 2016 - Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order.  
 
 1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
 2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
@@ -53,11 +53,10 @@ If you are upgrading an installation of System Center 2012 R2 Operations Manager
 
 ## Hardware requirements
 
-Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](https://go.microsoft.com/fwlink/p/?LinkId=231853).
+Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager or version 1801, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853).
 
 > [!NOTE] 
-> While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  This will be addressed in an updated release of the sizing helper document.  
-
+> While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 or 1801 release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  
 
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
 |:--- |:---|:--- |:--- |
@@ -130,10 +129,17 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
-### Web console 
+### Web console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
-- Client web browser:  Internet Explorer 11 and SilverLight 5  
+- Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
+- Client web browser for HTLM5 web console:  
+
+    - Internet Explorer version 11 
+    - Microsoft Edge version 40 and higher
+    - Google Chrome version 61 and higher
+    - Firefox version 56 and higher
+  
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
     - Static Content 
@@ -146,7 +152,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     - Static Content Compression
     - Web Server (IIS) Support
     - IIS 6 Metabase Compatibility
-    - ASP.NET (both the 2.0 and 4.0 versions of ASP.NET are required.) 
+    - ASP.NET (both the 3.5 and 4.5 or higher versions of ASP.NET are required.) 
     - Windows Authentication 
  <br>
 - Selected website for web console: Requires a configured http or https binding.
@@ -156,10 +162,6 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 > [!NOTE]
 > Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
-> [!WARNING]
-> You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the Run As Administrator option, and then run the following command:
-**%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
-
 ### Operations Manager reporting server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
@@ -168,19 +170,19 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements). 
 
     > [!NOTE] 
-    > System Center 2016 – Operations Manager supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
+    > System Center 2016 – Operations Manager and version 1801 supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
 
 - NET Framework 4 or .NET Framework 4.5 is required. 
 
 ## Virtualization
 
-Microsoft supports running all System Center 2016 – Operations Manager server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft does not support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:  
-- Virtual computers running any Operations Manager 2016 component must not make use of any functionality where all activity on the virtual computer is not immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.  
-- Virtual computers running any Operations Manager 2016 component cannot be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted just as would be done with a physical computer.  
-- Virtual computers that are running Operations Manager 2016 components can be replicated to another virtualized environment by using [Azure Site Recovery](https://aka.ms/asr-scom). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
+Microsoft supports running all System Center 2016 – Operations Manager and version 1801 server features in any physical or virtual environment that meets the minimum requirements that are stated in this  document.  There are some restrictions on virtualization functionality that is applicable to Operations Manager.  Specifically, Microsoft does not support the use of the following virtualization functionality no matter what virtualization technology is used with Operations Manager:  
+- Virtual computers running any Operations Manager component must not make use of any functionality where all activity on the virtual computer is not immediately committed to the virtual hard drive.  This includes making use of point-in-time snapshots, and writing changes to a temporary virtual hard drive.  
+- Virtual computers running any Operations Manager component cannot be paused or placed into a ‘save state’ status and restarted.  They can only be shut down and restarted just as would be done with a physical computer.  
+- Virtual computers that are running Operations Manager components can be replicated to another virtualized environment by using [Azure Site Recovery](https://aka.ms/asr-scom). The virtualized environment referred here, can be either on on-premises or Azure, and it would failover to this environment on account of any disaster.  
 - If the Operations Manager databases are to be hosted on virtualized SQL Server(s), for performance reasons, we recommend that you store the Operational database and data warehouse database on a directly attached physical hard drive and not on a virtual hard disk.  
 
-System Center 2016 - Operations Manager runs on virtual machines in Microsoft Azure just as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.  
+System Center 2016 - Operations Manager and version 1801 runs on virtual machines in Microsoft Azure just as it does on physical computer systems.  We recommend running Operations Manager on Microsoft Azure virtual machines to monitor other virtual machines or resources hosted in Azure, or monitor instances and workloads hosted on-premises.  You can also run Operations Manager on-premises and monitor Microsoft Azure virtual machines or other resources in Azure.  
 
 ## Supported coexistence
 
@@ -190,6 +192,13 @@ The following table lists the scenarios in which coexistence between Operations 
 |:--- |:---|
 |  Operations Manager 2012 R2 | Yes
 
+The following table lists the scenarios in which coexistence between Operations Manager 1801 and earlier versions of Operations Manager is supported.
+
+| Version | Management Group Coexistence |
+|:--- |:---|
+|  Operations Manager 2016 RTM to the latest update rollup| Yes|
+|  Operations Manager 2012 R2 to the latest update rollup| Yes|
+
 ## In-place upgrade 
 
 System Center 2016 - Operations Manager supports an in-place upgrade from the following versions:
@@ -197,13 +206,18 @@ System Center 2016 - Operations Manager supports an in-place upgrade from the fo
 - System Center 2016 Technical Preview 5 - Operations Manager
 - System Center 2012 R2 Operations Manager with Update Rollup 9
 
+System Center Operations Manager 1801 supports an in-place upgrade from the following versions:
+
+- System Center 2012 R2 UR12 to the latest update rollup  
+- System Center 2016 RTM to the latest update rollup  
+
 ## Active Directory and DNS
 
 Operations Manager integrates with Active Directory for authentication, rights assignment, and authorization.  DNS is leveraged for name resolution of the supporting roles in the management group as well as computers, network devices, and other monitored workloads such as web URLs.  
 
 ### Active Directory Domain Services
 
-System Center 2016 – Operations Manager relies on AD DS for a number of services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
+System Center Operations Manager relies on AD DS for a number of services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
 
 ### Domain space naming
 
@@ -211,7 +225,7 @@ An Operations Manager management group cannot be installed into a root Active Di
 
 ### Domain functional level
 
-Windows Server Active Directory can operate at different functional levels. These levels are distinguished by the version of the Windows Server operating system that is permitted on the domain controllers present in the domain. System Center 2016 – Operations Manager does not have a domain functional level requirement.  
+Windows Server Active Directory can operate at different functional levels. These levels are distinguished by the version of the Windows Server operating system that is permitted on the domain controllers present in the domain. System Center Operations Manager does not have a domain functional level requirement.  
 
 ### Forest functional level
 

@@ -3,26 +3,25 @@ title: Plan SPF deployment
 description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 10/14/2016
+manager: carmonm
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
-ms.assetid: 617ee2c1-4dea-40e6-85b3-d87b15c0221d
 ---
 
 # Plan SPF deployment
 
->Apples To: System Center 2016 - Service Provider Foundation
 
-This article helps you to get the prerequisites and planning steps in place, before you deploy System Center 2016 - Service Provider Foundation (SPF).
+
+This article helps you to get the prerequisites and planning steps in place, before you deploy System Center - Service Provider Foundation (SPF).
 
 ## Deployment prerequisites
 
 Deployment requirements for SPF include:
 
--	Make sure you have the minimum [hardware](https://technet.microsoft.com/system-center-docs/system-requirements/minimum-hardware-recommendations-for-system-center-technical-preview) and [software](https://technet.microsoft.com/system-center-docs/system-requirements/operating-systems-compatibility-for-system-center-technical-preview) requirements on the SPF server.
--	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number. [Learn more]( https://technet.microsoft.com/system-center-docs/system-requirements/sql-server-version-compatibility-for-system-center-technical-preview) about supported SQL Server versions.
+-	Make sure you have the minimum hardware and software requirements on the SPF server.
+-	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number. 
 -	The VMM console should be installed on the SPF server. SPF can also run on the same server as the VMM management server. VMM must be deployed in your infrastructure.
 -	If you want to use usage metering to manage tenant costs, you need a System Center Operations Manager server, and a Data Warehouse server, running Windows 2012 R2 or later.
 -	The following Server Manager features should be installed on the SPF server:

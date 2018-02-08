@@ -1,20 +1,19 @@
 ---
-ms.assetid: 8a6608c6-5189-4e4a-a9bf-c44b3b13aa38
 title: Manage tenants and user roles in SPF
 description: Provides information setting up SPF tenants, and creating self-service tenant roles in VMM
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 10/27/2016
+manager: carmonm
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
 ---
 
 #  Manage tenants and user roles in SPF
->Apples To: System Center 2016
 
-System Center 2016 - Service Provider Foundation (SPF) doesn't create user roles, or define their scope. To set up tenants you need a certificate public key that's used to validate claims made (or on behalf of) a tenant.
+
+System Center - Service Provider Foundation (SPF) doesn't create user roles, or define their scope. To set up tenants you need a certificate public key that's used to validate claims made (or on behalf of) a tenant.
 
 ## Create a certificate
 
@@ -22,7 +21,7 @@ If you don't have an existing CA certificate to use, you can generate a self-sig
 
 ## Obtain a self-signed certificate
 
-Create a certificate using [makecert.exe (Certificate Creation Tool)](https://technet.microsoft.com/library/bfsktky3).  
+Create a certificate using makecert.exe (Certificate Creation Tool).
 
 1.  Open a command prompt as administrator.  
 2.  Generate the certificate by running the following command:  

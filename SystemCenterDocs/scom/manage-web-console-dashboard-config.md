@@ -5,10 +5,10 @@ description: This article describes how to manage the configuration of the HTML5
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/30/2017
+ms.date: 01/24/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -59,6 +59,7 @@ Move your cursor to the bottom right or right border of the widget. You will see
 
 To save the changes you want to keep, click **Save Changes**.  If you want to cancel all your changes then click **Undo changes**.
 
-
+## Next steps
+To understand how to create your own custom views and dashboards in Operations Manager, see [Creating and scoping views in Operations Manager](manage-console-scope-views.md). 
 
   

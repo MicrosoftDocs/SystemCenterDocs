@@ -1,46 +1,39 @@
 ---
-title: Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
-description: The following sections provide information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center 2016 - Orchestrator.
-ms.custom: na
-ms.date: 4/25/2017
+title: Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator
+description: This article provides information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center - Orchestrator.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: de7de32e-a645-4445-ba66-0236585e7517
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
 
-# Deploying the IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orchestrator
+# Deploy the IBM Tivoli Netcool OMNIbus integration pack for System Center - Orchestrator
 
-The following sections provide information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center 2016 - Orchestrator.
+This article provides information about deploying the IBM Tivoli Netcool/OMNIbus integration pack for System Center - Orchestrator.
 
 ## System Requirements
 
 The integration pack for IBM Tivoli Netcool/OMNIbus requires the following software to be installed and configured before to implementing the integration.
 
 -   IBM Tivoli Netcool/OMNIbus 7.3
--   System Center 2016 integration packs require Orchestrator in System Center 2016
 -   32-bit Java Standard Edition 7 on each runbook server and Runbook Designer using the integration pack.
     You must manually add the location of the JVM.DLL file to the PATH environment variable.
 -   Sybase JConnect 6 JDBC drivers on each runbook server and Runbook Designer using the integration pack.
-    You must manually copy the Jconn3.jar file to C:\\Program Files (x86)\\Common Files\\Microsoft System Center 2016\\Orchestrator\\Extensions\\Support\\NetcoolOMNIbus.
+    You must manually copy the Jconn3.jar file to C:\\Program Files (x86)\\Common Files\\Microsoft System Center <version>\\Orchestrator\\Extensions\\Support\\NetcoolOMNIbus.
 
-For more information about installing and configuring System Center 2016 - Orchestrator, System Center 2016, IBM Tivoli Netcool/OMNIbus application, Java Standard Edition, and Sybase JConnect 7 drivers, refer to the respective product documentation.
 
-## Downloading the Integration Pack
+## Download the integration pack
 
 You can download the integration pack for IBM Tivoli Netcool/OMNIbus from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54103).
 
-## Registering and Deploying the Integration Pack
+## Register and deploy the integration pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to a runbook server.
 
-### To register the integration pack
+###  Register the  pack
 
 1.  Copy the Netcool/OMNIbus integration pack file to the management server. Confirm that the file is not set to **Read Only**. This can prevent unregistering the integration pack later.
 
@@ -58,7 +51,7 @@ After you download the integration pack file, you must register it with the Orch
 
 8.  Click **Accept**. The **Log Entries** pane displays a confirmation message when the integration pack is successfully registered.
 
-### To deploy the integration pack
+### Deploy the pack
 
 1.  In the left pane of Deployment Manager, right-click **Integration Packs**, and then click **Deploy IP to Runbook Server or Runbook Designer**. The Integration Pack Deployment Wizard opens.
 
@@ -72,11 +65,10 @@ After you download the integration pack file, you must register it with the Orch
 
 6.  Click **Finish**. The **Log Entries** pane displays a confirmation message that the integration pack is successfully deployed.
 
-## Configuring the IBM Tivoli Netcool/OMNIbus Connections
+## Configure the IBM Tivoli Netcool/OMNIbus connections
 
 A connection establishes a reusable link between Orchestrator and an IBM Tivoli Netcool/OMNIbus server. You can create as many connections as you require to link to multiple servers running IBM Tivoli Netcool/OMNIbus. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
-#### To configure an IBM Tivoli Netcool/OMNIbus connection
 
 1.  In Runbook Designer, click **Options**, and then click **IBM Netcool/OMNIbus**. The **IBM Netcool/OMNIbus** dialog box appears.
 

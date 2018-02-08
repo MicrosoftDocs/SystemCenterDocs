@@ -1,17 +1,18 @@
 ---
 ms.assetid: c875ed10-4374-46fb-978e-06318512350d
-title: SPF system requirements
+title: System requirements for System Center 2016 - Service Provider Foundation (SPF)
 description: This article provides information about system requirements for SPF 2016
 author:  rayne-wiselman
 ms.author: raynew
-manager:  cfreeman
-ms.date:  01/10/2017
+manager:  carmonm
+ms.date:  01/22/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
+monikerRange: 'sc-spf-2016'
 ---
 
-# SPF system requirements
+# SPF 2016 system requirements
 
 This article describes the hardware and software requirements for System Center 2016 - Service Provider Foundation (SPF).
 

@@ -4,8 +4,8 @@ title: Service, User and Security Accounts
 description:  This article provides an overview of the security accounts required for initial setup of Operations Manager and for core features which may require a privileged account.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 05/31/2017
+manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -20,7 +20,7 @@ If you use domain accounts and your domain Group Policy object (GPO) has the def
 
 ## Action accounts
 
-In System Center 2016 – Operations Manager, management servers, gateway servers and agents all execute a process called MonitoringHost.exe.  MonitoringHost.exe is what each server role uses to accomplish monitoring activities such as executing a monitor or running a task.  Other examples of actions MonitoringHost.exe performs include:
+In System Center Operations Manager, management servers, gateway servers and agents all execute a process called MonitoringHost.exe.  MonitoringHost.exe is what each server role uses to accomplish monitoring activities such as executing a monitor or running a task.  Other examples of actions MonitoringHost.exe performs include:
 
 - Monitoring and collecting Windows event log data.
 - Monitoring and collecting Windows performance counter data.
@@ -95,7 +95,3 @@ When performing discovery-based agent deployment, an account is required with Ad
 ## Notification Action account
 
 The Notification Action account is the account used for creating and sending notifications. These credentials must have sufficient rights for the SMTP server, instant messaging server, or the SIP server that is used for notifications.
-
-
-
-

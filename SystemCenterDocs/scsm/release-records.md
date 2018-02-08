@@ -2,22 +2,17 @@
 title: Manage release records
 description: Provides an overview and describes how to manage Service Manager release records.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 2847c2cf-422d-4cfa-8e36-6f7eb7856afa
 ---
 
 # Manage Service Manager release records
 
-The key to understanding release management in System Center 2016 - Service Manager is realizing how objects, such as change requests and activities, interact when facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.  
+The key to understanding release management in System Center - Service Manager is realizing how objects, such as change requests and activities, interact when facilitated by release records. Release management uses parent and child release records to help automate the process of updating the status of change requests and the status propagation between parallel activities, sequential activities, and the activities within them.  
 
 Often, there are multiple parts of a project, and there is more than one change request that can be deployed at different times that can affect a project. The overall goal of change management and release management is to protect the production environment from unnecessary changes, so that every change to it must first be approved. Release management deals only with approved changes.  
 
@@ -184,7 +179,7 @@ The release manager can create a build configuration item that defines the softw
 2.  In the **Configuration Items** pane, expand **Configuration Items**, and then click **Builds**.  
 3.  In the **Tasks** pane, under **Builds**, click **Create Build**.  
 4.  On the **General** tab in the form, do the following:  
-    1.  In the **Title** box, type a name for the build. For example, for the build that will be used to deploy the new HRWeb software, type **HRWeb July 2016**.  
+    1.  In the **Title** box, type a name for the build. For example, for the build that will be used to deploy the new HRWeb software, type **HRWeb July 2017**.  
     2.  In the **Version** box, type a version number or other designation. For example, type **0.2**.  
     3.  Click **OK**.  
 5.  On the **Related Items** tab, under **Configuration Items: Computers, Services and People**, click **Add** to associate a software configuration item, and then do the following for each software item that you want to add:  

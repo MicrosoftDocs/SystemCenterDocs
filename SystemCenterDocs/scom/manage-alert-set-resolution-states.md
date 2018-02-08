@@ -3,10 +3,10 @@ title: How to Set Alert Resolution States
 description: This article describes how to set custom resolution states for alerts generated in Operations Manager to support your incident management process.  
 author: mgoedtel
 ms.author: magoedte
-ms.manager: cfreeman
-ms.date: 12/05/2016
+ms.manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: d2717f98-84fc-43d7-8c06-bdd5aaf386c0
@@ -14,7 +14,7 @@ ms.assetid: d2717f98-84fc-43d7-8c06-bdd5aaf386c0
 
 # How to set alert resolution states
 
-In System Center 2016- Operations Manager there are seven default resolution states for alerts: 
+In System Center Operations Manager there are seven default resolution states for alerts: 
 
    | Resolution State | ID | 
    |------------------|----|

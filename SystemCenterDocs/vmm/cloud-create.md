@@ -5,7 +5,7 @@ description: This article provides instructions for creating a private cloud in 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -79,15 +79,15 @@ View status in **Jobs** and ensure the job is complete.
 
 To verify that the private cloud was created, check **VMs and Services** > **Clouds**. You can also verify in **Library** > **Cloud Libraries**, to view the read-only library shares.
 
-::: moniker range="sc-vmm-1711"
+::: moniker range="sc-vmm-1801"
 
-### Assign Storage QoS Policies while creating  a cloud (Technical Preview)
+### Assign Storage QoS Policies while creating  a cloud
 
 1. Follow the steps until 14 in the [above procedure](#create-a-private-cloud-from-a-host-group).
 
 2. In **Storage QoS Policies**, select the policies that you want to assign to this cloud.
 
-3. Proceed with rest of the steps and complete the wizard. 
+3. Proceed with rest of the steps and complete the wizard.
 
 ::: moniker-end
 
@@ -119,10 +119,10 @@ View status in **Jobs** and ensure the job is complete.
 
 To verify that the private cloud was created, check **VMs and Services** > **Clouds**. You can also verify in **Library** > **Cloud Libraries**, to view the read-only library shares.
 
-::: moniker range="sc-vmm-1711"
+::: moniker range="sc-vmm-1801"
 
-## Assign storage QoS policies to a private cloud (Technical Preview)
-System Center Preview Virtual Machine Manager 1711 (SCVMM 1711) supports storage QoS policies on a private cloud.
+## Assign storage QoS policies to a private cloud
+System Center 1801 - Virtual Machine Manager (SCVMM) supports storage QoS policies on a private cloud.
 
 The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant admins and self-service users can consume these while deploying the VMs and services. This will enable the cloud providers to guarantee and/or limit the amount of storage performance as per the subscription opted by the tenants.  
 

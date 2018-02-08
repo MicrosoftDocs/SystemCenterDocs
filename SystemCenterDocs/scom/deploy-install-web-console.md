@@ -1,20 +1,20 @@
 ---
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title:  How to Install the Operations Manager Web console
-description: This article describes how to install the Operations Manager Web console. 
+description: This article describes how to install the Web console for System Center Operations Manager. 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 02/02/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How to install the Operations Manager Web console
 
-You can install the web console when you install Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md). After you install the web console, you must configure permissions inheritance to allow users to view performance and diagram views. For instructions, see [To configure permissions inheritance for the web console](#to-configure-permissions-inheritance-for-the-web-console).
+You can install the web console when you install System Center 2016 - Operations Manager  or version 1801, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md). 
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -63,33 +63,34 @@ The local and remote parameters are as follows:
 
 4.  On the **Getting Started**, **Select installation location** page, accept the default location, or type in a new location or browse to one, and then click **Next**.
 
+    > [!NOTE]
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > 
+
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
     > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
-    > [!IMPORTANT]
-    > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
-    > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
-
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
-7.  On the **Configuration**, **Specify a management server** page, enter the name of a management server that only the web console uses, and then click **Next**.
+7.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Next**.
 
-8.  On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and then click **Next**.
+8.  On the **Configuration**, **Specify a management server** page, enter the name of a management server that only the web console uses, and then click **Next**.
+
+9.  On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and then click **Next**.
 
     > [!WARNING]
     > Installing the web console on a computer that has SharePoint installed is not supported.
 
-9. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your options, and then click **Next**.
+10. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and then click **Next**.
 
     > [!NOTE]
     > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](http://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx).
 
 10. On the **Diagnostic and Usage Data** page, please review data collection terms and then click **Next** to continue.  
 
-11. If Microsoft Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
+11. If Microsoft Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and then click **Next**.
 
 12. Review your selections on the **Configuration**, **Installation Summary** page, and then click **Install**. Setup continues.
 
@@ -108,24 +109,21 @@ The local and remote parameters are as follows:
 5.  On the **Prerequisites** page, review and address any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
-
-    > [!IMPORTANT]
-    > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
-    > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
+    > Installation of the System Center 2016 - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
 6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
-7.  On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and then click **Next**.
+7.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Next**.
 
-8.  On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your options, and then click **Next**.
+8.  On the **Configuration**, **Specify a web site for use with the Web console** page, select the **Default Web Site**, or the name of an existing website. Select **Enable SSL** only if the website has been configured to use Secure Sockets Layer (SSL), and then click **Next**.
 
-9. If Windows Update is not activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
+9.  On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and then click **Next**.
 
-10. Review your selections on the **Configuration**, **Installation Summary** page, and click **Install**. Setup continues.
+10. If Windows Update is not activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your option, and then click **Next**.
 
-11. On the **Setup is complete** page, click **Close**.
+11. Review your selections on the **Configuration**, **Installation Summary** page, and click **Install**. Setup continues.
+
+12. On the **Setup is complete** page, click **Close**.
 
 > [!IMPORTANT]
 > The Default website must have an http or https binding configured.
@@ -155,6 +153,8 @@ The local and remote parameters are as follows:
     ```
 
 ## To configure permissions inheritance for the Web console
+
+The following steps are for configuring permission inheritance for the System Center 2016 - Operations Manager Web console.  
 
 1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, C:\Program Files\System Center 2016\Operations Manager\WebConsole\MonitoringView), right-click the TempImages folder, and click **Properties**.
 
