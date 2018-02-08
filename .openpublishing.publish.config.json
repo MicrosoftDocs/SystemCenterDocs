@@ -17,6 +17,7 @@
          ">= sc-spf-2016 <= sc-spf-1801",
          ">= sc-vmm-2016 <= sc-vmm-1801"
         ],
+
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",

@@ -80,6 +80,7 @@ This article summarizes System Center Data Protection Manager (DPM) protection s
 |Linux|Linux running as Hyper-V guest|On-premises Hyper-V virtual machine|Y|Y|Hyper-V must be running on Windows Server 2012 R2 or Windows Server 2016. Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](http://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).|
 |VMware VMs | VMware server 5.5, 6.0, or 6.5 | On-premises Hyper-V virtual machine | Y | N | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 
+
 ## Cluster support
 DPM can protect data in the following clustered applications:
 
