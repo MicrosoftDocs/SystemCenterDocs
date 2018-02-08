@@ -1,11 +1,10 @@
 ---
-ms.assetid: 0cce9ea6-adf3-422d-94c0-2bf15b0c1d95
 title: What is Service Provider Foundation?
 description: This article provides a broad overview of Service Provider Foundation
-author: cfreeman
+author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 10/12/2016
+manager: carmonm
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
@@ -13,9 +12,9 @@ ms.technology:  service-provider-foundation
 
 # What is Service Provider Foundation?
 
-System Center 2016 – Virtual Machine Manager (VMM), provides all the resources needed to build, maintain, and monitor a cloud infrastructure. However, service providers and large enterprises need additional features to support multiple tenants, integrate infrastructures with sophisticated web-based self-service portals, and distribute management workloads across multiple datacenters.
+System Center – Virtual Machine Manager (VMM), provides all the resources needed to build, maintain, and monitor a cloud infrastructure. However, service providers and large enterprises need additional features to support multiple tenants, integrate infrastructures with sophisticated web-based self-service portals, and distribute management workloads across multiple datacenters.
 
-System Center 2016 - Service Provider Foundation (SPF), bundled with System Center Orchestrator, provides this functionality with an extensible [Open Data Protocol API](http://www.odata.org) over a Representational State Transfer (REST) web service that interacts with VMM.
+System Center - Service Provider Foundation (SPF), bundled with System Center Orchestrator, provides this functionality with an extensible [Open Data Protocol API](http://www.odata.org) over a Representational State Transfer (REST) web service that interacts with VMM.
 
 SPF can be used by service providers to offer infrastructure as a service (IaaS) to their clients. If a service provider has a frontend portal for clients, client can make requests to the hosting provider resources without leaving the portal. Cloud resources provided by VMM can be managed using  standard management interfaces from supported devices anywhere.
 
@@ -46,11 +45,11 @@ SPF_Admin group in Computer Management | Must include a local user who is a memb
 
 The VMM web service invokes VMM to perform requested operations, such as creating virtual machines, virtual networks, user role definitions, and other fabric for the cloud. This service coordinates the changes among the participants and provides the following dynamic capabilities:
 
-- Portal applications and other clients detect changes that Service Provider Foundation and System Center 2016 Virtual Machine Manager made.
-- System Center 2016  VMM shows changes that portal applications, other clients, and Service Provider Foundation made.
+- Portal applications and other clients detect changes that SPF and VMM made.
+- VMM shows changes that portal applications, other clients, and Service Provider Foundation made.
 - Service Provider Foundation reflects all changes that the participants made.
 
-You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register an instance of System Center 2016 VMM. You can access the VMM web service with the URL `https://server:8090/SC2016/VMM/Microsoft.Management.Odata.svc`
+You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register a VMM instance. You can access the VMM web service with the URL `https://server:8090/SC2016/VMM/Microsoft.Management.Odata.svc`
 
 
 **Credential** | **Requirement**
@@ -63,7 +62,7 @@ Admin user role in VMM | Must include the credential for the VMM application poo
 ### Usage web service
 
 - The Usage web service is only used by Windows Azure Pack, and third- party billing providers. The Usage web service endpoint shouldn't  be accessed for other purposes to prevent data loss due to unnecessary or erroneous queries.
-- The Usage web service uses registrations of instances of System Center 2016 Operations Manager data warehouses (that VMM hosts) for collecting metrics on tenant virtual machine usage and other fabric usage. Usage data is collected for processes such as billing chargeback features.
+- The Usage web service uses registrations of instances of Operations Manager data warehouses (that VMM hosts) for collecting metrics on tenant virtual machine usage and other fabric usage. Usage data is collected for processes such as billing chargeback features.
 - You can use Windows PowerShell cmdlets to register Operations Manager data warehouse connection settings in the SPF database. This registration enables SPF to aggregate usage data from the data warehouses.
 - The Usage web service returns utilization data that pertains to every subscription across services.
 

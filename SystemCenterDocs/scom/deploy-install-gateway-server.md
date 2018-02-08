@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Gatewa
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -18,7 +18,7 @@ Gateway servers are used to enable agent-management of computers that are outsid
 
 Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication.
 
-You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 ## How to deploy a gateway server
 

@@ -1,23 +1,17 @@
 ---
-title: Classes, Fields, and Filters
-description: The following tables list the System Center 2016 - Service Manager Integration Pack classes.
-ms.custom: na
-ms.date: 12/02/2016
+title: Classes, fields, and filters
+description: The following tables list the System Center - Service Manager integration pack classes.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: d0681a4c-6716-40af-8c56-d7ed5396d79c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# Classes, Fields, and Filters
+# Classes, fields, and filters
 
-The following tables list the System Center 2016 - Service Manager Integration Pack classes. They also list the elements that can be used as fields or filters to create, locate, retrieve, and update objects in that class.
+The following tables list the System Center - Service Manager Integration Pack classes. They also list the elements that can be used as fields or filters to create, locate, retrieve, and update objects in that class.
 
 ## Active Directory Group Class
 

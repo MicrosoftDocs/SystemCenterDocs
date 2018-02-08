@@ -1,26 +1,20 @@
 ---
-title: Create Change with Template
+title: Create Change with Template activity
 description: The Create Change with Template activity is used to configure a change record based on an existing template.
-ms.custom: na
-ms.date: 12/02/2016
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: e3da4a26-1781-4dc8-b0a9-74dd0a2d52a5
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
 ---
-# Create Change with Template
+# Create Change with Template activity
 
 The Create Change with Template activity is used to configure a change record based on an existing template.
 
 >[!IMPORTANT]
->System Center Orchestrator 2016 does not support the use of mandatory fields in child objects that the Create Change with Template activity creates. These template activities will fail in Service Manager if there are mandatory fields in any of the child objects it tries to create. This is because there is no way for the user to provide the mandatory properties for the associated activity.
+>System Center -Orchestrator does not support the use of mandatory fields in child objects that the Create Change with Template activity creates. These template activities will fail in Service Manager if there are mandatory fields in any of the child objects it tries to create. This is because there is no way for the user to provide the mandatory properties for the associated activity.
 
 The Create Change with Template activities create a change record by presenting the workflow author with a property grid of values associated with the change. This includes mandatory properties that will cause the create operation to be rejected by Service Manager if they are not provided.
 
@@ -28,7 +22,7 @@ The configuration user interface for Create Change with Template does not provid
 
 The following published data elements are specific to Create Change with Template. Additional published data is generated based on the class that you select when you define the activity. For a list of the data elements published by each class, see [Service Manager Published Data](service-manager-published-data.md).
 
-## Create Change with Template Published Data
+## Create Change with Template published data
 
 | Element   | Description   |
 |-------------------|----------------------------------------------------------------------------|

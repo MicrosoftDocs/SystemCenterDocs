@@ -1,18 +1,13 @@
 ---
 title: Deploy System Center - Service Manager
-description: This guide helps you deploy System Center 2016 - Service Manager in one of several different scenarios.
-ms.custom: na
+description: This guide helps you deploy System Center - Service Manager in one of several different scenarios.
 manager: carmonm
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 125912d9-f349-498d-920c-74519c667f48
 ---
 
 # Deploy System Center - Service Manager
@@ -20,7 +15,7 @@ ms.assetid: 125912d9-f349-498d-920c-74519c667f48
 This articles in this guide helps you deploy System Center - Service Manager in one of several different scenarios. The scenarios range from a simple, one\-computer scenario to a four\-computer scenario that is designed to support production\-type environments. In addition, this guide shows you how to register a Service Manager management group with the Service Manager data warehouse so that you can generate reports. You have the option of deploying the Self-Service Portal so you can provide access to Service Manager through a web browser. To improve performance and provide for redundancy, you can deploy additional secondary Service Manager management servers.  
 
 > [!NOTE]  
->  It is assumed that you are installing Service Manager on a computer where no previous version of Service Manager is installed. For information about upgrading to System Center 2016 - Service Manager, see the [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-to-sm-2016.md).  
+>  It is assumed that you are installing Service Manager on a computer where no previous version of Service Manager is installed. 
 
 This articles in this guide also describe how to find and read the Setup log if you encounter issues when you deploy Service Manager. And, finally, information about backing up Service Manager management server encryption keys is included. After you run Setup, the Encryption Key Backup and Restore Wizard starts automatically.  
 

@@ -1,19 +1,15 @@
 ---
 title: Control runbook activities
 Description: Describes how to manipulate data and control the sequence of operations in an Orchestrator runbook.
-ms.custom: na
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
-ms.topic: reference
-author: cfreemanwa
+ms.topic: article
+author: rayne-wiselman
 ms.author: raynew
-ms.date: 10/12/2016
+ms.date: 01/17/2018
 manager: carmonm
 ---
-# Controlling activities for System Center 2016 - Orchestrator runbooks
+# Control runbook activities
 
 You set the sequence of operations in runbooks by linking activities together in the **Runbook Designer**. These links are known as "smart links" because you can configure them to control the type of data passed from one activity to another. You can also control when the runbook completes activities by setting the logic for when those operations run with embedded loops. Finally, you can use text and numerical operations to manipulate data as it passes between activities, or to set conditions for the order of operations. This topic describes how to control sequencing and manipulate data within your runbook.
 

@@ -5,9 +5,9 @@ description: This article describes how to install the Operations Manager Audit 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -38,10 +38,7 @@ The ACS database runs on a supported version of Microsoft SQL Server. The Audit 
 
 7.  On the **Database** page, if the database is on a separate server than the ACS collector, click **Remote Database Server**, and then type the computer name of the database server that will host the database for this installation of ACS. Otherwise, click **Database server running locally**.
 
-8.  In the **Database server instance name** field, type the name of the database that will be created for ACS. If you leave this field blank, the default name is used. In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and type in a different name or leave the default name. Click **Next**.
-
-    > [!NOTE]
-    > To display a list of SQL Server Instances, on the database computer click **Start**, point to **Programs** and open **SQL Server** (the appropriate version of SQL Server is dependent on the version of Operations Manager - see [System Requirements for System Center 2012 - Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=219650)), and then click **SQL Server Management Studio**. On the **Server name** list, click **Browse for more** and then expand **Database Engine**. All databases are listed as server name\database name.
+8.  In the **Database server instance name** field, type the name of the server and the name of the SQL Server instance, if not the default instance, for the database server that will host the ACS database.  In the **Database** name field, the default database name of **OperationsManagerAC** is automatically entered. You can select the text and type in a different name or leave the default name. Click **Next**.
 
 9. On the **Database Authentication** page, select one of the authentication methods. If the ACS collector and the ACS database are members of the same domain, you can select **Windows authentication**, otherwise select **SQL authentication**, and then click **Next**.
 

@@ -1,19 +1,19 @@
 ---
-description: Describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
+description: Describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
 manager:  cfreemanwa
 ms.topic:  article
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 10/12/2016
-title:  System requirements for Service Management Automation
+ms.date: 01/22/2018
+title:  System requirements for Service Management Automation 2016
 ms.technology:  service-management-automation
-ms.assetid:  222692ab-765c-44bd-8d50-0c0596d26a94
+monikerRange: 'sc-sma-2016'
 ---
 
-# System requirements for Service Management Automation
+# System requirements for Service Management Automation 2016
 
-This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
+This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation in System Center 2016.
 
 ## Hardware requirements
 The following recommended configurations should be used.
@@ -32,9 +32,11 @@ The following software must be installed for each role.
 |Automation web service|Windows Server 2012 R2 or above<br /><br />SQL Server 2012 SP2 or above (Standard or Enterprise)<br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
 |Windows PowerShell module|Windows PowerShell 4.0 or above|
 
-Before installing the web service, use the following procedure to install .NET Framework 4.5 and HTTP Activation on Windows Server 2012 R2:
 
-#### To install .NET Framework 4.5 and HTTP Activation
+## Install .NET Framework 4.5 and HTTP Activation
+
+Before installing the web service, use the following procedure to install .NET Framework 4.5 and HTTP Activation:
+
 
 1.  On the Windows **Start** screen, click the **Server Manager** tile.
 
@@ -52,12 +54,12 @@ Before installing the web service, use the following procedure to install .NET F
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 
-## Running Service Management Automation on Windows Azure virtual machines
+## Run Service Management Automation on Azure VMs
 Service Management Automation runs on Windows Azure just as it does on physical computer systems.
 
 Service Management Automation was tested by Microsoft by installing and using it in a Windows Azure virtual machine. The testing concluded that Service Management Automation was fully functional and operated exactly the same as it does on physical hardware. Stability and performance benchmarks inside a Windows Azure virtual machine were at a level where no special considerations were needed.
 
-## Security Requirements
+## Security requirements
 The following ports must be opened for each role.
 
 |Role|Requirement|
@@ -73,3 +75,7 @@ The following certificates are required for each component.
 |Runbook worker|None|
 |Automation web service|A certificate that can be used for Secure Sockets Layer (SSL) encryption over HTTPS. The installation program for Service Management Automation can be used to generate a self-signed certificate.|
 |Windows PowerShell module|None|
+
+## Next steps
+
+[Deploy](deploy.md) Service Management Automation.

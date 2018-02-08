@@ -5,16 +5,16 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/30/2017
+ms.date: 01/24/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How create a dashboard with the Performance widget in the Web console
-In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the Performance widget.
+In System Center Operations Manager version 1801, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the Performance widget.
 
 ## Add widget to dashboard
 
@@ -44,3 +44,6 @@ With a performance widget, you can perform such actions as:
 1. Specify the minimum and maximum vertical axis values 
 2. Export the alerts to Excel for further analysis 
 3. Modify your selection of legend or to enable/disable “Visualize objects by performance”, customized to your personal needs 
+
+## Next steps
+To learn how to create a dashboard in the new web console with the State widget, see [How create a dashboard with the State widget in the Web console](manage-create-web-dashboard-state.md)

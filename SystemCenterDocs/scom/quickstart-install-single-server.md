@@ -1,12 +1,12 @@
 ---
 title: Walkthrough Installing Operations Manager on a Single Server
-description: This article describes how to install all Operations Manager 2016 roles in a simple single-server deployment.   
+description: This article describes how to install all Operations Manager roles in a simple single-server deployment.   
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 05/31/2017
+manager: carmonm
+ms.date: 02/02/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
@@ -14,7 +14,7 @@ ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 
 # Walkthrough Installing Operations Manager on a Single Server
 
-This walkthrough guides you through an installation of System Center 2016 - Operations Manager on a single server. The features installed include the following:
+This walkthrough guides you through an installation of System Center 2016 - Operations Manager or System Center Operations Manager 1801 on a single server. The features installed include the following:
 
 -   Management server
 
@@ -26,7 +26,7 @@ This walkthrough guides you through an installation of System Center 2016 - Oper
 
 ## Prerequisites
 
-You must ensure that your server meets the minimum supported configurations for System Center 2016 - Operations Manager. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
+You must ensure that your server meets the minimum supported configurations for System Center Operations Manager. For more information, see [System Requirements for System Center  Operations Manager](plan-system-requirements.md).
 
 **Required SQL Server Components**
 
@@ -38,21 +38,21 @@ You must ensure that your server meets the minimum supported configurations for 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
-2.  On the System Center 2016 - Operations Manager installation media, run **Setup.exe**, and then click **Install**.
+2.  On the System Center Operations Manager installation media, run **Setup.exe**, and then click **Install**.
 
 3.  On the **Getting Started**, **Select features to install** page select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature. Then click **Next**.
 
-4.  On the **Getting Started**, **Select installation location** page, accept the default value of **C:\Program Files\System Center 2016\Operations Manager** or type in a new location or browse to one. Then click **Next**.
+4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+
+    > [!NOTE]
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > 
 
 5.  On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
     > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
-    > [!IMPORTANT]
-    > You must install IIS before installing .NET Framework 4. If you installed IIS after installing .NET Framework 4, you must register ASP.NET 4.0 with IIS. Open a Command prompt window by using the **Run As Administrator** option and then run the following command:
-    > 
-    > **%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -r**
 
 6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
@@ -126,7 +126,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 22. When Setup is finished, the **Setup is complete** page appears. Click **Close** and the Operations console will open.
 
-### To install the System Center 2016 - Operations Manager single server management group configuration from the Command Prompt 
+### To install the Operations Manager single server management group configuration from the Command Prompt 
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
@@ -135,7 +135,7 @@ You must ensure that your server meets the minimum supported configurations for 
     > [!NOTE]
     > Setup.exe requires administrator privileges because the Setup process requires access to system processes that can only be used by a local administrator.
 
-3.  Change the path to where the System Center 2016 - Operations Manager setup.exe file is located, and run the following command.
+3.  Change the path to where the System Center Operations Manager setup.exe file is located, and run the following command.
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
@@ -210,7 +210,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ## Next steps
 
-Now that you have installed System Center 2016 - Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager 2016 Monitoring Scenarios](https://go.microsoft.com/fwlink/p/?LinkID=218372).
+Now that you have installed System Center Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager Monitoring Scenarios](manage-monitoring-scenarios.md).
 
 
 

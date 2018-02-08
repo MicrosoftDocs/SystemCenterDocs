@@ -1,31 +1,30 @@
 ---
 ms.assetid: 
 title:  Install agent and certificate on Linux computers using the command line
-description: This article describes the new Linux agent and how to install manually on System Center Preview 1711 - Operations Manager.    
+description: This article describes the new Linux agent and how to install manually on System Center Operations Manager 1801.    
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/3/2017
+ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Install agent and certificate on Linux computers using the command line
-This article provides details of the latest version of the Linux agent for System Center  Preview 1711 - Operations Manager and the process for installing it. 
+This article provides details of the latest version of the Linux agent for System Center Operations Manager 1801 and the process for installing it. 
 
 This version of the Linux agent supports [Fluentd](https://www.fluentd.org/), an open source data collector for Linux that collects data from a variety of sources.  The existing OMI based monitoring for currently supported Linux workloads will continue to work without change.
 
-## What's new in this Technical Preview 
+## What's new in version 1801
 1. A new converter plugin is included that enables customers to use third party plugins for Operations Manager log file monitoring.
 2. Added support to Server Authentication.
 3. Added support to additional Linux distros.
 
-
 ## Supported platforms
-The Linux distributions in the following table are supported in this technical preview.
+The Linux distributions in the following table are supported in this release.
 
 | Linux Operating System | Version Supported |
 |:---|:---|
@@ -35,7 +34,15 @@ The Linux distributions in the following table are supported in this technical p
 | Debian | 6 (x86/x64)<br>7 (x86/x64)<br>8 (x86/x64) |
 | Oracle Linux | 5 (x86/x64)<br>6 (x86/x64)<br>7 (x64) |
 | SUSE Linux Enterprise Server | 11 (x86/x64)<br>12 (x64) |
-Technical preview only supports new installations. Upgrade from existing Operations Manager/OMS agents is not currently supported. 
+
+<Upgrade from existing Operations Manager/OMS agents is not currently supported>. 
+
+##	Supported deployment configurations
+Operations Manager supports the following agent reporting configurations in the management group.  
+
+1. Linux servers reporting directly to a management server
+2. Linux server reporting to a Gateway server
+3. Linux servers reporting to a chained Gateway server
 
 ## Agent installation
 
@@ -45,6 +52,13 @@ Use the following procedures to manually install agents to UNIX and Linux comput
 
 ## Manual installation
 The agent is provided as a self-extracting, installable shell script bundle. This bundle contains both Debian and RPM packages for each of the agent components and can be installed directly or extracted to retrieve the individual packages. Separate bundles are available for x64 and x86 architectures. 
+
+This will require the following steps:
+
+1. Install the agent and register Operations Manager as your workspace
+2. Open TCP port on management server or gateway server
+3. Configure a server authentication certificate
+4. Discover the Linux server using the Discovery Wizard
 
 The following sections describe the steps required to manually install the Linux agent.
 
@@ -63,6 +77,9 @@ The following sections describe the steps required to manually install the Linux
     WORKSPACE_ID=scom
     SCOM_ENDPOINT=https://<FQDN_OF_OM_MACHINE>:<PORT_OF_OMED_SERVICE>
 
+### Configure TCP port for OMED service
+Operations Manager requires that TCP port 8886 be used to establish inbound communication between the Linux agent and the management server or gateway server to enable data collection.  
+
 ### Configure certificates
 In the previous version of the Linux agent, the management server accessed each Linux computer with a server authentication certificate.  With the new agent, Fluentd acts as the client accessing the management server, so the certificate requires client authentication.  You need to obtain a new certificate to work with the new agent. Operations Manager will use the new certificate for Fluentd communications and the old certificate for other communications.
 
@@ -79,11 +96,10 @@ In the previous version of the Linux agent, the management server accessed each 
 
     scxadmin –restart
 
-
 ### Discovery
-After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the Discovery type, select Discover only computers with the UNIX/Linux agent installed. For more information see [Install Agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).
+After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager using the Discovery Wizard. For the Discovery type, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).
 
-Next steps
+## Next steps
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](manage-apply-overrides-object-discovery.md).
 - To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](manage-upgrade-uninstall-crossplat-agent.md).
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers. 

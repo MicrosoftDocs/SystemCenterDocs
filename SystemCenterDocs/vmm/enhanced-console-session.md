@@ -1,24 +1,23 @@
 ---
 ms.assetid: 625286e3-1d38-4ea8-8088-a53fffd7c721
-title: Enable enhanced console session in VMM 1711
-description: This article explains about how to enable enhanced console session in System Center VMM preview 1711.
+title: Enable enhanced console session in VMM 1801
+description: This article explains about how to enable enhanced console session in System Center VMM 1801.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/08/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1711'
+monikerRange: 'sc-vmm-1801'
 ---
 
-# Enable enhanced console session (Technical Preview)
-This article provides information about how to configure enhanced console session in System Center VMM Preview 1711 (VMM 1711).
+# Enable enhanced console session in VMM
+This article provides information about how to configure enhanced console session in System Center 1801 - Virtual Machine Manager (VMM).
 
 Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Currently, the console connect in VMM supports only basic session where clipboard text can only be pasted through **Type Clipboard Text menu** option.
 
-
-VMM 1711 supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, there by copy/paste commands for text and files are made possible from and to the VM.
+VMM 1801 supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, there by copy/paste commands for text and files are made possible from and to the VM.
 
 
 ## Before you start

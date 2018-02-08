@@ -1,20 +1,16 @@
 ---
 title: Acknowledge Message
 description: The Acknowledge Message activity is used in a runbook to acknowledge or un-acknowledge a message.
-ms.custom: na
-ms.date: 12/02/2016
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: orchestrator
-ms.tgt_pltfrm: na
-ms.topic: reference
-ms.assetid: c8d06fea-db19-494a-9f40-0b480d2af7c5
-author: cfreemanwa
-ms.author: raynew
+author: rayne-wiselman
 manager: carmonm
-robots: noindex
+ms.date: 01/17/2018
+ms.prod: system-center-threshold
+ms.technology: orchestrator
+ms.topic: reference
+ms.author: raynew
 ---
+
+
 # Acknowledge Message
 
 The Acknowledge Message activity is used in a runbook to acknowledge or un-acknowledge a message.

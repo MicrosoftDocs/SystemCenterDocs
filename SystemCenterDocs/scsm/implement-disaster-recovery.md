@@ -2,26 +2,21 @@
 title: Implement disaster recovery
 description: Describes the steps needed to recover from potential software and equipment failures in your Service Manager environment.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 9b9268e9-2ad8-4781-990c-ee683fd21d02
 ---
 
 # Implement Service Manager disaster recovery
 
-This article describes the steps needed to recover from potential software and equipment failures in your Service Manager environment. It includes information about how to recover Service Manager databases, management servers, and unsealed management packs.  
+This article describes the steps needed to recover from potential software and equipment failures in your System Center - Service Manager environment. It includes information about how to recover Service Manager databases, management servers, and unsealed management packs.  
 
 ## Restore a database
 
-To restore a database \(which includes the encryption keys\) for System Center 2016 - Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](https://go.microsoft.com/fwlink/p/?LinkID=131016). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
+To restore a database \(which includes the encryption keys\) for Service Manager, you rebuild a new computer using the same computer names and instance names as the original. Your disaster recovery strategy for the Service Manager databases should be based on general procedures for SQL&nbsp;Server disaster recovery. For more information, see [Planning for Disaster Recovery](https://go.microsoft.com/fwlink/p/?LinkID=131016). Remember that if you restore a database, you must give the new computer the same name as the original computer and use the same instance name as the original instance.  
 
 In addition, you must use the script that you created in the [Backing Up Unsealed Management Packs in Service Manager](back-up-unsealed-mps.md) article in this guide. You use this script to restore permissions for the recreated database.  
 
@@ -36,7 +31,7 @@ For either management server, your first step must be to restore the encryption 
 
 ### Restore the Service Manager encryption key
 
-You can use the following procedure to restore the encryption keys before you run Setup.exe to restore a part of System Center 2016 - Service Manager.  
+You can use the following procedure to restore the encryption keys before you run Setup.exe to restore a part of Service Manager.  
 
 #### To restore the encryption key  
 
@@ -54,7 +49,7 @@ You can use the following procedure to restore the encryption keys before you ru
 
 ### Restore the server
 
-You can use the following procedure to reinstall a management server in System Center 2016 - Service Manager.  
+You can use the following procedure to reinstall a management server in Service Manager.  
 
 > [!NOTE]  
 >  You must restore the encryption key before starting this procedure.  
@@ -80,7 +75,7 @@ You can use the following procedure to reinstall a management server in System C
 
 ## Recover a data warehouse management server
 
-You can use the following procedure to reinstall a data warehouse management server for System Center 2016 - Service Manager.  
+You can use the following procedure to reinstall a data warehouse management server for Service Manager.  
 
 > [!NOTE]  
 >  You must restore the encryption key before starting this procedure.   
@@ -126,7 +121,7 @@ When you first ran Setup for Service Manager, you installed the initial Service 
     -   Microsoft Monitoring Agent  
     -   System Center Management Configuration  
 5.  Leave the **Services** window open.  
-6.  Open Windows Explorer. Locate the folder \\Program Files\\Microsoft System Center 2016\\Service Manager.  
+6.  Open Windows Explorer. Locate the folder \\Program Files\\Microsoft System Center <version>\\Service Manager.  
 7.  In this folder, delete the Health Service State folder and all of its contents.  
 
 #### To define the computer name for the Service Manager database  
@@ -161,7 +156,7 @@ Your secondary management server is now the primary management server for the ma
 
 ## Import Service Manager unsealed management packs
 
-After you have restored your System Center 2016 - Service Manager management server, the next step is to import unsealed management packs.  
+After you have restored your Service Manager management server, the next step is to import unsealed management packs.  
 
 ### Import management packs
 

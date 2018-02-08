@@ -1,13 +1,13 @@
 ---
 ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title:  Management Pack Assessment
-description: This article describes how to use the updates and recommendations feature in Operations Manager 2016.
+description: This article describes how to use the updates and recommendations feature in  System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/22/2017
+ms.date: 01/24/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -15,9 +15,6 @@ ms.topic: article
 # Management pack assessment
 
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
-
->[!NOTE]
->This feature only works with management packs released by Microsoft, it currently does not support third party management packs.  See [Supported workloads](#supported-workloads) below for the current list of workflows supported by this feature.  
 
 If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
 

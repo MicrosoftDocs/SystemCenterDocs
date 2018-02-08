@@ -1,24 +1,24 @@
 ---
 ms.assetid: 12c2e82d-a325-4111-9ff8-147e949ce95e
-title: Enable nested virtualization in System Center VMM Preview 1711
-description: This article explains about how to enable and use nested virtualization in VMM Preview 1711
+title: Enable nested virtualization in System Center VMM 1801
+description: This article explains about how to enable and use nested virtualization in VMM 1801
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/08/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1711'
+monikerRange: 'sc-vmm-1801'
 ---
 
-# Configure a nested VM as host (Technical Preview)
+# Configure a nested VM as a host
 
 Nested Virtualization is a new functionality in Windows Server 2016 and above that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
 You can leverage the functionality to reduce your infrastructure expense for development and test scenarios without the need for individual hardware.
 
-System Center VMM Preview 1711 (VMM 1711) allows you to enable and disable the nested virtualization through VMM console. You can configure the nested VM as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
+System Center 1801 - Virtual Machine Manager (VMM) allows you to enable and disable the nested virtualization through VMM console. You can configure the nested VM as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
 
 >[!NOTE]
 

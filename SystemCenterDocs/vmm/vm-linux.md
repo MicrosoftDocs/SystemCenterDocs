@@ -5,7 +5,7 @@ description: This article describes how to create and deploy Linux VMs in the VM
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  01/23/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -25,6 +25,11 @@ VMM supports virtual machines that contain Linux as the guest operating system. 
 
 - Linux Integration Services (LIS) must be installed on the virtual machine.
 - The VMM guest agent for Linux must be installed on the virtual machine. It is required for service template integration, and it allows you to modify properties on the Linux computer such as the host name.
+
+    > [!NOTE]
+
+    > SCVMMLinuxGuestAgent (XPlat) cfghostdomain garbles the hosts file if hostname is already set to localhost. We recommend you not to set the hostname as localhost when deploying Linux VMs through VMM.
+
 - VMM doesn't verify that the VM meets these requirements. However, if it doesn't, VM deployment will fail.
 
 

@@ -7,14 +7,14 @@ ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Operations associated with user role profiles
 
-This topic provides a list of the operations in System Center 2016 - Operations Manager that are associated with each profile.  
+This topic provides a list of the operations in System Center Operations Manager that are associated with each profile.  
   
 ## Report Operator  
 
@@ -233,7 +233,7 @@ The Author profile includes a set of privileges designed for authoring monitorin
   
 ## Administrator  
 
-The Administrator profile includes full privileges to Operations Manager. No scoping of the Administrator profile is supported. The Administrator profile contains all of the privileges found in the Author, Advanced Operator, Operator, and Read\-Only Operator profiles in addition to those listed below.  
+The Administrator profile includes full privileges to Operations Manager. No scoping of the Administrator profile is supported. The Administrator profile contains all of the privileges found in the Author, Advanced Operator, Operator, and Read-Only Operator profiles in addition to those listed below.  
   
 -   Create a resolution state  
   
@@ -360,7 +360,4 @@ The Report Security Administrator profile includes a set of privileges designed 
 ## Next steps
 
 - Review [Implementing User Roles](~/scom/manage-security-overview.md) to understand the profiles defined in Operations Manager to manage authorization and security, and configure user roles to perform administration and access to operational data in the management group. 
-
-
-
-  
+ 

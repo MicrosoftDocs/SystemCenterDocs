@@ -4,9 +4,9 @@ description: This article describes how to view what workflows are running on an
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 12/13/2016
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 5ec7aa58-3789-4589-a051-63fdd6f2dec1
@@ -14,7 +14,7 @@ ms.assetid: 5ec7aa58-3789-4589-a051-63fdd6f2dec1
 
 # How to view all rules and monitors running on an agent-managed computer
 
-Administrators for System Center 2016 - Operations Manager sometimes want to know which rules and monitors are running on a computer. This is simple to do with the **Show Running Rules and Monitors for this Health Service** task.  
+Administrators for System Center Operations Manager sometimes want to know which rules and monitors are running on a computer. This is simple to do with the **Show Running Rules and Monitors for this Health Service** task.  
   
 ## To view all rules and monitors running on a computer  
   

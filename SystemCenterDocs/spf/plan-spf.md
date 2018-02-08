@@ -1,11 +1,10 @@
 ---
-ms.assetid: 617ee2c1-4dea-40e6-85b3-d87b15c0221d
 title: Plan SPF deployment
 description: This topic provides an overview of how to plan for a Service Provider Foundation installation.
 author: rayne-wiselman
 ms.author: raynew
-manager: cfreeman
-ms.date: 10/16/2016
+manager: carmonm
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
@@ -13,9 +12,7 @@ ms.technology: service-provider-foundation
 
 # Plan SPF deployment
 
->Apples To: System Center 2016 - Service Provider Foundation
-
-This article helps you make sure you have prerequisites and planning steps in place, before you deploy System Center 2016 - Service Provider Foundation (SPF).
+This article helps you make sure you have prerequisites and planning steps in place, before you deploy System Center - Service Provider Foundation (SPF).
 
 ## Deployment prerequisites
 

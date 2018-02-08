@@ -1,24 +1,21 @@
 ---
-title: Deploy Runbooks
-description: Provides an overview of the process for making runbooks available for operations.
-ms.custom: na
-ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
-ms.technology: orchestrator
-ms.tgt_pltfrm: na
-ms.topic: article
-author: cfreemanwa
-ms.author: raynew
-ms.date: 03/23/2017
+title: Deploy runbooks
+description: Provides an overview of creating making runbooks in System Center - Orchestra
+author: rayne-wiselman
 manager: carmonm
+ms.date: 01/17/2018
+ms.prod: system-center-threshold
+ms.technology: orchestrator
+ms.topic: article
+ms.author: raynew
 ---
-# Deploy runbooks with System Center 2016 - Orchestrator
+
+# Deploy runbooks 
 
 There are tools available in Orchestrator to help you manage the versions of your runbooks. These tools are described in the following sections.  
 
 ## Version control  
-In System Center 2016 - Orchestrator, multiple users can create and update runbooks. However, only one user at a time can make changes to a runbook. This protects your work from being overwritten by someone else with the same permission level.  
+In Orchestrator, multiple users can create and update runbooks. However, only one user at a time can make changes to a runbook. This protects your work from being overwritten by someone else with the same permission level.  
 
 To edit a runbook, you must check it out. Another user cannot edit that runbook until you either commit all changes by checking the runbook in or revert all changes by undoing the checkout.  
 

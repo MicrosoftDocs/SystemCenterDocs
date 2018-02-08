@@ -5,16 +5,16 @@ description: This article describes how to connect multiple management groups fo
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Connecting management groups in Operations Manager
 
-Connecting management groups in System Center 2016 - Operations Manager enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer-to-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.  
+Connecting management groups in System Center Operations Manager enables the ability to view and interact with data from multiple management groups in a single Operations console. The management group in which the consolidated view is available is called the local management group, and those that contribute their data to the consolidated view are called the connected management groups. They relate to each other in a hierarchical fashion, with connected groups in the bottom tier and the local group in the top tier. The connected groups are in a peer-to-peer relationship with each other. Each connected group has no visibility or interaction with the other connected groups; the visibility is strictly from the local group into the connected group.  
   
 > [!NOTE]  
 > Operations Manager does not support communication of data between peer management groups. Only the local to connected hierarchy configuration is supported. Multiple tiers, where a management group would be both a local group and a connected group, are not supported.  
@@ -75,11 +75,11 @@ In this procedure, you create a connection between two management groups. These 
   
 3.  In the Operations console for the local management group, in the **Administration** view, expand **Security**, and then click **User Roles**.  
   
-4.  In the right pane, right\-click the user role to which you want to grant connected management group access, and then click **Properties**.  
+4.  In the right pane, right-click the user role to which you want to grant connected management group access, and then click **Properties**.  
   
 5.  On the **Group Scope** tab, select the connected management groups to which you want to grant access to this user role, and then click **OK**. A user with both permission and access to at least one connected management group will see the **Show Connected Alerts** button in the toolbar of any **Alert** view in the **Monitoring** space.  
   
-6.  A **Log On** dialog box appears and prompts the user for credentials \(to log on to the connected management groups\). Enter the credentials, and then click **OK**. Alerts appear from all connected management groups for which you have access and permission. You can run tasks in the managed computers of connected management groups.  
+6.  A **Log On** dialog box appears and prompts the user for credentials (to log on to the connected management groups). Enter the credentials, and then click **OK**. Alerts appear from all connected management groups for which you have access and permission. You can run tasks in the managed computers of connected management groups.  
   
 ## Next steps
   

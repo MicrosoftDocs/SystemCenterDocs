@@ -2,26 +2,21 @@
 title:  Deploy the Service Manager Self Service portal
 description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self Service portal.
 manager:  carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 01/23/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid:  18833e51-8624-463a-a2d7-cd3be75f2efb
 ---
 
 # Deploy the Self-Service portal for Service Manager
 
-The Self-Service portal provides web-based access to the features of System Center 2016 - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
+The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
-## Supported operating systems  
+## Supported operating systems 
+ 
  - Windows Server 2016
-
  - Windows Server 2012 R2
 
 ## Supported web browsers

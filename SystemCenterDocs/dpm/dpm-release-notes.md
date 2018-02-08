@@ -1,32 +1,33 @@
 ---
 ms.assetid:
-title: Release Notes for System Center DPM 2016
-description: These release notes provide general information about the DPM 2016 and 1711 release.
+title: Release Notes for System Center DPM
+description: Release notes about the DPM 2016 and 1801 releases.
 author: markgalioto
 ms.author: markgal
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 2/8/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: data-protection-manager
 ms.topic: article
 ---
 
-# Release Notes for System Center Data Protection Manager (DPM) 2016
+# Release Notes for System Center Data Protection Manager (DPM)
 
-The following set of notes lists known issues and steps to mitigate the issue. These notes only apply to System Center Data Protection Manager (DPM) 2016 and Technical Preview 1711.  
+The following set of notes lists known issues and steps to mitigate the issue. These notes apply to System Center Data Protection Manager (DPM) 2016 and 1801. By default you see the notes for 2016 and 1801 releases. If you are only interested in the 2016 release, select 2016 in the version picker.
+
 
 ## Silent Installation of System Center DPM with SQL Server 2008
 
 **Description**: You cannot silently install DPM 2016 RTM on SQL Server 2008.
 
-**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup UI
+**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup user interface.
 
-## Remove-DPMDiskStorage commandlet may delete volumes with active or inactive backups 
+## Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups 
 
-**Description**: When you try to remove volumes from DPM using [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) commandlet, if the volume has datasources being backed up actively or inactively, it can be removed too.
+**Description**: If the volume's datasources are being backed up (actively or inactively) when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too. 
 
-**Workaround**: Ensure that the volumes do not have datasources being actively or inactively protected before using the commandlet to remove them.
+**Workaround**: Prior to using the cmdlet to remove the volumes, ensure the volumes do not have datasources being actively or inactively backed up. 
 
 
 ## DPM 2016 on Windows Server 2016 slowing down and hanging due to high memory consumption
@@ -39,7 +40,7 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 
 **Description**: If you upgrade your Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016 to enable Resilient Change Tracking (RCT), a new VM representing the upgraded VM may appear in the Create Protection Group Wizard. The 2016 version of the VM may appear in addition to the 2012 R2 version of the VM.
 
-**Workaround**: For the VMs that have not been upgraded, stop protection with Retain Data. After upgrading the VM, create a new protection group. Then, refresh the data sources and protect the VMs. This protects the VMs using Resilient Change Tracking (RCT).
+**Workaround**: For the VMs that have not been upgraded, stop protection with Retain Data. After upgrading the VM, create a new protection group. Then, refresh the data sources and protect the VMs. Reapplying protection protects the VMs using Resilient Change Tracking (RCT).
 
 ## Agent installation fails on Windows Server 2008, Windows Server 2008 R2
 
@@ -51,7 +52,7 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 
 **Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection, if you then recover a 2012 R2 copy at the original location, further backups may fail.
 
-**Workaround**: After recovery change the VM Version to 2016 followed by a Consistency Check.
+**Workaround**: After recovery, change the VM Version to 2016, then run a Consistency Check.
 
 
 ## Bare Metal Recovery protection failures
@@ -63,19 +64,18 @@ The following set of notes lists known issues and steps to mitigate the issue. T
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
 
-## Re-protecting the DPM database after upgrading to DPM 2016
+## Reprotecting the DPM database after upgrading to DPM 2016
 
 **Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
 
-**Workaround**: If you are protecting DPM DB, please ensure that you enable protection for new DPM DB. Protection for the old DPM DB can be removed once DPM upgrade is validated.
+**Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
 
 
 ## Recovery Points not being pruned, leading to an accumulation of Recovery Points
-**Description:** DPM prunes the recovery points older than the retention range. During this process, for the recovery points getting pruned, DPM calculates the storage they consumed, which may take some time. The storage calculation hence delays pruning, which may lead to storage pressures.
+**Description:** DPM prunes the recovery points older than the retention range. During the pruning process, DPM calculates the storage consumed by the recovery points to be pruned. The storage calculation, which takes some time, delays pruning which can lead to storage pressures.
 
-**Workaround:** DPM can be configured to not calculate the size of the recovery points getting pruned. As a result of this, the pruning script can run fast and prune all the recovery points older than the retention range, relieving any storage pressures. Hence, the Storage consumed per data-source will not be updated once DPM is configured to not calculate the size while pruning. The storage consumption per volume will continue to reflect the correct values.
-The size calculation can be turned back on when needed by running a PowerShell script. 
-To suppress size calculations and do complete size calculations again, you can use the following script:
+**Workaround:** You can configure DPM to skip calculating the size of the recovery points to be pruned. As a result, the pruning script runs faster and prunes all the recovery points older than the retention range, relieving any storage pressures. The storage consumed per data source will not be updated until DPM is finished pruning. The storage consumption per volume continues to reflect the correct values.
+The size calculation can be turned back on when needed by running a PowerShell script. To suppress size calculations and do complete size calculations again, you can use the following script:
 
 ***Location:*** Program Files\Microsoft System Center 2016\DPM\DPM\bin\Manage-DPMDSStorageSizeUpdate.ps1
 
@@ -114,6 +114,14 @@ To suppress size calculations and do complete size calculations again, you can u
 **Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end-user recovery is not available.
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
+
+
+## Bugs fixed in the DPM 1801 release
+
+The following bugs have been fixed in the DPM 1801 release:
+- Upgrading the DPM agent on the production server causes an unexpected reboot.
+- Consistency checks for Hyper-V VMs transferred more data than the size of the VMs.
+
 
 
 ## Next steps

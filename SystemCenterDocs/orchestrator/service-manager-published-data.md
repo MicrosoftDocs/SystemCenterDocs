@@ -1,23 +1,18 @@
 ---
 title: Service Manager published data
-description: The following tables list the published data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
-ms.custom: na
-ms.date: 12/02/2016
+description: The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: 20fe155e-61d1-41fa-9d74-9df80c6d4022
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-robots: noindex
+robots: noinde
 ---
 # Service Manager published data
 
-The following tables list the published data elements for all of the classes in the System Center 2016 - Service Manager Integration Pack.
+The following tables list the published data elements for all of the classes in the System Center - Service Manager Integration Pack.
 
 ## Active Directory Group Class published data
 

@@ -4,8 +4,8 @@ title: Implementing User Roles
 description:  This article provides an overview of how access to the operational data in the Operations Manager consoles works and how to configure a user role to assign permission.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/07/2016
+manager: carmonm
+ms.date: 02/06/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # Implementing User Roles
 
-In System Center 2016 - Operations Manager, user roles are the method you use to assign the rights needed to access monitoring data and perform actions. User roles are designed to apply to groups of users that need access to and perform actions on the same group of monitored objects. By default, only the Operations Manager Administrator account has the right to view and act on all monitoring data. All other users must have a user role assigned in order to view or act on specific or all monitoring data.  
+In System Center Operations Manager, user roles are the method you use to assign the rights needed to access monitoring data and perform actions. User roles are designed to apply to groups of users that need access to and perform actions on the same group of monitored objects. By default, only the Operations Manager Administrator account has the right to view and act on all monitoring data. All other users must have a user role assigned in order to view or act on specific or all monitoring data.  
   
 User roles are created using the Create User Role Wizard. In this wizard, you configure which Active Directory security groups are assigned this user role, which Operations Manager group or groups of monitored objects this user can access, and which tasks. dashboards and views this user role can access.  
   

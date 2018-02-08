@@ -1,18 +1,14 @@
 ---
-title: System Requirements for Service Manager
+title: System Requirements for System Center - Service Manager 2016
 manager: carmonm
 description: The article describes Service Manager system requirements.
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 02/02/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 23/01/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
-ms.topic: reference
-ms.assetid: 8b7da0ea-ebfb-4217-b650-929a0f7fb14b
+ms.topic: article
+monikerRange: 'sc-sm-2016'
 ---
 
 # System requirements for System Center 2016 - Service Manager
@@ -21,11 +17,20 @@ The article describes general performance and scalability guidance for System Ce
 
 ## Capacity limits for Service Manager
 
-Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested capacity limits of Service Manager.
+[Learn about](deploy-topo-scenarios.md) the tested capacity limits for various Service Manager deployment scenarios.
+
+## Supported coexistence
+
+To help simplify upgrades, you can use the following Service Manager 2016 connectors with System Center 2012 R2 components.
+
+- System Center 2012 R2 Virtual Machine manager
+- System Center 2012 R2 Orchestrator
+- System Center 2012 R2 Operations Manager
+- System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
 
 ## Hardware
 
-|System Center 2016 servers|Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
+|Server |Processor (min)|Processor (rec)|RAM (min)|RAM (rec)|Hard drive space (min)|Hard drive space (rec)|
 |---------------------------------|---------------------|---------------------|---------------|---------------|----------------------------|----------------------------|
 |**Service Manager** Management Server|4-Core 2.66 GHz CPU|4-Core 2.66 GHz CPU|8 GB|8 GB|10 GB|10 GB|
 |**Service Manager** Database|8-Core 2.66 GHz CPU|8-Core 2.66 GHz CPU|8 GB|32 GB|80 GB|80 GB|
@@ -58,7 +63,7 @@ The following versions of Windows client operating system are supported for the 
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
-## .Net Versions supported
+## .Net versions
 
 The following versions of .Net are supported for Service Manager.
 
@@ -80,16 +85,51 @@ The following versions of PowerShell are supported for Service Manager.
 |**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|
 
 
-## Supported coexistence
+## Software requirements
 
-To help simplify upgrades, you can use the following Service Manager 2016 connectors with System Center 2012 R2 components.
+|Component| Requirement|  
+|---|---|  
+|**Service Manager management server**|The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkID=224398) SP1 for Windows Server; SQL Server Native client; Microsoft Report Viewer Redistributable, which is available with the Service Manager media.<br/><br/> The management server must be installed on a 64\-bit edition of Windows. |  
+|**Data warehouse management server**|The warehouse management server requires: SQL Server Native client<br/><br/> The data warehouse management server must be installed on a 64\-bit edition of Windows.|  
+|**Service Manager/data warehouse databases**|The Service Manager or data warehouse databases require:  SQL Server Reporting Services \(SSRS\); SQL Server Analysis Management Objects.<br/><br/> The SQL Server and Analysis Services collation settings must be the same for the computers hosting the Service Manager database, data warehouse database, analysis services database, and Reporting Services database.|  
+|**Service Manager console**|The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows.|  
+|**Self-Service portal**|The Self-Service Portal server requires: Windows 2012 R2 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.
+|Machines using self-service|The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later|  
+|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](config-remote-ssrs.md) the manual steps.|  
+**Operations Manager**|Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](om-considerations.md) installing both Service Manager and Operations Manager in the same environment.<br/><br/> You can create a data mart for Operations Manager.|  
+**Configuration Manager**|Service Manager can import configuration items from a System Center - Configuration Manager environment.
+**Network requirements**|To view external content from within knowledge articles, computers that host the Service Manager console must have Internet access, either directly or through a proxy server.  
+**SMTP server**|You must have access to a Simple Mail Transfer Protocol \(SMTP\) server to use the Notification feature and for incident creation through email.  
+**Windows safe mode**|Service Manager doesn't operate and the services used by Service Manager do not start if Windows Server is running in safe mode. If you attempt to start the Service Manager services manually while in safe mode, the services fail to start and an error is written into the event log.  
 
-- System Center 2012 R2 Virtual Machine manager
-- System Center 2012 R2 Orchestrator
-- System Center 2012 R2 Operations Manager
-- System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
+Microsoft SQL Server hosts the databases that System Center 2016 - Service Manager creates. In addition, System Center 2016 - Service Manager requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. SQL Server Reporting Services (SSRS) is required to support System Center 2016 - Service Manager reporting.
 
+Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2016. Use this information whether you are deploying one or multiple components of System Center.
+
+## SQL Server versions
+
+
+**Service Manager component** | SQL Server 2012 SP2 Enterprise/Standard (64 bit) | SQL Server 2014 Enterprise/Standard (64-bit) | |SQL Server 2016 Enterprise/Standard (64-bit)|
+--- | --- |--- | ---
+|**Service Manager/Data Warehouse database | &#8226;| &#8226;<br/><br/> All service packs |&#8226;<br/><br/> All service packs 
+|**SMA web service | &#8226; | &#8226;<br/><br/> All service packs  |&#8226;<br/><br/> All service packs  
+
+
+- System Center 2016 - Service Manager doesn't support SQL Server versions earlier than SQL Server 2012 SP2.
+- System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
+- SQL Server AlwaysOn Availability Groups are supported in System Center 2016 - Service Manager. [Learn more](sql-always-on.md).
+- To install or upgrade Service Manager, SQL Server machines that host databases must be configured to allow updates. Otherwise an error appears when Service Manager tries to create a database:
+    - *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
+    - You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
+        ```
+        sp_configure 'allow updates'
+        ```
+        In the results table, examine the value for "run_value". If the value of "run value" is 1, set it back to 0 with the following stored procedure, and then run Setup again.
+
+        ```
+        sp_configure 'allow updates',0 reconfigure with override
+        ```
 ## Next steps
-- Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested limits of Service Manager.
-- Read about Service Manager [hardware performance](plan-hardware-perf.md).
-- Read about [SQL Server requirements](sm-sql-reqs.md).
+- [Learn about](deploy-topo-scenarios.md) the tested limits for Service Manager deployment scenarios.
+- Read about [hardware performance](plan-hardware-perf.md).
+

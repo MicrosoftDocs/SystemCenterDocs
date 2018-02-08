@@ -1,23 +1,18 @@
 ---
-title: System Center Integration Pack for System Center 2016 Virtual Machine Manager
-description: The System Center Integration Pack for System Center 2016 Virtual Machine Manager is an add-in for System Center 2016 - Orchestrator that enables you to automate VMM activities.
-ms.custom: na
-ms.date: 4/25/2017
+title: Integration pack for System Center - Virtual Machine Manager (VMM)
+description: This article describes the System Center integration pack for System Center - Virtual Machine Manager (VMM). The integration pack is an add-in for System Center - Orchestrator.
+ms.date: 01/17/2018
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: b4b8abbd-8fe0-45bd-9112-e43e308f510e
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
 
-# System Center Integration Pack for System Center 2016 Virtual Machine Manager
+# Integration pack for System Center VMM
 
-The System Center Integration Pack for System Center 2016 Virtual Machine Manager is an add-in for System Center 2016 - Orchestrator that enables you to automate the following activities:
+The integration pack for System Center - Virtual Machine Manager (VMM) is an add-in for System Center - Orchestrator. Tee pack enables you to automate the following activities:
 
 -   Manage the self-service virtual machine library
 -   Create virtual machine resources such as disks, virtual hard disks (VHDs), and network adapters, as needed
@@ -28,50 +23,47 @@ The System Center Integration Pack for System Center 2016 Virtual Machine Manage
 -   Move virtual machines to a new host to manage availability and performance
 -   Create and restore virtual machine checkpoints
 
-For more information about the System Center integration pack for System Center 2016 - Virtual Machine Manager (VMM) and for other options for automating VMM, see the [System Center 2016 Integration Guide](https://go.microsoft.com/fwlink/?LinkID=275796).
+[Learn more](https://go.microsoft.com/fwlink/?LinkID=275796) about integration packs.
 
-## System Requirements
+## System requirements
 
 The VMM Integration Pack requires the following software to be installed and configured before you deploy the integration. For more information about how to install and configure the Orchestrator and the System Center Virtual Machine Manager application, see the respective product documentation.
 
--   System Center 2016 integration packs require System Center 2016 - Orchestrator
--   System Center 2016 Service Pack 1 (SP1) integration packs require Orchestrator in System Center 2016 Service Pack 1 (SP1)
--   System Center 2016 - Virtual Machine Manager (VMM)
--   Windows Management Framework (Windows PowerShell 2.0 and WinRM 2.0)
+-   System Center - Orchestrator
+-   The integration pack and System Center components should be the same version.
+-   System Center - Virtual Machine Manager (VMM)
+-   Windows Management Framework 
 
-The activities from the VMM Integration Pack connect to a Virtual Machine Manager Administration Console which in turn connects to a Virtual Machine Manager server. You can install this console on the Orchestrator runbook server or connect to the Administration console on another computer. If the Orchestrator components and the VMM Administration Console are installed on the same 64-bit computer, the VMM server must be in the same domain to be able to connect to it.
+The activities from the VMM Integration Pack connect to a VMM Console, which in turn connects to a VMM management server. You can install this console on the Orchestrator runbook server or connect to the Administration console on another computer. If the Orchestrator components and the VMM Administration Console are installed on the same 64-bit computer, the VMM server must be in the same domain to be able to connect to it.
 
-## Downloading the Integration Pack
+## Download the pack
 
-For information about how to obtain this integration pack, see [System Center 2016 - Orchestrator 2016 Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+Download the pack from [System Center - Orchestrator Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
 
-## Registering and Deploying the Integration Pack
+## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. [Learn more](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack) about installation.
 
-## Configuring Windows Management Framework
+## Configure Windows Management Framework
 
 The VMM Integration Pack uses Windows PowerShell Remoting to be configured between the Orchestrator runbook server and the computer running the VMM Administration Console. Windows PowerShell Remoting relies on Windows Remote Management (WinRM) to establish the communications between the two systems. You must perform the following tasks before you configure the VMM connection in the Runbook Designer.
 
 >[!NOTE]
 >The Runbook Designer will also connect to the computer running the VMM Administration Console when you are configuring activities from the VMM Integration Pack. If the Runbook Designer is installed on a different computer than the runbook server, then you will also need to configure Windows PowerShell and WinRM on that computer.
 
-### Confirm Windows PowerShell 2.0 Installation
+### Confirm PowerShell installation
 
-PowerShell 2.0 must be installed on both the Orchestrator runbook server and the computer running the VMM Administration Console.
+PowerShell must be installed on both the Orchestrator runbook server, and the computer running the VMM console.
 
-#### To confirm Windows PowerShell 2.0 installation
 
 1.  Open Registry Editor.
 2.  Expand the **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PowerShell\\1\\PowerShellEngine** subkey.
-3.  Confirm that the value of the Runtime Version entry begins with v2.0.
-4.  If this value begins with 1.0, or the subkey is not present, see [Windows Management Framework (Windows PowerShell 2.0, WinRM 2.0, and BITS 4.0)](https://go.microsoft.com/fwlink/?linkID=193574) for information on installing Windows PowerShell 2.0.
+3.  Confirm that the the runtime entry appears (at least version 2.0).
 
-### Confirm Windows Remote Management Installation
+## Confirm Windows Remote Management installation
 
-Windows Remote Management 2.0 (WinRM 2.0) must be installed and configured on the on both the Orchestrator runbook server and the computer running the VMM Administration Console. You can do this using the Local Group Policy Editor.
+Windows Remote Management (at least version 2.0) must be installed and configured on the on both the Orchestrator runbook server and the computer running the VMM console. You can do this using the Local Group Policy Editor.
 
-#### To confirm Windows Remote Management installation
 
 1.  Click **Start** and then **Run**, type **gpedit.msc**, and then click **OK**.
 2.  Under **Local Computer Policy**, then expand **Computer Configuration**, then expand **Administrative Templates**, and then expand **Windows Components**
@@ -79,11 +71,10 @@ Windows Remote Management 2.0 (WinRM 2.0) must be installed and configured on th
 
 For more information about how to install and configure WinRM 2.0, see [Installation and Configuration for Windows Remote Management](https://go.microsoft.com/fwlink/?linkID=171111).
 
-### Windows Remote Management Trusted Hosts
+### Specify Windows Remote Management trusted hosts
 
 WinRM requires that you explicitly specify the name of any host computers that you are going to connect to. This enhances security by ensuring that the Orchestrator runbook server is connecting to the expected computer running the VMM Administration Console.
 
-#### To enable Windows Remote Management Trusted Hosts
 
 1.  On the Orchestrator runbook server, open the **Local Group Policy Editor**. To do this click **Start**, click **Run**, type **gpedit.msc**, and then click **OK**.
 2.  Under **Local Computer Policy**, then expand **Computer Configuration**, then expand **Administrative Templates**, then expand **Windows Components**, then expand **Windows Remote Management**, and then select **WinRM Client**.
@@ -91,11 +82,10 @@ WinRM requires that you explicitly specify the name of any host computers that y
 4.  In the **Trusted Hosts** dialog box, select **Enabled**.
 5.  Add the name or IP address of the computer running the VMM Administration Console to the **TrustedHostsList** . Click **OK**.
 
-### PowerShell Execution Policy
+### Set the PowerShell execution policy
 
 The execution policy in Windows PowerShell determines which scripts must be digitally signed before they will run. By default, the execution policy is set to **Restricted** which prohibits loading any configuration files or running any scripts. To run the scripts in this integration pack, you must set the execution policy to **RemoteSigned** on both the Orchestrator runbook server and the computer running the VMM Administration Console.
 
-#### To set the execution policy in Windows PowerShell
 
 1.  Click **Start**, then **All Programs**, then **Accessories**, and then **Windows PowerShell**.
 2.  Right-click **Windows PowerShell** and select **Run As Administrator**. Click **Yes** when prompted by **User Account Control**.
@@ -105,7 +95,7 @@ The execution policy in Windows PowerShell determines which scripts must be digi
 
 For more information about how to configure the Windows PowerShell execution policy, see [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/?linkID=113394) in the Microsoft TechNet Library.
 
-### Windows PowerShell Remote Connection Quota
+### Set the PowerShell remote connection quota
 
 You can use WS-Management quotas in Windows PowerShell remoting to protect the Orchestrator runbook server and the computer running the VMM Administration Console from excessive resource use, both accidental and malicious. The **MaxConcurrentOperationsPerUser** quota setting in the **WSMan:\\&lt;ComputerName&gt;\\Service** node provides this protection by imposing a limit on the number of VMM objects that can run concurrently.
 
@@ -114,13 +104,13 @@ By default, MaxConcurrentOperationsPerUser is set to 5. This means that a maximu
 >[!NOTE]
 >The **MaxConcurrentOperationsPerUser** affects all Windows PowerShell objects whether or not they are from a runbook. If there are remote sessions from other applications, they will be included in this limit.
 
-## Configuring the System Center 2016 Virtual Machine Manager Connections
+## Configure the connections
 
 Once you have validated the WinRM configuration, you must add a **Connection** that defines communications between the Orchestrator runbook server and a computer running the VMM Administration Console. This configuration will include the credentials required to access VMM and the authentication protocol that should be used. When you configure actions from the VMM Integration Pack, you select a configuration that defines the connection that the activity should use. You can create multiple configurations if you have multiple VMM computers to connect to.
 
-#### To configure a System Center 2016 Virtual Machine Manager connection
 
-1.  In the Runbook Designer, click the **Options** menu, and then select **System Center 2016 Virtual Machine Manager**. The **System Center 2016 Virtual Machine Manager** dialog box appears.
+
+1.  In the Runbook Designer, click the **Options** menu, and then select VMM.
 2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Connection Entry** dialog box appears.
 3.  In the **Name** box, type a name for the connection. This could be the name of the VMM computer for example.
 4.  In the **Properties** box, enter a value for each property according to the table below.
@@ -128,7 +118,7 @@ Once you have validated the WinRM configuration, you must add a **Connection** t
 6.  Add any additional configurations as required.
 7.  Click **Finish**.
 
-### Virtual Machine Manager Properties
+### VMM properties
 
 | Property   | Description   |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

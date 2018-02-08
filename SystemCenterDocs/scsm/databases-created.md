@@ -1,23 +1,18 @@
 ---
-title: Databases created by Service Manager
+title: Databases created by System Center - Service Manager
 Description: Describes the databases that are created by Service Manager during installation.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 6ca01c52-86ea-4ba2-afce-00c8453a4df5
 ---
 
-# Databases created by System Center 2016 - Service Manager
+# Databases created by System Center - Service Manager
 
-Before starting the installation of System Center 2016 - Service Manager, you may want to meet with your SQL Server administration team and discuss the impact that Service Manager will have on your computers running SQL Server-specifically, the databases that will be created. The databases that are created by a deployment of Service Manager are listed in the following table.  
+Before starting the installation of System Center - Service Manager, you may want to meet with your SQL Server administration team and discuss the impact that Service Manager will have on your computers running SQL Server-specifically, the databases that will be created. The databases that are created by a deployment of Service Manager are listed in the following table.  
 
 |Service Manager parts|Database name|Contents|  
 |---------------------------------|-------------------|--------------|  
@@ -29,4 +24,4 @@ Before starting the installation of System Center 2016 - Service Manager, you ma
 
 ## Next steps
 
-- Review [Port assignments for Service Manager](~/scsm/ports.md) to learn about the port numbers that are used throughout your Service Manager environment for your security infrastructure.
+- Review [port assignments for Service Manager](~/scsm/ports.md), to learn about the port numbers that are used in your Service Manager environment.

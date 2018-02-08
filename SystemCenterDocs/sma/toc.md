@@ -1,15 +1,18 @@
 # Overview
 ## [Overview of Service Management Automation](overview-of-service-management-automation.md)
-##[What's new](whats-new-1711.md)
 ## [Architecture of Service Management Automation](architecture-of-service-management-automation.md)
 ## [Runbook Execution in Service Management Automation](runbook-automation.md)
 # Get started
 ## [What's new in Service Management Automation 2016](whats-new-in-service-management-automation.md)
+## [What's new in Service Management Automation 1801](whats-new-1801.md)
+## [Release notes - Service Management Automation 1801](release-notes-1801.md)
 # How to
 ## Deploy
-### [System requirements for Service Management Automation](system-requirements.md)
+### [System requirements - Service Management Automation 2016](system-requirements.md)
+### [System requirements - Service Management Automation 1801](system-requirements-1801.md)
 ### [Deploy Service Management Automation](deploy.md)
-### [How to upgrade from a previous version of Service Management Automation](upgrade.md)
+### [Upgrade to Service Management Automation 2016](upgrade.md)
+### [Upgrade to Service Management Automation 1801](upgrade-1801.md)
 ## Author Runbooks
 ### [Authoring Automation Runbooks](authoring-automation-runbooks.md)
 ### [Windows PowerShell Workflow Concepts](overview-powershell-workflows.md)

@@ -1,10 +1,10 @@
 ---
-title: How to Upgrade a Single Server Management Group to System Center 2016 - Operations Manager
-description: This article describes how to upgrade a single server management group to Operations Manager 2016.  
+title: How to Upgrade a Single Server Management Group
+description: This article describes how to upgrade a single server management group to the newest release of Operations Manager.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 01/15/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -12,9 +12,9 @@ ms.topic: article
 ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 ---
 
-# How to upgrade a single server management group to System Center 2016 - Operations Manager
+# How to upgrade a single server management group 
 
-When you upgrade a single server management group to System Center 2016 - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center 2016 - Operations Manager](plan-system-requirements.md).
+When you upgrade a single server management group to System Center 2016 - Operations Manager or version 1801, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 ### To upgrade a single server management group
 
@@ -27,7 +27,11 @@ When you upgrade a single server management group to System Center 2016 - Operat
 
 3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
 
-4.  On the **Select installation location** page, accept the default value of **C:\Program Files\Microsoft System Center 2016\Operations Manager**, or type in a new location or browse to one. Then click **Next**.
+4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+
+    > [!NOTE]
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    > 
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
 
@@ -36,10 +40,10 @@ When you upgrade a single server management group to System Center 2016 - Operat
 
 6.  If the Prerequisites checker does not return any other errors or warnings that have to be addressed, click **Next**.
 
-7.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Data Access service account, and then click **Next**.
+7.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Configuration and Data Access service accounts, and then click **Next**.
 
     > [!IMPORTANT]
-    > If you receive a message about using the wrong version of SQL Server, or experience      a problem with the SQL Server Windows Management Instrumentation (WMI) provider,        you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
+    > If you receive a message about using the wrong version of SQL Server, or experience a problem with the SQL Server Windows Management Instrumentation (WMI) provider, you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
         >
         > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof**
 
@@ -95,11 +99,10 @@ When you upgrade a single server management group to System Center 2016 - Operat
 
 ### To confirm the health of the management server
 
+1. In the Operations console, in the navigation pane, click **Administration**.
 
-1. In the Operations console, select the Administration workspace.
-
-2. Under Device Management select Management Servers. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
+2. Under **Device Management**, click **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the Health State column.
 
 ## Next steps
 
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center 2016 - Operations Manager](deploy-upgrade-post-tasks.md).
+- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).

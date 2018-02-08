@@ -1,18 +1,18 @@
 ---
-description: Provides installation procedures for System Center 2016 - Orchestrator.
-manager:  carmonm
-ms.topic:  article
-author:  cfreemanwa
+title: Install Orchestra
+description: Provides instructions for installing System Center - Orchestrator
+author: rayne-wiselman
+manager: carmonm
+ms.date: 01/17/2018
+ms.prod: system-center-threshold
+ms.technology: orchestrator
+ms.topic: article
 ms.author: raynew
-ms.prod:  system-center-threshold
-keywords:  
-ms.date: 03/22/2017
-title:  How to install Orchestrator 
-ms.technology:  orchestrator
-ms.assetid:  
 ---
 
-# How to install System Center 2016 - Orchestrator
+
+
+# How to install System Center - Orchestrator
 
 A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines. 
 
@@ -22,17 +22,17 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ## To install an Orchestrator management server
 
-1.  On the server where you want to install Orchestrator, start the **System Center 2016 - Orchestrator Setup Wizard**.
+1.  On the server where you want to install Orchestrator, start the Orchestra Setup Wizard.
 
-    To start the **System Center 2016 - Orchestrator Setup Wizard**, on your product media or network share, double-click **SetupOrchestrator.exe**.
+    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
     > [!IMPORTANT]
-    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center 2016 - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
     > [!NOTE]
     > If User Account Control is enabled, then you will be prompted to verify that you want to allow the setup program to run. This is because it requires administrative access to make changes to the system.
 
-2.  On the main page of the **System Center 2016 - Orchestrator Setup Wizard**, click **Install**.
+2.  On the main page of the wizard, click **Install**.
 
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
@@ -83,12 +83,12 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ## To install an Orchestrator runbook server
 
-1.  On the server where you want to install an Orchestrator runbook server, start the System Center 2016 - Orchestrator Setup Wizard.
+1.  On the server where you want to install an Orchestrator runbook server, start the Orchestrator Setup Wizard.
 
-    To start the **System Center 2016 - Orchestrator Setup Wizard**, on your product media or network share, double-click **SetupOrchestrator.exe**.
+    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center 2016 - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin setup, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
 2.  On the main setup page, under **Standalone installations**, click **Runbook server**.
 
@@ -137,12 +137,12 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ## To install the Orchestrator web service
 
-1.  On the server where you want to install the Orchestrator web service, start the **System Center 2016 - Orchestrator Setup Wizard**.
+1.  On the server where you want to install the Orchestrator web service, start the Orchestrator Setup Wizard.
 
-    To start the **System Center 2016 - Orchestrator Setup Wizard**, on your product media or network share, double-click **SetupOrchestrator.exe**.
+    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin the installation of the Orchestrator web service, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center 2016 Technical Preview - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin the installation of the Orchestrator web service, close any open programs and ensure that there are no pending restarts on the computer. Then log on to the computer with the same user account to finish the installation of the server role or the security update.
 
 2.  On the main setup page, under **Standalone installations**, click **Orchestration Console and Web Service**.
 
@@ -193,14 +193,14 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ## To install the Orchestrator Runbook Designer on a single computer
 
-1.  On the server where you want to install the Orchestrator Runbook Designer, start the **System Center 2016 - Orchestrator Setup Wizard**.
+1.  On the server where you want to install the Orchestrator Runbook Designer, start the Orchestrator Setup Wizard.
 
-    To start the **System Center 2016 - Orchestrator Setup Wizard**, on your product media or network share, double-click **SetupOrchestrator.exe**.
+    To start the wizard on your product media or network share, double-click **SetupOrchestrator.exe**.
 
     > [!NOTE]
-    > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. For example, if you have installed a server role by using System Center 2016 Technical Preview - Service Manager or have applied a security update, you might have to restart the computer, and then log on to the computer with the same user account to finish the installation of the server role or the security update.
+    > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. Then, log on to the computer with the same user account to finish the installation of the server role or the security update.
 
-2.  On the main **System Center 2016 - Orchestrator Setup Wizard** page, click **Runbook Designer**.
+2.  On the main wizard page, click **Runbook Designer**.
 
     > [!WARNING]
     > If Microsoft .NET Framework 3.5 Service Pack 1 is not installed on your computer, a dialog box appears asking if you want to install .NET Framework 3.5 SP1. Click **Yes** to proceed with the installation.
@@ -243,7 +243,7 @@ This topic provides detailed installation instructions for the various Orchestra
     > [!NOTE]
     > If the Runbook Designer is connected to another management server, the **Connect to a server** icon is disabled. Click the **Disconnect** icon before you connect to a different management server.
 
-2.  In the **System Center Orchestrator 2016 Connection** dialog box, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
+2.  In **System Center Orchestrator Connection**, enter the name of the server that hosts your Orchestrator management server, and then click **OK**.
 
 ## To enable network discovery
 
@@ -268,7 +268,7 @@ To install Orchestrator at a command prompt, use Setup.exe with the command-line
 |/ServiceUserName:[User Name]|Specifies the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/ServicePassword:[Password]|Specifies the password for the user account for the Orchestrator Management Service. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/Components:[Feature 1, Feature 2,"]|Specifies the features to install. Possible values are ManagementServer, RunbookServer, RunbookDesigner, WebComponents, and All.|
-|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files (x86)\Microsoft System Center 2012\Orchestrator is used.|
+|/InstallDir:[Path]|Specifies the path to install Orchestrator. If no path is specified, C:\Program Files (x86)\Microsoft System Center <version>\Orchestrator is used.|
 |/DbServer:[Computer[\Instance]]|Specifies the computer name and instance of the database server. This value is required if you are installing Management Server, Runbook Server, or web services.|
 |/DbUser:[User Name]|Specifies the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, no value should be specified.|
 |/DbPassword:[Password]|Specifies the password for the user account to access the database server. This value is only required for SQL Authentication. If Windows Authentication is used, then no value should be specified.|
@@ -303,15 +303,15 @@ The following information provides additional instructions and caveats that you 
 ### Orchestrator log files  
 If you experience problems during installation, installation log files are located in the folder **C:\\Users\\%USERNAME%\\AppData\\Local\\SCO\\LOGS**.  
 
-If you experience problems when you are running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center 2016\\Orchestrator\\**.  
+If you experience problems when you are running Orchestrator, the product log files are located in the folder **C:\\ProgramData\\Microsoft System Center <version>\\Orchestrator\\**.  
 
 ### Windows Firewall  
 When you deploy additional Runbook Designer applications to your environment, you might see a failed installation message. To correctly install the Runbook Designer, enable the following firewall rules as they apply to your operating system and deployment configuration.  
 
-### Windows Firewall with Advanced Security for Windows Server 2016  
-By default, **Windows Firewall with Advanced Security** is enabled on all Windows Server 2016 computers, and blocks all incoming traffic unless it is a response to a request by the host, or it is specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
+### Windows Firewall with advanced security
+By default, **Windows Firewall with Advanced Security** is enabled on all Windows Servercomputers, and blocks all incoming traffic unless it is a response to a request by the host, or it is specifically allowed. You can explicitly allow traffic by specifying a port number, application name, service name, or other criteria by configuring Windows Firewall with Advanced Security settings.  
 
-If you are running Windows Server 2016, enable the following rules to allow all Monitor Event activities to function correctly:  
+Enable the following rules to allow all Monitor Event activities to function correctly:  
 
 -   Windows Management Instrumentation \(Async\-In\)  
 
@@ -328,21 +328,21 @@ Enable the following firewall rules on your computer:
 
 |Operating system|Firewall rule|  
 |--------------------|-----------------|  
-|64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center 2016\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
-|32\-bit|%ProgramFiles%Microsoft System Center 2016\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
+|64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center <version>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
+|32\-bit|%ProgramFiles%Microsoft System Center <version>\\Orchestrator\\Management Server\\OrchestratorManagementService.exe|  
 
 #### Firewall rules between remote computers  
 
 |Operating system|Firewall rules|  
 |--------------------|------------------|  
-|Windows Server 2016|<ul><li>File and Printer Sharing</li><li>Windows Management Instrumentation \(WMI\)</li><li>Program rule for OrchestratorRemotingService to accept remote connections. This rule must be enabled through the Advanced Firewall mode:<br /><br /><ul><li>%SystemRoot%\\SysWOW64\\OrchestratorRemotingService.exe \(for a 64\-bit operating system\)</li><li>%SystemRoot%\\System32\\OrchestratorRemotingService.exe \(for a 32\-bit operating system\)</li></ul></li></ul>|  
+|Windows Server |<ul><li>File and Printer Sharing</li><li>Windows Management Instrumentation \(WMI\)</li><li>Program rule for OrchestratorRemotingService to accept remote connections. This rule must be enabled through the Advanced Firewall mode:<br /><br /><ul><li>%SystemRoot%\\SysWOW64\\OrchestratorRemotingService.exe \(for a 64\-bit operating system\)</li><li>%SystemRoot%\\System32\\OrchestratorRemotingService.exe \(for a 32\-bit operating system\)</li></ul></li></ul>|  
 
 #### Firewall rules between the runbook server and the computer that uses PolicyModule.exe  
 
 |Operating system|Firewall rule|  
 |--------------------|-----------------|  
-|64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center 2016\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
-|32\-bit|%ProgramFiles\\Microsoft System Center 2016\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
+|64\-bit|%ProgramFiles \(x86\)%\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
+|32\-bit|%ProgramFiles\\Microsoft System Center <version>\\Orchestrator\\Runbook Server\\PolicyModule.exe|  
 
 For more information about adding firewall rules, see [Add or Edit a Firewall Rule](https://go.microsoft.com/fwlink/p/?LinkID=201019).  
 

@@ -1,23 +1,18 @@
 ---
-title: Service Manager parts
-description: Learn about the six major parts of Service Manager.
+title: System Center - Service Manager parts
+description: Learn about the six major parts of System Center - Service Manager.
 manager: carmonm
-ms.custom: na
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 10/12/2016
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.tgt_pltfrm: na
 ms.topic: reference
-ms.assetid: f286c692-7648-4f78-a510-fb7e5553b04d
 ---
 
-# System Center 2016 - Service Manager parts
+# System Center - Service Manager parts
 
-There are six major parts of a System Center 2016 - Service Manager installation, as described in the following table.  
+There are six major parts of a System Center - Service Manager installation, as described in the following table.  
 
 
 |Service Manager part|Description|  

@@ -1,18 +1,16 @@
 ---
-title:  Mapping Service Manager properties to Configuration Manager database views
+title:  Mapping System Center - Service Manager properties to Configuration Manager database views
 description: Learn about the relationships between Service Manager properties and Configuration Manager database views.
 manager:  carmonm
 ms.topic: reference
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-keywords:  
-ms.date: 10/12/2016
+ms.date: 01/23/2018
 ms.technology:  service-manager
-ms.assetid:  b1af3b48-696b-4db8-94e6-9da28c2ef125
 ---
 
-# Mapping System Center 2016 - Service Manager properties to Configuration Manager database views
+# Mapping System Center - Service Manager properties to Configuration Manager database views
 
 The hardware inventory feature in Configuration Manager gathers information about computers in the organization. In Service Manager, by using a Configuration Manager Connector, you can import that hardware inventory data from Configuration Manager. The tables in this appendix describe the mapping between Service Manager properties and column names of Configuration Manager database views.
 

@@ -1,29 +1,18 @@
 ---
-title:  Use connectors to import data
-description: Explains how to use connectors to import data into Service Manager.
+title:  Use connectors to import data into System Center - Service Manager
+description: Explains how to use connectors to import data into System Center - Service Manager.
 manager: carmonm
 ms.topic: article
 author: bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-keywords:  
-ms.date: 01/04/2017
+ms.date: 01/23/2018
 ms.technology: service-manager
-ms.assetid: e79f0bdb-9330-4589-8d29-5d1a353c849a
 ---
 
 # Use connectors to import data into Service Manager
 
-You can use Service Manager connectors to import data as configuration items from Active Directory Domain Services (AD DS), System Center Configuration Manager, System Center Orchestrator, System Center Virtual Machine Manager, and System Center Operations Manager. In addition, you can import alerts from Operations Manager, and you can configure these alerts to automatically generate incidents in Service Manager. You can also import data from comma-separated value (CSV) files into the Service Manager database.
-
-## Service Manager 2016 connectors supported with System Center 2012 R2 components
-
-To help simplify upgrades, you can use the following Service Manager 2016 connectors with System Center 2012 R2 components.
-
-- System Center 2012 R2 Virtual Machine manager
-- System Center 2012 R2 Orchestrator
-- System Center 2012 R2 Operations Manager
-- System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
+You can use System Center - Service Manager connectors to import data as configuration items from Active Directory Domain Services (AD DS), System Center Configuration Manager, System Center Orchestrator, System Center Virtual Machine Manager, and System Center Operations Manager. In addition, you can import alerts from Operations Manager, and you can configure these alerts to automatically generate incidents in Service Manager. You can also import data from comma-separated value (CSV) files into the Service Manager database.
 
 ## Effects of deleting a connector on configuration items
 
@@ -36,6 +25,6 @@ If you are creating a new connector to replace an existing connector, create the
 
 ## Next steps
 
-- Learn about how to [Import data from Active Directory Domain Services](import-data-ads.md).
-- Learn about how to [Import data and alerts from Operations Manager](import-data-om.md).
-- Learn about how to [Import data from Configuration Manager](import-data-cm.md).
+- Learn how to [import data from Active Directory Domain Services](import-data-ads.md).
+- Learn how to [import data and alerts from Operations Manager](import-data-om.md).
+- Learn how to [import data from Configuration Manager](import-data-cm.md).

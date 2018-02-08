@@ -46,7 +46,7 @@ Some activities are expected to take a limited amount of time to finish. If the 
 |Report when the activity runs for more than|Enter the number of seconds of run time to elapse before generating a notification.|  
 |Report if the activity fails to run|Select this option to generate a run failure notification.|  
 
-## <a name="BKMK_SecurityCredentials"></a>Security Credentials  
+## Security Credentials  
 The settings on the Security Credentials tab let you specify the account that runs the Runbook Server Service. This is useful when the activity performs activities with resources on a remote computer.  
 
 > [!IMPORTANT]  

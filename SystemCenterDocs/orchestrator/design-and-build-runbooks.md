@@ -1,21 +1,17 @@
 ---
-title: Build and Test Runbooks
-Description: Provides guidance and detailed procedures for creating and testing runbooks for System Center 2016 - Orchestrator.
-ms.custom: na
+title: Build and test runbooks in System Center - Orchestra
+Description: Provides guidance and detailed procedures for creating and testing runbooks in System Center - Orchestrator.
 ms.prod: system-center-threshold
-ms.reviewer: na
-ms.suite: na
 ms.technology: orchestrator
-ms.tgt_pltfrm: na
 ms.topic: article
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
-ms.date: 03/24/2017
+ms.date: 01/17/2018
 manager: carmonm
 ---
-# Build and test runbooks for System Center 2016 - Orchestrator
+# Build and test runbooks
 
-The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the Orchestration console which is described in [Overview of the Orchestration Console](console-overview.md).  
+The **Runbook Designer** is the tool that you use to create, manage, and run runbooks. You can also run runbooks and view their status in the [Orchestration Console](console-overview.md).  
 
 To build a runbook you drag activities onto the workspace. Activities are the building blocks of runbooks. In general, individual activities perform three actions:
 
@@ -38,7 +34,7 @@ The Runbook Designer interface is organized into the following four panes.
 |**Log**|Logs showing the activity and history for the current runbook. For more information, see [Orchestrator Logs](orchestrator-logs.md).|  
 
 ## Sorting activities by activity name and category ame  
-System Center 2016 - Orchestrator lets you sort activities alphabetically by activity name, or by category name. By default, activities are sorted by category, such as Runbook Control, Email, File Management, Monitoring, Notification, Scheduling, System, Text File Management, and Tools.  
+Orchestrator lets you sort activities alphabetically by activity name, or by category name. By default, activities are sorted by category, such as Runbook Control, Email, File Management, Monitoring, Notification, Scheduling, System, Text File Management, and Tools.  
 
 Use the following steps to sort activities by their activity name and category name.  
 

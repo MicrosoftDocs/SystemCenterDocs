@@ -1,43 +1,46 @@
 ---
-title:  Upgrade to Orchestrator-2016
-author:  cfreemanwa
-ms.author: raynew
+title:  Upgrade to System Center - Orchestra
+description:  Upgrade instructions for System Center - Orchestra
+author: rayne-wiselman
 manager:  carmonm
-ms.date:  10/12/2016
-ms.topic:  article
+ms.date:  01/17/2018
 ms.prod:  system-center-threshold
 ms.technology:  system-center-2016
-ms.assetid: 48eb18c8-ef09-4f5f-b846-0be2aea84f33
-description: This article provides an overview of how to upgrade your System Center Orchestrator installation.
-keywords:
+ms.topic:  article
+ms.author: raynew
+monikerRange: 'sc-orch-2016'
 ---
 
-# Upgrade to Orchestrator 2016
 
-You can upgrade your installation of System Center 2012 R2 - Orchestrator to System Center 2016 Orchestrator by following the steps described below. Before doing so, make sure your environment is upgraded to the supported versions as described in [System Requirements for System Center 2016](system-requirements.md).
 
->[!Note]
->Upgrading from System Center 2012 R2 - Orchestrator is only supported if you have installed Upgrade Rollup 8 or later.
+# Upgrade in Orchestrator
 
-For information about upgrading all technologies in System Center, see the article, [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016).
+You can upgrade to System Center 2016 - Orchestrator using the steps below.
 
-## Orchestrator upgrade steps
+
+## Before you start
+
+- Make sure your environment has the latest supported versions described in [system requirements](system-requirements.md).
+- To upgrade a server running Orchestra 2012 R2 to 2016, the server must be running System Center 2012 R2 rollup 8 or later.
+- [Learn more](/system-center/upgrade-to-system-center-2016) about upgrading System Center components.
+
+## Upgrade steps
 
 **Prepare to upgrade:**
 
 1. Ensure that there are no pending restarts on the computer.
 2. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](migrate-orchestrator-between-environments.md).
-3. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2016.
+3. Upgrade the hardware, operating system, and other software if needed.
 
 **Perform the upgrade:**
 
 1. Stop all Orchestrator runbooks.
 2. Uninstall the Orchestrator management server, any runbook servers, the Web Service, and the Runbook Designer.
-3. Install the Orchestrator management server in System Center 2016, as described in [Install Orchestrator](install.md).
-4. Install any Orchestrator runbook servers in System Center 2016.
-5. Install the Orchestrator Runbook Designer in System Center 2016.
-6. If needed, install the Orchestrator Web Service in System Center 2016.
+3. Install the new version of the Orchestrator management server. [Learn more](install.md).
+4. Install the new version of any Orchestrator runbook servers.
+5. Install the new version of the Orchestrator Runbook Designer.
+6. If needed, install the Orchestrator Web Service.
 
 ## Next Steps
 
-Learn how to deploy runbooks at [Deploy runbooks](deploy-runbooks.md).
+[Learn how](deploy-runbooks.md) to deploy runbooks
