@@ -72,9 +72,10 @@ The migration process for Reporting Services includes manual and automated steps
    b. On the **Configuration, Configure Operation Manager accounts** page, be sure the Data Reader account is the same account previously used for the report server.  
 
 If you are restoring the original configuration on a new SQL Server reporting services instance, restore the original **ReportServer** and **ReportServerTempDB** databases for SQL Server Reporting services to preserve your custom reports, favorites, schedules from the original reporting services deployment.  
-   a. Verify the **RSExecRole** is a database role with the report server database and temporary database. **RSExecRole** must have **select, insert, update, delete, and reference** permissions in the report server database tables, and **execute** permissions on the stored procedures.  
-   b. On the new Reporting Services server, open **Report Services Configuration Tool** and connect to the new instance.  Select the original report server database and click **Apply**.  
-   c. Restore the encryption keys you backed up in step 2.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).  
+
+1. Verify the **RSExecRole** is a database role with the report server database and temporary database. **RSExecRole** must have **select, insert, update, delete, and reference** permissions in the report server database tables, and **execute** permissions on the stored procedures.  
+2. On the new Reporting Services server, open **Report Services Configuration Tool** and connect to the new instance.  Select the original report server database and click **Apply**.  
+3. Restore the encryption keys you backed up earlier.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).  
 
 After completing the installation and post-configuration steps, perform the following to confirm Operations Manager reporting is working correctly.
 
