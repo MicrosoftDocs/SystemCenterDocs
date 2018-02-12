@@ -13,13 +13,13 @@ monikerRange: 'sc-vmm-1801'
 
 # Provision shielded Linux virtual machines in the VMM fabric
 
-This article describes how to deploy Linux shielded virtual machines in System Center - Virtual Machine Manager 1801.
+This article describes how to deploy Linux shielded virtual machines in System Center 1801 - Virtual Machine Manager (VMM).
 
 
 ## Shield a Linux VM
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS based virtual machines (VMs). Shielded VMs provide protection against malicious administrator actions both when VM’s data is at rest or an untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
-With Windows Server 1801, Hyper-V introduces the support for provisioning Linux shielded VMs. This is now available in VMM 1801
+With Windows Server 1709, Hyper-V introduces the support for provisioning Linux shielded VMs. This is now available in VMM 1801
 
 ## Procedure to shield a Linux VM
 
@@ -53,7 +53,7 @@ Use the following steps:
 		$cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
 
         ```
-2. Sign the disk using a Windows Server 1711 machine.
+2. Sign the disk using a Windows Server 1709 machine.
 
     Use the following sample cmdlet:
 
