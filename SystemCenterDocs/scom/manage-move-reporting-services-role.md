@@ -44,7 +44,7 @@ The migration process for Reporting Services includes manual and automated steps
 ## Uninstall Operations Manager reporting server
 
 1. On the current Operations Manager reporting server, uninstall the Operations Manager reporting server component as follows:  
-   a. Open Control Panel, and then click **Programs and Features**.
+   a. Open Control Panel, and then click **Programs and Features**.  
    b. In **Programs and Features**, select **System Center 2016 Operations Manager**, and then click **Uninstall/Change**.  
    c. In the **Operations Manager Setup** wizard, click **Remove a feature**.  
    d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.  
@@ -54,10 +54,10 @@ The migration process for Reporting Services includes manual and automated steps
 ## Install SQL Server Reporting Services
 
 1. If you are installing the Operations Manager reporting server component on a new server, perform a [new install SQL Server Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/install-reporting-services-native-mode-report-server).   
-2. If you are reinstalling the Operations Manager reporting server component on the original server, you must remove any data that is left from the original installation by doing the following:
-   a. Copy the ResetSRS.exe tool from the SupportTools folder on the product source media to a local folder.
+2. If you are reinstalling the Operations Manager reporting server component on the original server, you must remove any data that is left from the original installation by doing the following:  
+   a. Copy the ResetSRS.exe tool from the SupportTools folder on the product source media to a local folder.  
    b. Open a command prompt window using the Run as Administrator option and run the tool as follows: `ResetSRS.exe <SQL Server instance name>`.  Here, SQL Server instance name is the SQL Server instance that SQL Reporting Services is installed on, such as **Instance1**. If SQL Server is using the default instance, enter **MSSQLSERVER**.  
-   d. Configure the report server Web service and portal URL, and report server database using the Reporting Services Configuration tool.  For more information, see [Configure a Report Server (Reporting Services Native Mode)](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-reporting-services-native-mode). 
+   d. Configure the report server Web service and portal URL, and report server database using the Reporting Services Configuration tool.  For more information, see [Configure a Report Server (Reporting Services Native Mode)](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-reporting-services-native-mode).  
 
 ## Verify the installation of your report server
 
@@ -69,12 +69,12 @@ The migration process for Reporting Services includes manual and automated steps
 
 1. On the new Operations Manager reporting server, install the Operations Manager Reporting server component as follows: 
    a. On the **Configuration, SQL Server instance for reporting services** page, make sure the SQL Server instance refers to the new SQL Server instance.  
-   b. On the **Configuration, Configure Operation Manager accounts** page, be sure the Data Reader account is the same account previously used for the report server.
+   b. On the **Configuration, Configure Operation Manager accounts** page, be sure the Data Reader account is the same account previously used for the report server.  
 
 If you are restoring the original configuration on a new SQL Server reporting services instance, restore the original **ReportServer** and **ReportServerTempDB** databases for SQL Server Reporting services to preserve your custom reports, favorites, schedules from the original reporting services deployment.  
-   a. Verify the **RSExecRole** is a database role with the report server database and temporary database. **RSExecRole** must have **select, insert, update, delete, and reference** permissions in the report server database tables, and **execute** permissions on the stored procedures.
+   a. Verify the **RSExecRole** is a database role with the report server database and temporary database. **RSExecRole** must have **select, insert, update, delete, and reference** permissions in the report server database tables, and **execute** permissions on the stored procedures.  
    b. On the new Reporting Services server, open **Report Services Configuration Tool** and connect to the new instance.  Select the original report server database and click **Apply**.  
-   c. Restore the encryption keys you backed up in step 2.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+   c. Restore the encryption keys you backed up in step 2.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).  
 
 After completing the installation and post-configuration steps, perform the following to confirm Operations Manager reporting is working correctly.
 
