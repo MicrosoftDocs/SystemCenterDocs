@@ -5,7 +5,7 @@ description: This guide provides information on how to upgrade to Operations Man
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/31/2018
+ms.date: 02/09/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -68,7 +68,7 @@ System Center 2016 - Operations Manager supports an in-place upgrade from the fo
 
 System Center Operations Manager 1801 supports an in-place upgrade from the following versions:
 
-- System Center 2012 R2 RTM to the latest update rollup  
+- System Center 2012 R2 UR12 to the latest update rollup  
 - System Center 2016 RTM to the latest update rollup  
 
 ## High level overview of upgrade steps for a distributed management group
