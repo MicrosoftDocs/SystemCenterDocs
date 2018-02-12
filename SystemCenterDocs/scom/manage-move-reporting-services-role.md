@@ -67,7 +67,7 @@ The migration process for Reporting Services includes manual and automated steps
 
 ## Install Operations Manager Reporting server
 
-1. On the new Operations Manager reporting server, install the Operations Manager Reporting server component as follows: 
+1. On the new Operations Manager reporting server, install the Operations Manager Reporting server component as follows:  
    a. On the **Configuration, SQL Server instance for reporting services** page, make sure the SQL Server instance refers to the new SQL Server instance.  
    b. On the **Configuration, Configure Operation Manager accounts** page, be sure the Data Reader account is the same account previously used for the report server.  
 
