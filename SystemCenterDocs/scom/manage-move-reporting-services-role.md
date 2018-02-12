@@ -59,7 +59,7 @@ The migration process for Reporting Services includes manual and automated steps
    b. Open a command prompt window using the Run as Administrator option and run the tool as follows: `ResetSRS.exe <SQL Server instance name>`.  Here, SQL Server instance name is the SQL Server instance that SQL Reporting Services is installed on, such as **Instance1**. If SQL Server is using the default instance, enter **MSSQLSERVER**.  
    d. Configure the report server Web service and portal URL, and report server database using the Reporting Services Configuration tool.  For more information, see [Configure a Report Server (Reporting Services Native Mode)](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-reporting-services-native-mode).  
 
-## Verify the installation of your report server
+## Verify the installation of SQL Report server
 
 1. Run the Reporting Services Configuration tool and connect to the report server instance you just installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server. 
 2. Open a browser and type the report server URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the report server during setup. By default, the report server virtual directory is named **ReportServer**. You can use the following URL to verify report server installation: *http://<computer name>/ReportServer<_instance name>*. The URL will be different if you installed the report server as a named instance. 
@@ -74,8 +74,7 @@ The migration process for Reporting Services includes manual and automated steps
 If you are restoring the original configuration on a new SQL Server reporting services instance, restore the original **ReportServer** and **ReportServerTempDB** databases for SQL Server Reporting services to preserve your custom reports, favorites, schedules from the original reporting services deployment.  
 
 1. Verify the **RSExecRole** is a database role with the report server database and temporary database. **RSExecRole** must have **select, insert, update, delete, and reference** permissions in the report server database tables, and **execute** permissions on the stored procedures.  
-2. On the new Reporting Services server, open **Report Services Configuration Tool** and connect to the new instance.  Select the original report server database and click **Apply**.  
-3. Restore the encryption keys you backed up earlier.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).  
+2. Restore the encryption keys you backed up earlier.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).  
 
 After completing the installation and post-configuration steps, perform the following to confirm Operations Manager reporting is working correctly.
 
