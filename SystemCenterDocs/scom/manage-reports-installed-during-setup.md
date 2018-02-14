@@ -79,7 +79,7 @@ System Center Operations Manager provides the reports described in the following
   
 |Report|Description|  
 |----------|---------------|  
-|Service Level Tracking Summary Report|This reports shows whether the configured Service Level Objectives \(SLOs\) met their respective goals, for selected service levels.|  
+|Service Level Tracking Summary Report|This report shows whether the configured Service Level Objectives \(SLOs\) met their respective goals, for selected service levels.|  
   
 ## Web Application Availability Monitoring Solutions Library  
   
@@ -117,14 +117,14 @@ System Center Operations Manager provides the reports described in the following
 |\(Problem Analysis Reports\) Day of Week Utilization|This report shows application activity trends and application resource utilization trends for a selected period.|  
 |\(Problem Analysis Reports\) Hour of Day Utilization|This report shows application activity trends and application resource utilization trends for a selected period.|  
 |\(Problem Analysis Reports\) Utilization Trend|This report shows application activity trends and application resource utilization trends for a selected period.|  
-|\(Resource Utilization Analysis\) Application CPU Utilization Analysis|This reports highlights applications that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the servers which host the application.|  
-|\(Resource Utilization Analysis\) Application IO Utilization Analysis|This reports highlights applications that have the heaviest IO utilization and provides a breakdown of IO utilization based on the servers which host each application.|  
-|\(Resource Utilization Analysis\) Application Memory Utilization Analysis|This reports highlights applications that have the heaviest memory utilization and provides a breakdown of memory utilization based on the servers which host each application.|  
+|\(Resource Utilization Analysis\) Application CPU Utilization Analysis|This report highlights applications that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the servers which host the application.|  
+|\(Resource Utilization Analysis\) Application IO Utilization Analysis|This report highlights applications that have the heaviest IO utilization and provides a breakdown of IO utilization based on the servers which host each application.|  
+|\(Resource Utilization Analysis\) Application Memory Utilization Analysis|This report highlights applications that have the heaviest memory utilization and provides a breakdown of memory utilization based on the servers which host each application.|  
 |\(Resource Utilization Analysis\) Application Request Utilization Analysis|This report provides an analysis of application based on the volume of processed requests.|  
 |\(Resource Utilization Analysis\) Computer Application Load Analysis|This report provides an analysis of servers based on the volume of processed requests.|  
-|\(Resource Utilization Analysis\) Computer CPU Utilization Analysis|This reports highlights servers that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the monitored applications running on each server.|  
-|\(Resource Utilization Analysis\) Computer IO Utilization Analysis|This reports highlights servers that have the heaviest IO utilization and provides a breakdown of IO utilization by monitored applications running on each server.|  
-|\(Resource Utilization Analysis\) Computer Memory Utilization Analysis|This reports highlights servers that have the heaviest memory utilization and provides a breakdown of memory utilization based on the monitored applications running on each server.|  
+|\(Resource Utilization Analysis\) Computer CPU Utilization Analysis|This report highlights servers that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the monitored applications running on each server.|  
+|\(Resource Utilization Analysis\) Computer IO Utilization Analysis|This report highlights servers that have the heaviest IO utilization and provides a breakdown of IO utilization by monitored applications running on each server.|  
+|\(Resource Utilization Analysis\) Computer Memory Utilization Analysis|This report highlights servers that have the heaviest memory utilization and provides a breakdown of memory utilization based on the monitored applications running on each server.|  
   
 ## Next steps
 
