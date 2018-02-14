@@ -4,9 +4,9 @@ description: This article describes how to search in My Workspace in the Operati
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 12/05/2016
+ms.date: 02/13/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
@@ -14,7 +14,7 @@ ms.assetid: 1c8d08db-f510-463a-83db-f5b45411090e
 
 # Using advanced search
 
-In System Center 2016 - Operations Manager, advanced search is available in My Workspace, when you create a new search. You can also open advanced search in the Monitoring workspace on the **Tools** menu.  
+In System Center Operations Manager, advanced search is available in My Workspace, when you create a new search. You can also open advanced search in the Monitoring workspace on the **Tools** menu.  
   
 Use advanced search to search for a specific object type that meets specified criteria. Advanced search has two steps:  
   

@@ -4,7 +4,7 @@ description: This article describes how to use the Operations Manager Operations
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/10/2017
+ms.date: 02/13/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -13,7 +13,7 @@ ms.assetid: dbfffaab-d49c-42a5-bbb3-77cbeae9b841
 ---
 
 # Using the Reporting Workspace in Operations Manager
-System Center - Operations Manager provides extensive reporting capabilities, including multiple report libraries that you can select from to customize reports for your specific requirements. Reports perform a query against the data warehouse database and return the results in an easy-to-read format.  
+System Center Operations Manager provides extensive reporting capabilities, including multiple report libraries that you can select from to customize reports for your specific requirements. Reports perform a query against the data warehouse database and return the results in an easy-to-read format.  
   
 > [!IMPORTANT]  
 > Users must be a member of the Report Operator Users role to run reports.  

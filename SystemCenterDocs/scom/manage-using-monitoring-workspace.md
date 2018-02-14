@@ -4,7 +4,7 @@ description: This article describes how to use the Operations Manager Operations
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/10/2017
+ms.date: 02/13/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: 83921ac3-655e-4279-8f16-88818c88349f
 
 # Using the Operations Manager Operations console
 
-In System Center - Operations Manager, the Monitoring workspace is the primary workspace for operators, network and system engineers, and service desk. The Monitoring workspace is basically the same in both the Operations and Web consoles.  
+In System Center Operations Manager, the Monitoring workspace is the primary workspace for operators, network and system engineers, and service desk. The Monitoring workspace is basically the same in both the Operations and Web consoles.  
   
 When you open the Monitoring workspace, you see an overview that summarizes the health of distributed applications and computers, as well as the objects that are in maintenance mode, as shown in the following image.  
   
