@@ -1,20 +1,20 @@
 ---
 ms.assetid: 90b8bc0b-1a4a-4273-a51a-a33142230d60
 title: Operations Manager Reports Library
-description: This article summarizes the default reports included with Operations Manager 2016.
+description: This article summarizes the default reports included with Operations Manager.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+manager: carmonm
+ms.date: 02/13/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Operations Manager reports library
 
-System Center 2016 - Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
+System Center Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
   
 > [!NOTE]  
 > When you first install Operations Manager, it may take several minutes for all report libraries to appear in **Reporting**.  
