@@ -21,7 +21,7 @@ The following table shows Operations Manager feature interaction across a firewa
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC)* ---> |Operations Manager database|Yes (Setup)||
+|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](https://docs.microsoft.com/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135)|
 |Management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |Gateway server|5723 --->|management server|No||
@@ -47,8 +47,6 @@ The following table shows Operations Manager feature interaction across a firewa
 |Operations console (reports)|80 --->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
 |Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes||
 |Management server (Audit Collection Services collector)1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
-
-\* WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](https://docs.microsoft.com/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135)
 
 If SQL Server 2014 Service Pack 2 or SQL Server 2016 is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
 
