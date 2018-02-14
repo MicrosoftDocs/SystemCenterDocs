@@ -1,20 +1,20 @@
 ---
 ms.assetid: 90b8bc0b-1a4a-4273-a51a-a33142230d60
 title: Operations Manager Reports Library
-description: This article summarizes the default reports included with Operations Manager 2016.
+description: This article summarizes the default reports included with Operations Manager.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+manager: carmonm
+ms.date: 02/13/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Operations Manager reports library
 
-System Center 2016 - Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
+System Center Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
   
 > [!NOTE]  
 > When you first install Operations Manager, it may take several minutes for all report libraries to appear in **Reporting**.  
@@ -79,7 +79,7 @@ System Center 2016 - Operations Manager provides the reports described in the fo
   
 |Report|Description|  
 |----------|---------------|  
-|Service Level Tracking Summary Report|This reports shows whether the configured Service Level Objectives \(SLOs\) met their respective goals, for selected service levels.|  
+|Service Level Tracking Summary Report|This report shows whether the configured Service Level Objectives \(SLOs\) met their respective goals, for selected service levels.|  
   
 ## Web Application Availability Monitoring Solutions Library  
   
@@ -117,14 +117,14 @@ System Center 2016 - Operations Manager provides the reports described in the fo
 |\(Problem Analysis Reports\) Day of Week Utilization|This report shows application activity trends and application resource utilization trends for a selected period.|  
 |\(Problem Analysis Reports\) Hour of Day Utilization|This report shows application activity trends and application resource utilization trends for a selected period.|  
 |\(Problem Analysis Reports\) Utilization Trend|This report shows application activity trends and application resource utilization trends for a selected period.|  
-|\(Resource Utilization Analysis\) Application CPU Utilization Analysis|This reports highlights applications that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the servers which host the application.|  
-|\(Resource Utilization Analysis\) Application IO Utilization Analysis|This reports highlights applications that have the heaviest IO utilization and provides a breakdown of IO utilization based on the servers which host each application.|  
-|\(Resource Utilization Analysis\) Application Memory Utilization Analysis|This reports highlights applications that have the heaviest memory utilization and provides a breakdown of memory utilization based on the servers which host each application.|  
+|\(Resource Utilization Analysis\) Application CPU Utilization Analysis|This report highlights applications that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the servers which host the application.|  
+|\(Resource Utilization Analysis\) Application IO Utilization Analysis|This report highlights applications that have the heaviest IO utilization and provides a breakdown of IO utilization based on the servers which host each application.|  
+|\(Resource Utilization Analysis\) Application Memory Utilization Analysis|This report highlights applications that have the heaviest memory utilization and provides a breakdown of memory utilization based on the servers which host each application.|  
 |\(Resource Utilization Analysis\) Application Request Utilization Analysis|This report provides an analysis of application based on the volume of processed requests.|  
 |\(Resource Utilization Analysis\) Computer Application Load Analysis|This report provides an analysis of servers based on the volume of processed requests.|  
-|\(Resource Utilization Analysis\) Computer CPU Utilization Analysis|This reports highlights servers that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the monitored applications running on each server.|  
-|\(Resource Utilization Analysis\) Computer IO Utilization Analysis|This reports highlights servers that have the heaviest IO utilization and provides a breakdown of IO utilization by monitored applications running on each server.|  
-|\(Resource Utilization Analysis\) Computer Memory Utilization Analysis|This reports highlights servers that have the heaviest memory utilization and provides a breakdown of memory utilization based on the monitored applications running on each server.|  
+|\(Resource Utilization Analysis\) Computer CPU Utilization Analysis|This report highlights servers that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the monitored applications running on each server.|  
+|\(Resource Utilization Analysis\) Computer IO Utilization Analysis|This report highlights servers that have the heaviest IO utilization and provides a breakdown of IO utilization by monitored applications running on each server.|  
+|\(Resource Utilization Analysis\) Computer Memory Utilization Analysis|This report highlights servers that have the heaviest memory utilization and provides a breakdown of memory utilization based on the monitored applications running on each server.|  
   
 ## Next steps
 

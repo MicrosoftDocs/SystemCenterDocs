@@ -4,9 +4,9 @@ description: This article describes how to use the Operations Manager Health Exp
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 11/28/2016
+ms.date: 02/13/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 61005760-0977-4cd8-b76d-05558160f78f
