@@ -1,20 +1,20 @@
 ---
 ms.assetid: 01649c28-afbd-4f82-91db-de88d93544f6
 title: Operations Manager Agents
-description: This article provides design guidance for agent deployment on Windows, Linux and UNIX computers with Operations Manager 2016.
+description: This article provides design guidance for agent deployment on Windows, Linux and UNIX computers with Operations Manager.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 10/10/2017
+manager: carmonm
+ms.date: 02/13/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Operations Manager agents
 
-In System Center 2016 – Operations Manager, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like a SQL database or logical disk, and execute tasks on demand by an operator or in response to a condition. It allows Operations Manager to monitor Windows, Linux, and UNIX operating systems and the components of an IT service installed on them, like a web site or an Active Directory domain controller.  
+In System Center Operations Manager, an agent is a service that is installed on a computer that looks for configuration data and proactively collects information for analysis and reporting, measures the health state of monitored objects like a SQL database or logical disk, and execute tasks on demand by an operator or in response to a condition. It allows Operations Manager to monitor Windows, Linux, and UNIX operating systems and the components of an IT service installed on them, like a web site or an Active Directory domain controller.  
 
 ## Windows agent
 
@@ -91,7 +91,7 @@ This will require you to request certificates for each agent that will report to
 
 ## Agent deployment
 
-System Center 2016 – Operations Manager Agents may be installed by using one of the following three methods.  Most installations use a combination of these methods to install different sets of computers, as appropriate.
+System Center Operations Manager Agents may be installed by using one of the following three methods.  Most installations use a combination of these methods to install different sets of computers, as appropriate.
 
 - The discovery and installation of one or more agents from the Operations console. This is the most common form of installation.  A management server must be able to connect the computer with RPC, and either the management server Action Account or other provided credentials must have administrative access to the target computer.
 - Inclusion in the installation image. This is a manual installation to a base image that is used for the preparation of other computers.  In this case, Active Directory integration may be used to automatically assign the computer to a management server upon the initial startup.
@@ -111,12 +111,12 @@ Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TC
 - If enabled, Windows Firewall Group Policy settings for Allow remote administration exception and Allow file and printer sharing exception must be set to Allow unsolicited incoming messages from to the IP address and subnets for the primary and secondary management servers for the agent. 
 - An account that has local administrator rights on the target computer.
 - Windows Installer 3.1. To install, see article 893803 in the Microsoft Knowledge Base 
-https://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
+http://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
 - Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation will install MSXML 6 on the target device if it is not already installed. <verify if we need to continue calling this out>
 
 ### Agent deployment to UNIX and Linux system
 
-In System Center 2016 – Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
+In System Center Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:
 
 - Secure Shell (SSH) for installing, upgrading, and removing agents.
 - Web Services for Management (WS-Management) for all monitoring operations and include the discovery of agents that were already installed.
@@ -131,7 +131,7 @@ By elevation, an unprivileged account can assume the identity of a privileged ac
 
 ## Active Directory agent assignment
 
-System Center 2016 – Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups.  This feature is commonly used in conjunction with the agent deployed as part of a server deployment build process.  When the computer comes online for the first time, the Operations Manager agent queries Active Directory for its primary and failover management server assignment and automatically starts monitoring the computer.
+System Center Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups.  This feature is commonly used in conjunction with the agent deployed as part of a server deployment build process.  When the computer comes online for the first time, the Operations Manager agent queries Active Directory for its primary and failover management server assignment and automatically starts monitoring the computer.
 
 To assign computers to management groups by using AD DS:
 
