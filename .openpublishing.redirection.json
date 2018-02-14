@@ -14,6 +14,10 @@
      "redirect_url": "/system-center/dpm/dpm-overview"
   },
   {
+    "source_path" : "SystemCenterDocs/dpm/get-started/prepare-environment-for-dpm.md",
+    "redirect_url": "/system-center/dpm/prepare-environment-for-dpm"
+  },
+  {
      "source_path" : "SystemCenterDocs/DPM/Deploy/Deploy.md",
      "redirect_url": "/system-center/dpm/dpm-overview"
   },
