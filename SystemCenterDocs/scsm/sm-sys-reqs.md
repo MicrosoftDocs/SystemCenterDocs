@@ -110,8 +110,8 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 The table summarises support for SQL Server 64-bit Enterprise and Standard versions.
 
 
-**Service Manager component** | SQL Server 2012 SP2 | SQL Server 2014  | |SQL Server 2016 
---- | --- |--- | ---
+**Service Manager** | **SQL Server 2012 SP2** | **SQL Server 2014**  | **SQL Server 2016**
+--- | --- | --- | ---
 **Service Manager/Data Warehouse database | &#8226; | &#8226;<br/><br/> All service packs | &#8226;<br/><br/> All service packs 
 **SMA web service | &#8226; | &#8226;<br/><br/> All service packs  | &#8226;<br/><br/> All service packs  
 
