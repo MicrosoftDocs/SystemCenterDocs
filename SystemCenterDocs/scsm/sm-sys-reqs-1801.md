@@ -77,7 +77,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
  Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 1801. Use this information whether you are deploying one or multiple components of System Center.
 
 
-## SQL Server version support
+### SQL Server version support
 
  |**System Center component** |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
  |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|
