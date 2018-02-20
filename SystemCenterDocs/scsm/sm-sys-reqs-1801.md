@@ -92,7 +92,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
  >
  > System Center 1801 - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 1801 - Service Manager connection strings.
 
-## Allow updates
+### Allow updates
 
  To either install or upgrade System Center 1801 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 1801 - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
 
@@ -110,7 +110,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
  sp_configure 'allow updates',0 reconfigure with override
  ```
 
-## AlwaysOn Availability Groups considerations for Service Manager databases
+### AlwaysOn Availability Groups considerations for Service Manager databases
 
  SQL Server AlwaysOn Availability Groups functionality is supported by System Center 1801 - Service Manager.
 
