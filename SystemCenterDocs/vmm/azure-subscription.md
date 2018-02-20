@@ -69,4 +69,3 @@ You cannot:
 -	Manage Azure Networks
 -	See the Dashboard Summary view
 -	See the Performance Monitoring Summary
--	View or manage the virtual machines that were created in the Classic deployment model.
