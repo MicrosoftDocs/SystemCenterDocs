@@ -5,7 +5,7 @@ description: The article describes Service Manager system requirements.
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 23/01/2018
+ms.date: 02/19/2018
 ms.technology: service-manager
 ms.topic: article
 monikerRange: 'sc-sm-2016'
@@ -51,7 +51,6 @@ The following versions of Windows Server operating system are supported.
 |**Service Manager** Database or Data Warehouse Database||&#8226;|&#8226;|&#8226;||
 |**Service Manager** Self-Service Portal (HTML 5)||&#8226;|&#8226;|&#8226;|&nbsp;|
 
-Service Manager has a number of software requirements, depending on the type of component to install. See [Software requirements for Service Manager](sm-software-reqs.md) for more information.
 
 
 ## Client operating system
@@ -108,11 +107,13 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 ## SQL Server versions
 
+The table summarises support for SQL Server 64-bit Enterprise and Standard versions.Support is for all service packs.
 
-**Service Manager component** | SQL Server 2012 SP2 Enterprise/Standard (64 bit) | SQL Server 2014 Enterprise/Standard (64-bit) | |SQL Server 2016 Enterprise/Standard (64-bit)|
---- | --- |--- | ---
-|**Service Manager/Data Warehouse database | &#8226;| &#8226;<br/><br/> All service packs |&#8226;<br/><br/> All service packs 
-|**SMA web service | &#8226; | &#8226;<br/><br/> All service packs  |&#8226;<br/><br/> All service packs  
+
+**Service Manager** | **SQL Server 2012 SP2** | **SQL Server 2014**  | **SQL Server 2016**
+--- | --- | --- | ---
+**Service Manager/Data Warehouse database** | &#8226; | &#8226;| &#8226;
+**SMA web service** | &#8226; | &#8226; | &#8226;
 
 
 - System Center 2016 - Service Manager doesn't support SQL Server versions earlier than SQL Server 2012 SP2.
