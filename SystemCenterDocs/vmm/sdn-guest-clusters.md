@@ -59,7 +59,7 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 
 3.	Using PowerShell, create a VIP using the VIP template.
 
-    Use the following sample PowerShell script  to create a VIP.  Modify the parameters as required.
+    Use the sample script [here](sdn-load-balance-network-traffic.md#script-for-creating-vip-to-load-balance-internal-network-traffic)   to create a VIP and load balance the internal network. Modify the parameters based on the following details:
 
     ```powershell
     “$VipMemberNames” – names of the VMs in the cluster.
