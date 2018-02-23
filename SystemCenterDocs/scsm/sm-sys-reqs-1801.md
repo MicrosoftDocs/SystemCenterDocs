@@ -81,14 +81,14 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
  |**System Center component** |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
  |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|
- |**Service Manager** Database or Data Warehouse Database|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
- |**Service Management Automation** Web Service|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Database or Data Warehouse Database||||||||&#8226;|&#8226;|
+ |**Service Management Automation** Web Service||||||||&#8226;|&#8226;|
 
 
 
  > [!NOTE]
 
- > System Center 1801 - Service Manager requires SQL Server 2012 SP2 or later.
+ > System Center 1801 - Service Manager requires SQL Server 2014 SP2 (minimum) or later.
  >
  > System Center 1801 - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 1801 - Service Manager connection strings.
 
