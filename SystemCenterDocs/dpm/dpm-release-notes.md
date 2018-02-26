@@ -117,7 +117,7 @@ The size calculation can be turned back on when needed by running a PowerShell s
 
 ## Error 4387 might appear while installing DPM
 
-**Description**: While installing the Data Protection Manager, when you enter an SQL instance in the *Data Protection Manager Setup* > *Prerequisites check*> *Instance of SQL server* text box, error 4387 might appear.
+**Description**: While installing the Data Protection Manager, when you enter an SQL instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
 
 **Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
 
