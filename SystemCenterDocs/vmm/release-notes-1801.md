@@ -39,6 +39,6 @@ This article summarizes the release notes for System Center 1801 - Virtual Machi
 
 **Description**: When you change the original name of a default port classification and then try to upgrade to VMM 1801 – upgrade might fail with the following error message in the VMM setup log.
 
-*Violation of PRIMARY KEY constraint 'PK_tbl_NetMan_PortClassification'. Cannot insert duplicate key in object 'dbo.tbl_NetMan_PortClassification*. 
+*Violation of PRIMARY KEY constraint 'PK_tbl_NetMan_PortClassification'. Cannot insert duplicate key in object 'dbo.tbl_NetMan_PortClassification'*.
 
 **Workaround**: Change the port classification name back to original name, and then trigger the upgrade. After the upgrade, you can change the default name to a different one.
