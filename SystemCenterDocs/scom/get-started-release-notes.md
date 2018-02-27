@@ -10,6 +10,7 @@ ms.technology: operations-manager
 ms.topic: article
 keywords:
 ms.date: 05/23/2017
+monikerRange: 'sc-om-2016'
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 

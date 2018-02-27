@@ -8,6 +8,7 @@ manager: cfreeman
 ms.date: 11/09/2017
 ms.custom: na
 ms.prod: system-center-2016
+monikerRange: 'sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
 ---
