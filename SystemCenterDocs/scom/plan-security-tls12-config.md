@@ -144,7 +144,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
    * If ODBC 11.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql11.dll.
    * If ODBC 13.0 is installed, change the Driver entry to %WINDIR%\system32\msodbcsql13.dll.
 
-    Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
+   Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
 
     * For ODBC 11.0, create the following ODBC 11.0.reg file:
     
