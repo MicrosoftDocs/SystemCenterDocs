@@ -98,7 +98,7 @@ For specific instructions on how to configure System Center 2016 - Operations Ma
 
 Operations Manager includes improved scalability in how many Unix/Linux agents that can be monitored per Management server.  You can now monitor up to 2X the number of Unix/Linux servers per management server, against the previously supported scale.
 
-Operations Manager now uses the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs, which Operations Manager uses by default. To leverage this  scalability improvement, you need to create the new Registry key “UseMIAPI” to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems.  Perform the following steps:
+Operations Manager now uses the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs, which Operations Manager uses by default. To leverage this improvement, you need to create the new Registry key “UseMIAPI” to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems.  Perform the following steps:
 
 1. Open the **Registry Editor** from an elevated **Command Prompt**.
 
