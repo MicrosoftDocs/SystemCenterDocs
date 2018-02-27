@@ -53,7 +53,7 @@ Operations Manager can assess Microsoft and partner management packs.  Operation
 
 ## Alert data management
 
-With the release of System Center 2016 – Operations Manager, you get better visibility of the alerts being generated in your management group which helps you reduce alerts that you don't consider actionable or relevant.   
+With the release of System Center 2016 – Operations Manager, you get better visibility of the alerts being generated in your management group, which helps you reduce alerts that you don't consider actionable or relevant.   
 
 This feature provides the following benefits:
 
@@ -72,12 +72,12 @@ This feature is available for members of the Operations Manager Administrators r
 
 ## Extensible network monitoring
 
-In System Center 2016 - Operations Manager, included is a new tool that allows you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. In addition to the current extended monitoring support for Network devices (Processor and Memory monitoring), this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor, and power supply.  
+In System Center 2016 - Operations Manager, included is a new tool that allows you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. Additionally, this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor, and power supply.  
 
 
 ## Monitoring Nano Server and workloads
 
-In the System Center 2016 – Operations Manager release, included is support to monitor Nano Server:
+System Center 2016 – Operations Manager includes support to monitor Nano Server.
 
 -  Discover a Nano Server and push Nano-compatible agent to the server from the console
 
