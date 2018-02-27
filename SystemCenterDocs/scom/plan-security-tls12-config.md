@@ -148,24 +148,30 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 
     * For ODBC 11.0, create the following ODBC 11.0.reg file:
     
-     ```
-    [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-    "OpsMgrAC"="ODBC Driver 11 for SQL Server"
+         ```
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+        "OpsMgrAC"="ODBC Driver 11 for SQL Server"
 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-    "Driver"="%WINDIR%\\system32\\msodbcsql11.dll"
-    ```
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+        "Driver"="%WINDIR%\\system32\\msodbcsql11.dll"
+        ```
 
     * For ODBC 13.0, create the following ODBC 13.0.reg file:
   
-    ```
-    [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
-    "OpsMgrAC"="ODBC Driver 13 for SQL Server"
+        ```
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+        "OpsMgrAC"="ODBC Driver 13 for SQL Server"
 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
-    "Driver"="%WINDIR%\\system32\\msodbcsql13.dll"
-    ```
+        [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC]
+        "Driver"="%WINDIR%\\system32\\msodbcsql13.dll"
+        ```
+
+## Next steps
+
+* For a complete listing of ports used, the direction of the communication, and if the ports can be configured, see [Configuring a Firewall for Operations Manager](plan-security-config-firewall.md).
+
+* For an overall review of how data between components in a management group is protected, see [Authentication and Data Encryption in Operations Manager](plan-security-authentication-data-encryption.md).
