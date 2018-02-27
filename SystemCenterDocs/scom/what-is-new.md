@@ -8,6 +8,7 @@ manager: cfreeman
 ms.date: 11/09/2017
 ms.custom: na
 ms.prod: system-center-2016
+monikerRange: 'sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -18,7 +19,7 @@ The content in this section describes what's new and changed in System Center 20
 
 ## Improve desktop console performance
 
-With the release of System Center 2016 - Operations Manager, we have made performance improvements to state and diagram views in the Operations console to improve load performance  (these improvements are in addition to the alert view optimizations).
+With the release of System Center 2016 - Operations Manager, performance improvements have been implemented with state and diagram views in the Operations console to improve load performance (these improvements are in addition to the alert view optimizations).
 
 
 ## Send E-mail notifications with external authentication
@@ -28,10 +29,10 @@ Operations Manager now supports sending notifications from an e-mail server, eit
 
 ## Non Silverlight Web console (except Dashboard views)
 
-With the release of System Center 2016 - Operations Manager, we have removed the Silverlight dependency from all the Web console views except Dashboard views.
+With the release of System Center 2016 - Operations Manager, the Silverlight dependency is removed from all the Web console views except Dashboard views.
 This feature provides the following value:
 - No more Silverlight prerequisite to access Operations Manager Web console
-- Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome and Firefox
+- Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome, and Firefox
 - Performant experience
 
 > [!NOTE]
@@ -42,17 +43,17 @@ This feature provides the following value:
 
 Schedule Maintenance mode is a feature released in System Center 2016 - Operations Manager to suspend monitoring of an object during regular software or hardware maintenance activities, such as software updates or hardware replacements. Entities can be put to maintenance in older versions of Operations Manager, but they cannot be put into maintenance mode at a future time. The newly created Maintenance Mode Scheduling wizard gives the ability to choose different types of entities to put into maintenance and to schedule maintenance at a future time.
 
-With the release of System Center 2016 - Operations Manager, Operators can access the “Maintenance Schedules” feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. We now supports allowing a server administrator to set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
+With the release of System Center 2016 - Operations Manager, Operators can access the “Maintenance Schedules” feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. Server administrators can set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
 
 
 ## Management Pack Updates and Recommendations
 
-We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](manage-mp-mpassessment.md).
+Operations Manager can assess Microsoft and partner management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations, see [Management Pack Assessment](manage-mp-mpassessment.md).
 
 
 ## Alert data management
 
-With the release of System Center 2016 – Operations Manager, you get better visibility of the alerts being generated in your management group which helps you reduce alerts that you don't consider actionable or relevant.   
+With the release of System Center 2016 – Operations Manager, you get better visibility of the alerts being generated in your management group, which helps you reduce alerts that you don't consider actionable or relevant.   
 
 This feature provides the following benefits:
 
@@ -64,19 +65,19 @@ This feature provides the following benefits:
 
 - Filter the data for the desired duration so that you can understand what was happening during a particular period of time.
 
-- This information enables you to make informed decisions on tuning the thresholds or disabling the alerts which you consider noisy.
+- This information enables you to make informed decisions on tuning the thresholds or disabling the alerts, which you consider noisy.
 
 This feature is available for members of the Operations Manager Administrators role from the Tune Management Packs screen in the Operations console.  
 
 
 ## Extensible network monitoring
 
-In System Center 2016 - Operations Manager, we include a tool which will allow you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. In addition to the current extended monitoring support for Network devices (Processor and Memory monitoring), this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply.  
+In System Center 2016 - Operations Manager, included is a new tool that allows you to create a custom management pack to monitor generic network devices (non-certified as of Operations Manager 2012 R2) and include resource utilization metrics, such as processor and memory. Or you can create extended monitoring workflows for an existing network device already monitored by your management group. This tool enables customers to generate a management pack for their network devices to get extended network monitoring. Additionally, this tool enables customers to add monitoring of additional device components such as fan, temperature sensor, voltage sensor, and power supply.  
 
 
 ## Monitoring Nano Server and workloads
 
-In the System Center 2016 – Operations Manager release, we have included support to monitor Nano Server:
+System Center 2016 – Operations Manager includes support to monitor Nano Server.
 
 -  Discover a Nano Server and push Nano-compatible agent to the server from the console
 
@@ -97,7 +98,7 @@ For specific instructions on how to configure System Center 2016 - Operations Ma
 
 Operations Manager includes improved scalability in how many Unix/Linux agents that can be monitored per Management server.  You can now monitor up to 2X the number of Unix/Linux servers per management server, against the previously supported scale.
 
-Operations Manager now uses the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs, which Operations Manager uses by default. To leverage this  scalability improvement, you need to create the new Registry key “UseMIAPI” to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems.  Perform the following steps:
+Operations Manager now uses the new Async Windows Management Infrastructure (MI) APIs instead of WSMAN Sync APIs, which Operations Manager uses by default. To leverage this improvement, you need to create the new Registry key “UseMIAPI” to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems.  Perform the following steps:
 
 1. Open the **Registry Editor** from an elevated **Command Prompt**.
 
@@ -116,7 +117,7 @@ With Microsoft Operations Management Suite you can extend your management capabi
 
 -   Capacity Planning
 
-For more information please review the Microsoft Operations Management Suite [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
+For more information, review the Microsoft [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
 
 
 ## Partner Program in Administration pane
