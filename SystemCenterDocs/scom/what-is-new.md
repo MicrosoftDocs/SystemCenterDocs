@@ -19,7 +19,7 @@ The content in this section describes what's new and changed in System Center 20
 
 ## Improve desktop console performance
 
-With the release of System Center 2016 - Operations Manager, we have made performance improvements to state and diagram views in the Operations console to improve load performance  (these improvements are in addition to the alert view optimizations).
+With the release of System Center 2016 - Operations Manager, performance improvements have been implemented with state and diagram views in the Operations console to improve load performance (these improvements are in addition to the alert view optimizations).
 
 
 ## Send E-mail notifications with external authentication
@@ -29,10 +29,10 @@ Operations Manager now supports sending notifications from an e-mail server, eit
 
 ## Non Silverlight Web console (except Dashboard views)
 
-With the release of System Center 2016 - Operations Manager, we have removed the Silverlight dependency from all the Web console views except Dashboard views.
+With the release of System Center 2016 - Operations Manager, the Silverlight dependency  is removed from all the Web console views except Dashboard views.
 This feature provides the following value:
 - No more Silverlight prerequisite to access Operations Manager Web console
-- Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome and Firefox
+- Operations Manager Web console can be accessed from multiple web browsers like Edge, Chrome, and Firefox
 - Performant experience
 
 > [!NOTE]
@@ -43,12 +43,12 @@ This feature provides the following value:
 
 Schedule Maintenance mode is a feature released in System Center 2016 - Operations Manager to suspend monitoring of an object during regular software or hardware maintenance activities, such as software updates or hardware replacements. Entities can be put to maintenance in older versions of Operations Manager, but they cannot be put into maintenance mode at a future time. The newly created Maintenance Mode Scheduling wizard gives the ability to choose different types of entities to put into maintenance and to schedule maintenance at a future time.
 
-With the release of System Center 2016 - Operations Manager, Operators can access the “Maintenance Schedules” feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. We now supports allowing a server administrator to set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
+With the release of System Center 2016 - Operations Manager, Operators can access the “Maintenance Schedules” feature from the monitoring pane without the dependency on administrators to schedule maintenance at a future time. We support allowing a server administrator to set the agent-managed computer in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMainteannceMode**.  
 
 
 ## Management Pack Updates and Recommendations
 
-We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations see  [Management Pack Assessment](manage-mp-mpassessment.md).
+We have added a new capability to Operations Manager to assess the management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations, see [Management Pack Assessment](manage-mp-mpassessment.md).
 
 
 ## Alert data management
@@ -117,7 +117,7 @@ With Microsoft Operations Management Suite you can extend your management capabi
 
 -   Capacity Planning
 
-For more information please review the Microsoft Operations Management Suite [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
+For more information, review the Microsoft [Operations Management Suite](https://technet.microsoft.com/library/mt484091.aspx) documentation.
 
 
 ## Partner Program in Administration pane
