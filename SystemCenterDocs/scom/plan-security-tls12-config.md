@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to implement Transport Layer Security 1.2 for Operations Manager
+# How to implement Transport Layer Security 1.2 
 This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center 2016 - Operations Manager and version 1801 management group.  
 
 Perform the following steps to enable TLS protocol version 1.2:
