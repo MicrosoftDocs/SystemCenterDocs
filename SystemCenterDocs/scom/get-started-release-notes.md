@@ -20,7 +20,7 @@ The following release notes apply to System Center 2016 - Operations Manager.
 ## SharePoint integration with Operations Manager has to be recreated
 **Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated with the  steps below.
 
-**Workaround:** Perform the following steps to setup SharePoint to view Operations manager data:
+**Workaround:** Perform the following steps to set up SharePoint to view Operations manager data:
 1.	Create a new page on SharePoint in which you want to display the Dashboard.
 2.	Open the page and click edit and insert a new Web Part.
 3.	In Web Part, under categories select “Media and Content” and under that select “Page Viewer” and click add.
@@ -40,8 +40,8 @@ on Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 
 **Workaround:** None.
 
-## MSI based installation does not work for Nano agent
-**Description:** MSI based installation is not supported for Nano agent. The agent can be installed from Discovery Wizard\PowerShell installer scripts.
+## MSI-based installation does not work for Nano agent
+**Description:** MSI-based installation is not supported for Nano agent. The agent can be installed from Discovery Wizard\PowerShell installer scripts.
 
 **Workaround:** None.
 
@@ -51,7 +51,7 @@ on Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 **Workaround** Only option is to uninstall the Nano agent, then install the RTM version + desired update.
 
 ## Issues with updates of Nano agent
-**Description:** Updates to Nano agent will not be pushed from Windows Update. To update Nano agent you Will need to either download the available update and install using the PowerShell update scripts; or trigger a repair from an updated Management server.
+**Description:** Updates to Nano agent will not be pushed from Windows Update. To update Nano agent, you need to either download the available update and install using the PowerShell update scripts; or trigger a repair from an updated Management server.
 
 **Workaround:** None.
 
@@ -61,7 +61,7 @@ on Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 **Workaround:** None.
 
 ## Inconsistencies in push install experience of Nano agent
-**Description:** The Discover Wizard status dialog closes but agent stays in pending state in console for some time until the installation fails or completes successfully. Installation may fail, and you will need to refer to the setup log file for further information to troubleshoot.
+**Description:** The Discover Wizard status dialog closes but agent stays in pending state in console for some time until the installation fails or completes successfully. Installation may fail, and to help troubleshoot, refer to the setup log file.
 
 **Workaround:** None.
 
@@ -80,7 +80,7 @@ on Server 2012 – run the following in an elevated command prompt:  “C:\Windo
 
 **Workaround:** Restart the "Microsoft Monitoring Agent" service on System Center Operations Manager management server.
 
-## After updating System Center Operations Manager server or agent, Application performance monitoring (APM) events, client-side monitoring (CSM) events, and APM alerts might stop flowing from the monitored hosts
+## If after updating System Center Operations Manager server or agent, Application performance monitoring (APM) events, client-side monitoring (CSM) events, and APM alerts might stop flowing from the monitored hosts
 **Description:** The update sequence of System Center Operations Manager agent may cause an issue with the following:
 
 •	Client-side monitoring (CSM) events and alerts collected on the host.
@@ -101,13 +101,13 @@ System Center Operations Manager management server is not affected.
 
 **Workaround:** Set both the exception tracking and performance tracking settings to include the same custom namespaces.
 
-## Using sudo elevation with Solaris operating systems requires a configuration change if sudo executable is not in an expected path
-**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in the expected path, you will need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
+## When using sudo elevation with Solaris operating systems, it requires a configuration change if sudo executable is not in an expected path
+**Description:** If you want to use sudo elevation on a computer running Solaris, and the sudo executable is not in the expected path, you need to create a link to the correct path. Operations Manager will look for the sudo executable in the path /opt/sfw/bin, and then in the path /usr/bin. If sudo is not installed in one of these paths, a link is required.
 
 **Workaround:** The UNIX and Linux agent installation script creates the symbolic link /etc/opt/Microsoft/scx/conf/sudodir to the folder expected to contain sudo. The agent uses this symbolic link to access sudo. The installation script automatically creates the symbolic link, so no action is needed for standard UNIX and Linux configurations. However if sudo is installed in a non-standard location, you should change the symbolic link to point to the folder where sudo is installed. If you change the symbolic link, its value is maintained for uninstall, re-installation, and upgrade operations with the agent.
 
 ## Operations Manager Console will stop responding if you attempt to resolve a dependency while importing a management pack
-**Description:** When you click **Import Management Packs** from the Administration workspace of the Operations Manager Operations console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click **Resolve** you will see the **Dependency Warning**. If you click the **Resolve** button in the **Dependency Warning** dialog, the Operations console will stop responding.
+**Description:** When you click **Import Management Packs** from the Administration workspace of the Operations Manager Operations console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click **Resolve**, you see the **Dependency Warning**. If you click the **Resolve** button in the **Dependency Warning** dialog, the Operations console will stop responding.
 
 **Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
 
