@@ -79,7 +79,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
 ### SQL Server version support
 
-System Center 1801 - Service Manager supports 2014 SP2 (minimum) and 2016 all SPs.
+System Center 1801 - Service Manager supports SQL 2014 SP2 (minimum), 2016, and 2016 SP1.
 
   > [!NOTE]
 
