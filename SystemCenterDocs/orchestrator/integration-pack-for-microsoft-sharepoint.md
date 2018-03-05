@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 01/17/2018
+ms.date: 03/05/2018
 ms.prod: system-center-threshold
 ms.technology: orchestrator
 ms.topic: reference
@@ -30,7 +30,7 @@ The integration pack for SharePoint requires the following software to be instal
 ## Download the pack
 
 - [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
-- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=566050)
+- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
 
 ## Register and deploy the integration pack
 
