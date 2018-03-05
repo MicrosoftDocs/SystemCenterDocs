@@ -15,7 +15,7 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Configuration Manager Integration Pack for System Center 2016 - Orchestrator
+# Configuration Manager Integration Pack for System Center - Orchestrator
 
 The Integration Pack for Configuration Manager is an add-on for System Center 2016 - Orchestrator that enables you to automate common Configuration Manager management functions.
 
@@ -31,7 +31,8 @@ Before you can install the Integration Pack for Configuration Manager, you must 
 
 ## Downloading the Integration Pack
 
-To download this integration pack, see [Configuration Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
+- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
 
 ## Registering and deploying the Integration Pack
 

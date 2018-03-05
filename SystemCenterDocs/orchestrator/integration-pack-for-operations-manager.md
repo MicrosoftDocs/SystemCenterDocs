@@ -32,7 +32,8 @@ Install the Operations Manager console on each computer where an Orchestrator Ru
 
 ## Download the integration pack
 
-Download the pack from [System Center - Orchestrator Component Add-ons and Extensions](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
+- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
 
 ## Register and deploy the pack
 
