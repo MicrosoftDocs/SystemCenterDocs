@@ -1,6 +1,6 @@
 ---
 title: System Center integration pack for SharePoint
-description: This article describes the SharePoint integration pack for System Center - Orchestrator. 
+description: This article describes the SharePoint integration pack for System Center - Orchestrator.
 ms.date: 01/17/2018
 ms.prod: system-center-threshold
 ms.technology: orchestrator
@@ -10,18 +10,18 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# Integration pack for \ SharePoint
+# Integration pack for SharePoint
 
 Integration packs are add-ons for System Center - Orchestrator. They help you to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by non-Microsoft products.
 
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint, for example, to create list items, to upload and download documents, and to monitor a list for changes.
 
-[Learn more](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).about Orchestrator privacy.
+[Learn more](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx) about Orchestrator privacy.
 
 
 ## System Requirements
 
-The integration pack for SharePoint requires the following software to be installed and configured before you implement the integration. 
+The integration pack for SharePoint requires the following software to be installed and configured before you implement the integration.
 
 -   System Center - Orchestrator
 -   Microsoft .NET Framework 4
@@ -29,11 +29,12 @@ The integration pack for SharePoint requires the following software to be instal
 
 ## Download the pack
 
-Download the pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=309210).
+- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
+- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=566050)
 
 ## Register and deploy the integration pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. Learn about [installing the pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. Learn about [installing the pack](how-to-add-an-integration-pack.md).
 
 ## Configure the pack connections
 
@@ -53,4 +54,3 @@ A connection establishes a reusable link between Orchestrator and a SharePoint s
 10. In the **Default Maximum Items** box, enter a maximum value, or keep the default value.
 11. Click **OK**.
 12. Add additional connections, if applicable, and then click **Finish**.
-
