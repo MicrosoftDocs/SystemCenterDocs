@@ -35,7 +35,7 @@ To download this integration pack, see [Configuration Manager Integration Pack f
 
 ## Registering and deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Configuring the Configuration Manager Integration Pack connection settings
 

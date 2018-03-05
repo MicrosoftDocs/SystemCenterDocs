@@ -18,7 +18,7 @@ The integration pack for System Center - Operations Manager is an add-in for Sys
 
 ## System requirements
 
-The Operations Manager Integration Pack requires the following software to be installed and configured before you deploy the integration pack. 
+The Operations Manager Integration Pack requires the following software to be installed and configured before you deploy the integration pack.
 
 - System Center - Orchestrator
 - The integration pack version should match the System Center version.
@@ -36,7 +36,7 @@ Download the pack from [System Center - Orchestrator Component Add-ons and Exten
 
 ## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md).
 
 ## Configure the connections
 
@@ -44,7 +44,7 @@ A connection establishes a reusable link between Orchestrator and an Operations 
 
 
 
-1.  In the Runbook Designer, click the **Options** menu, and select Operations Manager. 
+1.  In the Runbook Designer, click the **Options** menu, and select Operations Manager.
 2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Connection Entry** dialog box appears.
 3.  In the **Name** box, type the name or IP address of the server running System Center Operations Manager.
 4.  In the **Domain** box, type the domain name of the Operations Manager server, or click the ellipsis button **(...)** to browse for the domain, select it, and then click **Add**.
@@ -52,4 +52,3 @@ A connection establishes a reusable link between Orchestrator and an Operations 
 6. In **Monitoring Intervals\\Polling**, and **Monitoring Intervals\\Reconnect** accept the default value of ten seconds, or configure the value.(default value: 10 seconds) is a configurable property.
 7.  Click **Test Connection**. When the message "Successfully connected" appears, click **OK**.
 8.  Add additional connections if applicable. Click **OK** to close the configuration dialog box, and then click **Finish**.
-

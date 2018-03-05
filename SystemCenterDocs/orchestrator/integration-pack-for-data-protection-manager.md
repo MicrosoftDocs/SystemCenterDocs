@@ -24,7 +24,7 @@ The integration pack for System Center - Data Protection Manager (DPM) is an add
 
 ## System requirements
 
-The DPM integration pack requires the following software to be installed and configured, before you implement the integration. 
+The DPM integration pack requires the following software to be installed and configured, before you implement the integration.
 
 - System Center - Orchestrator
 - System Center - Data Protection Manager (DPM)
@@ -36,7 +36,7 @@ Download the pack from [System Center - Orchestrator Component Add-ons and Exten
 
 ## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack) about installing an integration pack.
+After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md) about installing an integration pack.
 
 ## Windows Management Framework
 
@@ -46,7 +46,7 @@ The DPM integration pack uses Windows PowerShell remoting on the Runbook Designe
 
 ## Enable Windows Remote Management trusted hosts
 
-1.  On the Orchestrator computer, click **Start** >  **Run**. Then type **gpedit.msc**, and click  **OK** to open the **Local Group Policy Editor**. 
+1.  On the Orchestrator computer, click **Start** >  **Run**. Then type **gpedit.msc**, and click  **OK** to open the **Local Group Policy Editor**.
 2.  In the Local Group Policy Editor, under **Local Computer Policy**, expand **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Remote Management (WinRM)** > **WinRM Client**. Double-click **Trusted Hosts**.
 3.  Select **Enabled**, and add the name or IP address of the DPM server to the box below **Trusted Hosts List**. Then, click **OK**.
 

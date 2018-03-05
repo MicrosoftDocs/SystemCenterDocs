@@ -33,14 +33,14 @@ Download the pack from [System Center - Orchestrator Component Add-ons and Exten
 
 ## Register and deploy the pPack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. [Learn more](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack) about installing an integration pack.
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md) about installing an integration pack.
 
 ## Configure the connections
 
 A connection establishes a reusable link between Orchestrator and a Service Manager Server. You can create as many connections as you need to specify links to multiple servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
 
-1.  In the Runbook Designer, click the **Options** menu, and select Service Manager. 
+1.  In the Runbook Designer, click the **Options** menu, and select Service Manager.
 2.  On the **Connections** tab, click **Add** to begin the connection setup.
 3.  In the **Name** box, enter a name for the connection. This could be the name of the Service Manager server, or a descriptive name to distinguish the type of connection.
 4.  In the **Server** box, click the ellipsis button **(...)**. Select the Service Manager server, and then click **OK**.

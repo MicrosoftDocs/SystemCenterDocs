@@ -32,7 +32,7 @@ The VMM Integration Pack requires the following software to be installed and con
 -   System Center - Orchestrator
 -   The integration pack and System Center components should be the same version.
 -   System Center - Virtual Machine Manager (VMM)
--   Windows Management Framework 
+-   Windows Management Framework
 
 The activities from the VMM Integration Pack connect to a VMM Console, which in turn connects to a VMM management server. You can install this console on the Orchestrator runbook server or connect to the Administration console on another computer. If the Orchestrator components and the VMM Administration Console are installed on the same 64-bit computer, the VMM server must be in the same domain to be able to connect to it.
 
@@ -42,7 +42,7 @@ Download the pack from [System Center - Orchestrator Component Add-ons and Exten
 
 ## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. [Learn more](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack) about installation.
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md) about installation.
 
 ## Configure Windows Management Framework
 
