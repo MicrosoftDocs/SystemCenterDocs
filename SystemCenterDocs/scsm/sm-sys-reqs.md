@@ -26,7 +26,8 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 - System Center 2012 R2 Virtual Machine manager
 - System Center 2012 R2 Orchestrator
 - System Center 2012 R2 Operations Manager
-- System Center 2012 R2 Configuration Manager (including SCCM 1511, 1602 and 1606)
+- System Center 2012 R2 Configuration Manager
+- System Center Configuration Manager CB releases - 1511, 1602, 1606 and 1710
 
 ## Hardware
 
@@ -133,4 +134,3 @@ The table summarises support for SQL Server 64-bit Enterprise and Standard versi
 ## Next steps
 - [Learn about](deploy-topo-scenarios.md) the tested limits for Service Manager deployment scenarios.
 - Read about [hardware performance](plan-hardware-perf.md).
-
