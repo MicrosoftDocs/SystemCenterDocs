@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2017
+ms.date: 3/5/2018
 title:  Back up the DPM server
 ms.technology:  data-protection-manager
 ms.assetid:  e5a31d08-e483-4dda-abd3-1b562656b24f
@@ -41,6 +41,9 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 Back up a primary DPM server using a secondary DPM server:
 
 1.  Install the DPM protection agent on each primary DPM server that you want to protect. No restart is required.
+> [!IMPORTANT]
+> Major and minor versions of the Primary and Secondary DPM servers must match.
+>
 
 2.  Add the primary DPM server to an existing protection group, or create a new one. Select to protect the following data sources:
 

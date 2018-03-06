@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2016
+ms.date: 3/5/2018
 title:  Deploy protection groups
 ms.technology:  data-protection-manager
 ms.assetid:  2a4f4ec8-6185-4fe9-8120-e4dc3b6c9409
@@ -53,6 +53,8 @@ There are a few common ways to organize your protection groups:
 
 -   **By data characteristics** - For example how often data changes, how rapidly it grows, or its storage requirements.
 
+## Choosing a name for the protection group
+When choosing a name for your Protection Group, the name should be meaningful. The name must be unique to the DPM server. The Protection Group name can include any combination of alphanumeric characters and spaces, but it cannot be longer than 64 characters. DPM does not support special characters such as `|`, `/`, `(`, `)`, or `.`.
 
 ## Figure out how much storage space you need
 When you create a protection group and select disk-based protection, you must allocate space on the storage pool for the replicas and recovery points for each data source that you have selected for membership in the group, and you must allocate space on protected file servers or workstations for the change journal.
