@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 2/8/2018
+ms.date: 3/5/2018
 title:  Installing DPM
 ms.technology:  data-protection-manager
 ms.assetid:  85d424ba-123b-4158-8833-5bc04ea145db
@@ -16,11 +16,10 @@ ms.author: markgal
 
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
-1.  Read the [Setup prerequisites](#setup-prerequisites)
-
-2.  [Set up a SQL Server database](#BKMK_SQL) to store DPM settings and configuration information.
-
-3.  Set up DPM. You can [Install DPM](#BKMK_Install) from the user interface, or [Run an unattended install](#BKMK_Unattend). Follow these instructions if you want to [Install DPM on a domain controller](#BKMK_DC)
+1. Read the [Setup prerequisites](#setup-prerequisites)
+2. Verify the [DPM operating system](prepare-environment-for-dpm.md#dpm-server) is compatible.
+3. [Set up a SQL Server database](#BKMK_SQL) to store DPM settings and configuration information.
+4. Set up DPM. You can [Install DPM](#BKMK_Install) from the user interface, or [Run an unattended install](#BKMK_Unattend). Follow these instructions if you want to [Install DPM on a domain controller](#BKMK_DC)
 
 ## Setup prerequisites
 
