@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 03/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -20,6 +20,10 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 > Although SQL Server Reporting Services is installed on the stand-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console. If you want to access published reports via the web console, you must install the Operations Manager web console on the same computer as Operations Manager Reporting server.
 
 You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
+
+>[!NOTE]
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Reporting services role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+>
 
 ## Installing Operations Manager reporting
 

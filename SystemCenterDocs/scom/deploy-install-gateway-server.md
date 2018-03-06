@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Gatewa
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/16/2018
+ms.date: 03/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -19,6 +19,10 @@ Gateway servers are used to enable agent-management of computers that are outsid
 Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication.
 
 You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+
+>[!NOTE]
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+>
 
 ## How to deploy a gateway server
 
