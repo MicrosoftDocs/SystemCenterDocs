@@ -27,7 +27,7 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 - System Center 2012 R2 Orchestrator
 - System Center 2012 R2 Operations Manager
 - System Center 2012 R2 Configuration Manager
-- SCCM CB Releases (including 1511, 1602, 1606 and 1710)
+- System Center Configuration Manager CB releases - 1511, 1602, 1606 and 1710
 
 ## Hardware
 
