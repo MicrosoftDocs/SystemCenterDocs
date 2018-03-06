@@ -31,7 +31,8 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 - System Center 2012 R2/2016 Virtual Machine manager
 - System Center 2012 R2/2016 Orchestrator
 - System Center 2012 R2/2016 Operations Manager
-- System Center 2012 R2/2016 Configuration Manager (including SCCM 1511, 1602 and 1606)
+- System Center 2012 R2/2016 Configuration Manager
+- SCCM CB releases (including 1511, 1602, 1606 and 1710)
 
 ## Hardware
 
