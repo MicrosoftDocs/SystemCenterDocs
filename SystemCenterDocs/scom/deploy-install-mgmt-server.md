@@ -5,7 +5,7 @@ description: This article describes how to install an Operations Manager managem
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/15/2018
+ms.date: 03/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -19,6 +19,10 @@ In System Center Operations Manager, the first feature you install is the manage
 You must ensure that your server meets the minimum system requirements for System Center Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
 
 Once you have installed the first management server and created the management group, you can follow the steps for installing an additional management server if you are planning to include additional management servers to provide high availability and increased capacity for your monitoring workloads.  
+
+>[!NOTE]
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+>
 
 ### To install the first management server in the management group
 
