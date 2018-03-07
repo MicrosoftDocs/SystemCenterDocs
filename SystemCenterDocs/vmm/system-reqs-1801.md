@@ -90,7 +90,7 @@ These components should be installed on the server, before you install VMM.
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
 Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn&#39;t exceed 15 characters. | A computer with the VMM console installed should be a domain member.
-Windows ADK | Available in the [Download Center](https://go.microsoft.com/fwlink/p/?LinkID=263698) | Not applicable
+Windows ADK | [Download](https://docs.microsoft.com/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 | Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 .NET | 4.6 | 4,5, 4.5.1, 4.5.2, 4.6
 
