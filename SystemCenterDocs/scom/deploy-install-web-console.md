@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/02/2018
+ms.date: 03/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -54,6 +54,10 @@ The local and remote parameters are as follows:
 > If you run **Repair** on the web console after installation, the settings that were selected during installation will be restored. Any changes that you manually make to the web console configuration after the installation will be reset.
 
 ### To install a stand-alone Web console
+
+>[!NOTE]
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Web console role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+
 
 1.  Log on to the computer that will host the web console with an account that has local administrative credentials.
 
