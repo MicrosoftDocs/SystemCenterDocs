@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 03/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -26,6 +26,10 @@ Perform the following steps to enable TLS protocol version 1.2:
 7. Configure Operations Manager to only use TLS 1.2.  
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is required to enable TLS 1.2.  If CA-signed certificates are used, make sure that the certificates are either SHA1 or SHA2.
+
+>[!NOTE]
+>If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+>
 
 ## Configure Windows to only use TLS 1.2 protocol
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
