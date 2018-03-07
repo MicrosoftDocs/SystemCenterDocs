@@ -323,7 +323,7 @@ In the following procedure, you configure a schedule for the Transform job to ru
 
 You can process all the dimensions in the data warehouse in one operation using Windows PowerShell cmdlets, instead of processing each dimension individually. On the server that hosts SQL Server Analysis Services (SSAS), use the following Windows PowerShell script. Be sure to specify the fully qualified server name. You can type each command separately, or you can save them all as a Windows PowerShell script (.ps1) file and then run the script.
 
-Before you can use Service Manager cmdlets, you need to configure the Service Manager Shell. For information about configuring the Service Manager Shell, see [Configuring and Using the System Center 2016 - Service Manager Cmdlets for Windows PowerShell](sm-cmdlets.md).
+Before you can use Service Manager cmdlets, you need to configure the Service Manager Shell. For information about configuring the Service Manager Shell, see [Configuring and Using the System Center - Service Manager Cmdlets for Windows PowerShell](sm-cmdlets.md).
 
 ### To process all dimensions using cmdlets
 
