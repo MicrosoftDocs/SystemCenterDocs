@@ -90,7 +90,7 @@ The following table helps you identify the firewall ports required by SQL Server
 | SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server and Web console (for Application Advisor and Application Diagnostics) | 
 | SQL Server Browser service | UDP 1434 | Inbound | management server |
 | SQL Server Dedicated Admin Connection | TCP 1434 | Inbound | management server | 
-| SQL Server hosting Operations Manager databases<br> - Microsoft remote procedure calls (MS RPC)<br> - Windows Management Instrumentation (WMI)<br> - Microsoft Distributed Transaction Coordinator (MS DTC)| TCP 135 | Inbound | management server | 
+| Additional ports used by SQL Server<br> - Microsoft remote procedure calls (MS RPC)<br> - Windows Management Instrumentation (WMI)<br> - Microsoft Distributed Transaction Coordinator (MS DTC)| TCP 135 | Inbound | management server | 
 | SQL Server Always On Availability Group Listener | Administrator configured port | Inbound | management server
 | SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console |  
 
