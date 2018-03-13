@@ -36,6 +36,7 @@
 #### [How to install the Operations Manager Web console](deploy-install-web-console.md)
 #### [How  to install an Audit Collection Services](ACS) Collector and database](deploy-install-acs.md)
 #### [How to install the Operations Manager Reporting server](deploy-install-reporting-server.md)
+#### [Connect to the Data Warehouse across a firewall](deploy-connect-reportingdw-firewall.md) 
 #### [How to install a gateway server](deploy-install-gateway-server.md)
 ### [Upgrading System Center Operations Manager](deploy-upgrade-overview.md)
 #### [Pre-Upgrade tasks when upgrading Operations Manager](deploy-upgrade-pretasks.md)
