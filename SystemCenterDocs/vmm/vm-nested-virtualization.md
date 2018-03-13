@@ -40,13 +40,13 @@ Administrators/delegated administrators can configure nested virtualization by u
 
 **Use the following steps**:
 
-- [Enable nested virtualization on a  VM](#enable-nested-virtualization-on-an-existing-virtual-machine)
-- [Configure the VM as a host in VMM](#configure-the-nested VM-as-a-host)
+- [Enable nested virtualization on a VM](#enable-nested-virtualization-on-an-existing-virtual-machine)
+- [Configure the VM as a host in VMM](#configure-the-nested-vm-as-a-host)
 
 ### Enable nested virtualization on an existing virtual machine
 
 
-1.	Identify the VM that meets the above [pre-requisites](#before-you-start).
+1.	Identify the VM that meets the above [prerequisites](#before-you-start).
 2.	Ensure the VM is in **stopped** state.
 
     ![stopped VM](media/nested-vm/nested-vm-stopped-state.png)
@@ -86,7 +86,7 @@ Administrators/delegated administrators can configure nested virtualization by u
 1.	Select the host or VM for which nested virtualization is enabled.
 2.	Ensure the VM is in **stopped** state. Stop the VM if it is running.
 3.	Browse the VM **Properties**.
-4.	On **General**, clear the **Enable Nested Virtualization** CheckBox.
+4.	On **General**, clear the **Enable Nested Virtualization** check box.
 
     >[!NOTE]
 
