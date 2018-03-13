@@ -14,7 +14,7 @@ ms.topic: article
 
 # Connecting to the Reporting Data Warehouse Across a Firewall
 
-This section describes how to configure your environment to support placing a Report data warehouse behind a firewall for System Center Operations Manager.
+This section describes how to configure your environment to support placing the Report data warehouse behind a firewall for System Center Operations Manager.
 
 In an environment where the Reporting data warehouse is separated from the management server and Reporting server by a firewall, Windows Integrated Authentication cannot be used. You need to configure SQL Server Authentication. The following sections explain how to enable SQL Server Authentication between the management server, the Reporting server, and the Reporting data warehouse, as shown in the following illustration:<br><br> ![SQL Authentication](media/deploy-connect-reportingdw-firewall/reportingdw-firewall-comms.png)
 
