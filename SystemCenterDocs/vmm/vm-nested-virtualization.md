@@ -41,7 +41,7 @@ Administrators/delegated administrators can configure nested virtualization by u
 **Use the following steps**:
 
 - [Enable nested virtualization on a VM](#enable-nested-virtualization-on-an-existing-virtual-machine)
-- [Configure the VM as a host in VMM](#configure-the-nested VM-as-a-host)
+- [Configure the VM as a host in VMM](#configure-the-nested-vm-as-a-host)
 
 ### Enable nested virtualization on an existing virtual machine
 
