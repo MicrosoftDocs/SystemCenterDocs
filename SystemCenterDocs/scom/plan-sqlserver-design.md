@@ -37,7 +37,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 Additional hardware and software considerations apply in your design planning:
 
 -  We recommend that you run SQL Server 2012, 2014, and 2016 on computers with the NTFS file format. 
--  There must be at least 1024 MB of free disk space for the operational and data warehouse database. This is enforced at the time of database creation, and it will likely grow significantly after setup.  
+-  There must be at least 1024 MB of free disk space for the operational and data warehouse database. It is enforced at the time of database creation, and it will likely grow significantly after setup.  
 -  .NET Framework 4 is required. 
 -  Reporting Server is not supported on Windows Server Core.
 
@@ -78,7 +78,7 @@ Please note that if your SQL Server instance is not configured with one of the s
 
 ## Firewall configuration
 
-Operations Manager depends on SQL Server to host its databases and a reporting platform to analyze and present historical operational data.  The management server, Operations and Web console roles need to be able to successfully communicate with SQL Server, and it is important to understand the communication path and ports in order to configure your environment correctly.  
+Operations Manager depends on SQL Server to host its databases and a reporting platform to analyze and present historical operational data.  The management server, Operations, and Web console roles need to be able to successfully communicate with SQL Server, and it is important to understand the communication path and ports in order to configure your environment correctly.  
 
 If you are designing a distributed deployment that will require SQL Always On Availability Groups to provide failover functionality for the Operations Manager databases, there are additional firewall configuration settings that need to be included in your firewall security strategy.   
 
@@ -96,7 +96,7 @@ The following table helps you identify the firewall ports required by SQL Server
 
 \* While TCP 1433 is the standard port for the default instance of the Database Engine, if you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.      
 
-For a more detailed overview of the firewall requirements for SQL Server, please see [Configure the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/library/cc646023.aspx).
+For a more detailed overview of the firewall requirements for SQL Server, see [Configure the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/library/cc646023.aspx).
 
 ## Capacity and storage considerations
 
@@ -121,11 +121,11 @@ Factors that influence the load on the Reporting data warehouse include:
 - Rate of operational data collection.  To allow for more efficient reporting, the Reporting data warehouse computes and stores aggregated data in addition to a limited amount of raw data.  Doing this extra work means that operational data collection to the Reporting data warehouse can be slightly more costly than to the Operations Manager database.  This additional cost is typically balanced by the reduced cost of processing discovery data by the Reporting data warehouse versus the Operations Manager database.
 - Number of concurrent reporting users or scheduled report generation.  Because reports frequently summarize large volumes of data, each reporting user can add a significant load on the system.  The number of reports run simultaneously and the type of reports being run both affect overall capacity needs.  Generally, reports that query large date ranges or large numbers of objects require additional system resources.
 
-Based on these factors, there are several best practices to consider when sizing the Reporting data warehouse:
+Based on these factors, there are several recommended practices to consider when sizing the Reporting data warehouse:
 
-- Choose an appropriate storage subsystem.  Because the Reporting data warehouse is an integral part of the overall data flow through the management group, choosing an appropriate storage subsystem for the Reporting data warehouse is very important.  As with the Operations Manager database, RAID 0 + 1 is often the best choice.  In general, the storage subsystem for the Reporting data warehouse should be similar to the storage subsystem for the Operations Manager database, and the guidance that applies to the Operations Manager database also applies to the Reporting data warehouse.
+- Choose an appropriate storage subsystem.  Because the Reporting data warehouse is an integral part of the overall data flow through the management group, choosing an appropriate storage subsystem for the Reporting data warehouse is important.  As with the Operations Manager database, RAID 0 + 1 is often the best choice.  In general, the storage subsystem for the Reporting data warehouse should be similar to the storage subsystem for the Operations Manager database, and the guidance that applies to the Operations Manager database also applies to the Reporting data warehouse.
 - Consider appropriate placement of data logs vs. transaction logs.  As for the Operations Manager database, separating SQL data and transaction logs are often an appropriate choice as you scale up the number of agents.  If both the Operations Manager database and Reporting data warehouse are located on the same server and you want to separate data and transaction logs, you must put the transaction logs for the Operations Manager database on a separate physical volume and disk spindles from the Reporting data warehouse to receive any benefit.  The data files for the Operations Manager database and Reporting data warehouse can share the same physical volume as long as the volume provides adequate capacity and disk I/O performance does not negatively impact monitoring and reporting functionality.
-- Consider placing the Reporting data warehouse on a separate server from the Operations Manager database.  Although smaller-scale deployments can often consolidate the Operations Manager database and Reporting data warehouse on the same server, it is advantageous to separate them as you scale up the number of agents and the volume of incoming operational data.  This is because better reporting performance results when the Reporting data warehouse and Reporting Server are on a separate server from the Operations Manager database.
+- Consider placing the Reporting data warehouse on a separate server from the Operations Manager database.  Although smaller-scale deployments can often consolidate the Operations Manager database and Reporting data warehouse on the same server, it is advantageous to separate them as you scale up the number of agents and the volume of incoming operational data.  When the Reporting data warehouse and Reporting Server are on a separate server from the Operations Manager database, you experience better reporting performance.
 
 The Operations Manager data warehouse database is a single source of failure for the management group, so it can be made highly available using supported failover configurations such as SQL Server Always On Availability Groups or Failover Cluster Instances.  
 
@@ -312,7 +312,7 @@ In virtual environments, for performance reasons, it is recommended that you sto
 
 ### Always On and recovery model
 
-Although not strictly an optimization, an important consideration regarding Always On Availability Group is the fact that, by design, this feature require the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done, or only the transaction log.
+Although not strictly an optimization, an important consideration regarding Always On Availability Group is the fact that, by design, this feature requires the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done, or only the transaction log.
 For this reason, a backup strategy is not an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs will fill up. 
 
 A backup strategy must take into account the details of your environment. A typical backup schedule is given in the following table.
