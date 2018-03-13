@@ -30,4 +30,5 @@ Welcome to System Center Virtual Machine Manager (VMM)! VMM is part of the Syste
 
 ## Next steps
 
-[Learn about](system-reqs.md) system requirements for VMM 2016
+- [Learn about](system-reqs.md) system requirements for VMM 2016
+- [Learn about](system-reqs-1801.md) system requirements for VMM 1801
