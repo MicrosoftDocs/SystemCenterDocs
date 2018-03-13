@@ -41,7 +41,7 @@ Additional hardware and software considerations apply in your design planning:
 -  .NET Framework 4 is required. 
 -  Reporting Server is not supported on Windows Server Core.
 
-For additional information, please see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
+For additional information, see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
 
 > [!NOTE]
 > During the initial installation of the operational database, only use Windows Authentication on the SQL Server that hosts the Operations Manager operational database. Do not use Mixed Mode (Windows Authentication and SQL Server Authentication) because using SQL Server Authentication mode during the initial installation of the operational database can cause issues. Although enabling Mixed Mode security is possible on the SQL Server hosting the Operations Manager operational database, it is not supported as all contact with the database is accomplished using Windows accounts only.  
@@ -94,7 +94,7 @@ The following table helps you identify the firewall ports required by SQL Server
 | SQL Server Always On Availability Group Listener | Administrator configured port | Inbound | management server
 | SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console |  
 
-\* While TCP 1433 is the standard port for the default instance of the Database Engine, if you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.      
+\* While TCP 1433 is the standard port for the default instance of the Database Engine, when you create a named instance on a standalone SQL Server or have deployed a SQL Always On Availability Group, a custom port will be defined and should be documented for reference so that you properly configure your firewalls and enter this information during setup.      
 
 For a more detailed overview of the firewall requirements for SQL Server, see [Configure the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/library/cc646023.aspx).
 
@@ -114,7 +114,7 @@ The Operations Manager database is a single source of failure for the management
 
 ### Operations Manager data warehouse database
 
-System Center 2016 – Operations Manager inserts data into the Reporting data warehouse in near-real time, it is important to have sufficient capacity on this server that supports writing all of the data that is being collected to the Reporting data warehouse.  As with the Operations Manager database, the most critical resource on the Reporting data warehouse is the storage I/O subsystem.  On most systems, loads on the Reporting data warehouse are similar to those on the Operations Manager database, but they can vary.  In addition, the workload put on the Reporting data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
+System Center 2016 – Operations Manager inserts data into the Reporting data warehouse in near-real time, it is important to have sufficient capacity on this server that supports writing all of the data that is being collected to the Reporting data warehouse.  As with the Operations Manager database, the most critical resource on the Reporting data warehouse is the storage I/O subsystem.  On most systems, loads on the Reporting data warehouse are similar to the Operations Manager database, but they can vary.  In addition, the workload put on the Reporting data warehouse by reporting is different than the load put on the Operations Manager database by Operations console usage.
 
 Factors that influence the load on the Reporting data warehouse include:
 
