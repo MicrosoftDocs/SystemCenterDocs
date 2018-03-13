@@ -78,7 +78,7 @@ Please note that if your SQL Server instance is not configured with one of the s
 
 ## Firewall configuration
 
-Operations Manager depends on SQL Server to host its databases and a reporting platform to analyze and present historical operational data.  The management server, Operations and Web console roles need to be able to successfully communicate with SQL Server, and its important to understand the communication path and ports in order to configure your environment correctly.  
+Operations Manager depends on SQL Server to host its databases and a reporting platform to analyze and present historical operational data.  The management server, Operations and Web console roles need to be able to successfully communicate with SQL Server, and it is important to understand the communication path and ports in order to configure your environment correctly.  
 
 If you are designing a distributed deployment that will require SQL Always On Availability Groups to provide failover functionality for the Operations Manager databases, there are additional firewall configuration settings that need to be included in your firewall security strategy.   
 
@@ -247,6 +247,7 @@ To configure tempdb, you can run the following query or modify its properties in
    ```
 
 Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the waitresource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
+
 If the previous recommendations do not significantly reduce the allocation contention and the contention is on SGAM pages, implement trace flag -T1118 in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages. Note that this trace flag affects every database on the instance of SQL Server.
 
 
@@ -273,7 +274,7 @@ Note In this configuration, N represents the number of processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server is a HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database has a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved, however there continued to be a query parallelism bottleneck.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was a HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, there continued to be a query parallelism bottleneck.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 
@@ -307,8 +308,7 @@ It is important to understand that there is no right answer here, and the optimi
 
 ### Virtualizing SQL Server
 
-In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task . 
-See also [Operations Manager virtualization support](plan-system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
+In virtual environments, for performance reasons, it is recommended that you store the operational database and data warehouse database on a direct attached storage, and not on a virtual disk. Always use the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  to estimate required IOPS, and stress test your data disks to verify. You can leverage the SQLIO tool for this task.  See also [Operations Manager virtualization support](plan-system-requirements.md#virtualization) for additional guidance on virtualized Operations Manager environment.  
 
 ### Always On and recovery model
 
