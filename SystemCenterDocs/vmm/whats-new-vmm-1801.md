@@ -51,7 +51,7 @@ In our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs,
 
 Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
 
-VMM 1801 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. Learn more.
+VMM 1801 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](enhanced-console-session.md).
 
 ## Storage
 

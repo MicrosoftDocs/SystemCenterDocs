@@ -28,7 +28,7 @@ SCVMM 1801 supports guest clustering in SDN through an Internal Load Balancer(IL
 
 Ensure the following prerequisite:
 
-Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](#sdn-controller.md) and [SLB](#sdn-slb.md).   
+Guesting clustering is managed through the SDN NC. Ensure you have set up SDN and [deployed NC](sdn-controller.md) and [SLB](sdn-slb.md).   
 
 ## Procedure - configure guest clusters
 
