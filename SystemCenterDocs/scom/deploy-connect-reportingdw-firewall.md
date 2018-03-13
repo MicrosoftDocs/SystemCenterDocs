@@ -14,13 +14,13 @@ ms.topic: article
 
 # Connecting to the Reporting Data Warehouse Across a Firewall
 
-This section describes how to configure your environment to support the placing of a Report data warehouse behind a firewall for System Center Operations Manager.
+This section describes how to configure your environment to support placing a Report data warehouse behind a firewall for System Center Operations Manager.
 
 >[!NOTE]
 >Separating the Operations console, management server, or Reporting Server by either a firewall or across a trust boundary is not supported.
 >
 
-In an environment where the Reporting data warehouse is separated from the management server and Reporting server by a firewall, Windows Integrated Authentication cannot be used. You need to take steps to configure SQL Server Authentication. The following sections explain how to enable SQL Server Authentication between the management server (or management server), the Reporting Server, and the Reporting data warehouse, as shown in the following illustration.<br><br> ![SQL Authentication](media/deploy-connect-reportingdw-firewall/reportingdw-firewall-comms.png)
+In an environment where the Reporting data warehouse is separated from the management server and Reporting server by a firewall, Windows Integrated Authentication cannot be used. You need to configure SQL Server Authentication. The following sections explain how to enable SQL Server Authentication between the management server, the Reporting server, and the Reporting data warehouse, as shown in the following illustration:<br><br> ![SQL Authentication](media/deploy-connect-reportingdw-firewall/reportingdw-firewall-comms.png)
 
 ## Management Server and Reporting Data Warehouse
 
@@ -41,14 +41,14 @@ If there is a firewall or trust boundary between the Reporting Server and the Re
 
 The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server, and it is this account that will be used to connect to the Reporting data warehouse.
 
-You should determine what port number the computer running SQL Server on the Reporting data warehouse is using and enter this number into the **dbo.MT_DataWarehouse** table in the Operations Manager database. See the article, [How to Configure the Reporting Data Warehouse to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-reporting-data-warehouse-database).
+Identify what port number the computer running SQL Server on the Reporting data warehouse is using and enter this number into the **dbo.MT_DataWarehouse** table in the Operations Manager database. See the article, [How to Configure the Reporting Data Warehouse to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-reporting-data-warehouse-database).
 
 ## Reporting Server and Management Server Separated by a Firewall
 
-A "Could not verify if current user is in sysadmin Role" error message might display when installing the Reporting server role if the reporting server and the management server are separated by a firewall. This error message might display even if the proper firewall ports have been opened. This error occurs after entering the computer name for the management server and clicking **Next**. This error might also display because Reporting Setup was unable to connect to the operational database. In this environment you must determine what port number the SQL Server instance is using and configure the Operations Manager database to use the port number. See the article, [How to Configure the Operations Manager Database to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-operational-database).
+A "Could not verify if current user is in sysadmin Role" error message might display when installing the Reporting server role if the reporting server and the management server are separated by a firewall. This error message might display even if the proper firewall ports have been opened. This error occurs after entering the computer name for the management server and clicking **Next**. This error might also display because Reporting Setup was unable to connect to the operational database. In this environment, determine what port number the SQL Server instance is using and configure the Operations Manager database to use the port number. See the article, [How to Configure the Operations Manager Database to Listen on a Specific TCP IP Port](manage-sqlserver-communication.md#how-to-configure-the-operations-manager-operational-database).
 
 ## Next steps
 
-* Review the list of [reports installed with Operations Manager](manage-reports-installed-during-setup.md) to understand the different types of reports that are available and their purpose. 
+* Review the list of [reports installed with Operations Manager](manage-reports-installed-during-setup.md), to understand the different types of reports that are available and their purpose. 
 
 * [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats. 
