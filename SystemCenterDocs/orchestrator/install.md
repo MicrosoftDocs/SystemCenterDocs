@@ -111,6 +111,10 @@ This topic provides detailed installation instructions for the various Orchestra
 
 5.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
+    > [!NOTE]
+
+    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
     1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
@@ -220,6 +224,10 @@ This topic provides detailed installation instructions for the various Orchestra
 5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
+
+    > [!NOTE]
+
+    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
