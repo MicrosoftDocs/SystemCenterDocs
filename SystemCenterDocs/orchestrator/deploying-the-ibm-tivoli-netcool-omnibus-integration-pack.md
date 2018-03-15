@@ -18,7 +18,7 @@ This article provides information about deploying the IBM Tivoli Netcool/OMNIbus
 
 The integration pack for IBM Tivoli Netcool/OMNIbus requires the following software to be installed and configured before to implementing the integration.
 
--   IBM Tivoli Netcool/OMNIbus 7.3
+-   IBM Tivoli Netcool/OMNIbus 7.3 or 8.1 or 8.3 
 -   32-bit Java Standard Edition 7 on each runbook server and Runbook Designer using the integration pack.
     You must manually add the location of the JVM.DLL file to the PATH environment variable.
 -   Sybase JConnect 6 JDBC drivers on each runbook server and Runbook Designer using the integration pack.

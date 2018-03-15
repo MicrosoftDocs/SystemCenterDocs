@@ -24,7 +24,7 @@ VMM 1801 supports enhanced console session. With console connected through enhan
 Ensure the following prerequisites:
 
 1.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
-2.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2.
+2.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or above. 
 3.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
 
 ## Procedure - enable the enhanced console session

@@ -14,11 +14,11 @@ ms.author: raynew
 
 # How to install System Center - Orchestrator
 
-A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines. 
+A complete Orchestrator installation includes a management server, one or more runbook servers, a SQL Server for hosting the Orchestrator database, a web server for hosting the Orchestrator web service, and a server for hosting the Runbook Designer and Runbook Tester. It is possible to install all these roles on a single computer, but it is more common to distribute the roles across several computers or virtual machines.
 
 For a detailed description of the Orchestrator architecture, see [Learn about Orchestrator](learn-about-orchestrator.md).
 
-This topic provides detailed installation instructions for the various Orchestrator roles. 
+This topic provides detailed installation instructions for the various Orchestrator roles.
 
 ## To install an Orchestrator management server
 
@@ -50,16 +50,25 @@ This topic provides detailed installation instructions for the various Orchestra
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
+    ::: moniker range="sc-orch-1801"
+
+   > [!NOTE]
+
+   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+
+   ::: moniker-end
+
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
     1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
         > [!WARNING]
+
         > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
 
-    2.  After you resolve the missing prerequisites, click **Verify prerequisites again**.
+    3.  After you resolve the missing prerequisites, click **Verify prerequisites again**.
 
-    3.  Click **Next** to continue.
+    4.  Click **Next** to continue.
 
 7.  On the **Configure the service account** page, enter the user name and password for the Orchestrator service account. Click **Test** to verify the account credentials. If the credentials are accepted, then click **Next**.
 
@@ -106,6 +115,14 @@ This topic provides detailed installation instructions for the various Orchestra
 
 5.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
+ ::: moniker range="sc-orch-1801"
+
+    > [!NOTE]
+
+    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+
+ ::: moniker-end
+
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
     1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
@@ -143,6 +160,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
     > [!NOTE]
     > Before you begin the installation of the Orchestrator web service, close any open programs and ensure that there are no pending restarts on the computer. Then log on to the computer with the same user account to finish the installation of the server role or the security update.
+
 
 2.  On the main setup page, under **Standalone installations**, click **Orchestration Console and Web Service**.
 
@@ -200,6 +218,7 @@ This topic provides detailed installation instructions for the various Orchestra
     > [!NOTE]
     > Before you begin the install of the Runbook Designer, close any open programs and ensure that there are no pending restarts on the computer. Then, log on to the computer with the same user account to finish the installation of the server role or the security update.
 
+
 2.  On the main wizard page, click **Runbook Designer**.
 
     > [!WARNING]
@@ -215,6 +234,14 @@ This topic provides detailed installation instructions for the various Orchestra
 5. On the **Diagnostic and Usage data** page, review the Diagnostic and Usage data notice, and then click **Next**.
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
+
+    ::: moniker range="sc-orch-1801"
+
+   > [!NOTE]
+
+   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+
+   ::: moniker-end
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
