@@ -121,7 +121,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
     >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
 
-::: moniker-end
+ ::: moniker-end
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
