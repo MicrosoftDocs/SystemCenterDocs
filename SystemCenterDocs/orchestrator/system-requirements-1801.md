@@ -40,11 +40,14 @@ The following versions of Windows client operating system are supported for the 
 |:--- |:---|:--- |:--- |:---|
 |Runbook Designer|Not supported|Not Supported|Not Supported|Supported
 
-## SQL Server support
+## SQL Server
 
-|Component|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard (64-bit)|
-|:--- |:---|:--- |:--- |:---|:---|
-|Management Server|Supported|Supported|Supported|Supported|Supported|
+**Operating system** | **Supported**
+--- | ---
+SQL Server 2008 R2 (SP1, SP2) | N
+SQL Server 2012 (Enterprise, Standard, 64-bit) | Y
+SQL Server 2014 and all service packs | Y
+SQL Server 2016 and SP1 | Y
 
 ## .Net requirements
 

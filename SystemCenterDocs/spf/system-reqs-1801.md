@@ -54,4 +54,4 @@ These components should be installed on the server, before you install VMM.
 
 ## Next steps
 
-[What is SPF?](~/spf/overview.md)
+[Learn more about SPF?](~/spf/overview.md)
