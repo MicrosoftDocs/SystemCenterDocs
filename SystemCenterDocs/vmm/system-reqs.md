@@ -76,8 +76,7 @@ Window Server 2016 Standard, Datacenter | Y
 **SQL version** | **Supported**
 --- | ---
 SQL Server 2008 R2 (SP1, SP2) | N
-SQL Server 2012 (Enterprise, Standard, 64-bit) | N
-SQL Server 2012 SP1 onwards | Y
+SQL Server 2012 SP4 | Y
 SQL Server 2014 and all service packs | Y
 SQL Server 2016 and SP1 | Y
 SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.

@@ -45,7 +45,7 @@ The following versions of Windows client operating system are supported for the 
 **SQL version** | **Supported**
 --- | ---
 SQL Server 2008 R2 (SP1, SP2) | N
-SQL Server 2012 (Enterprise, Standard, 64-bit) | Y
+SQL Server 2012 SP4 | Y
 SQL Server 2014 and all service packs | Y
 SQL Server 2016 and SP1 | Y
 

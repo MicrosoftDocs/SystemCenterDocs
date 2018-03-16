@@ -54,7 +54,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
    > [!NOTE]
 
-   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
    ::: moniker-end
 
@@ -119,7 +119,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
     > [!NOTE]
 
-    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook server role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
  ::: moniker-end
 
@@ -239,7 +239,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
    > [!NOTE]
 
-   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see the [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client) topic on the Microsoft Docs website.
+   >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
    ::: moniker-end
 
