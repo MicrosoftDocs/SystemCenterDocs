@@ -29,7 +29,7 @@ The following software must be installed for each role.
 |Role|Prerequisites|
 |--------|-----------------|
 |Runbook worker|Windows Server 2012 R2 or above<br /><br />Windows PowerShell 4.0 or above|
-|Automation web service|Windows Server 2012 R2 or above<br /><br />SQL Server 2012 SP2 or above (Standard or Enterprise)<br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
+|Automation web service|Windows Server 2012 R2 or above<br /><br /> SQL Server 2012 SP4 (minimum) <br /><br /> **Note**: Supports 2014 all Service packs, 2016 and SP1. <br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
 |Windows PowerShell module|Windows PowerShell 4.0 or above|
 
 

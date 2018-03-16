@@ -37,7 +37,14 @@ This article describes the hardware and software requirements for System Center 
 **Windows Server 2016 (with desktop experience)** | Y
 **Windows Server 2016 Nano** | N
 
+## SQL Server
 
+**SQL version** | **Supported**
+--- | ---
+**SQL Server 2008 R2 (SP1, SP2)** | N
+**SQL Server 2012 SP4** | Y
+**SQL Server 2014 and all service packs** | Y
+**SQL Server 2016 and SP1** | Y
 
 ## Installation components
 
