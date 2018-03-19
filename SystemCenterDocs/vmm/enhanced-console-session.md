@@ -26,7 +26,7 @@ Ensure the following prerequisites:
 1.  The operating system of the host, on which the VM is running, should be Windows Server 2016 and above.
 2.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
 3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or above.
-4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
 
 ## Procedure - enable the enhanced console session
 
