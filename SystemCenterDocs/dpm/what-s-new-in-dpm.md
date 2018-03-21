@@ -20,7 +20,7 @@ Before you begin, check the [Release Notes for System Center DPM](dpm-release-no
 
 ## New features in DPM 1801
 
-If you install System Center DPM 1801, then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups. 
+If you install [System Center DPM 1801](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/), then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups. 
 
 ::: moniker-end
 
