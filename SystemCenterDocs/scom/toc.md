@@ -188,6 +188,7 @@
 ### Manage Alerts
 #### [How heartbeats work](manage-agent-heartbeat-overview.md)
 #### [Resolving heartbeat alerts](manage-agent-resolve-heartbeat.md)
+#### [Configure ping computer recovery task from gateway servers](manage-heartbeat-failure-gateway-config.md)
 #### [How an alert is produced](manage-alert-generation-overview.md)
 #### [Viewing active alerts and details](manage-alert-view-alerts-details.md)
 #### [Examine properties of alerts, rules, and monitors](manage-examine-properties-of-workflows.md)

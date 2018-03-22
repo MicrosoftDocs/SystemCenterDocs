@@ -5,7 +5,7 @@ description: This article describes how Operations Manager monitors communicatio
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 03/16/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -21,7 +21,12 @@ When an agent fails to send a heartbeat 4 times, a **Health Service Heartbeat Fa
 When you see both alerts, you know the computer cannot be contacted by the management server. When you see only the heartbeat failure alert, you know the computer can be contacted but there is a problem with the agent. Both alerts are closed automatically when heartbeats resume.  
   
 > [!NOTE]  
-> By default, alerts for missed heartbeats and response to ping are disabled for client operating systems. To receive alerts for client operating systems, override the **Health Service Heartbeat Failure** and **Computer Not Reachable** monitors for the class **Windows Client Operating System** to set the **Generates Alert** parameter to **True**.  
+> By default, alerts for missed heartbeats and response to ping are disabled for client operating systems. To receive alerts for client operating systems, override the **Health Service Heartbeat Failure** and **Computer Not Reachable** monitors for the class **Windows Client Operating System** and set the **Generates Alert** parameter to **True**.  
+
+For agents reporting to a gateway server, you need to configure the **Automatic Agent Management Account** that is used to automatically diagnose agent failures (eg. heartbeat failures, failure to receive data) so the RunAs account has privileges to both the Management Server and the gateway.  Otherwise, the recovery task will fail on a gateway server.  This scenario is only supported if:
+
+1. The gateway server is a member of an Active Directory trusted forest, but outside the Kerberos trust boundary of the management group.
+2. The gateway server is a member of the same Active Directory forest as the Operations Manager management servers.  The gateway server in this case is used because of a firewall or member of a local resource pool.
   
 The health state for the agent-managed computer will change to critical (red) when the **Health Service Heartbeat Failure** alert is generated. To view details for the health state, right-click the computer in **Active Alerts**, point to **Open**, and click **Health Explorer**. The Availability node will be expanded to display the critical item. Click **Health Service Heartbeat Failure**, and then click the **State Change Events** tab. You will see a list of state changes with the date and time of occurrence. Select any occurrence to display information in the **Details** pane. The health state will change to healthy (green) when heartbeats resume.  
   
@@ -32,5 +37,7 @@ You can also override the global heartbeat interval for individual agents and th
 ## Next steps  
 
 - To learn more about how to investigate an agent heartbeat failure and ways to resolve them, review [Resolving Heartbeat Alerts](manage-agent-resolve-heartbeat.md)  
+
+- Review [Configure Computer Not Reachable Recovery Task for Gateway Servers](manage-heartbeat-failure-gateway-config.md) when agents report to a gateway server in a secure network environment.   
 
   

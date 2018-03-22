@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/13/2018
+ms.date: 03/16/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -85,7 +85,7 @@ For detailed instructions for specifying credentials and configuring accounts, s
 
 ### Authentication with gateway server
 
-Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of management groups.  Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication. 
+Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group.  Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication. 
 
 This requires you to request certificates for each agent that will report to a gateway server and import those certificates into the target computer using the MOMCertImport.exe tool, which is located on the installation media SupportTools\ (amd64 or x86) directory.  You need to have access to a certification authority (CA) which can be a public CA such as VeriSign, or you can use Microsoft Certificate Services.  
 
