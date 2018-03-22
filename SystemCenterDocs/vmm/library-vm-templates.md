@@ -63,7 +63,7 @@ You can create VMs based on the template you've just created.
 
 ## Assign a storage QoS policy template
 
-1. After step 3 in the [previous procedure](#create-a-VM-template-based-on-a-vm-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
+1. After step 3 in the [previous procedure](#create-a-vm-template-based-on-a-vm-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
 
 2. Proceed with rest of the steps to complete the wizard.
 
