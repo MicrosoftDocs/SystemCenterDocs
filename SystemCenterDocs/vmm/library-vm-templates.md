@@ -35,7 +35,7 @@ There are two methods for creating a VM template:
 - If you grant rights for a particular template to a user that does not have rights to the Run As account that's specified in the template, then the user can potentially extract the credentials for the Run As account from the template during deployment.
 - Before creating a template based on a VM, you'll need to create a new local administrator account on that VM. Using the default built-in administrator account will cause Sysprep to fail. In addition, make sure that the VM isn't joined to a domain.
 
-### Create a VM template based on an existing VHD or VM template in the library
+## Create a VM template based on an existing VHD or VM template in the library
 
 1. Click **Library** > **Create** > **Create VM Template**.
 2. In  the Create VM Template Wizard, select **Source** > **Use an existing VM template or virtual hard disk stored in the library**. Select the disk or template in **Select VM Template Source**.
@@ -46,7 +46,7 @@ There are two methods for creating a VM template:
 7. In **Summary** review the settings and click **View Script** if you want to see the script that will be used to create the template. Then click **Create**. In **Jobs** you can track the template being created. Wait for the **Completed** status.
 8. When you create a VM you'll be able to create it based on the template you've just created.
 
-### Create a VM template based on a VM deployed on a host
+## Create a VM template based on a VM deployed on a host
 
 1. Click **Library** > **Create** > **Create VM Template**.
 2. In  the Create VM Template Wizard > select **Source** > **From an existing virtual machine that is deployed on a host**. Select the VM in **Select VM Template Source**.
@@ -61,9 +61,9 @@ You can create VMs based on the template you've just created.
 
 ::: moniker range="sc-vmm-1801"
 
-### Assign a storage QoS policy template
+## Assign a storage QoS policy template
 
-1. After step 3 in the [previous procedure](#Create-a-VM-template-based-on-a-VM-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
+1. After step 3 in the [previous procedure](#create-a-vm-template-based-on-a-vm-deployed-on-a-host), in **Configure Hardware**, click  **Advanced** under **Bus configuration** and select appropriate option under **Storage QoS Policy**.
 
 2. Proceed with rest of the steps to complete the wizard.
 
