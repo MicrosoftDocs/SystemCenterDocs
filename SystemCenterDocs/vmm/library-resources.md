@@ -1,7 +1,7 @@
 ---
-ms.assetid: a3c877d9-c9f5-449f-bba9-0da7ec32db60
-title: Add service templates to the VMM library
-description: This article provides guidance for adding service templates to the library in the VMM compute fabric
+ms.assetid: ce968ce3-58d3-4eae-9b70-54eaac78a664
+title: Manage the VMM library
+description: This article describes management tasks for the VMM library
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
@@ -11,51 +11,63 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-# Add service templates to the VMM library
+# Manage the VMM library
 
 
+Read this article to learn how to manage the System Center - Virtual Machine Manager (VMM) library by refreshing it, moving files around, and removing orphaned resources.
 
-Read this article to learn about setting up service templates in the System Center - Virtual Machine Manager (VMM) library.
+## Refresh the library
 
-Service templates group VMs together to provide an app. They contain information about a service, including the VMs that are deployed as part of the service, the applications installed on VMs, and the network settings that should be used. You can add VM templates, network settings, applications, and storage to a service template.
+By default VMM refreshes library shares once every hour.
 
-Service templates can be single or multi-tier:
+- You can change the default refresh settings in **General** > **Library Settings** > **Settings** > **Modify**, from to 366 hours (14 days). You can also disable automatic library refreshes.
+- To manually refresh, select **Library** > library server or share > **Refresh share**.
 
-- A single tier service contains one VM used as a specific app.
-- A multi-tier service contains multiple VMs. For example you could create a three-tier service with a backend tier running a SQL Server database, a middle tier running the business server, and a third tier running a frontend web interface.
-- Tiers can be added based on a copy of an existing VM template (which can be customized) or a virtual hard disk in the library.
+During a library refresh, the following occurs:
 
-You set up service templates using the VMM service template designer.
+- VMM adds these file types to the **Library** view: virtual hard disks (except for those attached to a stored VM), virtual floppy disks, ISO images, answer files, PowerShell scripts. Snapshots imported into the library with Hyper-V and VMware VMs are displayed on the **Checkpoints** tab of the VM properties. The snapshot files aren't displayed.
+- VMM indexes but doesn't display these file types:
+  - Files associated with stored VMs (VM configuration file, attached virtual hard disks, saved state files, imported snapshots, checkpoints).
+  - Files associated with VM templates.
+  - Configuration files:
+    - Hyper-V (.exp -export, .vsv -savedstate, .bin)
+    - Virtual Server (.vmd, .vsv)
+    - VMware (.vmtx, .vmx)
 
-## Before you start
+## Transfer files
 
-You can create service templates if you have VMM admin or delegated admin permissions, or if you have a self-service user account with **Author** enabled.
+You have direct access to copy and move library files through Windows Explorer. Each file in a library share has a unique GUID and is periodically indexed during library refreshes. After a file is refreshed you can move it to any other location on a library share managed by VMM and refresh automatically tracks the file movement. After the move, file metadata is updated during the next library refresh.
 
-## Create a service template
+In addition you can allow unencrypted file transfers to and from a library server.
 
-1. Click **Library** > **Create** > **Create Service Template**.
-1. In **New Service Template**  > **Name**, specify a template name. In **Release** indicate the template version.
-1. To configure a tier using the predefined templates click in the designer workload and select a preconfigured tier pattern (blank, 1, 2, or 3 tiers). Click **Save and Validate** to save the template. After its created you can click on a template object to modify its name, release version or users/roles that can access it.
-1. When the tier appears in the workspace drag a VM template to it. The properties of the VM template are applied to the tier. Note that this doesn't establish a link between the tier and the template. Changing the template properties does not modify the tier properties.
-    > [!NOTE]
-    > You can also click **Add Machine Tier** to add a tier manually. This opens the **Create Machine Tier Template** wizard. In **Select Source** select a source for the tier. You can use an exact copy of an existing VM template, or to customize an existing VM template. Click **Browse** to select the template or hard disk. In **Additional Properties**, you'll configure the tier properties described in the next step.
-1. You can click on a tier to access its properties in the details pane of the designer.  Click **View All Properties** to modify all the properties in a single view. Here's what you can modify when you select to view all:
-    - In **General** specify:
-      - The order in which tiers are deployed and serviced. For example if you need the database tier to be running in order to run a frontend web app, you'd set the database tier to 1.
-      - Whether you want to be able to add additional VMs to the tier in order to scale out (you can scale out to 5 VM instances in a tier).
-      - More than one upgrade domain to minimize service interruptions when a tier is updated. VMM will update VMs in the tier according to their upgrade domains. VMM upgrade an upgrade domain at a time. It shuts down VMs in the domain, updates them, brings them online, and moves to the next domain to reduce impact.
-      - The creation of an availability set for the tier. The availability set helps VMs in the service remain available during maintenance. VMM tries to separate VMs in the same availability set by placing them on separate hosts.
-    - In **Configure Hardware** you'll see the hardware settings for the associated VM template. You can select an alternative hardware profile, or configure hardware settings manually. To learn more, review [how to create a hardware profile](library-profiles.md#create-a-hardware-profile).
-    - In **Configure Operating System** you'll see the operating system settings for the associated VM template. you can select an alternative guest OS profile, or configure settings manually. To learn more, review [how to create a guest OS profile](library-profiles.md#create-a-guest-os-profile).
-    - In **Application Configuration** or **SQL Server Configuration** you can select an application/SQL Server profile or configure settings for a new profile. Learn more about [application](library-profiles.md#create-an-application-profile) and [SQL Server](library-profiles.md#create-a-sql-server-profile) profiles.
+- To transfer unencrypted file transfers the feature must be allowed on both the source and destination servers.
+- To enable the option click **Library** > **Library Server** and navigate to the server. Click **Actions** > **Library Server** > **Properties**, select **Allow unencrypted file transfers**.
 
-## Add a VM network to the service template
+## Disable and remove file-based resources
 
-You'll need to configure network settings for a tier by connecting the tier adapters to one or more [VM networks](network-virtual.md). To do this you'll add a logical network component and then use the connector tool to connect it to the adapter.
+You can remove a file-based resource either temporarily or permanently from the library.
 
-1. In the Service Template Designer, click **Service Template Components** > **Add VM Network**.
-1. When the network appears as a component, use the Connector to connect to the appropriate NIC.
+- To disable resources click **Library** > **Library servers** > and select the library share. Select the resource and click **Actions** > **Disable**. click **Enable** to re-enable.
+- To remove files we recommend you use VMM rather than simply deleting the file resources. When you remove the file in the library any resources that use the file are updated automatically. To remove a file click **Library** > **Library servers** > and select the library share. Select the resource and click **Actions** > **Remove**. Select **Yes** to confirm.
 
-## Next steps
+## Remove a library server or share
 
-[Set up load balancing for a service tier](network-nlb.md)
+There are circumstances in which you need to remove a library server or share. For example if you're no longer using the resources on a share or you temporarily want to remove those resources.
+
+- To remove a library share click **Library** > **Library servers** > and select the library share. In Actions, click **Library Share** > **Remove**. Click **Yes** to confirm. Note that removing a share doesn't delete the files on it. They are no longer be indexed by library refreshes.
+- To remove a library server click **Library** > **Library servers**. Click **Actions** > **Library Server** > **Remove**.
+- Note that:
+  - Specify an account with administrative permissions on the server.
+  - VMM provides a list of dependent resources. If you process VMM removes any references to the removed files on dependent resources. When you remove a library server the **Library Server** role is removed from the VMM agent running on the server. If the server isn't performing any other VMM roles the agent is removed.
+  - If you remove a highly available library server the cluster is removed from the **Library** view. The individual cluster nodes aren't removed, but they're not displayed in the library. To remove the nodes from VMM remove the VMM agent from each computer.
+
+## Remove orphaned resources
+
+When you remove a library share from VMM management, and there are templates that reference resources that were located on the library share, a representation of the library resource appears in the VMM library as an orphaned resource.
+
+To remove orphaned resources, modify the templates that reference the orphaned resources to use valid library resources in the VMM library. If you add the library share again, VMM doesn't automatically reassociate the template with the physical library resource. You must complete these steps to correct template issues and to remove any orphaned resources.
+
+1. Click **Library** > **Orphaned Resources**.
+1. You won't be able to delete an orphaned resource until templates that reference it are updated to valid references. To view the templates right-click the orphaned resource > **Properties**. To update the template click it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
+1. Add a new resource that's valid.
+1. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependencies right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
