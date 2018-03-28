@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/02/2018
+ms.date: 03/27/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -133,6 +133,10 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
+
+    >[!NOTE]
+    >The Web console does not support running IE in Compatibility View, othewise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://support.microsoft.com/help/2536204/how-to-use-compatibility-view-in-internet-explorer-9).  
+    >
 - Client web browser for HTLM5 web console:  
 
     - Internet Explorer version 11 
