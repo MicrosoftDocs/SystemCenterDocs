@@ -4,9 +4,9 @@ description: This article describes the standard views that are included in a de
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 11/28/2016
+ms.date: 03/28/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: e6c36fe0-9fde-474f-a862-446598da5973
@@ -14,7 +14,7 @@ ms.assetid: e6c36fe0-9fde-474f-a862-446598da5973
 
 # Standard views in Operations Manager
 
-Several views are created by default when System Center 2016 - Operations Manager is installed. Management packs also contain views. When a management pack is imported, a folder that contains the views that are defined in the management pack is created in the Monitoring workspace.  
+Several views are created by default when System Center Operations Manager is installed. Management packs also contain views. When a management pack is imported, a folder that contains the views that are defined in the management pack is created in the Monitoring workspace.  
   
 The following table describes the views and folders of the views available when Operations Manager is installed. For views added by a management pack, see the management pack guide for information.  
   
