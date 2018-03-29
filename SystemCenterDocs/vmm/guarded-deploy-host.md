@@ -38,7 +38,7 @@ You set up guarded hosts in the VMM fabric as follows:
 Make sure you have deployed and configured the Host Guardian Service before proceeding. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs) about configuring HGS in the Windows Server documentation.
 
 Additionally, ensure any hosts which will become guarded hosts meet the guarded host prerequisites:
-- **Operating system**: Host servers must run Windows Server 2016 Datacenter edition. It is recommended to use Server Core or Nano Server for guarded hosts.
+- **Operating system**: Host servers must run Windows Server Datacenter. It is recommended to use Server Core for guarded hosts.
 - **Role and features**: Host servers should be running the Hyper-V role and the Host Guardian Hyper-V Support feature. Host Guardian Hyper-V Support lets the host communicate with HGS to attest to its health and request keys for shielded VMs. If your host is running Nano Server, it should have the Compute, SCVMM-Package, SCVMM-Compute, SecureStartup, and ShieldedVM packages installed.
 - **TPM-attestation**: If your HGS is configured to use TPM attestation, the host servers must:
     - Use UEFI 2.3.1c and a TPM 2.0 module
@@ -61,7 +61,7 @@ Before you can add guarded hosts to your VMM compute fabric, you must configure 
 ## Add or provision a new guarded host
 
 1.	Add the host:
-    -	If you want to add an existing server running Windows Server 2016 as a guarded Hyper-V host, [add it to the fabric](hyper-v-existing.md).
+    -	If you want to add an existing server running Windows Server as a guarded Hyper-V host, [add it to the fabric](hyper-v-existing.md).
     -	If you want to provision a Hyper-V host from a bare-metal computer, [follow these prerequisites and instructions](hyper-v-bare-metal.md). Note that you can deploy the host as guarded when you provision it (Add Resource Wizard > **OS Settings** > **Configure as guarded host**.
 2. Continue on to the next section to configure the host as a guarded host.
 
@@ -113,7 +113,7 @@ Now, for each guarded host, complete the following steps to apply a code integri
 4. Click **OK** to apply the configuration change. The host may restart to apply the new policy.
 5. Take the host out of maintenance mode.
 
-> [!WARNING] 
+> [!WARNING]
 > Be sure to select the correct code integrity policy for the host. If an incompatible policy is applied to the host, some applications, drivers, or operating system components may no longer work.
 
 If you update the code integrity policy in the file share and wish to also update the guarded hosts, you can do so by completing the following steps:
