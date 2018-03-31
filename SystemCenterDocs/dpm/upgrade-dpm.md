@@ -14,7 +14,7 @@ ms.assetid:
 
 # Upgrade your DPM installation
 
-This article provides the information for upgrading your System Center Data Protection Manager (DPM) installation. This article supports multiple upgrade scenarios for the Long-Term Servicing Channel and Semi-Annual Channel. By default, this article displays the information for the most recent release. If you would prefer to see the information for a different release, please choose that version from the version selector above the table of contents to the left.
+This System Center Data Protection Manager (DPM) article provides upgrade information for all Long-Term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) releases. By default, this article displays the information for the SAC 1801 release. To view the upgrade information for a different release, use the version selector to the left.
 
 ::: moniker range="sc-dpm-1801"
 
