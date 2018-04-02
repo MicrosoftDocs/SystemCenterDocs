@@ -14,12 +14,12 @@ ms.assetid:
 
 # Upgrade your DPM installation
 
-This article provides upgrade information for the following DPM versions:
+This article provides the information for upgrading DPM to one of the following versions:
 
 - 1801
 - 2016
 
-By default, this article displays the information for the DPM 1801 release. To view information for a different version, use the selector to the left.  
+By default, this article displays the information for the DPM 1801 release. To view the information for a different version, use the selector to the left.
 
 ::: moniker range="sc-dpm-1801"
 
