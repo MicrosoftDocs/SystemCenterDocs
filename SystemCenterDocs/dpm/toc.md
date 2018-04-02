@@ -13,11 +13,9 @@
 ### [Prepare data storage](plan-long-and-short-term-data-storage.md)
 ### [Identify compatible tape libraries](identify-compatible-tape-libraries.md)
 ### [Identify data sources you want to protect](identify-data-sources-to-protect.md)
-## Install DPM
+## Install or Upgrade DPM
 ### [Install DPM ](install-dpm.md)
-### Upgrade your DPM installation
-#### [Upgrade to DPM 2016](upgrade-to-dpm-2016.md)
-#### [Upgrade to DPM 1801](upgrade-to-dpm-1801.md)
+### [Upgrade you DPM installation](upgrade-dpm.md)
 ### [Add Modern Backup storage](add-storage.md)
 ### [Deduplicate DPM storage](deduplicate-dpm-storage.md)
 ## Deploy DPM
