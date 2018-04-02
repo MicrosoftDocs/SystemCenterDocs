@@ -42,12 +42,16 @@ The following versions of Windows client operating system are supported for the 
 
 ## SQL Server
 
+> [!NOTE]
+
+> Use the SQL Service Packs that are in support by Microsoft. To view the supported versions, you can search [this page](https://support.microsoft.com/en-in/lifecycle/search).
+
 **SQL version** | **Supported**
 --- | ---
-SQL Server 2008 R2 (SP1, SP2) | N
-SQL Server 2012 SP4 | Y
-SQL Server 2014 and all service packs | Y
-SQL Server 2016 and SP1 | Y
+**SQL Server 2008**| N
+**SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)** | Y
+**SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** | Y
+**SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
 
 ## .Net requirements
 
