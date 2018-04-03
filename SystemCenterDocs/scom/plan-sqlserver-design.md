@@ -29,11 +29,14 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
+::: moniker range="sc-om-2016"
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012  
+
+::: moniker-end
 
 > [!NOTE] 
 > System Center Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
