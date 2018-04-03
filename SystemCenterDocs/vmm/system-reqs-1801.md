@@ -68,7 +68,7 @@ Window Server 2016 Standard, Datacenter | Y
 
 > [!NOTE]
 
-> Use the SQL Service Packs that are in support by Microsoft. To view the supported versions, you can search [this page](https://support.microsoft.com/en-in/lifecycle/search).
+> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  To view the details of the supported SPs, you can search [this page](https://support.microsoft.com/en-in/lifecycle/search).
 
 **SQL version** | **Supported**
 --- | ---
