@@ -44,7 +44,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 > [!NOTE] 
 > System Center Operations Manager Reporting cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
 
-Use the SQL Server Service Packs that are in support by Microsoft. To view the supported versions, you can search and review the [product lifecycle policy](https://support.microsoft.com/lifecycle/search).
+Use the SQL Server Service Packs that are in support by Microsoft. To view the supported versions, you can review the [Update Center for Microsoft SQL Server](https://technet.microsoft.com/library/ff803383.aspx).
 
 Additional hardware and software considerations apply in your design planning:
 
