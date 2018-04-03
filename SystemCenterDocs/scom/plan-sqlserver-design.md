@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  carmonm
-ms.date: 04/02/2018
+ms.date: 04/03/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -21,11 +21,22 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 ## SQL Server requirements
 
-The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
+::: moniker range="sc-om-1801"
+
+The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
+
+* SQL Server 2016
+
+::: moniker-end
+
+::: moniker range="sc-om-2016"
+The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
 * SQL Server 2016
 * SQL Server 2014
-* SQL Server 2012
+* SQL Server 2012  
+
+::: moniker-end
 
 > [!NOTE] 
 > System Center Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
@@ -33,7 +44,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 > [!NOTE] 
 > System Center Operations Manager Reporting cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
 
-Use the SQL Server Service Packs that are in support by Microsoft. To view the supported versions, you can search and review the [product lifecycle policy](https://support.microsoft.com/lifecycle/search).
+Use the SQL Server Service Packs that are in support by Microsoft. To view the supported versions, you can review the [Update Center for Microsoft SQL Server](https://technet.microsoft.com/library/ff803383.aspx).
 
 Additional hardware and software considerations apply in your design planning:
 
