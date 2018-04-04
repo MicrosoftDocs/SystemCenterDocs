@@ -86,7 +86,7 @@ The following SQL Server and Windows collations are supported by System Center O
 - Polish_100_CI_AS
 - Finnish_Swedish_100_CI_AS  
 
-Note that if your SQL Server instance is not configured with one of the supported collations listed earlier, performing a new setup of Operations Manager setup will fail.  However, an in-place upgrade will complete successfully.  
+If your SQL Server instance is not configured with one of the supported collations listed earlier, performing a new setup of Operations Manager setup will fail.  However, an in-place upgrade will complete successfully.  
 
 ## Firewall configuration
 
@@ -166,25 +166,22 @@ These settings allow, when failover to a node in a different subnet, for quicker
 
 Run the following Powershell query on any one of the SQL nodes to modify its settings.
 
-``` 
-Import-Module FailoverClusters
-Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
-Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
-Stop-ClusterResource "Cluster Name"
-Start-ClusterResource "Cluster Name"
-``` 
+    Import-Module FailoverClusters
+    Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
+    Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
+    Stop-ClusterResource "Cluster Name"
+    Start-ClusterResource "Cluster Name"
+ 
 
 If you are using Always On with a listener name, you should also make these configurations changes on the listener. 
 
 Run the following Powershell query on the SQL node currently hosting the listener to modify its settings.
 
-``` 
-Import-Module FailoverClusters
-Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
-Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter HostRecordTTL 300
-Stop-ClusterResource <Listener Cluster Resource name>
-Start-ClusterResource <Listener Cluster Resource name>
-```
+    Import-Module FailoverClusters
+    Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
+    Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter HostRecordTTL 300
+    Stop-ClusterResource <Listener Cluster Resource name>
+    Start-ClusterResource <Listener Cluster Resource name>
 
 When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc). 
 
@@ -206,7 +203,6 @@ It is important to test the SQL Server design by performing throughput testing o
 
 Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation; these are most commonly the result of partition misalignment with stripe unit boundaries. This can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
 When formatting the partition that will be used for SQL Server data files, it is recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it is not recommended. 
-
 
 ### Reserve memory
 
@@ -246,18 +242,16 @@ To achieve optimal tempdb performance, we recommend the following configuration 
 
 To configure tempdb, you can run the following query or modify its properties in Management Studio.
 
-```
-USE [tempdb]
-GO
-DBCC SHRINKFILE (N'tempdev' , 8)
-GO
-USE [master]
-GO
-ALTER DATABASE [tempdb] MODIFY FILE ( NAME = N'tempdev', NEWNAME = N'tempdb', SIZE = 2097152KB , FILEGROWTH = 512MB )
-GO
-ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
-GO
-```
+    USE [tempdb]
+    GO
+    DBCC SHRINKFILE (N'tempdev' , 8)
+    GO
+    USE [master]
+    GO
+    ALTER DATABASE [tempdb] MODIFY FILE ( NAME = N'tempdev', NEWNAME = N'tempdb', SIZE = 2097152KB , FILEGROWTH = 512MB )
+    GO
+    ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
+    GO
 
 Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the waitresource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
 
