@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  carmonm
-ms.date: 04/03/2018
+ms.date: 04/04/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # SQL Server Design Considerations
 
-System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016 to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
+System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server to support the operational, data warehouse, and ACS audit database. The operational and data warehouse databases are required and created when you deploy the first management server in your management group, while the ACS database is created when you deploy an ACS collector in your management group.  
 
 In a lab environment or small-scale deployment of Operations Manager, SQL Server can be co-located on the first management server in the management group.  In a medium to enterprise-scale distributed deployment, the SQL Server instance should be located on a dedicated standalone server or in a SQL Server high-availability configuration.  In either case, SQL Server must already exist and is accessible before you start the installation of the first management server or ACS collector.  
 
@@ -25,16 +25,16 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center Operations Manager version 1801 to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2016
+* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2016 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2016
-* SQL Server 2014
-* SQL Server 2012  
+* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+* SQL Server 2014 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)
+* SQL Server 2012 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 > [!NOTE] 
 > System Center Operations Manager Reporting cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
 
-Use the SQL Server Service Packs that are in support by Microsoft. To view the supported versions, you can review the [Update Center for Microsoft SQL Server](https://technet.microsoft.com/library/ff803383.aspx).
+
 
 Additional hardware and software considerations apply in your design planning:
 
@@ -245,7 +245,7 @@ To achieve optimal tempdb performance, we recommend the following configuration 
 
 To configure tempdb, you can run the following query or modify its properties in Management Studio.
 
-   ```
+    ```
     USE [tempdb]
     GO
     DBCC SHRINKFILE (N'tempdev' , 8)
@@ -256,7 +256,7 @@ To configure tempdb, you can run the following query or modify its properties in
     GO
     ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
     GO
-   ```
+    ```
 
 Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the waitresource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
 
