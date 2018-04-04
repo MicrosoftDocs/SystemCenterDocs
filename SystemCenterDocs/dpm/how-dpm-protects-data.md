@@ -11,7 +11,6 @@ title:  How does DPM work?
 ms.technology:  data-protection-manager
 ms.assetid:  1490e423-de29-41b3-bee3-cc46140ea55d
 ---
-
 # How does DPM work?
 
 The method System Center Data Protection Manager (DPM) uses to protect data varies according to the type of data being protected, and the method of protection you select. This article serves as a primer for how DPM functions. It is intended to educate those new to DPM, or those who may have basic questions about *how* DPM works. This article covers Disk-Based protection processes, Tape-Based protection processes, recovery process, as well as the protection policy.
@@ -38,7 +37,7 @@ DPM stores a separate replica for each protection group member in the storage po
 - A storage group on an Exchange server or server cluster
 - A database of an instance of SQL Server or server cluster
 
->[!NOTE]
+> [!NOTE]
 > DPM does not protect data stored in USB drives.
 
 ### The file data synchronization process
@@ -63,7 +62,7 @@ During the type of synchronization that is labeled express full backup in DPM Ad
 
 Each express full backup creates a recovery point for application data. If the application supports incremental backups, each synchronization also creates a recovery point. The synchronization type supported by each type of application data is summarized as follows:
 
--	For protected Exchange data, synchronization transfers an incremental VSS snapshot using the Exchange VSS writer. Recovery points are created for each synchronization and express full backup.
+- For protected Exchange data, synchronization transfers an incremental VSS snapshot using the Exchange VSS writer. Recovery points are created for each synchronization and express full backup.
 
 - SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model do not support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
 
@@ -100,7 +99,7 @@ When you use short-term disk-based protection and long-term tape-based protectio
 DPM protects data on tape through a combination of full and incremental backups from either the protected data source (for short-term protection on tape or for long-term protection on tape when DPM does not protect the data on disk) or from the DPM replica (for long-term protection on tape when short-term protection is on disk).
 
 > [!NOTE]
- If a file was open when the replica was last synchronized, the backup of that file from the replica will be in a crash consistent state. A crash consistent state of the file will contain all data of the file that was persisted to disk at the time of last synchronization. This applies only to file system backups. Application backups will always be consistent with the application state.
+> If a file was open when the replica was last synchronized, the backup of that file from the replica will be in a crash consistent state. A crash consistent state of the file will contain all data of the file that was persisted to disk at the time of last synchronization. This applies only to file system backups. Application backups will always be consistent with the application state.
 
 For specific backup types and schedules, see Planning Protection Groups
 
@@ -110,8 +109,8 @@ The method of data protection, disk-based or tape-based, makes no difference to 
 
 DPM can store a maximum of 64 recovery points for each file member of a protection group. For application data sources, DPM can store up to 448 express full backups and up to 96 incremental backups for each express full backup. When storage area limits have been reached and the retention range for the existing recovery points is not met yet, protection jobs will fail.
 
->[!NOTE]
-To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
+> [!NOTE]
+> To support end-user recovery, the recovery points for files are limited to 64 by Volume Shadow Copy Service (VSS).
 
 As explained in The File Data Synchronization Process and The Application Data Synchronization Process, the process for creating recovery points differs between file data and application data. DPM creates recovery points for file data by taking a shadow copy of the replica on a schedule that you configure. For application data, each synchronization and express full backup creates a recovery point.
 
@@ -141,7 +140,8 @@ Data loss tolerance is the maximum amount of data loss, measured in time, that i
 
 The recovery point schedule establishes how many recovery points of this protection group should be created. For file protection, you select the days and times for which you want recovery points created. For data protection of applications that support incremental backups, the synchronization frequency determines the recovery point schedule. For data protection of applications that do not support incremental backups, the express full backup schedule determines the recovery point schedule.
 
-> [AZURE.NOTE] When you create a protection group, DPM identifies the type of data being protected and offers only the protection options available for the data.
+> [!NOTE]
+> When you create a protection group, DPM identifies the type of data being protected and offers only the protection options available for the data.
 
 ## Auto discovery process
 
@@ -164,3 +164,7 @@ The DiffArea folder contains mounted shadow copy volumes that store the recovery
 The Replica folder contains mounted replica volumes.
 
 The ShadowCopy folder contains local backup copies of the DPM database. In addition, when you use DPMBackup.exe to create backup shadow copies of the replicas for archive by third-party backup software, the backup shadow copies are stored in the ShadowCopy folder.
+
+## DPM Telemetry
+
+DPM does not collect any telemetry. If you are sending the data to Azure, the information needed by Azure Backup is sent to Microsoft. It does not contain any PII.
