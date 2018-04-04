@@ -164,3 +164,9 @@ The DiffArea folder contains mounted shadow copy volumes that store the recovery
 The Replica folder contains mounted replica volumes.
 
 The ShadowCopy folder contains local backup copies of the DPM database. In addition, when you use DPMBackup.exe to create backup shadow copies of the replicas for archive by third-party backup software, the backup shadow copies are stored in the ShadowCopy folder.
+
+
+## DPM Telemetry
+
+DPM does not collect any telemetry. If you are sending the data to Azure, the information needed by Azure Backup is sent to Microsoft. It does not contain any PII.
+
