@@ -48,7 +48,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 Additional hardware and software considerations apply in your design planning:
 
--  We recommend that you run SQL Server 2012, 2014, and 2016 on computers with the NTFS file format. 
+-  We recommend that you run SQL Server on computers with the NTFS file format. 
 -  There must be at least 1024 MB of free disk space for the operational and data warehouse database. It is enforced at the time of database creation, and it will likely grow significantly after setup.  
 -  .NET Framework 4 is required. 
 -  Reporting Server is not supported on Windows Server Core.
