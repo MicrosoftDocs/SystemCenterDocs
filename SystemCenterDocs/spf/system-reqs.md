@@ -39,12 +39,16 @@ This article describes the hardware and software requirements for System Center 
 
 ## SQL Server
 
+> [!NOTE]
+
+> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+
 **SQL version** | **Supported**
 --- | ---
-**SQL Server 2008 R2 (SP1, SP2)** | N
-**SQL Server 2012 SP4** | Y
-**SQL Server 2014 and all service packs** | Y
-**SQL Server 2016 and SP1** | Y
+**SQL Server 2008**| N
+**SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)** | Y
+**SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** | Y
+**SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
 
 
 ## Installation components
