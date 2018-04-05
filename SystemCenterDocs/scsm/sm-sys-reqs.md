@@ -108,16 +108,19 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 ## SQL Server versions
 
-The table summarises support for SQL Server 64-bit Enterprise and Standard versions.Support is for all service packs.
+The following table summarises the support for SQL Server 64-bit Enterprise and Standard versions.
+
+> [!NOTE]
+
+> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 
-**Service Manager** | **SQL Server 2012 SP2** | **SQL Server 2014**  | **SQL Server 2016**
+**Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs]((https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)**  | **SQL Server 2016 and [SPs]((https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)**
 --- | --- | --- | ---
-**Service Manager/Data Warehouse database** | &#8226; | &#8226;| &#8226;
-**SMA web service** | &#8226; | &#8226; | &#8226;
+**Service Manager/Data Warehouse database** | | &#8226;| &#8226;
+**SMA web service** |  | &#8226; | &#8226;
 
 
-- System Center 2016 - Service Manager doesn't support SQL Server versions earlier than SQL Server 2012 SP2.
 - System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
 - SQL Server AlwaysOn Availability Groups are supported in System Center 2016 - Service Manager. [Learn more](sql-always-on.md).
 - To install or upgrade Service Manager, SQL Server machines that host databases must be configured to allow updates. Otherwise an error appears when Service Manager tries to create a database:
