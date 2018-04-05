@@ -73,7 +73,7 @@ Window Server 2016 Standard, Datacenter | Y
 
 ## SQL Server
 
-[!NOTE]
+> [!NOTE]
 
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
 
