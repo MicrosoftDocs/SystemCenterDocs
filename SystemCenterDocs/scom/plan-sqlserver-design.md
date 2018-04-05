@@ -27,6 +27,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 * SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 * SQL Server 2014 Service Pack 2 (minimum) and later Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)
+* SQL Server 2012 Service Pack 4 (minimum) as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)
 
 ::: moniker-end
 
