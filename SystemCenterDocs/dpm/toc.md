@@ -15,7 +15,7 @@
 ### [Identify data sources you want to protect](identify-data-sources-to-protect.md)
 ## Install or Upgrade DPM
 ### [Install DPM ](install-dpm.md)
-### [Upgrade you DPM installation](upgrade-dpm.md)
+### [Upgrade your DPM installation](upgrade-dpm.md)
 ### [Add Modern Backup storage](add-storage.md)
 ### [Deduplicate DPM storage](deduplicate-dpm-storage.md)
 ## Deploy DPM
