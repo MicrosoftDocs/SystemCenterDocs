@@ -28,7 +28,7 @@ Most features introduced in the Semi-Annual Channel will be rolled into the next
 
 ## Semi-Annual Channel
 
-The Semi-Annual Channel is perfect for customers who are quickly innovating to take advantage of new features and enhancements. Semi-Annual Channel releases occur approximately twice a year.
+The Semi-Annual Channel is perfect for customers who are quickly innovating to take advantage of new features and enhancements. Semi-Annual Channel releases occur approximately two times a year.
 
 System Center, version 1801, was the first release in the Semi-Annual Channel. Versions are named according to the year and month of release. Semi-Annual Channel releases have an 18-month support policy from public availability (which is usually the same month or month following Engineering availability).  For example, System Center, version 1801, was available in January of 2018 and publicly released on February 8, 2018. [Support is available until August 8, 2019](sac-support-lifecycle.md), 18-months after official public release on February 8.
 
@@ -38,7 +38,7 @@ The Semi-Annual Channel is only offered to customers with Software Assurance. Th
 
 The key differences to consider:  
 
-- Need to innovate rapidly? Do you need early access to the newest System Center features? If so, consider joining the **Semi-Annual Channel** by installing System Center, version 1801. As previously described, you receive new versions approximately twice a year, with 18 months of production support per release.
+- Need to innovate rapidly? Do you need early access to the newest System Center features? If so, consider joining the **Semi-Annual Channel** by installing System Center, version 1801. As previously described, you receive new versions approximately two times a year, with 18 months of production support per release.
 - Need predictability? If so, consider staying on the **Long-Term Servicing Channel**. The current LTSC release is System Center 2016. As previously noted, you have access to new versions approximately every two to three years. Each release comes with five years of mainstream support followed by five more years of extended support. LTSC releases are available to everyone, regardless of their licensing model.
 
 ## Compatibility
