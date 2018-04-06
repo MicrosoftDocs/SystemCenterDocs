@@ -110,6 +110,14 @@
      "redirect_url" : "/system-center/dpm/use-central-console-to-manage-multiple-dpm-servers"
 },
 {
+     "source_path" : "SystemCenterDocs/dpm/upgrade-to-dpm-1801.md",
+     "redirect_url" : "/system-center/dpm/upgrade-dpm"
+},
+{
+  "source_path" : "SystemCenterDocs/dpm/upgrade-to-dpm-2016.md",
+  "redirect_url" : "/system-center/dpm/upgrade-dpm"
+},
+{
      "source_path" : "SystemCenterDocs/get-started/Release-Notes.md",
      "redirect_url": "/system-center/system-center"
   },
