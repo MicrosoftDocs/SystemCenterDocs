@@ -1,14 +1,14 @@
 ---
-description:  
+description: An overview of the Long-Term Servicing Channel (LTSC) and Semi-Annual Channel (SAC) releases for System Center.
 manager: carmonm
 ms.topic:  article
 author:  markgalioto
-ms.prod:  system-center-threshold
+ms.prod:  system-center
 ms.author: markgal
 keywords:  
-ms.date:  2/8/2018
+ms.date:  4/6/2018
 title:  Support for System Center SAC releases
-ms.technology: system-center-2016
+ms.technology: system-center
 ms.assetid:
 ---
 
