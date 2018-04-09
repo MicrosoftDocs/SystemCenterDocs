@@ -36,31 +36,33 @@ S2D creates pools of storage from storage that's attached to specific nodes in a
 
 A cluster running S2D can be deployed in a couple of ways:
 
-- **Hyper-converged deploymen**: Hyper-V compute and S2D storage run within the same cluster, with no separation between them. This provides simultaneous scaling of compute and storage resources.
+- **Hyper-converged deployment**: Hyper-V compute and S2D storage run within the same cluster, with no separation between them. This provides simultaneous scaling of compute and storage resources.
 - **Disaggregated deployment**: Compute resources run on one Hyper-V cluster. S2D storage runs on a different cluster. You scale the clusters separately for finely tuned management.
 
 ### Hyper-converged deployment
 
-[Hyper-converged](./media/s2d/storage-spaces-hyper-converged.png)
+Here's an illustration for hyper-converged deployment
+
+![Hyper-converged](./media/s2d/storage-spaces-hyper-converged.png)
 
 **Figure 1: Hyper-converged deployment**
 
-•	VM files are stored on local CSVs.
-•	File shares and SMB aren't used.
-•	After S2D CSV volumes are available, you provision them as you would any other Hyper-V deployment.
-•	You scale the Hyper-V compute cluster together with its S2D storage.
-
-!
+-	VM files are stored on local CSVs.
+-	File shares and SMB aren't used.
+- After S2D CSV volumes are available, you provision them as you would any other Hyper-V deployment.
+-	You scale the Hyper-V compute cluster together with its S2D storage.
 
 ### Disaggregated deployment
+
+Here's an illustration for disaggregated deployment
 
 ![Disaggregated](./media/s2d/storage-spaces-disaggregated.png)
 
 **Figure 2: Disaggregated deployment**
 
-•	File shares are created on the S2D CSVs.
-•	Hyper-V VMs are configured to store their files on the scaled-out file server (SOFS), and accessed using SMB 3.0.
-•	You scale the Hyper-V and SOFS clusters separately for finely tuned management. For example, compute nodes might be near full capacity for the number of VMs, but storage nodes might have excess disk and IOPS capacity, so you add only additional compute nodes.
+-	File shares are created on the S2D CSVs.
+-	Hyper-V VMs are configured to store their files on the scaled-out file server (SOFS), and accessed using SMB 3.0.
+-	You scale the Hyper-V and SOFS clusters separately for finely tuned management. For example, compute nodes might be near full capacity for the number of VMs, but storage nodes might have excess disk and IOPS capacity, so you add only additional compute nodes.
 
 
 ## Next steps
