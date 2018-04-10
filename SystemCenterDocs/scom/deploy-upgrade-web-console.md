@@ -8,6 +8,7 @@ manager: carmonm
 ms.date: 01/15/2018
 ms.custom: na
 ms.prod: system-center-2016
+monikerRange: 'sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
 ---
