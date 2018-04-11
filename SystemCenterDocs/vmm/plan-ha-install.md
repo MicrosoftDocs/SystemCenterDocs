@@ -55,9 +55,9 @@ You can create highly-available library servers to ensure that file-based resour
 
 - VMM doesn't automatically create the VMM library as highly available when you deploy VMM in high availability mode. You need to create highly available library servers by deploying the library on a file server cluster.
 - You'll need to set up a file server failover cluster. Deploying highly available library shares on the VMM cluster isn't supported.
-- Computers you'll configure as file servers should be running running Windows Server 2012 R2 or later. We recommend that all nodes have the same version of Windows.
+- Computers you'll configure as file servers should be running Windows Server 2012 R2 or later. We recommend that all nodes have the same version of Windows.
 - All nodes you want to add as file servers should be in the same domain.
-- Make sure the hardware and software that you want to use for the library meets the [system requirements](https://technet.microsoft.com/library/gg610631(v=sc.12).aspx).
+- Make sure the hardware and software that you want to use for the library meets the system requirements.
 - The user who creates the cluster has **Create Computers objects** permission to the OU or the contain where the servers that will form the cluster reside. If this isn't possible ask a domain admin to pre-stage a cluster computer object for the cluster.
 - The account you use to create the cluster should be a domain user on all the computers you want to add as file server nodes.
 - The library server can't be a scale-out file server (SOFS).  It must be on a failover cluster that doesn't use the SOFS cluster role. This is because when you deploy the library the VMM agent is deployed on the host. For SOFS there are multiple hosts in a cluster provides shares which makes it complicated for agent deployment. When you have a standalone or clustered library server, you can leverage storage on SOFS by creating shares on it.
