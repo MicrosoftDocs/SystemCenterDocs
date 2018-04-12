@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 
 Use this article if you want to create a guest failover cluster using a System Center - Virtual Machine Manager (VMM) service template.
 
-A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that should be used. You can add VM templates, network settings, applications and storage to a service template. [Learn more](library-resources.md)
+A guest failover cluster consists of multiple VMs that are deployed in a cluster and use shared storage. Services in VMM are used to group together virtual machines to provide an app. Service templates contain information about a service, including the VMs that are deployed as part of the service, the applications to install on VMs, and the network configuration that should be used. You can add VM templates, network settings, applications and storage to a service template. [Learn more](library-service-templates.md)
 
 You can use service templates to create a guest cluster . That cluster can then be configured to run an app such as SQL Server.
 
@@ -70,7 +70,7 @@ Create a VM template that includes settings for a shared VHDX file. The VHDX fil
 
 ## Include the VM template in a service template
 
-1. [Create a service template](library-resources.md), and add the VM template to the appropriate template tier.
+1. [Create a service template](library-service-templates.md), and add the VM template to the appropriate template tier.
 1. After you save and validate the template right-click the tier object in the service template designer and click **Properties**.
 1. In **Application Configuration**, add the application profile you created. When the service is deployed the scripts in the application profile will run. Save and validate the service template.
 1. Right-click the service template again > **Properties**.
