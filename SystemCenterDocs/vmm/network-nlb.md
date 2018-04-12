@@ -50,15 +50,15 @@ To add a load balancer, you'll need to do the following actions:
 
 5. In **Protocol**, click the protocol for which you want to create the VIP template.
 
-	- If you select **HTTPS** you'll need to specify where the traffic terminates.
+	- If you select **HTTPS**, you'll need to specify where the traffic terminates.
 	- Select **HTTPS passthrough** to pass the traffic to the VM without decrypting it.
 	- Select **HTTPS terminate** to terminate and decrypt the HTTPS traffic at the load balancer. This option gives the load balancer more information such as cookies and headers. To use this option specify the subject name of a certificate on the load balancer that can be used for HTTPS authentication. With this option, you can enable **Re-Encrypt** to reencrypt the HTTPS traffic from the load balancer to the VM.
 	- Select **Custom** to specify **TCP**, **UDP**, or both.
 
-6. In **Persistence** select **Enable persistence** to make the client session sticky (affinity). This setting means that the load balancer will always try to direct the same client to the same VM. It's based on the specified source IP address and subnet mask, the destination IP address, and other parameters that vary depending on the protocol.
+6. In **Persistence**, select **Enable persistence** to make the client session sticky (affinity). This setting means that the load balancer will always try to direct the same client to the same VM. It's based on the specified source IP address and subnet mask, the destination IP address, and other parameters that vary depending on the protocol.
 7. In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor specify the protocol and the request. For example entering the command GET? makes an HTTP GET request fo rhte home page of the load balancer and checks for a header response. You can also modify the response type, and monitoring interval, timeout, and retries.  Note that the timeout should be less than the interval.
-8. In **Load Balancing** select which load balancing method you want to use. You can configure new connections to be directed based on the least connections or the fastest response time, using round robin, or using a custom method supported by the load balancer. If you're enabling NLB, select **Round Robin**.
-9. On the **Summary** page review the settings and click **Finish**. The **Jobs** dialog appears. Wait for a **Completed** status. Then verify that the template appears in the **VIP Templates** pane.
+8. In **Load Balancing**, select which load balancing method you want to use. You can configure new connections to be directed based on the least connections or the fastest response time, using round robin, or using a custom method supported by the load balancer. If you're enabling NLB, select **Round Robin**.
+9. On the **Summary** page, review the settings and click **Finish**. The **Jobs** dialog appears. Wait for a **Completed** status. Then verify that the template appears in the **VIP Templates** pane.
 
 
 ### Set up a hardware load balancer
@@ -75,8 +75,8 @@ During the wizard, you select the host groups for which the load balancer is ava
 
 1. Click **Fabric** > **Networking** > **Load Balancers** > **Fabric Resources** > **Home** > **Add** > **Add Resources** > **Load Balancer**.
 2. In **Add Load Balancer Wizard** > **Credentials**, select the Run As account with the load balancer credentials.
-3. In **Host Group** select each host group where the service will be deployed. Hosts should be able to access the load balancer. In addition, a physical network adapter on the host should be configured to use the same logical network as the service tier.
-4. In **Manufacturer and Model** select the appropriate entries.
+3. In **Host Group**, select each host group where the service will be deployed. Hosts should be able to access the load balancer. In addition, a physical network adapter on the host should be configured to use the same logical network as the service tier.
+4. In **Manufacturer and Model**, select the appropriate entries.
 5. In **Address**, specify the **IP address** and **FQDN** or **NetBIOS** names of the load balancer. Specify the port on which the load balancer listens for requests.
 6. In **Logical Network Affinity** specify the affinity to logical networks. Note that:
 
@@ -85,7 +85,7 @@ During the wizard, you select the host groups for which the load balancer is ava
   - When selecting logical networks for frontend affinity, the associated network site with the reserved VIP address range should be available to the host groups associated with the load balancer.
   - For backend affinity you'll select the logical networks to which you want to make the load balancer available for connections from the VMs in a service tier.
 
-7. In **Provider** click the load balancer provider. Click **Test** to check the configuration.
+7. In **Provider**, click the load balancer provider. Click **Test** to check the configuration.
 8. In **Summary**, verify the settings and click **Finish**. The **Job** dialog box appears. Wait for a **Completed** status and check in the **Provider** column that the provider is active.
 
 ### Set up NLB
