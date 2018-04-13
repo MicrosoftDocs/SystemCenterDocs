@@ -24,7 +24,7 @@ This article provides information about how to turn on/off the telemetry setting
 Use the following procedure:
 1. On the VMM console, click **Settings** .
 
- **General** settings window appear with available list of settings.
+ **General** settings window appears with available list of settings.
 3. Click **Diagnostics and Usage Data Settings**.
 
   ![Diagnostics and Usage](./media/telemetry/diagnostics-and-usage-data.png)
@@ -41,7 +41,7 @@ Page with **Do you want to send Diagnostics and Usage Data to Microsoft** messag
 
 5. To turn off telemetry, select **No I prefer not to send data to Microsoft**.
 
-## Telemetry events telemetry
+## Telemetry data collected
 
 | Data related To | Data collected |
 | --- | --- |

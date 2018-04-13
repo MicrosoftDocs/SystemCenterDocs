@@ -2,6 +2,8 @@
 ## [What is VMM?](overview.md)
 ## [What's new in Virtual Machine Manager 2016](whats-new.md)
 ## [What's new in Virtual Machine Manager 1801](Whats-new-vmm-1801.md)
+# [Diagnostics and usage data]
+## [Turn on/off telemetry in VMM]
 # Get Started
 ## [Release notes - Virtual Machine Manager 2016](release-notes.md)
 ## [Release notes - Virtual Machine Manager 1801](release-notes-1801.md)
