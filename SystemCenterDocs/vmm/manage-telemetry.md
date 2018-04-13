@@ -13,23 +13,23 @@ ms.technology:  virtual-machine-manager
 
 # Manage telemetry settings in VMM
 
-This article provides information about how to turn on / off the telemetry settings in System Center - Virtual Machine Manager (VMM).
+This article provides information about how to turn on/off the telemetry settings in System Center - Virtual Machine Manager (VMM).
 
 > [!NOTE]
 
-> Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in VMM. [Learn more](#telemetry_events)
+> Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in VMM. [Learn more](#telemetry-events)
 
 
 ## Turn on/off telemetry in VMM
 Use the following procedure:
-1. on the VMM console, click **Settings** .
+1. On the VMM console, click **Settings** .
 
  **General** settings window appear with available list of settings.
 3. Click **Diagnostics and Usage Data Settings**.
 
   ![Diagnostics and Usage](./media/telemetry/diagnostics-and-usage-data.png)
 
-  page with **Do you want to send Diagnostics and Usage Data to Microsoft** message appears with an option to select either Yes or No.
+Page with **Do you want to send Diagnostics and Usage Data to Microsoft** message appears with an option to select either Yes or No.
 
   ![Diagnostics and Usage](./media/telemetry/telemetry-selection-options.png)
 
