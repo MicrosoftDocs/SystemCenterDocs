@@ -293,6 +293,69 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
 
 
+## Update the network controller server certificate
+  Network controller uses a certificate for northbound communication with REST clients (such as VMM and southbound communication with Hyper-V hosts and software load balancers.
+
+  You can change or update this certificate after you deploy the NC, in the following scenarios:
+
+  1.	The certificate has expired
+  2.	You want to move from a self-signed certificate to a certificate that is issued by a certificate authority.
+
+**Ensure the following**:
+
+ To authenticate communication between the VMM server and the network controller, make sure you create a new SSL certificate with REST name. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/sdn-controller?view=sc-vmm-1801#set-up-the-security-certificates)
+
+**Use the following procedure**:
+
+1.	Export the certificate with private key and import it on the all NC nodes **My** and **Root** store if it is a self-signed certificate.
+
+  For a CA issued certificate, import it in all Network Controller nodes **My** store.
+
+  > [!NOTE]
+
+  > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Follow with rest of the steps to update the certificate.
+
+2.	Update the server certificate using the following PowerShell command:
+
+  ```powershell
+
+  Set-NetworkController -ServerCertificate <new cert>
+   ```
+
+3.	Update the certificate used for encrypting the credentials stored in the NC by using the following command:
+
+  ```powershell
+Set-NetworkControllerCluster -CredentialEncryptionCertificate <new cert>
+```
+
+4.	Retrieve a server REST resource using the following PowerShell command:
+
+  ```powershell
+Get-NetworkControllerServer -ConnectionUri <REST uri of your deployment>
+```
+5.	Update the Credential REST resource of type **X509Certificate** with the thumbprint of the new certificate
+```powershell
+  $cred=New-Object Microsoft.Windows.Networkcontroller.credentialproperties
+  $cred.type="X509Certificate"
+  $cred.username=""
+  $cred.value="<thumbprint of the new certificate>"
+  New-NetworkControllerCredential -ConnectionUri <REST uri of the deployment> -ResourceId 41229069-85d4-4352-be85-034d0c5f4658  -Properties $cred
+ ```
+6.	If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the Trusted Root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
+7.	Update the VMM to use the new certificate. On the VMM machine, execute the following PowerShell command:
+
+  ```powershell
+Set-SCNetworkService -ProvisionSelfSignedCertificatesforNetworkService $true -Certificate $cert -NetworkService $svc
+```
+
+  -  *NetworkService* is the network controller service, *Certificate* is the new NC server certificate.
+  - *ProvisionSelfSignedCertificatesforNetworkService* is *$true* if you are updating to a self-signed certificate.
+
+>[!NOTE]
+
+> Verify  that the connectivity is working fine with the updated certificate. You can then remove the previous certificate from the NC nodes.  
+
+
 ## Add the network controller service to VMM
 
 After the network controller service is successfully deployed, the next step is to add it to VMM as a network service.
