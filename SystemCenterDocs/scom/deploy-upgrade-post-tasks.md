@@ -5,7 +5,7 @@ description:  This guide provides the post-upgrade tasks you must perform after 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/11/2018
+ms.date: 04/14/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -26,7 +26,9 @@ Perform the following tasks when you have completed the upgrade process.
 
 3. Re-enable Audit Collection Services (ACS) on agents that were upgraded
 
-4. Verify the upgrade was successful
+4. Reset agent HealthService Cache size
+
+5. Verify the upgrade was successful
 
 ### Re-enable the notification subscriptions
 
@@ -56,6 +58,12 @@ Refer to third-party documentation for any installed connectors to determine if 
 ### Re-Enable Audit Collection Services
 
 If you had Audit Collection Services (ACS) enabled for an agent prior to upgrade, it was disabled as part of the agent upgrade process. Re-enable ACS as appropriate.
+
+### Reset agent HealthService cache size
+Restore the default setting for the agent HealthService cache size by updating the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups<ManagementGroupName>\maximumQueueSizeKb
+
+The default decimal value of DWORD type is 15360 (15 MB).
 
 ### Verify that the upgrade was successful
 
