@@ -309,7 +309,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 
 > [!NOTE]
 
-> You can directly update/renew  the certificate if you want to renew from the same key/certificate. You do not need this procedure.
+> If you want to update from the same key/certificate, You can directly update, you do not need to go through this procedure. 
 
 1.	Export the certificate with private key and import it on the all NC nodes **My** and **Root** store if it is a self-signed certificate.
 
