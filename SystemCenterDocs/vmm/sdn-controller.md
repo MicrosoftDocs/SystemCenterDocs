@@ -294,7 +294,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 
 
 ## Update the network controller server certificate
-  Network controller uses a certificate Northbound communication with REST clients (such as VMM) and Southbound communication with Hyper-V hosts and software load balancers.
+  Network controller uses a certificate for Northbound communication with REST clients (such as VMM) and Southbound communication with Hyper-V hosts and software load balancers.
 
   You can change or update this certificate after you deploy the NC, in the following scenarios:
 
@@ -309,7 +309,7 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 
 > [!NOTE]
 
-> If you want to update from the same key/certificate, You can directly update, you do not need to go through this procedure. 
+> These steps are not required if you are renewing the existing certificate with the same key.
 
 1.	Export the certificate with private key and import it on the all NC nodes **My** and **Root** store if it is a self-signed certificate.
 
@@ -337,6 +337,7 @@ Set-NetworkControllerCluster -CredentialEncryptionCertificate <new cert>
   ```powershell
 Get-NetworkControllerServer -ConnectionUri <REST uri of your deployment>
 ```
+
 5.	Update the Credential REST resource of type **X509Certificate** with the thumbprint of the new certificate
 ```powershell
   $cred=New-Object Microsoft.Windows.Networkcontroller.credentialproperties
@@ -345,6 +346,7 @@ Get-NetworkControllerServer -ConnectionUri <REST uri of your deployment>
   $cred.value="<thumbprint of the new certificate>"
   New-NetworkControllerCredential -ConnectionUri <REST uri of the deployment> -ResourceId 41229069-85d4-4352-be85-034d0c5f4658  -Properties $cred
  ```
+
 6.	If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the trusted root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
 7.	Update the VMM to use the new certificate. On the VMM machine, execute the following PowerShell command:
 
