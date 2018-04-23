@@ -33,7 +33,7 @@
 ### [Load balance network traffic](sdn-load-balance-network-traffic.md)
 ### [Set up NAT for traffic forwarding in an SDN](sdn-set-up-nat.md)
 ### [Route traffic across networks in the SDN infrastructure](sdn-route-network-traffic.md)
-### [Update network controller server certificate](sdn-nc-server-certificate.md)
+### [Update network controller server certificate](sdn-update-nc-server-certificate.md)
 ## [Deploy and manage Storage Spaces Direct](s2d.md)
 ### [Set up a hyper-converged Storage Spaces Direct cluster](s2d-hyper-converged.md)
 ### [Set up a disaggregated Storage Spaces Direct cluster](s2d-disaggregated.md)
