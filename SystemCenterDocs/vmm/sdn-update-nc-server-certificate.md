@@ -122,4 +122,4 @@ ms.technology:  virtual-machine-manager
 
 ## Next steps
 
--[Configure the VM settings](vm-settings.md)
+[Configure the VM settings](vm-settings.md)
