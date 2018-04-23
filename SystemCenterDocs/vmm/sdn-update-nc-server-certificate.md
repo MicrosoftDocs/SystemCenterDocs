@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 # Update the network controller server certificate
   Network controller (NC) uses a certificate for Northbound communication with REST clients (such as VMM) and Southbound communication with Hyper-V hosts and software load balancers.
 
-  You can change or update this certificate after you deploy the NC, in the following scenarios:
+  You can change or update this certificate in the following scenarios, after you deploy the NC.
 
   1.	The certificate has expired
   2.	You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
@@ -36,7 +36,7 @@ ms.technology:  virtual-machine-manager
 
   > [!NOTE]
 
-  > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Follow with rest of the steps to update the certificate.
+  > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Proceed with rest of the steps to update the certificate.
 
 2.	Update the server certificate by executing the following PowerShell command on one of the NC nodes.
 
@@ -64,15 +64,15 @@ ms.technology:  virtual-machine-manager
 
   ```
 
-5.	In the Server REST resource, navigate to the **Connections** object and retrieve the Credential resource ID with type **X509Certificate**
+5.	In the Server REST resource, navigate to the **Connections** object and retrieve the credential resource ID with type **X509Certificate**.
 
   ```powershell
 
   "Connections":
     {
        {
-"ManagementAddresses":[ “contoso.com" ],                  
-    "CredentialType":  "X509Certificate",
+          "ManagementAddresses":[ “contoso.com" ],                  
+          "CredentialType":  "X509Certificate",
           "Protocol":  null,
           "Port":  null,
           "Credential": {
@@ -81,13 +81,13 @@ ms.technology:  virtual-machine-manager
                             "InstanceId":  "00000000-0000-0000-0000-000000000000",
                             …
                             …
-                                                                                            }
-       }   
+                         }
+        }   
     }
 
     ```
 
-6. Update the Credential REST resource of type **X509Certificate** retrieved above with the thumbprint of the new certificate.
+6. Update the credential REST resource of type **X509Certificate** retrieved above with the thumbprint of the new certificate.
 
   Execute these PowerShell cmdlet on any of the NC Node.
 
@@ -102,7 +102,7 @@ ms.technology:  virtual-machine-manager
 
  ```
 
-7.  Provision the NC certificate (without the private key) in the Trusted Root certificate store of the VMM machine using the following PowerShell cmdlet:
+7.  Provision the NC certificate (without the private key) in the trusted root certificate store of the VMM machine using the following PowerShell cmdlet:
 
   ```powershell
   $certificate = Get-SCCertificate -ComputerName "NCRestName"
@@ -125,4 +125,4 @@ ms.technology:  virtual-machine-manager
 
 ## Next steps
 
-- [Configure the VM settings](vm-settings.md)
+-[Configure the VM settings](vm-settings.md)
