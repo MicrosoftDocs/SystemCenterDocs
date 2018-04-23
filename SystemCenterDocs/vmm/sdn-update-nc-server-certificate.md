@@ -118,8 +118,3 @@ ms.technology:  virtual-machine-manager
 9. Verify  that the connectivity is working fine with the updated certificate.
 
   You can now remove the previous certificate from the NC nodes.
-
-
-## Next steps
-
-[Configure the VM settings](vm-settings.md)
