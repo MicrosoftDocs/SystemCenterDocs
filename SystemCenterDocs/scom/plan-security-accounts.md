@@ -5,7 +5,7 @@ description:  This article provides an overview of the security accounts require
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 04/22/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -42,7 +42,7 @@ You can use a low-privileged account for the agent’s action account. On comput
 > [!NOTE] 
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account.  Other Run As accounts can have lower privileges.  The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
 
-The domain account specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  This can be achieved by modifying the registry value HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Parameters:
+The domain account specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  This can be achieved by modifying the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
 
 * Name:  Worker Process Logon Type
 * Type: REG_DWORD
