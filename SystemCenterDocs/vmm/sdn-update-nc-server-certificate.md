@@ -26,7 +26,7 @@ ms.technology:  virtual-machine-manager
 
 ## Before you start
 
- To authenticate communication between the VMM server and the network controller, make sure you create a new SSL certificate with REST name. [Learn more](sdn-controller.md#set-up-the-security-certificates).
+ Make sure you create a new SSL certificate with existing network controller's REST name. [Learn more](sdn-controller.md#set-up-the-security-certificates).
 
 ## Update the server certificate
 
@@ -101,8 +101,9 @@ ms.technology:  virtual-machine-manager
   $cred
 
  ```
+7. If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the trusted root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
 
-7.  Provision the NC certificate (without the private key) in the trusted root certificate store of the VMM machine using the following PowerShell cmdlet:
+8. Provision the NC certificate (without the private key) in the trusted root certificate store of the VMM machine using the following PowerShell cmdlet:
 
   ```powershell
   $certificate = Get-SCCertificate -ComputerName "NCRestName"
@@ -111,14 +112,10 @@ ms.technology:  virtual-machine-manager
   $certificate -NetworkService $networkservice
 
  ```
-  -  *NetworkService* is the network controller service, *Certificate* is the new NC server certificate.
-  - *ProvisionSelfSignedCertificatesforNetworkService* is *$true* if you are updating to a self-signed certificate.
+  - **NetworkService** is the network controller service, **Certificate** is the new NC server certificate.
+  - **ProvisionSelfSignedCertificatesforNetworkService** is **$true** if you are updating to a self-signed certificate.
 
-  >[!NOTE]
-
-  > If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the trusted root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
-
-8. Verify  that the connectivity is working fine with the updated certificate.
+9. Verify  that the connectivity is working fine with the updated certificate.
 
   You can now remove the previous certificate from the NC nodes.
 
