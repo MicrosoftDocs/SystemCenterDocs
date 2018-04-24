@@ -17,8 +17,8 @@ ms.technology:  virtual-machine-manager
 
   You can change or update this certificate in the following scenarios, after you deploy the NC.
 
-  1.	The certificate has expired
-  2.	You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
+  -	The certificate has expired
+  -	You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
 
   > [!NOTE]
 
@@ -77,7 +77,7 @@ ms.technology:  virtual-machine-manager
           "Port":  null,
           "Credential": {
                             "Tags":  null,
-                            "ResourceRef":  "/credentials/41229069-85d4-4352-be85-034d0c5f4658",
+                            "ResourceRef":  "/credentials/<credential resource Id>,
                             "InstanceId":  "00000000-0000-0000-0000-000000000000",
                             …
                             …
@@ -97,7 +97,7 @@ ms.technology:  virtual-machine-manager
   $cred.type="X509Certificate"
   $cred.username=""
   $cred.value="<thumbprint of the new certificate>"
-  New-NetworkControllerCredential -ConnectionUri <REST uri of the deployment> -ResourceId 41229069-85d4-4352-be85-034d0c5f4658 -Properties
+  New-NetworkControllerCredential -ConnectionUri <REST uri of the deployment> -ResourceId <credential resource Id> -Properties
   $cred
 
  ```
@@ -118,3 +118,6 @@ ms.technology:  virtual-machine-manager
 9. Verify  that the connectivity is working fine with the updated certificate.
 
   You can now remove the previous certificate from the NC nodes.
+  
+ ## Next steps
+ [Validate the NC deployment](sdn-controller.md#validate-the-deployment) to ensure that the deployment is successful. 
