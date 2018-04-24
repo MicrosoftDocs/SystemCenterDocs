@@ -18,6 +18,7 @@
 ### [Deploy a shielded Linux VM](guarded-deploy-linux-vm.md)
 ## [Deploy and manage a software defined network (SDN) infrastructure](deploy-sdn.md)
 ### [Deploy an SDN network controller](sdn-controller.md)
+### [Update network controller server certificate](sdn-update-nc-server-certificate.md)
 ### [Encrypt networks](sdn-encrypt-networks.md)
 ### [Configure SDN guest clusters](sdn-guest-clusters.md)
 ### [Deploy an SDN SLB](sdn-slb.md)
