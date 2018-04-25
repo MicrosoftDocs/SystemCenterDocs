@@ -18,11 +18,11 @@ ms.author: "magoedte"
 manager: "carmonm"
 ---
 # Configuring Tests in Global Service Monitor
-Here are some key concepts and strategies to be aware of as you use [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)]:  
+Here are some key concepts and strategies to be aware of as you use [!INCLUDE[gsmshort](../includes/gsmshort-md.md)]:  
   
--   You can do most of your work with [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] on the [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] landing page. Here you can open the Web Application Availability Monitoring template or the Visual Studio Tests template to configure tests, update the proxy server and renew the certificate if you change the proxy server, and stop your [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] subscription. Additionally, you can view active alerts and view tests state from this page. To open the [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] landing page, in the [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] console, in the navigation pane, click **Administration**, and then click **[!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)]**.  
+-   You can do most of your work with [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] on the [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page. Here you can open the Web Application Availability Monitoring template or the Visual Studio Tests template to configure tests, update the proxy server and renew the certificate if you change the proxy server, and stop your [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] subscription. Additionally, you can view active alerts and view tests state from this page. To open the [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page, in the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, and then click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**.  
   
-     **The [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] landing page**  
+     **The [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page**  
   
      ![Global Service Monitor landing page](../../SystemCenterDocs/scom/media/gsm-administrationvstpage.gif "GSM_AdministrationVSTPage")  
   
