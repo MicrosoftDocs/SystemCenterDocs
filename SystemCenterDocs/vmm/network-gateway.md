@@ -54,7 +54,7 @@ The service template provides a highly available Windows Server Gateway deployme
 
   > [!NOTE]
 
-  > The templates downloaded are applicable for 2012, 2016 and 1801.
+  > The templates downloaded are applicable for 2012 R2, 2016 and 1801.
 
 2. The download is a compressed zip file. You'll need to extract the file. Files include a user guide, two service templates, and a custom resource folder (a folder with a .cr extension) that contains files required for the service templates.
 3. You'll need to decide which template to use, and then follow the instructions in the Quick Start Guide. The guide includes prerequisites for the template deployment, and instructions for setting up logical networks, creating a scale-out file server, preparing virtual hard disks for the gateway VM, and copying the custom resource file to the library. After you've set up the infrastructure it describes how to import and customize the template, and how to deploy it. There's also troubleshooting information if issues arise.
