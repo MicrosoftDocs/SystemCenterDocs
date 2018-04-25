@@ -1,21 +1,16 @@
 ---
 title: "Online Services Supplemental Terms and Conditions | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-18"
-ms.prod: "system-center-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "operations-manager"
+ms.date: 05/18/2016
+ms.prod: system-center-threshold
+ms.technology: operations-manager
 ms.tgt_pltfrm: ""
-ms.topic: "article"
-applies_to: 
-  - "System Center 2016 - Operations Manager"
+ms.topic: article
+applies_to: System Center 2016 - Operations Manager
 ms.assetid: 4251c039-89f3-4f60-9c1b-326edea39a98
-caps.latest.revision: 6
-author: "mgoedtel"
-ms.author: "magoedte"
-manager: "carmonm"
+author: mgoedtel
+ms.author: magoedte
+manager: carmonm
 ---
 # Online Services Supplemental Terms and Conditions
 1.  **Definitions**  

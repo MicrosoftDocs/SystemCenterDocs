@@ -1,21 +1,16 @@
 ---
 title: "Global Service Monitor Service Level Agreement (SLA) | Microsoft Docs"
+Description: 
 ms.custom: ""
-ms.date: "2016-05-18"
-ms.prod: "system-center-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "operations-manager"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-applies_to: 
-  - "System Center 2016 - Operations Manager"
+ms.date: 05/18/2016
+ms.prod: system-center-threshold
+ms.technology: operations-manager
+ms.topic: article
+applies_to: System Center 2016 - Operations Manager
 ms.assetid: 2b1f951d-90da-4ae6-be16-c35f3c0bca67
-caps.latest.revision: 5
-author: "mgoedtel"
-ms.author: "magoedte"
-manager: "carmonm"
+author: mgoedtel
+ms.author: magoedte
+manager: carmonm
 ---
 # Global Service Monitor Service Level Agreement (SLA)
 1.  **Standard terms applicable to all Service Levels outlined herein:**  

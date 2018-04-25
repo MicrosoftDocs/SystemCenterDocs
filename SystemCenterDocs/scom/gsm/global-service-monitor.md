@@ -1,7 +1,7 @@
 ---
 title: "Global Service Monitor | Microsoft Docs"
 ms.custom: ""
-ms.date: 05/182016
+ms.date: 05/18/2016
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""

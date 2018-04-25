@@ -7,8 +7,8 @@ ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: b3ec2501-ae71-4e34-ac29-f3177e0da3f8
-author: markgalioto
-ms.author: markgal
+author: mgoedtel
+ms.author: magoedte
 manager: carmonm
 ---
 # System Center Global Service Monitor Trial Subscription Agreement

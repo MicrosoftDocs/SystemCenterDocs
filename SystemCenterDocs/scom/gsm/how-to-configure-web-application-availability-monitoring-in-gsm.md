@@ -1,11 +1,12 @@
 ---
 title: "How to Configure Web Application Availability Monitoring in Global Service Monitor | Microsoft Docs"
+description:
 ms.custom: ""
-ms.date: 05/18/2018
+ms.date: 05/18/2016
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: article
 applies_to: System Center 2016 - Operations Manager
 ms.assetid: 6a959170-6d03-45e2-88bb-f55dc7f823c5
 author: mgoedtel

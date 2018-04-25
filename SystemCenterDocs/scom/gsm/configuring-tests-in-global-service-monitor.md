@@ -1,22 +1,19 @@
 ---
 title: "Configuring Tests in Global Service Monitor | Microsoft Docs"
+description: 
 ms.custom: ""
-ms.date: "2016-05-18"
-ms.prod: "system-center-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "operations-manager"
+ms.date: 05/18/2016
+ms.prod: system-center-threshold
+ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "System Center 2016 - Operations Manager"
+applies_to: System Center 2016 - Operations Manager
 ms.assetid: af419f3b-95c5-4112-8e58-193ea0d316e8
-caps.latest.revision: 8
-author: "mgoedtel"
-ms.author: "magoedte"
-manager: "carmonm"
+author: mgoedtel
+ms.author: magoedte
+manager: carmonm
 ---
+
 # Configuring Tests in Global Service Monitor
 Here are some key concepts and strategies to be aware of as you use [!INCLUDE[gsmshort](../includes/gsmshort-md.md)]:  
   
