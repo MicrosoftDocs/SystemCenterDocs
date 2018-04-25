@@ -1,38 +1,33 @@
 ---
 title: "How to Configure Web Application Availability Monitoring in Global Service Monitor | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-18"
-ms.prod: "system-center-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "operations-manager"
+ms.date: 05/18/2018
+ms.prod: system-center-threshold
+ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
-  - "System Center 2016 - Operations Manager"
+applies_to: System Center 2016 - Operations Manager
 ms.assetid: 6a959170-6d03-45e2-88bb-f55dc7f823c5
-caps.latest.revision: 15
-author: "mgoedtel"
-ms.author: "magoedte"
-manager: "carmonm"
+author: mgoedtel
+ms.author: magoedte
+manager: carmonm
 ---
 # How to Configure Web Application Availability Monitoring in Global Service Monitor
-[!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] is a cloud service that provides a simplified way to monitor the availability of external-web-based applications from multiple locations around the world. [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] has two monitoring types. These are the Web Application Availability monitoring that monitors single URLs, and Visual Studio Web Tests monitoring that lets you to run multi-step, authenticated web tests from Microsoft-provided agents in the cloud. Here are the instructions to configure Web Application Availability Tests.  
+[!INCLUDE[gsmlong](../includes/gsmlong-md.md)] is a cloud service that provides a simplified way to monitor the availability of external-web-based applications from multiple locations around the world. [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] has two monitoring types. These are the Web Application Availability monitoring that monitors single URLs, and Visual Studio Web Tests monitoring that lets you to run multi-step, authenticated web tests from Microsoft-provided agents in the cloud. Here are the instructions to configure Web Application Availability Tests.  
   
 ### To configure Web Application Availability tests  
   
-1.  To configure URL tests, open the [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] landing page. In the [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)]**, and then click **Configure Web Application Availability Tests**. This opens the Web Application Availability Monitoring template. This template lets you create availability monitoring tests for one or more Web Application URLs. You can run them from internal or external locations and use the template to select the URLs that you want to monitor and where you want to monitor them from. For more information about authoring and the template settings, see [Web Application Availability Monitoring template](http://go.microsoft.com/fwlink/?LinkId=24848)  
+1.  To configure URL tests, open the [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page. In the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, and then click **Configure Web Application Availability Tests**. This opens the Web Application Availability Monitoring template. This template lets you create availability monitoring tests for one or more Web Application URLs. You can run them from internal or external locations and use the template to select the URLs that you want to monitor and where you want to monitor them from. For more information about authoring and the template settings, see [Web Application Availability Monitoring template](http://go.microsoft.com/fwlink/?LinkId=24848)  
   
-     **Location of the [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] landing page**  
+     **Location of the [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page**  
   
-     ![Location of Global Service Monitor](../../SystemCenterDocs/scom/media/gsm-location-of.gif "GSM_Location_of_")  
+     ![Location of Global Service Monitor](../media/gsm/gsm-location-of.gif "GSM_Location_of_")  
   
 2.  On the **General** page, enter a friendly name and description for your test and the management pack. This stores settings that are specific to this version of the template. Click **Next**  
   
      **General page**  
   
-     ![General page](../../SystemCenterDocs/scom/media/waam-authtemp1general.gif "WAAM_AuthTemp1General")  
+     ![General page](../media/gsm/waam-authtemp1general.gif "WAAM_AuthTemp1General")  
   
     > [!TIP]
     >  You should give your tests names that you can easily recognize as this can help you identify them later when you start monitoring.  
@@ -41,7 +36,7 @@ manager: "carmonm"
   
      **What to Monitor page**  
   
-     ![What to Monitor page](../../SystemCenterDocs/scom/media/waam-authtemp2whattomonitor.gif "WAAM_AuthTemp2WhatToMonitor")  
+     ![What to Monitor page](../media/gsm/waam-authtemp2whattomonitor.gif "WAAM_AuthTemp2WhatToMonitor")  
   
     -   To type or paste a URL, click first in the **Name**, and then click the **URL** boxes. Follow the examples on the page to enter the information.  
   
@@ -57,9 +52,9 @@ manager: "carmonm"
   
      **Where to Monitor From page**  
   
-     ![Where to Monitor From Page](../../SystemCenterDocs/scom/media/gsm-wheretomonitorfrompage.gif "GSM_WheretoMonitorFromPage")  
+     ![Where to Monitor From Page](../media/gsm/gsm-wheretomonitorfrompage.gif "GSM_WheretoMonitorFromPage")  
   
-    -   To monitor from external locations, in the line above the **External locations** field, click **Add**, and select the external locations that you want to monitor from and add those to your list of **Selected locations**. Click **OK**. For [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:  
+    -   To monitor from external locations, in the line above the **External locations** field, click **Add**, and select the external locations that you want to monitor from and add those to your list of **Selected locations**. Click **OK**. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:  
   
         -   AU: Sydney  
   
@@ -87,19 +82,19 @@ manager: "carmonm"
   
          **Select external locations page**  
   
-         ![Select external locations page](../../SystemCenterDocs/scom/media/gsm-addexternallocationspage.gif "GSM_AddExternalLocationsPage")  
+         ![Select external locations page](../media/gsm/gsm-addexternallocationspage.gif "GSM_AddExternalLocationsPage")  
   
     -   To monitor from internal locations, use the dropdown menu to select to run tests from a server agent or a resource pool. In the area above the **Internal locations** field, click **Add** and select the internal locations (server names) you want to monitor from and add those to your list of **Selected locations**. Click **OK**.  
   
          **Select internal locations page**  
   
-         ![Select internal locations page](../../SystemCenterDocs/scom/media/waam-authtemp5.gif "WAAM_AuthTemp5")  
+         ![Select internal locations page](../media/gsm/waam-authtemp5.gif "WAAM_AuthTemp5")  
   
 5.  The **View and Validate Tests** page shows a summary of all tests (external and internal) that are to be run. You can only validate a configuration of internal tests. To validate an internal test configuration, select a test and then click **Run Test**.  If you want to change the default settings for the tests, performance data, and alerts for all tests (external and internal) created in this template, click **Change Configuration**. For more information, see the “Configuring alerts and performance data collection” in this document. When you have validated your tests, click **Next** to see the **Test Results** page of the test configuration that you created by using this template.  
   
      **View and Validate Tests page by using internal and external locations**  
   
-     ![View and Validate Tests page](../../SystemCenterDocs/scom/media/waam-authtemp6.gif "WAAM_AuthTemp6")  
+     ![View and Validate Tests page](../media/gsm/waam-authtemp6.gif "WAAM_AuthTemp6")  
   
     > [!TIP]
     >  Validate internal test configurations before you exit the wizard so that you can make sure that the response you receive is the one that you expect. To do this, select the test, and then click **Run Test**.  
@@ -108,11 +103,11 @@ manager: "carmonm"
   
      **Test Results page for internal tests**  
   
-     ![Test Results Summary tab](../../SystemCenterDocs/scom/media/waam-authtemp7atestresultssummarytab.gif "WAAM_AuthTemp7aTestResultsSummaryTab")  
+     ![Test Results Summary tab](../media/gsm/waam-authtemp7atestresultssummarytab.gif "WAAM_AuthTemp7aTestResultsSummaryTab")  
   
 7.  **Summary page**  
   
-     ![Summary page](../../SystemCenterDocs/scom/media/waam-authtemp9summaryoi.gif "WAAM_AuthTemp9SummaryOI")  
+     ![Summary page](../media/gsm/waam-authtemp9summaryoi.gif "WAAM_AuthTemp9SummaryOI")  
   
      Review the **Summary** page to make sure that the information accurately reflects the tests that you have configured. If they do not, click **Previous**, and on the **View and Validate Tests** page, click **Change Configuration**. If the information on the **Summary** page is correct, click **Create** to begin testing.  
   
@@ -129,9 +124,9 @@ manager: "carmonm"
   
      **Change Configuration page**  
   
-     ![Change Configuration for Test page &#40;top&#41;](../../SystemCenterDocs/scom/media/waam-authtemp8achangeconfigfortest.gif "WAAM_AuthTemp8aChangeConfigForTest")  
+     ![Change Configuration for Test page &#40;top&#41;](../media/gsm/waam-authtemp8achangeconfigfortest.gif "WAAM_AuthTemp8aChangeConfigForTest")  
   
-     ![Change Configuration for Test page &#40;bottom&#41;](../../SystemCenterDocs/scom/media/waam-authtemp8bchangeconfigfortest.gif "WAAM_AuthTemp8bChangeConfigForTest")  
+     ![Change Configuration for Test page &#40;bottom&#41;](../media/gsm/waam-authtemp8bchangeconfigfortest.gif "WAAM_AuthTemp8bChangeConfigForTest")  
   
     -   Content size: Size of the response body received.  
   
@@ -153,7 +148,7 @@ manager: "carmonm"
   
     -   Total transaction time: Same a download time for the single URL case. In multi-step (transaction) case, this is the sum of download times for all requests in the transaction (cumulative).  
   
-2.  In the **Test Frequency/Performance Data Collection Interval** section, you can set your tests’ frequency, how frequently you want performance data to be collected, and when the test should time out. For [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)], one test every five minutes is the minimum supported test interval.  
+2.  In the **Test Frequency/Performance Data Collection Interval** section, you can set your tests’ frequency, how frequently you want performance data to be collected, and when the test should time out. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], one test every five minutes is the minimum supported test interval.  
   
     > [!IMPORTANT]
     >  The option not to collect performance data during every collection interval applies to internal URL tests only. For external URL tests, data is collected every interval.  
@@ -172,4 +167,4 @@ manager: "carmonm"
 4.  You can also change settings for **Http Headers**, designate a **Proxy Server** (used for internal locations only), and change other general settings. When you have finished configuring the settings for your tests, click **OK** to return to the **View and Validate Tests** page.  
   
 ## See Also  
- [How to Configure Visual Studio Web Test Monitoring in Global Service Monitor](../../SystemCenterDocs/scom/how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md)
+ [How to Configure Visual Studio Web Test Monitoring in Global Service Monitor](how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md)
