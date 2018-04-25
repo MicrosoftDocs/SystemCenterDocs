@@ -108,7 +108,7 @@ Microsoft is committed to protecting your privacy, while delivering online servi
   
  **Choice/Control:**  
   
- The customer has to manually install the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] features by importing a set of Management Packs into their [!INCLUDE[om12short](../includes/om12short-md.md)] software environment and running through the Setup Wizard. To uninstall [!INCLUDE[gsmlong](../scom/includes/gsmlong-md.md)], the customer needs to delete the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Management Packs.  
+ The customer has to manually install the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] features by importing a set of Management Packs into their [!INCLUDE[om12short](../includes/om12short-md.md)] software environment and running through the Setup Wizard. To uninstall [!INCLUDE[gsmlong](../includes/gsmlong-md.md)], the customer needs to delete the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Management Packs.  
   
 ### Transfer of results from the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Service to the Customer  
  **What this feature does:**  
