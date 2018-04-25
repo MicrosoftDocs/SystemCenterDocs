@@ -24,9 +24,9 @@ Here are some key concepts and strategies to be aware of as you use [!INCLUDE[gs
   
      **The [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page**  
   
-     ![Global Service Monitor landing page](../../SystemCenterDocs/scom/media/gsm-administrationvstpage.gif "GSM_AdministrationVSTPage")  
+     ![Global Service Monitor landing page](../media/gsm/gsm-administrationvstpage.gif "GSM_AdministrationVSTPage")  
   
--   [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] can monitor applications in addition to individual URLs. Your tests can be authored to optimize for application monitoring or vertical application feature monitoring. For example, a website shopping experience is a vertical application feature. Or, you can monitor horizontal application features, such as all home pages on a site.  
+-   [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] can monitor applications in addition to individual URLs. Your tests can be authored to optimize for application monitoring or vertical application feature monitoring. For example, a website shopping experience is a vertical application feature. Or, you can monitor horizontal application features, such as all home pages on a site.  
   
 -   Give your tests friendly names that you can easily recognize when you monitor them. These names are displayed in state views and alerts.  
   
@@ -40,14 +40,14 @@ Here are some key concepts and strategies to be aware of as you use [!INCLUDE[gs
 -   If you are monitoring a vertical website or an application, you can focus alerts on application state by setting up a summary alert for an application, rather than choosing to receive an alert for each URL test for an application. This will reduce the number of alerts you receive and keep the focus of your alerts the overall state of the application. You can further reduce alerts by set the threshold for how many failures you want to have before receiving an alert. Together, these two approaches will focus your alerts on what is most important to you: how well the application is running.  
   
 ## Comparing monitoring types  
- [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] has three management pack templates that can be used monitor web applications.  
+ [!INCLUDE[om12short](../includes/om12short-md.md)] has three management pack templates that can be used monitor web applications.  
   
-|Monitoring template|When to use|[!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] Subscription|  
+|Monitoring template|When to use|[!INCLUDE[gsmshort](../includes/gsmshort-md.md)] Subscription|  
 |-------------------------|-----------------|---------------------------------------------------------------------------|  
 |Web Application Availability Monitoring|-   Have to know the availability of a web application<br />-   You have to see how your application webpages respond when they are accessed from external geographic locations around the world<br />-   You are not looking to monitor multi-step transactions|Required|  
 |Visual Studio Web Test Monitoring|-   Have to know the availability of a web application and more details<br />-   You have to monitor your applications by using Visual Studio web tests that are running from external geographic locations around the world<br />-   You do have to monitor multi-step or authenticated transactions|Required|  
 |Web Application Transaction Monitoring|Have to monitor intranet applications from internal locations. The monitored applications cannot be accessed from the Internet|Not required|  
   
 ## See Also  
- [How to Configure Web Application Availability Monitoring in Global Service Monitor](../../SystemCenterDocs/scom/6a959170-6d03-45e2-88bb-f55dc7f823c5.md)   
- [How to Configure Visual Studio Web Test Monitoring in Global Service Monitor](../../SystemCenterDocs/scom/how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md)
+ [How to Configure Web Application Availability Monitoring in Global Service Monitor](how-to-configure-web-application-availability-monitoring-in-gsm.md)   
+ [How to Configure Visual Studio Web Test Monitoring in Global Service Monitor](how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md)
