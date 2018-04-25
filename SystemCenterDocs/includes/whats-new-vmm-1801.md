@@ -1,12 +1,12 @@
 ---
 ms.assetid: 0683ab30-6f03-4ffc-a50d-8d91d61768fe
-title: What's new in System Center Virtual Machine Manager 1801
-description: This article describes the new features supported in VMM 1801.
+title: include file
+description: include file to detail the new features in virtual machine manager
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
-manager:  riyazp
-ms.date:  02/05/2018
-ms.topic:  article
+manager:  vvithal
+ms.date:  04/25/2018
+ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
@@ -103,8 +103,8 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 
 ## Azure Integration
 
-### Management of ARM-based and region-specific Azure subscriptions
+### Management of Azure Resource Manager-based and region-specific Azure subscriptions
 
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
 
-VMM 1801 supports management of ARM-based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
+VMM 1801 supports management of Azure Resource Manager (ARM) based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).

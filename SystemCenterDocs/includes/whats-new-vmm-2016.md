@@ -1,12 +1,12 @@
 ---
 ms.assetid: b329876f-68f3-4087-beb3-076c1ad84f49
-title: What's new in VMM in System Center 2016
-description: This article describes what's new in System Center VMM 2016
+title: include file
+description: include file to describe the new features in virtual machine manager
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
+ms.date:  04/25/2018
+ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
