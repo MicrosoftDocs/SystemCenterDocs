@@ -1,35 +1,32 @@
 ---
 title: "Dashboard Views in Global Service Monitor | Microsoft Docs"
+description: 
 ms.custom: ""
-ms.date: "2016-05-18"
-ms.prod: "system-center-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "operations-manager"
+ms.date: 05/18/2016
+ms.prod: system-center-threshold
+ms.technology: operations-manager
 ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: article
 applies_to: 
   - "System Center 2016 - Operations Manager"
   - "System Center Global Service Monitor"
 ms.assetid: b6734cca-d015-4e3a-9211-ffd0ec679736
-caps.latest.revision: 25
-author: "mgoedtel"
-ms.author: "magoedte"
-manager: "carmonm"
+author: mgoedtel
+ms.author: magoedte
+manager: carmonm
 ---
 # Dashboard Views in Global Service Monitor
-Dashboards in [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] show your test results so that you can more effectively see trends and isolate problems for certain tests, locations, and applications.  
+Dashboards in [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] show your test results so that you can more effectively see trends and isolate problems for certain tests, locations, and applications.  
   
 ## The Summary Dashboard  
  If you want to check whether an application is available, the Summary Dashboard is a helpful view. The Summary Dashboard displays a world map, the locations that you are monitoring from, and the rollup test status from each location. You can then click the location or select several locations to compare.  
   
- ![Summary dashboard](../../SystemCenterDocs/scom/media/outsidein-summarydashboard.gif "OutsideIn_SummaryDashboard")  
+ ![Summary dashboard](../media/gsm/outsidein-summarydashboard.gif "OutsideIn_SummaryDashboard")  
 The Summary Dashboard shows where you are monitoring from and the rollup test status from each location.  
   
 #### To check the overall status of a web application by using the Summary Dashboard  
   
-1.  In the [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)]**, and then click **View test state** for either Web Application Availability or Visual Studio Web Test.  
+1.  In the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, and then click **View test state** for either Web Application Availability or Visual Studio Web Test.  
   
 2.  Click to highlight an entry for the application that you want to see a summary of. Then, in the **Tasks** pane, in the **Navigation** section, click **Summary Dashboard**. This displays a dashboard for the whole application—a world map that shows all locations the application is being tested from and the worst rollup status of all the tests from each location. For example, red means that at least one test from that location has failed and green means that no tests have failed.  
   
@@ -52,12 +49,12 @@ The Summary Dashboard shows where you are monitoring from and the rollup test st
 > [!NOTE]
 >  The Detailed Dashboard is available only for Web Application Availability Monitoring. It is not available for Visual Studio Tests Monitoring.  
   
- ![Details dashboard](../../SystemCenterDocs/scom/media/outsidein-details.gif "OutsideIn_Details")  
+ ![Details dashboard](../media/gsm/outsidein-details.gif "OutsideIn_Details")  
 The Detailed Dashboard helps isolate issues from any test and location.  
   
 #### To pinpoint problems using the Detailed Dashboard  
   
-1.  Begin the same way that you opened the Summary Dashboard. In the [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)]**, click **View test state**, and then click **Detailed Dashboard**.  
+1.  Begin the same way that you opened the Summary Dashboard. In the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, click **View test state**, and then click **Detailed Dashboard**.  
   
 2.  Click to highlight an entry for the application that you want to see a summary of, and in the **Tasks** pane, in the **Navigation** section, click **Detailed Dashboard - List**.  
   
@@ -87,14 +84,14 @@ The Detailed Dashboard helps isolate issues from any test and location.
     >  It is a good idea to check Health Explorer frequently because it shows you details about the context and sequence of status changes and errors.  
   
 ## The Test Visualization Dashboard  
- The Test Visualization Dashboard lets you see [!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)] web test results in [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] in a view similar to Visual Studio. It displays performance data (total transaction time over time).  
+ The Test Visualization Dashboard lets you see [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] web test results in [!INCLUDE[om12short](../includes/om12short-md.md)] in a view similar to Visual Studio. It displays performance data (total transaction time over time).  
   
- ![Summary dashboard](../../SystemCenterDocs/scom/media/outsidein-summarydashboard.gif "OutsideIn_SummaryDashboard")  
+ ![Summary dashboard](../media/gsm/outsidein-summarydashboard.gif "OutsideIn_SummaryDashboard")  
 The Test Visualization Dashboard  
   
 #### To see test results in the Test Visualization Dashboard  
   
-1.  In the [!INCLUDE[om12short](../../SystemCenterDocs/scom/includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../../SystemCenterDocs/scom/includes/gsmshort-md.md)]**, and then click **View test state** for either Web Application Availability or Visual Studio Web Test.  
+1.  In the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, and then click **View test state** for either Web Application Availability or Visual Studio Web Test.  
   
 2.  Click to highlight an entry for an application. Then, in the **Tasks** pane, in the **Navigation** section, click **View Test Visualization Dashboard**. This displays the test results that include performance metrics for a test result  
   
