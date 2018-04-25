@@ -223,7 +223,7 @@
 #### [Monitoring Tests and Alerts for GSM](./gsm/monitoring-tests-and-alerts-for-global-service-monitor.md)
 #### [Dashboard Views in GSM](./gsm/dashboard-views-in-global-service-monitor.md)
 #### [Downloading and sharing GSM web tests and results](./gsm/downloading-and-sharing-global-service-monitor-web-tests-and-results.md)
-#### [Privacy Statement](./gsm/privacy-statement-for-gsm.md)
+#### [Privacy Statement](./gsm/privacy-statement-for gsm.md)
 #### [GSM Service Level Agreement](./gsm/global-service-monitor-service-level-agreement-sla.md)
 #### [Online Services Supplemental Terms and Conditions](./gsm/online-services-supplemental-terms-and-conditions.md)
 #### [Terms and Conditions for GSM as a Software Assurance Benefit](./gsm/terms-conditions-for-gsm-as-sa-benefit.md) 
