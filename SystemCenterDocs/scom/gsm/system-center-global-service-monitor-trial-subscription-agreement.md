@@ -12,7 +12,7 @@ ms.author: markgal
 manager: carmonm
 ---
 # System Center Global Service Monitor Trial Subscription Agreement
-This Trial Subscription agreement (“Agreement”) is between the entity agreeing to these terms (“Customer,” “you” or “your”) and Microsoft, (“Microsoft, “we,” “us,” or “our”). The terms and conditions of this Agreement apply to your access and use of the Microsoft [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] Trial Subscription, including any technology, information, software, materials, and updates that Microsoft makes available to you as part of such services (the “Online Service”). Unless otherwise expressly noted, the following terms apply to the Online Service provided to you under this Agreement.  
+This Trial Subscription agreement (“Agreement”) is between the entity agreeing to these terms (“Customer,” “you” or “your”) and Microsoft, (“Microsoft, “we,” “us,” or “our”). The terms and conditions of this Agreement apply to your access and use of the Microsoft [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Trial Subscription, including any technology, information, software, materials, and updates that Microsoft makes available to you as part of such services (the “Online Service”). Unless otherwise expressly noted, the following terms apply to the Online Service provided to you under this Agreement.  
   
  This Agreement is effective on the date you accept it or upon your first use of the Online Service. If you are accepting this Agreement on behalf of your employer or another legal entity, you represent and warrant that you have the authority to bind that entity and that you are agreeing to these terms on behalf of that entity. If you cannot truthfully make these representations, do not accept this Agreement.  
   
@@ -24,11 +24,11 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
     - (1) any government agency, department, office, instrumentality, division, unit or other entity, of your state, provincial or local government that you supervise or is part of you, or which supervises you or you are part of, or which is under common supervision with you;
     - (2) any county, borough, commonwealth, city, municipality, town, township, special purpose district, or other similar type of governmental instrumentality established by the laws of your state or province and located within your state’s or province’s jurisdiction and geographic boundaries; and 
     - (3) any other entity in your state or province expressly authorized by the laws of your state or province to purchase under state or provincial contracts; provided that a state or province and its Affiliates shall not, for purposes of this definition, be considered to be Affiliates of the federal government or its Affiliates. Notwithstanding the foregoing, provincial Crown corporations are not Affiliates for the purposes of this definition. If you are an agency of the U.S. government, “Affiliate” means any other agency of the U.S. government. If you are an agency of the Canadian government, “Affiliate” means any other agency of the Canadian government, except for a federal Crown corporation.
-  - “Customer Data” means all data, including all text, website URLs, including data you store or is stored on your behalf at such URLs, http headers, sound, or images that you provide, or are provided on your behalf, to us through your use of the Online Service. For more information on the data collected by the Online Service see the Microsoft [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] Privacy Statement available at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)
+  - “Customer Data” means all data, including all text, website URLs, including data you store or is stored on your behalf at such URLs, http headers, sound, or images that you provide, or are provided on your behalf, to us through your use of the Online Service. For more information on the data collected by the Online Service see the Microsoft [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Privacy Statement available at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)
   - “License” means the non-exclusive, non-perpetual, non-transferable right to copy, install, use, access, display, run and/or otherwise interact with this Online Service for evaluation purposes.
   - “Microsoft” means Microsoft Corporation, and its affiliates, as appropriate.
     “Online Service” is defined in the first paragraph of this Agreement.
-  - “Portal” means the Microsoft [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] Portal currently located at [http://go.microsoft.com/fwlink/?LinkId=269747](http://go.microsoft.com/fwlink/?LinkId=269747) or at an alternate website Microsoft identifies.
+  - “Portal” means the Microsoft [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Portal currently located at [http://go.microsoft.com/fwlink/?LinkId=269747](http://go.microsoft.com/fwlink/?LinkId=269747) or at an alternate website Microsoft identifies.
   - “Supplemental Software” means any software, including management packs, provided to you as part of the Online Service and which is used with the Online Service to enable certain functions of the Online Service.
   - “Term” means this 90-day Trial Subscription.
   - “Trial Subscription” means a subscription lasting 90 days without charge, subject to the other terms provided herein.
@@ -43,7 +43,7 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
   
         2.  **Your responsibility.** You are solely responsible for the Customer Data and information used to develop, operate or maintain any software programs or services you use to access or use the Online Service.  
   
-        3.  **Privacy, use and security of Customer Data by us.** We will handle your Customer Data according to the terms of this Agreement and the privacy, use and security terms set forth in the [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] Privacy Statement at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)  
+        3.  **Privacy, use and security of Customer Data by us.** We will handle your Customer Data according to the terms of this Agreement and the privacy, use and security terms set forth in the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Privacy Statement at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)  
   
         4.  **Storage of Customer Data.** We may delete any Customer Data that remains in the Online Service after this Agreement terminates or expires. We have no obligation to hold, export, or return any Customer Data you provide under this Agreement. Microsoft has no liability for the deletion of Customer Data.  
   
@@ -89,7 +89,7 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
   
     8.  **Availability of Online Service.** Customers may use the Online Service to analyze the configuration of Customer’s servers located in the specific countries identified at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)  
   
-         or at an alternate website Microsoft identifies. In any countries where such access is not prohibited by applicable law, customers with an Internet connection can view the [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] website at [http://go.microsoft.com/fwlink/?LinkId=269747](http://go.microsoft.com/fwlink/?LinkId=269747)  
+         or at an alternate website Microsoft identifies. In any countries where such access is not prohibited by applicable law, customers with an Internet connection can view the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] website at [http://go.microsoft.com/fwlink/?LinkId=269747](http://go.microsoft.com/fwlink/?LinkId=269747)  
   
     9. **Your account.**  
   
@@ -127,7 +127,7 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
   
         1.  you are a current Volume Licensing customer, and  
   
-        2.  have active Software Assurance on eligible products as defined in the “[!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)]” section of the Microsoft Product List.  
+        2.  have active Software Assurance on eligible products as defined in the “[!INCLUDE[gsmlong](../includes/gsmlong-md.md)]” section of the Microsoft Product List.  
   
          In the event of conversion, Customer Data will be retained per the terms of the applicable Volume Licensing agreements and associated data retention policies.  
   
@@ -226,7 +226,7 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
          Notices should be sent to:  
   
          Microsoft Corporation  
-        [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)]  
+        [!INCLUDE[gsmlong](../includes/gsmlong-md.md)]  
         Management and Security Business Group  
         One Microsoft Way  
         Redmond, Washington 98052  
@@ -236,7 +236,7 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
   
          Microsoft Corporation  
         Legal and Corporate Affairs for  
-        [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)]  
+        [!INCLUDE[gsmlong](../includes/gsmlong-md.md)]  
         One Microsoft Way  
         Redmond, Washington 98052  
         USA  
@@ -307,7 +307,7 @@ This Trial Subscription agreement (“Agreement”) is between the entity agreei
   
     1.  **INTERNET-BASED SERVICES.** Microsoft provides Internet-based services with the Supplemental Software. It may change or cancel them at any time.  
   
-        1.  **Consent for Internet-Based Services.** The software feature described below connects to Microsoft or service provider computer systems over the Internet. In some cases, you will not receive a separate notice when they connect. By using these features, you consent to the transmission of this information.  Microsoft does not use the information to identify or contact you. You can find out more by visiting the Microsoft [!INCLUDE[gsmlong](../../SystemCenterDocs/scom/includes/gsmlong-md.md)] Privacy Statement at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)  
+        1.  **Consent for Internet-Based Services.** The software feature described below connects to Microsoft or service provider computer systems over the Internet. In some cases, you will not receive a separate notice when they connect. By using these features, you consent to the transmission of this information.  Microsoft does not use the information to identify or contact you. You can find out more by visiting the Microsoft [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Privacy Statement at [http://go.microsoft.com/fwlink/?LinkId=269749](http://go.microsoft.com/fwlink/?LinkId=269749)  
   
         2.  **Computer Information.** The following features use Internet protocols, which send to the appropriate systems computer information, such as your Internet protocol address, the type of operating system, browser and name and version of the Supplemental Software you are using, and the language code of the device where you installed the Supplemental Software. Microsoft uses this information to make the Internet-based service available to you.  
   

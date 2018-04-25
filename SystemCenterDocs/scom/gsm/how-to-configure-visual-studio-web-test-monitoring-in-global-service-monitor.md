@@ -31,7 +31,7 @@ manager: carmonm
   
      **General page for Visual Studio Web Tests**  
   
-     ![General page for Visual Studio Web Tests](../../SystemCenterDocs/scom/media/gsm-generalvstpage.gif "GSM_GeneralVSTPage")  
+     ![General page for Visual Studio Web Tests](../media/gsm/gsm-generalvstpage.gif "GSM_GeneralVSTPage")  
   
     > [!TIP]
     >  You should give your tests names that you can easily recognize as this helps you identify them later when you start to monitor.  
