@@ -22,7 +22,7 @@ VMM  supports Nested Virtualization feature that allows you to run Hyper-V insid
 
 You can leverage this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third- party virtualization management products with Microsoft hypervisor.
 
-You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement.  [Learn more](vm-nested-virtualization.md).
+You can enable or disable the nested virtualization feature using SCVMM 1801. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement.  [Learn more](../vmm/vm-nested-virtualization.md).
 
 
 ### Migration of VMware VM (EFI firmware-based VM) to Hyper-V VM
@@ -31,7 +31,7 @@ The current VMM migration for VMware VMs to Hyper-V only supports migration of B
 
 VMM 1801 release enables migration of EFI based VMware VMs to Hyper-V generation 2 VMs. VMware VMs that you migrate to Microsoft Hyper-V platform can take advantage of the Hyper-V generation 2 features.
 
-As part of this release, the **Convert Virtual machine** wizard enables the VM migration based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately: [Learn more](vm-convert-vmware.md).
+As part of this release, the **Convert Virtual machine** wizard enables the VM migration based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately: [Learn more](../vmm/vm-convert-vmware.md).
 
 1.	BIOS-based VMs are migrated to Hyper-V VM generation 1.
 2.	EFI-based VMs are migrated to Hyper-V VM generation 2.
@@ -50,7 +50,7 @@ In our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs,
 
 Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
 
-VMM 1801 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](enhanced-console-session.md).
+VMM 1801 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](../vmm/enhanced-console-session.md).
 
 ## Storage
 
@@ -59,9 +59,9 @@ Storage Quality of Service (SQoS) provides a way to centrally monitor and manage
 
 VMM 1801 supports the following improvements in SQoS:
 
-- Extension of SQoS support beyond S2D - You can now assign storage QoS policies to storage area networks (SAN). [Learn more](qos-storage-clusters.md).
+- Extension of SQoS support beyond S2D - You can now assign storage QoS policies to storage area networks (SAN). [Learn more](../vmm/qos-storage-clusters.md).
 - Support for VMM private cloud - storage QoS policies can now be consumed by the VMM cloud tenants. [Learn more](cloud-create.md).
-- Availability of storage QoS policies as templates - You can set storage QoS policies through VM templates. [Learn more](library-vm-templates.md).
+- Availability of storage QoS policies as templates - You can set storage QoS policies through VM templates. [Learn more](../vmm/library-vm-templates.md).
 
 
 ## Networking
@@ -73,18 +73,18 @@ With the advent of the software defined network (SDN), in Windows Server 2016 an
 With the introduction of the SDN, VMs which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
 
 VMM 1801 release also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1801 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
-. [Learn more](sdn-guest-clusters.md).
+. [Learn more](../vmm/sdn-guest-clusters.md).
 
 ### Configuration of  SLB VIPs through VMM service templates
 SDN in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of  SLB Virtual IPs (VIPs) using power shell.
 
-With VMM 1801, VMM supports configuration of SLB VIPs while deploying multi-tier application by using the service templates. [Learn more](sdn-configure-slb-vip.md).
+With VMM 1801, VMM supports configuration of SLB VIPs while deploying multi-tier application by using the service templates. [Learn more](../vmm/sdn-configure-slb-vip.md).
 
 ### Configuration of encrypted VM networks through VMM
 
 VMM 1801 supports encryption of VM networks. Using the new encrypted networks feature, end-to-end encryption can be easily configured on VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same network and same subnet, from being read and manipulated.
 
-The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network. [Learn more](sdn-encrypt-networks.md).
+The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network. [Learn more](../vmm/sdn-encrypt-networks.md).
 
 ## Security
 
@@ -99,7 +99,7 @@ Being at the heart of providing attestation and key protection services to run s
 Using VMM 1801, a guarded host can be configured with a primary and a secondary pair of HGS URLS (an attestation and key protection URI). This capability enables scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
 
 The primary HGS URLs will always be used in favor of the secondary.  If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be reattempted against the secondary.  Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
-[Learn more](guarded-fallback-hgs.md).
+[Learn more](../vmm/guarded-fallback-hgs.md).
 
 ## Azure Integration
 
@@ -107,4 +107,4 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
 
-VMM 1801 supports management of ARM-based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](vms-manage-azure-ad-and-region-specific.md).
+VMM 1801 supports management of ARM-based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).

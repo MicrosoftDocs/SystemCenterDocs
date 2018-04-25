@@ -29,4 +29,4 @@ This article details the new features included in this release of VMM.
 ::: moniker-end
 
 ## Next steps
-[Plan VMM installation](plan-install.md)
+[Plan VMM installation](../vmm/plan-install.md)
