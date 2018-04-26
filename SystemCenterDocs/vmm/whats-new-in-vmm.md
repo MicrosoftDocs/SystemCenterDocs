@@ -29,4 +29,5 @@ This article lists the new features provided in this version of System Center - 
 ::: moniker-end
 
 ## Next steps
-[Plan VMM installation](../vmm/plan-install.md)
+- [Know the VMM system requirements](system-requirements.md)
+- [Plan VMM installation](../vmm/plan-install.md)

@@ -1,20 +1,19 @@
 ---
 ms.assetid: 0b604566-dab0-4e9e-90e1-ff62861c4396
-title: VMM system requirements
-description: This article provides information about system requirements for VMM 1801.
+title: include file
+description: include article to details system requirements for VMM 1801
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  02/05/2018
-ms.topic:  article
+ms.date:  04/26/2018
+ms.topic:  include
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
 ---
 
-# VMM 1801 system requirements
+## VMM 1801 system requirements
 
-This article describes the scalability information, hardware, software, and SQL Server requirements for System Center 1801 - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for System Center 1801 - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
@@ -115,7 +114,7 @@ Windows Server 1709 | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations](manage-vmware-hosts.md)
+Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
 

@@ -1,21 +1,19 @@
 ---
-title: System Center 2016 - Virtual Machine Manager (VMM) system requirements
-description: This article provides information about system requirements for VMM 2016
+ms.assetid: 2a758506-7d92-4bb7-9b74-61e206ed6203
+title: include file
+description: include file to provide information about system requirements for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  03/05/2018
-ms.topic:  article
+ms.date:  04/26/2018
+ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-2016'
 ---
 
-# VMM 2016 system requirements
+## VMM 2016 system requirements
 
-
-
-This article describes the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM) 2016, and summarizes the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM) 2016, and summarizes the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
@@ -122,7 +120,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations](manage-vmware-hosts.md)
+Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
 
