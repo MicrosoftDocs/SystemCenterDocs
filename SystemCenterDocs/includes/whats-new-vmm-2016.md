@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 
 
-This article describes features that were introduced in System Center 2016 - Virtual Machine Manager (VMM).
+The following sections describe the features that were introduced in System Center 2016 - Virtual Machine Manager (VMM).
 
 
 ## Compute
