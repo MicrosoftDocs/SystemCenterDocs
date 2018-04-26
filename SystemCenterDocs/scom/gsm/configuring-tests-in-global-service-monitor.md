@@ -21,7 +21,7 @@ Here are some key concepts and strategies to be aware of as you use [!INCLUDE[gs
   
      **The [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] landing page**  
   
-     ![Global Service Monitor landing page](../media/gsm/gsm-administrationvstpage.gif "GSM_AdministrationVSTPage")  
+     ![Global Service Monitor landing page](../media/gsm/gsm-administrationvstpage.png "GSM_AdministrationVSTPage")  
   
 -   [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] can monitor applications in addition to individual URLs. Your tests can be authored to optimize for application monitoring or vertical application feature monitoring. For example, a website shopping experience is a vertical application feature. Or, you can monitor horizontal application features, such as all home pages on a site.  
   

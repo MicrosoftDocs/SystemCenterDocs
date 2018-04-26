@@ -21,7 +21,7 @@ Dashboards in [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] show your test re
 ## The Summary Dashboard  
  If you want to check whether an application is available, the Summary Dashboard is a helpful view. The Summary Dashboard displays a world map, the locations that you are monitoring from, and the rollup test status from each location. You can then click the location or select several locations to compare.  
   
- ![Summary dashboard](../media/gsm/outsidein-summarydashboard.gif "OutsideIn_SummaryDashboard")  
+ ![Summary dashboard](../media/gsm/outsidein-summarydashboard.png "OutsideIn_SummaryDashboard")  
 The Summary Dashboard shows where you are monitoring from and the rollup test status from each location.  
   
 #### To check the overall status of a web application by using the Summary Dashboard  
@@ -49,7 +49,7 @@ The Summary Dashboard shows where you are monitoring from and the rollup test st
 > [!NOTE]
 >  The Detailed Dashboard is available only for Web Application Availability Monitoring. It is not available for Visual Studio Tests Monitoring.  
   
- ![Details dashboard](../media/gsm/outsidein-details.gif "OutsideIn_Details")  
+ ![Details dashboard](../media/gsm/outsidein-details.png "OutsideIn_Details")  
 The Detailed Dashboard helps isolate issues from any test and location.  
   
 #### To pinpoint problems using the Detailed Dashboard  
@@ -86,7 +86,7 @@ The Detailed Dashboard helps isolate issues from any test and location.
 ## The Test Visualization Dashboard  
  The Test Visualization Dashboard lets you see [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] web test results in [!INCLUDE[om12short](../includes/om12short-md.md)] in a view similar to Visual Studio. It displays performance data (total transaction time over time).  
   
- ![Summary dashboard](../media/gsm/outsidein-summarydashboard.gif "OutsideIn_SummaryDashboard")  
+ ![Summary dashboard](../media/gsm/outsidein-summarydashboard.png "OutsideIn_SummaryDashboard")  
 The Test Visualization Dashboard  
   
 #### To see test results in the Test Visualization Dashboard  
