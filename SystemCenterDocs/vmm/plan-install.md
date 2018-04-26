@@ -35,10 +35,10 @@ Verify the following [system requirements](system-requirements.md):
 **Command line utilities for SQL Server** | [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=42295)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
 **Guest operating system** | Windows operating systems [supported by Hyper-V](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
-**PowerShell** | [Supported versions](system-reqs.md#installation-components)
-**.NET** | [Supported versions](system-reqs.md#installation-components)
-**Host agent** | VMM 2016<br/><br/> Needed for hosts managed in VMM.
-**Monitoring** | System Center Operations Manager 2016. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
+**PowerShell** | [Supported versions](system-requirements.md)
+**.NET** | [Supported versions](system-requirements.md)
+**Host agent** | VMM 2016/1801<br/><br/> Needed for hosts managed in VMM.
+**Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
 **VMware** | vCenter 5.1, 5.5, 5.8, 6.0<br/><br/> ESX 5.5, ESX 6.0<br/><br/> vCenter and ESX servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare metal servers.
 
