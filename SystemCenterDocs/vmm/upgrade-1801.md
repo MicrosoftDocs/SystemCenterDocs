@@ -20,7 +20,7 @@ This article provides information about how to upgrade to System Center 1801 - V
 
 - You should be running VMM on System Center 2012 R2 update rollup 14 or 2016 UR 4.
 - Ensure that the server meets all requirements for VMM 1801, and that prerequisites are in place [Learn more](install.md)
-- Make sure you're running a [supported version of SQL Server](system-reqs-1801.md#sql-server).
+- Make sure you're running a [supported version of SQL Server](../includes/system-reqs-vmm-1801.md#sql-server).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
 	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 1801.

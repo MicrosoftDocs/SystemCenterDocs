@@ -14,13 +14,13 @@ monikerRange: 'sc-vmm-2016'
 # Upgrade to System Center 2016 - VMM
 
 
-This article summarizes the steps for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes. 
+This article summarizes the steps for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 with update rollup 9 or later.
 - Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](install.md)
-- Make sure you're running a [supported version of SQL Server](system-reqs.md#sql-server).
+- Make sure you're running a [supported version of SQL Server](../includes/system-reqs-vmm-2016.md#sql-server).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
 	- You should verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) requirements for VMM 2016.

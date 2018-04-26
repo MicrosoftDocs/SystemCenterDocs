@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 # System requirements for virtual machine manager (VMM)
 
-This article describes the scalability information, hardware, software, and SQL Server requirements for this version of Virtual Machine Manager (VMM).
+This article describes the hardware, software, and SQL Server requirements for this version of Virtual Machine Manager (VMM). It also includes the scalability information.
 
 ::: moniker range="sc-vmm-1801"
 
