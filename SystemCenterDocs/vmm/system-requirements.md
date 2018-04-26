@@ -11,9 +11,9 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-# System requirements for virtual machine manager (VMM)
+# System requirements for virtual machine manager 
 
-This article details the system requirements for system center - virtual machine manager (VMM). 
+This article details the system requirements for system center - virtual machine manager (VMM).
 
 ::: moniker range="sc-vmm-1801"
 
