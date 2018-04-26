@@ -1,7 +1,7 @@
 ---
 title: "Downloading and Sharing Global Service Monitor Web Tests and Results | Microsoft Docs"
 ms.custom: ""
-ms.date: 05/18/2016
+ms.date: 4/26/2018
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
@@ -24,7 +24,7 @@ manager: carmonm
 > [!NOTE]
 >  Access to the share where web test result files are placed is configured in the Alert Attachment management pack. If an operations administrator needs to access web test results files, make sure that their account has been granted permissions to the share where the web test files are placed.  
   
-#### To automatically download and access web test results from alerts  
+### Automatically download and access web test results from alerts  
   
 1.  Configure the Alert Attachment management pack. After you configure the Alert Attachment management pack, alerts generated from the Visual Studio Web Test template download the web test result file for the test run associated with that alert. For more information, see How to Configure File Attachments for Operations Manager Alerts in System Center 2012 SP1  
   
@@ -34,7 +34,7 @@ manager: carmonm
   
 4.  Alerts and their attachments can be automatically or manually assigned as work items in Team Foundation Server (TFS), which makes it easy for the development team to investigate and resolve issues in their familiar development environment that were brought to your attention via GSM. For more information, see How to Configure Integration with TFS in System Center 2012 SP1  
   
-#### To manually download and access web test results from alerts  
+### Manually download and access web test results from alerts  
   
 1.  Configure the Alert Attachment management pack. For more information, see How to Configure File Attachments for Operations Manager Alerts in System Center 2012 SP1  
   

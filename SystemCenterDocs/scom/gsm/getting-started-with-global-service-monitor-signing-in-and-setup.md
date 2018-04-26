@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Global Service Monitor: Signing In and Setup | Microsoft Docs"
 ms.custom: ""
-ms.date: 05/18/2016
+ms.date: 4/26/2018
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
