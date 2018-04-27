@@ -124,6 +124,3 @@ Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more
 VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
 
 
-## Next steps
-
-[Plan VMM installation](~/vmm/install.md)
