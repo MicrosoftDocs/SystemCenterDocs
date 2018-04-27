@@ -1,26 +1,25 @@
 ---
-ms.assetid: 0b604566-dab0-4e9e-90e1-ff62861c4396
-title: VMM system requirements
-description: This article provides information about system requirements for VMM 1801.
-author:  JYOTHIRMAISURI
-ms.author: v-jysur
-manager:  vvithal
-ms.date:  02/05/2018
-ms.topic:  article
+ms.assetid: 2a758506-7d92-4bb7-9b74-61e206ed6203
+title: include file
+description: include file to provide information about system requirements for VMM 2016
+author:  rayne-wiselman
+ms.author: raynew
+manager:  carmonm
+ms.date:  04/26/2018
+ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
 ---
 
-# VMM 1801 system requirements
+## VMM 2016 system requirements
 
-This article describes the scalability information, hardware, software, and SQL Server requirements for System Center 1801 - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for System Center - Virtual Machine Manager (VMM) 2016, and summarizes the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center 1801 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
+The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
 
-The [planning guide](https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
+The [planning guide](https://technet.microsoft.com/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
 
 **Entity** | **Recommended maximum count**
 --- | ---
@@ -50,16 +49,22 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
+Windows Server 2012 Standard/Datacenter | N | N | If supported by SQL Server version
 Windows Server 2012 R2 Standard/Datacenter | N | Y | If supported by SQL Server version
 Windows Server 2016 | Y | N | If supported by SQL Server version
 Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
-Windows Server 1709 | Y | Y | Y
+Windows Server 2016 Nano | N | N | If supported by SQL Server version
 
 ## VMM console operating system
 
 **Operating system** | **Supported**
 --- | ---
+Windows 7 | N
+Windows 8 | N
+Windows 8.1 | Y
 Windows 10 Enterprise | Y
+Windows Server 2008 R2 with SP1 onwards | N
+Windows Server 2012 | Y
 Windows Server 2012 R2 Standard, Datacenter | Y
 Window Server 2016 Standard, Datacenter | Y
 
@@ -76,7 +81,7 @@ SQL Server 2008 | N
 SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)| Y
 SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) | Y
 SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
-SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)  <br/> or <br/> Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676 )<br/><br/> Not required for VMM installation.
+SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)<br/><br/> Not required for VMM installation.
 
 ## Virtualization
 
@@ -107,7 +112,7 @@ Windows Server 2012 Standard/Datacenter | N | N | N | N
 Windows Server 2012 R2 Standard/Datacenter | Y | Y | Y | Y
 Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
-Windows Server 1709 | Y | Y | N | N
+Windows Server 2016 Nano | Y | Y | N | N
 
 ## VMWare servers in the VMM fabric
 
@@ -115,16 +120,12 @@ Windows Server 1709 | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations](manage-vmware-hosts.md)
+Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
 
 **Guest operating system** | **Supported**
 --- | ---
-Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/en-us/library/mt126277.aspx).
+Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/library/mt126277.aspx).
 VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
 
-
-## Next steps
-
-[Plan VMM installation](~/vmm/install.md)

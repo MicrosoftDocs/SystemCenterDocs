@@ -25,7 +25,7 @@ This article explains the prerequisites, information about how to add a WSUS ser
 
 ## Before you start
 
-- The WSUS server must be running Windows Server Update Service (WSUS) 4.0 or later and supported versions of Windows Server, as detailed in [system requirements](system-reqs.md#servers-in-the-vmm-fabric).
+- The WSUS server must be running Windows Server Update Service (WSUS) 4.0 or later and supported versions of Windows Server, as detailed in [system requirements](system-requirements.md).
 - The WSUS server must be in the same domain as the VMM server, or in a domain with full trust.
 - VMM can use a WSUS root server or downstream WSUS server. You can't use a WSUS replica server.
 - The WSUS server can be dedicated to VMM or an existing server.

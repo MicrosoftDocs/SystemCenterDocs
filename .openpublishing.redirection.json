@@ -3334,6 +3334,15 @@
      "source_path" : "SystemCenterDocs/vmm/whats-new-vmm-1801.md",
      "redirect_url" : "/system-center/vmm/whats-new-in-vmm"
 },
+
+{
+     "source_path" : "SystemCenterDocs/vmm/system-reqs.md",
+     "redirect_url" : "/system-center/vmm/system-requirements"
+},
+{
+     "source_path" : "SystemCenterDocs/vmm/system-reqs-1801.md",
+     "redirect_url" : "/system-center/vmm/system-requirements"
+},
 {
      "source_path" : "SystemCenterDocs/vmm/scenario/sdn-remove-an-sdn.md",
      "redirect_url" : "/system-center/vmm/sdn-remove"

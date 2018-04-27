@@ -28,7 +28,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 ## Before you start
 
-- VMM supports the management of hosts and clusters running VMware. [Learn more](system-reqs.md#vmware-servers-in-the-vmm-fabric) for supported versions of VMware.
+- VMM supports the management of hosts and clusters running VMware. [Learn more](system-requirements.md) for supported versions of VMware.
 - You need a vCenter server in your deployment. vSphere hosts and host clusters should be managed by a vCenter server, which in turn is managed by VMM.
 - The following features are supported by VMM when hosts and clusters are managed with a vCenter server:
 	- VMM command shell (same shell across all hypervisors)
