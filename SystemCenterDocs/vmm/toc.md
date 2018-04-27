@@ -40,8 +40,7 @@
 ### [Assign storage QoS policies for Clusters](qos-storage-clusters.md)
 # How To
 ## Plan
-### [System requirements - Virtual Machine Manager 2016](system-reqs.md)
-### [System requirements - Virtual Machine Manager 1801](system-reqs-1801.md)
+### [System requirements - Virtual Machine Manager](system-requirements.md)
 ### [Plan VMM installation](plan-install.md)
 ### [Plan a VMM high availability deployment](plan-ha-install.md)
 ### [Identify VMM ports and protocols](plan-ports-protocols.md)
