@@ -1,26 +1,26 @@
 ---
-title: System Center Virtual Machine Manager (VMM) 2016 release notes
-description: This article summarizes the release notes for VMM 2016.
+ms.assetid: de545418-83e4-45f5-8809-27a5647d0aa7
+title: include file
+description: include file to summarize the release notes for VMM 2016.
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  01/24/2018
-ms.topic:  article
+ms.date:  04/30/2018
+ms.topic:  include
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-2016'
 ---
 
-# VMM 2016 release notes
+## VMM 2016 release notes
 
 
-This article summarizes the release notes for System Center 2016 - Virtual Machine Manager (VMM).
+The following sections summarize the release notes for System Center 2016 - Virtual Machine Manager (VMM).
 
 ## VMM deployment
 
 ### VMM admin console import might fail
 **Description**: If you import the VMM admin console add-in as a non-administrator, the console will crash. This occurs because the console add-in is stored in location “C:\Program Files\”, and only admins have access to this location.
-**Workaround**: Store the console add-in at a location that doesn't need admin access, and then import it. 
+**Workaround**: Store the console add-in at a location that doesn't need admin access, and then import it.
 
 
 ## Storage

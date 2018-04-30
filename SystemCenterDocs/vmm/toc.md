@@ -4,8 +4,7 @@
 # Diagnostics and usage data
 ## [Turn on/off telemetry in VMM](manage-telemetry.md)
 # Get Started
-## [Release notes - Virtual Machine Manager 2016](release-notes.md)
-## [Release notes - Virtual Machine Manager 1801](release-notes-1801.md)
+## [Release notes - Virtual Machine Manager](release-notes-vmm.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)

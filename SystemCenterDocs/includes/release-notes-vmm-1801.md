@@ -1,20 +1,19 @@
 ---
 ms.assetid: 05fe26c2-25a5-44a0-8a34-20a387d317a3
-title: VMM 1801 release notes
-description: This article details release notes for System Center Virtual Machine Manager 1801.
+title: include file
+description: include file to detail the release notes for System Center Virtual Machine Manager 1801.
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  riyazp
-ms.date:  02/05/2018
-ms.topic:  article
+ms.date:  04/30/2018
+ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
 ---
 
-# VMM 1801 release notes
+## VMM 1801 release notes
 
-This article summarizes the release notes for System Center 1801 - Virtual Machine Manager (VMM).
+The following sections summarize the known issues and workarounds for System Center 1801 - Virtual Machine Manager (VMM).
 
 ## Latest accessibility fixes in Console are not available
 
