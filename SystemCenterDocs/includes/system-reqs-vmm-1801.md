@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 1801 system requirements
 
-The following sections describe the scalability information, hardware, software, and SQL Server requirements for System Center 1801 - Virtual Machine Manager (VMM), and summarizes the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 1801, and summarizes the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
@@ -122,5 +122,3 @@ Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
 --- | ---
 Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/en-us/library/mt126277.aspx).
 VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)
-
-
