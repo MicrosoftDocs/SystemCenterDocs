@@ -4,7 +4,7 @@
 # Diagnostics and usage data
 ## [Turn on/off telemetry in VMM](manage-telemetry.md)
 # Get Started
-## [Release notes - Virtual Machine Manager](release-notes-vmm.md)
+## [Release notes - Virtual Machine Manager](release-notes.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
@@ -47,8 +47,7 @@
 ### [Plan the VMM networking fabric](plan-network.md)
 ### [Identify supported storage arrays](supported-arrays.md)
 ## Upgrade and install
-### [Upgrade to Virtual Machine Manager 2016](upgrade.md)
-### [Upgrade to Virtual Machine Manager 1801](upgrade-1801.md)
+### [Upgrade Virtual Machine Manager](upgrade.md)
 ### [Install VMM](install.md)
 ### [Install the VMM console](install-console.md)
 ### [Enable enhanced console session](enhanced-console-session.md)

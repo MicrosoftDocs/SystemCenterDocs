@@ -3343,13 +3343,15 @@
      "source_path" : "SystemCenterDocs/vmm/system-reqs-1801.md",
      "redirect_url" : "/system-center/vmm/system-requirements"
 },
-{
-     "source_path" : "SystemCenterDocs/vmm/release-notes.md",
-     "redirect_url" : "/system-center/vmm/release-notes-vmm"
-},
+
 {
      "source_path" : "SystemCenterDocs/vmm/release-notes-1801.md",
-     "redirect_url" : "/system-center/vmm/release-notes-vmm"
+     "redirect_url" : "/system-center/vmm/release-notes"
+},
+
+{
+     "source_path" : "SystemCenterDocs/vmm/upgarde-vmm-1801.md",
+     "redirect_url" : "/system-center/vmm/upgrade"
 },
 
 {

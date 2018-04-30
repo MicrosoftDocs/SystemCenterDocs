@@ -1,26 +1,25 @@
 ---
 ms.assetid: 0fc1e4e6-616d-4930-9e9a-fef274e9ac16
-title: Upgrade to System Center 1801 VMM
-description: This article provides information about how to upgrade VMM servers and databases to VMM 1801.
+title: include file
+description: include file to provide information about how to upgrade VMM servers and databases to VMM 1801.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/05/2018
-ms.topic: article
+ms.date: 04/30/2018
+ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
 ---
 
-# Upgrade to System Center 1801 - Virtual Machine Manager
+## Upgrade to System Center 1801 - Virtual Machine Manager
 
-This article provides information about how to upgrade to System Center 1801 - Virtual Machine Manager (VMM). Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
+The following sections provide information about how to upgrade to System Center 1801 - VMM. Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 
 - You should be running VMM on System Center 2012 R2 update rollup 14 or 2016 UR 4.
-- Ensure that the server meets all requirements for VMM 1801, and that prerequisites are in place [Learn more](install.md)
-- Make sure you're running a [supported version of SQL Server](system-requirements.md).
+- Ensure that the server meets all requirements for VMM 1801, and that prerequisites are in place [Learn more](../vmm/install.md)
+- Make sure you're running a [supported version of SQL Server](../vmm/system-requirements.md).
 - If your current VMM deployment is integrated with Azure Site Recovery, note that:
 	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
 	- Verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 1801.
@@ -252,7 +251,3 @@ After the upgrade, reconnect VMM to Operations Manager.
 ## Renew certificates for PXE servers
 
 If you have a PXE server in the VMM fabric, you need to remove it from the fabric, and then add it again. This is in order to renew the PXE server certificate, and avoid certificate errors.
-
-## Next steps
-
-Learn about deploying the latest [update rollups](update-rollups.md).
