@@ -13,7 +13,17 @@ ms.technology:  virtual-machine-manager
 
 # Release notes for virtual machine manager (VMM)
 
-This article details the release notes for the following version of Virtual Machine Manager (VMM).
+::: moniker range="sc-vmm-1801"
+
+This article provides the release notes for System Center 1801 - Virtual Machine Manager (VMM)
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
+
+This article provides the release notes for System Center 2016 - Virtual Machine Manager (VMM)
+
+::: moniker-end.
 
 ::: moniker range="sc-vmm-1801"
 
