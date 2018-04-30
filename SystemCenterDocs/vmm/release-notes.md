@@ -15,13 +15,13 @@ ms.technology:  virtual-machine-manager
 
 ::: moniker range="sc-vmm-1801"
 
-This article provides the release notes for System Center 1801 - Virtual Machine Manager (VMM).
+This article lists the release notes for System Center 1801 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
-This article provides the release notes for System Center 2016 - Virtual Machine Manager (VMM).
+This article lists the release notes for System Center 2016 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 
