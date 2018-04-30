@@ -3351,7 +3351,12 @@
 
 {
      "source_path" : "SystemCenterDocs/vmm/upgarde-vmm-1801.md",
-     "redirect_url" : "/system-center/vmm/upgrade"
+     "redirect_url" : "/system-center/vmm/upgrade-vmm"
+},
+
+{
+     "source_path" : "SystemCenterDocs/vmm/upgarde.md",
+     "redirect_url" : "/system-center/vmm/upgrade-vmm"
 },
 
 {
