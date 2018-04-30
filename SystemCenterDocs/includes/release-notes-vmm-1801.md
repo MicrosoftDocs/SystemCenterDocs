@@ -11,10 +11,6 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-## VMM 1801 release notes
-
-The following sections summarize the known issues and workarounds for System Center 1801 - Virtual Machine Manager (VMM).
-
 ## Latest accessibility fixes in Console are not available
 
  **Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM Console.

@@ -33,7 +33,7 @@ This article provides the upgrade information for System Center 2016 - Virtual M
 
 ::: moniker range="sc-vmm-2016"
 
-[!INCLUDE [release-notes-2016.md](../includes/upgrade-to-vmm-2016.md)]
+[!INCLUDE [upgrade-to-vmm-2016.md](../includes/upgrade-to-vmm-2016.md)]
 
 ::: moniker-end
 
