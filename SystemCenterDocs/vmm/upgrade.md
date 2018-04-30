@@ -21,7 +21,7 @@ This article provides the upgrade information for System Center 1801 - Virtual M
 
 ::: moniker range="sc-vmm-2016"
 
-This article provides the upgrade information for System Center 2016 - Virtual Machine Manager (VMM)
+This article provides the upgrade information for System Center 2016 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 

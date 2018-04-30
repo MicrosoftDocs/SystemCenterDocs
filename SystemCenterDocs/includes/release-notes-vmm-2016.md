@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 2016 release notes
 
-The following sections summarize the release notes for VMM 2016.
+The following sections summarize the release notes for VMM 2016 and includes the known issues, fixes, and the workarounds.
 
 ## VMM deployment
 

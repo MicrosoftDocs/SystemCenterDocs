@@ -12,7 +12,7 @@ ms.technology:  virtual-machine-manager
 ---
 ## VMM 1801 release notes
 
-The following sections summarize the release notes for VMM 1801.
+The following sections summarize the release notes for VMM 1801 and includes the known issues and workarounds.
 
 ## Latest accessibility fixes in Console are not available
 

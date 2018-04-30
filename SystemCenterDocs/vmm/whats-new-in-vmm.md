@@ -22,7 +22,7 @@ This article details the new features supported in System Center 1801 - Virtual 
 
 ::: moniker range="sc-vmm-2016"
 
-This article details the new features supported in System Center 2016 - Virtual Machine Manager (VMM)
+This article details the new features supported in System Center 2016 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 
