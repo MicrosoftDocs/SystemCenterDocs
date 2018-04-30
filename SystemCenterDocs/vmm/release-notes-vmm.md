@@ -17,13 +17,13 @@ This article details the release notes for the following version of Virtual Mach
 
 ::: moniker range="sc-vmm-1801"
 
-[!INCLUDE [release-notes-1801.md](../includes/release-notes-1801.md)]
+[!INCLUDE [release-notes-1801.md](../includes/release-notes-vmm-1801.md)]
 
 ::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
-[!INCLUDE [release-notes-2016.md](../includes/release-notes-2016.md)]
+[!INCLUDE [release-notes-2016.md](../includes/release-notes-vmm-2016.md)]
 
 ::: moniker-end
 
