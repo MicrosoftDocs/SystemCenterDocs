@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## What's new in System Center 1801 - Virtual Machine Manager
 
-The following sections describe the new features supported in System Center 1801 - Virtual Machine Manager (VMM).
+See the following sections for detailed information about the new features supported in VMM 1801.
 
 ## Compute
 

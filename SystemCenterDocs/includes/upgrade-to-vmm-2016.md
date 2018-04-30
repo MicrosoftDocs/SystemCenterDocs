@@ -14,7 +14,7 @@ ms.technology: virtual-machine-manager
 ## Upgrade to System Center 2016 - VMM
 
 
-The following sections summarize the steps for upgrading to System Center 2016 - Virtual Machine Manager (VMM). It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes.
+The following sections summarize the steps for upgrading to VMM 2016. It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 

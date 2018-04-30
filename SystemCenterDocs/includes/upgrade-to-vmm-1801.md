@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 ## Upgrade to System Center 1801 - Virtual Machine Manager
 
-The following sections provide information about how to upgrade to System Center 1801 - VMM. Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
+The following sections provide information about how to upgrade to VMM 1801. Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 

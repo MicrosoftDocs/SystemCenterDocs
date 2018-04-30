@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 ::: moniker range="sc-vmm-1801"
 
-This article provides the upgrade information for System Center 1801 - Virtual Machine Manager (VMM)
+This article provides the upgrade information for System Center 1801 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 

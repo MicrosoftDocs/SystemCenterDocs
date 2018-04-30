@@ -16,7 +16,7 @@ ms.technology:  virtual-machine-manager
 
 ::: moniker range="sc-vmm-1801"
 
-This article details the new features supported in System Center 1801 - Virtual Machine Manager (VMM)
+This article details the new features supported in System Center 1801 - Virtual Machine Manager (VMM).
 
 ::: moniker-end
 
