@@ -11,6 +11,10 @@ ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
+## VMM 2016 release notes
+
+The following sections summarize the release notes for VMM 2016.
+
 ## VMM deployment
 
 ### VMM admin console import might fail

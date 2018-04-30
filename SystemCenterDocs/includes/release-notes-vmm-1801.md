@@ -10,6 +10,9 @@ ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
+## VMM 1801 release notes
+
+The following sections summarize the release notes for VMM 1801.
 
 ## Latest accessibility fixes in Console are not available
 
