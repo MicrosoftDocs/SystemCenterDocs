@@ -14,7 +14,17 @@ ms.technology:  virtual-machine-manager
 
 # What's New in virtual machine manager
 
-This article lists the new features provided in this version of System Center - Virtual Machine Manager (VMM).
+::: moniker range="sc-vmm-1801"
+
+This article details the new features supported in System Center 1801 - Virtual Machine Manager (VMM).
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2016"
+
+This article details the new features supported in System Center 2016 - Virtual Machine Manager (VMM).
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-1801"
 
