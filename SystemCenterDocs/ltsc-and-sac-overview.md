@@ -6,7 +6,7 @@ author:  markgalioto
 ms.prod:  system-center
 ms.author: markgal
 keywords:  
-ms.date:  4/6/2018
+ms.date:  5/2/2018
 title:  Overview of System Center LTSC and SAC releases
 ms.technology: system-center
 ms.assetid:
@@ -20,19 +20,19 @@ As a System Center customer, you can remain on the Long-Term Servicing Channel (
 
 ## Long-Term Servicing Channel (LTSC)
 
-LTSC is the release model you're already familiar with (formerly called the Long-Term Servicing Branch), where a major version of System Center releases approximately every two to three years. LTSC provides five years of mainstream support and five additional years of extended support. This channel is appropriate for systems requiring a longer servicing option and functional stability.
+LTSC is the release model you're already familiar with (formerly called the Long-Term Servicing Branch), where the System Center team releases a major version approximately every two to three years. LTSC provides five years of mainstream support and five additional years of extended support. This channel is appropriate for systems requiring a longer servicing option and functional stability.
 
-The Long-Term Servicing Channel receives security and non-security updates through update releases, however the LTSC does not receive the new features and functionality released in the Semi-Annual Channel. 
+In the LTSC, the System Center team releases security and non-security updates through Update Releases (UR). Update Releases, which are delivered through the LTSC, do not contain the new features or functionality released in the Semi-Annual Channel. 
 
 Most features introduced in the Semi-Annual Channel will be rolled into the next Long-Term Servicing Channel release. Actual functionality varies by release depending on customer feedback.
 
 ## Semi-Annual Channel
 
-The Semi-Annual Channel is perfect for customers who are quickly innovating to take advantage of new features and enhancements. Semi-Annual Channel releases occur approximately two times a year.
+The Semi-Annual Channel is perfect for customers who are quickly innovating to take advantage of new features and enhancements. Semi-Annual Channel releases occur approximately two times a year, and each release is called a version.
 
 System Center, version 1801, was the first release in the Semi-Annual Channel. Versions are named according to the year and month of release. Semi-Annual Channel releases have an 18-month support policy from public availability (which is usually the same month or month following Engineering availability).  For example, System Center, version 1801, was available in January of 2018 and publicly released on February 8, 2018. [Support is available until August 8, 2019](sac-support-lifecycle.md), 18-months after official public release on February 8.
 
-The Semi-Annual Channel is only offered to customers with Software Assurance. This channel, with its more frequent release cycle, will not have update releases.
+The Semi-Annual Channel is only offered to customers with Software Assurance. This channel, with its more frequent release cycle, will not have Update Releases (UR).
 
 ## Should you use LTSC or Semi-Annual Channel?
 
