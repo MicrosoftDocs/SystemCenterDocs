@@ -51,18 +51,22 @@ manager: carmonm
   
     -   To monitor from external locations, in the line above the **External locations** field, click **Add**, and select the external locations that you want to monitor from and add those to your list of **Selected locations**. Click **OK**. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:  
   
-        -   AU: Sydney
-        -   BR: Sao Paulo
-        -   CH: Zurich
-        -   FR: Paris
-        -   HK: Hong Kong
-        -   IE: Dublin
-        -   JP: Kawaguchi
-        -   NL: Amsterdam
-        -   RU: Moscow
-        -   SE: Stockholm
-        -   SG: Singapore
-        -   US: CA-San Jose, FL-Miami, IL-Chicago, TX-San Antonio, VA-Ashburn 
+        -   Australia East
+        -   Brazil South
+        -   Central US
+        -   East Asia
+        -   East US
+        -   France Central
+        -   France South
+        -   Japan East
+        -   North Central US
+        -   North Europe
+        -   South Central US
+        -   Southeast Asia
+        -   UK South
+        -   UK West
+        -   West Europe
+        -   West US 
   
          ![Select external locations page](../media/gsm/gsm-addexternallocationspage.png "GSM_AddExternalLocationsPage")  
   
