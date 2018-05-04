@@ -46,40 +46,34 @@ manager: carmonm
   
      ![What to Monitor Page for Visual Studio Web Tests](../media/gsm/gsm-whattomonitorvstpage.png "GSM_WhatToMonitorVSTPage")  
   
-4.  On the **Where to Monitor From** page, select the external locations from which you want to want your Visual Studio Web Test to run.  
+4. On the **Where to Monitor From** page, click **Add** to open the **Select locations** dialog. 
+     ![Where to Monitor From page for Visual Studio Tests](../media/gsm/gsm-wheretomonitorfromvstpage.png "GSM_WheretoMonitorFromVSTPage")
+
+5. To monitor from external locations, in the **Select locations** dialog, select the external locations that you want to monitor from, and add those to the **Selected locations**, and then click **OK**. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can choose from 16 locations. The complete list of locations follows the art. 
+    ![Select locations page for Visual Studio Web Tests](../media/gsm/gsm-wheretomonitorfromexternalvstpage.png "GSM_WheretoMonitorFromExternalVSTPage") 
+
+    - Australia East
+    - Brazil South
+    - Central US
+    - East Asia
+    - East US
+    - France Central
+    - France South
+    - Japan East
+    - North Central US
+    - North Europe
+    - South Central US
+    - Southeast Asia
+    - UK South
+    - UK West
+    - West Europe
+    - West US
   
-     **Where to Monitor From page for Visual Studio Web Tests**  
+6. The **View and Validate Tests** page shows a summary of all tests (external and internal) that will be run. You can only validate a configuration of internal tests. To validate an internal test configuration, select a test and then click **Run Test**. If you want to change the default settings for the tests, performance data, and alerts for all tests (external and internal) created in this template, click **Change Configuration**. For more information, see the [To configure alerts and performance data collection](how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md#BKMK_CONFALERT) in this document. When you have validated your tests, click **Next** to see the **Test Results** page of the test configuration that you created by using this template.  
   
-     ![Where to Monitor From page for Visual Studio Tests](../media/gsm/gsm-wheretomonitorfromvstpage.png "GSM_WheretoMonitorFromVSTPage")  
+7. You can click **Change Configuration** to change your tests frequency or alerting preferences. Click **Next** to see the **Summary** page.  
   
-    -   To monitor from external locations, in the area above the **External locations** field, click **Add**, and select the external locations that you want to monitor from and add those to your list of **Selected locations**. Click **OK**. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting one of the following:  
-  
-        -   Australia East
-        -   Brazil South
-        -   Central US
-        -   East Asia
-        -   East US
-        -   France Central
-        -   France South
-        -   Japan East
-        -   North Central US
-        -   North Europe
-        -   South Central US
-        -   Southeast Asia
-        -   UK South
-        -   UK West
-        -   West Europe
-        -   West US
-  
-         **Select external locations page for Visual Studio Web Tests**  
-  
-         ![Select locations page for Visual Studio Web Tests](../media/gsm/gsm-wheretomonitorfromexternalvstpage.png "GSM_WheretoMonitorFromExternalVSTPage")  
-  
-5.  The **View and Validate Tests** page shows a summary of all tests (external and internal) that will be run. You can only validate a configuration of internal tests. To validate an internal test configuration, select a test and then click **Run Test**. If you want to change the default settings for the tests, performance data, and alerts for all tests (external and internal) created in this template, click **Change Configuration**. For more information, see the [To configure alerts and performance data collection](how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md#BKMK_CONFALERT) in this document. When you have validated your tests, click **Next** to see the **Test Results** page of the test configuration that you created by using this template.  
-  
-6.  You can click **Change Configuration** to change your tests frequency or alerting preferences. Click **Next** to see the **Summary** page.  
-  
-7.  Review the **Summary** page to make sure that the information accurately reflects the tests that you have configured. If the information is not what you expected, click **Previous** and on the **View and Configure Tests** page, click **Change Configuration**. If the information on the **Summary** page is correct, click **Create** to begin testing.  
+8. Review the **Summary** page to make sure that the information accurately reflects the tests that you have configured. If the information is not what you expected, click **Previous** and on the **View and Configure Tests** page, click **Change Configuration**. If the information on the **Summary** page is correct, click **Create** to begin testing.  
   
     > [!TIP]
     >  You can also copy and paste this information and share it as documentation or in an email message.  

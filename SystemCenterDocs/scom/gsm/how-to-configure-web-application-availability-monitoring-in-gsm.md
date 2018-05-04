@@ -43,54 +43,52 @@ manager: carmonm
     > [!TIP]
     >  Group URLs by web application. Example: `Microsoft website` would be the name of many URLs to test from various locations. This keeps the application, `Microsoft website`, the focus of the monitoring instead of the many URLs you are testing for this application. This strategy takes advantage of the dashboard monitoring views. These show the **Web application state** by application name and state so that you can easily see the overall health of your monitored application. This lets you separate problems related to external factors, such as Internet or network problems, from application or service problems.  
   
-4.  On the **Where to Monitor From** page, select the locations from which you want the URLs monitored. You can choose both external and internal locations.  
-  
-     **Where to Monitor From page**  
-  
+4.  On the **Where to Monitor From** page, select the locations from which you want the URLs monitored. You can choose both external and internal locations.
+
      ![Where to Monitor From Page](../media/gsm/gsm-wheretomonitorfrompage.png "GSM_WheretoMonitorFromPage")  
+
+5. To monitor from external locations, in the line above the **External locations** field, click **Add**, and select the external locations that you want to monitor from and add those to your list of **Selected locations**. Click **OK**. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from the following 16 locations:  
+
+    - Australia East
+    - Brazil South
+    - Central US
+    - East Asia
+    - East US
+    - France Central
+    - France South
+    - Japan East
+    - North Central US
+    - North Europe
+    - South Central US
+    - Southeast Asia
+    - UK South
+    - UK West
+    - West Europe
+    - West US
+
+    ![Select external locations page](../media/gsm/gsm-addexternallocationspage.png "GSM_AddExternalLocationsPage")  
+
+6. To monitor from internal locations, use the dropdown menu to select to run tests from a server agent or a resource pool. In the area above the **Internal locations** field, click **Add** and select the internal locations (server names) you want to monitor from and add those to your list of **Selected locations**. Click **OK**.
+
+    ![Select internal locations page](../media/gsm/waam-authtemp5.png "WAAM_AuthTemp5")  
   
-    -   To monitor from external locations, in the line above the **External locations** field, click **Add**, and select the external locations that you want to monitor from and add those to your list of **Selected locations**. Click **OK**. For [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:  
-  
-        -   Australia East
-        -   Brazil South
-        -   Central US
-        -   East Asia
-        -   East US
-        -   France Central
-        -   France South
-        -   Japan East
-        -   North Central US
-        -   North Europe
-        -   South Central US
-        -   Southeast Asia
-        -   UK South
-        -   UK West
-        -   West Europe
-        -   West US
-  
-         ![Select external locations page](../media/gsm/gsm-addexternallocationspage.png "GSM_AddExternalLocationsPage")  
-  
-    -   To monitor from internal locations, use the dropdown menu to select to run tests from a server agent or a resource pool. In the area above the **Internal locations** field, click **Add** and select the internal locations (server names) you want to monitor from and add those to your list of **Selected locations**. Click **OK**.
-  
-         ![Select internal locations page](../media/gsm/waam-authtemp5.png "WAAM_AuthTemp5")  
-  
-5.  The **View and Validate Tests** page shows a summary of all tests (external and internal) that are to be run. You can only validate a configuration of internal tests. To validate an internal test configuration, select a test and then click **Run Test**.  If you want to change the default settings for the tests, performance data, and alerts for all tests (external and internal) created in this template, click **Change Configuration**. For more information, see the “Configuring alerts and performance data collection” in this document. When you have validated your tests, click **Next** to see the **Test Results** page of the test configuration that you created by using this template.
+7. The **View and Validate Tests** page shows a summary of all tests (external and internal) that are to be run. You can only validate a configuration of internal tests. To validate an internal test configuration, select a test and then click **Run Test**.  If you want to change the default settings for the tests, performance data, and alerts for all tests (external and internal) created in this template, click **Change Configuration**. For more information, see the “Configuring alerts and performance data collection” in this document. When you have validated your tests, click **Next** to see the **Test Results** page of the test configuration that you created by using this template.
   
      ![View and Validate Tests page](../media/gsm/waam-authtemp6.png "WAAM_AuthTemp6")  
   
     > [!TIP]
     >  Validate internal test configurations before you exit the wizard so that you can make sure that the response you receive is the one that you expect. To do this, select the test, and then click **Run Test**.  
   
-6.  On the **Test Results** page, the **Summary** tab shows if your test succeeded and whether any of your error criteria failed. To see more details, click through the **Details**, **HTTP Request**, and **HTTP Response** tabs. Click **Close** to return to the **View and Validate Tests** page where you can either click **Change Configuration** to reconfigure your tests, or, if the test results look good, click **Next** to see the **Summary** page.
-  
+8. On the **Test Results** page, the **Summary** tab shows if your test succeeded and whether any of your error criteria failed. To see more details, click through the **Details**, **HTTP Request**, and **HTTP Response** tabs. Click **Close** to return to the **View and Validate Tests** page where you can either click **Change Configuration** to reconfigure your tests, or, if the test results look good, click **Next** to see the **Summary** page.
+
      ![Test Results Summary tab](../media/gsm/waam-authtemp7atestresultssummarytab.png "WAAM_AuthTemp7aTestResultsSummaryTab")  
   
-7.  Review the **Summary** page to make sure that the information accurately reflects the tests that you have configured.  
-  
+9. Review the **Summary** page to make sure that the information accurately reflects the tests that you have configured.  
+
      ![Summary page](../media/gsm/waam-authtemp9summaryoi.png "WAAM_AuthTemp9SummaryOI")  
-  
+
      If they do not, click **Previous**, and on the **View and Validate Tests** page, click **Change Configuration**. If the information on the **Summary** page is correct, click **Create** to begin testing.  
-  
+
     > [!TIP]
     >  You can also copy and paste this information and share it as documentation or in an email message.  
   
