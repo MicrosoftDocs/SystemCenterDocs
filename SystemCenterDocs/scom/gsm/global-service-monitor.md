@@ -58,18 +58,22 @@ Test parameters for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] Visual Stud
 -   GSM subscription: 5  
   
  With [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:
--   AU: Sydney
--   BR: Sao Paulo
--   CH: Zurich
--   FR: Paris
--   HK: Hong Kong
--   IE: Dublin
--   JP: Kawaguchi
--   NL: Amsterdam
--   RU: Moscow
--   SE: Stockholm
--   SG: Singapore
--   US: CA-San Jose, FL-Miami, IL-Chicago, TX-San Antonio, VA-Ashburn  
+        -   Australia East
+        -   Brazil South
+        -   Central US
+        -   East Asia
+        -   East US
+        -   France Central
+        -   France South
+        -   Japan East
+        -   North Central US
+        -   North Europe
+        -   South Central US
+        -   Southeast Asia
+        -   UK South
+        -   UK West
+        -   West Europe
+        -   West US   
   
 ## Important Things to Know  
   
