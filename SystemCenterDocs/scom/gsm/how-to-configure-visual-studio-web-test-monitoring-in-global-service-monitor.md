@@ -69,7 +69,7 @@ manager: carmonm
         -   UK South
         -   UK West
         -   West Europe
-        -   West US 
+        -   West US
   
          **Select external locations page for Visual Studio Web Tests**  
   
