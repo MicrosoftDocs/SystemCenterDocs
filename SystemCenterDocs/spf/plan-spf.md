@@ -28,7 +28,7 @@ Deployment requirements for SPF include:
         - Windows Authentication
         - Application Deployment ASP.NET 4.5
         - Application Development ISAPI Extensions
-        - Application Deployment ISAPI Filters
+        - Application Deployment ISAPI FiltersAzre
         - IIS Management Scripts and Tools Role Service
     - Feature: Management OData IIS Extension
     - Feature: .NET Framework 4.5 features, WCF Services, HTTP Activation
