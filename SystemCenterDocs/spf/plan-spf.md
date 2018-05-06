@@ -18,8 +18,8 @@ This article helps you make sure you have prerequisites and planning steps in pl
 
 Deployment requirements for SPF include:
 
--	Make sure you have the minimum [hardware](https://technet.microsoft.com/system-center-docs/system-requirements/minimum-hardware-recommendations-for-system-center-technical-preview) and [software](https://technet.microsoft.com/system-center-docs/system-requirements/operating-systems-compatibility-for-system-center-technical-preview) requirements on the SPF server.
--	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number. [Learn more]( https://technet.microsoft.com/system-center-docs/system-requirements/sql-server-version-compatibility-for-system-center-technical-preview) about supported SQL Server versions.
+-	Make sure you have the minimum [hardware and software](https://docs.microsoft.com/system-center/spf/system-reqs-1801?view=sc-spf-1801) requirements on the SPF server.
+-	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number. [Learn more](https://docs.microsoft.com/system-center/spf/system-reqs-1801?view=sc-spf-1801#sql-server) about supported SQL Server versions.
 -	The VMM console should be installed on the SPF server. SPF can also run on the same server as the VMM management server. VMM must be deployed in your infrastructure.
 -	If you want to use usage metering to manage tenant costs, you need a System Center Operations Manager server, and a Data Warehouse server, running Windows 2012 R2 or later.
 -	The following Server Manager features should be installed on the SPF server:
