@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 04/304/2018
+ms.date: 05/06/2018
 ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -14,7 +14,7 @@ ms.technology: virtual-machine-manager
 ## Upgrade to System Center 2016 - VMM
 
 
-The following sections summarize the steps for upgrading to VMM 2016. It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes.
+The following sections summarize the steps for upgrading to System Center Virtual Machine Manager (VMM) 2016. It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes.
 
 ## Requirements and limitations
 
@@ -64,27 +64,27 @@ If you're running more than one System Center component, they should be upgraded
 
 
 ## Upgrade a standalone VMM server
-Use the following procedures:
 
-- [Back up and upgrade the OS](#back-up-and-upgrade-os)
-- [Install VMM 2016](#install-vmm-2016)
+Back up and upgrade the operating system, and then install VMM 2016.
 
-### Back up and upgrade OS
+
+### Back up and upgrade the operating system
 1.	Back up and retain the VMM database.
-2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
-3.	Upgrade the management OS to Windows Server 2016.
+2.	[Uninstall VMM](#uninstall-the-vmm). Remove both the management server and console.
+3.	Upgrade the management operating system to Windows Server 2016.
 4.	Upgrade to the Windows 10 version of the ADK.
 
-#### Uninstall the VMM
-- Go to **Add remove programs**, select **VMM** and click **Uninstall**.
-- On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
-- On database options page, select **Retain database**.
-- Review the summary and click **Uninstall**.
+#### Uninstall VMM
+
+1. In **Add remove programs**, select **VMM** > **Uninstall**.
+2. Select **Remove Features**, and then select **VMM management Server** and **VMM Console**.
+3. In **Database Options**, select **Retain database**.
+4. Review the summary and click **Uninstall**.
 
 ### Install VMM 2016
 
 1.	In the main setup page, click **Install** .
-2.	In **Select features to install**, select the VMM management server and then click **Next**. The VMM console will be automatically installed .
+2.	In **Select features to install**, select the VMM management server > **Next**. The VMM console will be automatically installed .
 3.	In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
 4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement **check box, and then click **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then click **Next**.

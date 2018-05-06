@@ -4,7 +4,7 @@ description: This article describes how to upgrade to System Center Service Prov
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  01/22/2018
+ms.date:  05/06/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
@@ -16,36 +16,86 @@ monikerRange: 'sc-spf-2016'
 
 This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016.
 
+## Prerequisites
+
+- SPF 2016 requires Windows Server 2016.
+- SPF should be running update rollup [9](https://support.microsoft.com/kb/3133705) or later, in order to upgrade to 2016.
+- The VMM server should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later, in order to upgrade to 2016. 
+- The VMM console machine should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later, in order to upgrade to 2016. 
+- Windows Azure Pack should be running on Windows Server 2012 R2 with at least update rollup [10](https://support.microsoft.com/kb/3158609).
+
+## Assumptions
 The upgrade instructions in this article assume the following scenario:
 
-- Windows Azure Pack is running on Windows Server 2012 R2 with [update rollup 10](https://support.microsoft.com/kb/3158609).
 - SPF and VMM are running on System Center 2012 R2.
-- SPF is running [update rollup 9](https://support.microsoft.com/en-us/kb/3133705) or later - [10](https://support.microsoft.com/kb/3147172).
-- The VMM server is running [update rollup 9](https://support.microsoft.com/kb/3129784) or later - [10](https://support.microsoft.com/kb/3147167), or [11](https://support.microsoft.com/kb/3184831)
-- The VMM console is running on a separate computer running Windows Server 2012 R2, and is also running update rollup 9 or later.
+- We highly recommend that you reuse the current SPF server name to simplify the seamless integration into your existing Windows Azure Pack deployment.
+- The VMM console is installed on a separate computer.
+- The upgrade uses the existing SPF server name.
+- These upgrade instructions assume that the VMM 2016 upgrade has already been completed, and that the necessary backups of the current Windows Azure Pack environment have been performed.
 
 ## Upgrade order
 
 Here's the recommended upgrade order for the above scenario
 
-1. Update the VMM console to 2016. If required, update the VMM server to 2016.
+1. Update the VMM console to 2016. We're presuming you've already updated the VMM server to 2016. Read [this article](https://docs.microsoft.com/system-center/vmm/upgrade-vmm?view=sc-vmm-2016) if you haven't. 
 2. Update SPF to 2016.
+
+## Before you start
+
+1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
+2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
+3. Verify SPF [system requirements](https://docs.microsoft.com/system-center/spf/system-reqs?view=sc-spf-2016). Note that SPF must run on Windows Server 2016 - Core or Desktop experience.
+4. Verify VMM [console requirements](https://docs.microsoft.com/en-us/system-center/vmm/system-requirements?view=sc-vmm-2016#vmm-console-operating-system).
 
 
 ## Run the SPF upgrade
 
-1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
-2. Verify [SPF deployment requirements](deploy-spf.md#before-you-begin).
-3. [Verify operating system requirements](https://technet.microsoft.com/system-center-docs/system-requirements/client-operating-system-compatibility) for the VMM 2016 console. Then upgrade the VMM console from 2012 R2 to 2016. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/deploy/deploy-install-console).
-4. If you need access to a full VMM server to provide to create fabric and provide services to tenants, upgrade the VMM server from 2012 R2 to 2016. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/deploy/deploy-upgrade).
-5. Now upgrade SPF. To do that, first uninstall SPF 2012 R2 from the Control Panel.  The SPF uninstall does not uninstall the database. Before you uninstall note the SQL Server and database used by the current SPF installation. You can do this by running this on the SPF server:
+### Prepare the SPF 2016 machine
 
-    ``Import-module SpfAdmin
-    Get-SCSPFConnectionString``
+1. Create a new server running Windows Server 2016, on which to install SPF 2016. You can use a VM. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
+2. Install the prerequisites on the new VM, as follows:
+    a. Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434)).
+    b. Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=43339))
+    c. Install SQL Server [command line utilities](https://www.microsoft.com/download/details.aspx?id=43339).
+    d. Install SQL Server [CLR types](https://www.microsoft.com/download/details.aspx?id=43339).
+    e. Install IIS with the following features:
+        PowerShell: Install-WindowsFeature Web-Server, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Dir-Browsing, Web-Http-Errors, Web-Static-Content, Web-Health, Web-Http-Logging, Web-Request-Monitor, Web-Http-Tracing, Web-Performance, Web-Stat-Compression, Web-Security, Web-Filtering, Web-Basic-Auth, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Mgmt-Tools, Web-Mgmt-Console, Web-Scripting-Tools, NET-Framework-45-ASPNET, NET-WCF-HTTP-Activation45, ManagementOdata, WAS, WAS-Process-Model, WAS-Config-APIs.
+    a. Install [WCF Data Services 5.0 for OData V3](https://www.microsoft.com/download/details.aspx?id=29306).
+    b. Install [ASP.NET MVC 4](https://www.microsoft.com/download/details.aspx?id=30683).
+3. Install the latest Windows updates on the VM. 
+4. Restart the VM to make sure there are no pending reboots.
+5. Don't join the VM to a domain.
 
-6. Uninstall Service Provider Foundation System Center 2012 R2 and the Virtual Machine Manager Console.
-From Control Panel, in Programs, click Uninstall a program. Then under Name, right-click System Center 2012 R2 Service Provider Foundation, and then click **Uninstall**.
-7. Now [install SPF 2016](~/spf/deploy-spf.md). Specify the name of the current SQL Server during setup.
+### Remove SPF 2012 R2
+
+1. Uninstall the VMM admin console on the SPF 2012 R2 machine.
+2. Uninstall the SPF Web Component on the SPF 2012 R2 machine.
+3. Rename the machine. For example, from **SERVER-SPF-01** to **SERVER-SPF-OLD**.
+
+### Set up the SPF 2016 machine
+
+1. Rename the VM you set up to the original name of the SPF 2012 R2 machine, so from **SERVER-SPF-UPGRADE** to **SERVER-SPF-01**.
+2. Join the VM to the domain.
+3. Install the [VMM console](https://docs.microsoft.com/system-center/vmm/install-console?view=sc-vmm-2016).For a core installation you can install from the [command line](https://docs.microsoft.com/system-center/vmm/install-console?view=sc-vmm-2016#install-the-console-from-the-command-prompt), or set up from the user interface and change to Core later.
+4. Install [SPF 2016](https://docs.microsoft.com/system-center/spf/deploy-spf?view=sc-spf-2016), using the existing SQL Server database name during setup.
+
+
+## Post-upgrade tasks
+1. On the SPF machine, install the latest update: [update rollup 2 for SPF 2016](https://support.microsoft.comhelp/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f)
+2. SPF needs a server certificate for website binding. You can use the self-signed certificate generated during setup, but we don't recommend this for a production environment. If you do use a self-signed certificate:
+    - It should be used only for testing purposes.
+    - The FQDN should be specified for the certification path instead of "localhost".
+    - It should be located in the personal or webhosting store.
+
+## Test Windows Azure Pack
+
+Test everything's working as follows:
+
+1. Start  VMM 2016.
+2. In the Windows Azure Pack 2012 R2 Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Make sure everything's working as expected.
+3. In the Windows Azure Pack 2012 R2 Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Make sure everything's working as expected.
+
+
 
 
 ## Next steps
