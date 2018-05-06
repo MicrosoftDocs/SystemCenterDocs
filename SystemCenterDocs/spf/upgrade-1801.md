@@ -20,13 +20,11 @@ This article describes how to upgrade from System Center 2012 R2 - Service Provi
 
 - SPF:
     - On System Center 2012 R2 install [update rollup 12](https://support.microsoft.com/help/3209618/update-rollup-12-for-system-center-2012-r2-orchestrator-service-provid) or later, in order to upgrade to 1801.
-    - On System Center 2016 install update rollup 2(https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f) or later, in order to upgrade to 1801.
+    - On System Center 2016 install [update rollup 2](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f) or later, in order to upgrade to 1801.
 - VMM:
     -  On System Center 2012 R2 install [update rollup 12](https://support.microsoft.com/help/3209585/update-rollup-12-for-system-center-2012-r2-virtual-machine-manager) or later, in order to upgrade to 1801.
     - On System Center 2016 install [update rollup 2](https://support.microsoft.com/help/3209586/update-rollup-2-for-system-center-2016-virtual-machine-manager) or later, in order to upgrade to 1801.
-- Windows Azure Pack:
-    - On Windows Server 2012 R2 install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack), or later.
-    - On Windows Server 2012, install [update rollup 2], or later.
+- Windows Azure Pack - Install [update rollup 12](https://support.microsoft.com/help/4043909/update-rollup-12-for-windows-azure-pack), or later.
 - VMM management console - The machine running the VMM 2012 R2 or 2016 management console should have the latest VMM updates installed.
 
 
