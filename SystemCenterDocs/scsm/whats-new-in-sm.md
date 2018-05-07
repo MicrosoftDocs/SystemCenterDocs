@@ -37,3 +37,7 @@ This article details the new features supported in System Center 2016 - Service 
 [!INCLUDE [whats-new-sm-2016.md](../includes/whats-new-sm-2016.md)]
 
 ::: moniker-end
+
+## Next steps
+
+- Review [Planning for Service Manager](../scsm/plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.

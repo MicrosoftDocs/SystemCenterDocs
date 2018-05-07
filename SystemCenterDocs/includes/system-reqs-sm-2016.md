@@ -135,7 +135,3 @@ The following table summarizes the support for SQL Server 64-bit Enterprise and 
         ```
         sp_configure 'allow updates',0 reconfigure with override
         ```
-
-## Next steps
-- [Learn about](../scsm/deploy-topo-scenarios.md) the tested limits for Service Manager deployment scenarios.
-- Read about [hardware performance](../scsm/plan-hardware-perf.md).

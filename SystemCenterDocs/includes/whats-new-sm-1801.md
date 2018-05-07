@@ -26,7 +26,3 @@ The evaluation version of Service Manager can be installed and used for 180 days
 This release of System Center Service Manager (SCSM) contains all the bug fixes shipped until the [Update Rollup 4 of SCSM 2016](https://support.microsoft.com/en-us/help/4024038), along with added support for TLS 1.2 Protocol. [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016) for more information about how to set up, configure and run your environment to use TLS 1.2.
 
 This build should be used for validating the SCSM integration scenarios with other System Center components included in release 1801.
-
-## Next steps
-
-Review [Planning for Service Manager](../scsm/plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.

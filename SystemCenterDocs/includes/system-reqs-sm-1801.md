@@ -156,9 +156,3 @@ The following versions of PowerShell are supported for Service Manager.
 |**Service Manager** Console|||&#8226;|&#8226;|
 |**Service Manager** Management Server|||&#8226;|&#8226;|
 |**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|
-
-
-## Next steps
-- Review [Service Manager editions](../scsm/sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
-- Read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md) to learn about the tested limits of Service Manager.
-- Read about Service Manager [hardware performance](../scsm/plan-hardware-perf.md).
