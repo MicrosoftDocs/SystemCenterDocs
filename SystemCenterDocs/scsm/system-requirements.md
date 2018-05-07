@@ -36,7 +36,3 @@ This article details the system requirements for System Center 2016 - Service Ma
 [!INCLUDE [system-reqs-sm-2016](../includes/system-reqs-sm-2016.md)]
 
 ::: moniker-end
-
-## Next steps
-
-[Plan SM installation](../scsm/plan-sm.md)

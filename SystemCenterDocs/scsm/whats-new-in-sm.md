@@ -37,7 +37,3 @@ This article details the new features supported in System Center 2016 - Service 
 [!INCLUDE [whats-new-sm-2016.md](../includes/whats-new-sm-2016.md)]
 
 ::: moniker-end
-
-## Next steps
-- [Know the SM system requirements](../scsm/system-requirements.md)
-- [Plan SM  installation](../scsm/plan-sm.md)
