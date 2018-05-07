@@ -5,8 +5,7 @@
 ## [Evaluation and activation of Service Manager 1801](sm-license.md)
 ## [Service Manager components](sm-parts.md)
 ## [Supported configurations](supported-configs.md)
-## [System requirements - Service Manager 2016](sm-sys-reqs.md)
-## [System requirements - Service Manager 1801](sm-sys-reqs-1801.md)
+## [System requirements - Service Manager ](system-requirements.md)
 ## [Release notes - Service Manager ](release-notes-sm.md)
 # How to
 ## Plan

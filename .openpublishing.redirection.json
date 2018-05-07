@@ -1611,6 +1611,15 @@
 },
 
 {
+     "source_path" : "SystemCenterDocs/scsm/sm-sys-reqs.md",
+     "redirect_url": "/system-center/scsm/system-requirements.md"
+},
+{
+     "source_path" : "SystemCenterDocs/scsm/sm-sys-reqs-1801.md",
+     "redirect_url": "/system-center/scsm/system-requirements.md"
+},
+
+{
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-appendix-a-command-line-option-error-codes.md",
      "redirect_url": "/system-center/scsm/deploy-cmd-line"
 },

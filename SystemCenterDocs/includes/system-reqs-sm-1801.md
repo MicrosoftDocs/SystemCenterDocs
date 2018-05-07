@@ -1,28 +1,27 @@
 ---
-title: System Requirements for Service Manager 1801
+title: include file
 manager: vvithal
-description: The article describes the hardware, software and other system requirements  Service Manager 1801.
+description: include file to describe the hardware, software and other system requirements  Service Manager 1801.
 ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 02/05/2018
+ms.date: 05/08/2018
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: include
 ms.assetid: 5a6b1532-d4e0-4fb0-b721-086e934b4b5f
-monikerRange: 'sc-sm-1801'
 ---
 
-# System requirements for System Center 1801 - Service Manager
+## System requirements for System Center 1801 - Service Manager
 
-The article describes general performance and scalability guidance for System Center 1801 - Service Manager and recommends hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for System Center 1801 - Service Manager and recommends hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 
-Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested capacity limits of Service Manager.
+Read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md) to learn about the tested capacity limits of Service Manager.
 
 ## Supported coexistence
 
@@ -61,7 +60,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
 ### Additional notes
 
-- **Operations Manager** - Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](om-considerations.md) installing both Service Manager and Operations Manager in the same environment. You can create a data mart for Operations Manager.
+- **Operations Manager** - Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](../scsm/om-considerations.md) installing both Service Manager and Operations Manager in the same environment. You can create a data mart for Operations Manager.
 
 - **Configuration Manager** - Service Manager can import configuration items from a System Center - Configuration Manager environment.
 
@@ -115,7 +114,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
  SQL Server AlwaysOn Availability Groups functionality is supported by System Center 1801 - Service Manager.
 
- For more information about installing Service Manager with AlwaysOn availability groups, [refer here](sql-always-on.md).
+ For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
 
 ## Server operating system
 
@@ -160,6 +159,6 @@ The following versions of PowerShell are supported for Service Manager.
 
 
 ## Next steps
-- Review [Service Manager editions](sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
+- Review [Service Manager editions](../scsm/sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
 - Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested limits of Service Manager.
-- Read about Service Manager [hardware performance](plan-hardware-perf.md).
+- Read about Service Manager [hardware performance](../scsm/plan-hardware-perf.md).
