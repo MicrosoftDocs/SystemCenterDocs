@@ -1,19 +1,20 @@
 ---
-title:  What's new in System Center - Service Manager 2016
-description: Describes new features and other changes in System Center 2016 - Service Manager.
+title:  include file
+description: include file to describe the new features and other changes in System Center 2016 - Service Manager.
 manager:  carmonn
-ms.topic:  article
+ms.topic:  include
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-ms.date: 01/23/2018
+ms.date: 04/05/2018
 ms.technology:  service-manager
-monikerRange: 'sc-sm-2016'
+ms.assetid: ad91af28-dc8c-4f24-b6fa-e7a8b983cf2c
+
 ---
 
-# What's new in System Center 2016 - Service Manager
+## What's new in System Center 2016 - Service Manager
 
-This article summarizes features released in System Center 2016 - Service Manager.
+The following sections summarize the new features released in System Center 2016 - Service Manager.
 
 
 ## Support for SQL Server 2014 SP2
@@ -98,7 +99,7 @@ The Active Directory and SCCM connectors in Service Manager can import large amo
 
 The ECL table, and the history tables in this case, store details about when the data was brought into Service Manager and the properties that were added or updated for each data item.
 Disabling ECL logging, doesn't affect importing data from connectors. Instead, most logging data doesn't get written to the ECL and history tables, which can result is significant performance improvement.
-Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](disable-ecl-logging.md).
+Disabled ECL logging is not available by default. In other words, by default, ECL logging is enabled. However, you can easily turn on Disabled ECL logging by using a simple PowerShell cmdlet. For more information, see [Optionally Disable ECL Logging for Faster Connector Synchronization](../scsm/disable-ecl-logging.md).
 
 ## Grooming improvements for ECL logs
 
@@ -219,7 +220,7 @@ This release contains a new HTML based Self Service Portal which offers the foll
 -   Support of direct URLs for Self Service Portal pages
 -   Rich customization options
 
-For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](deploy-self-service-portal.md).
+For more information and installing and customizing the portal, see [Deploy the Self-Service Portal for Service Manager](../scsm/deploy-self-service-portal.md).
 
 > [!NOTE]
 > The older Silverlight and SharePoint-based Self-Service portal has been removed.
@@ -233,7 +234,7 @@ Spell check is now enabled for work item forms. It is enabled for 17 out of the 
 A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
 
 ## Support for Lync 2013 and Skype for Business
-System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](contact-user-from-incident.md).
+System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../scsm/contact-user-from-incident.md).
 
 
 ## Setup changes to support SQL AlwaysOn installation
@@ -248,4 +249,4 @@ Service Manager 2016 now supports the .Net framework 4.5.1
 
 ## Next steps
 
-- Review [Planning for Service Manager](plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
+- Review [Planning for Service Manager](../scsm/plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.

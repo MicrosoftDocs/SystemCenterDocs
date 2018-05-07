@@ -1,7 +1,6 @@
 # Overview
 ## [Service Manager](service-manager.md)
-## [What's new in Service Manager 1801](whats-new-1801.md)
-## [What's new in Service Manager 2016](whats-new.md)
+## [What's new in Service Manager ](whats-new-in-sm.md)
 # Get started
 ## [Evaluation and activation of Service Manager 1801](sm-license.md)
 ## [Service Manager components](sm-parts.md)
