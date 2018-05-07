@@ -135,7 +135,7 @@ The AD GroupExpansion functionality is now part of the ADConnector, as opposed t
 
  With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
-![date dimensions](./media/whats-new/sm-date-dimensions.png)
+![date dimensions]((../scsm/media/whats-new/sm-date-dimensions.png)
 
 The following new dimensions have been added to Service Manager data warehouse  cubes:
 
@@ -188,7 +188,7 @@ Cube Name: Service Manager Service Catalog library cube
 
 All these dimensions have the following attributes, which you can use for slicing your data:
 
-![dimensions list](./media/whats-new/sm-dimensions-list.png)
+![dimensions list]((../scsm/media/whats-new/sm-dimensions-list.png)
 
 #### To add date dimensions for other date fields in custom cubes
 
@@ -242,7 +242,7 @@ The Setup wizard allows you to easily install Service Manager in complex configu
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![configure SQL management server and port ](./media/whats-new/sm-sqlserver-config.png)
+![configure SQL management server and port ]((../scsm/media/whats-new/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
 Service Manager 2016 now supports the .Net framework 4.5.1
