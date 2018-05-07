@@ -15,13 +15,13 @@ ms.technology:  service-manager
 
 ::: moniker range="sc-sm-1801"
 
-This article lists the release notes for System Center 1801 - Service Manager (SM).
+This article provides the release notes for System Center 1801 - Service Manager (SM).
 
 ::: moniker-end
 
 ::: moniker range="sc-sm-2016"
 
-This article lists the release notes for System Center 2016 - Service Manager (SM).
+This article provides the release notes for System Center 2016 - Service Manager (SM).
 
 ::: moniker-end
 
