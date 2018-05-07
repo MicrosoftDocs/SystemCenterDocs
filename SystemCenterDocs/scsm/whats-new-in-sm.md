@@ -39,5 +39,5 @@ This article details the new features supported in System Center 2016 - Service 
 ::: moniker-end
 
 ## Next steps
-- [Know the SM system requirements](system-requirements-sm.md)
-- [Plan SM  installation](../sm/plan-sm.md)
+- [Know the SM system requirements](../scsm/system-requirements-sm.md)
+- [Plan SM  installation](../scsm/plan-sm.md)

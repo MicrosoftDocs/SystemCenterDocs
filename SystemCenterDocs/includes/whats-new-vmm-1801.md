@@ -1,7 +1,7 @@
 ---
 ms.assetid: 0683ab30-6f03-4ffc-a50d-8d91d61768fe
 title: include file
-description: include file to detail the new features in virtual machine manager
+description: include file to detail the new features in virtual machine manager 1801.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal

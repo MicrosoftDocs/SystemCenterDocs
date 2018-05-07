@@ -7,8 +7,7 @@
 ## [Supported configurations](supported-configs.md)
 ## [System requirements - Service Manager 2016](sm-sys-reqs.md)
 ## [System requirements - Service Manager 1801](sm-sys-reqs-1801.md)
-## [Release notes - Service Manager 2016](release-notes.md)
-## [Release notes - Service Manager 1801](release-notes-1801.md)
+## [Release notes - Service Manager ](release-notes-sm.md)
 # How to
 ## Plan
 ### [Planning for Service Manager](plan-sm.md)

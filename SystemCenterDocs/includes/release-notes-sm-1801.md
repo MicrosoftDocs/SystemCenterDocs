@@ -1,21 +1,20 @@
 ---
-description: Release Notes for System Center 1801 - Service Manager
+description: include file to detail the release notes for Service Manager 1801
 manager:  vvithal
-ms.topic: article
+ms.topic: include
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:
-ms.date: 02/05/2018
-title:  Release Notes for System Center 1801 - Service Manager
-ms.assetid:
-monikerRange: 'sc-sm-1801'
+ms.date: 05/07/2018
+title: include file
+ms.assetid: 135c0449-c04a-4329-a67e-38f7abe82896
 ---
 
-# Release Notes for System Center 1801 - Service Manager
+## Release Notes for System Center 1801 - Service Manager
 
-The following release notes apply to System Center 1801 - Service Manager.
+The following sections detail the release notes for System Center 1801 - Service Manager.
 
 ## SQL Server 2014 Cardinality Estimation might affect the performance of Service Manager 1801
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.

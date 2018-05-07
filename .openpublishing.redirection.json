@@ -1600,6 +1600,16 @@
      "redirect_url": "/system-center/scsm/whats-new-in-sm.md"
 },
 
+
+{
+     "source_path" : "SystemCenterDocs/scsm/release-notes.md",
+     "redirect_url": "/system-center/scsm/release-notes-sm.md"
+},
+{
+     "source_path" : "SystemCenterDocs/scsm/release-notes-1801.md",
+     "redirect_url": "/system-center/scsm/release-notes-sm.md"
+},
+
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-appendix-a-command-line-option-error-codes.md",
      "redirect_url": "/system-center/scsm/deploy-cmd-line"
