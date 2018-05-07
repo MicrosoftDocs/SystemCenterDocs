@@ -36,7 +36,7 @@ To help simplify upgrades, you can use the following Service Manager 2016 connec
 
 ## Performance improvements
 
-In System Center 2016 - Service Manager, data processing throughout has been increased by 4 times. With this improvement, Service Manager better utilizes SQL Server. These results are from testing at Microsoft by stressing test systems heavily using the standard recommended topology.
+In System Center 2016 - Service Manager, data processing throughout has been increased by four times. With this improvement, Service Manager better utilizes SQL Server. These results are from testing at Microsoft by stressing test systems heavily using the standard recommended topology.
 
 **Performance improvements are realized in the following ways:**
 
@@ -201,17 +201,17 @@ All these dimensions have the following attributes, which you can use for slicin
     ```
 
     The NamedCalculation ID should have string `__DateKey` in the end, and this field in the data warehouse should not be NULL or 0.
-2.  Seal the managment pack and import it into Service Manager.
+2.  Seal the management pack and import it into Service Manager.
 3.  Run the MPSyncJob on the data warehouse and wait until the management pack is marked **Completed**.
 4.  Process all the cubes, or wait for automatic processing overnight.
 5.  Cubes are updated with new date dimensions, as defined above.
 
 
 ## New HTML based Self Service portal
-This release contains a new HTML based Self Service Portal which offers the following enhancements:
+This release contains a new HTML based Self Service Portal, which offers the following enhancements:
 
 -   Updated modern UI with easy-to-use navigation
--   Multiple browser support
+-   Multiple browsers support
 -   Announcements are now supported in the portal
 -   New Service Catalog
 -   Rich browser for help articles
@@ -231,10 +231,10 @@ Spell check is now enabled for work item forms. It is enabled for 17 out of the 
 
 ## Open activity in progress
 
-A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking the this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the workitem.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
+A new console task *Open Activity in Progress*, was added for service requests and change requests. This console task’s link is enabled when a work item moves to the *in progress* state. Clicking this task’s link opens the current in-progress activity. For work items that don’t have any in-progress activity, the localized message *No Activity with In Progress state is found for the work item.* is displayed. In previous versions of Service Manager, it required to open the work item, navigate to the **Activities** tab, and then clicking the *In progress* activity. Now In progress activity can be accessed with a single click.
 
 ## Support for Lync 2013 and Skype for Business
-System Center 2016 - Service Manager includes updates that supports integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../scsm/contact-user-from-incident.md).
+System Center 2016 - Service Manager includes the updates that support integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../scsm/contact-user-from-incident.md).
 
 
 ## Setup changes to support SQL AlwaysOn installation
