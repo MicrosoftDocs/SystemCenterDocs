@@ -1,28 +1,27 @@
 ---
-title: System Requirements for Service Manager 1801
+title: include file
 manager: vvithal
-description: The article describes the hardware, software and other system requirements  Service Manager 1801.
+description: include file to describe the hardware, software and other system requirements  Service Manager 1801.
 ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 02/05/2018
+ms.date: 05/08/2018
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: reference
+ms.topic: include
 ms.assetid: 5a6b1532-d4e0-4fb0-b721-086e934b4b5f
-monikerRange: 'sc-sm-1801'
 ---
 
-# System requirements for System Center 1801 - Service Manager
+## System requirements for System Center 1801 - Service Manager
 
-The article describes general performance and scalability guidance for System Center 1801 - Service Manager and recommends hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 1801, and recommend the  hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 
-Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested capacity limits of Service Manager.
+Read [Configurations for deployment scenarios](../scsm/deploy-topo-scenarios.md) to learn about the tested capacity limits of Service Manager.
 
 ## Supported coexistence
 
@@ -53,15 +52,15 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 |**Service Manager management server**|The management server needs: [ADO.NET Data Services Update for .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkID=224398) SP1 for Windows Server; SQL Server Native client; Microsoft Report Viewer Redistributable, which is available with the Service Manager media.<br/><br/> The management server must be installed on a 64\-bit edition of Windows. |  
 |**Data warehouse management server**|The warehouse management server requires: SQL Server Native client<br/><br/> The data warehouse management server must be installed on a 64\-bit edition of Windows.|  
 |**Service Manager/data warehouse databases**|The Service Manager or data warehouse databases require:  SQL Server Reporting Services \(SSRS\); SQL Server Analysis Management Objects.<br/><br/> The SQL Server and Analysis Services collation settings must be the same for the computers hosting the Service Manager database, data warehouse database, analysis services database, and Reporting Services database.|  
-|**Service Manager console**|The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows.|  
+|**Service Manager console**|The console requires: Microsoft Report Viewer Redistributable (available on System Center media): Microsoft Excel in order to view OLAP data cubes on the console computer;  ADO.NET Data Services Update for .NET Framework 3.5 SP1 for Windows Server; SQL Server Analysis Management Objects.<br/><br/> The console can be installed on both 32\-bit and 64\-bit editions of Windows.|  
 |**Self-Service portal**|The Self-Service Portal server requires: Windows 2012 R2 server or later; the IIS role and ASP.NET 4.5 enabled; SQL Server Analysis Management Objects.<br/><br/>  Join the server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the primary or secondary server.
 |**Machines using self-service**|The Self Service portal needs a screen resolution above 1024 X 768.<br/><br/> Supported browsers: Microsoft Edge; Microsoft Internet Explorer 10 and 11; Mozilla Firefox 42 and later; Google Chrome 46 and later.|  
-|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](config-remote-ssrs.md) the manual steps.
+|**SQL Server Reporting Services**|In a deployment topology where the computer hosting SSRS is not on the same computer that hosts the data warehouse management server, you have to add **Microsoft.EnterpriseManagement.Reporting.Code** to the global assembly cache. [Learn about](../scsm/config-remote-ssrs.md) the manual steps.
 
 
 ### Additional notes
 
-- **Operations Manager** - Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](om-considerations.md) installing both Service Manager and Operations Manager in the same environment. You can create a data mart for Operations Manager.
+- **Operations Manager** - Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](../scsm/om-considerations.md) installing both Service Manager and Operations Manager in the same environment. You can create a data mart for Operations Manager.
 
 - **Configuration Manager** - Service Manager can import configuration items from a System Center - Configuration Manager environment.
 
@@ -97,7 +96,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
  To either install or upgrade System Center 1801 - Service Manager, computers running SQL Server that host databases must be configured to allow updates. If updates are not allowed, System Center 1801 - Service Manager Setup will not complete and the following error message will appear at the **Create database** stage of the installation:
 
- *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry upgrade for this role.*
+ *An error occurred while executing a customer action: _ExecuteSqlScripts. This upgrade attempt has failed before permanent modifications were made. Upgrade has successfully rolled back to the original state of the system. Once the corrections are made, you can retry the upgrade for this role.*
 
  You can check the status of **allow updates** on SQL Server by executing the following stored procedure from within SQL Server Management Studio:
 
@@ -115,7 +114,7 @@ To help simplify upgrades, you can use Service Manager 1801 connectors with the 
 
  SQL Server AlwaysOn Availability Groups functionality is supported by System Center 1801 - Service Manager.
 
- For more information about installing Service Manager with AlwaysOn availability groups, [refer here](sql-always-on.md).
+ For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
 
 ## Server operating system
 
@@ -157,9 +156,3 @@ The following versions of PowerShell are supported for Service Manager.
 |**Service Manager** Console|||&#8226;|&#8226;|
 |**Service Manager** Management Server|||&#8226;|&#8226;|
 |**Service Manager** Data Warehouse Management Server|||&#8226;|&#8226;|
-
-
-## Next steps
-- Review [Service Manager editions](sm-editions.md) to learn about the retail and select editions of Service Manager and what effect selecting the 180-day evaluation installation has on these two editions.
-- Read [Configurations for deployment scenarios](deploy-topo-scenarios.md) to learn about the tested limits of Service Manager.
-- Read about Service Manager [hardware performance](plan-hardware-perf.md).

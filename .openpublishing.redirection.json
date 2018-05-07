@@ -1589,6 +1589,36 @@
      "source_path" : "SystemCenterDocs/scsm/view-workflow-status.md",
      "redirect_url": "/system-center/scsm/workflows"
 },
+
+
+{
+     "source_path" : "SystemCenterDocs/scsm/whats-new.md",
+     "redirect_url": "/system-center/scsm/whats-new-in-sm.md"
+},
+{
+     "source_path" : "SystemCenterDocs/scsm/whats-new-1801.md.md",
+     "redirect_url": "/system-center/scsm/whats-new-in-sm.md"
+},
+
+
+{
+     "source_path" : "SystemCenterDocs/scsm/release-notes.md",
+     "redirect_url": "/system-center/scsm/release-notes-sm.md"
+},
+{
+     "source_path" : "SystemCenterDocs/scsm/release-notes-1801.md",
+     "redirect_url": "/system-center/scsm/release-notes-sm.md"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scsm/sm-sys-reqs.md",
+     "redirect_url": "/system-center/scsm/system-requirements.md"
+},
+{
+     "source_path" : "SystemCenterDocs/scsm/sm-sys-reqs-1801.md",
+     "redirect_url": "/system-center/scsm/system-requirements.md"
+},
+
 {
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-appendix-a-command-line-option-error-codes.md",
      "redirect_url": "/system-center/scsm/deploy-cmd-line"
