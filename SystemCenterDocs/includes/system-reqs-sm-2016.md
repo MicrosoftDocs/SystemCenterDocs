@@ -14,7 +14,7 @@ ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
 
 ## System requirements for System Center 2016 - Service Manager
 
-The following sections describe the general performance and scalability guidance for System Center 2016 - Service Manager and recommends hardware configurations for a variety of workloads. Because System Center 2016 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 2016, and recommends the  hardware configurations for a variety of workloads. Because System Center 2016 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 

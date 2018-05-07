@@ -13,7 +13,7 @@ ms.assetid:  87385ef8-1875-477c-8e6c-efc05028aaa6
 ---
 
 ## What's new in System Center 1801 - Service Manager
-he following sections summarize the new features released in System Center 1801 - Service Manager (SM).
+The following sections summarize the new features released in SM 1801.
 
 ## Support to enhanced evaluation experience
 

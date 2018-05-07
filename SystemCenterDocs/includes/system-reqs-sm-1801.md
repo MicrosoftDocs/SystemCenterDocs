@@ -17,7 +17,7 @@ ms.assetid: 5a6b1532-d4e0-4fb0-b721-086e934b4b5f
 
 ## System requirements for System Center 1801 - Service Manager
 
-The following sections describe the general performance and scalability guidance for System Center 1801 - Service Manager and recommends hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
+The following sections describe the general performance and scalability guidance for SM 1801, and recommends the  hardware configurations for a variety of workloads. Because System Center 1801 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  
 
 ## Capacity limits for Service Manager
 

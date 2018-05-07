@@ -14,7 +14,7 @@ ms.assetid: ad91af28-dc8c-4f24-b6fa-e7a8b983cf2c
 
 ## What's new in System Center 2016 - Service Manager
 
-The following sections summarize the new features released in System Center 2016 - Service Manager.
+The following sections summarize the new features released in SM 2016.
 
 
 ## Support for SQL Server 2014 SP2
