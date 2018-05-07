@@ -12,7 +12,7 @@ ms.technology:  service-manager
 ---
 
 
-# What's New in service manager
+# What's New in Service Manager
 
 ::: moniker range="sc-sm-1801"
 
