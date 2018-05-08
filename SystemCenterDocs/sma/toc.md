@@ -3,7 +3,7 @@
 ## [Architecture of Service Management Automation](architecture-of-service-management-automation.md)
 ## [Runbook Execution in Service Management Automation](runbook-automation.md)
 # Diagnostics and usage data
-## [Turn off telemetry in SMA](turn-off-telemetry)
+## [Turn off telemetry in SMA](turn-off-telemetry.md)
 # Get started
 ## [What's new in Service Management Automation 2016](whats-new-in-service-management-automation.md)
 ## [What's new in Service Management Automation 1801](whats-new-1801.md)
