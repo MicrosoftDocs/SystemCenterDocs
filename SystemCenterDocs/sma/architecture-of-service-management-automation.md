@@ -16,7 +16,7 @@ ms.technology: service-management-automation
 This article provides a diagram that illustrates each SMA feature.
 
 ![SMA architecture diagram](./sma/media/architecture-of-service-management-automation/sma-architecture.png)
-![Add disks to storage pool](./dpm/media/add-storage/dpm2016-add-storage-1.png)
+![Add disks to storage pool](../dpm/media/add-storage/dpm2016-add-storage-1.png)
 
 
  
