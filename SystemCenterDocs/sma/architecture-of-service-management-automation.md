@@ -1,13 +1,13 @@
 ---
-title:  Service Management Automation architecture in System Center
-description:  Provides an overview of the architecutre in System Center Service Management Automation (SMA)
-manager:  carmonm
-ms.topic:  article
-author:  rayne-wiselman
+title: Service Management Automation architecture in System Center
+description: Provides an overview of the architecutre in System Center Service Management Automation (SMA)
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
 ms.author: raynew
-ms.prod:  system-center-threshold
-ms.date:  05/08/2018
-ms.technology:  service-management-automation
+ms.prod: system-center-threshold
+ms.date: 05/08/2018
+ms.technology: service-management-automation
 
 ---
 
@@ -15,7 +15,7 @@ ms.technology:  service-management-automation
 
 This article provides a diagram that illustrates each SMA feature.
 
-![SMA architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+![SMA architecture diagram](/media/architecture-of-service-management-automation/smaarchitecture.png)
  
  ## Features
 
