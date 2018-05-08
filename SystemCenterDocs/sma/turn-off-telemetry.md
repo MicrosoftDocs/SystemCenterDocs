@@ -15,7 +15,7 @@ ms.technology: service-management-automation
 
 This article provides information about how to turn off the telemetry settings in System Center - Service Management Automation (SMA).
 
-By default, SMA sends diagnostic and connectivity data to Microsoft. We use this data to provide and improve the quality, security and integrity of our products and services.
+By default, SMA sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
 
 Administrators can turn off this feature at any point of time.
 
@@ -40,16 +40,16 @@ Use the following procedure:
 
   > You can use the [Get-SmaAdminConfiguration](https://docs.microsoft.com/en-us/powershell/module/Microsoft.SystemCenter.ServiceManagementAutomation/Get-SmaAdminConfiguration?view=systemcenter-ps-2016) command to check the current admin configuration settings.
 
-  **Sample configuration**
+  Sample configuration
 
-  ![admin configuration sample](./media/telemetry/get-admin-config-sma.png)
+  ![admin configuration sample data](./media/telemetry/get-admin-config-sma.png)
 
 ## Telemetry data collected
 
 | Data related To | Data collected |
 | --- | --- |
 | **Installation and other configuration information** | SMA version <br /><br /> ID used for correlation with other System Center products <br /><br />ID used to identify specific SMA installation<br /><br />If telemetry is opted out<br /><br /> If new database is created <br /><br />Processor and memory details of the system <br /><br />PowerShell version installed on the system<br /><br />Version information of IIS <br /><br />SQL version and whether Always On, Clustered and Remote are being used|
-| **Usage ** | Runbooks and their state - such as  published, edit, new, debug enabled, verbose enabled, progress enabled. <br /><br /> Script runbooks <br /><br /> Workflow runbooks <br /><br /> Runbooks with assigned worker <br /><br /> Runbook workers <br /><br /> Modules, portable modules, module activities and module names <br /><br /> Entities – certificates, credentials, connections, variables, schedules <br /><br /> Jobs – running, suspended, completed, failed <br /><br /> Average load times – script runbooks, workflow runbooks|
+| **Usage ** | Runbooks and their state - such as  published, edit, new, debug enabled, verbose enabled, progress enabled. <br /><br /> Script runbooks <br /><br /> Workflow runbooks <br /><br /> Runbooks with assigned worker <br /><br /> Runbook workers <br /><br /> Modules, portable modules, module activities, and module names <br /><br /> Entities – certificates, credentials, connections, variables, schedules <br /><br /> Jobs – running, suspended, completed, failed <br /><br /> Average load times – script runbooks, workflow runbooks|
 
 ## Next steps
 
