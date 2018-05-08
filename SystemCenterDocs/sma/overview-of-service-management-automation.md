@@ -8,6 +8,7 @@ ms.author: raynew
 ms.prod:  system-center-threshold
 ms.date: 05/08/2018
 ms.technology:  service-management-automation
+
 ---
 
 # Overview of Service Management Automation
@@ -52,7 +53,7 @@ The following diagram illustrates each of the SMA features, and the communicatio
 ![SMA Architecture diagram](/system-center/sma/media/overview-of-service-management-automation/smaarchitecture.png)
 
 
--   The SMA web service communicates with Windows Azure Pack and authenticates users.
+-   The SMA web service communicates with Windows Azure Pack, and authenticates users.
 
 -   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
 
