@@ -1,21 +1,18 @@
 ---
-ms.assetid: 379b60d2-28f3-47d1-bf54-55409cd436ec
-title: Install Agent and Certificate on UNIX and Linux Computers Using the Command Line
-description: This article describes how to install the Operations Manager agent manually on UNIX and Linux computers.
+ms.assetid: 
+title: include file
+description: include article to detail the detail how to install the System Center 2016 - Operations Manager agent manually on UNIX and Linux computers.
 author: mgoedtel
 ms.author: magoedte
-manager: carmonm
-ms.date: 05/08/2018
-ms.custom: na
-ms.prod: system-center-2016
-monikerRange: 'sc-om-2016'
-ms.technology: operations-manager
-ms.topic: article
+manager:  carmonm
+ms.date:  05/08/2018
+ms.topic:  include
+ms.prod:  system-center-2016
+ms.technology:  operations-manager
 ---
 
-# Install agent and certificate on UNIX and Linux computers using the command line
-
-Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center 2016 - Operations Manager Operations Manager.  The agent packages can be found in the the following folder on a management server - *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits*.  Import the required management packs for the specific version of UNIX/Linux you need to monitor.  The management pack are available in the Operations Manager installation media, in the *\ManagementPacks* directory or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=29696).
+## Install Operations Manager agent on UNIX and Linux computers from the command line
+The following procedures show how to manually install agents to UNIX and Linux computers for monitoring in System Center 2016 - Operations Manager.
 
 ## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
 
@@ -161,13 +158,3 @@ You must have already manually installed an agent before you start this procedur
 ## Discovering computers after manual deployment
 
 After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).
-
-## Next steps
-
-- To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](manage-apply-overrides-object-discovery.md)
-
-- To understand how to perform agent maintenance on UNIX and Linux computers, see [Upgrading and Uninstalling Agents on UNIX and Linux Computers](~/scom/manage-upgrade-uninstall-crossplat-agent.md)
-
-- Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.  
-
-
