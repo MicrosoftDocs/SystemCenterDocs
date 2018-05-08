@@ -1,5 +1,4 @@
 ---
-ms.assetid: c97929cf-5a66-4597-ae74-d1c3e6bcd5d8
 title: Upgrade to SPF 1801
 description: This article provides information about  how to upgrade to System Center Service Provider Foundation (SPF) 1801 from a previous version.
 author:  JYOTHIRMAISURI
