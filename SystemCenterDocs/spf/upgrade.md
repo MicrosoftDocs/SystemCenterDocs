@@ -54,8 +54,8 @@ Here's the recommended upgrade order for the above scenario
 
 1. Create a new server running Windows Server 2016, on which to install SPF 2016. You can use a VM. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
 2. Install the prerequisites on the new VM, as follows:
-    a. Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434)).
-    b. Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=43339))
+    a. Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434).
+    b. Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=43339)
     c. Install SQL Server [command line utilities](https://www.microsoft.com/download/details.aspx?id=43339).
     d. Install SQL Server [CLR types](https://www.microsoft.com/download/details.aspx?id=43339).
     e. Install IIS with the following features:
