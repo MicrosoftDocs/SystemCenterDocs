@@ -39,11 +39,7 @@ Use the following procedure:
   >[!NOTE]
 
   > You can use the [Get-SmaAdminConfiguration](https://docs.microsoft.com/en-us/powershell/module/Microsoft.SystemCenter.ServiceManagementAutomation/Get-SmaAdminConfiguration?view=systemcenter-ps-2016) command to check the current admin configuration settings.
-
-  Sample configuration
-
-  ![admin configuration sample data](/system-center/sma/media/telemetry/get-adminconfig.png)
-
+  
 ## Telemetry data collected
 
 | **Data related To** | **Data collected**|
