@@ -60,7 +60,7 @@ Install the console as follows:
     - /client - specifies console installation
     - /i or /x - specify whether to install (/i) or uninstall (/x) the console.
     - /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file, it installs with default values.
-    - <path> - location of ini file.
+    - path: location of ini file.
     - Don't use the /opsmgr parameter
 
 Example: **setup.exe /client /i /f C:\Temp\VMClient.ini**.
