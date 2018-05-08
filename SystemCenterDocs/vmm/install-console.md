@@ -5,7 +5,7 @@ description: This article provides installation instructions for the VMM console
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  01/10/2018
+ms.date:  05/06/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -40,15 +40,30 @@ If you want to uninstall the console do the following:
 2. In **Select features to remove** click **VMM console**. On the VMM management server, you can't uninstall the console without uninstalling VMM management.
 3. In **Summary** review the settings and click **Uninstall**.
 
-## Install and uninstall the console from the command prompt
+## Install the console from the command prompt
 
-1. Edit the VMClient.ini file. The settings are described below.
-1. Run setup.exe with these parameters:
-    - **/client** - specifies console installation
-    - **/i or /x** - specify whether to install (/i) or uninstall (/x) the console.
-    - **/f** &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file, it installs with default values.
-    - Don't use the **/opsmgr** parameter
-1. For example, run **setup.exe /client /i /f C:\Temp\VMClient.ini**.
+You can install the VMM administrator console from the command line by using the VMClient.ini file to customize the installation options. You can set the parameters as follows:
+
+**Parameter** | **Value**
+--- | ---
+ProgramFiles | Specify the location in which to store program files.
+IndigoTCpPort | Specify the port number used to communicate with the VMM server.
+MUOptIn | 0: Don't opt in to Microsoft Update. 1: Opt in.
+VmmServerForOpsMgrConfig | Specify the name of the System Center Operations Manager server.
+
+Install the console as follows:
+
+
+1. Copy the VMClient.ini file from the amd64\Setup folder to a local folder.
+2. Edit the VMClient.ini file. Remove the comment indicator (#) only if you want to edit the entry. Otherwise, setup uses the values in the .ini file as the default values.
+3. Run setup as follows: setup.exe /client /i /f <path>, where:
+    - /client - specifies console installation
+    - /i or /x - specify whether to install (/i) or uninstall (/x) the console.
+    - /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file, it installs with default values.
+    - path: location of ini file.
+    - Don't use the /opsmgr parameter
+
+Example: **setup.exe /client /i /f C:\Temp\VMClient.ini**.
 
 ## Connect to a VMM management server
 
