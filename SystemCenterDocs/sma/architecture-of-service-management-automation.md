@@ -14,12 +14,12 @@ ms.technology:  service-management-automation
 
 The following diagram illustrates each of the Service Management Automation features and the communication between them.
 
-![SMA Architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+  ![SMA Architecture diagram](../media/architecture-of-service-management-automation/smaarchitecture.png)
 
--   The Service Management Automation web service communicates with Windows Azure Pack and authenticates users.
+  -   The Service Management Automation web service communicates with Windows Azure Pack and authenticates users.
 
--   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
+  -   The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
 
 -   Runbook workers run the runbooks, and they can be used for load balancing.
 
--   The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
+  -   The management portal in Windows Azure Pack is where you author, debug, and start and stop runbooks.
