@@ -49,7 +49,7 @@ SMA also has deep integration with Windows Azure Pack, however, you no longer ne
 
 The following diagram illustrates each of the SMA features, and the communication with a Windows Azure Pack installation.
 
-![SMA Architecture diagram](/media/overview-of-service-management-automation/architecture.png)
+![SMA Architecture diagram](/system-center/sma/media/overview-of-service-management-automation/architecture.png)
 
 
 -   The SMA web service communicates with Windows Azure Pack and authenticates users.
