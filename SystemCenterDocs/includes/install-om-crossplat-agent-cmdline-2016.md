@@ -7,7 +7,7 @@ ms.author: magoedte
 manager:  carmonm
 ms.date:  05/08/2018
 ms.topic:  include
-ms.prod:  system-center-2016
+ms.prod:  system-center-threshold
 ms.technology:  operations-manager
 ---
 
@@ -157,4 +157,4 @@ You must have already manually installed an agent before you start this procedur
 
 ## Discovering computers after manual deployment
 
-After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).
+After you have manually deployed agents to UNIX and Linux computers, they still need to be discovered by Operations Manager by using the Discovery Wizard. For the **Discovery type**, select **Discover only computers with the UNIX/Linux agent installed**. For more information see [Install Agent on UNIX and Linux Using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md).
