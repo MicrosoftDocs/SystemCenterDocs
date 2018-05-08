@@ -1,15 +1,13 @@
 ---
-description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
-manager:  cfreeman
-ms.topic:  article
-author:  bwren
-ms.author: bwren
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  01/22/2018
 title:  Windows PowerShell Workflow Concepts
+description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
+manager:  carmon
+ms.topic:  article
+author:  rayne-wiselman
+ms.author: raynew
+ms.prod:  system-center-threshold
+ms.date:  05/08/2018
 ms.technology:  service-management-automation
-ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 ---
 
 # Windows PowerShell Workflow Concepts
@@ -148,7 +146,7 @@ InlineScript
 
 The most common use for **InlineScript** in a runbook is to run a block of code on another computer. This is required when cmdlets in your runbook are not installed in Automation or if the action only has permissions to be performed locally on the target computer. This is illustrated in the following diagram.
 
-![Inline script diagram](/system-center/sma/media/overview-powershell-workflows/smaauth_inlinescript.png)
+![Inline script diagram](./media/overview-powershell-workflows/smaauth_inlinescript.png)
 
 In order to run the code block on another computer, the **PSComputer** and **PSCredential** parameters are used with the **InlineScript** activity. A global resource such as a [Credential](~/sma/manage-global-assets.md) or [Connection](~/sma/manage-global-assets.md) is typically used in a runbook to provide values for these parameters. The following sample code runs a set of commands on a computer represented by a connection called MyConnection.
 
