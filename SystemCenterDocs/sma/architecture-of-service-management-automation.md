@@ -15,7 +15,7 @@ ms.technology:  service-management-automation
 
 This article provides a diagram that illustrates each SMA feature.
 
-![SMA architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+![SMA architecture diagram](./media/architecture-of-service-management-automation/sma-architecture.png)
  
  ## Features
 
