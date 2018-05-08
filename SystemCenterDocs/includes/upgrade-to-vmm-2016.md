@@ -5,7 +5,7 @@ description: include file to provide information about how to upgrade VMM server
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 04/304/2018
+ms.date: 05/06/2018
 ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology: virtual-machine-manager
@@ -14,16 +14,15 @@ ms.technology: virtual-machine-manager
 ## Upgrade to System Center 2016 - VMM
 
 
-The following sections summarize the steps for upgrading to VMM 2016. It includes prerequisites, upgrade steps, and tasks you should complete after the upgrade finishes.
+These steps describe how to upgrade to System Center Virtual Machine Manager (VMM) 2016. They include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
 ## Requirements and limitations
 
-- You should be running VMM on System Center 2012 R2 with update rollup 9 or later.
-- Ensure that the server meets all requirements for VMM 2016, and that prerequisites are in place [Learn more](../vmm/install.md)
+- VMM should be running on System Center 2012 R2 with update rollup 9 or later.
+- The server on which you'll install VMM should meet VMM 2016 requirements. [Learn more](../vmm/install.md)
 - Make sure you're running a [supported version of SQL Server](../vmm/system-requirements.md).
-- If your current VMM deployment is integrated with Azure Site Recovery, note that:
-	- Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
-	- You should verify [Hyper-V host support](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) requirements for VMM 2016.
+- If your current VMM deployment is integrated with Azure Site Recovery, note that Site Recovery settings can't be upgraded. After the upgrade you need to redeploy.
+- Verify Hyper-V host [support requirements](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for VMM 2016.
 
 
 
@@ -38,7 +37,7 @@ The following sections summarize the steps for upgrading to VMM 2016. It include
 	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
 	- Initiate a failover to the computer that is running SQL Server, and on which the VMM database is installed.
 7. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
-8. The VMM 2012 R2 server is running update rollup 10 or 11, and you have a Citrix NetScalar load balancer deployed, run this SQL Server script before you start the upgrade, otherwise it might fail. The script isn't needed if you're running update rollup 12 or later.
+8. If the VMM 2012 R2 server is running update rollup 10 or 11, and you have a Citrix NetScalar load balancer deployed, run this SQL Server script before you start the upgrade, otherwise it might fail. The script isn't needed if you're running update rollup 12 or later.
 
 	  ``ALTER TABLE [dbo].[tbl_NetMan_HardwareModelSettings]  
 	  ALTER COLUMN Version NVARCHAR(255) NULL;  
@@ -64,29 +63,27 @@ If you're running more than one System Center component, they should be upgraded
 
 
 ## Upgrade a standalone VMM server
-Use the following procedures:
 
-- [Back up and upgrade the OS](#back-up-and-upgrade-os)
-- [Install VMM 2016](#install-vmm-2016)
+Back up and upgrade the operating system, and then install VMM 2016.
 
-### Back up and upgrade OS
-1.	Back up and retain the VMM database.
-2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
-3.	Upgrade the management OS to Windows Server 2016.
-4.	Upgrade to the Windows 10 version of the ADK.
 
-#### Uninstall the VMM
-- Go to **Add remove programs**, select **VMM** and click **Uninstall**.
-- On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
-- On database options page, select **Retain database**.
-- Review the summary and click **Uninstall**.
+### Back up and upgrade the operating system
+1. Back up and retain the VMM database.
+2. Uninstall VMM. To do this:
+	a. In **Add remove programs**, select **VMM** > **Uninstall**.
+	b. Select **Remove Features**, and then select **VMM management Server** and **VMM Console**.
+	c. In **Database Options**, select **Retain database**.
+	d. Review the summary and click **Uninstall**.
+3. Upgrade the management operating system to Windows Server 2016.
+4. Upgrade to the Windows 10 version of the ADK.
+
 
 ### Install VMM 2016
 
-1.	In the main setup page, click **Install** .
-2.	In **Select features to install**, select the VMM management server and then click **Next**. The VMM console will be automatically installed .
+1.	In the main setup page, click **Install**.
+2.	In **Select features to install**, select the VMM management server > **Next**. The VMM console will be automatically installed.
 3.	In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
-4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement **check box, and then click **Next**.
+4.	In **Please read this license agreement**, review the license agreement, select **I have read, understood, and agree with the terms of the license agreement**, and then click **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then click **Next**.
 6.	If **Microsoft Update** page appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
 7.	In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**.
@@ -96,53 +93,43 @@ Use the following procedures:
 	-	If SQL server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
 	- Don't specify a port value if you're using local SQL server, or if your remote SQL server uses the default port (1443).
 	- Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
-11.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
-
-	>[!NOTE]
-	> You can't change the identity of the VMM service account after installation.
+11.	In **Configure service account and distributed key management**, specify the account that the VMM service will use. You can't change the identity of the VMM service account after installation.
 
 12.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 	>[!NOTE]
-	> Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
+	> Choose the settings for the service account and distributed key management carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
 
-13.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
-
-	>[!NOTE]
-	>You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, this port number is preassigned.
+13.	In **Port configuration**, use the default port number for each feature, or provide a unique port number that is appropriate in your environment. To change the ports you assign during installation of a VMM management server, you need to uninstall and then reinstall the server. Don't configure any feature to use port 5986, this port number is preassigned.
 
 14.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
 15.	In **Upgrade compatibility report**, review the settings, click **Next** to proceed with the upgrade.
 16.	In **Installation Summary**, review the settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
-17.	In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, check  **Open the VMM console when this wizard closes**, or you can click the Virtual Machine Manager Console icon on the desktop.
+17.	In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, check  **Open the VMM console when this wizard closes**, or you can click the VMM console icon on the desktop.
+18. After the upgrade, [upgrade the host agent manually](#update-vmm-agents).
+19. During setup, VMM enables the following firewall rules. These rules remain in effect even if you uninstall the VMM later:
+	- Windows Remote Management
+	- Windows Standards-Based Storage Management
 
-> [!NOTE]
->  
- Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.
+if you experience any issues during setup, check the logs in the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
-In case of any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
-During the setup, VMM enables the following firewall rules. These rules remain in effect even if you uninstall the VMM later.
-
-- Windows Remote Management
-- Windows Standards-Based Storage Management
 
 ## Upgrade a highly available VMM server
 
-You can upgrade a highly available (HA) VMM 2012 R2 UR9 server or a later version to VMM 2016.
+You can upgrade a highly available VMM 2012 R2 server (running at least update rollup 9) to VMM 2016.
 
-The following two modes of upgrade are supported:
+The following modes of upgrade are supported:
 
 - [Mixed mode with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers)
 - [Mixed mode with additional VMM servers](#mixed-mode-upgrade-with-additional-vmm-servers)
 
 > [!NOTE]
-
 > SQL Server upgrade can be performed any time, independent of VMM upgrade.
 
 ### Mixed mode upgrade with no additional VMM servers
-This procedure requires no additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you are upgrading the passive. In this scenario, your VMM server will not have a failover node available.
 
-**Follow these steps**:  
+You don't need additional VMM servers, but has increased risk for downtime in some scenarios. For example, when you have two node HA VMM and the active VMM node fails while you are upgrading the passive. In this scenario, your VMM server will not have a failover node available.
+
 
 1.	Backup and retain the VMM database.
 2.	[Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
@@ -161,25 +148,19 @@ This procedure requires no additional VMM servers, but has increased risk for do
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
-This procedure requires additional VMM servers, however, ensures almost no downtime in all the scenarios.
+You need additional servers. However, there's almost no downtime in all the scenarios.
 
-**Follow these steps**:
 
 1.	Backup and retain the VMM database.
 2.	Add the same number of additional servers (with Windows Server 2016 Management OS) that equals to the server  number present in the HA cluster.
 3. Install Windows 10 version of the ADK on the newly added 2016 servers.
 4. Install VMM 2016 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode- upgrade-with-no-additional-VMM-servers).    
-5.	Repeat the installation steps for all the other newly added servers.
-6.	Failover the active VMM node to one of the newly added servers.
+5. Repeat the installation steps for all the other newly added servers.
+6. Failover the active VMM node to one of the newly added servers.
 7. Remove 2012 R2 nodes from the cluster after failover.
-8. Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
-9.	[Optional] Install the appropriate SQL Command line utilities.
-
-
-> [!NOTE]
->  
- Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
+8. Update the cluster functional level by using the [Update-ClusterFunctionalLevelcommand(https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+9. Optionally install the appropriate SQL Command line utilities.
+10. After the upgrade, [upgrade the host agent manually](#update-vmm-agents). 
 
 
 ## Upgrade the VMM SQL Server database
@@ -240,7 +221,7 @@ You might need to reassociate virtual machine hosts and VMM library servers with
 1. Click **Fabric** > **Servers **> **All Hosts**.
 2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't right-click a column heading > **Agent Status**.
 3. Select the host that you need to reassociate with the VMM management server.
-4. In **Hosts** > **Host** group, click R**efresh**. If a host needs to be reassociated, the **Host Status** column  will display a value of **Needs Attention**, and the **Agent Status** column will display a value of **Access Denied**.
+4. In the host group, click **Refresh**. If a host needs to be reassociated, the **Host Status** column  will display a value of **Needs Attention**, and the **Agent Status** column will display a value of **Access Denied**.
 Right-click the host that you want to reassociate, and then click **Reassociate**. In **Reassociate Agent** provide credentials, and then click **OK**. The Agent Status column will display a value of Reassociating. After the host has been reassociated successfully, the **Agent Status** column will display a value of **Responding**. And after you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
 After you have reassociated the host, you will most likely have to update the VMM agent on the host.
 
