@@ -17,7 +17,7 @@ This article provides a diagram that illustrates each SMA feature.
 
 
 ![SMA architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/architecture.png)
-
+![SMA architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
  
  ## Features
 
