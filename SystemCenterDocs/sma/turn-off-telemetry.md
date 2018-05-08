@@ -46,10 +46,10 @@ Use the following procedure:
 
 ## Telemetry data collected
 
-| Data related To | Data collected |
+| **Data related To** | **Data collected**|
 | --- | --- |
 | **Installation and other configuration information** | SMA version <br /><br /> ID used for correlation with other System Center products <br /><br />ID used to identify specific SMA installation<br /><br />If telemetry is opted out<br /><br /> If new database is created <br /><br />Processor and memory details of the system <br /><br />PowerShell version installed on the system<br /><br />Version information of IIS <br /><br />SQL version and whether Always On, Clustered and Remote are being used|
-| **Usage ** | Runbooks and their state - such as  published, edit, new, debug enabled, verbose enabled, progress enabled. <br /><br /> Script runbooks <br /><br /> Workflow runbooks <br /><br /> Runbooks with assigned worker <br /><br /> Runbook workers <br /><br /> Modules, portable modules, module activities, and module names <br /><br /> Entities – certificates, credentials, connections, variables, schedules <br /><br /> Jobs – running, suspended, completed, failed <br /><br /> Average load times – script runbooks, workflow runbooks|
+| **Usage** | Runbooks and their state - such as  published, edit, new, debug enabled, verbose enabled, progress enabled. <br /><br /> Script runbooks <br /><br /> Workflow runbooks <br /><br /> Runbooks with assigned worker <br /><br /> Runbook workers <br /><br /> Modules, portable modules, module activities, and module names <br /><br /> Entities – certificates, credentials, connections, variables, schedules <br /><br /> Jobs – running, suspended, completed, failed <br /><br /> Average load times – script runbooks, workflow runbooks|
 
 ## Next steps
 
