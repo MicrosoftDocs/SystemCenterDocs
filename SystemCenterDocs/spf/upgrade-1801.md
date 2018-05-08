@@ -59,8 +59,8 @@ Here's the recommended upgrade order for the above scenario:
 
 1. Create a new server running Windows Server 2016, on which to install SPF 1801. You can use a VM. In our example, we'll create a machine call **SERVER-SPF-UPGRADE**.
 2. Install the prerequisites on the new VM, as follows:
-    a. Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434)).
-    b. Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=43339))
+    a. Install [SQL ODBC Drivers](https://www.microsoft.com/download/details.aspx?id=36434).
+    b. Install [SQL Native Client](https://www.microsoft.com/download/details.aspx?id=43339)
     c. Install SQL Server [command line utilities](https://www.microsoft.com/download/details.aspx?id=43339).
     d. Install SQL Server [CLR types](https://www.microsoft.com/download/details.aspx?id=43339).
     e. Install IIS with the following features:
@@ -100,28 +100,6 @@ Test everything's working as follows:
 2. In the Windows Azure Pack  Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Make sure everything's working as expected.
 3. In the Windows Azure Pack Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Make sure everything's working as expected.
 
-
-
-
-## Next steps
-
-[Manage SPF](/manage--register-spf.md)
-
-
-
-## Run the SPF upgrade
-
-1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
-2. Verify [SPF deployment requirements](deploy-spf.md#before-you-begin).
-3. [Verify operating system requirements](https://technet.microsoft.com/system-center-docs/system-requirements/client-operating-system-compatibility) for the VMM 1801 console. Then upgrade the VMM console from 2012 R2/2016 to 1801. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/deploy/deploy-install-console).
-4. If you need access to a full VMM server to provide to create fabric and provide services to tenants, upgrade the VMM server from 2012 R2/2016 to 1801. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/deploy/deploy-upgrade).
-5. Now upgrade SPF. To do that, first uninstall the current version of SPF (2012 R2/2016) from the Control Panel.  The SPF uninstall does not uninstall the database. Before you uninstall, note the SQL Server and database used by the current SPF installation. You can do this by running the following command on the SPF server:
-
-    ``Import-module SpfAdmin
-    Get-SCSPFConnectionString``
-
-6. Uninstall the SPF 2012 R2/2016 and the Virtual Machine Manager Console. To uninstall, go to **Control Panel** > **Programs**, click **Uninstall a program**. Then, under **Name**, right-click System Center 2012 R2 Service Provider Foundation, and then click **Uninstall**.
-7. Now [install SPF 1801](~/spf/deploy-spf.md). Specify the name of the current SQL Server during the setup.
 
 
 ## Next steps
