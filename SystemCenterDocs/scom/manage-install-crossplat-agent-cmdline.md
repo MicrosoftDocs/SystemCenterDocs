@@ -7,8 +7,7 @@ ms.author: magoedte
 manager: carmonm
 ms.date: 05/08/2018
 ms.custom: na
-ms.prod: system-center-2016
-monikerRange: 'sc-om-1801'
+ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: include
 ---
