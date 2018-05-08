@@ -122,11 +122,11 @@ When you start a runbook in SMA, a job is created. A job is a single execution i
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![PowerShell workflow](/system-center/sma/media/manage-runbooks/runbook-execution-workflow.png)
+![PowerShell workflow](/system-center/sma/media/manage-runbooks/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![PowerShell script](/system-center/sma/media/manage-runbooks/runbook-execution-script.png)
+![PowerShell script](/system-center/sma/media/manage-runbooks/sma-runbook-execution-script.png)
 
 
 ### Job status
