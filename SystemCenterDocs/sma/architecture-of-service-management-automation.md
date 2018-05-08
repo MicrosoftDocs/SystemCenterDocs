@@ -15,8 +15,8 @@ ms.technology:  service-management-automation
 
 This article provides a diagram that illustrates each SMA feature.
 
-  ![SMA Architecture diagram](../media/architecture-of-service-management-automation/smaarchitecture.png)
-  
+  ![SMA Architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+ 
  ## Features
 
   - The SMA web service communicates with Windows Azure Pack and authenticates users.
