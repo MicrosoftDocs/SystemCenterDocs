@@ -42,7 +42,7 @@ Use the following procedure:
 
   Sample configuration
 
-  ![admin configuration sample data](./media/telemetry/get-adminconfig.png)
+  ![admin configuration sample data](/system-center/sma/media/telemetry/get-adminconfig.png)
 
 ## Telemetry data collected
 
