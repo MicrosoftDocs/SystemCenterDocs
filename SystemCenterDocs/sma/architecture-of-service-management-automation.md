@@ -15,14 +15,14 @@ ms.technology:  service-management-automation
 
 This article provides a diagram that illustrates each SMA feature.
 
-  ![SMA Architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
+  ![SMA architecture diagram](./media/architecture-of-service-management-automation/smaarchitecture.png)
  
  ## Features
 
   - The SMA web service communicates with Windows Azure Pack and authenticates users.
-  - The SQL Server databases store and retrieve runbooks, runbook assets, activities, integration modules, and runbook job information.
+  - The SQL Server databases store and retrieve a number of components. These include runbooks, runbook assets, activities, integration modules, and runbook job information.
   - Runbook workers run the runbooks, and they can be used for load balancing.
-  The management portal in Windows Azure Pack is where you author, debug, start and stop runbooks.
+  The management portal in Windows Azure Pack is where you author, debug, start, and stop runbooks.
 
 ## Next steps
 Learn [what's new](whats-new-1801.md) in the latest version of SMA.
