@@ -4,7 +4,7 @@ description: This topic provides an overview of how to plan for a Service Provid
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 01/22/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
@@ -28,7 +28,7 @@ Deployment requirements for SPF include:
         - Windows Authentication
         - Application Deployment ASP.NET 4.5
         - Application Development ISAPI Extensions
-        - Application Deployment ISAPI FiltersAzre
+        - Application Deployment ISAPI FiltersAzure
         - IIS Management Scripts and Tools Role Service
     - Feature: Management OData IIS Extension
     - Feature: .NET Framework 4.5 features, WCF Services, HTTP Activation
