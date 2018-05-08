@@ -17,7 +17,7 @@ This article provides information about how to turn on/off the telemetry setting
 
 > [!NOTE]
 
-> Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in VMM. [Learn more](#telemetry-events)
+> Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in VMM. [Learn more](#telemetry-data-collected)
 
 
 ## Turn on/off telemetry in VMM
