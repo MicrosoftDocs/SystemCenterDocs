@@ -25,7 +25,7 @@ SQL Server 2014 SP2 is supported to host your Service Manager database and your 
 
 Windows 7 is supported with the Service Manager console. However, you need .NET 4.5.1 as a prerequisite. Download the offline installer with language pack from the Microsoft Support site at https://support.microsoft.com/en-us/kb/2858728. The new spell check feature, which was introduced in the Service Manager 2016 console, has limited language support for Windows 7 installations. The supported languages on Windows 7 include English, French, German, and Spanish.
 
-## Service Manager 2016 connectors supported with System Center 2012 R2 components
+## Support for System Center 2012 R2 components
 
 To help simplify upgrades, you can use the following Service Manager 2016 connectors with System Center 2012 R2 components.
 
@@ -93,7 +93,7 @@ Service Manger can more easily handle a large inflow of 45 work items per minute
 | average incident creation time | 2.2 seconds | 0.5 seconds | 4 times |
 
 
-## Faster SCCM and Active Directory connector sync with disabling ECL logging
+## Faster SCCM and Active Directory connector sync
 
 The Active Directory and SCCM connectors in Service Manager can import large amounts of data into the Service Manager database. In doing so, they not only increase the size of the data table, which is where the data from the connectors are stored, but they also increase the size of the EntityChangeLog (ECL) table and history tables considerably. A large ECL table size can be a problem - in some cases, it can slow down the system significantly.
 
