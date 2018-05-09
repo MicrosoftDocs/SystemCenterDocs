@@ -1,6 +1,6 @@
 ---
 title: Service Management Automation architecture in System Center
-description: Provides an overview of the architecutre in System Center Service Management Automation (SMA)
+description: Provides an overview of the architecture in System Center Service Management Automation (SMA)
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
