@@ -16,7 +16,6 @@ ms.technology: service-management-automation
 This article shows a diagram that illustrates System Center Service Management Automation (SMA) features.
 
 
-![SMA architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/architecture.png)
 ![SMA architecture diagram](/system-center/sma/media/architecture-of-service-management-automation/smaarchitecture.png)
  
  ## Features
