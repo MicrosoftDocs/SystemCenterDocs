@@ -1,7 +1,7 @@
 ---
 ms.assetid: 
-title: include file
-description: include article to detail how to install the Operations Manager agent manually on UNIX and Linux computers.
+title: Install agent on UNIX and Linux computers from the command line
+description: Article to detail how to install the System Center Operations Manager agent manually on UNIX and Linux computers.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
@@ -9,7 +9,7 @@ ms.date: 05/08/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
-ms.topic: include
+ms.topic: article
 ---
 
 # Install agent on UNIX and Linux computers from the command line
