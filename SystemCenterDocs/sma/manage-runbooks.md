@@ -1,12 +1,12 @@
 ---
+title:  Manage runbooks
 description:  Describes how to schedule, track, and configure runbooks for System Center Service MAnagement Automation.
 manager:  carmonm
 ms.topic:  article
 author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
-ms.date: 01/22/2018
-title:  Manage runbooks
+ms.date: 05/08/2018
 ms.technology:  service-management-automation
 ---
 
@@ -122,11 +122,12 @@ When you start a runbook in SMA, a job is created. A job is a single execution i
 
 The following diagram shows the lifecycle of a runbook job for PowerShell Workflow runbooks.
 
-![Job Statuses - PowerShell Workflow](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-workflow.png)
+![PowerShell workflow](/system-center/sma/media/manage-runbooks/sma-runbook-execution-workflow.png)
 
 The following diagram shows the lifecycle of a runbook job for PowerShell script runbooks.
 
-![Job Statuses - PowerShell Script](/system-center/sma/media/manage-runbooks1/sma-runbook-execution-script.png)
+![PowerShell script](/system-center/sma/media/manage-runbooks/sma-runbook-execution-script.png)
+
 
 ### Job status
 The following table describes the different statuses that are possible for a job.

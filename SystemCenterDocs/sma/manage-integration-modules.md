@@ -2,10 +2,10 @@
 description: Provides an overview of how you can work with integration modules.
 manager:  carmonm
 ms.topic:  article
-author:  cfreemanwa
+author:  rayne-wiselman
 ms.author: raynew
 ms.prod:  system-center-threshold
-ms.date: 01/22/2018
+ms.date: 05/08/2018
 title:  Work with Integration Modules
 ms.technology:  service-management-automation
 ---
@@ -140,26 +140,4 @@ $modules | foreach {$_.Activities} | sort Name,ModuleName | ft Name,ModuleName,D
 
 ## Next steps
 - Learn more about [Service Management automation](service-management-automation.md).
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
 - Learn more about [runbook operations](manage/runbook-operations.md).

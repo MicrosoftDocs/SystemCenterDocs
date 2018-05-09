@@ -1,15 +1,13 @@
 ---
-description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
-manager:  cfreeman
-ms.topic:  article
-author:  bwren
-ms.author: bwren
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  01/22/2018
 title:  Windows PowerShell Workflow Concepts
+description: Provides a brief overview of critical features of workflows that are common to Automation runbooks.
+manager:  carmon
+ms.topic:  article
+author:  rayne-wiselman
+ms.author: raynew
+ms.prod:  system-center-threshold
+ms.date:  05/08/2018
 ms.technology:  service-management-automation
-ms.assetid:  25937b4f-40bc-4765-9322-5b3a0fd1ff8d
 ---
 
 # Windows PowerShell Workflow Concepts
