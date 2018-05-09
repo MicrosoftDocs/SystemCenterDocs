@@ -89,7 +89,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 1.  On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the following folder:
 
-    - For SQL Server 20014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
+    - For SQL Server 2014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
 
 2.  Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
 
