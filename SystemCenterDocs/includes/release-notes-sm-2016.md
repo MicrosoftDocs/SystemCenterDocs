@@ -7,7 +7,7 @@ ms.author: banders
 ms.prod:  system-center-threshold
 ms.technology: service-manager
 keywords:
-ms.date: 05/07/2018
+ms.date: 05/08/2018
 title:  include file
 ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
 ---
@@ -16,18 +16,18 @@ ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
 
 The following sections detail the release notes for SM 2016.
 
-## Data warehouse installation might fail when Reporting and Analysis services are hosted on servers without the SQL Server Database Engine service
+## Data warehouse installation might fail
 
 **Description:** During Service Manager installation, the data warehouse installation might fail when Reporting and Analysis services are hosted on servers without the SQL Server Database Engine service.
 
 **Workaround:** Install a temporary instance of the SQL Server Database Engine on servers with SQL Server Reporting Services and SQL Server Analysis Services, and then remove the temporary instance after installation.
 
-## Silverlight based Self Service Portal for System Center Service Manager
+## Silverlight based Self Service Portal
 
 - Status in System Center 2016: Removed.
 - Replacement: A new HTML based Self Service Portal is available with System Center 2016 - Service Manager.
 
-## Microsoft IT GRC Process Management Pack SP1 for Service Manager
+## Microsoft IT GRC Process Management Pack SP1
 
 - Status in System Center 2016 : Removed.
 - Replacement: We recommend that you engage with proactive governance partners that can integrate into your current System Center investments.
@@ -37,12 +37,12 @@ The following sections detail the release notes for SM 2016.
 - Status in System Center 2016: Removed.
 - Replacement: None.
 
-## SQL Server 2014 Cardinality Estimation might affect the performance of Service Manager 2016
+## SQL Server 2014 Cardinality Estimation might affect the performance of SM
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
 
-## Microsoft Visual C++ 2012 Redistributable is a pre-requisite for installing Service Manager 2016 Authoring Tool
+## Prerequisite for installing SM Authoring Tool
 **Description:** Microsoft Visual C++ 2012 redistributable should be installed before deploying Service Manager 2016 Authoring Tool.
 
 **Workaround:** None
@@ -59,8 +59,8 @@ If the crash has already occurred, you can restart the wizard and use this worka
 
 **Workaround:** Install Microsoft Visual C++ 2012 Redistributable on the affected machine.
 
-## Creating a new Software type configuration item throws the error - "The form could not be submitted for the following reasons: Property Is Virtual Application must be set"
-**Description:** The property “Is Virtual Application" in create Software configuration item form is mandatory, but the asterix (\*) symbol is not shown for this property. Hence on clicking "Ok" or "Apply" button without setting this field throws an error and makes the form unusable.
+## Error while creating a new Software type configuration item
+**Description:** The property “Is Virtual Application" in create Software configuration item form is mandatory, but the asterix (\*) symbol is not shown for this property. Hence on clicking "Ok" or "Apply" button without setting this field throws an error "The form could not be submitted for the following reasons: Property Is Virtual Application must be set", and makes the form unusable.
 
 **Workaround:** Reopen the create Software configuration item form, and fill all the details including the field "Is Virtual Application", before clicking on "Ok" or "Apply" button.
 
@@ -89,7 +89,7 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 1.  On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the following folder:
 
-    - For SQL Server 20014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
+    - For SQL Server 2014, locate \Program Files\Microsoft SQL Server\MSRS12.MSSQLSERVER\Reporting Services\ReportServer.
 
 2.  Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
 
@@ -146,71 +146,71 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 5.  Save the changes and close the XML editor.
 
 
-## Service Manager console installed on a VMM Server causes VMM connector failure
+## SM console installed on a VMM Server causes VMM connector failure
 **Description:** If the Service Manager console is installed on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
 
 **Workaround:** None, however you can use a different Service Manager console to create the VMM connector.
 
-## Service Manager console installed on an Operations Manager management server causes an error
+## SM console installed on an Operations Manager management server causes an error
 
 **Description:** Installing the Service Manager console on a Operations Manager management server is not supported.
 
 **Workaround:** None.
 
 
-## Data Warehouse Setup Might Fail if the Database or Log Path Includes a Single Quotation Mark Character
+## Data Warehouse Setup might fail if the DB or log path has a single quote
 **Description:** During Setup, if you specify a database or log path that includes a single quotation mark character ('), Setup might fail.
 
 **Workaround:** None. The path that you specify cannot include a single quotation mark character.
 
-## Setup Might Fail if the Service Manager Authoring Tool Has Been Installed
+## Setup might fail if the SM Authoring Tool was installed
 **Description:** Setup might fail if you have previously installed any version of the Service Manager Authoring Tool.
 
 **Workaround:** Remove the Service Manager Authoring Tool, and then retry Setup.
 
-## Setup Does Not Install the Report Viewer Language Pack
+## Setup does not install the Report Viewer language pack
 **Description:** Setup includes a prerequisite checker that checks for and - if necessary, installs - the Microsoft Report Viewer. However, Setup does not install the Report Viewer Language Pack, which makes the Microsoft Report Viewer compatible with Windows operating systems that are configured to use languages other than English.
 
 **Workaround:** If your system is configured to use a language other than English, you should manually install the Report Viewer Language Pack for that language.
 
-## Service Manager Setup Fails if a SQL Server Instance Contains a $ Character
+## SM Setup fails if a SQL Server instance contains a $ character
 **Description:** If you attempt to install Service Manager using a named Structured Query Language (SQL) instance that contains a dollar sign ($) character, Setup fails.
 
 **Workaround:** Use a SQL instance that does not contain the $ character in its name.
 
-## Orchestrator Connector Account Password Cannot Contain $ Characters
+## Orchestrator Connector Account Password cannot contain $ characters
 **Description:** If the Orchestrator connector account password contains a $ character, the sync job completes, however runbooks are not updated in the Service Manager database.
 
 **Workaround:** If your Orchestrator connector account password contains a $ character, change the password to one that does not include the $ character.
 
-## Information Linked from Setup Might Not Display Localized Content
+## Information linked from Setup might not display localized content
 **Description:** Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
 
 **Workaround:** None.
 
 
-## Errors Might Occur When You Modify or Delete Service Request Template Items
+## Errors might occur when you modify or delete Service Request template items
 **Description:** When you create a service request using a request offering template and you modify or delete activities that are contained in the template, various errors might occur that prevent you from saving the service request.
 
 **Workaround:** When you create service requests, avoid modifying or deleting activities that are contained in a request offering template. If necessary, you can create a new request offering template with only the activities that are necessary and configured properly for your intended use.
 
 
-## Configuring the Reporting Server Might Take a Long Time
+## Configuration of Reporting Server might take a longer time
 **Description:** When you install the data warehouse, validation of the default web server URL might take as long as 25 seconds to complete.
 
 **Workaround:** None.
 
-## Double-Byte Characters Are Sent Incorrectly to Search Provider
+## Double-Byte characters are sent incorrectly to Search Provider
 **Description:** When you perform a knowledge search and you type double-byte characters in the Search Provider box, they are not sent correctly to the search website. Instead, erroneous characters are sent.
 
 **Workaround:** None.
 
-## Sorting Knowledge Articles by Date Does Not Work
+## Sorting of Knowledge Articles by Date does not work
 **Description:** When you try to sort knowledge articles by date, sorting does not work.
 
 **Workaround:** None.
 
-## Do not change Active Directory group expansion selection after upgrade until the connector has run at least one time.
+##  Active Directory group expansion selection after upgrade
 **Description:** When upgrading from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON, let it remain ON), until the connector has run at least one time after the upgrade.
 
 **Workaround:** None.
