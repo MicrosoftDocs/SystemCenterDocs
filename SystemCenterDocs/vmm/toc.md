@@ -1,10 +1,9 @@
 # Overview
 ## [What is VMM?](overview.md)
-## [What's new in Virtual Machine Manager ](whats-new-in-vmm.md)
-# Diagnostics and usage data
-## [Turn on/off telemetry in VMM](manage-telemetry.md)
+## [What's new in VMM ](whats-new-in-vmm.md)
 # Get Started
 ## [Release notes - Virtual Machine Manager](release-notes-vmm.md)
+## [Turn telemetry data on/off](manage-telemetry.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
 ### [Create a VMM cloud](cloud-create.md)
 ### [Manage a VMM cloud](cloud-manage.md)
@@ -47,7 +46,7 @@
 ### [Plan the VMM networking fabric](plan-network.md)
 ### [Identify supported storage arrays](supported-arrays.md)
 ## Upgrade and install
-### [Upgrade Virtual Machine Manager](upgrade-vmm.md)
+### [Upgrade VMM](upgrade-vmm.md)
 ### [Install VMM](install.md)
 ### [Install the VMM console](install-console.md)
 ### [Enable enhanced console session](enhanced-console-session.md)
