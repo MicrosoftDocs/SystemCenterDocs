@@ -10,7 +10,7 @@ ms.technology: service-manager
 ms.topic: include
 ---
 
-## Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager
+## Upgrade to System Center 2016 - Service Manager
 
 The following sections provide the information about how to upgrade from System Center 2012 R2 - Service Manager to S System Center 2016 - Service Manager (SM).
 
