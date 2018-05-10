@@ -1620,6 +1620,15 @@
 },
 
 {
+     "source_path" : "SystemCenterDocs/scsm/upgrade-to-sm-1801.md",
+     "redirect_url": "/system-center/scsm/upgrade-sm.md"
+},
+{
+     "source_path" : "SystemCenterDocs/scsm/upgrade-to-sm-2016.md",
+     "redirect_url": "/system-center/scsm/upgrade-sm.md"
+},
+
+{
      "source_path" : "SystemCenterDocs/sm/deploy/deploy-appendix-a-command-line-option-error-codes.md",
      "redirect_url": "/system-center/scsm/deploy-cmd-line"
 },
