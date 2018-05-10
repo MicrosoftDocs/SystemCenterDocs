@@ -69,7 +69,7 @@ The default folder for installing Service Manager is \\Program Files\\Microsoft 
 
 ### Hardware requirements for System Center 1801 - Service Manager  
 
-All hardware requirements for System Center 1801 - Service Manager are fully documented in [Hardware Requirements](../scsm/ystem-requirements.md).  
+All hardware requirements for System Center 1801 - Service Manager are fully documented in [Hardware Requirements](../scsm/system-requirements.md).  
 
 ### Software requirements for System Center 1801 - Service Manager
 
