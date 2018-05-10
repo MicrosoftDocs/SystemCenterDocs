@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 11/01/2016
+ms.date: 5/10/2018
 title:  Manage and monitor DPM servers with Operations Manager
 ms.technology:  data-protection-manager
 ms.assetid:  97fd6656-af44-4e5c-bef8-dc57643b0181
@@ -16,30 +16,26 @@ ms.author: markgal
 
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple System Center Data Protection Manager (DPM) servers from a single location. It provides:
 
--   Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status and health of servers, tasks, protected resources, tape libraries, available storage and disk space, and backups.
-
--   View the state of all roles on DPM servers
-
--   Monitor, identify, action, and troubleshoot alerts that are generated when an SLA is broken. You can consolidate alerts to show: only one instance for repeated alerts; single alert for alerts with the same root cause, or if multiple backups fail for the same data source, and generate only one ticket if a ticketing system is used.
-
--   Remote corrective actions and remote recovery
-
--   Service-level agreement (SLA)-based alerting. Alerts are generated when an SLA is broken.
-
--   Monitor DPM server memory, CPU, disk resources, database, and performance trends.
-
--   Modify and manage settings, including disk allocation, recovery points, users, protect groups.
-
--   Recover data.
+- Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status and health of servers, tasks, protected resources, tape libraries, available storage and disk space, and backups.
+- Service-level agreement (SLA)-based alerting. Alerts are generated when an SLA is broken.
+- View the state of all roles on DPM servers
+- Monitor, identify, action, and troubleshoot alerts generated when an SLA breaks. You can consolidate alerts to show: 
+    - only one instance for repeated alerts; 
+    - single alert for alerts with the same root cause, or if multiple backups fail for the same data source, 
+    - and generate only one ticket if a ticketing system is used
+- Remote corrective actions and remote recovery
+- Monitor DPM server memory, CPU, disk resources, database, and performance trends
+- Modify and manage settings, including disk allocation, recovery points, users, protect groups
+- Recover data
 
 ## Setting up Central Console
 What you need:
 
--   A System Center Operations Manager server running 2012 R2. The Operations Manager Data Warehouse must be up and running.
+-   A System Center Operations Manager server running 2016. The Operations Manager Data Warehouse must be up and running.
 
 -   View the state of all roles on DPM servers
 
--   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5.
+-   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5 or DPM 2016.
 
 -   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
 
@@ -47,13 +43,13 @@ What you need:
 
 You deploy Central Console as follows:
 
-1.  [Install the Operations Manager agent](#BKMK_OM) - Install the Operations Manager agent on each DPM server you want to manage and monitor.
+1. [Install the Operations Manager agent](#BKMK_OM) - Install the Operations Manager agent on each DPM server you want to manage and monitor.
 
-2.  [Import the DPM discovery and library management packs](#BKMK_Import) - Downloads the packs and install them on the Operations Manager server.
+2. [Import the DPM discovery and library management packs](#BKMK_Import) - Downloads the packs and install them on the Operations Manager server.
 
-3.  [Install Central Console](#BKMK_Central) - Install Central Console on the Operations Manager server.
+3. [Install Central Console](#BKMK_Central) - Install Central Console on the Operations Manager server.
 
-4.  [Import the DPM reporting management pack](#BKMK_ImportReporting) - Downloads the pack and install it on the Operations Manager server.
+4. [Import the DPM reporting management pack](#BKMK_ImportReporting) - Downloads the pack and install it on the Operations Manager server.
 
 ### <a name="BKMK_OM"></a>Install the Operations Manager agent
 Install the agent as follows:
@@ -74,7 +70,7 @@ DPM provides the following management packs:
 
 1.  On the Operations Manager server remove any existing DPM management packs.
 
-2.  [Download](https://go.microsoft.com/fwlink/?LinkId=524726) the DPM management packs.
+2.  [Download](https://www.microsoft.com/download/details.aspx?id=54063&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) the DPM management packs.
 
     By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
