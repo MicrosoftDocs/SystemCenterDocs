@@ -16,7 +16,6 @@ ms.assetid: 0584ca74-1a8e-462a-9578-c2e1a503a4fd
 ---
 
 ## Upgrade to System Center 1801 - Service Manager
-
 The following sections provide information about how to upgrade System Center 2012 R2 and 2016 Service Manager to System Center 1801 - Service Manager (SM).  
 
 > [!WARNING]  
