@@ -1,19 +1,18 @@
 ---
-title: Upgrade to System Center 2016 - Service Manager
-description: This article outlines the order that you need to follow to upgrade from System Center 2012 R2 - Service Manager to Service Manager in System Center 2016 and planning considerations.  
+title: include file
+description: include file that outlines the order you need to follow to upgrade from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, also includes planning considerations.  
 manager: carmonm
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 01/22/2018
+ms.date: 05/09/2018
 ms.technology: service-manager
-ms.topic: article
-monikerRange: 'sc-sm-2016'
+ms.topic: include
 ---
 
-# Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager
+## Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager
 
-This article outlines how to upgrade from System Center 2012 R2 - Service Manager to Service Manager in System Center 2016. 
+The following sections provide the information about how to upgrade from System Center 2012 R2 - Service Manager to S System Center 2016 - Service Manager (SM).
 
 > [!WARNING]  
 >  If you are planning to upgrade two or more System Center components, it is imperative that you first consult the guide [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016). The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
@@ -189,7 +188,3 @@ If you have installed a data warehouse management server in your environment, as
 ### Encryption keys  
 
 When you have finished running Setup to either install or upgrade to System Center 2016 - Service Manager, you are prompted to open the Encryption Backup or Restore Wizard. If you have previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
-
-## Next steps
-
-- Review [Prepare remote SQL Server Reporting Services for upgrade](prepare-remote-ssrs.md) to prepare your environment if SSRS is remote from the data warehouse management server.

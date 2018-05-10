@@ -1,24 +1,23 @@
 ---
-title: Upgrade to System Center 1801 - Service Manager
-description: This article outlines planning considerations and the order to upgrade from System Center 2012 R2/2016 Service Manager to Service Manager in System Center 1801.  
+title: include file
+description: include file that outlines planning considerations and the order to upgrade from System Center 2012 R2/2016 Service Manager to Service Manager in System Center 1801.  
 manager: vvithal
 ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 02/05/2018
+ms.date: 05/09/2018
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
 ms.tgt_pltfrm: na
-ms.topic: article
+ms.topic: include
 ms.assetid: 0584ca74-1a8e-462a-9578-c2e1a503a4fd
-monikerRange: 'sc-sm-1801'
 ---
 
-# Upgrade to System Center 1801 - Service Manager
+## Upgrade to System Center 1801 - Service Manager
 
-This article provides information about how to upgrade System Center 2012 R2 and 2016 Service Manager to release 1801.  
+The following sections provide information about how to upgrade System Center 2012 R2 and 2016 Service Manager to System Center 1801 - Service Manager (SM).  
 
 > [!WARNING]  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
@@ -34,7 +33,7 @@ This article provides information about how to upgrade System Center 2012 R2 and
  You can only upgrade to System Center 1801  from System Center 2012 R2 - Service Manager with Update Rollup 14 and System Center Service Manager 2016 with UR4.
 
 > [!IMPORTANT]  
->  It is assumed in this guide that you are performing an *upgrade* to an existing System Center version. For information about installing System Center 1801 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](deploy-sm.md).  
+>  It is assumed in this guide that you are performing an *upgrade* to an existing System Center version. For information about installing System Center 1801 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
 
 ## Plan the upgrade to System Center 1801 - Service Manager
 
@@ -70,14 +69,14 @@ The default folder for installing Service Manager is \\Program Files\\Microsoft 
 
 ### Hardware requirements for System Center 1801 - Service Manager  
 
-All hardware requirements for System Center 1801 - Service Manager are fully documented in [Hardware Requirements](sm-sys-reqs-1801.md).  
+All hardware requirements for System Center 1801 - Service Manager are fully documented in [Hardware Requirements](../scsm/ystem-requirements.md).  
 
 ### Software requirements for System Center 1801 - Service Manager
 
 To upgrade to System Center 1801, you must first apply the Update Rollup 14 for 2012 R2 and UR4 for 2016 Service Manager.  
 
 
-All software requirements for System Center 1801 - Service Manager are fully documented in [Software Requirements](sm-sys-reqs.md).  
+All software requirements for System Center 1801 - Service Manager are fully documented in [Software Requirements](../scsm/system-requirements.md).  
 
 ### Impact on custom development
 
@@ -162,7 +161,7 @@ We recommend that you test the upgrade to System Center 1801 - Service Manager i
 
 The order of your upgrades is important. Perform the upgrade steps in the following order:  
 
-1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center - Service Manager](disaster-recovery.md).  
+1.  Backup your databases and your management packs. See the topics "Backing Up Service Manager Databases" and "Backing Up Unsealed Management Packs" in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md).  
 
 2.  Start with the data warehouse management server. You will be stopping the data warehouse jobs, and you will not be able to start them again until after you have completed the upgrade.  
 
@@ -183,16 +182,12 @@ With System Center 1801 - Service Manager, you have the option to install Operat
 
 ### Back up Service Manager before you upgrade  
 
-Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](disaster-recovery.md) before you continue the upgrade.  
+Before you start any upgrade, we recommend that you back up your Service Manager and data warehouse databases and the encryption key. If you have already backed up your databases and encryption key, you can continue to run the upgrade. Otherwise, review the backup procedures in the [Disaster Recovery Guide for System Center - Service Manager](../scsm/disaster-recovery.md) before you continue the upgrade.  
 
 ### Register the Service Manager data warehouse  
 
-If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center - Service Manager](deploy-sm.md).  
+If you have installed a data warehouse management server in your environment, as part of the upgrade process, you must be able to view the status of the data warehouse jobs. You cannot perform this task if you have not registered with the Service Manager data warehouse. If the **Data Warehouse** button is not visible in the Service Manager console, complete the procedure in "Registering with the Service Manager Data Warehouse to Enable Reporting" in the [Deployment Guide for System Center - Service Manager](../scsm/deploy-sm.md).  
 
 ### Encryption keys  
 
 When you have finished running Setup to either install or upgrade to System Center 1801 - Service Manager, you are prompted to open the Encryption Backup or Restore Wizard. If you have previously backed up the encryption keys, no additional action is required. If you never backed up the encryption keys, use the Encryption Key Backup or Restore Wizard to back up the encryption keys on the Service Manager management servers.  
-
-## Next steps
-
-- Review [Prepare remote SQL Server Reporting Services for upgrade](prepare-remote-ssrs.md) to prepare your environment if SSRS is remote from the data warehouse management server.
