@@ -31,15 +31,11 @@ Central Console is a System Center Operations Manager console that you can deplo
 ## Setting up Central Console
 What you need:
 
--   A System Center Operations Manager server running 2016. The Operations Manager Data Warehouse must be up and running.
-
--   View the state of all roles on DPM servers
-
--   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5 or DPM 2016.
-
--   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
-
--   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
+- A System Center Operations Manager server running 2016. The Operations Manager Data Warehouse must be up and running.
+- View the state of all roles on DPM servers
+- To install the Management Packs, the DPM server must be running at least DPM 2012 R2 with Update Rollup 5 or DPM 2016.
+- If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
+- You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
 
 You deploy Central Console as follows:
 
@@ -61,50 +57,50 @@ Install the agent as follows:
 ### <a name="BKMK_Import"></a>Import the DPM discovery and library management packs
 DPM provides the following management packs:
 
--   Reporting management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+- Reporting management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
--   Discovery and monitoring management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
+- Discovery and monitoring management pack (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
 
--   Library management pack - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+- Library management pack - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
 
 
-1.  On the Operations Manager server remove any existing DPM management packs.
+1. On the Operations Manager server, remove any existing DPM management packs.
 
-2.  [Download](https://www.microsoft.com/download/details.aspx?id=54063&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) the DPM management packs.
+2. [Download](https://www.microsoft.com/download/details.aspx?id=54063&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) the DPM management packs.
 
     By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
-3.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
+3. Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-4.  Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
+4. Remember to remove any previous versions of the Library or Discover Management Packs running on the server.
 
-5.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+5. In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
-6.  Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**.
+6. Select **Microsoft.SystemCenter.DataProtectionManagerDiscovery.MP** > **Open** and then **Microsoft.SystemCenter.DataProtectionManagerLibrary.MP** > **Open**.
 
-7.  Follow the instructions in the Import Management Packs wizard.
+7. Follow the instructions in the Import Management Packs wizard.
 
 ### <a name="BKMK_Central"></a>Install the Central Console
 
-1.  Select **Install Central Console Server and Client side Components** if you want to monitor DPM servers that have the Operations Manager agent installed and run the DPM administrator console on the Operations Manager server.
+1. Select **Install Central Console Server and Client side Components** if you want to monitor DPM servers that have the Operations Manager agent installed and run the DPM administrator console on the Operations Manager server.
 
-2.  Select **Install Central Console Server side Components** if only want to monitor servers, without using the scoped DPM Administrator console.
+2. Select **Install Central Console Server side Components** if only want to monitor servers, without using the scoped DPM Administrator console.
 
 Note that:
 
--   DPM adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
+- DPM adds firewall exceptions for port 6075 to enable scoped Administrator console. Open ports for SQL Server.exe and SQL browser.exe.
 
--   If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=245527).
+- If you need to uninstall Operations Manager, see [How to Uninstall Operations Manager](https://go.microsoft.com/fwlink/p/?LinkId=245527).
 
 ### <a name="BKMK_ImportReporting"></a>Import the reporting management pack
 
-1.  Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
+1. Log on to the Operations Manager server with an account that is a member of the Operations Manager Administrators role.
 
-2.  In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
+2. In the Operations console, click **Administration**. Right-click **Management Packs** > **Import Management Packs**.
 
-3.  Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
+3. Select **Microsoft.SystemCenter.DataProtectionManagerReporting.MP** > **Open**.
 
-4.  Follow the instructions in the Import Management Packs wizard.
+4. Follow the instructions in the Import Management Packs wizard.
 
 ## Next steps
 After you import the Management Packs they discover and monitor data without requiring any additional configuration. You can optionally tweak settings like monitors and rules for your environment. For example if you find that performance-measuring rules that are enable degrade server performance with slow WAN links, you can disable them. When you have everything configured as needed you can generate DPM reports from Operations Manager.
