@@ -17,7 +17,7 @@ This article provides information about how to manage the telemetry (Diagnostics
 
 By default, SM sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security and integrity of Microsoft products and services.
 
-Administrators can turn off this feature at any point of time by using the Service Manager Console or self-service portal’s *Web.config file* (this option might require service restart
+Administrators can turn off this feature at any point of time by using the Service Manager Console or self-service portal’s *Web.config file*.
 
 
 > [!NOTE]
@@ -34,15 +34,16 @@ Use the following procedure:
 2. In the **Help** menu, click **Send diagnostic and usage data to Microsoft**.
 
   ![console telemetry option](./media/telemetry/sm-telemetry-console.png)
-3. Select the  diagnostic and usage data sharing preference from the options displayed and click on **OK**.
+3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
   ![console telemetry selection](./media/telemetry/console-telemetry-selection.png)
 
 ## Manage telemetry settings from SM management server or data warehouse management server
 
-> [NOTE]
+> [!NOTE]
 
-> - Use the SM console installed on the same computer  where the SM management server or data warehouse management server is installed.
+> - Use the SM console that is installed on the same computer  where the SM management server or data warehouse management server is installed.
+
 > - You must restart the computer after you set the telemetry preference.
 
 1. Connect the console to the server from where you want to manage the telemetry settings.
@@ -54,23 +55,23 @@ Use the following procedure:
 
 ## Manage telemetry settings from the self-service portal
 
-1.	Log in as administrator on the IIS server, which is hosting the SM self-service portal.
+1.	Log in as administrator into the IIS server, which is hosting the SM self-service portal.
 2.	Open the *Web.config* file in the directory where SM self-service portal is installed.
 
   ![console telemetry selection](./media/telemetry/sm-telemetry-web-configfile.png)
 
-3. In *Web.config* file, find the key  *EnableTelemetry* under the XML tag *appSettings*
+3. In *Web.config* file, find the key  *EnableTelemetry* under the XML tag *appSettings*.
 
   ![edit telemetry setting](./media/telemetry/sm-telemetry-webfile-edits.png)
 
 4.	Configure the value of *EnableTelemetry* key depending on your preference.
 
-  - To share the diagnostics and utility data with Microsoft, set the value as “true”.
-  -  Set the value as false” if you do not wish to send.
+  - To share the diagnostics and utility data with Microsoft, set the value as **true**.
+  -  Set the value as **false** if you do not wish to send the data.
 
-5. Save and close the Web.config file.
+5. Save and close the *Web.config* file.
 
-6. Restart the IIS service after you make any changes to the Web.config file.
+6. Restart the IIS service after you make any changes to the *Web.config* file.
 
  ![IIS service restart](./media/telemetry/telemetry-restart-iis-service.png)
 
@@ -78,8 +79,8 @@ Use the following procedure:
 
  | Data related To | Data collected |
  | --- | --- |
- | **Censes and other settings** | Unique ID generated for the SM deployment <br /><br /> SM version <br /><br /> ID used for correlation with other System Center products <br /><br /> Default language for the installation<br /><br />Data Warehouse Management Group ID <br /><br /> Identify that telemetry has been disabled <br /><br />Width and height of the screen|
- | **Usage** | Name of tasks used <br /><br /> Type of form used <br /><br /> Time taken to load forms <br /><br /> Name of views used <br /><br /> No. of rows fetched and loaded for each view <br /><br /> Time taken to load view <br /><br /> Cmdlets used <br /><br /> Parameters used in cmdlets <br /><br /> Time taken for execution<br /><br />Exception generated <br /><br />Reports being used<br /><br />Parameters used <br /><brTime to load reports<br /><br /> Time to load reports<br /><br />Total no. of clicks on a report<br /><br />Whether connected to the SDK service<br /><br />Whether Lync and (or) Skype is being used<br /><br />Whether Connector ECL Log is enabled or not<br /><br />Whether Concurrent Transactions setting is enabled or not|
+ | **Censes and other settings** | Unique ID generated for the SM deployment <br /><br /> SM version <br /><br /> ID used for correlation with other System Center products <br /><br /> Default language for the installation<br /><br />Data warehouse management group ID <br /><br /> Identify that telemetry has been disabled <br /><br />Width and height of the screen|
+ | **Usage** | Name of tasks used <br /><br /> Type of form used <br /><br /> Time taken to load forms <br /><br /> Name of views used <br /><br /> No. of rows fetched and loaded for each view <br /><br /> Time taken to load view <br /><br /> Cmdlets used <br /><br /> Parameters used in cmdlets <br /><br /> Time taken for execution<br /><br />Exception generated <br /><br />Reports being used<br /><br />Parameters used <br /><brTime to load reports<br /><br /> Time to load reports<br /><br />Total no. of clicks on a report<br /><br />Whether connected to the SDK service<br /><br />Whether Lync and (or) Skype is being used<br /><br />Whether Connector ECL Log is enabled or not<br /><br />Whether concurrent transactions setting is enabled or not|
 
 
 ## Next steps
