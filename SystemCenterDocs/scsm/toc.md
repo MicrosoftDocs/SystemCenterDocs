@@ -7,6 +7,7 @@
 ## [Supported configurations](supported-configs.md)
 ## [System requirements - Service Manager ](system-requirements.md)
 ## [Release notes - Service Manager ](release-notes-sm.md)
+## [manage-telemetry](manage-telemetry.md)
 # How to
 ## Plan
 ### [Planning for Service Manager](plan-sm.md)
