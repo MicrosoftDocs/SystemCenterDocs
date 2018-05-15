@@ -33,13 +33,13 @@ Use the following procedure:
 
   - To create a new Registry Key, under HKEY_LOCAL_MACHINE\Software\Microsoft\Service Provider Foundation,  right-click and select **New** > **DWORD (32-bit) Value** as shown below:
 
-  ![spf telemetry new key ](./media/telemetry/spf-telemetry-newkey.png)
+    ![spf telemetry new key ](./media/telemetry/spf-telemetry-newkey.png)
 
   - Enter the name of the key as *DiagnosticAndUsageDataEnabled*.
 
   - Once the key appears in the list of keys double-click on the key and enter 0 in the *Value data* field as shown below:
 
-  ![spf telemetry key value](./media/telemetry/spf-telemetry-keyvaluedata.png)
+    ![spf telemetry key value](./media/telemetry/spf-telemetry-keyvaluedata.png)
 
 2. Use the *Set-SCSpfTelemetry* command and set the telemetry option as shown in the following image:
 
@@ -55,4 +55,4 @@ Use the following procedure:
 
 ## Next steps
 
-[Manage run books](manage-runbooks-spf.md)
+[Manage run books](manage-runbooks.md)
