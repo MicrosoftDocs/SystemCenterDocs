@@ -45,4 +45,14 @@ Use the following procedure:
 
   ![spf telemetry](./media/telemetry/spf-telemetrydisabled.png)  
 
+
+## Telemetry data collected
+
+  | Data related To | Data collected |
+  | --- | --- |
+  | **Installation and other configuration information** | SPF version <br /><br /> ID used for correlation with other System Center products <br /><br />Version and language settings of the Operating System <br /><br />Processor and memory Details of the system <br /><br /> Setup errors <br /><br />If Silent Mode is enabled <br /><br />Setup failure and (or) cancellation <br /><br />Whether prerequisites check is run again <br /><br />SQL version and whether Always On, Clustered and Remote are being used <br/<br/> Information regarding the missing prerequisite, if any.|
+  | **Usage** | VMM endpoint being accessed <br /><br /> Resources used. For example, virtual machine, virtual network. <br /><br /> Type of operation – create, update, delete|
+
 ## Next steps
+
+[Manage run books](manage-runbooks-spf.md)
