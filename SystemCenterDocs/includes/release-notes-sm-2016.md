@@ -214,3 +214,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Description:** When upgrading from System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager, do not change the AD group expansion selection value in any AD connector (if it is OFF, let it remain OFF, if it is ON, let it remain ON), until the connector has run at least one time after the upgrade.
 
 **Workaround:** None.
+
+## SM authoring tool console crashes while creating workflows
+This issue is fixed. 
