@@ -5,14 +5,14 @@ manager: carmonm
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 01/23/2018
+ms.date: 05/16/2018
 ms.technology: service-manager
 ms.topic: article
 ---
 
 # Author with System Center - Service Manager
 
-Authoring in Service Manager refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
+Authoring in Service Manager (SM) refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
 ## Introduction to authoring with the Service Manager Authoring Tool
 
@@ -110,12 +110,33 @@ The SCSM<version>\_AuthoringTool\_RTM.exe program file contains the Service Mana
 
 If Windows Error Reporting is enabled on the computer that is running the Authoring Tool, errors are reported automatically.  
 
+::: moniker range="sc-sm-1801"
+
+> [!NOTE]
+
+> Do not install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
+
+::: moniker-end    
+
+::: moniker range="sc-sm-2016"
+
+> [!NOTE]
+
+> - Do not install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
+> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.   
+
+::: moniker-end
+
 ##### To install the Authoring Tool  
 
-1.  Verify that the computer on which you plan to install the Authoring Tool meets the requirements.  
-2.  Download the [SCSM<version>\_AuthoringTool\_RTM.exe](https://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM<version>\_AuthoringTool\_RTM.exe**.  
-3.  In the **WinZip Self\-Extractor - SCSM<version>\_AuthoringTool\_RTM.exe** dialog box, type a path to which to extract the files, and then click **Unzip**.  
-4.  Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe**. Double\-click **Setup.exe** to start Setup.  
+1.  Verify that the computer on which you plan to install the Authoring tool meets the requirements.  
+2.  Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
+
+  - [Download 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
+  - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
+
+3. Double-click the downloaded zip file, read through the license agreement, and extract the files to the desired location.  
+4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.   
 5.  In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  
 6.  Continue through the **Product registration** and the **Installation location** pages.  
 7.  On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, click **Install Microsoft Visual Studio Shell 2008** to install the application.  
@@ -207,7 +228,7 @@ Workflows that were developed in System Center Service Manager 2010 are supporte
 
 ###### Virtual Machine management activities  
 
-The Virtual Machine Management (VMM) workflow activities in Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities do not support System Center VMM. 
+The Virtual Machine Management (VMM) workflow activities in Service Manager support System Center Virtual Machine Manager 2008 R2. However, these activities do not support System Center VMM.
 
 If you are trying to automate IT processes that require the use of an activity that supports VMM, using System Center - Orchestrator runbooks and VMM instead might be helpful.  
 
