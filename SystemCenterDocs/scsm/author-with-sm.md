@@ -122,8 +122,8 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 > [!NOTE]
 
-> - Do not install the latest SM Authoring tool on the same computer that has the SM portal installed.
-> - Install at least UR5 on the machine having SCSM MS/DW MS/Console if latest SM Authoring tool is to be used on the same computer.   
+> - Do not install the SM Authoring tool on the same computer that has the SM Web portal installed.
+> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if SM Authoring tool is to be used on the same computer.   
 
 ::: moniker-end
 
