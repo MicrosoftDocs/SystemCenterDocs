@@ -114,7 +114,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 > [!NOTE]
 
-> Do not install the latest SM Authoring tool on the same computer that has the SCSM portal installed.
+> Do not install the SM Authoring tool on the same computer that has the SM Web portal installed.
 
 ::: moniker-end    
 
