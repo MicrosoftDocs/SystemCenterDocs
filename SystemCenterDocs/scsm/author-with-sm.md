@@ -12,7 +12,7 @@ ms.topic: article
 
 # Author with System Center - Service Manager
 
-Authoring in Service Manager refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
+Authoring in Service Manager (SM) refers to using, authoring, and customizing management packs, which enable customizations in Service Manager. The articles in this section provide an introduction to authoring in Service Manager, including an overview of the Service Manager Authoring Tool.
 
 ## Introduction to authoring with the Service Manager Authoring Tool
 
@@ -114,7 +114,7 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 > [!NOTE]
 
-> Do not install the SM Authoring tool on the same computer that has the SM Web portal installed.
+> Do not install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
 
 ::: moniker-end    
 
@@ -122,8 +122,8 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 > [!NOTE]
 
-> - Do not install the SM Authoring tool on the same computer that has the SM Web portal installed.
-> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if SM Authoring tool is to be used on the same computer.   
+> - Do not install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
+> - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.   
 
 ::: moniker-end
 
