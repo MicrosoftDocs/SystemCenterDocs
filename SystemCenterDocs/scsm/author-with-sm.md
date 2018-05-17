@@ -132,8 +132,8 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 1.  Verify that the computer on which you plan to install the Authoring tool meets the requirements.  
 2.  Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
 
-  - [Download the 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
-  - [Download the 1801 SM  Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
+  - [Download 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
+  - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
 
 3. Double-click the downloaded zip file, read through the license agreement, and extract the files to the desired location.  
 4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.   
