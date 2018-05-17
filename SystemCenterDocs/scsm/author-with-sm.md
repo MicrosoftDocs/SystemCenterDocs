@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 01/23/2018
+ms.date: 05/16/2018
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -110,12 +110,34 @@ The SCSM<version>\_AuthoringTool\_RTM.exe program file contains the Service Mana
 
 If Windows Error Reporting is enabled on the computer that is running the Authoring Tool, errors are reported automatically.  
 
+::: moniker range="sc-sm-1801"
+
+> [!NOTE]
+
+> Do not install the latest SCSM authoring tool on the same machine that has the SCSM portal installed.
+
+::: moniker-end    
+
+::: moniker range="sc-sm-2016"
+
+> [!NOTE]
+
+> - Do not install the latest SCSM authoring tool on the same machine that has the SCSM portal installed.
+> - Install at least UR5 on the machine having SCSM MS/DW MS/Console if latest SCSM Authoring tool is to be used on the same machine.   
+
+::: moniker-end
+
 ##### To install the Authoring Tool  
 
 1.  Verify that the computer on which you plan to install the Authoring Tool meets the requirements.  
-2.  Download the [SCSM<version>\_AuthoringTool\_RTM.exe](https://www.microsoft.com/download/details.aspx?id=40896) program file from the Microsoft Download Center to the local computer on which you want to install the Authoring Tool. Double\-click **SCSM<version>\_AuthoringTool\_RTM.exe**.
-3.  In the **WinZip Self\-Extractor - SCSM<version>\_AuthoringTool\_RTM.exe** dialog box, type a path to which to extract the files, and then click **Unzip**.  
-4.  Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe**. Double\-click **Setup.exe** to start Setup.  
+2.  You can download the authoring tool version based on your requirement.
+
+  - [Download the 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
+  - [Download the 1801 SM  Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
+
+3. Download the required version to the local computer on which you want to install the Authoring Tool.
+4. Double-click the downloaded zip file and extract to the desired location.  
+5. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe**. Double\-click **Setup.exe** to start Setup.  
 5.  In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  
 6.  Continue through the **Product registration** and the **Installation location** pages.  
 7.  On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, click **Install Microsoft Visual Studio Shell 2008** to install the application.  

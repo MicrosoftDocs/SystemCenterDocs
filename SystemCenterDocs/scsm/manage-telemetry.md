@@ -29,7 +29,7 @@ Administrators can turn off this feature at any point of time by using the Servi
 
 Use the following procedure:
 
-1. In the SM console, in the toolbar, click **Help**.
+1. In the SM console > toolbar, click **Help**.
 
 2. In the **Help** menu, click **Send diagnostic and usage data to Microsoft**.
 
