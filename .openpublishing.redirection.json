@@ -989,6 +989,15 @@
      "source_path" : "SystemCenterDocs/orch/manage/audit-trail.md",
      "redirect_url" : "/system-center/orchestrator/track-runbooks-audit-trail"
 },
+
+{
+     "source_path" : "SystemCenterDocs/orchestrator/release-notes.md",
+     "redirect_url": "/system-center/orchestrator/release-notes-orch.md"
+},
+{
+     "source_path" : "SystemCenterDocs/orchestrator/release-notes-1801.md",
+     "redirect_url": "/system-center/orchestrator/release-notes-orch.md"
+},
 {
      "source_path" : "SystemCenterDocs/scsm/about-dw-module-deploy.md",
      "redirect_url": "/system-center/scsm/manage-dw"
