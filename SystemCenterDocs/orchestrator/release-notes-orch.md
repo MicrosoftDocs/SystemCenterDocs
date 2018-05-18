@@ -38,4 +38,4 @@ This article lists the release notes for System Center 2016 - Orchestrator.
 ::: moniker-end
 
 ## Next steps
-[What's new in Orchestrator](../sco/whats-new-1801.md)
+[What's new in Orchestrator](../orchestrator/whats-new-1801.md)

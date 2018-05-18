@@ -11,8 +11,7 @@
 ## Plan
 ### [Database sizing and performance](database-sizing-and-performance.md)
 ### [Feature performance considerations](feature-performance-considerations.md)
-### [System requirements - Orchestrator 2016](system-requirements.md)
-### [System requirements - Orchestrator 1801](system-requirements-1801.md)
+### [System requirements - Orchestrator](system-requirements-orch.md)
 ### [Design a runbook](designing-a-runbook.md)
 ## Deploy
 ### [Upgrade to Orchestrator 2016](upgrade-to-orchestrator.md)

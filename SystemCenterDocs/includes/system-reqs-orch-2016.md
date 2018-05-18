@@ -1,20 +1,20 @@
 ---
-title: System requirements for System Center - Orchestrator
-description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of your Orchestrator deployment.
+ms.assetid: c3c34c0d-4f06-489a-aaba-0a96b9d8eaf9
+title: include file
+description: include file to provide the system requirements for System Center 2016 - Orchestrator, and includes the  general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
 author: rayne-wiselman
 manager: carmon
-ms.date: 01/17/2018
+ms.date: 05/17/2018
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
-ms.topic: article
+ms.topic: include
 ms-author: raynew
-monikerRange: 'sc-orch-2016'
 ---
 
 
-# System requirements for System Center - Orchestrator
+## System requirements for System Center - Orchestrator
 
-The topic describes general performance and scalability guidance for System Center - Orchestrator and recommends hardware configurations for a variety of workloads. Because System Center is built to be flexible and scalable, the actual hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections describe general performance and scalability guidance for System Center 2016 - Orchestrator, and recommends hardware configurations for a variety of workloads. As System Center 2016 is built to be flexible and scalable, the actual hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 
@@ -57,7 +57,7 @@ The following versions of Windows client operating system are supported for the 
 
 All Orchestrator server roles require .Net 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
 
-You can download .Net 3.5 SP1 at:  
+You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).   
 
 ### To turn on WCF activation
 
@@ -74,6 +74,3 @@ You can download .Net 3.5 SP1 at:
 ## Virtualization
 
 Deploying and running Orchestrator on a virtualized operating system is fully supported. The software requirements are the same as those listed above. Any of the Orchestrator roles can also be run on a virtualized server running in Microsoft Azure.
-
-## Next steps
-[Install Orchestrator](install.md)
