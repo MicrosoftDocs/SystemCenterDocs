@@ -1,19 +1,20 @@
 ---
 ms.assetid: ba25182b-5ddf-439e-8dd6-541194e65168
-title:  Upgrade to System Center 1801 - Orchestrator 
+title:  include file  
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  02/05/2018
-ms.topic:  article
+ms.date:  05/17/2018
+ms.topic:  include
 ms.prod:  system-center-threshold
-ms.technology:  system-center-2016
-description: This article provides an overview of how to upgrade your System Center Orchestrator installation to release 1801.
+ms.technology: orchestrator
+description: include file to provides an overview of how to upgrade your System Center Orchestrator installation to release 1801.
 keywords:
-monikerRange: 'sc-orch-1801'
 ---
 
 # Upgrade to System Center 1801 - Orchestrator
+
+The following sections provide information about how to upgrade to System Center 1801 - Orchestrator.
 
 You can upgrade your installation of System Center 2012 R2 Update Rollup (UR) 14 and 2016 UR4 Orchestrator to System Center 1801 Orchestrator by following the steps described below. Before doing so, make sure your environment is upgraded to the supported versions as described in [System Requirements for System Center 1801](system-requirements-1801.md).
 
@@ -34,7 +35,3 @@ You can upgrade your installation of System Center 2012 R2 Update Rollup (UR) 14
 4. Install any Orchestrator runbook servers in System Center 1801.
 5. Install the Orchestrator Runbook Designer in System Center 1801.
 6. If needed, install the Orchestrator Web Service in System Center 1801.
-
-## Next Steps
-
-Learn how to deploy runbooks at [Deploy runbooks](deploy-runbooks.md).

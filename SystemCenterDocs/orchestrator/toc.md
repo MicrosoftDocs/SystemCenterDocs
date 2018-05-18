@@ -14,8 +14,7 @@
 ### [System requirements - Orchestrator](system-requirements-orch.md)
 ### [Design a runbook](designing-a-runbook.md)
 ## Deploy
-### [Upgrade to Orchestrator 2016](upgrade-to-orchestrator.md)
-### [Upgrade to Orchestrator 1801](upgrade-to-orchestrator-1801.md)
+### [Upgrade Orchestrator](upgrade-orch.md)
 ### [Deploy runbooks](deploy-runbooks.md)
 ### [Configure Orchestrator database connections](how-to-configure-orchestrator-database-connections.md)
 ### [Migrate Orchestrator between environments](migrate-orchestrator-between-environments.md)

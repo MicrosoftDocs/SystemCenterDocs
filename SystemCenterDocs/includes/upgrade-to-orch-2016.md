@@ -1,21 +1,20 @@
 ---
-title:  Upgrade to System Center - Orchestra
-description:  Upgrade instructions for System Center - Orchestra
+ms.assetid: 7b623b69-e0f1-4461-aa45-6d9a2e965cfd
+title:  include file
+description:  include file to provide the upgrade instructions for System Center 2016 - Orchestration
 author: rayne-wiselman
 manager:  carmonm
-ms.date:  01/17/2018
+ms.date:  o5/17/2018
 ms.prod:  system-center-threshold
-ms.technology:  system-center-2016
-ms.topic:  article
+ms.technology:  orchestrator
+ms.topic:  include
 ms.author: raynew
-monikerRange: 'sc-orch-2016'
 ---
 
 
+## Upgrade to System Center 2016 - Orchestrator
 
-# Upgrade in Orchestrator
-
-You can upgrade to System Center 2016 - Orchestrator using the steps below.
+The following sections provide information about how to upgrade to System Center 2016 - Orchestrator.
 
 
 ## Before you start
@@ -40,7 +39,3 @@ You can upgrade to System Center 2016 - Orchestrator using the steps below.
 4. Install the new version of any Orchestrator runbook servers.
 5. Install the new version of the Orchestrator Runbook Designer.
 6. If needed, install the Orchestrator Web Service.
-
-## Next Steps
-
-[Learn how](deploy-runbooks.md) to deploy runbooks

@@ -1005,8 +1005,18 @@
 },
 {
      "source_path" : "SystemCenterDocs/orchestrator/system-requirements-1801.md",
-     "redirect_url": "/system-center/orchestrator/release-notes-orch.md"
+     "redirect_url": "/system-center/orchestrator/system-requirements-orch.md"
 },
+
+{
+     "source_path" : "SystemCenterDocs/orchestrator/upgrade-to-orchestrator.md",
+     "redirect_url": "/system-center/orchestrator/upgrade-orchestrator.md"
+},
+{
+     "source_path" : "SystemCenterDocs/orchestrator/upgrade-to-orchestrator-1801.md",
+     "redirect_url": "/system-center/orchestrator/upgrade-orchestrator.md"
+},
+
 {
      "source_path" : "SystemCenterDocs/scsm/about-dw-module-deploy.md",
      "redirect_url": "/system-center/scsm/manage-dw"
