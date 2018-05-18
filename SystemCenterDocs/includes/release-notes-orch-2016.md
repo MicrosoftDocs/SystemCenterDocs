@@ -15,7 +15,7 @@ monikerRange: 'sc-orch-2016'
 
 ## Release Notes for System Center 2016 - Orchestrator
 
-The following sections lists the known issues and workarounds that apply to System Center 2016 -Orchestrator.
+The following sections list the known issues and workarounds that apply to System Center 2016 -Orchestrator.
 
 ## Orchestrator Web Console is not compatible with the Microsoft Edge web browser
 **Description:** You cannot open the Orchestrator web console with the Microsoft Edge web browser.

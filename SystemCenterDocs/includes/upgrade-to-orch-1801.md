@@ -12,7 +12,7 @@ description: include file to provides an overview of how to upgrade your System 
 keywords:
 ---
 
-# Upgrade to System Center 1801 - Orchestrator
+## Upgrade to System Center 1801 - Orchestrator
 
 The following sections provide information about how to upgrade to System Center 1801 - Orchestrator.
 
