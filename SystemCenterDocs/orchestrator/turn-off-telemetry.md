@@ -36,7 +36,7 @@ Administrators can turn off this feature at any point of time.
 | Data related To | Data collected |
 | --- | --- |
 | **Installation and other configuration information** | DataBase name  <br /><br /> Database authentication yype|
-| **Usage ** | Number of Runbook designers <br /><br /> Number of folders <br /><br /> Number of variables <br /><br /> Number of schedules <br /><br /> Number of runbooks<br /><br /> Number of computer groups <br /><br /> 	Number of integration packs  <br /><br />  Average load per minute on runbook server <br /><br /> Names of integration packs <br /><br /> Activity name in use <br /><br /> Run script types |
+| **Usage** | Number of Runbook designers <br /><br /> Number of folders <br /><br /> Number of variables <br /><br /> Number of schedules <br /><br /> Number of runbooks<br /><br /> Number of computer groups <br /><br /> 	Number of integration packs  <br /><br />  Average load per minute on runbook server <br /><br /> Names of integration packs <br /><br /> Activity name in use <br /><br /> Run script types |
 
 
 ## Next steps
