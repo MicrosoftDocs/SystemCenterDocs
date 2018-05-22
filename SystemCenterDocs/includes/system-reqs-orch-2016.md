@@ -1,4 +1,4 @@
----
+﻿---
 ms.assetid: c3c34c0d-4f06-489a-aaba-0a96b9d8eaf9
 title: include file
 description: include file to provide the system requirements for System Center 2016 - Orchestrator, and includes the  general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
@@ -68,7 +68,7 @@ You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.c
 5.	Select **.NET Framework 4.5** if it isn’t already selected.
 6.	Expand **WCF Services**.
 7.	Select **HTTP Activation** if it isn’t already selected.
-8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](https://technet.microsoft.com/en-us/library/hh546549.aspx).
+8.	Click **Next** and follow the prompts to finish the installation. If you have problems, check the issues covered in [Troubleshoot Your Orchestrator Installation](https://technet.microsoft.com/library/hh546549.aspx).
 
 
 ## Virtualization

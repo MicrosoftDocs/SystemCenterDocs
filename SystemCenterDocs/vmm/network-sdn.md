@@ -68,4 +68,4 @@ VM | Corresponds to a virtual machine. | Overwritten by VMM if you enable out-of
 
 These resources to be created and managed outside the VMM fabric. VMM has no knowledge of them, and obviously doesn't overwrite them when they're configured outside the VMM console.
 
-Unknown objects are any Network Controller resources that aren't listed in the table above. Get the [latest list](https://msdn.microsoft.com/en-us/library/mt758684.aspx) of SDN resources.
+Unknown objects are any Network Controller resources that aren't listed in the table above. Get the [latest list](https://msdn.microsoft.com/library/mt758684.aspx) of SDN resources.
