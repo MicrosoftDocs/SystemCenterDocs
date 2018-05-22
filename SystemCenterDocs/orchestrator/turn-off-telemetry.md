@@ -31,7 +31,8 @@ Administrators can turn off this feature at any point of time.
 
   ![console telemetry selection](./media/telemetry/telemetry-option-selection.png)
 
-  Note: We recommend you to read the Privacy Statement before you select the option. 
+  >[!NOTE]
+  >We recommend that you read the Privacy Statement before you select the option. 
 
    -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
    - 	To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
