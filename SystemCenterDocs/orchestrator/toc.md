@@ -7,6 +7,7 @@
 ## [Work with runbooks in the Orchestrator console](console-overview.md)
 ## [Example runbook: Creating a runbook to monitor a folder](monitor-a-folder-within-a-runbook.md)
 ## [Release notes - Orchestrator](release-notes-orch.md)
+## [Turn on/off telemetry](turn-off-telemetry.md)
 # How To
 ## Plan
 ### [Database sizing and performance](database-sizing-and-performance.md)
