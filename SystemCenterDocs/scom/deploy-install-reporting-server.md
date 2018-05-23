@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/06/2018
+ms.date: 05/21/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -99,12 +99,13 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 
     ```
     setup.exe /silent /install /components:OMReporting 
-    /ManagementServer: "<ManagementServerName>"
-    /SRSInstance: <server\instance>
-    /DataReaderUser: <domain\username>
-    /DataReaderPassword: <password>
-    /SendODRReports: [0|1]
-    /UseMicrosoftUpdate: [0|1]
+    /ManagementServer:<ManagementServerName>
+    /SRSInstance:<server\instance>
+    /DataReaderUser:<domain\username>
+    /DataReaderPassword:<password>
+    /SendODRReports:[0|1]
+    /UseMicrosoftUpdate:[0|1]
+    /AcceptEndUserLicenseAgreement:1
     ```
 
 #### To confirm the health of Operations Manager reports
