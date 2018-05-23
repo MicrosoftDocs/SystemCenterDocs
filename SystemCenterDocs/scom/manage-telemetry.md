@@ -44,9 +44,9 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 **Data collected through UTC**
 
-- Version of installed SCOM product
-- Version of the  installed SCOM Update rollup on different SCOM core components
-- SCOM management group identifier (To - weed out duplicates)
+- Version of installed SCOM
+- Version of the  installed SCOM update rollup on different SCOM core components
+- SCOM management group identifier (To weed out duplicates)
 - Unique machine identifier
 - Operating system on which different SCOM core components are launched
 - Language of the SCOM installation
@@ -60,9 +60,9 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - SQL configuration of the SCOM environment? (version/SP version/SQL Always ON/Cluster)
 - Number of Unix/Linux machines monitored
 - Number of Windows computers monitored
-- Number of network devices monitored?
-- What Unix/Linux favors are monitored?
-- What network devices are monitored? their type, model number, and certification status.
+- Number of network devices monitored
+- Unix/Linux favors monitored
+- Network devices being monitored - their type, model number, and certification status.
 - Number of applications for which APM is active
 - Type of workloads for which APM is enabled
 - Number of distributed applications
@@ -71,43 +71,43 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - Number of new SSRS reports present
 - Number of Uncanned SSRS reports present
 - How frequently are canned reports used
-- How frequently are each PowerShell command used?
-- What features are used in the administration console? complete Heatmap
-- Number of management packs in the SCOM environment?
-- Number of non-Microsoft signed packs?
-- Management packs are installed/version/manufacturer (Microsoft and Non-Microsoft)?
-- Table names and row counts in the operational database?
-- Table Names and row counts in the data warehouse database?
-- Which partner products are installed?
-- How long does it take for the windows console to launch?
-- How long does it take for each of the monitoring screens to launch?
-- How long does it take for each of the administration screens to launch?
+- Frequency of each PowerShell command use
+- Features are used in the administration console. complete Heatmap
+- Number of management packs in the SCOM environment
+- Number of non-Microsoft signed packs
+- Management packs installed/version/manufacturer (Microsoft and Non-Microsoft)
+- Table names and row counts in the operational database
+- Table names and row counts in the data warehouse database
+- Which partner products are installed
+- Time taken for the windows console to launch
+-  Time taken for each of the monitoring screens to launch
+- Time taken for each of the administration screens to launch
 - Number of times network vicinity dashboard is launched
-- How many number of times do Data warehouse jobs fail?
-- How many number of times the web console has been launched
-- How many number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
-- What Microsoft MP import fails and with what error
-- What Microsoft alerts have been marked as not useful and with what reason
+- Number of times the data warehouse jobs are failing
+- Number of times the web console is being launched
+- Number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
+- Details of the Microsoft MP import failures and error involved
+- Microsoft alerts that are marked as not useful and the reason
 - Number of widgets, views, dashboards created in *Monitoring* pane
-- Number of dashboards in *My Workspace*?
-- Amount of time taken  to load the Scheduled Maintenance summary screen?
-- Average number of entities that are put to Maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
-- Time taken for the setup to complete along with the features that were chosen?
-- SQL configuration at setup time?
-- What are the errors users facing  when they try to setup SCOM?
-- Are customers entering a license key at the time of setup?
-- How many customers are upgrading / how many are doing a full setup?
-- What System Center ID does the SCOM environment reside in
+- Number of dashboards in *My Workspace*
+- Time taken to load the Scheduled Maintenance summary screen
+- Average number of entities that are set to maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
+- Time taken for the setup to complete installation for the features chosen.  
+- SQL configuration at setup time
+- Errors observed by the users when they setup SCOM
+- Are users entering a license key at the time of setup
+- Number of customers  upgrading/ doing a full setup
+- System Center ID the SCOM environment reside in
 - Number of  times the *Updates and Recommendations* link clicked/refreshed
-- How many times the online catalog was down while loading *Updates and Recommendations* view
-- How much time it took to load the *Updates and Recommendations* view
-- How many workloads in *Updates and Recommendations* view has *Updates available* status
-- How many workloads in *Updates and Recommendations* view have *Not installed* status
-- How many workloads in *Updates and Recommendations* view has *Partially installed* status
-- How many workloads are shown in *Updates and Recommendation*
+- Number of times the online catalog was down while loading *Updates and Recommendations* view
+- Time taken to load the *Updates and Recommendations* view
+- Number of workloads in *Updates and Recommendations* view has *Updates available* status
+- Number of workloads in *Updates and Recommendations* view have *Not installed* status
+- Number of workloads in *Updates and Recommendations* view has *Partially installed* status
+- Number of workloads shown in *Updates and Recommendation*
 - How many times *Get MP* link is clicked in *Updates and Recommendations* view
-- How many times *Get All MPs* link is clicked in *Updates and Recommendations* view
-- How many times *View Guide* link is clicked in *Updates and Recommendations* view
+- Number of times *Get All MPs* link is clicked in *Updates and Recommendations* view
+- Number of times *View Guide* link is clicked in *Updates and Recommendations* view
 - Workload selected in *Get MP* call in *Updates and Recommendations* view
 - Workloads selected in *Get All MPs* call in *Updates and Recommendations* view
 - Workload install status in *Get MP* call in *Updates and Recommendations* view
@@ -118,14 +118,14 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - TotalSetuptimeInMinutes
 - Is setup silent
 - Is error reporting enabled
-- Microsoft update true or false
-- Is setup 64 bit
+- Is the Microsoft update true or false
+- Is the setup 64 bit
 - SetupDefaultInstallPath
 - Install result - success or failure
 - Selected features
-- Management server installation  fresh or upgrade
-- Database (DB) installation fresh or upgrade
-- Data warehouse (DW) installation fresh or upgrade
+- Whether the management server installation is fresh or upgrade
+- Whether the database (DB) installation is fresh or upgrade
+- Whether the data warehouse (DW) installation is fresh or upgrade
 - Default DB Name
 - DB Size in MB
 - DB Port
@@ -134,27 +134,27 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - DW Size in MB
 - DW Port
 - Is DW local
-- Is SDK Service using Local System Account
-- Is Agent using Local System Account
-- Web console Default Website
+- Is the SDK service using the local system account
+- Is the agent using the local system account
+- Web console default website
 - Web console authorization  mode
 - Web console SSL enabled
-- count of maintenance schedules
-- count of active alerts
+- Count of maintenance schedules
+- Count of active alerts
 - User role
 - Console version
-- Are customers enabling daily health report
-- Are customers enabling computer discovery
-- Are customers discovering entire domain, or selected
-- Are customers enabling Auto-Select for updates?
-- Telemetry on/off notification
+- If users enabling daily health report
+- If users are enabling computer discovery
+- If users are discovering entire domain, or selected
+- If users are enabling Auto-Select for updates
+- Telemetry on/off notifications
 - Click count on Tune Management Pack View
 - Click count, total days, minimum alert count, and total result set
 - Click count, MP name, alert name, and alert count
 - Click count of *View or edit the settings of this monitor*
 - Click count of *View or override sources*
 - Click count, source MP name and override MP name
-- Nano Servers Count
+- Nano servers count
 - Alert view click count
 - Health explorer click count on alert view action menu
 - Open command window click count on alert view action menu
@@ -173,24 +173,24 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 - All API exceptions
 - User feedback
-- Which widget is edited
-- Which widget is authored
-- Which view is launched
-- Which action is clicked
-- Which widget is personalized
-- Whenever the action *View in Full Screen* is clicked
-- When dashboard is edited
-- Which drill-down page is launched
-- When task pane is launched
-- When *My Workspace* is launched.
-- When *Windows Authentication Used*
-- When *Alternate Credentials Used*
-- When *Add to MyWorkspace* action is performed;
+- Edited widget
+- Authored widget
+- launched widget
+- Action clicked
+- Personalized widget
+- Instances when action *View in Full Screen* is clicked
+- Dashboard edits
+- Instances of drill-down page launch
+- Instances of task pane launch
+- Instances of *My Workspace*  launch
+- Usage of *Windows Authentication*
+- Usage of  *Alternate Credentials*
+- When *Add to MyWorkspace* action is performed
 - Count of alerts per widget
 - Count of performance legends per widget
 - Count of rows per state widget
 - Count of icons in topology widget
-- Widget count in a dashboard.
+- Widget count in a dashboard
 
 
 ## Next steps
