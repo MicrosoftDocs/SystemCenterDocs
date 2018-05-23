@@ -44,61 +44,61 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 **Data collected through UTC**
 
-- What is the installed SCOM product version?
-- What is the installed SCOM UR version on different SCOM core components?
-- What is the SCOM management group identifier? (To - weed out duplicates)
-- What is the unique machine identifier?
-- What is the operating system on which different SCOM core components are launched?
-- What is the language of the SCOM installation?
-- What are the CPU and memory of the different SCOM servers
-- What is the number of SCOM web servers installed?
-- Is reporting server installed?
-- Is ACS installed?
-- What is the number of gateways in the SCOM environment?
-- What is the number of management servers in the SCOM environment?
-- Is Operational Insights account setup?
-- What is the SQL configuration of the SCOM environment? (version/SP version/SQL Always ON/Cluster)
-- What is the number of Unix/Linux machines monitored?
-- What is the number of Windows computers monitored?
-- What is the number of network devices monitored?
+- Version of installed SCOM product
+- Version of the  installed SCOM Update rollup on different SCOM core components
+- SCOM management group identifier (To - weed out duplicates)
+- Unique machine identifier
+- Operating system on which different SCOM core components are launched
+- Language of the SCOM installation
+- CPU and memory values of the different SCOM servers
+- Number of SCOM web servers installed
+- Is reporting server installed
+- Is ACS installed
+- Number of gateways in the SCOM environment
+- Number of management servers in the SCOM environment
+- Is Operational Insights account setup
+- SQL configuration of the SCOM environment? (version/SP version/SQL Always ON/Cluster)
+- Number of Unix/Linux machines monitored
+- Number of Windows computers monitored
+- Number of network devices monitored?
 - What Unix/Linux favors are monitored?
 - What network devices are monitored? their type, model number, and certification status.
-- What is the number of applications for which APM is active
-- What is the type of workloads for which APM is enabled
-- What is the number of distributed applications
-- What is the number of machines on which ACS is implemented
-- What is the maximum number of concurrent Web console sessions
-- What is the number of new SSRS reports present?
-- What is the number of Uncanned SSRS reports present?
-- How frequently are canned reports used?
+- Number of applications for which APM is active
+- Type of workloads for which APM is enabled
+- Number of distributed applications
+- Number of computers on which ACS is implemented
+- Maximum number of concurrent Web console sessions
+- Number of new SSRS reports present
+- Number of Uncanned SSRS reports present
+- How frequently are canned reports used
 - How frequently are each PowerShell command used?
 - What features are used in the administration console? complete Heatmap
-- What is the number of management packs in the SCOM environment?
-- What is the number of non-Microsoft signed packs?
-- What management packs are installed/version/manufacturer (Microsoft and Non-Microsoft)?
-- What are the table names and row counts in the operational database?
-- What are the table Names and row counts in the data warehouse database?
+- Number of management packs in the SCOM environment?
+- Number of non-Microsoft signed packs?
+- Management packs are installed/version/manufacturer (Microsoft and Non-Microsoft)?
+- Table names and row counts in the operational database?
+- Table Names and row counts in the data warehouse database?
 - Which partner products are installed?
 - How long does it take for the windows console to launch?
 - How long does it take for each of the monitoring screens to launch?
 - How long does it take for each of the administration screens to launch?
-- What is the number of times network vicinity dashboard is launched?
-- How many times do Data warehouse jobs fail?
-- How many  number of times the web console has been launched
+- Number of times network vicinity dashboard is launched
+- How many number of times do Data warehouse jobs fail?
+- How many number of times the web console has been launched
 - How many number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
-- What Microsoft MP import fails and with what error?
+- What Microsoft MP import fails and with what error
 - What Microsoft alerts have been marked as not useful and with what reason
-- What is the number of widgets, views, dashboards created in *Monitoring* pane
-- What is the number of dashboards in *My Workspace*?
-- What is the amount of time taken  to load the Scheduled Maintenance summary screen?
-- What is the average number of entities that are put to Maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
-- What is time taken for the setup to complete along with the features that were chosen?
-- What is the SQL configuration at setup time?
+- Number of widgets, views, dashboards created in *Monitoring* pane
+- Number of dashboards in *My Workspace*?
+- Amount of time taken  to load the Scheduled Maintenance summary screen?
+- Average number of entities that are put to Maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
+- Time taken for the setup to complete along with the features that were chosen?
+- SQL configuration at setup time?
 - What are the errors users facing  when they try to setup SCOM?
 - Are customers entering a license key at the time of setup?
 - How many customers are upgrading / how many are doing a full setup?
 - What System Center ID does the SCOM environment reside in
-- What is the number of  times the *Updates and Recommendations* link clicked/refreshed
+- Number of  times the *Updates and Recommendations* link clicked/refreshed
 - How many times the online catalog was down while loading *Updates and Recommendations* view
 - How much time it took to load the *Updates and Recommendations* view
 - How many workloads in *Updates and Recommendations* view has *Updates available* status
@@ -125,7 +125,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - Selected features
 - Management server installation  fresh or upgrade
 - Database (DB) installation fresh or upgrade
-- Datawarehouse (DW) installation fresh or upgrade
+- Data warehouse (DW) installation fresh or upgrade
 - Default DB Name
 - DB Size in MB
 - DB Port
