@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 This article provides information about how to manage the telemetry (Diagnostics and utility data) settings in System Center - Operations Manager (SCOM).
 
-By default, Operations Manager  sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security and integrity of Microsoft products and services.
+By default, Operations Manager  sends diagnostic and connectivity data to Microsoft. Microsoft uses this data to provide and improve the quality, security, and integrity of Microsoft products and services.
 
 Administrators can turn off this feature at any point of time. Learn more about [data collected by Operations Manager](#data-collected)
 
@@ -34,7 +34,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
   > ![NOTE]
-  
+
   > We recommend you to read the Privacy Statement before you select the option.
 
   -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
@@ -51,10 +51,10 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - What is the operating system on which different SCOM core components are launched?
 - What is the language of the SCOM installation?
 - What are the CPU and memory of the different SCOM servers
-- What are the number of SCOM web servers installed?
+- What is the number of SCOM web servers installed?
 - Is reporting server installed?
 - Is ACS installed?
-- What are the number of gateways in the SCOM environment?
+- What is the number of gateways in the SCOM environment?
 - What is the number of management servers in the SCOM environment?
 - Is Operational Insights account setup?
 - What is the SQL configuration of the SCOM environment? (version/SP version/SQL Always ON/Cluster)
@@ -62,7 +62,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - What is the number of Windows computers monitored?
 - What is the number of network devices monitored?
 - What Unix/Linux favors are monitored?
-- What network devices are monitored? their type, model number and certification status.
+- What network devices are monitored? their type, model number, and certification status.
 - What is the number of applications for which APM is active
 - What is the type of workloads for which APM is enabled
 - What is the number of distributed applications
@@ -71,7 +71,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - What is the number of new SSRS reports present?
 - What is the number of Uncanned SSRS reports present?
 - How frequently are canned reports used?
-- How frequently are each PowerShell commands used?
+- How frequently are each PowerShell command used?
 - What features are used in the administration console? complete Heatmap
 - What is the number of management packs in the SCOM environment?
 - What is the number of non-Microsoft signed packs?
@@ -89,7 +89,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - What Microsoft MP import fails and with what error?
 - What Microsoft alerts have been marked as not useful and with what reason
 - What is the number of widgets, views, dashboards created in *Monitoring* pane
-- What are the number of dashboards in *My Workspace*?
+- What is the number of dashboards in *My Workspace*?
 - What is the amount of time taken  to load the Scheduled Maintenance summary screen?
 - What is the average number of entities that are put to Maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
 - What is time taken for the setup to complete along with the features that were chosen?
@@ -102,7 +102,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - How many times the online catalog was down while loading *Updates and Recommendations* view
 - How much time it took to load the *Updates and Recommendations* view
 - How many workloads in *Updates and Recommendations* view has *Updates available* status
-- How many workloads in *Updates and Recommendations* view has *Not installed* status
+- How many workloads in *Updates and Recommendations* view have *Not installed* status
 - How many workloads in *Updates and Recommendations* view has *Partially installed* status
 - How many workloads are shown in *Updates and Recommendation*
 - How many times *Get MP* link is clicked in *Updates and Recommendations* view
@@ -114,7 +114,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - Workloads install status in *Get All MPs* call in *Updates and Recommendations* view
 - Time taken to install workload in *Get MP* call in *Updates and Recommendations* view
 - Time taken to install workloads in *Get All MPs* call in *Updates and Rec** view?
-- Is install fresh or upgrade
+- Is the installation fresh or upgrade
 - TotalSetuptimeInMinutes
 - Is setup silent
 - Is error reporting enabled
@@ -123,9 +123,9 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - SetupDefaultInstallPath
 - Install result - success or failure
 - Selected features
-- Management server install fresh or upgrade
-- Database (DB) install fresh or upgrade
-- Datawarehouse (DW) install fresh or upgrade
+- Management server installation  fresh or upgrade
+- Database (DB) installation fresh or upgrade
+- Datawarehouse (DW) installation fresh or upgrade
 - Default DB Name
 - DB Size in MB
 - DB Port
@@ -149,8 +149,8 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - Are customers enabling Auto-Select for updates?
 - Telemetry on/off notification
 - Click count on Tune Management Pack View
-- Click count, total days, minimum alert count and total result set
-- Click count, MP name, alert name and alert count
+- Click count, total days, minimum alert count, and total result set
+- Click count, MP name, alert name, and alert count
 - Click count of *View or edit the settings of this monitor*
 - Click count of *View or override sources*
 - Click count, source MP name and override MP name
