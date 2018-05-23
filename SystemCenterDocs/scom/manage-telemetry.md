@@ -42,134 +42,30 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 ## Telemetry data collected
 
-**Data collected through UTC**
+| Data related To | Data collected |
+| --- | --- |
+| **Set up** | • Version of installed SCOM <br> • Version of the  installed SCOM update rollup on different SCOM core components<br> • SCOM management group identifier (To weed out duplicates)<br> • Unique machine identifier <br> • Operating system on which different SCOM core components are launched <br>• Language of the SCOM installation <br>• CPU and memory values of different SCOM servers <br>• Number of SCOM web servers installed <br> • Is reporting server installed <br> • Is ACS installed <br> • Number of gateways in the SCOM environment <br> • Number of management servers in the SCOM environment<br> • Is Operational Insights account setup  |
+| **Device monitoring** | • Number of Unix/Linux computers monitored<br>• Number of Windows computers monitored<br>• Number of network devices monitored<br>• Unix/Linux favors monitored<br>• Network devices being monitored - their type, model number, and certification status <br>• Number of applications for which APM is active <br>• Type of workloads for which APM is enabled<br>• Number of distributed applications<br>• Number of computers on which ACS is implemented<br>• Maximum number of concurrent Web console sessions<br>• Number of new SSRS reports present<br>• Number of uncanned SSRS reports present<br>• Frequency of canned reports use<br>• Frequency of each PowerShell command use <br> • Features used in the administration console <br> • Complete Heatmap |
+| **Management packs** |•	Number of management packs in the SCOM environment <br> •Number of non-Microsoft signed packs <br> •	Management packs installed/version/manufacturer (Microsoft and Non•Microsoft) <br> •	Table names and row counts in the operational database <br> •	Table names and row counts in the data warehouse database <br> •	Details of partner products installed <br>•	Details of the Microsoft MP import failures and error involved
+| **SCOM Console** | • Time taken for the windows console to launch <br> •	Time taken for each of the monitoring screens to launch <br> •	Time taken for each of the administration screens to launch <br> •	Number of times network vicinity dashboard is launched <br> •	Number of times the data warehouse jobs are failing <br> •	Number of times the web console is being launched <br> •	Number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
+| **Updates and recommendations** |•	Number of times the Updates and Recommendations link clicked/refreshed<br> •	Number of times the online catalog was down while loading Updates and Recommendations view <br>•	Time taken to load the Updates and Recommendations view <br> •	Number of workloads in Updates and Recommendations view has Updates available status <br> •	Number of workloads in Updates and Recommendations view have Not installedstatus <br> •	Number of workloads in Updates and Recommendations view has Partially installed status <br> •	Number of workloads shown in Updates and Recommendation <br> • Number of times  Get MP link is clicked in Updates and Recommendations view <br> •	Number of times Get All MPs link is clicked in Updates and Recommendations view <br> •	Number of times View Guide link is clicked in Updates and Recommendations view <br> •	Workload selected in Get MP call in Updates and Recommendations view <br> •	Workloads selected in Get All MPs call in Updates and Recommendations view <br> •	Workload install status in Get MP call in Updates and Recommendations view <br> •	Workloads install status in Get All MPs call in Updates and Recommendations view<br> •	Time taken to install workload in Get MP call in Updates and Recommendationsview <br>•	Time taken to install workloads in Get All MPs call in *Updates and Recommendations* view <br> Is the installation fresh or upgrade <br> •	TotalSetuptimeInMinutes <br> •	Is setup silent  <br> •	Is error reporting enabled <br> •	Is the Microsoft update true or false <br> •	Is the setup 64 bit <br> •	SetupDefaultInstallPath <br> •	Install result - success or failure
+| **Database** | •	Whether the management server installation is fresh or upgrade<br> •	Whether the database (DB) installation is fresh or upgrade<br> •	Whether the data warehouse (DW) installation is fresh or upgrade <br> •	Default DB Name <br> •	DB Size in MB<br> •	DB Port <br>•	Is DB Local <br> •	DW Port <br> •	Is DW local <br> •	Is the SDK service using the local system account <br> •	Is the agent using the local system account <br>
+| **Console Settings ** |•	Web console default website<br> •	Web console authorization mode<br> •	Web console SSL enabled<br> •	Count of maintenance schedules <br> •	Count of active alerts<br> •	User role <br> •	Console version <br> •	If users are enabling daily health report <br> •	If users are enabling computer discovery <br> •	If users are discovering entire domain, or the selected one<br> •	If users are enabling Auto-Select for updates <br>•	Telemetry on/off notifications<br> •	Click count on Tune Management Pack View <br>•	Click count, total days, minimum alert count, and total result set <br> •	Click count, MP name, alert name, and alert count <br> •	Click count of View or edit the settings of this monitor <br> •	Click count of View or override sources <br> •	Click count, source MP name and override MP name <br> •	Nano servers count <br> •	Alert view click count <br> •	Health explorer click count on alert view action menu <br> •	Open command window click count on alert view action menu <br> •	Start maintenance mode click count on alert view action menu <br> •	End maintenance mode click count on alert view action menu <br> •	Edit maintenance mode click count on alert view action menu <br> •	Time spent on alert view <br> •	Total number of items displayed on alert view <br> •	Performance view click count <br> •	Time spent on performance view<br>•	State view click count <br> •	Time spent on state view <br> •	Total number of items displayed on state view
 
-- Version of installed SCOM
-- Version of the  installed SCOM update rollup on different SCOM core components
-- SCOM management group identifier (To weed out duplicates)
-- Unique machine identifier
-- Operating system on which different SCOM core components are launched
-- Language of the SCOM installation
-- CPU and memory values of the different SCOM servers
-- Number of SCOM web servers installed
-- Is reporting server installed
-- Is ACS installed
-- Number of gateways in the SCOM environment
-- Number of management servers in the SCOM environment
-- Is Operational Insights account setup
-- SQL configuration of the SCOM environment? (version/SP version/SQL Always ON/Cluster)
-- Number of Unix/Linux machines monitored
-- Number of Windows computers monitored
-- Number of network devices monitored
-- Unix/Linux favors monitored
-- Network devices being monitored - their type, model number, and certification status.
-- Number of applications for which APM is active
-- Type of workloads for which APM is enabled
-- Number of distributed applications
-- Number of computers on which ACS is implemented
-- Maximum number of concurrent Web console sessions
-- Number of new SSRS reports present
-- Number of Uncanned SSRS reports present
-- How frequently are canned reports used
-- Frequency of each PowerShell command use
-- Features are used in the administration console. complete Heatmap
-- Number of management packs in the SCOM environment
-- Number of non-Microsoft signed packs
-- Management packs installed/version/manufacturer (Microsoft and Non-Microsoft)
-- Table names and row counts in the operational database
-- Table names and row counts in the data warehouse database
-- Which partner products are installed
-- Time taken for the windows console to launch
--  Time taken for each of the monitoring screens to launch
-- Time taken for each of the administration screens to launch
-- Number of times network vicinity dashboard is launched
-- Number of times the data warehouse jobs are failing
-- Number of times the web console is being launched
-- Number of times the Maintenance mode task and SMM SDK calls are made for create and edit to determine adoption of new feature
-- Details of the Microsoft MP import failures and error involved
+
+### Data collected through UTC
+
+- SQL configuration of the SCOM environment (version/SP version/SQL Always ON/Cluster)
 - Microsoft alerts that are marked as not useful and the reason
 - Number of widgets, views, dashboards created in *Monitoring* pane
 - Number of dashboards in *My Workspace*
 - Time taken to load the Scheduled Maintenance summary screen
 - Average number of entities that are set to maintenance mode through Maintenance mode task and Scheduled Maintenance mode screen
-- Time taken for the setup to complete installation for the features chosen.  
-- SQL configuration at setup time
-- Errors observed by the users when they setup SCOM
-- Are users entering a license key at the time of setup
-- Number of customers  upgrading/ doing a full setup
 - System Center ID the SCOM environment reside in
-- Number of  times the *Updates and Recommendations* link clicked/refreshed
-- Number of times the online catalog was down while loading *Updates and Recommendations* view
-- Time taken to load the *Updates and Recommendations* view
-- Number of workloads in *Updates and Recommendations* view has *Updates available* status
-- Number of workloads in *Updates and Recommendations* view have *Not installed* status
-- Number of workloads in *Updates and Recommendations* view has *Partially installed* status
-- Number of workloads shown in *Updates and Recommendation*
-- How many times *Get MP* link is clicked in *Updates and Recommendations* view
-- Number of times *Get All MPs* link is clicked in *Updates and Recommendations* view
-- Number of times *View Guide* link is clicked in *Updates and Recommendations* view
-- Workload selected in *Get MP* call in *Updates and Recommendations* view
-- Workloads selected in *Get All MPs* call in *Updates and Recommendations* view
-- Workload install status in *Get MP* call in *Updates and Recommendations* view
-- Workloads install status in *Get All MPs* call in *Updates and Recommendations* view
-- Time taken to install workload in *Get MP* call in *Updates and Recommendations* view
-- Time taken to install workloads in *Get All MPs* call in *Updates and Rec** view?
-- Is the installation fresh or upgrade
-- TotalSetuptimeInMinutes
-- Is setup silent
-- Is error reporting enabled
-- Is the Microsoft update true or false
-- Is the setup 64 bit
-- SetupDefaultInstallPath
-- Install result - success or failure
 - Selected features
-- Whether the management server installation is fresh or upgrade
-- Whether the database (DB) installation is fresh or upgrade
-- Whether the data warehouse (DW) installation is fresh or upgrade
-- Default DB Name
-- DB Size in MB
-- DB Port
-- Is DB Local
-- Default DW Name
-- DW Size in MB
-- DW Port
-- Is DW local
-- Is the SDK service using the local system account
-- Is the agent using the local system account
-- Web console default website
-- Web console authorization  mode
-- Web console SSL enabled
-- Count of maintenance schedules
-- Count of active alerts
-- User role
-- Console version
-- If users enabling daily health report
-- If users are enabling computer discovery
-- If users are discovering entire domain, or selected
-- If users are enabling Auto-Select for updates
-- Telemetry on/off notifications
-- Click count on Tune Management Pack View
-- Click count, total days, minimum alert count, and total result set
-- Click count, MP name, alert name, and alert count
-- Click count of *View or edit the settings of this monitor*
-- Click count of *View or override sources*
-- Click count, source MP name and override MP name
-- Nano servers count
-- Alert view click count
-- Health explorer click count on alert view action menu
-- Open command window click count on alert view action menu
-- Start maintenance mode click count on alert view action menu
-- End maintenance mode click count on alert view action menu
-- Edit maintenance mode click count on alert view action menu
-- Time spent on alert view
-- Total number of items displayed on alert view
-- Performance view click count
-- Time spent on performance view
-- State view click count
-- Time spent on state view
-- Total number of items displayed on state view
 
-**HTML5 dashboards data collected through App Insights**
+
+### HTML5 dashboards data collected through App Insights
 
 - All API exceptions
 - User feedback
@@ -185,7 +81,7 @@ Administrators can turn off this feature at any point of time. Learn more about 
 - Instances of *My Workspace*  launch
 - Usage of *Windows Authentication*
 - Usage of  *Alternate Credentials*
-- When *Add to MyWorkspace* action is performed
+- Instances of  *Add to MyWorkspace* action
 - Count of alerts per widget
 - Count of performance legends per widget
 - Count of rows per state widget
