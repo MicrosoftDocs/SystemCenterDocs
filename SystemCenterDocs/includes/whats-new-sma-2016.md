@@ -6,11 +6,11 @@ author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 01/22/2018
-title:  include file 
+title:  include file
 ms.technology:  service-management-automation
 ---
 
-# What's new in Service Management Automation 2016
+## What's new in Service Management Automation 2016
 
 System Center 2016 - Service Management Automation (SMA) added the features described in this article.
 
