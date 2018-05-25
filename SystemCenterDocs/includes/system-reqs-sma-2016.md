@@ -12,7 +12,7 @@ ms.technology:  service-management-automation
 
 ## System requirements for Service Management Automation 2016
 
-This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation in System Center 2016.
+The following sections describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation in System Center 2016.
 
 ## Hardware requirements
 The following recommended configurations should be used.

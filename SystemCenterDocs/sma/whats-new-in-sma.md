@@ -39,4 +39,4 @@ This article details the new features supported in System Center 2016 - Service 
 ::: moniker-end
 
 ## Next steps
-[Know the SMA system requirements](../sma/system-requirements-sma.md)
+[Know the system requirements for SMA](../sma/system-requirements-sma.md)

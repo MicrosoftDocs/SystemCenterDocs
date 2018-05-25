@@ -14,7 +14,7 @@ ms.assetid:  4a87ff3b-0d96-472c-8836-be98f1aec00f
 
 ## System requirements for Service Management Automation 1801
 
-This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation (SMA).
+The following sections describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation (SMA).
 
 ## Hardware requirements
 The following configurations should be used.

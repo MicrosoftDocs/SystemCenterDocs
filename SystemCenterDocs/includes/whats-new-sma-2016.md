@@ -1,5 +1,5 @@
 ---
-description: include file to describe what's new in Service Management Automation (SMA) 2016
+description: include file to describe the new features in Service Management Automation (SMA) 2016
 manager:  carmonm
 ms.topic: include
 author:  bwren
@@ -12,7 +12,7 @@ ms.technology:  service-management-automation
 
 ## What's new in Service Management Automation 2016
 
-System Center 2016 - Service Management Automation (SMA) added the features described in this article.
+System Center 2016 - Service Management Automation (SMA) added the following features.
 
 ## Support for PowerShell script
 
