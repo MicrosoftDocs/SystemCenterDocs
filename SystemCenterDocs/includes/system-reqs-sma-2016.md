@@ -1,17 +1,16 @@
 ---
-description: Describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
+description: include file to describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
 manager:  cfreemanwa
-ms.topic:  article
+ms.topic:  include
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 01/22/2018
-title:  System requirements for Service Management Automation 2016
+title:  include file
 ms.technology:  service-management-automation
-monikerRange: 'sc-sma-2016'
 ---
 
-# System requirements for Service Management Automation 2016
+## System requirements for Service Management Automation 2016
 
 This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation in System Center 2016.
 
@@ -75,7 +74,3 @@ The following certificates are required for each component.
 |Runbook worker|None|
 |Automation web service|A certificate that can be used for Secure Sockets Layer (SSL) encryption over HTTPS. The installation program for Service Management Automation can be used to generate a self-signed certificate.|
 |Windows PowerShell module|None|
-
-## Next steps
-
-[Deploy](deploy.md) Service Management Automation.

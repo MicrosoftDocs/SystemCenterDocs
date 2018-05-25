@@ -2932,6 +2932,27 @@
      "source_path" : "SystemCenterDocs/sma/Manage/Working-with-Integration-Modules.md",
      "redirect_url" : "/system-center/sma/manage-integration-modules"
 },
+
+
+{
+     "source_path" : "SystemCenterDocs/sma/system-requirements.md",
+     "redirect_url": "/system-center/sma/system-requirements-sma.md"
+},
+{
+     "source_path" : "SystemCenterDocs/sma/system-requirements-1801.md",
+     "redirect_url": "/system-center/sma/system-requirements-sma.md"
+},
+
+
+{
+     "source_path" : "SystemCenterDocs/sma/whats-new-in-service-management-automation.md",
+     "redirect_url": "/system-center/sma/whats-new-in-sma.md"
+},
+{
+     "source_path" : "SystemCenterDocs/sma/whats-new-1801.md",
+     "redirect_url": "/system-center/sma/whats-new-in-sma.md""
+},
+
   {
      "source_path" : "SystemCenterDocs/SPF/service-provider-foundation.md",
      "redirect_url": "/system-center/spf/overview"

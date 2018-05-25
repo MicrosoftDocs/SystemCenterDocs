@@ -1,24 +1,23 @@
 ---
-description: This article provides the information about the minimum hardware and software requirements for a full installation of Service Management Automation 1801.
+description: include file to provide the information about the minimum hardware and software requirements for a full installation of Service Management Automation 1801.
 manager:  vvithal
-ms.topic:  article
+ms.topic:  include
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 02/05/2018
-title:  System requirements for Service Management Automation 1801
+title:  include file
 ms.technology:  service-management-automation
 ms.assetid:  4a87ff3b-0d96-472c-8836-be98f1aec00f
-monikerRange: 'sc-sma-1801'
 ---
 
-# System requirements for Service Management Automation 1801
+## System requirements for Service Management Automation 1801
 
-This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
+This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation (SMA).
 
 ## Hardware requirements
-The following recommended configurations should be used.
+The following configurations should be used.
 
 |Performance component|Recommendation|
 |-------------------------|------------------|

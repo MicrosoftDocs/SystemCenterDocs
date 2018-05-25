@@ -1,19 +1,18 @@
 ---
-description: Describes what's new in Service Management Automation (SMA) 2016
+description: include file to describe what's new in Service Management Automation (SMA) 2016
 manager:  carmonm
-ms.topic:  article
+ms.topic: include
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
 ms.date: 01/22/2018
-title:  What's new in Service Management Automation 2016
+title:  include file 
 ms.technology:  service-management-automation
-monikerRange: 'sc-sma-2016'
 ---
 
 # What's new in Service Management Automation 2016
 
-System Center 2016 - Service Management Automation (SMA) added the features described in this article. 
+System Center 2016 - Service Management Automation (SMA) added the features described in this article.
 
 ## Support for PowerShell script
 
@@ -35,4 +34,3 @@ SMA 2016 supports Windows Management Framework 5.0.
 
 - You can now designate runbook worker for runbooks from ISE.
 - New columns added for designated runbook and runbook type.
-
