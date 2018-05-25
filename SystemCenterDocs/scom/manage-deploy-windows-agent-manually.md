@@ -5,7 +5,7 @@ description:  This article describes how to manually install the Operations Mana
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/01/2018
+ms.date: 05/21/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -20,11 +20,11 @@ Before you use either method to manually deploy the agent, ensure the following 
 
 -   The account that is used to run MOMAgent.msi must have administrative privileges on the computer on which you are installing agent.
 
--   Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](~/scom/manage-deploy-windows-agent-manually.md).
+-   Each agent that is installed with the Setup Wizard or from the command line must be approved by a management group. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md).
 
 -   If an agent is manually deployed to a domain controller and the Active Directory management pack is later deployed, errors might occur during deployment of the management pack.  The Active Directory helper object is used by the Active Directory management pack on Windows domain controllers.  The Active Directory Management Pack helper object is normally installed automatically when the agent is deployed using the Discovery Wizard.  To prevent errors from occurring or recover from errors already occurring, you need to manually install the Windows installer package OomADs.msi on the affected domain controller.  The file can be located on the domain controller in the *%ProgramFiles%\Microsoft Monitoring Agent\Agent\HelperObjects* folder.   
 
--   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](~/scom/manage-deploy-windows-agent-manually.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
+-   A management group (or single management server) must be configured to accept agents installed with MOMAgent.msi or they will be automatically rejected and therefore not display in the Operations console. For more information, see [Process Manual Agent Installations](manage-process-manual-agent-install.md). If the management group or server is configured to accept manually installed agents after the agents have been manually installed, the agents will display in the console after approximately one hour.
 
 
 > [!NOTE]
