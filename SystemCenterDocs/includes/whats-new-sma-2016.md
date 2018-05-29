@@ -10,9 +10,9 @@ title:  include file
 ms.technology:  service-management-automation
 ---
 
-## What's new in Service Management Automation 2016
+## What's new in SMA 2016
 
-System Center 2016 - Service Management Automation (SMA) added the following features.
+SMA 2016 added the following features.
 
 ## Support for PowerShell script
 
