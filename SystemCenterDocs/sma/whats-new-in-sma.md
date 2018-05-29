@@ -18,21 +18,13 @@ ms.technology:  service-management-automation
 
 This article details the new features supported in System Center 1801 - Service Management Automation (SMA).
 
-::: moniker-end
-
-::: moniker range="sc-sma-2016"
-
-This article details the new features supported in System Center 2016 - Service Management Automation (SMA).
-
-::: moniker-end
-
-::: moniker range="sc-sma-1801"
-
 [!INCLUDE [whats-new-sma-1801.md](../includes/whats-new-sma-1801.md)]
 
 ::: moniker-end
 
 ::: moniker range="sc-sma-2016"
+
+This article details the new features supported in System Center 2016 - Service Management Automation (SMA).
 
 [!INCLUDE [whats-new-sma-2016.md](../includes/whats-new-sma-2016.md)]
 
