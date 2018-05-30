@@ -14,7 +14,7 @@ ms.technology: virtual-machine-manager
 ## Upgrade to System Center 2016 - VMM
 
 
-These steps describe how to upgrade to System Center Virtual Machine Manager (VMM) 2016. They include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
+The following sections describe  how to upgrade to System Center Virtual Machine Manager (VMM) 2016. They include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
 ## Requirements and limitations
 
@@ -160,7 +160,7 @@ You need additional servers. However, there's almost no downtime in all the scen
 7. Remove 2012 R2 nodes from the cluster after failover.
 8. Update the cluster functional level by using the [Update-ClusterFunctionalLevelcommand(https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9. Optionally install the appropriate SQL Command line utilities.
-10. After the upgrade, [upgrade the host agent manually](#update-vmm-agents). 
+10. After the upgrade, [upgrade the host agent manually](#update-vmm-agents).
 
 
 ## Upgrade the VMM SQL Server database

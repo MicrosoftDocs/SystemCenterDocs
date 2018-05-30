@@ -211,9 +211,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     {
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
     }
-    After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the Add-SCBGPPeer cmdlet.
-    Example:
-    Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway
+    
     ```
 
 After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the **Add-SCBGPPeer** cmdlet.
