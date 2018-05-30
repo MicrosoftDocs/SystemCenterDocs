@@ -20,7 +20,11 @@ The integration pack for System Center - Data Protection Manager (DPM) is an add
 -   Automated system state protection
 -   Ad hoc backups
 
- [Learn more](https://go.microsoft.com/fwlink/?LinkID=275796) about integration packs.
+> [!NOTE]
+
+>  Currently, the integration pack does not support remote SQL servers for DPM.
+
+ [Learn more](list-of-orchestrator-integration-packs.md) about Orchestrator integration packs.
 
 ## System requirements
 

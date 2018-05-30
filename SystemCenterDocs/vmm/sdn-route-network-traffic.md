@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 
 
-This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual MAchine Manager (VMM) fabric.
+This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
 An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site VPN using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
@@ -211,9 +211,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     {
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
     }
-    After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the Add-SCBGPPeer cmdlet.
-    Example:
-    Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway
+    
     ```
 
 After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the **Add-SCBGPPeer** cmdlet.

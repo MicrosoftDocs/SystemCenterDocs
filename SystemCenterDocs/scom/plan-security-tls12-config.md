@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/06/2018
+ms.date: 04/21/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -100,7 +100,7 @@ foreach($Protocol in $ProtocolList)
 
 Exit 0
 ```
-## Configure Opeations Manager to use only TLS 1.2
+## Configure Operations Manager to use only TLS 1.2
 After completing the configuration of all prerequisites for Operations Manager, perform the following steps on all management servers, the server hosting the Web console role, and on any Windows or Linux server the agent is installed on.  
 
 >[!IMPORTANT]

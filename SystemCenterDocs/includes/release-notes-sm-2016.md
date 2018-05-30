@@ -216,4 +216,4 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 **Workaround:** None.
 
 ## SM authoring tool console crashes while creating workflows
-This issue is fixed. 
+This issue is fixed.

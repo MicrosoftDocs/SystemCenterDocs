@@ -8,6 +8,7 @@
 ## [What's new in Operations Manager - 1801](what-is-new-1801.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
+## [Turn on/off telemetry settings](manage-telemetry.md)
 # How To
 ## [Plan](plan-overview.md)
 ### [System requirements](plan-system-requirements.md)
@@ -18,7 +19,7 @@
 ### [Design integration with other enterprise management products](plan-thirdparty-integration.md)
 ### [Designing for high availability and disaster recovery](plan-hadr-design.md)
 ### [Agent deployment planning](plan-planning-agent-deployment.md)
-### Security 
+### Security
 #### [Configuring a firewall for Operations Manager](plan-security-config-firewall.md)
 #### [Configure TLS 1.2 encryption](plan-security-tls12-config.md)
 #### [Configure antivirus exclusions](plan-security-antivirus.md)
@@ -36,7 +37,7 @@
 #### [How to install the Operations Manager Web console](deploy-install-web-console.md)
 #### [How  to install an Audit Collection Services](ACS) Collector and database](deploy-install-acs.md)
 #### [How to install the Operations Manager Reporting server](deploy-install-reporting-server.md)
-#### [Connect to the Data Warehouse across a firewall](deploy-connect-reportingdw-firewall.md) 
+#### [Connect to the Data Warehouse across a firewall](deploy-connect-reportingdw-firewall.md)
 #### [How to install a gateway server](deploy-install-gateway-server.md)
 ### [Upgrading System Center Operations Manager](deploy-upgrade-overview.md)
 #### [Pre-Upgrade tasks when upgrading Operations Manager](deploy-upgrade-pretasks.md)
@@ -51,10 +52,10 @@
 #### [How to upgrade reporting](deploy-upgrade-reporting-server.md)
 #### [How to upgrade from the evaluation version of Operations Manager](deploy-upgrade-eval.md)
 #### [Post-upgrade tasks when upgrading Operations Manager](deploy-upgrade-post-tasks.md)
-## Manage 
+## Manage
 ### [Quick reference to Operations Manager tasks](manage-quick-reference.md)
 ### [Operations Manager monitoring scenarios](manage-monitoring-scenarios.md)
-### Managing discovery and agents 
+### Managing discovery and agents
 #### [Discover and install agent on Windows](manage-deploy-windows-agent-console.md)
 #### [Discover and install agent on UNIX and Linux](manage-deploy-crossplat-agent-console.md)
 #### [Install Windows agent manually with MOMAgent.msi](manage-deploy-windows-agent-manually.md)
@@ -199,7 +200,7 @@
 #### [How to set alert resolution states](manage-alert-set-resolution-states.md)
 #### [How to configure automatic alert resolution](manage-alert-configure-auto-resolution.md)
 #### [Data driven alert management](manage-alert-data-driven-management.md)
-#### [Enable recovery and diagnostic tasks](manage-enable-recovery-and-diagnostic-tasks.md) 
+#### [Enable recovery and diagnostic tasks](manage-enable-recovery-and-diagnostic-tasks.md)
 ### [Suspend monitoring temporarily by using maintenance mode](manage-maintenance-mode-overview.md)
 ### [Creating and managing groups](manage-create-manage-groups.md)
 ### [Running tasks in Operations Manager](manage-running-tasks.md)
@@ -226,4 +227,4 @@
 #### [Privacy Statement](./gsm/privacy-statement-for-gsm.md)
 #### [GSM Service Level Agreement](./gsm/global-service-monitor-service-level-agreement-sla.md)
 #### [Online Services Supplemental Terms and Conditions](./gsm/online-services-supplemental-terms-and-conditions.md)
-#### [Terms and Conditions for GSM as a Software Assurance Benefit](./gsm/terms-conditions-for-gsm-as-sa-benefit.md) 
+#### [Terms and Conditions for GSM as a Software Assurance Benefit](./gsm/terms-conditions-for-gsm-as-sa-benefit.md)

@@ -1,21 +1,18 @@
 ---
-description: This article provides the information about the minimum hardware and software requirements for a full installation of Service Management Automation 1801.
-manager:  vvithal
-ms.topic:  article
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+description: include file to describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation 2016.
+manager:  cfreemanwa
+ms.topic:  include
+author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 02/05/2018
-title:  System requirements for Service Management Automation 1801
+ms.date: 01/22/2018
+title:  include file
 ms.technology:  service-management-automation
-ms.assetid:  4a87ff3b-0d96-472c-8836-be98f1aec00f
-monikerRange: 'sc-sma-1801'
 ---
 
-# System requirements for Service Management Automation 1801
+## System requirements for Service Management Automation 2016
 
-This topic describes the minimum hardware and software configurations that are required for a full installation of Service Management Automation.
+The following sections describe the minimum hardware and software configurations that are required for a full installation of Service Management Automation in System Center 2016.
 
 ## Hardware requirements
 The following recommended configurations should be used.
@@ -31,12 +28,14 @@ The following software must be installed for each role.
 |Role|Prerequisites|
 |--------|-----------------|
 |Runbook worker|Windows Server 2012 R2 or above<br /><br />Windows PowerShell 4.0 or above|
-|Automation web service|Windows Server 2012 R2 or above<br /><br />SQL Server   2012 SP4 (minimum) <br /><br /> **Note**: Supports SQL 2012, 2014 and 2016 service packs that are in support by Microsoft. Here are the [supported service packs for 2012](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack), [2014](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) and [2016](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack). <br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
+|Automation web service|Windows Server 2012 R2 or above<br /><br /> SQL Server 2012 SP4 (minimum) <br /><br /> **Note**: Supports SQL 2012, 2014 and 2016 service packs that are in support by Microsoft. Here are the [supported service packs for 2012](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack), [2014](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) and [2016](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack). <br /><br />Internet Information Services (IIS) 7.5 or above (hosts the web service)<br /><br />IIS Basic Authentication<br /><br />IIS Windows Authentication<br /><br />IIS URL Authorization<br /><br />ASP.NET 4.5<br /><br />.NET Framework 3.5 (for the Setup program)<br /><br />.NET Framework 4.5<br /><br />WCF HTTP Activation|
 |Windows PowerShell module|Windows PowerShell 4.0 or above|
 
-Before installing the web service, ensure you have installed the .NET Framework 4.5 and HTTP Activation on Windows Server 2012 R2:
 
-#### To install .NET Framework 4.5 and HTTP Activation
+## Install .NET Framework 4.5 and HTTP Activation
+
+Before installing the web service, use the following procedure to install .NET Framework 4.5 and HTTP Activation:
+
 
 1.  On the Windows **Start** screen, click the **Server Manager** tile.
 
@@ -54,12 +53,12 @@ Before installing the web service, ensure you have installed the .NET Framework 
 
 8.  Click **Next**, and follow the prompts to finish the installation.
 
-## Running Service Management Automation on Windows Azure virtual machines
+## Run Service Management Automation on Azure VMs
 Service Management Automation runs on Windows Azure just as it does on physical computer systems.
 
 Service Management Automation was tested by Microsoft by installing and using it in a Windows Azure virtual machine. The testing concluded that Service Management Automation was fully functional and operated exactly the same as it does on physical hardware. Stability and performance benchmarks inside a Windows Azure virtual machine were at a level where no special considerations were needed.
 
-## Security Requirements
+## Security requirements
 The following ports must be opened for each role.
 
 |Role|Requirement|
