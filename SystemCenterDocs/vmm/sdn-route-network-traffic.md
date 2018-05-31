@@ -1,11 +1,11 @@
 ---
 ms.assetid: 4c8b52fd-c293-4334-8fd4-010e357097a6
 title: Route traffic across networks in SDN infrastructure
-description: This article describes about how to route network traffic between physical and virtual networks in an SDN infrastructure.
+description: This article describes about how to route the network traffic between physical and virtual networks in an SDN infrastructure.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/07/2017
+ms.date: 31/05/2018
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -77,17 +77,44 @@ On the remote peer device, use the  **VM network endpoint IP address** from the 
 
 ## Configure L3 forwarding  
 
-An L3 gateway acts as a bridge between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
+L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
+
+Using L3 forwarding, tenant network virtual machines can connect to a physical network through the Windows Server 2016 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
+
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 > [!NOTE]
 
->- Ensure you're logged on as an administrator on the VMM server.
->- In an L3 connection, you can’t use the same VLAN subnet for two different tenants.
->- When you use BGP with a tunnel connection, BGP peering must be established between the gateway (VSID interface IP address) and the peer device on the physical network. For script based configuration, you will need to know the VSID interface IP address to be able to setup BGP peering. This IP is available in the JSON.
->- For BGP peering to work, there should be a route on the physical network with the destination as the GW VSID Address and the next hop as the L3 interface IP Address.
+> Ensure the following before you configure L3.
 
-**Run the following script**:
+> - Ensure you're logged on as an administrator on the VMM server.
+> - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be setup. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
+
+**Use the following steps to  create the next-hop logical network in SCVMM:**
+
+  1.  On the VMM console, select **Logical Networks**, right-click and select **Create Logical Network**.
+  2. In the **Settings** page, choose **One connected network** and select the checkbox for **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**
+  3. Create an IP Pool for this new logical network.
+
+  IP address from this pool is required in the script for setting up L3 forwarding.
+
+The following table provides examples of dynamic and static L3 connections.
+
+  **Parameter** | **Details/example values**
+  --- | ---
+  **L3VPNConnectionName** | User-defined name for the L3 forwarding network connection. **Example**: Contoso_L3_GW
+  **VmNetworkName** | Name of the tenant virtual network that's reachable over L3 network connection. This network must exist when running the script. **Example**: ContosoVMNetwork
+  **NextHopVMNetworkName** |User-defined name for the next hop VM network which was created as a  prerequisite. This represents the physical network that wants to communicate with the tenant VM network. This network must exist when running this script. **Example**: Contoso_L3_Network
+  **LocalIPAddresses** |  IP addresses to be configured on the SDN gateway L3 network interface. This IP address must belong to the next hop logical network you created. You must also provide the subnet mask. **Example**: 10.127.134.55/25
+  **PeerIPAddresses** |  IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network you created in the prerequisites. This will serve as the next hop once traffic destined to the physical network from the tenant VM network reaches the SDN gateway.  **Example**: 10.127.134.65
+  **GatewaySubnet** |  Subnet to be used for routing between HNV gateway and tenant virtual network. You can use any subnet, ensure that it does not overlap with the next hop logical network.  **Example**:192.168.2.0/24
+  **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway. These routes are for the the physical network subnets which should be reachable from the tenant VM network over the L3 connection.
+  **EnableBGP** |  Option to enable BGP. **Default**: false.
+  **TenantASNRoutingSubnets** | ASN number of the tenant gateway, only if BGP is enabled.
+
+
+Run the following script to setup L3 forwarding. Refer to the table above to check what each script parameter identifies.
+
 
     ```powershell
     param (
@@ -211,27 +238,49 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     {
         Add-SCNetworkRoute -IPSubnet $route -RunAsynchronously -VPNConnection $vpnConnection -VMNetworkGateway $VmNetworkGateway
     }
-    
+
     ```
 
-After configuring the L3 VPN connection using the above script, if you enabled BGP, add the BGP peers using the **Add-SCBGPPeer** cmdlet.
+> [!NOTE]
 
-**Example**:
-Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway.
+> After configuring the L3 connection, you must  configure routes in your physical network for the tenant virtual network subnets, with the next hop as the IP address of the L3 interface on the SDN gateway (parameter LocalIpAddresses in the script). This is to ensure that the return traffic to the tenant virtual network is routed correctly through the SDN gateway.
 
-The table below provides examples of dynamic and static L3 connections.
+You can choose to configure static routes or dynamic routes (over BGP) with the L3 connection. If you are using static routes, you can add them using **Add-SCNetworkRoute** as described in the script below.
 
-**Parameter** | **Details/example values**
---- | ---
-**L3VPNConnectionName** | User-defined name for the L3 forwarding network connection. **Example**: Contoso_L3_GW
-**VmNetworkName** | Name of the tenant virtual network that's reachable over L3 network connection. **Example**: ContosoVMNetwork
-**NextHopVMNetworkName** | User-defined name for the L3 forwarding network connection. Name of VLAN tagged L3 VM network you created. **Example**: Contoso_L3_Network
-**LocalIPAddresses** |  IP addresses to be configured on the HNV gateway L3 network interface. IP address from the logical network you created. **Example**: 10.127.134.55/25
-**PeerIPAddresses** |  IP address of the physical network gateway, reachable over L3 logical network.  IP address from the logical network you created. **Example**: 10.127.134.65
-**GatewaySubnet** |  Subnet to be used for routing between HNV gateway and tenant virtual network. **Example**:192.168.2.0/24
-**RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway.
-**EnableBGP** |  Option to enable BGP. **Default**: false.
-**TenantASNRoutingSubnets** | ASN number of the tenant gateway, only if BGP is enabled.
+If you use BGP with L3 tunnel connection, BGP peering must be established between the SDN gateway internal interface IP address, which is present in a different compartment on the gateway VM, (not the default compartment) and the peer device on the physical network.
+
+For BGP to work, you must do the following:
+
+1.	Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
+
+  *Example*: Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway
+
+2. Determine the SDN gateway internal address as detailed in the [following section](#determine-the-sdn-gateway).
+
+3. Create BGP peer on the remote end (physical network gateway). While creating this, use the SDN gateway internal address (determined in Step 2 above) as the peer IP address.
+
+4. Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (*LocalIPAddresses* parameter in the script).
+
+### Determine the SDN gateway internal address
+
+Use the following procedure:
+
+Run the following PowerShell cmdlets on a network controller installed computer or a computer that was configured as a network controller client:
+
+  ```powershell
+  $gateway = Get-NetworkControllerVirtualGateway -ConnectionUri <REST uri of your deployment>
+  $gateway.Properties.NetworkConnections.Properties.IPAddresses
+  ```
+  The results of this command can display multiple virtual gateways, depending on how many tenants have configured gateway connections. Each virtual gateway can have multiple connections (IPSec, GRE, L3).
+
+  As you already know the L3 interface IP address (LocalIPAddresses) of the connection, you can identify the correct connection based on that IP address. After you have the correct network connection, run the following command (on the corresponding virtual gateway) to get the BGP router IP address of the virtual gateway
+
+  ```powershell
+  $gateway.Properties.BgpRouters.Properties.RouterIp
+  ```
+
+The result of this command provides the IP address that you must configure on the remote router as the peer IP Address.
+
 
 ## Set up the traffic selector from VMM PowerShell
  **Use the following procedure**:
