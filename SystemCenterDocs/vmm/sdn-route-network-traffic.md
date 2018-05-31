@@ -23,9 +23,9 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 
 Ensure the following:
 
-•	SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md).and [SDN RAS gateway](sdn-gateway.md) are deployed.
+- 	SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md).and [SDN RAS gateway](sdn-gateway.md) are deployed.
 
-•	An SDN VM network with network virtualization is created.
+-	An SDN VM network with network virtualization is created.
 
 ## Configure Site-to-Site VPN connections using VMM
 
