@@ -23,7 +23,7 @@ An SDN RAS gateway enables you to route network traffic between physical and vir
 
 Ensure the following:
 
-•	SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md) and [SDN RAS gateway](sdn-gateway.md) are deployed.
+•	SDN [Network Controller](sdn-controller.md), SDN [Software Load Balancer](sdn-slb.md).and [SDN RAS gateway](sdn-gateway.md) are deployed.
 
 •	An SDN VM network with network virtualization is created.
 
@@ -64,7 +64,7 @@ Since the GRE protocol is lightweight and support for GRE is available on most o
 6.	Type a connection name, and specify the IP address of the remote endpoint.
 7.	Type the **GRE key**.
 8.	Optionally, you can complete the other fields on this screen, these values aren't needed to set up a connection.
-9.	In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protoco** tab.
+9.	In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
 10.	You can use the defaults for the remaining settings.
 11.	To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
@@ -92,7 +92,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 **Use the following steps to  create the next-hop logical network in SCVMM:**
 
-  1.  On the VMM console, select **Logical Networks**, right-click and select **Create Logical Network**.
+  1.  On the VMM console, select **Logical Networks**, right-click, and select **Create Logical Network**.
   2. In the **Settings** page, choose **One connected network** and select the checkbox for **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**
   3. Create an IP Pool for this new logical network.
 
@@ -104,16 +104,16 @@ The following table provides examples of dynamic and static L3 connections.
   --- | ---
   **L3VPNConnectionName** | User-defined name for the L3 forwarding network connection. **Example**: Contoso_L3_GW
   **VmNetworkName** | Name of the tenant virtual network that's reachable over L3 network connection. This network must exist when running the script. **Example**: ContosoVMNetwork
-  **NextHopVMNetworkName** |User-defined name for the next hop VM network which was created as a  prerequisite. This represents the physical network that wants to communicate with the tenant VM network. This network must exist when running this script. **Example**: Contoso_L3_Network
+  **NextHopVMNetworkName** |User-defined name for the next hop VM network, which was created as a  prerequisite. This represents the physical network that wants to communicate with the tenant VM network. This network must exist when running this script. **Example**: Contoso_L3_Network
   **LocalIPAddresses** |  IP addresses to be configured on the SDN gateway L3 network interface. This IP address must belong to the next hop logical network you created. You must also provide the subnet mask. **Example**: 10.127.134.55/25
-  **PeerIPAddresses** |  IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network you created in the prerequisites. This will serve as the next hop once traffic destined to the physical network from the tenant VM network reaches the SDN gateway.  **Example**: 10.127.134.65
+  **PeerIPAddresses** |  IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network you created in the prerequisites. This IP will serve as the next hop once traffic destined to the physical network from the tenant VM network reaches the SDN gateway.  **Example**: 10.127.134.65
   **GatewaySubnet** |  Subnet to be used for routing between HNV gateway and tenant virtual network. You can use any subnet, ensure that it does not overlap with the next hop logical network.  **Example**:192.168.2.0/24
-  **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway. These routes are for the the physical network subnets which should be reachable from the tenant VM network over the L3 connection.
+  **RoutingSubnets** |  Static routes that need to be on the L3 interface of the HNV gateway. These routes are for  the physical network subnets, which should be reachable from the tenant VM network over the L3 connection.
   **EnableBGP** |  Option to enable BGP. **Default**: false.
   **TenantASNRoutingSubnets** | ASN number of the tenant gateway, only if BGP is enabled.
 
 
-Run the following script to setup L3 forwarding. Refer to the table above to check what each script parameter identifies.
+Run the following script to set up L3 forwarding. Refer to the table above to check what each script parameter identifies.
 
 
     ```powershell
@@ -257,7 +257,7 @@ For BGP to work, you must do the following:
 
 2. Determine the SDN gateway internal address as detailed in the [following section](#determine-the-sdn-gateway).
 
-3. Create BGP peer on the remote end (physical network gateway). While creating this, use the SDN gateway internal address (determined in Step 2 above) as the peer IP address.
+3. Create BGP peer on the remote end (physical network gateway). While creating the BGP peer, use the SDN gateway internal address (determined in Step 2 above) as the peer IP address.
 
 4. Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (*LocalIPAddresses* parameter in the script).
 
