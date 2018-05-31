@@ -17,7 +17,7 @@ ms.technology: virtual-machine-manager
 
 This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
-An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site VPN using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
+An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
 ## Before you start
 
@@ -39,13 +39,13 @@ For Cloud Service Providers (CSPs) that host many tenants in their datacenter, S
 2.	Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
 3.	Select the network controller service for the gateway device.
 4.	Select the **VPN Connections** > **Add** > **Add IPSec Tunnel**.
-5.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. This subnet need not be pre-configured in your datacenter.
+5.	Type a subnet as shown in the following diagram. This subnet is used to route packets out of the VM Network. You do not need to pre-configure this subnet in your datacenter.
 ![site to site VPN](./media/sdn-route-network-traffic/sdn-route-network-traffic1.png)
 6.	Type a  name for the connection, and the IP address of the remote endpoint. Optionally, configure the bandwidth.
 7.	In **Authentication**, select the type of authentication you want to use. If you choose to authenticate by using a Run as account, create a user account with a user name, and the IPSec key as the password for the account.
 8.	In **Routes**, type all the remote subnets that you want to connect to. If you have selected **Enable Border Gateway Protocol (BGP)** in the **Connectivity** page, routes are not required.
 9.	On the **Advanced** tab, accept the default settings.
-10.	If you have selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP and its ASN on the **Border Gateway Protocol** wizard page as shown below:
+10.	If you have selected **Enable Border Gateway Protocol (BGP)** in the Connectivity page, then you can fill out your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol** wizard page as shown below:
 ![site to site VPN](./media/sdn-route-network-traffic/sdn-route-network-traffic2.png)
 11.	To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on your VM network.
 
@@ -64,7 +64,7 @@ Since the GRE protocol is lightweight and support for GRE is available on most o
 6.	Type a connection name, and specify the IP address of the remote endpoint.
 7.	Type the **GRE key**.
 8.	Optionally, you can complete the other fields on this screen, these values aren't needed to set up a connection.
-9.	In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP and ASN fields on the **Border Gateway Protocol** tab.
+9.	In **Routes**, add all the remote subnets that you want to connect to. If you selected **Enable Border Gateway Protocol (BGP)** in **Connectivity**, you can leave this screen blank and instead complete your ASN, peer BGP IP, and ASN fields on the **Border Gateway Protocol** tab.
 10.	You can use the defaults for the remaining settings.
 11.	To validate the connection, try to ping the remote endpoint IP address from one of the virtual machines on the VM network.
 
@@ -88,7 +88,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 > Ensure the following before you configure L3.
 
 > - Ensure you're logged on as an administrator on the VMM server.
-> - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be setup. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
+> - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
 **Use the following steps to  create the next-hop logical network in SCVMM:**
 
@@ -247,9 +247,9 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 You can choose to configure static routes or dynamic routes (over BGP) with the L3 connection. If you are using static routes, you can add them using **Add-SCNetworkRoute** as described in the script below.
 
-If you use BGP with L3 tunnel connection, BGP peering must be established between the SDN gateway internal interface IP address, which is present in a different compartment on the gateway VM, (not the default compartment) and the peer device on the physical network.
+If you use BGP with L3 tunnel connection, BGP peering must be established between the SDN gateway internal interface IP address, which is present in a different compartment on the gateway VM (not the default compartment) and the peer device on the physical network.
 
-For BGP to work, you must do the following:
+For BGP to work, you must do the following steps:
 
 1.	Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
 
