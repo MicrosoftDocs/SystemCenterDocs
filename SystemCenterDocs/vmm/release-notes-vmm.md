@@ -11,7 +11,7 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-# Release notes for virtual machine manager (VMM)
+# Release notes for System Center Virtual Machine Manager
 
 ::: moniker range="sc-vmm-1801"
 

@@ -12,7 +12,7 @@ ms.technology:  virtual-machine-manager
 ---
 
 
-# What's New in virtual machine manager
+# What's new in System Center Virtual Machine Manager
 
 ::: moniker range="sc-vmm-1801"
 
