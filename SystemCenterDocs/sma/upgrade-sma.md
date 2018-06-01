@@ -31,7 +31,7 @@ This article provides the upgrade information for System Center 2016 - Service M
 
 ::: moniker-end
 
-::: moniker range="sc-sm-2016"
+::: moniker range="sc-sma-2016"
 
 [!INCLUDE [upgrade-to-sma-2016.md](../includes/upgrade-to-sma-2016.md)]
 
