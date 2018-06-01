@@ -1,0 +1,41 @@
+---
+ms.assetid: 3b14cd1e-ad34-43e0-8139-50cc9bd10789
+title: Upgrade information for System Center Service Management Automation
+description: This article details the upgrade information and procedures for Service Management Automation
+author:  JYOTHIRMAISURI
+ms.author: V-jysur
+manager:  vvithal
+ms.date:  05/31/2018
+ms.topic:  article
+ms.prod:  system-center-2016
+ms.technology:  service-managemet-automation
+---
+
+# Upgrade system center service manager
+
+::: moniker range="sc-sma-1801"
+
+This article provides the upgrade information for System Center 1801 - Service Management Automation (SMA)
+
+::: moniker-end
+
+::: moniker range="sc-sma-2016"
+
+This article provides the upgrade information for System Center 2016 - Service Management Automation (SMA)
+
+::: moniker-end
+
+::: moniker range="sc-sma-1801"
+
+[!INCLUDE [upgrade-to-sma-1801.md](../includes/upgrade-to-sma-1801.md)]
+
+::: moniker-end
+
+::: moniker range="sc-sm-2016"
+
+[!INCLUDE [upgrade-to-sma-2016.md](../includes/upgrade-to-sma-2016.md)]
+
+::: moniker-end
+
+## Next steps
+[Author Runbooks](authoring-automation-runbooks.md)
