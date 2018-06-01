@@ -11,7 +11,7 @@ ms.prod:  system-center-2016
 ms.technology:  service-managemet-automation
 ---
 
-# Upgrade system center service manager
+# Upgrade Service Management Automation
 
 ::: moniker range="sc-sma-1801"
 
