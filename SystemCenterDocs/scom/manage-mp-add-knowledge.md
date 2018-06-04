@@ -25,7 +25,7 @@ Operations Manager stores company knowledge in a management pack. Sealed managem
   
 To add or edit company knowledge, the computer must meet the following software requirements:  
   
--   The Operations console must be installed on a 32-bit computer. Adding and editing company knowledge must be done on this computer.  
+-   The Operations console.   
   
 -   Microsoft Word 2010 or higher    
 -   [Microsoft Visual Studio 2010 Tools for Office Runtime](https://docs.microsoft.com/visualstudio/vsto/visual-studio-tools-for-office-runtime-installation-scenarios).   
