@@ -156,7 +156,7 @@ This procedure requires no additional VMM servers, but has increased risk for do
 6.	Failover the active VMM node to the newly upgraded VMM server.
 7.	Repeat the procedure on other VMM nodes.
 8.  Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/en-us/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
@@ -177,7 +177,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 6.	Failover the active VMM node to one of the newly added servers.
 7. Remove 2012 R2/2016 nodes from the cluster after failover.
 8. Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/en-us/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9.	[Optional] Install the appropriate SQL Command line utilities.
 
 
