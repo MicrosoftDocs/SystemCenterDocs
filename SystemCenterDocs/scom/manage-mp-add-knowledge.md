@@ -5,46 +5,42 @@ description: This article describes how to add custom knowledge to a workflow in
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 06/04/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How to add knowledge to a management pack
 
-System Center 2016 - Operations Manager management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.  
+System Center Operations Manager management packs include knowledge for rules, monitors, and alerts that helps you identify problems, causes, and resolutions.  
   
-Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is embedded in a rule or monitor when it is authored. Company knowledge is added by management group administrators to expand the troubleshooting information and provide company\-specific information for operators. Administrators can use company knowledge to document any overrides implemented for a monitor or rule, along with the explanation for the customization and any other information that might be useful.  
+Knowledge is referred to as *product knowledge* or *company knowledge*. Product knowledge is embedded in a rule or monitor when it is authored. Company knowledge is added by management group administrators to expand the troubleshooting information and provide company-specific information for operators. Administrators can use company knowledge to document any overrides implemented for a monitor or rule, along with the explanation for the customization and any other information that might be useful.  
   
 Operations Manager stores company knowledge in a management pack. Sealed management packs cannot be modified, so Operations Manager saves customizations such as company knowledge in a custom management pack. By default, Operations Manager saves all customizations to the Default Management Pack. As a best practice, you should instead create a separate management pack for each sealed management pack you want to customize.  
   
 > [!TIP]  
-> To avoid losing your company knowledge, be sure to back up management packs as part of your general backup routine.  
+> To avoid losing your company knowledge, be sure to back up custom management packs as part of your general backup routine.  
   
 To add or edit company knowledge, the computer must meet the following software requirements:  
   
--   The Operations console must be installed on a 32\-bit computer. Adding and editing company knowledge must be done on this computer.  
+-   The Operations console must be installed on a 32-bit computer. Adding and editing company knowledge must be done on this computer.  
   
--   Microsoft Office Word 2007 or Office Word 2010 Professional edition \(Standard edition is not supported\)  
-  
-    > [!NOTE]  
-    > Only the 32\-bit version of Word 2010 is supported. The knowledge template will not work with the 64\-bit version of Word 2010.  
-  
--   [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime](https://go.microsoft.com/fwlink/?LinkId=74969). You must use this version of the Visual Studio 2005 Tools for Office.  
+-   Microsoft Word 2010 or higher    
+-   [Microsoft Visual Studio 2010 Tools for Office Runtime](https://docs.microsoft.com/visualstudio/vsto/visual-studio-tools-for-office-runtime-installation-scenarios).   
   
 To add or edit company knowledge, you must have the Author or Administrator user role.  
   
 ## To edit company knowledge  
   
-1.  Log on to the computer with an account that is a member of the Operations Manager Author or Administrator role.  
-  
+1.  Open the Operations console with an account that is a member of the Operations Manager Author or Administrator role.  
+
 2.  Click **Authoring**.  
   
 3.  Locate the monitor or rule to be documented.  
   
-4.  Click **Properties** under **Actions**, or right\-click the monitor name and select **Properties** from the shortcut menu.  
+4.  Click **Properties** under **Actions**, or right-click the monitor name and select **Properties** from the shortcut menu.  
   
 5.  Click the **Company Knowledge** tab.  
   
