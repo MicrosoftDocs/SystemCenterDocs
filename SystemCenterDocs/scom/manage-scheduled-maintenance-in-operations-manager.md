@@ -23,11 +23,11 @@ The following table displays the maintenance tasks and the time they are schedul
 |Task|Description|Schedule|  
 |--------|---------------|------------|  
 |Discovery Data Grooming|A rule that deletes aged discovery data from the Operations Manager database.|Every day at 2 AM|  
-|Optimize Indexes| Every day at 2:30 AM|A rule that executes a daily database maintenance  stored procedure name *p_OptimizeIndexes* against some of the tables.  **This rule cannot be changed or modified.**|   
+|Optimize Indexes|A rule that executes a daily database maintenance  stored procedure name *p_OptimizeIndexes* against some of the tables.  **This rule cannot be changed or modified.**|Every day at 2:30 AM|  
 |Partition and Grooming|A rule that runs workflows to partition and deletes aged data from the Operations Manager database.|Every day at 12 AM|  
 |Detect and Fix Object Space Inconsistencies|A rule that repairs data block corruption in database schema objects.|Every 30 minutes|  
 |Alert Auto Resolve Execute All|A rule that automatically resolves active alerts after a period of time.|Every day at 4 AM|  
-|Standard Data Warehouse Data Set maintenance rule|Every 60 seconds|A rule that calls a number of other stored procedures to aggregate, optimize, and groom data in the data warehouse database.| 
+|Standard Data Warehouse Data Set maintenance rule|A rule that calls a number of other stored procedures to aggregate, optimize, and groom data in the data warehouse database.|Every 60 seconds| 
   
 ### To check the schedules for the grooming jobs 
   
