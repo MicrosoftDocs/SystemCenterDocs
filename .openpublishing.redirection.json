@@ -992,29 +992,29 @@
 
 {
      "source_path" : "SystemCenterDocs/orchestrator/release-notes.md",
-     "redirect_url": "/system-center/orchestrator/release-notes-orch.md"
+     "redirect_url": "/system-center/orchestrator/release-notes-orch"
 },
 {
      "source_path" : "SystemCenterDocs/orchestrator/release-notes-1801.md",
-     "redirect_url": "/system-center/orchestrator/release-notes-orch.md"
+     "redirect_url": "/system-center/orchestrator/release-notes-orch"
 },
 
 {
      "source_path" : "SystemCenterDocs/orchestrator/system-requirements.md",
-     "redirect_url": "/system-center/orchestrator/system-requirements-orch.md"
+     "redirect_url": "/system-center/orchestrator/system-requirements-orch"
 },
 {
      "source_path" : "SystemCenterDocs/orchestrator/system-requirements-1801.md",
-     "redirect_url": "/system-center/orchestrator/system-requirements-orch.md"
+     "redirect_url": "/system-center/orchestrator/system-requirements-orch"
 },
 
 {
      "source_path" : "SystemCenterDocs/orchestrator/upgrade-to-orchestrator.md",
-     "redirect_url": "/system-center/orchestrator/upgrade-orchestrator.md"
+     "redirect_url": "/system-center/orchestrator/upgrade-orchestrator"
 },
 {
      "source_path" : "SystemCenterDocs/orchestrator/upgrade-to-orchestrator-1801.md",
-     "redirect_url": "/system-center/orchestrator/upgrade-orchestrator.md"
+     "redirect_url": "/system-center/orchestrator/upgrade-orchestrator"
 },
 
 {
@@ -1621,39 +1621,39 @@
 
 {
      "source_path" : "SystemCenterDocs/scsm/whats-new.md",
-     "redirect_url": "/system-center/scsm/whats-new-in-sm.md"
+     "redirect_url": "/system-center/scsm/whats-new-in-sm"
 },
 {
-     "source_path" : "SystemCenterDocs/scsm/whats-new-1801.md.md",
-     "redirect_url": "/system-center/scsm/whats-new-in-sm.md"
+     "source_path" : "SystemCenterDocs/scsm/whats-new-1801.md",
+     "redirect_url": "/system-center/scsm/whats-new-in-sm"
 },
 
 
 {
      "source_path" : "SystemCenterDocs/scsm/release-notes.md",
-     "redirect_url": "/system-center/scsm/release-notes-sm.md"
+     "redirect_url": "/system-center/scsm/release-notes-sm"
 },
 {
      "source_path" : "SystemCenterDocs/scsm/release-notes-1801.md",
-     "redirect_url": "/system-center/scsm/release-notes-sm.md"
+     "redirect_url": "/system-center/scsm/release-notes-sm"
 },
 
 {
      "source_path" : "SystemCenterDocs/scsm/sm-sys-reqs.md",
-     "redirect_url": "/system-center/scsm/system-requirements.md"
+     "redirect_url": "/system-center/scsm/system-requirements"
 },
 {
      "source_path" : "SystemCenterDocs/scsm/sm-sys-reqs-1801.md",
-     "redirect_url": "/system-center/scsm/system-requirements.md"
+     "redirect_url": "/system-center/scsm/system-requirements"
 },
 
 {
      "source_path" : "SystemCenterDocs/scsm/upgrade-to-sm-1801.md",
-     "redirect_url": "/system-center/scsm/upgrade-sm.md"
+     "redirect_url": "/system-center/scsm/upgrade-sm"
 },
 {
      "source_path" : "SystemCenterDocs/scsm/upgrade-to-sm-2016.md",
-     "redirect_url": "/system-center/scsm/upgrade-sm.md"
+     "redirect_url": "/system-center/scsm/upgrade-sm"
 },
 
 {
@@ -2932,6 +2932,32 @@
      "source_path" : "SystemCenterDocs/sma/Manage/Working-with-Integration-Modules.md",
      "redirect_url" : "/system-center/sma/manage-integration-modules"
 },
+{
+     "source_path" : "SystemCenterDocs/sma/system-requirements.md",
+     "redirect_url": "/system-center/sma/system-requirements-sma"
+},
+{
+     "source_path" : "SystemCenterDocs/sma/system-requirements-1801.md",
+     "redirect_url": "/system-center/sma/system-requirements-sma"
+},
+{
+     "source_path" : "SystemCenterDocs/sma/whats-new-in-service-management-automation.md",
+     "redirect_url": "/system-center/sma/whats-new-in-sma"
+},
+{
+     "source_path" : "SystemCenterDocs/sma/whats-new-1801.md",
+     "redirect_url": "/system-center/sma/whats-new-in-sma"
+},
+
+{
+     "source_path" : "SystemCenterDocs/sma/upgrade-to-sma-1801.md",
+     "redirect_url" : "/system-center/sma/upgrade-sma"
+},
+{
+  "source_path" : "SystemCenterDocs/sma/upgrade.md",
+  "redirect_url" : "/system-center/sma/upgrade-sma"
+},
+
   {
      "source_path" : "SystemCenterDocs/SPF/service-provider-foundation.md",
      "redirect_url": "/system-center/spf/overview"

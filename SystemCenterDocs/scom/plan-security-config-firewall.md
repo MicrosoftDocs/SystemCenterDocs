@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: carmomm
-ms.date: 02/14/2018
+ms.date: 05/21/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -36,7 +36,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Connected management server (Local)|5724 --->|connected management server (Connected)|No||
 |Windows agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
 |Windows agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
-|Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535||Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
+|Windows agent push installation, pending repair, pending update|5723/TCP, 135/TCP, 137/UDP, 138/UDP, 139/TCP, 445/TCP<br>  *RPC/DCOM High ports (2008 OS and later) Ports 49152-65535 TCP||Communication is initiated from MS/GW to an Active Directory domain controller and the target computer.|
 |UNIX/Linux agent discovery and monitoring of agent|TCP 1270 <---|management server or gateway server|No||
 |UNIX/Linux agent for installing, upgrading, and removing agent using SSH|TCP 22 <---|management server or gateway server|Yes||
 |OMED Service|TCP 8886 <---|management server or gateway server|Yes||
