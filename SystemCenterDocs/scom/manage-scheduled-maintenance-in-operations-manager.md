@@ -31,9 +31,9 @@ The following table displays the maintenance tasks and the time they are schedul
   
 ### To check the schedules for the grooming jobs 
   
-1.  1.  Log on to the computer with an account that is a member of the Operations Manager Administrator role.  
+1.  Log on to the computer with an account that is a member of the Operations Manager Administrator role.  
 
-2. Open the Operations console and in the console, click **Authoring** from the left-hand pane.  
+2.  Open the Operations console and in the console, click **Authoring** from the left-hand pane.  
   
 2.  Under **Authoring**, expand **Management Pack Objects**, and then click **Rules**.  
   
