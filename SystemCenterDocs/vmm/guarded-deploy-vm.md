@@ -48,7 +48,7 @@ Before you can convert an existing VM to a shielded VM or provision a new shield
 
 If you do not already have a shielding data file imported, complete the following steps:
 
-1. [Create a shielding data file](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't already have one. Make sure the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
+1. [Create a shielding data file](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data) if you don't already have one. Make sure the shielding data file authorizes the hosting fabric VMM manages to run your shielded VMs.
 2. In the VMM console, click **Library** > **Import Shielding Data** > **Browse** and select your shielding data file.
 3. Specify a friendly name for the shielding data file in **Name** and optionally add a description. It is recommended that you indicate whether the shielding data file is intended for use with existing or new VMs in its name to make it easier to find again.
 4. Click **Import** to save the shielding data in VMM.
