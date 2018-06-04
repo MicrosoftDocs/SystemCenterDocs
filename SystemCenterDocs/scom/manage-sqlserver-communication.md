@@ -4,8 +4,8 @@ title: How to Configure Operations Manager to Communicate with SQL Server
 description: This article describes how to reconfigure Operations Manager if you change the SQL Server configuration or SQL Server instance hosting its databases.  
 author: mgoedtel
 ms.author: magoedte
-manager: cfreeman
-ms.date: 05/31/2017
+manager: carmonm
+ms.date: 06/01/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to configure Operations Manager to communicate with SQL Server
 
-If after installing System Center 2016 - Operations Manager, you move the Operations Manager operational or data warehouse database to a different SQL Server instance, move the databases to a SQL Server Always On availability group, or reconfigure the SQL Server instance, you will need to follow the steps below to reconfigure the management group to reference the new TCP/IP Port, instance name, or computer name.  
+If after installing System Center Operations Manager, you move the Operations Manager operational or data warehouse database to a different SQL Server instance, move the databases to a SQL Server Always On availability group, or reconfigure the SQL Server instance, you need to follow the steps below to reconfigure the management group to reference the new TCP/IP Port, instance name, or computer name.  
 
 ## How to configure the Operations Manager operational database
 
@@ -26,7 +26,7 @@ If after installing System Center 2016 - Operations Manager, you move the Operat
  -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup` 
 	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
-2.	On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config`:
+2.	On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for current branch `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
 
  -	Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to `computer\<instance>` and change the value for *PortNumber* to the SQL Server port number.
 
@@ -48,31 +48,28 @@ If after installing System Center 2016 - Operations Manager, you move the Operat
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`  
     Change **DataWarehouseDBServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
-2. On the SQL Server instance hosting the Reporting data warehouse database, configure the following:  
-
-    a. Open SQL Server Management Studio.  
-    b. In the Object Explorer pane, expand **Databases**, expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse`, and then click **Edit Top 200 Rows**.  
-    c. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
-    d. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
-    e. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring`, and then click **Edit Top 200 Rows**.  
-    f. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
-    g. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
-    h. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.  
-    i. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
-    j. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
-    k. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse$`, and then click **Edit Top 200 Rows**.  
-    l. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
-    m. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
-    n. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse_Log$`, and then click **Edit Top 200 Rows**.  
-    o. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
-    p. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
-    q. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher`, and then click **Edit Top 200 Rows**.  
-    r. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
-    s. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
-    t. In the Object Explorer pane, expand **Databases**, expand the data warehouse database (for example, OperationsManagerDW), expand **Tables**, right-click `dbo.MemberDatabase`, and then click **Edit Top 200 Rows**.  
-    u. In the results pane, scroll to the right to the column titled `column.ServerName`.  
-    v. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.
-
+2. On the new SQL Server instance hosting the Reporting data warehouse database, open SQL Management Studio.  
+3. In the Object Explorer pane, expand **Databases**, expand the operational database (for example, OperationsManager), expand **Tables**, right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse`, and then click **Edit Top 200 Rows**.  
+4. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.
+5. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+6. Right-click `dbo.MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring`, and then click **Edit Top 200 Rows**.
+7. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.
+8. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+9. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.
+10. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`. 
+11. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+12. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse$`, and then click **Edit Top 200 Rows**.  
+13. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
+14. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+15. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse_Log$`, and then click **Edit Top 200 Rows**.  
+16. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.  
+17. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+18. Right-click `dbo.MT_Microsoft$SystemCenter$OpsMgrDWWatcher`, and then click **Edit Top 200 Rows**.  
+19. In the results pane, scroll to the right to the column titled  `MainDatabaseServerName_<GUID>`.  
+20. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+21. In the Object Explorer pane, expand **Databases**, expand the data warehouse database (for example, OperationsManagerDW), expand **Tables**, right-click `dbo.MemberDatabase`, and then click **Edit Top 200 Rows**.  
+22. In the results pane, scroll to the right to the column titled `column.ServerName`.  
+23. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.
 
 ### Update Reporting server
 
