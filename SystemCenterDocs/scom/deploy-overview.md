@@ -1,20 +1,20 @@
 ---
 ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
-title:  Deploying System Center 2016 Operations Manager
-description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager 2016.  
+title:  Deploying System Center Operations Manager
+description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager.  
 author: mgoedtel
 ms.author: carmonm
 manager: cfreemanwa
-ms.date: 01/25/2017
+ms.date: 06/05/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Deploying System Center 2016 - Operations Manager
+# Deploying System Center Operations Manager
 
-All System Center 2016 - Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
+All System Center Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
 
 This section of the Deployment Guide describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
 
@@ -22,19 +22,21 @@ This section of the Deployment Guide describes an individual management group de
 
 -   [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md)
 
-For information about connecting management groups, see [Connecting Management Groups in Operations Manager](https://go.microsoft.com/fwlink/p/?LinkID=207755).
+For information about connecting management groups, see [Connecting Management Groups in Operations Manager](manage-connecting-mgmtgroups.md).
 
 ## Before you begin
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center Technical Preview 1711](release-notes-tp1711.md)
+-   [Release Notes for System Center Operations Manager 1801](release-notes-1801.md)
 
--   [System Requirements for System Center 2016 - Operations Manager](/system-center/orchestrator/system-requirements)
+-   [Release Notes for System Center 2016 - Operations Manager](get-started-release-notes.md)
+
+-   [System Requirements for System Center Operations Manager](plan-system-requirements.md)
 
 ### Operations Manager Administrators role assignment
 
-The System Center 2016 - Operations Manager, setup procedure automatically assigns the Administrators group on the local computer to the Operations Manager Administrators role. You must be logged on with an account that has local Administrator rights to run Setup on the first management server that you install; this ensures that you can open the Operations console after Setup is completed. When you install additional management servers, you must use a Domain account of which you are a member.
+The System Center Operations Manager setup procedure automatically assigns the Administrators group on the local computer to the Operations Manager Administrators role. You must be logged on with an account that has local Administrator rights to run Setup on the first management server that you install; this ensures that you can open the Operations console after Setup is completed. When you install additional management servers, you must use a Domain account of which you are a member.
 
 ### Required accounts
 
@@ -51,7 +53,7 @@ If you install Reporting, you are prompted for one additional account, the **Dat
 
 ### SQL Server requirements
 
-System Center 2016 - Operations Manager requires access to an instance of a server running Microsoft SQL Server 2012, 2014, or SQL Server 2016. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning topic.   
+System Center 2016 Operations Manager requires access to an instance of a server running Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning topic.   
 
 During setup, you are prompted for the following:
 
