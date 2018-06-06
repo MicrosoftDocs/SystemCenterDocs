@@ -1,4 +1,4 @@
----
+﻿---
 ms.assetid: 05fe26c2-25a5-44a0-8a34-20a387d317a3
 title: include file
 description: include file to detail the release notes for System Center Virtual Machine Manager 1801
@@ -19,7 +19,7 @@ The following sections summarize the release notes for VMM 1801 and includes the
  **Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM Console.
 
  **Workaround**: We recommend using .NET 4.7.1 while installing the VMM Console. For detailed information on .NET 4.7.1 migration, see [the article on .NET migration
-  ](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/retargeting/4.7-4.7.1).
+  ](https://docs.microsoft.com/dotnet/framework/migration-guide/retargeting/4.7-4.7.1).
 
 ## Backend adapter connectivity for SLB MUX doesn't work as expected
 

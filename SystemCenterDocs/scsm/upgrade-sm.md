@@ -11,7 +11,7 @@ ms.prod:  system-center-2016
 ms.technology:  service-manager
 ---
 
-# Upgrade system center service manager
+# Upgrade System Center Service Manager
 
 ::: moniker range="sc-sm-1801"
 

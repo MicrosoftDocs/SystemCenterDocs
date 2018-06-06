@@ -54,7 +54,7 @@ After the VM template is created, make sure that it's available to the Tenant Ad
 
 Existing Windows VMs can also be converted to shielded VMs with the use of a shielding helper VHD. The helper VHD is a special disk prepared with tools to encrypt another VM's operating system drive. VMM must be configured with a helper VHD before you can shield existing VMs.
 
-1. [Prepare a helper VHD](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2016 or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
+1. [Prepare a helper VHD](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-vm-shielding-helper-vhd) on a computer running Windows Server 2016 or Windows 10 with the [Remote Server Administration Tools](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed.
 2. [Copy the helper VHD](library-files.md) to a library share, and refresh the library server.
 3. In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 4. In the Shielding Helper VHD section, click **Browse** and select the helper VHD from the list of files in the library shares.
