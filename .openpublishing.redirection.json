@@ -2949,6 +2949,15 @@
      "redirect_url": "/system-center/sma/whats-new-in-sma"
 },
 
+{
+     "source_path" : "SystemCenterDocs/sma/upgrade-to-sma-1801.md",
+     "redirect_url" : "/system-center/sma/upgrade-sma"
+},
+{
+  "source_path" : "SystemCenterDocs/sma/upgrade.md",
+  "redirect_url" : "/system-center/sma/upgrade-sma"
+},
+
   {
      "source_path" : "SystemCenterDocs/SPF/service-provider-foundation.md",
      "redirect_url": "/system-center/spf/overview"

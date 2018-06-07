@@ -30,7 +30,7 @@ Ensure the following:
 - **SSL certificate**: To import the SLB service template you'll need to prepare an SSL certificate. You made the certificate available during network controller deployment. To use the certificate you prepared in network controller deployment for SLB, right-click the certificate and export it without a password in .CER format. Place it in the library, in the NCCertificate.CR folder you created when you set up the network controller.
 - **Service template**: VMM uses a service template to automate SLB deployment. Service templates support multi-node deployment on generation 1 and generation 2 VMs.
 - **SLB VMs**: All the SLB virtual machines must be running Windows Server 2016 with the latest patches installed.
-- **HNV Network**: Ensure that you created the Provider HNV network as part of NC validation. [Learn more](https://technet.microsoft.com/en-us/system-center-docs/vmm/scenario/sdn-network-controller).
+- **HNV Network**: Ensure that you created the Provider HNV network as part of NC validation. [Learn more](https://technet.microsoft.com/system-center-docs/vmm/scenario/sdn-network-controller).
 
 ## Deployment steps
 

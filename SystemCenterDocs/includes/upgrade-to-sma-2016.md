@@ -1,24 +1,24 @@
 ---
-description: Describes how to upgrade Service Management Automation in System Center 2016.
+description: include file to describe the process to upgrade Service Management Automation in System Center 2016.
 manager:  cfreemanwa
-ms.topic:  article
+ms.topic:  include
 author:  bwren
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 01/22/2018
-title:  Upgrade to Service Management Automation in System Center 2016
+ms.date: 05/31/2018
+title:  include file
 ms.technology:  service-management-automation
-monikerRange: 'sc-sma-2016'
+ms.assetid: f13edf4f-5708-4a50-94ca-9afb5c266839
 ---
 
-# Upgrade to Service Management Automation in System Center 2016
+## Upgrade to System Center 2016 - Service Management Automation
 
 
-This article describes how to upgrade Service Management Automation (SMA) 2012 R2 to SMA 2016.
+The following sections provide details about how to upgrade SMA 2012 R2 to SMA 2016.
 
 ## Prerequisites
 
-- Review the [system requirements](/system-center/orchestrator/system-requirements) to determine support requirements for SMA 2016.
+- Review the [system requirements](../sma/system-requirements-sma.md) to determine support requirements for SMA 2016.
 - Perform a full backup of the SMA database as a precaution. This is a standard SQL Server database, and you can use standard tools and processes for [backing up SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=216936).
 
 ## Upgrade
