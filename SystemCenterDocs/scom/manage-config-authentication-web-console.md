@@ -36,7 +36,8 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 4. Save and close the file when finished.
 5. Click **Start**, click **Run**, type **regedit&**, and then click **OK**.
 
-5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\***, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
+5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\\&#42;**, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
+
 6. After completing the above steps, reset the Web site hosting the Operations Manager Web console.  
 
 
