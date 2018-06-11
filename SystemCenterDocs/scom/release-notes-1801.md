@@ -4,7 +4,7 @@ description: This article describes issues and workarounds for System Center Ope
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 06/11/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -34,3 +34,8 @@ The following release notes apply to System Center Operations Manager 1801.
 **Description:** While attempting to perform an upgrade of System Center 2016 - Operations Manager Reporting server to version 1801, the prerequisites checker will report the following error: **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.** and the upgrade cannot proceed.  This error occurs in a distributed management group scenario where the Reporting server is on a server  separate from one or more management servers in the management group.   
 
 **Workaround:** Install the System Center 2016 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 1801.  Once the upgrade is successfully completed, you can uninstall the upgraded Operations console from the Reporting server.  
+
+## Application Performance Monitoring (APM) agent-component issues
+**Description:** The Application Performance Monitoring (APM) feature in System Center Operations Manager version 1801 agent can cause a crash with IIS Application pools and may crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0 and prevent it from starting.  This behavior can occur on an IIS web server even if the APM feature has not been enabled and configured after the agent is installed.     
+
+**Workaround:** If the APM feature is not required on the server, re-install the agent and include the **NOAPM=1** parameter on the setup command line to prevent the APM feature from being included.  Alternatively, you can reconfigure the agent already installed using [Windows Installer repair option](https://msdn.microsoft.com/library/windows/desktop/aa367988%28v=vs.85%29.aspx) and remove the APM component - **msiexec.exe /fvomus "<path to x64 installer package>\MOMagent.msi" NOAPM=1**.  For IIS web servers where the agent is already installed but the APM feature has not been enabled and configured, grant the application pool account **Read** access permission to: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center Operations Manager\12\APMAgent**.  This permissions issue prevents the APM feature from being able to read that key and may cause the application pool process to crash.
