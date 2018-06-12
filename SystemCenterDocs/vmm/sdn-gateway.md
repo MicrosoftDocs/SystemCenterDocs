@@ -160,7 +160,7 @@ Now that the gateway service is deployed, you can configure the properties, and 
 
     IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
 
-    > ![NOTE]
+    > [!NOTE]
 
     > The bandwidth limit is the total value of  inbound bandwidth and outbound bandwidth.
 
