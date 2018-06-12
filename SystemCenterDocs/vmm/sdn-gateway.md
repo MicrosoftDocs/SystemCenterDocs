@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: system-center-2016
 ms.technology: virtual-machine-manager
@@ -159,6 +159,10 @@ Now that the gateway service is deployed, you can configure the properties, and 
     The gateway capacity (Mbps) denotes the normal TCP bandwidth that is expected out of the gateway VM. You must set this parameter based on the underlying network speed you use.
 
     IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
+
+    > [!NOTE]
+
+    > The bandwidth limit is the total value of  inbound bandwidth and outbound bandwidth.
 
     The equivalent ratios For GRE, and L3 tunnels are 1/5 and 1/2 respectively.
 
