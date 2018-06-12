@@ -182,7 +182,7 @@ For additional information, see the following contents:
 - [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure-gre-tunneling)
 - [Create and validate L3 connections](sdn-route-network-traffic.md#configure-l3-forwarding)
 
-For more information on connection types, see [this](https://technet.microsoft.com/en-us/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
+For more information on connection types, see [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
 
 
 ## Set up the traffic selector from PowerShell

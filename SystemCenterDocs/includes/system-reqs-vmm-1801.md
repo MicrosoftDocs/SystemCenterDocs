@@ -19,7 +19,7 @@ The following sections describe the scalability information, hardware, software,
 
 The following table provides the scale limits that were tested for System Center 1801 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
 
-The [planning guide](https://technet.microsoft.com/en-us/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
+The [planning guide](https://technet.microsoft.com/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
 
 **Entity** | **Recommended maximum count**
 --- | ---
@@ -120,5 +120,5 @@ Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
 
 **Guest operating system** | **Supported**
 --- | ---
-Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/en-us/library/mt126277.aspx).
+Hyper-V VMs | Any guest running on supported Hyper-V hosts.<br/><br/> Learn more about support for [2016](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows) and [earlier versions](https://technet.microsoft.com/library/mt126277.aspx).
 VMWare VM | Any VM running on supported VMware servers. [Learn more](http://www.vmware.com/resources/compatibility/search.php?deviceCategory=software)

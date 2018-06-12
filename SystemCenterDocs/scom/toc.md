@@ -211,6 +211,7 @@
 #### [Monitoring the health of the Management Group](manage-monitor-health-mg.md)
 #### [How and when to clear the cache](manage-clear-healthservice-cache.md)
 #### [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md)
+#### [Scheduled maintenance in Operations Manager](manage-scheduled-maintenance-in-operations-manager.md) 
 #### [How to move the Reporting server role](manage-move-reporting-services-role.md)
 #### [How to move the Operational database](manage-move-opsdb.md)
 #### [How to move the Reporting data warehouse database](manage-move-omdwdb.md)
