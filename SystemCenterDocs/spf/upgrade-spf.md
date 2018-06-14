@@ -38,4 +38,4 @@ This article provides the upgrade information for System Center 2016 - Service P
 ::: moniker-end
 
 ## Next steps
-[Manage SPF](manage/manage-spf.md)
+[Manage SPF](manage/manage-tenants.md)

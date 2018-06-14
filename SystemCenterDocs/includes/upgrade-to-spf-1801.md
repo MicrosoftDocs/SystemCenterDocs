@@ -13,7 +13,7 @@ ms.assetid: 3cd2845a-bcc9-4aab-b26b-a17a3a1ae98b
 
 ## Upgrade to System Center 1801 -  Service Provider Foundation
 
-The following sections describe the procedures to upgrade from System Center 2012 R2 SPF or System Center 2016 SPF to SPF 1801.
+The following sections describe the procedures required to upgrade from System Center 2012 R2 SPF or System Center 2016 SPF to SPF 1801.
 
 ## Prerequisites
 
