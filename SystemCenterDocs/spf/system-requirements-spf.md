@@ -21,7 +21,7 @@ This article details the system requirements for System Center 1801 - Service Pr
 
 ::: moniker range="sc-spf-2016"
 
-This article details the system requirements for System Center 2016 - Service Provider Foundation (SPF)
+This article details the system requirements for System Center 2016 - Service Provider Foundation (SPF).
 
 ::: moniker-end
 

@@ -15,13 +15,13 @@ ms.technology:  service-management-automation
 
 ::: moniker range="sc-sma-1801"
 
-This article provides the upgrade information for System Center 1801 - Service Management Automation (SMA)
+This article provides the upgrade information for System Center 1801 - Service Management Automation (SMA).
 
 ::: moniker-end
 
 ::: moniker range="sc-sma-2016"
 
-This article provides the upgrade information for System Center 2016 - Service Management Automation (SMA)
+This article provides the upgrade information for System Center 2016 - Service Management Automation (SMA).
 
 ::: moniker-end
 
