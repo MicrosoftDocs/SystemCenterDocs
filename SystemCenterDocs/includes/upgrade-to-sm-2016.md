@@ -12,7 +12,7 @@ ms.topic: include
 
 ## Upgrade to System Center 2016 - Service Manager
 
-The following sections provide the information about how to upgrade from System Center 2012 R2 - Service Manager to S System Center 2016 - Service Manager (SM).
+The following sections provide the information about how to upgrade from System Center 2012 R2 - Service Manager to  System Center 2016 - Service Manager (SM).
 
 > [!WARNING]  
 >  If you are planning to upgrade two or more System Center components, it is imperative that you first consult the guide [Upgrade to System Center 2016](/system-center/upgrade-to-system-center-2016). The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:  
