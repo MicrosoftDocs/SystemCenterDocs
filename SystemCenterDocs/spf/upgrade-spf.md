@@ -17,21 +17,13 @@ ms.technology:  service-provider-foundation
 
 This article provides the upgrade information for System Center 1801 - Service Provider Foundation (SPF)
 
-::: moniker-end
-
-::: moniker range="sc-spf-2016"
-
-This article provides the upgrade information for System Center 2016 - Service Provider Foundation (SPF)
-
-::: moniker-end
-
-::: moniker range="sc-spf-1801"
-
 [!INCLUDE [upgrade-to-spf-1801.md](../includes/upgrade-to-spf-1801.md)]
 
 ::: moniker-end
 
 ::: moniker range="sc-spf-2016"
+
+This article provides the upgrade information for System Center 2016 - Service Provider Foundation (SPF)
 
 [!INCLUDE [upgrade-to-spf-2016.md](../includes/upgrade-to-spf-2016.md)]
 
