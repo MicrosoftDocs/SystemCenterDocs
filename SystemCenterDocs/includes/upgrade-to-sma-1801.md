@@ -12,7 +12,7 @@ ms.technology:  service-management-automation
 ms.assetid:  23356ae4-74ba-46f0-8484-22f896a5e0f5
 ---
 
-## Upgrade System Center 1801 - Service Management Automation
+## Upgrade to System Center 1801 - Service Management Automation
 
 
 The following sections provide information about how to upgrade your existing Service Management Automation (SMA) 2012 R2 UR8/2016 UR1 Service Management Automation installation to 1801.

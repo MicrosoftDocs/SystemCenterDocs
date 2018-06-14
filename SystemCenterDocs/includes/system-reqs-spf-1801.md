@@ -1,20 +1,19 @@
 ---
-ms.assetid: c875ed10-4374-46fb-978e-06318512350d
-title: System requirements for System Center 2016 - Service Provider Foundation (SPF)
-description: This article provides information about system requirements for SPF 2016
-author:  rayne-wiselman
-ms.author: raynew
-manager:  carmonm
-ms.date:  01/22/2018
-ms.topic:  article
+ms.assetid: d4d662cd-de11-4f4b-bff1-cbe0ea927f6f
+title: include file
+description: include file to provide information about hardware and software system requirements for System Center  2016 - Service Provider Foundation
+author:  JYOTHIRMAISURI
+ms.author: v-jysur
+manager:  vvithal
+ms.date:  06/14/2018
+ms.topic:  include
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
-monikerRange: 'sc-spf-2016'
 ---
 
-# SPF 2016 system requirements
+## System requirements for System Center 1801 - Service Provider Foundation
 
-This article describes the hardware and software requirements for System Center 2016 - Service Provider Foundation (SPF).
+The following sections describe the hardware and software requirements for System Center 1801 - Service Provider Foundation (SPF).
 
 
 ## Hardware
@@ -50,7 +49,6 @@ This article describes the hardware and software requirements for System Center 
 **SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** | Y
 **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
 
-
 ## Installation components
 
 These components should be installed on the server, before you install VMM.
@@ -59,11 +57,3 @@ These components should be installed on the server, before you install VMM.
 --- | ---
 **PowerShell** | PowerShell 4.0, 5.0
 **.NET** | 4.5.2, 4.6
-
-
-
-
-
-## Next steps
-
-[What is SPF?](~/spf/overview.md)

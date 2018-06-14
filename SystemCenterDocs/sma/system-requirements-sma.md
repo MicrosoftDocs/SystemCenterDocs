@@ -21,7 +21,7 @@ This article details the system requirements for System Center 1801 - Service Ma
 
 ::: moniker range="sc-sma-2016"
 
-This article details the system requirements for System Center 2016 - Service Management Automation (SMA)
+This article details the system requirements for System Center 2016 - Service Management Automation (SMA).
 
 ::: moniker-end
 
