@@ -1,19 +1,19 @@
 ---
-title: Upgrade to SPF 1801
-description: This article provides information about  how to upgrade to System Center Service Provider Foundation (SPF) 1801 from a previous version.
+title: include file
+description: include file to provide information about how to upgrade to System Center Service Provider Foundation (SPF) 1801 from a previous version.
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  02/05/2018
-ms.topic:  article
+ms.date:  06/14/2018
+ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
-monikerRange: 'sc-spf-1801'
+ms.assetid: 3cd2845a-bcc9-4aab-b26b-a17a3a1ae98b
 ---
 
-# Upgrade to System Center 1801 -  Service Provider Foundation
+## Upgrade to System Center 1801 -  Service Provider Foundation
 
-This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF) or System Center 2016 SPF,  to SPF 1801.
+The following sections describe the procedures required to upgrade from System Center 2012 R2 SPF or System Center 2016 SPF to SPF 1801.
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ Here's the recommended upgrade order for the above scenario:
     - Install IIS with the following features: PowerShell: Install-WindowsFeature Web-Server, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Dir-Browsing, Web-Http-Errors, Web-Static-Content, Web-Health, Web-Http-Logging, Web-Request-Monitor, Web-Http-Tracing, Web-Performance, Web-Stat-Compression, Web-Security, Web-Filtering, Web-Basic-Auth, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Mgmt-Tools, Web-Mgmt-Console, Web-Scripting-Tools, NET-Framework-45-ASPNET, NET-WCF-HTTP-Activation45, ManagementOdata, WAS, WAS-Process-Model, WAS-Config-APIs.
     - Install [WCF Data Services 5.0 for OData V3](https://www.microsoft.com/download/details.aspx?id=29306).
     - Install [ASP.NET MVC 4](https://www.microsoft.com/download/details.aspx?id=30683).
-3. Install the latest Windows updates on the VM. 
+3. Install the latest Windows updates on the VM.
 4. Restart the VM to make sure there are no pending reboots.
 5. Don't join the VM to a domain.
 
@@ -94,12 +94,6 @@ Here's the recommended upgrade order for the above scenario:
 
 Test everything's working as follows:
 
-1. Start  VMM 1801.
+1. Start VMM 1801.
 2. In the Windows Azure Pack  Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Make sure everything's working as expected.
 3. In the Windows Azure Pack Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Make sure everything's working as expected.
-
-
-
-## Next steps
-
-[Manage SPF](manage/manage-spf.md)

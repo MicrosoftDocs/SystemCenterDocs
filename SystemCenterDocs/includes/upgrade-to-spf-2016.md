@@ -1,27 +1,27 @@
 ---
-title: Upgrade to System Center Service Provider Foundation (SPF) 2016
-description: This article describes how to upgrade to System Center Service Provider Foundation (SPF) 2016
+title: include file
+description: This include file provides information about how to upgrade to System Center Service Provider Foundation (SPF) 2016
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  05/06/2018
-ms.topic:  article
+ms.date:  06/14/2018
+ms.topic:  include
 ms.prod:  system-center-threshold
 ms.technology:  service-provider-foundation
-monikerRange: 'sc-spf-2016'
+ms.assetid: ad904874-7065-409f-923a-8571c99d36fe
 ---
 
-# Upgrade to SPF 2016
+## Upgrade to System Center 2016 -  Service Provider Foundation
 
 
-This article describes how to upgrade from System Center 2012 R2 - Service Provider Foundation (SPF)  to SPF 2016.
+The following sections provide information about how to upgrade from System Center 2012 R2 SPF to SPF 2016.
 
 ## Prerequisites
 
 - SPF 2016 requires Windows Server 2016.
 - SPF should be running update rollup [9](https://support.microsoft.com/kb/3133705) or later, in order to upgrade to 2016.
-- The VMM server should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later, in order to upgrade to 2016. 
-- The VMM console machine should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later, in order to upgrade to 2016. 
+- The VMM server should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later, in order to upgrade to 2016.
+- The VMM console machine should be running update rollup [9](https://support.microsoft.com/kb/3129784) or later, in order to upgrade to 2016.
 - Windows Azure Pack should be running on Windows Server 2012 R2 with at least update rollup [10](https://support.microsoft.com/kb/3158609).
 
 ## Assumptions
@@ -37,7 +37,7 @@ The upgrade instructions in this article assume the following scenario:
 
 Here's the recommended upgrade order for the above scenario
 
-1. Update the VMM console to 2016. We're presuming you've already updated the VMM server to 2016. Read [this article](https://docs.microsoft.com/system-center/vmm/upgrade-vmm?view=sc-vmm-2016) if you haven't. 
+1. Update the VMM console to 2016. We're presuming you've already updated the VMM server to 2016. Read [this article](https://docs.microsoft.com/system-center/vmm/upgrade-vmm?view=sc-vmm-2016) if you haven't.
 2. Update SPF to 2016.
 
 ## Before you start
@@ -61,7 +61,7 @@ Here's the recommended upgrade order for the above scenario
     - Install IIS with the following features: PowerShell: Install-WindowsFeature Web-Server, Web-WebServer, Web-Common-Http, Web-Default-Doc, Web-Dir-Browsing, Web-Http-Errors, Web-Static-Content, Web-Health, Web-Http-Logging, Web-Request-Monitor, Web-Http-Tracing, Web-Performance, Web-Stat-Compression, Web-Security, Web-Filtering, Web-Basic-Auth, Web-Windows-Auth, Web-App-Dev, Web-Net-Ext45, Web-Asp-Net45, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Mgmt-Tools, Web-Mgmt-Console, Web-Scripting-Tools, NET-Framework-45-ASPNET, NET-WCF-HTTP-Activation45, ManagementOdata, WAS, WAS-Process-Model, WAS-Config-APIs.
     - Install [WCF Data Services 5.0 for OData V3](https://www.microsoft.com/download/details.aspx?id=29306).
     - Install [ASP.NET MVC 4](https://www.microsoft.com/download/details.aspx?id=30683).
-3. Install the latest Windows updates on the VM. 
+3. Install the latest Windows updates on the VM.
 4. Restart the VM to make sure there are no pending reboots.
 5. Don't join the VM to a domain.
 
@@ -93,10 +93,3 @@ Test everything's working as follows:
 1. Start  VMM 2016.
 2. In the Windows Azure Pack 2012 R2 Admin portal, check in this order: 1) VMs; 2) Gallery items; 3) Templates; 4) SPF configuration settings. Make sure everything's working as expected.
 3. In the Windows Azure Pack 2012 R2 Tenant portal, check in this order: 1) Deployment settings; 2) VMs; 3) Plans; 4) Deployment options. Make sure everything's working as expected.
-
-
-
-
-## Next steps
-
-[Manage SPF](/manage--register-spf.md)
