@@ -2978,6 +2978,16 @@
      "source_path" : "SystemCenterDocs/spf/plan/spf-system-reqs.md",
      "redirect_url" : "/system-center/spf/system-reqs"
 },
+
+{
+     "source_path" : "SystemCenterDocs/spf/system-reqs.md",
+     "redirect_url": "/system-center/spf/system-requirements-spf"
+},
+{
+     "source_path" : "SystemCenterDocs/spf/system-reqs-1801.md",
+     "redirect_url": "/system-center/spf/system-requirements-spf"
+},
+
   {
      "source_path" : "SystemCenterDocs/system-requirements/System-Requirements.md",
      "redirect_url": "/system-center/system-center"

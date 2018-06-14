@@ -8,7 +8,7 @@ manager:  vvithal
 ms.date:  05/31/2018
 ms.topic:  article
 ms.prod:  system-center-2016
-ms.technology:  service-managemet-automation
+ms.technology:  service-management-automation
 ---
 
 # Upgrade Service Management Automation

@@ -6,8 +6,7 @@
 # How To
 ## Plan
 ### [Plan SPF deployment](plan-spf.md)
-#### [System requirements - Service Provider Foundation 2016](system-reqs.md)
-#### [System requirements - Service Provider Foundation 1801](system-reqs-1801.md)
+#### [System requirements - Service Provider Foundation ](system-requirements-spf.md)
 ## Deploy
 ### [Upgrade to Service Provider Foundation 2016](upgrade.md)
 ### [Upgrade to Service Provider Foundation 1801](upgrade-1801.md)
