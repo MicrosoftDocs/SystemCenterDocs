@@ -8,6 +8,7 @@ keywords:
 ms.date: 01/22/2018
 title:  include file
 ms.technology:  service-management-automation
+ms.assetid: 57ba1e98-2460-4a21-b083-9f77f16e4890
 ---
 
 ## System requirements for Service Management Automation 2016
