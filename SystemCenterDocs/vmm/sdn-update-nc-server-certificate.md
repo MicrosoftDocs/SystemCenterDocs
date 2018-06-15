@@ -5,7 +5,7 @@ description: This article describes the procedure on how to update the network c
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  04/23/2018
+ms.date:  06/15/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
