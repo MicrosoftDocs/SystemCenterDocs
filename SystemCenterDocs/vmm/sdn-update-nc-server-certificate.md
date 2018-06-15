@@ -30,7 +30,7 @@ ms.technology:  virtual-machine-manager
 
 ## Update the server certificate
 
-1. If the certificate is self-singed, do the following:
+1. If the certificate is self-signed, do the following:
 
   - Certificate with private key - Export the certificate and import it on  all the NC nodes' **My** store.
   - Certificate without a private key - Export the certificate and import it on all the NC nodes' **Root** store.
@@ -67,7 +67,7 @@ ms.technology:  virtual-machine-manager
 
   ```
 
-6.	In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumpprint.
+6.	In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumbprint. Note the credential resource ID.
 
   ```powershell
 
