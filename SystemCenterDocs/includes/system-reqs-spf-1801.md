@@ -53,7 +53,7 @@ The following sections describe the hardware and software requirements for Syste
 
 These components should be installed on the server, before you install VMM.
 
-**installation** | **Supported**
+**Installation** | **Supported**
 --- | ---
 **PowerShell** | PowerShell 4.0, 5.0
 **.NET** | 4.5.2, 4.6
