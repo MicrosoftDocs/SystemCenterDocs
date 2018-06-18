@@ -6,7 +6,7 @@ author:  markgalioto
 ms.prod:  system-center
 ms.author: markgal
 keywords:  
-ms.date:  4/6/2018
+ms.date:  6/18/2018
 title:  Support for System Center SAC releases
 ms.technology: system-center
 ms.assetid:
@@ -14,7 +14,17 @@ ms.assetid:
 
 # Support for System Center Semi-Annual Channel releases
 
-Microsoft plans to release updates for System Center Semi-Annual Channel (SAC) a couple times per year. Each Semi-Annual Channel version is in support for 18 months from its general availability (GA) release date. Technical support is provided for the entire period of support. However, Microsoft's support structure is dynamic, evolving into two distinct servicing phases that depend on the availability of the latest Semi-annual channel version.
+The information in this article applies to the following System Center technologies:
+
+- Data Protection Manager
+- Operations Manager
+- Orchestrator
+- Service Manager
+- Virtual Machine Manager
+
+For information on System Center Configuration Manager, see its [support article](https://docs.microsoft.com/sccm/core/servers/manage/current-branch-versions-supported).
+
+Microsoft releases updates for System Center Semi-Annual Channel (SAC) a couple times per year. Each Semi-Annual Channel version is in support for 18 months from its general availability (GA) release date. Technical support is provided for the entire period of support. Microsoft's support structure has two phases:
 
 - **Security and Critical Updates servicing phase** - When running the latest Semi-Annual Channel version of System Center, you receive both Security and Critical updates.
 - **Security Updates (Only) servicing phase** - After the release of a new Semi-Annual Channel version, older branch support reduces to Security updates only, for the remainder of that version's support lifecycle.  
@@ -28,7 +38,7 @@ The following table illustrates the release cycle overlap for the Semi-Annual Ch
 
 |Version|Availability Date| Support End Date |
 |-------|--------------- -|------------------|
-| 1801 | February 8th, 2018 | August 8th, 2019 <br/> 18 months after release date |
+| 1801 | February 8, 2018 | August 8, 2019 <br/> 18 months after release date |
 | 18xx | Month, Day, 2018 | Month, Day, 2020 <br/> 18 months after release date |
 
 
