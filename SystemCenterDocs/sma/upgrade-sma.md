@@ -8,20 +8,20 @@ manager:  vvithal
 ms.date:  05/31/2018
 ms.topic:  article
 ms.prod:  system-center-2016
-ms.technology:  service-managemet-automation
+ms.technology:  service-management-automation
 ---
 
 # Upgrade Service Management Automation
 
 ::: moniker range="sc-sma-1801"
 
-This article provides the upgrade information for System Center 1801 - Service Management Automation (SMA)
+This article provides the upgrade information for System Center 1801 - Service Management Automation (SMA).
 
 ::: moniker-end
 
 ::: moniker range="sc-sma-2016"
 
-This article provides the upgrade information for System Center 2016 - Service Management Automation (SMA)
+This article provides the upgrade information for System Center 2016 - Service Management Automation (SMA).
 
 ::: moniker-end
 

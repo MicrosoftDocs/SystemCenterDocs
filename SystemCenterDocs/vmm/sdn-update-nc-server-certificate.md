@@ -5,7 +5,7 @@ description: This article describes the procedure on how to update the network c
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  04/23/2018
+ms.date:  06/15/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -30,15 +30,18 @@ ms.technology:  virtual-machine-manager
 
 ## Update the server certificate
 
-1.	Export the certificate with private key and import it on the all NC nodes **My** and **Root** store if it is a self-signed certificate.
+1. If the certificate is self-signed, do the following:
 
-  For a CA issued certificate, import it in all network controller nodes' **My** store.
+  - Certificate with private key - Export the certificate and import it on  all the NC nodes' **My** store.
+  - Certificate without a private key - Export the certificate and import it on all the NC nodes' **Root** store.
+
+2. If the certificate is a CA issued certificate, import it in all network controller nodes' **My** store.
 
   > [!NOTE]
 
   > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Proceed with rest of the steps to update the certificate.
 
-2.	Update the server certificate by executing the following PowerShell command on one of the NC nodes.
+3.	Update the server certificate by executing the following PowerShell command on one of the NC nodes.
 
   ```powershell
 
@@ -47,7 +50,7 @@ ms.technology:  virtual-machine-manager
 
    ```
 
-3.	Update the certificate used for encrypting the credentials stored in the NC by executing the following command on one of the NC nodes.
+4.	Update the certificate used for encrypting the credentials stored in the NC by executing the following command on one of the NC nodes.
 
   ```powershell
 
@@ -56,7 +59,7 @@ ms.technology:  virtual-machine-manager
 
   ```
 
-4.	Retrieve a server REST resource by executing the following PowerShell command on one of the NC nodes.
+5.	Retrieve a server REST resource by executing the following PowerShell command on one of the NC nodes.
 
   ```powershell
 
@@ -64,7 +67,7 @@ ms.technology:  virtual-machine-manager
 
   ```
 
-5.	In the Server REST resource, navigate to the **Connections** object and retrieve the credential resource ID with type **X509Certificate**.
+6.	In the Server REST resource, navigate to the **Credentials** object and check the credential of type **X509Certificate** with a value matching your certificate's thumbprint. Note the credential resource ID.
 
   ```powershell
 
@@ -87,7 +90,7 @@ ms.technology:  virtual-machine-manager
 
     ```
 
-6. Update the credential REST resource of type **X509Certificate** retrieved above with the thumbprint of the new certificate.
+7. Update the credential REST resource of type **X509Certificate** retrieved above with the thumbprint of the new certificate.
 
   Execute these PowerShell cmdlet on any of the NC Node.
 
@@ -101,9 +104,9 @@ ms.technology:  virtual-machine-manager
   $cred
 
  ```
-7. If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the trusted root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
+8. If the new certificate is a self-signed certificate, provision the certificate (without the private key) in the trusted root certificate store of all the Hyper-V hosts and software load balancer MUX virtual machines.
 
-8. Provision the NC certificate (without the private key) in the trusted root certificate store of the VMM machine using the following PowerShell cmdlet:
+9. Provision the NC certificate (without the private key) in the trusted root certificate store of the VMM machine using the following PowerShell cmdlet:
 
   ```powershell
   $certificate = Get-SCCertificate -ComputerName "NCRestName"
@@ -115,9 +118,9 @@ ms.technology:  virtual-machine-manager
   - **NetworkService** is the network controller service, **Certificate** is the new NC server certificate.
   - **ProvisionSelfSignedCertificatesforNetworkService** is **$true** if you are updating to a self-signed certificate.
 
-9. Verify  that the connectivity is working fine with the updated certificate.
+10. Verify  that the connectivity is working fine with the updated certificate.
 
   You can now remove the previous certificate from the NC nodes.
-  
+
  ## Next steps
- [Validate the NC deployment](sdn-controller.md#validate-the-deployment) to ensure that the deployment is successful. 
+ [Validate the NC deployment](sdn-controller.md#validate-the-deployment) to ensure that the deployment is successful.
