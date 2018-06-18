@@ -38,7 +38,7 @@ The following table illustrates the release cycle overlap for the Semi-Annual Ch
 
 |Version|Availability Date| Support End Date |
 |-------|--------------- -|------------------|
-| 1801 | February 8th, 2018 | August 8th, 2019 <br/> 18 months after release date |
+| 1801 | February 8, 2018 | August 8, 2019 <br/> 18 months after release date |
 | 18xx | Month, Day, 2018 | Month, Day, 2020 <br/> 18 months after release date |
 
 
