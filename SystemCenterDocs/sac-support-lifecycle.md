@@ -24,7 +24,7 @@ The information in this article applies to the following System Center technolog
 
 For information on System Center Configuration Manager, see its [support article](https://docs.microsoft.com/sccm/core/servers/manage/current-branch-versions-supported).
 
-Microsoft plans to release updates for System Center Semi-Annual Channel (SAC) a couple times per year. Each Semi-Annual Channel version is in support for 18 months from its general availability (GA) release date. Technical support is provided for the entire period of support. However, Microsoft's support structure is dynamic, evolving into two distinct servicing phases that depend on the availability of the latest Semi-annual channel version.
+Microsoft releases updates for System Center Semi-Annual Channel (SAC) a couple times per year. Each Semi-Annual Channel version is in support for 18 months from its general availability (GA) release date. Technical support is provided for the entire period of support. Microsoft's support structure has two phases:
 
 - **Security and Critical Updates servicing phase** - When running the latest Semi-Annual Channel version of System Center, you receive both Security and Critical updates.
 - **Security Updates (Only) servicing phase** - After the release of a new Semi-Annual Channel version, older branch support reduces to Security updates only, for the remainder of that version's support lifecycle.  
