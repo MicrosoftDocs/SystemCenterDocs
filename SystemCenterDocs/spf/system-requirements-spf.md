@@ -38,4 +38,4 @@ This article details the system requirements for System Center 2016 - Service Pr
 ::: moniker-end
 
 ## Next steps
-[Deploy](deploy-spf.md) Service Provider Foundation
+[Deploy](deploy-spf.md) Service Provider Foundation.
