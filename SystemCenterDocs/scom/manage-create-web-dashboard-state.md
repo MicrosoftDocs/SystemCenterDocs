@@ -5,10 +5,10 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/30/2017
+ms.date: 06/20/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1711'
+monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -48,3 +48,7 @@ For one or more monitored objects selected in the widget, you can perform such a
    * Select **Export to Excel** to export the alert data to an Excel file.
    * Select **Personalize** to change your selection of columns to be displayed or to group alerts.  Click **Save personalization** when you have completed making your changes.  
 
+
+## Next steps
+
+To learn how to create a dashboard in the new web console with the Topology widget, see [How create a dashboard with the Topology widget in the Web console](manage-create-web-dashboard-topology.md)
