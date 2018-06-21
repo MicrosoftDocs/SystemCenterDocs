@@ -6,7 +6,7 @@ ms.topic:  include
 author:  bandersmsft
 ms.author: banders
 ms.prod:  system-center-2016
-ms.date: 04/05/2018
+ms.date: 06/21/2018
 ms.technology:  service-manager
 ms.assetid: ad91af28-dc8c-4f24-b6fa-e7a8b983cf2c
 
@@ -133,9 +133,9 @@ The AD GroupExpansion functionality is now part of the ADConnector, as opposed t
 
 ## New Date dimensions in Data Warehouse cubes
 
- With the System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which will help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
+ With System Center 2016 - Service Manager, the Service Manager Data Warehouse cubes contain new date dimensions which help you to create rich reports and slice data based on Year, Quarter, Month, Day etc.
 
-![date dimensions]((../scsm/media/whats-new/sm-date-dimensions.png)
+![date dimensions](../scsm/media/whats-new/sm-date-dimensions.png)
 
 The following new dimensions have been added to Service Manager data warehouse  cubes:
 
@@ -188,7 +188,7 @@ Cube Name: Service Manager Service Catalog library cube
 
 All these dimensions have the following attributes, which you can use for slicing your data:
 
-![dimensions list]((../scsm/media/whats-new/sm-dimensions-list.png)
+![dimensions list](../scsm/media/whats-new/sm-dimensions-list.png)
 
 #### To add date dimensions for other date fields in custom cubes
 
@@ -236,13 +236,16 @@ A new console task *Open Activity in Progress*, was added for service requests a
 ## Support for Lync 2013 and Skype for Business
 System Center 2016 - Service Manager includes the updates that support integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../scsm/contact-user-from-incident.md).
 
+> [!NOTE]
+
+> Lync versions earlier to 2013 are not supported.
 
 ## Setup changes to support SQL AlwaysOn installation
 The Setup wizard allows you to easily install Service Manager in complex configurations such as a SQL AlwaysOn configuration with different named instances.
 
 Now you can configure the SQL management server, instance name and port number together.
 
-![configure SQL management server and port ]((../scsm/media/whats-new/sm-sqlserver-config.png)
+![configure SQL management server and port ](../scsm/media/whats-new/sm-sqlserver-config.png)
 
 ## Support for .NET Framework 4.5.1
 Service Manager 2016 now supports the .Net framework 4.5.1
