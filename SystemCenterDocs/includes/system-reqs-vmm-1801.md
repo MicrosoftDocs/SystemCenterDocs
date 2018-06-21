@@ -114,7 +114,7 @@ Windows Server 1709 | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
+Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
 
