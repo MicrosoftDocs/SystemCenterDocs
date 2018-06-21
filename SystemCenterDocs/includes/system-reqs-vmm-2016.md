@@ -37,7 +37,7 @@ Library Objects (templates, profiles)| 100
 
   **Hardware** | **VMM server** | **VMM database** | **VMM  library** | **VMM console**
   --- | --- | --- | --- | ---
-  **Processor (minimum)** | 8 core Pentium 4, 2GHx (x64) | 8 core Pentium 4, 2.8GHx | 4 core Pentium 4, 2.8GHz | 2 core Pentium 4, 1 GHz CPU
+  **Processor (minimum)** | 8 core Pentium 4, 2 GHz (x64) | 8 core Pentium 4, 2.8 GHz | 4 core Pentium 4, 2.8GHz | 2 core Pentium 4, 1 GHz CPU
   **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
   **RAM (minimum)** | 4 GB | 8 GB | 2 GB | 4 GB
   **RAM (recommended)** | 16 GB | 16 GB | 4 GB | 4 GB
@@ -98,10 +98,10 @@ These components should be installed on the server, before you install VMM.
 
 **Component** | **VMM server** | **VMM console**
 --- | --- | ---
-Active Directory | The VMM management server must be a domain member.<br><br> The computer name shouldn&#39;t exceed 15 characters. | A computer with the VMM console installed should be a domain member.
+Active Directory | The VMM management server must be a domain member.<br><br> The computer name should not  exceed 15 characters. | A computer with the VMM console installed should be a domain member.
 Windows ADK | [Download](https://docs.microsoft.com/windows-hardware/get-started/adk-install) Windows ADK for Windows 10 | Not applicable
 PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
-.NET | 4.6 | 4,5, 4.5.1, 4.5.2, 4.6
+.NET | 4.6 | 4.5, 4.5.1, 4.5.2, 4.6
 
 
 ## Servers in the VMM fabric
@@ -120,7 +120,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
-Supported | [Features and limitations]((../vmm/manage-vmware-hosts.md)
+Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
 
