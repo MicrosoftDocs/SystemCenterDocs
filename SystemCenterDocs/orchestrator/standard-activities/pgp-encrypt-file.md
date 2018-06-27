@@ -20,7 +20,7 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # PGP Encrypt File
-The PGP Encrypt File activity encrypts a file or an entire folder tree using a PGP key file that you have created. When encrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you encrypt C:\Documents and Settings\Administrator\My Documents\\*.\* and all subfolders, all files in My Documents are encrypted as well as all files in folders under My Documents. All files that are in subfolders will be in the same subfolder in the Output folder. Use the PGP Encrypt File activity to encrypt files before backing them up.  
+The PGP Encrypt File activity encrypts a file or an entire folder tree using a PGP key file that you have created. When encrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you encrypt C:\Documents and Settings\Administrator\My Documents\\\*.\* and all subfolders, all files in My Documents are encrypted as well as all files in folders under My Documents. All files that are in subfolders will be in the same subfolder in the Output folder. Use the PGP Encrypt File activity to encrypt files before backing them up.  
   
  To use this activity you must install the Gpg executable. To install the Gpg executable, see [Install GnuPG](http://go.microsoft.com/fwlink/p/?LinkId=219849).  
   
