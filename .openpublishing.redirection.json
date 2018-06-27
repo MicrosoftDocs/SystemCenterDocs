@@ -118,6 +118,10 @@
   "redirect_url" : "/system-center/dpm/upgrade-dpm"
 },
 {
+  "source_path" : "SystemCenterDocs/dpm/dpm-release-notes-1711.md",
+  "redirect_url" : "/system-center/dpm/dpm-release-notes"
+},
+{
      "source_path" : "SystemCenterDocs/get-started/Release-Notes.md",
      "redirect_url": "/system-center/system-center"
   },
@@ -816,6 +820,14 @@
 {
      "source_path" : "SystemCenterDocs/om/welcome-to-operations-manager.md",
      "redirect_url" : "/system-center/scom/welcome"
+},
+{
+  "source_path" : "SystemCenterDocs/scom/release-notes-tp1711.md",
+  "redirect_url" : "/system-center/scom/release-notes-1801"
+},
+{
+  "source_path" : "SystemCenterDocs/scom/what-is-new-1711.md",
+  "redirect_url" : "/system-center/scom/what-is-new-1801"
 },
 {
      "source_path" : "SystemCenterDocs/orchestrator/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md",
