@@ -5,7 +5,7 @@ description: This article summarizes suupported storage arrays for VMM 2016
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  28/06/2018
+ms.date:  06/28/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
