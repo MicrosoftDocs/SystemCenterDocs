@@ -14,7 +14,7 @@ ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
 
 ## Release Notes for System Center 2016 - Service Manager
 
-The following sections detail the release notes for SM 2016 and includes the known issues and workarounds.
+The following sections detail the release notes for SM 2016 and include the known issues and workarounds.
 
 ## Data warehouse installation might fail
 
@@ -38,7 +38,7 @@ The following sections detail the release notes for SM 2016 and includes the kno
 - Replacement: None.
 
 ## SQL Server 2014 Cardinality Estimation might affect the performance of SM
-**Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.
+**Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version, you may experience slow performance.
 
 **Workaround:** Switch the Cardinality Estimator (CE) for the SQL Server to use the SQL Server 2012 version. For more information on changing the Cardinality Estimator, see [New functionality in SQL Server 2014 - Part 2 - New Cardinality Estimation](https://blogs.msdn.microsoft.com/saponsqlserver/2014/01/16/new-functionality-in-sql-server-2014-part-2-new-cardinality-estimation/).
 
