@@ -14,7 +14,7 @@ ms.assetid: 135c0449-c04a-4329-a67e-38f7abe82896
 
 ## Release Notes for System Center 1801 - Service Manager
 
-The following sections detail the release notes for SM 1801.
+The following sections detail the release notes for SM 1801 and includes the known issues and workarounds.
 
 ## SQL Server 2014 cardinality estimation might affect the performance of SM
 **Description:** If your Service Manager database is running on SQL Server 2014 with the cardinality estimator set to the SQL Server 2014 version you may experience slow performance.

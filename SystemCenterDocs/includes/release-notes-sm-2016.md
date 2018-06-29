@@ -14,7 +14,7 @@ ms.assetid: 59dcba5c-cc45-4611-9a95-9e6d534bd562
 
 ## Release Notes for System Center 2016 - Service Manager
 
-The following sections detail the release notes for SM 2016.
+The following sections detail the release notes for SM 2016 and includes the known issues and workarounds.
 
 ## Data warehouse installation might fail
 
