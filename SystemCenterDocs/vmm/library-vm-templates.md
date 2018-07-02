@@ -5,7 +5,7 @@ description: This article provides guidance for adding VM templates to the libra
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/08/2017
+ms.date:  07/02/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -23,6 +23,11 @@ Templates help you to create VMs with consistent settings. VMM provides two type
 There are two methods for creating a VM template:
 
 - From an existing virtual hard disk or VM template in the VMM library.
+
+  > [!NOTE]
+
+  > Ensure the virtual hard disk was Sysprepped. 
+
 - From an existing VM deployed on a host.
 
 ## Before you start

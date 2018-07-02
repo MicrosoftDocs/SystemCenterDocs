@@ -5,7 +5,7 @@ description: This article provides guidance for adding files to the library in t
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  07/02/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -22,6 +22,10 @@ You can add file-based resources to the library as follows:
 - Copy files to the share in the VMM console
 - Import and export file-based resources between library shares
 - Copy files to the library share from outside the VMM console
+
+> [!NOTE]
+
+>  Sysprep the virtual hard disk before adding it to the VMM library [Learn more](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep-process-overview).
 
 ## Copy files to the share in the VMM console
 
