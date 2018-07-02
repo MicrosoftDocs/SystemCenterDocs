@@ -47,12 +47,12 @@ You can group library resources together so they're considered equivalent. Then 
 
 VMM supports virtual disks, .iso images, and custom resources as equivalent objects. Equivalent resources must be the same file type.
 
-You'll need to be an admin, delegated admin or self-service user to mark objects as equivalent.  Delegated admins can mark on library shares within their scope. Self-service users can marks objects in their user role data path.
+You'll need to be an admin, delegated admin, or self-service user to mark objects as equivalent.  Delegated admins can mark on library shares within their scope. Self-service users can marks objects in their user role data path.
 
 1. Click **Library** > **Library servers**.
 1. For admins and delegated admins the **Library Server** column indicates the location of each resource. Self-services users should expand **Self Service User Content** > **Type** to sort library resources.
 1. Right-click the resources > **Mark Equivalent**.
-1. In **Equivalent Library Objects** type the family name and release value to create a new equivalent set, or click a family name to add to an existing set. Objects must have the same family name, release value, and namespace (automatically assigned by VMM) to be equivalent.
+1. In **Equivalent Library Objects**, type the family name and release value to create a new equivalent set, or click a family name to add to an existing set. Objects must have the same family name, release value, and namespace (automatically assigned by VMM) to be equivalent.
 
 ## Next steps
 
