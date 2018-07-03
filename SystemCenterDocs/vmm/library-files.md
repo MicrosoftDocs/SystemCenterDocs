@@ -5,7 +5,7 @@ description: This article provides guidance for adding files to the library in t
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  07/02/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -22,6 +22,10 @@ You can add file-based resources to the library as follows:
 - Copy files to the share in the VMM console
 - Import and export file-based resources between library shares
 - Copy files to the library share from outside the VMM console
+
+> [!NOTE]
+
+>  Sysprep the virtual hard disk and then add it to the VMM library [Learn more](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep-process-overview).
 
 ## Copy files to the share in the VMM console
 
@@ -43,12 +47,12 @@ You can group library resources together so they're considered equivalent. Then 
 
 VMM supports virtual disks, .iso images, and custom resources as equivalent objects. Equivalent resources must be the same file type.
 
-You'll need to be an admin, delegated admin or self-service user to mark objects as equivalent.  Delegated admins can mark on library shares within their scope. Self-service users can marks objects in their user role data path.
+You'll need to be an admin, delegated admin, or self-service user to mark objects as equivalent.  Delegated admins can mark on library shares within their scope. Self-service users can marks objects in their user role data path.
 
 1. Click **Library** > **Library servers**.
 1. For admins and delegated admins the **Library Server** column indicates the location of each resource. Self-services users should expand **Self Service User Content** > **Type** to sort library resources.
 1. Right-click the resources > **Mark Equivalent**.
-1. In **Equivalent Library Objects** type the family name and release value to create a new equivalent set, or click a family name to add to an existing set. Objects must have the same family name, release value, and namespace (automatically assigned by VMM) to be equivalent.
+1. In **Equivalent Library Objects**, type the family name and release value to create a new equivalent set, or click a family name to add to an existing set. Objects must have the same family name, release value, and namespace (automatically assigned by VMM) to be equivalent.
 
 ## Next steps
 
