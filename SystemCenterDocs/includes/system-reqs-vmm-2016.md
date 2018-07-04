@@ -73,7 +73,9 @@ Window Server 2016 Standard, Datacenter | Y
 
 > [!NOTE]
 
-> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
+> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+
+> - For the respective SQL versions, Standard, Enterprise and Datacenter editions are supported based on the availability. 
 
 **SQL version** | **Supported**
 --- | ---
