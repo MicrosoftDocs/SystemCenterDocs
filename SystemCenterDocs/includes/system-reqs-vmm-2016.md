@@ -13,11 +13,11 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 2016 system requirements
 
-The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 2016, and summarizes the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 2016, and summarize the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology and others.
+The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](https://technet.microsoft.com/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
 
@@ -37,7 +37,7 @@ Library Objects (templates, profiles)| 100
 
   **Hardware** | **VMM server** | **VMM database** | **VMM  library** | **VMM console**
   --- | --- | --- | --- | ---
-  **Processor (minimum)** | 8 core Pentium 4, 2 GHz (x64) | 8 core Pentium 4, 2.8 GHz | 4 core Pentium 4, 2.8GHz | 2 core Pentium 4, 1 GHz CPU
+  **Processor (minimum)** | 8 core Pentium 4, 2 GHz (x64) | 8 core Pentium 4, 2.8 GHz | 4 core Pentium 4, 2.8 GHz | 2 core Pentium 4, 1 GHz CPU
   **Processor (recommended)** | 16-core, 2.66 GHz CPU | 16 core 2.6 GHz CPU | 4 core 2.8 GHz CPU | 2 core 2 GHz CPU
   **RAM (minimum)** | 4 GB | 8 GB | 2 GB | 4 GB
   **RAM (recommended)** | 16 GB | 16 GB | 4 GB | 4 GB
@@ -75,7 +75,7 @@ Window Server 2016 Standard, Datacenter | Y
 
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
-> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability. 
+> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
 **SQL version** | **Supported**
 --- | ---
