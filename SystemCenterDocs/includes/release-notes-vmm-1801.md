@@ -1,4 +1,4 @@
-﻿---
+---
 ms.assetid: 05fe26c2-25a5-44a0-8a34-20a387d317a3
 title: include file
 description: include file to detail the release notes for System Center Virtual Machine Manager 1801
@@ -10,6 +10,7 @@ ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
+
 ## VMM 1801 release notes
 
 The following sections summarize the release notes for VMM 1801 and includes the known issues and workarounds.
