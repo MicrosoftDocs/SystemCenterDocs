@@ -45,15 +45,15 @@ The following LLDP information is displayed:
 
 |**Information displayed** | **Description**
 | --- | --- |
-| Chasis ID <br/><br/> | Switch chasis identity |
-| Port ID <br/><br/> | Switch port to which NIC is connected |
-| Port Description <br/><br/> | Details related to port |
+| Chassis ID <br/><br/> | Switch chassis identity |
+| Port ID <br/><br/> | Switch port ID to which NIC is connected |
+| Port Description <br/><br/> | Details related to the connected port |
 | System Name	Manufacturer <br/><br/> | Software version details |
-| System Description <br/><br/> | Detailed system description |
-| Available Capabilities <br/><br/> | Available system capabilities (switching, routing etc) |
-| Enabled Capabilities <br/><br/> | Enabled system capabilities (switching, routing etc) |
-| System Description <br/><br/> | Detailed system description |
-| Management Address <br/><br/> | IP Management Address |
+| System Description <br/><br/> | Detailed information about the system |
+| Available Capabilities <br/><br/> | Available system capabilities (such as switching, routing) |
+| Enabled Capabilities <br/><br/> | Enabled system capabilities (such as switching, routing) |
+| System Description <br/><br/> | Detailed information about the system |
+| Management Address <br/><br/> | IP management address |
 
 **PowerShell**
 
@@ -72,13 +72,13 @@ Set-SCVMHostNetworkAdapter -RefreshLLDP
  SCVMM 1807 allows you to convert a SET switch to logical switch by using the VMM console. In earlier versions. this feature was supported only through PowerShell script. [Learn more](../vmm/network-logical.md)
 
 ### VMware host management
-VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support provides the  admins with additional  flexibility to manage multiple hypervisors in use. For additional details of supported vmware server vesions, [Learn more](../vmm/system-requirements#vmware-servers-in-the-vmm-fabric.md)
+VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support provides the  admins with additional  flexibility to manage multiple hypervisors in use. For additional details of supported vmware server vesions, [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric)
 
 ### Support  for S2D cluster update
 
 VMM 1807 supports update of a S2D host or a cluster. You can update individual S2D hosts or clusters  against the baselines configured in windows server update services (WSUS).
 
-[Learn more](../vmm/yper-v-update.md)
+[Learn more](../vmm/hyper-v-update.md)
 
 ## Next steps
 
