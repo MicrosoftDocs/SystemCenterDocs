@@ -69,16 +69,16 @@ Set-SCVMHostNetworkAdapter -RefreshLLDP
 
 
 ### Convert SET switch to logical switch
- SCVMM 1807 allows you to convert a SET switch to logical switch by using the VMM console. In earlier versions. this feature was supported only through PowerShell script. [Learn more](.../vmm/network-logical.md)
+ SCVMM 1807 allows you to convert a SET switch to logical switch by using the VMM console. In earlier versions. this feature was supported only through PowerShell script. [Learn more](../vmm/network-logical.md)
 
 ### VMware host management
-VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support provides the  admins with additional  flexibility to manage multiple hypervisors in use. For additional details of supported vmware server vesions, [Learn more](../vmm/system-requirements#vmware-servers-in-the-vmm-fabric.md).
+VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support provides the  admins with additional  flexibility to manage multiple hypervisors in use. For additional details of supported vmware server vesions, [Learn more](../vmm/system-requirements#vmware-servers-in-the-vmm-fabric.md)
 
 ### Support  for S2D cluster update
 
 VMM 1807 supports update of a S2D host or a cluster. You can update individual S2D hosts or clusters  against the baselines configured in windows server update services (WSUS).
 
-[Learn more](../vmm/yper-v-update.md).
+[Learn more](../vmm/yper-v-update.md)
 
 ## Next steps
 
