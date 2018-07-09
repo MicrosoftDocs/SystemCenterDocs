@@ -11,7 +11,7 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-## What's new in System Center 1801 - Virtual Machine Manager
+## What's new in System Center 1807 - Virtual Machine Manager
 
 See the following sections for information about the new features supported in VMM 1807.
 
@@ -21,14 +21,14 @@ See the following sections for information about the new features supported in V
 
 VMM 1807 allows you to select a cluster shared volumes (CSV) for placing a new virtual hard disc (VHD).
 
-In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any issues related to the CSV, such as storage full or over commitment, users had to migrate the VHD only after deploying the VHD.
+In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed, there was no option to choose a different CSV/ folder. In case of any issues related to the CSV, such as storage full or over commitment, users had to migrate the VHD, only after deploying the VHD.
 
 With VMM 1807, you can now  choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. [Learn More](../vmm/hyper-v-storage.md).
 
 ## Networking
 
 ### Display of LLDP information for networking devices
-VMM 1807 supports Link Layer Discovery Protocol (LLDP). You can now view the properties and capabilities of your network devices through VMM. You can leverage this functionality to remotely monitor the properties of the physical network devices.
+VMM 1807 supports link layer discovery protocol (LLDP). You can now view the properties and capabilities of your network devices through VMM. You can leverage this functionality to remotely monitor the properties of the physical network devices.
 
 DataCenterBridging and DataCenterBridging-LLDP-Tools features have been enabled on the hosts to fetch LLDP properties.  You can view these details through console or PowerShell
 
@@ -69,17 +69,11 @@ Set-SCVMHostNetworkAdapter -RefreshLLDP
 
 
 ### Convert SET switch to logical switch
- SCVMM 1807 allows you to convert a SET switch to logical switch by using the VMM console. In earlier versions. this feature was supported only through PowerShell script. [Learn more](../vmm/network-logical.md)
+ VMM 1807 allows you to convert a switch embedded teaming (SET) switch to logical switch by using the VMM console. In earlier versions. this feature was supported only through PowerShell script. [Learn more](../vmm/network-logical.md)
 
 ### VMware host management
-VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support provides the  admins with additional  flexibility to manage multiple hypervisors in use. For additional details of supported vmware server vesions, [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric)
+VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with  additional  flexibility in managing multiple hypervisors in use. [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported vmware server versions.
 
-### Support  for S2D cluster update
+### Support for S2D cluster update
 
-VMM 1807 supports update of a S2D host or a cluster. You can update individual S2D hosts or clusters  against the baselines configured in windows server update services (WSUS).
-
-[Learn more](../vmm/hyper-v-update.md)
-
-## Next steps
-
-[See the bugs fixed in VMM 1807](../vmm/release-notes-vmm.md)
+VMM 1807 supports update of an S2D host or a cluster. You can update individual S2D hosts or clusters against the baselines configured in windows server update services (WSUS). [Learn more](../vmm/hyper-v-update.md)
