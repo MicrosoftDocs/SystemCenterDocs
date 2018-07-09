@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: carmomm
-ms.date: 05/21/2018
+ms.date: 07/06/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -46,7 +46,7 @@ The following table shows Operations Manager feature interaction across a firewa
 |Customer Experience Improvement Program data from client|51907 --->|management server (Customer Experience Improvement Program End) Point|Yes (Client Monitoring Wizard)||
 |Operations console (reports)|80 --->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
 |Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes||
-|Management server (Audit Collection Services collector)1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
+|Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
 
 If SQL Server 2014 Service Pack 2 or SQL Server 2016 is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
 
