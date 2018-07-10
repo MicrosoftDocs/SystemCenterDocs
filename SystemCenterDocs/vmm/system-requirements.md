@@ -13,6 +13,14 @@ ms.technology:  virtual-machine-manager
 
 # System requirements for System Center Virtual Machine Manager
 
+::: moniker range="sc-vmm-1807"
+
+This article details the system requirements for System Center 1807 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [system-reqs-vmm-1807.md](../includes/system-reqs-vmm-1807.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-1801"
 
 This article details the system requirements for System Center 1801 - Virtual Machine Manager (VMM).
