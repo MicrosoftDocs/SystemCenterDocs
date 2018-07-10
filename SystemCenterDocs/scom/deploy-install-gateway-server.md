@@ -49,7 +49,7 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 ### Obtaining computer certificates from Microsoft Certificate Services
 
-For more information, see [Active Directory Certificate Services](https://technet.microsoft.com/en-us/library/hh831740.aspx)
+For more information, see [Active Directory Certificate Services](https://technet.microsoft.com/library/hh831740.aspx)
 
 ### Distributing the Microsoft.EnterpriseManagement.GatewayApprovalTool
 

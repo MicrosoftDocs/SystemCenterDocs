@@ -34,7 +34,7 @@ Welcome to System Center - Operations Manager.  Operations Manager provides infr
 
     Read these topics once you have Operations Manager up and running and are looking to start monitoring your environment, as well as procedures for day to day operations.
 
--   [Management Pack Authoring Guide for Operations Manager](https://technet.microsoft.com/en-us/library/hh457564.aspx)
+-   [Management Pack Authoring Guide for Operations Manager](https://technet.microsoft.com/library/hh457564.aspx)
 
     The Management Pack Authoring Guide for Operations Manager provides information on creating custom monitoring for your service or application. 
 
