@@ -27,13 +27,13 @@ Virtual machines contain sensitive data and configuration that the VM owner may 
 
 ## Managing a guarded fabric with VMM
 
-The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with Windows Server 2016 and must be configured according to the [guarded fabric documentation](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
+The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with Windows Server 2016 and must be configured according to the [guarded fabric documentation](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
 Once set up, you can optionally use System Center 2016 - Virtual Machine Manager to simplify management of the guarded fabric.
 
 VMM can be used to:
 
 - **Provision and manage guarded hosts in the VMM fabric**: You can add and manage guarded hosts to the VMM fabric. A guarded host is a Hyper-V server that:
-    - Meets the [guarded host prerequisites](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-deployment-prerequisites#prerequisites-for-hyper-v-hosts-that-will-become-guarded-hosts).
+    - Meets the [guarded host prerequisites](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-deployment-prerequisites#prerequisites-for-hyper-v-hosts-that-will-become-guarded-hosts).
     - Is authorized by the Host Guardian Service for the fabric to run shielded VMs. The HGS admin determines the requirements for hosts to successfully attest and become "guarded".
     - Is marked as guarded in VMM by configuring it to use the same HGS URLs as those specified in the global VMM settings.
 - **Configure a shielded virtual hard disk and optionally a VM template**: Signed template disks (VHDX) used to deploy new shielded VMs can be stored in the VMM library for easy deployment. You can then use this VHDX in a VM template.
