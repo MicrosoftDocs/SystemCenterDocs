@@ -14,6 +14,14 @@ ms.technology:  service-manager
 
 # What's New in System Center Service Manager
 
+::: moniker range="sc-sm-1807"
+
+This article details the new features supported in System Center 1807 - Service Manager (SM).
+
+[!INCLUDE [whats-new-sm-1807.md](../includes/whats-new-sm-1807.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sm-1801"
 
 This article details the new features supported in System Center 1801 - Service Manager (SM).
