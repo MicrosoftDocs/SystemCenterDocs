@@ -17,6 +17,10 @@ See the following sections for information about the new features supported in V
 
 
 ## Storage
+
+### Support for SQL 2017
+VMM 1807 supports SQL 2017. You can upgrade SQL 2016 to 2017.
+
 ### Supports selection of CSV for placing a new VHD
 
 VMM 1807 allows you to select a cluster shared volumes (CSV) for placing a new virtual hard disc (VHD).
