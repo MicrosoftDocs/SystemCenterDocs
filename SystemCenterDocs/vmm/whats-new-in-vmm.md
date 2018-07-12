@@ -47,5 +47,6 @@ This article details the new features supported in System Center 2016 - Virtual 
 ::: moniker-end
 
 ## Next steps
+- [know the issues fixed](release-notes-vmm.md)
 - [Know the VMM system requirements](system-requirements.md)
 - [Plan VMM installation](../vmm/plan-install.md)
