@@ -5,7 +5,7 @@ description: This article describes how to create logical switches in the VMM fa
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  11/07/2017
+ms.date:  07/24/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
@@ -65,10 +65,10 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
 If a host in the VMM fabric has a standard virtual switch, you can convert it to use a logical switch.
 
-Note that:
+> [!NOTE]
 
-- Before you can convert, you need a logical switch in place, with specific settings.
-- You must be a member of the Administrator user role, or a member of the Delegated Administrator user role, where the management scope includes the host group in which the Hyper-V host is located.
+> - Before you can convert, you need a logical switch in place, with specific settings.
+> - You must be a member of the Administrator user role, or a member of the Delegated Administrator user role, where the management scope includes the host group in which the Hyper-V host is located.
 
 ### Compare switch settings
 
@@ -101,7 +101,6 @@ Note that:
 
 > [!NOTE]
 
-> - The following procedure is not applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
 > - The conversion will not interrupt network traffic.
 > - If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
 

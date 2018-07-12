@@ -28,48 +28,14 @@ With VMM 1807, you can now  choose any location to place the new disc. You can m
 ## Networking
 
 ### Display of LLDP information for networking devices
-VMM 1807 supports link layer discovery protocol (LLDP). You can now view the properties and capabilities of your network devices through VMM. You can leverage this functionality to remotely monitor the properties of the physical network devices.
+ VMM 1807 supports Link Layer Discovery Protocol (LLDP). You can now view network device properties and capabilities information of the hosts from VMM. Host operating system must be Windows 2016 or higher.
 
-DataCenterBridging and DataCenterBridging-LLDP-Tools features have been enabled on the hosts to fetch LLDP properties.  You can view these details through console or PowerShell
+ DataCenterBridging and DataCenterBridging-LLDP-Tools features have been enabled on hosts to fetch LLDP properties.  
 
-**Console view**
-
-To get the details of network devices from the VMM console, go to **View** > **host** > **Properties** > **Hardware Configuration** > **Network adapter**.   
-
-<screenshot to be included in the final location>
-
-> [!NOTE]
-> The details displayed contain a time stamp (updated on). To get the current details, refresh the page.
-
-The following LLDP information is displayed:
-
-|**Information displayed** | **Description**
-| --- | --- |
-| Chassis ID <br/><br/> | Switch chassis identity |
-| Port ID <br/><br/> | Switch port ID to which NIC is connected |
-| Port Description <br/><br/> | Details related to the connected port |
-| System Name	Manufacturer <br/><br/> | Software version details |
-| System Description <br/><br/> | Detailed information about the system |
-| Available Capabilities <br/><br/> | Available system capabilities (such as switching, routing) |
-| Enabled Capabilities <br/><br/> | Enabled system capabilities (such as switching, routing) |
-| System Description <br/><br/> | Detailed information about the system |
-| Management Address <br/><br/> | IP management address |
-
-**PowerShell**
-
-Use the following PowerShell command to view/refresh the LLDP details:
-
-```powershell
-Set-SCVMHostNetworkAdapter -RefreshLLDP
-```
-
-> [!NOTE]
-
-> By default, LLDP Packet wait time is set as 30 seconds. You can modify this value by modifying the registry key at **Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\LLdpPacketWaitIntervalSeconds**. The minimum value you can set is 5 seconds, maximum value is 300 seconds.
-
+  [Learn More](../vmm/hyper-v-network.md)
 
 ### Convert SET switch to logical switch
- VMM 1807 allows you to convert a switch embedded teaming (SET) switch to logical switch by using the VMM console. In earlier versions. this feature was supported only through PowerShell script. [Learn more](../vmm/network-switch.md)
+ VMM 1807 allows you to convert a switch embedded teaming (SET) switch to logical switch by using the VMM console. In earlier versions, this feature was supported only through PowerShell script. [Learn more](../vmm/network-switch.md)
 
 ### VMware host management
 VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with  additional  flexibility in managing multiple hypervisors in use. [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported vmware server versions.
