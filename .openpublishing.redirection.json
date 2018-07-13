@@ -2970,6 +2970,12 @@
   "redirect_url" : "/system-center/sma/upgrade-sma"
 },
 
+{
+  "source_path" : "SystemCenterDocs/sma/release-notes-1801.md",
+  "redirect_url" : "/system-center/sma/release-notes-sma"
+},
+
+
   {
      "source_path" : "SystemCenterDocs/SPF/service-provider-foundation.md",
      "redirect_url": "/system-center/spf/overview"
