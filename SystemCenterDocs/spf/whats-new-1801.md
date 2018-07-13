@@ -20,4 +20,4 @@ This release of System Center Service Provider Foundation (SPF) contains all the
 This build should be used for validating the SPF integration scenarios with other System Center components included in the 1801 release.
 
 ## Nest steps
-- [Know the issues fixed](release-notes-1801)
+- [Know the issues fixed](release-notes-1801.md)
