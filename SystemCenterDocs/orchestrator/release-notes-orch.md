@@ -15,7 +15,7 @@ ms.technology:  Orchestrator
 
 ::: moniker range="sc-orch-1807"
 
-This article lists the release notes for System Center 1807 - Orchestrator.
+This article provides the release notes for System Center 1807 - Orchestrator.
 
 [!INCLUDE [release-notes-orch-1807.md](../includes/release-notes-orch-1807.md)]
 
@@ -24,7 +24,7 @@ This article lists the release notes for System Center 1807 - Orchestrator.
 
 ::: moniker range="sc-orch-1801"
 
-This article lists the release notes for System Center 1801 - Orchestrator.
+This article provides the release notes for System Center 1801 - Orchestrator.
 
 ::: moniker-end
 
