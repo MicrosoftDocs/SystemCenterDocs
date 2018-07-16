@@ -2,13 +2,13 @@
 # aka.ms/skyeye/meta for more information
 layout: HubPage
 hide_bc: true
-author: github-username
+author: markgalioto
 ms.author: apexprodleads
-ms.date: 03-01-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.date: 07-12-2018
+ms.service-OR-ms.prod: system-center-2016
 ms.topic: hub-page
 title: System Center Documentation
-description: get-from-content-team
+description: System Center documentation for versions 2016 and above. The documentation covers the LTSC and SAC versions of System Center. 
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -907,6 +907,29 @@ description: get-from-content-team
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-1801">What's New in SMA</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-1801">What's New in SPF</a></p>
                                                 </div>
+                                            </div>
+                                      </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                    <div class="cardText">
+                                                    <h3>System Center 2016 UR5</h3>
+                                                    <p><a href="https://support.microsoft.com/help/4094946/description-of-update-rollup-5-for-microsoft-system-center-2016">System Center</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4090835/update-rollup-5-for-system-center-2016-data-protection-manager">Data Protection Manager</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4090987/update-rollup-5-for-system-center-2016-operations-manager">Operations Manager</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4094928/update-rollup-5-for-system-center-2016-orchestrator">Orchestrator</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager">Service Manager</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4094929/update-rollup-5-for-system-center-2016-service-management-automation">Service Management Automation</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4094925/update-rollup-5-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
+                                                    </div>
                                             </div>
                                       </div>
                                 </div>

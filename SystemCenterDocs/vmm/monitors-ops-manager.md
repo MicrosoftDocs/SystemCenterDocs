@@ -55,7 +55,7 @@ You set up Operations Manager with VMM as follows:
 ## Install the Operations Manager agent
 
 1. Install the Operations Manager agent on each VMM server, and on each host managed in the VMM fabric.
-2. You can install the agent from the Operations Manager Operations console, from Operations Manager setup, or from the command line. To understand the different methods for agent deployment, review [Managing discovery and agents](https://docs.microsoft.com/en-us/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-1801) section in Operations manager documentation.
+2. You can install the agent from the Operations Manager Operations console, from Operations Manager setup, or from the command line. To understand the different methods for agent deployment, review [Managing discovery and agents](https://docs.microsoft.com/system-center/scom/manage-deploy-windows-agent-console?view=sc-om-1801) section in Operations manager documentation.
 
 ## Download the management packs
 
