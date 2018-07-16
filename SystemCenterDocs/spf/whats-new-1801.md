@@ -14,10 +14,13 @@ monikerRange: 'sc-spf-1801'
 ---
 
 # What's new in System Center 1801 - Service Provider Foundation
+  This article provides the information about the new features added in SPF 1801.
 
-This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/en-us/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016) for more information about how to set up, configure and run your environment to use TLS 1.2.
+## Support for TLS 1.2
+
+This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/en-us/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. For more information about how to set up, configure and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 This build should be used for validating the SPF integration scenarios with other System Center components included in the 1801 release.
 
-## Nest steps
-- [Know the issues fixed](release-notes-1801.md)
+## Next steps
+- [Know the fixed issues](release-notes-1801.md)

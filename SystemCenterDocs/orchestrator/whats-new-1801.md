@@ -19,4 +19,4 @@ This release of System Center Orchestrator (SCO) contains all the bug fixes ship
 [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016) for more information about how to set up, configure and run your environment to use TLS 1.2.
 
 ## Next steps
-[Know the issues fixed](release-notes-orch.md)
+[Know the fixed issues](release-notes-orch.md)
