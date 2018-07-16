@@ -48,6 +48,8 @@ Regardless of any port profiles and logical switches you are using in your netwo
     - In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
     - If you have a cluster, check each node.
 
+::: moniker range="sc-vmm-1807"
+
 ## Monitor physical network devices
 
 VMM supports Link Layer Discovery Protocol (LLDP). You can now leverage the LLDP information to remotely monitor physical network device properties and information. You can view this information by using VMM console and PowerShell.
@@ -89,6 +91,8 @@ Set-SCVMHostNetworkAdapter -RefreshLLDP
 > [!NOTE]
 
 > By default, LLDP Packet wait time is set as 30 seconds. You can modify this value by modifying the registry key at **Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\LLdpPacketWaitIntervalSeconds**. The minimum value you can set is 5 seconds, maximum value is 300 seconds.
+
+  ::: moniker-end
 
 
 ## Next steps

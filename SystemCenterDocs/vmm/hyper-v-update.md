@@ -34,6 +34,8 @@ You'll need to set up an update (WSUS server) in the VMM fabric, and configure u
     - Select **Live migration** to remove virtual machines from a host before performing update remediation so that they remain online. If you don't need to keep them online and want to perform a quicker update, click **Save state** to shut down virtual machines and proceed with remediation.
 6. Click **Remediate** to start updating. After remediation, if no reboot is pending the server or cluster will show as **Compliant**.
 
+::: moniker range="sc-vmm-1807"
+
 > [!NOTE]
 
 > Remediation of single node in a S2D cluster might  not succeed if remediation is done by selecting the host. We recommend you to remediate at cluster level and then select the hosts for remediation.
@@ -48,6 +50,7 @@ In S2D cluster, once the update is installed on the node, the node is rebooted a
 
   \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings > RegistryKey  
 
+::: moniker-end
 
 ## Next steps
 
