@@ -67,7 +67,7 @@ If you are reinstalling the Operations Manager reporting server component on the
 
 ## Install Operations Manager Reporting server
 
-After the upgrade is complete, perform the following steps to [install Operations Manager Reporting server](deploy-install-reporting-server). 
+After the upgrade is complete, perform the following steps to [install Operations Manager Reporting server](deploy-install-reporting-server.md). 
 
 ## Optional - Enable CLR strict security
 
