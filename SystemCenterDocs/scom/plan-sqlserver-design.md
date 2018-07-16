@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  carmonm
-ms.date: 04/06/2018
+ms.date: 06/27/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -20,6 +20,15 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 
 ## SQL Server requirements
+
+::: moniker range="sc-om-1807"
+
+The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version 1807 to host Reporting Server, Operational, Data Warehouse, and ACS database:
+
+* SQL Server 2017 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+
+::: moniker-end
 
 ::: moniker range="sc-om-1801"
 

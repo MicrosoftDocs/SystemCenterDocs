@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/16/2018
+ms.date: 07/09/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 
 # How create a dashboard with the Alert widget in the Web console
-In System Center Operations Manager version 1801, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 web console with the Alert widget.
 
 ## Add widget to dashboard
 
@@ -47,6 +47,7 @@ For one or more alerts selected in the widget, you can perform such actions as:
 1. Change resolution state 
 2. Export the alerts to Excel for further analysis 
 3. Modify how the alerts are presented by included or excluding columns or how to group alerts, customized to your personal needs 
+4. View alert details 
 
 1. Hover your mouse over the widget and click on the ellipse **...** on the top right corner of the widget.  This will display actions available for the widget.
    * Select **Set resolution state** and select one or multiple alerts by clicking on the checkbox in the first column on the left, for each alert resolution state you are going to change. Select the resolution state from the drop-down list and click **Save**.

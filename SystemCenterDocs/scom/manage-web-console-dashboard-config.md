@@ -5,7 +5,7 @@ description: This article describes how to manage the configuration of the HTML5
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/24/2018
+ms.date: 07/09/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -15,9 +15,15 @@ ms.topic: article
 
 # Manage dashboard and widget configuration in the Web console
 
-## Delete a dahsobard
+## Delete a dashboard
 
-To delete dashboard, click **Delete dashboard** option available from the top banner of the dashboard. ![Delete dashboard option on page](./media/manage-web-console-dashboard-config/dashboard-banner-01.png)<br>  You are prompted to confirm you wish to proceed with deleting the dashboard.  This notification appears at the bottom of the page.  Click **Yes** to continue or **No** to cancel the operation.<br><br> ![Delete dashboard notification](./media/manage-web-console-dashboard-config/dashboard-delete-notify.png)
+To delete dashboard, click **Delete dashboard** option available from the top banner of the dashboard. 
+
+![Delete dashboard option on page](./media/manage-web-console-dashboard-config/dashboard-banner-01.png)  
+
+You are prompted to confirm you wish to proceed with deleting the dashboard.  This notification appears at the bottom of the page.  Click **Yes** to continue or **No** to cancel the operation.
+
+![Delete dashboard notification](./media/manage-web-console-dashboard-config/dashboard-delete-notify.png)
 
 ## Add dashboards or views to My workspace
 

@@ -4,8 +4,8 @@ title: How to Suspend Monitoring Temporarily by Using Maintenance Mode
 description: This article describes how to put a monitored object into maintenance mode on-demand or using a schedule.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 11/15/2016
+manager: carmonm
+ms.date: 06/27/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -182,9 +182,9 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 The following section describes how to work with the different options available for the maintenance mode scheduling feature.
 
-### Create Maintenance Schedule
+### Create Maintenance Schedule in the Operations console
 
-The following procedures describes how to create a maintenance schedule for selected monitored objects for a future date.  
+The following procedures describes how to create a maintenance schedule for selected monitored objects for a future date in the Operations console.  
 
 1. Log on to the computer with an account that is a member of the Operations Manager Administrators role.
 
@@ -232,3 +232,50 @@ The following procedures describes how to create a maintenance schedule for sele
 11. Click **Finish** to save your changes.  
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
+
+::: moniker range="sc-om-1807"
+
+## Create Maintenance Schedule in the Web console
+
+The following procedures describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
+
+1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console. 
+
+2. From the left pane in the Web console, click **Maintenance Schedules**.
+
+3. From the top of the page, click **+ Create**.
+
+4. In the **Create maintenance schedule** pane, perform the following:
+
+    1.  In the **Search for classes**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.  
+    
+    2.  Optionally, in the **Filter by keyword** box, type all or part of the object name, and then press **Enter**.  
+    
+    3. In the **Available objects** box, select the desired objects.
+
+5. Expand **Schedule** and in this section, specify the following for your maintenance schedule:
+
+    1.  Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
+    
+    2.  Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
+
+    3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
+
+     > [!NOTE]
+     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years). 
+  
+9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
+
+    1.  Create a name for the schedule in the **Schedule Name** box.
+
+    2.  From the **Category** drop-down list, select the appropriate maintenance category or leave it at the default of **other (Planned)**.
+
+    3. Optionally, in the **Comment** box, enter a description for the scheduled maintenance task.  
+
+    4.  Select **Enable Schedule** if you want to enable the schedule now, or clear it if you plan on enabling the schedule later.
+
+11. Click **Finish** to save your changes.  
+
+The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
+
+::: moniker-end
