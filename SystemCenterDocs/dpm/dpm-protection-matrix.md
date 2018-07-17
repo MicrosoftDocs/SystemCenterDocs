@@ -1,11 +1,11 @@
 ---
-description: A complete matrix of all workloads, data types, and installations that DPM 2016 protects.  
+description: A complete matrix of all workloads, data types, and installations that DPM protects. Applies to DPM 2016, 1801, and 1807.  
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto
-ms.prod:  system-center-threshold
+ms.prod:  system-center-2016
 keywords:  
-ms.date: 2/8/2018
+ms.date: 7/17/2018
 title:  What can DPM back up
 ms.technology:  data-protection-manager
 ms.assetid:  2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -14,7 +14,7 @@ ms.author: markgal;adigan
 
 # What can DPM back up?
 
-This article summarizes System Center Data Protection Manager (DPM) protection support for the 2016 and Semi-Annual Channel releases: 1807 and 1807.
+Use the System Center Data Protection Manager (DPM) support matrix to review the workloads that can be protected. In the following table, the **Workload** column is the workload type or technology. The **Version** column lists the supported workload versions. Client computers and Server workloads are broken out by operating system **Version** because the **DPM installation** and **Protection and recovery details** vary. **DPM installation** lists where the DPM software can be installed. **Protection and recovery** lists details about the workload, such as supported storage container, or supported deployment. Use the matrix for DPM 2016 and Semi-Annual Channel releases: 1807 and 1807.
 
 ## Protection support matrix
 
