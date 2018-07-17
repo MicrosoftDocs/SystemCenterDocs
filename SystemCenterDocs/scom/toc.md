@@ -111,7 +111,6 @@
 #### [Dashboards overview](manage-dashboards-overview.md)
 #### Web console dashboards
 ##### [Overview](manage-overview-html5-webconsole.md)
-##### [Overview](manage-overview-html5-webconsole-1807.md)
 ##### [Create dashboard with Alert widget](manage-create-web-dashboard-alerts.md)
 ##### [Create dashboard with State widget](manage-create-web-dashboard-state.md)
 ##### [Create dashboard with Perf widget](manage-create-web-dashboard-perf.md)
