@@ -22,8 +22,6 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 1.	You can create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
 
-::: moniker range="sc-om-1807"
-
 2.	User can visualize their environment data in HTML 5 dashboards with: 
    1. Alert widget
    2. State widget
@@ -31,21 +29,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
    4. Topology widget
    5. Tile widget
    6. Custom widget
-   7. PowerShell widget 
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-2.	User can visualize their environment data in HTML 5 dashboards with: 
-   1. Alert widget
-   2. State widget
-   3. Performance widget (also works like the Object by performance widget)  
-   4. Topology widget
-   5. Tile widget
-   6. Custom widget
-
-::: moniker-end
+   7. In version 1807, we introduce the PowerShell widget
 
 3.	Perform create, edit and delete operations on the widgets  
 
@@ -61,30 +45,15 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 9.	Define a custom refresh interval rate for each of the dashboard widgets 
 
-::: moniker range="sc-om-1807"
-
 10.	Visualize the following dashboards:
    1. Web Application Status
    2. Management Group Health
    3. Management Group Health Trend 
    4. UNIX/Linux Computer Summary
    5. Network Summary Dashboard 
-   6. View Network Node and Network Interface Dashboard for Network Node/interface from the Monitored Objects page 
+   6. In version 1807, you can view Network Node and Network Interface Dashboard for Network Node/interface from the Monitored Objects page
 
-11.	You can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page
-
-::: moniker-end
-
-::: moniker range="sc-om-1801"
-
-10.	Visualize the following dashboards:
-   1. Web Application Status
-   2. Management Group Health
-   3. Management Group Health Trend 
-   4. UNIX/Linux Computer Summary
-   5. Network Summary Dashboard 
-
-::: moniker-end
+11.	In version 1807, you can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page
 
 12.	You can sign out from your current web console session
 
@@ -112,15 +81,9 @@ You can take advantage of the following HTML5 dashboard capabilities:
    2. Export to Excel the legend data to Excel for further analysis. 
    3. Personalize by adding or removing columns for the legend, and enable or disable visualized objects by performance
 
-::: moniker range="sc-om-1807"
+19. In version 1807, you can explore results of a Windows PowerShell script  
 
-19. Explore results of a Windows PowerShell script.  
-
-20.	Delete HTML5 dashboards from the Web console and create dashboards or views to My workspace.
-
-::: moniker-end
-
-20. You can delete HTML5 dashboards from the Web console and add dashboards or views to My workspace from the monitoring tree.
+20.	Delete HTML5 dashboards from the Web console and in version 1807, you can create dashboards or views to My workspace.  In version 1801, you add dashboards or views to My Workspace from the monitoring tree.
 
 21.	The IIS web server hosting the Web console role can be setup with network authentication mode and users can access the Web console using network authentication
 
