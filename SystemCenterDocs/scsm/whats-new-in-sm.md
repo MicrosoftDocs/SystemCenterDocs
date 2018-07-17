@@ -14,6 +14,14 @@ ms.technology:  service-manager
 
 # What's New in System Center Service Manager
 
+::: moniker range="sc-sm-1807"
+
+This article details the new features supported in System Center 1807 - Service Manager (SM).
+
+[!INCLUDE [whats-new-sm-1807.md](../includes/whats-new-sm-1807.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sm-1801"
 
 This article details the new features supported in System Center 1801 - Service Manager (SM).
@@ -41,3 +49,4 @@ This article details the new features supported in System Center 2016 - Service 
 ## Next steps
 
 - Review [Planning for Service Manager](../scsm/plan-sm.md) to understand hardware and software requirements and software roles you need to prepare for Service Manager before you deploy it in your company or organization.
+- See the [issues fixed](release-notes-sm.md).
