@@ -14,11 +14,11 @@ ms.author: markgal;adigan
 
 # What can DPM back up?
 
-This article summarizes System Center Data Protection Manager (DPM) protection support for the 2016 and 1801 releases.
+This article summarizes System Center Data Protection Manager (DPM) protection support for the 2016 and Semi-Annual Channel releases: 1807 and 1807.
 
 ## Protection support matrix
 
-|Workload|Version|DPM installation|DPM - System Center 1801|DPM - System Center 2016|Protection and recovery|
+|Workload|Version|DPM installation|DPM - System Center SAC|DPM - System Center 2016|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |System Center VMM|VMM 2016,<br/>VMM 2012, SP1, R2|Physical server<br /><br />Hyper-V virtual machine|Y|Y|All deployment scenarios: Database|
 |Client computers (64-bit and 32-bit)|Windows 10|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Y|Y|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
