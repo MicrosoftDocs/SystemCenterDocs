@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/16/2018
+ms.date: 07/17/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: '>sc-om-2016'
@@ -52,11 +52,9 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
 10. Select **Display** to choose an image for the topology widget to display in the authoring pane.  If you already added a custom image by performing these steps earlier, then select an image shown in the pane.
 
-    ![Add custom image to Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology-01.png)
+     ![Select new image for Topology widget](./media/create-web-dashboard-topology/web-console-topology-widget-add-image.png)
 
     Otherwise, click **Add image** and navigate to where the file is located.
-
-    ![Select new image for Topology widget](./media/create-web-dashboard-topology/web-console-topology-widget-add-image.png)
    
 11. After selecting the file, click **Open** and the image will be uploaded and presented in the pane.  
 
