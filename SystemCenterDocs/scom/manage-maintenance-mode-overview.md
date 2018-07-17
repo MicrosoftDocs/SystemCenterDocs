@@ -5,9 +5,9 @@ description: This article describes how to put a monitored object into maintenan
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 06/27/2018
+ms.date: 07/17/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---

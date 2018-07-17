@@ -4,7 +4,7 @@ description: This article describes how deploy the Operations Manager Web consol
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/09/2018
+ms.date: 07/17/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -38,7 +38,7 @@ Use the following procedures to configure dashboards on a SharePoint page.  This
   
 7.  Click the arrow in the top right of the web part, and then click **Edit web part**.  
   
-8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard view.  Append `&disabletree=true` at the end of the URL to disable the tree view from being displayed with the web part.  
+8. In the **To specify a link, type a URL or path** field, enter the URL of an Operations Manager Web console dashboard view.  For Operations Manager 2016 and version 1807, append `&disabletree=true` at the end of the URL to disable the tree view from being displayed with the web part.  
 
 9. Configure the appearance, layout, and Advance properties of the SharePoint page, and then click **OK**.
 
