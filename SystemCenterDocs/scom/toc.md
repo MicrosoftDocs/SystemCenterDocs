@@ -116,7 +116,6 @@
 ##### [Create dashboard with State widget](manage-create-web-dashboard-state.md)
 ##### [Create dashboard with Perf widget](manage-create-web-dashboard-perf.md)
 ##### [Create dashboard with Topology widget](manage-create-web-dashboard-topology.md)
-##### [Create dashboard with 1807 Topology widget](manage-create-web-dashboard-topology-1807.md)
 ##### [Create dashboard with Tile widget](manage-create-web-dashboard-tile.md)
 ##### [Create dashboard with Custom widget](manage-create-web-dashboard-custom.md)
 ##### [Create dashboard with PowerShell widget](manage-create-web-dashboard-posh.md)
