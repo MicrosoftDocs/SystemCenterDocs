@@ -5,7 +5,7 @@ description: This article describes how to move the Operations Manager operation
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/03/2016
+ms.date: 07/17/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to move the Operational database
 
-After the initial deployment of System Center 2016 – Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
+After the initial deployment of System Center Operations Manager, you might need to move the operational database from one Microsoft SQL Server-based computer to another.
 
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry and configuration file on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
 
@@ -109,6 +109,10 @@ After moving the Operations Manager operational database to a different SQL Serv
   - System Center Data Access
   - Microsoft Monitoring Agent
   - System Center Management Configuration
+
+
+### Update Service Principal Name for Kerberos Connections
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
  
 ## Next steps
 

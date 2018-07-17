@@ -8,13 +8,13 @@ manager: carmonm
 ms.date: 07/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1801'
+monikerRange: 'sc-om-1807'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How create a dashboard with the Topology widget in the Web console
-In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create dashboard in the new HTML5 Web console with the Topology widget in version 1801.
+In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create dashboard in the new HTML5 Web console with the Topology widget in version 1807.
 
 ## Add widget to dashboard
 
@@ -27,7 +27,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
 
     ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
- 
+
 4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description and optionally a version number. 
 
     ![Specify name and description for new MP](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
@@ -39,26 +39,28 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard** and **View in fullscreen** options on the top of the page.
 
     ![New dashboard canvas](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
- 
+
 8. Select **Topology Widget** from the **Select Widget** drop-down list.
 
 9. In the Topology widget pane, select scope for the widget by clicking either **Groups** or **Class**.
 
-    ![Select scope for Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology.png) 
-
+    ![Select scope for Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology.png)  
+    
     For either option selected, you can search by keyword in the list.  As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
 
-10. Select **Display** to choose an image for the topology widget to display in the authoring pane.  Click **Select Image** and on the **Select Image** pane if you already added a custom image by performing these steps earlier, then select an image from the list.
+10. Select **Display** to choose an image for the topology widget to display in the authoring pane.  If you already added a custom image by performing these steps earlier, then select an image shown in the pane.
 
-    ![Add custom image to Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology-01.png)  
+    ![Add custom image to Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology-01.png)
 
-    Otherwise, click **Add custom image** and navigate to where the file is located.
+    Otherwise, click **Add image** and navigate to where the file is located.
 
-    ![Select new image for Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology-02.png) 
+    ![Select new image for Topology widget](./media/create-web-dashboard-topology/web-console-topology-widget-add-image.png)
+   
+11. After selecting the file, click **Open** and the image will be uploaded and presented in the pane.  
 
-11. After selecting the file, click **Open** and the image will be uploaded and presented in the **Select Image** pane.  Click **Done** to complete. 
+12. To change the size of the state icon, select either **Small** or **Large**.
 
-12. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+13. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 When created for the first time, the health state icons for the selected objects are displayed at the left-top section of the topology widget. These icons have to be placed manually in the appropriate position on the image by performing the following steps:
 

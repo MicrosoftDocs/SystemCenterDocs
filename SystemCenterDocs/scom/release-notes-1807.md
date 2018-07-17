@@ -49,6 +49,4 @@ all
 
 **Description**: With version 1807, SQL Server 2017 is supported only if it is upgraded from SQL Server 2016.  A fresh installation of SQL Server 2017 with version 1807 is not supported.  If you already have version 1801 deployed with SQL Server 2016, you need to apply Operations Manager version 1807 before performing an upgrade to SQL Server 2017.  
 
-**Workaround**: Review the following article detailing the steps to perform in order to successfully upgrade your SQL Server supporting the Operations Manager version 1807 databases to SQL Server 2017.  
-
-
+**Workaround**: Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md). 

@@ -28,7 +28,9 @@ On all the management servers in the management group, stop the Operations Manag
 
 ## Backup the Reporting server database 
 1. On the SQL Server hosting the Reporting server databases, create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
+
 2. On the current Operations Manager reporting server, backup the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+
 3. Back up the report server configuration files. Files to back up include: 
 
    * Web.config 

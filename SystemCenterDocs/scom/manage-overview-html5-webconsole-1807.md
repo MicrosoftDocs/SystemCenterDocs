@@ -23,50 +23,73 @@ System Center Operations Manager now delivers HTML5 based dashboards, which enha
 You can take advantage of the following HTML5 dashboard capabilities:
 
 1.	You can create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
-2.	User can visualize their environment data in HTML 5 dashboards with 
+
+2.	User can visualize their environment data in HTML 5 dashboards with: 
    1. Alert widget
    2. State widget
    3. Performance widget (also works like the Object by performance widget)  
    4. Topology widget
    5. Tile widget
    6. Custom widget
-   7. PowerShell widget
+   7. PowerShell widget 
+
 3.	Perform create, edit and delete operations on the widgets  
+
 4.	Create or edit these widgets and scope by objects or groups 
+
 5.	Add custom image for topology widgets and place the health of object on top of the image 
+
 6.	Create any number of widgets in the dashboard without any predefined layout selection 
-10.	Easily move, reposition and resize the widgets in the dashboard 
-11.	View the dashboards in full screen without the monitoring tree view
-12.	Define a custom refresh interval rate for each of the dashboard widgets 
-14.	Visualize the following dashboards:
+
+7.	Easily move, reposition and resize the widgets in the dashboard 
+
+8.	View the dashboards in full screen without the monitoring tree view
+
+9.	Define a custom refresh interval rate for each of the dashboard widgets 
+
+10.	Visualize the following dashboards:
    1. Web Application Status
    2. Management Group Health
    3. Management Group Health Trend 
    4. UNIX/Linux Computer Summary
    5. Network Summary Dashboard 
-15.	You can sign out from your current web console session
-16. Dashboards can be saved in custom management packs and exported 
-17.	The following drill-down capabilities are available within the dashboards:
-   1. Analyze the issue by visualizing the relevant data for a monitoring object, individual alert, rule, monitor, and class.
+   6. View Network Node and Network Interface Dashboard for Network Node/interface from the Monitored Objects page 
+
+11.	You can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page
+
+12.	You can sign out from your current web console session
+
+13. Dashboards can be saved in custom management packs and exported 
+
+14.	The following drill-down capabilities are available within the dashboards:
+   1. Analyze the issue by visualizing the relevant data for a monitored object, individual alert, rule, monitor, and class.
    2. Navigate from one object to another 
    3. View the tasks associated with selected object 
-18.	 Explore the actions enabled in a widget:
-   1. Actions with alert widget - Set resolution state on a single alert or select multiple alerts from within the widget
+
+15.	 Explore the actions enabled in a widget:
+   1. Actions with alert widget - Set resolution state on a single alert or select multiple alerts from within the widget.  View alert details delivering the same experience provided in the Operations console when viewing an alert - modify the alert resolution state and drill down to the monitoring object details page by selecting the alert source.
    2. Export the data visible in the widget to Excel for further analysis
    3. Personalize by adding or removing columns to visualize and group alerts
-19. Explore actions with state widget:
+
+16. Explore actions with state widget:
    1. Export the data visible in the widget to Excel for further analysis
    2. Personalize by adding or removing columns to visualize and group objects
-20. Explore actions with Topology widget: 
+
+17. Explore actions with Topology widget: 
    1. Edit state indicator layout and place object health icons anywhere on image 
-21. Explore actions with Performance widget:
+
+18. Explore actions with Performance widget:
    1. Set vertical axis and specify the minimum and maximum values of vertical axis
    2. Export to Excel the legend data to Excel for further analysis. 
    3. Personalize by adding or removing columns for the legend, and enable or disable visualized objects by performance
-22. Explore results of a Windows PowerShell script.  
-23.	You can delete HTML5 dashboards from the Web console and create dashboards or views to My workspace.
-24.	The IIS web server hosting the Web console role can be setup with network authentication mode and users can access the Web console using network authentication
-25.	You can provide feedback on HTML5 dashboards from within the Web console.
+
+19. Explore results of a Windows PowerShell script.  
+
+20.	Delete HTML5 dashboards from the Web console and create dashboards or views to My workspace.
+
+21.	The IIS web server hosting the Web console role can be setup with network authentication mode and users can access the Web console using network authentication
+
+22.	You can provide feedback on HTML5 dashboards from within the Web console.
 
 ## Supported browsers
 System Center Operations Manager version 1807 Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.
