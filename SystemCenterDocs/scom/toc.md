@@ -119,6 +119,7 @@
 ##### [Create dashboard with Custom widget](manage-create-web-dashboard-custom.md)
 ##### [Create dashboard with PowerShell widget](manage-create-web-dashboard-posh.md)
 ##### [Manage dashboard and widget config](manage-web-console-dashboard-config.md)
+##### [Viewing effective configuration of workflows](manage-view-effective-configuration.md)
 #### [Standard views](manage-console-standard-views.md)
 #### [Creating and scoping views](manage-console-scope-views.md)
 #### [Personalize a view](manage-console-personalize-views.md)
