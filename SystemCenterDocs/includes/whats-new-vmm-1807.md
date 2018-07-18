@@ -46,4 +46,4 @@ VMM 1807 supports update of an S2D host or a cluster. You can update individual 
 ## Others
 
 ### Support for SQL 2017
-VMM 1807 supports SQL 2017. You can upgrade SQL 2016 to 2017. [Learn more about SQL support](system-reqs-vmm-1807.md#sql-server)
+VMM 1807 supports SQL 2017. You can upgrade SQL 2016 to 2017. 
