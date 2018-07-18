@@ -18,7 +18,7 @@ The following new feature is included in SM 1807.
 ## Support to SQL 2017 feature pack
 
 SM 1807 supports SQL 2017. You can upgrade SQL server 2016 to SQL 2017.
-[Learn more](system-reqs-sm-1807.md#upgrade-to-sql-2017)
+[Learn more](../scsm/system-requirements.md)
 
 > [!NOTE]
 
