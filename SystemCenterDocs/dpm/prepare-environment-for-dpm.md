@@ -41,7 +41,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement| Details  |
 |-----------|----------|
-|Version|SQL Server 2016 - Standard or Enterprise 64-bit (from DPM 2016 R2 with Update Rollup 2 onwards) <br/>- Note: **SQL Server 2016 SP1 or later** is supported on DPM 1801 onwards. SSMS version 16.5 or earlier. <br/> SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit <br/> SQL Server 2012 SP2 onwards - Standard or Enterprise 64-bit|
+|Version|SQL Server 2017 - Standard or Enterprise 64-bit (from DPM 1801 onwards) <br/> - Note: For **SQL Server 2017** information, see [Install or Upgrade DPM](install-dpm.md#prerequisites-and-limitations). <br/> SQL Server 2016 - Standard or Enterprise 64-bit (from DPM 2016 R2 with Update Rollup 2 onwards) <br/>- Note: **SQL Server 2016 SP1 or later** is supported on DPM 1801 onwards. SSMS version 16.5 or earlier. <br/> SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit <br/> SQL Server 2012 SP2 onwards - Standard or Enterprise 64-bit|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
 |Required features|Database Engine Services, Reporting Services|
