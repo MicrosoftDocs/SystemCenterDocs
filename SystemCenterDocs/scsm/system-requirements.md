@@ -17,6 +17,8 @@ ms.technology:  service-manager
 
 This article details the system requirements for System Center 1807 - Service Manager (SM).
 
+[!INCLUDE [system-reqs-sm-1807](../includes/system-reqs-sm-1807.md)]
+
 ::: moniker-end
 
 ::: moniker range="sc-sm-1801"
