@@ -116,7 +116,7 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 
  For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
 
- ## Upgrade to SQL 2017
+## Upgrade to SQL 2017
 
  > [!NOTE]  
 
