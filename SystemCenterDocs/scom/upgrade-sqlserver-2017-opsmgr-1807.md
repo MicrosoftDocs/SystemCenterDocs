@@ -1,6 +1,6 @@
 ---
 title: Upgrade Operations Manager 1807 databases to SQL Server 2017
-description: This article describes how to upgraee the SQL Server supporting System Center Operations Manager 1807 databases to SQL Server 2017.  
+description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager 1807 databases to SQL Server 2017.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
