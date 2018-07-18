@@ -17,4 +17,10 @@ The following new feature is included in SM 1807.
 
 ## Support to SQL 2017 feature pack
 
-SM 1807 supports SQL 2017. You can upgrade SQL 2016 to SQL 2017. 
+SM 1807 supports SQL 2017. You can upgrade SQL 2016 to SQL 2017.
+
+> [!NOTE]
+
+> - With SM 1807, SQL 2017 is supported only if it is upgraded from SQL 2016. Fresh installation of SQL 2017 with SM 1807 is not supported. Users with 1801 deployment and SQL 2016 needs to apply SM 1807 and then upgrade to SQL 2017.
+
+> - Upgrade process to SQL 2017 uninstalls the reporting services, ensure to migrate required reports such as backup reporting DB and encryption keys.
