@@ -5,7 +5,7 @@ description: This article provides an overview of the new HTML5 Web console and 
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/09/2018
+ms.date: 07/18/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: '>sc-om-2016'
@@ -20,16 +20,16 @@ System Center Operations Manager now delivers HTML5 based dashboards, which enha
 ## Supported scenarios
 You can take advantage of the following HTML5 dashboard capabilities:
 
-1.	You can create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
+1.	Create HTML 5 dashboards from multiple browsers without a dependency on Silverlight.  
 
-2.	User can visualize their environment data in HTML 5 dashboards with: 
-   1. Alert widget
-   2. State widget
-   3. Performance widget (also works like the Object by performance widget)  
-   4. Topology widget
-   5. Tile widget
-   6. Custom widget
-   7. In version 1807, we introduce the PowerShell widget
+2.	Visualize monitoring data in HTML 5 dashboards with: 
+   1. [Alert widget](manage-create-web-dashboard-alerts.md)
+   2. [State widget](manage-create-web-dashboard-state.md)
+   3. [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
+   4. [Topology widget](manage-create-web-dashboard-topology.md)
+   5. [Tile widget](manage-create-web-dashboard-tile.md)
+   6. [Custom widget](manage-create-web-dashboard-custom.md)
+   7. In version 1807, we introduce the [PowerShell widget](manage-create-web-dashboard-posh.md)
 
 3.	Perform create, edit and delete operations on the widgets  
 
@@ -46,6 +46,7 @@ You can take advantage of the following HTML5 dashboard capabilities:
 9.	Define a custom refresh interval rate for each of the dashboard widgets 
 
 10.	Visualize the following dashboards:
+
    1. Web Application Status
    2. Management Group Health
    3. Management Group Health Trend 
@@ -60,28 +61,35 @@ You can take advantage of the following HTML5 dashboard capabilities:
 13. Dashboards can be saved in custom management packs and exported 
 
 14.	The following drill-down capabilities are available within the dashboards:
+
    1. Analyze the issue by visualizing the relevant data for a monitored object, individual alert, rule, monitor, and class.
    2. Navigate from one object to another 
    3. View the tasks associated with selected object 
 
 15.	 Explore the actions enabled in a widget:
+
    1. Actions with alert widget - Set resolution state on a single alert or select multiple alerts from within the widget.  View alert details delivering the same experience provided in the Operations console when viewing an alert - modify the alert resolution state and drill down to the monitoring object details page by selecting the alert source.
    2. Export the data visible in the widget to Excel for further analysis
    3. Personalize by adding or removing columns to visualize and group alerts
 
 16. Explore actions with state widget:
+
    1. Export the data visible in the widget to Excel for further analysis
    2. Personalize by adding or removing columns to visualize and group objects
 
-17. Explore actions with Topology widget: 
+17. Explore actions with Topology widget:
+ 
    1. Edit state indicator layout and place object health icons anywhere on image 
 
 18. Explore actions with Performance widget:
+
    1. Set vertical axis and specify the minimum and maximum values of vertical axis
    2. Export to Excel the legend data to Excel for further analysis. 
    3. Personalize by adding or removing columns for the legend, and enable or disable visualized objects by performance
 
-19. In version 1807, you can explore results of a Windows PowerShell script  
+19. Explore actions with PowerShell widget:
+
+   1. Export to Excel the legend data to Excel for further analysis.
 
 20.	Delete HTML5 dashboards from the Web console and in version 1807, you can create dashboards or views to My workspace.  In version 1801, you add dashboards or views to My Workspace from the monitoring tree.
 
@@ -90,4 +98,8 @@ You can take advantage of the following HTML5 dashboard capabilities:
 22.	You can provide feedback on HTML5 dashboards from within the Web console.
 
 ## Supported browsers
-System Center Operations Manager version 1807 Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.
+System Center Operations Manager version 1807 Web console supports Microsoft Edge, Google Chrome, Mozilla Firefox and Internet Explorer.  
+
+>[!NOTE]
+>Internet Explorer compatibility mode is not supported.   
+> 
