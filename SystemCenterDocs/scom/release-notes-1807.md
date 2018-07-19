@@ -64,4 +64,4 @@ all
 **Workaround**:  To co-locate the Operations Manager and Service Manager console on the same computer, they must be running version 1807.  
 
 ## Upgrade to Operations Manager version 1807
-To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](manage-1807-upgrade.md).
+To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](upgrade-1801-to-1807.md).
