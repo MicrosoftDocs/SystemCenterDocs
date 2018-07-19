@@ -1,19 +1,19 @@
 ---
 ms.assetid: 
-title: How to Repair an Agent
+title: How to Repair the Windows Agent
 description: This article describes how to repair the installation of the Operations Manager agent on Windows computers.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/13/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: conceptual
 ---
 
-# How to repair an agent
-Use the one of the following procedures to repair the installation of the agent on agent-managed computers, including reconfiguration of the APM component for the System Center Operations Manager version 1807 agent from the Operations console.  
+# How to repair the Windows agent
+Use the one of the following procedures to repair the installation of the Windows agent on agent managed computers, including reconfiguration of the APM component for the System Center Operations Manager version 1807 agent from the Operations console.  
 
 ## To repair the installation of the agent by using the Operations console
 
@@ -23,7 +23,7 @@ Use the one of the following procedures to repair the installation of the agent 
 
 3.  In the Administration pane, navigate to **Device Management\Agent Managed**.
 
-4.  In the **Agent Managed** pane, select the one or more computers you want to repair the agent on, right-click them and then select **Repair**.
+4.  In the **Agent Managed** pane, select one or more computers you want to repair the agent on, right-click them and then select **Repair**.
 
 5.  In the **Repair Agents** dialog box, either leave **Use selected Management Server Action Account** selected or do the following:
 
