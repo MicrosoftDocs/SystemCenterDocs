@@ -50,3 +50,16 @@ all
 **Description**: With version 1807, SQL Server 2017 is supported only if it is upgraded from SQL Server 2016.  A fresh installation of SQL Server 2017 with version 1807 is not supported.  If you already have version 1801 deployed with SQL Server 2016, you need to apply Operations Manager version 1807 before performing an upgrade to SQL Server 2017.  
 
 **Workaround**: Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md). 
+
+## Supportability with Internet Explorer Compatibility View
+
+**Description**: The HTML5 Web console does not support Internet Explorer Compatibility View.  
+
+**Workaround**: None
+
+## Support for Operations Manager and Service Manager console coexistence
+
+**Description**:  With System Center version 1801, installing the Service Manager console on a Operations Manager management server wasn't supported.  This would cause the SDK service to prematurely stop.  
+
+**Workaround**:  To co-locate the Operations Manager and Service Manager console on the same computer, they must be running version 1807.  
+

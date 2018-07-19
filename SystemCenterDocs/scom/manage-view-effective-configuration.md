@@ -4,7 +4,7 @@ description: This article describes how view the effective configuration of a mo
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/18/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 
 # How to view the effective configuration of a monitored object
-In System Center Operations Manager version 1807, the Web console has been enhanced to allow an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.  This feature is accessible from the Monitored object details page off of the Health State widget.   
+In System Center Operations Manager version 1807, the Web console has been enhanced to allow an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.     
 
 From the results, you are able to see the following details:
 

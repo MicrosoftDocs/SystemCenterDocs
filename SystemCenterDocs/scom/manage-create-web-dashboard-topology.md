@@ -1,11 +1,11 @@
 ---
 ms.assetid: 
-title:  How create a dashboard with the Topology widget in the Web console
+title:  How to create a dashboard with the Topology widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Topology widget.  
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/17/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: '>sc-om-2016'
@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How create a dashboard with the Topology widget in the Web console
+# How to create a dashboard with the Topology widget in the Web console
 In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create dashboard in the new HTML5 Web console with the Topology widget.
 
 ## Add widget to dashboard
@@ -60,7 +60,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
 12. To change the size of the state icon, select either **Small** or **Large**.
 
-13. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+13. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
 11. After selecting the file, click **Open** and the image will be uploaded and presented in the **Select Image** pane.  Click **Done** to complete. 
 
-12. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+12. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 ::: moniker-end
 
