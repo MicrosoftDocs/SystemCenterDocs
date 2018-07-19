@@ -7,6 +7,7 @@ ms.manager: carmonm
 ms.date: 07/18/2019
 ms.custom: na
 ms.prod: system-center-2016
+monikerRange: '>=sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
