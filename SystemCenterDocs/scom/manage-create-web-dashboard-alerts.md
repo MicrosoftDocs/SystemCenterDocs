@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/09/2018
+ms.date: 07/18/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: '>sc-om-2016'
@@ -65,13 +65,16 @@ After the widget has been created, it displays alerts based on the scope and cri
 
 ![Completed example of Alert widget in dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-07.png)
 
+You can view alert details consistent with the experience with the alerts view in the Operations console by clicking on an alert and drilling into it's details.  In version 1807 you can modify the alert resolution state and drill down to the monitoring object details page by clicking on the alert source.
+
+![Viewing alert details](./media/create-web-dashboard-alerts/view-alert-details-01.png)
+
 ## Actions on Alert widget
 For one or more alerts selected in the widget, you can perform such actions as:
 
 - Change resolution state while viewing the details of a particular alert or for one or more alerts selected in the widget.
 - Export the alerts to Excel for further analysis
 - Modify how the alerts are presented by included or excluding columns or how to group alerts, customized to your personal needs 
-- View alert details delivering the same experience provided in the Operations console when viewing an alert.  In version 1807 you can modify the alert resolution state and drill down to the monitoring object details page by clicking on the alert source.  
 
 To perform these actions, hover your mouse over the widget and click on the ellipse **...** on the top right corner of the widget.  This will display actions available for the widget.
   
