@@ -22,7 +22,7 @@ The following issues are fixed in SM 1807:
 
   >[!NOTE]
 
-  > You must install Operations Manager 1807 to resolve this.
+> You must install Operations Manager 1807 to resolve this.
 
 - 	The date and time format in some views is not consistent with the settings on the local computer.
 -   SM Console does not release the  memory that is used as soon as the respective window (UI) is closed.

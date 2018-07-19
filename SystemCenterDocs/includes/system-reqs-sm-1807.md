@@ -134,9 +134,7 @@ The following steps provide information about upgrading to SQL 2017.
  3.	Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.      
  4.	Configure the SSRS as per the details shared [here](https://docs.microsoft.com/en-us/system-center/scsm/prepare-remote-ssrs?view=sc-sm-1801).
 
- 5.	[**Optional**] Reboot all the computers.
-
- 6.	[**Optional**] To enable CLR strict security, run the following script on each of the service manager databases.
+ 5.	[**Optional**] To enable CLR strict security, run the following script on each of the service manager databases.
 
    By default, CLR strict security is disabled after you upgrade to SQL 2017.
 
