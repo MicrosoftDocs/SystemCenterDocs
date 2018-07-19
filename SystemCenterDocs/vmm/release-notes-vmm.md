@@ -21,12 +21,6 @@ This article lists the release notes for System Center 1807 - Virtual Machine Ma
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
-
-This article lists the release notes for System Center 1801 - Virtual Machine Manager (VMM).
-
-::: moniker-end
-
 ::: moniker range="sc-vmm-2016"
 
 This article lists the release notes for System Center 2016 - Virtual Machine Manager (VMM).
