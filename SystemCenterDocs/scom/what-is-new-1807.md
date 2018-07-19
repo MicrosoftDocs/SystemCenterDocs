@@ -5,7 +5,7 @@ description: This article describes what's new in System Center Operations Manag
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/18/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -18,12 +18,12 @@ ms.topic: article
 The content in this section describes what's new and changed in System Center Operations Manager 1807.
 
 ## Configure APM component during agent install or repair
-In System Center Operations Manager version 1801 agent, the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0 , preventing it from starting. You can now disable the APM component when you deploy the Operations Manager agent from Discovery Wizard in the console, when performing a repair of the agent from the Operations console, and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**.  
+In System Center Operations Manager version 1801 agent, the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting. You can now disable the APM component when you deploy the Operations Manager agent from Discovery Wizard in the console, when performing a repair of the agent from the Operations console, and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**.  
 
 
 ## Linux log rotation 
 
-To prevent the SCX logs from growing and consuming all available free space on the on the system disk, we have introduced a log rotation feature for the SCX agent.  
+To prevent the SCX logs from growing and consuming all available free space on the system disk, a log rotation feature is now available for the SCX agent.  
 
 ## HTML5 Web console enhancements
 The following improvements are provided in the Web console for version 1807:
