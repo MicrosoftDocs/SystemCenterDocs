@@ -7,6 +7,7 @@
 ## [Release notes - 1807](release-notes-1807.md)
 ## [What's new in Operations Manager 2016](what-is-new.md)
 ## [What's new in Operations Manager - 1801](what-is-new-1801.md)
+## [Whats' new in Operations Manager - 1807](what-is-new-1807.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
