@@ -5,7 +5,7 @@ description: This article describes how to put a monitored object into maintenan
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/17/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -74,7 +74,7 @@ The following section describes how to work with the different options for the o
 
 4.  In the **Windows Computers** pane, right-click the computer that you want to place into maintenance mode, click **Maintenance Mode**, and then click **Start Maintenance Mode**. You can use ctrl+click or shift+click to select multiple computers to place into maintenance mode.
 
-5.  In the **Maintenance Mode Settings** dialog box, under **Apply to**, click **Selected objects only** if only the computer is to be placed into maintenance mode; otherwise, click **Selected objects and all their contained objects**.
+5.  In the **Maintenance Mode Settings** dialog box, under **Apply to**, click **Selected objects only** if the computer is to be placed into maintenance mode; otherwise, click **Selected objects and all their contained objects**.
 
 6.  Select **Planned** if this is a planned event; otherwise, leave it cleared.
 
@@ -184,7 +184,7 @@ The following section describes how to work with the different options available
 
 ### Create Maintenance Schedule in the Operations console
 
-The following procedures describes how to create a maintenance schedule for selected monitored objects for a future date in the Operations console.  
+The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Operations console.  
 
 1. Log on to the computer with an account that is a member of the Operations Manager Administrators role.
 
@@ -237,7 +237,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ## Create Maintenance Schedule in the Web console
 
-The following procedures describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
+The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
 
 1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console. 
 
