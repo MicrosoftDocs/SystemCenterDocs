@@ -13,7 +13,7 @@ ms.technology:  virtual-machine-manager
 
 ## VMM 1807 release notes
 
-The following sections summarize the release notes for VMM 1807 and includes the known issues and workarounds.
+The following sections summarize the release notes for VMM 1807 and include the known issues and workarounds.
 
 ## Latest accessibility fixes in Console are not available
 
@@ -34,12 +34,12 @@ The following sections summarize the release notes for VMM 1807 and includes the
 
 **Workaround**: Clear the setting to avoid issues with these IP addresses.
 
-## VMM integrated with ASR will not support DRA versions earlier than 5.1.3100
+## VMM integrated with Azure Site Recovery will not support DRA versions earlier than 5.1.3100
 
-**Description**: In case you are using a VMM integrated with Azure Site Recovery (ASR), VMM supports DRA version [5.1.3100](http://aka.ms/downloaddra) or higher. Earlier versions are not supported.
+**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](http://aka.ms/downloaddra) or higher. Earlier versions are not supported.
 
 **Workaround**: Use the following steps and upgrade the DRA version:
 
 1. Uninstall existing version of DRA
-2. Install VMM 1807 patch
+2. Install VMM 1807 patch)
 3. [Install 5.1.3100](http://aka.ms/downloaddra) version or higher.   
