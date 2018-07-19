@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# What's New in System Center Operations Manager 18071
+# What's New in System Center Operations Manager 1807
 
 The content in this section describes what's new and changed in System Center Operations Manager 1807.
 

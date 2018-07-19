@@ -4,7 +4,7 @@ description: This article describes issues and workarounds for System Center Ope
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/11/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -63,3 +63,5 @@ all
 
 **Workaround**:  To co-locate the Operations Manager and Service Manager console on the same computer, they must be running version 1807.  
 
+## Upgrade to Operations Manager version 1807
+To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](manage-1807-upgrade.md).
