@@ -125,7 +125,8 @@ Apply the appropriate MSP files on each computer.
 
     `Update_rollup_mom_db.sql`
 
-    >[!NOTE]This script is located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
+    >[!NOTE]
+    >This script is located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
 
 3. Import the following management packs: 
 
