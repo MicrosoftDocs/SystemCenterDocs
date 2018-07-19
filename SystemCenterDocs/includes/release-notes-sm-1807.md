@@ -18,7 +18,12 @@ The following sections detail the release notes for Service Manager 1807 and inc
 ## Issues fixed  
 The following issues are fixed in SM 1807:
 
-- 	System Center Operations Manager (SCOM) console and System Center Service Manager (SCSM) console or PowerShell   components cannot coexist on the same server.
+- 	System Center Operations Manager (SCOM) console and System Center Service Manager (SCSM) console or PowerShell components cannot coexist on the same server.
+
+  >[!NOTE]
+
+  > You must install Operations Manager 1807 to resolve this.
+
 - 	The date and time format in some views is not consistent with the settings on the local computer.
 -   SM Console does not release the  memory that is used as soon as the respective window (UI) is closed.
 - 	Console might crash (non en-us locale)  when importing a connector as a CSV file.  
