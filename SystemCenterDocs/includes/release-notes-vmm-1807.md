@@ -43,5 +43,3 @@ The following sections summarize the release notes for VMM 1807 and includes the
 1. Uninstall existing version of DRA
 2. Install VMM 1807 patch
 3. [Install 5.1.3100](http://aka.ms/downloaddra) version or higher.   
-
-**Workaround**:
