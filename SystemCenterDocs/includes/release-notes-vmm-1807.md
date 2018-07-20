@@ -1,19 +1,19 @@
 ---
-ms.assetid: 05fe26c2-25a5-44a0-8a34-20a387d317a3
+ms.assetid: 1bbf9096-f1aa-438a-b40e-8df3c021f3b2
 title: include file
-description: include file to detail the release notes for System Center Virtual Machine Manager 1801
+description: include file to detail the release notes for System Center 1807 Virtual Machine Manager
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
-manager:  riyazp
-ms.date:  04/30/2018
+manager:  vvithal
+ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 
-## VMM 1801 release notes
+## VMM 1807 release notes
 
-The following sections summarize the release notes for VMM 1801 and includes the known issues and workarounds.
+The following sections summarize the release notes for VMM 1807 and include the known issues and workarounds.
 
 ## Latest accessibility fixes in Console are not available
 
@@ -34,10 +34,16 @@ The following sections summarize the release notes for VMM 1801 and includes the
 
 **Workaround**: Clear the setting to avoid issues with these IP addresses.
 
-## Upgrade might fail if the name of a default port classification has been changed
+## VMM integrated with Azure Site Recovery will not support DRA versions earlier than 5.1.3100
 
-**Description**: When you change the original name of a default port classification and then try to upgrade to VMM 1801 – upgrade might fail with the following error message in the VMM setup log.
+**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](http://aka.ms/downloaddra) or higher. Earlier versions are not supported.
 
-*Violation of PRIMARY KEY constraint 'PK_tbl_NetMan_PortClassification'. Cannot insert duplicate key in object 'dbo.tbl_NetMan_PortClassification'*.
+**Workaround**: Use the following steps and upgrade the DRA version:
 
-**Workaround**: Change the port classification name back to original name, and then trigger the upgrade. After the upgrade, you can change the default name to a different one.
+1. Uninstall existing version of DRA
+2. Install VMM 1807 patch)
+3. [Install 5.1.3100](http://aka.ms/downloaddra) version or higher.   
+
+## Host/Cluster refresh might take longer if there are large number of logical network definitions
+
+**Description**: When there are large number of logical network definitions in the environment, cluster/host refresh might take longer than expected.

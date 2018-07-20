@@ -1,23 +1,23 @@
 ---
-ms.assetid: 0b604566-dab0-4e9e-90e1-ff62861c4396
+ms.assetid: 0df52a1b-212b-4600-9ba0-a98447be87cb
 title: include file
-description: include article to detail the system requirements for VMM 1801
+description: include article to detail the system requirements for VMM 1807
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  04/26/2018
+ms.date:  07/24/2018
 ms.topic:  include
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
 ---
 
-## VMM 1801 system requirements
+## VMM 1807 system requirements
 
-The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 1801, and summarize the support for the servers managed in the VMM fabric.
+The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 1807, and summarize the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
 
-The following table provides the scale limits that were tested for System Center 1801 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
+The following table provides the scale limits that were tested for System Center  Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
 
 The [planning guide](https://technet.microsoft.com/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
 
@@ -67,9 +67,7 @@ Window Server 2016 Standard, Datacenter | Y
 
 > [!NOTE]
 
-> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
-
-> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
+> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
 
 **SQL version** | **Supported**
 --- | ---
@@ -77,6 +75,7 @@ SQL Server 2008 | N
 SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)| Y
 SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) | Y
 SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
+SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017) | Y
 SQL Server command line utilities | Install on VMM server if you want to deploy SQL Server data-tier apps in the VMM fabric.<br/><br/> Install SQL Server 2012 Command-Line Utilities from the [Microsoft® SQL Server® 2012 Feature Pack](https://go.microsoft.com/fwlink/?LinkId=253555) <br/> or <br/> Install the SQL Server 2014 Command-Line Utilities from the [Microsoft® SQL Server® 2014 Feature Pack](https://go.microsoft.com/fwlink/?LinkID=529794)  <br/> or <br/> Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676 )<br/><br/> Not required for VMM installation.
 
 ## Virtualization
@@ -114,7 +113,7 @@ Windows Server 1709 | Y | Y | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
 Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 

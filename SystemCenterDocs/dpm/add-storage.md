@@ -6,13 +6,13 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  12/11/2017
-title:  Upgrade to DPM 2016
+ms.date:  7/19/2018
+title:  Add Modern Backup Storage to DPM
 ms.technology:  system-center-2016
 ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce
 ---
 
-# Add storage to DPM 2016
+# Add Modern Backup Storage to DPM
 
 Modern Backup Storage (MBS) is provided by System Center Data Protection Manager (DPM) to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. 
 
@@ -23,7 +23,7 @@ Modern Backup Storage (MBS) is provided by System Center Data Protection Manager
 DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
 
 While you can directly give a volume to DPM, you may face issues in extending the volume if a need arises later. 
-To prepare DPM for future expansion, Use the available disks to create a storage pool, then create volumes on the storage pool, and expose the volumes to DPM. These virtual volumes can then be extended when needed. 
+To prepare DPM for future expansion, use the available disks to create a storage pool, then create volumes on the storage pool, and expose the volumes to DPM. These virtual volumes can then be extended when needed.
 
 The remainder of this article provides the detail on how to add a volume and to expand it later.
 
