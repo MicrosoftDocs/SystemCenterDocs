@@ -74,7 +74,7 @@ For one or more alerts selected in the widget, you can perform such actions as:
 
 - Change resolution state while viewing the details of a particular alert or for one or more alerts selected in the widget.
 - Export the alerts to Excel for further analysis
-- Modify how the alerts are presented by included or excluding columns or how to group alerts, customized to your personal needs 
+- Modify how the alerts are presented by including or excluding columns, how to group alerts, customized to your personal needs 
 
 To perform these actions, hover your mouse over the widget and click on the ellipse **...** on the top right corner of the widget.  This will display actions available for the widget.
   

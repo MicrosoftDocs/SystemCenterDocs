@@ -4,7 +4,7 @@ description: This article describes how to upgrade the SQL Server supporting Sys
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/13/2018
+ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -13,9 +13,12 @@ ms.technology: operations-manager
 ms.topic: conceptual
 ---
 
-## How to upgrade Operations Manager 1807 databases to SQL Server 2017
+# How to upgrade Operations Manager 1807 databases to SQL Server 2017
 
-Use the procedures in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom reports authored outside of Operations Manager, including favorites, and schedules which are stored in the report server database. 
+Use the procedures in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom reports authored outside of Operations Manager, including favorites, and schedules which are stored in the report server database.  
+
+>[!NOTE]
+>Upgrading to SQL Server 2017 uninstalls SQL Reporting Services as this is now a separately-installed feature.
 
 Before performing these upgrade steps, please review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017).
 
@@ -57,15 +60,33 @@ On all the management servers in the management group, stop the Operations Manag
 
 3. Perform the upgrade to SQL Server 2017 following the steps described in the SQL Server  2017 documentation to [upgrade the database engine](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017) and [upgrade Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/upgrade-and-migrate-reporting-services?view=sql-server-2017).
 
+## Install SQL Server 2017 Reporting services
+To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
+
+After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.  This is necessary to configure Reporting Services to:
+
+1. Configure the report server database and select the existing report server database that already contains the content you want to use.
+
+2. Restore the symmetric key that is used to encrypt stored connection strings and credentials.
+
+3. Create and configure the Web Service and Web Portal URLs.
+
+4. Restore custom settings defined in the **Web.config** file enabled in the previous configuration.
+
+5. Run **regedit** from an elevated Command Prompt and navigate to *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\MSSQLServer\CurrentVersion*.  Note the value for the key *CurrentVersion*.   
+
+6. Create registry key ** Version** under *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\MSSQLServer\Setup\* with REG_SZ value noted in the previous step.
+
+7. Reboot the server in order for the changes to take effect. 
+
 ## Verify the installation of SQL Report server
-If you are reinstalling the Operations Manager reporting server component on the original server, perform the following steps to confirm SQL Reporting Services is working correctly.
+After reinstalling the Operations Manager reporting server component, perform the following steps to confirm SQL Reporting Services is working correctly.
 
 1. Run the Reporting Services Configuration tool and connect to the report server instance you just installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server. 
 
 2. Open a browser and type the report server URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the report server during setup. By default, the report server virtual directory is named **ReportServer**. You can use the following URL to verify report server installation: `http://<computer name>/ReportServer<_instance name>`. The URL will be different if you installed the report server as a named instance. 
 
 3. To verify that the web portal is installed and running, open a browser and type the Web Portal URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the web portal during setup or in the Web Portal URL page in the Reporting Services Configuration tool. By default, the web portal virtual directory is **Reports**. You can use the following URL to verify the web portal installation: `http://<computer name>/Reports<_instance name>`. 
-
 
 ## Install Operations Manager Reporting server
 

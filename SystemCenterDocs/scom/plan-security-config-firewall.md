@@ -5,7 +5,7 @@ description: This article provides design guidance for which ports and protocols
 author: mgoedtel
 ms.author: magoedte
 manager: carmomm
-ms.date: 05/21/2018
+ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -29,8 +29,8 @@ The following table shows Operations Manager feature interaction across a firewa
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |Operations console|5724 --->|management server|No||
 |Connector framework source|51905 --->|management server|No||
-|Web console server|Web site port<br> --->|management server|No||
-|Web console browser|51908 --->|web console server|Yes (IIS Admin)|Port 51908 is the default port used when selecting Windows Authentication. If you select Forms Authentication, you will need to install an SSL certificate and configure an available port for https functionality for the Operations Manager web console web site.|
+|Web console server|5724 --->|management server|No||
+|Web console browser|80,443 --->|web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
 |Web console for Application Diagnostics|1433/TCP ---><br>  1434 --->|Operations Manager database|Yes (Setup)||
 |Web console for Application Advisor|1433/TCP ---><br>  1434 --->|Reporting data warehouse|Yes (Setup)||
 |Connected management server (Local)|5724 --->|connected management server (Connected)|No||
@@ -46,9 +46,9 @@ The following table shows Operations Manager feature interaction across a firewa
 |Customer Experience Improvement Program data from client|51907 --->|management server (Customer Experience Improvement Program End) Point|Yes (Client Monitoring Wizard)||
 |Operations console (reports)|80 --->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
 |Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes||
-|Management server (Audit Collection Services collector)1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
+|Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
 
-If SQL Server 2014 Service Pack 2 or SQL Server 2016 is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
+If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
 
 1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for <instance name>, and then double-click **TCP/IP**.
 2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  

@@ -5,7 +5,7 @@ description: This article describes how to repair the installation of the Operat
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -13,7 +13,7 @@ ms.topic: conceptual
 ---
 
 # How to repair the Windows agent
-Use the one of the following procedures to repair the installation of the Windows agent on agent managed computers, including reconfiguration of the APM component for the System Center Operations Manager version 1807 agent from the Operations console.  
+Use the one of the following procedures to repair the installation of the Windows agent on agent-managed computers.  In version 1807, you can reconfigure the Application Performance Monitoring (APM) component for the agent from the Operations console.  
 
 ## To repair the installation of the agent by using the Operations console
 
@@ -80,7 +80,7 @@ Use the one of the following procedures to repair the installation of the Window
 
 2. Open a command prompt.
 
-3. At the prompt, for example, type the following:
+3. Type the following for example, at the prompt:
 
     **%WinDir%\System32\msiexec.exe /fomus <path>\MOMAgent.msi./qb** 
 

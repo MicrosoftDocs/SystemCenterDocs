@@ -5,7 +5,7 @@ description: This article describes how to put a monitored object into maintenan
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -28,7 +28,7 @@ Maintenance mode in Operations Manager enables you to avoid any alerts or errors
 
 For example, an Exchange mailbox role running on a Windows server will have an Exchange Server service pack applied. This software update maintenance is expected to take 60 minutes to complete. During this time, the Mailbox database running on this server will not be available.
 
-In this case, we can put the Exchange Mailbox role and contained components into Maintenance Mode instead of putting the entire computer into Maintenance Mode. This way we can continue to monitor the other components running on the server, including the Windows operating system, while maintenance is performed specifically to the Exchange Server application.
+In this case, you can put the Exchange Mailbox role and contained components into Maintenance Mode instead of putting the entire computer into Maintenance Mode. This way you can continue to monitor the other components running on the server, including the Windows operating system, while maintenance is performed specifically to the Exchange Server application.
 
 You can either select one or more monitoring objects and place them into maintenance mode on-demand, or you can define schedules aligned with your service or maintenance windows, and automatically place them into maintenance mode in the future according to the schedule you choose.  With the new scheduling feature, you can:
 
@@ -56,9 +56,9 @@ You can either select one or more monitoring objects and place them into mainten
 >   - SQLAgentReaderRole
 >   - SQLAgentOperatorRole
 >
->   For more information about setting the SDK action account see [Account Information for Operations Manager](plan-security-accounts.md#system-center-configuration-service-and-system-center-data-access-service-account)
+>   For more information about setting the SDK action account, see [Account Information for Operations Manager](plan-security-accounts.md#system-center-configuration-service-and-system-center-data-access-service-account)
 
-To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform this from the Operations console.  This can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
+To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform it from the Operations console.  It can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
 The following section describes how to work with the different options for the on-demand maintenance mode feature.
 
@@ -107,7 +107,7 @@ The following section describes how to work with the different options for the o
 
 4.  In the **Windows Computers** pane, right-click the computer that you want to take out of maintenance mode, click **Maintenance Mode**, and then click **Stop Maintenance Mode**.
 
-5.  In the **Maintenance Mode** dialog box, do the following:
+5.  Do the following in the **Maintenance Mode** dialog box:
 
     1.  If you selected **Selected objects and all their contained objects** when you placed the computer into maintenance mode, select **Remove contained objects** and then click **Yes**.
 
@@ -121,7 +121,7 @@ The following section describes how to work with the different options for the o
 
 ### Enable from Target System
 
-Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry which stores arguments for Maintenance Mode, such as duration, reason, comment and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
+Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry, which stores arguments for Maintenance Mode, such as duration, reason, comment, and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
 
 **Start-SCOMAgentMaintenanceMode** has the following syntax:
 
@@ -155,7 +155,7 @@ The following reasons are accepted by the cmdlet:
 
     `Start-SCOMAgentMaintenanceMode -Duration 5 –Reason PlannedOther` 
 
-2. To enable for an interval of ten (10) minutes with no reason, type:
+2. To enable for an interval of 10 minutes with no reason, type:
 
     `Start-SCOMAgentMaintenanceMode -Duration 10`
 
@@ -192,7 +192,7 @@ The following procedure describes how to create a maintenance schedule for selec
 
 3. In the **Administration** workspace, expand **Device Management**, and then click **Maintenance Schedules**.
 
-4. From the **Tasks** pane click **Create Maintenance Schedule**.
+4. From the **Tasks** pane, click **Create Maintenance Schedule**.
 
 5. In the **Create Maintenance Schedule** wizard, on the **Object Selection** page, click **Add/Remove objects...** and the **Create Group Wizard - Object Selection** dialog box appears.
 

@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  carmonm
-ms.date: 06/27/2018
+ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -168,7 +168,7 @@ To set up an availability group you'll need to deploy a Windows Server Failover 
 
 Operations Manager does not support the connection string key words (MultiSubnetFailover=True).  Because an availability group has a listener name (known as the network name or Client Access Point in the WSFC Cluster Manager) depending on multiple IP addresses from different subnets, such as when you deploy in a cross-site failover configuration, client-connection requests from management servers to the availability group listener will hit a connection timeout.  
 
-The recommended approach to work around this when you have deployed server nodes in the availability group in a multi-subnet environment, is to do the following:
+The recommended approach to work around this limitation when you have deployed server nodes in the availability group in a multi-subnet environment, is to do the following:
 
 1.	Set the network name of your availability group listener to only register a single active IP address in DNS 
 2.	Configure the cluster to use a low TTL value for the registered DNS record
@@ -198,7 +198,7 @@ When a clustered or an Always On SQL instance is used for high availability, you
 
 ## Optimizing SQL Server
 
-In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather it is directly related to the configuration of the storage subsystem.  This is commonly attributed to not following recommended configuration guidance for the storage provisioned for the SQL Server database instance.  Such examples are,
+In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather it is directly related to the configuration of the storage subsystem.  Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance.  Such examples are:
 
 -  Insufficient allocation of spindles for the LUNs to support the IO requirements of Operations Manager.  
 -  Hosting transaction logs and database files on the same volume.  These two workloads have different IO and latency characteristics.
@@ -212,7 +212,7 @@ It is important to test the SQL Server design by performing throughput testing o
 
 ### NTFS allocation unit size
 
-Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation; these are most commonly the result of partition misalignment with stripe unit boundaries. This can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
+Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and are most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
 When formatting the partition that will be used for SQL Server data files, it is recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it is not recommended. 
 
 ### Reserve memory
@@ -292,7 +292,7 @@ Note In this configuration, N represents the number of processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was a HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, there continued to be a query parallelism bottleneck.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 

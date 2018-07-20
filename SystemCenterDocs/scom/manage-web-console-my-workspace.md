@@ -4,7 +4,7 @@ description: This article describes how to use My Workspace in the Operations Ma
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 07/19/2019
+ms.date: 07/20/2019
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -33,7 +33,7 @@ When you go to My Workspace, you will see the view or dashboard that you added l
   
 ## Create dashboards  
 
-Dashboards that you create in My Workspace are unique, they are not shortcuts to existing dashboards. As an operator, you can create dashboards in Operations Manager version 1807 Web console in My Workspace.  You must have the rights of the Operator role in order to create them.  
+Dashboards that you create in My Workspace are unique, they are not shortcuts to existing dashboards. As an operator, you can create dashboards in Operations Manager version 1807 Web console in My Workspace.    
   
 >[!NOTE]
 >The steps to create a dashboard and add a web part are similar to how you create one in the Monitoring workspace, with one difference - you are not prompted to specify a management pack to save it to. Instead you are prompted to specify an existing folder or create a new one in your workspace.     
