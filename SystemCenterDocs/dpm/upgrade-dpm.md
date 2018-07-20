@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  3/30/2018
+ms.date:  7/19/2018
 title:  Upgrade your System Center DPM 
 ms.technology:  system-center-2016
 ms.assetid:
@@ -16,10 +16,17 @@ ms.assetid:
 
 This article provides the information for upgrading DPM to one of the following versions:
 
+- 1807, you can only update to 1807 from 1801
 - 1801
 - 2016
 
-By default, this article displays the information for the DPM 1801 release. To view the information for a different version, use the selector to the left.
+By default, this article displays the information for the DPM 1807 release. To view the information for a different version, use the selector to the left.
+
+::: moniker range="sc-dpm-1807"
+
+[!INCLUDE [upgrade-to-dpm-1807.md](../includes/upgrade-to-dpm-1807.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-1801"
 

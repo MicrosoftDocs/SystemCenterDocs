@@ -229,6 +229,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
         set IsDeleted=1
         where ScheduleId = @refresh_jobid
         ```
+
 ## Upgrade SQL 2016 to SQL 2017
 
 If you want to use SQL 2017 with DPM Semi Annual Channel 1801 or later, you must upgrade SQL 2016 to SQL 2017. You can upgrade SQL Server 2016, or SQL Server 2016 SP1 Enterprise or Standard, to SQL 2017. The following procedure lists the steps to upgrade SQL 2016 to SQL 2017. 
