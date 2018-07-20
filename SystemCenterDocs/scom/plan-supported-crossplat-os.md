@@ -88,7 +88,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWopenssl-libraries|SUNopenssl-libraries (Usr)|11.10.0,REV=2005.01.21.15.53|
-|SUNWcsr|Core Solaris, (Root)|11.10.0, REV=2005.01.21.15.53|
+|SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|  
   
 ## Solaris 10 x86  
@@ -97,10 +97,10 @@ The following tables describe the required UNIX and Linux operating systems and 
 |--------------------|---------------|-------------------|  
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.10, REV=2004.12.20|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.12.18|
-|SUNWcsl|Core Solaris, (Shared Libs)|11.10.0, REV=2005.01.21.16.34|
+|SUNWcsl|Core Solaris (Shared Libs)|11.10.0, REV=2005.01.21.16.34|
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.16.34|
 |SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.10.0, REV=2005.01.21.16.34|
-|SUNWcsr|Core Solaris, (Root)|11.10.0, REV=2005.01.21.16.34|
+|SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.16.34|
 |Release|Oracle Solaris 10 9/10|s10x_u9wos_14a x86|
   
 ## Solaris 11 SPARC  
@@ -110,8 +110,8 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
 |SUNWcslr|Core Solaris Libraries (Root)|11.11, REV=2009.11.11|
-|SUNWcsl|Core Solaris, (Shared Libs)|11.11, REV=2009.11.11|
-|SUNWcsr|Core Solaris, (Root)|11.11, REV=2009.11.11|
+|SUNWcsl|Core Solaris (Shared Libs)|11.11, REV=2009.11.11|
+|SUNWcsr|Core Solaris (Root)|11.11, REV=2009.11.11|
 |SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
 |Release|Oracle Solaris 11|11/11 SPARC|
   
@@ -122,8 +122,8 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
 |SUNWcslr|Core Solaris Libraries (Root)|11.11, REV=2009.11.11|
-|SUNWcsl|Core Solaris, (Shared Libs)|11.11, REV=2009.11.11|
-|SUNWcsr|Core Solaris, (Root)|11.11, REV=2009.11.11|
+|SUNWcsl|Core Solaris (Shared Libs)|11.11, REV=2009.11.11|
+|SUNWcsr|Core Solaris (Root)|11.11, REV=2009.11.11|
 |SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
 |Release|Oracle Solaris 11|11/11 X86|  
   
