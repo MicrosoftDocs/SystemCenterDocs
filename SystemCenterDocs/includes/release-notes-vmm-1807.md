@@ -43,3 +43,7 @@ The following sections summarize the release notes for VMM 1807 and include the 
 1. Uninstall existing version of DRA
 2. Install VMM 1807 patch)
 3. [Install 5.1.3100](http://aka.ms/downloaddra) version or higher.   
+
+## Host/Cluster refresh might take longer if there are large number of logical network definitions
+
+**Description**: When there are large number of logical network definitions in the environment, cluster/host refresh might take longer than expected.
