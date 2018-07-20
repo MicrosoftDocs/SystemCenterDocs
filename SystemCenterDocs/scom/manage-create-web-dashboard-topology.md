@@ -96,13 +96,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
     For either option selected, you can search by keyword in the list.  As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
 
-10. Select **Display** to choose an image for the topology widget to display in the authoring pane.  Click **Select Image** and on the **Select Image** pane if you already added a custom image by performing these steps earlier, then select an image from the list.
-
-    ![Add custom image to Topology widget](./media/create-web-dashboard-topology/dashboard-topology-add-image.png)  
-
-    Otherwise, click **Add custom image** and navigate to where the file is located.
-
-    ![Select new image for Topology widget](./media/create-web-dashboard-topology/web-console-new-dashboard-topology-02.png) 
+10. Select **Display** to choose an image for the topology widget to display in the authoring pane.  Click **Select Image**, and on the **Select Image** pane if you already added a custom image earlier, then select an image from the list. Otherwise, click **Add custom image** and navigate to where the file is located.
 
 11. After selecting the file, click **Open** and the image will be uploaded and presented in the **Select Image** pane.  Click **Done** to complete. 
 
