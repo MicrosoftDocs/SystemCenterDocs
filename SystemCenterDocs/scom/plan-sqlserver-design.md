@@ -5,7 +5,7 @@ description:  This article provides detailed design guidance for SQL Server to s
 author: mgoedtel
 ms.author: magoedte
 manager:  carmonm
-ms.date: 04/06/2018
+ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -20,6 +20,17 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 
 ## SQL Server requirements
+
+::: moniker range="sc-om-1807"
+
+The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version 1807 to host Reporting Server, Operational, Data Warehouse, and ACS database:
+
+* SQL Server 2017 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20service%20pack)
+* SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+
+Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md). 
+
+::: moniker-end
 
 ::: moniker range="sc-om-1801"
 
@@ -149,20 +160,20 @@ With System Center 2016 - Operations Manager, SQL Always On is preferred over fa
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
-- [Learn more](https://msdn.microsoft.com/library/ff878487.aspx) about Always On prerequisites
-- [Learn more](https://msdn.microsoft.com/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
-- [Learn more](https://msdn.microsoft.com/library/ff878265.aspx) about setting up an availability group
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff878487.aspx) about Always On prerequisites
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
+- [Learn more](https://msdn.microsoft.com/en-us/library/ff878265.aspx) about setting up an availability group
 
 ### Multisubnet string
 
 Operations Manager does not support the connection string key words (MultiSubnetFailover=True).  Because an availability group has a listener name (known as the network name or Client Access Point in the WSFC Cluster Manager) depending on multiple IP addresses from different subnets, such as when you deploy in a cross-site failover configuration, client-connection requests from management servers to the availability group listener will hit a connection timeout.  
 
-The recommended approach to work around this when you have deployed server nodes in the availability group in a multi-subnet environment, is to do the following:
+The recommended approach to work around this limitation when you have deployed server nodes in the availability group in a multi-subnet environment, is to do the following:
 
 1.	Set the network name of your availability group listener to only register a single active IP address in DNS 
 2.	Configure the cluster to use a low TTL value for the registered DNS record
 
-These settings allow, when failover to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
+These settings allow, when fail over to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
 Run the following Powershell query on any one of the SQL nodes to modify its settings.
 
@@ -187,7 +198,7 @@ When a clustered or an Always On SQL instance is used for high availability, you
 
 ## Optimizing SQL Server
 
-In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather it is directly related to the configuration of the storage subsystem.  This is commonly attributed to not following recommended configuration guidance for the storage provisioned for the SQL Server database instance.  Such examples are,
+In general, previous deployment experience with customers shows that performance issues are typically not caused by high resource utilization (that is, processor or memory) with SQL Server itself; rather it is directly related to the configuration of the storage subsystem.  Performance bottlenecks are commonly attributed to not following recommended configuration guidance with the storage provisioned for the SQL Server database instance.  Such examples are:
 
 -  Insufficient allocation of spindles for the LUNs to support the IO requirements of Operations Manager.  
 -  Hosting transaction logs and database files on the same volume.  These two workloads have different IO and latency characteristics.
@@ -195,13 +206,13 @@ In general, previous deployment experience with customers shows that performance
 -  Disk partition misalignment of volumes hosting the database transaction logs, database files, and TempDB
 -  Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, etc. 
 
-Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  Operations Manager’s I/O behavior pattern is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
+Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
 It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](http://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance. 
 
 ### NTFS allocation unit size
 
-Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation; these are most commonly the result of partition misalignment with stripe unit boundaries. This can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
+Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and are most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
 When formatting the partition that will be used for SQL Server data files, it is recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it is not recommended. 
 
 ### Reserve memory
@@ -212,11 +223,17 @@ By default, SQL Server can change its memory requirements dynamically based on a
 
 SQL Server allows you to configure the minimum and maximum amount of memory that should be reserved and used by its process. Specify at least 4 GB of RAM as minimum amount. This should be done for every SQL node hosting one of the Operations Manager databases (Operational, Data warehouse, ACS).
 
-First start by reserving 1 GB of RAM for the OS, 1 GB for each 4 GB of RAM installed from 4–16 GB, and then 1 GB for every 8 GB RAM installed above 16 GB RAM.  Then monitor the Memory\Available MBytes performance counter in Windows to determine if you can increase the memory available to SQL Server above the starting value. (Note: This counter should remain above the 150-300 MB at a bare minimum, Windows signals the LowMemoryResourceNotification at 96MB so you want a buffer, but you should consider having it start above 1GB on larger servers with 256 GB or higher RAM). This has typically worked out well for servers that are dedicated to SQL Server.  You can also get much more technical with determining where to set 'max server memory' by working out the specific memory requirements for the OS, other applications, the SQL Server thread stack, and other multipage allocators.  Typically this would be  ((Total system memory) – (memory for thread stack) – (OS memory requirements ~ 2-4 GB) – (memory for other applications) – (memory for multipage allocations; SQLCLR, linked servers, etc.)), where the memory for thread stack = ((max worker threads) *(stack size)) and the stack size is 512 KB for x86 systems, 2 MB for x64 systems and 4 MB for IA64 systems.  The value for 'max worker threads' can be found in the max_worker_count column of sys.dm_os_sys_info.  However, the assumption with either of these methods is that you want SQL Server to use everything that is available on the machine, unless you've made reservations in the calculations for other applications. 
+First start by reserving 1 GB of RAM for the OS, 1 GB for each 4 GB of RAM installed from 4–16 GB, and then 1 GB for every 8 GB RAM installed above 16 GB RAM.  Then monitor the Memory\Available MBytes performance counter in Windows to determine if you can increase the memory available to SQL Server above the starting value. 
+
+>[!NOTE]
+>This counter should remain above the 150-300 MB at a bare minimum.  Windows signals the LowMemoryResourceNotification at 96 MB so you want a buffer, but you should consider starting above 1 GB on larger servers with 256 GB or higher RAM. 
+>
+
+This approach has typically worked out well for servers that are dedicated to SQL Server.  You can also get much more technical with determining where to set 'max server memory' by working out the specific memory requirements for the OS, other applications, the SQL Server thread stack, and other multipage allocators.  Typically this would be  ((Total system memory) – (memory for thread stack) – (OS memory requirements ~ 2-4 GB) – (memory for other applications) – (memory for multipage allocations; SQLCLR, linked servers, etc.)), where the memory for thread stack = ((max worker threads) *(stack size)) and the stack size is 512 KB for x86 systems, 2 MB for x64 systems and 4 MB for IA64 systems.  The value for 'max worker threads' can be found in the max_worker_count column of sys.dm_os_sys_info.  However, the assumption with either of these methods is that you want SQL Server to use everything that is available on the machine, unless you've made reservations in the calculations for other applications. 
 
 As more customers move towards virtualizing SQL Server in their environment, this question is more relevant in determining what is the minimum amount of memory that a SQL Server will need to run in a virtual machine.  Unfortunately there is no way to calculate what the ideal amount of memory for a given instance of SQL Server might actually be since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as you can give it.  One of the things to keep in mind when you are looking at reducing the memory allocated to a SQL Server instance, is that you will eventually get to a point where the lower memory gets traded off for higher disk I/O access. 
 
-If you need to figure out the ideal configuration for SQL Server memory in an environment that has been over provisioned, the best way to try to go about doing this is start off with a baseline of the environment and the current performance metrics.  Counters to begin monitoring would include: 
+If you need to figure out the ideal configuration for SQL Server memory in an environment that has been over provisioned, the best way to try to go about doing it is to start with a baseline of the environment and the current performance metrics.  Counters to initially monitor include: 
 
 -  SQL Server:Buffer Manager\Page Life Expectancy 
 -  SQL Server:Buffer Manager\Page reads/sec 
@@ -234,9 +251,9 @@ The size and physical placement of the tempdb database can affect the performanc
 To achieve optimal tempdb performance, we recommend the following configuration for tempdb in a production environment:
 
 -  Set the recovery model of tempdb to SIMPLE. This model automatically reclaims log space to keep space requirements small.
--  Preallocate space for all tempdb files by setting the file size to a value large enough to accommodate the typical workload in the environment. This prevents tempdb from expanding too frequently, which can affect performance. The tempdb database can be set to autogrow, but this should be used to increase disk space for unplanned exceptions.
--  Create as many files as needed to maximize disk bandwidth. Using multiple files reduces tempdb storage contention and yields significantly better scalability. However, do not create too many files because this can reduce performance and increase management overhead. As a general guideline, create one data file for each logical processor on the server (accounting for any affinity mask settings) and then adjust the number of files up or down as necessary. As a general rule, if the number of logical processors is less than or equal to 8, use the same number of data files as logical processors. If the number of logical processors is greater than 8, use 8 data files and then if contention continues, increase the number of data files by multiples of 4 (up to the number of logical processors) until the contention is reduced to acceptable levels or make changes to the workload/code. If the contention is not reduced, you may have to increase the number of data files more.  
--  Make each data file the same size; this allows for optimal proportional-fill performance.  The equal sizing of data files is critical because the proportional fill algorithm is based on the size of the files. If data files are created with unequal sizes, the proportional fill algorithm tries to use the largest file more for GAM allocations instead of spreading the allocations between all the files, thereby defeating the purpose of creating multiple data files.
+-  Preallocate space for all tempdb files by setting the file size to a value large enough to accommodate the typical workload in the environment. It prevents tempdb from expanding too frequently, which can affect performance. The tempdb database can be set to autogrow, but this should be used to increase disk space for unplanned exceptions.
+-  Create as many files as needed to maximize disk bandwidth. Using multiple files reduces tempdb storage contention and yields improved scalability. However, do not create too many files as it can reduce performance and increase management overhead. As a general guideline, create one data file for each logical processor on the server (accounting for any affinity mask settings) and then adjust the number of files up or down as necessary. As a general rule, if the number of logical processors is less than or equal to 8, use the same number of data files as logical processors. If the number of logical processors is greater than 8, use eight data files and then if contention continues, increase the number of data files by multiples of 4 (up to the number of logical processors) until the contention is reduced to acceptable levels or make changes to the workload/code. If the contention is not reduced, you may have to increase the number of data files more.  
+-  Make each data file the same size; allowing for optimal proportional-fill performance.  The equal sizing of data files is critical because the proportional fill algorithm is based on the size of the files. If data files are created with unequal sizes, the proportional fill algorithm tries to use the largest file more for GAM allocations instead of spreading the allocations between all the files, thereby defeating the purpose of creating multiple data files.
 -  Put the tempdb database on a fast I/O subsystem using solid-state drives for the most optimal performance. Use disk striping if there are many directly attached disks.
 -  Put the tempdb database on disks that differ from those that are used by user databases.
 
@@ -281,15 +298,15 @@ Note In this configuration, N represents the number of processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across five thousand Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was a HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, there continued to be a query parallelism bottleneck.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across 5,000 Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 
-Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors which can influence growth in the near term versus long term.  
+Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors, which can influence growth in the near term versus long term.  
 
-The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then re-indexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database. 
+The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database. 
 
-Proactive monitoring of the growth of the operational and data warehouse database should be performed on a daily or weekly cycle.  This will be necessary to identify unexpected and significant growth spurts, and begin troubleshooting in order to determine if it is caused by a bug in a management pack workflow (i.e. discovery rule, performance or event collection rule, or monitor or alert rule) or other symptom with a management pack that was not identified during testing and quality assurance phase of the release management process.  
+Proactive monitoring of the growth of the operational and data warehouse database should be performed on a daily or weekly cycle.  This will be necessary to identify unexpected and significant growth spurts, and begin troubleshooting in order to determine if it is caused by a bug in a management pack workflow (that is, discovery rule, performance or event collection rule, or monitor or alert rule) or other symptom with a management pack that was not identified during testing and quality assurance phase of the release management process.  
 
 ### Database autogrow
 
@@ -303,13 +320,13 @@ Only rely on autogrow as a contingency for unexpected growth.  Autogrow introduc
 
 If you combine the autogrow and autoshrink options, you might create unnecessary overhead. Make sure that the thresholds that trigger the grow and shrink operations will not cause frequent up and down size changes. For example, you may run a transaction that causes the transaction log to grow by 100 MB by the time it commits. Some time after that the autoshrink starts and shrinks the transaction log by 100 MB. Then, you run the same transaction and it causes the transaction log to grow by 100 MB again. In that example, you are creating unnecessary overhead and potentially creating fragmentation of the log file, either of which can negatively affect performance.
 
-It is recommended to configure these two settings very carefully. The particular configuration really depends on your environment. In general, it is recommended to increase database size by a fixed amount in order to reduce disk fragmentation. See for example the following figure, where the database is configured to grow by 1024 MB each time autogrow is required.
+It is recommended to configure these two settings carefully. The particular configuration really depends on your environment. In general, it is recommended to increase database size by a fixed amount in order to reduce disk fragmentation. See, for example, the following figure, where the database is configured to grow by 1024 MB each time autogrow is required.
 
 ### Cluster failover policy
 
-Windows Server Failover Clustering is a high availability platform that is constantly monitoring the network connections and health of the nodes in a cluster.  If a node is not reachable over the network, then recovery action is taken to recover and bring applications and services online on another node in the cluster.  The default settings out of the box are optimized for failures where there is a complete loss of a server, which is considered a ‘hard’ failure.  These would be unrecoverable failure scenarios such as the failure of non-redundant hardware or power.  In these situations, the server is lost and the goal is for Failover Clustering to very quickly detect the loss of the server and rapidly recover on another server in the cluster.  To accomplish this fast recovery from hard failures, the default settings for cluster health monitoring are fairly aggressive.  However, they are fully configurable to allow flexibility for a variety of scenarios.
+Windows Server Failover Clustering is a high availability platform that is constantly monitoring the network connections and health of the nodes in a cluster.  If a node is not reachable over the network, then recovery action is taken to recover and bring applications and services online on another node in the cluster.  The default settings out of the box are optimized for failures where there is a complete loss of a server, which is considered a ‘hard’ failure.  These would be unrecoverable failure scenarios such as the failure of non-redundant hardware or power.  In these situations, the server is lost and the goal is for Failover Clustering to quickly detect the loss of the server and rapidly recover on another server in the cluster.  To accomplish this fast recovery from hard failures, the default settings for cluster health monitoring are fairly aggressive.  However, they are fully configurable to allow flexibility for a variety of scenarios.
 
-These default settings deliver the best behavior for most customers, however as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to additional and potentially unreliable networking components between the nodes.  Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of non-redundant hardware failures may potentially be fairly rare.  Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes.  By increasing the default failure thresholds you can decrease the sensitivity to brief network issues that last a short period of time.
+These default settings deliver the best behavior for most customers, however as clusters are stretched from being inches to possibly miles apart, the cluster may become exposed to additional and potentially unreliable networking components between the nodes.  Another factor is that the quality of commodity servers is constantly increasing, coupled with augmented resiliency through redundant components (such as dual power supplies, NIC teaming, and multi-path I/O), the number of non-redundant hardware failures may potentially be fairly rare.  Because hard failures may be less frequent, some customers may wish to tune the cluster for transient failures, where the cluster is more resilient to brief network failures between the nodes.  By increasing the default failure thresholds, you can decrease the sensitivity to brief network issues that last a short period of time.
 
 It is important to understand that there is no right answer here, and the optimized setting may vary by your specific business requirements and service level agreements.
 

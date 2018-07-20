@@ -5,7 +5,7 @@ description: This article describes how to move the Operations Manager Reporting
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 11/01/2016
+ms.date: 07/17/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to move the Reporting data warehouse database
 
-After the initial deployment of System Center 2016 – Operations Manager, you might need to move the Reporting data warehouse database from one Microsoft SQL Server-based computer to another.
+After the initial deployment of System Center Operations Manager, you might need to move the Reporting data warehouse database from one Microsoft SQL Server-based computer to another.
 
 During the move, you need to stop services on your management servers, back up the database, restore the database, update the registry on management servers, update database tables, add new Logins, and modify User Mapping settings for Logins. For more information, see [SQL Server documentation](https://msdn.microsoft.com/library/mt590198%28v=sql.1%29.aspx).
 
@@ -61,13 +61,17 @@ On the reporting server, you will need to change the connection string to refere
 ### Update security credentials on the new SQL Server instance hosting the Reporting data warehouse database 
 
 1.	On the new SQL Server instance hosting the Reporting data warehouse database, open SQL Management Studio.  
+
 2.	Expand **Security**, then expand **Logins**, and then add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
+
 3. Under **Logins**, add the data reader account.
+
 4. Under **Logins**, add the Data Access Service user account, using the form "domain\user".
+
 5. For the Data Access Service (DAS) user account, add the following user mappings:
   - db_datareader
   - OpsMgrReader
-  - apm_datareader
+  - apm_datareader 
 
 6. If an account has not existed before in the SQL instance in which you are adding it, the mapping will be picked up by SID automatically from the restored data warehouse database. If the account has existed in that SQL instance before, you receive an error indicating failure for that login, although the account appears under Logins. If you are creating a new login, ensure the User Mapping for that login and database are set to the same values as the previous login as follows:
 
@@ -87,16 +91,23 @@ On the reporting server, you will need to change the connection string to refere
   - Microsoft Monitoring Agent
   - System Center Management Configuration
 
+### Update Service Principal Name for Kerberos Connections
+To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  
+
 ## To verify a successful move of the data warehouse database
 
 1. Verify that you can successfully run a report from the console.
+
 2. Ensure that the health state of all management servers in the management group are Healthy.  If the health state of any management server is Critical, open Health Explorer, expand Availability - <server name>, and then continue to expand until you can navigate to Data Warehouse SQL RS Deployed Management Pack List Request State. Check the associated events to determine if there is an issue accessing the data warehouse database.
-3. Check operating system events.  
+
+3. Check operating system events. 
+ 
     a. Open the Event Viewer and navigate to Applications and Services Logs and Operations Manager.    
     b. In the Operations Manager log, search for events with a Source of Health Service Module and a Category of Data Warehouse.  If the move was successful, event number 31570, 31558, or 31554 should exist.  
     c. If there is an issue accessing the data warehouse database, event numbers 31563, 31551, 31569, or 31552 will exist.
 
 4. Check events in Operations Manager:  
+
     a. In the Operations console, click Monitoring.  
     b. In the Monitoring workspace, navigate to Monitoring, Operations Manager, Health Service Module Events, and then to Performance Data Source Module Events.  
     c. Search the Performance Data Source Module Events pane for events with a Date and Time that is later than the move.  

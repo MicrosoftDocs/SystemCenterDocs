@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/16/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -70,7 +70,7 @@ Communication between the Operations Manager management server and UNIX/Linux ag
 To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which they use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
 
 1. Open the **Registry Editor** from an elevated command prompt.
-2. Create registry key** UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
+2. Create registry key **UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
 
 If you need to restore the original configuration using the WSMAN Sync APIs, you can delete the **UseMIAPI** registry key.
 
@@ -152,8 +152,8 @@ Configuration of agent assignment is managed by an Operations Manager administra
 
 ## Next steps
 
-* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](~/scom/manage-deploy-windows-agent-console.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).  
+* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).  
 
-* To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](~/scom/manage-deploy-crossplat-agent-console.md).   
+* To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).   
 
 * Review [How to configure and use Active Directory Integration for agent assignment](manage-ad-integration-agent-assignment.md) to learn how to create the container in Active Directory, configure agent failover assignment, and manage the configuration.   
