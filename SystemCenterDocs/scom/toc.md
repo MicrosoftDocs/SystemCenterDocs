@@ -15,6 +15,7 @@
 ## [Plan](plan-overview.md)
 ### [System requirements](plan-system-requirements.md)
 ### [Supported versions of UNIX and Linux](plan-supported-crossplat-os.md)
+### [Supported versions of UNIX and Linux - 1807](plan-supported-crossplat-os-1807.md)
 ### [Planning a management group design](plan-mgmt-group-design.md)
 ### [SQL Server design considerations](plan-sqlserver-design.md)
 ### [Resource pool design considerations](plan-resource-pool-design.md)

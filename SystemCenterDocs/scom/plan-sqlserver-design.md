@@ -173,7 +173,7 @@ The recommended approach to work around this limitation when you have deployed s
 1.	Set the network name of your availability group listener to only register a single active IP address in DNS 
 2.	Configure the cluster to use a low TTL value for the registered DNS record
 
-These settings allow, when failover to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
+These settings allow, when fail over to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
 Run the following Powershell query on any one of the SQL nodes to modify its settings.
 
@@ -206,7 +206,7 @@ In general, previous deployment experience with customers shows that performance
 -  Disk partition misalignment of volumes hosting the database transaction logs, database files, and TempDB
 -  Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, etc. 
 
-Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  Operations Manager’s I/O behavior pattern is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
+Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
 It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](http://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance. 
 

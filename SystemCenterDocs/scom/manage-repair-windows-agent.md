@@ -17,7 +17,7 @@ Use the one of the following procedures to repair the installation of the Window
 
 ## To repair the installation of the agent by using the Operations console
 
-1. Log on to the Operations console with an account that is a member of the Operations Manager Administrators role.
+1. Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
 2.  Click **Administration**.
 
@@ -58,7 +58,7 @@ Use the one of the following procedures to repair the installation of the Window
 
 ## To repair the agent by using the MOMAgent.msi setup wizard
 
-1. Log on to a managed computer with an account that is a member of the Administrators security group for the computer.
+1. Sign in to a managed computer with an account that is a member of the Administrators security group for the computer.
 
 2. In **Control Panel**, click **Programs and Features**.
 
@@ -76,11 +76,11 @@ Use the one of the following procedures to repair the installation of the Window
 9. 
 ## To repair the agent by using MOMAgent.msi from the command line
 
-1.  Log on to a managed computer with an account that is a member of the administrators security group for the computer.
+1.  Sign in to a managed computer with an account that is a member of the administrators security group for the computer.
 
 2. Open a command prompt.
 
-3. Type the following for example, at the prompt:
+3. Type the following, for example, at the prompt:
 
     **%WinDir%\System32\msiexec.exe /fomus <path>\MOMAgent.msi./qb** 
 
