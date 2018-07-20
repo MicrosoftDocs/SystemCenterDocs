@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 7/2/2018
+ms.date: 7/19/2018
 title:  What's new in System Center DPM 2016, 1801, and 1807
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -14,13 +14,17 @@ ms.author: markgal
 
 # What's new in System Center DPM
 
-Before starting, check the [System Center DPM Release Notes](dpm-release-notes.md) for last-minute issues. Also, if you're upgrading to DPM 1801, see the [bugs that have been fixed](dpm-release-notes.md#bugs-fixed-in-the-dpm-1801-release). System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, resulting in faster backups. DPM 2016 supports shielded VMs.
+This article has information about multiple versions of System Center Data Protection Manager (DPM). By default the article shows the information DPM 2016, 1801, and 1807. If you are a DPM 2016 customer and don't want to see the information about the 1801 or 1807 versions, choose 2016 from the version picker to the left.
+ 
+Before starting, check the [System Center DPM Release Notes](dpm-release-notes.md) for last-minute issues. DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [bugs that have been fixed](dpm-release-notes.md#release-notes-for-system-center-dpm-1807). 
+
+System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, resulting in faster backups. DPM 2016 supports shielded VMs.
 
 ::: moniker range="sc-dpm-1807"
 
-## New features in DPM 1801
+## What's new in DPM 1807
 
-New features and capabilities are available in DPM 1807.
+DPM 1807 provides a number of bugs fixes to improve performance. See the [KB article](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409) for a full list of the bug fixes.
 
 ::: moniker-end
 
