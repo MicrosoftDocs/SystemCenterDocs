@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 07/22/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -16,7 +16,7 @@ ms.topic: article
 # How to create a dashboard with the PowerShell widget in the Web console
 In System Center Operations Manager version 1801 and higher, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to create a dashboard in the new HTML5 Web console with the PowerShell widget.
 
-The script will typically use the Operations Manager cmdlets to retrieve information from the management group.  It must then use the ScriptContext object to create a Data Object and then add that object to the ReturnCollection property.  Typically with the Silverlight based PowerShell widget, scripts were configured with the variable named $dataObject, and this variable held data returned from ScriptContext object.  However, this widget does not support that variable name and will return an error when you attempt to save your changes.  Replace this variable name with a custom name such as $mydataObject.  
+The script will typically use the Operations Manager cmdlets to retrieve information from the management group.  It must then use the ScriptContext object to create a Data Object and then add that object to the ReturnCollection property.  Typically with the Silverlight based PowerShell widget, scripts were configured with the variable named $dataObject, and this variable held data returned from ScriptContext object.  However, this widget does not support that variable name and will return an error when you attempt to save your changes.  Replace this variable name with a custom name such as $results.  
 
 ## Add widget to dashboard
 
@@ -48,9 +48,26 @@ The script will typically use the Operations Manager cmdlets to retrieve informa
 
     ![Enter PowerShell script](./media/create-web-dashboard-posh/add-posh-widget-01.png)  
 
+    The following sample script creates a table of numbered Windows Computer objects and displays the ID, health state, and display name for each.  
+
+    ```
+    $class = Get-SCOMClass -Name Microsoft.Windows.Computer  
+    $computers = Get-SCOMClassInstance -Class $class  
+    $i=1  
+    foreach ($computer in $computers)  
+    {  
+        $results=$ScriptContext.CreateFromObject($computer,"Id=Id,HealthState=HealthState,DisplayName=DisplayName",$null)   
+        $results["CustomColumn"]=$i   
+        $ScriptContext.ReturnCollection.Add($results)   
+        $i++   
+    }  
+    ```
+
 10. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 After the widget has been created, it displays the results of your script.  
+
+![PowerShell widget results example](./media/create-web-dashboard-posh/dashboard-posh-widget-results.png)
 
 ## Actions with PowerShell widget 
 With a PowerShell widget, you can perform such actions as:
