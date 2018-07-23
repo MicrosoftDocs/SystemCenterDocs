@@ -39,6 +39,7 @@ DPM 1807 provides a number of bugs fixes to improve performance. See the [KB art
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2016"
 ## New features in DPM 2016
 
 The following features are either new to DPM, or are improved for DPM 2016.
@@ -195,3 +196,5 @@ To give permissions to the share
 14. When you are finished adding permissions for the servers, click **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
+::: moniker-end
+
