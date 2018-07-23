@@ -62,7 +62,7 @@ The account should be either a Domain User or LocalSystem.  The account used for
 * Presents the computer’s credentials to remote computers
 
 > [!NOTE] 
-> If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.  
+> If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer is assigned the sdk_user role on the Operations Manager database computer.  
 
 For more information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/Services/localsystem-account.md) 
 
@@ -93,11 +93,11 @@ The Data Reader account is used to deploy reports, define what user the SQL Serv
 | Operations Manager | Run As account | Data Warehouse Report Deployment account | 
 | Windows service | SQL Server Reporting Services | Logon account |
 
-Ensure that the account you plan to use for the Data Reader account has Log on as Service and Allow Log on Locally rights for each management server, and the SQL Server hosting the Reporting Server role.  
+Verify the account you plan to use for the Data Reader account is granted the Log on as Service and Allow Log on Locally right for each management server, and the SQL Server hosting the Reporting Server role.  
 
 ## Agent Installation account
 
-When performing discovery-based agent deployment, an account is required with Administrator privileges to the computers being targeted for agent installation.  The management server action account is the default account for agent installation.  If the management server action account does not have administrator rights, the operator must provide a user account and password with administrative rights on the target computers.  This account is encrypted before being used and then discarded.
+When performing discovery-based agent deployment, an account is required with Administrator privileges on the computers targeted for agent installation.  The management server action account is the default account for agent installation.  If the management server action account does not have administrator rights, the operator must provide a user account and password with administrative rights on the target computers.  This account is encrypted before being used and then discarded.
 
 ## Notification Action account
 
