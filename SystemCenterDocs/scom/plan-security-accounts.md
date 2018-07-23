@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Service, User and Security Accounts
+# Service, User, and Security Accounts
 
 During the setup and operation of Operations Manager, you will be asked to provide credentials for several accounts. The beginning of this section provides information about each of those accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 
@@ -20,7 +20,7 @@ If you use domain accounts and your domain Group Policy object (GPO) has the def
 
 ## Action accounts
 
-In System Center Operations Manager, management servers, gateway servers and agents all execute a process called MonitoringHost.exe.  MonitoringHost.exe is what each server role uses to accomplish monitoring activities such as executing a monitor or running a task.  Other examples of actions MonitoringHost.exe performs include:
+In System Center Operations Manager, management servers, gateway servers, and agents all execute a process called MonitoringHost.exe.  MonitoringHost.exe is what each server role uses to accomplish monitoring activities such as executing a monitor or running a task.  Other example of actions MonitoringHost.exe performs include:
 
 - Monitoring and collecting Windows event log data.
 - Monitoring and collecting Windows performance counter data.
@@ -31,7 +31,7 @@ The account that a MonitoringHost.exe process runs as is called the action accou
 
 Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
-When you install Operations Manager, you have the option of specifying either a domain account or using LocalSystem.  The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.   
+When you install Operations Manager, you have the option of specifying either a domain account or using LocalSystem.  The more secure approach is to specify a domain account, which allows you to select a user with the least privileges necessary for your environment.   
 
 You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2008 R2 or higher, the account must have the following minimum privileges:
 
@@ -42,13 +42,13 @@ You can use a low-privileged account for the agent’s action account. On comput
 > [!NOTE] 
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account.  Other Run As accounts can have lower privileges.  The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
 
-The domain account specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  This can be achieved by modifying the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
+The domain account specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  Modify the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
 
 * Name:  Worker Process Logon Type
 * Type: REG_DWORD
 * Value: 4 means Log on as Batch and 5 means for Log on as Service.  The default is 2, Allow log on locally.  
 
-This can also be centrally managed using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder C:\Windows\PolicyDefinitions and configuring the setting **Monitoring Action Account Logon Type** under the folder *Computer Configuration\Administrative Templates\System Center - Operations Manager*.  For further information on working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx). 
+You can centrally manage the setting using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder `C:\Windows\PolicyDefinitions` and configuring the setting **Monitoring Action Account Logon Type** under the folder `Computer Configuration\Administrative Templates\System Center - Operations Manager`.  For more information working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx). 
 
 ## System Center Configuration Service and System Center Data Access Service account
 
@@ -64,7 +64,7 @@ The account should be either a Domain User or LocalSystem.  The account used for
 > [!NOTE] 
 > If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.  
 
-For additional information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/Services/localsystem-account.md) 
+For more information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/Services/localsystem-account.md) 
 
 ## Data Warehouse Write account
 
@@ -75,7 +75,7 @@ The Data Warehouse Write account is the account used to write data from the mana
 | Microsoft SQL Server | OperationsManager | db_datareader | 
 | Microsoft SQL Server | OperationsManager | dwsync_user |
 | Microsoft SQL Server | OperationsManagerDW | OpsMgrWriter |
-| Microsoftg SQL Server | OperationsManagerDW | db_owner |
+| Microsoft SQL Server | OperationsManagerDW | db_owner |
 | Operations Manager | User role | Operations Manager Report Security Administrators | 
 | Operations Manager | Run As account | Data Warehouse Action account | 
 | Operations Manager | Run As account | Data Warehouse Configuration Synchronization Reader account | 
