@@ -31,7 +31,7 @@ The account that a MonitoringHost.exe process runs as is called the action accou
 
 Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
-When you install Operations Manager, you have the option of specifying either a domain account or using Local System.  The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.   
+When you install Operations Manager, you have the option of specifying either a domain account or using LocalSystem.  The more secure approach is to specify a domain account which allows you to select a user with the least amount of privileges necessary for your environment.   
 
 You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2008 R2 or higher, the account must have the following minimum privileges:
 
@@ -56,10 +56,10 @@ The System Center Configuration service and System Center Data Access service ac
 
 The account should be either a Domain User or LocalSystem.  The account used for the SDK and Config Service account should be granted local administrative rights on all management servers in the management group.  The use of Local User account is not supported.  For increased security, we recommended you use a domain user account and it's a different account from the one used for the Management Server Action Account. LocalSystem account is the highest privilege account on a Windows computer, even higher than local Administrator. When a service runs under the context of LocalSystem, the service has full control of the computer’s local resources, and the identity of the computer is leveraged when authenticating to and accessing remote resources. Using LocalSystem account is a security risk because it doesn’t honor the principal of least privilege.  Due to the rights required on the SQL Server instance hosting the OperationsManager database, a domain account with least privilege permissions is necessary to avoid any security risk if the management server in the management group is compromised.  This is because:
 
-•	LocalSystem has no password
-•	It does not have it’s own profile
-•	Extensive privileges on the local computer
-•	Presents the computer’s credentials to remote computers
+* LocalSystem has no password
+* It does not have it’s own profile
+* Extensive privileges on the local computer
+* Presents the computer’s credentials to remote computers
 
 > [!NOTE] 
 > If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.  
