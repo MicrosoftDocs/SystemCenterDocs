@@ -14,13 +14,13 @@ ms.topic: article
 
 # Service, User, and Security Accounts
 
-During the setup and operation of Operations Manager, you will be asked to provide credentials for several accounts. The beginning of this section provides information about each of those accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
+During the setup and operation of Operations Manager, you will be asked to provide credentials for several accounts. This article provides information about each of these accounts, including the SDK and Config Service, Agent Installation, Data Warehouse Write, and Data Reader accounts.
 
-If you use domain accounts and your domain Group Policy object (GPO) has the default password expiration policy set as required, you will either have to change the passwords on the service accounts according to the schedule, use low maintenance system accounts, or configure the accounts so that the passwords never expire.
+If you use domain accounts and your domain Group Policy object (GPO) has the default password expiration policy set as required, you will either have to change the passwords on the service accounts according to the schedule, use system accounts, or configure the accounts so that the passwords never expire.
 
 ## Action accounts
 
-In System Center Operations Manager, management servers, gateway servers, and agents all execute a process called MonitoringHost.exe.  MonitoringHost.exe is what each server role uses to accomplish monitoring activities such as executing a monitor or running a task.  Other example of actions MonitoringHost.exe performs include:
+In System Center Operations Manager, management servers, gateway servers, and agents all execute a process called MonitoringHost.exe.  MonitoringHost.exe is used to accomplish monitoring activities such as executing a monitor or running a task.  Other example of actions MonitoringHost.exe performs include:
 
 - Monitoring and collecting Windows event log data.
 - Monitoring and collecting Windows performance counter data.
@@ -54,10 +54,10 @@ You can centrally manage the setting using Group Policy by copying the ADMX file
 
 The System Center Configuration service and System Center Data Access service account is used by the System Center Data Access and System Center Management Configuration services to update information in the Operational database. The credentials used for the action account will be assigned to the sdk_user role in the Operational database.
 
-The account should be either a Domain User or LocalSystem.  The account used for the SDK and Config Service account should be granted local administrative rights on all management servers in the management group.  The use of Local User account is not supported.  For increased security, we recommended you use a domain user account and it's a different account from the one used for the Management Server Action Account. LocalSystem account is the highest privilege account on a Windows computer, even higher than local Administrator. When a service runs under the context of LocalSystem, the service has full control of the computer’s local resources, and the identity of the computer is leveraged when authenticating to and accessing remote resources. Using LocalSystem account is a security risk because it doesn’t honor the principal of least privilege.  Due to the rights required on the SQL Server instance hosting the OperationsManager database, a domain account with least privilege permissions is necessary to avoid any security risk if the management server in the management group is compromised.  This is because:
+The account should be either a Domain User or LocalSystem.  The account used for the SDK and Config Service account should be granted local administrative rights on all management servers in the management group.  The use of Local User account is not supported.  For increased security, we recommended you use a domain user account and it's a different account from the one used for the Management Server Action Account. LocalSystem account is the highest privilege account on a Windows computer, even higher than local Administrator. When a service runs under the context of LocalSystem, the service has full control of the computer’s local resources, and the identity of the computer is leveraged when authenticating to and accessing remote resources. Using LocalSystem account is a security risk because it doesn’t honor the principal of least privilege.  Due to the rights required on the SQL Server instance hosting the OperationsManager database, a domain account with least privilege permissions is necessary to avoid any security risk if the management server in the management group is compromised.  The reasons why are:
 
 * LocalSystem has no password
-* It does not have it’s own profile
+* It does not have its own profile
 * Extensive privileges on the local computer
 * Presents the computer’s credentials to remote computers
 
