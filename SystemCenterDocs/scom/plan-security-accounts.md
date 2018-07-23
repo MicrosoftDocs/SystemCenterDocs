@@ -5,7 +5,7 @@ description:  This article provides an overview of the security accounts require
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/22/2018
+ms.date: 07/23/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -54,10 +54,17 @@ This can also be centrally managed using Group Policy by copying the ADMX file  
 
 The System Center Configuration service and System Center Data Access service account is used by the System Center Data Access and System Center Management Configuration services to update information in the Operational database. The credentials used for the action account will be assigned to the sdk_user role in the Operational database.
 
-The account should be either a Domain User or Local System.  The account used for the SDK and Config Service account must have local administrative rights on all management servers in the management group.  The use of Local User account is not supported.  For increased security, we recommended you use a different account from the one used for the Management Server Action Account.  
+The account should be either a Domain User or LocalSystem.  The account used for the SDK and Config Service account should be granted local administrative rights on all management servers in the management group.  The use of Local User account is not supported.  For increased security, we recommended you use a domain user account and it's a different account from the one used for the Management Server Action Account. LocalSystem account is the highest privilege account on a Windows computer, even higher than local Administrator. When a service runs under the context of LocalSystem, the service has full control of the computer’s local resources, and the identity of the computer is leveraged when authenticating to and accessing remote resources. Using LocalSystem account is a security risk because it doesn’t honor the principal of least privilege.  Due to the rights required on the SQL Server instance hosting the OperationsManager database, a domain account with least privilege permissions is necessary to avoid any security risk if the management server in the management group is compromised.  This is because:
+
+•	LocalSystem has no password
+•	It does not have it’s own profile
+•	Extensive privileges on the local computer
+•	Presents the computer’s credentials to remote computers
 
 > [!NOTE] 
-> If the Operations Manager database is installed on a computer separate from the management server and Local System is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.
+> If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer will be assigned to the sdk_user role on the Operations Manager database computer.  
+
+For additional information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/Services/localsystem-account.md) 
 
 ## Data Warehouse Write account
 
