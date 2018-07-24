@@ -22,7 +22,7 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ## What's new in DPM 1807
 
-DPM 1807 provides a number of bugs fixes to improve performance. See [KB article 4339950](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409) for a full list of the bug fixes and to install the 1807 update release.
+DPM 1807 provides a number of bugs fixes to improve performance. See [KB article 4339950](https://support.microsoft.com/help/4339950) for a full list of the bug fixes and to install the 1807 update release.
 
 ::: moniker-end
 
