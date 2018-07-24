@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016 and 1801 releases.
 author: markgalioto
 ms.author: markgal
 manager: carmonm
-ms.date: 7/23/2018
+ms.date: 7/24/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: data-protection-manager
@@ -24,30 +24,12 @@ To view the list of bugs that have been fixed in DPM 1807, refer to the [KB arti
 
 The following issues exist in the 1807 release.
 
-### Silent Installation of System Center DPM with SQL Server 2008
-
-**Description**: DPM 2016 RTM won't silently install on SQL Server 2008.
-
-**Workaround**: Deploy DPM 2016 RTM on a version of SQL Server higher than 2008, or use the DPM 2016 Setup user interface.
-
-### Remove-DPMDiskStorage cmdlet may delete volumes with active or inactive backups
-
-**Description**: If the volume's datasources are being backed up (actively or inactively), when the [Remove-DPMDiskStorage](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/Remove-DPMDiskStorage) cmdlet is used to remove volumes from DPM, the datasources can be removed too.
-
-**Workaround**: Before using the cmdlet to remove the volumes, make sure the volume's datasources aren't in use (actively or inactively).
-
-### DPM 2016 on Windows Server 2016 hangs
-
-**Description**: Memory consumption on the DPM Server increases continuously until it reaches 90%. Memory consumption slows the DPM server.
-
-**Workaround**: Upgrade DPM to DPM UR2 and install [KB4013429](https://support.microsoft.com/help/4013429/windows-10-update-kb4013429) to fix this issue.
-
-
 ### Hyper-V VMs are protected twice on VM upgrade
 
 **Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group Wizard.
 
 **Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM, and create a new protection group. Then refresh the data sources, and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
+
 
 ### Agent installation fails on Windows Server 2008, Windows Server 2008 R2
 
@@ -68,7 +50,6 @@ The following issues exist in the 1807 release.
 **Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
 
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
-
 
 ### Reprotecting the DPM database after upgrading to DPM 2016
 
@@ -125,9 +106,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 **Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
 
-
 ::: moniker-end
-
 
 ::: moniker range="sc-dpm-1801"
 
