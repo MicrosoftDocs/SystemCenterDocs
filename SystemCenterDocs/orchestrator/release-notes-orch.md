@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Orchestra
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  05/16/2018
+ms.date:  07/24/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  Orchestrator

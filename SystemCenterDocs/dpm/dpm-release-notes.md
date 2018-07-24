@@ -20,7 +20,7 @@ This article lists known issues and steps to fix the issues. These notes apply t
 
 ## DPM 1807 Release notes
 
-To view the list of bugs that have been fixed in DPM 1807, refer to the [KB article](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409).
+To view the list of bugs that have been fixed in DPM 1807, refer to [KB article 4339950](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409).
 
 The following issues exist in the 1807 release.
 

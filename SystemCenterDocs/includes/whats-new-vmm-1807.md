@@ -15,6 +15,7 @@ ms.technology:  virtual-machine-manager
 
 See the following sections for information about the new features supported in VMM 1807.
 
+To get the 1807 update, see [KB article 4135364](https://support.microsoft.com/help/4135364).
 
 ## Storage
 

@@ -15,6 +15,8 @@ ms.assetid:  89743b74-65f9-4eac-8fcc-6a0cf43819d9
 ## What's new in System Center 1807 - Service Manager
 The following new feature is included in SM 1807.
 
+To get the 1807 update, see [KB article 4338239](https://support.microsoft.com/help/4338239).
+
 ## Support to SQL 2017 feature pack
 
 SM 1807 supports SQL 2017. You can upgrade SQL server 2016 to SQL 2017.
