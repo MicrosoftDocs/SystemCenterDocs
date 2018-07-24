@@ -5,7 +5,7 @@ ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 7/23/2018
+ms.date: 7/24/2018
 title:  What's new in System Center DPM 2016, 1801, and 1807
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -22,7 +22,7 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ## What's new in DPM 1807
 
-DPM 1807 provides a number of bugs fixes to improve performance. See the [KB article](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409) for a full list of the bug fixes.
+DPM 1807 provides a number of bugs fixes to improve performance. See [KB article 4339950](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409) for a full list of the bug fixes and to install the 1807 update release.
 
 ::: moniker-end
 

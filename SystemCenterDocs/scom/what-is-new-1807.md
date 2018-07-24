@@ -17,6 +17,8 @@ ms.topic: article
 
 The content in this section describes what's new and changed in System Center Operations Manager 1807.
 
+To get the 1807 update, see [KB article 4133779](https://support.microsoft.com/help/4133779).
+
 ## Configure APM component during agent install or repair
 In System Center Operations Manager version 1801 agent, the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting. You can now disable the APM component when you deploy the Operations Manager agent from Discovery Wizard in the console, when performing a repair of the agent from the Operations console, and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**.  
 
