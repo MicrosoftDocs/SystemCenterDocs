@@ -4,7 +4,7 @@ description: This article describes issues and workarounds for System Center Ope
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/20/2018
+ms.date: 07/24/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -15,7 +15,7 @@ ms.topic: conceptual
 
 # System Center Operations Manager 1807 Release Notes
 
-The following release notes apply to System Center Operations Manager 1807.
+The following release notes apply to System Center Operations Manager 1807.  For more information about version 1807 and what issues are addressed, see [KB4133779](https://support.microsoft.com/help/4133779). 
 
 ## Log rotation for Linux agent
 **Description:** Under certain scenarios, the SCX logs fill up frequently, which eventually consumes all available free space on the system disk.  As a result, the system becomes unresponsive unless the logs are cleaned up manually.  To address this issue, we have introduced a logrotate feature for SCX agent. This will help you rotate old logs and save disk space.
