@@ -14,7 +14,7 @@ ms.author: markgal
 
 # What's new in System Center DPM
 
-Before you begin, check the [Release Notes for System Center DPM](dpm-release-notes.md) for last minute issues. Also, if you are upgrading to DPM 1801, see the [bugs that have been fixed](dpm-release-notes.md#bugs-fixed-in-the-dpm-1801-release). System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
+Before you begin, check the [Release Notes for System Center DPM](dpm-release-notes.md) for last minute issues. Also, if you are upgrading to DPM 1801, see the [bugs that have been fixed](dpm-release-notes.md#dpm-1801-release-notes). System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
 
 ::: moniker range="sc-dpm-1801"
 

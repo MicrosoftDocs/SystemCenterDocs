@@ -5,7 +5,7 @@ description: This article details the known issues and issues fixed in Orchestra
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  05/16/2018
+ms.date:  07/24/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  Orchestrator
@@ -13,9 +13,18 @@ ms.technology:  Orchestrator
 
 # Release notes for System Center Orchestrator
 
+::: moniker range="sc-orch-1807"
+
+This article provides the release notes for System Center 1807 - Orchestrator.
+
+[!INCLUDE [release-notes-orch-1807.md](../includes/release-notes-orch-1807.md)]
+
+::: moniker-end
+
+
 ::: moniker range="sc-orch-1801"
 
-This article lists the release notes for System Center 1801 - Orchestrator.
+This article provides the release notes for System Center 1801 - Orchestrator.
 
 ::: moniker-end
 

@@ -1,20 +1,21 @@
 ---
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
 title: Supported UNIX and Linux Operating System Versions
-description: This article lists the supported versions of Linux and UNIX operating system for Operations Manager 2016.
+description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 05/03/2017
+manager: carmonm
+ms.date: 07/20/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
+monikerRange: '<sc-om-1807'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Supported UNIX and Linux Operating System Versions
 
-The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.  
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager and version 1801.  
 
 >[!NOTE]
 >Monitoring UNIX and Linux computers with System Center Operations Manager 2012 R2 management server is supported when using the System Center 2016 - Operations Manager agent with the Operations Manager 2012 R2 UNIX and Linux management packs.  You cannot import the required Operations Manager 2016 management packs for the specific version of UNIX/Linux and discover and deploy the Operations Manager 2016 agent from the **Computer and Device Management** wizard in your 2012 R2 management group.  This task must be performed manually following the command-line based deployment.  
@@ -87,19 +88,19 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
 |SUNWopenssl-libraries|SUNopenssl-libraries (Usr)|11.10.0,REV=2005.01.21.15.53|
-|SUNWcsr|Core Solaris, (Root)|11.10.0, REV=2005.01.21.15.53|
+|SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
 |Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|  
   
 ## Solaris 10 x86  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
-|SUNWlibC|Sun Workshop Compilers Bundled libC|5.10,REV=2004.12.20|
+|SUNWlibC|Sun Workshop Compilers Bundled libC|5.10, REV=2004.12.20|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.12.18|
-|SUNWcsl|Core Solaris, (Shared Libs)|11.10.0,REV=2005.01.21.16.34|
+|SUNWcsl|Core Solaris (Shared Libs)|11.10.0, REV=2005.01.21.16.34|
 |SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.16.34|
 |SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.10.0, REV=2005.01.21.16.34|
-|SUNWcsr|Core Solaris, (Root)|11.10.0,REV=2005.01.21.16.34|
+|SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.16.34|
 |Release|Oracle Solaris 10 9/10|s10x_u9wos_14a x86|
   
 ## Solaris 11 SPARC  
@@ -109,9 +110,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
 |SUNWcslr|Core Solaris Libraries (Root)|11.11, REV=2009.11.11|
-|SUNWcsl|Core Solaris, (Shared Libs)|11.11, REV=2009.11.11|
-|SUNWcsr|Core Solaris, (Root)|11.11, REV=2009.11.11|
-|SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0,REV=2010.05.25.01.00|
+|SUNWcsl|Core Solaris (Shared Libs)|11.11, REV=2009.11.11|
+|SUNWcsr|Core Solaris (Root)|11.11, REV=2009.11.11|
+|SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
 |Release|Oracle Solaris 11|11/11 SPARC|
   
 ## Solaris 11 x86  
@@ -121,9 +122,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
 |SUNWcslr|Core Solaris Libraries (Root)|11.11, REV=2009.11.11|
-|SUNWcsl|Core Solaris, (Shared Libs)|11.11, REV=2009.11.11|
-|SUNWcsr|Core Solaris, (Root)|11.11, REV=2009.11.11|
-|SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0,REV=2010.05.25.01.00|
+|SUNWcsl|Core Solaris (Shared Libs)|11.11, REV=2009.11.11|
+|SUNWcsr|Core Solaris (Root)|11.11, REV=2009.11.11|
+|SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
 |Release|Oracle Solaris 11|11/11 X86|  
   
 ## Solaris UTF\-8 Support  
@@ -151,7 +152,8 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|  
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
   
-## Universal Linux (Debian package)<br>Debian, Ubuntu Server  
+## Universal Linux (Debian package)
+Debian, Ubuntu Server  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  
@@ -159,7 +161,8 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
 |PAM|Pluggable Authentication Modules|0.79-3|  
   
-## Universal Linux (RPM package)<br>CentOS, Oracle Linux  
+## Universal Linux (RPM package)
+CentOS, Oracle Linux  
   
 |Required Package|Description|Minimum Version|  
 |--------------------|---------------|-------------------|  

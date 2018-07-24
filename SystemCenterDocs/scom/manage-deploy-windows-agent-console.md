@@ -5,16 +5,14 @@ description: This topic describes how to deploy the Operations Manager agent on 
 author: mgoedtel
 ms.author: magoedtel
 manager: carmonm
-ms.date: 01/05/2018
+ms.date: 07/13/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Install Agent on Windows Using the Discovery Wizard
-
->Applies To: System Center 2016 - Operations Manager
 
 You can use the Operations console to search your environment for manageable objects and then deploy an agent to any object that you want to monitor. The process of searching your environment is called discovery. One of the advantages of using discovery is that it lists *all* manageable objects, including any that you might not be aware of.
 
@@ -24,7 +22,7 @@ When agents are pushed out to computers, System Center Operations Manager sends 
 
 If the Discovery Wizard is not right for your needs (for example, if you have a set list of computers to which you want to deploy agents), you have the option of manually installing agents on systems to be managed. Agents can also be embedded in the host image of the monitored computer.
 
-Use the following procedure to discover computers running Windows and to deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md).
+Use the following procedure to discover computers running Windows and deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md).
 
 > [!NOTE]
 > For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
@@ -99,7 +97,20 @@ Use the following procedure to discover computers running Windows and to deploy 
         > [!NOTE]
         > The discovery results show virtual nodes of clusters. Do not select any virtual nodes to be managed.
 
-10. On the **Summary** page, do the following:
+10. On the **Summary** page, do the following:  
+
+    ::: moniker range="sc-om-1807"
+    1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or type an installation path.
+
+        > [!IMPORTANT]
+        > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they do not exist.
+
+    2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and type the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
+    
+    3. Leave **Install APM** set to the default if you intend to monitor a .NET web-based application on the targeted computer.  Otherwise, deselect the option.  
+
+    4.  Click **Finish**.  
+    ::: moniker-end  
 
     1.  Leave the **Agent installation directory** set to the default of **%ProgramFiles%\Microsoft Monitoring Agent** or type an installation path.
 
@@ -108,7 +119,7 @@ Use the following procedure to discover computers running Windows and to deploy 
 
     2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and type the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
 
-    3.  Click **Finish**.
+    3.  Click **Finish**.  
 
 11. In the **Agent Management Task Status** dialog box, the **Status** for each selected computer changes from **Queued** to **Success**; the computers are ready to be managed.
 

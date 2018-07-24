@@ -5,9 +5,9 @@ description:  This article describes how to manually install the Operations Mana
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 05/21/2018
+ms.date: 07/24/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -30,7 +30,7 @@ Before you use either method to manually deploy the agent, ensure the following 
 > [!NOTE]
 > For information about port requirements for agents, see [Communication Between Agents and Management Servers](plan-planning-agent-deployment.md#communication-between-agents-and-management-servers).
 
-MOMAgent.msi can be found in the Operations Manager installation media and in the following folder on a System Center 2016 - Operations Manager management server *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\<platform\>*.  For a version 1801 management server, the agent installation files can be found in the following folder - *%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\<platform\>*.
+MOMAgent.msi can be found in the Operations Manager installation media and in the following folder on a System Center 2016 - Operations Manager management server *%ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\AgentManagement\<platform\>*.  For a version 1801 or higher management server, the agent installation files can be found in the following folder - *%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\<platform\>*.
 
 
 > [!IMPORTANT]
@@ -162,6 +162,24 @@ The following example uninstalls an agent.
 
 ```
 msiexec /x path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentUninstall.log
+
+```
+
+## Deploy the agent with APM disabled using PowerShell 
+
+The following example shows how you install the Windows agent from PowerShell with the Application Performance Monitoring (APM) component disbled.
+
+```
+Install-SCOMAgent -DNSHostName "ComputerA.contoso.net" -PrimaryManagementServer $PrimaryMS -NoAPM 
+
+```
+
+## Repair the agent and disable APM using PowerShell
+
+The following example shows how you repair the Windows agent from PowerShell and disable the Application Performance Monitoring (APM) component.
+
+```
+Get-SCOMAgent -DNSHostName "ComputerA.contoso.net" | Repair-SCOMAgent -NoAPM
 
 ```
 
