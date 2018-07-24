@@ -5,7 +5,7 @@ description: This article describes how to perform an upgrade from System Center
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 07/24/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -130,7 +130,30 @@ Apply the appropriate MSP files on each computer.
 
 3. Import the following management packs: 
 
-    * .mp
+    |Management Pack |Version | 
+    |----------------|--------| 
+    |Microsoft.SystemCenter.Advisor.Internal.mpb |7.3.13261.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.CHS.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.CHT.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.CSY.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.DEU.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.ESN.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.FRA.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.HUN.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.ITA.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.JPN.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.KOR.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.mp |7.3.13261.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.NLD.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.PLK.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.PTB.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.PTG.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.RUS.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.SVE.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.HtmlDashboard.Library.TRK.mp |7.3.13246.0 |
+    |Microsoft.SystemCenter.Internal.mp |7.0.8438.7 |
+    |Microsoft.SystemCenter.Internal.UI.Tasks.mp |7.3.13261.0 |
+    |Microsoft.Unix.ConsoleLibrary.mp |7.7.1135.0 |
 
     For information about how to import a management pack from a disk, see [How to import, export, and remove an Operations Manager management pack](manage-mp-import-remove-delete.md).
 
@@ -154,8 +177,12 @@ To manually install the updates to Nano Agent, download the [KB3209591-8.0.10913
 To install the updated monitoring packs and agents for UNIX and Linux operating systems, perform the following steps.
 
 1. Apply System Center Operations Manager version 1807 Update to your System Center version 1801 Operations Manager management group.
-2. Download the **Microsoft System Center 1801 MP for UNIX and Linux.msi** installer package file - [System Center Management Pack for UNIX and Linux Operating Systems](https://www.microsoft.com/download/details.aspx?id=29696)
+
+2. Download the **Microsoft System Center 1801 MP for UNIX and Linux.msi** installer package file - [System Center Management Pack for UNIX and Linux Operating Systems](https://www.microsoft.com/download/details.aspx?id=29696).
+
 3.	Install the management pack update package to extract the management pack files.
+
 4.	Import the updated management pack for each version of Linux or UNIX that you are monitoring in your environment.
+
 5.	Upgrade each agent to the latest version by using either the **Update-SCXAgent** Windows PowerShell cmdlet or the [UNIX/Linux Agent Upgrade Wizard](manage-upgrade-uninstall-crossplat-agent.md) from the Device Management node under the Administration workspace in the Operations console.  
 

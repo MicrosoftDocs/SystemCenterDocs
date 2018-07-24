@@ -4,7 +4,7 @@ description: This article provides an overview of how you can monitor network de
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/26/2017
+ms.date: 07/24/2017
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,13 +14,13 @@ ms.assetid: fe56f0f3-0f28-4b0c-8adf-9982a710540a
 
 # Monitoring networks by using Operations Manager
 
-System Center 2016 - Operations Manager can monitor physical network routers and switches, including the interfaces and ports on those devices, and the virtual local area networks (VLANs) and Hot Standby Router Protocol (HSRP) groups that they participate in, as well as firewalls and load balancers. Increased visibility into your network infrastructure can help you identify failures in critical services and applications that were caused by the network. For example, you observe an alert informing you that a critical server is unavailable. If you have configured network monitoring, you would also observe an alert informing you that a port is offline. When you view the computer vicinity diagram for the server, you see that the unavailable computer is connected to the offline port. Thus, you can focus on troubleshooting the root cause for the unavailable computers.  
+System Center Operations Manager can monitor physical network routers and switches, including the interfaces and ports on those devices, and the virtual local area networks (VLANs) and Hot Standby Router Protocol (HSRP) groups that they participate in, as well as firewalls and load balancers. Increased visibility into your network infrastructure can help you identify failures in critical services and applications that were caused by the network. For example, you observe an alert informing you that a critical server is unavailable. If you have configured network monitoring, you would also observe an alert informing you that a port is offline. When you view the computer vicinity diagram for the server, you see that the unavailable computer is connected to the offline port. Thus, you can focus on troubleshooting the root cause for the unavailable computers.  
   
 Operations Manager can show you how your network is connected to the computers you are monitoring through the [Network Vicinity View](manage-monitor-networkdevice-viewing-data.md#network-vicinity-dashboard) dashboard. Using Network Vicinity View, you can see how your topology is laid out, as well as the health of each network device, computer, and the connection between each.  
   
-Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see  [Network Devices with Extended Monitoring Capability spreadsheet](https://go.microsoft.com/fwlink/p/?LinkID=231254). The devices worksheet includes processor and memory columns for each device to indicate whether Operations Manager can provide extended monitoring for either or both aspects for each device.  
+Operations Manager can discover and monitor network devices that use the Simple Network Management Protocol (SNMP v1, v2c, and v3. For a complete list of supported devices, see  [Network Devices with Extended Monitoring Capability spreadsheet](https://www.microsoft.com/download/details.aspx?id=51219). The devices worksheet includes processor and memory columns for each device to indicate whether Operations Manager can provide extended monitoring for either or both aspects for each device.  
 
-With System Center 2016 - Operations Manager, a Network Monitoring Management Pack generation tool is included to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  In addition to that, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx). 
+System Center 2016 - Operations Manager introduced a Network Monitoring Management Pack generation tool to help you create a custom management pack to add extended monitoring support for new network devices, without the need of Microsoft device certification.  Additionally, this tool enables you to add monitoring of additional device components such as fan, temperature sensor, voltage sensor and power supply. You can download the tool and user guide from the [Microsoft Download Center](https://download.microsoft.com/download/D/8/C/D8C9D294-2434-4E6F-89BF-76BB6BC15921/NetMonMPGeneratorTool.docx).  This tool is also supported with newer releases of Operations Manager.
   
 ## Network device monitoring capabilities and scope  
 
@@ -54,7 +54,7 @@ Operations Manager provides the following monitoring for discovered network devi
     -   Free memory  
   
 > [!NOTE]  
-> Some of the monitoring capabilities are disabled by default. For more information, see [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md).  
+> Some monitoring capabilities are disabled by default. For more information, see [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md).  
   
 Operations Manager supports monitoring of the following number of network devices:  
   
