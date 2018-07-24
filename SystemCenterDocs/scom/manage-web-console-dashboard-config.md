@@ -5,33 +5,43 @@ description: This article describes how to manage the configuration of the HTML5
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/24/2018
+ms.date: 07/16/2018
 ms.custom: na
 ms.prod: system-center-2016
-monikerRange: 'sc-om-1801'
+monikerRange: '>sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Manage dashboard and widget configuration in the Web console
 
-## Delete a dahsobard
+## Delete a dashboard
 
-To delete dashboard, click **Delete dashboard** option available from the top banner of the dashboard. ![Delete dashboard option on page](./media/manage-web-console-dashboard-config/dashboard-banner-01.png)<br>  You are prompted to confirm you wish to proceed with deleting the dashboard.  This notification appears at the bottom of the page.  Click **Yes** to continue or **No** to cancel the operation.<br><br> ![Delete dashboard notification](./media/manage-web-console-dashboard-config/dashboard-delete-notify.png)
+To delete dashboard, click **Delete dashboard** option available from the top banner of the dashboard. 
+
+![Delete dashboard option on page](./media/manage-web-console-dashboard-config/dashboard-banner-01.png)  
+
+You are prompted to confirm you wish to proceed with deleting the dashboard.  This notification appears at the bottom of the page.  Click **Yes** to continue or **No** to cancel the operation.
+
+![Delete dashboard notification](./media/manage-web-console-dashboard-config/dashboard-delete-notify.png)
 
 ## Add dashboards or views to My workspace
 
 1. Right-click on a dashboard or view in the monitoring tree of the Web console and click **Add to My Workspace** from the context menu.
+
 2. On the **Add to My Workspace** pane on the right side of the page, specify which folder in **My Workspace** this dashboard or view should be added.  You can also choose to create a new folder by clicking on **New Folder** to better organize your workspace.
+
 3. After specifying the location where to create the new folder, click **OK** and your dashboard or view will be added to your **My Workspace** view.  
-3. 
+ 
 
 ## Modify widget configuration
 
 To edit the widget, perform the following steps.
 
 1. Hover your mouse over the widget and click on the ellipse **…** at the top right corner of the widget. 
+
 2. The options pane for the widget appears, it displays all the possible actions available for the selected widget.  Select **Edit** to launch the authoring pane for the widget.
+
 3. Perform changes to the available settings for the widget and then click **Update Widget**.  
 
 After you update the widget, the changes are saved and the message **updating widget…** is displayed at the bottom of the page.
@@ -41,7 +51,9 @@ After you update the widget, the changes are saved and the message **updating wi
 To delete a widget on your dashboard, perform the following steps.
 
 1. Hover your mouse over the widget. 
+
 2. Click **Delete Widget**
+
 3. You are prompted to confirm **Are you sure you want to delete this widget?** at the bottom of the page.  Click **Yes** to continue or **No** to cancel the operation.
 
 ## Refresh widget 

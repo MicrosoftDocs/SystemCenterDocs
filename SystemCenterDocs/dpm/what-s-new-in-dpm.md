@@ -1,12 +1,12 @@
 ---
-description: Descriptions of the new features in System Center DPM 2016 and 1801.  
+description: Descriptions of the new features in System Center DPM 2016, 1801, and 1807.  
 manager:  carmonm
 ms.topic:  article
 author:  markgalioto
 ms.prod:  system-center-threshold
 keywords:  
-ms.date: 2/8/2018
-title:  What's new in System Center DPM 2016 and 1801
+ms.date: 7/24/2018
+title:  What's new in System Center DPM 2016, 1801, and 1807
 ms.technology:  data-protection-manager
 ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: markgal
@@ -14,22 +14,36 @@ ms.author: markgal
 
 # What's new in System Center DPM
 
-Before you begin, check the [Release Notes for System Center DPM](dpm-release-notes.md) for last minute issues. Also, if you are upgrading to DPM 1801, see the [bugs that have been fixed](dpm-release-notes.md#bugs-fixed-in-the-dpm-1801-release). System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, which results in much faster backups. DPM 2016 supports shielded VMs which promises backup and recovery of critical VMs.
+Before starting, check the [System Center DPM Release Notes](dpm-release-notes.md) for last-minute issues. DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [bugs that have been fixed](dpm-release-notes.md#dpm-1807-release-notes). 
+
+System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, resulting in faster backups. DPM 2016 supports shielded VMs.
+
+::: moniker range="sc-dpm-1807"
+
+## What's new in DPM 1807
+
+DPM 1807 provides a number of bugs fixes to improve performance. See [KB article 4339950](https://go.microsoft.com/fwlink/?linkid=2006248&&clcid=0x409) for a full list of the bug fixes and to install the 1807 update release.
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-1801"
 
 ## New features in DPM 1801
 
-If you install [System Center DPM 1801](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/), then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups. 
+[System Center DPM 1801](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) supports back up and restore of VMware virtual machines, and extends the benefits of Modern Backup Storage to your VMware backups:
+* up to 50% storage savings, 
+* 3x faster backups, 
+* and workload-volume affinity 
 
 ::: moniker-end
 
+::: moniker range="sc-dpm-2016"
 ## New features in DPM 2016
 
 The following features are either new to DPM, or are improved for DPM 2016.
 
 - **Modern Backup Storage** -
-Using Resilient File System (ReFS) block-cloning technology to store incremental backups, DPM 2016 dramatically improves storage utilization and performance. The storage consumed by backups grows and shrinks with the production data source, and there is no over-allocation of storage.
+Using Resilient File System (ReFS) block-cloning technology to store incremental backups, DPM 2016 improves storage utilization and performance. Backup storage grows and shrinks with the production data source. There is no over-allocation of storage.
 
 - **Resilient change tracking (RCT)** -
 DPM uses RCT (the native change tracking in Hyper-V), which removes the need for time-consuming consistency checks. RCT provides better resiliency than the change tracking provided by VSS snapshot-based backups. DPM also uses RCT for incremental backup. It identifies VHD changes for virtual machines, and transfers only those blocks that are indicated by the change tracker.
@@ -61,7 +75,7 @@ Modern Backup Storage achieves 30-40% storage savings using technologies such as
 DPM 2016 uses block cloning to store backups on ReFS volumes. Instead of using copy-on-write to store backups (which was used by VolSnap in DPM 2012 R2), DPM 2016's block cloning uses allocate-on-write. This change improves IOPS efficiency, making backups nearly 70% faster.
 
 ### Choose the volumes for your data source to increase storage efficiency
-DPM's workload-aware storage feature helps decrease costs by providing flexible storage choices for a given data source. This means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low performant storage can be used for reduced-IOPS workloads.
+DPM's workload-aware storage feature decreases costs by providing flexible storage choices for a given data source. This means DPM can use expensive, high-performance disks for backing up high-IOPS workloads, such as SQL or SharePoint. Low performant storage can be used for reduced-IOPS workloads.
 
 ### Backup storage consumption in line with production data source
 Without Logical Disk Manager (LDM) limits, data sources grow and shrink as needed, without the need for manual intervention. DPM doesn't need to allocate storage to data sources beforehand, and can dynamically allow the backups to adjust as needed, thus achieving higher efficiency with less storage required.
@@ -180,3 +194,5 @@ To give permissions to the share
 14. When you are finished adding permissions for the servers, click **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
+::: moniker-end
+

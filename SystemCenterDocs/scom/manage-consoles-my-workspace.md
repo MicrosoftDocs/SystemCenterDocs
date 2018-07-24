@@ -4,9 +4,10 @@ description: This article describes how to use My Workspace in the Operations Ma
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 12/05/2016
+ms.date: 07/18/2019
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center-2016
+monikerRange: '>=sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
@@ -14,7 +15,9 @@ ms.assetid: 91b1dd4c-6ce2-442b-826f-21a265ed3ac7
 
 # Using My Workspace 
 
-My Workspace provides you with a private area in the Operations console that you can customize for your specific needs.  Using My Workspace, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you. Your configuration of My Workspace will be available to you in any Operations or Web console that you log in to using the same Windows credentials.  
+My Workspace provides you with a private area in the Operations and Web console that you can customize for your specific needs.  Using My Workspace in the Operations console, you can create folders to organize the workspace, add shortcuts to favorite views, save useful searches, and create views that are only visible to you. In version 1807, you can create dashboards as well as add an existing dashboard from the Monitoring workspace. See [Using My Workspace in Web console](manage-web-console-my-workspace.md) for additional information. 
+
+Your configuration of My Workspace will be available to you in any Operations or Web console that you log in to using the same Windows credentials.  
   
 ## Create folders in My Workspace  
 

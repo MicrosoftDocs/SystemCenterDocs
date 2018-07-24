@@ -44,9 +44,56 @@ Regardless of any port profiles and logical switches you are using in your netwo
 1. In the **Uplink Port Profile** list, select the uplink port profile that you want to apply. The list contains the uplink port profiles that have been added to the logical switch that you selected. If a profile seems to be missing, review the configuration of the logical switch and then return to this property tab. Click **OK** to finish. Note that if you didn't create the virtual switch earlier and do in now, the host might temporarily lose network connectivity when VMM creates the switch.
 1. Repeat the steps as needed. If you apply the same logical switch and uplink port profile to two or more adapters, the two adapters might be teamed, depending on a setting in the logical switch. To find out if they will be teamed, open the logical switch properties, click the **Uplink** tab, and view the **Uplink mode** setting. If the setting is **Team**, the adapters will be teamed. The specific mode in which they will be teamed is determined by a setting in the uplink port profile.
 1. After applying the logical switch you can check that the network adapter settings and verify whether they're in compliance with the switch:
-    - Click **Fabric **> **Networking** > **Logical Switches** > **Home** > **Show** > **Hosts**.
+    - Click **Fabric**> **Networking** > **Logical Switches** > **Home** > **Show** > **Hosts**.
     - In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
     - If you have a cluster, check each node.
+
+::: moniker range="sc-vmm-1807"
+
+## Monitor physical network devices
+
+VMM supports Link Layer Discovery Protocol (LLDP). You can now leverage the LLDP information to remotely monitor physical network device properties and information. You can view this information by using VMM console and PowerShell.
+
+**Console view**
+
+To get the details of network devices from the VMM console, go to **View** > **Host** > **Properties** > **Hardware Configuration** > **Network adapter**.   
+
+> [!NOTE]
+
+> The details displayed contain a time stamp (updated on). To get the current details, refresh the page.
+
+  ![lldp support](media/lldp-support/lldp-view.png)
+
+The following LLDP information is displayed:
+
+<screenshot to be included>
+
+|**Information displayed** | **Description**
+| --- | --- |
+| Chassis ID <br/><br/> | Switch chassis ID |
+| Port ID <br/><br/> | Switch port to which NIC is connected |
+| Port Description <br/><br/> | Details related to the  port such as *Type*|
+| System Name	Manufacturer <br/><br/> | Manufacturer, Software version details |
+| System Description <br/><br/> | Detailed system description |
+| Available Capabilities <br/><br/> | Available system capabilities (such as switching, routing) |
+| Enabled Capabilities <br/><br/> | Enabled system capabilities (such as switching, routing) |
+| VLAN ID <br/><br/> | Virtual LAN identifier |
+| Management Address <br/><br/> | IP management address |
+
+**PowerShell**
+
+Use the following PowerShell command to view/refresh the LLDP details:
+
+```powershell
+Set-SCVMHostNetworkAdapter -RefreshLLDP
+```
+
+> [!NOTE]
+
+> By default, LLDP Packet wait time is set as 30 seconds. You can modify this value by modifying the registry key at **Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\LLdpPacketWaitIntervalSeconds**. The minimum value you can set is 5 seconds, maximum value is 300 seconds.
+
+  ::: moniker-end
+
 
 ## Next steps
 

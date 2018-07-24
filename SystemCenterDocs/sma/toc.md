@@ -6,7 +6,7 @@
 ## [Turn off telemetry in SMA](turn-off-telemetry.md)
 # Get started
 ## [What's new in Service Management Automation ](whats-new-in-sma.md)
-## [Release notes - Service Management Automation 1801](release-notes-1801.md)
+## [Release notes - Service Management Automation ](release-notes-sma.md)
 # How to
 ## Deploy
 ### [System requirements - Service Management Automation](system-requirements-sma.md)

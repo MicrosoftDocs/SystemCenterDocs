@@ -5,7 +5,7 @@ description: This article describes the steps required to move the Reporting ser
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/11/2018
+ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -32,7 +32,7 @@ The migration process for Reporting Services includes manual and automated steps
 - Configure the report server. 
 - Install Operations Manager Reporting server component. 
 - Move the report server database from your existing installation to your new SQL Server installation. 
-- Restore settings defined in **Web.config ** to include custom settings enabled in the previous configuration. 
+- Restore settings defined in **Web.config** to include custom settings enabled in the previous configuration. 
 
 ## Backup data
 
@@ -49,7 +49,7 @@ The migration process for Reporting Services includes manual and automated steps
    c. In the **Operations Manager Setup** wizard, click **Remove a feature**.  
    d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.  
 
-2. On the SQL Server instance hosting the data warehosue database, restore the data warehouse database you previously backed up.  For more information, see [Restore a Database Backup (SQL Server Management Studio)](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).  
+2. On the SQL Server instance hosting the data warehouse database, restore the data warehouse database you previously backed up.  For more information, see [Restore a Database Backup (SQL Server Management Studio)](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).  
 
 ## Install SQL Server Reporting Services
 
@@ -76,7 +76,7 @@ If you are restoring the original configuration on a new SQL Server reporting se
 
 1. Verify the **RSExecRole** is a database role with the report server database and temporary database. **RSExecRole** must have **select, insert, update, delete, and reference** permissions in the report server database tables, and **execute** permissions on the stored procedures.  
 2. Restore the encryption keys you backed up earlier.  For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).  
-3. Restore custom settings defined in **Web.config ** enabled in the previous configuration.
+3. Restore custom settings defined in **Web.config** enabled in the previous configuration.
 4. Restart the Report Server service.  
 
 After completing the installation and post-configuration steps, perform the following to confirm Operations Manager reporting is working correctly.
