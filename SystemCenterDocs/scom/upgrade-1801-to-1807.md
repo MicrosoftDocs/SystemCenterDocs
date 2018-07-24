@@ -130,8 +130,8 @@ Apply the appropriate MSP files on each computer.
 
 3. Import the following management packs: 
 
-    |----------------|--------|
-    |Management Pack |Version |
+    |Management Pack |Version | 
+    |----------------|--------| 
     |Microsoft.SystemCenter.Advisor.Internal.mpb |7.3.13261.0 |
     |Microsoft.SystemCenter.HtmlDashboard.Library.CHS.mp |7.3.13246.0 |
     |Microsoft.SystemCenter.HtmlDashboard.Library.CHT.mp |7.3.13246.0 |

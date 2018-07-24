@@ -46,9 +46,9 @@ The following release notes apply to System Center Operations Manager 1801.
 **Cause**: There is an issue with the installer package during the upgrade process, where setup tries to upgrade the ACS management pack but it has a dependency on the Microsoft.Linux.Universal.Library.MP. If this dependency management pack is not upgraded, importing the ACS MP will fail during the process and the following error is displayed:
 
 ```
-Error:Found error in 2|Microsoft.ACS.Linux.Universal|7.7.1124.0|Microsoft.ACS.Linux.Universal|| with message:
-Could not load management pack <ID=Microsoft.Linux.Universal.Library, KeyToken=31bf3856ad364e35, Version=7.7.1103.0>. The management pack was not found in the store.
-: Version mismatch. The management pack (<Microsoft.Linux.Universal.Library, 31bf3856ad364e35, 7.6.1064.0>) requested from the database was version 7.7.1103.0 but the actual version available is 7.6.1064.0.
+Error:Found error in 2|Microsoft.ACS.Linux.Universal|7.7.1124.0|Microsoft.ACS.Linux.Universal|| with message:  
+Could not load management pack <ID=Microsoft.Linux.Universal.Library, KeyToken=31bf3856ad364e35, Version=7.7.1103.0>. The management pack was not found in the store.  
+: Version mismatch. The management pack (<Microsoft.Linux.Universal.Library, 31bf3856ad364e35, 7.6.1064.0>) requested from the database was version 7.7.1103.0 but the actual version available is 7.6.1064.0.  
 ```
 
 The upgrade failure will cause setup to roll back and leave the management server in an inconsistent state where the feature will need to be reinstalled.  
