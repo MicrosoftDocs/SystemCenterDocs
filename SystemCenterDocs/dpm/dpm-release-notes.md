@@ -51,9 +51,9 @@ The following issues exist in the 1807 release.
 
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
-### Reprotecting the DPM database after upgrading to DPM 2016
+### Reprotecting the DPM database after upgrading to DPM 2016 or 1801
 
-**Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016, the DPM database name can change in some scenarios.
+**Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016 or 1801, the DPM database name can change in some scenarios.
 
 **Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
 
@@ -99,12 +99,6 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 **Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end-user recovery is not available.
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
-
-### Error 4387 might appear while installing DPM
-
-**Description**: While installing the Data Protection Manager, when you enter an SQL instance in the **Data Protection Manager Setup** > **Prerequisites check**> **Instance of SQL server** text box, error 4387 might appear.
-
-**Workaround**: Perform the required actions as detailed in this [KB article](https://support.microsoft.com/en-in/help/956013/error-message-when-you-open-sql-server-configuration-manager-in-sql-se) and try the  DPM setup again.
 
 ::: moniker-end
 
