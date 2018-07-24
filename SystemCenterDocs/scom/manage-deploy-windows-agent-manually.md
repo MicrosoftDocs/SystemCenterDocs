@@ -5,7 +5,7 @@ description:  This article describes how to manually install the Operations Mana
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/12/2018
+ms.date: 07/24/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -162,6 +162,24 @@ The following example uninstalls an agent.
 
 ```
 msiexec /x path\Directory\MOMAgent.msi /qn /l*v %temp%\OMAgentUninstall.log
+
+```
+
+## Deploy the agent with APM disabled using PowerShell 
+
+The following example shows how you install the Windows agent from PowerShell with the Application Performance Monitoring (APM) component disbled.
+
+```
+Install-SCOMAgent -DNSHostName "ComputerA.contoso.net" -PrimaryManagementServer $PrimaryMS -NoAPM 
+
+```
+
+## Repair the agent and disable APM using PowerShell
+
+The following example shows how you repair the Windows agent from PowerShell and disable the Application Performance Monitoring (APM) component.
+
+```
+Get-SCOMAgent -DNSHostName "ComputerA.contoso.net" | Repair-SCOMAgent -NoAPM
 
 ```
 
