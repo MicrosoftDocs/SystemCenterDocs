@@ -1,11 +1,11 @@
 ---
 ms.assetid: d101c474-7a4d-4a01-b52a-a22270c475d0
 title: Operations Manager Planning Guide
-description: This article is the landing page for the planning guide supporting System Center 2016 - Operations Manager.
+description: This article is the landing page for the planning guide supporting System Center Operations Manager.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 05/08/2017
+manager: carmonm
+ms.date: 07/25/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,13 +14,13 @@ ms.topic: article
 
 # Operations Manager Planning Guide
 
-By deploying System Center 2016 - Operations Manager in your environment, you can provide your organization with a monitoring service that ensures IT and business service owners are able to effectively monitor and report on the availability and performance metrics of their services across on-premises, service provider, and cloud environments.  After you identify the deployment tasks and current environment for your organization, you can create the Operations Manager deployment strategy that meets your organization’s service operations needs.  
+By deploying System Center Operations Manager in your environment, you can provide your organization with a monitoring service that ensures IT and business service owners are able to effectively monitor and report on the availability and performance metrics of their services across on-premises, service provider, and cloud environments.  After you identify the deployment tasks and current environment for your organization, you can create the Operations Manager deployment strategy that meets your organization’s service operations needs.  
 
 ## About this guide
 
 This guide provides recommendations to help you develop an Operations Manager deployment strategy based on the requirements of your organization and the particular design that you want to create.  This guide is intended for use by infrastructure specialists or system architects.  Before you read this guide, you should have a good understanding of how Operations Manager works on a functional level. You should also have a good understanding of the organizational and business requirements that need to be considered in your deployment strategy.  
 
-This guide describes sets of tasks for several possible starting points of a System Center 2016 - Operations Manager deployment.  The guide helps you determine the most appropriate deployment strategy for your environment.
+This guide describes sets of tasks for several possible starting points of a System Center Operations Manager deployment.  The guide helps you determine the most appropriate deployment strategy for your environment.
 
 The strategies that are presented in this guide are appropriate for many common Operations Manager deployments, and they have been tested and validated for environments that contain up to the capacity limits stated in the [System Requirements](plan-system-requirements.md) article.  
 
@@ -29,11 +29,11 @@ The strategies that are presented in this guide are appropriate for many common 
 
 - [System Requirements for Operations Manager](plan-system-requirements.md)
 
-    Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager in System Center 2016. 
+    Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager. 
 
 - [Supported Versions of Linux and UNIX](plan-supported-crossplat-os.md)
 
-    Provides the supported and required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.  
+    Provides the supported and required UNIX and Linux operating systems and package dependencies for Operations Manager.  
 
 - [Planning a Management Group Design](plan-mgmt-group-design.md)
 
@@ -61,7 +61,7 @@ The strategies that are presented in this guide are appropriate for many common 
 
 - [Security Design](plan-security-accounts.md)
 
-    This section provides you with security-related information as it pertains to the planning of security accounts, roles and privileges required for your deployment of System Center 2016 - Operations Manager.
+    This section provides you with security-related information as it pertains to the planning of security accounts, roles and privileges required for your deployment of Operations Manager.
 
 
 
