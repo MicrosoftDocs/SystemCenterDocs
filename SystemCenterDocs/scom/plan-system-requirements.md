@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/13/2018
+ms.date: 07/25/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -76,7 +76,7 @@ The following versions of Windows Server operating system are supported for the 
 | Component | Windows Server 2012 R2 Standard, Datacenter | Windows Server 2016 Standard, Datacenter | Windows Server Core 2016 |
 |:--- |:---|:--- |:--- |
 | **Operations Manager** Management Server | yes | yes | yes |
-| **Operations Manager** Gateway Server | yes | yes | |
+| **Operations Manager** Gateway Server | yes | yes | yes |
 | **Operations Manager** Web Console | yes | yes | |
 | **Operations Manager** ACS Collector | yes | yes | |
 | **Operations Manager** Operations console | yes | yes | |
