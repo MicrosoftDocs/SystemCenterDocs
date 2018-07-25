@@ -5,7 +5,7 @@ description: This article provides design guidance for agent deployment on Windo
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 07/25/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -38,7 +38,7 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 ## Linux/UNIX agent
 
-The architecture of the Unix and Linux agent differs from a Windows agent significantly. The Windows agent has a Health Service responsible for evaluating the health of the monitored computer. The Unix and Linux Agent does not run a health service, instead it passes information to the Health Service on a management server to be evaluated.  The management server runs all of the workflows to monitor operating system health defined in our implementation of the UNIX/Linux management packs:
+The architecture of the UNIX and Linux agent differs from a Windows agent significantly. The Windows agent has a Health Service responsible for evaluating the health of the monitored computer. The UNIX and Linux Agent does not run a health service, instead it passes information to the Health Service on a management server to be evaluated.  The management server runs all of the workflows to monitor operating system health defined in our implementation of the UNIX and Linux management packs:
 
    - Disk
    - Processor
@@ -50,9 +50,9 @@ The architecture of the Unix and Linux agent differs from a Windows agent signif
 
 The UNIX and Linux agents for Operations Manager consist of a CIM Object Manager (that is, CIM Server), and a set of CIM Providers. The CIM Object Manager is the “server” component that implements the WS-Management communication, authentication, authorization, and dispatch of requests to the providers. The providers are the key to the CIM implementation in the agent, defining the CIM classes and properties, interfacing with the kernel APIs to retrieve raw data, formatting the data (for example, calculating deltas and averages), and servicing the requests dispatched from the CIM Object Manager. From System Center Operations Manager 2007 R2 through System Center 2012 SP1, the CIM Object Manager used in the Operations Manager UNIX and Linux agents is the OpenPegasus server. The providers used to collect and report monitoring data are developed by Microsoft, and open-sourced at CodePlex.com.<br> ![Software Architecture of the Operations Manager UNIX/Linux Agent](./media/plan-planning-agent-deployment/om2016-unixlinux-agent-architecture.png)<br>
 
-This changed in System Center 2012 R2 Operations Manager, where UNIX/Linux agents are now based on a fully consistent implementation of Open Management Infrastructure (OMI) as their CIM Object Manager. In the case of the Operations Manager UNIX/Linux agents, OMI is replacing OpenPegasus. Like OpenPegasus, OMI is an open-source, lightweight, and portable CIM Object Manager implementation – though it is lighter in weight and more portable than OpenPegasus. This implementation continues to be applied in System Center 2016 - Operations Manager.<br> ![Updated Software Architecture of the Operations Manager UNIX/Linux Agent](./media/plan-planning-agent-deployment/om2016-omi-unixlinux-agent-architecture.png)<br>
+This changed in System Center 2012 R2 Operations Manager, where UNIX and Linux agents are now based on a fully consistent implementation of Open Management Infrastructure (OMI) as their CIM Object Manager. In the case of the Operations Manager UNIX/Linux agents, OMI is replacing OpenPegasus. Like OpenPegasus, OMI is an open-source, lightweight, and portable CIM Object Manager implementation – though it is lighter in weight and more portable than OpenPegasus. This implementation continues to be applied in System Center 2016 - Operations Manager and later.<br> ![Updated Software Architecture of the Operations Manager UNIX/Linux Agent](./media/plan-planning-agent-deployment/om2016-omi-unixlinux-agent-architecture.png)<br>
 
-Communication between the management server and the UNIX/Linux agent is split into two categories, agent maintenance and health monitoring.  The management server uses two protocols to communicate with the UNIX or Linux computer:
+Communication between the management server and the UNIX and Linux agent is split into two categories, agent maintenance and health monitoring.  The management server uses two protocols to communicate with the UNIX or Linux computer:
 
 - Secure Shell (SSH) and Secure Shell File Transfer Protocol (SFTP)
 
@@ -62,15 +62,15 @@ Communication between the management server and the UNIX/Linux agent is split in
 
     Used for all monitoring operations and include the discovery of agents that were already installed.
 
-Communication between the Operations Manager management server and UNIX/Linux agent uses WS-Man over HTTPS and the WinRM interface.  All agent maintenance tasks are performed over SSH on port 22.  All health monitoring is performed over WS-MAN on port 1270. The management server requests performance and configuration data via WS-MAN before evaluating the data to provide health status.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account. 
+Communication between the Operations Manager management server and UNIX and Linux agent uses WS-Man over HTTPS and the WinRM interface.  All agent maintenance tasks are performed over SSH on port 22.  All health monitoring is performed over WS-MAN on port 1270. The management server requests performance and configuration data via WS-MAN before evaluating the data to provide health status.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account. 
 
 > [!NOTE] 
 > All credentials referred to in this article pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
 
-To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which they use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
+To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager and later can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which is use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
 
 1. Open the **Registry Editor** from an elevated command prompt.
-2. Create registry key **UseMIAPI** under **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup**.
+2. Create registry key **UseMIAPI** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`.
 
 If you need to restore the original configuration using the WSMAN Sync APIs, you can delete the **UseMIAPI** registry key.
 
@@ -152,7 +152,7 @@ Configuration of agent assignment is managed by an Operations Manager administra
 
 ## Next steps
 
-* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](~/scom/manage-deploy-windows-agent-manually.md).  
+* To understand how to install the Windows agent from the Operations console, see [Install Agent on Windows Using the Discovery Wizard](manage-deploy-windows-agent-console.md) or to install the agent from the command line, see [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md).  
 
 * To understand how to install the Linux and UNIX from the Operations console, see [Install agent on UNIX and Linux using the Discovery Wizard](manage-deploy-crossplat-agent-console.md).   
 
