@@ -5,7 +5,7 @@ description: This article describes what's new in System Center Operations Manag
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/24/2018
+ms.date: 07/25/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -45,3 +45,13 @@ With version 1807, upgrading from SQL Server 2016 to SQL Server 2017 is supporte
 ## Operations Manager and Service Manager console coexistence
 The Operations and Service Manager version 1807 consoles, as well as PowerShell modules can be installed on the same system.  
 
+## OpenSSL 1.1.0 version support 
+On Linux platforms, OpenSSL 0.9.8 support is dropped and we have added support for OpenSSL 1.1.0. 
+ 
+## Ubuntu 18 and Debian 9 support 
+These Linux platforms are added to our support matrix for monitoring UNIX and Linux computers. 
+ 
+## Auto detection of Pseudo FS and drop Enumeration. 
+The UNIX and Linux agent has been enhanced to detect pseudo file system dynamically and ignore enumeration.  
+ 
+ 
