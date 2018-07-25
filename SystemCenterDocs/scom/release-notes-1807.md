@@ -4,7 +4,7 @@ description: This article describes issues and workarounds for System Center Ope
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/24/2018
+ms.date: 07/25/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -65,3 +65,9 @@ You can change the default values to support your requirements. The default conf
 
 ## Upgrade to Operations Manager version 1807
 To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](upgrade-1801-to-1807.md).
+
+## OpenSSL 1.1.0 version support
+
+**Description**: On Linux platforms, OpenSSL 0.9.8 support is dropped.
+
+**Workaround**: We have added support for OpenSSL 1.1.0.
