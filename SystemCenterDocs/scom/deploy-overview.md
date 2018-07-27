@@ -3,9 +3,9 @@ ms.assetid: 2369cbef-5f0d-4fc2-8288-ea315aab20b6
 title:  Deploying System Center Operations Manager
 description: This article provides a high-level overview of what preparations you should make before deploying Operations Manager.  
 author: mgoedtel
-ms.author: carmonm
-manager: cfreemanwa
-ms.date: 06/05/2018
+ms.author: magoedte
+manager: carmonm
+ms.date: 07/27/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -27,6 +27,8 @@ For information about connecting management groups, see [Connecting Management G
 ## Before you begin
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
+
+-   [Release Notes for System Center Operations Manager 1807](release-notes-1807.md)
 
 -   [Release Notes for System Center Operations Manager 1801](release-notes-1801.md)
 
@@ -53,7 +55,7 @@ If you install Reporting, you are prompted for one additional account, the **Dat
 
 ### SQL Server requirements
 
-System Center 2016 Operations Manager requires access to an instance of a server running Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning article.   
+System Center Operations Manager requires access to an instance of a server running Microsoft SQL Server. This instance can be located on a separate computer from the management servers in a distributed installation or on the first management server in the management group. In either case, the instance of Microsoft SQL Server must already exist and be accessible before you start your first management server installation. The SQL Server Collation setting must be a supported value, and SQL Full Text Search must be enabled.  To review which versions of SQL Server are supported for Operations Manager, see [SQL Server requirements](plan-sqlserver-design.md#sql-server-requirements) in the SQL Server Design Considerations planning article.   
 
 During setup, you are prompted for the following:
 
@@ -74,7 +76,7 @@ You can accept the default values for or set:
 > [!IMPORTANT]
 > If TCP/IP is disabled on a remote server that is hosting the SQL Server database, Setup will not be able to connect to the SQL Server database. To resolve this issue, enable TCP/IP on the remote server.
 
-Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server 2014 Reporting Services, see [SQL Server Installation (SQL Server 2014)](https://msdn.microsoft.com/library/ms143711%28v=sql.120%29.aspx).  For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](https://msdn.microsoft.com/library/ms143711%28v=sql.130%29.aspx).
+Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation (SQL Server 2014)](https://msdn.microsoft.com/library/ms143711%28v=sql.120%29.aspx).  For more information about how to install and configure SQL Server 2016 Reporting Services, see [SQL Server Installation (SQL Server 2016)](https://msdn.microsoft.com/library/ms143711%28v=sql.130%29.aspx).
 
 For additional information to help you properly plan your SQL Server configuration in support of Operations Manager, see [SQL Server Design Considerations](plan-sqlserver-design.md).  
 
