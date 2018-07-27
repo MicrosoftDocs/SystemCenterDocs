@@ -32,10 +32,10 @@ With VMM 1807, you can now  choose any location to place the new disc. You can m
 ### Display of LLDP information for networking devices
  VMM 1807 supports Link Layer Discovery Protocol (LLDP). You can now view network device properties and capabilities information of the hosts from VMM. Host operating system must be Windows 2016 or higher.
 
- DataCenterBridging and DataCenterBridging-LLDP-Tools features have been enabled on hosts to fetch LLDP properties.  [Learn More](../vmm/hyper-v-network.md).
+ DataCenterBridging and DataCenterBridging-LLDP-Tools features have been enabled on hosts to fetch the LLDP properties.  [Learn more](../vmm/hyper-v-network.md).
 
 ### Convert SET switch to logical switch
- VMM 1807 allows you to convert a switch embedded teaming (SET) switch to logical switch by using the VMM console. In earlier versions, this feature was supported only through PowerShell script. [Learn more](../vmm/network-switch.md)
+ VMM 1807 allows you to convert a switch embedded teaming (SET) switch to logical switch by using the VMM console. In earlier versions, this feature was supported only through PowerShell script. [Learn more](../vmm/network-switch.md).
 
 ### VMware host management
 VMM 1807 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with  additional  flexibility in managing multiple hypervisors in use. [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported vmware server versions.
