@@ -65,7 +65,7 @@ The Service Manager Windows PowerShell module contains cmdlets that are used in 
 -   **Disable-SCDWJobSchedule** Disables a data warehouse job schedule. Job schedules are disabled by default.
 
 ## Get started with data warehouse jobs
-When you register with the Service Manager data warehouse, the MPSyncJob starts running. This job can take several hours to complete its initial run. When this job is complete, you can see two extract jobs listed in the Data Warehouse Jobs pane. One extract job is listed as **Extract_*data warehouse management group name***, and the other extract job is listed as **Extract_*Service Manager management group name***. When both of these extract jobs appear, you know that the initial run of the MPSyncJob is complete and that you can now proceed with the subsequent maintenance tasks.
+When you register with the Service Manager data warehouse, the MPSyncJob starts running. This job can take several hours to complete its initial run. When this job is complete, you can see two extract jobs listed in the Data Warehouse Jobs pane. One extract job is listed as **Extract_<em>data warehouse management group name</em>**, and the other extract job is listed as **Extract_<em>Service Manager management group name</em>**. When both of these extract jobs appear, you know that the initial run of the MPSyncJob is complete and that you can now proceed with the subsequent maintenance tasks.
 
 ## Data warehouse module deployment
 
