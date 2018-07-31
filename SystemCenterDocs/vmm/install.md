@@ -19,7 +19,7 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 
 ## Before you start
 
-- Review the system requirements and [planning information](install.md). Learn about [system requirements 2016](system-reqs.md) and [system requirements 1801](system-reqs-1801.md).
+- Review the system requirements and [planning information](install.md). Learn about [system requirements](system-requirements.md)
 - Make sure you have at least local admin permissions on the computer before you run the setup.
 
 ## Run setup
