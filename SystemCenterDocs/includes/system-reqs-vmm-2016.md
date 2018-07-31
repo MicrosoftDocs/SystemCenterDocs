@@ -5,7 +5,7 @@ description: include file to provide information about system requirements for V
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/26/2018
+ms.date:  07/27/2018
 ms.topic: include
 ms.prod:  system-center-threshold
 ms.technology:  virtual-machine-manager
@@ -19,7 +19,7 @@ The following sections describe the scalability information, hardware, software,
 
 The following table provides the scale limits that were tested for System Center 2016 Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
 
-The [planning guide](https://technet.microsoft.com/system-center-docs/vmm/plan/plan-overview) provides the details about how these factors can be adapted to specific requirements.
+The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
 **Entity** | **Recommended maximum count**
 --- | ---
