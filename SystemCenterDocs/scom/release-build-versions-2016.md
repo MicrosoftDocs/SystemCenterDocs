@@ -18,7 +18,7 @@ This article describes how to determine your current Microsoft System Center 201
 ## Build versions
 The following table lists the release history for Operations Manager 2016.
 
-|Build Number |KB |Release Date |Description |
+|Build Number |KB |Release Date |Description |  
 |-------------|---|-------------|------------|  
 |7.2.11719.0 ||September 2016 |General Availability release|  
 |7.2.11759.0 |[KB3190029](https://support.microsoft.com/kb/3190029) |October 2016 |Update Rollup 1 |  
