@@ -13,7 +13,7 @@ ms.topic: article
 ---
 
 # System Center 2016 - Operations Manager build versions
-This article describes how to determine your current Microsoft System Center 2016 - Operations Manager version number and the corresponding update rollup.
+This article describes how to determine your current Microsoft System Center 2016 - Operations Manager version number and the corresponding update rollup.  Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 ## Build versions
 The following table lists the release history for Operations Manager 2016.
