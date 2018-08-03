@@ -23,7 +23,7 @@ The following table lists the release history for Operations Manager 2016.
 |7.2.11719.0 ||September 2016 |General Availability release|  
 |7.2.11759.0 |[KB3190029](https://support.microsoft.com/kb/3190029) |October 2016 |Update Rollup 1 |  
 |7.2.11822.0 |[KB3209591](https://support.microsoft.com/help/3209591) |February 2017 |Update Rollup 2 |  
-|7.2.11878.0 |[KB4016126](https://support.microsoft.com/en-in/help/4016126/update-rollup-3-for-system-center-2016-operations-manager) |May 2017 |Update Rollup 3|  
+|7.2.11878.0 |[KB4016126](https://support.microsoft.com/help/4016126/update-rollup-3-for-system-center-2016-operations-manager) |May 2017 |Update Rollup 3|  
 
 
 ## Next steps
