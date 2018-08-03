@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/11/2018
+ms.date: 07/30/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -18,7 +18,7 @@ ms.topic: article
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 1801. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 > [!NOTE]
-> If before upgrade an agent was installed using the push install method, after upgrade the server the agent will be put into a pending update state and can be upgraded through the Console. Otherwise the agent should be upgraded manually.
+> If before the upgrade an agent was installed using the push install method, after upgrade the agent-managed computer is put into a pending update state and can be upgraded through the Operations console. Otherwise the agent needs to be upgraded manually.
 
 When you upgrade an agent, the Operations Manager installer service runs and is not removed until after the completion of the upgrade. If the agent upgrade fails, you might have to re-install the agent because the installer service was not properly removed. If you attempt to upgrade the agent again and it fails, you should re-install the agent after you have completed upgrading all features of Operations Manager.
 
@@ -97,7 +97,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 2.  Under **Device Management**, click **Agent Managed**.
 
-3.  In the Agent Managed pane, verify that the value listed in the Version column is 8.0.10918.0.
+3.  In the Agent Managed pane, verify that the value listed in the **Version** column is 8.0.10918.0.
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
@@ -136,7 +136,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 2.  Under **Device Management**, click **UNIX/Linux Computers**.
 
-3.  Verify that the value listed in the Agent **Version** column is 1.6.2-336, where x is any positive integer.
+3.  Verify that the value listed in the Agent **Version** column is 1.4.1-45.
 
     > [!NOTE]
     > It can take up to one hour for the console to show the updated version of the agent.
