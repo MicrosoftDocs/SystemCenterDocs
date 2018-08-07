@@ -5,7 +5,7 @@ description: This article is the landing page covering all of the getting starte
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 08/07/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
