@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-threshold
 keywords:
-ms.date:  7/19/2018
+ms.date:  07/19/2018
 title:  Add Modern Backup Storage to DPM
 ms.technology:  system-center-2016
 ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce

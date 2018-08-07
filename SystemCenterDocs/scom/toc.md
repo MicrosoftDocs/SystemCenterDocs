@@ -1,6 +1,7 @@
 # [Overview](welcome.md)
 ## [Operations Manager key concepts](key-concepts.md)
 # [Get Started](get-started.md)
+## [Operations Manager 2016 build versions](release-build-versions-2016.md)
 ## [Features deprecated](features-removed-or-deprecated.md)
 ## [Release notes - 2016](get-started-release-notes.md)
 ## [Release notes - 1801](release-notes-1801.md)
