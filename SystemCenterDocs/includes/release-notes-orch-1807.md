@@ -14,6 +14,6 @@ title:  include file
 
 ##  Release notes for System Center 1807 - Orchestrator
 
-This release of System Center Orchestrator contains all the bug fixes shipped until the [Update Rollup 5 of Orchestrator 2016](https://support.microsoft.com/help/4094928/update-rollup-5-for-system-center-2016-orchestrator). 
+This release of System Center Orchestrator contains all the bug fixes shipped until the [Update Rollup 5 of Orchestrator 2016](https://support.microsoft.com/help/4094928/update-rollup-5-for-system-center-2016-orchestrator).
 
-To learn more about the bug fixes, and the installation instructions for Orchestrator 1807, see [KB article 4135040](https://support.microsoft.com/help/4135040).
+To learn more about the bugs fixed, and the installation instructions for Orchestrator 1807, see [KB article 4135040](https://support.microsoft.com/help/4135040).
