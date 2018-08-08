@@ -16,4 +16,4 @@ title:  include
 
 This release of System Center Service Management Automation (SMA) contains all the bug fixes shipped until the Update Rollup 5 of SMA 2016. [Learn more](https://support.microsoft.com/en-in/help/4094929/update-rollup-5-for-system-center-2016-service-management-automation).
 
-To get the 1807 update, see [KB article 4135041](https://support.microsoft.com/help/4135041).
+To learn more about the bug fixes, and the installation instructions for SMA 1807, see [KB article 4135041](https://support.microsoft.com/help/4135041).
