@@ -19,7 +19,7 @@ The following sections describe the scalability information, hardware, software,
 
 The following table provides the scale limits that were tested for System Center  Virtual Machine Manager. There are various factors that impact the scale limits, such as hardware configuration, network, topology, and others.
 
-The [planning guide](../vmm/plan-install) provides the details about how these factors can be adapted to specific requirements.
+The [planning guide](../vmm/plan-install.md) provides the details about how these factors can be adapted to specific requirements.
 
 **Entity** | **Recommended maximum count**
 --- | ---
