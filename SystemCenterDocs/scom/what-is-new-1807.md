@@ -1,7 +1,7 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: What's New in Operations Manager - 1807
-description: This article describes what's new in System Center Operations Manager 1807 compared to previous versions. 
+description: This article describes what's new in System Center Operations Manager 1807 compared to previous versions.
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
@@ -15,15 +15,17 @@ ms.topic: article
 
 # What's New in System Center Operations Manager 1807
 
-The content in this section describes what's new and changed in System Center Operations Manager 1807.
+The content in this section describes what's new and changed in System Center Operations Manager (SCOM) 1807.
 
-To get the 1807 update, see [KB article 4133779](https://support.microsoft.com/help/4133779).
+>[!NOTE]
+
+> To view the bugs fixed and the installation instructions for SCOM 1807, see [KB article 4133779](https://support.microsoft.com/help/4133779).
 
 ## Configure APM component during agent install or repair
 In System Center Operations Manager version 1801 agent, the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting. You can now disable the APM component when you deploy the Operations Manager agent from Discovery Wizard in the console, when performing a repair of the agent from the Operations console, and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**.  
 
 
-## Linux log rotation 
+## Linux log rotation
 
 To prevent the SCX logs from growing and consuming all available free space on the system disk, a log rotation feature is now available for the SCX agent.  
 
@@ -45,13 +47,11 @@ With version 1807, upgrading from SQL Server 2016 to SQL Server 2017 is supporte
 ## Operations Manager and Service Manager console coexistence
 The Operations and Service Manager version 1807 consoles, as well as PowerShell modules can be installed on the same system.  
 
-## OpenSSL 1.1.0 version support 
-On Linux platforms, OpenSSL 0.9.8 support is dropped and we have added support for OpenSSL 1.1.0. 
- 
-## Ubuntu 18 and Debian 9 support 
-These Linux platforms are added to our support matrix for monitoring UNIX and Linux computers. 
- 
-## Auto detection of Pseudo FS and drop Enumeration. 
+## OpenSSL 1.1.0 version support
+On Linux platforms, OpenSSL 0.9.8 support is dropped and we have added support for OpenSSL 1.1.0.
+
+## Ubuntu 18 and Debian 9 support
+These Linux platforms are added to our support matrix for monitoring UNIX and Linux computers.
+
+## Auto detection of Pseudo FS and drop Enumeration.
 The UNIX and Linux agent has been enhanced to detect pseudo file system dynamically and ignore enumeration.  
- 
- 
