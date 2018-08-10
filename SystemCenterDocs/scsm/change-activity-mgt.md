@@ -198,8 +198,8 @@ The new workflow you are about to create applies the **Set *named user* as the A
 5.  In the **Select a Class** dialog box, in the **Name** list, select **Manual Activity**, and then click **OK**.
 6.  In the **Configure Workflows** dialog box, click **Add**.
 7.  On the **Before You Begin** page of the **Configure workflows for objects of class Manual Activity** wizard, click **Next**.
-8.  On the **Workflow Information** page, in the **Name** box, type a name for the workflow. For example, type **Assign Unassigned Activities to *named user***.
-9. Optionally, in the **Description** box, you can type a description of the new workflow. For example, you can type **This workflow automatically assigns unassigned manual activities to the *named user***.
+8.  On the **Workflow Information** page, in the **Name** box, type a name for the workflow. For example, type **Assign Unassigned Activities to _named user_**.
+9. Optionally, in the **Description** box, you can type a description of the new workflow. For example, you can type **This workflow automatically assigns unassigned manual activities to the _named user_**.
 10. In the **Check for events** list, select **When an object is created**.
 11. Make sure that the **Enabled** check box is selected, and then click **Next**.
 12. On the **Specify Criteria** page, on the **Changed to** tab, in the **Related classes** list, select **Manual Activity**.
@@ -217,7 +217,7 @@ The new workflow you are about to create applies the **Set *named user* as the A
 ### To validate workflow creation
 
 1.  In the **Administration** pane, expand **Administration**, expand **Workflows**, and then click **Status**.
-2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the *named user*** is listed.
+2.  In the **Status** pane, verify that the new workflow template titled **Assign Unassigned Activities to the _named user_** is listed.
 
 
 ## Next steps
