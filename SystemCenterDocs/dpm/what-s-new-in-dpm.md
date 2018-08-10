@@ -26,7 +26,7 @@ DPM 1807 provides a number of bugs fixes to improve performance.
 
 > [!NOTE]
 
-> To view the list of bugs fixes and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
+> To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
 
 ::: moniker-end
 
