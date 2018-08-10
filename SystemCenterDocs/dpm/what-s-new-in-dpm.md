@@ -14,7 +14,7 @@ ms.author: markgal
 
 # What's new in System Center DPM
 
-Before starting, check the [System Center DPM Release Notes](dpm-release-notes.md) for last-minute issues. DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [bugs that have been fixed](dpm-release-notes.md#dpm-1807-release-notes). 
+Before starting, check the [System Center DPM Release Notes](dpm-release-notes.md) for last-minute issues. DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [bugs that have been fixed](dpm-release-notes.md#dpm-1807-release-notes).
 
 System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, resulting in faster backups. DPM 2016 supports shielded VMs.
 
@@ -22,7 +22,11 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ## What's new in DPM 1807
 
-DPM 1807 provides a number of bugs fixes to improve performance. See [KB article 4339950](https://support.microsoft.com/help/4339950) for a full list of the bug fixes and to install the 1807 update release.
+DPM 1807 provides a number of bugs fixes to improve performance.
+
+> [NOTE!]
+
+> To view the list of bugs fixes and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
 
 ::: moniker-end
 
@@ -31,9 +35,9 @@ DPM 1807 provides a number of bugs fixes to improve performance. See [KB article
 ## New features in DPM 1801
 
 [System Center DPM 1801](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) supports back up and restore of VMware virtual machines, and extends the benefits of Modern Backup Storage to your VMware backups:
-* up to 50% storage savings, 
-* 3x faster backups, 
-* and workload-volume affinity 
+* up to 50% storage savings,
+* 3x faster backups,
+* and workload-volume affinity
 
 ::: moniker-end
 
@@ -195,4 +199,3 @@ To give permissions to the share
 
     This prepares the VMs on SOFS shares for the backup process.
 ::: moniker-end
-
