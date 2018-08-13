@@ -4,7 +4,7 @@ description: This article describes how to use the Operations Manager Health Exp
 author: mgoedtel
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 02/13/2018
+ms.date: 08/13/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: 61005760-0977-4cd8-b76d-05558160f78f
 
 # Using Health Explorer to investigate problems
 
-Use Health Explorer to find out which monitor is reacting and to review knowledge about the monitor and possible causes for actions related to it. In the **Active Alerts** view, click the alert to highlight it. The Health Explorer link under **Alert Actions** in the **Tasks** pane becomes active.  
+Use Health Explorer to find out which monitor is reflecting a health state issue and review knowledge about the monitor and possible causes for actions related to it. In the **Active Alerts** view, click the alert to highlight it. The Health Explorer link under **Alert Actions** in the **Tasks** pane becomes active.  Health Explorer is also accessible when selecting a monitored object from any health state view in the console.  
   
 By default, when the Health Explorer window opens, all monitors in a failed state are expanded. If a monitor contains other monitors, as in the case of a roll-up monitor, Health Explorer shows all child monitors in a hierarchical layout, displaying monitoring data for all dependent services and applications. To view more information about any dependent monitor, you can right-click that monitor, and then click **Monitor Properties** to open another Health Explorer window.  
 
