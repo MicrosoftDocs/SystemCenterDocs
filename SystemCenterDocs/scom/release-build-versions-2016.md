@@ -28,9 +28,9 @@ The following table lists the release history for Operations Manager 2016.
 |7.2.11759.0 |[KB3190029](https://support.microsoft.com/kb/3190029) |October 2016 |Update Rollup 1 |  
 |7.2.11822.0 |[KB3209591](https://support.microsoft.com/help/3209591) |February 2017 |Update Rollup 2 |  
 |7.2.11878.0 |[KB4016126](https://support.microsoft.com/help/4016126/update-rollup-3-for-system-center-2016-operations-manager) |May 2017 |Update Rollup 3|  
-|8.0.10977.0 | [KB4024941](https://support.microsoft.com/help/4024941/update-rollup-4-for-system-center-2016-operations-manager) |October 2017 | Update Rollup 4 [^1]|
+|8.0.10977.0 | [KB4024941](https://support.microsoft.com/help/4024941/update-rollup-4-for-system-center-2016-operations-manager) |October 2017 | Update Rollup 4 <sup>1</sup>|
 
-[^1]: 
+<sup>1</sup> 
 All System Center Operations Manager Update Rollups are cumulative.  This means you do not need to apply them in order, you can always apply the latest update. However, there is one exception, if you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.
 
 
