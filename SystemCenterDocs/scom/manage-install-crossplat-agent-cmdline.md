@@ -14,7 +14,7 @@ ms.topic: article
 
 # Install agent on UNIX and Linux computers from the command line
 
-::: moniker range>="sc-om-1801"
+::: moniker range=">=sc-om-1801"
 
 Your environment may require that you manually install the agent. Use the following procedures to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 1801.  The agent packages can be found in the following folder on a management server - *%ProgramFiles%\Microsoft System Center\Operations Manager\Server\AgentManagement\UnixAgents\DownloadedKits*.  Import the required management packs for the specific version of UNIX/Linux you need to monitor.  The management packs are available in the Operations Manager installation media, in the *\ManagementPacks* directory or you can download the latest version from the [Download Center](https://www.microsoft.com/download/details.aspx?id=29696).
 
@@ -26,7 +26,7 @@ Your environment may require that you manually install the agent. Use the follow
 
 ::: moniker-end
 
-::: moniker range>="sc-om-1801"
+::: moniker range=">=sc-om-1801"
 
 [!INCLUDE [install-om-crossplat-agent-cmdline-1801.md](../includes/install-om-crossplat-agent-cmdline-1801.md)]
 
