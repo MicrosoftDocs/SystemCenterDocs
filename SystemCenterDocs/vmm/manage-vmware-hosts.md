@@ -21,8 +21,8 @@ VMM enables you to deploy and manage virtual machines and services across multip
 
 - You can add vCenter and vSphere hosts to the VMM fabric.
 - VMM integrates directly with VMware vCenter Server. Through the VMM console, you can manage the day-to-day operations of VMware vSphere hosts and clusters, such as the discovery and management of hosts.
-- VMM provides the ability to create, manage, store, place and deploy virtual machines on vSphere hosts. You can import VMware templates.
-- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example configuring port groups, standard and distributed virtual switches (or “vSwitches”), vMotion and Storage vMotion.
+- VMM provides the ability to create, manage, store, place and, deploy virtual machines on vSphere hosts. You can import VMware templates.
+- You can associate host adapters with VMM logical networks. More advanced management takes place on the vCenter Server, for example configuring port groups, standard and distributed virtual switches (or “vSwitches”), vMotion and, Storage vMotion.
 - You can convert VMware VMs to Hyper-V.
 
 
@@ -50,7 +50,7 @@ VMM enables you to deploy and manage virtual machines and services across multip
 	- If you're using a self-signed certificate for authenticating the vCenter server to VMM you can manually import the certificate to the Trusted People certificate store on the VMM management server before adding the vCenter server. If you don't you'll be prompted to do this during deployment.
 	- You'll need an account with admin permissions for the vCenter server (local or Active Directory account) and an account with admin permissions for the vSphere hosts. You can create Run As accounts before you begin. If you don't  you'll need to create accounts during the deployment procedure.
 	- You can decide whether you want VMM to communicate with the vSphere hosts managed by the vCenter server over a secure connection. If so you'll need a certificate to authentication communications on each vSphere host or cluster. You can either use the self-signed certificate that VMware created when vSphere was installed on the host, or a certificate from a trusted CA. If you're using a self-signed certificate you can  import it from each vSphere host to the vMM management server before you begin deployment
-	- Before you configure network settings for vSphere hosts make sure you've created logical networks that you want to associated with the physical network adapters on the hosts.
+	- Before you configure network settings for vSphere hosts make sure you've created logical networks that you want to associate with the physical network adapters on the hosts.
 
 ## Add a v-Center server
 
