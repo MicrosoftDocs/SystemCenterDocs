@@ -47,6 +47,9 @@ Perform the following steps on both the computer hosting the agent and the manag
 3. Install the approved certificates in the computer certificate stores.
 4. Use the MOMCertImport tool to configure Operations Manager.
 
+> [!NOTE]
+> CNG certificates are not supported.
+
 
 These are the same steps for installing certificates on a gateway server, except you do not install or run the gateway approval tool
 
