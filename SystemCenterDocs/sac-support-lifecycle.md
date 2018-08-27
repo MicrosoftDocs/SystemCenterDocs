@@ -6,7 +6,7 @@ author:  markgalioto
 ms.prod:  system-center
 ms.author: markgal
 keywords:  
-ms.date:  6/18/2018
+ms.date: 8/27/2018
 title:  Support for System Center SAC releases
 ms.technology: system-center
 ms.assetid:
@@ -39,6 +39,6 @@ The following table illustrates the release cycle overlap for the Semi-Annual Ch
 |Version|Availability Date| Support End Date |
 |-------|--------------- -|------------------|
 | 1801 | February 8, 2018 | August 8, 2019 <br/> 18 months after release date |
-| 18xx | Month, Day, 2018 | Month, Day, 2020 <br/> 18 months after release date |
+| 1807 | July, 24, 2018 | February, 24, 2020 <br/> 18 months after release date |
 
 
