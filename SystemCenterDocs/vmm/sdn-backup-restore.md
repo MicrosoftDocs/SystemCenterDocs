@@ -21,7 +21,7 @@ To back up and restore an SDN, you must back up and restore the network controll
 
 ## Back up the network controller
 
-Backup the network controller database by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#a-namebkmkbackupabackup-the-sdn-infrastructure).
+Back up the network controller database by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#a-namebkmkbackupabackup-the-sdn-infrastructure).
 
 ## Bring up the new network controller
 
@@ -58,14 +58,14 @@ Use the following refresh procedures to find any such differences between VMM an
 > - If the network controller contains any objects which are not present in the VMM DB, then the  VMM will not refresh (even if those objects are created by using VMM earlier). Delete those objects from NC and recreate the objects from VMM to manage these objects from VMM again.
 
 ### Refresh port ACLs
-1. Get all the NC managed port ACLs from the VMM server by using the following cmdlet:
+1. Get all the NC-managed port ACLs from the VMM server by using the following cmdlet:
 
     ```powershell
 
     $portACLs = Get-SCPortACL | Where-Object {$_.ManagedByNC -eq $True}
 
     ```
-2. Run the **Read-SCPortACL** cmdlet on all the NC managed port ACLs to refresh.
+2. Run the **Read-SCPortACL** cmdlet on all the NC- managed port ACLs to refresh.
 
     ```powershell
     foreach($portACL in $portACLs)
@@ -75,16 +75,16 @@ Use the following refresh procedures to find any such differences between VMM an
 
     ```
 
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh logical networks
-1.	Get all the NC managed logical networks from the VMM
+1.	Get all the NC-managed logical networks from the VMM
 server by using the following cmdlet:
 
     ```powershell
     $logicalNetworks = Get-SCLogicalNetwork | Where-Object {$_.IsManagedByNetworkController -eq $True}
     ```
-2.	Run the **Read-SCLogicalNetwork** cmdlet on all the NC managed logical networks to refresh.
+2.	Run the **Read-SCLogicalNetwork** cmdlet on all the NC-managed logical networks to refresh.
 
     ```powershell
     foreach($logicalNetwork in $logicalNetworks)
@@ -94,7 +94,7 @@ server by using the following cmdlet:
 
     ```
 
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh gateways and load balancer muxes
 1.	Get all the gateways and load balancer muxes by using the following cmdlet:
@@ -119,7 +119,7 @@ server by using the following cmdlet:
     }
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh NAT connections and NAT rules
 1.	Get all the NAT connections by using the following cmdlet:
@@ -145,7 +145,7 @@ server by using the following cmdlet:
     }
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh all load balancer VIPs
 1.	Get all the load balancer VIPs configured on NC by using the following cmdlet:
@@ -163,11 +163,11 @@ server by using the following cmdlet:
 
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh VM Networks
 
-1.	Get all the NC managed HNV VM networks from the VMM server by using the following cmdlet:
+1.	Get all the NC-managed HNV VM networks from the VMM server by using the following cmdlet:
 
     ```powershell
     $VMNetworks = Get-SCVMNetwork | Where-Object {$_.NetworkManager.Model -eq 'Microsoft Network Controller' -and $_.IsolationType -eq 'WindowsNetworkVirtualization'}
@@ -182,7 +182,7 @@ server by using the following cmdlet:
 
     ```
 
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh gateway pools
 
@@ -202,7 +202,7 @@ server by using the following cmdlet:
         Read-SCFabricRole -FabricRole $fabricRole
     }
     ```
-3. Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3. Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
 
 ### Refresh VM network gateways
 
@@ -227,4 +227,4 @@ server by using the following cmdlet:
     }
     ```
 
-3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log in case of any failures.
+3.	Verify the VMM jobs' log for the result status and follow the recommendations from the log, in case of any failures.
