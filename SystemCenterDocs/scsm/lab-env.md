@@ -121,7 +121,7 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
 1.  In the **Object Explorer** pane, expand **Databases**, expand **ServiceManager**, and then expand **Tables**.  
 2.  Right\-click **dbo.MT\_Microsoft$SystemCenter$ManagementGroup**, and then click **Edit Top 200 Rows**.  
-3.  In the center pane, locate the column **SQLServerName\_ 48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**.  
+3.  In the center pane, locate the column **SQLServerName\_43FB076F\_7970\_4C86\_6DCA\_8BD541F45E3A**.  
 4.  In the first row and second rows of this column, type the computer name of the computer hosting the Service Manager database in the lab environment. In the case of named instances, type computer name\\instance name.  
 5.  Right\-click **dbo. MT\_Microsoft$SystemCenter$ResourceAccessLayer$SqlResourceStore**, and then click **Edit Top 200 Rows**.  
 6.  In the center pane, locate the column **Server\_48B308F9\_CF0E\_0F74\_83E1\_0AEB1B58E2FA**.  
