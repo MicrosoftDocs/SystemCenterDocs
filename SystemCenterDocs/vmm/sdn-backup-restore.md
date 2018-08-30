@@ -35,7 +35,9 @@ Use the following procedures to bring up a new network controller:
 
     ![back up and restore sdn](media/sdn-backup-restore/back-up-restore-sdn.png)
 
-2. Deploy a new network controller service instance form the VMM by using the same service deployment settings that were  used for the original service instance deployment. [Learn more](https://docs.microsoft.com/system-center/vmm/sdn-controller).
+2. Ensure that you remove the DNS entry from the old network controller.
+
+3. Deploy a new network controller service instance form the VMM by using the same service deployment settings that were  used for the original service instance deployment. [Learn more](https://docs.microsoft.com/system-center/vmm/sdn-controller).
 
 3. Verify that the deployment job is successful.  
 
