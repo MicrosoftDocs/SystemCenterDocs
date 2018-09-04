@@ -75,7 +75,7 @@ Run the following command once on each computer that will receive commands. You 
 
 
 1.  Open a Windows PowerShell (x86) console as an administrator.
-2.  Type *System Drive***:\\PS&gt;enable-psremoting** and press Enter.
+2.  Type _System Drive_**:\\PS&gt;enable-psremoting** and press Enter.
 
 [Learn more](https://go.microsoft.com/fwlink/?linkID=144300) about Enable PSRemoting.
 

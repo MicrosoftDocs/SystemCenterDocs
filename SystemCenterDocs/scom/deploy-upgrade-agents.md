@@ -5,7 +5,7 @@ description: This article describes how to upgrade an Operations Manager agent t
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/30/2018
+ms.date: 08/13/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1801'
@@ -112,25 +112,21 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-1.  Log on to Linux/Unix machines and copy the target agent to machines.
+1.  Log on to Linux/Unix machines and copy the agent (omsagent-<version>.universalr.<version>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
-2.  Run the commands below on different Systems to upgrade the agents:
+2.  Install the package with the following command. 
 
-    -   Suse/Redhat/CentOS/Oracle Linux: `rpm -U <package>`
+    `sh ./omsagent-<version>.universalr.<version>.<arch>.sh –-upgrade`
 
-    -   Ubuntu/Debian: `-i <package file>`
+3.	Verify the package is installed with the following command.
 
-    -   HP-UX: `swinstall -s <full path to depot> <package name>`
+    `rpm -q omsagent`
 
-    -   Aix: `/usr/sbin/install -X -F -d <package file> scx.rte/`
+4.	Verify that the Microsoft SCX CIM Server is running with the following command.
+ 
+    `scxadmin -status`
 
-    -   Solaris:
-
-        -   Remove the installed package with: `pkgrm MSFTscx`
-
-        -   Install the new package version with: `pkgadd`
-
-#### To verify the UNIX or Linux agent upgrade
+#### To verify the UNIX or Linux agent upgrade from the console
 
 1.  In the Operations console, in the navigation pane, click **Administration**.
 
