@@ -17,7 +17,7 @@ ms.technology:  virtual-machine-manager
 You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.
 
 - For each Azure subscription you add, you can use a console to see all role instances in all Deployment Groups in that subscription.
-- If you already manage your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
+- If you are already managing your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances without leaving the VMM console. You can:
     - Add and remove Azure subscriptions in the VMM console.
     - Get a list view of information about role instances in deployment subscriptions. Instances can be manually refreshed.
     - Perform basic actions on the instances, including start, stop, shutdown, and restart.
@@ -62,14 +62,14 @@ Here's what you need to add an Azure subscription in VMM:
 
 ## Manage Azure VMs
 
-If you are already managing your on-premise virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances, without leaving the VMM console. You can:
+If you are already managing your on-premises virtual machines in VMM, you can use this feature to perform some very basic actions on Azure instances, without leaving the VMM console. You can:
 -	Add and remove one or more Azure subscriptions by using the VMM console.
 -	See a list view with details and status of all role instances in all deployments in that subscription.
 -	Manually refresh the list of instances.
 -	Perform the following basic actions on the instances:
     -	Start
     -	Stop
-    -   Shutdown
+    - Shutdown
     -	Restart
     -	Connect via RDP
 
