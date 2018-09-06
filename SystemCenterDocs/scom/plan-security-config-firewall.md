@@ -21,11 +21,11 @@ The following table shows Operations Manager feature interaction across a firewa
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](https://docs.microsoft.com/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135)|
+|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](https://docs.microsoft.com/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br> Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine.|
 |Management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |Gateway server|5723 --->|management server|No||
-|Management server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|No||
+|Management server|1433/TCP ---><br>  1434/UDP ---> <br> 135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine.|
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
 |Operations console|5724 --->|management server|No||
 |Connector framework source|51905 --->|management server|No||
