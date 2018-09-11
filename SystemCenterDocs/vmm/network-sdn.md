@@ -15,9 +15,9 @@ ms.technology:  virtual-machine-manager
 
 
 
- This article summarizes the software-defined network (SDN) operations that you can managed in the System Center Virtual Machine Manager (VMM) fabric. For operations that can't be managed in the fabric, you need to use REST APIs or Windows Server PowerShell.
+ This article summarizes the software-defined network (SDN) operations that you can manage in the System Center Virtual Machine Manager (VMM) fabric. For operations that can't be managed in the fabric, you need to use REST APIs or Windows Server PowerShell.
 
- A software-defined network (SDN) abstract physical hardware network infrastructure into virtual networks. In the VMM fabric you can deploy and manage an SDN infrastructure, including network controller, software load balancers, and gateways, to provision and manage virtual networks at scale. [Learn more](deploy-sdn#software-defined-network-overview.md).
+ A software-defined network (SDN) abstract physical hardware network infrastructure into virtual networks. In the VMM fabric you can deploy and manage an SDN infrastructure, including network controller, software load balancers, and gateways, to provision and manage virtual networks at scale. [Learn more](deploy-sdn.md#software-defined-network-overview).
 
 
 ## What can I manage in VMM?
@@ -51,7 +51,7 @@ MACPool | Creates a MAC address pool on the network controller | Overwritten by 
 NatRules | Configures the load balancer to apply NAT to traffic | Overwritten by VMM if you enable out-of-box
 NetworkInterface |Specifies the configuration of either a host virtual interface (host vNIC) or a virtual server NIC (VMNIC).  | Overwritten by VMM if you enable out-of-box
 PortSettings | | Overwritten by VMM if you enable out-of-box
-PublicIPAddress | Specifies an IP address which is publically available. It's used by virtualGateways and loadBalancers to indicate the IP address that can be used to communicate with the virtual network from outside. | Overwritten by VMM if you enable out-of-box
+PublicIPAddress | Specifies an IP address, which is publically available. It's used by virtualGateways and loadBalancers to indicate the IP address that can be used to communicate with the virtual network from outside. | Overwritten by VMM if you enable out-of-box
 QualityOfService | | Overwritten by VMM if you enable out-of-box
 Servers | Represents a physical server that is being controlled by the Network Controller. | Overwritten by VMM if you enable out-of-box
 VirtualGateway | Describes the gateway used for cross-premises connectivity from the virtual network. | Overwritten by VMM if you enable out-of-box
