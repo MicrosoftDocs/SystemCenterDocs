@@ -58,7 +58,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     c. Configure the report server Web service and portal URL, and report server database using the Reporting Services Configuration tool. For more information, see [Configure a Report Server (Reporting Services Native Mode)](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-reporting-services-native-mode). 
 
-3. Perform the upgrade to SQL Server 2017 following the steps described in the SQL Server  2017 documentation to [upgrade the database engine](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017) and [upgrade Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/upgrade-and-migrate-reporting-services?view=sql-server-2017).
+3. Perform the upgrade to SQL Server 2017 following the steps described in the SQL Server  2017 documentation to [upgrade the database engine](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017) and [upgrade Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/upgrade-and-migrate-reporting-services?view=sql-server-2017).
 
 ## Install SQL Server 2017 Reporting services
 To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
