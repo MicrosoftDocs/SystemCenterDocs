@@ -881,7 +881,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <p><a href="https://docs.microsoft.com/system-center/orchestrator/release-notes-orch">Orchestrator Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/release-notes-sm">SM Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/release-notes-sma">SMA Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-1801">SPF Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-1801?view=sc-spf-1807">SPF Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/vmm/release-notes-vmm">VMM Release Notes</a></p>
                                                 </div>
                                             </div>
