@@ -902,10 +902,10 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <p><a href="https://docs.microsoft.com/system-center/dpm/what-s-new-in-dpm">What's New in DPM</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scom/what-is-new-1807">What's New in SCOM</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/vmm/whats-new-in-vmm">What's New in VMM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-1801">What's New in Orchestrator</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-1801?view=sc-orch-1807">What's New in Orchestrator</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-in-sm">What's New in SM</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-in-sma">What's New in SMA</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-1801">What's New in SPF</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-1801?view=sc-spf-1807">What's New in SPF</a></p>
                                                 </div>
                                             </div>
                                       </div>
