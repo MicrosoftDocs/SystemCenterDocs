@@ -75,7 +75,7 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 
 5. Run **regedit** from an elevated Command Prompt and navigate to *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\MSSQLServer\CurrentVersion*.  Note the value for the key *CurrentVersion*.   
 
-6. Create registry key ** Version** under *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\MSSQLServer\Setup\* with REG_SZ value noted in the previous step.
+6. Create registry key **Version** under *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\SSRS\MSSQLServer\Setup\* with REG_SZ value noted in the previous step.
 
 7. Reboot the server in order for the changes to take effect. 
 

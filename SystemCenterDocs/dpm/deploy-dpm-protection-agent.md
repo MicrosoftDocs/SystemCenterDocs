@@ -110,15 +110,15 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
 3.  To install the protection agent open an elevated Command Prompt window, and then run one of the following commands:
 
-    -   For a 64-bit computer type: **DpmAgentInstaller_x64.exe *&lt;DPMServerName&gt;***
+    -   For a 64-bit computer type: **DpmAgentInstaller_x64.exe _&lt;DPMServerName&gt;_**
         where *&lt;DPMServerName&gt;* is the fully qualified domain name (FQDN) of the DPM server.For example: **DPMAgentInstaller_x64.exe DPMserver1.contoso.com**
 
-    -   For a 32-bit computer type: **DpmAgentInstaller_x86.exe *<DPMServerName>***
+    -   For a 32-bit computer type: **DpmAgentInstaller_x86.exe _<DPMServerName>_**
         where *&lt;DPMServerName&gt;* is the fully qualified domain name of the DPM server.
 
     Note:
 
-    -   To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command.For example: **DpmAgentInstaller_x64.exe /q *&lt;DPMServerName&gt;***
+    -   To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command.For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
 
     -   To accept the EULA manually in a silent installation use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
 
@@ -126,7 +126,7 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
         1.  To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
 
-        2.  Type: **SetDpmServer.exe -dpmServerName *&lt;DPMServerName&gt;***. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+        2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
 4.  If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 

@@ -31,7 +31,7 @@ A VMM profile contains settings that are used when you create a new virtual mach
 ## Create a hardware profile
 
 1. In the VMM console click > **Library** > **Create** > **Hardware Profiles**.
-2. In **New Hardware Profile** > **General**, type in a profile name. You can create a hardware profile with the default settings** but you probably want to tailor them. In **Hardware Profile** you can specify the hardware settings.
+2. In **New Hardware Profile** > **General**, type in a profile name. You can create a hardware profile with the default settings but you probably want to tailor them. In **Hardware Profile** you can specify the hardware settings.
 3. In **Compatibility** you can specify that a capability profile should be assigned to the hardware profile. Remember, capability profiles help limit available options when you're creating a new VM.
 4. In **General** you can define how many virtual processors to assign to the VM. You can specify memory. startup and dynamic memory range. Startup specifies the memory that is assigned to the VM during startup. After startup this memory can be reclaimed back from the VM in accordance with the minimum memory settings.
 5. In **Bus Configuration** you add and remove hardware that supports storage device.
