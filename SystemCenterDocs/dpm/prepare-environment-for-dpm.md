@@ -80,7 +80,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement|Details|
 |-----------|-------|
-|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. <br/><br/> DPM 2016 onwards, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested.<br/><br/> However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation effort.|
+|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. <br/><br/> DPM 2016 onwards, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested. However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation effort.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
 |Windows Management Framework (WMF)|If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [WMF 4.0](https://www.microsoft.com/download/details.aspx?id=40855) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/> Windows Server 2012 and later do not require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
