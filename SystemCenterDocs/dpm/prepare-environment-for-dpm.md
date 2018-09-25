@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2/8/2018
+ms.date: 09/25/2018
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -73,14 +73,14 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Logical unit number (LUN)<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2, that use legacy storage pool.* | |Maximum of 17 TB for GUID partition table (GPT) dynamic disks<br/> 2 TB for master boot record (MBR) disks<br/> Requirements are based on the maximum size of the hard disk that appears in the operating system.|
 |Limitations<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2 that used legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. If you're running DPM 2012 R2 with Update Rollup 3 or later you can also use virtual tape libraries with a virtual fibre channel adapter. For more information, see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
 |Virtualized DPM|- DPM running on a virtual machine can use the following storage types:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| <br/> |
-|Modern Backup Storage| Use Volumes. <br/> A single DPM server supports up to 120-TB storage. | <br/> |
+|Modern Backup Storage| Use Volumes. <br/> A single DPM server has a soft limit of 120 TB storage.| <br/> |
 
 
 ## Protected workloads
 
 |Requirement|Details|
 |-----------|-------|
-|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. DPM 2016 onwards can go beyond the previous 120 TB limit.<br/><br/> To protect the maximum size, each DPM server needs: 120 TB storage, with 80 TB replica space, and maximum recovery point size of 40 TB.|
+|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. <br/><br/> DPM 2016 onwards, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested.<br/><br/> However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation effort.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
 |Windows Management Framework (WMF)|If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [WMF 4.0](https://www.microsoft.com/download/details.aspx?id=40855) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/> Windows Server 2012 and later do not require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
