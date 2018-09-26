@@ -49,7 +49,7 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 **Note the following**:
 - When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard.
--In **Resource Type*, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
+-In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
 - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
 ### Provision a cluster from bare metal machines

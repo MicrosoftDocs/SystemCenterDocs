@@ -41,7 +41,7 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 3. In **Capacity**, specify the file share size and type. Leave the default type unless the disk is used for backups or deduplication, in which case NTFS is recommended.
 4. In **Capacity** > **Resiliency**, for ReFS resilience must be mirror (two or three-way). For NTFS it can be mirror or parity (single or dual). The default is a three-way mirror.
 5. Enable deduplication if required. Change the unit size allocation if required, and optionally enable storage tiers.
-6. In **Summary** review the settings and click **Finish**. Verify the file share in **Fabric** > **Storage** > **File Servers **> **File Shares**.
+6. In **Summary** review the settings and click **Finish**. Verify the file share in **Fabric** > **Storage** > **File Servers** > **File Shares**.
 
 
 ## Set a storage QoS for an SOFS
