@@ -1,26 +1,26 @@
 ---
 ms.assetid: 686ba922-5d20-4c0b-b99b-c2ecde1d7bb2
-title: Configure fallback HGS in System Center Virtual Machine Manager 1801
-description: This article explains about how to configure the fallback HGS in VMM 1801
+title: Configure fallback HGS in System Center Virtual Machine Manager
+description: This article explains about how to configure the fallback HGS in VMM
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 02/05/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
+monikerRange: '>sc-vmm-2016'
 ---
 
-# Configure HGS fallback URLs in VMM 1801
+# Configure HGS fallback URLs in VMM
 
-This article describes how to define the fallback Host Guardian Service (HGS) URLs in System Center 1801 - Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
+This article describes how to define the fallback Host Guardian Service (HGS) URLs in System Center - Virtual Machine Manager (VMM) global settings. For information about guarded fabrics, see [this article](guarded-deploy-host.md).
 
 Being at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, the host guardian service (HGS) should operate even in situations of disaster.
 
-With fallback HGS configuration feature in VMM 1801, a guarded host can be configured with a primary and secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
+With fallback HGS configuration feature in VMM, a guarded host can be configured with a primary and secondary pair of HGS URLS (an attestation and key protection URI). This capability will enable scenarios such as guarded fabric deployments spanning two data centers for disaster recovery purposes, HGS running as shielded VMs etc.
 
-The primary HGS URLs will always be used in favor of the secondary.  If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be re-attempted against the secondary.  Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
+The primary HGS URLs will always be used in favor of the secondary.  If the primary HGS fails to respond after the appropriate timeout and retry count, the operation will be reattempted against the secondary.  Subsequent operations will always favor the primary; the secondary will only be used when the primary fails.
 
 
 ## Before you start
