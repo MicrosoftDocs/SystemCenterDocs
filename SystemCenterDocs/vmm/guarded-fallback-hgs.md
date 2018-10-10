@@ -9,7 +9,7 @@ ms.date: 10/10/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: '>sc-vmm-1801'
+monikerRange: '>sc-vmm-2016'
 ---
 
 # Configure HGS fallback URLs in VMM
