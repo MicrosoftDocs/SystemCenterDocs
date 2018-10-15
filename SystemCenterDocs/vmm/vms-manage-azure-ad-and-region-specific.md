@@ -1,7 +1,7 @@
 ---
 ms.assetid: d4b3e835-cd9b-4993-bfe0-e491f5f18508
-title:  Manage arm-based and region-specific VMs using System Center VMM.
-description: This article provides information about how to manage VMs with arm-based and region-specific Azure subscriptions using VMM.
+title:  Manage Azure Resource Manager-based and region-specific VMs using System Center VMM.
+description: This article provides information about how to manage VMs with Azure Resource Manager-based and region-specific Azure subscriptions, using VMM.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
@@ -14,11 +14,11 @@ monikerRange: '>sc-vmm-2016'
 
 # Manage VMs using Azure AD-based authentication & authorization and region-specific Azure subscriptions
 
-This article provides information about how to manage the ARM-based and region-specific Azure subscriptions using System Center - Virtual Machine Manager (VMM).
+This article provides information about how to manage the Azure Resource Manager-based and region-specific Azure subscriptions using System Center - Virtual Machine Manager (VMM).
 
-You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later and perform required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows management of Azure subscriptions through certificate-based authentication and authorization, and VMs in public Azure region.
+You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later, and perform required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows management of Azure subscriptions through certificate-based authentication and authorization, and VMs in public Azure region.
 
-VMM 1801 onwards supports management of Azure subscriptions through Azure active directory and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
+VMM 1801 and later supports management of Azure subscriptions through Azure active directory and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
 
 Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 

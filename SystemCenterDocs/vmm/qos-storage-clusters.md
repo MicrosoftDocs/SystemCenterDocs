@@ -20,7 +20,7 @@ This article describes about how to manage storage quality-of-service (QoS) poli
 ## Assign storage QoS policy for clusters
 Windows server 2016 allows the deployments to use the storage QoS feature with any VHDs residing on a Cluster Shared Volume (CSV). In VMM 2016, the management of SQoS is limited to VHDs residing on the S2D hyper converged type clusters and Scale-Out File Servers only (SOFS). Also, the scope of QoS policies is based on the storage arrays, which is not scalable to the scenarios like SAN, where VMM only manages the compute cluster.
 
-VMM 1801 onwards supports QoS on all managed clusters and also SOFS, running on Windows Server 2016 and beyond.
+VMM 1801 and later supports QoS on all managed clusters and also SOFS, running on Windows Server 2016 and beyond.
 
 
 **Use these steps**:
@@ -52,7 +52,7 @@ The following new parameters are added:
 ## Assign  a storage QoS Policy from templates
    Templates usage is a common way for deploying VMs and Services on a cloud.
 
-   With VMM 1801 onwards, you can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in  [create a VM template](library-vm-templates.md) article.
+   With VMM 1801 and later, you can select storage QoS policies from a template as well. For information on how to assign storage QoS policies from templates, see the related procedure in  [create a VM template](library-vm-templates.md) article.
 
 
 ## Next steps
