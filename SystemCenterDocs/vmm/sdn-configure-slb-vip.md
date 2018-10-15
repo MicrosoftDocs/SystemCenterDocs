@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1e144c7f-4ab3-4f06-abd9-1c45dea099f9
-title: Configure SLB VIPs using VMM service templates  in System Center 1801- Virtual Machine Manager
-description: This article explains about how to configure SLB VIPs through VMM service templates using VMM 1801.
+title: Configure SLB VIPs using VMM service templates in System Center - Virtual Machine Manager
+description: This article explains about how to configure SLB VIPs through VMM service templates using VMM.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
@@ -9,13 +9,13 @@ ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
+monikerRange: '>sc-vmm-2016'
 ---
 #	Configure SLB VIPs through VMM service templates
 
 Software Defined Networking (SDN) in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 only supports deploying SLB Virtual IPs (VIPs) using power shell.
 
-System Center 1801 - Virtual Machine Manager (VMM) supports configuration of SLB VIPs while deploying multi-tier application by using service templates and also supports both public and internal load balancing.
+System Center - Virtual Machine Manager (VMM) 1801 onwards support configuration of SLB VIPs while deploying multi-tier application by using service templates and also supports both public and internal load balancing.
 
 
 ## Before you begin
