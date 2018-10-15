@@ -18,11 +18,11 @@ This article provides information about how to manage the ARM-based and region-s
 
 You can add Microsoft Azure subscriptions to System Center 2016 - Virtual Machine Manager (VMM) and later and perform required actions. [Learn more](azure-subscription.md). The VMM Azure plugin allows management of Azure subscriptions through certificate-based authentication and authorization, and VMs in public Azure region.
 
-VMM 1801 onwards support management of Azure subscriptions through Azure active directory and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
+VMM 1801 onwards supports management of Azure subscriptions through Azure active directory and region-specific Azure subscriptions. (namely, Germany, China, US Government Azure regions).
 
 Management of Azure subscriptions through certificate-based authentication and authorization requires Management certificate. [Learn More](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
 
-Management of  VMs using Azure AD based authentication and authorization requires Azure AD application.
+Management of  VMs using Azure AD-based authentication and authorization requires Azure AD application.
 
 
 ## Before you start
@@ -56,7 +56,7 @@ Ensure the following prerequisites:
 1.	Browse to **Azure subscription** and click **Add Subscription**.
 ![add subscription](media\azure-arm-based\add-subscription.png)
 
-2. Provide **Display Name**, **Azure cloud** and **Subscription ID**.
+2. Provide **Display Name**, **Azure cloud**, and **Subscription ID**.
 
     You can provide any friendly name as display name. Choose either public Azure or region-specific subscription as appropriate.
 
@@ -71,7 +71,7 @@ Ensure the following prerequisites:
 
 5. To use management certificate, select **Management using management certificate**.  (not required if already performed step 3 and 4)
 
-    If you want to continue using certificate based authentication, then instead of selecting Azure AD authentication choose management certificate based authentication and provide the management certificate from “Current User\Personal” certificate store and then click **Finish**.
+    If you want to continue using certificate based authentication, then instead of selecting Azure AD authentication, choose management certificate based authentication and provide the management certificate from “Current User\Personal” certificate store and then click **Finish**.
 
     ![select authentication](media\azure-arm-based\management-using-certificate.png)
 

@@ -17,7 +17,7 @@ This article provides information about how to configure enhanced console sessio
 
 Console connect in VMM provides a way to connect to the VM without a network connection to it.  For information on deploying VMM console, see [install VMM console](install-console.md). Prior to 1801, the console connect in VMM supported only basic session where clipboard text can only be pasted through **Type Clipboard Text menu** option.
 
-VMM 1801 onwards support enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, there by copy/paste commands for text and files are made possible from and to the VM.
+VMM 1801 onwards supports enhanced console session. With console connected through enhanced session,  **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files are available on the clipboard, there by copy/paste commands for text and files are made possible from and to the VM.
 
 
 ## Before you start

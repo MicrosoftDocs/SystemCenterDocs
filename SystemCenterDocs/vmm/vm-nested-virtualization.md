@@ -18,7 +18,7 @@ Nested Virtualization is a functionality in Windows Server 2016 and above that a
 
 You can leverage this functionality to reduce your infrastructure expense for development and test scenarios without the need for individual hardware.
 
-System Center - Virtual Machine Manager (VMM) allows you to enable and disable the nested virtualization through VMM console. You can configure the nested Virtual Machine (VM) as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
+System Center - Virtual Machine Manager (VMM) 1801 onwards, you can enable and disable the nested virtualization feature through VMM console. You can configure the nested Virtual Machine (VM) as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
 
 >[!NOTE]
 

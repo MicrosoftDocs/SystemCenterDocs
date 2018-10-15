@@ -20,7 +20,7 @@ VMM was supporting guest clustering.  However, with the advent of the network co
 
 With the introduction of the network controller, VMs, which are connected to the virtual network are only permitted to use the IP address that NC assigns for communication. NC does not support floating IP addresses which are essential for technologies such as Microsoft Failover Clustering to work.
 
-VMM 1801 onwards, enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
+VMM 1801 onwards, you can enable this feature by emulating the floating IP functionality through the Software Load Balancer (SLB) in the SDN.
 
 VMM 1801 and later supports guest clustering in SDN through an Internal Load Balancer(ILB) Virtual IP(VIP). The ILB uses probe ports which are created on the guest cluster VMs to identify the active node.  At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
 
