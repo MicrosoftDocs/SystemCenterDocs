@@ -46,7 +46,7 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 ::: moniker range=">sc-vmm-2016"
 
-## Convert  EFI based VM to Hyper-V generation 2 VM (Technical Preview)
+## Convert  EFI based VM to Hyper-V generation 2 VM 
 System Center VMM enables migration of EFI based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
 
 As part of VMM 1801 release, the **Convert Virtual Machine** wizard enabled this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
