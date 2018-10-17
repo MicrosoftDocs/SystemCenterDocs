@@ -20,13 +20,11 @@ ms.author: markgal
 
 ::: moniker-end
 
-
 ::: moniker range="sc-dpm-1801"
 
-System Center DPM version 1801 provides the following new feature:
+System Center DPM 1801 provides the following new feature:
 
 ::: moniker-end
-
 
 ::: moniker range="sc-dpm-2016"
 
@@ -57,6 +55,7 @@ System Center DPM 1801 supports [back up and restore of VMware virtual machines]
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2016"
+
 ## New features in DPM 2016
 
 The following features are either new to DPM, or are improved for DPM 2016.
@@ -213,5 +212,5 @@ To give permissions to the share
 14. When you are finished adding permissions for the servers, click **Apply**.
 
     This prepares the VMs on SOFS shares for the backup process.
-    
+
 ::: moniker-end
