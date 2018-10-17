@@ -32,7 +32,8 @@ To view the list of bugs fixed and the installation instructions for DPM 1807, s
 
 ## New features in DPM 1801
 
-[System Center DPM 1801](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) supports back up and restore of VMware virtual machines, and extends the benefits of Modern Backup Storage to your VMware backups:
+System Center DPM 1801 supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs), and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
+
 * Up to 50% storage savings
 * Three times faster backups
 * Workload-volume affinity
