@@ -22,7 +22,7 @@ DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). Y
 
 ::: moniker range="sc-dpm-1801"
 
-System Center DPM 1801 provides the following new feature:
+System Center DPM 1801 provides the following new features:
 
 ::: moniker-end
 
@@ -214,3 +214,6 @@ To give permissions to the share
     This prepares the VMs on SOFS shares for the backup process.
 
 ::: moniker-end
+
+## Next steps
+[What's supported in DPM](dpm-support-issues.md)
