@@ -16,7 +16,7 @@ ms.author: markgal
 
 ::: moniker range="sc-dpm-1807"
 
-DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [bugs that have been fixed](dpm-release-notes.md#dpm-1807-release-notes).
+DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [Release Notes for 1807](dpm-release-notes.md#dpm-1807-release-notes).
 
 ::: moniker-end
 
