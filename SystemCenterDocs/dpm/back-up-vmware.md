@@ -10,18 +10,18 @@ title:  Back up and restore VMware Virtual Machines
 ms.technology:  data-protection-manager
 ms.assetid:
 ms.author: markgal
-monikerRange: 'sc-dpm-1801'
+monikerRange: '>sc-dpm-2016'
 ---
 
-# Use DPM 1801 to back up and restore VMware virtual machines
+# Use DPM to back up and restore VMware virtual machines
 
-This article explains how to use Data Protection Manager (DPM), version 1801 to back up virtual machines running on the 5.5, 6.0, or 6.5  versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) version 1801 and later, to back up virtual machines running on the 5.5, 6.0, or 6.5  versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 ## Supported VMware features
 
-DPM 1801 provides the following features when backing up VMware virtual machines:
+DPM 1801 and later provides the following features when backing up VMware virtual machines:
 
-- Agentless backup: DPM 1801 does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
+- Agentless backup: DPM does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
 - Cloud Integrated Backup: DPM protects workloads to both disk and cloud. DPM's backup and recovery workflow helps you manage long-term retention and offsite backup.
 - Detect and protect VMs managed by vCenter: DPM detects and protects VMs deployed on a VMware server (vCenter or ESXi server). As your deployment size grows, use vCenter to manage your VMware environment. DPM also detects VMs managed by vCenter, allowing you to protect large deployments.
 - Folder level auto protection: vCenter lets you organize your VMs in VM folders. DPM detects these folders and lets you protect VMs at the folder level and includes all subfolders. When protecting folders, DPM not only protects the VMs in that folder, but also protects VMs added later. DPM detects new VMs on a daily basis and protects them automatically. As you organize your VMs in recursive folders, DPM automatically detects and protects the new VMs deployed in the recursive folders.
@@ -107,7 +107,7 @@ To delete a credential
 
 1. In the DPM Administrator Console, click Management, click Production Servers, and in the tool ribbon, click Manage VMware Credentials.
 2. In the Manage Credentials dialog, select the credential. Make sure the credential is not associated with any Production Servers.
-3. Click **Delete** to remove the credential from the list. 
+3. Click **Delete** to remove the credential from the list.
 
 ### Set up secure communication between DPM and a VMware server
 
@@ -229,7 +229,7 @@ If your organization does not want to use secure communication protocol (HTTPS),
 
 ## Configure Backup
 
-Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](https://technet.microsoft.com/en-us/library/hh758075(v=sc.12).aspx). Once you have added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs. 
+Once you've added the VMware server(s) to DPM, you're almost ready to start protection in DPM. However, before you begin protection, you need to allocate disk storage that DPM can use for short-term storage. For guidance on adding storage, see [Adding Storage to DPM](https://technet.microsoft.com/en-us/library/hh758075(v=sc.12).aspx). Once you have added storage, you are ready to use the **Create New Protection Group** wizard to create a protection group for the VMware VMs.
 
 ### Folder-level protection
 
