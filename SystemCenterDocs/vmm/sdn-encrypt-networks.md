@@ -1,7 +1,7 @@
 ---
 ms.assetid: 4c078131-cb8b-4c43-b651-182f8060c19f
-title: Configure encrypted networks in System Center Virtual Machine Manager 1801
-description: This article explains about how to configure encrypted networks in SDN using VMM 1801.
+title: Configure encrypted networks in System Center Virtual Machine Manager
+description: This article explains about how to configure encrypted networks in SDN using VMM.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
@@ -9,16 +9,16 @@ ms.date: 02/05/2018
 ms.topic: article
 ms.prod:  system-center-2016
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
+monikerRange: '>sc-vmm-2016'
 ---
 
-# Configure encrypted networks in SDN using VMM 1801
+# Configure encrypted networks in SDN using VMM
 
-This article explains about how to encrypt the VM networks in software defined network (SDN) using  System Center 1801 - Virtual Machine Manager (VMM).
+This article explains about how to encrypt the VM networks in software defined network (SDN) using  System Center  - Virtual Machine Manager (VMM).
 
 Today, network traffic can be encrypted by the guest OS or an application using technologies like IPSec and TLS. However, these technologies are difficult to implement because of their inherent complexity and challenges related to interoperability between systems because of the nature of implementation.
 
-Using the new encrypted networks feature in VMM 1801, end-to-end encryption can be easily configured on the VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same VM network and same subnet, from being read and manipulated.
+Using the encrypted networks feature in VMM, end-to-end encryption can be easily configured on the VM networks by using the Network Controller (NC). This encryption prevents traffic between two VMs on the same VM network and same subnet, from being read and manipulated. VMM 1801 and later supports this feature.
 
 The control of encryption is at the subnet level and encryption can be enabled/disabled for each subnet of the VM network.
 
