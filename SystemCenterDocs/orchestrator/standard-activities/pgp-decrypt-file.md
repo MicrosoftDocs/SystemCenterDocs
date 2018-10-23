@@ -31,7 +31,7 @@ The PGP Decrypt File activity decrypts a file or entire folder tree using a PGP 
 
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
-|**Path**|Type the path of the files that you want to decrypt. You can use wildcards, **?** and ***** to specify the files that you are decrypting. This field will only accept characters from the current system locale. If you use other characters, the activity will fail.|  
+|**Path**|Type the path of the files that you want to decrypt. You can use wildcards, **?** and * to specify the files that you are decrypting. This field will only accept characters from the current system locale. If you use other characters, the activity will fail.|  
 |**Include sub-directories**|Select this option to find all files that match the file name that you specified in all subdirectories under the folder that you specified in the path.|  
 |**Output folder**|Type the path of the folder where you want the decrypted files to be stored.|  
 |**Skip**|Select this option to skip decrypting a file when a file with the same name is found in the **Output folder**.|  
