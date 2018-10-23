@@ -1,6 +1,6 @@
 ---
 title:  System Center Service Manager Evaluation and Licensing
-description: This article provides information about the Evaluation and Licensing related updates in System Center 1801 - Service Manager
+description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager 1801 and later
 manager:  vvithal
 ms.topic:  article
 author:  JYOTHIRMAISURI
@@ -10,15 +10,15 @@ keywords:
 ms.date: 02/05/2018
 ms.technology:  service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
-monikerRange: 'sc-sm-1801'
+monikerRange: '>sc-sm-2016'
 ---
 
 
-# Evaluation and Licensing experience for System Center 1801 - Service Manager
+# Evaluation and Licensing experience for System Center - Service Manager
 
-System Center 1801 - Service Manager (SM) supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
+System Center - Service Manager (SM) 1801 and later supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
-The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801, you can view the information about the evaluation period, and accordingly activate your  SM.
+The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. In Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your  SM.
 
 To view the evaluation period related information, from the Service Manager console, go to **Help** > **About**. The page displays the details as shown in the following example:
 
@@ -40,7 +40,7 @@ If you try to connect to Service Manager after the expiry of the evaluation peri
 
 ## Activate Service Manager
 
-You can active Service Manager 1801 using the product key from console and  PowerShell, by using the following steps.
+You can active Service Manager 1801 and later using the product key from Console and PowerShell, by using the following steps.
 
 ## Activate  Service Manager through console
 
