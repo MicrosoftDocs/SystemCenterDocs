@@ -22,7 +22,7 @@ You can download the Visio Add-in from the [Microsoft Download Center](https://w
 
 The Visio Add-in for System Center Operations Manager has the following prerequisites:  
   
--   System Center 2016 - Operations Manager Operations console.  
+-   System Center 2016 - Operations Manager or version 1801 Operations console.  
   
 -   Microsoft Office Visio 2010 or 2013 Professional or Premium.  
   
