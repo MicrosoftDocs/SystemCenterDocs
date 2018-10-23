@@ -17,7 +17,7 @@ ms.topic: article
 On computers requiring high security, for example a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
   
 > [!NOTE]  
-> You will be unable to start the System Center Management service if you have used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the Microsoft Monitoring Agent service, follow the second procedure in this topic to unlock the Action Account.  
+> You will be unable to start the Microsoft Monitoring Agent service if you have used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the Microsoft Monitoring Agent service, follow the second procedure in this topic to unlock the Action Account.  
   
 The following command\-line options are available:  
   
