@@ -27,7 +27,7 @@ You can use the PGP Decrypt File activity to decrypt files that were encrypted a
 
 ## Install GnuPG
 
-GnuPG is an open source program used by the standard activities PGP Encrypt file and PGP Decrypt file to encrypt and decrypt files. The following procedures describe how to install this executable program and associated file on a runbook server or computer that is running the Runbook Designer.
+GnuPG is an open-source program used by the standard activities PGP Encrypt file and PGP Decrypt file to encrypt and decrypt files. The following procedures describe how to install this executable program and associated file on a runbook server or computer that is running the Runbook Designer.
 
 ### Install GnuPG version 1.x and 2.0.x
 
@@ -40,9 +40,9 @@ Use the following steps:
 
 Use the following steps:
 
-1.	Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
+1.	Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
 
-2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll and zlib1.dll to the <System drive>:\Program Files(x86)\Common Files\<Microsoft System Centre Orchestrator 2012\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll and zlib1.dll to the <System drive>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator 2012\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
 
 ## Configuring the PGP Decrypt Activity  
