@@ -3,8 +3,8 @@ title: View an Operations Manager Distributed Application Diagram in Visio
 description: This article describes how to export a distributed application diagram in Visio format for modification and presentation in a custom Visio dashboard.
 author: mgoedtel
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 12/13/2016
+manager: carmonm
+ms.date: 10/23/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: 316d9611-b4a4-495f-8272-8273b6012efe
 
 # View an Operations Manager distributed application diagram in Visio 
 
-When you export a distributed application from the System Center 2016 - Operations Manager  Operations console and then open it in Microsoft Visio with the Visio Add-in for Operations Manager, the diagram in the Visio document contains information about the health state of each object. This information is provided through a connection to Operations Manager.  
+When you export a distributed application from the System Center 2016 - Operations Manager or version 1801 Operations console and then open it in Microsoft Visio with the Visio Add-in for Operations Manager, the diagram in the Visio document contains information about the health state of each object. This information is provided through a connection to Operations Manager.  
 
 ## Export distributed application diagram to Visio
   

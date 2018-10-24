@@ -5,7 +5,7 @@ description: This article is the landing page covering all of the getting starte
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 08/07/2018
+ms.date: 10/22/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -20,13 +20,13 @@ Welcome to Microsoft System Center 2016 - Operations Manager.  The following top
 
 To learn what's new in System Center 2016 - Operations Manager, first review [What's New in Operations Manager 2016](what-is-new.md)
 
-Understand the minimum [System Requirements for Operations Manager](/system-center/orchestrator/system-requirements) for each Operations Manager component and any other considerations that apply.  
+Understand the minimum [System Requirements for Operations Manager](plan-system-requirements.md) for each Operations Manager component and any other considerations that apply.  
 
 Before deploying Operations Manager, you first start by understanding the [Planning Considerations](plan-overview.md) for the different roles, security configuration, guidance for an optimal SQL Server configuration, and more.  
 
 Install Operations Manager in a simple or distributed configuration in your environment by following the [Deploying System Center 2016 - Operations Manager](deploy-overview.md) deployment guide.
 
-After installing Operations Manager, review the [Operations Manager Operations Guide](/system-center/orchestrator/operations-manager-activities) to learn how to effectively use, integrate with your existing ITSM processes, and support Operations Manager in your environment.  
+After installing Operations Manager, review the [Operations Manager Operations Guide](manage-operations-guide-overview.md) to learn how to effectively use, integrate with your existing ITSM processes, and support Operations Manager in your environment.  
 
 
 
