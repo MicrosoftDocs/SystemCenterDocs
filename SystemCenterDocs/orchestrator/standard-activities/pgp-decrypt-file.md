@@ -22,7 +22,28 @@ manager: "cfreeman"
 # PGP Decrypt File
 The PGP Decrypt File activity decrypts a file or entire folder tree using a PGP key file and passphrase that you have created. When decrypting an entire folder, the folder tree is preserved from the root folder down. For example, if you decrypt C:\Documents and Settings\Administrator\My Documents\\*.\* and all subfolders, all files in My Documents are decrypted as well as all the files in the folders under My Documents. All files in subfolders will be in the same subfolder in the Output folder.  
 
- You can use the PGP Decrypt File activity to decrypt files that were encrypted as part of a backup operation. To use this activity, you must install the gpg executable. To install the gpg executable, see [Install GnuPG](http://go.microsoft.com/fwlink/?LinkId=219849).  
+You can use the PGP Decrypt File activity to decrypt files that were encrypted as part of a backup operation. To use this activity, you must install the gpg executable.
+
+
+## Install GnuPG
+
+GnuPG is an open-source program used by the standard activities PGP Encrypt file and PGP Decrypt file to encrypt and decrypt files. The following procedures describe how to install this executable program and associated file on a runbook server or computer that is running the Runbook Designer.
+
+### Install GnuPG version 1.x and 2.0.x
+
+Use the following steps:
+
+1.	Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
+2.	Save gpg.exe and iconv.dll to the <System drive>:\Program Files (x86)\Common Files\Microsoft System Center 2012\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+
+### Install GnuPG version 2.x
+
+Use the following steps:
+
+1.	Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
+
+2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll and zlib1.dll to the <System drive>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator 2012\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+
 
 ## Configuring the PGP Decrypt Activity  
  Use the following information to configure the PGP Decrypt File activity.  
