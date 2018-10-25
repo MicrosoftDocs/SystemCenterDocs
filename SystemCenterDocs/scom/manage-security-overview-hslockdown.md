@@ -5,7 +5,7 @@ description: This article describes how to configure the Operations Manager agen
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 10/23/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -17,7 +17,7 @@ ms.topic: article
 On computers requiring high security, for example a domain controller, you may need to deny certain identities access to rules, tasks, and monitors that might jeopardize the security of your server. The Health Service lockdown tool (HSLockdown.exe) enables you to use various command-line options to control and limit the identities used to run a rule, task, or monitor.  
   
 > [!NOTE]  
-> You will be unable to start the System Center Management service if you have used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the System Center Management service, follow the second procedure in this topic to unlock the Action Account.  
+> You will be unable to start the Microsoft Monitoring Agent service if you have used the Health Service Lockdown tool to lock out the Action Account. To be able to restart the Microsoft Monitoring Agent service, follow the second procedure in this topic to unlock the Action Account.  
   
 The following command\-line options are available:  
   

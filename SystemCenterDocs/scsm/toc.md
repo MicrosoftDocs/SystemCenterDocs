@@ -2,7 +2,7 @@
 ## [Service Manager](service-manager.md)
 ## [What's new in Service Manager ](whats-new-in-sm.md)
 # Get started
-## [Evaluation and activation of Service Manager 1801](sm-license.md)
+## [Evaluation and activation of Service Manager](sm-license.md)
 ## [Service Manager components](sm-parts.md)
 ## [Supported configurations](supported-configs.md)
 ## [System requirements - Service Manager ](system-requirements.md)
