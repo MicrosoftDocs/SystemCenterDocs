@@ -19,6 +19,12 @@ This article provides the upgrade information for System Center 1801 - Orchestra
 
 ::: moniker-end
 
+::: moniker range="sc-orch-1807"
+
+Orchestrator 1807 can be installed only on Orchestrator 1801. [Learn more](https://support.microsoft.com/en-in/help/4135040/system-center-orchestrator-version-1807)
+
+::: moniker-end
+
 ::: moniker range="sc-orch-2016"
 
 This article provides the upgrade information for System Center 2016 - Orchestrator.
