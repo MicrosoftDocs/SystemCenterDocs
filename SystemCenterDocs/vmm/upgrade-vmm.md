@@ -13,6 +13,12 @@ ms.technology:  virtual-machine-manager
 
 # Upgrade System Center Virtual Machine Manager
 
+::: moniker range="sc-vmm-1807"
+
+You can install VMM 1807 only on VMM 1801. [Learn more](https://support.microsoft.com/en-us/help/4135364/system-center-virtual-machine-manager-version-1807). 
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-1801"
 
 This article provides the upgrade information for System Center 1801 - Virtual Machine Manager (VMM).
