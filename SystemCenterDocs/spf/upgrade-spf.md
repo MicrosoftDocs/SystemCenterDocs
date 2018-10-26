@@ -15,7 +15,7 @@ ms.technology:  service-provider-foundation
 
 ::: moniker range="sc-spf-1807"
 
-You must have System Center - SPF 1801 installed to apply the 1807 update.
+You must have System Center - Service Provider Foundation 1801 installed to apply the 1807 update.
 
 ::: moniker-end
 

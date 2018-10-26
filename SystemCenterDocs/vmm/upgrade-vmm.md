@@ -15,7 +15,7 @@ ms.technology:  virtual-machine-manager
 
 ::: moniker range="sc-vmm-1807"
 
-You must have System Center - VMM 1801 installed to apply the 1807 update. [Learn more on how to install VMM 1807](https://support.microsoft.com/en-us/help/4135364/system-center-virtual-machine-manager-version-1807). 
+You must have System Center - Virtual Machine Manager 1801 installed to apply the 1807 update. [Learn more on how to install VMM 1807](https://support.microsoft.com/en-us/help/4135364/system-center-virtual-machine-manager-version-1807). 
 
 ::: moniker-end
 
