@@ -15,7 +15,7 @@ ms.technology:  service-management-automation
 
 ::: moniker range="sc-sma-1807"
 
-You can install SMA 1807 only on SMA 1801. [Learn more](https://support.microsoft.com/en-us/help/4135041/system-center-service-management-automation-version-1807).
+You must have System Center - SMA 1801 installed to apply the 1807 update. [Learn more on how to install SMA 1807 ](https://support.microsoft.com/en-us/help/4135041/system-center-service-management-automation-version-1807).
 
 ::: moniker-end
 

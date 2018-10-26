@@ -16,7 +16,7 @@ ms.technology:  service-management-automation
 
 ::: moniker range="sc-sma-1807"
 
-SMA includes the features that are introduced in SMA 1801. [Learn more](https://docs.microsoft.com/system-center/sma/whats-new-in-sma?view=sc-sma-1801). 
+SMA includes the features that are introduced in SMA 1801, there are no additional features included.  [Learn about the features introduced in 1801](https://docs.microsoft.com/system-center/sma/whats-new-in-sma?view=sc-sma-1801).
 
 ::: moniker-end
 
