@@ -13,13 +13,11 @@ ms.technology:  virtual-machine-manager
 
 # Install VMM
 
-
-
 Use this article to install the System Center - Virtual Machine Manager (VMM) management server.
 
 ## Before you start
 
-- Review the system requirements and [planning information](install.md). Learn about [system requirements](system-requirements.md)
+- Review the system requirements and [planning information](plan-install.md). Learn about [system requirements](system-requirements.md)
 - Make sure you have at least local admin permissions on the computer before you run the setup.
 
 ## Run setup
