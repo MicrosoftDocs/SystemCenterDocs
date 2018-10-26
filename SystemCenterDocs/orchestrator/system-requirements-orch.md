@@ -13,6 +13,12 @@ ms.technology: orchestrator
 
 # System requirements for System Center Orchestrator
 
+::: moniker range="sc-orch-1807"
+
+Orchestrator 1801 system requirements also apply to 1807 Orchestrator, there are not changes. [Learn more about the system requirements](../includes/system-reqs-orch-1801.md).
+
+::: moniker-end
+
 ::: moniker range="sc-orch-1801"
 
 This article details the system requirements for System Center 1801 - Orchestrator.
