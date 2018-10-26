@@ -15,7 +15,7 @@ ms.technology: orchestrator
 
 ::: moniker range="sc-orch-1807"
 
-Orchestrator 1801 system requirements also apply to 1807 Orchestrator, there are not changes. [Learn more about the system requirements](../includes/system-reqs-orch-1801.md).
+Orchestrator 1801 system requirements are also applicable for 1807 Orchestrator, there are no changes. [Learn about the system requirements](https://docs.microsoft.com/system-center/orchestrator/upgrade-orch?view=sc-orch-1801).
 
 ::: moniker-end
 
