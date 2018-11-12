@@ -15,12 +15,12 @@ ms.topic: conceptual
 
 # How to upgrade Operations Manager 1807 databases to SQL Server 2017
 
-Use the procedures in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom reports authored outside of Operations Manager, including favorites, and schedules which are stored in the report server database.  
+Use the procedures in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom reports authored outside of Operations Manager, including favorites, and schedules, which are stored in the report server database.  
 
 >[!NOTE]
 >Upgrading to SQL Server 2017 uninstalls SQL Reporting Services as this is now a separately-installed feature.
 
-Before performing these upgrade steps, please review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017).
+Before performing these upgrade steps, review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017).
 
 ## Stop the Operations Manager services.
 On all the management servers in the management group, stop the Operations Manager services: 
@@ -29,10 +29,10 @@ On all the management servers in the management group, stop the Operations Manag
 * Microsoft Monitoring Agent
 * System Center Management Configuration
 
-## Backup the Reporting server database 
+## Back up the Reporting server database 
 1. On the SQL Server hosting the Reporting server databases, create a full backup of the **ReportServer** and **ReportServerTempDB** database. For more information, see [Create a Full Database Backup (SQL Server)](https://docs.microsoft.com/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
 
-2. On the current Operations Manager reporting server, backup the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+2. On the current Operations Manager reporting server, back up the SSRS encryption key. For more information, see [SSRS Encryption Keys - Back Up and Restore Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 3. Back up the report server configuration files. Files to back up include: 
 
