@@ -4,7 +4,7 @@ description: This article describes how to upgrade the SQL Server supporting Sys
 author: mgoedtel
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/20/2018
+ms.date: 11/12/2018
 ms.custom: na
 ms.prod: system-center-2016
 monikerRange: 'sc-om-1807'
@@ -75,7 +75,7 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 
 5. Run **regedit** from an elevated Command Prompt and navigate to _HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\SSRS\\MSSQLServer\\CurrentVersion_.  Note the value for the key _CurrentVersion_.   
 
-6. Create registry key **Version** under _HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\SSRS\\MSSQLServer\\Setup_ with REG_SZ value noted in the previous step.
+6. Create registry key **Version** under _HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\<MSRS13.Instance name>\Setup\_ with REG_SZ value noted in the previous step.
 
 7. Reboot the server in order for the changes to take effect. 
 
