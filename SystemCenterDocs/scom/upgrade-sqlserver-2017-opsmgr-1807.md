@@ -15,10 +15,10 @@ ms.topic: conceptual
 
 # How to upgrade Operations Manager 1807 databases to SQL Server 2017
 
-Use the procedures in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom reports authored outside of Operations Manager, including favorites, and schedules, which are stored in the report server database.  
+Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
 >[!NOTE]
->Upgrading to SQL Server 2017 uninstalls SQL Reporting Services as this is now a separately-installed feature.
+>Upgrading to SQL Server 2017 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
 
 Before performing these upgrade steps, review the [SQL Server 2017 upgrade information](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-sql-server?view=sql-server-2017).
 
@@ -50,7 +50,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes. 
 
-2. In order to reinstall the Operations Manager reporting server component on the server, you must remove any data that is left from the original installation by doing the following:
+2. In order to reinstall the Operations Manager reporting server component on the server, you remove any data that is left from the original installation by performing the following steps:
 
     a. Copy the ResetSRS.exe tool from the SupportTools folder on the product source media to a local folder.
 
@@ -82,7 +82,7 @@ After a successful setup, select **Configure Report Server** to launch the Repor
 ## Verify the installation of SQL Report server
 After reinstalling the Operations Manager reporting server component, perform the following steps to confirm SQL Reporting Services is working correctly.
 
-1. Run the Reporting Services Configuration tool and connect to the report server instance you just installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server. 
+1. Run the Reporting Services Configuration tool and connect to the report server instance you installed. The Web Service URL page includes a link to the Report Server Web service. Click the link to verify you can access the server. 
 
 2. Open a browser and type the report server URL in the address bar. The address consists of the server name and the virtual directory name that you specified for the report server during setup. By default, the report server virtual directory is named **ReportServer**. You can use the following URL to verify report server installation: `http://<computer name>/ReportServer<_instance name>`. The URL will be different if you installed the report server as a named instance. 
 
