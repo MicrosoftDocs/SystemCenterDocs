@@ -22,7 +22,7 @@ You can deploy a disaggregated S2D cluster by provisioning a cluster running Hyp
 > [!NOTE]
 
 > You must enable S2D before adding the storage provider to VMM.
-To enable, S2D, use  **General Configuration** > **Specify the cluster name and host group** page as shown below:
+To enable S2D, go to **General Configuration** > **Specify the cluster name and host group** and select the **Enable Storage Spaces Direct** option, as shown below:
 
 ![S2D enabled](./media/s2d/s2d-enable.png)
 
