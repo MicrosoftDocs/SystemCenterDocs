@@ -24,7 +24,7 @@ You can't currently enable S2D in a hyper-converged deployment on a Hyper-V clus
 > [!NOTE]
 
 > You must enable S2D before adding the storage provider to VMM.
-To enable, S2D, use  **General Configuration** > **Specify the cluster name and host group** page as shown below:
+To enable S2D, go to **General Configuration** > **Specify the cluster name and host group** and select the **Enable Storage Spaces Direct** option, as shown below:
 
 ![S2D enabled](./media/s2d/s2d-enable.png)
 
