@@ -19,13 +19,20 @@ Read this article to set up a disaggregated cluster running Storage Spaces Direc
 
 You can deploy a disaggregated S2D cluster by provisioning a cluster running Hyper-V hosts, and a separate storage cluster running scale-out file server (SOFS) with S2D.
 
+You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
+
+> [!NOTE]
+
+> You must enable S2D before adding the storage provider to VMM.
+To enable, S2D, use  **General Configuration** > **Specify the cluster name and host group** page as shown below:
+
+![S2D enabled](./media/s2d/s2d-enable.png)
+
 After you enable a disaggregated cluster with S2D, VMM does the following:
 1. The File Server role and the Failover Clustering feature is enabled.
 2. Storage replica and data deduplication is enabled.
 3. The cluster is optionally validated and created.
 4. S2D is enabled, and a storage array is created with the same name you provide in the wizard.
-
-
 
 
 ## Step 1: Provision an SOFS cluster
