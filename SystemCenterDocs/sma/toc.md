@@ -12,7 +12,6 @@
 ### [System requirements - Service Management Automation](system-requirements-sma.md)
 ### [Deploy Service Management Automation](deploy.md)
 ### [Upgrade Service Management Automation](upgrade-sma.md)
-### [Encrypt Web Service with SSL](encrypt-sql-connection-using-ssl.md)
 ## Author Runbooks
 ### [Authoring Automation Runbooks](authoring-automation-runbooks.md)
 ### [Windows PowerShell Workflow Concepts](overview-powershell-workflows.md)
