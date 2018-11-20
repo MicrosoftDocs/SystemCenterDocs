@@ -24,11 +24,11 @@ Use the following procedure:
     ```powershell
     .\aspnet_regiis.exe -pdf "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
-    ![Decrypt config file](media/encrypt-sma-web-service/decrypt-config-file.png)
+    ![Decrypt config file](./media/encrypt-sma-web-service/decrypt-config-file.png)
 
 4.	Open the web.config file in Notepad from the path **C:\inet./media/encrypt-sma-web-service/encrypt-config-file.pngpub\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
 
-    ![Append connection](media/encrypt-sma-web-service/append-connection.png)
+    ![Append connection](./media/encrypt-sma-web-service/append-connection.png)
 
 5.	Encrypt the Config file section by running the following command:
 
@@ -36,7 +36,7 @@ Use the following procedure:
 .\aspnet_regiis.exe -pef "connectionStrings" 'C:\inetpub\Service Management Automation'
 ```
 
-    ![Encrypt config file](media/encrypt-sma-web-service/encrypt-config-file.png)
+    ![Encrypt config file](./media/encrypt-sma-web-service/encrypt-config-file.png)
 
 6.	Restart the SMA App Pool from Computer Management -> Service and Applications -> Internet Information Service(IIS) Manager.
 
