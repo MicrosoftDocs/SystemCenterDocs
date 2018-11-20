@@ -24,6 +24,8 @@ Use the following procedure:
     ```powershell
     .\aspnet_regiis.exe -pdf "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
+Decrypt config file
+
     ![Decrypt config file](/system-center/sma/media/architecture-of-service-management-automation/decrypt-config-file.png)
 
 4.	Open the web.config file in Notepad from the path **C:\inet\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
