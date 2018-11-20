@@ -18,6 +18,7 @@
 ### [Windows PowerShell Workflow Concepts](overview-powershell-workflows.md)
 ### [Runbook Output and Messages](overview-runbook-messages-output.md)
 ### [Child Runbooks in Service Management Automation](link-runbooks.md)
+### [encrypt web service to SQL connection](encrypt-sql-connection-using-ssl.md)
 ## [Manage Runbooks](manage-runbooks.md)
 ## Manage SMA
 ### [Establish trust with Service Provider Foundation](establish-trust-between-service-management-automation-and-service-provider-foundation.md)
