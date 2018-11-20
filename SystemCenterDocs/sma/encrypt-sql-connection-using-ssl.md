@@ -18,18 +18,17 @@ This article provides information about how to encrypt SMA Web Service to SQL co
 Use the following procedure:
 
 1.	Open an elevated PowerShell console.
-2.	Navigate to your .NET Framework home directory.  e.g. C:\Windows\Microsoft.NET\Framework64\v4.0.30319 )
-3.	Decrypt config file section using below command.
+2.	Navigate to your .NET Framework home directory.  e.g. C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+3.	Decrypt the config file section using the following command:
 
     ```powershell
     .\aspnet_regiis.exe -pdf "connectionStrings" 'C:\inetpub\Service Management Automation'
     ```
+    ![Decrypt config file](media/encrypt-sma-web-service/decrypt-config-file.png)
 
-    ![Decrypt config file](/system-center/sma/media/encrypt-sma-web-service/decrypt-config-file.png)
+4.	Open the web.config file in Notepad from the path **C:\inet./media/encrypt-sma-web-service/encrypt-config-file.pngpub\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
 
-4.	Open web.config in Notepad from the path **C:\inet./media/encrypt-sma-web-service/encrypt-config-file.pngpub\Service Management Automation** and append the Connection String with **“;encrypt=true;trustServerCertificate=true”** as shown below:
-
-    ![Append connection](/system-center/sma/media/encrypt-sma-web-service/append-connection.png)
+    ![Append connection](media/encrypt-sma-web-service/append-connection.png)
 
 5.	Encrypt the Config file section by running the following command:
 
@@ -37,7 +36,7 @@ Use the following procedure:
 .\aspnet_regiis.exe -pef "connectionStrings" 'C:\inetpub\Service Management Automation'
 ```
 
-    ![Encrypt config file](/system-center/sma/media/encrypt-sma-web-service/encrypt-config-file.png)
+    ![Encrypt config file](media/encrypt-sma-web-service/encrypt-config-file.png)
 
 6.	Restart the SMA App Pool from Computer Management -> Service and Applications -> Internet Information Service(IIS) Manager.
 
