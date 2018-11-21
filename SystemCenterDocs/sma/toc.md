@@ -24,5 +24,3 @@
 ### [Working with Integration Modules](manage-integration-modules.md)
 ### [Manage Global Assets](manage-global-assets.md)
 ## [Manage Runbooks](manage-runbooks.md)
-## Encrypt web service to SQL connection
-### [Encrypt web service to SQL connection using SSL](encrypt-sql-connection-using-ssl.md)
