@@ -92,6 +92,7 @@
 ### [Add a network gateway](network-gateway.md)
 ### [Set up port profiles](network-port-profile.md)
 ### [Set up logical switches](network-switch.md)
+### [Set up logical switches](network-switch-1807.md)
 ### [Set up MAC address pools](network-mac.md)
 ### [Integrate NLB with service templates](network-nlb.md)
 ### [Set up an IPAM server](network-ipam.md)

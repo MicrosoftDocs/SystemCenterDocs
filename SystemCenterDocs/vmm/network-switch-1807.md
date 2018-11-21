@@ -1,20 +1,18 @@
 ---
-ms.assetid: 15be7169-be12-4047-b1fd-fe6ad4b2fdc1
+ms.assetid: cc13696a-7a15-4899-9b6f-d38e9e03b32a
 title: Create logical switches
 description: This article describes how to create logical switches in the VMM fabric
-author:  rayne-wiselman
-ms.author: raynew
-manager:  carmonm
-ms.date:  07/24/2018
+author:  JYOTHIRMAISURI
+ms.author: v-jysur
+manager:  vvithal
+ms.date:  21/11/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
-monikerRange: '<sc-vmm-1807'
+Moniker: sc-vmm-1807
 ---
 
 # Create logical switches
-
-
 
 This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric, convert a host virtual switch to a logical switch, and set up virtual switch extensions if you need them.
 
@@ -57,25 +55,25 @@ You can set up a virtual switch extension manager (network manager) if you want 
     - Make sure that you have SR-IOV support in the host hardware and firmware, the physical network adapter, and drivers in the management operating system and in the guest operating system.
     - Create a native port profile for virtual network adapters that is also SR-IOV enabled.
     - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
-4. In **Extensions**, if you're using virtual switch extensions select them and arrange the order. extensions process network traffic through the switch in the order you specify. Note that only one forwarding extension can be enabled.
-5. In **Virtual Port** add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
-6. In **Uplink** add an uplink port profile, or [create a new one](network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
-7. In **Summary** review the settings and click **Finish**. Verify the switch appears in **Logical Switches**.
+8. In **Extensions**, if you're using virtual switch extensions select them and arrange the order. extensions process network traffic through the switch in the order you specify. Note that only one forwarding extension can be enabled.
+9. In **Virtual Port** add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
+10. In **Uplink** add an uplink port profile, or [create a new one](network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
+11. In **Summary** review the settings and click **Finish**. Verify the switch appears in **Logical Switches**.
 
 ## Convert virtual switch to logical switch
 
-If a host in the VMM fabric has a standard virtual switch, you can convert it to use as a logical switch.
+If a host in the VMM fabric has a standard virtual switch with or without SET,  you can convert it to use as a logical switch.
 
 > [!NOTE]
 
-> - The following procedure is not applicable for SET, use the [script](#script-for-set-conversion) instead.
 > - Before you can convert, you need a logical switch in place, with specific settings.
 > - You must be a member of the Administrator user role, or a member of the Delegated Administrator user role, where the management scope includes the host group in which the Hyper-V host is located.
 
+
 ### Compare switch settings
 
-1. In **Server Manager** on the host,  click **Hyper-V**. Close Server Manager.
-2. Right-click the host >  **Configure NIC Teaming**, and record any teaming and load balancing settings.
+1.	Record if NIC Teaming (LBFO) or SET is being used on the host.
+2.	If you are using NIC teaming on the host, record teaming and load balancing settings by running the PowerShell commandlet *Get-NetLbfoTeam*.
 3. In **Hyper-V Manager**, right-click the host > **Virtual Switch Manager**. Select the virtual switch and verify whether **Enable single-root I/O virtualization (SR-IOV)** is selected. Close Hyper-V Manager.
 4. In the VMM console > **Fabric** > **Servers** > **All Hosts**, right-click the host > **Properties**.
 5. In **Virtual Switches**, note the properties, including logical network, and minimum bandwidth mode.
@@ -112,46 +110,6 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use, and click **Convert**.
 4. The **Jobs** dialog box might appear, depending on your settings. Make sure that the job has a status of **Completed**, and then close the dialog box.
 5. To verify that the switch was converted, right-click the host, click **Properties**, and then click the **Virtual Switches** tab.
-
-#### Script for SET switch conversion
-
-> [!NOTE]
-
-> Create a logical switch in VMM with the same name as the SET switch that is deployed on the host.
-> Standard switch will be converted to this logical switch after you run the following script on the host.
-
-
-```powershell
-#Replace Virtual Switch name with already deployed switch name on host
-$VirtualSwitchName="SETswitch"
-
-#Replace logical switch ID below with the one got from Get-SCLogicalSwitch cmdlet for the switch created in VMM
-$LogicalSwitchId="45b98a8d-1887-4431-9f20-8b9beed853ce"
-
-#Replace the port profile set name with the one created and associated with the above logical switch in VMM
-$PortProfileSetName="Mgmt_UPP"
-
-#Replace uplink port profile set ID with the one got from Get-SCUplinkPortProfileSet for the port profile set created in VMM
-$PortProfileSetId="fd9e4c9a-4ffa-4845-808d-930e6616b62f"
-
-$vswitch=Get-VMSwitch -Name $VirtualSwitchName
-$VMMPortFeatureId="1f59a509-a6ba-4aba-8504-b29d542d44bb"
-$defaultPortFeature = Get-VMSystemSwitchExtensionPortFeature -FeatureId $VMMPortFeatureId
-$VMMFeatureId="8b54c928-eb03-4aff-8039-99171dd900ff"
-$currentFeature = Get-VMSwitchExtensionSwitchFeature -SwitchName $VirtualSwitchName -FeatureId $VMMFeatureId
-$defaultFeature = Get-VMSystemSwitchExtensionSwitchFeature -FeatureId $VMMFeatureId
-$defaultFeature.SettingData.LogicalSwitchId=$LogicalSwitchId
-$defaultFeature.SettingData.LogicalSwitchName=$VirtualSwitchName
-Add-VMSwitchExtensionSwitchFeature -SwitchName $VirtualSwitchName -VMSwitchExtensionFeature $defaultFeature
-
-$defaultPortFeature = Get-VMSystemSwitchExtensionPortFeature -FeatureId $VMMPortFeatureId
-$defaultPortFeature.SettingData.PortProfileSetId=$PortProfileSetId
-$defaultPortFeature.SettingData.PortProfileSetName=$PortProfileName
-$defaultPortFeature.SettingData.NetCfgInstanceId="{" + $vswitch.Id +"}"
-Add-VMSwitchExtensionPortFeature -SwitchName $VirtualSwitchName -VMSwitchExtensionFeature $defaultPortFeature –ExternalPort
-```
-
-After you run the script, refresh the host in VMM and verify if VMM recognizes the switch as logical switch.
 
 ## Next steps
 
