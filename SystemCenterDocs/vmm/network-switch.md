@@ -63,7 +63,23 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
 ## Convert virtual switch to logical switch
 
-If a host in the VMM fabric has a standard virtual switch, you can convert it to use a logical switch.
+::: moniker range="sc-vmm-2016"
+
+If a host in the VMM fabric has a standard virtual switch, you can convert it to use as a logical switch.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-1801"
+
+If a host in the VMM fabric has a standard virtual switch, you can convert it to use as a logical switch.
+
+::: moniker-end
+
+::: moniker range="sc-vmm-1807"
+
+If a host in the VMM fabric has a standard virtual switch with or without SET,  you can convert it to use as a logical switch.
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2016"
 
@@ -96,6 +112,13 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 
 
 ### Compare switch settings
+::: moniker range="sc-vmm-1807"
+
+> [NOTE]
+> If you are using NIC teaming on the host, record teaming and load balancing settings by running the PowerShell commandlet Get-NetLbfoTeam
+
+::: moniker-end
+
 
 1. In **Server Manager** on the host,  click **Hyper-V**. Close Server Manager.
 2. Right-click the host >  **Configure NIC Teaming**, and record any teaming and load balancing settings.
