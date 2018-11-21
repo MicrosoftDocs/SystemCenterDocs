@@ -9,7 +9,7 @@ ms.date:  07/24/2018
 ms.topic:  article
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
-monikerRange: 'sc-vmm-1801'; 'sc-vmm-2016'
+monikerRange: '<=sc-vmm-1801'
 ---
 
 # Create logical switches
