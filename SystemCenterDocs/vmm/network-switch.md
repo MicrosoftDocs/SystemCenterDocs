@@ -114,7 +114,7 @@ If a host in the VMM fabric has a standard virtual switch with or without SET,  
 ### Compare switch settings
 ::: moniker range="sc-vmm-1807"
 
-> [NOTE]
+> [!NOTE]
 > If you are using NIC teaming on the host, record teaming and load balancing settings by running the PowerShell commandlet Get-NetLbfoTeam
 
 ::: moniker-end
