@@ -11,7 +11,7 @@ ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
 ---
 # Create logical switches
-This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric
+This article describes how to create logical switches in the System Center - Virtual Machine Manager (VMM) fabric.
 
 ::: moniker range="sc-vmm-2016"
 
