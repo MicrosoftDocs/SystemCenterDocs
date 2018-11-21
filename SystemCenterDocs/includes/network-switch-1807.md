@@ -56,7 +56,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
     - When you configure networking settings on the host (in the host property called Virtual switches), attach the native port profile for virtual network adapters to the virtual switch by using a port classification. You can use the SR-IOV port classification that is provided in VMM, or create your own port classification.
 8. In **Extensions**, if you're using virtual switch extensions select them and arrange the order. extensions process network traffic through the switch in the order you specify. Note that only one forwarding extension can be enabled.
 9. In **Virtual Port** add one or more port classifications and virtual network adapter port profiles. You can also create a port classification and set a default classification.
-10. In **Uplink** add an uplink port profile, or [create a new one](network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
+10. In **Uplink** add an uplink port profile, or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 11. In **Summary** review the settings and click **Finish**. Verify the switch appears in **Logical Switches**.
 
 ## Convert virtual switch to logical switch
@@ -109,7 +109,3 @@ If a host in the VMM fabric has a standard virtual switch with or without SET,  
 3. Select the logical switch that you want to convert the host to. Then select the uplink port profile to use, and click **Convert**.
 4. The **Jobs** dialog box might appear, depending on your settings. Make sure that the job has a status of **Completed**, and then close the dialog box.
 5. To verify that the switch was converted, right-click the host, click **Properties**, and then click the **Virtual Switches** tab.
-
-## Next steps
-
-[Apply network settings](hyper-v-network.md) on a host with a logical switch.
