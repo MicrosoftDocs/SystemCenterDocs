@@ -2,7 +2,7 @@
 ms.assetid: a5391300-c3da-472e-be02-98a1f64acb08
 title: Distribution and Targeting for Run As Accounts and Profiles
 description: This article describes how to target Run As accounts and configure profiles to monitor objects with minimal privileges. 
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016

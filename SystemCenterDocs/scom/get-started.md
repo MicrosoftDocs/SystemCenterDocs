@@ -2,7 +2,7 @@
 ms.assetid: e5f04a75-99c5-4fd8-adb8-47273e6f0505
 title: Getting Started
 description: This article is the landing page covering all of the getting started guidance for Operations Manager 2016.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 10/22/2018

@@ -2,7 +2,7 @@
 ms.assetid: 94744b26-2177-4c8d-a3ae-e3ec0f8f5b60
 title:  Planning Security Credentials for Accessing Unix and Linux Computers
 description: This article provides design guidance to understand how to securely manage Linux and UNIX computers with Operations Manager 2016.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 03/09/2017

@@ -1,7 +1,7 @@
 ---
 title: Using My Workspace in the Web Console
 description: This article describes how to use My Workspace in the Operations Manager Web console to create personalized views of operational data for your specific needs.  
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 07/20/2019

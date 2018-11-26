@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting UNIX and Linux Agent Monitoring
 description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 05/22/2017

@@ -2,7 +2,7 @@
 ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title:  Management Pack Assessment
 description: This article describes how to use the updates and recommendations feature in  System Center Operations Manager.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/24/2018

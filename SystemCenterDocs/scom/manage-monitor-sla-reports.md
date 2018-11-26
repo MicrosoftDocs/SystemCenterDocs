@@ -1,7 +1,7 @@
 ---
 title: Running a Service Level Tracking Report
 description: This article describes how to use the Service Level Tracking report in Operations Manager to evaluate service levels against defined targets.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 12/05/2016
