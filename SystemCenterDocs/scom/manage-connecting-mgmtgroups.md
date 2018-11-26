@@ -2,7 +2,7 @@
 ms.assetid: e2d68a4e-b2d5-4567-be36-454fd1dc67bb
 title: Connecting Management Groups in Operations Manager
 description: This article describes how to connect multiple management groups for a consolidated view in a single Operations console.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 02/06/2018

@@ -1,7 +1,7 @@
 ---
 title: Using Views and Dashboards in Operations Manager
 description: This article describes how to use the views and dashboards in Operations Manager to visualize operational data from monitored services and their components.  
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 ms.manager: cfreeman
 ms.date: 11/28/2016

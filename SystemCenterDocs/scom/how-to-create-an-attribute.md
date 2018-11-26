@@ -1,7 +1,7 @@
 ---
 ms.assetid: d837d304-20ff-4d2a-8071-f1c5664d93dd
 title: How to Create an Attribute
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/07/2016

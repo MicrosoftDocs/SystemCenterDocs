@@ -2,7 +2,7 @@
 ms.assetid: c7e03604-c2a2-4e0c-b8d4-cf0eb68c133d
 title: What is in an Operations Manager Management Pack?
 description: This article describes the composition of an Operations Manager management pack.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/15/2016

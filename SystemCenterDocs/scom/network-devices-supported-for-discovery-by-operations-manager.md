@@ -1,7 +1,7 @@
 ---
 title: Network Devices Supported for Discovery by Operations Manager
 description: 
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: cfreeman
 ms.date: 10/12/2016
