@@ -1,7 +1,7 @@
 ---
 title: Client Monitoring Using Agentless Exception Monitoring in Operations Manager
 description: This article describes how to use agentless exception monitoring in Operations Manager.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 03/14/2017

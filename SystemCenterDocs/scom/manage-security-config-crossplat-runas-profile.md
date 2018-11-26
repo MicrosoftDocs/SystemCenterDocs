@@ -2,7 +2,7 @@
 ms.assetid: 61b25aa7-b725-445b-8f4c-40ce213714c2
 title: How to Configure Run As Accounts and Profiles for UNIX and Linux Access
 description: This article describes how to configure Run As accounts and profiles for secure monitoring of Linux and UNIX.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016

@@ -2,7 +2,7 @@
 ms.assetid: 8e15d2ef-be27-483d-ad4a-09df62ed6618
 title:  How to Install the Operations Manager Web console
 description: This article describes how to install the Web console for System Center Operations Manager. 
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 03/06/2018
