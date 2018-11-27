@@ -1,7 +1,7 @@
 ---
 title: Operations Guide for System Center Operations Manager
 description: This article provides an overview of the System Center Operations Manager Operations Guide.
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ms.date: 06/22/2018

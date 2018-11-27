@@ -1,7 +1,7 @@
 ---
 title: Reports for Network Monitoring in Operations Manager
 description: This article summarizes the default reports for network devices included with Operations Manager.   
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 01/25/2017

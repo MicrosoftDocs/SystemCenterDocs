@@ -8,7 +8,7 @@ ms.tgt_pltfrm: ""
 ms.topic: article
 applies_to: System Center 2016 - Operations Manager
 ms.assetid: 9f769a08-3ab4-4b73-ba14-6f0498d0081d
-author: mgoedtel
+author: jyothi
 ms.author: magoedte
 manager: carmonm
 ---
