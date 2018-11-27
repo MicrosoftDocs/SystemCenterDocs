@@ -1,7 +1,7 @@
 ---
 title: How to Configure Grooming Settings for the Reporting Data Warehouse Database
 description: This article reviews the default grooming settings for the Reporting data warehouse database and how to modify those settings.  
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 12/05/2016

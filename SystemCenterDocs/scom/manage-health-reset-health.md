@@ -1,7 +1,7 @@
 ---
 title: How to Reset Health
 description: This article describes how to reset health for a monitor after correcting the issue identified.  
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 11/30/2016

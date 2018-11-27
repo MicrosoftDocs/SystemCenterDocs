@@ -2,7 +2,7 @@
 ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
 title: What's New in Operations Manager
 description: This article describes what's new in System Center Operations Manager compared to previous versions. 
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreeman
 ms.date: 11/09/2017

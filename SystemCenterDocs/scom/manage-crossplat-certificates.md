@@ -2,7 +2,7 @@
 ms.assetid: 332a9aa5-3176-4f39-b854-5a9817997eb5
 title: Managing Certificates for UNIX and Linux Computers
 description: This article describes how to manage certificates required for authentication with UNIX and Linux computers with Operations Manager.
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/15/2016

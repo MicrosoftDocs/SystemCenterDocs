@@ -1,7 +1,7 @@
 ---
 title: Subscribing to Alert Notifications
 description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.  
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 01/03/2017
