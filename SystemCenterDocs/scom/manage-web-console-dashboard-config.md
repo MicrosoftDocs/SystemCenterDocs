@@ -2,7 +2,7 @@
 ms.assetid: 
 title:  Manage dashboard and widget configuration in Web console 
 description: This article describes how to manage the configuration of the HTML5 Web console dashbaords and widgets in System Center Operations Manager.  
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/16/2018

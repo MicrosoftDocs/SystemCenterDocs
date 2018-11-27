@@ -1,7 +1,7 @@
 ---
 title: Run As Accounts for Network Monitoring in Operations Manager
 description: This article describes how configure the Run As accounts required to discover network devices in Operations Manager.   
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/25/2017

@@ -2,7 +2,7 @@
 ms.assetid: 01649c28-afbd-4f82-91db-de88d93544f6
 title: Operations Manager Agents
 description: This article provides design guidance for agent deployment on Windows, Linux and UNIX computers with Operations Manager.
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/25/2018
