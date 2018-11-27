@@ -1,7 +1,7 @@
 ---
 title: Install the Visio Add-in
 description: This article describes how to install the Visio Add-in for Microsoft Visio.
-author: jyothi
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 10/23/2018
