@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Configure Computer Not Reachable Recovery Task for Gateway Servers
 description: This article describes how to configure the diagnostic task to ping computer on heartbeat failure for agents reporting to an Operations Manager gateway server.  
 author: JYOTHIRMAISURI
@@ -19,7 +19,7 @@ When an agent fails to send a heartbeat, a Health Service Heartbeat Failure aler
 
 ## Prerequisites
 
-RPC port 135 (DCOM/RPC) must bey open between the management server and the gateway server in order for it to remotely connect to the WMI provider on the gateway server. Initially the management server binds to port 135 and then a dynamically assigned port above 1024 is selected.  For further information, review [How to configure RPC dynamic port allocation to work with firewalls](https://support.microsoft.com/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls).
+RPC port 135 (DCOM/RPC) must be open between the management server and the gateway server in order for it to remotely connect to the WMI provider on the gateway server. Initially the management server binds to port 135 and then a dynamically assigned port above 1024 is selected.  For further information, review [How to configure RPC dynamic port allocation to work with firewalls](https://support.microsoft.com/help/154596/how-to-configure-rpc-dynamic-port-allocation-to-work-with-firewalls).
 
 ## Configuration
 
@@ -44,8 +44,8 @@ Perform the following steps to configure the Run As account.
 1. Create a new Run as account of type Windows.  To perform this task, see [How to create a Run As account and associate with a Run As profile](manage-security-create-runas-link-profile.md).  When you are at the step to configure distribution of the account, select **More Secure** and distribute the credentials to the gateway servers and **All Management Servers Resource Pool**.  
 2. Add the Run As account to the **Automatic Agent Management Account Profile** and then chose the option **All targeted objects**.
 
-    >[!NOTE] 
-    >While the gateway server pings the agent, initiation occurs from management server using a WMI query that runs against agents reporting to the gateway server.  For this reason,  the **Automatic Agent Management Account** Run As account needs to have the necessary privileges on both the management and gateway server to execute this WMI query from both roles.  For more information on how to properly configure privileges to remotely connect to a computer using WMI, see [Securing a Remote WMI Connection](https://msdn.microsoft.com/library/aa393266%28v=vs.85%29.aspx). 
+    >[!NOTE]
+    >While the gateway server pings the agent, initiation occurs from management server using a WMI query that runs against agents reporting to the gateway server.  For this reason,  the **Automatic Agent Management Account** Run As account needs to have the necessary privileges on both the management and gateway server to execute this WMI query from both roles.  For more information on how to properly configure privileges to remotely connect to a computer using WMI, see [Securing a Remote WMI Connection](https://msdn.microsoft.com/library/aa393266%28v=vs.85%29.aspx).
 >
 
 ## Next steps
