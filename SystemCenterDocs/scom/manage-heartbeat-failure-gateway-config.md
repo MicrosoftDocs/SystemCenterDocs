@@ -14,7 +14,7 @@ ms.topic: article
 
 # Configure Computer Not Reachable recovery task for gateway servers
 
-When an agent fails to send a heartbeat, a Health Service Heartbeat Failure alert is generated and the management server attempts to contact the computer by performing a ping using Windows Management Instrumentation (WMI) based on its recovery task **Ping Computer on Heartbeat Failure**. If the computer does not respond to the ping, a Failed to Connect to Computer alert is generated. By default, this recovery task is performed from its assigned management server.  But when agents report to a gateway server that communicates with its assigned management server through a firewall, the attempt to ping the remote agent will fail.  The following steps describe how to configure the gateway server in this scenario to attempt to contact the computer and verify its responding to a ping.  
+When an agent fails to send a heartbeat, a Health Service Heartbeat Failure alert is generated and the management server attempts to contact the computer by performing a ping using Windows Management Instrumentation (WMI) based on its recovery task **Ping Computer on Heartbeat Failure**. If the computer does not respond to the ping, a Failed to Connect to Computer alert is generated. By default, this recovery task is performed from its assigned management server.  But when agents report to a gateway server that communicates with its assigned management server through a firewall, the attempt to ping the remote agent will fail.  The following steps describe how to configure the gateway server in this scenario to attempt to contact the computer and verify it is responding to a ping.  
 
 
 ## Prerequisites
