@@ -2,7 +2,7 @@
 ms.assetid: 
 title:  How to configure the Operations console cache 
 description: This article describes the new Type Cache feature for the System Center Operations Manager Operations console and dependent applications. 
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/16/2018

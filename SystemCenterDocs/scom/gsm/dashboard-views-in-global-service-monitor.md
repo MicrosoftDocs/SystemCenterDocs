@@ -11,7 +11,7 @@ applies_to:
   - "System Center 2016 - Operations Manager"
   - "System Center Global Service Monitor"
 ms.assetid: b6734cca-d015-4e3a-9211-ffd0ec679736
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ---

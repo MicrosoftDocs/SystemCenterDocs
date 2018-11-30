@@ -1,7 +1,7 @@
 ---
 title: Link to Operations Manager Objects in a New or Existing Visio Document
 description: This article provides a walk-through on how to create a basic monitoring drawing in Visio and link to Operations Manager objects.   
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 10/23/2018

@@ -1,7 +1,7 @@
 ---
 title:  Viewing Network Devices and Data in Operations Manager
 description: This article describes how to view the information about the network devices monitored by Operations Manager.   
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/25/2017

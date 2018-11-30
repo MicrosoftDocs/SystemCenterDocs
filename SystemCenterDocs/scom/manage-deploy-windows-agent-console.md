@@ -2,7 +2,7 @@
 ms.assetid: e68783da-5a7e-43f3-b7d1-0b82bd597d03
 title: Install Agent on Windows Using the Discovery Wizard
 description: This topic describes how to deploy the Operations Manager agent on Windows computers using the Discovery Wizard.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedtel
 manager: carmonm
 ms.date: 07/13/2018

@@ -2,7 +2,7 @@
 ms.assetid: bcc1b4ee-ad6e-43f0-aa7e-41a2231783d3
 title: How to Override a Rule or Monitor
 description: This article describes how to override a rule or monitor in the Operations Manager Operations console.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/15/2016

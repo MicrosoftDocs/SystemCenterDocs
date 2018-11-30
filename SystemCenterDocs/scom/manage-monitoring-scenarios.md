@@ -1,7 +1,7 @@
 ---
 title: Operations Manager Monitoring Scenarios
 description: This topic provides a high level overview of the supported monitoring scenarios with System Center Operations Manager.
-author: MGoedtel
+author: JYOTHIRMAISURI
 manager: carmonm
 ms.date: 01/04/2018
 ms.custom: na

@@ -2,10 +2,10 @@
 ms.assetid: 
 title: Implement TLS 1.2 for Operations Manager 
 description: This article describes how to configure Transport Layer Security (TLS) 1.2 for System Center Operations Manager.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/21/2018
+ms.date: 11/28/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -109,9 +109,9 @@ After completing the configuration of all prerequisites for Operations Manager, 
 ### Manually modify the registry
 1. Log on to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** texbox, and then click **OK**.  
-3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319**.  
+3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319**.  
 4. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
-5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319**.  
+5. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\\.NETFramework\v4.0.30319**.  
 6. Create the DWORD value **SchUseStrongCrypto** under this subkey with a value of **1**.    
 7. Restart the system for the settings to take effect.  
 
