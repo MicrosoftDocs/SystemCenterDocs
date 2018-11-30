@@ -1,7 +1,7 @@
 ---
 title: Finding Data and Objects in the Operations Manager Consoles
 description: This article describes how to filter monitoring data in the Operations Manager Operations console to see data based on your specific criteria.  
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 02/06/2018

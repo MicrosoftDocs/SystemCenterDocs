@@ -1,7 +1,7 @@
 ---
 title: How to Subscribe to Notifications from an Alert
 description: This article describes how to subscribe to a notification from a selected alert in the Operations console.   
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/03/2017

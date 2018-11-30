@@ -1,10 +1,10 @@
 ---
 title: Link to Operations Manager Objects in a New or Existing Visio Document
 description: This article provides a walk-through on how to create a basic monitoring drawing in Visio and link to Operations Manager objects.   
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 12/13/2016
+manager: carmonm
+ms.date: 10/23/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.assetid: f5a4749c-e042-401c-86ae-f9830576fcf2
 
 # Link to Operations Manager objects in a new or existing Visio document
 
-The Visio Add-in for System Center 2016 - Operations Manager lets you link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing.   
+The Visio Add-in for System Center 2016 - Operations Manager or version 1801 lets you link to Operations Manager objects to present health state information in a new or existing Microsoft Visio drawing.   
   
 To do this, you first specify a Operations Manager management server from which the Visio Add-in will query to get information about the managed objects and their health state. Then, you add the links by using one of the following methods:  
   

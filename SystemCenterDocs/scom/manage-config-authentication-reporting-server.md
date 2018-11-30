@@ -2,7 +2,7 @@
 ms.assetid: d6e1034d-88be-49f0-a5d1-65da807a77f6
 title: Configure Authentication with Reporting server
 description: This topic describes how to configure the Operations Manger reporting server to be compliant with Federal Information Processing Standards. 
-author: mgoedtel
+author: JYOTHIRMAISURI
 manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na

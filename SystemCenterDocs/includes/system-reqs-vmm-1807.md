@@ -49,8 +49,9 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-Windows Server 2012 R2 Standard/Datacenter | N | Y | If supported by SQL Server version
-Windows Server 2016 | Y | N | If supported by SQL Server version
+Windows Server 2012 R2 Standard/Datacenter (Server Core)| N | Y | If supported by SQL Server version
+Windows Server 2012 R2 Standard/Datacenter (with desktop experience)| N | Y | If supported by SQL Server version
+Windows Server 2016 (Server Core)| Y | N | If supported by SQL Server version
 Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
 Windows Server 1709 | Y | Y | Y
 
@@ -67,7 +68,8 @@ Window Server 2016 Standard, Datacenter | Y
 
 > [!NOTE]
 
-> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
+> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
+> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
 **SQL version** | **Supported**
 --- | ---

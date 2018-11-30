@@ -64,7 +64,7 @@ There are two methods for creating a VM template:
 
 You can create VMs based on the template you've just created.
 
-::: moniker range="sc-vmm-1801"
+::: moniker range=">sc-vmm-2016"
 
 ## Assign a storage QoS policy template
 

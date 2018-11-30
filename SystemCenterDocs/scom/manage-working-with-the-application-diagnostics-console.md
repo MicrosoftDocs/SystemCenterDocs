@@ -1,7 +1,7 @@
 ---
 title: Working with the Application Diagnostics Console
 description: This article describes how to use the Application Diagnostics console to review captured application error and exceptions.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 06/06/2017

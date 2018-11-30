@@ -1,10 +1,10 @@
 ---
 title: Install the Visio Add-in
 description: This article describes how to install the Visio Add-in for Microsoft Visio.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
-manager: cfreemanwa
-ms.date: 12/13/2016
+manager: carmonm
+ms.date: 10/23/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -16,11 +16,15 @@ ms.assetid: ac69f3db-00ab-4ca3-a2fc-f87d4503f1ed
 
 You can download the Visio Add-in from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=29268).  
 
-The Visio Add-in for System Center 2016 - Operations Manager has the following prerequisites:  
+>[!NOTE]
+>While the page on the Download Center specifies System Center 2012, the add-in does support System Center 2016 - Operations Manager and version 1801. For version 1801, configuring the add-in to point to the HTLM5 web console is not supported and should continue referencing the System Center 2016 - Operations Manager Web console in order to support launching the Health Explorer and Alert view from Visio diagrams.   
+>
+
+The Visio Add-in for System Center Operations Manager has the following prerequisites:  
   
--   System Center 2016 - Operations Manager Operations console.  
+-   System Center 2016 - Operations Manager or version 1801 Operations console.  
   
--   Microsoft Office Visio 2010, 2013, or 2016 Professional or Premium.  
+-   Microsoft Office Visio 2010 or 2013 Professional or Premium.  
   
 -   Microsoft .NET Framework 3.5 SP1.  For Windows 8, 8.1 and 10 see [Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10](https://msdn.microsoft.com/library/hh506443%28v=vs.110%29.aspx). 
  

@@ -13,6 +13,12 @@ ms.technology:  service-manager
 
 # Upgrade System Center Service Manager
 
+::: moniker range="sc-sm-1807"
+
+You must have System Center - Service Manager 1801 installed to apply the 1807 update. [Learn more on how to install SM 1807](https://support.microsoft.com/en-in/help/4338239/system-center-service-manager-version-1807).
+
+::: moniker-end
+
 ::: moniker range="sc-sm-1801"
 
 This article provides the upgrade information for System Center 1801 - Service Manager (SM)

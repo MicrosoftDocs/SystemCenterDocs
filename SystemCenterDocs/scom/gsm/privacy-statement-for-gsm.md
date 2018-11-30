@@ -7,7 +7,7 @@ ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: article
 ms.assetid: 6f4e9486-aa0d-401f-a12b-dd163c5dbbf9
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ---
