@@ -24,7 +24,7 @@ Use the following procedure to restore the production Service Manager database u
 
 1.  After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, click the server name to expand the server tree.  
 2.  Expand **Databases**, and depending on the database, either select a user database or expand **System Databases** and select a system database.  
-3.  Right\-click the database, point to **Tasks**, and then click **Restore**. The Back Up Database dialog box appears.  
+3.  Right-click the database, point to **Tasks**, and then click **Restore**. The Back Up Database dialog box appears.  
 4.  Click **Database**, which opens the **Restore Database** dialog box  
 5.  On the **General** page, the name of the restoring database appears in the **To database** list box. To create a new database, enter its name in the list box.  
 6.  In the **To a point in time** text box, either retain the default \(Most recent possible\) or select a specific date and time by clicking the browse button which opens the **Point in Time Restore** dialog box. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](https://go.microsoft.com/fwlink/p/?LinkId=236006).  
