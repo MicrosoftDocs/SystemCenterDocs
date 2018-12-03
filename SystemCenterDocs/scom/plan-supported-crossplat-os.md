@@ -29,9 +29,9 @@ The following tables describe the required UNIX and Linux operating systems and 
 |--------------------|---------------|-------------------|  
 |OS version|Version of operating system|6100-07-06-1241|  
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|  
-|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|  
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|
 
-::: moniker-end
+::: moniker-end 
 
 ## IBM AIX 7 (Power)  
 
