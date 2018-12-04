@@ -36,7 +36,6 @@ Before you start backing up a VMware virtual machine, review the following list 
 - If you have been using DPM to protect a VMware server as a Windows Server, you cannot use the same fully qualified domain name (FQDN) or static IP. If you used a FQDN to identify your VMware VM, then use a static IP address to identify your VMware server. If you used a static IP address to identify your VMware VM earlier, then use a FQDN to identify your VMware VM. You cannot use a dynamic IP address.
 
     > [!NOTE]
-
     > DPM agent should not be pushed on to Windows Server that is  acting as VMWare vCenter Server.
 
 
