@@ -33,16 +33,11 @@ DPM 1801 and later provides the following features when backing up VMware virtua
 
 Before you start backing up a VMware virtual machine, review the following list of limitations and prerequisites.
 
-- If you have been using DPM to protect a VMware server as a Windows Server, you cannot use the same fully qualified domain name (FQDN) or static IP. If you used a FQDN to identify your VMware VM, then use a static IP address to identify your VMware server. If you used a static IP address to identify your VMware VM earlier, then use a FQDN to identify your VMware VM. You cannot use a dynamic IP address.
-
-    > [!NOTE]
-    > DPM agent should not be pushed on to Windows Server that is  acting as VMWare vCenter Server.
-
-
+- If you have been using DPM to protect a VMware server as a Windows Server, you cannot use the same fully qualified domain name (FQDN) or static IP. If you used a FQDN to identify your VMware VM, then use a static IP address to identify your VMware server. If you used a static IP address to identify your VMware VM earlier, then use a FQDN to identify your VMware VM. You cannot use a dynamic IP address. Note that DPM agent should not be pushed on to Windows Server that is  acting as VMWare vCenter Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
 - DPM cannot protect VMware VMs to tape or a secondary DPM server.
 - You cannot back up user snapshots before the first DPM backup. Once DPM completes the first backup, then you can back up user snapshots.
-- DPM cannot protect VMware VMs with pass-thru disks and physical raw device mappings (pRDM).
+- DPM cannot protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
 - DPM cannot detect or protect VMware vApps.
 - DPM cannot protect VMware VMs with existing snapshots.
 
