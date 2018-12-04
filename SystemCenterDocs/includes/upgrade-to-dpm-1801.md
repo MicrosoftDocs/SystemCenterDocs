@@ -119,7 +119,7 @@ To add a volume in the administrator console:
 
 1. In the DPM Administrator console, select the **Management** feature > **Disk Storage** > **Add**.
 
-2. In the **Add Disk Storage** dialog, select an available volume > click **Add** > type a friendly name for the volume ** > click **OK**.
+2. In the **Add Disk Storage** dialog, select an available volume > click **Add** > type a friendly name for the volume > click **OK**.
 
       ![Add volume](../dpm/media/upgrade-to-dpm-2016/dpm-2016-add-volume.png)
 
