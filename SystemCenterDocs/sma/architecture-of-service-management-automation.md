@@ -5,10 +5,9 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.date: 05/09/2018
 ms.technology: service-management-automation
-
 ---
 
 # Service Management Automation architecture
