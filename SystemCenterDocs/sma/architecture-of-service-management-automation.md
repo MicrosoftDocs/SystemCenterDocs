@@ -8,7 +8,6 @@ ms.author: raynew
 ms.prod: system-center-threshold
 ms.date: 05/09/2018
 ms.technology: service-management-automation
-
 ---
 
 # Service Management Automation architecture

@@ -6,7 +6,7 @@ author: bwren
 ms.prod: system-center-threshold
 ms.date: 01/22/2018
 title: Purge the Service Management Automation database
-ms.technology:  service-management-automation
+ms.technology: service-management-automation
 ---
 
 # Purge the Service Management Automation database

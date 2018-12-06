@@ -1,14 +1,14 @@
 ---
 description: Provides guidance and instructions for creating Service Management Automation runbooks
-manager:  carmonm
-ms.topic:  reference
-author:  rayne-wiselman
+manager: carmonm
+ms.topic: reference
+author: rayne-wiselman
 ms.author: raynew
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  01/22/2018
-title:  Author Automation Runbooks
-ms.technology:  service-management-automation
+ms.prod: system-center-threshold
+keywords: 
+ms.date: 01/22/2018
+title: Author Automation Runbooks
+ms.technology: service-management-automation
 ---
 # Author Sevice Management Automation runbooks
 

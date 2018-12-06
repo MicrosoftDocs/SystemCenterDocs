@@ -1,15 +1,14 @@
 ---
 description: Provides an overview of how you can use different output stream in your runbooks.
-manager:  cfreeman
-ms.topic:  article
-author:  bwren
+manager: cfreeman
+ms.topic: article
+author: bwren
 ms.author: bwren
-ms.prod:  system-center-threshold
-keywords:  
-ms.date:  01/22/2018
-title:  Runbook Output and Messages
-ms.technology:  service-management-automation
-
+ms.prod: system-center-threshold
+keywords: 
+ms.date: 01/22/2018
+title: Runbook Output and Messages
+ms.technology: service-management-automation
 ---
 
 # Runbook output and messages
