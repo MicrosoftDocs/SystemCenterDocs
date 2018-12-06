@@ -1,9 +1,9 @@
 ---
 title: Deploy Service Manager
 description: You can install Service Manager for a variety of deployment scenarios.
-manager:  carmonm
+manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016

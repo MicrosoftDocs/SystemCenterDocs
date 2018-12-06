@@ -2,7 +2,7 @@
 title: Prepare for Service Manager deployment
 description: Describes Service Manager deployment preparation considerations.
 manager: carmonm
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 01/23/2018

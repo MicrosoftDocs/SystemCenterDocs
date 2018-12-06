@@ -5,11 +5,10 @@ manager: carmonm
 ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.date: 01/23/2018
 title: Service Manager
 ms.technology: service-manager
-
 ---
 
 # About System Center - Service Manager

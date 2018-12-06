@@ -3,7 +3,7 @@ title: Create and deploy dashboards
 description: Explains how to create and deploy Service Manager dashboards.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016

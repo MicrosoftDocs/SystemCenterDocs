@@ -1,9 +1,9 @@
 ---
 title: Index non-English knowledge articles
 description: This article helps you resolve issues when you want to index non-English knowledge articles.
-manager:  carmonm
+manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016
