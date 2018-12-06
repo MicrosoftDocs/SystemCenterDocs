@@ -1,15 +1,15 @@
 ---
-title:  What's new in System Center Service Provider Foundation 1801
+title: What's new in System Center Service Provider Foundation 1801
 description: This article describes the new features and other changes in System Center Service Provider Foundation 1801.
-manager:  riyazp
-ms.topic:  article
-author:  JYOTHIRMAISURI
+manager: riyazp
+ms.topic: article
+author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.prod:  system-center-2016
-keywords:  
+ms.prod: system-center-2016
+keywords: 
 ms.date: 02/05/2018
 ms.technology: system-center-threshold
-ms.assetid:  49342436-7e22-4c6b-9602-2adddf8f58c9
+ms.assetid: 49342436-7e22-4c6b-9602-2adddf8f58c9
 monikerRange: 'sc-spf-1801'
 ---
 

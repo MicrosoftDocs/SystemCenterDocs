@@ -1,15 +1,15 @@
 ---
 ms.assetid: c30a1316-4ccf-41f3-a58e-b6027d5d0d30
 description: Release Notes for System Center 1801-Service Provider Foundation
-manager:  vvithal
-ms.topic:  article
-author:  JYOTHIRMAISURI
+manager: vvithal
+ms.topic: article
+author: JYOTHIRMAISURI
 ms.author: V-JYSUR
-ms.prod:  system-center-threshold
+ms.prod: system-center-threshold
 ms.technology: service-provider-foundation
-keywords:
+keywords: 
 ms.date: 02/05/2018
-title:  Release Notes for System Center 1801 - Service Provider Foundation
+title: Release Notes for System Center 1801 - Service Provider Foundation
 monikerRange: 'sc-spf-1801'
 ---
 
