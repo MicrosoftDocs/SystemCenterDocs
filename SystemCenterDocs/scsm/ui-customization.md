@@ -5,8 +5,8 @@ manager: carmonm
 ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod: system-center-2016
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: bd4ce7ab-9e8f-4f83-a04a-f4385c2ac6b0

@@ -3,7 +3,7 @@ title: Work with management packs in the console
 description: Describes how to work with management packs in the Service Manager console.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016
