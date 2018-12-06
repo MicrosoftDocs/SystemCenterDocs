@@ -176,7 +176,7 @@ If you want to set up DPM on an RODC you'll need to do a couple of steps before 
 
 3.  On the primary domain controller, create another domain user account with the lowest possible credentials and name the account DPMR$MACHINENAME, assign it a strong password that does not expire, and then add this account to the DPMDBReaders$<*Computer Name*> group.
 
-4.  Then create the security groups and user accounts needed for the SQL Server database with scope: global and Group type: security. The group or account should be in this format <*grouporaccountname**ComputerName*>.
+4.  Then create the security groups and user accounts needed for the SQL Server database with scope: global and Group type: security. The group or account should be in this format <*grouporaccountnameComputerName*>.
 
     -   SQLServerSQL2005BrowserUser$<*Computer Name*>
 
