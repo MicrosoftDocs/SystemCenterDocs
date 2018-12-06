@@ -2,13 +2,13 @@
 ms.assetid: 93d075bc-983c-4b91-b800-9c300a47fca2
 title: Deploy the VMM library for high availability
 description: This article describes how to set up the VMM library in a highly available deployment
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/01/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/01/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Deploy a highly available VMM library
