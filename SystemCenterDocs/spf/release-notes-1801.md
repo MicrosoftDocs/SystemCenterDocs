@@ -5,7 +5,7 @@ manager: vvithal
 ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: V-JYSUR
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: service-provider-foundation
 keywords: 
 ms.date: 02/05/2018

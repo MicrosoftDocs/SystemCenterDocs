@@ -7,7 +7,7 @@ ms.author: V-jysur
 manager: vvithal
 ms.date: 06/04/2018
 ms.topic: article
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: service-provider-foundation
 ---
 

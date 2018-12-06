@@ -5,10 +5,10 @@ manager: riyazp
 ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.prod: system-center-2016
+ms.prod: system-center
 keywords: 
 ms.date: 02/05/2018
-ms.technology: system-center-threshold
+ms.technology: service-provider-foundation
 ms.assetid: 49342436-7e22-4c6b-9602-2adddf8f58c9
 monikerRange: 'sc-spf-1801'
 ---
