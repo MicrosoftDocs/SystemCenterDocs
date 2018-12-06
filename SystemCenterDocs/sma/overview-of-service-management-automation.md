@@ -1,14 +1,13 @@
 ---
-title:  Overview of Service Management Automation
+title: Overview of Service Management Automation
 description: Service Management Automation is used to construct, run, and manage runbooks to integrate, orchestrate, and automate IT business processes.
-manager:  carmonm
-ms.topic:  article
-author:  rayne-wiselman
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
 ms.author: raynew
-ms.prod:  system-center-threshold
+ms.prod: system-center
 ms.date: 05/08/2018
-ms.technology:  service-management-automation
-
+ms.technology: service-management-automation
 ---
 
 # Overview of Service Management Automation

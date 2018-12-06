@@ -1,13 +1,13 @@
 ---
 title: Deploy System Center Service Provider Foundation (SPF)
 description: This article describes how to install and deploy System Center Service Provider Foundation (SPF)
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  01/22/2018
-ms.topic:  article
-ms.prod:  system-center-threshold
-ms.technology:  service-provider-foundation
+manager: carmonm
+ms.date: 01/22/2018
+ms.topic: article
+ms.prod: system-center
+ms.technology: service-provider-foundation
 ---
 
 # Deploy SPF

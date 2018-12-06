@@ -1,13 +1,13 @@
 ---
 description: Provides an overview of how you can call one or more child runbooks.
-manager:  cfreeman
-ms.topic:  article
-author:  bwren
+manager: cfreeman
+ms.topic: article
+author: bwren
 ms.author: bwren
-ms.prod:  system-center-threshold
-ms.date:  01/22/2018
-title:  Child runbooks in Service Management Automation
-ms.technology:  service-management-automation
+ms.prod: system-center
+ms.date: 01/22/2018
+title: Child runbooks in Service Management Automation
+ms.technology: service-management-automation
 ---
 
 # Child runbooks in Service Management Automation

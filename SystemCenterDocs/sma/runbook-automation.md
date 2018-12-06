@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.date: 05/08/2018
 title: Automate Windows Azure Pack operations with runbooks
 ms.technology: service-management-automation
