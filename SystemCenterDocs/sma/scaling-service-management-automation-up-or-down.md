@@ -1,14 +1,14 @@
 ---
 description: Provides an overview of how you can scale out a machine tier
-manager:  cfreemanwa
-ms.topic:  article
-author:  bwren
-ms.prod:  system-center-threshold
-keywords:  
+manager: cfreemanwa
+ms.topic: article
+author: bwren
+ms.prod: system-center
+keywords: 
 ms.date: 01/22/2018
-title:  Scaling Service Management Automation 
-ms.technology:  service-management-automation
-ms.assetid:  00e55889-02fc-49a9-9a52-f8cbdaf36255
+title: Scaling Service Management Automation
+ms.technology: service-management-automation
+ms.assetid: 00e55889-02fc-49a9-9a52-f8cbdaf36255
 ---
 
 # Scaling Service Management Automation

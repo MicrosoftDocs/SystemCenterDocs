@@ -1,13 +1,13 @@
 ---
-description:  Provides an overview of how you can establish trust between Service Management Automation and Service Provider Foundation
-manager:  cfreemanwa
-ms.topic:  article
-author:  bwren
-ms.prod:  system-center-threshold
-keywords:  
+description: Provides an overview of how you can establish trust between Service Management Automation and Service Provider Foundation
+manager: cfreemanwa
+ms.topic: article
+author: bwren
+ms.prod: system-center
+keywords: 
 ms.date: 01/22/2018
-title:  Establish trust between Service Management Automation and Service Provider Foundation
-ms.technology:  service-management-automation
+title: Establish trust between Service Management Automation and Service Provider Foundation
+ms.technology: service-management-automation
 ---
 
 # Establish trust between Service Management Automation and Service Provider Foundation
