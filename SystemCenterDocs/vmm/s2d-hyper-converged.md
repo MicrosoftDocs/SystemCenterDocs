@@ -21,6 +21,13 @@ You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster a
 
 You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
 
+> [!NOTE]
+
+> You must enable S2D before adding the storage provider to VMM.
+To enable S2D, go to **General Configuration** > **Specify the cluster name and host group** and select the **Enable Storage Spaces Direct** option, as shown below:
+
+![S2D enabled](./media/s2d/s2d-enable.png)
+
 After you enable a cluster with S2D, VMM does the following:
 1. The File Server role and the Failover Clustering feature is enabled.
 2. Storage replica and data deduplication is enabled.
@@ -49,7 +56,7 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 **Note the following**:
 - When you set up the cluster, remember to select the **Enable Storage Spaces Direct** option on the **General Configuration** page of the Create Hyper-V Cluster wizard.
--In **Resource Type*, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
+-In **Resource Type**, select **Existing servers running a Windows Server operating system**, and select the Hyper-V hosts to add to the cluster.
 - If S2D is enabled, you must validate the cluster. Skipping this step isn't supported.
 
 ### Provision a cluster from bare metal machines

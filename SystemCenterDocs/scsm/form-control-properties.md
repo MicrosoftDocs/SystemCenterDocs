@@ -52,8 +52,8 @@ The table in this topic lists the properties of Service Manager form controls. T
  | Width | WPF | FrameworkElement/Width | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.  
 **List** | List type | Service Manager | N/A | The type of existing or custom list that this control displays.  
  | List type internal name | Service Manager | N/A | The internal name of the **List type** property.  
-**Margin | Bottom | WPF | Control/Bottom | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.
- | Left** | WPF | Control/Left | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.
+**Margin** | Bottom | WPF | Control/Bottom | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.
+ | **Left** | WPF | Control/Left | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.
  |Right | WPF | Control/Right | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.  
  |Top | WPF | Control/Top | Can be set to **Auto** or to **NaN**, allowing for dynamic adjustment of size.  
 **Miscellaneous** | Flow Direction | WPF |FrameworkElement/FlowDirection |   

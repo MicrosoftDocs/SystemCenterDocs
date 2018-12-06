@@ -2,10 +2,10 @@
 ms.assetid: 7cb61f4f-d184-407e-abc1-f2334de51810
 title:  Management Pack Assessment
 description: This article describes how to use the updates and recommendations feature in  System Center Operations Manager.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/24/2018
+ms.date: 11/28/2018
 ms.custom: na
 ms.prod: system-center-2016
 ms.technology: operations-manager
@@ -31,7 +31,7 @@ This feature includes the following capabilities:
 |  **More information**  | Highlights all impacted agent-managed systems and management pack details of selected workload (depending on the status of the workload)
 
 >[!NOTE]
->In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection.
+>In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?** 
 
 >[!NOTE]
 >Configuring the frequency and control the discovery of workloads cannot be performed directly from the Operations console.  If you wish to modify those settings of this feature, you can download a PowerShell script from the [Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/Script-to-modify-settings-246c84af#content).

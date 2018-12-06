@@ -2,7 +2,7 @@
 ms.assetid: dd7742fd-dcec-4546-b0f3-59ddaf94459a
 title: Quick Reference to Operations Manager Tasks
 description: This article summarizes the common tasks to perform after installing Operations Manager in your environment.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 06/04/2018
@@ -30,7 +30,7 @@ The following table gives a quick reference for where to perform common tasks an
 |Change a setting for a rule, monitor, or alert.|Make changes to rules, monitors, or alerts by creating an override. Select a rule, monitor, or alert, and then access the overrides options by right-clicking, or clicking **Overrides** on the toolbar, or clicking **Overrides** in the Tasks pane. For more information, see [How to Override a Rule or Monitor](~/scom/manage-mp-override-rule-monitor.md) and [Creating a Management Pack for Overrides](~/scom/manage-mp-create-unsealed-mp.md).|
 |Change how frequently records are removed from the operational database.|In the **Administration** workspace, click **Settings**, right-click **Database Grooming**, and then click **Properties**. For more information, see [How to Configure Grooming Settings for the Operations Manager Database](https://technet.microsoft.com/library/hh230753%28v=sc.12%29.aspx).|
 |Give a user permissions to view Operations Manager information or perform tasks.|In the **Administration** workspace, click **User Roles**, and then right-click a specific role and click **Properties**. For more information, see [Implementing User Roles](~/scom/manage-security-overview.md)|
-|Display a dashboard view on a SharePoint site.|You must deploy the Operations Manager Web Part to a SharePoint site, configure the Web Part to connect to a web console, and add the Web Part to a SharePoint page. For more information, see [Using SharePoint to View Operations Manager Data](https://technet.microsoft.com/en-us/library/hh212924%28v=sc.12%29.aspx).|
+|Display a dashboard view on a SharePoint site.|You must deploy the Operations Manager Web Part to a SharePoint site, configure the Web Part to connect to a web console, and add the Web Part to a SharePoint page. For more information, see [Using SharePoint to View Operations Manager Data](https://technet.microsoft.com/library/hh212924%28v=sc.12%29.aspx).|
 |Receive notifications of an alert in email, instant message, or text message.|Right-click an alert, point to **Notification subscription**, and then click **Create**. For more information, see [Subscribing to Alert Notifications](https://technet.microsoft.com/library/hh212725%28v=sc.12%29.aspx).|
 |Investigate a gray agent.|In the **Monitoring** workspace, in the **Operations Manager\Agent Details\Agent Health State** view, in the **Agent State from Health Service Watcher** section, click the gray agent, and then in the **Tasks** pane, click **Show Gray Agent Connectivity Data**. For more information, see [Not Monitored and Gray Agents](https://support.microsoft.com/help/10129/troubleshooting-gray-agent-states-in-operations-manager-2012).|
 |Stop monitoring a computer temporarily.|In the **Monitoring** workspace, click **Windows Computers**, right-click the computer you want to stop monitoring, and click **Maintenance Mode**. For more information, see [How to Suspend Monitoring Temporarily by Using Maintenance Mode](manage-maintenance-mode-overview.md).|

@@ -2,7 +2,7 @@
 ms.assetid: 50e3914b-4047-4dce-97f1-0bca1619f4a1
 title: Operations Associated with User Role Profiles
 description: This article describe the user roles in Operations Manager and they what actions they can perform in the management group.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016

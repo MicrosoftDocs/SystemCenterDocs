@@ -6,7 +6,7 @@ author:  markgalioto
 ms.author: markgal
 ms.prod:  system-center-2016
 keywords:  
-ms.date: 2/8/2018
+ms.date: 09/25/2018
 title:  Data Protection Manager
 ms.technology:  data-protection-manager
 ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
@@ -37,11 +37,11 @@ In all deployments you’ll need:
 
 ## SQL Server database
 
-DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects.
+DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects. All SQL Server versions should be Standard or Enterprise 64-bit.
 
 |Requirement| Details  |
 |-----------|----------|
-|Version|SQL Server 2017 - Standard or Enterprise 64-bit (from DPM 1801 onwards) <br/> - Note: For **SQL Server 2017** information, see [Install or Upgrade DPM](./install-dpm.md#setup-prerequisites). <br/> SQL Server 2016 - Standard or Enterprise 64-bit (from DPM 2016 R2 with Update Rollup 2 onwards) <br/>- Note: **SQL Server 2016 SP1 or later** is supported on DPM 1801 onwards. SSMS version 16.5 or earlier. <br/> SQL Server 2014 with all service packs and updates - Standard or Enterprise 64-bit <br/> SQL Server 2012 SP2 onwards - Standard or Enterprise 64-bit|
+|Version|**DPM 1801 or later**: SQL Server 2017; SQL Server 2016 with SP1 or later (SSMS version 16.5 or earlier). <br/> **DPM 2016 with Update Rollup 2 or later**: SQL Server 2016 with SP1 or later. <br/> **DPM 2016**: SQL Server 2014 SP2;  SQL Server 2012 SP4.
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
 |Required features|Database Engine Services, Reporting Services|
@@ -58,7 +58,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement|Details|
 |-----------|-------|
-|Software|Windows Server 2016, Datacenter and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions|
+|Software|Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions|
 |Installation prerequisites|Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Microsoft Visual C++ 2008 Redistributable<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 
@@ -67,20 +67,20 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 |Requirement|Minimum|Recommended|
 |-----------|-------|-----------|
-|Disk|DPM requires:<br/> - Disk for DPM installation including system files, installation files, prerequisite software, and database files<br/> - Disk dedicated to the storage pool| |
-|DPM installation|DPM installation location: 3 GB<br/> Database files drive: 900 MB<br/> System drive: 1 GB<br/> The system drive disk space is required if SQL Server is installed on the DPM server. If SQL Server is remote, you'll need considerably less disk space for the system drive.|Each protected volume requires a minimum of 300 MB of free space for the change journal. Additionly, you'll need space for DPM to copy the file catalog to a temporary DPM installation location, when archiving. 2-3 GB of free space is recommended for the DPM installation volume.|
+|Disk|DPM requires:<br/> - Disk for DPM installation including system files, installation files, prerequisite software, and database files<br/> - Disk dedicated to the storages pool| |
+|DPM installation|DPM installation location: 3 GB<br/> Database files drive: 900 MB<br/> System drive: 1 GB<br/> The system drive disk space is required if SQL Server is installed on the DPM server. If SQL Server is remote, you'll need considerably less disk space for the system drive.|Each protected volume requires a minimum of 300 MB of free space for the change journal. Additionally, you'll need space for DPM to copy the file catalog to a temporary DPM installation location, when archiving. 2-3 GB of free space is recommended for the DPM installation volume.|
 |Disk for storage pool|1.5 times the size of the protected data|2-3 times the size of the protected data|
 |Logical unit number (LUN)<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2, that use legacy storage pool.* | |Maximum of 17 TB for GUID partition table (GPT) dynamic disks<br/> 2 TB for master boot record (MBR) disks<br/> Requirements are based on the maximum size of the hard disk that appears in the operating system.|
-|Limitations<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2 that used legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. If you're running DPM 2012 R2 with Update Rollup 3 or later you can also use virtual tape libraries with a virtual fibre channel adapter. For more information, see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
+|Limitations<br/><br/> *Applies only to DPM 2016 servers upgraded from DPM 2012 R2 that used legacy storage pool.* |- DPM storage pools must be dynamic.<br/> - You can't install DPM on the disk used for the storage pool.<br/> - You can attach or associate custom volumes with protected data sources. Custom volumes can be on basic or dynamic disks but you can't manage the space on these volumes in the DPM Administrator console.<br/> - You can back up to tape with iSCSI attached tape libraries. We recommend a separate adapter for that connection. If you're running DPM 2012 R2 with Update Rollup 3 or later, you can also use virtual tape libraries with a virtual fiber channel adapter. For more information, see [Compatible tape libraries](identify-compatible-tape-libraries.md).<br/>| |
 |Virtualized DPM|- DPM running on a virtual machine can use the following storage types:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| <br/> |
-|Modern Backup Storage| Use Volumes. <br/> A single DPM server supports up to 120-TB storage. | <br/> |
+|Modern Backup Storage| Use Volumes. <br/> A single DPM server has a soft limit of 120 TB storage.| <br/> |
 
 
 ## Protected workloads
 
 |Requirement|Details|
 |-----------|-------|
-|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. DPM 2016 onwards can go beyond the previous 120 TB limit.<br/><br/> To protect the maximum size, each DPM server needs: 120 TB storage, with 80 TB replica space, and maximum recovery point size of 40 TB.|
+|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. <br/><br/> With DPM 2016 onwards, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested. However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
 |Windows Management Framework (WMF)|If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [WMF 4.0](https://www.microsoft.com/download/details.aspx?id=40855) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/> Windows Server 2012 and later do not require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
@@ -92,7 +92,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Requirement|Details|
 |-----------|-------|
 |Domain|The DPM server should be in a Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, or Windows Server 2003 Active Directory domain.|
-|Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. Without two-way trust, DPM can't protect computers in workgroups or untrusted domains. For more information see [Back up and restore workloads in workgroups and untrusted domains]().|
+|Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. Without two-way trust, DPM can't protect computers in workgroups or untrusted domains. For more information, see [Back up and restore workloads in workgroups and untrusted domains]().|
 |Network configuration|If you're protecting data over a wide area network (WAN), you'll need a minimum bandwidth of 512 kilobits per second (Kbps).<br/> DPM doesn't support disjointed namespaces.|
 
 ## Remote management

@@ -2,7 +2,7 @@
 ms.assetid: 7f64b190-0af1-431d-85ca-6b6ac9f0ce0e
 title: How to Install the Operations Console
 description: This article describes how to install the Operations Manager Operations console.  
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/08/2017

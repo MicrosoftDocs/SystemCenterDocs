@@ -72,7 +72,7 @@ The Format Date/Time activity enables you to transform existing date and time fo
 |Format|Date|  
 |------------|----------|  
 |MM/dd/yyyy hh:mm:ss tt|08/05/2006 03:05:15 PM|  
-|M/d/yy h:m:s tt|8/5/06 3:5:15 PM|  
+|M/d/yy h &#58;m&#58;s tt|8/5/06 3:5:15 PM|  
 |ddd MMM dd yyyy|Sat Aug 05 2006|  
 |dddd, MMMM dd yyyy|Saturday, August 05 2006|  
   

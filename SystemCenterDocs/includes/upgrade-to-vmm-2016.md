@@ -218,7 +218,7 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 
 You might need to reassociate virtual machine hosts and VMM library servers with the VMM management server after the upgrade.
 
-1. Click **Fabric** > **Servers **> **All Hosts**.
+1. Click **Fabric** > **Servers** > **All Hosts**.
 2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't right-click a column heading > **Agent Status**.
 3. Select the host that you need to reassociate with the VMM management server.
 4. In the host group, click **Refresh**. If a host needs to be reassociated, the **Host Status** column  will display a value of **Needs Attention**, and the **Agent Status** column will display a value of **Access Denied**.

@@ -12,6 +12,11 @@ ms.technology:  service-provider-foundation
 ---
 
 # System requirements for System Center Service Provider Foundation
+::: moniker range="sc-spf-1807"
+
+System requirements for SPF 1801 are also applicable for SPF 1807, there are no changes. [Learn ](https://docs.microsoft.com/system-center/spf/system-requirements-spf?view=sc-spf-1801) about the system requirements.
+
+::: moniker-end
 
 ::: moniker range="sc-spf-1801"
 

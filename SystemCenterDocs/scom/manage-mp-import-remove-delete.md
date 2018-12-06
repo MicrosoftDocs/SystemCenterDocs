@@ -2,10 +2,10 @@
 ms.assetid: 0cff3a49-a490-4dd4-aa29-f6c9214c5d92
 title: How to Import, Export, and Remove an Operations Manager Management Pack
 description: This article describes how to import, export and remove an Operations Manager management pack from the management group.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/15/2016
+ms.date: 11/28/2018
 ms.custom: na
 ms.prod: system-center-threshold
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to import, export, and remove an Operations Manager management pack
 
-There are numerous management packs available for System Center 2016 - Operations Manager. A management pack must be installed for use by Operations Manager in order to discover and monitor one or more components depending on its complexity, and the overall health of the IT service delivered by the organization. Over time, the knowledge of what to discover and monitor, and how to monitor and report on the operational data is updated in newer releases of a management pack.  These management packs must be reimported into the management group when updated by the vendor or internally if developed by the team responsible for it.  When the management pack is no longer required to monitor , you can remove it from the management group.
+There are numerous management packs available for System Center Operations Manager. A management pack must be installed for use by Operations Manager in order to discover and monitor one or more components depending on its complexity, and the overall health of the IT service delivered by the organization. Over time, the knowledge of what to discover and monitor, and how to monitor and report on the operational data is updated in newer releases of a management pack.  These management packs must be reimported into the management group when updated by the vendor or internally if developed by the team responsible for it.  When the management pack is no longer required to monitor , you can remove it from the management group.
 
 ## Importing a management pack
 
@@ -29,7 +29,7 @@ You have several options for importing management packs:
 -   Download a management pack by using an Internet browser to import at a later time.
 
 > [!NOTE]
-> Using the management pack catalog service requires an Internet connection. If the computer running Operations Manager cannot be connected to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible to the Operations Manager management server.
+> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**. If the computer running Operations Manager Operations console cannot connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible from the console. 
 
 The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk). 
 

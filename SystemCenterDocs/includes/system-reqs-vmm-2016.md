@@ -50,8 +50,9 @@ Library Objects (templates, profiles)| 100
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
 Windows Server 2012 Standard/Datacenter | N | N | If supported by SQL Server version
-Windows Server 2012 R2 Standard/Datacenter | N | Y | If supported by SQL Server version
-Windows Server 2016 | Y | N | If supported by SQL Server version
+Windows Server 2012 R2 Standard/Datacenter (Server Core)| N | Y | If supported by SQL Server version
+Windows Server 2012 R2 Standard/Datacenter (with desktop experience)| N | Y | If supported by SQL Server version
+Windows Server 2016 (Server Core) | Y | N | If supported by SQL Server version
 Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
 Windows Server 2016 Nano | N | N | If supported by SQL Server version
 
@@ -120,7 +121,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0
+ESX | ESX/ESXi 5.1, 5.5, 6.0<br/><br/> UR6 and later - ESX/ESXi 5.1, 5.5, 6.0, 6.5
 vCenter | 5.1, 5.5, 5.8, 6.0</td>
 Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 

@@ -164,6 +164,11 @@ After deployment, verify that the service appears in **All Hosts** > **Services*
 
 If you want to scale-in or scale-out a deployed software load balancer service instance, [read this blog](https://blogs.technet.microsoft.com/scvmm/2011/05/18/scvmm-2012-an-explanation-of-scale-in-and-scale-out-for-a-service/).
 
+> [!NOTE]
+
+> After the SLB service is deployed, disable DNS registration on the virtual network adapter, connected to the transit VM network on all the SLB MUX VMs.
+
+
 ## Configure the SLB role and SLB/MUX properties
 
 **Note**: Before you proceed, ensure you created the  HNV PA Logical Network.

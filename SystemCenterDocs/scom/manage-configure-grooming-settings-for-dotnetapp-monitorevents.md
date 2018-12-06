@@ -1,7 +1,7 @@
 ---
 title: How to Configure Grooming Settings for .NET Application Performance Monitoring Events
 description: This article describes how to configure grooming of the APM data from the Operations Manager DBs.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 06/06/2017

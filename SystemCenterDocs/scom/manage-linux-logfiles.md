@@ -2,7 +2,7 @@
 ms.assetid: 
 title:  Log file monitoring in System Center Operations Manager
 description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager 1801.    
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/16/2018
@@ -113,7 +113,7 @@ This example shows syslog records collected and tagged for processing by Operati
 #### Match
 The **match** directive defines how to process events collected from the source with matching tags.  Only events with a **tag** matching the pattern will be sent to the output destination.  When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns.  The **type** parameter that specifies which plugin to use for these events.  
 
-This example processes events with tags matching **scom.log.**** and  **scom.alert** (** matches zero or more tag parts). It specifies the **out_scom** plugin which allows the events to be collected by the Operations Manager management pack.
+This example processes events with tags matching **scom.log.**\*\* and  **scom.alert** (\*\* matches zero or more tag parts). It specifies the **out_scom** plugin which allows the events to be collected by the Operations Manager management pack.
 
     <match scom.log.** scom.event>
 

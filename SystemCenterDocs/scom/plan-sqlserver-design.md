@@ -2,7 +2,7 @@
 ms.assetid: 5a3a8b98-1113-45bf-9484-2c807ec3d013
 title: SQL Server Design Considerations
 description:  This article provides detailed design guidance for SQL Server to support the Operations Manager databases and reporting component.  
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager:  carmonm
 ms.date: 07/20/2018
@@ -160,9 +160,9 @@ With System Center 2016 - Operations Manager, SQL Always On is preferred over fa
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
-- [Learn more](https://msdn.microsoft.com/en-us/library/ff878487.aspx) about Always On prerequisites
-- [Learn more](https://msdn.microsoft.com/en-us/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
-- [Learn more](https://msdn.microsoft.com/en-us/library/ff878265.aspx) about setting up an availability group
+- [Learn more](https://msdn.microsoft.com/library/ff878487.aspx) about Always On prerequisites
+- [Learn more](https://msdn.microsoft.com/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
+- [Learn more](https://msdn.microsoft.com/library/ff878265.aspx) about setting up an availability group
 
 ### Multisubnet string
 
