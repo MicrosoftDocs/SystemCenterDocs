@@ -4,7 +4,7 @@ manager: cfreeman
 ms.topic: article
 author: bwren
 ms.author: bwren
-ms.prod: system-center-threshold
+ms.prod: system-center
 keywords: 
 ms.date: 01/22/2018
 title: Runbook Output and Messages

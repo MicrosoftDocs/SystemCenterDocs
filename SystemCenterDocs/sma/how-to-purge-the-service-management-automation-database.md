@@ -3,7 +3,7 @@ description: Provides an overview of how you can purge the Service Management Au
 manager: carmonm
 ms.topic: article
 author: bwren
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.date: 01/22/2018
 title: Purge the Service Management Automation database
 ms.technology: service-management-automation
