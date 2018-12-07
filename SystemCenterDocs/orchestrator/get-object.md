@@ -14,6 +14,7 @@ author: cfreemanwa
 ms.author: raynew
 manager: carmonm
 ---
+
 # Get Object
 
 The Get Object activity is used to search for a record based on a set of filter criteria. The Get Object activity supports incidents, changes, and activities.
