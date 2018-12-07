@@ -2,7 +2,7 @@
 title: Get Service activity in System Center - Orhcestra
 description: The Get Service activity is used in a runbook to return data on all of the services within the VMM management server.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman

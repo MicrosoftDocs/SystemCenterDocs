@@ -2,7 +2,7 @@
 title: Deploy Service activity in System Center - Orchestra
 description: The Deploy Service activity is used in a runbook to create a service using a specified service template.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman

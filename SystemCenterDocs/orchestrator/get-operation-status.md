@@ -3,7 +3,7 @@ title: Get Operation Status
 description: The Get Operation Status activity is used to get the status of the specified operation.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
