@@ -3,7 +3,7 @@ title: HP Service Manager Integration Pack for System Center 2016 - Orchestrator
 description: The integration pack for HP Service Manager is an add-on for Orchestrator in System Center 2016 and System Center 2016 - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

@@ -2,7 +2,7 @@
 title: Optimize performance of  .NET activities in System Center - Orchestra
 description: Describes how to configure runbook servers in System Center - Orchestrator, to optimize performance of .NET activities.
 ms.date: 01/17/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman

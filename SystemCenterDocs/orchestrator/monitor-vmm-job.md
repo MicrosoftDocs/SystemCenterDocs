@@ -2,7 +2,7 @@
 title: Monitor VMM Job activity in System Center - Orchestra
 description: The Monitor VMM Job activity is used in a runbook to monitor a VMM job.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman
