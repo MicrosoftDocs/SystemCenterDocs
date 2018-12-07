@@ -3,7 +3,7 @@ title: Delete Service Certificate
 description: The Delete Service Certificate activity is used in a runbook delete a service certificate from the certificate store of a cloud service.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
