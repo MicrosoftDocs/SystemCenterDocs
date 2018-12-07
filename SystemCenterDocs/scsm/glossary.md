@@ -1,13 +1,13 @@
 ---
-title:  Glossary for System Center - Service Manager
+title: Glossary for System Center - Service Manager
 description: This glossary defines terms used in Service Manager.
-manager:  carmon
-ms.topic:  article
-author:  bandersmsft
+manager: carmon
+ms.topic: article
+author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center
 ms.date: 01/23/2018
-ms.technology:  service-manager
+ms.technology: service-manager
 ---
 
 # Glossary of terms in System Center - Service Manager

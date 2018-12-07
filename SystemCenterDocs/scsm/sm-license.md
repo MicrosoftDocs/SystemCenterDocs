@@ -1,14 +1,14 @@
 ---
-title:  System Center Service Manager Evaluation and Licensing
+title: System Center Service Manager Evaluation and Licensing
 description: This article provides information about the Evaluation and Licensing related updates in System Center - Service Manager 1801 and later
-manager:  vvithal
-ms.topic:  article
-author:  JYOTHIRMAISURI
+manager: vvithal
+ms.topic: article
+author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.prod:  system-center-2016
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 02/05/2018
-ms.technology:  service-manager
+ms.technology: service-manager
 ms.assetid: 58180b0a-aef8-4448-a26a-0ab85e1977c8
 monikerRange: '>sc-sm-2016'
 ---

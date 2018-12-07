@@ -3,7 +3,7 @@ title: Unbundle a bundled management pack
 description: Describes how to unbundle a bundled management pack for use with the Service Manager Authoring Tool.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016
