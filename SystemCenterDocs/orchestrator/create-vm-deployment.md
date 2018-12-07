@@ -3,7 +3,7 @@ title: Create VM Deployment
 description: The Create VM Deployment activity provisions a virtual machine based on the supplied configuration.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

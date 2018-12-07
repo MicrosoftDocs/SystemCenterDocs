@@ -3,7 +3,7 @@ title: Active Directory Activities
 description: This article contains configuration instructions for Active Directory activities.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
