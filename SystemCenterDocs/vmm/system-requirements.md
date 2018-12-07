@@ -2,13 +2,13 @@
 ms.assetid: 506bcd89-3bab-4d6c-a542-f7e4fd1cf9c5
 title: System requirements for Virtual Machine Manager
 description: This article describes the software and hardware system requirements for System Center Virtual Machine Manager.
-author:  JYOTHIRMAISURI
+author: JYOTHIRMAISURI
 ms.author: V-jysur
-manager:  vvithal
-ms.date:  04/26/2018
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: vvithal
+ms.date: 04/26/2018
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # System requirements for System Center Virtual Machine Manager
