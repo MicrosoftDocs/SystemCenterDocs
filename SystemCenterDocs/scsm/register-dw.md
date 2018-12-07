@@ -3,7 +3,7 @@ title: Enable Service Manager reporting
 description: Use the Data Warehouse Registration wizard to enable reporting.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016
