@@ -2,13 +2,13 @@
 ms.assetid: 1597330b-2d0a-4259-a156-60aefeb5614e
 title: Release notes for Virtual Machine Manager
 description: This article details the known issues and issues fixed in Virtual Machine Manager
-author:  JYOTHIRMAISURI
+author: JYOTHIRMAISURI
 ms.author: V-jysur
-manager:  vvithal
-ms.date:  07/24/2018
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: vvithal
+ms.date: 07/24/2018
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Release notes for System Center Virtual Machine Manager
