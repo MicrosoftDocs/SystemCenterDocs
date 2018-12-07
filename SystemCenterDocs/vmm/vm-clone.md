@@ -2,13 +2,13 @@
 ms.assetid: 829e4ab1-2f23-4113-b294-b8f7c387a28a
 title: Clone VMs from another VM in the VMM fabric
 description: This article describes how to clone VMs in the VMM fabric from another VM
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/01/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/01/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 
