@@ -3,7 +3,7 @@ title: Software Requirements for Service Manager
 manager: carmonm
 description: The article describes System Center 2016 - Service Manager software requirements.
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016
