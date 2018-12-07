@@ -5,8 +5,8 @@ manager: carmonm
 ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod: system-center-2016
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
@@ -47,7 +47,7 @@ You can use the following procedures in Service Manager to create,  validate, an
 
     2.  On the **General** page, in the **Name** box, type a name for the new connector. Make sure that the **Enable this connector** check box is selected, and then click **Next**.
 
-    3.  On the **Domain or organizational unit** page, select **Use the domain: *domain name***. Or, select **Let me choose the domain or OU**, and then click **Browse** to choose a domain or an organizational unit (OU) in your environment.
+    3.  On the **Domain or organizational unit** page, select **Use the domain: _domain name_**. Or, select **Let me choose the domain or OU**, and then click **Browse** to choose a domain or an organizational unit (OU) in your environment.
 
     4.  In the **Credentials** area, click **New**.
 

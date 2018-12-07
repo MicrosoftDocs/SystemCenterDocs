@@ -3,7 +3,7 @@ title: Troubleshoot OLAP cubes
 description: Explains how you can troubleshoot Service Manager OLAP cubes.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016

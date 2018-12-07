@@ -2,13 +2,13 @@
 ms.assetid: ce968ce3-58d3-4eae-9b70-54eaac78a664
 title: Manage the VMM library
 description: This article describes management tasks for the VMM library
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Manage the VMM library
