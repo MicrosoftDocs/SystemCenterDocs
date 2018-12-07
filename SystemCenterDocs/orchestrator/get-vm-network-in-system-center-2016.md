@@ -3,7 +3,7 @@ title: Get VM Network in System Center 2016
 description: The Get VM Network activity is used in a runbook to return all virtual networks on the VMM management server that meet the filtering criteria.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

@@ -3,7 +3,7 @@ title: Recover VM
 description: The Recover VM activity is used in a runbook that recovers a virtual machine from a specified point in time so that it can be restored to a server running Hyper-V or to a network folder.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

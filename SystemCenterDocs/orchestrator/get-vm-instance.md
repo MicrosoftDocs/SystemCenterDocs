@@ -3,7 +3,7 @@ title: Get VM instance
 description: The Get VM Instance activity retrieves the specified virtual machine.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

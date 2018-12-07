@@ -1,7 +1,7 @@
 ---
 title: Migrate Orchestrator between environments
 description: Describes how you can automatically move Orchestrator between environments.
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman

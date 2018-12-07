@@ -3,7 +3,7 @@ title: How to Configure Runbook Throttling
 description: Describes how to change the maximum number of runbooks that can be simultaneously run in System Center 2016 - Orchestrator.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
