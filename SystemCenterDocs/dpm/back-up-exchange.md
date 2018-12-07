@@ -1,15 +1,15 @@
 ---
 description: Backup Exchange mailbox databases with DPM.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
+manager: carmonm
+ms.topic: article
+author: markgalioto
 ms.author: markgal
-ms.prod:  system-center-threshold
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 11/30/2017
-title:  Back up Exchange with DPM
-ms.technology:  data-protection-manager
-ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
+title: Back up Exchange with DPM
+ms.technology: data-protection-manager
+ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 ---
 
 # Back up Exchange with DPM

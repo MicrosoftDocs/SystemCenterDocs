@@ -3,7 +3,7 @@ title: Create Container
 description: The Create Container activity creates a new container under the specified account.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

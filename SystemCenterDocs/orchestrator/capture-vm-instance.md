@@ -3,7 +3,7 @@ title: Capture VM Instance
 description: The Capture VM Instance activity makes a running virtual machine available as an image for reuse.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

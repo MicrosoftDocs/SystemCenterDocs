@@ -3,7 +3,7 @@ title: Add Collection Rule Activity
 description: This topic provides instructions for configuring the Add Collection Rule activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 03/08/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

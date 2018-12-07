@@ -2,13 +2,13 @@
 ms.assetid: 6805c8cf-d768-4680-9990-2b8c895f31ec
 title: Add an Azure subscription in VMM
 description: This article describes how to add an Azure subscription, so that you can manage basic actions for Azure instances
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/27/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/27/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Add an Azure subscription in VMM

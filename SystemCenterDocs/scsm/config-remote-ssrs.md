@@ -3,7 +3,7 @@ title: Manual steps to configure remote SQL Server Reporting Services
 description: When you deploy the Service Manager data warehouse management server, you can choose the server where Microsoft SQL Server Reporting Services is deployed.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016

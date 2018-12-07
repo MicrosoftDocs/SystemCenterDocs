@@ -3,7 +3,7 @@ title: Delete OS Image
 description: The Delete OS Image activity deletes the specified operating system image from your image repository.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

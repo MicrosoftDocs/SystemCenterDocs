@@ -2,7 +2,7 @@
 title: Upgrade the Self-Service portal in System Center 2016 - Service Manager
 description: Use information in this article to upgrade the Service Manager Self-Service portal.
 manager: carmonm
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 01/23/2018

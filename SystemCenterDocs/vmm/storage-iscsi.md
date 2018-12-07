@@ -2,13 +2,13 @@
 ms.assetid: 2af73b2d-621a-475e-b144-ddc03f4e2030
 title: Set up a Microsoft iSCSI Target Server in the VMM 2016 storage fabric
 description: This article describes how to deploy a Microsoft iSCSI Target Server in the VMM storage fabric
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Set up a Microsoft iSCSI Target Server in the VMM storage fabric

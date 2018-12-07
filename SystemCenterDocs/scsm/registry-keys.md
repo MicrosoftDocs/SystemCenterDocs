@@ -1,13 +1,13 @@
 ---
-title:  Service Manager registry keys
+title: Service Manager registry keys
 description: Learn about registry keys used by Service Manager.
-manager:  carmonm
+manager: carmonm
 ms.topic: reference
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
+ms.prod: system-center
 ms.date: 01/23/2018
-ms.technology:  service-manager
+ms.technology: service-manager
 ---
 
 # Registry keys used by Service Manager

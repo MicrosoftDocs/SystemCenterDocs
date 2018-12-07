@@ -3,7 +3,7 @@ title: Add OS Image
 description: The Add OS Image activity adds an operating system image that is currently stored in a storage account in your subscription to the image repository.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
