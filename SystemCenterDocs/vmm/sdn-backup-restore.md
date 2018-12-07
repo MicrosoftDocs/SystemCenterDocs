@@ -7,7 +7,7 @@ ms.author: v-jysur
 manager: riyazp
 ms.date: 12/21/2017
 ms.topic: article
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
