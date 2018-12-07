@@ -1,14 +1,14 @@
 ---
-description: This article contains the procedures for backing up and recovery of virtual machines.  
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+description: This article contains the procedures for backing up and recovery of virtual machines.
+manager: carmonm
+ms.topic: article
+author: markgalioto
+ms.prod: system-center
+keywords: 
 ms.date: 12/06/2017
-title:  Back up Hyper V virtual machines
-ms.technology:  data-protection-manager
-ms.assetid:  3a5b0841-04c8-4ffa-8375-ef12b7b459bb
+title: Back up Hyper V virtual machines
+ms.technology: data-protection-manager
+ms.assetid: 3a5b0841-04c8-4ffa-8375-ef12b7b459bb
 ms.author: markgal
 ---
 

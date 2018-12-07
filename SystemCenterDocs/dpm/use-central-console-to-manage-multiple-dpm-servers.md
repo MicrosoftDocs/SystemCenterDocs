@@ -1,14 +1,14 @@
 ---
-description:  Explains why you should use the Central Console to manage multiple DPM servers and how to install the console.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+description: Explains why you should use the Central Console to manage multiple DPM servers and how to install the console.
+manager: carmonm
+ms.topic: article
+author: markgalioto
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2016
-title:  Manage multiple DPM servers with Central Console
-ms.technology:  data-protection-manager
-ms.assetid:  6e08e911-36e0-48d6-b71e-df4741811a0a
+title: Manage multiple DPM servers with Central Console
+ms.technology: data-protection-manager
+ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
 ms.author: markgal
 ---
 
