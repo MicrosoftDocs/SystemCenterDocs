@@ -3,7 +3,7 @@ title: Customize and author forms
 description: Provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 10/12/2016
