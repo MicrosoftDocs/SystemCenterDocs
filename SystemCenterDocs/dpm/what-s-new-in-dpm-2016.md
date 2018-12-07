@@ -1,14 +1,14 @@
 ---
-description: Descriptions of the new features in System Center DPM 2016 and 1801.  
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+description: Descriptions of the new features in System Center DPM 2016 and 1801.
+manager: carmonm
+ms.topic: article
+author: markgalioto
+ms.prod: system-center
+keywords: 
 ms.date: 2/8/2018
-title:  What's new in System Center DPM 2016 and 1801
-ms.technology:  data-protection-manager
-ms.assetid:  a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
+title: What's new in System Center DPM 2016 and 1801
+ms.technology: data-protection-manager
+ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: markgal
 ---
 

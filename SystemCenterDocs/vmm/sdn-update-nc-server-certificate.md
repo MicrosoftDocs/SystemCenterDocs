@@ -2,13 +2,13 @@
 ms.assetid: f6500be6-7c8a-46ff-a3d4-b9fada8c5d8d
 title: Update the network controller server certificate
 description: This article describes the procedure on how to update the network controller's server certificate.
-author:  JYOTHIRMAISURI
+author: JYOTHIRMAISURI
 ms.author: V-jysur
-manager:  vvithal
-ms.date:  06/15/2018
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: vvithal
+ms.date: 06/15/2018
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 

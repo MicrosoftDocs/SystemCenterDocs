@@ -1,15 +1,15 @@
 ---
 description: This article is a primer for the necessary components to deploy DPM in your environment.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
+manager: carmonm
+ms.topic: article
+author: markgalioto
 ms.author: markgal
-ms.prod:  system-center-2016
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 09/25/2018
-title:  Data Protection Manager
-ms.technology:  data-protection-manager
-ms.assetid:  e2a65d9d-5038-4a86-a495-f4745b78d040
+title: Data Protection Manager
+ms.technology: data-protection-manager
+ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 ---
 
 # Preparing your environment for System Center Data Protection Manager

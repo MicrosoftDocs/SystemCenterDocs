@@ -2,13 +2,13 @@
 ms.assetid: 1d93218a-4fa8-4783-bf12-bd8d2b04fb9d
 title: Upgrade information for Virtual Machine Manager
 description: This article details the upgrade information and procedures for Virtual Machine Manager.
-author:  JYOTHIRMAISURI
+author: JYOTHIRMAISURI
 ms.author: V-jysur
-manager:  vvithal
-ms.date:  05/08/2018
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: vvithal
+ms.date: 05/08/2018
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Upgrade System Center Virtual Machine Manager

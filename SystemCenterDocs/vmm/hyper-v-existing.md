@@ -2,13 +2,13 @@
 ms.assetid: e72332a9-7f1b-477d-8d2c-34ea4ba137fa
 title: Add Windows servers as Hyper-V hosts or clusters in the VMM fabric
 description: This article describes how to provision Windows server as Hyper-V hosts and cluster in the VMM fabric
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 
