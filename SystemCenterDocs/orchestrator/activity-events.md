@@ -2,7 +2,7 @@
 title: Activity Events
 description: This topic describes how to capture events triggered by activities in a runbook for monitoring success or performance issues.
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

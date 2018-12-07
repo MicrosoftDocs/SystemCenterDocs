@@ -1,7 +1,7 @@
 ---
 title: Creating and Testing a Sample Runbook
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
