@@ -3,7 +3,7 @@ title: Run Exchange PowerShell Command
 description: You can use the Run Exchange PowerShell Command activity in a runbook to run Exchange 2010 cmdlets.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

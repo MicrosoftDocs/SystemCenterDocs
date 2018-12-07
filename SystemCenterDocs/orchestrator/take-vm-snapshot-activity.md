@@ -3,7 +3,7 @@ title: Take VM Snapshot Activity
 description: The Take VM Snapshot activity is used in a runbook to take a snapshot of a running virtual machine on a VMware vSphere server and enable a new name and description to be assigned to the snapshot.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

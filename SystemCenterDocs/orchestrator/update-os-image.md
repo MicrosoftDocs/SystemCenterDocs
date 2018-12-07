@@ -3,7 +3,7 @@ title: Update OS Image
 description: The Update OS Image activity updates an operating system image that is in your image repository.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
