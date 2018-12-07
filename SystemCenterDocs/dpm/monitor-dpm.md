@@ -1,14 +1,14 @@
 ---
 description: This article describes the way that you can monitor DPM.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: markgalioto
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2016
-title:  Monitor DPM
-ms.technology:  data-protection-manager
-ms.assetid:  99901174-76d4-4eb7-a72b-3ec300f1fa0b
+title: Monitor DPM
+ms.technology: data-protection-manager
+ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
 ms.author: markgal
 ---
 

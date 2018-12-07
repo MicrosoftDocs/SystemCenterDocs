@@ -1,15 +1,15 @@
 ---
 description: Learn about the new features when you upgrade to DPM 2016. This article also provides an overview of how to upgrade your DPM installation.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
+manager: carmonm
+ms.topic: article
+author: markgalioto
 ms.author: markgal
-ms.prod:  system-center-threshold
-keywords:
-ms.date:  07/19/2018
-title:  Add Modern Backup Storage to DPM
-ms.technology:  system-center-2016
-ms.assetid:  faebe568-d991-401e-a8ff-5834212f76ce
+ms.prod: system-center
+keywords: 
+ms.date: 07/19/2018
+title: Add Modern Backup Storage to DPM
+ms.technology: data-protection-manager
+ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 ---
 
 # Add Modern Backup Storage to DPM

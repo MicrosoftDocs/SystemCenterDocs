@@ -1,14 +1,14 @@
 ---
 description: Use DPM to back up and restore VMware VMs.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: markgalioto
+ms.prod: system-center
+keywords: 
 ms.date: 2/8/2018
-title:  Back up and restore VMware Virtual Machines
-ms.technology:  data-protection-manager
-ms.assetid:
+title: Back up and restore VMware Virtual Machines
+ms.technology: data-protection-manager
+ms.assetid: 
 ms.author: markgal
 monikerRange: '>sc-dpm-2016'
 ---

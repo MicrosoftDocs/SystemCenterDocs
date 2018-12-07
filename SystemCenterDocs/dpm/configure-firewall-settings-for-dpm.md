@@ -5,7 +5,7 @@ author: markgalioto
 manager: carmonm
 ms.date: 11-01-2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
 ---
