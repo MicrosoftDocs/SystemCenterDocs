@@ -3,7 +3,7 @@ title: Designing a Runbook
 description: Describes how to design a new runbook for System Center 2016 - Orchestrator.
 ms.custom: na
 ms.date: 04/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

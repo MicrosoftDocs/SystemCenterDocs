@@ -3,7 +3,7 @@ title: Get Alerts Activity
 description: The Get Alerts activity retrieves an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer and replicates it to a trouble ticketing system.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

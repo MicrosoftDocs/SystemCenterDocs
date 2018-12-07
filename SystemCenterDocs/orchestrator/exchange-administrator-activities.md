@@ -3,7 +3,7 @@ title: Exchange Administrator Activities
 description: The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

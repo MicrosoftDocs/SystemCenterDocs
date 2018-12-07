@@ -3,7 +3,7 @@ title: Get Mailbox
 description: You can use the Get Mailbox activity to retrieve the attributes and objects for a mailbox in an on-premises or online environment.
 ms.custom: na
 ms.date: 01/24/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

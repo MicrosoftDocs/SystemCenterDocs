@@ -3,7 +3,7 @@ title: Enable Remote Mailbox (Hybrid)
 description: You can use the Enable Remote Mailbox (Hybrid) activity to create a mailbox in the cloud-based service for an existing user in the on-premises Active Directory (hybrid environment).
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

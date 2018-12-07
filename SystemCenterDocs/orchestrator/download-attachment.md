@@ -3,7 +3,7 @@ title: Download Attachment
 description: The Download Attachment activity is used in a runbook to download an attachment from a Microsoft SharePoint list item.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
