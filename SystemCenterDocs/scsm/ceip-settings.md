@@ -1,15 +1,15 @@
 ---
-title:  Configure your preference for sharing diagnostic and usage data
+title: Configure your preference for sharing diagnostic and usage data
 description: Learn about how to configure your preference for sharing Service Manager diagnostic and usage data.
-manager:  carmonm
-ms.topic:  article
+manager: carmonm
+ms.topic: article
 author: bandersmsft
 ms.author: banders
-ms.prod:  system-center-2016
-keywords:
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
-ms.technology:  service-manager
-ms.assetid:  4bb2487c-5a91-44d2-9a85-f4112aff40ac
+ms.technology: service-manager
+ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac
 ---
 
 # Configure your preference for sharing Service Manager diagnostic and usage data

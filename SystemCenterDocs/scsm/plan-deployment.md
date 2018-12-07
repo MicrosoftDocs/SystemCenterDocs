@@ -2,7 +2,7 @@
 title: Plan for System Center - Service Manager deployment
 description: Learn about several deployment options for Service Manager.
 manager: carmonm
-ms.prod: system-center-2016
+ms.prod: system-center
 author: bandersmsft
 ms.author: banders
 ms.date: 01/23/2018
