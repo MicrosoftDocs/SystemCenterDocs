@@ -3,7 +3,7 @@ title: HP Operations Manager Integration Pack for System Center 2016 - Orchestra
 description: The Integration Pack for HP Operations Manager is an add-on for System Center 2016 - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across you entire physical and virtual IT infrastructure.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

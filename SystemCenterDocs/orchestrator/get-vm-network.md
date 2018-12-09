@@ -2,7 +2,7 @@
 title: Get VM Network activity in System Center - Orchestra
 description: The Get VM Network activity is used in a runbook to return all virtual networks on the VMM management server that meet the filtering criteria.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman

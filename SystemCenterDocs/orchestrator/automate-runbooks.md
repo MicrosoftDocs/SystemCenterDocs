@@ -4,7 +4,7 @@ description: Provides an overview of runbook concepts and operations in System C
 author: rayne-wiselman
 manager: carmonm
 ms.date: 01/17/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.author: raynew

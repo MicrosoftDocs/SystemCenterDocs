@@ -3,7 +3,7 @@ title: Deploy Configuration Baseline activity
 description: Describes the configurable properties for the Deploy Configuration Baseline activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 15/03/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

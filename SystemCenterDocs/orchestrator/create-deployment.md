@@ -3,7 +3,7 @@ title: Create Deployment
 description: The Create Deployment activity uploads a new service package and creates a new deployment on staging or production.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

@@ -3,7 +3,7 @@ title: Get Relationship
 description: The Get Relationship activity is used to generate a list of objects from two different classes that are related by the criteria you specify.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

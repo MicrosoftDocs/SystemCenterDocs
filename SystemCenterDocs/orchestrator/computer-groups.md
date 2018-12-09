@@ -1,6 +1,6 @@
 ---
 title: Computer groups in System Center - Orchestra
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman

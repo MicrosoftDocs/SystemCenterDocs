@@ -2,7 +2,7 @@
 title: Modify the Orchestrator users group
 description: Describes how to change the users group for System Center - Orchestrator.
 ms.date: 01/17/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman

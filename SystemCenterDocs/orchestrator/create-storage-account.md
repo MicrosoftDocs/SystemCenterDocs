@@ -3,7 +3,7 @@ title: Create Storage Account
 description: The Create Storage Account activity creates a new storage account in Azure.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

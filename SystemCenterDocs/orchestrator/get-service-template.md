@@ -2,7 +2,7 @@
 title: Get Service Template activity in System Center - Orhcestra
 description: The Get Service Template activity is used in a runbook to return a list of all service templates.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman
