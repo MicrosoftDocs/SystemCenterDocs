@@ -2,7 +2,7 @@
 title: Representational State Transfer (REST) integraton pack for System Center - Orchestra
 description: This article describes the REST integration pack for System Center - Orchestrator.
 ms.date: 01/17/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman

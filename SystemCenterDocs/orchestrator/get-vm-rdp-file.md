@@ -3,7 +3,7 @@ title: Get VM RDP File
 description: The Get VM RDP File activity retrieves the Remote Desktop Protocol configuration file from the specified virtual machine.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

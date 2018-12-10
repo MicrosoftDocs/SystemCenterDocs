@@ -3,7 +3,7 @@ title: Resume VM
 description: The Resume VM activity is used to start a virtual machine that is in a paused state.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
