@@ -4,7 +4,6 @@ layout: LandingPage
 author: MattLusherRT
 ms.author: apexprodleads
 ms.date: 04-05-2017
-ms.prod
 ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: landing-page
