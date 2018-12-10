@@ -3,7 +3,7 @@ title: Update Network Adapter
 description: The Update Network Adapter activity is used to make changes to an existing network adapter.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
