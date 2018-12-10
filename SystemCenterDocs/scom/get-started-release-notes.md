@@ -5,7 +5,7 @@ manager:  cfcarmonm
 ms.topic:  article
 author:  mgoedtel
 ms.author: magoedte
-ms.prod:  system-center-2016
+ms.prod:  system-center
 ms.technology: operations-manager
 ms.topic: article
 keywords:

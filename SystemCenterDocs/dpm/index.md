@@ -4,7 +4,9 @@ layout: LandingPage
 author: MattLusherRT
 ms.author: apexprodleads
 ms.date: 04-05-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.prod
+ms.prod: system-center
+ms.technology: data-protection-manager
 ms.topic: landing-page
 title: Data Protection Manager Documentation
 description: Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data.
