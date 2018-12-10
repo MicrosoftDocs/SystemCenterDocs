@@ -1,14 +1,14 @@
 ---
-title:  What's new in System Center Orchestrator 1801
+title: What's new in System Center Orchestrator 1801
 description: This article describes the new features and other changes in System Center Orchestrator 1801.
-manager:  riyazp
-ms.topic:  article
-author:  JYOTHIRMAISURI
+manager: riyazp
+ms.topic: article
+author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.prod:  system-center-2016
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 02/05/2018
-ms.technology: Orchestrator
+ms.technology: orchestrator
 ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 monikerRange: 'sc-orch-1801'
 ---

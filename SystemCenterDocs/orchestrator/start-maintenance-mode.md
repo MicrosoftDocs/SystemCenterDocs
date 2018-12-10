@@ -3,7 +3,7 @@ title: Start Maintenance Mode
 description: The Start Maintenance Mode activity puts a monitor in Operations Manager into maintenance mode.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

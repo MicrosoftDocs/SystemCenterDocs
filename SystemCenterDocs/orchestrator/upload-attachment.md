@@ -3,7 +3,7 @@ title: Upload Attachment
 description: The Upload Attachment activity is used to upload a file to an existing Service Manager object.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
