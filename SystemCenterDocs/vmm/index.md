@@ -4,7 +4,8 @@ layout: LandingPage
 author: MattLusherRT
 ms.author: apexprodleads
 ms.date: 04-05-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ms.topic: landing-page
 title: Virtual Machine Manager Documentation
 description: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds.
