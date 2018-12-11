@@ -2,14 +2,14 @@
 description: You can use DPM to back up client computers.
 manager: carmonm
 ms.topic: article
-author: markgalioto
+author: rayne-wiselman
 ms.prod: system-center
 keywords: 
 ms.date: 11/30/2017
 title: Back up client computers with DPM
 ms.technology: data-protection-manager
 ms.assetid: 0e12f557-0396-465d-b60f-7695b44bbd12
-ms.author: markgal
+ms.author: raynew
 ---
 
 # Back up client computers with DPM
