@@ -2,8 +2,8 @@
 description: This article explains how to upgrade your DPM installation to version 1801.
 manager: carmonm
 ms.topic: article
-author: markgalioto
-ms.author: markgal
+author: rayne-wiselman
+ms.author: raynew
 ms.prod: system-center
 keywords: 
 ms.date: 7/19/2018
