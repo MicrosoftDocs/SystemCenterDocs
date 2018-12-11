@@ -6,6 +6,8 @@ author:  rayne-wiselman
 ms.date: 10/11/2018
 title:  Installing DPM
 ms.author: raynew
+ms.prod: system-center
+ms.technology: data-protection-manager
 ---
 
 # Get DPM installed
