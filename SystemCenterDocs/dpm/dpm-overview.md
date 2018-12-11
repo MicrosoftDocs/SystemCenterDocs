@@ -2,14 +2,14 @@
 description: DPM overview article that explains the workloads and types of data you can protect with DPM.
 manager: carmonm
 ms.topic: article
-author: markgalioto
+author: rayne-wiselman
 ms.prod: system-center
 keywords: 
 ms.date: 8/6/2018
 title: Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: ee706e89-20fd-4883-82e3-75565a705751
-ms.author: markgal
+ms.author: raynew
 ---
 
 # Data Protection Manager
