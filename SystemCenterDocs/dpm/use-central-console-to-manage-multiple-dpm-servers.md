@@ -2,14 +2,14 @@
 description: Explains why you should use the Central Console to manage multiple DPM servers and how to install the console.
 manager: carmonm
 ms.topic: article
-author: markgalioto
+author: rayne-wiselman
 ms.prod: system-center
 keywords: 
 ms.date: 11/01/2016
 title: Manage multiple DPM servers with Central Console
 ms.technology: data-protection-manager
 ms.assetid: 6e08e911-36e0-48d6-b71e-df4741811a0a
-ms.author: markgal
+ms.author: raynew
 ---
 
 # Manage multiple DPM servers with Central Console
@@ -38,7 +38,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 ## Set up Central Console
 You can install Central Console on a server computer running Windows Server 2008 R2 or later, or a client computer running Windows 7 or later.  It can't be installed on the DPM server. Set it up by installing the relevant Operations Manager agent on each DPM server you want to manage, and then installing Central Console on the Operations Manager server by importing the DPM management pack and then installing the console.
 
-1.  Deploy an Operations Manager agent to your DPM server.  [Read more](https://technet.microsoft.com/library/hh551142.aspx).
+1.  Deploy an Operations Manager agent to your DPM server.  [Read more](https://docs.microsoft.com/en-us/system-center/dpm/use-ops-manager-to-manage-monitor-dpm?view=sc-dpm-1807#BKMK_OM).
 
 2.  The Central Console consists of two management packs - Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp and Microsoft.SystemCenter.DataProtectionManager.2012.Library.mp. You'll need to import both of these and they're located in<CDDrive:>\Management Packs.
     Note that when you import the management pack, Windows displays a warning about write actions. This is an expected warning, and you can click **OK** to continue.

@@ -2,8 +2,8 @@
 description: Information to help you identify your storage needs and to prepare the storage to support a DPM 2016 deployment.
 manager: carmonm
 ms.topic: article
-author: markgalioto
-ms.author: markgal
+author: rayne-wiselman
+ms.author: raynew
 ms.prod: system-center
 keywords: 
 ms.date: 09/25/2018

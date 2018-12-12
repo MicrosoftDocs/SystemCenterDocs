@@ -2,14 +2,14 @@
 description: This article describes the way that you can monitor DPM.
 manager: carmonm
 ms.topic: article
-author: markgalioto
+author: rayne-wiselman
 ms.prod: system-center
 keywords: 
 ms.date: 11/01/2016
 title: Monitor DPM
 ms.technology: data-protection-manager
 ms.assetid: 99901174-76d4-4eb7-a72b-3ec300f1fa0b
-ms.author: markgal
+ms.author: raynew
 ---
 
 # Monitor DPM
@@ -86,7 +86,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 
 #### Install the agent and obtain the Management Packs
 
-1.  For agent installation options read [Operations Manager Installation Methods](https://technet.microsoft.com/library/hh551142.aspx).
+1.  For agent installation options read [Operations Manager Installation Methods](https://docs.microsoft.com/en-us/system-center/scom/deploy-overview?view=sc-om-1807).
     If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) in the Download Center.
 
 2.  Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=45525).
