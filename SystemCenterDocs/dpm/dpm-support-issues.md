@@ -1,15 +1,15 @@
 ---
 description: This article explains the supported deployment options for DPM 2016.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.author: markgal
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.author: raynew
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2017
-title:  What's supported and what isn't for DPM
-ms.technology:  data-protection-manager
-ms.assetid:  29d977b5-56de-4bc4-ba0b-2d45d02516a4
+title: What's supported and what isn't for DPM
+ms.technology: data-protection-manager
+ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
 ---
 
 # What's supported and what isn't for DPM?

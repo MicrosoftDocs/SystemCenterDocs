@@ -2,7 +2,7 @@
 title: Runbook permissions
 description: This topic describes how to set permissions for users to access runbook properties.
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

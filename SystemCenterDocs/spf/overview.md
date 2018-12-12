@@ -6,8 +6,8 @@ ms.author: raynew
 manager: carmonm
 ms.date: 01/22/2018
 ms.topic: article
-ms.prod:  system-center-threshold
-ms.technology:  service-provider-foundation
+ms.prod: system-center
+ms.technology: service-provider-foundation
 ---
 
 # What is Service Provider Foundation?

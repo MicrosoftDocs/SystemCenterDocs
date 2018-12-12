@@ -1,15 +1,15 @@
 ---
-description:  Use DPM to protect SharePoint farms, external SQL Server databases, and folders.  
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+description: Use DPM to protect SharePoint farms, external SQL Server databases, and folders.
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2016
-title:  Back up SharePoint with DPM
-ms.technology:  data-protection-manager
-ms.assetid:  3769bebe-3e5a-4b51-9c01-d07e94fc8c43
-ms.author: markgal
+title: Back up SharePoint with DPM
+ms.technology: data-protection-manager
+ms.assetid: 3769bebe-3e5a-4b51-9c01-d07e94fc8c43
+ms.author: raynew
 ---
 
 # Back up SharePoint with DPM

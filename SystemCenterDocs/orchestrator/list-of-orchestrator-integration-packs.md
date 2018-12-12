@@ -2,13 +2,13 @@
 title: "List of Orchestrator Integration Packs | Microsoft Docs"
 ms.custom: ""
 ms.date: 2/1/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: reference
-ms.assetid:
+ms.assetid: 
 caps.latest.revision: 12
 author: bwren
 ms.author: bwren

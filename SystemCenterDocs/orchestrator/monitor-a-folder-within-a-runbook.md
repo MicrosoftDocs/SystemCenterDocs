@@ -2,7 +2,7 @@
 title: Example Runbook Monitoring a folder with a runbook
 description: This article describes how you can use a sample to create a simple monitoring runbook that monitors a folder for new text files.
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

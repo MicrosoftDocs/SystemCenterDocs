@@ -3,7 +3,7 @@ title: Start VM Instance
 description: The Start VM Instance activity starts the specified virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

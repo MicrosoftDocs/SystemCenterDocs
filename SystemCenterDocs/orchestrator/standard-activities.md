@@ -2,11 +2,11 @@
 title: Orchestrator Standard Activities
 description: This article describes the standard activities in Orchestrator that enable you to create runbooks to automate your data center procedures.
 manager: gaitonde.vithalprasad
-ms.topic:  article
-author:  JYOTHIRMAISURI
+ms.topic: article
+author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.prod:  system-center-2016
-keywords:  
+ms.prod: system-center
+keywords: 
 ms.date: 12/14/2017
 ms.technology: Orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142

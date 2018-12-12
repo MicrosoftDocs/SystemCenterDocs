@@ -4,7 +4,7 @@ description: This topic provides an overview of System Center - Orchestrator
 author: rayne-wiselman
 manager: carmonm
 ms.date: 01/17/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ---

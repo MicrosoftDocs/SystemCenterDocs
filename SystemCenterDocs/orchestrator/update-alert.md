@@ -3,7 +3,7 @@ title: Update Alert
 description: The Update Alert activity publishes all of the data from the required and optional properties into published data.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator

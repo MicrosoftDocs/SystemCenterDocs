@@ -1,13 +1,13 @@
 ---
 description: Provides an overview of how you can work with integration modules.
-manager:  carmonm
-ms.topic:  article
-author:  rayne-wiselman
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
 ms.author: raynew
-ms.prod:  system-center-threshold
+ms.prod: system-center
 ms.date: 05/08/2018
-title:  Work with Integration Modules
-ms.technology:  service-management-automation
+title: Work with Integration Modules
+ms.technology: service-management-automation
 ---
 
 # Work with integration modules

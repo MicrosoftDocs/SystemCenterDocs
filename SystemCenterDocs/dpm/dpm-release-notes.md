@@ -1,13 +1,13 @@
 ---
-ms.assetid:
+ms.assetid: 
 title: Release Notes for System Center DPM
 description: Release notes about the DPM 2016 and 1801 releases.
-author: markgalioto
-ms.author: markgal
+author: rayne-wiselman
+ms.author: raynew
 manager: carmonm
 ms.date: 7/24/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: data-protection-manager
 ms.topic: article
 ---

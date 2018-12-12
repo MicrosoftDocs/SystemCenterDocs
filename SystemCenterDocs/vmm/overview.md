@@ -2,13 +2,13 @@
 ms.assetid: 0492a730-365e-4d72-bf83-f1fd990b7ba1
 title: What is VMM?
 description: This article provides an overview of System Center VMM and a summary of what it can do for your business.
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-threshold
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # What is Virtual Machine Manager?

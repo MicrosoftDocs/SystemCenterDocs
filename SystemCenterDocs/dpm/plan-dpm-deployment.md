@@ -1,15 +1,15 @@
 ---
 description: Information to help you plan for and prepare to deploy DPM 2016 in your environment.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2016
-title:  Get ready to deploy DPM servers
-ms.technology:  data-protection-manager
-ms.assetid:  517ce276-b811-4a06-ade3-ff71303ccf5b
-ms.author: markgal
+title: Get ready to deploy DPM servers
+ms.technology: data-protection-manager
+ms.assetid: 517ce276-b811-4a06-ade3-ff71303ccf5b
+ms.author: raynew
 ---
 
 # Get ready to deploy DPM servers

@@ -4,7 +4,8 @@ layout: LandingPage
 author: MattLusherRT
 ms.author: apexprodleads
 ms.date: 04-05-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.prod: system-center
+ms.technology: service-management-automation
 ms.topic: landing-page
 title: Service Management Automation Documentation
 description: Service Management Automation is an IT process automation solution for Windows Azure Pack for Windows Server. It enables you to automate the creation, monitoring, and deployment of resources in your Windows Azure Pack environment.

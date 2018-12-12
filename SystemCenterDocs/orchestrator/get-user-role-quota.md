@@ -2,7 +2,7 @@
 title: Get User Role Quota activity in System Center - Orchestra
 description: The Get User Role Quota activity is used in a runbook to return information about all user role quotas in a VMM management server.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman

@@ -7,7 +7,7 @@ ms.author: v-jysur
 manager:  vvithal
 ms.date:  05/22/2018
 ms.topic:  article
-ms.prod:  system-center-threshold
+ms.prod:  system-center
 ms.technology: operations-manager
 ---
 

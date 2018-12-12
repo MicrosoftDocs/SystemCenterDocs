@@ -1,7 +1,7 @@
 ---
 title: Build and test runbooks in System Center - Orchestra
 Description: Provides guidance and detailed procedures for creating and testing runbooks in System Center - Orchestrator.
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman

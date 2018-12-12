@@ -1,20 +1,20 @@
 ---
 description: Backup Exchange mailbox databases with DPM.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.author: markgal
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.author: raynew
+ms.prod: system-center
+keywords: 
 ms.date: 11/30/2017
-title:  Back up Exchange with DPM
-ms.technology:  data-protection-manager
-ms.assetid:  79fb8831-1d70-4d1d-bed1-f28fa9186730
+title: Back up Exchange with DPM
+ms.technology: data-protection-manager
+ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
 ---
 
 # Back up Exchange with DPM
 
-System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so you can protect your Exchange deployment. If you have a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment you should back up Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers. 
+System Center Data Protection Manager (DPM) provides backup and recovery for Exchange 2013. To ensure your entire Exchange deployment is protected, configure protection for volumes, system state, or full bare metal recovery. This article provides the steps for configuring DPM so you can protect your Exchange deployment. If you have a large Exchange deployment, use a database availability group (DAG) to scale protection for Exchange mailbox databases. In addition to backing up mail databases, to fully protect your Exchange deployment you should back up Exchange Server roles such as the Client Access Server, or the transport service on mailbox servers.
 
 ## Prerequisites and limitations
 Before you deploy DPM to protect Exchange 2013, verify the deployment prerequisites:
@@ -33,7 +33,7 @@ Before you deploy DPM to protect Exchange 2013, verify the deployment prerequisi
 
         For example in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
--  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://go.microsoft.com/fwlink/?LinkId=266498).
+-  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/en-in/download/details.aspx?id=30679).
 
 -  To protect an Exchange 2013 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
