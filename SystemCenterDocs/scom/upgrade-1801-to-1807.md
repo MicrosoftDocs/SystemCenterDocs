@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title:  How to upgrade to Operations Manager version 1807
 description: This article describes how to perform an upgrade from System Center Operations Manager version 1801 to 1807.  
 author: JYOTHIRMAISURI
@@ -15,11 +15,11 @@ ms.topic: article
 
 
 # How to upgrade to Operations Manager version 1807
-This article describes how to perform a successful upgrade of System Center Operations Manager version 1801 to 1807. For more information about this upgrade and what issues are addressed, see [KB4133779](https://support.microsoft.com/help/4133779). 
+This article describes how to perform a successful upgrade of System Center Operations Manager version 1801 to 1807. For more information about this upgrade and what issues are addressed, see [KB4133779](https://support.microsoft.com/help/4133779).
 
-## Requirements 
+## Requirements
 
-This update is available from Microsoft Update in the following languages: 
+This update is available from Microsoft Update in the following languages:
 - Chinese Simplified (CHS)
 - Chinese Traditional (CHT)
 - Czech (CSY)
@@ -44,8 +44,6 @@ Some components are multilanguage, and the updates for these components are not 
 You must run this update as an administrator on the systems hosting the Operations Manager components and have System Administrator rights on the SQL Server instance hosting the Operations Manager databases and Reporting server role.
 
 If you don't want to restart the computer after you apply the Operations console update, close the Operations console before you apply the update for the role.
-
-Do not apply an update immediately after you install System Center Operations Manager version 1801. Wait several hours after deployment of a new management group before you apply any update.
 
 If User Account Control is enabled, run the .msp update files from an elevated command prompt.
 
@@ -128,10 +126,10 @@ Apply the appropriate MSP files on each computer.
     >[!NOTE]
     >This script is located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
 
-3. Import the following management packs: 
+3. Import the following management packs:
 
-    |Management Pack |Version | 
-    |----------------|--------| 
+    |Management Pack |Version |
+    |----------------|--------|
     |Microsoft.SystemCenter.Advisor.Internal.mpb |7.3.13261.0 |
     |Microsoft.SystemCenter.HtmlDashboard.Library.CHS.mp |7.3.13246.0 |
     |Microsoft.SystemCenter.HtmlDashboard.Library.CHT.mp |7.3.13246.0 |
@@ -161,7 +159,7 @@ Apply the appropriate MSP files on each computer.
     >Management packs are included in the Server component updates in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\Management Packs for Update Rollups`
 
 
-## Update Nano Agent 
+## Update Nano Agent
 
 To manually install the updates to Nano Agent, download the [KB3209591-8.0.10913.0-NanoAgent.cab](https://www.microsoft.com/download/details.aspx?id=54790) file. You can install this update on a Nano Agent system by using the following PowerShell script:
 
@@ -185,4 +183,3 @@ To install the updated monitoring packs and agents for UNIX and Linux operating 
 4.	Import the updated management pack for each version of Linux or UNIX that you are monitoring in your environment.
 
 5.	Upgrade each agent to the latest version by using either the **Update-SCXAgent** Windows PowerShell cmdlet or the [UNIX/Linux Agent Upgrade Wizard](manage-upgrade-uninstall-crossplat-agent.md) from the Device Management node under the Administration workspace in the Operations console.  
-
