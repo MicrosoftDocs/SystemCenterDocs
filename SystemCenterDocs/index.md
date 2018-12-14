@@ -1,14 +1,12 @@
 ---
-# aka.ms/skyeye/meta for more information
 layout: HubPage
 hide_bc: true
-author: markgalioto
+author: JYOTHIRMAISURI
 ms.author: apexprodleads
 ms.date: 07-12-2018
-ms.service-OR-ms.prod: system-center-2016
 ms.topic: hub-page
 title: System Center Documentation
-description: System Center documentation for versions 2016 and above. The documentation covers the LTSC and SAC versions of System Center. 
+description: System Center documentation for versions 2016 and above. The documentation covers the LTSC and SAC versions of System Center.
 ---
 <div id="main" class="v2">
     <div class="container">

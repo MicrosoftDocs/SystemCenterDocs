@@ -1,15 +1,14 @@
 ---
 description: This topic lists the features and functionality that have been removed or replaced in System Center 2016.
-manager:  cfreeman
-ms.topic:  article
-author:  cfreemanwa
+manager: cfreeman
+ms.topic: article
+author: rayne-wiselman
 ms.author: raynew
-ms.prod:  system-center-threshold
-keywords:
-ms.date:  2016-10-12
-title:  Features Removed or Deprecated from System Center 2016
-ms.technology:  system-center-2016
-ms.assetid:  b6f468e0-fa52-41f3-8b2d-9e07ede377c9
+ms.prod: system-center
+keywords: 
+ms.date: 2016-10-12
+title: Features Removed or Deprecated from System Center 2016
+ms.assetid: b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
 
 # Features Removed or Deprecated from System Center 2016
