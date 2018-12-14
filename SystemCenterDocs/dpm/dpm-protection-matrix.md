@@ -2,14 +2,14 @@
 description: A complete matrix of all workloads, data types, and installations that DPM protects. Applies to DPM 2016, 1801, and 1807.
 manager: carmonm
 ms.topic: article
-author: markgalioto
+author: rayne-wiselman
 ms.prod: system-center
 keywords: 
 ms.date: 7/17/2018
 title: What can DPM back up
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
-ms.author: markgal;adigan
+ms.author: raynew
 ---
 
 # What can DPM back up?

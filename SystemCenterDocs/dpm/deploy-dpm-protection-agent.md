@@ -2,8 +2,8 @@
 description: Deploy the DPM protection agent to identify data that DPM can protect and recover.
 manager: carmonm
 ms.topic: article
-author: markgalioto
-ms.author: markgal
+author: rayne-wiselman
+ms.author: raynew
 ms.prod: system-center
 keywords: 
 ms.date: 11/01/2016
