@@ -5,7 +5,7 @@ ms.date: 01/22/2018
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---
