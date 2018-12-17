@@ -9,10 +9,10 @@ ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0b0304df-364d-4f75-b9d5-6b3ddfea6bef
-ams.author: raynew
 ms.date: 10/12/2016
-author: cfreemanwa
+author: rayne-wiselman
 manager: carmonm
+ms.author: raynew
 ---
 # Runbook permissions
 
