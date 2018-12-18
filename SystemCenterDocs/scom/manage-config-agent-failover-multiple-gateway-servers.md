@@ -6,7 +6,7 @@ ms.author: magoedte
 manager: carmonm
 ms.date: 05/24/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 4f6532e7-6bbd-441e-8a3c-9dec577c8724
