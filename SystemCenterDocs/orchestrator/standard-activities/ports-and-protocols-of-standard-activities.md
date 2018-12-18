@@ -2,7 +2,7 @@
 title: "Ports and Protocols of Standard Activities | Microsoft Docs"
 ms.custom: na
 ms.date: 1/2/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
