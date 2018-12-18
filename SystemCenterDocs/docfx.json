@@ -262,7 +262,7 @@
         "dest": "vmm",
         "moniker_range": ">= sc-vmm-2016 <= sc-vmm-1807"
       },
-{
+
   "build": {
 "markdownEngine": "DFM"
   }
