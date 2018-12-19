@@ -4,8 +4,8 @@ description: This article describes the steps that you must take for Service Man
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

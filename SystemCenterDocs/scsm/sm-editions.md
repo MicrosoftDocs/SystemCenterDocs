@@ -3,8 +3,8 @@ title: Service Manager editions
 description: Learn about Service Manager editions.
 manager: carmonm
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article
