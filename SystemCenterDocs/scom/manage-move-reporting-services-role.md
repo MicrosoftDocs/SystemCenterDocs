@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
-title:  How to move the Reporting Server role
+title: How to move the Reporting Server role
 description: This article describes the steps required to move the Reporting server role to a new computer.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/19/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

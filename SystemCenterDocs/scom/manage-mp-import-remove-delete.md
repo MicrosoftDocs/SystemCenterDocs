@@ -7,7 +7,7 @@ ms.author: magoedte
 manager: carmonm
 ms.date: 11/28/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

@@ -1,12 +1,12 @@
 ---
 title: How to Configure a Product Connector Subscription
-description: This article describes how to configure a product connector for integrating Operations Manager with an enterprise monitoring solution.  
+description: This article describes how to configure a product connector for integrating Operations Manager with an enterprise monitoring solution.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 12/05/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 5de28eac-5d62-47bf-bc20-0d1897868a5d
