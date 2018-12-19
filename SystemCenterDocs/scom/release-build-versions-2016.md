@@ -1,12 +1,12 @@
 ---
-title: System Center 2016 - Operations Manager Release Build Versions 
-description: This article shows the list of release builds for System Center 2016 - Operations Manager.  
+title: System Center 2016 - Operations Manager Release Build Versions
+description: This article shows the list of release builds for System Center 2016 - Operations Manager.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 08/12/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.assetid: 
 ms.technology: operations-manager
 ms.topic: article
