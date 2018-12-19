@@ -6,7 +6,7 @@ ms.author: magoedte
 manager: carmonm
 ms.date: 01/04/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 6842cddc-b875-4358-8f00-f4b8ab784739

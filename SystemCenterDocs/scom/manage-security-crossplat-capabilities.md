@@ -7,7 +7,7 @@ ms.author: magoedte
 manager: cfreemanwa
 ms.date: 03/09/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

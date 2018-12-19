@@ -7,7 +7,7 @@ ms.author: magoedte
 manager: carmonm
 ms.date: 11/08/2017
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
