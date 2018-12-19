@@ -1,12 +1,12 @@
 ---
-title: Configure the Operations Manager Data Source in Visio 
+title: Configure the Operations Manager Data Source in Visio
 description: This article describes how to configure Visio to communicate with Operations Manager so that you can include monitored object health state in a drawing.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 10/23/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 2b286c07-c702-4ff9-8e4c-2865b34cf53d

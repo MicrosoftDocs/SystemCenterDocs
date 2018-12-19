@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
 title: Configure Antivirus for Operations Manager Components
-description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles. 
+description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
