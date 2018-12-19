@@ -1,12 +1,12 @@
 ---
 title: How to Personalize a View in Operations Manager
-description: This article describes how to customize views in the Operations Manager Operations console.  
+description: This article describes how to customize views in the Operations Manager Operations console.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: aa50d20a-5f38-476f-b79c-8f2f99e4ff1f

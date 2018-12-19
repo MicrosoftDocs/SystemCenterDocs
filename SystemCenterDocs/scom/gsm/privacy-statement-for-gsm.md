@@ -2,7 +2,7 @@
 title: "Privacy Statement for System Center Global Service Monitor for System Center 2012 Operations Manager | Microsoft Docs"
 ms.custom: ""
 ms.date: 4/26/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: article

@@ -3,7 +3,7 @@ title: "Dashboard Views in Global Service Monitor | Microsoft Docs"
 description: 
 ms.custom: ""
 ms.date: 4/26/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: article

@@ -6,7 +6,7 @@ author: JYOTHIRMAISURI
 manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

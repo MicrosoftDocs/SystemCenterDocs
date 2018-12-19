@@ -1,12 +1,12 @@
 ---
 title: System Center Operations Manager 1801 Release Notes
-description: This article describes issues and workarounds for System Center Operations Manager 1801.  
+description: This article describes issues and workarounds for System Center Operations Manager 1801.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/30/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.assetid: 
 ms.technology: operations-manager

@@ -3,8 +3,8 @@ title: Mapping Active Directory Domain Services attributes to properties in Serv
 description: Learn about the relationships between Active Directory Domain Services attributes and properties in Service Manager.
 manager: carmonm
 ms.topic: reference
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 keywords: 
 ms.date: 10/12/2016

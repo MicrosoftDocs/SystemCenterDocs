@@ -1,12 +1,12 @@
 ---
 title: System Center Operations Manager 1807 Release Notes
-description: This article describes issues and workarounds for System Center Operations Manager 1807.  
+description: This article describes issues and workarounds for System Center Operations Manager 1807.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/25/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1807'
 ms.assetid: 
 ms.technology: operations-manager
