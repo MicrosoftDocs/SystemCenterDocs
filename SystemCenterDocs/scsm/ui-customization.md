@@ -3,8 +3,8 @@ title: User interface customization in Service Manager
 description: Explains to customize how items are displayed in Service Manager.
 manager: carmonm
 ms.topic: article
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 keywords: 
 ms.date: 10/12/2016

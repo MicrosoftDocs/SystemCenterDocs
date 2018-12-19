@@ -3,8 +3,8 @@ title: Install System Center - Service Manager on a single computer (minimum con
 description: This article helps you to evaluate System Center - Service Manager when you want to install it on one computer.
 manager: carmonm
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.tgt_pltfrm: na
