@@ -1,5 +1,5 @@
 ---
-ms.assetid:
+ms.assetid: 
 title: What's New in Operations Manager - 1807
 description: This article describes what's new in System Center Operations Manager 1807 compared to previous versions.
 author: JYOTHIRMAISURI
@@ -7,7 +7,7 @@ ms.author: magoedte
 manager: carmonm
 ms.date: 07/25/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1807'
 ms.technology: operations-manager
 ms.topic: article

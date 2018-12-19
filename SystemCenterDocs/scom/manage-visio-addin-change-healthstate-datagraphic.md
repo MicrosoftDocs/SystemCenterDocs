@@ -6,7 +6,7 @@ ms.author: magoedte
 manager: cfreemanwa
 ms.date: 12/13/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: f6b1c3b7-4354-4a2d-ab0f-c2f859456caa

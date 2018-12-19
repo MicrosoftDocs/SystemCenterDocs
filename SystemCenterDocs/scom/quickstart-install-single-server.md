@@ -1,12 +1,12 @@
 ---
 title: Walkthrough Installing Operations Manager on a Single Server
-description: This article describes how to install all Operations Manager roles in a simple single-server deployment.   
+description: This article describes how to install all Operations Manager roles in a simple single-server deployment.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 02/02/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
