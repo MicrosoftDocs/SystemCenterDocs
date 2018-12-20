@@ -1,13 +1,13 @@
 ---
 ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
 title: System Requirements for System Center Operations Manager
-description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.  
+description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 09/26/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

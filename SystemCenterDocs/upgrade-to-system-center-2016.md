@@ -1,15 +1,14 @@
 ---
-description:  
+description: 
 manager: cfreeman
-ms.topic:  article
-author:  cfreemanwa
-ms.prod:  system-center-threshold
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
 ms.author: raynew
-keywords:  
-ms.date:  10/12/2016
-title:  Upgrade to System Center 2016
-ms.technology: system-center-2016
-ms.assetid:  4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
+keywords: 
+ms.date: 10/12/2016
+title: Upgrade to System Center 2016
+ms.assetid: 4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 ---
 
 # Upgrade to System Center 2016

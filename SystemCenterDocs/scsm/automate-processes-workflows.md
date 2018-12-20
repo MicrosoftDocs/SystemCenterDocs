@@ -4,8 +4,8 @@ description: Learn about how you can automate IT processes with workflows in Ser
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

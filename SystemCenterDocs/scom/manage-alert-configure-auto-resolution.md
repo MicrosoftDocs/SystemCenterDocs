@@ -1,12 +1,12 @@
 ---
 title: How to Configure Automatic Alert Resolution
-description: This article describes how to configure the setting for automatic alert resolution in the Operations Manager management group.  
+description: This article describes how to configure the setting for automatic alert resolution in the Operations Manager management group.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 02/06/2018
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: dab97fc0-0cd9-40cf-a5bb-2e304490fef4

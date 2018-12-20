@@ -2,11 +2,10 @@
 title: "Invoke Runbook | Microsoft Docs"
 ms.custom: ""
 ms.date: "2016-05-13"
-ms.prod: "system-center-2012"
+ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "orchestrator"
+ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 applies_to: 
