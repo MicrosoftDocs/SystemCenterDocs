@@ -1,12 +1,12 @@
 ---
 title: Using Health Explorer to Investigate Problems
-description: This article describes how to use the Operations Manager Health Explorer to investigate state change events for when monitors are in an unhealthy state.  
+description: This article describes how to use the Operations Manager Health Explorer to investigate state change events for when monitors are in an unhealthy state.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 08/13/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 61005760-0977-4cd8-b76d-05558160f78f

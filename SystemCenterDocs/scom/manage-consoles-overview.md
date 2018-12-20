@@ -1,12 +1,12 @@
 ---
 title: Using the Operations Manager consoles
-description: This article highlights the section titles contained within this section of the Operations Manager documentation.  
+description: This article highlights the section titles contained within this section of the Operations Manager documentation.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 11/10/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 10d18a5f-c45d-4c23-b77e-b1cfbde31572

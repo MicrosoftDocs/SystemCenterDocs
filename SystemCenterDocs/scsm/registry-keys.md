@@ -3,8 +3,8 @@ title: Service Manager registry keys
 description: Learn about registry keys used by Service Manager.
 manager: carmonm
 ms.topic: reference
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 ms.date: 01/23/2018
 ms.technology: service-manager

@@ -4,7 +4,7 @@ description: This article provides details about the Orchestrator Integration To
 author: rayne-wiselman
 manager: carmonm
 ms.date: 02/02/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 ms.author: raynew

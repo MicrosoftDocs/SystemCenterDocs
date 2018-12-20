@@ -3,11 +3,11 @@ ms.assetid: 11da2a90-3cf3-4983-a71f-1065a792374e
 title: How to Upgrade an ACS Collector
 description: This article describes how to upgrade an ACS Collector to the latest version of System Center Operations Manager.
 author: JYOTHIRMAISURI
-ms.author: magoedtel
+ms.author: magoedte
 manager: carmonm
 ms.date: 01/15/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

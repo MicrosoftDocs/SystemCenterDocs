@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
 title: What's New in Operations Manager - 1801
-description: This article describes what's new in System Center Operations Manager 1801 compared to previous versions. 
+description: This article describes what's new in System Center Operations Manager 1801 compared to previous versions.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 02/07/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article

@@ -6,7 +6,7 @@ ms.author: magoedte
 manager: cfreemanwa
 ms.date: 08/14/2017
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: caf7af6f-5967-48a0-b0e5-47cb0e0314f7

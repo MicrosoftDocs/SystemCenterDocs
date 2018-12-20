@@ -3,8 +3,8 @@ title: Configure Desired Configuration Management to generate incidents
 description: Learn about how to configure Desired Configuration Management to generate incidents in Service Manager.
 manager: carmonm
 ms.topic: article
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 ms.date: 01/23/2018
 ms.technology: service-manager

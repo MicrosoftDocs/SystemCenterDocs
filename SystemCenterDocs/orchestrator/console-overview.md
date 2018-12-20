@@ -10,7 +10,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: raynew
 ms.date: 10/12/2016
-author: cfreemanwa
+author: rayne-wiselman
 manager: carmonm
 ---
 # Overview of the Orchestration console
