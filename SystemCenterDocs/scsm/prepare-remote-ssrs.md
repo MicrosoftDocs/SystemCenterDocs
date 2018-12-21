@@ -3,8 +3,8 @@ title: Prepare remote SQL Server Reporting Services for System Center - Service 
 description: Describes how to prepare remote SQL Server Reporting Services for System Center - Service Manager upgrade.
 manager: carmonm
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article

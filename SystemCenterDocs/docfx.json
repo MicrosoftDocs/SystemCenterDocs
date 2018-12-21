@@ -163,6 +163,20 @@
           "**/obj/**",
           "**/includes/**"
         ],
+        "group": "sma",
+        "src": "sma",
+        "dest": "sma"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
         "group": "orchestrator",
         "src": "orchestrator",
         "dest": "orchestrator"
