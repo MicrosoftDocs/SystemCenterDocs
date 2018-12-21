@@ -7,7 +7,6 @@
 ## [Release notes - 1801](release-notes-1801.md)
 ## [Release notes - 1807](release-notes-1807.md)
 ## [What's new in Operations Manager](whats-new-in-om.md)
-## [What's new in Operations Manager - 1801](what-is-new-1801.md)
 ## [What's new in Operations Manager - 1807](what-is-new-1807.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)

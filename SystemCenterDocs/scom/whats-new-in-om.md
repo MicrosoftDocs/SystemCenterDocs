@@ -14,13 +14,23 @@ ms.topic: article
 
 # What's New in Operations Manager
 
+::: moniker range="sc-om-1801"
 
-::: moniker range="sc-om-2016"
-
-This article details the new features supported in System Center 2016 - Operations Manager.
+This article details the new features supported in System Center 1801 - Operations Manager (OM).
 
 ::: moniker-end
 
+::: moniker range="sc-om-2016"
+
+This article details the new features supported in System Center 2016 - Operations Manager (OM).
+
+::: moniker-end
+
+::: moniker range="sc-om-1801"
+
+[!INCLUDE [whats-new-om-1801.md](../includes/whats-new-om-1801.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
