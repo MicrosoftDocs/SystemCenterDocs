@@ -14,6 +14,14 @@ ms.topic: article
 
 # What's New in Operations Manager
 
+::: moniker range="sc-om-1807"
+
+This article details the new features supported in System Center 1807 - Operations Manager (OM).
+
+[!INCLUDE [whats-new-om-1807.md](../includes/whats-new-om-1807.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-1801"
 
 This article details the new features supported in System Center 1801 - Operations Manager (OM).
