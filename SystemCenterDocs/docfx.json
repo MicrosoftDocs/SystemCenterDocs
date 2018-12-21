@@ -1,5 +1,6 @@
 {
   "build": {
+    "markdownEngine": "DFM",
     "content": [
       {
         "files": [
@@ -275,7 +276,6 @@
       "vmm": {
         "dest": "vmm",
         "moniker_range": ">= sc-vmm-2016 <= sc-vmm-1807"
-
       }
     }
   }

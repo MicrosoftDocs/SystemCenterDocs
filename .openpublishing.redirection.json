@@ -830,6 +830,18 @@
   "redirect_url" : "/system-center/scom/what-is-new-1801"
 },
 {
+     "source_path" : "SystemCenterDocs/scom/what-is-new.md",
+     "redirect_url" : "/system-center/scom/whats-new-in-om"
+},
+{
+     "source_path" : "SystemCenterDocs/scom/what-is-new-1801.md",
+     "redirect_url" : "/system-center/scom/whats-new-in-om"
+},
+{
+     "source_path" : "SystemCenterDocs/scom/what-is-new-1807.md",
+     "redirect_url" : "/system-center/scom/whats-new-in-om"
+},
+{
      "source_path" : "SystemCenterDocs/orchestrator/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md",
      "redirect_url" : "/system-center/orchestrator/automate-runbooks"
 },
