@@ -6,7 +6,6 @@ author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 12/21/2018
-ms.custom: na
 ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
