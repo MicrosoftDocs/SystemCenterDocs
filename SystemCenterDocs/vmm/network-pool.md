@@ -31,7 +31,7 @@ When you set up the logical network you'll need to configure a static IP address
 3. In **Network Site** select to use an existing site and select the IP subnet, or create a new site.
 
 	- For an existing site select the site and IP subnet from which to create the pool.
-	- For a new stie specify the site name, IP subnet to assign to the site, and VLAN information if relevant. Select the host groups that can access this site and the logical network.
+	- For a new site specify the site name, IP subnet to assign to the site, and VLAN information if relevant. Select the host groups that can access this site and the logical network.
 4. If you're using network virtualization you can use the pool to support multicasting or broadcasting. To do this click **Create a multicast IP address pool** and select the IP subnet you want to use. To use multicasting or broadcasting note that:
 
 	- The logical network must have network virtualization enabled.
