@@ -306,6 +306,19 @@
      "redirect_url" : "/system-center/scom/what-is-new"
 },
 {
+     "source_path" : "SystemCenterDocs/scom/release-notes-1801.md",
+     "redirect_url" : "/system-center/scom/release-notes-om"
+},
+{
+     "source_path" : "SystemCenterDocs/scom/release-notes-1807.md",
+     "redirect_url" : "/system-center/scom/release-notes-om"
+},
+{
+     "source_path" : "SystemCenterDocs/scom/get-started-release-notes.md",
+     "redirect_url" : "/system-center/scom/release-notes-om
+},
+
+{
      "source_path" : "SystemCenterDocs/om/manage/accessing-unix-and-linux-computers-in-operations-manager.md",
      "redirect_url" : "/system-center/scom/manage-security-authenticate-crossplat"
 },
