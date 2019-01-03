@@ -1,6 +1,6 @@
 ---
 ms.assetid: 50504e6d-945f-43e6-8faf-33fe870c623d
-title: Supported UNIX and Linux Operating System Versions
+title: Supported UNIX and Linux operating system versions
 description: This article lists the supported versions of Linux and UNIX operating system for System Center Operations Manager version 1807.
 author: JYOTHIRMAISURI
 ms.author: magoedte
@@ -20,7 +20,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## IBM AIX 6.1  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |OS version|Version of operating system|6100-07-06-1241|  
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|  
@@ -29,7 +29,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## IBM AIX 7 (Power)  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |OS version|Version of operating system|7100-01-06-1241|  
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|  
@@ -37,7 +37,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## HP-UX 11i v3 IA64  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |HPUX11i-OE|HP-UX Foundation Operating Environment|B.11.31.1109|  
 |OS-Core.MinimumRuntime.CORE-SHLIBS|Specific IA development libraries|B.11.31|  
@@ -47,7 +47,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 6  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc|C Standard Libraries|2.12-1.7|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0-4|  
@@ -55,7 +55,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 7
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc|C Standard Libraries|2.17|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
@@ -63,7 +63,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Red Hat Enterprise Linux Server 7 (Power)  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc|C Standard Libraries|2.17|  
 |Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|  
@@ -71,7 +71,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Solaris 10 SPARC  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |SUNWlibC |Sun Workshop Compilers Bundled libC|5.10, REV=2004.12.22|
 |SUNWlibms|Math & Microtasking Libraries (Usr)|5.10, REV=2004.11.23|
@@ -84,7 +84,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Solaris 10 x86  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.10, REV=2004.12.20|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.12.18|
@@ -96,7 +96,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Solaris 11 SPARC  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
@@ -108,7 +108,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ## Solaris 11 x86  
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
 |SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
@@ -123,14 +123,14 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 ## SUSE Linux Enterprise Server 11   
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc-2.9-13.2|C Standard shared library|2.9-13.2|  
 |PAM|Pluggable Authentication Modules|pam-1.0.2-20.1|  
 
 ## SUSE Linux Enterprise Server 12   
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc-2.19-17.72|C Standard shared library|2.19-17.72|  
 |PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|  
@@ -140,7 +140,7 @@ The Operations Manager agent requires Solaris UTF-8 code set conversion support 
 
 Debian 8, 9 and Ubuntu 14.04, 16.04, 18.04 are supported   
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |libc6|C Standard shared library|2.24-11|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|  
@@ -150,7 +150,7 @@ Debian 8, 9 and Ubuntu 14.04, 16.04, 18.04 are supported
 
 CentOS 6 and 7, Oracle Linux 6 and 7
 
-|Required Package|Description|Minimum Version|  
+|Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc|C Standard shared library|2.12-1|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|  
