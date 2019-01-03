@@ -1,21 +1,21 @@
 ---
 ms.assetid: c46cb9b2-e66e-4f06-9020-2157b063df3a
-title: What's New in Operations Manager
-description: This article describes what's new in System Center Operations Manager compared to previous versions.
+title: include file
+description: include file to describe the new features in operations manager 2016
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreeman
 ms.date: 11/09/2017
 ms.custom: na
-ms.prod: system-center
+ms.prod: system-center-2016
 monikerRange: 'sc-om-2016'
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: include
 ---
 
-# What's New in Operations Manager
+## What's New in OM 2016
 
-The content in this section describes what's new and changed in System Center 2016 - Operations Manager.
+The content in the following sections describe new features in System Center 2016 - Operations Manager.
 
 ## Improve desktop console performance
 
@@ -48,7 +48,7 @@ With the release of System Center 2016 - Operations Manager, Operators can acces
 
 ## Management Pack Updates and Recommendations
 
-Operations Manager can assess Microsoft and partner management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations, see [Management Pack Assessment](manage-mp-mpassessment.md).
+Operations Manager can assess Microsoft and partner management packs.  Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (that is, workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack. For more information about Updates and Recommendations, see [Management Pack Assessment](../scom/manage-mp-mpassessment.md).
 
 
 ## Alert data management
@@ -91,7 +91,7 @@ System Center 2016 – Operations Manager includes support to monitor Nano Serve
 
 -  Manage updating the Nano-compatible agent directly from the console as you do today with the Windows agent, or manually on Nano Server using a PowerShell script included in this release
 
-For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](manage-deploy-windows-agent-nano.md).
+For specific instructions on how to configure System Center 2016 - Operations Manager to monitor Nano Server, see [Monitoring Nano Server](../scom/manage-deploy-windows-agent-nano.md).
 
 
 ## Scalability improvement with Unix/Linux agent monitoring
