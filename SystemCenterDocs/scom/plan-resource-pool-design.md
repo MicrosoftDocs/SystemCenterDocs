@@ -22,7 +22,7 @@ Resource pools ensure the continuity of monitoring by providing multiple *member
 
 Resource pools apply a logic similar to clustering “majority node set”, where (< number of nodes as members of the pool > /2) + 1.  At a minimum, there must be three members in the  pool to maintain quorum, which must be more than 50% of the quorum voting members in a pool to maintain availability of the pool.  If you only have two members of the pool, and one is unavailable, you have lost quorum.  
 
-For every resource pool created in the Operations console, the Operations Manager database, which is referred to as the *default observer*, is always given a vote, even if you have an even number of members in the pool in order to allow quorum to be reached.  This also applies to the three resource pools created by default when you first create the management group, which is discussed later in this topic.  For all resource pools created using the PowerShell cmdlet **NewSCOM-ResourcePool**, it is set to disabled by default. Including the Operations Manager database as the *default observer* reduces complexity of your management group by only requiring you to deploy two management servers at a minimum to maintain high availability of your resource pools.   
+For every resource pool created in the Operations console, the Operations Manager database, which is referred to as the *default observer*, is always given a vote, even if you have an even number of members in the pool in order to allow quorum to be reached.  This also applies to the three resource pools created by default when you first create the management group, which is discussed later in this topic.  For all resource pools created using the PowerShell cmdlet **NewSCOM-ResourcePool**, it is set to disabled by default. Including the Operations Manager database as the *default observer* reduces complexity of your management group by only requiring you to deploy two management servers at a minimum to maintain high availability of your resource pools.   
 
 Another role supporting a resource pool are *Observers*.  This is a management server or a Gateway server that does not participate in loading workflows for the pool; however they participate in quorum decisions.  This is never used under normal circumstances, and therefore should not be considered.  
 
@@ -69,7 +69,7 @@ The following examples demonstrate the concept of resource pool availability bas
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are five voting members - four management servers and the *default observer*. 
 * By default you can only have two management server unavailable in order to maintain  quorum.  If three management servers are down, you have less than 50% of voting members and the resource pool no longer functions to manage the monitoring workloads.    
-* The *default observer* in this scenario provides significant value, because it increases the number of management servers that can be down.  Without the *default observer*, you would only have four quorum members, which only allows for one member to be unavailable.
+* The *default observer* in this scenario provides significant value, because it increases the number of management servers that can be down. Without the *default observer*, you would only have four quorum members, which only allows for one member to be unavailable.
 
 #### Five management servers
 
