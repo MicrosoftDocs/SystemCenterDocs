@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 7/17/2018
 title: What can DPM back up
 ms.technology: data-protection-manager
@@ -14,7 +14,7 @@ ms.author: raynew
 
 # What can DPM back up?
 
-Use the System Center Data Protection Manager (DPM) support matrix to review the workloads that can be protected. In the following table, the **Workload** column is the workload type or technology. The **Version** column lists the supported workload versions. Client computers and Server workloads are broken out by operating system **Version** because the **DPM installation** and **Protection and recovery details** vary. **DPM installation** lists where the DPM software can be installed. **Protection and recovery** lists details about the workload, such as supported storage container, or supported deployment. Use the matrix for DPM 2016 and Semi-Annual Channel releases: 1807 and 1807.
+Use the System Center Data Protection Manager (DPM) support matrix to review the workloads that can be protected. In the following table, the **Workload** column is the workload type or technology. The **Version** column lists the supported workload versions. Client computers and Server workloads are broken out by operating system **Version** because the **DPM installation** and **Protection and recovery details** vary. **DPM installation** lists where the DPM software can be installed. **Protection and recovery** lists details about the workload, such as supported storage container, or supported deployment. Use the matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807.
 
 ## Protection support matrix
 
