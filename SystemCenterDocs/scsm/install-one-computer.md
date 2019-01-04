@@ -184,7 +184,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the data warehouse installation  
 
-1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server **, and then click **SQL&nbsp;Server Management Studio**.  
+1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server **, and then click **SQL&nbsp;Server Management Studio**.
 
 2.  In the **Connect to Server** dialog box, complete these steps:  
 
