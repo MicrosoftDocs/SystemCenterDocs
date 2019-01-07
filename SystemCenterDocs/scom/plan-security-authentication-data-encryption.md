@@ -129,13 +129,13 @@ Default: Windows Integrated Authentication
 
 1. Data Access Service and Config Service Account (defined during setup of Operations Manager)
  - Run As Profile: Reporting SDK SQL Server Authentication Account
- - Run As Account: Reporting SDK SQL Server Authentication Account
- - Account credentials: Special account created by Operations Manager (do not change)
+ - Run As Account: Reporting SDK SQL Server Authentication Account
+ - Account credentials: Special account created by Operations Manager (do not change)
 
 2. Optional: SQL Server Authentication
  - Run As Profile: Data Warehouse SQL Server Authentication Account
  - Run As Account: A Run As Account you specified during setup.
- - Account credentials: An account you specified during setup.
+ - Account credentials: An account you specified during setup.
 
 ## Operations console and Reporting server
 
