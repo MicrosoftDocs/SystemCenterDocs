@@ -18,7 +18,7 @@ This article provides information about how to encrypt SMA Web Service to SQL co
 Use the following procedure:
 
 1.	Open an elevated PowerShell console.
-2.	Navigate to your .NET Framework home directory.  e.g. C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+2.	Navigate to your .NET Framework home directory (for example, C:\Windows\Microsoft.NET\Framework64\v4.0.30319).
 3.	Decrypt the config file section using the following command:
 
     ```powershell
@@ -40,5 +40,5 @@ Use the following procedure:
 
 6.	Restart the SMA App Pool from **Computer Management**> **Service and Applications** > **Internet Information Service(IIS) Manager**.
 
-## Next steps
+### Next steps
 [Manage runbooks](manage-runbooks.md)
