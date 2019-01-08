@@ -24,3 +24,5 @@
 ### [How to scale your SMA installation](scaling-service-management-automation-up-or-down.md)
 ### [Working with Integration Modules](manage-integration-modules.md)
 ### [Manage Global Assets](manage-global-assets.md)
+##  Secure SMA
+### [Encrypt SMA web service connection](encrypt-sql-connection-using-ssl.md)
