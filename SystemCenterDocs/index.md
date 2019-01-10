@@ -1013,7 +1013,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-overview">
+                                <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1023,7 +1023,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>OMS documentation</h3>
+                                                    <h3>Azure Monitor</h3>
                                                 </div>
                                             </div>
                                         </div>
