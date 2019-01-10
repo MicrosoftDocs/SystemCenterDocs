@@ -1,24 +1,20 @@
 ---
-description: This article explains how to upgrade your DPM installation to version 1801.
+description: This article explains how to upgrade your DPM installation.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 7/19/2018
 title: Upgrade your System Center DPM
 ms.technology: data-protection-manager
-ms.assetid: 
+ms.assetid:
 ---
 
 # Upgrade your DPM installation
 
-This article provides the information for upgrading DPM to one of the following versions:
-
-- 1807, you can only update to 1807 from 1801
-- 1801
-- 2016
+This article provides the upgrade information for DPM.
 
 By default, this article displays the information for the DPM 1807 release. To view the information for a different version, use the selector to the left.
 
