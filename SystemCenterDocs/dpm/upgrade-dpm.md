@@ -14,8 +14,6 @@ ms.assetid:
 
 # Upgrade your DPM installation
 
-This article provides the upgrade information for Data Protection Manager (DPM).
-
 ::: moniker range="sc-dpm-1807"
 
 This article provides the upgrade information for System Center 1807 - Data Protection Manager (DPM)
