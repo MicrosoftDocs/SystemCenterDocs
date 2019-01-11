@@ -14,11 +14,11 @@ ms.assetid:
 
 # Upgrade your DPM installation
 
-This article provides the upgrade information for DPM.
-
-By default, this article displays the information for the DPM 1807 release. To view the information for a different version, use the selector to the left.
+This article provides the upgrade information for Data Protection Manager (DPM).
 
 ::: moniker range="sc-dpm-1807"
+
+This article displays the upgrade information for the DPM 1807 release.
 
 [!INCLUDE [upgrade-to-dpm-1807.md](../includes/upgrade-to-dpm-1807.md)]
 
@@ -26,11 +26,15 @@ By default, this article displays the information for the DPM 1807 release. To v
 
 ::: moniker range="sc-dpm-1801"
 
+This article displays the upgrade information for the DPM 1801 release.
+
 [!INCLUDE [upgrade-to-dpm-1801.md](../includes/upgrade-to-dpm-1801.md)]
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2016"
+
+This article displays the upgrade information for the DPM 2016 release.
 
 [!INCLUDE [upgrade-to-dpm-2016.md](../includes/upgrade-to-dpm-2016.md)]
 
