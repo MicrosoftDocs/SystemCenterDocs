@@ -16,7 +16,7 @@ ms.assetid:
 
 ::: moniker range="sc-dpm-1807"
 
-This article provides the upgrade information for System Center 1807 - Data Protection Manager (DPM)
+This article provides the upgrade information for System Center 1807 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-1807.md](../includes/upgrade-to-dpm-1807.md)]
 
@@ -24,7 +24,7 @@ This article provides the upgrade information for System Center 1807 - Data Prot
 
 ::: moniker range="sc-dpm-1801"
 
-This article provides the upgrade information for System Center 1801 - Data Protection Manager (DPM)
+This article provides the upgrade information for System Center 1801 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-1801.md](../includes/upgrade-to-dpm-1801.md)]
 
@@ -32,7 +32,7 @@ This article provides the upgrade information for System Center 1801 - Data Prot
 
 ::: moniker range="sc-dpm-2016"
 
-This article provides the upgrade information for System Center 2016 - Data Protection Manager (DPM)
+This article provides the upgrade information for System Center 2016 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-2016.md](../includes/upgrade-to-dpm-2016.md)]
 
