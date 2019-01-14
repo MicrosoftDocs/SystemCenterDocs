@@ -37,3 +37,6 @@ This article provides the upgrade information for System Center 2016 - Data Prot
 [!INCLUDE [upgrade-to-dpm-2016.md](../includes/upgrade-to-dpm-2016.md)]
 
 ::: moniker-end
+
+## Next steps
+Learn how to [add storage](add-storage.md).
