@@ -12,7 +12,7 @@ ms.technology:  system-center-2016
 ms.assetid:
 ---
 
-# Upgrade to DPM 1801
+## Upgrade to DPM 1801
 
 You can install System Center Data Protection Manager (DPM) version 1801 on Windows Server 2012 R2, or on Windows Server 2016. DPM 1801 is the first release in the System Center Semi-Annual Channel (SAC). You can upgrade to DPM 1801 from either DPM 2012 R2 Update Rollup 14 (UR14), or from DPM 2016 Update Rollup 4 (UR4). Before you upgrade or install DPM 2016, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
@@ -51,10 +51,10 @@ The following scenarios exist when upgrading DPM 2012 R2 or DPM 2016 to DPM 1801
 ### Preparing for a database migration
 
 If you want to use a new SQL server to migrate the DPM database, before you upgrade DPM, be sure both SQL Servers have the same:
-- SQL Server requirements, 
-- setup configuration, 
-- firewall rules, 
-- and DPM Support files (sqlprep).
+- SQL Server requirements
+- Setup configuration
+- Firewall rules
+- DPM Support files (sqlprep)
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
