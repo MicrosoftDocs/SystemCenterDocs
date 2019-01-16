@@ -18,7 +18,7 @@ description: System Center documentation for versions 2016 and above. The docume
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/en-us/media/common/i_free-trial.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_free-trial.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -36,7 +36,7 @@ description: System Center documentation for versions 2016 and above. The docume
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/en-us/media/common/i_video.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -54,7 +54,7 @@ description: System Center documentation for versions 2016 and above. The docume
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg" alt="" />
+                                        <img src="https://docs.microsoft.com/media/logos/logo_pluralsight.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -81,7 +81,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-configuration.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-configuration.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -100,7 +100,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-data-protection.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-data-protection.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -119,7 +119,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-operations-manager.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-operations-manager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -138,7 +138,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-orchestrator.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-orchestrator.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -157,7 +157,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-service-manager.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-service-manager.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -176,7 +176,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-service-management.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-service-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -195,7 +195,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-virtual-machine.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-virtual-machine.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -214,7 +214,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/systemcenter/system-center-service-provider-foundation.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-service-provider-foundation.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -247,7 +247,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Provision infrastructure</h3>
-                                                <a class="barLink" href="https://technet.microsoft.com/en-us/system-center-docs/vmm/get-started/get-started-overview">Get started with Virtual Machine Manager</a>
+                                                <a class="barLink" href="https://technet.microsoft.com/system-center-docs/vmm/get-started/get-started-overview">Get started with Virtual Machine Manager</a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +259,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Automate operations</h3>
-                                                <a class="barLink" href="https://technet.microsoft.com/en-us/system-center-docs/orch/get-started/get-started-with-orchestrator">Get started with Orchestrator</a>
+                                                <a class="barLink" href="https://technet.microsoft.com/system-center-docs/orch/get-started/get-started-with-orchestrator">Get started with Orchestrator</a>
                                             </div>
                                         </div>
                                     </div>
@@ -271,7 +271,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Automate infrastructure and workloads</h3>
-                                                <a class="barLink" href="https://technet.microsoft.com/en-us/system-center-docs/om/get-started/getting-started-with-system-center-operations-manager">Get started with Operations Manager</a>
+                                                <a class="barLink" href="https://technet.microsoft.com/system-center-docs/om/get-started/getting-started-with-system-center-operations-manager">Get started with Operations Manager</a>
                                             </div>
                                         </div>
                                     </div>
@@ -284,8 +284,8 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="cardText">
                                                 <h3>Command-line automation</h3>
                                                 <div class="ico48Link">
-                                                    <a href="https://technet.microsoft.com/en-us/system-center-docs/sma/manage/windows-powershell-workflow-concepts">
-                                                        <img src="https://docs.microsoft.com/en-us/media/logos/logo_powershell.svg" alt="">
+                                                    <a href="https://technet.microsoft.com/system-center-docs/sma/manage/windows-powershell-workflow-concepts">
+                                                        <img src="https://docs.microsoft.com/media/logos/logo_powershell.svg" alt="">
                                                         <span>PowerShell</span>
                                                     </a>
                                                 </div>
@@ -303,13 +303,13 @@ description: System Center documentation for versions 2016 and above. The docume
                         <a href="#DPMPanel">Data Protection Manager</a>
                         <ul id="DPMPanel" class="cardsFTitle">
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/dpm/data-protection-manager">
+                                <a href="https://technet.microsoft.com/system-center-docs/dpm/data-protection-manager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -327,7 +327,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -339,13 +339,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=dpm">
+                                <a href="https://social.technet.microsoft.com/Forums/home?category=dpm">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_support.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_support.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -362,13 +362,13 @@ description: System Center documentation for versions 2016 and above. The docume
                         <a href="#OMPanel">Operations Manager</a>
                         <ul id="OMPanel" class="cardsFTitle">
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/om/welcome-to-operations-manager">
+                                <a href="https://technet.microsoft.com/system-center-docs/om/welcome-to-operations-manager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -386,7 +386,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -398,13 +398,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenteroperationsmanager">
+                                <a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenteroperationsmanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_support.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_support.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -421,13 +421,13 @@ description: System Center documentation for versions 2016 and above. The docume
                         <a href="#OrchPanel">Orchestrator</a>
                         <ul id="OrchPanel" class="cardsFTitle">
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/orch/orchestrator">
+                                <a href="https://technet.microsoft.com/system-center-docs/orch/orchestrator">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -445,7 +445,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -457,13 +457,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenterorchestrator">
+                                <a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenterorchestrator">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_support.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_support.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -480,13 +480,13 @@ description: System Center documentation for versions 2016 and above. The docume
                         <a href="#SMPanel">Service Manager</a>
                         <ul id="SMPanel" class="cardsFTitle">
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/sm/service-manager">
+                                <a href="https://technet.microsoft.com/system-center-docs/sm/service-manager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -504,7 +504,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -516,13 +516,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://social.technet.microsoft.com/Forums/ie/en-US/home?category=servicemanager">
+                                <a href="https://social.technet.microsoft.com/Forums/ie/home?category=servicemanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_support.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_support.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -539,13 +539,13 @@ description: System Center documentation for versions 2016 and above. The docume
                         <a href="#SMAPanel">Service Management Automation</a>
                         <ul id="SMAPanel" class="cardsFTitle">
                             <li>
-                                <a href="https://technet.microsoft.com/en-us/system-center-docs/sma/get-started/overview-of-service-management-automation">
+                                <a href="https://technet.microsoft.com/system-center-docs/sma/get-started/overview-of-service-management-automation">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -563,7 +563,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -586,7 +586,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -604,7 +604,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -616,13 +616,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://social.technet.microsoft.com/Forums/systemcenter/en-us/home?category=virtualmachinemanager">
+                                <a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_support.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_support.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -644,7 +644,7 @@ description: System Center documentation for versions 2016 and above. The docume
                         <a href="#SDKs-all">all</a>
                         <ul id="SDKs-all" class="cardsZ">
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/dataprotectionmanager">
+                                <a href="https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/dataprotectionmanager/vlatest/dataprotectionmanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -658,7 +658,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/rest/operationsmanager">
+                                <a href="https://docs.microsoft.com/rest/operationsmanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -672,7 +672,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>                            
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/jj130093.aspx">
+                                <a href="https://msdn.microsoft.com/library/jj130093.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -686,7 +686,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/hh329086.aspx">
+                                <a href="https://msdn.microsoft.com/library/hh329086.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -700,7 +700,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/operationsmanager/vlatest/operationsmanager">
+                                <a href="https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/operationsmanager/vlatest/operationsmanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -714,7 +714,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/hh855853.aspx">
+                                <a href="https://msdn.microsoft.com/library/hh855853.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -728,7 +728,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/hh921667.aspx">
+                                <a href="https://msdn.microsoft.com/library/hh921667.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -742,7 +742,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/dn688344.aspx">
+                                <a href="https://msdn.microsoft.com/library/dn688344.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -756,7 +756,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/servicemanagementautomation/vlatest/microsoft.systemcenter.servicemanagementautomation">
+                                <a href="https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/servicemanagementautomation/vlatest/microsoft.systemcenter.servicemanagementautomation">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -770,7 +770,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/hh965050.aspx">
+                                <a href="https://msdn.microsoft.com/library/hh965050.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -784,7 +784,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                              <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/servicemanager/vlatest/servicemanager">
+                                <a href="https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/servicemanager/vlatest/servicemanager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -798,7 +798,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/jj643273.aspx">
+                                <a href="https://msdn.microsoft.com/library/jj643273.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -812,7 +812,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/serviceproviderfoundation/vlatest/spfadmin">
+                                <a href="https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/serviceproviderfoundation/vlatest/spfadmin">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -826,7 +826,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/jj860311.aspx">
+                                <a href="https://msdn.microsoft.com/library/jj860311.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -840,7 +840,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/VirtualMachineManager">
+                                <a href="https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/VirtualMachineManager/vlatest/VirtualMachineManager">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -869,7 +869,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
@@ -892,7 +892,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
@@ -915,7 +915,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
@@ -938,7 +938,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -960,16 +960,16 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_feedback.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
                                                 <h3>System Center Forums</h3>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=dpm">DPM Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenteroperationsmanager">SCOM Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-US/home?category=systemcenterorchestrator">Orchestrator Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/ie/en-US/home?category=servicemanager">SM Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/en-us/home?category=virtualmachinemanager">VMM Forum</a></p>
+                                                <p><a href="https://social.technet.microsoft.com/Forums/home?category=dpm">DPM Forum</a></p>
+                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenteroperationsmanager">SCOM Forum</a></p>
+                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenterorchestrator">Orchestrator Forum</a></p>
+                                                <p><a href="https://social.technet.microsoft.com/Forums/ie/home?category=servicemanager">SM Forum</a></p>
+                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager">VMM Forum</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -981,7 +981,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="https://docs.microsoft.com/en-us/media/common/i_blog.svg" alt="" />
+                                                    <img src="https://docs.microsoft.com/media/common/i_blog.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -1001,7 +1001,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/common/i_virtual-training.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_virtual-training.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1013,13 +1013,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/overview">
+                                <a href="https://docs.microsoft.com/azure/azure-monitor/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/common/i_reference.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -1037,7 +1037,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/common/i_video.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
