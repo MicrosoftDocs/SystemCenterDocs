@@ -51,10 +51,10 @@ The following scenarios exist when upgrading DPM 2012 R2 or DPM 2016 to DPM 1801
 ### Preparing for a database migration
 
 If you want to use a new SQL server to migrate the DPM database, before you upgrade DPM, be sure both SQL Servers have the same:
-- SQL Server requirements,
-- setup configuration,
-- firewall rules,
-- and DPM Support files (sqlprep).
+- SQL Server requirements
+- Setup configuration
+- Firewall rules
+- DPM Support files (sqlprep)
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
