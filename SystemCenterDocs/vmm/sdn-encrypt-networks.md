@@ -9,7 +9,7 @@ ms.date: 02/05/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: '>sc-vmm-2016'
+monikerRange: '> sc-vmm-2016'
 ---
 
 # Configure encrypted networks in SDN using VMM
