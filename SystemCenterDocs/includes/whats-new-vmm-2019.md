@@ -48,7 +48,7 @@ In our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs,
 
 ### Enhanced console session in VMM
 
-Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the current console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
+Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
 
 VMM 2019 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](../vmm/enhanced-console-session.md).
 
@@ -72,7 +72,7 @@ In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is 
 With VMM 2019, you can now  choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. [Learn more](https://technet.microsoft.com/library/cc956004.aspx).
 
 ### Support for storage health monitoring
-Storage health monitoring helps you to monitor the health and operational status of storage pool, LUNs and physical disks in the VMM fabric.
+Storage health monitoring helps you to monitor the health and operational status of storage pool, LUNs, and physical disks in the VMM fabric.
 
 VMM 2019 supports the storage health monitoring feature. You can monitor the storage health in the **Fabric** page of VMM console. Learn more.
 
@@ -83,10 +83,10 @@ VMM 2019 supports the storage health monitoring feature. You can monitor the sto
 
 With the advent of the software defined network (SDN), in Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
 
-With the introduction of the SDN, VMs which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
+With the introduction of the SDN, VMs, which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
 
 VMM 2019 release also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 2019 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
-. [Learn more](../vmm/sdn-guest-clusters.md).
+[Learn more](../vmm/sdn-guest-clusters.md).
 
 ### Configuration of SLB VIPs through VMM service templates
 SDN in Windows 2016 can use Software Load Balancing (SLB) to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of  SLB Virtual IPs (VIPs) using power shell.
@@ -156,6 +156,6 @@ To address this issue, VMM 2019 supports a new role called **Virtual Machine Adm
 
 ### Support for Group Managed Service Account as VMM service account
 
-Group Managed Service Account (gMSA) helps improve the security posture and provides convenience through automatic password management, simplified service principle name (SPN) management and the ability to delegate the management to other administrators.
+Group Managed Service Account (gMSA) helps improve the security posture and provides convenience through automatic password management, simplified service principle name (SPN) management, and the ability to delegate the management to other administrators.
 
 VMM 2019 supports the use of gMSA for **Management server service account**. Learn more.
