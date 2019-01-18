@@ -14,6 +14,14 @@ ms.technology: virtual-machine-manager
 
 # What's new in System Center Virtual Machine Manager
 
+::: moniker range="sc-vmm-2019"
+
+This article details the new features supported in System Center 2019 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [whats-new-vmm-2019.md](../includes/whats-new-vmm-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-1807"
 
 This article details the new features supported in System Center 1807 - Virtual Machine Manager (VMM).
