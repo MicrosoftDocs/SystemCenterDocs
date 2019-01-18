@@ -5,7 +5,7 @@ description: include file to detail the new features in virtual machine manager 
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  01/11/2019
+ms.date:  01/18/2019
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -71,6 +71,11 @@ In earlier versions of VMM, a new VHD on a virtual machine (VM), by default, is 
 
 With VMM 2019, you can now  choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. [Learn more](https://technet.microsoft.com/library/cc956004.aspx).
 
+### support for Storage Health Monitoring
+Storage health monitoring helps you to monitor the health and operational status of Storage pool, LUNs and physical disks in the VMM fabric.
+
+Storage health status can be monitored in the **Fabric** page of VMM console. Learn more.
+
 
 ## Networking
 
@@ -109,6 +114,13 @@ VMM 2019 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitat
 
 VMM 2019 supports update of an S2D host or a cluster. You can update individual S2D hosts or clusters against the baselines configured in windows server update services (WSUS). [Learn more](../vmm/hyper-v-update.md).
 
+### support for configuring  Layer 3 forwarding gateway using console
+
+
+L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud. Earlier versions of supported the Layer 3 gateway configuration using PowerShell.
+
+You can now configure Layer 3 forwarding gateway using the VMM console. Learn more.
+
 ## Security
 
 ### Support to Linux shielded VM
@@ -136,3 +148,15 @@ VMM 2019 supports management of Azure Resource Manager based VMs, Azure Active D
 
 ### Support for SQL 2017
 VMM 2019 supports SQL 2017. You can upgrade SQL 2016 to 2017.
+
+### Support for New RBAC Role – VM Administrator
+In a scenario where enterprises want to create a user role for performing trouble shooting,  it is necessary that the user has access to all the VMs so the user can make changes on VM to resolve the issue. There is also a need for the user to have access to the fabric so as to identify the root cause of for the issue. However, for security reasons, this user should not be given the privileges to make any changes on the fabric (add storage, add hosts etc).
+
+The current RBAC in VMM does not have a role defined for this persona and the existing roles of Delegated Admin and Fabric admin have too little or more than necessary permissions to perform just troubleshooting.
+To address this issue, VMM 2019 supports a new role called **Virtual Machine Administrator**. The user of this role has Read and Write access to all VMs but read-only access to the fabric. Learn more.
+
+### Support for Group Managed Service Account as VMM service account
+
+Group Managed Service account (gMSA) helps improve the security posture and provides convenience through automatic password management, simplified service principle name (SPN) management and the ability to delegate the management to other administrators.
+
+VMM now 2019 supports the use of gMSA for **Management server service account**. Learn more.
