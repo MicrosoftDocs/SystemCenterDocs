@@ -5,7 +5,7 @@ description: include file to detail the new features in virtual machine manager 
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  01/18/2019
+ms.date:  01/19/2019
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
