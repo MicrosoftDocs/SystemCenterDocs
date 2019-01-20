@@ -45,21 +45,16 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
-**SQL version support for DPM 1801 and later**
+**SQL version support**
 
-**SQL version** | **Supported**
+**DPM version** | **SQL Supported**
 --- | ---
-SQL Server 2008 | N
-SQL Server 2012 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202012%20service%20pack)| Y
-SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack) | Y
-SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
+DPM 2016 | SQL Server 2014 SP2;  SQL Server 2012 SP4.
+DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 1801 and later | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017)
 
-**SQL server version support for DPM 2016**
 
-- **DPM 2016 with Update Rollup 2 or later**: SQL Server 2016 with SP1 or later. <br/>
-- **DPM 2016**: SQL Server 2014 SP2;  SQL Server 2012 SP4.
-
-**Other requirements as supported by DPM 2016 through 1807**:
+**SQL Server requirements**
 
 |Requirement| Details  |
 |-----------|----------|
