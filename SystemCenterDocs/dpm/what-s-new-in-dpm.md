@@ -38,16 +38,6 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ::: moniker-end
 
-::: moniker range="sc-dpm-1807"
-
-## What's new in DPM 1807
-
-DPM 1807 provides a number of bug fixes to improve the performance.
-
-To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
-
-::: moniker-end
-
 ::: moniker range="sc-dpm-2019"
 
 ## What's new in DPM 2019
@@ -58,7 +48,7 @@ The following sections provide information about the new features and feature up
 
 ::: moniker range="sc-dpm-2019"
 
-## VMware VM' back up and restore support.
+## VMware VMs' back up and restore support
 
  supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs), and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
 
@@ -97,6 +87,16 @@ DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 
 ## SQL 2017 support as DPM database
 DPM 2019 uses SQL 2017 as its database. Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM. The SQL Server version should be Standard or Enterprise 64-bit.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-1807"
+
+## What's new in DPM 1807
+
+DPM 1807 provides a number of bug fixes to improve the performance.
+
+To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
 
 ::: moniker-end
 
