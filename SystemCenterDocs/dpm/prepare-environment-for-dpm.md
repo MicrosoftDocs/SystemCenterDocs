@@ -47,7 +47,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **SQL version support**
 
-**DPM version** | **SQL Supported**
+**DPM version** | **SQL version **
 --- | ---
 DPM 2016 | SQL Server 2014 SP2;  SQL Server 2012 SP4.
 DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
