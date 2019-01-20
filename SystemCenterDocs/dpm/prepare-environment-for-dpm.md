@@ -45,7 +45,7 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
-**SQL version support**
+**SQL Server - supported versions**
 
 **DPM version** | **SQL version**
 --- | ---
