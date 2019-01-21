@@ -22,11 +22,11 @@ Resource pools ensure the continuity of monitoring by providing multiple *member
 
 Resource pools apply a logic similar to clustering “majority node set”, where (< number of nodes as members of the pool > /2) + 1.  At a minimum, there must be three members in the  pool to maintain quorum, which must be more than 50% of the quorum voting members in a pool to maintain availability of the pool.  If you only have two members of the pool, and one is unavailable, you have lost quorum.  
 
-For every resource pool created in the Operations console, the Operations Manager database, which is referred to as the *default observer*, is always given a vote, even if you have an even number of members in the pool in order to allow quorum to be reached.  This also applies to the three resource pools created by default when you first create the management group, which is discussed later in this topic.  For all resource pools created using the PowerShell cmdlet **NewSCOM-ResourcePool**, it is set to disabled by default. Including the Operations Manager database as the *default observer* reduces complexity of your management group by only requiring you to deploy two management servers at a minimum to maintain high availability of your resource pools.   
+For every resource pool created in the Operations console, the Operations Manager database, which is referred to as the *default observer*, is always given a vote, even if you have an even number of members in the pool to allow quorum to be reached.  This also applies to the three resource pools created by default when you first create the management group, which is discussed later in this topic.  For all resource pools created using the PowerShell cmdlet **NewSCOM-ResourcePool**, it's set to disabled by default. Including the Operations Manager database as the *default observer* reduces complexity of your management group by only requiring you to deploy two management servers at a minimum to maintain high availability of your resource pools.   
 
-Another role supporting a resource pool are *Observers*.  This is a management server or a Gateway server that does not participate in loading workflows for the pool; however they participate in quorum decisions.  This is never used under normal circumstances, and therefore should not be considered.  
+Another role supporting a resource pool are *Observers*.  This is a management server or a Gateway server that doesn't participate in loading workflows for the pool; however they participate in quorum decisions.  This is never used under normal circumstances, and therefore shouldn't be considered.  
 
-There are two types of membership, automatic and manual.  When you create a resource pool, it's membership is set to manual and cannot be reconfigured to automatic.  When a System Center 2016 – Operations Manager management group is created, three resource pools are created by default with automatic membership.  The following table describes these three resource pools.
+There are two types of membership, automatic and manual.  When you create a resource pool, its membership is set to manual and can't be reconfigured to automatic.  When a System Center 2016 – Operations Manager management group is created, three resource pools are created by default with automatic membership.  The following table describes these three resource pools.
 
 | Resource Pool Name | Description 
 |----------|---------- 
@@ -34,12 +34,12 @@ There are two types of membership, automatic and manual.  When you create a reso
 | Notifications Resource Pool | The Alert Subscription Service workflows are targeted to this Resource Pool to support alert notifications.
 | AD Assignment Resource Pool | The AD Integration workflows are targeted to this Resource Pool to support automatic agent assignment to management servers.
 
-Because membership of the All Management Servers Resource Pool is automatic, any management server that is commissioned is automatically made a member of this resource pool.  In certain architectures and design considerations, such as those incorporating geographically dispersed contingency operations, automatic assignment to the All Management Servers Resource Pool may not be desired.  In these situations, it is possible to change the membership assignment from automatic to manual.  As such, management servers must be added to the All Management Servers Resource Pool through manual assignment.
+Because membership of the All Management Servers Resource Pool is automatic, any management server that is commissioned is automatically made a member of this resource pool.  In certain architectures and design considerations, such as those incorporating geographically dispersed contingency operations, automatic assignment to the All Management Servers Resource Pool may not be desired.  In these situations, it's possible to change the membership assignment from automatic to manual.  As such, management servers must be added to the All Management Servers Resource Pool through manual assignment.
 
 > [!NOTE] 
 > The membership of the All Management Servers Resource Pool is read-only.  To change its membership from automatic to manual, see [Modifying Pool Membership](manage-resource-pools-manage.md#modifying-resource-pool-membership).
 
-With the introduction of resource pools it is recommended that all members are connected by a low latency network (less than 10 ms). Resource pools should not be deployed across multiple data centers or in a hybrid-cloud environment like Microsoft Azure.
+With the introduction of resource pools, it is recommended that all members are connected by a low latency network (less than 10 ms). Resource pools should not be deployed across multiple data centers or in a hybrid-cloud environment like Microsoft Azure.
 
 ### Resource Pool availability examples
 
@@ -54,21 +54,21 @@ The following examples demonstrate the concept of resource pool availability bas
 
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are three voting members - two management servers and the *default observer*.
-* If you disable the *default observer*, you will lose high availability for the pool.
+* If you disable the *default observer*, you'll lose high availability for the pool.
 
 #### Three management servers
 
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are four voting members - three management serves and the *default observer*.
-* By default you can only have one management server unavailable in order to maintain quorum.  If two management servers are unavailable, you have exactly 50% of voting members and the resource pool no longer functions to manage the monitoring workloads.  
-- The *default observer* does not increase the number of management servers that can be down, therefore it does not increase pool availability.
+* By default you can only have one management server unavailable to maintain quorum.  If two management servers are unavailable, you have exactly 50% of voting members and the resource pool no longer functions to manage the monitoring workloads.  
+- The *default observer* doesn't increase the number of management servers that can be down, therefore it doesn't increase pool availability.
 - You can consider removing the *default observer* in this scenario.
 
 #### Four management servers
 
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are five voting members - four management servers and the *default observer*. 
-* By default you can only have two management server unavailable in order to maintain  quorum.  If three management servers are down, you have less than 50% of voting members and the resource pool no longer functions to manage the monitoring workloads.    
+* By default you can only have two management server unavailable to maintain  quorum.  If three management servers are down, you have less than 50% of voting members and the resource pool no longer functions to manage the monitoring workloads.    
 * The *default observer* in this scenario provides significant value, because it increases the number of management servers that can be down. Without the *default observer*, you would only have four quorum members, which only allows for one member to be unavailable.
 
 #### Five management servers
@@ -76,10 +76,10 @@ The following examples demonstrate the concept of resource pool availability bas
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are six voting members - five management servers and the *default observer*.  
 * By default you can only have two management servers unavailable to maintain quorum. If three management servers are unavailable, this is exactly 50% of voting members, and the resource pool no longer functions to manage the monitoring workloads.    
-* The *default observer* does not increase the number of management servers that can be down, therefore it does not increase pool availability.
+* The *default observer* doesn't increase the number of management servers that can be down, therefore it doesn't increase pool availability.
 * You can consider removing the *default observer* in this scenario.
 
-Once you reach three or more management servers in a resource pool, where you have an odd number of members in the pool, you can consider removing the *default observer* as a member.  If you reach five management servers, there is the potential for the Operational database to experience significant load which might generate enough latency to affect  resource pool calculations.  
+Once you reach three or more management servers in a resource pool, where you have an odd number of members in the pool, you can consider removing the *default observer* as a member.  If you reach five management servers, there is the potential for the Operational database to experience significant load, which might generate enough latency to affect  resource pool calculations.  
 
 With the way the *default observer* plays a role, each management server in the pool queries its own local SDK service, which allows it to query a table in the Operational database for the *default observer*. If the SDK service or database is under a load, you will experience latency that would otherwise not exist.   
 
@@ -87,7 +87,7 @@ With the way the *default observer* plays a role, each management server in the 
 
 * The *default observer* is enabled by default.
 * There is no high availability because the Gateway server is a single point of failure.
-* The *default observer* should not be used here because Gateway servers do not have a local SDK service and therefore cannot query the Operational database.
+* The *default observer* should not be used here because Gateway servers do not have a local SDK service and therefore can't query the Operational database.
 
 #### Two Gateway servers
 
@@ -99,7 +99,7 @@ With the way the *default observer* plays a role, each management server in the 
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are three voting members - three Gateway servers.
 * By default you can only have one Gateway server unavailable to maintain to maintain quorum. If two Gateway servers are down, this is less than 50% of voting members, and the resource pool no longer functions to manage the monitoring workloads.
-* The *default observer* should not be used here because Gateway servers do not have a local SDK service and therefore cannot query the Operational database.
+* The *default observer* should not be used here because Gateway servers do not have a local SDK service and therefore can't query the Operational database.
 
 ## Monitoring scenarios supporting resource pools
 
