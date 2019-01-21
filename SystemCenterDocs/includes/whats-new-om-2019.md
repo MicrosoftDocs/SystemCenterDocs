@@ -165,7 +165,7 @@ The Web console has been redesigned and is now a fully HTML-based console and no
 Network authentication is enabled with the new web console. [Learn more](../scom/manage-overview-html5-webconsole.md).
 
 ## System Center Visual Studio Authoring Extension (VSAE) support for Visual Studio 2017
-Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. Management Pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.   
+Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio (VS) 2017. Management Pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.   
 
 ## Enhanced SDK Client performance
 We have introduced performance improvements in the Operations console that typically prevent the console from responding while a new management pack is being imported or deleted, or a configuration change to an MP is saved.  
