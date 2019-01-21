@@ -1,6 +1,6 @@
 # Overview
 ## [Orchestrator Overview](learn-about-orchestrator.md)
-## [What's new in Orchestrator 1801](whats-new-1801.md)
+## [What's new in Orchestrator](whats-new-1801.md)
 ## [Automate with runbooks](automate-runbooks.md)
 # Get started
 ## [Install Orchestrator](install.md)

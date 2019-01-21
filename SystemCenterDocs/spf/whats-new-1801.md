@@ -51,4 +51,4 @@ This release of System Center Service Provider Foundation (SPF) contains all the
 ::: moniker-end
 
 ## Next steps
-- [Know the fixed issues](release-notes-20191801.md)
+- [Know the fixed issues](release-notes-1801.md)
