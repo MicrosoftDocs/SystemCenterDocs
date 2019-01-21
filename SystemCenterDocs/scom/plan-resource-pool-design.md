@@ -47,7 +47,7 @@ The following examples demonstrate the concept of resource pool availability bas
 
 #### Single management server
 
-* The *default observer* is enabled by default and provides no benefit since there are only two members and quorum is not reached.
+* The *default observer* is enabled by default and provides no benefit since there are only two members and quorum isn't reached.
 * There is no high availability, because the management server is a single point of failure.
 
 #### Two management servers 
@@ -81,25 +81,25 @@ The following examples demonstrate the concept of resource pool availability bas
 
 Once you reach three or more management servers in a resource pool, where you have an odd number of members in the pool, you can consider removing the *default observer* as a member.  If you reach five management servers, there is the potential for the Operational database to experience significant load, which might generate enough latency to affect  resource pool calculations.  
 
-With the way the *default observer* plays a role, each management server in the pool queries its own local SDK service, which allows it to query a table in the Operational database for the *default observer*. If the SDK service or database is under a load, you will experience latency that would otherwise not exist.   
+With the way the *default observer* plays a role, each management server in the pool queries its own local SDK service, which allows it to query a table in the Operational database for the *default observer*. If the SDK service or database is under a load, you'll  experience latency that would otherwise not exist.   
 
 #### Single Gateway server
 
 * The *default observer* is enabled by default.
 * There is no high availability because the Gateway server is a single point of failure.
-* The *default observer* should not be used here because Gateway servers do not have a local SDK service and therefore can't query the Operational database.
+* The *default observer* should not be used here because Gateway servers don't have a local SDK service and therefore can't query the Operational database.
 
 #### Two Gateway servers
 
 * The *default observer* is enabled by default.
-* There is no high availability because there are only two members of the pool and the *default observer* is not a participant because Gateway servers do not directly communicate with the Operational database.  Three Gateway servers are required to maintain pool quorum.  
+* There is no high availability because there are only two members of the pool and the *default observer* isn't a participant because Gateway servers don't directly communicate with the Operational database.  Three Gateway servers are required to maintain pool quorum.  
 
 #### Three Gateway servers
 
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are three voting members - three Gateway servers.
 * By default you can only have one Gateway server unavailable to maintain to maintain quorum. If two Gateway servers are down, this is less than 50% of voting members, and the resource pool no longer functions to manage the monitoring workloads.
-* The *default observer* should not be used here because Gateway servers do not have a local SDK service and therefore can't query the Operational database.
+* The *default observer* should not be used here because Gateway servers don't have a local SDK service and therefore can't query the Operational database.
 
 ## Monitoring scenarios supporting resource pools
 
@@ -110,11 +110,11 @@ The following workflows are hosted by resource pools in Operations Manager:
 - Monitoring web application URLs
 
 > [!NOTE] 
-> Windows agents do not report to resource pools.
+> Windows agents don't report to resource pools.
 
 Network monitoring in Operations Manager requires its own separate, dedicated resource pool.  This is because network monitoring workflows run on management servers (on the SNMP module) and not on agents.  This places a heavy load on the management servers once you include monitoring of network ports, especially if you select most of the active ports available on the device.  Therefore, for better performance, we recommend using dedicated management servers in dedicated resource pools for network monitoring.  Additionally, the management servers that are members of this pool should be removed from the All Management Servers, Notifications, and AD Assignment pools.  
 
-Linux/UNIX monitoring in Operations Manager can be assigned to a dedicated resource pool if necessary to enable high-availability monitoring and agent management, but is not required.  Operations Manager uses certificates to authenticate access to the computers it is managing. When the Discovery Wizard deploys an agent, it retrieves the certificate from the agent, signs the certificate, deploys the certificate back to the agent, and then restarts the agent.  To support high availability, each management server in the resource pool must have all the root certificates that are used to sign the certificates that are deployed to the agents on the UNIX and Linux computers. Otherwise, if a management server becomes unavailable, the other management servers would not be able to trust the certificates that were signed by the server that failed. 
+Linux/UNIX monitoring in Operations Manager can be assigned to a dedicated resource pool if necessary to enable high-availability monitoring and agent management, but isn't required.  Operations Manager uses certificates to authenticate access to the computers it is managing. When the Discovery Wizard deploys an agent, it retrieves the certificate from the agent, signs the certificate, deploys the certificate back to the agent, and then restarts the agent.  To support high availability, each management server in the resource pool must have all the root certificates that are used to sign the certificates that are deployed to the agents on the UNIX and Linux computers. Otherwise, if a management server becomes unavailable, the other management servers would not be able to trust the certificates that were signed by the server that failed. 
 
 ## Next steps
 
