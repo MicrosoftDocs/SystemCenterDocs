@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 09/25/2018
 title: Data Protection Manager
 ms.technology: data-protection-manager
@@ -39,9 +39,25 @@ In all deployments you’ll need:
 
 DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects. All SQL Server versions should be Standard or Enterprise 64-bit.
 
+>[!NOTE]
+
+> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
+
+> - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
+
+**SQL Server - supported versions**
+
+**DPM version** | **SQL version**
+--- | ---
+DPM 2016 | SQL Server 2014 SP2;  SQL Server 2012 SP4.
+DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 1801 and later | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017)
+
+
+**SQL Server requirements**
+
 |Requirement| Details  |
 |-----------|----------|
-|Version|**DPM 1801 or later**: SQL Server 2017; SQL Server 2016 with SP1 or later (SSMS version 16.5 or earlier). <br/> **DPM 2016 with Update Rollup 2 or later**: SQL Server 2016 with SP1 or later. <br/> **DPM 2016**: SQL Server 2014 SP2;  SQL Server 2012 SP4.
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
 |Required features|Database Engine Services, Reporting Services|
@@ -51,7 +67,6 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 |Installation|Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM.|
 |Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](~/dpm/back-up-sql-server.md).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
-
 
 
 ## DPM server
