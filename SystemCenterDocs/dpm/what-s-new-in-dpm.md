@@ -76,7 +76,7 @@ To achieve the scale and performance claimed by MBS, we recommend using a small 
 With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups.
 With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8.
 
-## Support to central monitroing feature
+## Support to Central Monitoring feature
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
 
 ## DPM disaster recovery management: Back up DPM DB
