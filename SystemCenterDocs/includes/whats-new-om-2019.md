@@ -75,7 +75,7 @@ The following versions of Windows operating system are supported for the Microso
 * **Windows Server 2012 R2** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience))
 * **Windows 10** - Enterprise, Pro
 >[!NOTE]
-Only x64 agent will be shipped
+Only x64 agent will be shipped.
 
 * **File system**: %SYSTEMDRIVE% must be formatted with the NTFS file system
 * **Windows PowerShell version**: Windows PowerShell version 2.0, or Windows PowerShell version 3.0
@@ -86,7 +86,7 @@ Client web browser for HTLM5 web console:
 * Internet Explorer version 11
 * Microsoft Edge version 40 and higher
 * Google Chrome version 67 and higher
-For rest of the requirements which are not changing, please see SCOM 2016 [documentation](https://docs.microsoft.com/en-us/system-center/scom/plan-system-requirements?view=sc-om-2016#web-console)
+For rest of the requirements which are not changing, please see SCOM 2016 [documentation](https://docs.microsoft.com/en-us/system-center/scom/plan-system-requirements?view=sc-om-2016#web-console).
 
 ## SQL Server requirements
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2019 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
@@ -119,7 +119,7 @@ The following improvements are provided in the Web console for version 2019:
 
 * Added the PowerShell widget
 * Includes an effective configuration widget in the Monitoring objects detail page showing the running rules and monitors and override settings applied
-* Network node/network interface drill-down is now available as a tab when you select a network device and drill-down to the Monitoring objects detailed page.  It delivers the same experience as what is available in the Operations console.
+* Network node/network interface drill-down is now available as a tab when you select a network device and drill-down to the Monitoring objects detailed page. It delivers the same experience as what is available in the Operations console.
 * Alert widget enhancement includes an improved layout and presentation of alert details. You can modify the resolution state and drill down to the Monitoring object details page for the alert source.
 * The monitoring tree can be hidden when a dashboard is integrated with SharePoint.
 * The size of the health icon can be changed in the Topology widget.
@@ -160,9 +160,9 @@ The Web console has been redesigned and is now a fully HTML-based console and no
 * Accessible from multiple browsers
 * Enhanced troubleshooting experience with drill-down pages
 * Extensibility with a custom widget using a new [REST API](https://docs.microsoft.com/rest/operationsmanager)
-* Export and share dashboards.
+* Export and share dashboards
 
-Network authentication is enabled with the new web console. [Learn more](../scom/manage-overview-html5-webconsole.md)
+Network authentication is enabled with the new web console. [Learn more](../scom/manage-overview-html5-webconsole.md).
 
 ## System Center Visual Studio Authoring Extension (VSAE) support for Visual Studio 2017
 Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. Management Pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.   
