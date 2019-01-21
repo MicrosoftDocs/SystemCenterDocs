@@ -14,19 +14,19 @@ ms.topic: include
 
 ## What's New in OM 2019
 
-The content in the following sections describe new features in System Center 2019 - Operations Manager.
+The content in the following sections describes new features in System Center 2019 - Operations Manager.
 
 ## Management server failover feature for Linux/UNIX
 Management server failover is a crucial feature to enable high-availability and provide fault tolerance in production environments. SCOM 2019 is enhanced for handling failover and load-balancing scenario for Linux/Unix machines and network devices.
 
-With earlier versions of SCOM, when primary management server goes offline, the failover server closes all monitor-based alerts and re-opens the same alerts. With SCOM 2019, old alerts are not closed while there is only an increment in the monitor-based alert count.
+With earlier versions of SCOM, when primary management server goes offline, the failover server closes all monitor-based alerts and reopens the same alerts. With SCOM 2019, old alerts are not closed while there is only an increment in the monitor-based alert count.
 
 The issue of generating new tickets and new alerts whenever failover or load balancing occurs, is now fixed with SCOM 2019. For example, there are 100 active alerts on MS1, failover happens on MS2, the repeat count of these alerts will be incremented. With this change, no new alerts or tickets are generated during failover.
 
 ## Updates and Recommendation feature for Linux
-**Updates and Recommendations** feature which was available for Windows workload is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP).
+**Updates and Recommendations** feature, which was available for Windows workload is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP).
 
-If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
+If there are Management Packs in the catalog that is designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
 
 A new capability, **Machine Details** allow administrators to see the agent machine name and operating system installed on it.
 
@@ -34,9 +34,9 @@ A new capability, **Machine Details** allow administrators to see the agent mach
 With System Center 2019, there are changes in the Linux agent package bundling. This bundle now consists of scx and omi shell bundles only. Post agent installation, a new user called **omiuser** will be created on the agent machine. If you want to use Log Monitoring feature, you will have to install Linux Log Monitoring management pack, shipped in box. This change is introduced so omsagent user is created only when you are using Log file monitoring feature.
 
 ## Agent Initiated Maintenance Mode Improvement
-Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With SCOM 2019, this feature will be event-based as opposed to registry-based, earlier. This new change will trigger agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from agent machine and would never miss to process the maintenance request.
+Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With SCOM 2019, this feature will be event-based as opposed to registry-based, earlier. This new change will trigger agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from agent machine and would never miss processing the maintenance request.
 
-With the registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases false alerts are generated .
+With the registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases false alerts are generated.
 
 >[!NOTE]
 
