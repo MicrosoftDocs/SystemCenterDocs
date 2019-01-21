@@ -54,6 +54,7 @@ System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
 ## Bug fixes
 This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 5 of SCO 2016](https://support.microsoft.com/en-in/help/4094928/update-rollup-5-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
+::: moniker-end
 
 ## Next steps
 [Know the fixed issues](release-notes-orch.md)

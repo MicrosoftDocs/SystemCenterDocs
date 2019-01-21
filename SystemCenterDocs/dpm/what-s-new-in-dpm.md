@@ -50,7 +50,7 @@ The following sections provide information about the new features and feature up
 
 ## VMware VMs' back up and restore support
 
- supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs), and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
+ DPM 2019 supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs), and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md). This features supports the following:
 
 * Up to 50% storage savings
 * Three times faster backups
@@ -70,6 +70,7 @@ With DPM 2019, you can back up newer versions of different workloads, listed bel
 
 ## Faster backups with Tiered storage using SSDs
 DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage.
+
 To achieve the scale and performance claimed by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage.
 
 ## VMWare parallel backups
