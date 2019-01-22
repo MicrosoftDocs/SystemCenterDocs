@@ -1,20 +1,20 @@
 ﻿---
-ms.assetid: c3c34c0d-4f06-489a-aaba-0a96b9d8eaf9
+ms.assetid: 1e6e82dd-2ba6-45f2-8340-8efaeae1d4a6
 title: include file
-description: include file to provide the system requirements for System Center 2016 - Orchestrator, and includes the  general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
-author: rayne-wiselman
-manager: carmon
-ms.date: 05/17/2018
+description: include file to provide system requirements for Orchestrator 1807, includes general performance and scalability guidance for consideration as part of your design planning of your Orchestrator's deployment.
+ms.author: v-jysur
+manager: vvithal
+ms.date: 08/31/2018
+ms.custom: na
+author: JYOTHIRMAISURI
 ms.prod: system-center-threshold
 ms.technology: Orchestrator
 ms.topic: include
-ms-author: raynew
 ---
 
+## System requirements for System Center 1807 - Orchestrator
 
-## System requirements for System Center 2016 - Orchestrator
-
-The following sections describe general performance and scalability guidance for System Center 2016 - Orchestrator, and recommends hardware configurations for a variety of workloads. As System Center 2016 is built to be flexible and scalable, the actual hardware requirements for specific scenarios may differ from the guidelines that are presented here.
+The following sections provide general performance and scalability guidance for System Center 1807- Orchestrator, and recommends the hardware configurations for a variety of workloads. As System Center 1807 is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.
 
 ## Hardware
 

@@ -1,8 +1,8 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: LandingPage
-author: MattLusherRT
-ms.author: apexprodleads
+author: JYOTHIRMAISURI
+ms.author: magoedte
 ms.date: 04-05-2017
 ms.prod: system-center
 ms.technology: operations-manager
