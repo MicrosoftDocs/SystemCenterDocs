@@ -1,8 +1,8 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: LandingPage
-author: MattLusherRT
-ms.author: apexprodleads
+author: rayne-wiselman
+ms.author: raynew
 ms.date: 04-05-2017
 ms.prod: system-center
 ms.technology: service-provider-foundation
