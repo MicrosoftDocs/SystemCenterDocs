@@ -3,8 +3,8 @@ title: Configure change and activity management
 description: Provides an overview and explains how to configure change and activity management features in Service Manager.
 manager: carmonm
 ms.topic: article
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 keywords: 
 ms.date: 10/12/2016

@@ -1,13 +1,13 @@
 ---
 title: Examining Properties of Alerts, Rules, and Monitors
-description: This article describes how to install the Operations Manager Operations console.  
+description: This article describes how to install the Operations Manager Operations console.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 09/27/2017
 ms.assetid: 51b60a9a-0bfb-4bea-b89f-9f1797fc5a09
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

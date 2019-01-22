@@ -4,8 +4,8 @@ description: Provides an example scenario and details about how to managing chan
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

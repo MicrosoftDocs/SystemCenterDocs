@@ -4,8 +4,8 @@ description: Use this article to upgrade to System Center 2016 - Service Manager
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 02/23/2016
 ms.reviewer: na
 ms.suite: na

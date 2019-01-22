@@ -1,12 +1,12 @@
 ---
 title: View Types in Operations Manager
-description: This article describes the different view types available in the Operations Manager consoles.  
+description: This article describes the different view types available in the Operations Manager consoles.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 05/03/2017
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: f36bccfb-e038-4a3a-9999-3195fe738bd3

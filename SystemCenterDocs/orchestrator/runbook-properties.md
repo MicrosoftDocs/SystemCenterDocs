@@ -11,7 +11,7 @@ ms.topic: article
 ms.assetid: 3bd4992a-badc-4d36-9e64-52e2a167f9e8
 ms.author: raynew
 ms.date: 10/12/2016
-author: cfreemanwa
+author: rayne-wiselman
 manager: cfreeman
 ---
 # Runbook properties

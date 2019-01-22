@@ -201,7 +201,7 @@ When you create a user, that user must be in the same domain as the objects you 
 
     ![open the Production Server Addition wizard ](./media/back-up-vmware/add-production-server.png)
 
-2. On the **Select Production Server type screen, select **VMware Servers**, and click **Next**.
+2. On the **Select Production Server type screen**, select **VMware Servers**, and click **Next**.
     ![select VMware server ](./media/back-up-vmware/add-production-server-choose-vmware.png)
 3. On the **Select Computers** screen, provide the following information:
    - **Server Name/IP Address**: enter the VMware server fully qualified domain name (fQDN) or IP address.

@@ -4,8 +4,8 @@ description: Describes how to customize a column title in a view for the Service
 manager: carmonm
 ms.custom: na
 ms.prod: system-center
-author: bandersmsft
-ms.author: banders
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

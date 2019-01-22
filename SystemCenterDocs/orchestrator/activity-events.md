@@ -11,7 +11,7 @@ ms.topic: reference
 ms.assetid: 51302055-3f9c-43a2-943d-d63769b9ed2b
 ms.author: raynew
 ms.date: 10/12/2016
-author: cfreemanwa
+author: rayne-wiselman
 manager: carmonm
 ---
 

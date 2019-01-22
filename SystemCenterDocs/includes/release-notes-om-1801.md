@@ -1,21 +1,19 @@
 ---
-title: System Center Operations Manager 1801 Release Notes
-description: This article describes issues and workarounds for System Center Operations Manager 1801.  
+title: include file
+description: include file to summarize the release notes for OM 1801.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/30/2018
-ms.custom: na
-ms.prod: system-center-2016
-monikerRange: 'sc-om-1801'
-ms.assetid: 
+ms.prod: system-center
+ms.assetid: b9174aab-ed12-48f3-88f2-586aef943734
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: include
 ---
 
-# System Center Operations Manager 1801 Release Notes
+## OM 1801 release notes
 
-The following release notes apply to System Center Operations Manager 1801.
+The following sections summarize the release notes for OM 1801 and includes the known issues and workarounds.
 
 ## Telemetry for HTML5 dashboards
 **Description:** System Center Operations Manager collects diagnostics and usage data about itself, which is used by Microsoft to improve the installation experience, quality, and security of future releases.  With the release of the new HTML5 dashboards, usage telemetry is collected with Application Insights, not from the Usage and Diagnostic feature in the management group.  For more information on what user telemetry is collected by Application Insights, see [Usage analysis with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-usage-overview).
@@ -28,7 +26,7 @@ The following release notes apply to System Center Operations Manager 1801.
 **Workaround:** None
 
 ## Access Silverlight dashboards in Web Console using a different URL
-**Description:** With HTML5 dashboards in Operations Manager 1801, the entire Web console is HTML based. Silverlight dashboards cannot be displayed in the Web console. To access  existing Silverlight dashboards, you have to access using the following URL using Internet Explorer with Silverlight enabled - `http(s)://<Servername>/dashboard`. 
+**Description:** With HTML5 dashboards in Operations Manager 1801, the entire Web console is HTML based. Silverlight dashboards cannot be displayed in the Web console. To access  existing Silverlight dashboards, you have to access using the following URL using Internet Explorer with Silverlight enabled - `http(s)://<Servername>/dashboard`.
 
 ## Attempting to upgrade Reporting server fails prerequisites check
 **Description:** While attempting to perform an upgrade of System Center 2016 - Operations Manager Reporting server to version 1801, the prerequisites checker will report the following error: **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.** and the upgrade cannot proceed.  This error occurs in a distributed management group scenario where the Reporting server is on a server  separate from one or more management servers in the management group.   

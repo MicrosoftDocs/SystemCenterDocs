@@ -1,13 +1,13 @@
 ---
 ms.assetid: 3de02832-cbf1-4e68-ae75-91b50f702c24
 title: Making Changes to an Operations Manager Management Group
-description: This article describes the tasks you may perform after after you have deployed or upgraded Operations Manager in your environment.  
+description: This article describes the tasks you may perform after after you have deployed or upgraded Operations Manager in your environment.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/02/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
