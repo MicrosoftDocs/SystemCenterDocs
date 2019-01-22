@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-author: MattLusherRT
-ms.author: apexprodleads
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 04-05-2017
 ms.prod: system-center
 ms.technology: service-manager
