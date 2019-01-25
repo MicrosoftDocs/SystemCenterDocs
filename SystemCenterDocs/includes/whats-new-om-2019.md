@@ -70,7 +70,7 @@ Only x64 agent will be shipped
 * **Windows PowerShell version**: Windows PowerShell version 2.0, or Windows PowerShell version 3.0
 * Microsoft .NET Framework 3.5 or later
 
-## Web Console
+## HTML 5 Web Console - client browsers
 For HTLM5 web console, the following client web browsers are supported:
 * Internet Explorer version 11
 * Microsoft Edge version 40 and later
@@ -78,7 +78,19 @@ For HTLM5 web console, the following client web browsers are supported:
 
 For rest of the requirements which are not changing, please see SCOM 2019 system requirements.
 
-## SQL Server 2017
+## HTML5 Web console enhancements
+The following improvements are provided in the Web console:
+
+* Added the **PowerShell** widget
+* Included an effective configuration widget in the Monitoring objects detail page showing the running rules, and monitors and override settings applied.
+* Network node/network interface drill-down is now available as a tab when you select a network device and drill-down to the Monitoring objects detailed page.  It delivers the same experience as what is available in the Operations console.
+* Alert widget enhancement includes an improved layout and presentation of alert details. You can modify the resolution state and drill-down to the Monitoring object details page for the alert source.
+* The monitoring tree can be hidden when a dashboard is integrated with SharePoint.
+* The size of the health icon can be changed in the Topology widget.
+* Managing maintenance schedules can be accomplished in the Web console matching the experience in the Operations console.
+* User and operators can create dashboards in My Workspace. [Learn more](../scom/manage-overview-html5-webconsole.md).
+
+## SQL Server 2017 support
 OM 2019 supports SQL server 2017.
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2019 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
@@ -117,18 +129,6 @@ In earlier versions of OM agent, (prior to 1807) the Application Performance Mon
 
 ## Linux log rotation
 To prevent the SCX logs from growing and consuming all available free space on the system disk, a log rotation feature is now available for the SCX agent. [Learn more](../scom/manage-monitoring-unix-linux.md).
-
-## HTML5 Web console enhancements
-The following improvements are provided in the Web console:
-
-* Added the **PowerShell** widget
-* Included an effective configuration widget in the Monitoring objects detail page showing the running rules, and monitors and override settings applied.
-* Network node/network interface drill-down is now available as a tab when you select a network device and drill-down to the Monitoring objects detailed page.  It delivers the same experience as what is available in the Operations console.
-* Alert widget enhancement includes an improved layout and presentation of alert details. You can modify the resolution state and drill-down to the Monitoring object details page for the alert source.
-* The monitoring tree can be hidden when a dashboard is integrated with SharePoint.
-* The size of the health icon can be changed in the Topology widget.
-* Managing maintenance schedules can be accomplished in the Web console matching the experience in the Operations console.
-* User and operators can create dashboards in My Workspace. [Learn more](../scom/manage-overview-html5-webconsole.md).
 
 ## Operations Manager and Service Manager console coexistence
 The Operations and Service Manager version 2019 consoles, as well as PowerShell modules can be installed on the same system.
