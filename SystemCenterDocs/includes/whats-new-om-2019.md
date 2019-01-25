@@ -2,10 +2,10 @@
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
 description: include file to describe the new features in operations manager 2019
-author: ANEESH
-ms.author: v-anesh
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 manager: vvithal
-ms.date: 01/14/2018
+ms.date: 01/25/2018
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
