@@ -17,7 +17,7 @@ ms.technology: orchestrator
 
 This article provides the upgrade information for System Center 2019 - Orchestrator.
 
-!INCLUDE [upgrade-to-orch-2019.md](../includes/upgrade-to-orch-2019.md)]
+[!INCLUDE [upgrade-to-orch-2019.md](../includes/upgrade-to-orch-2019.md)]
 
 ::: moniker-end
 
