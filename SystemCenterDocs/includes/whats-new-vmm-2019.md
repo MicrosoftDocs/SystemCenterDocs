@@ -51,6 +51,10 @@ Console connect in VMM provides an alternative way to remote desktop to connect 
 
 VMM 2019 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](../vmm/enhanced-console-session.md).
 
+### Support for S2D cluster update and upgrade
+VMM 2019 supports update and upgrade of an S2D host or a cluster. You can update individual S2D hosts or clusters against the baselines configured in windows server update services (WSUS).  You can upgrade the cluster to WS 2019. Learn more.
+
+
 ## Storage
 
 ### Storage DO
