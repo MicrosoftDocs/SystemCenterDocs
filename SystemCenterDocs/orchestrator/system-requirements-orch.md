@@ -13,6 +13,14 @@ ms.technology: orchestrator
 
 # System requirements for System Center Orchestrator
 
+::: moniker range="sc-orch-2019"
+
+This article details the system requirements for System Center 2019 - Orchestrator.
+
+[!INCLUDE [system-reqs-orch-2019.md](../includes/system-reqs-orch-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-orch-1807"
 
 Orchestrator 1801 system requirements are also applicable for 1807 Orchestrator, there are no changes. [Learn about the system requirements](https://docs.microsoft.com/en-us/system-center/orchestrator/system-requirements-orch?view=sc-orch-1801).
