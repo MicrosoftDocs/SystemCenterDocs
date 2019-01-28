@@ -32,7 +32,7 @@ The following sections provide information about how to upgrade to System Center
  You can only upgrade to System Center 2019 from System Center 2016 or 1801 or 1807.
 
 > [!IMPORTANT]  
->  It is assumed in this guide that you are performing an *upgrade* to an existing System Center version. For information about installing System Center 1801 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
+>  It is assumed in this guide that you are performing an *upgrade* to an existing System Center version. For information about installing System Center 2019 - Service Manager on a computer where no previous version of Service Manager exists, see [deploying System Center - Service Manager](../scsm/deploy-sm.md).  
 
 ## Plan the upgrade to System Center 2019 - Service Manager
 
@@ -44,7 +44,7 @@ Upgrading to Service Manager 2019 requires preparation. We recommend that you in
 
 ### Evaluation and Select versions  
 
-The release of System Center 2016 and 1801 - Service Manager were available in two different versions:  
+The release of System Center 2016 and 1801 - Service Manager was available in two different versions:  
 
 -   Evaluation version \(180\-day time\-out\)
 -   Select license version  
@@ -72,7 +72,7 @@ All hardware requirements for System Center 2019 - Service Manager are fully doc
 
 ### Software requirements for System Center 2019 - Service Manager
 
-All software requirements for System Center 20 19- Service Manager are fully documented in [Software Requirements](../scsm/system-requirements.md).  
+All software requirements for System Center 2019- Service Manager are fully documented in [Software Requirements](../scsm/system-requirements.md).  
 
 ### Impact on custom development
 
@@ -151,7 +151,7 @@ If the management pack does not exist, you need to restore your database to a st
 
 ### Testing the upgrade in a lab environment  
 
-We recommend that you test the upgrade to System Center 1801 - Service Manager in a lab environment.  
+We recommend that you test the upgrade to System Center 2019 - Service Manager in a lab environment.  
 
 ### Upgrade order and timing  
 
