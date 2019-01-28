@@ -135,6 +135,7 @@ When you install VMM with this user account SPN will be registered.
 > Target database collate and the VMM server collate must be the same if the database is part of SQL Always On (AO) group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/library/ee176844.aspx) PowerShell command. Learn more about [VMM server collate mappings](vmm-collate-mappings.md).
 
 ::: moniker-end
+
 - Dynamic port is supported.
 - If you want to create the VMM database prior to VMM installation:
   - Make sure you have permissions or create a SQL database, or ask the SQL Server admin to do it.
