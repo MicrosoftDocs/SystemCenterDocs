@@ -123,7 +123,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 The following versions of Windows Server operating system are supported.
 
 |System Center  component|Windows Server 2016 Standard, Datacenter|Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core|
-|----------------------------|-----------------------|----------------
+|----------------------------|-----------------------|----------------|
 |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|
 |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|
 |**Service Manager** Database or Data Warehouse Database|&#8226;|&#8226;|&#8226;
@@ -133,8 +133,8 @@ The following versions of Windows Server operating system are supported.
 
 The following versions of Windows client operating system are supported for the Service Manager console.
 
-|System Center client-side components|Windows Server&reg; 2016 Satandard, Datacenter|Windows Server&reg; 2016 Standard, Datacenter|Windows 10 Enterprise|Windows Server&reg; 2016 Standard, Datacenter|
-|-----------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+|System Center client-side components|Windows Server&reg; 2016 Satandard, Datacenter|Windows Server&reg; 2016 Standard, Datacenter|Windows 10 Enterprise|
+|---------|-----------|
 |**Service Manager** Console|&#8226;|&#8226;|&#8226;|||&#8226;|&#8226;|&#8226;|
 
 
