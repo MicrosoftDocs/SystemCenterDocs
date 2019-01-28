@@ -2,8 +2,8 @@
 ms.assetid: 928fe4c4-e78a-4500-9e55-f8f528329f94
 title: Release notes for System Center Operations Manager
 description: This article details the known issues and workarounds in Operations Manager
-author: ANEESH
-ms.author: v-anesh
+author: JYOTHIRMAISURI
+ms.author: V-jysur
 manager: vvithal
 ms.date: 01/02/2018
 ms.topic: article
