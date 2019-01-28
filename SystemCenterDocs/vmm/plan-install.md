@@ -165,7 +165,8 @@ When you install VMM you need to configure the VMM service  to use either the Lo
 - The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
 - For using gMSA, review the s article on gMSA and create the gMSA as per the guidance available in the article.  Make sure that the servers on which VMM Management service would be installed have permissions to retrieve the password of gMSA account.  
 
->[!NOTE]:
+>[!NOTE]
+
 > You do not need to specify the **Service Principle Name (SPN)** when creating the gMSA. VMM service sets the appropriate SPN on the gMSA.
 
 
