@@ -2,8 +2,8 @@
 ms.assetid: b1883bce-1329-4c2a-bca9-1c5b1ccecaca
 title: What's New in Operations Manager
 description: This article describes the new features supported in Operations Manager
-author: V-anesh
-ms.author: V-anesh
+author: JYOTHIRMAISURI
+ms.author: V-jysur
 manager: vvithal
 ms.date: 12/21/2018
 ms.custom: na
