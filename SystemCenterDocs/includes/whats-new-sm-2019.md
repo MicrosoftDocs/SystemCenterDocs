@@ -33,5 +33,10 @@ The Active Directory (AD) connector has been improvised to synchronize with a sp
 ##	Improved UI Responsiveness
 The user interface has been made more responsive by addressing memory leak problems.
 
+## Enable Service Logon
+During the setup of Service Manager Management Server and Service Manager Data Warehouse Management Server, various credentials are asked for SCSM accounts. These accounts had been interactive (accounts having **Allow log on locally** (SetInteractiveLogonRight) permission) till now.
+
+With SCSM 2019, we have enabled *Service Logon* type to make SCSM more secure, and default logon type has been set to Service Logon. For information on how to grant service logon privileges to the accounts, see this article.
+
 ## Bug fixes
 This release of System Center Service Manager (SCSM) contains all the bug fixes shipped until the [Update Rollup 5 of SCSM 2016](https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager).  

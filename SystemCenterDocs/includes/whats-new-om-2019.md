@@ -5,7 +5,7 @@ description: include file to describe the new features in operations manager 201
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 01/25/2018
+ms.date: 01/25/2019
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -43,8 +43,10 @@ The Scheduled Maintenance Mode feature was shipped with Operations Manager 2016 
 This problem has been resolved as follows:
 
 * Schedules that were created before this fix is deployed will also start working without any issues even in SQL Server failover scenarios.
->[!NOTE]
->Existing schedules that have been created on the current server that is running SQL Server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
+
+    >[!NOTE]
+
+    >Existing schedules that have been created on the current server that is running SQL Server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
 
 * Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server.
 
@@ -59,16 +61,29 @@ This behavior, which often led to closure of critical alerts without resolving t
 
 ## Microsoft Monitoring Agent operating system
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager:
-* **Windows Server 2019** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
-* **Windows Server 2016** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
-* **Windows Server 2012 R2** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience))
-* **Windows 10** - Enterprise, Pro
->[!NOTE]
-Only x64 agent will be shipped
 
-* **File system**: %SYSTEMDRIVE% must be formatted with the NTFS file system
-* **Windows PowerShell version**: Windows PowerShell version 2.0, or Windows PowerShell version 3.0
-* Microsoft .NET Framework 3.5 or later
+ - **Windows Server 2019** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
+ - **Windows Server 2016** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
+ - **Windows Server 2012 R2** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience))
+ -  **Windows 10** - Enterprise, Pro
+
+ > [!NOTE]
+
+ > Only x64 agent will be shipped
+
+- **File system**: %SYSTEMDRIVE% must be formatted with the NTFS file system
+- **Windows PowerShell version**: Windows PowerShell version 2.0, or Windows PowerShell version 3.0
+**Microsoft .NET Framework**: V3.5 or later.
+
+## New operating system platform support for monitoring
+
+The following new platforms are supported for monitoring in SCOM 2019:
+
+- SUSE Linux Enterprise Server 15
+- openSUSE Leap 15
+- Ubuntu 18
+- Debian 9
+
 
 ## HTML 5 Web Console - client browsers
 For HTLM5 web console, the following client web browsers are supported:
@@ -135,9 +150,6 @@ The Operations and Service Manager version 2019 consoles, as well as PowerShell 
 
 ## OpenSSL 1.1.0 version support
 On Linux platforms, OpenSSL 0.9.8 support is dropped and we have added support for OpenSSL 1.1.0.
-
-## Ubuntu 18 and Debian 9 support
-These Linux platforms are added to our support matrix for monitoring UNIX and Linux computers.
 
 ## Auto detection of Pseudo FS and drop Enumeration
 The UNIX and Linux agents have been enhanced to detect pseudo file system dynamically and ignore enumeration.
