@@ -17,7 +17,7 @@ ms.technology: virtual-machine-manager
 
 This article details the system requirements for System Center 2019 - Virtual Machine Manager (VMM).
 
-[!INCLUDE [system-reqs-vmm-2019.md](../includes/system-reqs-vmm-2019.md)]
+[!INCLUDE [system-reqs-scsm-2019.md](../includes/system-reqs-scsm-2019.md)]
 
 ::: moniker-end
 
