@@ -4,7 +4,7 @@ title: include file
 description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager 2019.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-manager:vvithal
+manager: vvithal
 ms.date: 01/29/2019
 ms.custom: na
 ms.prod: system-center
@@ -114,19 +114,19 @@ The following versions of Windows Server operating system are supported for the 
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
-- Microsoft SQL Server: See [SQL Server Requirements](#sql-server-requirements).
+- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager components).
+- Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
 ### Management server/Gateway server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
+- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Operations Manager console
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
+- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).
 
@@ -137,7 +137,7 @@ The following versions of Windows Server operating system are supported for the 
 
 ### Web console
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
+- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
@@ -170,7 +170,7 @@ The following versions of Windows Server operating system are supported for the 
 
 ### Operations Manager reporting server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
+- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
