@@ -1,0 +1,20 @@
+---
+ms.assetid:
+title: System requirements for Virtual Machine Manager
+description: This article describes the software and hardware system requirements for System Center Operations Manager
+author: JYOTHIRMAISURI
+ms.author: V-jysur
+manager: vvithal
+ms.date: 01/29/2019
+ms.topic: article
+ms.prod: system-center
+ms.technology: operations-manager
+---
+
+# System requirements for System Center Operations Manager
+
+::: moniker range="sc-vmm-2019"
+
+This article details the system requirements for System Center 2019 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [system-reqs-om-2019.md](../includes/system-reqs-om-2019.md)]
