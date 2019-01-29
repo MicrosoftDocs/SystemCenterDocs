@@ -5,7 +5,7 @@ description: include file to detail the new features in virtual machine manager 
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  01/18/2019
+ms.date:  01/19/2019
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -42,17 +42,24 @@ We have also made improvements in the VMWare VM conversion process that makes th
 
 The VMM 2019 host refresher has undergone certain updates for performance improvement.
 
-With these updates, in scenarios where the organization is managing large number of hosts and VMs with checkpoints – you would be able to observe significant and noticeable improvements in the performance of the job.
+With these updates, in scenarios where the organization is managing large number of hosts and VMs with checkpoints and large number of Logical Network Definitions (LNDs) – you would be able to observe significant and noticeable improvements in the performance of the job.
 
 In our lab with VMM instances managing 20 hosts - each host managing 45-100 VMs, we have measured up to 10X performance improvement.
 
 ### Enhanced console session in VMM
-
 Console connect in VMM provides an alternative way to remote desktop to connect to the VM. This is most useful when the VM does not have any network connectivity or want to change network configuration that could break the network connectivity. Currently, the console connect in VMM supports only basic session where clipboard text can only be pasted through Type Clipboard Text menu option.
 
 VMM 2019 supports enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)** and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard, thereby copy/paste commands for text and files are possible from and to the VM. [Learn more](../vmm/enhanced-console-session.md).
 
+### Support for S2D cluster update and upgrade
+VMM 2019 supports update and upgrade of an S2D host or a cluster. You can update individual S2D hosts or clusters against the baselines configured in windows server update services (WSUS).  You can upgrade the cluster to WS 2019. Learn more.
+
+
 ## Storage
+
+### Storage DO
+This feature helps in preventing Cluster Shared Volumes (CSV) from becoming full due to expanding/new VHDs placed on the CSV. You will be able to set threshold to trigger a warning while new disk placement or auto migrate VHDs to other CSVs in the cluster when free storage space in the CSV falls below the threshold. [Learn more](../vmm/hyper-v-update.md).
+
 
 ### Improvement in VMM storage QoS
 Storage Quality of Service (SQoS) provides a way to centrally monitor and manage storage performance for virtual machines using Hyper-V and the Scale-Out File Server (SOFS) roles. The feature automatically improves storage resource fairness between multiple VMs using the same cluster and allows policy-based performance goals.
@@ -110,15 +117,15 @@ The control of encryption is at the subnet level and encryption can be enabled/d
 ### VMware host management
 VMM 2019 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with  additional  flexibility in managing multiple hypervisors in use. [Learn more](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported vmware server versions.
 
-### Support for S2D cluster update
-
-VMM 2019 supports update of an S2D host or a cluster. You can update individual S2D hosts or clusters against the baselines configured in windows server update services (WSUS). [Learn more](../vmm/hyper-v-update.md).
-
 ### support for configuring layer 3 forwarding gateway using VMM console
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud. Earlier versions of VMM supported the Layer 3 gateway configuration through PowerShell.
 
 In VMM 2019, you can now configure Layer 3 forwarding gateway using the VMM console. Learn more.
+
+### Support for Static MAC address on VMs deployed on a VMM cloud, convert MAC address type
+
+This feature allows you to set static MAC address on VMs deployed on a cloud. Also, MAC address can be changed from static to dynamic and vice versa. Learn more.
 
 ## Security
 
@@ -142,6 +149,9 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
 
 VMM 2019 supports management of Azure Resource Manager based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
+
+### VM update management through VMM using Azure Automation Subscription
+VMM 2019 is introducing the possibility of patching and updating on-prem VMs managed by VMM by integrating VMM with azure automation subscription. [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
 
 ## Others
 

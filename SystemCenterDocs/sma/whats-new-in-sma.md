@@ -14,6 +14,14 @@ ms.technology: service-management-automation
 
 # What's new in Service Management Automation
 
+::: moniker range="sc-sma-2019"
+
+This article provides the new features supported by System Center 2019 - Service Management Automation (SMA).
+
+[!INCLUDE [whats-new-sma-2019.md](../includes/whats-new-sma-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sma-1807"
 
 SMA includes the features that are introduced in SMA 1801, there are no additional features included.  [Learn about the features introduced in 1801](https://docs.microsoft.com/system-center/sma/whats-new-in-sma?view=sc-sma-1801).
