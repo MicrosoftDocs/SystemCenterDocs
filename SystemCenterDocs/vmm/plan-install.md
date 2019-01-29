@@ -50,7 +50,7 @@ If the VMM user installing VMM, or running VMM setup, doesn't have permissions t
     ``setspn -s -u SCVMM/<MachineBIOSName> <VMMServiceAccount>
     setspn -s -u SCVMM/<MachineFQDN> <VMMServiceAccount>``
 
-    For a cluster, <MachineBIOSName> should be /<ClusterBIOSName> and <MachineFQDN> should be <ClusterFQDN>
+    For a cluster, \<MachineBIOSName> should be \<ClusterBIOSName> and \<MachineFQDN> should be \<ClusterFQDN>
 
 2. On the VMM server (or on each node in a cluster), in the registry, navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Setup**.
 3. Set **VmmServicePrincipalNames** to **SCVMM/<MachineBIOSName>,SCVMM/<MachineFQDN>**. For a cluster: **SCVMM/<ClusterBIOSName>,SCVMM/<ClusterFQDN>**.
