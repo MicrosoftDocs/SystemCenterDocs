@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 09/26/2018
+ms.date: 01/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -109,7 +109,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 ### Operations Manager operational, data warehouse, and ACS audit database
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
-- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
 ### Management server/Gateway server
 
@@ -169,9 +169,9 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 ### Operations Manager reporting server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
-- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
-- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
     > [!NOTE]
     > System Center 2016 – Operations Manager and higher supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
