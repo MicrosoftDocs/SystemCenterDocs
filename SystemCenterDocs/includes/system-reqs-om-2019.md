@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## System requirements for System Center Operations Manager
+## System requirements for System Center 2019 -  Operations Manager
 
 This following sections describe general performance and scalability guidance for System Center 2019 - Operations Manager and higher.  These sections also provide recommendations for hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 

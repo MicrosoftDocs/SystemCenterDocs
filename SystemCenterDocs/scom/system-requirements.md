@@ -21,8 +21,6 @@ This article details the system requirements for System Center 2019 - Operations
 
 ::: moniker-end
 
-# System requirements for System Center Operations Manager
-
 ::: moniker range="<sc-om-2019"
 
 This article details the system requirements for System Center 2016 - Operations Manager (OM) and later.
