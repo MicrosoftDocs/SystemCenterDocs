@@ -13,9 +13,9 @@ ms.technology: operations-manager
 
 # System requirements for System Center Operations Manager
 
-::: moniker range="sc-vmm-2019"
+::: moniker range="sc-om-2019"
 
-This article details the system requirements for System Center 2019 - Virtual Machine Manager (VMM).
+This article details the system requirements for System Center 2019 - Operations Manager (OM).
 
 [!INCLUDE [system-reqs-om-2019.md](../includes/system-reqs-om-2019.md)]
 
