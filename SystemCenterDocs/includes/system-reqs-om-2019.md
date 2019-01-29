@@ -115,7 +115,7 @@ The following versions of Windows Server operating system are supported for the 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
-- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server: See [SQL Server Requirements](#sql-server-requirements).
 
 ### Management server/Gateway server
 
@@ -171,9 +171,9 @@ The following versions of Windows Server operating system are supported for the 
 ### Operations Manager reporting server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).
-- Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
-- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
+- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
     > [!NOTE]
     > System Center 2016 – Operations Manager and higher supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
