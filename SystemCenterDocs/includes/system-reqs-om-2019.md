@@ -74,7 +74,7 @@ Use this information to evaluate if your hardware environment is ready to suppor
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
 | Component | Windows Server 2016 Standard, Datacenter | Windows 2016 Server Core | Windows Server 2019 Standard, Datacenter |Windows Server 2019 Server Core |
-|:--- |:---|:--- |:--- |
+|:--- |:---|:--- |:--- |:--- |
 | **Operations Manager** Management Server | yes | yes | yes |yes|
 | **Operations Manager** Gateway Server | yes | yes | yes |yes|
 | **Operations Manager** Web Console | yes | yes | | |
@@ -89,7 +89,7 @@ The following versions of Windows Server operating system are supported for the 
 
 ### Client operating system
 
- Windows 10 client operating system is supported for the Operations Manager Operations console.
+ Windows 10 client operating system is supported for the Operations Manager 2019 Operations console.
 
 ### Microsoft Monitoring Agent operating system
 
