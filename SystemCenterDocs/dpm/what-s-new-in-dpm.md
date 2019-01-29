@@ -61,7 +61,7 @@ With DPM 2019, you can back up newer versions of different workloads, listed bel
 6.	System Center Virtual Machine Manager 2019
 
 ## Faster backups with Tiered storage using SSDs
-DPM 2016 introduced [Modern Backup Storage (MBS)](,,/dpm/add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage.
+DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage.
 
 To achieve the scale and performance claimed by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage.
 
