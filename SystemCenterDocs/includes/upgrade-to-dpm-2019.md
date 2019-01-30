@@ -14,13 +14,20 @@ ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 
 ## Upgrade to DPM 2019
 
-You can install System Center Data Protection Manager (DPM) version 2019 on Windows Server 2016 or 2019. You can upgrade to DPM 2019 from either DPM 2016/1801/1807. Before you upgrade to or install DPM 2019, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
+You can install System Center Data Protection Manager (DPM) version 2019 on Windows Server 2016 or 2019.
+
+You can upgrade to DPM 2019 from the following versions:
+-  DPM 2016
+-  DPM 1801
+-  DPM 1807
+
+ Before you upgrade to or install DPM 2019, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
 
 ## Upgrade path for DPM 2019
-If you upgrade from DPM 2016, to DPM 2019, make sure your installation has the following necessary updates:
+If you upgrade from DPM 2016 to DPM 2019, make sure your installation has the following necessary updates:
 
-- If you are upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 4 or later. You can download the Update Rollups from Windows Update.
+- If you are upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 6 or later. You can download the Update Rollups from Windows Update.
 - Upgrade the DPM server to DPM 2019.
 - Update the agents on the protected servers.
 - Upgrade the DPM Remote Administrator on all production servers.
@@ -32,7 +39,7 @@ If you upgrade from DPM 2016, to DPM 2019, make sure your installation has the f
 1. To install DPM, double-click Setup.exe to open the System Center 2019 wizard.
 2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
 
-Some DPM 1801 features, such as Modern Backup Storage, require Windows Server 2016. You can run DPM 1801 on Windows Server 2012 R2 with UR14. However, to use features such as Modern Backup Storage or RCT-based Hyper-V VM backup, you must use Windows Server 2016. For instructions on installing DPM, see the article, [Installing DPM](../dpm/install-dpm.md).
+ For instructions on installing DPM, see the article, [Installing DPM](../dpm/install-dpm.md).
 
 ## Migrate the DPM database during upgrade
 
@@ -46,6 +53,7 @@ DPM 2019 setup allows you to migrate the DPM database to different SQL Servers d
 ### Possible database migration scenarios
 
 The following scenarios exist when upgrading DPM 2016/1801/1807 to DPM 2019 using a:
+
 1. Local instance and migrating to a remote instance of SQL Server during setup.
 2. Remote instance and migrating to a local instance of SQL Server during setup.
 3. Local instance and migrating to a remote SQL Server Cluster instance during setup.
@@ -86,7 +94,7 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
       ![Restore database](../dpm/media/upgrade-to-dpm-2016/dpm-2016-restore-database.png)
 
-8. After the restore is complete, the restored database will be seen under the **Databases** with the original name. This database will be used during the upgrade. You can exit **Microsoft SQL Management Studio** and start the upgrade process on the original DPM server.
+8. After the restore is complete, the restored database will be seen under **Databases** with the original name. This database will be used during the upgrade. You can exit **Microsoft SQL Management Studio** and start the upgrade process on the original DPM server.
 
       ![Select DPMDB](../dpm/media/upgrade-to-dpm-2016/dpm-2016-select-dpmdb.png)
 
@@ -105,13 +113,13 @@ This example prepares a remote SQL Server cluster to use in a migration.
 
       ![Install database](../dpm/media/upgrade-to-dpm-2016/dpm-2016-install-database.png)
 
-3. Prerequisite check should succeed, click **NEXT** to continue with the upgrade.
+3. Prerequisite check should succeed, click **Next** to continue with the upgrade.
 
       ![Prerequisites check](../dpm/media/upgrade-to-dpm-2016/dpm-2016-prerequisites-check.png)
 
 4. Continue with the wizard options and complete the setup.
 
-5. After the setup is complete, the corresponding database name on the instance specified will now be DPMPB_DPMServerName. Because this may be shared with other DPM servers, the naming convention for the DPM database will now be: DPM2016$DPMDB_DPMServerName
+5. After the setup is complete, the corresponding database name on the instance specified will now be *DPMPB_DPMServerName*. Because this may be shared with other DPM servers, the naming convention for the DPM database will now be: *DPM2016$DPMDB_DPMServerName*
 
 ## Add storage for Modern Backup Storage
 
@@ -135,7 +143,7 @@ See the topic, [Adding disks to increase legacy storage](#adding-disks-to-increa
 ### Assign Workloads to Volumes
 
 DPM 2019 allows the user to specify the types of workloads to be assigned to specific volumes. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction logs.
-To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet, Update-DPMDiskStorage.
+To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet, *Update-DPMDiskStorage*.
 
 **Update-DPMDiskStorage**
 
@@ -181,7 +189,7 @@ To create a Protection Group:
 
   ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
 
-8. The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
+ The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
 
   ![Review Disk Storage Allocation](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen6.png)
 
@@ -191,7 +199,7 @@ To create a Protection Group:
 
   ![Underallocated disk storage](../dpm/media/upgrade-to-dpm-2016/dpm-2016-underprovision-storage.png)
 
-The remainder of the New Protection Group wizard is unchanged from DPM 2012 R2. Continue through the wizard to complete creation of your new protection group.
+The remainder of the New Protection Group wizard is unchanged from earlier version. Continue through the wizard to complete creation of your new protection group.
 
 ## Migrate legacy storage to Modern Backup Storage
 After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
