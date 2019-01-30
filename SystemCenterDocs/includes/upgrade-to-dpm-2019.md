@@ -6,7 +6,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:
-ms.date:  1/28/2019
+ms.date:  1/30/2019
 title:  include file
 ms.technology:  data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
@@ -14,7 +14,7 @@ ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 
 ## Upgrade to DPM 2019
 
-You can install System Center Data Protection Manager (DPM) version 2019 on Windows Server 2016 or 2019.
+You can install System Center - 2019  Data Protection Manager (DPM) on Windows Server 2016 or 2019.
 
 You can upgrade to DPM 2019 from the following versions:
 -  DPM 2016
