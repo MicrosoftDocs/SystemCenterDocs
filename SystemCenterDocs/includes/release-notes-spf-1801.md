@@ -12,6 +12,6 @@ ms.date: 02/05/2018
 title: include file
 ---
 
-## Release Notes for System Center 1801 - Service Provider Foundation
+## SPF 1801 release notes
 
 This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the Update Rollup 2 of SPF 2016.
