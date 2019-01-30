@@ -34,7 +34,7 @@ To download this integration pack, see [Active Directory Integration Pack for Sy
 
 ## Registering and Deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://docs.microsoft.com/en-us/system-center/orchestrator/how-to-add-an-integration-pack?view=sc-orch-1807).
 
 ## Configuring the Active Directory Connections
 
