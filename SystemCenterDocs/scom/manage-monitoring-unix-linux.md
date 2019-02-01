@@ -36,7 +36,7 @@ Before you can monitor UNIX and Linux computers, you must complete the following
 4. Create and [configure Run As accounts](manage-security-create-crossplat-credentials.md)    
 5. Install agent on UNIX and Linux using the [Discovery Wizard](manage-deploy-crossplat-agent-console.md)  
 
-After you complete the steps above and successfully discover and deploy the agent to one or more UNIX and Linux computers, you should verify they are being monitored correctly. After an agent is deployed, the Run As accounts are used to perform discoveries running using the applicable discovery rules, and then start monitoring.  After several minutes, under the Administration workspace, navigate to **Device Management/UNIX/Linux Computers**, and verify the computers are not listed as **Unknown**. They should be discovered and showing the specific version of the OS and distro.   
+After you complete the steps above and successfully discover and deploy the agent to one or more UNIX and Linux computers, you should verify they are being monitored correctly. After an agent is deployed, the Run As accounts are used to perform discoveries running using the applicable discovery rules, and then start monitoring. After several minutes, under the Administration workspace, navigate to **Device Management/UNIX/Linux Computers**, and verify the computers are not listed as **Unknown**. They should be discovered and showing the specific version of the OS and distro.   
 
 By default, Operations Manager monitors the following operating system objects:
 
