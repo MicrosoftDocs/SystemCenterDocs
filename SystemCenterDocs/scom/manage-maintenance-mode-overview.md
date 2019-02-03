@@ -277,7 +277,7 @@ The following procedure describes how to create a maintenance schedule for selec
      > [!NOTE]
      > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
 
-9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
+6. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
 
     1.  Create a name for the schedule in the **Schedule Name** box.
 
@@ -287,7 +287,7 @@ The following procedure describes how to create a maintenance schedule for selec
 
     4.  Select **Enable Schedule** if you want to enable the schedule now, or clear it if you plan on enabling the schedule later.
 
-11. Click **Finish** to save your changes.  
+7. Click **Finish** to save your changes.  
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.  
 
