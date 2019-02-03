@@ -48,12 +48,12 @@ The following are the examples of the criteria builder showcasing single express
 
 Single expression
 
-![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-single-expression.png)  
+![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-single-expressions.png)  
 
 
 Groups of expressions
 
-![criteria builder groups expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expresssions.png) 
+![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expressions.png) 
 
 ::: moniker-end
 
