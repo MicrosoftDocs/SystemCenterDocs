@@ -246,7 +246,7 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
 
-::: moniker range= '>sc-om-1801'
+::: moniker range= ">sc-om-1801"
 
 ## Create Maintenance Schedule in the Web console
 
@@ -289,7 +289,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
 11. Click **Finish** to save your changes.  
 
-The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
+The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.  
+
+::: moniker-end  
 
 ::: moniker range="sc-om-2019"
 
