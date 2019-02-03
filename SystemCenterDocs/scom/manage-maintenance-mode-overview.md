@@ -127,7 +127,7 @@ Maintenance mode can be enabled directly from the monitored Windows computer by 
 
     `Start-SCOMAgentMaintenanceMode -Duration <Double (in minutes)> [-Reason <string>] [-Comments <string>]`
 
-> [!NOTE] 
+> [!NOTE]
 > The minimum duration value accepted is five (5) minutes.
 
 
@@ -147,13 +147,13 @@ The following reasons are accepted by the cmdlet:
 - ApplicationUnresponsive
 - ApplicationUnstable
 - SecurityIssue
-- LossOfNetworkConnectivity  
+- LossOfNetworkConnectivity 
 
 #### Examples:
 
 1. To enable for an interval of five (5) minutes and with a major reason of **Planned** and minor reason **Other** type:
 
-    `Start-SCOMAgentMaintenanceMode -Duration 5 –Reason PlannedOther` 
+    `Start-SCOMAgentMaintenanceMode -Duration 5 –Reason PlannedOther`
 
 2. To enable for an interval of 10 minutes with no reason, type:
 
@@ -169,7 +169,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 4. Import the module MaintenanceMode.dll by typing `Import-module MaintenanceMode.dll`.   
 
-5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request. 
+5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request.
 
 > [!NOTE]  
 > To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
@@ -177,6 +177,19 @@ Perform the following steps to initiate maintenance mode from the target Windows
 > In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the **Start-SCOMAgentMaintenanceMode** cmdlet:
 > `Set-ItemProperty -Path "HKLM:\software\Microsoft\Microsoft Operations Manager\3.0\MaintenanceMode" -Name record -Value "" `  
 
+::: moniker range="sc-om-2019"
+
+## Agent initiated maintenance mode through an event
+Use the following procedure:
+
+1.	Log onto the computer and start Windows PowerShell as an administrator.
+2.	Change directory to *C:\Program Files\Microsoft Monitoring Agent\Agent*
+3.	Import the module by typing *Import-module MaintenanceMode.dll*.
+4.	Type *Start-SCOMAgentMaintenanceMode* and use the parameters to configure the maintenance mode request.
+
+**Example**: Start-SCOMAgentMaintenanceMode -Duration 10 –Reason ApplicationInstallation
+
+::: moniker-end
 
 ## Scheduling Maintenance Mode
 
@@ -199,9 +212,9 @@ The following procedure describes how to create a maintenance schedule for selec
 6. In the **Create Group Wizard - Object Selection** dialog box, perform the following:
 
     1.  In the **Search for list**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.  
-    
+
     2.  Optionally, in the **Filter by part of the name** box, type all or part of the object name, and then click **Search**.  
-    
+
     3.  In the **Available items** box, select the desired objects, click **Add**, and then click **OK**.
 
 7. On the **Object Selection** page, click **Next**.
@@ -209,14 +222,14 @@ The following procedure describes how to create a maintenance schedule for selec
 8. In the **Create Maintenance Schedule** wizard, on the **Schedule** page, you can specify the following for your maintenance schedule:
 
     1.  Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
-    
+
     2.  Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
      > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years). 
-  
+     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+
 9. Click **Next** once you have completed configuring the schedule options.
 
 10. In the **Create Maintenance Schedule** wizard, on the **Details** page, specify the following:
@@ -233,13 +246,13 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
 
-::: moniker range="sc-om-1807"
+::: moniker range= >"sc-om-1801"
 
 ## Create Maintenance Schedule in the Web console
 
 The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
 
-1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console. 
+1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 
 2. From the left pane in the Web console, click **Maintenance Schedules**.
 
@@ -248,22 +261,22 @@ The following procedure describes how to create a maintenance schedule for selec
 4. In the **Create maintenance schedule** pane, perform the following:
 
     1.  In the **Search for classes**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.  
-    
+
     2.  Optionally, in the **Filter by keyword** box, type all or part of the object name, and then press **Enter**.  
-    
+
     3. In the **Available objects** box, select the desired objects.
 
 5. Expand **Schedule** and in this section, specify the following for your maintenance schedule:
 
     1.  Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
-    
+
     2.  Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
      > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years). 
-  
+     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+
 9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
 
     1.  Create a name for the schedule in the **Schedule Name** box.
@@ -278,4 +291,27 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
 
+::: moniker range="sc-om-2019"
+
+## Enable scheduled maintenance mode in SQL Always-ON
+
+In earlier releases on OM, schedules that were created with SQL Always-ON enabled, were inaccessible when SQL server fails over to another server. OM 2019  comes with a fix for this problem. This fix enables the schedules to work without any issues even in a SQL server failover scenario.
+
+This problem has been resolved in the following manner:
+
+1. Schedules that were already been created before this fix is deployed will also start working without any issues even in SQL Server failover scenarios .
+
+**Note**: Existing schedules that have been created on the current server that is running SQL Server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
+
+2. Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server.
+
+**Verify that the required permissions are granted on all servers**:
+
+-	The accounts that are listed under the *Operational Database Account*” profile should have *SQLAgentOperatorRole* permission on the MSDB database.
+-	If any accounts that are listed under the *Operational Database Account* profile do not have access to the *SQLAgentOperatorRole* permission on the MSDB database, assign the *SQLAgentOperatorRole* permission on the MSDB database to each account under the *Operational Database Account* profile.
+-	If you do not have any accounts listed under the *Operational Database Account* profile, accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database.
+
 ::: moniker-end
+
+## Next steps
+[Create and manage groups](manage-create-manage-groups.md)
