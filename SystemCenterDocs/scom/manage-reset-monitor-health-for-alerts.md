@@ -66,4 +66,4 @@ The listed alerts are the ones, which OM was unable to close because the monitor
         ![reset monitor health for an alert](./media/reset-monitor-health-alerts/reset-task.png)
 
 ## Next steps
-[How to reset monitors heath](manage-health-reset-health)
+[How to reset monitors heath](manage-health-reset-health.md)
