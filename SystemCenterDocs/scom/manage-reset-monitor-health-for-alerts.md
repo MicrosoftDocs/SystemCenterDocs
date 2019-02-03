@@ -62,7 +62,8 @@ The listed alerts are the ones, which OM was unable to close because the monitor
 2.	You can reset the health status of the monitor for the corresponding alert, in following two ways:
  -  Select an alert in the dashboard and then select the dashboard action **Reset Health for Alert** or
  -  Click an alert in this dashboard to navigate to the alerts drill-down page (where you can visualize all the relevant information for an alert), select the **Reset Health task** in the task pane.
-    ![reset monitor health for an alert](./media/reset-monitor-health-alerts/reset-task.png)
+
+        ![reset monitor health for an alert](./media/reset-monitor-health-alerts/reset-task.png)
 
 ## Next steps
 [How to reset monitors heath](manage-health-reset-health)
