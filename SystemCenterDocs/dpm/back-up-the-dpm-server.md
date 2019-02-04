@@ -403,10 +403,9 @@ You can back up the DPM database as you would any other SQL Server database usin
 
     4.  Right-click the dpmdb.bak file to view the Properties. On the **Previous Versions** tab are all the backups that you can select and copy.
 
+::: moniker range="sc-dpm-2019"
 
 ## DPM disaster recovery management: Backup DPM DB
-
-::: moniker range="sc-dpm-2019"
 
 One of the ways to reconstruct your DPM server with the same DB is by backing up the DPM DB to local disks.
 
@@ -462,12 +461,13 @@ For example: mountvol X: \\?\Volume{<PhysicalReplicaId>}\
 2.	Navigate to any PIT vhd path i.e. <ReFSVolume>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
 3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica id from the SQL script output. For example: mountvol X: \\?\Volume{<PhysicalReplicaId>}\
 
-**Note**
-All the highlighted text with angular braces are place holders, replace them with appropriate values .
-**<ReFSVolume>** - Access path from the SQL script output
-**<DPMServer FQDN>** - Fully qualified name of DPM server
-**<PhysicalReplicaId>** - Physical replica ID from the SQL script out
-**<PITId>** - GUID identifier other than physical replica ID in the container directory.
+    **Note**
+    All the highlighted text with angular braces are place holders, replace them with appropriate values.
+
+    - **<ReFSVolume>** - Access path from the SQL script output
+    - **<DPMServer FQDN>** - Fully qualified name of DPM server
+    - **<PhysicalReplicaId>** - Physical replica ID from the SQL script out
+    - **<PITId>** - GUID identifier other than physical replica ID in the container directory.
 4.	Open another administrative command prompt and run psexec.exe -s cmd.exe to start a command prompt in system context.
 5.	Change directory to the X: drive and navigate to the location of the DPM database files.
 6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
