@@ -1,10 +1,10 @@
 ---
-ms.assetid: 7c5fa8a4-1343-4d06-a39d-41ced979d695
+ms.assetid: 19659b4f-05d3-4f33-9dd4-689b2a9fc21b
 title: Enable Service Logon by default for System Center Operations Manager
 description: This article provides information about how to enable service logon by default for System Center 2019 - Operations Manager.
 author: JYOTHIRMAISURI
-ms.author: magoedte
-manager: carmonm
+ms.author:v-jysur
+manager: vvithal
 ms.date: 02/04/2019
 ms.custom: na
 ms.prod: system-center
@@ -82,5 +82,5 @@ If you need to change the logon type of SCOM health service to interactive, you 
 
 ![Monitoring action account logon types](./media/enable-service-logon/om2019-monitoring-action-account-logon-type.png)
 
-## Co-existence with SCOM 2016 agent
+## Co-existence with OM 2016 agent
 SCOM 2016 agent uses the **Interactive** logon type as default. As SCOM 2019 service accounts have both service logon as well as interactive logon privileges, SCOM 2019 management server can interoperate with SCOM 2016 agent.
