@@ -10,7 +10,7 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-MonikerRange: 'sc-om-2019'
+MonikerRange: '>sc-om-1807'
 ---
 
 #  Rest Monitor health for alerts closure
@@ -66,4 +66,4 @@ The listed alerts are the ones, which OM was unable to close because the monitor
         ![reset monitor health for an alert](./media/reset-monitor-health-alerts/reset-task.png)
 
 ## Next steps
-[How to reset monitors heath](manage-health-reset-health.md)
+[How to reset monitors heath](manage-health-using-healthexplorer.md)
