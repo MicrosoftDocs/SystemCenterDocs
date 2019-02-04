@@ -17,7 +17,7 @@ ms.topic: include
 The following sections describe the new features/feature updates in System Center 2019 - Operations Manager.
 
 ## Service logon by default
-Operations Manager 2019 supports the hardening of service accounts and does not require Interactive and Remote Interactive logon rights for service accounts.
+Operations Manager 2019 supports hardening of service accounts and does not require Interactive and Remote Interactive logon rights for service accounts.
 
 SCOM 2019 uses *Service Logon* as the logon type, by default. [Learn more](../scom/enable-service-logon.md)
 
