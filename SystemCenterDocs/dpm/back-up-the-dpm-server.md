@@ -440,6 +440,7 @@ where datasourcename like N'%dpmdb%' and ds.ProtectedGroupId is not null
 and LR.Validity in (1,2)
 and AG.ServerName like N'%<dpmsqlservername>%' -- <dpmsqlservername> is a placeholder, put netbios name of server hosting DPMDB
 ```
+
 **Recover DPM database**
 
 To reconstruct your DPM with the same DB, you need to first recover the DPM database and sync it with the freshly installed DPM.

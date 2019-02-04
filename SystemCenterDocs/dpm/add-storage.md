@@ -129,6 +129,11 @@ Migration is similar to modification of a protection group. While migration is i
 ::: moniker range="sc-dpm-2019"
 ## Faster backups with Tiered storage using SSDs
 
+DPM 2016 introduced Modern Backup Storage, improving storage utilization and performance. MBS uses ReFS as underlying file system. MBS is designed to make use of hybrid storage such as tiered storage.
+
+To achieve the scale and performance claimed by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage.
+
+
 > [!NOTE]
 > Ensure the tiered storage volume is configured with state storage device (SSD).
 
