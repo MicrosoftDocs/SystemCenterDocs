@@ -87,7 +87,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="/system-center/scsm/admin-tasks">
+        <a href="/system-center/scsm/management-packs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
