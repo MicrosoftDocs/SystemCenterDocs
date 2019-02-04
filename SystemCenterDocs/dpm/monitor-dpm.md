@@ -17,26 +17,26 @@ ms.author: raynew
 You can monitor a single System Center Data Protection Manager (DPM) server from the DPM Administrator console, multiple DPM servers from the Central Console, or monitor DPM activity with Operations Manager.
 
 ## Monitor with the DPM console
-To monitor DPM in the console you should be logged on to the DPM server with a local admin account. Here's what you can monitor:
+To monitor DPM in the console, you should be logged on to the DPM server with a local admin account. Here's what you can monitor:
 
 -   On the **Alerts** tab you can monitor errors, warnings, and general information for a protection group, for a specific protected computer, or by message severity.  You can view active and inactive alerts and set up email notifications
 
 -   On the **Jobs** tab you can view jobs initiated by DPM for a specific protected computer or protection group. You can  follow job progress or check resources consumed by jobs.
 
--   In the **Protection** task area you can check the status of volumes and shares in protection group, and check configuration settings such as recovery settings, disk allocation and backup schedule.
+-   In the **Protection** task area, you can check the status of volumes and shares in protection group, and check configuration settings such as recovery settings, disk allocation, and backup schedule.
 
 -   In the **Management** task area you can view the **Disks,Agents**, and **Libraries** tab to check the status of disks in the storage pool, deployed DPM agent status, and the state of tapes and tape libraries.
 
 ## Monitor DPM in the Central Console
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple DPM servers from a single location. In the Central Console you can monitor and track the status of multiple DPM servers,  jobs, protection groups, tapes, storage, and disk space.
 
--   In **View Jobs** you can get a list of jobs running on all DPM server monitored by Central Console.
+-   In **View Jobs**, you can get a list of jobs running on all DPM server monitored by Central Console.
 
--   In **Alert View** you can get a list of all DPM alerts that require action. You can using the **Troubleshoot** option to get more details for an alert.
+-   In **Alert View**, you can get a list of all DPM alerts that require action. You can using the **Troubleshoot** option to get more details for an alert.
 
-    You can consolidate alerts in the console.  You can display a single alert for repeated alerts, or display a single alert for multiple alerts that have the same root cause. If you're using a ticketing system you can generate a single ticket only for repeated alerts.
+    You can consolidate alerts in the console.  You can display a single alert for repeated alerts, or display a single alert for multiple alerts that have the same root cause. If you're using a ticketing system, you can generate a single ticket only for repeated alerts.
 
--   In **State View** you can get information about the state of  DPM objects.
+-   In **State View**, you can get information about the state of  DPM objects.
 
 ## Monitor DPM in the Azure console
 You use the Dashboard to get a quick overview of the state of your System Center 2012 - Data Protection Manager (DPM) backups in Windows Azure Backup. The Dashboard provides a centralized gateway to view servers protected by backup vaults, as follows:
@@ -45,12 +45,12 @@ You use the Dashboard to get a quick overview of the state of your System Center
 
 -   **Quick Glance** displays crucial configuration information about the backup vault. It tells you whether the vault is online, which certificate is assigned to it, when the certificate expires, the geographic location of the storage servers, and subscription details for the service.
 
-From the dashboard you can download the Backup agent for installation on a server, modify settings for certificates uploaded to the vault, and delete a vault if required.
+From the dashboard you can download the Backup agent for installation on a server, modify settings for certificates uploaded to the vault, and delete a vault if necessary.
 
 ::: moniker range="sc-dpm-2019"
 
 ##	Central Monitoring
-All DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
+All DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts, and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
 
 > [!NOTE]
 > You must have a valid Azure subscription to be able to centrally monitor.
@@ -74,7 +74,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
 **Monitor Backup Data**
 1.	Select your Log Analytics workspace.
-2.	Click **OMS Portal**
+2.	Click **OMS Portal**.
     The solution dashboard is displayed and provides you with all the backup information as shown below:
 ![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
 
@@ -118,11 +118,11 @@ Using these packs you can:
 
 ### Prerequisites
 
--   To use the DPM Management Packs you need a System Center Operations Manager server running 2012 R2. The Operations Manager Data Warehouse must be up and running.
+-   To use the DPM Management Packs, you need a System Center Operations Manager server running 2012 R2. The Operations Manager Data Warehouse must be up and running.
 
 -   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5.
 
--   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media you should remove them from the DPM server and install the new versions from the download page.
+-   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media, you should remove them from the DPM server and install the new versions from the download page.
 
 -   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
 
