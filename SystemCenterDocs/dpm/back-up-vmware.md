@@ -250,6 +250,18 @@ For all operational recovery scenarios like accidental deletion or corruption sc
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
+::: moniker range="sc-dpm-2019"
+
+### Back up virtual machine to Tape
+
+1.	In the DPM Administrator console, click **Protection** > **Create protection group** to open the Create New Protection Group wizard.
+2.	On the **Select Group Members** page, select the VMWare VMs you want to protect.
+3.	On the **Select Data Protection Method** page, select I want long-term protection using tape.
+4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency that you want.
+5.	On the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
+
+::: moniker-end
+
 ### Create a Protection Group for VMware VMs
 
 1. In the Administrator Console, click **Protection**.
@@ -320,4 +332,22 @@ You can restore individual files from a protected VM recovery point. This featur
     ![specify destination for files or folders ](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** are not enabled.
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
-    The **Recovery status screen shows the progression of the recovery operation.
+    The **Recovery status** screen shows the progression of the recovery operation.
+
+
+::: moniker range="sc-dpm-2019"
+
+## VMware parallel backups
+
+All your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8.
+
+You can modify the number of jobs by using the registry key as below (not present by default, you need to add):
+
+**Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+**Key Type** : DWORD (32-bit) value.
+
+> [!NOTE]
+>  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel.
+
+::: moniker-end

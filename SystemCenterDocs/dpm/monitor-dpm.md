@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2016
 title: Monitor DPM
 ms.technology: data-protection-manager
@@ -46,6 +46,54 @@ You use the Dashboard to get a quick overview of the state of your System Center
 -   **Quick Glance** displays crucial configuration information about the backup vault. It tells you whether the vault is online, which certificate is assigned to it, when the certificate expires, the geographic location of the storage servers, and subscription details for the service.
 
 From the dashboard you can download the Backup agent for installation on a server, modify settings for certificates uploaded to the vault, and delete a vault if required.
+
+::: moniker range="sc-dpm-2019"
+
+##	Central Monitoring
+All DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
+
+> [!NOTE]
+> You must have a valid Azure subscription to be able to centrally monitor.
+
+**Enable central monitoring**
+
+1.	Logon to Azure portal.
+2.	[Create a Recovery Service vault](https://docs.microsoft.com/azure/backup/backup-azure-vms-first-look-arm#create-a-recovery-services-vault-for-a-vm), or if you already have one, select the same.
+3.	Select **Diagnostic Settings** under **Monitoring** section.
+
+    ![Diagnostics settings](./media/monitor-dpm/diagnostic-settings.png)
+
+4. Click **Turn on Diagnostic Settings**.
+5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
+
+    > [!NOTE]
+
+    > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
+
+    ![Diagnostics settings](./media/monitor-dpm/azure-backup-report.png)
+
+**Monitor Backup Data**
+1.	Select your Log Analytics workspace.
+2.	Click **OMS Portal**
+    The solution dashboard is displayed and provides you with all the backup information as shown below:
+![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
+
+    ![Azure backup report](./media/monitor-dpm/monitor-backup-image2.png)
+3. You can also monitor active alerts, current data sources being backed up & cloud storage as shown below:
+
+    ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
+4. You can also specify the desired time range for monitoring the backup parameters.
+![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
+
+**Create Custom Alerts**
+1.	Click any values in the above graph to view more details in the Logs window.
+2.	Click **Alert** icon.
+3.	Select **Take me to Azure Alerts**
+4.	In Log Analytics workspace, click **New Alert Rule**
+5.	Define the **alert condition**, **alert details** and **action group**.
+6.	[Learn more](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
+
+::: moniker-end
 
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
