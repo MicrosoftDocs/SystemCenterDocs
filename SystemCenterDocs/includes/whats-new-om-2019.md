@@ -16,6 +16,11 @@ ms.topic: include
 
 The following sections describe the new features/feature updates in System Center 2019 - Operations Manager.
 
+## Service logon by default
+Operations Manager 2019 supports the hardening of service accounts and does not requires interactive and remote interactive logon rights for service accounts.
+
+SCOM 2019 uses *Service Logon* as the logon type, by default. [Learn more](enable-service-logon.md)
+
 ## Management server failover support for Linux/UNIX
 Management server failover is a crucial feature to enable high-availability and provide fault tolerance in production environments. Operations Manager 2019 is enhanced for handling failover and load-balancing scenario for Linux/UNIX computers and network devices.
 
