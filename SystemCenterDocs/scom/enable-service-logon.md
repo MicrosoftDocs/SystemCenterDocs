@@ -10,6 +10,7 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+monikerRange: 'sc-om-2019'
 ---
 
 # Enable Service Logon by default for Operations Manager
@@ -53,7 +54,7 @@ Follow the steps below to provide Log on as Service permission to run as account
 
 > If you are upgrading to OM 2019 from a previous  version or installing a new OM 2019 environment, you will need to follow the steps above to provide **Logon as a service** permission to Run as accounts.
 
-## Troubleshooting steps
+## Troubleshooting 
 
 If any of the **Run as Account** does not have required **Logon as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of **Run as account** which does not have **Logon as a Service** permission.
 
