@@ -183,7 +183,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 Use the following procedure:
 
 1.	Log onto the computer and start Windows PowerShell as an administrator.
-2.	Change directory to *C:\Program Files\Microsoft Monitoring Agent\Agent*
+2.	Change directory to *C:\Program Files\Microsoft Monitoring Agent\Agent*.
 3.	Import the module by typing *Import-module MaintenanceMode.dll*.
 4.	Type *Start-SCOMAgentMaintenanceMode* and use the parameters to configure the maintenance mode request.
 
@@ -191,7 +191,7 @@ Use the following procedure:
 
 ::: moniker-end
 
-## Scheduling Maintenance Mode
+## Schedule maintenance mode
 
 The following section describes how to work with the different options available for the maintenance mode scheduling feature.
 
@@ -246,9 +246,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
 
-::: moniker range="sc-om-1807"
+::: moniker range=">sc-om-1801"
 
-## Create Maintenance Schedule in the Web console
+## Create maintenance schedule in the Web console
 
 The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
 
@@ -295,15 +295,15 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ::: moniker range="sc-om-2019"
 
-## Enable scheduled maintenance mode in SQL Always-ON
+## Enable scheduled maintenance mode with SQL Always On
 
-In earlier releases on OM, schedules that were created with SQL Always-ON enabled, were inaccessible when SQL server fails over to another server. OM 2019  comes with a fix for this problem. This fix enables the schedules to work without any issues even in a SQL server failover scenario.
+In earlier releases of OM, schedules that were created with SQL Always On enabled, were inaccessible when SQL server fails over to another server. OM 2019  comes with a fix for this issue. This fix enables the schedules to work without any issues even in a SQL server failover scenario.
 
 This problem has been resolved in the following manner:
 
 1. Schedules that were already been created before this fix is deployed will also start working without any issues even in SQL Server failover scenarios .
 
-**Note**: Existing schedules that have been created on the current server that is running SQL Server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
+**Note**: Existing schedules that have been created on the current server that is running SQL server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
 
 2. Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server.
 

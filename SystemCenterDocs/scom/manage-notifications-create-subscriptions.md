@@ -53,7 +53,7 @@ Single expression
 
 Groups of expressions
 
-![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expressions.png) 
+![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expressions.png)
 
 ::: moniker-end
 
