@@ -3,7 +3,7 @@ ms.assetid: 19659b4f-05d3-4f33-9dd4-689b2a9fc21b
 title: Enable Service Logon by default for System Center Operations Manager
 description: This article provides information about how to enable service logon by default for System Center 2019 - Operations Manager.
 author: JYOTHIRMAISURI
-ms.author:v-jysur
+ms.author: v-jysur
 manager: vvithal
 ms.date: 02/04/2019
 ms.custom: na

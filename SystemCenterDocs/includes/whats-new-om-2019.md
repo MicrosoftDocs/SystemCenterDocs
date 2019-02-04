@@ -17,9 +17,9 @@ ms.topic: include
 The following sections describe the new features/feature updates in System Center 2019 - Operations Manager.
 
 ## Service logon by default
-Operations Manager 2019 supports the hardening of service accounts and does not requires interactive and remote interactive logon rights for service accounts.
+Operations Manager 2019 supports the hardening of service accounts and does not require Interactive and Remote Interactive logon rights for service accounts.
 
-SCOM 2019 uses *Service Logon* as the logon type, by default. [Learn more](enable-service-logon.md)
+SCOM 2019 uses *Service Logon* as the logon type, by default. [Learn more](../scom/enable-service-logon.md)
 
 ## Management server failover support for Linux/UNIX
 Management server failover is a crucial feature to enable high-availability and provide fault tolerance in production environments. Operations Manager 2019 is enhanced for handling failover and load-balancing scenario for Linux/UNIX computers and network devices.
@@ -32,7 +32,7 @@ The issue of generating new tickets and new alerts whenever failover or load bal
 With OM 2019, there are changes in the Linux agent package bundling. This bundle now consists of scx and omi shell bundles only. Post agent installation, a new user called **omiuser** will be created on the agent machine. If you want to use the Log Monitoring feature, you will have to install Linux Log Monitoring management pack, shipped in the box. This change is introduced so omsagent user is created only when you use Log File Monitoring feature.
 
 ## Improvement in Agent initiated maintenance mode
-Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is event-based as opposed to registry-based, in earlier releases. This new change triggers the agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss to process the maintenance request.
+Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is event-based as opposed to registry-based, in earlier releases. This new change triggers the agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss to process the maintenance request. [Learn more](../scom/manage-maintenance-mode-overview.md).
 
 With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
 
@@ -81,7 +81,7 @@ The following versions of Windows operating system are supported for the Microso
 
 ## New operating system platform support for monitoring
 
-The following new platforms are supported for monitoring in Operations Manager 2019:
+The following new platforms are supported for monitoring in Operations Manager 2019. [Learn more](../scom/plan-supported-crossplat-os.md)
 
 - SUSE Linux Enterprise Server 15
 - openSUSE Leap 15
@@ -116,7 +116,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
 - SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
-For information about  SQL Server Design Considerations, see [related documentation](https://docs.microsoft.com/en-us/system-center/scom/plan-sqlserver-design?view=sc-om-2016).
+For information about  SQL Server Design Considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2016).
 
 ## In-place upgrade
 System Center 2019 - Operations Manager supports an in-place upgrade from the following versions:
@@ -135,7 +135,7 @@ The existing alert notifications and subscription experience in Operations Manag
 URL monitoring (and web application availability & transaction monitoring), are used to test a URL\website\web-based application, by sending WinHttp requests, validating their response, and measuring their performance.
 
 ## Updates and Recommendation feature for Linux
-**Updates and Recommendations** feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP).
+**Updates and Recommendations** feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP).[Learn more](../scom/manage-mp-mpassessment.md)
 
 If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the Management Packs that are installed in your management group.
 
@@ -167,7 +167,7 @@ You can now use a Linux agent with FluentD support for log file monitoring at pa
 
 - Wild-card characters in log file name and path.
 - New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated  correlation, and exclusive correlation.
-- Support for generic Fluentd plugins published by the fluentd community.
+- Support for generic Fluentd plugins published by the fluentd community. [Learn more](../scom/manage-linux-logfiles.md)
 
 ## Improved experience for HTML5 dashboard
 The Web console has been redesigned and is now a fully HTML-based console and no longer has a dependency on Silverlight. The new dashboards have been redesigned with:  
