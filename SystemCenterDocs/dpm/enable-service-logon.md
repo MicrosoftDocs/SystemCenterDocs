@@ -68,16 +68,17 @@ In the event viewer, on the agent computer, see the information under event ID 7
 |Alert Context |Health Service could not logon as the Run As account <Run As Account>  for management group name <group name> because it has not been granted the **Log on as a service** permission.|
 |Monitor|<add monitor name…>|
 
-![operations manager](./media/enable-service-logon/om2019-operations-manager.png)
-
-You will need to provide **Logon As A Service** permission to the Run As accounts, which are identified in the Event 7002.
+You will need to provide **Logon As A Service** permission to the Run As accounts, which are identified in the event 7002.
 
 When all the **Run As accounts** are given the **Logon as a Service** permission, event ID 7028 is displayed as below and the monitor changes to healthy state.
 
 ![number of events](./media/enable-service-logon/om-2019-number-of-events.png)
 
-## Change logon type to Interactive Logon
+## Change logon type of a health service
 If you need to change the logon type of SCOM health service to interactive, you can use the local group policy on the agent computer to change the logon type, as shown below.
+
+> [!NOTE]
+> A monitor-based alert is generated for this event.
 
 ![Monitoring action account logon types](./media/enable-service-logon/om2019-monitoring-action-account-logon-type.png)
 
