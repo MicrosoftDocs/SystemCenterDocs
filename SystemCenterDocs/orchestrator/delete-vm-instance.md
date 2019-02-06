@@ -3,14 +3,14 @@ title: Delete VM Instance
 description: The Delete VM Instance activity deletes the specified virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 40a56eae-4b1f-4110-a0a7-a1449e8bba6a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

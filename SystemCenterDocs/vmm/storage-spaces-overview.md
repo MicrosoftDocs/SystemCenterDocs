@@ -2,13 +2,13 @@
 ms.assetid: e4d57914-f0f8-4858-8de8-6f5d153b9d60
 title: Storage Spaces Direct in VMM - Overview
 description: This article describes Storage Spaces Direct in the VMM fabric
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Scenario: Deploy Storage Spaces Direct with VMM

@@ -3,14 +3,14 @@ title: Update Mailbox
 description: You can use the Update Mailbox activity to modify the settings of an existing mailbox in an on-premise or online environment.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 007cf7ee-d6d6-4d31-9279-65153f5f94fa
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -6,7 +6,7 @@ ms.author: raynew
 manager: carmonm
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: service-provider-foundation
 ---
 

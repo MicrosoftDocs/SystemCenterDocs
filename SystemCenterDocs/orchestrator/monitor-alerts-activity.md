@@ -3,14 +3,14 @@ title: Monitor Alerts activity
 description: The Monitor Alerts activity launches a runbook when an IBM Tivoli Netcool/OMNIbus alert matches the specified criteria.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 313a1a9f-f534-441b-be59-08ad98ff241f
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

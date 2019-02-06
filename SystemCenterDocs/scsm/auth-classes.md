@@ -3,9 +3,9 @@ title: Customize and author classes
 description: Learn about customizing and authoring classes with Service Manager authoring.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

@@ -3,14 +3,14 @@ title: Get Datastore Capacity Activity
 description: The Get Datastore Capacity activity is used in a runbook to retrieve the capacity available on a specific data store.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1c02fe50-cf8c-4451-984b-b1bda2b9fb0a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

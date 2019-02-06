@@ -3,14 +3,14 @@ title: Monitor Item
 description: The Monitor Item activity is used in a runbook to monitor new or modified items.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 99513133-5547-471a-b1c1-cabfad6eab0b
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -1,11 +1,11 @@
 ---
 title: Create and deploy server images of Service Manager
 description: This article helps you create a system image that contains software needed for use as a template so that you can apply it to new servers.
-manager:  carmonm
+manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

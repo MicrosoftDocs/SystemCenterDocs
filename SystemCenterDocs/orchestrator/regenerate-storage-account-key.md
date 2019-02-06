@@ -3,14 +3,14 @@ title: Regenerate Storage Account Key
 description: The Regenerate Storage Account Key activity regenerates the primary or secondary access key for the specified storage account.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1483a1dd-43fb-446f-a7e6-a18f6760b7a6
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

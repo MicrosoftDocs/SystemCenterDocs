@@ -3,14 +3,14 @@ title: Get Storage Account Keys
 description: The Get Storage Account Keys activity returns the primary and secondary access keys for the specified storage account.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 3d8d8e98-4d80-4a4e-af7f-07ab5e8d8d9c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

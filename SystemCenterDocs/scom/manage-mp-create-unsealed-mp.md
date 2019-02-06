@@ -2,12 +2,12 @@
 ms.assetid: 102761c5-25f3-4fd4-8e5b-a68ea622e921
 title: How to Create a Management Pack for Overrides
 description: This article describes how to create a writeable management pack to save overrides to in Operations Manager.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

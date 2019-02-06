@@ -2,9 +2,9 @@
 title: Plan for System Center - Service Manager performance and scalability
 description: This article describes general performance and scalability planning guidance for System Center - Service Manager.
 manager: carmonm
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article

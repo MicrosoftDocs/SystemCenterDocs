@@ -3,14 +3,14 @@ title: Create Collection Activity
 description: This topic provides guidance on how to configure the Create Collection activity for System Center 2016 Configuration Manager.
 ms.custom: na
 ms.date: 03/08/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: e9df3561-cd3d-440c-afce-f47e3d0d933d
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

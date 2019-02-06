@@ -1,12 +1,12 @@
 ---
 title: Resolving Heartbeat Alerts
 description: This article describes how to investigate a Health Service Heartbeat Failure   alert in Operations Manager 2016.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: b0f9ef5e-e8bf-4cd3-a358-02a7aafa82a9

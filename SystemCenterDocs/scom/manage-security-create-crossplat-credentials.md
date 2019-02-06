@@ -2,12 +2,12 @@
 ms.assetid: d8bb718e-9ecc-4839-926f-1bc0df246bf6
 title: How to Set Credentials for Accessing UNIX and Linux Computers
 description: This article describes how to configure credentials required to securely manage UNIX and Linux comptuers with Operations Manager 2016.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

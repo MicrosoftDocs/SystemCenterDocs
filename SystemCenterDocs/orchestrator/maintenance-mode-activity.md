@@ -3,14 +3,14 @@ title: Maintenance Mode activity
 description: The Maintenance Mode activity is used in a runbook to enter and exit maintenance mode for an ESX host controlled by the VMware vSphere vCenter server.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d6bff75f-98f3-4156-a740-b190fcedbafd
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

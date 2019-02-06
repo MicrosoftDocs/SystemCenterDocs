@@ -1,21 +1,21 @@
 ---
-ms.assetid:
-title: What's New in Operations Manager - 1807
-description: This article describes what's new in System Center Operations Manager 1807 compared to previous versions.
-author: mgoedtel
+ms.assetid: 70fad9da-0c8b-4b0a-abbd-a1246b57da5b
+title: include file
+description: include file to describe the new features in operations manager 1807
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/25/2018
+ms.date: 12/21/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1807'
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: include
 ---
 
-# What's New in System Center Operations Manager 1807
+## What's New in OM 1807
 
-The content in this section describes what's new and changed in System Center Operations Manager 1807.
+The content in the following sections describe new features in System Center 1807 - Operations Manager.
 
 >[!NOTE]
 
@@ -42,7 +42,7 @@ The following improvements are provided in the Web console for version 1807:
 * User and operators can create dashboards in My Workspace.
 
 ## Support for SQL Server 2017
-With version 1807, upgrading from SQL Server 2016 to SQL Server 2017 is supported. To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](upgrade-1801-to-1807.md).
+With version 1807, upgrading from SQL Server 2016 to SQL Server 2017 is supported. To understand the requirements and steps to successfully upgrade your Operations Manager version 1801 management group to version 1807, review [How to upgrade to Operations Manager version 1807](../scom/upgrade-1801-to-1807.md).
 
 ## Operations Manager and Service Manager console coexistence
 The Operations and Service Manager version 1807 consoles, as well as PowerShell modules can be installed on the same system.  

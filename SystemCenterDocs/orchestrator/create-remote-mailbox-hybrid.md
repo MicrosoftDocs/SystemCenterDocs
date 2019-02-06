@@ -3,14 +3,14 @@ title: Create Remote Mailbox (Hybrid)
 description: You can use the Create Remote Mailbox (Hybrid) activity to create a mail-enabled user in on-premises Active Directory and Exchange.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 3ac940c2-52e1-41a1-90f3-532edb575fbe
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

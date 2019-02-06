@@ -3,14 +3,14 @@ title: Download Blob
 description: The Download Blob activity downloads a blob from the system.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: a6e1b38f-d31a-45da-9f00-dc1ee232da42
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

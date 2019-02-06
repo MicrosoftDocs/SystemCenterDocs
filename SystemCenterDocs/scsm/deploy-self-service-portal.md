@@ -1,10 +1,10 @@
 ---
-title:  Deploy the Service Manager Self Service portal
+title: Deploy the Service Manager Self Service portal
 description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self Service portal.
-manager:  carmonm
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+manager: carmonm
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
 description: You can use DPM to back up and restore your System Center VMM databases.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2017
-title:  Back up and restore VMM servers
-ms.technology:  data-protection-manager
-ms.assetid:  e9ed546c-b12b-4a2c-9668-3dc23963114e
-ms.author: markgal
+title: Back up and restore VMM servers
+ms.technology: data-protection-manager
+ms.assetid: e9ed546c-b12b-4a2c-9668-3dc23963114e
+ms.author: raynew
 ---
 
 # Back up and restore VMM servers

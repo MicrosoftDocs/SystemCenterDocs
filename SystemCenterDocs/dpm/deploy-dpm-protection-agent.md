@@ -1,15 +1,15 @@
 ---
 description: Deploy the DPM protection agent to identify data that DPM can protect and recover.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.author: markgal
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.author: raynew
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2016
-title:  Deploy the DPM protection agent
-ms.technology:  data-protection-manager
-ms.assetid:  502fff45-79b5-477b-af4f-3b8a39bdde1a
+title: Deploy the DPM protection agent
+ms.technology: data-protection-manager
+ms.assetid: 502fff45-79b5-477b-af4f-3b8a39bdde1a
 ---
 
 # Deploy the DPM protection agent

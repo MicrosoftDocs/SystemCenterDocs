@@ -3,14 +3,14 @@ title: Get VM Subnet in System Center 2016
 description: The Get VM Subnet activity is used in a runbook to return all virtual subnets on the VMM management server that meet the filtering criteria.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 21f877ab-f285-41e8-bba9-6e8ae3b3f338
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

@@ -3,14 +3,14 @@ title: Update Storage Account
 description: The Update Storage Account activity updates the label, the description, and enables or disables the geo-replication status for a storage account in Windows Azure.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: cd7df37b-59f1-4e8f-ae04-7008c2806618
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

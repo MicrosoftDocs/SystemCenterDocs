@@ -39,6 +39,29 @@ The following versions of Windows client operating system are supported for the 
 |:--- |:---|:--- |:--- |:---|
 |Runbook Designer|Not supported|Not Supported|Not Supported|Supported
 
+## Software
+
+The following software is required for a full installation of Orchestrator on a single computer:
+
+* Microsoft SQL Server 2012, 2014, or 2016 – Orchestrator requires only the basic SQL Server features found in the Database Engine Service. No additional features are required. Orchestrator supports SQL_Latin1_General_CP1_CI_AS for collation. The installation wizard uses SQL_Latin1_General_CP1_CI_AS as the default collation to create the orchestration database. For more information, see the section on [SQL Server](#sql-server).
+
+> [!NOTE]
+> Management servers and runbook servers installed on the same computer must use the same database. The management server must run as a 32-bit application.
+
+* Microsoft Internet Information Services (IIS) – Orchestrator Setup enables IIS if it is not enabled.
+
+* Microsoft .NET Framework 3.5 Service Pack 1 - Orchestrator Setup installs and enables .NET Framework 3.5 SP1 if it is not installed and enabled.
+
+* Microsoft .NET Framework 4
+* [Microsoft SQL Server 2012 Native Client - QFE   (applies to SQL 2012/2014/2016)](https://www.microsoft.com/download/details.aspx?id=50402)
+
+We recommend the following software for a full installation of Orchestrator on a single computer:
+
+* Join the computer to an Active Directory domain.
+
+> [!NOTE]
+> On first use of the Orchestration console, you are prompted to install Microsoft Silverlight 4 on the computer if it is not already installed.
+
 ## SQL Server
 
 > [!NOTE]
@@ -52,12 +75,11 @@ The following versions of Windows client operating system are supported for the 
 **SQL Server 2014 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)** | Y
 **SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | Y
 
-
 ## .Net requirements
 
 All Orchestrator server roles require .Net 3.5 SP1 in order to run the setup program. The Orchestrator Web Service requires .Net 4.5 with WCF Activation.
 
-You can download .Net 3.5 SP1 [from the download center](https://www.microsoft.com/en-in/download/details.aspx?id=22).   
+You can download .Net 3.5 SP1 at:  
 
 ### To turn on WCF activation
 

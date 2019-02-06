@@ -3,9 +3,9 @@ title: Manage and use the analysis libraries
 description: Explains how to manage and use the analysis libraries in the Service Manager console.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

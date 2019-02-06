@@ -3,14 +3,14 @@ title: Add VM Endpoint
 description: The Add VM Endpoint activity adds an external endpoint to the specified virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: b6ddabeb-d6fb-4f7f-9b8e-afe7f88b01ba
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -7,10 +7,10 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-author: bandersmsft
-ms.author: banders
-ms.prod: system-center-2016
-keywords:  
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215

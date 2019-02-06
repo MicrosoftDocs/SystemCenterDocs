@@ -1,12 +1,12 @@
 ---
 title: View Configuration of a Monitored Object
-description: This article describes how view the effective configuration of a monitored object in the Operations Manager HTLM5 Web console.  
-author: mgoedtel
+description: This article describes how view the effective configuration of a monitored object in the Operations Manager HTLM5 Web console.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/19/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1807'
 ms.assetid: 
 ms.technology: operations-manager

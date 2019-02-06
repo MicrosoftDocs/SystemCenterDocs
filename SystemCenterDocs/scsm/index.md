@@ -1,10 +1,10 @@
 ---
-# aka.ms/skyeye/meta for more information
 layout: LandingPage
-author: MattLusherRT
-ms.author: apexprodleads
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 04-05-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.prod: system-center
+ms.technology: service-manager
 ms.topic: landing-page
 title: Service Manager Documentation
 description: Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
@@ -87,7 +87,7 @@ Service Manager provides an integrated platform for automating and adapting your
         </a>
     </li>
     <li>
-        <a href="/system-center/scsm/admin-tasks">
+        <a href="/system-center/scsm/management-packs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

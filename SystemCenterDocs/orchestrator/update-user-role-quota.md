@@ -3,14 +3,14 @@ title: Update User Role Quota
 description: Updates the quotas for a certain user role and cloud.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 253dbe66-1fdd-4160-a664-0cf34e712e03
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

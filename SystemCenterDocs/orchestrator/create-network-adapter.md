@@ -3,14 +3,14 @@ title: Create Network Adapter
 description: The Create Network Adapter activity is used to create a new network adapter and attach it to a specified virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d03ca34d-ec65-4fb8-ba30-c36acc06d8cc
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

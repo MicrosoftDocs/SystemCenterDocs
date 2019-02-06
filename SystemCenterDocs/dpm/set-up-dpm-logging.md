@@ -1,15 +1,15 @@
 ---
 description: This article describes logging in DPM.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2016
-title:  Set up DPM logging
-ms.technology:  data-protection-manager
-ms.assetid:  710459cd-75ec-4052-9199-c45828cbc19b
-ms.author: markgal
+title: Set up DPM logging
+ms.technology: data-protection-manager
+ms.assetid: 710459cd-75ec-4052-9199-c45828cbc19b
+ms.author: raynew
 ---
 
 # Set up DPM logging

@@ -1,13 +1,13 @@
 ---
 ms.assetid: ab2991fd-8228-4afc-89c3-a380129d4a84
 title: How to Create and Configure the Notification Action Account
-description:  
-author: mgoedtel
+description: 
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/03/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

@@ -3,14 +3,14 @@ title: Upload Attachment
 description: The Upload Attachment activity is used in a runbook to attach a file to a Microsoft SharePoint list item.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 7b6d6bc5-6de0-4207-9f5e-b5405913f293
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -2,12 +2,12 @@
 ms.assetid: 90b8bc0b-1a4a-4273-a51a-a33142230d60
 title: Operations Manager Reports Library
 description: This article summarizes the default reports included with Operations Manager.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 02/13/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

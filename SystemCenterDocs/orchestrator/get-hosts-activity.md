@@ -3,14 +3,14 @@ title: Get Hosts Activity
 description: The Get Hosts activity is used in a runbook to retrieve all the hosts attached to a vCenter instance.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 25a60cd2-3942-47f6-b671-e126f109d291
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

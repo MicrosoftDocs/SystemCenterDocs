@@ -1,13 +1,13 @@
 ---
 description: Provides guidance and procedures for using global assets in an Automation runbook.
-manager:  carmonm
-ms.topic:  article
-author:  rayne-wiselman
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
 ms.author: raynew
-ms.prod:  system-center-threshold
-ms.date:  01/22/2018
-title:  Simplify runbook authoring with global assets
-ms.technology:  service-management-automation
+ms.prod: system-center
+ms.date: 01/22/2018
+title: Simplify runbook authoring with global assets
+ms.technology: service-management-automation
 ---
 
 # Simplify Service Management Automation runbook authoring with global assets

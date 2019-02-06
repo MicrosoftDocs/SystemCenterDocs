@@ -1,15 +1,15 @@
 ---
-title:  Configure Incident Management in Service Manager
+title: Configure Incident Management in Service Manager
 description: Learn about how to configure Incident Management in Service Manager.
-manager:  carmonm
-ms.topic:  article
-author: bandersmsft
-ms.author: banders
-ms.prod:  system-center-2016
-keywords:  
+manager: carmonm
+ms.topic: article
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
-ms.technology:  service-manager
-ms.assetid:  8453a3e9-56ee-4750-b111-81e241c480a4
+ms.technology: service-manager
+ms.assetid: 8453a3e9-56ee-4750-b111-81e241c480a4
 ---
 
 # Configure Incident Management in Service Manager

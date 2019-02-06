@@ -122,7 +122,7 @@ Windows Server 2016 Nano | Y | Y | N | N
 **VMware** | **Supported**
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0<br/><br/> UR6 and later - ESX/ESXi 5.1, 5.5, 6.0, 6.5
-vCenter | 5.1, 5.5, 5.8, 6.0</td>
+vCenter | 5.1, 5.5, 5.8, 6.0<br/><br/>UR6 and later - 5.1, 5.5, 5.8, 6.0, 6.6
 Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric

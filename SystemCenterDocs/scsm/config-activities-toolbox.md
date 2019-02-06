@@ -3,9 +3,9 @@ title: Configure the Activities Toolbox
 description: You can configure the activities toolbox in the Service Manager Authoring Tool to add or remove custom activities and to personalize it.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.reviewer: na
 ms.suite: na

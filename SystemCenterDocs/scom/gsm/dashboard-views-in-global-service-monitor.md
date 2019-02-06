@@ -3,7 +3,7 @@ title: "Dashboard Views in Global Service Monitor | Microsoft Docs"
 description: 
 ms.custom: ""
 ms.date: 4/26/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: article
@@ -11,7 +11,7 @@ applies_to:
   - "System Center 2016 - Operations Manager"
   - "System Center Global Service Monitor"
 ms.assetid: b6734cca-d015-4e3a-9211-ffd0ec679736
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ---

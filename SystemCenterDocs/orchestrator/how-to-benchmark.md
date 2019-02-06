@@ -3,14 +3,14 @@ title: How to create a benchmark runbook
 description: Describes how to create a benchmark runbook to evaluate performance of different logging options in a System Center 2016 - Orchestrator environment.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0755be30-3648-47c0-a009-e2f0ff85040d
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

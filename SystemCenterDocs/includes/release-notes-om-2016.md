@@ -1,21 +1,20 @@
 ---
-title:  Release Notes for System Center 2016 - Operations Manager
-description: Release Notes for System Center 2016 - Operations Manager
+title:  include file
+description: include file to summarize the release notes for OM 2016.
 manager:  cfcarmonm
-ms.topic:  article
+ms.topic:  include
 author:  mgoedtel
 ms.author: magoedte
-ms.prod:  system-center-2016
+ms.prod:  system-center
 ms.technology: operations-manager
-ms.topic: article
-keywords:
+ms.topic: include
 ms.date: 05/23/2017
-monikerRange: 'sc-om-2016'
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 
-# System Center 2016 - Operations Manager Release Notes
-The following release notes apply to System Center 2016 - Operations Manager.
+## OM 2016 release notes
+
+The following sections summarize the release notes for OM 2016 and includes the known issues and workarounds.
 
 ## SharePoint integration with Operations Manager has to be recreated
 **Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated with the  steps below.
@@ -109,7 +108,7 @@ System Center Operations Manager management server is not affected.
 ## Operations Manager Console will stop responding if you attempt to resolve a dependency while importing a management pack
 **Description:** When you click **Import Management Packs** from the Administration workspace of the Operations Manager Operations console, the console will display the **Resolve** button if the Management Pack is dependent on another Management Pack. If you click **Resolve**, you see the **Dependency Warning**. If you click the **Resolve** button in the **Dependency Warning** dialog, the Operations console will stop responding.
 
-**Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/en-us/kb/3117586) for specific instructions.
+**Workaround:** Install the Update for System Center 2016 - Operations Manager. See the Knowledge Base article [3117586](https://support.microsoft.com/kb/3117586) for specific instructions.
 
 ## Telemetry data may be erroneously sent when the "Usage and Connectivity Data" setting is set to "False"
 
@@ -147,6 +146,3 @@ System Center Operations Manager management server is not affected.
 9. Select the option - "Place all certificates in the following store" Browse to Trusted Publishers.
 10. Click Next and then Finish.
 11. Refresh the Browser
-
-## Next steps
-To learn about new features and capabilities, see [What's new in System Center 2016 - Operations Manager](what-is-new.md).

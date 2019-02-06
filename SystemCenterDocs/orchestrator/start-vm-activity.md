@@ -3,14 +3,14 @@ title: Start VM Activity
 description: The Start VM activity is used in a runbook to start a virtual machine that has been added to a VMware vSphere server and is not already running.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: f16bf32e-0018-4d47-96c4-a90a79d1d37f
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -3,14 +3,14 @@ title: Add VM Data Disk
 description: The Add VM Data Disk activity adds a data disk to a virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 29ca91cb-1d7f-43b1-a967-23e7cdf2918c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

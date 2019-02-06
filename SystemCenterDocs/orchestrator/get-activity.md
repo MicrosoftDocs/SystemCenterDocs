@@ -3,14 +3,14 @@ title: Get Activity
 description: The Get Activity activity is used to query for activity records for the selected activity class.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 60938aea-2ad0-42b2-b425-09d02b3d5053
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

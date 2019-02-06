@@ -3,14 +3,14 @@ title: Query ConfigMgr activity
 description: Describes the configurable properties for the Query ConfigMgr activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: e6ea8b08-b182-45dd-a680-2b06bc62ce8e
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

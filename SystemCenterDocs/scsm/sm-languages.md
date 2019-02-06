@@ -2,9 +2,9 @@
 title: Languages supported by System Center - Service Manager
 description: Describes the languages that System Center - Service Manager supports.
 manager: carmonm
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.topic: reference

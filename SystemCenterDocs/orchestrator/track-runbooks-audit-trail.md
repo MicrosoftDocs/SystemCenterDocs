@@ -1,15 +1,14 @@
 ---
 title: Audit Trail
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b93dbbb6-3c0d-4256-8140-c47b67a50a4a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 ms.date: 10/12/2016
 manager: cfreeman

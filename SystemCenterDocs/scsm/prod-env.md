@@ -2,10 +2,10 @@
 title: Create a production environment for System Center - Service Manager upgrade
 description: Learn about create a production environment to test System Center - Service Manager upgrade.
 manager: carmonm
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
-ms.date: 01/23/20172018
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.date: 1/23/2017
 ms.technology: service-manager
 ms.topic: article
 ---

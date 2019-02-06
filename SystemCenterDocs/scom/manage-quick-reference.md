@@ -2,12 +2,12 @@
 ms.assetid: dd7742fd-dcec-4546-b0f3-59ddaf94459a
 title: Quick Reference to Operations Manager Tasks
 description: This article summarizes the common tasks to perform after installing Operations Manager in your environment.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 06/04/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

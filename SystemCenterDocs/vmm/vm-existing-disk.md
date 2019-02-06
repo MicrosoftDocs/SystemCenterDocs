@@ -2,13 +2,13 @@
 ms.assetid: b45f04f4-3569-49b1-b34a-e93417a3e709
 title: Deploy VMs in the VMM fabric from an existing hard disk
 description: This article describes how to create and deploy VMs in the VMM fabric from an existing virtual hard disk
-author:  rayne-wiselman
-ms.author: rayne
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+author: rayne-wiselman
+ms.author: raynew
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 

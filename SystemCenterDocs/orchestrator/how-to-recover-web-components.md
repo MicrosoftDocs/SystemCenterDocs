@@ -3,14 +3,14 @@ title: How to Recover Web Components
 description: Describes how to recover web components after restoring a System Center 2016 - Orchestrator environment.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: edc3c49a-93e9-4ec4-81e3-c454b54ae976
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

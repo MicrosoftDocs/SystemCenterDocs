@@ -3,14 +3,14 @@ title: Create Affinity Group
 description: The Create Affinity Group activity creates a new affinity group for the specified subscription.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: c361dda5-c55c-4743-8053-1bdf57667fa3
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

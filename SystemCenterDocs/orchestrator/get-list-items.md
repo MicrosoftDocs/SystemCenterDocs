@@ -3,14 +3,14 @@ title: Get List Items
 description: The Get List Items activity is used in a runbook to retrieve data about the items in a Microsoft SharePoint list.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 99b3f71f-f993-4501-a726-71bb399bd815
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

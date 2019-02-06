@@ -7,7 +7,7 @@ ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
@@ -19,7 +19,7 @@ This article describes how to deploy shielded virtual machines in the System Cen
 
 You can deploy shielded VMs in VMM in a couple of ways:
 
-- Convert an existing VM into a shielded VM
+- Convert an existing VM into a shielded VM.
 - Create a new shielded VM using a signed virtual machine hard disk (VHDX), and optionally a VM template.
 
 ## Before you start

@@ -3,14 +3,14 @@ title: Monitor State
 description: The Monitor State activity monitors the state of an Operations Manager object that you specify.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 47d10330-5980-44f7-a11c-23cc04636ddc
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

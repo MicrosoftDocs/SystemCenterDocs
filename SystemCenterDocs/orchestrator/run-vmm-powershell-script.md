@@ -3,14 +3,14 @@ title: Run VMM PowerShell Script
 description: The Run VMM PowerShell activity is used to call any PowerShell activity.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 6c162738-677c-49f5-8b14-b63f81a7da2b
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

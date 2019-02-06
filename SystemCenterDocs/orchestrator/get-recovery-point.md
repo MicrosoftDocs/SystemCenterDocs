@@ -3,14 +3,14 @@ title: Get Recovery Point
 description: The Get Recovery Point activity is used in a runbook that queries a data source for all its associated recovery points or only the most recent recovery point.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 2cddc23c-c3b6-4cd7-be8c-446fb557e24b
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

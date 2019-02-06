@@ -7,7 +7,7 @@ ms.author: raynew
 manager: carmonm
 ms.date: 11/07/2017
 ms.topic: article
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 

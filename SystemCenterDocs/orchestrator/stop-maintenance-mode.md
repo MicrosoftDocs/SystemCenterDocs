@@ -3,14 +3,14 @@ title: Stop Maintenance Mode
 description: The Stop Maintenance Mode activity takes a monitor out of maintenance mode.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 2358a3dd-2f24-46f6-b7b9-4a5d0952b887
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -3,14 +3,14 @@ title: FTP Integration Pack for Orchestrator in System Center 2016
 description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: e0482f7f-711a-4b40-9884-1d1bd4b96bf2
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

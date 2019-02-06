@@ -1,15 +1,15 @@
 ---
 description: This article describes the steps you can take to improve replication performance in DPM.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
+keywords: 
 ms.date: 11/01/2017
-title:  Improve replication performance
-ms.technology:  data-protection-manager
-ms.assetid:  dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
-ms.author: markgal
+title: Improve replication performance
+ms.technology: data-protection-manager
+ms.assetid: dc7b7b49-dcbb-4e44-9ea7-31374c5773ff
+ms.author: raynew
 ---
 
 # Improve replication performance

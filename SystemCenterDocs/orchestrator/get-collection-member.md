@@ -3,14 +3,14 @@ title: Get Collection Member activity
 description: Describes the configurable properties for the Get Collection Member activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: ee86105b-c786-4aee-b2ec-8cfcd88f8fc5
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

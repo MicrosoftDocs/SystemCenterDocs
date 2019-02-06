@@ -3,14 +3,14 @@ title: Create Relationship
 description: The Create Relationship activity is used to create a relationship between two existing entities.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 63ab5e0c-4407-401b-9f43-59ca1a3a4915
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

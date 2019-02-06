@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
-title:  Sample configuration file for collecting Linux log files
-description: This article describes a sample configuration file for collecting Linux log files on Linux in System Center Operations Manager 1801.    
-author: mgoedtel
+title: Sample configuration file for collecting Linux log files
+description: This article describes a sample configuration file for collecting Linux log files on Linux in System Center Operations Manager 1801.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/16/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article

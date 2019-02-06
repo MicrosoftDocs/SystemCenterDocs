@@ -3,14 +3,14 @@ title: Remove VM
 description: The Remove VM activity is used to delete a VM that is no longer needed.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: a530a448-c782-49d6-abba-7ba60c2fdfce
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

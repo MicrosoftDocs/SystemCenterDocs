@@ -3,14 +3,14 @@ title: Deploy Program activity
 description: Describes the configurable properties for the Deploy Program activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 62285d61-2831-46bb-8a6b-b0de2b69476d
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

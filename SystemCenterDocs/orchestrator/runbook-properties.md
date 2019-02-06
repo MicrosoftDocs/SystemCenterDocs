@@ -2,17 +2,16 @@
 title: View and configure Runbook properties
 description: This article describes how you can View and configure Runbook properties.
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3bd4992a-badc-4d36-9e64-52e2a167f9e8
 ms.author: raynew
 ms.date: 10/12/2016
-author: cfreemanwa
+author: rayne-wiselman
 manager: cfreeman
 ---
 # Runbook properties

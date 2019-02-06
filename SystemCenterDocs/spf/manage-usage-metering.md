@@ -6,7 +6,7 @@ ms.author: raynew
 manager: carmonm
 ms.date: 01/22/2018
 ms.topic: article
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: service-provider-foundation
 ---
 
@@ -31,7 +31,7 @@ Here's what you need:
 
 Before you set up metering, check these resources:
 
-- [Learn about the SPF cmdlets](https://technet.microsoft.com/library/jj612525.aspx).
+- [Learn about the SPF cmdlets](https://docs.microsoft.com/powershell/module/spfadmin/set-scspftenant?view=systemcenter-ps-2016).
 - [Read a blog post](http://blogs.technet.com/b/privatecloud/archive/2013/10/01/configuring-spf-and-windows-azure-pack-for-iaas-usage-and-metering.aspx) about usage metering.
 
 Then set up metering as follows:

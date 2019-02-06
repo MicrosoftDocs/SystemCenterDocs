@@ -3,14 +3,14 @@ title: Enable Mailbox
 description: You can use the Enable Mailbox activity in an on-premises environment to enable a mailbox for an existing Active Directory user or InetOrgPerson object.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1825d27b-c016-4d16-8237-350fbced1686
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

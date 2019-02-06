@@ -1,12 +1,12 @@
 ---
 ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
-description: This topic describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.   
-author: mgoedtel
+description: This topic describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
+author: JYOTHIRMAISURI
 manager: carmonm
 ms.date: 10/12/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -20,7 +20,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 >[!NOTE]
 >When creating the certificate, you must provide the fully qualified domain name (FQDN) of the host and domain name in the **Common name** field to match the address users would enter in their web browser to access the Web console.  
 
-1. Use a plain text editor to open the **web.config** in `<PATH>:\Program Fiels\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost`.
+1. Use a plain text editor to open the **web.config** in `<PATH>:\Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost`.
 2. In the `<services>` root element, modify the following in the `<!– Logon Service –>`element:
      
      ```

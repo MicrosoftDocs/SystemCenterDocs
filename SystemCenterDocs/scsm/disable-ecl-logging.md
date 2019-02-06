@@ -4,10 +4,10 @@ description: Describes how you can optionally disable Service Manager ECL loggin
 manager: carmonm
 ms.custom: na
 ms.topic: article
-author:  bandersmsft
-ms.author: banders
-ms.prod: system-center-2016
-keywords:  
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.tgt_pltfrm: na

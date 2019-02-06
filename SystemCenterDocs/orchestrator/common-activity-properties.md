@@ -1,15 +1,14 @@
 ---
 title: Common Activity Properties
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1f3f12bf-e2c2-405c-9205-8d6de6d199d2
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 ms.date: 10/12/2016
 manager: cfreeman

@@ -3,10 +3,10 @@ title: Configuration items in Service Manager
 description: Lean about configuration items in Service Manager.
 manager: carmonm
 ms.topic: article
-author: bandersmsft
-ms.author: banders
-ms.prod: system-center-2016
-keywords:  
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 7e6ab64c-c752-4cee-9057-e4b4413e571d

@@ -1,13 +1,13 @@
 ---
 ms.assetid: 1921b7dc-6537-4378-bdc5-de5fbd3e619a
 title: System Requirements for System Center Operations Manager
-description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.  
-author: mgoedtel
+description: The system requirements article provides general performance and scalability guidance for consideration as part of your design planning of Operations Manager.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 09/26/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -39,23 +39,23 @@ This information helps you understand the performance and scalability characteri
 | Agents for Application Performance Monitoring (APM) | 700 |
 | Applications for Application Performance Monitoring (APM) | 400 |
 | URLs monitored per dedicated management server | 3,000 |
-| URLs monitored per dedicated management group | 12,000 | 
+| URLs monitored per dedicated management group | 12,000 |
 | URLs monitored per agent | 50 |
 
 ## Upgrade sequence
 If you are upgrading an installation of System Center 2012 R2 Operations Manager or System Center 2016 - Operations Manager that is integrated with one or more System Center components, it is important that you upgrade in the following order.  
 
-1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group. 
-2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager. 
+1. Orchestrator - if you have the Operations Manager integration pack installed to support runbooks that perform automation against your Operations Manager management group.
+2. Service Manager - if you configured the connectors to import alert and configuration item data of objects discovered and monitored from Operations Manager.
 3. Data Protection Manager - if you have configured the central console to centrally manage your DPM environment.
 4. Operations Manager  
-5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts. 
+5. Virtual Machine Manager - if you have configured integration with Operations Manager to monitor the health of your VMM components, the virtual machines and virtual machine hosts.
 
 ## Hardware requirements
 
 Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2016 - Operations Manager and higher, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager 2012 Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853).
 
-> [!NOTE] 
+> [!NOTE]
 > While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.  
 
 | Operations Manager Server Role | x64 Processor (min) | Memory (min) | Disk space (min) |
@@ -64,7 +64,7 @@ Use this information to evaluate if your hardware environment is ready to suppor
 | Gateway Server managing up to 2000 agents | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | Gateway Server in resource pool managing up to 500 network devices | 8-Core 2.66 GHz CPU | 32 GB | 10 GB |
 | Gateway Server in resource pool managing up to 100 UNIX/Linux computers | 4-Core 2.66 GHz CPU | 4 GB RAM | 10 GB |
-| Web Console server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB | 
+| Web Console server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 | SQL Server Reporting Services server | 4-Core 2.66 GHz CPU | 8 GB | 10 GB |
 
 ## Software requirements for Operations Manager components
@@ -83,7 +83,7 @@ The following versions of Windows Server operating system are supported for the 
 | **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes | yes | yes |
 | **Operations Manager** Reporting server | yes | yes | |
 
-### Client operating system 
+### Client operating system
 
 The following versions of Windows client operating system are supported for the Operations Manager Operations console.
 
@@ -91,7 +91,7 @@ The following versions of Windows client operating system are supported for the 
 |:--- |:---|:--- |:--- |
 | yes | yes | yes | yes |
 
-### Microsoft Monitoring Agent operating system 
+### Microsoft Monitoring Agent operating system
 
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager.
 
@@ -100,8 +100,8 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Microsoft .NET Framework 3.5 or later
-  
-> [!NOTE] 
+
+> [!NOTE]
 > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
 
 > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
@@ -111,23 +111,23 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
 - Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
 
-### Management server/Gateway server 
+### Management server/Gateway server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
-- NET Framework 4 or .NET Framework 4.5 is required. 
+- NET Framework 4 or .NET Framework 4.5 is required.
 
-### Operations Manager console 
+### Operations Manager console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).  
 
-    > [!NOTE] 
-    > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295).  The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server. 
+    > [!NOTE]
+    > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295).  The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 
-- NET Framework 4 or .NET Framework 4.5 is required. 
+- NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Web console
 
@@ -137,31 +137,31 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
     >[!NOTE]
     >The Web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://support.microsoft.com/help/2536204/how-to-use-compatibility-view-in-internet-explorer-9).  
     >
-- Client web browser for HTLM5 web console:  
+- Client web browser for HTML5 web console:  
 
-    - Internet Explorer version 11 
+    - Internet Explorer version 11
     - Microsoft Edge version 40 and higher
     - Google Chrome version 61 and higher
     - Firefox version 56 and higher
-  
+
 - Internet Information Services:  IIS 7.5 and later versions, with the IIS Management Console and the following role services installed:
 
-    - Static Content 
-    - Default Document 
-    - Directory Browsing 
-    - HTTP Errors 
-    - HTTP Logging 
-    - Request Monitor 
+    - Static Content
+    - Default Document
+    - Directory Browsing
+    - HTTP Errors
+    - HTTP Logging
+    - Request Monitor
     - Request Filtering
     - Static Content Compression
     - Web Server (IIS) Support
     - IIS 6 Metabase Compatibility
-    - ASP.NET (both the 3.5 and 4.5 or higher versions of ASP.NET are required.) 
-    - Windows Authentication 
+    - ASP.NET (both the 3.5 and 4.5 or higher versions of ASP.NET are required.)
+    - Windows Authentication
  <br>
 - Selected website for web console: Requires a configured http or https binding.
 - The System Center 2012 R2 Operations Manager SharePoint Dashboard Viewer Web Part is supported on SharePoint 2010 and SharePoint 2013. However, it is not supported on Office 365 SharePoint.
-- NET Framework 4 or .NET Framework 4.5 is required. 
+- NET Framework 4 or .NET Framework 4.5 is required.
 
 > [!NOTE]
 > Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
@@ -171,12 +171,12 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 - Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
 - Microsoft SQL Server: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
-- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements). 
+- Microsoft SQL Server Reporting Services: See [SQL Server Requirements](plan-sqlserver-design.md#sql-server-requirements).
 
-    > [!NOTE] 
+    > [!NOTE]
     > System Center 2016 – Operations Manager and higher supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.  
 
-- NET Framework 4 or .NET Framework 4.5 is required. 
+- NET Framework 4 or .NET Framework 4.5 is required.
 
 ## Virtualization
 
@@ -203,7 +203,7 @@ The following table lists the scenarios in which coexistence between Operations 
 |  Operations Manager 2016 RTM to the latest update rollup| Yes|
 |  Operations Manager 2012 R2 to the latest update rollup| Yes|
 
-## In-place upgrade 
+## In-place upgrade
 
 System Center 2016 - Operations Manager supports an in-place upgrade from the following versions:
 

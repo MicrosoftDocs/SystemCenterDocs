@@ -3,14 +3,14 @@ title: Delete Blob
 description: The Delete Blob marks the specified blob or snapshot for deletion.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d22e65e3-fc99-4dfa-aaf4-c8d2796e678d
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

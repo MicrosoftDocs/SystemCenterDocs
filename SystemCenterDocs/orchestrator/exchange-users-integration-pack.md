@@ -3,14 +3,14 @@ title: Exchange Users Integration Pack for Orchestrator in System Center 2016
 description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 2a7359ab-604e-4e05-89f3-09eb13a14c58
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

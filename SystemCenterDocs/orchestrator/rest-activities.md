@@ -3,14 +3,14 @@ title: REST activities
 description: The following configuration instructions apply to all activities in this integration pack.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8dfe35b3-d3bf-4b34-889d-703b51672ca0
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

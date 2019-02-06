@@ -2,13 +2,13 @@
 ms.assetid: b66ee78f-a74b-4950-83fc-cb8f35375c1d
 title: Deploy a Storage Spaces Direct hyper-converged cluster in VMM
 description: This article describes how to deploy a Storage Spaces Direct hyper-converged cluster in the VMM fabric
-author:  rayne-wiselman
+author: rayne-wiselman
 ms.author: raynew
-manager:  carmonm
-ms.date:  11/07/2017
-ms.topic:  article
-ms.prod:  system-center-2016
-ms.technology:  virtual-machine-manager
+manager: carmonm
+ms.date: 11/07/2017
+ms.topic: article
+ms.prod: system-center
+ms.technology: virtual-machine-manager
 ---
 
 # Deploy a Storage Spaces Direct hyper-converged cluster in VMM
@@ -20,6 +20,13 @@ Read this article to set up a hyper-converged cluster running Storage Spaces Dir
 You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts, or by provisioning from bare-metal servers.
 
 You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
+
+> [!NOTE]
+
+> You must enable S2D before adding the storage provider to VMM.
+To enable S2D, go to **General Configuration** > **Specify the cluster name and host group** and select the **Enable Storage Spaces Direct** option, as shown below:
+
+![S2D enabled](./media/s2d/s2d-enable.png)
 
 After you enable a cluster with S2D, VMM does the following:
 1. The File Server role and the Failover Clustering feature is enabled.

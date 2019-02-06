@@ -3,14 +3,14 @@ title: Get Tier in System Center 2016
 description: The Get Tier activity is used in a runbook to returns data on all tiers within the VMM management server.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: be8840a6-8c1e-4512-8a55-cf9b8d896ee2
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

@@ -1,12 +1,12 @@
 ---
 title: Troubleshooting UNIX and Linux Agent Monitoring
 description: This article provides basic troubleshooting guidance for discovery and monitoring of the UNIX/Linux OS.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 05/22/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
@@ -30,13 +30,13 @@ You can monitor the following aspects of UNIX and Linux computers:
 
 Before you can monitor UNIX and Linux computers, you must complete the following steps:  
 
-1. Import management packs for the by downloading the latest versions from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=29696)  
+1. Import management packs by downloading the latest versions from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=29696)  
 2. [Create a dedicated resource pool](manage-resource-pools-manage.md) for monitoring UNIX and Linux computers   
 3. [Configure the certificates](manage-resource-pools-manage.md#configure-certificates-for-unix-and-linux-dedicated-resource-pools) for each management server in the pool  
 4. Create and [configure Run As accounts](manage-security-create-crossplat-credentials.md)    
 5. Install agent on UNIX and Linux using the [Discovery Wizard](manage-deploy-crossplat-agent-console.md)  
 
-After you complete the steps above and successfully discover and deploy the agent to one or more UNIX and Linux computers, you should verify they are being monitored correctly.  After an agent is deployed, the Run As accounts are used to perform discoveries running using the applicable discovery rules, and then start monitoring.  After several minutes, under the Administration workspace, navigate to **Device Management\UNIX/Linux Computers**, and verify the computers are not listed as **Unknown**.  They should be discovered and showing the specific version of the OS and distro.   
+After you complete the steps above and successfully discover and deploy the agent to one or more UNIX and Linux computers, you should verify they are being monitored correctly. After an agent is deployed, the Run As accounts are used to perform discoveries running using the applicable discovery rules, and then start monitoring. After several minutes, under the Administration workspace, navigate to **Device Management/UNIX/Linux Computers**, and verify the computers are not listed as **Unknown**. They should be discovered and showing the specific version of the OS and distro.   
 
 By default, Operations Manager monitors the following operating system objects:
 
@@ -74,7 +74,7 @@ If you see this error, do the following:
   
 2.  Make sure that you can open an SSH session with the remote host by using the credentials specified in the Discovery Wizard.  
   
-3.  Make sure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information see [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
+3.  Make sure that the credentials specified in the Discovery Wizard have the required privileges for discovery. For more information, see [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md).  
   
 ### Certificate Name and Host Name do not Match  
 The common name (CN) that is used in the certificate must match the fully qualified domain name (FQDN) that is resolved by Operations Manager.  If the CN does not match, you will see the following error when you run the Discovery Wizard:  
@@ -187,7 +187,7 @@ The following examples show how to use the *ExecuteCommand* and *ExecuteShellCom
 This topic describes how to enable logging and debug tools for troubleshooting issues with monitoring UNIX and Linux computers.  
   
 ### Enable Operations Manager Module Logging  
-The Operations Manager Agents for UNIX and Linux maintain several log files which can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels should not be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth  
+The Operations Manager Agents for UNIX and Linux maintain several log files that can be useful when troubleshooting client issues. These log files are located on the managed UNIX or Linux computer. The logging level for the agent log files can be configured as needed. More verbose logging can be useful in diagnosing an issue. For normal operation, log levels should not be set to a value more verbose than the default configurations (Intermediate) in order to prevent excessive log file growth  
   
 > [!NOTE]  
 > Calls made outside of Windows Remote Management (WinRM) are made using SSH/SFTP. These components rely on a separate logging mechanism than Operations Manager.  
@@ -269,7 +269,7 @@ The following example demonstrates a configuration file to rotate the scx.log fi
   
 \#Rotate scx.log  
   
-\#Weekly rotation, retain 4 weeks of compressed logs  
+\#Weekly rotation, retain four weeks of compressed logs  
   
 \#Invoke scxadmin \-log\-rotate to resume logging after rotation  
   
@@ -293,7 +293,7 @@ endscript
   
 }\#Rotate scx.log for the monitoring user account named: monuser  
   
-\#Weekly rotation, retain 4 weeks of compressed logs  
+\#Weekly rotation, retain four weeks of compressed logs  
   
 \#Invoke scxadmin \-log\-rotate to resume logging after rotation  
   
@@ -319,7 +319,7 @@ endscript
   
 \#Optionally, rotate omiserver.log. This requires that OMI be stopped and started to prevent  
   
-\#impact to logging. Monthly rotation, retain 2 weeks of compressed logs  
+\#impact to logging. Monthly rotation, retain two weeks of compressed logs  
   
 \#Uncomment these lines if rotation of omiserver.log is needed  
   

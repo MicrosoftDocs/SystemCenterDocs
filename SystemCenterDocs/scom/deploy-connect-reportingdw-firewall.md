@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
-title: Connect Reporting Data Warehouse Across a Firewall 
+title: Connect Reporting Data Warehouse Across a Firewall
 description: This article describes how to configure a System Center Operations Manager Report server behind a firewall.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 03/13/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

@@ -3,14 +3,14 @@ title: Get Annotation
 description: The Get Annotation activity retrieves annotations for a specified message according to filter criteria that you specify.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 60be0ba1-5e71-4521-bfae-9c7721fdfa03
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

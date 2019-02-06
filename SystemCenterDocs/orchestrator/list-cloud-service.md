@@ -3,14 +3,14 @@ title: List Cloud Service
 description: The List Cloud Service activity lists the cloud services available under the current subscription.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 83b9212b-1329-4ecd-aacf-8329001dd3ad
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

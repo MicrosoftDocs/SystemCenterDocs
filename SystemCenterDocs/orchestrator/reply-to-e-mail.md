@@ -3,14 +3,14 @@ title: Reply To E-Mail
 description: The Reply To E-Mail activity is used in a runbook to reply to email messages.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 6a81c1b1-081b-4b2d-b292-90030263fd96
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -3,14 +3,14 @@ title: Create VM from VHD
 description: The Create VM from VHD activity is used to create a new virtual machine from an existing virtual hard disk.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 87146c7c-d1e7-4faf-a079-7814a81b9f1b
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

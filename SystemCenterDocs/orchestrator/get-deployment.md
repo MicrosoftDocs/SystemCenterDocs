@@ -3,14 +3,14 @@ title: Get Deployment
 description: The Get Deployment activity returns configuration information, status, and system properties for a deployment.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 846005ef-f15b-42e1-a6f5-ead1324a788f
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

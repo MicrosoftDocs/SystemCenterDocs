@@ -3,14 +3,14 @@ title: Active Directory Integration Pack for System Center 2016 - Orchestrator
 description: The Integration Pack for Active Directory is an add-on for System Center 2016 - Orchestrator that enables you to automate common Active Directory management functions.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: bdb60820-2684-40c5-ae5a-b653acb7736c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex
@@ -34,7 +34,7 @@ To download this integration pack, see [Active Directory Integration Pack for Sy
 
 ## Registering and Deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://docs.microsoft.com/en-us/system-center/orchestrator/how-to-add-an-integration-pack?view=sc-orch-1807).
 
 ## Configuring the Active Directory Connections
 

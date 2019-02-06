@@ -3,14 +3,14 @@ title: HP iLO and OA Activities
 description: The following configuration instructions apply to all activities in this integration pack.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 99a34ebc-9063-47c0-b25a-ff5a896ab671
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

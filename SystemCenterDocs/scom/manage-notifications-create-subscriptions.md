@@ -1,12 +1,12 @@
 ---
 title: How to Create Notification Subscriptions
-description: This article describes how to create a notification subscription when exceptions are detected and incident escalation is required.  
-author: mgoedtel
+description: This article describes how to create a notification subscription when exceptions are detected and incident escalation is required.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/03/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21

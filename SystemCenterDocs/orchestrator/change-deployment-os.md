@@ -3,14 +3,14 @@ title: Change Deployment OS
 description: The Change Deployment OS activity changes the underlying guest operating system of a deployment.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 88be6019-d575-4212-b57e-a0fe71f19090
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

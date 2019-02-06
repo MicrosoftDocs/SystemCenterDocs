@@ -3,14 +3,14 @@ title: Create List Item
 description: The Create List Item activity is used in a runbook to create a new item in a SharePoint list.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 79ca0e5d-9350-43e3-95a0-bdb0f7714cdc
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

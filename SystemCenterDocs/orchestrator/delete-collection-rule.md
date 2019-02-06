@@ -3,14 +3,14 @@ title: Delete Collection Rule Activity
 description: Describes the configuration properties for the delete collection rule activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 03/09/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 728e1e07-f776-4080-8ee2-188affb15224
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

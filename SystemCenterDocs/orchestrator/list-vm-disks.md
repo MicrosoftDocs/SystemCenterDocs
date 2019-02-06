@@ -3,14 +3,14 @@ title: List VM Disks
 description: The List VM Disks activity retrieves a list of the disks in your image repository.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 43d6d155-7f84-45eb-aa36-9a7ed4a3b95a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

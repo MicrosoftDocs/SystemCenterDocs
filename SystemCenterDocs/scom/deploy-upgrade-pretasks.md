@@ -1,13 +1,13 @@
 ---
 ms.assetid: c1f1417e-c520-4b9c-9e8c-e0bff263d311
-title:  Pre-Upgrade Tasks When Upgrading System Center Operations Manager
-description:  This guide provides the pre-upgrade tasks you must perform before attempting to upgrade to the newest release of Operations Manager. 
-author: mgoedtel
+title: Pre-Upgrade Tasks When Upgrading System Center Operations Manager
+description: This guide provides the pre-upgrade tasks you must perform before attempting to upgrade to the newest release of Operations Manager.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 01/15/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

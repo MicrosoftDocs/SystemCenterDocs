@@ -3,14 +3,14 @@ title: Perform Client Action activity
 description: Describes the configurable properties for the Perform Client Action activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 392c31ad-7e51-46c4-b153-3db61993a160
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

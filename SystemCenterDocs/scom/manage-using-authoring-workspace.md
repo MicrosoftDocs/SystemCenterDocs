@@ -1,12 +1,12 @@
 ---
 title: Using the Authoring Workspace in Operations Manager
-description: This article describes how to use the Operations Manager Operations console to perform authoring tasks. 
-author: mgoedtel
+description: This article describes how to use the Operations Manager Operations console to perform authoring tasks.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 11/10/2017
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 8a116b94-6bc4-4160-b539-4bd542b8ee5a

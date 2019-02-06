@@ -1,13 +1,13 @@
 ---
 ms.assetid: 045b2f66-b672-4cd2-9d83-9d067b83fdaf
-title:  Configuring a Firewall for Operations Manager
+title: Configuring a Firewall for Operations Manager
 description: This article provides design guidance for which ports and protocols need to be allowed for Operations Manager to communicate through network firewalls and proxy servers.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmomm
-ms.date: 07/20/2018
+ms.date: 11/28/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -21,18 +21,19 @@ The following table shows Operations Manager feature interaction across a firewa
 
 |Operations Manager Feature A|Port Number and Direction|Operations Manager Feature B|Configurable|Note|
 |--------------------------------|-----------------------------|---------------------------------|----------------|--------|
-|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](https://docs.microsoft.com/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br> Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine.|
+|Management server|1433/TCP ---> <br>  1434/UDP ---> <br>  135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Operations Manager database|Yes (Setup)|WMI Port 135 (DCOM/RPC) for the initial connection and then a dynamically assigned port above 1024.  For further information, see [Special considerations for Port 135](https://docs.microsoft.com/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access#BKMK_port_135) <br> Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
 |Management server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
-|management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
+|Management server|161,162 <--->|network device|No|All firewalls between the management server and the network devices need to allow SNMP (UDP) and ICMP bi-directionally.|
 |Gateway server|5723 --->|management server|No||
-|Management server|1433/TCP ---><br>  1434/UDP ---> <br> 135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine.|
+|Management server|1433/TCP ---><br>  1434/UDP ---> <br> 135/TCP (DCOM/RPC) ---> <br> 137/UDP ---> <br> 445/TCP ---> <br> 49152-65535 --->   |Reporting data warehouse|No|Ports 135,137,445,49152-65535 are only required to be open during the initial Management Server installation to allow the setup process to validate the state of the SQL services on the target machine. <sup>2</sup>|
 |Reporting server|5723, 5724 --->|management server|No|Port 5724 must be open to install this feature and can be closed after this feature has been installed.|
-|Operations console|5724 --->|management server|No||
+|Operations console|5724 --->|management server|No|| 
+|Operations console|443 --->|Management Pack Catalog web service|No|Supports downloading management packs directly in the console from the catalog.<sup>1</sup>|
 |Connector framework source|51905 --->|management server|No||
 |Web console server|5724 --->|management server|No||
 |Web console browser|80,443 --->|web console server|Yes (IIS Admin)|Default ports for HTTP or SSL enabled.|
-|Web console for Application Diagnostics|1433/TCP ---><br>  1434 --->|Operations Manager database|Yes (Setup)||
-|Web console for Application Advisor|1433/TCP ---><br>  1434 --->|Reporting data warehouse|Yes (Setup)||
+|Web console for Application Diagnostics|1433/TCP ---><br>  1434 --->|Operations Manager database|Yes (Setup) <sup>2</sup>||
+|Web console for Application Advisor|1433/TCP ---><br>  1434 --->|Reporting data warehouse|Yes (Setup) <sup>2</sup>||
 |Connected management server (Local)|5724 --->|connected management server (Connected)|No||
 |Windows agent installed using MOMAgent.msi|5723 --->|management server|Yes (Setup)||
 |Windows agent installed using MOMAgent.msi|5723 --->|gateway server|Yes (Setup)||
@@ -45,10 +46,12 @@ The following table shows Operations Manager feature interaction across a firewa
 |Agentless Exception Monitoring data from client|51906 --->|management server Agentless Exception Monitoring file share|Yes (Client Monitoring Wizard)||
 |Customer Experience Improvement Program data from client|51907 --->|management server (Customer Experience Improvement Program End) Point|Yes (Client Monitoring Wizard)||
 |Operations console (reports)|80 --->|SQL Reporting Services|No|The Operations console uses Port 80 to connect to the SQL Reporting Services web site.|
-|Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes||
-|Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes||
+|Reporting server|1433/TCP ---><br>  1434/UDP --->|Reporting data warehouse|Yes <sup>2</sup>||
+|Management server (Audit Collection Services collector)|1433/TCP <---<br>  1434/UDP <---|Audit Collection Services database|Yes <sup>2</sup>||
 
-If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
+<sup>1</sup> Additionally, the following URL must be allowed by your firewall - https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx.
+
+<sup>2</sup> If SQL Server is installed with a default instance, the port number is 1433. If SQL Server is installed with a named instance, by default it is configured with a dynamic port. To identify the port, do the following: 
 
 1. In SQL Server Configuration Manager, in the console pane, expand **SQL Server Network Configuration**, expand **Protocols** for <instance name>, and then double-click **TCP/IP**.
 2. In the **TCP/IP Properties** dialog box, on the **IP Addresses** tab, note the port value for **IPAall**.  

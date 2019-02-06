@@ -3,14 +3,14 @@ title: Create Recovery Point
 description: The Create Recovery Point activity is used to create a backup for a selected data source.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 178651bc-0edb-4046-8b64-4bbb2998408f
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

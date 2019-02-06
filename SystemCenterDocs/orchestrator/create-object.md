@@ -3,14 +3,14 @@ title: Create Object
 description: The Create Object is used to create a new Service Manager record associated with a specified class.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: ef4f2dd4-3ba2-4781-a0a9-cd153feb8ea9
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

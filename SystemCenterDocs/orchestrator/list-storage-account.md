@@ -3,14 +3,14 @@ title: List Storage Account
 description: The List Storage Account activity lists the storage accounts available under the current subscription.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 919aaeea-c0f3-43a9-a772-beabd4d9d209
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

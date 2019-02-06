@@ -1,10 +1,11 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: LandingPage
-author: MattLusherRT
-ms.author: apexprodleads
+author: rayne-wiselman
+ms.author: raynew
 ms.date: 04-05-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.prod: system-center
+ms.technology: orchestrator
 ms.topic: landing-page
 title: Orchestrator Documentation
 description: Orchestrator is a workflow management solution for the data center. With Orchestrator you can automate the creation, monitoring, and deployment of resources in your environment.

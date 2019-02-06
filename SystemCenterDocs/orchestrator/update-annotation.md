@@ -3,14 +3,14 @@ title: Update Annotation
 description: The Update Annotation activity is used in a runbook to update an annotation to an existing message.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 5966113a-fea5-46b9-a510-e57745f92737
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

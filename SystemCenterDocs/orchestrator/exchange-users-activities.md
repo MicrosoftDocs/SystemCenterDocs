@@ -3,14 +3,14 @@ title: Exchange Users Activities
 description: The configuration instructions in this topic apply to all activities in the Exchange Users Integration Pack.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 624f4afd-f248-4e1c-a2c2-e747d2ed3fd4
-author: cfreemanwa
+author: JYOTHIRMAISURI
 ms.author: raynew
 manager: carmonm
 ---

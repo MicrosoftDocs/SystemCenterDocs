@@ -2,7 +2,7 @@
 title: Get VM Host activity in System Center - Orchestra
 description: Returns data on all the host within the VMM server
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
 author: rayne-wiselman

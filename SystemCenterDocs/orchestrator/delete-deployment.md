@@ -3,14 +3,14 @@ title: Delete Deployment
 description: The Delete Deployment activity deletes the specified deployment.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 40e827f1-2dfa-4a05-81c8-e23bfd8643ec
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

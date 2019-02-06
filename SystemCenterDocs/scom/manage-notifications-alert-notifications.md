@@ -1,12 +1,12 @@
 ---
 title: Subscribing to Alert Notifications
-description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.  
-author: mgoedtel
+description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 01/03/2017
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: 4b0d664b-f806-4c3f-896b-aa0160ee4fb8

@@ -2,12 +2,12 @@
 ms.assetid: 113f2b4e-8f48-43da-9f31-2a2bf1d78ec5
 title: How to Run, Save, and Export a Report
 description: This article describes how to run, save and export a report in Operations Manager 2016.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

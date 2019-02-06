@@ -3,14 +3,14 @@ title: Check Cloud Service Name Availability
 description: The Check Cloud Service Name Availability activity checks to see if the specified cloud service name is available, or if it has already been taken.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: b4f862ca-5918-4f0a-9031-973cce272d68
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -3,14 +3,14 @@ title: Delete Alert Activity
 description: The Delete Alert activity deletes an alert on the IBM Tivoli Netcool/OMNIbus ObjectServer.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: f36431cf-1c54-4ae3-9aa5-ee41d39c7631
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

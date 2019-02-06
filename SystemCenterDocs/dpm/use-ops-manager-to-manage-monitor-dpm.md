@@ -1,15 +1,15 @@
 ---
-description:  Describes how to manage and monitor DPM servers with Operations Manager.
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.prod:  system-center-threshold
-keywords:  
+description: Describes how to manage and monitor DPM servers with Operations Manager.
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.prod: system-center
+keywords: 
 ms.date: 5/10/2018
-title:  Manage and monitor DPM servers with Operations Manager
-ms.technology:  data-protection-manager
-ms.assetid:  97fd6656-af44-4e5c-bef8-dc57643b0181
-ms.author: markgal
+title: Manage and monitor DPM servers with Operations Manager
+ms.technology: data-protection-manager
+ms.assetid: 97fd6656-af44-4e5c-bef8-dc57643b0181
+ms.author: raynew
 ---
 
 # Manage and monitor DPM servers with Operations Manager

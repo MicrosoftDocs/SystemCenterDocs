@@ -3,14 +3,14 @@ title: Forward Item
 description: The Forward Item activity is used in a runbook to forward an existing email message or appointment.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 147edef0-e9db-49e8-b6f8-f8539a7c610d
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

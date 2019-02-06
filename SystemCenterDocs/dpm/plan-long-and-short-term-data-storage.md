@@ -1,15 +1,15 @@
 ---
-description: Information to help you identify your storage needs and to prepare the storage to support a DPM 2016 deployment.  
-manager:  carmonm
-ms.topic:  article
-author:  markgalioto
-ms.author: markgal
-ms.prod:  system-center-threshold
-keywords:  
+description: Information to help you identify your storage needs and to prepare the storage to support a DPM 2016 deployment.
+manager: carmonm
+ms.topic: article
+author: rayne-wiselman
+ms.author: raynew
+ms.prod: system-center
+keywords: 
 ms.date: 09/25/2018
-title:  Prepare data storage
-ms.technology:  data-protection-manager
-ms.assetid:  ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
+title: Prepare data storage
+ms.technology: data-protection-manager
+ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852
 ---
 
 # Prepare data storage

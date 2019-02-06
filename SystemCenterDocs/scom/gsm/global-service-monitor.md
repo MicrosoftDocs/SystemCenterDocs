@@ -2,13 +2,13 @@
 title: "Global Service Monitor | Microsoft Docs"
 ms.custom: ""
 ms.date: 4/26/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: article
 applies_to: System Center 2016 - Operations Manager
 ms.assetid: 147a3ec0-43e7-4cd7-afcf-384a3476f9f4
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ---

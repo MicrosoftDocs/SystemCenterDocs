@@ -2,9 +2,9 @@
 title: Install System Center - Service Manager on a single computer (minimum configuration)
 description: This article helps you to evaluate System Center - Service Manager when you want to install it on one computer.
 manager: carmonm
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 01/23/2018
 ms.technology: service-manager
 ms.tgt_pltfrm: na
@@ -184,7 +184,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the data warehouse installation  
 
-1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server **, and then click **SQL&nbsp;Server Management Studio**.  
+1.  On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL&nbsp;Server **, and then click **SQL&nbsp;Server Management Studio**.
 
 2.  In the **Connect to Server** dialog box, complete these steps:  
 

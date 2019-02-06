@@ -1,15 +1,15 @@
 ---
-title:  Configure and use Service Manager cmdlets
+title: Configure and use Service Manager cmdlets
 description: This article provides an introduction to the Service Manager cmdlets for the Windows PowerShell command-line interface and describes how to get started using them.
-manager:  carmonm
-ms.topic:  article
-author: bandersmsft
-ms.author: banders
-ms.prod:  system-center-2016
-keywords:  
+manager: carmonm
+ms.topic: article
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
-ms.technology:  service-manager
-ms.assetid:  f032839d-a148-4dd9-9309-a51a047f197a
+ms.technology: service-manager
+ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
 ---
 
 # Configure and use Service Manager cmdlets for Windows PowerShell

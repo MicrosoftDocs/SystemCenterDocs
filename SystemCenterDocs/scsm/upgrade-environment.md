@@ -3,9 +3,9 @@ title: Upgrade to System Center 2016 - Service Manager
 description: Use this article to upgrade to System Center 2016 - Service Manager.
 manager: carmonm
 ms.custom: na
-ms.prod: system-center-2016
-author: bandersmsft
-ms.author: banders
+ms.prod: system-center
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.date: 02/23/2016
 ms.reviewer: na
 ms.suite: na
@@ -13,7 +13,6 @@ ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
-
 ---
 
 # Upgrade your environment to System Center 2016 - Service Manager

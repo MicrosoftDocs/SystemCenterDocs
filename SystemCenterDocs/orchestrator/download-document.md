@@ -3,14 +3,14 @@ title: Download Document
 description: The Download Document activity is used in a runbook to download a document from a Microsoft SharePoint document library.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 982e9a07-fd87-4d05-b486-ca9b5e91c2bb
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

@@ -3,14 +3,14 @@ title: Rename Group
 description: You can use the Rename Group activity in a runbook to rename a group in the Microsoft Active Directory.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: fe6cca94-3419-4008-8bb8-8d6ad02599a7
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

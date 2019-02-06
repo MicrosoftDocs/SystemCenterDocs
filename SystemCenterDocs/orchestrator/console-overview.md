@@ -2,16 +2,15 @@
 title: Overview of Orchestration Console
 desc: Provides a summary of the administrative console for Orchestrator and basic functionality procedures.
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-  - orchestrator
+ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.author: raynew
 ms.date: 10/12/2016
-author: cfreemanwa
+author: rayne-wiselman
 manager: carmonm
 ---
 # Overview of the Orchestration console

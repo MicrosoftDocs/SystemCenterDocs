@@ -2,7 +2,7 @@
 title: View Orchestrator data with PowerPivot
 description: Describes how to use PowerPivot for Excel to analyze operations data in System Center  - Orchestrator.
 ms.date: 01/17/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 author: rayne-wiselman

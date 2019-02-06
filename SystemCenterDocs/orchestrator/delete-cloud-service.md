@@ -3,14 +3,14 @@ title: Delete Cloud Service
 description: The Delete Cloud Service activity deletes the specified cloud service from Azure.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 54232d7c-117c-4eb5-839e-cdb8e2f4c2f2
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

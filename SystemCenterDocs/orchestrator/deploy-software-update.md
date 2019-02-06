@@ -3,14 +3,14 @@ title: Deploy Software Update activity
 description: Describes the configurable properties for the Deploy Software Update activity for Configuration Manager Integration Pack.
 ms.custom: na
 ms.date: 15/03/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: d7300764-da0a-40de-ad3e-26ec34c0bf1c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

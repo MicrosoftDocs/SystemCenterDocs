@@ -3,14 +3,14 @@ title: SharePoint Activities
 description: The following configuration instructions apply to all activities in this integration pack.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 998dfa81-2129-4879-b4cf-743b4e3ca609
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

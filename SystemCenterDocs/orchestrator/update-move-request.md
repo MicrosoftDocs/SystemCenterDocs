@@ -3,14 +3,14 @@ title: Update Move Request
 description: You can use the Update Move Request activity in a runbook to change the attributes of an existing Move request, for an on-premise environment.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 835c5d91-79b8-4d0e-9cdf-89e472328608
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

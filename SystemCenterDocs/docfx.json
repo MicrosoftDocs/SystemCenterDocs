@@ -1,5 +1,6 @@
 {
   "build": {
+    "markdownEngine": "DFM",
     "content": [
       {
         "files": [
@@ -162,6 +163,20 @@
           "**/obj/**",
           "**/includes/**"
         ],
+        "group": "sma",
+        "src": "sma",
+        "dest": "sma"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
         "group": "orchestrator",
         "src": "orchestrator",
         "dest": "orchestrator"
@@ -261,7 +276,6 @@
       "vmm": {
         "dest": "vmm",
         "moniker_range": ">= sc-vmm-2016 <= sc-vmm-1807"
-
       }
     }
   }

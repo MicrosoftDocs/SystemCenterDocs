@@ -3,14 +3,14 @@ title: Move VM
 description: The Move VM activity is used to move the selected virtual machine from one network location to another.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: eb03a923-0d0c-4e47-a287-5ac20650028c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -3,14 +3,14 @@ title: Get Disk
 description: The Get Disk activity is used to retrieve an existing virtual disk based on the filters that you specify.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 18befb12-ce3b-48e3-98fc-7d7b6ff34ff9
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

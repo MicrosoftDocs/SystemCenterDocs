@@ -2,11 +2,11 @@
 title: Stop Service activity in System Center - Orchestra
 description: The Stop Service activity is used in a runbook to stop a VMM service.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: article
 ms.assetid: 488bb198-73fc-4983-b0ef-14a8c7176f9c
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

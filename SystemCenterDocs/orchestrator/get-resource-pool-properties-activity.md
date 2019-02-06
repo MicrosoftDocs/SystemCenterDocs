@@ -3,14 +3,14 @@ title: Get Resource Pool Properties Activity
 description: The Get Resource Pool Properties activity is used in a runbook to retrieve all the runtime information and static configuration information for a resource pool.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: ffdc4a8b-e875-437d-afa0-9a1a0f1007bf
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

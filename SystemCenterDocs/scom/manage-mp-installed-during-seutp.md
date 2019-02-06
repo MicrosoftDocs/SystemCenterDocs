@@ -2,12 +2,12 @@
 ms.assetid: 838bba51-87c4-4b51-b540-66c51348cdfe
 title: Management Packs Installed with Operations Manager
 description: This article describes what management packs are installed with Operations Manager 2016.
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
 ms.date: 11/15/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---

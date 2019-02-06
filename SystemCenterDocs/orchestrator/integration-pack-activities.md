@@ -3,14 +3,14 @@ title: FTP Integration Pack Activities
 description: The following configuration instructions apply to all activities in this integration pack.
 ms.custom: na
 ms.date: 4/25/2017
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: a5d82cba-a523-41e8-b7f6-165662bc5d8a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

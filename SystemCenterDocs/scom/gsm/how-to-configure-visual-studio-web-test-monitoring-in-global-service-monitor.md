@@ -1,15 +1,15 @@
 ---
 title: "How to Configure Visual Studio Web Test Monitoring in Global Service Monitor | Microsoft Docs"
-description:
+description: 
 ms.custom: ""
 ms.date: 4/26/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.tgt_pltfrm: ""
 ms.topic: article
 applies_to: System Center 2016 - Operations Manager
 ms.assetid: da909b42-e995-4399-84c4-5de273e04532
-author: mgoedtel
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ---

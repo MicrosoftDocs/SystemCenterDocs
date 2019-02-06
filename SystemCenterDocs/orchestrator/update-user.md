@@ -3,14 +3,14 @@ title: Update User
 description: You can use the Update User activity in a runbook to update the properties of a user in the Microsoft Active Directory.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 2f5a4d2c-5b1d-4073-bc9f-1bf59a0d6384
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

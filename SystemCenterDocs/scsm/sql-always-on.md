@@ -1,15 +1,15 @@
 ---
-title:  Using SQL Server AlwaysOn availability groups with Service Manager
+title: Using SQL Server AlwaysOn availability groups with Service Manager
 description: Use SQL Server AlwaysOn availability groups with Service Manager to support a failover environment.
-manager:  carmonm
-ms.topic:  article
-author:  bandersmsft
-ms.author: banders
-ms.prod:  system-center-2016
-keywords:  
+manager: carmonm
+ms.topic: article
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
-ms.technology:  service-manager
-ms.assetid:  706e433d-c641-4dc3-8be5-fe582ef9f4bc
+ms.technology: service-manager
+ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
 ---
 
 # Use SQL Server AlwaysOn availability groups with Service Manager to support failover

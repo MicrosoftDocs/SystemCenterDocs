@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
-title:  How to create a dashboard with the Topology widget in the Web console
-description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Topology widget.  
-author: mgoedtel
+title: How to create a dashboard with the Topology widget in the Web console
+description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Topology widget.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/20/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: '>sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article

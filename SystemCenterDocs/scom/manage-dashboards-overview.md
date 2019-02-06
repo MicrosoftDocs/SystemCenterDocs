@@ -1,12 +1,12 @@
 ---
 title: Dashboards in Operations Manager
-description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.  
-author: mgoedtel
+description: This article provides an overview of dashboards in Operations Manager to visualize operational data from monitored services and their components.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
 ms.date: 12/05/2016
 ms.custom: na
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -17,9 +17,9 @@ A dashboard has a particular layout, which specifies the arrangement of the cell
 
 Dashboards in Operations Manager deliver the following benefits:
  
-* A dashboard is defined and shared in a management pack.  
-* Authoring a dashboard is a simple process for an Operations Manager user.  A new dashboard can be created or an existing dashboard modified in both the Operations console and the Web console with the **New Dashboard and Widget** wizard.  However, if the default dashboard templates do not meet your requirements, you can [author custom dashboards](https://social.technet.microsoft.com/wiki/contents/articles/24639.aspx) and create [custom widgets](https://social.technet.microsoft.com/wiki/contents/articles/24641.operations-manager-management-pack-authoring-custom-widgets.aspx) with Visual Studio using the [Visual Studio Authoring Extensions](https://www.microsoft.com/download/details.aspx?id=30169).   
-* Once created, a dashboard is available from the Operations console, the Web console and the SharePoint Web Part.   
+* A dashboard is defined and shared in a management pack.
+* Authoring a dashboard is a simple process for an Operations Manager user. A new dashboard can be created or an existing dashboard modified in both the Operations console and the Web console with the **New Dashboard and Widget** wizard. However, if the default dashboard templates do not meet your requirements, you can [author custom dashboards](https://social.technet.microsoft.com/wiki/contents/articles/24639.aspx) and create [custom widgets](https://social.technet.microsoft.com/wiki/contents/articles/24641.operations-manager-management-pack-authoring-custom-widgets.aspx) with Visual Studio using the [Visual Studio Authoring Extensions](https://www.microsoft.com/download/details.aspx?id=30169).
+* Once created, a dashboard is available from the Operations console, the Web console and the SharePoint Web Part.
 
 ## Dashboard templates
 

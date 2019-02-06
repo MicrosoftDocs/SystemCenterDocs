@@ -3,14 +3,14 @@ title: Create Message
 description: The Create Message activity is used in a runbook to store a new message on the management server.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: e2d32a3a-f9ee-4ff4-8a4b-6a32b1f01f4a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

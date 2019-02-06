@@ -3,14 +3,14 @@ title: Move Group
 description: You can use the Move Group activity in a runbook to move a group under a new parent path in the Microsoft Active Directory.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 1673dd33-f7e3-43e7-af9d-daecccd71558
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

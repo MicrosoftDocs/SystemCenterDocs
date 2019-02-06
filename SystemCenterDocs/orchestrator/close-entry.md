@@ -3,14 +3,14 @@ title: Close Entry
 description: The Close Entry activity is used in a runbook to close existing entries in HP Service Manager.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: fe2b849f-269d-4fa7-b1b4-b9691613173e
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

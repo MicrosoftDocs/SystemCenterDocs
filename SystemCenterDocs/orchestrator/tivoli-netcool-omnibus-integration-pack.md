@@ -3,14 +3,14 @@ title: IBM Tivoli Netcool OMNIbus Integration Pack for System Center 2016 - Orch
 description: The Integration Pack for IBM Tivoli Netcool/OMNIbus is an add-on for System Center 2016 - Orchestrator that enables you to automate responses to alerts raised within IBM Tivoli Netcool/OMNIbus.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dcdd6577-1783-4f61-9aae-dd4c590bb2e3
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

@@ -3,14 +3,14 @@ title: Change Deployment Configuration
 description: The Change Deployment Configuration activity initiates a change to the deployment configuration.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: e4769f6f-dad7-4132-8d3c-917eee12d18a
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

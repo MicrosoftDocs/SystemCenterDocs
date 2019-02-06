@@ -3,14 +3,14 @@ title: Update Activity
 description: The Update Activity activity is used to make changes to activity records for the selected activity class.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 337c7278-33f1-40bd-8966-0f69c67711a5
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

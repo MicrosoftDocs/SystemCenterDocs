@@ -3,14 +3,14 @@ title: Reconfigure VM activity
 description: The Reconfigure VM activity is used in a runbook to change the hardware settings of a virtual machine.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: c9917c4f-376f-4a60-88b5-c141e4200c9f
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

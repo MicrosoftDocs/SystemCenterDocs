@@ -1,10 +1,11 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: LandingPage
-author: MattLusherRT
-ms.author: apexprodleads
+author: JYOTHIRMAISURI
+ms.author: magoedte
 ms.date: 04-05-2017
-ms.service-OR-ms.prod: get-from-content-team
+ms.prod: system-center
+ms.technology: operations-manager
 ms.topic: landing-page
 title: Operations Manager Documentation
 description: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resloution.

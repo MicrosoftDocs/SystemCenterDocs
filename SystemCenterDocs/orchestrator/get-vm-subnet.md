@@ -2,10 +2,10 @@
 title: Get VM Subnet activity in System Center - Orchestra
 description: The Get VM Subnet activity is used in a runbook to return all virtual subnets on the VMM management server that meet the filtering criteria.
 ms.date: 01/22/2018
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 ---

@@ -3,14 +3,14 @@ title: Update Object
 description: The Update Object activity is used to change the values of one or more properties of an existing object.
 ms.custom: na
 ms.date: 12/02/2016
-ms.prod: system-center-threshold
+ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
 ms.technology: orchestrator
 ms.tgt_pltfrm: na
 ms.topic: reference
 ms.assetid: 8aacf84b-0606-4bf7-b094-865108bbfae7
-author: cfreemanwa
+author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
 robots: noindex

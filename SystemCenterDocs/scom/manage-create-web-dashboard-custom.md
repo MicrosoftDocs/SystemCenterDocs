@@ -1,13 +1,13 @@
 ---
 ms.assetid: 
-title:  How to create a dashboard with the Custom widget in the Web console 
-description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Custom widget.  
-author: mgoedtel
+title: How to create a dashboard with the Custom widget in the Web console
+description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Custom widget.
+author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
 ms.date: 07/19/2018
 ms.custom: na
-ms.prod: system-center-2016
+ms.prod: system-center
 monikerRange: '>sc-om-2016'
 ms.technology: operations-manager
 ms.topic: article

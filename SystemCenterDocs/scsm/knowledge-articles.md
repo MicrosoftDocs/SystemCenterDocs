@@ -3,10 +3,10 @@ title: Manage knowledge articles
 description: Describes how to manage Service Manager knowledge articles.
 manager: carmonm
 ms.topic: article
-author: bandersmsft
-ms.author: banders
-ms.prod: system-center-2016
-keywords:  
+author: JYOTHIRMAISURI
+ms.author: v-jysur
+ms.prod: system-center
+keywords: 
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 50edf3f3-fa1d-4134-8383-dfc6be73ddf0
