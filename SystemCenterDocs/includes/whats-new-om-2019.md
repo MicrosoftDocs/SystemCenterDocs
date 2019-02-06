@@ -32,7 +32,7 @@ The issue of generating new tickets and new alerts whenever failover or load bal
 With OM 2019, there are changes in the Linux agent package bundling. This bundle now consists of scx and omi shell bundles only. Post agent installation, a new user called **omiuser** will be created on the agent machine. If you want to use the Log Monitoring feature, you will have to install Linux Log Monitoring management pack, shipped in the box. This change is introduced so omsagent user is created only when you use Log File Monitoring feature.
 
 ## Improvement in Agent initiated maintenance mode
-Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is event-based as opposed to registry-based, in earlier releases. This new change triggers the agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss to process the maintenance request. [Learn more](../scom/manage-maintenance-mode-overview.md).
+Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is event-based as opposed to registry-based, in earlier releases. This new change triggers the agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss to process the maintenance request. [Learn more](../scom/manage-maintenance-mode-overview#agent-initiated-maintenance-mode-through-an-event.md).
 
 With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
 
@@ -128,8 +128,9 @@ System Center 2019 - Operations Manager supports an in-place upgrade from the fo
 ## Notifications and subscriptions enhancement  
 The existing alert notifications and subscription experience in Operations Manager has been enhanced to deliver more value to the end user. These enhancements can be broadly categorized into the following two areas:
 
-- **Intuitive Email Notifications**
-- **Enhanced Criteria Builder**  
+- **Intuitive Email Notifications** - support for HTML format notification. [Learn more](manage-notificatons-create-email-channel.md)
+- **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[learn more]()
+- **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[learn more](manage-notifications-create-subscriptions#)
 
 ## URL monitoring enhancements with certificate errors
 URL monitoring (and web application availability & transaction monitoring), are used to test a URL\website\web-based application, by sending WinHttp requests, validating their response, and measuring their performance.

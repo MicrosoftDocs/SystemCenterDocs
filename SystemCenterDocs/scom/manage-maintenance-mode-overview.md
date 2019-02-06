@@ -180,7 +180,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 ::: moniker range="sc-om-2019"
 
 ## Agent initiated maintenance mode through an event
-Use the following procedure:
+Use the following procedure to configure agent initiated maintenance mode:
 
 1.	Log onto the computer and start Windows PowerShell as an administrator.
 2.	Change directory to *C:\Program Files\Microsoft Monitoring Agent\Agent*.

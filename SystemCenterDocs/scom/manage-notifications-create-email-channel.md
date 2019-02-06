@@ -70,18 +70,53 @@ Before you begin, gather the following information:
 
 ## Create an email notification in HTML format
 
+The email notifications experience has been improvised with the ability to create and send HTML formatted email notifications.
+
+With the new rich HTML email, you will also be able to launch the alerts drill-down page, alert source drill-down page and drill-down page for the corresponding rule/monitor to get more relevant information on troubleshooting the issue. Click the respective links provided at the bottom of the email to launch these drill-down pages.
+
 1.	Use the procedure in the above section for creating email notification channel.
 2.	While configuring the format of the email notifications, select **Enable HTML formatting** for the email message, as shown in the image below.
 
     ![email notification HTML format](./media/email-notifications/email-notifications-html.png)
 
-3. You can edit the default content (or completely change) by copying the content (through copy button) and edit the same in any HTML editor. Paste it back to see the preview of the email notification.
+3. You can edit the default content (or completely change). To edit:
+   - Copy the content using **Copy** button.
+   - Edit the content in any in any HTML editor.
+   - Paste the edited content back by using **Paste** button to view the preview of the email notification.
+
+   The following table enlists the links to be used for different parameters in the HTML template:
+
+
+   |Text |Link |  
+   |-------------|---|-------------|  
+   |Alert Source  |$Data[Default='Not Present']/Context/DataItem/ManagedEntityPath$\$Data[Default='Not Present']/Context/DataItem/ManagedEntityDisplayName$ |
+   | Alert Name  |$Data[Default='Not Present']/Context/DataItem/AlertName$ |
+   |Alert Description   |$Data[Default='Not Present']/Context/DataItem/AlertDescription$  |
+   | Alert Severity   |$Data[Default='Not Present']/Context/DataItem/Severity$   |
+   |  | |
+   |   | |
+   |   | |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Here is the sample preview for a critical alert:
 
-    ![HTML alert sample](./media/email-notifications/email-notifications-html-sample.png)
+![HTML alert sample](./media/email-notifications/email-notifications-html-sample.png)
 
-    Here is a sample warning email:
-    ![HTML alert sample](./media/email-notifications/email-notifications-html-sample-warning.png)
+Here is a sample warning email:
+
+![HTML alert sample](./media/email-notifications/email-notifications-html-sample-warning.png)
 
 ::: moniker-end
 
