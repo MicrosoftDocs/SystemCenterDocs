@@ -292,6 +292,14 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> If the nodes are in the same subnet, you must provide the REST IP address. If the nodes are in different subnets, provide the REST DNS name.   
 **ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
 
+::: moniker range="sc-vmm-2019"
+
+> [!NOTE]
+
+> Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](https://docs.microsoft.com/en-us/windows-server/networking/sdn/security/kerberos-with-spn).
+
+::: moniker-end
+
 
 ## Add the network controller service to VMM
 
