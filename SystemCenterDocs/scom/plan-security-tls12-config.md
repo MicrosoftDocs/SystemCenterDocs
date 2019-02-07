@@ -101,7 +101,7 @@ foreach($Protocol in $ProtocolList)
 Exit 0
 ```
 ## Configure Operations Manager to use only TLS 1.2
-After completing the configuration of all prerequisites for Operations Manager, perform the following steps on all management servers, the server hosting the Web console role, and on any Windows or Linux server the agent is installed on.  
+After completing the configuration of all prerequisites for Operations Manager, perform the following steps on all management servers, the server hosting the Web console role, and on any Windows computer the agent is installed on.  
 
 >[!IMPORTANT]
 >Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before making any modifications, back up the registry for restoration in case problems occur.
