@@ -58,7 +58,7 @@ VMM 2019 supports update and upgrade of an S2D host or a cluster. You can update
 ## Storage
 
 ### Storage DO
-This feature helps in preventing Cluster Shared Volumes (CSV) from becoming full due to expanding/new VHDs placed on the CSV. You will be able to set threshold to trigger a warning while new disk placement or auto migrate VHDs to other CSVs in the cluster when free storage space in the CSV falls below the threshold. [Learn more](../vmm/hyper-v-update.md).
+This feature helps in preventing Cluster Shared Volumes (CSV) from becoming full due to expanding/new VHDs placed on the CSV. You will be able to set threshold to trigger a warning while new disk placement or auto migrate VHDs to other CSVs in the cluster when free storage space in the CSV falls below the threshold. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/vm-optimization?view=sc-vmm-1807).
 
 
 ### Improvement in VMM storage QoS
@@ -81,7 +81,7 @@ With VMM 2019, you can now  choose any location to place the new disc. You can m
 ### Support for storage health monitoring
 Storage health monitoring helps you to monitor the health and operational status of storage pool, LUNs, and physical disks in the VMM fabric.
 
-VMM 2019 supports the storage health monitoring feature. You can monitor the storage health in the **Fabric** page of VMM console. Learn more.
+VMM 2019 supports the storage health monitoring feature. You can monitor the storage health in the **Fabric** page of VMM console. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/manage-storage?view=sc-vmm-1807).
 
 
 ## Networking
@@ -121,11 +121,11 @@ VMM 2019 supports VMware ESXi v6.5 servers in VMM fabric. This support facilitat
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud. Earlier versions of VMM supported the Layer 3 gateway configuration through PowerShell.
 
-In VMM 2019, you can now configure Layer 3 forwarding gateway using the VMM console. Learn more.
+In VMM 2019, you can now configure Layer 3 forwarding gateway using the VMM console. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/sdn-route-network-traffic?view=sc-vmm-2016#configure-l3-forwarding).
 
 ### Support for Static MAC address on VMs deployed on a VMM cloud, convert MAC address type
 
-This feature allows you to set static MAC address on VMs deployed on a cloud. Also, MAC address can be changed from static to dynamic and vice versa. Learn more.
+This feature allows you to set static MAC address on VMs deployed on a cloud. Also, MAC address can be changed from static to dynamic and vice versa. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/provision-vms?view=sc-vmm-1807).
 
 ## Security
 
@@ -162,10 +162,10 @@ VMM 2019 supports SQL 2017. You can upgrade SQL 2016 to 2017.
 In a scenario where enterprises want to create a user role for troubleshooting,  it is necessary that the user has access to all the VMs so the user can make any required changes on the VMs to resolve the issue. There is also a need for the user to have access to the fabric to identify the root cause for the issue. However, for security reasons, this user should not be given the privileges to make any changes on the fabric (add storage, add hosts etc).
 
 The current RBAC in VMM does not have a role defined for this persona and the existing roles of Delegated Admin and Fabric admin have too little or more than necessary permissions to perform just troubleshooting.
-To address this issue, VMM 2019 supports a new role called **Virtual Machine Administrator**. The user of this role has Read and Write access to all VMs but read-only access to the fabric. Learn more.
+To address this issue, VMM 2019 supports a new role called **Virtual Machine Administrator**. The user of this role has Read and Write access to all VMs but read-only access to the fabric. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/account-user-role?view=sc-vmm-1807).
 
 ### Support for Group Managed Service Account as VMM service account
 
 Group Managed Service Account (gMSA) helps improve the security posture and provides convenience through automatic password management, simplified service principle name (SPN) management, and the ability to delegate the management to other administrators.
 
-VMM 2019 supports the use of gMSA for **Management server service account**. Learn more.
+VMM 2019 supports the use of gMSA for **Management server service account**. [Learn more](https://docs.microsoft.com/en-us/system-center/vmm/install?view=sc-vmm-1807).
