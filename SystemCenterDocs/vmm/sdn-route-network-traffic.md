@@ -264,7 +264,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 **Use the following steps to configure L3 forwarding**:
 
-> [NOTE]
+> [!NOTE]
 
 > You cannot  limit bandwidth in L3 VPN connection.
 
