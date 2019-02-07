@@ -243,10 +243,9 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
     ```
 
+::: moniker-end
 
-    ::: moniker-end
-
-    ::: moniker range="sc-vmm-2019"
+::: moniker range="sc-vmm-2019"
 
 ## Configure L3 forwarding
 

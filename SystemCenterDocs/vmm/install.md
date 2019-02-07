@@ -23,7 +23,7 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 
 ## Run setup
 
-> [NOTE]
+> [!NOTE]
 
 >   The service account for VMM can be:
  - 	A local account
