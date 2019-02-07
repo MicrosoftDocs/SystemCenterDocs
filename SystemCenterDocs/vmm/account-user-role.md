@@ -25,6 +25,9 @@ This article describes how to set up System Center - Virtual Machine Manager (VM
     - **Administrator role**: Administrators can add and remove users
     - **Delegate Administrator role**: Administrators can create the role. Delegated Administrators can create Delegated Administrator roles that include a subset of their scope, library servers, and Run As accounts.
     - **Read-only Administrator role**: Administrators can create the role. Delegated Administrators can create Read-only Administrator roles that include a subset of their scope, library servers, and Run As accounts.
+    - **Virtual Machine Administrator role**: Administrators can create the role.
+    Delegated Administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers and Run-As accounts.
+
     - **Tenant Administrator role**: Administrators and Delegated Administrators can create this role.
 - The Administrator role is created by default when you install VMM. The user who performs the installation, and all domain users in the local Administrators group on the server, are added to the Administrator role. You can add or remove members in the role properties.
 
@@ -51,4 +54,9 @@ This article describes how to set up System Center - Virtual Machine Manager (VM
 13. In **Summary** page, review the settings, and click **Finish** to create the role. Verify the role appears in **Settings** > **Security** > **User Roles**.
 
 
-After you create a user role, you can change its settings in the role properties.
+## Create VM Administrator role
+
+> [!NOTE]
+ VM Administrator role can be scoped to both clouds and host groups. Even if the user is scoped to a cloud, the user would be able to read only all the fabric elements attached to the cloud.
+
+To create VM Administrator role, use the steps in the above procedure, select **Virtual Machine Administrator** as the role, and assign the scope and permissions.

@@ -75,6 +75,8 @@ On the remote peer device, use the  **VM network endpoint IP address** from the 
 ![remote site](./media/sdn-route-network-traffic/sdn-route-network-traffic3.png)
 
 
+::: moniker range="<sc-vmm-2019"
+
 ## Configure L3 forwarding  
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
@@ -240,6 +242,53 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
     }
 
     ```
+
+
+    ::: moniker-end
+
+    ::: moniker range="sc-vmm-2019"
+
+## Configure L3 forwarding
+
+> [!NOTE]
+
+> Ensure the following before you configure L3.
+
+> - Ensure you're logged on as an administrator on the VMM server.
+> - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
+
+**Use the following steps to create the next-hop logical network in SCVMM:**
+
+1.  On the VMM console, select **Logical Networks**, right-click, and select **Create Logical Network**.
+2. In the **Settings** page, choose **One connected network** and select the checkbox for **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**
+3. Create an IP Pool for this new logical network. IP address from this pool is required for setting up L3 forwarding.
+
+**Use the following steps to configure L3 forwarding**:
+
+> [NOTE]
+
+> You cannot  limit bandwidth in L3 VPN connection.
+
+1. In the VMM console, select the tenant virtual network, which you want to connect to the physical network through L3 gateway.  
+2. Right-click, select **Properties** of the tenant virtual network.
+3. In the **VPN Connections** page, click **Add**> **Add Layer 3 tunnel**.
+
+    ![L3 configuration from ui](./media/sdn-route-network-traffic/l3-forwarind-connection-ui.png)
+
+     Layer 3 tunnel options appear:
+
+     ![L3 configuration options](./media/sdn-route-network-traffic/l3-forwarding-options.png)
+
+4. Configure the L3 connection  using the following information:
+
+|**Parameter** | **Details** |
+    | --- | --- |
+    | Name |  User-defined name for the L3 forwarding network connection.
+    | VMNetwork (NextHop) |  User-defined name for the next hop VM network, which was created as a prerequisite. This represents the physical network that wants to communicate with the tenant VM network.  When you click *Browse*, only the *One Connected VM Networks* managed by Network service will be available for selection.
+    |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses,  must be separated by comma in the UI.
+    | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and should be in CIDR notation format. Peer IP address and Local IP addresses should be from the same Pool. These IP addresses should belong to the subnet defined in Logical Network Definition of VM Network (NextHop).
+
+::: moniker-end
 
 > [!NOTE]
 
