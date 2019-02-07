@@ -128,9 +128,9 @@ System Center 2019 - Operations Manager supports an in-place upgrade from the fo
 ## Notifications and subscriptions enhancement  
 The existing alert notifications and subscription experience in Operations Manager has been enhanced to deliver more value to the end user. These enhancements can be broadly categorized into the following two areas:
 
-- **Intuitive Email Notifications** - support for HTML format notification. [Learn more](../scom/manage-notificatons-create-email-channel.md)
+- **Intuitive Email Notifications** - support for HTML format notification. [Learn more](../scom/manage-notificatons-create-email-channel.md#create-an-email-notification-in-html-format)
 - **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[learn more]()
-- **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[learn more](../scom/manage-notifications-create-subscriptions#)
+- **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[learn more](../scom/manage-notifications-create-subscriptions.md#enhanced-criteria-builder)
 
 ## URL monitoring enhancements with certificate errors
 URL monitoring (and web application availability & transaction monitoring), are used to test a URL\website\web-based application, by sending WinHttp requests, validating their response, and measuring their performance.
