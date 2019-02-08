@@ -194,5 +194,3 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 
 ## Service Map integration
 Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services. Integration between Service Map and System Center Operations Manager allows you to automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map.  For more information on planning and configuring  integration, see [Service Map integration with System Center Operations Manager](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map-scom).  
-
-## [Get started with Operations Manager](../scom/get-started.md)
