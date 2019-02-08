@@ -304,7 +304,7 @@ This problem has been resolved in the following manner:
 1. Schedules that were already been created before this fix is deployed will also start working without any issues even in SQL Server failover scenarios .
 
     >[!NOTE]
-    
+
     >Existing schedules that have been created on the current server that is running SQL server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
 
 2. Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server.
