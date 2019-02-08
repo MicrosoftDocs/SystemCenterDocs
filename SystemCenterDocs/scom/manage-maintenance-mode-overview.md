@@ -297,7 +297,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ## Enable scheduled maintenance mode with SQL Always On
 
-In earlier releases of OM, schedules that were created with SQL Always On enabled, were inaccessible when SQL server fails over to another server. OM 2019  comes with a fix for this issue. This fix enables the schedules to work without any issues even in a SQL server failover scenario.
+In earlier releases of Operations Manager, schedules that were created with SQL Always On enabled, were inaccessible when SQL server fails over to another server. Operations Manager 2019 comes with a fix for this issue. This fix enables the schedules to work without any issues even in a SQL server failover scenario.
 
 This problem has been resolved in the following manner:
 

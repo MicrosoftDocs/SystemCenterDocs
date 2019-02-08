@@ -75,7 +75,7 @@ The email notifications experience has been improvised with the ability to creat
 With the new rich HTML email, you will also be able to launch the alerts drill-down page, alert source drill-down page and drill-down page for the corresponding rule/monitor to get more relevant information on troubleshooting the issue. Click the respective links provided at the bottom of the email to launch these drill-down pages.
 
 1.	Use the procedure in the above section for creating email notification channel.
-2.	While configuring the format of the email notifications, select **Enable HTML formatting** as shown in the image below.
+2.	While configuring the format of the email notifications, select **Enable HTML formatting** as shown in the image below:
 
     ![email notification HTML format](./media/email-notifications/email-notifications-html.png)
 

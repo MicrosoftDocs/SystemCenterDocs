@@ -17,17 +17,17 @@ monikerRange: 'sc-om-2019'
 
 It is a security best practice to disable  interactive and remote interactive logon rights for service accounts. Security teams across organizations have strict controls to enforce this best practice to prevent credential theft and associated attacks.
 
-System Center 2019 - Operations Manager (OM) supports the hardening of service accounts and does not require Interactive and Remote Interactive logon rights for service accounts.
+System Center 2019 - Operations Manager supports the hardening of service accounts and does not require Interactive and Remote Interactive logon rights for service accounts.
 
-SCOM 2019 uses *Service Logon* as the logon type, by default. This leads to the following changes:
+Operations Manager 2019 uses *Service Logon* as the logon type, by default. This leads to the following changes:
 
--	Health Service uses logon type **Service** by default. In SCOM 1807 and prior versions, health service used **Interactive** as logon type.
--	SCOM action accounts and service accounts now have **Log on as a Service** permission.     
+-	Health Service uses logon type **Service** by default. In Operations Manager 1807 and prior versions, health service used **Interactive** as logon type.
+-	Operations Manager action accounts and service accounts now have **Log on as a Service** permission.     
 -	Run As accounts need to have **Log on as a service** permission.
 -	Monitoring Host now uses **Log  on as a Service** instead of **Log on locally**.
 
-## Changes to OM action accounts and service accounts
- Following accounts are granted **Log on as a Service** permission during the SCOM installation as well as during upgrade from previous SCOM version:
+## Changes to Operations Manager action accounts and service accounts
+ Following accounts are granted **Log on as a Service** permission during the Operations Manager installation as well as during upgrade from previous version:
  -	Management Server Action account
  -	SDK and Config service  
  -	Agent Installation account
@@ -36,7 +36,7 @@ SCOM 2019 uses *Service Logon* as the logon type, by default. This leads to the 
 
  ![local security setting](./media/enable-service-logon/om2019-local-security-setting.png)
 
-After this change, **Run As accounts**, which are created by OM administrators for the Management Packs (MPs), require **Log on as a Service** permission.
+After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
 
 Follow the steps below to provide Log on as Service permission to run as accounts:
 
@@ -52,9 +52,9 @@ Follow the steps below to provide Log on as Service permission to run as account
 
 > [!NOTE]
 
-> If you are upgrading to OM 2019 from a previous  version or installing a new OM 2019 environment, you will need to follow the steps above to provide **Logon as a service** permission to Run as accounts.
+> If you are upgrading to Operations Manager 2019 from a previous  version or installing a new Operations Manager 2019 environment, you will need to follow the steps above to provide **Logon as a service** permission to Run as accounts.
 
-## Troubleshooting 
+## Troubleshooting
 
 If any of the **Run as Account** does not have required **Logon as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of **Run as account** which does not have **Logon as a Service** permission.
 
@@ -76,12 +76,12 @@ When all the **Run As accounts** are given the **Logon as a Service** permission
 ![number of events](./media/enable-service-logon/om-2019-number-of-events.png)
 
 ## Change logon type of a health service
-If you need to change the logon type of SCOM health service to interactive, you can use the local group policy on the agent computer to change the logon type, as shown below.
+If you need to change the logon type of Operations Manager health service to interactive, you can use the local group policy on the agent computer to change the logon type, as shown below.
 
 > [!NOTE]
 > A monitor-based alert is generated for this event.
 
 ![Monitoring action account logon types](./media/enable-service-logon/om2019-monitoring-action-account-logon-type.png)
 
-## Co-existence with OM 2016 agent
-SCOM 2016 agent uses the **Interactive** logon type as default. As SCOM 2019 service accounts have both service logon as well as interactive logon privileges, SCOM 2019 management server can interoperate with SCOM 2016 agent.
+## Co-existence with Operations Manager 2016 agent
+Operations Manager 2016 agent uses the **Interactive** logon type as default. As Operations Manager 2019 service accounts have both service logon as well as interactive logon privileges, Operations Manager 2019 management server can interoperate with Operations Manager 2016 agent.

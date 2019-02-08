@@ -16,7 +16,7 @@ ms.topic: article
 
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
-If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
+If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
 
 When a new workload is deployed in your IT infrastructure that was never monitored by Operations Manager, it will be detected and highlighted under the Updates and Recommendations node.  The management packs required to monitor that workload will be presented with a status of **Not Installed**.  If the necessary management pack files for a particular workload are not installed, for example the library management pack file is installed but not the corresponding discovery and monitoring management pack files, the Updates and Recommendations feature will list that workload with a status of **Partially Installed**.  
 
@@ -32,7 +32,7 @@ This feature includes the following capabilities:
 
 ::: moniker range="sc-om-2019"
 
-Updates and Recommendations feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP).
+Updates and Recommendations feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP).
 
 If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the MPs that are installed in your management group.
 
@@ -46,7 +46,7 @@ Use the following steps to view the machine details:
 
     ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/updates-and-recommendations-view.png)
 
-    - Above screenshot has some workloads with *Not Installed* status. For these, you can choose to install the required MP for monitoring directly from U&R.
+    - Above screenshot has some workloads with *Not Installed* status. For these, you can choose to install the required MP for monitoring directly from Updates and Recommendations.
 
     - For the workloads which needs an MP update, status is displayed as  *Update available*.
 
