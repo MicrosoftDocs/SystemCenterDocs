@@ -109,7 +109,7 @@ You can set the threshold value to receive a warning while you replace the VHD p
 
 Use the following steps:
 
- 1. To set CSV free space threshold and receive a warning during placement or auto VHD migration between CSVs in a cluster, go to <add additional details for path here> **Dynamic Optimization**, enter a value in **Disk Space**
+ 1. To set CSV free space threshold and receive a warning during placement or auto VHD migration between CSVs in a cluster, go to **Dynamic Optimization**, enter a value in **Disk Space**
   The value can be represented in either GB or % of CSV allocated storage space.
 
 2. Select the frequency to set the time interval at which the storage DO should run.

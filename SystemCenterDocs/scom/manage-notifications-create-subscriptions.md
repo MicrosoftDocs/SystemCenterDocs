@@ -24,6 +24,8 @@ Notification channels and subscribers must be configured before you create a sub
 
 Before creating a subscription, we will review the two methods you can use to filter alert notifications so that you can deliver alerts that meet certain conditions, such as all critical severity alerts with high priority notify IT Operations or from specific monitored objects like all systems for a particular remote location notify that on-site IT support team.   
 
+::: moniker range=">sc-om-2019"
+
 ### Specifying which alerts generate notifications (Conditions)
 
 When you create a subscription to be notified when Operations Manager generates alerts, you must specify the criteria or conditions that determine the alerts that will generate a notification. The following illustration shows the conditions you can choose from.  
@@ -36,22 +38,25 @@ For example, for the condition of **a specific severity**, click **specific**, a
 
 When you create a notification subscription from an alert that has been generated, the conditions for the subscription are configured automatically with values from the specific alert.  
 
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 ## Enhanced criteria builder
-Operations Manager 2019 comes with enhanced criteria builder.
+
+When you create a subscription to be notified when Operations Manager generates alerts, you must specify the criteria or conditions that determine the alerts that will generate a notification.
 
 To use these options, on the criteria page, you can set the conditions for the notifications to be sent to the specified subscribers. If you do not set the conditions, notifications will be sent for all alerts.
 
 The following are the examples of the criteria builder showcasing single expression and groups of expressions:
 
 
-Single expression
+**Example - single expression**
 
 ![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-single-expressions.png)  
 
 
-Groups of expressions
+**Example - groups of expressions**
 
 ![criteria builder single expression](./media/manage-notifications-create-subscriptions/criteria-builder-groups-expressions.png)
 
