@@ -24,7 +24,7 @@ Notification channels and subscribers must be configured before you create a sub
 
 Before creating a subscription, we will review the two methods you can use to filter alert notifications so that you can deliver alerts that meet certain conditions, such as all critical severity alerts with high priority notify IT Operations or from specific monitored objects like all systems for a particular remote location notify that on-site IT support team.   
 
-::: moniker range="<sc-vmm-2019"
+::: moniker range="<sc-om-2019"
 
 ### Specifying which alerts generate notifications (Conditions)
 
