@@ -149,7 +149,9 @@ Use the following procedure:
     1.	Open **Server Manager**.
     2.	Click **File and Storage Services**.
 
-        **Note**: The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
+        >[!NOTE]
+
+        > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
 
         If a disk is missing from the primordial pool, you can add it by choosing the *Add Physical Disk* option from the **TASKS** drop-down menu. Add all disks including SSDs to the storage pool.
 
@@ -171,7 +173,8 @@ Use the following procedure:
         3.	Provide a name for the virtual disk.
         4.	Select **Create storage tiers** on this virtual disk to create a tiered storage.  
 
-        **Note**: Tiered Storage is possible only when the storage pool contains a mixture of SSD and HDD).
+        >[!NOTE]
+        > Tiered Storage is possible only when the storage pool contains a mixture of SSD and HDD).
         5.	Click **Next** and select **Enable enclosure awareness**.
         6.	Select **Simple Layout** and click **Next**.
         7.	Fixed Provisioning is the default selection. Click **Next**.
