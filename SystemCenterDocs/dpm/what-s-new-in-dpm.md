@@ -49,7 +49,7 @@ The following sections provide information about the new features and feature up
 ::: moniker range="sc-dpm-2019"
 
 ## VMware backup to tape
-For long term retention on VMware backup data on-premise, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM. Also supports ILR (Item Level Recovery) of individual files & folders of Window Server VMs.
+For long term retention on VMware backup data on-premise, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM. Also supports ILR (Item Level Recovery) of individual files & folders of Window Server VMs. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
 ## Support to newer workloads backups
 With DPM 2019, you can back up newer versions of different workloads, listed below:
@@ -58,19 +58,19 @@ With DPM 2019, you can back up newer versions of different workloads, listed bel
 3.	Exchange 2019
 4.	SharePoint 2019
 5.	VMWare vSphere 6.7
-6.	System Center Virtual Machine Manager 2019
+6.	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ## Faster backups with Tiered storage using SSDs
 DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage.
 
-To achieve the scale and performance claimed by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage.
+To achieve the scale and performance claimed by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. [Learn more](add-storage.md#faster-backups-with-tiered-storage-using-ssds).
 
 ## VMWare parallel backups
 With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
 ## Support to Central Monitoring feature
-With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration.
+With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration. [Learn more](monitor-dpm.md).
 
 ## Windows Server 2019 support
 DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
