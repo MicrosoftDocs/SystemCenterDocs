@@ -23,8 +23,8 @@ Operations Manager 2019 uses *Service Logon* as the logon type, by default. This
 
 -	Health Service uses logon type **Service** by default. In Operations Manager 1807 and prior versions, health service used **Interactive** as logon type.
 -	Operations Manager action accounts and service accounts now have **Log on as a Service** permission.     
--	Run As accounts need to have **Log on as a service** permission.
--	Monitoring Host now uses **Log  on as a Service** instead of **Log on locally**.
+-	Run As accounts need to have **Log on as a Service** permission.
+-	Monitoring Host now uses **Log on as a Service** instead of **Log on locally**.
 
 ## Changes to Operations Manager action accounts and service accounts
  Following accounts are granted **Log on as a Service** permission during the Operations Manager installation as well as during upgrade from previous version:
@@ -40,7 +40,7 @@ After this change, **Run As accounts**, which are created by Operations Manager 
 
 Follow the steps below to provide Log on as Service permission to run as accounts:
 
-1. Logon to the computer with administrative privileges.
+1. Log on to the computer with administrative privileges.
 2. Go to **Administrative Tools** and click **Local Security Policy**.
 3. Expand **Local Policy** and click **User Rights Assignment**.
 4. In the right pane, right-click **Log on as a service** and select **Properties**.
@@ -56,7 +56,7 @@ Follow the steps below to provide Log on as Service permission to run as account
 
 ## Troubleshooting
 
-If any of the **Run as Account** does not have required **Logon as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of **Run as account** which does not have **Logon as a Service** permission.
+If any of the **Run as Account** does not have required **Logon as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of **Run as account**, which does not have **Logon as a Service** permission.
 
 ![alert properties](./media/enable-service-logon/om2019-alert-properties.png)
 
@@ -69,7 +69,7 @@ In the event viewer, on the agent computer, see the information under event ID 7
 |Alert Context |Health Service could not logon as the Run As account <Run As Account>  for management group name <group name> because it has not been granted the **Log on as a service** permission.|
 |Monitor|<add monitor name…>|
 
-You will need to provide **Logon As A Service** permission to the Run As accounts, which are identified in the event 7002.
+You will need to provide **Logon as a Service** permission to the Run As accounts, which are identified in the event 7002.
 
 When all the **Run As accounts** are given the **Logon as a Service** permission, event ID 7028 is displayed as below and the monitor changes to healthy state.
 
