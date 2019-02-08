@@ -1,6 +1,6 @@
 # Overview
 ## [Get started with SPF](overview.md)
-## [What's new in Service Provider Foundation 1801](whats-new-1801.md)
+## [What's new in Service Provider Foundation ](whats-new-1801.md)
 ## [Release notes - SPF](release-notes-spf.md)
 ## [Turn off telemetry in SPF](turn-off-telemetry.md)
 # How To
