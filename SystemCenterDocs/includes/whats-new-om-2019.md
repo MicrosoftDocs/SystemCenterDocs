@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## What's New in OM 2019
+## What's New in Operations Manager 2019
 
 The following sections describe the new features/feature updates in System Center 2019 - Operations Manager.
 
@@ -22,19 +22,20 @@ Operations Manager 2019 supports hardening of service accounts and does not requ
 Operations Manager 2019 uses *Service Logon* as the logon type, by default. [Learn more](../scom/enable-service-logon.md)
 
 ## Management server failover support for Linux/UNIX
-Management server failover is a crucial feature to enable high-availability and provide fault tolerance in production environments. Operations Manager 2019 is enhanced for handling failover and load-balancing scenario for Linux/UNIX computers and network devices.
+Failover of the management server ensures high availability and fault tolerance. In earlier versions of Operations Manager, when a primary management server fails and another management server takes over the role of the primary management server, the existing monitor-based alerts in Operations Manager are closed, and new alerts are created for the same condition. In deployments where the Operations Manager is integrated with an incident management system, these new alerts lead to new tickets or incidents being created.
 
-With earlier versions of Operations Manager, when primary management server goes offline, the failover server closes all monitor-based alerts and re-opens the same alerts. With Operations Manager 2019, old alerts are not closed while there is only an increment in the monitor-based alert count.
-
-The issue of generating new tickets and new alerts whenever failover or load balancing occurs, is now fixed with Operations Manager  2019. For example, there are 100 active alerts on MS1, failover happens on MS2, the repeat count of these alerts will be incremented. With this change, no new alerts or tickets are generated during failover.
+This issue of alerts/tickets being created during failover or load balancing of management server has been addressed in Operations Manager 2019. With this fix, when the primary management server fails over, the alerts do not get recreated. Only the repeat count of the existing alerts is incremented.
 
 ## Linux agent installation changes
-With OM 2019, there are changes in the Linux agent package bundling. This bundle now consists of scx and omi shell bundles only. Post agent installation, a new user called **omiuser** will be created on the agent machine. If you want to use the Log Monitoring feature, you will have to install Linux Log Monitoring management pack, shipped in the box. This change is introduced so omsagent user is created only when you use Log File Monitoring feature.
+With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called **omiuser** will be created on the agent machine. If you want to use the Log Monitoring feature, you will have to install Linux Log Monitoring management pack, shipped in the box.
+
+This change is introduced so omsagent user is created only when you use Log File Monitoring feature.
 
 ## Improvement in agent initiated maintenance mode
-Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is event-based as opposed to registry-based, in earlier releases. This new change triggers the agent-initiated maintenance mode through an event. As events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss to process the maintenance request. [Learn more](../scom/manage-maintenance-mode-overview.md#agent-initiated-maintenance-mode-through-an-event).
+Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is *event-based* as opposed to URL monitoring-based, compared to earlier releases. With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
 
-With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
+With event-based agent initiated maintenance mode, as events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss to process the maintenance request. [Learn more](../scom/manage-maintenance-mode-overview.md#agent-initiated-maintenance-mode-through-an-event).
+
 
 >[!NOTE]
 
@@ -53,7 +54,7 @@ This problem has been resolved as follows:
 
     >Existing schedules that have been created on the current server that is running SQL Server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
 
-* Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server.
+* Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server. [Learn more](../scom/manage-maintenance-mode-overview.md#enable-scheduled-maintenance-mode-with-sql-always-on)
 
 ## Enhanced experience for alerts raised by monitors
 The existing alert closure experience for the alerts generated by monitors has been revamped to be more meaningful and provide better value.
@@ -62,7 +63,7 @@ When you receive an alert, you can see in the alert details such as - whether th
 
 In the earlier versions of Operations Manager, if you close the alert while the object is in a warning, critical or unhealthy state, the problem remains unresolved, and no further alerts are generated, unless the health state for the monitor has also been reset, which again is a manual task.
 
-This behavior, which often led to closure of critical alerts without resolving the underlying problem is fixed with Operations Manager 2019. An alert which has been generated by a monitor cannot be closed unless the health state of the corresponding monitor is healthy.
+This behavior, which often led to closure of critical alerts without resolving the underlying problem is fixed with Operations Manager 2019. An alert, generated by a monitor cannot be closed unless the health state of the corresponding monitor is healthy. [Learn more](../scom/enhanced-alert-closure-experience.md)
 
 ## Microsoft Monitoring Agent operating system
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager:
@@ -110,7 +111,7 @@ The following improvements are provided in the Web console:
 * User and operators can create dashboards in My Workspace. [Learn more](../scom/manage-overview-html5-webconsole.md).
 
 ## SQL Server 2017 support
-OM 2019 supports SQL server 2017.
+Operations Manager 2019 supports SQL server 2017.
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for a new or existing installation of System Center 2019 - Operations Manager to host Reporting Server, Operational, Data Warehouse, and ACS database:
 - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
@@ -133,17 +134,17 @@ The existing alert notifications and subscription experience in Operations Manag
 - **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[learn more](../scom/manage-notifications-create-subscriptions.md#enhanced-criteria-builder)
 
 ## URL monitoring enhancements with certificate errors
-URL monitoring (and web application availability & transaction monitoring), are used to test a URL\website\web-based application, by sending WinHttp requests, validating their response, and measuring their performance.
+URL monitoring (and web application availability & transaction monitoring), can now be used to test a URL, website, or a web-based application. You can send WinHttp requests and validate their response, and measure their performance.
 
 ## Updates and Recommendation feature for Linux
-**Updates and Recommendations** feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP).[Learn more](../scom/manage-mp-mpassessment.md)
+**Updates and Recommendations** feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP).[Learn more](../scom/manage-mp-mpassessment.md)
 
-If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the Management Packs that are installed in your management group.
+If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the management packs that are installed in your management group.
 
 A new capability, **Machine Details** allow administrators to view the agent machine's name and the operating system installed on it.    
 
 ## Configure APM component during agent install or repair
-In earlier versions of OM agent, (prior to 1807) the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting.
+In earlier versions of Operations Manager agent, (prior to 1807) the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting.
 
  You can now disable the APM component when you deploy the Operations Manager agent from **Discovery** wizard in the console, when performing a repair of the agent from the Operations console, and similarly controlling behavior when using the PowerShell cmdlets **Install-SCOMAgent** and **Repair-SCOMAgent**. [Learn more](../scom/manage-deploy-windows-agent-manually.md).
 
@@ -183,9 +184,9 @@ The Web console has been redesigned and is now a fully HTML-based console and no
 Network authentication is enabled with the new web console. [Learn more](../scom/manage-overview-html5-webconsole.md)
 
 ## System Center Visual Studio Authoring Extension (VSAE) support for Visual Studio 2017
-Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. Management Pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.   
+Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. management pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.   
 
-## Enhanced SDK Client performance
+## Enhanced SDK client performance
 We have introduced performance improvements in the Operations console that typically prevent the console from responding while a new management pack is being imported or deleted, or a configuration change to an MP is saved.  
 
 ## Linux Kerberos support
@@ -193,3 +194,5 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 
 ## Service Map integration
 Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. It automatically builds a common reference map of dependencies across your servers, processes, and third-party services. Integration between Service Map and System Center Operations Manager allows you to automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map.  For more information on planning and configuring  integration, see [Service Map integration with System Center Operations Manager](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map-scom).  
+
+## [Get started with Operations Manager](get-started.md)
