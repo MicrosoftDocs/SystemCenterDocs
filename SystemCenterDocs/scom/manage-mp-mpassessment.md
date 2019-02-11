@@ -16,13 +16,13 @@ ms.topic: article
 
 Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
-If there are Management Packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for Management Packs that are installed in your management group.
+If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
 
 When a new workload is deployed in your IT infrastructure that was never monitored by Operations Manager, it will be detected and highlighted under the Updates and Recommendations node.  The management packs required to monitor that workload will be presented with a status of **Not Installed**.  If the necessary management pack files for a particular workload are not installed, for example the library management pack file is installed but not the corresponding discovery and monitoring management pack files, the Updates and Recommendations feature will list that workload with a status of **Partially Installed**.  
 
 This feature includes the following capabilities:
 
-|  Option |  Description | 
+|  Option |  Description |
 |----------|-------------|
 |  **Get MP**  | Installs the management packs for the selected workload
 |  **Get All MPs**  |  Installs the management packs for all of the workloads displayed
@@ -30,8 +30,38 @@ This feature includes the following capabilities:
 |  **View DLC Page**  | Open from the web browser, the page on the Microsoft Download Center, to download the management pack file
 |  **More information**  | Highlights all impacted agent-managed systems and management pack details of selected workload (depending on the status of the workload)
 
+::: moniker range="sc-om-2019"
+
+Updates and Recommendations feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP).
+
+If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the MPs that are installed in your management group.
+
+A new capability, **Machine Details** allow administrators to view the agent machine's name and the operating system installed on it.
+
+![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/machine-details.png)
+
+Use the following steps to view the machine details:
+
+1.	Go to **Administration** > **Management Packs** > **Updates and Recommendations**.
+
+    ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/updates-and-recommendations-view.png)
+
+    - Above screenshot has some workloads with *Not Installed* status. For these, you can choose to install the required MP for monitoring directly from Updates and Recommendations.
+
+    - For the workloads which needs an MP update, status is displayed as  *Update available*.
+
+2.	To view the Machine details (name and operating system) on which a selected workload is running, select **Machine Details**.
+
+    ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/machine-details-select.png)
+
+    Here is the sample view of Machine Details feature.
+
+    ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/machine-details-view.png)
+
+::: moniker-end
+
 >[!NOTE]
->In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?** 
+>In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**
 
 >[!NOTE]
 >Configuring the frequency and control the discovery of workloads cannot be performed directly from the Operations console.  If you wish to modify those settings of this feature, you can download a PowerShell script from the [Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/Script-to-modify-settings-246c84af#content).
@@ -48,7 +78,7 @@ The following procedure describes how to use the Get MP option to download a man
     >[!NOTE]
     >When accessing the Updates and Recommendations view, you may receive the following message, "An error occurred while displaying the Updates and Recommendations View. This might be because the database query has encountered an issue or the online catalog is down."  This can be caused by having a duplicate management pack with the same name.  To help troubleshoot the issue, run the following command in the Operations Manager  Shell and review the output file to identify the duplicate MP:
     >`Get-SCManagementPack | Sort -property Name | Format-Table Name,Version,Sealed -AutoSize | Out-File "c:\temp\mplist_name.txt"`
-    > 
+    >
 
 4. If a management pack is recommended for either an update or a new installation, select it and click **Get MP** from the **Actions** pane.
 
@@ -142,7 +172,7 @@ The following list includes the workloads that are supported by this feature.
 - SQL Server 2016 Reporting Services (Native Mode)
 - System Center 2012 App Controller
 - System Center 2012 Configuration Manager
-- System Center 2012 Orchestrator 
+- System Center 2012 Orchestrator
 - Windows Server Backup
 - Windows Service Manager 2012
 - Windows TFS 2013
@@ -156,12 +186,12 @@ The following list includes the workloads that are supported by this feature.
 - DHCP Server
 - DNS Server
 - Fail Over Clustering
-- File Services 
+- File Services
 - IIS
 - Network Load Balancing
 - Print Server
 
-### Windows Server 2012 R2 
+### Windows Server 2012 R2
 
 - Active Directory Certificate Services
 - Active Directory Domain Services
@@ -184,7 +214,7 @@ The following list includes the workloads that are supported by this feature.
 - Windows Deployment Services
 - Windows Update Services
 
-### Windows Server 2012 
+### Windows Server 2012
 
 - Active Directory Certificate Services
 - Active Directory Domain Services
@@ -229,4 +259,4 @@ The following list includes the workloads that are supported by this feature.
 
 - To understand how to approach to managing the lifecycle of management packs deployed in your management group, see [Management pack lifecycle](manage-mp-lifecycle.md).
 
-- Review the [Operations Manager Reports library](manage-reports-installed-during-setup.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](manage-reports-create-reports.md) to create reports for your operational needs. 
+- Review the [Operations Manager Reports library](manage-reports-installed-during-setup.md) to understand what reports are available to help you explore the operational data and configuration information in your management group and follow the [How to create reports in Operations Manager](manage-reports-create-reports.md) to create reports for your operational needs.

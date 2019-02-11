@@ -74,6 +74,26 @@ Storage classifications provide a layer of abstraction over specific storage dev
 
 After you've created classifications you assign them to storage pools that include block or file-based storage. You can tweak classification settings for file shares within pools as required.
 
+::: moniker range="sc-vmm-2019"
+
+## Monitor storage health
+
+This functionality helps you to  monitor the health and operational status of a storage pool, LUNs and physical disks in the VMM fabric.
+
+You can monitor storage health from VMM console,  **Fabric** page.
+
+Use the following steps:
+
+1.	Go to VMM console, **Fabric** > **Storage** > **Classification and Pools** .
+
+    The **Health Status** column displays the status of the storage pool, LUN and Physical disks.
+2.	To check the operational status, select a storage item.
+
+    The information pane for the selected storage item displays the operational status as shown in the sample below:
+
+    ![storage health monitor](./media/storage-monitor/storage-health-monitor.png)
+
+::: moniker-end
 ## Next steps
 
 [Set up storage classifications](storage-classification.md) in the VMM fabric
