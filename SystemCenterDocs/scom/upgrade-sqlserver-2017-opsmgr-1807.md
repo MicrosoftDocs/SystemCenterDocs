@@ -50,13 +50,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
 
-2. In order to reinstall the Operations Manager reporting server component on the server, you remove any data that is left from the original installation by performing the following steps:
-
-    a. Copy the ResetSRS.exe tool from the SupportTools folder on the product source media to a local folder.
-
-    b. Open a command prompt window using the Run as Administrator option and run the tool as follows: `ResetSRS.exe <SQL Server instance name>`. Here, SQL Server instance name is the SQL Server instance that SQL Reporting Services is installed on, such as Instance1. If SQL Server is using the default instance, enter **MSSQLSERVER**.
-
-3. Perform the upgrade to SQL Server 2017 following the steps described in [upgrade the database engine](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017) and [upgrade Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/install-reporting-services?view=sql-server-2017).
+2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 dcoumentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
 
 ## Install SQL Server 2017 Reporting services
 To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
