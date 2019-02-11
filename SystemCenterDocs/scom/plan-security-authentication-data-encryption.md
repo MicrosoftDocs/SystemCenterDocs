@@ -26,7 +26,7 @@ An agent and the management server use Windows authentication to mutually authen
 
 ### Setting Up Communication Between Agents and Management Servers Across Trust Boundaries
 
-An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there is no trust between the two domains, the agents in one domain cannot authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs. 
+An agent (or agents) might be deployed into a domain (domain B) separate from the management server (domain A), and no two-way trust might exist between the domains. Because there is no trust between the two domains, the agents in one domain cannot authenticate with the management server in the other domain using the Kerberos protocol. Mutual authentication between the Operations Manager features within each domain still occurs.
 A solution to this situation is to install a gateway server in the same domain where the agents reside, and then install certificates on the gateway server and the management server to achieve mutual authentication and data encryption. The use of the gateway server means you need only one certificate in domain B and only one port through the firewall, as shown in the following illustration.
 
 ![Monitor Untrusted Agent with Gateway](./media/plan-security-authentication-data-encryption/om2016-untrusted-agent-with-gateway.png)
@@ -48,7 +48,7 @@ Perform the following steps on both the computer hosting the agent and the manag
 4. Use the MOMCertImport tool to configure Operations Manager.
 
 > [!NOTE]
-> CNG certificates are not supported.
+> Certificates with the KEYSPEC other than 1 are not supported.
 
 
 These are the same steps for installing certificates on a gateway server, except you do not install or run the gateway approval tool
@@ -70,8 +70,8 @@ During the setup of a certificate, you run the MOMCertImport tool. When the MOMC
 
 ## Authentication and data encryption between management server, Gateway server, and agents
 
-Communication among these Operations Manager features begins with mutual authentication. If certificates are present on both ends of the communications channel, then certificates will be used for mutual authentication; otherwise, the Kerberos version 5 protocol is used. If any two features are separated across an untrusted domain, mutual authentication must be performed using certificates. 
-Normal communications, such as events, alerts, and deployment of a management pack, occur over this channel. The previous illustration shows an example of an alert being generated on one of the agents that is routed to the management server. From the agent to the gateway server, the Kerberos security package is used to encrypt the data, because the gateway server and the agent are in the same domain. The alert is decrypted by the gateway server and re-encrypted using certificates for the management server. After the management server receives the alert, the management server decrypts the message, re-encrypts it using the Kerberos protocol, and sends it to the management server where the management server decrypts the alert. 
+Communication among these Operations Manager features begins with mutual authentication. If certificates are present on both ends of the communications channel, then certificates will be used for mutual authentication; otherwise, the Kerberos version 5 protocol is used. If any two features are separated across an untrusted domain, mutual authentication must be performed using certificates.
+Normal communications, such as events, alerts, and deployment of a management pack, occur over this channel. The previous illustration shows an example of an alert being generated on one of the agents that is routed to the management server. From the agent to the gateway server, the Kerberos security package is used to encrypt the data, because the gateway server and the agent are in the same domain. The alert is decrypted by the gateway server and re-encrypted using certificates for the management server. After the management server receives the alert, the management server decrypts the message, re-encrypts it using the Kerberos protocol, and sends it to the management server where the management server decrypts the alert.
 Some communication between the management server and the agent may include credential information; for example, configuration data and tasks. The data channel between the agent and the management server adds another layer of encryption in addition to the normal channel encryption. No user intervention is required.
 
 ## Management server and Operations console, Web console server, and Reporting server
@@ -89,9 +89,9 @@ Two communication channels exist between a management server and the Reporting d
 
 ### Monitoring Host Process and Reporting Data Warehouse
 
-By default, the monitoring host process spawned by the Health Service, which is responsible for writing collected events and performance counters to the data warehouse, achieves Windows Integrated Authentication by running as the Data Writer Account specified during Reporting Setup. The account credential is securely stored in a Run As Account called Data Warehouse Action Account. This Run As Account is a member of a Run As Profile called Data Warehouse Account (which is associated with the actual collection rules). 
+By default, the monitoring host process spawned by the Health Service, which is responsible for writing collected events and performance counters to the data warehouse, achieves Windows Integrated Authentication by running as the Data Writer Account specified during Reporting Setup. The account credential is securely stored in a Run As Account called Data Warehouse Action Account. This Run As Account is a member of a Run As Profile called Data Warehouse Account (which is associated with the actual collection rules).
 
-If the Reporting data warehouse and the management server are separated by a trust boundary (for example, each resides in different domains with no trust), then Windows Integrated Authentication will not work. To work around this situation, the monitoring host process can connect to the Reporting data warehouse using SQL Server Authentication. To do this, create a new Run As Account (of Simple Account type) with the SQL account credential and make it a member of the Run As Profile called Data Warehouse SQL Server Authentication Account, with the management server as the target computer. 
+If the Reporting data warehouse and the management server are separated by a trust boundary (for example, each resides in different domains with no trust), then Windows Integrated Authentication will not work. To work around this situation, the monitoring host process can connect to the Reporting data warehouse using SQL Server Authentication. To do this, create a new Run As Account (of Simple Account type) with the SQL account credential and make it a member of the Run As Profile called Data Warehouse SQL Server Authentication Account, with the management server as the target computer.
 
 > [!IMPORTANT]
 > By default, the Run As Profile, Data Warehouse SQL Server Authentication Account was assigned a special account through the use of the Run As Account of the same name. Never make any changes to the account that is associated with the Run As Profile, Data Warehouse SQL Server Authentication Account. Instead, create your own account and your own Run As Account and make the Run As Account a member of the Run As Profile, Data Warehouse SQL Server Authentication Account when configuring SQL Server Authentication.
@@ -101,11 +101,11 @@ The following outlines the relationship of the various account credentials, Run 
 #### Default: Windows Integrated Authentication
 
 1. Run As Profile: Data Warehouse Account  
- - Run As Account: Data Warehouse Action 
+ - Run As Account: Data Warehouse Action
  - Account credentials: Data Writer Account (specified during setup)
 
 2. Run As Profile: Data Warehouse SQL Server Authentication Account
- - Run As Account: Data Warehouse SQL Server Authentication 
+ - Run As Account: Data Warehouse SQL Server Authentication
  - Account credentials: Special account created by Operations Manager (do not change)
 
 #### Optional: SQL Server Authentication
@@ -139,9 +139,8 @@ Default: Windows Integrated Authentication
 
 ## Operations console and Reporting server
 
-The Operations console connects to Reporting Server on port 80 using HTTP. Authentication is performed by using Windows Authentication. Data can be encrypted by using the SSL channel. 
+The Operations console connects to Reporting Server on port 80 using HTTP. Authentication is performed by using Windows Authentication. Data can be encrypted by using the SSL channel.
 
 ## Reporting server and Reporting data warehouse
 
 Authentication between Reporting Server and the Reporting data warehouse is accomplished using Windows Authentication. The account that was specified as the Data Reader Account during setup of Reporting becomes the Execution Account on Reporting Server. If the password for the account should change, you will need to make the same password change using the Reporting Services Configuration Manager in SQL Server. The data between the Reporting Server and the Reporting data warehouse is not encrypted.
-
