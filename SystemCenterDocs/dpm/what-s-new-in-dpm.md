@@ -12,7 +12,7 @@ ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: raynew
 ---
 
-# What's new in System Center DPM
+# What's new in System Center Data Protection Manager
 
 ::: moniker range="sc-dpm-2019"
 
@@ -40,7 +40,7 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ::: moniker range="sc-dpm-2019"
 
-## What's new in DPM 2019
+## New features in DPM 2019
 
 The following sections provide information about the new features and feature updates provided in DPM 2019.
 
@@ -49,7 +49,13 @@ The following sections provide information about the new features and feature up
 ::: moniker range="sc-dpm-2019"
 
 ## VMware backup to tape
+<<<<<<< HEAD
+For long term retention on VMware backup data on-premise, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
+
+DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. Also supports Item Level Recovery (ILR)) of individual files and folders of Window Server VMs. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+=======
 For long term retention on VMware backup data on-premise, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM. Also supports ILR (Item Level Recovery) of individual files & folders of Window Server VMs. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+>>>>>>> 01e92b07ef1620416414f9080fceee08a2d1f68d
 
 ## Support to newer workloads backups
 With DPM 2019, you can back up newer versions of different workloads, listed below:
@@ -61,8 +67,21 @@ With DPM 2019, you can back up newer versions of different workloads, listed bel
 6.	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ## Faster backups with Tiered storage using SSDs
-DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage.
+DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
+<<<<<<< HEAD
+To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. [Learn more](add-storage.md#faster-backups-with-tiered-storage-using-ssds).
+
+## VMWare parallel backups
+With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
+
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+
+## Support for Central Monitoring
+With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
+
+You can monitor both on-premise and cloud backups, using Log Analytics with central monitoring capability. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration. [Learn more](monitor-dpm.md).
+=======
 To achieve the scale and performance claimed by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. [Learn more](add-storage.md#faster-backups-with-tiered-storage-using-ssds).
 
 ## VMWare parallel backups
@@ -71,12 +90,31 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 ## Support to Central Monitoring feature
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup. You can monitor both on premise and cloud backups, using Log Analytics with Central Monitoring. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration. [Learn more](monitor-dpm.md).
+>>>>>>> 01e92b07ef1620416414f9080fceee08a2d1f68d
 
 ## Windows Server 2019 support
 DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 
 ## SQL 2017 support as DPM database
-DPM 2019 uses SQL 2017 as its database. Install SQL Server on a remote server, or on the DPM server. It must be installed and running before you install DPM. The SQL Server version should be Standard or Enterprise 64-bit.
+DPM 2019 support SQL 2017 as its database.
+
+You can install SQL Server on a remote server, or on the DPM server. the database  must be installed and running before you install DPM.
+
+> [!NOTE]
+
+> The following bug fixes were provides with  DPM 1807 to improve the performance.
+
+To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
+
+> [!NOTE]
+
+> The following features/feature updates were introduced in DPM 1801.
+
+System Center DPM 1801 supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs), and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
+
+* Up to 50% storage savings
+* Three times faster backups
+* Workload-volume affinity
 
 ::: moniker-end
 
