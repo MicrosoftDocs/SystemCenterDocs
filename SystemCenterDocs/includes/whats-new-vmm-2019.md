@@ -14,6 +14,11 @@ ms.technology:  virtual-machine-manager
 ## New features in VMM 2019
 See the following sections for detailed information about the new features/feature updates supported in VMM 2019.
 
+## Compute
+
+###	Cluster Rolling upgrade for S2D clusters
+
+
 ## Storage
 
 ### Storage DO
@@ -56,7 +61,8 @@ VMM 2019 is introducing the possibility of patching and updating on-prem VMs (ma
 ### Support for new RBAC Role
 In a scenario where enterprises want to create a user role for troubleshooting,  it is necessary that the user has access to all the VMs so the user can make any required changes on the VMs to resolve the issue. There is also a need for the user to have access to the fabric to identify the root cause for the issue. However, for security reasons, this user should not be given the privileges to make any changes on the fabric (such as add storage, add hosts etc).
 
-The current RBAC in VMM does not have a role defined for this persona and the existing roles of Delegated Admin and Fabric admin have too little or more than necessary permissions to perform just troubleshooting.
+The current role-based access control (RBAC) in VMM does not have a role defined for this persona and the existing roles of Delegated Admin and Fabric admin have too little or more than necessary permissions to perform just troubleshooting.
+
 To address this issue, VMM 2019 supports a new role called **Virtual Machine Administrator**. The user of this role has Read and Write access to all VMs but read-only access to the fabric. [Learn more](../vmm/account-user-role.md).
 
 ### Support for Group Managed Service Account as VMM service account
