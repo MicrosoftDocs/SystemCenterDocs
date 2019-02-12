@@ -11,7 +11,7 @@ ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
-# Set up dynamic and power optimization in VMM 
+# Set up dynamic and power optimization in VMM
 
 
 Read this article to learn about enabling dynamic optimization (DO) and power optimization for virtual machines (VMs) in the System Center - Virtual Machine Manager (VMM) compute fabric. The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
@@ -129,5 +129,4 @@ Use the following steps:
 2. On the **Host** tab, in the **Host** group click **Power On** or **Power Off**. You can view information about power on and off events in the BMC logs (click on **Hardware** > **Advanced** > **BMC Logs**).
 
 ## Next steps
-
 Learn about [provisioning VMs](provision-vms.md).

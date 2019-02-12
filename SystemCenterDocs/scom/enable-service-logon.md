@@ -28,8 +28,9 @@ Operations Manager 2019 uses *Service Logon* as the logon type, by default. This
 
 ## Changes to Operations Manager action accounts and service accounts
  Following accounts are granted **Log on as a Service** permission during the Operations Manager installation as well as during upgrade from previous version:
+
  -	Management Server Action account
- -	SDK and Config service  
+ -	System Center configuration service and System Center data access service accounts  
  -	Agent Installation account
  -	Data Warehouse Writer account
  -	Data Reader accounts
@@ -40,7 +41,7 @@ After this change, **Run As accounts**, which are created by Operations Manager 
 
 Follow the steps below to provide Log on as Service permission to run as accounts:
 
-1. Log on to the computer with administrative privileges.
+1. Log on with administrator privileges, to the computer from which you want to provide *Log on as Service* permission to a Run As account.
 2. Go to **Administrative Tools** and click **Local Security Policy**.
 3. Expand **Local Policy** and click **User Rights Assignment**.
 4. In the right pane, right-click **Log on as a service** and select **Properties**.
