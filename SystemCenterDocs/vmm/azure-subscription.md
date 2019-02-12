@@ -59,7 +59,7 @@ Here's what you need to add an Azure subscription in VMM:
 
 ::: moniker-end
 
-::: moniker range>"sc-vmm-2016"
+::: moniker range=">sc-vmm-2016"
 
 > [!NOTE]
 

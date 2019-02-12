@@ -201,7 +201,9 @@ You can recover the database from Azure using any DPM server \(must be running a
 
 ## Back up the DPM database to DPM storage pool
 
-> [!NOTE]  This option is applicable for DPM with Modern Backup Storage.
+> [!NOTE]  
+
+> This option is applicable for DPM with Modern Backup Storage.
 
 1.	In DPM console, click **Protection** > **Create protection group**.
 2.	On the **Select Protection Group Type** page, select **Servers**.
