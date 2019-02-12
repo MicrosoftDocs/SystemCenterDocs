@@ -5,7 +5,7 @@ description: The system requirements article provides general performance and sc
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 01/29/2019
+ms.date: 02/12/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -83,9 +83,7 @@ The following versions of Windows Server operating system are supported for the 
 | **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes | yes |yes |yes|
 | **Operations Manager** Reporting server | yes | yes | | ||
 
-> [!NOTE]
 
-> Only x64 console will be shipped.
 
 ### Client operating system
 
@@ -93,12 +91,14 @@ The following versions of Windows Server operating system are supported for the 
 
 ### Microsoft Monitoring Agent operating system
 
+>[!NOTE]
+
+> Operations Manager 2019 only includes the 64-bit version of the agent.
+
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core
 - Windows Server 2012 R2 - Standard, Datacenter, Server Core
 - Windows 10 - Enterprise, Pro
-
-    **Note**: Only x64 agent will be shipped.
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Microsoft .NET Framework 3.5 or later.
@@ -106,11 +106,11 @@ The following versions of Windows Server operating system are supported for the 
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Microsoft .NET Framework 3.5 or later
 
-> [!NOTE]
+    > [!NOTE]
 
-> Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
+    > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
 
-> Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
+    > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
@@ -141,8 +141,11 @@ The following versions of Windows Server operating system are supported for the 
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
+
+    > Operations Manager 2019 only includes the 64-bit version of the Operations console.
+
     >The Web console does not support running IE in Compatibility View, otherwise you will receive a blank page when attempting to access the console. To turn off Compatibility View feature, please see [How to use Compatibility View in Internet Explorer](https://support.microsoft.com/help/2536204/how-to-use-compatibility-view-in-internet-explorer-9).
-    >
+
 - Client web browser for HTML5 web console:
 
     - Internet Explorer version 11
@@ -176,7 +179,7 @@ The following versions of Windows Server operating system are supported for the 
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
     > [!NOTE]
-    > System Center 2016 – Operations Manager and higher supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
+    > System Center 2016 – Operations Manager and later supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
 
 - NET Framework 4 or .NET Framework 4.5 is required.
 
@@ -203,7 +206,7 @@ The following table lists the scenarios in which coexistence between Operations 
 
 ## In-place upgrade
 
-System Center 2016 - Operations Manager supports an in-place upgrade from the following versions:
+System Center 2019 - Operations Manager supports an in-place upgrade from the following versions:
 
 - System Center 2016
 - System Center 1801

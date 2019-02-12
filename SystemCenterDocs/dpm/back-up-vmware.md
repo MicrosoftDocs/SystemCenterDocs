@@ -21,6 +21,10 @@ This article explains how to use Data Protection Manager (DPM) version 1801 and 
 
 DPM 1801 and later provides the following features when backing up VMware virtual machines:
 
+>[!NOTE]
+
+> Backup to tape is supported from DPM 2019.
+
 - Agentless backup: DPM does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
 - Cloud Integrated Backup: DPM protects workloads to  disk, tape and cloud. DPM's backup and recovery workflow helps you manage long-term retention and offsite backup.
 - Detect and protect VMs managed by vCenter: DPM detects and protects VMs deployed on a VMware server (vCenter or ESXi server). As your deployment size grows, use vCenter to manage your VMware environment. DPM also detects VMs managed by vCenter, allowing you to protect large deployments.
@@ -243,22 +247,26 @@ In large VMware deployments, a single vCenter server can manage thousands of VMs
 
 ![conceptual diagram of a scale-out farm ](./media/back-up-vmware/scale-out-protection-diagram.png)
 
-### Backing up virtual machines to disk, tape or cloud
+### Backing up virtual machines to a disk, tape or cloud
 
 DPM can back up VMware VMs to disk, tape and to the Azure cloud. You specify the protection method while creating the new Protection Group.
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to cloud.
+
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](https://docs.microsoft.com/system-center/dpm/identify-compatible-tape-libraries?view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
 
 ### Back up virtual machine to Tape
 
-For long term retention on VMware backup data on-premise, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM.
+> [!NOTE]
+> Applicable to DPM 2019
 
-Use the following procedure:
+For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM.
+
+**Use the following procedure**:
 
 1.	In the DPM Administrator console, click **Protection** > **Create protection group** to open the Create New Protection Group wizard.
 2.	On the **Select Group Members** page, select the VMWare VMs you want to protect.
-3.	On the **Select Data Protection Method** page, select I want long-term protection using tape.
+3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
 4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency that you want.
 5.	On the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
 
@@ -353,10 +361,9 @@ You can restore individual files from a protected VM recovery point. This featur
 
 ## VMware parallel backups
 
-All your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups.
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
 
-You can modify the number of jobs by using the registry key as below (not present by default, you need to add):
+You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
 **Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
 **Key Type** : DWORD (32-bit) value.
