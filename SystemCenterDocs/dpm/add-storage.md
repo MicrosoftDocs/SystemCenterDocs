@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 07/19/2018
+ms.date: 02/12/2019
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce

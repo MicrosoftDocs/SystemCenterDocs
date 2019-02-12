@@ -14,7 +14,7 @@ ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 
 # Preparing your environment for System Center Data Protection Manager
 
-When deploying System Center - Data Protection Manager (DPM) 2016 or DPM Semi Annual Channel, use the following information to plan your environment.
+When deploying System Center - Data Protection Manager (DPM) 2016 or later, use the following information to plan your environment.
 
 
 ## DPM deployment considerations
@@ -60,7 +60,7 @@ DPM 1801 and later | - SQL Server 2016 and SPs as detailed [here](https://suppor
 |-----------|----------|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
-|Required features|Database Engine Services, Reporting Services|
+|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017)|
 |Collations|SQL_Latin1_General_CP1_CI_AS|
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
@@ -73,8 +73,8 @@ DPM 1801 and later | - SQL Server 2016 and SPs as detailed [here](https://suppor
 
 |Requirement|Details|
 |-----------|-------|
-|Software|Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions|
-|Installation prerequisites|Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Microsoft Visual C++ 2008 Redistributable<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> Setup automatically installs the prerequisites if they aren't already installed.|
+|Software|Windows Server 2019, Datacenter, and Standard editions<br/> Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions|
+|Installation prerequisites|Microsoft .NET Framework 4.5 or later (for 2019)<br/>Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Microsoft Visual C++ 2008 Redistributable<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 
 
@@ -95,7 +95,7 @@ DPM 1801 and later | - SQL Server 2016 and SPs as detailed [here](https://suppor
 
 |Requirement|Details|
 |-----------|-------|
-|Protected workload size limits|DPM 2016 and DPM 1807 with Modern Backup Storage do not have LDM limits. <br/><br/> With DPM 2016 onwards, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested. However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation.|
+|Protected workload size limits|DPM 2016 and later with Modern Backup Storage do not have LDM limits. <br/><br/> With DPM 2016 onwards, you can protect more data per DPM server. Up to 120 TB of storage limit per DPM server has been tested. However, 120 TB is only a soft limit. Validation is underway to test a higher limit. This guidance will be updated post completion of the validation.|
 |.NET framework|All protected computers need at least .NET Framework 4.0 installed before you install the DPM protection agent.|
 |Windows Management Framework (WMF)|If you are protecting a server released prior to Windows Server 2012, you must install the appropriate version of WMF **before** installing the DPM agent:<br/> - [WMF 3.0](https://www.microsoft.com/download/details.aspx?id=34595) for Windows Server 2008 SP 2<br/> - [WMF 4.0](https://www.microsoft.com/download/details.aspx?id=40855) for Windows 7, Windows Embedded Standard 7, Windows Server 2008 R2<br/> Windows Server 2012 and later do not require a separate installation of WMF.
 |Protected workloads|Review the DPM protection support matrix for an up-to-date list of protected workloads.|
@@ -117,3 +117,6 @@ DPM 1801 and later | - SQL Server 2016 and SPs as detailed [here](https://suppor
 |Central Console|Use the Central Console to administer multiple DPM servers from a single location.<br/><br/> Install it on a server running System Center 2016 Operations Manager. You'll also need to install the Operations Management agent on the DPM server. See [Install Central Console]().|
 |DPM Management Shell|Install the DPM Management Shell on a client computer to directly manage one or more DPM servers using Windows PowerShell. Install it from the DPM Setup.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, and Windows 10. The computer must be running at least .NET Framework 4.0.|
 |Remote Administration Console|Set up a Remote Administration Console to manage a single DPM server.<br/><br/> The DPM Administrator console can't be installed on a remote computer.<br/><br/> The DPM Management Shell can be installed on computers running Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows 7, Windows 8, Windows 8.1, and Windows 10. The computer must be running at least .NET Framework 4.0.|
+
+> [!NOTE]
+> DPM 2019 supports X64 bit computers only. 

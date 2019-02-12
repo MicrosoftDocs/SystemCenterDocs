@@ -6,7 +6,7 @@ author:  JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod:  system-center
 keywords:
-ms.date:  1/30/2019
+ms.date:  02/12/2019
 title:  include file
 ms.technology:  data-protection-manager
 ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
@@ -14,9 +14,9 @@ ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 
 ## Upgrade to DPM 2019
 
-You can install System Center - 2019  Data Protection Manager (DPM) on Windows Server 2016 or 2019.
-
+You can install System Center - 2019 Data Protection Manager (DPM) on Windows Server 2016 or 2019.
 You can upgrade to DPM 2019 from the following versions:
+
 -  DPM 2016
 -  DPM 1801
 -  DPM 1807
@@ -71,7 +71,7 @@ If you want to use a new SQL server to migrate the DPM database, before you upgr
 
 Once you have the new instance of SQL Server installed and prepared for DPM use, you must make a backup of the current DPM database and restore it on the new SQL Server.
 
-### Pre-upgrade steps: Backup and restore DPM 2016/1801/1807database to a new SQL instance
+### Pre-upgrade steps: Backup and restore DPM 2016/1801/1807 database to a new SQL instance
 
 This example prepares a remote SQL Server cluster to use in a migration.
 
@@ -142,7 +142,8 @@ See the topic, [Adding disks to increase legacy storage](#adding-disks-to-increa
 
 ### Assign Workloads to Volumes
 
-DPM 2019 allows the user to specify the types of workloads to be assigned to specific volumes. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction logs.
+DPM 2019 allows you to specify the types of workloads to be assigned to specific volumes. For example, expensive volumes that support high IOPS can be configured to store only the workloads that require frequent, high-volume backups like SQL with Transaction logs.
+
 To update the properties of a volume in the storage pool on a DPM server, use the PowerShell cmdlet, *Update-DPMDiskStorage*.
 
 **Update-DPMDiskStorage**
@@ -202,7 +203,7 @@ To create a Protection Group:
 The remainder of the New Protection Group wizard is unchanged from earlier version. Continue through the wizard to complete creation of your new protection group.
 
 ## Migrate legacy storage to Modern Backup Storage
-After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
+After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.
 
 Use the following steps:
 
@@ -240,11 +241,6 @@ If you want to use legacy storage with DPM 2019, it may become necessary to add 
     DPM provides a list of available disks.
 
 5. Select the disks, click **Add** to add the disks, and click **OK**.
-
-## New PowerShell cmdlets
-
-For DPM 2016, two new cmdlets: [Mount-DPMRecoveryPoint](https://technet.microsoft.com/library/mt787159.aspx) and [Dismount-DPMRecoveryPoint](https://technet.microsoft.com/library/mt787158.aspx) are available. Click the cmdlet name to see its reference documentation.
-
 
 ## Enable Cloud Protection
 
