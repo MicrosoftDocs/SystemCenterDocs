@@ -13,7 +13,7 @@ ms.assetid:  11e4f7ef-cca9-4125-ab47-95dd19333dd9
 ---
 
 ## New features in SM 2019
-The following sections summarize the new features/feature updates released in SM 2019.
+See the following sections for detailed information about the new features/features supported in SM 2019.
 
 ## Support to SQL 2017
 SM 2019 supports SQL Server 2017 fresh installation.

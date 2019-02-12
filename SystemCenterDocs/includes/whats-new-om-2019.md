@@ -14,7 +14,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2019
 
-The following sections describe the new features/feature updates in System Center 2019 - Operations Manager.
+See the following sections for detailed information about the new features/feature updates supported in Operations Manager 2019.
 
 ## Service logon by default
 Operations Manager 2019 supports hardening of service accounts and does not require Interactive and Remote Interactive logon rights for service accounts.

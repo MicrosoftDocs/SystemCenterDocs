@@ -42,7 +42,7 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ## New features in DPM 2019
 
-The following sections provide information about the new features and feature updates provided in DPM 2019.
+ See the following sections for detailed information about the new features/feature updates supported in DPM 2019.
 
 ::: moniker-end
 

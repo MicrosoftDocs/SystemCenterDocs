@@ -12,7 +12,6 @@ ms.technology:  virtual-machine-manager
 ---
 
 ## New features in VMM 2019
-
 See the following sections for detailed information about the new features/feature updates supported in VMM 2019.
 
 ## Storage
