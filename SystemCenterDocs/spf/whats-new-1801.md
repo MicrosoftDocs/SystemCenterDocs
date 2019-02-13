@@ -40,13 +40,29 @@ This build should be used for validating the SPF integration scenarios with othe
 
 ::: moniker range="sc-spf-2019"
 
-## Support for TLS 1.2
+## Support for PowerShell 4.0+
+Earlier versions of SPF supported PowerShell V2.0. PowerShell V2.0 did not support some scripts and users had to apply workarounds. SPF 2019 supports PowerShell V4.0 to resolve this issue.
 
-To ensure secure communication, SPF 2019 supports TLS 1.2.  For information about how to set up, configure and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+## Support for SQL 2017
+SPF 2019 supports SQL 2017 for fresh installation.
 
 ## Bug fixes
 
 This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/en-us/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f).
+
+> [!NOTE]
+
+> No features were introduced in SPF 1807.
+
+> [!NOTE]
+
+> The following features/feature updates were introduced in SPF 1801.
+
+## Support for TLS 1.2
+
+This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/en-us/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f), along with added support for TLS 1.2 Protocol. For more information about how to set up, configure and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+
+This build should be used for validating the SPF integration scenarios with other System Center components included in the 1801 release.
 
 ::: moniker-end
 
