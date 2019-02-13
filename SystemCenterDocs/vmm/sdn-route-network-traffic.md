@@ -249,9 +249,16 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 ## Configure L3 forwarding
 
+L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud.
+
+Using L3 forwarding, tenant network virtual machines can connect to a physical network through the Windows Server 2016/2019 SDN Gateway, which is already configured in an SDN environment. In this case, the SDN gateway acts as a router between the virtualized network and the physical network.  
+
+To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
+
+
 > [!NOTE]
 
-> Ensure the following before you configure L3.
+> Ensure the following before you attempt to configure L3 connection.
 
 > - Ensure you're logged on as an administrator on the VMM server.
 > - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
@@ -268,7 +275,7 @@ Run the following script to set up L3 forwarding. Refer to the table above to ch
 
 > You cannot  limit bandwidth in L3 VPN connection.
 
-1. In the VMM console, select the tenant virtual network, which you want to connect to the physical network through L3 gateway.  
+1. In the VMM console, select the tenant virtual network that you want to connect to the physical network through L3 gateway.  
 2. Right-click, select **Properties** of the tenant virtual network.
 3. In the **VPN Connections** page, click **Add**> **Add Layer 3 tunnel**.
 
