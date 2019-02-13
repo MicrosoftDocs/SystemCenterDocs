@@ -126,7 +126,7 @@ Ensure the following before you prepare an account:
 - If you are using a disjointed namespace, you must use a domain account. For more information about disjointed namespaces, see Naming conventions in Active Directory for computers, domains, sites, and OUs.
 - If you are installing a highly available VMM management server, you must use a domain account.
 - The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
-- For using gMSA, review the article on gMSA and create the gMSA as per the guidance available.  Make sure that the servers on which the VMM Management service would be installed have permissions to retrieve the password of gMSA account.  
+- To create and use gMSA, review the article on gMSA and create the gMSA as per the guidance available.  Make sure that the servers on which the VMM Management service would be installed have permissions to retrieve the password of gMSA account.  
 
 > [!NOTE]
 > You do not need to specify the ‘Service Principle Name (SPN)’ when creating  gMSA. VMM service sets the appropriate SPN for gMSA.
