@@ -63,8 +63,7 @@ This change is introduced to ensure *omsagent* user is created only when you use
 ## Improvement in agent initiated maintenance mode
 Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, this feature is *event-based* as opposed to URL monitoring-based, compared to earlier releases. With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
 
-With event-based agent initiated maintenance mode, as events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss processing the maintenance request. [Learn more](../scom/manage-maintenance-mode-overview.md#agent-initiated-maintenance-mode-through-an-event).
-
+With event-based agent initiated maintenance mode, as events are almost real time, management server immediately reads the maintenance mode event from the agent machine and would never miss processing the maintenance request. 
 
 >[!NOTE]
 
