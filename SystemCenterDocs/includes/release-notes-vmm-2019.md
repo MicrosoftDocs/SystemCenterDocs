@@ -19,17 +19,17 @@ The following sections summarize the release notes for VMM 2019 and include the 
 
  **Description**: When you remove a cluster node from Windows Server 2019 S2D cluster, with a CleanUpDisks flag, the removal fails with **Could not get the specified instance MSFT_StorageJob** error, in the following scenarios
 
-a. The storage capacity is inadequate in the remaining servers to accommodate all the volumes.
+  - The storage capacity is inadequate in the remaining servers to accommodate all the volumes.
 
-b. There are not enough fault domains to provide the resiliency of the volume.  
+  - There are not enough fault domains to provide the resiliency of the volume.  
 
- **Workaround**: Ensure the following:
+**Workaround**: Ensure the following:
 
-a. Adequate storage capacity is available in the remaining servers to accommodate all the volumes
+-  Adequate storage capacity is available in the remaining servers to accommodate all the volumes
 
-b. Enough fault domains are available to provide the resiliency of your volumes.  
+-  Enough fault domains are available to provide the resiliency of your volumes.  
 
-## Addition of storage device having SMI-S management interface fails
+## Addition of storage device with SMI-S management interface fails
 
 **Description**: Addition of storage device having SMI-S management interface fails with the error **Registration of storage provider failed with error code WsManMIInvokeFailed** when System Center Virtual Machine Manager 2019 is installed on Windows Server 2019.  
 
