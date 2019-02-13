@@ -133,7 +133,7 @@ CentOS 6 and 7, Oracle Linux 6, 7 are supported
 
 ::: moniker-end
 
-::: moniker range="<sc-om-1807"
+::: moniker range="<=sc-om-1807"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager and version 1801.  
 
@@ -155,7 +155,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 ::: moniker-end
 
-::: moniker range="<sc-om-1807"
+::: moniker range="<=sc-om-1807"
 
 ## IBM AIX 7 (Power)  
 
