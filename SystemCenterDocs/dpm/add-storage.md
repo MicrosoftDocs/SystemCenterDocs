@@ -77,8 +77,7 @@ Setting up MBS consists of the following steps. Please note you cannot attach lo
 3. After the volumes are added, you can give them a friendly name.
 4. Click **OK** to format the volumes to ReFS, so that DPM can use them as MBS.
 
-
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
 ## Configure workload-aware storage
 
@@ -103,7 +102,7 @@ You configure workload-aware storage using Windows PowerShell cmdlets.
 
 ## Volume Exclusion
 
-DPM servers may be managed by a team of Administrators. While there are guidelines on storage that should be used for backups, a wrong volume given to DPM as backup storage may lead to loss of critical data. Hence, with UR4, you can prevent such scenarios by configuring those volumes to not be shown as available for storage using PowerShell.
+DPM servers may be managed by a team of Administrators. While there are guidelines on storage that should be used for backups, a wrong volume given to DPM as backup storage may lead to loss of critical data. Hence, with UR4 and later, you can prevent such scenarios by configuring those volumes to not be shown as available for storage using PowerShell.
 
 For Example, to exclude F:\ and C:\MountPoint1, here are the steps:
 
@@ -199,6 +198,175 @@ Windows Storage Spaces allows you to pool multiple physical disks together into 
 
 6.	Include the physical disk to the storage pool.
 
- ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
+    ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
 
+7. Check the media type of the disk included. At least one of the disks should be SSD, required for SSD Tiering.
+
+    ![Check disk type ](./media/add-storage/media-type-check-2019.png)
+
+8. If the media-type for HDD or SSD disk is not recognized correctly, use the following command:
+
+    *Set-PhysicalDisk -UniqueId <UniqueId String> -MediaType <HDD|SSD>*
+
+    ![Set media type ](./media/add-storage/set-media-type-2019.png)
+
+9. For each of these disks, set the allocation as **Automatic**.
+![Disk allocation](./media/add-storage/allocation-2019.png)
+
+10. Check the options made, and click **Create to create a new storage pool**.
+
+    ![Create a new storage pool](./media/add-storage/new-storage-pool-2019.png)
+
+After successful creation of the storage pool, the newly created storage pool gets listed under  **STORAGE POOL** . **PHYSICAL DISK** displays the disks that are present in the selected pool.
+
+## Disable Write-Back Cache
+
+Disable Write-Back Cache to disable auto caching at storage pool level (needed only for tiered storage).
+
+To do this, go to PowerShell and execute the following commands:
+
+```
+Set-StoragePool -FriendlyName <String> [-WriteCacheSizeDefault <UInt64>]
+Choose -WriteCacheSizeDefault value as 0
+ ```
+
+ ![Storage pool friendly name](./media/add-storage/ps-command-2019.png)
 ::: moniker-end
+
+## Create virtual disks
+
+1. In the **VIRTUAL DISK** pane, select **New Virtual Disk** from **TASKS** drop-down menu.
+
+    ![Virtual Disk](./media/add-storage/virtual-disk-2019.png)
+
+2. Choose the storage pool from which you want to create a virtual disk.
+
+    ![Choose Storage Pool](./media/add-storage/choose-storage-pool-2019.png)
+
+3. Provide a name for the virtual disk.
+
+    ![Name for Virtual Disk](./media/add-storage/virtual-disk-name-2019.png)
+
+4. Select **Create storage tiers on this virtual disk** to create a tiered storage.   
+
+    > [!NOTE]
+    > Tiered Storage is possible only when the storage pool contains a mixture of SSD and HDD).
+
+5. Click **Next** and select **Enable enclosure awareness (if required)**.
+
+    ![Enable Enclosure Awareness](./media/add-storage/enclosure-awareness-2019.png)
+
+6. Select **Simple Layout** and click **Next**.
+
+    ![Simple Layout](./media/add-storage/simple-layout-2019.png)
+
+7. **Fixed Provisioning** is the default selection.  Click **Next**.
+
+    ![fixed Provisioning](./media/add-storage/fixed-provisioning-2019.png)
+
+8. Provide the size for **Faster Tier** and **Standard Tier**.  **Faster Tier** corresponds to SSD and  **Standard Tier** corresponds to HDD. The size of the Faster Tier should be 4% the size of Standard Tier (For E.g. If the total requirement is 100 GB – if HDD is 96 GB, SDD should be 4 GB). Click **Next**.
+
+    ![Tier](./media/add-storage/tier-size-2019.png)
+
+9. Confirm the configurations and click **Create**.
+
+    ![Create tiered storage](./media/add-storage/tier-size-2019.png)
+
+## Create a volume
+
+Use the following steps:
+1. Select the virtual disk that you created and launch the **New Volume Wizard**.
+
+    ![New Volume Wizard](./media/add-storage/new-volume-wizard-2019.png)
+
+3. In the **New Volume Wizard**, click **Next**, assign drive letter, and specify the size.
+
+    ![Drive Letter](./media/add-storage/drive-letter-2019.png)
+
+    ![Assign Drive Letter](./media/add-storage/drive-letter-2019.png)
+
+4. Click **Finish** to create a new volume.
+5. Format the volume that you created, from **Disk Management** console to ReFS.
+
+## Disable Auto-Caching at file system level
+
+Applicable only for tiered volumes. To do this, go to PowerShell and use the following command:
+```
+
+ fsutil behavior disableWriteAutoTiering`
+(Usage:  fsutil behavior set disableWriteAutoTiering <volume pathname> <1|0>)
+```
+Values: **0** - Enable write auto tiering on the given volume (default)
+        **1** - Disable write auto tiering on the given volume
+
+**E.g.**:  `fsutil behavior set disableWriteAutoTiering C: 1`
+
+![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
+
+Now add the newly created volumes to DPM storage using step mentioned below.
+
+## Add volumes to DPM storage
+
+1. In the DPM Management console > **Disk Storage**, click **Rescan**.
+2. In **Add Disk Storage**, click **Add**.
+3. After the volumes are added, you can give them a friendly name.
+4. Click **OK** to format the volumes to ReFS, so DPM can use them as MBS.
+
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
+
+## Migrate your data to newly created volumes
+
+In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
+
+Migration of data source should have all recovery points on Modern Storage.
+> [!NOTE]
+
+> - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
+>- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are pre-empted.
+
+## Configure workload-aware storage
+
+Using workload-aware storage, the volumes can be selected to preferentially store specific workloads. For example, expensive volumes that support high IOPS can be configured to store workloads that need frequent, high-volume backups such as SQL Server with transaction logs. Workloads that are backed up less frequently, such as VMs, can be backed up to low-cost volumes.
+
+You can configure workload-aware storage using Windows PowerShell cmdlets.
+
+### Update the volume properties
+
+1. Run the **Update-DPMDiskStorage** to update the properties of a volume in the storage pool on a DPM server. The syntax is **Parameter Set: Volume**.
+2. Run the cmdlet with these parameters.
+
+    ```
+    Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-DatasourceType] <VolumeTag[]> ] [-Confirm] [-WhatIf] [ <CommonParameters>]
+    ```
+
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
+
+3. The changes made using the PowerShell cmdlet are reflected in the DPM Management console.
+
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
+
+## Volume Exclusion
+
+DPM servers may be managed by a team of Administrators. While there are guidelines on storage that should be used for backups, a wrong volume given to DPM as backup storage may lead to loss of critical data. Hence, with UR4 and later, you can prevent such scenarios by configuring those volumes to not be shown as *available* for storage using PowerShell.
+
+For Example, to exclude F:\ and C:\MountPoint1, use these steps:
+
+1. Run the Set0DPMGlobalPropery commandlet:
+
+```
+Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
+```
+2. Rescan the storage through UI, or use Start-DPMDiskRescan cmdlet.
+
+The configured volumes and mountpoints are excluded.
+To remove volume exclusion, run the following cmdlet:
+```
+Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
+```
+After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
+
+## Custom Size Allocation
+
+DPM 2019 consumes storage thinly, as needed. Once DPM is configured for protection, it calculates the size of the data being backed up. If many files and folders are being backed up together, as in the case of a file server, size calculation can take long time.
+
+With DPM 2016 and later, you can configure DPM to accept the volume size as default instead of calculating the size of each file. The corresponding registry key is *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage* with the Key, *EnableCustomAllocationOnReFSStorage* as a string set to 1 to enable custom size allocation, set to 0 for default size allocation with DPM.
