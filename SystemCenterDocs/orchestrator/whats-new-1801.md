@@ -14,6 +14,7 @@ ms.assetid: 6e89c2ee-583a-41df-a94c-47f349f954ef
 ---
 
 # What's new in System Center Orchestrator
+
 ::: moniker range="sc-orch-2019"
 
 This article details the new features supported in System Center 2019 - Orchestrator.
@@ -30,9 +31,9 @@ This article details the new features supported in System Center 1801 - Orchestr
 
 ## Support for TLS 1.2
 
-This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/en-us/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
+This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
-For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 ::: moniker-end
 
@@ -49,9 +50,9 @@ System Center Orchestrator 2019 supports SQL 2017 for fresh installation.
 -  SM/SCOM integration is cleaner and now have respective console dependency only.
 
 ## Bug fixes
-This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 6 of SCO 2016](https://support.microsoft.com/en-in/help/4465567/update-rollup-6-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
+This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 6 of SCO 2016](https://support.microsoft.com/help/4465567/update-rollup-6-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
-For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 > [!NOTE]
 
@@ -63,9 +64,9 @@ For more information about how to set up, configure and run your environment to 
 
 ## Support for TLS 1.2
 
-This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/en-us/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
+This release of System Center Orchestrator (SCO) contains all the bug fixes shipped till the [Update Rollup 4 of SCO 2016](https://support.microsoft.com/help/4047355/update-rollup-4-for-system-center-2016-orchestrator), along with the added support of TLS 1.2 Protocol.
 
-For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
+For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 ::: moniker-end
 

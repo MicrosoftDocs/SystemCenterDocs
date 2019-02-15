@@ -25,7 +25,7 @@ SMA 2019 supports SQL 2017 for fresh installation.
 To ensure secure communication, SMA 2019 supports Transport Layer Security (TLS) 1.2. For information about how to set up, configure and run your environment to use TLS 1.2, [Read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 ## Bug fixes
-This release of SMA contains all the bug fixes shipped until the [Update Rollup 5 of SMA 2016](https://support.microsoft.com/en-in/help/4094929/update-rollup-5-for-system-center-2016-service-management-automation).
+This release of SMA contains all the bug fixes shipped until the [Update Rollup 5 of SMA 2016](https://support.microsoft.com/help/4094929/update-rollup-5-for-system-center-2016-service-management-automation).
 
 > [!NOTE]
 
@@ -35,6 +35,6 @@ This release of SMA contains all the bug fixes shipped until the [Update Rollup 
 
 > The following features/feature updates were introduced in SMA 1801. It provides a number of bug fixes to improve the performance.
 
-This release of SMA contains all the bug fixes shipped until the [Update Rollup 1 of SMA 2016](https://support.microsoft.com/en-us/help/3190604), along with added support for TLS 1.2 Protocol. [Read this article](https://support.microsoft.com/en-us/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016) for more information about how to set up, configure, and run your environment to use TLS 1.2.
+This release of SMA contains all the bug fixes shipped until the [Update Rollup 1 of SMA 2016](https://support.microsoft.com/help/3190604), along with added support for TLS 1.2 Protocol. [Read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016) for more information about how to set up, configure, and run your environment to use TLS 1.2.
 
 This build should be used for validating the SMA integration scenarios with other System Center components included in the 1801 release.
