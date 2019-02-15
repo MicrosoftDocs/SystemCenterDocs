@@ -158,7 +158,7 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 > - Tiering is recommended for faster backups. However, this is not mandatory requirement to configure DPM storage.
 > - You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.    
 
-**Use the following steps**
+Follow these steps:
 
 1. Configure DPM storage
     > [!NOTE]
@@ -179,7 +179,7 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 
 Windows Storage Spaces allows you to pool multiple physical disks together into one logical drive. Storage Spaces use thin provisioning which reserves the drive capacity as we store data to the drive. It provides an easy way to create software-defined storage using a server's local storage resources.
 
-**Use the following steps to configure storage spaces**
+Follow these steps to configure storage spaces:
 
 1.	Open **Server Manager**.
 2.	Click **File and Storage Services**.
@@ -235,6 +235,7 @@ Choose -WriteCacheSizeDefault value as 0
 ::: moniker-end
 
 ### Create virtual disks
+Follow these steps:
 
 1. In the **VIRTUAL DISK** pane, select **New Virtual Disk** from **TASKS** drop-down menu.
 
@@ -275,7 +276,7 @@ Choose -WriteCacheSizeDefault value as 0
 
 ### Create a volume
 
-Use the following steps:
+Follow these steps:
 1. Select the virtual disk that you created and launch the **New Volume Wizard**.
 
     ![New Volume Wizard](./media/add-storage/new-volume-wizard-2019.png)
@@ -298,15 +299,18 @@ Applicable only for tiered volumes. To do this, go to PowerShell and use the fol
 (Usage:  fsutil behavior set disableWriteAutoTiering <volume pathname> <1|0>)
 ```
 Values: **0** - Enable write auto tiering on the given volume (default)
+
         **1** - Disable write auto tiering on the given volume
 
-**E.g.**:  `fsutil behavior set disableWriteAutoTiering C: 1`
+Example: fsutil behavior set disableWriteAutoTiering C: 1
 
 ![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
 
 Now add the newly created volumes to DPM storage using step mentioned below.
 
 ### Add volumes to DPM storage
+
+Follow these steps:
 
 1. In the DPM Management console > **Disk Storage**, click **Rescan**.
 2. In **Add Disk Storage**, click **Add**.
@@ -315,7 +319,7 @@ Now add the newly created volumes to DPM storage using step mentioned below.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
-## Migrate your data to newly created volumes
+## Migrate data to newly created volumes
 
 In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
 
@@ -342,9 +346,9 @@ You can configure workload-aware storage using Windows PowerShell cmdlets.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
 
-3. The changes made using the PowerShell cmdlet are reflected in the DPM Management console.
+Changes made using the PowerShell cmdlet are reflected in the DPM Management console.
 
-    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
+![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 
 ## Volume Exclusion
 
