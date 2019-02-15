@@ -175,7 +175,7 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 
 4.  Configure workload-aware storage.
 
-### Configure DPM Storage
+## Configure DPM Storage
 
 Windows Storage Spaces allows you to pool multiple physical disks together into one logical drive. Storage Spaces use thin provisioning which reserves the drive capacity as we store data to the drive. It provides an easy way to create software-defined storage using a server's local storage resources.
 
@@ -220,7 +220,7 @@ Windows Storage Spaces allows you to pool multiple physical disks together into 
 
 After successful creation of the storage pool, the newly created storage pool gets listed under  **STORAGE POOL** . **PHYSICAL DISK** displays the disks that are present in the selected pool.
 
-## Disable Write-Back Cache
+**Disable Write-Back Cache**
 
 Disable Write-Back Cache to disable auto caching at storage pool level (needed only for tiered storage).
 
@@ -234,7 +234,7 @@ Choose -WriteCacheSizeDefault value as 0
  ![Storage pool friendly name](./media/add-storage/ps-command-2019.png)
 ::: moniker-end
 
-## Create virtual disks
+### Create virtual disks
 
 1. In the **VIRTUAL DISK** pane, select **New Virtual Disk** from **TASKS** drop-down menu.
 
@@ -273,7 +273,7 @@ Choose -WriteCacheSizeDefault value as 0
 
     ![Create tiered storage](./media/add-storage/tier-size-2019.png)
 
-## Create a volume
+### Create a volume
 
 Use the following steps:
 1. Select the virtual disk that you created and launch the **New Volume Wizard**.
@@ -289,7 +289,7 @@ Use the following steps:
 4. Click **Finish** to create a new volume.
 5. Format the volume that you created, from **Disk Management** console to ReFS.
 
-## Disable Auto-Caching at file system level
+**Disable Auto-Caching at file system level**
 
 Applicable only for tiered volumes. To do this, go to PowerShell and use the following command:
 ```
@@ -306,7 +306,7 @@ Values: **0** - Enable write auto tiering on the given volume (default)
 
 Now add the newly created volumes to DPM storage using step mentioned below.
 
-## Add volumes to DPM storage
+### Add volumes to DPM storage
 
 1. In the DPM Management console > **Disk Storage**, click **Rescan**.
 2. In **Add Disk Storage**, click **Add**.
@@ -354,16 +354,16 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
 
 1. Run the Set0DPMGlobalPropery commandlet:
 
-```
-Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
-```
+    ```
+    Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
+    ```
 2. Rescan the storage through UI, or use Start-DPMDiskRescan cmdlet.
 
-The configured volumes and mountpoints are excluded.
-To remove volume exclusion, run the following cmdlet:
-```
-Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
-```
+    The configured volumes and mountpoints are excluded.
+    To remove volume exclusion, run the following cmdlet:
+    ```
+    Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
+    ```
 After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Custom Size Allocation
