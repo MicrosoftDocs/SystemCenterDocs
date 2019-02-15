@@ -161,7 +161,8 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 **Use the following steps**
 
 1. Configure DPM storage
-    > [!NOTE] Migrate your current backups to a temporary volume using Volume Migration, in case you wish to modify your existing storage to tiered storage.
+    > [!NOTE]
+    > Migrate your current backups to a temporary volume using Volume Migration, in case you wish to modify your existing storage to tiered storage.
 
     - Create a storage pool.
     - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
