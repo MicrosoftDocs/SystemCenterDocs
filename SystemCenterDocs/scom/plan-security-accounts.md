@@ -27,7 +27,7 @@ In System Center Operations Manager, management servers, gateway servers, and ag
 - Monitoring and collecting Windows Management Instrumentation (WMI) data.
 - Running actions such as scripts or batches.
 
-The account that a MonitoringHost.exe process runs as is called the action account.  MonitoringHost.exe is the process that runs these actions by using the credentials that are specified in the action account.  A new instance of MonitoringHost.exe is created for each account.  The action account for the MonitoringHost.exe process running on an agent is called the Agent Action Account.  The action account used by the MonitoringHost.exe process on a management server is called the Management Server Action account.  The action account used by the MonitoringHost.exe process on a gateway server is called the Gateway Server Action Account.  On all management servers in the management group, it is recommended to grant the account local administrative rights unless least-privileged access is required by your organizations IT security policy.
+The account that a MonitoringHost.exe process runs as is called the action account.  MonitoringHost.exe is the process that runs these actions by using the credentials that are specified in the action account.  A new instance of MonitoringHost.exe is created for each account.  The action account for the MonitoringHost.exe process running on an agent is called the Agent Action Account.  The action account used by the MonitoringHost.exe process on a management server is called the Management Server Action account.  The action account used by the MonitoringHost.exe process on a gateway server is called the Gateway Server Action Account.  On all management servers in the management group, we recommend that you grant the account local administrative rights unless least-privileged access is required by your organizations IT security policy.
 
 Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
@@ -44,16 +44,16 @@ You can use a low-privileged account for the agent’s action account. On comput
 > The minimum privileges described above are the lowest privileges that Operations Manager supports for the action account.  Other Run As accounts can have lower privileges.  The actual privileges required for the Action account and the Run As accounts will depend upon which management packs are running on the computer and how they are configured.  For more information about which specific privileges are required, see the appropriate management pack guide.
 
 ::: moniker range="<sc-om-2019"
-The domain account specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  Modify the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
+The domain account that is specified for the action account can be granted either Log on as a Service (SeServiceLogonRight) or Log on as Batch (SeBatchLogonRight) permission if your security policy does not allow a service account to be granted an interactive log on session, such as when smart card authentication is required.  Modify the registry value HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:
 ::: moniker-end
 
 ::: moniker range="sc-om-2019"
 
-The domain account specified for the action account is granted with Log on as a Service (SeServiceLogonRight) permission. To change the logon type for health service, modify the registry value *HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:*
+The domain account that is specified for the action account is granted with Log on as a Service (SeServiceLogonRight) permission. To change the logon type for health service, modify the registry value *HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\System Center\Health Service:*
 
 ::: moniker-end
 
-* Name:  Worker Process Logon Type
+* Name:  Worker Process Logon type
 * Type: REG_DWORD
 * Value (for Operations Manager 2016 to 1807): 4 means Log on as Batch and 5 means for Log on as Service.  The default is 2, Allow log on locally.  
 * Value for Operations Manger 2019 and later: 4 means Log on as Batch, 2 is Allow log on locally, and 5 for Log on as Service.  The default is 5.  

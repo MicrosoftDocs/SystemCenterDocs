@@ -135,7 +135,7 @@ Follow these steps:
     > - You can view the list of all Azure profiles from **Library**> **Profiles** > **Azure Profiles**.
     Select an Azure profile from the list to view detailed information of this profile, under **General Information** pane.
 
-## Manage azure VMs
+## Manage Azure VMs
 
 This feature allows you to perform basic actions on azure instances attached to an azure subscription.
 
@@ -186,7 +186,7 @@ Follow these steps:
     ![virtual machines information](./media/azure-profile/virtual-machines-information.png)
 6.	Click the **Update Status** link under **Azure Update Management info** to assess and deploy the updates for the VM.
 
->[!NOTE>
+>[!NOTE]
 > Azure update management capability also supports service deployments using service templates, the flow is same as the above.  
 
 ::: moniker-end
