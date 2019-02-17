@@ -184,7 +184,7 @@ Follow these steps:
 4.	Deploy the VMs from the VM template.
 5.	VMM onboards the VMs deployed through VM template to the *Azure Update Management* service and provides the link to the Azure console for managing the updates in the console.
     ![virtual machines information](./media/azure-profile/virtual-machines-information.png)
-6.	Click **Update Status** link under **Azure Update Management info** to assess and deploy the updates for the VM.
+6.	Click the **Update Status** link under **Azure Update Management info** to assess and deploy the updates for the VM.
 
 >[!NOTE>
 > Azure update management capability also supports service deployments using service templates, the flow is same as the above.  
