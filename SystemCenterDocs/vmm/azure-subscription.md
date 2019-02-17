@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Add an Azure subscription in VMM
 
-::: moniker range="<=sc-vmm-2019"
+::: moniker range="<=sc-vmm-1807"
 
 You can add Microsoft Azure subscriptions to System Center - Virtual Machine Manager (VMM), and perform basic actions on Azure instances in the subscriptions.
 
@@ -38,6 +38,8 @@ Here's what you need to add an Azure subscription in VMM:
 **Service administrator** | You need to be at least a service administrator for the subscription. You need this for access to the management certificate information that's required.
 **Management certificate** | The subscription must have a management certificate associated with it if you are managing Classic VMs only. So that VMM can use the service management API in Azure. [Learn more](https://azure.microsoft.com/documentation/articles/cloud-services-certs-create/) about service certificates. Make note of the subscription ID and the certificate thumbprint.<br/><br/> Certificates must be x509 v3 compliant.<br/><br/> The management certificate must be located in the local certificate store on the computer on which you add the Azure subscription feature.<br/><br/> The certificate should also be located in the **Current User \ Personal** store of the computer running the VMM console.
 
+::: moniker-end
+
 ::: moniker range="sc-vmm-1807"
 
 > [!NOTE]
@@ -53,6 +55,8 @@ Here's what you need to add an Azure subscription in VMM:
 > To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create an Azure AD application using Azure portal and make note of Directory ID, Application ID and Key.
 
 ::: moniker-end
+
+::: moniker range="<=sc-vmm-1807"
 
 ## Set up the Add Azure Subscription feature
 
@@ -70,7 +74,7 @@ If you are already managing your on-premises virtual machines in VMM, you can us
 -	Perform the following basic actions on the instances:
     -	Start
     -	Stop
-    - Shutdown
+    -   Shutdown
     -	Restart
     -	Connect via RDP
 
@@ -179,10 +183,10 @@ Follow these steps:
 
 4.	Deploy the VMs from the VM template.
 5.	VMM onboards the VMs deployed through VM template to the *Azure Update Management* service and provides the link to the Azure console for managing the updates in the console.
-![virtual machines information](./media/azure-profile/virtual-machines-information.png)
+    ![virtual machines information](./media/azure-profile/virtual-machines-information.png)
 6.	Click **Update Status** link under **Azure Update Management info** to assess and deploy the updates for the VM.
 
 >[!NOTE>
-Azure update management capability also supports service deployments using service templates, the flow is same as the above.  
+> Azure update management capability also supports service deployments using service templates, the flow is same as the above.  
 
 ::: moniker-end
