@@ -77,10 +77,14 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 2.	Click **OMS Portal**.
     The solution dashboard is displayed and provides you with all the backup information as shown below:
 
+    Sample 1:
+
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
 
+    Sample 2:
+
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image2.png)
-3. You can also monitor active alerts, current data sources being backed up & cloud storage as shown below:
+3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
 4. You can also specify the desired time range for monitoring the backup parameters.
@@ -90,8 +94,8 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 **Create Custom Alerts**
 1.	Click any values in the above graph to view more details in the Logs window.
 2.	Click **Alert** icon.
-3.	Select **Take me to Azure Alerts**
-4.	In Log Analytics workspace, click **New Alert Rule**
+3.	Select **Take me to Azure Alerts**.
+4.	In Log Analytics workspace, click **New Alert Rule**.
 5.	Define the **alert condition**, **alert details** and **action group**.
 6.	[Learn more](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
 
