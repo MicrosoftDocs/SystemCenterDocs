@@ -29,7 +29,7 @@ In System Center Operations Manager, management servers, gateway servers, and ag
 
 The account that a MonitoringHost.exe process runs as is called the action account.  MonitoringHost.exe is the process that runs these actions by using the credentials that are specified in the action account.  A new instance of MonitoringHost.exe is created for each account.  The action account for the MonitoringHost.exe process running on an agent is called the Agent Action Account.  The action account used by the MonitoringHost.exe process on a management server is called the Management Server Action account.  The action account used by the MonitoringHost.exe process on a gateway server is called the Gateway Server Action Account.  On all management servers in the management group, we recommend that you grant the account local administrative rights unless least-privileged access is required by your organizations IT security policy.
 
-Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
+Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those, you defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
 When you install Operations Manager, you have the option of specifying either a domain account or using LocalSystem.  The more secure approach is to specify a domain account, which allows you to select a user with the least privileges necessary for your environment.   
 
@@ -53,7 +53,7 @@ The domain account that is specified for the action account is granted with Log 
 
 ::: moniker-end
 
-* Name:  Worker Process Logon type
+* Name:  Worker Process Log on type
 * Type: REG_DWORD
 * Value (for Operations Manager 2016 to 1807): 4 means Log on as Batch and 5 means for Log on as Service.  The default is 2, Allow log on locally.  
 * Value for Operations Manger 2019 and later: 4 means Log on as Batch, 2 is Allow log on locally, and 5 for Log on as Service.  The default is 5.  
