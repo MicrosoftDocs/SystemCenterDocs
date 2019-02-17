@@ -53,19 +53,19 @@ For long term retention on VMware backup data on-premises, you can now enable VM
 
 DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. Also supports Item Level Recovery (ILR)) of individual files and folders of Window Server VMs. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
-## Support to newer workloads backups
-With DPM 2019, you can back up newer versions of different workloads, listed below:
+## Support for newer workloads backups
+With DPM 2019, you can back up newer versions of workloads, listed below:
 1.	Hyper-V VMs 2019
 2.	Windows Server 2019
 3.	Exchange 2019
 4.	SharePoint 2019
-5.	VMWare vSphere 6.7
+5.	VMWare [vSphere 6.7](#back-up-vmware.md)
 6.	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ## Faster backups with Tiered storage using SSDs
 DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
-To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. [Learn more](add-storage.md#set-up-mbs-with-tiered storage).
+To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups[Learn more](add-storage.md#set-up-mbs-with-tiered storage).
 
 ## VMWare parallel backups
 With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
@@ -84,22 +84,6 @@ DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 DPM 2019 support SQL 2017 as its database.
 
 You can install SQL Server on a remote server, or on the DPM server. the database  must be installed and running before you install DPM.
-
-> [!NOTE]
-
-> The following bug fixes were provides with  DPM 1807 to improve the performance.
-
-To view the list of bugs fixed and the installation instructions for DPM 1807, see [KB article 4339950](https://support.microsoft.com/help/4339950).
-
-> [!NOTE]
-
-> The following features/feature updates were introduced in DPM 1801.
-
-System Center DPM 1801 supports [back up and restore of VMware virtual machines](https://blogs.technet.microsoft.com/dpm/2018/02/27/faster-vmware-backups-with-sc-1801-dpm/) (VMs), and extends the benefits of Modern Backup Storage to your VMware backups. For detailed information on how to back up VMware VMs, see [this article](back-up-vmware.md).
-
-* Up to 50% storage savings
-* Three times faster backups
-* Workload-volume affinity
 
 ::: moniker-end
 
