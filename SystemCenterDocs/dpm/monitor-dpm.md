@@ -76,14 +76,16 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 1.	Select your Log Analytics workspace.
 2.	Click **OMS Portal**.
     The solution dashboard is displayed and provides you with all the backup information as shown below:
-![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
+
+    ![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image2.png)
 3. You can also monitor active alerts, current data sources being backed up & cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
 4. You can also specify the desired time range for monitoring the backup parameters.
-![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
+
+    ![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
 
 **Create Custom Alerts**
 1.	Click any values in the above graph to view more details in the Logs window.
