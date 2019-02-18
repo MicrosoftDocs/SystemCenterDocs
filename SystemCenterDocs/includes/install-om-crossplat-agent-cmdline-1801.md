@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: include file
 description: include article to detail the detail how to install the Operations Manager version 1801 agent manually on UNIX and Linux computers.
 author: mgoedtel
@@ -11,7 +11,7 @@ ms.prod:  system-center-threshold
 ms.technology:  operations-manager
 ---
 
-## Install Operations Manager 1801 agent on UNIX and Linux computers from the command line
+## Install Operations Manager 1801/1807 agent on UNIX and Linux computers from the command line
 The following procedures show how to manually install agents to UNIX and Linux computers for monitoring in System Center Operations Manager version 1801.
 
 ## To install the agent on Red Hat Enterprise Linux and SUSE Linux Enterprise Server
@@ -26,7 +26,7 @@ The following procedures show how to manually install agents to UNIX and Linux c
 
 2.  To install the Red Hat Enterprise package, type:
 
-    `sh ./omsagent-<version>.rhel.<version>.<arch>.sh --install --enable-opsmgr` 
+    `sh ./omsagent-<version>.rhel.<version>.<arch>.sh --install --enable-opsmgr`
 
     or for SUSE Linux Enterprise package, type:
 

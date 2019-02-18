@@ -60,9 +60,6 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 1.	Logon to Azure portal.
 2.	[Create a Recovery Service vault](https://docs.microsoft.com/azure/backup/backup-azure-vms-first-look-arm#create-a-recovery-services-vault-for-a-vm), or if you already have one, select the same.
 3.	Select **Diagnostic Settings** under **Monitoring** section.
-
-    ![Diagnostics settings](./media/monitor-dpm/diagnostic-settings.png)
-
 4. Click **Turn on Diagnostic Settings**.
 5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
 
@@ -76,22 +73,25 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 1.	Select your Log Analytics workspace.
 2.	Click **OMS Portal**.
     The solution dashboard is displayed and provides you with all the backup information as shown below:
-![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
 
-    ![Azure backup report](./media/monitor-dpm/monitor-backup-image2.png)
-3. You can also monitor active alerts, current data sources being backed up & cloud storage as shown below:
+    Sample 1:
+
+    ![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
+
+3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)
 4. You can also specify the desired time range for monitoring the backup parameters.
-![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
+
+    ![Timeframe for monitoring](./media/monitor-dpm/specify-timeframe.png)
 
 **Create Custom Alerts**
 1.	Click any values in the above graph to view more details in the Logs window.
 2.	Click **Alert** icon.
-3.	Select **Take me to Azure Alerts**
-4.	In Log Analytics workspace, click **New Alert Rule**
+3.	Select **Take me to Azure Alerts**.
+4.	In Log Analytics workspace, click **New Alert Rule**.
 5.	Define the **alert condition**, **alert details** and **action group**.
-6.	[Learn more](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
+6.	[Learn more](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
 
 ::: moniker-end
 

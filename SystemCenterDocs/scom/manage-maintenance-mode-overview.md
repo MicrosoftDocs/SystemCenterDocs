@@ -118,10 +118,24 @@ The following section describes how to work with the different options for the o
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
 
+::: moniker range="<sc-om-2019"
 
 ### Enable from Target System
 
-Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry, which stores arguments for Maintenance Mode, such as duration, reason, comment, and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
+Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry, which stores arguments for Maintenance Mode, such as duration, reason, comment, and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.
+
+::: moniker-end  
+
+::: moniker range="sc-om-2019"
+
+### Enable from Target System
+
+Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event, which stores arguments for the maintenance mode, such as duration, reason, comment, and information like time of invocation of cmdlet.
+
+A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There is another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes (default value) reads this event from the Operations Manager database, and sets the maintenance mode to agent-based, based on the record read from the event.  You can override the frequency rule to a custom value.
+
+::: moniker-end
+
 
 **Start-SCOMAgentMaintenanceMode** has the following syntax:
 
@@ -171,25 +185,23 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request.
 
+::: moniker range="<sc-om-2019"
+
 > [!NOTE]  
 > To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
 
 > In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the **Start-SCOMAgentMaintenanceMode** cmdlet:
 > `Set-ItemProperty -Path "HKLM:\software\Microsoft\Microsoft Operations Manager\3.0\MaintenanceMode" -Name record -Value "" `  
 
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
-## Agent initiated maintenance mode through an event
-Use the following procedure to configure agent initiated maintenance mode:
-
-1.	Log onto the computer and start Windows PowerShell as an administrator.
-2.	Change directory to *C:\Program Files\Microsoft Monitoring Agent\Agent*.
-3.	Import the module by typing *Import-module MaintenanceMode.dll*.
-4.	Type *Start-SCOMAgentMaintenanceMode* and use the parameters to configure the maintenance mode request.
-
-**Example**: Start-SCOMAgentMaintenanceMode -Duration 10 –Reason ApplicationInstallation
+> [!NOTE]
+To confirm that maintenance mode request is successful, see the Operations Manager's event log for the event ID 2222 followed by an event with event ID 2223. In case event ID 2223 is not available,  raise the maintenance mode request, once again.
 
 ::: moniker-end
+
 
 ## Schedule maintenance mode
 

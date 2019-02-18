@@ -11,8 +11,7 @@ ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
-# Set up dynamic and power optimization in the VMM compute fabric
-
+# Set up dynamic and power optimization in VMM
 
 
 Read this article to learn about enabling dynamic optimization (DO) and power optimization for virtual machines (VMs) in the System Center - Virtual Machine Manager (VMM) compute fabric. The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
@@ -95,7 +94,7 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 overe WS-Ma
 You can run dynamic optimization on demand on a host cluster. within a host cluster. To do this dynamic optimization doesn't need to be configured on the parent host group.
 
 1. Open **Fabric** > **Servers** > **Host Groups**, and navigate the host cluster.
-2. To optimize VM load on host, click **Folder** > **Optimization** > **Optimize Hosts**. VMM performs a dynamic optimization review to determine whether virtual machines can be migrated to improve load balancing in the host cluster. If migrating virtual machines can improve load balancing, VMM displays a list of virtual machines that are recommended for migration, with the current and target hosts indicated. The list excludes any hosts that are in maintenance mode in VMM and any virtual machines that are not highly available.
+2. To optimize VM load on a host, click **Folder** > **Optimization** > **Optimize Hosts**. VMM performs a dynamic optimization review to determine whether virtual machines can be migrated to improve load balancing in the host cluster. If migrating virtual machines can improve load balancing, VMM displays a list of virtual machines that are recommended for migration, with the current and target hosts indicated. The list excludes any hosts that are in maintenance mode in VMM and any virtual machines that are not highly available.
 3. Click **Migrate**.
 
 ## Set storage DO thresholds
@@ -130,5 +129,4 @@ Use the following steps:
 2. On the **Host** tab, in the **Host** group click **Power On** or **Power Off**. You can view information about power on and off events in the BMC logs (click on **Hardware** > **Advanced** > **BMC Logs**).
 
 ## Next steps
-
 Learn about [provisioning VMs](provision-vms.md).

@@ -81,7 +81,11 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
 > [!NOTE]
 
+>  For SQL 2017, SM  doesn’t support SSAS mode *Tabular*. Select the SSAS mode as *Multi-dimensional* during the installation of SQL Server 2017.
+
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+
+
 
 **Service Manager** |  **SQL Server 2016 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | **SQL Server [2017](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017)**
 --- | --- | --- | --- | ---

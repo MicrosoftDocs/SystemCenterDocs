@@ -14,8 +14,9 @@ ms.technology: virtual-machine-manager
 
 # Set up user roles in VMM
 
-
 This article describes how to set up System Center - Virtual Machine Manager (VMM) user roles.
+>[!NOTE]
+> The role based access control (RBAC) role – VM Administrator is supported from VMM 2019.
 
 ## Before you start
 
@@ -52,11 +53,3 @@ This article describes how to set up System Center - Virtual Machine Manager (VM
     To limit the combined number of VM networks that can be created by all members of this user role, use the upper setting. To limit the number of VM networks that can be created by each individual member of this user role, use the lower setting.
 
 13. In **Summary** page, review the settings, and click **Finish** to create the role. Verify the role appears in **Settings** > **Security** > **User Roles**.
-
-
-## Create VM Administrator role
-
-> [!NOTE]
- VM Administrator role can be scoped to both clouds and host groups. Even if the user is scoped to a cloud, the user would be able to read only all the fabric elements attached to the cloud.
-
-To create VM Administrator role, use the steps in the above procedure, select **Virtual Machine Administrator** as the role, and assign the scope and permissions.
