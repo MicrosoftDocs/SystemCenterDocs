@@ -51,7 +51,7 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 ## VMware backup to tape
 For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 
-DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. Also supports Item Level Recovery (ILR)) of individual files and folders of Window Server VMs. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
 ## Support for newer workloads backups
 With DPM 2019, you can back up newer versions of workloads, listed below:
@@ -59,7 +59,7 @@ With DPM 2019, you can back up newer versions of workloads, listed below:
 2.	Windows Server 2019
 3.	Exchange 2019
 4.	SharePoint 2019
-5.	VMWare [vSphere 6.7](#back-up-vmware.md)
+5.	VMWare [vSphere 6.7](back-up-vmware.md)
 6.	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ## Faster backups with Tiered storage using SSDs
