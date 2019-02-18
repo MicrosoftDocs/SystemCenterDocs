@@ -37,7 +37,7 @@ Activate DW components using the following steps:
 System Center Service Manager 2019 requires SQL Server Analysis Services (SSAS) to work with Microsoft Online Analytical Processing (OLAP) cubes. With SQL 2017 the default SSAS mode is **Tabular**. Service Manager’s Management Server and Data Warehouse only work with SSAS mode **Multi-Dimensional** and not **Tabular**.
 
 **Workaround:**
-In case of fresh installation of SQL Server 2017, select the SSAS mode as **Multi-Dimensional**. In case of an upgrade from an earlier version of SQL Server to SQL Server 2017, the older SSAS mode is persists. Hence, no manual step is required for SQL Server upgrade scenario.
+In case of fresh installation of SQL Server 2017, select the SSAS mode as **Multi-Dimensional**. In case of an upgrade from an earlier version of SQL Server to SQL Server 2017, the older SSAS mode persists. Hence, no manual step is required for SQL Server upgrade scenario.
 
 ### Installation of SM 2019 on TLS 1.2 machine fails
 **Description**: Fresh Installation of System Center Service Manager 2019 or an upgrade from a previous version to SM 2019 fails if the computer is TLS 1.2 hardened.
