@@ -13,7 +13,7 @@ ms.assetid: df2f12b4-ccbe-459e-815c-c70ad97fd0e1
 ---
 
 ## Release Notes for System Center 2019 - Service Manager
-The following sections detail the release notes for Service Manager 2019 and include the known issues and workarounds. Some of these were also documented for previous versions of Service Manager.
+The following sections detail the release notes for Service Manager 2019 and include the known issues and workarounds.
 
 ## Activating Data Warehouse Server
 
@@ -42,7 +42,7 @@ In case of fresh installation of SQL Server 2017, select the SSAS mode as **Mult
 ### Installation of SM 2019 on TLS 1.2 machine fails
 **Description**: Fresh Installation of System Center Service Manager 2019 or an upgrade from a previous version to SM 2019 fails if the computer is TLS 1.2 hardened.
 
-**Workaround**: Disable TLS 1.2 during the installation/upgrade and re-enable it after the upgrade is complete.
+**Workaround**: Disable TLS 1.2 before the installation/upgrade and re-enable it after the upgrade is complete.
 
 ### Prerequisite for installing SM Authoring Tool
 **Description**: Install Microsoft Visual C++ 2012 redistributable before you deploy Service Manager Authoring Tool 2019.
