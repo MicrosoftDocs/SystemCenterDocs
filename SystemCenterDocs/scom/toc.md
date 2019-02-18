@@ -7,7 +7,7 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
-## [Enable service logon by default](enable-service-logon.md)
+## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
 # How To
 ## [Plan](plan-overview.md)

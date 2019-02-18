@@ -13,7 +13,7 @@ ms.topic: article
 monikerRange: 'sc-om-2019'
 ---
 
-# Enable Service Log on by default for Operations Manager
+# Enable Service Log on for run as accounts
 
 Security best practice is to disable  Interactive and remote Interactive log on permissions for service accounts. Security teams, across organizations have strict controls to enforce this best practice to prevent credential theft and associated attacks.
 
