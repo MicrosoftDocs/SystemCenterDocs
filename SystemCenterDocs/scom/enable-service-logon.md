@@ -99,8 +99,8 @@ In the event viewer, on the agent computer, see the information under event ID 7
 |--------------------|---------------|
 |Alert Name|Run As account does not have requested log on type.|
 |Alert Description|The Run As account must have the requested log on type.|
-|Alert Context |Health Service could not log on as the  <Run As Account>  for management group <group name> because it has not been granted the **Log on as a service** permission.|
-|Monitor|<add monitor name>|
+|Alert Context |Health Service could not log on as the  Run As Account  for management group (group name) because it has not been granted the *Log on as a service* permission.|
+|Monitor|(add monitor name)|
 
 Provide **Log on as a Service** permission to the applicable Run As accounts, which are identified in the event 7002.
 
