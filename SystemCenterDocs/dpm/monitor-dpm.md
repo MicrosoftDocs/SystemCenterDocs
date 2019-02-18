@@ -60,9 +60,6 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 1.	Logon to Azure portal.
 2.	[Create a Recovery Service vault](https://docs.microsoft.com/azure/backup/backup-azure-vms-first-look-arm#create-a-recovery-services-vault-for-a-vm), or if you already have one, select the same.
 3.	Select **Diagnostic Settings** under **Monitoring** section.
-
-    ![Diagnostics settings](./media/monitor-dpm/diagnostic-settings.png)
-
 4. Click **Turn on Diagnostic Settings**.
 5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
 
@@ -81,9 +78,6 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image1.png)
 
-    Sample 2:
-
-    ![Azure backup report](./media/monitor-dpm/monitor-backup-image2.png)
 3. You can also monitor active alerts, current data sources being backed up and cloud storage as shown below:
 
     ![Azure backup report](./media/monitor-dpm/monitor-backup-image3.png)

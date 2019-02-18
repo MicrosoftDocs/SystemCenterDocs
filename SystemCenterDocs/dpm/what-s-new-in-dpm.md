@@ -55,12 +55,12 @@ DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location 
 
 ## Support for newer workloads backups
 With DPM 2019, you can back up newer versions of workloads, listed below:
-1.	Hyper-V VMs 2019
-2.	Windows Server 2019
-3.	Exchange 2019
-4.	SharePoint 2019
-5.	VMWare [vSphere 6.7](back-up-vmware.md)
-6.	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
+-	Hyper-V VMs 2019
+-	Windows Server 2019
+-	Exchange 2019
+-	SharePoint 2019
+-	VMWare [vSphere 6.7](back-up-vmware.md)
+-	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ## Faster backups with Tiered storage using SSDs
 DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.

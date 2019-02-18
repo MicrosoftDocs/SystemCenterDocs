@@ -98,7 +98,7 @@ You configure workload-aware storage using Windows PowerShell cmdlets.
 
 3. The changes made using the PowerShell cmdlet are reflected in the DPM Management console.
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 
 ## Volume Exclusion
 
@@ -108,16 +108,16 @@ For Example, to exclude F:\ and C:\MountPoint1, here are the steps:
 
 1. Run the Set0DPMGlobalPropery commandlet:
 
-```
-Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
-```
+    ```
+    Set-DPMGlobalProperty -DPMStorageVolumeExclusion "F:,C:\MountPoint1"   
+    ```
 2. Rescan the storage through UI, or use Start-DPMDiskRescan cmdlet.
 
-The configured volumes and mountpoints are excluded.
-To remove volume exclusion, run the following cmdlet:
-```
-Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
-```
+    The configured volumes and mountpoints are excluded.
+3. To remove volume exclusion, run the following cmdlet:
+    ```
+    Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
+    ```
 After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Backup Storage Migration
@@ -346,9 +346,9 @@ You can configure workload-aware storage using Windows PowerShell cmdlets.
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-8.png)
 
-Changes made using the PowerShell cmdlet are reflected in the DPM Management console.
+    Changes made using the PowerShell cmdlet are reflected in the DPM Management console.
 
-![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
+    ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-9.png)
 
 ## Volume Exclusion
 
@@ -364,7 +364,7 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
 2. Rescan the storage through UI, or use Start-DPMDiskRescan cmdlet.
 
     The configured volumes and mountpoints are excluded.
-    To remove volume exclusion, run the following cmdlet:
+3. To remove volume exclusion, run the following cmdlet:
     ```
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
     ```
