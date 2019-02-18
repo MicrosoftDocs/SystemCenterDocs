@@ -39,6 +39,18 @@ Earlier version of Operations Managers has *Allow log on locally* as the default
 
 - After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
 
+### View log on type for management servers and agents
+
+You can view the log on type for management servers and agents from Operations Manager console, using the following path:
+
+  **Administrators** > **operations Manager Products**> **Management Servers and Administration** > **Agents**
+
+
+![Log on type for management servers](./media/enable-service-logon/logon-type-management-servers.png)
+
+> [!NOTE]
+
+> Log on type for the agent/gateway, which is not yet upgraded  display *Service* as log on type, irrespective of the agent's current log on type. Once the agent is upgraded, the current log on type will be displayed.
 
 ## Enable service log on permission for Run As accounts
 
@@ -59,6 +71,7 @@ Follow these steps:
 > If you are upgrading to Operations Manager 2019 from a previous version or installing a new Operations Manager 2019 environment, follow the steps above to provide **Log on as a service** permission to Run as accounts.
 
 ## Change log on type for a health service
+
 If you need to change the log on type of Operations Manager health service to Interactive, you can use the local group policy on the agent computer as shown below:
 
 > [!NOTE]
@@ -67,7 +80,12 @@ If you need to change the log on type of Operations Manager health service to In
 ![Monitoring action account log on types](./media/enable-service-logon/om2019-monitoring-action-account-logon-type.png)
 
 ## Coexistence with Operations Manager 2016 agent
-Operations Manager 2016 agent uses the **Interactive** log on type as default. Operations Manager 2019 service accounts have both service log on and Interactive log on permissions, so Operations Manager 2019 can interoperate with Operations Manager 2016 agent.
+Helath service in Operations Manager 2016 uses *Interactive* as log on type. Operations Manager uses *Log on as a service* as default. However, Operations Manager 2019 and 2016 can interoperate with no issues as log on type of health service do not impact the interoperability.  
+
+Following scenarios are impacted:.
+ - Push install from Operations Manager console requires admin privilege and *Log on as a service* permission.
+ - Operations Manager MS action account required admin privilege on management server for Service Manager monitoring.
+
 
 ## Troubleshooting
 
