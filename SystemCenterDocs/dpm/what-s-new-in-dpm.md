@@ -75,7 +75,7 @@ With earlier versions of DPM, parallel backups were performed only across protec
 ## Support for Central Monitoring
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
 
-You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability. You can use this monitoring solution to monitor your key backup parameters such as backups jobs, backup alerts and cloud storage across all your recovery service vaults & subscriptions. You can also create alert notifications and open tickets using webhooks or ITSM integration. [Learn more](monitor-dpm.md).
+You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md).
 
 ## Windows Server 2019 support
 DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
@@ -83,7 +83,7 @@ DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 ## SQL 2017 support as DPM database
 DPM 2019 support SQL 2017 as its database.
 
-You can install SQL Server on a remote server, or on the DPM server. the database  must be installed and running before you install DPM.
+You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM.
 
 ::: moniker-end
 
