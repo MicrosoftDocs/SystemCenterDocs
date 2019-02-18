@@ -55,8 +55,8 @@ The domain account that is specified for the action account is granted with Log 
 
 * Name:  Worker Process Log on type
 * Type: REG_DWORD
-* Value (for Operations Manager 2016 to 1807): 4 means Log on as Batch and 5 means for Log on as Service.  The default is 2, Allow log on locally.  
-* Value for Operations Manger 2019 and later: 4 means Log on as Batch, 2 is Allow log on locally, and 5 for Log on as Service.  The default is 5.  
+* Values (for Operations Manager 2016 to 1807): Four (4) -  Log on as batch, Two (2) -  Allow log on locally and Five (5) - Log on as Service.  Default value is 2.   
+* Values for Operations Manger 2019 and later: Four (4) - Log on as Batch, Two (2) -  Allow log on locally, and Five (5) - Log on as Service.  Default value is 5.  
 
 You can centrally manage the setting using Group Policy by copying the ADMX file  `healthservice.admx` from a management server or agent-managed system located in the folder `C:\Windows\PolicyDefinitions` and configuring the setting **Monitoring Action Account Logon Type** under the folder `Computer Configuration\Administrative Templates\System Center - Operations Manager`.  For more information working with Group Policy ADMX files, see [Managing Group Policy ADMX files](https://technet.microsoft.com/library/cc709647%28v=ws.10%29.aspx).
 
