@@ -91,7 +91,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 3.	Select **Take me to Azure Alerts**.
 4.	In Log Analytics workspace, click **New Alert Rule**.
 5.	Define the **alert condition**, **alert details** and **action group**.
-6.	[Learn more](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
+6.	[Learn more](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-response#create-alerts) about how to configure new alerts.
 
 ::: moniker-end
 
