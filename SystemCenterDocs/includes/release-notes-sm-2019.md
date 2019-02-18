@@ -109,7 +109,6 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
   ```
 
 4. Add the following segment in its entirety in the same section as the other segments.
-Copy
 
    ```
 
