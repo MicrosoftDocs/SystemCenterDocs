@@ -247,10 +247,10 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 3.	Once replica VHD is mounted, use *mountvol.exe* to assign a drive letter to the replica volume, using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
 
 Note that all the highlighted text with angular braces are place holders, replace them with appropriate values.
-    - <ReFSVolume> - Access path from the SQL script output
-    - <DPMServer FQDN> - Fully qualified name of DPM server
-    - <PhysicalReplicaId> - Physical replica ID from the SQL script out
-    - <PITId> - GUID identifier other than physical replica ID in the container directory
+- <ReFSVolume> - Access path from the SQL script output
+- <DPMServer FQDN> - Fully qualified name of DPM server
+- <PhysicalReplicaId> - Physical replica ID from the SQL script out
+- <PITId> - GUID identifier other than physical replica ID in the container directory
 4.	Open another administrative command prompt and run *psexec.exe -s cmd.exe* to start a command prompt in system context.
 5.	Change directory to the X: drive and navigate to the location of the DPM database files.
 6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
@@ -527,10 +527,10 @@ For example: mountvol X: \\?\Volume{<PhysicalReplicaId>}\
 3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica id from the SQL script output. For example: mountvol X: \\?\Volume{<PhysicalReplicaId>}\
 
 All of the following  text with angular braces are place holders, replace them with appropriate values.
-    - <ReFSVolume> - Access path from the SQL script output
-    - <DPMServer FQDN> - Fully qualified name of DPM server
-    - <PhysicalReplicaId> - Physical replica ID from the SQL script out
-    - <PITId> - GUID identifier other than physical replica ID in the container directory.
+- <ReFSVolume> - Access path from the SQL script output
+- <DPMServer FQDN> - Fully qualified name of DPM server
+- <PhysicalReplicaId> - Physical replica ID from the SQL script out
+- <PITId> - GUID identifier other than physical replica ID in the container directory.
 4.	Open another administrative command prompt and run psexec.exe -s cmd.exe to start a command prompt in system context.
 5.	Change directory to the X: drive and navigate to the location of the DPM database files.
 6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
