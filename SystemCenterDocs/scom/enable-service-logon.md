@@ -17,7 +17,7 @@ monikerRange: 'sc-om-2019'
 
 Security best practice is to disable  Interactive and remote Interactive log on permissions for service accounts. Security teams, across organizations have strict controls to enforce this best practice to prevent credential theft and associated attacks.
 
-System Center 2019 - Operations Manager supports hardening of service accounts and do not require Interactive and Remote Interactive log on rights for service accounts.
+System Center 2019 - Operations Manager supports hardening of service accounts and requires no Interactive or  Remote Interactive log on rights for service accounts.
 
 Earlier version of Operations Managers has *Allow log on locally* as the default log on type. Operations Manager 2019 uses *Service Log on* as the log on type, by default. This leads to the following changes:
 
@@ -72,7 +72,7 @@ Follow these steps:
 
 ## Change log on type for a health service
 
-If you need to change the log on type of Operations Manager health service to Interactive, you can use the local group policy on the agent computer as shown below:
+If you need to change the log on type of Operations Manager health service to Interactive, use the local group policy on the agent computer as shown below:
 
 > [!NOTE]
 > A monitor-based alert is generated for this event.
@@ -80,7 +80,7 @@ If you need to change the log on type of Operations Manager health service to In
 ![Monitoring action account log on types](./media/enable-service-logon/om2019-monitoring-action-account-logon-type.png)
 
 ## Coexistence with Operations Manager 2016 agent
-Helath service in Operations Manager 2016 uses *Interactive* as log on type. Operations Manager uses *Log on as a service* as default. However, Operations Manager 2019 and 2016 can interoperate with no issues as log on type of health service do not impact the interoperability.  
+Helath service in Operations Manager 2016 uses *Interactive* as log on type. Operations Manager uses *Log on as a service* as default. However, Operations Manager 2019 and 2016 can interoperate without any issues as log on type of health service has no impact on the interoperability.  
 
 Following scenarios are impacted:.
  - Push install from Operations Manager console requires admin privilege and *Log on as a service* permission.
@@ -89,7 +89,7 @@ Following scenarios are impacted:.
 
 ## Troubleshooting
 
-If any of the **Run as Account** do have the required **Log on as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of the **Run as account**, which do not have **Log on as a Service** permission.
+If any of the Run as accounts do have the required **Log on as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of the Run as account, which does not have **Log on as a Service** permission.
 
 ![alert properties](./media/enable-service-logon/om2019-alert-properties.png)
 
