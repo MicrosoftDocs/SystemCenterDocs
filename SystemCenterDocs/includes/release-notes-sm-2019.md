@@ -15,22 +15,20 @@ ms.assetid: df2f12b4-ccbe-459e-815c-c70ad97fd0e1
 ## Release Notes for System Center 2019 - Service Manager
 The following sections detail the release notes for Service Manager 2019 and include the known issues and workarounds.
 
-## Activating Data Warehouse Server
-
-Activate DW components using the following steps:
-1. Open Windows Powershell.
-2. Change directory to Installation folder/Powershell.
-3. Run the following below command to import PowerShell module;
-  `Import-Module .\System.Center.Service.Manager.psm1`
-4. Run `Set-SCSMLicense powershell` cmdlet to activate license.
-
->[!NOTE]
-
-> Management server input to this command will be your DW server.
-
-
 
 ## Known issues and workarounds
+
+### Manual steps to activate Data Warehouse Server
+
+**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually update the Data Warehouse.
+
+**Workaround**:
+You must manually update the Data Warehouse. Follow these steps:  
+1. Open Windows Powershell.
+2. Change directory to Installation folder/Powershell.
+3. Run the following command to import PowerShell module;
+   `– Import-Module .\System.Center.Service.Manager.psm1`
+4. Run `Set-SCSMLicense powershell` cmdlet to activate the license.
 
 ### SCSM doesn’t work with default SSAS mode on SQL 2017
 **Description:**
