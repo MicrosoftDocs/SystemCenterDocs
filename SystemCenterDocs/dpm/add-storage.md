@@ -194,7 +194,7 @@ Follow these steps: :
 
     ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
 
-    >[NOTE]
+    >[!NOTE]
     > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
 
     If  a disk is missing from the primordial pool, you can add it by selecting **Add Physical Disk** option from the **TASKS** drop-down menu.
@@ -203,9 +203,8 @@ Follow these steps: :
   -	Add all the disks including SSDs to the storage pool.
   -	Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
 
-  > [! NOTE]
+  > [!NOTE]
   >  If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks  are added, they can only be a multiple of the number of columns.
-
 
     ![Check disk type ](./media/add-storage/media-type-check-2019.png)
 
@@ -291,7 +290,7 @@ Follow these steps:
 5. Format the volume that you created, from **Disk Management** console to ReFS.
 
 ### Disable Auto-Caching at file system level
->[NOTE]
+>[!NOTE]
 > Applicable only for tiered volumes.  
 
 1.	Go to PowerShell.
