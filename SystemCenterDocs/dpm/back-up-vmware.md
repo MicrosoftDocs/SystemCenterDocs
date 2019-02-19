@@ -376,7 +376,9 @@ You can modify the number of jobs by using the registry key as shown below (not 
 To backup vSphere 6.7 we need the following:
 
 - TLS 1.2 should be enabled on DPM Server
-  > [!Note] VMWare 6.7 onwards had enabled TLS as communication protocol
+  > [!Note]
+
+  > VMWare 6.7 onwards had enabled TLS as communication protocol.
 
 - Set the below registry keys -
 
@@ -393,7 +395,7 @@ To backup vSphere 6.7 we need the following:
   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
   "SystemDefaultTlsVersions"=dword:00000001
   "SchUseStrongCrypto"=dword:00000001
-  
+
   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
   "SystemDefaultTlsVersions"=dword:00000001
   s"SchUseStrongCrypto"=dword:00000001
