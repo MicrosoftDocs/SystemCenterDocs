@@ -41,7 +41,7 @@ Earlier version of Operations Managers has *Allow log on locally* as the default
 
 ### View log on type for management servers and agents
 
-You can view the log on type for management servers and agents from Operations Manager console, using the following path:
+You can view the log on type for management servers and agents from Operations Manager console, using the following path: <awaiting confirmation on the path>
 
   **Administrators** > **operations Manager Products**> **Management Servers and Administration** > **Agents**
 
