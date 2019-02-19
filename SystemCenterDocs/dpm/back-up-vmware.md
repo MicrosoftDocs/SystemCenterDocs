@@ -371,4 +371,31 @@ You can modify the number of jobs by using the registry key as shown below (not 
 > [!NOTE]
 >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel.
 
+## VMWare vSphere 6.7
+
+To backup vSphere 6.7 we need the following:
+
+- TLS 1.2 should be enabled on DPM Server
+  > [!Note] VMWare 6.7 onwards had enabled TLS as communication protocol
+
+- Set the below registry keys -
+
+  Windows Registry Editor Version 5.00  
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727]
+  "SystemDefaultTlsVersions"=dword:00000001
+  "SchUseStrongCrypto"=dword:00000001
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319]
+  "SystemDefaultTlsVersions"=dword:00000001
+  "SchUseStrongCrypto"=dword:00000001
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+  "SystemDefaultTlsVersions"=dword:00000001
+  "SchUseStrongCrypto"=dword:00000001
+  
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+  "SystemDefaultTlsVersions"=dword:00000001
+  s"SchUseStrongCrypto"=dword:00000001
+
 ::: moniker-end
