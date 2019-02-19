@@ -160,7 +160,7 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 
  >- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.    
 
-Follow the steps in the procedures below to set up MBS with tiered storage:
+Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
 
 1. Configure DPM storage
     > [!NOTE]
