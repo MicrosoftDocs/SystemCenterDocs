@@ -20,10 +20,10 @@ The following sections detail the release notes for Service Manager 2019 and inc
 
 ### Manual steps to activate Data Warehouse Server
 
-**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually update the Data Warehouse.
+**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually activate the Data Warehouse.
 
 **Workaround**:
-You must manually update the Data Warehouse. Follow these steps:  
+Follow these steps to manually activate the Data Warehouse server:  
 1. Open Windows Powershell.
 2. Change directory to Installation folder/Powershell.
 3. Run the following command to import PowerShell module;

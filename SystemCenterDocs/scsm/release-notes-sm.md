@@ -14,7 +14,7 @@ ms.technology: service-manager
 # Release notes for System Center Service Manager
 ::: moniker range="sc-sm-2019"
 
-This article provides the release notes for System Center 2019 - Service Manager (SM).
+This article provides the release notes for System Center Service Manager 2019.
 
 [!INCLUDE [release-notes-sm-2019.md](../includes/release-notes-sm-2019.md)]
 
