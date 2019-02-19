@@ -17,11 +17,9 @@ ms.author: raynew
 
 Use the System Center Data Protection Manager (DPM) support matrix to review the workloads that can be protected. In the following table, the **Workload** column is the workload type or technology. The **Version** column lists the supported workload versions. Client computers and Server workloads are broken out by operating system **Version** because the **DPM installation** and **Protection and recovery details** vary. **DPM installation** lists where the DPM software can be installed. **Protection and recovery** lists details about the workload, such as supported storage container, or supported deployment.
 
-::: moniker range="<=sc-dpm-2019"
+::: moniker range="<sc-dpm-2019"
 Use the following matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807.
 ::: moniker-end
-
-
 
 ::: moniker range="sc-dpm-2019"
 Use the following matrix for DPM 2019.
