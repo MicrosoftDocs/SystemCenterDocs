@@ -190,7 +190,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 There are a couple of reasons you might want to upgrade the VMM SQL Server database:
 
-- You're upgrading VMM to System Center 1801, and the current SQL Server database version isn't supported.
+- You're upgrading VMM to System Center 2019, and the current SQL Server database version isn't supported.
 - You want to upgrade a VMM standalone server to a high availability server, and SQL Server is installed locally.
 - You want to move the SQL Server database to a different computer.
 
@@ -240,8 +240,6 @@ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and i
 ## Redeploy Azure Site Recovery
 
 If Azure Site Recovery was integrated into your VMM 2012 R2/2016 deployment, you need to redeploy it with VMM 1801, for [replication to Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-vmm).
-
-Read this [blog entry](https://azure.microsoft.com/blog/azure-site-recovery-windows-server-2016-asr/) for details of Hyper-V host support when running VMM 1801.
 
 
 ## Connect to Operations Manager
