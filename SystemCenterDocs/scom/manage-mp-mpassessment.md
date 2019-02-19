@@ -28,6 +28,7 @@ This feature includes the following capabilities:
 |  **Get All MPs**  |  Installs the management packs for all of the workloads displayed
 |  **View Guide**  |  Downloads the management pack guide from the web browser, for the selected workload, to your computer
 |  **View DLC Page**  | Open from the web browser, the page on the Microsoft Download Center, to download the management pack file
+|  **Machine Details** (applicable only for VMM 2019)  | Highlights the machine name and operating system for the selected                     workload.
 |  **More information**  | Highlights all impacted agent-managed systems and management pack details of selected workload (depending on the status of the workload)
 
 ::: moniker range="sc-om-2019"
