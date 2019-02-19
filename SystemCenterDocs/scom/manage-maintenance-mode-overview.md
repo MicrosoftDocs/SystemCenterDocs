@@ -316,24 +316,21 @@ Here is the process:
 
 -	The accounts that are listed under the *Operational Database Account*” profile should have *SQLAgentOperatorRole* permission on the MSDB database.
 -	If any accounts that are listed under the *Operational Database Account* profile do not have access to the *SQLAgentOperatorRole* permission on the MSDB database, assign the *SQLAgentOperatorRole* permission on the MSDB database to each account under the *Operational Database Account* profile.
--	If you do not have any accounts listed under the *Operational Database Account* profile, the the accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database. This permission is granted automatically during the fresh installation of Operations Manager 2019. However, in case of an upgrade to Operations Manager 2019 from a previous version, this permission needs to be granted manually.
+-	If you do not have any accounts listed under the *Operational Database Account* profile, the accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database. This permission is granted automatically during the fresh installation of Operations Manager 2019. However, in case of an upgrade to Operations Manager 2019 from a previous version, this permission needs to be granted manually.
 
 >[!NOTE]
-- As a part of the fix for this issue the existing schedules are converted to the new design. This happens automatically as a part of the upgrade to Operations Manager 2019.
+- As  part of  fix for this issue, the existing schedules are converted to the new design. This happens automatically as  part upgrade to Operations Manager 2019.
 - Any failures in the above operation are captured in the following database table:
 [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
-- Schedules which failed to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
+- Schedules which fail to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
     EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '<ScheduleIDOftheMMSchedule>'
-
->Example:
+Example:
     EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '1A6917C6-999C-E811-837B-02155DC77B3F'
+- To convert all the schedules to the new design, use the following command:
+    Delete [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
+    EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
 
-To convert all the schedules to the new design, use the following command:
-
-Delete [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
-EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
-
-Note After you deploy this upgrade, maintenance schedules might be triggered and have a maximum delay of 5 minutes. This maximum delay is configurable by overriding the **Maintenance Mode** rule. The default value is 5 minutes to avoid causing a large performance decrease on the system.
+ After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of Five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value Five minutes is to avoid causing a large performance decrease on the system.
 
 ::: moniker-end
 
