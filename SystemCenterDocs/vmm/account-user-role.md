@@ -15,8 +15,6 @@ ms.technology: virtual-machine-manager
 # Set up user roles in VMM
 
 This article describes how to set up System Center - Virtual Machine Manager (VMM) user roles.
->[!NOTE]
-> The role based access control (RBAC) role – VM Administrator is supported from VMM 2019.
 
 ## Before you start
 
