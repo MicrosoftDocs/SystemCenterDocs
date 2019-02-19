@@ -116,6 +116,8 @@ Agents can be upgraded before the new Operations Manager management group is dep
 
 ::: moniker-end
 
+::: moniker range="<=sc-om-1807"
+
 This section of the Deployment Guide provides information about how to upgrade to System Center 2016 - Operations Manager or version 1801 from an older supported version.
 
 It is assumed in this guide that you are performing an upgrade to System Center 2016 -  Operations Manager or version 1801. For information about installing Operations Manager on a computer where no previous version of Operations Manager exists, see [Deploying System Center Operations Manager](deploy-overview.md).
@@ -219,3 +221,5 @@ Agents can be upgraded before the new Operations Manager management group is dep
 - To understand the pre-upgrade tasks you should perform to complete the upgrade to your management group, see [Pre-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-pretasks.md).
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
+
+::: moniker-end
