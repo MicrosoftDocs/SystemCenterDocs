@@ -14,7 +14,7 @@ ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21
 
 # How to create notification subscriptions
 
-In System Center 2016 - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
 
 These procedures will explain how to specify the criteria or conditions that determine the alerts that will generate a notification, use of classes and groups, and criteria or conditions in your subscriptions to filter and align notifications with your organizational escalation path.  A subscription also defines the channel to be used for the notification and the subscribers to receive the notification.  You can use the combination of subscriber and subscription to tailor which alerts are sent to individuals or teams.      
 
@@ -44,7 +44,7 @@ When you create a notification subscription from an alert that has been generate
 
 ## Enhanced criteria builder
 
-When you create a subscription to be notified when Operations Manager generates alerts, you must specify the criteria or conditions that determine the alerts that will generate a notification.
+When you create a subscription to be notified when Operations Manager generates alerts, you must specify the criteria or conditions that determine the alerts that will generate a notification. Criteria builder has been enhanced to allow you to build complex, yet useful and efficient subscription criteria by leveraging the ability to exclude objects, use AND/OR groupings and use regular expressions to notify, based on the required criteria.
 
 To use these options, on the criteria page, you can set the conditions for the notifications to be sent to the specified subscribers. If you do not set the conditions, notifications will be sent for all alerts.
 

@@ -14,7 +14,7 @@ ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
 
 # How to enable an email notification channel
 
-To configure alert notifications for System Center 2016 - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
+To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
 
 Before you begin, gather the following information:  
 
@@ -30,7 +30,7 @@ Before you begin, gather the following information:
        -  External Email Authentication  
 
    > [!NOTE]
-   > Operations Manager supports configuration of any external email account to send the notifications through External Email Authentication.  You now have the flexibility in terms of which email account is to be used for sending out the notification emails.  
+   > Operations Manager supports configuration of any external email account to send the notifications through External Email Authentication. You have the flexibility in terms of which email account is to be used for sending out the notification emails.  
 
 
 -   Return email address. This address is used for all email notifications on this channel and will receive any replies to notifications.  
@@ -70,24 +70,28 @@ Before you begin, gather the following information:
 
 ## Create an email notification in HTML format
 
-The email notifications experience has been improvised with the ability to create and send  email notifications in HTML format.
+The email notifications experience has been improvised with the ability to create and send email notifications in HTML format.
 
-With the new rich HTML email, you will also be able to launch the alerts drill-down page, alert source drill-down page and drill-down page for the corresponding rule/monitor to get more relevant information on troubleshooting the issue. Click the respective links provided at the bottom of the email to launch these drill-down pages.
+With this feature, an administrator would be able to configure an email in HTML format for sending notifications to subscribers. The administrators can use the existing default HTML email template or edit it or create  a completely new HTML message. With HTML email format, subscribers  get easy access to relevant information about the alert, alert source and the rule/monitor that has generated the alert. They can view these details through the drill-down links available at the bottom of the email.
+
+To create an email in HTML format, follow these steps:
 
 1.	Use the procedure in the above section for creating email notification channel.
 2.	While configuring the format of the email notifications, select **Enable HTML formatting** as shown in the image below:
 
     ![email notification HTML format](./media/email-notifications/email-notifications-html.png)
 
-3. You can edit the default content or completely change it.
+3. To edit or cahnge the default content, follow these steps:
    - Copy the content using **Copy** button.
-   - Edit or change  the content in any in any HTML editor.
-   - Paste the edited content back by using **Paste** button to view the preview of the email notification.
+   - Edit or change  the content in any HTML editor.
+   - Paste the edited content back by using **Paste** button.
+   - Click **Preview** to view the preview of the edited text.
 
-   The following table enlists the links to be used for different parameters in the HTML template:
+   While editing the HTML email content, you can add the required alert property or the web console link by using  respective variable in the appropriate position of HTML content.
 
+   The following table enlists the variables to use for various properties of the alerts or links in the HTML content.
 
-   |Text |Link |  
+   |Alert property of the link |Variable |  
    |-------------|---|-------------|  
    |Alert Source  |$Data[Default='Not Present']/Context/DataItem/ManagedEntityPath$\$Data[Default='Not Present']/Context/DataItem/ManagedEntityDisplayName$ |
    | Alert Name  |$Data[Default='Not Present']/Context/DataItem/AlertName$ |
