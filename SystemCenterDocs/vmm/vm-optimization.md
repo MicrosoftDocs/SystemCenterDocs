@@ -109,7 +109,9 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 
 1. Open **Fabric** > **Servers** > **Host Groups**, and navigate the host cluster.
 2. To performing compute resource load balancing, click **Optimize hosts**. To perform storage load balancing across cluster shared storage, click **Optimize disks**.
- **To Optimize hosts**: VMM performs a dynamic optimization review to determine whether VHDs can be migrated to improve load balancing in the host cluster. If migration of VMs can improve load balancing, VMM displays a list of VMs that are recommended for migration, with the current and target hosts indicated. The list excludes any hosts that are in maintenance mode in VMM and any virtual machines that are not highly available.
+
+**To Optimize hosts**: VMM performs a dynamic optimization review to determine whether VHDs can be migrated to improve load balancing in the host cluster. If migration of VMs can improve load balancing, VMM displays a list of VMs that are recommended for migration, with the current and target hosts indicated. The list excludes any hosts that are in maintenance mode in VMM and any virtual machines that are not highly available.
+
 **To Optimize Disk Space**: VMM performs a dynamic optimization review to determine whether VHDs can be migrated to meet the free storage space threshold (disk space) while considering aggressiveness set in the DO page. Dynamic Optimization will only be triggered when any cluster shared storage violates the disk space threshold set. If migration of  VHDs can help free the storage space threshold in all shared storage in the cluster, VMM displays a list of VHDs that are recommended for migration, with the current and target storage space indicated. VHDs will only migrate to another shared storage with the same storage classification.
 
     >[!NOTE]
@@ -118,7 +120,7 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
     - Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
     - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
 
-5. Click **Migrate**.
+3. Click **Migrate**.
 
 ## Power on/off a computer in VMM
 
