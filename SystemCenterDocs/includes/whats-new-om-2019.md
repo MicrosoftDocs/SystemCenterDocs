@@ -133,7 +133,7 @@ If there are MPs in the catalog that are designed to monitor those workloads, th
 A new capability, **Machine Details** allow administrators to view the agent computer's name and the operating system installed on it.    
 
 ## Support for latest Application Servers
-Operations Manager 2019 supports latest Application Servers. [Learn more](manage-mp-mpassessment.md#support-for-unix-linux-platform).
+Operations Manager 2019 supports latest Application Servers. [Learn more](manage-mp-mpassessment.md#support-for-latest-application- servers).
 
 
 > [!NOTE]

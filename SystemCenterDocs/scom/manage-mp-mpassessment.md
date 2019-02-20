@@ -22,7 +22,7 @@ When a new workload is deployed in your IT infrastructure that was never monitor
 
 ::: moniker range="sc-om-2019"
 
-Operations Manager 2019 supports [workloads for Linux and Unix](#support-for-unix-linux-platform) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
+Operations Manager 2019 supports [workloads for Linux and Unix](#support-for-linux-and-unix-platforms) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
 
 ::: moniker-end
 
@@ -265,7 +265,7 @@ The following workloads are supported for the respective operating systems.
 
 ::: moniker range="=sc-om-2019"
 
-## Support for Unix/Linux platform
+## Support for Linux and Unix platforms
 - Solaris10Sparc, Solaris11Sparc
 - centos6 x64, centos7 x64
 - oracle6 x64 oracle7 x64
