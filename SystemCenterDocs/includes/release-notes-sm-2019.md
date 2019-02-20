@@ -20,15 +20,18 @@ The following sections detail the release notes for Service Manager 2019 and inc
 
 ### Manual steps to activate Data Warehouse Server
 
-**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually update the Data Warehouse.
+**Description**: Service Manager Data Warehouse is not activated as part of the Management Server license activation. You must manually activate the Data Warehouse.
 
 **Workaround**:
-You must manually update the Data Warehouse. Follow these steps:  
+Follow these steps to manually activate the Data Warehouse server:  
 1. Open Windows Powershell.
 2. Change directory to Installation folder/Powershell.
 3. Run the following command to import PowerShell module;
    `– Import-Module .\System.Center.Service.Manager.psm1`
 4. Run `Set-SCSMLicense powershell` cmdlet to activate the license.
+
+   > [!NOTE]
+   > DW server is the management server input to this command.
 
 ### SCSM doesn’t work with default SSAS mode on SQL 2017
 **Description:**
@@ -64,83 +67,10 @@ When you do not fill this field and click **Ok** or **Apply**, an error appears 
 
 **Workaround**: Reopen the create Software configuration item form, and fill all the details including the field **Is Virtual Application**, and then click **OK** or **Apply**.
 
-### Manual steps to configure remote SQL Server reporting services
-**Description**: During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During this setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure in the Deployment Guide to prepare the server. You should instead use the following information to prepare the remote computer to host SSRS.
+### Steps to configure remote SQL Server reporting services
+**Description**: During deployment of the Service Manager data warehouse management server, you can specify the server to which Microsoft SQL Server Reporting Services (SSRS) will be deployed. During this setup, the computer that is hosting the data warehouse management server is selected by default. If you specify a different computer to host SSRS, you are prompted to follow a procedure to prepare the server.
 
-- Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.
-
--	Add a code segment to the rssrvpolicy configuration file on the computer that is hosting SSRS.
-
--	Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.
-
-If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll (which is located in the Prerequisites folder on your Service Manager installation media) to the folder \Program Files\Microsoft SQL Server\MSRS14.MSSQLSERVER\Reporting Services\ReportServer\Bin on the computer that is hosting SSRS. If you did not use the default instance of SQL Server, the path of the required folder is \Program Files\Microsoft SQL Server\MSRS14.<INSTANCE_NAME>\Reporting Services\ReportServer\Bin. In the following procedure, the default instance name is used.
-
-#### To copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file
-1. On the computer that will host the remote SSRS, open an instance of Windows Explorer.
-
-2. Locate the folder \Program Files\Microsoft SQL Server\MSRS14.MSSQLSERVER\Reporting Services\ReportServer\Bin.
-
-3. Start a second instance of Windows Explorer, locate the drive that contains the Service Manager installation media, and then open the Prerequisites folder.
-
-4. In the Prerequisites folder, click **Microsoft.EnterpriseManagement.Reporting.Code.dll**, and drag it to the folder that you located previously.
-
-#### To add a code segment to the rssrvpolicy.config file
-1. On the computer that will be hosting SSRS, locate the file rssrvpolicy.config in the following folder:
-
-  -	Locate \Program Files\Microsoft SQL Server\MSRS14.MSSQLSERVER\Reporting Services\ReportServer.
-
-2. Using an XML editor of your choice (such as Notepad), open the rssrvpolicy.config file.
-
-3. Scroll through the rssrvpolicy.config file and locate the code segments. The following code shows an example of a segment.
-
-  ```
-
-    class="UnionCodeGroup"
-    version="1"
-    PermissionSetName="FullTrust">
-    <IMembershipCondition
-       class="UrlMembershipCondition"
-       version="1"
-       Url="$CodeGen$/*"
-    />
-
-  ```
-
-4. Add the following segment in its entirety in the same section as the other segments.
-
-   ```
-
-      class="UnionCodeGroup"
-      version="1"
-      PermissionSetName="FullTrust"
-      Name="Microsoft System Center Service Manager Reporting Code Assembly"
-      Description="Grants the SCSM Reporting Code assembly full trust permission.">
-      <IMembershipCondition
-         class="StrongNameMembershipCondition"
-         version="1"
-         PublicKeyBlob="0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9"
-   />
-
-   ```
-
-5. Save the changes and close the XML editor.
-
-#### To add an Extension tag to the Data segment in the rsreportserver.conf file
-1.	On the computer hosting SSRS, locate the file rsreportserver.config in the following folder:
-
-   -	Locate \Program Files\Microsoft SQL Server\MSRS14.MSSQLSERVER\Reporting Services\ReportServer.
-
-2. Using an XML editor of your choice (such as Notepad), open the rsreportserver.config file.
-
-3. Scroll through the rsreportserver.config file and locate the code segment. There is only one code segment in this file.
-
-4. Add the following **Extension** tag to the code segment where all the other **Extension** tags are:
-   ```
-      <Extension Name="SCDWMultiMartDataProcessor" Type="Microsoft.EnterpriseManagement.Reporting.MultiMartConnection, Microsoft.EnterpriseManagement.Reporting.Code" />
-
-    ```
-
-5. Save the changes and close the XML editor.
+**Workaround**: To specify a different computer to host SSRS, perform the steps [detailed here](../scsm/config-remote-ssrs.md).
 
 ### SM console installed on a VMM Server causes VMM connector failure
 **Description**: If you install Service Manager console on the same server as VMM, then you cannot use that Service Manager console to create a VMM connector to that VMM server.
@@ -177,8 +107,8 @@ If you used the default instance of SQL Server, use Windows Explorer to drag Mic
 
 **Workaround**: If your Orchestrator connector account password contains a *$* character, change the password to one that does not include the *$* character.
 
-### Information linked from Setup might not display localized content
-**Description**: Information that is linked from Setup to the Setup log and to technical documentation might not display localized content. Setup logs in Service Manager are available in English only. Technical documentation is available in a variety of localized languages. Where available, localized technical documentation is displayed on TechNet; however, not all languages are available.
+### Setup logs display in English only
+**Description**: The Setup logs in Service Manager are available in English only.
 
 **Workaround**: None.
 

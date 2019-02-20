@@ -1,12 +1,12 @@
 ---
-description: Descriptions of the new features in System Center DPM 2016, 1801, and 1807.
+description: Descriptions of the new features in System Center DPM 2016, 1801, 1807 and 2019.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
 ms.date: 7/24/2018
-title: What's new in System Center DPM 2016, 1801, and 1807
+title: What's new in System Center DPM 2016, 1801, 1807 and 2019
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: raynew
@@ -51,7 +51,7 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 ## VMware backup to tape
 For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 
-DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md).
 
 ## Support for newer workloads backups
 With DPM 2019, you can back up newer versions of workloads, listed below:
@@ -59,13 +59,13 @@ With DPM 2019, you can back up newer versions of workloads, listed below:
 -	Windows Server 2019
 -	Exchange 2019
 -	SharePoint 2019
--	VMWare [vSphere 6.7](back-up-vmware.md)
+-	VMWare [vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)
 -	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
 
 ## Faster backups with Tiered storage using SSDs
-DPM 2016 introduced [Modern Backup Storage](add-storage.md), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
+DPM 2016 introduced [Modern Backup Storage](https://docs.microsoft.com/system-center/dpm/add-storage?view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
-To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups[Learn more](add-storage.md#set-up-mbs-with-tiered storage).
+To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
 
 ## VMWare parallel backups
 With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
@@ -75,7 +75,7 @@ With earlier versions of DPM, parallel backups were performed only across protec
 ## Support for Central Monitoring
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
 
-You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md).
+You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
 ## Windows Server 2019 support
 DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
@@ -271,4 +271,5 @@ To give permissions to the share
 ::: moniker-end
 
 ## Next steps
-[What's supported in DPM](dpm-support-issues.md)
+- [Install DPM](install-dpm.md)
+- [Upgrade your DPM installation](upgrade-dpm.md)
