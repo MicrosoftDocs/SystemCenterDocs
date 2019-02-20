@@ -81,7 +81,7 @@ To create an email in HTML format, follow these steps:
 
     ![email notification HTML format](./media/email-notifications/email-notifications-html.png)
 
-3. To edit or cahnge the default content, follow these steps:
+3. To edit or change the default content, follow these steps:
    - Copy the content using **Copy** button.
    - Edit or change  the content in any HTML editor.
    - Paste the edited content back by using **Paste** button.

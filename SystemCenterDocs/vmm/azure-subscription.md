@@ -112,7 +112,7 @@ Here's what you need to add an Azure profile for Azure VM management:
 --- | ---
 **Azure subscription** | You need at least one Azure subscription to add it to the VMM console.
 **Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.
-**AD Authentication** | To enable management of both Classic and ARM-based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create an Azure AD application using Azure portal and make a note of the directory ID, application ID and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles by using *Subscription – Access Control (IAM) – Add*.
+**AD Authentication** | To enable management of both Classic and Azure Resource Manager based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create an Azure AD application using Azure portal and make a note of the directory ID, application ID and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles by using *Subscription – Access Control (IAM) – Add*.
 
 Here's what you need to do to create an Azure profile for Azure Update Management:
 
