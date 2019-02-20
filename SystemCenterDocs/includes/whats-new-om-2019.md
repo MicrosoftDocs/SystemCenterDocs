@@ -56,7 +56,7 @@ Failover of the management server ensures high availability and fault tolerance.
 This issue of alerts/tickets being created during failover or load balancing of management server has been addressed in Operations Manager 2019. With this fix, when the primary management server fails over, the alerts do not get recreated. Only the repeat count of the existing alerts is incremented.
 
 ## Linux agent installation changes
-With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called **omiuser** will be created on the agent computer. If you want to use the Log Monitoring feature, you must install Linux Log Monitoring management pack, provided in Operations Manager 2019.
+With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called **omi** will be created on the agent computer. If you want to use the Log Monitoring feature, you must install Linux Log Monitoring management pack, provided in Operations Manager 2019.
 
 This change is introduced to ensure *omsagent* user is created only when you use Log File Monitoring feature. [Learn more](../scom/manage-install-crossplat-agent-cmdline.md).
 
@@ -131,6 +131,10 @@ The existing URL monitoring capability has been enhanced. With this improvement,
 If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the management packs that are installed in your management group.
 
 A new capability, **Machine Details** allow administrators to view the agent computer's name and the operating system installed on it.    
+
+## Support for latest Application Servers
+Operations Manager 2019 supports latest Application Servers. See the download center for detailed information. 
+
 
 > [!NOTE]
 

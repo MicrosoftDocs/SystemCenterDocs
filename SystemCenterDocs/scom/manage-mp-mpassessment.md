@@ -14,15 +14,21 @@ ms.topic: article
 
 # Management pack assessment
 
-Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
+Operations Manager includes a feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
 If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
 
 When a new workload is deployed in your IT infrastructure that was never monitored by Operations Manager, it will be detected and highlighted under the Updates and Recommendations node.  The management packs required to monitor that workload will be presented with a status of **Not Installed**.  If the necessary management pack files for a particular workload are not installed, for example the library management pack file is installed but not the corresponding discovery and monitoring management pack files, the Updates and Recommendations feature will list that workload with a status of **Partially Installed**.  
 
+::: moniker range="sc-om-2019"
+
+Operations Manager 2019 support [workloads for Linux and Unixe](Support-for-unix-linux-platform) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
+
+::: moniker-end
+
 This feature includes the following capabilities:
 
-|  Option |  Description |
+|  **Option** |  **Description** |
 |----------|-------------|
 |  **Get MP**  | Installs the management packs for the selected workload
 |  **Get All MPs**  |  Installs the management packs for all of the workloads displayed
@@ -99,8 +105,6 @@ The following procedure describes how to use the Get All MPs option to download 
 ## Supported workloads
 
 The following list includes the workloads that are supported by this feature.
->[!NOTE]
-> If the following workloads are applicable  on Windows Server 2019 then Update and Recommendations feature  discovers these workloads and recommend the required management packs.
 
 - BizTalk 2006
 - BizTalk 2009
@@ -149,6 +153,34 @@ The following list includes the workloads that are supported by this feature.
 - Windows Server Backup
 - Windows Service Manager 2012
 - Windows TFS 2013
+
+::: moniker range="sc-om-2019"
+
+The following workloads are supported for the respective operating systems.
+
+| **Feature** | **Windows Server 2012 R2** | **Windows Server 2016 **|** Windows Server 2019** |
+| --- | --- | --- | --- |
+| Active Directory Certificate Service | Y | Y | Y |
+| Active Directory Domain Services | Y | Y | Y |
+| Active Directory Federation Service | Y | Y | Y |
+| Active Directory Right Management Service | Y | Y | Y |
+| DHCP Server | Y | Y | Y |
+| DNS Server | Y | Y | Y |
+| Fail Over Clustering | Y | Y | Y |
+| File Services | Y | Y | Y |
+| IIS | Y | Y | Y |
+| Network Load Balancing | Y | Y | Y |
+| Print Server | Y | Y | Y |
+| Essentials | Y | Y |   |
+| Hyper-V | Y | Y |   |
+| Queueing | Y | Y | Y |
+| Remote access | Y |   |   |
+| Remote Desktop Service | Y | Y |   |
+| Web application proxy | Y |   |   |
+| Windows Deployment Services | Y |   |   |
+| Windows Update Services | Y |   |   | |
+
+::: moniker-end
 
 ::: moniker range="<=sc-om-1807"
 
@@ -233,7 +265,7 @@ The following list includes the workloads that are supported by this feature.
 
 ::: moniker range="=sc-om-2019"
 
-## Unix/Linux Platform
+## Support for Unix/Linux platform
 - Solaris10Sparc, Solaris11Sparc
 - centos6 x64, centos7 x64
 - oracle6 x64 oracle7 x64
@@ -244,7 +276,7 @@ The following list includes the workloads that are supported by this feature.
 - Aix 7.x
 - SUSE 12 PPC, SUSE 15
 
-## Application Servers
+## Support for latest application servers
 - Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9,
 - Red Hat JBoss 4, Red Hat JBoss 5, Red Hat JBoss 6, Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8/9/10/11/12/13/14  
 - IBM WebSphere 7.0, IBM WebSphere 8.0, IBM WebSphere 8.5, IBM WebSphere 9.0
