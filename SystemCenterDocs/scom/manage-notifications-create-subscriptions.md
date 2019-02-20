@@ -14,17 +14,17 @@ ms.assetid: 8361d0b2-8b6d-462c-aee0-800eda31dd21
 
 # How to create notification subscriptions
 
-In System Center 2016 - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
+In System Center - Operations Manager, when an alert is generated, Operations Manager can notify designated individuals by email, instant message (IM), or text message (SMS). Notifications can also run commands automatically when an alert is raised on a monitored system. A notification requires a channel, a subscriber, and a subscription.  
 
 These procedures will explain how to specify the criteria or conditions that determine the alerts that will generate a notification, use of classes and groups, and criteria or conditions in your subscriptions to filter and align notifications with your organizational escalation path.  A subscription also defines the channel to be used for the notification and the subscribers to receive the notification.  You can use the combination of subscriber and subscription to tailor which alerts are sent to individuals or teams.      
 
 Notification channels and subscribers must be configured before you create a subscription.
 
+::: moniker range="<sc-om-2019"
+
 ## Subscription filtering options
 
 Before creating a subscription, we will review the two methods you can use to filter alert notifications so that you can deliver alerts that meet certain conditions, such as all critical severity alerts with high priority notify IT Operations or from specific monitored objects like all systems for a particular remote location notify that on-site IT support team.   
-
-::: moniker range="<sc-om-2019"
 
 ### Specifying which alerts generate notifications (Conditions)
 
@@ -42,14 +42,19 @@ When you create a notification subscription from an alert that has been generate
 
 ::: moniker range="sc-om-2019"
 
-## Enhanced criteria builder
+## Subscription filter options
 
-When you create a subscription to be notified when Operations Manager generates alerts, you must specify the criteria or conditions that determine the alerts that will generate a notification.
+Before creating a subscription, we will review the two methods that you can use to filter alert notifications so that you can deliver alerts that meet certain conditions, such as all critical severity alerts with high priority notify IT Operations or from specific monitored objects like all systems for a particular remote location notify that on-site IT support team.   
 
-To use these options, on the criteria page, you can set the conditions for the notifications to be sent to the specified subscribers. If you do not set the conditions, notifications will be sent for all alerts.
+### Specify the alerts that generate notifications (Conditions)
+
+When you create a subscription to be notified when Operations Manager generates alerts, you must specify the criteria or conditions that determine the alerts, which will generate a notification. Criteria builder has been enhanced to allow you to build complex yet useful/efficient subscription criteria by leveraging the ability to exclude objects, use AND/OR groupings and use regular expressions to notify based on the required criteria.
+
+In **Scope**, you can choose the scope for a subscription by selecting the specific group(s) or class(es). Defining a scope is optional, if scope is not defined, then the conditions defined in the next screen (Criteria) will not be scoped to any groups/classes.
+
+In **Criteria**, you can set the conditions for the notifications to be sent to the specified subscribers. If you do not set the conditions, notifications will be sent for all alerts. These conditions will be applied on the scope defined in the earlier screen to send notification to the specified subscribers, if scope is not defined in the earlier screen, then these conditions will not be scoped to any groups/classes.
 
 The following are the examples of the criteria builder showcasing single expression and groups of expressions:
-
 
 **Example - single expression**
 

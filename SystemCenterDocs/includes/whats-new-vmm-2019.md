@@ -17,7 +17,7 @@ See the following sections for detailed information about the new features/featu
 ## Compute
 
 ###	Cluster Rolling upgrade for S2D clusters
-
+System Center 2019 - Virtual Mahchine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster to Windows Server 2019.
 
 ## Storage
 

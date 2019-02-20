@@ -82,7 +82,7 @@ This functionality helps you to  monitor the health and operational status of a 
 
 You can monitor storage health from VMM console,  **Fabric** page.
 
-Use the following steps:
+Follow these steps:
 
 1.	Go to VMM console, **Fabric** > **Storage** > **Classification and Pools** .
 

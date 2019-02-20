@@ -34,19 +34,23 @@ Earlier version of Operations Managers has *Allow log on locally* as the default
  -	Agent Installation account
  -	Data Warehouse Writer account
  -	Data Reader accounts
-
     ![local security setting](./media/enable-service-logon/om2019-local-security-setting.png)
 
-- After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
+After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
 
 ### View log on type for management servers and agents
 
-You can view the log on type for management servers and agents from Operations Manager console, using the following path:
+You can view the log on type for management servers and agents from Operations Manager console.
 
-  **Administrators** > **operations Manager Products**> **Management Servers and Administration** > **Agents**
-
+To view the log on type for management servers, go to
+**Administration** > **Operations Manager Products**> **Management servers**.
 
 ![Log on type for management servers](./media/enable-service-logon/logon-type-management-servers.png)
+
+To view the log on type for agents, go to
+**Administration** > **Operations Manager Products**> **Agents**.
+
+![Log on type for management servers](./media/enable-service-logon/logon-type-agents.png)
 
 > [!NOTE]
 
@@ -68,7 +72,7 @@ Follow these steps:
 
 > [!NOTE]
 
-> If you are upgrading to Operations Manager 2019 from a previous version or installing a new Operations Manager 2019 environment, follow the steps above to provide **Log on as a service** permission to Run as accounts.
+> If you are upgrading to Operations Manager 2019 from a previous version or installing a new Operations Manager 2019 environment, follow the steps above to provide **Log on as a service** permission to Run As accounts.
 
 ## Change log on type for a health service
 

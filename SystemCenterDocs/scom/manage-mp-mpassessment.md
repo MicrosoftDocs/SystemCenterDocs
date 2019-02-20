@@ -14,54 +14,31 @@ ms.topic: article
 
 # Management pack assessment
 
-Operations Manager includes a new feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
+Operations Manager includes a feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
 
 If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
 
 When a new workload is deployed in your IT infrastructure that was never monitored by Operations Manager, it will be detected and highlighted under the Updates and Recommendations node.  The management packs required to monitor that workload will be presented with a status of **Not Installed**.  If the necessary management pack files for a particular workload are not installed, for example the library management pack file is installed but not the corresponding discovery and monitoring management pack files, the Updates and Recommendations feature will list that workload with a status of **Partially Installed**.  
 
+::: moniker range="sc-om-2019"
+
+Operations Manager 2019 supports [workloads for Linux and Unix](#support-for-linux-and-unix-platforms) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
+
+::: moniker-end
+
 This feature includes the following capabilities:
 
-|  Option |  Description |
+|  **Option** |  **Description** |
 |----------|-------------|
 |  **Get MP**  | Installs the management packs for the selected workload
 |  **Get All MPs**  |  Installs the management packs for all of the workloads displayed
 |  **View Guide**  |  Downloads the management pack guide from the web browser, for the selected workload, to your computer
 |  **View DLC Page**  | Open from the web browser, the page on the Microsoft Download Center, to download the management pack file
+|  **Machine Details** (applicable only for VMM 2019)  | Highlights the machine name and operating system for the selected                     workload.
 |  **More information**  | Highlights all impacted agent-managed systems and management pack details of selected workload (depending on the status of the workload)
 
-::: moniker range="sc-om-2019"
-
-Updates and Recommendations feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed in your Linux agents that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP).
-
-If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the MPs that are installed in your management group.
-
-A new capability, **Machine Details** allow administrators to view the agent machine's name and the operating system installed on it.
-
-![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/machine-details.png)
-
-Use the following steps to view the machine details:
-
-1.	Go to **Administration** > **Management Packs** > **Updates and Recommendations**.
-
-    ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/updates-and-recommendations-view.png)
-
-    - Above screenshot has some workloads with *Not Installed* status. For these, you can choose to install the required MP for monitoring directly from Updates and Recommendations.
-
-    - For the workloads which needs an MP update, status is displayed as  *Update available*.
-
-2.	To view the Machine details (name and operating system) on which a selected workload is running, select **Machine Details**.
-
-    ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/machine-details-select.png)
-
-    Here is the sample view of Machine Details feature.
-
-    ![Updates and Recommendations for Linux workloads](./media/manage-mp-assessment/machine-details-view.png)
-
-::: moniker-end
-
 >[!NOTE]
->In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**
+>In order to use the options highlighted in the table above, the computer you are running the Operations console from requires an Internet connection and your firewall needs to allow access to the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**
 
 >[!NOTE]
 >Configuring the frequency and control the discovery of workloads cannot be performed directly from the Operations console.  If you wish to modify those settings of this feature, you can download a PowerShell script from the [Microsoft Script Center](https://gallery.technet.microsoft.com/scriptcenter/Script-to-modify-settings-246c84af#content).
@@ -177,6 +154,36 @@ The following list includes the workloads that are supported by this feature.
 - Windows Service Manager 2012
 - Windows TFS 2013
 
+::: moniker range="sc-om-2019"
+
+The following workloads are supported for the respective operating systems.
+
+| **Feature** | **Windows Server 2012 R2** | **Windows Server 2016**|**Windows Server 2019** |
+| --- | --- | --- | --- |
+| Active Directory Certificate Service | Y | Y | Y |
+| Active Directory Domain Services | Y | Y | Y |
+| Active Directory Federation Service | Y | Y | Y |
+| Active Directory Right Management Service | Y | Y | Y |
+| DHCP Server | Y | Y | Y |
+| DNS Server | Y | Y | Y |
+| Fail Over Clustering | Y | Y | Y |
+| File Services | Y | Y | Y |
+| IIS | Y | Y | Y |
+| Network Load Balancing | Y | Y | Y |
+| Print Server | Y | Y | Y |
+| Essentials | Y | Y |   |
+| Hyper-V | Y | Y |   |
+| Queueing | Y | Y | Y |
+| Remote access | Y |   |   |
+| Remote Desktop Service | Y | Y |   |
+| Web application proxy | Y |   |   |
+| Windows Deployment Services | Y |   |   |
+| Windows Update Services | Y |   |   | |
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
+
 ### Windows Server 2016
 
 - Active Directory Certificate Service
@@ -254,6 +261,28 @@ The following list includes the workloads that are supported by this feature.
 - Print Services
 - Remote Desktop Service
 - Routing Remote Services
+::: moniker-end
+
+::: moniker range="=sc-om-2019"
+
+## Support for Linux and Unix platforms
+- Solaris10Sparc, Solaris11Sparc
+- centos6 x64, centos7 x64
+- oracle6 x64 oracle7 x64
+- Sles11x64, Sles12 x64
+- Rhel7PPC, Rhel5 x64, Rhel6 x64 Rhel7 x64
+- Debian8 x64, Debian9 x64
+- Ubuntu14 x64, Ubuntu16 x64, Ubuntu 18 x64
+- Aix 7.x
+- SUSE 12 PPC, SUSE 15
+
+## Support for latest application servers
+- Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9,
+- Red Hat JBoss 4, Red Hat JBoss 5, Red Hat JBoss 6, Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8/9/10/11/12/13/14  
+- IBM WebSphere 7.0, IBM WebSphere 8.0, IBM WebSphere 8.5, IBM WebSphere 9.0
+- Oracle WebLogic 10gR3, Oracle WebLogic 11, Oracle WebLogic 12cR1JBoss, Oracle WebLogic 12cR2JBoss
+
+::: moniker-end
 
 ## Next steps
 

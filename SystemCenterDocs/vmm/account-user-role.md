@@ -15,8 +15,6 @@ ms.technology: virtual-machine-manager
 # Set up user roles in VMM
 
 This article describes how to set up System Center - Virtual Machine Manager (VMM) user roles.
->[!NOTE]
-> The role based access control (RBAC) role – VM Administrator is supported from VMM 2019.
 
 ## Before you start
 
@@ -26,9 +24,9 @@ This article describes how to set up System Center - Virtual Machine Manager (VM
     - **Administrator role**: Administrators can add and remove users
     - **Delegate Administrator role**: Administrators can create the role. Delegated Administrators can create Delegated Administrator roles that include a subset of their scope, library servers, and Run As accounts.
     - **Read-only Administrator role**: Administrators can create the role. Delegated Administrators can create Read-only Administrator roles that include a subset of their scope, library servers, and Run As accounts.
+    - **Administrator role** (applicable for VMM 2019): Administrators can create the role. Delegated Administrators can create VM Administrator roles that include a subset of their scope, library servers, and Run As accounts.
     - **Virtual Machine Administrator role**: Administrators can create the role.
     Delegated Administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers and Run-As accounts.
-
     - **Tenant Administrator role**: Administrators and Delegated Administrators can create this role.
 - The Administrator role is created by default when you install VMM. The user who performs the installation, and all domain users in the local Administrators group on the server, are added to the Administrator role. You can add or remove members in the role properties.
 

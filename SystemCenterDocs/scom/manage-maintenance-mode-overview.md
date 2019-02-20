@@ -311,21 +311,26 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 In earlier releases of Operations Manager, schedules that were created with SQL Always On enabled, were inaccessible when SQL server fails over to another server. Operations Manager 2019 comes with a fix for this issue. This fix enables the schedules to work without any issues even in a SQL server failover scenario.
 
-This problem has been resolved in the following manner:
-
-1. Schedules that were already been created before this fix is deployed will also start working without any issues even in SQL Server failover scenarios .
-
-    >[!NOTE]
-
-    >Existing schedules that have been created on the current server that is running SQL server will be migrated. To migrate the existing schedules that are created on another server, follow the installation instructions.
-
-2. Any schedule that is created after you deploy this update together with the required configurations would be accessible even if the server that is running SQL Server fails over to a different server.
-
+Here is the process:
 **Verify that the required permissions are granted on all servers**:
 
 -	The accounts that are listed under the *Operational Database Account*” profile should have *SQLAgentOperatorRole* permission on the MSDB database.
 -	If any accounts that are listed under the *Operational Database Account* profile do not have access to the *SQLAgentOperatorRole* permission on the MSDB database, assign the *SQLAgentOperatorRole* permission on the MSDB database to each account under the *Operational Database Account* profile.
--	If you do not have any accounts listed under the *Operational Database Account* profile, accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database.
+-	If you do not have any accounts listed under the *Operational Database Account* profile, the accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database. This permission is granted automatically during the fresh installation of Operations Manager 2019. However, in case of an upgrade to Operations Manager 2019 from a previous version, this permission needs to be granted manually.
+
+>[!NOTE]
+- As  part of  fix for this issue, the existing schedules are converted to the new design. This happens automatically as  part upgrade to Operations Manager 2019.
+- Any failures in the above operation are captured in the following database table:
+[OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
+- Schedules which fail to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
+    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '<ScheduleIDOftheMMSchedule>'
+Example:
+    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '1A6917C6-999C-E811-837B-02155DC77B3F'
+- To convert all the schedules to the new design, use the following command:
+    Delete [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
+    EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
+
+ After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of Five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value Five minutes is to avoid causing a large performance decrease on the system.
 
 ::: moniker-end
 
