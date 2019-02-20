@@ -70,7 +70,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Clustered SQL Server|Supported|
 
 > [!NOTE]
-> If you are upgrading SQL DB to SQL 2017, ensure you install SQL SSRS post SQL upgrade.
+> If you are upgrading SQL Database to SQL 2017, ensure you install SQL SSRS post SQL upgrade.
 
 ## DPM server
 
