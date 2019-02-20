@@ -22,7 +22,7 @@ When a new workload is deployed in your IT infrastructure that was never monitor
 
 ::: moniker range="sc-om-2019"
 
-Operations Manager 2019 support [workloads for Linux and Unixe](#support-for-unix-linux-platform) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
+Operations Manager 2019 supports [workloads for Linux and Unix](#support-for-unix-linux-platform) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ The following list includes the workloads that are supported by this feature.
 
 The following workloads are supported for the respective operating systems.
 
-| **Feature** | **Windows Server 2012 R2** | **Windows Server 2016 **|** Windows Server 2019** |
+| **Feature** | **Windows Server 2012 R2** | **Windows Server 2016**|**Windows Server 2019** |
 | --- | --- | --- | --- |
 | Active Directory Certificate Service | Y | Y | Y |
 | Active Directory Domain Services | Y | Y | Y |

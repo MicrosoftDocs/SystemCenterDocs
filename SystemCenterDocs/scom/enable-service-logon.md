@@ -34,10 +34,9 @@ Earlier version of Operations Managers has *Allow log on locally* as the default
  -	Agent Installation account
  -	Data Warehouse Writer account
  -	Data Reader accounts
-
     ![local security setting](./media/enable-service-logon/om2019-local-security-setting.png)
 
-- After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
+After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
 
 ### View log on type for management servers and agents
 
