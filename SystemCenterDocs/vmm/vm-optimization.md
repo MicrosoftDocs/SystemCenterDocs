@@ -42,7 +42,7 @@ Note the following information before you start using the DO.
 
 #### Node fairness
 
-Node fairness is a new feature in Windows Server 2016. It identifies cluster nodes with light loads, and distributes VMs to those node to balance load. This is similar to VMM's dynamic optimization. To avoid potential performance issues, dynamic optimization and node fairness shouldn't work together. To ensure this doesn't happen VMM disables node faireness in all clusters in a host group for which dynamic optimization is set to automatic. If you enable node fairness outside the VMM console, VMM will turn it off the next time that dynamic optimization refreshes. If you do want to use node faireness, disable dynamic optimization, and then manually enable node fairness.
+Node fairness is a new feature in Windows Server 2016. It identifies cluster nodes with light loads, and distributes VMs to those node to balance load. This is similar to VMM's dynamic optimization. To avoid potential performance issues, dynamic optimization and node fairness shouldn't work together. To ensure this doesn't happen VMM disables node fairness in all clusters in a host group for which dynamic optimization is set to automatic. If you enable node fairness outside the VMM console, VMM will turn it off the next time that dynamic optimization refreshes. If you do want to use node fairness, disable dynamic optimization, and then manually enable node fairness.
 
 ### Power optimization
 
@@ -58,7 +58,7 @@ Node fairness is a new feature in Windows Server 2016. It identifies cluster nod
 
 ## Configure BMC
 
-For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 overe WS-Management you can figure BMC settings as follows:
+For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Management you can figure BMC settings as follows:
 
 1. Create a Run As account with permissions to access the BMC on a host.
 2. Click **Fabric** > **Servers** > **All Hosts** > host > **Properties** > **Hardware** > **Advanced** > **BMC Setting**.
@@ -108,7 +108,7 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 overe WS-Ma
 You can run dynamic optimization on demand on a host cluster. To do this dynamic optimization doesn't need to be configured on the parent host group.
 
 1. Open **Fabric** > **Servers** > **Host Groups**, and navigate the host cluster.
-2. To performing compute resource load balancing, click **Optimize hosts**. To perform storage load balancing across cluster shared storage, click **Optimize disks**.
+2. To perform compute resource load balancing, click **Optimize hosts**. To perform storage load balancing across cluster shared storage, click **Optimize disks**.
 
     **To Optimize hosts**: VMM performs a dynamic optimization review to determine whether VHDs can be migrated to improve load balancing in the host cluster. If migration of VMs can improve load balancing, VMM displays a list of VMs that are recommended for migration, with the current and target hosts indicated. The list excludes any hosts that are in maintenance mode in VMM and any virtual machines that are not highly available.
 
