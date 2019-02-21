@@ -47,9 +47,9 @@ The following sections summarize the release notes for DPM 2019 and include the 
 ### DPM console crashes due to MSDPM Service crash:
 
 **Description**: Presence of duplicate summary management jobs, usually after DPM upgrade leads to failure of any in-progress jobs at midnight eventually leading to a crash. As a result, you might observer the following:
-- Replica is inconsistent
-- Storage pool bloat due to recovery points not getting pruned
-- outdated DPM reports
+- Replica is inconsistent.
+- Storage pool bloat due to recovery points not getting pruned.
+- outdated DPM reports.
 - No clean-up for job history and garbage collection jobs.
 
 **Workaround**:
@@ -103,7 +103,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
 
-HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
+**HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
 ### Reprotecting the DPM database after upgrading to DPM 2016 or 1801
 
