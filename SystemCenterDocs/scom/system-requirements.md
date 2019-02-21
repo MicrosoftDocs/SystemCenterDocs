@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 ::: moniker range="sc-om-2019"
 
-This article details the system requirements for System Center 2019 - Operations Manager (OM).
+This article details the system requirements for System Center 2019 - Operations Manager.
 
 [!INCLUDE [system-reqs-om-2019.md](../includes/system-reqs-om-2019.md)]
 
@@ -23,7 +23,7 @@ This article details the system requirements for System Center 2019 - Operations
 
 ::: moniker range="<sc-om-2019"
 
-This article details the system requirements for System Center 2016 - Operations Manager (OM) and later.
+This article details the system requirements for System Center 2016 - Operations Manager and later.
 
 [!INCLUDE [plan-system-requriements.md](../includes/plan-system-requirements.md)]
 
