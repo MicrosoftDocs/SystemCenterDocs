@@ -4,11 +4,11 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 2/8/2018
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
-ms.assetid: 
+ms.assetid:
 ms.author: raynew
 monikerRange: '>sc-dpm-2016'
 ---
@@ -320,4 +320,28 @@ You can restore individual files from a protected VM recovery point. This featur
     ![specify destination for files or folders ](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** are not enabled.
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
-    The **Recovery status screen shows the progression of the recovery operation.
+    The **Recovery status screen shows the progression of the recovery operation**.
+
+::: moniker range=">=sc-dpm-1807"
+
+## VMWare vSphere 6.7
+
+To backup vSphere 6.7 we need the following:
+
+- TLS 1.2 should be enabled on DPM Server
+  >[!Note]
+  >VMWare 6.7 onwards had enabled TLS as communication protocol.
+
+- Set the below registry keys -
+
+  Windows Registry Editor Version 5.00
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft.NETFramework\v2.0.50727] "SystemDefaultTlsVersions"=dword:00000001 "SchUseStrongCrypto"=dword:00000001
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001 "SchUseStrongCrypto"=dword:00000001
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft.NETFramework\v2.0.50727] "SystemDefaultTlsVersions"=dword:00000001 "SchUseStrongCrypto"=dword:00000001
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001 s"SchUseStrongCrypto"=dword:00000001
+
+::: moniker-end
