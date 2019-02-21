@@ -1,7 +1,7 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Release Notes for System Center DPM
-description: Release notes about the DPM 2016 and 1801 releases.
+description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
@@ -14,7 +14,116 @@ ms.topic: article
 
 # System Center DPM Release Notes
 
-This article lists known issues and steps to fix the issues. These notes apply to System Center Data Protection Manager (DPM) 2016 and Semi Annual Channel releases. By default you see the notes for 2016, 1801, and 1807 releases. If you're only interested in the 2016 release, select it from the version picker to the left.
+::: moniker range="sc-dpm-2019"
+
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-1807"
+
+This article lists the release notes for System Center 1807 - Data Protection Manager (DPM).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-1801"
+
+This article lists the release notes for System Center 1801 - Data Protection Manager (DPM).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2016"
+
+This article lists the release notes for System Center 2016 - Data Protection Manager (DPM).
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+## DPM 2019 Release Notes
+
+The following sections summarize the release notes for DPM 2019 and include the known issues and workarounds.
+
+### DPM console crashes due to MSDPM Service crash:
+
+**Description**: Presence of duplicate summary management jobs, usually after DPM upgrade leads to failure of any in-progress jobs at midnight eventually leading to a crash. As a result, you might observer the following:
+- Replica is inconsistent
+- Storage pool bloat due to recovery points not getting pruned
+- outdated DPM reports
+- No clean-up for job history and garbage collection jobs.
+
+**Workaround**:
+1. Backup the current DPM database.
+2. Open SQL management studio and connect to the SQL Instance hosting the DPMDB for this server.
+3. Run the following query check if you have two or more summary manager jobs scheduled and the older schedule:
+   ```
+    SELECT SCH.ScheduleId, SCH.JobDefinitionId, jd.CreationTime
+    FROM tbl_JM_JobDefinition JD
+    JOIN tbl_SCH_ScheduleDefinition SCH
+    ON JD.JobDefinitionId = SCH.JobDefinitionId
+    WHERE JD.Type = '282faac6-e3cb-4015-8c6d-4276fcca11d4'        
+    AND JD.IsDeleted = 0
+    AND SCH.IsDeleted = 0
+
+    ```
+4. If you have more than one row returned, take the resulting ScheduleID and JobDefinitionID of the older entry and mark them as deleted.
+  ```
+    update tbl_SCH_ScheduleDefinition
+    set IsDeleted = 1
+    where ScheduleId = ‘ScheduleID '               --- Replace with Your ScheduleID
+    update dbo.tbl_JM_JobDefinition
+    set IsDeleted = 1
+    where JobDefinitionId = ‘JobDefinitionID'             --- Replace with Your JobDefinitionID
+
+   ```
+5. Delete the SQL job matching the ScheduleID under the SQL Server Agent – JOBS.   Once deleted, that should resolve the crash at midnight.
+
+   ScheduleId is the SQL Jobs under SQL agent:
+   ```
+   UPDATE MSDB.dbo.sysjobs
+   SET Enabled = 0
+   WHERE [Name] LIKE ‘ScheduleID’  --- Replace with Your ScheduleID  
+   ```
+
+### Hyper-V VMs are protected twice on VM upgrade
+
+**Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group Wizard.
+
+**Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM, and create a new protection group. Then refresh the data sources, and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
+
+### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail
+
+**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection, if you then recover a 2012 R2 copy at the original location, further backups may fail.
+
+**Workaround**: After recovery, change the VM Version to 2016, then run a Consistency Check.
+
+### Bare Metal Recovery protection failures
+
+**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size is not sufficiently large.
+
+**Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
+
+HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)
+
+### Reprotecting the DPM database after upgrading to DPM 2016 or 1801
+
+**Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016 or 1801, the DPM database name can change in some scenarios.
+
+**Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
+
+### Hyper-V RCT - recover as files for D-T backup fails
+
+**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
+
+**Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
+
+### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
+
+**Description**: If you use Modern Backup Storage (MBS) with DPM 2019, File Server end-user recovery is not available.
+
+**Workaround**: None. File Server EUR is not supported when using MBS.
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
 
