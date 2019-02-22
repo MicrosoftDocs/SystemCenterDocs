@@ -49,7 +49,6 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-
 Windows Server 2016 (Server Core)| Y | N | If supported by SQL Server version
 Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
 Windows Server 2019 (with desktop experience)| Y | Y | If supported by SQL Server version
