@@ -164,7 +164,7 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
 
 1. Configure DPM storage
     > [!NOTE]
-    > Migrate your current backups to a temporary volume using [Volume Migration](#migrate-data-to-newly-crated-volume), in case you wish to modify your existing storage to tiered storage.
+    > Migrate your current backups to a temporary volume using [Volume Migration](#migrate-data-to-newly-crated-volumes), in case you wish to modify your existing storage to tiered storage.
 
     - Create a storage pool.
     - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
