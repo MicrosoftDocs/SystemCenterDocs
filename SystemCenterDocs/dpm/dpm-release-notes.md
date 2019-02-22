@@ -42,20 +42,21 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 
 ## DPM 2019 Release Notes
 
-The following sections summarize the release notes for DPM 2019 and include the known issues and workarounds.
+The following sections summarize the release notes for DPM 2019 and include the following known issues and workarounds.
 
 ### DPM console crashes due to MSDPM Service crash:
 
-**Description**: Presence of duplicate summary management jobs, usually after DPM upgrade leads to failure of any in-progress jobs at midnight eventually leading to a crash. As a result, you might observer the following:
+**Description**: Presence of duplicate summary management jobs, after DPM upgrade, might lead to failure of any in-progress jobs at zero hours eventually leading to a crash. As a result, you might observe the following:
+
 - Replica is inconsistent.
-- Storage pool bloat due to recovery points not getting pruned.
-- outdated DPM reports.
+- Storage bloat caused due to non-deletions of recovery points.
+- Outdated DPM reports.
 - No clean-up for job history and garbage collection jobs.
 
 **Workaround**:
 1. Backup the current DPM database.
 2. Open SQL management studio and connect to the SQL Instance hosting the DPMDB for this server.
-3. Run the following query check if you have two or more summary manager jobs scheduled and the older schedule:
+3. Run the following query, and check if you have two or more summary manager jobs scheduled, and see which was the older schedule:
    ```
     SELECT SCH.ScheduleId, SCH.JobDefinitionId, jd.CreationTime
     FROM tbl_JM_JobDefinition JD
@@ -76,7 +77,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
     where JobDefinitionId = ‘JobDefinitionID'             --- Replace with Your JobDefinitionID
 
    ```
-5. Delete the SQL job matching the ScheduleID under the SQL Server Agent – JOBS.   Once deleted, that should resolve the crash at midnight.
+5. Delete the SQL job that is matching the ScheduleID under the SQL Server Agent – JOBS. Once deleted, the crash at zero hours would be resolved.
 
    ScheduleId is the SQL Jobs under SQL agent:
    ```
@@ -87,29 +88,29 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 ### Hyper-V VMs are protected twice on VM upgrade
 
-**Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group Wizard.
+**Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group wizard.
 
 **Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM, and create a new protection group. Then refresh the data sources, and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
 
-### Restoring a previous version of an upgraded Hyper-V VM causes future recovery points to fail
+### Restoration of a previous version for an upgraded Hyper-V VM causes future recovery points to fail
 
-**Description**: If you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection, if you then recover a 2012 R2 copy at the original location, further backups may fail.
+**Description**: When you upgrade a protected 2012 R2 Hyper-V VM to the 2016 version, then stop protecting the VM (but retain data), and then re-enable protection, if you then recover a 2012 R2 copy at the original location, further backups might fail.
 
-**Workaround**: After recovery, change the VM Version to 2016, then run a Consistency Check.
+**Workaround**: After recovery, change the VM version to 2016, then run a consistency check.
 
 ### Bare Metal Recovery protection failures
 
-**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job may fail with the message that the replica size is not sufficiently large.
+**Description**: If you configure Bare Metal Recovery (BMR) protection, the BMR protection job might fail with the message that the replica size is not sufficiently large.
 
 **Workaround**: Use the following registry path to change the default replica size for BMR data sources. Open the registry editor and increase the replica size for the following key:
 
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
-### Reprotecting the DPM database after upgrading to DPM 2016 or 1801
+### Reprotecting the DPM database after upgrading to DPM 2019
 
-**Description**: When you upgrade from System Center DPM 2012 R2 to System Center Data Protection Manager 2016 or 1801, the DPM database name can change in some scenarios.
+**Description**: When you upgrade from System Center Data Protection Manager to DPM 2019, the DPM database name might change in some scenarios.
 
-**Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the old DPM database.
+**Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the previous DPM database.
 
 ### Hyper-V RCT - recover as files for D-T backup fails
 
@@ -117,9 +118,9 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
-### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
+### DPM 2019 does not support end user recovery with Modern Backup Storage (MBS)
 
-**Description**: If you use Modern Backup Storage (MBS) with DPM 2019, File Server end-user recovery is not available.
+**Description**: DPM 2019 does not support end user recovery with Modern Backup Storage (MBS).
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
