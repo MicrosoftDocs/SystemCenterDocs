@@ -191,13 +191,12 @@ Follow these steps: :
 4. Select **New Storage Pool** option from **TASKS**.
 5. Enter a name for the storage pool, click **Next**.
 6.	Include the physical disk to the storage pool.
+    If  a disk is missing from the primordial pool, you can add it by selecting **Add Physical Disk** option from the **TASKS** drop-down menu.
 
     ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
 
     >[!NOTE]
     > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
-
-    If  a disk is missing from the primordial pool, you can add it by selecting **Add Physical Disk** option from the **TASKS** drop-down menu.
 
 7. Check the media type of the disk included. At least one of the disks should be SSD, required for SSD Tiering.
   -	Add all the disks including SSDs to the storage pool.
@@ -299,8 +298,8 @@ Follow these steps:
     fsutil behavior disableWriteAutoTiering
     ```
 
-    (Usage:  fsutil behavior set disableWriteAutoTiering <volume pathname> <1|0>)
-     	Values:
+    Usage:  fsutil behavior set disableWriteAutoTiering <volume pathname> <1|0>)
+    Values:
 
         0 - Enable write auto tiering on the given volume (default)
 
