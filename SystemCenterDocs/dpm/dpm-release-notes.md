@@ -44,7 +44,7 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 
 The following sections summarize the release notes for DPM 2019 and include the following known issues and workarounds.
 
-### DPM console crashes due to MSDPM Service crash:
+### DPM console crashes due to MSDPM Service crash
 
 **Description**: Presence of duplicate summary management jobs, after DPM upgrade, might lead to failure of any in-progress jobs at zero hours eventually leading to a crash. As a result, you might observe the following:
 
@@ -56,7 +56,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Workaround**:
 1. Backup the current DPM database.
 2. Open SQL management studio and connect to the SQL Instance hosting the DPMDB for this server.
-3. Run the following query, and check if you have two or more summary manager jobs scheduled, and see which was the older schedule:
+3. Run the following query, and check if you have two or more summary manager jobs scheduled, and see which the older schedule was:
    ```
     SELECT SCH.ScheduleId, SCH.JobDefinitionId, jd.CreationTime
     FROM tbl_JM_JobDefinition JD
@@ -90,7 +90,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group wizard.
 
-**Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM, and create a new protection group. Then refresh the data sources, and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
+**Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM, and create a new protection group. Then refresh the data sources and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
 
 ### Restoration of a previous version for an upgraded Hyper-V VM causes future recovery points to fail
 
