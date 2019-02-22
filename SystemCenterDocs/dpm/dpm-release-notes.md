@@ -444,4 +444,4 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 ## Next steps
 To install DPM, see the article, [Install DPM](install-dpm.md).
 
-If you would like to consult planning information for your environment, see [Preparing your environment for System Center 2016 Data Protection Manager](prepare-environment-for-dpm.md).
+If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
