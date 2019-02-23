@@ -266,26 +266,30 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 **Use the following steps to create the next-hop logical network in VMM:**
 
 1.  On the VMM console, select **Logical Networks**, right-click, and select **Create Logical Network**.
-2. In the **Settings** page, choose **One connected network** and select the checkbox for **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**
+2. In the **Settings** page, choose **One connected network** and select  **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**.
+
+    ![one connected network](./media/sdn-route-network-traffic/one-connected-network.png)
+
 3. Create an IP Pool for this new logical network. IP address from this pool is required for setting up L3 forwarding.
 
 **Use the following steps to configure L3 forwarding**:
 
 > [!NOTE]
-
 > You cannot  limit bandwidth in L3 VPN connection.
 
-1. In the VMM console, select the tenant virtual network that you want to connect to the physical network through L3 gateway.  
-2. Right-click, select **Properties** of the tenant virtual network.
-3. In the **VPN Connections** page, click **Add**> **Add Layer 3 tunnel**.
+1. In the VMM console, select the tenant virtual network that you want to connect to the physical network, through L3 gateway.  
+2. Right-click the selected tenant virtual network, select **Properties** > **Connectivity**.
+3. Select **Connect to another network through a VPN tunnel**. Optionally, to enable BGP peering in your datacenter, select **Enable Border Gateway Protocol (BGP)**.
+4. Select the network controller service for the gateway device.
+5. In the **VPN Connections** page, click **Add**> **Add Layer 3 tunnel**.
 
-    ![L3 configuration from ui](./media/sdn-route-network-traffic/l3-forwarind-connection-ui.png)
+    ![L3 configuration from ui](./media/sdn-route-network-traffic/layer3-ui.png)
 
-     Layer 3 tunnel options appear:
+6. Provide a subnet in the CIDR notation format for **Routing Subnet**. This subnet is used to route packets out of the VM network. You do not need to pre-configure this subnet in your datacenter.
 
-     ![L3 configuration options](./media/sdn-route-network-traffic/l3-forwarding-options.png)
+    ![L3 subnet](./media/sdn-route-network-traffic/Routing-subnet.png)
 
-4. Configure the L3 connection  using the following information:
+7. Use the following information and configure the L3 connection:
 
 |**Parameter** | **Details** |
     | --- | --- |
@@ -293,12 +297,32 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     | VMNetwork (NextHop) |  User-defined name for the next hop VM network, which was created as a prerequisite. This represents the physical network that wants to communicate with the tenant VM network.  When you click *Browse*, only the *One Connected VM Networks* managed by Network service will be available for selection.
     |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses, must be separated by comma.  
     | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and should be in CIDR notation format. Peer IP address and Local IP addresses should be from the same Pool. These IP addresses should belong to the subnet defined in Logical Network Definition of VM Network (NextHop).
+8. If you are using static routes, in  **Routes**, type all the remote subnets that you want to connect to.
+
+    ![remote subnets](./media/sdn-route-network-traffic/remote-subnets.png)
+
+9. If you are using BGP, ensure that BGP peering is  established between the SDN gateway internal interface IP address, (which is present in a different compartment on the gateway VM, not the default compartment) and the peer device on the physical network.
+
+For BGP to work, you must do the following steps:
+
+- Enter your ASN), peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
+
+    ![remote subnets](./media/sdn-route-network-traffic/l3-ui-enable-bgp.png)
+
+- Determine the SDN gateway internal address as detailed in [the following section](#Determine-the-sdn-gateway-internal-address).
+
+- Create BGP peer on the remote end (physical network gateway). While creating the BGP peer, use the SDN gateway internal address (as determined in the previous step ) as the peer IP address.
+
+- Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (Local IP address value used when creating L3 connection).
 
 ::: moniker-end
 
 > [!NOTE]
 
 > After configuring the L3 connection, you must  configure routes in your physical network for the tenant virtual network subnets, with the next hop as the IP address of the L3 interface on the SDN gateway (parameter LocalIpAddresses in the script). This is to ensure that the return traffic to the tenant virtual network is routed correctly through the SDN gateway.
+
+
+::: moniker range="<sc-vmm-2019"
 
 You can choose to configure static routes or dynamic routes (over BGP) with the L3 connection. If you are using static routes, you can add them using **Add-SCNetworkRoute** as described in the script below.
 
@@ -316,7 +340,9 @@ For BGP to work, you must do the following steps:
 
 4. Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (*LocalIPAddresses* parameter in the script).
 
-### Determine the SDN gateway internal address
+::: moniker-end
+
+## Determine the SDN gateway internal address
 
 Use the following procedure:
 
@@ -335,7 +361,6 @@ Run the following PowerShell cmdlets on a network controller installed computer 
   ```
 
 The result of this command provides the IP address that you must configure on the remote router as the peer IP Address.
-
 
 ## Set up the traffic selector from VMM PowerShell
  **Use the following procedure**:
