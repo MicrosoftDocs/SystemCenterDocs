@@ -298,21 +298,22 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses, must be separated by comma.  
     | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and should be in CIDR notation format. Peer IP address and Local IP addresses should be from the same Pool. These IP addresses should belong to the subnet defined in Logical Network Definition of VM Network (NextHop).
 
-8. If you are using static routes, in  **Routes**, type all the remote subnets that you want to connect to.
+
+- If you are using static routes, type all the remote subnets that you want to connect to, in **Routes**.
 
     ![remote subnets](./media/sdn-route-network-traffic/remote-subnets.png)
 
-9. If you are using BGP, ensure that BGP peering is  established between the SDN gateway internal interface IP address, (which is present in a different compartment on the gateway VM, not the default compartment) and the peer device on the physical network.
+-  If you are using BGP, ensure that BGP peering is  established between the SDN gateway internal interface IP address, (which is present in a different compartment on the gateway VM, not the default compartment) and the peer device on the physical network.
 
 **For BGP to work, you must do the following steps**:
 
-- Enter your ASN), peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
+1. Enter your ASN), peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
 
     ![remote subnets](./media/sdn-route-network-traffic/l3-ui-enable-bgp.png)
 
-- Determine the SDN gateway internal address as detailed in [the following section](#Determine-the-sdn-gateway-internal-address).
+2. Determine the SDN gateway internal address as detailed in [the following section](#determine-the-sdn-gateway-internal-address).
 
-- Create BGP peer on the remote end (physical network gateway). While creating the BGP peer, use the SDN gateway internal address (as determined in the previous step ) as the peer IP address.
+3. Create BGP peer on the remote end (physical network gateway). While creating the BGP peer, use the SDN gateway internal address (as determined in the previous step ) as the peer IP address.
 
 - Configure a route on the physical network with the destination as the SDN gateway internal address and the next hop as the L3 interface IP address (Local IP address value used when creating L3 connection).
 
