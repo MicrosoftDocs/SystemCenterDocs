@@ -356,6 +356,22 @@ You can restore individual files from a protected VM recovery point. This featur
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
 
+    ::: moniker range="sc-dpm-2019"
+
+    ## VMware parallel backups
+
+    With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
+
+    You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
+
+    **Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+    **Key Type** : DWORD (32-bit) value.
+
+    > [!NOTE]
+    >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel.
+
+    ::: moniker-end
+
 ::: moniker range=">=sc-dpm-1807"
 
 ## VMWare vSphere 6.7
