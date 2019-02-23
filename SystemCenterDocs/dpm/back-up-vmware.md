@@ -354,50 +354,28 @@ You can restore individual files from a protected VM recovery point. This featur
     ![specify destination for files or folders ](./media/back-up-vmware/specify-destination.png)
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** are not enabled.
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
-    The **Recovery status** screen shows the progression of the recovery operation.
+    The **Recovery status screen shows the progression of the recovery operation**.
 
-
-::: moniker range="sc-dpm-2019"
-
-## VMware parallel backups
-
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
-
-You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
-
-**Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
-**Key Type** : DWORD (32-bit) value.
-
-> [!NOTE]
->  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel.
+::: moniker range=">=sc-dpm-1807"
 
 ## VMWare vSphere 6.7
 
-To backup vSphere 6.7 we need the following:
+To backup vSphere 6.7 do the following:
 
-- TLS 1.2 should be enabled on DPM Server
-  > [!Note]
+- Enable TLS 1.2 on DPM Server
+  >[!Note]
+  >VMWare 6.7 onwards had enabled TLS as communication protocol.
 
-  > VMWare 6.7 onwards had enabled TLS as communication protocol.
+- Set the registry keys as follows:  
 
-- Set the below registry keys -
+  Windows Registry Editor Version 5.00
 
-  Windows Registry Editor Version 5.00  
+  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft.NETFramework\v2.0.50727] "SystemDefaultTlsVersions"=dword:00000001 "SchUseStrongCrypto"=dword:00000001
 
-  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727]
-  "SystemDefaultTlsVersions"=dword:00000001
-  "SchUseStrongCrypto"=dword:00000001
+  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001 "SchUseStrongCrypto"=dword:00000001
 
-  [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319]
-  "SystemDefaultTlsVersions"=dword:00000001
-  "SchUseStrongCrypto"=dword:00000001
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft.NETFramework\v2.0.50727] "SystemDefaultTlsVersions"=dword:00000001 "SchUseStrongCrypto"=dword:00000001
 
-  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
-  "SystemDefaultTlsVersions"=dword:00000001
-  "SchUseStrongCrypto"=dword:00000001
-
-  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
-  "SystemDefaultTlsVersions"=dword:00000001
-  s"SchUseStrongCrypto"=dword:00000001
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001 s"SchUseStrongCrypto"=dword:00000001
 
 ::: moniker-end
