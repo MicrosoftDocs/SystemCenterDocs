@@ -297,13 +297,14 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
     | VMNetwork (NextHop) |  User-defined name for the next hop VM network, which was created as a prerequisite. This represents the physical network that wants to communicate with the tenant VM network.  When you click *Browse*, only the *One Connected VM Networks* managed by Network service will be available for selection.
     |Peer IP Address | IP address of the physical network gateway, reachable over L3 logical network. This IP address must belong to the next hop logical network that you created as the prerequisite. This IP will serve as the next hop, once the traffic destined to the physical network from the tenant VM network reaches the SDN gateway. This must be an IPv4 address. There can be multiple peer IP addresses, must be separated by comma.  
     | Local IP Addresses |  IP addresses to be configured on the SDN gateway L3 network interface. These  IP addresses must belong to the next hop logical network that you created as prerequisite. You must also provide the subnet mask. Example: 10.127.134.55/25. This must be an IPv4 address and should be in CIDR notation format. Peer IP address and Local IP addresses should be from the same Pool. These IP addresses should belong to the subnet defined in Logical Network Definition of VM Network (NextHop).
+
 8. If you are using static routes, in  **Routes**, type all the remote subnets that you want to connect to.
 
     ![remote subnets](./media/sdn-route-network-traffic/remote-subnets.png)
 
 9. If you are using BGP, ensure that BGP peering is  established between the SDN gateway internal interface IP address, (which is present in a different compartment on the gateway VM, not the default compartment) and the peer device on the physical network.
 
-For BGP to work, you must do the following steps:
+**For BGP to work, you must do the following steps**:
 
 - Enter your ASN), peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
 
