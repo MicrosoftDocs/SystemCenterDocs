@@ -68,4 +68,4 @@ You can however, ignore the server certificate errors if you wish to, while moni
 
 ![server certification errors](./media/url-monitoring/ignore-server-certificate-errors.png)
 
-For existing websites which are being monitored, you can either select this new flag in the **Properties** wizard or edit in the management pack. To allow this enhancement, MP schema changes are done for URLProbe. [Learn more](url-probe-schame.md).
+For existing websites which are being monitored, you can either select this new flag in the **Properties** wizard or edit in the management pack. To allow this enhancement, MP schema changes are done for URLProbe. [Learn more](url-probe-schema.md).

@@ -1,4 +1,3 @@
-﻿
 ---
 ms.assetid: a6c11181-2042-425e-9bc2-101bb08b47bc
 title:Microsoft.SystemCenter.WebApplication.UrlProbe
@@ -14,9 +13,7 @@ ms.topic: article
 MonikerRange: 'sc-om-2019'
 ---
 
-
 # Microsoft.SystemCenter.WebApplication.UrlProbe
-
 
 The **Microsoft.SystemCenter.WebApplication.UrlProbe** probe module connects to one or more URLs and returns **Microsoft.SystemCenter.WebApplication.WebApplicationData.** This data can then be used with other modules from the **Microsoft.SystemCenter.WebApplication.Library** to evaluate the health state of various aspects of the target web site.
 
@@ -24,7 +21,7 @@ The **Microsoft.SystemCenter.WebApplication.UrlProbe** probe module connects to 
 
 The primary function of **Microsoft.SystemCenter.WebApplication.UrlProbe** is to send a request to one or more URLs and report on the results. The format of the request is a complex type, and is used with other modules to evaluate the health state of the target URL. Because large numbers of requests can be made with a single probe, and because the results of the request can contain a large amount of data, the probe itself carries out some evaluation of the request before producing the output. For example, instead of just providing the status code from the queried URL as output, the module compares the status code against a specified range, and provides a success or failure code as output. The module can also match the content of the HTML that is returned by the request, for example, matching the word “error” to determine if an error page was returned. This evaluation performed by the module removes the need for complex expression matching logic in your rule or monitor.
 
-This module is often commonly triggered using [Microsoft.SystemCenter.WebApplication.PerProbe.Scheduler](hh442320\(v=msdn.10\).md).
+This module is often commonly triggered using [Microsoft.SystemCenter.WebApplication.PerProbe.Scheduler](https://docs.microsoft.com/previous-versions/system-center/developer/jj130146(v%3dmsdn.10)).
 
 The **Microsoft.SystemCenter.WebApplication.UrlProbe** module is commonly used with a number of condition detection modules which are intended to evaluate its output. The module evaluates different aspects of the health of the URL based on parameters defined in the request and returns appropriate output for each.
 
@@ -756,6 +753,7 @@ The following example carries out a simple URL probe against the URL http://www.
                 <CredentialUserName />
                 <CredentialPassword />
                 <AuthenticationScheme>None</AuthenticationScheme>
+                <IgnoreServerCertError>false</IgnoreServerCertError>
                 <FollowRedirects>true</FollowRedirects>
                 <RetryCount>0</RetryCount>
                 <RequestTimeout>0</RequestTimeout>
