@@ -1,6 +1,6 @@
 ---
 ms.assetid: a6c11181-2042-425e-9bc2-101bb08b47bc
-title:Microsoft.SystemCenter.WebApplication.UrlProbe
+title: Microsoft.SystemCenter.WebApplication.UrlProbe
 description: This article provides schema for URLprobe.
 author: JYOTHIRMAISURI
 ms.author: V-jysur
