@@ -10,7 +10,6 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
-MonikerRange: 'sc-om-2019'
 ---
 
 
@@ -55,6 +54,7 @@ Follow these steps:
 
 4. Optionally, set other properties of the request, and then click **OK**.
 
+::: moniker range="sc-om-2019"
 
 ## URL monitoring enhancements with certificate errors
 
@@ -69,3 +69,5 @@ However, you can ignore the server certificate errors if you wish to, while moni
 ![server certification errors](./media/url-monitoring/ignore-server-certificate-errors.png)
 
 For existing websites, which are being monitored, you can either select this new options  in the **Properties** wizard or edit in the management pack. To allow this enhancement, MP schema changes are done for URLProbe. [Learn more](url-probe-schema.md).
+
+::: moniker-end
