@@ -74,7 +74,12 @@ After you've added the WSUS server to the fabric you can configure update baseli
 3. Click **Home** > **Properties** > **Updates** for the baseline. In **Updates**, add or remove baselines as required. To ensure all security updates are remediated don't remove anything.
 4. Click **Assignment Scope**, and select the host groups, clusters, standalone servers, and infrastructure servers to add to the baseline. Or click **All Hosts** to add all.
 
-**Note** that you cannot update servers part of a Storage Spaces Direct cluster (either hyper-converged or disaggregated) using VMM and trying to patch these using VMM may cause data loss.
+::: moniker range="<=sc-vmm-1801"
+
+> [!NOTE]
+> We recommend that you do not update the servers in a Storage Spaces Direct cluster (either hyper-converged or disaggregated) by using VMM, as it might cause data loss.   
+
+::: moniker-end
 
 ### Assign servers to a custom baseline
 
@@ -85,7 +90,13 @@ After you've added the WSUS server to the fabric you can configure update baseli
 5. In **Assignment Scope**, expand **Host Groups** and **Infrastructure**. Select the groups and servers you want to add.
 6. In **Summary**, click **Finish**, and accept the **Microsoft License Terms** if needed to install any of the updates. Verify the baseline in **Library** > **Update Catalog and Baselines** > **Baselines**.
 
-**Note** that you cannot update servers part of a Storage Spaces Direct cluster (either hyper-converged or disaggregated) using VMM and trying to patch these using VMM may cause data loss.
+
+::: moniker range="<=sc-vmm-1801"
+
+> [!NOTE]
+> We recommend that you do not update the servers in a Storage Spaces Direct cluster (either hyper-converged or disaggregated) by using VMM, as it might cause data loss.   
+
+::: moniker-end
 
 ## Scan for update compliance
 
