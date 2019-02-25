@@ -353,11 +353,11 @@ The **Requests** element is a collection of one or more **Request** elements. Ea
 
 The **RequestEvaluationCriteria** element provides the ability to evaluate the data returned by the request and determine the health of the URL. Each element is a complex type, which contains criteria that can be matched in one of three ways:
 
-  - Numeric criteria. This is the most common and is used to evaluate a measurable value, such as a returned status code or response time.  
+  - Numeric criteria. This is the most common and is used to evaluate a measurable value, such as a returned status code or response time.
 
-  - Content match criteria. This is used to evaluate the content of the returned HTML to determine whether it contains a particular string of text.  
+  - Content match criteria. This is used to evaluate the content of the returned HTML to determine whether it contains a particular string of text.
 
-  - Custom criteria. This is an expression that matches on a variety of different available parameters defined by the user.  
+  - Custom criteria. This is an expression that matches on a variety of different available parameters defined by the user.
 
 
 Any number of numeric criteria or custom criteria can be used, but only one content match criterion is allowed. The **RequestEvaluationCriteriaType** consists of the following elements:
@@ -634,9 +634,9 @@ The **Value** element is of type **double**, and specifies the type of the value
 
 If the returned data item you wish to evaluate is not numeric, such as a content evaluation, you will need to compare against a string. **ContentMatchCriteria** is of type **RequestEvaluationStringCriteriaType**, which has two subelements: **Operator** and **Value**. **Operator** can be one of two types:
 
-  - **SimpleStringOperator**, which is of type **CriteriaCompareType**, which is an enumeration consisting of **Equal**, **NotEqual**, **Greater**, **Less**, or **GreaterEqual**.  
+  - **SimpleStringOperator**, which is of type **CriteriaCompareType**, which is an enumeration consisting of **Equal**, **NotEqual**, **Greater**, **Less**, or **GreaterEqual**.
 
-  - **RegExOperator**, which is of type **RegExCompareType**, which is an enumeration type consisting of **ContainsSubstring**, **MatchesWildcard**, **MatchesRegularExpression**, **MatchesMOM2005RegularExpression**, **MatchesMOM2005BooleanRegularExpression**, **DoesNotContainSubstring**, **DoesNotMatchWildcard**, **DoesNotMatchRegularEspression**, **DoesNotMatchMOM2005RegularExpression**, or **DoesNotMatchMOM2005BooleanRegularExpression**  
+  - **RegExOperator**, which is of type **RegExCompareType**, which is an enumeration type consisting of **ContainsSubstring**, **MatchesWildcard**, **MatchesRegularExpression**, **MatchesMOM2005RegularExpression**, **MatchesMOM2005BooleanRegularExpression**, **DoesNotContainSubstring**, **DoesNotMatchWildcard**, **DoesNotMatchRegularEspression**, **DoesNotMatchMOM2005RegularExpression**, or **DoesNotMatchMOM2005BooleanRegularExpression**
 
 
 The other element of **RequestEvaluationStringCriteriaType** is **Value**, which is a string to be compared.
