@@ -1,18 +1,3 @@
----
-ms.assetid: 29218447-0e0b-4aba-86c6-dbb1a35e05e0
-title: Microsoft.SystemCenter.WebApplication.UrlProbe
-description: This article provides schema for URLprobe.
-author: JYOTHIRMAISURI
-ms.author: V-jysur
-manager: vvithal
-ms.date: 02/24/2019
-ms.custom: na
-ms.prod: system-center
-ms.technology: operations-manager
-ms.topic: article
-MonikerRange: 'sc-om-2019'
----
-
 # Microsoft.SystemCenter.WebApplication.UrlProbe
 
 The **Microsoft.SystemCenter.WebApplication.UrlProbe** probe module connects to one or more URLs and returns **Microsoft.SystemCenter.WebApplication.WebApplicationData.** This data can then be used with other modules from the **Microsoft.SystemCenter.WebApplication.Library** to evaluate the health state of various aspects of the target web site.
