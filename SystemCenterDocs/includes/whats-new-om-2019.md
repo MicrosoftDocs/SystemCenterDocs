@@ -122,7 +122,7 @@ For information about  SQL Server Design Considerations, see [related documentat
 *  System Center 1801 Operations Manager
 *  System Center 1807 Operations Manager
 
-## URL monitoring enhancements with certificate errors
+## URL monitoring enhancements for server certificate errors
 The existing URL monitoring capability has been enhanced. With this improvement, Operations Manager will not ignore the server certificate errors (like server certificate CN, expiry date, untrusted CA, and wrong usage) by default. If you wish to monitor websites, which do not have a valid SSL certificate, select *Ignore Server Certificate Errors* checkbox in your Web application *Properties*. [Learn more](../scom/edit-web-application-settings.md).
 
 ## Updates and Recommendation feature for Linux
