@@ -1,6 +1,6 @@
 # Web Application Request Properties
 
-The following sections describe the settings available for each request in a **Web Application Transaction Monitor** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings). Each section in the following sections represents a tab in the **Request Properties** dialog box.
+The following sections describe the settings available for each request in a **Web Application Transaction Monitor** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md). Each section in the following sections represents a tab in the **Request Properties** dialog box.
 
 ## General Tab
 
@@ -54,4 +54,4 @@ The **Extraction Rules** tab lets you extract a string of text from the body of 
 ## See Also
 
 - [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md)
-- [Web Application Properties](web-application-properties)
+- [Web Application Properties](web-application-properties.md)

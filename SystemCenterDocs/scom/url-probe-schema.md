@@ -42,6 +42,7 @@ Finally, some raw values are returned, which you can either collect for analysis
       <xsd:element name="CredentialUserName" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <xsd:element name="CredentialPassword" type="xsd:string" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <xsd:element name="AuthenticationScheme" type="AuthenticationSchemeType" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <xsd:element name="IgnoreServerCertError" type="xsd:boolean"  xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <xsd:element name="FollowRedirects" type="xsd:boolean" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <xsd:element name="RetryCount" type="xsd:unsignedInt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
       <xsd:element name="RequestTimeout" type="xsd:unsignedInt" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
@@ -64,6 +65,7 @@ Finally, some raw values are returned, which you can either collect for analysis
       <OverrideableParameter ID="CredentialUserName" Selector="$Config/CredentialUserName$" ParameterType="string" />
       <OverrideableParameter ID="CredentialPassword" Selector="$Config/CredentialPassword$" ParameterType="string" />
       <OverrideableParameter ID="AuthenticationScheme" Selector="$Config/AuthenticationScheme$" ParameterType="string" />
+      <OverrideableParameter ID="IgnoreServerCertError" Selector="$Config/IgnoreServerCertError$"  ParameterType="bool"/>
       <OverrideableParameter ID="FollowRedirects" Selector="$Config/FollowRedirects$" ParameterType="bool" />
       <OverrideableParameter ID="RetryCount" Selector="$Config/RetryCount$" ParameterType="int" />
       <OverrideableParameter ID="RequestTimeout" Selector="$Config/RequestTimeout$" ParameterType="int" />
@@ -91,6 +93,7 @@ The **Microsoft.SystemCenter.WebApplication.UrlProbe** module supports the confi
 | _CredentialUserName_ | **String** | True | Required parameter, but can be empty. Specifies the username to be used with the URL being queried. |
 | _CredientialPassword_ | **String** | True | Required parameter, but can be empty. Specifies the password to be used with the URL being queried. |
 | _AuthenticationScheme_ | **AuthenticationSchemeType** | True | Required parameter. Specifies the authentication scheme to be used with the URL being queried. Valid values are  **None** ,  **Basic** ,  **NTLM** ,  **Digest** , and  **Negotiate**. |
+| _IgnoreServerCertError_ | **Boolean** | True | Required parameter. Specifies whether the server certificate errors should be ignored. |
 | _FollowRedirects_ | **Boolean** | True | Required parameter. Specifies whether the query should follow URL redirects. |
 | _RetryCount_ | **Integer** | True | Required parameter. Specifies the number of times the module should retry the specified URL before timing out. |
 | _RequestTimeout_ | **Integer** | True | Required parameter. Specifies the length of time to wait for a response from the specified URL before retrying. |
@@ -135,7 +138,7 @@ Any number of numeric criteria or custom criteria can be used, but only one cont
 | --- | --- | --- |
 | StopProcessingIfWarningCriteriaIsMet | Boolean | If true, stops processing the request once the warning condition has been met. |
 | StopProcessingIfErrorCriteriaIsMet | Boolean | If true, stops processing the request once the error condition has been met. |
-| BasePageEvaluationCriteria | **Complex type** | Consists of two elements evaluating the base page,  **WarningCriteria**  and  **ErrorCriteria** , both of type  **BasePageEvaluationCriteriaType**. **BasePageEvaluationCriteriaType**  is used to evaluate the health status of the base page retrieved by the URL. Consists of zero or more  **NumericCriteriaExpressions**  of type  **RequestEvaluationNumericCriteriaType** , zero or one  **ContentMatchCriteria**  of type  **RequestEvaluationStringCriteriaType** , and zero or more  **CustomCriteria**  of type  **ExpressionType**. |
+| BasePageEvaluationCriteria | Complex type | Consists of two elements evaluating the base page,  **WarningCriteria**  and  **ErrorCriteria** , both of type  **BasePageEvaluationCriteriaType**. **BasePageEvaluationCriteriaType**  is used to evaluate the health status of the base page retrieved by the URL. Consists of zero or more  **NumericCriteriaExpressions**  of type  **RequestEvaluationNumericCriteriaType** , zero or one  **ContentMatchCriteria**  of type  **RequestEvaluationStringCriteriaType** , and zero or more  **CustomCriteria**  of type  **ExpressionType**. |
 | LinksEvaluationCriteria | Complex type | Consists of two elements evaluating the links on the page,  **WarningCriteria**  and  **ErrorCriteria** , both of type  **ChildRequestsEvaluationCriteriaType**. **ChildRequestsEvaluationCriteriaType** consists of zero or more  **NumericCriteriaExpressions**  of type  **RequestEvaluationNumericCriteriaType** , zero or one  **StatusCodeCriteria**  of type  **ListNumericRequestCriteriaType** , and zero or more  **CustomCriteria**  of type  **ExpressionType**. |
 | ResourcesEvaluationCriteria | Complex type | Consists of two elements evaluating the resources on the page,  **WarningCriteria** and  **ErrorCriteria** , both of type  **ChildRequestsEvaluationCriteriaType**. **ChildRequestsEvaluationCriteriaType** consists of zero or more  **NumericCriteriaExpressions**  of type  **RequestEvaluationNumericCriteriaType** , zero or one  **StatusCodeCriteria**  of type  **ListNumericRequestCriteriaType** , and zero or one  **CustomCriteria**  of type  **ExpressionType**. |
 | WebPageTotalEvaluationCritieria | Complex type | Consists of two elements,  **WarningCriteria**  and  **ErrorCriteria** , both of type  **WebPageTotalEvaluationCriteriaType** (see below). **WebPageTotalEvaluationCriteriaType** measures the total statistics for the page, including the base page, links, and resources, and is of type  **WebPageTotalEvaluationCriteriaType**.  **WebPageTotalEvaluationCriteriaType** consists only of zero or more instances of  **NumericCriteriaExpression** , which is of  **RequestEvaluationNumericCriteriaType** , described below. |
@@ -262,6 +265,7 @@ The following example carries out a simple URL probe against the URL [http://www
              <CredentialUserName />
              <CredentialPassword />
              <AuthenticationScheme>None</AuthenticationScheme>
+             <IgnoreServerCertError>false</IgnoreServerCertError>
              <FollowRedirects>true</FollowRedirects>
              <RetryCount>0</RetryCount>
              <RequestTimeout>0</RequestTimeout>
