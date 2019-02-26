@@ -84,6 +84,7 @@ The following section describes how to work with the different options for the o
 
     > [!NOTE]
     > The minimum value for **Number of minutes** is 5. The maximum value is 1,051,200 (2 years).
+    > To start the maintenance mode, the maximum wait time is 5 minutes.
 
 ### To edit maintenance mode settings for a monitored object
 
@@ -118,7 +119,6 @@ The following section describes how to work with the different options for the o
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
 
-
 ### Enable from Target System
 
 Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry, which stores arguments for Maintenance Mode, such as duration, reason, comment, and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
@@ -127,7 +127,7 @@ Maintenance mode can be enabled directly from the monitored Windows computer by 
 
     `Start-SCOMAgentMaintenanceMode -Duration <Double (in minutes)> [-Reason <string>] [-Comments <string>]`
 
-> [!NOTE] 
+> [!NOTE]
 > The minimum duration value accepted is five (5) minutes.
 
 
@@ -147,13 +147,13 @@ The following reasons are accepted by the cmdlet:
 - ApplicationUnresponsive
 - ApplicationUnstable
 - SecurityIssue
-- LossOfNetworkConnectivity  
+- LossOfNetworkConnectivity 
 
 #### Examples:
 
 1. To enable for an interval of five (5) minutes and with a major reason of **Planned** and minor reason **Other** type:
 
-    `Start-SCOMAgentMaintenanceMode -Duration 5 –Reason PlannedOther` 
+    `Start-SCOMAgentMaintenanceMode -Duration 5 –Reason PlannedOther`
 
 2. To enable for an interval of 10 minutes with no reason, type:
 
@@ -169,7 +169,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 4. Import the module MaintenanceMode.dll by typing `Import-module MaintenanceMode.dll`.   
 
-5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request. 
+5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request.
 
 > [!NOTE]  
 > To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
@@ -199,9 +199,9 @@ The following procedure describes how to create a maintenance schedule for selec
 6. In the **Create Group Wizard - Object Selection** dialog box, perform the following:
 
     1.  In the **Search for list**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.  
-    
+
     2.  Optionally, in the **Filter by part of the name** box, type all or part of the object name, and then click **Search**.  
-    
+
     3.  In the **Available items** box, select the desired objects, click **Add**, and then click **OK**.
 
 7. On the **Object Selection** page, click **Next**.
@@ -209,14 +209,15 @@ The following procedure describes how to create a maintenance schedule for selec
 8. In the **Create Maintenance Schedule** wizard, on the **Schedule** page, you can specify the following for your maintenance schedule:
 
     1.  Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
-    
+
     2.  Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
      > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years). 
-  
+     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+     > To start the maintenance mode, the maximum wait time is 5 minutes.
+
 9. Click **Next** once you have completed configuring the schedule options.
 
 10. In the **Create Maintenance Schedule** wizard, on the **Details** page, specify the following:
@@ -239,7 +240,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
 
-1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console. 
+1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 
 2. From the left pane in the Web console, click **Maintenance Schedules**.
 
@@ -248,22 +249,23 @@ The following procedure describes how to create a maintenance schedule for selec
 4. In the **Create maintenance schedule** pane, perform the following:
 
     1.  In the **Search for classes**, the default item **Computer** is selected. Alternatively, you can select **Computer Group** or a specific class such as **SQL Server 2012 DB Engine** from the drop-down list.  
-    
+
     2.  Optionally, in the **Filter by keyword** box, type all or part of the object name, and then press **Enter**.  
-    
+
     3. In the **Available objects** box, select the desired objects.
 
 5. Expand **Schedule** and in this section, specify the following for your maintenance schedule:
 
     1.  Choose the frequency as to how often you would like it to run.  If you select the option **Once**, the task will only run one time based on the start date and time selected.
-    
+
     2.  Under **Duration** select the **Start Time** and for **End Time**, select the **number of minutes** or select and enter the **Specific end time**.  
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
      > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years). 
-  
+     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+     > To start the maintenance mode, the maximum wait time is 5 minutes.
+
 9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
 
     1.  Create a name for the schedule in the **Schedule Name** box.
@@ -276,6 +278,6 @@ The following procedure describes how to create a maintenance schedule for selec
 
 11. Click **Finish** to save your changes.  
 
-The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
+The new schedule will appear in the list of maintenance schedules, and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
 
 ::: moniker-end
