@@ -1,3 +1,17 @@
+---
+ms.assetid: 4380f888-a7fa-4913-8715-9f1f524d4590
+title: Web application request properties
+description: This article describes the details about how to manage the web application requests properties.
+author: JYOTHIRMAISURI
+ms.author: V-jysur
+manager: vvithal
+ms.date: 02/26/2019
+ms.topic: article
+ms.prod: system-center
+ms.technology: operations-manager
+monikerRange: 'sc-om-2019'
+---
+
 # Web Application Request Properties
 
 The following sections describe the settings available for each request in a **Web Application Transaction Monitor** template in Operations Manager. You can set the properties of these requests by using the procedure in [How to Edit Settings or Requests in a Web Application](edit-web-application-settings.md). Each section in the following sections represents a tab in the **Request Properties** dialog box.

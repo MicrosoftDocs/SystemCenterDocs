@@ -1,3 +1,18 @@
+---
+ms.assetid: 9332f5fb-b26f-4d05-9cc6-c13727cd5967
+title:  Microsoft.SystemCenter.WebApplication.UrlProbe
+description: This article details the shema for URL probe. 
+author: JYOTHIRMAISURI
+ms.author: V-jysur
+manager: vvithal
+ms.date: 02/26/2019
+ms.topic: article
+ms.prod: system-center
+ms.technology: operations-manager
+monikerRange: 'sc-om-2019'
+---
+
+
 # Microsoft.SystemCenter.WebApplication.UrlProbe
 
 The **Microsoft.SystemCenter.WebApplication.UrlProbe** probe module connects to one or more URLs and returns **Microsoft.SystemCenter.WebApplication.WebApplicationData**. This data can then be used with other modules from the **Microsoft.SystemCenter.WebApplication.Library** to evaluate the health state of various aspects of the target web site.

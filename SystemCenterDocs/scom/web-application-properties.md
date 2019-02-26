@@ -1,3 +1,16 @@
+---
+ms.assetid: 9332f5fb-b26f-4d05-9cc6-c13727cd5967
+title: Web application properties
+description: This article describes the details about how to manage the web application properties.
+author: JYOTHIRMAISURI
+ms.author: V-jysur
+manager: vvithal
+ms.date: 02/26/2019
+ms.topic: article
+ms.prod: system-center
+ms.technology: operations-manager
+monikerRange: 'sc-om-2019'
+---
 
 # Web Application Properties
 
@@ -31,7 +44,7 @@ Use the **General** tab to specify the general details of the application. The v
 | Web Application Name | The name of the application that appears in the Operations console. |
 | Description | Optional description of the application that appears in the  **Details**  pane in the Operations console. |
 | Retry Count | Number of times to retry connecting to a site if the first attempt fails. |
-| Ignore Server Certificate Errors | When selected, Operational Manager ignores any certificate errors for the monitored servers. [Learn more](#ignore-server-certificate-errors)|
+| Ignore Server Certificate Errors | When selected, Operational Manager ignores any certificate errors for the monitored servers. [Learn more](#ignore-server-certificate-errors).|
 | Management Pack | The management pack in which the  **Web Application Transaction Monitoring**  template is stored. This cannot be changed. |
 | Authentication Method | Specifies the authentication method to use for the website. If no authentication is required, select  **None**. |
 | User Account | The Run As account to use for authenticating on the site. Only existing accounts that match the selected authentication method are listed. For more information about Run As accounts, see [Managing Run As Accounts and Profiles](plan-security-runas-accounts-profiles.md). |

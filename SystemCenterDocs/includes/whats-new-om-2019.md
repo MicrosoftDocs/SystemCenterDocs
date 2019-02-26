@@ -138,7 +138,7 @@ Operations Manager 2019 supports latest Application Servers.[Learn more](../scom
 ## Support for client-side monitoring on multiple browsers
 With Operations Manager 2019, client-sider-monitoring supports the following browsers in addition to Internet Explorer:
 -	Microsoft Edge (version 42 or higher)
--	Google Chrome (version 68 or higher),
+-	Google Chrome (version 68 or higher)
 
 ## Enhanced support for Application Performance Monitoring
 Application Performance Monitoring can now monitor websites that are created with SharePoint 2016.
