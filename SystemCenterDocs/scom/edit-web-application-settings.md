@@ -53,21 +53,3 @@ Follow these steps:
 3. Type the URL of the request in the **Request URL** box.
 
 4. Optionally, set other properties of the request, and then click **OK**.
-
-::: moniker range="sc-om-2019"
-
-## URL monitoring enhancements with certificate errors
-
-URL monitoring, web application availability and transaction monitoring are used to test a URL/website/web-based application, by sending WinHttp requests, validating their response, and measuring their performance.
-
-The Website that is being monitored can be an internal or an external URL. The monitoring is done from a watcher node computer, on which you need to install the Operations Manager agent. You need to configure the web-based URL that you want to test (this configuration goes to MP). The monitoring module establishes and connects to a HTTP/HTTPS session, depending on URL, and then sends a WinHttp request. In releases prior to Operations Manager 2019,  If this send request fails due to a security error, it sets the flags to ignore the server certificate CN, expiry date, untrusted CA, incorrect usage and then retries the send request. This retry ignores the server certificate errors.
-
-With Operations Manager 2019, the URL monitoring capability has been enhanced. This capability, now, does not ignore server certification errors by default, send request will not be retried for the URLs with certification errors.
-
-However, you can ignore the server certificate errors if you wish to, while monitoring a website. To facilitate this option, we have introduced a new option **Ignore Server Certificate Errors** under Web application **Properties**.  To monitor a website for which there is no valid SSL certificate, select this option.    
-
-![server certification errors](./media/url-monitoring/ignore-server-certificate-errors.png)
-
-For existing websites, which are being monitored, you can either select this new options  in the **Properties** wizard or edit in the management pack. To allow this enhancement, MP schema changes are done for URLProbe. [Learn more](url-probe-schema.md).
-
-::: moniker-end
