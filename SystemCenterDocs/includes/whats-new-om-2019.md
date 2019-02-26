@@ -122,8 +122,8 @@ For information about  SQL Server Design Considerations, see [related documentat
 *  System Center 1801 Operations Manager
 *  System Center 1807 Operations Manager
 
-## URL monitoring enhancements with certificate errors
-The existing URL monitoring capability has been enhanced. With this improvement, this capability will not ignore the server certificate errors (like server certificate CN, expiry date, untrusted CA, and wrong usage) by default. If you do not wish to monitor websites, which do not have a valid SSL certificate, select *ignore the server certificate errors* checkbox in your Web application *Properties**.
+## URL monitoring enhancements for server certificate errors
+The existing URL monitoring capability has been enhanced. With this improvement, Operations Manager will not ignore the server certificate errors (like server certificate CN, expiry date, untrusted CA, and wrong usage) by default. If you wish to monitor websites, which do not have a valid SSL certificate, select *Ignore Server Certificate Errors* checkbox in your Web application *Properties*. [Learn more](../scom/web-application-properties.md).
 
 ## Updates and Recommendation feature for Linux
 **Updates and Recommendations** feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed on your Linux computers that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP).[Learn more](../scom/manage-mp-mpassessment.md)
@@ -135,6 +135,13 @@ A new capability, **Machine Details** allow administrators to view the agent com
 ## Support for latest Application Servers
 Operations Manager 2019 supports latest Application Servers.[Learn more](../scom/manage-mp-mpassessment.md).
 
+## Support for client-side monitoring on multiple browsers
+With Operations Manager 2019, client-sider-monitoring supports the following browsers in addition to Internet Explorer:
+-	Microsoft Edge (version 42 or higher)
+-	Google Chrome (version 68 or higher)
+
+## Enhanced support for Application Performance Monitoring
+Application Performance Monitoring can now monitor websites that are created with SharePoint 2016.
 
 > [!NOTE]
 
