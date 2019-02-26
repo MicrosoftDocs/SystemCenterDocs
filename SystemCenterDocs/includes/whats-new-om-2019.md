@@ -123,7 +123,7 @@ For information about  SQL Server Design Considerations, see [related documentat
 *  System Center 1807 Operations Manager
 
 ## URL monitoring enhancements for server certificate errors
-The existing URL monitoring capability has been enhanced. With this improvement, Operations Manager will not ignore the server certificate errors (like server certificate CN, expiry date, untrusted CA, and wrong usage) by default. If you wish to monitor websites, which do not have a valid SSL certificate, select *Ignore Server Certificate Errors* checkbox in your Web application *Properties*. [Learn more](../scom/edit-web-application-settings.md).
+The existing URL monitoring capability has been enhanced. With this improvement, Operations Manager will not ignore the server certificate errors (like server certificate CN, expiry date, untrusted CA, and wrong usage) by default. If you wish to monitor websites, which do not have a valid SSL certificate, select *Ignore Server Certificate Errors* checkbox in your Web application *Properties*. [Learn more](../scom/web-application-properties.md).
 
 ## Updates and Recommendation feature for Linux
 **Updates and Recommendations** feature, which was available for Windows workloads is now extended for Linux workloads. This feature helps you to proactively identify workloads deployed on your Linux computers that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP).[Learn more](../scom/manage-mp-mpassessment.md)
@@ -134,7 +134,6 @@ A new capability, **Machine Details** allow administrators to view the agent com
 
 ## Support for latest Application Servers
 Operations Manager 2019 supports latest Application Servers.[Learn more](../scom/manage-mp-mpassessment.md).
-
 
 > [!NOTE]
 

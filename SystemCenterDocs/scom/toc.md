@@ -184,6 +184,10 @@
 #### [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md)
 #### [Viewing network devices and data](manage-monitor-networkdevice-viewing-data.md)
 #### [Reports for network monitoring](manage-monitor-networkdevice-reports.md)
+### Monitoring Web application transactions
+#### [How to edit settings or requests for a web application](edit-web-application-settings.md)
+#### [Web application properties](web-application-properties.md)
+#### [Web application request properties](web-application-request-properties.md)
 ### Monitor Linux log files
 #### [Overview of Linux log file monitoring](manage-linux-logfiles.md)
 #### [Sample configuration file](manage-sample-configuration-file.md)
