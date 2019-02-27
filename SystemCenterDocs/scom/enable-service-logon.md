@@ -23,10 +23,10 @@ Earlier version of Operations Managers has *Allow log on locally* as the default
 
 -	Health Service uses log on type **Service** by default. In Operations Manager 1807 and prior versions, health service used **Interactive** as log on type.
 -	Operations Manager action accounts and service accounts now have **Log on as a Service** permission.     
--	Run As accounts need to have **Log on as a Service** permission.
--	Monitoring host now uses **Log on as a Service** instead of **Log on locally**.
+-	Action accounts and Run As accounts must have **Log on as a Service** permission to execute MonitoringHost.exe.
+    [Learn more](plan-security-accounts.md)
 
-## Changes to Operations Manager action accounts and service accounts
+## Changes to Operations Manager action accounts
  The following accounts are granted **Log on as a Service** permission during the Operations Manager 2019 installation, and during upgrade from previous versions:
 
  -	Management Server Action account
