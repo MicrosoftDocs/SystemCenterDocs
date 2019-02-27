@@ -84,6 +84,7 @@ The following section describes how to work with the different options for the o
 
     > [!NOTE]
     > The minimum value for **Number of minutes** is 5. The maximum value is 1,051,200 (2 years).
+    > To start the maintenance mode, the maximum wait time is 5 minutes.
 
 ### To edit maintenance mode settings for a monitored object
 
@@ -118,8 +119,11 @@ The following section describes how to work with the different options for the o
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
 
+<<<<<<< HEAD
 ::: moniker range="<sc-om-2019"
 
+=======
+>>>>>>> e620e79af6cbe26e197fcc4aa66aa71e073fa520
 ### Enable from Target System
 
 Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry, which stores arguments for Maintenance Mode, such as duration, reason, comment, and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.
@@ -184,8 +188,11 @@ Perform the following steps to initiate maintenance mode from the target Windows
 4. Import the module MaintenanceMode.dll by typing `Import-module MaintenanceMode.dll`.   
 
 5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request.
+<<<<<<< HEAD
 
 ::: moniker range="<sc-om-2019"
+=======
+>>>>>>> e620e79af6cbe26e197fcc4aa66aa71e073fa520
 
 > [!NOTE]  
 > To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
@@ -241,6 +248,10 @@ The following procedure describes how to create a maintenance schedule for selec
 
      > [!NOTE]
      > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+<<<<<<< HEAD
+=======
+     > To start the maintenance mode, the maximum wait time is 5 minutes.
+>>>>>>> e620e79af6cbe26e197fcc4aa66aa71e073fa520
 
 9. Click **Next** once you have completed configuring the schedule options.
 
@@ -288,8 +299,14 @@ The following procedure describes how to create a maintenance schedule for selec
 
      > [!NOTE]
      > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+<<<<<<< HEAD
 
 6. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
+=======
+     > To start the maintenance mode, the maximum wait time is 5 minutes.
+
+9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
+>>>>>>> e620e79af6cbe26e197fcc4aa66aa71e073fa520
 
     1.  Create a name for the schedule in the **Schedule Name** box.
 
@@ -303,6 +320,7 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.  
 
+<<<<<<< HEAD
 ::: moniker-end  
 
 ::: moniker range="sc-om-2019"
@@ -331,6 +349,9 @@ Example:
     EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
 
  After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of Five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value Five minutes is to avoid causing a large performance decrease on the system.
+=======
+The new schedule will appear in the list of maintenance schedules, and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
+>>>>>>> e620e79af6cbe26e197fcc4aa66aa71e073fa520
 
 ::: moniker-end
 
