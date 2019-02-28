@@ -124,6 +124,12 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
+### DPM 1801/1807 servers cannot be managed by DPM 2019 central console
+
+**Description**: With DPM 2019 central console you cannot manage any DPM 1801 or DPM 1807 servers.
+
+**Workaround**: Upgrade your DPM server to version 2019.
+
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
