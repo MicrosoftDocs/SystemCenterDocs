@@ -56,7 +56,7 @@ This feature allows you to set static MAC address on VMs deployed on a cloud. Yo
 ## Azure Integration
 
 ### VM update management through VMM using Azure Automation Subscription
-VMM 2019 is introducing the possibility of patching and updating on-prem VMs (managed by VMM) by integrating VMM with azure automation subscription. [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
+VMM 2019 is introducing the possibility of patching and updating on-prem VMs (managed by VMM) by integrating VMM with Azure automation subscription. [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
 
 ### New RBAC Role -  Virtual Machine Administrator
 In a scenario where enterprises want to create a user role for troubleshooting,  it is necessary that the user has access to all the VMs so the user can make any required changes on the VMs to resolve the issue. There is also a need for the user to have access to the fabric to identify the root cause for the issue. However, for security reasons, this user should not be given the privileges to make any changes on the fabric (such as add storage, add hosts etc).

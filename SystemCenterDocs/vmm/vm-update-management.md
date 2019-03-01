@@ -37,4 +37,5 @@ Follow these steps:
 >[!NOTE]
 > Azure update management capability also supports service deployments using service templates, the flow is same as the above.  
 
-::: moniker-end
+## Next steps
+[Manage Azure VMs](manage-azure-vms.md)
