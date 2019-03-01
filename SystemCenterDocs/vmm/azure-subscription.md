@@ -97,9 +97,6 @@ You cannot:
 
 You can add Microsoft Azure subscriptions to System Center 2019 - Virtual Machine Manager (VMM), by creating an Azure profile.
 
->[!NOTE]
->*Azure profile* capability is not applicable for earlier releases, see respective documentation for related information.  
-
 With VMM 2019, using Azure profile, you can define the intended usage of the profile. Currently, Azure-VMM integration scenario supports the following:  
 
 -	**Azure VM Management** – perform basic actions on Azure VM instances without leaving the VMM console.
@@ -114,7 +111,7 @@ Here's what you need to add an Azure profile for Azure VM management:
 **Internet connectivity** | The computer on which you install the feature must be able to connect to the Azure subscription.
 **AD Authentication** | To enable management of both Classic and Azure Resource Manager based VMs, the subscription must have Active Directory-based authentication associated with it. <br/><br/> Create an Azure AD application using Azure portal and make a note of the directory ID, application ID and Key. <br/><br/> Assign application to Classic VM contributor and VM contributor roles by using *Subscription – Access Control (IAM) – Add*.
 
-Here's what you need to do to create an Azure profile for Azure Update Management:
+Here's what you need to create an Azure profile for Azure Update Management:
 
 **Requirement**| **Details**
 --- | ---
@@ -135,58 +132,5 @@ Follow these steps:
     > - You can view the list of all Azure profiles from **Library**> **Profiles** > **Azure Profiles**.
     Select an Azure profile from the list to view detailed information of this profile, under **General Information** pane.
 
-## Manage Azure VMs
-
-This feature allows you to perform basic actions on azure instances attached to an azure subscription.
-
->[!NOTE]
-> To perform these actions, you must create an Azure profile. Once an Azure profile is created, the VMs deployed on Azure will be accessible on the **VMs and Services** page of VMM console, and will be listed under **Azure Subscriptions**.
-
-You can perform the following actions on Azure instances, without leaving the VMM console.
-- Add and remove one or more Azure subscriptions by using the VMM console.
--  See a list view with details and status of all role instances in all deployments in that subscription.
-- Manually refresh the list of instances.
-- Perform the following basic actions on the instances:
-    - Start
-    - Stop
-    - Shutdown
-    - Restart
-    - Connect via RDP
-
-### What is not supported
-This feature is not intended to provide feature parity with the Microsoft Azure Management Portal. The functionality of this feature is a minor subset of the features at https://manage.windowsazure.com but you can view your Azure instances and do other basic actions, to simplify everyday tasks and management.
-
-With this feature, You cannot:
-- Manage your Azure subscription
-- Deploy instances to Azure
-- Migrate on-premises virtual machines to Azure
-- Manage Azure Storage
-- Manage Azure Networks
-- See the Dashboard Summary view
-- See the Performance Monitoring Summary
-
-## Azure update management
-
-Using Azure update Management feature, you can manage updates for VMs and Workloads running in the VMM.
-
-Currently, VMM supports update management feature for all new VMs with Windows Server operating system, and are deployed using a VM template with *Azure Update Management Extension* enabled.
-
-### Create a VM template linked to Azure profile
-
-Follow these steps:
-
-1.	Create a profile for Azure Update management using steps [mentioned above](#create-azure-profile).    
-2.	In the *Create VM Template* wizard, select **Source Page** > select  **Use an existing VM template or a virtual hard disk stored in the library**.
-3.	On the **Extension** page, select **Enable Azure Update Management** and select the Azure Profile from the drop-down menu.  Click **OK**.
-
-    ![extension page](./media/azure-profile/extensions-page.png)
-
-4.	Deploy the VMs from the VM template.
-5.	VMM does the onboarding for the VMs deployed through VM template to the *Azure Update Management* service and provides the link to the Azure console for managing the updates.
-    ![virtual machines information](./media/azure-profile/virtual-machines-information.png)
-6.	Click the **Update Status** link under **Azure Update Management info** to assess and deploy the updates for the VM.
-
->[!NOTE]
-> Azure update management capability also supports service deployments using service templates, the flow is same as the above.  
 
 ::: moniker-end
