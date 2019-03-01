@@ -21,8 +21,10 @@ Read this article to learn about enabling dynamic optimization (DO) and power op
 
 
 - **Dynamic optimization**:  Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify, to improve load balancing among hosts and cluster shared storage (Cluster shared volumes (CSV), file shares), and to correct the placement issues for VMs.
- 	 - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. Host performance thresholds you can set  are: CPU and Memory.
-  	  - **Storage Dynamic Optimization** (Optimization of disk space, applicable for VMM 2019 and later) can be performed on cluster shared storage (CSV, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHD) across shared storage. You can set free storage space threshold on cluster shared storage.  
+
+     - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. Host performance thresholds you can set  are: CPU and Memory.
+
+     - **Storage Dynamic Optimization** (Optimization of disk space, applicable for VMM 2019 and later) can be performed on cluster shared storage (CSV, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHD) across shared storage. You can set free storage space threshold on cluster shared storage.  
 
 - **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't needed to meet resource requirements within a cluster, and turns them back on when they're needed.
 
@@ -71,7 +73,6 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 2. Click **Fabric** > **Servers** > **All Hosts** > host > **Properties** > **Hardware** > **Advanced** > **BMC Setting**.
 3. To enable VMM management, select **This physical machine is configured for OOB management**.
 4. In **This computer supports the specified OOB power management configuration provider**, click the supported management protocol. Type in the IP address of the BMC, and accept the default port offered by VMM. Select the Run As account and click **OK**.
-
 
 
 ## Enable dynamic and power optimization for a host group
@@ -131,10 +132,10 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 
 ::: moniker range="sc-vmm-2019"
 
-    >[NOTE]
-    > If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
-        o	Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
-        o	Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
+>[NOTE]
+> If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
+    o	Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
+    o	Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
 
 ::: moniker-end
 
