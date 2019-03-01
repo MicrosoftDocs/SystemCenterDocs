@@ -3,6 +3,7 @@
 ## [How does DPM work?](how-dpm-protects-data.md)
 ## [What can DPM back up?](dpm-protection-matrix.md)
 # Get Started
+## [Data Protection Manager build versions](release-build-versions.md)
 ## [DPM release notes](dpm-release-notes.md)
 ## [What's new in DPM](what-s-new-in-dpm.md)
 ## [What DPM supports](dpm-support-issues.md)
