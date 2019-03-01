@@ -17,12 +17,12 @@ See the following sections for detailed information about the new features/featu
 ## Compute
 
 ###	Cluster Rolling upgrade for S2D clusters
-System Center 2019 - Virtual Mahchine Manager (VMM) supports rolling upgrade of a Hyper-V host cluster to Windows Server 2019.
+System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019.Learn More.
 
 ## Storage
 
 ### Storage DO
-This feature helps in preventing Cluster Shared Volumes (CSV) from becoming full due to expansion/new VHDs placed on the CSV. You can now set a threshold value to trigger a warning when free storage space in the CSV falls below the threshold during a new disk placement or auto migration of VHDs to other CSVs in the cluster. [Learn more](../vmm/vm-optimization.md).
+This feature helps in preventing cluster shared storage (CSV and file shares) from becoming full due to expansion/new VHDs placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold, during a new disk placement or auto migration of VHDs to other shared storage in the cluster. [Learn more](../vmm/manage-storage.md).
 
 ### Support for storage health monitoring
 Storage health monitoring helps you to monitor the health and operational status of storage pool, LUNs, and physical disks in the VMM fabric.
@@ -51,14 +51,14 @@ In VMM 2019, you can configure Layer 3 forwarding gateway using the VMM console.
 
 ### Support for Static MAC address on VMs deployed on a VMM cloud
 
-This feature allows you to set static MAC address on VMs deployed on a cloud. You can also change the MAC address from static to dynamic and vice versa. [Learn more](../vmm/provision-vms.md).
+This feature allows you to set static MAC address on VMs deployed on a cloud. You can also change the MAC address from static to dynamic and vice versa for the already deployed VMs. [Learn more](../vmm/provision-vms.md).
 
 ## Azure Integration
 
 ### VM update management through VMM using Azure Automation Subscription
 VMM 2019 is introducing the possibility of patching and updating on-prem VMs (managed by VMM) by integrating VMM with azure automation subscription. [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
 
-### Support for new RBAC Role
+### New RBAC Role -  Virtual Machine Administrator
 In a scenario where enterprises want to create a user role for troubleshooting,  it is necessary that the user has access to all the VMs so the user can make any required changes on the VMs to resolve the issue. There is also a need for the user to have access to the fabric to identify the root cause for the issue. However, for security reasons, this user should not be given the privileges to make any changes on the fabric (such as add storage, add hosts etc).
 
 The current role-based access control (RBAC) in VMM does not have a role defined for this persona and the existing roles of Delegated Admin and Fabric admin have too little or more than necessary permissions to perform just troubleshooting.
@@ -73,7 +73,7 @@ VMM 2019 supports the use of gMSA for **Management server service account**. [Le
 
 > [!NOTE]
 
-> The following features/feature updates were introduced in VMM 1807.
+> The following features/feature updates were introduced in VMM 1807 and are part of VMM 2019.
 
 ## Storage
 
@@ -109,7 +109,7 @@ VMM 1807 supports SQL 2017. You can upgrade SQL 2016 to 2017.
 
 > [!NOTE]
 
-> The following features/feature updates were introduced in VMM 1801.
+> The following features/feature updates were introduced in VMM 1801 and are part of VMM 2019.
 
 ## Compute
 

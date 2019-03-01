@@ -21,8 +21,8 @@ Read this article to learn about enabling dynamic optimization (DO) and power op
 
 
 - **Dynamic optimization**:  Using dynamic optimization, VMM performs live migration of VMs and VHDs within a host cluster. The migration is based on the settings you specify, to improve load balancing among hosts and cluster shared storage (Cluster shared volumes (CSV), file shares), and to correct the placement issues for VMs.
- 	 - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. Host performance thresholds you can set  are: CPU, Memory, Disk I/O and Network I/O.
-  	  - **Storage Dynamic Optimization** (Optimization of disk space, applicable for VMM 2019 and later) can be performed on cluster shared storage (CSV, file shares) in a cluster to optimize storage space availability by migrating Virtual Hard Disks (VHD) across shared storage. You can set free storage space threshold on shared storage.  
+ 	 - **Compute Dynamic optimization** (Optimization of hosts) can be performed on hosts in a cluster to optimize host performance by migrating VMs across hosts. Host performance thresholds you can set  are: CPU and Memory.
+  	  - **Storage Dynamic Optimization** (Optimization of disk space, applicable for VMM 2019 and later) can be performed on cluster shared storage (CSV, file shares) to optimize storage space availability by migrating Virtual Hard Disks (VHD) across shared storage. You can set free storage space threshold on cluster shared storage.  
 
 - **Power optimization**: Power optimization is a feature of dynamic optimization that saves energy by turning off hosts that aren't needed to meet resource requirements within a cluster, and turns them back on when they're needed.
 
@@ -34,11 +34,18 @@ Note the following information before you start using the DO.
 ### Dynamic optimization
 
 - Dynamic optimization and power optimization can be configured on host clusters that support live migration.
-- Dynamic optimization can be configured on a host group, to migrate virtual machines and virtual hard disks (VHDs) within host clusters with a specified frequency and aggressiveness. Aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
-- By default, virtual machines are migrated every 10 minutes with medium aggressiveness, if automatic migration is enabled. When configuring frequency and aggressiveness  for dynamic optimization, an administrator should factor in the resource cost of additional migrations against the advantages of balancing load among hosts/CSVs/shared storage in a host cluster. By default, a host group inherits Dynamic Optimization settings from its parent host group.
+- Dynamic optimization can be configured on a host group, to migrate virtual machines and virtual hard disks (VHDs)    within host clusters with a specified frequency and aggressiveness. VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
+
+::: moniker range="sc-vmm-2019"
+
+- Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
+
+::: moniker-end
+
+- By default, virtual machines are migrated every 10 minutes with medium aggressiveness, if automatic migration is enabled. When configuring frequency and aggressiveness  for dynamic optimization, an administrator should factor in the resource cost of additional migrations against the advantages of balancing load among hosts/shared storage in a host cluster. By default, a host group inherits Dynamic Optimization settings from its parent host group.
 - If you set up dynamic optimization on a host group without a cluster it will have no effect.
 - Dynamic optimization can be set up for clusters with two or more nodes. Storage dynamic optimization will need two or more shared storage files/volumes to be present in the cluster. If a host group contains stand-alone hosts or host clusters that do not support live migration, dynamic optimization isn't performed on those hosts. Any hosts that are in maintenance mode also are excluded from dynamic optimization. In addition, VMM only migrates highly available virtual machines that use shared storage. If a host cluster contains virtual machines that are not highly available, those virtual machines are not migrated during Dynamic Optimization.
-- On-demand dynamic optimization is also available for individual host clusters by using the Optimize Hosts/ Optimize Disk space  action in the VMs and Services workspace. It can be performed without configuring dynamic optimization on host groups. After dynamic optimization is requested for a host cluster, VMM lists the virtual machines that will be migrated, for the administrator's approval. Optimize Hosts performs VM load balancing across hosts in a cluster, while Optimize disk space migrates VHDs across CSVs/Shared storage in a cluster.
+- On-demand dynamic optimization is also available for individual host clusters by using the Optimize Hosts/ Optimize Disk space  action in the VMs and Services workspace. It can be performed without configuring dynamic optimization on host groups. After dynamic optimization is requested for a host cluster, VMM lists the virtual machines/VHDs that will be migrated, for the administrator's approval. Optimize Hosts performs VM load balancing across hosts in a cluster, while Optimize disk space migrates VHDs across Shared storage in a cluster.
 
 #### Node fairness
 
@@ -75,24 +82,30 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 4.  In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** check box.
 5.  In **Aggressiveness**, select **High**, **Medium**, or **Low**.
 
-    Aggressiveness determines the amount of imbalance in virtual machine load on the hosts that is required in order to initiate a migration during Dynamic Optimization. When you configure frequency and aggressiveness for dynamic optimization, you should try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
+    AVM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
-    To help conserve energy by having VMM turn off hosts when they are not needed and turn them on again when they are needed, configure power optimization for the host group. Power optimization is only available when virtual machines are being migrated automatically to balance load.
+    ::: moniker range="sc-vmm-2019"
 
-	Disk space aggressiveness determines the amount of storage that is available by migrating VHDs between shared storage. Higher aggressiveness migrates VHDs even for small storage free space gain. Lower aggressiveness does not migrate storage, unless the gain in free storage space is high.  
+    Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
 
-6.  To periodically run dynamic optimization on qualifying host clusters in the host group, enter the following settings:
+    ::: moniker-end
+
+    When you configure frequency and aggressiveness for dynamic optimization, you should try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
+
+6. To help conserve energy by having VMM turn off hosts when they are not needed and turn them on again when they are needed, configure power optimization for the host group. Power optimization is only available when virtual machines are being migrated automatically to balance load.
+
+7.  To periodically run dynamic optimization on qualifying host clusters in the host group, enter the following settings:
 
     1.  Select the **Automatically migrate virtual machines to balance load** check box to balance free storage space across shared storage.
     2. In **Frequency**, specify how often to run dynamic Optimization. You can enter any value between 10 minutes and 1440 minutes \(24 hours\).
 
-7. Set thresholds for each of the compute and storage ( applicable for VMM 2019) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop- down menu.
+8. Set thresholds for each of the compute and storage ( applicable for VMM 2019) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop-down menu.
 
-8.  To turn on power optimization on the host group, select the **Enable power optimization** check box.  Click **OK** again to save your changes.
+9.  To turn on power optimization on the host group, select the **Enable power optimization** checkbox.  Click **OK** again to save your changes.
 
 >[!NOTE]
 
-> If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations to and from that file share and may impact storage DO performance. We recommended you not to do a  file share across different clusters where storage dynamic optimization is enabled.
+> If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations to and from that file share and may impact storage DO performance. We recommended you not to do a  file share across different host groups where storage dynamic optimization is enabled.
 
 ## Configure power optimization settings
 
@@ -114,13 +127,16 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 
     **To Optimize Disk Space**: VMM performs a dynamic optimization review to determine whether VHDs can be migrated to meet the free storage space threshold (disk space) while considering aggressiveness set in the Dynamic Optimization page. Dynamic Optimization will only be triggered when any cluster shared storage violates the disk space threshold set. If migration of  VHDs can help free the storage space threshold in shared storage in the cluster, VMM displays a list of VHDs that are recommended for migration, with the current and target storage space indicated. VHDs will only migrate to another shared storage with the same storage classification.
 
-    >[!NOTE]
-    > If VHDs are migrated between one storage type to another ( Example from a CSV to NAS file share), the storage migration will be slow.
-    > If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
-    - Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
-    - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
-
 3. Click **Migrate**.
+
+::: moniker range="sc-vmm-2019"
+
+    >[NOTE]
+    > If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
+        o	Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
+        o	Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
+
+::: moniker-end
 
 ## Power on/off a computer in VMM
 

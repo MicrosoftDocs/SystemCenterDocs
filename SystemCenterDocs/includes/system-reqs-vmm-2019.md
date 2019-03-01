@@ -64,7 +64,8 @@ Windows Server 2019 (Server Core)| Y | Y | If supported by SQL Server version
 --- | ---
 Windows 10 Enterprise | Y
 Window Server 2016 Standard, Datacenter | Y
-Window Server 2019 Standard, Datacenter, Server Core | Y (with FOD)
+Windows Server 2019 (with desktop experience) | Y
+Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 
 
 ## SQL Server
