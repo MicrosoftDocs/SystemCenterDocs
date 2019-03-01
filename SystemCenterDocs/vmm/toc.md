@@ -142,5 +142,5 @@
 ## Integrate with Azure
 ### [Add an Azure subscription in VMM](azure-subscription.md)
 #### [VM update management](vm-update-management.md)
-#### [Manage Azure VMs](manage-azure-vms)
+#### [Manage Azure VMs](manage-azure-vms.md)
 ### [Manage Azure Resource Manager-based and region-specific Azure subscriptions](vms-manage-azure-ad-and-region-specific.md)

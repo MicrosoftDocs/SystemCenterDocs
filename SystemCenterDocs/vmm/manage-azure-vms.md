@@ -40,5 +40,3 @@ With this feature, You cannot:
 - Manage Azure Networks
 - See the Dashboard Summary view
 - See the Performance Monitoring Summary
-
-::: moniker-end

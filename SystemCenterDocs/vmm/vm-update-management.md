@@ -9,6 +9,7 @@ ms.date: 03/01/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+MonikerRange: '>=sc-vmm-2019'
 ---
 
 # Azure update management
@@ -22,7 +23,7 @@ Currently, VMM supports update management feature for all new VMs with Windows S
 
 Follow these steps:
 
-1.	Create a profile for Azure Update management using steps detailed in [Azure subscriptions article](azure-subsrciption.md)    
+1.	Create a profile for Azure Update management using steps detailed in [Azure subscriptions article](azure-subscription.md)    
 2.	In the **Create VM Template** wizard, select **Source Page** > select  **Use an existing VM template or a virtual hard disk stored in the library**.
 3.	On the **Extension** page, select **Enable Azure Update Management** and select the Azure Profile from the drop-down menu.  Click **OK**.
 
