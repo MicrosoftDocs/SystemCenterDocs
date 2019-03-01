@@ -9,7 +9,7 @@ ms.date: 03/01/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-MonikerRange: '>sc-vmm-1807'
+MonikerRange: 'sc-vmm-2019'
 ---
 
 # Azure update management
