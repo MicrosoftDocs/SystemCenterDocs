@@ -55,7 +55,7 @@ This error occurs in a distributed management group scenario where the reporting
 
 **Workaround**: Install the System Center 2016/1801/1807 - Operations Manager Operations console on the server that is hosting the reporting server role, and then retry upgrading the reporting server role to version 2019. Once the upgrade is successful, you can uninstall the upgraded Operations console from the reporting server.
 
-## Internet Explorer compatibility View
+## Internet Explorer compatibility view
 
 **Description**: The HTML5 Web console does not support Internet Explorer compatibility View.  
 
