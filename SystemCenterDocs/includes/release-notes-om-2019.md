@@ -20,7 +20,7 @@ The following sections summarize the release notes for Operations Manager 2019 a
 **Description:**
 With Operations Manager 2019, *Log on as a Service* feature is enabled by default. This change impacts all the service accounts and Run As accounts. With this change, all these accounts must have *Log on as a Service* permission.  
 
-**Workaround:** Enable log on as a service. [Learn more](../scom/enable-log-on-as-service.md)
+**Workaround:** Enable log on as a service. [Learn more](../scom/enable-service-logon.md)
 
 ## Service Manager monitoring
 
@@ -33,7 +33,7 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 **Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode, applicable to both Windows and Linux\Unix monitoring:
 
-- As an entity enters maintenance mode, monitor-based active alerts on it will be auto-resolved.  In earlier releases, these alerts get auto-resolved when the entity exits the  maintenance mode.
+- As an entity enters maintenance mode, monitor-based active alerts on it will be autoresolved.  In earlier releases, these alerts get autoresolved when the entity exits the  maintenance mode.
 
 - On-demand monitors and regular monitors now behave similarly when target entity enters and exits the maintenance mode.
 
