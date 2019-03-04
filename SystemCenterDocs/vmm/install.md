@@ -122,7 +122,7 @@ Parameter | Details
 
 1.  Make sure the VMM console and VMM command shell are closed.
 2. On the computer on which the VMM management server is installed, click **Start**, and then click **Control Panel**.
-3.  Under **Programs**, click **Uninstall a program**. Under **Name**, double-click **Microsoft System Center 2016 Virtual Machine Manager**.
+3.  Under **Programs**, click **Uninstall a program**. Under **Name**, double-click **Microsoft System Center Virtual Machine Manager**.
 4.  On the **What would you like to do?** page, click **Remove features**.
 5.  On the **Select features to remove** page, select the **VMM management server** check box, and then click **Next**. If you want to uninstall the VMM console, select the **VMM console** check box. Note that if you have a highly available VMM deploy, you must remove both the VMM server and VMM console.
 6.  On the **Database options** page, select whether you want to retain or remove the VMM database, and, if necessary, credentials for the database, and then click **Next**.
