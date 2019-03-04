@@ -22,13 +22,6 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 **Workaround:** Enable log on as a service. [Learn more](../scom/enable-service-logon.md)
 
-## Service Manager monitoring
-
-**Description**: With Operations Manager 2019, *Log on as a Service* is enabled by default. Due to this change, Service Manager (SM) monitoring will not work unless the SM management server action account has administrator rights on the Operations Manager management server.
-
- **Workaround:** Provide the administrator rights to SM action account.
-
-
 ## User experience changes in maintenance mode
 
 **Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode, applicable to both Windows and Linux\Unix monitoring:
