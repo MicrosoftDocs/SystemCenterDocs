@@ -16,15 +16,17 @@ keywords:
 
 The following sections provide information about how to upgrade to System Center 2019 - Orchestrator.
 
-You can upgrade your installation of System Center 2016/1801/1807 Orchestrator to System Center 2019 Orchestrator by following the steps described below. Before doing so, make sure your environment is upgraded to the supported versions as described in [System Requirements for System Center 2019](../orchestrator/system-requirements-orch.md).
+You can upgrade your installation of System Center 2016 Update Rollup (UR) 6, 1801 or 1807 Orchestrator to System Center 2019 Orchestrator by following the steps described below.
+
+Before you attempt the upgrade, ensure that your environment is upgraded to the supported versions as described in [System Requirements for System Center 2019](../orchestrator/system-requirements-orch.md).
 
 ## Upgrade steps
 
 **Prepare to upgrade:**
 
-1. For 2012 R2, ensure you have UR14 installed and for 2016, UR4 installed.  
+1. If you are using DPM 2016, ensure you have UR6 installed.  
 2. Ensure that there are no pending restarts on the computer.
-3. Perform a full back up  of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
+3. Perform a full back up of Orchestrator database. For information about backing up the Orchestrator database, see [Migrate Orchestrator between environments](../orchestrator/migrate-orchestrator-between-environments.md).
 4. Upgrade the hardware, operating system, and other software if necessary to meet the requirements of Orchestrator in System Center 2019.
 
 **Perform the upgrade:**

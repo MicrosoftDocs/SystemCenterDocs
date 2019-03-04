@@ -253,8 +253,7 @@ Follow these steps:
 4. Select **Create storage tiers on this virtual disk** to create a tiered storage.   
 
     > [!NOTE]
-    > Tiered Storage is possible only when the storage pool contains a mixture of SSD and HDD).
-tier-create-2019
+    > Tiered Storage is possible only when the storage pool contains a mixture of SSD and HDD.
 
     ![Create tier storage](./media/add-storage/tier-create-2019.png)
 5. Click **Next** and select **Enable enclosure awareness (if required)**.
@@ -281,16 +280,12 @@ Follow these steps:
 
 3. In the **New Volume Wizard**, click **Next**, assign drive letter, and specify the size.
 
-    ![Drive Letter](./media/add-storage/drive-letter-2019.png)
-
     ![Assign Drive Letter](./media/add-storage/drive-letter-2019.png)
 
 4. Click **Finish** to create a new volume.
 5. Format the volume that you created, from **Disk Management** console to ReFS.
 
 ### Disable Auto-Caching at file system level
->[!NOTE]
-> Applicable only for tiered volumes.  
 
 1.	Go to PowerShell.
 2.	Use the following command:
@@ -308,6 +303,9 @@ Follow these steps:
  Example:   fsutil behavior set disableWriteAutoTiering C: 1
 
     ![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
+
+    >[!NOTE]
+    > You can skip this step if more than 10% of SSD is available. This can be disabled later if there is a performance degradation in terms of backup speeds.
 
 Now, add the newly created volumes to DPM storage using the procedure detailed below.
 
