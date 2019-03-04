@@ -12,9 +12,9 @@ ms.date: 05/23/2017
 ms.assetid: e5b25d0f-9316-42d2-aeb9-4ba0b0afc6cf
 ---
 
-## OM 2016 release notes
+## Operations Manager 2016 release notes
 
-The following sections summarize the release notes for OM 2016 and includes the known issues and workarounds.
+The following sections summarize the release notes for Operations Manager 2016 and includes the known issues and workarounds.
 
 ## SharePoint integration with Operations Manager has to be recreated
 **Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated with the  steps below.

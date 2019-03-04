@@ -12,9 +12,18 @@ ms.technology: operations-manager
 ---
 
 # Release notes for System Center Operations Manager
+
+::: moniker range="sc-om-2019"
+
+This article lists the release notes for System Center 2019 - Operations Manager.
+
+[!INCLUDE [release-notes-om-2019.md](../includes/release-notes-om-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-1807"
 
-This article lists the release notes for System Center 1807 - Operations Manager (OM).
+This article lists the release notes for System Center 1807 - Operations Manager.
 
 [!INCLUDE [release-notes-om-1807.md](../includes/release-notes-om-1807.md)]
 
@@ -22,7 +31,7 @@ This article lists the release notes for System Center 1807 - Operations Manager
 
 ::: moniker range="sc-om-2016"
 
-This article lists the release notes for System Center 2016 - Operations Manager (OM).
+This article lists the release notes for System Center 2016 - Operations Manager.
 
 [!INCLUDE [release-notes-om-2016.md](../includes/release-notes-om-2016.md)]
 
@@ -30,7 +39,7 @@ This article lists the release notes for System Center 2016 - Operations Manager
 
 ::: moniker range="sc-om-1801"
 
-This article lists the release notes for System Center 1801 - Operations Manager (OM).
+This article lists the release notes for System Center 1801 - Operations Manager.
 
 [!INCLUDE [release-notes-om-1801.md](../includes/release-notes-om-1801.md)]
 
