@@ -61,3 +61,6 @@ The following table lists the build versions for Data Protection Manager 1807.
 | 5.1.378.0 | [KB4339950](https://support.microsoft.com/help/4339950) | System Center 2016 1807 |
 
 ::: moniker-end
+
+## Next steps
+[What's New in DPM](what-s-new-in-dpm.md)
