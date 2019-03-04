@@ -26,7 +26,7 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 **Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode, applicable to both Windows and Linux\Unix monitoring:
 
-- As an entity enters maintenance mode, monitor-based active alerts on it will be autoresolved.  In earlier releases, these alerts get autoresolved when the entity exits the  maintenance mode.
+- As an entity enters maintenance mode, monitor-based active alerts on it will be automatically resolved.  In earlier releases, these alerts get automatically resolved when the entity exits the  maintenance mode.
 
 - On-demand monitors and regular monitors now behave similarly when target entity enters and exits the maintenance mode.
 
