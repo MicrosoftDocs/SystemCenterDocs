@@ -268,7 +268,7 @@ The following workloads are supported for the respective operating systems.
 ## Support for Linux and Unix platforms
 - Solaris10Sparc, Solaris11Sparc
 - centos6 x64, centos7 x64
-- oracle6 x64 oracle7 x64
+- oracle6 x64, oracle7 x64
 - Sles11x64, Sles12 x64
 - Rhel7PPC, Rhel5 x64, Rhel6 x64 Rhel7 x64
 - Debian8 x64, Debian9 x64
