@@ -58,9 +58,9 @@ This issue of alerts/tickets being created during failover or load balancing of 
 ## Linux agent installation changes
 With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called **omi** will be created on the agent computer. If you want to use the Log Monitoring feature, you must install Linux Log Monitoring management pack, provided in Operations Manager 2019.
 
-This change is introduced to ensure *omsagent* user is created only when you use Log File Monitoring feature. [Learn more](../scom/manage-install-crossplat-agent-cmdline.md).
+This change is introduced to ensure *omsagent* user is created only when you use the Log File Monitoring feature. [Learn more](../scom/manage-install-crossplat-agent-cmdline.md).
 
-To use the Log Monitoring feature, you must install Linux Log Monitoring management pack, provided in Operations Manager 2019. [Learn More](../scom/manage-linux-logfiles.md)
+To use the Log Monitoring feature, you must install the Linux Log Monitoring management pack, provided in Operations Manager 2019. [Learn More](../scom/manage-linux-logfiles.md).
 
 ## Improvement in agent initiated maintenance mode
 Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, the maintenance mode is triggered based on event,  as opposed to registry-based,  in earlier releases. With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
@@ -85,7 +85,7 @@ The following versions of Windows operating system are supported for the Microso
 
  > [!NOTE]
 
- > Operations Manager 2019 supports only X64 agent.
+ > Operations Manager 2019 supports only x64 agent.
 
 - **File system**: %SYSTEMDRIVE% must be formatted with the NTFS file system
 - **Windows PowerShell version**: Windows PowerShell version 2.0, or Windows PowerShell version 3.0
@@ -178,7 +178,7 @@ You can now use a Linux agent with FluentD support for log file monitoring at pa
 
 - Wild-card characters in log file name and path.
 - New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated  correlation, and exclusive correlation.
-- Support for generic Fluentd plugins published by the fluentd community. [Learn more](../scom/manage-linux-logfiles.md)
+- Support for generic Fluentd plugins published by the fluentd community. [Learn more](../scom/manage-linux-logfiles.md).
 
 ## System Center Visual Studio Authoring Extension (VSAE) support for Visual Studio 2017
 Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. management pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.
