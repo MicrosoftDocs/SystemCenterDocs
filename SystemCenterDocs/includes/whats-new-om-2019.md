@@ -147,7 +147,7 @@ Application Performance Monitoring can now monitor websites that are created wit
 
 > [!NOTE]
 
-> The following features/feature updates were introduced in Operations Manager 1807.
+> The following features/feature updates were introduced in Operations Manager 1807, included in 2019.
 
 ## Configure APM component during agent install or repair
 In earlier versions of Operations Manager agent (prior to 1807) the Application Performance Monitoring (APM) feature could cause a crash with IIS Application pools and could crash the SharePoint Central Administration v4 application pool running .NET Framework 2.0, preventing it from starting.
@@ -168,7 +168,7 @@ The UNIX and Linux agents have been enhanced to detect pseudo file system dynami
 
 > [!NOTE]
 
-> The following features/feature updates were introduced in Operations Manager 1801.
+> The following features/feature updates were introduced in Operations Manager 1801, included in 2019..
 
 ## Enter product key from the Operations console
 In previous versions of Operations Manager, you had to upgrade from the evaluation version to a licensed version using the PowerShell cmdlet **Set-SCOMLicense** after initial deployment of a new management group.  Registering the product key can now be performed during or after setup in the Operations console. The PowerShell cmdlet **Set-SCOMLicense** has been updated to support registering the license key remotely from a management server.
