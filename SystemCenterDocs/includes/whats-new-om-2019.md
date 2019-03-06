@@ -60,6 +60,8 @@ With Operations Manager 2019, there are changes in the Linux agent package bundl
 
 This change is introduced to ensure *omsagent* user is created only when you use Log File Monitoring feature. [Learn more](../scom/manage-install-crossplat-agent-cmdline.md).
 
+To use the Log Monitoring feature, you must install Linux Log Monitoring management pack, provided in Operations Manager 2019. [Learn More](../scom/manage-linux-logfiles.md)
+
 ## Improvement in agent initiated maintenance mode
 Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, the maintenance mode is triggered based on event,  as opposed to registry-based,  in earlier releases. With registry-based approach, there was a probability that management server might not be able to read the agent registry before agent turns-off. In such cases, false alerts are generated.
 
