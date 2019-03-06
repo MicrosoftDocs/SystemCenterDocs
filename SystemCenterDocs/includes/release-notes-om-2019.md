@@ -34,7 +34,10 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 ## Support for x64 components
 
-**Description**:  Operations Manager supports only x64 components, x86 components are not supported.
+**Description**:  Operations Manager 2019 supports only x64 components, x86 components are not supported.
+If you try to push install the agent from the console to a x86 computer, the following error message appears:
+
+*The system cannot find the path specified*.
 
 **Workaround**:  None  
 
@@ -42,9 +45,9 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 **Description**: While attempting to perform an upgrade of System Center 2016/1801/1807 - Operations Manager reporting server to version 2019, the prerequisites check reports the following error: 
 
-*Management Server Upgraded Check - The management server to which this component reports has not been upgraded. and the upgrade cannot proceed*.
+*Management Server Upgraded Check - The management server to which this component reports, has not been upgraded. and the upgrade cannot proceed*.
 
-This error occurs in a distributed management group scenario where the reporting server is on a server, which is different from one or more management servers in the management group.
+This error occurs in a distributed management group scenario, where the reporting server is on a server, which is different from one or more management servers in the management group.
 
 **Workaround**: Install the System Center 2016/1801/1807 - Operations Manager Operations console on the server that is hosting the reporting server role, and then retry upgrading the reporting server role to version 2019. Once the upgrade is successful, you can uninstall the upgraded Operations console from the reporting server.
 

@@ -106,53 +106,23 @@ The following procedure describes how to use the Get All MPs option to download 
 
 The following list includes the workloads that are supported by this feature.
 
-- BizTalk 2006
-- BizTalk 2009
-- BizTalk 2010
-- Biztalk Server 2013
-- Biztalk Server 2013R2
+- BizTalk 2006, 2009, 2010, server 2013 and 2013 R2
 - Branch Cache 2016
-- CRM 2011
-- CRM 2013
-- CRM 2015
+- CRM 2011, 2013 and 2015
 - Defender Technical Preview
-- Distributed Transaction Coordinator 2012 R2
-- Distributed Transaction Coordinator 2016
-- Dynamics AX 2009
-- Dynamics AX 2012
-- Dynamics AX Retail 2012 R3
+- Distributed Transaction Coordinator 2012 R2 and 2016
+- Dynamics AX 2009, 2012 and Retail 2012 R3
 - Essentials Technical Preview
 - Exchange Server 2013
-- Host Integration Server 2010
-- Host Integration Server 2013
-- NAV 2013
-- NAV 2013 R2
+- Host Integration Server 2010 and 2013
+- NAV 2013 and 2013 R2
 - Office SharePoint Foundation 2010
-- SharePoint 2010 Products
-- Sharepoint Foundation Server 2013
-- Sharepoint Server 2013
+- SharePoint 2010 Products, Foundation Server 2013 and Server 2013
 - SMA 2012 R2
 - SPF 2012 R2
-- SQL Server 2005
-- SQL Server 2008
-- SQL Server 2012
-- SQL Server 2012 Analysis Services
-- SQL Server 2012 Replication
-- SQL Server 2012 Reporting Services (Native Mode)
-- SQL Server 2014
-- SQL Server 2014 Analysis Services
-- SQL Server 2014 Replication
-- SQL Server 2014 Reporting Services (Native Mode)
-- SQL Server 2016
-- SQL Server 2016 Analysis Services
-- SQL Server 2016 Replication
-- SQL Server 2016 Reporting Services (Native Mode)
-- System Center 2012 App Controller
-- System Center 2012 Configuration Manager
-- System Center 2012 Orchestrator
-- Windows Server Backup
-- Windows Service Manager 2012
-- Windows TFS 2013
+- SQL Server 2005, 2008, 2012, 2012 Analysis Services, 2012 Replication, 2012 Reporting Services (Native Mode), 2014, 2014 Analysis Services, 2014 Replication, 2014 Reporting Services (Native Mode), 2016, 2016 Analysis Services, 2016 Replication and 2016 Reporting Services (Native Mode)
+- System Center 2012 App Controller, Configuration Manager and Orchestrator
+- Windows Server Backup, Service Manager 2012 and TFS 2013
 
 ::: moniker range="sc-om-2019"
 
@@ -267,17 +237,17 @@ The following workloads are supported for the respective operating systems.
 
 ## Support for Linux and Unix platforms
 - Solaris10Sparc, Solaris11Sparc
-- centos6 x64, centos7 x64
-- oracle6 x64, oracle7 x64
-- Sles11x64, Sles12 x64
-- Rhel7PPC, Rhel5 x64, Rhel6 x64 Rhel7 x64
+- CentOS6 x64, CentOS7 x64
+- Oracle6 x64, Oracle7 x64
+- Sles11 x64, Sles12 x64
+- Rhel7PPC, Rhel5 x64, Rhel6 x64, Rhel7 x64
 - Debian8 x64, Debian9 x64
 - Ubuntu14 x64, Ubuntu16 x64, Ubuntu 18 x64
 - Aix 7.x
 - SUSE 12 PPC, SUSE 15
 
 ## Support for latest application servers
-- Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9,
+- Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9
 - Red Hat JBoss 4, Red Hat JBoss 5, Red Hat JBoss 6, Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8/9/10/11/12/13/14  
 - IBM WebSphere 7.0, IBM WebSphere 8.0, IBM WebSphere 8.5, IBM WebSphere 9.0
 - Oracle WebLogic 10gR3, Oracle WebLogic 11, Oracle WebLogic 12cR1JBoss, Oracle WebLogic 12cR2JBoss

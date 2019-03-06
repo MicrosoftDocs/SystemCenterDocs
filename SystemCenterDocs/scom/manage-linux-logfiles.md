@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Log file monitoring in System Center Operations Manager
 description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager 1801.
 author: JYOTHIRMAISURI
@@ -8,7 +8,7 @@ manager: carmonm
 ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-1801'
+monikerRange: '>sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -38,16 +38,30 @@ The following steps are required to enable log file monitoring on Linux agents. 
 3. Copy configuration file to Linux agents.
 3. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
 
+::: moniker range="<sc-om-2019"
 
 ## Install the latest version of the Linux agent
-The latest version of the Linux agent supports Fluentd which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md).
+The latest version of the Linux agent supports Fluentd, which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md).
+
+::: moniker-end
+
+::: moniker range="sc-om-2019"
+
+## log file monitoring
+
+In Operations Manager 2019, you must install **Microsoft.Linux.Log.Monitoring** management pack to enable Linux log file monitoring.
+
+>[!NOTE]
+> If you have the OMS agent configured, and you try to uninstall UNIX and LINUX agent from the console, then OMS component will not be uninstalled from the agent.
+
+::: moniker-end
 
 ## Configure Linux Log File monitoring
 The Linux Management pack bundle has the latest Operations Manager agent (with Fluentd). To configure Linux log file monitoring, users should perform the following:
 
 1. Import the latest Linux Management pack using the standard process for installing a management pack.
 2. Install the new Linux agent on the Linux servers, this can be done through discovery wizard or manually.
-3. Enable the OMED service on each management server in the resource pool managing the Linux agents. 
+3. Enable the OMED service on each management server in the resource pool managing the Linux agents.
 
 The OMED service collects events from Fluentd and converts them to Operations Manager events. Users should import a custom management pack which can generate alerts based on the events received from the Linux servers.
 
@@ -103,7 +117,7 @@ This example shows syslog records collected and tagged for processing by Operati
         # Recommended so that Fluentd will record the position it last read into this file.
         pos_file /home/user1/fluent-test/demo_syslog.log.pos
 
-        # Used to correlate the directives. 
+        # Used to correlate the directives.
         tag scom.log.syslog
 
         format /(?<message>.*)/
@@ -136,10 +150,10 @@ This example processes events with tags matching **scom.log.**\*\* and  **scom.a
 
         # If queue length exceeds the specified limit, events are rejected.
         buffer_queue_limit 10
-        
+
         # Control the buffer behavior when the queue becomes full: exception, block, drop_oldest_chunk
         buffer_queue_full_action drop_oldest_chunk
-        
+
         # Number of times Fluentd will attempt to write the chunk if it fails.
         retry_limit 10
 
@@ -159,7 +173,7 @@ There are six filter plugins for log file monitoring described here.  Use one or
 
 #### Simple match: filter_scom_simple_match
 
-Takes up to 20 input patterns.  Sends an event to Operations Manager whenever any pattern is matched. 
+Takes up to 20 input patterns.  Sends an event to Operations Manager whenever any pattern is matched.
 
     <filter tag>
         type filter_scom_simple_match
@@ -221,7 +235,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
     </filter>
 
 #### Operations Manager converter: filter_scom_converter
-Sends an event to Operations Manager for all records it receives. Sends the specified event id and description as part of the event. 
+Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
     <filter tag>
         type filter_scom_converter

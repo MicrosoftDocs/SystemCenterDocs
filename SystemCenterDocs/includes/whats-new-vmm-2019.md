@@ -73,7 +73,7 @@ VMM 2019 supports the use of gMSA for **Management server service account**. [Le
 
 > [!NOTE]
 
-> The following features/feature updates were introduced in VMM 1807 and are part of VMM 2019.
+> The following features/feature updates were introduced in VMM 1807, included in VMM 2019.
 
 ## Storage
 
@@ -109,7 +109,7 @@ VMM 1807 supports SQL 2017. You can upgrade SQL 2016 to 2017.
 
 > [!NOTE]
 
-> The following features/feature updates were introduced in VMM 1801 and are part of VMM 2019.
+> The following features/feature updates were introduced in VMM 1801, included in VMM 2019.
 
 ## Compute
 

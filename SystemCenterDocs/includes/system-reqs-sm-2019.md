@@ -121,19 +121,18 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
  For more information about installing Service Manager with AlwaysOn availability groups, [refer here](../scsm/sql-always-on.md).
 
+## Server operating system
 
- ## Server operating system
+  The following versions of Windows Server operating system are supported.
 
- The following versions of Windows Server operating system are supported.
+ |System Center component|Windows Server 2016 Standard, Datacenter|Windows Server 2016 Server Core | Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core|
+ |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|------------|
+ |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Database or Data Warehouse Database|&#8226;|&#8226;|&#8226;|&#8226;|
+ |**Service Manager** Self-Service Portal (HTML 5)|&#8226;|&#8226;|&#8226;|&#8226;|
 
- |System Center  component|Windows Server 2016 Standard, Datacenter|Windows Server 2019 Standard, Datacenter|Windows Server 2019 Server Core
- |----------------------------|-----------------------|---------------------------|--------------------------|------------------------------|--------------------------------------------------------------------------------|
- |**Service Manager** Management Server|&#8226;|&#8226;|&#8226;|
- |**Service Manager** Data Warehouse Management Server|&#8226;|&#8226;|&#8226;|
- |**Service Manager** Database or Data Warehouse Database|&#8226;|&#8226;|&#8226;|
- |**Service Manager** Self-Service Portal (HTML 5)|&#8226;|&#8226;|&#8226;|
-
- ## Client operating system
+## Client operating system
 
  The following versions of Windows client operating system are supported for the Service Manager console.
 
