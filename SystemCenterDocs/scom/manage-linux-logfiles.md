@@ -52,7 +52,7 @@ The latest version of the Linux agent supports Fluentd which is required for enh
 In Operations Manager 2019, you must install **Microsoft.Linux.Log.Monitoring** management pack to enable Linux log file monitoring.
 
 >[!NOTE]
-> If OMSAgent is configured, and you try to uninstall UNIX and LINUX agent from the console, then OMS component will not be uninstalled from the agent.
+> If you have the OMS agent configured, and you try to uninstall UNIX and LINUX agent from the console, then OMS component will not be uninstalled from the agent.
 
 ::: moniker-end
 
