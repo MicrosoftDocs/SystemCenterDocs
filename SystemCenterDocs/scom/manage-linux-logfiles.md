@@ -41,7 +41,7 @@ The following steps are required to enable log file monitoring on Linux agents. 
 ::: moniker range="<sc-om-2019"
 
 ## Install the latest version of the Linux agent
-The latest version of the Linux agent supports Fluentd which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md).
+The latest version of the Linux agent supports Fluentd, which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md).
 
 ::: moniker-end
 
@@ -235,7 +235,7 @@ Takes three inputs: two patterns and a time interval. When a match is found for 
     </filter>
 
 #### Operations Manager converter: filter_scom_converter
-Sends an event to Operations Manager for all records it receives. Sends the specified event id and description as part of the event.
+Sends an event to Operations Manager for all records it receives. Sends the specified event ID and description as part of the event.
 
     <filter tag>
         type filter_scom_converter

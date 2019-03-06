@@ -48,7 +48,7 @@ The following table lists the build versions for Data Protection Manager 1801.
 
 | **Build Number** | **KB** | **Description** |
 | --- | --- | --- |
-| 5.1.363.0 | n/a | System Center 2016 1801 |
+| 5.1.363.0 | n/a | System Center 1801 |
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ The following table lists the build versions for Data Protection Manager 1807.
 
 | **Build Number** | **KB** | **Description** |
 | --- | --- | --- |
-| 5.1.378.0 | [KB4339950](https://support.microsoft.com/help/4339950) | System Center 2016 1807 |
+| 5.1.378.0 | [KB4339950](https://support.microsoft.com/help/4339950) | System Center 1807 |
 
 ::: moniker-end
 
