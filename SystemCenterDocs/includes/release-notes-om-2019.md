@@ -35,6 +35,8 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 ## Support for x64 components
 
 **Description**:  Operations Manager supports only x64 components, x86 components are not supported.
+If you try to push install the agent from the console to a x86 computer, the following error message appears:   
+*The system cannot find the path specified*.
 
 **Workaround**:  None  
 
