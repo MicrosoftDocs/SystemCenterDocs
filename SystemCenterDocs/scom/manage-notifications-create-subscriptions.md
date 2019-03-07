@@ -78,7 +78,7 @@ You can use classes and groups to configure the subscription. Two of the conditi
 You can select multiple groups or classes when you set the value for either condition.  
 
 > [!NOTE]  
-> Operations Manager does not support using "not equal to" or "not a member of" for notification subscriptions.  
+> Operations Manager 2019 does not support  "not equal to" or "not a member of" options in Scope tab.   
 
 #### Groups  
 
