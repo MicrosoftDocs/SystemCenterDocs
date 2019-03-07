@@ -19,7 +19,9 @@ This article provides the release notes for System Center 2019 - Service Managem
 
 [!INCLUDE [release-notes-sma-2019.md](../includes/release-notes-sma-2019.md)]
 
-::: moniker-end::: moniker range="sc-sma-1807"
+::: moniker-end:::
+
+moniker range="sc-sma-1807"
 
 This article provides the release notes for System Center 1807 - Service Management Automation (SMA).
 
