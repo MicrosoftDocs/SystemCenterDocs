@@ -12,6 +12,6 @@ ms.date: 03/14/2019
 title: include file
 ---
 
-## Release Notes for System Center 2019 - Service Provider Foundation
+## SPF 2019 release notes
 
 This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the Update Rollup 2 of SPF 2016.

@@ -1,6 +1,6 @@
 ---
 ms.assetid: 3f002367-963a-4a35-bcd5-b2dd79b58ea2
-description: include file to summarize the release notes for System Center 2019 - Orchestrator 
+description: include file to summarize the release notes for System Center 2019 - Orchestrator
 manager:  vvithal
 ms.topic:  include
 author:  JYOTHIRMAISURI
@@ -12,7 +12,7 @@ ms.date: 03/14/2019
 title:  include file
 ---
 
-##  Release notes for System Center 2019 - Orchestrator
+##  Orchestrator 2019 release notes
 
 The following is the known issue in System Center 2019- Orchestrator.
 

@@ -13,6 +13,14 @@ ms.technology: service-provider-foundation
 
 # Release notes for System Center Service Provider Foundation
 
+::: moniker range="sc-spf-2019"
+
+This article lists the release notes for System Center 2019 - Service Provider Foundation (SPF).
+
+[!INCLUDE [release-notes-spf-2019.md](../includes/release-notes-spf-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-spf-1801"
 
 This article lists the release notes for System Center 1801 - Service Provider Foundation (SPF).

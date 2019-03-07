@@ -13,6 +13,14 @@ ms.technology: Orchestrator
 
 # Release notes for System Center Orchestrator
 
+::: moniker range="sc-orch-2019"
+
+This article provides the release notes for System Center 2019 - Orchestrator.
+
+[!INCLUDE [release-notes-orch-2019.md](../includes/release-notes-orch-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-orch-1807"
 
 This article provides the release notes for System Center 1807 - Orchestrator.

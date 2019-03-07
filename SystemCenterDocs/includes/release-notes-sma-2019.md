@@ -12,6 +12,6 @@ ms.date: 03/14/2019
 title:  include file
 ---
 
-## Release Notes for System Center 2019 - Service Management Automation
+## SMA 2019 release notes
 
 This release of System Center Service Management Automation (SMA) contains all the bug fixes shipped until the Update Rollup 1 of SMA 2016.
