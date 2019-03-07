@@ -31,7 +31,7 @@ This article provides the release notes for System Center 1807 - Service Managem
 
 ::: moniker range="sc-sma-1801"
 
-This article provides the release notes for System Center 1801 - Service Management Automation(SMA).
+This article provides the release notes for System Center 1801 - Service Management Automation(SMA)
 
 ::: moniker-end
 
