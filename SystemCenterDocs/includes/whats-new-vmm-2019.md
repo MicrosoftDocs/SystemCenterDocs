@@ -17,12 +17,12 @@ See the following sections for detailed information about the new features/featu
 ## Compute
 
 ###	Cluster Rolling upgrade for S2D clusters
-System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019.Learn More.
+System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. [Learn More](../vmm/hyper-v-rolling-upgrade.md)
 
 ## Storage
 
 ### Storage DO
-This feature helps in preventing cluster shared storage (CSV and file shares) from becoming full due to expansion/new VHDs placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold, during a new disk placement or auto migration of VHDs to other shared storage in the cluster. [Learn more](../vmm/manage-storage.md).
+This feature helps in preventing cluster shared storage (CSV and file shares) from becoming full due to expansion/new VHDs placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold, during a new disk placement or auto migration of VHDs to other shared storage in the cluster. [Learn more](../vmm/vm-optimization.md#dynamic-optimization).
 
 ### Support for storage health monitoring
 Storage health monitoring helps you to monitor the health and operational status of storage pool, LUNs, and physical disks in the VMM fabric.

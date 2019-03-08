@@ -12,9 +12,9 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## System requirements for System Center 2019 -  Operations Manager
+## System requirements for System Center 2019 - Operations Manager
 
-This following sections describe general performance and scalability guidance for System Center 2019 - Operations Manager and higher.  These sections also provide recommendations for hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+The following sections describe general performance and scalability guidance for System Center 2019 - Operations Manager.  These sections also provide recommendations for hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 
 ## Capacity limits for Operations Manager
 
@@ -53,7 +53,7 @@ If you are upgrading an installation of System Center 2016/1801/1807 - Operation
 
 ## Hardware requirements
 
-Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2019 - Operations Manager, considering the minimum hardware requirements for processor, RAM, and disk space.  You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, refer to the [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853).
+Use this information to evaluate if your hardware environment is ready to support the installation of or upgrade to System Center 2019 - Operations Manager, considering the minimum hardware requirements for processor, memory, and disk space. You should use the information here whether you are deploying one or multiple components and for more specific information to help plan the amount of infrastructure needed for a new Operations Manager deployment, see [Operations Manager Sizing Helper](http://go.microsoft.com/fwlink/p/?LinkId=231853)
 
 > [!NOTE]
 > While the Operations Manager 2012 Sizing helper has not been updated to reflect the 2016 and higher release of Operations Manager, the information provided is still valid to help you estimate for your design requirements.  However, the number of UNIX/Linux computers per management and gateway server, as noted in the **Unix or Linux Monitoring** section is not correct.  The number of UNIX/Linux computers per server has increased and is noted in the monitored item capacity table earlier in this article.
@@ -87,7 +87,7 @@ The following versions of Windows Server operating system are supported for the 
 
 ### Client operating system
 
- Windows 10 client operating system is supported for the Operations Manager 2019 Operations console.
+Windows 10 client operating system is supported for the Operations Manager 2019 Operations console.
 
 ### Microsoft Monitoring Agent operating system
 
@@ -151,7 +151,7 @@ The following versions of Windows Server operating system are supported for the 
     - Internet Explorer version 11
     - Microsoft Edge version 40 and later
     - Google Chrome version 67 and later
-    - Internet Information Services:  IIS 7.5 and     later versions, with the IIS Management Console and the following role services installed:
+    - Internet Information Services:  IIS 7.5 and later versions with the IIS Management Console and the following role services installed:
     - Static Content
     - Default Document
     - Directory Browsing
