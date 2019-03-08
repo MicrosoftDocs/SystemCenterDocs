@@ -17,7 +17,7 @@ ms.topic: article
 
 You can use the Web Application Editor to manually create or edit a request in a Web Application Transaction Monitoring template. For editing a particular request, there is no difference whether the request was created manually or by capturing a browser session. For detailed information about the properties that you can set for the request, see Web Application Request Properties.
 
-## Edit the settings in  Web Application Editor
+## Edit the settings in Web Application Editor
 
 1. Open the operations console with an account that has Author credentials in the management group.
 
@@ -31,7 +31,7 @@ You can use the Web Application Editor to manually create or edit a request in a
 
 ## Edit an existing request in a Web Application
 
-1. In the  Web Application Editor, select the request that you want to edit.
+1. In the Web Application Editor, select the request that you want to edit.
 
 2. In the **Actions** pane, click **Properties**.
 

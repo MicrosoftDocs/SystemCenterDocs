@@ -104,10 +104,10 @@ The **Microsoft.SystemCenter.WebApplication.UrlProbe** module supports the confi
 | _Proxy_ | **String** | True | Required parameter, but can be empty. Specifies the name of the proxy server if the agent requires one to access the URL. |
 | _ProxyUserName_ | **String** | True | Required parameter, but can be empty. Specifies the username to be used with the proxy server if the specified proxy server requires authentication. |
 | _ProxyPassword_ | **String** | True | Required parameter, but can be empty. Specifies the password to be used with the proxy server if the specified proxy server requires authentication. |
-| _ProxyAuthenticationScheme_ | **AuthenticationSchemeType** | True | Required parameter. Specifies the authentication scheme to be used with the proxy server, if the agent requires one to access the URL. Valid values are  **None**,  **Basic**,  **NTLM**,  **Digest**, and  **Negotiate**. |
+| _ProxyAuthenticationScheme_ | **AuthenticationSchemeType** | True | Required parameter. Specifies the authentication scheme to be used with the proxy server, if the agent requires one to access the URL. Valid values are  **None**, **Basic**, **NTLM**, **Digest**, and **Negotiate**. |
 | _CredentialUserName_ | **String** | True | Required parameter, but can be empty. Specifies the username to be used with the URL being queried. |
 | _CredientialPassword_ | **String** | True | Required parameter, but can be empty. Specifies the password to be used with the URL being queried. |
-| _AuthenticationScheme_ | **AuthenticationSchemeType** | True | Required parameter. Specifies the authentication scheme to be used with the URL being queried. Valid values are  **None**,  **Basic**,  **NTLM**, **Digest**, and  **Negotiate**. |
+| _AuthenticationScheme_ | **AuthenticationSchemeType** | True | Required parameter. Specifies the authentication scheme to be used with the URL being queried. Valid values are **None**, **Basic**, **NTLM**, **Digest**, and **Negotiate**. |
 | _IgnoreServerCertError_ | **Boolean** | True | Required parameter. Specifies whether the server certificate errors should be ignored. |
 | _FollowRedirects_ | **Boolean** | True | Required parameter. Specifies whether the query should follow URL redirects. |
 | _RetryCount_ | **Integer** | True | Required parameter. Specifies the number of times the module should retry the specified URL before timing out. |
