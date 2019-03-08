@@ -106,7 +106,7 @@ For HTLM5 web console, the following client web browsers are supported:
 * Microsoft Edge version 40 and later
 * Google Chrome version 67 and later
 
-For additional requirements, see Operations Manager 2019 [system requirements](system-reqs-om-2019.md).
+For additional requirements, see Operations Manager 2019 [system requirements](../scom/system-requirements.md).
 
 ## SQL Server 2017 support
 Operations Manager 2019 supports a new installation of SQL server 2017.
