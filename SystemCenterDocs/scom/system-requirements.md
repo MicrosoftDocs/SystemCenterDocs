@@ -17,7 +17,7 @@ ms.technology: operations-manager
 
 This article details the system requirements for System Center 2019 - Operations Manager.
 
-[!INCLUDE [system-reqs-om-2019.md](../includes/system-reqs-om-2019.md)]
+[!INCLUDE [system-reqs-om-2019.md](../includes/system-reqs-om-2019.md)
 
 ::: moniker-end
 
