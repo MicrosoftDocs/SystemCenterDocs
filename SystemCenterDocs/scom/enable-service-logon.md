@@ -15,32 +15,31 @@ monikerRange: 'sc-om-2019'
 
 # Enable Service Log on for run as accounts
 
-Security best practice is to disable  Interactive and remote Interactive log on permissions for service accounts. Security teams, across organizations have strict controls to enforce this best practice to prevent credential theft and associated attacks.
+Security best practice is to disable interactive and remote interactive sessions for service accounts. Security teams, across organizations have strict controls to enforce this best practice to prevent credential theft and associated attacks.
 
-System Center 2019 - Operations Manager supports hardening of service accounts and requires no Interactive or  Remote Interactive log on rights for service accounts.
+System Center 2019 - Operations Manager supports hardening of service accounts and does not require granting the *Allow log on locally** user right for several accounts required in support of Operations Manager.
 
 Earlier version of Operations Managers has *Allow log on locally* as the default log on type. Operations Manager 2019 uses *Service Log on* as the log on type, by default. This leads to the following changes:
 
--	Health Service uses log on type **Service** by default. In Operations Manager 1807 and prior versions, health service used **Interactive** as log on type.
+-	Health service uses log on type **Service** by default. With Operations Manager 1807 and earlier versions, the health service used **Interactive** as log on type.
 -	Operations Manager action accounts and service accounts now have **Log on as a Service** permission.     
--	Action accounts and Run As accounts must have **Log on as a Service** permission to execute MonitoringHost.exe.
-    [Learn more](plan-security-accounts.md).
+-	Action accounts and Run As accounts must have **Log on as a Service** permission to execute MonitoringHost.exe. [Learn more](plan-security-accounts.md).
 
 ## Changes to Operations Manager action accounts
  The following accounts are granted **Log on as a Service** permission during the Operations Manager 2019 installation, and during upgrade from previous versions:
 
  -	Management Server Action account
  -	System Center configuration service and System Center data access service accounts  
- -	Agent Installation account
- -	Data Warehouse Writer account
- -	Data Reader accounts
+ -	Agent action account
+ -	Data Warehouse Write account
+ -	Data Reader account
     ![local security setting](./media/enable-service-logon/om2019-local-security-setting.png)
 
-After this change, **Run As accounts**, which are created by Operations Manager administrators for the management packs (MPs), require **Log on as a Service** permission.
+After this change, any **Run As accounts** created by Operations Manager administrators for the management packs (MPs) require the **Log on as a Service** right, which Administrators should grant.
 
 ## View log on type for management servers and agents
 
-You can view the log on type for management servers and agents from Operations Manager console.
+You can view the log on type for management servers and agents from the Operations Manager console.
 
 To view the log on type for management servers, go to
 **Administration** > **Operations Manager Products**> **Management servers**.
@@ -54,7 +53,7 @@ To view the log on type for agents, go to
 
 > [!NOTE]
 
-> Log on type for the agent/gateway, which is not yet upgraded  display *Service* as log on type, irrespective of the agent's current log on type. Once the agent is upgraded, the current log on type will be displayed.
+> Agent/gateway that is not yet upgraded, display Log on type as  *Service* in console . Once the agent/gateway is upgraded, the current log on type will be displayed.
 
 ## Enable service log on permission for Run As accounts
 
@@ -76,28 +75,24 @@ Follow these steps:
 
 ## Change log on type for a health service
 
-If you need to change the log on type of Operations Manager health service to Interactive, use the local group policy on the agent computer as shown below:
-
-> [!NOTE]
-> A monitor-based alert is generated for this event.
+If you need to change the log on type of Operations Manager health service to *Allow log on locally*, configure the security policy setting on the local device using the Local Security Policy console as shown in the following image:
 
 ![Monitoring action account log on types](./media/enable-service-logon/om2019-monitoring-action-account-logon-type.png)
 
 ## Coexistence with Operations Manager 2016 agent
-Helath service in Operations Manager 2016 uses *Interactive* as log on type. Operations Manager uses *Log on as a service* as default. However, Operations Manager 2019 and 2016 can interoperate without any issues as log on type of health service has no impact on the interoperability.  
+With the log on type change introduced in Operations Manager 2019, the Operations Manager 2016 agent can coexist and interoperate without any issues. However, there are a couple of scenarios that are affected by this change:  
 
-Following scenarios are impacted:.
- - Push install from Operations Manager console requires admin privilege and *Log on as a service* permission.
- - Operations Manager MS action account required admin privilege on management server for Service Manager monitoring.
+- Push install of agent from the Operations Manager console requires an account that has administrative privileges and the *Log on as a service* right on the destination computer.
+- Operations Manager Management Server action account requires administrative privileges on management servers for monitoring Service Manager.
 
 
 ## Troubleshooting
 
-If any of the Run as accounts do have the required **Log on as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of the Run as account, which does not have **Log on as a Service** permission.
+If any of the Run as accounts do have the required **Log on as a Service** permission, a critical monitor-based alert appears. This alert displays the  details of the Run As account, which does not have **Log on as a Service** permission.
 
 ![alert properties](./media/enable-service-logon/om2019-alert-properties.png)
 
-In the event viewer, on the agent computer, see the information under event ID 7002 for details about all the **Run as account** that requires **Log on as a Service** permission.
+On the agent computer, open Event Viewer and in the Operations Manager log, search for event ID 7002 for details about all the run as accounts that requires **Log on as a Service** permission.
 
 |Parameter|Message|
 |--------------------|---------------|
@@ -106,8 +101,6 @@ In the event viewer, on the agent computer, see the information under event ID 7
 |Alert Context |Health Service could not log on as the  Run As Account  for management group (group name) because it has not been granted the *Log on as a service* permission.|
 |Monitor|(add monitor name)|
 
-Provide **Log on as a Service** permission to the applicable Run As accounts, which are identified in the event 7002.
-
-Once you provide the **Log on as a Service** permission, event ID 7028 appears and the monitor changes to healthy state.
+Provide **Log on as a Service** permission to the applicable Run As accounts, which are identified in the event 7002. Once you provide the **Log on as a Service** permission, event ID 7028 appears and the monitor changes to healthy state.
 
 ![number of events](./media/enable-service-logon/om-2019-number-of-events.png)

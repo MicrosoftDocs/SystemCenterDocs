@@ -31,13 +31,13 @@ The account that a MonitoringHost.exe process runs as is called the action accou
 
 Unless an action has been associated with a Run As profile, the credentials that are used to perform the action will be those, you defined for the action account.  For more information about Run As Accounts and Run As Profiles, see the section [Run As Accounts](plan-security-runas-accounts-profiles.md).  When an agent runs actions as either the default action account and/or Run As account(s), a new instance of MonitoringHost.exe is created for each account.
 
-When you install Operations Manager, you have the option of specifying either a domain account or using LocalSystem.  The more secure approach is to specify a domain account, which allows you to select a user with the least privileges necessary for your environment.   
+When you install Operations Manager, you have the option to specify a domain account or use LocalSystem.  The more secure approach is to specify a domain account, which allows you to select a user with the least privileges necessary for your environment.   
 
-You can use a low-privileged account for the agent’s action account. On computers running Windows Server 2008 R2 or higher, the account must have the following minimum privileges:
+You can use a least-privileged account for the agent’s action account. On computers running Windows Server 2008 R2 or higher, the account must have the following minimum privileges:
 
 - Member of the local Users group
 - Member of the local Performance Monitor Users group
-- Allow log on locally (SetInteractiveLogonRight) permission. (not applicable for Operations Manager 2019)
+- Allow log on locally (SetInteractiveLogonRight) permission (not applicable for Operations Manager 2019).
 
 
 > [!NOTE]

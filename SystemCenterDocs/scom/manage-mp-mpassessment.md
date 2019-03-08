@@ -14,7 +14,7 @@ ms.topic: article
 
 # Management pack assessment
 
-Operations Manager includes a feature called Updates and Recommendations, to help you proactively identify new technologies or components (i.e. workloads) deployed in your IT infrastructure that were not monitored by Operations Manager or are not monitored using the latest version of a management pack.
+Operations Manager 2019 includes support for [Linux and Unix](#support-for-linux-and-unix-platforms) workloads and operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operations Manager 2019 also supports a new capability called **Machine Details**, which provides the computer details (name and operating system) on which a selected workload is running.
 
 If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
 
@@ -34,7 +34,7 @@ This feature includes the following capabilities:
 |  **Get All MPs**  |  Installs the management packs for all of the workloads displayed
 |  **View Guide**  |  Downloads the management pack guide from the web browser, for the selected workload, to your computer
 |  **View DLC Page**  | Open from the web browser, the page on the Microsoft Download Center, to download the management pack file
-|  **Machine Details** (applicable only for Operations Manager 2019)  | Highlights the machine name and operating system for the selected                     workload.
+|  **Machine Details** (applicable only for Operations Manager 2019)  | Highlights the machine name and operating system for the selected workload.
 |  **More information**  | Highlights all impacted agent-managed systems and management pack details of selected workload (depending on the status of the workload)
 
 >[!NOTE]
@@ -126,7 +126,7 @@ The following list includes the workloads that are supported by this feature.
 
 ::: moniker range="sc-om-2019"
 
-The following workloads are supported for the respective operating systems.
+The following workloads are supported for the operating systems listed below.
 
 | **Feature** | **Windows Server 2012 R2** | **Windows Server 2016**|**Windows Server 2019** |
 | --- | --- | --- | --- |
@@ -247,10 +247,11 @@ The following workloads are supported for the respective operating systems.
 - SUSE 12 PPC, SUSE 15
 
 ## Support for latest application servers
-- Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9
-- Red Hat JBoss 4, Red Hat JBoss 5, Red Hat JBoss 6, Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8/9/10/11/12/13/14  
-- IBM WebSphere 7.0, IBM WebSphere 8.0, IBM WebSphere 8.5, IBM WebSphere 9.0
-- Oracle WebLogic 10gR3, Oracle WebLogic 11, Oracle WebLogic 12cR1JBoss, Oracle WebLogic 12cR2JBoss
+- Apache Tomcat 7, 8, and 9
+- Red Hat JBoss 4, 5, and 6.
+- Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8/9/10/11/12/13/14  
+- IBM WebSphere 7.0, 8.0, 8.5, and 9.0
+- Oracle WebLogic 10gR3, 11, 12cR1JBoss, and 12cR2JBoss
 
 ::: moniker-end
 

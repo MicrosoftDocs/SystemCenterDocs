@@ -70,26 +70,26 @@ Before you begin, gather the following information:
 
 ## Create an email notification in HTML format
 
-The email notifications experience has been improvised with the ability to create and send email notifications in HTML format.
+Operations Manager 2019 introduces the ability to create and send email notifications in HTML format.
 
-With this feature, an administrator would be able to configure an email in HTML format for sending notifications to subscribers. The administrators can use the existing default HTML email template or edit it or create  a completely new HTML message. With HTML email format, subscribers  get easy access to relevant information about the alert, alert source and the rule/monitor that has generated the alert. They can view these details through the drill-down links available at the bottom of the email.
+With this feature, an administrator would be able to configure an email in HTML format for sending notifications to subscribers. The administrators can use the existing default HTML email template, edit it, or create a new HTML message. With HTML email format, subscribers  get easy access to relevant information about the alert, alert source and the rule/monitor that generated the alert. They can view these details through the drill-down links available at the end of the email.
 
-To create an email in HTML format, follow these steps:
+To create an email in HTML format, perform the following steps:
 
 1.	Use the procedure in the above section for creating email notification channel.
 2.	While configuring the format of the email notifications, select **Enable HTML formatting** as shown in the image below:
 
     ![email notification HTML format](./media/email-notifications/email-notifications-html.png)
 
-3. To edit or change the default content, follow these steps:
-   - Copy the content using **Copy** button.
-   - Edit or change  the content in any HTML editor.
-   - Paste the edited content back by using **Paste** button.
-   - Click **Preview** to view the preview of the edited text.
+3. To edit or change the default content:
+   - Copy the content by clicking **Copy**.
+   - Edit or change the content in any HTML editor.
+   - Paste the modified content back by clicking **Paste**.
+   - Click **Preview** to view a preview of the edited text.
 
-   While editing the HTML email content, you can add the required alert property or the web console link by using  respective variable in the appropriate position of HTML content.
+   While editing the HTML email content, you can add the required alert property or the web console link by using the applicable variable in the appropriate position of your HTML content.
 
-   The following table enlists the variables to use for various properties of the alerts or links in the HTML content.
+   The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
    |Alert property of the link |Variable |  
    |-------------|---|-------------|  
@@ -109,11 +109,11 @@ To create an email in HTML format, follow these steps:
    | WebConsole Alert Link     |$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$   |
    | WebConsole Alert Source Link     |$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$  |
 
-Here is the sample preview for a critical alert:
+The following example is created from a critical severity alert:
 
 ![HTML alert sample](./media/email-notifications/email-notifications-html-sample.png)
 
-Here is a sample warning email:
+The following example is created from a warning severity alert:
 
 ![HTML alert sample](./media/email-notifications/email-notifications-html-sample-warning.png)
 
