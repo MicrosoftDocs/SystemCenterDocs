@@ -41,7 +41,7 @@ You can use the Web Application Editor to manually create or edit a request in a
 
 ## Add a request to a Web application
 
-1. In the  Web Application Editor, select the request that you want to edit.
+1. In the Web Application Editor, select the request that you want to edit.
 
 2. In the **Actions** pane, click **Insert Request**.
 

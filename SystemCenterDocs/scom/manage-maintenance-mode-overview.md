@@ -135,7 +135,7 @@ The comment field contains user information, specifically who has invoked mainte
 
 Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event, which stores arguments for the maintenance mode, such as duration, reason, comment, and information like time of invocation of cmdlet.
 
-A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There is another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes by default, and reads this event from the Operations Manager database. It then sets maintenance mode on the agent based on the record read from the event. You can override the frequency rule to a custom value.
+A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There is another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes by default, and reads this event from the Operations Manager database. It then sets maintenance mode on the agent, based on the record read from the event. You can override the frequency rule to a custom value.
 
 ::: moniker-end
 
@@ -314,7 +314,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 ## Enable scheduled maintenance mode with SQL Always On
 
-In earlier releases of Operations Manager, maintenance schedules that targeted instances of SQL Server in an Always On availability group to provide high availability of the Operations Manager databases did not work when failover to a replica on another SQL Server  instance occurred. Operations Manager 2019 includes a fix for this issue to prevent this behavior and ensures maintenance schedules work in a failover scenario.
+In earlier releases of Operations Manager, maintenance schedules that targeted instances of SQL Server in an Always On availability group to provide high availability of the Operations Manager databases did not work when failover to a replica on another SQL Server instance occurred. Operations Manager 2019 includes a fix for this issue to prevent this behavior and ensures maintenance schedules work in a failover scenario.
 
 Here is the process to verify:
 **Verify that the required permissions are granted on all servers**:
