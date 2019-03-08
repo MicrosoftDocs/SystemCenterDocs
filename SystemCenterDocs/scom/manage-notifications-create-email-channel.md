@@ -102,12 +102,11 @@ To create an email in HTML format, perform the following steps:
    | Alert Owner    | $Data[Default='Not Present']/Context/DataItem/AlertOwner$ |
    | Alert Resolved By    |$Data[Default='Not Present']/Context/DataItem/ResolvedBy$  |
    | Alert Raised Time   |$Data[Default='Not Present']/Context/DataItem/TimeRaisedLocal$  |
-   | Alert Resolution Time  | $Data[Default='Not Present']/Context/DataItem/ResolutionStateLastModifiedLocal$  |
-   | Alert Last Modified Time    |$Data[Default='Not Present']/Context/DataItem/LastModifiedLocal$  |
-   | Alert Last Modified By     |$Data[Default='Not Present']/Context/DataItem/LastModifiedBy$ |
-   | Custom FieldN (N varies from 1 to 10)     |$Data[Default='Not Present']/Context/DataItem/CustomN$   |
-   | WebConsole Alert Link     |$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$   |
-   | WebConsole Alert Source Link     |$Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$  |
+   | Alert Last Modified Time | $Data[Default='Not Present']/Context/DataItem/LastModifiedLocal$  |
+   | Alert Last Modified By | $Data[Default='Not Present']/Context/DataItem/LastModifiedBy$ |
+   | Custom FieldN (N varies from 1 to 10) | $Data[Default='Not Present']/Context/DataItem/CustomN$   |
+   | WebConsole Alert Link | $Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/alert/$UrlEncodeData/Context/DataItem/AlertId$ |
+   | WebConsole Alert Source Link | $Target/Property[Type=\"Notification!Microsoft.SystemCenter.AlertNotificationSubscriptionServer\"]/WebConsoleUrl$/#/monitoring/drilldown/object/$UrlEncodeData/Context/DataItem/ManagedEntity$ |
 
 The following example is created from a critical severity alert:
 

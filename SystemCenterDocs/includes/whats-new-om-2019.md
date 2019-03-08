@@ -14,7 +14,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2019
 
-See the following sections for detailed information about the new features/feature updates supported in Operations Manager 2019.
+See the following sections for detailed information about the new and updated features in System Center 2019 - Operations Manager. Features and updates introduced in Operations Manager version 1801 and 1807 are included in version 2019.
 
 ## Service log on enabled by default in Operations Manager 2019
 Operations Manager 2019 supports hardening of service accounts and does not require Interactive and Remote Interactive Log On rights for service accounts.
@@ -60,7 +60,7 @@ With Operations Manager 2019, there are changes in the Linux agent package bundl
 
 This change is introduced to ensure *omsagent* user is created only when you use the Log File Monitoring feature. [Learn more](../scom/manage-install-crossplat-agent-cmdline.md).
 
-To use the Log Monitoring feature, you must install the Linux Log Monitoring management pack, provided in Operations Manager 2019. [Learn More](../scom/manage-linux-logfiles.md).
+To use the Log Monitoring feature, you must install the Linux Log Monitoring management pack, included in Operations Manager 2019. [Learn More](../scom/manage-linux-logfiles.md).
 
 ## Improvement in agent initiated maintenance mode
 Agent initiated maintenance mode is a crucial feature to suspend monitoring when the monitored object is taken offline for maintenance. With Operations Manager 2019, maintenance mode is triggered based on an event, as opposed to being registry-based as used  in earlier releases. With the registry-based approach, there was a probability that  a management server might not be able to read the agents registry before the agent computer is shutdown. In such cases, false alerts are generated.
