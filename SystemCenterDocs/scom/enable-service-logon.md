@@ -1,7 +1,7 @@
 ---
 ms.assetid: 19659b4f-05d3-4f33-9dd4-689b2a9fc21b
-title: Enable Service Log on by default for System Center Operations Manager
-description: This article provides information about how to enable service log on by default for System Center 2019 - Operations Manager.
+title: Enable Service Log on
+description: This article provides information about how to enable service log for Run As accounts in System Center 2019 - Operations Manager.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -17,7 +17,7 @@ monikerRange: 'sc-om-2019'
 
 Security best practice is to disable interactive and remote interactive sessions for service accounts. Security teams, across organizations have strict controls to enforce this best practice to prevent credential theft and associated attacks.
 
-System Center 2019 - Operations Manager supports hardening of service accounts and does not require granting the *Allow log on locally** user right for several accounts required in support of Operations Manager.
+System Center 2019 - Operations Manager supports hardening of service accounts and does not require granting the *Allow log on locally* user right for several accounts required in support of Operations Manager.
 
 Earlier version of Operations Managers has *Allow log on locally* as the default log on type. Operations Manager 2019 uses *Service Log on* as the log on type, by default. This leads to the following changes:
 
@@ -59,7 +59,7 @@ To view the log on type for agents, go to
 
 Follow these steps:
 
-1. Log on with administrator privileges to the computer from which you want to provide *Log on as Service* permission to a Run As account.
+1. Sign in with administrator privileges to the computer from which you want to provide *Log on as Service* permission to a Run As accounts.
 2. Go to **Administrative Tools** and click **Local Security Policy**.
 3. Expand **Local Policy** and click **User Rights Assignment**.
 4. In the right pane, right-click **Log on as a service** and select **Properties**.
@@ -92,15 +92,15 @@ If any of the Run as accounts do have the required **Log on as a Service** permi
 
 ![alert properties](./media/enable-service-logon/om2019-alert-properties.png)
 
-On the agent computer, open Event Viewer and in the Operations Manager log, search for event ID 7002 for details about all the run as accounts that requires **Log on as a Service** permission.
+On the agent computer, open Event Viewer and in the Operations Manager log, search for event ID 7002 for details about all the run as accounts that require **Log on as a Service** permission.
 
 |Parameter|Message|
 |--------------------|---------------|
 |Alert Name|Run As account does not have requested log on type.|
 |Alert Description|The Run As account must have the requested log on type.|
-|Alert Context |Health Service could not log on as the  Run As Account  for management group (group name) because it has not been granted the *Log on as a service* permission.|
+|Alert Context |Health Service could not log on, as the Run As account for management group (group name) has not been granted the *Log on as a service* permission.|
 |Monitor|(add monitor name)|
 
-Provide **Log on as a Service** permission to the applicable Run As accounts, which are identified in the event 7002. Once you provide the **Log on as a Service** permission, event ID 7028 appears and the monitor changes to healthy state.
+Provide **Log on as a Service** permission to the applicable Run As accounts, which are identified in the event 7002. Once you provide the permission, event ID 7028 appears and the monitor changes to healthy state.
 
 ![number of events](./media/enable-service-logon/om-2019-number-of-events.png)
