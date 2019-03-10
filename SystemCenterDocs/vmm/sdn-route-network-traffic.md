@@ -312,7 +312,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
     **For BGP to work, you must do the following steps**:
 
-    1. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
+    1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
 
     ![remote subnets](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
 
@@ -337,7 +337,7 @@ If you use BGP with L3 tunnel connection, BGP peering must be established betwee
 
 For BGP to work, you must do the following steps:
 
-1.	Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
+1.	Add BGP peer for the L3 connection. Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
 
   *Example*: Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway
 
