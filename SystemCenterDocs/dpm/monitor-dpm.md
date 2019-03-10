@@ -103,11 +103,11 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 ## Monitor DPM in Operations Manager
 You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
 
--   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
+-   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 
--   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp)
+-   **Discovery and monitoring management pack** (Microsoft.SystemCenter.DataProtectionManager.Discovery.mp)
 
--   **Library management pack** - (Microsoft.SystemCenter.DataProtectionManager.2012.Library)
+-   **Library management pack** - (Microsoft.SystemCenter.DataProtectionManager.Library)
 
 
 Using these packs you can:
@@ -125,8 +125,6 @@ Using these packs you can:
 
 -   To use the DPM Management Packs, you need a System Center Operations Manager server running 2012 R2. The Operations Manager Data Warehouse must be up and running.
 
--   To install the Management Packs the DPM server must be running at least DPM 2012 R2 with Update Rollup 5.
-
 -   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media, you should remove them from the DPM server and install the new versions from the download page.
 
 -   You can only run one language version of the Management Pack at one time. If you want to use the pack in a different language uninstall the pack in the existing language and then install it with the new language.
@@ -143,8 +141,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
     If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) in the Download Center.
 
 2.  Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=45525).
-    Note that at the time of release (February 2015) the version for all the packs is 4.2.1277.0
-    By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
+    The download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The reporting management pack is placed in a separate folder inside that folder.
 
 #### Import the Management Packs
 Import the Discovery and Library Management Packs
