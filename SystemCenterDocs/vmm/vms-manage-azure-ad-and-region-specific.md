@@ -54,29 +54,29 @@ Ensure the following prerequisites:
 **Use the following steps**:
 
 1.	Browse to **Azure subscription** and click **Add Subscription**.
-![add subscription](media\azure-arm-based\add-subscription.png)
+![add subscription](media/azure-arm-based/add-subscription.png)
 
 2. Provide **Display Name**, **Azure cloud**, and **Subscription ID**.
 
     You can provide any friendly name as display name. Choose either public Azure or region-specific subscription as appropriate.
 
-    ![add subscription id](media\azure-arm-based\add-subscription-id.png)
+    ![add subscription id](media/azure-arm-based/add-subscription-id.png)
 
 3. Select **Management using Azure AD authentication** (to use certificate based management, go to step 5)
 
-    ![select authentication](media\azure-arm-based\azure-ad-authentication.png)
+    ![select authentication](media/azure-arm-based/azure-ad-authentication.png)
 
 4. Provide **Directory ID**, **Application ID** and **Key**, and then click **Finish** (after this step, directly go to step 6).
-![ad authentication details](media\azure-arm-based\management-using-ad.png)
+![ad authentication details](media/azure-arm-based/management-using-ad.png)
 
 5. To use management certificate, select **Management using management certificate**.  (not required if already performed step 3 and 4)
 
     If you want to continue using certificate based authentication, then instead of selecting Azure AD authentication, choose management certificate based authentication and provide the management certificate from “Current User\Personal” certificate store and then click **Finish**.
 
-    ![select authentication](media\azure-arm-based\management-using-certificate.png)
+    ![select authentication](media/azure-arm-based/management-using-certificate.png)
 
 6. Verify the Azure subscription and the VMs hosted on Azure.
-![verify subscription authentication](media\azure-arm-based\verify-azure-subscription.png)
+![verify subscription authentication](media/azure-arm-based/verify-azure-subscription.png)
 
 
 ## Next steps

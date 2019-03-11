@@ -47,7 +47,7 @@ Ensure the following prerequisites are met:
 
    - In **Type** , specify a template type, click **Specific**. Select **Microsoft** for Manufacturer. Select **Microsoft network controller** for Model. Click **Next**.
 
-        ![template type](media\slb-vip\template-type.png)
+        ![template type](media/slb-vip/template-type.png)
 
  - In **Protocol**, specify protocol options. Click **Next**.
 
@@ -84,7 +84,7 @@ Ensure the following prerequisites are met:
 
 **Example 1**: Configuring Service with ‘Public’ VM Network as front end. Here the ‘Backend’ network can be One connected or network virtualized VM network.
 
-![slb vip example 1](media\slb-vip\example-1.png)
+![slb vip example 1](media/slb-vip/example-1.png)
 
 
 **Example 2**: Configuring Service with Front-end and Back-end connected to network virtualized VM Network ‘HNV VM Network’. This scenario is used for Internal load balancing.

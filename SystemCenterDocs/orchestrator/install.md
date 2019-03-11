@@ -50,13 +50,13 @@ This topic provides detailed installation instructions for the various Orchestra
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
-    ::: moniker range="sc-orch-1801"
+::: moniker range="sc-orch-1801"
 
    > [!NOTE]
 
    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Management server role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
-   ::: moniker-end
+::: moniker-end
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
@@ -235,13 +235,13 @@ This topic provides detailed installation instructions for the various Orchestra
 
 6.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, proceed to the next step.
 
-    ::: moniker range="sc-orch-1801"
+::: moniker range="sc-orch-1801"
 
    > [!NOTE]
 
    >  SQL Server Native Client is a prerequisite which is not validated by Prerequisite check step in setup. Hence, make sure that the SQL Server Native Client is installed on the Runbook designer role. For more information, see [Installing SQL Server Native Client](https://docs.microsoft.com/en-us/sql/relational-databases/native-client/applications/installing-sql-server-native-client).
 
-   ::: moniker-end
+::: moniker-end
 
     If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
