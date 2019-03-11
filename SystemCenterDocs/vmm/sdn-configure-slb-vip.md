@@ -90,7 +90,7 @@ Ensure the following prerequisites are met:
 **Example 2**: Configuring Service with Front-end and Back-end connected to network virtualized VM Network ‘HNV VM Network’. This scenario is used for Internal load balancing.
 
 
-![slb vip example 2](media\slb-vip\example-2.png)
+![slb vip example 2](media/slb-vip/example-2.png)
 
 
 ## Set up the VIP for user access
