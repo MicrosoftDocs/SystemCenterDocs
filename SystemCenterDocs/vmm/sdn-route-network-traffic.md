@@ -74,7 +74,6 @@ On the remote peer device, use the  **VM network endpoint IP address** from the 
 
 ![remote site](./media/sdn-route-network-traffic/sdn-route-network-traffic3.png)
 
-
 ::: moniker range="<sc-vmm-2019"
 
 ## Configure L3 forwarding  
