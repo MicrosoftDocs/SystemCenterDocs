@@ -12,9 +12,6 @@ ms.technology: virtual-machine-manager
 ---
 
 # Route traffic across networks in the SDN infrastructure
-
-
-
 This article describes how to route traffic across networks in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
 An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
@@ -335,7 +332,7 @@ If you use BGP with L3 tunnel connection, BGP peering must be established betwee
 
 For BGP to work, you must do the following steps:
 
-1.	Add BGP peer for the L3 connection. Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
+1. Add BGP peer for the L3 connection using the **Add-SCBGPPeer** cmdlet.
 
   *Example*: Add-SCBGPPeer -Name "peer1" -PeerIPAddress "12.13.14.15" -PeerASN 15 -VMNetworkGateway $VmNetworkGateway
 
@@ -371,7 +368,6 @@ The result of this command provides the IP address that you must configure on th
  **Use the following procedure**:
 
 > [!NOTE]
-
 > Values used are examples only.
 
 1. Create the traffic selector by using the following parameters.
