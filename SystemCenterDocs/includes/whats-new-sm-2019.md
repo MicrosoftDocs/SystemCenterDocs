@@ -34,7 +34,6 @@ With SM 2019, we have enabled *Service Logon* type to make Service Manager more 
 This release of System Center Service Manager contains all the bug fixes shipped until the [Update Rollup 5 of SCSM 2016](https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager).  
 
 > [!NOTE]
-
 > The following feature was introduced in Service Manager 1807, enhanced in 2019.
 
 ## Support to SQL 2017 feature pack
@@ -43,7 +42,6 @@ You can upgrade SQL server 2016 to SQL 2017.
 [Learn more](../scsm/system-requirements.md)
 
 > [!NOTE]
-
 > The following feature was introduced in Service Manager 1801, included in 2019.
 
 ## Support to enhanced evaluation experience
