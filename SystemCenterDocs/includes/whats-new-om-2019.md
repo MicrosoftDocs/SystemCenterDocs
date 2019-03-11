@@ -146,7 +146,6 @@ With Operations Manager 2019, client-sider-monitoring supports the following web
 Application Performance Monitoring can now monitor websites that are created with SharePoint 2016.
 
 > [!NOTE]
-
 > The following features/feature updates were introduced in Operations Manager 1807, included in 2019.
 
 ## Configure APM component during agent install or repair
