@@ -106,19 +106,19 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
-### Reprotecting the DPM database after upgrading to DPM 2019
+### Reprotecting the DPM database after upgrade
 
-**Description**: When you upgrade from System Center Data Protection Manager to DPM 2019, the DPM database name might change in some scenarios.
+**Description**: When you upgrade DPM, database name might change in some scenarios.
 
-**Workaround**: If you are protecting a DPM database, be sure to enable protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the previous DPM database.
+**Workaround**: If you are protecting a DPM database, ensure to enable the protection for the new DPM database. Once the DPM upgrade is validated, you can remove protection for the previous DPM database.
 
 ### Hyper-V RCT - recover as files for D-T backup fails
 
-**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
+**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups does not exhibit this issue.
 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
-### DPM 2019 does not support end user recovery with Modern Backup Storage (MBS)
+### DPM 2019 does not support file server end user recovery with Modern Backup Storage (MBS)
 
 **Description**: DPM 2019 does not support end user recovery with Modern Backup Storage (MBS).
 
@@ -205,7 +205,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 ### Hyper-V RCT - recover as files for D-T backup fails
 
-**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T backups will not exhibit this issue.
+**Description**: Recovery of Hyper-V RCT VMs as files created directly on tape (D-T) fails. D-D-T does not exhibit this issue.
 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 

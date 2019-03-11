@@ -91,7 +91,7 @@ To create an email in HTML format, perform the following steps:
 
    The following table highlights the variables to use for various properties of the alert or links to the HTML content.
 
-   |Alert property of the link |Variable |  
+   | Alert property of the link | Variable |  
    |-------------|---|-------------|  
    |Alert Source  |$Data[Default='Not Present']/Context/DataItem/ManagedEntityPath$\$Data[Default='Not Present']/Context/DataItem/ManagedEntityDisplayName$ |
    | Alert Name  |$Data[Default='Not Present']/Context/DataItem/AlertName$ |

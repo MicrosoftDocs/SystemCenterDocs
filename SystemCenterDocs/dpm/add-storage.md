@@ -16,10 +16,10 @@ ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 
 ::: moniker range="<=sc-dpm-1807"
 
-Modern Backup Storage (MBS) is provided by System Center Data Protection Manager (DPM) to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage.
+Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage.
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server older than Windows Server 2016, it doesn't use MBS.
-- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each datasource needs two volumes, one for the initial backup and the other for delta changes.
+- MBS provides intelligent storage for short-term backup to disk.  MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/).
 
 DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
@@ -136,18 +136,18 @@ DPM 2016 consumes storage thinly, as needed. Once DPM is configured for protecti
 
 ::: moniker range="sc-dpm-2019"
 
-Modern Backup Storage (MBS) is provided by System Center Data Protection Manager (DPM) to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. DPM 2019 introduces further performance improvements with MBS resulting in 50-70% faster backup with Windows Server 2019.
+Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage. DPM 2019 introduces further performance improvements with MBS resulting in 50-70% faster backup with Windows Server 2019.
 
 > [!NOTE]
 > We recommend you to deploy DPM 2019 (using tiered volumes) on Windows Server 2019 to achieve enhanced backup performances.
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server earlier than Windows Server 2016, it doesn't use MBS.
 -	MBS provides intelligent storage for short-term backup to disk. MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
-- MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology.
+- MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology.[Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/).
 - With DPM 2019 and later, you can use tiered volumes for DPM native storage which delivers 50-70% faster backups
 
 
-DPM 2019 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk, use only a basic disk.
+DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk, use only a basic disk.
 
 You can directly give a volume to DPM, however, you may have issues in extending the volume if a need arises later. You can create additional volumes using storage pools, which could be exposed to DPM and extended as needed.   The following sections provide the details on how to create a tiered volume, add a volume to DPM, and expand it later
 
@@ -162,7 +162,7 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 
 Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
 
-1. Configure DPM storage
+1. Configure DPM storage.
     > [!NOTE]
     > Migrate your current backups to a temporary volume using [Volume Migration](#migrate-data-to-newly-created-volumes), in case you wish to modify your existing storage to tiered storage.
 
@@ -173,7 +173,7 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
 2.	Add the volumes to DPM.
 3.	Migrate your data back to the newly created volumes using Volume Migration performed in Step 1.
     > [!NOTE]
-    > Applicable only if you have migrated your earlier backups in Step 1
+    > Applicable only if you have migrated your earlier backups in Step 1.
 
 4.  Configure workload-aware storage.
 
@@ -263,7 +263,7 @@ Follow these steps:
 6. Select **Simple Layout** and click **Next**.
 
 7. **Fixed Provisioning** is the default selection.  Click **Next**.
-8. Provide the size for **Faster Tier** and **Standard Tier**.  **Faster Tier** corresponds to SSD and  **Standard Tier** corresponds to HDD. The size of the Faster Tier should be 4% the size of Standard Tier (For E.g. If the total requirement is 100 GB – if HDD is 96 GB, SDD should be 4 GB). Click **Next**.
+8. Provide the size for **Faster Tier** and **Standard Tier**.  **Faster Tier** corresponds to SSD and  **Standard Tier** corresponds to HDD. The size of the Faster Tier should be 4% the size of Standard Tier (For E.g. If the total requirement is 100 GB – if HDD is 96 GB, SDD should be 4 GB. Click **Next**.
 
     ![Tier](./media/add-storage/tier-size-2019.png)
 

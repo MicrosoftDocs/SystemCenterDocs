@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 ## Upgrade to System Center 2019 - Virtual Machine Manager
 
-The following sections provide information about how to upgrade to VMM 2019. Also includes upgrade steps, and tasks you should complete after the upgrade finishes.
+The following sections provide information about how to upgrade to VMM 2019. These include prerequisites, upgrade instructions, and tasks to complete after the upgrade finishes.
 
 ## Requirements and limitations
 
@@ -33,11 +33,15 @@ Ensure the following:
 3. Close any other programs that are running on the VMM management server.
 4. Ensure that there are no pending restarts on VMM servers.
 5. Perform a full backup of the VMM database.
-6. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
+6.  If the current SQL Server database used Always On availability groups:
+
+	- If the VMM database is included in the availability group, remove it in SQL Server Management Studio.
+	- Initiate a failover to the computer that is running SQL Server, on which the VMM database is installed.
+
+7. If you're running Operations Manager with VMM, disconnect the connection between VMM and Operations Manager server.
 
 
 ## Upgrade sequence for System Center components
-
 If you're running more than one System Center component, they should be upgraded in a specific order:
 
 1. Service Management Automation
@@ -56,6 +60,11 @@ If you're running more than one System Center component, they should be upgraded
 
 
 ## Upgrade a standalone VMM server
+
+>[!NOTE}
+> When you are upgrading a standalone VMM server, we recommended that you install VMM 2019 on the same server that had VMM 2016.  
+
+If you are using Distributed Key Management, you may choose to install VMM 2019 on a different server but make sure that the new server has the same name as that of the old VMM server.
 Use the following procedures:
 
 - [Back up and upgrade the OS](#back-up-and-upgrade-os)
@@ -65,12 +74,12 @@ Use the following procedures:
 1.	Back up and retain the VMM database.
 2.	[Uninstall the VMM](#uninstall-the-vmm). Ensure to remove both the management server and console.
 3.	Upgrade the management OS to Windows Server 2019.
-4.	Install Windows 10 or 1709 version of ADK respectively.
+4.	Install Windows 10 version of ADK.
 
 
 
 #### Uninstall the VMM
-1. Go to **Add remove programs**, select **VMM** and click **Uninstall**.
+1. Go to **Control Panel** > **Programs** > **Program and Features**, select **Virtual Machine Manager** and click **Uninstall**.
 2. On the **Uninstall wizard,** select **Remove Features**, select both **VMM management Server** and **VMM Console** under the features to remove, list.  
 3. On database options page, select **Retain database**.
 4. Review the summary and click **Uninstall**.
@@ -140,13 +149,8 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 1.	Backup and retain the VMM database.
 2.	[Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
-3.	VMM 2019 supports WS 2019 and 2016 as Management OS. On the passive VMM node, upgrade the management OS to Windows server 2019/2016. 		
-
- If the cluster has VMM 2016/1801/1807 on Windows Server (WS) 2016 and you want to upgrade to VMM 2019 on WS 2019, then use the following steps for each of such nodes in the cluster:
-	- Upgrade to VMM 2016/1801/1807 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster is not supported.
- 	- Upgrade the management OS to WS 1709.
-
-4.	Upgrade to the Windows 10/1709 version of the ADK.
+3.	On the passive VMM node, upgrade the management OS to Windows server 2019/2016. 		
+4. Upgrade to the Windows 10 version of the ADK.
 5. Install VMM 2019 on the passive node by using the following steps:
 	-	In the main setup page, click **Install**.
     -   In **Select features to install**, select  **VMM management server** and then click **Next**. The VMM console will be automatically installed.
@@ -185,6 +189,31 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 >  
  Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
 
+## Update VMM agents
+
+ After the upgrade, you need to update the VMM agents on your Hyper-V hosts and in your VMM library servers.
+
+ 1. Click **Fabric** >  **Servers** >  **All Hosts**.
+ 2. In the **Hosts** pane, right-click a column heading, and then click **Agent Version Status**.
+ 3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, click **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention**, and the **Agent Version Status** column will display **Upgrade Available**.
+ 4. Right-click the host with the VMM agent that you want to update, and then click **Update Agent**. In **Update Agent** provide the necessary credentials, and then click **OK**.
+ 5. The **Agent Version Status** column will display a value of **Upgrading**. After the VMM agent is updated successfully on the host, the **Agent Version Status** column will display a value of **Up-to-date**, and the **Agent Version** column will display the updated version of the agent. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
+ 6. You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, click **Fabric** > **Servers** > **Library Servers**.
+
+
+## Reassociate hosts and library servers
+
+ After the upgrade, you might need to reassociate virtual machine hosts and VMM library servers with the VMM management server.
+
+ Follow these steps:
+
+ 1.  Click **Fabric** > **Servers** > **All Hosts**.
+ 2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't displayed, right-	click a column heading, select **Agent Status**.
+ 3. In the host group, click **Refresh**. If a host needs to be reassociated, the Host Status column displays **Needs Attention**, and the **Agent Status** column displays **Access Denied**. Right-click the host that you want to reassociate, and then click **Reassociate**.
+ 4. In **Reassociate Agent** page, provide credentials, and then click **OK**.
+ 	The Agent Status displays the status as **Reassociating**. After the host is reassociated successfully, the  status changes to  **Responding**.   
+6. Refresh the host, the host status columns now displays **OK**.
+    After you have reassociated the host, you might need to update the VMM agent on the host.
 
 ## Upgrade the VMM SQL Server database
 
@@ -226,16 +255,6 @@ When uninstalling VMM server from last node, you may get a message about unsucce
 3. Restore the backed-up DB into another SQL cluster running supported SQL version. Add the user on which VMM service is running as User to this new DB with membership to db_owner.
 4. While upgrading VMM Server as part of SQL Cluster migration, give the Parameters corresponding to new SQL Cluster.
 
-## Update VMM agents
-
-After the upgrade, you need to update the VMM agents on your Hyper-V hosts and in your VMM library servers.
-
-1. Click **Fabric** >  **Servers** >  **All Hosts**.
-2. In the **Hosts** pane, right-click a column heading, and then click **Agent Version Status**.
-3. Select the host with the VMM agent that you want to update. On the **Hosts** tab, in the **Host** group, click **Refresh**. If a host needs to have its VMM agent updated, the **Host Status** column will display **Needs Attention**, and the **Agent Version Status** column will display **Upgrade Available**.
-4. Right-click the host with the VMM agent that you want to update, and then click **Update Agent**. In **Update Agent** provide the necessary credentials, and then click **OK**.
-5. The **Agent Version Status** column will display a value of **Upgrading**. After the VMM agent is updated successfully on the host, the **Agent Version Status** column will display a value of **Up-to-date**, and the **Agent Version** column will display the updated version of the agent. After you refresh the host again, the **Host Status** column for the host will display a value of **OK**.
-6. You can update the VMM agent on a VMM library server in a similar manner. To view a list of VMM library servers, click **Fabric** > **Servers** > **Library Servers**.
 
 ## Redeploy Azure Site Recovery
 

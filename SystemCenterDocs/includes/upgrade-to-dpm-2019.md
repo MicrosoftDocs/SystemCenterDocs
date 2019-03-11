@@ -27,7 +27,6 @@ You can upgrade to DPM 2019 from the following versions:
 ## Upgrade path for DPM 2019
 If you upgrade from DPM 2016 to DPM 2019, make sure your installation has the following necessary updates:
 
-- If you are upgrading from DPM 2016, then first upgrade to DPM 2016 Update Rollup 6 or later. You can download the Update Rollups from Windows Update.
 - Upgrade the DPM server to DPM 2019.
 - Update the agents on the protected servers.
 - Upgrade the DPM Remote Administrator on all production servers.
@@ -157,50 +156,6 @@ Update-DPMDiskStorage [-Volume] <Volume> [[-FriendlyName] <String> ] [[-Datasour
 ```
 
 The changes made through PowerShell are reflected in the UI.
-
-
-## Protect data sources
-To begin protecting data sources, create a Protection Group. The following procedure highlights changes or additions to the **New Protection Group** wizard.
-
-To create a Protection Group:
-
-1. In the DPM Administrator Console, select the **Protection** feature.
-
-2. On the tool ribbon, click **New**.
-
-    The **Create new Protection Group** wizard opens.
-
-  ![Create protection group](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-wiz.png)
-
-3. Click **Next** to advance the wizard to the **Select Protection Group Type** screen.
-4. On the **Select Protection Group Type** screen, select the type of Protection Group to be created and then click **Next**.
-
-  ![Choose server or client](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-group-screen2.png)
-
-5. On the **Select Group Members** screen, in the **Available members** pane, DPM lists the members with protection agents. For the purposes of this example, select volume D:\ and E:\ to add them to the **Selected members** pane. Once you have chosen the members for the protection group, click **Next**.
-
-  ![Select group members for protection group](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen3.png)
-
-6. On the **Select Data Protection Method** screen, type a name for the **Protection group**, select the protection method(s) and click **Next**.
-    If you want short term protection, you must use Disk backup.
-
-  ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen4.png)
-
-7. On the **Specify Short-Term Goals** screen specify the details for **Retention Range** and **Synchronization Frequency**, and click **Next**. If desired, click **Modify** to change the schedule when recovery points are taken.
-
-  ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
-
- The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
-
-  ![Review Disk Storage Allocation](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen6.png)
-
-  The storage volumes are determined based on the workload volume allocation (set using PowerShell) and the available storage. You can change the storage volumes by selecting other volumes from the drop-down menu. If you change the **Target Storage**, the **Available disk storage** dynamically changes to reflect the **Free Space** and **Underprovisioned Space**.
-
-  The **Underprovisioned Space** column in **Available disk storage**, reflects the amount of additional storage needed if the data sources grow as planned. Use this value to help plan your storage needs to enable smooth backups. If the value is zero, then there are no potential problems with storage in the foreseeable future. If the value is a number other than zero, then you do not have sufficient storage allocated  - based on your protection policy and the data size of your protected members.
-
-  ![Underallocated disk storage](../dpm/media/upgrade-to-dpm-2016/dpm-2016-underprovision-storage.png)
-
-The remainder of the New Protection Group wizard is unchanged from earlier version. Continue through the wizard to complete creation of your new protection group.
 
 ## Migrate legacy storage to Modern Backup Storage
 After upgrading to DPM 2019 and the operating system to Windows Server 2016/2019, you can update your existing protection groups to the new DPM 2016 features. By default, protection groups are not changed, and continue to function as they were configured in earlier version of your DPM. You can optionally update protection groups to use Modern Backup Storage, is optional. To update the protection group, stop protection of all data sources with **Retain Data** option, and add the data sources to a new protection group. DPM begins protecting these data sources the new way.

@@ -53,18 +53,18 @@ Back up a primary DPM server using a secondary DPM server:
 
     -   All replicas on the primary DPM server.
 
-    -   At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center 2012\\DPM\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center 2012\\DPM\\Scripting folder.
+    -   At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center\\DPM\\Scripting folder.
 
-Note that you can't exclude file names from protection for a replica. In addition all DPM servers must be running the same version, updates etc. When setting up synchronization we recommend you synchronize every 24 hours.
+Note that you can't exclude file names from protection for a replica. In addition, all DPM servers must be running the same version, updates etc. When setting up synchronization we recommend you synchronize every 24 hours.
 
 ### Set up DPM chaining
 Before you consider chaining note these limitations:
 
--   Each DPM server can only be protected once in the chain so verify they're not protected by more than one server.
+-   Each DPM server can only be protected once in the chain so verify that they're not protected by more than one server.
 
--   Primary and secondary servers are established by the chain. So for example if server DPM3 is actually protecting server DPM1 because it's acting as the secondary server for DPM2, it can't act directly as a secondary server for DPM1.
+-   Primary and secondary servers are established by the chain. So, for example if server DPM3 is actually protecting server DPM1 because it's acting as the secondary server for DPM2, it can't act directly as a secondary server for DPM1.
 
--   If a DPM server is configured to protect its own data source the chain will be broken. For example if DPM1 protects its own database or system state, DPM2 can't protect DPM1.
+-   If a DPM server is configured to protect its own data source the chain will be broken. For example, if DPM1 protects its own database or system state, DPM2 can't protect DPM1.
 
 -   Before you can protect the database of a primary DPM server you need to start the SQL Server VSS Writer service on the primary server.
 
@@ -141,7 +141,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 |Database backup method|Advantages|Disadvantages|
 |--------------------------|--------------|-----------------|
-|[Back up to Azure](#back-up-to-azure)|Easily configured and monitored in DPM.<br /><br />Multiple locations of the backup database files.<br /><br />Cloud storage provides a robust solution for disaster recovery.<br /><br />Very secure storage for the database.<br /><br />Supports 120 online recovery points.|Only available on DPM 2012 SP1 or later.<br /><br />Requires Azure account and additional DPM configuration. Incurs some cost for Azure storage.<br /><br />\- Requires an alternate Windows Server 2012 based system with the Azure agent to gain access to DPM backups stored in the Azure backup vault. This can't be another DPM server.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some extra preparation and recovery time is incurred.|
+|[Back up to Azure](#back-up-to-azure)|Easily configured and monitored in DPM.<br /><br />Multiple locations of the backup database files.<br /><br />Cloud storage provides a robust solution for disaster recovery.<br /><br />Very secure storage for the database.<br /><br />Supports 120 online recovery points.|Only available on DPM 2012 SP1 or later.<br /><br />Requires Azure account and additional DPM configuration. Incurs some cost for Azure storage.<br /><br />\- Requires a supported version of Windows Server based system with the Azure agent to gain access to DPM backups stored in the Azure backup vault. This can't be another DPM server.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some extra preparation and recovery time is incurred.|
 |[Back up the database by backing up the DPM storage pool](#back-up-the-database-by-backing-up-the-dpm-storage-pool)|Simple to configure and monitor.<br /><br />The backup is kept on the DPM storage pool disks and is easy to access locally.<br /><br />DPM scheduled backups support 512 express full backups. If you back up hourly you'll have 21 days of full protection.|Not a good option for disaster recovery. It's online and recovery might not work as expected if the DPM server or storage pool disk fails.<br /><br />Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Some preparation and special steps are required to gain access to the recovery points if the DPM service or console isn't running or working.|
 |[Back up to a secondary DPM server](#back-up-the-database-to-a-secondary-server)|Easily configured and monitored in DPM.<br /><br />DPM scheduled backups support 512 express full backups. If done hourly, this provides 21 days of short term protection. If done every 30 minutes, it provides 10 days of protection.<br /><br />The backup is kept on the secondary DPM server storage pool disks which are locally accessible.<br /><br />Provides a good disaster recovery solution if secondary DPM server is offsite.|Additional DPM server and storage are required. Both DPM servers must to be running the same DPM version and update rollups.|
 |[Back up to tape](#back-up-the-database-to-tape)|Easily configured and monitored in DPM.<br /><br />DPM scheduled tape backups support retention up to 99 years.<br /><br />Tape backup can be taken offsite for disaster recovery.<br /><br />Tape backup can be restored from any other DPM server that has a tape drive\/library attached that uses the same tape media type.<br /><br />Tape can be encrypted for secure storage.|Not an option if the database is hosted locally and you want to enable secondary protection. A workaround would be to use a remote SQL Server to host the database.<br /><br />Only one tape backup per day can be scheduled.<br /><br />You need a working DPM server with a tape library to be able to read a DPM backup tape that contains the copy of the database you want to restore.<br /><br />Some preparation and special steps are required to gain access to the tape based recovery points.|
@@ -154,7 +154,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 -   If the DPM SQL Server instance isn't running on the DPM server, install the DPM protection agent on the SQL Server computer before you can protect the DPM databases on that server.
 
--   NOTE: For restore purposes, the DPM installation you want to restore with the DPM database must match the version of the DPM database itself.  For example, if the database you want to recover is from a DPM 2012 R2 with Update Rollup 4 installation, the DPM server must be running the same version with Update Rollup 4. This means that you might have to uninstall and reinstall DPM with a compatible version before you restore the database.  To check the database version you might have to mount it manually to a temporary database name and then run a SQL query against the database to check the last installed rollup, based on the major and minor versions. To check the DPM database version, follow these steps:
+-   NOTE: For restore purposes, the DPM installation you want to restore with the DPM database must match the version of the DPM database itself.  For example, if the database you want to recover is from a DPM 2016 with Update Rollup 4 installation, the DPM server must be running the same version with Update Rollup 4. This means that you might have to uninstall and reinstall DPM with a compatible version before you restore the database.  To check the database version you might have to mount it manually to a temporary database name and then run a SQL query against the database to check the last installed rollup, based on the major and minor versions. To check the DPM database version, follow these steps:
 
     1.  To run the query, open SQL Management Studio, and then connect to the SQL instance that's running the DPM database.
 
@@ -389,11 +389,7 @@ This backup option leverages native SQL to back up the DPM database to a share, 
 
     -   On a remote SQL Server: **C:\Program Files\Microsoft Data Protection Manager\DPM\Scripting**
 
-    -   On a DPM 2012 R2 server: **C:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Scripting**
-
-    -   On a DPM 2012 or 2012 with SP1 server: **C:\Program Files\Microsoft System Center 2012\DPM\DPM\Scripting**
-
-    -   On a DPM 2010 server, or on a DPM 2012 server upgraded from DPM 2010: **C:\Program Files\Microsoft DPM\DPM\Scripting**
+    -   On a DPM server: **C:\Program Files\Microsoft System Center\DPM\DPM\Scripting**
 
 6.  Modify ScriptingConfig.xml and change DataSourceName= to be the drive letter that contains the DPMDBBACKUP folder/share. Change the PreBackupScript entry to the full path and name of thebkupdb.cmd saved in step 5.
 
@@ -415,12 +411,12 @@ This backup option leverages native SQL to back up the DPM database to a share, 
 
 9. If you don't enable self-service recovery, you'll need some additional steps to share out the DPMBACKUP folder on the replica:
 
-    1.  ) In the DPM console > **Protection**, locate the DPMBACKUP data source and select it. In the details section, click **Click to view details** on the link to the replica path and copy the path into Notepad. Remove the source path and retain the destination path. The path should look similar to the following: **C:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP**.
+    1.  In the DPM console > **Protection**, locate the DPMBACKUP data source and select it. In the details section, click **Click to view details** on the link to the replica path and copy the path into Notepad. Remove the source path and retain the destination path. The path should look similar to the following: **C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP**.
 
     2.  Make a share to that path using the share name **DPMSERVERNAME-DPMDB**. You can use the Net Share command below from an administrative command prompt.
 
         ```
-        Net Share DPMSERVERNAME-dpmdb="C:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP"
+        Net Share DPMSERVERNAME-dpmdb="C:\Program Files\Microsoft System Center\DPM\DPM\Volumes\Replica\File System\vol_c9aea05f-31e6-45e5-880c-92ce5fba0a58\454d81a0-0d9d-4e07-9617-d49e3f2aa5de\Full\DPMBACKUP"
         ```
 
 **Configure the backup**

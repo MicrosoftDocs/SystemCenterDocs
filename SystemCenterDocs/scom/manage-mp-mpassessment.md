@@ -236,22 +236,20 @@ The following workloads are supported for the operating systems listed below.
 ::: moniker range="=sc-om-2019"
 
 ## Support for Linux and Unix platforms
-- Solaris10Sparc, Solaris11Sparc
 - CentOS6 x64, CentOS7 x64
 - Oracle6 x64, Oracle7 x64
-- Sles11 x64, Sles12 x64
-- Rhel7PPC, Rhel5 x64, Rhel6 x64, Rhel7 x64
+- Sles12 x64
+- Rhel7 x64
 - Debian8 x64, Debian9 x64
-- Ubuntu14 x64, Ubuntu16 x64, Ubuntu 18 x64
+- Ubuntu16 x64, Ubuntu 18 x64
 - Aix 7.x
-- SUSE 12 PPC, SUSE 15
 
 ## Support for latest application servers
-- Apache Tomcat 7, 8, and 9
-- Red Hat JBoss 4, 5, and 6.
-- Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8/9/10/11/12/13/14  
-- IBM WebSphere 7.0, 8.0, 8.5, and 9.0
-- Oracle WebLogic 10gR3, 11, 12cR1JBoss, and 12cR2JBoss
+- Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9
+- Red Hat JBoss 4, JBoss 5, JBoss 6, JBoss 7, Wildfly Application Server 8/9/10/11/12/13/14, Red Hat JBoss EAP 6,  Red Hat JBoss EAP 7
+- IBM WebSphere 7.0, WebSphere 8.0, WebSphere 8.5, WebSphere 9.0
+- Oracle WebLogic 10gR3, Oracle WebLogic 11, WebLogic 12cR1, WebLogic 12cR2
+
 
 ::: moniker-end
 
