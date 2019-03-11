@@ -74,6 +74,9 @@ Operations Manager 2019 introduces the ability to create and send email notifica
 
 With this feature, an administrator would be able to configure an email in HTML format for sending notifications to subscribers. The administrators can use the existing default HTML email template, edit it, or create a new HTML message. With HTML email format, subscribers  get easy access to relevant information about the alert, alert source and the rule/monitor that generated the alert. They can view these details through the drill-down links available at the end of the email.
 
+>[!NOTE]
+> If you have only one SMTP server and it's unavailable, the retry interval has no effect. The retry interval is used when you have a secondary server and sending an email to the primary server fails.  Operations Manager then  switches to the secondary server and checks the retry interval time. If the Retry interval time has passed, Operations Manager tries to use the secondary server.
+
 To create an email in HTML format, perform the following steps:
 
 1.	Use the procedure in the above section for creating email notification channel.
