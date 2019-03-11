@@ -245,13 +245,11 @@ The following workloads are supported for the operating systems listed below.
 - Aix 7.x
 
 ## Support for latest application servers
-- Apache Tomcat 7, 8, and 9
-- Red Hat JBoss 4, 5, 6 and 7
-- Red Hat JBoss EAP 6, 7
-- JBoss Application Server 7
-- Wildfly Application Server 8/9/10/11/12/13/14  
-- IBM WebSphere 7.0, 8.0, 8.5, and 9.0
-- Oracle WebLogic 10gR3, 11, 12cR1JBoss, and 12cR2JBoss
+- Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9
+- Red Hat JBoss 4, JBoss 5, JBoss 6, JBoss 7, Wildfly Application Server 8/9/10/11/12/13/14, Red Hat JBoss EAP 6,  Red Hat JBoss EAP 7
+- IBM WebSphere 7.0, WebSphere 8.0, WebSphere 8.5, WebSphere 9.0
+- Oracle WebLogic 10gR3, Oracle WebLogic 11, WebLogic 12cR1, WebLogic 12cR2
+
 
 ::: moniker-end
 
