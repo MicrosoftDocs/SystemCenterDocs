@@ -28,7 +28,7 @@ The user interface is made responsive by addressing memory leak problems.
 ## Enable Service Logon
 In earlier releases, during the setup of Service Manager Management Server and Service Manager Data Warehouse Management Server, various credentials are asked for SM accounts. These accounts had been interactive (accounts having **Allow log on locally** (SetInteractiveLogonRight) permission).
 
-With SM 2019, we have enabled *Service Logon* type to make Service Manager more secure, and the default logon type is set to *Service Logon*. For information on how to grant service logon permissions to the Run As accounts, see [enable service logon feature](./systemcenterdocs/scom/enable-service-logon.md).
+With SM 2019, we have enabled *Service Logon* type to make Service Manager more secure, and the default logon type is set to *Service Logon*. For information on how to grant service logon permissions to the Run As accounts, see [enable service logon feature](../scom/enable-service-logon.md).
 
 ## Bug fixes
 This release of System Center Service Manager contains all the bug fixes shipped until the [Update Rollup 5 of SCSM 2016](https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager).  
