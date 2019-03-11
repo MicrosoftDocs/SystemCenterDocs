@@ -324,12 +324,11 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 ::: moniker-end
 
+::: moniker range="<sc-vmm-2019"
+
 > [!NOTE]
 
 > After configuring the L3 connection, you must  configure routes in your physical network for the tenant virtual network subnets, with the next hop as the IP address of the L3 interface on the SDN gateway (parameter LocalIpAddresses in the script). This is to ensure that the return traffic to the tenant virtual network is routed correctly through the SDN gateway.
-
-
-::: moniker range="<sc-vmm-2019"
 
 You can choose to configure static routes or dynamic routes (over BGP) with the L3 connection. If you are using static routes, you can add them using **Add-SCNetworkRoute** as described in the script below.
 
