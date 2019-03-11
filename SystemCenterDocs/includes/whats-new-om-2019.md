@@ -146,6 +146,7 @@ With Operations Manager 2019, client-sider-monitoring supports the following web
 Application Performance Monitoring can now monitor websites that are created with SharePoint 2016.
 
 > [!NOTE]
+
 > The following features/feature updates were introduced in Operations Manager 1807, included in 2019.
 
 ## Configure APM component during agent install or repair
@@ -164,7 +165,6 @@ On Linux platforms, OpenSSL 0.9.8 support is dropped, and added support for Open
 The UNIX and Linux agents have been enhanced to detect pseudo file system dynamically and ignore enumeration.
 
 > [!NOTE]
-
 > The following features/feature updates were introduced in Operations Manager 1801, included in 2019..
 
 ## Linux monitoring
