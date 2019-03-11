@@ -236,15 +236,13 @@ The following workloads are supported for the operating systems listed below.
 ::: moniker range="=sc-om-2019"
 
 ## Support for Linux and Unix platforms
-- Solaris10Sparc, Solaris11Sparc
 - CentOS6 x64, CentOS7 x64
 - Oracle6 x64, Oracle7 x64
-- Sles11 x64, Sles12 x64
-- Rhel7PPC, Rhel5 x64, Rhel6 x64, Rhel7 x64
+- Sles12 x64
+- Rhel7 x64
 - Debian8 x64, Debian9 x64
-- Ubuntu14 x64, Ubuntu16 x64, Ubuntu 18 x64
+- Ubuntu16 x64, Ubuntu 18 x64
 - Aix 7.x
-- SUSE 12 PPC, SUSE 15
 
 ## Support for latest application servers
 - Apache Tomcat 7, 8, and 9
