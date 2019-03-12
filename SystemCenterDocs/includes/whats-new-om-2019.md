@@ -133,7 +133,7 @@ If there are MPs in the catalog that are designed to monitor those workloads, th
 A new capability, **Machine Details** allow administrators to view the agent computer's name and the operating system installed on it.    
 
 ## Support for latest Application Servers
-Operations Manager 2019 supports latest Application Servers. [Learn more](../scom/manage-mp-assessment.md#support-for-latest-application-servers).
+Operations Manager 2019 supports latest Application Servers. [Learn more](../scom/manage-mp-mpassessment.md#support-for-latest-application-servers).
 
 ## Support for client-side monitoring on multiple browsers
 With Operations Manager 2019, client-sider-monitoring supports the following web browsers in addition to Internet Explorer:
