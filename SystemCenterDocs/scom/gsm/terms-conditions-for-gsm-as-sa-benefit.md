@@ -1,5 +1,5 @@
 ---
-title: "Terms and Conditions for System Center Global Service Monitor as a Software Assurance Benefit | Microsoft Docs"
+title: Terms and Conditions for System Center Global Service Monitor as a Software Assurance Benefit | Microsoft Docs
 ms.custom: ""
 ms.date: 4/26/2018
 ms.prod: system-center
