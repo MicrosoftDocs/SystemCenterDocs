@@ -103,7 +103,7 @@ The following procedures begin in the **Computer and Device Management Wizard**,
 
 ## Credentials for Run As accounts  
 
-The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](https://docs.microsoft.com/en-us/manage-security-config-crossplat-runas-profile.md).  
+The following procedures begin in the **Create UNIX\/Linux Run As Account Wizard** when you select the type for a **Run As Account** (**Monitoring Account** or **Agent Maintenance Account**), a name and password and provided a description. For more information, see [How to Configure Run As Accounts and Profiles for UNIX and Linux Access](https://docs.microsoft.com/en-us/system-center/scom/manage-security-config-crossplat-runas-profile?view=sc-om-1807).  
 
 ### To set a privileged credential for a monitoring account  
 
