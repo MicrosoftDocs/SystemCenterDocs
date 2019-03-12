@@ -75,3 +75,14 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 **Description**: If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations, to and from that file share, and might impact storage DO performance.
 
 **Workaround**: We recommend that you do not do a file share across different clusters, where storage dynamic optimization is enabled.
+
+##  In a scenario where VMM is monitored using Operations Manager, performance monitoring for VMM server fails with *Access denied* event error.
+
+**Description**: Service users do not have permission to access VirtualMachineManager-Server
+/Operational event log.
+
+**Workaround**: Change the security descriptor for Operational event log registry with the following command, and then restart the event log service and health log service.
+
+```
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"
+```
