@@ -82,7 +82,6 @@ Using L3 forwarding, tenant network virtual machines can connect to a physical n
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 > [!NOTE]
-
 > Ensure the following before you configure L3.
 
 > - Ensure you're logged on as an administrator on the VMM server.
