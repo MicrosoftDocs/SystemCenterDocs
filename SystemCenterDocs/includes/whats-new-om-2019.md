@@ -97,6 +97,7 @@ The following new platforms are supported for monitoring in Operations Manager 2
 - openSUSE Leap 15
 - Ubuntu 18
 - Debian 9
+- SUSE 12 PPC
 
 ## HTML 5 Web Console - client browsers
 For HTLM5 web console, the following client web browsers are supported:

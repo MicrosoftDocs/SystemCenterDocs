@@ -1,6 +1,6 @@
 ---
 title: include file
-description: include file that summarize the release notes for Operations Manager 2019.
+description: include file that summarizes the release notes for Operations Manager 2019.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -24,7 +24,7 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 ## User experience changes in maintenance mode
 
-**Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode. These  applicable to both Windows and Linux\Unix monitoring:
+**Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode. These changes are applicable to both Windows and Linux\Unix monitoring:
 
 - As an entity enters the maintenance mode, monitor-based active alerts on it will be automatically resolved.  In earlier releases, these alerts get automatically resolved when the entity exits the  maintenance mode.
 
@@ -64,7 +64,7 @@ This error occurs in a distributed management group scenario, where the reportin
 **Workaround**: We have added support for OpenSSL 1.1.0.
 
 ## Performance monitoring for VMM server fails with “Access denied”.
-**Description**: Service users does not have permission to access VirtualMachineManager-Server/Operational event log.
+**Description**: Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
 **Workaround**: Change the Security Descriptor for operational event log registry with the command below, and then restart event log service and health log service.
 
 ```
