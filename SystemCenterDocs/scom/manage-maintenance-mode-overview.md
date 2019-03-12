@@ -58,6 +58,11 @@ You can either select one or more monitoring objects and place them into mainten
 >
 >   For more information about setting the SDK action account, see [Account Information for Operations Manager](plan-security-accounts.md#system-center-configuration-service-and-system-center-data-access-service-account)
 
+- The accounts that are listed under the Operational Database Account profile should have SQLAgentOperatorRole permission on the MSDB database.
+- If any accounts that are listed under the Operational Database Account profile do not have access to the SQLAgentOperatorRole permission on the MSDB database, assign the SQLAgentOperatorRole permission on the MSDB database to each account under the Operational Database Account profile.
+- If you do not have any accounts listed under the Operational Database Account profile, then the accounts that are available under the Default Action Account profile should have the SQLAgentOperatorRole permission on the MSDB database. This permission is granted automatically during the fresh installation of SCOM 2019. However, in case of an upgrade to SCOM 2019 from a previous version of SCOM, this permission needs to be granted manually
+
+
 To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a system administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform it from the Operations console.  It can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
 The following section describes how to work with the different options for the on-demand maintenance mode feature.
@@ -316,14 +321,7 @@ The new schedule will appear in the list of maintenance schedules and you can ed
 
 In earlier releases of Operations Manager, maintenance schedules that targeted instances of SQL Server in an Always On availability group to provide high availability of the Operations Manager databases did not work when failover to a replica on another SQL Server instance occurred. Operations Manager 2019 includes a fix for this issue to prevent this behavior and ensures maintenance schedules work in a failover scenario.
 
-Here is the process to verify:
-**Verify that the required permissions are granted on all servers**:
-
--	The accounts that are listed under the *Operational Database Account*” profile should have *SQLAgentOperatorRole* permission on the MSDB database.
--	If any accounts that are listed under the *Operational Database Account* profile do not have access to the *SQLAgentOperatorRole* permission on the MSDB database, assign the *SQLAgentOperatorRole* permission on the MSDB database to each account under the *Operational Database Account* profile.
--	If you do not have any accounts listed under the *Operational Database Account* profile, the accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database. This permission is granted automatically during a new installation of Operations Manager 2019. However, in case of an upgrade to Operations Manager 2019 from a previous version, this permission needs to be granted manually.
-
->[!NOTE]
+**Guidelines**
 - As  part of  fix for this issue, the existing schedules are converted to the new design. This happens automatically while upgrading to Operations Manager 2019.
 - Any failures in the above operation are captured in the following database table:
 [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
@@ -335,7 +333,8 @@ Example:
     Delete [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
     EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
 
- After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value five minutes is to avoid causing a large performance decrease on the system.
+ >[!NOTE]
+ >After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value five minutes is to avoid causing a large performance decrease on the system.
 
 ::: moniker-end
 

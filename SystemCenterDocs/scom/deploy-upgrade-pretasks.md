@@ -18,7 +18,7 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 1. Review the Operations Manager Event Logs
 
-2. Cleanup the Database (ETL Table)
+2. Clean up the Database (ETL Table)
 
 3. Configure agents to failover between multiple gateway servers so all agents reporting to a gateway have a failover gateway assigned.   
 
@@ -28,15 +28,15 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 6. Disable any connectors
 
-7. Stop the Microsoft Monitoring Agent, System Center Data Access Service, System Center Configuration Management and Microsoft Monitoring Agent services on all management servers except the one being upgraded
+7. Stop the Microsoft Monitoring Agent, System Center Data Access Service, System Center Configuration Management, and Microsoft Monitoring Agent services on all management servers except the one being upgraded
 
 8. Verify that the Operational Database Has More Than 50 Percent Free Space
 
 9. Back up the Operations Manager Databases
 
-10. Update the agent's health service cache size temporarily to prevent loss of data while Management and Gateway servers are upgraded.
+10. Update the agent's health service cache size temporarily to prevent loss of data while Management, and Gateway servers are upgraded.
 
-11. Disable the Operations Manager website in IIS.
+11. Stop the application pool of Operations Manager and *MonitoringViews* in IIS server.
 
 ## Review the Operations Manager event logs
 
@@ -48,7 +48,7 @@ As part of upgrade to System Center Operations Manager installation (setup) incl
 
 ### To cleanup ETL
 
-To cleanup the ETL table, run the following script on the SQL Server hosting the OperationsManager database:
+To cleanup the ETL table, run the following script on the SQL Server hosting the Operations Manager database:
 
     -- (c) Copyright 2004-2006 Microsoft Corporation, All Rights Reserved         --
     -- Proprietary and confidential to Microsoft Corporation                      --       
@@ -90,7 +90,7 @@ Before you upgrade a management server, remove any agents that are in Pending Ma
 
 ## Disable notification subscriptions
 
-You should disable notification subscription before you upgrade the management group to ensure that notifications are not sent during the upgrade process.
+You must disable notification subscription before you upgrade the management group to ensure that notifications are not sent during the upgrade process.
 
 
 1. Log on to the Operations console account that is a member of the Operations Manager Administrators role for the Operations Manager management group.
@@ -116,13 +116,13 @@ To stop a service for a Connector, perform the following steps:
 
 ## Verify the Operations Manager database has more than 50 percent free
 
-You must verify that the operational database has more than 50 percent of free space before you upgrade the management group because the upgrade might fail if there is not enough space. You should also ensure that the transactions logs are 50 percent of the total size of the operational database.
+You must verify that the operational database has more than 50 percent of free space before you upgrade the management group because the upgrade might fail if there is not enough space. Ensure that the transactions logs are 50 percent of the total size of the operational database.
 
 1. On the computer that hosts the operational database, open **SQL Server Management Studio**.
 
 2. In the **Object Explorer**, expand **Databases**.
 
-3. Right-click the **OperationsManager** database, select to **Reports**, **Standard Reports**, and then click **Disk Usage**.
+3. Right-click the **Operations Manager** database, select to **Reports**, **Standard Reports**, and then click **Disk Usage**.
 
 4. View the **Disk Usage** report to determine the percentage of free space.
 
@@ -136,7 +136,7 @@ If the database does not have 50 percent free, perform the following steps to in
 
 4. In the **Authentication** list, select **Windows Authentication**, and then click **Connect**.
 
-5. In the **Object Explorer** pane, expand **Databases**, right-click the **OperationsManager** database, and then click **Properties**.
+5. In the **Object Explorer** pane, expand **Databases**, right-click the **Operations Manager** database, and then click **Properties**.
 
 6. In the **Database Properties** dialog box, under **Select a page**, click **Files**.
 
@@ -147,7 +147,7 @@ If the database does not have 50 percent free, perform the following steps to in
 
 8. Set the **Initial Size** value for the **MOM_LOG** transaction log to be 50 percent of the total size of the database. For example, if the operational database size is 100 GB, the log file size should be 50 GB. Then click **OK**.
 
-## Backup the Operations Manager databases
+## Back up the Operations Manager databases
 
 Obtain verified recent backups of the operational database and of the data warehouse database before you upgrade the secondary management server. You should also create backups of databases for optional features, such as the Reporting and the Audit Collection Services database before you upgrade them. For more information, see [Create a Full Database Backup (SQL Server)](https://msdn.microsoft.com/library/ms187510%28v=sql.130%29.aspx).
 
@@ -157,7 +157,7 @@ Before upgrading the first management server in your management group, it is rec
 
 ## Increase agent HealthService cache size
 
-To ensure the agents can queue data during the upgrade, please update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
+To ensure the agents can queue data during the upgrade, update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb
 
@@ -167,4 +167,4 @@ Once you have completed the upgrade of the management group, you can reset it ba
 
 ## Next steps
 
-To continue with the upgrade please review [Upgrade overview](deploy-upgrade-overview.md).
+To continue with the upgrade, review [Upgrade overview](deploy-upgrade-overview.md).
