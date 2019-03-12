@@ -83,7 +83,6 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 > [!NOTE]
 > Ensure the following before you configure L3.
-
 > - Ensure you're logged on as an administrator on the VMM server.
 > - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
@@ -254,9 +253,8 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 > [!NOTE]
 
 > Ensure the following before you attempt to configure L3 connection.
-
-> - Ensure you're logged on as an administrator on the VMM server.
-> - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
+    - Ensure you're logged on as an administrator on the VMM server.
+    - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
 **Use the following steps to create the next-hop logical network in VMM:**
 
@@ -322,7 +320,6 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 ::: moniker range="<sc-vmm-2019"
 
 > [!NOTE]
-
 > After configuring the L3 connection, you must  configure routes in your physical network for the tenant virtual network subnets, with the next hop as the IP address of the L3 interface on the SDN gateway (parameter LocalIpAddresses in the script). This is to ensure that the return traffic to the tenant virtual network is routed correctly through the SDN gateway.
 
 You can choose to configure static routes or dynamic routes (over BGP) with the L3 connection. If you are using static routes, you can add them using **Add-SCNetworkRoute** as described in the script below.
