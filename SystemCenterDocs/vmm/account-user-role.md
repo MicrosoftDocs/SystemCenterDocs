@@ -14,7 +14,6 @@ ms.technology: virtual-machine-manager
 
 # Set up user roles in VMM
 
-
 This article describes how to set up System Center - Virtual Machine Manager (VMM) user roles.
 
 ## Before you start
@@ -25,6 +24,8 @@ This article describes how to set up System Center - Virtual Machine Manager (VM
     - **Administrator role**: Administrators can add and remove users
     - **Delegate Administrator role**: Administrators can create the role. Delegated Administrators can create Delegated Administrator roles that include a subset of their scope, library servers, and Run As accounts.
     - **Read-only Administrator role**: Administrators can create the role. Delegated Administrators can create Read-only Administrator roles that include a subset of their scope, library servers, and Run As accounts.
+    - **Virtual Machine Administrator role**(applicable for 2019 and later): Administrators can create the role.
+    Delegated Administrator can create VM administrator role that includes entire scope or a subset of their scope, library servers and Run-As accounts.
     - **Tenant Administrator role**: Administrators and Delegated Administrators can create this role.
 - The Administrator role is created by default when you install VMM. The user who performs the installation, and all domain users in the local Administrators group on the server, are added to the Administrator role. You can add or remove members in the role properties.
 
@@ -49,6 +50,3 @@ This article describes how to set up System Center - Virtual Machine Manager (VM
     To limit the combined number of VM networks that can be created by all members of this user role, use the upper setting. To limit the number of VM networks that can be created by each individual member of this user role, use the lower setting.
 
 13. In **Summary** page, review the settings, and click **Finish** to create the role. Verify the role appears in **Settings** > **Security** > **User Roles**.
-
-
-After you create a user role, you can change its settings in the role properties.

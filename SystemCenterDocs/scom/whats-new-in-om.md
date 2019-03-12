@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 12/21/2018
+ms.date: 01/25/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,9 +14,17 @@ ms.topic: article
 
 # What's New in Operations Manager
 
+::: moniker range="sc-om-2019"
+
+This article details the new features supported in System Center 2019 - Operations Manager.
+
+[!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-1807"
 
-This article details the new features supported in System Center 1807 - Operations Manager (OM).
+This article details the new features supported in System Center 1807 - Operations Manager.
 
 [!INCLUDE [whats-new-om-1807.md](../includes/whats-new-om-1807.md)]
 
@@ -24,13 +32,13 @@ This article details the new features supported in System Center 1807 - Operatio
 
 ::: moniker range="sc-om-1801"
 
-This article details the new features supported in System Center 1801 - Operations Manager (OM).
+This article details the new features supported in System Center 1801 - Operations Manager.
 
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
 
-This article details the new features supported in System Center 2016 - Operations Manager (OM).
+This article details the new features supported in System Center 2016 - Operations Manager.
 
 ::: moniker-end
 
@@ -47,4 +55,4 @@ This article details the new features supported in System Center 2016 - Operatio
 ::: moniker-end
 
 ## Next steps
-[Know the OM system requirements](plan-system-requirements.md)
+[Know the system requirements for Operations Manager](plan-system-requirements.md)

@@ -13,6 +13,14 @@ ms.technology: service-management-automation
 
 # Upgrade Service Management Automation
 
+::: moniker range="sc-sma-2019"
+
+This article provides the upgrade information for System Center 2019 - Service Management Automation (SMA).
+
+[!INCLUDE [upgrade-to-sma-2019.md](../includes/upgrade-to-sma-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sma-1807"
 
 You must have System Center - Service Management Automation 1801 installed to apply the 1807 update. [Learn more on how to install SMA 1807 ](https://support.microsoft.com/en-us/help/4135041/system-center-service-management-automation-version-1807).

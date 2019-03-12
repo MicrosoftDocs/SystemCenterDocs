@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## What's New in OM 1801
+## New features in Operations Manager 1801
 
 The contents in the following sections describe new features in System Center 1801 - Operations Manager.
 

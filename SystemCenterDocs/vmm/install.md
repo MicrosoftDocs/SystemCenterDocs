@@ -19,8 +19,18 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 
 - Review the system requirements and [planning information](plan-install.md). Learn about [system requirements](system-requirements.md)
 - Make sure you have at least local admin permissions on the computer before you run the setup.
+- The service account should be an administrator on the VMM server.
 
 ## Run setup
+
+> [!NOTE]
+
+>   The service account for VMM can be:
+ - 	A local account
+ - 	A user account used for service
+ -	A group managed service account.
+ - If you are using a local account, you can’t have VMM in highly available configuration.
+ - If you are using gMSA account, the format should be *domainFQDN\gMSAAccount$*
 
 1. Close any open programs and ensure that no restarts are pending on the computer.
 2. To start the Virtual Machine Manager Setup wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
@@ -112,7 +122,7 @@ Parameter | Details
 
 1.  Make sure the VMM console and VMM command shell are closed.
 2. On the computer on which the VMM management server is installed, click **Start**, and then click **Control Panel**.
-3.  Under **Programs**, click **Uninstall a program**. Under **Name**, double-click **Microsoft System Center 2016 Virtual Machine Manager**.
+3.  Under **Programs**, click **Uninstall a program**. Under **Name**, double-click **Microsoft System Center Virtual Machine Manager**.
 4.  On the **What would you like to do?** page, click **Remove features**.
 5.  On the **Select features to remove** page, select the **VMM management server** check box, and then click **Next**. If you want to uninstall the VMM console, select the **VMM console** check box. Note that if you have a highly available VMM deploy, you must remove both the VMM server and VMM console.
 6.  On the **Database options** page, select whether you want to retain or remove the VMM database, and, if necessary, credentials for the database, and then click **Next**.
@@ -142,3 +152,24 @@ Option | Details | Default value
 RemoteDatabaseImpersonation | 0: Local SQL Server installation.<br/><br/> 1: Remote SQL Server installation.<br/><br/> When you run setup.exe, provide a value for the SqlDBAdminName, SqlDBAdminPassword, and SqlDBAdminDomain parameters unless the user who is running setup.exe is an administrator for SQL Server. | 0
 RetainSqlDatabase | 0: Remove the SQL Server database.<br/><br/> 1: Do not remove the SQL Server database<br/><br/> To remove the SQL Server database, when you run setup.exe, provide a value for the SqlDBAdminName, SqlDBAdminPassword, and SqlDBAdminDomain parameters unless the user who is running Setup is an administrator for SQL Server. | 0
 ForceHAVMMUninstall | 0: Do not force uninstallation if setup.exe cannot verify whether this node is the final node of the highly available installation.<br/><br/> 1: Force the uninstallation.
+
+## Support for gMSA account
+Group Managed Service Account (gMSA) helps improve the security posture and provides convenience  through automatic password management, simplified service principle name (SPN) management and the ability to delegate the management to other administrators.
+
+VMM 2019 supports the use of gMSA for *Management server service account*.
+
+**Prerequisites**
+
+1. Review [this article](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts) and create gMSA as per the guidance available in the article.
+2. Make sure that the servers on which VMM Management service would be installed have permissions to retrieve the password of gMSA account.
+
+> [!NOTE]
+> You do not need to specify the SPN when creating the gMSA. VMM service sets the appropriate SPN on the gMSA.
+
+**Use the following steps**
+
+1. Start the VMM installation setup.
+2. On the **Service account configuration** page, select **Group Managed Service Account** as the option for VMM service account.
+3. Enter the gMSA account details in *Domain\gMSA account* format.
+
+    ![gmsa](./media/install/configure-service-account.png)

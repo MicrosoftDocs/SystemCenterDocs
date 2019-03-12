@@ -8,18 +8,140 @@ manager: carmonm
 ms.date: 07/20/2018
 ms.custom: na
 ms.prod: system-center
-monikerRange: '<sc-om-1807'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Supported UNIX and Linux operating system versions
 
+::: moniker range="sc-om-2019"
+
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2019 - Operations Manager.
+
+
+## IBM AIX 7.1
+|Required package|Description|Minimum version|  
+|--------------------|---------------|-------------------|
+|OS version|Version of operating system|7100-01-06-1241|
+|xlC.rte|XL C/C++ Runtime|11.1.0.2|
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0|
+
+
+## IBM AIX 7.2
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|OS version|Version of operating system|7100-01-06-1241|
+|xlC.rte|XL C/C++ Runtime|11.1.0.2|
+|OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0|
+
+## Red Hat Enterprise Linux Server 7
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc|C Standard Libraries|2.17|
+|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
+|PAM|Pluggable Authentication Modules|1.1.8-1|
+
+## Red Hat Enterprise Linux Server 7 (Power)
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc|C Standard Libraries|2.17|
+|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.0.1e-fips|
+|PAM|Pluggable Authentication Modules|1.1.8|
+
+## Solaris 10 SPARC
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|SUNWlibC |Sun Workshop Compilers Bundled libC|5.10, REV=2004.12.22|
+|SUNWlibms|Math & Microtasking Libraries (Usr)|5.10, REV=2004.11.23|
+|SUNWlibmsr|Math & Microtasking Libraries (Root)|5.10, REV=2004.11.23|
+|SUNWcslr|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
+|SUNWcsl|Core Solaris Libraries (Root)|11.10.0, REV=2005.01.21.15.53|
+|SUNWopenssl-libraries|SUNopenssl-libraries (Usr)|11.10.0, REV=2005.01.21.15.53|
+|SUNWcsr|Core Solaris (Root)|11.10.0, REV=2005.01.21.15.53|
+|Release|Oracle Solaris 10 1/13|s10s_u11wos_24a SPARC|
+
+## Solaris 11 SPARC
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|SUNWlibC|Sun Workshop Compilers Bundled libC|5.11, REV=2011.04.11|
+|SUNWlibmsr|Math & Microtasking Libraries (Root)|5.11, REV=2011.04.11|
+|SUNWcslr|Core Solaris Libraries (Root)|11.11, REV=2009.11.11|
+|SUNWcsl|Core Solaris (Shared Libs)|11.11, REV=2009.11.11|
+|SUNWcsr|Core Solaris (Root)|11.11, REV=2009.11.11|
+|SUNWopenssl-libraries|OpenSSL Libraries (Usr)|11.11.0, REV=2010.05.25.01.00|
+|Release|Oracle Solaris 11|11/11 SPARC|
+
+## Solaris UTF\-8 Support
+The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.
+
+## SUSE Linux Enterprise Server 12
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc-2.19-17.72|C Standard shared library|2.19-17.72|
+|PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+## SUSE Linux Enterprise Server 12 (Power)
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc-2.19-17.72|C Standard shared library|2.19-17.72|
+|PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+## SUSE Linux Enterprise Server 15
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc-2.19-17.72|C Standard shared library|2.19-17.72|
+|PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+## openSUSE Leap 15
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc-2.19-17.72|C Standard shared library|2.19-17.72|
+|PAM|Pluggable Authentication Modules|pam-1.1.8-11.57|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0|
+
+## Universal Linux (Debian package)
+
+Debian 8, 9 and Ubuntu 16.04, 18.04 are supported
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|libc6|C Standard shared library|2.24-11|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|1.0 or 1.1|
+|PAM|Pluggable Authentication Modules|1.1.8-3.1|
+
+## Universal Linux (RPM package)
+
+CentOS 6 and 7, Oracle Linux 6, 7 are supported
+
+|Required package|Description|Minimum version|
+|--------------------|-   --------------|-------------------|
+|glibc|C Standard shared library|2.5-12|
+|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|
+|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
+
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager and version 1801.  
 
 >[!NOTE]
 >Monitoring UNIX and Linux computers with System Center Operations Manager 2012 R2 management server is supported when using the System Center 2016 - Operations Manager agent with the Operations Manager 2012 R2 UNIX and Linux management packs.  You cannot import the required Operations Manager 2016 management packs for the specific version of UNIX/Linux and discover and deploy the Operations Manager 2016 agent from the **Computer and Device Management** wizard in your 2012 R2 management group.  This task must be performed manually following the command-line based deployment.  
 >
+
+::: moniker-end
 
 ::: moniker range="sc-om-1801"
 
@@ -32,6 +154,8 @@ The following tables describe the required UNIX and Linux operating systems and 
 |OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8.1800|
 
 ::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 ## IBM AIX 7 (Power)  
 
@@ -173,3 +297,5 @@ CentOS, Oracle Linux
 |glibc|C Standard shared library|2.5-12|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|  
+
+::: moniker-end

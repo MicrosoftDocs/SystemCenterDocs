@@ -13,6 +13,14 @@ ms.technology: service-manager
 
 # System requirements for System Center Service Manager
 
+::: moniker range="sc-sm-2019"
+
+This article details the system requirements for System Center 2019 - Service Manager (SM).
+
+[!INCLUDE [system-reqs-sm-2019](../includes/system-reqs-sm-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sm-1807"
 
 This article details the system requirements for System Center 1807 - Service Manager (SM).

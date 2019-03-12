@@ -58,7 +58,7 @@ You can either select one or more monitoring objects and place them into mainten
 >
 >   For more information about setting the SDK action account, see [Account Information for Operations Manager](plan-security-accounts.md#system-center-configuration-service-and-system-center-data-access-service-account)
 
-To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a server administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform it from the Operations console.  It can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
+To support the scenario of initiating maintenance mode directly from the agent-managed computer, Operations Manager now supports allowing a system administrator to set the machine in maintenance mode directly from the computer itself, without needing to perform it from the Operations console.  It can be performed with the new PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  
 
 The following section describes how to work with the different options for the on-demand maintenance mode feature.
 
@@ -119,9 +119,26 @@ The following section describes how to work with the different options for the o
     > [!NOTE]
     > Because Operations Manager polls maintenance mode settings only once every 5 minutes, there can be a delay in an object's scheduled removal from maintenance mode.
 
+::: moniker range="<sc-om-2019"
+
 ### Enable from Target System
 
-Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs the PowerShell cmdlet on the computer, the command creates an entry in the registry, which stores arguments for Maintenance Mode, such as duration, reason, comment, and information like time of invocation of cmdlet. The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.  
+Maintenance mode can be enabled directly from the monitored Windows computer by a systems administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When a systems administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event in the Operations Manager event log, and stores arguments for the maintenance activity such as duration, reason, comment, and information (like the time when the cmdlet was invoked).
+
+The comment field contains user information, specifically who has invoked maintenance mode. A rule that targets the agent, runs every 5 minutes to read this registry entry on the agent with a PowerShell script  **ReadMaintenanceModeRegEntry.ps1**, and then marks this entry as invalid so at next invocation it will not pick this entry. The write action, which is part of the rule and targets the management server, takes this record and sets maintenance mode for the agent based on the record read from the registry.  The frequency the rule runs can be overridden to a custom interval.
+
+::: moniker-end  
+
+::: moniker range="sc-om-2019"
+
+### Enable from Target System
+
+Maintenance mode can be enabled directly from the monitored Windows computer by a server administrator using the PowerShell cmdlet **Start-SCOMAgentMaintenanceMode**.  When server administrator or operator runs this PowerShell cmdlet on the computer, the command logs an event, which stores arguments for the maintenance mode, such as duration, reason, comment, and information like time of invocation of cmdlet.
+
+A rule that targets the agent, reads the event entry on the agent and stores this in Operations Manager database. There is another rule *Microsoft.SystemCenter.Agent.MaintenanceMode.Trigger.Rule*, which runs every 4 minutes by default, and reads this event from the Operations Manager database. It then sets maintenance mode on the agent, based on the record read from the event. You can override the frequency rule to a custom value.
+
+::: moniker-end
+
 
 **Start-SCOMAgentMaintenanceMode** has the following syntax:
 
@@ -171,14 +188,25 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 5. Type **Start-SCOMAgentMaintenanceMode** and use the parameters to configure the maintenance mode request.
 
+::: moniker range="<sc-om-2019"
+
 > [!NOTE]  
-> To confirm that Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
+> To confirm that the Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
 
 > In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the **Start-SCOMAgentMaintenanceMode** cmdlet:
 > `Set-ItemProperty -Path "HKLM:\software\Microsoft\Microsoft Operations Manager\3.0\MaintenanceMode" -Name record -Value "" `  
 
+::: moniker-end
 
-## Scheduling Maintenance Mode
+::: moniker range="sc-om-2019"
+
+> [!NOTE]
+To confirm that maintenance mode request is successful, look in the Operations Manager event log for event ID 2222 followed by an event with event ID 2223. In case event ID 2223 is not available, submit the maintenance mode request again.
+
+::: moniker-end
+
+
+## Schedule maintenance mode
 
 The following section describes how to work with the different options available for the maintenance mode scheduling feature.
 
@@ -234,9 +262,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
 The new schedule will appear in the list of maintenance schedules and you can edit, disable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the **Tasks** pane.    
 
-::: moniker range="sc-om-1807"
+::: moniker range=">sc-om-1801"
 
-## Create Maintenance Schedule in the Web console
+## Create maintenance schedule in the Web console
 
 The following procedure describes how to create a maintenance schedule for selected monitored objects for a future date in the Web console.  
 
@@ -276,8 +304,40 @@ The following procedure describes how to create a maintenance schedule for selec
 
     4.  Select **Enable Schedule** if you want to enable the schedule now, or clear it if you plan on enabling the schedule later.
 
-11. Click **Finish** to save your changes.  
+7. Click **Finish** to save your changes.  
 
-The new schedule will appear in the list of maintenance schedules, and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.    
+The new schedule will appear in the list of maintenance schedules and you can edit, disable, enable, or delete a maintenance schedule from the list.  This can be accomplished by selecting the schedule from the list and choosing the corresponding option from the menu at the top of the page.  
+
+::: moniker-end  
+
+::: moniker range="sc-om-2019"
+
+## Enable scheduled maintenance mode with SQL Always On
+
+In earlier releases of Operations Manager, maintenance schedules that targeted instances of SQL Server in an Always On availability group to provide high availability of the Operations Manager databases did not work when failover to a replica on another SQL Server instance occurred. Operations Manager 2019 includes a fix for this issue to prevent this behavior and ensures maintenance schedules work in a failover scenario.
+
+Here is the process to verify:
+**Verify that the required permissions are granted on all servers**:
+
+-	The accounts that are listed under the *Operational Database Account*” profile should have *SQLAgentOperatorRole* permission on the MSDB database.
+-	If any accounts that are listed under the *Operational Database Account* profile do not have access to the *SQLAgentOperatorRole* permission on the MSDB database, assign the *SQLAgentOperatorRole* permission on the MSDB database to each account under the *Operational Database Account* profile.
+-	If you do not have any accounts listed under the *Operational Database Account* profile, the accounts that are available under the *Default Action Account* profile should have the *SQLAgentOperatorRole* permission on the MSDB database. This permission is granted automatically during a new installation of Operations Manager 2019. However, in case of an upgrade to Operations Manager 2019 from a previous version, this permission needs to be granted manually.
+
+>[!NOTE]
+- As  part of  fix for this issue, the existing schedules are converted to the new design. This happens automatically while upgrading to Operations Manager 2019.
+- Any failures in the above operation are captured in the following database table:
+[OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
+- Schedules which fail to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
+    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '<ScheduleIDOftheMMSchedule>'
+Example:
+    EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '1A6917C6-999C-E811-837B-02155DC77B3F'
+- To convert all the schedules to the new design, use the following command:
+    Delete [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
+    EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
+
+ After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value five minutes is to avoid causing a large performance decrease on the system.
 
 ::: moniker-end
+
+## Next steps
+[Create and manage groups](manage-create-manage-groups.md)

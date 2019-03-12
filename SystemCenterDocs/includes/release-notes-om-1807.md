@@ -11,9 +11,9 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## OM 1807 release notes
+## Operations Manager 1807 release notes
 
-The following sections summarize the release notes for OM 1807 and include the known issues and workarounds. For more information about version 1807 and what issues are addressed, see [KB4133779](https://support.microsoft.com/help/4133779).
+The following sections summarize the release notes for Operations Manager 1807 and include the known issues and workarounds. For more information about version 1807 and what issues are addressed, see [KB4133779](https://support.microsoft.com/help/4133779).
 
 ## Log rotation for Linux agent
 **Description:** Under certain scenarios, the SCX logs fill up frequently, which eventually consumes all available free space on the system disk.  As a result, the system becomes unresponsive unless the logs are cleaned up manually.  To address this issue, we have introduced a logrotate feature for SCX agent. This will help you rotate old logs and save disk space.

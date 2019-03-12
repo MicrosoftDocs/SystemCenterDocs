@@ -1,0 +1,77 @@
+---
+ms.assetid: ac25266c-9def-404d-95dc-6d037fb710e4
+title: include file
+description: include file to summarize the release notes for VMM 2019.
+author:  JYOTHIRMAISURI
+ms.author: v-jysur
+manager:  vvithal
+ms.date:  02/11/2019
+ms.topic:  include
+ms.prod:  system-center
+ms.technology:  virtual-machine-manager
+---
+
+## VMM 2019 release notes
+
+The following sections summarize the release notes for VMM 2019 and include the known issues and workarounds.
+
+## Removal of cluster node fails with CleanUpDisks flag
+
+ **Description**: When you remove a cluster node from Windows Server 2019 S2D cluster, with a CleanUpDisks flag, the removal fails with **Could not get the specified instance MSFT_StorageJob** error, in the following scenarios
+
+  - The storage capacity is inadequate in the remaining servers to accommodate all the volumes.
+
+  - There are not enough fault domains to provide the resiliency of the volume.  
+
+**Workaround**: Ensure the following:
+
+-  Adequate storage capacity is available in the remaining servers to accommodate all the volumes
+
+-  Enough fault domains are available to provide the resiliency of your volumes.  
+
+## Addition of storage device having SMI-S management interface fails
+
+**Description**: Addition of storage device having SMI-S management interface fails with the error *Registration of storage provider failed with error code WsManMIInvokeFailed* when System Center Virtual Machine Manager (VMM) 2019 is installed on Windows Server 2019.  
+
+**Workaround**: VMM depends on the *Windows Standards-Based Storage Management* service to manage the storage devices using SMI-S. Make sure that the service is started before trying to add the storage device.  
+
+## Windows Server 2019 does not support HNVv1 networks
+
+**Description**: Windows Server 2019 does not support HNVv1. If HNVv1 is currently in use, then the cluster that is utilizing HNVv1 should not be upgraded to Windows Server 2019 using Cluster Rolling Upgrade.
+
+**Workaround**: Migrate out of HNVv1 to SDNv2 on Windows Server 2016 before using Cluster Rolling upgrade to Windows Server 2019.
+
+## Latest accessibility fixes in Console are not available
+
+**Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM console.
+
+**Workaround**: We recommend using .NET 4.7.1 while installing the VMM Console. For detailed information on .NET 4.7.1 migration, see [the article on .NET migration
+ ](https://docs.microsoft.com/dotnet/framework/migration-guide/retargeting/4.7-4.7.1).    
+
+## Backend adapter connectivity for SLB MUX doesn't work as expected
+
+**Description**: Backend adapter connectivity of SLB MUX might not work as expected after the migration of virtual machine (VM).
+
+**Workaround**: Users scale in/scale out in the SLB MUX VM as a workaround.
+
+## Cluster Rollup Upgrade fails
+
+**Description**: Cluster rollup upgrade (CRU) fails during the *Connect Hyper-V host to storage arrays* stage, if the Windows Server 2019 Virtual Hard Disk (VHD) in library server, used as the computer profile for redeploying the operating system (OS) is not installed with the latest updates.
+
+**Workaround**: To resolve this error, install all the pending updates on the VHD and restart the CRU job.
+
+To avoid this issue, prior to CRU triggering, ensure to install the latest OS updates on the VHD that you want to use for CRU.  
+
+##Storage Dynamic Optimization does not trigger VHD migration even when optimization criteria are met
+
+**Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV),  when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases the VHDs might not be migrated even if all other Storage DO conditions are met.
+
+**Workaround**: To ensure Storage migration is triggered, do the following:
+1.	Check the *HostVolumeID* using *Get-SCStorageVolume* cmdlet. If the *HostVolumeID* returns Null for the volume, refresh the VM and perform Storage DO again.
+2.	Check the *DiskSpacePlacementLevel* of the host group using the *Get-SCHostResever* cmdlet. Set the *DiskSpacePlacementLevel* value that is equal to the value of disk space as in *Host Reserve* settings, in the Dynamic Optimization wizard.
+
+## Storage Dynamic Optimization disk performs multiple back and forth VHD migrations
+
+**Description**: If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations, to and from that file share, and might impact storage DO performance.
+
+**Workaround**: We recommend that you do not do a file share across different clusters, where storage dynamic optimization is enabled.
