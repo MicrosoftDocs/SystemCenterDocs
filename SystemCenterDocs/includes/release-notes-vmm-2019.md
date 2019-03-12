@@ -5,7 +5,7 @@ description: include file to summarize the release notes for VMM 2019.
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  02/11/2019
+ms.date:  03/14/2019
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
