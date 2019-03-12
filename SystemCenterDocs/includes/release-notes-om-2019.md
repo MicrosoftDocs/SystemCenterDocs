@@ -47,7 +47,7 @@ If you try to push install the agent from the console to a x86 computer, the fol
 
 *Management Server Upgraded Check - The management server to which this component reports, has not been upgraded. and the upgrade cannot proceed*.
 
-This error occurs in a distributed management group scenario, where the reporting server is on a server, which is different from one or more management servers in the management group.
+This error occurs in a distributed management group scenario, where the reporting server is on a server that is  different from one or more management servers in the management group.
 
 **Workaround**: Install the System Center 2016/1801/1807 - Operations Manager Operations console on the server that is hosting the reporting server role, and then retry upgrading the reporting server role to version 2019. Once the upgrade is successful, you can uninstall the upgraded Operations console from the reporting server.
 
@@ -64,7 +64,7 @@ This error occurs in a distributed management group scenario, where the reportin
 **Workaround**: We have added support for OpenSSL 1.1.0.
 
 ## Performance monitoring for VMM server fails with “Access denied”.
-**Description**: Service users does not have permission to access VirtualMachineManager-Server/Operational event log.
+**Description**: Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
 **Workaround**: Change the Security Descriptor for operational event log registry with the command below, and then restart event log service and health log service.
 
 ```
