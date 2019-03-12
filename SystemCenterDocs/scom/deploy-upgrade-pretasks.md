@@ -36,7 +36,7 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 10. Update the agent's health service cache size temporarily to prevent loss of data while Management and Gateway servers are upgraded.
 
-11. Disable the Operations Manager website in IIS.
+11. Stop the application pool of Operations Manager and *MonitoringViews* in IIS server.
 
 ## Review the Operations Manager event logs
 

@@ -83,8 +83,8 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
 > [!NOTE]
 > Ensure the following before you configure L3.
- - Ensure you're logged on as an administrator on the VMM server.
- - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
+    >- Ensure you're logged on as an administrator on the VMM server.
+    >- You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
 **Use the following steps to  create the next-hop logical network in SCVMM:**
 
