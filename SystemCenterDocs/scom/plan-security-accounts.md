@@ -74,7 +74,7 @@ The account should be either a Domain User or LocalSystem.  The account used for
 > [!NOTE]
 > If the Operations Manager database is installed on a computer separate from the management server and LocalSystem is selected for the Data Access and Configuration service account, the computer account for the management server computer is assigned the sdk_user role on the Operations Manager database computer.  
 
-For more information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/Services/localsystem-account.md)
+For more information, see [about LocalSystem](https://docs.microsoft.com/windows/desktop/services/localsystem-account)
 
 ## Data Warehouse Write account
 
