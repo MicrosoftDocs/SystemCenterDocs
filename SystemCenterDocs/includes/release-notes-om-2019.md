@@ -34,7 +34,7 @@ With Operations Manager 2019, *Log on as a Service* feature is enabled by defaul
 
 ## Support for x64 components
 
-**Description**:  Operations Manager 2019 supports only x64 components, x86 components are not supported.
+**Description**:  Operations Manager 2019 supports only x64 components, x86 components aren't supported.
 If you try to push install the agent from the console to a x86 computer, the following error message appears:
 
 *The system cannot find the path specified*.
@@ -43,7 +43,7 @@ If you try to push install the agent from the console to a x86 computer, the fol
 
 ## Upgrade to reporting server fails the prerequisites check
 
-**Description**: While attempting to perform an upgrade of System Center 2016/1801/1807 - Operations Manager reporting server to version 2019, the prerequisites check reports the following error: 
+**Description**: While attempting to do an upgrade of System Center 2016/1801/1807 - Operations Manager reporting server to version 2019, the prerequisites check reports the following error: 
 
 *Management Server Upgraded Check - The management server to which this component reports, has not been upgraded. and the upgrade cannot proceed*.
 
@@ -64,7 +64,7 @@ This error occurs in a distributed management group scenario, where the reportin
 **Workaround**: We have added support for OpenSSL 1.1.0.
 
 ## Performance monitoring for VMM server fails with “Access denied”.
-**Description**: Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
+**Description**: Service users does not have permission to access VirtualMachineManager-Server/Operational event log.
 **Workaround**: Change Security Descriptor for operational event log registry with the command below and then restart event log service and health log service.
 
 ```
