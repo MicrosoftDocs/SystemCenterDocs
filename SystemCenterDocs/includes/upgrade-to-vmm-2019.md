@@ -119,8 +119,7 @@ Use the following procedures:
 15.	In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, check  **Open the VMM console when this wizard closes**, or you can click the Virtual Machine Manager Console icon on the desktop.
 
 > [!NOTE]
->  
- Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.
+> Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.
 
 In case of any issue with the setup, check the **%SYSTEMDRIVE%\ProgramData\VMMLogs** folder.
 
@@ -139,7 +138,6 @@ The following two modes of upgrade are supported:
 - [Mixed mode with additional VMM servers](#mixed-mode-upgrade-with-additional-vmm-servers)
 
 > [!NOTE]
-
 > SQL Server upgrade can be performed any time, independent of VMM upgrade.
 
 ### Mixed mode upgrade with no additional VMM servers
@@ -186,8 +184,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 
 > [!NOTE]
->  
- Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
+> Once the HA VMM upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.  
 
 ## Update VMM agents
 
