@@ -82,11 +82,14 @@ Using L3 forwarding, tenant network virtual machines can connect to a physical n
 To learn more, check these articles: [Windows server gateway as a forwarding gateway](https://technet.microsoft.com/library/dn313101.aspx#bkmk_private) and [RAS gateway high availability](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-high-availability).
 
 > [!NOTE]
+>
 > Ensure the following before you configure L3.
-    >- Ensure you're logged on as an administrator on the VMM server.
-    >- You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
+>
+> - Ensure you're logged on as an administrator on the VMM server.
+>
+> - You must configure a unique next-hop logical network, with unique VLAN ID, for each Tenant VM network for which L3 forwarding needs to be set up. There must be 1:1 mapping between a tenant network and corresponding physical network (with unique VLAN ID).
 
-**Use the following steps to  create the next-hop logical network in SCVMM:**
+**Use the following steps to create the next-hop logical network in SCVMM:**
 
   1.  On the VMM console, select **Logical Networks**, right-click, and select **Create Logical Network**.
   2. In the **Settings** page, choose **One connected network** and select the checkbox for **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**
