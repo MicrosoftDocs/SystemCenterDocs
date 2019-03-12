@@ -1,6 +1,6 @@
 ---
 title: include file
-description: include file to summarize the release notes for Operations Manager 2019.
+description: include file that summarize the release notes for Operations Manager 2019.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -20,13 +20,13 @@ The following sections summarize the release notes for Operations Manager 2019 a
 **Description:**
 With Operations Manager 2019, *Log on as a Service* feature is enabled by default. This change impacts all the service accounts and Run As accounts. With this change, all these accounts must have *Log on as a Service* permission.  
 
-**Workaround:** Enable log on as a service. [Learn more](../scom/enable-service-logon.md)
+**Workaround:** Enable log on as a service permission. [Learn more](../scom/enable-service-logon.md)
 
 ## User experience changes in maintenance mode
 
-**Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode, applicable to both Windows and Linux\Unix monitoring:
+**Description**: The following are the user experience changes with Operations Manager 2019 maintenance mode. These  applicable to both Windows and Linux\Unix monitoring:
 
-- As an entity enters maintenance mode, monitor-based active alerts on it will be automatically resolved.  In earlier releases, these alerts get automatically resolved when the entity exits the  maintenance mode.
+- As an entity enters the maintenance mode, monitor-based active alerts on it will be automatically resolved.  In earlier releases, these alerts get automatically resolved when the entity exits the  maintenance mode.
 
 - On-demand monitors and regular monitors now behave similarly when target entity enters and exits the maintenance mode.
 
@@ -65,7 +65,7 @@ This error occurs in a distributed management group scenario, where the reportin
 
 ## Performance monitoring for VMM server fails with “Access denied”.
 **Description**: Service users does not have permission to access VirtualMachineManager-Server/Operational event log.
-**Workaround**: Change Security Descriptor for operational event log registry with the command below and then restart event log service and health log service.
+**Workaround**: Change the Security Descriptor for operational event log registry with the command below, and then restart event log service and health log service.
 
 ```
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"

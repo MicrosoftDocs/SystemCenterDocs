@@ -28,13 +28,13 @@ Perform the following pre-upgrade tasks in the order presented before you begin 
 
 6. Disable any connectors
 
-7. Stop the Microsoft Monitoring Agent, System Center Data Access Service, System Center Configuration Management ,and Microsoft Monitoring Agent services on all management servers except the one being upgraded
+7. Stop the Microsoft Monitoring Agent, System Center Data Access Service, System Center Configuration Management, and Microsoft Monitoring Agent services on all management servers except the one being upgraded
 
 8. Verify that the Operational Database Has More Than 50 Percent Free Space
 
 9. Back up the Operations Manager Databases
 
-10. Update the agent's health service cache size temporarily to prevent loss of data while Management and Gateway servers are upgraded.
+10. Update the agent's health service cache size temporarily to prevent loss of data while Management, and Gateway servers are upgraded.
 
 11. Stop the application pool of Operations Manager and *MonitoringViews* in IIS server.
 
@@ -90,7 +90,7 @@ Before you upgrade a management server, remove any agents that are in Pending Ma
 
 ## Disable notification subscriptions
 
-You should disable notification subscription before you upgrade the management group to ensure that notifications are not sent during the upgrade process.
+You must disable notification subscription before you upgrade the management group to ensure that notifications are not sent during the upgrade process.
 
 
 1. Log on to the Operations console account that is a member of the Operations Manager Administrators role for the Operations Manager management group.
@@ -116,7 +116,7 @@ To stop a service for a Connector, perform the following steps:
 
 ## Verify the Operations Manager database has more than 50 percent free
 
-You must verify that the operational database has more than 50 percent of free space before you upgrade the management group because the upgrade might fail if there is not enough space. You should also ensure that the transactions logs are 50 percent of the total size of the operational database.
+You must verify that the operational database has more than 50 percent of free space before you upgrade the management group because the upgrade might fail if there is not enough space. Ensure that the transactions logs are 50 percent of the total size of the operational database.
 
 1. On the computer that hosts the operational database, open **SQL Server Management Studio**.
 
@@ -157,7 +157,7 @@ Before upgrading the first management server in your management group, it is rec
 
 ## Increase agent HealthService cache size
 
-To ensure the agents can queue data during the upgrade, please update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
+To ensure the agents can queue data during the upgrade, update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb
 
@@ -167,4 +167,4 @@ Once you have completed the upgrade of the management group, you can reset it ba
 
 ## Next steps
 
-To continue with the upgrade please review [Upgrade overview](deploy-upgrade-overview.md).
+To continue with the upgrade, review [Upgrade overview](deploy-upgrade-overview.md).
