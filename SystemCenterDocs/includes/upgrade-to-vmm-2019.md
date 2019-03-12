@@ -42,7 +42,7 @@ Ensure the following:
 
 
 ## Upgrade sequence for System Center components
-If you're running more than one System Center component, they should be upgraded in a specific order:
+If you're running more than one System Center component, they should be upgraded in a specific order as shown below:
 
 1. Service Management Automation
 2. Orchestrator
@@ -51,20 +51,14 @@ If you're running more than one System Center component, they should be upgraded
 5. Operations Manager
 6. Configuration Manager
 7. Virtual Machine Manager (VMM)
-8. App Controller
-9. Service Provider Foundation
-10. Windows Azure Pack for Windows Server
-11. Service Bus Clouds
-12. Windows Azure Pack
-13. Service Reporting
-
 
 ## Upgrade a standalone VMM server
 
->[!NOTE}
-> When you are upgrading a standalone VMM server, we recommended that you install VMM 2019 on the same server that had VMM 2016.  
+>[!NOTE]
+>When you are upgrading a standalone VMM server, we recommend that you install VMM 2019 on the same server that had VMM 2016, 1801 or 1807.  
 
 If you are using Distributed Key Management, you may choose to install VMM 2019 on a different server but make sure that the new server has the same name as that of the old VMM server.
+
 Use the following procedures:
 
 - [Back up and upgrade the OS](#back-up-and-upgrade-os)
@@ -166,18 +160,13 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
 **Follow these steps**:
 
-1.	Backup and retain the VMM database.
+1. Backup and retain the VMM database.
 2.	Add the same number of additional servers (with Windows Server 2019/2016 Management OS) that equals to the server  number present in the HA cluster.
-
-	If the cluster has VMM 2016/1801/1807 on WS 2016 and you want to upgrade to WS 2019 with VMM 2019, then use the following steps:
-	- Add new WS 2016 nodes and install VMM 1801 on all of these new nodes.
-	- Remove all the WS 2012 R2 nodes from the cluster.
-    - Upgrade the management OS to WS 1709.
-3. Install Windows 10/1709 version of the ADK on the newly added 2016 servers.
+3. Install Windows 10 version of the ADK on the newly added 2019 servers.
 4. Install VMM 2019 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode- upgrade-with-no-additional-VMM-servers).    
-5.	Repeat the installation steps for all the other newly added servers.
-6.	Failover the active VMM node to one of the newly added servers.
-7. Remove 2012 R2/2016 nodes from the cluster after failover.
+5. Repeat the installation steps for all the other newly added servers.
+6. Failover the active VMM node to one of the newly added servers.
+7. Remove 2016 nodes from the cluster after failover.
 8. Update the cluster functional level by using the
 **Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9.	[Optional] Install the appropriate SQL Command line utilities.
@@ -255,7 +244,7 @@ When uninstalling VMM server from last node, you may get a message about unsucce
 
 ## Redeploy Azure Site Recovery
 
-If Azure Site Recovery was integrated into your VMM 2012 R2/2016 deployment, you need to redeploy it with VMM 1801, for [replication to Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-vmm).
+If Azure Site Recovery was integrated into your VMM 2016/1801/1807 deployment, you need to redeploy it with VMM 2019, for [replication to Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-azure), or [replication to a secondary site](https://docs.microsoft.com/azure/site-recovery/site-recovery-vmm-to-vmm).
 
 
 ## Connect to Operations Manager

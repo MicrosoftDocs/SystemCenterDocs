@@ -19,6 +19,9 @@ See the following sections for detailed information about the new features/featu
 ###	Cluster Rolling upgrade for S2D clusters
 System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. [Learn More](../vmm/hyper-v-rolling-upgrade.md)
 
+### Support for deduplication for ReFS volume
+VMM 2019 supports deduplication for ReFS volume on WS 2019 hyper-converged cluster and SOFS. [Learn more](../vmm/hyper-v-storage.md).
+
 ## Storage
 
 ### Storage DO

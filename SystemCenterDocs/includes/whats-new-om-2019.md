@@ -68,7 +68,6 @@ Agent initiated maintenance mode is a crucial feature to suspend monitoring when
 With event-based agent-initiated maintenance mode, as events are almost real time, a management server immediately reads the maintenance mode event from the agent computer and would never miss processing the maintenance request.
 
 >[!NOTE]
-
 >You can turn off your computer right after running this command. An event will notify the management server to suspend monitoring on this computer.
 
 ## Ability to enable scheduled maintenance mode with SQL Always on
@@ -84,7 +83,6 @@ The following versions of Windows operating system are supported for the Microso
  - **Windows 10** - Enterprise, Pro
 
  > [!NOTE]
-
  > Operations Manager 2019 supports only x64 agent.
 
 - **File system**: %SYSTEMDRIVE% must be formatted with the NTFS file system
@@ -99,6 +97,7 @@ The following new platforms are supported for monitoring in Operations Manager 2
 - openSUSE Leap 15
 - Ubuntu 18
 - Debian 9
+- SUSE 12 PPC
 
 ## HTML 5 Web Console - client browsers
 For HTLM5 web console, the following client web browsers are supported:
@@ -135,7 +134,7 @@ If there are MPs in the catalog that are designed to monitor those workloads, th
 A new capability, **Machine Details** allow administrators to view the agent computer's name and the operating system installed on it.    
 
 ## Support for latest Application Servers
-Operations Manager 2019 supports latest Application Servers. [Learn more](../scom/manage-mp-passessment.md#support-for-latest-application servers).
+Operations Manager 2019 supports latest Application Servers. [Learn more](../scom/manage-mp-mpassessment.md#support-for-latest-application-servers).
 
 ## Support for client-side monitoring on multiple browsers
 With Operations Manager 2019, client-sider-monitoring supports the following web browsers in addition to Internet Explorer:
