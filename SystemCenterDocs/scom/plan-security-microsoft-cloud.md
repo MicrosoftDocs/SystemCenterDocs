@@ -20,7 +20,7 @@ The Azure monitoring pack runs on a specified agent and uses various Windows Azu
 
 If you don’t have a management certificate already, begin here by reviewing [Certificates overview for Azure Cloud Services](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx).
 
-For more information, see [Introducing the Windows Azure Service Management API](https://go.microsoft.com/fwlink/?LinkId=201016) on the Windows Azure team blog.
+For more information, see [Introducing the Windows Azure Service Management API](https://azure.microsoft.com/blog/introducing-the-windows-azure-service-management-api/) on the Windows Azure team blog.
 
 The Monitoring Pack for Windows Azure Applications creates three Run As profiles:
 
@@ -28,7 +28,7 @@ The Monitoring Pack for Windows Azure Applications creates three Run As profiles
 - Windows Azure Run As Profile Password
 - Windows Azure Run As Profile Proxy
 
-You must create Run As accounts for Windows Azure Run As Profile Blob and Windows Azure Run As Profile Password. The account for Windows Azure Run As Profile Blob stores the certificate with the private key for the Windows Azure application. The account for Windows Azure Run As Profile Password stores the password for the private key. 
+You must create Run As accounts for Windows Azure Run As Profile Blob and Windows Azure Run As Profile Password. The account for Windows Azure Run As Profile Blob stores the certificate with the private key for the Windows Azure application. The account for Windows Azure Run As Profile Password stores the password for the private key.
 
 Creating an account for Windows Azure Run As Profile Proxy is optional. The account for Windows Azure Run As Profile Proxy stores credentials for access to the HTTP proxy server that is used to make API calls to Windows Azure.
 
@@ -44,9 +44,9 @@ To create a new user with Global Administrator permissions using Office 365 admi
 4.	On setting tab: select Global administrator role to be assigned to account. Specify alternate email address and user location.<br>![New User Settings page](./media/plan-security-microsoft-cloud/om2016-o365-new-user-settings.png)  
 5.	You are not required to assign Office 365 services licenses to the monitoring account
 6.	Specify an email address to receive a temporary password. Log out from Office 365 admin center and log in again using new credentials received in the email.
-7.	Login to the Office 365 management portal using newly created credentials and set the password for the account. Remember to use strong complex password because this account has Global administrator permissions. 
-  > [!NOTE] 
-  > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to login to the Office 365 management portal at least once. 
+7.	Login to the Office 365 management portal using newly created credentials and set the password for the account. Remember to use strong complex password because this account has Global administrator permissions.
+  > [!NOTE]
+  > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to login to the Office 365 management portal at least once.
 
 ### Configure Run As profiles
 
