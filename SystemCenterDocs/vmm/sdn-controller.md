@@ -295,7 +295,6 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 ::: moniker range="sc-vmm-2019"
 
 > [!NOTE]
-
 > Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](https://docs.microsoft.com/windows-server/networking/sdn/security/kerberos-with-spn).
 
 ::: moniker-end

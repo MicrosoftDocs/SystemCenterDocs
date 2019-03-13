@@ -16,7 +16,6 @@ ms.technology: virtual-machine-manager
 This article provides information about how to turn on/off the telemetry settings in System Center - Virtual Machine Manager (VMM).
 
 > [!NOTE]
-
 > Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in VMM. [Learn more](#telemetry-data-collected)
 
 
@@ -34,7 +33,6 @@ Page with **Do you want to send Diagnostics and Usage Data to Microsoft** messag
   ![Diagnostics and Usage](./media/telemetry/telemetry-selection-options.png)
 
   > [!NOTE]
-
   > We recommend you to go through the privacy statement provided on this page before making a selection.
 
 4. To turn on telemetry, select **Yes I am willing to send data to Microsoft**.

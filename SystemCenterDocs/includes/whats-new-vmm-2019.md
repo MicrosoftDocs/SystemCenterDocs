@@ -75,7 +75,6 @@ Group Managed Service Account (gMSA) helps improve the security posture and prov
 VMM 2019 supports the use of gMSA for **Management server service account**. [Learn more](../vmm/install.md).
 
 > [!NOTE]
-
 > The following features/feature updates were introduced in VMM 1807, included in VMM 2019.
 
 ## Storage
@@ -111,7 +110,6 @@ VMM 1807 supports update of an S2D host or a cluster. You can update individual 
 VMM 1807 supports SQL 2017. You can upgrade SQL 2016 to 2017.
 
 > [!NOTE]
-
 > The following features/feature updates were introduced in VMM 1801, included in VMM 2019.
 
 ## Compute
