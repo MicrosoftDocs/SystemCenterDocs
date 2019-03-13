@@ -23,7 +23,6 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 - **Load balancing the internal network traffic** (Internal load balancing): This scenario includes load balancing the network traffic of workloads in the VM network that is enabled for **network virtualization**. Load balancing is done through a VIP.
 
     > [!NOTE]
-
     > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
@@ -52,14 +51,12 @@ Use the following procedures to configure the VIPs to load balance the workload 
 4. In **Specify Protocol options**, select the Custom option and type TCP/UDP in Protocol name. Click **Next**.
 
     > [!NOTE]
-
     > SLB supports only layer 4 load balancing of TCP/UDP traffic.  HTTP/ HTTPS protocols are not supported.
 
 5. For **Persistence** and **Load Balancing**, use the defaults. Click **Next**.
 
     ![VIP template name](media/sdn-load-balance-network-traffic/lb-health-monitor-image4.png)
     > [!NOTE]
-
     > SLB doesn’t support persistence and different Load balancing methods. By default, SLB uses Round Robin algorithm for load balancing.
 
 6. In **Health Monitors**, optionally, insert appropriate values.  Click **Next**.
@@ -86,7 +83,6 @@ The following example script creates the VIP from a public IP network to load ba
 The workload VMs can be connected to a **no isolation** network or **network virtualization** enabled VM networks.
 
 > [!NOTE]
-
 > - In the script parameters section, substitute the actual values that match your test environment for the samples used in this script.
 > - Ensure you run the script on a VMM server, or on a computer running the VMM console.
 

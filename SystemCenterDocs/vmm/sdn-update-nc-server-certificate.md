@@ -21,7 +21,6 @@ ms.technology: virtual-machine-manager
   -	You want to move from a self-signed certificate to a certificate that is issued by a certificate authority (CA).
 
   > [!NOTE]
-
   > If you renew the existing certificate with the same key, these steps are not required.
 
 ## Before you start
@@ -38,7 +37,6 @@ ms.technology: virtual-machine-manager
 2. If the certificate is a CA issued certificate, import it in all network controller nodes' **My** store.
 
   > [!NOTE]
-
   > DO NOT remove the current certificate from the NC nodes. You should validate the updated certificate before you remove the existing one. Proceed with rest of the steps to update the certificate.
 
 3.	Update the server certificate by executing the following PowerShell command on one of the NC nodes.
