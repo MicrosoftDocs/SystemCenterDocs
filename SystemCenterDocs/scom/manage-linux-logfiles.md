@@ -5,7 +5,7 @@ description: This article provides an overview of the Linux log file monitoring 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/16/2018
+ms.date: 03/14/2019
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-1801'

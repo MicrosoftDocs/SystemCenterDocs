@@ -5,7 +5,7 @@ description: This article describes how to configure dynamic optimization and po
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

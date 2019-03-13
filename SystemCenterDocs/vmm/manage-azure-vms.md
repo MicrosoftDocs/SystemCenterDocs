@@ -4,6 +4,8 @@ title: Manage Azure VMs
 description: This article provides information about the basic actions you can do on Azure instances, without leaving the VMM console.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
+ms.date: 03/14/2019
+ms.topic: article
 manager: vvithal
 ms.prod: system-center
 ms.technology: virtual-machine-manager

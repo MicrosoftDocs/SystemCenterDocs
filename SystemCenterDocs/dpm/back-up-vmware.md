@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 2/8/2018
+ms.date: 03/14/2019
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:

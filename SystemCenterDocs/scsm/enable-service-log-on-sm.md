@@ -13,6 +13,7 @@ ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5eb94e4f-72b8-46ec-8417-5d776cc6288f
+monikerRange: 'sc-sm-2019'
 ---
 
 # Enable Service Logon

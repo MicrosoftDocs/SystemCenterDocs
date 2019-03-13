@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 09/25/2018
+ms.date: 03/14/2019
 title: Prepare data storage
 ms.technology: data-protection-manager
 ms.assetid: ebe047b4-0737-4ce5-8fe2-d5e0cfd9b852

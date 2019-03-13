@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 09/25/2018
+ms.date: 03/14/2019
 title: Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
