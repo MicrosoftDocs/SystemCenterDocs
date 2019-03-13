@@ -5,7 +5,7 @@ description: This article describes how to use the updates and recommendations f
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/28/2018
+ms.date: 03/14/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -22,7 +22,7 @@ When a new workload is deployed in your IT infrastructure that was never monitor
 
 ::: moniker range="sc-om-2019"
 
-Operations Manager 2019 supports [workloads for Linux and Unix](#support-for-linux-and-unix-platforms) operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operatoins Manager 2019 also supports a new capability **Machine Details** which provides you the computer details (name and operating system) on which a selected workload is running.
+Operations Manager 2019, Updates and Recommendation feature  includes support for application servers running on Linux and Unix operating systems.
 
 ::: moniker-end
 
@@ -235,7 +235,7 @@ The following workloads are supported for the operating systems listed below.
 
 ::: moniker range="=sc-om-2019"
 
-## Support for Linux and Unix platforms
+## Support for Linux and Unix platforms supported for application servers workload
 - CentOS6 x64, CentOS7 x64
 - Oracle6 x64, Oracle7 x64
 - Sles12 x64
@@ -244,7 +244,7 @@ The following workloads are supported for the operating systems listed below.
 - Ubuntu16 x64, Ubuntu 18 x64
 - Aix 7.x
 
-## Support for latest application servers
+## Supported application servers
 - Apache Tomcat 7, Apache Tomcat 8, Apache Tomcat 9
 - Red Hat JBoss 4, JBoss 5, JBoss 6, JBoss 7, Wildfly Application Server 8/9/10/11/12/13/14, Red Hat JBoss EAP 6,  Red Hat JBoss EAP 7
 - IBM WebSphere 7.0, WebSphere 8.0, WebSphere 8.5, WebSphere 9.0

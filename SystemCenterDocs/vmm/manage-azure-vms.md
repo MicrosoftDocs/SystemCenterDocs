@@ -4,13 +4,15 @@ title: Manage Azure VMs
 description: This article provides information about the basic actions you can do on Azure instances, without leaving the VMM console.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
+ms.date: 03/14/2019
+ms.topic: article
 manager: vvithal
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # Manage Azure VMs
-This article provides information about the Manage Azure Virtual Machines (VMs) feature.
+This article provides information about the *Manage Azure Virtual Machines (VMs)* feature in System Center 2019 - Virtual Machine Manager (VMM).
 
 This feature allows you to perform basic actions on azure instances attached to an azure profile, created for Azure VM management.
 

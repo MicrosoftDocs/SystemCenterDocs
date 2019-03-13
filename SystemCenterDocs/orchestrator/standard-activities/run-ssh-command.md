@@ -1,17 +1,13 @@
 ---
 title: "Run SSH Command | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "03-14-2019"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: f04d8a08-3621-4d03-b231-20994b0d5c93
 caps.latest.revision: 25
 author: "bwren"
@@ -34,7 +30,7 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 -   You should review the list if cryptographic ciphers supported by PuTTY, which is found at [https://the.earth.li/~sgtatham/putty/0.70/htmldoc/Chapter4.html#config-ssh-encryption).  
 
 -   PuTTY beta .61 uses a pseudorandom number generator suitable for most cryptographic purposes. It is not recommended for the generation of long-term cryptographic keys.  
-  
+
  For more information about PuTTY, go to [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
 
 ## Configuring the Run SSH Command Activity  
@@ -81,3 +77,6 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 |Key file path|The path of the key file that was used to authenticate with the SSH server.|  
 |Port|The port used to connect to the SSH server.|  
 |Username|The username used to log into the SSH server.|
+
+## Next steps
+see the article on how to get the [SNMP variables](get-snmp-variable.md).

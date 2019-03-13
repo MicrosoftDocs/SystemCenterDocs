@@ -51,7 +51,7 @@ DPM 2019 setup allows you to migrate the DPM database to different SQL Servers d
 
 ### Possible database migration scenarios
 
-The following scenarios exist when upgrading DPM 2016/1801/1807 to DPM 2019 using a:
+The following scenarios exist when you are upgrading DPM 2016/1801/1807 to DPM 2019 using a:
 
 1. Local instance and migrating to a remote instance of SQL Server during setup.
 2. Remote instance and migrating to a local instance of SQL Server during setup.

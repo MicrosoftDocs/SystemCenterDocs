@@ -63,10 +63,12 @@ This error occurs in a distributed management group scenario, where the reportin
 
 **Workaround**: We have added support for OpenSSL 1.1.0.
 
-## Performance monitoring for VMM server fails with “Access denied”.
+## Performance monitoring for VMM server fails with Access denied message.
 **Description**: Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
 **Workaround**: Change the Security Descriptor for operational event log registry with the command below, and then restart event log service and health log service.
 
 ```
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"
-'''
+```
+
+This command will add the service user to the list of allowed users, who can access VirtualMachineManager-Server/Operational event log.

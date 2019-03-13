@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 31/05/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

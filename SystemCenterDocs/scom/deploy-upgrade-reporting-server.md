@@ -5,7 +5,7 @@ description: This article describes how to upgrade the Reporting server to the l
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 03/14/2018
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager

@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 7/24/2018
+ms.date: 03/14/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -90,7 +90,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group wizard.
 
-**Workaround**: For the VMs that haven't been upgraded, stop protection with Retain Data. Upgrade the VM, and create a new protection group. Then refresh the data sources and protect the VMs. When you reapply protection, the VMs are protected using Resilient Change Tracking (RCT).
+**Workaround**: For the protected VMs which are about to be upgraded, make sure to stop protection with retain data before upgrading the VM. Then, upgrade the VM and reprotect it in a new protection group. While configuring reprotection, do a refresh on the VM host for DPM to detect the VM upgrade and protect it as RCT VM..
 
 ### Restoration of a previous version for an upgraded Hyper-V VM causes future recovery points to fail
 
@@ -106,7 +106,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **HKLM\Software\Microsoft\Microsoft Data Protection Manager\ConfigurationReplicaSizeInGBForSystemProtectionWithBMR (DWORD)**
 
-### Reprotecting the DPM database after upgrade
+### DPM database protection stops in case of upgrade scenarios
 
 **Description**: When you upgrade DPM, database name might change in some scenarios.
 
@@ -448,6 +448,8 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 
 ## Next steps
-To install DPM, see the article, [Install DPM](install-dpm.md).
+- To install DPM, see the article, [Install DPM](install-dpm.md).
 
-If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
+- If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
+
+- See these KBs for ReFS specific issues - [KB4016173](https://support.microsoft.com/en-us/help/4016173/fix-heavy-memory-usage-in-refs-on-windows-server-2016-and-windows-10), [KB4035951](https://support.microsoft.com/en-us/help/4035951/refs-volume-using-dpm-becomes-unresponsive-on-windows-server-2016)

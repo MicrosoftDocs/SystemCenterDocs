@@ -4,8 +4,8 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
-ms.date: 2/8/2018
+keywords:
+ms.date: 03/14/2019
 title: What's new in System Center DPM 2016 and 1801
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -20,7 +20,7 @@ Before you begin, check the [Release Notes for System Center DPM](dpm-release-no
 
 ## New features in DPM 1801
 
-If you install System Center DPM 1801, then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups. 
+If you install System Center DPM 1801, then you can back up VMware virtual machines. This capability extends the benefits of Modern Backup Storage: up to 50% storage savings, 3 times faster backups, and workload-volume affinity, to your VMware backups.
 
 ::: moniker-end
 

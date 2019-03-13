@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 3/5/2018
+ms.date: 03/14/2019
 title: Back up the DPM server
 ms.technology: data-protection-manager
 ms.assetid: e5a31d08-e483-4dda-abd3-1b562656b24f
@@ -53,7 +53,7 @@ Back up a primary DPM server using a secondary DPM server:
 
     -   All replicas on the primary DPM server.
 
-    -   At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center\\DPM\\Scripting folder.
+    -   At a minimum, you should select the databases, the \\Program Files\\Microsoft System Center\\DPM\\DPM\\Config folder, and the \\Program Files\\Microsoft System Center\\DPM\\Scripting folder.
 
 Note that you can't exclude file names from protection for a replica. In addition, all DPM servers must be running the same version, updates etc. When setting up synchronization we recommend you synchronize every 24 hours.
 

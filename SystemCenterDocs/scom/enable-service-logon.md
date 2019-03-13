@@ -5,7 +5,7 @@ description: This article provides information about how to enable service log f
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2019
+ms.date: 03/14/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
