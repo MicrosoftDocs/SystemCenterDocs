@@ -30,7 +30,6 @@ Here's how you do this:
 ## Before you start
 
 > [!NOTE]
-
 > VMM doesn't support bare metal provisioning of physical Machines in disjoint namespace. As a workaround, follow these steps:
 1.  provision the bare metal in a non-disjoint namespace domain.
 2.  remove the provisioned host from VMM.
