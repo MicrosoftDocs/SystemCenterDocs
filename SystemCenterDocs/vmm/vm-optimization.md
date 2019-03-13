@@ -17,7 +17,6 @@ ms.technology: virtual-machine-manager
 Read this article to learn about enabling dynamic optimization (DO) and power optimization  for virtual machines (VMs) in the System Center - Virtual Machine Manager (VMM). The article includes features overview, instructions for setting up BMC for power optimization, and describes how to enable and run these features.
 
 > [!NOTE]
-
 > VMM 2019 and later supports dynamic optimization for Compute and Storage. Versions prior to VMM 2019 support DO for compute only, use the following procedures as applicable for the version of VMM you are using.
 
 
@@ -106,7 +105,6 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 9.  To turn on power optimization on the host group, select the **Enable power optimization** checkbox.  Click **OK** again to save your changes.
 
 >[!NOTE]
-
 > If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations to and from that file share and may impact storage DO performance. We recommended you not to do a  file share across different host groups where storage dynamic optimization is enabled.
 
 ## Configure power optimization settings
@@ -134,7 +132,6 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 ::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
-
 > If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
 - Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
 - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.

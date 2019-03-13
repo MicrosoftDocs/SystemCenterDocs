@@ -27,7 +27,6 @@ VMM supports virtual machines that contain Linux as the guest operating system. 
 - The VMM guest agent for Linux must be installed on the virtual machine. It is required for service template integration, and it allows you to modify properties on the Linux computer such as the host name.
 
     > [!NOTE]
-    
     > SCVMMLinuxGuestAgent (XPlat) cfghostdomain garbles the hosts file if hostname is already set to localhost. We recommend you not to set the hostname as localhost when deploying Linux VMs through VMM.
 
 - VMM doesn't verify that the VM meets these requirements. However, if it doesn't, VM deployment will fail.
