@@ -76,10 +76,9 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 
 **Workaround**: We recommend that you do not do a file share across different clusters, where storage dynamic optimization is enabled.
 
-##  In a scenario where VMM is monitored using Operations Manager, performance monitoring for VMM server fails with *Access denied* event error.
+## Performance monitoring for VMM server fails with *Access denied* event error
 
-**Description**: Service users do not have permission to access VirtualMachineManager-Server
-/Operational event log.
+**Description**: In a scenario where VMM is monitored using Operations Manager, performance monitoring for VMM server fails with *Access denied*  event error. Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
 
 **Workaround**: Change the security descriptor for Operational event log registry with the following command, and then restart the event log service and health log service.
 
