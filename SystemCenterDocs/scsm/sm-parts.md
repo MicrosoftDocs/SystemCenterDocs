@@ -25,4 +25,4 @@ There are six major parts of a System Center - Service Manager installation, as 
 |Self-Service Portal|A web\-based interface into Service Manager.|  
 
 >[!IMPORTANT]
-All computers that host any part of Service Manager must be domain-joined.
+>All computers that host any part of Service Manager must be domain-joined.
