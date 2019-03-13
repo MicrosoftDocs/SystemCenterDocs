@@ -70,7 +70,7 @@ Ensure the following prerequisites are met:
 
 > [!NOTE]
 > - Disk conversion (from “vmdk” to “VHDX/VHD”) is enhanced to be ~50% faster than earlier.
-  - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
+> - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
 
 ## PowerShell commands
 

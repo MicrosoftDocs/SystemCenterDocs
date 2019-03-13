@@ -31,10 +31,10 @@ Here's how you do this:
 
 > [!NOTE]
 > VMM doesn't support bare metal provisioning of physical Machines in disjoint namespace. As a workaround, follow these steps:
-1.  provision the bare metal in a non-disjoint namespace domain.
-2.  remove the provisioned host from VMM.
-3. Join the host to the disjoint namespace domain of interest.
-4. Add the host back to VMM. Use [this procedure](https://technet.microsoft.com/library/gg610641(v=sc.12)).
+> 1.  provision the bare metal in a non-disjoint namespace domain.
+> 2.  remove the provisioned host from VMM.
+> 3. Join the host to the disjoint namespace domain of interest.
+> 4. Add the host back to VMM. Use [this procedure](https://technet.microsoft.com/library/gg610641(v=sc.12)).
 
 Ensure the following prerequisites:
 

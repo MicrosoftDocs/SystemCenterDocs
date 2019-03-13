@@ -25,11 +25,11 @@ Use this article to install the System Center - Virtual Machine Manager (VMM) ma
 
 > [!NOTE]
 >   The service account for VMM can be:
- - 	A local account
- - 	A user account used for service
- -	A group managed service account.
- - If you are using a local account, you can’t have VMM in highly available configuration.
- - If you are using gMSA account, the format should be *domainFQDN\gMSAAccount$*
+>  - 	A local account
+>  - 	A user account used for service
+>  -	A group managed service account.
+>  - If you are using a local account, you can’t have VMM in highly available configuration.
+>  - If you are using gMSA account, the format should be *domainFQDN\gMSAAccount$*
 
 1. Close any open programs and ensure that no restarts are pending on the computer.
 2. To start the Virtual Machine Manager Setup wizard, on your installation media, right-click **setup.exe**, and then click **Run as administrator**.
