@@ -56,7 +56,6 @@ VMM server to Windows file server | 443:HTTPS | BITS used for file transfer<br/>
 VMM server to Windows file server | 5985/5986:WinRM | Control channel<br/><br/> Inbound rule on file server |
 
 > [!NOTE]
-
 > In addition to the above ports, VMM relies on the default dynamic port range for all its communication with Hyper-V hosts, file servers and library servers.  [Learn more](https://support.microsoft.com/en-in/help/929851/the-default-dynamic-port-range-for-tcp-ip-has-changed-in-windows-vista) about the dynamic port range.
 
 >We recommend that you reconfigure the firewalls to allow traffic between servers in the dynamic port range of 49152 through 65535.
