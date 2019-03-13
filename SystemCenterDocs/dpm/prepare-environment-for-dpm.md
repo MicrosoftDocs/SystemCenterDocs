@@ -40,9 +40,7 @@ In all deployments you’ll need:
 DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects. All SQL Server versions should be Standard or Enterprise 64-bit.
 
 >[!NOTE]
-
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
-
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
 **SQL Server - supported versions**
