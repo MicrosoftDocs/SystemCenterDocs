@@ -1,7 +1,7 @@
 ---
 ms.assetid:
 title: Log file monitoring in System Center Operations Manager
-description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager 1801.
+description: This article provides an overview of the Linux log file monitoring in System Center Operations Manager
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 
 # Linux Log file monitoring in System Center Operations Manager
-System Center Operations Manager version 1801 now has enhanced log file monitoring capabilities for Linux servers by using the newest version of the agent that uses Fluentd. This update provides the following improvements over previous log file monitoring:
+System Center Operations Manager now has enhanced log file monitoring capabilities for Linux servers by using the newest version of the agent that uses Fluentd. This update provides the following improvements over previous log file monitoring:
 
 - Wild card characters in log file name and path.
 - New match patterns for customizable log search like simple match, exclusive match, correlated match, repeated correlation and exclusive correlation.
