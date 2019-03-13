@@ -17,7 +17,7 @@ ms.technology: virtual-machine-manager
 
 Read this article to learn about setting up network virtualization gateways in the System Center - Virtual Machine Manager (VMM) networking fabric.
 
-By default, if you're using isolated VM networks in your VMM fabric, VMs associated with a network can only connect to machines in the same subnet. If you want to connect VMs further than the subnet you'll need a gateway.
+By default, if you're using isolated VM networks in your VMM fabric, VMs associated with a network can only connect to machines in the same subnet. If you want to connect VMs further than the subnet, you'll need a gateway.
 
 ## Network virtualization
 
@@ -38,8 +38,8 @@ You can set up your gateway in a number of ways depending on your requirements:
 
 ## Prerequisites
 
-- **Provider software**: If you want to use a non-Windows gateway device you'll need the provider and an account with permissions to configure the gateway. You install the provider on the VMM server. If certificates are required (for example if the gateway is in an untrusted domain) you'll need to be able to view thumbprint information for those certificates.
-- **Windows Server gateway**: If you want to configure a gateway running Windows Server you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2012 R2 or later versions.
+- **Provider software**: If you want to use a non-Windows gateway device, you'll need the provider and an account with permissions to configure the gateway. You install the provider on the VMM server. If certificates are required (for example if the gateway is in an untrusted domain) you'll need to be able to view thumbprint information for those certificates.
+- **Windows Server gateway**: If you want to configure a gateway running Windows Server, you can use a predefined template available from the Microsoft Download Center. The template supports System Center 2012 R2 or later versions.
 - **Logical networks**: You need logical networks (you'll need more than one if you want the gateway to connect from VM networks in one logical network to VM networks in another).
 - **Remote VPN settings**: If you want to connect the gateway to a remote VPN server you'll need:
     - The remote server IP address and information about on-premises subnets or the BGP address if relevant.
@@ -73,7 +73,7 @@ Use the following procedure to add the non-windows gateway:
 3. In **Manufacturer and Model** click the required settings.
 4. In **Credentials**, specify a Run As account with permissions in the domain to which the gateway is connected.
 5. In **Connection String** type the string that the gateway should use. The string syntax is defined by the gateway vendor.
-6. In **Certificates** if listed, verify the thumbprints of the certificates match those installed on the gateway. Select to confirm that the certificates can be imported. If none are listed the gateway probably doesn't need certificate authentication. If they're needed make sure they're installed correctly on the gateway.
+6. In **Certificates** if listed, verify the thumbprints of the certificates match those installed on the gateway. Select to confirm that the certificates can be imported. If none is listed the gateway probably doesn't need certificate authentication. If they're needed make sure they're installed correctly on the gateway.
 7. In **Gather Information** click **Scan Provider** to run the basic validation test against the gateway.
 8. In **Host Group** select one or more host groups to which the gateway will be available.
 9. In **Summary**, review the settings and click **Finish**.
