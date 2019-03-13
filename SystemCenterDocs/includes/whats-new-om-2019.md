@@ -157,7 +157,7 @@ To prevent the SCX logs from growing and consuming all available free space on t
 The Operations and Service Manager consoles, as well as PowerShell modules can be installed on the same system.
 
 ## OpenSSL 1.1.0 version support
-On Linux platforms, OpenSSL 0.9.8 support is dropped, and added support for OpenSSL 1.1.0.
+On Linux platforms, OpenSSL 0.9.8 support is dropped, and added support for OpenSSL 1.1.0 to support TLS 1.2.
 
 ## Auto detection of Pseudo FS and drop Enumeration
 The UNIX and Linux agents have been enhanced to detect pseudo file system dynamically and ignore enumeration.

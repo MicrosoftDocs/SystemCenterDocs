@@ -96,7 +96,7 @@
 ### [Integrate NLB with service templates](network-nlb.md)
 ### [Set up an IPAM server](network-ipam.md)
 ## Manage storage
-### [Storage fabric overview](manage-storage.md)
+### [Set up storage fabric](manage-storage.md)
 ### [Set up storage classifications](storage-classification.md)
 ### [Add storage devices](storage-device.md)
 ### [Allocate storage to host groups](storage-host-group.md)

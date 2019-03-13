@@ -32,7 +32,8 @@ With SM 2019, this account requires service logon permission.
 This account is used to run the *MonitoringHost.exe* process (runs all the Workflows). With SM 2019, this account requires service logon permission.
 
 >[!NOTE]
-> We recommend that you provide service logon permission to the accounts used by various SM connectors (AD, OM, SCO, CM, VMM, exchange connectors). >Service reporting account and analysis services accounts don't require service log on permission.
+>We recommend that you provide service logon permission to the accounts used by various SM connectors (AD, OM, SCO, CM, VMM, exchange connectors).
+>Service reporting account and analysis services accounts don't require service log on permission.
 
 ## How to enable service log on
 

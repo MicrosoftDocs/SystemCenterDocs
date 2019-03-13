@@ -13,7 +13,7 @@ monikerRange: 'sc-vmm-2019'
 ---
 
 # Azure update management
-This article provides information about Azure update management feature in Virtual Machine Manager (VMM).
+This article provides information about Azure update management feature in System Center 2019 - Virtual Machine Manager (VMM).
 
 Using Azure update Management feature, you can manage updates for Virtual Machines (VMs) and Workloads running in a VMM.
 
