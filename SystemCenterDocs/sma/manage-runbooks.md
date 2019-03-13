@@ -14,7 +14,7 @@ ms.technology: service-management-automation
 
 As a Service Management Automation (SMA) administrator, you need to configure and run runbooks. Activities including setting up the runbook workers, and scheduling and tracking runbooks. There are two system runbooks that are included with SMA, in addition to runbooks you author:
 
-- **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules, so that their activities can be used when you authori runbooks in Windows Azure Pack. 
+- **DiscoverAllLocalModules**: Runs immediately after you install a runbook worker. This runbook discovers all native modules on the Windows Server system on which the runbook worker is installed. It extracts activities and activity metadata for these modules, so that their activities can be used when you authori runbooks in Windows Azure Pack.
 - **SetAutomationModuleActivityMetadata**: Runs immediately after you import a module into SMA. This runbook extracts activities and activity metadata from a newly imported module, so that its activities can be used when you author runbooks in Windows Azure Pack.
 
 ## Configure runbook workers
@@ -55,14 +55,14 @@ Get-SmaRunbookWorkerDeployment -WebServiceEndpoint $webServer -Port $port
 ```
 
 > [!NOTE]
-You can't currently use the Windows Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets.
+> You can't currently use the Windows Azure Pack portal to designate a runbook worker. Use either the SMA ISE Add-on or PowerShell cmdlets.
 
 ## Schedule runbooks
 
 To schedule a runbook to start at a specified time, you link it to one or more schedules. A schedule can be configured to run once, or set to recur. A runbook can be linked to multiple schedules, and a schedule can have multiple runbooks linked to it.
 
 ### Create a schedule
-You can create a schedule with the Management Portal, or with Windows PowerShell. 
+You can create a schedule with the Management Portal, or with Windows PowerShell.
 
 #### Create a schedule in the Management Portal
 
@@ -223,7 +223,7 @@ Tags allow you to assign distinct words and phrases to help identify a runbook. 
 By default, Verbose and Progress records are not written to job history. You can change the settings for a particular runbook to log these records. For more information on these records, see [Runbook Output and Messages](overview-runbook-messages-output.md).
 
 ### Designated runbook worker
-By default, a runbook job is be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker. 
+By default, a runbook job is be assigned to a random runbook worker to execute. You can change settings for a particular runbook to execute the runbook on a particular runbook worker.
 
 ## Change runbook settings in the Management Portal
 You can change settings for a runbook in the Management Portal from the **Configure** page for the runbook.
@@ -253,4 +253,4 @@ Set-SmaRunbookConfiguration "WebServiceEndpoint $webServer "Port $port "Name $ru
 ## Next steps
 
 - Read about [managing global assets](manage-global-assets.md).
-- Learn about the [role of SMA](https://gallery.technet.microsoft.com/Service-Management-fcd75828) in a Windows Azure Pack implementation. 
+- Learn about the [role of SMA](https://gallery.technet.microsoft.com/Service-Management-fcd75828) in a Windows Azure Pack implementation.
