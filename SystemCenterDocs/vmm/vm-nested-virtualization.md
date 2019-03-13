@@ -21,6 +21,7 @@ You can leverage this functionality to reduce your infrastructure expense for de
 System Center - Virtual Machine Manager (VMM) 1801 and later, you can enable and disable the nested virtualization feature through VMM console. You can configure the nested Virtual Machine (VM) as a host in VMM and perform host operations from VMM, on this VM. For example, VMM dynamic optimization will consider a nested VM host for placement.
 
 >[!NOTE]
+
 > Virtualization applications other than Hyper-V are not supported in Hyper-V virtual machines, and are likely to fail. This includes any software that requires hardware virtualization extensions.
 
 ## Before you start
@@ -86,6 +87,7 @@ Administrators/delegated administrators can configure nested virtualization by u
 4.	On **General**, clear the **Enable Nested Virtualization** check box.
 
     >[!NOTE]
+    
     > Check the note at the bottom of the wizard page before you disable nested virtualization.
 
 ## Next steps
