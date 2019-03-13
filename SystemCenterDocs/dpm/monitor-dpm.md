@@ -101,7 +101,7 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 ::: moniker-end
 
 ## Monitor DPM in Operations Manager
-You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs:
+You can use monitor and report on the health and status of DPM servers using System Center Operations Manager Management Packs for DPM. DPM provides the following management packs, use these as applicable for the DPM version you are using:
 
 -   **Reporting management pack** (Microsoft.SystemCenter.DataProtectionManager.Reporting.mp) - Collects and displays reporting data from all DPM servers, and exposes a set of Operations Manager warehouse views for DPM. You can query these views to generate custom reports.
 

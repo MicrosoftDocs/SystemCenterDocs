@@ -48,10 +48,13 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ::: moniker range="sc-dpm-2019"
 
-## VMware backup to tape
-For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
+## Windows Server 2019 support
+DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
 
-DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md).
+## SQL 2017 support as DPM database
+DPM 2019 support SQL 2017 as its database.
+
+You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM.
 
 ## Support for newer workloads backups
 With DPM 2019, you can back up newer versions of workloads, listed below:
@@ -67,23 +70,22 @@ DPM 2016 introduced [Modern Backup Storage](https://docs.microsoft.com/system-ce
 
 To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
 
-## VMWare parallel backups
-With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
-
-With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
-
 ## Support for Central Monitoring
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
 
 You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
 
-## Windows Server 2019 support
-DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
+## VMware backup to tape
+For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
 
-## SQL 2017 support as DPM database
-DPM 2019 support SQL 2017 as its database.
+DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md).
 
-You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM.
+## VMWare parallel backups
+With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
+
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+
+
 
 ::: moniker-end
 

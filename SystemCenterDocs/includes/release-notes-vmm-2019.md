@@ -85,3 +85,4 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 ```
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"
 ```
+This command will add the service user to the list of allowed users, who can access VirtualMachineManager-Server/Operational event log.

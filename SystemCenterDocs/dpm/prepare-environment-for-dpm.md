@@ -40,9 +40,7 @@ In all deployments you’ll need:
 DPM uses SQL Server as a database to store backup information for workloads, servers, and computers it protects. All SQL Server versions should be Standard or Enterprise 64-bit.
 
 >[!NOTE]
-
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
-
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 
 **SQL Server - supported versions**
@@ -77,7 +75,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Requirement|Details|
 |-----------|-------|
 |Software|Windows Server 2019, Datacenter, and Standard editions<br/> Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions (Not applicable for DPM 2019) |
-|Installation prerequisites|Microsoft .NET Framework 4.5 or later (for 2019)<br/>Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> <br/> Setup automatically installs the prerequisites if they aren't already installed.|
+|Installation prerequisites|Microsoft .NET Framework 4.5 or later (for 2019)<br/>Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (for DPM 2019)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 
 
@@ -93,6 +91,11 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Virtualized DPM|- DPM running on a virtual machine can use the following storage types:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| <br/> |
 |Modern Backup Storage| Uses basic volumes, cannot be on a dynamic disk. <br/> A single DPM server has a soft limit of 120 TB storage.| <br/> |
 
+## Storage Recommendations for DPM (heading)
+
+- Sector Size should always be consistent across underlying storage (i.e. WS storage) to DPM native storage.
+- When storage spaces is used to carved out DPM storage, storage spaces is supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
+- Write- Back cache should always be se to zero while using Storage Spaces for DPM storage.
 
 ## Protected workloads
 
@@ -109,7 +112,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 
 |Requirement|Details|
 |-----------|-------|
-|Domain|The DPM server should be in a Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2.|
+|Domain|The DPM server should be in a Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012|
 |Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. Without two-way trust, DPM can't protect computers in workgroups or untrusted domains. For more information, see [Back up and restore workloads in workgroups and untrusted domains]().|
 |Network configuration|If you're protecting data over a wide area network (WAN), you'll need a minimum bandwidth of 512 kilobits per second (Kbps).<br/> DPM doesn't support disjointed namespaces.|
 
