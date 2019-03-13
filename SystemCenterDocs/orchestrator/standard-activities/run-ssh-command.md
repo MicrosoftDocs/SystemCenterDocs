@@ -1,7 +1,7 @@
 ---
 title: "Run SSH Command | Microsoft Docs"
 ms.custom: ""
-ms.date: "2019-03-14"
+ms.date: "03-14-2019"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
@@ -77,3 +77,6 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 |Key file path|The path of the key file that was used to authenticate with the SSH server.|  
 |Port|The port used to connect to the SSH server.|  
 |Username|The username used to log into the SSH server.|
+
+## Next steps
+see the article on how to get the [SNMP variables](get-snmp-variable.md).
