@@ -18,7 +18,7 @@ ms.assetid:  7fc426cb-aa90-4e45-b14c-95d711f6e005
 The following sections provide information about how to upgrade your existing Service Management Automation 2016 UR 5/1801/1807 to Service Management Automation 2019.
 
 > [!NOTE]
-  To upgrade to System Center 2019 - SMA, you must install UR5 on 2016.
+> To upgrade to System Center 2019 - SMA, you must install UR5 on 2016.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ The following sections provide information about how to upgrade your existing Se
 There is no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones.  You can keep the database intact, which contains the runbooks and configuration settings.  
 
 > [!NOTE]
-When installing SMA with an existing database, you must install the worker servers before the web service.
+> When installing SMA with an existing database, you must install the worker servers before the web service.
 
 1. If SMA servers are being monitored by Operations Manager, enable maintenance mode, to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a>.

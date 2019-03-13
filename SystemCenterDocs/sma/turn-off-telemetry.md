@@ -21,7 +21,6 @@ Administrators can turn off this feature at any point of time.
 
 
 > [!NOTE]
-
 > Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in SMA. [Learn more](#telemetry-data-collected).
 
 
@@ -37,9 +36,8 @@ Use the following procedure:
   ```
 
   >[!NOTE]
-
   > You can use the [Get-SmaAdminConfiguration](https://docs.microsoft.com/en-us/powershell/module/Microsoft.SystemCenter.ServiceManagementAutomation/Get-SmaAdminConfiguration?view=systemcenter-ps-2016) command to check the current admin configuration settings.
-  
+
 ## Telemetry data collected
 
 | **Data related To** | **Data collected**|
