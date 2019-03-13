@@ -83,7 +83,7 @@ You need the following permissions when you are registering Service Manager with
 You will have to provide credentials for the accounts in the following table during the installation of the Service Manager and data warehouse management servers.  
 
 > [!NOTE]  
-The user accounts and group accounts that are required for the installation of Service Manager must reside in the Users organizational unit \(OU\) in Active Directory Domain Services \(AD DS\).  
+>The user accounts and group accounts that are required for the installation of Service Manager must reside in the Users organizational unit \(OU\) in Active Directory Domain Services \(AD DS\).  
 
 #### Accounts used when installing a Service Manager management server  
 
