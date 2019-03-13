@@ -50,11 +50,9 @@ SPF 2019 supports SQL 2017 for fresh installation.
 This release of System Center Service Provider Foundation (SPF) contains all the bug fixes shipped till the [Update Rollup 2 of SPF 2016](https://support.microsoft.com/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f).
 
 > [!NOTE]
-
 > No features were introduced in SPF 1807.
 
 > [!NOTE]
-
 > The following features/feature updates were introduced in SPF 1801.
 
 ## Support for TLS 1.2

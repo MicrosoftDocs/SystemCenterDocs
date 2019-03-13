@@ -6,7 +6,7 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 706e433d-c641-4dc3-8be5-fe582ef9f4bc
@@ -19,7 +19,7 @@ The information in this topic provides tasks that you need to perform in order f
 However, this information is not intended to provide detailed instructions on how to configure a SQL Server AlwaysOn Availability Group. Additionally, Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
 
 >[!IMPORTANT]
-Service Manager does not support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
+> Service Manager does not support a topology where the reporting and analysis server database is configured as part of the AlwaysOn Availability Group.
 
 ## SQL Server AlwaysOn supported Service Manager databases
 

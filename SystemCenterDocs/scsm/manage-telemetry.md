@@ -21,7 +21,6 @@ Administrators can turn off this feature at any point of time by using the Servi
 
 
 > [!NOTE]
-
 > Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in SM. [Learn more](#telemetry-data-collected).
 
 
@@ -41,9 +40,7 @@ Use the following procedure:
 ## Manage telemetry settings from SM management server or data warehouse management server
 
 > [!NOTE]
-
 > - Use the SM console that is installed on the same computer  where the SM management server or data warehouse management server is installed.
-
 > - You must restart the computer after you set the telemetry preference.
 
 1. Connect the console to the server from where you want to manage the telemetry settings.

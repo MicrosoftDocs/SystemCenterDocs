@@ -129,7 +129,6 @@ The VMM fabric admin can now offer the storage QoS policies in the cloud. Tenant
 The fabric admin can now offer storage QoS policies, while authoring the VMM private clouds. After which, the authorized users (admin and self-service users) with access to this cloud can consume the available QoS policies for provisioning VMs and Services on the cloud.
 
 > [!NOTE]
-
 > A cloud with at least one QoS policy is offered, will not allow the deployment of disks without a policy. This helps in preventing the cloud consumers to pick infinite resources with a null policy. Also, the change in IOPS by self-service users will not be allowed after this release, to avoid the same scenario of selecting unauthorized performance.
 
 **Storage QoS Policies** option in the **Create cloud** wizard helps the fabric admin to select the list of policies, which should be made available for the cloud consumers.
@@ -143,7 +142,6 @@ The fabric admin can now offer storage QoS policies, while authoring the VMM pri
 4. Review the summary and click **Finish**.
 
 > [!NOTE]
-
 > This list contains only those policies that are available in scope of all the clusters selected in the Resources section of the cloud wizard. This helps the self-service user to choose between the available plans, even after the VM is placed .
 
  

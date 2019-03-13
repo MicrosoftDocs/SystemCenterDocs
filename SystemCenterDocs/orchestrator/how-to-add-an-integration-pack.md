@@ -16,8 +16,8 @@ System Center - Orchestrator includes a set of standard activities that are auto
 
 Integration packs are available from the Microsoft Download Center. Each integration pack has a guide that provides installation instructions, known issues, and reference information for the activities in that integration pack.
 
->[!NOTE]
-Orchestrator does not support a downgrade of integration packs. If you have an integration pack that is currently registered or previously registered in Orchestrator, installation fails if you attempt to install an earlier version of the same integration pack. You should test integration packs and upgraded integration packs in a test environment before you implement them in a production environment. If you require a downgrade of an integration pack in a production environment, contact Microsoft Customer Support for assistance.
+> [!NOTE]
+> Orchestrator does not support a downgrade of integration packs. If you have an integration pack that is currently registered or previously registered in Orchestrator, installation fails if you attempt to install an earlier version of the same integration pack. You should test integration packs and upgraded integration packs in a test environment before you implement them in a production environment. If you require a downgrade of an integration pack in a production environment, contact Microsoft Customer Support for assistance.
 
 
 ## Registering and deploying an integration pack

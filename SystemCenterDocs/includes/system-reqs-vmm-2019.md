@@ -55,7 +55,6 @@ Windows Server 2019 (with desktop experience)| Y | Y | If supported by SQL Serve
 Windows Server 2019 (Server Core)| Y | Y | If supported by SQL Server version
 
 > [!NOTE]
-
 > Ensure that VMM server operating system  is same as the managed host operating system in case of deployment of  Hyper Converged Infrastructure.
 
 ## VMM console operating system
@@ -71,7 +70,6 @@ Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 ## SQL Server
 
 > [!NOTE]
-
 > - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.  
 > - For the below supported SQL versions, Standard, Enterprise and Datacenter (64-bit) editions are supported, based on the availability.
 

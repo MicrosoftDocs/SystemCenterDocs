@@ -25,8 +25,7 @@ In System Center Virtual Machine Manager (VMM), you can centrally configure and 
 - SDN Port ACLs can be applied to virtual subnets and virtual network adapters.
 
 > [!NOTE]
->
-Port ACL settings are exposed only through PowerShell cmdlets in VMM, and can't be configured in the VMM console.  
+>Port ACL settings are exposed only through PowerShell cmdlets in VMM, and can't be configured in the VMM console.  
 
 Using VMM PowerShell, you can also configure Hyper-V port ACLs. For more information, see [Hyper-v port ACLs](hyper-v-acls.md).
 

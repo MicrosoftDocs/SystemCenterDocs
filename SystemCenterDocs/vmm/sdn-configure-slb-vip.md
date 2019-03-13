@@ -71,13 +71,11 @@ Ensure the following prerequisites are met:
   -  Click **Tool** > **Connector**. Click the Server connection associated with template and then click a NIC object to connect the load balancer to the adapter. In the **NIC properties**, check the address types and that the MAC address is static.
 
     > [!NOTE]
-
     > Server connection must be connected to the Back-End network interface of the service. The back-end network interface can be connected to either a One Connected VM Network or a network virtualized VM Network.
 
  - With the Connector enabled,  click the client connection associated with the load balancer and then click a logical network object.
 
     > [!NOTE]
-
     > Client connection must be connected to a Front-End network of the load balancer. This can be a Public VM network or a network virtualized VM network. A network virtualized VM Network is used for internal load balancing scenarios.
 
   - Save the service template in **Service Template** > **Save and Validate**.

@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -24,7 +24,6 @@ The PGP Encrypt File activity encrypts a file or an entire folder tree using a P
  To use this activity, you must install the gpg executable.
 
 > [!IMPORTANT]
-
 >  This activity supports DSS and RSA4 keys.  
 >  RSA keys are not supported by this activity.  
 
