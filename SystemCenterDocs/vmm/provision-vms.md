@@ -174,7 +174,6 @@ VMM 2019 allows you to set a set a static MAC address for the VMs deployed on VM
 Use the following steps:
 
 > [!NOTE]
-
 > MAC address that you wish to assign to the VM should be part of an accessible MAC pool. As self-service users do not have visibility into the fabric MAC pools, they would need to co-ordinate with admins to make sure that the MAC address is part of the accessible MAC pool.
 
 You can set the static MAC address on the VM  while:

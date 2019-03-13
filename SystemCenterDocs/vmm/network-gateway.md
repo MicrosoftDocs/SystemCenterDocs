@@ -53,7 +53,6 @@ The service template provides a highly available Windows Server Gateway deployme
 1. You'll need to download the template from the [Download center](https://download.microsoft.com/download/0/D/1/0D189100-07B7-4CBF-B774-7A3F43960145/Windows%20Server%202012%20R2%20HA%20Gateway.zip).
 
   > [!NOTE]
-
   > The templates downloaded are applicable for VMM 2012 R2, 2016 and 1801.
 
 2. The download is a compressed zip file. You'll need to extract the file. Files include a user guide, two service templates, and a custom resource folder (a folder with a .cr extension) that contains files required for the service templates.
@@ -63,9 +62,7 @@ The service template provides a highly available Windows Server Gateway deployme
 ## Add a non-Windows gateway
 
 > [!NOTE]
-
 > You'll need to install the provider software on the VMM management server and add the gateway to the fabric.
-
 > Obtain the provider software. You can review a list of supported providers in **Settings** > **Configuration Providers**
 
 Use the following procedure to add the non-windows gateway:
