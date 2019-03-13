@@ -22,7 +22,6 @@ This article explains how to use Data Protection Manager (DPM) version 1801 and 
 DPM 1801 and later provides the following features when backing up VMware virtual machines:
 
 >[!NOTE]
-
 > Backup to tape is supported from DPM 2019.
 
 - Agentless backup: DPM does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
