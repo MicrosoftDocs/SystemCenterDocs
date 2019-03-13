@@ -48,7 +48,6 @@ To create virtual network adapter port profile, use the following procedure:
 6. In **Summary**, view the settings and click **Finish**.
 
 > [!NOTE]
-
 > - Minimum bandwidth (Mbps) is not supported by VMM for SDN.  
 > - Limiting the inbound bandwidth of the vNIC is not supported by VMM.
 > - Minimum bandwidth (Weight) sets the **outboundReservedValue** setting on the network controller and maximum bandwidth (Mbps) sets the **outboundMaximumMbps** setting.
@@ -87,5 +86,5 @@ To apply a port classification (and hence the QoS settings) to a virtual network
 
 
 > [!NOTE]
-- Only the classifications available for the logical switch are displayed here. You can also apply a port classification while creating a VM.
-- You can also apply a port classification to the host virtual network adapter via the host properties Virtual Switches page.
+> - Only the classifications available for the logical switch are displayed here. You can also apply a port classification while creating a VM.
+> - You can also apply a port classification to the host virtual network adapter via the host properties Virtual Switches page.

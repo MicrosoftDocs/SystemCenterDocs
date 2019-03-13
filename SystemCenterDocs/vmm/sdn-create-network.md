@@ -61,7 +61,6 @@ The following two types of isolation settings are supported in SDN fabric:
 5. In **Connectivity** panel, select the type of connectivity you want to use for this VM network.
 
  >[!NOTE]
-
  > By default, all virtual machines in a VM network communicate with each other. If you want virtual machines on this VM network to communicate with other networks, configure the following settings in the **Connectivity** page:
 
    - **Connect to another network through a VPN tunnel**: Select this option if you want the virtual machines on this VM network to communicate with other networks, over a VPN. To automatically learn routes between the sites connected through the VPN tunnel, select the **Enable the border gateway protocol** option.  Select the **VPN gateway device** that you want to use and confirm the settings.
@@ -75,13 +74,11 @@ The following two types of isolation settings are supported in SDN fabric:
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
 > [!NOTE]
-
 > After you create a VM network with network virtualization, ensure you [create an IP Pool](network-pool.md#set-up-an-ip-address-pool-on-a-vm-network) for this VM network.
 
 ## Create a VM network (no isolation)
 
 > [!NOTE]
-
 > While creating the logical network, If you have chosen the option **Create VM network with same name to allow virtual machines to access this logical network directly** , then you can skip the following steps.
 
 1. Click **VMs and Services** > **VM Networks** . **Create VM Network**.
@@ -91,7 +88,6 @@ Once the job is successfully completed, you can view the newly created VM networ
 Once the job is successfully completed, you can view the newly created VM network under **VMs and Services** > **VM Networks**.
 
 > [!NOTE]
-
 >If you had created an IP pool on the logical network, the same will be directly available for the VM network.
 
 ## Next steps

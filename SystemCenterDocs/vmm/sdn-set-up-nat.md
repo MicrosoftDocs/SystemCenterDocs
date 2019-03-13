@@ -73,7 +73,6 @@ Type the following details as appropriate:
 4.	Click **OK**.
 
 >[!NOTE]
-
 > Multiple NAT rules can be created to forward the traffic to multiple VMs that are part of the VM network.
 
 ## Remove a NAT rule
