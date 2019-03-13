@@ -21,7 +21,6 @@ Administrators can turn off this feature at any point of time.
 
 
 > [!NOTE]
-
 > Microsoft does not collect any personal data from the customers. We only listen to events that would help diagnostics in SPF. [Learn more](#telemetry-data-collected).
 
 
