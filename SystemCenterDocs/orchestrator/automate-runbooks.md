@@ -23,13 +23,13 @@ If a runbook starts with any activity other than a monitor activity, the runbook
 ## Variables
 When building runbooks some settings are the same across activities. Variables let you specify a value that activities use in any runbook.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > The access permissions for variables can be modified, but the runbook server does not enforce these permissions.  
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > Be aware that in Orchestrator, variables that reference system variables, for example **%ProgramFiles%**, return values from a 32-bit runtime environment. This is because Orchestrator is a 32-bit application.  
 
-> [NOTE]  
+> [!NOTE]  
 > Orchestrator does not support moving multiple variables with multiple-selection. To move more than one variable to another folder, you must move each variable individually.  
 
 Use the following procedures to create, insert, and organize variables.  
@@ -99,9 +99,9 @@ When a loop is configured for an activity, it continues to run with the same inp
 
 Loops run one time for each incoming piece of data that is passed to the activity. For example, consider a runbook that uses a **Query Database** activity followed by **Append Line**. If the **Query Database** activity returned three rows, the **Append Line** activity would run three times. If you have a loop on the **Append Line** activity, it would run three separate loops. After the first data item has looped through the **Append Line** activity, the next item goes through **Append Line** and loops until it exits, and then the third begins. After all three items have been processed, the next activity in the runbook runs.
 
-## Extending Runbook capabilities 
+## Extending Runbook capabilities
 
-Orchestrator provides two options for extending standard activities. You can either build new activities, or create new Integration Packs (IP). IPs are collections of activities for Microsoft and products of other companies  which are specific to a product or technology. If the functionality that you require is not available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit. 
+Orchestrator provides two options for extending standard activities. You can either build new activities, or create new Integration Packs (IP). IPs are collections of activities for Microsoft and products of other companies  which are specific to a product or technology. If the functionality that you require is not available in an IP, you have the alternative option of using the Orchestrator Integration Toolkit.
 
 The Orchestrator Integration Toolkit is a set of tools to help you create new integrations for Orchestrator. You can use wizards in the Integration Toolkit to easily create new workflow activities and Integration Packs that extend the capabilities of the product. You can also create custom workflow activities using the Orchestrator SDK and C\#, and then package them into an IP using this toolkit.
 

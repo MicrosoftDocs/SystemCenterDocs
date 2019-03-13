@@ -55,11 +55,9 @@ This release of System Center Orchestrator (SCO) contains all the bug fixes ship
 For more information about how to set up, configure and run your environment to use TLS 1.2, [read this article](https://support.microsoft.com/help/4051111/tls-1-2-protocol-support-deployment-guide-for-system-center-2016).
 
 > [!NOTE]
-
 > No features were introduced in System Center Orchestrator 1807.
 
 > [!NOTE]
-
 > The following features/feature updates were introduced in System Center Orchestrator 1801.
 
 ## Support for TLS 1.2
