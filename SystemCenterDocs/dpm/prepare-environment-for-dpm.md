@@ -91,7 +91,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Virtualized DPM|- DPM running on a virtual machine can use the following storage types:<br/> - .VHD disk that meets the configuration requirements listed in installing DPM in a virtual environment.<br/> - Passthrough disk with host direct attached storage (DAS)<br/> - Passthrough iSCSI LUN attached to a host. <br/> - Passthrough Fibre Channel LUN attached to a host.<br/> - iSCSI target LUN connected directly to the DPM virtual machine.<br/> - Fibre Channel LUN connected to the DPM virtual machine using a Windows Server 2012 Virtual Fiber Channel (VFC) controller.| <br/> |
 |Modern Backup Storage| Uses basic volumes, cannot be on a dynamic disk. <br/> A single DPM server has a soft limit of 120 TB storage.| <br/> |
 
-## Storage Recommendations for DPM (heading)
+## Storage recommendations for DPM
 
 - Sector Size should always be consistent across underlying storage (i.e. WS storage) to DPM native storage.
 - When storage spaces is used to carved out DPM storage, storage spaces is supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
