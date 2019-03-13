@@ -123,7 +123,7 @@ Using these packs you can:
 
 ### Prerequisites
 
--   To use the DPM Management Packs, you need a System Center Operations Manager server running 2012 R2. The Operations Manager Data Warehouse must be up and running.
+-   To use the DPM Management Packs, you need a System Center Operations Manager server running. The Operations Manager Data Warehouse must be up and running.
 
 -   If you're running a previous version of the Discover and Library Management Packs obtained from the DPM installation media, you should remove them from the DPM server and install the new versions from the download page.
 
