@@ -30,7 +30,6 @@ Use the following procedures to bring up a new network controller:
 1. In the VMM console, **VMs and Services** > **Services**, select the network controller service instance and click **Delete**.
 
     > [!NOTE]
-
     > Remove the network controller service instance only. Do not remove the network controller from **Fabric** > **Network Services.**
 
     ![back up and restore sdn](media/sdn-backup-restore/back-up-restore-sdn.png)

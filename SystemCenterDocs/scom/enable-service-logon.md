@@ -52,7 +52,6 @@ To view the log on type for agents, go to
 ![Log on type for management servers](./media/enable-service-logon/logon-type-agents.png)
 
 > [!NOTE]
-
 > Agent/gateway that is not yet upgraded, display Log on type as  *Service* in console . Once the agent/gateway is upgraded, the current log on type will be displayed.
 
 ## Enable service log on permission for Run As accounts
@@ -70,7 +69,6 @@ Follow these steps:
     ![Select users](./media/enable-service-logon/om2019-select-users.png)
 
 > [!NOTE]
-
 > If you are upgrading to Operations Manager 2019 from a previous version or installing a new Operations Manager 2019 environment, follow the steps above to provide **Log on as a service** permission to Run As accounts.
 
 ## Change log on type for a health service

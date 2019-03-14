@@ -10,7 +10,7 @@ ms.topic: article
 ms.author: raynew
 ---
 
-# Deploy runbooks 
+# Deploy runbooks
 
 There are tools available in Orchestrator to help you manage the versions of your runbooks. These tools are described in the following sections.  
 
@@ -30,7 +30,7 @@ To edit a runbook, you must check it out. Another user cannot edit that runbook 
 ## Audit Log  
 When a runbook has been changed and is checked in by a user, an entry appears in the **Audit History** log.  
 
-> [TIP]  
+> [!TIP]  
 > When a runbook has been altered to a state where it is no longer functioning, you can select the **Audit History** tab at the bottom of the Runbook Designer to see the changes that were made and then reverse them.  
 
 ### To view runbook change details  

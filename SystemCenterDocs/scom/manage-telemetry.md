@@ -34,11 +34,9 @@ Administrators can turn off this feature at any point of time. Learn more about 
 3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
   > [!NOTE]
-
   > We recommend you to read the Privacy Statement before you select the option.
-
   -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
-  - 	To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
+  -  To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
 
 ## Telemetry data collected
 

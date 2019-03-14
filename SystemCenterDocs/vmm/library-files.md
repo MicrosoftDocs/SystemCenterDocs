@@ -24,7 +24,6 @@ You can add file-based resources to the library as follows:
 - Copy files to the library share from outside the VMM console
 
 > [!NOTE]
-
 >  Sysprep the virtual hard disk and then add it to the VMM library [Learn more](https://docs.microsoft.com/windows-hardware/manufacture/desktop/sysprep-process-overview).
 
 ## Copy files to the share in the VMM console

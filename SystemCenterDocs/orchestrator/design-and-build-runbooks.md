@@ -19,9 +19,9 @@ To build a runbook you drag activities onto the workspace. Activities are the bu
 
 - Perform some action  
 
-- Publish new data 
+- Publish new data
 
-For more information about types of activities, see [Control runbook activities](control-runbook-activities.md). 
+For more information about types of activities, see [Control runbook activities](control-runbook-activities.md).
 
 ## Runbook Designer Panes  
 The Runbook Designer interface is organized into the following four panes.  
@@ -80,11 +80,11 @@ You can change the default size of each activity icon from small to large by rig
 
 After you build a runbook, you can test it before it is run in production. To test, you use the **Runbook Tester** which you start in the **Runbook Designer**. The **Runbook Tester** lets you run the runbook to view the Published Data from each activity. You can run through the entire runbook, step through each activity one at a time, or set breakpoints at certain activities.
 
-> [IMPORTANT]  
+> [!IMPORTANT]  
 > Runbook Tester actually performs each activity within the workflow. The steps are not performed in a simulated or virtualized environment. All the connections referenced in the runbook are live and fully functional, so any activities that modify or destroy data in connected systems cause that data to be modified or destroyed. For example, if you use the **Query Database** activity to **DROP TABLE ImportantTable**, it actually deletes the **ImportantTable** from the instance of Microsoft SQL Server.  
 
-> [IMPORTANT]  
-> Note that the account used to start the runbook must have permission on the local computer to run successfully. These permission requirements also apply when testing the runbook with the Runbook Tester. To successfully test your runbook, start the Runbook Designer **as Administrator**. By association, the Runbook Tester runs **as Administrator** and uses the higher\-level security token. 
+> [!IMPORTANT]  
+> Note that the account used to start the runbook must have permission on the local computer to run successfully. These permission requirements also apply when testing the runbook with the Runbook Tester. To successfully test your runbook, start the Runbook Designer **as Administrator**. By association, the Runbook Tester runs **as Administrator** and uses the higher\-level security token.
 
 ### To test a runbook  
 
@@ -108,7 +108,7 @@ After you build a runbook, you can test it before it is run in production. To te
 
     Each activity up to the breakpoint runs. The runbook pauses before running the activity with the breakpoint.  
 
-4.  To continue through to the end of the runbook, click **Run to Breakpoint** again, or to step through it one activity at a time, click **Step**. 
+4.  To continue through to the end of the runbook, click **Run to Breakpoint** again, or to step through it one activity at a time, click **Step**.
 
 ## Next steps
 

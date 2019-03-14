@@ -98,7 +98,7 @@ You can also create user roles by using the Admin OData protocol service using t
 
     ```  
 
-    > [CAUTION]  
+    > [!CAUTION]  
     > Note that if the user role was previously created by using the VMM Administration Console, its permissions would be overwritten by those specified by the **New\-SCSUserRole** cmdlet.  
 
 4.  Verify that the user role was created by verifying that it is listed in the **User Roles** in **Settings** workspace in the VMM Administration Console.  
