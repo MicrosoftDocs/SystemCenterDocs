@@ -1036,6 +1036,11 @@
 },
 
 {
+     "source_path" : "SystemCenterDocs/orchestrator/whats-new-1801.md",
+     "redirect_url": "/system-center/orchestrator/whats-new-in-orch"
+},
+
+{
      "source_path" : "SystemCenterDocs/orchestrator/system-requirements.md",
      "redirect_url": "/system-center/orchestrator/system-requirements-orch"
 },
@@ -3023,6 +3028,10 @@
 {
      "source_path" : "SystemCenterDocs/spf/release-notes-1801.md",
      "redirect_url" : "/system-center/spf/release-notes-spf"
+},
+{
+     "source_path" : "SystemCenterDocs/spf/whats-new-1801.md",
+     "redirect_url" : "/system-center/spf/whats-new-in-spf"
 },
 {
      "source_path" : "SystemCenterDocs/spf/system-reqs.md",
