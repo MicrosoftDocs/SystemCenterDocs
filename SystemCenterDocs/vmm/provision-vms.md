@@ -17,7 +17,7 @@ ms.technology: virtual-machine-manager
 
 
 
-This article provides an overview of provisioning VMs in the System Center - Virtual Machine Manager (VMM) compute fabric. Learn about provisioning methods, and features provided by VMM during provisioning.
+This article provides an overview of provisioning Virtual Machines (VMs) in the System Center - Virtual Machine Manager (VMM) compute fabric. Learn about provisioning methods, and features provided by VMM during provisioning.
 
 ## Provisioning
 
@@ -150,7 +150,7 @@ After you've set up a vCenter server and ESX/ESXi hosts, you can provision VMwar
 - VMM doesn't support VMware VMs with VHDs connected to an IDE bus.
 - VMM supports VMware thin provision hard disk through the dynamic disk type. Note that if you create and deploy a VM to a vSphere host configured to use a dynamic disk the disk will be thin provisioned. If a VM was created as a thin provisioned disk out-of-band VM will display it as dynamic. If you save a thin provision disk to the library VMM will save it as thick. It remains thick if you create a VM from it.
 
-## Converting VMware VMs to Hyper-V 
+## Converting VMware VMs to Hyper-V
 
 There are currently a couple of methods for converting VMWare VMs to Hyper-V (V2V):
 
@@ -162,6 +162,44 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V (V2
     - Anti-virus apps must be supported.
     - VMware tools must be uninstalled from the guest operating system of the VM.
 - [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): After June 3, 2017 this tool will no longer be available. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
+
+::: moniker range="sc-vmm-2019"
+
+## Static MAC address for VMs deployed on a VMM cloud
+
+In earlier releases, VMM allowed the users to set a static MAC address on the VMs deployed on the hosts, and did not have an option to set static MAC address for the VMs deployed on the cloud.
+
+VMM 2019 allows you to set a set a static MAC address for the VMs deployed on VMM Cloud.
+
+Use the following steps:
+
+> [!NOTE]
+> MAC address that you wish to assign to the VM should be part of an accessible MAC pool. As self-service users do not have visibility into the fabric MAC pools, they would need to co-ordinate with admins to make sure that the MAC address is part of the accessible MAC pool.
+
+You can set the static MAC address on the VM  while:
+
+-  Deploying a new VM onto the cloud from VHD/VM Template. or
+-  Changing the MAC address on an existing VM deployed to the cloud.
+
+
+**Set static MAC while deploying a new VM onto the cloud from VHD/VM template**.
+
+1. In VMM Console, navigate to **VMs and Services** > **Home** > **Clouds**.
+2. Select the cloud to deploy the VM.  
+3. Right-click > **Create Virtual Machine** to enter the Create Virtual Machine wizard and create the VM.
+4. Right-click the VM, select **Properties**.
+5. Navigate to  **Configure Hardware** page, select the network adapter to which you want to assign a static MAC address.
+6. In the **MAC address** section, select **Static**  and enter the MAC address in the text box.
+
+	![Static mac for vms on cloud](./media/provision-vms/assign-static-mac-while-deploying.png)
+
+
+**Change the MAC address for a VM deployed on the cloud**
+
+1. Navigate to a VM deployed on the cloud, for which  you want to assign a static MAC address.
+2. Follow the steps 4 to 6 from the above procedure.
+
+::: moniker-end
 
 ## Next steps
 

@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 01/10/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -13,9 +13,9 @@ ms.technology: virtual-machine-manager
 
 # Plan VMM installation
 
+This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and incudes information for releases VMM 2016 and later. Please use these requirements as applicable for the VMM version you plan to install.
 
-
-This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation.
+For additional information on the supported versions of hardware and software, see the system requirements article for the version you install.
 
 ## Deployment requirements
 
@@ -32,14 +32,14 @@ Verify the following [system requirements](system-requirements.md):
 
 **Component** | **Details**
 --- | ---
-**Command line utilities for SQL Server** | [SQL Server 2014 feature pack](https://www.microsoft.com/download/details.aspx?id=42295)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
+**Command line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=42295)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
 **Guest operating system** | Windows operating systems [supported by Hyper-V](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
 **PowerShell** | [Supported versions](system-requirements.md)
 **.NET** | [Supported versions](system-requirements.md)
-**Host agent** | VMM 2016/1801<br/><br/> Needed for hosts managed in VMM.
+**Host agent** | VMM 2016/1801/1807/2019<br/><br/> Needed for hosts managed in VMM.
 **Monitoring** | System Center Operations Manager 2016/1801. <br/><br/> You also need SQL Server Analysis Services 2014 or a later version.
-**VMware** | vCenter 5.1, 5.5, 5.8, 6.0<br/><br/> ESX 5.5, ESX 6.0<br/><br/> vCenter and ESX servers running these versions can be managed in VMM.
+**VMware** | vCenter 5.1, 5.5, 5.8, 6.0, 6.5<br/><br/> ESX 5.5, ESX 6.0, ESX 6.5 <br/><br/> vCenter and ESX servers running these versions can be managed in VMM.
 **Bare metal provisioning** | System Management Architecture for Server Hardware (SMASH) (v1 or higher) over WS-MAN.<br/><br/> Intelligent Platform Interface 1.5 or higher<br/><br/> Data Center Manager Interface (DCMI) 1.0 or higher. <br/><br/> Required to discover and deploy physical bare metal servers.
 
 ### SPN
@@ -65,7 +65,7 @@ When you install VMM with this user account SPN will be registered.
 
 ## VMM management server
 
-- You can't run the VMM management server on Nano server.
+- You can't run the VMM management server on Nano server (applicable to releases prior to 2019).
 - The management server computer name cannot exceed 15 characters.
 - Don’t install the VMM management server, or other System Center components other than agents, on servers running Hyper-V.
 - You can install the VMM management server on a VM. If you do, and you use the Dynamic Memory feature of Hyper-V, then you must set the startup RAM for the virtual machine to be at least 2,048 megabytes (MB).
@@ -115,7 +115,9 @@ When you install VMM with this user account SPN will be registered.
 
 ## Account and domain requirements
 
-When you install VMM you need to configure the VMM service  to use either the Local System account or a domain account. Note the following before you prepare an account:
+When you install VMM you need to configure the VMM service  to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
+
+Ensure the following before you prepare an account:
 
 - It is not supported to change the identity of the Virtual Machine Manager service account after installation. This includes changing from the local system account to a domain account, from a domain account to the local system account, or changing the domain account to another domain account. To change the Virtual Machine Manager service account after installation, you must uninstall VMM (selecting the Retain data option if you want to keep the SQL Server database), and then reinstall VMM by using the new service account.
 - If you specify a domain account, the account must be a member of the local Administrators group on the computer.
@@ -124,6 +126,11 @@ When you install VMM you need to configure the VMM service  to use either the Lo
 - If you are using a disjointed namespace, you must use a domain account. For more information about disjointed namespaces, see Naming conventions in Active Directory for computers, domains, sites, and OUs.
 - If you are installing a highly available VMM management server, you must use a domain account.
 - The computer on which you install the VMM management server must be a member of an Active Directory domain. In your environment you might have user accounts in one forest and your VMM servers and host in another. In this environment, you must establish a two-way trust between the two cross-forest domains. One-way trusts between cross-forest domains are not supported in VMM.
+- To create and use gMSA, review the article on gMSA and create the gMSA as per the guidance available.  Make sure that the servers on which the VMM Management service would be installed have permissions to retrieve the password of gMSA account.  
+
+> [!NOTE]
+> You do not need to specify the ‘Service Principle Name (SPN)’ when creating  gMSA. VMM service sets the appropriate SPN for gMSA.
+
 
 ## Distributed key management
 

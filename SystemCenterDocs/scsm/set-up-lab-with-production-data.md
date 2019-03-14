@@ -36,8 +36,8 @@ In the [lab environment](lab-env.md):
 5. Verify that the lab environment works. Try to open the console on the Secondary Management server and see if you can connect to the console. Confirm that the Data Warehouse and Reporting do not appear. After you confirm that this works, complete the rest of the steps.
 6. [Promote a Secondary Management Server in a Lab Environment](lab-env.md#promote-a-secondary-management-server-in-a-lab-environment)
 7. [Enable the Connectors in the Lab Environment](lab-env.md#enable-the-connectors-in-the-lab-environment)
-  >[!NOTE]
-  Do not enable or delete the Operations Manager alert connector in the lab environment. This will cause the alert connector in the production environment to fail.
+  > [!NOTE]
+  > Do not enable or delete the Operations Manager alert connector in the lab environment. This will cause the alert connector in the production environment to fail.
 
 8. If you want to test the email notification and incoming email functionality, use a separate SMTP instance to send emails to eliminate flooding the inboxes of users with test emails. To test the incoming email feature, you can point to a test share and drop the eml files into this share when you are ready to test.
 9. [Install a New Data Warehouse Server in the Lab Environment](lab-env.md#install-a-new-data-warehouse-server-in-the-lab-environment)

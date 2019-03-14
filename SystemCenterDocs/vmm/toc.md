@@ -96,7 +96,7 @@
 ### [Integrate NLB with service templates](network-nlb.md)
 ### [Set up an IPAM server](network-ipam.md)
 ## Manage storage
-### [Storage fabric overview](manage-storage.md)
+### [Set up storage fabric](manage-storage.md)
 ### [Set up storage classifications](storage-classification.md)
 ### [Add storage devices](storage-device.md)
 ### [Allocate storage to host groups](storage-host-group.md)
@@ -141,4 +141,6 @@
 ### [Set up monitoring and reporting with Operations Manager](monitors-ops-manager.md)
 ## Integrate with Azure
 ### [Add an Azure subscription in VMM](azure-subscription.md)
+### [VM update management](vm-update-management.md)
+### [Manage Azure VMs](manage-azure-vms.md)
 ### [Manage Azure Resource Manager-based and region-specific Azure subscriptions](vms-manage-azure-ad-and-region-specific.md)

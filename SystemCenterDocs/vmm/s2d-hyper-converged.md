@@ -22,7 +22,6 @@ You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster a
 You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
 
 > [!NOTE]
-
 > You must enable S2D before adding the storage provider to VMM.
 To enable S2D, go to **General Configuration** > **Specify the cluster name and host group** and select the **Enable Storage Spaces Direct** option, as shown below:
 
@@ -62,7 +61,6 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 ### Provision a cluster from bare metal machines
 
 > [!NOTE]
-
 > Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
 
 > You can also use this script to configure RDMA, QoS and SET while adding a new node to an existing S2D deployment from bare metal computers.

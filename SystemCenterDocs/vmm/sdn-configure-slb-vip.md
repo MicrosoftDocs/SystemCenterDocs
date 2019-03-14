@@ -47,7 +47,7 @@ Ensure the following prerequisites are met:
 
    - In **Type** , specify a template type, click **Specific**. Select **Microsoft** for Manufacturer. Select **Microsoft network controller** for Model. Click **Next**.
 
-        ![template type](media\slb-vip\template-type.png)
+        ![template type](media/slb-vip/template-type.png)
 
  - In **Protocol**, specify protocol options. Click **Next**.
 
@@ -71,26 +71,24 @@ Ensure the following prerequisites are met:
   -  Click **Tool** > **Connector**. Click the Server connection associated with template and then click a NIC object to connect the load balancer to the adapter. In the **NIC properties**, check the address types and that the MAC address is static.
 
     > [!NOTE]
-
     > Server connection must be connected to the Back-End network interface of the service. The back-end network interface can be connected to either a One Connected VM Network or a network virtualized VM Network.
 
  - With the Connector enabled,  click the client connection associated with the load balancer and then click a logical network object.
 
     > [!NOTE]
-
     > Client connection must be connected to a Front-End network of the load balancer. This can be a Public VM network or a network virtualized VM network. A network virtualized VM Network is used for internal load balancing scenarios.
 
   - Save the service template in **Service Template** > **Save and Validate**.
 
 **Example 1**: Configuring Service with ‘Public’ VM Network as front end. Here the ‘Backend’ network can be One connected or network virtualized VM network.
 
-![slb vip example 1](media\slb-vip\example-1.png)
+![slb vip example 1](media/slb-vip/example-1.png)
 
 
 **Example 2**: Configuring Service with Front-end and Back-end connected to network virtualized VM Network ‘HNV VM Network’. This scenario is used for Internal load balancing.
 
 
-![slb vip example 2](media\slb-vip\example-2.png)
+![slb vip example 2](media/slb-vip/example-2.png)
 
 
 ## Set up the VIP for user access

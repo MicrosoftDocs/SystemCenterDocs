@@ -25,10 +25,10 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version 1807 to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
-* SQL Server 2017 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20service%20pack)
+* SQL Server 2017 and Service Packs as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 * SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 
-Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md). 
+Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md).
 
 ::: moniker-end
 
@@ -49,36 +49,36 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-> [!NOTE] 
+> [!NOTE]
 > System Center Operations Manager databases must use the same version of SQL Server, the [SQL Server collation setting](#sql-server-collation-setting) must be one of the following supported types as described in that section, and SQL Server Full Text Search is **required** for both the operational and data warehouse databases.  The Windows Server 2016 installation options (Server Core, Server with Desktop Experience, and Nano Server) supported by Operations Manager database components, are based on what installation options of Windows Server are supported by SQL Server.
 
-> [!NOTE] 
+> [!NOTE]
 > System Center Operations Manager Reporting cannot be installed in a side-by-side fashion with a previous version of the Reporting role and **must** be installed in native mode only. (SharePoint integrated mode is not supported.)
 
 
 
 Additional hardware and software considerations apply in your design planning:
 
--  We recommend that you run SQL Server on computers with the NTFS file format. 
+-  We recommend that you run SQL Server on computers with the NTFS file format.
 -  There must be at least 1024 MB of free disk space for the operational and data warehouse database. It is enforced at the time of database creation, and it will likely grow significantly after setup.  
--  .NET Framework 4 is required. 
+-  .NET Framework 4 is required.
 -  Reporting Server is not supported on Windows Server Core.
 
 For more information, see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
 
 > [!NOTE]
 > During the initial installation of the operational database, only use Windows Authentication on the SQL Server that hosts the Operations Manager operational database. Do not use Mixed Mode (Windows Authentication and SQL Server Authentication) because using SQL Server Authentication mode during the initial installation of the operational database can cause issues. Although enabling Mixed Mode security is possible on the SQL Server hosting the Operations Manager operational database, it is not supported as all contact with the database is accomplished using Windows accounts only.  
-> 
-  
+>
+
 ## SQL Server collation setting
 
 The following SQL Server and Windows collations are supported by System Center Operations Manager.  
 
 ### SQL Server collation
-- SQL_Latin1_General_CP1_CI_AS 
+- SQL_Latin1_General_CP1_CI_AS
 
 ### Windows collation
-- Latin1_General_100_CI_AS 
+- Latin1_General_100_CI_AS
 - French_CI_AS
 - French_100_CI_AS
 - Cyrillic_General_CI_AS
@@ -90,7 +90,7 @@ The following SQL Server and Windows collations are supported by System Center O
 - Traditional_Spanish_CI_AS
 - Modern_Spanish_100_CI_AS
 - Latin1_General_CI_AS
-- Cyrillic_General_100_CI_AS 
+- Cyrillic_General_100_CI_AS
 - Korean_100_CI_AS
 - Czech_100_CI_AS
 - Hungarian_100_CI_AS
@@ -105,15 +105,15 @@ Operations Manager depends on SQL Server to host its databases and a reporting p
 
 If you are designing a distributed deployment that will require SQL Always On Availability Groups to provide failover functionality for the Operations Manager databases, there are additional firewall configuration settings that need to be included in your firewall security strategy.   
 
-The following table helps you identify the firewall ports required by SQL Server that will need to be allowed at a minimum in order for server roles in your Operations Manager management group to successfully communicate. 
+The following table helps you identify the firewall ports required by SQL Server that will need to be allowed at a minimum in order for server roles in your Operations Manager management group to successfully communicate.
 
 
-| Scenario | Port | Direction | Operations Manager Role | 
+| Scenario | Port | Direction | Operations Manager Role |
 |-----------|---------------|---------------|---------------|
-| SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server and Web console (for Application Advisor and Application Diagnostics) | 
+| SQL Server hosting Operations Manager databases | TCP 1433 \* | Inbound | management server and Web console (for Application Advisor and Application Diagnostics) |
 | SQL Server Browser service | UDP 1434 | Inbound | management server |
-| SQL Server Dedicated Admin Connection | TCP 1434 | Inbound | management server | 
-| Additional ports used by SQL Server<br> - Microsoft remote procedure calls (MS RPC)<br> - Windows Management Instrumentation (WMI)<br> - Microsoft Distributed Transaction Coordinator (MS DTC)| TCP 135 | Inbound | management server | 
+| SQL Server Dedicated Admin Connection | TCP 1434 | Inbound | management server |
+| Additional ports used by SQL Server<br> - Microsoft remote procedure calls (MS RPC)<br> - Windows Management Instrumentation (WMI)<br> - Microsoft Distributed Transaction Coordinator (MS DTC)| TCP 135 | Inbound | management server |
 | SQL Server Always On Availability Group Listener | Administrator configured port | Inbound | management server
 | SQL Server Reporting Services hosting Operations Manager Reporting Server | TCP 80 (default)/443 (SSL) | Inbound | management server and Operations console |  
 
@@ -127,7 +127,7 @@ For a more detailed overview of the firewall requirements for SQL Server, see [C
 
 The Operations Manager database is a SQL Server database that contains all of the data needed by Operations Manager for day-to-day monitoring.  Sizing and configuration of the database server is critical to the overall performance of the management group.  The most critical resource used by the Operations Manager database is the storage subsystem, but CPU and RAM are also significant.
 
-Factors that influence the load on the Operations Manager database include: 
+Factors that influence the load on the Operations Manager database include:
 
 - Rate of operational data collection.  Operational data consists of all the events, alerts, state changes, and performance data collected by agents.  Most of the resources that are used by the Operations Manager database are used to write this data to disk as it comes into the system.  The rate of operational data collected tends to increase as additional management packs are imported and additional agents are added.  The type of computer that an agent is monitoring is also an important factor used when determining the overall rate of operational data collection.  For example, an agent that is monitoring a business-critical desktop computer can be expected to collect less data than an agent monitoring a server that is running an instance of SQL Server with a large number of databases.
 - Rate of instance space changes.  Updating this data in the Operations Manager database is costly relative to writing new operational data.  In addition, when instance space data changes, the management servers make additional queries to the Operations Manager database in order to compute configuration and group changes.  The rate of instance space changes increases as you import additional management packs into a management group.  Adding new agents to a management group also temporarily increases the rate of instance space changes.
@@ -154,7 +154,7 @@ The Operations Manager data warehouse database is a single source of failure for
 
 ## SQL Server Always On
 
-SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica. 
+SQL Server Always On availability groups support failover environments for a discrete set of user databases (availability databases). Each set of availability databases is hosted by an availability replica.
 
 With System Center 2016 - Operations Manager, SQL Always On is preferred over failover clustering to provide high availability for databases. All databases except the native mode Reporting Services installation, which uses two databases to separate persistent data storage from temporary storage requirements, can be hosted in an AlwaysOn Availability Group.  
 
@@ -170,7 +170,7 @@ Operations Manager does not support the connection string key words (MultiSubnet
 
 The recommended approach to work around this limitation when you have deployed server nodes in the availability group in a multi-subnet environment, is to do the following:
 
-1.	Set the network name of your availability group listener to only register a single active IP address in DNS 
+1.	Set the network name of your availability group listener to only register a single active IP address in DNS
 2.	Configure the cluster to use a low TTL value for the registered DNS record
 
 These settings allow, when fail over to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
@@ -182,9 +182,9 @@ Run the following Powershell query on any one of the SQL nodes to modify its set
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter HostRecordTTL 300
     Stop-ClusterResource "Cluster Name"
     Start-ClusterResource "Cluster Name"
- 
 
-If you are using Always On with a listener name, you should also make these configurations changes on the listener. 
+
+If you are using Always On with a listener name, you should also make these configurations changes on the listener.
 
 Run the following Powershell query on the SQL node currently hosting the listener to modify its settings.
 
@@ -194,7 +194,7 @@ Run the following Powershell query on the SQL node currently hosting the listene
     Stop-ClusterResource <Listener Cluster Resource name>
     Start-ClusterResource <Listener Cluster Resource name>
 
-When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc). 
+When a clustered or an Always On SQL instance is used for high availability, you should enable the automatic recovery feature on your management servers to avoid the Operations Manager Data Access service restart anytime a failover between nodes occur.  For information on how to configure this, see the following KB article [The System Center Management service stops responding after an instance of SQL Server goes offline](https://support.microsoft.com/help/2913046/the-system-center-management-service-stops-responding-after-an-instanc).
 
 ## Optimizing SQL Server
 
@@ -204,16 +204,16 @@ In general, previous deployment experience with customers shows that performance
 -  Hosting transaction logs and database files on the same volume.  These two workloads have different IO and latency characteristics.
 -  Configuration of TempDB is incorrect with respect to placement, sizing, etc.
 -  Disk partition misalignment of volumes hosting the database transaction logs, database files, and TempDB
--  Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, etc. 
+-  Overlooking the basic SQL Server configuration such as using AUTOGROW for database and transaction log files, MAXDOP setting for query parallelism, creating multiple TempDB data files per CPU core, etc.
 
 Storage configuration is one of the critical components to a SQL Server deployment for Operations Manager.  Database servers tend to be heavily I/O bound due to rigorous database read and write activity and transaction log processing.  The I/O behavior pattern of Operations Manager is typically 80% writes and 20% reads.  As a result, improper configuration of I/O subsystems can lead to poor performance and operation of SQL Server systems and becomes noticeable in Operations Manager.
 
-It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](http://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance. 
+It is important to test the SQL Server design by performing throughput testing of the IO subsystem prior to deploying SQL Server. Make sure these tests are able to achieve your IO requirements with an acceptable latency.  Use the [Diskspd Utility](https://gallery.technet.microsoft.com/DiskSpd-a-robust-storage-6cd2f223) to evaluate the I/O capacity of the storage subsystem supporting SQL Server.  The following blog article, authored by a member of the File Server team in the product group, provides detailed guidance and recommendations on how to go about performing stress testing using this tool with some PowerShell code, and [capturing the results using PerfMon](http://blogs.technet.com/b/josebda/archive/2013/03/28/sqlio-powershell-and-storage-performance-measuring-iops-throughput-and-latency-for-both-local-disks-and-smb-file-shares.aspx).  You can also refer to the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  for initial guidance.
 
 ### NTFS allocation unit size
 
 Volume alignment, commonly referred to as sector alignment, should be performed on the file system (NTFS) whenever a volume is created on a RAID device. Failure to do so can lead to significant performance degradation and are most commonly the result of partition misalignment with stripe unit boundaries. It can also lead to hardware cache misalignment, resulting in inefficient utilization of the array cache.
-When formatting the partition that will be used for SQL Server data files, it is recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it is not recommended. 
+When formatting the partition that will be used for SQL Server data files, it is recommended that you use a 64-KB allocation unit size (that is, 65,536 bytes) for data, logs, and tempdb. Be aware however, that using allocation unit sizes greater than 4 KB results in the inability to use NTFS compression on the volume. While SQL Server does support read-only data on compressed volumes, it is not recommended.
 
 ### Reserve memory
 
@@ -223,25 +223,25 @@ By default, SQL Server can change its memory requirements dynamically based on a
 
 SQL Server allows you to configure the minimum and maximum amount of memory that should be reserved and used by its process. Specify at least 4 GB of RAM as minimum amount. This should be done for every SQL node hosting one of the Operations Manager databases (Operational, Data warehouse, ACS).
 
-First start by reserving 1 GB of RAM for the OS, 1 GB for each 4 GB of RAM installed from 4–16 GB, and then 1 GB for every 8 GB RAM installed above 16 GB RAM.  Then monitor the Memory\Available MBytes performance counter in Windows to determine if you can increase the memory available to SQL Server above the starting value. 
+First start by reserving 1 GB of RAM for the OS, 1 GB for each 4 GB of RAM installed from 4–16 GB, and then 1 GB for every 8 GB RAM installed above 16 GB RAM.  Then monitor the Memory\Available MBytes performance counter in Windows to determine if you can increase the memory available to SQL Server above the starting value.
 
 >[!NOTE]
->This counter should remain above the 150-300 MB at a bare minimum.  Windows signals the LowMemoryResourceNotification at 96 MB so you want a buffer, but you should consider starting above 1 GB on larger servers with 256 GB or higher RAM. 
+>This counter should remain above the 150-300 MB at a bare minimum.  Windows signals the LowMemoryResourceNotification at 96 MB so you want a buffer, but you should consider starting above 1 GB on larger servers with 256 GB or higher RAM.
 >
 
-This approach has typically worked out well for servers that are dedicated to SQL Server.  You can also get much more technical with determining where to set 'max server memory' by working out the specific memory requirements for the OS, other applications, the SQL Server thread stack, and other multipage allocators.  Typically this would be  ((Total system memory) – (memory for thread stack) – (OS memory requirements ~ 2-4 GB) – (memory for other applications) – (memory for multipage allocations; SQLCLR, linked servers, etc.)), where the memory for thread stack = ((max worker threads) *(stack size)) and the stack size is 512 KB for x86 systems, 2 MB for x64 systems and 4 MB for IA64 systems.  The value for 'max worker threads' can be found in the max_worker_count column of sys.dm_os_sys_info.  However, the assumption with either of these methods is that you want SQL Server to use everything that is available on the machine, unless you've made reservations in the calculations for other applications. 
+This approach has typically worked out well for servers that are dedicated to SQL Server.  You can also get much more technical with determining where to set 'max server memory' by working out the specific memory requirements for the OS, other applications, the SQL Server thread stack, and other multipage allocators.  Typically this would be  ((Total system memory) – (memory for thread stack) – (OS memory requirements ~ 2-4 GB) – (memory for other applications) – (memory for multipage allocations; SQLCLR, linked servers, etc.)), where the memory for thread stack = ((max worker threads) *(stack size)) and the stack size is 512 KB for x86 systems, 2 MB for x64 systems and 4 MB for IA64 systems.  The value for 'max worker threads' can be found in the max_worker_count column of sys.dm_os_sys_info.  However, the assumption with either of these methods is that you want SQL Server to use everything that is available on the machine, unless you've made reservations in the calculations for other applications.
 
-As more customers move towards virtualizing SQL Server in their environment, this question is more relevant in determining what is the minimum amount of memory that a SQL Server will need to run in a virtual machine.  Unfortunately there is no way to calculate what the ideal amount of memory for a given instance of SQL Server might actually be since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as you can give it.  One of the things to keep in mind when you are looking at reducing the memory allocated to a SQL Server instance, is that you will eventually get to a point where the lower memory gets traded off for higher disk I/O access. 
+As more customers move towards virtualizing SQL Server in their environment, this question is more relevant in determining what is the minimum amount of memory that a SQL Server will need to run in a virtual machine.  Unfortunately there is no way to calculate what the ideal amount of memory for a given instance of SQL Server might actually be since SQL Server is designed to cache data in the buffer pool, and it will typically use as much memory as you can give it.  One of the things to keep in mind when you are looking at reducing the memory allocated to a SQL Server instance, is that you will eventually get to a point where the lower memory gets traded off for higher disk I/O access.
 
-If you need to figure out the ideal configuration for SQL Server memory in an environment that has been over provisioned, the best way to try to go about doing it is to start with a baseline of the environment and the current performance metrics.  Counters to initially monitor include: 
+If you need to figure out the ideal configuration for SQL Server memory in an environment that has been over provisioned, the best way to try to go about doing it is to start with a baseline of the environment and the current performance metrics.  Counters to initially monitor include:
 
--  SQL Server:Buffer Manager\Page Life Expectancy 
--  SQL Server:Buffer Manager\Page reads/sec 
--  Physical Disk\Disk Reads/sec 
+-  SQL Server:Buffer Manager\Page Life Expectancy
+-  SQL Server:Buffer Manager\Page reads/sec
+-  Physical Disk\Disk Reads/sec
 
 Typically if the environment has excess memory for the buffer pool, the Page Life Expectancy value will continue to increase by a value of one every second and it won't drop off under the workload because all of the data pages end up being cached.  At the same time, the number of SQL Server:Buffer Manager\Page reads/sec will be low after the cache ramp up occurs, which will also correspond to a low value for Physical Disk\Disk Reads/sec.  
 
-Once you have your baseline for the environment, make a change to the sp_configure 'max server memory' option to reduce the size of the buffer pool by 1GB and then monitor the impact to the performance counters after things stabilize from the initial cache flushing that may typically occur when RECONFIGURE is run in the environment.  If the level of Page Life Expectancy remains acceptable for your environment (keeping in mind that a fixed target of >= 300 is ridiculous for servers with large amounts of RAM installed), and the number of SQL Server:Buffer Manager\Page reads/sec is within what the disk I/O subsystem can support without performance degradation, repeat the process of reducing the sp_configure value for 'max server memory' by 1GB and continuing to monitor the impact to the environment. 
+Once you have your baseline for the environment, make a change to the sp_configure 'max server memory' option to reduce the size of the buffer pool by 1GB and then monitor the impact to the performance counters after things stabilize from the initial cache flushing that may typically occur when RECONFIGURE is run in the environment.  If the level of Page Life Expectancy remains acceptable for your environment (keeping in mind that a fixed target of >= 300 is ridiculous for servers with large amounts of RAM installed), and the number of SQL Server:Buffer Manager\Page reads/sec is within what the disk I/O subsystem can support without performance degradation, repeat the process of reducing the sp_configure value for 'max server memory' by 1GB and continuing to monitor the impact to the environment.
 
 You can also refer to the guidance on MSDN for [SQL 2014](https://msdn.microsoft.com/library/ms178067%28v=sql.120%29.aspx).
 
@@ -285,15 +285,15 @@ When SQL Server runs on a computer with more than one microprocessor or CPU, it 
 
 The stored procedures and queries pre-defined in Operations Manager as it relates to the operational, data warehouse, and even audit database do not include the MAXDOP option, as there is no way during installation to dynamically query how many processors are presented to the operating system, nor does it attempt to hardcode the value for this setting, which could have negative consequences when the query is executed.  
 
-> [!NOTE] 
+> [!NOTE]
 > The max degree of parallelism configuration option does not limit the number of processors that SQL Server uses. To configure the number of processors that SQL Server uses, use the affinity mask configuration option.
 
--  For servers that use more than eight processors, use the following configuration: 
+-  For servers that use more than eight processors, use the following configuration:
 MAXDOP=8
--  For servers that use eight or fewer processors, use the following configuration: 
+-  For servers that use eight or fewer processors, use the following configuration:
 MAXDOP=0 to N
 Note In this configuration, N represents the number of processors.
--  For servers that have NUMA configured, MAXDOP should not exceed the number of CPUs that are assigned to each NUMA node. 
+-  For servers that have NUMA configured, MAXDOP should not exceed the number of CPUs that are assigned to each NUMA node.
 -  For servers that have hyperthreading enabled, the MAXDOP value should not exceed the number of physical processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
@@ -304,7 +304,7 @@ In one customer deployment of Operations Manager 2012, which was monitoring mult
 
 Estimating the future growth of the Operations Manager databases, specifically the operational and data warehouse databases, within the first several months after deployment is not a simple exercise. While the [Operations Manager Sizing Helper](https://blogs.technet.microsoft.com/momteam/2012/04/01/operations-manager-2012-sizing-helper-tool/)  is reasonable in estimating potential growth based on the formula derived by the product group from their testing in the lab, it does not take into account several factors, which can influence growth in the near term versus long term.  
 
-The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database. 
+The initial database size, as suggested by the Sizing Helper, should be allocated to a predicted size, to reduce fragmentation and corresponding overhead, which can be specified at setup time for the Operational and Data Warehouse databases. If during setup not enough storage space is available, the databases can be expanded later by using SQL Management Studio and then reindexed thereafter to defragment and optimize accordingly. This recommendation applies also to the ACS database.
 
 Proactive monitoring of the growth of the operational and data warehouse database should be performed on a daily or weekly cycle.  This will be necessary to identify unexpected and significant growth spurts, and begin troubleshooting in order to determine if it is caused by a bug in a management pack workflow (that is, discovery rule, performance or event collection rule, or monitor or alert rule) or other symptom with a management pack that was not identified during testing and quality assurance phase of the release management process.  
 
@@ -315,7 +315,7 @@ When the databases file size that has been reserved on disk becomes full, SQL Se
 Only rely on autogrow as a contingency for unexpected growth.  Autogrow introduces a performance penalty that should be considered when dealing with a highly transactional database.  Performance penalties include:
 
 -  Fragmentation of the log file or database if you don’t provide an appropriate growth increment.
--  If you run a transaction that requires more log space than is available, and you have turned on the autogrow option for the transaction log of that database, then the time it takes the transaction to complete will include the time it takes the transaction log to grow by the configured amount. 
+-  If you run a transaction that requires more log space than is available, and you have turned on the autogrow option for the transaction log of that database, then the time it takes the transaction to complete will include the time it takes the transaction log to grow by the configured amount.
 -  If you run a large transaction that requires the log to grow, other transactions that require a write to the transaction log will also have to wait until the grow operation completes.
 
 If you combine the autogrow and autoshrink options, you might create unnecessary overhead. Make sure that the thresholds that trigger the grow and shrink operations will not cause frequent up and down size changes. For example, you may run a transaction that causes the transaction log to grow by 100 MB by the time it commits. Some time after that the autoshrink starts and shrinks the transaction log by 100 MB. Then, you run the same transaction and it causes the transaction log to grow by 100 MB again. In that example, you are creating unnecessary overhead and potentially creating fragmentation of the log file, either of which can negatively affect performance.
@@ -337,20 +337,20 @@ In virtual environments, for performance reasons, it is recommended that you sto
 ### Always On and recovery model
 
 Although not strictly an optimization, an important consideration regarding Always On Availability Group is the fact that, by design, this feature requires the databases to be set in the “Full” recovery model. Meaning, the transaction logs are never discarded until either a full backup is done, or only the transaction log.
-For this reason, a backup strategy is not an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs will fill up. 
+For this reason, a backup strategy is not an optional but a required part of the AlwaysOn design for Operations Manager databases. Otherwise, with time, disks containing transaction logs will fill up.
 
 A backup strategy must take into account the details of your environment. A typical backup schedule is given in the following table.
 
-|Backup Type | Schedule | 
+|Backup Type | Schedule |
 |-----------|---------------|
 | Transaction log only | Every one hour |
-| Full | Weekly, Sunday at 3:00 AM | 
+| Full | Weekly, Sunday at 3:00 AM |
 
-## Optimizing SQL Server reporting services 
+## Optimizing SQL Server reporting services
 
-The Reporting Services instance acts as a proxy for access to data in the Data Warehouse database. It generates and displays reports based on templates stored inside the management packs. 
+The Reporting Services instance acts as a proxy for access to data in the Data Warehouse database. It generates and displays reports based on templates stored inside the management packs.
 
-Behind the scenes of Reporting Services, there is a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply. 
+Behind the scenes of Reporting Services, there is a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
 
 ## Next steps

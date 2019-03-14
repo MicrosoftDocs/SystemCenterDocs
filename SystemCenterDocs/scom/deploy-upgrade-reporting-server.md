@@ -5,14 +5,78 @@ description: This article describes how to upgrade the Reporting server to the l
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 03/14/2018
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade a Reporting server 
+# How to upgrade a Reporting server
+
+::: moniker range="sc-om-2019"
+
+Use this procedure to upgrade a stand-alone Reporting server to System Center Operations Manager 2019. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
+
+Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+
+## Before performing the upgrade
+
+When you try to upgrade Reporting server to System Center Operations Manager 2019 Reporting server, the upgrade fails for the following configuration:
+
+  * Server A is configured as the System Center 2016 - Operations Manager management server.
+  * Server A is configured as the System Center 1801 - Operations Manager management server.
+  * Server A is configured as the System Center 1807 - Operations Manager management server.
+  * Server B is configured with SQL Server hosting the System Center Operations Manager 2019 operational and data  warehouse database, and Operations Manager Reporting server or a standalone SQL Server hosting Reporting server.
+
+The prerequisites checker will report the following error:  **Management Server Upgraded Check - The management server to which this component reports has not been upgraded.**
+
+To work around this issue, install the System Center 2016 or 1801 or 1807 - Operations Manager Operations console on the server hosting the Reporting server role and then retry upgrading the Reporting server role to version 2019.  Once the upgrade is successfully completed, you can re-run setup and uninstall the upgraded Operations console from the Reporting server.  
+
+## To upgrade the Reporting server
+
+1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group and the SQL Server sysadmin fixed server role.
+
+2.  On the Operations Manager source media, run **Setup.exe**, and then click **Install**.
+
+    > [!NOTE]
+    > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
+
+3.  On the **Getting Started, please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
+
+4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+
+    > [!NOTE]
+    > For System Center Operations Manager 2019, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+
+5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
+
+6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
+
+7.  On the **Ready to Upgrade** page, review the options, and then click **Upgrade**.
+
+8.  When upgrade is finished, the **Upgrade complete** page appears. Click **Close**.
+
+## To upgrade the Reporting server from the Command Prompt
+
+1.  Log on to the computer that hosts the Reporting server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group.
+
+2.  Open an elevated Command Prompt by using the **Run as Administrator** option.
+
+3.  Change the path to where the Operations Manager Setup.exe file is located, and run the following command:
+
+    > [!NOTE]
+    > If the Reporting server reports to an unsupported or inaccessible root management server, you must also pass the following parameter: `/ManagementServer: <ManagementServerName>`.
+
+    ```
+    setup.exe /silent /AcceptEndUserLicenseAgreement:1 /upgrade
+    /ManagementServer: <ManagementServerName>
+
+    ```
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 Use this procedure to upgrade a stand-alone Reporting server to System Center 2016 - Operations Manager or version 1801. You should not run upgrade on the Reporting server until after you have upgraded the management servers, gateways, Operation consoles, and agents.
 
@@ -44,7 +108,7 @@ To work around this issue, install the System Center 2016 - Operations Manager O
 
     > [!NOTE]
     > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    > 
+    >
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -66,14 +130,15 @@ To work around this issue, install the System Center 2016 - Operations Manager O
     > If the Reporting server reports to an unsupported or inaccessible root management server, you must also pass the following parameter: `/ManagementServer: <ManagementServerName>`.
 
     ```
-    setup.exe /silent /AcceptEndUserLicenseAgreement:1 /upgrade 
+    setup.exe /silent /AcceptEndUserLicenseAgreement:1 /upgrade
     /ManagementServer: <ManagementServerName>
 
     ```
+
+::: moniker-end
 
 ## Next steps
 
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.
-

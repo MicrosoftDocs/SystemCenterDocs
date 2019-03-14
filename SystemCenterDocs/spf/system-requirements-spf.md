@@ -5,13 +5,22 @@ description: This article describes the software and hardware system requirement
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 06/04/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
 ---
 
 # System requirements for System Center Service Provider Foundation
+
+::: moniker range="sc-spf-2019"
+
+This article details the system requirements for System Center 2019 - Service Provider Foundation (SPF).
+
+[!INCLUDE [system-reqs-spf-2019.md](../includes/system-reqs-spf-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-spf-1807"
 
 System requirements for SPF 1801 are also applicable for SPF 1807, there are no changes. [Learn ](https://docs.microsoft.com/system-center/spf/system-requirements-spf?view=sc-spf-1801) about the system requirements.

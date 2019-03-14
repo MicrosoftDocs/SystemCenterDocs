@@ -7,10 +7,11 @@
 ## [What's new in Operations Manager](whats-new-in-om.md)
 ## [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md)
 ## [Installing Operations Manager from the Command Prompt](install-using-cmdline.md)
+## [Enable service logon ](enable-service-logon.md)
 ## [Turn on/off telemetry settings](manage-telemetry.md)
 # How To
 ## [Plan](plan-overview.md)
-### [System requirements](plan-system-requirements.md)
+### [System requirements](system-requirements.md)
 ### [Supported versions of UNIX and Linux](plan-supported-crossplat-os.md)
 ### [Supported versions of UNIX and Linux - 1807](plan-supported-crossplat-os-1807.md)
 ### [Planning a management group design](plan-mgmt-group-design.md)
@@ -183,6 +184,10 @@
 #### [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md)
 #### [Viewing network devices and data](manage-monitor-networkdevice-viewing-data.md)
 #### [Reports for network monitoring](manage-monitor-networkdevice-reports.md)
+### Monitoring Web application transactions
+#### [How to edit settings or requests for a web application](edit-web-application-settings.md)
+#### [Web application properties](web-application-properties.md)
+#### [Web application request properties](web-application-request-properties.md)
 ### Monitor Linux log files
 #### [Overview of Linux log file monitoring](manage-linux-logfiles.md)
 #### [Sample configuration file](manage-sample-configuration-file.md)

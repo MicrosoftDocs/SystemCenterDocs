@@ -5,13 +5,21 @@ description: This article details the known issues and issues fixed in Virtual M
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 07/24/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # Release notes for System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2019"
+
+This article lists the release notes for System Center 2019 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [release-notes-vmm-2019.md](../includes/release-notes-vmm-2019.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-1807"
 

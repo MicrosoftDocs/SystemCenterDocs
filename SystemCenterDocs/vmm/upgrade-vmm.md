@@ -5,7 +5,7 @@ description: This article details the upgrade information and procedures for Vir
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 05/08/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -13,9 +13,17 @@ ms.technology: virtual-machine-manager
 
 # Upgrade System Center Virtual Machine Manager
 
+::: moniker range="sc-vmm-2019"
+
+This article provides the upgrade information for System Center 2019 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [upgrade-to-vmm-2019.md](../includes/upgrade-to-vmm-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-vmm-1807"
 
-You must have System Center - Virtual Machine Manager 1801 installed to apply the 1807 update. [Learn more on how to install VMM 1807](https://support.microsoft.com/en-us/help/4135364/system-center-virtual-machine-manager-version-1807). 
+You must have System Center - Virtual Machine Manager 1801 installed to apply the 1807 update. [Learn more on how to install VMM 1807](https://support.microsoft.com/en-us/help/4135364/system-center-virtual-machine-manager-version-1807).
 
 ::: moniker-end
 

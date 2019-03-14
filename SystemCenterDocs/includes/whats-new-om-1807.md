@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## What's New in OM 1807
+## New features in Operations Manager 1807
 
 The content in the following sections describe new features in System Center 1807 - Operations Manager.
 

@@ -1,12 +1,12 @@
 ---
-description: This article shows the list of release builds for System Center - Data Protection Manager.
+title:  System Center - Data Protection Manager release build versions
+description: This article provides the list of release builds for System Center - Data Protection Manager.
 manager: vvithal
 ms.topic: article
-author: aneesh
+author: v-anesh
 ms.prod: system-center
 keywords:
 ms.date: 03/01/2019
-title:  System Center - Data Protection Manager Release Build Versions
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: v-anesh
@@ -17,8 +17,7 @@ ms.author: v-anesh
 This article describes how to determine your current Microsoft System Center – Data Protection Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 > [!NOTE]
-
-> All System Center Data Protection Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can go proceed to install the latest one available.
+> All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
 ## **Build versions**
 

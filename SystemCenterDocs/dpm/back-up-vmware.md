@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 2/8/2018
+ms.date: 03/14/2019
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -15,14 +15,17 @@ monikerRange: '>sc-dpm-2016'
 
 # Use DPM to back up and restore VMware virtual machines
 
-This article explains how to use Data Protection Manager (DPM) version 1801 and later, to back up virtual machines running on the 5.5, 6.0, or 6.5  versions of VMware vCenter and vSphere Hypervisor (ESXi).
+This article explains how to use Data Protection Manager (DPM) version 1801 and later, to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 ## Supported VMware features
 
 DPM 1801 and later provides the following features when backing up VMware virtual machines:
 
+>[!NOTE]
+> Backup to tape is supported from DPM 2019.
+
 - Agentless backup: DPM does not require an agent to be installed on the vCenter or ESXi server, to back up the virtual machine. Instead, just provide the IP address or fully qualified domain name (FQDN), and login credentials used to authenticate the VMware server with DPM.
-- Cloud Integrated Backup: DPM protects workloads to both disk and cloud. DPM's backup and recovery workflow helps you manage long-term retention and offsite backup.
+- Cloud Integrated Backup: DPM protects workloads to  disk, tape and cloud. DPM's backup and recovery workflow helps you manage long-term retention and offsite backup.
 - Detect and protect VMs managed by vCenter: DPM detects and protects VMs deployed on a VMware server (vCenter or ESXi server). As your deployment size grows, use vCenter to manage your VMware environment. DPM also detects VMs managed by vCenter, allowing you to protect large deployments.
 - Folder level auto protection: vCenter lets you organize your VMs in VM folders. DPM detects these folders and lets you protect VMs at the folder level and includes all subfolders. When protecting folders, DPM not only protects the VMs in that folder, but also protects VMs added later. DPM detects new VMs on a daily basis and protects them automatically. As you organize your VMs in recursive folders, DPM automatically detects and protects the new VMs deployed in the recursive folders.
 - DPM protects VMs stored on a local disk, network file system (NFS), or cluster storage.
@@ -35,7 +38,7 @@ Before you start backing up a VMware virtual machine, review the following list 
 
 - If you have been using DPM to protect a VMware server as a Windows Server, you cannot use the same fully qualified domain name (FQDN) or static IP. If you used a FQDN to identify your VMware VM, then use a static IP address to identify your VMware server. If you used a static IP address to identify your VMware VM earlier, then use a FQDN to identify your VMware VM. You cannot use a dynamic IP address. Note that DPM agent should not be pushed on to Windows Server that is  acting as VMWare vCenter Server.
 - If you use vCenter to manage ESXi servers in your environment, add vCenter (and not ESXi) to the DPM protection group.
-- DPM cannot protect VMware VMs to tape or a secondary DPM server.
+- DPM cannot protect VMware VMs to a secondary DPM server.
 - You cannot back up user snapshots before the first DPM backup. Once DPM completes the first backup, then you can back up user snapshots.
 - DPM cannot protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
 - DPM cannot detect or protect VMware vApps.
@@ -239,16 +242,32 @@ DPM can protect individual VMs, as well as cascading levels of folders that cont
 
 ### Scale out protection of clustered VMware servers
 
-In large VMware deployments, a single vCenter server can manage thousands of VMs. DPM supports scale-out protection of VMware server clusters. The new scale-out feature removes the limit of a one-to-one relationship between a VMware cluster and a DPM server. You can add a VM to a protection group on any of the recognized DPM servers. Scale-out protection is only available for VMs hosted on servers running Windows Server 2012. Multiple DPM servers can be used to protect VMs managed by a single vCenter server. However, only one DPM server can protect a VM or folder at any given time. VMs and folders that are already protected by one DPM server cannot be selected by another DPM server. To deploy scale-out protection, there must be a minimum of two DPM servers. In the following example graphic, D1 and D2 are visible to all virtual machines hosted on nodes N1, N2, N3, and N4. When protection groups on D1 or D2 are created, any virtual machine can be added.
+In large VMware deployments, a single vCenter server can manage thousands of VMs. DPM supports scale-out protection of VMware server clusters. The new scale-out feature removes the limit of a one-to-one relationship between a VMware cluster and a DPM server. You can add a VM to a protection group on any of the recognized DPM servers. Multiple DPM servers can be used to protect VMs managed by a single vCenter server. However, only one DPM server can protect a VM or folder at any given time. VMs and folders that are already protected by one DPM server cannot be selected by another DPM server. To deploy scale-out protection, there must be a minimum of two DPM servers. In the following example graphic, D1 and D2 are visible to all virtual machines hosted on nodes N1, N2, N3, and N4. When protection groups on D1 or D2 are created, any virtual machine can be added.
 
 ![conceptual diagram of a scale-out farm ](./media/back-up-vmware/scale-out-protection-diagram.png)
 
-### Backing up virtual machines to disk or cloud
+### Backing up virtual machines to a disk, tape or cloud
 
-DPM can back up VMware VMs to disk and to the Azure cloud. You specify the protection method while creating the new Protection Group.
-For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to cloud. For more information about long-term retention, see the [Azure Backup documentation](https://azure.microsoft.com/en-in/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
+DPM can back up VMware VMs to disk, tape and to the Azure cloud. You specify the protection method while creating the new Protection Group.
+
+For all operational recovery scenarios like accidental deletion or corruption scenarios, back up to disk. For long-term retention or offsite backup requirements, back up to [tape](https://docs.microsoft.com/system-center/dpm/identify-compatible-tape-libraries?view=sc-dpm-1807) or [cloud](https://azure.microsoft.com/blog/new-features-in-azure-backup-long-term-retention-offline-backup-seeding-and-more/).
 
 DPM provides application-consistent backups of Windows VMs and file-consistent backups of Linux VMs (provided you install VMware tools on the guest).
+
+### Back up virtual machine to Tape
+
+> [!NOTE]
+> Applicable to DPM 2019
+
+For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted. DPM 2019 supports both OLR (Original Location Recovery) & ALR (Alternate Location Recovery) for restoring the protected VM.
+
+**Use the following procedure**:
+
+1.	In the DPM Administrator console, click **Protection** > **Create protection group** to open the Create New Protection Group wizard.
+2.	On the **Select Group Members** page, select the VMWare VMs you want to protect.
+3.	On the **Select Data Protection Method** page, select **I want long-term protection using tape**.
+4.	In **Specify Long-Term Goals** > **Retention range**, specify how long you want to keep your tape data (1-99 years). In Frequency of backup,  select the backup frequency that you want.
+5.	On the **Select Tape and Library Details** page, specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
 
 ### Create a Protection Group for VMware VMs
 
@@ -260,18 +279,32 @@ DPM provides application-consistent backups of Windows VMs and file-consistent b
     Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server cannot be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
     ![select members for the new protection group ](./media/back-up-vmware/select-group-members.png)
 5. On the **Select Data Protection Method** screen, type a **Protection group name**, and then select the protection method.
-    For protection method, you can choose: short-term protection to a hard drive, or online protection to the cloud. Tape protection is not supported for VMware VMs. Once you've selected your protection method, click **Next**.
+    For protection method, you can choose: short-term protection to a hard drive, long term backup to tape, or online protection to the cloud. Once you've selected your protection method, click **Next**.
+
+    If you have a standalone tape or tape library connected to the DPM server, you'll be able to select **I want long-term protection using tape**.
+
 6.	On the **Specify Short-Term Goals** screen, for the **Retention Range** specify the number of days your data is kept on disk.
     If you want to change the schedule when application recovery points are taken, click Modify. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM, local time for the DPM server. When you have the short-term goals you like, click **Next**.
-7. On the **Review Disk Allocation** screen, recommended disk allocations are displayed. Recommendations are based on the retention range, the type of workload and the size of the protected data. Click **Next**.
-8. On the **Choose Replica Creation Method** screen, specify how the initial replication of data in the protection group is performed. If you choose to replicate over the network, we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
-9. On the **Consistency Check Options** screen, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check. To run a manual check, right-click the protection group in the Protection area of the DPM console, and select **Perform Consistency Check**.
-10. On the **Specify Online Protection Data** screen, select the data source(s) that you want to protect.
-11. On the **Specify Online Backup Schedule** screen, specify how often you want to take a backup from the disk backup to Azure. A recovery point is created each time a backup is taken.
-12. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. Read more about backing up DPM to Azure in the article, [Backup DPM workloads with Azure Backup](https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction).
-13. On the Choose Online Replication screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you have a large amount of data, it may be more timely to use the Offline Backup feature. See the Offline Backup article in Azure for more information, including a step-by-step walkthrough.
-14. On the Summary screen, review the settings. If you are interested in optimizing performance of the protection group, see the article, [Optimizing DPM operations(https://technet.microsoft.com/en-us/library/jj628105(v=sc.12).aspx) that affect performance. Once you are satisfied with all settings for the protection group, click **Create Group** to create the protection group and trigger the initial backup copy.
-    The Status screen appears and gives you an update on the creation of your protection group, and the state of your initial backup.
+
+7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
+ -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+ -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+ - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
+
+On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also collocate data from different protection groups on tape.
+
+On the **Select Tape and Library Details** page, specify the tape/library to use, and whether data should be compressed and encrypted on tape.
+
+8. On the **Review Disk Allocation** screen, recommended disk allocations are displayed. Recommendations are based on the retention range, the type of workload and the size of the protected data. Click **Next**.
+9. On the **Choose Replica Creation Method** screen, specify how the initial replication of data in the protection group is performed. If you choose to replicate over the network, we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
+10. On the **Consistency Check Options** screen, select how you want to automate consistency checks. You can enable a check to run only when replica data becomes inconsistent, or according to a schedule. If you don’t want to configure automatic consistency checking, you can run a manual check. To run a manual check, right-click the protection group in the Protection area of the DPM console, and select **Perform Consistency Check**.
+11. On the **Specify Online Protection Data** screen, select the data source(s) that you want to protect.
+12. On the **Specify Online Backup Schedule** screen, specify how often you want to take a backup from the disk backup to Azure. A recovery point is created each time a backup is taken.
+13. On the **Specify Online Retention Policy** screen, specify how long you want to retain your data in Azure. Read more about backing up DPM to Azure in the article, [Backup DPM workloads with Azure Backup](https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction).
+14. On the Choose Online Replication screen, choose your method for creating your initial backup copy. The default choice is to send the initial backup copy of your data over the network. However, if you have a large amount of data, it may be more timely to use the Offline Backup feature. See the Offline Backup article in Azure for more information, including a step-by-step walkthrough.
+15. On the Summary screen, review the settings. If you are interested in optimizing performance of the protection group, see the article, [Optimizing DPM operations(https://technet.microsoft.com/en-us/library/jj628105(v=sc.12).aspx) that affect performance. Once you are satisfied with all settings for the protection group, click **Create Group** to create the protection group and trigger the initial backup copy.
+
+The Status screen appears and gives you an update on the creation of your protection group, and the state of your initial backup.
 
 ## Restore VMware virtual machines
 
@@ -321,6 +354,22 @@ You can restore individual files from a protected VM recovery point. This featur
 9. On the **Specify Recovery Options** screen, choose which security setting to apply. You can opt to modify the network bandwidth usage throttling, but throttling is disabled by default. Also, **SAN Recovery** and **Notification** are not enabled.
 10.	On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
     The **Recovery status screen shows the progression of the recovery operation**.
+
+    ::: moniker range="sc-dpm-2019"
+
+    ## VMware parallel backups
+
+    With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
+
+    You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
+
+    **Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+    **Key Type** : DWORD (32-bit) value.
+
+    > [!NOTE]
+    >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel.
+
+    ::: moniker-end
 
 ::: moniker range=">=sc-dpm-1807"
 

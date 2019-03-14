@@ -11,9 +11,9 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## OM 1801 release notes
+## Operations Manager 1801 release notes
 
-The following sections summarize the release notes for OM 1801 and includes the known issues and workarounds.
+The following sections summarize the release notes for Operations Manager 1801 and includes the known issues and workarounds.
 
 ## Telemetry for HTML5 dashboards
 **Description:** System Center Operations Manager collects diagnostics and usage data about itself, which is used by Microsoft to improve the installation experience, quality, and security of future releases.  With the release of the new HTML5 dashboards, usage telemetry is collected with Application Insights, not from the Usage and Diagnostic feature in the management group.  For more information on what user telemetry is collected by Application Insights, see [Usage analysis with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-usage-overview).

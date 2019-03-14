@@ -1,11 +1,11 @@
 ---
-description: Backup Exchange mailbox databases with DPM.
+description: Back up Exchange mailbox databases with DPM.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/30/2017
 title: Back up Exchange with DPM
 ms.technology: data-protection-manager
@@ -31,7 +31,7 @@ Before you deploy DPM to protect Exchange 2013, verify the deployment prerequisi
 
     2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
-        For example in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
+        For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/en-in/download/details.aspx?id=30679).
 
@@ -45,7 +45,7 @@ Before you deploy DPM to protect Exchange 2013, verify the deployment prerequisi
 
 -  Protect at least two copies of each mailbox database. You can use inexpensive Serial Advanced Technology Attachment (SATA) drives, or several JBOD disks for storage.
 
--   Set the minimum frequency to greater than 15 minutes for mailbox synchronization. Start by setting up your current backup policy, and then gradually increase the number of recovery points. Performing one or two express full backups per day, in addition to a synchronization frequency of two hours, is a sound approach. For an optimal synchronization frequency consider the volume of your data, the performance impact, and the volume required to store the replicas.
+-   Set the minimum frequency to greater than 15 minutes for mailbox synchronization. Start by setting up your current backup policy, and then gradually increase the number of recovery points. Performing one or two express full backups per day, in addition to a synchronization frequency of two hours, is a sound approach. For an optimal synchronization frequency, consider the volume of your data, the performance impact, and the volume required to store the replicas.
 
 -   Exchange 2013 can support up to eight parallel backups. To accommodate parallel Exchange database backups for an Exchange server, create multiple protection groups (up to eight), and add Exchange databases to each protection group.
 
@@ -96,7 +96,7 @@ However native protection might not be enough if application errors, corruptions
 
 2.  Set up storage - You can store backed up data on disk, on tape, and in the cloud with Azure.  Read more in [Prepare data storage](plan-long-and-short-term-data-storage.md).
 
-3.  **Set up the DPM protection agent** - The agent needs to be installed on the Exchange server.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
+3.  **Set up the DPM protection agent** - The agent must be installed on the Exchange server.  Read [Deploy the DPM protection agent](deploy-dpm-protection-agent.md).
 
 ## Configure backup
 
@@ -112,7 +112,7 @@ However native protection might not be enough if application errors, corruptions
 
 6.  In **Specify Exchange DAG Protection** select the databases you want to copy for either a full backup or copy backup from the **Database copies selected for Full Backup** or **Database copies selected for Copy Backup** list boxes. For protecting multiple copies of the same database, you can select only one copy for full backup, and then select the remaining copies for copy backup.
 
-7.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In **Retention range** you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+7.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In **Retention range** you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a backup interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
 8.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
@@ -157,7 +157,7 @@ After the protection group's been created the initial replication occurs and DPM
 
 2.  Click **SMTP Server**, type the server name, port, and email address from which notifications will be sent. The address must be valid.
 
-3.  In **Authenticated SMTP server** , type a user name and password. The user name and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
+3.  In **Authenticated SMTP server**, type a user name and password. The user name and password must be the domain account name of the person whose "From" address is described in the previous step; otherwise, notification delivery fails.
 
 4.  To test the SMTP server settings, click **Send Test E-mail**, type the e-mail address where you want DPM to send the test message, and then click **OK**. Click **Options** > **Notifications** and select the types of alerts about which recipients want to be notified. In **Recipients** type the e-mail address for each recipient to whom you want DPM to send copies of the notifications.
 
@@ -287,6 +287,6 @@ After the protection group's been created the initial replication occurs and DPM
 
     In the **Re-image your computer** wizard, you can ignore any warning about a system image not found.
 
--   In the **Select a system image backup** page, click **Select a system image**. Click **Advanced** to select recovery files from a network share. Select **Search for a system image on the network**and click **Yes**if asked if you're sure you want to connect to the network.
+-   In the **Select a system image backup** page, click **Select a system image**. Click **Advanced** to select recovery files from a network share. Select **Search for a system image on the network** and click **Yes** if asked if you're sure you want to connect to the network.
 
--   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then click **Finish**to start the restore.
+-   Specify the network folder, select the backup, and select the date and time of the image you want to restore. Specify any additional driver and disk settings, and then click **Finish** to start the restore.

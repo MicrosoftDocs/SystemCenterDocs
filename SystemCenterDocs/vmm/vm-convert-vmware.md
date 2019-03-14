@@ -46,7 +46,7 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 ::: moniker range=">sc-vmm-2016"
 
-## Convert  EFI based VM to Hyper-V generation 2 VM 
+## Convert  EFI based VM to Hyper-V generation 2 VM
 System Center VMM enables migration of EFI based VMware VMs to Hyper-V. VMware VMs that you migrate to Microsoft Hyper-V platform can now take the advantage of generation 2 features.
 
 As part of VMM 1801 release, the **Convert Virtual Machine** wizard enabled this migration, based on the firmware type (BIOS or EFI), selects and defaults the Hyper-V VM generation appropriately.
@@ -62,16 +62,15 @@ Ensure the following prerequisites are met:
 ### Conversion procedure
 1. To convert, follow the [above procedure](#convert-using-the-wizard), select **Generation 2** in step 4.
 
-    ![vm conversion to gen 2](media\vm-conversion\vm-conversion-select-gen2.png)
+    ![vm conversion to gen 2](media/vm-conversion/vm-conversion-select-gen2.png)
 
 2. Once the VM is converted, you can see the Generation 2 VM as shown in the following image:
 
-    ![vm conversion to gen 2](media\vm-conversion\vm-conversion-gen2-created.png)
+    ![vm conversion to gen 2](media/vm-conversion/vm-conversion-gen2-created.png)
 
 > [!NOTE]
->
-- Disk conversion (from “vmdk” to “VHDX/VHD”) is enhanced to be ~50% faster than earlier.
-- PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
+> - Disk conversion (from “vmdk” to “VHDX/VHD”) is enhanced to be ~50% faster than earlier.
+> - PowerShell commands allow the user to provide the disk type for the target Hyper-V VM, which will enable the VMware thick provisioned disk to be migrated as Hyper-V dynamic disk or vice versa, based upon the requirements.
 
 ## PowerShell commands
 

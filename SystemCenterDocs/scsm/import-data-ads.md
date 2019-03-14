@@ -6,8 +6,8 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
-ms.date: 10/12/2016
+keywords:
+ms.date: 03/14/2019
 ms.technology: service-manager
 ms.assetid: d039eac3-e5cd-4f11-ac6c-bb856bafcc92
 ---
@@ -32,6 +32,14 @@ When you import a large number of users from AD DS) or from System Center Config
 ## Create an Active Directory connector
 
 You can use the following procedures in Service Manager to create,  validate, and confirm the status of an Active Directory connector to import objects from Active Directory Domain Services (AD DS).
+
+::: moniker range="sc-sm-2019"
+
+>[!NOTE]
+
+> The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may specify the Domain Controller in the LDAP query of the Active Directory connector.
+
+::: moniker-end
 
 ### To create an Active Directory connector and to import objects from AD DS
 

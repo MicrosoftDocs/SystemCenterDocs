@@ -21,7 +21,7 @@ This article helps you to get the prerequisites and planning steps in place, bef
 Deployment requirements for SPF include:
 
 -	Make sure you have the minimum hardware and software requirements on the SPF server.
--	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number. 
+-	The SPF server needs SQL Server for its database. The SQL Server database can be local, or on a remote server and should have at least 5 GB of storage. When you install SPF you need to specify the server name and port number.
 -	The VMM console should be installed on the SPF server. SPF can also run on the same server as the VMM management server. VMM must be deployed in your infrastructure.
 -	If you want to use usage metering to manage tenant costs, you need a System Center Operations Manager server, and a Data Warehouse server, running Windows 2012 R2 or later.
 -	The following Server Manager features should be installed on the SPF server:

@@ -5,16 +5,13 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # Set up an SDN network controller in the VMM fabric
-
-
-
 
 This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center - Virtual Machine Manager (VMM) fabric.
 
@@ -291,6 +288,13 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 **MgmtSecurityGroup** | Required | Name of the security group you created previously containing network controller management accounts.
 **RestEndPoint** | Required| Enter the RESTName you used when preparing the certificates.  This parameter isn't used for standalone templates. <br><br> If the nodes are in the same subnet, you must provide the REST IP address. If the nodes are in different subnets, provide the REST DNS name.   
 **ServerCertificatePassword** | Required | Password to import the certificate into the machine store.
+
+::: moniker range="sc-vmm-2019"
+
+> [!NOTE]
+> Windows 2019 onwards, the Network Controller machines must be provided permission to register and modify the SPN in the Active Directory. For more details, see [Kerberos with Service Principal Name](https://docs.microsoft.com/windows-server/networking/sdn/security/kerberos-with-spn).
+
+::: moniker-end
 
 
 ## Add the network controller service to VMM

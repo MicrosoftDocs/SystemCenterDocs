@@ -5,7 +5,7 @@ description: This article describes the new features supported in Service Manage
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 05/21/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-management-automation
@@ -13,6 +13,14 @@ ms.technology: service-management-automation
 
 
 # What's new in Service Management Automation
+
+::: moniker range="sc-sma-2019"
+
+This article provides the new features supported by System Center 2019 - Service Management Automation (SMA).
+
+[!INCLUDE [whats-new-sma-2019.md](../includes/whats-new-sma-2019.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-sma-1807"
 

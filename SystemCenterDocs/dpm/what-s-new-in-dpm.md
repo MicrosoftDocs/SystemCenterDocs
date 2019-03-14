@@ -1,18 +1,24 @@
 ---
-description: Descriptions of the new features in System Center DPM 2016, 1801, and 1807.
+description: Descriptions of the new features in System Center DPM 2016, 1801, 1807 and 2019.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
-ms.date: 7/24/2018
-title: What's new in System Center DPM 2016, 1801, and 1807
+keywords:
+ms.date: 03/14/2019
+title: What's new in System Center DPM 2016, 1801, 1807 and 2019
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: raynew
 ---
 
-# What's new in System Center DPM
+# What's new in System Center Data Protection Manager
+
+::: moniker range="sc-dpm-2019"
+
+This article details the new features supported in System Center 2019 - Data Protection Manager (DPM).
+
+::: moniker-end
 
 ::: moniker range="sc-dpm-1807"
 
@@ -29,6 +35,57 @@ System Center DPM 1801 provides the following new features:
 ::: moniker range="sc-dpm-2016"
 
 System Center DPM 2016 adds improvements in three key areas: storage efficiency, performance, and security. Modern Backup Storage takes advantage of improvements in Windows Server 2016, creating storage space savings of 30-40%. In addition to space savings, you can create storage and performance efficiency by using MBS to back up designated workloads to specific volumes. Improved DPM performance reduces I/O requirements up to 70%, resulting in faster backups. DPM 2016 supports shielded VMs.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+## New features in DPM 2019
+
+ See the following sections for detailed information about the new features/feature updates supported in DPM 2019.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+## Windows Server 2019 support
+DPM 2019 can be installed on Windows Server 2019 and Windows Server 2016.
+
+## SQL 2017 support as DPM database
+DPM 2019 support SQL 2017 as its database.
+
+You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM.
+
+## Support for newer workloads backups
+With DPM 2019, you can back up newer versions of workloads, listed below:
+-	Hyper-V VMs 2019
+-	Windows Server 2019
+-	Exchange 2019
+-	SharePoint 2019
+-	VMWare [vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)
+-	System Center Virtual Machine Manager 2019. [Learn more](dpm-protection-matrix.md).
+
+## Faster backups with Tiered storage using SSDs
+DPM 2016 introduced [Modern Backup Storage](https://docs.microsoft.com/system-center/dpm/add-storage?view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
+
+To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
+
+## Support for Central Monitoring
+With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
+
+You can monitor both on-premises and cloud backups, using Log Analytics with central monitoring capability.  [Learn more](monitor-dpm.md#central-monitoring).
+
+## VMware backup to tape
+For long term retention on VMware backup data on-premises, you can now enable VMware backups to tape. The backup frequency can be selected based on the retention range (which will vary from 1-99 years) on tape drives. The data on tape drives could be both compressed and encrypted.
+
+DPM 2019 supports both Original Location Recovery (OLR)) and Alternate Location Recovery (ALR)) for restoring the protected VM. [Learn more](back-up-vmware.md).
+
+## VMWare parallel backups
+With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to 25% faster VM backups.
+
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
+
+
 
 ::: moniker-end
 
@@ -216,4 +273,5 @@ To give permissions to the share
 ::: moniker-end
 
 ## Next steps
-[What's supported in DPM](dpm-support-issues.md)
+- [Install DPM](install-dpm.md)
+- [Upgrade your DPM installation](upgrade-dpm.md)

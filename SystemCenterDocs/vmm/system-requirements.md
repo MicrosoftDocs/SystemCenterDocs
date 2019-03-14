@@ -5,13 +5,21 @@ description: This article describes the software and hardware system requirement
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 04/26/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # System requirements for System Center Virtual Machine Manager
+
+::: moniker range="sc-vmm-2019"
+
+This article details the system requirements for System Center 2019 - Virtual Machine Manager (VMM).
+
+[!INCLUDE [system-reqs-vmm-2019.md](../includes/system-reqs-vmm-2019.md)]
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-1807"
 

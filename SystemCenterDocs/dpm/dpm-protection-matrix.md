@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 7/17/2018
+ms.date: 03/14/2019
 title: What can DPM back up
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
@@ -14,7 +14,37 @@ ms.author: raynew
 
 # What can DPM back up?
 
-Use the System Center Data Protection Manager (DPM) support matrix to review the workloads that can be protected. In the following table, the **Workload** column is the workload type or technology. The **Version** column lists the supported workload versions. Client computers and Server workloads are broken out by operating system **Version** because the **DPM installation** and **Protection and recovery details** vary. **DPM installation** lists where the DPM software can be installed. **Protection and recovery** lists details about the workload, such as supported storage container, or supported deployment. Use the matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807.
+
+Use the System Center Data Protection Manager (DPM) support matrix to review the workloads that can be protected. In the following table, the **Workload** column is the workload type or technology. The **Version** column lists the supported workload versions. Client computers and Server workloads are broken out by operating system **Version** because the **DPM installation** and **Protection and recovery details** vary. **DPM installation** lists where the DPM software can be installed. **Protection and recovery** lists details about the workload, such as supported storage container, or supported deployment.
+
+::: moniker range="<sc-dpm-2019"
+Use the following matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807.
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+Use the following matrix for DPM 2019.
+::: moniker-end
+
+
+::: moniker range="sc-dpm-2019"
+
+## Protection support matrix
+
+|Workload|Version|DPM installation|Protection and recovery|
+|------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
+|System Center VMM|VMM 2019, 2016|Physical server<br /><br />Hyper-V virtual machine|All deployment scenarios: Database|
+|Client computers (64-bit )|Windows 10|Physical server<br /><br />Hyper-V virtual machine<br /><br />VMware virtual machine|Volume, share, folder, files, deduped volumes<br /><br />Protected volumes must be NTFS. FAT and FAT32 aren't supported.<br /><br />Volumes must be at least 1 GB. DPM uses Volume Shadow Copy Service (VSS) to take the data snapshot and the snapshot only works if the volume is at least 1 GB.|
+|Servers (64-bit)|Windows Server 2019, 2016 |Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)<br /><br />Physical server<br /><br />On-premises Hyper-V virtual machine|Volume, share, folder, file, system state/bare metal), deduped volumes|
+|SQL Server|SQL Server 2017, 2016 and [supported SPs](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202016), 2014 and supported [SPs](https://support.microsoft.com/en-us/lifecycle/search?alpha=SQL%20Server%202014) |Physical server <br /><br /> On-premises Hyper-V virtual machine <br /> <br /> Azure virtual machine <br /><br /> Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|All deployment scenarios: database|
+|Exchange|Exchange 2019, 2016|Physical server<br/><br/> On-premises Hyper-V virtual machine|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> Backup of Exchange over ReFS not supported |
+|SharePoint|SharePoint 2019, 2016 with latest SPs|Physical server<br /><br />On-premises Hyper-V virtual machine<br /><br />Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />Note that protecting a SharePoint farm that's using the SQL Server Always On feature for the content databases isn't supported.|
+|Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM|Windows Server 2019, 2016|Physical server<br /><br />On-premises Hyper-V virtual machine|Protect: Hyper-V computers, cluster shared volumes (CSVs)<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
+|Linux|Linux running as Hyper-V guest (Hyper-V running on Windows Server 2016/2019) |On-premises Hyper-V virtual machine|Hyper-V must be running on Windows Server 2019 or Windows Server 2016. Protect: Entire virtual machine<br /><br />Recover: Entire virtual machine <br/><br/> For a complete list of supported Linux distributions and versions, see the article, [Linux on distributions endorsed by Azure](http://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).|
+|VMware VMs | VMware server 6.0, or 6.5, 6.7 | On-premises Hyper-V virtual machine | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
+
+::: moniker-end
+
+::: moniker range="<sc-dpm-2019"
 
 ## Protection support matrix
 
@@ -82,6 +112,7 @@ Use the System Center Data Protection Manager (DPM) support matrix to review the
 |VMware VMs | VMware server 5.5, 6.0, or 6.5 | On-premises Hyper-V virtual machine | Y | N | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 |VMware VMs | [VMware vSphere 6.7](back-up-vmware.md#vmware-vsphere-67)| On-premises Hyper-V virtual machine | Y (Applicable for DPM 1807 and later) | N | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 
+::: moniker-end
 
 ## Cluster support
 DPM can protect data in the following clustered applications:
@@ -91,9 +122,6 @@ DPM can protect data in the following clustered applications:
 -   SQL Server
 
 -   Hyper-V - But if you're protecting a Hyper-V cluster using scaled-out DPM protection, you can't add secondary protection for the protected Hyper-V workloads.
-
-    For Hyper-V running on Windows Server 2008 R2 make sure you have the updated described in KB [975354](https://support.microsoft.com/en-us/kb/975354) installed.
-    For Hyper-V running on Windows Server 2008 R2 in a cluster configuration make sure you have SP2 and KB [971394](https://support.microsoft.com/en-us/kb/971394) installed.
 
 -   Exchange Server - DPM can protect non-shared disk clusters for supported Exchange Server versions (cluster continuous replication), and can also protect Exchange Server configured for local continuous replication.
 

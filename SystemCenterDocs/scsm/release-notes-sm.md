@@ -5,13 +5,21 @@ description: This article details the known issues and issues fixed in Service M
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 07/24/2018
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-manager
 ---
 
 # Release notes for System Center Service Manager
+::: moniker range="sc-sm-2019"
+
+This article provides the release notes for System Center Service Manager 2019.
+
+[!INCLUDE [release-notes-sm-2019.md](../includes/release-notes-sm-2019.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-sm-1807"
 
 This article provides the release notes for System Center 1807 - Service Manager (SM).
