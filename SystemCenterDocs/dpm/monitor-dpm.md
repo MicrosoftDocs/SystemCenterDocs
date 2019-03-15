@@ -65,8 +65,9 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
 5. In the **Diagnostic settings** window, give a valid setting name, select **Send to Log Analytics**, select the relevant log analytics workspace or [create one](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace), select the relevant log, *AzureBackupReport* and click **Save**.
 
     > [!NOTE]
-
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
+
+    Here is a sample backup report:
 
     ![backup report](./media/monitor-dpm/azure-backup-report.png)
 
