@@ -67,6 +67,8 @@ All DPM-A customers (customer connected to Azure) have the flexibility of using 
     > [!NOTE]
     > Choose the same workspace for all the vaults to get a centralized view in the workspace. Allow 24 hours for initial data push to complete post completing the configuration.
 
+    Here is a sample backup report:
+
     ![backup report](./media/monitor-dpm/azure-backup-report.png)
 
 **Monitor Backup Data**

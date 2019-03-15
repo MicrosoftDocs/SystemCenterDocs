@@ -94,7 +94,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 ## Storage recommendations for DPM
 
 - Sector Size should always be consistent across underlying storage (i.e. WS storage) to DPM native storage.
-- When storage spaces is used to carved out DPM storage, storage spaces is supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
+- When storage spaces is used to carve out DPM storage, storage spaces is supported on iSCSI and FC controllers as  long as the virtual disks created on top of them are non-resilient (Simple with any number of columns)
 - Write- Back cache should always be se to zero while using Storage Spaces for DPM storage.
 
 ## Protected workloads
