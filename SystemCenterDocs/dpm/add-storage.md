@@ -326,8 +326,8 @@ Follow these steps:
 In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
 
 Migration of data source should have all recovery points on Modern Storage.
-> [!NOTE]
 
+> [!NOTE]
 > - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
 >- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are pre-empted.
 
