@@ -157,8 +157,7 @@ DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization a
 
 > [!NOTE]
 > - Tiering is recommended for faster backups. However, this is not a mandatory requirement to configure DPM storage.
-
- >- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.    
+>- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.    
 
 Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
 
@@ -204,6 +203,8 @@ Follow these steps: :
 
   > [!NOTE]
   >  If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks  are added, they can only be a multiple of the number of columns.
+
+  The following image shows the check for disk type:
 
     ![Check disk type ](./media/add-storage/media-type-check-2019.png)
 
