@@ -80,7 +80,7 @@ The following versions of Windows operating system are supported for the Microso
 
  - **Windows Server 2019** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
  - **Windows Server 2016** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
- - **Windows Server 2012 R2** - Standard, Datacenter, Server Core
+ - **Windows Server 2012 R2** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience) 
  - **Windows 10** - Enterprise, Pro
 
  > [!NOTE]
