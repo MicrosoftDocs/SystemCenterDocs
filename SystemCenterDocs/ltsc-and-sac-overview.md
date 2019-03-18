@@ -5,11 +5,16 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.prod: system-center
 ms.author: V-jysur
-keywords: 
-ms.date: 6/18/2018
+keywords:
+ms.date: 03/14/2019
 title: Overview of System Center LTSC and SAC releases
-ms.assetid: 
+ms.assetid:
 ---
+
+> [!NOTE]
+> The Semi-Annual Channel (SAC) for System Center has been discontinued. System Center 2019 will support upgrades from two prior SAC releases so customers running System Center 1801 or System Center 1807 will be able to upgrade to System Center 2019.
+>System Center Configuration Manager (SCCM) is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](https://docs.microsoft.com/en-us/sccm/core/servers/manage/current-branch-versions-supported).
+
 
 # Overview of System Center release options
 
