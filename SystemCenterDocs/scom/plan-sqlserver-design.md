@@ -28,6 +28,10 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 * SQL Server 2017 and Service Packs as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 * SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 
+::: moniker-end
+
+::: moniker range="sc-om-1807"
+
 Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md).
 
 ::: moniker-end
