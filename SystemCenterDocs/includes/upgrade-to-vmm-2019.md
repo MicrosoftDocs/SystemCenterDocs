@@ -47,10 +47,11 @@ If you're running more than one System Center component, they should be upgraded
 1. Service Management Automation
 2. Orchestrator
 3. Service Manager
-4. Data Protection Manager (DPM)
+4. Data Protection Manager
 5. Operations Manager
 6. Configuration Manager
-7. Virtual Machine Manager (VMM)
+7. Virtual Machine Manager
+8. Service Provider Foundation
 
 ## Upgrade a standalone VMM server
 
