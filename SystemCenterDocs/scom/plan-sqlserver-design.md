@@ -21,7 +21,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 ## SQL Server requirements
 
-::: moniker range ">=sc-om-1807"
+::: moniker range "=>sc-om-1807"
 
 The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version 1807 to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
