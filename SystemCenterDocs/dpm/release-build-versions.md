@@ -10,7 +10,7 @@ ms.date: 03/01/2019
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: v-anesh
-monikerRange: >= sc-dpm-2016
+monikerRange: '>= sc-dpm-2016'
 ---
 
 # System Center – Data Protection Manager build versions
@@ -38,7 +38,7 @@ The following table lists the build versions for Data Protection Manager 2016.
 | 5.0.322.0 | [3209593](https://support.microsoft.com/help/3209593) | Update Rollup 2 for System Center 2016 Data Protection Manager  |
 |  5.0.342.0 | [4043316](https://support.microsoft.com/help/4043316)[ ](https://support.microsoft.com/help/4043316) | Update Rollup 4 for System Center 2016 Data Protection Manager |
 | 5.0.361.0 | [4090835](https://support.microsoft.com/help/4090835/update-rollup-5-for-system-center-2016-data-protection-manager) | Update Rollup 5 for System Center 2016 Data Protection Manager  |
-| 5.0.375.0   | [4456327](https://support.microsoft.com/en-in/help/4456327/update-rollup-6-for-system-center-2016-data-protection-manager) | Update Rollup 6 for System Center 2016 Data Protection Manager  |
+| 5.0.375.0   | [4456327](https://support.microsoft.com/help/4456327/update-rollup-6-for-system-center-2016-data-protection-manager) | Update Rollup 6 for System Center 2016 Data Protection Manager  |
 
 ::: moniker-end
 

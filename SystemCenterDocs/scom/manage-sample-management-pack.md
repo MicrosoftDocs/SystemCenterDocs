@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Sample Linux log file management pack
 description: This article describes a sample management pack for creating an alert from a log file on Linux in System Center Operations Manager.
 author: JYOTHIRMAISURI
@@ -8,13 +8,13 @@ manager: carmonm
 ms.date: 01/16/2018
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-1801'
+monikerRange: '>=sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # Sample Linux log file management pack
-This is a sample management pack to create an alert from a log file in Linux with System Center Operations Manager version 1801.  You can copy and paste the contents into an XML file and install in your Operations Manager management group.
+This is a sample management pack to create an alert from a log file in Linux with System Center Operations Manager version 1801 and later.  You can copy and paste the contents into an XML file and install in your Operations Manager management group.
 
 This management pack will create an alert for every collected event.  There is another rule in the comments of the management pack that will only create an alert for events with a specific event number.  To use this rule, remove the comments and replace the event number with one that you require.
 
@@ -76,10 +76,10 @@ This management pack will create an alert for every collected event.  There is a
                             <!-- Alert Priority and Severity is set to 2, this is configurable -->
                             <Priority>2</Priority>
                             <Severity>2</Severity>
-                                
-                            <!--Alert description would be the event description. This description and the event ID are defined in the fluentd configuration 
+
+                            <!--Alert description would be the event description. This description and the event ID are defined in the fluentd configuration
                             file by the user for log file monitoring.-->
-                    
+
                             <AlertMessageId>$MPElement[Name="EventProvider.Alert"]$</AlertMessageId>
                             <AlertParameters>
                 <AlertParameter1>$Data/EventDescription$</AlertParameter1>

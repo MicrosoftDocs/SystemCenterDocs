@@ -7,14 +7,14 @@ manager: carmonm
 ms.date: 07/19/2018
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-1807'
-ms.assetid: 
+monikerRange: '>=sc-om-1807'
+ms.assetid:
 ms.technology: operations-manager
 ms.topic: article
 ---
 
 # How to view the effective configuration of a monitored object
-In System Center Operations Manager version 1807, the Web console has been enhanced to allow an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.     
+ In System Center Operations Manager version 1807 and later, the Web console has been enhanced to allow an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.     
 
 From the results, you are able to see the following details:
 
