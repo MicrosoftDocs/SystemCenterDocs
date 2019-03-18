@@ -77,11 +77,11 @@ The following versions of Windows Server operating system are supported for the 
 |:--- |:---|:--- |:--- |:--- |
 | **Operations Manager** Management Server | yes | yes | yes |yes|
 | **Operations Manager** Gateway Server | yes | yes | yes |yes|
-| **Operations Manager** Web Console | yes | yes | | |
-| **Operations Manager** ACS Collector | yes | yes | ||
-| **Operations Manager** Operations console | yes | yes | yes (with FOD) |yes (with FOD)|
+| **Operations Manager** Web Console | yes |  |yes | |
+| **Operations Manager** ACS Collector | yes | |yes ||
+| **Operations Manager** Operations console | yes | yes (with FOD)| yes  |yes (with FOD)|
 | **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes | yes |yes |yes|
-| **Operations Manager** Reporting server | yes | yes | | ||
+| **Operations Manager** Reporting server | yes | |yes | ||
 
 
 
@@ -93,6 +93,7 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 
 >[!NOTE]
 > Operations Manager 2019 only includes the 64-bit version of the agent.
+
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core
 - Windows Server 2012 R2 - Standard, Datacenter, Server Core
@@ -100,9 +101,6 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Microsoft .NET Framework 3.5 or later.
-- File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
-- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
-- Microsoft .NET Framework 3.5 or later
 
     > [!NOTE]
     > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
@@ -126,8 +124,8 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).
 
-    > [!NOTE]
-    > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295).  The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
+> [!NOTE]
+> Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295). The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 
 - NET Framework 4 or .NET Framework 4.5 is required.
 

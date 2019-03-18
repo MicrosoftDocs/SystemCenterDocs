@@ -41,7 +41,6 @@ Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-
 4.	Enable the fallback URLs on the host by navigating to **Host Properties** > **Host Guardian Service** > select Enable host Guardian Hyper-V support and use the URLs as configured as global settings in VMM and click OK.
 
     > [!NOTE]
-
     > After this step, VMM service configures the supported hosts with primary and fallback HGS URLs. Only hosts on and above Windows Server 1709 support fallback HGS URLs.
 
 ## PowerShell command updates
