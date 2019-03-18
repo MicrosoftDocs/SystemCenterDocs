@@ -5,13 +5,18 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.prod: system-center
 ms.author: V-jysur
-keywords: 
+keywords:
 ms.date: 8/27/2018
 title: Support for System Center SAC releases
-ms.assetid: 
+ms.assetid:
 ---
 
 # Support for System Center Semi-Annual Channel releases
+
+> [!NOTE]
+Note:
+>The Semi-Annual Channel (SAC) for System Center has been discontinued. System Center 2019 will support upgrades from two prior SAC releases so customers running System Center 1801 or System Center 1807 will be able to upgrade to System Center 2019.
+>System Center Configuration Manager (SCCM) is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](https://docs.microsoft.com/en-us/sccm/core/servers/manage/current-branch-versions-supported).
 
 The information in this article applies to the following System Center technologies:
 
@@ -33,11 +38,9 @@ Microsoft releases updates for System Center Semi-Annual Channel (SAC) a couple 
 > The latest Semi-Annual Channel version is always in the Security and Critical Updates servicing phase. If you encounter a code defect that warrants a critical update, you must have the latest Semi-Annual Channel version installed to receive a fix. All other supported Semi-Annual Channel versions are only eligible to receive security updates. Microsoft recommends updating your deployment to the latest version before support for your current version expires.  
 
 ## Version history
-The following table illustrates the release cycle overlap for the Semi-Annual Channel releases. The following dates are for illustration purposes and do not represent actual or expected release dates. 
+The following table illustrates the release cycle overlap for the Semi-Annual Channel releases. The following dates are for illustration purposes and do not represent actual or expected release dates.
 
 |Version|Availability Date| Support End Date |
 |-------|--------------- -|------------------|
 | 1801 | February 8, 2018 | August 8, 2019 <br/> 18 months after release date |
 | 1807 | July, 24, 2018 | January, 24, 2020 <br/> 18 months after release date |
-
-

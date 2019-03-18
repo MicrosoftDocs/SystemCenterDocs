@@ -10,7 +10,7 @@ ms.date: 03/01/2019
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: v-anesh
-monikerRange: '>= sc-dpm-2016 <= sc-vmm-1807'
+monikerRange: '>= sc-dpm-2016 <= sc-dpm-1807'
 ---
 
 # System Center – Data Protection Manager build versions
