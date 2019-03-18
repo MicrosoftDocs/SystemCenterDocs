@@ -8,7 +8,7 @@ ms.date: 02/08/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: 'sc-vmm-1801'
+monikerRange: '>sc-vmm-1801'
 ---
 
 # Provision shielded Linux virtual machines in the VMM fabric
