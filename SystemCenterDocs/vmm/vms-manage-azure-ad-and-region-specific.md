@@ -46,8 +46,7 @@ Ensure the following prerequisites:
     - The certificate should also be located in the Current User\Personal store of the computer running the VMM console.
 
 	> [!NOTE]
-
-    > The certificate is required only if you choose to use certificate-based authentication to manage your Azure subscription.
+  > The certificate is required only if you choose to use certificate-based authentication to manage your Azure subscription.
 
 ## Procedure - manage Azure AD-based authentication & authorization and region-specific Azure subscriptions
 
