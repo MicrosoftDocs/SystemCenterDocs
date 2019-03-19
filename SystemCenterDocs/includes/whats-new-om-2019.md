@@ -78,9 +78,9 @@ Operations Manager 2019 introduces a fix for this issue to ensure scheduled main
 ## Microsoft Monitoring Agent operating system
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager:
 
- - **Windows Server 2019** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
- - **Windows Server 2016** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
- - **Windows Server 2012 R2** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience)
+ - **Windows Server 2019** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience), Server Core
+ - **Windows Server 2016** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience), Server Core
+ - **Windows Server 2012 R2** - Standard, Standard (Desktop Experience), Datacenter, Datacenter (Desktop Experience), Server Core
  - **Windows 10** - Enterprise, Pro
 
  > [!NOTE]
@@ -88,7 +88,7 @@ The following versions of Windows operating system are supported for the Microso
 
 - **File system**: %SYSTEMDRIVE% must be formatted with the NTFS file system
 - **Windows PowerShell version**: Windows PowerShell version 2.0, or Windows PowerShell version 3.0
-**Microsoft .NET Framework**: V3.5 or later.
+- **Microsoft .NET Framework**: V3.5 or later.
 
 ## New Linux operating systems support
 
