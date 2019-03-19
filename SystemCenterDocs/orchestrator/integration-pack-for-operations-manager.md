@@ -82,12 +82,12 @@ Use the following steps:
 
     ![new registry key](./media/integration-pack-for-om/new-registry-key.png)
 
-    d.	Type **SSL 3**, and then press **Enter**.
+    d.	Type **SSL 3.0**, and then press **Enter**.
 
     e.	Repeat steps c and d to create keys for TLS 0,
     TLS 1.1, and TLS 1.2. These keys resemble directories.
 
-    f.	Create a Client key and a Server key under each of the SSL 3, TLS 1.0, TLS 1.1, and TLS 1.2 keys.
+    f.	Create a Client key and a Server key under each of the SSL 3.0, TLS 1.0, TLS 1.1, and TLS 1.2 keys.
 
     g.	To enable a protocol, create the DWORD value under each Client and Server key as follows:
 
