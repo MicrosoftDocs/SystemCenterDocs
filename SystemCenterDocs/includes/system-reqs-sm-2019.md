@@ -124,7 +124,6 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
  The following steps provide information about upgrading to SQL 2017.
 
   > [!NOTE]  
-
   > -	Upgrade process to SQL 2017 uninstalls the reporting services, ensure to migrate required reports such as   backup reporting DB and encryption keys.
 
   **Use the following steps to upgrade from SQL 2016 to 2017**:

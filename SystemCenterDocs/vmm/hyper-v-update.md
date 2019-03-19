@@ -37,7 +37,6 @@ You'll need to set up an update (WSUS server) in the VMM fabric, and configure u
 ::: moniker range="sc-vmm-1807"
 
 > [!NOTE]
-
 > Remediation of single node in a S2D cluster might  not succeed if remediation is done by selecting the host. We recommend you to remediate at cluster level and then select the hosts for remediation.
 
 In S2D cluster, once the update is installed on the node, the node is rebooted and repair (resync) operation is initiated. If the resync is not completed within 600 minutes (default value), the update job fails. To avoid the job failure, you can change the wait time in the registry key.

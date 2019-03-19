@@ -36,7 +36,6 @@ You can use the following procedures in Service Manager to create,  validate, an
 ::: moniker range="sc-sm-2019"
 
 >[!NOTE]
-
 > The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may specify the Domain Controller in the LDAP query of the Active Directory connector.
 
 ::: moniker-end

@@ -25,7 +25,6 @@ There are two methods for creating a VM template:
 - From an existing virtual hard disk or VM template in the VMM library.
 
   > [!NOTE]
-
   > Ensure the virtual hard disk was Sysprepped.
 
 - From an existing VM deployed on a host.

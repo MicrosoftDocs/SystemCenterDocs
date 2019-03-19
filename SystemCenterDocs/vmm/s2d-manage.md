@@ -27,7 +27,6 @@ You can [view and configure cluster settings](hyper-v-cluster.md#configure-clust
 
 > [!NOTE]
 > Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
-
 > You can also use this script to configure RDMA, QoS and SET while adding a new node to an existing S2D deployment from bare metal computers.
 
 -	When you add a new node on a hyper-converged cluster, VMM automatically discovers disks on the new node, and enables S2D.

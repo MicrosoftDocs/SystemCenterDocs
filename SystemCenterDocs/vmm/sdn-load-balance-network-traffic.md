@@ -166,9 +166,7 @@ For the following example script, we created a new VIP template by name ILB-VIP-
 
 > [!NOTE]
 > - In the Internal load balancing scenario, the VIP comes from the tenant VM network. So, the **$VipNetworkName** is the same tenant VM network name where the VMs are connected. Ensure that the tenant VM network IP pool has the IPs reserved for VIPs. The **$VipAddress** is one of the IP addresses from the reserved VIPs.
-
 > - In the script parameters section, substitute the actual values that match your test environment for the samples used in this script.
-
 > - Ensure you run the script on a VMM server, or on a computer running the VMM console.
 
 ```powershell
