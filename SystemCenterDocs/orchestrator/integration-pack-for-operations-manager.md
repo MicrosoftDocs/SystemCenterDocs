@@ -142,8 +142,8 @@ Run the following Windows PowerShell script in administrator mode to automatical
     }
 
     Exit 0
+```
 
-    ```
 2. Set System Center to use only TLS 1.2
 
     Set the following registry key values. Before you modify it back up the registry for restoration.
