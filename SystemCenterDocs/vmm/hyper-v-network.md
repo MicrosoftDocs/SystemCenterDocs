@@ -59,7 +59,6 @@ VMM supports Link Layer Discovery Protocol (LLDP). You can now leverage the LLDP
 To get the details of network devices from the VMM console, go to **View** > **Host** > **Properties** > **Hardware Configuration** > **Network adapter**.   
 
 > [!NOTE]
-
 > The details displayed contain a time stamp (updated on). To get the current details, refresh the page.
 
   ![lldp support](media/lldp-support/lldp-view.png)
