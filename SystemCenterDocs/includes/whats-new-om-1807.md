@@ -1,7 +1,7 @@
 ---
 ms.assetid: 70fad9da-0c8b-4b0a-abbd-a1246b57da5b
 title: include file
-description: include file to describe the new features in operations manager 1807
+description: include file to describe the new features in operations manager 1807.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
