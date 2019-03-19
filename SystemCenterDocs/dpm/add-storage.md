@@ -204,9 +204,8 @@ Follow these steps: :
   > [!NOTE]
   >  If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks  are added, they can only be a multiple of the number of columns.
 
-  The following image shows the check for disk type:
-
-    ![Check disk type ](./media/add-storage/media-type-check-2019.png)
+The following image shows the check for disk type:
+![Check disk type ](./media/add-storage/media-type-check-2019.png)
 
 8. If the media-type for HDD or SSD disk is not recognized correctly, use the following command:
 
@@ -303,10 +302,9 @@ Follow these steps:
 
  Example:   fsutil behavior set disableWriteAutoTiering C: 1
 
-    ![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
+![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
 
-    >[!NOTE]
-    > You can skip this step if more than 10% of SSD is available. This can be disabled later if there is a performance degradation in terms of backup speeds.
+Note that you can skip this step if more than 10% of SSD is available. This can be disabled later if there is a performance degradation in terms of backup speeds.
 
 Now, add the newly created volumes to DPM storage using the procedure detailed below.
 

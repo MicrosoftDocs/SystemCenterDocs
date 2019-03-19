@@ -46,7 +46,6 @@ Follow these steps:
     ![closed alert message operations console](./media/enhanced-alert-closure-experience/nonclosure-message-operations-console.png)
 
     >[!NOTE]
-
     > To close this alert, the health state of the corresponding monitor has to be manually reset to healthy state. If **autoresolve** for this monitor is set to *true*, then the alert will be auto closed after the health state is reset. Else, the alert has to be manually closed after the health state is reset.
 
 ##  Web Console
@@ -76,7 +75,7 @@ The dashboard lists the alerts, which Operations Manager was unable to close bec
  Or
  -  Click an alert in this dashboard to navigate to the alerts drill-down page (where you can visualize all the relevant information for an alert), select the **Reset Health task** in the task pane.
 
-        ![reset monitor health for an alert](./media/enhanced-alert-closure-experience/reset-task.png)
+    ![reset monitor health for an alert](./media/enhanced-alert-closure-experience/reset-task.png)
 
 
 ## Alert update APIs
