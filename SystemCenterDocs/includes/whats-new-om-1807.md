@@ -1,7 +1,7 @@
 ---
 ms.assetid: 70fad9da-0c8b-4b0a-abbd-a1246b57da5b
 title: include file
-description: include file to describe the new features in operations manager 1807
+description: include file to describe the new features in operations manager 1807.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -18,7 +18,6 @@ ms.topic: include
 The content in the following sections describe new features in System Center 1807 - Operations Manager.
 
 >[!NOTE]
-
 > To view the bugs fixed and the installation instructions for Operations Manager 1807, see [KB article 4133779](https://support.microsoft.com/help/4133779).
 
 ## Configure APM component during agent install or repair
