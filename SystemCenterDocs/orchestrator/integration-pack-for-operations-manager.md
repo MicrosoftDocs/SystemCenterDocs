@@ -24,8 +24,8 @@ The Operations Manager Integration Pack requires the following software to be in
 - The integration pack version should match the System Center version.
 - System Center - Operations Manager
 
->[!NOTE]
-> If you are using SCO 2016/1801 integration pack for System Center Operations Manager 2016 UR4 or later - when Operations Manager is configured to accept TLS 1.1 or 1.2 only connections, then, ensure to make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-and-later).
+    >[!NOTE]
+    > If you are using SCO 2016/1801 integration pack for System Center Operations Manager 2016 UR4 or later - when Operations Manager is configured to accept TLS 1.1 or 1.2 only connections, then, ensure to make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-and-later).
 
 - Install the Operations Manager console on each computer where an Orchestrator Runbook server or Runbook Designer is installed, if that server needs to interact with Operations Manager.
 - The Orchestrator Integration Library Management Pack is required by the Create Alert object.
@@ -55,7 +55,7 @@ A connection establishes a reusable link between Orchestrator and an Operations 
 7.  Click **Test Connection**. When the message "Successfully connected" appears, click **OK**.
 8.  Add additional connections if applicable. Click **OK** to close the configuration dialog box, and then click **Finish**.
 
-# Enable SCO IP for Operations Manager 2016 UR4 and later
+## Enable SCO IP for Operations Manager 2016 UR4 and later
 
 You must enable SCO IP for Operations Manager 2016 (UR4+), when Operations Manager configuration accepts TLS 1.1 or TLS 1.2 only.
 
@@ -70,8 +70,8 @@ Use the following steps:
     Use the following steps to enable/disable all SCHANNEL protocols system-wide.
 
     >[!NOTE]
-    - We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
-    - Registry changes does not affect the use of Kerberos or NTLM protocols.
+    > - We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
+    > - Registry changes do not affect the use of Kerberos or NTLM protocols.
 
     a. Start Registry Editor. To do this, right-click **Start**, type **regedit** in the Run box, and then click **OK**.
 
@@ -104,45 +104,46 @@ Use the following steps:
 **Method 2: Automatically modify the registry**
 
 Run the following Windows PowerShell script in administrator mode to automatically configure Windows to use only the TLS 1.2 Protocol:
+
 ```    
-$ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
-$ProtocolSubKeyList = @("Client", "Server")
-$DisabledByDefault = "DisabledByDefault"
-$Enabled = "Enabled"
-$registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
+    $ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
+    $ProtocolSubKeyList = @("Client", "Server")
+    $DisabledByDefault = "DisabledByDefault"
+    $Enabled = "Enabled"
+    $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
 
-foreach($Protocol in $ProtocolList)
-{
-  Write-Host " In 1st For loop"
-  foreach($key in $ProtocolSubKeyList)
-  {		
-      $currentRegPath = $registryPath + $Protocol + "\" + $key
-      Write-Host " Current Registry Path $currentRegPath"
+    foreach($Protocol in $ProtocolList)
+    {
+      Write-Host " In 1st For loop"
+      foreach($key in $ProtocolSubKeyList)
+      {		
+          $currentRegPath = $registryPath + $Protocol + "\" + $key
+          Write-Host " Current Registry Path $currentRegPath"
 
-      if(!(Test-Path $currentRegPath))
-      {
-          Write-Host "creating the registry"
-          New-Item -Path $currentRegPath -Force | out-Null			
+          if(!(Test-Path $currentRegPath))
+          {
+              Write-Host "creating the registry"
+              New-Item -Path $currentRegPath -Force | out-Null			
+          }
+          if($Protocol -eq "TLS 1.2")
+          {
+              Write-Host "Working for TLS 1.2"
+              New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
+              New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null
+
+          }
+          else
+          {
+              Write-Host "Working for other protocol"
+              New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
+              New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null
+          }
       }
-      if($Protocol -eq "TLS 1.2")
-      {
-          Write-Host "Working for TLS 1.2"
-          New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
-          New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null
+    }
 
-      }
-      else
-      {
-          Write-Host "Working for other protocol"
-          New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
-          New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null
-      }
-  }
-}
+    Exit 0
 
-Exit 0
-
-```
+    ```
 2. Set System Center to use only TLS 1.2
 
     Set the following registry key values. Before you modify it back up the registry for restoration.

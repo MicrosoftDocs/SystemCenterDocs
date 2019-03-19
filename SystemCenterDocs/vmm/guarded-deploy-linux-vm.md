@@ -17,7 +17,7 @@ This article describes how to deploy Linux shielded virtual machines in System C
 
 
 ## Shield a Linux VM
-Windows Server 2016 introduced the concept of a shielded VM for Windows OS based virtual machines (VMs). Shielded VMs provide protection against malicious administrator actions both when VM’s data is at rest or an untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
+Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines (VMs). Shielded VMs provide protection against malicious administrator actions both when VM’s data is at rest or an untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
 With Windows Server 1709, Hyper-V introduces the support for provisioning Linux shielded VMs. This is now available in VMM 1801
 
@@ -31,7 +31,6 @@ With Windows Server 1709, Hyper-V introduces the support for provisioning Linux 
 4.	Create a Linux shielded VM using the VM template and the PDK.
 
     >[!NOTE]
-
     > WAP users can provision Linux shielded VMs in the same manner as Windows shielded VMs.
 
 ### Create a template disk
@@ -63,7 +62,6 @@ Use the following steps:
     ```
 
     > [!NOTE]
-
     >  After this step, copy the templatized disk and the signed image to the VMM Library.  
 
 ## Create a Linux Shielded VM template in VMM
@@ -74,7 +72,6 @@ Use the following steps:
     - Under **Firmware**, select **Enable secure boot Template** and select **OpenSourceShieldedVM** from Secure boot template drop-down menu.
 
         > [!NOTE]
-
         > This boot template is a new addition to RS3 hosts. If there are no RS3 hosts already added to VMM, this option wouldn’t show up in the Secure boot templates drop-down.
 
     - Select required configuration for other hardware properties such as processors, memory, VM Network.
