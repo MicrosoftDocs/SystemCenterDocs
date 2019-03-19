@@ -80,26 +80,26 @@ Use the following steps:
 
     c.	Right-click  **Protocol** , point to **New**, and then click **Key**.
 
-  ![new registry key](./media/integration-pack-for-om/new-registry-key.png)
+    ![new registry key](./media/integration-pack-for-om/new-registry-key.png)
 
-  d.	Type **SSL 3**, and then press **Enter**.
+    d.	Type **SSL 3**, and then press **Enter**.
 
-  e.	Repeat steps c and d to create keys for TLS 0,
- TLS 1.1, and TLS 1.2. These keys resemble directories.
+    e.	Repeat steps c and d to create keys for TLS 0,
+    TLS 1.1, and TLS 1.2. These keys resemble directories.
 
- f.	Create a Client key and a Server key under each of the SSL 3, TLS 1.0, TLS 1.1, and TLS 1.2 keys.
+    f.	Create a Client key and a Server key under each of the SSL 3, TLS 1.0, TLS 1.1, and TLS 1.2 keys.
 
- g.	To enable a protocol, create the DWORD value under each Client and Server key as follows:
+    g.	To enable a protocol, create the DWORD value under each Client and Server key as follows:
 
- - DisabledByDefault [Value = 0]
- - Enabled [Value = 1]
+    - DisabledByDefault [Value = 0]
+    - Enabled [Value = 1]
 
- h. To disable a protocol, change the DWORD value under each client and server key as follows:
+    h. To disable a protocol, change the DWORD value under each client and server key as follows:
 
- - DisabledByDefault [Value = 1]
- - Enabled [Value = 0]
+    - DisabledByDefault [Value = 1]
+    - Enabled [Value = 0]
 
- i.	On the **File** menu, click **Exit**.
+    i.	On the **File** menu, click **Exit**.
 
 **Method 2: Automatically modify the registry**
 
@@ -145,9 +145,9 @@ Exit 0
 ```
 2. Set System Center to use only TLS 1.2
 
-Set the following registry key values. Before you modify it back up the registry for restoration.
+    Set the following registry key values. Before you modify it back up the registry for restoration.
 
-**For 64-bit operating systems:**
+    **For 64-bit operating systems:**
 
 | **Path** | **Registry key** | **Value** |
 | --- | --- | --- |
