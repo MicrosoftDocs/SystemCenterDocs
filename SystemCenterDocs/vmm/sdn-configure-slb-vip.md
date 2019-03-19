@@ -31,48 +31,47 @@ Ensure the following prerequisites are met:
 **Use the following steps**:
 
 1. Specify the affinity to logical networks.
-  - in VMM console click **Fabric** > **Network Service** > **Network Controller** > **Properties** > **Logical Network Affinity** page.
-  - Specify the Front-end and Back-end networks available for load balancing and click **OK**.
+   - In the VMM console, click **Fabric** > **Network Service** > **Network Controller** > **Properties** > **Logical Network Affinity** page.
+   - Specify the Front-end and Back-end networks available for load balancing and click **OK**.
 
-    ![affinity](media/slb-vip/affinity.png)
-
+     ![affinity](media/slb-vip/affinity.png)
 
 2. Create a VIP template.
    - In the VMM console click **Fabric** > **Create VIP Template**.
    -  In the **Load Balancer VIP Template Wizard** > **Name**, specify the template name and description.  
-    - In **Virtual IP port**, specify the port that will be used for the type of network traffic you want to balance.
-    - In **Backend port**, specify the port on which the backend server is listening for requests.
+   - In **Virtual IP port**, specify the port that will be used for the type of network traffic you want to balance.
+   - In **Backend port**, specify the port on which the backend server is listening for requests.
 
-        ![template properties](media/slb-vip/slb-properites.png)
+     ![template properties](media/slb-vip/slb-properites.png)
 
    - In **Type** , specify a template type, click **Specific**. Select **Microsoft** for Manufacturer. Select **Microsoft network controller** for Model. Click **Next**.
 
-        ![template type](media/slb-vip/template-type.png)
+     ![template type](media/slb-vip/template-type.png)
 
- - In **Protocol**, specify protocol options. Click **Next**.
+   - In **Protocol**, specify protocol options. Click **Next**.
 
-    ![protocol](media/slb-vip/protocol-options.png)
+     ![protocol](media/slb-vip/protocol-options.png)
 
-  - In **Load Balancing method**, select the method  and click **Next**.
+   - In **Load Balancing method**, select the method  and click **Next**.
 
-    ![load balancing method](media/slb-vip/load-balancing.png)
+     ![load balancing method](media/slb-vip/load-balancing.png)
 
    - In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, and monitoring interval, timeout, and retries. Note that the timeout should be less than the interval.
 
-  ![load balancing method](media/slb-vip/health-monitor.png)
+     ![load balancing method](media/slb-vip/health-monitor.png)
 
-  - In **Summary** , confirm the Settings and click **Finish** to create the VIP template.
+   - In **Summary**, confirm the Settings and click **Finish** to create the VIP template.
 
 3. Configure SLB VIP while deploying Service
-  - If the service template isn't open, click **Library** > **Templates** > **Service Templates** and open it.
-  - Click **Actions** > **Open Designer**.
-  - In the **Service Template Designer**, click the **Service Template Components group** > **Add Load Balancer**.
-  - Click the load balancer object. You'll identify it with the VIP template name.
-  - Click **Tool** > **Connector**. Click the Server connection associated with template and then click a NIC object to connect the load balancer to the adapter. In the **NIC properties**, check the address types and that the MAC address is static.
+   - If the service template isn't open, click **Library** > **Templates** > **Service Templates** and open it.
+   - Click **Actions** > **Open Designer**.
+   - In the **Service Template Designer**, click the **Service Template Components group** > **Add Load Balancer**.
+   - Click the load balancer object. You'll identify it with the VIP template name.
+   - Click **Tool** > **Connector**. Click the Server connection associated with template and then click a NIC object to connect the load balancer to the adapter. In the **NIC properties**, check the address types and that the MAC address is static.
 
     Note that the server connection must be connected to the Back-End network interface of the service. The back-end network interface can be connected to either a One Connected VM Network or a network virtualized VM Network.
 
- - With the Connector enabled,  click the client connection associated with the load balancer and then click a logical network object.
+  - With the Connector enabled,  click the client connection associated with the load balancer and then click a logical network object.
 
     > [!NOTE]
     > Client connection must be connected to a Front-End network of the load balancer. This can be a Public VM network or a network virtualized VM network. A network virtualized VM Network is used for internal load balancing scenarios.
