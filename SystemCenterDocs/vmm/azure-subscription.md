@@ -43,7 +43,6 @@ Here's what you need to add an Azure subscription in VMM:
 ::: moniker range="sc-vmm-1807"
 
 > [!NOTE]
-
 > To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create an Azure AD application using Azure portal and make note of Directory ID, Application ID and Key.
 
 ::: moniker-end
@@ -51,7 +50,6 @@ Here's what you need to add an Azure subscription in VMM:
 ::: moniker range="sc-vmm-1801"
 
 > [!NOTE]
-
 > To enable management of both Classic and ARM-based VMs, the subscription must have **Active Directory-based** authentication associated with it. Create an Azure AD application using Azure portal and make note of Directory ID, Application ID and Key.
 
 ::: moniker-end
