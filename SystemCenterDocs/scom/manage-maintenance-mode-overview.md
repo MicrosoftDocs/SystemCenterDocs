@@ -206,7 +206,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-To confirm that maintenance mode request is successful, look in the Operations Manager event log for event ID 2222 followed by an event with event ID 2223. In case event ID 2223 is not available, submit the maintenance mode request again.
+> To confirm that maintenance mode request is successful, look in the Operations Manager event log for event ID 2222 followed by an event with event ID 2223. In case event ID 2223 is not available, submit the maintenance mode request again.
 
 ::: moniker-end
 

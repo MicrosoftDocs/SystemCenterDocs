@@ -59,19 +59,18 @@ Ensure the following prerequisites are met:
 
    - In **Health Monitors**, you can optionally specify that a verification should run against the load balancer at regular intervals. To add a health monitor, specify the protocol and the request. For example, entering the command GET makes an HTTP GET request for the home page of the load balancer and checks for a header response. You can also modify the response type, and monitoring interval, timeout, and retries. Note that the timeout should be less than the interval.
 
-    ![load balancing method](media/slb-vip/health-monitor.png)
+  ![load balancing method](media/slb-vip/health-monitor.png)
 
-       - In **Summary** , confirm the Settings and click **Finish** to create the VIP template.
+  - In **Summary** , confirm the Settings and click **Finish** to create the VIP template.
 
 3. Configure SLB VIP while deploying Service
   - If the service template isn't open, click **Library** > **Templates** > **Service Templates** and open it.
-  -  Click **Actions** > **Open Designer**.
+  - Click **Actions** > **Open Designer**.
   - In the **Service Template Designer**, click the **Service Template Components group** > **Add Load Balancer**.
   - Click the load balancer object. You'll identify it with the VIP template name.
-  -  Click **Tool** > **Connector**. Click the Server connection associated with template and then click a NIC object to connect the load balancer to the adapter. In the **NIC properties**, check the address types and that the MAC address is static.
+  - Click **Tool** > **Connector**. Click the Server connection associated with template and then click a NIC object to connect the load balancer to the adapter. In the **NIC properties**, check the address types and that the MAC address is static.
 
-    > [!NOTE]
-    > Server connection must be connected to the Back-End network interface of the service. The back-end network interface can be connected to either a One Connected VM Network or a network virtualized VM Network.
+    Note that the server connection must be connected to the Back-End network interface of the service. The back-end network interface can be connected to either a One Connected VM Network or a network virtualized VM Network.
 
  - With the Connector enabled,  click the client connection associated with the load balancer and then click a logical network object.
 

@@ -44,8 +44,8 @@ You can active Service Manager 1801 and later using the product key from Console
 
 ## Activate  Service Manager through console
 
->![NOTE]
-> if the Evaluation Period has expired, you can activate SM only [through PowerShell](#activate-service-manager-through-powershell).
+> [!NOTE]
+> If the Evaluation Period has expired, you can activate SM only [through PowerShell](#activate-service-manager-through-powershell).
 
 1. From the SM console, go to **Help** > **About** and then click **Activate** at the bottom left of the **About** page.
 
