@@ -18,7 +18,6 @@ ms.topic: include
 The content in the following sections describe new features in System Center 1807 - Operations Manager.
 
 >[!NOTE]
-
 > To view the bugs fixed and the installation instructions for Operations Manager 1807, see [KB article 4133779](https://support.microsoft.com/help/4133779).
 
 ## Configure APM component during agent install or repair
