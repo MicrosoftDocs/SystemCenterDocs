@@ -10,6 +10,7 @@ ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
+monikerRange: '>=sc-om-2016'
 ---
 
 # System requirements for System Center Operations Manager

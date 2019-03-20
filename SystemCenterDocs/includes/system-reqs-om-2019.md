@@ -108,19 +108,19 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
-- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager components).
+- Operating System: See [Server Operating System requirements](#server-operating-system).
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
 ### Management server/Gateway server
 
-- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
+- Operating System: See [Server Operating System requirements](#server-operating-system).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Operations Manager console
 
-- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
+- Operating System: See [Server Operating System requirements](#server-operating-system).
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).
 
