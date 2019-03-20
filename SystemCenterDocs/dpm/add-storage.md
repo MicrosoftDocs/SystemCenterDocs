@@ -201,11 +201,13 @@ Follow these steps: :
   -	Add all the disks including SSDs to the storage pool.
   -	Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
 
-  > [!NOTE]
-  >  If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks  are added, they can only be a multiple of the number of columns.
+    > [!NOTE]
+    > - If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
+    > - For DPM running on virtual machines, expose the VHDs carved out of physical SSDs & HDDs of required size from the host computer to the VM, and use them as a tiered storage as explained above.
 
-The following image shows the check for disk type:
-![Check disk type ](./media/add-storage/media-type-check-2019.png)
+  The following image shows the check for disk type:
+
+  ![Check disk type ](./media/add-storage/media-type-check-2019.png)
 
 8. If the media-type for HDD or SSD disk is not recognized correctly, use the following command:
 
