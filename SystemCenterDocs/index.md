@@ -875,11 +875,11 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <div class="cardText">
                                                     <h3>System Center Release Notes</h3>
                                                     <p><a href="https://docs.microsoft.com/system-center/dpm/dpm-release-notes">DPM Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scom/release-notes-om">SCOM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scom/release-notes-1807">SCOM Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/orchestrator/release-notes-orch">Orchestrator Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/release-notes-sm">SM Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/release-notes-sma">SMA Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-spf">SPF Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-1801?view=sc-spf-1807">SPF Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/vmm/release-notes-vmm">VMM Release Notes</a></p>
                                                 </div>
                                             </div>
@@ -903,7 +903,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-in-orch">What's New in Orchestrator</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-in-sm">What's New in SM</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-in-sma">What's New in SMA</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-in-spf>What's New in SPF</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-in-spf">What's New in SPF</a></p>
                                                 </div>
                                             </div>
                                       </div>
