@@ -131,7 +131,7 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 
 ### Web console
 
-- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
+- Operating System: See [Server Operating System requirements](#server-operating-system).
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
@@ -165,7 +165,7 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 
 ### Operations Manager reporting server
 
-- Operating System: See [Server Operating System requirements](#software-requirements-for-operations-manager).
+- Operating System: See [Server Operating System requirements](#server-operating-system).
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
