@@ -274,7 +274,7 @@ To configure tempdb, you can run the following query or modify its properties in
     ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
     GO
 
-Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the waitresource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
+Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the waitre source may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
 
 If the previous recommendations do not significantly reduce the allocation contention and the contention is on SGAM pages, implement trace flag -T1118 in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages. Note that this trace flag affects every database on the instance of SQL Server.
 
@@ -302,7 +302,7 @@ Note In this configuration, N represents the number of processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across 5,000 Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the OperationsManager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across 5,000 Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 
@@ -314,7 +314,7 @@ Proactive monitoring of the growth of the operational and data warehouse databas
 
 ### Database autogrow
 
-When the databases file size that has been reserved on disk becomes full, SQL Server can automatically increase the size, by a percentage or by a fixed amount. Moreover, a maximum database size can be configured, to prevent filling up all the space available on disk.  By default, the OperationsManager database is not configured with autogrow enabled; only the Data Warehouse and ACS databases are.  
+When the databases file size that has been reserved on disk becomes full, SQL Server can automatically increase the size, by a percentage or by a fixed amount. Moreover, a maximum database size can be configured, to prevent filling up all the space available on disk.  By default, the Operations Manager database is not configured with autogrow enabled; only the Data Warehouse and ACS databases are.  
 
 Only rely on autogrow as a contingency for unexpected growth.  Autogrow introduces a performance penalty that should be considered when dealing with a highly transactional database.  Performance penalties include:
 
