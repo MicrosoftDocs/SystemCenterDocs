@@ -80,7 +80,6 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 ### SQL Server version support
 
 > [!NOTE]
-
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 **Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)**  | **SQL Server 2016 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | **SQL Server [2017](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017)**
@@ -90,7 +89,6 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 
 
   > [!NOTE]
-
   > System Center 1807 - Service Manager does not support the *MultiSubnetFailover* parameter. This parameter is not used in System Center 1807 - Service Manager connection strings.
 
 ### Allow updates
@@ -122,7 +120,6 @@ To help simplify upgrades, you can use Service Manager 1807 connectors with the 
 The following steps provide information about upgrading to SQL 2017.
 
  > [!NOTE]  
-
  > - With SM 1807, SQL 2017 is supported only if it is upgraded from SQL 2016. Fresh installation of SQL 2017 with SM 1807 is not supported.
  > -	Users with SM 1801 deployment and SQL 2016 needs to apply SM 1807 and then upgrade to SQL 2017 .
  > -	Upgrade process to SQL 2017 uninstalls the reporting services, ensure to migrate required reports such as   backup reporting DB and encryption keys.
