@@ -80,7 +80,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-configuration.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -99,7 +99,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-data-protection.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -118,7 +118,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-operations-manager.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -137,7 +137,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-orchestrator.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -156,7 +156,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-service-manager.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -175,7 +175,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-service-management.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -194,7 +194,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-virtual-machine.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -213,7 +213,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage bgdAccent1">
                                                         <img src="https://docs.microsoft.com/media/hubs/systemcenter/system-center-service-provider-foundation.svg" alt="" />
                                                     </div>
                                                 </div>
@@ -879,7 +879,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <p><a href="https://docs.microsoft.com/system-center/orchestrator/release-notes-orch">Orchestrator Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/release-notes-sm">SM Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/release-notes-sma">SMA Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-1801?view=sc-spf-1807">SPF Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/release-notes-spf">SPF Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/vmm/release-notes-vmm">VMM Release Notes</a></p>
                                                 </div>
                                             </div>
@@ -896,14 +896,14 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
-                                                    <h3>What's New articles in System Center 1807</h3>
+                                                    <h3>What's New articles in System Center 2019</h3>
                                                     <p><a href="https://docs.microsoft.com/system-center/dpm/what-s-new-in-dpm">What's New in DPM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scom/what-is-new-1807">What's New in SCOM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scom/whats-new-in-om">What's New in SCOM</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/vmm/whats-new-in-vmm">What's New in VMM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-1801?view=sc-orch-1807">What's New in Orchestrator</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-in-orch">What's New in Orchestrator</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-in-sm">What's New in SM</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-in-sma">What's New in SMA</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-1801?view=sc-spf-1807">What's New in SPF</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-in-spf">What's New in SPF</a></p>
                                                 </div>
                                             </div>
                                       </div>
