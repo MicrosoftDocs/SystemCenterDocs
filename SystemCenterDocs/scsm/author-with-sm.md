@@ -113,7 +113,6 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 ::: moniker range="sc-sm-1801"
 
 > [!NOTE]
-
 > Do not install the Service Manager Authoring tool on the same computer that has the Service Manager Web portal installed.
 
 ::: moniker-end    
@@ -121,7 +120,6 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 ::: moniker range="sc-sm-2016"
 
 > [!NOTE]
-
 > - Do not install the Service Manager Authoring tool on the same computer that has the Service Manager (SM) Web portal installed.
 > - Install at least Update Rollup 5 on the computer with SM management server/data warehouse management server/Service Manager console installed - if Service Manager Authoring tool is to be used on the same computer.   
 
