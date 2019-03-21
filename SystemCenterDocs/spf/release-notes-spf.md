@@ -21,6 +21,12 @@ This article lists the release notes for System Center 2019 - Service Provider F
 
 ::: moniker-end
 
+::: moniker range="sc-spf-1807"
+
+The release notes for System Center 1807 - Service Provider Foundation (SPF) is applicable for System Center 1801 - Service Provider Foundation (SPF).
+
+::: moniker-end
+
 ::: moniker range="sc-spf-1801"
 
 This article lists the release notes for System Center 1801 - Service Provider Foundation (SPF).
