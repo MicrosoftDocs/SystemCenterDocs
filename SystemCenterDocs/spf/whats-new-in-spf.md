@@ -20,6 +20,11 @@ This article details the new features supported in System Center 2019 - Service 
 
 ::: moniker-end
 
+::: moniker range="sc-spf-1807"
+
+No new features are introduced with System Center 1807 - Service Provider Foundation (SPF).
+
+::: moniker-end
 
 ::: moniker range="sc-spf-1801"
 
