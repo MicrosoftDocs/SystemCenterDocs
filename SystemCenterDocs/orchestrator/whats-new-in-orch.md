@@ -21,6 +21,12 @@ This article details the new features supported in System Center 2019 - Orchestr
 
 ::: moniker-end
 
+::: moniker range="sc-orch-1807"
+
+No new features are introduced with System Center 1807 - Orchestrator.
+
+::: moniker-end
+
 ::: moniker range="sc-orch-1801"
 
 This article details the new features supported in System Center 1801 - Orchestrator.
