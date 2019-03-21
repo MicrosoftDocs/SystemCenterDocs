@@ -59,12 +59,11 @@ You can set up a virtual switch extension manager (network manager) if you want 
 6. In **Uplink** add an uplink port profile, or [create a new one](../vmm/network-port-profile.md). When you add an uplink port profile, it is placed in a list of profiles that are available through that logical switch. However, when you apply the logical switch to a network adapter in a host, the uplink port profile is applied to that network adapter only if you select it from the list of available profiles.
 7. In **Summary** review the settings and click **Finish**. Verify the switch appears in **Logical Switches**.
 
-## Convert virtual switch to logical switch 
+## Convert virtual switch to logical switch
 
 If a host in the VMM fabric has a standard virtual switch, you can convert it to use as a logical switch.
 
 > [!NOTE]
-
 > - The following procedure is not applicable for SET, use the [script](#script-for-set-conversion) instead.
 > - Before you can convert, you need a logical switch in place, with specific settings.
 > - You must be a member of the Administrator user role, or a member of the Delegated Administrator user role, where the management scope includes the host group in which the Hyper-V host is located.
@@ -99,7 +98,6 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 ### Convert a host to use a logical switch
 
 > [!NOTE]
-
 > - The conversion will not interrupt network traffic.
 > - If any operation in the conversion fails, no settings will be changed, and the switch will not be converted.
 
@@ -113,7 +111,6 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 #### Script for SET switch conversion
 
 > [!NOTE]
-
 > Create a logical switch in VMM with the same name as the SET switch that is deployed on the host.
 > Standard switch will be converted to this logical switch after you run the following script on the host.
 
