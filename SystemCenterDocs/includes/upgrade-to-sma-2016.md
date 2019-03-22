@@ -23,10 +23,10 @@ The following sections provide details about how to upgrade SMA 2012 R2 to SMA 2
 
 ## Upgrade
 
-There is no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones.  You can keep the database which contains the runbooks and configuration settings intact.
+There is no in place upgrade for SMA servers, so you must uninstall the existing servers before installing the new ones.  You can keep the database, which contains the runbooks and configuration settings intact.
 
 > [!NOTE]
-When installing SMA with an existing database, you must install the worker servers before the web service.
+> When installing SMA with an existing database, you must install the worker servers before the web service.
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers.
