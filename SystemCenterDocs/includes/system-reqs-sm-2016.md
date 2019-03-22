@@ -112,7 +112,6 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 The following table summarizes the support for SQL Server 64-bit Enterprise and Standard versions.
 
 > [!NOTE]
-
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 
