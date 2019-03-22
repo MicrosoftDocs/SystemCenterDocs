@@ -919,14 +919,16 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
+                                                    <h3>System Center 2016 UR6</h3>
+                                                    <p><a href="https://support.microsoft.com/help/4469613/description-of-update-rollup-6-for-microsoft-system-center-2016">System Center</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4456327/update-rollup-6-for-system-center-2016-data-protection-manager">Data Protection Manager</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4459897/update-rollup-6-for-system-center-2016-operations-manager">Operations Manager</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4465567/update-rollup-6-for-system-center-2016-orchestrator">Orchestrator</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4463450/update-rollup-6-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
                                                     <h3>System Center 2016 UR5</h3>
-                                                    <p><a href="https://support.microsoft.com/help/4094946/description-of-update-rollup-5-for-microsoft-system-center-2016">System Center</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4090835/update-rollup-5-for-system-center-2016-data-protection-manager">Data Protection Manager</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4090987/update-rollup-5-for-system-center-2016-operations-manager">Operations Manager</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4094928/update-rollup-5-for-system-center-2016-orchestrator">Orchestrator</a></p>
+                                                    <p><a href="https://support.microsoft.com/help/4094946/description-of-update-rollup-5-for-microsoft-system-center-2016>System Center</a></p>
                                                     <p><a href="https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager">Service Manager</a></p>
                                                     <p><a href="https://support.microsoft.com/help/4094929/update-rollup-5-for-system-center-2016-service-management-automation">Service Management Automation</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4094925/update-rollup-5-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
                                                     </div>
                                             </div>
                                       </div>
