@@ -39,7 +39,6 @@ The following sections describe the hardware and software requirements for Syste
 ## SQL Server
 
 > [!NOTE]
-
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 **SQL version** | **Supported**

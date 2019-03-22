@@ -274,7 +274,11 @@ To configure tempdb, you can run the following query or modify its properties in
     ALTER DATABASE [tempdb] ADD FILE ( NAME = N'tempdb2', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\tempdb2.mdf' , SIZE = 2097152KB , FILEGROWTH = 512MB )
     GO
 
+<<<<<<< HEAD
 Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the waitre source may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
+=======
+Run the T-SQL query SELECT * from sys.sysprocesses to detect page allocation contention for the tempdb database.  In the system table output, the wait resource may show up as "2:1:1" (PFS Page) or "2:1:3" (Shared Global Allocation Map Page). Depending on the degree of contention, this may also lead to SQL Server appearing unresponsive for short periods.  Another approach is to examine the Dynamic Management Views [sys.dm_exec_request or sys.dm_os_waiting_tasks].  The results will show that these requests or tasks are waiting for tempdb resources, and have similar values as highlighted earlier when you execute the sys.sysprocesses query.  
+>>>>>>> 5fb2e511e5c92019374564670c5784dbd66366d4
 
 If the previous recommendations do not significantly reduce the allocation contention and the contention is on SGAM pages, implement trace flag -T1118 in the Startup parameters for SQL Server so that the trace flag remains in effect even after SQL Server is recycled. Under this trace flag, SQL Server allocates full extents to each database object, thereby eliminating the contention on SGAM pages. Note that this trace flag affects every database on the instance of SQL Server.
 
