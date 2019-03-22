@@ -65,7 +65,6 @@ We recommend the following software for a full installation of Orchestrator on a
 ## SQL Server
 
 > [!NOTE]
-
 > For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
 
 **SQL version** | **Supported**

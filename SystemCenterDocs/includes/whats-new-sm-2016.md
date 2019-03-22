@@ -237,7 +237,6 @@ A new console task *Open Activity in Progress*, was added for service requests a
 System Center 2016 - Service Manager includes the updates that support integration with Lync 2013 and Skype for Business in Microsoft Office suite 2013 and  2016. For information about contacting a user using Lync or Skype for Business, see [Contact a User from an Incident Form](../scsm/contact-user-from-incident.md).
 
 > [!NOTE]
-
 > Lync versions earlier to 2013 are not supported.
 
 ## Setup changes to support SQL AlwaysOn installation
