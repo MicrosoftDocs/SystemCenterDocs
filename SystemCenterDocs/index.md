@@ -925,10 +925,6 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <p><a href="https://support.microsoft.com/help/4459897/update-rollup-6-for-system-center-2016-operations-manager">Operations Manager</a></p>
                                                     <p><a href="https://support.microsoft.com/help/4465567/update-rollup-6-for-system-center-2016-orchestrator">Orchestrator</a></p>
                                                     <p><a href="https://support.microsoft.com/help/4463450/update-rollup-6-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
-                                                    <h3>System Center 2016 UR5</h3>
-                                                    <p><a href="https://support.microsoft.com/help/4094946/description-of-update-rollup-5-for-microsoft-system-center-2016>System Center</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4093685/update-rollup-5-for-system-center-2016-service-manager">Service Manager</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4094929/update-rollup-5-for-system-center-2016-service-management-automation">Service Management Automation</a></p>
                                                     </div>
                                             </div>
                                       </div>
