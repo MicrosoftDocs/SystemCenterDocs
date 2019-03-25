@@ -1,6 +1,6 @@
 ---
 ms.assetid: b430e393-bc76-481a-b2d3-4e1521b5ac8b
-title: System requirements for Service Management Automation
+title: System requirements for Service Management Automation.
 description: This article describes the software and hardware system requirements for System Center Service Management Automation.
 author: JYOTHIRMAISURI
 ms.author: V-jysur
@@ -52,4 +52,4 @@ This article details the system requirements for System Center 2016 - Service Ma
 ::: moniker-end
 
 ## Next steps
-[Deploy Service Management Automation](../sma/deploy.md) 
+[Deploy Service Management Automation](../sma/deploy.md)
