@@ -931,6 +931,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </div>
                             </li>
                             <li>
+                            <a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -940,19 +941,14 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Blogs</h3>
-                                                <p><a href="https://blogs.technet.microsoft.com/dpm/">DPM Team Blog</a></p>
-                                                <p><a href="https://blogs.technet.microsoft.com/momteam/">SCOM Team Blog</a></p>
-                                                <p><a href="https://blogs.technet.microsoft.com/orchestrator/">Orchestrator Team Blog</a></p>
-                                                <p><a href="https://blogs.technet.microsoft.com/orchestrator/tag/service-management-automation/">SMA Team Blog</a></p>
-                                                <p><a href="https://blogs.technet.microsoft.com/servicemanager/">SM Team Blog</a></p>
-                                                <p><a href="https://blogs.technet.microsoft.com/scvmm/">VMM Team Blog</a></p>
-                                            </div>
+                                                <h3>System Center Blog</h3>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
+                            <a href="https://techcommunity.microsoft.com/t5/System-Center/bd-p/SystemCenter">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -962,13 +958,8 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Forums</h3>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/home?category=dpm">DPM Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenteroperationsmanager">SCOM Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=systemcenterorchestrator">Orchestrator Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/ie/home?category=servicemanager">SM Forum</a></p>
-                                                <p><a href="https://social.technet.microsoft.com/Forums/systemcenter/home?category=virtualmachinemanager">VMM Forum</a></p>
-                                            </div>
+                                                <h3>System Center Conversations</h3>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
