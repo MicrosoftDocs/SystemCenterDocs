@@ -82,7 +82,7 @@ Use the following procedures:
 ### Install VMM 2019
 
 1.	In the main setup page, click **Install**.
-2.	In **Select features to install**, select the VMM management server and then click **Next**. The VMM console will be automatically installed.
+2.	In **Select features to install**, select the VMM management server, and then click **Next**. The VMM console will be automatically installed.
 3.	In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
 4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then click **Next**.

@@ -64,7 +64,7 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 
 ## Storage Dynamic Optimization does not trigger VHD migration even when optimization criteria are met
 
-**Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV),  when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases the VHDs might not be migrated even if all other Storage DO conditions are met.
+**Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV),  when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases, the VHDs might not be migrated even if all other Storage DO conditions are met.
 
 **Workaround**: To ensure Storage migration is triggered, do the following:
 1.	Check the *HostVolumeID* using *Get-SCStorageVolume* cmdlet. If the *HostVolumeID* returns Null for the volume, refresh the VM and perform Storage DO again.

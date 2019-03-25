@@ -169,7 +169,7 @@ With the advent of the software defined network (SDN), in Windows Server 2016 an
 
 With the introduction of the SDN, VMs which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
 
-VMM also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1801 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
+VMM also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1801 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB, and all the traffic directed to the VIP is routed to the active node.
 . [Learn more](../vmm/sdn-guest-clusters.md).
 
 ### Configuration of  SLB VIPs through VMM service templates
