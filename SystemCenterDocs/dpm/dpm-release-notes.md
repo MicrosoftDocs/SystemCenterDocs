@@ -90,7 +90,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Description**: When upgrading a Hyper-V VM from Windows Server 2012 R2 to Windows Server 2016, two versions of the VM appear in the Create Protection Group wizard.
 
-**Workaround**: For the protected VMs which are about to be upgraded, make sure to stop protection with retain data before upgrading the VM. Then, upgrade the VM and reprotect it in a new protection group. While configuring reprotection, do a refresh on the VM host for DPM to detect the VM upgrade and protect it as RCT VM..
+**Workaround**: For the protected VMs which are about to be upgraded, make sure to stop protection with retain data before upgrading the VM. Then, upgrade the VM and reprotect it in a new protection group. While configuring reprotection, do a refresh on the VM host for DPM to detect the VM upgrade and protect it as RCT VM.
 
 ### Restoration of a previous version for an upgraded Hyper-V VM causes future recovery points to fail
 
@@ -452,4 +452,4 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - If you would like to consult planning information for your environment, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
 
-- See these KBs for ReFS specific issues - [KB4016173](https://support.microsoft.com/en-us/help/4016173/fix-heavy-memory-usage-in-refs-on-windows-server-2016-and-windows-10), [KB4035951](https://support.microsoft.com/en-us/help/4035951/refs-volume-using-dpm-becomes-unresponsive-on-windows-server-2016)
+- See these KBs for ReFS specific issues - [KB4016173](https://support.microsoft.com/en-us/help/4016173/fix-heavy-memory-usage-in-refs-on-windows-server-2016-and-windows-10), [KB4035951](https://support.microsoft.com/en-us/help/4035951/refs-volume-using-dpm-becomes-unresponsive-on-windows-server-2016).
