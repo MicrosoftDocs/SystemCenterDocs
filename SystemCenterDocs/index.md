@@ -941,7 +941,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Blogs</h3>
+                                                <h3>System Center Blog</h3>
                                                 </div>
                                         </div>
                                     </div>
