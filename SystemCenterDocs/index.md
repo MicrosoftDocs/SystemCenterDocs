@@ -931,6 +931,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </div>
                             </li>
                             <li>
+                            a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -941,13 +942,13 @@ description: System Center documentation for versions 2016 and above. The docume
                                             </div>
                                             <div class="cardText">
                                                 <h3>System Center Blogs</h3>
-                                                <p><a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog">Click here to view and contribute to the System Center blog space</a></p>
                                                 </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
+                            <a href="https://techcommunity.microsoft.com/t5/System-Center/bd-p/SystemCenter">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -958,7 +959,6 @@ description: System Center documentation for versions 2016 and above. The docume
                                             </div>
                                             <div class="cardText">
                                                 <h3>System Center Conversations</h3>
-                                                <p><a href="https://techcommunity.microsoft.com/t5/System-Center/bd-p/SystemCenter">Click here to view and participate in the System Center conversations</a></p>
                                                 </div>
                                         </div>
                                     </div>
