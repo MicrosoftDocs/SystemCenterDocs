@@ -940,7 +940,8 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Blogs<a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog"></h3>
+                                                <h3>System Center Blogs</h3>
+                                                <p><a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog">Click here to view and contribute to the System Center blog space</a></p>
                                                 </div>
                                         </div>
                                     </div>
@@ -956,7 +957,8 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>System Center Conversations<a href="https://techcommunity.microsoft.com/t5/System-Center/bd-p/SystemCenter"></h3>
+                                                </h3>System Center Conversations</h3>
+                                                <p><a href="https://techcommunity.microsoft.com/t5/System-Center/bd-p/SystemCenter">Click here to view and participate in the System Center conversations</a></p>
                                                 </div>
                                         </div>
                                     </div>
