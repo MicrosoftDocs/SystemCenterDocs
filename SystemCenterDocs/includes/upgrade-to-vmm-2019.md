@@ -164,7 +164,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 1. Backup and retain the VMM database.
 2.	Add the same number of additional servers (with Windows Server 2019/2016 Management OS) that equals to the server  number present in the HA cluster.
 3. Install Windows 10 version of the ADK on the newly added 2019 servers.
-4. Install VMM 2019 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-VMM-servers).    
+4. Install VMM 2019 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).    
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.
 7. Remove 2016 nodes from the cluster after failover.
