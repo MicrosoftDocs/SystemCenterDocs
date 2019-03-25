@@ -931,7 +931,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                 </div>
                             </li>
                             <li>
-                            a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog">
+                            <a href="https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog">
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
