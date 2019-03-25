@@ -62,7 +62,7 @@ The following sections summarize the release notes for VMM 2019 and include the 
 
 To avoid this issue, prior to CRU triggering, ensure to install the latest OS updates on the VHD that you want to use for CRU.  
 
-##Storage Dynamic Optimization does not trigger VHD migration even when optimization criteria are met
+## Storage Dynamic Optimization does not trigger VHD migration even when optimization criteria are met
 
 **Description**: Storage Dynamic Optimization (DO) should trigger the VHD migration between Clustered Shared Volumes (CSV),  when the free storage space in one of the CSVs falls below the disk space threshold set in the Dynamic Optimization page, and the aggressiveness criteria are met. However, in some cases the VHDs might not be migrated even if all other Storage DO conditions are met.
 

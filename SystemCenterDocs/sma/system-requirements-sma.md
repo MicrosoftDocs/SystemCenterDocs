@@ -52,4 +52,4 @@ This article details the system requirements for System Center 2016 - Service Ma
 ::: moniker-end
 
 ## Next steps
-[Deploy](../sma/deploy.md) Service Management Automation
+[Deploy Service Management Automation](../sma/deploy.md) 
