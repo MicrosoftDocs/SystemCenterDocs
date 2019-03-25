@@ -957,7 +957,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                </h3>System Center Conversations</h3>
+                                                <h3>System Center Conversations</h3>
                                                 <p><a href="https://techcommunity.microsoft.com/t5/System-Center/bd-p/SystemCenter">Click here to view and participate in the System Center conversations</a></p>
                                                 </div>
                                         </div>
