@@ -17,7 +17,7 @@ See the following sections for information about the new features/features updat
 
 ## Support to SQL 2017
 SM 2019 supports new installation of SQL Server 2017.
-[Learn more](../scsm/system-requirements.md)
+[Learn more](../scsm/system-requirements.md).
 
 ##	Improvement in Active Directory Connector
 The Active Directory (AD) connector has been improvised to synchronize with a specific domain controller. You may now, specify the domain controller in the LDAP query of the Active Directory connector.
@@ -39,7 +39,7 @@ This release of System Center Service Manager contains all the bug fixes shipped
 ## Support to SQL 2017 feature pack
 
 You can upgrade SQL server 2016 to SQL 2017.
-[Learn more](../scsm/system-requirements.md)
+[Learn more](../scsm/system-requirements.md).
 
 > [!NOTE]
 > The following feature was introduced in Service Manager 1801, included in 2019.
@@ -48,4 +48,4 @@ You can upgrade SQL server 2016 to SQL 2017.
 
 SM supports an enhanced experience for evaluating Service Manager and activating the product for retail use.  
 
-The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. With Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM. [Learn more](../scsm/sm-license.md)
+The evaluation version of Service Manager can be installed and used for 180 days. in SM 2016, after an evaluation version is installed, there was no option to view the remaining days for the evaluation period. With Service Manager 1801 and later, you can view the information about the evaluation period, and accordingly activate your SM. [Learn more](../scsm/sm-license.md).

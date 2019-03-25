@@ -82,9 +82,9 @@ Use the following procedures:
 ### Install VMM 2019
 
 1.	In the main setup page, click **Install**.
-2.	In **Select features to install**, select the VMM management server and then click **Next**. The VMM console will be automatically installed.
+2.	In **Select features to install**, select the VMM management server, and then click **Next**. The VMM console will be automatically installed.
 3.	In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
-4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement **check box, and then click **Next**.
+4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement** check box, and then click **Next**.
 5.	In **Usage and Connectivity Data**, select either of the options, and then click **Next**.
 6.	If **Microsoft Update** page appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
 7.	In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**.
@@ -164,7 +164,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 1. Backup and retain the VMM database.
 2.	Add the same number of additional servers (with Windows Server 2019/2016 Management OS) that equals to the server  number present in the HA cluster.
 3. Install Windows 10 version of the ADK on the newly added 2019 servers.
-4. Install VMM 2019 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode- upgrade-with-no-additional-VMM-servers).    
+4. Install VMM 2019 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).    
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.
 7. Remove 2016 nodes from the cluster after failover.

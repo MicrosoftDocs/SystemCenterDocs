@@ -20,7 +20,7 @@ The following sections summarize the release notes for Operations Manager 2019 a
 **Description:**
 With Operations Manager 2019, *Log on as a Service* feature is enabled by default. This change impacts all the service accounts and Run As accounts, they must have *Log on as a Service* permission.  
 
-**Workaround:** Enable log on as a service permission for these accounts. [Learn more](../scom/enable-service-logon.md)
+**Workaround:** Enable log on as a service permission for these accounts. [Learn more](../scom/enable-service-logon.md).
 
 ## User experience changes in maintenance mode
 
@@ -63,7 +63,7 @@ This error occurs in a distributed management group scenario, where the reportin
 
 **Workaround**: We have added support for OpenSSL 1.1.0.
 
-## Performance monitoring for VMM server fails with Access denied message.
+## Performance monitoring for VMM server fails with Access denied message
 **Description**: Service users do not have permission to access VirtualMachineManager-Server/Operational event log.
 **Workaround**: Change the Security Descriptor for operational event log registry with the command below, and then restart event log service and health log service.
 

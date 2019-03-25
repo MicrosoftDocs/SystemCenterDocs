@@ -48,7 +48,7 @@ The existing alert notifications and subscription experience in Operations Manag
 
 - **Intuitive Email notifications** - Operations Manager 2019 supports email notifications in HTML format. [Learn more](../scom/manage-notifications-create-email-channel.md#create-an-email-notification-in-html-format).
 
-- **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria.[Learn more](../scom/manage-notifications-create-subscriptions.md).
+- **Enhanced Criteria Builder** - You may now use the regular expressions to build a complex yet useful subscription criteria. [Learn more](../scom/manage-notifications-create-subscriptions.md).
 
 ## Management server failover support for Linux and UNIX monitoring
 Failover of the management server in a resource pool supporting monitoring of a workload ensures high availability and fault tolerance. In earlier versions of Operations Manager, when a primary management server fails and another management server takes over the role of the primary management server in the pool, the existing monitor-based alerts in Operations Manager are closed and new alerts are created for the same condition. In deployments where the Operations Manager is integrated with an incident management system, these new alerts lead to new tickets or incidents being created.
@@ -128,7 +128,7 @@ For information about  SQL Server Design Considerations, see [related documentat
 The existing URL monitoring capability has been enhanced. With this improvement, Operations Manager will not ignore the server certificate errors (like server certificate CN, expiry date, untrusted CA, and wrong usage) by default. If you wish to monitor websites that do not have a valid SSL certificate, select *Ignore Server Certificate Errors* checkbox in your Web application *Properties*. [Learn more](../scom/web-application-properties.md).
 
 ## Updates and Recommendation feature for Linux
-**Updates and Recommendations** feature, which was available for Windows workloads, is now extended for Linux workloads. This feature helps you to proactively identify workloads, deployed on your Linux computers that were not monitored by Operations Manager or are not monitored using the latest version of management pack (MP). [Learn more](../scom/manage-mp-mpassessment.md).
+**Updates and Recommendations** feature, which was available for Windows workloads, is now extended for Linux workloads. This feature helps you to proactively identify workloads, deployed on your Linux computers that were not monitored by Operations Manager or are not monitored using the latest version of Management Pack (MP). [Learn more](../scom/manage-mp-mpassessment.md).
 
 If there are MPs in the catalog that are designed to monitor those workloads, they will be displayed on the **Updates and Recommendations** page. You will also find a list of any updates that are available for the management packs that are installed in your management group.
 
@@ -174,7 +174,7 @@ You can now use a Linux agent with FluentD support for log file monitoring at pa
 - Support for generic Fluentd plugins published by the fluentd community. [Learn more](../scom/manage-linux-logfiles.md).
 
 ## System Center Visual Studio Authoring Extension (VSAE) support for Visual Studio 2017
-Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. management pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.
+Visual Studio Authoring Extension (VSAE) is now updated to be compatible with Visual Studio(VS) 2017. Management Pack (MP) developers can continue using it with the latest version of Visual Studio to create custom management packs and use one of the MP templates provided, or edit an existing MP.
 
 ## Enhanced SDK client performance
 We have introduced performance improvements in the Operations console that typically prevent the console from responding while a new management pack is being imported or deleted, or a configuration change to an MP is saved.  

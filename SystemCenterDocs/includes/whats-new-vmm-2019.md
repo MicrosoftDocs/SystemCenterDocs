@@ -17,7 +17,7 @@ See the following sections for detailed information about the new features/featu
 ## Compute
 
 ###	Cluster Rolling upgrade for S2D clusters
-System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. [Learn More](../vmm/hyper-v-rolling-upgrade.md)
+System Center 2019 - Virtual Machine Manager (VMM) supports rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. [Learn More](../vmm/hyper-v-rolling-upgrade.md).
 
 ### Support for deduplication for ReFS volume
 VMM 2019 supports deduplication for ReFS volume on WS 2019 hyper-converged cluster and SOFS. [Learn more](../vmm/hyper-v-storage.md).
@@ -107,7 +107,7 @@ VMM supports update of an S2D host or a cluster. You can update individual S2D h
 ## Others
 
 ### Support for SQL 2017
-VMM supports SQL 2017. You can upgrade SQL 2016 to 2017. 
+VMM supports SQL 2017. You can upgrade SQL 2016 to 2017.
 
 > [!NOTE]
 > The following features/feature updates were introduced in VMM 1801, included in VMM 2019.
@@ -117,7 +117,7 @@ VMM supports SQL 2017. You can upgrade SQL 2016 to 2017.
 ### Nested virtualization
 VMM  supports Nested Virtualization feature that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
-You can leverage this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third- party virtualization management products with Microsoft hypervisor.
+You can leverage this functionality to reduce your infrastructure expense for development, test, demo, and training scenarios. This feature also allows you to use third-party virtualization management products with Microsoft hypervisor.
 
 You can enable or disable the nested virtualization feature using VMM. You can configure the VM as a Host in VMM and perform host operations from VMM on this VM. For example, VMM dynamic optimization considers a nested VM host for placement.  [Learn more](../vmm/vm-nested-virtualization.md).
 
@@ -169,7 +169,7 @@ With the advent of the software defined network (SDN), in Windows Server 2016 an
 
 With the introduction of the SDN, VMs which are connected to the virtual network using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design, supports the floating IP functionality through the Software Load Balancer (SLB), like Azure networking.
 
-VMM also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1801 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB and all the traffic directed to the VIP is routed to the active node.
+VMM also supports the floating IP functionality through the Software Load Balancer (SLB) in the SDN scenarios. VMM 1801 supports guest clustering through an Internal Load Balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB, and all the traffic directed to the VIP is routed to the active node.
 . [Learn more](../vmm/sdn-guest-clusters.md).
 
 ### Configuration of  SLB VIPs through VMM service templates
