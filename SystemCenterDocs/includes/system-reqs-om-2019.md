@@ -83,29 +83,6 @@ The following versions of Windows Server operating system are supported for the 
 | **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes | yes |yes |yes|
 | **Operations Manager** Reporting server | yes | |yes | ||
 
-
-
-### Client operating system
-
-Windows 10 client operating system is supported for the Operations Manager 2019 Operations console.
-
-### Microsoft Monitoring Agent operating system
-
->[!NOTE]
-> Operations Manager 2019 only includes the 64-bit version of the agent.
-
-- Windows Server 2019 - Standard, Datacenter, Server Core
-- Windows Server 2016 - Standard, Datacenter, Server Core
-- Windows Server 2012 R2 - Standard, Datacenter, Server Core
-- Windows 10 - Enterprise, Pro
-- File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
-- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
-- Microsoft .NET Framework 3.5 or later.
-
-    > [!NOTE]
-    > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
-    > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
-
 ### Operations Manager operational, data warehouse, and ACS audit database
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
@@ -174,6 +151,27 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
     > System Center 2016 – Operations Manager and later supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
 
 - NET Framework 4 or .NET Framework 4.5 is required.
+
+## Client operating system
+
+Windows 10 client operating system is supported for the Operations Manager 2019 Operations console.
+
+## Microsoft Monitoring Agent operating system
+
+>[!NOTE]
+> Operations Manager 2019 only includes the 64-bit version of the agent.
+
+- Windows Server 2019 - Standard, Datacenter, Server Core
+- Windows Server 2016 - Standard, Datacenter, Server Core
+- Windows Server 2012 R2 - Standard, Datacenter, Server Core
+- Windows 10 - Enterprise, Pro
+- File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
+- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+- Microsoft .NET Framework 3.5 or later.
+
+    > [!NOTE]
+    > Windows PowerShell is required for local collection of IntelliTrace logs, and to run System Center Operations Manager management packs that use PowerShell scripts.
+    > Microsoft .NET Framework 3.5 or later is required for local collection of IntelliTrace logs and .NET Application Performance Monitoring.
 
 ## Virtualization
 

@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2017
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
@@ -238,7 +238,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 ## <a name="BKMK_Data"></a>Data protection issues
 
 ### DPM does not back up shared VHDX
-**Issue**: Backup programs that use the Hyper-V VSS writer can't back up volumes that are backed up by VHDs which are potentially attached to other VMs.
+**Issue**: DPM cannot backup VMs using shared drives (which are potentially attached to other VMs) as Hyper-V VSS writer cannot back up volumes that are backed up by shared VHDs.
 
 **Workaround**: To avoid potential data loss, use another method to back up data on the shareable VHD.
 
