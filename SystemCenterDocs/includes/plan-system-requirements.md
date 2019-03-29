@@ -14,7 +14,7 @@ ms.topic: include
 
 ## System requirements for System Center Operations Manager
 
-The topic describes general performance and scalability guidance for System Center 2016 - Operations Manager and higher.  It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+The topic describes general performance and scalability guidance for System Center 2016, 1801 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
 
 ## Capacity limits for Operations Manager
 
@@ -107,19 +107,19 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Operating System: See [Server Operating System requirements](#server-operating-system).   
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
 ### Management server/Gateway server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Operating System: See [Server Operating System requirements](#server-operating-system).   
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Operations Manager console
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
+- Operating System: See [Server Operating System requirements](#server-operating-system).     
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).  
 
@@ -130,7 +130,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ### Web console
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
+- Operating System: See [Server Operating System requirements](#server-operating-system).  
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
@@ -167,7 +167,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ### Operations Manager reporting server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Operating System: See [Server Operating System requirements](#server-operating-system).   
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).

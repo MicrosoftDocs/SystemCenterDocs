@@ -1,8 +1,8 @@
 ---
-title: Active Directory Integration Pack for System Center 2016 - Orchestrator
-description: The Integration Pack for Active Directory is an add-on for System Center 2016 - Orchestrator that enables you to automate common Active Directory management functions.
+title: Active Directory Integration Pack for System Center - Orchestrator
+description: The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 03/28/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,17 +15,17 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Active Directory Integration Pack for System Center 2016 - Orchestrator
+# Active Directory Integration Pack for System Center - Orchestrator
 
-The Integration Pack for Active Directory is an add-on for System Center 2016 - Orchestrator that enables you to automate common Active Directory management functions.
+The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
 Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
 
--   System Center 2016 integration packs require System Center 2016 - Orchestrator.
+-   System Center integration packs require System Center - Orchestrator.
 -   Windows Server 2016 Active Directory, Windows Server 2012 R2 Active Directory, Windows Server 2012 Active Directory, Windows Server 2008 R2 Active Directory, Windows Server 2008 Active Directory, Windows Server 2003 R2 Active Directory, or Windows Server 2003 Active Directory.
 
 ## Downloading the Integration Pack
