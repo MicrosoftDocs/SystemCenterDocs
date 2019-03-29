@@ -107,19 +107,19 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Operating System: See [Server Operating System requirements](#server-operating-system).   
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
 ### Management server/Gateway server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Operating System: See [Server Operating System requirements](#server-operating-system).   
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
 - NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Operations Manager console
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).     
+- Operating System: See [Server Operating System requirements](#server-operating-system).     
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).  
 
@@ -130,7 +130,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ### Web console
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).  
+- Operating System: See [Server Operating System requirements](#server-operating-system).  
 - Client web browser for Silverlight-enabled dashboards:  For backwards compatibility with Silverlight-enabled dashboards, Internet Explorer 11 and Silverlight 5 is required.
 
     >[!NOTE]
@@ -167,7 +167,7 @@ Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Wi
 
 ### Operations Manager reporting server
 
-- Operating System: See [Server Operating System requirements](#server-operating-system-requirements).   
+- Operating System: See [Server Operating System requirements](#server-operating-system).   
 - Microsoft SQL Server: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 - Remote Registry Service: Must be enabled and started.
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
