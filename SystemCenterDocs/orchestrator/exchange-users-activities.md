@@ -44,7 +44,7 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. The connections that are displayed in the list have been previously configured as described in <span>Exchange Users Integration Pack for System Center 2016 - Orchestrator</span>.
+2.  Select the applicable connection name. The connections that are displayed in the list have been previously configured as described in <span>Exchange Users Integration Pack for System Center - Orchestrator</span>.
 
 ### Filter Behavior
 
@@ -72,7 +72,7 @@ By default, the data from the **Get** activity will be passed on as multiple ind
 
 -   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files for the output.
 -   **Separate with**. Each item is separated by one or more characters of your choice.
--   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications. 
+-   **Use CSV format**. All items are in CSV (comma-separated value) format. This format is useful for importing data into spreadsheets or other applications.
 
 The activity will produce a new set of data every time it runs. The **Flatten** feature does not flatten data across multiple instances of the same activity.
 

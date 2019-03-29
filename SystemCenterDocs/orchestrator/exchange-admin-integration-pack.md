@@ -1,8 +1,8 @@
 ---
-title: Exchange Admin Integration Pack for Orchestrator in System Center 2016
-description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
+title: Exchange Admin Integration Pack for Orchestrator in System Center
+description: Integration packs are add-ons for System Center - Orchestrator, a component of System Center.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 03/28/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,19 +15,19 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# Exchange Admin Integration Pack for Orchestrator in System Center 2016
+# Exchange Admin Integration Pack for Orchestrator in System Center
 
-Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third party products.
+Integration packs are add-ons for System Center - Orchestrator, a component of System Center. Integration packs help to optimize IT operations across heterogeneous environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and other third party products.
 
 The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Office 365.
 
-Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
 Before you implement the Integration Pack for Exchange Admin, the following listed software must be installed. For more information about installing and configuring Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
--   System Center 2016 - Orchestrator or Orchestrator in System Center 2016
+-   System Center - Orchestrator for the version of  System Center you are using
 -   Microsoft .NET Framework 3.5 Service Pack 1
 -   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Office 365
 -   Microsoft Exchange Management Shell
@@ -116,4 +116,3 @@ On the Exchange server, make sure that PowerShell does not require SSL:
 2.  Navigate to the **PowerShell** site.
 3.  Open **SSL Settings**.
 4.  Make sure that the **Require SSL check box** is not selected.
-
