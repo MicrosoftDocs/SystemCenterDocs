@@ -1,8 +1,8 @@
 ---
-title: Windows Azure Integration Pack for Orchestrator in System Center 2016
-description: The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center 2016 that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using the '2012-03-01' version of the Windows Azure Service Management REST API.
+title: Windows Azure Integration Pack for Orchestrator in System Center
+description: The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using Windows Azure Service Management REST API.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 03/28/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,17 +15,17 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Windows Azure Integration Pack for Orchestrator in System Center 2016
+# Windows Azure Integration Pack for Orchestrator in System Center
 
-The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center 2016 that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using the '2012-03-01' version of the Windows Azure Service Management REST API.
+The Integration Pack for Windows Azure is an add-on for Orchestrator in System Center that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines using the '2012-03-01' version of the Windows Azure Service Management REST API.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2012 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
 Before you install the Integration Pack for Windows Azure, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and Windows Azure, refer to the respective product documentation.
 
--   Orchestrator in System Center 2016
+-   Orchestrator in System Center (version you are using)
 -   Windows Azure
 
 ## Download the Integration Pack
