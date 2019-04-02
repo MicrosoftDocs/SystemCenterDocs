@@ -17,7 +17,7 @@ You might want to change the Orchestrator users group after installation because
 ## PermissionsConfig tool  
 You can change the Orchestrator Users group by using the PermissionsConfig tool, which is located on the management server in **<InstallDir>\\Management Server**. The syntax of this tool is as follows:  
 
-**PermissionsConfig-OrchestratorUsersGroup***GroupName***-OrchestratorUser***UserName***\-remote**  
+**PermissionsConfig-OrchestratorUsersGroup**_GroupName_**-OrchestratorUser**_UserName_**\-remote**  
 
 Note that the PermissionsConfig tool does not send results to standard output. To view the results of the command, check the **%errorlevel%** in the Orchestrator log file that is located at **C:\\Users\\SCXSVC\\AppData\\Local\\SCO\\LOGS**. The results are 1 for failure, 0 for success.  
 
