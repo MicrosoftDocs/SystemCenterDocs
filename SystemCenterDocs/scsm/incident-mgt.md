@@ -250,7 +250,7 @@ Use the following procedures to configure your Microsoft Exchange Server infrast
 8.  Click **Add**, and in the **Add SMTP Server** dialog box, type the FQDN of the SMTP server that you want to use. For example, type **Exchange.domain.com**, and replace the information with your Exchange domain name information.
 9. In **Port number**, type or select the SMTP port number that you want to use. For example, select **25**.
 10. In **Authentication method**, click **Anonymous**, and then click **OK**.
-11. In **Return e-mail address**, type the email address of the service account that was used during Setup. For example, type **Helpdek@Servername.domain.com**.
+11. In **Return e-mail address**, type the email address of the service account that was used during Setup. For example, type **Helpdek\@Servername.domain.com**.
 12. In **Retry primary after**, type or select the number of seconds that you want Service Manager to wait before trying to resend outgoing email notifications. For example, select **25**.
 13. Click **OK** to close the dialog box.
 
@@ -297,7 +297,7 @@ In the following procedures, you configure Exchange Server for use with Service 
 3.  In the New Mail Contact Wizard, click **New contact**, and then click **Next**.
 4.  In **Name**, type the name that you want to use as the Service Manager return email address, without @domain.com. For example, type **Helpdesk**.
 5.  In **Alias**, type the name that you want users to use as the **Email Alias** name. For example, type **Helpdesk**.
-6.  Edit the **External e-mail address**, and type the FQDN for the email address. For example, type **helpdesk@server.domain.com**.
+6.  Edit the **External e-mail address**, and type the FQDN for the email address. For example, type **helpdesk\@server.domain.com**.
 7.  Click **Next**, and then click **New** to complete the wizard.
 
 #### To test email functionality between the SMTP server and the Exchange server
