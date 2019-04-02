@@ -47,7 +47,7 @@ You can use the following procedures to configure notification channels and vali
 6.  Click **Add**. In the **Add SMTP Server** dialog box, type the fully qualified domain name (FQDN) of the SMTP server that you want to use. For example, type **Exchange01.Woodgrove.Com**.
 7.  In the **Port number** box, type or select the SMTP port number that you want to use. For example, select **25**.
 8.  In the **Authentication method** box, select either **Anonymous** or **Windows Integrated**. For example, select **Anonymous**. Then, click **OK**.
-9. In the **Return e-mail address** box, type the email address of the service account that is used during setup. For example, type **smadmin@woodgrove.com**.
+9. In the **Return e-mail address** box, type the email address of the service account that is used during setup. For example, type **smadmin\@woodgrove.com**.
 10. In the **Retry primary after** box, type or select the number of seconds that you want Service Manager to wait before it tries to resend outgoing email notifications. For example, select **25**.
 11. Click **OK** to close the dialog box.
 
