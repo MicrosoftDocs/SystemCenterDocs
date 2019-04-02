@@ -44,7 +44,7 @@ You can use service templates to create a guest cluster . That cluster can then 
     - For each script, specify the executable name and the parameters through which the script will run, and the RunAs account.
     - Configure other settings as needed, including how long the script should run before timing out, failure and restart policies.
     - A script can contain settings to be entered when you are configuring the service for deployment. To format this type of setting, type the parameter in the **Parameters** field in the following format: @<SettingLabel>@ (for example, type @ClusterName@).
-    - Example: a script FormCluster.exe that runs with Cmd.exe and the /q and /c parameters and requires the cluster name would be Executable Program: **Cmd.exe**, Parameters: **/q** **/c** **FormCluster.cmd** **@ClusterName@**
+    - Example: a script FormCluster.exe that runs with Cmd.exe and the /q and /c parameters and requires the cluster name would be Executable Program: **Cmd.exe**, Parameters: **/q** **/c** **FormCluster.cmd** **\@ClusterName@**
     - You can also add scripts to delete the cluster in an orderly way. **Script command type** would be **Deletion: VMs Before Last** or **Deletion: Last VM**.
     - You can also add a script of type **Pre-Install** that will run on the first VM and on later VMs that are created as part of the service tier.
 1. Click **OK** to save settings and verify that the profile was created in **Profiles** > **Application Profiles**. The profile will appear in the **Profiles** pane.

@@ -240,7 +240,7 @@ In Service Manager, incidents are automatically created from email requests by u
 
 ### To create a new incident by email  
 
-1.  In an email program, create a new email message, and enter the help desk alias or email address in the **To** box. For example, enter **Helpdesk@Helpdesk.Woodgrove.com** in the **To** box.  
+1.  In an email program, create a new email message, and enter the help desk alias or email address in the **To** box. For example, enter **Helpdesk\@Helpdesk.Woodgrove.com** in the **To** box.  
 2.  In the **Subject** box, type a subject. For example, enter **Unable to print checks**.  
 3.  In the message body, type additional information that the help desk analyst can use to correct the problem. For example, enter **The check printer has a paper jam. I will use a backup printer until the jam is fixed**.  
 4.  Optionally, attach files that the help desk analyst can use to correct the problem.  
