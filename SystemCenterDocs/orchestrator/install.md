@@ -176,7 +176,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 5.  Your computer is checked for required hardware and software. If your computer meets all of the requirements, the **All prerequisites are installed** page appears. Click **Next** and proceed to the next step.
 
-    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
     1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
@@ -240,13 +240,13 @@ This topic provides detailed installation instructions for the various Orchestra
 
 ::: moniker-end
 
-    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
+   If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-    1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
+   1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
-    2.  After you resolve the missing prerequisites, click **Verify prerequisites again**.
+   2.  After you resolve the missing prerequisites, click **Verify prerequisites again**.
 
-    3.  Click **Next** to continue.
+   3.  Click **Next** to continue.
 
 7.  On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
@@ -256,7 +256,7 @@ This topic provides detailed installation instructions for the various Orchestra
 
 10.  Review the **Installation summary** page, and then click **Install**.
 
-    The **Installing features** page appears and displays the installation progress.
+   The **Installing features** page appears and displays the installation progress.
 
 11.  On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 

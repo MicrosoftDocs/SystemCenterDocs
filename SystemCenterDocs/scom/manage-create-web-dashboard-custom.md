@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: How to create a dashboard with the Custom widget in the Web console
 description: This article describes how to create a new HTML5 dashboards in System Center Operations Manager with the Custom widget.
 author: JYOTHIRMAISURI
@@ -14,24 +14,24 @@ ms.topic: article
 ---
 
 # How to create a dashboard with the Custom widget in the Web console
-In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations. 
+In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations.
 
 ## Using the Operations Manager REST API reference
-Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](https://docs.microsoft.com/rest/operationsmanager), if you haven't already seen it. 
+Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](https://docs.microsoft.com/rest/operationsmanager), if you haven't already seen it.
 
-## Script structure 
+## Script structure
 A Custom Widget script has three major sections:
 
-1. Defining the REST API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data. 
+1. Defining the REST API and its properties. This section defines what data needs to be retrieved from Operations Manager for visualization, such as alerts, state, or performance data.
 2. Specify business logic to identify the results to present in the visualization, such as identifying a class or group, conditions such as severity, health state, or a specific performance object instance.
 3. Third-party visualization, which is open-source libraries hosted on cloudflare.com that are required to render the data, depending on the chart type selected.   
 
 ### Widget properties
 In order for the script to query and return data in the visualization, the **URL** parameter specifies the address of the Operations Manager Web console and the data type.  The URL syntax is *http://<servername>/operationsmanager/data/<dataitem>* and value for **dataitem** is one of the following:
 
-* *alert* represents a monitoring alert 
+* *alert* represents a monitoring alert
 * *state* represents monitoring health state data
-* *performance* represents monitoring performance data 
+* *performance* represents monitoring performance data
 
 ```
 <!DOCTYPE HTML>
@@ -50,7 +50,7 @@ In order for the script to query and return data in the visualization, the **URL
                 type: "POST",
 ```
 
-To scope the monitoring data for each data type, you can select a class to see all instances of that class, or to see only a subset of objects of the selected class, you can also include a group.  For example, to specify all objects of class Windows Server DC Computer, you would modify the property value for *classId*. 
+To scope the monitoring data for each data type, you can select a class to see all instances of that class, or to see only a subset of objects of the selected class, you can also include a group.  For example, to specify all objects of class Windows Server DC Computer, you would modify the property value for *classId*.
 
 >[!NOTE]
 >This is only applicable to state data, not alert or performance.  For performance data, you specify a group or monitored object.
@@ -102,15 +102,102 @@ Once you have specified the target class and optionally a group to further scope
 ## Widget examples
 The widget supports rendering monitoring data in the following chart types:
 
-* Bar chart
-* Pie chart and 3D Pie chart
-* Donut and 3D Donut
-* Combination chart
-* Stacked bar chart
+- Bar chart (state data)
+- Bar chart (alert data)
+- Pie chart and 3D Pie chart
+- Donut and 3D Donut
+- Combination chart
+- Stacked bar chart
+
 
 You can configure a chart type to present state, performance, and alert data.  For each example below, alerts from the Windows Computer group are returned for any severity, matching specific resolution states.
 
-### Bar chart
+### Bar chart (state data)
+The following HTML code demonstrates rendering a bar chart with state data.
+
+```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var criticalCounter = 0;
+        var healthyCounter = 0;
+        var warningCounter = 0;
+        var unmonitoredCounter = 0;
+
+        window.onload = function () {
+            $.ajax({
+                url: "/OperationsManager/data/state",
+                type: "POST",
+                data: {
+                    "classId": "System.Library!System.Computer",
+                    "objectIds": {
+                        // Key value pairs => id: 0 (For objects)/-1 (For groups)
+                        "1d62280e-f437-1369-316b-1e8659500e9a": -1
+                    },
+                    "criteria": "((HealthState = '0') OR (HealthState = '1') OR (HealthState = '2') OR (HealthState = '3') OR HealthState is null)",
+                    "displayColumns": [
+                        "healthstate",
+                        "displayname",
+                        "path",
+                        "maintenancemode"
+                    ]
+                },
+                success: function (result) {
+                    for (var i = 0; i < result.rows.length; i++) {
+                        switch (result.rows[i].healthstate) {
+                            case "critical":
+                                criticalCounter++;
+                                break;
+                            case "healthy":
+                                healthyCounter++;
+                                break;
+                            case "warning":
+                                warningCounter++;
+                                break;
+                            case "unmonitored":
+                                unmonitoredCounter++;
+                                break;
+                        }
+                    }
+                    renderChart();
+                }
+            });
+        }
+
+        function renderChart() {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Health State of Windows Computers"
+                },
+                data: [{
+                    type: "column",
+                    dataPoints: [
+                        { y: criticalCounter, label: "Critical", color: "Red" },
+                        { y: healthyCounter, label: "Healthy", color: "Green" },
+                        { y: warningCounter, label: "Warning", color: "Yellow" },
+                        { y: unmonitoredCounter, label: "Unmonitored", color: "Gray" }
+                    ]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <title>CanvasJS Example</title>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+</body>
+
+</html>
+```
+
+
+### Bar chart (alert data)
 The following HTML code demonstrates rendering a bar chart with alert data.
 
 ```
@@ -435,7 +522,7 @@ animationEnabled: true,
 				indexLabelFontSize: 20,
 				startAngle:0,
 				indexLabelFontColor: "dimgrey",       
-				indexLabelLineColor: "darkgrey", 
+				indexLabelLineColor: "darkgrey",
 				toolTipContent: "{y} %", 		
                             dataPoints: [
                                 { y: criticalCounter, indexLabel: "Critical" },
@@ -555,7 +642,7 @@ The following HTML code demonstrates rendering a 3D donut chart with alert data.
 </html>
 ```
 
-### Combination chart 
+### Combination chart
 The following HTML code demonstrates creating a Combination chart to display alerts in a pie and spline chart.
 
 ```
@@ -686,22 +773,22 @@ var totalCounter =0;
 ```
 ## Add widget to dashboard
 
-1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console. 
+1. Open a web browser on any computer and enter `http://<web host>/OperationsManager`, where *web host* is the name of the computer hosting the web console.
 2. From the left pane in the Web console, click **+ New dashboard**.<br><br> ![Select New Dashboard in Web console](./media/create-web-dashboard-alerts/web-console-new-dashboard-01.png)<br>
 3. On the **Create New Dashboard** page, provide a name and description for the dashboard you want to create.
-    
+
     ![Specify name and description for new dashboard](./media/create-web-dashboard-alerts/web-console-new-dashboard-02.png)
- 
-4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description, and optionally a version number. 
+
+4. You can save the dashboard in an existing unsealed management pack by selecting the management pack from the **Management Pack** drop-down list or you can save the dashboard by creating a new management pack by clicking **New** next to the **Management Pack** drop-down list and provide a name, description, and optionally a version number.
 
     ![Specify name and description for new MP](./media/create-web-dashboard-alerts/web-console-new-dashboard-03.png)
- 
+
 5. When you have completed specifying where to save the new dashboard to, click **OK**.
-6. Click **Save** after providing a name and description for the new dashboard. 
+6. Click **Save** after providing a name and description for the new dashboard.
 7. On the blank empty dashboard, you see the dashboard name, **Add Widget**, **Edit Dashboard**, **Delete dashboard** and **View in fullscreen** options on the top of the page.
 
     ![New dashboard canvas](./media/create-web-dashboard-alerts/web-console-new-dashboard-04.png)
- 
+
 8. Select **Custom Widget** from the **Select Widget** drop-down list.
 9. In the Custom widget pane, select criteria for the widget adding the HTML code using one of the earlier examples, to visualize monitoring data in one of the supported chart visualizations.
 
@@ -712,5 +799,3 @@ var totalCounter =0;
 After the widget has been created, it displays the output of the HTLM code.
 
 ![Completed example of Tile widget in dashboard](./media/create-web-dashboard-custom/web-console-new-dashboard-custom-01.png)
-
- 
