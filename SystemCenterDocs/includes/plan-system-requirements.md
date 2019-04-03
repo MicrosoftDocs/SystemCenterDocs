@@ -97,7 +97,7 @@ The following versions of Windows client operating system are supported for the 
 
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager.
 
-Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
+Windows Server 2019, Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
 
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
