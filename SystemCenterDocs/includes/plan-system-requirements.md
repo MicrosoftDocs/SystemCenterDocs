@@ -12,9 +12,11 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## System requirements for System Center Operations Manager
+## System requirements
 
-The topic describes general performance and scalability guidance for System Center 2016, 1801 - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+This article describes general performance and scalability guidance for System Center - Operations Manager. It recommends hardware configurations for a variety of workloads. Because System Center Operations Manager is built to be flexible and scalable, the hardware requirements for specific scenarios may differ from the guidelines that are presented here.  A discussion of the factors that affect the performance of each Operations Manager component is detailed in other sections of the planning guide so that they can be adapted to specific requirements.
+
+
 
 ## Capacity limits for Operations Manager
 
@@ -95,7 +97,17 @@ The following versions of Windows client operating system are supported for the 
 
 The following versions of Windows operating system are supported for the Microsoft Monitoring Agent connecting to Operations Manager.
 
+::: moniker range="sc-om-2016"
+
+Windows Server 2019, Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
+
+::: moniker-end
+
+::: moniker range=">sc-om-2016"
+
 Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
+
+::: moniker-end
 
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
