@@ -1,7 +1,7 @@
 ---
 title: Integration pack for System Center - Virtual Machine Manager (VMM)
 description: This article describes the System Center integration pack for System Center - Virtual Machine Manager (VMM). The integration pack is an add-in for System Center - Orchestrator.
-ms.date: 01/17/2018
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
@@ -37,10 +37,9 @@ The VMM Integration Pack requires the following software to be installed and con
 The activities from the VMM Integration Pack connect to a VMM Console, which in turn connects to a VMM management server. You can install this console on the Orchestrator runbook server or connect to the Administration console on another computer. If the Orchestrator components and the VMM Administration Console are installed on the same 64-bit computer, the VMM server must be in the same domain to be able to connect to it.
 
 ## Download the pack
-
-- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
-- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
-
+- [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
+- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
+- [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 ## Register and deploy the pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md) about installation.

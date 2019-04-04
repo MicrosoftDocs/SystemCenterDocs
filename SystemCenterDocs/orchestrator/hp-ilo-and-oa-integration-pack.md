@@ -1,8 +1,8 @@
 ---
-title: HP iLO and OA Integration Pack for System Center 2016 - Orchestrator
-description: The Integration Pack for HP iLO and OA is an add-on for System Center 2016 - Orchestrator that enables you to automate HP iLO and OA commands.
+title: HP iLO and OA Integration Pack for System Center - Orchestrator
+description: The Integration Pack for HP iLO and OA is an add-on for System Center - Orchestrator that enables you to automate HP iLO and OA commands.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,24 +15,27 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# HP iLO and OA Integration Pack for System Center 2016 - Orchestrator
+# HP iLO and OA Integration Pack for System Center - Orchestrator
 
-The Integration Pack for HP iLO and OA is an add-on for System Center 2016 - Orchestrator that enables you to automate HP iLO and OA commands.
+The Integration Pack for HP iLO and OA is an add-on for System Center - Orchestrator that enables you to automate HP iLO and OA commands.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
 The Integration Pack for HP iLO and OA requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and HP iLO and OA, refer to the respective product documentation.
 
 -   System Center 2016 integration packs require System Center 2016 - Orchestrator
+-   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   HP iLO 2
 -   HP iLO 3
 -   HP OA firmware 3.31
 
 ## Downloading the Integration Pack
 
-To download this integration pack, see [HP iLO and OA Integration Pack for System Center 2016 - Orchestrator.](https://www.microsoft.com/en-us/download/details.aspx?id=54102).
+- To download this integration pack for Orchestrator 2016, see [HP iLO and OA Integration Pack for System Center 2016 - Orchestrator.](https://www.microsoft.com/download/details.aspx?id=54102).
+
+- To download this integration pack for Orchestrator 2019, see [HP iLO and OA Integration Pack for System Center 2019 - Orchestrator.](https://www.microsoft.com/download/details.aspx?id=58107&WT.mc_id=rss_alldownloads_all).
 
 ## Registering and Deploying the Integration Pack
 

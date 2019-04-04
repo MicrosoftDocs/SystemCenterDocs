@@ -1,8 +1,8 @@
 ---
-title: HP Operations Manager Integration Pack for System Center 2016 - Orchestrator
-description: The Integration Pack for HP Operations Manager is an add-on for System Center 2016 - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across you entire physical and virtual IT infrastructure.
+title: HP Operations Manager Integration Pack for System Center - Orchestrator
+description: The Integration Pack for HP Operations Manager is an add-on for System Center - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across you entire physical and virtual IT infrastructure.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,22 +15,26 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# HP Operations Manager Integration Pack for System Center 2016 - Orchestrator
+# HP Operations Manager Integration Pack for System Center - Orchestrator
 
-The Integration Pack for HP Operations Manager is an add-on for System Center 2016 - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across you entire physical and virtual IT infrastructure.
+The Integration Pack for HP Operations Manager is an add-on for System Center - Orchestrator that enables you to automate the consolidation and correlation of fault and performance events across you entire physical and virtual IT infrastructure.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [Privacy Statement for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
 The Integration Pack for HP Operations Manager requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and the HP Operations Manager application, refer to the respective product documentation.
 
--   System Center 2016 integration packs require System Center 2016 - Orchestrator
--   HP Operations Manager 9.x
+-  System Center 2016 integration packs require System Center 2016 - Orchestrator
+-  System Center 2019 integration packs require System Center 2019 - Orchestrator
+-  HP Operations Manager 9.x
 
 ## Downloading the Integration Pack
 
-To download this integration pack, see [HP Operations Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54102).
+- To download this integration pack for Orchestrator 2016, see [HP Operations Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54102).
+
+- To download this integration pack for Orchestrator 2019, see [HP Operations Manager Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58108&WT.mc_id=rss_alldownloads_all).
+
 
 ## Registering and Deploying the Integration Pack
 

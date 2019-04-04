@@ -1,7 +1,7 @@
 ---
 title: System Center - Orchestrator integration pack for System Center - Operations Manager
 description: This article describes the System Center integration pack for System Center - Operations Manager, an add-on provided by System Center - Orchestrator.
-ms.date: 01/17/2018
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
@@ -35,8 +35,9 @@ The Operations Manager Integration Pack requires the following software to be in
 
 ## Download the integration pack
 
-- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
-- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
+- [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
+- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
+- [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 
 ## Register and deploy the pack
 
@@ -64,7 +65,7 @@ Use the following steps:
 1. Set Windows to use only TLS 1.2
 
     **Method 1: Manually modify the registry**
-    
+
     > [!Important]
     > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly.   Before you modify, back up the registry for restoration in case a problems occurs.
 
