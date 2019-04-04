@@ -27,7 +27,7 @@ This article details the system requirements for System Center 2016 - Operations
 
 [!INCLUDE [plan-system-requriements.md](../includes/plan-system-requirements.md)]
 
-::: moniker range=">sc-om-2016 <= sc-vmm-1807"
+::: moniker range=">sc-om-2016 <= sc-om-1807"
 
 This article details the system requirements for System Center 1801, 1807 - Operations Manager.
 
