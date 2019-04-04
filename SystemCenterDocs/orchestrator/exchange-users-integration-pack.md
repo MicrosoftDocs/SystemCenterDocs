@@ -1,8 +1,8 @@
 ---
-title: Exchange Users Integration Pack for Orchestrator in System Center 2016
-description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
+title: Exchange Users Integration Pack for Orchestrator in System Center
+description: Integration packs are add-ons for System Center - Orchestrator, a component of System Center.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,21 +17,24 @@ manager: carmonm
 
 # Exchange users integration pack
 
-Integration packs are add-ons for Orchestrator, a component of System Center 2016. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third party products. The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to send email messages, create appointments, or update tasks.
+Integration packs are add-ons for Orchestrator, a component of System Center. Integration packs optimize IT operations across various environments. They enable you to design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and third party products. The Integration Pack for Exchange Users facilitates the automation of user-centric tasks, such as actions to send email messages, create appointments, or update tasks.
 
-Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
 Prior to implementing the Exchange Users Integration Pack, the following listed software must be installed and configured. For more information about installing and configuring Orchestrator and the Exchange Users Integration Pack, refer to the respective product documentation.
 
--   System Center 2016 - Orchestrator
+-   System Center 2016 integration packs require System Center 2016 - Orchestrator
+-   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Microsoft .NET Framework 3.5
 -   Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange Online/Office 365
 
 ## Downloading the integration pack
 
-To download this the Exchange Users Integration Pack, go to the [Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+- To download the Exchange Users Integration Pack for Orchestrator 2016, go to the [Download Center space for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
+
+- To download the Exchange Users Integration Pack for Orchestrator 2019, go to the [Download Center space for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
 
 ## Registering and deploying the integration pack
 

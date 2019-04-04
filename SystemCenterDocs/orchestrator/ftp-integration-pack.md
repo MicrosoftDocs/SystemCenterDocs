@@ -1,8 +1,8 @@
 ---
-title: FTP Integration Pack for Orchestrator in System Center 2016
-description: Integration packs are add-ons for System Center 2016 - Orchestrator, a component of System Center 2016.
+title: FTP Integration Pack for Orchestrator in System Center
+description: Integration packs are add-ons for System Center - Orchestrator, a component of System Center.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,19 +17,22 @@ manager: carmonm
 
 # FTP integration pack
 
-Integration packs are add-ons for Orchestrator, a component of System Center 2016, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by third party products. The Integration Pack for FTP enables you to automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.
+Integration packs are add-ons for Orchestrator, a component of System Center, that can help you optimize IT operations across heterogeneous environments. You can design runbooks in Orchestrator that use activities performed by other System Center components, other Microsoft products, and by third party products. The Integration Pack for FTP enables you to automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.
 
-Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator 2016 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
 The Integration Pack for FTP requires the following software to be installed and configured prior to implementing the integration. For more information about installing and configuring Orchestrator and FTP, refer to the respective product documentation.
--   Orchestrator in System Center 2016
+-   System Center 2016 integration packs require System Center 2016 - Orchestrator
+-   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   FTP server
 
 ## Download the integration pack
 
-To download the FTP integration pack, see the [Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+- To download the FTP integration pack for Orchestrator 2016, see [Microsoft Download Center space for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
+
+- - To download the FTP integration pack for Orchestrator 2019, see [Microsoft Download Center space for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
 
 ## Register and deploy the integration pack
 

@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 03/05/2018
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
@@ -16,7 +16,7 @@ Integration packs are add-ons for System Center - Orchestrator. They help you to
 
 The System Center Integration Pack for Microsoft SharePoint enables the automation of common tasks in SharePoint, for example, to create list items, to upload and download documents, and to monitor a list for changes.
 
-[Learn more](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx) about Orchestrator privacy.
+[Learn more](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx) about Orchestrator privacy.
 
 
 ## System Requirements
@@ -29,8 +29,9 @@ The integration pack for SharePoint requires the following software to be instal
 
 ## Download the pack
 
-- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
-- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
+- [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
+- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
+- [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 
 ## Register and deploy the integration pack
 

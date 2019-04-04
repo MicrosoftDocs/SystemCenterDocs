@@ -2,7 +2,7 @@
 title: Active Directory Integration Pack for System Center - Orchestrator
 description: The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 ms.custom: na
-ms.date: 03/28/2019
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -19,22 +19,25 @@ robots: noindex
 
 The Integration Pack for Active Directory is an add-on for System Center - Orchestrator that enables you to automate common Active Directory management functions.
 
-Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more Orchestrator-related privacy information, see the [Privacy Statement for System Center - Orchestrator](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
 Before you can install the Integration Pack for Active Directory, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
 
--   System Center integration packs require System Center - Orchestrator.
+-   System Center 2016 integration packs require System Center 2016 - Orchestrator
+-   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Windows Server 2016 Active Directory, Windows Server 2012 R2 Active Directory, Windows Server 2012 Active Directory, Windows Server 2008 R2 Active Directory, Windows Server 2008 Active Directory, Windows Server 2003 R2 Active Directory, or Windows Server 2003 Active Directory.
 
 ## Downloading the Integration Pack
 
-To download this integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+- To download the Orchestrator 2016  integration pack, see [Active Directory Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54098).
+
+- To download the Orchestrator 2019 integration pack, see [Active Directory Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58111)
 
 ## Registering and Deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://docs.microsoft.com/en-us/system-center/orchestrator/how-to-add-an-integration-pack?view=sc-orch-1807).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designer. For specific procedures, see [How To Install an Integration Pack](https://docs.microsoft.com/system-center/orchestrator/how-to-add-an-integration-pack).
 
 ## Configuring the Active Directory Connections
 
