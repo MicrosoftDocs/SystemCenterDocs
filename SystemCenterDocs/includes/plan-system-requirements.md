@@ -216,10 +216,14 @@ The following table lists the scenarios in which coexistence between Operations 
 
 ## In-place upgrade
 
+::: moniker range="sc-om-2016"
+
 System Center 2016 - Operations Manager supports an in-place upgrade from the following versions:
 
 - System Center 2016 Technical Preview 5 - Operations Manager
 - System Center 2012 R2 Operations Manager with Update Rollup 9
+
+::: moniker-end
 
 ::: moniker range=">sc-om-2016"
 
