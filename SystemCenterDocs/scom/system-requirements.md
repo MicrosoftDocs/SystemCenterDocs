@@ -21,9 +21,15 @@ This article details the system requirements for System Center 2019 - Operations
 
 ::: moniker-end
 
-::: moniker range="<sc-om-2019"
+::: moniker range="sc-om-2016"
 
-This article details the system requirements for System Center 2016, 1801, 1807 - Operations Manager.
+This article details the system requirements for System Center 2016 - Operations Manager.
+
+[!INCLUDE [plan-system-requriements.md](../includes/plan-system-requirements.md)]
+
+::: moniker range=>sc-om-2016 <= sc-vmm-1807
+
+This article details the system requirements for System Center 1801, 1807 - Operations Manager.
 
 > [!NOTE]
 > you must install Operations Manager 1801 in order to upgrade to Operations Manager 1807. The system requirements remain the same for 1801 and 1807.
@@ -31,6 +37,7 @@ This article details the system requirements for System Center 2016, 1801, 1807 
 [!INCLUDE [plan-system-requriements.md](../includes/plan-system-requirements.md)]
 
 ::: moniker-end
+
 
 ## Next Steps
 [Plan installation](plan-overview.md)
