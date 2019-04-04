@@ -49,7 +49,7 @@ After you download the integration pack file, you must register it with the Orch
 ## Preparing to connect to the HP Service Manager Server
 
 -   Make a record of the HP Service Manager server name and port number used to connect the HP Service Manager client.
--   For all HP Service Manager servers that you plan to connect to you must create an ODBC data source name (DSN) on each Client and Runbook server. Both SQL Server Native and Oracle ODBC connections are supported. See [Configuring the HP Service Manager Connections](#ConfiguringConnections).
+-   For all HP Service Manager servers that you plan to connect to you must create an ODBC data source name (DSN) on each Client and Runbook server. Both SQL Server Native and Oracle ODBC connections are supported. See [Configuring the HP Service Manager Connections](#configuring-the-hp-service-manager-connections).
 -   The licensing model for the components of HP Service Manager varies depending on the version installed. Consult the HP product documentation to determine which components are licensed separately. This integration pack requires HP Service Manager SOAP web service access to operate correctly. Ensure that this component is installed and licensed, if necessary.
 -   Ensure that the user configured to access the HP Service Manager server has been assigned the SOAP-API CAPABILITY WORD in the HP Service Manager system. Depending on the version of HP Service Manager, it may be necessary to purchase extra licensing to enable the SOAP-API CAPABILITY WORD. Consult your HP Sales Representative for further information about licensing.
 
