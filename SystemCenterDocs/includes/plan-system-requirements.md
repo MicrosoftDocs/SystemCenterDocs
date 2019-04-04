@@ -223,7 +223,7 @@ System Center 2016 - Operations Manager supports an in-place upgrade from the fo
 
 ::: moniker range=">sc-om-2016"
 
-System Center Operations Manager 1801 supports an in-place upgrade from the following versions:
+System Center Operations Manager supports an in-place upgrade from the following versions:
 
 - System Center 2012 R2 UR12 to the latest update rollup  
 - System Center 2016 RTM to the latest update rollup  
