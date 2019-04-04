@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for System Center - Service Manager
 description: The article describes the integration pack for System Center - Service Manager. The pack is an add-in for System Center - Orchestrator.
-ms.date: 01/17/2018
+ms.date: 03/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
@@ -29,8 +29,9 @@ The Service Manager integration pack requires the following software to be insta
 
 ## Download the pack
 
-- [Download the pack for 2016](https://www.microsoft.com/en-us/download/details.aspx?id=54098)
-- [Download the pack for 1801](https://www.microsoft.com/en-us/download/details.aspx?id=56605)
+- [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
+- [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
+- [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
 
 ## Register and deploy the pPack
 

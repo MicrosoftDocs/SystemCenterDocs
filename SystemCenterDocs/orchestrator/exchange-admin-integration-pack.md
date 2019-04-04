@@ -2,7 +2,7 @@
 title: Exchange Admin Integration Pack for Orchestrator in System Center
 description: Integration packs are add-ons for System Center - Orchestrator, a component of System Center.
 ms.custom: na
-ms.date: 03/28/2019
+ms.date: 03/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -21,13 +21,14 @@ Integration packs are add-ons for System Center - Orchestrator, a component of S
 
 The Integration Pack for Exchange Admin helps to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote, or cloud-based environments in Microsoft Exchange and Office 365.
 
-Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+Microsoft is committed to protecting your privacy while delivering software that brings you the performance, power, and convenience you want. For more information about Orchestrator-related privacy, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System requirements
 
 Before you implement the Integration Pack for Exchange Admin, the following listed software must be installed. For more information about installing and configuring Orchestrator and the Exchange Admin Integration Pack, refer to the respective product documentation.
 
--   System Center - Orchestrator for the version of  System Center you are using
+-   System Center 2016 integration packs require System Center 2016 - Orchestrator
+-   System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   Microsoft .NET Framework 3.5 Service Pack 1
 -   Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Office 365
 -   Microsoft Exchange Management Shell
@@ -36,7 +37,9 @@ Before you implement the Integration Pack for Exchange Admin, the following list
 
 ## Downloading the Integration Pack
 
-To download the Exchange Admin Integration Pack, see the [Download Center site](https://www.microsoft.com/en-us/download/details.aspx?id=54098).
+- To download the Exchange Admin Integration Pack for Orchestrator 2016, see the [Microsoft Download Center for 2016](https://www.microsoft.com/download/details.aspx?id=54098).
+
+- To download the Exchange Admin Integration Pack for Orchestrator 2019, see the [Microsoft Download Center for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all).
 
 ## Register and Deploy the Integration Pack
 

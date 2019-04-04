@@ -1,8 +1,8 @@
 ---
-title: HP Service Manager Integration Pack for System Center 2016 - Orchestrator
-description: The integration pack for HP Service Manager is an add-on for Orchestrator in System Center 2016 and System Center 2016 - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager.
+title: HP Service Manager Integration Pack for System Center - Orchestrator
+description: The integration pack for HP Service Manager is an add-on for Orchestrator in System CenteR and System Center - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 03/04/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,15 +15,16 @@ ms.author: raynew
 manager: carmonm
 ---
 
-# HP Service Manager Integration Pack for System Center 2016 - Orchestrator
+# HP Service Manager Integration Pack for System Center - Orchestrator
 
-The integration pack for HP Service Manager is an add-on for Orchestrator in System Center 2016 and System Center 2016 - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager. Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator 2012 Privacy Statement](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx).
+The integration pack for HP Service Manager is an add-on for Orchestrator in System Center and System Center - Orchestrator that enables you to retrieve, create, update and monitor tickets in HP Service Manager. Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you want. For more information, see the [System Center Orchestrator Privacy Statement](https://www.microsoft.com/privacystatement/EnterpriseDev/default.aspx).
 
 ## System Requirements
 
 The integration pack for HP Service Manager requires the following software to be installed and configured to implementing the integration. For more information about installing and configuring Orchestrator and the HP Service Manager Web Service, refer to the respective product documentation.
 
--   System Center 2016 integration packs require Orchestrator in System Center 2016
+-  System Center 2016 integration packs require System Center 2016 - Orchestrator
+-  System Center 2019 integration packs require System Center 2019 - Orchestrator
 -   HP Service Manager 7.11 or 9
 
 The following software must be installed on each Runbook Server and Runbook Designer:
@@ -38,7 +39,8 @@ The following software must be installed on each Runbook Server and Runbook Desi
 
 ## Downloading the Integration Pack
 
-To download this integration pack, see [HP Service Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/en-us/download/details.aspx?id=54101).
+- To download this integration pack for Orchestrator 2016, see [HP Service Manager Integration Pack for System Center 2016 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=54101).
+- To download this integration pack for Orchestrator 2019, see [HP Service Manager Integration Pack for System Center 2019 - Orchestrator](https://www.microsoft.com/download/details.aspx?id=58109&WT.mc_id=rss_alldownloads_all).
 
 ## Registering and Deploying the Integration Pack
 
