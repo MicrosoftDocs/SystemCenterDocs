@@ -1,7 +1,7 @@
 ---
 title: System Center integration pack for SharePoint
 description: This article describes the SharePoint integration pack for System Center - Orchestrator.
-ms.date: 03/04/2019
+ms.date: 04/04/2019
 ms.prod: system-center
 ms.technology: orchestrator
 ms.topic: reference
