@@ -16,7 +16,7 @@ ms.author: raynew
 
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple System Center Data Protection Manager (DPM) servers from a single location. It provides:
 
--   Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status of servers, tasks, protected resources, tape libraries, available storage and disk space.
+-   Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status of servers, tasks, protected resources, tape libraries, available storage, and disk space.
 
 -   Role-based access control
 
