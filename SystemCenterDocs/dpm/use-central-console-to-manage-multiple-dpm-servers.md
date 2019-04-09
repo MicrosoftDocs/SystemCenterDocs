@@ -16,7 +16,7 @@ ms.author: raynew
 
 Central Console is a System Center Operations Manager console that you can deploy to manage and monitor multiple System Center Data Protection Manager (DPM) servers from a single location. It provides:
 
--   Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status of servers, tasks, protected resources, tape libraries, available storage and disk space.
+-   Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status of servers, tasks, protected resources, tape libraries, available storage, and disk space.
 
 -   Role-based access control
 
@@ -26,7 +26,7 @@ Central Console is a System Center Operations Manager console that you can deplo
 -   Service level agreement (SLA)-based alerting and alert consolidation - Alerts are generated when an SLA is broken.
     You can consolidate alerts and work on high priority items, as follows:
 
-    -   Repeated alerts - Display only one alert for repeated alerts. For example if a job is scheduled to run hourly and hasn't run for the last ten hours, only one alert for the failed job is displayed.
+    -   Repeated alerts - Display only one alert for repeated alerts. For example if a job is scheduled to run hourly and hasn't run for the last 10 hours, only one alert for the failed job is displayed.
 
     -   Same root cause - If multiple alerts have the same root cause, or if multiple backups fail for the same data source, only the alerts informing you of the failure is generated.
 
@@ -40,8 +40,8 @@ You can install Central Console on a server computer running Windows Server 2008
 
 1.  Deploy an Operations Manager agent to your DPM server.  [Read more](https://docs.microsoft.com/en-us/system-center/dpm/use-ops-manager-to-manage-monitor-dpm?view=sc-dpm-1807#BKMK_OM).
 
-2.  The Central Console consists of two management packs - Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp and Microsoft.SystemCenter.DataProtectionManager.2012.Library.mp. You'll need to import both of these and they're located in<CDDrive:>\Management Packs.
-    Note that when you import the management pack, Windows displays a warning about write actions. This is an expected warning, and you can click **OK** to continue.
+2.  The Central Console consists of two management packs - Microsoft.SystemCenter.DataProtectionManager.2012.Discovery.mp and Microsoft.SystemCenter.DataProtectionManager.2012.Library.mp. You'll need to import both of these and they're located in \<CDDrive:>\Management Packs.
+    When you import the management pack, Windows displays a warning about write actions. This is an expected warning, and you can click **OK** to continue.
 
     Note that Central Console requires the version of the management pack that's available in the DPM installation folder. However after you've installed this version you can then update to the latest management pack version, available on the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=56560).
 
