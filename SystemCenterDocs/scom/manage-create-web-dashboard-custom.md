@@ -103,6 +103,7 @@ Once you have specified the target class and optionally a group to further scope
 The widget supports rendering monitoring data in the following chart types:
 
 - Bar chart (state data)
+- Spline chart (performance data)
 - Bar chart (alert data)
 - Pie chart and 3D Pie chart
 - Donut and 3D Donut
@@ -195,7 +196,103 @@ The following HTML code demonstrates rendering a bar chart with state data.
 
 </html>
 ```
+### Spline chart (performance data)
+The following HTML code demonstrates rendering a spline chart with performance data.
 
+```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var performanceData = [];
+
+        window.onload = function () {
+            $.ajax({
+                url: "/OperationsManager/data/performance",
+                type: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify({
+                        "id":"6f7e3306-beeb-2996-3795-7c1eafb925b8",
+                        "performanceCounters":[
+                            {
+                                "objectname":"Health Service",
+                                "countername":"agent processor utilization",
+                                "instancename":""
+                            }
+                        ],
+                        "legends":[
+                            "target",
+                            "path",
+                            "lastvalue"
+                        ],
+                        "duration":4320
+                    }),
+                success: function (result) {
+                    let dataDictionary = result.datasets[0].data;
+                    let sum = new Array(24).fill(0.0);
+                    let count = new Array(24).fill(0.0);
+                    for (var key in dataDictionary) {
+                        if(dataDictionary.hasOwnProperty(key)) {
+                           var datetime = new Date(key);
+                            datetime = convertUTCDateToLocalDate(datetime);
+                            sum[datetime.getHours()] += dataDictionary[key];
+                            count[datetime.getHours()]++;
+                        }
+                    }
+                    let tDate = new Date();
+                    tDate.setHours(0,0,0,0);
+                    for(var i=0; i<24; i++) {
+                        performanceData.push({
+                            y: sum[i] / count[i],
+                            x: new Date(tDate.getTime())
+                        });
+                        tDate.setHours(tDate.getHours()+1);
+                    }
+                    renderChart();
+                }
+            });
+        }
+
+        function convertUTCDateToLocalDate(date) {
+            var newDate = new Date(date.getTime()+date.getTimezoneOffset()*60*1000);
+            var offset = date.getTimezoneOffset() / 60;
+            newDate.setMinutes(date.getMinutes() - date.getTimezoneOffset())
+            return newDate;   
+        }
+
+        function renderChart() {
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Average Processor Utilization for Last 3 Days"
+                },
+                axisX: {
+                    labelFormatter: function(e) {
+                        return CanvasJS.formatDate(e.value, "hh:mm tt");
+                    }
+                },
+                data: [{
+                    type: "spline",
+                    dataPoints: performanceData
+                }]
+            });
+            chart.render();
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <title>CanvasJS Example</title>
+</head>
+
+<body>
+    <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+</body>
+
+</html>
+
+```
 
 ### Bar chart (alert data)
 The following HTML code demonstrates rendering a bar chart with alert data.
