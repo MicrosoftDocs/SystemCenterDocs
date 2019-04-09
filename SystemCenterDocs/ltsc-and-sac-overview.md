@@ -55,7 +55,7 @@ Unless otherwise communicated, the minimum requirements to run the System Center
 
 ## Upgrade options
 
-Customers with Software Assurance can upgrade from System Center 2016 or 2012R2 to System Center, version 1801. Upgrading from Semi-Annual Channel to LTSC releases is not supported.
+Customers with Software Assurance can upgrade from System Center 2016 or 2012R2 to System Center, version 1801. 
 
 ## Servicing
 
