@@ -158,7 +158,7 @@ You need additional servers. However, there's almost no downtime in all the scen
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.
 7. Remove 2012 R2 nodes from the cluster after failover.
-8. Update the cluster functional level by using the [Update-ClusterFunctionalLevelcommand(https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+8. Update the cluster functional level by using the [Update-ClusterFunctionalLevelcommand](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9. Optionally install the appropriate SQL Command line utilities.
 10. After the upgrade, [upgrade the host agent manually](#update-vmm-agents).
 
