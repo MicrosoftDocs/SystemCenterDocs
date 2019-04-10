@@ -63,11 +63,11 @@ To shield a Linux VM:
     - Under **Firmware**, select **Enable secure boot**. From the **Secure boot template** menu, select **OpenSourceShieldedVM**.
 
         > [!NOTE]
-        > This boot template is a new addition to RS3 hosts. If no RS3 hosts are in VMM, this option won't show up in the **Secure boot template** menu.
+        > This boot template is a new addition to RS3 hosts. If no RS3 hosts are in VMM, this option won't show up on the **Secure boot template** menu.
 
     - Select the required hardware configuration for other properties, such as processors, memory, and the VM network.
 
-        ![Hardware configuration for a Linux shielded VM](media/linux-shield/vm-create-linux-template-1.png)
+       ![Hardware configuration for a Linux shielded VM](media/linux-shield/vm-create-linux-template-1.png)
 4.	In **Configure Operating System**:
 
     - In the **Guest OS profile** menu, select **Create new Linux operating system customization settings**.
