@@ -258,14 +258,6 @@ The following tables describe the required UNIX and Linux operating systems and 
 ## Solaris UTF\-8 Support  
 The Operations Manager agent requires Solaris UTF-8 code set conversion support under some circumstances. Consult the Solaris documentation for details on installing UTF-8 code set conversion support. The Operations Manager agent functions without UTF-8 support on Solaris, but unrecognized characters are translated to question mark (?) characters.  
 
-## SUSE Linux Enterprise Server 10   
-
-|Required package|Description|Minimum version|  
-|--------------------|---------------|-------------------|  
-|glibc-2.4-31.30|C Standard shared library|2.4-31.30|  
-|OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8a-18.15|  
-|PAM|Pluggable Authentication Modules|0.99.6.3-28.8|  
-
 ## SUSE Linux Enterprise Server 11   
 
 |Required package|Description|Minimum version|  
@@ -296,6 +288,7 @@ CentOS, Oracle Linux
 |--------------------|---------------|-------------------|  
 |glibc|C Standard shared library|2.5-12|  
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|  
-|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|  
+|PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
+
 
 ::: moniker-end
