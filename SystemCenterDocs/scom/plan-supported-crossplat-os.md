@@ -126,7 +126,7 @@ Debian 8, 9 and Ubuntu 16.04, 18.04 are supported
 CentOS 6 and 7, Oracle Linux 6, 7 are supported
 
 |Required package|Description|Minimum version|
-|--------------------|-   --------------|-------------------|
+|--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
 |OpenSSL|OpenSSL Libraries; Secure Network Communications Protocol|0.9.8 or 1.0|
 |PAM|Pluggable Authentication Modules|0.99.6.2-3.14|
