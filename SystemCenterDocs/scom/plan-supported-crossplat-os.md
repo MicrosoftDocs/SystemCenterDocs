@@ -137,6 +137,8 @@ CentOS 6 and 7, Oracle Linux 6, 7 are supported
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.
 
+::: moniker-end
+
 ::: moniker range="sc-om-1801"
 
 The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 1801 - Operations Manager.  
