@@ -133,9 +133,23 @@ CentOS 6 and 7, Oracle Linux 6, 7 are supported
 
 ::: moniker-end
 
-::: moniker range="<=sc-om-1807"
+::: moniker range="sc-om-2016"
 
-The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager and version 1801.  
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 2016 - Operations Manager.
+
+::: moniker range="sc-om-1801"
+
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 1801 - Operations Manager.  
+
+::: moniker-end
+
+::: moniker range="sc-om-1807"
+
+The following tables describe the required UNIX and Linux operating systems and package dependencies for System Center 1807 - Operations Manager.  
+
+::: moniker-end
+
+::: moniker range="<=sc-om-1807"
 
 >[!NOTE]
 >Monitoring UNIX and Linux computers with System Center Operations Manager 2012 R2 management server is supported when using the System Center 2016 - Operations Manager agent with the Operations Manager 2012 R2 UNIX and Linux management packs.  You cannot import the required Operations Manager 2016 management packs for the specific version of UNIX/Linux and discover and deploy the Operations Manager 2016 agent from the **Computer and Device Management** wizard in your 2012 R2 management group.  This task must be performed manually following the command-line based deployment.  
