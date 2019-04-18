@@ -65,7 +65,7 @@ To configure a connection:
 
 ## Enable SCO IP for Operations Manager 2016 UR4 or later
 
-Enable SCO IP for Operations Manager 2016 (UR4 or later) when your Operations Manager configuration accepts only TLS 1.1 or TLS 1.2.
+You must enable SCO IP for Operations Manager 2016 (UR4+) when the Operations Manager configuration accepts only TLS 1.1 or TLS 1.2.
 
 Follow these steps:
 
@@ -87,7 +87,7 @@ Use the following steps to enable or disable all SCHANNEL protocols across the s
 
     c. Right-click  **Protocol**, and point to **New** > **Key**.
 
-    ![Screenshot of Registry Editor, showing how to create a new registry key](./media/integration-pack-for-om/new-registry-key.png)
+    ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
 
    d. Type **SSL 3.0**, and then click **Enter**.
 

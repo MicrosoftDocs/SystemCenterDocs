@@ -13,15 +13,15 @@ monikerRange: '>sc-vmm-1801'
 
 # Provision a shielded Linux virtual machine in the VMM fabric
 
-This article describes how to deploy a Linux shielded virtual machine (VM) in System Center Virtual Machine Manager (VMM) 1801.
+This article describes how to deploy Linux shielded virtual machines (VMs) in System Center 1801 - Virtual Machine Manager (VMM).
 
 
-## Shield a Linux VM
-Windows Server 2016 introduced the concept of a shielded virtual machine. Shielded VMs protect against malicious administrator actions both when VM data is at rest and when untrusted software is running on Hyper-V hosts. For more information, see [Provision shielded virtual machines in the VMM fabric](guarded-deploy-vm.md).
+## Procedure to shield a Linux VM
+Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines. Shielded VMs provide protection against malicious administrator actions both when the VM's data is at rest or when untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
 With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs. This support is available in VMM 1801.
 
-To shield a Linux VM:
+## Shield a Linux VM:
 
 1.	Create a signed template disk.
 2.	Create a Linux shielded VM template in VMM.
@@ -33,13 +33,15 @@ To shield a Linux VM:
 
 ### Prepare a template disk
 
-  1.  Create a template disk by following the directions in [How to set up a Linux shielded VM](https://github.com/Microsoft/lsvmtools/blob/master/doc/LSVM_How_To.pdf).
+  1.  Follow [these steps](https://github.com/Microsoft/lsvmtools/blob/master/doc/LSVM_How_To.pdf) to create the template disk.
 
   2. In the **Preparing a Linux Image** section of the directions, before you install lsvmtools, [install the VMM specialization agent](https://docs.microsoft.com/en-us/system-center/vmm/vm-linux#install-the-vmm-guest-agent).
 
 ### Sign the template disk
 
-1. Generate a certificate. You can use a self-signed certificate for testing. Use the following sample cmdlet:
+1. Generate a certificate. You can use a self-signed certificate for testing. 
+ 
+   Use the following sample cmdlet:
 
     ```powershell
 
@@ -60,19 +62,19 @@ To shield a Linux VM:
 1.	In the VMM console library, select **Create VM Template**.
 2.	In **Select Source**, select **Use an existing VM template**. Browse to select the signed template disk that you added to the VMM library. Then select **Next**.
 3.	In **Configure Hardware**:
-    - Under **Firmware**, select **Enable secure boot**. From the **Secure boot template** menu, select **OpenSourceShieldedVM**.
+    - Under **Firmware**, select **Enable secure boot**. From the **Secure boot template** drop-down menu, select **OpenSourceShieldedVM**.
 
         > [!NOTE]
         > This boot template is a new addition to RS3 hosts. If no RS3 hosts are in VMM, this option won't show up on the **Secure boot template** menu.
 
-    - Select the required hardware configuration for other properties, such as processors, memory, and the VM network.
+    - Select the required configuration for other hardware properties, such as processors, memory, and the VM network.
 
        ![Hardware configuration for a Linux shielded VM](media/linux-shield/vm-create-linux-template-1.png)
 4.	In **Configure Operating System**:
 
-    - In the **Guest OS profile** menu, select **Create new Linux operating system customization settings**.
+    - Select the Guest OS profile as **Create new Linux operating system customization settings**.
 
-    - Select your template disk's operating system (**Ubuntu Linux**).
+    - Select the OS on the template disk you created earlier (**Ubuntu Linux**).
 
         ![Configuration for the VM template's operating system](media/linux-shield/vm-create-linux-template-configure-os.png)
 
@@ -111,7 +113,7 @@ New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Own
 
 4.	Name the VM and select **Next**.
 5.	In **Configure Hardware**, make sure the details match your template settings. Then select **Next**.
-6.	In **Configure Operating System**, make sure the details match your template settings. Then select **Next**.
+6.	In **Configure Operating System** settings, ensure the details conform to the settings you made when you created the template. Then select **Next**.
 7.	Select the shielding data file (PDK) that you created.
 8.	Select the destination host group and then select **Next**.
 9.	Select the host by the rating that the VMM placement engine gave. Then select **Next**.
