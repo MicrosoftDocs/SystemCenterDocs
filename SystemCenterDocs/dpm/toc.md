@@ -2,6 +2,7 @@
 ## [Data Protection Manager](dpm-overview.md)
 ## [How does DPM work?](how-dpm-protects-data.md)
 ## [What can DPM back up?](dpm-protection-matrix.md)
+## [DPM-compatible tape libraries](dpm-compatible-tape-libraries.md)
 # Get Started
 ## [DPM build versions](release-build-versions.md)
 ## [DPM release notes](dpm-release-notes.md)

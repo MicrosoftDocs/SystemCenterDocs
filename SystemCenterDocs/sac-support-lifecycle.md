@@ -37,9 +37,9 @@ Microsoft releases updates for System Center Semi-Annual Channel (SAC) a couple 
 > The latest Semi-Annual Channel version is always in the Security and Critical Updates servicing phase. If you encounter a code defect that warrants a critical update, you must have the latest Semi-Annual Channel version installed to receive a fix. All other supported Semi-Annual Channel versions are only eligible to receive security updates. Microsoft recommends updating your deployment to the latest version before support for your current version expires.  
 
 ## Version history
-The following table illustrates the release cycle overlap for the Semi-Annual Channel releases. The following dates are for illustration purposes and do not represent actual or expected release dates.
+The following table illustrates the version history and support dates for the SAC releases.
 
-|Version|Availability Date| Support End Date |
-|-------|--------------- -|------------------|
-| 1801 | February 8, 2018 | August 8, 2019 <br/> 18 months after release date |
-| 1807 | July, 24, 2018 | January, 24, 2020 <br/> 18 months after release date |
+Version|Availability Date|Support End Date
+--- | --- | ---
+1801 |February 8, 2018 |August 8, 2019. 18 months after release date.
+1807 |July 24, 2018 |January 24, 2020. 18 months after release date.

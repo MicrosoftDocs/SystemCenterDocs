@@ -14,7 +14,7 @@ ms.topic: article
 
 # Management pack assessment
 
-Operations Manager 2019 includes support for [Linux and Unix](#support-for-linux-and-unix-platforms) workloads and operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operations Manager 2019 also supports a new capability called **Machine Details**, which provides the computer details (name and operating system) on which a selected workload is running.
+Operations Manager 2019 includes support for [Linux and Unix](plan-supported-crossplat-os.md) workloads and operating systems. See the following sections for detailed information. Updates and Recommendations feature in Operations Manager 2019 also supports a new capability called **Machine Details**, which provides the computer details (name and operating system) on which a selected workload is running.
 
 If there are management packs in the catalog that are designed to monitor those workloads, they will be displayed on the Updates and Recommendations screen. You will also find a list of any updates that are available for management packs that are installed in your management group.
 
@@ -130,7 +130,7 @@ The following workloads are supported for the operating systems listed below.
 
 | **Feature** | **Windows Server 2012 R2** | **Windows Server 2016**|**Windows Server 2019** |
 | --- | --- | --- | --- |
-| Active Directory Certificate Service | Y | Y | Y |
+| Active Directory Certificate Service | Y | Y |  |
 | Active Directory Domain Services | Y | Y | Y |
 | Active Directory Federation Service | Y | Y | Y |
 | Active Directory Right Management Service | Y | Y | Y |
@@ -143,7 +143,7 @@ The following workloads are supported for the operating systems listed below.
 | Print Server | Y | Y | Y |
 | Essentials | Y | Y |   |
 | Hyper-V | Y | Y |   |
-| Queueing | Y | Y | Y |
+| Queueing | Y | Y |  |
 | Remote access | Y |   |   |
 | Remote Desktop Service | Y | Y |   |
 | Web application proxy | Y |   |   |
