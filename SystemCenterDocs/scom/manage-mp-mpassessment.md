@@ -130,7 +130,7 @@ The following workloads are supported for the operating systems listed below.
 
 | **Feature** | **Windows Server 2012 R2** | **Windows Server 2016**|**Windows Server 2019** |
 | --- | --- | --- | --- |
-| Active Directory Certificate Service | Y | Y | Y |
+| Active Directory Certificate Service | Y | Y |  |
 | Active Directory Domain Services | Y | Y | Y |
 | Active Directory Federation Service | Y | Y | Y |
 | Active Directory Right Management Service | Y | Y | Y |
@@ -143,7 +143,7 @@ The following workloads are supported for the operating systems listed below.
 | Print Server | Y | Y | Y |
 | Essentials | Y | Y |   |
 | Hyper-V | Y | Y |   |
-| Queueing | Y | Y | Y |
+| Queueing | Y | Y |  |
 | Remote access | Y |   |   |
 | Remote Desktop Service | Y | Y |   |
 | Web application proxy | Y |   |   |
