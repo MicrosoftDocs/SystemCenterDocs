@@ -1,5 +1,5 @@
 ---
-description: This article contains prerequisites and set up instructions for DPM 2016 and it includes attended and unattended instructions.
+description: This article contains prerequisites and set up instructions for DPM 2016 and it includes attended and unattended instructions
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
