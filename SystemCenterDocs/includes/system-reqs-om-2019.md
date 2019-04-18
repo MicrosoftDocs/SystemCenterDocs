@@ -164,6 +164,7 @@ Windows 10 client operating system is supported for the Operations Manager 2019 
 - Windows Server 2019 - Standard, Datacenter, Server Core
 - Windows Server 2016 - Standard, Datacenter, Server Core
 - Windows Server 2012 R2 - Standard, Datacenter, Server Core
+- Windows Server 2012 – Standard, Datacenter, Server Core
 - Windows 10 - Enterprise, Pro
 - File system: %SYSTEMDRIVE% must be formatted with the NTFS file system.
 - Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
