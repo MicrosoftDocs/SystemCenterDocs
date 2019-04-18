@@ -65,7 +65,7 @@ To set up a SQL Server database:
 
     -   All services except the SQL Full-text Filter Daemon Launcher should be set to Automatic.
 
-7.  On the **Database Engine Configuration** tab, accept the Windows authentication mode setting. In **Specify SQL Server administrators**, add the user account you'll use to connect to the remote instance when you install DPM. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and click **Ready to Install** -> **Install**.
+7.  On the **Database Engine Configuration** tab, accept the Windows authentication mode setting. DPM admins need *SQL Server administrator* permissions. In **Specify SQL Server administrators**, add DPM Admins. You can add additional accounts if you need to. Complete the rest of the wizard with the default settings and click **Ready to Install** -> **Install**.
 
 8.  If you're installing SQL Server on a remote computer do the following:
 
