@@ -109,7 +109,7 @@ New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Own
 2.	Select **Use an existing virtual machine, VM template, or virtual hard disk**.
 3.	Select **Linux shielded VM template** > **Next**.
 
-![Selecting a source for the new virtual machine](media/linux-shield/vm-create-select-source.png)
+    ![Selecting a source for the new virtual machine](media/linux-shield/vm-create-select-source.png)
 
 4.	Name the VM and select **Next**.
 5.	In **Configure Hardware**, make sure the details match your template settings. Then select **Next**.
