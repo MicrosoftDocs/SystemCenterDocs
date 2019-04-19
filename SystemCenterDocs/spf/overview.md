@@ -66,12 +66,12 @@ Admin user role in VMM | Must include the credential for the VMM application poo
 - You can use Windows PowerShell cmdlets to register Operations Manager data warehouse connection settings in the SPF database. This registration enables SPF to aggregate usage data from the data warehouses.
 - The Usage web service returns utilization data that pertains to every subscription across services.
 
-**Credential** | **Requirement**
---- | ---
-Usage application pool identity in IIS | Must be a member of the Admin groups and SPF_Usage group.
-Admin group in Computer Management | Must include the credential for the Usage application pool identity
-SPF_Usage group in Computer Management | Must include a local user who is a member of the Admin group, and the credential for the Usage application pool identity.
-Database user dbo in the OperationsManagerDW SQL Server database (on the Operations Manager server) | The credentials of the user who installed Operations Manager are automatically used for logon to the dbo SQL Server security object. The same credentials should be used for all SPF application pool identities.
+| **Credential** | **Requirement** |
+| --- | --- |
+| Usage application pool identity in IIS | Must be a member of the Admin groups and SPF\_Usage group. |
+| Admin group in Computer Management | Must include the credential for the Usage application pool identity |
+| SPF\_Usage group in Computer Management | Must include a local user who is a member of the Admin group, and the credential for the Usage application pool identity. |
+| Database user dbo in the OperationsManagerDW SQL Server database (on the Operations Manager server) | The credentials of the user who installed Operations Manager are automatically used for logon to the dbo SQL Server security object. The same credentials should be used for all SPF application pool identities. |
 Database properties for the OperationsManagerDW SQL Server database (right-click) on the Operations Manager server.
 
 ### Provider web service
