@@ -29,7 +29,7 @@ Before you deploy the Operations Manager integration pack, install and configure
 - Install the Operations Manager console on each computer where an Orchestrator Runbook server or Runbook Designer is installed, if that server needs to interact with Operations Manager. 
 - On each computer where an Orchestrator Runbook server or Runbook Designer needs to interact with Operations Manager, install the Operations Manager console. 
 - The Orchestrator integration library management pack is required by the Create Alert object. 
-- The Create Alert object installs this management pack automatically in Operations Manager the first time that it is run. 
+- The Create Alert object installs this management pack automatically in Operations Manager the first time it's run. 
 
 The Create Alert object requires the Orchestrator integration library management pack. The Create Alert object automatically installs this management pack in Operations Manager the first time it runs. If you want to uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager. 
 
@@ -89,7 +89,7 @@ Use the following steps to enable or disable all SCHANNEL protocols across the s
 
     ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
 
-   d. Type **SSL 3.0**, and then click **Enter**.
+   d. Type **SSL 3.0**, and then select **Enter**.
 
    e. Repeat the previous two steps to create keys for TLS 0, TLS 1.1, and TLS 1.2. These keys resemble directories.
 

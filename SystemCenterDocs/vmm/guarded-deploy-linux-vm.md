@@ -17,7 +17,7 @@ This article describes how to deploy Linux shielded virtual machines (VMs) in Sy
 
 
 ## Procedure to shield a Linux VM
-Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines. Shielded VMs provide protection against malicious administrator actions both when the VM's data is at rest or when untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
+Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based virtual machines. Shielded VMs provide protection against malicious administrator actions when the VM's data is at rest or when untrusted software is running on Hyper-V hosts. [Learn more](guarded-deploy-vm.md).
 
 With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs. This support is available in VMM 1801.
 
