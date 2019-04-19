@@ -66,7 +66,7 @@ Follow these steps:
 
 1. Set Windows to use only TLS 1.2.
 
-**Method 1: Manually modify the registry**
+   **Method 1: Manually modify the registry**
 
    >[!Important]
    >Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs.
@@ -78,11 +78,12 @@ Follow these steps:
 
    a. Start Registry Editor. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
 
-   b. Locate the following registry subkey:   HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
+   b. Locate the following registry subkey:          
+    HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
 
    c. Right-click  **Protocol**, and point to **New** > **Key**.
 
-   ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
+      ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
 
    d. Type **SSL 3.0**, and then select **Enter**.
 
@@ -106,34 +107,34 @@ Follow these steps:
 
    Run the following Windows PowerShell script in administrator mode to automatically configure Windows to use only the TLS 1.2 protocol:
 
-    ```    
-        $ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
-        $ProtocolSubKeyList = @("Client", "Server")
-        $DisabledByDefault = "DisabledByDefault"
-        $Enabled = "Enabled"
-        $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
+   ```    
+       $ProtocolList       = @("SSL 2.0","SSL 3.0","TLS 1.0", "TLS 1.1", "TLS 1.2")
+       $ProtocolSubKeyList = @("Client", "Server")
+       $DisabledByDefault = "DisabledByDefault"
+       $Enabled = "Enabled"
+       $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"
+        
+       foreach($Protocol in $ProtocolList)
+       {
+         Write-Host " In 1st For loop"
+         foreach($key in $ProtocolSubKeyList)
+         {		
+             $currentRegPath = $registryPath + $Protocol + "\" + $key
+             Write-Host " Current Registry Path $currentRegPath"
+       
+             if(!(Test-Path $currentRegPath))
+             {
+                 Write-Host "creating the registry"
+                 New-Item -Path $currentRegPath -Force | out-Null			
+             }
+             if($Protocol -eq "TLS 1.2")
+             {
+                 Write-Host "Working for TLS 1.2"
+                 New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType WORD -Force | Out-Null
+                 New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force |Out-Null
 
-        foreach($Protocol in $ProtocolList)
-        {
-          Write-Host " In 1st For loop"
-          foreach($key in $ProtocolSubKeyList)
-          {		
-              $currentRegPath = $registryPath + $Protocol + "\" + $key
-              Write-Host " Current Registry Path $currentRegPath"
-
-              if(!(Test-Path $currentRegPath))
-              {
-                  Write-Host "creating the registry"
-                  New-Item -Path $currentRegPath -Force | out-Null			
               }
-              if($Protocol -eq "TLS 1.2")
-              {
-                  Write-Host "Working for TLS 1.2"
-                  New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
-                  New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null
-
-              }
-              else
+             else
               {
                   Write-Host "Working for other protocol"
                   New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null
