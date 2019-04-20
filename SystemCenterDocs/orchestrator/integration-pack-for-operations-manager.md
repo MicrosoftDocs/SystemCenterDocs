@@ -130,8 +130,8 @@ Follow these steps:
              if($Protocol -eq "TLS 1.2")
              {
                  Write-Host "Working for TLS 1.2"
-                 New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType WORD -Force | Out-Null
-                 New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force |Out-Null
+                 New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null
+                 New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null
 
               }
              else
