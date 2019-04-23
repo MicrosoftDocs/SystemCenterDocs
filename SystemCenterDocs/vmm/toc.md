@@ -45,6 +45,7 @@
 ### [Plan the VMM compute fabric](plan-compute.md)
 ### [Plan the VMM networking fabric](plan-network.md)
 ### [Identify supported storage arrays](supported-arrays.md)
+### [Supported storage arrays](supported-arrays-2019.md)
 ## Upgrade and install
 ### [Upgrade VMM](upgrade-vmm.md)
 ### [Install VMM](install.md)
