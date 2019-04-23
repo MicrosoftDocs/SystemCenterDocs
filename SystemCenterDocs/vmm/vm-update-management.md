@@ -17,7 +17,7 @@ This article provides information about Azure update management feature in Syste
 
 Using Azure update Management feature, you can manage updates for Virtual Machines (VMs) and Workloads running in a VMM.
 
-Currently, VMM supports update management feature for all new VMs with Windows Server operating system, and are deployed using a VM template with *Azure Update Management Extension* enabled.
+Currently, VMM supports update management feature for all new VMs with Windows operating system, and are deployed using a VM template with *Azure Update Management Extension* enabled.
 
 ## Create a VM template linked to Azure profile
 
