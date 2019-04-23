@@ -9,6 +9,7 @@ ms.date: 06/28/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+monikerRange: '<sc-vmm-2019'
 ---
 
 # Supported storage arrays
@@ -18,7 +19,7 @@ ms.technology: virtual-machine-manager
 
  Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, and SAS connections, and network file shares.
 
- This article provides a list of supported storage devices for VMM 2016 onwards.
+ This article provides a list of supported storage devices for VMM 2016, 1801, 1807.
 
 
 
