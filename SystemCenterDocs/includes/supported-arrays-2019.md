@@ -1,0 +1,22 @@
+---
+ms.assetid:
+title: include file
+description: Include file to summarize the supported storage arrays for VMM 2019.
+author: JYOTHIRMAISURI
+ms.author: V-jysur
+manager: vvithal
+ms.date: 04/23/2019
+ms.topic: include
+ms.prod: system-center
+ms.technology: virtual-machine-manager
+---
+
+## Supported storage arrays in VMM 2019
+
+
+ Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, and SAS connections, and network file shares.
+
+
+| **Device** | **Protocol** | **Min Controller Firmware** | **SMI-S** | **Details** |
+| --- | --- | --- | --- | --- |
+| Hewlett Packard Enterprise<br/><br/> 3PAR | SMI-S | 3PAR: 3PAR v. 3.2.2 MU3 or later<br/><br/> 3PAR 8000 & 20000, 7000 & 10000 | SMI-S CIM version 1.5 | [Link](https://h20392.www2.hpe.com/portal/swdepot/displayProductInfo.do?productNumber=System_Center) |
