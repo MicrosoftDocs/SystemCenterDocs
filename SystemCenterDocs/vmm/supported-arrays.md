@@ -9,10 +9,11 @@ ms.date: 04/23/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: '<sc-vmm-2019'
 ---
 
 # Supported storage arrays
+
+::: moniker range="<sc-vmm-2019"
 
  Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, and SAS connections, and network file shares.
 
@@ -37,6 +38,8 @@ monikerRange: '<sc-vmm-2019'
 |IBM <br/><br/> Spectrum Virtualize Family Product - SAN Volume Controller(SVC)/Storwize V7000, Storwize V5000, IBM FlashSystem V9000	| iSCSI/FC	| 7.8.0 and later|embedded SMI-S <br/>v1.6.1 | [Link](https://www.ibm.com/support/knowledgecenter/STVLF4_7.8.1/spectrum.virtualize.781.doc/svc_sdkintro_215ebp.html) |
 |Pure Storage <br/><br/> FlashArray M	| iSCSI/FC	| Purity 4.9 and later|SMI-S <br/>v1.6.1 | [Link](https://support.purestorage.com/Solutions/Microsoft_Platform_Guide/System_Center_Suite/SMI-S_Provider_Guide) |
 |DELL-EMC <br/><br/> PS Series | iSCSI	| PS Firmware: v8.1 or later <br/><br/> HIT Kit: v5.1 or later | SMP v5.1| [Link](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Feqlsupport.dell.com%2Fsupport%2Fdownload.aspx%3Fid%3D3199&data=02%7C01%7Cyuvraj.attarde%40microsoft.com%7Cdc95f3eaa62149edbbe208d5dbdbf125%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636656660129086767&sdata=WJp3U%2B%2FkklGAJ90bVomQmKK0NjhaVdJ3b9%2FOkiUytl4%3D&reserved=0) |
+
+::: moniker-end
 
 ::: moniker range="sc-vmm-2019"
 
