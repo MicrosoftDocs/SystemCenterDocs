@@ -14,7 +14,7 @@ ms.topic: article
 
 # High Availability and Disaster Recovery
 
-Various System Center 2016 – Operations Manager servers and features can potentially fail, impacting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to recover the failing feature. 
+Various System Center – Operations Manager servers and features can potentially fail, impacting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to recover the failing feature. 
 
 ## High availability
 
@@ -30,27 +30,27 @@ Operations console connections can be made highly available.  This is accomplish
 > A Network Load Balancer is not supported for the Operations Manager web console server.
 
 Multiple gateway servers can be deployed across a trust boundary to provide redundant pathways for agents that lie across that trust boundary. Just as agents can fail over between a primary management server and one or more secondary management servers, they can also fail over between gateway servers. In addition, multiple gateway servers can be used to distribute the workload of managing agentless-managed computers and managed network devices.  
-  
+
 In addition to providing redundancy through agent-gateway failover, gateway servers can be configured to fail over between management servers in a management group if multiple management servers are available.  
 
-While SQL Server Reporting Services supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it is not supported with Operations Manager.  Operations Manager Reporting installs a custom security extension as part of the setup of the front-end components, which cannot be replicated across the web farm. 
+While SQL Server Reporting Services supports a scale-out deployment model that allows you to run multiple report server instances that share a single report server database, it is not supported with Operations Manager.  Operations Manager Reporting installs a custom security extension as part of the setup of the front-end components, which cannot be replicated across the web farm.
 
 ## Disaster recovery
 
 Disaster recovery relates to measures taken to ensure that operations can be resumed in the event of a catastrophic failure (for example, loss of the entire data center that hosts the primary infrastructure).  It is an important element that must be considered in any deployment and the decisions that are made in planning for disaster recovery affect how Operations Manager will be able to continue supporting proactive monitoring and reporting of the performance and availability of your critical IT services.  This section will focus on the recommended strategy of disaster recovery and resiliency and what steps should be taken to ensure a smooth recovery.
 
 While HA and DR solutions will provide protection from system failure or system loss, they should not be relied on for protection from accidental, unintended, or malicious data loss or corruption. In these cases, backup copied or lagged replication copies might have to be leveraged for restore operations.  In many cases, a restore operation is the most appropriate form of DR. One example of this could be a low-priority reporting database or analysis data. In many cases, the cost to enable multisite DR at the system or application level far outweighs the value of the data. In cases in which the near-term value of the data is low and the need to access the data can be delayed without severe business impact in the case of a failure or site DR excessive, consider using simple backup and restore processes for DR if the cost savings warrant it.
- 
+
 Understanding the impact and tolerance for downtime will help drive the decisions that need to be understood in order to properly design the architecture for Operations Manager and the level of complexity and cost required to support disaster recovery.  Additionally, you have to consider the extent of monitoring data loss the IT organization can tolerate without causing business consequences.  This is best described in two terms: recovery time objective (RTO) and recovery point objective (RPO).  
 
 The two most common disaster recovery design configurations for Operations Manager are:
 
-- Creating a duplicate management group deployed to your secondary data center that duplicates  in scale and configuration, the primary management group. 
+- Creating a duplicate management group deployed to your secondary data center that duplicates  in scale and configuration, the primary management group.
 - Deploying additional servers in a secondary data center to support the Operational and Data Warehouse database, with management servers deployed in a cold-standby configuration, not participating in the management group until recovery actions need to be performed.
 
 Deploying a duplicate management group is an option when there is no tolerance for downtime; however, it is the most complex option.  Configuration between both needs to be consistent so that when you cut over, there is no difference in what is monitored, alerted or reported, presented, and finally escalated.  Integration with other monitoring platforms or ITSM platforms such as System Center 2016 - Service Manager, Remedy or ServiceNow will need to exist as well, and possibly configured in an active/passive state to avoid duplication of incidents, configuration items, etc.  Agents will be multihomed between both management groups, so there will be duplication of data.    
 
-The following diagram is an example of this design scenario.<br><br> ![Duplicate MGs](./media/plan-hadr-design/om2016-dr-redundant-mg.png)<br> 
+The following diagram is an example of this design scenario.<br><br> ![Duplicate MGs](./media/plan-hadr-design/om2016-dr-redundant-mg.png)<br>
 
 If immediate recovery is not necessary for your Operations Manager deployment and you want to avoid the complexity of a duplicate management group, alternatively you can deploy additional management group components in your secondary data center in order to retain functionality of your management group.  At a minimum, consider implementing a SQL Server 2014 or 2016 Always On Availability Group to provide recovery of the Operational and Data Warehouse databases between two or more datacenters, where a two-node failover cluster instance (FCI) is deployed in the primary data center, and a standalone SQL Server in the secondary datacenter as part of a single Windows Server Failover Cluster (WSFC).  The secondary replica for the Always On Availability Group would be on the non-FCI standalone instance as shown in the following diagram.<br><br> ![Simple DR Config](./media/plan-hadr-design/om2016-dr-simple-config.png)<br>
 
@@ -61,5 +61,3 @@ If one site goes offline, the agent will fail over to the management server in a
 
 Operations Manager can be deployed on Azure virtual machines as an alternative disaster recovery option to maintain continuity of the management group.  It will be necessary to also deploy SQL Server on a virtual machine in Azure and not in a hybrid configuration, as the latency between a management server and the SQL Server hosting the Operations Manager databases will negatively impact performance of the management group.  
 Consider the monitoring scope, network topology and network connectivity to Microsoft Azure (i.e. site-to-site VPN or ExpressRoute), integration points (i.e. ITSM solutions, other System Center products, third-part add-ons, etc.), console access, regulatory or relevant laws or polices, etc. in order to properly architect this scenario within Azure IaaS or other public cloud providers.  
-
-
