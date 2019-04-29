@@ -20,9 +20,12 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 Once you have installed the first management server and created the management group, you can follow the steps for installing an additional management server if you are planning to include additional management servers to provide high availability and increased capacity for your monitoring workloads.  
 
+::: moniker range="sc-om-2016"
+
 >[!NOTE]
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
 >
+::: moniker-end
 
 ### To install the first management server in the management group
 
@@ -50,9 +53,9 @@ Once you have installed the first management server and created the management g
 
 8.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Next**.
 
-9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database. 
+9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database.
 
-  * If you installed SQL Server by using the default instance, you only have to type the server name. 
+  * If you installed SQL Server by using the default instance, you only have to type the server name.
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
   * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
@@ -88,7 +91,7 @@ Once you have installed the first management server and created the management g
 
 12. When the **Configuration**, **Configure the data warehouse database** page opens, in the **Server name and instance name** box, type the server name and the name of the instance of SQL Server for the database server that will host the data warehouse database.   
 
-  * If you installed SQL Server by using the default instance, you only have to type the server name. 
+  * If you installed SQL Server by using the default instance, you only have to type the server name.
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
   * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
@@ -107,7 +110,7 @@ Once you have installed the first management server and created the management g
 
 15. On the **Configuration**, **Configure Operations Manager accounts** page, we recommend that you use the **Domain Account** option for the **Management server action account**, the **System Center Configuration service and System Center Data Access service** account, the **Data Reader account**, and the **Data Writer account**. None of them should have domain administrator credentials. Click **Next**.
 
-16. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
+16. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**.
 
 17. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
@@ -137,9 +140,9 @@ Perform the following steps to add additional management servers in your managem
 
 6.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood and agree with the license terms**, and then click **Next**.
 
-7. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database. 
+7. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database.
 
-  * If you installed SQL Server by using the default instance, you only have to type the server name. 
+  * If you installed SQL Server by using the default instance, you only have to type the server name.
   * If you changed the default SQL Server port, you must type the new port number in the **SQL Server port** box.  
   * If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  
   * If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener and for **SQL Server port**, type the port number of the availability group listener.    
@@ -168,7 +171,7 @@ Perform the following steps to add additional management servers in your managem
     > You must provide the same credentials for the Management server action account and the System Center Configuration Service and System Center Data Access service that you provided when you created the first management server in your management group.
     >
 
-11. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
+11. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**.
 
 12. If Windows Update is not enabled on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
@@ -182,7 +185,7 @@ Perform the following steps to add additional management servers in your managem
 
 17. In **Device Management**, select **Management Servers**. In the results pane, you should see the management server that you just installed with a green check mark in the **Health State** column.  
 
-## To install the first management server in the management group from the Command Prompt 
+## To install the first management server in the management group from the Command Prompt
 
 1.  Log on to the server by using an account that has local administrative credentials.
 

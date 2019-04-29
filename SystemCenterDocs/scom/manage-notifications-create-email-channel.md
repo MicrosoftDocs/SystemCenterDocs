@@ -1,6 +1,6 @@
 ---
 title: How to Enable an Email Notification Channel
-description: This article highlights the section titles contained within this section of the Operations Manager 2016 documentation.
+description: This article highlights the section titles contained within this section of the Operations Manager documentation.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm

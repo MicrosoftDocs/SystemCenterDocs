@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to install the Operations Manager Web console
 
-You can install the web console when you install System Center 2016 - Operations Manager  or version 1801, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md). 
+You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
@@ -55,9 +55,12 @@ The local and remote parameters are as follows:
 
 ### To install a stand-alone Web console
 
+::: moniker range="sc-om-2016"
+
 >[!NOTE]
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Web console role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
 
+::: moniker-end
 
 1.  Log on to the computer that will host the web console with an account that has local administrative credentials.
 
@@ -69,7 +72,7 @@ The local and remote parameters are as follows:
 
     > [!NOTE]
     > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    > 
+    >
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -113,7 +116,7 @@ The local and remote parameters are as follows:
 5.  On the **Prerequisites** page, review and address any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
     > [!NOTE]
-    > Installation of the System Center 2016 - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+    > Installation of the System Center - Operations Manager web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
 6.  If the Prerequisite checker returns no warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
@@ -142,7 +145,7 @@ The local and remote parameters are as follows:
 
     > [!IMPORTANT]
     > Use the `/WebConsoleSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
-    > 
+    >
     > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     > [!NOTE]
@@ -158,7 +161,7 @@ The local and remote parameters are as follows:
 
 ## To configure permissions inheritance for the Web console
 
-The following steps are for configuring permission inheritance for the System Center 2016 - Operations Manager Web console.  
+The following steps are for configuring permission inheritance for the System Center - Operations Manager Web console.  
 
 1.  In Windows Explorer, navigate to the MonitoringView folder in the installation directory for the web console (by default, C:\Program Files\System Center 2016\Operations Manager\WebConsole\MonitoringView), right-click the TempImages folder, and click **Properties**.
 
