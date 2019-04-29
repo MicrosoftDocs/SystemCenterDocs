@@ -4,7 +4,7 @@ title: Configure Authentication with Reporting server
 description: This topic describes how to configure the Operations Manger reporting server to be compliant with Federal Information Processing Standards.
 author: JYOTHIRMAISURI
 manager: carmonm
-ms.date: 10/12/2016
+ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -13,14 +13,14 @@ ms.topic: article
 
 # Configure authentication for the Reporting server
 
-Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
+Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
 
 
 ##  Enable FIPS on the Reporting server
 
 To enable FIPS on the reporting server, change the configuration in the application-level Web.config file to specify that ASP.NET use the Triple Data Encryption Standard (3DES) algorithm. To do this, follow these steps.
 
-1.	In a text editor such as Notepad, open the **Web.config** file in the **ReportManager** and **ReportServer** sub-folders under the SQL Server Reporting Services installation root folder  `C:\Program Files\Microsoft SQL Server\<InstanceName>\Reporting Services`. 
+1.	In a text editor such as Notepad, open the **Web.config** file in the **ReportManager** and **ReportServer** sub-folders under the SQL Server Reporting Services installation root folder  `C:\Program Files\Microsoft SQL Server\<InstanceName>\Reporting Services`.
 
 2.	In the **Web.config** file, locate the `<system.web>` section.
 
@@ -35,4 +35,4 @@ To enable FIPS on the reporting server, change the configuration in the applicat
 
 ## Next steps
 
-- To configure SSL encryption and FIPS compliance for the Web console server, see [Configure Authentication with the Web console](manage-config-authentication-web-console.md) 
+- To configure SSL encryption and FIPS compliance for the Web console server, see [Configure Authentication with the Web console](manage-config-authentication-web-console.md)

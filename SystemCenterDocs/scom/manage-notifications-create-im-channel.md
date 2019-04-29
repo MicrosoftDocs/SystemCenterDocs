@@ -4,7 +4,7 @@ description: This article describes how to create an instant message notificatio
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -13,7 +13,7 @@ ms.assetid: 086970a5-845c-4a67-b164-a15f0af3213d
 ---
 # How to enable an instant message notification channel
 
-To configure alert notifications for System Center 2016 - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using an instant message.  
+To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers by using an instant message.  
 
 Before you begin, gather the following information from your instant message server:  
 
