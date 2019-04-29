@@ -20,7 +20,7 @@ In System Center Operations Manager, an agent is a service that is installed on 
 
 On a monitored Windows computer, the Operations Manager agent is listed as the Microsoft Monitoring Agent service. The Microsoft Monitoring Agent service collects event and performance data, executes tasks, and other workflows defined in a management pack. Even when the service is unable to communicate with the management server it reports to, the service continues to run and queues the collected data and events on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data and events to the management server.
 
-> [!NOTE] 
+> [!NOTE]
 > The Microsoft Monitoring Agent service is sometimes referred to as the health service.
 
 The Microsoft Monitoring Agent service also runs on management servers. On a management server, the service runs monitoring workflows and manages credentials. To run workflows, the service initiates MonitoringHost.exe processes using specified credentials. These processes monitor and collect event log data, performance counter data, Windows Management Instrumentation (WMI) data, and run actions such as scripts.
@@ -62,19 +62,19 @@ Communication between the management server and the UNIX and Linux agent is spli
 
     Used for all monitoring operations and include the discovery of agents that were already installed.
 
-Communication between the Operations Manager management server and UNIX and Linux agent uses WS-Man over HTTPS and the WinRM interface.  All agent maintenance tasks are performed over SSH on port 22.  All health monitoring is performed over WS-MAN on port 1270. The management server requests performance and configuration data via WS-MAN before evaluating the data to provide health status.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account. 
+Communication between the Operations Manager management server and UNIX and Linux agent uses WS-Man over HTTPS and the WinRM interface.  All agent maintenance tasks are performed over SSH on port 22.  All health monitoring is performed over WS-MAN on port 1270. The management server requests performance and configuration data via WS-MAN before evaluating the data to provide health status.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
 
-> [!NOTE] 
+> [!NOTE]
 > All credentials referred to in this article pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
 
-To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager and later can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which is use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
+To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager and later can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which is in use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
 
 1. Open the **Registry Editor** from an elevated command prompt.
 2. Create registry key **UseMIAPI** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`.
 
 If you need to restore the original configuration using the WSMAN Sync APIs, you can delete the **UseMIAPI** registry key.
 
-## Agent security 
+## Agent security
 
 ### Authentication on UNIX/Linux computer
 
@@ -85,7 +85,7 @@ For detailed instructions for specifying credentials and configuring accounts, s
 
 ### Authentication with gateway server
 
-Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group.  Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication. 
+Gateway servers are used to enable agent-management of computers that are outside the Kerberos trust boundary of a management group.  Because the gateway server resides in a domain that is not trusted by the domain that the management group is in, certificates must be used to establish each computer's identity, agent, gateway server, and management server. This arrangement satisfies the requirement of Operations Manager for mutual authentication.
 
 This requires you to request certificates for each agent that will report to a gateway server and import those certificates into the target computer using the MOMCertImport.exe tool, which is located on the installation media SupportTools\ (amd64 or x86) directory.  You need to have access to a certification authority (CA) which can be a public CA such as VeriSign, or you can use Microsoft Certificate Services.  
 
@@ -108,9 +108,9 @@ Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TC
 - After a target device has been discovered, an agent can be deployed to it. Agent installation requires:
 - Opening RPC ports beginning with endpoint mapper TCP 135 and the Server Message Block (SMB) port TCP/UDP 445.
 - Enabling the File and Printer Sharing for Microsoft Networks and the Client for Microsoft Networks services. (This ensures that the SMB port is active.)
-- If enabled, Windows Firewall Group Policy settings for Allow remote administration exception and Allow file and printer sharing exception must be set to Allow unsolicited incoming messages from to the IP address and subnets for the primary and secondary management servers for the agent. 
+- If enabled, Windows Firewall Group Policy settings for Allow remote administration exception and Allow file and printer sharing exception must be set to Allow unsolicited incoming messages from to the IP address and subnets for the primary and secondary management servers for the agent.
 - An account that has local administrator rights on the target computer.
-- Windows Installer 3.1. To install, see article 893803 in the Microsoft Knowledge Base 
+- Windows Installer 3.1. To install, see article 893803 in the Microsoft Knowledge Base
 http://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
 - Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation installs MSXML 6 on the target device if it is not already installed. <verify if we need to continue calling this out>
 
@@ -123,7 +123,7 @@ In System Center Operations Manager, the management server uses two protocols to
 
 The protocol that is used depends on the action or information that is requested on the management server.  All actions, such as agent maintenance, monitors, rules, tasks, and recoveries, are configured to use predefined profiles according to their requirement for an unprivileged or privileged account.
 
-> [!NOTE] 
+> [!NOTE]
 > All credentials referred to in this section pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager.  Contact your system administrator for credentials and authentication information.
 
 By elevation, an unprivileged account can assume the identity of a privileged account on the UNIX or Linux computer.  The elevation process is performed by the UNIX su (superuser) and sudo programs that use the credentials that the management server supplies.  For privileged agent maintenance operations that use SSH (such as discovery, deployment, upgrades, uninstallation, and agent recovery), support for su, sudo elevation, and SSH key authentication (with or without passphrase) is provided.  For privileged WS-Management operations (such as viewing secure log files), support for sudo elevation (without password) is supported.
@@ -138,14 +138,14 @@ To assign computers to management groups by using AD DS:
 - The functional level of AD DS domains must be Windows 2008 native or higher
 - Agent-managed computers and all management servers must be in the same domain or in two-way trusted domains.
 
-> [!NOTE] 
+> [!NOTE]
 > An agent that determines it is installed on a domain controller will not query Active  Directory for configuration information.  This is for security reasons.  Active Directory Integration is disabled by default on domain controllers because the agent runs under the Local System account.  The Local System account on a domain controller has Domain Administrator rights; therefore, it detects all Management Server Service Connection Points that are registered in Active Directory, regardless of the domain controller’s security group membership.  As a result, the agent tries to connect to all management servers in all management groups.  The results can be unpredictable, thus presenting a security risk.
 
-Agent assignment is accomplished by using a Service Connection Point (SCP), which is an Active Directory object for publishing information that client applications can use to bind to a service. This is created by a domain administrator running the **MOMADAdmin.exe** command-line tool to create an AD DS container for an Operations Manager management group in the domains of the computers it manages. The AD DS security group that is specified when running **MOMADAdmin.exe** is granted Read and Delete Child permissions to the container.  The SCP contains connection information to the management server, including the server’s FQDN and port number. Operations Manager agents can automatically discover management servers by querying for SCPs.  Inheritance is not disabled, and because an agent can read the integration information registered in AD, if you force inheritance for the  Everyone group to read all objects at the root level in Active Directory, this will severely affect and essentially interrupt AD Integration functionality.  If you explicitly force inheritance throughout the entire directory by granting the Everyone group read  permissions, you must block this inheritance at the top-level AD Integration container, named **OperationsManager**, and all child objects.  If you fail to do this, AD Integration will not work as designed and you will not have reliable and consistent primary and failover assignment for agents deployed.  Additionally, if you happen to have more than one management group, all agents in both management groups will be multi-homed as well.  
+Agent assignment is accomplished by using a Service Connection Point (SCP), which is an Active Directory object for publishing information that client applications can use to bind to a service. This is created by a domain administrator running the **MOMADAdmin.exe** command-line tool to create an AD DS container for an Operations Manager management group in the domains of the computers it manages. The AD DS security group that is specified when running **MOMADAdmin.exe** is granted Read and Delete Child permissions to the container.  The SCP contains connection information to the management server, including the server’s FQDN and port number. Operations Manager agents can automatically discover management servers by querying for SCPs.  Inheritance is not disabled, and because an agent can read the integration information registered in AD, if you force inheritance for the  Everyone group to read all objects at the root level in Active Directory, this will severely affect and essentially interrupt AD Integration functionality.  If you explicitly force inheritance throughout the entire directory by granting the Everyone group read  permissions, you must block this inheritance at the top-level AD Integration container, named **OperationsManager**, and all child objects.  If you fail to do this, AD Integration will not work as designed and you will not have reliable and consistent primary and failover assignment for agents deployed.  Additionally, if you happen to have more than one management group, all agents in both management groups will be multi-homed as well. 
 
 This feature works well for controlling agent assignment in a distributed management group deployment, to prevent agents from reporting to management servers that are dedicated to resource pools or management servers in a secondary data center in a warm-standby configuration to prevent agent failover during normal operation.  
 
-Configuration of agent assignment is managed by an Operations Manager administrator using the Agent Assignment and Failover Wizard to assign computers to a primary management server and secondary management server. 
+Configuration of agent assignment is managed by an Operations Manager administrator using the Agent Assignment and Failover Wizard to assign computers to a primary management server and secondary management server.
 
 >[!NOTE]
 >Active Directory Integration is disabled for agents that were installed from the Operations console. By default, Active Directory Integration is enabled for agents installed manually using MOMAgent.msi.
