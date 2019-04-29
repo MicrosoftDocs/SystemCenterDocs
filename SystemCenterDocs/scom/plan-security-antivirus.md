@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Configure Antivirus for Operations Manager Components
 description: This article provides design guidance for anti-virus exclusions as they relate to Operations Manager agent and server roles.
 author: JYOTHIRMAISURI
@@ -14,7 +14,7 @@ ms.topic: article
 
 # Configuring antivirus exclusions for agent and components
 
-This article outlines antivirus exclusions as they pertain to System Center 2016 - Operations Manager and version 1801.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
+This article outlines antivirus exclusions as they pertain to System Center - Operations Manager.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
 
 ## Exclusions by process executable
 
@@ -39,7 +39,7 @@ The following directory-specific exclusions for Operations Manager includes real
 
 ## Exclusion of file type by extension
 
-The following file name extension-specific exclusions for Operations Manager 2016 includes real-time scans, scheduled scans, and local scans.
+The following file name extension-specific exclusions for Operations Manager includes real-time scans, scheduled scans, and local scans.
 
 |Component | File Type Extension Exclusion |
 |----------|----------|

@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,10 +14,10 @@ ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 
 # How to configure and use Active Directory Integration for agent assignment
 
-System Center 2016 Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups. This topic will help you create and manage the configuration of the container in Active Directory, and agent assignment of management servers agents should report to.
+System Center Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups. This topic will help you create and manage the configuration of the container in Active Directory, and agent assignment of management servers agents should report to.
 
 ## Create an Active Directory Domain Services Container for a management group
-You can use the following command-line syntax and procedure to create an Active Directory Domain Service (AD DS) container for a System Center 2016 - Operations Manager management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager management server. MOMADAdmin.exe must be run by an administrator of the specified domain.  
+You can use the following command-line syntax and procedure to create an Active Directory Domain Service (AD DS) container for a System Center - Operations Manager management group. MOMADAdmin.exe is provided for this purpose and is installed with the Operations Manager management server. MOMADAdmin.exe must be run by an administrator of the specified domain.  
 
 **Command line syntax:**  
 
@@ -122,7 +122,7 @@ Changing the agent assignment rule can result in computers no longer being assig
 
     1.  In the **Find Computers** dialog box, type the desired criteria for assigning computers to this management server or type in your specific LDAP query.
 
-        The following LDAP query will only return computers running the Windows Server operating system and exclude domain controllers - `(&(objectCategory=computer)(operatingsystem=*server*))`.  This example LDAP query will only return computers running the Windows Server operating system and excludes domain controllers and servers hosting the Operations Manager or Service Manager management server role - `(&(objectCategory=computer)(operatingsystem=*server*)(!(userAccountControl:1.2.840.113556.1.4.803:=8192)(!(servicePrincipalName=*MSOMHSvc*))))`.  
+        The following LDAP query will only return computers running the Windows Server operating system and exclude domain allows you to take advantagelers - `(&(objectCategory=computer)(operatingsystem=*server*))`.  This example LDAP query will only return computers running the Windows Server operating system and excludes domain controllers and servers hosting the Operations Manager or Service Manager management server role - `(&(objectCategory=computer)(operatingsystem=*server*)(!(userAccountControl:1.2.840.113556.1.4.803:=8192)(!(servicePrincipalName=*MSOMHSvc*))))`.  
 
         For more information about LDAP queries, see  [Creating a Query Filter](http://go.microsoft.com/fwlink/?LinkId=73366) and [Active Directory: LDAP Syntax Filters](https://social.technet.microsoft.com/wiki/contents/articles/5392.active-directory-ldap-syntax-filters.aspx).
 
@@ -144,7 +144,7 @@ Changing the agent assignment rule can result in computers no longer being assig
 
 11.  In the **Management Server Properties** dialog box, click **OK**.  
 
-     Note that it can take up to one hour for the agent assignment setting to propagate in AD DS. 
+     Note that it can take up to one hour for the agent assignment setting to propagate in AD DS.
 
 When complete, the following rule is created in the management group and targets the **AD Assignment Resource Pool** class.<br><br> ![AD Integration agent assignment rule](./media/manage-ad-integration-agent-assignment/om2016-adintegration-rules.png)<br> This rule includes the agent assignment configuration information that you specified in the **Agent Assignment and Failover Wizard**, such as the LDAP query.
 
