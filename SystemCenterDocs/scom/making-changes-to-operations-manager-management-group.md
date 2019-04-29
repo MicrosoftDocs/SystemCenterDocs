@@ -16,17 +16,17 @@ ms.topic: article
 
 After the initial deployment of System Center 2016 – Operations Manager, you might need to make changes or upgrades to the original deployment for reasons such as the following:
 
-- You need to replace hardware that is experiencing problems and that is no longer considered reliable.  
+- Replace hardware that is experiencing problems and that is no longer considered reliable.  
 
-- You need to replace hardware as part of the upgrade process from System Center Operations Manager 2012 R2.  
+- Replace hardware as part of the upgrade process from System Center Operations Manager 2012 R2.  
 
-- You need to add additional hardware to improve scalability and performance.  
+- Add additional hardware to improve scalability and performance.  
 
-- You need to move a database and log file to a different volume because of space or performance reasons.  
+- Move a database and log file to a different volume because of space or performance reasons.  
 
-- You need to change hardware that is leased and is due to expire soon.  
+- Change hardware that is leased and is due to expire soon.  
 
-- You need to change or upgrade hardware to comply with new hardware standards.  
+- Change or upgrade hardware to comply with new hardware standards.  
 
 - You initially installed multiple Operations Manager features on a single server and you need to distribute some components to other servers.  
 

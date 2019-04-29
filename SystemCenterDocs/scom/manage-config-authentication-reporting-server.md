@@ -13,14 +13,14 @@ ms.topic: article
 
 # Configure authentication for the Reporting server
 
-Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS compliant.  
+Follow these steps to configure the Operations Manager Reporting server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS) compliant. Enabling FIPS compliance for System Center - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory etc.), also be FIPS-compliant.  
 
 
 ##  Enable FIPS on the Reporting server
 
 To enable FIPS on the reporting server, change the configuration in the application-level Web.config file to specify that ASP.NET use the Triple Data Encryption Standard (3DES) algorithm. To do this, follow these steps.
 
-1.	In a text editor such as Notepad, open the **Web.config** file in the **ReportManager** and **ReportServer** sub-folders under the SQL Server Reporting Services installation root folder  `C:\Program Files\Microsoft SQL Server\<InstanceName>\Reporting Services`.
+1.	In a text editor such as Notepad, open the **Web.config** file in the **ReportManager** and **ReportServer** subfolders under the SQL Server Reporting Services installation root folder  `C:\Program Files\Microsoft SQL Server\<InstanceName>\Reporting Services`.
 
 2.	In the **Web.config** file, locate the `<system.web>` section.
 
