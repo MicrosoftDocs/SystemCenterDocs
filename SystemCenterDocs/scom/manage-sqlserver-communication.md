@@ -5,7 +5,7 @@ description: This article describes how to reconfigure Operations Manager if you
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/17/2018
+ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,10 +20,10 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 1.	On each management server run **regedit** from an elevated **Command Prompt**, then edit:
 
- -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database` 
+ -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database`
 	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.    
 
- -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup` 
+ -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
 	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
 2.	On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for current branch `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
@@ -64,7 +64,7 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 9. Right-click `dbo. MT_Microsoft$SystemCenter$DataWarehouse$AppMonitoring_Log`, and then click **Edit Top 200 Rows**.
 
-10. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`. 
+10. In the results pane, scroll to the right to the column titled  `Post_MainDatabaseServerName_<GUID>`.
 
 11. In the first row, enter `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\instance` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
