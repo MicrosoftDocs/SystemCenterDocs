@@ -39,7 +39,7 @@ Table A
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
 You'll need to set up a SQL Server database if:
 
--   You're running DPM 2019, 2016 or DPM 2012 R2.
+-   You're running DPM 2019, 2016 
 
 To set up a SQL Server database:
 

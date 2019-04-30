@@ -4,8 +4,8 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
-ms.date: 11/01/2017
+keywords:
+ms.date: 04/30/2019
 title: Back up system state and bare metal
 ms.technology: data-protection-manager
 ms.assetid: 7035095c-6d30-40aa-ae73-4159e305d7ea
@@ -91,8 +91,13 @@ This table summarizes what you can back up and recover. You can see detailed inf
   - use a smaller retention period for the recovery points,
   - increase the available storage for System State or BMR backups.  
 
+::: moniker range="sc-dpm-2016"
+
 > [!NOTE]
 > The following limitations do NOT apply to Modern Backup Storage (MBS). The following limitations apply only when using legacy storage, after upgrading DPM 2012 R2 to DPM 2016.
+
+::: moniker-end
+
 >
 >
 
