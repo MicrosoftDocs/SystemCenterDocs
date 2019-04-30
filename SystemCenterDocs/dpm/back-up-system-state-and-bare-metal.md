@@ -26,7 +26,7 @@ System Center Data Protection Manager (DPM) can back up system state and provide
 
     -   Machine running certificate services: Additionally backs up certificate data
 
--   **Bare metal backup**: Backs up operating system files and all data except user data on critical volumes. By definition a BMR backup includes a system state backup. Provides protection when a machine won't start and you have to recover everythin.
+-   **Bare metal backup**: Backs up operating system files and all data except user data on critical volumes. By definition a BMR backup includes a system state backup. Provides protection when a machine won't start and you have to recover everything.
 
 This table summarizes what you can back up and recover. You can see detailed information about app versions that can be protected with system state and BMR in [What can DPM back up?](dpm-protection-matrix.md)
 
@@ -50,7 +50,7 @@ This table summarizes what you can back up and recover. You can see detailed inf
 
 ## How system state backup works
 
-1.  When a system state back up runs DPM communicates with WSB request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. This is the drive WSB will use to do backups to.
+1.  When a system state backup runs, DPM communicates with WSB request a backup of the server's system state. By default DPM and WSB will use the drive with the most available free space, and information about this drive is saved in the PSDataSourceConfig.XML file. This is the drive WSB will use to do backups to.
 
 2.  You can customize the drive that DPM uses for the system state backup. To do this on the protected server, go to *drive*:\Program Files\Microsoft Data Protection Manager\DPM\Datasources. Open the PSDataSourceConfig.XML file for editing. Change the <FilesToProtect> value for the drive letter. Save and close the file. If a protection group protects the computer's system state, run a consistency check. If the consistency check generates an alert, click **Modify protection group** link in the alert, and then step through the wizard. After finishing, run another consistency check.
 
@@ -145,9 +145,9 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
     Remember that you can't protect BMR and system state for the same machine in different groups, and that when you select BMR system state is automatically enabled.   Learn more in [Deploy protection groups](create-dpm-protection-groups.md).
 
-4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
+4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term backup is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In Synchronization frequency you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In Synchronization frequency you specify how often you want to run an incremental backup to disk. If you don't want to set a back-up interval, you can check, just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
@@ -171,7 +171,7 @@ Set up a protection group as described in [Deploy protection groups](create-dpm-
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
-11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 12. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
@@ -241,6 +241,6 @@ Run Windows Server Backup
 
 4.  In **Confirmation** click **Recover**. You'll need to restart the server after the restore.
 
-5.  You can also run a system state restore from the command line. To do this start Windows Server Backup on the machine you want to recover. From a command prompt type: **wbadmin get versions -backuptarget <servername\sharename>** to get the version identifier.
+5.  You can also run a system state restore from the command-line. To do this start Windows Server Backup on the machine you want to recover. From a command prompt type: **wbadmin get versions -backuptarget <servername\sharename>** to get the version identifier.
 
     Use the version identifier to start system state restore. At the command line type: **wbadmin start systemstaterecovery -version:<versionidentified> -backuptarget:<servername\sharename>** Confirm that you want to start the recovery. You can see the process in the command window. A restore log is created. You'll need restart the server after the restore.
