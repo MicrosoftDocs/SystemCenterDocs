@@ -59,7 +59,7 @@ When choosing a name for your Protection Group, the name should be meaningful. T
 ## Figure out how much storage space you need
 When you create a protection group and select disk-based protection, you must allocate space on the storage pool for the replicas and recovery points for each data source that you have selected for membership in the group, and you must allocate space on protected file servers or workstations for the change journal.
 
-To help you figure out storage capacity, use the [Storage Calculator for DPM with Modern Backup Storage](https://www.microsoft.com/en-us/download/details.aspx?id=54301)
+To help you figure out storage capacity, use the [Storage Calculator for DPM with Modern Backup Storage](https://www.microsoft.com/download/details.aspx?id=54301)
 
 DPM provides default space allocations for the members of the protection group. The following table shows how DPM calculates the default allocations.
 
