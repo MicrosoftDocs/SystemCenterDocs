@@ -5,7 +5,7 @@ description:
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/0330/2019
+ms.date: 04/30/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
