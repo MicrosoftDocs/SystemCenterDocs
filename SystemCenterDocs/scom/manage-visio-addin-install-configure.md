@@ -4,7 +4,7 @@ description: This article describes how to install the Visio Add-in for Microsof
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 10/23/2018
+ms.date: 04/29/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -21,28 +21,27 @@ You can download the Visio Add-in from the [Microsoft Download Center](https://w
 >
 
 The Visio Add-in for System Center Operations Manager has the following prerequisites:  
-  
--   System Center 2016 - Operations Manager or version 1801 Operations console.  
-  
+
+-   System Center 2016 or later - Operations Manager.  
+
 -   Microsoft Office Visio 2010 or 2013 Professional or Premium.  
-  
--   Microsoft .NET Framework 3.5 SP1.  For Windows 8, 8.1 and 10 see [Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10](https://msdn.microsoft.com/library/hh506443%28v=vs.110%29.aspx). 
- 
+
+-   Microsoft .NET Framework 3.5 SP1.  For Windows 8, 8.1 and 10 see [Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10](https://msdn.microsoft.com/library/hh506443%28v=vs.110%29.aspx).
+
 ## To install the Visio Add-in
- 
+
 When you run the Setup program for the Visio Add-in, your system is checked against these requirements. If your system does not meet the requirements, a link is provided so that you can download the missing software.  
-  
+
 1.  In Windows Explorer, navigate to the directory where you downloaded the Add-in and then double-click **OpsMgrAddinSetup.msi**. This is the installation file for the client.  
-  
+
 2.  Click **Next** on the Welcome page of the installation wizard.  
-  
+
 3.  Read the license agreement, select **I Agree**, and then click **Next**.  
-  
+
 4.  Specify the installation location, and then click **Next**.  
-  
+
 5.  Click **Next** to start the installation.  
-  
+
 6.  Click **Close** when the installation is complete.  
-  
+
 The next time you start Visio, you are asked if you want to install the Visio Add-in. Click **Install**. When the installation is complete, the Operations Manager command is available in the Visio ribbon.  
-  

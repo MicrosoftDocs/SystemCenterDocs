@@ -22,13 +22,13 @@ The following table lists the default Run As accounts that are created by Operat
 
 | Name | Description | Credentials |
 |:--- |:--- |:--- |
-|Domain\ManagementServerActionAccount | This is the user account under which all rules run by default on management servers. | Domain account specified as the Management Server Action account during setup. | 
-| Local System Action Account | Built-in System account used as an action account. | Windows Local System account | 
-| APM Account | Application Performance Monitoring account used to provide keys for encrypting secure information collected from the application during monitoring. | Encrypted binary account | 
-| Data Warehouse Action Account | Used to authenticate with SQL Server hosting the OperationsManagerDW database. | Domain account specified during setup as the Data Warehouse Write account. | 
-| Data Warehouse Report Deployment Account | Used to authenticate between the management server and SQL Server hosting Operations Manager Reporting Services. | Domain account specified during setup as the Data Reader account. | 
-| Local System Windows Account | Built-in SYSTEM account used by the agent action account. | Windows Local System account | 
-| Network Service Windows Account | Built-in Network service account | Windows NetworkService account | 
+|Domain\ManagementServerActionAccount | This is the user account under which all rules run by default on management servers. | Domain account specified as the Management Server Action account during setup. |
+| Local System Action Account | Built-in System account used as an action account. | Windows Local System account |
+| APM Account | Application Performance Monitoring account used to provide keys for encrypting secure information collected from the application during monitoring. | Encrypted binary account |
+| Data Warehouse Action Account | Used to authenticate with SQL Server hosting the OperationsManagerDW database. | Domain account specified during setup as the Data Warehouse Write account. |
+| Data Warehouse Report Deployment Account | Used to authenticate between the management server and SQL Server hosting Operations Manager Reporting Services. | Domain account specified during setup as the Data Reader account. |
+| Local System Windows Account | Built-in SYSTEM account used by the agent action account. | Windows Local System account |
+| Network Service Windows Account | Built-in Network service account | Windows NetworkService account |
 
 
 ## Default Run As profiles
@@ -37,26 +37,26 @@ The following table lists the Run As profiles that are created by Operations Man
 
 | Name | Description | Run As account |
 |:--- |:---|:--- |
-|  Active Directory Based Agent Assignment Account | Account used by Active Directory-based agent assignment module to publish assignment settings to Active Directory. | Local System Windows Account | 
-| Automatic Agent Management Account | This account will be used to automatically diagnose agent failures. | None | 
-| Client Monitoring Action Account | If specified, used by Operations Manager 2016 to run all client monitoring modules.  If not specified, Operations Manager uses the default action account. | None | 
-| Connected Management Group Account | Account used by Operations Manager management pack to monitor connection health to the connected management groups. | None | 
-| Data Warehouse Account | If specified, this account is used to run all Data Warehouse collection and synchronization rules instead of the default action account. If this account is not overridden by the Data Warehouse SQL Server Authentication account, this account is used by collection and synchronization rules to connect to the Data Warehouse databases using Windows integrated authentication. | None | 
-| Data Warehouse Report Deployment Account | This account is used by Data Warehouse report auto-deployment procedures to execute various report deployment-related operations. | Data Warehouse Report Deployment Account | 
-| Data Warehouse SQL Server Authentication Account | If specified, this login name and password is used by collection and synchronization rules to connect to the Data Warehouse databases using SQL Server authentication. | Data Warehouse SQL Server Authentication Account | 
-| MPUpdate Action Account | This account is used by the MPUpdate notifier. | None | 
-| Notification Account | Windows account used by notification rules. Use this account's e-mail address as the e-mail and instant message 'From' address. | None | 
-| Operational Database Account | This account is used to read and write information to the Operations Manager database. | None | 
-| Privileged Monitoring Account | This profile is used for monitoring, which can only be done with a high level of privilege to a system; for example, monitoring that requires Local System or Local Administrator permissions. This profile defaults to Local System unless specifically overridden for a target system. | None | 
-| Reporting SDK SQL Server Authentication Account | If specified, this login name and password is used by SDK Service to connect to the Data Warehouse databases using SQL Server authentication. | Reporting SDK SQL Server Authentication Account | 
-| Reserved | This profile is reserved and must not be used | None | 
-| Validate Alert Subscription Account | Account used by the validate alert subscription module that validates that notification subscriptions are in scope. This profile needs administrator rights. | Local System Windows Account | 
-| SNMP Monitoring Account | This account is used for SNMP monitoring. | None | 
+|  Active Directory Based Agent Assignment Account | Account used by Active Directory-based agent assignment module to publish assignment settings to Active Directory. | Local System Windows Account |
+| Automatic Agent Management Account | This account will be used to automatically diagnose agent failures. | None |
+| Client Monitoring Action Account | If specified, used by Operations Manager to run all client monitoring modules.  If not specified, Operations Manager uses the default action account. | None |
+| Connected Management Group Account | Account used by Operations Manager management pack to monitor connection health to the connected management groups. | None |
+| Data Warehouse Account | If specified, this account is used to run all Data Warehouse collection and synchronization rules instead of the default action account. If this account is not overridden by the Data Warehouse SQL Server Authentication account, this account is used by collection and synchronization rules to connect to the Data Warehouse databases using Windows integrated authentication. | None |
+| Data Warehouse Report Deployment Account | This account is used by Data Warehouse report auto-deployment procedures to execute various report deployment-related operations. | Data Warehouse Report Deployment Account |
+| Data Warehouse SQL Server Authentication Account | If specified, this login name and password is used by collection and synchronization rules to connect to the Data Warehouse databases using SQL Server authentication. | Data Warehouse SQL Server Authentication Account |
+| MPUpdate Action Account | This account is used by the MPUpdate notifier. | None |
+| Notification Account | Windows account used by notification rules. Use this account's e-mail address as the e-mail and instant message 'From' address. | None |
+| Operational Database Account | This account is used to read and write information to the Operations Manager database. | None |
+| Privileged Monitoring Account | This profile is used for monitoring, which can only be done with a high level of privilege to a system; for example, monitoring that requires Local System or Local Administrator permissions. This profile defaults to Local System unless specifically overridden for a target system. | None |
+| Reporting SDK SQL Server Authentication Account | If specified, this login name and password is used by SDK Service to connect to the Data Warehouse databases using SQL Server authentication. | Reporting SDK SQL Server Authentication Account |
+| Reserved | This profile is reserved and must not be used | None |
+| Validate Alert Subscription Account | Account used by the validate alert subscription module that validates that notification subscriptions are in scope. This profile needs administrator rights. | Local System Windows Account |
+| SNMP Monitoring Account | This account is used for SNMP monitoring. | None |
 | SNMPv3 Monitoring Account | This account is used for SNMPv3 monitoring. | None |
-| UNIX/Linux Action Account | THis account is used for low privilege UNIX and Linux access. | None | 
-| UNIX/Linux Agent Maintenance Account | This account is used for privileged maintenance operations for UNIX and Linux agents.  Without this account agent maintenance operations will not work. | None | 
-| UNIX/Linux Privileged Account | This account is used for accessing protected UNIX and Linux resources and actions that require high privileges.  Without this account some rules, diagnostics and recoveries will not work. | None | 
-| Windows Cluster Action Account | This profile is used for all discovery and monitoring of Windows Cluster components. This profile defaults to used action accounts unless specifically populated by the user. | None | 
+| UNIX/Linux Action Account | THis account is used for low privilege UNIX and Linux access. | None |
+| UNIX/Linux Agent Maintenance Account | This account is used for privileged maintenance operations for UNIX and Linux agents.  Without this account agent maintenance operations will not work. | None |
+| UNIX/Linux Privileged Account | This account is used for accessing protected UNIX and Linux resources and actions that require high privileges.  Without this account some rules, diagnostics and recoveries will not work. | None |
+| Windows Cluster Action Account | This profile is used for all discovery and monitoring of Windows Cluster components. This profile defaults to used action accounts unless specifically populated by the user. | None |
 | WS-Management Action Account | This profile is used for WS-Management access. | None |
 
 ## Understanding distribution and targeting
@@ -77,7 +77,7 @@ In System Center Operations Manager, Run As account credentials are distributed 
 
 For example, Operations Manager identifies a computer as hosting SQL Server 2016 based on the presence of a registry key. It is possible to create that same registry key on a computer that is not actually running an instance of SQL Server 2016. If Operations Manager were to automatically distribute the credentials to all agent managed computers that have been identified as SQL Server 2016 computers, the credentials would be sent to the imposter SQL Server and they would be available to anyone with administrator rights on that server.
 
-When you create a Run As account using Operations Manager 2016, you are prompted to choose whether the Run As account should be treated in a Less secure or More secure fashion. “More secure” means that when you associate the Run As account with a Run As profile, you have to provide the specific computer names that you want the Run As credentials distributed to. By positively identifying the destination computers, you can prevent the spoofing scenario that was described before. If you choose the less secure option, you will not have to provide any specific computers and the credentials will be distributed to all agent-managed computers. 
+When you create a Run As account using Operations Manager, you are prompted to choose whether the Run As account should be treated in a Less secure or More secure fashion. “More secure” means that when you associate the Run As account with a Run As profile, you have to provide the specific computer names that you want the Run As credentials distributed to. By positively identifying the destination computers, you can prevent the spoofing scenario that was described before. If you choose the less secure option, you will not have to provide any specific computers and the credentials will be distributed to all agent-managed computers.
 
-> [!NOTE] 
+> [!NOTE]
 > The credentials you select for the Run As account must have at a minimum, logon locally rights; otherwise, the module will fail.

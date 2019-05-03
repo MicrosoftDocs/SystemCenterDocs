@@ -21,9 +21,13 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 
 You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
 
+::: moniker range="sc-om-2016"
+
 >[!NOTE]
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 Reporting services role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
 >
+
+::: moniker-end
 
 ## Installing Operations Manager reporting
 
@@ -98,7 +102,7 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
     > The /ManagementServer parameter is only required when you are installing reporting on a server that is not a management server.
 
     ```
-    setup.exe /silent /install /components:OMReporting 
+    setup.exe /silent /install /components:OMReporting
     /ManagementServer:<ManagementServerName>
     /SRSInstance:<server\instance>
     /DataReaderUser:<domain\username>
@@ -134,6 +138,3 @@ Ensure that SQL Server Reporting Services has been correctly installed and confi
 ## Next steps
 
 - See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
-
-
-

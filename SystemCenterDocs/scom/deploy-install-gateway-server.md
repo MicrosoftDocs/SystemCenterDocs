@@ -20,9 +20,13 @@ Because the gateway server resides in a domain that is not trusted by the domain
 
 You must ensure that your server meets the minimum system requirements for System Center - Operations Manager. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
+::: moniker range="sc-om-2016"
+
 >[!NOTE]
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
 >
+::: moniker-end
+
 
 ## How to deploy a gateway server
 
@@ -73,7 +77,7 @@ This procedure registers the gateway server with the management group, and when 
 
 3.  At the command prompt, run `Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create`
 
-    > [!NOTE] 
+    > [!NOTE]
     > To prevent the gateway server from initiating communication with a management server, include the */ManagementServerInitiatesConnection* parameter on the command line.  
 
 4.  If the approval is successful, you will see `The approval of server <GatewayFQDN> completed successfully.`
@@ -176,13 +180,13 @@ Use the Set-SCOMParentManagementServer command in the Operations Manager shell, 
 
 It is sometimes necessary to chain multiple gateways together in order to monitor across multiple untrusted boundaries. This topic describes how to chain multiple gateways together.
 
-> [!NOTE] 
+> [!NOTE]
 > You should install one gateway at a time and verify that each newly installed gateway is configured correctly before adding another gateway in the chain.
 
 1. On the management server that was targeted during the gateway server installation, run the Microsoft.EnterpriseManagement.GatewayApprovalTool.exe tool to initiate communication between the management server and the gateway.
 2. Open a command prompt, and navigate to the Operations Manager installation directory or, and then run the following: ```Microsoft.EnterpriseManagement.gatewayApprovalTool.exe /ManagementServerName=<managementserverFQDN> /GatewayName=<GatewayFQDN> /Action=Create```
-3. Install the gateway server on a new server. 
-4. Configure the certificates between gateways in the same way that you would configure certificates between a gateway and a management server. The Health Service can only load and use a single certificate. Therefore, the same certificate is used by the parent and child of the gateway in the chain. 
+3. Install the gateway server on a new server.
+4. Configure the certificates between gateways in the same way that you would configure certificates between a gateway and a management server. The Health Service can only load and use a single certificate. Therefore, the same certificate is used by the parent and child of the gateway in the chain.
 
 ## Next steps
 
