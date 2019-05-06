@@ -46,7 +46,7 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 
 ## Set a storage QoS for an SOFS
 
-Windows Server 2016 and System Center VMM 2016 include storage QoS policies to solve the "noisy neighbor" problem. This problem is a common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there is always a chance that one VM’s usage of the resource exceeds that of the other. This can impact app performance of an app running on the VM. Storage QoS provides:
+ System Center VMM 2016 and later include storage QoS policies to solve the "noisy neighbor" problem. This problem is a common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there is always a chance that one VM’s usage of the resource exceeds that of the other. This can impact app performance of an app running on the VM. Storage QoS provides:
 
 - **Mitigation of noisy neighbor issues**: Ensures that a single VM doesn't consume all resources and starve other VMs of storage bandwidth.
 - **Monitor end-to-end storage performance**: When VMs are started on an SOFS their performance is monitored.
