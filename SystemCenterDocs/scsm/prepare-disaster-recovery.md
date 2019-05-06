@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -64,9 +64,9 @@ You use the Encryption Key Backup or Restore Wizard to back up encryption keys o
 
 8.  After you see the message "Secure Storage Backup Complete," click **Finish**.
 
-## Back up System Center 2016 - Service Manager databases
+## Back up System Center - Service Manager databases
 
-There are up to eight databases in a System Center 2016 - Service Manager environment:  
+There are up to eight databases in a System Center - Service Manager environment:  
 
 -   ServiceManager  
 -   DWDataMart  
