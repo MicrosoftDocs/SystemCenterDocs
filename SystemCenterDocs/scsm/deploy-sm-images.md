@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/05/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -35,7 +35,7 @@ You can use the information in this article to create a system image that contai
 
 3.  Copy the SQL Server installation files to a temporary location on the server. For example, c:\\Runonce\\ SQLFULL\_ENU.  
 
-4.  Copy the System Center 2016 Service Manager installation files to a temporary location on the server. For example, c:\\Runonce\\SCSM.  
+4.  Copy the System Center <version> Service Manager installation files to a temporary location on the server. For example, c:\\Runonce\\SCSM.  
 
 5.  Save the example CMD file shown below and customize it for your environment, where necessary. This file will run SQL Server setup to complete the SQL Server installation and then run an unattended installation of Service Manager. Save this file to a temporary location such as C:\\Runonce\\FirstRun.cmd.  
 

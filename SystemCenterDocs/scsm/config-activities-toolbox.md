@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -32,7 +32,7 @@ Installing or removing custom activity assemblies changes the set of available a
 
 So that you can use custom or third-party Windows Workflow Foundation (WF)  activities in workflows, the activity assembly files must first be installed. You must have administrative permissions on the computer running the Service Manager Authoring Tool and the computer running Service Manager. Like the default activities, custom activities must be available on the computer running Service Manager as well as on the computer running the Authoring Tool.
 
-1. On the computer running the Authoring Tool, browse to the Authoring Tool Workflow Activity Library folder, for example, D:Program Files (x86)Microsoft System CenterService Manager 2016 AuthoringWorkflow Activity Library. Paste the custom activity assembly into this folder.
+1. On the computer running the Authoring Tool, browse to the Authoring Tool Workflow Activity Library folder, for example, D:Program Files (x86)Microsoft System CenterService Manager <version> AuthoringWorkflow Activity Library. Paste the custom activity assembly into this folder.
 
 2. On the computer running Service Manager, browse to the Service Manager installation folder, and then paste the custom activity assembly into this folder.
 
@@ -45,7 +45,7 @@ So that you can use custom or third-party Windows Workflow Foundation (WF)  acti
 
 To remove a custom activity assembly, you must have administrative permissions on the computer running the Service Manager Authoring Tool and on the computer running the Service Manager console. After the custom activity assembly has been removed, the activities compiled into that assembly are no longer available in personalized activity groups.
 
-1. On the computer running the Authoring Tool, browse to the Authoring Tool Workflow Activity Library folder, for example, D:Program Files (x86)Microsoft System CenterService Manager 2016 AuthoringWorkflow Activity Library. Remove the custom activity assembly from this folder.
+1. On the computer running the Authoring Tool, browse to the Authoring Tool Workflow Activity Library folder, for example, D:Program Files (x86)Microsoft System CenterService Manager <version> AuthoringWorkflow Activity Library. Remove the custom activity assembly from this folder.
 
 2. On the computer running the Service Manager console, browse to the Service Manager installation folder. Remove the custom activity assembly from this folder.
 

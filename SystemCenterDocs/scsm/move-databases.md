@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/6/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -70,7 +70,7 @@ You must use the following high\-level steps to move the Service Manager databas
 
     1.  Open Registry Editor.  
 
-    2.  Browse to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\System Center\\2016\\Common\\Database**.  
+    2.  Browse to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\System Center\\<version>\\Common\\Database**.  
 
     3.  Configure two keys: one for the server name \(DatabaseServerName\) and one for the database name \(DatabaseName\). Set values to the new server name and database name, if they are different from the original values.  
 
@@ -153,7 +153,7 @@ The following high\-level steps are required to move the data warehouse database
 
 3.  In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
 
-4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\\Common\\Database**, and then make note of the following registry values:  
+4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\<version>\\Common\\Database**, and then make note of the following registry values:  
 
     -   DatabaseName  
 
@@ -184,7 +184,7 @@ The following high\-level steps are required to move the data warehouse database
 1. Log on to the data warehouse management server as a user with administrative credentials.  
 2. On the Windows desktop, click **Start**, and then click **Run**.  
 3. In the **Run** dialog box, in the **Open** box, type **regedit**, and then click **OK**.  
-4. In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\\Common\\Reporting**, and then make note of the following registry values:  
+4. In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\<version>\\Common\\Reporting**, and then make note of the following registry values:  
 
     -   Server  
     -   ServerInstance  
@@ -246,7 +246,7 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To identify the OLAP Account used by the data warehouse management server  
 
-1.  Log on to the Service Manager server, click **Start**, click **All Programs**, click **Microsoft System Center 2016**, click **Service Manager**, and then click **Service Manager Shell**.  
+1.  Log on to the Service Manager server, click **Start**, click **All Programs**, click **Microsoft System Center <version>**, click **Service Manager**, and then click **Service Manager Shell**.  
 
 2.  In the Windows PowerShell command prompt, copy the following command, and then press ENTER.  
 
@@ -626,7 +626,7 @@ The following high\-level steps are required to move the data warehouse database
     > [!CAUTION]  
     >  Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.  
 
-4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\2016\Common\\Database**.  
+4.  In the Registry Editor window, expand **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\System Center\\<version>\Common\\Database**.  
 
 
 5.  In the right pane, double\-click **DatabaseServerName**.  
@@ -731,4 +731,4 @@ The following high\-level steps are required to move the data warehouse database
 
 ## Next steps
 
-- Review [Upgrade System Center 2012 R2 - Service Manager to System Center 2016 - Service Manager](upgrade-to-sm-2016.md) to learn about upgrading Service Manager.
+- Review [Upgrade System Center 2012 R2 - Service Manager to System Center - Service Manager](upgrade-to-sm-2016.md) to learn about upgrading Service Manager.

@@ -6,8 +6,8 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
-ms.date: 10/12/2016
+keywords:
+ms.date: 05/06/2019
 ms.technology: service-manager
 ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 ---
@@ -59,7 +59,7 @@ If software for a particular computer does not appear in the **All Software** vi
 
 ## Create a Configuration Manager connector
 
-You can use the following procedures to create a connector to import data from Configuration Manager into System Center 2016 - Service Manager and confirm the status of the connector.
+You can use the following procedures to create a connector to import data from Configuration Manager into System Center - Service Manager and confirm the status of the connector.
 
 > [!IMPORTANT]
 > Before you can create the Configuration Manager connector, you have to verify that System Center Configuration Manager is installed in your environment, and you have to turn on Windows User Account Control (UAC). For more information about UAC, see [User Account Control](https://go.microsoft.com/fwlink/p/?LinkID=177523).

@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -80,7 +80,7 @@ You have to run this command only once on the computer where you intend to use W
 
 ### To set execution policy
 
-1. On the computer where you want to run Windows PowerShell, click **Start**, click **All Programs**, click **Microsoft System Center 2016**, click **Service Manager**, and then click **Service Manager Shell**.
+1. On the computer where you want to run Windows PowerShell, click **Start**, click **All Programs**, click **Microsoft System Center <version>**, click **Service Manager**, and then click **Service Manager Shell**.
 2. At the Windows PowerShell prompt, type the following command, and then press ENTER:
 
     ```powershell
