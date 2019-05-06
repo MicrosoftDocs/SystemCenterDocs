@@ -5,15 +5,13 @@ description: Describes how to set up guarded hosts and provision shielded VMs in
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # Scenario - Deploy guarded hosts and shielded virtual machines in VMM
-
-]
 
 This article provides an overview of deploying Hyper-V guarded hosts and shielded virtual machines in a System Center - Virtual Machine Manager (VMM) compute fabric.
 
@@ -28,7 +26,7 @@ Virtual machines contain sensitive data and configuration that the VM owner may 
 ## Managing a guarded fabric with VMM
 
 The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with Windows Server 2016 and must be configured according to the [guarded fabric documentation](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
-Once set up, you can optionally use System Center 2016 - Virtual Machine Manager to simplify management of the guarded fabric.
+Once set up, you can optionally use System Center - Virtual Machine Manager to simplify management of the guarded fabric.
 
 VMM can be used to:
 
