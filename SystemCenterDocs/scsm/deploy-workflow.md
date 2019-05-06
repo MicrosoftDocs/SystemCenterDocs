@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -23,7 +23,7 @@ Use these procedures to move workflows from the Service Manager Authoring Tool t
 
 1.  On the computer that is running the Authoring Tool, browse to the folder where you saved the management pack, and then copy the management pack and workflow files. The workflow file is automatically created in the same folder as the management pack. For example, copy **AddComputerToADGroupMP.xml** and **AddComputerToADGroupWF.dll**.  
 
-2.  On the computer that is running the Service Manager console, browse to the Service Manager installation folder, for example, C:\\Program Files\\Microsoft System Center\\Service Manager 2016.  
+2.  On the computer that is running the Service Manager console, browse to the Service Manager installation folder, for example, C:\\Program Files\\Microsoft System Center\\Service Manager <version>.  
 
 3.  Paste the copied management pack and workflow files into this folder. For example, paste **AddComputerToADGroupMP.xml** and **AddComputerToADGroupWF.dll**.  
 
