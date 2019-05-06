@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -42,8 +42,8 @@ To provide real\-world context to the step\-by\-step procedures for the Service 
 
 The Woodgrove Bank customization scenario has the following prerequisites:  
 
--   System Center 2016 - Service Manager must be installed in your environment.  
--   The System Center 2016 - Service Manager Authoring Tool must be installed in your environment.  
+-   System Center  - Service Manager must be installed in your environment.  
+-   The System Center - Service Manager Authoring Tool must be installed in your environment.  
 -   The Workflow Account in Service Manager must be a member of the Domain Administrators group because this scenario involves creating a workflow that adds a computer to a group in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\). You specify the Workflow Account in the Service Manager Server Setup Wizard.  
 
  The Authoring Tool's installation folder includes a **Samples** subfolder that contains the following files, which are required for the Woodgrove Bank customization scenario.  
@@ -91,7 +91,7 @@ The second step in the Woodgrove Bank customization scenario is to customize the
 ### To customize the default Change Request form  
 
 1.  In the Authoring Tool, click **File**, point to **Open**, and then click **File**. In the **Open File** dialog box, locate the **ServiceManager.ChangeManagement.Library.mp** management pack. For example, the path to the management pack might be as follows:  
-     D:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library\\ServiceManager.ChangeManagement.Library.mp.  
+     D:\\Program Files \(x86\)\\Microsoft System Center\\Service Manager <version> Authoring\\Library\\ServiceManager.ChangeManagement.Library.mp.  
      Select the management pack, and then click **Open**.  
 2.  In the **Management Pack Explorer**, click the **Service Manager Change Management Library \(sealed\)** management pack, and then expand **Forms**. Right\-click the form that ends with **ChangeRequestForm**, and then click **Customize**.  
 3.  In the **Target Management Pack** dialog box, select the **WoodGrove Automated Activity \- Add Computer To AD Group** management pack, and then click **OK**.  
@@ -169,7 +169,7 @@ For general information about deploying a workflow to Service Manager, see [How 
 ### To move the assembly files  
 
 1.  In Windows Explorer, open the folder in which you saved the management pack, and copy the **AddComputerToADGroupWF.dll** and **AddComputerToGroupFormAssembly.dll** files.  
-2.  Open the Service Manager installation folder \(for example, C:\\Program Files\\Microsoft System Center\\Service Manager 2016\), and paste the copied files in that folder.  
+2.  Open the Service Manager installation folder \(for example, C:\\Program Files\\Microsoft System Center\\Service Manager <version>\), and paste the copied files in that folder.  
 
 ## Step 5 - Bundle and import the custom management pack to Service Manager
 
