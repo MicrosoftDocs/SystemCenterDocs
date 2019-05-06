@@ -56,7 +56,7 @@ Management packs that you import typically include a standard Active Alerts view
 
 ## Viewing alert details
 
-Alerts in System Center 2016 - Operations Manager include information to help you investigate and resolve the issues affecting your IT services that caused the alerts.  
+Alerts in System Center - Operations Manager include information to help you investigate and resolve the issues affecting your IT services that caused the alerts.  
 
 To view the details for an alert, in the **Monitoring** workspace, click **Active Alerts**, and then click an alert in the results pane.<br> ![Details for a selected alert](./media/manage-alert-view-alerts-details/om2016-view-alert-details.png)  
 
