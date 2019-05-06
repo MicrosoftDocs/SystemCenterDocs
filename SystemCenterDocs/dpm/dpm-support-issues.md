@@ -1,12 +1,12 @@
 ---
-description: This article explains the supported deployment options for DPM 2016.
+description: This article explains the supported deployment options for DPM.
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 11/01/2017
+ms.date: 04/30/2019
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -22,7 +22,7 @@ This topic summarizes some of the common support information you might need when
 ### DPM deployment options
 **Issue**: DPM can be installed in physical and virtual environments.
 
-**More information**: DPM 2016 can be installed as follows:
+**More information**: DPM can be installed as follows:
 
 -   As a standalone physical server - DPM can't be deployed in a physical cluster, but you can manage multiple DPM servers from a single location using Central Console in Operations Manager.
 

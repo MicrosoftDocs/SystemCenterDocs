@@ -1,6 +1,6 @@
 ---
 ms.assetid: 90bd75e0-de7a-4ca4-ae7e-681a9eb21aba
-title: Integrate VMM 2016 with Operations Manager for monitoring and reporting
+title: Integrate VMM with Operations Manager for monitoring and reporting
 description: This article describes how to integrate VMM with Operations Manager for monitoring and reporting
 author: rayne-wiselman
 ms.author: raynew
@@ -60,7 +60,7 @@ You set up Operations Manager with VMM as follows:
 ## Download the management packs
 
 1. [Download](https://www.microsoft.com/download/details.aspx?id=54113) the latest version of the VMM management packs from the Microsoft download center.
-2. Open the management packs folder on the VMM server. The default location is C:\Program Files\Microsoft System Center 2016\Virtual Machine Manager\ManagementPacks. Back up the existing .mp files.
+2. Open the management packs folder on the VMM server. The default location is C:\Program Files\Microsoft System Center <version>\Virtual Machine Manager\ManagementPacks. Back up the existing .mp files.
 3. Extract the new .mp files to the management pack folder, overwriting the existing .mp files.
 
 ## Run the integration wizard

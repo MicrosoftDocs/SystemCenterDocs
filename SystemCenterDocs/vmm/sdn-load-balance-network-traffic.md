@@ -1,11 +1,11 @@
 ---
 ms.assetid: 6f0852f2-ba7a-4d99-9c57-f096460b4347
-title: Load balance network traffic in an SDN fabric using VMM 2016
+title: Load balance network traffic in an SDN fabric using VMM 
 description: This article describes how to configure load balancing for the internal and external network traffic through a VIP.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/07/2017
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -23,7 +23,7 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
 - **Load balancing the internal network traffic** (Internal load balancing): This scenario includes load balancing the network traffic of workloads in the VM network that is enabled for **network virtualization**. Load balancing is done through a VIP.
 
     > [!NOTE]
-    > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
+    > VMM supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
 
