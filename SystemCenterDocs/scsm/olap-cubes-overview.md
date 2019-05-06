@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -239,7 +239,7 @@ The following diagram illustrates how Service Manager determines what type of pr
 
 When a ProcessAdd task is performed, Service Manager limits the scope of the query using watermarks. For example, if the InsertedBatchId value is 100 and the WatermarkBatchId value is 50, the query loads data only from the data mart where the InsertedBatchId is greater than 50 and less than 100.  
 
-Finally, it is important to note that Service Manager does not support manual processing of OLAP cubes using SSAS or Business Intelligence Development Studio. Processing cubes outside of the methods that are provided in System Center 2016 - Service Manager, including the Service Manager console and Service Manager cmdlets, will not update the watermark tables. Therefore, it is possible that data integrity problems might occur. If you have accidentally reprocessed the cube manually, one possible workaround is to unprocess the OLAP cube manually in the same manner. Then, the next time Service Manager processes the cube, it will automatically perform a ProcessFull task because partitions will be in an unprocessed state. This will update all watermarks and metadata correctly so that any possible data integrity problems will be fixed.  
+Finally, it is important to note that Service Manager does not support manual processing of OLAP cubes using SSAS or Business Intelligence Development Studio. Processing cubes outside of the methods that are provided in System Center - Service Manager, including the Service Manager console and Service Manager cmdlets, will not update the watermark tables. Therefore, it is possible that data integrity problems might occur. If you have accidentally reprocessed the cube manually, one possible workaround is to unprocess the OLAP cube manually in the same manner. Then, the next time Service Manager processes the cube, it will automatically perform a ProcessFull task because partitions will be in an unprocessed state. This will update all watermarks and metadata correctly so that any possible data integrity problems will be fixed.  
 
 
 ## Maintain Service Manager OLAP cubes
