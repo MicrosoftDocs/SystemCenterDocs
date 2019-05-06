@@ -136,7 +136,7 @@ The fabric admin can now offer storage QoS policies, while authoring the VMM pri
 
 **follow these steps**:
 
-1. Follow the [create a private cloud from a host group](#create-a-cloud-from-a-host-group) procedure until step 14.
+1. Follow the [create a private cloud from a host group](#create-a-private-cloud-from-a-host-group) procedure until step 14.
 2. In **Storage QoS Policies**, select the policies that you want to assign to this cloud.
 3. proceed to step 15, complete the remaining steps.
 4. Review the summary and click **Finish**.
