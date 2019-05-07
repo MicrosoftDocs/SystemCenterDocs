@@ -1,17 +1,13 @@
 ---
 title: "PGP Encrypt File | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: 1866b4f2-8755-43d0-89a3-dbeaa948a508
 caps.latest.revision: 20
 author: "bwren"
@@ -36,7 +32,7 @@ GnuPG is an open-source program used by the standard activities PGP Encrypt file
 Use the following steps:
 
 1.	Download gpg.exe and iconv.dll, version 1.4.10 or later, from [GnuPG](https://www.gnupg.org/).
-2.	Save gpg.exe and iconv.dll to the <System drive>:\Program Files (x86)\Common Files\Microsoft System Center 2012\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+2.	Save gpg.exe and iconv.dll to the <System drive>:\Program Files (x86)\Common Files\Microsoft System Center <version>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
 ### Install GnuPG version 2.x
 
@@ -44,7 +40,7 @@ Use the following steps:
 
 1.	Download gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll, and zlib1.dll version 2.x or later from [GnuPG](https://www.gnupg.org/).
 
-2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll and zlib1.dll to the <System drive>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator 2012\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
+2.	Save gpg.exe, gpg-agent.exe, iconv.dll, libassuan-0.dll, libgcrypt-20.dll, libgpg-error-0.dll, libnpth-0.dll, libsqlite3-0.dll and zlib1.dll to the <System drive>:\Program Files(x86)\Common Files\<Microsoft System Center Orchestrator <version>\Orchestrator\Extensions\Support\Encryption folder on each runbook server and computer that is running the Runbook Designer.
 
 ## Configuring the PGP Encrypt File Activity  
  Before you configure the PGP Encrypt File activity, you need to determine the following:  
