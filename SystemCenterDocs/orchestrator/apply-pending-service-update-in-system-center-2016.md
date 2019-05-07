@@ -1,8 +1,8 @@
 ---
-title: Apply Pending Service Update in System Center 2016
+title: Apply Pending Service Update in System Center
 description: The Apply Pending Service Update activity is used in a runbook to apply the pending service update to a specified service.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -15,7 +15,7 @@ ms.author: raynew
 manager: carmonm
 robots: noindex
 ---
-# Apply Pending Service Update in System Center 2016
+# Apply Pending Service Update in System Center
 
 The Apply Pending Service Update activity is used in a runbook to apply the pending service update to a specified service.
 
@@ -37,4 +37,4 @@ There is no published data for this activity.
 
 ## See Also
 
-[Using Runbooks in System Center 2016 Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
+[Using Runbooks in System Center Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)

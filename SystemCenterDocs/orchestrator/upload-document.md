@@ -2,7 +2,7 @@
 title: Upload Document
 description: The Upload Document activity is used in a runbook to upload a document to a Microsoft SharePoint document library.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -51,5 +51,4 @@ The following tables list the optional and required properties and Published Dat
 
 ## Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
+[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
