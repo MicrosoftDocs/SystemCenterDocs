@@ -2,7 +2,7 @@
 title: Create Mailbox
 description: For an on-premises Exchange environment, the Create Mailbox activity creates a new mailbox and a new Active Directory user associated with the new mailbox.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -285,4 +285,4 @@ The following tables list the required properties, optional properties, and publ
 
 ## See Also
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)

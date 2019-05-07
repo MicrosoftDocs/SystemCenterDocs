@@ -2,7 +2,7 @@
 title: IBM Tivoli Netcool OMNIbus Activities
 description: This integration pack adds the IBM Tivoli Netcool/OMNIbus category to the Activity pane in the Runbook Designer.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -102,7 +102,7 @@ Some activities take a limited amount of time to complete. If the activity does 
 
 2.  Select **Report if activity fails to run** to generate a failure notification.
 
-For more information about events, see the [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx) topic in [Administering System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh674377.aspx).
+For more information about events, see the [Activity Events](https://technet.microsoft.com/library/hh489611.aspx) topic in [Administering System Center - Orchestrator](https://technet.microsoft.com/library/hh674377.aspx).
 
 ##### Published Data
 
@@ -118,4 +118,4 @@ Published data is the method that one activity shares information with other act
 
 4.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the Common Published Data items, see the [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData) topic in [Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the Common Published Data items, see the [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData) topic in [Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx).
