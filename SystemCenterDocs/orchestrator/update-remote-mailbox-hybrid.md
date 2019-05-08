@@ -2,7 +2,7 @@
 title: Update Remote Mailbox (Hybrid)
 description: You can use the Update Remote Mailbox activity to modify the mail-related attributes of an existing user in Active Directory that is associated with a mailbox in the cloud-based service (hybrid environment).
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/08/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -102,4 +102,4 @@ The following tables list the required properties, optional properties, and publ
 
 ## Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
