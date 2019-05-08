@@ -2,7 +2,7 @@
 title: VMware vSphere Activities
 description: This integration pack adds the VMware vSphere category to the Activities pane in the Runbook Designer.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/08/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -31,11 +31,11 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Customize VM Activity](customize-vm-activity.md)
 
-[Delete Network Adapter Activity in System Center 2016](delete-network-adapter-activity-in-system-center-2016.md)
+[Delete Network Adapter Activity in System Center ](delete-network-adapter-activity-in-system-center-2016.md)
 
 [Delete VM Activity](delete-vm-activity.md)
 
-[Delete VM Disk Activity in System Center 2016](delete-vm-disk-activity-in-system-center-2016.md)
+[Delete VM Disk Activity in System Center ](delete-vm-disk-activity-in-system-center-2016.md)
 
 [Get Cluster Properties Activity](get-cluster-properties-activity.md)
 
@@ -61,7 +61,7 @@ This integration pack adds the VMware vSphere category to the **Activities** pan
 
 [Migrate VM Activity](migrate-vm-activity.md)
 
-[Modify VM Disk Activity in System Center 2016](modify-vm-disk-activity-in-system-center-2016.md)
+[Modify VM Disk Activity in System Center ](modify-vm-disk-activity-in-system-center-2016.md)
 
 [Move VM Activity](move-vm-activity.md)
 
