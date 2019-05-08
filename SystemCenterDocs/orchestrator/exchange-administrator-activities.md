@@ -2,7 +2,7 @@
 title: Exchange Administrator Activities
 description: The following configuration instructions apply to all activities that are performed in the Exchange Admin Integration Pack.
 ms.custom: na
-ms.date: 4/25/2017
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -49,7 +49,7 @@ The **Properties** tab contains properties that are specific to the activity. Al
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in <span>Exchange Admin Integration Pack for System Center 2016 - Orchestrator</span>.
+2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in <span>Exchange Admin Integration Pack for System Center - Orchestrator</span>.
 
 ### Criteria for filters
 
