@@ -10,13 +10,13 @@ ms.topic: article
 ms.assetid: 7dcf9d0a-db63-48ad-9fb8-525147ba62b7
 author: rayne-wiselman
 ms.author: raynew
-ms.date: 10/12/2016
+ms.date: 05/08/2019
 manager: cfreeman
 ---
 
 # Runbook Samples
 
-This topic provides instructions about how to build and test sample runbooks by using the standard activities found in System Center 2016 - Orchestrator.  
+This topic provides instructions about how to build and test sample runbooks by using the standard activities found in System Center - Orchestrator.  
 
 ## Samples  
 
@@ -30,7 +30,7 @@ This topic provides instructions about how to build and test sample runbooks by 
 
 ## Other resources for this product  
 
--   [Using Runbooks in System Center 2016 - Orchestrator](automate-runbooks.md)  
+-   [Using Runbooks in System Center - Orchestrator](automate-runbooks.md)  
 
 -   [Runbook Concepts](automate-runbooks.md)  
 

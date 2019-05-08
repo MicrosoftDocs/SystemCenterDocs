@@ -1,8 +1,8 @@
 ---
 title: Run DPM PowerShell Script
-description: The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center 2016 - Data Protection Manager (DPM).
+description: The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center - Data Protection Manager (DPM).
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/08/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Run DPM PowerShell Script
 
-The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center 2016 - Data Protection Manager (DPM).
+The Run DPM PowerShell Script activity is used in a runbook to provide a flexible way to address more complex scenarios you may have in working with System Center - Data Protection Manager (DPM).
 
 This activity allows you to run PowerShell scripts utilizing the pre-configured connection settings for the DPM Integration Pack, instead of having to use the Run .NET Script activity and manually specifying connection credentials and using PowerShell remoting commands yourself. This activity also provides better performance than using the Run .NET Script activity because it re-uses any open connections to the DPM server rather than opening new connections to run commands.
 
