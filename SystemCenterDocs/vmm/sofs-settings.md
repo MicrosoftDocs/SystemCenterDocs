@@ -20,7 +20,7 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 - **Create storage pools**: Create storage pools from physical disks on SOFS nodes. You can then allocate those storage pools.
 - **Create file shares**: You can create file shares on a SOFS in the VMM fabric. You can set the storage type for a share as a storage pool, local pool, or volume.
 - **QoS**: Set up a quality-of-service (QoS) policy for SOFS to control resources allocated to VMs
-- **Set a disk witness for a storage pool**: From VMM 2016 you can specify that the disk witness for an SOFS cluster should come from a particular storage pool. To do this VMM creates a three-way mirror space and configures it as the disk witness for the cluster. The storage pool must have at least five physical disks.
+- **Set a disk witness for a storage pool**: From VMM 2016, you can specify that the disk witness for an SOFS cluster should come from a particular storage pool. To do this VMM creates a three-way mirror space and configures it as the disk witness for the cluster. The storage pool must have at least five physical disks.
 
 ## Create storage pools
 
@@ -37,16 +37,16 @@ You can manage scale-out file server (SOFS) in the System Center - Virtual Machi
 ## Create a file share
 
 1. Click **Fabric** > **Storage** > **Home** > **Create File Share**.
-2. In **Create File Share Wizard** > **Storage Type**, select the SOFS on which you want to create a share. Type in a name and description for the share and select the storage pool you want to use. If the CSV exists click **Volume** and specify it. If the folder path exists click **Local path** and specify it. The file share inherits the classification of the storage pool.
+2. In **Create File Share Wizard** > **Storage Type**, select the SOFS on which you want to create a share. Type in a name and description for the share and select the storage pool you want to use. If the CSV exists, click **Volume** and specify it. If the folder path exists click **Local path** and specify it. The file share inherits the classification of the storage pool.
 3. In **Capacity**, specify the file share size and type. Leave the default type unless the disk is used for backups or deduplication, in which case NTFS is recommended.
-4. In **Capacity** > **Resiliency**, for ReFS resilience must be mirror (two or three-way). For NTFS it can be mirror or parity (single or dual). The default is a three-way mirror.
-5. Enable deduplication if required. Change the unit size allocation if required, and optionally enable storage tiers.
-6. In **Summary** review the settings and click **Finish**. Verify the file share in **Fabric** > **Storage** > **File Servers** > **File Shares**.
+4. In **Capacity** > **Resiliency**, for ReFS resilience must be mirror (two or three-way). For NTFS, it can be mirror or parity (single or dual). The default is a three-way mirror.
+5. Enable deduplication if necessary. Change the unit size allocation if required, and optionally enable storage tiers.
+6. In **Summary**, review the settings and click **Finish**. Verify the file share in **Fabric** > **Storage** > **File Servers** > **File Shares**.
 
 
 ## Set a storage QoS for an SOFS
 
-Windows Server 2016 and System Center VMM 2016 include storage QoS policies to solve the "noisy neighbor" problem. This problem is a common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there is always a chance that one VM’s usage of the resource exceeds that of the other. This can impact app performance of an app running on the VM. Storage QoS provides:
+ System Center VMM 2016 and later include storage QoS policies to solve the "noisy neighbor" problem. This problem is a common in virtualized environments. When two virtual machines (VMs) share a resource, say a disk, there is always a chance that one VM’s usage of the resource exceeds that of the other. This can impact app performance of an app running on the VM. Storage QoS provides:
 
 - **Mitigation of noisy neighbor issues**: Ensures that a single VM doesn't consume all resources and starve other VMs of storage bandwidth.
 - **Monitor end-to-end storage performance**: When VMs are started on an SOFS their performance is monitored.
@@ -55,7 +55,7 @@ Windows Server 2016 and System Center VMM 2016 include storage QoS policies to s
 Set a storage QoS policy as follows:
 
 1. Click **Fabric** > **Storage** > **Storage**. **QoS Policies** > **Create Storage Qos Policy**.
-2. In **Create Storage Qos Policy Wizard** > **General** specify a name and description for the policy.
+2. In **Create Storage Qos Policy Wizard** > **General**, specify a name and description for the policy.
 3. In **Policy Settings** select whether you want all the virtual hard disks for VMs to share resources equally or allocate resources per VM. If you choose to allocate per instance you'll need to set a minimum and maximum IOPS. Then a virtual disk to which th epoicy is applied will receive the minimum and maximum limits.
 4. In **Scope** specify the file servers on which to apply the policy. You can apply the policy to multiple servers which is useful when you migrate VMs across servers so that QoS policy settings remain the same.
 5. In **Summary** review the settings and click **Finish**. Verify the policy in **Fabric** > **Storage** > **QoS Policies**.

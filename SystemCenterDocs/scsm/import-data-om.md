@@ -6,8 +6,8 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
-ms.date: 10/12/2016
+keywords:
+ms.date: 05/06/2019
 ms.technology: service-manager
 ms.assetid: e233cb46-69de-439d-a4f8-08d8ac993e64
 ---
@@ -22,7 +22,7 @@ The Microsoft Azure management pack for Operations Manager is supported in this 
 
 ## Import management packs for Operations Manager configuration item connectors
 
-For the System Center Operations Manager configuration item (CI) connector to function correctly, you have to import a set of management packs into Service Manager. The management packs and the Windows PowerShell script that you need to import the management packs are in the Service Manager installation folder. The default installation folder is \Program Files\Microsoft System Center\Service Manager 2016\Operations Manager Management Packs and System Center 2016 - Operations Manager Management Packs. Use the following procedures to import the management packs into Service Manager.
+For the System Center Operations Manager configuration item (CI) connector to function correctly, you have to import a set of management packs into Service Manager. The management packs and the Windows PowerShell script that you need to import the management packs are in the Service Manager installation folder. The default installation folder is \Program Files\Microsoft System Center\Service Manager <version>\Operations Manager Management Packs and System Center - Operations Manager Management Packs. Use the following procedures to import the management packs into Service Manager.
 
 ### To import Operations Manager management packs for an Operations Manager CI connector
 
@@ -43,7 +43,7 @@ For the System Center Operations Manager configuration item (CI) connector to fu
     ```
 
     ```
-    Set-Location \"Program Files\Microsoft System Center 2016\Service Manager\Operations Manager Management Packs"
+    Set-Location \"Program Files\Microsoft System Center <version>\Service Manager\Operations Manager Management Packs"
     ```
 
 5.  Type the following command, and then press ENTER:
@@ -74,7 +74,7 @@ For the System Center Operations Manager configuration item (CI) connector to fu
 
 3.  In the **Tasks** pane, under **Management Packs**, click **Import**.
 
-4.  In the **Select Management Packs to Import** box, point to the drive where Service Manager is installed, and then point to Program Files\Microsoft System Center\Service Manager 2016\Operations Manager 2016 Management Packs.
+4.  In the **Select Management Packs to Import** box, point to the drive where Service Manager is installed, and then point to Program Files\Microsoft System Center\Service Manager <version>\Operations Manager <version> Management Packs.
 
 5.  To the right of the **File name** box, select the file type **MP files (\*.mp)**.
 

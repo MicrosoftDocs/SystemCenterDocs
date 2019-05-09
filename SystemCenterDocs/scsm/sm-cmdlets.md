@@ -6,8 +6,8 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
-ms.date: 10/12/2016
+keywords:
+ms.date: 05/06/2019
 ms.technology: service-manager
 ms.assetid: f032839d-a148-4dd9-9309-a51a047f197a
 ---
@@ -52,7 +52,7 @@ The administrator cmdlet module is automatically pre-imported in this session.
 
 1.  On the computer that hosts the Service Manager management server, on the taskbar, click **Start**, point to **All Programs**, and then click **Microsoft System Center**.
 
-2.  Click **Service Manager 2016**, and then click **Service Manager Shell**.
+2.  Click **Service Manager <version>**, and then click **Service Manager Shell**.
 
 The administrator cmdlet module is automatically pre-imported in this session.
 

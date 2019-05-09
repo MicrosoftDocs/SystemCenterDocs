@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -33,7 +33,7 @@ Service Manager includes predefined Microsoft Online Analytical Processing \(OLA
 
 ## View and analyze a Service Manager OLAP data cube with Excel
 
-You can use the following procedure to view and analyze a Microsoft Online Analytical Processing \(OLAP\) data cube from System Center 2016 - Service Manager with Microsoft Excel. You can also save your workbooks into an analysis library. Using the PivotTable field list, you can drag and drop fields from the cube into the workbook.
+You can use the following procedure to view and analyze a Microsoft Online Analytical Processing \(OLAP\) data cube from System Center - Service Manager with Microsoft Excel. You can also save your workbooks into an analysis library. Using the PivotTable field list, you can drag and drop fields from the cube into the workbook.
  You must have Microsoft Excel 2007 or later installed on the computer running the Service Manager console in order to use the following procedure.  
 
 > [!NOTE]  

@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -41,7 +41,7 @@ Use the following procedure to customize the default Incident form in the Author
 
 ### To customize the Incident form
 
-1. Click **Start**, point to **Programs**, point to **Microsoft System Center**, point to **Service Manager 2016 Authoring**, and then click **Service Manager Authoring Tool**.
+1. Click **Start**, point to **Programs**, point to **Microsoft System Center**, point to **Service Manager <version> Authoring**, and then click **Service Manager Authoring Tool**.
 
 2. In the Authoring Tool, click **File**, and then click **New**.
 

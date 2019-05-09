@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -30,7 +30,7 @@ A System Center online analytical processing (OLAP) cube is defined as a collect
 
 All elements other than MeasureGroups are optional.
 
-When you define an OLAP cube using the schema above and you import the management pack, the System Center 2016 - Service Manager data warehouse deploys the cube using SQL&nbsp;Server Analysis Management Objects (AMO), and it creates the required infrastructure to maintain it. For example, you can create a simple OLAP cube based on *ComputerHostsOperatingSystemFact*. The following illustration is the dimensional view of the fact in the warehouse.
+When you define an OLAP cube using the schema above and you import the management pack, the System Center - Service Manager data warehouse deploys the cube using SQL&nbsp;Server Analysis Management Objects (AMO), and it creates the required infrastructure to maintain it. For example, you can create a simple OLAP cube based on *ComputerHostsOperatingSystemFact*. The following illustration is the dimensional view of the fact in the warehouse.
 
 ![Diagram of dimensional view](./media/create-olap-cube-mps/ops-comptuerhostsoperatingsystemfact.png)
 

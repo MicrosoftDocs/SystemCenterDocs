@@ -5,7 +5,7 @@ description: This article describes how to configure load balancing for the inte
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/07/2017
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

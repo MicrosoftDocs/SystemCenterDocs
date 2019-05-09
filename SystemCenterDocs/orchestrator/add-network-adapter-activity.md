@@ -2,7 +2,7 @@
 title: Add Network Adapter Activity
 description: The Add Network Adapter activity is used in a runbook to add a virtual network adapter to a virtual machine controlled by the VMware vSphere server.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -27,7 +27,7 @@ The activity publishes all of the data from the required and optional properties
 
 | Element   | Description   | Valid Values | Look up |
 |:---|:---|:---|:---|
-| Adapter Type   | The virtual network adapter type. For System Center 2016, the supported types are **Flexible**, **VMXNET 2 (Enhanced)**, **VMXNET 3** and **E1000**. | String   | Yes   |
+| Adapter Type   | The virtual network adapter type. For System Center, the supported types are **Flexible**, **VMXNET 2 (Enhanced)**, **VMXNET 3** and **E1000**. | String   | Yes   |
 | Connection at Power On | Indicates whether the adapter will be connected when the virtual machine is powered on.   | Boolean   | Yes   |
 | Network   | The vSphere network that the adapter will connect to.   | String   | Yes   |
 | VM Path   | The path of the virtual machine.   | String   | Yes   |

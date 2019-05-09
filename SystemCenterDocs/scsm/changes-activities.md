@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -21,7 +21,7 @@ Information Technology (IT) departments must manage changes to their IT environm
 
 The sections in this article are organized according to common change management scenarios. Even though the sample scenarios refer to a fictitious organization, Woodgrove Bank, the scenarios and steps are based on real use, and they describe how to use the change and activity management features in Service Manager.
 
-This sample scenario for System Center 2016 - Service Manager helps you achieve your goal of managing changes and activities by using multiple scenarios end to end. You can think of this sample scenario as a case study that helps put the individual scenarios and procedures in context.  
+This sample scenario for System Center - Service Manager helps you achieve your goal of managing changes and activities by using multiple scenarios end to end. You can think of this sample scenario as a case study that helps put the individual scenarios and procedures in context.  
 
 ## Initiate classify change requests  
 In the scenario that encompasses initiating and classifying a change request, Julia, the messaging support analyst, wants to propose and track a change. To do this, she creates a change request to capture information that she and others will use to evaluate, plan, develop, test, deploy, and assess changes. Julia starts by initiating the change request and then identifying its priority and category.  

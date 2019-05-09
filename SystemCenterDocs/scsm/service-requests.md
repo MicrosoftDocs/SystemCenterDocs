@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 10/12/2016
+ms.date: 05/06/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -138,7 +138,7 @@ Service requests are often created by end users by accessing the service catalog
 
 ## View service request details
 
-You can use the following procedure to view the details of a service request in the Service Manager console in System Center 2016 - Service Manager.  
+You can use the following procedure to view the details of a service request in the Service Manager console in System Center - Service Manager.  
 
 
 1.  In the Service Manager console, expand **Work Items**, expand **Service Request Fulfillment**, and then select a subnode, such as **Assigned To Me**.  

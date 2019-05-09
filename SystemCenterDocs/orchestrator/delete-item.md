@@ -2,7 +2,7 @@
 title: Delete Item
 description: The Delete Item activity is used in a runbook to delete existing appointments, contact groups, email messages, and task items.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -42,4 +42,4 @@ The following tables list the required properties and published data for this ac
 
 ## See Also
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx) <br> <br>
+[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx) <br> <br>

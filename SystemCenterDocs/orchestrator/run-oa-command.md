@@ -2,7 +2,7 @@
 title: Run OA Command
 description: The Run OA Command activity is used in a runbook to run a command that can be used to perform management activities such as Add User, Enable User, and Show Server Status.
 ms.custom: na
-ms.date: 12/02/2016
+ms.date: 05/07/2019
 ms.prod: system-center
 ms.reviewer: na
 ms.suite: na
@@ -49,7 +49,7 @@ The activity publishes all of the data from the required and optional properties
 | Standard output | Standard output of command | String   |
 
 >[!NOTE]
->When testing a configured connection, you may get a popup window with the message **Microsoft System Center 2016 Orchestrator has stopped working** with the Application Name of **sshclient.exe**. You can choose the **Close the program** option to dismiss the window without affecting the result of the test. If the connection is good, you should see another message window reporting **Test connection succeeded.**.
+>When testing a configured connection, you may get a popup window with the message **Microsoft System Center Orchestrator has stopped working** with the Application Name of **sshclient.exe**. You can choose the **Close the program** option to dismiss the window without affecting the result of the test. If the connection is good, you should see another message window reporting **Test connection succeeded.**.
 
 ## Other activities
 

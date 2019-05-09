@@ -74,13 +74,13 @@ IDs that are assigned to change requests and incidents are not created in sequen
 
 ## Combine Service Manager incidents into parent-child groups
 
-Incidents in System Center 2016 - Service Manager are usually short\-lived while help desk analysts investigate and then restore operations. Often, incidents are related and it is useful to group incidents together. You can create a parent incident to group other existing incidents together, which can help provide visibility into them and their relationship to one another.  
+Incidents in System Center - Service Manager are usually short\-lived while help desk analysts investigate and then restore operations. Often, incidents are related and it is useful to group incidents together. You can create a parent incident to group other existing incidents together, which can help provide visibility into them and their relationship to one another.  
 
 A Service Manager administrator can define automatic incident resolution settings so that when a parent incident is resolved, all its child incidents resolve automatically, do not resolve automatically, or to let the analyst decide whether to resolve or not. Similarly, an administrator can also define automatic incident reactivation settings so that when a parent incident is reactivated, all its child incidents reactivate automatically, do not reactivate automatically, or to let the analyst decide whether to reactivate the child incidents. Both processes can help you verify that all child incidents are resolved or activated together as a group.  
 
 ### Create a parent incident from an incident form
 
-In System Center 2016 - Service Manager, one way a help desk analyst can create a parent incident is when an existing incident is already opened. You can create a parent incident using the following steps. A parent incident serves as a container for several incidents.  
+In System Center - Service Manager, one way a help desk analyst can create a parent incident is when an existing incident is already opened. You can create a parent incident using the following steps. A parent incident serves as a container for several incidents.  
 
 The following procedure is performed on an incident that is neither a parent incident nor a child incident. Afterward, a new parent incident is created and the existing incident is converted to a child incident.  
 
@@ -256,7 +256,7 @@ In Service Manager, incidents are automatically created from email requests by u
 In Service Manager, you can use the following procedures to change the urgency of an incident, edit an unassigned incident from Operations Manager, link a knowledge article to an incident, and validate the changes. Users create simplified incidents using the Self-Service Portal, based on the Incident portal template. Because user\-created incidents are simplified, analysts often need to revise new incidents with additional information. Additionally, there is no functional difference between incidents created with the Self-Service Portal, using either the **Need help with a problem** or **Need repair or fix** options.  
 
 > [!NOTE]  
->  Incidents are automatically created by System Center 2016 - Service Manager when the Operations Manager Alert connector is enabled. You can edit the new incidents that are generated when an Operations Manager alert is raised and then assign the incidents to analysts.  
+>  Incidents are automatically created by System Center  - Service Manager when the Operations Manager Alert connector is enabled. You can edit the new incidents that are generated when an Operations Manager alert is raised and then assign the incidents to analysts.  
 
 ### To change the urgency of an incident  
 
