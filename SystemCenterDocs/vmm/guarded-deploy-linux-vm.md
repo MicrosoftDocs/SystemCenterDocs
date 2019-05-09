@@ -21,7 +21,7 @@ Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based
 
 With Windows Server version 1709, Hyper-V introduced support for provisioning Linux shielded VMs. This support is available in VMM 1801.
 
-## Shield a Linux VM:
+## Shield a Linux VM
 
 1.	Create a signed template disk.
 2.	Create a Linux shielded VM template in VMM.
