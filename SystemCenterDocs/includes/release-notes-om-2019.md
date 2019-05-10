@@ -4,7 +4,7 @@ description: include file that summarizes the release notes for Operations Manag
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 05/10/2019
 ms.prod: system-center
 ms.assetid: 56adc06e-4317-4622-83f2-cc44a5f40c78
 ms.technology: operations-manager
@@ -72,3 +72,9 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Chan
 ```
 
 This command will add the service user to the list of allowed users, who can access VirtualMachineManager-Server/Operational event log.
+
+## Operations Manager 2019 does not support HPUX library  
+
+**Description**: Operations Manager 2019 does not support HPUX. However, HPUX library is available in the list of management packs delivered for Operations Manager 2019.
+
+**Workaround**: Ignore this. HPUX is removed from the latest pack on the DLC, [here]( https://www.microsoft.com/download/details.aspx?id=58208&WT.mc_id=rss_windows_allproducts).
