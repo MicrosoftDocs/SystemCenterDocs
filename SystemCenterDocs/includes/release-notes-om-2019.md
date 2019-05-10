@@ -77,4 +77,4 @@ This command will add the service user to the list of allowed users, who can acc
 
 **Description**: Operations Manager 2019 does not support HPUX. However, HPUX library is available in the list of management packs delivered for Operations Manager 2019.
 
-**Workaround**: Ignore this, HPUX is not supported in 2019.
+**Workaround**: Ignore this. HPUX is removed from the latest pack on the DLC, [here]( https://www.microsoft.com/download/details.aspx?id=58208&WT.mc_id=rss_windows_allproducts).
