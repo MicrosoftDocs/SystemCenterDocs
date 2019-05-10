@@ -70,9 +70,9 @@ This error occurs in a distributed management group scenario, where the reportin
 ```
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"
 ```
-## Support to HPUX library  
+## Support for HPUX library  
 
-**Description**: HPUX library is seen in the list of MPs delivered for Operations Manager 2019
+**Description**: HPUX library is available in the list of management packs delivered for Operations Manager 2019
 
 **Workaround**: Ignore this, HPUX is not supported in 2019.
 
