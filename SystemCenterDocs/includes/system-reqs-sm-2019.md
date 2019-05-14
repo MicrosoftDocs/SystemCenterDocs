@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 03/14/2019
+ms.date: 05/14/2019
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -88,7 +88,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 **Service Manager** |  **SQL Server 2016 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)** | **SQL Server [2017](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017)**
 --- | --- | --- | --- | ---
 **Service Manager/Data Warehouse database** |  &#8226;| &#8226;
-**SMA web service** |  &#8226; | &#8226;
+
 
 
   > [!NOTE]
