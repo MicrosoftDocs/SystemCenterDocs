@@ -5,7 +5,7 @@ description: include file to describe the system requirements for Service Manage
 ms.prod: system-center-2016
 author: bandersmsft
 ms.author: banders
-ms.date: 05/07/2018
+ms.date: 05/14/2019
 ms.technology: service-manager
 ms.topic: include
 ms.assetid: ff4c7819-632e-486f-a329-041b7fa6a478
@@ -118,7 +118,7 @@ The following table summarizes the support for SQL Server 64-bit Enterprise and 
 **Service Manager** | **SQL Server 2012** | **SQL Server 2014 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202014%20service%20pack)**  | **SQL Server 2016 and [SPs](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)**
 --- | --- | --- | ---
 **Service Manager/Data Warehouse database** | | &#8226;| &#8226;
-**SMA web service** |  | &#8226; | &#8226;
+
 
 
 - System Center 2016 - Service Manager doesn't support setting the MultiSubnetFailover parameter. This parameter is not used in Service Manager connection strings.
