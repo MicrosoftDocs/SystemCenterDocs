@@ -56,18 +56,19 @@ activity.
     -   **Required** (default): the application is mandatory to be installed or uninstalled
     -   **Available**: the application is made available but not mandatory
 
- >[!NOTE]
- >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
+     >[!NOTE]
+     >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
 - User Notification: Determines how the end user sees the deployment and its notifications. Options are:
     -   **Show all notifications** (default): The deployment is listed in the Software Center and all notifications are displayed to the user.
     -   **Show only restart notifications**: The deployment is not listed in the Software Center, but notifications about a required reboot are displayed to the user.
     -   **Hide all notifications**: The deployment is not listed in the Software Center, and notifications about a required reboot are not displayed to the user.
 
- >[!NOTE]
- >If you set this property to **Hide all notifications** and the **Purpose** property is set to **Available**, this property will automatically be reset to **Show only restart notifications** because Configuration Manager disallows that setting.
+     >[!NOTE]
+     >If you set this property to **Hide all notifications** and the **Purpose** property is set to **Available**, this property will automatically be reset to **Show only restart notifications** because Configuration Manager disallows that setting.
 - Collection: The display name or ID of an existing collection.
->[!NOTE]
->When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to Name or the activity will fail.
+
+    >[!NOTE]
+    >When you use the browse feature to look up a collection name, or enter a collection name manually or from published data, you must set the **Collection Value Type** property to Name or the activity will fail.
 - Collection Value Type: Specifies whether the value in the Collection property is a name or a collection ID. Options are:
     -   **ID** (default): the value is a collection ID
     -   **Name**: the value is a collection name
