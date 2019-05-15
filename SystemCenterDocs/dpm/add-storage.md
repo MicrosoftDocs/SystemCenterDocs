@@ -198,8 +198,8 @@ Follow these steps: :
     > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
 
 7. Check the media type of the disk included. At least one of the disks should be SSD, required for SSD Tiering.
-  -	Add all the disks including SSDs to the storage pool.
-  -	Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
+    -	Add all the disks including SSDs to the storage pool.
+    -	Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
 
     > [!NOTE]
     > - If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
