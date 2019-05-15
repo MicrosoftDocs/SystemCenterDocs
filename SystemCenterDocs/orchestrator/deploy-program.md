@@ -60,8 +60,9 @@ optional properties into published data.
 - Purpose: The deployment intent or purpose. Options are:
     -   **Required** (default): the application is mandatory to be installed or uninstalled
     -   **Available**: the application is made available but not mandatory
-    >[!NOTE]
-    >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
+
+        >[!NOTE]
+        >When this property is set to **Required**, a mandatory schedule must be defined on the **Schedule** tab or the activity will fail.
 
 - Rerun behavior: Specifies whether the program will be rerun on the client computer if it has previously been run before the scheduled mandatory time. Options are:
     -   **Always rerun program** (default): The program will always be rerun on the client when the advertisement is scheduled, even if the program has already been successfully run. This is particularly useful when using recurring advertisements in which the program is routinely updated, as with some virus detection software.
