@@ -107,10 +107,10 @@ above:
 
 4.  Configuring the **Advanced** tab:
 
-  - The options in the **Delete Conditions** section represent a check that will be made against the collection to determine if the condition is true.
-  - If an option is set to **True** and the condition is true, the
-    collection will not be deleted and the activity will fail.
-  - To ignore the existence of a specific condition, set that property
-    to **False**.
+      - The options in the **Delete Conditions** section represent a check that will be made against the collection to determine if the condition is true.
+      - If an option is set to **True** and the condition is true, the
+        collection will not be deleted and the activity will fail.
+      - To ignore the existence of a specific condition, set that property
+        to **False**.
 
 5.  Click **Finish**.
