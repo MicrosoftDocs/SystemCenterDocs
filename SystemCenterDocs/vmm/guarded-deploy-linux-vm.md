@@ -74,7 +74,7 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
     - Select the Guest OS profile as **Create new Linux operating system customization settings**.
 
-    - Select the OS on the template disk you created earlier (**Ubuntu Linux**).
+    - Select the OS on the template disk that you created earlier (**Ubuntu Linux**).
 
         ![Configuration for the VM template's operating system](media/linux-shield/vm-create-linux-template-configure-os.png)
 
