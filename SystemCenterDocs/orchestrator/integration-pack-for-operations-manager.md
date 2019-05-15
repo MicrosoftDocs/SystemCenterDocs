@@ -24,12 +24,13 @@ Before you deploy the Operations Manager integration pack, install and configure
 - Operations Manager. The integration pack version should match the System Center version.
 
     >[!NOTE]
-    >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later, if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
+    >If you're using the Orchestrator 2016 or 1801 integration pack for Operations Manager 2016 UR4 or later, if you've configured Operations Manager to accept only TLS 1.1 or 1.2 connections, make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-or-later).
 
 - On each computer where an Orchestrator Runbook server or Runbook Designer needs to interact with Operations Manager, install the Operations Manager console. 
 - The Orchestrator integration library management pack is required by the Create Alert object. 
-- The Create Alert object installs this management pack automatically in Operations Manager the first time it's run. 
-- To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager. 
+
+    >[!NOTE]
+    >The Create Alert object installs the management pack automatically in Operations Manager the first time it's run. To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager. 
 
 ## Download the integration pack
 
@@ -39,7 +40,7 @@ Before you deploy the Operations Manager integration pack, install and configure
 
 ## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server. Then deploy it to Runbook servers and Runbook Designer computers. [Learn more](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server. Then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md).
 
 ## Configure the connections
 
@@ -84,7 +85,7 @@ Follow these steps:
 
       ![New registry key](./media/integration-pack-for-om/new-registry-key.png)
 
-   d. Type **SSL 3.0**, and then select **Enter**.
+   d. Enter **SSL 3.0**.
 
    e. Repeat the previous two steps to create keys for TLS 0, TLS 1.1, and TLS 1.2. These keys resemble directories.
 
