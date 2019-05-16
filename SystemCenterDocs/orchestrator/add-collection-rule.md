@@ -73,10 +73,10 @@ You can specify the following rule properties:
 
 ### Add Collection Rule Published Data
 
-  **Element**| **Description**|
-  ------------|-----------------|
-  Connection| Specifies the name of the connection to the Configuration Manager server.|
-  Collection ID| Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
+  |**Element**| **Description**|
+  |------------|-----------------|
+  |Connection| Specifies the name of the connection to the Configuration Manager server.|
+  |Collection ID| Provides the Collection ID value for the collection targeted for this activity (in case the collection name was specified for the input property).|
 
 ## Configuring the Add Collection Rule Activity
 
