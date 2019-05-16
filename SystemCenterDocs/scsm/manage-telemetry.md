@@ -35,7 +35,7 @@ Use the following procedure:
    ![console telemetry option](./media/telemetry/sm-telemetry-console.png)
 3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
-  ![console telemetry selection](./media/telemetry/console-telemetry-selection.png)
+   ![console telemetry selection](./media/telemetry/console-telemetry-selection.png)
 
 ## Manage telemetry settings from SM management server or data warehouse management server
 
