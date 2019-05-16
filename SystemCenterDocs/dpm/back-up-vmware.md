@@ -287,9 +287,9 @@ For long term retention on VMware backup data on-premises, you can now enable VM
     If you want to change the schedule when application recovery points are taken, click Modify. On the Express Full Backup tab, choose a new schedule for the time(s) and days of the week when Express Full Backups are taken. The default is daily at 8 PM, local time for the DPM server. When you have the short-term goals you like, click **Next**.
 
 7. If you want to store data on tape for long-term storage in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In **Frequency of backup**,  specify how often backups to tape should run. The frequency is based on the retention range you've specified:
- -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
- -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
- - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
+    -	When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
+    -	When the retention range is 1-11 months, you can select backups to occur daily, weekly, bi-weekly, or monthly.
+    - When the retention range is 1-4 weeks, you can select backups to occur daily or weekly.
 
 On a stand-alone tape drive, for a single protection group, DPM uses the same tape for daily backups until there is insufficient space on the tape. You can also collocate data from different protection groups on tape.
 

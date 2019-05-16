@@ -45,8 +45,8 @@ To create a new user with Global Administrator permissions using Office 365 admi
 5.	You are not required to assign Office 365 services licenses to the monitoring account
 6.	Specify an email address to receive a temporary password. Log out from Office 365 admin center and log in again using new credentials received in the email.
 7.	Login to the Office 365 management portal using newly created credentials and set the password for the account. Remember to use strong complex password because this account has Global administrator permissions.
-  > [!NOTE]
-  > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to login to the Office 365 management portal at least once.
+    > [!NOTE]
+    > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to login to the Office 365 management portal at least once.
 
 ### Configure Run As profiles
 
