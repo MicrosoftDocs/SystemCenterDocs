@@ -13,6 +13,8 @@ ms.technology: service-manager
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a2b3464-1ff8-4695-875f-839da201c366
+monikerRange: 'sc-sm-2016'
+
 ---
 
 # Upgrade your environment to System Center 2016 - Service Manager
