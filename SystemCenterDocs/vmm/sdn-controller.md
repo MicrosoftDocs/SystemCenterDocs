@@ -182,7 +182,6 @@ You need an SSL certificate that will be used for secure/HTTPS communication wit
 The following example creates a new self-signed certificate, and should be run on the VMM server.
 
 > [!NOTE]
-
 > - You can use an IP address as the DNS name, but this is not recommended as it restricts the network controller to a single subnet.
 > - You can use any friendly name for the network controller.
 > - For multi-node deployment, The DNS name should be the REST name you want to use.
@@ -354,7 +353,6 @@ The HNV provider logical network is now accessible to all the hosts in the netwo
 Now, create two VM networks and IP pools for two tenants in your SDN infrastructure, to test connectivity.
 
 > [!NOTE]
-
 > - Do not use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 > - Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
 > - Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
