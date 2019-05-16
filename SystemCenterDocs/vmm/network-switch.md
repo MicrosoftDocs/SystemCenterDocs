@@ -25,12 +25,11 @@ This article describes how to create logical switches in the System Center - Vir
 
 ::: moniker-end
 
-::: moniker range="sc-vmm-1807"
+::: moniker range=">=sc-vmm-1807"
 
 [!INCLUDE [network-switch-1807.md](../includes/network-switch-1807.md)]
 
 ::: moniker-end
-
 
 ## Next steps
 

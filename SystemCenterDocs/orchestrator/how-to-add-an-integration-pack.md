@@ -45,8 +45,8 @@ When you install an upgrade of an integration pack, you must first uninstall any
 5.	In the Installation Options dialog box, configure the following settings.
 6.	To choose a time to deploy the integration pack, select the Schedule installation check box, and then select the time and date from the Perform installation list.
 7.	Click one of the following:
-  * Stop all running runbooks before installing the integration pack to stop all running runbooks before deploying the integration pack.
-  * Install the Integration Packs without stopping the running Runbooks to install the integration pack without stopping any running runbooks.
+    * Stop all running runbooks before installing the integration pack to stop all running runbooks before deploying the integration pack.
+    * Install the Integration Packs without stopping the running Runbooks to install the integration pack without stopping any running runbooks.
 8.	Click Next.
 9.	In the Completing Integration Pack Deployment Wizard dialog box, click Finish.
 10.	When the integration pack is deployed, the Log Entries dialog box displays a confirmation message.
@@ -54,9 +54,9 @@ When you install an upgrade of an integration pack, you must first uninstall any
 
 ## Upgrade an integration pack
 1.	On all computers that have a runbook server or Runbook Designer installed, uninstall any earlier version of the integration pack. You can achieve this by doing any one of the following:
-  * Remove it by following the instructions in How to Uninstall and Unregister an Integration Pack.
-  * Log into each computer and uninstall the integration pack from Programs and Features in Control Panel.
-  * On the management server, start the Deployment Manager, and then right click on the deployed integration pack for each Runbook Server or Runbook Designer computer and click Uninstall Integration Pack or Hotfix.
+    * Remove it by following the instructions in How to Uninstall and Unregister an Integration Pack.
+    * Log into each computer and uninstall the integration pack from Programs and Features in Control Panel.
+    * On the management server, start the Deployment Manager, and then right click on the deployed integration pack for each Runbook Server or Runbook Designer computer and click Uninstall Integration Pack or Hotfix.
 2.	Register and deploy the upgraded integration pack.
 
 ## Next steps
