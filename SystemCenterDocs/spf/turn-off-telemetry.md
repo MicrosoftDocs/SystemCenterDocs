@@ -30,19 +30,19 @@ Use the following procedure:
 
 1. On the SPF server, Set the value of the "DiagnosticAndUsageDataEnabled" registry subkey under *HKEY_LOCAL_MACHINE\Software\Microsoft\Service Provider Foundation* to 0. If the registry key is not present, then create the key with the name *DiagnosticAndUsageDataEnabled* and set the value to 0.
 
-  - To create a new Registry Key, under HKEY_LOCAL_MACHINE\Software\Microsoft\Service Provider Foundation,  right-click, and select **New** > **DWORD (32-bit) Value** as shown below:
+   - To create a new Registry Key, under HKEY_LOCAL_MACHINE\Software\Microsoft\Service Provider Foundation,  right-click, and select **New** > **DWORD (32-bit) Value** as shown below:
 
-    ![spf telemetry new key ](./media/telemetry/spf-telemetry-newkey.png)
+     ![spf telemetry new key ](./media/telemetry/spf-telemetry-newkey.png)
 
-  - Enter the name of the key as *DiagnosticAndUsageDataEnabled*.
+   - Enter the name of the key as *DiagnosticAndUsageDataEnabled*.
 
-  - Once the key appears in the list of keys double-click on the key and enter 0 in the *Value data* field as shown below:
+   - Once the key appears in the list of keys double-click on the key and enter 0 in the *Value data* field as shown below:
 
-    ![spf telemetry key value](./media/telemetry/spf-telemetry-keyvaluedata.png)
+     ![spf telemetry key value](./media/telemetry/spf-telemetry-keyvaluedata.png)
 
 2. Use the *Set-SCSpfTelemetry* command and set the telemetry option as shown in the following image:
 
-  ![spf telemetry](./media/telemetry/spf-telemetrydisabled.png)  
+   ![spf telemetry](./media/telemetry/spf-telemetrydisabled.png)  
 
 
 ## Telemetry data collected
