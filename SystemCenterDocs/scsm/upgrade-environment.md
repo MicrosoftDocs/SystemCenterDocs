@@ -41,11 +41,11 @@ This topic describes how to prepare your System Center 2012 R2 - Service Manager
 
 2.  Confirm that the data warehouse jobs have stopped running.  
 
- When the data warehouse jobs have completed, start the upgrade of the data warehouse management server.  
+3. When the data warehouse jobs have completed, start the upgrade of the data warehouse management server.  
 
- After the data warehouse has been upgraded, perform the following procedures on the first Service Manager management server:  
+4. After the data warehouse has been upgraded, perform the following procedures on the first Service Manager management server:  
 
-- Wait 10 minutes, and then start the upgrade of the Service Manager management server.  
+5. Wait 10 minutes, and then start the upgrade of the Service Manager management server.  
 
 ### To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
 
