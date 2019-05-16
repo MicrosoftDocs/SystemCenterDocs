@@ -32,7 +32,7 @@ Use the following procedure:
 
 2. In the **Help** menu, click **Send diagnostic and usage data to Microsoft**.
 
-  ![console telemetry option](./media/telemetry/sm-telemetry-console.png)
+   ![console telemetry option](./media/telemetry/sm-telemetry-console.png)
 3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
   ![console telemetry selection](./media/telemetry/console-telemetry-selection.png)
