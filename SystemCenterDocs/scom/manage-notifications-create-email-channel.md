@@ -25,17 +25,17 @@ Before you begin, gather the following information:
     -   Port number for the SMTP server.  
 
     -   Authentication method for the SMTP server. You have three choices:
-       -  Anonymous
-       -  Windows Integrated
-       -  External Email Authentication  
+        -  Anonymous
+        -  Windows Integrated
+        -  External Email Authentication  
 
-   > [!NOTE]
-   > Operations Manager supports configuration of any external email account to send the notifications through External Email Authentication. You have the flexibility in terms of which email account is to be used for sending out the notification emails.  
+    > [!NOTE]
+    > Operations Manager supports configuration of any external email account to send the notifications through External Email Authentication. You have the flexibility in terms of which email account is to be used for sending out the notification emails.  
 
 
 -   Return email address. This address is used for all email notifications on this channel and will receive any replies to notifications.  
-  - For internal email server, any return address that is within the domain can be specified.  Multiple internal servers can be added to the subscription channel.
-  - For an external email server, the email account used for creating the Run As profile must match the return address.  To avoid coexistence issues with other email servers, a subscription channel with an external email account must contain only that email server.  
+    - For internal email server, any return address that is within the domain can be specified.  Multiple internal servers can be added to the subscription channel.
+    - For an external email server, the email account used for creating the Run As profile must match the return address.  To avoid coexistence issues with other email servers, a subscription channel with an external email account must contain only that email server.  
 
 -   Email subject and body text that you want subscribers to receive. For more information, see [How to customize message content for notifications](manage-notificiations-customize-message.md).  
 
