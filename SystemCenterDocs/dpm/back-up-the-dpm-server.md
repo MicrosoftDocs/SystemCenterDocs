@@ -41,9 +41,9 @@ Information on a  DPM server can be backed up and protected by another DPM serve
 Back up a primary DPM server using a secondary DPM server:
 
 1.  Install the DPM protection agent on each primary DPM server that you want to protect. No restart is required.
-> [!IMPORTANT]
-> Major and minor versions of the Primary and Secondary DPM servers must match.
->
+    > [!IMPORTANT]
+    > Major and minor versions of the Primary and Secondary DPM servers must match.
+    >
 
 2.  Add the primary DPM server to an existing protection group, or create a new one. Select to protect the following data sources:
 
@@ -154,7 +154,10 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
 -   If the DPM SQL Server instance isn't running on the DPM server, install the DPM protection agent on the SQL Server computer before you can protect the DPM databases on that server.
 
--   NOTE: For restore purposes, the DPM installation you want to restore with the DPM database must match the version of the DPM database itself.  For example, if the database you want to recover is from a DPM 2016 with Update Rollup 4 installation, the DPM server must be running the same version with Update Rollup 4. This means that you might have to uninstall and reinstall DPM with a compatible version before you restore the database.  To check the database version you might have to mount it manually to a temporary database name and then run a SQL query against the database to check the last installed rollup, based on the major and minor versions. To check the DPM database version, follow these steps:
+    > [!NOTE]
+    > For restore purposes, the DPM installation you want to restore with the DPM database must match the version of the DPM database itself.  For example, if the database you want to recover is from a DPM 2016 with Update Rollup 4 installation, the DPM server must be running the same version with Update Rollup 4. This means that you might have to uninstall and reinstall DPM with a compatible version before you restore the database.  To check the database version you might have to mount it manually to a temporary database name and then run a SQL query against the database to check the last installed rollup, based on the major and minor versions.
+
+-   To check the DPM database version, follow these steps:
 
     1.  To run the query, open SQL Management Studio, and then connect to the SQL instance that's running the DPM database.
 
