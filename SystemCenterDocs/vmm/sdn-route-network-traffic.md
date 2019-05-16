@@ -306,7 +306,7 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 
     1. Add BGP peer for the L3 connection. Enter your ASN, peer BGP IP, and its ASN on the **Border Gateway Protocol**  page.
 
-    ![remote subnets](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
+       ![remote subnets](./media/sdn-route-network-traffic/l3-ui-bgp-wizard.png)
 
     2. Determine the SDN gateway internal address as detailed in [the following section](#determine-the-sdn-gateway-internal-address).
 
