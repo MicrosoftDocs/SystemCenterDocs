@@ -33,9 +33,8 @@ Use the following procedure:
 5.	Encrypt the Config file section by running the following command:
 
     ```powershell
-.\aspnet_regiis.exe -pef "connectionStrings" 'C:\inetpub\Service Management Automation'
-```
-
+    .\aspnet_regiis.exe -pef "connectionStrings" 'C:\inetpub\Service Management Automation'
+    ```
     ![Encrypt config file](./media/encrypt-sma-web-service/encrypt-config-file.png)
 
 6.	Restart the SMA App Pool from **Computer Management**> **Service and Applications** > **Internet Information Service(IIS) Manager**.
