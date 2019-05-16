@@ -49,8 +49,9 @@ Here's what you need to do to set up a SDN network controller
 4. **Set up Active Directory security groups**: You'll need an Active Directory security group for network controller management, and another security group for network controller clients. Each group will need at least one user account in it.
 5. **Set up a VMM library share**. You can have an optional library file share for keeping diagnostic logs. This library share will be accessed by the network controller to store diagnostics information throughout its lifetime.
 6. **Set up a VMM host group**: Set up a dedicated host group for all of the SDN Hyper-V hosts.
+     >[!NOTE]
+     >Hosts must be running Windows Server 2016 with latest patches installed, and have the Hyper-V role enabled.
 
-    **Note**: Hosts must be running Windows Server 2016 with latest patches installed, and have the Hyper-V role enabled.
 7. **Create the management logical network**: Create a logical network to mirror management network connectivity for the VMM host, network controller hosts, and tenant VM hosts. If you want to allocate static IP addresses from a pool,  create a pool on this logical network.
 8. **Create and deploy a management logical switch**: You create the logical switch, and deploy it on network controller hosts, to provide connectivity to the management network for network controller VMs.
 9. **Set up a certificate**: You need an SSL certificate for secure/HTTPS communication with the network controller.
@@ -68,9 +69,8 @@ Here's what you need to do to set up a SDN network controller
 2. Extract the contents to a folder on a local computer.
 3. Refresh the library,  You'll import the service templates, later.
 
-    **Note**:
-
-    The custom resource files are used when setting up the network controller, and other SDN components (software load balancer, RAS gateway).
+   > [!NOTE]
+   > The custom resource files are used when setting up the network controller, and other SDN components (software load balancer, RAS gateway).  
 
     The NC folder contains Four service templates and Five custom resource folders. These are summarized in the following table:
 
@@ -153,17 +153,18 @@ If you want to allocate static IP addresses to network controller VMs, create an
 You need to deploy a logical switch on the management logical network. The switch provides connectivity between the management logical network and the network controller VMs.
 
 1. In the VMM console, click **Fabric** > **Networking** > **Create Logical Switch**. Review the Getting Started information and click **Next**.
-3. Provide a **Name** and optional description. Select **No Uplink Team**. If you need teaming, select **Embedded Team**.
+2. Provide a **Name** and optional description. Select **No Uplink Team**. If you need teaming, select **Embedded Team**.
+   > [!NOTE]
+   > Do not use **Team**.
 
-    **Note**: Do not use **Team**.  
-4.  For minimum bandwidth mode, choose the **Weight** option.
-5.  In **Extensions**, clear all the switch extensions. This is important. If you select any of the switch extensions at this stage, it could block the network controller onboarding later.
-6.  You can optionally add a virtual port profile and choose a port classification for host management.
-7.  Select an existing uplink port profile, or click **Add** > **New Uplink Port Profile**. Provide a **Name** and optional description. Use the defaults for load balancing algorithm and teaming mode.  Select all the network sites in the management logical network.
-8. Click **New Network Adapter**. This adds a host virtual network adapter (vNIC) to your logical switch and uplink port profile, so that when you add the logical switch to your hosts, the vNICs get added automatically.
-9. Provide a **Name** for the vNIC. Verify that the management VM network is listed in **Connectivity**.
-10. Select **This network adapter will be used for host management** > **Inherit connection settings from the host adapter**. This allows you to take the vNIC adapter settings from the adapter that already exists on the host. If you created a port classification and virtual port profile earlier, you can select it now.
-11. In **Summary** review the information and click **Finish** to complete the wizard.
+3.  For minimum bandwidth mode, choose the **Weight** option.
+4.  In **Extensions**, clear all the switch extensions. This is important. If you select any of the switch extensions at this stage, it could block the network controller onboarding later.
+5.  You can optionally add a virtual port profile and choose a port classification for host management.
+6.  Select an existing uplink port profile, or click **Add** > **New Uplink Port Profile**. Provide a **Name** and optional description. Use the defaults for load balancing algorithm and teaming mode.  Select all the network sites in the management logical network.
+7. Click **New Network Adapter**. This adds a host virtual network adapter (vNIC) to your logical switch and uplink port profile, so that when you add the logical switch to your hosts, the vNICs get added automatically.
+8. Provide a **Name** for the vNIC. Verify that the management VM network is listed in **Connectivity**.
+9. Select **This network adapter will be used for host management** > **Inherit connection settings from the host adapter**. This allows you to take the vNIC adapter settings from the adapter that already exists on the host. If you created a port classification and virtual port profile earlier, you can select it now.
+10. In **Summary** review the information and click **Finish** to complete the wizard.
 
 ### Deploy the logical switch
 
@@ -180,12 +181,12 @@ You need an SSL certificate that will be used for secure/HTTPS communication wit
 
 The following example creates a new self-signed certificate, and should be run on the VMM server.
 
-**Note**
+> [!NOTE]
 
-- You can use an IP address as the DNS name, but this is not recommended as it restricts the network controller to a single subnet.
-- You can use any friendly name for the network controller.
-- For multi-node deployment, The DNS name should be the REST name you want to use.
-- For single-node deployment, the DNS name should be the network controller name followed by the full domain name.
+> - You can use an IP address as the DNS name, but this is not recommended as it restricts the network controller to a single subnet.
+> - You can use any friendly name for the network controller.
+> - For multi-node deployment, The DNS name should be the REST name you want to use.
+> - For single-node deployment, the DNS name should be the network controller name followed by the full domain name.
 
 **Deployment** | **Syntax** | **Example**
 --- | --- | ---
@@ -204,8 +205,8 @@ Export the certificate and its private key in .pfx format.
   5. Assign the **Users/Groups** and a password for the certificate you are exporting, click **Next**.
   6. On the **File to export** page, browse the location where you want to place the exported file, and give it a name.   
   7. Similarly, export the certificate in .CER format
-
-  **Note**: To export to .CER format, uncheck the **Yes, export the private key** option.
+     > [!NOTE]
+     > To export to .CER format, uncheck the **Yes, export the private key** option.
 
   8. Copy the .PFX to the ServerCertificate.cr folder.
   9. Copy the .CER file to the NCCertificate.cr folder.
@@ -220,7 +221,8 @@ When you are done, refresh these folders and ensure that you have these certific
 4. Copy the .CER file to the NCCertificate.cr folder.
 5. Copy the public key of the CA in .CER format to TrustedRootCertificate.cr.
 
-**Note**: Ensure that the enterprise CA is configured for certificate auto enrollment.
+> [!NOTE]
+> Ensure that the enterprise CA is configured for certificate auto enrollment.
 
 ## Set up the service template
 
@@ -256,9 +258,9 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 5.	To enable dynamic IP configuration and leverage DHCP for network controller management, click network adapter on the designer, and change the IPV4 address type to **Dynamic**.
 
 
-**Note**:
-- If you customize the template for high availability, ensure you deploy this on clustered nodes.
-- While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying the NC by using the SDN Express or VMM Express script.
+> [!NOTE]
+> - If you customize the template for high availability, ensure you deploy this on clustered nodes.
+> - While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying the NC by using the SDN Express or VMM Express script.
 
 ## Deploy the network controller
 
@@ -266,8 +268,9 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 2. Configure the deployment settings as described in the table below.
 3. It's normal for the virtual machine instances to be initially red. Click **Refresh Preview** to have the deployment service automatically find suitable hosts for the virtual machines to be created.
 4. After you configure these settings, click **Deploy Service** to begin the service deployment job.
+   > [!NOTE]
+   > Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. Note that if you're not using a volume licensed VHD\VHDX, or if the VHD\VHDX doesn't supply the product key using an answer file, then the deployment stops at the **Product Key** page, during network controller VM provisioning. You need to manually access the VM desktop, and either skip or enter the product key.
 
-**Note**: Deployment times will vary depending on your hardware but are typically between 30 and 60 minutes. Note that if you're not using a volume licensed VHD\VHDX, or if the VHD\VHDX doesn't supply the product key using an answer file, then the deployment stops at the **Product Key** page, during network controller VM provisioning. You need to manually access the VM desktop, and either skip or enter the product key.
 5. If the network controller deployment fails, delete the failed service instance, before you retry the  network controller deployment. Click **VMs and Services** > **All Hosts** > **Services**, and delete the instance.
 
 
@@ -350,11 +353,11 @@ The HNV provider logical network is now accessible to all the hosts in the netwo
 
 Now, create two VM networks and IP pools for two tenants in your SDN infrastructure, to test connectivity.
 
-**Note**:
+> [!NOTE]
 
-- Do not use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
-- Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
-- Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
+> - Do not use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
+> - Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
+> - Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
 
 1. [Create a VM network](network-virtual.md) for each tenant.
 2. [Create an IP address pool](network-pool.md) for each VM network.
