@@ -136,6 +136,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
   5.	[**Optional**] To enable CLR strict security, run the following script on each of the service manager databases.
 
       By default, CLR strict security is disabled after you upgrade to SQL 2017.
+      
 
   ```
   -- Do this only for SQL server version 2017 and more
