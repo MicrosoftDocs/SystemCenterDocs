@@ -38,7 +38,7 @@ The DPM integration pack requires the following software to be installed and con
 - [Download the pack for 2019](https://www.microsoft.com/download/details.aspx?id=58111&WT.mc_id=rss_alldownloads_all)
 - [Download the pack for 1801](https://www.microsoft.com/download/details.aspx?id=56605)
 - [Download the pack for 2016](https://www.microsoft.com/download/details.aspx?id=54098)
-## Register and deploy the pack
+  ## Register and deploy the pack
 
 After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md) about installing an integration pack.
 

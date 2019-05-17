@@ -24,15 +24,15 @@ The Monitor SNMP Trap activity waits for an event to occur either in the Microso
 ## Configuring the Monitor SNMP Trap Activity  
  Before you configure the Monitor SNMP Trap activity, you need to determine the following:  
   
--   Version of SNMP that you are using  
+- Version of SNMP that you are using  
   
--   Source host IP address  
+- Source host IP address  
   
--   Enterprise identifier of the device  
+- Enterprise identifier of the device  
   
--   Generic or specific identifier of the device that you are monitoring  
+- Generic or specific identifier of the device that you are monitoring  
   
- Use the following information to configure the Monitor SNMP Trap activity.  
+  Use the following information to configure the Monitor SNMP Trap activity.  
   
 ### Details Tab  
   

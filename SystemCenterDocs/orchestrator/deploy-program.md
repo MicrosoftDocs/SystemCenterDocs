@@ -136,35 +136,35 @@ above:
 
 ## Configuring the Deploy Program activity
 
-1.  From the **Activities** pane, drag a **Deploy Program** activity to
-    the active runbook.
+1. From the **Activities** pane, drag a **Deploy Program** activity to
+   the active runbook.
 
-2.  Double-click the **Deploy Program** activity icon. The
-    **Properties** dialog box opens.
+2. Double-click the **Deploy Program** activity icon. The
+   **Properties** dialog box opens.
 
-3.  Configuring the **Details** tab:
+3. Configuring the **Details** tab:
 
-    1.  In the **Connection** section, click the ellipsis button
-        **(...)**, and then select the Configuration Manager server
-        connection that you want to use for this activity. Click **OK**.
+   1. In the **Connection** section, click the ellipsis button
+      **(...)**, and then select the Configuration Manager server
+      connection that you want to use for this activity. Click **OK**.
 
-    2.  In the **Fields** section, enter a value for each of the
-        required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(…)** button next to the text box to browse
-        for a value.\
-        \
-        You can also use published data to automatically populate the
-        value of the property from the data output by a previous
-        activity in the runbook.
+   2. In the **Fields** section, enter a value for each of the
+      required properties. If the property is Lookup-enabled, you can
+      click the ellipsis **(…)** button next to the text box to browse
+      for a value.\
+      \
+      You can also use published data to automatically populate the
+      value of the property from the data output by a previous
+      activity in the runbook.
 
-4.  Configuring the **Schedule** tab:
+4. Configuring the **Schedule** tab:
 
-    The Schedule tab allows you to define when the deployment becomes available or when it expires, as well as mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
-    >[!NOTE]
-    >When a deployment is set to **Required**, then a mandatory schedule must be defined for the deployment or the activity will fail.
+   The Schedule tab allows you to define when the deployment becomes available or when it expires, as well as mandatory assignment schedules. Mandatory assignment schedules cause Configuration Manager to automatically run the program at a specific time or according to a specific event, such as user Logon/Logoff. The settings on this tab are optional.
+   >[!NOTE]
+   >When a deployment is set to **Required**, then a mandatory schedule must be defined for the deployment or the activity will fail.
 
-5.  For information about the settings on the **General** and **Run
-    Behavior** tabs, see [*Common Configuration Instructions for all
-    Activities*](https://technet.microsoft.com/en-us/library/3950dc80-c200-4144-bc83-7c07fe986745#BKMK_CommonCMConfigInstructions).
+5. For information about the settings on the **General** and **Run
+   Behavior** tabs, see [*Common Configuration Instructions for all
+   Activities*](https://technet.microsoft.com/en-us/library/3950dc80-c200-4144-bc83-7c07fe986745#BKMK_CommonCMConfigInstructions).
 
-6.  Click **Finish**.
+6. Click **Finish**.

@@ -29,17 +29,17 @@ The following tables list the required properties, optional properties, and publ
 
 ## Optional properties for Enable Remote Mailbox (Hybrid)
 
-| **Element**   | **Description**   | **Valid values** |
-|:---|:---|:---|
-| Alias   | Specifies the alias of the user and the associated mailbox in the service. An alias can contain letters, numbers, and the following punctuation marks and symbols: <br>! \# $ % ^ & \* + - . / = ? \_ { } | ~   | String   |
-| Archive   | Specifies whether to create an archive mailbox for the specified user. Default is True, when selected.   | True, False   |
-| Archive Name   | Specifies the name of the archive mailbox. Use this property to change the name of the archive.   | String   |
-| Display Name   | Specifies the display name for the mailbox that is created in the service.   | String   |
-| Domain Controller   | Specifies the fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory.   | String   |
-| Equipment   | Specifies the new mailbox as equipment if this mailbox is a resource mailbox.<br>Default is True, when selected.   | True, False   |
-| Primary SMTP Address   | Primary SMTP address for the mailbox.   | String   |
-| Room   | Specifies the new mailbox as a room, if this mailbox is a resource mailbox. Default is True, when selected.   | True, False   |
-| Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you have configured mail flow between the on-premises organization and the service, you do not need to specify this property. The remote routing address is calculated automatically. | String   |
+| **Element**            | **Description**                                                                                                                                                                                                                                                                         | **Valid values** |
+|:-----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
+| Alias                  | Specifies the alias of the user and the associated mailbox in the service. An alias can contain letters, numbers, and the following punctuation marks and symbols: <br>! \# $ % ^ & \* + - . / = ? \_ { }                                                                               | ~                |
+| Archive                | Specifies whether to create an archive mailbox for the specified user. Default is True, when selected.                                                                                                                                                                                  | True, False      |
+| Archive Name           | Specifies the name of the archive mailbox. Use this property to change the name of the archive.                                                                                                                                                                                         | String           |
+| Display Name           | Specifies the display name for the mailbox that is created in the service.                                                                                                                                                                                                              | String           |
+| Domain Controller      | Specifies the fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory.                                                                                                                                                    | String           |
+| Equipment              | Specifies the new mailbox as equipment if this mailbox is a resource mailbox.<br>Default is True, when selected.                                                                                                                                                                        | True, False      |
+| Primary SMTP Address   | Primary SMTP address for the mailbox.                                                                                                                                                                                                                                                   | String           |
+| Room                   | Specifies the new mailbox as a room, if this mailbox is a resource mailbox. Default is True, when selected.                                                                                                                                                                             | True, False      |
+| Remote Routing Address | Specifies the SMTP address of the mailbox in the service that this user is associated with.<br>If you have configured mail flow between the on-premises organization and the service, you do not need to specify this property. The remote routing address is calculated automatically. | String           |
 
 ## Published data for Enable Remote Mailbox (Hybrid)
 

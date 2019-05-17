@@ -26,11 +26,11 @@ The Modify Counter increments and decrements a counter, as well as resets it to 
 ## Configuring the Modify Counter Activity  
  Before you configure the Modify Counter activity, you need to determine the following:  
   
--   The counter you are updating.  
+- The counter you are updating.  
   
--   The type of update that will be made.  
+- The type of update that will be made.  
   
- Use the following information to configure the Modify Counter activity.  
+  Use the following information to configure the Modify Counter activity.  
   
 ### Details Tab  
   

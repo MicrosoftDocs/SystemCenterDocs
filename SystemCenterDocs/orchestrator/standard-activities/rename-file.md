@@ -24,11 +24,11 @@ The Rename File activity renames files on the local file system or on a network 
 ## Configuring the Rename File Activity  
  Before you configure the Rename File activity, you need to determine the following:  
   
--   The original file name you are renaming.  
+- The original file name you are renaming.  
   
--   The new name of the file  
+- The new name of the file  
   
- Use the following information to configure the Rename File activity.  
+  Use the following information to configure the Rename File activity.  
   
 ### Details Tab  
   

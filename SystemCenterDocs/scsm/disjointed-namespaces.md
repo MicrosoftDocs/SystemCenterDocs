@@ -23,21 +23,21 @@ In System Center - Service Manager, Setup might fail when you deploy either an a
 
 ## Determine the principal name of the Service Manager management server  
 
-1.  Start a Service Manager console.  
+1. Start a Service Manager console.  
 
-2.  In the Service Manager console, click **Configuration Items**.  
+2. In the Service Manager console, click **Configuration Items**.  
 
-3.  In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.  
+3. In the **Configuration Items** pane, expand **Configuration Items**, expand **Computers**, and then click **All Windows Computers**.  
 
-4.  In the **All Windows Computers** pane, click the computer that hosts the Service Manager management server.  
+4. In the **All Windows Computers** pane, click the computer that hosts the Service Manager management server.  
 
-5.  In the **Tasks** pane, under the name of the computer, click **Edit**.  
+5. In the **Tasks** pane, under the name of the computer, click **Edit**.  
 
-6.  In the **Computer - *computer name*** window, observe that there is an **Extensions** tab at the top of the form. The **Extensions** tab appears only when you view a Service Manager management server.  
+6. In the **Computer - *computer name*** window, observe that there is an **Extensions** tab at the top of the form. The **Extensions** tab appears only when you view a Service Manager management server.  
 
-7.  In the **General** tab in the form, in the **Computer Identity** area, the **Principal name** box shows the principal name that you will use in the following procedure.  
+7. In the **General** tab in the form, in the **Computer Identity** area, the **Principal name** box shows the principal name that you will use in the following procedure.  
 
-8.  Click **Close** to close the form.  
+8. Click **Close** to close the form.  
 
 9. At a command prompt, ping the Service Manager management server. You must have the IP address of the Service Manager management server for the following procedure.  
 

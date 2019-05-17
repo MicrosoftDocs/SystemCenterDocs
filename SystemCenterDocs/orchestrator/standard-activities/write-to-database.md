@@ -21,24 +21,24 @@ manager: "cfreeman"
 # Write to Database
 The Write to Database activity writes a row into a database table. This activity interacts with the following databases:  
   
--   Access  
+- Access  
   
--   ODBC  
+- ODBC  
   
--   Oracle  
+- Oracle  
   
--   SQL Server  
+- SQL Server  
   
- The Write to Database activity can be used to replicate important Windows Event Log Events to a database table that is able to be queried and maintained.  
+  The Write to Database activity can be used to replicate important Windows Event Log Events to a database table that is able to be queried and maintained.  
   
 ## Configuring the Write to Database Activity  
  Before you configure the Write to Database activity, you need to determine the following:  
   
--   The database you are connecting to.  
+- The database you are connecting to.  
   
--   The table and fields you are updating.  
+- The table and fields you are updating.  
   
- Use the following information to configure the Write to Database activity.  
+  Use the following information to configure the Write to Database activity.  
   
 ### Details Tab  
   

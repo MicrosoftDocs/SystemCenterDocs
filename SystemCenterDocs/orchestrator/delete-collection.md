@@ -84,33 +84,33 @@ above:
 
 ## To configure the delete collection activity
 
-1.  From the **Activities** pane, drag a **Delete Collection** activity
-    to the active runbook.
+1. From the **Activities** pane, drag a **Delete Collection** activity
+   to the active runbook.
 
-2.  Double-click the **Delete Collection** activity icon. The
-    **Properties** dialog box opens.
+2. Double-click the **Delete Collection** activity icon. The
+   **Properties** dialog box opens.
 
-3.  Configuring the **Details** tab:
+3. Configuring the **Details** tab:
 
-    1.  In the **Connection** section, click the ellipsis button
-        **(...)**, and then select the Configuration Manager server
-        connection that you want to use for this activity. Click **OK**.
+   1. In the **Connection** section, click the ellipsis button
+      **(...)**, and then select the Configuration Manager server
+      connection that you want to use for this activity. Click **OK**.
 
-    2.  In the **Fields** section, enter a value for each of the
-        required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(…)** button next to the text box to browse
-        for a value.\
-        \
-        You can also use published data to automatically populate the
-        value of the property from the data output by a previous
-        activity in the runbook.
+   2. In the **Fields** section, enter a value for each of the
+      required properties. If the property is Lookup-enabled, you can
+      click the ellipsis **(…)** button next to the text box to browse
+      for a value.\
+      \
+      You can also use published data to automatically populate the
+      value of the property from the data output by a previous
+      activity in the runbook.
 
-4.  Configuring the **Advanced** tab:
+4. Configuring the **Advanced** tab:
 
-      - The options in the **Delete Conditions** section represent a check that will be made against the collection to determine if the condition is true.
-      - If an option is set to **True** and the condition is true, the
-        collection will not be deleted and the activity will fail.
-      - To ignore the existence of a specific condition, set that property
-        to **False**.
+     - The options in the **Delete Conditions** section represent a check that will be made against the collection to determine if the condition is true.
+     - If an option is set to **True** and the condition is true, the
+       collection will not be deleted and the activity will fail.
+     - To ignore the existence of a specific condition, set that property
+       to **False**.
 
-5.  Click **Finish**.
+5. Click **Finish**.

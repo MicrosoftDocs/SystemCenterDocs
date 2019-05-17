@@ -24,11 +24,11 @@ The Monitor Event Log activity invokes runbooks when new events that match a fil
 ## Configuring the Monitor Event Log Activity  
  Before you configure the Monitor Event Log activity, you need to determine the following:  
   
--   Name of the event log you are monitoring  
+- Name of the event log you are monitoring  
   
--   Details about the events that will invoke the runbook  
+- Details about the events that will invoke the runbook  
   
- Use the following steps to configure the Monitor Event Log activity.  
+  Use the following steps to configure the Monitor Event Log activity.  
   
 #### To configure the Monitor Event Log activity  
   

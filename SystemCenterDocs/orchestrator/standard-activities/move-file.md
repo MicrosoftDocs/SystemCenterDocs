@@ -24,11 +24,11 @@ The Move File activity moves a file from one directory to another. You can move 
 ## Configuring the Move File Activity  
  Before you configure the Move File activity, you need to determine the following:  
   
--   The files you are moving.  
+- The files you are moving.  
   
--   The destination path where you will move the files.  
+- The destination path where you will move the files.  
   
- Use the following information to configure the Move File activity.  
+  Use the following information to configure the Move File activity.  
   
 ### Details Tab  
   

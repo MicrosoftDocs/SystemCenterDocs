@@ -27,11 +27,11 @@ The Read Text Log activity will read lines in a structured text log file. If you
 ## Configuring the Read Text Log Activity  
  Before you configure the Read Text Log activity, you need to determine the following:  
   
--   The log file name you are reading.  
+- The log file name you are reading.  
   
--   The timestamps format in the log.  
+- The timestamps format in the log.  
   
- Use the following information to configure the Read Text Log activity.  
+  Use the following information to configure the Read Text Log activity.  
   
 ### Details Tab  
   

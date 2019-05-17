@@ -77,32 +77,32 @@ For hosts with BMC that supports IMPI 1.5/2.0, DCMI 1.0 or SMASH 1.0 over WS-Man
 
 ## Enable dynamic and power optimization for a host group
 
-1.  Click **Fabric** > **Servers** > **All Hosts**, and select the host group that you want to configure.
-2.  With the host group selected, click **Folder** > **Properties** group > **Properties**.
-3.  In the host group properties, click **Dynamic Optimization**.
-4.  In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** check box.
-5.  In **Aggressiveness**, select **High**, **Medium**, or **Low**.
+1. Click **Fabric** > **Servers** > **All Hosts**, and select the host group that you want to configure.
+2. With the host group selected, click **Folder** > **Properties** group > **Properties**.
+3. In the host group properties, click **Dynamic Optimization**.
+4. In  **Specify dynamic optimization settings**, clear the **Use Dynamic Optimization settings from the parent host group** check box.
+5. In **Aggressiveness**, select **High**, **Medium**, or **Low**.
 
-    VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
+   VM aggressiveness determines the amount of load imbalance that is required to initiate a migration during dynamic optimization.
 
-    ::: moniker range="sc-vmm-2019"
+   ::: moniker range="sc-vmm-2019"
 
-    Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
+   Disk space aggressiveness determines the amount of free storage space below disk space threshold that is required to migrate VHDs to other cluster shared storage during dynamic optimization.
 
-    ::: moniker-end
+   ::: moniker-end
 
-    When you configure frequency and aggressiveness for dynamic optimization, you should try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
+   When you configure frequency and aggressiveness for dynamic optimization, you should try to balance the resource cost of additional migrations against the advantages of balancing load among hosts in a host cluster. Initially, you might accept the default value of **Medium**. After you observe the effects of dynamic optimization in your environment, you can increase the aggressiveness.
 
 6. To help conserve energy by having VMM turn off hosts when they are not needed and turn them on again when they are needed, configure power optimization for the host group. Power optimization is only available when virtual machines are being migrated automatically to balance load.
 
-7.  To periodically run dynamic optimization on qualifying host clusters in the host group, enter the following settings:
+7. To periodically run dynamic optimization on qualifying host clusters in the host group, enter the following settings:
 
-    1.  Select the **Automatically migrate virtual machines to balance load** check box to balance free storage space across shared storage.
-    2. In **Frequency**, specify how often to run dynamic Optimization. You can enter any value between 10 minutes and 1440 minutes \(24 hours\).
+   1.  Select the **Automatically migrate virtual machines to balance load** check box to balance free storage space across shared storage.
+   2. In **Frequency**, specify how often to run dynamic Optimization. You can enter any value between 10 minutes and 1440 minutes \(24 hours\).
 
 8. Set thresholds for each of the compute and storage ( applicable for VMM 2019) resources listed. To change the units of the resources go to  **Host group**> **Properties**  > **Host Reserves** and choose the unit from the drop-down menu.
 
-9.  To turn on power optimization on the host group, select the **Enable power optimization** checkbox.  Click **OK** again to save your changes.
+9. To turn on power optimization on the host group, select the **Enable power optimization** checkbox.  Click **OK** again to save your changes.
 
 >[!NOTE]
 > If there is a mismatch of disk space warning levels between host groups having the same file share, it can result in multiple migrations to and from that file share and may impact storage DO performance. We recommended you not to do a  file share across different host groups where storage dynamic optimization is enabled.
@@ -131,10 +131,10 @@ You can run dynamic optimization on demand on a host cluster. To do this dynamic
 
 ::: moniker range="sc-vmm-2019"
 
->[!NOTE]
+> [!NOTE]
 > If VHDs are migrated between one storage type to another (Example: from a CSV to NAS file share), the storage migration will be slow. If the storage optimization does not return a list of VHDs to migrate even when the threshold and aggressiveness criteria are met:
-    - Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
-    - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
+>     - Check the HostVolumeID using Get-SCStorageVolume Cmdlet. If the HostVolumeID returns Null for the volume, refresh the VM and perform Storage Dynamic Optimization again.
+>     - Check the DiskSpacePlacementLevel of the host group using the Get-SCHostResever cmdlet. Set the DiskSpacePlacementLevel value equal to the value of Disk Space set in Host Reserve settings in the Dynamic Optimization wizard.
 
 ::: moniker-end
 

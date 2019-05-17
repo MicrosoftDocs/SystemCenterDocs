@@ -27,9 +27,9 @@ manager: carmonm
   
 > [!NOTE]
 >  To view a web test result that you download from [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you must be running Microsoft Visual Studio Ultimate 2012 or Visual Studio Ultimate 2010 with these additions:  
->   
+> 
 > - If your test controller crashes or stops responding when you run web tests in Visual Studio 2010, [download and install this hotfix](http://go.microsoft.com/fwlink/?LinkId=271586).
-> - Install this hotfix: [http://hotfixv4.microsoft.com/Visual Studio 2010/sp1/DevDiv954543/40219.363/free/441527_intl_i386_zip.exe](http://hotfixv4.microsoft.com/Visual Studio 2010/sp1/DevDiv954543/40219.363/free/441527_intl_i386_zip.exe)  
+> - Install this hotfix: [<http://hotfixv4.microsoft.com/Visual> Studio 2010/sp1/DevDiv954543/40219.363/free/441527_intl_i386_zip.exe](<http://hotfixv4.microsoft.com/Visual> Studio 2010/sp1/DevDiv954543/40219.363/free/441527_intl_i386_zip.exe)  
   
 ## Test Maximums and Locations  
  For Web Application Availability monitoring, a test is defined as one URL from one location. For Visual Web Tests monitoring, a test is defined as one .webtest file from one location. For both monitoring types, the total number of tests equals the number of tests that you monitored multiplied by the number of locations from which you monitor. You can run each test as frequently as you want at intervals of 5 minutes or more. One test every 5 minutes is the minimum supported test interval for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)]. Only the maximum supported number of tests will remain monitored. Additional tests will not be monitored and tests that exceed the maximums are displayed as “not monitored” in the [!INCLUDE[om12short](../includes/om12short-md.md)] console. Additionally, you will receive alerts related to exceeding the maximum supported number of tests. To view these alerts, in the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Monitoring**, expand **[!INCLUDE[om12short](../includes/om12short-md.md)]**, and then click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**.  
@@ -48,32 +48,32 @@ Test parameters for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] Web Applica
   
 Test parameters for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] Visual Studio Web Tests monitoring tests include the following:  
   
--   Total tests are the number of .webtest files multiplied by the number of locations.
--   In a GSM subscription: the total number of tests cannot exceed 25. You can't have more than 3 tests in any POP location.
--   Minimum interval per tests must be greater than or equal to 5 minutes.
--   Maximum number of requests per web test: 100.
--   Maximum web test file size: 100 kilobytes (KB).
+- Total tests are the number of .webtest files multiplied by the number of locations.
+- In a GSM subscription: the total number of tests cannot exceed 25. You can't have more than 3 tests in any POP location.
+- Minimum interval per tests must be greater than or equal to 5 minutes.
+- Maximum number of requests per web test: 100.
+- Maximum web test file size: 100 kilobytes (KB).
 
- Subscriptions per tenant:
--   GSM subscription: 5  
+  Subscriptions per tenant:
+- GSM subscription: 5  
   
- With [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:
-        -   Australia East
-        -   Brazil South
-        -   Central US
-        -   East Asia
-        -   East US
-        -   France Central
-        -   France South
-        -   Japan East
-        -   North Central US
-        -   North Europe
-        -   South Central US
-        -   Southeast Asia
-        -   UK South
-        -   UK West
-        -   West Europe
-        -   West US   
+  With [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], you can test from 16 locations by selecting from the following:
+      -   Australia East
+      -   Brazil South
+      -   Central US
+      -   East Asia
+      -   East US
+      -   France Central
+      -   France South
+      -   Japan East
+      -   North Central US
+      -   North Europe
+      -   South Central US
+      -   Southeast Asia
+      -   UK South
+      -   UK West
+      -   West Europe
+      -   West US   
   
 ## Important Things to Know  
   

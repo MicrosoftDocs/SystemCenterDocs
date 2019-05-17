@@ -26,13 +26,13 @@ The Find Text activity finds lines in a text file. Use the Find Text activity to
 ## Configuring the Find Text Activity  
  Before you configure the Find Text activity, you need to determine the following:  
   
--   The name of the file that you want to search in.  
+- The name of the file that you want to search in.  
   
--   The encoding type of the file you want to search in uses.  
+- The encoding type of the file you want to search in uses.  
   
--   The text that you want to search for.  
+- The text that you want to search for.  
   
- Use the following information to configure the Find Text activity.  
+  Use the following information to configure the Find Text activity.  
   
 ### Details Tab  
   

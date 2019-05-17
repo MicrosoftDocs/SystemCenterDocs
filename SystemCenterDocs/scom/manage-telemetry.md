@@ -25,18 +25,18 @@ Administrators can turn off this feature at any point of time. Learn more about 
 
 2. Under **Type: General**, double-click **Privacy**.
 
-  ![console telemetry privacy](./media/telemetry/telemetry-privacy.png)
+   ![console telemetry privacy](./media/telemetry/telemetry-privacy.png)
 
-  **Diagnostic and Usage Data Settings** options page appear.
+   **Diagnostic and Usage Data Settings** options page appear.
 
-  ![console telemetry options](./media/telemetry/telemetry-options.png)
+   ![console telemetry options](./media/telemetry/telemetry-options.png)
 
 3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
-  > [!NOTE]
-  > We recommend you to read the Privacy Statement before you select the option.
-  -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
-  -  To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
+   > [!NOTE]
+   > We recommend you to read the Privacy Statement before you select the option.
+   > -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
+   > -  To turn off telemetry, select **No, I prefer not to send data to Microsoft**.
 
 ## Telemetry data collected
 

@@ -176,14 +176,14 @@ In the first procedure, you set up a subscription so that a messaging analyst is
 
 ### To create a periodic notification subscription for a release record
 
-1.  In the Service Manager console, click **Administration**.
-2.  In the **Administration** pane, expand **Notifications**, and then click **Subscriptions**.
-3.  In the **Tasks** pane, click **Create Subscription**.
-4.  On the **Before You Begin** page of the Create E-mail Notification Subscription Wizard, click **Next**.
-5.  On the **General** page, in the **Notification subscription name** box, type a name. For example, type **Daily Notification for Deploy HR Web 2.0 Release Record**. Optionally, in the **Description** box, you can type a description for the subscription that you are creating. For example, type **This subscription sends a daily notification of the status for the HR Web 2.0 release record**.
-6.  In the **When to notify** box, select **Periodically notify when objects meet a criteria**.
-7.  Next to the **Targeted class** box, click **Browse**.
-8.  In the **Choose Class** dialog box, choose a class, and then click **OK**. For example, click **Release Record**.
+1. In the Service Manager console, click **Administration**.
+2. In the **Administration** pane, expand **Notifications**, and then click **Subscriptions**.
+3. In the **Tasks** pane, click **Create Subscription**.
+4. On the **Before You Begin** page of the Create E-mail Notification Subscription Wizard, click **Next**.
+5. On the **General** page, in the **Notification subscription name** box, type a name. For example, type **Daily Notification for Deploy HR Web 2.0 Release Record**. Optionally, in the **Description** box, you can type a description for the subscription that you are creating. For example, type **This subscription sends a daily notification of the status for the HR Web 2.0 release record**.
+6. In the **When to notify** box, select **Periodically notify when objects meet a criteria**.
+7. Next to the **Targeted class** box, click **Browse**.
+8. In the **Choose Class** dialog box, choose a class, and then click **OK**. For example, click **Release Record**.
 9. Make sure that an unsealed management pack of your choice is selected, and then click **Next**. For example, select the **Sample Management Pack**.
 10. On the **Additional Criteria** page, select **Release Record**. In the **Available Properties** list, select **Status**, and then click **Add**.
 11. In the **Criteria** area, next to **[Release Record] Status**, select **does not equal**. In the list, select **Closed**, and then click **Next**.

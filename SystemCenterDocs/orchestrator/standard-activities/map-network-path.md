@@ -24,11 +24,11 @@ The Map Network Path activity enables you to map a network path using a UNC path
 ## Configuring the Map Network Path Activity  
  Before you configure the Map Network Path activity, you need to determine the following:  
   
--   The UNC path you want to map.  
+- The UNC path you want to map.  
   
--   The user account and password you need to log into that path; if required.  
+- The user account and password you need to log into that path; if required.  
   
- Use the following information to configure the Map Network Path activity.  
+  Use the following information to configure the Map Network Path activity.  
   
 ### Details Tab  
   

@@ -52,7 +52,7 @@ Before customizing forms, you should be familiar with the following form concept
 
 4. Submit changes
 
- These aspects are described in the following sections.
+   These aspects are described in the following sections.
 
 #### Initialization
 
@@ -70,7 +70,7 @@ We recommend that you set these properties as follows:
 
 - Set the **MinWidth** and **MinHeight** properties of the form to specify the smallest window acceptable for the form. If a user resizes the window to a smaller size than specified, scrollbars appear for scrolling to the hidden form content.
 
- When the form is hosted inside the Service Manager forms host, the last\-used size and location is preserved for subsequent display of that form by the same user within the same run session.
+  When the form is hosted inside the Service Manager forms host, the last\-used size and location is preserved for subsequent display of that form by the same user within the same run session.
 
 #### Refresh
  The target instance of a form can change as a result of executing a **Refresh** command on the form. The handler for this command fetches new data from the database. When the data arrives, the form's **DataContext** property value is set to the new target instance and the **DataContextChanged** event is raised.
@@ -174,7 +174,6 @@ The **BindableDataItem** class also implements **ICustomTypeDescriptor**, which 
 ```xml
 
 <TextBox Name="textBoxDescription" Text="{Binding Path=Summary}"/>
-
 ```
 
 It is not necessary to specify the **Source** of the binding because the target instances are set as the **DataContext** of the form, which serves as the default **Source** for all controls on the form.
@@ -198,7 +197,6 @@ The following example shows how to reference the error template in XAML:
 <TextBox Text="{Binding SomeProperty}"
          scwpf:Validation.ValueRequired="True"
          Validation.ErrorTemplate="{DynamicResource {ComponentResourceKey {x:Type scwpf:Validation}, InvalidDataErrorTemplate}}"/>
-
 ```
 
 If built\-in validation rules do not provide the required validation logic, we recommend that you build custom validation rules to represent that logic. This will make it possible for standard and custom validation logic to coexist within the common validation handling mechanism.
@@ -234,7 +232,6 @@ internal bool DoVerify(out string errorMessage)
     // validation check has passed; otherwise return false and
     // populate errorMessage argument
 }
-
 ```
 
 ### Use form infrastructure commands and events
@@ -249,9 +246,9 @@ The form infrastructure exposes a number of commands that can be run on a form. 
 
 - **FormCommands.Cancel**, which discards all changes and closes the form.
 
- Each of these commands is bracketed by events, which are raised before and after the command runs.
+  Each of these commands is bracketed by events, which are raised before and after the command runs.
 
- Before the command, the following events are raised:
+  Before the command, the following events are raised:
 
 - The **FormEvents.PreviewSubmit** event is raised before the **FormCommand.Submit** command, and the **FormEvents.Submitted** event is raised after the **FormCommand.Submit** command.
 
@@ -302,7 +299,6 @@ In the following example, a command binding is established between the form and 
 // executed upon running Refresh command
         }
     }
-
 ```
 
 You can also define handlers for form commands declaratively. You can do this by employing a **Rule** object that uses a **RoutedCommandTrigger**. The following code example shows how to define handlers declaratively:
@@ -327,7 +323,6 @@ RoutedCommand="{x:Static scwpf:FormCommands.Refresh}"/>
             </scwpf:Rule>
         </scwpf:RuleCollection>
     </scwpf:BusinessLogic.Rules>
-
 ```
 
 

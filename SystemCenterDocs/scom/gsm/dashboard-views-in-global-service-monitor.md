@@ -54,18 +54,18 @@ The Detailed Dashboard helps isolate issues from any test and location.
   
 #### To pinpoint problems using the Detailed Dashboard  
   
-1.  Begin the same way that you opened the Summary Dashboard. In the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, click **View test state**, and then click **Detailed Dashboard**.  
+1. Begin the same way that you opened the Summary Dashboard. In the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, click **View test state**, and then click **Detailed Dashboard**.  
   
-2.  Click to highlight an entry for the application that you want to see a summary of, and in the **Tasks** pane, in the **Navigation** section, click **Detailed Dashboard - List**.  
+2. Click to highlight an entry for the application that you want to see a summary of, and in the **Tasks** pane, in the **Navigation** section, click **Detailed Dashboard - List**.  
   
-    > [!TIP]
-    >  If you are already viewing the Summary Dashboard, you can go directly to the Detailed Dashboard by clicking to highlight a test or group of tests and then in the **Tasks** pane, in the **Navigation** section, clicking **Detailed Dashboard**.  
+   > [!TIP]
+   >  If you are already viewing the Summary Dashboard, you can go directly to the Detailed Dashboard by clicking to highlight a test or group of tests and then in the **Tasks** pane, in the **Navigation** section, clicking **Detailed Dashboard**.  
   
-3.  In the section with the name of your application, for example `Bing template` select the locations you want to see more details about.  
+3. In the section with the name of your application, for example `Bing template` select the locations you want to see more details about.  
   
-4.  In the **Test Status** section, the check boxes act as a legend for the tests that you want to investigate in the performance graphs. For example, you can select the same page being tested from different locations to see how the pages are performing for the different locations. Selection (blue highlighting) determines which tasks are available and can be run.  
+4. In the **Test Status** section, the check boxes act as a legend for the tests that you want to investigate in the performance graphs. For example, you can select the same page being tested from different locations to see how the pages are performing for the different locations. Selection (blue highlighting) determines which tasks are available and can be run.  
   
- **Known issue for Beta:** When you select a series in the Detailed Dashboard, all performance charts are first cleared of any existing data, and then all series are drawn again.  
+   **Known issue for Beta:** When you select a series in the Detailed Dashboard, all performance charts are first cleared of any existing data, and then all series are drawn again.  
   
 ## Health Explorer  
  As its name implies, Health Explorer lets you see more details about the health status of a web application availability test running against a URL from a particular location. Health Explorer shows you when a test changed state from, for example, healthy to unhealthy.  

@@ -80,11 +80,11 @@ manager: carmonm
 
 #### To view data for individual tests and locations  
 
-1.  For a view of each test that you configured in the Visual Studio Web Test template, in the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, and then, in the **Visual Studio Web Tests Actions** section, click **View test state**. If there are alerts, you can see them listed in the **Test State** pane. As with the application health, the alert state is displayed in the color according to your alert configurations.  
+1. For a view of each test that you configured in the Visual Studio Web Test template, in the [!INCLUDE[om12short](../includes/om12short-md.md)] console, in the navigation pane, click **Administration**, click **[!INCLUDE[gsmshort](../includes/gsmshort-md.md)]**, and then, in the **Visual Studio Web Tests Actions** section, click **View test state**. If there are alerts, you can see them listed in the **Test State** pane. As with the application health, the alert state is displayed in the color according to your alert configurations.  
 
-  > [!NOTE]
-  >  A test is one .webtest and one location.  
+   > [!NOTE]
+   >  A test is one .webtest and one location.  
 
-2.  To see the details of a particular test, click the test, and then, in the **Tasks** pane, click **Health Explorer**.  
+2. To see the details of a particular test, click the test, and then, in the **Tasks** pane, click **Health Explorer**.  
 
-     The Health Explorer lets you see the health states for each criterion so that you can see in detail what caused the test to show an error or warning.
+    The Health Explorer lets you see the health states for each criterion so that you can see in detail what caused the test to show an error or warning.

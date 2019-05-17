@@ -26,13 +26,13 @@ The Delete Line activity deletes lines from a text file.  Use the Delete Line ac
 ## Configuring the Delete Line Activity  
  Before you configure the Delete Line activity you need to determine the following:  
   
--   The name of the file that you want to delete the line from.  
+- The name of the file that you want to delete the line from.  
   
--   The file encoding type that the file you want to delete the line from uses.  
+- The file encoding type that the file you want to delete the line from uses.  
   
--   The line numbers of the lines that you want to delete.  
+- The line numbers of the lines that you want to delete.  
   
- Use the following information to configure the Delete Line activity.  
+  Use the following information to configure the Delete Line activity.  
   
 ### Details Tab  
   

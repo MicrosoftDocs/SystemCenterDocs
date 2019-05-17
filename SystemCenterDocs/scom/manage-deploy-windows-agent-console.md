@@ -29,64 +29,64 @@ Use the following procedure to discover computers running Windows and deploy the
 
 ## To install an agent on a computer running Windows by using the Discovery Wizard
 
-1.  Log on to the Operations console with an account that is a member of the Operations Manager Administrators role.
+1. Log on to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
-2.  Click **Administration**.
+2. Click **Administration**.
 
-3.  At the bottom of the navigation pane, click **Discovery Wizard**.
+3. At the bottom of the navigation pane, click **Discovery Wizard**.
 
-4.  In the **Computer and Device Management Wizard**, on the **Discovery Type** page, click **Windows computers**.
+4. In the **Computer and Device Management Wizard**, on the **Discovery Type** page, click **Windows computers**.
 
-5.  On the **Auto or Advanced?** page, do the following:
+5. On the **Auto or Advanced?** page, do the following:
 
-    1.  Select either **Automatic computer discovery** or **Advanced discovery**. If you select **Automatic computer discovery**, click **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.
+   1.  Select either **Automatic computer discovery** or **Advanced discovery**. If you select **Automatic computer discovery**, click **Next**, and then go to step 7. If you select **Advanced discovery**, continue with the following steps.
 
-        > [!NOTE]
-        > Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY.
+       > [!NOTE]
+       > Automatic computer discovery scans for Windows-based computers in the domain. Advanced discovery allows you to specify criteria for the computers that the wizard will return, such as computer names starting with NY.
 
-    2.  In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.
+   2.  In the **Computer and Device Classes** list, select **Servers and Clients**, **Servers Only**, or **Clients Only**.
 
-    3.  In the **Management Server** list, click the management server or gateway server to discover the computers.
+   3.  In the **Management Server** list, click the management server or gateway server to discover the computers.
 
-    4.  If you selected **Servers and Clients**, you can select the **Verify discovered computers can be contacted** check box. This is likely to increase the success rate of agent deployment, but discovery can take longer.
+   4.  If you selected **Servers and Clients**, you can select the **Verify discovered computers can be contacted** check box. This is likely to increase the success rate of agent deployment, but discovery can take longer.
 
-        > [!NOTE]
-        > If the Active Directory catalog does not contain the NetBIOS names for computers in a domain, select **Verify discovered computers can be contacted**. Otherwise, the **Browse, or Type In** option fails to find computers. This affects computers in the same domain as the management server, in another domain with a full trust relationship, and in untrusted domains by using a gateway server.
+       > [!NOTE]
+       > If the Active Directory catalog does not contain the NetBIOS names for computers in a domain, select **Verify discovered computers can be contacted**. Otherwise, the **Browse, or Type In** option fails to find computers. This affects computers in the same domain as the management server, in another domain with a full trust relationship, and in untrusted domains by using a gateway server.
 
-    5.  Click **Next**.
+   5.  Click **Next**.
 
-        > [!NOTE]
-        > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
+       > [!NOTE]
+       > The wizard can return approximately 4000 computers if **Verify discovered computers can be contacted** is selected, and it can return 10,000 computers if this option is not selected. Automatic computer discovery verifies that discovered computers can be contacted. A computer that is already managed by the management group is not returned.
 
-6.  On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or typing the computer names.
+6. On the **Discovery Method** page, you can locate the computers that you want to manage by either scanning or browsing Active Directory Domain Services or typing the computer names.
 
-    If you want to scan, do the following:
+   If you want to scan, do the following:
 
-    1.  If it is not already selected, select **Scan Active Directory** and then click **Configure**.
+   1.  If it is not already selected, select **Scan Active Directory** and then click **Configure**.
 
-    2.  In the **Find Computers** dialog box, type the criteria that you want to use for discovering computers, and then click **OK**.
+   2.  In the **Find Computers** dialog box, type the criteria that you want to use for discovering computers, and then click **OK**.
 
-    3.  In the **Domain** list, click the domain of the computers that you want to discover.
+   3.  In the **Domain** list, click the domain of the computers that you want to discover.
 
-    If you want to browse Active Directory Domain Services or type the computer names, do the following:
+   If you want to browse Active Directory Domain Services or type the computer names, do the following:
 
-     1.  Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
+    1.  Select **Browse for, or type-in computer names**, click **Browse**, specify the names of the computers that you want to manage, and then click **OK**.
 
-     2.  In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
+    2.  In the **Browse for, or type-in computer names** box, type the computer names, separated by a semi-colon, comma, or a new line. You can use NetBIOS computer names or fully qualified domain names (FQDN).
 
-7.  Click **Next**, and on the **Administrator Account** page, do one of the following:
+7. Click **Next**, and on the **Administrator Account** page, do one of the following:
 
-    1.  Select **Use selected Management Server Action Account** if it is not already selected.
+   1.  Select **Use selected Management Server Action Account** if it is not already selected.
 
-    2.  Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
+   2.  Select **Other user account**, type the **User name** and **Password**, and then select the **Domain** from the list. If the user name is not a domain account, select **This is a local computer account, not a domain account**.
 
-        > [!IMPORTANT]
-        > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
+       > [!IMPORTANT]
+       > The account must have administrative privileges on the targeted computers. If **This is a local computer account, not a domain account** is selected, the management server action account will be used to perform discovery.
 
-8.  Click **Discover** to display the **Discovery Progress** page. The time it takes discovery to finish depends on many factors, such as the criteria specified and the configuration of the IT environment. If a large number (100 or more) of computers are being discovered or agents are being installed, the Operations console will not be usable during discovery and agent installation.
+8. Click **Discover** to display the **Discovery Progress** page. The time it takes discovery to finish depends on many factors, such as the criteria specified and the configuration of the IT environment. If a large number (100 or more) of computers are being discovered or agents are being installed, the Operations console will not be usable during discovery and agent installation.
 
-    > [!NOTE]
-    > Computers that are already managed by the management group will not be returned by the wizard.
+   > [!NOTE]
+   > Computers that are already managed by the management group will not be returned by the wizard.
 
 9. On the **Select Objects to Manage** page, do the following:
 

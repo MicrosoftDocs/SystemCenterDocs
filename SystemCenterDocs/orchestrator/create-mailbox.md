@@ -25,11 +25,11 @@ The following tables list the required properties, optional properties, and publ
 
 ## Required properties for the Create Mailbox activity
 
-| **Element**   | **Description**   | **Valid values** |
-|:---|:---|:---|
-| User Principal Name | Logon name for the user. This user principal name (UPN) consists of a user name and a suffix. Typically, the suffix is the domain name where the user account resides (Example: chris@contoso.com). <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. "On-premises" refers to computing resources that are located within your own facilities. <br><br> | String   |
-| Name   | The user's name that appears in listings of Active Directory Users and Computers.   | String   |
-| Alias   | The user's email alias that will appear in Active Directory.   | String   |
+| **Element**         | **Description**                                                                                                                                                                                                                                                                                                                                                                                         | **Valid values** |
+|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
+| User Principal Name | Logon name for the user. This user principal name (UPN) consists of a user name and a suffix. Typically, the suffix is the domain name where the user account resides (Example: chris@contoso.com). <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. "On-premises" refers to computing resources that are located within your own facilities. <br><br> | String           |
+| Name                | The user's name that appears in listings of Active Directory Users and Computers.                                                                                                                                                                                                                                                                                                                       | String           |
+| Alias               | The user's email alias that will appear in Active Directory.                                                                                                                                                                                                                                                                                                                                            | String           |
 
 ## Optional properties for the Create Mailbox activity
 

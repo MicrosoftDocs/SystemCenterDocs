@@ -24,11 +24,11 @@ The Send Event Log Message activity creates an entry in the Windows Event Log wi
 ## Configuring the Send Event Log Message Activity  
  Before you configure the Send Event Log Message activity, you will need to determine the following:  
   
--   The event message you are creating.  
+- The event message you are creating.  
   
--   The severity of the event  
+- The severity of the event  
   
- Use the following information to configure the Send Event Log Message activity.  
+  Use the following information to configure the Send Event Log Message activity.  
   
 ### Details Tab  
   

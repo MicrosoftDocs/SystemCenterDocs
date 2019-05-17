@@ -17,11 +17,11 @@ ms.assetid: 31fd4dc7-3f1c-476d-8224-0111db09c11c
 You can install System Center - 2019 Data Protection Manager (DPM) on Windows Server 2016 or 2019.
 You can upgrade to DPM 2019 from the following versions:
 
--  DPM 2016
--  DPM 1801
--  DPM 1807
+- DPM 2016
+- DPM 1801
+- DPM 1807
 
- Before you upgrade to or install DPM 2019, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
+  Before you upgrade to or install DPM 2019, read the [Installation prerequisites](../dpm/install-dpm.md#setup-prerequisites).
 
 
 ## Upgrade path for DPM 2019
@@ -38,7 +38,7 @@ If you upgrade from DPM 2016 to DPM 2019, make sure your installation has the fo
 1. To install DPM, double-click Setup.exe to open the System Center 2019 wizard.
 2. Under Install, click Data Protection Manager to start the setup wizard. Agree to the license terms and conditions and follow the setup wizard.
 
- For instructions on installing DPM, see the article, [Installing DPM](../dpm/install-dpm.md).
+   For instructions on installing DPM, see the article, [Installing DPM](../dpm/install-dpm.md).
 
 ## Migrate the DPM database during upgrade
 
@@ -164,9 +164,9 @@ Use the following steps:
 
 1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member, and select **Stop protection of member...**.
 
-  ![Stop protection](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
+   ![Stop protection](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
-  The **Remove from Group** dialog opens.
+   The **Remove from Group** dialog opens.
 
 2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Click **OK**.
 

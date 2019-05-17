@@ -24,13 +24,13 @@ The Monitor Disk Space activity will invoke a runbook when the disk space on a c
 ## Configuring the Monitor Disk Space Activity  
  Before you configure the Monitor Disk Space activity, you need to determine the following:  
   
--   The drives that you want to monitor  
+- The drives that you want to monitor  
   
--   The computer where those drives are located  
+- The computer where those drives are located  
   
- The runbook server that runs this runbook must have the appropriate rights to check the process on the computer that you are monitoring.  
+  The runbook server that runs this runbook must have the appropriate rights to check the process on the computer that you are monitoring.  
   
- Use the following information to configure the Monitor Disk Space activity.  
+  Use the following information to configure the Monitor Disk Space activity.  
   
 ### Test frequency example: Monitor Disk Space activity is set to test every 30 seconds  
   

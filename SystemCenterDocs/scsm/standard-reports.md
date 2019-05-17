@@ -31,11 +31,11 @@ You can use the following procedure to view the catalog of reports that is avail
 
 ### To view the report catalog  
 
-1.  In the Service Manager console, click **Reporting**.  
+1. In the Service Manager console, click **Reporting**.  
 
-2.  Expand **Reports**, and then click a folder. For example, click **Incident Management**.  
+2. Expand **Reports**, and then click a folder. For example, click **Incident Management**.  
 
- The reports that are available appear in the results pane of the **Report** console.  
+   The reports that are available appear in the results pane of the **Report** console.  
 
 ## Add permissions for standard reports
 
@@ -181,21 +181,21 @@ You can use the following procedure to create a linked report.
 
 ### To create a linked report  
 
-1.  In the **Reporting** view, select the report you want to use as the basis for the linked report, and then, in the **Tasks** pane, click **Run Report**.  
+1. In the **Reporting** view, select the report you want to use as the basis for the linked report, and then, in the **Tasks** pane, click **Run Report**.  
 
-2.  In the **Report** window, click **Save as Linked Report** in the **Task** pane.  
+2. In the **Report** window, click **Save as Linked Report** in the **Task** pane.  
 
-3.  Type a name and an optional description for the new linked report.  
+3. Type a name and an optional description for the new linked report.  
 
-4.  Select a management pack for the linked report.  
+4. Select a management pack for the linked report.  
 
-5.  Click **Select Folder**, and then select the folder in which you want to save the report.  
+5. Click **Select Folder**, and then select the folder in which you want to save the report.  
 
-6.  Click **OK**.  
+6. Click **OK**.  
 
-7.  Close the report.  
+7. Close the report.  
 
- After the next data warehouse synchronization, the new linked report is displayed in the folder where you saved it. For information about scheduling a data warehouse synchronization job, see [How to Schedule a Data Warehouse Job](sched-dw-job.md).  
+   After the next data warehouse synchronization, the new linked report is displayed in the folder where you saved it. For information about scheduling a data warehouse synchronization job, see [How to Schedule a Data Warehouse Job](sched-dw-job.md).  
 
 > [!NOTE]  
 >  You might have to close and reopen the console after the synchronization job is complete to see the report.  
@@ -208,17 +208,17 @@ You can use the following procedure to add a report to the Favorite Reports fold
 
 ### To save a report to the Favorite Reports folder  
 
-1.  In the **Reporting** view, select the report that you want to use as the basis for the saved report, and then, in the **Tasks** pane, click **Run Report**.  
+1. In the **Reporting** view, select the report that you want to use as the basis for the saved report, and then, in the **Tasks** pane, click **Run Report**.  
 
-2.  In the report window, click **Save as Favorite Report** under **Tasks**.  
+2. In the report window, click **Save as Favorite Report** under **Tasks**.  
 
-3.  Type a name for the report, and then click **OK**.  
+3. Type a name for the report, and then click **OK**.  
 
-4.  Close the report window.  
+4. Close the report window.  
 
-5.  In the **Reporting** navigation tree, click **Favorite Reports**.  
+5. In the **Reporting** navigation tree, click **Favorite Reports**.  
 
- The new report is displayed.  
+   The new report is displayed.  
 
 ## Configure standard report subscriptions
 
@@ -232,15 +232,15 @@ You can set up subscriptions to your reports in Service Manager through SQL&nbsp
 
 In Service Manager, you can schedule a linked report to run on a regular basis to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
 
--   Schedule report delivery in a standard or data\-driven subscription.  
+- Schedule report delivery in a standard or data\-driven subscription.  
 
--   Schedule report history so that new snapshots are added to the report history at regular intervals.  
+- Schedule report history so that new snapshots are added to the report history at regular intervals.  
 
--   Schedule time to refresh the data of a report snapshot.  
+- Schedule time to refresh the data of a report snapshot.  
 
--   Schedule the expiration of a cached report to occur at a predefined time so that it can be refreshed later.  
+- Schedule the expiration of a cached report to occur at a predefined time so that it can be refreshed later.  
 
- To configure a schedule for a report, complete the procedure in the [Scheduling Reports, Shared Datasets, and Subscriptions](https://go.microsoft.com/fwlink/?LinkId=158822).  
+  To configure a schedule for a report, complete the procedure in the [Scheduling Reports, Shared Datasets, and Subscriptions](https://go.microsoft.com/fwlink/?LinkId=158822).  
 
 ## Add non-Service Manager reports to the report catalog
 

@@ -98,8 +98,8 @@ Exit 0
 1. Open the registry editor on the VMM server. Navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ .NetFrameword\v4.0.30319**.
 2. Create the DWORD value **SchUseStrongCrypto**, and set the value to 1.
 3. Now navigate to
-**HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\
-.NetFrameword\v4.0.30319**.
+   <strong>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\
+   .NetFrameword\v4.0.30319</strong>.
 4. Under this location, create the same DWORD value **SchUseStrongCrypto**, and set the value to 1.
 5. Restart the server for the settings to take effect.
 

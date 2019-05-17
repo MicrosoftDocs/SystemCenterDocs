@@ -18,19 +18,19 @@ If after installing System Center Operations Manager, you move the Operations Ma
 
 ## How to configure the Operations Manager operational database
 
-1.	On each management server run **regedit** from an elevated **Command Prompt**, then edit:
+1. On each management server run **regedit** from an elevated **Command Prompt**, then edit:
 
- -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database`
-	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.    
+   -  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\System Center\2010\Common\Database`
+   Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.    
 
- -	`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
-	Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
+   -  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`
+   Change **DatabaseServerName** to `computer\<instance>` followed by a comma, and then the SQL Server port number `(computer\instance,portNumber)`.  If you are hosting the database on a SQL Server cluster, replace *computer* with the virtual network name of the cluster.  If the database is part of a SQL Always On Availability Group, replace `computer\<instance>` with the availability group listener name in the format of `<AvalabilityGroupListnerName,portNumber>`.  
 
-2.	On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for current branch `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
+2. On each management server, edit the following file: `%ProgramFiles%\System Center 2016\Operations Manager\Server\ConfigService.config` for System Center 2016 - Operations Manager, or for current branch `%ProgramFiles%\Microsoft System Center\Operations Manager\Server\ConfigService.config`:
 
- -	Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to `computer\<instance>` and change the value for *PortNumber* to the SQL Server port number.
+   -  Under the tag `<Category Name=”Cmdb”>`, change the value for *ServerName* to `computer\<instance>` and change the value for *PortNumber* to the SQL Server port number.
 
- -	Under the tag ` <Name=”ConfigStore”>`, change the value for *ServerName* to `computer\<instance>` and change the value for *PortNumber* to the SQL Server port number.
+   -  Under the tag ` <Name=”ConfigStore”>`, change the value for *ServerName* to `computer\<instance>` and change the value for *PortNumber* to the SQL Server port number.
 
 3. On the SQL Server instance hosting the operational database, configure the following:
 

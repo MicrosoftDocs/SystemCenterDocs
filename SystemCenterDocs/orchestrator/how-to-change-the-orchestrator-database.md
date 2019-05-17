@@ -19,23 +19,23 @@ You can use the Database Configuration utility to change the connection settings
 
 ### To change the database settings for the management server and runbook servers  
 
-1.  On the management server, click **Start**, point to **All Programs**, click **Microsoft System Center <version>**, click **Orchestrator**, and then click **Data Store Configuration**.  
-2.  In the **Server** box, enter the name of the server that is hosting the database by using the format **<server>\\<instance>,<port>**. You can click the ellipsis **\(...\)** button to select the computer. You do not have to include the instance if the Orchestrator database is installed on the default instance. You do not have to include the port if SQL Server is usually installed on the default port 1433.  
+1. On the management server, click **Start**, point to **All Programs**, click **Microsoft System Center <version>**, click **Orchestrator**, and then click **Data Store Configuration**.  
+2. In the **Server** box, enter the name of the server that is hosting the database by using the format **<server>\\<instance>,<port>**. You can click the ellipsis **\(...\)** button to select the computer. You do not have to include the instance if the Orchestrator database is installed on the default instance. You do not have to include the port if SQL Server is usually installed on the default port 1433.  
 
-    If the Orchestrator database is installed on an instance called MyInstance on a computer named MySQLServer that is configured on port 12345, enter **MySQLServer\\MyInstance,12345**.  
+   If the Orchestrator database is installed on an instance called MyInstance on a computer named MySQLServer that is configured on port 12345, enter **MySQLServer\\MyInstance,12345**.  
 
-    If the Orchestrator database is installed on an instance called MyInstance on a computer named MySQLServer that is configured on port 1433, enter **MySQLServer\\MyInstance**.  
+   If the Orchestrator database is installed on an instance called MyInstance on a computer named MySQLServer that is configured on port 1433, enter **MySQLServer\\MyInstance**.  
 
-    If the orchestration database is installed on the default instance on a computer named MySQLServer that is configured on port 1433, enter **MySQLServer**.  
-3.  Select the authentication method to use to connect to the SQL Server:  
+   If the orchestration database is installed on the default instance on a computer named MySQLServer that is configured on port 1433, enter **MySQLServer**.  
+3. Select the authentication method to use to connect to the SQL Server:  
 
-    -   **Windows Authentication** Connect to the SQL Server by using Windows Authentication.  
+   -   **Windows Authentication** Connect to the SQL Server by using Windows Authentication.  
 
-    -   **SQL Server Authentication** Connect to the SQL Server by using a SQL Server user account. Type the **User Name** and **Password** of the SQL Server user account. This account must have rights to create, write, and own a database and create, update, and delete rows in the database.  
-4.  Click **Next**.  
-5.  In the **Data Store** pane, click **Use an existing database**.  
-6.  In the **Name** list, select the database.  
-7.  Click **Finish**.  
+   -   **SQL Server Authentication** Connect to the SQL Server by using a SQL Server user account. Type the **User Name** and **Password** of the SQL Server user account. This account must have rights to create, write, and own a database and create, update, and delete rows in the database.  
+4. Click **Next**.  
+5. In the **Data Store** pane, click **Use an existing database**.  
+6. In the **Name** list, select the database.  
+7. Click **Finish**.  
 
 ## Web Service  
 The web service supporting the Orchestration console does not use the **Settings.dat** file. To change the database settings for the web service, you must modify the Web.config file on the Internet Information Services \(IIS\) server. You can use **IIS Manager** to modify the file, but you must first decrypt it by running the aspnet\_regiis.exe executable file.  

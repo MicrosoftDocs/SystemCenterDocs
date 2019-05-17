@@ -118,9 +118,9 @@ SetupWizard.exe /Install:SelfServicePortal /silent /accepteula /CustomerExperien
 ### Complete the installation
 Use the following step to complete your installation.
 
--   Restart IIS. You can access the Web App (http://yourwebsite:port) in your browser. It will resemble the following image.
+- Restart IIS. You can access the Web App (http://yourwebsite:port) in your browser. It will resemble the following image.
 
-    ![Self Service Portal](./media/deploy-self-service-portal/sm-sspdeploy-complete.png)
+  ![Self Service Portal](./media/deploy-self-service-portal/sm-sspdeploy-complete.png)
 
 ## Customize the Self Service portal
 The following section describes how you can customize the Self Service portal to suit your organization.

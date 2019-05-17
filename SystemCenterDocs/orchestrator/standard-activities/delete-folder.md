@@ -24,11 +24,11 @@ The Delete Folder activity deletes a folder, sub-folders, or the entire folder t
 ## Configuring the Delete Folder Activity  
  Before you configure the Delete Folder activity, you need to determine the following:  
   
--   The folder name you are targeting.  
+- The folder name you are targeting.  
   
--   Whether you are going to delete the entire tree; delete the sub-folders only; or delete just the directory.  
+- Whether you are going to delete the entire tree; delete the sub-folders only; or delete just the directory.  
   
- Use the following information to configure the Delete Folder activity.  
+  Use the following information to configure the Delete Folder activity.  
   
 ### Details Tab  
   

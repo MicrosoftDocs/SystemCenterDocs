@@ -22,10 +22,10 @@ You must ensure that your server meets the minimum system requirements for Syste
 
 ::: moniker range="sc-om-2016"
 
->[!NOTE]
->If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
->
-::: moniker-end
+> [!NOTE]
+> If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 gateway server role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install this role is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
+> 
+> ::: moniker-end
 
 
 ## How to deploy a gateway server

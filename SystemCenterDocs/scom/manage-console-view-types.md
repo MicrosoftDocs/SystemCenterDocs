@@ -28,7 +28,7 @@ The alert view displays alerts that meet your specific criteria, such as alert s
 
 ![Example of an Alerts view](./media/manage-console-view-types/om2016-operations-console-alertview.png)  
 
-##Event view type  
+## Event view type  
 
 The event view queries the event logs and displays events that are based on criteria specified in the event view properties. For information on creating an event view, see [How to Create an Event View](manage-console-scope-views.md#how-to-create-an-event-view).  
 
@@ -67,7 +67,7 @@ The Web page view displays a Web page in a separate window in the Operations con
 
 ![Example of web page view](./media/manage-console-view-types/om2016-operations-console-webpageview.png)  
 
-##Overrides summary view type  
+## Overrides summary view type  
 
 You can only create an overrides summary view in My Workspace.  
 

@@ -79,11 +79,11 @@ In the Woodgrove Bank customization scenario, Ken uses this procedure to set the
 
     For example, for the **Add AD DS Computer to Group** activity, do the following:
 
-    1. In the **Details** pane for the **Add AD DS Computer to Group** activity, click **Group Name**, click the ellipsis (**...**) button, click **Use a class property**, click **GroupName**, and then click **OK**.
+   1. In the **Details** pane for the **Add AD DS Computer to Group** activity, click **Group Name**, click the ellipsis (**...**) button, click **Use a class property**, click **GroupName**, and then click **OK**.
 
-    2. In the **Details** pane, click **Computer Name**, click the ellipsis (**...**) button, click **Use a class property**, click **ComputerName**, and then click **OK**.
+   2. In the **Details** pane, click **Computer Name**, click the ellipsis (**...**) button, click **Use a class property**, click **ComputerName**, and then click **OK**.
 
-    For the **Set Activity Status to Completed** activity, click **Activity ID**, and then click the ellipsis (**...**) button that appears next to the property. In the **Define input for the activity setActivityStatusToCompleted1** dialog box, click **Use a class property**, and then in the property list, click **ID (Internal)**. Click **OK**.
+      For the **Set Activity Status to Completed** activity, click **Activity ID**, and then click the ellipsis (**...**) button that appears next to the property. In the **Define input for the activity setActivityStatusToCompleted1** dialog box, click **Use a class property**, and then in the property list, click **ID (Internal)**. Click **OK**.
 
 ## Next steps
 

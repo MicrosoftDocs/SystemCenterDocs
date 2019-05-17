@@ -24,11 +24,11 @@ The Query XML activity is used to perform an XPath query on an XML file. You can
 ## Configuring the Query XML Activity  
  Before you configure the Query XML activity, you need to determine the following:  
   
--   The XML file name or Block of XML that you want to search.  
+- The XML file name or Block of XML that you want to search.  
   
--   The query you will use to perform the search.  
+- The query you will use to perform the search.  
   
- Use the following information to configure the Query XML activity.  
+  Use the following information to configure the Query XML activity.  
   
 ### Details Tab  
   

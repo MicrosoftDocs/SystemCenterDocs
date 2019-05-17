@@ -77,31 +77,31 @@ Use the following steps:
 
     a. Start Registry Editor. To do this, right-click **Start**, type **regedit** in the Run box, and then click **OK**.
 
-    b.	Locate the following registry subkey:
+    b.  Locate the following registry subkey:
     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
 
-    c.	Right-click  **Protocol** , point to **New**, and then click **Key**.
+    c.  Right-click  **Protocol** , point to **New**, and then click **Key**.
 
     ![new registry key](./media/integration-pack-for-om/new-registry-key.png)
 
-    d.	Type **SSL 3.0**, and then press **Enter**.
+    d.  Type **SSL 3.0**, and then press **Enter**.
 
-    e.	Repeat steps c and d to create keys for TLS 0,
+    e.  Repeat steps c and d to create keys for TLS 0,
     TLS 1.1, and TLS 1.2. These keys resemble directories.
 
-    f.	Create a Client key and a Server key under each of the SSL 3.0, TLS 1.0, TLS 1.1, and TLS 1.2 keys.
+    f.  Create a Client key and a Server key under each of the SSL 3.0, TLS 1.0, TLS 1.1, and TLS 1.2 keys.
 
-    g.	To enable a protocol, create the DWORD value under each Client and Server key as follows:
+    g.  To enable a protocol, create the DWORD value under each Client and Server key as follows:
 
-    - DisabledByDefault [Value = 0]
-    - Enabled [Value = 1]
+   - DisabledByDefault [Value = 0]
+   - Enabled [Value = 1]
 
-    h. To disable a protocol, change the DWORD value under each client and server key as follows:
+     h. To disable a protocol, change the DWORD value under each client and server key as follows:
 
-    - DisabledByDefault [Value = 1]
-    - Enabled [Value = 0]
+   - DisabledByDefault [Value = 1]
+   - Enabled [Value = 0]
 
-    i.	On the **File** menu, click **Exit**.
+     i.  On the **File** menu, click **Exit**.
 
    **Method 2: Automatically modify the registry**
 
@@ -118,14 +118,14 @@ Use the following steps:
         {
           Write-Host " In 1st For loop"
           foreach($key in $ProtocolSubKeyList)
-          {		
+          {     
               $currentRegPath = $registryPath + $Protocol + "\" + $key
               Write-Host " Current Registry Path $currentRegPath"
 
               if(!(Test-Path $currentRegPath))
               {
                   Write-Host "creating the registry"
-                  New-Item -Path $currentRegPath -Force | out-Null			
+                  New-Item -Path $currentRegPath -Force | out-Null          
               }
               if($Protocol -eq "TLS 1.2")
               {
@@ -161,19 +161,23 @@ Use the following steps:
 
     **For 32-bit operating systems:**
 
-    | **Path**   |**Registry key**  | **Value** |
-    | --- | --- | --- |
-    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+
+   |                             **Path**                              |     **Registry key**     |   **Value**    |
+   |-------------------------------------------------------------------|--------------------------|----------------|
+   | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319  | SystemDefaultTlsVersions | dword:00000001 |
+   | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+
 
 3. Install the following updates on all Service Manager roles (Management Servers, Data Warehouse Server, Self Service Portal, and Analyst Consoles, including the Analyst Consoles installed on the System Center Orchestrator Runbook servers), as per the Windows Operating System.
 
 
-    | **Operating System** | **Update required to be installed** |
-    | --- | --- |
-    | Windows 8.1 / Windows Server 2012 R2 | [3154520](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154520&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=4zmUO0R60zFAV339V1nYhf32MQRpCoxPEiEmUsNn5LM%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
-    | Windows Server 2012 | [3154519](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154519&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=Om3y93IekKZdW6%2FTt8Arerz1loDOsW3L6LE%2F5bd69dY%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
-    | Windows 7 SP1 / Windows Server 2008 R2 SP1 | [3154518](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154518&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=i1drbmxTit4RkFEKTaEKVTytzWpjAs3dg5DXD2DuH8Y%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
-    | Windows 10 / Windows Server 2016 | [3154521](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154521&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=OfqEkrkocQeSqf2MIW9wKQkZI7mKgaIhpKkZI3%2Bptis%3D&amp;reserved=0) Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows<br><br>[3156421](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3156421&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873410525&amp;sdata=6xGOexADeuoR49tyrMBzxweoVDX2JNkrBqEvpbrdIdw%3D&amp;reserved=0) Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016 |
+~~~
+| **Operating System** | **Update required to be installed** |
+| --- | --- |
+| Windows 8.1 / Windows Server 2012 R2 | [3154520](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154520&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=4zmUO0R60zFAV339V1nYhf32MQRpCoxPEiEmUsNn5LM%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
+| Windows Server 2012 | [3154519](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154519&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=Om3y93IekKZdW6%2FTt8Arerz1loDOsW3L6LE%2F5bd69dY%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
+| Windows 7 SP1 / Windows Server 2008 R2 SP1 | [3154518](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154518&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=i1drbmxTit4RkFEKTaEKVTytzWpjAs3dg5DXD2DuH8Y%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
+| Windows 10 / Windows Server 2016 | [3154521](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154521&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=OfqEkrkocQeSqf2MIW9wKQkZI7mKgaIhpKkZI3%2Bptis%3D&amp;reserved=0) Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows<br><br>[3156421](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3156421&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873410525&amp;sdata=6xGOexADeuoR49tyrMBzxweoVDX2JNkrBqEvpbrdIdw%3D&amp;reserved=0) Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016 |
+~~~
 
 4. Restart the computer.

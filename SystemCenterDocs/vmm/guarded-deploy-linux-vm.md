@@ -25,10 +25,10 @@ With Windows Server 1709, Hyper-V introduces the support for provisioning Linux 
 
 **Use the following steps**:
 
-1.	Create a signed template disk
-2.	Create a Linux shielded VM template in VMM
-3.	Generate shielding data file (PDK)
-4.	Create a Linux shielded VM using the VM template and the PDK.
+1.  Create a signed template disk
+2.  Create a Linux shielded VM template in VMM
+3.  Generate shielding data file (PDK)
+4.  Create a Linux shielded VM using the VM template and the PDK.
 
     >[!NOTE]
     > WAP users can provision Linux shielded VMs in the same manner as Windows shielded VMs.
@@ -49,7 +49,7 @@ Use the following steps:
 
     ```powershell
 
-		$cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
+        $cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
 
         ```
 2. Sign the disk using a Windows Server 1709 machine.
@@ -58,7 +58,6 @@ Use the following steps:
 
     ```powershell
     Protect-TemplateDisk -Path “<<Path to the VHDX>>” -TemplateName "<<Template Name>>" -Version <<x.x.x.x>> -Certificate $cert -ProtectedTemplateTargetDiskType PreprocessedLinux
-
     ```
 
     > [!NOTE]
@@ -66,9 +65,9 @@ Use the following steps:
 
 ## Create a Linux Shielded VM template in VMM
 
-1.	From VMM console, **Library**, click **Create VM Template**.
-2.	In **Select Source**, select **Use an existing VM template** and browse to select the signed VHDX that was created and added to VMM library earlier and click **Next**.
-3.	In **Configure Hardware** Configuration:
+1.  From VMM console, **Library**, click **Create VM Template**.
+2.  In **Select Source**, select **Use an existing VM template** and browse to select the signed VHDX that was created and added to VMM library earlier and click **Next**.
+3.  In **Configure Hardware** Configuration:
     - Under **Firmware**, select **Enable secure boot Template** and select **OpenSourceShieldedVM** from Secure boot template drop-down menu.
 
         > [!NOTE]
@@ -77,7 +76,7 @@ Use the following steps:
     - Select required configuration for other hardware properties such as processors, memory, VM Network.
 
         ![hardware configuration Linux shielded VM](media/linux-shield/vm-create-linux-template-1.png)
-4.	In **Configure Operating System**:
+4.  In **Configure Operating System**:
 
     - Select the Guest OS profile as **Create new Linux Operating System customization settings**.
 
@@ -93,8 +92,8 @@ Use the following steps:
 Before you start, ensure you have the following prerequisites met:
 
 
-1.	[Get the Guardian metadata from the Host Guardian Service](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics)
-2.	[Extract the Volume signature catalog – VSC file](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file)
+1.  [Get the Guardian metadata from the Host Guardian Service](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics)
+2.  [Extract the Volume signature catalog – VSC file](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file)
 
 After the prerequisites are met, run the following sample script on Windows Server 1709 build:
 
@@ -112,21 +111,21 @@ $Guardian = Import-HgsGuardian -Path <<Import the xml from pre-step 1>> -Name '<
 New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Owner $Owner –Guardian $guardian –VolumeIDQualifier (New-VolumeIDQualifier -VolumeSignatureCatalogFilePath ‘<<Path to the .vsc file generated in pre-step 2>>’ -VersionRule Equals) -AnswerFile <<Path to LinuxOsConfiguration.xml>>' -policy Shielded
 ```
 ## Create a Linux shielded VM using the VM template and the PDK
-1.	In VMM Console, click **Create Virtual Machine** Wizard.
-2.	Select **Use an existing virtual machine, VM template or virtual hard disk**.
-3.	Select **Linux Shielded VM Template** and click **Next**.
-![configure operating system VM](media/linux-shield/vm-create-select-source.png)
-4.	Give the VM a name and click **Next**.
-5.	In **Configure Hardware settings**, ensure the details are conforming to the settings made while creating the template. Click **Next**.
-6.	In **Configure Operating System** settings, ensure the details are conforming to the settings made while creating the template. Click **Next**.
-7.	Select the shielding data file (PDK) that you created in the earlier step.
-8.	Select the destination host group and click **Next**.
-9.	Select the host by the rating given by VMM placement engine. Click **Next**.
-10.	In **Configure Settings**, review the virtual machine settings and click **Next**.
-11.	Review the actions in **Add properties** and click **Next**.
-12.	Click **Create to create the Linux shielded VM**.
+1. In VMM Console, click **Create Virtual Machine** Wizard.
+2. Select **Use an existing virtual machine, VM template or virtual hard disk**.
+3. Select **Linux Shielded VM Template** and click **Next**.
+   ![configure operating system VM](media/linux-shield/vm-create-select-source.png)
+4. Give the VM a name and click **Next**.
+5. In **Configure Hardware settings**, ensure the details are conforming to the settings made while creating the template. Click **Next**.
+6. In **Configure Operating System** settings, ensure the details are conforming to the settings made while creating the template. Click **Next**.
+7. Select the shielding data file (PDK) that you created in the earlier step.
+8. Select the destination host group and click **Next**.
+9. Select the host by the rating given by VMM placement engine. Click **Next**.
+10. In **Configure Settings**, review the virtual machine settings and click **Next**.
+11. Review the actions in **Add properties** and click **Next**.
+12. Click **Create to create the Linux shielded VM**.
 
-  While provisioning, the VMM specialization agent reads the Linux configuration file in PDK and customizes the VM.
+    While provisioning, the VMM specialization agent reads the Linux configuration file in PDK and customizes the VM.
 
 
 ## Next steps

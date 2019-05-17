@@ -24,11 +24,11 @@ The Format Date/Time activity enables you to transform existing date and time fo
 ## Configuring the Format Date/Time Activity  
  Before you configure the Format Date/Time activity, you need to determine the following:  
   
--   The existing date and time format you want to transform.  
+- The existing date and time format you want to transform.  
   
--   The new date and time format you want it to become.  
+- The new date and time format you want it to become.  
   
- Use the following information to configure the Format Date/Time activity.  
+  Use the following information to configure the Format Date/Time activity.  
   
 ### Details Tab  
   

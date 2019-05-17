@@ -88,7 +88,7 @@ Set-SCVMHostNetworkAdapter -RefreshLLDP
 ```
 
 > [!NOTE]
-
+> 
 > By default, LLDP Packet wait time is set as 30 seconds. You can modify this value by modifying the registry key at **Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\LLdpPacketWaitIntervalSeconds**. The minimum value you can set is 5 seconds, maximum value is 300 seconds.
 
   ::: moniker-end

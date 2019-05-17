@@ -25,21 +25,21 @@ The activity publishes all of the data from the required and optional properties
 
 With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
 
->[!NOTE]
->To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties support a comma-separated list of values. Each list must have the same number of values. For example, to assign network details to three network adapters, use the following format:
-- IP Address = 192.168.0.2, DHCP, 10.0.0.3
-- Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
-- Gateway = 192.168.0.1, DHCP, 10.0.0.1
-- DNS Suffix = a.com, b.com, c.com
-
->The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
-
->[!NOTE]
->If you clone an existing Windows virtual machine with guest customizations, such as IP Address, Admin Password, Computer Name, and so on, and you want to verify these customizations on the new cloned virtual machine, follow the steps below:
-1. After the clone operation completes, ensure that the cloned virtual machine is turned on in the vSphere client.
-1. After the cloned virtual machine boots to the lock screen, wait two minutes.
-1. After the cloned virtual machine automatically reboots, the VMware customization message appears.  After the cloned VM reboots for a second time to the lock screen, wait two minutes.
-1. Verify all the customizations (which you specified in the Properties dialog box of this activity) in vSphere client. You can view these customizations on the Virtual Machine Properties dialog box, or the Summary tab window, or you can log into the guest operating system in the vSphere console.
+> [!NOTE]
+> To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties support a comma-separated list of values. Each list must have the same number of values. For example, to assign network details to three network adapters, use the following format:
+> - IP Address = 192.168.0.2, DHCP, 10.0.0.3
+> - Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
+> - Gateway = 192.168.0.1, DHCP, 10.0.0.1
+> - DNS Suffix = a.com, b.com, c.com
+> 
+> The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
+> 
+> [!NOTE]
+> If you clone an existing Windows virtual machine with guest customizations, such as IP Address, Admin Password, Computer Name, and so on, and you want to verify these customizations on the new cloned virtual machine, follow the steps below:
+> 1. After the clone operation completes, ensure that the cloned virtual machine is turned on in the vSphere client.
+> 1. After the cloned virtual machine boots to the lock screen, wait two minutes.
+> 1. After the cloned virtual machine automatically reboots, the VMware customization message appears.  After the cloned VM reboots for a second time to the lock screen, wait two minutes.
+> 1. Verify all the customizations (which you specified in the Properties dialog box of this activity) in vSphere client. You can view these customizations on the Virtual Machine Properties dialog box, or the Summary tab window, or you can log into the guest operating system in the vSphere console.
 
 ### Clone Windows VM Activity Required Properties
 

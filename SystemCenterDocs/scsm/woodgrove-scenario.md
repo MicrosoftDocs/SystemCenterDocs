@@ -42,11 +42,11 @@ To provide real\-world context to the step\-by\-step procedures for the Service 
 
 The Woodgrove Bank customization scenario has the following prerequisites:  
 
--   System Center  - Service Manager must be installed in your environment.  
--   The System Center - Service Manager Authoring Tool must be installed in your environment.  
--   The Workflow Account in Service Manager must be a member of the Domain Administrators group because this scenario involves creating a workflow that adds a computer to a group in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\). You specify the Workflow Account in the Service Manager Server Setup Wizard.  
+- System Center  - Service Manager must be installed in your environment.  
+- The System Center - Service Manager Authoring Tool must be installed in your environment.  
+- The Workflow Account in Service Manager must be a member of the Domain Administrators group because this scenario involves creating a workflow that adds a computer to a group in Active&nbsp;Directory Domain Services \(AD&nbsp;DS\). You specify the Workflow Account in the Service Manager Server Setup Wizard.  
 
- The Authoring Tool's installation folder includes a **Samples** subfolder that contains the following files, which are required for the Woodgrove Bank customization scenario.  
+  The Authoring Tool's installation folder includes a **Samples** subfolder that contains the following files, which are required for the Woodgrove Bank customization scenario.  
 
 |File|Description|  
 |----------|-----------------|  
@@ -107,11 +107,11 @@ The second step in the Woodgrove Bank customization scenario is to customize the
 
 In this step of the Woodgrove Bank customization scenario, Ken creates the workflow that supports the custom activity for change requests. To design the Windows Workflow Foundation \(WF\) workflow, Ken considers the following factors:  
 
--   **When should the workflow run?** The workflow should start when the applicable change request is approved.  
--   **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), and then change the status of the automated activity to "Complete."  
--   **What information does the workflow need?** The change request provides information about the specific computer and group to use. Properties of the workflow activities can retrieve the change request information from the Service Manager activity that is associated with the change request.  
+- **When should the workflow run?** The workflow should start when the applicable change request is approved.  
+- **What does the workflow need to do?** The workflow needs to add a computer to a group in Active Directory Domain Services \(AD&nbsp;DS\), and then change the status of the automated activity to "Complete."  
+- **What information does the workflow need?** The change request provides information about the specific computer and group to use. Properties of the workflow activities can retrieve the change request information from the Service Manager activity that is associated with the change request.  
 
- To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](step1-open-mp.md). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
+  To create and implement his new workflow, Ken follows the steps in the rest of this section. He uses the **Woodgrove.AutomatedActivity.AddComputerToGroupMP** management pack, as described in [Step 1: Open the Woodgrove.AutomatedActivity.AddComputerToADGroupMP Management Pack](step1-open-mp.md). These procedures assume that this management pack is still open in the Service Manager Authoring Tool.  
 
 ### Create a New Workflow  
  Ken uses this procedure to create a workflow named **AddComputerToADGroupWF** in the **Woodgrove.AutomatedActivity.AddComputerToADGroupMP** management pack.  

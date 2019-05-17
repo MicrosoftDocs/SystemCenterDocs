@@ -101,41 +101,41 @@ There are two phases for creating the Alert connector. The first part involves c
 
 ### To create an Operations Manager alert connector
 
-1.  In the Service Manager console, click **Administration**.
+1. In the Service Manager console, click **Administration**.
 
-2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
+2. In the **Administration** pane, expand **Administration**, and then click **Connectors**.
 
-3.  In the **Tasks** pane, under **Connectors**, click **Create Connector**, and then click **Operations Manager Alert Connector**.
+3. In the **Tasks** pane, under **Connectors**, click **Create Connector**, and then click **Operations Manager Alert Connector**.
 
-4.  Complete the following steps to complete the Operations Manager Alert Connector Wizard:
+4. Complete the following steps to complete the Operations Manager Alert Connector Wizard:
 
-    1.  On the **Before You Begin** page, click **Next**.
+   1.  On the **Before You Begin** page, click **Next**.
 
-    2.  On the **General** page, in the **Name** box, type a name for the new connector. Make sure that the **Enable** check box is selected, and then click **Next**. Make a note of this name; you will need this name in step 7 of this procedure.
+   2.  On the **General** page, in the **Name** box, type a name for the new connector. Make sure that the **Enable** check box is selected, and then click **Next**. Make a note of this name; you will need this name in step 7 of this procedure.
 
-    3.  On the **Server Details** page, in the **Server name** box, type the name of the server that is hosting the Operations Manager root management server. Under **Credentials**, click **New**.
+   3.  On the **Server Details** page, in the **Server name** box, type the name of the server that is hosting the Operations Manager root management server. Under **Credentials**, click **New**.
 
-    4.  In the **Run As Account** dialog box, in the **Display name** box, type a name for this Run As account. In the **Account** list, select **Windows Account**.
+   4.  In the **Run As Account** dialog box, in the **Display name** box, type a name for this Run As account. In the **Account** list, select **Windows Account**.
 
-    5.  In the **User Name**, **Password**, and **Domain** fields, type the credentials for the Run As account, and then click **OK**.
+   5.  In the **User Name**, **Password**, and **Domain** fields, type the credentials for the Run As account, and then click **OK**.
 
-    6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
+   6.  On the **Server Details** page, click **Test Connection**. If you receive the following confirmation message, click **OK**, and then click **Next**:
 
-        *The connection to the server was successful.*
+       *The connection to the server was successful.*
 
-    7.  On the **Alert Routing Rules** page, click **Add**.
+   7.  On the **Alert Routing Rules** page, click **Add**.
 
-    8.  In the **Add Alert Routing Rule** dialog box, create a name for the rule, select the template that you want to use to process incidents created by an alert, and then select the alert criteria that you want to use. Click **OK**, and then click **Next**.
+   8.  In the **Add Alert Routing Rule** dialog box, create a name for the rule, select the template that you want to use to process incidents created by an alert, and then select the alert criteria that you want to use. Click **OK**, and then click **Next**.
 
-    9. On the **Schedule** page, select **Close alerts in Operations Manager when incidents are resolved or closed** or **Resolve incidents automatically when the alerts in Operations Manager are closed**, click **Next**, and then click **Create**.
+   9. On the **Schedule** page, select **Close alerts in Operations Manager when incidents are resolved or closed** or **Resolve incidents automatically when the alerts in Operations Manager are closed**, click **Next**, and then click **Create**.
 
-5.  Start the Operations Manager console.
+5. Start the Operations Manager console.
 
-6.  In the **Administration** pane, click **Product Connectors**, and then click **Internal Connectors**.
+6. In the **Administration** pane, click **Product Connectors**, and then click **Internal Connectors**.
 
-7.  In the **Connectors** pane, click the name of the alert connector.
+7. In the **Connectors** pane, click the name of the alert connector.
 
-8.  In the **Actions** pane, click **Properties**.
+8. In the **Actions** pane, click **Properties**.
 
 9. In the **Alert Sync: *name of connector*** dialog box, click **Add**.
 

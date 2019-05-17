@@ -56,20 +56,20 @@ After moving the Operations Manager operational database to a different SQL Serv
 
 ### Update security credentials on the new SQL Server instance hosting the operational database 
 
-1.	On the new SQL Server instance hosting the operational database, open SQL Management Studio.  
-2.	Expand **Security**, then expand **Logins**, and add the data writer account name. 
-3.	Under **Logins**, add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
-4.	Under **Logins**, add the management server action account.  
-5.	Under **Logins**, add the Data Access Service (DAS) user account, using the format "domain\user".
-6.	For the DAS user account, add the following user mappings:
-  -	ConfigService
-  -	db_accessadmin
-  -	db_datareader
-  -	db_datawriter
-  -	db_ddladmin
-  -	db_securityadmin
-  -	sdk_users
-  -	sql_dependency_subscriber
+1. On the new SQL Server instance hosting the operational database, open SQL Management Studio.  
+2. Expand **Security**, then expand **Logins**, and add the data writer account name. 
+3. Under **Logins**, add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
+4. Under **Logins**, add the management server action account.  
+5. Under **Logins**, add the Data Access Service (DAS) user account, using the format "domain\user".
+6. For the DAS user account, add the following user mappings:
+   - ConfigService
+   - db_accessadmin
+   - db_datareader
+   - db_datawriter
+   - db_ddladmin
+   - db_securityadmin
+   - sdk_users
+   - sql_dependency_subscriber
 
 7. If an account has not existed before in the SQL Server instance in which you are adding it, the mapping will be picked up by SID automatically from the restored operational  database. If the account has existed in that SQL Server instance before, you receive an error indicating failure for that login, although the account appears under **Logins**. If you are creating a new login, ensure the User Mapping for that log in and database are set to the same values as the previous login as follows:
 
@@ -106,9 +106,9 @@ After moving the Operations Manager operational database to a different SQL Serv
 ###  Start the Operations Manager services
 
 1. On all the management servers in the management group, start the Operations Manager services: 
-  - System Center Data Access
-  - Microsoft Monitoring Agent
-  - System Center Management Configuration
+   - System Center Data Access
+   - Microsoft Monitoring Agent
+   - System Center Management Configuration
 
 
 ### Update Service Principal Name for Kerberos Connections

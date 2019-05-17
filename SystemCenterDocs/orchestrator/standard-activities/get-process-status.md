@@ -27,11 +27,11 @@ The Get Process Status activity checks the status of a running process on any co
 ## Configuring the Get Process Status Activity  
  Before you configure the Get Process Status activity, you need to determine the following:  
   
--   The computer where the process is located.  
+- The computer where the process is located.  
   
--   The file name that will run the process.  
+- The file name that will run the process.  
   
- Use the following information to configure the Get Process Status activity.  
+  Use the following information to configure the Get Process Status activity.  
   
 ### Details Tab  
   

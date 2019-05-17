@@ -24,13 +24,13 @@ The Apply XSLT activity enables you to transform the content of an XML file acco
 ## Configuring the Apply XSLT Activity  
  Before you configure the Apply XSLT activity, you need to determine the following:  
   
--   The name of the XML file that will be converted.  
+- The name of the XML file that will be converted.  
   
--   The name that you want to assign to the XML file that results from the transformation.  
+- The name that you want to assign to the XML file that results from the transformation.  
   
--   The name of the XSLT file that you will use to transform the XML file.  
+- The name of the XSLT file that you will use to transform the XML file.  
   
- Use the following information to configure the Apply XSLT activity.  
+  Use the following information to configure the Apply XSLT activity.  
   
 ### Details Tab  
   

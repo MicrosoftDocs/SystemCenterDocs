@@ -48,30 +48,30 @@ This topic describes how to prepare your System Center 2012 R2 - Service Manager
 
 ### To list the data warehouse jobs by using Windows PowerShell cmdlets and disable them  
 
-1.  On the computer that hosts the data warehouse management server, click **Start**, click **All Programs**, click **Microsoft System Center 2012 R2**, and then click **Service Manager Shell**.  
+1. On the computer that hosts the data warehouse management server, click **Start**, click **All Programs**, click **Microsoft System Center 2012 R2**, and then click **Service Manager Shell**.  
 
-2.  Type the following commands, and then press ENTER after each command:  
+2. Type the following commands, and then press ENTER after each command:  
 
-    ```  
-    Set-ExecutionPolicy -force RemoteSigned  
-    ```  
+   ```  
+   Set-ExecutionPolicy -force RemoteSigned  
+   ```  
 
-    ```  
-    cd (Get-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup\').InstallDirectory
-Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
-    ```  
+   ```  
+   cd (Get-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup\').InstallDirectory
+   Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1
+   ```  
 
-    ```  
-    cd 'C:\Program Files\Microsoft System Center 2012 R2\Service Manager'  
-    Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1  
+   ```  
+   cd 'C:\Program Files\Microsoft System Center 2012 R2\Service Manager'  
+   Import-Module .\Microsoft.EnterpriseManagement.Warehouse.Cmdlets.psd1  
 
-    ```  
+   ```  
 
-    ```  
-    get-scdwjob | ? {$_.Name -match 'Extract_'}  | foreach {Disable-SCDWJobSchedule -JobName $_.Name}  
-    ```  
+   ```  
+   get-scdwjob | ? {$_.Name -match 'Extract_'}  | foreach {Disable-SCDWJobSchedule -JobName $_.Name}  
+   ```  
 
-3.  A list of the data warehouse jobs appears.
+3. A list of the data warehouse jobs appears.
 
 
 ### To confirm that the data warehouse jobs have stopped running  

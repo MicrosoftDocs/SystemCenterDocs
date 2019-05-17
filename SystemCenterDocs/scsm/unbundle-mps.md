@@ -27,39 +27,39 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
 
 ### To extract individual unsealed management packs from an .mpb file  
 
-1.  Start a Service Manager Windows&nbsp;PowerShell session.  
+1. Start a Service Manager Windows&nbsp;PowerShell session.  
 
-2.  In the Windows&nbsp;PowerShell console, type the following commands:  
+2. In the Windows&nbsp;PowerShell console, type the following commands:  
 
-    ```  
-    mkdir <mpdir>  
-    ```  
+   ```  
+   mkdir <mpdir>  
+   ```  
 
-    ```  
-    Get-SCSMManagementPack -bundlefile .\<filename>.mpb | Export-SCSMManagementPack -path <mpdir>  
-    ```  
+   ```  
+   Get-SCSMManagementPack -bundlefile .\<filename>.mpb | Export-SCSMManagementPack -path <mpdir>  
+   ```  
 
-    -   In the command, replace the *mpdir* placeholder with the folder in which the extracted management pack files will be stored.  
+   -   In the command, replace the *mpdir* placeholder with the folder in which the extracted management pack files will be stored.  
 
-    -   Replace the *filename* placeholder with the name of the .mpb file.  
+   -   Replace the *filename* placeholder with the name of the .mpb file.  
 
- You can now navigate to the *mpdir* folder in the current working folder to view and access the management pack files that you extracted.  
+   You can now navigate to the *mpdir* folder in the current working folder to view and access the management pack files that you extracted.  
 
 ### To extract resource files from an .mpb file  
 
-1.  In a Windows&nbsp;PowerShell window, type the following commands:  
+1. In a Windows&nbsp;PowerShell window, type the following commands:  
 
-    ```  
-    $SM2016DirKey = Get-ItemProperty "hklm:\SOFTWARE\Microsoft\System Center\2016\Common\Setup"  
-    $SM2016Dir = $SM2016DirKey.InstallDirectory   
-    [reflection.assembly]::loadfrom($SM2016Dir + "\SDK Binaries\Microsoft.EnterpriseManagement.Packaging.dll")  
-    [reflection.assembly]::LoadWithPartialName("Microsoft.EnterpriseManagement.Core") | out-null  
-    $emg = new-object Microsoft.EnterpriseManagement.EnterpriseManagementGroup localhost  
-    $mpbReader = [Microsoft.EnterpriseManagement.Packaging.ManagementPackBundleFactory]::CreateBundleReader()  
-    $mpb = $mpbReader.Read("$PWD\Administration.mpb", $emg)  
-    ```  
+   ```  
+   $SM2016DirKey = Get-ItemProperty "hklm:\SOFTWARE\Microsoft\System Center\2016\Common\Setup"  
+   $SM2016Dir = $SM2016DirKey.InstallDirectory   
+   [reflection.assembly]::loadfrom($SM2016Dir + "\SDK Binaries\Microsoft.EnterpriseManagement.Packaging.dll")  
+   [reflection.assembly]::LoadWithPartialName("Microsoft.EnterpriseManagement.Core") | out-null  
+   $emg = new-object Microsoft.EnterpriseManagement.EnterpriseManagementGroup localhost  
+   $mpbReader = [Microsoft.EnterpriseManagement.Packaging.ManagementPackBundleFactory]::CreateBundleReader()  
+   $mpb = $mpbReader.Read("$PWD\Administration.mpb", $emg)  
+   ```  
 
- From the $mpb object, you can now access the $mpb.ManagementPacks; these are the management packs in the .mpb bundle. And, you can access the $mpb.GetStreams\(ManagementPack\),which associates the resources with a management pack in that bundle. These resources will be in the form of binary streams that you can write to files.  
+   From the $mpb object, you can now access the $mpb.ManagementPacks; these are the management packs in the .mpb bundle. And, you can access the $mpb.GetStreams\(ManagementPack\),which associates the resources with a management pack in that bundle. These resources will be in the form of binary streams that you can write to files.  
 
 ## Next steps
 

@@ -26,15 +26,15 @@ The Search and Replace Text activity searches for and replaces text that you spe
 ## Configuring the Search and Replace Text Activity  
  Before you configure the Search and Replace Text activity, you need to determine the following:  
   
--   The file name you want to search in.  
+- The file name you want to search in.  
   
--   The encoding that the file you want to search in uses.  
+- The encoding that the file you want to search in uses.  
   
--   The text you want to search for.  
+- The text you want to search for.  
   
--   The replacement text  
+- The replacement text  
   
- Use the following information to configure the Search and Replace Text activity.  
+  Use the following information to configure the Search and Replace Text activity.  
   
 ### Details Tab  
   

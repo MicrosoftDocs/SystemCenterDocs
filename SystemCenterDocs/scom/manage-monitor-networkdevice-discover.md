@@ -59,135 +59,135 @@ You must ensure the following firewall configuration before creating the network
 
 ## To create a network devices discovery rule
 
-1.  Open the Operations console with an account that is a member of Operations Manager Administrators.
+1. Open the Operations console with an account that is a member of Operations Manager Administrators.
 
-2.  In the **Administration** workspace, right-click **Administration**, and then click **Discovery Wizard**.
+2. In the **Administration** workspace, right-click **Administration**, and then click **Discovery Wizard**.
 
-3.  On the **What would you like to manage?** page, select **Network devices**, and then click **Next**.
+3. On the **What would you like to manage?** page, select **Network devices**, and then click **Next**.
 
-4.  On the **General Properties** page, do the following:
+4. On the **General Properties** page, do the following:
 
-    1.  In the Name box, type a name, such as **My Network Devices**.
+   1.  In the Name box, type a name, such as **My Network Devices**.
 
-    2.  In the **Available servers** drop-down list, select a management server that has access to the devices you are discovering to run the discovery rule. Servers that already run a network devices discovery rule will not be listed.
+   2.  In the **Available servers** drop-down list, select a management server that has access to the devices you are discovering to run the discovery rule. Servers that already run a network devices discovery rule will not be listed.
 
-    3.  Click **Create Resource Pool** to create a management server resource pool for monitoring the devices, or in the **Select a resource pool** drop-down list, click a resource pool, and then click **Next**.
+   3.  Click **Create Resource Pool** to create a management server resource pool for monitoring the devices, or in the **Select a resource pool** drop-down list, click a resource pool, and then click **Next**.
 
-5.  On the **Discovery Method** page, select **Explicit discovery** or **Recursive discovery**, and then click **Next**.
+5. On the **Discovery Method** page, select **Explicit discovery** or **Recursive discovery**, and then click **Next**.
 
-    > [!NOTE]
-    > If you know all of the network devices that you want discovered, you should use explicit discovery. Recursive discovery can discover devices that you have no business need to monitor and as a result, can increase the administrative workload of monitoring your network
+   > [!NOTE]
+   > If you know all of the network devices that you want discovered, you should use explicit discovery. Recursive discovery can discover devices that you have no business need to monitor and as a result, can increase the administrative workload of monitoring your network
 
-6.  On the **Default Accounts** page, if you are discovering only SNMP v3 devices, click **Next**. If you are discovering any SNMP v1 or v2 devices, do the following:
+6. On the **Default Accounts** page, if you are discovering only SNMP v3 devices, click **Next**. If you are discovering any SNMP v1 or v2 devices, do the following:
 
-    1.  If you previously created Run As accounts for SNMP v1 or v2 devices, the Run As accounts will be listed and you can select a listed account for this discovery rule. If no accounts are listed or the listed accounts are not appropriate for this discovery rule, continue to the next step.
+   1.  If you previously created Run As accounts for SNMP v1 or v2 devices, the Run As accounts will be listed and you can select a listed account for this discovery rule. If no accounts are listed or the listed accounts are not appropriate for this discovery rule, continue to the next step.
 
-        > [!NOTE]
-        > If you are creating a recursive discovery rule, you must create a default account, which will be used to connect to and discover devices connected to the device that you specify on the **Devices** page. If you do not create and select an account on the **Default Accounts** page, the recursive discovery will discover the device that you specify but will not discover devices connected to it.
+       > [!NOTE]
+       > If you are creating a recursive discovery rule, you must create a default account, which will be used to connect to and discover devices connected to the device that you specify on the **Devices** page. If you do not create and select an account on the **Default Accounts** page, the recursive discovery will discover the device that you specify but will not discover devices connected to it.
 
-    2.  Click **Create Account**.
+   2.  Click **Create Account**.
 
-    3.  In the **Create Run As Account Wizard**, on the **Introduction** page, click **Next**.
+   3.  In the **Create Run As Account Wizard**, on the **Introduction** page, click **Next**.
 
-    4.  In the **Display Name** text box, type a name such as **Router Credentials**.
+   4.  In the **Display Name** text box, type a name such as **Router Credentials**.
 
-    5.  Optionally, type a description in the **Description** box. Click **Next**.
+   5.  Optionally, type a description in the **Description** box. Click **Next**.
 
-    6.  On the **Credentials** page, type the SNMP community string for your network devices, and then click **Create**.
+   6.  On the **Credentials** page, type the SNMP community string for your network devices, and then click **Create**.
 
-        > [!NOTE]
-        > If the rule will discover devices that use more than one SNMP community string, you must create one Run As account for each SNMP community string.
+       > [!NOTE]
+       > If the rule will discover devices that use more than one SNMP community string, you must create one Run As account for each SNMP community string.
 
-    7.  On the **Default Accounts** page, you will see that the Run As account that you just created is listed in the **SNMPv1/v2 Run As accounts** box and is selected. Click **Next**
+   7.  On the **Default Accounts** page, you will see that the Run As account that you just created is listed in the **SNMPv1/v2 Run As accounts** box and is selected. Click **Next**
 
-7.  If you are adding an SNMP v1 or v2 device, on the **Devices** page, do the following:
+7. If you are adding an SNMP v1 or v2 device, on the **Devices** page, do the following:
 
-    > [!NOTE]
-    > This procedure describes how to add devices one at a time. You can also add multiple devices by clicking the **Import** button to import a text file with a list of IPv4 addresses. This file should have a single IP address on each line. After import, the IP addresses are part of the discovery rule and the text file is no longer needed.
+   > [!NOTE]
+   > This procedure describes how to add devices one at a time. You can also add multiple devices by clicking the **Import** button to import a text file with a list of IPv4 addresses. This file should have a single IP address on each line. After import, the IP addresses are part of the discovery rule and the text file is no longer needed.
 
-    1.  Click **Add** to open the **Add Device** page.
+   1.  Click **Add** to open the **Add Device** page.
 
-    2.  On the **Add Device** page, type the IPv4 address or FQDN of the device that you want to discover and monitor. If you are creating a recursive discovery, the discovery will access this device to locate other devices on your network.
+   2.  On the **Add Device** page, type the IPv4 address or FQDN of the device that you want to discover and monitor. If you are creating a recursive discovery, the discovery will access this device to locate other devices on your network.
 
-    3.  In **Access Mode**, select **ICMP**, **SNMP**, or **ICMP and SNMP**. This specifies how the device will be discovered and how it will be monitored after discovery.
+   3.  In **Access Mode**, select **ICMP**, **SNMP**, or **ICMP and SNMP**. This specifies how the device will be discovered and how it will be monitored after discovery.
 
-        > [!NOTE]
-        > If you select **ICMP and SNMP**, the device must be accessible by both protocols or it will not be discovered. If you select **ICMP**, discovery will be limited to the specified device, and monitoring will be limited to whether the device is online or offline.
+       > [!NOTE]
+       > If you select **ICMP and SNMP**, the device must be accessible by both protocols or it will not be discovered. If you select **ICMP**, discovery will be limited to the specified device, and monitoring will be limited to whether the device is online or offline.
 
-    4.  In **Port number**, retain the default port (161) or select another port number for the device.
+   4.  In **Port number**, retain the default port (161) or select another port number for the device.
 
-    5.  Select **v1 or v2** from the **SNMP version** drop-down box.
+   5.  Select **v1 or v2** from the **SNMP version** drop-down box.
 
-    6.  In **SNMP V1 or V2 Run As account**, select **Use selected default account**. If you specify an account in this window, then only the specified account will be used for discovery.
+   6.  In **SNMP V1 or V2 Run As account**, select **Use selected default account**. If you specify an account in this window, then only the specified account will be used for discovery.
 
-        > [!NOTE]
-        > If you are discovering devices that use more than one SNMP community string and therefore have multiple Run As accounts, you can retain the default value of **Use selected default accounts** in the **SNMP V1 or V2 Run As account** field. When you do this, the Network Devices Discovery Wizard will attempt to use the community string for every Run As account that you selected on the **Default Accounts** page against every device that you add to the discovery list until a community string succeeds.
+       > [!NOTE]
+       > If you are discovering devices that use more than one SNMP community string and therefore have multiple Run As accounts, you can retain the default value of **Use selected default accounts** in the **SNMP V1 or V2 Run As account** field. When you do this, the Network Devices Discovery Wizard will attempt to use the community string for every Run As account that you selected on the **Default Accounts** page against every device that you add to the discovery list until a community string succeeds.
 
-    7.  Click **OK**. This returns you to the **Devices** page and you should see the device that you just added listed.
+   7.  Click **OK**. This returns you to the **Devices** page and you should see the device that you just added listed.
 
-        > [!NOTE]
-        > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**.
+       > [!NOTE]
+       > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**.
 
-    8.  Add other SNMP v1 or v2 devices and Run As accounts as necessary, and then click **Next**.
+   8.  Add other SNMP v1 or v2 devices and Run As accounts as necessary, and then click **Next**.
 
-        > [!NOTE]
-        > If you add multiple devices to the rule, you can set a common Run As Account for all of them by selecting all of the devices and then clicking **Edit**.
+       > [!NOTE]
+       > If you add multiple devices to the rule, you can set a common Run As Account for all of them by selecting all of the devices and then clicking **Edit**.
 
-8.  If you are adding an SNMP v3 device, on the **Devices** page, do the following:
+8. If you are adding an SNMP v3 device, on the **Devices** page, do the following:
 
-    > [!NOTE]
-    > This procedure describes how to add devices one at a time. You can also add multiple devices by clicking the **Import** button to import a text file with a list of IPv4 addresses. This file should have a single IP address on each line.  After import, the IP addresses are part of the discovery rule and the text file is no longer needed. Each device requires an SNMP v3 credential. After you import the addresses, you can edit each device to add the credential or you can select multiple devices and provide the same credential for all selected devices.
+   > [!NOTE]
+   > This procedure describes how to add devices one at a time. You can also add multiple devices by clicking the **Import** button to import a text file with a list of IPv4 addresses. This file should have a single IP address on each line.  After import, the IP addresses are part of the discovery rule and the text file is no longer needed. Each device requires an SNMP v3 credential. After you import the addresses, you can edit each device to add the credential or you can select multiple devices and provide the same credential for all selected devices.
 
-    1.  Click **Add**. This opens the **Add Device** page.
+   1.  Click **Add**. This opens the **Add Device** page.
 
-    2.  On the **Add a Device** page, type the IPv4 address or FQDN of the SNMP v3 device that you want to discovery and monitor.
+   2.  On the **Add a Device** page, type the IPv4 address or FQDN of the SNMP v3 device that you want to discovery and monitor.
 
-    3.  In **Access Mode**, select **ICMP**, **SNMP**, or **ICMP and SNMP**. This specifies how the device will be discovered and how it will be monitored after discovery.
+   3.  In **Access Mode**, select **ICMP**, **SNMP**, or **ICMP and SNMP**. This specifies how the device will be discovered and how it will be monitored after discovery.
 
-        > [!NOTE]
-        > If you select **ICMP and SNMP**, the device must be accessible by both protocols or it will not be discovered. If you select **ICMP**, discovery will be limited to the specified device, and monitoring will be limited to whether the device is online or offline.
+       > [!NOTE]
+       > If you select **ICMP and SNMP**, the device must be accessible by both protocols or it will not be discovered. If you select **ICMP**, discovery will be limited to the specified device, and monitoring will be limited to whether the device is online or offline.
 
-    4.  In **Port number**, retain the default port (161) or select another port number for the device.
+   4.  In **Port number**, retain the default port (161) or select another port number for the device.
 
-    5.  Select **v3** from the **SNMP version** drop-down box.
+   5.  Select **v3** from the **SNMP version** drop-down box.
 
-    6.  Click **Add SNMP V3 Run As Account**.
+   6.  Click **Add SNMP V3 Run As Account**.
 
-        > [!NOTE]
-        > Each SNMP v3 device requires its own Run As account.
+       > [!NOTE]
+       > Each SNMP v3 device requires its own Run As account.
 
-    7.  In the **Create Run As Account Wizard**, on the **Introduction** page, click **Next**.
+   7.  In the **Create Run As Account Wizard**, on the **Introduction** page, click **Next**.
 
-    8.  Type a value in the **Display name** box, optionally type a description, and then click **Next**.
+   8.  Type a value in the **Display name** box, optionally type a description, and then click **Next**.
 
-    9. On the **Credentials** page, enter the values for **User name**, **Context**, **Authentication protocol**, **Authentication key**, **Privacy protocol** and **Privacy key** for the SNMP v3 device. Click **Create**.
+   9. On the **Credentials** page, enter the values for **User name**, **Context**, **Authentication protocol**, **Authentication key**, **Privacy protocol** and **Privacy key** for the SNMP v3 device. Click **Create**.
 
-        Click **OK**. This returns you to the **Devices** page.
+       Click **OK**. This returns you to the **Devices** page.
 
-    10. > [!NOTE]
-        > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).
+   10. > [!NOTE]
+       > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).
 
-    11. Add other SNMP v3 devices and Run As accounts as necessary, and then click **Next**.
+   11. Add other SNMP v3 devices and Run As accounts as necessary, and then click **Next**.
 
 9. If you are creating an explicit discovery rule, go to the next step. If you are creating a recursive discovery rule, do the following:
 
-    1.  On the **Include Filters** page, leave the default setting to discover all devices. If you want to filter for only a particular set of devices, select **Discover only network devices within the specific IP address ranges**, and then click **Add** to configure a filter. Click **Next** when complete.
+   1. On the **Include Filters** page, leave the default setting to discover all devices. If you want to filter for only a particular set of devices, select **Discover only network devices within the specific IP address ranges**, and then click **Add** to configure a filter. Click **Next** when complete.
 
-        In the **IP address range** field, you can enter addresses such as the following:
+      In the **IP address range** field, you can enter addresses such as the following:
 
-        -   **10.193.220.25** (a single IP address to include one specific device)
+      - **10.193.220.25** (a single IP address to include one specific device)
 
-        -   **172.23.136<1-100>** (include any IP address from 1 to 100 in 172.23.136/255.255.255.0)
+      - **172.23.136<1-100>** (include any IP address from 1 to 100 in 172.23.136/255.255.255.0)
 
-        -   **172.23.135.\*** (include any IP address in 172.23.135/255.255.255.0)
+      - **172.23.135.\\*** (include any IP address in 172.23.135/255.255.255.0)
 
-        > [!NOTE]
-        > For more information on formatting an IP address range, see [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).
+      > [!NOTE]
+      > For more information on formatting an IP address range, see [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).
 
-    2.  On the **Exclude Filters** page, leave the default setting to not exclude any of the discovered devices. If you want to filter an IP address from being discovered, click **Add** and specify an IP address. Click **Next** when complete.
+   2. On the **Exclude Filters** page, leave the default setting to not exclude any of the discovered devices. If you want to filter an IP address from being discovered, click **Add** and specify an IP address. Click **Next** when complete.
 
-    > [!NOTE]
-    > Although the dialog box states that an IP address or host name can be entered for an exclude filter, only an IP address is valid. A host name cannot be specified here.
+      > [!NOTE]
+      > Although the dialog box states that an IP address or host name can be entered for an exclude filter, only an IP address is valid. A host name cannot be specified here.
 
 10. On the **Schedule Discovery** page, either accept the default value of Saturday at 2 AM or specify an alternate schedule, and then click **Next**.
 

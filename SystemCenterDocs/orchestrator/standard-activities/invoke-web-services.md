@@ -24,15 +24,15 @@ The Invoke Web Services activity runs a web service with XML parameters you spec
 ## Configuring the Invoke Web Services Activity  
  Before you configure the Invoke Web Services activity, you need to determine the following:  
   
--   WSDL file of the web service  
+- WSDL file of the web service  
   
--   Web service method name  
+- Web service method name  
   
--   Input SOAP message body format  
+- Input SOAP message body format  
   
--   Output SOAP message body format  
+- Output SOAP message body format  
   
- Use the following information to configure the Invoke Web Services activity.  
+  Use the following information to configure the Invoke Web Services activity.  
   
 ### Details  
   

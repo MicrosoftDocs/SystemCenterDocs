@@ -61,8 +61,8 @@ The following examples demonstrate the concept of resource pool availability bas
 * The *default observer* is enabled by default.
 * There is high availability for the pool, because there are four voting members - three management serves and the *default observer*.
 * By default you can only have one management server unavailable to maintain quorum.  If two management servers are unavailable, you have exactly 50% of voting members and the resource pool no longer functions to manage the monitoring workloads.  
-- The *default observer* doesn't increase the number of management servers that can be down, therefore it doesn't increase pool availability.
-- You can consider removing the *default observer* in this scenario.
+* The *default observer* doesn't increase the number of management servers that can be down, therefore it doesn't increase pool availability.
+* You can consider removing the *default observer* in this scenario.
 
 #### Four management servers
 

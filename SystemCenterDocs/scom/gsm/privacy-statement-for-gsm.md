@@ -137,15 +137,15 @@ Microsoft is committed to protecting your privacy, while delivering online servi
   
  **Information Collected, Processed, or Transmitted:**
  The data collected includes:
--   Test Execution Time (UTC)
--   Subscription ID
--   POP_ID (Point of Presence ID)
--   Test_ID_Cloud (the ID of the Test in the Cloud)
--   Test_ID_on_prem (the ID of the Test on Premise)
--   Test Hash ID  
+- Test Execution Time (UTC)
+- Subscription ID
+- POP_ID (Point of Presence ID)
+- Test_ID_Cloud (the ID of the Test in the Cloud)
+- Test_ID_on_prem (the ID of the Test on Premise)
+- Test Hash ID  
   
- **Use of Information:**
- Microsoft will use this information for to ensure that only the Tests actually executed by the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Service.  
+  **Use of Information:**
+  Microsoft will use this information for to ensure that only the Tests actually executed by the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Service.  
   
- **Choice/Control:**
- The customer has to manually install the System Center Global Service Monitor features by importing a set of Management Packs into their [!INCLUDE[om12short](../includes/om12short-md.md)] software environment and running through the Setup Wizard. To uninstall [!INCLUDE[gsmlong](../includes/gsmlong-md.md)], the customer needs to delete the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Management Packs.
+  **Choice/Control:**
+  The customer has to manually install the System Center Global Service Monitor features by importing a set of Management Packs into their [!INCLUDE[om12short](../includes/om12short-md.md)] software environment and running through the Setup Wizard. To uninstall [!INCLUDE[gsmlong](../includes/gsmlong-md.md)], the customer needs to delete the [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] Management Packs.

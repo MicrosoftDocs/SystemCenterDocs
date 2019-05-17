@@ -27,13 +27,13 @@ The Send Email activity sends an email message using the standard SMTP protocol 
 ## Configuring the Send Email Activity  
  Before you configure the Send Email activity, you will need to determine the following:  
   
--   Your SMTP server information  
+- Your SMTP server information  
   
--   The recipient who will receive the email message.  
+- The recipient who will receive the email message.  
   
--   The email message you want to send.  
+- The email message you want to send.  
   
- Use the following information to configure the Send Email activity.  
+  Use the following information to configure the Send Email activity.  
   
 ### Details  
   

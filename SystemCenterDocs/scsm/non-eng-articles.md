@@ -24,13 +24,13 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
  You need three pieces of information for this procedure:  
 
--   This globally unique identifier \(GUID\): E2403E98\-663B\-4DF6\-B234\-687789DB8560  
+- This globally unique identifier \(GUID\): E2403E98\-663B\-4DF6\-B234\-687789DB8560  
 
--   The GUID of the .rtf file that you will discover in the following procedure  
+- The GUID of the .rtf file that you will discover in the following procedure  
 
--   The location of the file rtffil.dll, typically, C:\\Windows\\System32  
+- The location of the file rtffil.dll, typically, C:\\Windows\\System32  
 
- For this procedure, it is assumed that the file rtffil.dll is located in the C:\\Windows\\System32 folder.  
+  For this procedure, it is assumed that the file rtffil.dll is located in the C:\\Windows\\System32 folder.  
 
 ## Edit the registry  
 

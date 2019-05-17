@@ -24,16 +24,16 @@ The Start/Stop Service activity will start, stop, pause, or restart a Windows se
 ## Configuring the Start/Stop Service Activity  
  Before you configure the Start/Stop Service activity you need to determine the following:  
   
--   The service name  
+- The service name  
   
--   The computer where the service is running  
+- The computer where the service is running  
   
--   Parameters that are required to start the service.  
+- Parameters that are required to start the service.  
   
-    > [!NOTE]
-    >  This depends on the service you are interacting with; it may not be required.  
+  > [!NOTE]
+  >  This depends on the service you are interacting with; it may not be required.  
   
- Use the following information to configure the Start/Stop Service activity.  
+  Use the following information to configure the Start/Stop Service activity.  
   
 ### Details Tab  
   

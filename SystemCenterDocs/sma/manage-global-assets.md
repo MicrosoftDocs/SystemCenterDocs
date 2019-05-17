@@ -116,15 +116,15 @@ Set-SmaCertificate -WebServiceEndpoint $webServer -port $port -Name $certName "P
 ## Use a PowerShell credential in a runbook
 You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCredential** activity. This returns a PSCredential object that you can use in the workflow.
 
--   The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](overview-powershell-workflows.md#inlinescript) activity to run a set of commands using alternate credentials.
+- The following sample commands show how to use a PowerShell credential in a runbook. In this example, the credential is used with an [InlineScript](overview-powershell-workflows.md#inlinescript) activity to run a set of commands using alternate credentials.
 
-    ```powershell
-    $myCredential = Get-AutomationPSCredential -Name 'MyCredential'
-    InlineScript {
-       <Commands>
-    } -PSComputerName $ServerName -PSCredential $myCredential
-    ```
-## Manage SMA connections
+  ```powershell
+  $myCredential = Get-AutomationPSCredential -Name 'MyCredential'
+  InlineScript {
+     <Commands>
+  } -PSComputerName $ServerName -PSCredential $myCredential
+  ```
+  ## Manage SMA connections
 
 An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 

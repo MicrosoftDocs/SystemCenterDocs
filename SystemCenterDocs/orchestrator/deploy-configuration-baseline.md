@@ -57,12 +57,12 @@ and optional properties and published data for this activity.
 
 ## Alerts Tab properties
 
- - Generate Alerts: True or False (Default = False) When set to **True**, an alert definition will be created for the configuration baseline deployment according to the settings below. When set to **False**, alert settings in this group are ignored.
- - When Compliance % Below: When compliance with this configuration baseline is below this percentage, an alert will be generated in Configuration Manager. Valid values: 1 - 99
- - After Date and Time: Alerts will be generated only after this period of time has elapsed from the configuration baseline’s deployment.
- - Also Generate a System Center Operations Manager Alert: True or False (Default = False).
-    >[!NOTE]
-    > Requires an Operations Manager connection with Configuration Manager
+- Generate Alerts: True or False (Default = False) When set to **True**, an alert definition will be created for the configuration baseline deployment according to the settings below. When set to **False**, alert settings in this group are ignored.
+- When Compliance % Below: When compliance with this configuration baseline is below this percentage, an alert will be generated in Configuration Manager. Valid values: 1 - 99
+- After Date and Time: Alerts will be generated only after this period of time has elapsed from the configuration baseline’s deployment.
+- Also Generate a System Center Operations Manager Alert: True or False (Default = False).
+   >[!NOTE]
+   > Requires an Operations Manager connection with Configuration Manager
 
 ## Deploy Configuration Baseline published data
 

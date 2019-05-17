@@ -194,13 +194,13 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 
  Follow these steps:
 
- 1.  Click **Fabric** > **Servers** > **All Hosts**.
- 2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't displayed, right-	click a column heading, select **Agent Status**.
- 3. In the host group, click **Refresh**. If a host needs to be reassociated, the Host Status column displays **Needs Attention**, and the **Agent Status** column displays **Access Denied**. Right-click the host that you want to reassociate, and then click **Reassociate**.
- 4. In **Reassociate Agent** page, provide credentials, and then click **OK**.
- 	The Agent Status displays the status as **Reassociating**. After the host is reassociated successfully, the  status changes to  **Responding**.   
-6. Refresh the host, the host status columns now displays **OK**.
-    After you have reassociated the host, you might need to update the VMM agent on the host.
+1. Click **Fabric** > **Servers** > **All Hosts**.
+2. In the **Hosts** pane, ensure that the **Agent Status** column is displayed. If it isn't displayed, right-  click a column heading, select **Agent Status**.
+3. In the host group, click **Refresh**. If a host needs to be reassociated, the Host Status column displays **Needs Attention**, and the **Agent Status** column displays **Access Denied**. Right-click the host that you want to reassociate, and then click **Reassociate**.
+4. In **Reassociate Agent** page, provide credentials, and then click **OK**.
+   The Agent Status displays the status as **Reassociating**. After the host is reassociated successfully, the  status changes to  **Responding**.   
+   6. Refresh the host, the host status columns now displays **OK**.
+      After you have reassociated the host, you might need to update the VMM agent on the host.
 
 ## Upgrade the VMM SQL Server database
 

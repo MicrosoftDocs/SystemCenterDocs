@@ -24,11 +24,11 @@ The Print File activity prints text files to a printer that you specify. You can
 ## Configuring the Print File Activity  
  Before you configure the Print File activity, you need to determine the following:  
   
--   File name you are printing.  
+- File name you are printing.  
   
--   Printer name  
+- Printer name  
   
- Use the following information to configure the Print File activity.  
+  Use the following information to configure the Print File activity.  
   
 ### Details Tab  
   

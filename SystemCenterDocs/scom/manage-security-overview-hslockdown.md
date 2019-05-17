@@ -31,9 +31,9 @@ The following command\-line options are available:
   
 Accounts must be specified in one of the following fully qualified domain name (FQDN) formats:  
   
--   NetBios : DOMAIN\username  
+- NetBios : DOMAIN\username  
   
--   UPN     : username@fqdn.com  
+- UPN     : username@fqdn.com  
   
 If you used the add or deny options when running the Health Service Lockdown tool, you will need to restart the System Center Management service before the changes take effect.  
   

@@ -143,7 +143,7 @@ Cube Name: Service Manager Work Items Cube
 - Content: Incident, Problem management
 - New date dimensions:
   - Incident ClosedDate
-   - Incident CreatedDate
+    - Incident CreatedDate
   - Incident ResolvedDate
   - Problem ClosedDate
   - Problem CreatedDate
@@ -153,16 +153,16 @@ Cube Name: Service Manager Work Items Cube
 Cube Name: Change and Activity Management Cube
 - Content: Change and Activity management
 - New Date Dimensions:
-   - Activity ActualEndDate
-  - Activity ActualStartDate
-  - Activity CreatedDate
-  - Activity ScheduledEndDate
-  - Activity ScheduledStartDate
-  - ChangeRequest ActualEndDate
-  - ChangeRequest ActualStartDate
-  - ChangeRequest CreatedDate
-  - ChangeRequest ScheduledEndDate
-  - ChangeRequest ScheduledStartDate
+  - Activity ActualEndDate
+    - Activity ActualStartDate
+    - Activity CreatedDate
+    - Activity ScheduledEndDate
+    - Activity ScheduledStartDate
+    - ChangeRequest ActualEndDate
+    - ChangeRequest ActualStartDate
+    - ChangeRequest CreatedDate
+    - ChangeRequest ScheduledEndDate
+    - ChangeRequest ScheduledStartDate
 
 Cube Name: Service Manager Service Catalog library cube
 - Content: Service Catalog

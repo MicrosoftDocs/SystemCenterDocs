@@ -209,19 +209,19 @@ The ability to define customized management pack elements was used to model the 
 
  The CubeExtension element can define the following elements:  
 
--   NamedCalculation  
+- NamedCalculation  
 
--   ManyToManyRelationship  
+- ManyToManyRelationship  
 
--   KPI  
+- KPI  
 
--   Measure  
+- Measure  
 
--   Action  
+- Action  
 
--   CustomMdx  
+- CustomMdx  
 
- Each customization that is defined in a CubeExtension element can also be defined in a SystemCenterCube object. The only customization that is not allowed is the addition of facts or measure groups and substitutions to the cube.  
+  Each customization that is defined in a CubeExtension element can also be defined in a SystemCenterCube object. The only customization that is not allowed is the addition of facts or measure groups and substitutions to the cube.  
 
 ## Next steps
 

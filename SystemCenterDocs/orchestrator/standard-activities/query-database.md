@@ -21,24 +21,24 @@ manager: "cfreeman"
 # Query Database
 The Query Database activity queries a database and returns the resulting rows as published data. This activity supports the following database types:  
   
--   Access  
+- Access  
   
--   ODBC  
+- ODBC  
   
--   Oracle  
+- Oracle  
   
--   SQL Server  
+- SQL Server  
   
- The Query Database activity can be used to query a database for the detailed description of an error code that has appeared on one of the systems in the data center and then that description is sent to an administrator in an email message.  
+  The Query Database activity can be used to query a database for the detailed description of an error code that has appeared on one of the systems in the data center and then that description is sent to an administrator in an email message.  
   
 ## Configuring the Query Database Activity  
  Before you configure the Query Database activity you will need to determine the following:  
   
--   The database that you are connecting to  
+- The database that you are connecting to  
   
--   The SQL query that you are running  
+- The SQL query that you are running  
   
- Use the following information to configure the Query Database activity.  
+  Use the following information to configure the Query Database activity.  
   
 ### Details  
   

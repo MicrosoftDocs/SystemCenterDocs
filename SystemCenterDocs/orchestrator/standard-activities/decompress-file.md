@@ -24,11 +24,11 @@ The Decompress File activity decompresses the files contained in a zip archive f
 ## Configuring the Decompress File Activity  
  Before you configure the Decompress File activity, you need to determine the following:  
   
--   The archive file name that you want to decompress.  
+- The archive file name that you want to decompress.  
   
--   The files names within the archive that you want to extract.  
+- The files names within the archive that you want to extract.  
   
- Use the following information to configure the Decompress File activity.  
+  Use the following information to configure the Decompress File activity.  
   
 ### Details Tab  
   

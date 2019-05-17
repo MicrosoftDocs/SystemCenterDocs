@@ -156,35 +156,35 @@ To create a Protection Group:
 
     The **Create new Protection Group** wizard opens.
 
-  ![Create protection group](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-wiz.png)
+   ![Create protection group](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-wiz.png)
 
 3. Click **Next** to advance the wizard to the **Select Protection Group Type** screen.
 4. On the **Select Protection Group Type** screen, select the type of Protection Group to be created and then click **Next**.
 
-  ![Choose server or client](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-group-screen2.png)
+   ![Choose server or client](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-group-screen2.png)
 
 5. On the **Select Group Members** screen, in the **Available members** pane, DPM lists the members with protection agents. For the purposes of this example, select volume D:\ and E:\ to add them to the **Selected members** pane. Once you have chosen the members for the protection group, click **Next**.
 
-  ![Select group members for protection group](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen3.png)
+   ![Select group members for protection group](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen3.png)
 
 6. On the **Select Data Protection Method** screen, type a name for the **Protection group**, select the protection method(s) and click **Next**.
     If you want short term protection, you must use Disk backup.
 
-  ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen4.png)
+   ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen4.png)
 
 7. On the **Specify Short-Term Goals** screen specify the details for **Retention Range** and **Synchronization Frequency**, and click **Next**. If desired, click **Modify** to change the schedule when recovery points are taken.
 
-  ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
+   ![Select data protection method](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen5.png)
 
 8. The **Review Disk Storage Allocation** screen provides details about the selected data sources, their size, the **Space to be Provisioned**, and **Target Storage Volume**.
 
-  ![Review Disk Storage Allocation](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen6.png)
+   ![Review Disk Storage Allocation](../dpm/media/upgrade-to-dpm-2016/dpm-2016-protection-screen6.png)
 
-  The storage volumes are determined based on the workload volume allocation (set using PowerShell) and the available storage. You can change the storage volumes by selecting other volumes from the drop-down menu. If you change the **Target Storage**, the **Available disk storage** dynamically changes to reflect the **Free Space** and **Underprovisioned Space**.
+   The storage volumes are determined based on the workload volume allocation (set using PowerShell) and the available storage. You can change the storage volumes by selecting other volumes from the drop-down menu. If you change the **Target Storage**, the **Available disk storage** dynamically changes to reflect the **Free Space** and **Underprovisioned Space**.
 
-  The **Underprovisioned Space** column in **Available disk storage**, reflects the amount of additional storage needed if the data sources grow as planned. Use this value to help plan your storage needs to enable smooth backups. If the value is zero, then there are no potential problems with storage in the foreseeable future. If the value is a number other than zero, then you do not have sufficient storage allocated  - based on your protection policy and the data size of your protected members.
+   The **Underprovisioned Space** column in **Available disk storage**, reflects the amount of additional storage needed if the data sources grow as planned. Use this value to help plan your storage needs to enable smooth backups. If the value is zero, then there are no potential problems with storage in the foreseeable future. If the value is a number other than zero, then you do not have sufficient storage allocated  - based on your protection policy and the data size of your protected members.
 
-  ![Underallocated disk storage](../dpm/media/upgrade-to-dpm-2016/dpm-2016-underprovision-storage.png)
+   ![Underallocated disk storage](../dpm/media/upgrade-to-dpm-2016/dpm-2016-underprovision-storage.png)
 
 The remainder of the New Protection Group wizard is unchanged from DPM 2012 R2. Continue through the wizard to complete creation of your new protection group.
 
@@ -193,9 +193,9 @@ After upgrading DPM 2012 R2 to DPM 2016 and the operating system to Windows Serv
 
 1. In the Administrator Console, select the **Protection** feature, and in the **Protection Group Member** list, right-click the member, and select **Stop protection of member...**.
 
-  ![Stop protection](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
+   ![Stop protection](../dpm/media/upgrade-to-dpm-2016/dpm-2016-stop-protection1.png)
 
-  The **Remove from Group** dialog opens.
+   The **Remove from Group** dialog opens.
 
 2. In the **Remove from Group** dialog, review the used disk space and the available free space in the storage pool. The default is to leave the recovery points on the disk and allow them to expire per their associated retention policy. Click **OK**.
 

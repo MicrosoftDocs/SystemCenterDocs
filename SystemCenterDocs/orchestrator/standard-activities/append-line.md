@@ -26,13 +26,13 @@ The Append Line activity appends a line of text into a text file.  Use the Appen
 ## Configuring the Append Line Activity  
  Before you configure the Append Line activity, you need to determine the following:  
   
--   The file name you want to append to.  
+- The file name you want to append to.  
   
--   The type of file encoding that the file you are appending to uses.  
+- The type of file encoding that the file you are appending to uses.  
   
--   Text you append.  
+- Text you append.  
   
- Use the following information to configure the Append Line activity.  
+  Use the following information to configure the Append Line activity.  
   
 ### Details Tab  
   

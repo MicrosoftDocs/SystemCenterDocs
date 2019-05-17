@@ -33,17 +33,17 @@ A recovery plan for potential software and equipment failures in your System Cen
 
  Promoting an additional management server involves the following procedures:  
 
-1.  Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](ms-disaster-recovery.md) in this guide.  
+1. Promote an additional Service Manager management server. For more information, see [How to Promote a Service Manager Management Server](ms-disaster-recovery.md) in this guide.  
 
-2.  When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](deploy-additional-ms.md).  
+2. When a replacement server is available, install an additional Service Manager management server. For more information, see [How to Install an Additional Management Server](deploy-additional-ms.md).  
 
- If promoting an additional Service Manager management server is not an option, you have to install a replacement management server. Installing a replacement Service Manager management server involves the following procedures:  
+   If promoting an additional Service Manager management server is not an option, you have to install a replacement management server. Installing a replacement Service Manager management server involves the following procedures:  
 
-1.  Start with a new computer that has the same computer name as the computer that failed.  
+3. Start with a new computer that has the same computer name as the computer that failed.  
 
-2.  Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](ms-disaster-recovery.md) in this guide.  
+4. Restore the encryption key that you saved from the original Service Manager management server. For more information, see [How to Restore the Service Manager Encryption Key](ms-disaster-recovery.md) in this guide.  
 
-3.  Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
+5. Install a Service Manager management server. For more information, see [Service Manager Deployment Scenarios](deploy-scenarios.md).  
 
 ## Data Warehouse management server  
  Only one recovery scenario is possible for the data warehouse management server: you must install a new data warehouse management server on a computer with the same computer name as the computer that failed. Installing a replacement data warehouse management server involves the following procedures:  

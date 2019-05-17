@@ -24,11 +24,11 @@ The Run Program activity runs any program or command on any computer in your dom
 ## Configuring the Run Program Activity  
  Before you configure the Run Program activity, you need to determine the following:  
   
--   The command line argument or program that will run and which computer it will run on.  
+- The command line argument or program that will run and which computer it will run on.  
   
--   You also need to determine whether a user on the target computer will need to interact with the program when it is run. The user account that will run the program or command must have administrator rights to run programs on the target computer.  
+- You also need to determine whether a user on the target computer will need to interact with the program when it is run. The user account that will run the program or command must have administrator rights to run programs on the target computer.  
   
- Use the following information to configure the Run .NET Script activity.  
+  Use the following information to configure the Run .NET Script activity.  
   
 ### Details  
   

@@ -209,61 +209,61 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 ### You can't see some Service Offerings or published Service Offerings in the portal  
  This is because Service Offerings are displayed only if they that meet one of the following conditions:  
 
--   The Service Offering matches the browser language or language selected through Portal Language selector matches.  
+- The Service Offering matches the browser language or language selected through Portal Language selector matches.  
 
--   The Service Offering has no language selected.  
+- The Service Offering has no language selected.  
 
- ![blank language](./media/learn-self-service-portal/deploy-image2-for-762cd06f-cd61-49ad-a757-8c7d45330125.png)  
+  ![blank language](./media/learn-self-service-portal/deploy-image2-for-762cd06f-cd61-49ad-a757-8c7d45330125.png)  
 
- ![English language](./media/learn-self-service-portal/deploy-image1-for-762cd06f-cd61-49ad-a757-8c7d45330125.png)  
+  ![English language](./media/learn-self-service-portal/deploy-image1-for-762cd06f-cd61-49ad-a757-8c7d45330125.png)  
 
- Here is list of languages with language codes which are supported by Portal:  
+  Here is list of languages with language codes which are supported by Portal:  
 
--   en\-US : English  
+- en\-US : English  
 
--   fr\-FR : français  
+- fr\-FR : français  
 
--   de\-DE : Deutsch  
+- de\-DE : Deutsch  
 
--   cs\-CZ : čeština  
+- cs\-CZ : čeština  
 
--   da\-DK : Dansk  
+- da\-DK : Dansk  
 
--   el\-GR : Ελληνικά  
+- el\-GR : Ελληνικά  
 
--   es\-ES : español  
+- es\-ES : español  
 
--   fi\-FI : suomi  
+- fi\-FI : suomi  
 
--   hu\-HU : magyar  
+- hu\-HU : magyar  
 
--   it\-IT : italiano  
+- it\-IT : italiano  
 
--   ja\-JP : 日本語  
+- ja\-JP : 日本語  
 
--   ko\-KR : 한국어  
+- ko\-KR : 한국어  
 
--   nb\-NO : norsk  
+- nb\-NO : norsk  
 
--   nl\-NL : Nederlands  
+- nl\-NL : Nederlands  
 
--   pl\-PL : polski  
+- pl\-PL : polski  
 
--   pt\-BR : português \(Brasil\)  
+- pt\-BR : português \(Brasil\)  
 
--   pt\-PT : português \(Portugal\)  
+- pt\-PT : português \(Portugal\)  
 
--   ru\-RU : русский  
+- ru\-RU : русский  
 
--   sv\-SE : svenska  
+- sv\-SE : svenska  
 
--   tr\-TR : Türkçe  
+- tr\-TR : Türkçe  
 
--   zh\-CHS : 中文(简体\)  
+- zh\-CHS : 中文(简体\)  
 
--   zh\-TW : 中文(简体\)  
+- zh\-TW : 中文(简体\)  
 
--   zh\-HK : 中文 \(香港特別行政區\)  
+- zh\-HK : 中文 \(香港特別行政區\)  
 
 ### The time display for my items always indicates AM
 

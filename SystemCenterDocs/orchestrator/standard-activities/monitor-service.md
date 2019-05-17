@@ -24,13 +24,13 @@ The Monitor Service activity invokes runbooks when a service has been started or
 ## Configuring the Monitor Service Activity  
  Before you configure the Monitor Service activity, you need to determine the following:  
   
--   Which computer hosts the service that you are monitoring  
+- Which computer hosts the service that you are monitoring  
   
--   Which service you want to monitor  
+- Which service you want to monitor  
   
--   Whether the runbook will run when the service is started or stopped  
+- Whether the runbook will run when the service is started or stopped  
   
- Use the following information to configure the Monitor Service activity.  
+  Use the following information to configure the Monitor Service activity.  
   
 ### Details Tab  
   

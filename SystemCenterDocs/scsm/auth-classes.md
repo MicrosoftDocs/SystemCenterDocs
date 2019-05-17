@@ -70,13 +70,13 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 ### Relationships  
  *Relationships* are defined between classes to indicate an association between a particular instance of one class and the particular instance of another. There are three types of relationships, and they are detailed in the following sections:  
 
--   Hosting relationship  
+- Hosting relationship  
 
--   Containment relationship  
+- Containment relationship  
 
--   Reference relationship  
+- Reference relationship  
 
- Class relationships affect objects in the following ways.  
+  Class relationships affect objects in the following ways.  
 
 |Relationship type|Key property and existence|Available properties|  
 |-----------------------|--------------------------------|--------------------------|  
@@ -123,13 +123,13 @@ Use the following guidelines and best practices when you are customizing classes
 #### Basic naming conventions  
  The basic naming convention is **CompanyName.TechnologyArea.ProductName.FunctionalityArea.Name**, where:  
 
--   **ProductName** is optional; use it if the definition is independent of any specific product.  
+- **ProductName** is optional; use it if the definition is independent of any specific product.  
 
--   **FunctionalityArea** is optional; use it if the definition can apply to different areas.  
+- **FunctionalityArea** is optional; use it if the definition can apply to different areas.  
 
--   **Name** reflects the meaning of the class, not the inheritance hierarchy.  
+- **Name** reflects the meaning of the class, not the inheritance hierarchy.  
 
- Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Knowledge.Article**, **System.WorkItem.Incident**, and **System.StarRating.Average**.  
+  Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Knowledge.Article**, **System.WorkItem.Incident**, and **System.StarRating.Average**.  
 
 #### The System namespace  
  The **System** namespace refers to definitions that are independent of Microsoft and Windows. This usually applies to the base definitions that either Windows applications or Unix applications depend on. These base definitions should be company independent.  
@@ -230,15 +230,15 @@ In the Service Manager Authoring Tool, you can create a class that inherits prop
 
  As the first step of defining class inheritance, choose the base class from which to inherit properties and relationships. In the Authoring Tool, you can choose the base class by using one of the following methods:  
 
--   Use a shortcut to inherit properties and relationships from the base configuration item class.  
+- Use a shortcut to inherit properties and relationships from the base configuration item class.  
 
--   Use a shortcut to inherit properties and relationships from the base work item class.  
+- Use a shortcut to inherit properties and relationships from the base work item class.  
 
--   First select the base class, and then start defining the inheritance.  
+- First select the base class, and then start defining the inheritance.  
 
--   Start defining inheritance without a specific base class selection.  
+- Start defining inheritance without a specific base class selection.  
 
- The following procedures describe all the methods for defining class inheritance in the Authoring Tool.  
+  The following procedures describe all the methods for defining class inheritance in the Authoring Tool.  
 
 ### To start with the configuration item class or the work item class as a base class  
 

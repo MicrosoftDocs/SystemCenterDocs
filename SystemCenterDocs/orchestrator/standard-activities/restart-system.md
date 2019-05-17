@@ -26,11 +26,11 @@ The Restart System activity will restart a computer on your network. The Restart
 ## Configuring the Restart System Activity  
  Before you configure the Restart System activity, you will need to determine the following:  
   
--   The computer you want to restart.  
+- The computer you want to restart.  
   
--   Whether you want to forcefully shut down any running applications.  
+- Whether you want to forcefully shut down any running applications.  
   
- Use the following information to configure the Restart System activity.  
+  Use the following information to configure the Restart System activity.  
   
 ### Details Tab  
   

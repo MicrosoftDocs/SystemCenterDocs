@@ -72,15 +72,15 @@ DPM performs backup with VSS as follows. The steps in this description are numbe
 
 3. The DPM protection agent on a server that is running Hyper-V, uses the existing Hyper-V APIs to determine whether a protected virtual machine also supports VSS.
 
-    -   If a virtual machine complies with the requirements for online backup and has the Hyper-V integration services component installed, then the Hyper-V VSS writer recursively forwards the VSS request through to all VSS-aware processes on the virtual machine. This operation occurs without the DPM protection agent being installed on the virtual machine. The recursive VSS request allows the Hyper-V VSS writer to ensure that disk- write operations are synchronized so that a VSS snapshot is captured without the loss of data.
+   - If a virtual machine complies with the requirements for online backup and has the Hyper-V integration services component installed, then the Hyper-V VSS writer recursively forwards the VSS request through to all VSS-aware processes on the virtual machine. This operation occurs without the DPM protection agent being installed on the virtual machine. The recursive VSS request allows the Hyper-V VSS writer to ensure that disk- write operations are synchronized so that a VSS snapshot is captured without the loss of data.
 
-    The Hyper-V integration services component invokes the Hyper-V VSS writer in Volume Shadow Copy Services (VSS) on virtual machines to ensure that their application data is in a consistent state.
+     The Hyper-V integration services component invokes the Hyper-V VSS writer in Volume Shadow Copy Services (VSS) on virtual machines to ensure that their application data is in a consistent state.
 
-    -   If the virtual machine doesn't comply with online backup requirements, DPM automatically uses the Hyper-V APIs to pause the virtual machine before they capture data files.
+   - If the virtual machine doesn't comply with online backup requirements, DPM automatically uses the Hyper-V APIs to pause the virtual machine before they capture data files.
 
 4. After the initial baseline copy of the virtual machine synchronizes with the DPM server, all changes that are made to the virtual machine resources are captured in a new recovery point. The recovery point represents the consistent state of the virtual machine at a specific time. Recovery point captures can occur at least one time a day. When a new recovery point is created, DPM uses block-level replication in conjunction with the Hyper-V VSS writer to determine which blocks have been altered on the server that is running Hyper-V after the last recovery point was created. These data blocks are then transferred to the DPM server and are applied to the replica of the protected data.
 
-5.  The DPM server uses VSS on the volumes that host recovery data so that multiple shadow copies are available. Each of these shadow copies provides a separate recovery. VSS recovery points are stored on the DPM server. The temporary copy that is made on the server running Hyper-V, is only stored for the duration of the DPM synchronization.
+5. The DPM server uses VSS on the volumes that host recovery data so that multiple shadow copies are available. Each of these shadow copies provides a separate recovery. VSS recovery points are stored on the DPM server. The temporary copy that is made on the server running Hyper-V, is only stored for the duration of the DPM synchronization.
 
 ## Backup prerequisites
 These are the prerequisites for backing up
@@ -96,13 +96,13 @@ Hyper-V virtual machines with DPM.
 
 ## Back up virtual machines
 
-1.  Set up your [DPM server](~/dpm/plan-dpm-deployment.md) and [your storage](~/dpm/plan-long-and-short-term-data-storage.md). When setting up your storage, use these storage capacity guidelines.
-    - Average virtual machine size - 100 GB
-    - Number of virtual machines per DPM server - 800
-    - Total size of 800 VMs - 80 TB
-    - Required space for backup storage - 80 TB
+1. Set up your [DPM server](~/dpm/plan-dpm-deployment.md) and [your storage](~/dpm/plan-long-and-short-term-data-storage.md). When setting up your storage, use these storage capacity guidelines.
+   - Average virtual machine size - 100 GB
+   - Number of virtual machines per DPM server - 800
+   - Total size of 800 VMs - 80 TB
+   - Required space for backup storage - 80 TB
 
-2.  Set up the DPM protection agent on the Hyper-V server or Hyper-V cluster nodes. If you're doing guest-level backup you'll install the agent on the VMs you want to back up at the guest-level.
+2. Set up the DPM protection agent on the Hyper-V server or Hyper-V cluster nodes. If you're doing guest-level backup you'll install the agent on the VMs you want to back up at the guest-level.
 
 3. In  the DPM Administrator console click **Protection** > **Create protection group** to open the **Create New Protection Group** wizard.
 
@@ -110,7 +110,7 @@ Hyper-V virtual machines with DPM.
 
 5. On the **Select Data Protection Method** page, specify a protection group name. Select **I want short-term protection using Disk** and select **I want online protection** if you want to back up data to Azure using the Azure Backup service. If this option isn't available complete the wizard to create the group and then modify the protection group settings to select this option. You can store data in Azure for up to 3360 days.
 
-  If you have a standalone tape or tape library connected to the DPM server you'll be able to select **I want long-term protection using tape**.
+   If you have a standalone tape or tape library connected to the DPM server you'll be able to select **I want long-term protection using tape**.
 
 6. In **Specify Short-Term Goals** > **Retention range**, specify how long you want to retain disk data. In **Synchronization frequency** specify how often incremental backups of the data should run. Alternatively, instead of selecting an interval for incremental backups you can enable **Just before a recovery point**. With this setting enabled DPM will run an express full back just before each scheduled recovery point.
 
@@ -128,9 +128,9 @@ Hyper-V virtual machines with DPM.
 
     - If you configured long-term storage to tape, on the **Select Tape and Library Details** page specify the tape and library that'll be used for back up of this protection group. You can also specify whether to compress or encrypt the backup data.
 
-7.  In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
+7. In the **Review disk allocation** page review the storage pool disk space allocated for the protection group.
 
-    **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
+   **Total Data size** is the size of the data you want to back up, and **Disk space to be provisioned on DPM** is the space that DPM recommends for the protection group. DPM chooses the ideal backup volume, based on the settings. However, you can edit the backup volume choices in the **Disk allocation details**. For the workloads, select the preferred storage in the dropdown menu. Your edits change the values for **Total Storage** and **Free Storage** in the **Available Disk Storage** pane. Underprovisioned space is the amount of storage DPM suggests you add to the volume, to continue with backups smoothly in the future.
 
 8. On the **Choose Replica Creation Method** page, specify how the initial replication of data in the protection group will be performed. If you select to replicate over the network we recommended you choose an off-peak time. For large amounts of data or less than optimal network conditions, consider replicating the data offline using removable media.
 

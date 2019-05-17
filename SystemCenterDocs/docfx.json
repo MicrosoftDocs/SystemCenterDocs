@@ -128,7 +128,7 @@
         "src": "vmm",
         "dest": "vmm",
         "exclude": [
-          "**/obj/**",         
+          "**/obj/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
@@ -136,7 +136,6 @@
           "ThirdPartyNotices"
         ]
       }
-
     ],
     "resource": [
       {
@@ -240,9 +239,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": { 
-        "breadcrumb_path": "/system-center/breadcrumb/toc.json"
-     },
+    "globalMetadata": {
+      "breadcrumb_path": "/system-center/breadcrumb/toc.json"
+    },
     "fileMetadata": {},
     "template": [
       null
@@ -277,6 +276,7 @@
         "dest": "vmm",
         "moniker_range": ">= sc-vmm-2016 <= sc-vmm-2019"
       }
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }

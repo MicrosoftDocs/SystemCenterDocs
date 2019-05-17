@@ -26,13 +26,13 @@ The Insert Line activity inserts lines into a text file on a line number that yo
 ## Configuring the Insert Line Activity  
  Before you configure the Insert Line File activity, you need to determine the following:  
   
--   The name of the file you want to insert text into.  
+- The name of the file you want to insert text into.  
   
--   The file encoding type of the file you want to insert text into.  
+- The file encoding type of the file you want to insert text into.  
   
--   The line number location where you want to insert the text.  
+- The line number location where you want to insert the text.  
   
- Use the following information to configure the Insert Line activity.  
+  Use the following information to configure the Insert Line activity.  
   
 ### Details Tab  
   

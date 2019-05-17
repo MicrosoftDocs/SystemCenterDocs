@@ -162,7 +162,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Service Manager</h3>
-                                                    <p>Manage incidents and control asset lifecycle management with your organization's IT service management best practices.</p>
+                                                    <p>Manage incidents and control asset lifecycle management with your organization&#39;s IT service management best practices.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -670,8 +670,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                     </div>
                                 </div>
                                 </a>
-                            </li>                            
-                            <li>
+                            </li><br/>                            <li>
                                 <a href="https://msdn.microsoft.com/library/jj130093.aspx">
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -896,14 +895,14 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     </div>
                                                 </div>
                                                     <div class="cardText">
-                                                    <h3>What's New articles in System Center 2019</h3>
-                                                    <p><a href="https://docs.microsoft.com/system-center/dpm/what-s-new-in-dpm">What's New in DPM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scom/whats-new-in-om">What's New in SCOM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/vmm/whats-new-in-vmm">What's New in VMM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-in-orch">What's New in Orchestrator</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-in-sm">What's New in SM</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-in-sma">What's New in SMA</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-in-spf">What's New in SPF</a></p>
+                                                    <h3>What&#39;s New articles in System Center 2019</h3>
+                                                    <p><a href="https://docs.microsoft.com/system-center/dpm/what-s-new-in-dpm">What&#39;s New in DPM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scom/whats-new-in-om">What&#39;s New in SCOM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/vmm/whats-new-in-vmm">What&#39;s New in VMM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/orchestrator/whats-new-in-orch">What&#39;s New in Orchestrator</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scsm/whats-new-in-sm">What&#39;s New in SM</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/sma/whats-new-in-sma">What&#39;s New in SMA</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/spf/whats-new-in-spf">What&#39;s New in SPF</a></p>
                                                 </div>
                                             </div>
                                       </div>
@@ -1018,8 +1017,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                         </div>
                                     </div>
                                 </a>
-                            </li>                          
-                            <li>
+                            </li><br/>                            <li>
                                 <a href="https://channel9.msdn.com/Blogs/hybrid-it-management">
                                     <div class="cardSize">
                                         <div class="cardPadding">

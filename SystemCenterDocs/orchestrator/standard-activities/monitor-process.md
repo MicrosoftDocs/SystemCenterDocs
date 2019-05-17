@@ -26,13 +26,13 @@ The Monitor Process activity invokes runbooks when a process has been started or
 ## Configuring the Monitor Process Activity  
  Before you configure the Monitor Process activity, you will need to determine the following:  
   
--   Which computer will run the process that you are monitoring  
+- Which computer will run the process that you are monitoring  
   
--   Which process you want to monitor  
+- Which process you want to monitor  
   
--   Whether the runbook will be ran when the process is started or stopped  
+- Whether the runbook will be ran when the process is started or stopped  
   
- Use the following information to configure the Monitor Process activity.  
+  Use the following information to configure the Monitor Process activity.  
   
 ### Details Tab  
   

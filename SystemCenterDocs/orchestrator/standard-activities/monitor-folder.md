@@ -24,13 +24,13 @@ The Monitor Folder activity invokes a runbook when the folder that you specified
 ## Configuring the Monitor Folder Activity  
  Before you configure the Monitor Folder activity, you need to determine the following:  
   
--   The folder name you are monitoring.  
+- The folder name you are monitoring.  
   
--   What condition invokes the runbooks.  
+- What condition invokes the runbooks.  
   
--   Optionally, you may need to know what file types you want to monitor.  
+- Optionally, you may need to know what file types you want to monitor.  
   
- Use the following information to configure the Monitor Folder activity.  
+  Use the following information to configure the Monitor Folder activity.  
   
 ### Details Tab  
   

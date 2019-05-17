@@ -26,13 +26,13 @@ The Get Lines activity gets multiple lines from a text file according to criteri
 ## Configuring the Get Lines Activity  
  Before you configure the Get Lines activity, you need to determine the following:  
   
--   The name of the file you want to get lines from.  
+- The name of the file you want to get lines from.  
   
--   The encoding type that the file you want to get the lines from uses.  
+- The encoding type that the file you want to get the lines from uses.  
   
--   The criteria you use to filter the lines.  
+- The criteria you use to filter the lines.  
   
- Use the following information to configure the Get Lines activity.  
+  Use the following information to configure the Get Lines activity.  
   
 ### Details Tab  
   

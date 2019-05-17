@@ -24,11 +24,11 @@ The Get Service Status activity will check the status of a service on any comput
 ## Configuring the Get Service Status Activity  
  Before you configure the Get Service Status activity, you need to determine the following:  
   
--   The computer where the service is located  
+- The computer where the service is located  
   
--   The name of the service  
+- The name of the service  
   
- Use the following information to configure the Get Service Status activity.  
+  Use the following information to configure the Get Service Status activity.  
   
 ### Details Tab  
   

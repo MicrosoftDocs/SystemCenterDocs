@@ -76,6 +76,7 @@ Here's what you need to do to set up a SDN network controller
 
 
 ### Templates and resource files
+
 **Name** | **Type** | **Details**
 --- | --- |---
 **Network Controller Production Generation 1 VM.xml** | Template | Three-node network controller for generation 1 VMs
@@ -253,8 +254,8 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 1. In the VMM library, select the service template, and open it in designer mode.
 2. Double-click the computer tier to open the Windows Server Network Controller Properties page.
 3. To specify a product key, click **OS Configuration** > **Product Key**, and specify the key shared by CCEP.
-5.	To enable high availability, click **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
-5.	To enable dynamic IP configuration and leverage DHCP for network controller management, click network adapter on the designer, and change the IPV4 address type to **Dynamic**.
+5.  To enable high availability, click **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
+5.  To enable dynamic IP configuration and leverage DHCP for network controller management, click network adapter on the designer, and change the IPV4 address type to **Dynamic**.
 
 
 > [!NOTE]

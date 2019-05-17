@@ -24,11 +24,11 @@ The End Process activity ends processes that are running on the runbook server o
 ## Configuring the End Process Activity  
  Before you configure the End Process activity, you need to determine the following:  
   
--   Name or ID of the process  
+- Name or ID of the process  
   
--   Computer on which it is running  
+- Computer on which it is running  
   
- Use the following information to configure the End Process activity.  
+  Use the following information to configure the End Process activity.  
   
 ### Details Tab  
   

@@ -24,11 +24,11 @@ The Query WMI activity will send a WMI query to a system that you specify and re
 ## Configuring the Query WMI Activity  
  Before you configure the Query WMI activity, you need to determine the following:  
   
--   The computer you are querying.  
+- The computer you are querying.  
   
--   The WMI query statement you want to run.  
+- The WMI query statement you want to run.  
   
- Use the following information to configure the Query WMI activity.  
+  Use the following information to configure the Query WMI activity.  
   
 ### Details Tab  
   
