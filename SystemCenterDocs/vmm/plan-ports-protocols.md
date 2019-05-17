@@ -5,7 +5,7 @@ description: This article provides information about the ports and protocols use
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 10/12/2018
+ms.date: 05/17/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -36,7 +36,7 @@ VMM server to VMM agent on Windows Server-based hosts/remote library server | 59
 VMM server to VMM agent on Windows Server-based hosts/remote library server | 5986:WinRM | Control channel (SSL)<br/><br/> Inbound rule on hosts | Can't modify
 VMM server to VMM guest agent (VM data channel) | 443:HTTPS | BITS data channel for file transfers<br/><br/>Inbound rule on machines running the agent<br/><br/> The VMM guest agent is a special version of the VMM agent. It's is installed on VMs that are part of a service template, and on Linux VMs (with or without a service template). | Can't modify
 VMM server to VMM guest agent (VM control channel) | 5985:WinRM | Control channel<br/><br/> Inbound rule on machines running the agent | Can't modify
-VMM host to host | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts | Modify in VMM setup
+VMM host to host | 443:HTTPS | BITS data channel for file transfers<br/><br/> Inbound rule on hosts and VMM server | Modify in VMM setup
 VMM server to VWware ESXi servers/Web Services | 22:SFTP<br/><br/> Inbound rule on hosts | Can't modify
 VMM server to load balancer | 80:HTTP; 443:HTTPS | Channel used for load balancer management | Modify in load balancer provider
 VMM server to remote SQL Server database | 1433:TDS | SQL Server listener<br/><br/> Inbound rule on SQL Server | Modify in VMM setup
