@@ -39,8 +39,8 @@ activity.
 - Deployment Template: The display name or ID of an existing deployment template. The template allows you to pre-define many settings for a deployment without having to manually specify them in the activity.
 
     This property is optional if you choose instead to manually define the settings by using all of the optional properties.
->[!NOTE]
->When you use the browse feature to look up a template name, or enter a template name manually or from published data, you must set the **Deployment Template Value Type** property to **Name** or the activity will fail.
+    >[!NOTE]
+    >When you use the browse feature to look up a template name, or enter a template name manually or from published data, you must set the **Deployment Template Value Type** property to **Name** or the activity will fail.
 - Deployment Template Value Type   Specifies whether the value in the **Deployment Template** property is a name or a template ID. Options are:
     -   **ID** (default): the value is a template ID
     -   **Name**: the value is a template name
