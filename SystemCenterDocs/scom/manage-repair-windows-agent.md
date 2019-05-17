@@ -79,7 +79,7 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 7. On the **Completing the Microsoft Monitoring Agent Setup Wizard** page, click **Finish**.
 
 8. Check the Application Event Log to confirm it completed successfully or for errors if the repair failed by searching at events from source **MsiInstaller**.
-9.
+
 ## To repair the agent by using MOMAgent.msi from the command line
 
 1.  Sign in to a managed computer with an account that is a member of the administrators security group for the computer.
@@ -95,5 +95,5 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 ## Next steps
 
 - To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](manage-deploy-config-windows-agent.md).
--
+
 - Review [Uninstall Agent from Windows-based Computers](manage-uninstall-windows-agent.md) to understand what options and steps need to be performed to properly uninstall  the agent from your Windows computers.  
