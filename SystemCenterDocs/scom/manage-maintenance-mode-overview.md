@@ -247,9 +247,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
-     > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
-     > To start the maintenance mode, the maximum wait time is 5 minutes.
+        > [!NOTE]
+        > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+        > To start the maintenance mode, the maximum wait time is 5 minutes.
 
 9. Click **Next** once you have completed configuring the schedule options.
 
@@ -295,9 +295,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
-     > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
-     > To start the maintenance mode, the maximum wait time is 5 minutes.
+        > [!NOTE]
+        > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+        > To start the maintenance mode, the maximum wait time is 5 minutes.
 
 9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
 
