@@ -302,9 +302,9 @@ Follow these steps:
 
         1 - Disable write auto tiering on the given volume
 
- Example:   fsutil behavior set disableWriteAutoTiering C: 1
+    Example:   fsutil behavior set disableWriteAutoTiering C: 1
 
- ![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
+    ![fsutil behavior](./media/add-storage/fsutil-behavior-2019.png)
 
 Note that you can skip this step if more than 10% of SSD is available. This can be disabled later if there is a performance degradation in terms of backup speeds.
 
