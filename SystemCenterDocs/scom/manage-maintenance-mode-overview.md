@@ -197,7 +197,7 @@ Perform the following steps to initiate maintenance mode from the target Windows
 
 > [!NOTE]  
 > To confirm that the Maintenance Mode request is successful you can look in the Operations Manager Event Log for an Event ID 2222 followed by one or more events with Event ID 1215. If Event ID 2222 is present but ID 1215 is missing, this indicates the maintenance mode request was missed. You will need to re-raise the request.  
-
+>
 > In order to re-raise the request you will need to remove the record in the registry for maintenance mode using following command and then re-run the **Start-SCOMAgentMaintenanceMode** cmdlet:
 > `Set-ItemProperty -Path "HKLM:\software\Microsoft\Microsoft Operations Manager\3.0\MaintenanceMode" -Name record -Value "" `  
 
@@ -247,9 +247,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
-     > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
-     > To start the maintenance mode, the maximum wait time is 5 minutes.
+        > [!NOTE]
+        > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+        > To start the maintenance mode, the maximum wait time is 5 minutes.
 
 9. Click **Next** once you have completed configuring the schedule options.
 
@@ -295,9 +295,9 @@ The following procedure describes how to create a maintenance schedule for selec
 
     3.  Under **Schedule is effective beginning**, specify when this schedule is allowed to take effect and if you require it to no longer be valid after a period of time, click the option **The schedule expires on** and select a future expiration date.  
 
-     > [!NOTE]
-     > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
-     > To start the maintenance mode, the maximum wait time is 5 minutes.
+        > [!NOTE]
+        > The minimum value for Number of minutes is 5. The maximum value is 1,051,200 (2 years).
+        > To start the maintenance mode, the maximum wait time is 5 minutes.
 
 9. Expand **Completion** and in this section, specify the following to complete the configuration of your custom maintenance schedule:
 
