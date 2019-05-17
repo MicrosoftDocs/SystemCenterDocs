@@ -93,7 +93,6 @@ When you install VMM with this user account SPN will be registered.
 ::: moniker range="sc-vmm-1711"
 
 > [!NOTE]
-
 > Target database collate and the VMM server collate must be the same if the database is part of SQL Always On (AO) group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/library/ee176844.aspx) PowerShell command. Learn more about [VMM server collate mappings](vmm-collate-mappings.md).
 
 ::: moniker-end
