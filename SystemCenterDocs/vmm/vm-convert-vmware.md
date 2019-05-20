@@ -20,7 +20,7 @@ This article describes how to convert VMware VMs in the System Center - Virtual 
 There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
-    - See [system requirements](system-requirements.md) for supported version of vSphere (ESXi).
+    - See [system requirements](system-requirements.md) for supported versions of vSphere (ESXi).
     - You can't convert VMware workstations
     - You can't convert VMs with virtual hard disks connected to an IDE bus
     - Online conversions aren't supported. You need to power off the VMware VMs.
