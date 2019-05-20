@@ -30,7 +30,8 @@ There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 ::: moniker range="sc-vmm-2016"
 
-- Azure Site Recovery currently doesn't have to ability for a direct VMware to Hyper-V conversion. [Read more](https://feedback.azure.com/forums/256299-site-recovery/suggestions/10050060-asr-to-support-vmware-to-hyper-v-protection-migrat) about up-voting this solution.
+>[NOTE]
+>Azure Site Recovery currently doesn't have the ability for a direct VMware to Hyper-V conversion. [Read more](https://feedback.azure.com/forums/256299-site-recovery/suggestions/10050060-asr-to-support-vmware-to-hyper-v-protection-migrat) about up-voting this solution.
 
 ::: moniker-end
 
