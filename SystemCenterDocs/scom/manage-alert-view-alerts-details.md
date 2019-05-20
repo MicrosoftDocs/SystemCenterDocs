@@ -24,7 +24,8 @@ To view active alerts, open the Operations console and click **Monitoring**. The
 
 To view the actual alerts, click **Active Alerts** in the navigation pane.  
 
-**Tip**: If you are using the web console, you can filter the view of alerts by severity:  
+> [!TIP]
+> If you are using the web console, you can filter the view of alerts by severity:  
 
 ![Filter alerts by severity](./media/manage-alert-view-alerts-details/om2016-web-console-alertview-filter.png)  
 

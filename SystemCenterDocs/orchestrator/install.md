@@ -62,7 +62,6 @@ This topic provides detailed installation instructions for the various Orchestra
    1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
        > [!WARNING]
-
        > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
 
    3.  After you resolve the missing prerequisites, click **Verify prerequisites again**.
@@ -248,17 +247,17 @@ This topic provides detailed installation instructions for the various Orchestra
 
    3.  Click **Next** to continue.
 
-7.  On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
+4.  On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
-8. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+5. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
-9. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+6. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
-10.  Review the **Installation summary** page, and then click **Install**.
+7.  Review the **Installation summary** page, and then click **Install**.
 
-   The **Installing features** page appears and displays the installation progress.
+    The **Installing features** page appears and displays the installation progress.
 
-11.  On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
+8.  On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
 ## To connect a Runbook Designer to a management server
 
