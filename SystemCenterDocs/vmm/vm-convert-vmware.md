@@ -5,7 +5,7 @@ description: This article describes how to convert VMware VMs in VMM fabric to H
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2016
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -20,13 +20,13 @@ This article describes how to convert VMware VMs in the System Center - Virtual 
 There are currently a couple of methods for converting VMWare VMs to Hyper-V:
 
 - **Convert Virtual Machine Wizard**: In the VMM console you can use this wizard. This method has a number of limitations:
-- Support for vSphere (ESXi) 4.1, 5.0, 5.1, 5.5, 6.0
-- You can't convert VMware workstations
-- You can't convert VMs with virtual hard disks connected to an IDE bus
-- Online conversions aren't supported. You need to power off the VMware VMs.
-- Anti-virus apps must be supported.
-- VMware tools must be uninstalled from the guest operating system of the VM.
-- [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/)
+    - See [system requirements](system-requirements.md) for supported version of vSphere (ESXi).
+    - You can't convert VMware workstations
+    - You can't convert VMs with virtual hard disks connected to an IDE bus
+    - Online conversions aren't supported. You need to power off the VMware VMs.
+    - Anti-virus apps must be supported.
+    - VMware tools must be uninstalled from the guest operating system of the VM.
+- [Microsoft Virtual Machine Converter](https://technet.microsoft.com/library/dn873998.aspx): This standalone tool converts VMware VMs to Hyper-V hosts or Azure VMs. It also converts physical machines and disks to Hyper-V hosts. IMPORTANT: This tool is in the process of retirement. It won't be available after June 3, 2017. [Learn more](https://blogs.technet.microsoft.com/scvmm/2016/06/04/important-update-regarding-microsoft-virtual-machine-converter-mvmc/).
 
 ::: moniker range="sc-vmm-2016"
 
