@@ -5,10 +5,10 @@ description: This article provides an overview of the Linux log file monitoring 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 05/21/2019
 ms.custom: na
 ms.prod: system-center
-monikerRange: '>sc-om-1801'
+monikerRange: '>=sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
 ---
@@ -96,7 +96,7 @@ or
     @include omsagent.d/logmonitoring.conf
 
 
-You can get details on Fluentd configuration files at [Fluentd Configuration file syntax](https://docs.fluentd.org/v0.12/articles/config-file).  The following sections describe settings in different directives of the configuration file unique to log file monitoring.  Each includes sample settings that you can paste into a configuration file and modify for your requirements.
+You can get details on Fluentd configuration files at [Fluentd Configuration file syntax](https://docs.fluentd.org).  The following sections describe settings in different directives of the configuration file unique to log file monitoring.  Each includes sample settings that you can paste into a configuration file and modify for your requirements.
 
 A complete [sample configuration file for log monitoring](manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.  
 
@@ -163,6 +163,19 @@ This example processes events with tags matching **scom.log.**\*\* and  **scom.a
         # The retry wait time doubles each time until max_retry_wait.
         max_retry_wait 9m
 
+    </match>
+
+
+
+>[!NOTE]
+    > To disable Server Auth on the Linux machines that are using Fluentd communication, add a parameter **enable_server_auth false** to the SCOM out plugin for Fluentd, such as the following:
+
+
+    <match scom.log.** scom.event>
+    type out_scom
+
+    max_retry_wait 9m
+    enable_server_auth false
     </match>
 
 
