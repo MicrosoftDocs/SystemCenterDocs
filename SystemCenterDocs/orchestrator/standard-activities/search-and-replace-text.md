@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,24 +20,24 @@ manager: "cfreeman"
 ---
 # Search and Replace Text
 The Search and Replace Text activity searches for and replaces text that you specify in a text file.  
-  
+
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
-  
+
 ## Configuring the Search and Replace Text Activity  
  Before you configure the Search and Replace Text activity, you need to determine the following:  
-  
+
 - The file name you want to search in.  
-  
+
 - The encoding that the file you want to search in uses.  
-  
+
 - The text you want to search for.  
-  
+
 - The replacement text  
-  
-  Use the following information to configure the Search and Replace Text activity.  
-  
+
+Use the following information to configure the Search and Replace Text activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File**|Type the path and name of the file that you want to read the text from, or click the ellipsis button **(...)** and browse for it.|  
@@ -46,10 +46,10 @@ The Search and Replace Text activity searches for and replaces text that you spe
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|  
 |**Use regular expressions**|Select this option to use regular expressions in your search. |  
 |**Replacement text**|Type the text that you want to replace the search text with.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Case sensitive|Indicates whether the Case sensitive check box was checked or not.|  
