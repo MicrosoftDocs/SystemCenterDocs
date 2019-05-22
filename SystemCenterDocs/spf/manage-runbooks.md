@@ -65,7 +65,7 @@ Then, invoke a runbook as follows:
     ```  
     PS C:\> Set-SCSPFExtensibleEventHandler -EventName "VirtualMachineCreated" -OrchestratorUri "" -RunbookPath ""  
     ```  
-   ## Runbook parameters
+## Runbook parameters
 
 This list of parameters is automatically provided to the runbook. A runbook doesn't need to process all the parameters it receives. It ignores parameters that have no purpose in the runbook.  
 

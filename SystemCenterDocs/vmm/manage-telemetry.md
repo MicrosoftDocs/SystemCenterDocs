@@ -35,9 +35,9 @@ Page with **Do you want to send Diagnostics and Usage Data to Microsoft** messag
   > [!NOTE]
   > We recommend you to go through the privacy statement provided on this page before making a selection.
 
-4. To turn on telemetry, select **Yes I am willing to send data to Microsoft**.
+3. To turn on telemetry, select **Yes I am willing to send data to Microsoft**.
 
-5. To turn off telemetry, select **No I prefer not to send data to Microsoft**.
+4. To turn off telemetry, select **No I prefer not to send data to Microsoft**.
 
 ## Telemetry data collected
 

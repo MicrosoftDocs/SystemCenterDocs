@@ -217,7 +217,7 @@ The new Self Service Portal is an ASP.NET MVC Razor\-based HTML5 Web app. During
 
   ![English language](./media/learn-self-service-portal/deploy-image1-for-762cd06f-cd61-49ad-a757-8c7d45330125.png)  
 
-  Here is list of languages with language codes which are supported by Portal:  
+Here is list of languages with language codes which are supported by Portal:  
 
 - en\-US : English  
 

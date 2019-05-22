@@ -59,7 +59,7 @@ A bundled management pack \(.mpb\) file in System Center - Service Manager inclu
    $mpb = $mpbReader.Read("$PWD\Administration.mpb", $emg)  
    ```  
 
-   From the $mpb object, you can now access the $mpb.ManagementPacks; these are the management packs in the .mpb bundle. And, you can access the $mpb.GetStreams\(ManagementPack\),which associates the resources with a management pack in that bundle. These resources will be in the form of binary streams that you can write to files.  
+From the $mpb object, you can now access the $mpb.ManagementPacks; these are the management packs in the .mpb bundle. And, you can access the $mpb.GetStreams\(ManagementPack\),which associates the resources with a management pack in that bundle. These resources will be in the form of binary streams that you can write to files.  
 
 ## Next steps
 

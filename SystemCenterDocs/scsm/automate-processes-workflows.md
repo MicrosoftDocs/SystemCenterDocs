@@ -34,7 +34,7 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 
 - **Activity assembly files** \(*activityname*.dll\). These files contain definitions of the available workflow activities. The Authoring Tool cannot modify the activity assembly files.  
 
-  To implement a management pack with workflows in your Service Manager console environment, make sure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
+To implement a management pack with workflows in your Service Manager console environment, make sure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
 
   ![Management Pack and Workflow Files](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
 

@@ -56,7 +56,7 @@ Then set up metering as follows:
     PS C:\>$setting = New-SCSPFSetting -Name mysetting -SettingType DatabaseConnectionString -Value "Server=myomdwserver\myomdwinstance;Database=OperationsManagerDW;Trusted_Connection=True;Connect Timeout=300" -Server $omdwserver  
 
     ```  
-   Use the Get\-SCSPFSetting cmdlet to make changes to a particular setting. For example, the following code associates the setting with a different server, that is stored in the `$newSvr` variable.  
+Use the Get\-SCSPFSetting cmdlet to make changes to a particular setting. For example, the following code associates the setting with a different server, that is stored in the `$newSvr` variable.  
 
 ```powershell  
 PS C:\>$myset = Get-SCSPFSetting -Name "mySetting"  

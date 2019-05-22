@@ -35,7 +35,7 @@ If you want to customize objects that are defined in a management pack in Servic
 
 - All the management packs in the Library folder in the Service Manager installation folder, for example, in the \\Program Files \(x86\)\\Microsoft System Center\\Service Manager 2016 Authoring\\Library folder  
 
-  This is important because the definitions from all open management packs co\-exist in the Authoring Tool; therefore, they cannot contradict each other.  
+This is important because the definitions from all open management packs co\-exist in the Authoring Tool; therefore, they cannot contradict each other.  
 
 > [!NOTE]  
 >  You cannot create new management pack files in the \<Authoring Tool Installation\>\\Library folder.  
@@ -54,7 +54,7 @@ If you want to customize objects that are defined in a management pack in Servic
 
 5. Wait for the management pack to open, and then verify that it is displayed in the **Management Pack Explorer** pane.  
 
-   You can now select the management pack file that you opened, and you can expand **Classes**, **Forms**, **Workflows**, or **References** to view the objects of the management pack.
+You can now select the management pack file that you opened, and you can expand **Classes**, **Forms**, **Workflows**, or **References** to view the objects of the management pack.
 
 ## Create a new management pack file in the Authoring Tool
 

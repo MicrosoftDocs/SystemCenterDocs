@@ -76,7 +76,7 @@ Objects in Service Manager are *instances* of a particular base class. All insta
 
 - Reference relationship  
 
-  Class relationships affect objects in the following ways.  
+Class relationships affect objects in the following ways.  
 
 |Relationship type|Key property and existence|Available properties|  
 |-----------------------|--------------------------------|--------------------------|  
@@ -129,7 +129,7 @@ Use the following guidelines and best practices when you are customizing classes
 
 - **Name** reflects the meaning of the class, not the inheritance hierarchy.  
 
-  Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Knowledge.Article**, **System.WorkItem.Incident**, and **System.StarRating.Average**.  
+Examples: **Microsoft.AD.Printer**, **Microsoft.Windows.Computer**, **System.Knowledge.Article**, **System.WorkItem.Incident**, and **System.StarRating.Average**.  
 
 #### The System namespace  
  The **System** namespace refers to definitions that are independent of Microsoft and Windows. This usually applies to the base definitions that either Windows applications or Unix applications depend on. These base definitions should be company independent.  

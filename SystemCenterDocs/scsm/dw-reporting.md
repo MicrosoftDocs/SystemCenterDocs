@@ -31,7 +31,7 @@ The data warehouse in Service Manager provides three primary functions:
 
 3. Provide data for reports  
 
-   The data warehouse that ships with Service Manager is actually its own management group. It has essentially all the System Center common platform pieces that are present in other System Center components, such as System Center - Operations Manager. These components are built on the common platform, which in turn consists of the following:  
+The data warehouse that ships with Service Manager is actually its own management group. It has essentially all the System Center common platform pieces that are present in other System Center components, such as System Center - Operations Manager. These components are built on the common platform, which in turn consists of the following:  
 
 - A model\-based database for storing configuration information about the data warehouse and for staging the data after it has been extracted from the Service Manager database. In the data warehouse management group, this instance of the mode\-based database is named DWStagingAndConfig.  
 
