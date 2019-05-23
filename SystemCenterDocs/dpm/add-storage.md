@@ -118,7 +118,7 @@ For Example, to exclude F:\ and C:\MountPoint1, here are the steps:
     ```
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
     ```
-   After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
+After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Backup Storage Migration
 
@@ -369,7 +369,7 @@ For Example, to exclude F:\ and C:\MountPoint1, use these steps:
     ```
     Set-DPMGlobalProperty -DPMStorageVolumeExclusion ""   
     ```
-   After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
+After removing volume exclusion, rescan the storage. All volumes and mount points, except System Volumes, are available for DPM storage.
 
 ## Custom Size Allocation
 
