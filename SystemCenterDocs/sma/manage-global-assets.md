@@ -124,7 +124,8 @@ You retrieve a PowerShell Credential in a runbook with the **Get-AutomationPSCre
      <Commands>
   } -PSComputerName $ServerName -PSCredential $myCredential
   ```
-  ## Manage SMA connections
+
+## Manage SMA connections
 
 An Automation Connection contains the information required to connect to a service or application from a runbook.  This information is defined in the module for the application and typically includes such information as the username and password and the computer to connect to.  Other information may also be required such as a certificate or a subscription Id.  The properties for a connection are stored securely in the Automation database and can be accessed in the runbook with the **Get-AutomationConnection** activity.
 
@@ -325,4 +326,3 @@ Set-SMAVariable "WebServiceEndpoint $web "Port $port "Name 'MyVariable' "Value '
 
 Read about [building an integration module](manage-integration-modules.md).
 Read about [authoring automation runbooks](authoring-automation-runbooks.md).
-

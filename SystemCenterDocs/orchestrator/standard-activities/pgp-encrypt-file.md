@@ -49,7 +49,7 @@ Use the following steps:
 
 - The output folder where the encrypted files will be stored.  
 
-  Use the following information to configure the PGP Encrypt File activity.  
+Use the following information to configure the PGP Encrypt File activity.  
 
 ### Details  
 

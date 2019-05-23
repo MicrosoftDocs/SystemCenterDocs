@@ -13,7 +13,7 @@ ms.topic: article
 
 # Install Service Manager on a single computer (minimum configuration)
 
-If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server. 
+If you want to evaluate System Center - Service Manager and you have a minimal amount of hardware available, install Service Manager on one computer. A sample single\-computer configuration is shown in figure&nbsp;1. This configuration will not support a production environment, and no scalability or performance estimates are provided. Because you cannot install both the Service Manager management server and the data warehouse management server on the same computer, use Hyper\-V to create a virtual computer to host the data warehouse management server.
 
  To install Service Manager on a single computer, start with a physical computer that is running Windows Server and Hyper\-V, and make sure that the CPU on the physical computer is compatible with Hyper\-V. Of the 8&nbsp;gigabytes \(GB\) of RAM on the host computer, 3&nbsp;GB is used for the virtual computer that hosts the data warehouse management server. Make sure that at least 200&nbsp;GB of free space is available on the hard disk drive.  
 
@@ -35,7 +35,7 @@ To install System Center - Service Manager on a single computer, you install the
 
 - Workflow account  
 
-  For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server is installed on the computer.  
+For more information about the permissions that these accounts require, see "Accounts Required During Setup" in the [Planning Guide for System Center - Service Manager](plan-sm.md). Before you start, make sure that Microsoft SQL&nbsp;Server is installed on the computer.  
 
 ### To install the Service Manager management server, database, and console  
 
@@ -184,7 +184,7 @@ You can use the following procedures to validate the single\-computer installati
 
 ### To validate the data warehouse installation  
 
-1. On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click <strong>Microsoft SQL&nbsp;Server **, and then click **SQL&nbsp;Server Management Studio</strong>.
+1. On the physical computer that hosts the data warehouse databases, click **Start**, click **All Programs**, click **Microsoft SQL Server**, and then click **SQL Server Management Studio**.
 
 2. In the **Connect to Server** dialog box, complete these steps:  
 

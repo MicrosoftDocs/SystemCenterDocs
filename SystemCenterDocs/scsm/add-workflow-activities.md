@@ -106,9 +106,9 @@ Use control flow activities to provide structure-branches, loops, or timer delay
 
 - [Parallel Activity](workflow-activity-ref.md) - Forks the sequence of activities into two simultaneous sequences of activities.  
 
-  To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity's **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
+To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity's **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
 
-  Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
+Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
 
 ### To add a for each loop to a workflow  
 

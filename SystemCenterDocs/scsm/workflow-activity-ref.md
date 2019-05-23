@@ -142,7 +142,7 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
   2. Set the value of the **Property to Bind** property to the value of the property of the current activity that uses the **Current Item** value.  
 
-     Two types of activities do not get the **Current Item** and **Property to Bind** properties and therefore cannot use the objects in the input collection:  
+Two types of activities do not get the **Current Item** and **Property to Bind** properties and therefore cannot use the objects in the input collection:  
 
   -   Script activities, such as the **Windows PowerShell Script** activity.  
 

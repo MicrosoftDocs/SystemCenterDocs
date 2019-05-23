@@ -30,7 +30,7 @@ If you have existing knowledge articles or are planning to create knowledge arti
 
 - The location of the file rtffil.dll, typically, C:\\Windows\\System32  
 
-  For this procedure, it is assumed that the file rtffil.dll is located in the C:\\Windows\\System32 folder.  
+For this procedure, it is assumed that the file rtffil.dll is located in the C:\\Windows\\System32 folder.  
 
 ## Edit the registry  
 

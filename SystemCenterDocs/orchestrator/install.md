@@ -62,32 +62,32 @@ This topic provides detailed installation instructions for the various Orchestra
 1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
    > [!WARNING]
-   > 
+   >
    > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
 
 2. After you resolve the missing prerequisites, click **Verify prerequisites again**.
 
 3. Click **Next** to continue.
 
-7. On the **Configure the service account** page, enter the user name and password for the Orchestrator service account. Click **Test** to verify the account credentials. If the credentials are accepted, then click **Next**.
+4. On the **Configure the service account** page, enter the user name and password for the Orchestrator service account. Click **Test** to verify the account credentials. If the credentials are accepted, then click **Next**.
 
-8. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
+5. On the **Configure the database server** page, enter the name of the server and the name of the instance of Microsoft SQL Server that you want to use for Orchestrator. You can also specify whether to use Windows Authentication or SQL Server Authentication, and whether to create a new database or use an existing database. Click **Test Database Connection** to verify the account credentials. If the credentials are accepted, click **Next**.
 
-9. On the **Configure the database** page, select a database or create a new database, and then click **Next**.
+6. On the **Configure the database** page, select a database or create a new database, and then click **Next**.
 
-10. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and then click **Next**.
+7. On the **Configure Orchestrator users group** page, accept the default configuration or enter the name of the Active Directory user group to manage Orchestrator, and then click **Next**.
 
-11. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
+8. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
-12. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+9. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
-13. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+10. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
-14. Review the **Installation summary** page, and then click **Install**.
+11. Review the **Installation summary** page, and then click **Install**.
 
-   The **Installing features** page appears and displays the installation progress.
+    The **Installing features** page appears and displays the installation progress.
 
-15. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then click **Close** to complete the installation.
+12. On the **Setup completed successfully** page, optionally indicate whether you want to start Runbook Designer, and then click **Close** to complete the installation.
 
 ## To install an Orchestrator runbook server
 
@@ -248,17 +248,17 @@ This topic provides detailed installation instructions for the various Orchestra
 
    3.  Click **Next** to continue.
 
-7. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
+4. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
 
-8. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
+5. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
-9. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
+6. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
-10. Review the **Installation summary** page, and then click **Install**.
+7. Review the **Installation summary** page, and then click **Install**.
 
    The **Installing features** page appears and displays the installation progress.
 
-11. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
+8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
 
 ## To connect a Runbook Designer to a management server
 

@@ -166,7 +166,7 @@ To do this, the Structured Query Language \(SQL\) table etl.TablePartition is re
 4. Add any new partitions that have been created and that exist only in the etl.TablePartition table  
 5. Update any partition that might have changed by matching each partition to the RangeStartDate and RangeEndDate in the etl.TablePartition table  
 
-   Remember the following about cube processing:  
+Remember the following about cube processing:  
 
 - Only measure groups that are targeted at facts contain multiple partitions in SQL&nbsp;Server Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition does not have any boundary conditions.  
 - The partition boundaries are defined by a query binding that is based on datekeys that match up to the datekeys for the corresponding fact partition in the etl.TablePartition table.  

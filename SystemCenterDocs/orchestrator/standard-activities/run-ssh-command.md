@@ -42,7 +42,7 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 
 - Whether you require a key file to log into the server before you are able to run commands; this depends on your SSH server.  
 
-  Use the following information to configure the Run SSH Command activity.  
+Use the following information to configure the Run SSH Command activity.  
 
 ### Details  
 

@@ -27,9 +27,9 @@ Service Manager includes predefined Microsoft Online Analytical Processing \(OLA
 2. Select a second category and add it as a column.  
 3. Select a category or subcategory to add values.  
 
-   After you have created your report, you can add any level of additional complexity by sorting, filtering, formatting, and adding calculations and charts. You can also go in and out of categories as you continue your analysis.  
+After you have created your report, you can add any level of additional complexity by sorting, filtering, formatting, and adding calculations and charts. You can also go in and out of categories as you continue your analysis.  
 
-   To view a demonstration of creating a report and manipulating data in Excel using data from an OLAP data cube in a PivotTable, see [Drill into PivotTable data](https://support.office.com/en-US/article/Drill-into-PivotTable-data-C1B11240-FC8F-4FDD-A697-629BF6F7EE0B).  
+To view a demonstration of creating a report and manipulating data in Excel using data from an OLAP data cube in a PivotTable, see [Drill into PivotTable data](https://support.office.com/en-US/article/Drill-into-PivotTable-data-C1B11240-FC8F-4FDD-A697-629BF6F7EE0B).  
 
 ## View and analyze a Service Manager OLAP data cube with Excel
 

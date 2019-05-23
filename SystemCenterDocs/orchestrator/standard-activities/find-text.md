@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,22 +20,22 @@ manager: "cfreeman"
 ---
 # Find Text
 The Find Text activity finds lines in a text file. Use the Find Text activity to find according to a search string that you specify.  
-  
+
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
-  
+
 ## Configuring the Find Text Activity  
  Before you configure the Find Text activity, you need to determine the following:  
-  
+
 - The name of the file that you want to search in.  
-  
+
 - The encoding type of the file you want to search in uses.  
-  
+
 - The text that you want to search for.  
-  
-  Use the following information to configure the Find Text activity.  
-  
+
+Use the following information to configure the Find Text activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File**|Type the path and name of the file that you want to find the text in, or click the ellipsis button **(...)** and browse for it.|  
@@ -44,10 +44,10 @@ The Find Text activity finds lines in a text file. Use the Find Text activity to
 |**Case sensitive**|Select this option to search only for lines where the case of the words matches the text from the **Search text** field exactly.|  
 |**Use regular expressions**|Select this option to use regular expressions in your search.|  
 |**Result**|Select one of the following options for your results:<br /><br /> **Only the first line that matches the text will be returned**<br /><br /> **All lines that match the text will be returned**|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Case sensitive|Indicates whether the Case sensitive check box was selected.|  

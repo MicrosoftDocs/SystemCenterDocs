@@ -233,7 +233,7 @@ Management packs are used to direct and extend the functionality of Service Mana
 
 - Forms  
 
-  This topic also describes the following sections of a management pack that contain declarations and definitions for user interface \(UI\) and localization elements:  
+This topic also describes the following sections of a management pack that contain declarations and definitions for user interface \(UI\) and localization elements:  
 
 - Categories  
 
@@ -367,15 +367,15 @@ Management packs are used to direct and extend the functionality of Service Mana
 
 - The **Key** attribute. Setting this attribute to **true** indicates that this property is to be used to uniquely identify this class.  
 
-  **Creating Enumeration Types**  
+**Creating Enumeration Types**  
 
-  Enumerations of the **enum** data type are special data types. Enumerations are used to constrain the data that is allowed for a property to a specific set of values. Enumerations can be hierarchical; one enumeration can be based on another enumeration.  
+Enumerations of the **enum** data type are special data types. Enumerations are used to constrain the data that is allowed for a property to a specific set of values. Enumerations can be hierarchical; one enumeration can be based on another enumeration.  
 
-  Enumerations are defined in the **EnumertionTypes** section of a solution pack. An enumeration definition contains the root enumeration, followed by the actual enumeration values.  
+Enumerations are defined in the **EnumertionTypes** section of a solution pack. An enumeration definition contains the root enumeration, followed by the actual enumeration values.  
 
-  Each **EnumerationValue** accepts a few attributes:  
+Each **EnumerationValue** accepts a few attributes:  
 
-  In this example, an enumeration is defined for keeping track of the condition of the projectors. The following defines this enumeration:  
+In this example, an enumeration is defined for keeping track of the condition of the projectors. The following defines this enumeration:  
 
 - **ID** is the identifier for the enumeration or enumeration value.  
 
@@ -567,9 +567,9 @@ ItemsSource="{Binding Source={StaticResource getStatusValues}, Mode=OneWay }"
 
 - The **Accessibility** attribute defines whether this form can be customized.  
 
-  **Defining a View**  
+**Defining a View**  
 
-  The **Views** section of a management pack contains definitions of user interface \(UI\) views. These views can be used to filter and display objects in a management pack.  
+The **Views** section of a management pack contains definitions of user interface \(UI\) views. These views can be used to filter and display objects in a management pack.  
 
 ```  
 <View Target="System.ConfigItem.Projector"   

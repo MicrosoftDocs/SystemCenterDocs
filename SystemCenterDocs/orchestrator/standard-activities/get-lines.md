@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,31 +20,31 @@ manager: "cfreeman"
 ---
 # Get Lines
 The Get Lines activity gets multiple lines from a text file according to criteria that you specify. You can use the Get Lines activity to get specific lines from any location in a text file.  
-  
+
  This activity replaces functionality in the Manage Text File legacy activity from Opalis 6.3.  
-  
+
 ## Configuring the Get Lines Activity  
  Before you configure the Get Lines activity, you need to determine the following:  
-  
+
 - The name of the file you want to get lines from.  
-  
+
 - The encoding type that the file you want to get the lines from uses.  
-  
+
 - The criteria you use to filter the lines.  
-  
-  Use the following information to configure the Get Lines activity.  
-  
+
+Use the following information to configure the Get Lines activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File**|Type the path and name of the file that you want to get the text from, or click the ellipsis button **(...)** and browse for it.|  
 |**File encoding**|Click the ellipsis button **(...)** and select the format that the file is encoded in from the **File encoding** drop-down list. Verify that you select the correct encoding format. If the file uses a different encoding format, the activity fails.|  
 |**Lines**|Click **Add** to open the **Add Line** dialog box and create filters for the lines that you want to get from the file:<br /><br /> **Name**: Search for lines by their name.<br /><br /> **Range**: Search for lines by their range.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |File path|The filename and path of the file that the lines were taken from.|  

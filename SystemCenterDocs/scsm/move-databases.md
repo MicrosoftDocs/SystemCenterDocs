@@ -33,7 +33,7 @@ After you have deployed Service Manager, you might need to move the Service Mana
 
 - You need to restore functionality in a failure scenario.  
 
-  If you want the move the data warehouse database, and if you have installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data has not been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is much simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
+If you want the move the data warehouse database, and if you have installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data has not been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is much simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
 
 
 ## Move the Service Manager database
