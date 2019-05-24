@@ -14,7 +14,7 @@ ms.assetid:
 
 ## Update to DPM 1807
 
-You can update System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. DPM 1807 is the second release in the System Center Semi-Annual Channel (SAC). If you want to update to DPM 1807 from DPM 2016, you must first install DPM 1801 using the steps in the article, [Upgrade your DPM installation](../dpm/upgrade-dpm.md#setup-prerequisites).
+You can update System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. DPM 1807 is the second release in the System Center Semi-Annual Channel (SAC). If you want to update to DPM 1807 from DPM 2016, you must first install DPM 1801 using the steps in the article [Upgrade your DPM installation](../dpm/upgrade-dpm.md).
 
 
 ## Update steps for DPM 1807

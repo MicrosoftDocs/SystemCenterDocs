@@ -42,7 +42,7 @@ If you try to connect to Service Manager after the expiry of the evaluation peri
 
 You can active Service Manager 1801 and later using the product key from Console and PowerShell, by using the following steps.
 
-## Activate  Service Manager through console
+## Activate Service Manager through console
 
 > [!NOTE]
 > If the Evaluation Period has expired, you can activate SM only [through PowerShell](#activate-service-manager-through-powershell).
@@ -63,7 +63,7 @@ You can active Service Manager 1801 and later using the product key from Console
 
 3. Read through the License Agreement. Select the **I have read understood and agree with the terms of the license agreement** checkbox and then click **Accept** to complete the process.
 
-## Activate  Service Manager through PowerShell
+## Activate Service Manager through PowerShell
 
 To activate Service Manager through PowerShell, use the following procedure:
 
