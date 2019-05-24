@@ -59,18 +59,11 @@ This topic provides detailed installation instructions for the various Orchestra
 
    If a prerequisite is not met, a page displays information about the prerequisite that has not been met and how to resolve the issue. Use the following steps to resolve the failed prerequisite check:
 
-<<<<<<< HEAD
+
 1. Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
 
    > [!WARNING]
-   >
    > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
-=======
-   1.  Review the items that did not pass the prerequisite check. For some requirements, such as Microsoft .NET Framework 4, you can use the link provided in the Setup Wizard to install the missing requirement. The Setup Wizard can install or configure other prerequisites, such as the Internet Information Services (IIS) role.
-
-       > [!WARNING]
-       > If you enable prerequisites during setup, such as Microsoft .NET Framework 4, your computer can require a restart. If you restart your computer, you must run setup again from the beginning.
->>>>>>> 0baf1fd2a3cdaf5c0c1c06a42b3d0785ce877403
 
 2. After you resolve the missing prerequisites, click **Verify prerequisites again**.
 

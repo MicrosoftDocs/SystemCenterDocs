@@ -1,5 +1,5 @@
 ---
-title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager
+title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager 
 description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM) 1801 fabric.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -8,12 +8,12 @@ ms.date: 02/08/2018
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
-monikerRange: '>=sc-vmm-1801'
+monikerRange: '>sc-vmm-1801'
 ---
 
 # Provision a shielded Linux virtual machine in the VMM fabric
 
-This article describes how to deploy Linux shielded virtual machines (VMs) in System Center - Virtual Machine Manager (VMM).
+This article describes how to deploy Linux shielded virtual machines (VMs) in System Center 1801 - Virtual Machine Manager (VMM).
 
 
 ## Procedure to shield a Linux VM
@@ -39,13 +39,13 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
 ### Sign the template disk
 
-1. Generate a certificate. You can use a self-signed certificate for testing.
-
+1. Generate a certificate. You can use a self-signed certificate for testing. 
+ 
    Use the following sample cmdlet:
 
     ```powershell
 
-        $cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
+		$cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
 
         ```
 2. Sign the disk by using a Windows Server 1709 machine. Use the following sample cmdlet:
@@ -89,7 +89,7 @@ Before you generate the shielding data file (PDK):
 1.	[Get the guardian metadata from the Host Guardian Service (HGS)](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics).
 2.	[Extract the volume signature catalog (VSC) file](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file).
 
-To generate the PDK, run the following sample script on a server that's running Windows Server version 1709 or later:
+To generate the PDK, run the following sample script on a server that's running Windows Server version 1709:
 
 ```powershell
 
@@ -121,7 +121,7 @@ New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Own
 11.	Review the actions in **Add properties** and select **Next**.
 12.	To create the Linux shielded VM, select **Create**.
 
-While provisioning the VM, the VMM specialization agent reads the Linux configuration file PDK and customizes the VM.
+  While provisioning the VM, the VMM specialization agent reads the Linux configuration file PDK and customizes the VM.
 
 
 ## Next steps
