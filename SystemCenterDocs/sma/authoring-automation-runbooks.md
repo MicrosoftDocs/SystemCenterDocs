@@ -74,7 +74,7 @@ Publish-SMARunbook "WebServiceEndpoint $webServer "Port $port "Name $runbookName
 Each runbook in Service Management Automation has two versions, Draft and Published. You edit the Draft version of the workflow and then publish it so it can be executed. The Published version cannot be edited.
 
 ### Edit a runbook with the Management Portal
-The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for [Global Assets](#InsertGlobalSetting), [Activities](#InsertActivity), and [Runbooks](#InsertRunbook).
+The Management Portal includes an editor that you can use to view and edit runbooks. In addition to providing basic text editing capabilities, the editor provides the ability to automatically insert code for [Global Assets](#insert-a-global-asset-into-a-runbook), [Activities](#insert-an-activity-into-a-runbook), and [Runbooks](#insert-code-into-a-runbook).
 
 1.  In the Management Portal, select **Automation**.
 
