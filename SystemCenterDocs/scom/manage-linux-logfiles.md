@@ -168,7 +168,7 @@ This example processes events with tags matching **scom.log.**\*\* and  **scom.a
 
 
 >[!NOTE]
-    > To disable Server Auth on the Linux machines that are using Fluentd communication, add a parameter **enable_server_auth false** to the SCOM out plugin for Fluentd, such as the following:
+> To disable Server Auth on the Linux machines that are using Fluentd communication, add a parameter **enable_server_auth false** to the SCOM out plugin for Fluentd, such as the following:
 
 
     <match scom.log.** scom.event>
