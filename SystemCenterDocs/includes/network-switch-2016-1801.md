@@ -64,7 +64,7 @@ You can set up a virtual switch extension manager (network manager) if you want 
 If a host in the VMM fabric has a standard virtual switch, you can convert it to use as a logical switch.
 
 > [!NOTE]
-> - The following procedure is not applicable for SET, use the [script](#script-for-set-conversion) instead.
+> - The following procedure is not applicable for SET, use the [script](#script-for-set-switch-conversion) instead.
 > - Before you can convert, you need a logical switch in place, with specific settings.
 > - You must be a member of the Administrator user role, or a member of the Delegated Administrator user role, where the management scope includes the host group in which the Hyper-V host is located.
 

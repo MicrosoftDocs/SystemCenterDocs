@@ -14,23 +14,25 @@ manager: carmonm
 
 The integration pack for System Center - Operations Manager is an add-in for System Center - Orchestrator. It enables you to connect an Orchestrator Runbook server to an Operations Manager management server to automate various actions.
 
-[Learn more](https://go.microsoft.com/fwlink/?LinkID=275796) about integration packs.
+For more information about integration packs, see [System Center Integraion Guide](https://go.microsoft.com/fwlink/?LinkID=275796).
 
 ## System requirements
 
-The Operations Manager Integration Pack requires the following software to be installed and configured before you deploy the integration pack.
+Before you deploy the Operations Manager integration pack, install and configure the following software:
 
-- System Center - Orchestrator
-- The integration pack version should match the System Center version.
-- System Center - Operations Manager
+- Orchestrator
+- Operations Manager - the integration pack version should match the System Center version.
+
 
     >[!NOTE]
     > If you are using SCO 2016/1801 integration pack for System Center Operations Manager 2016 UR4 or later - when Operations Manager is configured to accept TLS 1.1 or 1.2 only connections, then, ensure to make the registry changes as [detailed here](#enable-sco-ip-for-operations-manager-2016-ur4-and-later).
 
-- Install the Operations Manager console on each computer where an Orchestrator Runbook server or Runbook Designer is installed, if that server needs to interact with Operations Manager.
-- The Orchestrator Integration Library Management Pack is required by the Create Alert object.
-- The Create Alert object installs this management pack automatically in System Center Operations Manager the first time that it is run.
-- To uninstall the integration pack, remove the Orchestrator Integration Library Management Pack from System Center Operations Manager.
+- To allow server interaction with Operations Manager, install the Operations Manager console where an Orchestrator Runbook server or Runbook Designer is installed.
+- The Orchestrator integration library management pack is required by the Create Alert object.
+
+
+>[!NOTE]
+>The Create Alert object installs the management pack automatically in Operations Manager the first time it's run. To uninstall the integration pack, remove the Orchestrator integration library management pack from Operations Manager.
 
 
 ## Download the integration pack
@@ -41,22 +43,23 @@ The Operations Manager Integration Pack requires the following software to be in
 
 ## Register and deploy the pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server, and then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md).
+After you download the integration pack file, you must register it with the Orchestrator management server. Then deploy it to Runbook servers and Runbook Designers. [Learn more](how-to-add-an-integration-pack.md).
 
 ## Configure the connections
 
-A connection establishes a reusable link between Orchestrator and an Operations Manager management server. You can create as many connections as you require to specify links to multiple Operations Manager management servers. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
+A connection establishes a reusable link between Orchestrator and an Operations Manager management server. You can create as many connections as you need to specify links to multiple Operations Manager management servers. You can also create multiple connections to the same server to allow for differences in security permissions for user accounts.
 
-1.  In the Runbook Designer, click the **Options** menu, and select Operations Manager.
-2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Connection Entry** dialog box appears.
-3.  In the **Name** box, type the name or IP address of the server running System Center Operations Manager.
-4.  In the **Domain** box, type the domain name of the Operations Manager server, or click the ellipsis button **(...)** to browse for the domain, select it, and then click **Add**.
+1.  In the Runbook Designer, select **Options** > **Operations Manager**.
+2.  On the **Connections** tab, select **Add**.
+3.  In **Connection Entry** ,  **Name** box, type the name or IP address of the server that runs Operations Manager.
+4.  In the **Domain** box, type the domain name of the Operations Manager server, or select the ellipsis button **(...)** to browse for the domain, select it, and then select **Add**.
 5.  In the **User name** and **Password** boxes, type the credentials that the Orchestrator server will use to connect to the Operations Manager server.
-6. In **Monitoring Intervals\\Polling**, and **Monitoring Intervals\\Reconnect** accept the default value of ten seconds, or configure the value.(default value: 10 seconds) is a configurable property.
-7.  Click **Test Connection**. When the message "Successfully connected" appears, click **OK**.
-8.  Add additional connections if applicable. Click **OK** to close the configuration dialog box, and then click **Finish**.
+6. In **Monitoring Intervals\\Polling**, and **Monitoring Intervals\\Reconnect** accept the default value of 10 seconds, or change the value. The property (default value: 10 seconds) is configurable.
+7. Select **Test Connection**. When the message "Successfully connected" appears, select **OK**.
+8.  Add additional connections if applicable.
+9. Select **OK** > **Finish**.
 
-## Enable SCO IP for Operations Manager 2016 UR4 and later
+## Enable integration pack for Operations Manager 2016 Update Rollup 4 and later
 
 You must enable SCO IP for Operations Manager 2016 (UR4+), when Operations Manager configuration accepts TLS 1.1 or TLS 1.2 only.
 
@@ -67,24 +70,23 @@ Use the following steps:
     **Method 1: Manually modify the registry**
 
     > [!Important]
-    > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly.   Before you modify, back up the registry for restoration in case a problems occurs.
+    > Carefully follow the steps in this section. You could cause serious problems if you modify the registry incorrectly. Before you begin, back up the registry so you can restore it if a problems occurs..
 
     Use the following steps to enable/disable all SCHANNEL protocols system-wide.
 
     >[!NOTE]
-    > - We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
-    > - Registry changes do not affect the use of Kerberos or NTLM protocols.
+    > We recommend that you enable the TLS 1.2 protocol for incoming communications. Enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications. Registry changes don't affect the use of the Kerberos protocol or NTLM protocol.
 
     a. Start Registry Editor. To do this, right-click **Start**, type **regedit** in the Run box, and then click **OK**.
 
     b.  Locate the following registry subkey:
     HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols
 
-    c.  Right-click  **Protocol** , point to **New**, and then click **Key**.
+    c.  Right-click  **Protocol** , point to **New** > **Key**.
 
-    ![new registry key](./media/integration-pack-for-om/new-registry-key.png)
+        ![new registry key](./media/integration-pack-for-om/new-registry-key.png)
 
-    d.  Type **SSL 3.0**, and then press **Enter**.
+    d.  Enter **SSL 3.0**.
 
     e.  Repeat steps c and d to create keys for TLS 0,
     TLS 1.1, and TLS 1.2. These keys resemble directories.
@@ -93,15 +95,15 @@ Use the following steps:
 
     g.  To enable a protocol, create the DWORD value under each Client and Server key as follows:
 
-   - DisabledByDefault [Value = 0]
-   - Enabled [Value = 1]
+        - DisabledByDefault [Value = 0]
+        - Enabled [Value = 1]
 
     h. To disable a protocol, change the DWORD value under each client and server key as follows:
 
-   - DisabledByDefault [Value = 1]
-   - Enabled [Value = 0]
+        - DisabledByDefault [Value = 1]
+        - Enabled [Value = 0]
 
-    i.  On the **File** menu, click **Exit**.
+    i.  Select **File** > **Exit**.
 
    **Method 2: Automatically modify the registry**
 
@@ -148,7 +150,7 @@ Use the following steps:
 
 2. Set System Center to use only TLS 1.2
 
-    Set the following registry key values. Before you modify it back up the registry for restoration.
+    Before you change the registry in this step, back up the registry in case you need to restore it later. Then set the following registry key values.
 
     **For 64-bit operating systems:**
 
@@ -168,8 +170,7 @@ Use the following steps:
    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
 
-3. Install the following updates on all Service Manager roles (Management Servers, Data Warehouse Server, Self Service Portal, and Analyst Consoles, including the Analyst Consoles installed on the System Center Orchestrator Runbook servers), as per the Windows Operating System.
-
+3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
 
 
 | **Operating System** | **Update required to be installed** |
