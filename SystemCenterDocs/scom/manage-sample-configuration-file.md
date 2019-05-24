@@ -14,7 +14,9 @@ ms.topic: article
 ---
 
 # Sample configuration file for collecting Linux log files
-This is a sample configuration file for collecting log files from Linux with System Center Operations Manager version 1801 and later.
+This article details a sample configuration for collecting log files from Linux with System Center Operations Manager version 1801 and later.
+
+## Sample configuration
 
     # Have a source directive for each log file source file.
     <source>
