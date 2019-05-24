@@ -1,4 +1,4 @@
-    ---
+---
 description: Provides guidance and instructions for creating Service Management Automation runbooks
 manager: carmonm
 ms.topic: reference
