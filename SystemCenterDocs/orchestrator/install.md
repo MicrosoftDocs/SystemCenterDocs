@@ -248,29 +248,18 @@ This topic provides detailed installation instructions for the various Orchestra
 
    3.  Click **Next** to continue.
 
-<<<<<<< HEAD
-4. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
-=======
-4.  On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click **Next**.
->>>>>>> 0baf1fd2a3cdaf5c0c1c06a42b3d0785ce877403
+4. On the **Select the installation location** page, verify the installation location for Orchestrator and change it if you want to, and then click
 
 5. On the **Microsoft Update** page, optionally indicate whether you want to use the Microsoft Update services to check for updates, and then click **Next**.
 
 6. On the **Help improve Microsoft System Center Orchestrator** page, optionally indicate whether you want to participate in **Error Reporting**, and then click **Next**.
 
-<<<<<<< HEAD
 7. Review the **Installation summary** page, and then click **Install**.
-=======
-7.  Review the **Installation summary** page, and then click **Install**.
->>>>>>> 0baf1fd2a3cdaf5c0c1c06a42b3d0785ce877403
 
     The **Installing features** page appears and displays the installation progress.
 
-<<<<<<< HEAD
 8. On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
-=======
-8.  On the **Setup completed successfully** page, optionally indicate whether you want to start the Runbook Designer, and then click **Close** to complete the installation.
->>>>>>> 0baf1fd2a3cdaf5c0c1c06a42b3d0785ce877403
+
 
 ## To connect a Runbook Designer to a management server
 

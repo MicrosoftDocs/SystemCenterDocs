@@ -1,5 +1,5 @@
 ---
-title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager 
+title: Provision a shielded Linux virtual machine in System Center Virtual Machine Manager
 description: Learn how to add and provision a Linux shielded VM in the Virtual Machine Manager (VMM) 1801 fabric.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -39,15 +39,15 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
 ### Sign the template disk
 
-1. Generate a certificate. You can use a self-signed certificate for testing. 
- 
+1. Generate a certificate. You can use a self-signed certificate for testing.
+
    Use the following sample cmdlet:
 
     ```powershell
 
 		$cert = New-SelfSignedCertificate -DnsName '<<signing.contoso.com>>'
 
-        ```
+    ```
 2. Sign the disk by using a Windows Server 1709 machine. Use the following sample cmdlet:
 
     ```powershell
