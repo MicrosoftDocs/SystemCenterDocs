@@ -14,7 +14,7 @@ manager: carmonm
 # Getting Started with Global Service Monitor: Signing In and Setup
 Getting started with [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] involves several steps. These include signing up for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)], setting up [!INCLUDE[om12long](../includes/om12long-md.md)], and importing the [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] management packs.  
 
-### Before You Begin  
+## Before You Begin  
 
 1.  Install [!INCLUDE[om12short](../includes/om12short-md.md)]. You can install [!INCLUDE[om12short](../includes/om12short-md.md)] on a single server. If you want to run tests from internal locations, you will also need to install agents (watchers).  
 
@@ -36,7 +36,7 @@ Getting started with [!INCLUDE[gsmlong](../includes/gsmlong-md.md)] involves sev
 
 ## Sign Up  
 
-#### To sign up for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)]  
+### To sign up for [!INCLUDE[gsmshort](../includes/gsmshort-md.md)]  
 
 1.  Download and then import all of the [!INCLUDE[gsmshort](../includes/gsmshort-md.md)] management packs from this site [GSM Management Packs](https://www.microsoft.com/download/details.aspx?id=36422).  
 
