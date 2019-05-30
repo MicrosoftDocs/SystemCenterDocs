@@ -19,21 +19,21 @@ ms.assetid: 8b6c406a-7cb3-4be7-902b-5a09be71ad98
 
 After you have deployed Service Manager, you might need to move the Service Manager or data warehouse databases from one computer running Microsoft SQL Server to another for reasons such as the following:  
 
--   You need to replace hardware that is experiencing issues and that is no longer considered reliable.  
+- You need to replace hardware that is experiencing issues and that is no longer considered reliable.  
 
--   You need to add additional hardware to improve scalability and performance.  
+- You need to add additional hardware to improve scalability and performance.  
 
--   You need to move a database and log file to a different volume because of space or performance reasons.  
+- You need to move a database and log file to a different volume because of space or performance reasons.  
 
--   You need to change hardware that is leased and is due to expire soon.  
+- You need to change hardware that is leased and is due to expire soon.  
 
--   You need to change or upgrade hardware to comply with new hardware standards.  
+- You need to change or upgrade hardware to comply with new hardware standards.  
 
--   You initially installed multiple Service Manager components on a single server, and you need to distribute some components to other servers.  
+- You initially installed multiple Service Manager components on a single server, and you need to distribute some components to other servers.  
 
--   You need to restore functionality in a failure scenario.  
+- You need to restore functionality in a failure scenario.  
 
- If you want the move the data warehouse database, and if you have installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data has not been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is much simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
+If you want the move the data warehouse database, and if you have installed Service Manager within the last 90 days, it might be easier for you to unregister the data warehouse, install a new data warehouse, and register the new database. If the data has not been groomed from the Service Manager database, there will be no data loss in the data warehouse database because it will be synchronized. By default, the grooming interval for work items is 90 days from the last time a work item was modified. Using this process is much simpler than using the following guidance, which details how to move your databases from one server to another and requires many steps.  
 
 
 ## Move the Service Manager database
@@ -246,43 +246,43 @@ The following high\-level steps are required to move the data warehouse database
 
 #### To identify the OLAP Account used by the data warehouse management server  
 
-1.  Log on to the Service Manager server, click **Start**, click **All Programs**, click **Microsoft System Center <version>**, click **Service Manager**, and then click **Service Manager Shell**.  
+1. Log on to the Service Manager server, click **Start**, click **All Programs**, click **Microsoft System Center <version>**, click **Service Manager**, and then click **Service Manager Shell**.  
 
-2.  In the Windows PowerShell command prompt, copy the following command, and then press ENTER.  
+2. In the Windows PowerShell command prompt, copy the following command, and then press ENTER.  
 
-    > [!NOTE]  
-    >  Replace \<DWServerName\> with the name of your data warehouse management server.  
+   > [!NOTE]  
+   >  Replace \<DWServerName\> with the name of your data warehouse management server.  
 
-    ```  
-    $class= get-scclass -Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore -ComputerName <DWServerName>  
-    $OLAPServer= get-scclassinstance -class $class -ComputerName <DWServerName>  
-    $OLAPServer.Server  
-    ```  
+   ```  
+   $class= get-scclass -Name Microsoft.SystemCenter.ResourceAccessLayer.ASResourceStore -ComputerName <DWServerName>  
+   $OLAPServer= get-scclassinstance -class $class -ComputerName <DWServerName>  
+   $OLAPServer.Server  
+   ```  
 
-    > [!NOTE]  
-    >  The $OLAPServer.Server cmdlet  returns the name of the OLAP server that is hosting the DWASDataBase, and it contains the OLAP Account.  
+   > [!NOTE]  
+   >  The $OLAPServer.Server cmdlet  returns the name of the OLAP server that is hosting the DWASDataBase, and it contains the OLAP Account.  
 
-3.  On a server where you have **SQL Server Management Studio** installed, do the following:  
+3. On a server where you have **SQL Server Management Studio** installed, do the following:  
 
-    1.  Open SQL Server Management Studio.  
+   1.  Open SQL Server Management Studio.  
 
-    2.  In the **Connect to Server** window, select **Analysis Services** in the **Server type** list.  
+   2.  In the **Connect to Server** window, select **Analysis Services** in the **Server type** list.  
 
-    3.  In the **Server name** list, type or select the name you noted from the output of the $OLAPServer.Server cmdlet in previous step, and then click **Connect**.  
+   3.  In the **Server name** list, type or select the name you noted from the output of the $OLAPServer.Server cmdlet in previous step, and then click **Connect**.  
 
-    4.  In the **Object Explorer** pane, expand **Databases**, and then expand the **DWASDataBase** OLAP database.  
+   4.  In the **Object Explorer** pane, expand **Databases**, and then expand the **DWASDataBase** OLAP database.  
 
-    5.  Expand the **Data Sources** folder, and then double\-click **CMDataMart**.  
+   5.  Expand the **Data Sources** folder, and then double\-click **CMDataMart**.  
 
-    6.  In the **Data Source Properties - CMDataMart** dialog box, note the value of **Connection String**.  
+   6.  In the **Data Source Properties - CMDataMart** dialog box, note the value of **Connection String**.  
 
-    7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button \(...\), to open the **Impersonation Information** dialog box.  
+   7.  Under **Security Settings**, click **Impersonation Account**, and then click the properties button \(...\), to open the **Impersonation Information** dialog box.  
 
-    8.  In the **Impersonation Information** dialog box, note the user name.  
+   8.  In the **Impersonation Information** dialog box, note the user name.  
 
-    9. Click **Cancel** twice to close the dialog boxes.  
+   9. Click **Cancel** twice to close the dialog boxes.  
 
-    10. Repeat the steps above to note the Connection string and the User name for the DWDataMart and OMDataMart databases.  
+   10. Repeat the steps above to note the Connection string and the User name for the DWDataMart and OMDataMart databases.  
 
 ### Stop Service Manager services  
 

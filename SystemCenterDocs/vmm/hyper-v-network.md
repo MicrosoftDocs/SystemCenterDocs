@@ -48,7 +48,7 @@ Regardless of any port profiles and logical switches you are using in your netwo
     - In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
     - If you have a cluster, check each node.
 
-::: moniker range="sc-vmm-1807"
+::: moniker range=">=sc-vmm-1807"
 
 ## Monitor physical network devices
 
@@ -64,8 +64,6 @@ To get the details of network devices from the VMM console, go to **View** > **H
   ![lldp support](media/lldp-support/lldp-view.png)
 
 The following LLDP information is displayed:
-
-<screenshot to be included>
 
 |**Information displayed** | **Description**
 | --- | --- |
@@ -88,6 +86,7 @@ Set-SCVMHostNetworkAdapter -RefreshLLDP
 ```
 
 > [!NOTE]
+>
 > By default, LLDP Packet wait time is set as 30 seconds. You can modify this value by modifying the registry key at **Software\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\LLdpPacketWaitIntervalSeconds**. The minimum value you can set is 5 seconds, maximum value is 300 seconds.
 
   ::: moniker-end

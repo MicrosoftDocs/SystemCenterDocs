@@ -52,25 +52,25 @@ Use the following procedure:
 
 ## Manage telemetry settings from the self-service portal
 
-1.	Log in as administrator into the IIS server, which is hosting the SM self-service portal.
-2.	Open the *Web.config* file in the directory where SM self-service portal is installed.
+1. Log in as administrator into the IIS server, which is hosting the SM self-service portal.
+2. Open the *Web.config* file in the directory where SM self-service portal is installed.
 
-  ![console telemetry selection](./media/telemetry/sm-telemetry-web-configfile.png)
+   ![console telemetry selection](./media/telemetry/sm-telemetry-web-configfile.png)
 
 3. In *Web.config* file, find the key  *EnableTelemetry* under the XML tag *appSettings*.
 
-  ![edit telemetry setting](./media/telemetry/sm-telemetry-webfile-edits.png)
+   ![edit telemetry setting](./media/telemetry/sm-telemetry-webfile-edits.png)
 
-4.	Configure the value of *EnableTelemetry* key depending on your preference.
+4. Configure the value of *EnableTelemetry* key depending on your preference.
 
-  - To share the diagnostics and utility data with Microsoft, set the value as **true**.
-  -  Set the value as **false** if you do not wish to send the data.
+   - To share the diagnostics and utility data with Microsoft, set the value as **true**.
+   -  Set the value as **false** if you do not wish to send the data.
 
 5. Save and close the *Web.config* file.
 
 6. Restart the IIS service after you make any changes to the *Web.config* file.
 
- ![IIS service restart](./media/telemetry/telemetry-restart-iis-service.png)
+   ![IIS service restart](./media/telemetry/telemetry-restart-iis-service.png)
 
 ## Telemetry data collected
 

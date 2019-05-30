@@ -54,10 +54,10 @@ Service Manager includes an Operations Manager agent. The agent is automatically
 - If you remove the console or Self-Service Portal on a machine that's running the Operations Manager agent, the agent is also removed.
 - If you have already installed the portal or console on a server that doesn't host other Service Manager roles, then agent deployment will fail. To prevent the failure, back up the registry key as follows:
 
- 1. Export the Service Manager key from HKEY\_CLASSES\_ROOT\\Installer\\Products\\\<ServiceManagerGUID\>. You can find the key by searching at the Products node for Data equal to Service Manager.  
- 2.  Delete the registry key.  
- 3.  Deploy the Operations Manager agent to the server.  
- 4.  Import the key you exported from step 1.
+  1. Export the Service Manager key from HKEY\_CLASSES\_ROOT\\Installer\\Products\\\<ServiceManagerGUID\>. You can find the key by searching at the Products node for Data equal to Service Manager.  
+  2.  Delete the registry key.  
+  3.  Deploy the Operations Manager agent to the server.  
+  4.  Import the key you exported from step 1.
 
 ## Next steps
 

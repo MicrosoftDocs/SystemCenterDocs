@@ -134,19 +134,19 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 
  The **For Each Loop** activity is a composite activity with two containers for activities:  
 
--   **Input Container**: This activity sets up the loop and defines the input collection. You can use the **Get Incident** or the **Get Virtual Machine** activity in this role.  
+- **Input Container**: This activity sets up the loop and defines the input collection. You can use the **Get Incident** or the **Get Virtual Machine** activity in this role.  
 
--   **Loop Container**: Named **ForEachChildActivity**, this activity contains the loop activities. Most Windows Workflow Foundation (WF) activities that you place in this container have two additional properties: **Current Item** and **Property to Bind**. For each activity within the loop container, set these properties as follows:  
+- **Loop Container**: Named **ForEachChildActivity**, this activity contains the loop activities. Most Windows Workflow Foundation (WF) activities that you place in this container have two additional properties: **Current Item** and **Property to Bind**. For each activity within the loop container, set these properties as follows:  
 
-    1.  Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. Note that if this activity is the first activity in the **For Each Loop** activity, **Current Item** is set automatically.  
+  1. Set **Current Item** to the **Current Item** property of the **Loop Container** activity of the **ForEach** activity. Note that if this activity is the first activity in the **For Each Loop** activity, **Current Item** is set automatically.  
 
-    2.  Set the value of the **Property to Bind** property to the value of the property of the current activity that uses the **Current Item** value.  
+  2. Set the value of the **Property to Bind** property to the value of the property of the current activity that uses the **Current Item** value.  
 
-     Two types of activities do not get the **Current Item** and **Property to Bind** properties and therefore cannot use the objects in the input collection:  
+Two types of activities do not get the **Current Item** and **Property to Bind** properties and therefore cannot use the objects in the input collection:  
 
-    -   Script activities, such as the **Windows PowerShell Script** activity.  
+  -   Script activities, such as the **Windows PowerShell Script** activity.  
 
-    -   Custom activities or other activities that do not inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
+  -   Custom activities or other activities that do not inherit from the **WorkflowActivityBase** class. Such activities include those activities that are based on the **Activity** base class, such as native Visual Studio activities.  
 
 #### Design time prerequisites  
  None.  
@@ -165,13 +165,13 @@ The **For Each Loop** activity takes as an input an array (*collection*) of obje
 #### Errors and exceptions  
  The **For Each Loop** activity uses the custom tracking service that is supplied by Service Manager to log errors and exceptions when the activity runs. The activity generates errors or exceptions under the following conditions:  
 
--   If any error occurs in the **ForEachLoop** activity and that is not with the child activities, the workflow terminates.  
+- If any error occurs in the **ForEachLoop** activity and that is not with the child activities, the workflow terminates.  
 
--   If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true.  
+- If any error occurs within the child activities, the workflow terminates unless **ContinueOnError**=true.  
 
--   If any of the input properties are null. The activity does not iterate.  
+- If any of the input properties are null. The activity does not iterate.  
 
- Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity does not do so itself.  
+  Each activity within the **For Each Loop** activity must write its own errors or exceptions to the custom tracking service. The **For Each Loop** activity does not do so itself.  
 
 #### Remarks  
  None.  

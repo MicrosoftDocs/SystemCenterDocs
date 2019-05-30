@@ -83,12 +83,12 @@ Operations Manager requires that TCP port 8886 be used to establish inbound comm
 ### Configure certificates
 In the previous version of the Linux agent, the management server accessed each Linux computer with a server authentication certificate.  With the new agent, Fluentd acts as the client accessing the management server, so the certificate requires client authentication.  You need to obtain a new certificate to work with the new agent. Operations Manager will use the new certificate for Fluentd communications and the old certificate for other communications.
 
-1. Locate**/etc/opt/omi/ssl/omi-host-<hostname>.pem** and **/etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem** on the Linux computer and copy them to any location on the management server.  
-4. Open a command prompt on the management server and run the following command to sign your certificate.
+1. Locate<strong>/etc/opt/omi/ssl/omi-host-<hostname>.pem</strong> and **/etc/opt/microsoft/omsagent/scom/certs/scom-cert.pem** on the Linux computer and copy them to any location on the management server.  
+2. Open a command prompt on the management server and run the following command to sign your certificate.
 
     scxcertconfig -sign omi-host-<hostname>.pem omi_new.pem and scxcertconfig -sign scom-cert.pem scom-cert_new.pem
 
-5.  Copy the file - **omi_new.pem** to **/etc/opt/omi/ssl/** and **scom-cert_new.pem** to **/etc/opt/microsoft/omsagent/scom/certs/** on the Linux computer.  Remove the old certificate files and rename the new certificate files to replace them.
+3. Copy the file - **omi_new.pem** to **/etc/opt/omi/ssl/** and **scom-cert_new.pem** to **/etc/opt/microsoft/omsagent/scom/certs/** on the Linux computer.  Remove the old certificate files and rename the new certificate files to replace them.
 
 ### Restart the agent
 

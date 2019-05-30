@@ -14,11 +14,11 @@ ms.topic: article
 
 When you installed System Center - Service Manager, you may have specified a different computer to host Microsoft SQL&nbsp;Server Reporting Services \(SSRS\) than the computer that hosted the data warehouse management server. If, in your environment, SSRS is remote from the data warehouse management server, you must use the following procedures to prepare the computer that hosts SSRS for the upgrade:  
 
--   Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.  
+- Copy Microsoft.EnterpriseManagement.Reporting.Code.dll from the Service Manager installation media to the computer that is hosting SSRS.  
 
--   Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.  
+- Add an Extension tag to the existing Data segment in the rsreportserver configuration file on the same computer.  
 
- If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your Service Manager installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS10.\<INSTANCE\_NAME\>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.  
+If you used the default instance of SQL Server, use Windows Explorer to drag Microsoft.EnterpriseManagement.Reporting.Code.dll \(which is located in the Prerequisites folder on your Service Manager installation media\) to the folder \\Program Files\\Microsoft SQL Server\\MSRS13.MSSQLSERVER\\Reporting Services\\ReportServer\\Bin on the computer that is hosting SSRS. If you did not use the default instance, the path of the required folder is \\Program Files\\Microsoft SQL Server\\MSRS10.\<INSTANCE\_NAME\>\\Reporting Services\\ReportServer\\Bin. In the following procedure, the default instance name is used.  
 
 ## Copy the Microsoft.EnterpriseManagement.Reporting.Code.dll file  
 

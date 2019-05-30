@@ -18,36 +18,36 @@ When you upgrade a single server management group to System Center 2016 - Operat
 
 ### To upgrade a single server management group
 
-1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
+1. Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
-2.  On the Operations Manager media, run **Setup.exe**, and then click **Install**.
+2. On the Operations Manager media, run **Setup.exe**, and then click **Install**.
 
-    > [!NOTE]
-    > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
+   > [!NOTE]
+   > The **Getting Started** page displays information about what will be upgraded. Click **Next** to proceed with the upgrade.
 
-3.  On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
+3. On the **Getting Started, Please read the license terms page**, read the Microsoft Software License Terms, click **I have read, understood, and agree with the license terms**, and then click **Next**.
 
-4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
-    > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    > 
+   > [!NOTE]
+   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > 
 
-5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
+5. On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify prerequisites again** to recheck the system.
 
-    > [!NOTE]
-    > Microsoft SQL Server Full Text Search must be enabled on the SQL Server hosting the OperationsManager and OperationsManagerDW databases.
+   > [!NOTE]
+   > Microsoft SQL Server Full Text Search must be enabled on the SQL Server hosting the OperationsManager and OperationsManagerDW databases.
 
-6.  If the Prerequisites checker does not return any other errors or warnings that have to be addressed, click **Next**.
+6. If the Prerequisites checker does not return any other errors or warnings that have to be addressed, click **Next**.
 
-7.  On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Configuration and Data Access service accounts, and then click **Next**.
+7. On the **Configuration, Configure Operations Manager accounts** page, enter the domain account or Local System credentials for the System Center Configuration and Data Access service accounts, and then click **Next**.
 
-    > [!IMPORTANT]
-    > If you receive a message about using the wrong version of SQL Server, or experience a problem with the SQL Server Windows Management Instrumentation (WMI) provider, you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
-        >
-        > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof**
+   > [!IMPORTANT]
+   > If you receive a message about using the wrong version of SQL Server, or experience a problem with the SQL Server Windows Management Instrumentation (WMI) provider, you can resolve this. Open a Command Prompt window by using the **Run as administrator** option. Then run the following command, replace the *\<path>* placeholder with the location of Microsoft SQL Server:
+   > 
+   > **mofcomp.exe \<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof**
 
-8.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
+8. When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
 ### To upgrade a single server management group from the Command Prompt 
 

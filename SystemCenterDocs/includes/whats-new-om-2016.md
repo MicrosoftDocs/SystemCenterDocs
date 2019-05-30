@@ -132,7 +132,7 @@ Customers can view certified System Center Operations Manager partner solutions 
 
 - Shell command and script rules and monitors are multi-threaded in the agent and will run in parallel.
 
--	New UNIX/Linux Script templates have been added for:
+- New UNIX/Linux Script templates have been added for:
   -	Two-state monitors
   - Three-state monitors
   - Agent tasks

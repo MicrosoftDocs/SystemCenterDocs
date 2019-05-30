@@ -51,7 +51,7 @@ To create virtual network adapter port profile, use the following procedure:
 > - Minimum bandwidth (Mbps) is not supported by VMM for SDN.  
 > - Limiting the inbound bandwidth of the vNIC is not supported by VMM.
 > - Minimum bandwidth (Weight) sets the **outboundReservedValue** setting on the network controller and maximum bandwidth (Mbps) sets the **outboundMaximumMbps** setting.
-- Ensure that the minimum and maximum values for bandwidth are within the bandwidth range of the physical NIC(s) that the logical switch is deployed on. Otherwise the bandwidth allocation request will be rejected.
+> - Ensure that the minimum and maximum values for bandwidth are within the bandwidth range of the physical NIC(s) that the logical switch is deployed on. Otherwise the bandwidth allocation request will be rejected.
 
 
 ## Create port classification

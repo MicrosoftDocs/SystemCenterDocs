@@ -44,16 +44,16 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
     For either option selected, you can search by keyword in the list.  As you begin typing, the list filters based on your input.  You can select an individual group or class or multiple from the returned results.
 
-11. Set the criteria to identify the health state to display.  To narrow the results, you can filter by selecting the following:
-   * By all health states or a specific state
-   * Display all objects or only those in maintenance mode  
+10. Set the criteria to identify the health state to display.  To narrow the results, you can filter by selecting the following:
+    * By all health states or a specific state
+    * Display all objects or only those in maintenance mode  
 
     Data matching the defined criteria will only be displayed in the widget.
 
     ![Set criteria for Alert widget](./media/create-web-dashboard-state/web-console-new-dashboard-state-02.png)
   
-12. Select **Display** to choose the columns to be displayed in the dashboard.  You can select or search for the columns from the drop-down list.  
-13. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+11. Select **Display** to choose the columns to be displayed in the dashboard.  You can select or search for the columns from the drop-down list.  
+12. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 After the widget has been created, it displays health state of the objects based on the scope and criteria defined. You see the name of the state widget along with the number of objects in the header of the widget. Objects can also be filtered in the widget by searching for a keyword in the filter box.
 

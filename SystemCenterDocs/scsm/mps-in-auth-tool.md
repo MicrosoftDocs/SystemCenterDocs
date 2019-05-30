@@ -26,13 +26,13 @@ Before you work with management packs in Service Manager, you should be familiar
 ### Sealed and unsealed management packs  
  There are two types of management packs:  
 
--   Sealed management packs: A sealed management pack \(.mp file\) cannot be modified.  
+- Sealed management packs: A sealed management pack \(.mp file\) cannot be modified.  
 
--   Unsealed management packs: An unsealed management pack \(.xml file\) can be modified.  
+- Unsealed management packs: An unsealed management pack \(.xml file\) can be modified.  
 
- Other than lists and forms, objects such as views that are defined in a sealed management pack cannot be customized. Customizing a list that is defined in a sealed management pack includes adding list items. Customizing a form that is defined in a sealed management pack includes adding fields.  
+Other than lists and forms, objects such as views that are defined in a sealed management pack cannot be customized. Customizing a list that is defined in a sealed management pack includes adding list items. Customizing a form that is defined in a sealed management pack includes adding fields.  
 
- You cannot unseal a management pack that is sealed. To modify objects that are stored in a management pack that you have already sealed, you can modify the original unsealed management pack file from which the sealed management pack was created. Alternatively, you can import the sealed management pack, and export it to a new unsealed management pack, that can be modified. After you import a sealed management pack, you cannot import the unsealed version of the same management pack until you delete the sealed version.  
+You cannot unseal a management pack that is sealed. To modify objects that are stored in a management pack that you have already sealed, you can modify the original unsealed management pack file from which the sealed management pack was created. Alternatively, you can import the sealed management pack, and export it to a new unsealed management pack, that can be modified. After you import a sealed management pack, you cannot import the unsealed version of the same management pack until you delete the sealed version.  
 
 ### Model management pack  
  A model management pack is a management pack that contains definitions for basic objects, such as classes, combination classes, and relationship types.  

@@ -22,33 +22,33 @@ Many of the procedures in this article are lengthy and might take a considerable
 Use the following procedure to restore the production Service Manager database using Microsoft&nbsp;SQL&nbsp;Server&nbsp;2016.  
 
 
-1.  After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, click the server name to expand the server tree.  
-2.  Expand **Databases**, and depending on the database, either select a user database or expand **System Databases** and select a system database.  
-3.  Right-click the database, point to **Tasks**, and then click **Restore**. The Back Up Database dialog box appears.  
-4.  Click **Database**, which opens the **Restore Database** dialog box  
-5.  On the **General** page, the name of the restoring database appears in the **To database** list box. To create a new database, enter its name in the list box.  
-6.  In the **To a point in time** text box, either retain the default \(Most recent possible\) or select a specific date and time by clicking the browse button which opens the **Point in Time Restore** dialog box. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](https://go.microsoft.com/fwlink/p/?LinkId=236006).  
-7.  To specify the source and location of the backup sets to restore, click either **From database** or **From device**.  
-8.  In the **Select the backup sets to restore** grid, select the backups to restore. For more information see [Restore Database \(General Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236009).  
+1. After connecting to the appropriate instance of the Microsoft SQL Server Database Engine, in Object Explorer, click the server name to expand the server tree.  
+2. Expand **Databases**, and depending on the database, either select a user database or expand **System Databases** and select a system database.  
+3. Right-click the database, point to **Tasks**, and then click **Restore**. The Back Up Database dialog box appears.  
+4. Click **Database**, which opens the **Restore Database** dialog box  
+5. On the **General** page, the name of the restoring database appears in the **To database** list box. To create a new database, enter its name in the list box.  
+6. In the **To a point in time** text box, either retain the default \(Most recent possible\) or select a specific date and time by clicking the browse button which opens the **Point in Time Restore** dialog box. For more information, see [How to: Restore to a Point in Time \(SQL Server Management Studio\)](https://go.microsoft.com/fwlink/p/?LinkId=236006).  
+7. To specify the source and location of the backup sets to restore, click either **From database** or **From device**.  
+8. In the **Select the backup sets to restore** grid, select the backups to restore. For more information see [Restore Database \(General Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236009).  
 9. To view or select the advanced options, click **Options** in the **Select a page pane**.  
 10. In the **Restore options** panel, choose one of the following options most appropriate for your situation:  
-    -   Overwrite the existing database  
-    -   Preserve the replication settings  
-    -   Prompt before restoring each backup  
-    -   Restrict access to the restored database  
+    - Overwrite the existing database  
+    - Preserve the replication settings  
+    - Prompt before restoring each backup  
+    - Restrict access to the restored database  
 
-     For more information, see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010)  
+      For more information, see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010)  
 11. Optionally, you can restore the database to a new location by specifying a new restore destination for each file in **Restore the database files as**. For more information see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010).  
 12. In the **Recovery state** panel, select one of the following options most appropriate for your environment:  
-    -   **Leave the database ready to use by rolling back the uncommitted transactions. Additional transaction logs cannot be restored. \(RESTORE WITH RECOVERY\)**  
+    - **Leave the database ready to use by rolling back the uncommitted transactions. Additional transaction logs cannot be restored. \(RESTORE WITH RECOVERY\)**  
 
-        > [!NOTE]  
-        >  Choose this option only if you are restoring all of the necessary backups at this time.  
+      > [!NOTE]  
+      >  Choose this option only if you are restoring all of the necessary backups at this time.  
 
-    -   **Leave the database non\-operational, and do not roll back the uncommitted transactions. Additional transaction logs can be restored. \(RESTORE WITH NORECOVERY\)**  
-    -   **Leave the database in read\-only mode. Undo uncommitted transactions, but save the undo actions in a standby file so that recovery effects can be reverted. \(RESTORE WITH STANDBY\)**  
+    - **Leave the database non\-operational, and do not roll back the uncommitted transactions. Additional transaction logs can be restored. \(RESTORE WITH NORECOVERY\)**  
+    - **Leave the database in read\-only mode. Undo uncommitted transactions, but save the undo actions in a standby file so that recovery effects can be reverted. \(RESTORE WITH STANDBY\)**  
 
-     For more information see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010).
+      For more information see [Restore Database \(Options Page\)](https://go.microsoft.com/fwlink/p/?LinkId=236010).
 
 
 ## Prepare the Service Manager database in the lab environment
@@ -153,8 +153,8 @@ Use the following procedure to prepare the Service Manager database in the lab e
 
 Use the following procedure to edit the registry on the Service Manager management server in the lab environment.
 
->[!CAUTION]
-Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.
+> [!CAUTION]
+> Incorrectly editing the registry might severely damage your system; therefore, before making changes to the registry, back up any valued data on the computer.
 
 ### Edit the registry
 
@@ -282,23 +282,23 @@ Use the following procedure to register the newly installed data warehouse serve
 
 ### Register a data warehouse  
 
-1.  Log on to the computer that hosts the Service Manager console. Use an account that is a member of the Service Manager and data warehouse management administrators group.  
-2.  In the Service Manager console, click **Administration**.  
-3.  In the **Administration** pane, expand **Administration**.  
-4.  In the **Administration** view, in the **Register with Service Manager's Data Warehouse** area, click **Register with Service Manager Data Warehouse**.  
-5.  In the Data Warehouse Registration wizard, on the **Before You Begin** page, click **Next**.  
-6.  On the **Data Warehouse** page, in the **Server name** box, type the fully qualified domain name of the computer hosting the data warehouse management server, and then click **Test Connection**. If the test is successful, click **Next**.  
-7.  On the **Credentials** page, you can accept the default entry in the **Run as account** list, and then click **Next**, or you can enter credentials from a user or group of your own choosing.  
+1. Log on to the computer that hosts the Service Manager console. Use an account that is a member of the Service Manager and data warehouse management administrators group.  
+2. In the Service Manager console, click **Administration**.  
+3. In the **Administration** pane, expand **Administration**.  
+4. In the **Administration** view, in the **Register with Service Manager's Data Warehouse** area, click **Register with Service Manager Data Warehouse**.  
+5. In the Data Warehouse Registration wizard, on the **Before You Begin** page, click **Next**.  
+6. On the **Data Warehouse** page, in the **Server name** box, type the fully qualified domain name of the computer hosting the data warehouse management server, and then click **Test Connection**. If the test is successful, click **Next**.  
+7. On the **Credentials** page, you can accept the default entry in the **Run as account** list, and then click **Next**, or you can enter credentials from a user or group of your own choosing.  
 
-    > [!IMPORTANT]  
-    >  The account you specify will be assigned administrative credentials on the Service Manager management server and granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when registering with the data warehouse.  
+   > [!IMPORTANT]  
+   >  The account you specify will be assigned administrative credentials on the Service Manager management server and granted Read permission on the Service Manager database. You can specify different credentials from other Service Manager management groups when registering with the data warehouse.  
 
-8.  On the **Summary** page, click **Create**.  
+8. On the **Summary** page, click **Create**.  
 9. On the **Completion** page, when **The data warehouse registration succeeded** is displayed, click **Close**.  
 10. A dialog box states that the report deployment process has not finished. This is to be expected. On the **System Center Service Manager** dialog box, click **OK**.  
 11. In a few minutes, after closing the Data Warehouse Registration wizard, the **Data Warehouse** button will be added to the Service Manager console. In the Service Manager console, click the arrow at the lower right corner of the Service Manager console buttons, and then click **Show More Buttons**.  
 
- You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](https://go.microsoft.com/fwlink/p/?LinkId=203096).  
+    You can use a Windows PowerShell command to complete this task. For information about how to use Windows PowerShell to register Service Manager management groups with the data warehouse, see [Add\-SCDWMgmtGroup](https://go.microsoft.com/fwlink/p/?LinkId=203096).  
 
 ### Validate the registration
 

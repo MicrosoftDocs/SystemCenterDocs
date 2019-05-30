@@ -28,15 +28,15 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 ### Files and formats  
  In addition to the management pack file, WF workflows require several supporting files:  
 
--   **Authoring environment files**. When you create or edit a workflow, these files store the raw workflow information, such as property values and workflow logic.  
+- **Authoring environment files**. When you create or edit a workflow, these files store the raw workflow information, such as property values and workflow logic.  
 
--   **Compiled workflow assembly file** \(*workflowname*.dll\). When you save a management pack in the Service Manager Authoring Tool, the tool also compiles any raw workflow files \(the XOML and CS files\) into a workflow assembly \(DLL\) file.  
+- **Compiled workflow assembly file** \(*workflowname*.dll\). When you save a management pack in the Service Manager Authoring Tool, the tool also compiles any raw workflow files \(the XOML and CS files\) into a workflow assembly \(DLL\) file.  
 
--   **Activity assembly files** \(*activityname*.dll\). These files contain definitions of the available workflow activities. The Authoring Tool cannot modify the activity assembly files.  
+- **Activity assembly files** \(*activityname*.dll\). These files contain definitions of the available workflow activities. The Authoring Tool cannot modify the activity assembly files.  
 
- To implement a management pack with workflows in your Service Manager console environment, make sure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
+To implement a management pack with workflows in your Service Manager console environment, make sure that Service Manager has access to the workflow assembly file and the activity assembly files, as well as the management pack itself. The following illustration shows how the various files interact when a workflow runs.  
 
- ![Management Pack and Workflow Files](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
+  ![Management Pack and Workflow Files](./media/automate-processes-workflows/author-mpandworkflowcomponents_production.png)  
 
 ### Trigger conditions for workflows  
  A workflow's data source module defines the workflow trigger condition. A workflow can have one of two types of trigger condition:  
@@ -55,17 +55,17 @@ Service Manager runs a Windows Workflow Foundation \(WF\) workflow using trigger
 
 The Activity Library in Service Manager Authoring Tool provides a number of workflow activities for building basic Windows Workflow Foundation \(WF\) workflows. Each activity performs a discrete function, such as establishing a loop structure within the workflow, running a script, or creating a Service Manager incident. The Activity Library includes the following types of activities:  
 
--   [Active Directory Activities](workflow-activity-ref.md) - Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
+- [Active Directory Activities](workflow-activity-ref.md) - Activities that perform Active&nbsp;Directory functions, such as adding users or computers to groups.  
 
--   [Control Flow Activities](workflow-activity-ref.md) - Activities that provide structure for the workflow, such as loops and if\-else branches.  
+- [Control Flow Activities](workflow-activity-ref.md) - Activities that provide structure for the workflow, such as loops and if\-else branches.  
 
--   [Virtual Machine Manager Activities](workflow-activity-ref.md) - Activities that you can use to build workflows that perform simple operations with virtual machines.  
+- [Virtual Machine Manager Activities](workflow-activity-ref.md) - Activities that you can use to build workflows that perform simple operations with virtual machines.  
 
--   [Script Activities](workflow-activity-ref.md) - Activities that run Windows PowerShell, command\-line, or Microsoft Visual Basic Scripting Edition \(VBScript\) scripts.  
+- [Script Activities](workflow-activity-ref.md) - Activities that run Windows PowerShell, command\-line, or Microsoft Visual Basic Scripting Edition \(VBScript\) scripts.  
 
--   [Service Manager Activities](workflow-activity-ref.md) - Activities that perform Service Manager functions, such as creating or updating incidents.  
+- [Service Manager Activities](workflow-activity-ref.md) - Activities that perform Service Manager functions, such as creating or updating incidents.  
 
- The following tables list the default activities that are available with the Authoring Tool:  
+  The following tables list the default activities that are available with the Authoring Tool:  
 
 |Active Directory activity|Description|  
 |-------------------------------|-----------------|  

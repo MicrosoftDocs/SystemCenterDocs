@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,18 +20,18 @@ manager: "cfreeman"
 ---
 # End Process
 The End Process activity ends processes that are running on the runbook server or on a remote computer. The End Process activity can be used to shut down an application that is not responding. The activity returns **success** if the named process is successfully ended or if the name process is not running. This activity uses a satellite license.  
-  
+
 ## Configuring the End Process Activity  
  Before you configure the End Process activity, you need to determine the following:  
-  
--   Name or ID of the process  
-  
--   Computer on which it is running  
-  
- Use the following information to configure the End Process activity.  
-  
+
+- Name or ID of the process  
+
+- Computer on which it is running  
+
+Use the following information to configure the End Process activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the computer where this process is running. Enter `localhost` to specify the runbook server where the runbook is being processed. You can also use the ellipsis **(...)** button to browse for the computer.|  
@@ -39,10 +39,10 @@ The End Process activity ends processes that are running on the runbook server o
 |**End all instances**|Select to end all processes that match the Process that you have specified when multiples are found.|  
 |**Fail if there is more than one instance**|Select to cause the end process to fail if it finds more than one process matching the name you specified.|  
 |**Terminate in**|Type the number of seconds to wait for the process to be shut down gracefully before it is shut down forcefully.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Number of instances|The number of processes that matched the **Process** you specified.|  

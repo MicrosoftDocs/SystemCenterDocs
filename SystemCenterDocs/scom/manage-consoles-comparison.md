@@ -55,5 +55,5 @@ There are a few differences between the Operations console and Web console that 
 
 * Learn [How to Connect to the Operations and Web Console](manage-consoles-how-to-connect.md) in order to access and interact with the operational data or perform administrative tasks.  
 
-- Learn what actions you can perform in the [Monitoring workspace](manage-using-monitoring-workspace.md), [Authoring workspace](manage-using-authoring-workspace.md), [Administration workspace](manage-using-admin-workspace.md), and [Reporting workspace](manage-using-reporting-workspace.md).   
+* Learn what actions you can perform in the [Monitoring workspace](manage-using-monitoring-workspace.md), [Authoring workspace](manage-using-authoring-workspace.md), [Administration workspace](manage-using-admin-workspace.md), and [Reporting workspace](manage-using-reporting-workspace.md).   
   

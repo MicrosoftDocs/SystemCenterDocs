@@ -25,14 +25,14 @@ Administrators can turn off this feature at any point of time.
 
 2. In the **Help** menu, click **Send diagnostic and usage data to Microsoft**.
 
-  ![console telemetry option](./media/telemetry/telemetry-option-help-menu.png)
+   ![console telemetry option](./media/telemetry/telemetry-option-help-menu.png)
 
 3. Select the  diagnostic and usage data sharing preference from the options displayed, and click  **OK**.
 
-  ![console telemetry selection](./media/telemetry/telemetry-option-selection.png)
+   ![console telemetry selection](./media/telemetry/telemetry-option-selection.png)
 
-  >[!NOTE]
-  >We recommend that you read the Privacy Statement before you select the option. 
+   >[!NOTE]
+   >We recommend that you read the Privacy Statement before you select the option. 
 
    -  To turn on telemetry, select **Yes, I am willing to send data to Microsoft**.
    - 	To turn off telemetry, select **No, I prefer not to send data to Microsoft**.

@@ -19,30 +19,30 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 
  Run SSH Command activity is based on PuTTY beta .70.  The implementation of SSH in "Run SSH Command" has certain limitations:  
 
--   The Run SSH Command activity does not work against all SSH-1 and SSH-2 servers.  In general, this activity functions with most SSH servers, but it does not work for all SSH server implementations.  
+- The Run SSH Command activity does not work against all SSH-1 and SSH-2 servers.  In general, this activity functions with most SSH servers, but it does not work for all SSH server implementations.  
 
--   You must download and use the PuTTy key generation tool to create keys for the Run SSH Command activity.  The key generation tool is available at [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
+- You must download and use the PuTTy key generation tool to create keys for the Run SSH Command activity.  The key generation tool is available at [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
 
--   The Run SSH Command activity supports SSH-1.  Microsoft does not recommend the use of SSH-1. If you want to prevent The Run SSH Command activity from using SSH-1, you should use a key file that contains keys that do not support SSH-1.  Do not use a username and password pair use a key file.  
+- The Run SSH Command activity supports SSH-1.  Microsoft does not recommend the use of SSH-1. If you want to prevent The Run SSH Command activity from using SSH-1, you should use a key file that contains keys that do not support SSH-1.  Do not use a username and password pair use a key file.  
 
--   The property **Accept Host Key Change** is not a recommended setting.  This property should only be used to establish the initial connection to a computer when the key is stored on the runbook server.  Runbooks that contain the Run SSH Command activity should be configured with **Accept Host Key Change** disabled.  When you use this property it disables the validation of the identity of the SSH server and represents a security risk.  
+- The property **Accept Host Key Change** is not a recommended setting.  This property should only be used to establish the initial connection to a computer when the key is stored on the runbook server.  Runbooks that contain the Run SSH Command activity should be configured with **Accept Host Key Change** disabled.  When you use this property it disables the validation of the identity of the SSH server and represents a security risk.  
 
--   You should review the list if cryptographic ciphers supported by PuTTY, which is found at [https://the.earth.li/~sgtatham/putty/0.70/htmldoc/Chapter4.html#config-ssh-encryption).  
+- You should review the list if cryptographic ciphers supported by PuTTY, which is found at [<https://the.earth.li/~sgtatham/putty/0.70/htmldoc/Chapter4.html#config-ssh-encryption>).  
 
--   PuTTY beta .61 uses a pseudorandom number generator suitable for most cryptographic purposes. It is not recommended for the generation of long-term cryptographic keys.  
+- PuTTY beta .61 uses a pseudorandom number generator suitable for most cryptographic purposes. It is not recommended for the generation of long-term cryptographic keys.  
 
- For more information about PuTTY, go to [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
+  For more information about PuTTY, go to [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
 
 ## Configuring the Run SSH Command Activity  
  Before you configure the Run SSH Command activity, you need to determine the following:  
 
--   Connection information for the computer that hosts the SSH server that you want to connect to.  
+- Connection information for the computer that hosts the SSH server that you want to connect to.  
 
--   Commands that you want to run.  
+- Commands that you want to run.  
 
--   Whether you require a key file to log into the server before you are able to run commands; this depends on your SSH server.  
+- Whether you require a key file to log into the server before you are able to run commands; this depends on your SSH server.  
 
- Use the following information to configure the Run SSH Command activity.  
+Use the following information to configure the Run SSH Command activity.  
 
 ### Details  
 

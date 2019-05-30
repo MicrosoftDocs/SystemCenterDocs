@@ -46,20 +46,20 @@ A connection establishes a reusable link between Orchestrator and Windows Azure.
 
 ### To set up a Windows Azure connection
 
-1.  In the Runbook Designer, click **Options**, and then click **Windows Azure**. The **Windows Azure** dialog box appears.
+1. In the Runbook Designer, click **Options**, and then click **Windows Azure**. The **Windows Azure** dialog box appears.
 
-2.  On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
+2. On the **Configurations** tab, click **Add** to begin the connection setup. The **Add Configuration** dialog box appears.
 
-3.  In the **Name** box, enter a name for the connection. This could be the name of the **Windows Azure** subscription, or a descriptive name to differentiate the type of connection.
+3. In the **Name** box, enter a name for the connection. This could be the name of the **Windows Azure** subscription, or a descriptive name to differentiate the type of connection.
 
-4.  In the **Type** box, click the ... button and select a connection type.
+4. In the **Type** box, click the ... button and select a connection type.
 
-5.  In the **Subscription ID** box, enter the subscription ID of the Windows Azure subscription to connect to.
+5. In the **Subscription ID** box, enter the subscription ID of the Windows Azure subscription to connect to.
 
-6.  In the **PFX File Path** box, click the ... button and select the management certificate file associated with this Windows Azure subscription.
->[!NOTE]
->Your certificate file enables authentication of requests to your Windows Azure subscription, and so should be stored in a non-public folder to prevent unauthorized access.
+6. In the **PFX File Path** box, click the ... button and select the management certificate file associated with this Windows Azure subscription.
+   >[!NOTE]
+   >Your certificate file enables authentication of requests to your Windows Azure subscription, and so should be stored in a non-public folder to prevent unauthorized access.
 
-7.  In the **PFX File Password** box, enter the password of the management certificate file associated with this Windows Azure subscription.
+7. In the **PFX File Password** box, enter the password of the management certificate file associated with this Windows Azure subscription.
 
-8.  Click **OK** to close the configuration dialog box, and then click **Finish**.
+8. Click **OK** to close the configuration dialog box, and then click **Finish**.

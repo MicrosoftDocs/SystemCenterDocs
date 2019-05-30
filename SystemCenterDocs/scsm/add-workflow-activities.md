@@ -98,17 +98,17 @@ The Activity Library includes specialized activities that incorporate Windows Po
 
 Use control flow activities to provide structure-branches, loops, or timer delays-for your workflow. The Service Manager Authoring Tool provides four built\-in control flow activities:  
 
--   [Delay Activity](workflow-activity-ref.md) - Introduces a delay between activities in a workflow.  
+- [Delay Activity](workflow-activity-ref.md) - Introduces a delay between activities in a workflow.  
 
--   [For Each Loop Activity](workflow-activity-ref.md) - Takes as an input an array \(*collection*\) of objects, and repeats the set of activities in the **For Each Loop** object in the collection.  
+- [For Each Loop Activity](workflow-activity-ref.md) - Takes as an input an array \(*collection*\) of objects, and repeats the set of activities in the **For Each Loop** object in the collection.  
 
--   [IfElse Activity](workflow-activity-ref.md) - Controls the sequence of activities in a workflow based on a Boolean \(True\/False\) condition.  
+- [IfElse Activity](workflow-activity-ref.md) - Controls the sequence of activities in a workflow based on a Boolean \(True\/False\) condition.  
 
--   [Parallel Activity](workflow-activity-ref.md) - Forks the sequence of activities into two simultaneous sequences of activities.  
+- [Parallel Activity](workflow-activity-ref.md) - Forks the sequence of activities into two simultaneous sequences of activities.  
 
- To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity's **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
+To use a **Delay** activity, just drag the **Delay** activity into the workflow, and then set the activity's **TimeoutDuration** property to the delay interval you want to use. To use an **IfElse** or **Parallel** activity, drag the activity into the workflow, and then drop regular activities into the **IfElse** or **Parallel** activity.  
 
- Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
+Using a **For Each Loop** activity resembles using an **IfElse** or **Parallel** activity; however, you might want to set additional properties for the activities in the **For Each Loop**. Use the following procedure to add a **For Each Loop** to a workflow.  
 
 ### To add a for each loop to a workflow  
 

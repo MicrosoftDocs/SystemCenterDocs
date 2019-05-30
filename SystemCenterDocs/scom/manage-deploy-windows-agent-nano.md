@@ -81,27 +81,27 @@ There are two methods available for installing the Operations Manager agent on N
 
 Use the following procedure to install the agent with a PowerShell script.   
 
-1.  Copy the NanoServer directory from the System Center Operations Manager setup directory to the Nano Server.
+1. Copy the NanoServer directory from the System Center Operations Manager setup directory to the Nano Server.
 
-2.  Open a PowerShell command window on the Nano Server from a computer running in the same domain as the Nano Server.
+2. Open a PowerShell command window on the Nano Server from a computer running in the same domain as the Nano Server.
 
-3.  Set the file path on the Nano Server to NanoAgent\NanoServer
+3. Set the file path on the Nano Server to NanoAgent\NanoServer
 
-4.  Run the following script:
+4. Run the following script:
 
-    ```
-    .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder ..\
-    ```
+   ```
+   .\InstallNanoServerScomAgentOnline.ps1 -ManagementServerFQDN <Management Server Name FQDN> -ManagementGroupName <Management Group Name> -NanoServerFQDN <FQDN of target Nano Server> -BinaryFolder ..\
+   ```
 
-    > [!NOTE]
-    > If the installation is successful you will see "Installation successful" in the Installlog.txt file which the installer will add to the NanoAgent\NanoServer directory on the Nano Server. You should not see any errors in that file.
+   > [!NOTE]
+   > If the installation is successful you will see "Installation successful" in the Installlog.txt file which the installer will add to the NanoAgent\NanoServer directory on the Nano Server. You should not see any errors in that file.
 
-5.  Run the following command on the Nano Server:
+5. Run the following command on the Nano Server:
 
-    ```
-    Net Start HealthService
-    ```
-### Troubleshooting agent installation
+   ```
+   Net Start HealthService
+   ```
+   ### Troubleshooting agent installation
 
 If you encounter any difficulties with setting up the Operations Manager Agent on a Nano Server you can follow the checklist below for possible solutions.
 

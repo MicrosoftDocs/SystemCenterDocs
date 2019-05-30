@@ -36,32 +36,32 @@ You must ensure that your server meets the minimum supported configurations for 
 
 ### To install the single server management group configuration
 
-1.  Log on to the server by using an account that has local administrative credentials.
+1. Log on to the server by using an account that has local administrative credentials.
 
-2.  On the System Center Operations Manager installation media, run **Setup.exe**, and then click **Install**.
+2. On the System Center Operations Manager installation media, run **Setup.exe**, and then click **Install**.
 
-3.  On the **Getting Started**, **Select features to install** page select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature. Then click **Next**.
+3. On the **Getting Started**, **Select features to install** page select the **Management server**, **Operations console**, **Web console**, and **Reporting server** features. To read more about each feature and its requirements, click **Expand all**, or expand the buttons next to each feature. Then click **Next**.
 
-4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
+4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
-    > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    > 
+   > [!NOTE]
+   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > 
 
-5.  On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
+5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
-    > [!NOTE]
-    > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+   > [!NOTE]
+   > Installation of the web console requires that ISAPI and CGI Restrictions in IIS be enabled for ASP.NET 4. To enable this, select the web server in IIS Manager, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
 
-6.  If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
+6. If the Prerequisites checker does not return any warnings or errors, the **Prerequisites**, **Proceed with Setup** page appears. Click **Next**.
 
-7.  On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then click **Next**.
+7. On the **Configuration**, **Specify an installation option** page, select **Create the first Management server in a new management group**, type in a name for your management group and then click **Next**.
 
-    > [!NOTE]
-    > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:, ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] <>{}, and it cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
+   > [!NOTE]
+   > After the management group name is set, it cannot be changed. The Management Group name cannot contain the following characters:, ( ) ^ ~ : ; . ! ? " , ' ` @ # % \ / * + = $ | & [ ] <>{}, and it cannot have a leading or trailing space. It is recommended that the Management Group name be unique within your organization if you plan to connect several management groups together.
 
-8.  On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and then click **Next**.
+8. On the **Configuration**, **Please read the license terms** page, review the Microsoft Software License Terms, select **I have read, understood, and agree with the license terms**, and then click **Next**.
 
 9. When the **Configuration**, **Configure the operational database** page opens, in the **Server name and instance name** box, type the name of the server and the name of the SQL Server instance for the database server that will host the operational database. If you installed SQL Server by using the default instance, you only have to enter the server name. If you changed the default SQL Server port, you must type in the new port number in the **SQL Server port** box.
 
@@ -69,15 +69,15 @@ You must ensure that your server meets the minimum supported configurations for 
 
     The white **X** appears under the following circumstances:
 
-    -   You entered an instance of SQL Server or a SQL Server port value that is not valid or that does not exist.
+   - You entered an instance of SQL Server or a SQL Server port value that is not valid or that does not exist.
 
-    -   The instance of SQL Server that you specified does not have the required configuration or features.
+   - The instance of SQL Server that you specified does not have the required configuration or features.
 
-    -   You entered a value that is out-of-range (for example, port 999999).
+   - You entered a value that is out-of-range (for example, port 999999).
 
-    -   You entered an illegal character for that box (for example, server\instance%)
+   - You entered an illegal character for that box (for example, server\instance%)
 
-    You can hover the cursor over the **Server name and instance** text box to view additional information about the error.
+     You can hover the cursor over the **Server name and instance** text box to view additional information about the error.
 
 10. After you type the correct value for the SQL Server database server name, click the **SQL Server port** box so that Setup will attempt to validate the values you typed for the SQL Server name and for the port number.
 

@@ -43,27 +43,27 @@ A common question that arises during System Center Data Protection Manager (DPM)
   
 ###  <a name="BKMK_Manual"></a> How to configure Windows Firewall manually  
   
-1.  In Server Manager, select **Local Server** > **Tools** > **Windows Firewall with Advanced Security**.  
+1. In Server Manager, select **Local Server** > **Tools** > **Windows Firewall with Advanced Security**.  
   
-2.  In the **Windows Firewall with Advanced Security** console, verify that Windows Firewall is on for all profiles, and then click **Inbound Rules**.  
+2. In the **Windows Firewall with Advanced Security** console, verify that Windows Firewall is on for all profiles, and then click **Inbound Rules**.  
   
-3.  To create an exception, in the **Actions** pane, click **New Rule** to open the **New Inbound Rule** Wizard.  
+3. To create an exception, in the **Actions** pane, click **New Rule** to open the **New Inbound Rule** Wizard.  
   
-     On the **Rule Type** page, verify that **Program** is selected, and then click **Next**.  
+    On the **Rule Type** page, verify that **Program** is selected, and then click **Next**.  
   
-4.  Configure exceptions to match the default rules that would have been created by DPM Setup if Windows Firewall had been enabled when DPM was installed.  
+4. Configure exceptions to match the default rules that would have been created by DPM Setup if Windows Firewall had been enabled when DPM was installed.  
   
-    1.  To manually create the exception that matches the default Microsoft System Center 2012 R2 Data Protection Manager rule on the **Program** page, click **Browse** for the **This program path** box, and then browse to **<system drive letter\>:\Program Files\Microsoft DPM\DPM\bin** > **Msdpm.exe** > **Open**> **Next**.  
+   1. To manually create the exception that matches the default Microsoft System Center 2012 R2 Data Protection Manager rule on the **Program** page, click **Browse** for the **This program path** box, and then browse to **<system drive letter\>:\Program Files\Microsoft DPM\DPM\bin** > **Msdpm.exe** > **Open**> **Next**.  
   
-         On the Action page leave the default setting of **Allow the connection**, or change the settings according to your organization’s guidelines > **Next**.  
+       On the Action page leave the default setting of **Allow the connection**, or change the settings according to your organization’s guidelines > **Next**.  
   
-         On the **Profile** page, leave the default settings of **Domain**, **Private**, and **Public**, or change the settings according to your organization’s guidelines > **Next**.  
+       On the **Profile** page, leave the default settings of **Domain**, **Private**, and **Public**, or change the settings according to your organization’s guidelines > **Next**.  
   
-         On the **Name** page, type a name for the rule and optionally a description > **Finish**.  
+       On the **Name** page, type a name for the rule and optionally a description > **Finish**.  
   
-    2.  Now follow the same steps to manually create the exception that matches the default Microsoft System Center 2012 R2 Data Protection Replication Agent rule by browsing to **<system drive letter\>:\Program Files\Microsoft DPM\DPM\bin**, and selecting **Dpmra.exe**.  
+   2. Now follow the same steps to manually create the exception that matches the default Microsoft System Center 2012 R2 Data Protection Replication Agent rule by browsing to **<system drive letter\>:\Program Files\Microsoft DPM\DPM\bin**, and selecting **Dpmra.exe**.  
   
-     Be aware that if you’re running System Center 2012 R2 with SP1 the default rules will be named by using **Microsoft System Center 2012 Service Pack 1 Data Protection Manager**.  
+      Be aware that if you’re running System Center 2012 R2 with SP1 the default rules will be named by using **Microsoft System Center 2012 Service Pack 1 Data Protection Manager**.  
   
 ##  <a name="BKMK_SQL"></a> Set up Windows Firewall on the remote instance of SQL Server  
   

@@ -45,11 +45,11 @@ Use the following steps:
 ## Configuring the PGP Encrypt File Activity  
  Before you configure the PGP Encrypt File activity, you need to determine the following:  
 
--   The path of the files that you want to encrypt.  
+- The path of the files that you want to encrypt.  
 
--   The output folder where the encrypted files will be stored.  
+- The output folder where the encrypted files will be stored.  
 
- Use the following information to configure the PGP Encrypt File activity.  
+Use the following information to configure the PGP Encrypt File activity.  
 
 ### Details  
 

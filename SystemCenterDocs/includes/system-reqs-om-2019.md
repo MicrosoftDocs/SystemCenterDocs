@@ -73,15 +73,16 @@ Use this information to evaluate if your hardware environment is ready to suppor
 
 The following versions of Windows Server operating system are supported for the following Operations Manager components.
 
-| Component | Windows Server 2016 Standard, Datacenter | Windows 2016 Server Core | Windows Server 2019 Standard, Datacenter |Windows Server 2019 Server Core |
-|:--- |:---|:--- |:--- |:--- |
-| **Operations Manager** Management Server | yes | yes | yes |yes|
-| **Operations Manager** Gateway Server | yes | yes | yes |yes|
-| **Operations Manager** Web Console | yes |  |yes | |
-| **Operations Manager** ACS Collector | yes | |yes ||
-| **Operations Manager** Operations console | yes | yes (with FOD)| yes  |yes (with FOD)|
-| **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes | yes |yes |yes|
-| **Operations Manager** Reporting server | yes | |yes | ||
+
+| Component                                                           | Windows Server 2016 Standard, Datacenter | Windows 2016 Server Core | Windows Server 2019 Standard, Datacenter | Windows Server 2019 Server Core |
+|:--------------------------------------------------------------------|:-----------------------------------------|:-------------------------|:-----------------------------------------|:--------------------------------|
+| **Operations Manager** Management Server                            | yes                                      | yes                      | yes                                      | yes                             |
+| **Operations Manager** Gateway Server                               | yes                                      | yes                      | yes                                      | yes                             |
+| **Operations Manager** Web Console                                  | yes                                      |                          | yes                                      |                                 |
+| **Operations Manager** ACS Collector                                | yes                                      |                          | yes                                      |                                 |
+| **Operations Manager** Operations console                           | yes                                      | yes (with FOD)           | yes                                      | yes (with FOD)                  |
+| **Operations Manager** Operational, Data Warehouse,<br>ACS database | yes                                      | yes                      | yes                                      | yes                             |
+| **Operations Manager** Reporting server                             | yes                                      |                          | yes                                      |                                 |
 
 ### Operations Manager operational, data warehouse, and ACS audit database
 
@@ -91,20 +92,20 @@ The following versions of Windows Server operating system are supported for the 
 ### Management server/Gateway server
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
-- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - Windows Remote Management: Windows Remote Management must be enabled for the management server.
-- .NET Framework 4 or .NET Framework 4.5 is required.
+- .NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Operations Manager console
 
 - Operating System: See [Server Operating System requirements](#server-operating-system).
-- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
+- Windows PowerShell version: Windows PowerShell version 2.0, or Windows PowerShell version 3.0.
 - [Microsoft Report Viewer 2015 runtime](https://www.microsoft.com/download/details.aspx?id=45496&6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1).
 
 > [!NOTE]
 > Report Viewer has a dependency on [Microsoft CLR Types for SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42295). The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 
-- .NET Framework 4 or .NET Framework 4.5 is required.
+- .NET Framework 4 or .NET Framework 4.5 is required.
 
 ### Web console
 
@@ -135,10 +136,10 @@ The following versions of Windows Server operating system are supported for the 
     - Windows Authentication
  <br>
 - Selected website for web console: Requires a configured http or https binding.
-- .NET Framework 4 or .NET Framework 4.5 is required.
+- .NET Framework 4 or .NET Framework 4.5 is required.
 
 > [!NOTE]
-> Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
+> Installation of the web console requires that **ISAPI and CGI Restrictions** in IIS are enabled for ASP.NET 4. To enable this, select the web server in **IIS Manager**, and then double-click **ISAPI and CGI Restrictions**. Select **ASP.NET v4.0.30319**, and then click **Allow**.
 
 ### Operations Manager reporting server
 
@@ -148,9 +149,9 @@ The following versions of Windows Server operating system are supported for the 
 - Microsoft SQL Server Reporting Services: See [SQL Server Requirements](../scom/plan-sqlserver-design.md#sql-server-requirements).
 
     > [!NOTE]
-    > System Center 2016 – Operations Manager and later supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
+    > System Center 2016 – Operations Manager and later supports SQL Server Reporting Services in native mode only; do not use SharePoint integrated mode.
 
-- .NET Framework 4 or .NET Framework 4.5 is required.
+- .NET Framework 4 or .NET Framework 4.5 is required.
 
 ## Client operating system
 
@@ -209,7 +210,7 @@ Operations Manager integrates with Active Directory for authentication, rights a
 
 ### Active Directory Domain Services
 
-System Center Operations Manager relies on AD DS for a number of services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
+System Center Operations Manager relies on AD DS for a number of services, including definition of security principles, rights assignment, authentication, and authorization. Operations Manager queries AD DS when performing computer and service discovery and can use AD DS for storing and distributing agent configuration information. For Operations Manager to function properly, AD DS and its supporting service, DNS, need to be healthy and at certain minimum configuration levels. In addition, certain domain naming conventions must be followed.
 
 ### Domain space naming
 
@@ -217,7 +218,7 @@ An Operations Manager management group cannot be installed into a root Active Di
 
 ### Domain functional level
 
-Windows Server Active Directory can operate at different functional levels. These levels are distinguished by the version of the Windows Server operating system that is permitted on the domain controllers present in the domain. System Center Operations Manager does not have a domain functional level requirement.
+Windows Server Active Directory can operate at different functional levels. These levels are distinguished by the version of the Windows Server operating system that is permitted on the domain controllers present in the domain. System Center Operations Manager does not have a domain functional level requirement.
 
 ### Forest functional level
 
@@ -225,4 +226,4 @@ The forest functional level is similar to the domain functional level in that it
 
 ### DNS
 
-DNS must be installed and in a healthy state to support AD DS. Beyond the reliance of Operations Manager on AD DS, there are no specific DNS requirements.
+DNS must be installed and in a healthy state to support AD DS. Beyond the reliance of Operations Manager on AD DS, there are no specific DNS requirements.
