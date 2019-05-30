@@ -221,11 +221,11 @@ If your organization does not want to use secure communication protocol (HTTPS),
 
 1. Copy and paste the following text into a .txt file.
 
-  `Windows Registry Editor Version 5.00`
+   `Windows Registry Editor Version 5.00`
 
-  `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
+   `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Data Protection Manager\VMWare]`
 
-  `"IgnoreCertificateValidation"=dword:00000001`
+   `"IgnoreCertificateValidation"=dword:00000001`
 
 2. Save the file with the name, **DisableSecureAuthentication.reg**, to your DPM server.
 3. Double-click the file to activate the registry entry.
@@ -326,11 +326,11 @@ This section explains how to use DPM to restore VMware VM [recovery points](http
 6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, click **Modify**. To leave network throttling disabled, click **Next**. No other options on this wizard screen are available for VMware VMs.
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
 7. On the **Select Recovery Type** screen, choose whether to recover to the original instance, or to a new location, and click **Next**.
-  - If you choose **Recover to original instance**, you don't need to make any more choices in the wizard. The data for the original instance is used.
-  - If you choose **Recover as virtual machine on any host**, then on the **Specify Destination** screen, provide the information for **ESXi Host**, **Resource Pool**, **Folder**, and **Path**.
+   - If you choose **Recover to original instance**, you don't need to make any more choices in the wizard. The data for the original instance is used.
+   - If you choose **Recover as virtual machine on any host**, then on the **Specify Destination** screen, provide the information for **ESXi Host**, **Resource Pool**, **Folder**, and **Path**.
      ![open Recovery wizard ](./media/back-up-vmware/select-recovery-type.png)
 8. On the **Summary** screen, review your settings and click **Recover** to start the recovery process.
-The **Recovery status** screen shows the progression of the recovery operation.
+   The **Recovery status** screen shows the progression of the recovery operation.
 
 ### Restore an individual file from a VM
 

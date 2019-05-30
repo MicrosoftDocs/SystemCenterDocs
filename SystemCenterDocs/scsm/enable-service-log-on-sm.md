@@ -46,7 +46,7 @@ To enable using domain policy, contact your administrators. To use local group p
 
 If required accounts aren't provided with service log on permission, then *monitoringhost.exe* doesn't run under those accounts. Which means, some of the workflows such as SLA/SLO wouldn't run. In such case, the following error event is logged in the Operations Manager event log:
 
-*The Health Service could not log on the RunAs account XXXXXXX for management group XXXX because it has not been granted the *Log on as a service*
+<em>The Health Service could not log on the RunAs account XXXXXXX for management group XXXX because it has not been granted the *Log on as a service</em>
 
 Here is a sample error:
 

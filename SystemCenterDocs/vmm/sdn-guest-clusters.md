@@ -34,29 +34,29 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 
 **Use the following steps**:
 
-1.	Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
+1. Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
-  > [!NOTE]
-  >  Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
-  > Note the reserved IP address you are using for this cluster. This IP will be required later while creating a VIP using the VIP template.
+   > [!NOTE]
+   >  Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
+   > Note the reserved IP address you are using for this cluster. This IP will be required later while creating a VIP using the VIP template.
 
-2.	Create a VIP template. In VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
+2. Create a VIP template. In VMM console > **Fabric** > **Networking** > **VIP Templates**, right-click and select **Add VIP Template**.
 
-  - In **Type**, select **Microsoft Network Controller**.
-  ![network controller](media/sdn-guest-clustering/select-controller.png)
+   - In **Type**, select **Microsoft Network Controller**.
+   ![network controller](media/sdn-guest-clustering/select-controller.png)
 
- - In **Load Balancing**, select **Enable Floating IP** Checkbox.
- ![floating IP](media/sdn-guest-clustering/enable-floating.png)
+   - In **Load Balancing**, select **Enable Floating IP** Checkbox.
+   ![floating IP](media/sdn-guest-clustering/enable-floating.png)
 
- - In **Health Monitor**, add the probe which would be used on the guest cluster VMs. Here, you must add the same port which was configured while clustering the hosts in the previous step.
-  ![health monitor](media/sdn-guest-clustering/health-monitors.png)
+   - In **Health Monitor**, add the probe which would be used on the guest cluster VMs. Here, you must add the same port which was configured while clustering the hosts in the previous step.
+   ![health monitor](media/sdn-guest-clustering/health-monitors.png)
 
-3.	Using PowerShell, create a VIP using the VIP template.
+3. Using PowerShell, create a VIP using the VIP template.
 
- > [!NOTE]
- > As explained in the beginning of this article, an Internal Load Balancer VIP is being implemented to support Guest Clustering. The PowerShell script for creating a VIP from the VIP template, to Load Balance Internal Network traffic is provided below.
+   > [!NOTE]
+   > As explained in the beginning of this article, an Internal Load Balancer VIP is being implemented to support Guest Clustering. The PowerShell script for creating a VIP from the VIP template, to Load Balance Internal Network traffic is provided below.
 
- Use the [sample script here](sdn-load-balance-network-traffic.md#script-for-creating-vip-to-load-balance-internal-network-traffic)to create a VIP and load balance the internal network. Modify the parameters as required, based on the following details:
+   Use the [sample script here](sdn-load-balance-network-traffic.md#script-for-creating-vip-to-load-balance-internal-network-traffic)to create a VIP and load balance the internal network. Modify the parameters as required, based on the following details:
 
    - LBServiceName – name of the Network Controller service
    - VipMemberNames – names of the VMs in the cluster.

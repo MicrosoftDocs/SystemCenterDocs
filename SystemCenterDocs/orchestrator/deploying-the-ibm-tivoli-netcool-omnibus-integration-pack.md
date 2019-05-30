@@ -70,29 +70,29 @@ After you download the integration pack file, you must register it with the Orch
 A connection establishes a reusable link between Orchestrator and an IBM Tivoli Netcool/OMNIbus server. You can create as many connections as you require to link to multiple servers running IBM Tivoli Netcool/OMNIbus. You can also create multiple connections to the same server to allow for differences in security permissions for different user accounts.
 
 
-1.  In Runbook Designer, click **Options**, and then click **IBM Netcool/OMNIbus**. The **IBM Netcool/OMNIbus** dialog box appears.
+1. In Runbook Designer, click **Options**, and then click **IBM Netcool/OMNIbus**. The **IBM Netcool/OMNIbus** dialog box appears.
 
-2.  On the **Connections** tab, click **Add** to begin the connection setup. The **Netcool/OMNIbus Connection** dialog box appears.
+2. On the **Connections** tab, click **Add** to begin the connection setup. The **Netcool/OMNIbus Connection** dialog box appears.
 
-3.  In the **Name** box, enter a name for the connection. This can be a descriptive name to distinguish the type of connection.
+3. In the **Name** box, enter a name for the connection. This can be a descriptive name to distinguish the type of connection.
 
-4.  In the **Host name** box, enter the computer name or IP address of the IBM Tivoli Netcool/OMNIbus computer. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN).
+4. In the **Host name** box, enter the computer name or IP address of the IBM Tivoli Netcool/OMNIbus computer. If you are using the computer name, you can type the NetBIOS name or the fully qualified domain name (FQDN).
 
-5.  In the **Port number** box, enter the port number that you want to use. By default, this is 0. The default port used by IBM Tivoli Netcool/OMNIbus is 4100.
+5. In the **Port number** box, enter the port number that you want to use. By default, this is 0. The default port used by IBM Tivoli Netcool/OMNIbus is 4100.
 
-6.  In the **User id** and **Password** boxes, enter the Orchestrator credentials to connect to the IBM Tivoli Netcool/OMNIbus server.   
->[!NOTE]
->The user needs to be assigned to the 'System' group to generate alerts within Netcool.
+6. In the **User id** and **Password** boxes, enter the Orchestrator credentials to connect to the IBM Tivoli Netcool/OMNIbus server.   
+   >[!NOTE]
+   >The user needs to be assigned to the 'System' group to generate alerts within Netcool.
 
- Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
+   Optionally, you can make the connection to the IBM Tivoli Netcool/OMNIbus server using a secure socket connection (SSL). To use a secure socket connection:
 
-    1.  Select the **Use Secure Socket Layer** checkbox.
-    2.  In the **Trust Store** box, enter the location of the trust store where the certificates are located.
-        Enter a file name or browse for the file.
-    3.  In the **Trust Store Password** box, enter the password for the protected trust store.
+   1.  Select the **Use Secure Socket Layer** checkbox.
+   2.  In the **Trust Store** box, enter the location of the trust store where the certificates are located.
+       Enter a file name or browse for the file.
+   3.  In the **Trust Store Password** box, enter the password for the protected trust store.
 
-7.  Click **Test Connection**. When the success message appears, click **OK**.
+7. Click **Test Connection**. When the success message appears, click **OK**.
 
-8.  Add additional connections if applicable.
+8. Add additional connections if applicable.
 
-9.  Click **OK** to close the configuration dialog box, and then click **Finish**.
+9. Click **OK** to close the configuration dialog box, and then click **Finish**.

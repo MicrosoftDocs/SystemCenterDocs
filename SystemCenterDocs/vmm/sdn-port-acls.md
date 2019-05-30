@@ -102,19 +102,19 @@ Ensure that [SDN network controller](sdn-controller.md) is deployed.
 
 ## Attach an ACL to a VM subnet
 
-1.	Get the VM subnet to attach the ACL.
+1. Get the VM subnet to attach the ACL.
 
-    ```powershell
-    PS C:\> $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
-    ```
+   ```powershell
+   PS C:\> $vmSubnet = Get-SCVMSubnet -Name “Tenant Subnet”
+   ```
 2. Attach an existing port ACL to the VM subnet.
 
     ```powershell
     PS C:\> Set-SCVMSubnet -VMSubnet $vmSubnet -PortACL $portACL
     ```
->[!NOTE]
->
-> You can also attach a port ACL while creating VM subnet through **New-SCVMSubnet cmdlet**. [Learn more](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvmsubnet).
+   >[!NOTE]
+   >
+   > You can also attach a port ACL while creating VM subnet through **New-SCVMSubnet cmdlet**. [Learn more](https://docs.microsoft.com/powershell/systemcenter/systemcenter2016/virtualmachinemanager/vlatest/new-scvmsubnet).
 
 ## Detach a port ACL from a VM subnet
 

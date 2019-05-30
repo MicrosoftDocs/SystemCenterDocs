@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,23 +20,24 @@ manager: "cfreeman"
 ---
 # Start/Stop Service
 The Start/Stop Service activity will start, stop, pause, or restart a Windows service. The Start/Stop Service activity can be used to restart a service that has stopped responding or shut down a service in preparation for a backup. This activity uses a satellite license.  
-  
+
 ## Configuring the Start/Stop Service Activity  
  Before you configure the Start/Stop Service activity you need to determine the following:  
-  
--   The service name  
-  
--   The computer where the service is running  
-  
--   Parameters that are required to start the service.  
-  
-    > [!NOTE]
-    >  This depends on the service you are interacting with; it may not be required.  
-  
- Use the following information to configure the Start/Stop Service activity.  
-  
+
+- The service name  
+
+- The computer where the service is running  
+
+- Parameters that are required to start the service.  
+
+  > [!NOTE]
+  >  This depends on the service you are interacting with; it may not be required.  
+
+
+Use the following information to configure the Start/Stop Service activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Action**|Select one of the following actions that you want to take on the service:<br /><br /> -   **Start service**: Start the service if it is stopped. This action is ignored if the service is already running.<br />-   **Stop service**: Stop a running service. This action is ignored if the service is already stopped.<br />-   **Pause service**: Pause a running service. This action is ignored if the service is already stopped or paused.<br />-   **Restart service**: Stop then start a running service. If the service is already stopped it will only be started.|  
@@ -44,10 +45,10 @@ The Start/Stop Service activity will start, stop, pause, or restart a Windows se
 |**Service**|Type the name of the service. You can also use the ellipsis **(...)** button to browse for the service. Browsing is only available if you have specified a valid **Computer**.|  
 |**Parameters**|Type any parameters that are required to interact with the **Service**.|  
 |**Action must complete in less than**|Specify the maximum amount of time in which the action must complete. After the time has expired, the Start/Stop Service activity will timeout and return a failure.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Service display name|The name of the service as it appears in the Windows Services control panel utility.|  

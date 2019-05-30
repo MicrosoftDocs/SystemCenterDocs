@@ -128,27 +128,28 @@ The following list includes the workloads that are supported by this feature.
 
 The following workloads are supported for the operating systems listed below.
 
-| **Feature** | **Windows Server 2012 R2** | **Windows Server 2016**|**Windows Server 2019** |
-| --- | --- | --- | --- |
-| Active Directory Certificate Service | Y | Y |  |
-| Active Directory Domain Services | Y | Y | Y |
-| Active Directory Federation Service | Y | Y | Y |
-| Active Directory Right Management Service | Y | Y | Y |
-| DHCP Server | Y | Y | Y |
-| DNS Server | Y | Y | Y |
-| Fail Over Clustering | Y | Y | Y |
-| File Services | Y | Y | Y |
-| IIS | Y | Y | Y |
-| Network Load Balancing | Y | Y | Y |
-| Print Server | Y | Y | Y |
-| Essentials | Y | Y |   |
-| Hyper-V | Y | Y |   |
-| Queueing | Y | Y |  |
-| Remote access | Y |   |   |
-| Remote Desktop Service | Y | Y |   |
-| Web application proxy | Y |   |   |
-| Windows Deployment Services | Y |   |   |
-| Windows Update Services | Y |   |   | |
+
+|                **Feature**                | **Windows Server 2012 R2** | **Windows Server 2016** | **Windows Server 2019** |
+|-------------------------------------------|----------------------------|-------------------------|-------------------------|
+|   Active Directory Certificate Service    |             Y              |            Y            |                         |
+|     Active Directory Domain Services      |             Y              |            Y            |            Y            |
+|    Active Directory Federation Service    |             Y              |            Y            |            Y            |
+| Active Directory Right Management Service |             Y              |            Y            |            Y            |
+|                DHCP Server                |             Y              |            Y            |            Y            |
+|                DNS Server                 |             Y              |            Y            |            Y            |
+|           Fail Over Clustering            |             Y              |            Y            |            Y            |
+|               File Services               |             Y              |            Y            |            Y            |
+|                    IIS                    |             Y              |            Y            |            Y            |
+|          Network Load Balancing           |             Y              |            Y            |            Y            |
+|               Print Server                |             Y              |            Y            |            Y            |
+|                Essentials                 |             Y              |            Y            |                         |
+|                  Hyper-V                  |             Y              |            Y            |                         |
+|                 Queueing                  |             Y              |            Y            |                         |
+|               Remote access               |             Y              |                         |                         |
+|          Remote Desktop Service           |             Y              |            Y            |                         |
+|           Web application proxy           |             Y              |                         |                         |
+|        Windows Deployment Services        |             Y              |                         |                         |
+|          Windows Update Services          |             Y              |                         |                         |
 
 ::: moniker-end
 

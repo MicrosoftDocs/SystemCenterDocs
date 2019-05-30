@@ -20,6 +20,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 
 
 ## IBM AIX 7.1
+
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|
 |OS version|Version of operating system|7100-01-06-1241|
@@ -216,6 +217,7 @@ The following tables describe the required UNIX and Linux operating systems and 
 |PAM|Pluggable Authentication Modules|1.1.8-1|  
 
 ## Red Hat Enterprise Linux Server 7 (Power)  
+
 |Required package|Description|Minimum version|  
 |--------------------|---------------|-------------------|  
 |glibc|C Standard Libraries|2.17|  

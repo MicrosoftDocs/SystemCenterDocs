@@ -32,26 +32,26 @@ Ensure the following prerequisites:
 
 **Use the following steps**:
 
-1.	Right-click the host in **VMs & Services** and navigate to **Enhanced Session** option.
-2.	Select **Allow enhanced session mode** and click **OK**.
+1. Right-click the host in **VMs & Services** and navigate to **Enhanced Session** option.
+2. Select **Allow enhanced session mode** and click **OK**.
 
-    ![allow enhanced session](media/enhanced-console/enhanced-console-enable.png)
+   ![allow enhanced session](media/enhanced-console/enhanced-console-enable.png)
 
-3.	In VMM console, navigate to the VM on this host.
-4.	Right-click the VM and click **Connect via Console**.
-5.	Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
+3. In VMM console, navigate to the VM on this host.
+4. Right-click the VM and click **Connect via Console**.
+5. Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
 
-    ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status.png)
+   ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status.png)
 
-    > [!NOTE]
-    > This action will close the current session and opens a new session. You will be redirected to the login screen in the new session.
+   > [!NOTE]
+   > This action will close the current session and opens a new session. You will be redirected to the login screen in the new session.
 
-6.	To switch back to basic session, click **Open Basic Session** at the top right.
+6. To switch back to basic session, click **Open Basic Session** at the top right.
 
-    >[!NOTE]
-    >  Once Enhanced Session Mode policy is enabled on the host:
-   - Close any open console sessions to view the **Enhanced Session** option.
-   - For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
+   > [!NOTE]
+   >  Once Enhanced Session Mode policy is enabled on the host:
+   > - Close any open console sessions to view the **Enhanced Session** option.
+   > - For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
 
 
 ## Next steps

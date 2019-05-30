@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,41 +20,41 @@ manager: "cfreeman"
 ---
 # Write to Database
 The Write to Database activity writes a row into a database table. This activity interacts with the following databases:  
-  
--   Access  
-  
--   ODBC  
-  
--   Oracle  
-  
--   SQL Server  
-  
- The Write to Database activity can be used to replicate important Windows Event Log Events to a database table that is able to be queried and maintained.  
-  
+
+- Access  
+
+- ODBC  
+
+- Oracle  
+
+- SQL Server  
+
+The Write to Database activity can be used to replicate important Windows Event Log Events to a database table that is able to be queried and maintained.  
+
 ## Configuring the Write to Database Activity  
  Before you configure the Write to Database activity, you need to determine the following:  
-  
--   The database you are connecting to.  
-  
--   The table and fields you are updating.  
-  
- Use the following information to configure the Write to Database activity.  
-  
+
+- The database you are connecting to.  
+
+- The table and fields you are updating.  
+
+Use the following information to configure the Write to Database activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Table name**|Type the name of the database table that you are adding the row to.|  
 |**Data**|The list displays all the fields in the table that will be set. To add a field, click **Add** and enter the **Field name** and **Value**. To remove a field, select it and click **Remove**. To edit a field, double-click the field name.|  
-  
+
 ### Connection Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Database type**|Select the **Database type** from the drop-down list. The options include the following:<br /><br /> -   Access<br />-   ODBC<br />-   Oracle<br />-   SQL Server<br /><br /> Configuration instructions for each **Connection** tab **Database type** are listed in the following tables.|  
-  
+
 ### Access Connections Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File**|Type the name of the **Access** database file that you want to access.|  
@@ -62,47 +62,47 @@ The Write to Database activity writes a row into a database table. This activity
 |**User name**|Type the user name for the workgroup file.|  
 |**Password**|Type the password for the workgroup file.|  
 |**DB password**|Type the password for the Access database.|  
-  
+
 ### ODBC Connections Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**DSN**|Enter the data source name.|  
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
-  
+
 ### Oracle Connections Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Service Name**|Enter the service name.|  
 |**User name**|Enter the user name for this database.|  
 |**Password**|Enter the password for this database.|  
-  
+
 ### SQL Server Connections Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Authentication**|Select either **Windows Authentication** or **SQL Server Authentication**.|  
 |**Server**|Enter the name of the SQL Server that you want to access.|  
 |**Initial catalog**|Enter the name of the initial catalog.<br /><br /> If you selected the **SQL Server Authentication** option, type the user name and password used to access the SQL Server in the **User name** and **Password** boxes.|  
-  
+
 ### Timeout Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Timeout**|Enter the amount of time that the Query Database activity will wait for the database operation to complete.<br /><br /> Set this value to `0` to wait indefinitely.|  
-  
+
 ### Security Credentials Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Use the security of the account assigned to the service**|Select this option if you want to run the Query Database activity using the same account that the runbook server uses.|  
 |**This account**|Use this option to specify a different account. Enter the **User name** and **Password**. **Note:**  If you specify an invalid user name or password, the account assigned to the runbook server will be used to run the activity.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Initial Catalog|The initial catalog that was used when connecting to the database. This published data will only be available when **SQL Server** is selected on the **Connection** tab.|  

@@ -68,28 +68,28 @@ When you use the browse feature to look up a collection name, or enter a collect
 
 ## To configure the create collection activity
 
-1.  From the **Activities** pane, drag a **Create Collection** activity
-    to the active runbook.
+1. From the **Activities** pane, drag a **Create Collection** activity
+   to the active runbook.
 
-2.  Double-click the **Create Collection** activity icon. The
-    **Properties** dialog box opens.
+2. Double-click the **Create Collection** activity icon. The
+   **Properties** dialog box opens.
 
-3.  Configuring the **Details** tab:
+3. Configuring the **Details** tab:
 
-    1.  In the **Connection** section, click the ellipsis button
-        **(...)**, and then select the Configuration Manager server
-        connection that you want to use for this activity. Click **OK**.
+   1. In the **Connection** section, click the ellipsis button
+      **(...)**, and then select the Configuration Manager server
+      connection that you want to use for this activity. Click **OK**.
 
-    2.  In the **Fields** section, enter a value for each of the
-        required properties. If the property is Lookup-enabled, you can
-        click the ellipsis **(…)** button next to the text box to browse
-        for a value.\
-        \
-        You can also use published data to automatically populate the
-        value of the property from the data output by a previous
-        activity in the runbook.
+   2. In the **Fields** section, enter a value for each of the
+      required properties. If the property is Lookup-enabled, you can
+      click the ellipsis **(…)** button next to the text box to browse
+      for a value.\
+      \
+      You can also use published data to automatically populate the
+      value of the property from the data output by a previous
+      activity in the runbook.
 
-4.  Click **Finish**.
+4. Click **Finish**.
 
 ## Schedule tab properties
 

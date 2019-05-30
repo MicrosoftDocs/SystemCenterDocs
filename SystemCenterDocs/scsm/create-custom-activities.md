@@ -83,7 +83,6 @@ namespace Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary
     [Designer(typeof(WorkflowActivityBaseDesigner))]
     public sealed partial class SetActivityStatusToCompleted : WorkflowActivityBase
     {
-
 ```
 
 ### Input properties for the example WF activity
@@ -117,7 +116,6 @@ The code declares one property, **ActivityId**, as a dependency property. This m
           this.SetValue(ActivityIdProperty, value);
       }
 }
-
 ```
 
 ### Execution behavior in the example WF activity
@@ -195,7 +193,6 @@ The **Execute** method does the actual work of this WF activity. Within the scop
         }
     }
 }
-
 ```
 
 ### Validation behavior in the example WF activity
@@ -249,7 +246,6 @@ namespace Microsoft.ServiceManager.WorkflowAuthoring.ActivityLibrary.Validators
         }
     }
 }
-
 ```
 
 ### Use the example WF activity in a workflow
@@ -302,7 +298,6 @@ namespace WorkflowAuthoring
         }
     }
 }
-
 ```
 
 ## XOML code for the workflow
@@ -315,7 +310,7 @@ WF uses the XOML format for some of the workflow definitions. In the case of the
 </SequentialWorkflowActivity>
 ```
 
-SetActivityStatusToCompleteWF.xoml declares that the workflow**,  SetActivityStatusToCompleteWF**, runs one workflow activity, **Set Activity Status To Completed**. That activity has one input parameter, *ActivityId*, which gets its value from the **ActivityId** property of the workflow.
+SetActivityStatusToCompleteWF.xoml declares that the workflow<strong>,  SetActivityStatusToCompleteWF</strong>, runs one workflow activity, **Set Activity Status To Completed**. That activity has one input parameter, *ActivityId*, which gets its value from the **ActivityId** property of the workflow.
 
 ## Declare the workflow and its trigger condition in a management pack
 
@@ -357,7 +352,6 @@ In the case of the example workflow, the **DataSource** element contains a **Sub
         </Rule>
     </Rules>
 </Monitoring>
-
 ```
 
  The **WriteAction** element (specifically, **Microsoft.EnterpriseManagement.SystemCenter.Subscription.WindowsWorkflowTaskWriteAction**) defines what to do when the trigger condition is met. Within this element, a **Subscription** element identifies the workflow assembly file to run (SetActivityStatusToCompleteWF.dll) and the class in the assembly that represents the workflow, **WorkflowTypeName**.

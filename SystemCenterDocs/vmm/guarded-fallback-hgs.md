@@ -33,12 +33,12 @@ Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-
 
 **Use the following steps**:
 
-1.	Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service settings**.
-2.	Open the Host Guardian Service settings. You should see a section for Fallback Configurations.
-3.	Define the **primary and fallback HGS URLs** and click **Finish**.
+1.  Navigate to **VMM Settings** > **General Settings** > **Host Guardian Service settings**.
+2.  Open the Host Guardian Service settings. You should see a section for Fallback Configurations.
+3.  Define the **primary and fallback HGS URLs** and click **Finish**.
 
     ![fallback hgs](media/fallback-hgs/fallback-hgs-config.png)
-4.	Enable the fallback URLs on the host by navigating to **Host Properties** > **Host Guardian Service** > select Enable host Guardian Hyper-V support and use the URLs as configured as global settings in VMM and click OK.
+4.  Enable the fallback URLs on the host by navigating to **Host Properties** > **Host Guardian Service** > select Enable host Guardian Hyper-V support and use the URLs as configured as global settings in VMM and click OK.
 
     > [!NOTE]
     > After this step, VMM service configures the supported hosts with primary and fallback HGS URLs. Only hosts on and above Windows Server 1709 support fallback HGS URLs.
@@ -47,35 +47,34 @@ Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-
 
 1. The following two parameters are added to the existing **Set-SCVMHost** PowerShell command:
 
- - **AttestationFallbackServerUrl**
- - **KeyProtectionFallbackServerUrl**
+   - **AttestationFallbackServerUrl**
+   - **KeyProtectionFallbackServerUrl**
 
- Here is the sample syntax.
+   Here is the sample syntax.
 
- ```powershell
+   ```powershell
 
- Set-SCVMHost [-VMHost] <Host> [-ApplyLatestCodeIntegrityPolicy] [-AttestationServerUrl <String>]        [-AttestationFallbackServerUrl <String>]
-  [-AvailableForPlacement <Boolean>] [-BMCAddress <String>]
-  [-BMCCustomConfigurationProvider <ConfigurationProvider>] [-BMCPort <UInt32>]
-  [-BMCProtocol <OutOfBandManagementType>] [-BMCRunAsAccount <RunAsAccount>] [-BaseDiskPaths <String>]
-  [-BypassMaintenanceModeCheck] [-CPUPercentageReserve <UInt16>] [-CodeIntegrityPolicy <CodeIntegrityPolicy>]
-  [-Custom1 <String>] [-Custom10 <String>] [-Custom2 <String>] [-Custom3 <String>] [-Custom4 <String>]
-  [-Custom5 <String>] [-Custom6 <String>] [-Custom7 <String>] [-Custom8 <String>] [-Custom9 <String>]
-  [-Description <String>] [-DiskSpaceReserveMB <UInt64>] [-EnableLiveMigration <Boolean>]
-  [-FibreChannelWorldWideNodeName <String>] [-FibreChannelWorldWidePortNameMaximum <String>]
-  [-FibreChannelWorldWidePortNameMinimum <String>] [-IsDedicatedToNetworkVirtualizationGateway <Boolean>]
-  [-JobGroup <Guid>] [-JobVariable <String>] [-KeyProtectionServerUrl <String>] [-KeyProtectionFallbackServerUrl <String>] [-LiveMigrationMaximum <UInt32>]
-  [-LiveStorageMigrationMaximum <UInt32>] [-MaintenanceHost <Boolean>] [-ManagementAdapterMACAddress <String>]
-  [-MaxDiskIOReservation <UInt64>] [-MemoryReserveMB <UInt64>]
-  [-MigrationAuthProtocol <MigrationAuthProtocolType>]
-  [-MigrationPerformanceOption <MigrationPerformanceOptionType>] [-MigrationSubnet <String[]>]
-  [-NetworkPercentageReserve <UInt16>] [-NumaSpanningEnabled <Boolean>] [-OverrideHostGroupReserves <Boolean>]
-  [-PROTipID <Guid>] [-RemoteConnectCertificatePath <String>] [-RemoteConnectEnabled <Boolean>]
-  [-RemoteConnectPort <UInt32>] [-RemoveRemoteConnectCertificate] [-RunAsynchronously] [-SMBiosGuid <Guid>]
-  [-SecureRemoteConnectEnabled <Boolean>] [-UseAnyMigrationSubnet <Boolean >]
-  [-VMHostManagementCredential <VMMCredential>] [-VMPaths <String>] [<CommonParameters>]
-
- ```
+   Set-SCVMHost [-VMHost] <Host> [-ApplyLatestCodeIntegrityPolicy] [-AttestationServerUrl <String>]        [-AttestationFallbackServerUrl <String>]
+   [-AvailableForPlacement <Boolean>] [-BMCAddress <String>]
+   [-BMCCustomConfigurationProvider <ConfigurationProvider>] [-BMCPort <UInt32>]
+   [-BMCProtocol <OutOfBandManagementType>] [-BMCRunAsAccount <RunAsAccount>] [-BaseDiskPaths <String>]
+   [-BypassMaintenanceModeCheck] [-CPUPercentageReserve <UInt16>] [-CodeIntegrityPolicy <CodeIntegrityPolicy>]
+   [-Custom1 <String>] [-Custom10 <String>] [-Custom2 <String>] [-Custom3 <String>] [-Custom4 <String>]
+   [-Custom5 <String>] [-Custom6 <String>] [-Custom7 <String>] [-Custom8 <String>] [-Custom9 <String>]
+   [-Description <String>] [-DiskSpaceReserveMB <UInt64>] [-EnableLiveMigration <Boolean>]
+   [-FibreChannelWorldWideNodeName <String>] [-FibreChannelWorldWidePortNameMaximum <String>]
+   [-FibreChannelWorldWidePortNameMinimum <String>] [-IsDedicatedToNetworkVirtualizationGateway <Boolean>]
+   [-JobGroup <Guid>] [-JobVariable <String>] [-KeyProtectionServerUrl <String>] [-KeyProtectionFallbackServerUrl <String>] [-LiveMigrationMaximum <UInt32>]
+   [-LiveStorageMigrationMaximum <UInt32>] [-MaintenanceHost <Boolean>] [-ManagementAdapterMACAddress <String>]
+   [-MaxDiskIOReservation <UInt64>] [-MemoryReserveMB <UInt64>]
+   [-MigrationAuthProtocol <MigrationAuthProtocolType>]
+   [-MigrationPerformanceOption <MigrationPerformanceOptionType>] [-MigrationSubnet <String[]>]
+   [-NetworkPercentageReserve <UInt16>] [-NumaSpanningEnabled <Boolean>] [-OverrideHostGroupReserves <Boolean>]
+   [-PROTipID <Guid>] [-RemoteConnectCertificatePath <String>] [-RemoteConnectEnabled <Boolean>]
+   [-RemoteConnectPort <UInt32>] [-RemoveRemoteConnectCertificate] [-RunAsynchronously] [-SMBiosGuid <Guid>]
+   [-SecureRemoteConnectEnabled <Boolean>] [-UseAnyMigrationSubnet <Boolean >]
+   [-VMHostManagementCredential <VMMCredential>] [-VMPaths <String>] [<CommonParameters>]
+   ```
 2. The following parameter is added to **Get-SCGuardianConfiguration**  to let the user specify from which HGS the metadata be fetched.
 
     **[-Guardian {Primary | Fallback}]**
@@ -84,7 +83,6 @@ Learn more about [configuring HGS](https://technet.microsoft.com/windows-server-
 
     ```powershell
     Get-SCGuardianConfiguration [-Guardian {Primary | Fallback}] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-VMMServer <ServerConnection>] [<CommonParameters>]
-
     ```
 
 ## Next steps

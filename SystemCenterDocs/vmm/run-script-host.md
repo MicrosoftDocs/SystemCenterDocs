@@ -30,20 +30,20 @@ The following example scenario provides information on how you can start a servi
 
 2. As an example, type the following details against the options displayed:
 
-    - **Deployment Order**: Select the deployment order from the drop-down menu.
-    - **Executable program**: cmd.exe
-    - **Parameters**: /q /c net start sftlist
-    - **Script resource package** and **Run As account**: None
+   - **Deployment Order**: Select the deployment order from the drop-down menu.
+   - **Executable program**: cmd.exe
+   - **Parameters**: /q /c net start sftlist
+   - **Script resource package** and **Run As account**: None
 
-    The **/q** turns off the echo for the command line and **/c** carries out the command and then terminates. If you do not use these switches, the outcome will be a return code 0 from the cmd.exe process and will not display the actual result of the command in the job.
+     The **/q** turns off the echo for the command line and **/c** carries out the command and then terminates. If you do not use these switches, the outcome will be a return code 0 from the cmd.exe process and will not display the actual result of the command in the job.
 
-    ![run script form](media/run-script-command/run-script-filled.png)
+     ![run script form](media/run-script-command/run-script-filled.png)
 
 3. Select the **Timeout** seconds for this command.
 
 4. Click **Advanced..** and specify the output file and log file location for any errors.
 
-4. Click **Finish**.
+5. Click **Finish**.
 
 Monitor the job in the VMM console for the result. In case of any error, go through the error file log and follow the recommendations as applicable.
 
@@ -63,9 +63,9 @@ In this example, at step 2, we use the following values, rest of the steps remai
 - **Script resource package**: SAV_x64_en-US-4.9.305.198.cr(4.9.305.198)
 - **Run As account**: Admin
 
- For this example, we included a batch file named **services.cmd** under a custom resource folder named **SAV_x64_en-US-4.9.305.198.cr(4.9.305.198)**, and specified the **Run As account** as Admin.
+  For this example, we included a batch file named **services.cmd** under a custom resource folder named **SAV_x64_en-US-4.9.305.198.cr(4.9.305.198)**, and specified the **Run As account** as Admin.
 
- ![run script custom form](media/run-script-command/run-script-filled-custom.png)
+  ![run script custom form](media/run-script-command/run-script-filled-custom.png)
 
     The batch file performs a net stop sftlist/y and then a net start sftlist.
     In this scenario, the custom resource folder is transferred to the agent host and copied under windows\temp. A folder with the format, **scvmm.xxxxxxxx**, is  created to contain all the files. From here, it executes the batch file and the agent returns the corresponding outcome to VMM and displays it in the job. If the script generates an error, it creates a log under the specified location.

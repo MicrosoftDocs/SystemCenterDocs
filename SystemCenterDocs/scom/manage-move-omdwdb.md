@@ -60,18 +60,18 @@ On the reporting server, you will need to change the connection string to refere
 
 ### Update security credentials on the new SQL Server instance hosting the Reporting data warehouse database 
 
-1.	On the new SQL Server instance hosting the Reporting data warehouse database, open SQL Management Studio.  
+1. On the new SQL Server instance hosting the Reporting data warehouse database, open SQL Management Studio.  
 
-2.	Expand **Security**, then expand **Logins**, and then add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
+2. Expand **Security**, then expand **Logins**, and then add the data writer account. For more information, see [How to Create a SQL Server Login](https://technet.microsoft.com/library/aa337562.aspx).
 
 3. Under **Logins**, add the data reader account.
 
 4. Under **Logins**, add the Data Access Service user account, using the form "domain\user".
 
 5. For the Data Access Service (DAS) user account, add the following user mappings:
-  - db_datareader
-  - OpsMgrReader
-  - apm_datareader 
+   - db_datareader
+   - OpsMgrReader
+   - apm_datareader 
 
 6. If an account has not existed before in the SQL instance in which you are adding it, the mapping will be picked up by SID automatically from the restored data warehouse database. If the account has existed in that SQL instance before, you receive an error indicating failure for that login, although the account appears under Logins. If you are creating a new login, ensure the User Mapping for that login and database are set to the same values as the previous login as follows:
 
@@ -87,9 +87,9 @@ On the reporting server, you will need to change the connection string to refere
 ###  Start the Operations Manager services
 
 1. On all the management servers in the management group, start the Operations Manager services: 
-  - System Center Data Access
-  - Microsoft Monitoring Agent
-  - System Center Management Configuration
+   - System Center Data Access
+   - Microsoft Monitoring Agent
+   - System Center Management Configuration
 
 ### Update Service Principal Name for Kerberos Connections
 To update Kerberos authentication with SQL Server, you should review [Register a Service Principal Name for Kerberos Connections](https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017#Manual) in order for management servers to authenticate with the SQL Server using Kerberos protocol.  

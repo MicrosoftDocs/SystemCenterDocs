@@ -25,42 +25,42 @@ With Operation Manager 1807 and later, you can reconfigure the Application Perfo
 
 1. Sign in to the Operations console with an account that is a member of the Operations Manager Administrators role.
 
-2.  Click **Administration**.
+2. Click **Administration**.
 
-3.  In the Administration pane, navigate to **Device Management\Agent Managed**.
+3. In the Administration pane, navigate to **Device Management\Agent Managed**.
 
-4.  In the **Agent Managed** pane, select one or more computers you want to repair the agent on, right-click them and then select **Repair**.
+4. In the **Agent Managed** pane, select one or more computers you want to repair the agent on, right-click them and then select **Repair**.
 
-5.  In the **Repair Agents** dialog box, either leave **Use selected Management Server Action Account** selected or do the following:
+5. In the **Repair Agents** dialog box, either leave **Use selected Management Server Action Account** selected or do the following:
 
-    ::: moniker range=">=sc-om-1807"
-    1. Select **Other user account**.
+   ::: moniker range=">=sc-om-1807"
+   1. Select **Other user account**.
 
-    2. Type the **User name** and **Password**, and type or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.
+   2. Type the **User name** and **Password**, and type or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.
 
-    >[!IMPORTANT]
-    >The account must have administrative rights on the computer for the repair to succeed.
+   >[!IMPORTANT]
+   >The account must have administrative rights on the computer for the repair to succeed.
 
-    3. Deselect the option **Install or keep APM** if you no longer intend to monitor a .NET web-based application or require the component installed on the targeted computer.  Otherwise, leave the option selected.  
+   3. Deselect the option **Install or keep APM** if you no longer intend to monitor a .NET web-based application or require the component installed on the targeted computer.  Otherwise, leave the option selected.  
 
-    4. Click **Repair**.
-    ::: moniker-end
+   4. Click **Repair**.
+      ::: moniker-end
 
-    1. Select **Other user account**.
+   5. Select **Other user account**.
 
-    2. Type the **User name** and **Password**, and type or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.
+   6. Type the **User name** and **Password**, and type or select the **Domain** from the list. Select **This is a local computer account, not a domain account** if the account is a local computer account.
 
-    >[!IMPORTANT]
-    >The account must have administrative rights on the computer for the repair to succeed.
+   >[!IMPORTANT]
+   >The account must have administrative rights on the computer for the repair to succeed.
 
-    3. Click **Repair**.
+   3. Click **Repair**.
 
-4. In the **Agent Management Task Status** dialog box, the **Status** for each selected computer changes from **Queued** to **Success**; the computers are ready to be managed.
+6. In the **Agent Management Task Status** dialog box, the **Status** for each selected computer changes from **Queued** to **Success**; the computers are ready to be managed.
 
     > [!NOTE]
     > If the task fails for a computer, click the targeted computer. The reason for the failure is displayed in the **Task Output** text box.
 
-5. Click **Close**.
+7. Click **Close**.
 
 ## To repair the agent by using the MOMAgent.msi setup wizard
 

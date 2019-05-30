@@ -112,17 +112,17 @@ When you create views, plan on using "typical" classes in the system whenever po
 
 Performance of the Service Manager database is directly affected by various factors, including the number of concurrent Service Manager consoles that are reading or writing data, the group change check interval, and data that is inserted by connectors. More information is available in this document. Here are a few key points:  
 
--   You should have a minimum of 8 gigabytes \(GB\) of RAM for the management server that hosts the Service Manager database in so that you can have an acceptable response time in typical scenarios.  
+- You should have a minimum of 8 gigabytes \(GB\) of RAM for the management server that hosts the Service Manager database in so that you can have an acceptable response time in typical scenarios.  
 
--   You should have at least 8 CPU cores on the computer hosting the Service Manager database.  
+- You should have at least 8 CPU cores on the computer hosting the Service Manager database.  
 
--   You can achieve better database performance by segregating log files and data files to separate physical disks, if possible. You can achieve further benefits by moving your tempdb to a different physical RAID drive than that of the Service Manager database. Use a RAID 1\+0 disk system to host your Service Manager database, if possible.  
+- You can achieve better database performance by segregating log files and data files to separate physical disks, if possible. You can achieve further benefits by moving your tempdb to a different physical RAID drive than that of the Service Manager database. Use a RAID 1\+0 disk system to host your Service Manager database, if possible.  
 
--   Performance can be negatively affected if the Service Manager database is created with a smaller size and it is set to autogrow, especially by small increments.  
+- Performance can be negatively affected if the Service Manager database is created with a smaller size and it is set to autogrow, especially by small increments.  
 
- See the Service Manager Sizing Helper tool that is included in the [Service Manager job aids](https://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\) for help in assessing the size of the database, and create the database with a size that is closer to the final size. This will help performance by reducing the amount of times the database has to autogrow.  
+See the Service Manager Sizing Helper tool that is included in the [Service Manager job aids](https://go.microsoft.com/fwlink/p/?LinkID=232378) documentation set \(SM\_job\_aids.zip\) for help in assessing the size of the database, and create the database with a size that is closer to the final size. This will help performance by reducing the amount of times the database has to autogrow.  
 
- Similarly, all the other best practices for a high\-performing database are applicable, as well. For example, if you can take advantage of a superior disk subsystem, you can benefit from splitting up the groups of tables on respective filegroups and moving them to a different physical drives.  
+Similarly, all the other best practices for a high\-performing database are applicable, as well. For example, if you can take advantage of a superior disk subsystem, you can benefit from splitting up the groups of tables on respective filegroups and moving them to a different physical drives.  
 
 ## Service Manager management server performance
 

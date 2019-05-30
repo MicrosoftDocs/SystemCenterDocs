@@ -120,11 +120,11 @@ You can assign both explicit and dynamic members in the same group definition, a
 
 3. In the **Tasks** pane, click:
 
- - **View Group Members** to view a list of all members of the group with the health state of each member.
+   - **View Group Members** to view a list of all members of the group with the health state of each member.
 
- - **View Group State** to view a state view of the group.
+   - **View Group State** to view a state view of the group.
 
- - **View Diagram** to view a diagram of the group.
+   - **View Diagram** to view a diagram of the group.
 
   
 ## Next steps

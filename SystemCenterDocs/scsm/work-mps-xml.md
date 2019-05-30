@@ -227,19 +227,19 @@ Management packs are used to direct and extend the functionality of Service Mana
 
  This topic describes the following sections of a management pack:  
 
--   The Manifest  
+- The Manifest  
 
--   TypeDefinitions to create class enumerations and relationships  
+- TypeDefinitions to create class enumerations and relationships  
 
--   Forms  
+- Forms  
 
- This topic also describes the following sections of a management pack that contain declarations and definitions for user interface \(UI\) and localization elements:  
+This topic also describes the following sections of a management pack that contain declarations and definitions for user interface \(UI\) and localization elements:  
 
--   Categories  
+- Categories  
 
--   Presentation  
+- Presentation  
 
--   Class Extensions  
+- Class Extensions  
 
 ### Manifest section  
  The first section of a management pack contains the manifest. The manifest identifies the management pack and declares any references to other management packs.  
@@ -361,27 +361,27 @@ Management packs are used to direct and extend the functionality of Service Mana
 
  Each **Property** element has the following attributes:  
 
--   The **ID** attribute, which designates the unique identifier of the property.  
+- The **ID** attribute, which designates the unique identifier of the property.  
 
--   The **Type** attribute, which indicates the data type of the property.  
+- The **Type** attribute, which indicates the data type of the property.  
 
--   The **Key** attribute. Setting this attribute to **true** indicates that this property is to be used to uniquely identify this class.  
+- The **Key** attribute. Setting this attribute to **true** indicates that this property is to be used to uniquely identify this class.  
 
- **Creating Enumeration Types**  
+**Creating Enumeration Types**  
 
- Enumerations of the **enum** data type are special data types. Enumerations are used to constrain the data that is allowed for a property to a specific set of values. Enumerations can be hierarchical; one enumeration can be based on another enumeration.  
+Enumerations of the **enum** data type are special data types. Enumerations are used to constrain the data that is allowed for a property to a specific set of values. Enumerations can be hierarchical; one enumeration can be based on another enumeration.  
 
- Enumerations are defined in the **EnumertionTypes** section of a solution pack. An enumeration definition contains the root enumeration, followed by the actual enumeration values.  
+Enumerations are defined in the **EnumertionTypes** section of a solution pack. An enumeration definition contains the root enumeration, followed by the actual enumeration values.  
 
- Each **EnumerationValue** accepts a few attributes:  
+Each **EnumerationValue** accepts a few attributes:  
 
- In this example, an enumeration is defined for keeping track of the condition of the projectors. The following defines this enumeration:  
+In this example, an enumeration is defined for keeping track of the condition of the projectors. The following defines this enumeration:  
 
--   **ID** is the identifier for the enumeration or enumeration value.  
+- **ID** is the identifier for the enumeration or enumeration value.  
 
--   **Accessibility** specifies whether this enumerator can contain other enumerators.  
+- **Accessibility** specifies whether this enumerator can contain other enumerators.  
 
--   **ParentName** is an attribute that specifies the **ID** of the parent of the enumerator value.  
+- **ParentName** is an attribute that specifies the **ID** of the parent of the enumerator value.  
 
 ```  
 
@@ -557,19 +557,19 @@ ItemsSource="{Binding Source={StaticResource getStatusValues}, Mode=OneWay }"
 
  The following attributes are used in the preceding example:  
 
--   The **TypeName** attribute contains the namespace and class name of the form.  
+- The **TypeName** attribute contains the namespace and class name of the form.  
 
--   The **ID** attribute contains the unique identifier of this form instance.  
+- The **ID** attribute contains the unique identifier of this form instance.  
 
--   The **Target** attribute contains the name of the class that this form is bound to.  
+- The **Target** attribute contains the name of the class that this form is bound to.  
 
--   The **Assembly** attribute points to the external resource that contains the form.  
+- The **Assembly** attribute points to the external resource that contains the form.  
 
--   The **Accessibility** attribute defines whether this form can be customized.  
+- The **Accessibility** attribute defines whether this form can be customized.  
 
- **Defining a View**  
+**Defining a View**  
 
- The **Views** section of a management pack contains definitions of user interface \(UI\) views. These views can be used to filter and display objects in a management pack.  
+The **Views** section of a management pack contains definitions of user interface \(UI\) views. These views can be used to filter and display objects in a management pack.  
 
 ```  
 <View Target="System.ConfigItem.Projector"   
@@ -702,15 +702,15 @@ Microsoft.EnterpriseManagement.UI.SdkDataAccess.DataAdapters.EnterpriseManagemen
 
  A class extension inherits the properties of any parent classes, for example:  
 
--   Class A has a property called Property1  
+- Class A has a property called Property1  
 
--   Class B derives from, or extends, Class A and therefore has a property called Property1. This property is inherited from Class A, the parent, or base class\)  
+- Class B derives from, or extends, Class A and therefore has a property called Property1. This property is inherited from Class A, the parent, or base class\)  
 
--   The definition of Class B adds a property called Property2.  
+- The definition of Class B adds a property called Property2.  
 
--   Any class extension that derives from Class B will inherit Property1 and Property2.  
+- Any class extension that derives from Class B will inherit Property1 and Property2.  
 
- The following example shows a class extension definition:  
+  The following example shows a class extension definition:  
 
 ```  
 

@@ -77,37 +77,37 @@ Use the following procedures:
 
 ### Install VMM 1801
 
-1.	In the main setup page, click **Install**.
-2.	In **Select features to install**, select the VMM management server and then click **Next**. The VMM console will be automatically installed.
-3.	In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
-4.	In **Please read this license agreement**, review the license agreement, select the **I have read, understood, and agree with the terms of the license agreement **check box, and then click **Next**.
-5.	In **Usage and Connectivity Data**, select either of the options, and then click **Next**.
-6.	If **Microsoft Update** page appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
-7.	In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**.
-8.	In **Database configuration**:
-	- 	[Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
-	-  If you're using a remote SQL instance, specify the SQL server computer name.
-	-	If SQL server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
-	- Don't specify a port value if you're using local SQL server, or if your remote SQL server uses the default port (1443).
-	- Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
-11.	In **Configure service account and distributed key management**, specify the account that the VMM service will use.
+1. In the main setup page, click **Install**.
+2. In **Select features to install**, select the VMM management server and then click **Next**. The VMM console will be automatically installed.
+3. In **Product registration information**, provide the appropriate information, and then click **Next**. If you do not enter a product key, VMM will be installed as an evaluation version that expires after 180 days from the installation date.
+4. In **Please read this license agreement**, review the license agreement, select the <strong>I have read, understood, and agree with the terms of the license agreement **check box, and then click **Next</strong>.
+5. In **Usage and Connectivity Data**, select either of the options, and then click **Next**.
+6. If **Microsoft Update** page appears, select whether you want to use Microsoft Update and click **Next**. If you've already chosen to use Microsoft Update on this computer, this page won't appear.
+7. In **Installation location**, use the default path or type a different installation path for the VMM program files, and then click **Next**.
+8. In **Database configuration**:
+   -   [Learn more](#upgrade-the-vmm-sql-server-database) if you need to upgrade the VMM SQL Server.
+   -  If you're using a remote SQL instance, specify the SQL server computer name.
+   -   If SQL server runs on the VMM server, type the name of the VMM server, or type **localhost**. If the SQL Server is in a cluster, type the cluster name.
+   - Don't specify a port value if you're using local SQL server, or if your remote SQL server uses the default port (1443).
+   - Select **Existing Database** and select the database that you retained (backed up) from your previous installation. Provide credentials with permissions to access the database. When you're prompted to upgrade the database click **Yes**.
+9. In **Configure service account and distributed key management**, specify the account that the VMM service will use.
 
-	>[!NOTE]
-	> You can't change the identity of the VMM service account after installation.
+   >[!NOTE]
+   > You can't change the identity of the VMM service account after installation.
 
-12.	Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
+10. Under **Distributed Key Management**, select whether to store encryption keys in Active Directory.
 	>[!NOTE]
 	> Choose the settings for the service account and distributed key management, carefully. Based on your selection, encrypted data such as passwords in templates might not be available after the upgrade, and you'll need to enter them manually.
 
-13.	In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
+11. In **Port configuration**, use the default port number for each feature or provide a unique port number that is appropriate in your environment.
 
 	>[!NOTE]
 	>You cannot change the ports that you assign during the installation of a VMM management server unless you uninstall and then reinstall the VMM management server. Also, do not configure any feature to use port 5986, this port number is preassigned.
 
-14.	In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
-15.	In **Upgrade compatibility report**, review the settings, click **Next** to proceed with the upgrade.
-16.	In **Installation Summary**, review the settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
-17.	In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, check  **Open the VMM console when this wizard closes**, or you can click the Virtual Machine Manager Console icon on the desktop.
+12. In **Library configuration**, select whether to create a new library share or to use an existing library share on the computer. The default library share that VMM creates is named **MSSCVMMLibrary**, and the folder is located at **%SYSTEMDRIVE%\ProgramData\Virtual Machine Manager Library Files**. **ProgramData** is a hidden folder, and you cannot remove it. After the VMM management server is installed, you can add library shares and library servers by using the VMM console or by using the VMM command shell.
+13. In **Upgrade compatibility report**, review the settings, click **Next** to proceed with the upgrade.
+14. In **Installation Summary**, review the settings and click **Install** to upgrade the server. **Installing features** page appears and displays the installation progress.
+15. In **Setup completed successfully**, click **Close** to finish the installation. To open the VMM console, check  **Open the VMM console when this wizard closes**, or you can click the Virtual Machine Manager Console icon on the desktop.
 
 > [!NOTE]
 > Once the upgrade is successful, [upgrade the host agent manually](#update-vmm-agents), by using the VMM.
@@ -136,26 +136,26 @@ This procedure requires no additional VMM servers, but has increased risk for do
 
 **Follow these steps**:  
 
-1.	Backup and retain the VMM database.
-2.	[Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
-3.	VMM 1801 supports WS 2016 and 1709 as Management OS. On the passive VMM node, upgrade the management OS to Windows server 2016/1709. 		
+1. Backup and retain the VMM database.
+2. [Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
+3. VMM 1801 supports WS 2016 and 1709 as Management OS. On the passive VMM node, upgrade the management OS to Windows server 2016/1709.        
 
- If the cluster has VMM 2012 R2 on Windows Server (WS) 2012 R2 and you want to upgrade to VMM 1801 on WS 1709, then use the following steps for each of such nodes in the cluster:
-	- Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster is not supported.
- 	- Upgrade the management OS to WS 1709.
+   If the cluster has VMM 2012 R2 on Windows Server (WS) 2012 R2 and you want to upgrade to VMM 1801 on WS 1709, then use the following steps for each of such nodes in the cluster:
+   - Upgrade to VMM 1801 on WS 2016 as the management OS for all the cluster nodes with WS 2012 R2. This is because, 2012 R2 and WS 1709 mixed cluster is not supported.
+   - Upgrade the management OS to WS 1709.
 
-4.	Upgrade to the Windows 10/1709 version of the ADK.
+4. Upgrade to the Windows 10/1709 version of the ADK.
 5. Install VMM 1801 on the passive node by using the following steps:
 	-	In the main setup page, click **Install**.
     -   In **Select features to install**, select  **VMM management server** and then click **Next**. The VMM console will be automatically installed.
     - When prompted, confirm that you want to add this server as a node to the highly available deployment.
     - On **Database Configuration** page, if prompted select to upgrade the database.
     - Review the summary and complete the installation.
-6.	Failover the active VMM node to the newly upgraded VMM server.
-7.	Repeat the procedure on other VMM nodes.
-8.  Update the cluster functional level by using the
-**Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
-9.	[Optional] Install the appropriate SQL Command line utilities.
+6. Failover the active VMM node to the newly upgraded VMM server.
+7. Repeat the procedure on other VMM nodes.
+8. Update the cluster functional level by using the
+   **Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
+9. [Optional] Install the appropriate SQL Command line utilities.
 
 ### Mixed mode upgrade with additional VMM servers
 This procedure requires additional VMM servers, however, ensures almost no downtime in all the scenarios.

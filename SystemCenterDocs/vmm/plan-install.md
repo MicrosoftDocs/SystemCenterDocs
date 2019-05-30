@@ -90,7 +90,7 @@ When you install VMM with this user account SPN will be registered.
 - The SQL Server service must use an account that has permission to access Active Directory Domain Services (AD DS). For example, you can specify the Local System Account, or a domain user account. Do not specify a local user account.
 - You don't need to configure collation. During deployment, Setup automatically configures CI collation according to the language of the server operating system.
 
-::: moniker range="sc-vmm-1711"
+::: moniker range="sc-vmm-1801"
 
 > [!NOTE]
 > Target database collate and the VMM server collate must be the same if the database is part of SQL Always On (AO) group. To check the current culture on your VMM machine, use the [Get-Culture](https://technet.microsoft.com/library/ee176844.aspx) PowerShell command. Learn more about [VMM server collate mappings](vmm-collate-mappings.md).

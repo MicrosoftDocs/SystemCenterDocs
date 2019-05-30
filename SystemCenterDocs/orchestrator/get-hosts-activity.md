@@ -31,9 +31,9 @@ No optional properties are provided for this activity.
 
 ## Get Hosts Activity Published Data
 
-| Name | Description   | Value Type |
-|:---|:---|:---|
-| Host | A list of host paths managed by the vCenter server. | String   |## Configuring the Get Hosts Activity
+| Name | Description                                         | Value Type |
+|:-----|:----------------------------------------------------|:-----------|
+| Host | A list of host paths managed by the vCenter server. | String     |
 
 The following procedure describes the steps required to configure a Get Hosts activity.
 

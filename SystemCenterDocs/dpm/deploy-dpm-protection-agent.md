@@ -89,46 +89,46 @@ Configure an incoming exception for sqlservr.exe for the DPM instance of SQL Ser
 
 ## <a name="BKMK_Manual"></a>Install the agent manually
 
-1.  If you install the agent on a computer behind a firewall, you need to make sure that the agent can be pushed out through the firewall.
+1. If you install the agent on a computer behind a firewall, you need to make sure that the agent can be pushed out through the firewall.
 
-    For example, you can run the following command on the computer to configure Windows Firewall: **netsh advfirewall firewall add rule name="Allow DPM Remote Agent Push" dir=in action=allow service=any enable=yes profile=any remoteip=&lt;IPAddress&gt;**, where IPAddress is the address of the DPM server.
+   For example, you can run the following command on the computer to configure Windows Firewall: **netsh advfirewall firewall add rule name="Allow DPM Remote Agent Push" dir=in action=allow service=any enable=yes profile=any remoteip=&lt;IPAddress&gt;**, where IPAddress is the address of the DPM server.
 
-    To configure the ports exception on the firewall, see [Configure firewall exceptions for the agent](configure-firewall-settings-for-dpm.md).
+   To configure the ports exception on the firewall, see [Configure firewall exceptions for the agent](configure-firewall-settings-for-dpm.md).
 
-2.  On the computer that you want to protect, open an elevated Command Prompt window, and then run the following commands:
+2. On the computer that you want to protect, open an elevated Command Prompt window, and then run the following commands:
 
-    To assign a drive letter, type:
-    **net use *Z*: \\&lt;DPMServerName&gt;\c$**
-     where *Z* is the local drive letter that you want to assign and *&lt;DPMServerName&gt;* is the name of the DPM server that will protect the computer.
+   To assign a drive letter, type:
+   **net use *Z*: \\&lt;DPMServerName&gt;\c$**
+    where *Z* is the local drive letter that you want to assign and *&lt;DPMServerName&gt;* is the name of the DPM server that will protect the computer.
 
-    To change the directory, do the following:
+   To change the directory, do the following:
 
-    -   For a 64-bit computer type **cd /d *&lt;assigned drive letter*&gt;:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\5.0.*&lt;build number&gt;*.0\amd64** where *&lt;assigned drive letter&gt;* is the drive letter that you assigned in the previous step and *&lt;build number&gt;* is the latest DPM build number. For example: **cd /d X:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.7696.0\amd64**
+   -   For a 64-bit computer type **cd /d *&lt;assigned drive letter*&gt;:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\5.0.*&lt;build number&gt;*.0\amd64** where *&lt;assigned drive letter&gt;* is the drive letter that you assigned in the previous step and *&lt;build number&gt;* is the latest DPM build number. For example: **cd /d X:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\3.0.7696.0\amd64**
 
-    -   For a 32-bit computer type: **cd /d *&lt;assigned drive letter&gt;*:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\5.0.*&lt;build number&gtl;*.0\i386**
-         where *&lt;assigned drive letter&gt;* is the drive that you mapped in the previous step and *&lt;build number&gt;* is the latest DPM build number.
+   -   For a 32-bit computer type: **cd /d *&lt;assigned drive letter&gt;*:\Program Files\Microsoft DPM\DPM\ProtectionAgents\RA\5.0.*&lt;build number&gtl;*.0\i386**
+        where *&lt;assigned drive letter&gt;* is the drive that you mapped in the previous step and *&lt;build number&gt;* is the latest DPM build number.
 
-3.  To install the protection agent open an elevated Command Prompt window, and then run one of the following commands:
+3. To install the protection agent open an elevated Command Prompt window, and then run one of the following commands:
 
-    -   For a 64-bit computer type: **DpmAgentInstaller_x64.exe _&lt;DPMServerName&gt;_**
-        where *&lt;DPMServerName&gt;* is the fully qualified domain name (FQDN) of the DPM server.For example: **DPMAgentInstaller_x64.exe DPMserver1.contoso.com**
+   - For a 64-bit computer type: **DpmAgentInstaller_x64.exe _&lt;DPMServerName&gt;_**
+     where *&lt;DPMServerName&gt;* is the fully qualified domain name (FQDN) of the DPM server.For example: **DPMAgentInstaller_x64.exe DPMserver1.contoso.com**
 
-    -   For a 32-bit computer type: **DpmAgentInstaller_x86.exe _<DPMServerName>_**
-        where *&lt;DPMServerName&gt;* is the fully qualified domain name of the DPM server.
+   - For a 32-bit computer type: **DpmAgentInstaller_x86.exe *<DPMServerName>***
+     where *&lt;DPMServerName&gt;* is the fully qualified domain name of the DPM server.
 
-    Note:
+   Note:
 
-    -   To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command.For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
+   -   To perform a silent installation, you can use the **/q** option after the **DpmAgentInstaller_x64.exe** command.For example: **DpmAgentInstaller_x64.exe /q _&lt;DPMServerName&gt;_**
 
-    -   To accept the EULA manually in a silent installation use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
+   -   To accept the EULA manually in a silent installation use **DpmAgentInstaller_x64.exe /q &lt;DPMServerName&gt; /IAcceptEULA**
 
-    -   If you specify a DPM server name in the command line, it installs the protection agent, and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
+   -   If you specify a DPM server name in the command line, it installs the protection agent, and automatically configures the security accounts, permissions, and firewall exceptions necessary for the agent to communicate with the specified DPM server. If you didn't specify a server name, open an elevated Command Prompt on the targeted computer and do the following:
 
-        1.  To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
+       1.  To change the directory type: **cd /d *&lt;system drive&gt;*:\Program Files\Microsoft Data Protection Manager\DPM\bin**
 
-        2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
+       2.  Type: **SetDpmServer.exe -dpmServerName _&lt;DPMServerName&gt;_**. This configure security accounts, permissions, and firewall exceptions for the agent to communicate with the server.
 
-4.  If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
+4. If you added the computer to the DPM server before you installed the agent, the  server begins to create backups for the protected computer. If you installed the agent before you added the computer to the DPM server, you must attach the computer before the DPM server begins to create backups.
 
 
 ## <a name="BKMK_Attach"></a>Attach the agent

@@ -291,7 +291,6 @@ The following HTML code demonstrates rendering a spline chart with performance d
 </body>
 
 </html>
-
 ```
 
 ### Bar chart (alert data)
@@ -323,18 +322,18 @@ The following HTML code demonstrates rendering a bar chart with alert data.
                 },
                 success: function (result) {
                     for (var i = 0; i < result.rows.length; i++) {
-			switch(result.rows[i].severity)
-			{
-				case "Error":
-					criticalCounter++;
-					break;
-				case "Information":
-					informationCounter++;
-					break;
-				case "Warning":
-	                                warningCounter++
-					break;
-			}
+            switch(result.rows[i].severity)
+            {
+                case "Error":
+                    criticalCounter++;
+                    break;
+                case "Information":
+                    informationCounter++;
+                    break;
+                case "Warning":
+                                    warningCounter++
+                    break;
+            }
                     }
                     renderChart();
                 }
@@ -397,18 +396,18 @@ The following HTML code demonstrates rendering a pie chart with alert data.
                 },
                 success: function (result) {
                     for (var i = 0; i < result.rows.length; i++) {
-			switch(result.rows[i].severity)
-			{
-				case "Error":
-					criticalCounter++;
-					break;
-				case "Information":
-					informationCounter++;
-					break;
-				case "Warning":
-	                                warningCounter++
-					break;
-			}
+            switch(result.rows[i].severity)
+            {
+                case "Error":
+                    criticalCounter++;
+                    break;
+                case "Information":
+                    informationCounter++;
+                    break;
+                case "Warning":
+                                    warningCounter++
+                    break;
+            }
                     }
                     renderChart();
                 }
@@ -479,18 +478,18 @@ The following HTML code demonstrates rendering a 3D pie chart with alert data.
                 },
                 success: function (result) {
                     for (var i = 0; i < result.rows.length; i++) {
-			switch(result.rows[i].severity)
-			{
-				case "Error":
-					criticalCounter++;
-					break;
-				case "Information":
-					informationCounter++;
-					break;
-				case "Warning":
-	                                warningCounter++
-					break;
-			}
+            switch(result.rows[i].severity)
+            {
+                case "Error":
+                    criticalCounter++;
+                    break;
+                case "Information":
+                    informationCounter++;
+                    break;
+                case "Warning":
+                                    warningCounter++
+                    break;
+            }
                     }
                     renderChart();
                 }
@@ -586,18 +585,18 @@ The following HTML code demonstrates rendering a donut chart with alert data.
                 },
                 success: function (result) {
                     for (var i = 0; i < result.rows.length; i++) {
-			switch(result.rows[i].severity)
-			{
-				case "Error":
-					criticalCounter++;
-					break;
-				case "Information":
-					informationCounter++;
-					break;
-				case "Warning":
-	                                warningCounter++
-					break;
-			}
+            switch(result.rows[i].severity)
+            {
+                case "Error":
+                    criticalCounter++;
+                    break;
+                case "Information":
+                    informationCounter++;
+                    break;
+                case "Warning":
+                                    warningCounter++
+                    break;
+            }
                     }
                     renderChart();
                 }
@@ -615,12 +614,12 @@ animationEnabled: true,
                     data: [
                         {
                             type: "doughnut",
-				indexLabelFontFamily: "Garamond",       
-				indexLabelFontSize: 20,
-				startAngle:0,
-				indexLabelFontColor: "dimgrey",       
-				indexLabelLineColor: "darkgrey",
-				toolTipContent: "{y} %", 		
+                indexLabelFontFamily: "Garamond",       
+                indexLabelFontSize: 20,
+                startAngle:0,
+                indexLabelFontColor: "dimgrey",       
+                indexLabelLineColor: "darkgrey",
+                toolTipContent: "{y} %",        
                             dataPoints: [
                                 { y: criticalCounter, indexLabel: "Critical" },
                                 { y: warningCounter, indexLabel: "Warning" },
@@ -672,18 +671,18 @@ The following HTML code demonstrates rendering a 3D donut chart with alert data.
                 },
                 success: function (result) {
                     for (var i = 0; i < result.rows.length; i++) {
-			switch(result.rows[i].severity)
-			{
-				case "Error":
-					criticalCounter++;
-					break;
-				case "Information":
-					informationCounter++;
-					break;
-				case "Warning":
-	                                warningCounter++
-					break;
-			}
+            switch(result.rows[i].severity)
+            {
+                case "Error":
+                    criticalCounter++;
+                    break;
+                case "Information":
+                    informationCounter++;
+                    break;
+                case "Warning":
+                                    warningCounter++
+                    break;
+            }
                     }
                     renderChart();
                 }
@@ -769,18 +768,18 @@ var totalCounter =0;
                 },
                 success: function (result) {
                     for (var i = 0; i < result.rows.length; i++) {
-			switch(result.rows[i].severity)
-			{
-				case "Error":
-					criticalCounter++;
-					break;
-				case "Information":
-					informationCounter++;
-					break;
-				case "Warning":
-	                                warningCounter++
-					break;
-			}
+            switch(result.rows[i].severity)
+            {
+                case "Error":
+                    criticalCounter++;
+                    break;
+                case "Information":
+                    informationCounter++;
+                    break;
+                case "Warning":
+                                    warningCounter++
+                    break;
+            }
                     }
                     renderChart();
                 }

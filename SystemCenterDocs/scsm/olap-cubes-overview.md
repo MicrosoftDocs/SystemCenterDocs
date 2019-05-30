@@ -160,13 +160,13 @@ Cube Partitioning Maintenance performs the following tasks:
 
 To do this, the Structured Query Language \(SQL\) table etl.TablePartition is read to determine all the fact partitions that have been created for a measure group. The following actions occur:  
 
-1.  Start cube processing for each measure group in the cube  
-2.  Get all partitions from the etl.TablePartition table for the measure group  
-3.  Delete any partitions that exist in the measure group but that are missing from the etl.TablePartition table  
-4.  Add any new partitions that have been created and that exist only in the etl.TablePartition table  
-5.  Update any partition that might have changed by matching each partition to the RangeStartDate and RangeEndDate in the etl.TablePartition table  
+1. Start cube processing for each measure group in the cube  
+2. Get all partitions from the etl.TablePartition table for the measure group  
+3. Delete any partitions that exist in the measure group but that are missing from the etl.TablePartition table  
+4. Add any new partitions that have been created and that exist only in the etl.TablePartition table  
+5. Update any partition that might have changed by matching each partition to the RangeStartDate and RangeEndDate in the etl.TablePartition table  
 
- Remember the following about cube processing:  
+Remember the following about cube processing:  
 
 - Only measure groups that are targeted at facts contain multiple partitions in SQL&nbsp;Server Standard Edition. By default, all measure groups and dimensions contain only one partition. Therefore, the partition does not have any boundary conditions.  
 - The partition boundaries are defined by a query binding that is based on datekeys that match up to the datekeys for the corresponding fact partition in the etl.TablePartition table.  

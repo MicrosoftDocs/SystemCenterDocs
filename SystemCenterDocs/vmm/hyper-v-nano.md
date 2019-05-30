@@ -64,16 +64,16 @@ To get started with the deployment of a Nano Server-based host or virtual machin
    - If the server uses UEFI to boot, you need to change the script from **NanoServer.vhd** to **NanoServer.vhdx**.
 
 5. Log in as an administrator on the physical server on which you want to run the Nano Server VHD.
-6.  Copy the VHD that the script creates to the physical computer, and configure it to boot from the new VHD, as follows:
+6. Copy the VHD that the script creates to the physical computer, and configure it to boot from the new VHD, as follows:
 
-    - Mount the generated VHD.
-    - Run **bcdboot d:\windows** (in this example, it's mounted under D:)
-    - Unmount the VHD.
+   - Mount the generated VHD.
+   - Run **bcdboot d:\windows** (in this example, it's mounted under D:)
+   - Unmount the VHD.
 
-7.  Boot the physical computer into the Nano Server virtual hard disk.
-8.  Log on to the Nano server Recovery Console using the administrator name and password you supplied when running the script, and obtain the IP address of the Nano server-based host. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
-8.  Ensure that the Nano server is joined to the same domain as the VMM server. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
-9. Ensure that the VMM service account, and the Run As account, are added to the administrators group on the Nano server.
+7. Boot the physical computer into the Nano Server virtual hard disk.
+8. Log on to the Nano server Recovery Console using the administrator name and password you supplied when running the script, and obtain the IP address of the Nano server-based host. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
+9. Ensure that the Nano server is joined to the same domain as the VMM server. [Learn more](https://technet.microsoft.com/library/mt126167.aspx).
+10. Ensure that the VMM service account, and the Run As account, are added to the administrators group on the Nano server.
 
 ### Install the VMM packages offline on an existing Nano Server
 
@@ -98,23 +98,23 @@ If you didn't add the VMM packages when you created the Nano Server VHD, you can
 
 We recommend offline installation of the VMM packages (when creating the VHD). If you do need to install them online when the Nano server is running, do the following:
 
-1.  Copy the **Packages** folder from the local installation media to the running Nano server. For example, to C:\packages.
-2.  Use remote PowerShell to log onto the Nano server.
+1. Copy the **Packages** folder from the local installation media to the running Nano server. For example, to C:\packages.
+2. Use remote PowerShell to log onto the Nano server.
 3. Add the VMM packages using the below commands:
 
-    - To install Microsoft-NanoServer-SCVMM-Package
-    ```
-    dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Package_en-us.cab
-    ```
+   - To install Microsoft-NanoServer-SCVMM-Package
+     ```
+     dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Package_en-us.cab
+     ```
 
-    > [!NOTE]
-    > Make sure that the en-us (Microsoft-NanoServer-SCVMM-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Package.cab) .cab files are in the same folder so that both are installed.
+     > [!NOTE]
+     > Make sure that the en-us (Microsoft-NanoServer-SCVMM-Package_en-us.cab) and neutral (Microsoft-NanoServer-SCVMM-Package.cab) .cab files are in the same folder so that both are installed.
 
-    - To install Microsoft-NanoServer-SCVMM-Compute-Package:
+   - To install Microsoft-NanoServer-SCVMM-Compute-Package:
 
-    ```
-    dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab
-    ```
+     ```
+     dism /online /Add-package /PackagePath:C:\packages\en-US\Microsoft-NanoServer-SCVMM-Compute-Package_en-us.cab
+     ```
 
 
 4. Check that the VMM packages, and the associated language packs, are installed correctly by running the following command:
@@ -123,8 +123,8 @@ We recommend offline installation of the VMM packages (when creating the VHD). I
     dism /online /get-packages
     ```
 
-6. You should see **Package Identity : Microsoft-NanoServer-SCVMM-Feature-Package~31bf3856ad364e35~amd64~~ 10.0.14300.1003** listed twice. Once for **Release Type : Language Pack**, and once for **Release Type : Feature Pack**. The same applies for the Microsoft-NanoServer-SCVMM-Compute-Package.
-7. Restart the Nano Server host.
+5. You should see **Package Identity : Microsoft-NanoServer-SCVMM-Feature-Package~31bf3856ad364e35~amd64~~ 10.0.14300.1003** listed twice. Once for **Release Type : Language Pack**, and once for **Release Type : Feature Pack**. The same applies for the Microsoft-NanoServer-SCVMM-Compute-Package.
+6. Restart the Nano Server host.
 
 
 ## Add the Nano server host to the VMM fabric  
@@ -138,23 +138,23 @@ To create Nano server-based VMs, you need to add few VM-specific packages to the
 1. Copy **NanoServerImageGenerator.psm1** and **Convert-WindowsImage.ps1** from the \NanoServer folder in VMM, to a folder on your hard drive.
 2. Start Windows PowerShell as an administrator, and navigate to the script folder.
 3. Import the **NanoServerImageGenerator** script with **Import-Module NanoServerImageGenerator.psm1 -Verbose**.
-4.  Create a VHD that includes the SCVMM packages by running the following command. You'll be prompted for an administrator password for the new VHD.
+4. Create a VHD that includes the SCVMM packages by running the following command. You'll be prompted for an administrator password for the new VHD.
 
-    ```
-    New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetPath .\NanoServerVM\NanoServerVM.vhdx -ComputerName <computername> -GuestDrivers -Package Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
-    ```
-Example:
+   ```
+   New-NanoServerImage -MediaPath <path to root of media> -BasePath .\Base -TargetPath .\NanoServerVM\NanoServerVM.vhdx -ComputerName <computername> -GuestDrivers -Package Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
+   ```
+   Example:
 
-    ```
-    New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\Nano.vhd -ComputerName Nano1 -GuestDrivers -Package     Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
-    ```
-- This example creates a VHD from an ISO mounted as F.
-- When creating the VHD it will use a folder called Base in the same directory in which you ran New-NanoServerImage
-- It will place the VHD in a folder called Nano1 in the folder in which the command runs.
-- The computer name will be Nano1 and will install virtual machine drivers running Hyper-V.
+   ```
+   New-NanoServerImage -MediaPath F:\ -BasePath .\Base -TargetPath .\Nano1\Nano.vhd -ComputerName Nano1 -GuestDrivers -Package     Microsoft-NanoServer-SCVMM-Package,Microsoft-NanoServer-SCVMM-Compute-Package
+   ```
+5. This example creates a VHD from an ISO mounted as F.
+6. When creating the VHD it will use a folder called Base in the same directory in which you ran New-NanoServerImage
+7. It will place the VHD in a folder called Nano1 in the folder in which the command runs.
+8. The computer name will be Nano1 and will install virtual machine drivers running Hyper-V.
 
-4. If you want a Generation 1 virtual machine, generate a VHD image using a .vhd extension for -TargetPath. For a Generation 2 virtual machine, generate a VHDX image with the .vhdx extension for -TargetPath.
-5. In VMM, create a new virtual machine and use the virtual hard disk you created.
+9. If you want a Generation 1 virtual machine, generate a VHD image using a .vhd extension for -TargetPath. For a Generation 2 virtual machine, generate a VHDX image with the .vhdx extension for -TargetPath.
+10. In VMM, create a new virtual machine and use the virtual hard disk you created.
 
 ## Next steps
 

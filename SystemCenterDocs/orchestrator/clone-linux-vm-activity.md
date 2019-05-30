@@ -21,13 +21,13 @@ The activity publishes all of the data from the required and optional properties
 
 With the exception of "Source VM/Template Path," all properties and published data refer to the destination VM produced by the clone operation.
 
->[!IMPORTANT]
->To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties can support a comma-separated list of values. Each list must contain the same number of values. The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
-For example, to assign network details to three network adapters, use the following format:
-- IP Address = 192.168.0.2, DHCP, 10.0.0.3
-- Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
-- Gateway = 192.168.0.1, DHCP, 10.0.0.1
-- DNS Suffix = a.com, b.com, c.com<br><br>
+> [!IMPORTANT]
+> To support multiple network adapters, the IP Address, Subnet Mask, Gateway, and DNS Suffix optional properties can support a comma-separated list of values. Each list must contain the same number of values. The value DHCP causes that network adapter value to be assigned by a DHCP server. If no IP address is specified for a network adapter, it will be assigned by a DHCP server.
+> For example, to assign network details to three network adapters, use the following format:
+> - IP Address = 192.168.0.2, DHCP, 10.0.0.3
+> - Subnet Mask = 255.255.255.0, DHCP, 255.0.0.0
+> - Gateway = 192.168.0.1, DHCP, 10.0.0.1
+> - DNS Suffix = a.com, b.com, c.com<br><br>
 
 ### Clone Linux VM Activity Required Properties
 

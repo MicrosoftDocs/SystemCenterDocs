@@ -302,7 +302,7 @@ Get all rules for ACL:
     Remove-SCPortACL [-PortACL] <PortACL> [-Confirm] [-JobVariable <String>] [-OnBehalfOfUser <String>] [-OnBehalfOfUserRole <UserRole>] [-PROTipID <Guid>] [-RunAsynchronously] [-VMMServer <ServerConnection>] [-WhatIf] [<CommonParameters>]
     ```
 
- ### Parameters
+   ### Parameters
  
 **Parameter** | **Details**
 --- | ---

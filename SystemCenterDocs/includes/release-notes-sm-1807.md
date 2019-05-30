@@ -18,22 +18,22 @@ The following sections detail the release notes for Service Manager 1807 and inc
 ## Issues fixed  
 The following issues are fixed in SM 1807:
 
-- 	System Center Operations Manager (SCOM) console and System Center Service Manager (SCSM) console or PowerShell components cannot coexist on the same server.
+- System Center Operations Manager (SCOM) console and System Center Service Manager (SCSM) console or PowerShell components cannot coexist on the same server.
 
   >[!NOTE]
   > You must install Operations Manager 1807 to resolve this.
 
-- 	The date and time format in some views is not consistent with the settings on the local computer.
--   SM Console does not release the  memory that is used as soon as the respective window (UI) is closed.
-- 	Console might crash (non en-us locale)  when importing a connector as a CSV file.  
-- 	Console might crash when it is brought back into focus after it is left out of focus for some time.
-- 	Workflow status view was not quickly loading.
-- 	Stale reports from Data Warehouse (DW) Cube.
-- 	DateDim tables in DWDataMart were not available until 12/31/2050.
--   TargetWarningDate in Service Level Objects (SLO) does not consider the working hours and days, as defined in       the associated calendar.
+- The date and time format in some views is not consistent with the settings on the local computer.
+- SM Console does not release the  memory that is used as soon as the respective window (UI) is closed.
+- Console might crash (non en-us locale)  when importing a connector as a CSV file.  
+- Console might crash when it is brought back into focus after it is left out of focus for some time.
+- Workflow status view was not quickly loading.
+- Stale reports from Data Warehouse (DW) Cube.
+- DateDim tables in DWDataMart were not available until 12/31/2050.
+- TargetWarningDate in Service Level Objects (SLO) does not consider the working hours and days, as defined in       the associated calendar.
 - Self service portal requests that contain attachments, generate erroneous failure messages even after successful generation.
 - For synchronizing the active directory connector with a specific domain controller, users cannot  specify the domain controller in the LDAP query of the active directory connector.
--	System Center Configuration Manager 1802 was not supported for Configuration Manager Connectors in Service Manager.
+- System Center Configuration Manager 1802 was not supported for Configuration Manager Connectors in Service Manager.
 
 ## Known issues and workarounds
 

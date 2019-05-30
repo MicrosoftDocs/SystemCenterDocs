@@ -238,27 +238,27 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 
 **To copy the database from the last backup**
 
-1.	Navigate to replica VHD path **<DPMServer FQDN><PhysicalReplicaId><PhysicalReplicaId>**
-2.	Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx command.
-3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
+1. Navigate to replica VHD path **<DPMServer FQDN><PhysicalReplicaId><PhysicalReplicaId>**
+2. Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx command.
+3. Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
 
 **To copy the database from a previous recovery point**
 
-1.	Navigate to DPMDB container directory  **<DPMServer FQDN><PhysicalReplicaId>**, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than represents a PIT/recovery point.
-2.	Navigate to any PIT vhd path i.e. **<DPMServer FQDN><PhysicalReplicaId><PITId>** and mount the disk0.vhdx present in it using *mount-vhd disk0.vhdx* command.
-3.	Once replica VHD is mounted, use *mountvol.exe* to assign a drive letter to the replica volume, using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
+1. Navigate to DPMDB container directory  **<DPMServer FQDN><PhysicalReplicaId>**, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than represents a PIT/recovery point.
+2. Navigate to any PIT vhd path i.e. **<DPMServer FQDN><PhysicalReplicaId><PITId>** and mount the disk0.vhdx present in it using *mount-vhd disk0.vhdx* command.
+3. Once replica VHD is mounted, use *mountvol.exe* to assign a drive letter to the replica volume, using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
 
-    All of the following  text with angular braces in the above steps are place holders, replace them with appropriate values.
-    - ReFSVolume - Access path from the SQL script output
-    - DPMServer FQDN - Fully qualified name of DPM server
-    - PhysicalReplicaId - Physical replica ID from the SQL script out
-    - PITId - GUID identifier other than physical replica ID in the container directory.
-4.	Open another administrative command prompt and run *psexec.exe -s cmd.exe* to start a command prompt in system context.
-5.	Change directory to the X: drive and navigate to the location of the DPM database files.
-6.	Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
-7.	Go to the psexec PowerShell window opened in step one, navigate to the VHDX path, and dismount the VHDX by using the command *dismount-vhd disk0.vhdx*.
-8.	After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running *DPMSYNC-RESTOREDB* command.
-9.	Run *DPMSYNC-SYNC* once *DPMSYNC-RESTOREDB* is complete.
+   All of the following  text with angular braces in the above steps are place holders, replace them with appropriate values.
+   - ReFSVolume - Access path from the SQL script output
+   - DPMServer FQDN - Fully qualified name of DPM server
+   - PhysicalReplicaId - Physical replica ID from the SQL script out
+   - PITId - GUID identifier other than physical replica ID in the container directory.
+4. Open another administrative command prompt and run *psexec.exe -s cmd.exe* to start a command prompt in system context.
+5. Change directory to the X: drive and navigate to the location of the DPM database files.
+6. Copy them to a location that's easy to restore from. Exit the psexec cmd window after you copy.
+7. Go to the psexec PowerShell window opened in step one, navigate to the VHDX path, and dismount the VHDX by using the command *dismount-vhd disk0.vhdx*.
+8. After reinstalling the DPM server, you can use the restored DPMDB to attach to the DPM server by running *DPMSYNC-RESTOREDB* command.
+9. Run *DPMSYNC-SYNC* once *DPMSYNC-RESTOREDB* is complete.
 
 ### Back up the database by backing up the DPM storage pool
 > [!NOTE]
@@ -481,27 +481,27 @@ Ensure:
 
 ###  Back up DPM database
 
-1.	In DPM console, click **Protection** > **Create protection group**.
-2.	On the **Select Protection Group Type** page, select **Servers**.
-3.	On the **Select group members** page, select **DPM database**
-. If you're running SQL Server remotely, select the remote SQL Server installed and select DPM database. If SQL Server is running on the DPM server, expand the DPM server and select DPMDB.
-4.	On the **Select Data Protection Method** page, select **I want short-term protection using disk**. Specify the short-term protection policy options.
-5.	After initial replication of DPM database. run the following SQL script:
+1. In DPM console, click **Protection** > **Create protection group**.
+2. On the **Select Protection Group Type** page, select **Servers**.
+3. On the **Select group members** page, select **DPM database**
+   . If you're running SQL Server remotely, select the remote SQL Server installed and select DPM database. If SQL Server is running on the DPM server, expand the DPM server and select DPMDB.
+4. On the **Select Data Protection Method** page, select **I want short-term protection using disk**. Specify the short-term protection policy options.
+5. After initial replication of DPM database. run the following SQL script:
 
- ```powershell
-select AG.NetbiosName, DS.DatasourceName, V.AccessPath, LR.PhysicalReplicaId from tbl_IM_DataSource DS
-join tbl_PRM_LogicalReplica as LR
-on DS.DataSourceId = LR.DataSourceId
-join tbl_AM_Server as AG
-on DS.ServerId=AG.ServerId
-join tbl_PRM_ReplicaVolume RV
-on RV.ReplicaId = LR.PhysicalReplicaId
-join tbl_STM_Volume V
-on RV.StorageId = V.StorageId
-where datasourcename like N'%dpmdb%' and ds.ProtectedGroupId is not null
-and LR.Validity in (1,2)
-and AG.ServerName like N'%<dpmsqlservername>%' -- <dpmsqlservername> is a placeholder, put netbios name of server hosting DPMDB
-```
+   ```powershell
+   select AG.NetbiosName, DS.DatasourceName, V.AccessPath, LR.PhysicalReplicaId from tbl_IM_DataSource DS
+   join tbl_PRM_LogicalReplica as LR
+   on DS.DataSourceId = LR.DataSourceId
+   join tbl_AM_Server as AG
+   on DS.ServerId=AG.ServerId
+   join tbl_PRM_ReplicaVolume RV
+   on RV.ReplicaId = LR.PhysicalReplicaId
+   join tbl_STM_Volume V
+   on RV.StorageId = V.StorageId
+   where datasourcename like N'%dpmdb%' and ds.ProtectedGroupId is not null
+   and LR.Validity in (1,2)
+   and AG.ServerName like N'%<dpmsqlservername>%' -- <dpmsqlservername> is a placeholder, put netbios name of server hosting DPMDB
+   ```
 
 **Recover DPM database**
 

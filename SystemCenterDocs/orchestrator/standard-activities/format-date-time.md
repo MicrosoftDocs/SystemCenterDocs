@@ -8,7 +8,7 @@ ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,29 +20,29 @@ manager: "cfreeman"
 ---
 # Format Date/Time
 The Format Date/Time activity enables you to transform existing date and time formats into custom formats that you create.  
-  
+
 ## Configuring the Format Date/Time Activity  
  Before you configure the Format Date/Time activity, you need to determine the following:  
-  
--   The existing date and time format you want to transform.  
-  
--   The new date and time format you want it to become.  
-  
- Use the following information to configure the Format Date/Time activity.  
-  
+
+- The existing date and time format you want to transform.  
+
+- The new date and time format you want it to become.  
+
+Use the following information to configure the Format Date/Time activity.  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Date/Time**|Type the time that you want to convert.|  
 |**Format**|Type the format of the time that you want to convert. See the Date/Time Format Codes table for format codes and examples.|  
 |**Format**|Type the format that you want to convert the input time to.|  
 |**Output Adjustments**|Type a number in any of the following fields to adjust the output time from the input time. For example, if the input time is coming from a server that is three hours ahead of your local time, type -3 in the Hours field to set the output time (your local time) to three hours behind the input time. If the input time is three hours behind your local time, type 3 to set the output time to three hours ahead of the input time.<br /><br /> You can adjust the output time using the following time units:<br /><br /> Days<br /><br /> Months<br /><br /> Years<br /><br /> Hours<br /><br /> Minutes<br /><br /> Seconds|  
-  
+
  To specify a date/time format, you must enter the codes that represent each part of the date and time.  
-  
+
 ### Date/Time Format Codes  
-  
+
 |Code|Description|  
 |----------|-----------------|  
 |y|The last digit of the year. For example, 2005 would be represented as 5.|  
@@ -65,19 +65,19 @@ The Format Date/Time activity enables you to transform existing date and time fo
 |s|Seconds as a number from 0 to 59. If the second number is a single-digit number, it is displayed without a leading zero.|  
 |ss|Seconds in two digits. If the second number is a single-digit number, it is displayed with a leading zero.|  
 |tt|A.M. or P.M. as two letters: A.M. or P.M. as defined on your system.|  
-  
+
  Here are some examples of dates and times and their corresponding format:  
-  
+
 |Format|Date|  
 |------------|----------|  
 |MM/dd/yyyy hh:mm:ss tt|08/05/2006 03:05:15 PM|  
 |M/d/yy h &#58;m&#58;s tt|8/5/06 3:5:15 PM|  
 |ddd MMM dd yyyy|Sat Aug 05 2006|  
 |dddd, MMMM dd yyyy|Saturday, August 05 2006|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Format Result|The result of the format in the specified form.|  

@@ -49,10 +49,10 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
     ![Set scope for Alert widget](./media/create-web-dashboard-alerts/web-console-new-dashboard-05.png)
 
 11. Set the criteria to identify the alerts to display.  To narrow the results, you can filter by selecting the following:
-   * Severity
-   * Priority
-   * Resolution state
-   * Alert age  
+    * Severity
+    * Priority
+    * Resolution state
+    * Alert age  
    
     Data matching the defined criteria will only be displayed in the widget.
 

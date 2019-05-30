@@ -87,10 +87,12 @@ To set up a SQL Server database:
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' <ipv4> port_number].
 
 
-    >[!NOTE]
-    >DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must [Download and install SQL Server Management Studio (SSMS) version 16.5](https://go.microsoft.com/fwlink/?LinkID=832812).
-    >SSMS version 17.0 or later is not supported with DPM 2016. For more information, see [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812).
-    >With DPM 2019, you need to install SQL SSRS separately for SQL 2017. With SQL 2017 and later, SSRS doesn't get installed as a part of SQL install.
+~~~
+>[!NOTE]
+>DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must [Download and install SQL Server Management Studio (SSMS) version 16.5](https://go.microsoft.com/fwlink/?LinkID=832812).
+>SSMS version 17.0 or later is not supported with DPM 2016. For more information, see [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812).
+>With DPM 2019, you need to install SQL SSRS separately for SQL 2017. With SQL 2017 and later, SSRS doesn't get installed as a part of SQL install.
+~~~
 
 ## <a name="BKMK_Install"></a>Install DPM
 
@@ -110,53 +112,53 @@ To set up a SQL Server database:
 ## <a name="BKMK_Unattend"></a>Run an unattended install
 Run an unattended install as follows:
 
-1.  Make sure you have the prerequisites installed before you start.
+1. Make sure you have the prerequisites installed before you start.
 
-2.  On the remote SQL Server, make sure .NET Framework 3.5 (for SQL 2016) 4.0 or 4.5 (SQL 2017) is installed on Windows server before installing SQL.
-3.  Use the following code to make sure the firewall is opened:
+2. On the remote SQL Server, make sure .NET Framework 3.5 (for SQL 2016) 4.0 or 4.5 (SQL 2017) is installed on Windows server before installing SQL.
+3. Use the following code to make sure the firewall is opened:
 
-    ```
-    netsh advfirewall firewall add rule name=DPM_SqlServr.exe dir=in action=allow program=\"%PROGRAMFILES%\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Binn\sqlservr.exe\" profile=Domain  
-    netsh advfirewall firewall add rule name=DPM_UDP_Port_1434 dir=in action=allow protocol=UDP localport=1434 profile=Domain
-    ```
+   ```
+   netsh advfirewall firewall add rule name=DPM_SqlServr.exe dir=in action=allow program=\"%PROGRAMFILES%\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Binn\sqlservr.exe\" profile=Domain  
+   netsh advfirewall firewall add rule name=DPM_UDP_Port_1434 dir=in action=allow protocol=UDP localport=1434 profile=Domain
+   ```
 
-4.  Install SQL Server on the local or remote server.
+4. Install SQL Server on the local or remote server.
 
-5.  Copy the following text into Notepad (or another text editor) and save the script on the DPM server as DPMSetup.ini. You use the same script whether the SQL Server instance is installed on the DPM server or on a remote server.
+5. Copy the following text into Notepad (or another text editor) and save the script on the DPM server as DPMSetup.ini. You use the same script whether the SQL Server instance is installed on the DPM server or on a remote server.
 
-  >[!IMPORTANT]
-  > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDN).
+   >[!IMPORTANT]
+   > When installing DPM, use NetBIOS names for the domain name and SQL machine name. Do not use fully qualified domain names (FQDN).
 
-  When creating DPMSetup.ini, replace the text inside <> with values from your own environment. Lines beginning with the hash (#) are commented out, and DPM setup uses the default values. To specify your own values, type the values within the <> and delete the hash (#).
+   When creating DPMSetup.ini, replace the text inside <> with values from your own environment. Lines beginning with the hash (#) are commented out, and DPM setup uses the default values. To specify your own values, type the values within the <> and delete the hash (#).
 
-    ```
-    [OPTIONS]
-    UserName = <A user with credentials to install DPM>
-    CompanyName = <Name of your company>
-    ProductKey = <The 25-character DPM product key in the format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx>
-    # SqlAccountPassword = <The password to the DPM$ account>
-    # StandardAgentLicenses = <No. of standard agent licenses you have purchased>
-    # EnterpriseAgentLicenses = <No. of enterprise agent licenses you have purchased>
-    # ProgramFiles = C:\Program Files\Microsoft Data Protection Manager
-    # DatabaseFiles = C:\Program Files\Microsoft Data Protection Manager\DPM\DPMDB
-    # IntegratedInstallSource = <Location of the DPM setup files>
-    # ---For using a remote SQL Server instance ---
-    # SQLMachineName = <Name of the SQL Server computer> OR <SQL Cluster Name>
-    # SQLInstanceName = <Name of the instance of SQL Server that Setup must use>
-    # SQLMachineUserName = <User name that Setup must user>
-    # SQLMachinePassword = <Password for the user name Setup must use>
-    # SQLMachineDomainName = <Domain to which the SQL Server computer is attached>
-    # ---For using a reporting SQL Server instance in case of DPMDB in SQL Cluster ---
-    # ReportingMachineName = <Name of the SQL Server computer>
-    # ReportingInstanceName = <Name of the instance of SQL Server that Setup must use, SSRS in case of SQL 2017>
-    # ReportingMachineUserName = <User name that Setup must user>
-    # ReportingMachinePassword = <Password for the user name Setup must use>
-    # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached>
-    ```
+   ```
+   [OPTIONS]
+   UserName = <A user with credentials to install DPM>
+   CompanyName = <Name of your company>
+   ProductKey = <The 25-character DPM product key in the format xxxxx-xxxxx-xxxxx-xxxxx-xxxxx>
+   # SqlAccountPassword = <The password to the DPM$ account>
+   # StandardAgentLicenses = <No. of standard agent licenses you have purchased>
+   # EnterpriseAgentLicenses = <No. of enterprise agent licenses you have purchased>
+   # ProgramFiles = C:\Program Files\Microsoft Data Protection Manager
+   # DatabaseFiles = C:\Program Files\Microsoft Data Protection Manager\DPM\DPMDB
+   # IntegratedInstallSource = <Location of the DPM setup files>
+   # ---For using a remote SQL Server instance ---
+   # SQLMachineName = <Name of the SQL Server computer> OR <SQL Cluster Name>
+   # SQLInstanceName = <Name of the instance of SQL Server that Setup must use>
+   # SQLMachineUserName = <User name that Setup must user>
+   # SQLMachinePassword = <Password for the user name Setup must use>
+   # SQLMachineDomainName = <Domain to which the SQL Server computer is attached>
+   # ---For using a reporting SQL Server instance in case of DPMDB in SQL Cluster ---
+   # ReportingMachineName = <Name of the SQL Server computer>
+   # ReportingInstanceName = <Name of the instance of SQL Server that Setup must use, SSRS in case of SQL 2017>
+   # ReportingMachineUserName = <User name that Setup must user>
+   # ReportingMachinePassword = <Password for the user name Setup must use>
+   # ReportingMachineDomainName = <Domain to which the SQL Server computer is attached>
+   ```
 
-6.  After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`.
-  - `[media location]` indicates where you'll run setup.exe from.
-  - `<path>` is the location of the .ini file.
+6. After saving the file, at an elevated command prompt on the installation server, type: `start /wait [media location]\setup.exe /i /f <path>\DPMSetup.ini /l <path>\dpmlog.txt`.
+   - `[media location]` indicates where you'll run setup.exe from.
+   - `<path>` is the location of the .ini file.
 
 ## <a name="BKMK_DC"></a>Install DPM on a domain controller
 If you want to set up DPM on an RODC you'll need to do a couple of steps before you set up SQL Server and install DPM.

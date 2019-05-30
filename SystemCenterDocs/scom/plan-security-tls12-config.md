@@ -35,14 +35,13 @@ Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is re
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
 
 ### Method 1: Manually modify the registry
->[!IMPORTANT]
->Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
->
-Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
-
->[!NOTE]
-> Making these registry changes does not affect the use of Kerberos or NTLM protocols.
+> [!IMPORTANT]
+> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
 > 
+> Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
+> 
+> [!NOTE]
+> Making these registry changes does not affect the use of Kerberos or NTLM protocols.
 
 1. Log on to the server by using an account that has local administrative credentials. 
 2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** textbox, and then click **OK**.
@@ -68,34 +67,34 @@ $ProtocolSubKeyList = @("Client", "Server")
 $DisabledByDefault = "DisabledByDefault"  
 $Enabled = "Enabled"  
 $registryPath = "HKLM:\\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\"  
-  
+
 foreach($Protocol in $ProtocolList)  
 {  
     Write-Host " In 1st For loop"  
-	foreach($key in $ProtocolSubKeyList)  
-	{  
-		$currentRegPath = $registryPath + $Protocol + "\" + $key  
-		Write-Host " Current Registry Path $currentRegPath"  
-  		
-		if(!(Test-Path $currentRegPath))  
-		{  
-		    Write-Host "creating the registry"  
-			New-Item -Path $currentRegPath -Force | out-Null  		
-		}  
-		if($Protocol -eq "TLS 1.2")  
-		{  
-		    Write-Host "Working for TLS 1.2"  
-			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null  
-			New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null  
-  		
-		}  
-		else  
-		{  
-		    Write-Host "Working for other protocol"  
-			New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null  
-			New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null   
-		}  	
-	}  
+    foreach($key in $ProtocolSubKeyList)  
+    {  
+        $currentRegPath = $registryPath + $Protocol + "\" + $key  
+        Write-Host " Current Registry Path $currentRegPath"  
+
+        if(!(Test-Path $currentRegPath))  
+        {  
+            Write-Host "creating the registry"  
+            New-Item -Path $currentRegPath -Force | out-Null        
+        }  
+        if($Protocol -eq "TLS 1.2")  
+        {  
+            Write-Host "Working for TLS 1.2"  
+            New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "0" -PropertyType DWORD -Force | Out-Null  
+            New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "1" -PropertyType DWORD -Force | Out-Null  
+
+        }  
+        else  
+        {  
+            Write-Host "Working for other protocol"  
+            New-ItemProperty -Path $currentRegPath -Name $DisabledByDefault -Value "1" -PropertyType DWORD -Force | Out-Null  
+            New-ItemProperty -Path $currentRegPath -Name $Enabled -Value "0" -PropertyType DWORD -Force | Out-Null   
+        }   
+    }  
 }  
 
 Exit 0
@@ -139,7 +138,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
 1. Log on to the server by using an account that has local administrative credentials.  
 2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** texbox, and then click **OK**.  
 3. Locate the following ODBC subkey for OpsMgrAC: **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC**.  
- 
+
     >[!NOTE]
     >The default name of DSN is OpsMgrAC.
 
@@ -151,7 +150,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
    Alternatively, create and save the following .reg file in Notepad or another text editor. To run the saved .reg file, double-click the file.
 
     * For ODBC 11.0, create the following ODBC 11.0.reg file:
-    
+
          ```
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
         "OpsMgrAC"="ODBC Driver 11 for SQL Server"
@@ -163,7 +162,7 @@ For Audit Collection Services (ACS), you must make additional changes in the reg
         ```
 
     * For ODBC 13.0, create the following ODBC 13.0.reg file:
-  
+
         ```
         [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
         "OpsMgrAC"="ODBC Driver 13 for SQL Server"

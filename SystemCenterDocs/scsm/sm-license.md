@@ -74,10 +74,10 @@ To activate Service Manager through PowerShell, use the following procedure:
     ```  
     Set-SCSMLicense -ManagementServer <ManagementServer> -ProductId <Product Key>
     ```      
-On executing the command, you get a prompt asking for the required credential to execute the command. Provide the credentials as appropriate.
+   On executing the command, you get a prompt asking for the required credential to execute the command. Provide the credentials as appropriate.
 
 A confirmation message appears.
 
-3.  Read and accept the confirmation message. Upon successful confirmation, licensing complete information appears as shown below:  
+3. Read and accept the confirmation message. Upon successful confirmation, licensing complete information appears as shown below:  
 
-    ![SM license completion](./media/sm-licensing/licensing-complete.png)
+   ![SM license completion](./media/sm-licensing/licensing-complete.png)

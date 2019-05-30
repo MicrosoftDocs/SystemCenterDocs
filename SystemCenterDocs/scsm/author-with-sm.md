@@ -127,19 +127,19 @@ If Windows Error Reporting is enabled on the computer that is running the Author
 
 ##### To install the Authoring Tool  
 
-1.  Verify that the computer on which you plan to install the Authoring tool meets the requirements.  
-2.  Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
+1. Verify that the computer on which you plan to install the Authoring tool meets the requirements.  
+2. Download the required version of the SM Authoring tool to a local computer on which you want to install the Authoring tool.
 
-  - [Download 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
-  - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
+   - [Download 2016 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=54059)
+   - [Download 1801 SM Authoring tool](https://www.microsoft.com/en-us/download/details.aspx?id=56561)  
 
 3. Double-click the downloaded zip file, read through the license agreement, and extract the files to the desired location.  
 4. Browse to the folder where you extracted the files, expand the **CDImage** folder, and locate **Setup.exe** and double-click **Setup.exe** file.   
-5.  In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  
-6.  Continue through the **Product registration** and the **Installation location** pages.  
-7.  On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, click **Install Microsoft Visual Studio Shell 2008** to install the application.  
-     Click **Check prerequisites again**, and fix any other problems until all prerequisite tests pass.  
-8.  Continue through the **Use Microsoft Update to help keep your computer secure and up\-to\-date** pages.  
+5. In the Service Manager Authoring Tool Setup Wizard, click **Install the Service Manager Authoring Tool**.  
+6. Continue through the **Product registration** and the **Installation location** pages.  
+7. On the **Prerequisites** page, if any prerequisite test fails, you must update the server to ensure that each prerequisite is met. If Microsoft Visual Studio 2008 Shell is not installed, click **Install Microsoft Visual Studio Shell 2008** to install the application.  
+    Click **Check prerequisites again**, and fix any other problems until all prerequisite tests pass.  
+8. Continue through the **Use Microsoft Update to help keep your computer secure and up\-to\-date** pages.  
 9. On the **Installation summary** page, click **Install** and wait for the installation to finish.  
 
 ##### To start the Authoring Tool  

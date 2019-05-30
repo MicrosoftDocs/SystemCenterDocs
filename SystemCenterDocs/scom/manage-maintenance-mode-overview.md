@@ -324,17 +324,17 @@ In earlier releases of Operations Manager, maintenance schedules that targeted i
 **Guidelines**
 - As  part of  fix for this issue, the existing schedules are converted to the new design. This happens automatically while upgrading to Operations Manager 2019.
 - Any failures in the above operation are captured in the following database table:
-[OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
+  [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
 - Schedules which fail to get converted to the new design, should be converted manually by executing the following scripts against the Operations Manager database.
     EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '<ScheduleIDOftheMMSchedule>'
-Example:
+  Example:
     EXEC [dbo].[p_MaintenanceScheduleMigrateSchedule] '1A6917C6-999C-E811-837B-02155DC77B3F'
 - To convert all the schedules to the new design, use the following command:
     Delete [OperationsManager].[dbo].[MaintenanceModeSchedulesMigrationLogs]
     EXEC [dbo].[p_MaintenanceScheduleMigrateExistingSchedules]
 
- >[!NOTE]
- >After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value five minutes is to avoid causing a large performance decrease on the system.
+  >[!NOTE]
+  >After you deploy the upgrade, maintenance schedules might be triggered and have a maximum delay of five (5) minutes. You can configure the maximum delay by overriding the **Maintenance Mode** rule. The default value five minutes is to avoid causing a large performance decrease on the system.
 
 ::: moniker-end
 

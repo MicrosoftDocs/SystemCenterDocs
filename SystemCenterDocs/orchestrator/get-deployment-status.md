@@ -40,10 +40,10 @@ activity
     
 To add new filter criteria:
 
-  1. Click **Add** and select the property on which to filter. 
-  2. Select a **Relation** and then enter a value for the filter.
+1. Click **Add** and select the property on which to filter. 
+2. Select a **Relation** and then enter a value for the filter.
   
-    The type of relation value available will depend on the data type of the property selected.
+   The type of relation value available will depend on the data type of the property selected.
 
 ## Get Deployment Status published data
 

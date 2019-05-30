@@ -25,39 +25,39 @@ Service Manager reports enable you to collect and view data and trends from acro
 
 The data warehouse in Service Manager provides three primary functions:  
 
-1.  Offload data from the main Service Manager database to improve performance of the Service Manager database  
+1. Offload data from the main Service Manager database to improve performance of the Service Manager database  
 
-2.  Long\-term data storage  
+2. Long\-term data storage  
 
-3.  Provide data for reports  
+3. Provide data for reports  
 
- The data warehouse that ships with Service Manager is actually its own management group. It has essentially all the System Center common platform pieces that are present in other System Center components, such as System Center - Operations Manager. These components are built on the common platform, which in turn consists of the following:  
+The data warehouse that ships with Service Manager is actually its own management group. It has essentially all the System Center common platform pieces that are present in other System Center components, such as System Center - Operations Manager. These components are built on the common platform, which in turn consists of the following:  
 
--   A model\-based database for storing configuration information about the data warehouse and for staging the data after it has been extracted from the Service Manager database. In the data warehouse management group, this instance of the mode\-based database is named DWStagingAndConfig.  
+- A model\-based database for storing configuration information about the data warehouse and for staging the data after it has been extracted from the Service Manager database. In the data warehouse management group, this instance of the mode\-based database is named DWStagingAndConfig.  
 
--   The management server, which consists of the following:  
+- The management server, which consists of the following:  
 
-    -   System Center Data Access service  
+  -   System Center Data Access service  
 
-    -   Microsoft Monitoring Agent  
+  -   Microsoft Monitoring Agent  
 
-    -   System Center Management Configuration service  
+  -   System Center Management Configuration service  
 
- In addition to its base that is built on the System Center common platform, the Service Manager data warehouse has two other databases:  
+  In addition to its base that is built on the System Center common platform, the Service Manager data warehouse has two other databases:  
 
--   DWRepository-where the transformed data is stored and optimized for reporting purposes.  
+- DWRepository-where the transformed data is stored and optimized for reporting purposes.  
 
--   DWDataMart-where the transformed data is loaded and where, ultimately, reports query from.  
+- DWDataMart-where the transformed data is loaded and where, ultimately, reports query from.  
 
- The data warehouse was designed to:  
+  The data warehouse was designed to:  
 
--   Be fully extensible by means of management packs.  
+- Be fully extensible by means of management packs.  
 
--   Utilize data warehousing best practices, such as dimensional modeling with facts and dimensions.  
+- Utilize data warehousing best practices, such as dimensional modeling with facts and dimensions.  
 
--   Operate at very large scale.  
+- Operate at very large scale.  
 
- The data warehouse in Service Manager was designed and built with the intention of being a platform component that enables System Center users to collocate data from all System Center products to gain comprehensive insight across their information technology \(IT\) investments.  
+  The data warehouse in Service Manager was designed and built with the intention of being a platform component that enables System Center users to collocate data from all System Center products to gain comprehensive insight across their information technology \(IT\) investments.  
 
 ### The difference between OLTP and OLAP \(performing vs. analyzing transactions\)  
  Online transaction processing \(OLTP\) systems are designed for fast writes against small units of work-for example, for the fast creation of a single incident. In contrast, online analytical processing \(OLAP\) data warehouses are designed to facilitate fast analysis across large sets of data-for example, quickly determining service level agreement \(SLA\) adherence across all incidents created in the last year.  

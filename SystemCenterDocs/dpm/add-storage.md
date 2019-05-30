@@ -46,10 +46,10 @@ Setting up MBS consists of the following procedures. Note that  you cannot attac
 
 1. Create a storage pool in the File and Storage Services of Server Manager.
 2. Add the available physical disks to the storage pool.
-    - Adding only one disk to the pool keeps the column count to 1. You can then add disks as needed afterwards.
-    - If multiple disks are added to the storage pool, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
+   - Adding only one disk to the pool keeps the column count to 1. You can then add disks as needed afterwards.
+   - If multiple disks are added to the storage pool, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
 
-    ![Add disks to storage pool](./media/add-storage/dpm2016-add-storage-1.png)
+     ![Add disks to storage pool](./media/add-storage/dpm2016-add-storage-1.png)
 
 3. Create a virtual disk from the storage pool, with the layout set to Simple.
 
@@ -143,7 +143,7 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 > We recommend you to deploy DPM 2019 (using tiered volumes) on Windows Server 2019 to achieve enhanced backup performances.
 
 - MBS is enabled automatically when you're running at least DPM 2016 on Windows Server 2016. If DPM is running on a version of Windows Server earlier than Windows Server 2016, it doesn't use MBS.
--	MBS provides intelligent storage for short-term backup to disk. MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
+-   MBS provides intelligent storage for short-term backup to disk. MBS provides faster disk backup, consuming less disk space. Without MBS, each data source needs two volumes, one for the initial backup and the other for delta changes.
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology.[Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/).
 - With DPM 2019 and later, you can use tiered volumes for DPM native storage which delivers 50-70% faster backups
 
@@ -170,8 +170,8 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
     - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
     - Create tiered/simple volumes on the virtual disk.
 
-2.	Add the volumes to DPM.
-3.	Migrate your data back to the newly created volumes using Volume Migration performed in Step 1.
+2.  Add the volumes to DPM.
+3.  Migrate your data back to the newly created volumes using Volume Migration performed in Step 1.
     > [!NOTE]
     > Applicable only if you have migrated your earlier backups in Step 1.
 
@@ -190,25 +190,25 @@ Follow these steps: :
 3. Click **Storage Pools**.
 4. Select **New Storage Pool** option from **TASKS**.
 5. Enter a name for the storage pool, click **Next**.
-6.	Include the physical disk to the storage pool.
-    If  a disk is missing from the primordial pool, you can add it by selecting **Add Physical Disk** option from the **TASKS** drop-down menu.
+6. Include the physical disk to the storage pool.
+   If  a disk is missing from the primordial pool, you can add it by selecting **Add Physical Disk** option from the **TASKS** drop-down menu.
 
-    ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
+   ![Include Physical Disc](./media/add-storage/include-phyiscal-disk-2019.png)
 
-    >[!NOTE]
-    > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
+   >[!NOTE]
+   > The primordial pool is created by default and is essentially a repository for disks that are available for use in a storage pool that you create. A disk can only belong to a single storage pool.
 
 7. Check the media type of the disk included. At least one of the disks should be SSD, required for SSD Tiering.
-    -	Add all the disks including SSDs to the storage pool.
-    -	Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
+   - Add all the disks including SSDs to the storage pool.
+   - Add only one disk to the pool to keep the column count to 1. You can then add disks as needed afterwards.
 
-    > [!NOTE]
-    > - If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
-    > - For DPM running on virtual machines, expose the VHDs carved out of physical SSDs & HDDs of required size from the host computer to the VM, and use them as a tiered storage as explained above.
+     > [!NOTE]
+     > - If you add multiple disks to the storage pool at a go, the number of disks is stored as the number of columns. When more disks are added, they can only be a multiple of the number of columns.
+     > - For DPM running on virtual machines, expose the VHDs carved out of physical SSDs & HDDs of required size from the host computer to the VM, and use them as a tiered storage as explained above.
 
-  The following image shows the check for disk type:
+   The following image shows the check for disk type:
 
-  ![Check disk type ](./media/add-storage/media-type-check-2019.png)
+   ![Check disk type ](./media/add-storage/media-type-check-2019.png)
 
 8. If the media-type for HDD or SSD disk is not recognized correctly, use the following command:
 
@@ -216,8 +216,8 @@ Follow these steps: :
 
     ![Set media type ](./media/add-storage/set-media-type-2019.png)
 
-9.  For each of these disks, set the allocation as **Automatic**.
-    ![Disk allocation](./media/add-storage/allocation-2019.png)
+9. For each of these disks, set the allocation as **Automatic**.
+   ![Disk allocation](./media/add-storage/allocation-2019.png)
 
 10. Check the options made, and click **Create to create a new storage pool**.
 
@@ -233,7 +233,6 @@ To do this, go to PowerShell and execute the following commands:
 
 ```
 Set-StoragePool -FriendlyName <String> [-WriteCacheSizeDefault <UInt64>]
-
  ```
 Choose -WriteCacheSizeDefault value as 0.
 
@@ -290,8 +289,8 @@ Follow these steps:
 
 ### Disable Auto-Caching at file system level
 
-1.	Go to PowerShell.
-2.	Use the following command:
+1.  Go to PowerShell.
+2.  Use the following command:
     ```
     fsutil behavior disableWriteAutoTiering
     ```

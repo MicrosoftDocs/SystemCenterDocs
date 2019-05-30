@@ -24,13 +24,13 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 ## Configuring the Run .Net Script Activity  
  Before you configure the Run .Net Script activity, you need to determine the following:  
   
--   The code you want to run.  
+- The code you want to run.  
   
--   The libraries you want to use.  
+- The libraries you want to use.  
   
--   The data you want to publish.  
+- The data you want to publish.  
   
- Use the following information to configure the Run .Net Script activity.  
+  Use the following information to configure the Run .Net Script activity.  
   
 > [!NOTE]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  

@@ -46,11 +46,11 @@ The following table lists the types of log data that can be stored in the Orches
 ## Platform Code and Domain Code  
 Orchestrator runbook activities contains two distinct types of code:  
 
--  *Platform Code*
+- *Platform Code*
 
   This is common code shared by most activities, and is used to run common tasks performed by Orchestrator activities. Platform code generates Common Published Data.  
 
--  *Domain Code*
+- *Domain Code*
 
   Runs a variety of tasks that are specific for the actions for each activity, that are typically not associated with the Orchestrator platform itself. Potentially, there can be great variation between platform code and domain code.  
 

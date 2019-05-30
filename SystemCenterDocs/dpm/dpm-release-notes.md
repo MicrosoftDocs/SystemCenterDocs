@@ -65,17 +65,15 @@ The following sections summarize the release notes for DPM 2019 and include the 
     WHERE JD.Type = '282faac6-e3cb-4015-8c6d-4276fcca11d4'        
     AND JD.IsDeleted = 0
     AND SCH.IsDeleted = 0
-
     ```
 4. If you have more than one row returned, take the resulting ScheduleID and JobDefinitionID of the older entry and mark them as deleted.
-  ```
+   ```
     update tbl_SCH_ScheduleDefinition
     set IsDeleted = 1
     where ScheduleId = ‘ScheduleID '               --- Replace with Your ScheduleID
     update dbo.tbl_JM_JobDefinition
     set IsDeleted = 1
     where JobDefinitionId = ‘JobDefinitionID'             --- Replace with Your JobDefinitionID
-
    ```
 5. Delete the SQL job that is matching the ScheduleID under the SQL Server Agent – JOBS. Once deleted, the crash at zero hours would be resolved.
 

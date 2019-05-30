@@ -38,15 +38,15 @@ You must associate the Run As Account with an appropriate Run As profile. The Ad
 
 Office 365 management pack uses agentless monitoring approach. All monitoring workflows that communicate with Office 365 Monitoring API are being executed on management servers only.  An Office 365 user account with Global Administrator permissions for the subscription is required for monitoring of an O365 subscription.  It is highly recommended to add a new dedicated user account to each Office 365 subscription you want to monitor.
 To create a new user with Global Administrator permissions using Office 365 admin center:
-1.	Go to https://portal.office.com/UserManagement/ActiveUsers.aspx to open Office 365 admin center. Log in as Subscription Global Administrator.
-2.	On Users and Groups tab: click Add button
-3.	Enter First name, Last name, Display name and User name and select a domain linked to the subscription. Note that First and Last names are required for account with Global Administrator role.<br> ![New User Details page](./media/plan-security-microsoft-cloud/om2016-o365-new-user-details.png)  
-4.	On setting tab: select Global administrator role to be assigned to account. Specify alternate email address and user location.<br>![New User Settings page](./media/plan-security-microsoft-cloud/om2016-o365-new-user-settings.png)  
-5.	You are not required to assign Office 365 services licenses to the monitoring account
-6.	Specify an email address to receive a temporary password. Log out from Office 365 admin center and log in again using new credentials received in the email.
-7.	Login to the Office 365 management portal using newly created credentials and set the password for the account. Remember to use strong complex password because this account has Global administrator permissions.
-    > [!NOTE]
-    > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to login to the Office 365 management portal at least once.
+1. Go to https://portal.office.com/UserManagement/ActiveUsers.aspx to open Office 365 admin center. Log in as Subscription Global Administrator.
+2. On Users and Groups tab: click Add button
+3. Enter First name, Last name, Display name and User name and select a domain linked to the subscription. Note that First and Last names are required for account with Global Administrator role.<br> ![New User Details page](./media/plan-security-microsoft-cloud/om2016-o365-new-user-details.png)  
+4. On setting tab: select Global administrator role to be assigned to account. Specify alternate email address and user location.<br>![New User Settings page](./media/plan-security-microsoft-cloud/om2016-o365-new-user-settings.png)  
+5. You are not required to assign Office 365 services licenses to the monitoring account
+6. Specify an email address to receive a temporary password. Log out from Office 365 admin center and log in again using new credentials received in the email.
+7. Login to the Office 365 management portal using newly created credentials and set the password for the account. Remember to use strong complex password because this account has Global administrator permissions.
+   > [!NOTE]
+   > Management Pack workflows are unable to obtain monitoring data, Connection State monitor sets Subscription health to “Critical” state and generates “(401) Unauthorized” Alert until new Global Administrator account is used to login to the Office 365 management portal at least once.
 
 ### Configure Run As profiles
 
