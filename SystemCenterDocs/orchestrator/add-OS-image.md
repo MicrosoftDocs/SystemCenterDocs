@@ -27,7 +27,7 @@ The activity publishes all of the data from the required and optional properties
 |:---|:---|:---|
 | Label   | Specifies the friendly name of the image.   | String   |
 | Name   | Specifies a name for the operating system image that Windows Azure uses to identify the image when creating one or more virtual machines. | String   |
-| OS Type   | The operating system type of the opertaing system image.   | Windows, Linux   |
+| OS Type   | The operating system type of the operating system image.   | Windows, Linux   |
 | Media Link   | Specifies the location of the blob in Windows Azure blob store where the media for the image is located.   | String   |
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | True, False   |
 

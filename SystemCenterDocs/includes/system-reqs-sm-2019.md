@@ -31,7 +31,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 - System Center 2016/2019 Orchestrator
 - System Center 2016/2019 Operations Manager
 - System Center 2016 Configuration Manager (only during migration scenario).
-- System Center Configuration Manager CB releases - 1511, 1602, 1606, 1710, 1802, 1806, and 1810
+- System Center Configuration Manager CB releases - 1511, 1602, 1606, 1710, 1802, and 1806
 
 ## Hardware
 
@@ -133,7 +133,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.      
 4. Configure the SSRS as per the details shared [here](https://docs.microsoft.com/en-us/system-center/scsm/prepare-remote-ssrs?view=sc-sm-1801).
 5. [**Optional**] To enable CLR strict security, run the following script on each of the service manager databases. By default, CLR strict security is disabled after you upgrade to SQL 2017.
-      
+
    ```
    -- Do this only for SQL server version 2017 and more
    IF( convert(int, SERVERPROPERTY('ProductMajorVersion')) > 13 )
