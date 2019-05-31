@@ -48,11 +48,11 @@ The following tables list the required properties, optional properties, and publ
 | Display Name   | The display name for the new user that is created with this mailbox.   | String   |
 | Domain Controller   | The fully qualified domain name (FQDN) of the domain controller that writes this configuration change to Active Directory. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
 | Equipment   | Identifies the new mailbox as equipment if this mailbox is a resource mailbox.   | True, False   |
-| Evict Live Id (Live@edu only)   | Specifies the activity to remove an unmanaged Windows Live ID from the cloud-based domain. An unmanaged Windows Live ID is an ID that was created in the domain before the domain was enrolled in the cloud-based service. The Evict Live Id property applies to cloud-based service. It is not available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
+| Evict Live ID (Live@edu only)   | Specifies the activity to remove an unmanaged Windows Live ID from the cloud-based domain. An unmanaged Windows Live ID is an ID that was created in the domain before the domain was enrolled in the cloud-based service. The Evict Live ID property applies to cloud-based service. It is not available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Federated Identity   | Associates an on-premises Active Directory user with a Microsoft Office user. This property applies to cloud-based service. It isn't available for on-premises deployments.   | String   |
 | First Name   | The first name of the new Active Directory user.   | String   |
 | Immutable ID   | Specifies a unique and immutable identifier in the form of an SMTP address for an Exchange mailbox which is used for federated delegation when requesting Security Assertion Markup Language (SAML) tokens.   | String   |
-| Import Live Id (Live@edu only)   | Imports an unmanaged Windows Live ID into the cloud-based domain. An unmanaged Windows Live ID was created in the domain before the domain was enrolled in the cloud-based service. This property applies to cloud-based service. It isn't available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
+| Import Live ID (Live@edu only)   | Imports an unmanaged Windows Live ID into the cloud-based domain. An unmanaged Windows Live ID was created in the domain before the domain was enrolled in the cloud-based service. This property applies to cloud-based service. It isn't available for on-premises deployments. Default is True, when selected. <br><br><strong>Note </strong><br> This property is available only in the Live@edu environment. <br><br>   | True, False   |
 | Initials   | The initials of the new Active Directory user.   | String   |
 | Last Name   | The last name of the new Active Directory user.   | String   |
 | Linked Domain Controller   | The domain controller in the forest where the user account resides. The domain controller in this forest is used to get security information for the account specified by the Linked Master Account property. This property is required only if you're creating a linked mailbox. <br><br><strong>Note </strong><br> This property is available only in an on-premises environment. <br><br>   | String   |
@@ -157,7 +157,7 @@ The following tables list the required properties, optional properties, and publ
 | ExtensionCustomAttribute4   | Extension custom attribute 4.   | String   |
 | ExtensionCustomAttribute5   | Extension custom attribute 5.   | String   |
 | Extensions   | List of Extensions.   | String   |
-| External Directory Object Id   | External directory object ID.   | String   |
+| External Directory Object ID   | External directory object ID.   | String   |
 | External OOF Options   | Specifies whether to send Out of Office (OOF) messages to external senders. This property can be one of the following values:<br>InternalOnly<br>External   | String   |
 | Forwarding Address   | Forwarding address for the mailbox.   | String   |
 | Forwarding SMTP Address   | Forwarding SMTP address for the mailbox.   | String   |
@@ -167,7 +167,7 @@ The following tables list the required properties, optional properties, and publ
 | Has Spoken Name   | Indicates whether a spoken name has been associated with this mailbox.   | String   |
 | Hidden From Address Lists Enabled   | Indicates whether mailbox information is hidden from address book display.   | String   |
 | Identity   | Mailbox identity.   | String   |
-| Immutable Id   | Identifier for the mailbox that will never change.   | String   |
+| Immutable ID   | Identifier for the mailbox that will never change.   | String   |
 | Include In Garbage Collection   | Indicates whether the Include In Garbage Collection property is enabled.   | String   |
 | Is Linked   | Indicates whether a mailbox is linked.   | String   |
 | Is Machine To Person Text Messaging Enabled | Indicates whether the server can send text messages to a user.   | String   |
@@ -227,7 +227,7 @@ The following tables list the required properties, optional properties, and publ
 | Recipient Limits   | Maximum number of recipients per message that this mailbox can send to.   | String   |
 | Recipient Type   | Recipient type. This property can be one of the following values:<br>Computer <br>Contact <br>DynamicDistributionGroup<br>Group <br>Invalid <br>MailContact <br>MailNonUniversalGroup <br>MailUniversalDistributionGroup <br>MailUniversalSecurityGroup <br>MailUser <br>MicrosoftExchange <br>PublicDatabase <br>PublicFolder <br>SystemAttendantMailbox <br>SystemMailbox <br>User <br>UserMailbox   | String   |
 | Recipient Type Details   | Recipient type details. This property can be one of the following values:<br>AllUniqueRecipientTypes <br>ArbitrationMailbox <br>Computer <br>Contact <br>DisabledUser <br>DiscoveryMailbox <br>DynamicDistributionGroup <br>EquipmentMailbox <br>LegacyMailbox <br>LinkedMailbox <br>LinkedUser <br>MailboxPlan <br>MailContact <br>MailForestContact <br>MailNonUniversalGroup <br>MailUniversalDistributionGroup <br>MailUniversalSecurityGroup <br>MailUser <br>MicrosoftExchange <br>None <br>NonUniversalGroup <br>PublicFolder <br>RemoteEquipmentMailbox <br>RemoteRoomMailbox <br>RemoteSharedMailbox <br>RemoteUserMailbox <br>RoleGroup <br>RoomList <br>RoomMailbox <br>SharedMailbox <br>SystemAttendantMailbox <br>SystemMailbox <br>UniversalDistributionGroup <br>UniversalSecurityGroup <br>User <br>UserMailbox | String   |
-| Reconciliation Id   | Reconciliation ID.   | String   |
+| Reconciliation ID   | Reconciliation ID.   | String   |
 | Recoverable Items Quota   | Size limit for the Recovery Items folder.   | String   |
 | Recoverable Items Warning Quota   | Size at which a warning is sent that the Recovery Items folder is reaching its limit.   | String   |
 | Reject Messages From   | Rejected sender IDs list.   | String   |
