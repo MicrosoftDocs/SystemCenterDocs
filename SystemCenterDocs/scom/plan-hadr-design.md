@@ -1,7 +1,7 @@
 ---
 ms.assetid: ffcc04ad-91ac-40cc-bdfc-65e33de7c390
 title: Designing for High Availability and Disaster Recovery
-description: This article provides high availability and disaster recovery design guidance for an Operations Manager 2016 management group.
+description: This article provides high availability and disaster recovery design guidance for an Operations Manager management group.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
@@ -20,7 +20,7 @@ Various System Center – Operations Manager servers and features can potentiall
 
 High-availability needs are addressed by building redundancy into the management group for the Operations Manager operational and data warehouse databases, the gateway and management servers, and specific workloads.  These workloads include network device monitoring, cross-platform monitoring, and management group-specific workloads that were previously managed by the Root Management Server.
 
-The multiple servers, single management group configuration can make use of SQL Server 2014 or SQL Server 2016 Always On for providing high availability and service continuity of the Operations Manager databases.  Management server fault-tolerance is provided by having at least two management servers and making use of resource pools for monitoring UNIX servers, Linux servers, and network devices. Agent-based Windows servers can be configured with a primary and secondary management server to redirect agent communications should a management server fail.
+The multiple servers, single management group configuration can make use of SQL Server 2014 or SQL Server 2016 Always On for providing high availability and service continuity of the Operations Manager databases.  Management server fault-tolerance is provided by having at least two management servers and using resource pools for monitoring UNIX servers, Linux servers, and network devices. Agent-based Windows servers can be configured with a primary and secondary management server to redirect agent communications should a management server fail.
 
 The RMS Emulator can be moved to another management server as well should the management server hosting the RMS Emulator become unavailable.
 
@@ -39,7 +39,7 @@ While SQL Server Reporting Services supports a scale-out deployment model that a
 
 Disaster recovery relates to measures taken to ensure that operations can be resumed if a catastrophic failure (for example, loss of the entire data center that hosts the primary infrastructure).  It is an important element that must be considered in any deployment and the decisions that are made in planning for disaster recovery affect how Operations Manager will be able to continue supporting proactive monitoring and reporting of the performance and availability of your critical IT services.  This section will focus on the recommended strategy of disaster recovery and resiliency and what steps should be taken to ensure a smooth recovery.
 
-While HA and DR solutions will provide protection from system failure or system loss, they should not be relied on for protection from accidental, unintended, or malicious data loss or corruption. In these cases, backup copied or lagged replication copies might have to be leveraged for restore operations.  In many cases, a restore operation is the most appropriate form of DR. One example of this could be a low-priority reporting database or analysis data. In many cases, the cost to enable multisite DR at the system or application level far outweighs the value of the data. In cases in which the near-term value of the data is low and the need to access the data can be delayed without severe business impact if a failure or site DR excessive, consider using simple backup and restore processes for DR if the cost savings warrant it.
+While HA and DR solutions will provide protection from system failure or system loss, they should not be relied on for protection from accidental, unintended, or malicious data loss or corruption. In these cases, back up copied or lagged replication copies might have to be leveraged for restore operations.  In many cases, a restore operation is the most appropriate form of DR. One example of this could be a low-priority reporting database or analysis data. In many cases, the cost to enable multisite DR at the system or application level far outweighs the value of the data. In cases in which the near-term value of the data is low and the need to access the data can be delayed without severe business impact if a failure or site DR excessive, consider using simple backup and restore processes for DR if the cost savings warrant it.
 
 Understanding the impact and tolerance for downtime will help drive the decisions that need to be understood in order to properly design the architecture for Operations Manager and the level of complexity and cost required to support disaster recovery.  Additionally, you have to consider the extent of monitoring data loss the IT organization can tolerate without causing business consequences.  This is best described in two terms: recovery time objective (RTO) and recovery point objective (RPO).  
 
