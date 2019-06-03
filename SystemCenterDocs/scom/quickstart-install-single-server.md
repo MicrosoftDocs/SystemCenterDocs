@@ -14,7 +14,7 @@ ms.assetid: 1ddc69fb-fb40-4631-8b49-fb8288806004
 
 # Walkthrough Installing Operations Manager on a Single Server
 
-This walkthrough guides you through an installation of System Center 2016 - Operations Manager or System Center Operations Manager 1801 on a single server. The features installed include the following:
+This walkthrough guides you through an installation of System Center - Operations Manager on a single server. The features installed include the following:
 
 -   Management server
 
@@ -46,7 +46,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
    > [!NOTE]
    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-   > 
+   >
 
 5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -88,7 +88,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>*  placeholder with the location of SQL Server:
-    > 
+    >
     > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”**
 
     > [!NOTE]
@@ -102,7 +102,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
     > [!IMPORTANT]
     > You might receive a message about having the wrong version of SQL Server, or you might encounter a problem with the SQL Server Windows Management Instrumentation (WMI) provider. To resolve this problem, open a Command Prompt window, select **Run as administrator**, and then run the following command. In the command, replace the *<path\>* placeholder with the location of SQL Server:
-    > 
+    >
     > **mofcomp.exe “\<path>\Microsoft SQL Server\100\Shared\sqlmgmproviderxpsp2up.mof”.**
 
     > [!NOTE]
@@ -118,7 +118,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
     Enter the credentials for a domain account in each field. The error icon will disappear after account validation. Click **Next**.
 
-19. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**. 
+19. On the **Configuration**, **Diagnostic and Usage Data** page, review the information and then click **Next**.
 
 20. If Windows Update is not activated on the computer, the **Configuration**, **Microsoft Update** page appears. Select your options, and then click **Next**.
 
@@ -126,7 +126,7 @@ You must ensure that your server meets the minimum supported configurations for 
 
 22. When Setup is finished, the **Setup is complete** page appears. Click **Close** and the Operations console will open.
 
-### To install the Operations Manager single server management group configuration from the Command Prompt 
+### To install the Operations Manager single server management group configuration from the Command Prompt
 
 1.  Log on to the server by using an account that has local administrative credentials.
 
@@ -139,14 +139,14 @@ You must ensure that your server meets the minimum supported configurations for 
 
     > [!IMPORTANT]
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated.
-    > 
+    >
     > For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     > [!IMPORTANT]
     > The following command assumes that you specified the Local System for the Management server action account (`/UseLocalSystemActionAccount`) and Data Access service (`/UseLocalSystemDASAccount`). To specify a domain\user name for these accounts, you must provide the following parameters instead.
-    > 
+    >
     > `/ActionAccountUser: <domain\username> /ActionAccountPassword: <password>`
-    > 
+    >
     > `/DASAccountUser: <domain\username> /DASAccountPassword: <password>`
 
     ```
@@ -211,6 +211,3 @@ You must ensure that your server meets the minimum supported configurations for 
 ## Next steps
 
 Now that you have installed System Center Operations Manager, you can deploy agents and start monitoring your applications, servers, and network devices. For more information, see [Agent deployment planning](plan-planning-agent-deployment.md) and [Operations Manager Monitoring Scenarios](manage-monitoring-scenarios.md).
-
-
-

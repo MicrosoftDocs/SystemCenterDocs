@@ -5,7 +5,7 @@ description: This article provides a high-level overview of what Operations Mana
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/08/2017
+ms.date: 06/02/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
