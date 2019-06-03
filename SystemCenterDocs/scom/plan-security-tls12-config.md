@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Implement TLS 1.2 for Operations Manager
 description: This article describes how to configure Transport Layer Security (TLS) 1.2 for System Center Operations Manager.
 author: JYOTHIRMAISURI
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to implement Transport Layer Security 1.2 
+# How to implement Transport Layer Security 1.2
 This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center 2016 - Operations Manager and version 1801 management group.  
 
 Perform the following steps to enable TLS protocol version 1.2:
@@ -37,13 +37,13 @@ Use one of the following methods to configure Windows to use only the TLS 1.2 pr
 ### Method 1: Manually modify the registry
 > [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, back up the registry for restoration in case problems occur.
-> 
+>
 > Use the following steps to enable/disable all SCHANNEL protocols system-wide. We recommend that you enable the TLS 1.2 protocol for incoming communications; and enable the TLS 1.2, TLS 1.1, and TLS 1.0 protocols for all outgoing communications.
-> 
+>
 > [!NOTE]
 > Making these registry changes does not affect the use of Kerberos or NTLM protocols.
 
-1. Log on to the server by using an account that has local administrative credentials. 
+1. Log on to the server by using an account that has local administrative credentials.
 2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** textbox, and then click **OK**.
 3. Locate the following registry subkey: **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols**.
 4. Create a subkey under **Protocols** for **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, and **TLS 1.2**.  
