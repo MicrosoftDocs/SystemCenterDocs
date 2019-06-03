@@ -55,7 +55,7 @@ You must ensure the following firewall configuration before creating the network
 -   If your network devices are using a port other than 161 and 162, you need to open bi-directional UDP traffic on these ports.
 
 > [!IMPORTANT]  
-> Note for customers who used EMC Solutions for Microsoft System Center Operations Manager: EMC Smarts included tools to create an isolation layer to prevent denial of service attacks. In System Center 2016 - Operations Manager, you need to protect your network against packet storms by using external tools.  
+> Note for customers who used EMC Solutions for Microsoft System Center Operations Manager: EMC Smarts included tools to create an isolation layer to prevent denial of service attacks. In System Center - Operations Manager, you need to protect your network against packet storms by using external tools.  
 
 ## To create a network devices discovery rule
 
@@ -249,4 +249,4 @@ If a network device discovery rule fails, the device or devices will be listed i
 
 - To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md).  
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md). 
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).

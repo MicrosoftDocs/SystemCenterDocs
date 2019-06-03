@@ -34,7 +34,7 @@ The Visio Add-in and SharePoint  Visio Services Data Provider have the following
 
 -   Predefined data graphics enable you to switch from Operations Manager health icons to the shape color for health state.  
 
--   Health states can be automatically refreshed in published Visio documents that are hosted in SharePoint document libraries, when the Visio Services data provider for System Center 2016 - Operations Manager is installed and configured on the SharePoint server farm.  
+-   Health states can be automatically refreshed in published Visio documents that are hosted in SharePoint document libraries, when the Visio Services data provider for System Center - Operations Manager is installed and configured on the SharePoint server farm.  
 
 The following topics provide information about how to install, configure, and use the Visio Add-in and the SharePoint Visio Services Data Provider.  
 
