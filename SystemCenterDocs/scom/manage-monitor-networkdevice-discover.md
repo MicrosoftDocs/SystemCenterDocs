@@ -164,8 +164,7 @@ You must ensure the following firewall configuration before creating the network
 
        Click **OK**. This returns you to the **Devices** page.
 
-   10. > [!NOTE]
-       > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).
+   10. The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you        can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more          than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more            information on the available settings, see [How to configure network device discovery settings](manage-monitor-networkdevice-            discovery-settings.md).
 
    11. Add other SNMP v3 devices and Run As accounts as necessary, and then click **Next**.
 
