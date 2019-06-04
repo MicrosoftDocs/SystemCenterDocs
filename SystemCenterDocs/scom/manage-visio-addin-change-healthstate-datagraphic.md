@@ -22,4 +22,4 @@ By default, health state is depicted by using the System Center - Operations Man
 
 3.  On the Data tab, click **Data Graphics**.  
 
-4.  In the Data Graphics window, click the data graphic that you want to use. The Visio Add-in for System Center 2016 - Operations Manager includes two choices. The **SCOM IconSet** data graphic shows health state using icons as in Operations Manager. The **SCOM Color by Value** data graphic uses red, yellow, green, or grey color to represent the three health states and to represent a managed object in maintenance mode.  
+4.  In the Data Graphics window, click the data graphic that you want to use. The Visio Add-in for System Center - Operations Manager includes two choices. The **SCOM IconSet** data graphic shows health state using icons as in Operations Manager. The **SCOM Color by Value** data graphic uses red, yellow, green, or grey color to represent the three health states and to represent a managed object in maintenance mode.  
