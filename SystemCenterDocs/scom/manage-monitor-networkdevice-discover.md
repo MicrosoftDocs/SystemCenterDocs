@@ -55,7 +55,7 @@ You must ensure the following firewall configuration before creating the network
 -   If your network devices are using a port other than 161 and 162, you need to open bi-directional UDP traffic on these ports.
 
 > [!IMPORTANT]  
-> Note for customers who used EMC Solutions for Microsoft System Center Operations Manager: EMC Smarts included tools to create an isolation layer to prevent denial of service attacks. In System Center 2016 - Operations Manager, you need to protect your network against packet storms by using external tools.  
+> Note for customers who used EMC Solutions for Microsoft System Center Operations Manager: EMC Smarts included tools to create an isolation layer to prevent denial of service attacks. In System Center - Operations Manager, you need to protect your network against packet storms by using external tools.  
 
 ## To create a network devices discovery rule
 
@@ -164,8 +164,7 @@ You must ensure the following firewall configuration before creating the network
 
        Click **OK**. This returns you to the **Devices** page.
 
-   10. > [!NOTE]
-       > The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more information on the available settings, see [How to configure network device discovery settings](manage-monitor-networkdevice-discovery-settings.md).
+   10. The **Advanced Discovery Settings** button on the **Devices** page opens a dialog box that contains a number of settings that you        can use to configure discovery of network devices, such as number of retry attempts. If you know you are going to discover more          than 1500 devices, you must change the **Maximum number of devices to discover** in **Advanced Discovery Settings**. For more            information on the available settings, see [How to configure network device discovery settings](manage-monitor-networkdevice-            discovery-settings.md).
 
    11. Add other SNMP v3 devices and Run As accounts as necessary, and then click **Next**.
 
@@ -249,4 +248,4 @@ If a network device discovery rule fails, the device or devices will be listed i
 
 - To understand how to configure what to monitor and alert with your network devices, see [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md).  
 
-- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md). 
+- To understand how to stop monitoring a network device, see [How to Delete or Restore a Network Device in Operations Manager](manage-monitor-networkdevice-delete-restore.md).

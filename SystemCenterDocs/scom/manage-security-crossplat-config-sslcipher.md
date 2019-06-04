@@ -28,7 +28,7 @@ If the default SSL cipher configuration meets your organization's security polic
 
 If the default SSL cipher configuration contradicts your organization's security policy, the Operations Manager UNIX and Linux agent provides a configuration option to specify the ciphers that SSL can accept on port 1270. This option can be used to control the ciphers and bring the SSL configuration into conformance with your policies. After the Operations Manager UNIX and Linux agent is installed on each managed computer, the configuration option must be set by using the procedures described in the next section. Operations Manager does not provide any automatic or built-in way to apply these configurations; each organization must perform the configuration by using an external mechanism that works best for it.  
 
-### Setting the sslCipherSuite configuration option for System Center 2016
+### Setting the sslCipherSuite configuration option 
 
 The SSL ciphers for port 1270 are controlled by setting the **sslciphersuite** option in the OMI configuration file, **omiserver.conf**. The **omiserver.conf** file is located in the directory `/etc/opt/omi/conf/`.  
 
@@ -38,9 +38,9 @@ The format for the sslciphersuite option in this file is:
 sslciphersuite=<cipher spec>  
 ```  
 
-where <cipher spec> specifies the ciphers that are allowed, disallowed, and the order in which allowed ciphers are chosen.  
+where \<cipher spec\> specifies the ciphers that are allowed, disallowed, and the order in which allowed ciphers are chosen.  
 
-The format for <cipher spec> is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](https://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
+The format for \<cipher spec\> is the same as the format for the **sslCipherSuite** option in the Apache HTTP Server version 2.0. For detailed information, see [SSLCipherSuite Directive](https://go.microsoft.com/fwlink/?LinkId=318052) in the Apache documentation. All information on this site is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.  
 
 After setting the **sslCipherSuite** configuration option, you must restart the UNIX and Linux agent for the change to take effect. To restart the UNIX and Linux agent, run the following command, which is located in the **/etc/opt/microsoft/scx/bin/tools** directory.  
 
@@ -53,7 +53,7 @@ scxadmin -restart
 
 Operations Manager communicates with UNIX and Linux agents over HTTPS, using either TLS or SSL encryption. The SSL handshaking process negotiates the strongest encryption that is mutually available on the agent and the management server. You may wish to prohibit SSLv3 so that an agent that cannot negotiate TLS encryption does not fall back to SSLv3.
 
-For System Center 2016 – Operations Manager, omiserver.conf is located at:
+For System Center – Operations Manager, omiserver.conf is located at:
 `/etc/opt/omi/conf/omiserver.conf`
 
 #### To disable SSLv3
