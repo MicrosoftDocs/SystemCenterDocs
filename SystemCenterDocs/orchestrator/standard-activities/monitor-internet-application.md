@@ -1,14 +1,14 @@
 ---
 title: "Monitor Internet Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,23 +20,23 @@ manager: "cfreeman"
 ---
 # Monitor Internet Application
 The Monitor Internet Application activity will invoke a runbook when an internet application server becomes unavailable or becomes available. You can monitor a Web, Email (POP3 or SMTP), FTP, or DNS server.  You can also configure your external FTP or Web servers to be reachable through the internet and then automatically restart the server if it is found to be unavailable.  
-  
+
 ## Configuring the Monitor Internet Application Activity  
  Use the following information to configure the Monitor Internet Application activity.  
-  
+
 > [!NOTE]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
-  
+
 ### General Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Name**|Type a descriptive name for the activity.|  
 |**Description**|Type a detailed description of the actions of the activity.|  
 |**Type**|Select the **Type** that matches the server that you want to monitor. The options include the following:<br /><br /> -   Web (HTTP)<br />-   E-mail (SMTP)<br />-   E-mail (POP3)<br />-   FTP<br />-   DNS<br /><br /> Configuration instructions for each **Details** tab **Type** are listed in the following tables.|  
-  
+
 ### Web (HTTP) Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**URL**|Type the URL that will be used to contact the web server.|  
@@ -45,9 +45,9 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Test frequency**|Specify the amount of time to wait between each connection test to the server.|  
 |**Check that the page contains this string**|Select and type a string to search for when the page is retrieved from the web server. When this option is selected, the server is only considered available if the string can be found on the page that is specified by the **URL**.|  
 |**Search is case sensitive**|Select to make the string search case sensitive.|  
-  
+
 ### Email (SMTP) Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the name of the computer where the SMTP server is located. You can also browse for the computer using the ellipsis **(...)** button.|  
@@ -57,9 +57,9 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Send test email**|Select to send a test email using the SMTP server. When this option is selected, the server is only considered available if the email can be sent to the server.|  
 |**To**|Type the address to send the email to.|  
 |**From**|Type the address that the email is being sent from.|  
-  
+
 ### Email (POP3) Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the name of the computer where the POP3 server is located. You can also browse for the computer using the ellipsis **(...)** button.|  
@@ -69,9 +69,9 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Test connection**|Select to use a username and password to test the connection to the POP3 server. When this option is selected, the server is only considered available if the credentials are successfully used to log into the server.|  
 |**Username**|Type the username to use to log into the POP3 server.|  
 |**Password**|Type the password that is associated with the **Username** that you have specified.|  
-  
+
 ### FTP Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Enter the name of the computer where the FTP server is located. You can also browse for the computer using the ellipsis **(...)** button.|  
@@ -81,9 +81,9 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Test connection**|Select to use a username and password to test the connection to the FTP server. When this option is selected, the server is only considered available if the credentials are successfully used to log into the server.|  
 |**Username**|Type the username to use to log into the FTP server.|  
 |**Password**|Type the password that is associated with the **Username** that you have specified.|  
-  
+
 ### DNS Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Computer**|Type the name of the computer where the DNS server is located. You can also browse for the computer using the ellipsis **(...)** button. This field is not required to test the availability of a DNS server.|  
@@ -91,17 +91,17 @@ The Monitor Internet Application activity will invoke a runbook when an internet
 |**Port**|Select to specify the port to use to connect to the DNS server.|  
 |**Test DNS table IP Address**|Select to specify a computer name and the IP address that should be associated with that IP address. When this option is selected, the server is only considered available if the IP address is assigned to the computer that you specify.|  
 |**Test frequency**|Specify the amount of time to wait between each connection test to the server.|  
-  
+
 ### Advanced Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Trigger if test succeeds**|Select to invoke the Monitor Internet Application activity when the server that you are checking becomes available.|  
 |**Trigger if test fails**|Select to invoke the Monitor Internet Application activity when the server that you are checking becomes unavailable.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Computer|The name of the computer where the Internet application resides.|  

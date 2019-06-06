@@ -1,8 +1,9 @@
 ---
 title: Orchestrator overview
 description: This topic provides an overview of System Center - Orchestrator
-author: rayne-wiselman
-manager: carmonm
+author: JYOTHIRMAISURI
+manager: vvithal
+ms.author: v-jysur
 ms.date: 01/17/2018
 ms.prod: system-center
 ms.technology: orchestrator
@@ -13,7 +14,7 @@ ms.topic: article
 
 # Overview of System Center  - Orchestrator
 
-As an IT administrator, you probably perform a lot of tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process. 
+As an IT administrator, you probably perform a lot of tasks and procedures to keep your computing environment healthy. You may have automated individual tasks, but typically, not the whole process.
 With System Center - Orchestrator you tie disparate tasks and procedures together using a graphical user interface Runbook Designer to create reliable, flexible, and efficient end-to-end solutions in your IT environment.
 Using Orchestrator, you can:
 
@@ -21,7 +22,7 @@ Using Orchestrator, you can:
 - Standardize best practices to improve operational efficiency.
 - Connect systems from different vendors without having to know how to use scripting and programming languages.
 
-## Orchestrator architecure 
+## Orchestrator architecure
 
 The following diagram illustrates each of the Orchestrator features and the communication between each.
 
@@ -47,8 +48,8 @@ A request to run a runbook creates a *job* that is stored in the orchestration d
 
 When a runbook server processes a job, it creates an *instance* of the runbook by making a copy of it locally, and then performing the actions defined within the runbook according to the included workflow logic. Status information, activity results, and data are recorded in the orchestration database so that you can monitor the real\-time and historical status of the runbook.
 
-## Extending Orchestrator 
-The following table shows multiple strategies available for extending the functionality provided by a standard installation of Orchestrator. 
+## Extending Orchestrator
+The following table shows multiple strategies available for extending the functionality provided by a standard installation of Orchestrator.
 
 |Orchestrator feature|Description|
 |-----------------------------------------------------------|---------------|

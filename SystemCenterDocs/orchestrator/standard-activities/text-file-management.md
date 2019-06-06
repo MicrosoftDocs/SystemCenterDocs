@@ -1,14 +1,14 @@
 ---
 title: "Text File Management | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,10 +20,10 @@ manager: "cfreeman"
 ---
 # Text File Management
 The following table provides a brief description of tasks you can accomplish when using each Text File Management activity.  
-  
+
 > [!CAUTION]
 >  If permissions on the installation path are changed and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.  
-  
+
 |Tasks|Text File Management Activities|  
 |-----------|-------------------------------------|  
 |Append a line of text into a text file.|[Append Line](append-line.md)|  

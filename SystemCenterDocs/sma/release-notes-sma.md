@@ -8,7 +8,7 @@ manager: vvithal
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
-ms.technology: Service Management Automation
+ms.technology: service-management-automation
 ---
 
 # Release notes for System Center - Service Management Automation

@@ -1,14 +1,14 @@
 ---
 title: "File Management | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,7 +20,7 @@ manager: "cfreeman"
 ---
 # File Management
 The following table provides a brief description of tasks you can accomplish when using each File Management activity.  
-  
+
 |Tasks|File Management Activities|  
 |-----------|--------------------------------|  
 |Compress files into zip archives.|[Compress File](compress-file.md)|  
@@ -38,6 +38,6 @@ The following table provides a brief description of tasks you can accomplish whe
 |Encrypt a file or an entire folder tree.|[PGP Encrypt File](pgp-encrypt-file.md)|  
 |Print text files.|[Print File](print-file.md)|  
 |Rename files.|[Rename File](rename-file.md)|  
-  
+
 > [!CAUTION]
 >  If permissions on the Orchestrator installation path are changed, and the activity’s Security Credentials has a custom user account that does not include **Read/Execute** permissions to **ExecutionData.dll** on the Runbook server, the activity will fail.

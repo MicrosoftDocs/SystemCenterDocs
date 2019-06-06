@@ -6,9 +6,9 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 12/14/2017
-ms.technology: Orchestrator
+ms.technology: orchestrator
 ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 ---
 
@@ -17,7 +17,7 @@ ms.assetid: 05173131-22f1-48d1-aec7-72e791bec142
 Standard Activities enable you to create runbooks to automate your data center procedures.
 
 The following table provides a brief description of tasks you can accomplish with each activity category.  
-  
+
 |Tasks|Categories|  
 |-----------|----------------|  
 |Run system commands.|[System](./standard-activities/system.md)|  
@@ -31,9 +31,9 @@ The following table provides a brief description of tasks you can accomplish wit
 |Manage workflows.|[Runbook Control](./standard-activities/runbook-control.md)|  
 
 [Here](./standard-activities/alphabetical-list-of-standard-activities.md) is the alphabetical list of Orchestrator standard activities.
-  
+
 ## See Also  
-  
+
 -   [Common Activity Properties](common-activity-properties.md)  
-  
-     Learn how to configure common tab settings. 
+
+     Learn how to configure common tab settings.
