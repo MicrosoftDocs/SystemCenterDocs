@@ -1,14 +1,14 @@
 ---
 title: "Send SNMP Trap | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,27 +20,27 @@ manager: "cfreeman"
 ---
 # Send SNMP Trap
 The Send SNMP Trap activity will raise an SNMP event that can be detected by a network systems manager application. By using an enterprise identifier of a known network device, you can send SNMP Traps on behalf of a network device in your system. Use the Send SNMP Trap to create events for runbooks that need to be tracked using an SNMP monitoring product.  
-  
+
 ## Configuring the Send SNMP Trap Activity  
  Before you configure the Send SNMP Trap activity you need to determine the following:  
-  
+
 -   IP address of the device where you will send your SNMP trap  
-  
+
 -   Identifiers of the trap  
-  
+
 -   The SNMP version you will use  
-  
+
 -   The agent address you want to identify as the sender of the SNMP trap information.  
-  
+
 > [!NOTE]
 >  You cannot set individual security credentials for this activity. It will run under the service account configured for the Runbook Service on the Runbook server where the instance of the activity is running. This account must have the authority to access the resources and perform the actions required by this activity.  
-  
+
  Use the following information to configure the Send SNMP Trap activity.  
-  
+
  You can also add more information to the SNMP trap. Each item that you add becomes a published data item.  
-  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**IP address**|Type the name of the computer or IP address where you are sending the SNMP trap.|  
@@ -50,16 +50,16 @@ The Send SNMP Trap activity will raise an SNMP event that can be detected by a n
 |**Specific identifier**|Type the enterprise specific identifier for the SNMP trap. This setting becomes active when you select the **enterpriseSpecific(6)** option of the **Generic identifier** box.|  
 |**SNMP Version**|Select the SNMP version to use when generating the SNMP trap.|  
 |**Community string**|Type the community string that will be used to authenticate against the network device. This field is case-sensitive and supports only alphanumeric characters.<br /><br /> The Send SNMP Trap activity does not verify the content of community strings, nor whether the strings are received. It sends whatever data you provide, whether it is valid or not. The activity returns a status of Success if it was able to send the data, regardless of whether the data were correct or readable.|  
-  
+
 ### Advanced Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Address**|If you want to identify another computer as the agent that sends the SNMP trap information, type the agent address in the box. Otherwise, leave the box blank. The activity will use the agent address of the runbook server that runs the runbook. This setting can only be used with version SNMPv1.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Destination IP address|The IP address of the device where the trap is sent.|  

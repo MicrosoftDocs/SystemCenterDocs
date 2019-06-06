@@ -1,10 +1,11 @@
 ---
 description: Provides an overview of how you can establish trust between Service Management Automation and Service Provider Foundation
-manager: cfreemanwa
+manager: vvithal
 ms.topic: article
-author: bwren
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 01/22/2018
 title: Establish trust between Service Management Automation and Service Provider Foundation
 ms.technology: service-management-automation

@@ -1,14 +1,14 @@
 ---
 title: "Get File Status | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,24 +20,24 @@ manager: "cfreeman"
 ---
 # Get File Status
 The Get File Status activity verifies that a file exists on the local file system or a network location using a UNC path. You can check that a file is available before copying to another location or before starting any services that depend on the existence of the file. If the file does not exist, you can take corrective action using the [Copy File](copy-file.md) activity to copy the file from another location.  
-  
+
 ## Configuring the Get File Status Activity  
  Before you configure the Get File Status activity, you need to determine the file name and path name you are checking.  
-  
+
  Use the following information to configure the Get File Status activity.  
-  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**File**|Type the name and path of the file that you are checking the status of, or click the ellipsis **(...)** button and browse for it.|  
 |**Include sub-folders**|Select this option to copy any files within the sub-folders of the path you have specified that match the filename that you have specified.|  
 |**File age**|Select **Is less than** or **Is more than** to specify the files that are older or newer, respectively, than the number of days that you specify.|  
 |**days**|Type the number of days that you will use with the **File age** measure.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |Date and time the file was created|The local date and time on which the file was created.|  

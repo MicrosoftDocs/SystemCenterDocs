@@ -5,8 +5,8 @@ ms.topic: article
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
-ms.date: 2016-10-12
+keywords:
+ms.date: 10/12/2016
 title: Features Removed or Deprecated from System Center 2016
 ms.assetid: b6f468e0-fa52-41f3-8b2d-9e07ede377c9
 ---
@@ -63,7 +63,7 @@ You will not be able to either create or import a service templates with a Serve
 
 See [Upgrade to System Center 2016](upgrade-to-system-center-2016.md).
 Go to the [System Center documentation center](index.md), to see all technologies in System Center 2016.
-See the introductory information or important concepts about each of the technologies in System Center 2016. 
+See the introductory information or important concepts about each of the technologies in System Center 2016.
 
 * [Data Protection Manager](/system-center/dpm/dpm-overview)
 * [Operations Manager](/system-center/scom/key-concepts)
