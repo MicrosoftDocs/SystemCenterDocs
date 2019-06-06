@@ -1,14 +1,14 @@
 ---
 title: "Return Data | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,13 +20,13 @@ manager: "cfreeman"
 ---
 # Return Data
 The Return Data activity allows you to return data from the current runbook to a runbook that invoked the runbook. You configure the runbook data by configuring the data parameters in the Runbook Properties dialog box.  
-  
+
 ## Configuring the Return Data activity  
  Use the following information to configure the Return Data activity.  
-  
+
 ### Published Data  
  The available published data items depend on the defined data elements.  
-  
+
 ## See Also  
  [Invoke Runbook](invoke-runbook.md)   
  [Initialize Data](initialize-data.md)

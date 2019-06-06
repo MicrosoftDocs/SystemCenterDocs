@@ -5,7 +5,7 @@ description: This article describes how to set up VMM roles and permissions
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/1407/2019
+ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

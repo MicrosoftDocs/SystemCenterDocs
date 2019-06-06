@@ -8,7 +8,7 @@ manager: vvithal
 ms.date: 03/14/2019
 ms.topic: article
 ms.prod: system-center
-ms.technology: Orchestrator
+ms.technology: orchestrator
 ---
 
 # Release notes for System Center Orchestrator

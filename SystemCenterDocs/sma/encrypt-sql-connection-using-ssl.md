@@ -8,7 +8,7 @@ manager:  vvithal
 ms.date:  11/14/2018
 ms.topic:  article
 ms.prod:  system-center-threshold
-ms.technology: service-management-automation
+ms.technology: service-management-automation 
 ---
 
 # Encrypt SMA web service connection using SSL
