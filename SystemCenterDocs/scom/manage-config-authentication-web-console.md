@@ -3,7 +3,8 @@ ms.assetid: cf56de7b-757b-4639-89b7-d819130d02fb
 title: Configure Authentication with the Web console
 description: This topic describes how to configure Secure Sockets Layer (SSL) encryption for the web server running the Operations Manager Web Console.
 author: JYOTHIRMAISURI
-manager: carmonm
+manager: vvithal
+ms.author: v-jysur
 ms.date: 10/12/2016
 ms.custom: na
 ms.prod: system-center
@@ -22,7 +23,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 
 1. Use a plain text editor to open the **web.config** in `<PATH>:\Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost`.
 2. In the `<services>` root element, modify the following in the `<!– Logon Service –>`element:
-     
+
      ```
      <endpoint address=”” binding=”customBinding” contract=”Microsoft.EnterpriseManagement.Presentation.Security.Services.ILogonService” bindingConfiguration=”DefaultHttpsBinding”/>
      ```
@@ -84,7 +85,7 @@ Repeat the preceding step on the following files:
 1.	Use a plain text editor to open the web.config file in `<Path>:\Program Files\System Center 2016\Operations Manager\WebConsole\WebHost\web.config`.
 2.	In the <encryption> element, add the following element if it does not exist: `<symmetricAlgorithm  iv="SHA256"/>`
 3.	In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it does not exist: **tokenAlgorithm="SHA256"**
- 
+
      ```
      <connection autoSignIn="True" autoSignOutInterval="30">  
      <session encryptionKey="SessionEncryptionKey" tokenAlgorithm="SHA256">  
@@ -121,4 +122,4 @@ Repeat the preceding step on the following files:
 
 ## Next steps
 
-- To configure FIPS compliance for the Reporting server, see [Configure Authentication for Reporting server](manage-config-authentication-reporting-server.md) 
+- To configure FIPS compliance for the Reporting server, see [Configure Authentication for Reporting server](manage-config-authentication-reporting-server.md)

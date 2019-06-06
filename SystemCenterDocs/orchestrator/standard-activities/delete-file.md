@@ -1,14 +1,14 @@
 ---
 title: "Delete File | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,24 +20,24 @@ manager: "cfreeman"
 ---
 # Delete File
 The Delete File activity deletes files from the local file system or from a network location specified using a UNC path. You can purge a folder that contains old log files.  
-  
+
 ## Configuring the Delete File Activity  
  Before you configure the Delete File activity, you need to know which files you are deleting.  
-  
+
  Use the following information to configure the Delete File activity.  
-  
+
 ### Details Tab  
-  
+
 |Settings|Configuration Instructions|  
 |--------------|--------------------------------|  
 |**Path**|Type the path and name of the file that you want to delete. You can use the * and ? wildcards to specify the file name. These wildcards behave in the same way as the Windows Command Prompt.|  
 |**Delete files from sub-folders**|Select this option to delete any files within the sub-folders of the path you have specified that match the file name that you have specified.|  
 |**File age**|Select the **Is less than** or **Is more than** option from the drop-down list to delete the files that are older or newer, respectively, than the number of days that you specify.|  
 |**days**|Type the number of days that you will use with the file age measure.|  
-  
+
 ### Published Data  
  The following table lists the published data items.  
-  
+
 |Item|Description|  
 |----------|-----------------|  
 |File age days|The number of days that was provided to evaluate the file age.|  

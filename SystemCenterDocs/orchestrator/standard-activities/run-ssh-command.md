@@ -1,7 +1,7 @@
 ---
 title: "Run SSH Command | Microsoft Docs"
 ms.custom: ""
-ms.date: "03-14-2019"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""

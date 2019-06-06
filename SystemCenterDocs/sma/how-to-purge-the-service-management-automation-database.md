@@ -1,8 +1,9 @@
 ---
 description: Provides an overview of how you can purge the Service Management Automation database.
-manager: carmonm
+manager: vvithal
 ms.topic: article
-author: bwren
+author: JYOTHIRMAISURI
+ms.author: v-jysur
 ms.prod: system-center
 ms.date: 01/22/2018
 title: Purge the Service Management Automation database

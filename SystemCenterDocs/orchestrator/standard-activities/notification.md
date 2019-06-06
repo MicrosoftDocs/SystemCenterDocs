@@ -1,14 +1,14 @@
 ---
 title: "Notification | Microsoft Docs"
 ms.custom: ""
-ms.date: "2016-05-13"
+ms.date: "05/13/2016"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to: 
+applies_to:
   - "System Center 2012 SP1 - Orchestrator"
   - "System Center 2012 - Orchestrator"
   - "System Center 2012 R2 Orchestrator"
@@ -20,7 +20,7 @@ manager: "cfreeman"
 ---
 # Notification
 The following table provides a brief description of tasks you can accomplish when using each Notification activity.  
-  
+
 |Tasks|Notification Activities|  
 |-----------|-----------------------------|  
 |Create an entry in the Application Windows Event Log.|[Send Event Log Message](send-event-log-message.md)|  

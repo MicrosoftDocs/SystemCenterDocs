@@ -1,4 +1,5 @@
 ---
+title: Features deprecated from System Center Operations Manager 1801
 description: This topic lists the features and functionality that have been removed or replaced in System Center Operations Manager 1801.
 author: JYOTHIRMAISURI
 ms.author: magoedte
@@ -9,7 +10,7 @@ ms.prod: system-center
 monikerRange: 'sc-om-1801'
 ms.technology: operations-manager
 ms.topic: article
-ms.assetid: 
+ms.assetid:
 ---
 
 # Features deprecated from System Center Operations Manager 1801
@@ -25,7 +26,7 @@ The features and capabilities listed below are included in System Center Operati
 **Status:** Deprecated.
 
 **Replacement:** None
- 
+
 
 ## Next Steps
 
