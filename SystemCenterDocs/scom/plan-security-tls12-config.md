@@ -13,7 +13,7 @@ ms.topic: article
 ---
 
 # How to implement Transport Layer Security 1.2
-This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center 2016 - Operations Manager and version 1801 management group.  
+This topic describes how to enable Transport Layer Security (TLS) protocol version 1.2 for a System Center Operations Manager management groups.  
 
 Perform the following steps to enable TLS protocol version 1.2:
 
@@ -21,7 +21,7 @@ Perform the following steps to enable TLS protocol version 1.2:
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.  
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
 4. Install [ODBC 11.0](https://www.microsoft.com/download/details.aspx?id=36434) or [ODBC 13.0](https://www.microsoft.com/download/details.aspx?id=50420) on all management servers.  
-5. For System Center 2016 - Operations Manager, install [Update Rollup 4](https://support.microsoft.com/help/4024941).  
+5. For System Center 2016 - Operations Manager, install Update Rollup 4 or later.  
 6. Configure Windows to only use TLS 1.2.  
 7. Configure Operations Manager to only use TLS 1.2.  
 
