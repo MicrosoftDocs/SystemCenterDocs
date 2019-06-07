@@ -128,7 +128,7 @@ New-ItemProperty -Path $NetRegistryPath -Name "SchUseStrongCrypto" -Value "1" -P
 
 ## Additional settings
 
-If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, be sure to import the management pacsk that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
+If this is being implemented for System Center 2016 - Operations Manager, after applying Update Rollup 4, be sure to import the management packs that are included in this rollup located in the following directory: **\Program Files\Microsoft System Center 2016\Operations Manager\Server\Management Packs for Update Rollups**.  
 
 If you are monitoring a supported version of Linux server with Operations Manager, follow the instructions on the appropriate website for your distro to configure TLS 1.2.  
 
@@ -136,7 +136,7 @@ If you are monitoring a supported version of Linux server with Operations Manage
 For Audit Collection Services (ACS), you must make additional changes in the registry on ACS Collector server.  ACS uses the DSN to make connections to the database. You must update DSN settings to make them functional for TLS 1.2.
 
 1. Log on to the server by using an account that has local administrative credentials.  
-2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** texbox, and then click **OK**.  
+2. Start Registry Editor by right-clicking **Start**, type **regedit** in the **Run** textbox, and then click **OK**.  
 3. Locate the following ODBC subkey for OpsMgrAC: **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OpsMgrAC**.  
 
     >[!NOTE]
