@@ -33,7 +33,7 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 
 5.  In the **Report** view, in the **Parameter** area, click the down arrow in the **From** box, point to **This week**, and then click **Sunday**.  
 
-6.  Click the down arrow in the **To** box, point to **Thisweek** and then click **Saturday**.  
+6.  Click the down arrow in the **To** box, point to **This week** and then click **Saturday**.  
 
 7.  Click **Use business hours**.  
 
@@ -44,7 +44,7 @@ Use the following procedure to run a report from the Reporting workspace. In thi
 
 9. In the **AddObject** dialog box, in the **ObjectName** text box, type the computer name for a computer that you want to report availability, and then click **Search**.  
 
-10. In the **Availableitems** list, click the computer you want to run a report for, click **Add**, and then click **OK**.  
+10. In the **Available items** list, click the computer you want to run a report for, click **Add**, and then click **OK**.  
 
 11. Click **Run** to display the Availability Report.  
 
