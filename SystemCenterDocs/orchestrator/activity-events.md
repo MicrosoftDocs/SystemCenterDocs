@@ -47,7 +47,7 @@ For example, use the following procedure to send traps by using SNMP version 1 t
 
 1.  Open a command prompt with administrative credentials.  
 
-2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center <version>\\Orchestrator\\Management Server.  
+2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Management Server.  
 
 3.  Type the following command: **oedc /snmp /add /ip 10.1.1.10 /port 162 /version SNMP1 /community public**  
 
@@ -62,7 +62,7 @@ You cannot remove individual SNMP trap destinations. Instead, you must remove al
 
 1.  Open a command prompt with administrative credentials.  
 
-2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center <version>\\Orchestrator\\Management Server.  
+2.  Navigate to *System Drive*:\\Program Files \(x86\)\\Microsoft System Center \<version\>\\Orchestrator\\Management Server.  
 
 3.  Type the following command: **oedc /snmp /clear**  
 
