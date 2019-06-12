@@ -26,7 +26,7 @@ After you have configured .NET applications to be monitored, you can view alerts
 
 ### View and investigate alerts for .NET applications (server-side example)  
 
-1.  To view active alerts by application group, in the System Center 2016 - Operations Manager Operations console, in the navigation pane, select **Monitoring**, expand **Application Monitoring\.NET Monitoring** and expand the folder with the name of the application group you configured for monitoring, and then click **Active Alerts**.  
+1.  To view active alerts by application group, in the System Center - Operations Manager Operations console, in the navigation pane, select **Monitoring**, expand **Application Monitoring\.NET Monitoring** and expand the folder with the name of the application group you configured for monitoring, and then click **Active Alerts**.  
 
     **View alerts by application group**  
 
