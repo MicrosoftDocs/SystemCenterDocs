@@ -53,7 +53,7 @@ Setup.exe
 |command|notes|  
 |---|---|  
 |**/ProductKey**|If this parameter is omitted, Service Manager is installed as an evaluation edition with an evaluation period of 180 days.|  
-|**/Installpath**|If this parameter is omitted, Service Manager is installed in the default folder and path:<br /><br /> \[drive name\]:\\Program Files\\Microsoft System Center\\Service Manager <version>.|  
+|**/Installpath**|If this parameter is omitted, Service Manager is installed in the default folder and path:<br /><br /> \[drive name\]:\\Program Files\\Microsoft System Center\\Service Manager \<version\>.|  
 |**/ServiceRunUnderAccount**|If this parameter is omitted, the local system account is used.|  
 |**/WorkflowAccount**|If this parameter is omitted, the local system account is used.|  
 
@@ -185,7 +185,7 @@ Use the following command\-line procedure to deploy the Service Manager console 
     /RegisteredOwner:[owner name]   
     /RegisteredOrganization:[company name]   
     /ProductKey:[25-character product key]   
-    /Installpath:[drive name]\Program Files\Microsoft System Center\Service Manager <version>   
+    /Installpath:[drive name]\Program Files\Microsoft System Center\Service Manager \<version\>   
     /CustomerExperienceImprovementProgram:[YES/NO]   
     /EnableErrorReporting:[YES/NO]  
 
