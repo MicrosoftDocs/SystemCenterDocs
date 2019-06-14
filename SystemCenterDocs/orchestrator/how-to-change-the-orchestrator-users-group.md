@@ -15,7 +15,7 @@ manager: carmonm
 You might want to change the Orchestrator users group after installation because of changes in your environment. For example, you might want to use a local group during installation, and then change it to a domain account later.  
 
 ## PermissionsConfig tool  
-You can change the Orchestrator Users group by using the PermissionsConfig tool, which is located on the management server in **<InstallDir>\\Management Server**. The syntax of this tool is as follows:  
+You can change the Orchestrator Users group by using the PermissionsConfig tool, which is located on the management server in **\<InstallDir\>\\Management Server**. The syntax of this tool is as follows:  
 
 **PermissionsConfig-OrchestratorUsersGroup**_GroupName_**-OrchestratorUser**_UserName_**\-remote**  
 

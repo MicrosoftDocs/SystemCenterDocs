@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2017
 title: Improve replication performance
 ms.technology: data-protection-manager
@@ -50,7 +50,7 @@ To optimize performance, you can offset the start time of synchronization jobs a
 
 1.  Click  DPM Administrator Console > Protection and select a protection group.
 
-2.  Click **Optimize performance**. On the Network tab, select the hours and minutes to offset the start of the synchronization job in the **Offset** <time> start time by field.
+2.  Click **Optimize performance**. On the Network tab, select the hours and minutes to offset the start of the synchronization job in the **Offset** \<time\> start time by field.
 
 ## Optimize express backups
 To provide quick recovery of application data, DPM must create an express full backup periodically. The express full backup operation typically increases the demand on the server's resources by 5 percent for several minutes. To reduce the demand on the server's resources, you can schedule fewer express full backups, but this can increase data recovery time. Modify the schedule as follows:

@@ -21,13 +21,13 @@ You can adjust the number of runbooks that are run concurrently on a runbook ser
 
 ## To configure the maximum number of runbooks that a runbook server processes  
 
-1.  Navigate to the folder where by default the Runbook Server Runbook Throttling tool is stored: **<System Drive>:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Management Server**.  
+1.  Navigate to the folder where by default the Runbook Server Runbook Throttling tool is stored: **\<System Drive\>:\\Program Files \(x86\)\\Microsoft System Center 2016\\Orchestrator\\Management Server**.  
 
 2.  Type one of the following commands:  
 
     -   To apply the change to one runbook server:  
 
-        **aspt <RunbookServerName> <MaximumRunningRunbooks>.**  
+        **aspt \<RunbookServerName\> \<MaximumRunningRunbooks\>.**  
 
         For example, to set the maximum number of runbooks that RunbookServer1 runs to 40:  
 
@@ -35,7 +35,7 @@ You can adjust the number of runbooks that are run concurrently on a runbook ser
 
     -   To apply the change to all runbook servers:  
 
-        **aspt \* <MaximumRunningRunbooks>.**  
+        **aspt \* \<MaximumRunningRunbooks\>.**  
 
         For example, to set the maximum number of runbooks that all runbook servers run to 40:  
 

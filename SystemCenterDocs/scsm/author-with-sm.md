@@ -106,7 +106,7 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 #### Set up the Authoring Tool
 
-The SCSM<version>\_AuthoringTool\_RTM.exe program file contains the Service Manager Authoring Tool .msi installation package and support files. This includes the files that are required for customizing default Service Manager forms. Ensure that the user who will be running the Authoring Tool has access to the local folder that you used to extract the files from the SCSM<version>\_AuthoringTool\_RTM.exe program file.  
+The SCSM\<version\>\_AuthoringTool\_RTM.exe program file contains the Service Manager Authoring Tool .msi installation package and support files. This includes the files that are required for customizing default Service Manager forms. Ensure that the user who will be running the Authoring Tool has access to the local folder that you used to extract the files from the SCSM\<version\>\_AuthoringTool\_RTM.exe program file.  
 
 If Windows Error Reporting is enabled on the computer that is running the Authoring Tool, errors are reported automatically.  
 
