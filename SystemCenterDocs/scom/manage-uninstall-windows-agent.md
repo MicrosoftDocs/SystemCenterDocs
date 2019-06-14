@@ -63,7 +63,7 @@ Use one of the following procedures to uninstall an System Center Operations Man
 
 3.  At the prompt, for example, type the following:
 
-    **%WinDir%\System32\msiexec.exe /x <path>\MOMAgent.msi /qb**
+    **%WinDir%\System32\msiexec.exe /x \<path\>\MOMAgent.msi /qb**
 
 ## Uninstall the agent from a cluster
 
@@ -84,4 +84,3 @@ Use one of the following procedures to uninstall an System Center Operations Man
 - To understand how to manage the configuration settings of a Windows agent and options available, review [Configuring Windows Agents](manage-deploy-windows-agent-manually.md).
 
 - If you would like to manually install the Windows agent from the command line or automate the deployment using a script or other automation solution, review [Install Windows Agent Manually Using MOMAgent.msi](manage-deploy-windows-agent-manually.md).
-
