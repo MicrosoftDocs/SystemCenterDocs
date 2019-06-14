@@ -238,14 +238,14 @@ To reconstruct your DPM with the same DB, you need to first recover the DPM data
 
 **To copy the database from the last backup**
 
-1. Navigate to replica VHD path **<DPMServer FQDN><PhysicalReplicaId><PhysicalReplicaId>**
+1. Navigate to replica VHD path **\<DPMServer FQDN\>\<PhysicalReplicaId\>\<PhysicalReplicaId\>**
 2. Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx command.
 3. Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
 
 **To copy the database from a previous recovery point**
 
-1. Navigate to DPMDB container directory  **<DPMServer FQDN><PhysicalReplicaId>**, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than represents a PIT/recovery point.
-2. Navigate to any PIT vhd path i.e. **<DPMServer FQDN><PhysicalReplicaId><PITId>** and mount the disk0.vhdx present in it using *mount-vhd disk0.vhdx* command.
+1. Navigate to DPMDB container directory  **\<DPMServer FQDN\>\<PhysicalReplicaId\>**, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than represents a PIT/recovery point.
+2. Navigate to any PIT vhd path i.e. **\<DPMServer FQDN\>\<PhysicalReplicaId\>\<PITId\>** and mount the disk0.vhdx present in it using *mount-vhd disk0.vhdx* command.
 3. Once replica VHD is mounted, use *mountvol.exe* to assign a drive letter to the replica volume, using the Physical replica ID from the SQL script output. For example: mountvol X: \?\Volume{}\
 
    All of the following  text with angular braces in the above steps are place holders, replace them with appropriate values.
@@ -516,13 +516,13 @@ Use the following steps:
 1.	Navigate to replica VHD path i.e. <ReFSVolume>\<DPMServer FQDN>\<PhysicalReplicaId>\<PhysicalReplicaId>
 2.	Mount the disk0.vhdx present in it using mount-vhd disk0.vhdx
 3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica ID from the SQL script output.
-For example: mountvol X: \\?\Volume{<PhysicalReplicaId>}\
+For example: mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
 **To copy the database from a previous recovery point**
 
-1.	Navigate to DPMDB container directory i.e. <ReFSVolume>\<DPMServer FQDN>\<PhysicalReplicaId>\, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than <PhysicalReplicaId> represents a PIT/recovery point
-2.	Navigate to any PIT vhd path i.e. <ReFSVolume>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
-3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica id from the SQL script output. For example: mountvol X: \\?\Volume{<PhysicalReplicaId>}\
+1.	Navigate to DPMDB container directory i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\, you will see multiple directories with some unique GUID identifiers under it corresponding recovery points taken for DPM DB. Directories other than <PhysicalReplicaId> represents a PIT/recovery point
+2.	Navigate to any PIT vhd path i.e. \<ReFSVolume\>\<DPMServer FQDN>\<PhysicalReplicaId>\<PITId> and mount the disk0.vhdx present in it using mount-vhd disk0.vhdx.
+3.	Once replica VHD is mounted, use mountvol.exe to assign a drive letter to the replica volume using the Physical replica id from the SQL script output. For example: mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
     All of the following  text with angular braces in the above steps are place holders, replace them with appropriate values.
     - ReFSVolume - Access path from the SQL script output

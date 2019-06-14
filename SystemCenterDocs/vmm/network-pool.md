@@ -35,7 +35,7 @@ When you set up the logical network you'll need to configure a static IP address
 4. If you're using network virtualization you can use the pool to support multicasting or broadcasting. To do this click **Create a multicast IP address pool** and select the IP subnet you want to use. To use multicasting or broadcasting note that:
 
 	- The logical network must have network virtualization enabled.
-	- The IP protocol setting for the VM network must match the IP protocol settings for the underlying logical network. You can't view the protocol setting in the VMM console after you've created it. You'll need to run **Get-SCVMMNEtwork -Name <VM network name> | Format -List Name, Isolation Type, PoolType** to see it.
+	- The IP protocol setting for the VM network must match the IP protocol settings for the underlying logical network. You can't view the protocol setting in the VMM console after you've created it. You'll need to run **Get-SCVMMNEtwork -Name \<VM network name\> | Format -List Name, Isolation Type, PoolType** to see it.
 	- After you've configured this feature multicast and broadcast packets on the VM network will use the IP addresses from the multicast IP address pool. Each subnet in the VM network will consume one IP address from the multicast pool.
 
 5. In **IP address range** enter the start and end address for the pool. They must be contained within the subnet. In **VIPs and reserved IP addresses** specify IP address range you want to reserve for VIPs. VIPS are used during deployment of a service in a load-balanced service tier. VMM automatically assigns a VIP to the load balancer from the reserved VIP address range.

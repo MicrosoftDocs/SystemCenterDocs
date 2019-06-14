@@ -26,7 +26,7 @@ Masking sensitive data allows you to use a regular expression to filter out comm
 
 4.  On the **Override Properties** page, in the **Override-controlled parameters** section, select **Sensitive data rules**.  
 
-5.  In the **Sensitive data rules** row, in the **Override Value** column, enter the formula for the mask you want to apply, using the syntax `<Hidden><Expression>((pwd|password)=?)[^;]*</Expression><CompareExpression>((pwd|password)=?)[^;]*</CompareExpression><Replacement>$1*****</Replacement><Type>all</Type></Hidden>`, where the <Expression> and <CompareExpression> use regular expression syntax and <Replacement> defines the characters to use when masking out the actual value of the parameter.  
+5.  In the **Sensitive data rules** row, in the **Override Value** column, enter the formula for the mask you want to apply, using the syntax `<Hidden><Expression>((pwd|password)=?)[^;]*</Expression><CompareExpression>((pwd|password)=?)[^;]*</CompareExpression><Replacement>$1*****</Replacement><Type>all</Type></Hidden>`, where the \<Expression\> and \<CompareExpression\> use regular expression syntax and \<Replacement\> defines the characters to use when masking out the actual value of the parameter.  
 
 6.  In the **Management Pack** section, select an existing management pack or create a new one where the override will be stored.  
 

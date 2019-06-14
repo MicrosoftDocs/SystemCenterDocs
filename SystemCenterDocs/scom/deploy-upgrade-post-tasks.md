@@ -61,7 +61,7 @@ If you had Audit Collection Services (ACS) enabled for an agent prior to upgrade
 
 ### Reset agent HealthService cache size
 Restore the default setting for the agent HealthService cache size by updating the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups<ManagementGroupName>\maximumQueueSizeKb
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName\>\maximumQueueSizeKb
 
 The default decimal value of DWORD type is 15360 (15 MB).
 
