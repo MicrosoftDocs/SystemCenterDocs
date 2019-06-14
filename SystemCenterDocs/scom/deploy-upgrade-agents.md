@@ -13,7 +13,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to upgrade an Operations Manager agent 
+# How to upgrade an Operations Manager agent
 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 1801. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
@@ -112,9 +112,9 @@ Manually-installed agents are agents that were installed manually, either from t
 
 #### To manually upgrade UNIX and Linux agents
 
-1.  Log on to Linux/Unix machines and copy the agent (omsagent-<version>.universalr.<version>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
+1.  Log on to Linux/Unix machines and copy the agent (omsagent-\<version\>.universalr.\<version\>.<arch>.sh) to the Linux server.  This should be done via SCP or FTP in binary mode..
 
-2.  Install the package with the following command. 
+2.  Install the package with the following command.
 
     `sh ./omsagent-<version>.universalr.<version>.<arch>.sh –-upgrade`
 
@@ -123,7 +123,7 @@ Manually-installed agents are agents that were installed manually, either from t
     `rpm -q omsagent`
 
 4.	Verify that the Microsoft SCX CIM Server is running with the following command.
- 
+
     `scxadmin -status`
 
 #### To verify the UNIX or Linux agent upgrade from the console

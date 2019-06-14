@@ -83,7 +83,7 @@ Repeat the preceding step on the following files:
 ### To edit the web.config file in WebHost folder
 
 1.	Use a plain text editor to open the web.config file in `<Path>:\Program Files\System Center 2016\Operations Manager\WebConsole\WebHost\web.config`.
-2.	In the <encryption> element, add the following element if it does not exist: `<symmetricAlgorithm  iv="SHA256"/>`
+2.	In the \<encryption\> element, add the following element if it does not exist: `<symmetricAlgorithm  iv="SHA256"/>`
 3.	In the `<connection autoSignIn="true" autoSignOutInterval="30">` element, in the `<session>` tag, add the following attribute if it does not exist: **tokenAlgorithm="SHA256"**
 
      ```

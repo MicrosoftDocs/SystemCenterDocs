@@ -23,13 +23,13 @@ During the move, you need to stop services on your management servers, back up t
 
 ## Summary of steps
 
-![Summary steps for moving Reporting DW database](./media/manage-move-omdwdb/om2016-move-reporting-dw-database-steps.png)<br> 
+![Summary steps for moving Reporting DW database](./media/manage-move-omdwdb/om2016-move-reporting-dw-database-steps.png)<br>
 
 ## Moving the Reporting data warehouse database
 
 ### Stop the Operations Manager services
 
-On all the management servers in the management group, stop the Operations Manager services: 
+On all the management servers in the management group, stop the Operations Manager services:
   - System Center Data Access
   - Microsoft Monitoring Agent
   - System Center Management Configuration
@@ -37,7 +37,7 @@ On all the management servers in the management group, stop the Operations Manag
 ### Backup the Reporting data warehouse database on the old SQL Server instance
 
 1. On the original SQL Server instance hosting the Reporting data warehouse database, use Microsoft SQL Server Management Studio to create a full backup of the database. The default name is OperationsManagerDW.
-  
+
     For more information, see [How to: Back Up a Database (SQL Server Management Studio)](https://technet.microsoft.com/library/ms187510.aspx).
 
 2. Copy the backup file to a local drive of the new SQL Server instance.
@@ -45,7 +45,7 @@ On all the management servers in the management group, stop the Operations Manag
 ### Restore the Reporting data warehouse database on the new SQL Server instance
 
 1. Use Microsoft SQL Server Management Studio to restore the Reporting data warehouse database. (In the previous step, you moved the database backup file to a local drive of the new SQL Server instance.) In this step, you can change the name of the database and choose the file location.
-  
+
     For more information, see [How to: Restore a Database Backup (SQL Server Management Studio)](https://technet.microsoft.com/library/ms177429.aspx).
 
 2. In SQL Server Management Studio, verify that the database is online.
@@ -58,7 +58,7 @@ After moving the Operations Manager Reporting data warehouse database to a diffe
 
 On the reporting server, you will need to change the connection string to reference the new computer name and instance of the SQL Server instance hosting the Reporting data warehouse database.  The steps are detailed in the [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md#update-reporting-server).  
 
-### Update security credentials on the new SQL Server instance hosting the Reporting data warehouse database 
+### Update security credentials on the new SQL Server instance hosting the Reporting data warehouse database
 
 1. On the new SQL Server instance hosting the Reporting data warehouse database, open SQL Management Studio.  
 
@@ -71,22 +71,22 @@ On the reporting server, you will need to change the connection string to refere
 5. For the Data Access Service (DAS) user account, add the following user mappings:
    - db_datareader
    - OpsMgrReader
-   - apm_datareader 
+   - apm_datareader
 
 6. If an account has not existed before in the SQL instance in which you are adding it, the mapping will be picked up by SID automatically from the restored data warehouse database. If the account has existed in that SQL instance before, you receive an error indicating failure for that login, although the account appears under Logins. If you are creating a new login, ensure the User Mapping for that login and database are set to the same values as the previous login as follows:
 
-    | Login | Database| 
+    | Login | Database|
     |-------|----------|
     | DW Data Writer | - db_owner<br>- OpsMgrWriter<br>- apm_datareader<br>- apm_datawriter|
-    | DW Data Reader| - db_datareader<br>- OpsMgrReader<br>- apm_datareader| 
+    | DW Data Reader| - db_datareader<br>- OpsMgrReader<br>- apm_datareader|
     | DAS/Config account | - db_datareader<br>- OpsMgrReader<br>- apm_datareader|
 
-    > [!NOTE] 
-    > If the DAS/Configuration account uses the LocalSystem account, specify computer account in the form <domain>\<computername>$.
+    > [!NOTE]
+    > If the DAS/Configuration account uses the LocalSystem account, specify computer account in the form \<domain\>\<computername>$.
 
 ###  Start the Operations Manager services
 
-1. On all the management servers in the management group, start the Operations Manager services: 
+1. On all the management servers in the management group, start the Operations Manager services:
    - System Center Data Access
    - Microsoft Monitoring Agent
    - System Center Management Configuration
@@ -100,8 +100,8 @@ To update Kerberos authentication with SQL Server, you should review [Register a
 
 2. Ensure that the health state of all management servers in the management group are Healthy.  If the health state of any management server is Critical, open Health Explorer, expand Availability - <server name>, and then continue to expand until you can navigate to Data Warehouse SQL RS Deployed Management Pack List Request State. Check the associated events to determine if there is an issue accessing the data warehouse database.
 
-3. Check operating system events. 
- 
+3. Check operating system events.
+
     a. Open the Event Viewer and navigate to Applications and Services Logs and Operations Manager.    
     b. In the Operations Manager log, search for events with a Source of Health Service Module and a Category of Data Warehouse.  If the move was successful, event number 31570, 31558, or 31554 should exist.  
     c. If there is an issue accessing the data warehouse database, event numbers 31563, 31551, 31569, or 31552 will exist.
