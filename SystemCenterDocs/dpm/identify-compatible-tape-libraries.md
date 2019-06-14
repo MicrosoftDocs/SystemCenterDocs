@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2017
 title: Identify compatible tape libraries
 ms.technology: data-protection-manager
@@ -52,7 +52,7 @@ To acquire and run the compatibility tool:
 
         -   Ensure that device drivers are up-to-date.
 
-        -   If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the <DPM installation folder>/bin folder to correct the mappings. If you don't have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
+        -   If the drive mappings are incorrect, use the DPMDriveMapping.exe tool in the \<DPM installation folder\>/bin folder to correct the mappings. If you don't have DPM installed on the computer, copy the DPMLA.xml that DPMDriveMapping.exe creates to the folder to which you extracted the Tape Library Certification tool.
 
     -   **Test 2: Mount/dismount** - This test selects a tape from the first available slot and performs a mount///dismount of the tape to and from a drive.
 

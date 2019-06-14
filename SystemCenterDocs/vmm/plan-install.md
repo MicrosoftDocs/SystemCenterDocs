@@ -46,14 +46,14 @@ Verify the following [system requirements](system-requirements.md):
 
 If the VMM user installing VMM, or running VMM setup, doesn't have permissions to write the service principal name (SPN) for the VMM server in Active Directory, setup will finish with a warning. If the SPN isn't registered, other computers running the VMM console won't be able to connect to the management server, and you won't be able to deploy a Hyper-V host on a bare metal computer in the VMM fabric. To avoid this issue, you need to register the SPN as a domain administrator before you install VMM, as follows:
 
-1. Run these commands from <SystemDrive>\Windows\System32>, as a domain administrator:
+1. Run these commands from \<SystemDrive\>\Windows\System32>, as a domain administrator:
     ``setspn -s -u SCVMM/<MachineBIOSName> <VMMServiceAccount>
     setspn -s -u SCVMM/<MachineFQDN> <VMMServiceAccount>``
 
-    For a cluster, <MachineBIOSName> should be /<ClusterBIOSName> and <MachineFQDN> should be <ClusterFQDN>
+    For a cluster, \<MachineBIOSName\> should be \<ClusterBIOSName\> and \<MachineFQDN\> should be \<ClusterFQDN\>
 
 2. On the VMM server (or on each node in a cluster), in the registry, navigate to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Setup**.
-3. Set **VmmServicePrincipalNames** to **SCVMM/<MachineBIOSName>,SCVMM/<MachineFQDN>**. For a cluster: **SCVMM/<ClusterBIOSName>,SCVMM/<ClusterFQDN>**.
+3. Set **VmmServicePrincipalNames** to **SCVMM/\<MachineBIOSName\>,SCVMM/\<MachineFQDN\>**. For a cluster: **SCVMM/\<ClusterBIOSName\>,SCVMM/\<ClusterFQDN\>**.
 
 If you can't do this, you can also register the SPN during VMM installation. A domain administrator can provide the SPN write permissions to VMM service user or setup user. Note that this approach isn't the preferred one. The permission allows the delegated user to register any servicePrincipalName, with no restrictions. Hence, the delegated user should be highly trusted, and the account credentials must be kept secure. To do this:
 

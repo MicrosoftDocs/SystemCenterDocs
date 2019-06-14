@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2016
 title: Prepare to back up a generic data source
 ms.technology: data-protection-manager
@@ -35,11 +35,11 @@ You'll need to run the Modify-RegisteredWriters command to add, remove or modify
 
 **Syntax**
 
-Modify-RegisteredWriters.ps1 [[-DpmServerName] <String>] [-List] [<CommonParameters>]
+Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-List] [\<CommonParameters\>]
 
-Modify-RegisteredWriters.ps1 [[-DpmServerName] <String>] [-Remove] [-Writers] <String> [<CommonParameters>]
+Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Remove] [-Writers] <String> [\<CommonParameters\>]
 
-Modify-RegisteredWriters.ps1 [[-DpmServerName] <String>] [-Add] [-Writers] <String> [<CommonParameters>]
+Modify-RegisteredWriters.ps1 [[-DpmServerName] \<String\>] [-Add] [-Writers] <String> [\<CommonParameters\>]
 
 |Parameter|Type|Description|
 |-------------|--------|---------------|

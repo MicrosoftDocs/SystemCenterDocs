@@ -217,7 +217,7 @@ Follow these steps: :
 
 8. If the media-type for HDD or SSD disk is not recognized correctly, use the following command:
 
-    *Set-PhysicalDisk -UniqueId <UniqueId String> -MediaType <HDD|SSD>*
+    *Set-PhysicalDisk -UniqueId \<UniqueId String\> -MediaType <HDD|SSD>*
 
     ![Set media type ](./media/add-storage/set-media-type-2019.png)
 
@@ -300,7 +300,7 @@ Follow these steps:
     fsutil behavior disableWriteAutoTiering
     ```
 
-    Usage:  fsutil behavior set disableWriteAutoTiering <volume pathname> <1|0>)
+    Usage:  fsutil behavior set disableWriteAutoTiering \<volume pathname\> <1|0>)
     Values:
 
         0 - Enable write auto tiering on the given volume (default)

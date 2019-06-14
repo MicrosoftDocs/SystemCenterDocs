@@ -56,7 +56,7 @@ Install the console as follows:
 
 1. Copy the VMClient.ini file from the amd64\Setup folder to a local folder.
 2. Edit the VMClient.ini file. Remove the comment indicator (#) only if you want to edit the entry. Otherwise, setup uses the values in the .ini file as the default values.
-3. Run setup as follows: setup.exe /client /i /f <path>, where:
+3. Run setup as follows: setup.exe /client /i /f \<path\>, where:
     - /client - specifies console installation
     - /i or /x - specify whether to install (/i) or uninstall (/x) the console.
     - /f &lt;filename&gt; - specifies the ini file to use. Make sure this is correct. If setup doesn't find the ini file, it installs with default values.

@@ -67,7 +67,7 @@ Communication between the Operations Manager management server and UNIX and Linu
 > [!NOTE]
 > All credentials referred to in this article pertain to accounts that have been established on the UNIX or Linux computer, not to the Operations Manager accounts that are configured during the installation of Operations Manager. Contact your system administrator for credentials and authentication information.  
 
-To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager and later can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which is in use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems. 
+To support the new scalability improvements with the number of UNIX and Linux systems System Center 2016 - Operations Manager and later can monitor per management server, the new Async Windows Management Infrastructure (MI) APIs are available instead of WSMAN Sync APIs, which is in use by default. To enable this change, you need to create the new registry key **UseMIAPI** to enable Operations Manager to use the new Async MI APIs on management servers monitoring Linux/Unix systems.
 
 1. Open the **Registry Editor** from an elevated command prompt.
 2. Create registry key **UseMIAPI** under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup`.
@@ -111,8 +111,8 @@ Discovery of a Windows system requires that the TCP 135 (RPC), RPC range, and TC
 - If enabled, Windows Firewall Group Policy settings for Allow remote administration exception and Allow file and printer sharing exception must be set to Allow unsolicited incoming messages from to the IP address and subnets for the primary and secondary management servers for the agent.
 - An account that has local administrator rights on the target computer.
 - Windows Installer 3.1. To install, see article 893803 in the Microsoft Knowledge Base
-http://go.microsoft.com/fwlink/?LinkId=86322 <verify if we need to continue calling this out>
-- Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation installs MSXML 6 on the target device if it is not already installed. <verify if we need to continue calling this out>
+http://go.microsoft.com/fwlink/?LinkId=86322 \<verify if we need to continue calling this out\>
+- Microsoft Core XML Services (MSXML) 6 on the Operations Manager product installation media in the \msxml sub directory. Push agent installation installs MSXML 6 on the target device if it is not already installed. \<verify if we need to continue calling this out\>
 
 ### Agent deployment to UNIX and Linux system
 

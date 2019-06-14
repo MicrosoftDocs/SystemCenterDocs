@@ -172,7 +172,7 @@ If you want to use a shared library for multiple DPM servers continue to the nex
 
     -   `cd <system drive>:\Program Files\Microsoft System Center 2012 R2\DPM\DPM\Setup`
 
-    -   `AddLibraryServerForDpm.exe -DpmServerWithLibrary <FQDN of library server>` where '<FQDN of library server>' is the fully qualified domain name of the library server.
+    -   `AddLibraryServerForDpm.exe -DpmServerWithLibrary <FQDN of library server>` where '\<FQDN of library server\>' is the fully qualified domain name of the library server.
 
 4.  On the library server computer, open an elevated Command Prompt window, and then run the following commands one time for each library client. For example, if your library server supports three library clients, you must run this command three times on the library server.
 
