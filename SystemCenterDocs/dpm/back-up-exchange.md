@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 11/30/2017
+ms.date: 06/18/2019
 title: Back up Exchange with DPM
 ms.technology: data-protection-manager
 ms.assetid: 79fb8831-1d70-4d1d-bed1-f28fa9186730
@@ -35,7 +35,7 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
--  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/en-in/download/details.aspx?id=30679).
+-  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
 -  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
@@ -316,7 +316,7 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
 
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
--  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/en-in/download/details.aspx?id=30679).
+-  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
 -  To protect an Exchange 2016 and Exchange 2019 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
 
