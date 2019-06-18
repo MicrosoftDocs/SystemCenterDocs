@@ -248,16 +248,16 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 **Workaround**: If you must move a protected shared folder, remove it from its protection group and then add it to protection after the move. For an encrypted volume ensure that the new file path of the protected data source uses fewer than 5120 characters.
 
 ### Change the domain of a protected resource
-**Issue**: You can't change the domain of a protected computer and continue protection without disruption. In addition you can't change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
+**Issue**: You can't change the domain of a protected computer and continue protection without disruption. In addition, you can't change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
 
-**Workaround**: We recommend that you don't change the domain of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
-
-### Change the time zone of a protected resource
-**Issue**: You can't change the domain of a protected computer and continue protection without disruption. In addition you can't change the domain of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
-
-**Workaround**: We recommend that you don't change the domain of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
+**Workaround**: We recommend that you don't change the domain of a protected computer. If you must change the domain of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new domain.
 
 ### Change the name of a protected resource
+**Issue**: You can't change the name of a protected computer and continue protection without disruption. In addition, you can't change the name of a protected computer and associate the existing replicas and recovery points with the computer when it is re-protected.
+
+**Workaround**: We recommend that you don't change the name of a protected computer. If you must change the name of a protected computer, then first remove the data sources on the computer from protection. Then protect the data source on the computer after it has a new name.
+
+### Change the time zone of a protected resource
 **Issue**: Ensure you update the time zone correctly if you change it for a protected resource.
 
 **Workaround**: DPM automatically identifies the time zone of a protected computer during installation of the protection agent. If a protected computer is moved to a different time zone after protection is configured, ensure that you change the computer time in Control Panel. Then update the time zone in the DPM database.
