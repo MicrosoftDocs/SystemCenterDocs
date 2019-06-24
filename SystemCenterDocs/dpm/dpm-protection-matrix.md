@@ -19,26 +19,26 @@ This article details the workloads that DPM can back up.
 ::: moniker range="<sc-dpm-2019"
 Use the following matrix for DPM 2016 and Semi-Annual Channel releases: 1801 and 1807:
 
-- Workloads – the workload type of technology.
+- Workloads – The workload type of technology.
 
-- Version – supported VMM version for the workloads.
+- Version – Supported VMM version for the workloads.
 
-- DPM installation – the computer/location where you wish to install DPM.
+- DPM installation – The computer/location where you wish to install DPM.
 
-- Protection and recovery – list the detailed information about the workloads such as supported storage container or supported deployment.
+- Protection and recovery – List the detailed information about the workloads such as supported storage container or supported deployment.
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-2019"
 Use the following matrix for DPM 2019:
 
-- Workloads – the workload type of technology.
+- Workloads – The workload type of technology.
 
-- Version – supported VMM version for the workloads.
+- Version – Supported VMM version for the workloads.
 
-- DPM installation – the computer/location where you wish to install DPM.
+- DPM installation – The computer/location where you wish to install DPM.
 
-- Protection and recovery – list the detailed information about the workloads such as supported storage container or supported deployment.  
+- Protection and recovery – List the detailed information about the workloads such as supported storage container or supported deployment.  
 
 ::: moniker-end
 
