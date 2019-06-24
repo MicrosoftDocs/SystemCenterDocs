@@ -166,4 +166,4 @@ DPM can protect cluster workloads that are located in the same domain as the DPM
 
 ## Next steps
 
-[Get ready to deploy DPM servers](plan-dpm-deployment.md).
+[Get ready to deploy DPM servers](plan-dpm-deployment.md)
