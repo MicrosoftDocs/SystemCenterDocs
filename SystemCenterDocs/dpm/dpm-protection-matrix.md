@@ -47,7 +47,13 @@ Use the following matrix for DPM 2019:
 
 ## Protection support matrix
 
-[Applications Backup](#applications-backup):
+The following sections details the protection support matrix for DPM:
+
+-  [Applications Backup](#applications-backup)
+-  [VM Backup](#vm-backup)
+-  [Linux](#linux)
+
+### Applications Backup
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
@@ -58,14 +64,14 @@ Use the following matrix for DPM 2019:
 |Exchange|Exchange 2019, 2016|Physical server<br/><br/> On-premises Hyper-V virtual machine|Protect (all deployment scenarios): Standalone Exchange server, database under a database availability group (DAG)<br /><br />Recover (all deployment scenarios): Mailbox, mailbox databases under a DAG<br/><br/> Backup of Exchange over ReFS not supported |
 |SharePoint|SharePoint 2019, 2016 with latest SPs|Physical server<br /><br />On-premises Hyper-V virtual machine<br /><br />Azure virtual machine (when workload is running as Azure virtual machine)<br /><br />Windows virtual machine in VMWare (protects workloads running in Windows virtual machine in VMWare)|Protect (all deployment scenarios):  Farm,  frontend web server content<br /><br />Recover (all deployment scenarios):  Farm, database, web application, file or list item, SharePoint search, frontend web server<br /><br />|
 
-[VM Backup](#vm-backup):
+### VM Backup
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2019, 2016, 2012 R2, 2012|Physical server<br /><br />On-premises Hyper-V virtual machine|Protect: Hyper-V computers, Hyper-V VMs hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
 |VMware VMs | VMware server 6.0, or 6.5, 6.7 | On-premises Hyper-V virtual machine | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
 
-[Linux](#linux):
+### Linux
 
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
