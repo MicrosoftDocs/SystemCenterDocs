@@ -248,3 +248,51 @@ There a couple of possible scenarios for farm recovery:
 11. On the **Summary** page, review the recovery settings, and then click **Recover**.
 
 12. On the main front-end Web server for the server farm, run the SharePoint Products and Technologies Configuration Wizard and disconnect the front-end Web server from the farm.
+
+## Switching the Front-End Web Server
+
+The following procedure uses the example of a server farm with two front-end Web servers, Server1 and Server2. DPM uses Server1 to protect the farm. You need to change the front-end Web server that DPM uses to Server2 so that you can remove Server1 from the farm.
+
+> [!NOTE]
+> If the front-end Web server that DPM uses to protect the farm is unavailable, use the following procedure to change the front-end Web server by starting at step 4.
+
+#### To change the front-end Web server that DPM uses to protect the farm
+
+1. Stop the SharePoint VSS Writer service on Server1 by running the following command at a command prompt:
+
+   **stsadm -o unregisterwsswriter**
+
+2. On Server1, open the Registry Editor and navigate to the following key:
+
+   **HKLM\System\CCS\Services\VSS\VssAccessControl**
+
+3. Check all values listed in the VssAccessControl subkey. If any entry has a value data of 0 and another VSS writer is running under the associated account credentials, change the value data to 1.
+
+4. Install a protection agent on Server2.
+
+   > [!WARNING]
+   > You can only switch Web front-end servers if both the servers are on the same domain.
+
+5. On Server2, at a command prompt, change the directory to _DPM installation location_\bin\ and run ConfigureSharepoint. For more information about ConfigureSharePoint, see [Configure backup](#configure-backup).
+
+6. There is a known issue when the server farm is the only member of the protection group and the protection group is configured to use tape-based protection. If your server farm is the only member of the protection group using tape-based protection, to change the front-end Web server that DPM uses to protect the farm, you must temporarily add another member to the protection group by performing the following steps:
+
+   - In DPM Administrator Console, click **Protection** on the navigation bar.
+
+   - Select the protection group that the server farm belongs to, and then click **Modify protection group**.
+
+   - In the Modify Group Wizard, add a volume on any server to the protection group. You can remove this volume from the protection after the procedure is completed.
+
+   - If the protection group is configured for short-term disk-based protection and long-term tape-based protection, select the manual replica creation option. This avoids creating a replica for the volume that you are temporarily adding to the protection group.
+
+   - Complete the wizard.
+
+7. Remove Server1 from the protection group, selecting to retain the replicas on disk and tape.
+
+8. Select the protection group that the server farm belongs to, and then click **Modify protection group**.
+
+9. In the Modify Group Wizard, on the **Select Group Members** page, expand Server2 and select the server farm, and then complete the wizard.
+
+   A consistency check will start.
+
+10. If you performed step 6, you can now remove the volume from the protection group.
