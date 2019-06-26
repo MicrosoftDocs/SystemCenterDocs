@@ -260,7 +260,7 @@ The following procedure uses the example of a server farm with two front-end Web
 
 1. Stop the SharePoint VSS Writer service on Server1 by running the following command at a command prompt:
 
-  **stsadm -o unregisterwsswriter**
+   **stsadm -o unregisterwsswriter**
 
 2. On Server1, open the Registry Editor and navigate to the following key:
 
@@ -270,22 +270,22 @@ The following procedure uses the example of a server farm with two front-end Web
 
 4. Install a protection agent on Server2.
 
-> [!WARNING]
-> You can only switch Web front-end servers if both the servers are on the same domain.
+   > [!WARNING]
+   > You can only switch Web front-end servers if both the servers are on the same domain.
 
 5. On Server2, at a command prompt, change the directory to _DPM installation location_\bin\ and run ConfigureSharepoint. For more information about ConfigureSharePoint, see [Configure backup](#configure-backup).
 
 6. There is a known issue when the server farm is the only member of the protection group and the protection group is configured to use tape-based protection. If your server farm is the only member of the protection group using tape-based protection, to change the front-end Web server that DPM uses to protect the farm, you must temporarily add another member to the protection group by performing the following steps:
 
-  - In DPM Administrator Console, click **Protection** on the navigation bar.
+   - In DPM Administrator Console, click **Protection** on the navigation bar.
 
-  - Select the protection group that the server farm belongs to, and then click **Modify protection group**.
+   - Select the protection group that the server farm belongs to, and then click **Modify protection group**.
 
-  - In the Modify Group Wizard, add a volume on any server to the protection group. You can remove this volume from the protection after the procedure is completed.
+   - In the Modify Group Wizard, add a volume on any server to the protection group. You can remove this volume from the protection after the procedure is completed.
 
-  - If the protection group is configured for short-term disk-based protection and long-term tape-based protection, select the manual replica creation option. This avoids creating a replica for the volume that you are temporarily adding to the protection group.
+   - If the protection group is configured for short-term disk-based protection and long-term tape-based protection, select the manual replica creation option. This avoids creating a replica for the volume that you are temporarily adding to the protection group.
 
-  - Complete the wizard.
+   - Complete the wizard.
 
 7. Remove Server1 from the protection group, selecting to retain the replicas on disk and tape.
 
