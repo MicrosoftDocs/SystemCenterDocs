@@ -367,7 +367,7 @@ You can restore individual files from a protected VM recovery point. This featur
     **Key Type** : DWORD (32-bit) value.
 
     > [!NOTE]
-    >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel.
+    >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups you must temporarily add another VM to the protection group. This should update the replication job schedule accordingly. You can remove this VM from the Protection Group after the procedure is completed.
 
     ::: moniker-end
 
