@@ -39,7 +39,7 @@ Table A
 ## <a name="BKMK_SQL"></a>Set up a SQL Server database
 You'll need to set up a SQL Server database if:
 
--   You're running DPM 2019, 2016 
+-   You're running DPM 2019, 2016
 
 To set up a SQL Server database:
 
@@ -87,12 +87,12 @@ To set up a SQL Server database:
         -   You can see the current port number used by the database engine in the SQL Server error log. You can view the error logs by using SQL Server Management Studio and connecting to the named instance. You can view the current log under the Management - SQL Server Logs in the entry Server is listening on ['any' <ipv4> port_number].
 
 
-~~~
->[!NOTE]
->DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must [Download and install SQL Server Management Studio (SSMS) version 16.5](https://go.microsoft.com/fwlink/?LinkID=832812).
->SSMS version 17.0 or later is not supported with DPM 2016. For more information, see [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812).
->With DPM 2019, you need to install SQL SSRS separately for SQL 2017. With SQL 2017 and later, SSRS doesn't get installed as a part of SQL install.
-~~~
+
+> [!NOTE]
+> - DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must [Download and install SQL Server Management Studio (SSMS) version 16.5](https://go.microsoft.com/fwlink/?LinkID=832812).
+> - SSMS version 17.0 or later is not supported with DPM 2016. For more information, see [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812).
+> - With DPM 2019, you need to install SQL SSRS separately for SQL 2017. With SQL 2017 and later, SSRS does not get installed as a part of SQL install. For more information, see [Install SQL Server Reporting Services (2017 and later)](https://docs.microsoft.com/sql/reporting-services/install-windows/install-reporting-services?view=sql-server-2017).
+
 
 ## <a name="BKMK_Install"></a>Install DPM
 
