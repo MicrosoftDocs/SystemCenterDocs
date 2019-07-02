@@ -89,9 +89,9 @@ To set up a SQL Server database:
 
 
 > [!NOTE]
-> DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must [Download and install SQL Server Management Studio (SSMS) version 16.5](https://go.microsoft.com/fwlink/?LinkID=832812).
-> SSMS version 17.0 or later is not supported with DPM 2016. For more information, see [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812).
-> With DPM 2019, you need to install SQL SSRS separately for SQL 2017. With SQL 2017 and later, SSRS doesn't get installed as a part of SQL install. For more information, see [Install SQL Server Reporting Services (2017 and later)](https://docs.microsoft.com/sql/reporting-services/install-windows/install-reporting-services?view=sql-server-2017)
+> - DPM 2016 requires SQL Server Management Studio (SSMS) version 16.5 or earlier. SSMS is no longer installed with SQL Server; you must [Download and install SQL Server Management Studio (SSMS) version 16.5](https://go.microsoft.com/fwlink/?LinkID=832812).
+> - SSMS version 17.0 or later is not supported with DPM 2016. For more information, see [SQL Server Management Studio 16.5 release](https://docs.microsoft.com/sql/ssms/previous-sql-server-management-studio-releases#downloadssdtmediadownloadpng-sql-server-management-studio-165-releasehttpgomicrosoftcomfwlinklinkid832812).
+> - With DPM 2019, you need to install SQL SSRS separately for SQL 2017. With SQL 2017 and later, SSRS doesn't get installed as a part of SQL install. For more information, see [Install SQL Server Reporting Services (2017 and later)](https://docs.microsoft.com/sql/reporting-services/install-windows/install-reporting-services?view=sql-server-2017)
 
 
 ## <a name="BKMK_Install"></a>Install DPM
