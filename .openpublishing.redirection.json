@@ -857,6 +857,66 @@
      "source_path" : "SystemCenterDocs/scom/plan-system-requirements.md",
      "redirect_url" : "/system-center/scom/system-requirements"
 },
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/global-service-monitor.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/getting-started-with-global-service-monitor-signing-in-and-setup.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/configuring-tests-in-global-service-monitor.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/how-to-configure-web-application-availability-monitoring-in-gsm.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/how-to-configure-visual-studio-web-test-monitoring-in-global-service-monitor.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/monitoring-tests-and-alerts-for-global-service-monitor.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/dashboard-views-in-global-service-monitor.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/downloading-and-sharing-global-service-monitor-web-tests-and-results.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/privacy-statement-for-gsm.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/global-service-monitor-service-level-agreement-sla.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/online-services-supplemental-terms-and-conditions.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+{
+     "source_path" : "SystemCenterDocs/scom/gsm/terms-conditions-for-gsm-as-sa-benefit.md.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
 {
      "source_path" : "SystemCenterDocs/orchestrator/how-to-use-the-integration-toolkit-to-extend-orchestrator-capabilities.md",
      "redirect_url" : "/system-center/orchestrator/automate-runbooks"
