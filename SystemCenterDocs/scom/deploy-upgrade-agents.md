@@ -23,12 +23,3 @@ ms.topic: article
 [!INCLUDE [deploy-upgrade-agents-1801.md](../includes/deploy-upgrade-agents-1801.md)]
 
 ::: moniker-end
-
-
-## Next steps
-
-- To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
-
-- See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
-
-- Review information in the [Managing Discovery and Agents](welcome.md) section to understand the options and steps for installing agents and discovering objects to be monitored by Operations Manager.
