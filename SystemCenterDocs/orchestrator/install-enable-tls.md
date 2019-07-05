@@ -151,10 +151,8 @@ Follow these steps:
 4. Restart the computer.
 
 > [!NOTE]
->
-> After you set Microsoft System Center Orchestrator to use only the TLS 1.2 protocol for connections, the Integration Packs stop working.
+>  After you set Microsoft System Center Orchestrator to use only the TLS 1.2 protocol for connections, the Integration Packs stop working.
 To fix this issue, follow these steps:
-
 >1.	Start Registry Editor.
 >2.	Locate the following registry subkey:
  *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319*
