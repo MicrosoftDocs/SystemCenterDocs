@@ -25,12 +25,27 @@ System Center - Virtual Machine Manager (VMM) 1801 and later, you can enable and
 
 ## Before you start
 
+::: moniker range="sc-vmm-2019"
+
 Ensure the following prerequisites are met:
 
-- A Hyper-V host running Windows Server 2016, Windows Server 1709.
-- A Hyper-V VM running Windows Server 2016, Windows Server 1709.
+- A Hyper-V host running Windows Server 2016, Windows Server 2019.
+- A Hyper-V VM running Windows Server 2016, Windows Server 2019.
 - A Hyper-V VM with configuration version 8.0 or greater.
 - An Intel processor with VT-x and EPT technology.
+
+::: moniker-end
+
+::: moniker range="<sc-vmm-2019"
+
+Ensure the following prerequisites are met:
+
+- A Hyper-V host running Windows Server 2016.
+- A Hyper-V VM running Windows Server 2016.
+- A Hyper-V VM with configuration version 8.0 or greater.
+- An Intel processor with VT-x and EPT technology.
+
+::: moniker-end
 
 ## Procedure - configure a nested VM as a host
 
