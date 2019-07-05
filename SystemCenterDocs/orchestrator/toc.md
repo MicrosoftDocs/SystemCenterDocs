@@ -27,6 +27,8 @@
 ### [Monitor activities](activity-events.md)
 ### [Runbook properties](runbook-properties.md)
 ### [Track runbooks](track-runbooks-audit-trail.md)
+##  [Install TLS]
+### [Install and enable TLS 1.2](install-enable-tls-1.2)
 ## Manage Orchestrator Servers
 ### [Runbook permissions](runbook-permissions.md)
 ### [Back up Orchestrator](how-to-back-up-orchestrator.md)
