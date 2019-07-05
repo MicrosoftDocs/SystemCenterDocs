@@ -8,7 +8,7 @@ manager: carmonm
 ms.date: 07/04/2019
 ms.custom: na
 ms.prod: system-center
-monikerRange: ' sc-scom-1801 || sc-scom-2019'
+monikerRange: ' sc-om-1801 || sc-om-2019'
 ms.technology: operations-manager
 ms.topic: article
 ---
