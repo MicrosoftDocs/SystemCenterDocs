@@ -8,7 +8,7 @@ manager: carmonm
 ms.date: 07/05/2019
 ms.topic: article
 ms.prod: system-center
-ms.technology: Orchestrator
+ms.technology: orchestrator
 ---
 
 # Set up TLS for Orchestrator
@@ -25,7 +25,7 @@ Ensure the following:
 - System Center updates are up-to-date.
 - SQL Server 2012 Native client 11.0 or later is installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012
   Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/en-us/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
-- Orchestrator should be runnning .NET version 4.6. Follow [these instructions](https://docs.microsoft.com/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed.md) to determine which version of .NET is installed.
+- Orchestrator should be running .NET version 4.6. Follow [these instructions](https://docs.microsoft.com/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed.md) to determine which version of .NET is installed.
 - To work with TLS 1.2, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2.
 - Install the SQL server version that supports TLS 1.2. SQL Server 2016 or later supports TLS 1.2.
 
