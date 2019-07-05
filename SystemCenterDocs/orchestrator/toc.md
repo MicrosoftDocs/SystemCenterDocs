@@ -28,7 +28,7 @@
 ### [Runbook properties](runbook-properties.md)
 ### [Track runbooks](track-runbooks-audit-trail.md)
 ##  [Install TLS]
-### [Install and enable TLS 1.2](install-enable-tls-12)
+### [Install and enable TLS 1.2](install-enable-tls.md)
 ## Manage Orchestrator Servers
 ### [Runbook permissions](runbook-permissions.md)
 ### [Back up Orchestrator](how-to-back-up-orchestrator.md)
