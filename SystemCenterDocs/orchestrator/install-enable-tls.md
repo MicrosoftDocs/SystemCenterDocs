@@ -34,8 +34,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
     - SQL Server 2008 R2 doesn't support TLS 1.2.
 
 
-
-## Configure Orchestrator to use TLS 1.2
+## Configure and use TLS 1.2
 1. Configure Orchestrator to use TLS 1.2
 
     a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
