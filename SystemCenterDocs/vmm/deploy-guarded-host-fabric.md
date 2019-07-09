@@ -19,13 +19,13 @@ Guarded fabrics provide additional protections for VMs to prevent tampering and 
 
 ## Why do I need to protect VMs?
 
-Virtual machines contain sensitive data and configuration that the VM owner may not want a fabric administrator to see. However, since all the data for VMs are stored in files, the data can easily be copied off and inspected by malware or a malicious administrator. Shielded VMs in Windows Server 2016 help prevent such attacks by rigorously attesting to the health of a Hyper-V host before booting up a VM, ensuring the VM can only be started in datacenters authorized by the VM owner, and enabling the guest OS to encrypt its own data through the use of a new, virtual TPM. The VM owner can select from the following two types of protection when creating a security-sensitive VM:
+Virtual machines contain sensitive data and configuration that the VM owner may not want a fabric administrator to see. However, since all the data for VMs are stored in files, the data can easily be copied off and inspected by malware or a malicious administrator. Shielded VMs in Windows Server help prevent such attacks by rigorously attesting to the health of a Hyper-V host before booting up a VM, ensuring the VM can only be started in datacenters authorized by the VM owner, and enabling the guest OS to encrypt its own data through the use of a new, virtual TPM. The VM owner can select from the following two types of protection when creating a security-sensitive VM:
 - **Encryption Supported**:  Ideal for enterprise private cloud scenarios where encryption of data at rest and in-flight is necessary, but the fabric administrators are still trusted. The VM console and other management conveniences remain available to fabric administrators.
 - **Shielded**: The most secure deployment option, shielding prevents fabric administrators from connecting to the VM console or modifying security aspects of the VM configuration. VM owners can only access the VM through remote management tools they choose to enable. This is recommended for tenants running sensitive workloads on public or shared infrastructure.
 
 ## Managing a guarded fabric with VMM
 
-The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with Windows Server 2016 and must be configured according to the [guarded fabric documentation](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
+The core guarded fabric infrastructure (consisting of one or more guarded Hyper-V hosts, the Host Guardian Service, and the artifacts needed to create shielded VMs) is included with Windows Server 2016 and above, and must be configured according to the [guarded fabric documentation](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node).
 Once set up, you can optionally use System Center - Virtual Machine Manager to simplify management of the guarded fabric.
 
 VMM can be used to:
