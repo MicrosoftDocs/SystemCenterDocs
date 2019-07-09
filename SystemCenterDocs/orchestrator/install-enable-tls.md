@@ -34,10 +34,22 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
     - SQL Server 2008 R2 doesn't support TLS 1.2.
 
 
-## Configure Orchestrator to use TLS 1.2
-Follow these steps:
 
-1. Set Windows to use only TLS 1.2.
+## Configure Orchestrator to use TLS 1.2
+1. Configure Orchestrator to use TLS 1.2
+
+    a. Start the registry editor on the Orchestrator. To do this, right-click **Start**, type **regedit** in the Run box, and then select **OK**.
+
+    b.Locate the following registry subkey: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ .NetFrameword\v4.0.30319**.
+
+    c. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
+
+    d. Locate the following registry subkey:   **<strong>HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NetFrameword\v4.0.30319</strong>**.
+
+    e. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
+
+
+2. Set Windows to use only TLS 1.2.
 
    **Method 1: Manually modify the registry**
 
@@ -119,7 +131,7 @@ Follow these steps:
         Exit 0
     ```
 
-2. Set System Center to use only TLS 1.2.
+3. Set System Center to use only TLS 1.2.
 
    Before you change the registry in this step, back up the registry in case you need to restore it later. Then set the following registry key values.
 
@@ -139,7 +151,7 @@ Follow these steps:
    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
    | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
 
-3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
+4. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
 
    | Operating system | Required update |
    | --- | --- |
