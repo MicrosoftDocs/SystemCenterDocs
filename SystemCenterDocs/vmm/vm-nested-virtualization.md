@@ -14,7 +14,7 @@ monikerRange: '>sc-vmm-2016'
 
 # Configure a nested VM as a host
 
-Nested Virtualization is a functionality in Windows Server 2016 and above that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
+Nested virtualization is a functionality in Windows Server 2016 and above that allows you to run Hyper-V inside a Hyper-V virtual machine. In other words, with nested virtualization, a Hyper-V host itself can be virtualized. Nested virtualization can be enabled out-of-band by using PowerShell and Hyper-V host configuration.
 
 You can leverage this functionality to reduce your infrastructure expense for development and test scenarios without the need for individual hardware.
 
@@ -104,4 +104,4 @@ Administrators/delegated administrators can configure nested virtualization by u
     > Check the note at the bottom of the wizard page before you disable nested virtualization.
 
 ## Next steps
-[Run Hyper-v in a nested VM](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
+[Run Hyper-V in a nested VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
