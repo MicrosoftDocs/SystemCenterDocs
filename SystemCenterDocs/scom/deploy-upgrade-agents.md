@@ -118,7 +118,7 @@ Manually-installed agents are agents that were installed manually, either from t
 
 2.  Install the package with the following command.
 
-    `sh ./scx-<version>.universalr.<version>.<arch>.sh –-upgrade`
+    `sh ./scx-<version>.universalr.<version>.<arch>.sh –-upgrade --enable-opsmgr`
 
 3.	Verify the package is installed with the following command.
 
