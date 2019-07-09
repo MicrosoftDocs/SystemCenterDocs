@@ -47,6 +47,26 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
     e. Create the DWORD  **SchUseStrongCrypto** [Value=1] under this key.
 
+    f. Set System Center to use only TLS 1.2.
+
+       Before you change the registry in this step, back up the registry in case you need to restore it later. Then set the following registry key values.
+
+       **Values for 64-bit operating systems**
+
+       | Path | Registry key | Value |
+       | --- | --- | --- |
+       |HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+       |HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
+       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
+
+       **Values for 32-bit operating systems**
+
+       | Path   |Registry key  | Value |
+       | --- | --- | --- |
+       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
+       | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
+
 
 2. Set Windows to use only TLS 1.2.
 
@@ -130,27 +150,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
         Exit 0
     ```
 
-3. Set System Center to use only TLS 1.2.
-
-   Before you change the registry in this step, back up the registry in case you need to restore it later. Then set the following registry key values.
-
-   **Values for 64-bit operating systems**
-
-   | Path | Registry key | Value |
-   | --- | --- | --- |
-   |HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
-   |HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
-   | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-   | HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-
-   **Values for 32-bit operating systems**
-
-   | Path   |Registry key  | Value |
-   | --- | --- | --- |
-   | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 | SystemDefaultTlsVersions | dword:00000001 |
-   | HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\.NETFramework\ v2.0.50727 | SystemDefaultTlsVersions | dword:00000001 |
-
-4. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
+3. Install the following updates on all Service Manager roles. Update roles on management servers, Azure Data Warehouse servers, the Self-Service portal, and Analyst consoles (including the Analyst consoles installed on the Orchestrator Runbook servers).
 
    | Operating system | Required update |
    | --- | --- |
