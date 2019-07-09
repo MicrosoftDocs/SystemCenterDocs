@@ -13,7 +13,7 @@ ms.technology: orchestrator
 
 # Set up TLS for Orchestrator
 
-This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator
+This article describes how to set up Transport Security Layer (TLS) protocol version 1.2 with System Center - Orchestrator.
 
 
 ## Before you start
@@ -21,7 +21,7 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 - Orchestrator should be running version 2016 with Update Rollup 4 or later/1801/1807/2019.
 - Security fixes should be up-to-date on the Orchestrator.
 - System Center updates should be up-to-date.
-- SQL Server 2012 Native client 11.0 or later should be installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012 Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/en-us/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
+- SQL Server 2012 Native client 11.0 or later should be installed on the Orchestrator management server. To download and install Microsoft SQL Server 2012 Native Client 11.0, see [this Microsoft Download Center webpage](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True).
 - Orchestrator should be running .NET version 4.6. Follow [these instructions](https://docs.microsoft.com/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed.md) to determine which version of .NET is installed.
 - To work with TLS 1.2, System Center components generate SHA1 or SHA2 self-signed certificates. If SSL certificates from a certificate authority (CA) certificates are used, they should use SHA1 or SHA2.
 - Install the SQL server version that supports TLS 1.2. SQL Server 2016 or later supports TLS 1.2.
@@ -154,10 +154,10 @@ This article describes how to set up Transport Security Layer (TLS) protocol ver
 
    | Operating system | Required update |
    | --- | --- |
-   | Windows 8.1 and Windows Server 2012 R2 | [3154520](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154520&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=4zmUO0R60zFAV339V1nYhf32MQRpCoxPEiEmUsNn5LM%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
+   | Windows 8.1 and Windows Server 2012 R2 | [3154520](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2help%2F3154520&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=4zmUO0R60zFAV339V1nYhf32MQRpCoxPEiEmUsNn5LM%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2 |
    | Windows Server 2012 | [3154519](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154519&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873390534&amp;sdata=Om3y93IekKZdW6%2FTt8Arerz1loDOsW3L6LE%2F5bd69dY%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5 on Windows Server 2012 |
-   | Windows 7 SP1 and Windows Server 2008 R2 SP1 | [3154518](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154518&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=i1drbmxTit4RkFEKTaEKVTytzWpjAs3dg5DXD2DuH8Y%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
-   | Windows 10 and Windows Server 2016 | [3154521](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3154521&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=OfqEkrkocQeSqf2MIW9wKQkZI7mKgaIhpKkZI3%2Bptis%3D&amp;reserved=0) Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows<br><br>[3156421](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-in%2Fhelp%2F3156421&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873410525&amp;sdata=6xGOexADeuoR49tyrMBzxweoVDX2JNkrBqEvpbrdIdw%3D&amp;reserved=0) Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016 |
+   | Windows 7 SP1 and Windows Server 2008 R2 SP1 | [3154518](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fhelp%2F3154518&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=i1drbmxTit4RkFEKTaEKVTytzWpjAs3dg5DXD2DuH8Y%3D&amp;reserved=0) Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1 |
+   | Windows 10 and Windows Server 2016 | [3154521](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fhelp%2F3154521&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873400526&amp;sdata=OfqEkrkocQeSqf2MIW9wKQkZI7mKgaIhpKkZI3%2Bptis%3D&amp;reserved=0) Hotfix rollup 3154521 for the .NET Framework 4.5.2 and 4.5.1 on Windows<br><br>[3156421](https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2help%2F3156421&amp;data=02%7C01%7Cv-anesh%40microsoft.com%7C5311298568114da9a70b08d6ab9d2a60%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636885088873410525&amp;sdata=6xGOexADeuoR49tyrMBzxweoVDX2JNkrBqEvpbrdIdw%3D&amp;reserved=0) Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016 |
 
 4. Restart the computer.
 
@@ -174,7 +174,7 @@ To fix this issue, follow these steps:
         Value data: 1
 >4.	Click **OK**.
 
-For detailed information, see [this KB article](https://support.microsoft.com/en-us/help/4494803/orchestrator-integration-packs-stop-working-with-tls-1-2-connections).
+For detailed information, see [this KB article](https://support.microsoft.com/help/4494803/orchestrator-integration-packs-stop-working-with-tls-1-2-connections).
 
 
 ## Next steps
