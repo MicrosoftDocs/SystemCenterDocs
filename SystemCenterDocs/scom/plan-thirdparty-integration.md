@@ -5,7 +5,7 @@ description: This article provides design guidance for integrating Operations Ma
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 04/29/2019
+ms.date: 07/09/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -24,7 +24,7 @@ Interoperability between Operations Manager and other products is accomplished b
 
 Other custom connectors are developed and implemented to support advanced scenarios such as alert enrichment with additional information before forwarding to incident management systems, perform alert correlation, or provide advanced notification functionality with Operations Manager.   
 
-Operations Manager also integrates with [Microsoft Operations Management Suite](https://azure.microsoft.com/documentation/articles/operations-management-suite-overview/) (OMS) to forward collected events, alerts, and performance data for further analysis and provides greater visibility for the enterprise.  
+Operations Manager also integrates with [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/om-agents/) to forward collected events, alerts, and performance data for further analysis and provides greater visibility for the enterprise. 
 
 ## When separated by a firewall
 
@@ -38,7 +38,7 @@ If you are using a connector provided by the vendor, please review their documen
 
 ## Design considerations
 
-Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product, or in other cases, between multiple management servers or specifying the Operations Manager management group name.  Support for multiple, connected management groups are not supported and each management group will need to install a separate instance of the connector for each management group.  This includes integration between System Center Orchestrator, VMM and Service Manager.     
+Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product, or in other cases, between multiple management servers or specifying the Operations Manager management group name.  Support for multiple, connected management groups are not supported and each management group will need to install a separate instance of the connector for each management group.  This includes integration between System Center Orchestrator, VMM and Service Manager.
 
 You will need to evaluate and determine the risks, impact, and recovery options as it relates to the monitoring service supporting ongoing service operations based on the service levels defined in your SLAs and OLAs when planning for service continuity in the event of a unplanned outage or planned maintenance event.   
 
