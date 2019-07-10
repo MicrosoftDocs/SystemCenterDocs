@@ -14,7 +14,7 @@ ms.topic: article
 
 # Integration with other enterprise management products
 
-Many customers have one or more monitoring platforms, where one provides consolidated operational data across business infrastructure, data centers, complex networks, and IT domains in the enterprise. From this central monitoring platform, they correlate this data and forward to service management solution for incident recording and escalation, as well as to analyze and visualize the data presented through different types of dashboards. System Center - Operations Manager is included in that service operations framework to forward alert or alert and performance data, or is the primary monitoring platform that is extended to meet the business needs.  
+Many customers have one or more monitoring platforms, where one provides consolidated operational data across business infrastructure, data centers, complex networks, and IT domains in the enterprise. From this central monitoring platform, they correlate this data and forward to service management solution for incident recording and escalation, as well as to analyze and visualize the data presented through different types of dashboards. System Center - Operations Manager is included in that service operations framework to forward alert or alert and performance data, or is the primary monitoring platform extended to meet your business needs.  
 
 Interoperability between Operations Manager and other products is accomplished by a number of methods depending on the technical and business requirements.  The following are common methods to interface with Operations Manager:
 
