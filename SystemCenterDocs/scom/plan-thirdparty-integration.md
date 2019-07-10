@@ -40,6 +40,6 @@ If you are using a connector provided by the vendor, review their documentation 
 
 Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product. Or in other cases, between multiple management servers or specifying the Operations Manager management group name. Support for multiple, connected management groups are not supported, and each management group will need to install a separate instance of the connector for each management group. This includes integration between System Center Orchestrator, VMM, and Service Manager.
 
-When planning for service continuity, it is important to evaluate and determine the risks, impact, and recovery options for your Operations Manager deployment based on service levels defined in your SLAs and OLAs.
+When planning for service continuity, it is important to evaluate and determine the risks, impact, and recovery options for your Operations Manager deployment to support your service level targets.  
 
 If a management server is supporting integration (via a connector hosted directly on the management server or from another System Center product such as VMM, Orchestrator or Service Manager), you need to plan for this with manual or automatic recovery steps depending on the integration configuration and sequence of steps required to return to normal functionality.
