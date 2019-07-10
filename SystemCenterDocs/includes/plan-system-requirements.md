@@ -99,7 +99,7 @@ The following versions of Windows operating system are supported for the Microso
 
 ::: moniker range="sc-om-2016"
 
-Windows Server 2019, Windows Server 2016, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
+Windows Server 2019, Windows Server 2019 Server Core,  Windows Server 2016, Windows Server 2016 Server Core, Windows Server 2016 Nano Server, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 Service Pack 1, Windows Server 2008 Service Pack 2, Windows 10, Windows 8 Enterprise, Windows 8 Pro, Windows Embedded POSReady 2009, Windows 7, Windows Embedded Standard 7 Service Pack 1.
 
 ::: moniker-end
 
