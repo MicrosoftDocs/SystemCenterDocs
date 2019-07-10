@@ -5,7 +5,7 @@ description: This article is the landing page for the planning guide supporting 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/25/2018
+ms.date: 07/09/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -34,6 +34,10 @@ The strategies that are presented in this guide are appropriate for many common 
 - [Supported Versions of Linux and UNIX](plan-supported-crossplat-os.md)
 
     Provides the supported and required UNIX and Linux operating systems and package dependencies for Operations Manager.  
+
+- [Review the Cloud Monitoring guide](https://docs.microsoft.com/azure/architecture/cloud-adoption/operations/monitor/) 
+
+    Provides information to help you plan your cloud monitoring strategy, which includes monitoring platform considerations and recommendations, in order to  effectively monitor workloads transitioning to Azure.
 
 - [Planning a Management Group Design](plan-mgmt-group-design.md)
 

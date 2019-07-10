@@ -5,7 +5,7 @@ description: This article summarizes the common tasks to perform after installin
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 06/04/2018
+ms.date: 07/09/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -38,8 +38,9 @@ The following table gives a quick reference for where to perform common tasks an
 |Migrate the Operations Manager databases|If you need to upgrade your SQL Server or move to a server on new hardware, perform the steps described in the following articles to move the operational or data warehouse database<br>-  [How to move the Operational database](manage-move-opsdb.md)<br>-  [How to move the Reporting DW database](manage-move-omdwdb.md).|
 |Configure data retention of Operations Manager databases|To maintain data for a set period of time and maintain optimal performance, you can configure data retention in the Operations Manager and data warehouse database.  Perform the steps described in the following articles<br>-  [How to configure grooming for the Operational database](manage-omdb-grooming-settings.md)<br>-  [How to configure grooming for the Reporting DW database](manage-omdwdb-grooming-settings.md).| 
 |How and when to clear the cache|Understand how and when to clear the cache when troubleshooting console or agent issues by performing the steps described in<br>- [How and when to clear the cache](manage-clear-healthservice-cache.md)|
-|Configure communication from Operations Manager to SQL Server|If you need to move the Operations Manager databases to a different SQL Server, reconfigure the SQL Server instance, or implement SQL Always On, perform the steps described in [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md).
-|||
+|Configure communication from Operations Manager to SQL Server|If you need to move the Operations Manager databases to a different SQL Server, reconfigure the SQL Server instance, or implement SQL Always On, perform the steps described in [How to configure Operations Manager to communicate with SQL Server](manage-sqlserver-communication.md).|
+|Integrate with Azure Monitor|[Integration with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/om-agents) logs provides an analytics platform that compliments the Data Warehouse to deliver improved analytics, query performance across large data volumes, correlate log data from Azure resources, and longer retention of monitoring data.| 
+||
 
 ## Next steps
 
