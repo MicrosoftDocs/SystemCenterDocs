@@ -28,7 +28,7 @@ Operations Manager also integrates with [Azure Monitor](https://docs.microsoft.c
 
 ## When separated by a firewall
 
-The ports and communication between Operations Manager and the other management products depends on the method of integration used.  If you are using System Center - Orchestrator,   the Orchestrator runbook server connects to the Operations Manager management server over TCP port 5724.  This is a one-way directed communication.  
+The ports and communication between Operations Manager and the other management products depends on the method of integration used. If you are using System Center - Orchestrator, the Orchestrator runbook server connects to the Operations Manager management server over TCP port 5724.  It is a one-way directed communication.  
 
 ![Integration with Orchestrator](./media/plan-thirdparty-integration/om2016-integration-orchestrator.png)
 
@@ -38,8 +38,8 @@ If you are using a connector provided by the vendor, review their documentation 
 
 ## Design considerations
 
-Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product, or in other cases, between multiple management servers or specifying the Operations Manager management group name.  Support for multiple, connected management groups are not supported and each management group will need to install a separate instance of the connector for each management group.  This includes integration between System Center Orchestrator, VMM, and Service Manager.
+Integration between Operations Manager and other monitoring and management products is commonly configured between a single management server and the other management product, or in other cases, between multiple management servers or specifying the Operations Manager management group name.  Support for multiple, connected management groups are not supported and each management group will need to install a separate instance of the connector for each management group. This includes integration between System Center Orchestrator, VMM, and Service Manager.
 
 You will need to evaluate and determine the risks, impact, and recovery options as it relates to the monitoring service supporting ongoing service operations based on the service levels defined in your SLAs and OLAs when planning for service continuity in the event of an unplanned outage or planned maintenance event.
 
-If a management server is supporting integration (via a connector hosted directly on the management server or from another System Center product such as VMM, Orchestrator or Service Manager), this needs to be planned for with manual or automatic recovery steps depending on the integration configuration and sequence of steps required to return to normal functionality.
+If a management server is supporting integration (via a connector hosted directly on the management server or from another System Center product such as VMM, Orchestrator or Service Manager), you need to plan for this with manual or automatic recovery steps depending on the integration configuration and sequence of steps required to return to normal functionality.
