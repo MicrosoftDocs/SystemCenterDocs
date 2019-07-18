@@ -113,7 +113,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Requirement|Details|
 |-----------|-------|
 |Domain|The DPM server should be in a Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012|
-|Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. Without two-way trust, DPM can't protect computers in workgroups or untrusted domains. For more information, see [Back up and restore workloads in workgroups and untrusted domains]().|
+|Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. Without two-way trust, DPM can't protect computers in workgroups or untrusted domains. For more information, see [Back up and restore workloads in workgroups and untrusted domains](back-up-machines-in-workgroups-and-untrusted-domains.md).|
 |Network configuration|If you're protecting data over a wide area network (WAN), you'll need a minimum bandwidth of 512 kilobits per second (Kbps).<br/> DPM doesn't support disjointed namespaces.|
 
 ## Remote management
