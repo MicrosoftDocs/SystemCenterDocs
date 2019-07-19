@@ -34,7 +34,7 @@ This topic summarizes some of the common support information you might need when
 
 
 ### Sharing a library between different DPM versions isn't supported
-**Issue**: Different versions of DPM (for example DPM 2012 SP1 and DPM 2012 R2) can't function as clients sharing the same library.
+**Issue**: Different versions of DPM (for example, DPM 2012 R2 and DPM 2016) can't function as clients sharing the same library.
 
 **Workaround**: None. All DPM servers sharing a library must be running the same version of DPM.
 
@@ -51,7 +51,7 @@ This topic summarizes some of the common support information you might need when
 ### DPM 2010 and later versions can't run on a server running a 32-bit operating system
 **Issue**: Operating system limitation.
 
-**Workaround**: Install on 64-bit only. For a full list of system requirements, see [System Requirements for DPM in System Center 2012](https://technet.microsoft.com/library/hh757829.aspx).
+**Workaround**: Install on 64-bit only. For a full list of system requirements, see [Preparing your environment for System Center Data Protection Manager](prepare-environment-for-dpm.md).
 
 ### Underscore not supported in SQL Server name
 **Issue**: If you specify a remote SQL Server that has an underscore in the name during DPM installation, the installation might fail.
@@ -143,7 +143,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### Virtual tape library support
 **Issue**: Are virtual tape libraries supported?
 
-**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center 2012 DPM](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
+**Workaround**: Virtual tape libraries configured with a virtual fibre channel adapter are only supported if you're running Data Protection Manager 2012 R2 UR3 or later with certified hardware. For a current list of supported hardware see [Compatible Tape Libraries for System Center DPM 2012 and later ](https://go.microsoft.com/fwlink/?LinkID=389995). To check if your tape library is supported by the virtual fibre channel adapter, please contact your tape hardware vendor and ask them to [Verify tape library compatibility](~/dpm/identify-compatible-tape-libraries.md).
 
 ### USB or removable drives can't be used in the DPM storage pool
 **Issue**: USB and removable storage such as Firewire.
@@ -188,35 +188,25 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ## <a name="BKMK_ClientServer"></a>Client and server protection issues
 
-### Support parameters for protecting computers running client operating systems with DPM 2012
+### Support parameters for protecting computers running client operating systems with DPM
 **Issue**: The following protection scenarios are supported:
 
--   Windows 8.1 clients can be protected with DPM 2012 R2 or DPM 2012 with SP1.
+-   Windows 8.1 clients can be protected with DPM 2012 R2, DPM 2016.
 
--   Windows 8 clients can be protected with DPM 2012, DPM 2012 SP1, and DPM 2012 R2.
-
--   Windows 7 clients can be protected with DPM 2012, DPM 2012 SP1, and DPM 2012 R2.
-
--   Windows Vista with SP2 clients can be protected with DPM 2012, and DPM 2012 SP1.
-
--   Windows Vista or Windows Vista with SP1 clients can be protected with DPM 2012 only.
-
--   Windows XP SP2 clients can be protected with DPM 2012 only.
+-   Windows 7 clients can be protected with DPM 2012 R2, DPM 2016.
 
 **Workaround**: Ensure you're running the right version of DPM.
 
-### Support for protecting computers running server operating systems with DPM 2012
+### Support for protecting computers running server operating systems with DPM
 **Issue**: The following protection scenarios are supported:
 
--   Windows Server 2012 R2 can be protected with DPM 2012 R2 only.
+-   Windows Server 2012 R2 can be protected with DPM 2012 R2 and later.
 
--   Windows Server 2012 or 2012 with SP1 can be protected with DPM 2012 R2, and DPM 2012 SP1.
+-   Windows Server 2012 or 2012 with SP1 can be protected with DPM 2012 R2 and later.
 
--   Windows Server 2008 R2 with SP1, Windows Server 2008 R2 can be protected with DPM 2012, DPM 2012 SP1 and DPM 2012 R2.
+-   Windows Server 2008 R2 with SP1, Windows Server 2008 R2 can be protected with DPM 2012 R2 and DPM 2016.
 
--   Windows Server 2008 and Storage Server 2008 can be protected with DPM 2012 R2 running [Update Rollup 2](http://blogs.technet.com/b/dpm/archive/2014/06/11/details-on-protecting-windows-server-2003-computers-using-data-protection-manager-2012-r2.aspx) or later, DPM 2012 SP1, and DPM 2012.
-
--   Windows 2003 Server with SP2, Windows 2003 Server R2, Windows 2003 Server R2 with SP2 can be protected with DPM 2012 R2 running [Update Rollup 2](http://blogs.technet.com/b/dpm/archive/2014/06/11/details-on-protecting-windows-server-2003-computers-using-data-protection-manager-2012-r2.aspx) or later, DPM 2012 with SP1, And DPM 2012.
+-   Windows Server 2008 and Storage Server 2008 can be protected with DPM 2012 R2 running [Update Rollup 2](http://blogs.technet.com/b/dpm/archive/2014/06/11/details-on-protecting-windows-server-2003-computers-using-data-protection-manager-2012-r2.aspx) and DPM 2016.
 
 **Workaround**: Ensure you're running the right version of DPM.
 
@@ -230,7 +220,7 @@ You can enable deduplication for DPM storage when it runs in a Hyper-V virtual m
 
 ### File Server end user recovery (EUR) not available when using Modern Backup Storage (MBS)
 
-**Description**: If you use Modern Backup Storage (MBS) with DPM 2016, File Server end-user recovery is not available.
+**Description**: If you use Modern Backup Storage (MBS) with DPM 2016 or later, File Server end-user recovery is not available.
 
 **Workaround**: None. File Server EUR is not supported when using MBS.
 
@@ -344,7 +334,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ## <a name="BKMK_SQL"></a>SQL Server protection issues
 
 ### SQL Server 2014 support
-**Issue**: You can protect SQL Server 2014 and SQL Server 2012 with SP2 with DPM 2012 R2 with [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078).
+**Issue**: You can protect SQL Server 2014 with DPM 2012 R2 [Update rollup 4](https://go.microsoft.com/fwlink/?LinkId=518078).
 
 **Workaround**: Run the correct DPM version.
 
@@ -366,7 +356,7 @@ These workloads can be running on a single server or in a cluster configuration.
 ## <a name="BKMK_VM"></a>Hyper-V and virtual machine protection issues
 
 ### Linux virtual machines backed up with file-consistent snapshots only
-**Issue**: You can backup Linux virtual machines using DPM 2012 R2. Only file-consistent snapshots are supported.
+**Issue**: You can backup Linux virtual machines using DPM 2012 R2 or later. Only file-consistent snapshots are supported.
 
 **Workaround**: None.
 
