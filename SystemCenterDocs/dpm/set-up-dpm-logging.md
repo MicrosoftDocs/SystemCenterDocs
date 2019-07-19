@@ -20,7 +20,7 @@ System Center Data Protection Manager (DPM) logs activity in log files (\*.errlo
 
 -   **DPM activity information**: Logged on the DPM server at %ProgramFiles%\Microsoft System Center\DPM\DPM\Temp.
 
--   **Protected client activity**: Logged on the client computer at %ProgramFiles%\Microsoft Data Protection Manager\DPM\Temp Logs. Client-initiated activities such as self-service recovery are logged on the client computer based on the user (%USERPROFILE%\AppData\Roaming\Microsoft\System Center Data Protection Manager\).
+-   **Protected client activity**: Logged on the client computer at %ProgramFiles%\Microsoft Data Protection Manager\DPM\Temp Logs. Client-initiated activities such as self-service recovery are logged on the client computer based on the user (%USERPROFILE%\AppData\Roaming\Microsoft\System Center Data Protection Manager\\).
 
 You can  tweak log file settings as follows:
 
