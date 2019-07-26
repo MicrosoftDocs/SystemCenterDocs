@@ -70,7 +70,7 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 
 ## Execute 64-bit PowerShell cmdlets with Run .NET Script activity
 
-You can run 64-bit Windows PowerShell in Orchestrator Run.Net Script activity. Use the following steps:
+You can run 64-bit Windows PowerShell in Orchestrator *Run.Net Script* activity. Use the following steps:
 
 1.	Create a Run .Net Script activity from the **System activities group**.
 2.	In **Details** > **Type**, select  **PowerShell** as the language.
@@ -85,7 +85,7 @@ You can run 64-bit Windows PowerShell in Orchestrator Run.Net Script activity. U
 
     ![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script.png)
 
-5. To verify the PowerShell version, use the    following  script in .Net Script activity and publish the 64 bit and PowerShell version variable.
+5. To verify the PowerShell version, use the following  script in *Run .Net Script* activity and publish the 64 bit and PowerShell version variable.
 
     ```
 
