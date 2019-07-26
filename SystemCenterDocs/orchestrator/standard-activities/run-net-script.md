@@ -83,7 +83,7 @@ You can run 64-bit Windows PowerShell in Orchestrator Run.Net Script activity. U
 
 4.	Click **Finish**.
 
-    ![.Net Script Activitiy](../standard-activities/media/run-net-script-activity/run-net-script.png)
+    ![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script.png)
 
 5. To verify the PowerShell version, use the    following  script in .Net Script activity and publish the 64 bit and PowerShell version variable.
 
@@ -100,4 +100,4 @@ You can run 64-bit Windows PowerShell in Orchestrator Run.Net Script activity. U
     )
     ```
 
-    ![.Net Script Activitiy](../standard-activities/media/run-net-script-activity/Run-net-script-ps-version.png)
+    ![.Net Script Activity](../standard-activities/media/run-net-script-activity/Run-net-script-ps-version.png)
