@@ -1,17 +1,13 @@
 ---
 title: "Run .Net Script | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/13/2016"
+ms.date: "07/25/2019"
 ms.prod: system-center
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: orchestrator
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-applies_to:
-  - "System Center 2012 SP1 - Orchestrator"
-  - "System Center 2012 - Orchestrator"
-  - "System Center 2012 R2 Orchestrator"
 ms.assetid: ad8a97f1-9c63-4824-890d-02af0021115b
 caps.latest.revision: 29
 author: "bwren"
@@ -19,7 +15,7 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Run .Net Script
-The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Windows PowerShell. This activity is compatible with .NET CLR version 2.0 and later. Use the Run .Net Script activity to run scripts that parse data or run functions against available APIs.  
+The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Windows PowerShell. This activity is compatible with .NET CLR version 2.0 and later. Use the Microsoft System Center - Orchestrator Run .Net Script activity to run scripts that parse data or run functions against available APIs.  
 
 ## Configuring the Run .Net Script Activity  
  Before you configure the Run .Net Script activity, you need to determine the following:  
@@ -71,3 +67,39 @@ The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Wi
 |References|The Assemblies used in the activity.|  
 |Script Body|The script that was run.|  
 |Script Language|The language that was selected for the script.|
+
+## Execute 64-bit PowerShell cmdlets with Run .NET Script activity
+
+You can run 64-bit Windows PowerShell in Orchestrator *Run.Net Script* activity. Use the following steps:
+
+1.	Create a Run .Net Script activity from the **System activities group**.
+2.	In **Details** > **Type**, select  **PowerShell** as the language.
+3.	In  **Script**, enclose your PowerShell commands in the following code:  
+
+    ```
+    Invoke-Command -ScriptBlock {YOUR CODE} -ComputerName localhost
+
+    ```
+
+4.	Click **Finish**.
+
+    ![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script.png)
+
+>[!NOTE]
+>
+>To verify the PowerShell version, use the following script in *Run .Net Script* activity and publish the 64 bit and PowerShell version variable.
+
+```
+
+$Result = Invoke-Command -ComputerName localhost {
+$Is64BitProcess = [Environment]::Is64BitProcess
+$PSVersion = $PSVersionTable.PSVersion
+RETURN $Is64BitProcess, $PSVersion
+}
+
+$64bit = $Result[0]
+$PSVersion = $Result[1]
+)
+```
+
+![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
