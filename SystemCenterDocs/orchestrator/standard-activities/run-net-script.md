@@ -15,7 +15,7 @@ ms.author: "bwren"
 manager: "cfreeman"
 ---
 # Run .Net Script
-The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Windows PowerShell. This activity is compatible with .NET CLR version 2.0 and later. Use the Run .Net Script activity to run scripts that parse data or run functions against available APIs.  
+The Run .Net Script activity runs scripts written in VB.NET, JScript, C#, and Windows PowerShell. This activity is compatible with .NET CLR version 2.0 and later. Use the Microsoft System Center - Orchestrator Run .Net Script activity to run scripts that parse data or run functions against available APIs.  
 
 ## Configuring the Run .Net Script Activity  
  Before you configure the Run .Net Script activity, you need to determine the following:  
@@ -102,4 +102,4 @@ $PSVersion = $Result[1]
 )
 ```
 
-![.Net Script Activity](../standard-activities/media/run-net-script-activity/Run-net-script-ps-version.png)
+![.Net Script Activity](../standard-activities/media/run-net-script-activity/run-net-script-ps-version.png)
