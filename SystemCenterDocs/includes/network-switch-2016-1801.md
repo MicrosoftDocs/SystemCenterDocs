@@ -108,7 +108,7 @@ If a host in the VMM fabric has a standard virtual switch, you can convert it to
 4. The **Jobs** dialog box might appear, depending on your settings. Make sure that the job has a status of **Completed**, and then close the dialog box.
 5. To verify that the switch was converted, right-click the host, click **Properties**, and then click the **Virtual Switches** tab.
 
-#### Script for SET switch conversion
+#### <a name="script-for-set-switch-conversion"></a> Script for SET switch conversion
 
 > [!NOTE]
 > Create a logical switch in VMM with the same name as the SET switch that is deployed on the host.
