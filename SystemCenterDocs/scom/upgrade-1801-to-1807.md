@@ -5,7 +5,7 @@ description: This article describes how to perform an upgrade from System Center
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/24/2018
+ms.date: 08/12/2019
 ms.custom: na
 ms.prod: system-center
 monikerRange: 'sc-om-1807'
