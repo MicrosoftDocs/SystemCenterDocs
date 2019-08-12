@@ -123,11 +123,11 @@ Apply the appropriate MSP files on each computer.
 
     1.   Execute the following script on the SQL Server instance hosting the OperationsManagerDB database:
 
-    `Update_rollup_mom_db.sql`
+        `Update_rollup_mom_db.sql`
 
     2. Execute the following script on the SQL Server instance hosting the DataWarehouse database:
 
-    `UR_Datawarehouse.sql`
+        `UR_Datawarehouse.sql`
 
 
 
