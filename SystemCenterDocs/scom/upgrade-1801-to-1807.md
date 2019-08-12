@@ -121,16 +121,13 @@ Apply the appropriate MSP files on each computer.
 
 2. Execute the following SQL database SQL scripts located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
 
-    1.   Execute the following script on the SQL Server instance hosting the OperationsManagerDB database:
+    1.  Execute the following script on the SQL Server instance hosting  the OperationsManagerDB database:
 
-        `Update_rollup_mom_db.sql`
+    `Update_rollup_mom_db.sql`
 
     2. Execute the following script on the SQL Server instance hosting the DataWarehouse database:
 
-        `UR_Datawarehouse.sql`
-
-
-
+    `UR_Datawarehouse.sql`
 
 3. Import the following management packs:
 
