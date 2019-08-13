@@ -1,11 +1,11 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: How to upgrade to Operations Manager version 1807
 description: This article describes how to perform an upgrade from System Center Operations Manager version 1801 to 1807.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/24/2018
+ms.date: 08/12/2019
 ms.custom: na
 ms.prod: system-center
 monikerRange: 'sc-om-1807'
@@ -119,12 +119,15 @@ Apply the appropriate MSP files on each computer.
     >Windows Installer patch (.MSP file) files are included in the update package. Apply all patch packages that relate to a specific computer. For example, if the Web console and Operations console role is installed on a management server, apply the .MSP files on the management server. Apply one patch package to a server for each specific feature that is installed on the server.
     >
 
-2. Execute the following SQL database SQL scripts on the SQL Server instance hosting the OperationsManagerDB database:
+2. Execute the following SQL database SQL scripts located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
 
-    `Update_rollup_mom_db.sql`
+    -  Execute the following script on the SQL Server instance hosting  the OperationsManagerDB database:
 
-    >[!NOTE]
-    >This script is located in the following location: `%SystemDrive%\Program Files\Microsoft System Center\Operations Manager\Server\SQL Script for Update Rollups`
+        `Update_rollup_mom_db.sql`
+
+    - Execute the following script on the SQL Server instance hosting the DataWarehouse database:
+
+        `UR_Datawarehouse.sql`
 
 3. Import the following management packs:
 
