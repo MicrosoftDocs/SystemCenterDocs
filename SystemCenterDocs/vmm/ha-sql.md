@@ -5,7 +5,7 @@ description: This article explains how to set up SQL Server as highly available 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 21/08/2019
+ms.date: 08/21/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
