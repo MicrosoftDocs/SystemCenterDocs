@@ -5,7 +5,7 @@ description: This article explains how to set up SQL Server as highly available 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 21/08/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -54,3 +54,7 @@ To check that Always On is working as expected for the VMM database, run a failo
 1. Now move it back by initiating a failover to the secondary node computer that is running SQL Server, and verify that you can restart the VMM service (scvmmservice).
 1. Repeat the last two steps for every secondary node in the cluster that is running SQL Server.
 1. If this is a high availability VMM setup, continue to install other high availability VMM nodes.
+
+>[!NOTE]
+>
+> If you are experiencing high latency or timeout errors in a multi-subnet scenario, change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager> Server\Settings\Sql\ConnectionString*, add MultiSubnetFailover=True; and restart the VMM service.
