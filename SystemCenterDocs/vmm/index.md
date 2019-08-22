@@ -34,7 +34,7 @@ Virtual Machine Manager (VMM) provides a unified management experience across on
         </a>
     </li>
     <li>
-        <a href="/system-center/vmm/upgrade">
+        <a href="/system-center/vmm/install">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
