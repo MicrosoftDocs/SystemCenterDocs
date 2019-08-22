@@ -57,4 +57,4 @@ To check that Always On is working as expected for the VMM database, run a failo
 
 >[!NOTE]
 >
-> If you are experiencing high latency or timeout errors in a multi-subnet scenario, change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager> Server\Settings\Sql\ConnectionString*, add MultiSubnetFailover=True; and restart the VMM service.
+> If you are experiencing high latency or timeout errors in a multi-subnet scenario, change VMM connection string in the path *HKLM\SOFTWARE\Microsoft\Microsoft System Center Virtual Machine Manager Server\Settings\Sql\ConnectionString*, add MultiSubnetFailover=True; and restart the VMM service.
