@@ -13,11 +13,11 @@ ms.assetid: 4f8701a5-8d55-4ffd-afee-e6341ec6b7f4
 
 # Upgrade to System Center 2016
 
-If you are already running System Center 2012 R2 you can upgrade your environment to System Center 2016 by following the procedures and guidance in this article. Microsoft only supports upgrading from System Center 2012 R2 from one of the supported update rollup installations listed in the supported upgrade paths sections.
+If you're already running System Center 2012 R2, you can upgrade your environment to System Center 2016 by following the procedures and guidance in this article. Microsoft only supports upgrading from System Center 2012 R2 from one of the supported update rollup installations listed in the supported upgrade paths sections.
 
 
 > [!IMPORTANT]
-> Make sure you are upgrading to a supported platform by reviewing the System Requirements topic for each technology area.
+> Make sure you're upgrading to a supported platform by reviewing the System Requirements topic for each technology area.
 
 ## Supported upgrade paths
 Microsoft supports the following upgrade paths.
@@ -34,7 +34,7 @@ Microsoft supports the following upgrade paths.
 
 ## Upgrade sequence
 
-If you are upgrading an installation of System Center 2012 R2 that includes multiple components, it is important that you upgrade the components in the following order.
+If you're upgrading an installation of System Center 2012 R2 that includes multiple components, it's important that you upgrade the components in the following order.
 
 1. Service Management Automation
 2. Orchestrator
@@ -50,11 +50,11 @@ The following sections provide detailed considerations for each component.
 
 ## DPM Upgrade
 
-You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, please read the [Installation prerequisites](/system-center/dpm/install-dpm).
+You can install DPM 2016 on Windows Server 2012 R2 with Update Rollup 10, or on Windows Server 2016. However, before you upgrade or install DPM 2016, read the [Installation prerequisites](/system-center/dpm/install-dpm).
 
 
 ### Upgrade path for DPM 2016
-If you are going to upgrade from a previous version of DPM to DPM 2016, make sure your installation has the necessary updates:
+If you're going to upgrade from a previous version of DPM to DPM 2016, make sure your installation has the necessary updates:
 
 - Upgrade DPM 2012 R2 to DPM 2012 R2 Update Rollup 10. You can obtain the Update Rollups from Windows Update.
 - Upgrade DPM 2012 R2 Update Rollup 10 to DPM 2016.
@@ -67,10 +67,10 @@ For complete instructions, see the article, [Upgrade to DPM 2016](/system-center
 
 ## Operations Manager Upgrade
 [!NOTE]
-If your Operations Manager 2012 R2 management group is integrated with Microsoft Operations Management Suite (OMS), its configuration will be retained and continue to function normally after the upgrade is complete.  
+If your Operations Manager 2012 R2 management group is integrated with Microsoft Operations Management Suite (OMS), its configuration will be kept and continue to function normally after the upgrade is complete.  
 
 > [!WARNING]
-> If you are upgrading two or more System Center components, you must follow the procedures that are documented in Upgrade Sequencing for System Center 2012 R2.
+> If you're upgrading two or more System Center components, you must follow the procedures that are documented in Upgrade Sequencing for System Center 2012 R2.
 >  
 > The order in which you perform component upgrades is important. Failure to follow the correct upgrade sequence might result in component failure for which no recovery options exist. The affected System Center components are:
   > 1. Configuration Manager
@@ -83,11 +83,11 @@ Before you upgrade to System Center 2016 - Operations Manager, you must first de
 
 There are several options for upgrade:
 
-1. If you run upgrade on a single-server management group, you only need to run upgrade one time since all features are installed on a single server. The Operations Manager Upgrade wizard performs system prerequisite checks and provides resolution steps for any issues. Installation will not continue until you resolve all issues.
+1. If you run upgrade on a single-server management group, you only need to run upgrade one time since all features are installed on a single server. The Operations Manager Upgrade wizard checks system prerequisites and provides resolution steps for any issues. Installation  won't continue until you resolve all issues.
 
-2. If you are upgrading a distributed management group, you must upgrade certain features before others. For example, you upgrade the management servers first, followed by the gateways, operations consoles, and then agents. Next, you can upgrade any remaining features, such as the web console, reporting and Audit Collection Services (ACS). You must also perform a number of pre-upgrade and post-upgrade tasks.
+2. If you're upgrading a distributed management group, you must upgrade certain features before others. For example, you upgrade the management servers first, followed by the gateways, operations consoles, and then agents. Next, you can upgrade any remaining features, such as the web console, reporting and Audit Collection Services (ACS). You must also do a number of pre-upgrade and post-upgrade tasks.
 
-3. If you want to maintain your Operations Manager 2012 R2 environment you can install System Center 2016 - Operations Manager in parallel and upgrade your agents and multi-home between both management groups.
+3. If you want to maintain your Operations Manager 2012 R2 environment, you can install System Center 2016 - Operations Manager in parallel and upgrade your agents and multi-home between both management groups.
 
 #### High Level Overview of System Center 2016 Operations Manager Upgrade Steps for a Distributed Management Group
 
@@ -151,26 +151,26 @@ Upgrade:
 
 - For Service Manager data warehouse database restoration, the Reporting database also needs to be restored after you install the data warehouse.
 - Use the published information for the order of System Center components as well as Service Manager components.
-- Do not mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
-- When upgrading from Service Manager 2012 R2 to Service Manager 2016, you should not enable or disable the Active Directory group expansion for any of the Active Directory connectors.
+- Don't mix Service Manager 2016 and Service Manager 2012 R2 with different Service Manager components - all should use the same version. For example, both the Self Service portal and the Service Manager management server  should use the same version.
+- When upgrading from Service Manager 2012 R2 to Service Manager 2016, you shouldn't enable or disable the Active Directory group expansion for any of the Active Directory connectors.
 
-    In other words, if it is off, let it remain off and if it is on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
+    In other words, if it's off, let it remain off and if it's on, let it remain on until the connector runs for the first time. See the screenshot below. This applies only to the first time that the Active Directory connector runs after you upgrade. You can change your preferences for Active Directory group expansion workflow after the first time that the Active Directory connector sync completes.
 
     ![Active Directory Connector wizard](/system-center/scsm/media/upgrade-environment/sm-adconnector01.png)
 
 ### Upgrade steps for custom development
-With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by 3rd party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
+With the System Center 2016 - Service Manager release, the product has moved to support .Net 4.5.1. The tool set to support this movement to .Net 4.5.1 required to break a few dependencies and has led to the movement of classes across the assemblies. Hence, the upgrade to Service Manager 2016 may break the custom solutions made in house or by third party (non-Microsoft). Please refer the [steps to upgrade your custom solutions](https://blogs.technet.microsoft.com/servicemanager/2016/08/03/scsm-2016-upgrade-steps-for-custom-development/), to avoid getting into this problem.
 
 ### Upgrade steps for Service Manager Self Service Portal
 #### Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 Silverlight-based Self Service portal
-Use the following steps to upgrade your Self Service portal and Service Manager management servers when they are **installed on different computers**.
+Use the following steps to upgrade your Self Service portal and Service Manager management servers when they're **installed on different computers**.
 
 On the Service Manager 2012 R2 Silverlight Self Service Portal:
 1. Uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
 2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](/system-center/scsm/deploy-self-service-portal)
 
 #### Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 HTML5-based Self Service portal
-Use the following step to upgrade your Self Service portal and Service Manger management servers when they are **installed on different computers**.
+Use the following step to upgrade your Self Service portal and Service Manager management servers when they're **installed on different computers**.
 
 1. Upgrade the Self Service portal directly from Service Manager 2012 R2 to Service Manager 2016.
 
@@ -181,7 +181,7 @@ Use the following step to upgrade your Self Service portal and Service Manger ma
 4.  Install the Service Manager 2016 version of the Self Service Portal (HTML5) on same computer as the secondary management server.
 
 #### Upgrading the Silverlight-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager **primary** management server
-Installing the Self Service portal on the same computer as the primary management server is not recommended. However, in the event that you are using this combination, then use the following steps to upgrade to Service Manager 2016. Enabling the upgrade is the first step to move the primary Management Server to a Secondary management server by using the following steps
+Installing the Self Service portal on the same computer as the primary management server isn't recommended. However, in the event that you're using this combination, then use the following steps to upgrade to Service Manager 2016. Enabling the upgrade is the first step to move the primary Management Server to a Secondary management server by using the following steps
 
 1.	Add new the Service Manager 2012 R2 secondary management server to a management group.
 2.	Promote the secondary management server to a primary management server role, which will move the current primary management server to a secondary role.
@@ -189,15 +189,15 @@ Installing the Self Service portal on the same computer as the primary managemen
 
 
 #### Upgrading the HTML5-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager **secondary** management server
-1.	**Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state**
+1.	**Don't uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state**
 2.	Download and install the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214) (installation instructions are available on the same link)
 3.	Upgrade both primary and secondary Management Servers from Service Manager 2012 R2 to Service Manager 2016.
 4.	Self Service Portal will also get upgraded along with the secondary management server.
 
 #### Upgrading the HTML5-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager **primary** management server
-*Installing the Self Service portal on the same computer as the primary management server is not recommended.* However, in the event that you are using this combination, then use the following steps to upgrade to Service Manager 2016.
+*Installing the Self Service portal on the same computer as the primary management server isn't recommended.* However, in the event that you're using this combination, then use the following steps to upgrade to Service Manager 2016.
 
-1.	**Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state **
+1.	**Don't uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state **
 2.	Download and install the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214) (installation instructions are available on the same link)
 3.	Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
 4.	Self Service Portal will also get upgraded along with the primary management server.
@@ -219,14 +219,14 @@ You will follow  the same general steps for upgrading to System Center 2016 from
 3. Install any other software required by the component (see list below).
 4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
-- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](/system-center/vmm/system-reqs#sql-server) for the list of supported versions of SQL Server.
+- For all upgrades to VMM 2016, you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](/system-center/vmm/system-reqs#sql-server) for the list of supported versions of SQL Server.
 - You can upgrade both host and guest VMM agents from the VMM console.
 
 #### Upgrading a highly available VMM environment.
 
-The following procedures describe the steps to take if you are upgrading a  VMM management server deployed on a highly available cluster.
+The following procedures describe the steps to take if you're upgrading a  VMM management server deployed on a highly available cluster.
 
-1.	Backup and retain the VMM database
+1.	Backup and keep the VMM database
 2.	Uninstall VMM 2012 R2 from the highly available passive node.
 3.	Upgrade to Windows Server 2016 and to a supported version of SQL Server on the passive node.
 4.	Upgrade to the Windows 10 version of the ADK.
