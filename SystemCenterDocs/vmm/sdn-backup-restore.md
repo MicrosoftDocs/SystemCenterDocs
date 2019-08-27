@@ -21,7 +21,7 @@ To back up and restore an SDN, you must back up and restore the network controll
 
 ## Back up the network controller
 
-Back up the network controller database by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#a-namebkmkbackupabackup-the-sdn-infrastructure).
+Back up the network controller database by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
 
 ## Bring up the new network controller
 
@@ -44,7 +44,7 @@ Use the following procedures to bring up a new network controller:
 
 ## Restore the network controller from a backup
 
-Restore the network controller from a network controller backup by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#a-namebkmkrestorearestore-the-sdn-infrastructure-from-a-backup).
+Restore the network controller from a network controller backup by using the network controller Rest API. [Learn more](https://docs.microsoft.com/windows-server/networking/sdn/manage/update-backup-restore#restore-the-sdn-infrastructure-from-a-backup).
 
 ## Refresh the network controller and synchronize VMM and NC
 Depending on the SDN state captured in the network controller backup and the current VMM state, some of the resources in VMM and network controller might be out of sync.
