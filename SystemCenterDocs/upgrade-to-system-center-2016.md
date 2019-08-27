@@ -143,8 +143,8 @@ Upgrade:
 
 1. If SMA servers are being monitored by Operations Manager, put them in maintenance mode to prevent false alerts.
 2. Uninstall the SMA web service and SMA runbook workers using the instructions at <a href="https://technet.microsoft.com/en-us/library/dn469636(v=sc.12).aspx">How to uninstall Service Management Automation</a> for details.
-3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](/system-center/sma/deploy.md#to-setup-the-sma-runbook-worker).
-4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](/system-center/sma/deploy.md#to-install-the-service-automation-web-service).
+3. Install the SMA runbook workers using the instructions at [How to install the Service Management Automation runbook worker](/system-center/sma/deploy#to-setup-the-sma-runbook-worker).
+4. Install the SMA web service using the instructions at [How to install the Service Management Automation web service](/system-center/sma/deploy#to-install-the-service-automation-web-service).
 5. Remove SMA servers from maintenance mode.
 
 ## SM Upgrade
@@ -167,7 +167,7 @@ Use the following steps to upgrade your Self Service portal and Service Manager 
 
 On the Service Manager 2012 R2 Silverlight Self Service Portal:
 1. Uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
-2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](/system-center/scsm/deploy-self-service-portal.md)
+2. Install the new HTML5-based Self Service Portal, using the information at [Deploy the Self-Service Portal for Service Manager](/system-center/scsm/deploy-self-service-portal)
 
 #### Upgrading the Self Service Portal from a standalone installation of the Service Manager 2012 R2 HTML5-based Self Service portal
 Use the following step to upgrade your Self Service portal and Service Manger management servers when they are **installed on different computers**.
@@ -219,7 +219,7 @@ You will follow  the same general steps for upgrading to System Center 2016 from
 3. Install any other software required by the component (see list below).
 4. Install the new version of the component with the "Upgrade database" option if appropriate.
 
-- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](/system-center/vmm/system-reqs.md#sql-server) for the list of supported versions of SQL Server.
+- For all upgrades to VMM 2016 you can either continue with the current version of SQL Server, or, you can upgrade to the supported version of SQL Server. Review [SQL Server Requirements](/system-center/vmm/system-reqs#sql-server) for the list of supported versions of SQL Server.
 - You can upgrade both host and guest VMM agents from the VMM console.
 
 #### Upgrading a highly available VMM environment.
