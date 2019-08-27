@@ -42,7 +42,7 @@ If the published data is text data you can use any of the following to set the c
 > [!NOTE]  
 > Text values are not case\-sensitive.
 
-You can also set criteria using [regular expressions](https://technet.microsoft.com/en-us/system-center-docs/orch/manage/regular-expressions) to perform pattern matching.
+You can also set criteria using regular expressions to perform pattern matching.
 
 If the published data is numerical you can use any of the following to set the criteria for execution, inclusion or exclusion.
 
