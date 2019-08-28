@@ -47,8 +47,8 @@ Audit Trail files are stored in comma\-separated value file \(.csv\) format. The
 
 |Computer|Location|  
 |------------|------------|  
-|Management Server|*System Drive*:\\ProgramData\\Microsoft System Center \<version\>\\Orchestrator\\Audit\\ManagementService|  
-|Runbook Server|*System Drive*:\\ProgramData\\Microsoft System Center \<version\> \\Orchestrator\\Audit\\RunbookService|  
+|Management Server|*System Drive*:\\ProgramData\\Microsoft System Center 2012\\Orchestrator\\Audit\\ManagementService|  
+|Runbook Server|*System Drive*:\\ProgramData\\Microsoft System Center 2012 \\Orchestrator\\Audit\\RunbookService|  
 
 **Log Type:**  Activity Runtime Information  
 
@@ -66,7 +66,7 @@ Audit Trail files are stored in comma\-separated value file \(.csv\) format. The
 
 |Computer|Location|  
 |------------|------------|  
-|Runbook Server|*System Drive*:\\ProgramData\\Microsoft System Center \<version\> \\Orchestrator\\Audit\\PolicyModule|  
+|Runbook Server|*System Drive*:\\ProgramData\\Microsoft System Center 2012 \\Orchestrator\\Audit\\PolicyModule|  
 
 When a file reaches 200 megabytes \(MB\) in size, a new file is created. The time stamp is included in the file name to ensure that each file name is unique. Passwords and other encrypted text fields are represented by five asterisks \(\*\*\*\*\*\) in the Audit Trail files.  
 
