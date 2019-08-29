@@ -44,7 +44,7 @@ The following software must be installed on each Runbook Server and Runbook Desi
 
 ## Registering and Deploying the Integration Pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Install an Integration Pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to Runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How To Add an Integration Pack](how-to-add-an-integration-pack.md).
 
 ## Preparing to connect to the HP Service Manager Server
 

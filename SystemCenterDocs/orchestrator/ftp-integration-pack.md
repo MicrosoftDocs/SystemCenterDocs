@@ -36,7 +36,7 @@ The Integration Pack for FTP requires the following software to be installed and
 
 ## Register and deploy the integration pack
 
-After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to install an integration pack](https://technet.microsoft.com/system-center-docs/orch/manage/how-to-add-an-integration-pack).
+After you download the integration pack file, you must register it with the Orchestrator management server and then deploy it to runbook servers and Runbook Designers. For the procedures on installing integration packs, see [How to add an integration pack](how-to-add-an-integration-pack.md).
 
 ## Configuring the FTP connections
 
