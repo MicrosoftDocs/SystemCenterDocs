@@ -18,11 +18,11 @@ Businesses using System Center – Operations Manager in multiple management gro
 
 ## Steps to monitor from a second management group
 
-- Install an agent on management servers in management group A from management group B. If you install the agent manually, configure the agent to report to a management server in management group B.
-- Disable Active Directory integration for the agent you install on the management server in management group A.
-- To upgrade the management server in management group A, you must remove the management group B agent first.
-- After the agent is installed, ensure that you do not configure the agent to also report to management group A ("multihome" the agent).
-- Ensure that the Run As accounts for the Default Action Account and Privileged Monitoring Account profiles for the management server in management group B are using credentials that can remotely authenticate and that have sufficient permissions on the management servers in management group A.
+1. Install an agent on management servers in management group A from management group B. If you install the agent manually, configure the agent to report to a management server in management group B.
+1. Disable Active Directory integration for the agent you install on the management server in management group A.
+1. To upgrade the management server in management group A, you must remove the management group B agent first.
+1. After the agent is installed, ensure that you do not configure the agent to also report to management group A ("multihome" the agent).
+1. Ensure that the Run As accounts for the Default Action Account and Privileged Monitoring Account profiles for the management server in management group B are using credentials that can remotely authenticate and that have sufficient permissions on the management servers in management group A.
 
 ## Next steps
 
