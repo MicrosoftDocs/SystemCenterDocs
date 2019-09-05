@@ -16,7 +16,7 @@ ms.topic: article
 
 Businesses using System Center – Operations Manager in multiple management groups might monitor one management group from another management group. This topic provides the steps for monitoring one management group (management group A) from a second management group (management group B).
 
-## Steps to monitor from second management group
+## Steps to monitor from a second management group
 
 - Install an agent on management servers in management group A from management group B. If you install the agent manually, configure the agent to report to a management server in management group B.
 - Disable Active Directory integration for the agent you install on the management server in management group A.
