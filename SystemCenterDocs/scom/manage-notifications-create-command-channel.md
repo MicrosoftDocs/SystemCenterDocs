@@ -4,7 +4,7 @@ description: This article describes how to create a command notification channel
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/29/2019
+ms.date: 09/06/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -23,9 +23,6 @@ To create a command notification channel, you need the following information:
 -   Command line parameters.  
 
 -   The startup folder for the command, which is the path of the program you want to run.  
-
-> [!IMPORTANT]  
-> Unlike the other notification channels, the command notification channel will run its command by using Local System, rather than the Notification Action Account.  
 
 ## To enable a command notification  
 
