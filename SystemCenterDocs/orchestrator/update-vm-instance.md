@@ -50,4 +50,4 @@ There are no optional properties for this activity.
 
 ## Other Resources
 
-[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

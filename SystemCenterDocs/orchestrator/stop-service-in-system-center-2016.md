@@ -31,11 +31,11 @@ There are no optional properties for this activity.
 
 ## Stop Service Published Data
 
-There is no published data for this activity. 
+There is no published data for this activity.
 
 ## See Also
 
 
 #### Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
+[Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

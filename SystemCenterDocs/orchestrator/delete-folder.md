@@ -50,4 +50,4 @@ The following tables list the required properties and published data for this ac
 
 ## See Also
 
-[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
