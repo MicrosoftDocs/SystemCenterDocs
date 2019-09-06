@@ -43,4 +43,4 @@ The activity publishes all of the data from the required and optional properties
 
 ## See Also
 
-[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
