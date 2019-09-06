@@ -17,7 +17,7 @@ robots: noindex
 ---
 # Delete List Item
 
-The **Delete List Item** activity is used in a runbook to delete an item from a Microsoft SharePoint list. 
+The **Delete List Item** activity is used in a runbook to delete an item from a Microsoft SharePoint list.
 The following tables list the required properties and published data for this activity.
 
 ## Delete List Item Required Properties
@@ -41,4 +41,4 @@ There are no optional properties for this runbook activity.
 
 ## See Also
 
-[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
