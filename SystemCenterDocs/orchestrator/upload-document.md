@@ -51,4 +51,4 @@ The following tables list the optional and required properties and Published Dat
 
 ## Other Resources
 
-[Using Runbooks in System Center - Orchestrator](https://technet.microsoft.com/library/hh403791.aspx)
+[Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
