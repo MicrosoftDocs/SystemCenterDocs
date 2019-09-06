@@ -243,5 +243,4 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 ## Other Resources
 
-[Using Runbooks in System Center 2016 - Orchestrator](https://technet.microsoft.com/en-us/library/hh403791.aspx)
-
+[Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)
