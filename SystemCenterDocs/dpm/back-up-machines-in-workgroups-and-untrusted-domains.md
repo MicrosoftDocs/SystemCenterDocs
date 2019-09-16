@@ -25,7 +25,7 @@ System Center Data Protection Manager (DPM) can protect computers that are in un
 4.  **Attach the computer**-Lastly you'll need to attach the protected computer to the DPM server.
 
 ## Before you start
-Before you started check the supported protection scenarios and required network settings.
+Before you start, check the supported protection scenarios and required network settings.
 
 ### Supported scenarios
 
