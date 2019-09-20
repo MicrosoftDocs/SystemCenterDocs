@@ -119,7 +119,7 @@ You will have to provide credentials for the accounts in the following table dur
 
  When you are creating connectors, you are asked for credentials that the connector will use to perform its function. The following outlines the permissions that this account will need, and it describes best practices for high security.  
 
- Connector accounts for SCOM, Orchestrator, SCVMM, AD require **Log on as a service**
+ Connector accounts for Operations Manager, Orchestrator, SCVMM, AD require **Log on as a service**
 
  To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment** .
 
