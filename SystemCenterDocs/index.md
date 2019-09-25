@@ -924,8 +924,8 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <p><a href="https://support.microsoft.com/help/4514877/update-rollup-8-for-system-center-2016-operations-manager">Operations Manager</a></p>
                                                     <p><a href="https://support.microsoft.com/help/4518887/update-rollup-8-for-system-center-2016-orchestrator">Orchestrator</a></p>
                                                     <p><a href="https://support.microsoft.com/help/4516987/update-rollup-8-for-system-center-2016-service-manager">Service Manager</a></p>
-                                                    <p><a href="">Virtual Machine Manager</a></p>
-                                                    </div>https://support.microsoft.com/help/4518885/update-rollup-8-for-system-center-2016-virtual-machine-manager
+                                                    <p><a href="https://support.microsoft.com/help/4518885/update-rollup-8-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
+                                                    </div>
                                             </div>
                                       </div>
                                 </div>
