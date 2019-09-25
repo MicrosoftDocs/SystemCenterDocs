@@ -122,6 +122,10 @@ Changing the agent assignment rule can result in computers no longer being assig
 
    1.  In the **Find Computers** dialog box, type the desired criteria for assigning computers to this management server or type in your specific LDAP query.
 
+       The following LDAP query only returns computers running the Windows Server operating system, and it excludes domain controllers.
+
+       `(&(objectCategory=computer)(operatingsystem=*server*))`
+
        This example LDAP query only returns computers running the Windows Server operating system. It excludes domain controllers and servers hosting the Operations Manager or Service Manager management server role.
 
        `(&(objectCategory=computer)(operatingsystem=*server*)(!(userAccountControl:1.2.840.113556.1.4.803:=8192)(!(servicePrincipalName=*MSOMHSvc*))))`
