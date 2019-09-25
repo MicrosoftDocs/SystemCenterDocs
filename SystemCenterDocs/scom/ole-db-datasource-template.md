@@ -56,7 +56,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the monitoring wizard. This name is displayed in the Operations console in the  **OLE DB Data Source State**  view. |
 | Description | Optional description of the monitor. |
-| Management Pack | Management pack to store the classes, monitors, and rules that the template created. For more information about management packs, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
+| Management Pack | Management pack to store the classes, monitors, and rules that the template created. For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
 
 ## Connection String
 
@@ -110,7 +110,7 @@ Simple authentication lets you connect to the database by using a simple name an
 3. In the  **Authoring**  navigation pane, right-click  **Management Pack Templates** , and then select  **Add Monitoring Wizard**.
 4. On the  **Select Monitoring Type**  page, select  **OLE DB Data Source** , and then click  **Next**.
 5. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a name and an optional description.
-6. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29).
+6. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](selecting-management-pack-file.md).
 7. Click  **Next**.
 8. In the  **Connection string**  box, type a connection string for the database, or click the  **Build**  button to be prompted for the required information.
 9. If you want the monitor to run a query, select  **Query to execute** , and then type a query.
