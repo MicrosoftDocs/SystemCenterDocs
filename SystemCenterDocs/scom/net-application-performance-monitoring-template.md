@@ -89,7 +89,7 @@ The following options are available on the  **General Properties**  page of the 
 | --- | --- |
 | Name | Enter the friendly name used for the template and application group that you are creating. This name is displayed in the Operations console and used for the folder under the  **.NET Monitoring**  folder. <br> **Note:** After you have given the template a name and saved the template, this name cannot be edited without deleting and re-creating the template instance.</br> |
 | Description | Describe the application group. (Optional) |
-| Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the application group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
+| Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the application group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
 
 ## What to Monitor
 
