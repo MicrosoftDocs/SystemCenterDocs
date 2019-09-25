@@ -29,7 +29,7 @@ When you are ready to move from using AVIcode 5.7 to .NET Application Performanc
 
   - Uninstall AVIcode 5.7 agent from that computer.
   - Repair install the Operations Manager agent, which will install the Application Performance Monitoring service.
-  - Manually reconfigure .NET Application Performance Monitoring for the application running on IIS7 with similar settings that you were using previously with AVIcode 5.7. For more information, see [.NET Application Performance Monitoring Template](http://go.microsoft.com/fwlink/?linkid=230647).
+  - Manually reconfigure .NET Application Performance Monitoring for the application running on IIS7 with similar settings that you were using previously with AVIcode 5.7. For more information, see [.NET Application Performance Monitoring Template](net-application-performance-monitoring-template.md).
 
 ## Continuing to Use AVIcode 5.7 with System Center 2012 – Operations Manager
 
