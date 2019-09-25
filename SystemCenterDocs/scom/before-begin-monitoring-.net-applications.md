@@ -61,7 +61,7 @@ If you plan to monitor browser performance, check application compatibility befo
 2. To check applications for compatibility with client-side monitoring, click an application name, and in the tasks pane, in the  **IIS 7 ASP.NET Application Endpoint Tasks**  section, click  **Check Client Side Monitoring Compatibility** , and then click  **Run**. This task does an analysis and lets you know if the application has compatibility issues with client-side monitoring.
 3. The results page displays whether incompatibilities are found. If an application has incompatibilities, you should exclude the incompatible pages from client-side monitoring later when you are configuring client-side monitoring.
 
-You can change an application so that it becomes compatible with client-side monitoring by following the instructions in the output of the compatibility tool.
+You can change an application so that it becomes compatible with client-side monitoring by following the instructions in the output of the compatibility tool
 
 > [!NOTE]
 > For System Center 2012 SP1, you can only check applications for compatibility with client-side monitoring in the IIS 7.0 ASP.NET Web Applications and IIS 8.0 ASP.NET Web Applications views. You cannot check applications for compatibility with client-side monitoring in the IIS Hosted WCF Web Services view because client-side monitoring does not apply to this type of endpoint.
