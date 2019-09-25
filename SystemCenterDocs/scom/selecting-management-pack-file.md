@@ -64,5 +64,5 @@ If you used the Operations console to create the groups in this example in an un
 
 ## See Also
 
-[Management Pack Templates](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457614%28v%3dsc.12%29)
-[Monitors and Rules](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
+- [Management Pack Templates](management-pack-templates.md)
+- [Monitors and Rules](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
