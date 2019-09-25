@@ -14,10 +14,9 @@ ms.topic: article
 
 # Notes for AVIcode 5.7 Customers
 
-System Center – Operations Manager includes application monitoring. The major difference is that AVIcode 5.7 required you to deploy a separate infrastructure alongside Operations Manager. Now these infrastructures have been combined, so you don't need to install anything.
+System Center 2012 – Operations Manager includes application monitoring. The major difference is that AVIcode 5.7 required you to deploy a separate infrastructure alongside Operations Manager. Now these infrastructures have been combined, so you don't need to install anything.
 
 > [!NOTE]
-
 > Now that System Center is generally available as of April 17, 2012, AVIcode 5.7 will no longer be available as a standalone product from the Microsoft AVIcode subsidiary. AVIcode 5.7 support will continue for 12 months following general availability of System Center 2012. If certain customers already have existing support agreements with other support terms, those agreements will be honored until they expire. When the support for AVIcode 5.7 ends, the Microsoft AVIcode subsidiary will no longer provide new updates or hotfixes for AVIcode 5.7 and we will encourage customers to move to System Center 2012, which will be supported as described in the [Microsoft Support Lifecycle Policy FAQ](http://go.microsoft.com/fwlink/?linkid=251881)
 
 If you are running AVIcode 5.7 to monitor applications and install Operations Manager, servers that have AVIcode 5.7 agents installed will continue to work in the same way they were doing before since only Operations Manager has been upgraded. NET Application Performance Monitoring configuration will not affect the AVIcode 5.7 agents because they will not receive it. If you have legacy applications monitored by AVIcode 5.7 (IIS6, .NET services, SharePoint 2007, for example), you can continue to monitor them with AVIcode 5.7. You can begin using .NET Application Performance Monitoring on new servers where AVIcode 5.7 has not been installed or was removed.
