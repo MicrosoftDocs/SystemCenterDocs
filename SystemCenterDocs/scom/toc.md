@@ -102,6 +102,8 @@
 #### [How to enable a Rule or Monitor](manage-enable-or-disable-rule-monitor.md)
 #### [How to add knowledge](manage-mp-add-knowledge.md)
 #### [Management Pack assessment](manage-mp-mpassessment.md)
+#### [Notes for AVIcode 5.7 Customers](notes-avicode-customers.md)
+#### [Selecting a Management Pack File](selecting-management-pack-file.md)
 ### [Using the Operations Manager consoles](manage-consoles-overview.md)
 #### [Comparing the Operations and Web console](manage-consoles-comparison.md)
 #### [How to connect to the Operations and Web console](manage-consoles-how-to-connect.md)
