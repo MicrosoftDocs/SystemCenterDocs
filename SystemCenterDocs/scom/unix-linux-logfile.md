@@ -40,7 +40,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the template. This name is displayed in the Operations console. |
 | Description | Optional description of the template. |
-| Management Pack | Management pack file to store the rule that the template creates. For more information about management packs, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
+| Management Pack | Management pack file to store the rule that the template creates. For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
 
 ## Log File Details
 
