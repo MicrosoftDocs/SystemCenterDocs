@@ -14,7 +14,7 @@ ms.topic: article
 
 # Notes for AVIcode 5.7 Customers
 
-System Center 2012 – Operations Manager includes application monitoring. The major difference is that AVIcode 5.7 required you to deploy a separate infrastructure alongside Operations Manager. Now these infrastructures have been combined, so you don't need to install anything.
+System Center – Operations Manager includes application monitoring. The major difference is that AVIcode 5.7 required you to deploy a separate infrastructure alongside Operations Manager. Now these infrastructures have been combined, so you don't need to install anything.
 
 > [!NOTE]
 > Now that System Center is generally available as of April 17, 2012, AVIcode 5.7 will no longer be available as a standalone product from the Microsoft AVIcode subsidiary. AVIcode 5.7 support will continue for 12 months following general availability of System Center 2012. If certain customers already have existing support agreements with other support terms, those agreements will be honored until they expire. When the support for AVIcode 5.7 ends, the Microsoft AVIcode subsidiary will no longer provide new updates or hotfixes for AVIcode 5.7 and we will encourage customers to move to System Center 2012, which will be supported as described in the [Microsoft Support Lifecycle Policy FAQ](http://go.microsoft.com/fwlink/?linkid=251881)
