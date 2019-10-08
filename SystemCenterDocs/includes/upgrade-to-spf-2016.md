@@ -80,7 +80,7 @@ Here's the recommended upgrade order for the above scenario
 
 
 ## Post-upgrade tasks
-1. On the SPF machine, install the latest update: [update rollup 2 for SPF 2016](https://support.microsoft.comhelp/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f)
+1. On the SPF machine, install the latest update: [update rollup 2 for SPF 2016](https://support.microsoft.com/en-us/help/3209598/update-rollup-2-for-system-center-2016-orchestrator-service-provider-f)
 2. SPF needs a server certificate for website binding. You can use the self-signed certificate generated during setup, but we don't recommend this for a production environment. If you do use a self-signed certificate:
     - It should be used only for testing purposes.
     - The FQDN should be specified for the certification path instead of "localhost".
