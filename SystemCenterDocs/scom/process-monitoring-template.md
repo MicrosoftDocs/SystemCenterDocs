@@ -115,14 +115,14 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 
   - If you want to discover the process on all Windows-based computers in the management group, you do not have to create a group. You can use the existing group **All Windows Computers**.
 
-  - If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
+  - If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
   - If the process that you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contain the service.
 
 2. Start the Add Monitoring wizard.
 3. On the  **Select Monitoring Type**  page, select  **Process Monitoring** , and then click  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a name and an optional description. The name is used to describe the process in the Operations console. It is not the actual name of the process.
-5. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29).
+5. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29).
 6. Click  **Next**.
 7. On the  **Process to Monitor**  page, do the following:
 
@@ -180,4 +180,4 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 ## See Also
 
 - [Creating Management Pack Templates](creating-management-pack-templates.md)
-- [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
