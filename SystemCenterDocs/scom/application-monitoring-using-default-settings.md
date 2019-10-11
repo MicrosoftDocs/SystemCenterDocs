@@ -24,7 +24,7 @@ You still need to select the application you want to monitor and the target mana
 
 The defaults are enough to get this started and to allow you to test it out from localhost connections. It is simply scoped to monitor localhost by default.
 
-You can certainly accept the default settings for client-side monitoring, but it is very important to run the compatibility check task to validate if the application can be monitored and if any of the pages should be excluded from monitoring. Therefore, simply applying of client-side monitoring defaults might be risky. For more information about running the compatibility check task, see [Before You Begin Monitoring .NET Applications](before-begin-monitoring-.net-applications.md)
+You can certainly accept the default settings for client-side monitoring, but it is very important to run the compatibility check task to validate if the application can be monitored and if any of the pages should be excluded from monitoring. Therefore, simply applying of client-side monitoring defaults might be risky. For more information about running the compatibility check task, see [Before You Begin Monitoring .NET Applications](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh543994(v=sc.12))
 
 In general, client-side threshold settings should be higher than server-side threshold settings. This is because the client-side monitoring contains the server time, too. For instance, when a client-side event is divided into various parts, some of the time is spent on the server, but the client also monitors the time spent on the network and the time spent in the browser.
 
