@@ -82,7 +82,6 @@
 #### [Management Pack Templates](management-pack-templates.md)
 #### [Creating Management Pack Templates](creating-management-pack-templates.md)
 #### [.NET Application Performance Monitoring Template](net-application-performance-monitoring-template.md)
-#### [Before You Begin Monitoring .NET Applications](before-begin-monitoring-.net-applications.md)
 #### [Using Exception Handlers to Define Critical Exceptions](using-exception-handlers-to-define-critical-exceptions.md)
 #### [Authoring Strategies for .NET Application Monitoring](authoring-strategies-.net-application-monitoring.md)
 #### [Application Monitoring Using the Default Settings](application-monitoring-using-default-settings.md)
