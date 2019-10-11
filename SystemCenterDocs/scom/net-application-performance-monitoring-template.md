@@ -20,7 +20,7 @@ This template lets you monitor applications and web services that are hosted in 
 
 For System Center 2012 SP1, you can use the template to monitor applications and web services that are hosted in Internet Information Services (IIS) 8.0. You can select one or more applications or services discovered by the IIS 8.0 management pack and configure monitoring of performance and exception events. You must have the Windows Server 2012 Internet Information Services (IIS) 8.0 management pack installed to monitor applications and web services.
 
-For more information, see [Before You Begin Monitoring .NET Applications](before-begin-monitoring-.net-applications.md)
+For more information, see [Before You Begin Monitoring .NET Applications](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh543994(v=sc.12))
 
 - Scenarios
 - Monitoring Performed by the .NET Application Performance Monitoring Template
