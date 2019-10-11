@@ -75,7 +75,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 
     - If you want to discover the process on all UNIX and Linux computers in the management group, you do not have to create a group. You can use the existing group **UNIX/Linux Computer Group**.
 
-    - If you only want the process to be discovered on a certain group of computers, then either ensure that an appropriate group exists or create a one by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
+    - If you only want the process to be discovered on a certain group of computers, then either ensure that an appropriate group exists or create a one by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
 2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Process Monitoring** , and then click  **Next**.
