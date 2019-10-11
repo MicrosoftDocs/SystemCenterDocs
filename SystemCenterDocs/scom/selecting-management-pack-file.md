@@ -60,7 +60,7 @@ For example, you might create a set of groups that represent different aspects o
 If you used the Operations console to create the groups in this example in an unsealed management pack file, you could not use them with other management pack files. You have to use one of the following two strategies to implement this solution:
 
   - Create groups in each management pack file with the overrides. This has the advantage of being easy to implement without any requirement to seal a management pack file, but it has the disadvantage of requiring you to potentially create multiple copies of the same group.
-  - Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then seal the .xml file by using the process described in [Selecting a Management Pack](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
+  - Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then seal the .xml file by using the process described earlier in this article. You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
 
 ## See Also
 
