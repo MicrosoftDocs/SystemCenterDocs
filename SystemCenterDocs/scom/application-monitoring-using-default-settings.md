@@ -32,9 +32,9 @@ In general, client-side threshold settings should be higher than server-side thr
 
 There is no default for the load balancers. The load balancer setting is one you can opt to change, whereas you must change the client IP filters because if you do not update those settings you will not get any data at all.
 
-**IP Address Filters**  You can use client IP filters to choose the networks that you want to monitor. By applying filters, administrators can limit the scope of the monitored computers. By default, only localhost IP addresses are monitored. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client-side monitoring. For more information, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh543988%28v%3dsc.12%29)
+**IP Address Filters**  You can use client IP filters to choose the networks that you want to monitor. By applying filters, administrators can limit the scope of the monitored computers. By default, only localhost IP addresses are monitored. If the IP filter list is empty, all IP addresses are monitored. Any IP addresses that fit the filter definitions are excluded from client-side monitoring. For more information, see [How to Configure IP Address Exclusion Filters for Client-Side Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh543988%28v%3dsc.12%29)
 
 ## See Also
 
 - [Authoring Strategies for .NET Application Monitoring](authoring-strategies-.net-application-monitoring.md)
-- [How to Start Monitoring a New Application](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
+- [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
