@@ -84,7 +84,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 
 | Option | Description |
 | --- | --- |
-| Select one or more agent-managed computers | Specify one or more agent-managed computers to run the monitor. For more information, see [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
+| Select one or more agent-managed computers | Specify one or more agent-managed computers to run the monitor. For more information, see [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
 | Run this query every | The frequency to attempt the connection to the database and run the query, if specified. |
 
 ## Security Considerations
@@ -122,10 +122,10 @@ Simple authentication lets you connect to the database by using a simple name an
 
 12. Click  **Next**  when you have validated your connection string and query.
 13. Select the measurements that you want to monitor and set an error and warning threshold for each. Click  **Next**.
-14. Select one or more [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
+14. Select one or more [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
 15. Specify the frequency to run the monitor in the  **Run this query**  box. Click  **Next**.
 16. Review the summary of the monitor, and then click  **Create**.
-17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
+17. If a Run As account with credentials that have access to the database does not exist, create an appropriate Run As account in the  **Administration**  workspace. For more information, see [How to Create a Run As Account](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh321655%28v%3dsc.12%29).
 
      > [!NOTE]
      > To create and modify a Run As account, you must have administrative credentials for the management group.
@@ -166,4 +166,4 @@ Simple authentication lets you connect to the database by using a simple name an
 ## See Also
 
 - [Creating Management Pack Templates](creating-management-pack-templates.md)
-- [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
