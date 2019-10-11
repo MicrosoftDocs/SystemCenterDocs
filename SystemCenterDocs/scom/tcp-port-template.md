@@ -69,7 +69,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 
 | Option | Description |
 | --- | --- |
-| Select one or more agent managed computers | Specify one or more computers to run the monitors and rules. For more information, see [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
+| Select one or more agent managed computers | Specify one or more computers to run the monitors and rules. For more information, see [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
 | Run this query every | The frequency to attempt the connection to the specified computer and port. |
 
 ## Creating and Modifying TCP Port Templates
@@ -91,7 +91,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
      > The test is performed on the workstation that you are using to run the template. If this workstation cannot access the computer or device, this test fails. When the template is completed, the test is run from the watcher nodes that you specify.
 
 11. Click  **Next**  when you have validated your connection.
-12. Select one or more [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
+12. Select one or more [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29) to run the monitor.
 13. Specify the frequency to run the monitor in the  **Run this query**  box. Click  **Next**.
 14. Review the summary of the monitor, and then click  **Create**.
 
@@ -126,4 +126,4 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 ## See Also
 
 - [Creating Management Pack Templates](creating-management-pack-templates.md)
-- [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
