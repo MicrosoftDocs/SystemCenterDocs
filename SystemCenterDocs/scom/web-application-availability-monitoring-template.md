@@ -78,7 +78,7 @@ The following options are available on the  **General**  page of the wizard.
 | --- | --- |
 | Name | Enter the friendly name used for the template and test group that you are creating. This name is displayed in the Operations Console in the Web Application status view and is used for the folder under the  **Web Application Availability Monitoring**  folder. <br>**Note:** After you have given the template a name and saved the template, this name cannot be edited without deleting and re-creating the template.</br> |
 | Description | Describe the template. (Optional) |
-| Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the test group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
+| Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the test group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
 
 ## What to Monitor
 
@@ -257,7 +257,7 @@ The  **Summary**  page of the wizard lists the settings you have configured for 
 
 ## Creating and Modifying Web Application Availability Monitoring Templates
 
-For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
+For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
 
 #### To modify an existing Web Application Availability Monitoring template
 
@@ -296,7 +296,7 @@ After you configure monitoring for an application, these three views will help y
 
 ## See Also
 
-- [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
+- [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
 - [Monitoring Web Application Availability Tests and Alerts](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881880%28v%3dsc.12%29)
 - [Dashboard Views for Web Application Availability Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881879%28v%3dsc.12%29)
 - [Reporting for Web Application Availability Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881878%28v%3dsc.12%29)
