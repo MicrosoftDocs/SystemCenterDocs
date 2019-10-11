@@ -26,7 +26,7 @@ A single application can use any number of context parameters. Any number of req
 
 Consider the example where an application creates a session ID when a user logs on. This session ID is required in each request after the logon page. To implement this scenario, you have to capture the session ID when it is first generated, and then use that value in each subsequent request.
 
-You start by using the process described in [How to Capture Web Application Recording](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to capture the logon and subsequent actions. The recorded session for logging on to the application and performing some actions might look similar to the following example.
+You start by using the process described in [How to Capture Web Application Recording](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to capture the logon and subsequent actions. The recorded session for logging on to the application and performing some actions might look similar to the following example.
 
 ```
 
@@ -96,7 +96,7 @@ You could just pull out the term itself, but it is more straightforward to inclu
 
 ### To record a sample web application
 
-1. Use the procedure in [How to Capture Web Application Recording](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to record a web application.
+1. Use the procedure in [How to Capture Web Application Recording](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457597%28v%3dsc.12%29) to record a web application.
 2. While recording, connect to [**http://www.bing.com**](http://www.bing.com/).
 3. Optionally, use the option on your browser to view the source of the Bing home page and locate the  **Popular Now**  section of the HTML code.
 4. Click the first search term under  **Popular Now**.
