@@ -51,7 +51,7 @@ By following the recommend strategy for logically grouping management pack eleme
 
 ## Sealed and Unsealed Management Pack Files
 
-When selecting a management pack file, you must consider the implications of sealed and unsealed management packs. An element in one management pack file cannot refer to an element in another file if the file being referenced is not sealed. For this reason, you might have to group-related elements in a single management pack file or seal management pack files meant for general use. For more information about the effects of sealing a management pack, see [Sealed Management Pack Files](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457596%28v%3dsc.12%29).
+When selecting a management pack file, you must consider the implications of sealed and unsealed management packs. An element in one management pack file cannot refer to an element in another file if the file being referenced is not sealed. For this reason, you might have to group-related elements in a single management pack file or seal management pack files meant for general use. For more information about the effects of sealing a management pack, see [Sealed Management Pack Files](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457596%28v%3dsc.12%29).
 
 Because a sealed management pack file cannot be modified, you can only store new management pack elements in unsealed files. Any management pack created in the Operations console is unsealed, and any dialog box prompting you for a management pack only includes unsealed files.
 
@@ -65,4 +65,4 @@ If you used the Operations console to create the groups in this example in an un
 ## See Also
 
 - [Management Pack Templates](management-pack-templates.md)
-- [Monitors and Rules](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
+- [Monitors and Rules](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
