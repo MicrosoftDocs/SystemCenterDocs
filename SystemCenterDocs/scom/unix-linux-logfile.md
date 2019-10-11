@@ -61,12 +61,12 @@ The following options are available on the  **Log File Details**  page of the wi
 
    - If you want to monitor the log file on all UNIX and Linux computers in the management group, you do not have to create a group. You can use the existing group **UNIX/Linux Computer Group**.
 
-   - If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
+   - If you only want the log file to be monitored on a certain group of computers, either ensure that an appropriate group exists or create a new computer group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
 2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Log File Monitoring** , and then click  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a name and description for this new template.
-5. Select a management pack in which to save the template or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29).
+5. Select a management pack in which to save the template or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29).
 6. If you want to monitor the log file on a single computer, do the following:
    - Click the  **Select a Computer**  button next to the  **Computer name**  box.
    - Select the computer to monitor, and then click  **OK**.
@@ -96,5 +96,5 @@ There is no monitor or collected data for the  **UNIX/Linux Log File Monitoring*
 
 ## See Also
 
-- [Creating Management Pack Templates](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29)
+- [Creating Management Pack Templates](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29)
 - [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
