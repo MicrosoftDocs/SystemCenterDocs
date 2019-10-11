@@ -85,7 +85,7 @@ In addition to performing the specified monitoring, the  **Windows Service**  te
 
     - If you want to discover the service on all Windows-based computers in the management group, you do not have to create a group. You can use the existing group **All Windows Computers**.
 
-    - If you only want the service to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
+    - If you only want the service to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
     - If the service you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contains the service.
 
