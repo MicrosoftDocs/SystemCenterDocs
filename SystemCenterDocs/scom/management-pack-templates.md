@@ -39,4 +39,4 @@ The following table lists the management pack templates that are part of the sta
 ## See Also
 
 - [Creating Management Pack Templates](creating-management-pack-templates.md)
-- [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
