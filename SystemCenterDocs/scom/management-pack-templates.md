@@ -16,7 +16,7 @@ ms.topic: article
 
 _Management Pack Templates_ provide _Monitoring wizards_ that let you create complete monitoring scenarios with minimal input. The wizard creates the required monitors, rules, and even targets to implement the particular scenario. There is no requirement for you to understand the management pack elements that are created. You can modify the configuration of the wizard itself if you want to change the way that monitoring is being performed.
 
-**Conceptual view of a monitoring wizards**
+## Conceptual view of a monitoring wizards
 
 ![Conceptual view of monitoring wizard](./media/conceptual-view-monitoring-wizard.png)
 
@@ -28,7 +28,7 @@ The following table lists the management pack templates that are part of the sta
 | --- | --- |
 | [.NET Application Performance Monitoring Template](net-application-performance-monitoring-template.md) | Monitor .NET applications to get details about application performance and reliability. |
 | [OLE DB Data Source Template](ole-db-datasource-template.md) | Monitor a database accessible with OLE DB. |
-| [Process Monitoring Template](process-monitoring-template.md) | Discover and monitor instances of a particular Windows process. |
+| [Process Monitoring Template](process-monitor-template.md) | Discover and monitor instances of a particular Windows process. |
 | [TCP Port Template](tcp-port-template.md) | Monitor the availability of an application that is listening on a specific port. |
 | [UNIX or Linux Log File](unix-linux-logfile.md) | Monitor a UNIX or Linux log file for a specific entry. |
 | [UNIX or Linux Process](unix-linux-process.md) | Monitor a UNIX or Linux process. |
@@ -36,7 +36,7 @@ The following table lists the management pack templates that are part of the sta
 | [Web Application Transaction Monitoring Template](web-application-transaction-monitoring-template.md) | Monitor the availability, operation, and performance of a web application. |
 | [Windows Service Template](windows-service-template.md) | Discover and monitor instances of a particular Windows service. |
 
-## See Also
+## See also
 
-- [Creating Management Pack Templates](creating-management-pack-templates.md)
+- [Creating Management Pack Templates](create-management-pack-templates.md)
 - [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
