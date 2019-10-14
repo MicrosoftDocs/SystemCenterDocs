@@ -1,6 +1,6 @@
 ---
 ms.assetid: 9a250872-da2d-43d6-ac0e-9882c068311f
-title: Process Monitoring Template
+title: Process Monitoring template
 description: This article provides an overview about process monitoring template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Process Monitoring Template
+# Process Monitoring template
 
 The _Process Monitoring_ template lets you monitor whether a particular process is running on a computer. By using this template, you can implement two different basic scenarios: You might require the process to be running for a particular application and want to be warned if it is not running, or you might have to be alerted if you discover that an unwanted process is running. In addition to monitoring whether the application is running, you can collect performance data for the processor and memory usage of the process.
 
@@ -113,11 +113,11 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 
 1. Determine the target group for the monitor by using the following logic:
 
-  - If you want to discover the process on all Windows-based computers in the management group, you do not have to create a group. You can use the existing group **All Windows Computers**.
+   - If you want to discover the process on all Windows-based computers in the management group, you do not have to create a group. You can use the existing group **All Windows Computers**.
 
-  - If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
+   - If you only want the process to be discovered on a certain group of computers, either ensure that an appropriate group exists or create a new group by using the procedure in [How to Create Groups in Operations Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh298605(v=sc.12)).
 
-  - If the process that you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contain the service.
+   - If the process that you are monitoring is in a cluster, create a group with objects of the class **Virtual Server** representing the nodes of the cluster that contain the service.
 
 2. Start the Add Monitoring wizard.
 3. On the  **Select Monitoring Type**  page, select  **Process Monitoring** , and then click  **Next**.
@@ -137,7 +137,7 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
     -  In the  **Minimum number of processes**  box, enter the minimum number of processes that should be running. For a single instance of the process, this is typically 1.
     -  In the  **Maximum number of processes**  box, enter the maximum number of instances of the process that should be running.
     -  In the  **Duration**  box, enter the length of time that running processes must exceed the specified range before the monitor is set to a critical state. This value should not be set to less than 1 minute. Note that the process could stop and restart within this time window with no error detected.
-  - If you want to monitor for the length that a process runs, do the following:
+     - If you want to monitor for the length that a process runs, do the following:
      - Select the option to  **Generate an alert if the process runs longer than the specified duration**.
      - In the  **Duration**  box, enter the maximum length of time that you want the process to run before the monitor is set to a critical state. This value should not be set to less than 1 minute.
 9. If you selected the option for a wanted process, on the  **Performance Data**  page, select the performance counters and thresholds that you want to monitor. For more detailed information, see the Wizard Options section.
