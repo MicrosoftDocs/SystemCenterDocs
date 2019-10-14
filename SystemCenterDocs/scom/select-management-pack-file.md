@@ -1,6 +1,6 @@
 ---
 ms.assetid: 0a119fc2-b6fb-4ca6-a2ce-5344ea69b327
-title: Selecting a Management Pack File
+title: Select a management pack file
 description: This article provides an overview about how to select a Management Pack File
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,11 +12,11 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Selecting a Management Pack File
+# Select a management pack file
 
 When you create any monitoring in the Operations console, you have to specify a management pack file for the elements that you are creating. This topic describes a basic strategy that you can follow and provides additional details to help you understand the logic of the recommended strategy.
 
-## General Strategy
+## General strategy
 
 For applications that already have a sealed management pack installed, typically management packs installed from the Management Pack Catalog:
 
@@ -37,7 +37,7 @@ For common elements that are used by other management pack files, such as groups
 
 The  **Default Management Pack**  file contains common elements such as views at the top level of the  **Monitoring**  workspace. This is an unsealed management pack file so that you can create views and folders at this level. It should not be used for any other purpose. For creating elements such as monitors and rules, create a new management pack file.
 
-## Logically Grouping Elements
+## Logically grouping elements
 
 Although you could simply create a single management pack file to store all custom elements that you create, it is not a best practice. While management pack elements are treated individually by the agents that run them, the management group works with the management pack file. When a management pack file is installed in the management group or removed from it, it includes all of its management pack elements.
 
@@ -49,7 +49,7 @@ When you determine how to group different elements, take the following considera
 
 By following the recommend strategy for logically grouping management pack elements, you can ensure that your management group runs as efficiently as possible and can most effectively handle future changes.
 
-## Sealed and Unsealed Management Pack Files
+## Sealed and unsealed Management Pack Files
 
 When selecting a management pack file, you must consider the implications of sealed and unsealed management packs. An element in one management pack file cannot refer to an element in another file if the file being referenced is not sealed. For this reason, you might have to group-related elements in a single management pack file or seal management pack files meant for general use. For more information about the effects of sealing a management pack, see [Sealed Management Pack Files](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457596%28v%3dsc.12%29).
 
@@ -62,7 +62,7 @@ If you used the Operations console to create the groups in this example in an un
   - Create groups in each management pack file with the overrides. This has the advantage of being easy to implement without any requirement to seal a management pack file, but it has the disadvantage of requiring you to potentially create multiple copies of the same group.
   - Create a separate management pack file for the groups. After you create the groups in the Operations console, export the management pack to an .xml file, and then seal the .xml file by using the process described earlier in this article. You can then install the sealed version of the management pack file so that the groups are available to any other management pack.
 
-## See Also
+## See also
 
 - [Management Pack Templates](management-pack-templates.md)
 - [Monitors and Rules](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457603%28v%3dsc.12%29)
