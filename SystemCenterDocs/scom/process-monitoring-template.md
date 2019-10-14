@@ -66,7 +66,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the process. This name is displayed in the Operations console for the wizard. It does not have to be the same name as the process. |
 | Description | Optional description of the process. |
-| Management Pack | Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the service as a target class, they have to be stored in the same management pack. <br>For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md).</br> |
+| Management Pack | Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the service as a target class, they have to be stored in the same management pack. <br>For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md).</br> |
 
 ## Process to Monitor
 
