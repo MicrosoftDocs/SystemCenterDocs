@@ -1,6 +1,6 @@
 ---
 ms.assetid: a554a6b1-252e-4cc3-8b8f-80a7ea43b6da
-title: Creating Management Pack Templates
+title: Create management pack templates
 description: This article provides an overview of creating management pack templates
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,11 +12,11 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Creating Management Pack Templates
+# Create management pack templates
 
 Use the following procedure to create and modify management pack templates.
 
-### To create a management pack template
+## To create a management pack template
 
 1. Start the Operations console with an account that has Author credentials in the management group.
 2. Open the  **Authoring**  workspace.
@@ -38,6 +38,6 @@ Use the following procedure to create and modify management pack templates.
 3. In the  **Authoring**  navigation pane, expand the  **Management Pack Templates**  node.
 4. Right-click the template to view, select  **View Management Pack Objects** , and then select the kind of element that you want to view.
 
-## **See Also**
+## **See also**
 
 - [Management Pack Templates](management-pack-templates.md)
