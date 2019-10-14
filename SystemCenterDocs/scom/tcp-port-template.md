@@ -52,7 +52,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the template. This name is displayed in the Operations console. |
 | Description | Optional description of the service. |
-| Management Pack | Management pack to store the class and monitors that the template created. If you create any additional monitors or rules by using the service as a target class, you must store them in the same management pack.For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
+| Management Pack | Management pack to store the class and monitors that the template created. If you create any additional monitors or rules by using the service as a target class, you must store them in the same management pack.For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
 
 ## Target and Port
 
@@ -81,7 +81,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 3. In the  **Authoring**  navigation pane, right-click  **Management Pack Templates** , and then select  **Add Monitoring Wizard**.
 4. On the  **Select Monitoring Type**  page, select  **TCP Port** , and then click  **Next**.
 5. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a name and an optional description.
-6. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](selecting-management-pack-file.md).
+6. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](select-management-pack-file.md).
 7. Click  **Next**.
 8. In the  **Computer or device name**  box, type the name or IP address of the computer or device to connect to.
 9. In the  **Port**  box, type the port number on which the application is listening.
