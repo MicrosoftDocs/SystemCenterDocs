@@ -86,11 +86,11 @@ The following procedure provides an example of using parameter extraction in a w
 
 The main Bing page is shown below with the  **Popular Now**  section highlighted.
 
-![Bing Homepage](./media/Bing-Homepage.png)
+![Bing Homepage](./media/bing-homepage.png)
 
 To determine where in the response body the search term appears, you can view the source of the page. A portion of the source is shown below with the HTML code of the  **Popular Now**  section. In this HTML code, you only need the search string which is highlighted in the following illustration. The request is formed from [**http://www.bing.com**](http://www.bing.com/) followed by this string.
 
-![Bing Popular Now Search String](./media/Bing-Popular-Now-Search-String.png)
+![Bing Popular Now Search String](./media/bing-popular-now-search-string.png)
 
 You could just pull out the term itself, but it is more straightforward to include the entire string in the parameter. This string is preceded by the characters  **\<h3>Popular now\</h3>\<ul>\<li>\<a href=>**  and ends with the next occurrence of  **"**. Those are the values that you will use when you define the parameter extraction.
 
@@ -103,7 +103,7 @@ You could just pull out the term itself, but it is more straightforward to inclu
 5. Save the recording to the web application.
 6. Remove the last request because this is not required. To remove the last request, select the request, and then click  **Delete**  in the  **Actions**  pane. The resulting requests should look similar to the following URLs:
 
-![Bing Web Application Recorded](./media/Bing-Web-Application-Recorded.png)
+![Bing Web Application Recorded](./media/bing-web-application-recorded.png)
 
 ### To create an extraction rule
 
@@ -114,7 +114,7 @@ You could just pull out the term itself, but it is more straightforward to inclu
 5. In the  **Starts with**  box, type  **\<h3>Popular now\</h3>\<ul>\<li>\<a href=>**.
 6. In the  **Ends with**  box, type  **"**. The extraction rule should look similar to the following illustration.
 
-   ![Extraction Rule](./media/Extraction-Rule.png)
+   ![Extraction Rule](./media/extraction-rule.png)
 
 7. Click  **OK**  to save and close the extraction rule.
 8. Click  **OK**  to save and close the request.
@@ -126,11 +126,11 @@ You could just pull out the term itself, but it is more straightforward to inclu
 3. In the  **String**  box, delete all text after [**www.bing.com/**](http://www.bing.com/).
 4. With the cursor positioned at the end of the URL, just after [**www.bing.com**](http://www.bing.com/), select  **SearchString**  in the  **Parameters**  box, and then click  **Insert**. This inserts the variable $ParametersContext/SearchString$. The final request looks similar to the following illustration.
 
-   ![Insert Parameter](./media/Insert-Parameter.png)
+   ![Insert Parameter](./media/insert-parameter.png)
 
 5. Click  **OK**  to close the dialog box.
 6. Click  **OK**  to save and close the request. The modified request sequence should look similar to the following illustration.
 
-   ![Bing Web Application Modified](./media/Bing-Web-Application-Modified.png)
+   ![Bing Web Application Modified](./media/bing-web-application-modified.png)
 
 7. Click  **Apply**  to apply the changes, and then close the  **Web Application Editor**.
