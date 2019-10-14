@@ -82,7 +82,7 @@ The following options are available on the  **General**  page of the wizard.
 
 ## What to monitor
 
-![What to Monitor page](./media/what-to-monitor-page1.png)
+![What to Monitor page](./media/what-to-monitor-page.png)
 
 Add URLs to the list by typing, pasting, or importing a file into the table, including the appropriate protocol (http:// or https://). You can paste entire rows as pairs of comma-separated values (CSV) that are in the format 'Name, URL', or you can paste just the list of URLs.
 
