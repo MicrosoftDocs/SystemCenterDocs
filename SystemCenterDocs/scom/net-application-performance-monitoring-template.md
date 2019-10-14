@@ -1,6 +1,6 @@
 ---
 ms.assetid: 20634e48-491b-400f-beb4-2eae28362052
-title: .NET Application Performance Monitoring Template
+title: .NET application performance monitoring template
 description: This article provides an overview of .NET application performance monitoring template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# .NET Application Performance Monitoring Template
+# .NET application performance monitoring template
 
 The  **.NET Application Performance Monitoring**  (APM) template in System Center – Operations Manager lets you monitor Internet Information Services (IIS)-hosted .NET applications from server- and client-side perspectives to get details about application performance and reliability that can help you pinpoint root causes of incidents. (For System Center 2012 SP1 only: You can also monitor Windows Services.) When you specify settings, the types of events to collect, the performance goals to measure, and servers to monitor, .NET Application Performance Monitoring reveals how applications are running. You can see how frequently a problem is occurring, how a server was performing when a problem occurred, and the chain of events related to the slow request or method that is raising exceptions. This information is required to partner with software developers and database administrators to help ensure that applications perform correctly and reliably for your customers.
 
@@ -47,15 +47,15 @@ For more information, see [Before You Begin Monitoring .NET Applications](https:
 
 Use the  **.NET Application Performance Monitoring**  template in scenarios where you have to monitor web-based applications. These scenarios include the following monitoring processes:
 
-## Server-Side Monitoring: Single- or Multi-Tier Web Applications
+## Server-side monitoring: single- or multi-tier web applications
 
 You might have applications that must be running at all times. Use the  **.NET Application Performance Monitoring**  template to ensure that your applications are reliable, have no exceptions, and meet service level agreements (SLAs), in short, that they perform correctly on the computers where they are installed.
 
-## Client-Side Monitoring: Browser Performance and Reliability
+## Client-side monitoring: browser performance and reliability
 
 You want to ensure that your customers are having quality web experiences. By creating or editing existing templates, you can extend your server-side monitoring by adding client-side monitoring that measures the browser experience of your customers.
 
-## Monitoring Performed by the .NET Application Performance Monitoring Template
+## Monitoring performed by the .NET application performance monitoring template
 
 By default, the  **.NET Application Performance Monitoring**  template configures the following monitoring. You can be enable, disable, and modify monitors in the  **Advanced Configuration**  page of the  **.NET Application Performance Monitoring**  template.
 
@@ -65,21 +65,21 @@ By default, the  **.NET Application Performance Monitoring**  template configure
 | Percentage of performance events per monitored requests | Enabled, Threshold=20%, Interval=5 minutes |
 | Average Request Time | Enabled, Threshold=10,000 ms, Interval=5 minutes |
 
-## Viewing Monitoring Data
+## Viewing monitoring data
 
 All data collected by the  **.NET Application Performance Monitoring**  template appears in the  **.NET Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. For each of the application groups that you create by using the  **.NET Application Performance Monitoring**  template, the template creates a folder under  **.NET Monitoring**. The  **Application Monitoring**  folder contains the default views and subfolders that provide health state, Performance views, and alerts related to the application components in the application group. By using the top-level Application Group State view, you can see the health of the individual components and the monitoring configurations that have been enabled. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the components are shown with an error while at least one other component is healthy, it could indicate a problem with that particular component, such as a credential issue. If all of the components are unhealthy, it could indicate a problem with the infrastructure, such as network connectivity issues.
 
-**Application Monitoring folders**
+**Application monitoring folders**
 
 ![ASP.NET Application Performance Monitoring folder](./media/asp.NET-application-performance-monitoring-folder.png)
 
 To view the state of the individual monitors, open the Health Explorer for each component. Drill down to the unhealthy monitors to see what is making your application unhealthy. For more information, see [Monitoring .NET Applications](http://go.microsoft.com/fwlink/?linkid=225673)
 
-## Wizard Options
+## Wizard options
 
 When you run the  **.NET Application Performance Monitoring**  template, you have to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
 
-## General Properties
+## General properties
 
 ![General properties page](./media/general-properties-page.png)
 
@@ -91,7 +91,7 @@ The following options are available on the  **General Properties**  page of the 
 | Description | Describe the application group. (Optional) |
 | Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the application group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
 
-## What to Monitor
+## What to monitor
 
 ![What to monitor page](./media/what-to-monitor-page.png)
 
@@ -103,7 +103,7 @@ The following options are available on the  **What to Monitor**  page of the wiz
 | Environment | Select the environment in which you want to monitor your application:  **None** ,  **Production** ,  **Staging** ,  **Test** ,  **Development** , or use  **New**  to create a new tag. Typically, you want to pair the environment tag with the server group that you are monitoring. The tag is appended to the application group name and component names, letting you differentiate the event data in Application Diagnostics and Application Advisor. From a monitoring perspective, the environment tag lets you separate the same application into multiple virtual applications. <br>**Note:** After you have selected an environment tag and saved the template, the tag cannot be edited without deleting and re-creating the template instance.</br> |
 | Targeted group | Select specific servers to limit monitoring to this specific set of servers. This is optional. Targeted group scoping only becomes necessary when you have the same application running in multiple environments, such as production and staging, and you intend to run the template multiple times, one for each environment. In this scenario, group which machines belong to production and which belong to the staging environment, and then use the targeted groups to restrict where the configuration is propagated. You can also use groups to apply configuration to a subset of your servers. Otherwise, it is not necessary to specify targeted group scoping if you just want to monitor all instances of a given application. |
 
-## Object Search
+## Object search
 
 ![Object Search page](./media/object-search-page.png)
 
@@ -116,7 +116,7 @@ The following options are available on the  **Object Search**  page of the wizar
 | Available items | Displays the Windows Web Application and Services that are available for monitoring. For System Center 2012 SP1 only: Also displays the Windows Services that are available for monitoring. |
 | Selected objects | Displays the application components that you have selected to monitor. |
 
-## Server-Side Configuration
+## Server-side configuration
 
 ![Server-side configuration](./media/server-side-configuration.png)
 
@@ -130,7 +130,7 @@ The following options are available on the  **Server-Side Configuration**  page 
 | Advanced Settings | Set advanced configurations, including sensitivity (restricting the collection of fast functions), namespaces (that define where you want to collect data from custom applications), methods (specific functions where you want to start monitoring), custom exception handlers (that define critical exceptions), and customize the configuration of the monitors that affect the component health state. |
 | Enable additional configuration options for server-side and client-side monitoring | Specify additional options in the wizard to customize monitoring for individual application components and client-side monitoring. |
 
-## Advanced Settings for Server-Side Monitoring
+## Advanced settings for server-side monitoring
 
 ![Advanced settings for server-side monitoring](./media/advanced-settings-for-server-side-monitoring.png)
 
@@ -156,7 +156,7 @@ The following options are available on the  **Advanced Settings**  for server-si
 | Monitors: Average Request Time exceeds | Monitor that watches the .NET Apps/Average Request Time performance counter. |
 | Targeted group | Select specific servers to limit monitoring to this specific set of servers. This is optional. Targeted group scoping only becomes necessary when you have the same application running in multiple environments, such as production and staging, and you intend to run the template multiple times, one for each environment. In this scenario, group which machines belong to production and which belong to the staging environment, and then use the targeted groups to restrict where the configuration is propagated. You can also use groups to apply configuration to a subset of your servers. Otherwise, it is not necessary to specify targeted group scoping if you just want to monitor all instances of a given application. |
 
-## Server-Side Customization
+## Server-side customization
 
 ![Server-side customization](./media/server-side-customization.png)
 
@@ -168,7 +168,7 @@ For System Center 2012 SP1, the following options are available on the  **Server
 | Customize | Modify the settings for the selected application component. This opens the  **Modifying Settings**  page. The settings on this page are the same as those on the  **Advanced Settings for Server-Side Monitoring**  page, except you can create individual transaction monitoring for ASP.NET webpages, ASP.NET web services, or individual functions in an assembly. These are described in the Transaction Properties: Add ASP.NET Web Page sections that follow. <br>**Note:** The buttons for namespaces, exception tracking, and critical exceptions are unavailable because these can only be set at the application-group level, not at the component level. For System Center 2012 SP1 only: you can customize these settings if you are configuring monitoring for Windows Services.</br> |
 | Modifying Settings page | Customize settings for the application component and/or specify monitoring for a specific webpage, web method, or function within the application component. |
 
-## Server-Side Modifying Settings
+## Server-side modifying settings
 
 ![Server-side modifying settings](./media/server-side-modifying-settings.png)
 
@@ -207,7 +207,7 @@ For each application type there are several transaction types you can choose to 
 | Windows service | Not available | - WCF method <br>- Function</br>
 
 
-## Transaction Properties: Add ASP.NET Web Page
+## Transaction properties: add ASP.NET web page
 
 ![Server-side transaction properties ASP.NET webpage](./media/Server-side-transaction-properties.png)
 
@@ -227,7 +227,7 @@ The following options are available on the  **Transaction Properties**  page for
 | Monitors: % Performance Events/sec | Monitor that watches the .NET Apps/% Performance Events/sec performance counter. |
 | Monitors: Average Request Time | Monitor that watches the .NET Apps/Average Request Time performance counter. |
 
-## Transaction Properties: Add ASP.NET Web Service
+## Transaction properties: add ASP.NET web service
 
 ![Server-side transaction ASP.NET web service](./media/Server-side-transaction-web-service.png)
 
@@ -248,7 +248,7 @@ The following options are available on the  **Transaction Properties**  page for
 | Monitors: % Performance Events/sec | Monitor that watches the .NET Apps/% Performance Events/sec performance counter. |
 | Monitors: Average Request Time | Monitor that watches the .NET Apps/Average Request Time performance counter. |
 
-## Transaction Properties: Add ASP.NET MVC Page
+## Transaction properties: add ASP.NET MVC page
 
 ![Transaction Properties page for MVC](./media/Transaction-Properties-page-MVC.png)
 
@@ -269,7 +269,7 @@ For System Center 2012 SP1 the following options are available on the  **Transac
 | Monitors: % Performance Events/sec | Monitor that watches the .NET Apps/% Performance Events/sec performance counter. |
 | Monitors: Average Request Time | Monitor that watches the .NET Apps/Average Request Time performance counter. |
 
-## Transaction Properties: Add WCF Method
+## Transaction properties: add WCF method
 
 ![Transaction Properties for WCF](./media/Transaction-Properties-WCF.png)
 
@@ -290,7 +290,7 @@ The following options are available on the  **Transaction Properties**  for the 
 | Monitors: % Performance Events/sec | Monitor that watches the .NET Apps/% Performance Events/sec performance counter. |
 | Monitors: Average Request Time | Monitor that watches the .NET Apps/Average Request Time performance counter. |
 
-## Transaction Properties: Add Function
+## Transaction properties: add function
 
 ![Server-side transaction properties function](./media/Server-side-transaction-properties-function.png)
 
@@ -311,7 +311,7 @@ The following options are available on the  **Transaction Properties**  for the 
 | Monitors: % Performance Events/sec | Monitor that watches the .NET Apps/% Performance Events/sec performance counter. |
 | Monitors: Average Request Time | Monitor that watches the .NET Apps/Average Request Time performance counter. |
 
-## Client-Side Configuration
+## Client-side configuration
 
 ![Client-Side Configuration](./media/Client-Side-Configuration.png)
 
@@ -328,7 +328,7 @@ The following options are available on the  **Client-Side Configuration**  page 
 | IP address filter: Use IPv6 | Add the IPv6 filter if the IPv6 protocol is enabled on the web server. |
 | Advanced Settings | Specify settings, such as performance and event monitoring thresholds, exception event monitoring, Critical Exceptions, and monitors. |
 
-## Advanced Settings for Client-Side Monitoring
+## Advanced settings for Client-side monitoring
 
 ![Client-Side Advanced Settings](./media/Client-Side-Advanced-Settings.png)
 
@@ -352,7 +352,7 @@ The following options are available on the  **Advance Settings**  for  **Client-
 | Load balancer settings | Select the type of load balancer that you are using with your application. You can also add your own load balancer, if it is not included in the list. For more information, see [Client-Side Monitoring with Targeted Groups and Load Balancers](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544003%28v%3dsc.12%29)  |
 | Targeted group | Select specific servers to limit monitoring to this specific set of servers. This is optional. Targeted group scoping only becomes necessary when you have the same application running in multiple environments, such as production and staging, and you intend to run the template multiple times, one for each environment. In this scenario, group which machines belong to production and which belong to the staging environment, and then use the targeted groups to restrict where the configuration is propagated. You can also use groups to apply configuration to a subset of your servers. Otherwise, it is not necessary to specify targeted group scoping if you just want to monitor all instances of a given application. |
 
-## Enable Client-Side Monitoring
+## Enable client-side monitoring
 
 ![Enable Client-Side Monitoring](./media/Enable-Client-Side-Monitoring.png)
 
@@ -364,7 +364,7 @@ The following options are available on the  **Enable Client-Side Monitoring**  p
 | Customize | Modify the settings for the selected application component. This opens the  **Modifying Settings**  page. The settings on this page are similar to those on the  **Advanced Settings for Client-Side Monitoring**  page. On the  **Modifying Settings**  page, you can specify the pages to be excluded from monitoring. |
 | Targeted group | Select specific servers to limit monitoring to this specific set of servers. This is optional. Targeted group scoping only becomes necessary when you have the same application running in multiple environments, such as production and staging, and you intend to run the template multiple times, one for each environment. In this scenario, group which machines belong to production and which belong to the staging environment, and then use the targeted groups to restrict where the configuration is propagated. You can also use groups to apply configuration to a subset of your servers. Otherwise, it is not necessary to specify targeted group scoping if you just want to monitor all instances of a given application. |
 
-## Client-Side Modifying Settings
+## Client-side modifying settings
 
 ![Client-Side Modifying Settings](./media/Client-Side-Modifying-Settings.png)
 
@@ -397,11 +397,11 @@ The following options are available on the  **Client-Side Modifying Settings**  
 
 The  **Summary**  page of the wizard lists the settings you have configured for the  **.NET Application Performance Monitoring**  template. If you want to change any of these settings, click  **Previous**  or the template page until you reach the page with the settings that you want to change.
 
-## Creating and Modifying .NET Application Performance Monitoring Templates
+## Creating and modifying .NET application performance monitoring templates
 
 For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Monitoring for .NET Applications](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh543989%28v%3dsc.12%29).
 
-#### To modify an existing .NET Application Performance Monitoring template
+#### To modify an existing .NET application performance monitoring template
 
 1. Open the Operations console with a user account that has Author credentials in the management group.
 2. Click the  **Authoring**  workspace.
@@ -410,11 +410,11 @@ For the procedure to run the .NET Application Performance Monitoring wizard, see
 5. Right-click the application group that you want to modify, and then select  **Properties**.
 6. Using the tabs to navigate the pages of settings, make the desired changes, such as adding customized monitoring for a specific application component or configuring and enabling client-side monitoring, and then click  **OK**.
 
-## Viewing .NET Application Performance Monitoring Monitors and Collected Data
+## Viewing .NET application performance monitoring monitors and collected data
 
 After you configure monitoring for an application, these three views will help you get started with the monitoring experience.
 
-#### To view all .NET Application Performance Monitoring monitored applications
+#### To view all .NET application performance monitoring monitored applications
 
 1. Open the Operations console.
 2. Click the  **Monitoring**  workspace.
@@ -437,7 +437,7 @@ After you configure monitoring for an application, these three views will help y
 5. In the  **Legend**  pane, select the counters that you want to view.
 6. Use options in the  **Actions**  pane to modify the Performance view.
 
-## See Also
+## See also
 
 - [Before You Begin Monitoring .NET Applications](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-r2/hh543994(v=sc.12))
 - [How to Configure Monitoring for .NET Applications](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh543989%28v%3dsc.12%29)
