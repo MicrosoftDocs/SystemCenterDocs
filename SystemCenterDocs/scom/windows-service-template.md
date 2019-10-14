@@ -1,6 +1,6 @@
 ---
 ms.assetid: 504be106-2b97-4a06-be11-7edef683359a
-title: Windows Service Template
+title: Windows Service template
 description: This article provides an overview of windows service template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Windows Service Template
+# Windows Service template
 
 The _Windows Service_ template lets you find and monitor instances of a particular service installed on a Windows-based computer. The template locates computers that are running the service and then applies monitors and rules to test its availability and collect performance data. The only information that you have to provide is the name of the service and the types of monitoring that you want to perform.
 
@@ -20,7 +20,7 @@ The _Windows Service_ template lets you find and monitor instances of a particul
 
 Use the  **Windows Service**  template for any application that uses a service because typically the basic health of the service is critical to the health of the application. You can simply provide the name of the service and have it discovered and monitored on any computer where the application is installed.
 
-## Monitoring Performed by Windows Service Template
+## Monitoring performed by Windows Service template
 
 Depending on your selections in the Windows Service Template wizard, the monitoring performed by the created monitors and rules can include any of the following settings.
 
@@ -36,7 +36,7 @@ Depending on your selections in the Windows Service Template wizard, the monitor
 || Collection of Thread Count for the service | Disabled. Can be enabled with an override. |
 ||Collection of Working Set for the service | Disabled. Can be enabled with an override. |
 
-## Wizard Options
+## Wizard options
 
 When you run the  **Windows Service**  template, you have to provide values for options in the following tables. Each table represents a single page in the wizard.
 
@@ -73,11 +73,11 @@ The following options are available on the  **Performance Data**  page of the wi
 | Number of samples | If CPU usage or memory is monitored, this option specifies the number of consecutive performance samples that must be exceeded before the object is set to an error state and an alert is generated. <br>Specifying a number greater than 1 for this option limits the noise from monitoring by ensuring that an alert is not generated when the service only briefly exceeds the threshold. The larger the value that you set, the longer the period of time before you receive an alert. A typical value is 2 or 3.</br> |
 | Sample Interval | If CPU usage or memory is monitored, this option specifies the length of time between performance samples. A smaller value for this option reduces the time for detecting a problem but increases overhead on the agent and the amount of data collected for reporting. A typical value is between 5 and 15 minutes. |
 
-## Additional Monitoring
+## Additional monitoring
 
 In addition to performing the specified monitoring, the  **Windows Service**  template creates a class that you can use for additional monitors and workflows. Any monitor or rule that is using this class runs on any agent where the service is installed. If it creates Windows events that indicate an error, for example, you could create a monitor or rule that detects the particular event and uses the service' class as a target.
 
-## Creating and Modifying Windows Service Templates
+## Creating and modifying Windows Service templates
 
 #### To create a Windows Service template
 
