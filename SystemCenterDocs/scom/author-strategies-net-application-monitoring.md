@@ -18,7 +18,7 @@ Here are some scenarios and settings to change during authoring that can help yo
 
 ## Monitoring a new application for which the administrator has little knowledge
 
-Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-using-default-settings.md)
+Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-use-default-settings.md)
 
 ## Limit monitoring to a specific set of servers
 
@@ -85,7 +85,7 @@ You can turn off application failure alerts for server-side and client-side moni
 
 ## Only receive critical exceptions
 
-By default, .NET Application Performance Monitoring defines critical exceptions as exceptions handled by specific exception handlers provided by the .NET framework. These handlers catch top-level ASP.NET exceptions and web service exceptions that the monitored application failed to catch and handle internally. By adding exception handlers, you are adding to what application monitoring's definition of what a critical exception is. In effect, any exceptions handled by these functions will be considered critical exceptions. The advantage to using exception handlers is that you maintain the benefit of streamlined reporting of critical exceptions only, but you have the additional benefit of reporting functions that are of interest to you. For more information and a list of default exception handlers, see [Using Exception Handlers to Define Critical Exceptions](use-exception-handlers-to-define-critical-exceptions.md).
+By default, .NET Application Performance Monitoring defines critical exceptions as exceptions handled by specific exception handlers provided by the .NET framework. These handlers catch top-level ASP.NET exceptions and web service exceptions that the monitored application failed to catch and handle internally. By adding exception handlers, you are adding to what application monitoring's definition of what a critical exception is. In effect, any exceptions handled by these functions will be considered critical exceptions. The advantage to using exception handlers is that you maintain the benefit of streamlined reporting of critical exceptions only, but you have the additional benefit of reporting functions that are of interest to you. For more information and a list of default exception handlers, see [Using Exception Handlers to Define Critical Exceptions](use-exception-handlers-define-critical-exceptions.md).
 
 ## Improve client-side monitoring performance and reduce load on your server
 
