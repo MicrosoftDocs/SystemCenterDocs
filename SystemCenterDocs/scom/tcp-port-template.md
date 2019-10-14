@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1bde753f-c0e9-43b9-9a73-a78a4233881b
-title: TCP Port Template
+title: TCP port template
 description: This article provides an overview of TCP port template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# TCP Port Template
+# TCP port template
 
 The  **TCP Port**  template lets you monitor the availability of an application that is accessible over TCP.
 
@@ -22,7 +22,7 @@ The application that is being tested can reside on any computer whether an agent
 
 Use the  **TCP Port**  template in scenarios where applications rely on a service accessible over TCP. You can define each client as a watcher node. The monitors created by the template attempt to connect to the application from each client at the defined interval. The monitors verify that each client can connect successfully. In addition to validating the availability of the application itself, any network connections and other required features between the watcher node and the application are also validated.
 
-## Monitoring Performed by the TCP Port Template
+## Monitoring performed by the TCP port template
 
 The monitoring performed by the monitors and rules created by the TCP Port template can include any of the following settings.
 
@@ -34,13 +34,13 @@ The monitoring performed by the monitors and rules created by the TCP Port templ
 || DNS resolution | Enabled |
 | Collection Rules | Connection time | Enabled |
 
-## Viewing Monitoring Data
+## Viewing monitoring data
 
 All data collected by the  **TCP Port**  template is available in the  **TCP Port Checks State**  view located in the  **Synthetic Transaction**  folder. In this view, an object represents each of the watcher nodes. The state of each object represents the worst state of the set of TCP Port monitors running on that node. If one or more of the nodes is shown with an error while at least one other node is healthy, it could indicate a problem with that particular node accessing the specified computer, for example, a network issue. If all of the nodes are unhealthy, it could indicate a problem with the application itself, either the computer being offline or the application not responding on the specified port.
 
 You can view the state of the individual TCP Port monitors by opening the Operations Manager Health Explorer for each object. You can view performance data by opening the Performance view for each of these objects.
 
-## Wizard Options
+## Wizard options
 
 When you run the  **TCP Port**  template, you have to provide values for options in the following tables. Each table represents a single page in the wizard.
 
@@ -72,7 +72,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 | Select one or more agent managed computers | Specify one or more computers to run the monitors and rules. For more information, see [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
 | Run this query every | The frequency to attempt the connection to the specified computer and port. |
 
-## Creating and Modifying TCP Port Templates
+## Creating and modifying TCP port templates
 
 #### To run the TCP Port data source wizard
 
@@ -104,9 +104,9 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 5. Right-click the monitor, and then select  **Properties**.
 6. Enter the changes that you want, and then click  **OK**.
 
-## Viewing TCP Port Monitors and Collected Data
+## Viewing TCP port monitors and collected data
 
-#### To view all TCP Port monitors
+#### To view all TCP port monitors
 
 1. Open the Operations console.
 2. Open the  **Monitoring**  workspace.
@@ -123,7 +123,7 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 2. In the  **Legend**  pane, select the counters you want to view.
 3. Use options in the  **Actions**  pane to modify the Performance view.
 
-## See Also
+## See also
 
-- [Creating Management Pack Templates](creating-management-pack-templates.md)
+- [Creating Management Pack Templates](create-management-pack-templates.md)
 - [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
