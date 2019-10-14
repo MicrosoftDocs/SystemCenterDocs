@@ -24,7 +24,7 @@ Use the  **Web Application Transition Monitoring**  template for monitoring the 
 
 In addition to general availability, you can check the functionality of the website by testing different pages and features. For example, you could check a logon process by performing a test logon with a test user account every few minutes. You could test the functionality of a search page by performing a sample search after the test user account is logged on. You can then analyze the HTML that is returned from these pages to verify whether the page functioned as expected. In addition to testing this functionality, you can analyze the time it takes to fill the request to measure the performance.
 
-## Web Application Transaction Monitoring Template Topics
+## Web Application Transaction Monitoring template topics
 
 The  **Web Application Transaction Monitoring**  is more complex than the other management pack templates and supports a variety of monitoring scenarios. The following topics provide details on the different tools and procedures that you can use for different scenarios.
 
