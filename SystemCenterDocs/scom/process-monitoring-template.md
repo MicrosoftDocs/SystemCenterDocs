@@ -20,19 +20,19 @@ The _Process Monitoring_ template lets you monitor whether a particular process 
 
 Use the  **Process Monitoring**  template in different scenarios where you have to monitor a running process on an agent-managed Windows-based computer. Your application can monitor the following processes.
 
-## Critical Process
+## Critical process
 
 A process that must be running at all times. Use the  **Process Monitoring**  template to ensure that this process is running on the computers where it is installed, and use the  **Process Monitoring** template to measure its performance.
 
-## Unwanted Process
+## Unwanted process
 
 A process that should not be running. This process might be a known rogue process that can cause damage, or it might be a process that is automatically started when an error in the application occurs. The  **Process Monitoring**  template can monitor for this process and send an alert if it is found to be running.
 
-## Long Running Process
+## Long running process
 
 A process that runs for short periods at a time. If the process is running for an excessive length of time, it might indicate a problem. The  **Process Monitoring**  template can monitor for the length of time that this process runs and send an alert if the running time exceeds a particular duration.
 
-## Monitoring Performed by Process Monitoring Template
+## Monitoring performed by Process Monitoring Template
 
 Depending on your selections in the Process Monitoring wizard, the monitoring performed by the created monitors and rules can include any of the following settings.
 
@@ -46,7 +46,7 @@ Depending on your selections in the Process Monitoring wizard, the monitoring pe
 | Collection Rules | Collection of processor utilization of process | Enabled if you select  **Processes you want**  on the  **Process to Monitor**  page, and you enable  **CPU alert**  on the  **Performance Data** page. |
 || Collection of memory usage of process. | Enabled if you select  **Processes you want**  on the  **Process to Monitor**  page, and you enable  **memory alert**  on the  **Performance Data**  page. |
 
-## Viewing Monitoring Data
+## Viewing monitoring data
 
 All data collected by the  **Process Monitoring**  template is available in the  **Process State**  view located in the  **Windows Service and Process Monitoring**  folder. In this view, an object is listed for each agent in the group that you selected. Even if an agent does not monitor a process, it is listed, and the monitor reflects the state for the process that is not running.
 
@@ -54,11 +54,11 @@ You can view the state of the individual process monitors by opening the Operati
 
 The same process objects that are listed in the  **Process State**  view are included in the Health Explorer for the computer that hosts the process. The health state of the process monitors rolls up to the health of the computer.
 
-## Wizard Options
+## Wizard options
 
 When you run the  **Process Monitoring**  template, you have to provide values for the options in the following tables. Each table represents a single page in the wizard.
 
-## General Properties
+## General properties
 
 The following options are available on the  **General Options**  page of the wizard.
 
@@ -103,11 +103,11 @@ The following options are available on the  **Performance Data**  page of the wi
 | Number of samples | If CPU usage or memory is monitored, this option specifies the number of consecutive performance samples that must be exceeded before the object is set to an error state, and an alert is generated. Specifying a number greater than 1 for this option limits the noise from monitoring by ensuring that an alert is not generated when the service only briefly exceeds the threshold. The larger the value that you set, the longer the period of time before you are alerted to a problem. A typical value is 2 or 3. |
 | Sampling interval | If CPU usage or memory is monitored, specify the length of time between performance samples.A smaller value for this option reduces the time for detecting a problem but increases overhead on the agent and the amount of data collected for reporting. A typical value is between 5 and 15 minutes. |
 
-## Additional Monitoring
+## Additional monitoring
 
 In addition to performing the specified monitoring, the  **Process Monitoring**  template creates a targetd class that you can use for additional monitors and workflows. Any monitor or rule using this class as a target will run on any agent-managed computer in the group specified in the template. If it creates Windows events that indicate an error, for example, you could create a monitor or rule that detects the particular event and uses the process' class as a target.
 
-## Creating and Modifying Process Monitor Templates
+## Creating and modifying Process Monitor Templates
 
 #### To run the Process Monitoring wizard
 
@@ -177,7 +177,7 @@ In addition to performing the specified monitoring, the  **Process Monitoring** 
 2. In the  **Legend**  pane, select the counters that you want to view.
 3. Use options in the  **Actions**  pane to modify the Performance view.
 
-## See Also
+## See also
 
-- [Creating Management Pack Templates](creating-management-pack-templates.md)
+- [Creating Management Pack Templates](create-management-pack-templates.md)
 - [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
