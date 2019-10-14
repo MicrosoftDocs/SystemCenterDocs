@@ -20,7 +20,7 @@ The  **Web Application Availability Monitoring**  template lets you create avail
 
 Use the  **Web Application Availability Monitoring**  template in scenarios where you have to monitor web-based applications from different locations to see if they are working according to certain requirements, which you can specify.
 
-## Internal Locations
+## Internal locations
 
 You might have web applications that must be available at all times at internal locations. Use the  **Web Application Availability Monitoring**  template to see which web applications are available from which internal locations.
 
@@ -54,7 +54,7 @@ By default, the  **Web Application Availability Monitoring**  template configure
 ||- Content time: enabled
 ||- Download time: enabled
 
-## Viewing Monitoring Data
+## Viewing monitoring data
 
 All data collected by the  **Web Application Availability Monitoring**  template appears in the  **Web Application Availability Monitoring**  folder in the  **Application Monitoring**  folder in the  **Monitoring**  navigation pane. The  **Application Availability Monitoring**  folder contains the default views and subfolders that provide Test State, Web Application Status, and alerts related to the tests being monitored. By using the Test State view, you can see the test state of the individual tests. The state of each object matches the state of the targeted object that has the worst health state so that you see the worst state of the monitors that are running. If one or more of the tests are shown with an error while at least one other test is healthy, it could indicate a problem for that particular test location. If all of the components are unhealthy, it could indicate a problem with the web application itself.
 
@@ -64,7 +64,7 @@ All data collected by the  **Web Application Availability Monitoring**  template
 
 To view the state of the individual monitors, open the Health Explorer for each test.
 
-## Wizard Options
+## Wizard options
 
 When you run the  **Web Application Availability Monitoring**  template, you have to provide values for options as listed in the following tables. Each table represents a single page in the wizard.
 
@@ -80,7 +80,7 @@ The following options are available on the  **General**  page of the wizard.
 | Description | Describe the template. (Optional) |
 | Select destination management pack | Select the management pack to store the views and configuration created by the template. Use the same name for your new management pack as the test group so you can easily pair the two names. You can use an existing management pack or create a new management pack. For more information about management packs, see [Selecting a Management Pack File](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29). |
 
-## What to Monitor
+## What to monitor
 
 ![What to Monitor page](./media/What-to-monitor-page1.png)
 
@@ -126,7 +126,7 @@ The following options are available on the  **Select internal locations**  page 
 | Selected locations: Name | These are the internal locations you have chosen to monitor from. |
 | Selected locations: Location | List of the locations you have chosen to monitor from. |
 
-## View and Validate Tests
+## View and validate tests
 
 ![View and Validate Tests page](./media/View-and-Validate-Tests-page.png)
 
@@ -143,7 +143,7 @@ The following options are available on the  **View and Validate Tests**  page of
 | Run Test | Run a validation test for internal tests that are selected. |
 | Change Configuration | Open the  **Change Configuration**  page where you can change the settings for all tests in the template you are authoring. |
 
-## Test Results: Summary Tab
+## Test results: Summary tab
 
 ![Test Results Summary tab](./media/Test-Results-Summary-tab.png)
 
@@ -153,7 +153,7 @@ The following options are available on the  **Test Results Summary**  tab of the
 | --- | --- |
 | Summary tab | Confirms if the test request was correctly processed and shows the URL and Location used in the test. Additionally. The specific tests and results are shown: Status code, DNS resolution time, and Total response time. |
 
-## Test Results: Details Tab
+## Test results: Details tab
 
 ![Test Results Details tab](./media/Test-Results-Details-tab.png)
 
@@ -169,7 +169,7 @@ The following options are available on the  **Test Results Details**  tab of the
 | Details tab: Response body size (bytes) | Displays the Response body size of the HTTP response information. |
 | Details tab: Server certificate expiration (days) | Displays the certificate expiration of the date when the site expired. Website can have expired certificates. |
 
-## Test Results: HTTP Request Tab
+## Test results: HTTP request tab
 
 ![Test Results HTTP Request tab](./media/Test-Results-HTTP-Request-tab.png)
 
@@ -179,7 +179,7 @@ The following options are available on the  **Test Results HTTP Request**  tab o
 | --- | --- |
 | HTTP Request tab | Displays details about the HTTP request of the test what is sent to the website. |
 
-## Test Results: HTTP Response Tab
+## Test results: HTTP response tab
 
 ![Test Results HTTP Response tab](./media/Test-Results-HTTP-Response-tab.png)
 
@@ -189,7 +189,7 @@ The following options are available on the  **Test Results HTTP Response**  tab 
 | --- | --- |
 | What is shown on this tab | Displays details about the HTTP Response for the test comes back from website. |
 
-## Test Results: Raw Data Tab
+## Test results: Raw data tab
 
 ![Test Results Raw Data tab](./media/Test-Results-Raw-Data-tab.png)
 
@@ -199,7 +199,7 @@ The following options are available on the  **Test Results Raw Data**  tab of th
 | --- | --- |
 | What is shown on this tab | Displays all of the data unformatted that we get back from the site. If there's a problem with the website, this information might help you figure out what might be wrong with the website. |
 
-## Change Configuration for Test Set
+## Change configuration for test set
 
 ![Change Configuration for Test page (top)](./media/Change-Configuration-for-Test-page-top.png)
 
@@ -255,11 +255,11 @@ The following options are available on the  **Change Configuration for Test Set*
 
 The  **Summary**  page of the wizard lists the settings you have configured for the  **Web Application Availability Monitoring**  template. If you want to change any of these settings, click  **Previous**  or the template page until you reach the page with the settings that you want to change.
 
-## Creating and Modifying Web Application Availability Monitoring Templates
+## Creating and modifying web application availability monitoring templates
 
 For the procedure to run the .NET Application Performance Monitoring wizard, see [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
 
-#### To modify an existing Web Application Availability Monitoring template
+#### To modify an existing Web application availability monitoring template
 
 1. Open the Operations console with a user account that has Author credentials in the management group.
 2. Click the  **Authoring**  workspace.
@@ -268,11 +268,11 @@ For the procedure to run the .NET Application Performance Monitoring wizard, see
 5. Right-click the test group that you want to modify, and then select  **Properties**.
 6. Using the tabs to navigate the pages of settings, make the desired changes, such as reconfiguring criteria for tests in this group, and then click  **OK**.
 
-## Viewing Web Application Availability Monitoring Monitors and Collected Data
+## Viewing web application availability monitoring monitors and collected data
 
 After you configure monitoring for an application, these three views will help you get started with the monitoring experience.
 
-#### To view all Web Application Availability Monitoring monitored applications
+#### To view all web application availability monitoring monitored applications
 
 1. Open the Operations console.
 2. Click the  **Monitoring**  workspace.
@@ -294,7 +294,7 @@ After you configure monitoring for an application, these three views will help y
 5. In the  **Legend**  pane, select the counters that you want to view.
 6. Use options in the  **Actions**  pane to modify the Performance view.
 
-## See Also
+## See also
 
 - [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
 - [Monitoring Web Application Availability Tests and Alerts](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881880%28v%3dsc.12%29)
