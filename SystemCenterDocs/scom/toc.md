@@ -84,7 +84,7 @@
 #### [.NET Application Performance Monitoring Template](net-application-performance-monitoring-template.md)
 #### [Using Exception Handlers to Define Critical Exceptions](use-exception-handlers-to-define-critical-exceptions.md)
 #### [Authoring Strategies for .NET Application Monitoring](author-strategies-.net-application-monitoring.md)
-#### [Application Monitoring Using the Default Settings](application-monitoring-using-default-settings.md)
+#### [Application Monitoring Using the Default Settings](application-monitor-using-default-settings.md)
 #### [OLE DB Data Source Template](ole-db-datasource-template.md)
 #### [Process Monitoring Template](process-monitoring-template.md)
 #### [TCP Port Template](tcp-port-template.md)
