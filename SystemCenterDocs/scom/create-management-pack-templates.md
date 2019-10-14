@@ -38,6 +38,6 @@ Use the following procedure to create and modify management pack templates.
 3. In the  **Authoring**  navigation pane, expand the  **Management Pack Templates**  node.
 4. Right-click the template to view, select  **View Management Pack Objects** , and then select the kind of element that you want to view.
 
-## **See also**
+## See also
 
 - [Management Pack Templates](management-pack-templates.md)
