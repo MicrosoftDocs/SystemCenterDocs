@@ -60,7 +60,7 @@ All data collected by the  **Web Application Availability Monitoring**  template
 
 **Web Application Availability Monitoring folder**
 
-![Web Application Availability Monitoring folder](./media/Web-Application-Availability-Monitoring-folder.png)
+![Web Application Availability Monitoring folder](./media/web-application-availability-monitoring-folder.png)
 
 To view the state of the individual monitors, open the Health Explorer for each test.
 
@@ -70,7 +70,7 @@ When you run the  **Web Application Availability Monitoring**  template, you hav
 
 ## General
 
-![General page](./media/General-page.png)
+![General page](./media/general-page.png)
 
 The following options are available on the  **General**  page of the wizard.
 
@@ -82,7 +82,7 @@ The following options are available on the  **General**  page of the wizard.
 
 ## What to monitor
 
-![What to Monitor page](./media/What-to-monitor-page1.png)
+![What to Monitor page](./media/what-to-monitor-page1.png)
 
 Add URLs to the list by typing, pasting, or importing a file into the table, including the appropriate protocol (http:// or https://). You can paste entire rows as pairs of comma-separated values (CSV) that are in the format 'Name, URL', or you can paste just the list of URLs.
 
@@ -96,7 +96,7 @@ The following options are available on the  **What to Monitor**  page of the wiz
 
 ## Where to Monitor From
 
-![Where to Monitor From page](./media/Where-to-Monitor-From-page.png)
+![Where to Monitor From page](./media/where-to-monitor-from-page.png)
 
 Select the internal locations from which you want the URLs to be monitored.
 
@@ -109,7 +109,7 @@ The following options are available on the  **Where to Monitor From**  page of t
 
 ## Select Internal Locations
 
-![Select internal locations page](./media/Select-internal-locations-page.png)
+![Select internal locations page](./media/select-internal-locations-page.png)
 
 Select the internal locations from which you want to monitor the URLs you specified on the  **What to Monitor**  page. Click Add to add internal locations and then search for and select the internal locations that you want to monitor from.
 
@@ -128,7 +128,7 @@ The following options are available on the  **Select internal locations**  page 
 
 ## View and validate tests
 
-![View and Validate Tests page](./media/View-and-Validate-Tests-page.png)
+![View and Validate Tests page](./media/view-and-validate-tests-page.png)
 
 This is a summary of all tests that will be run. Select an internal location and click  **Run Test**  to validate the test configuration. Select Change configuration to change the default settings for all tests in this template.
 
@@ -145,7 +145,7 @@ The following options are available on the  **View and Validate Tests**  page of
 
 ## Test results: Summary tab
 
-![Test Results Summary tab](./media/Test-Results-Summary-tab.png)
+![Test Results Summary tab](./media/test-results-summary-tab.png)
 
 The following options are available on the  **Test Results Summary**  tab of the wizard.
 
@@ -155,7 +155,7 @@ The following options are available on the  **Test Results Summary**  tab of the
 
 ## Test results: Details tab
 
-![Test Results Details tab](./media/Test-Results-Details-tab.png)
+![Test Results Details tab](./media/test-results-details-tab.png)
 
 The following options are available on the  **Test Results Details**  tab of the wizard.
 
@@ -171,7 +171,7 @@ The following options are available on the  **Test Results Details**  tab of the
 
 ## Test results: HTTP request tab
 
-![Test Results HTTP Request tab](./media/Test-Results-HTTP-Request-tab.png)
+![Test Results HTTP Request tab](./media/test-results-http-request-tab.png)
 
 The following options are available on the  **Test Results HTTP Request**  tab of the wizard.
 
@@ -181,7 +181,7 @@ The following options are available on the  **Test Results HTTP Request**  tab o
 
 ## Test results: HTTP response tab
 
-![Test Results HTTP Response tab](./media/Test-Results-HTTP-Response-tab.png)
+![Test Results HTTP Response tab](./media/test-results-http-response-tab.png)
 
 The following options are available on the  **Test Results HTTP Response**  tab of the wizard.
 
@@ -191,7 +191,7 @@ The following options are available on the  **Test Results HTTP Response**  tab 
 
 ## Test results: Raw data tab
 
-![Test Results Raw Data tab](./media/Test-Results-Raw-Data-tab.png)
+![Test Results Raw Data tab](./media/test-results-raw-data-tab.png)
 
 The following options are available on the  **Test Results Raw Data**  tab of the wizard.
 
@@ -201,9 +201,9 @@ The following options are available on the  **Test Results Raw Data**  tab of th
 
 ## Change configuration for test set
 
-![Change Configuration for Test page (top)](./media/Change-Configuration-for-Test-page-top.png)
+![Change Configuration for Test page (top)](./media/change-configuration-for-test-page-top.png)
 
-![Change Configuration for Test page (bottom)](./media/Change-Configuration-for-Test-page-bottom.png)
+![Change Configuration for Test page (bottom)](./media/change-configuration-for-test-page-bottom.png)
 
 The following options are available on the  **Change Configuration for Test Set**  page of the wizard.
 
