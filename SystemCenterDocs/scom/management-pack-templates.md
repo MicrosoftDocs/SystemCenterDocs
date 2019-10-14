@@ -28,7 +28,7 @@ The following table lists the management pack templates that are part of the sta
 | --- | --- |
 | [.NET Application Performance Monitoring Template](net-application-performance-monitoring-template.md) | Monitor .NET applications to get details about application performance and reliability. |
 | [OLE DB Data Source Template](ole-db-datasource-template.md) | Monitor a database accessible with OLE DB. |
-| [Process Monitoring Template](process-monitor-template.md) | Discover and monitor instances of a particular Windows process. |
+| [Process Monitoring Template](process-monitoring-template.md) | Discover and monitor instances of a particular Windows process. |
 | [TCP Port Template](tcp-port-template.md) | Monitor the availability of an application that is listening on a specific port. |
 | [UNIX or Linux Log File](unix-linux-logfile.md) | Monitor a UNIX or Linux log file for a specific entry. |
 | [UNIX or Linux Process](unix-linux-process.md) | Monitor a UNIX or Linux process. |
