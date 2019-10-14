@@ -1,6 +1,6 @@
 ---
 ms.assetid: d12f1b76-178f-4f30-a452-d47eb7fd5e3c
-title: UNIX or Linux Process
+title: UNIX or Linux process
 description: This article provides an overview of UNIX or Linux process
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# UNIX or Linux Process
+# UNIX or Linux process
 
 The _UNIX/Linux Process Monitoring_ template lets you monitor that a particular process installed on an UNIX or Linux computer runs.
 
@@ -20,7 +20,7 @@ The _UNIX/Linux Process Monitoring_ template lets you monitor that a particular 
 
 The  **UNIX/Linux Process Monitoring**  template is useful for monitoring any application as monitoring processes is typically critical to the health of the application.
 
-## Monitoring Performed by the UNIX/Linux Process Monitoring Template
+## Monitoring performed by the UNIX/Linux process monitoring template
 
 The following table shows the monitoring activity that the  **UNIX/Linux Process Monitoring** template performs.
 
@@ -28,7 +28,7 @@ The following table shows the monitoring activity that the  **UNIX/Linux Process
 | --- | --- | --- |
 | Monitors | Process Count is Outside of Range | Always enabled. |
 
-## Wizard Options
+## Wizard options
 
 When you run the  **UNIX/Linux Process Monitoring**  template, you have to provide values for options in the following tables. Each table represents a single page in the wizard.
 
@@ -63,13 +63,13 @@ The following options are available on the  **Process Template Settings**  page 
 | Minimum number of instances | The minimum number of running instances of the monitored process. To alert if no instances of the process are running, check the box  **Generate an alert when the number of process instances is less than the specified value** , and input a value of 1. The number of process instances is calculated after filtering by process name and the optional Regular expression to filter process arguments. If the number of running instances is less than the provided value, an alert will be generated. |
 | Maximum number of instances | The maximum number of running instances of the monitored process. To alert if more than a specific number of instances of the process are running, check the box  **Generate an alert when the number of process instances is greater than the specified value** , and input the maximum threshold value. The number of process instances is calculated after filtering by process name and the optional Regular expression to filter process arguments. If the number of running instances is greater than the provided value, an alert will be generated. |
 
-## Additional Monitoring
+## Additional monitoring
 
 In addition to performing the specified monitoring, the  **UNIX/Linux Process Monitoring**  template creates a target class that you can use for additional monitors and rules. Any monitor or rule that uses this class as a target runs on any agent where the process is installed.
 
-## Creating and Modifying UNIX/Linux Process Monitoring Templates
+## Creating and modifying UNIX/Linux process monitoring templates
 
-#### To create a UNIX/Linux Process Monitoring template
+#### To create a UNIX/Linux process monitoring template
 
 1. If you want to monitor a process on a group of computers, determine the targeted group for the monitor by using the following logic:
 
@@ -96,7 +96,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 16. Click  **Next**.
 17. Click  **Create**.
 
-#### To modify an existing UNIX/Linux Process Monitoring template
+#### To modify an existing UNIX/Linux process monitoring template
 
 1. Open the Operations console with a user account that has Author credentials.
 2. Open the  **Authoring**  workspace.
@@ -105,7 +105,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 5. Right-click the template, and then select  **Properties**.
 6. Enter the changes that you want, and then click  **OK**.
 
-## Viewing UNIX/Linux Process Monitors and Collected Data
+## Viewing UNIX/Linux process monitors and collected data
 
 #### To view the state of each monitor
 
@@ -113,6 +113,6 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 2. In the  **UNIX/Linux Computers**  pane, right-click an object, select  **Open** , and then click  **Health Explorer**.
 3. Expand the  **Availability**  node, and then click the  **Application/Service Availability Rollup**  node to view the individual process monitor.
 
-## See Also
+## See also
 
-- [Creating Management Pack Templates](creating-management-pack-templates.md)
+- [Creating Management Pack Templates](create-management-pack-templates.md)
