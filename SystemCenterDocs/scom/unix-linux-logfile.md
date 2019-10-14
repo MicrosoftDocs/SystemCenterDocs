@@ -1,6 +1,6 @@
 ---
 ms.assetid: 7a8a492c-fede-4952-952a-6dec5b7be382
-title: UNIX or Linux Log File
+title: UNIX or Linux log file
 description: This article provides an overview of UNIX or Linux log file
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# UNIX or Linux Log File
+# UNIX or Linux log file
 
 The  **UNIX/Linux Log File Monitoring**  template lets you create an alert when a particular text is detected in a log file.
 
@@ -28,11 +28,11 @@ The following table shows the monitoring activity that the  **UNIX/Linux Log Fil
 | --- | --- | --- |
 | Rule | Creates an alert when a specified text is detected. | Enabled |
 
-## Wizard Options
+## Wizard options
 
 When you run the  **UNIX/Linux Log File Monitoring**  template, you have to provide values for the options in the following tables. Each table represents a single page in the wizard.
 
-## General Options
+## General options
 
 The following options are available on the  **General Options**  page of the wizard.
 
@@ -40,7 +40,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the template. This name is displayed in the Operations console. |
 | Description | Optional description of the template. |
-| Management Pack | Management pack file to store the rule that the template creates. For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
+| Management Pack | Management pack file to store the rule that the template creates. For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
 
 ## Log File Details
 
@@ -53,9 +53,9 @@ The following options are available on the  **Log File Details**  page of the wi
 | Log file path | Complete path and name of the log file. |
 | Expression | Regular expression of the text to detect. If you want to detect a simple string of characters, type the string of characters. |
 
-## Creating and Modifying UNIX/Linux Log File Templates
+## Creating and modifying UNIX/Linux log file templates
 
-#### To create a UNIX/Linux Log File template
+#### To create a UNIX/Linux log file template
 
 1. If you want to monitor the log file on a group of computers, determine the target group for the monitor by using the following logic:
 
@@ -66,7 +66,7 @@ The following options are available on the  **Log File Details**  page of the wi
 2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Log File Monitoring** , and then click  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a name and description for this new template.
-5. Select a management pack in which to save the template or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457560%28v%3dsc.12%29).
+5. Select a management pack in which to save the template or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](select-management-pack-file.md).
 6. If you want to monitor the log file on a single computer, do the following:
    - Click the  **Select a Computer**  button next to the  **Computer name**  box.
    - Select the computer to monitor, and then click  **OK**.
@@ -90,11 +90,11 @@ The following options are available on the  **Log File Details**  page of the wi
 5. Right-click the template, and then select  **Properties**.
 6. Enter the changes that you want, and then click  **OK**.
 
-## Viewing UNIX/Linux Log File Data
+## View UNIX/Linux log file data
 
 There is no monitor or collected data for the  **UNIX/Linux Log File Monitoring**  template. If a match is found in the specified log file, an alert is generated. You can view this alert in the  **Active Alerts** view with the other alerts.
 
-## See Also
+## See also
 
 - [Creating Management Pack Templates](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh563869%28v%3dsc.12%29)
-- [Watcher Nodes](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
+- [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
