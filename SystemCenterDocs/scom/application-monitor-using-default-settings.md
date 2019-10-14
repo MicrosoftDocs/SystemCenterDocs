@@ -36,5 +36,5 @@ There is no default for the load balancers. The load balancer setting is one you
 
 ## See also
 
-- [Authoring Strategies for .NET Application Monitoring](authoring-strategies-.net-application-monitoring.md)
+- [Authoring Strategies for .NET Application Monitoring](author-strategies-.net-application-monitoring.md)
 - [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29)
