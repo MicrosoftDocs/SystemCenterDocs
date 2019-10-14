@@ -1,6 +1,6 @@
 ---
 ms.assetid: 61149e13-9249-493b-adb0-6997dc8dd6b1
-title: Management Pack Templates
+title: Management pack templates
 description: This article provides an overview of management pack templates
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Management Pack Templates
+# Management pack templates
 
 _Management Pack Templates_ provide _Monitoring wizards_ that let you create complete monitoring scenarios with minimal input. The wizard creates the required monitors, rules, and even targets to implement the particular scenario. There is no requirement for you to understand the management pack elements that are created. You can modify the configuration of the wizard itself if you want to change the way that monitoring is being performed.
 
