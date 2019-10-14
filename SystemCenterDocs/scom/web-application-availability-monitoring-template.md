@@ -1,6 +1,6 @@
 ---
 ms.assetid: 3b3c168b-a279-41cc-bde4-ba6cc554add9
-title: Web Application Availability Monitoring Template
+title: Web Application Availability Monitoring template
 description: This article provides an overview of web application availability monitoring template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Web Application Availability Monitoring Template
+# Web Application Availability Monitoring template
 
 The  **Web Application Availability Monitoring**  template lets you create availability monitoring tests for one or more web application URLs and run these monitoring tests from internal locations. In addition to state and alert views, you can display the status of these tests in a provided map dashboard and a details dashboard.
 
