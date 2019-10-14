@@ -5,7 +5,7 @@ description: This article provides an overview of UNIX or Linux process
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 08/02/2019
+ms.date: 10/14/2019
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
