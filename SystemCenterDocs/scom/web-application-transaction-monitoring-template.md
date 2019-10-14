@@ -1,6 +1,6 @@
 ---
 ms.assetid: 5c187754-29e7-41a8-ae85-cb2d1514b0a4
-title: Web Application Transaction Monitoring Template
+title: Web Application Transaction Monitoring template
 description: This article provides an overview of web application transaction monitoring template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# Web Application Transaction Monitoring Template
+# Web Application Transaction Monitoring template
 
 The _Web Application Transaction Monitoring_ template lets you test a website or web-based application by sending requests over HTTP, validating their response, and measuring their performance. This can be a simple test to determine if the website is responding, or it can be a complex set of requests to simulate a user who is performing such actions as logging on to the site and browsing through a set of pages.
 
