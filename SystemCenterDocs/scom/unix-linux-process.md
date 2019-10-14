@@ -40,7 +40,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the template. This is the name that is displayed in the Operations console. |
 | Description | Optional description of the template. |
-| Management Pack | Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the process as a targeted process, you must store them in the same management pack.For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
+| Management Pack | Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that are using the process as a targeted process, you must store them in the same management pack.For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
 
 ## Process Monitoring Details
 
@@ -80,7 +80,7 @@ In addition to performing the specified monitoring, the  **UNIX/Linux Process Mo
 2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **UNIX/Linux Process Monitoring** , and then click  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a name and optional description for this new template.
-5. Select a management pack in which to save the monitor or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](selecting-management-pack-file.md).
+5. Select a management pack in which to save the monitor or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](select-management-pack-file.md).
 6. Click  **Next**.
 7. Click the  **Select a Process**  button.
 8. Click the  **Browse**  button and select a computer that has the process installed, and then click  **OK**.
