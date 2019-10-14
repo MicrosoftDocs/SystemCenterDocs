@@ -71,7 +71,7 @@ All data collected by the  **.NET Application Performance Monitoring**  template
 
 **Application monitoring folders**
 
-![ASP.NET Application Performance Monitoring folder](./media/asp.NET-application-performance-monitoring-folder.png)
+![ASP.NET Application Performance Monitoring folder](./media/aspnet-application-performance-monitoring-folder.png)
 
 To view the state of the individual monitors, open the Health Explorer for each component. Drill down to the unhealthy monitors to see what is making your application unhealthy. For more information, see [Monitoring .NET Applications](http://go.microsoft.com/fwlink/?linkid=225673)
 
@@ -209,7 +209,7 @@ For each application type there are several transaction types you can choose to 
 
 ## Transaction properties: add ASP.NET web page
 
-![Server-side transaction properties ASP.NET webpage](./media/Server-side-transaction-properties.png)
+![Server-side transaction properties ASP.NET webpage](./media/server-side-transaction-properties.png)
 
 The following options are available on the  **Transaction Properties**  page for ASP.NET Web Page page of the wizard.
 
@@ -229,7 +229,7 @@ The following options are available on the  **Transaction Properties**  page for
 
 ## Transaction properties: add ASP.NET web service
 
-![Server-side transaction ASP.NET web service](./media/Server-side-transaction-web-service.png)
+![Server-side transaction ASP.NET web service](./media/server-side-transaction-web-service.png)
 
 The following options are available on the  **Transaction Properties**  page for the  **ASP.NET Web Service**  page of the wizard.
 
@@ -250,7 +250,7 @@ The following options are available on the  **Transaction Properties**  page for
 
 ## Transaction properties: add ASP.NET MVC page
 
-![Transaction Properties page for MVC](./media/Transaction-Properties-page-MVC.png)
+![Transaction Properties page for MVC](./media/transaction-properties-page-mvc.png)
 
 For System Center 2012 SP1 the following options are available on the  **Transaction Properties**  for the  **ASP.MVC**  page of the wizard.
 
@@ -271,7 +271,7 @@ For System Center 2012 SP1 the following options are available on the  **Transac
 
 ## Transaction properties: add WCF method
 
-![Transaction Properties for WCF](./media/Transaction-Properties-WCF.png)
+![Transaction Properties for WCF](./media/transaction-properties-wcf.png)
 
 The following options are available on the  **Transaction Properties**  for the  **Add WCF method settings**  page of the wizard.
 
@@ -292,7 +292,7 @@ The following options are available on the  **Transaction Properties**  for the 
 
 ## Transaction properties: add function
 
-![Server-side transaction properties function](./media/Server-side-transaction-properties-function.png)
+![Server-side transaction properties function](./media/server-side-transaction-properties-function.png)
 
 The following options are available on the  **Transaction Properties**  for the  **Add Function**  page of the wizard.
 
@@ -313,7 +313,7 @@ The following options are available on the  **Transaction Properties**  for the 
 
 ## Client-side configuration
 
-![Client-Side Configuration](./media/Client-Side-Configuration.png)
+![Client-Side Configuration](./media/client-side-configuration.png)
 
 The following options are available on the  **Client-Side Configuration**  page of the wizard.
 
@@ -330,7 +330,7 @@ The following options are available on the  **Client-Side Configuration**  page 
 
 ## Advanced settings for Client-side monitoring
 
-![Client-Side Advanced Settings](./media/Client-Side-Advanced-Settings.png)
+![Client-Side Advanced Settings](./media/client-side-advanced-settings.png)
 
 The following options are available on the  **Advance Settings**  for  **Client-Side Monitoring**  page of the wizard.
 
@@ -354,7 +354,7 @@ The following options are available on the  **Advance Settings**  for  **Client-
 
 ## Enable client-side monitoring
 
-![Enable Client-Side Monitoring](./media/Enable-Client-Side-Monitoring.png)
+![Enable Client-Side Monitoring](./media/enable-client-side-monitoring.png)
 
 The following options are available on the  **Enable Client-Side Monitoring**  page of the wizard.
 
@@ -366,7 +366,7 @@ The following options are available on the  **Enable Client-Side Monitoring**  p
 
 ## Client-side modifying settings
 
-![Client-Side Modifying Settings](./media/Client-Side-Modifying-Settings.png)
+![Client-Side Modifying Settings](./media/client-side-modifying-settings.png)
 
 The following options are available on the  **Client-Side Modifying Settings**  page of the wizard.
 
@@ -393,7 +393,7 @@ The following options are available on the  **Client-Side Modifying Settings**  
 
 ## Summary
 
-![Summary page](./media/Summary-page.png)
+![Summary page](./media/summary-page.png)
 
 The  **Summary**  page of the wizard lists the settings you have configured for the  **.NET Application Performance Monitoring**  template. If you want to change any of these settings, click  **Previous**  or the template page until you reach the page with the settings that you want to change.
 
