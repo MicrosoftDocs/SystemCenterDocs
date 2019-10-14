@@ -48,7 +48,7 @@ The following options are available on the  **General Options**  page of the wiz
 | --- | --- |
 | Name | The name used for the service. This name is displayed in the Operations console for the wizard. |
 | Description | Optional description of the service. |
-| Management Pack | Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that use the service as a target class, they have to be stored in the same management pack. For more information about management packs, see [Selecting a Management Pack File](selecting-management-pack-file.md). |
+| Management Pack | Management pack to store the class and monitors that the template creates. If you create any additional monitors or rules that use the service as a target class, they have to be stored in the same management pack. For more information about management packs, see [Selecting a Management Pack File](select-management-pack-file.md). |
 
 ## Service Details
 
@@ -92,7 +92,7 @@ In addition to performing the specified monitoring, the  **Windows Service**  te
 2. Start the  **Add Monitoring**  wizard.
 3. On the  **Select Monitoring Type**  page, select  **Windows Service** , and then click  **Next**.
 4. On the  **General Properties**  page, in the  **Name**  and  **Description**  boxes, type a  **name**  and description for this new monitor.
-5. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](selecting-management-pack-file.md).
+5. Select a management pack in which to save the monitor, or click  **New**  to create a new management pack. For more information, see [Selecting a Management Pack File](select-management-pack-file.md).
 6. Click  **Next**.
 7. In the  **Service Name**  box, type the name of the specific service that you want to monitor, or click the ellipse ( **…** ) button to browse for the service. You can select any computer that has the service installed.
 8. Under  **Targeted Group** , specify the group from step 1 of this procedure.
