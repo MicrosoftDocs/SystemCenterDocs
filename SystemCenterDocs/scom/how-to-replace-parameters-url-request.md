@@ -1,6 +1,6 @@
 ---
 ms.assetid: 79cdd322-909b-4159-a189-d9e3a68ad681
-title: How to Replace Parameters in a URL Request
+title: How to replace parameters in a URL request
 description: This article provides an overview about how to replace parameters in a URL request
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# How to Replace Parameters in a URL Request
+# How to replace parameters in a URL request
 
 When you capture a web application by using the Web Application Editor, it can include unique information in one or more requests that changes each time you connect to the application. This information is typically included in the response to a request and then used by one or more subsequent requests.
 
@@ -22,7 +22,7 @@ To configure such an application, you can extract a context parameter from the b
 
 A single application can use any number of context parameters. Any number of requests can use a single parameter but must be run after the request where the parameter is defined.
 
-## Session ID Example
+## Session ID example
 
 Consider the example where an application creates a session ID when a user logs on. This session ID is required in each request after the logon page. To implement this scenario, you have to capture the session ID when it is first generated, and then use that value in each subsequent request.
 
@@ -56,7 +56,7 @@ http://www.myapp.com/results.aspx?sessionid=$ParametersContext/sessionID$
 http://www.myapp.com/submit.aspx?sessionid=$ParametersContext/sessionID$
 
 ```
-## Creating an Extraction Rule
+## Creating an extraction rule
 
 Context parameters are collected by an _extraction rule_, and each extraction rule collects a single context parameter. You create an extraction rule in the  **Properties**  dialog box of the request that initially generates the required data. To identify the value to extract, you must view the body of the response returned from the particular request. You can either view the source of the page returned in the browser or use a tool that lets you inspect the details of HTTP responses. You cannot view the text by using the Web Application Editor.
 
@@ -71,7 +71,7 @@ When you have identified the request that contains the information you have to e
 | Ignore case during search for matching text | Specifies whether to ignore the case of the characters being searched by the  **Starts with**  and  **Ends with**  boxes. |
 | Perform URI encoding of extracted strings | Specifies whether to encode the extracted string after it is collected. |
 
-## Inserting a Parameter into a Request
+## Inserting a parameter into a request
 
 You use a parameter in a request by replacing the explicit value with a variable representing the parameter. The format of the variable is $ParametersContext/\<ContextParameterName>$. When the request is run, the variable is replaced with the data extracted by the parameter.
 
@@ -80,7 +80,7 @@ You can insert the variable into the request by using one of the two following m
 - In the  **Request Properties**  dialog box, click the  **General**  tab, and then click  **Request URL**  to modify the request URL for the request.
 - In the  **Request Properties**  dialog box, click the  **General**  tab, and then click the  **Insert parameter**  button. Use the  **Insert Parameter**  dialog box for the request. This is accessed from the  **Insert parameter**  button on the  **General**  tab in the  **Request Properties**  dialog box for the request.
 
-## Sample Web Application Using Parameter Extraction
+## Sample web application Using parameter extraction
 
 The following procedure provides an example of using parameter extraction in a web application. This example performs a query for the first entry in the  **Popular Now**  section of the Bing home page. Because this value changes regularly, you have to first connect to the main page and collect the search term from the body of the response. You then use this term to build the request to perform the actual search.
 
