@@ -1,6 +1,6 @@
 ---
 ms.assetid: 3b2683c5-6f10-437e-87cb-cb389356ea00
-title: OLE DB Data Source Template
+title: OLE DB data source template
 description: This article provides an overview about OLE DB data source template
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -12,7 +12,7 @@ ms.technology: operations-manager
 ms.topic: article
 ---
 
-# OLE DB Data Source Template
+# OLE DB data source template
 
 _OLE DB_ (Object Linking and Embedding Database) is a Microsoft technology for accessing a variety of data sources by using a common method to connect to different databases such as Microsoft SQL Server.
 
@@ -24,7 +24,7 @@ The database can reside on any computer whether it has an agent for Operations M
 
 Use the  **OLE DB Data Source**  template in scenarios where applications rely on a database. You can either define a single watcher node to ensure that the database is accessible and responds to requests, or you can define each application server as a watcher node. The monitors that the template creates attempt to connect to the database from each location at the defined interval, and verify that each watcher node can connect successfully. In addition to validating the health of the database itself, any network connections and other required features between the watcher node and the database are also validated. You can use any number of watcher nodes, but it is typically most useful to select a sample that represents different environment or network segments.
 
-## Monitoring Performed by OLE DB Data Source Template
+## Monitoring performed by OLE DB data source template
 
 Depending on your selections in the OLE DB Data Source Template wizard, the monitoring performed by the created monitors and rules can include any of the following settings.
 
@@ -38,17 +38,17 @@ Depending on your selections in the OLE DB Data Source Template wizard, the moni
 || Collection of time to complete the query | Always enabled if the query is provided. |
 || Collection of time to fetch results of query | Always enabled if the query is provided. |
 
-## Viewing Monitoring Data
+## Viewing monitoring data
 
 All data collected by the  **OLE DB Data Source**  template is available in the  **OLE DB Data Source State**  view located in the  **Synthetic Transaction**  folder. In this view, an object represents each of the watcher nodes. The state of each object represents the worst state of the set of database monitors that are running on that node. If one or more of the nodes is shown with an error while at least one other node is healthy, it could indicate a problem with that particular node accessing the database, a network issue. If all of the nodes are unhealthy, it could indicate a problem with the database itself.
 
 You can view the state of the individual database monitors by opening the Operations Manager Health Explorer for each object. You can view performance data by opening the Performance view for each of these objects.
 
-## Wizard Options
+## Wizard options
 
 When you run the  **OLE DB Data Source**  template, you have to provide values for options in the following tables. Each table represents a single page in the wizard.
 
-## General Properties
+## General properties
 
 The following options are available on the  **General Options**  page of the wizard.
 
@@ -87,21 +87,21 @@ The following options are available on the  **Watcher Nodes**  page of the wizar
 | Select one or more agent-managed computers | Specify one or more agent-managed computers to run the monitor. For more information, see [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29). |
 | Run this query every | The frequency to attempt the connection to the database and run the query, if specified. |
 
-## Security Considerations
+## Security considerations
 
 The  **OLE DB Data Source**  template creates two Run As profiles. The name for each of these profiles starts with the name that you provided in the template and is followed by "Simple Authentication Profile" and "Synthetic Transaction Profile". If no Run As account is added to either of these profiles, the Default Action Account for each watcher node is used to connect the database and run the query. If the Default Action Account does not have access to the database that is being monitored, the connection fails. You can specify either integrated security or simple authentication by creating a Run As account and adding it to the appropriate Run As profile that the  **OLE DB Data Source** template created.
 
 When you run the  **OLE DB Data Source**  template, it creates two Run As profiles. The name for each starts with the  **Name**  that you provided when you ran the template. The  **OLE DB Synthetic Transaction Profile**  is used when you want to use integrated security for the database connection. The  **OLE DB Simple Authentication Profile**  is used when you want to use simple authentication for the database connection.
 
-## Integrated Security
+## Integrated security
 
 Integrated security lets you connect to the database by using credentials stored in Active Directory Domain Services. To connect the watcher nodes to the database by using integrated security, create a Run As account with  **Windows**  as the  **Account type**  and the credentials for the appropriate user account. Then add this Run As profile to the  **OLE DB Synthetic Transaction Profile**.
 
-## Simple Authentication
+## Simple authentication
 
 Simple authentication lets you connect to the database by using a simple name and password. For a SQL Server database, this simple authentication could be used for SQL Server authentication. To have the watcher nodes connect to the database by using simple authentication, create a Run As account with  **Simple Authentication**  as the  **Account type**  and the credentials for the appropriate user account. Then add this Run As profile to the  **OLE DB Simple Authentication Profile**. When you specify the connection string for the template, select the  **Use Simple Authentication RunAs Profile created for this OLE DB data source transaction**  check box. This adds variables to the connection string for the user name and password that you specified in the Run As account.
 
-## Creating and Modifying OLE DB Data Source Templates
+## Creating and modifying OLE DB data source templates
 
 #### To run the OLE DB Data Source wizard
 
@@ -144,7 +144,7 @@ Simple authentication lets you connect to the database by using a simple name an
 5. Right-click the monitor, and then select  **Properties**.
 6. Enter the changes that you want, and then click  **OK**.
 
-## Viewing OLE DB Data Source Monitors and Collected Data
+## Viewing OLE DB data source monitors and collected data
 
 #### To view all OLE DB Data Source monitors
 
@@ -163,7 +163,7 @@ Simple authentication lets you connect to the database by using a simple name an
 2. In the  **Legend**  pane, select the counters that you want to view.
 3. Use options in the  **Actions**  pane to modify the Performance view.
 
-## See Also
+## See also
 
-- [Creating Management Pack Templates](creating-management-pack-templates.md)
+- [Creating Management Pack Templates](create-management-pack-templates.md)
 - [Watcher Nodes](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh457584%28v%3dsc.12%29)
