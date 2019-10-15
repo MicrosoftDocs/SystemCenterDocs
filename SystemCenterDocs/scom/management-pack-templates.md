@@ -2,8 +2,8 @@
 ms.assetid: 61149e13-9249-493b-adb0-6997dc8dd6b1
 title: Management pack templates
 description: This article provides an overview of management pack templates
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
