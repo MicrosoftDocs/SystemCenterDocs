@@ -2,8 +2,8 @@
 ms.assetid: 79cdd322-909b-4159-a189-d9e3a68ad681
 title: How to replace parameters in a URL request
 description: This article provides an overview about how to replace parameters in a URL request
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
