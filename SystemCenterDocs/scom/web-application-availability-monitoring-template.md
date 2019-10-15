@@ -2,8 +2,8 @@
 ms.assetid: 3b3c168b-a279-41cc-bde4-ba6cc554add9
 title: Web Application Availability Monitoring template
 description: This article provides an overview of web application availability monitoring template
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
@@ -121,7 +121,7 @@ The following options are available on the  **Select internal locations**  page 
 | Filter by part of name | Filter your search of internal locations. |
 | Search | Search for locations that are available to monitor from. Available locations are displayed in the in the Location area. |
 | Where to monitor: Name | List of the internal locations from which you can select to monitor from. |
-| Where to monitor: Location |   |
+| Where to monitor: Location | List of the locations from which you can select to monitor from.  |
 | Add | Add the internal locations you have selected to the Selected locations area. These are the locations you are configuring the wizard to monitor from. |
 | Selected locations: Name | These are the internal locations you have chosen to monitor from. |
 | Selected locations: Location | List of the locations you have chosen to monitor from. |
@@ -239,7 +239,7 @@ The following options are available on the  **Change Configuration for Test Set*
 | General Configuration: Allow redirects | Specify if redirects can be allowed and not cause an error or warning state. |
 | General Configuration: HTTP version | Specify the HTTP version being tested. |
 | General Configuration: HTTP method | Specify the HTTP method. |
-| General Configuration: Request body |   |
+| General Configuration: Request body | Represents the body of the request.  |
 | HTTP Headers: Headers column | Specify which headers can be accepted. |
 | HTTP Headers: Value column | Specify the value in the header that can be accepted. |
 | HTTP Headers: Add | Add header names and values that can be accepted. |
@@ -297,6 +297,6 @@ After you configure monitoring for an application, these three views will help y
 ## See also
 
 - [How to Configure Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881882%28v%3dsc.12%29)
-- [Monitoring Web Application Availability Tests and Alerts](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881880%28v%3dsc.12%29)
-- [Dashboard Views for Web Application Availability Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881879%28v%3dsc.12%29)
-- [Reporting for Web Application Availability Monitoring](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh881878%28v%3dsc.12%29)
+- [Monitoring Web Application Availability Tests and Alerts](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881880%28v%3dsc.12%29)
+- [Dashboard Views for Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881879%28v%3dsc.12%29)
+- [Reporting for Web Application Availability Monitoring](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh881878%28v%3dsc.12%29)
