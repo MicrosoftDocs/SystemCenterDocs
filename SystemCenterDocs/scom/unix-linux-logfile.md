@@ -2,8 +2,8 @@
 ms.assetid: 7a8a492c-fede-4952-952a-6dec5b7be382
 title: UNIX or Linux log file
 description: This article provides an overview of UNIX or Linux log file
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
