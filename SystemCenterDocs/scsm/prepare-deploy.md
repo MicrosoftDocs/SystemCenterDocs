@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 01/23/2018
+ms.date: 10/15/2019
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -90,8 +90,8 @@ You will have to provide credentials for the accounts in the following table dur
 |Account|Permissions|How it is used in Service Manager|  
 |-------------|-----------------|---------------------------------------------|  
 |Management group administrators|-   Must be a domain user or group. <br> **Important:**      The user account that is logged into the computer during installation of an initial Service Manager management server is automatically added to this group.|-   Added to the Service Manager Administrators user role.|  
-|Service Manager services account|-   Must be a domain user or group.<br />-   Must be member of local administrators.|-   Becomes the Operational System Account.<br />-   Assigned to the logon account for the System Center Data Access Service.<br />-   Assigned to the logon account for System Center Management Configuration service.<br />-   Becomes a member of the sdk\_users and configsvc\_users database roles for the Service Manager database.<br />-   If you change the credentials for these two services, make sure that the new account has a SQL Login in the ServiceManager database and that this account is a member of the Builtin\\Administrators group.|  
-|Workflow account|-   Must be a domain user or group.<br />-   Must have permissions to send email and must have a mailbox on the Simple Mail Transfer Protocol \(SMTP\) server \(required for the E\-mail Incident feature\).<br />-   Must be member of the Users local security group.<br />-   Must be made a member of the Service Manager Administrators user role for email notifications for function properly.|-   This account is used for all workflows and is made a member of the Service Manager Workflows user role.|  
+|Service Manager services account|-   Must be a domain user or group.<br />-   Must be member of local administrators.<br />- Must have **Log on as a service**. <br /><br /> To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment**.  <br /> <br /> **Optional**: <br /><br />- Deny log on as a batch job <br /><br /> - Deny log on through Remote Desktop Services. |-   Becomes the Operational System Account.<br />-   Assigned to the logon account for the System Center Data Access Service.<br />-   Assigned to the logon account for System Center Management Configuration service.<br />- Becomes a member of the sdk\_users and configsvc\_users database roles for the Service Manager database.<br />-   If you change the credentials for these two services, make sure that the new account has a SQL Login in the ServiceManager database and that this account is a member of the Builtin\\Administrators group.|  
+|Workflow account|-   Must be a domain user or group.<br />-   Must have permissions to send email and must have a mailbox on the Simple Mail Transfer Protocol \(SMTP\) server \(required for the E\-mail Incident feature\).<br />-   Must be member of the Users local security group.<br />-   Must be made a member of the Service Manager Administrators user role for email notifications for function properly. Must be a domain user or group.<br />-   Must be member of local administrators.<br />- Must have **Log on as a service**. <br /><br /> To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment**.<br /><br /> **Optional**: <br />-Deny log on as a batch job<br /><br />-Deny log on through Remote Desktop Services.  |-   This account is used for all workflows and is made a member of the Service Manager Workflows user role.|  
 
 #### Security best practices for accounts
 
@@ -105,8 +105,8 @@ You will have to provide credentials for the accounts in the following table dur
 |-------------|-----------------|---------------------------------------------|  
 |Management group administrators|-   Must be a domain user or group.|-   Added to the data warehouse administrators user role.|  
 |Service Manager services account|-   Must be a domain user or group.<br />-   Must be member of local administrators on the data warehouse management server.<br />-   Must be the same account that you used for the Service Manager management server services account.|-   Becomes the data warehouse system Run As account.<br />-   Assigned to the ServiceManager SDK Service account.<br />-   Assigned to ServiceManager Config account.<br />-   Becomes a member of the sdk\_users and configsvc\_users database roles for the DWDataMart database.<br />-   Becomes a member of the db\_datareader database role for the DWRepository database.<br />-   Becomes a member of the configsvc\_users database role for the Service Manager database.|  
-|Reporting account|-   Must be a domain account.|-   Used by SQL Server Reporting Services \(SSRS\) to access the DWDataMart database to get data for reporting.<br />-   Becomes a member of the db\_datareader database role for the DWDataMart database.<br />-   Becomes a member of the reportuser database role for the DWDatamart database.|  
-|Analysis Services account|-   Must be a domain account.|-   Used to communicate with datamarts.<br />-   Account is added as an administrator role in the Analysis Services server database \(DWASDataBase\) for database processing and cube reading.|  
+|Reporting account|-   Must be a domain account. <br />- Must have **Log on as a service**. <br /><br /> To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment**. <br /> <br /> **Optional**: <br /><br />- Deny log on as a batch job <br /><br /> - Deny log on through Remote Desktop Services.|-   Used by SQL Server Reporting Services \(SSRS\) to access the DWDataMart database to get data for reporting.<br />-   Becomes a member of the db\_datareader database role for the DWDataMart database.<br />-   Becomes a member of the reportuser database role for the DWDatamart database.|  
+|Analysis Services account|-   Must be a domain account.<br />- Must have **Log on as a service**. <br /><br /> To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment**. <br /> <br /> **Optional**: <br /><br />- Deny log on as a batch job <br /><br /> - Deny log on through Remote Desktop Services.|-   Used to communicate with datamarts.<br />-   Account is added as an administrator role in the Analysis Services server database \(DWASDataBase\) for database processing and cube reading.|  
 
 ### Credential used when registering a Service Manager management group with the data warehouse management group
 
@@ -117,7 +117,18 @@ You will have to provide credentials for the accounts in the following table dur
 
 ### Accounts required to create connectors
 
- When you are creating connectors, you are asked for credentials that the connector will use to perform its function. The following table outlines the permissions that this account will need, and it describes best practices for high security.  
+ When you are creating connectors, you are asked for credentials that the connector will use to perform its function. The following outlines the permissions that this account will need, and it describes best practices for high security.  
+
+ Connector accounts for Operations Manager, Orchestrator, SCVMM, AD requires **Log on as a service**.
+
+ To set these permissions, use **Security Settings** > **Local Policies** > **User Rights Assignment** .
+
+**Optional**:
+ - Deny log on as a batch job
+ - Deny log on through Remote Desktop Services.
+
+
+
 
 #### Operations Manager Alert connector  
 
