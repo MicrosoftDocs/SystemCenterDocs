@@ -2,8 +2,8 @@
 ms.assetid: 5c187754-29e7-41a8-ae85-cb2d1514b0a4
 title: Web Application Transaction Monitoring template
 description: This article provides an overview of web application transaction monitoring template
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
