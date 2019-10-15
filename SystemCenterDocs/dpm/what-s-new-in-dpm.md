@@ -68,7 +68,7 @@ With DPM 2019, you can back up newer versions of workloads, listed below:
 ## Faster backups with Tiered storage using SSDs
 DPM 2016 introduced [Modern Backup Storage](https://docs.microsoft.com/system-center/dpm/add-storage?view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
-To achieve the scale and performance by MBS, we recommend using a small percentage (2% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
+To achieve the scale and performance by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
 
 ## Support for Central Monitoring
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
