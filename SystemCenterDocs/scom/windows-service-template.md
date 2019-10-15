@@ -2,8 +2,8 @@
 ms.assetid: 504be106-2b97-4a06-be11-7edef683359a
 title: Windows Service template
 description: This article provides an overview of windows service template
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
