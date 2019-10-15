@@ -2,8 +2,8 @@
 ms.assetid: 20634e48-491b-400f-beb4-2eae28362052
 title: .NET application performance monitoring template
 description: This article provides an overview of .NET application performance monitoring template
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
