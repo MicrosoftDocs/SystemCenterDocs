@@ -2,8 +2,8 @@
 ms.assetid: a554a6b1-252e-4cc3-8b8f-80a7ea43b6da
 title: Create management pack templates
 description: This article provides an overview of creating management pack templates
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
