@@ -2,8 +2,8 @@
 ms.assetid: 1bde753f-c0e9-43b9-9a73-a78a4233881b
 title: TCP port template
 description: This article provides an overview of TCP port template
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
