@@ -2,8 +2,8 @@
 ms.assetid: 3b2683c5-6f10-437e-87cb-cb389356ea00
 title: OLE DB data source template
 description: This article provides an overview about OLE DB data source template
-author: JYOTHIRMAISURI
-ms.author: v-jysur
+author: v-anesh
+ms.author: v-anesh
 manager: vvithal
 ms.date: 10/14/2019
 ms.custom: na
