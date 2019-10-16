@@ -1,6 +1,6 @@
 ---
 ms.assetid: 3b3c168b-a279-41cc-bde4-ba6cc554add9
-title: Web Application Availability Monitoring template
+title: Web Application Availability Monitoring template in Operations Manager management pack
 description: This article provides an overview of web application availability monitoring template
 author: v-anesh
 ms.author: v-anesh

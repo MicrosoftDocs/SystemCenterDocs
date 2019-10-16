@@ -1,6 +1,6 @@
 ---
 ms.assetid: 5d49e7f3-0e22-4ab4-90c4-ef1c67a28aae
-title: Using exception handlers to define critical exceptions
+title: Using exception handlers to define critical exceptions in Operations Manager management pack
 description: This article provides an overview of using exception handlers to define critical exceptions
 author: v-anesh
 ms.author: v-anesh
