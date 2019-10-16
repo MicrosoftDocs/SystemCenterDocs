@@ -200,7 +200,7 @@ netsh advfirewall firewall add rule name="VMM" dir=in action=allow localport=<po
 
 ### Nano Server-based VM fails to join a domain
 **Description**: During Nano Server VM deployment, if you join the VM to a domain by specifying the domain join information on the **OS Configuration** page of the VM deployment Wizard, VMM deploys the VM but doesn't add it to the specified domain.
-**Workaround:** After the VM is deployed, manually join the VM to the domain. [Learn more](https://technet.microsoft.com/windows-server-docs/compute/nano-server/getting-started-with-nano-server).
+**Workaround:** After the VM is deployed, manually join the VM to the domain. [Learn more](/windows-server/get-started/getting-started-with-nano-server).
 
 
 ### Error when starting a VM with Start Ordering
