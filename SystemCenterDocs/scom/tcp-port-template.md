@@ -1,6 +1,6 @@
 ---
 ms.assetid: 1bde753f-c0e9-43b9-9a73-a78a4233881b
-title: TCP port template
+title: TCP port template in Operations Manager management pack
 description: This article provides an overview of TCP port template
 author: v-anesh
 ms.author: v-anesh

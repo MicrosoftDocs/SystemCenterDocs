@@ -1,6 +1,6 @@
 ---
 ms.assetid: 77b54fbe-b6c3-4934-8b42-c89c08e3ccfd
-title: Authoring strategies for .NET application monitoring
+title: Authoring strategies for .NET application monitoring in Operations Manager management pack
 description: This article provides an overview about authoring strategies for .NET application monitoring
 author: v-anesh
 ms.author: v-anesh
