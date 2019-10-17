@@ -105,7 +105,7 @@ The following options are available on the  **Performance Data**  page of the wi
 
 ## Additional monitoring
 
-In addition to performing the specified monitoring, the  **Process Monitoring**  template creates a targetd class that you can use for additional monitors and workflows. Any monitor or rule using this class as a target will run on any agent-managed computer in the group specified in the template. If it creates Windows events that indicate an error, for example, you could create a monitor or rule that detects the particular event and uses the process' class as a target.
+In addition to performing the specified monitoring, the  **Process Monitoring**  template creates a targeted class that you can use for additional monitors and workflows. Any monitor or rule using this class as a target will run on any agent-managed computer in the group specified in the template. If it creates Windows events that indicate an error, for example, you could create a monitor or rule that detects the particular event and uses the process' class as a target.
 
 ## Creating and modifying Process Monitor Templates
 
