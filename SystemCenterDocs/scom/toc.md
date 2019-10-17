@@ -179,7 +179,7 @@
 #### [How to configure Run As accounts and profiles for UNIX and Linux access](manage-security-config-crossplat-runas-profile.md)
 #### [Accessing UNIX and Linux computers](manage-security-authenticate-crossplat.md)
 #### [How to set credentials for accessing UNIX and Linux computers](manage-security-create-crossplat-credentials.md)
-#### [How to configure sudu elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md)
+#### [How to configure sudo elevation and SSH keys](manage-security-create-crossplat-sudo-sshkeys.md)
 #### [Configure Kerberos authentication for Linux computers](manage-linux-kerberos-auth.md)
 #### [Required capabilities for UNIX and Linux computers](manage-security-crossplat-capabilities.md)
 #### [Configuring SSL ciphers](manage-security-crossplat-config-sslcipher.md)
