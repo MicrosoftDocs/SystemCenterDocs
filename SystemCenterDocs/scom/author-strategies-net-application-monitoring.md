@@ -16,7 +16,7 @@ ms.topic: article
 
 Here are some scenarios and settings to change during authoring that can help you receive the monitoring experience and data that is most helpful for you.
 
-## Monitoring a new application for which the administrator has little knowledge
+## Monitoring a new application
 
 Accepting all defaults can be a good way to start monitoring an application for which the administrator has little or no knowledge. Then, after monitoring with all defaults for some time, the administrator can begin adjusting settings based on the monitoring alerts, Application Diagnostics data, and Application Advisor reports. For more information, see [How to Start Monitoring a New Application](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh544005%28v%3dsc.12%29) and [Application Monitoring Using the Default Settings](application-monitor-use-default-settings.md)
 
@@ -26,7 +26,7 @@ Defining a targeted group allows you to limit monitoring to a specific set of se
 
 For large application deployments, you typically do not need to monitor all instances of the application. A representative sample is enough to get the data you need. Using only a representative sample will keep the amount of data collected and stored lower.
 
-## Reduce the "Noise" by defining how much data you collect
+## Reduce the "Noise" 
 
 Increasing the sensitivity threshold allows you to filter out fast-running methods, which reduce overall "noise", or how deep the call stack is going to go, making it easier for you to determine where the problem is. It also reduces network bandwidth usage.
 
@@ -87,7 +87,7 @@ You can turn off application failure alerts for server-side and client-side moni
 
 By default, .NET Application Performance Monitoring defines critical exceptions as exceptions handled by specific exception handlers provided by the .NET framework. These handlers catch top-level ASP.NET exceptions and web service exceptions that the monitored application failed to catch and handle internally. By adding exception handlers, you are adding to what application monitoring's definition of what a critical exception is. In effect, any exceptions handled by these functions will be considered critical exceptions. The advantage to using exception handlers is that you maintain the benefit of streamlined reporting of critical exceptions only, but you have the additional benefit of reporting functions that are of interest to you. For more information and a list of default exception handlers, see [Using Exception Handlers to Define Critical Exceptions](use-exception-handlers-define-critical-exceptions.md).
 
-## Improve client-side monitoring performance and reduce load on your server
+## Improve client-side monitoring performance
 
 You might also want to adjust the sampling rate to control the performance impact of the monitoring on your application with client-side monitoring. Reducing the sampling rate reduces the application monitoring traffic and helps conserve server resources. If you have even a low-traffic site, instrumenting and collecting data from every user who connects will result in a large amount of non-actionable data to sift through. Taking a random sample will give you the insight you need into the application performance from the client perspective without flooding you with a large amount of data to process and store.
 
