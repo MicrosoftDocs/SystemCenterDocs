@@ -74,7 +74,7 @@ The **Run Behavior** tab contains the properties that determine how the activity
 
 A **Get** activity retrieves information from another activity or outside source and can then return one or more values in the **Get** activity's published data. For example, the data output from **Azure Hosted Services** activity could be a list of hosted services that belong to the specified collection.
 
-By default, the data from a **Get** activity will be passed on as multiple individual outputs. These multiple outpus invoke the next activity as many times as there are items in the output. Alternatively, to request a single combined output, you can enable the **Flatten** option. When you enable the **Flatten** option, you must specify the output format:
+By default, the data from a **Get** activity will be passed on as multiple individual outputs. These multiple outputs invoke the next activity as many times as there are items in the output. Alternatively, to request a single combined output, you can enable the **Flatten** option. When you enable the **Flatten** option, you must specify the output format:
 
 -   **Separate with line breaks**. Each item is on a new line. This format is useful for creating human-readable text files.
 -   **Separate with**. Each item is separated by one or more characters of your choice.
