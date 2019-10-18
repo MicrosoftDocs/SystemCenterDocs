@@ -46,9 +46,6 @@ The following tables list the optional and required properties and Published Dat
 | Document Folder  | The document library relative path of the child folder to which the file was uploaded. | String   |
 | Title   | The title that was assigned to the document.   | String   |
 
-## See Also
-
-
 ## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

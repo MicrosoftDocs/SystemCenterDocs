@@ -44,9 +44,6 @@ The activity publishes all of the data from the required and optional properties
 | Snapshot Time   | The time of the snapshot.   | Datetime   |
 | Storage Account Name | The name of the storage account. | String   |
 
-## See Also
-
-
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
