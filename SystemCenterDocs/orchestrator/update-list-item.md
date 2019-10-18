@@ -43,9 +43,6 @@ There are no optional properties for this runbook activity.
 >[!TIP]
 >You can use comma-separated values to specify input values for multi-choice fields.
 
-## See Also
-
-
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

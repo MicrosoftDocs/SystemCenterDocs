@@ -44,9 +44,6 @@ There are no optional properties for this runbook activity.
 | Geographic Replication Enabled | Enables or disables geo-replication on the specified storage account. | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-## See Also
-
-
 ## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

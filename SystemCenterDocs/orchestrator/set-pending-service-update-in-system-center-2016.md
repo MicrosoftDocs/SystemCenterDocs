@@ -76,9 +76,7 @@ There are no optional properties for this activity.
 | User Role ID   |   |   |
 | User Role Name   |   |   |
 
-## See Also
 
-
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center 2016 Orchestrator](design-and-build-runbooks.md)

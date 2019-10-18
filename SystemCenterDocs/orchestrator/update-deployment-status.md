@@ -60,9 +60,7 @@ There are no optional properties for this runbook activity.
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | Boolean   |
 | Deployment Status   | The new status of the deployment.   | String   |
 
-## See Also
 
-
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

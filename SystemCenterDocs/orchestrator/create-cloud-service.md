@@ -45,9 +45,7 @@ There are no optional properties for this runbook activity.
 | Location/Affinity Group   | Whether to create the cloud service in a certain location or affinity group.   | String   |
 | Location/Affinity Group Value | The location where the cloud service will be created, or the name of an existing affinity group associated with the subscription. | String   |
 
-## See Also
 
-
-#### Other Resources
+##Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)
