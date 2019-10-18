@@ -60,9 +60,6 @@ There are no optional properties for this runbook activity.
 | Domain ID to Upgrade   | A value that identifies the upgrade domain to walk.   | Integer   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity. | True, False   |
 
-## See Also
-
-
 ## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

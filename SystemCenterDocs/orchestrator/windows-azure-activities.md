@@ -238,9 +238,6 @@ This integration pack adds the **Windows Azure** category to the **Activity** pa
 
 [Walk Upgrade Domain](walk-upgrade-domain.md)
 
-## See Also
-
-
 ## Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

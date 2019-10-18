@@ -42,9 +42,6 @@ There are no optional properties for this runbook activity.
 | SharePoint Site | The URL of the SharePoint site.   | String   |
 | Source File   | The absolute path of the file on the local machine to be uploaded. | String   |
 
-## See Also
-
-
 ## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

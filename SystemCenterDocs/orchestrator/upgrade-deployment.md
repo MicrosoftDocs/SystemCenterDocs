@@ -67,9 +67,6 @@ The activity publishes all of the data from the required and optional properties
 | Role To Upgrade   | The name of the specific role to upgrade.   | String   |
 | Wait for Completion   | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 
-## See Also
-
-
 ## Other Resources
 
 [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md)

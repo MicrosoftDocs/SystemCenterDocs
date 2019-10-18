@@ -33,9 +33,6 @@ No optional properties are provided for this activity.
 
 No published data is provided for this activity.
 
-## See Also
-
-
-#### Other Resources
+## Other Resources
 
 [Using Runbooks in System Center 2016 - Orchestrator](design-and-build-runbooks.md)

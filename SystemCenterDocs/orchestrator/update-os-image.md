@@ -46,8 +46,6 @@ There are no optional properties for this runbook activity.
 | Wait for Completion | Whether to wait for this operation to complete in Windows Azure before moving on to the next activity.   | Boolean   |
 | Request ID   | The unique identifier of the request to Windows Azure.   | String   |
 
-## See Also
-
 
 ## Other Resources
 
