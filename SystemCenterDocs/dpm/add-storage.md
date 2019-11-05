@@ -16,7 +16,7 @@ ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
 
 ::: moniker range="<=sc-dpm-1807"
 
-https:// \<https://> \<yourdatahub-website-name>.azurewebsites.net
+https://\<yourdatahub-website-name>.azurewebsites.net
 
 Modern Backup Storage (MBS) was introduced in System Center Data Protection Manager (DPM) 2016 to deliver 50% storage savings, 3X faster backups, and more efficient, workload-aware storage.
 
