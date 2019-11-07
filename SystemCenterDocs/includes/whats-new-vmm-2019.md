@@ -50,7 +50,7 @@ The control of encryption is at the subnet level and encryption can be enabled/d
 
 L3 forwarding enables connectivity between the physical infrastructure in the datacenter and the virtualized infrastructure in the Hyper-V network virtualization cloud. Earlier versions of VMM supported the Layer 3 gateway configuration through PowerShell.
 
-In VMM 2019, you can configure Layer 3 forwarding gateway using the VMM console. [Learn more](../vmm/sdn-route-network-traffic.md#configure-l3-forwarding).
+In VMM 2019, you can configure Layer 3 forwarding gateway using the VMM console. [Learn more](../vmm/sdn-route-network-traffic.md#configure-l3-forwarding-1).
 
 ### Support for Static MAC address on VMs deployed on a VMM cloud
 
