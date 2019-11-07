@@ -98,7 +98,7 @@ You can install the Authoring Tool on a server that hosts the Service Manager ma
 
 ##### Additional requirements  
 
--   [Microsoft .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=162791), which you can download from the Microsoft Download Center.  
+-   [Microsoft .NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21), which you can download from the Microsoft Download Center.  
 -   Microsoft Visual Studio 2008 Shell, which must be in the same language as the display language of the operating system. You can install Visual Studio 2008 Shell from the **Prerequisites** page in the Service Manager Authoring Tool Setup Wizard.  
 
     > [!NOTE]  

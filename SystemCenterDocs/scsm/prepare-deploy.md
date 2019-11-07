@@ -97,7 +97,7 @@ You will have to provide credentials for the accounts in the following table dur
 
  When you are assigning Active Directory accounts for use with Service Manager Run As Accounts, it is a best practice to use service accounts. We strongly recommend against using Active Directory user accounts that are associated with individual people.  
 
- For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](https://go.microsoft.com/fwlink/p/?LinkID=167160).
+ For more information about security best practices, download a copy of the Windows Server Security Guide, which is now part of the [Windows Server Security Compliance Management Toolkit](https://www.microsoft.com/download/details.aspx?id=55319).
 
 #### Accounts used when you install a data warehouse management server  
 
