@@ -204,7 +204,7 @@ As part of your DPM backup strategy, you'll have to back up the DPM database. Th
 
     Make sure you have the passcode that was specified when the Azure Recovery Services Agent was installed and the DPM server was registered in the Azure Backup vault. You'll need this passcode to restore the backup.
 
-2.  Create an Azure Backup vault, download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](https://azure.microsoft.com/en-us/documentation/articles/backup-azure-dpm-introduction/).
+2.  Create an Azure Backup vault, download the Azure Backup Agent installation file and vault credentials. Run the installation file to install the agent on the DPM server and use the vault credentials to register the DPM server in the vault. [Learn more](https://azure.microsoft.com/documentation/articles/backup-azure-dpm-introduction/).
 
 3.  After the vault is configured set up a DPM protection group that contains the DPM database, and select to back it up to disk and to Azure.
 
