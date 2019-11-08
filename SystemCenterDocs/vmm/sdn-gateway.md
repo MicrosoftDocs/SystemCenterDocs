@@ -179,7 +179,7 @@ For additional information, see the following contents:
 
 - [Create and validate site-to-site IPSec connections](sdn-route-network-traffic.md#configure-ipsec-connection)
 - [Create and validate site-to-site GRE connections](sdn-route-network-traffic.md#configure-gre-tunneling)
-- [Create and validate L3 connections](sdn-route-network-traffic.md#configure-l3-forwarding)
+- [Create and validate L3 connections](sdn-route-network-traffic.md#configure-l3-forwarding-1)
 
 For more information on connection types, see [this](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn) article.
 

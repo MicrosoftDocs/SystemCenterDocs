@@ -132,7 +132,7 @@ You don't need additional VMM servers, but has increased risk for downtime in so
 
 
 1.	Backup and retain the VMM database.
-2.	[Uninstall the VMM](#uninstall-the-vmm) on the passive node.  
+2.	Uninstall the VMM on the passive node.  
 3.	On the passive VMM node, upgrade the management OS to Windows server 2016.
 4.	Upgrade to the Windows 10 version of the ADK.
 5. Install VMM 2016 on the passive node by using the following steps:

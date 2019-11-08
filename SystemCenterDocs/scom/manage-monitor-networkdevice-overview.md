@@ -74,9 +74,9 @@ Network discovery and monitoring requires the following management packs, which 
   
 There are additional management packs that are required to relate network devices to each other and to the agent computers they are connected to. Network monitoring requires discovery of the network adapter for each agent computer, which is performed by the management pack for the agent computer's operating system. Verify that the management packs from the following list are installed for each of the operating systems in your environment.  
   
--   [Windows Server 2003, 2008, 2008 R2, 2012, and 2012 R2 Operating System](https://go.microsoft.com/fwlink/p/?LinkId=219547)  
+-   [Windows Server 2003, 2008, 2008 R2, 2012, and 2012 R2 Operating System](https://www.microsoft.com/download/details.aspx?id=9296)  
   
--   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://go.microsoft.com/fwlink/p/?LinkId=219548)  
+-   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://www.microsoft.com/download/details.aspx?id=15700)  
 
 -   [Windows 8 and 8.1 Client Operating System](https://www.microsoft.com/download/details.aspx?id=38434) 
   
