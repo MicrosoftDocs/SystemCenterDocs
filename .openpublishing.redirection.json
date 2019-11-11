@@ -857,6 +857,10 @@
      "source_path" : "SystemCenterDocs/scom/plan-system-requirements.md",
      "redirect_url" : "/system-center/scom/system-requirements"
 },
+{
+     "source_path" : "SystemCenterDocs/scom/plan-supported-crossplat-os-1807.md",
+     "redirect_url" : "/system-center/scom/plan-supported-crossplat-os"
+},
 
 {
      "source_path" : "SystemCenterDocs/scom/gsm/global-service-monitor.md",
