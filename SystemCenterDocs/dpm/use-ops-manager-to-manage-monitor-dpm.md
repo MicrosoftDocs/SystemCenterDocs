@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.prod: system-center
 keywords:
 ms.date: 5/10/2018
-title: Manage and monitor DPM servers with Operations Manager
+title: Manage and monitor DPM servers with System Center Operations Manager
 ms.technology: data-protection-manager
 ms.assetid: 97fd6656-af44-4e5c-bef8-dc57643b0181
 ms.author: raynew
@@ -66,7 +66,7 @@ DPM provides the following management packs:
 
 1. On the Operations Manager server, remove any existing DPM management packs.
 
-2. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=56560) the DPM management packs.
+2. [Download](https://www.microsoft.com/download/details.aspx?id=56560) the DPM management packs.
 
     By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
