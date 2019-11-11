@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 5/10/2018
 title: Manage and monitor DPM servers with Operations Manager
 ms.technology: data-protection-manager
@@ -19,9 +19,9 @@ Central Console is a System Center Operations Manager console that you can deplo
 - Centralized monitoring of DPM servers from a single location - You can monitor different versions of DPM, and track the status and health of servers, tasks, protected resources, tape libraries, available storage and disk space, and backups.
 - Service-level agreement (SLA)-based alerting. Alerts are generated when an SLA is broken.
 - View the state of all roles on DPM servers
-- Monitor, identify, action, and troubleshoot alerts generated when an SLA breaks. You can consolidate alerts to show: 
-    - only one instance for repeated alerts; 
-    - single alert for alerts with the same root cause, or if multiple backups fail for the same data source, 
+- Monitor, identify, action, and troubleshoot alerts generated when an SLA breaks. You can consolidate alerts to show:
+    - only one instance for repeated alerts;
+    - single alert for alerts with the same root cause, or if multiple backups fail for the same data source,
     - and generate only one ticket if a ticketing system is used
 - Remote corrective actions and remote recovery
 - Monitor DPM server memory, CPU, disk resources, database, and performance trends
@@ -66,7 +66,7 @@ DPM provides the following management packs:
 
 1. On the Operations Manager server, remove any existing DPM management packs.
 
-2. [Download](https://www.microsoft.com/download/details.aspx?id=54063&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) the DPM management packs.
+2. [Download](https://www.microsoft.com/en-us/download/details.aspx?id=56560) the DPM management packs.
 
     By default, the download places the Discovery and Library Management Packs in the C:\Program Files\System Center Management Packs folder. The Reporting Management Pack is placed in a separate folder inside that folder.
 
