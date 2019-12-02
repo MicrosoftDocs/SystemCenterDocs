@@ -65,7 +65,8 @@ We recommend the following software for a full installation of Orchestrator on a
 ## SQL Server
 
 > [!NOTE]
-> For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+> - For the supported versions of SQL, use the service packs that are currently in support by Microsoft.
+> -	SQL *Always ON*  is supported,  except in the cases, where configuration is done on multi subnets.
 
 |                                                                 **SQL version**                                                                 | **Supported** |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
