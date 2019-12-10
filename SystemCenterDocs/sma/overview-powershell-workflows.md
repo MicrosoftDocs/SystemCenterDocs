@@ -47,7 +47,7 @@ Workflow Test-Runbook
 ```
 
 ### Naming
-The name of the workflow should conform to the Verb-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](https://go.microsoft.com/fwlink/?LinkID=324604) for a list of approved verbs to use. The name of the workflow must match the name of the Automation runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
+The name of the workflow should conform to the Verb-Noun format that is standard with Windows PowerShell. You can refer to [Approved Verbs for Windows PowerShell Commands](https://docs.microsoft.com/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) for a list of approved verbs to use. The name of the workflow must match the name of the Automation runbook. If the runbook is being imported, then the filename must match the workflow name and must end in .ps1.
 
 ### Limitations
 For a complete list of limitations and syntax differences between Windows PowerShell Workflows and Windows PowerShell, see [Syntactic Differences Between Script Workflows and Scripts](https://technet.microsoft.com/library/jj574140.aspx).
@@ -58,7 +58,7 @@ An activity is a specific task in a workflow. Just as a script is composed of on
 Workflow activities share a set of common parameters to configure their operation. For details about the workflow common parameters, see [about_WorkflowCommonParameters](https://go.microsoft.com/fwlink/?LinkID=324606).
 
 ## Integration Modules
-An *Integration Module* is a package that contains a [Windows PowerShell Module](https://go.microsoft.com/fwlink/?LinkID=325518) and can be imported into Automation. Windows PowerShell Modules contain cmdlets that can be used in Automation runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
+An *Integration Module* is a package that contains a [Windows PowerShell Module](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module) and can be imported into Automation. Windows PowerShell Modules contain cmdlets that can be used in Automation runbooks. Products and services such as Operations Manager and Azure have modules that include cmdlets specific to their operation.
 
 Integration Modules that are imported into Automation are automatically available to all runbooks. Since Automation is based on Windows PowerShell 4.0, it supports auto loading of modules meaning that cmdlets from installed modules can be used without importing them into the script with [Import-Module](https://go.microsoft.com/fwlink/?LinkID=324984).
 
