@@ -76,7 +76,7 @@ There are additional management packs that are required to relate network device
   
 -   [Windows Server 2003, 2008, 2008 R2, 2012, and 2012 R2 Operating System](https://www.microsoft.com/download/details.aspx?id=9296)  
   
--   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://www.microsoft.com/download/details.aspx?id=15700)  
+-   [Windows Client 2000/XP/Vista/Windows 7 Operating Systems](https://mpwiki.viacode.com/default.aspx?g=posts&t=174962)  
 
 -   [Windows 8 and 8.1 Client Operating System](https://www.microsoft.com/download/details.aspx?id=38434) 
   
