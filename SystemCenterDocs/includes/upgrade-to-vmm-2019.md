@@ -167,7 +167,7 @@ This procedure requires additional VMM servers, however, ensures almost no downt
 4. Install VMM 2019 on one of the newly added servers by using the details in **step 5** in [Mixed mode upgrade with no additional VMM servers](#mixed-mode-upgrade-with-no-additional-vmm-servers).    
 5. Repeat the installation steps for all the other newly added servers.
 6. Failover the active VMM node to one of the newly added servers.
-7. Remove 2016 nodes from the cluster after failover.
+7. Uninstall VMM from the 2016 nodes, and remove these nodes from the cluster after failover.
 8. Update the cluster functional level by using the
 **Update-ClusterFunctionalLevel** [command](https://docs.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=win10-ps).
 9.	[Optional] Install the appropriate SQL Command line utilities.
