@@ -26,6 +26,6 @@ ms.technology: virtual-machine-manager
 
 >[!NOTE]
 >
-> **Known Issue**: Deletion of thinly provisioned storage volume (LUN) fails for HPE Primera through VMM 2019.
+> **Known issue**: Deletion of thinly provisioned storage volume (LUN) fails for HPE Primera through VMM 2019.
 >
->**Work around**: Delete LUN directly from the array.
+>**Workaround**: Delete LUN directly from the array.
