@@ -95,12 +95,12 @@ For a list of the data elements published by each activity, see the **Published 
 
 This integration pack adds the **FTP** category to the **Activity** pane in the Runbook Designer. This category contains the following activities:
 
-[Create Folder](create-folder.md)
-[Delete File](delete-file.md)
-[Delete Folder](delete-folder.md)
-[Download File](download-file.md)
-[List Folders/Files](list-folders-or-files.md)
-[Rename File/Folder](rename-file-or-folder.md)
-[Resume File Download](resume-file-download.md)
-[Synchronize Folder/File](synchronize-folder-or-file.md)
-[Upload File](upload-file.md)
+[Create Folder](create-folder.md)  
+[Delete File](delete-file.md)  
+[Delete Folder](delete-folder.md)  
+[Download File](download-file.md)  
+[List Folders/Files](list-folders-or-files.md)  
+[Rename File/Folder](rename-file-or-folder.md)  
+[Resume File Download](resume-file-download.md)  
+[Synchronize Folder/File](synchronize-folder-or-file.md)  
+[Upload File](upload-file.md)  
