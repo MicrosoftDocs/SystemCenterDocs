@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2017
 title: Deduplicate DPM storage
 ms.technology: data-protection-manager
@@ -16,13 +16,13 @@ ms.author: raynew
 
 System Center Data Protection Manager (DPM) can use data deduplication.
 
-Data deduplication \(dedup\) finds and removed duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](http://go.microsoft.com/fwlink/?LinkId=522614).
+Data deduplication \(dedup\) finds and removes duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](http://go.microsoft.com/fwlink/?LinkId=522614).
 
 -   Dedup reduces storage consumption and although the amount of redundancy for a set of data will depend on the workload and data type, typically backup data shows strong savings when dedup is used.
 
 -   Data redundancy can be further reduced with dedup when backed up data of similar types and workloads is processed together.
 
--   Dedup is designed to be installed on primary data volumes without adding additional dedicated hardware so that it doesn't impact the primary workload on the server. The default settings are nonintrusive because they allow data to age for five days before processing a particular file, and has a default minimum file size of 32 KB. The implementation is designed for low memory and CPU usage.
+-   Dedup is designed to be installed on primary data volumes without additional dedicated hardware so that it doesn't impact the primary workload on the server. The default settings are nonintrusive because they allow data to age for five days before processing a particular file, and has a default minimum file size of 32 KB. The implementation is designed for low memory and CPU usage.
 
 -   Dedup can be implemented on the following workloads:
 
