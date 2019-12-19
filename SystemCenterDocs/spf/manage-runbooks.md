@@ -60,7 +60,7 @@ Then, invoke a runbook as follows:
     ```  
 
 2. To determine the setting for the extensible event handler, call the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler cmdlet.  
-3. To disable a runbook from being invoked, repeat the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler command, but without the **Enable*** parameter. You can also specify empty strings for the **OrchestratorUrl** and **Runbookpath** parameters, as shown in the following example:  
+3. To disable a runbook from being invoked, repeat the T:Microsoft.SystemCenter.Foundation.Cmdlet.Get\-SCSPFExtensibleEventHandler command, but without the **Enable** parameter. You can also specify empty strings for the **OrchestratorUrl** and **Runbookpath** parameters, as shown in the following example:  
 
     ```  
     PS C:\> Set-SCSPFExtensibleEventHandler -EventName "VirtualMachineCreated" -OrchestratorUri "" -RunbookPath ""  
