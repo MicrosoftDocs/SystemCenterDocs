@@ -203,7 +203,7 @@ The filter values mentioned here only filters the returned results from the cmdl
 
 ### Optional properties for the Get Mailbox activity
 
-The values in this section directly correlate to the parameter values defined for the Exchange Get-Mailbox PowerShell cmdlet. The only exceptions are the **Active Directory Password** and **Active Directory User Name*** values, which correlate to the **Credential** parameter of the cmdlet.
+The values in this section directly correlate to the parameter values defined for the Exchange Get-Mailbox PowerShell cmdlet. The only exceptions are the **Active Directory Password** and **Active Directory User Name** values, which correlate to the **Credential** parameter of the cmdlet.
 
 If the value specified for any of these optional properties is empty or null, (null is the default value) the parameter switch will not be passed to the cmdlet.
 
