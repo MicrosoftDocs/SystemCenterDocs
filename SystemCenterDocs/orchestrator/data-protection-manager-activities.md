@@ -34,7 +34,7 @@ This tab contains properties that are specific to the activity. All activities i
 ### Set the configuration name
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
-2.  Select the applicable connection name. 
+2.  Select the applicable connection name.
 
 ### Filter behavior
 
@@ -75,7 +75,7 @@ The activity will produce a new set of data every time it runs. The **Flatten** 
 
 Some activities are expected to take a limited amount of time to complete. If they do not complete within that time they may be stalled or there may be another issue preventing them from completing. You can define the number of seconds to wait for completion of the action. After this period a platform event will be sent and the issue will be reported. You can also choose whether to generate a platform event if the activity returns a failure.
 
-### Send a notification 
+### Send a notification
 
 To be notified when the activity takes longer than a specified time to run, or fails to run
 
@@ -96,7 +96,7 @@ An activity can only subscribe to data from the activities that are linked befor
 
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
 

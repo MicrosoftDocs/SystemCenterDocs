@@ -48,7 +48,7 @@ Use the following procedures to create, insert, and organize variables.
 
 6.  If you want the variable to be encrypted \(for example, to store a password for use in other runbook activities\), select the **Encrypted Variable** check box.  
 
-    For more information about best practices for using encrypted variables, see [Orchestrator Data Encryption](https://technet.microsoft.com/en-us/library/hh912316.aspx).  
+    For more information about best practices for using encrypted variables, see [Orchestrator Data Encryption](https://technet.microsoft.com/library/hh912316.aspx).  
 
 7.  Click **Finish**.  
 

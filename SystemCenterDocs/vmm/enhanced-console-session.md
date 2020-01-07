@@ -55,4 +55,4 @@ Ensure the following prerequisites:
 
 
 ## Next steps
-[Use local resources on Hyper-v VM with VMconnect](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
+[Use local resources on Hyper-v VM with VMconnect](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)

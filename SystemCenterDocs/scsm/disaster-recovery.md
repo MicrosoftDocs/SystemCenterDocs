@@ -16,11 +16,11 @@ A recovery plan for potential software and equipment failures in your System Cen
 
 ![cloud symbol](./media/disaster-recovery/disaster-all_symbols_cloud.png)
 
-- Did you know that Microsoft Azure provides similar functionality in the cloud? Learn more about [Microsoft Azure storage solutions](http://aka.ms/y03tdi).
+- Did you know that Microsoft Azure provides similar functionality in the cloud? Learn more about [Microsoft Azure storage solutions](https://aka.ms/y03tdi).
 - Create a hybrid storage solution in Microsoft Azure:
-    - [Configure Azure backup for DPM data](http://aka.ms/ao028b)
-    - [Configure Azure Backup to prepare for back up of Windows Server](http://aka.ms/smvyw8)
-    - [Learn about Azure backup and how it integrates with your on\-premises DPM environment](http://aka.ms/cw2v0g)   
+    - [Configure Azure backup for DPM data](https://aka.ms/ao028b)
+    - [Configure Azure Backup to prepare for back up of Windows Server](https://aka.ms/smvyw8)
+    - [Learn about Azure backup and how it integrates with your on\-premises DPM environment](https://aka.ms/cw2v0g)   
 
 
 > [!NOTE]  

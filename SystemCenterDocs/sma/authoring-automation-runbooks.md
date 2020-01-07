@@ -5,7 +5,7 @@ ms.topic: reference
 author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 01/22/2018
 title: Author Automation Runbooks
 ms.technology: service-management-automation
@@ -55,7 +55,7 @@ You can add a runbook to Service Management Automation by either creating it in 
 5.  Your new runbook will appear on the **Runbooks** tab for the Automation Account.
 
 ## Import a runbook from a script file with Windows PowerShell
-You can use the [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow. 
+You can use the [Import-SmaRunbook](https://aka.ms/runbookauthor/cmdlet/importsmarunbook) cmdlet to create a new runbook from a script file containing a workflow.
 
 The following sample commands show how to import a script file into an existing runbook and then publish it.
 
@@ -142,10 +142,10 @@ The Management Portal includes an editor that you can use to view and edit runbo
 
 10. If the activity requires parameters, provide an appropriate value in place of the data type surrounded by braces <>.
 
-### Edit an Automation runbook with 
+### Edit an Automation runbook with
 PowerShell
 
-To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](http://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](http://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
+To edit a runbook with Windows PowerShell, you edit the workflow using the editor of your choice and save it to a .ps1 file. You can use the [Get-SMARunbookDefinition](https://aka.ms/runbookauthor/cmdlet/getsmarunbookdefinition) cmdlet to retrieve the contents of the runbook and then [Edit-SMARunbook](https://aka.ms/runbookauthor/cmdlet/editsmarunbook) cmdlet to replace the existing draft workflow with the modified one.
 
 ### <a name="RetrieveContentsPowerShell"></a>To retrieve the contents of a runbook using Windows PowerShell
 The following sample commands show how to retrieve the script for a runbook and save it to a script file. In this example, the Draft version is retrieved. It is also possible to retrieve the Published version of the runbook although this version cannot be changed.

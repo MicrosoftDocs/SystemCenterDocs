@@ -118,4 +118,4 @@ Published data is the method that one activity shares information with other act
 
 4.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the Common Published Data items, see the [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData) topic in [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the Common Published Data items, see the [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData) topic in [Using Runbooks in System Center - Orchestrator](design-and-build-runbooks.md).
