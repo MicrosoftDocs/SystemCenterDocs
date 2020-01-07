@@ -138,7 +138,7 @@ Then obtain the Management Packs, import the Discovery and Library Management Pa
 
 #### Install the agent and obtain the Management Packs
 
-1.  For agent installation options read [Operations Manager Installation Methods](https://docs.microsoft.com/en-us/system-center/scom/deploy-overview?view=sc-om-1807).
+1.  For agent installation options read [Operations Manager Installation Methods](https://docs.microsoft.com/system-center/scom/deploy-overview?view=sc-om-1807).
     If you need to obtain the latest version of the agent see [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316) in the Download Center.
 
 2.  Download the packs from the [Download Center](https://www.microsoft.com/download/details.aspx?id=45525).

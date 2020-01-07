@@ -21,7 +21,7 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 
 - The Run SSH Command activity does not work against all SSH-1 and SSH-2 servers.  In general, this activity functions with most SSH servers, but it does not work for all SSH server implementations.  
 
-- You must download and use the PuTTy key generation tool to create keys for the Run SSH Command activity.  The key generation tool is available at [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
+- You must download and use the PuTTy key generation tool to create keys for the Run SSH Command activity.  The key generation tool is available at [Download PuTTY - a free SSH and telnet client for Windows](https://go.microsoft.com/fwlink/p/?LinkID=230517).  
 
 - The Run SSH Command activity supports SSH-1.  Microsoft does not recommend the use of SSH-1. If you want to prevent The Run SSH Command activity from using SSH-1, you should use a key file that contains keys that do not support SSH-1.  Do not use a username and password pair use a key file.  
 
@@ -31,7 +31,7 @@ The Run SSH Command activity opens an SSH connection to a remote server and runs
 
 - PuTTY beta .61 uses a pseudorandom number generator suitable for most cryptographic purposes. It is not recommended for the generation of long-term cryptographic keys.  
 
-  For more information about PuTTY, go to [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).  
+  For more information about PuTTY, go to [Download PuTTY - a free SSH and telnet client for Windows](https://go.microsoft.com/fwlink/p/?LinkID=230517).  
 
 ## Configuring the Run SSH Command Activity  
  Before you configure the Run SSH Command activity, you need to determine the following:  
@@ -61,7 +61,7 @@ Use the following information to configure the Run SSH Command activity.
 |--------------|--------------------------------|  
 |**Username**|Type the username that you need to log into the SSH server.|  
 |**Password**|Select this option and type the password that is associated with the Username that you specified.|  
-|**Key File**|Select this option to specify a key file to use. You must use the PuTTY key file generator to create a key file. You can download this tool from [Download PuTTY - a free SSH and telnet client for Windows](http://go.microsoft.com/fwlink/p/?LinkID=230517).|  
+|**Key File**|Select this option to specify a key file to use. You must use the PuTTY key file generator to create a key file. You can download this tool from [Download PuTTY - a free SSH and telnet client for Windows](https://go.microsoft.com/fwlink/p/?LinkID=230517).|  
 |**Passphrase**|Type the passphrase that is associated with the key file that you specified.|  
 
 ### Published Data  

@@ -36,7 +36,7 @@ Use the following information to configure the Query WMI activity.
 |--------------|--------------------------------|  
 |**Computer**|Type the name of the computer that you are running the WMI query against. You can also use the ellipsis **(...)** button to browse for the computer.|  
 |**Namespace**|Type the name of the WMI namespace that you want to query.|  
-|**WMI query**|Type the WMI query that will be used to query the **Computer**. For more information about Windows Management Instrumentation, see [Windows Management Instrumentation](http://go.microsoft.com/fwlink/?LinkId=221343) (http://go.microsoft.com/fwlink/?LinkId=221343).|  
+|**WMI query**|Type the WMI query that will be used to query the **Computer**. For more information about Windows Management Instrumentation, see [Windows Management Instrumentation](https://go.microsoft.com/fwlink/?LinkId=221343) (https://go.microsoft.com/fwlink/?LinkId=221343).|  
 
 ### Published Data  
  The following table lists the published data items.  

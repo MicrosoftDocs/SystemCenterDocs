@@ -14,7 +14,7 @@ ms.technology: service-management-automation
 
 One [type of runbook](manage/runbook-types-in-service-management-automation.md) for Service Management Automation is based on Windows PowerShell Workflows. This section provides a brief overview of critical features of workflows that are common to Automation runbooks. Complete details on workflows are available in [Getting Started with Windows PowerShell Workflow](https://go.microsoft.com/fwlink/?LinkID=324602).
 
-The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](http://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
+The runbook structure is identical between runbooks for Service Management Automation and for [Microsoft Azure Automation](https://aka.ms/runbookauthor/azure) although the two will typically work with different resources.
 
 ## Windows PowerShell Workflows
 A workflow is a sequence of programmed, connected steps that perform long-running tasks or require the coordination of multiple steps across multiple devices or managed nodes. The benefits of a workflow over a normal script include the ability to simultaneously perform an action against multiple devices and the ability to automatically recover from failures. A Windows PowerShell Workflow is a Windows PowerShell script that leverages Windows Workflow Foundation. While the workflow is written with Windows PowerShell syntax and launched by Windows PowerShell, it is processed by Windows Workflow Foundation.

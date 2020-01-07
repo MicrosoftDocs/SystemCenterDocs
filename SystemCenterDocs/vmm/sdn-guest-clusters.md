@@ -34,7 +34,7 @@ Guesting clustering is managed through the SDN NC. Ensure you have set up SDN an
 
 **Use the following steps**:
 
-1. Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/en-us/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
+1. Create a cluster for your VMs using the information provided in [this article](https://docs.microsoft.com/windows-server/networking/sdn/manage/guest-clustering#example-2-configuring-a-microsoft-failover-cluster).
 
    > [!NOTE]
    >  Cluster should have a ProbePort parameter set to a port of your choice. This port is required while configuring the VIP template in the next step.
