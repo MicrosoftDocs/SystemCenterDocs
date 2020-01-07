@@ -253,7 +253,7 @@ The **Microsoft.SystemCenter.WebApplication.UrlProbe** module is a native module
 
 ## Sample
 
-The following example carries out a simple URL probe against the URL [http://www.microsoft.com](http://www.microsoft.com/). The data source evaluates the status code returned for the base page, and returns a value of 3 if the status code is greater than 400, indicating an error state. It also evaluates the status code returned for the resources, and links, and returns a value of 2 if the status code is greater than 400, indicating a warning state.
+The following example carries out a simple URL probe against the URL [http://www.microsoft.com](https://www.microsoft.com/). The data source evaluates the status code returned for the base page, and returns a value of 3 if the status code is greater than 400, indicating an error state. It also evaluates the status code returned for the resources, and links, and returns a value of 2 if the status code is greater than 400, indicating a warning state.
 
 ```
 <TypeDefinitions>

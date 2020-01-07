@@ -59,7 +59,7 @@ This article provides the system requirements and steps to install the Orchestra
 ## Results of Installing the Integration Toolkit  
  When you install the Orchestrator Integration Toolkit, there are files created on the computer that are used for creating and using Integration Packs.  
 
-- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to “C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit\Lib”.For more information about using the SDK, see the [Orchestrator SDK](https://msdn.microsoft.com/en-us/library/hh855054.aspx).
+- Integration Toolkit SDK Library – this assembly and XML file are used for developing custom activities using the Orchestrator SDK. These files are installed by default to “C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit\Lib”.For more information about using the SDK, see the [Orchestrator SDK](https://msdn.microsoft.com/library/hh855054.aspx).
 
 - Toolkit Integration Pack for Orchestrator – the System Center Integration Pack for Microsoft .NET Framework Activities is used for running and testing Orchestrator-compatible activity assemblies created using the Command-Line Activity Wizard or via custom code using the Orchestrator SDK. The Integration Pack is installed by default to “C:\Program Files (x86)\Microsoft System Center \<version\>\Orchestrator\Integration Toolkit\Integration Packs”. For more information about the IP, see Integration Toolkit IP.  
 
@@ -71,8 +71,8 @@ This article provides the system requirements and steps to install the Orchestra
 |||  
 |-|-|  
 |Resource|Location|  
-|System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/en-us/system-center/](https://docs.microsoft.com/en-us/system-center/)|  
+|System Center Home|[https://www.microsoft.com/cloud-platform/system-center](https://www.microsoft.com/cloud-platform/system-center)|  
+|System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
 |Orchestrator Community Releases on CodePlex|[https://archive.codeplex.com/?p=orchestrator](https://archive.codeplex.com/?p=orchestrator)|  
 |Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|

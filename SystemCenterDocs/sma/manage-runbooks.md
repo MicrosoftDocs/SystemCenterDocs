@@ -72,7 +72,7 @@ You can create a schedule with the Management Portal, or with Windows PowerShell
 4.  Specify a **Start Time**, and the other options as required. The time zone of the start time will match the time zone of the local computer.
 
 #### Create a schedule with Windows PowerShell
-You can use the [Set-SmaSchedule](http://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a schedule, or to modify an existing schedule. You must specify the start time for the schedule, and whether it should run once or repeatedly.
+You can use the [Set-SmaSchedule](https://aka.ms/runbookauthor/cmdlet/setsmaschedule) cmdlet to create a schedule, or to modify an existing schedule. You must specify the start time for the schedule, and whether it should run once or repeatedly.
 
 The following sample creates a new schedule called **My Daily Schedule**. It starts on the current day, and continues for one year every day at noon.
 
@@ -98,7 +98,7 @@ A runbook can be linked to multiple schedules, and a schedule can have multiple 
 
 ### Link schedule with Windows PowerShell
 
-You can use the [Start-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values with the **Parameters** parameter. [Learn more](manage-runbooks.md) about parameter values.
+You can use the [Start-SmaRunbook](https://aka.ms/runbookauthor/startsmarunbook) with the **ScheduleName** parameter to link a schedule to a runbook. You can specify values with the **Parameters** parameter. [Learn more](manage-runbooks.md) about parameter values.
 
 The following sample commands show how to link a schedule to a runbook.
 
@@ -142,7 +142,7 @@ The following table describes the different statuses that are possible for a job
 |Running|The job is running.|
 |Stopped|The job was stopped by the user before it was completed.|
 |Stopping|The system is in the process of stopping the job.|
-|Suspended|The job was suspended by the user, by the system, or by a command in the runbook. A job that is suspended can be started again. It resumes from its last checkpoint, or from the beginning of the runbook if it has no checkpoints.<br /><br />The runbook is only suspended by the system, in the case of an exception that has a possibility to resume. By default, [ErrorActionPreference](http://aka.ms/runbookauthor/preferencevariables) is set to **Continue**, meaning that the job keeps running when an exception occurs. If this variable is set to **Stop**, then the job is suspended when an exception occurs.|
+|Suspended|The job was suspended by the user, by the system, or by a command in the runbook. A job that is suspended can be started again. It resumes from its last checkpoint, or from the beginning of the runbook if it has no checkpoints.<br /><br />The runbook is only suspended by the system, in the case of an exception that has a possibility to resume. By default, [ErrorActionPreference](https://aka.ms/runbookauthor/preferencevariables) is set to **Continue**, meaning that the job keeps running when an exception occurs. If this variable is set to **Stop**, then the job is suspended when an exception occurs.|
 |Suspending|The system attempts to suspend the job at the request of the user. The runbook must reach its next checkpoint, before it can be suspended. If it has already passed its last checkpoint, then it completes before it can be suspended.|
 
 ### View job status in the Management Portal
@@ -190,10 +190,10 @@ You can use the following steps to view the jobs for a runbook.
 
 ### Retrieve job status using Windows PowerShell
 
-You can use the [Get-SmaJob](http://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook, and the details of a particular job.
+You can use the [Get-SmaJob](https://aka.ms/runbookauthor/cmdlet/getsmajob) to retrieve the jobs created for a runbook, and the details of a particular job.
 
-- If you start a runbook with Windows PowerShell using [Start-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it returns the resulting job.
-- Use [Get-SmaJobOutput](http://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job"s output.
+- If you start a runbook with Windows PowerShell using [Start-SmaRunbook](https://aka.ms/runbookauthor/cmdlet/startsmarunbook), then it returns the resulting job.
+- Use [Get-SmaJobOutput](https://aka.ms/runbookauthor/cmdlet/getsmajoboutput) to get a job"s output.
 
 The following sample commands retrieves the last job for a sample runbook, and displays its status, the values provided for the runbook parameters, and the output from the job.
 
@@ -237,7 +237,7 @@ You can change settings for a runbook in the Management Portal from the **Config
 4.  Select the **Configure** tab.
 
 ## Change runbook settings with PowerShell
-You can use the [Set-SmaRunbookConfiguration](http://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](http://aka.ms/runbookauthor/cmdlet/importsmarunbook).
+You can use the [Set-SmaRunbookConfiguration](https://aka.ms/runbookauthor/cmdlet/setsmarunbookconfiguration) cmdlet to change all the settings for a runbook except for tags. You can only change and add Tags for existing runbooks using the Management Portal. You can only set tags for runbooks with PowerShell when you import a runbook using [Import-SmaRunbook](https://aka.ms/runbookauthor/cmdlet/importsmarunbook).
 
 The following sample commands show how to set the properties for a runbook. This sample adds a description and specifies that verbose records should be logged:
 

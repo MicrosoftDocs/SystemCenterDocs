@@ -130,7 +130,7 @@ The following steps provide information about upgrading to SQL 2017.
 1. Upgrade to SQL 2017.
 2. Install SQL 2017 reporting services (SSRS), and launch the reporting services configuration manager to use the existing reporting DB, restore encryption keys.  Configure the Web service URL and Web portal URL   .
 3. Use the same values for reporting server Web service virtual directory and Web portal URL that you had before initiating the upgrade process for SQL 2017.      
-4. Configure the SSRS as per the details shared [here](https://docs.microsoft.com/en-us/system-center/scsm/prepare-remote-ssrs?view=sc-sm-1801).
+4. Configure the SSRS as per the details shared [here](https://docs.microsoft.com/system-center/scsm/prepare-remote-ssrs?view=sc-sm-1801).
 
 5. [**Optional**] To enable CLR strict security, run the following script on each of the service manager databases.
 
