@@ -16,11 +16,11 @@ ms.author: raynew
 
 You can deploy System Center Data Protection Manager (DPM) to protect SharePoint farms, external SQL Server databases, and folders that include farm customizations.  This articles describes the steps required to back up and recover SharePoint data. In addition to this article these blog entries provide an in\-depth walkthrough and troubleshooting tips for this scenario:
 
--   [Configure SharePoint protection in DPM](http://blogs.technet.com/b/dpm/archive/2015/04/27/how-to-configure-sharepoint-protection-in-data-protection-manager-and-troubleshoot-related-issues.aspx)
+-   [Configure SharePoint protection in DPM](https://blogs.technet.com/b/dpm/archive/2015/04/27/how-to-configure-sharepoint-protection-in-data-protection-manager-and-troubleshoot-related-issues.aspx)
 
--   [Backing up and troubleshooting SharePoint and DPM](http://blogs.technet.com/b/dpm/archive/2015/04/28/backing-up-sharepoint-with-data-protection-manager-and-troubleshooting-related-issues.aspx)
+-   [Backing up and troubleshooting SharePoint and DPM](https://blogs.technet.com/b/dpm/archive/2015/04/28/backing-up-sharepoint-with-data-protection-manager-and-troubleshooting-related-issues.aspx)
 
--   [Restoring SharePoint with DPM](http://blogs.technet.com/b/dpm/archive/2015/04/29/restoring-sharepoint-with-data-protection-manager.aspx)
+-   [Restoring SharePoint with DPM](https://blogs.technet.com/b/dpm/archive/2015/04/29/restoring-sharepoint-with-data-protection-manager.aspx)
 
 ## Prerequisites and limitations
 
@@ -123,7 +123,7 @@ To back up SharePoint farm you configure protection for SharePoint by using Conf
 
 13. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-14. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+14. In **Choose online replication** specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
 
 15. On the  **Summary** page review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 

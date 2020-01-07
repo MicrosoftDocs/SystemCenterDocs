@@ -30,7 +30,7 @@ When you install the web console, the following three components are installed:
 > [!NOTE]
 > If Application Diagnostics console is not installed, when viewing APM alerts, you will not be able to use the link embedded in the alert description to launch the APM event details. To use this feature, install the web console within the management group.
 
-If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](http://go.microsoft.com/fwlink/p/?linkID=158320). For more information about sessions, see [Support for Sessions](http://go.microsoft.com/fwlink/p/?linkID=251693).
+If you plan to use network load balancing with Application Diagnostics console and Application Advisor console, be sure to use sticky sessions. This ensures that the same instance of the console is used for the entire session. For more information about network load balancing, see [Network Load Balancing](https://go.microsoft.com/fwlink/p/?linkID=158320). For more information about sessions, see [Support for Sessions](https://go.microsoft.com/fwlink/p/?linkID=251693).
 
 > [!NOTE]
 > A Network Load Balancer is not supported for the Operations Manager web console server.
@@ -93,7 +93,7 @@ The local and remote parameters are as follows:
 10. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and then click **Next**.
 
     > [!NOTE]
-    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](http://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx).
+    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](https://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx).
 
 10. On the **Diagnostic and Usage Data** page, please review data collection terms and then click **Next** to continue.  
 
@@ -175,7 +175,7 @@ The following steps are for configuring permission inheritance for the System Ce
 
 6.  Click **OK** to close **Advanced Security Settings for TempImages**, and then click **OK** to close **TempImages Properties**.
 
-All information and content at http://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
+All information and content at https://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
 ## Next steps
 

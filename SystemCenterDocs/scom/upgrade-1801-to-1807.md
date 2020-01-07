@@ -106,7 +106,7 @@ If your computer is running Windows Server 2016 or later, follow these steps:
 ### Manual download
 Go to the following websites to manually download the update packages from the Microsoft Update Catalog:
 
-   [Download the Operations Manager update package now](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=4133779).
+   [Download the Operations Manager update package now](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=4133779).
 
 ## Update Operations Manager features
 

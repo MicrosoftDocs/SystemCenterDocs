@@ -25,7 +25,7 @@ If the Discovery Wizard is not right for your needs (for example, if you have a 
 Use the following procedure to discover computers running Windows and deploy the Operations Manager agent to the discovered computers from the Operations console. For a list of the supported operating system versions, see [Microsoft Monitoring Agent Operating System requirements](plan-system-requirements.md).
 
 > [!NOTE]
-> For information about port requirements for agents, see [Agent and Agentless Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
+> For information about port requirements for agents, see [Agent and Agentless Monitoring](https://go.microsoft.com/fwlink/p/?LinkId=230474) in the Deployment Guide.
 
 ## To install an agent on a computer running Windows by using the Discovery Wizard
 
@@ -106,7 +106,7 @@ Use the following procedure to discover computers running Windows and deploy the
         > If a different **Agent installation directory** is specified, the root of the path must exist on the targeted computer or the agent installation fails. Subdirectories, such as **\Agent**, are created if they do not exist.
 
     2.  Leave **Agent Action Account** set to the default, **Local System**, or select **Other** and type the **User name**, **Password**, and **Domain**. The Agent Action Account is the default account that the agent will use to perform actions.
-    
+
     3. Leave **Install APM** set to the default if you intend to monitor a .NET web-based application on the targeted computer.  Otherwise, deselect the option.  
 
     4.  Click **Finish**.  

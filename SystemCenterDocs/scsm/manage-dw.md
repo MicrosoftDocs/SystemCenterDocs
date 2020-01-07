@@ -10,7 +10,7 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 855110b9-cd11-4e06-8139-b21518456215
@@ -152,11 +152,11 @@ Individual fact tables inherit the global retention value when created, or you c
 
 #### To view the retention period for default tables or specific tables
 
-- Use the **Get-SCDWRetentionPeriod** PowerShell cmdlet to get the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Get-SCDWRetentionPeriod](https://technet.microsoft.com/en-us/library/hh541718(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
+- Use the **Get-SCDWRetentionPeriod** PowerShell cmdlet to get the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Get-SCDWRetentionPeriod](https://technet.microsoft.com/library/hh541718(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
 
 #### To set the retention period for default tables or specific tables
 
-- Use the **Set-SCDWRetentionPeriod** PowerShell cmdlet to set the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Set-SCDWRetentionPeriod](https://technet.microsoft.com/en-us/library/hh541725(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
+- Use the **Set-SCDWRetentionPeriod** PowerShell cmdlet to set the retention period for either a specific fact table within a specific data warehouse database or the default for fact tables within the database. See [Set-SCDWRetentionPeriod](https://technet.microsoft.com/library/hh541725(v=sc.20).aspx) for detailed descriptions of available parameters and example usage.
 
 ## Reimport previously removed management packs
 

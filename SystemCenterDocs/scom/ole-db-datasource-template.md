@@ -64,7 +64,7 @@ The following options are available on the  **Connection String**  page of the w
 
 | Option | Description |
 | --- | --- |
-| Connection string | The connection string to connect to the database. A connection string contains the properties required to locate and connect to the database. It contains such information as the server that is hosting the database, the database name, and the type of authentication to perform. You can type a connection string or build a connection string in a dialog box by clicking  **Build**.For more detailed information about connection strings, see [Connection String Syntax](http://go.microsoft.com/fwlink/?linkid=70748). |
+| Connection string | The connection string to connect to the database. A connection string contains the properties required to locate and connect to the database. It contains such information as the server that is hosting the database, the database name, and the type of authentication to perform. You can type a connection string or build a connection string in a dialog box by clicking  **Build**.For more detailed information about connection strings, see [Connection String Syntax](https://go.microsoft.com/fwlink/?linkid=70748). |
 | Query to execute | Optional query after the connection to the database has been made. If no query is provided, the monitor only attempts to connect to the database. |
 | Query time-out | If a query is provided, this option specifies the maximum number of seconds that the query can take before it times out. You must set the  **Query Time-out**  value. |
 

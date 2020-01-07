@@ -11,7 +11,7 @@ manager: carmonm
 ---
 # System Center VMM Activities
 
-The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Virtual Machine Manager (VMM). 
+The following configuration instructions apply to all activities in the System Center Integration Pack for System Center - Virtual Machine Manager (VMM).
 
 ## Activity properties
 
@@ -38,7 +38,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the System Center 2016 Virtual Machine Manager Connections](https://technet.microsoft.com/en-us/library/25d52eb0-ac74-4182-9811-b926b685cb2b#BKMK_ConfigureVMMConnections).
+2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the System Center 2016 Virtual Machine Manager Connections](https://technet.microsoft.com/library/25d52eb0-ac74-4182-9811-b926b685cb2b#BKMK_ConfigureVMMConnections).
 
 ### Filter behavior
 
@@ -99,7 +99,7 @@ To use published data:
 
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the **Published Data** tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
 

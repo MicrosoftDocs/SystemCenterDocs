@@ -42,7 +42,7 @@ This tab contains properties that are specific to the activity. All activities i
 
 1.  Click the ellipsis **(...)** button next to the **Name** field.
 
-2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the HP Service Manager Connections](https://technet.microsoft.com/en-us/library/4b9fedf9-e89a-4298-bf57-79c5d4ccdd6b#ConfiguringConnections).
+2.  Select the applicable connection name. Connections displayed in the list have been previously configured as described in [Configuring the HP Service Manager Connections](https://technet.microsoft.com/library/4b9fedf9-e89a-4298-bf57-79c5d4ccdd6b#ConfiguringConnections).
 
 ## Filter Behavior
 
@@ -67,7 +67,7 @@ The Monitor and Get activities use filters to determine the values that will inv
 >Filter properties can only be used once in an activity. For example, if your search criteria for an entry include a date range, you cannot use the **TimeAdded** filter property twice in the same activity. However, you may be able to use the **TimeAdded After Date** and **TimeRaised Before Date** filter properties to achieve the desired results.
 
 >[!NOTE]
->Some HP Service Manager string fields, such as **Description**, do not support the **Contains** and **Does not contain** relations. However, these relations may still be displayed in the list of available options for the field. 
+>Some HP Service Manager string fields, such as **Description**, do not support the **Contains** and **Does not contain** relations. However, these relations may still be displayed in the list of available options for the field.
 
 ## Run Behavior Tab
 
@@ -94,7 +94,7 @@ Some activities are expected to take a limited amount of time to complete. If th
 1.  In the **Event Notifications** box, enter the **number of seconds** of run time before a notification is generated.
 2.  Select **Report if activity fails to run** to generate run failure notifications.
 
-For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/en-us/library/hh489611.aspx).
+For more information about Orchestrator events, see [Activity Events](https://technet.microsoft.com/library/hh489611.aspx).
 
 ## Published Data
 
@@ -108,7 +108,7 @@ An activity can only subscribe to data from the activities that are linked befor
 2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
 

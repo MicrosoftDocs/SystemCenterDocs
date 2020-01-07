@@ -57,7 +57,7 @@ PowerShell runbooks are based on Windows PowerShell.  You directly edit the code
 
 ## How SMA executes runbooks
 
-Requests to start a runbook are performed by the SMA web service using either the Service Management Portal, or the [Start-SmaRunbook](http://aka.ms/runbookauthor/startsmarunbook) Windows PowerShell cmdlet. The web service writes this request to the Automation database where it is retrieved by one of the Automation Worker servers.
+Requests to start a runbook are performed by the SMA web service using either the Service Management Portal, or the [Start-SmaRunbook](https://aka.ms/runbookauthor/startsmarunbook) Windows PowerShell cmdlet. The web service writes this request to the Automation database where it is retrieved by one of the Automation Worker servers.
 
 If the RunbookWorker property of the runbook is populated, then that Worker server will service the job.  If the Worker server is not available, then the job fails with an error.  If the RunbookWorker property of the runbook is not populated, then SMA randomly selects an available Worker server to service the request.
 

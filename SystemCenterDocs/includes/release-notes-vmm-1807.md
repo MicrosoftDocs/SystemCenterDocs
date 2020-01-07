@@ -36,13 +36,13 @@ The following sections summarize the release notes for VMM 1807 and include the 
 
 ## VMM integrated with Azure Site Recovery will not support DRA versions earlier than 5.1.3100
 
-**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](http://aka.ms/downloaddra) or higher. Earlier versions are not supported.
+**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](https://aka.ms/downloaddra) or higher. Earlier versions are not supported.
 
 **Workaround**: Use the following steps and upgrade the DRA version:
 
 1. Uninstall existing version of DRA
 2. Install VMM 1807 patch)
-3. [Install 5.1.3100](http://aka.ms/downloaddra) version or higher.   
+3. [Install 5.1.3100](https://aka.ms/downloaddra) version or higher.   
 
 ## Host/Cluster refresh might take longer if there are large number of logical network definitions
 
