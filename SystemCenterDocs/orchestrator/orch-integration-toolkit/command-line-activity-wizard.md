@@ -202,7 +202,7 @@ The Command-Line Activity Wizard enables you to quickly create new activities in
 |-|-|  
 |Resource|Location|  
 |System Center Home|[https://www.microsoft.com/en-us/cloud-platform/system-center](https://www.microsoft.com/en-us/cloud-platform/system-center)|  
-|System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/en-us/system-center/)|  
+|System Center documentation|[https://docs.microsoft.com/system-center/](https://docs.microsoft.com/system-center/)|  
 |Orchestrator Team Blog on TechNet|[https://blogs.technet.microsoft.com/orchestrator/](https://blogs.technet.microsoft.com/orchestrator/)|  
 |Orchestrator Community Releases on CodePlex|[https://archive.codeplex.com/?p=orchestrator](https://archive.codeplex.com/?p=orchestrator)|  
 |Orchestrator Community Forums on TechNet|[https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator](https://social.technet.microsoft.com/Forums/en-US/home?category=systemcenterorchestrator)|
