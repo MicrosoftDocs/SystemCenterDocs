@@ -28,11 +28,11 @@ For information about connecting management groups, see [Connecting Management G
 
 Before you begin your deployment, you should read the release notes, and ensure that your server meets the minimum system requirements for Operations Manager. For more information, see:
 
--   [Release Notes for System Center Operations Manager 1807](release-notes-1807.md)
+-   [Release Notes for System Center Operations Manager 1807](https://docs.microsoft.com/system-center/scom/release-notes-om?view=sc-om-1807)
 
--   [Release Notes for System Center Operations Manager 1801](release-notes-1801.md)
+-   [Release Notes for System Center Operations Manager 1801](https://docs.microsoft.com/system-center/scom/release-notes-om?view=sc-om-1801)
 
--   [Release Notes for System Center 2016 - Operations Manager](get-started-release-notes.md)
+-   [Release Notes for System Center 2016 - Operations Manager](https://docs.microsoft.com/system-center/scom/release-notes-om?view=sc-om-2016)
 
 -   [System Requirements for System Center Operations Manager](plan-system-requirements.md)
 
