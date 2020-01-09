@@ -45,7 +45,7 @@ Here's the recommended upgrade order for the above scenario
 1. Make sure Windows Azure Pack, SPF, and VMM are all running the required updates.
 2. We recommend that you shut down VMM and Windows Azure Pack servers, removing all database activity.
 3. Verify SPF [system requirements](https://docs.microsoft.com/system-center/spf/system-reqs?view=sc-spf-2016). Note that SPF must run on Windows Server 2016 - Core or Desktop experience.
-4. Verify VMM [console requirements](https://docs.microsoft.com/en-us/system-center/vmm/system-requirements?view=sc-vmm-2016#vmm-console-operating-system).
+4. Verify VMM [console requirements](https://docs.microsoft.com/system-center/vmm/system-requirements?view=sc-vmm-2016#vmm-console-operating-system).
 
 
 ## Run the SPF upgrade

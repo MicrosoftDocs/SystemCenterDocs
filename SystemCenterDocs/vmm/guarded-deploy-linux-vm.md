@@ -35,7 +35,7 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 
   1.  Follow [these steps](https://github.com/Microsoft/lsvmtools/blob/master/doc/LSVM_How_To.pdf) to create the template disk.
 
-  2. In the **Preparing a Linux Image** section of the directions, before you install lsvmtools, [install the VMM specialization agent](https://docs.microsoft.com/en-us/system-center/vmm/vm-linux#install-the-vmm-guest-agent).
+  2. In the **Preparing a Linux Image** section of the directions, before you install lsvmtools, [install the VMM specialization agent](https://docs.microsoft.com/system-center/vmm/vm-linux#install-the-vmm-guest-agent).
 
 ### Sign the template disk
 
@@ -86,8 +86,8 @@ With Windows Server version 1709, Hyper-V introduced support for provisioning Li
 Before you generate the shielding data file (PDK):
 
 
-1.	[Get the guardian metadata from the Host Guardian Service (HGS)](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics).
-2.	[Extract the volume signature catalog (VSC) file](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file).
+1.	[Get the guardian metadata from the Host Guardian Service (HGS)](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#select-trusted-fabrics).
+2.	[Extract the volume signature catalog (VSC) file](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-tenant-creates-shielding-data#get-the-volume-signature-catalog-file).
 
 To generate the PDK, run the following sample script on a server that's running Windows Server version 1709:
 
@@ -125,5 +125,5 @@ New-ShieldingDataFile -ShieldingDataFilePath '<<Shielding Data file path>>' -Own
 
 
 ## Next steps
-- Get an overview of [Guarded fabric and shielded VMs](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms).
+- Get an overview of [Guarded fabric and shielded VMs](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms).
 - Find out more about [Linux shielded VM tools](https://github.com/Microsoft/lsvmtools).

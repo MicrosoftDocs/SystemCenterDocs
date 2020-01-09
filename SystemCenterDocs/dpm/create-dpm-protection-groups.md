@@ -141,7 +141,7 @@ Protection groups are created with the Create New Protection Group wizard with t
 
 -   **Specify online retention policy**: If you're backing up to Azure you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
--   **Choose online replication**: If you're backing up to Azure specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+-   **Choose online replication**: If you're backing up to Azure specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. [Read more](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
 
 ## Initial replication options
 When you create a protection group, you must choose a method for creating the initial replica, which copies all the data selected for protection to the DPM server and then runs synchronization with consistency check for each of the replicas.
@@ -161,7 +161,7 @@ To help you choose a replica creation method, the following table provides estim
 |500 GB|2844|711|178|45|15|
 
 ### Offline replication for Azure Backup
-When you're backing up data from the DPM server to Azure you can do the initial replication over the network or using offline seeding. [Read more](https://azure.microsoft.com/en-in/documentation/articles/backup-azure-backup-import-export/).
+When you're backing up data from the DPM server to Azure you can do the initial replication over the network or using offline seeding. [Read more](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
 
 ### Initial replication manually
 If you are deploying DPM to protect data over a WAN and your protection group includes more than 5 GB of data, we recommend that you choose the manual method for creating the replicas.

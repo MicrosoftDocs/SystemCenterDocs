@@ -15,7 +15,7 @@ ms.technology: virtual-machine-manager
 
 
 
-This article describes how to deploy guarded Hyper-V hosts in a System Center - Virtual Machine Manager (VMM) compute fabric. [Learn more](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms) about guarded fabric..
+This article describes how to deploy guarded Hyper-V hosts in a System Center - Virtual Machine Manager (VMM) compute fabric. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms) about guarded fabric..
 
 There are a couple of ways to set up guarded Hyper-V hosts in a VMM fabric.
 - **Configure an existing host to be a guarded host**: You can configure an existing host to run shielded VMs.
@@ -44,7 +44,7 @@ Additionally, ensure any hosts which will become guarded hosts meet the guarded 
     - Use UEFI 2.3.1c and a TPM 2.0 module
     - Boot in UEFI mode (not BIOS or "legacy" mode)
     - Enable Secure Boot
-- **HGS registration**: Hyper-V hosts must be registered with HGS. How they’re registered depending on whether HGS is using AD or TPM attestation. [Learn more](https://technet.microsoft.com/en-us/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs#configure-hgs-with-authorized-hyper-v-hosts)
+- **HGS registration**: Hyper-V hosts must be registered with HGS. How they’re registered depending on whether HGS is using AD or TPM attestation. [Learn more](https://technet.microsoft.com/windows-server-docs/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs#configure-hgs-with-authorized-hyper-v-hosts)
 - **Live migration**: If you want to live migrate shielded VMs, you need to deploy two or more guarded hosts.
 - **Domain**: Guarded hosts and the VMM server must be in the same domain, or in domains with a two-way trust.
 
@@ -96,7 +96,7 @@ In guarded fabrics configured to use TPM attestation, each host must be configur
 
 To deploy a code integrity policy to a guarded host managed by VMM, complete the following steps:
 
-1. [Create a code integrity policy](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-deployment-overview) for each reference host in your environment. You will need a different CI policy for each unique hardware and software configuration of your guarded hosts.
+1. [Create a code integrity policy](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-deployment-overview) for each reference host in your environment. You will need a different CI policy for each unique hardware and software configuration of your guarded hosts.
 2. Store the CI policies in a secure file share. The computer accounts for each guarded host require **read access** to the share. Only trusted administrators should have write access.
 3. In the VMM console, click **Settings** > **Host Guardian Service Settings**.
 4. Under the Code Integrity Policies section, click **Add** and specify a friendly name and the path to a CI policy. Repeat this step for each unique CI policy. Be sure to name your policies in a manner that will help you identify which policy should be applied to which hosts.

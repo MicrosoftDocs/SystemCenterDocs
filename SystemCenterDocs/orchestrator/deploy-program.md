@@ -165,6 +165,6 @@ above:
 
 5. For information about the settings on the **General** and **Run
    Behavior** tabs, see [*Common Configuration Instructions for all
-   Activities*](https://technet.microsoft.com/en-us/library/3950dc80-c200-4144-bc83-7c07fe986745#BKMK_CommonCMConfigInstructions).
+   Activities*](https://technet.microsoft.com/library/3950dc80-c200-4144-bc83-7c07fe986745#BKMK_CommonCMConfigInstructions).
 
 6. Click **Finish**.

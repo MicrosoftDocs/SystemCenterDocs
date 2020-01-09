@@ -27,7 +27,7 @@ rules).
 
 For the procedure to configure this object, see: [*Configuring the
 Delete Collection
-Activity*](https://technet.microsoft.com/en-us/library/hh967528.aspx#BKMK_ProcDelCol).
+Activity*](https://technet.microsoft.com/library/hh967528.aspx#BKMK_ProcDelCol).
 
 ## Properties and published data
 
