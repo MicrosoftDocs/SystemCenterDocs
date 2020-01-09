@@ -52,9 +52,9 @@ To deploy DPM as a virtual machine backing up data to a dedupl volume we recomme
 
 Note that:
 
--   This deployment is supported for DPM 2012 R2 and above, and for all workload data that can be backed up by DPM 2012 R2 and above.
+-   This deployment is supported for DPM 2012 R2 and later, and for all workload data that can be backed up by DPM 2012 R2 and later.
 
--   All the Windows File Server nodes on which DPM virtual hard disks reside and on which dedup will be enabled must be running Windows Server 2012 R2 with [Update Rollup November 2014](https://go.microsoft.com/fwlink/?LinkId=522571) or above.
+-   All the Windows File Server nodes on which DPM virtual hard disks reside and on which dedup will be enabled must be running Windows Server 2012 R2 with [Update Rollup November 2014](https://go.microsoft.com/fwlink/?LinkId=522571) or later.
 
 -   We'll provide general recommendations and instructions for the scenario deployment. Whenever hardware\-specific examples are given, the hardware deployed in the Microsoft Cloud Platform System \(CPS\) is used for reference.
 
