@@ -47,3 +47,46 @@ The following sections summarize the release notes for VMM 1807 and include the 
 ## Host/Cluster refresh might take longer if there are large number of logical network definitions
 
 **Description**: When there are large number of logical network definitions in the environment, cluster/host refresh might take longer than expected.
+
+## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
+
+**Description**: Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object, due to which Remove-PortACL job fails with NC Exception that is still in use.
+
+**Workaround**: Remove the VMSubnet from VMM and then remove Port-ACL.
+
+ Import-Module NetworkController
+
+ #Replace the URI of the Network Controller with REST IP or FQDN
+
+ ```
+ $uri = "<NC FQDN or IP>"
+
+ ```
+
+ #Provide NC Admin credentials
+
+ ```
+ $cred = Get-Credential
+
+ ```
+
+ #Identify the virtual network that contains the subnet
+
+ ```
+ $vnet = Get-NetworkControllerVirtualNetwork -ConnectionUri $uri -ResourceId "Fabrikam_VNet1" -Credential $cred
+
+ ```
+
+ #Identify the subnet for which the ACL needs to be removed
+
+ ```
+ $vnet.Properties.Subnets[0].Properties = $vnet.Properties.Subnets[0].Properties | Select-Object -Property * -ExcludeProperty AccessControlList
+
+ ```
+
+ #Update
+
+ ```
+ New-NetworkControllerVirtualNetwork -ResourceId "Fabrikam_VNet1" -ConnectionUri $uri –Properties $vnet.Properties -Credential $cred
+
+ ```
