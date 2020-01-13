@@ -298,7 +298,7 @@ You can access variables in a runbook with the activities in the following table
 
 ### To create a new variable with Windows PowerShell
 
-The [Set-SmaVariable](http://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
+The [Set-SmaVariable](https://aka.ms/runbookauthor/cmdlet/setsmavariable) cmdlet both creates a new variable and sets the value for an existing variable.  The following sample commands show how to create a variable of type string.
 
 ```powershell
 $web = 'https://MySMAServer'

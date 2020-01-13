@@ -23,7 +23,7 @@ The features and capabilities  listed below  are not included in the System Cent
 ## App Controller
 **Status in System Center 2016:** Removed.
 
-**Replacement:** For on-premises deployments, provision IaaS and PaaS solutions using [Windows Azure Pack](https://technet.microsoft.com/en-us/library/dn296435.aspx). Additionally, virtual machine and PaaS self-service solutions are available in Windows Azure Pack and Azure.
+**Replacement:** For on-premises deployments, provision IaaS and PaaS solutions using [Windows Azure Pack](https://technet.microsoft.com/library/dn296435.aspx). Additionally, virtual machine and PaaS self-service solutions are available in Windows Azure Pack and Azure.
 
 
 ## Citrix XenServer and VMware vCenter 4.1/5.1 support in Virtual Machine Manager

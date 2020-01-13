@@ -41,3 +41,46 @@ The following sections summarize the release notes for VMM 1801 and includes the
 *Violation of PRIMARY KEY constraint 'PK_tbl_NetMan_PortClassification'. Cannot insert duplicate key in object 'dbo.tbl_NetMan_PortClassification'*.
 
 **Workaround**: Change the port classification name back to original name, and then trigger the upgrade. After the upgrade, you can change the default name to a different one.
+
+## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
+
+**Description**: Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object, due to which Remove-PortACL job fails with NC Exception that is still in use.
+
+**Workaround**: Remove the VMSubnet from VMM and then remove Port-ACL.
+
+ Import-Module NetworkController
+
+ #Replace the URI of the Network Controller with REST IP or FQDN
+
+ ```
+ $uri = "<NC FQDN or IP>"
+
+ ```
+
+ #Provide NC Admin credentials
+
+ ```
+ $cred = Get-Credential
+
+ ```
+
+ #Identify the virtual network that contains the subnet
+
+ ```
+ $vnet = Get-NetworkControllerVirtualNetwork -ConnectionUri $uri -ResourceId "Fabrikam_VNet1" -Credential $cred
+
+ ```
+
+ #Identify the subnet for which the ACL needs to be removed
+
+ ```
+ $vnet.Properties.Subnets[0].Properties = $vnet.Properties.Subnets[0].Properties | Select-Object -Property * -ExcludeProperty AccessControlList
+
+ ```
+
+ #Update
+
+ ```
+ New-NetworkControllerVirtualNetwork -ResourceId "Fabrikam_VNet1" -ConnectionUri $uri –Properties $vnet.Properties -Credential $cred
+
+ ```

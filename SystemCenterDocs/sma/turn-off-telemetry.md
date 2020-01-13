@@ -26,7 +26,7 @@ Administrators can turn off this feature at any point of time.
 
 ## Turn off telemetry in SMA
 Use the following procedure:
-1. [Import the PowerShell SMA module](https://docs.microsoft.com/en-us/powershell/module/microsoft.systemcenter.servicemanagementautomation/import-smamodule?view=systemcenter-ps-2016).
+1. [Import the PowerShell SMA module](https://docs.microsoft.com/powershell/module/microsoft.systemcenter.servicemanagementautomation/import-smamodule?view=systemcenter-ps-2016).
 2. Run the following PowerShell cmdlet to disable sharing of usage and connectivity data in SMA.
 
    ```powershell
@@ -36,7 +36,7 @@ Use the following procedure:
    ```
 
    >[!NOTE]
-   > You can use the [Get-SmaAdminConfiguration](https://docs.microsoft.com/en-us/powershell/module/Microsoft.SystemCenter.ServiceManagementAutomation/Get-SmaAdminConfiguration?view=systemcenter-ps-2016) command to check the current admin configuration settings.
+   > You can use the [Get-SmaAdminConfiguration](https://docs.microsoft.com/powershell/module/Microsoft.SystemCenter.ServiceManagementAutomation/Get-SmaAdminConfiguration?view=systemcenter-ps-2016) command to check the current admin configuration settings.
 
 ## Telemetry data collected
 

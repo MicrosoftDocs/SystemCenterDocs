@@ -159,7 +159,7 @@ VMM 2019 supports the use of gMSA for *Management server service account*.
 
 **Prerequisites**
 
-1. Review [this article](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts) and create gMSA as per the guidance available in the article.
+1. Review [this article](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts) and create gMSA as per the guidance available in the article.
 2. Make sure that the servers on which VMM Management service would be installed have permissions to retrieve the password of gMSA account.
 
 > [!NOTE]

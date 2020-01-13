@@ -36,14 +36,57 @@ The following sections summarize the release notes for VMM 1807 and include the 
 
 ## VMM integrated with Azure Site Recovery will not support DRA versions earlier than 5.1.3100
 
-**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](http://aka.ms/downloaddra) or higher. Earlier versions are not supported.
+**Description**: In case you are using a VMM integrated with Azure Site Recovery, VMM supports Data Recovery Agent (DRA) version [5.1.3100](https://aka.ms/downloaddra) or higher. Earlier versions are not supported.
 
 **Workaround**: Use the following steps and upgrade the DRA version:
 
 1. Uninstall existing version of DRA
 2. Install VMM 1807 patch)
-3. [Install 5.1.3100](http://aka.ms/downloaddra) version or higher.   
+3. [Install 5.1.3100](https://aka.ms/downloaddra) version or higher.   
 
 ## Host/Cluster refresh might take longer if there are large number of logical network definitions
 
 **Description**: When there are large number of logical network definitions in the environment, cluster/host refresh might take longer than expected.
+
+## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
+
+**Description**: Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object, due to which Remove-PortACL job fails with NC Exception that is still in use.
+
+**Workaround**: Remove the VMSubnet from VMM and then remove Port-ACL.
+
+ Import-Module NetworkController
+
+ #Replace the URI of the Network Controller with REST IP or FQDN
+
+ ```
+ $uri = "<NC FQDN or IP>"
+
+ ```
+
+ #Provide NC Admin credentials
+
+ ```
+ $cred = Get-Credential
+
+ ```
+
+ #Identify the virtual network that contains the subnet
+
+ ```
+ $vnet = Get-NetworkControllerVirtualNetwork -ConnectionUri $uri -ResourceId "Fabrikam_VNet1" -Credential $cred
+
+ ```
+
+ #Identify the subnet for which the ACL needs to be removed
+
+ ```
+ $vnet.Properties.Subnets[0].Properties = $vnet.Properties.Subnets[0].Properties | Select-Object -Property * -ExcludeProperty AccessControlList
+
+ ```
+
+ #Update
+
+ ```
+ New-NetworkControllerVirtualNetwork -ResourceId "Fabrikam_VNet1" -ConnectionUri $uri –Properties $vnet.Properties -Credential $cred
+
+ ```

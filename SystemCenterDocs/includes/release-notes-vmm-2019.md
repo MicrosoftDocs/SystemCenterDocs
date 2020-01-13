@@ -46,7 +46,7 @@ The following sections summarize the release notes for VMM 2019 and include the 
 **Description**: Latest accessibility fixes in Console might not be available when you use .NET 4.7 while installing the VMM console.
 
 **Workaround**: We recommend you to use .NET 4.8. For detailed information on .NET 4.8 migration, see [the article on .NET migration
- ](https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/).    
+ ](https://docs.microsoft.com/dotnet/framework/migration-guide/).    
 
 ## Backend adapter connectivity for SLB MUX doesn't work as expected
 
@@ -86,3 +86,46 @@ To avoid this issue, prior to CRU triggering, ensure to install the latest OS up
 reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-VirtualMachineManager-Server/Operational /v ChannelAccess /t REG_SZ /d O:BAG:SYD:(D;;0xf0007;;;AN)(D;;0xf0007;;;BG)(A;;0xf0007;;;SY)(A;;0x7;;;BA)(A;;0x3;;;NS)(A;;0x1;;;IU)(A;;0x1;;;SU)"
 ```
 This command will add the service user to the list of allowed users, who can access VirtualMachineManager-Server/Operational event log.
+
+## Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object
+
+**Description**: Set-SCVMSubnet -RemovePortACL job completes in VMM without removing portACL association from NC VMSubnet object, due to which Remove-PortACL job fails with NC Exception that is still in use.
+
+**Workaround**: Remove the VMSubnet from VMM and then remove Port-ACL.
+
+ Import-Module NetworkController
+
+ #Replace the URI of the Network Controller with REST IP or FQDN
+
+ ```
+ $uri = "<NC FQDN or IP>"
+
+ ```
+
+ #Provide NC Admin credentials
+
+ ```
+ $cred = Get-Credential
+
+ ```
+
+ #Identify the virtual network that contains the subnet
+
+ ```
+ $vnet = Get-NetworkControllerVirtualNetwork -ConnectionUri $uri -ResourceId "Fabrikam_VNet1" -Credential $cred
+
+ ```
+
+ #Identify the subnet for which the ACL needs to be removed
+
+ ```
+ $vnet.Properties.Subnets[0].Properties = $vnet.Properties.Subnets[0].Properties | Select-Object -Property * -ExcludeProperty AccessControlList
+
+ ```
+
+ #Update
+
+ ```
+ New-NetworkControllerVirtualNetwork -ResourceId "Fabrikam_VNet1" -ConnectionUri $uri –Properties $vnet.Properties -Credential $cred
+
+ ```

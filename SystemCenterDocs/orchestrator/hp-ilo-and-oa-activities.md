@@ -43,7 +43,7 @@ All activities in this integration pack have the **Connection Name** property at
 
 ### To configure the Connection Name property
 
-1.  Click the ellipsis (...) button next to the **Name** field, and then select the applicable connection name or group name. Connections and groups displayed in the list have been previously configured as described in [Configuring the HP iLO and OA Connections](https://technet.microsoft.com/en-us/library/8f2b3bbf-bf21-4f42-9989-a42cfc2f9569#ConfiguringConnections).
+1.  Click the ellipsis (...) button next to the **Name** field, and then select the applicable connection name or group name. Connections and groups displayed in the list have been previously configured as described in [Configuring the HP iLO and OA Connections](https://technet.microsoft.com/library/8f2b3bbf-bf21-4f42-9989-a42cfc2f9569#ConfiguringConnections).
 
 ### Run Behavior Tab
 
@@ -84,7 +84,7 @@ An activity can only subscribe to data from the activities that are linked befor
 2.  Click the **Activity** drop-down box and select the activity from which you want to obtain the data. To view additional data elements common to all runbooks, select **Show Common Published Data**.
 3.  Click the published data element that you want to use, and then click **OK**.
 
-For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/en-us/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
+For a list of the data elements published by each activity, see the Published Data tables in the activity topic. For information about the common published data items, see [Common Published Data](https://technet.microsoft.com/library/e339c027-4c69-43e5-a59b-ac7ea0a676c8#CommonPublishedData).
 
 ## Activities
 

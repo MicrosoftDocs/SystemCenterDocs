@@ -1,5 +1,5 @@
 ---
-ms.assetid: 
+ms.assetid:
 title: Kerberos Authentication Support for UNIX and Linux
 description: This article describes how to enable Kerberos Authentication with Unix and Linux Computers in System Center Operations Manager.
 author: JYOTHIRMAISURI
@@ -17,7 +17,7 @@ ms.topic: article
 
 System Center Operations Manager version 1801 communicates with UNIX and Linux computers using the Secure Shell (SSH) protocol and Web Services for Management (WS-Management). Agent actions such as agent install, uninstall, and update occur over SSH and require a privileged account. Agent discovery and Monitoring utilize WS-Management and only require a low privileged account.
 
-Operations Manager can now support Kerberos authentication wherever the WS-Management protocol is used by the Management Server to communicate with UNIX and Linux computers. Adding Kerberos support for UNIX and Linux computers provides greater security by allowing the Management Server to no longer need to enable basic authentication for Windows Remote Management (WinRM). 
+Operations Manager can now support Kerberos authentication wherever the WS-Management protocol is used by the Management Server to communicate with UNIX and Linux computers. Adding Kerberos support for UNIX and Linux computers provides greater security by allowing the Management Server to no longer need to enable basic authentication for Windows Remote Management (WinRM).
 
 ## Operations Manager Unix and Linux Kerberos Support by Activity
 
@@ -32,7 +32,7 @@ Operations Manager can now support Kerberos authentication wherever the WS-Manag
 
 ## Prerequisites
 
-UNIX and Linux Monitoring with Operations Manager is [supported on a number of operating systems.](https://docs.microsoft.com/en-us/system-center/scom/plan-supported-crossplat-os)
+UNIX and Linux Monitoring with Operations Manager is [supported on a number of operating systems.](https://docs.microsoft.com/system-center/scom/plan-supported-crossplat-os)
 
 The following subset of those operating systems now support WS-Management communication over Kerberos: (Only the most recently released version of each distribution will be supported.)
 
@@ -47,11 +47,11 @@ The following subset of those operating systems now support WS-Management commun
 
 - UNIX or Linux agent must be domain joined.
 
-- Run as accounts must be configured to use domain-based accounts that are associated with the appropriate [Unix/Linux Run As Profile.](https://docs.microsoft.com/en-us/system-center/scom/plan-security-crossplat-credentials)
+- Run as accounts must be configured to use domain-based accounts that are associated with the appropriate [Unix/Linux Run As Profile.](https://docs.microsoft.com/system-center/scom/plan-security-crossplat-credentials)
 
 - Enabling Kerberos authentication assumes all UNIX and Linux agents communicating with the management server support Kerberos. Mixed mode authentication where some agents use basic authentication and others leverage Kerberos is not supported.
 
-## Steps to enable Kerberos Authentication on a management server 
+## Steps to enable Kerberos Authentication on a management server
 1. Open the Operations console with an account that is a member of the Operations Manager Administrators role.
 
 2. Select **Monitoring** > **Data Warehouse** > **Collection Servers** > **Management Server         Name**.
@@ -92,4 +92,3 @@ To validate Kerberos authentication between a management server and a UNIX or Li
    ```
 
 2. Verify the output indicates the command was successful.  
-
