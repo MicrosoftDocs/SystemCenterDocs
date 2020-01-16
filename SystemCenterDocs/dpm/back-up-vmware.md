@@ -97,7 +97,8 @@ Once you have matching credentials in DPM, update the VMware server credentials 
    ![open Add Credentials dialog](./media/back-up-vmware/broken-credentials.png)
 4. On the Administrator console tool ribbon, click **Change Settings**.
     The Change Settings dialog opens. It displays all credentials on the DPM server. In the example image, *demovcenter_002* is the DPM credential to pair with demovcenter1.Contoso.com.
-   ![open Add Credentials dialog](./media/back-up-vmware/change-settings-dialog.png)
+   
+    ![open Add Credentials dialog](./media/back-up-vmware/change-settings-dialog.png)
 5. From the list, select the credential on the DPM server to match the VMware credential and click **Update**.
     In the image, notice demovcenter_002 authenticates a production server, and demovcenter1.Contoso.com is now protected.
    ![open Add Credentials dialog](./media/back-up-vmware/update-server-credential.png)
@@ -138,7 +139,8 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 4. On the **File to Export** screen, type a name for your certificate and click **Next**.
 5. Click **Finish** to complete the **Certificate Export Wizard**.
 6. Locate the exported certificate. Right-click the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
-   ![click install Certificate ](./media/back-up-vmware/install-certificate.png)
+    
+    ![click install Certificate ](./media/back-up-vmware/install-certificate.png)
 7. In the **Certificate Import wizard**, click **Local Machine** and then click **Next**.
 8. To find the location where you want to place the certificateOn the **Certificate Store** screen, click **Place all certificates in the following store** and click **Browse**.
 9. In the **Select Certificate Store** dialog, select **Trusted Root Authority Certificate** and click **OK**.
@@ -301,6 +303,7 @@ For long term retention on VMware backup data on-premises, you can now enable VM
     ![create new protection group ](./media/back-up-vmware/create-new-protection-group-wizard.png)
 4. In the **Select Group Members** screen, expand the **Available members** folders and select the folders to protect and click **Next**.
     Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server cannot be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
+   
     ![select members for the new protection group ](./media/back-up-vmware/select-group-members.png)
 5. On the **Select Data Protection Method** screen, type a **Protection group name**, and then select the protection method.
     For protection method, you can choose: short-term protection to a hard drive, long term backup to tape, or online protection to the cloud. Once you've selected your protection method, click **Next**.
@@ -369,7 +372,8 @@ You can restore individual files from a protected VM recovery point. This featur
     Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** does not search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You cannot recover items from multiple folders in the same recovery job.
 5. When you have selected the item(s) for recovery, in the Administrator Console tool ribbon, click **Recover** to open the **Recovery Wizard**.
     In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
-    ![review Recovery points ](./media/back-up-vmware/review-recovery-point-selection.png)
+    
+     ![review Recovery points ](./media/back-up-vmware/review-recovery-point-selection.png)
 6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, click **Modify**. To leave network throttling disabled, click **Next**. No other options on this wizard screen are available for VMware VMs.
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
 7. On the **Select Recovery Type** screen, click **Next**. You can only recover your file(s) or folder(s) to a network folder.
