@@ -149,23 +149,9 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 
 ### Add a new user account in VMware server
 
-DPM uses your user name and password as credentials for communicating and authenticating with VMware server. An authenticated user has, at least the following privileges, which are required for successfully protecting a VM:
+DPM uses your user name and password as credentials for communicating and authenticating with VMware server. A vCenter user account  has, at least the following privileges, which are required for successfully protecting a VM.
 
-- Global.ManageCustomFields
-- Network.Assign
-- Datastore.AllocateSpace
-- VirtualMachine.Config.ChangeTracking
-- VirtualMachine.State.RemoveSnapshot
-- VirtualMachine.State.CreateSnapshot
-- VirtualMachine.Provisioning.DiskRandomRead
-- VirtualMachine.Interact.PowerOff
-- VirtualMachine.Inventory.Create
-- VirtualMachine.Config.AddNewDisk
-- VirtualMachine.Config.HostUSBDevice
-- VirtualMachine.Config.AdvancedConfig
-- VirtualMachine.Config.SwapPlacement
-
-If you are creating a vCenter 6.0 user account, the following table captures the privileges that you need to assign to the user account that you create:
+The following table captures the privileges that you need to assign to the user account that you create:
 
 | Privileges for vCenter 6.5 and above user account | Privileges for vCenter 6.0 user account | Privileges for vCenter 5.5 user account |
 | --- | --- | --- |
