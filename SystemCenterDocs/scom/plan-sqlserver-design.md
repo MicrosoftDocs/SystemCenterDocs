@@ -23,7 +23,7 @@ In a lab environment or small-scale deployment of Operations Manager, SQL Server
 
 ::: moniker range=">=sc-om-1807"
 
-The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version 1807 to host Reporting Server, Operational, Data Warehouse, and ACS database:
+The following versions of SQL Server Enterprise & Standard Edition are supported for an existing installation of System Center Operations Manager version to host Reporting Server, Operational, Data Warehouse, and ACS database:
 
 * SQL Server 2017 and Service Packs as detailed [here](https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-the-modern-servicing-model-for-sql-server/)
 * SQL Server 2016 and Service Packs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
