@@ -165,6 +165,44 @@ DPM uses your user name and password as credentials for communicating and authen
 - VirtualMachine.Config.AdvancedConfig
 - VirtualMachine.Config.SwapPlacement
 
+If you are creating a vCenter 6.0 user account, the following table captures the privileges that you need to assign to the user account that you create:
+
+| Privileges for vCenter 6.5 and above user account | Privileges for vCenter 6.0 user account | Privileges for vCenter 5.5 user account |
+| --- | --- | --- |
+| Datastore.AllocateSpace |   |   |
+| Datastore.Browse datastore | Datastore.AllocateSpace | Network.Assign |
+| Datastore.Low-level file operations | Global.Manage custom attributes | Datastore.AllocateSpace |
+| Datastore cluster.Configure a datatstore cluster | Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
+| Global.Disable methods | Host.Local operations.Create virtual machine | VirtualMachine.State.RemoveSnapshot |
+| Global.Enable methods | Network. Assign network | VirtualMachine.State.CreateSnapshot |
+| Global.Licenses | Resource. Assign virtual machine to resource pool | VirtualMachine.Provisioning.DiskRandomRead |
+| Global.Log event | Virtual machine.Configuration.Add new disk | VirtualMachine.Interact.PowerOff |
+| Global.Manage custom attributes | Virtual machine.Configuration.Advanced | VirtualMachine.Inventory.Create |
+| Global.Set custom attribute | Virtual machine.Configuration.Disk change tracking | VirtualMachine.Config.AddNewDisk |
+| Network.Assign network | Virtual machine.Configuration.Host USB device | VirtualMachine.Config.HostUSBDevice |
+| Resource. Assign virtual machine to resource pool | Virtual machine.Configuration.Query unowned files | VirtualMachine.Config.AdvancedConfig |
+| Virtual machine.Configuration.Add new disk | Virtual machine.Configuration.Swapfile placement | VirtualMachine.Config.SwapPlacement |
+| Virtual machine.Configuration.Advanced | Virtual machine.Interaction.Power Off | Global.ManageCustomFields |
+| Virtual machine.Configuration.Disk change tracking | Virtual machine.Inventory. Create new |   |
+| Virtual machine.Configuration.Disk lease | Virtual machine.Provisioning.Allow disk access |   |
+| Virtual machine.Configuration.Extend virtual disk | Virtual machine.Provisioning. Allow read-only disk access |   |
+| Virtual machine.Guest Operations.Guest Operation Modifications | Virtual machine.Snapshot management.Create snapshot |   |
+| Virtual machine.Guest Operations.Guest Operation Program Execution | Virtual machine.Snapshot management.Remove Snapshot |   |
+| Virtual machine.Guest Operations.Guest Operation Queries |   |   |
+| Virtual machine .Interaction .Device connection |   |   |
+| Virtual machine .Interaction .Guest operating system management by VIX API |   |   |
+| Virtual machine .Inventory.Register |   |   |
+| Virtual machine .Inventory.Remove |   |   |
+| Virtual machine .Provisioning.Allow disk access |   |   |
+| Virtual machine .Provisioning.Allow read-only disk access |   |   |
+| Virtual machine .Provisioning.Allow virtual machine download          |   |   |
+| Virtual machine .Snapshot management. Create snapshot |   |   |
+| Virtual machine .Snapshot management.Remove Snapshot |   |   |
+| Virtual machine .Snapshot management.Revert to snapshot |   |   |
+| vApp.Add virtual machine |   |   |
+| vApp.Assign resource pool |   |   |
+| vApp.Unregister |   |   |
+
 The recommended steps for assigning these privileges:
 
 #### Create a role, for example, BackupAdminRole
