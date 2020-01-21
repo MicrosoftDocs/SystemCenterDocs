@@ -451,9 +451,9 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
    PS C:\>$psInfo = get-DPMProductionServer
    PS C:\> $psInfo
 
-   ServerName   ClusterName 	Domain 	 	      ServerProtectionState
-   ----------	  ----------- 	------ 		      ---------------------
-   Vcentervm1			            Contoso.COM     NoDatasourcesProtected
+   ServerName   ClusterName 	 Domain 	 	        ServerProtectionState
+   ----------	  ----------- 	 ------ 		        ---------------------
+   Vcentervm1			            Contoso.COM         NoDatasourcesProtected
    ```
 
 2. Select the VMware host and list the VMs protection for the VMware host.
