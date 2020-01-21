@@ -450,9 +450,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
    ```
    PS C:\>$psInfo = get-DPMProductionServer
    PS C:\> $psInfo
-   ```
 
-   ```
    ServerName   ClusterName Domain  ServerProtectionState
    ----------  ----------- ------ ---------------------
     DPM2019-M2  Contoso     .COM  HasDatasourcesProtected
@@ -464,8 +462,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
    ```
    PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[1] -Inquire
    PS C:\> $vmDsInfo
-   ```
-   ```
+
    Computer     Name     ObjectType
    --------     ----     ----------
    10.10.10.40 TestVM2      VMware
@@ -477,8 +474,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
    ```
    PS C:\>$vmDsInfo[2]
-   ```
-   ```
+  
    Computer     Name    ObjectType
    --------     ----    ----------
    10.10.10.40 TestVM4  VMware
