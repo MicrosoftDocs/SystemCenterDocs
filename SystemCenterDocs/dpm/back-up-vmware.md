@@ -425,7 +425,10 @@ To backup vSphere 6.7 do the following:
 
 ## Exclude disk from VMware VM backup
 
-With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script ExcludeDisk.ps1 is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
+> [!NOTE]
+> This feature is applicable for DPM 2019 UR1.
+
+With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
 
 To configure the disk exclusion, follow the steps below:
 
@@ -449,10 +452,12 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
    PS C:\> $psInfo
    ```
 
-   | ServerName | ClusterName | Domain | ServerProtectionState |
-   | --- | --- | --- | --- |
-   | DPM2019-M2 | Contoso | .COM | HasDatasourcesProtected |
-   | 10.10.10.40 |   |   | NoDatasourcesProtected |
+   ```
+   ServerName   ClusterName Domain  ServerProtectionState
+   ----------  ----------- ------ ---------------------
+    DPM2019-M2  Contoso     .COM  HasDatasourcesProtected
+    10.10.10.40                   NoDatasourcesProtected
+   ```
 
 2. Select the VMware host and list the VMs protection for the VMware host.
 
@@ -460,22 +465,24 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
    PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[1] -Inquire
    PS C:\> $vmDsInfo
    ```
-
-    | Computer | Name | ObjectType |
-    | --- | --- | --- |
-    | 10.10.10.40 | TestVM2 | VMware |
-    | 10.10.10.40 | TestVM1 | VMware |
-    | 10.10.10.40 | TestVM4 | VMware |
+   ```
+   Computer     Name     ObjectType
+   --------     ----     ----------
+   10.10.10.40 TestVM2      VMware
+   10.10.10.40 TestVM1      VMware
+   10.10.10.40 TestVM4      VMware
+   ```
 
 3. Select the VM for which you want to exclude a disk.
 
    ```
    PS C:\>$vmDsInfo[2]
    ```
-
-   | Computer | Name | ObjectType |
-   | --- | --- | --- |
-   | 10.10.10.40 | TestVM4| VMware |
+   ```
+   Computer     Name    ObjectType
+   --------     ----    ----------
+   10.10.10.40 TestVM4  VMware
+   ```
 
 4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
 

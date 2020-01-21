@@ -23,7 +23,7 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 - MBS backups are stored on an ReFS disk. It uses ReFS block cloning, and VHDX technology, [Learn more](https://blogs.technet.microsoft.com/dpm/2016/10/19/introducing-dpm-2016-modern-backup-storage/).
 
 > [!NOTE]
-> DPM does not support deduplication on ReFS disk used for MBS backups. DPM 2019 UR1 supports deduplication on ReFS disk used for MBS backups.
+> DPM does not support deduplication on ReFS disk used for MBS backups.
 
 DPM 2016 accepts volumes for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk. Use only a basic disk.
 
@@ -151,7 +151,7 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 - With DPM 2019 and later, you can use tiered volumes for DPM native storage which delivers 50-70% faster backups
 
 > [!NOTE]
-> DPM 2019 does not support deduplication on ReFS disk used for MBS backups. DPM 2019 UR1 supports deduplication on ReFS disk used for MBS backups.
+> DPM does not support deduplication on ReFS disk used for MBS backups. 
 
 DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk, use only a basic disk.
 
