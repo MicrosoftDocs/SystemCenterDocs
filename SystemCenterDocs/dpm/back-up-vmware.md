@@ -451,33 +451,32 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
    PS C:\>$psInfo = get-DPMProductionServer
    PS C:\> $psInfo
 
-   ServerName   ClusterName Domain  ServerProtectionState
-   ----------  ----------- ------ ---------------------
-    DPM2019-M2  Contoso     .COM  HasDatasourcesProtected
-    10.10.10.40                   NoDatasourcesProtected
+   ServerName   ClusterName 	Domain 	 	      ServerProtectionState
+   ----------	  ----------- 	------ 		      ---------------------
+   Vcentervm1			            Contoso.COM     NoDatasourcesProtected
    ```
 
 2. Select the VMware host and list the VMs protection for the VMware host.
 
    ```
-   PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[1] -Inquire
+   PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[0] -Inquire
    PS C:\> $vmDsInfo
 
    Computer     Name     ObjectType
    --------     ----     ----------
-   10.10.10.40 TestVM2      VMware
-   10.10.10.40 TestVM1      VMware
-   10.10.10.40 TestVM4      VMware
+   Vcentervm1  TestVM2      VMware
+   Vcentervm1  TestVM1      VMware
+   Vcentervm1  TestVM4      VMware
    ```
 
 3. Select the VM for which you want to exclude a disk.
 
    ```
    PS C:\>$vmDsInfo[2]
-  
+
    Computer     Name    ObjectType
    --------     ----    ----------
-   10.10.10.40 TestVM4  VMware
+   Vcentervm1  TestVM4  VMware
    ```
 
 4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
@@ -492,12 +491,9 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
     ```
     PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
-    ```
-
     Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
-
     Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
-
+    ```
 5. Verify that the disk has been added for exclusion
 
    **To view the existing exclusion for specific VMs, run the following command:**
