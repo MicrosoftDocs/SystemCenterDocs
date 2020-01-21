@@ -453,7 +453,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
    ServerName   ClusterName 	Domain 	 	   ServerProtectionState
    ----------	  ----------- 	------ 		   ---------------------
-   Vcentervm1			          Contoso.COM  	  NoDatasourcesProtected
+   Vcentervm1	              Contoso.COM  	  NoDatasourcesProtected
    ```
 
 2. Select the VMware host and list the VMs protection for the VMware host.
