@@ -68,7 +68,7 @@ With DPM 2019, you can back up newer versions of workloads, listed below:
 ## Faster backups with Tiered storage using SSDs
 DPM 2016 introduced [Modern Backup Storage](https://docs.microsoft.com/system-center/dpm/add-storage?view=sc-dpm-2016), improving storage utilization and performance. MBS uses ReFS as underlying file system and is designed to make use of hybrid storage such as tiered storage.
 
-To achieve the scale and performance by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
+To achieve the scale and performance by MBS we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with DPM HDD storage. DPM 2019 with tiered storage delivers 50-70% faster backups. [Learn more](add-storage.md#set-up-mbs-with-tiered-storage).
 
 ## Support for Central Monitoring
 With DPM 2019, all DPM-A customers (customer connected to Azure) have the flexibility of using Central Monitoring, a monitoring solution provided by Microsoft Azure Backup.
@@ -85,6 +85,37 @@ With DPM 2019, all your VMWare VMs backup within a single protection group would
 
 With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, VMWare delta replication jobs run in parallel. By default, number of jobs to run in parallel is set to 8. [Learn more](back-up-vmware.md#vmware-parallel-backups).
 
+## New features in DPM 2019 UR1
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR1.   
+
+## Support for ReFS volumes and ReFS volumes with Deduplication enabled
+
+With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the ReFS volume. You can back up the following workloads deployed on the ReFS volumes:
+
+ - **Operating System (64 bit)**: Windows Server 2019, 2016, 2012 R2, 2012.
+ - **SQL Server**: SQL Server 2019, SQL Server 2017, 2016.
+ - **Exchange**: Exchange 2019, 2016.
+ - **SharePoint**: SharePoint 2019, 2016 with latest SP.
+
+ > [!NOTE]
+ > Backup of Hyper-V VMs stored on ReFS volume is already supported with DPM 2019 RTM.
+
+## Windows Server Core support
+You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
+
+> [!NOTE]
+> Installation of MARS agent on Windows Server Core is not supported. With this limitation, DPM cannot be connected to Azure Recovery Services Vault when it is installed on Windows Server Core.
+
+## Disk exclusion for VMware VM backup
+With DPM 2019 UR1, you can exclude the specific disk from a VMware VM backup. [Learn more](back-up-vmware.md).
+
+## Support for additonal layer of authentication to delete online backup
+With DPM 2019 UR1, an  additional a layer of authentication is added for  critical operations. You will be prompted to enter a security PIN when you perform *Stop Protection* with *Delete data* operations.
+
+## New cmdlet parameter
+
+DPM 2019 UR1 includes a new parameter **[-FragmentationPercentage]**. The new parameter, calculates the fragmentation percentage for a replica, and is included in the **Copy-DPMDatasourceReplica** cmdlet.
 
 
 ::: moniker-end

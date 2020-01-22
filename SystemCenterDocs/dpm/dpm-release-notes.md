@@ -116,6 +116,9 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
+>[!NOTE]
+> This feature is fixed in DPM 2019 UR1. You can upgrade to DPM 2019 UR1 <add link to KB article> to fix this issue.
+
 ### DPM 2019 does not support file server end user recovery with Modern Backup Storage (MBS)
 
 **Description**: DPM 2019 does not support end user recovery with Modern Backup Storage (MBS).
