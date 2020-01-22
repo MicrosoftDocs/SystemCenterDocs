@@ -99,7 +99,7 @@ With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the
  - **SharePoint**: SharePoint 2019, 2016 with latest SP.
 
  > [!NOTE]
- > Backup of Hyper-V VMs stored on ReFS volume is already supported with DPM 2019 RTM.
+ > Backup of Hyper-V VMs stored on ReFS volume is supported with DPM 2019 RTM.
 
 ## Windows Server Core support
 You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
