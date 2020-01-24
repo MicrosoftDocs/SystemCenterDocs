@@ -40,9 +40,9 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 
 ::: moniker range="sc-dpm-2019"
 
-## DPM 2019 and 2019 UR1 release notes
+## DPM 2019 release notes
 
-The following sections summarize the release notes for DPM 2019 and 2019 UR1 and include the following known issues and workarounds.
+The following sections summarize the release notes for DPM 2019 and include the following known issues and workarounds.
 
 ### DPM console crashes due to MSDPM Service crash
 
