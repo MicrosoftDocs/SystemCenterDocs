@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 03/14/2019
+ms.date: 01/28/2020
 title: What's new in System Center DPM 2016, 1801, 1807 and 2019
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -40,9 +40,9 @@ System Center DPM 2016 adds improvements in three key areas: storage efficiency,
 
 ::: moniker range="sc-dpm-2019"
 
-## New features in DPM 2019
+## New features in DPM 2019 and DPM 2019 UR1
 
- See the following sections for detailed information about the new features/feature updates supported in DPM 2019.
+ See the following sections for detailed information about the new features/feature updates supported in DPM 2019 and DPM 2019 UR1.
 
 ::: moniker-end
 

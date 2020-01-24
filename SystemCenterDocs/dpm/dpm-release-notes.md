@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 01/28/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -40,9 +40,9 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 
 ::: moniker range="sc-dpm-2019"
 
-## DPM 2019 Release Notes
+## DPM 2019 and 2019 UR1 release notes
 
-The following sections summarize the release notes for DPM 2019 and include the following known issues and workarounds.
+The following sections summarize the release notes for DPM 2019 and 2019 UR1 and include the following known issues and workarounds.
 
 ### DPM console crashes due to MSDPM Service crash
 

@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 04/30/2019
+ms.date: 01/28/2020
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
@@ -151,7 +151,7 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 - With DPM 2019 and later, you can use tiered volumes for DPM native storage which delivers 50-70% faster backups
 
 > [!NOTE]
-> DPM does not support deduplication on ReFS disk used for MBS backups. 
+> DPM does not support deduplication on ReFS disk used for MBS backups.
 
 DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk, use only a basic disk.
 
