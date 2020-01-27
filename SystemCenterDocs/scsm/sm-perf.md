@@ -22,7 +22,7 @@ Performance for System Center - Service Manager server roles and features is aff
 
 ## Connector performance
 
-Connector initial synchronization can take a significant amount of time, for example, 8 to 12 hours for a large initial synchronization with System Center Configuration Manager. As a connector synchronizes initially, you can expect performance to suffer for all Service Manager server roles and processes during this time. This occurs because of the way that data is inserted sequentially into the Service Manager database, which is a Microsoft SQL Server database. Although you cannot hasten the connector's initial synchronization process, you can plan for the initial synchronization and ensure that the synchronization process completes well before Service Manager is put into production.  
+Connector initial synchronization can take a significant amount of time, for example, 8 to 12 hours for a large initial synchronization with Configuration Manager. As a connector synchronizes initially, you can expect performance to suffer for all Service Manager server roles and processes during this time. This occurs because of the way that data is inserted sequentially into the Service Manager database, which is a Microsoft SQL Server database. Although you cannot hasten the connector's initial synchronization process, you can plan for the initial synchronization and ensure that the synchronization process completes well before Service Manager is put into production.  
 
 When the initial synchronization is complete, Service Manager continues synchronizing the differences, which does not have a measurable impact on performance.  
 
@@ -40,7 +40,7 @@ When the system is under a heavy load - if, for example, a large number of new i
 
 ## Group, queue, and user role impact on performance
 
-You should plan for groups and user roles early. You should create groups sparingly and create them for the smallest scope possible. Then, you should initially populate your database with data from Active Directory Domain Services \(AD DS\), System Center Configuration Manager, and System Center Operations Manager before you create your groups.  
+You should plan for groups and user roles early. You should create groups sparingly and create them for the smallest scope possible. Then, you should initially populate your database with data from Active Directory Domain Services \(AD DS\), Configuration Manager, and System Center Operations Manager before you create your groups.  
 
 Often, administrators create groups to make sure that users have access to specified groups only. For example, in one scenario you might want to create a subset of incidents, such as incidents that affect computers that are used by human resource personnel. In this scenario, you might want only specific personnel to be able to view or modify the group of Sensitive Servers. Then, to enable this type for access, you would need to create a group for all users and a group for sensitive computers and then ensure that a security role has access to both the All Users and the Sensitive Servers groups. Inevitably, creating a group containing all users results in performance impact because Service Manager frequently checks to determine if there are changes to the group. This check occurs once every 30 seconds, by default. For a very large group, checking for the changes creates a heavy load on the system, and it may slow down response time considerably.  
 

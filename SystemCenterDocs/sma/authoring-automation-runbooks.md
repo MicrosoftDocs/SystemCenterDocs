@@ -269,7 +269,7 @@ The following runbooks ship with Service Management Automation as sample runbook
 |----------------|---------------|
 |Sample-Deleting-VMCloud-Subscription|Demonstrates a useful scenario for triggering a runbook when a user deletes a VM Clouds subscription.|
 |Sample-Managing-Azure|Shows how to connect to a Windows Azure subscription and perform basic operations using the Windows Azure PowerShell module.|
-|Sample-Managing-ConfigurationManager|Demonstrates the capability of Service Management Automation to connect into System Center Configuration Manager.|
+|Sample-Managing-ConfigurationManager|Demonstrates the capability of Service Management Automation to connect into Configuration Manager.|
 |Sample-Managing-DataProtectionManager|Demonstrates how to connect to a Data Protection Manager (DPM) server and view information about the disks found on the DPM server.|
 |Sample-Managing-MySQLServers|Demonstrates how to retrieve a security token which will be used to then retrieve a list of host servers.|
 |Sample-Managing-OperationsManager|Demonstrates the capability of Service Management Automationto connect to System Center Operations Manager.|

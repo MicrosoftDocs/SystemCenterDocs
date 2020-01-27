@@ -52,7 +52,7 @@ Some Service Manager users have created user-defined workflows that monitor data
 
 Because entries are not written to the ECL and history table, the history of the creation and/or the changes to data items imported by connectors in Service Manager are not recorded. In other words, if you disable ECL logging you cannot determine when a user or a computer object was imported into the Service Manager database and/or when changes to these objects are imported into the Service Manager database.
 
-In some cases, changes to data like users and computers need be recorded in the database for auditing purposes. In this example, an alternative is to get the change history from the source. For example, would need to get the history of changes made to the user from Active Directory or get the history of changes made to the computer from System Center Configuration Manager.
+In some cases, changes to data like users and computers need be recorded in the database for auditing purposes. In this example, an alternative is to get the change history from the source. For example, would need to get the history of changes made to the user from Active Directory or get the history of changes made to the computer from Configuration Manager.
 
 ## Additional information about disabling ECL logging
 With System Center 2016 - Service Manager, ECL logging is disabled by default for both the new installations and upgrades, regardless of whether your disabled ECL logging previously. Settings that you might have used previously are no longer used. You'll need the use the procedure below to disable ECL logging.

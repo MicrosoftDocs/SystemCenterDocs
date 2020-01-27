@@ -14,13 +14,13 @@ ms.assetid: abaf3337-f620-4220-bbbb-13007dc72754
 
 # Import data from Configuration Manager into Service Manager
 
-This article describes how to create, configure, disable, and enable a Configuration Manager connector, and how to customize the Configuration Manager extended SMS_def.mof file for collecting hardware information. You use the connector to import data from System Center Configuration Manager into Service Manager.
+This article describes how to create, configure, disable, and enable a Configuration Manager connector, and how to customize the Configuration Manager extended SMS_def.mof file for collecting hardware information. You use the connector to import data from Configuration Manager into Service Manager.
 
 The connector for Configuration Manager recognizes User-device Affinity and Mobile Devices and synchronizes them in the Service Manager database.
 
-You can import data from the System Center Configuration Manager site database into the Service Manager database. This automatically creates and populates configuration items for the hardware and software that you want to manage in Service Manager. After you import data from System Center Configuration Manager, you can attach the respective configuration items to relevant incidents, and the information in the configuration items will be available to analysts working on the incident.
+You can import data from the Configuration Manager site database into the Service Manager database. This automatically creates and populates configuration items for the hardware and software that you want to manage in Service Manager. After you import data from Configuration Manager, you can attach the respective configuration items to relevant incidents, and the information in the configuration items will be available to analysts working on the incident.
 
-By using a Configuration Manager connector, you can import configuration baselines from System Center Configuration Manager and then use these configuration baselines to automatically generate incidents for noncompliant configuration items.
+By using a Configuration Manager connector, you can import configuration baselines from Configuration Manager and then use these configuration baselines to automatically generate incidents for noncompliant configuration items.
 
 For information about Microsoft Operations Framework (MOF) implementation of change and configuration, see [Position of the Change and Configuration SMF Within the MOF IT Service Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=115631).
 
@@ -43,7 +43,7 @@ In Configuration Manager, you can extend the hardware inventory by collecting an
 If you have extended the hardware inventory in Configuration Manager, you must create a new Configuration Manager Connector management pack in Service Manager to collect the extended hardware inventory. This new management pack can contain only the information required to collect the extended hardware inventory from Configuration Manager, or it can consist of everything from the original Configuration Manager Connector management pack plus the new extended hardware inventory. For information about creating a new connector management pack, see [How to Configure a Configuration Manager Connector for an Extended SMS_def.mof File](admin-how-to-configure-a-configuration-manager-connector-for-an-extended-sms-def.mof-file.md).
 
 ## Importing software configuration items
-You can import software configuration items with the Configuration Manager Connector by importing  the following asset intelligence reporting classes in System Center Configuration Manager. These classes should be enabled in Configuration Manager before you configure the Configuration Manager connector in Service Manager. For more information about enabling Asset  Intelligence in Configuration Manager, see [How to Enable Asset Intelligence](https://go.microsoft.com/fwlink/p/?LinkId=262404).
+You can import software configuration items with the Configuration Manager Connector by importing the following asset intelligence reporting classes in Configuration Manager. These classes should be enabled in Configuration Manager before you configure the Configuration Manager connector in Service Manager. For more information about enabling Asset  Intelligence in Configuration Manager, see [How to Enable Asset Intelligence](https://go.microsoft.com/fwlink/p/?LinkId=262404).
 
 -   SMS_InstalledSoftware
 
@@ -62,13 +62,13 @@ If software for a particular computer does not appear in the **All Software** vi
 You can use the following procedures to create a connector to import data from Configuration Manager into System Center - Service Manager and confirm the status of the connector.
 
 > [!IMPORTANT]
-> Before you can create the Configuration Manager connector, you have to verify that System Center Configuration Manager is installed in your environment, and you have to turn on Windows User Account Control (UAC). For more information about UAC, see [User Account Control](https://go.microsoft.com/fwlink/p/?LinkID=177523).
+> Before you can create the Configuration Manager connector, you have to verify that Configuration Manager is installed in your environment, and you have to turn on Windows User Account Control (UAC). For more information about UAC, see [User Account Control](https://go.microsoft.com/fwlink/p/?LinkID=177523).
 
 ### To create a Configuration Manager connector
 
 1.  In the Service Manager console, click **Administration**.
 2.  In the **Administration** pane, expand **Administration**, and then click **Connectors**.
-3.  In the **Tasks** pane, under **Connectors**, click **Create Connector**, and then click **Configuration Manager Connector**. The System Center Configuration Manager Connector Wizard starts.
+3.  In the **Tasks** pane, under **Connectors**, click **Create Connector**, and then click **Configuration Manager Connector**. The Configuration Manager Connector Wizard starts.
 4.  On the **Before You Begin** page, click **Next**.
 5.  On the **General** page, do the following:
     1.  In the **Name** box, type a name for the new connector. For example, type **Configuration Manager Connector to Seattle**.
@@ -76,8 +76,8 @@ You can use the following procedures to create a connector to import data from C
     3.  Make sure that the **Enabled** check box is selected, and then click **Next**.
 6.  On the **Select Management Pack** page, in the **Management Pack** list, select either **System Center Configuration Manager Connector Configuration** or **System Center Configuration Manager 2012 Connector Configuration**, and then click **Next**.
 7.  On the **Connect to System Center Configuration Manager Database** page, do the following:
-    1.  In the **Database Server Name** box, type the server name of the server that is hosting the System Center Configuration Manager site database and the database named instance, if applicable. For example, at the hypothetical Woodgrove Bank, you might type **woodgrove\instance1** if the System Center Configuration Manager database is on a named instance of Microsoft SQL Server, or type **woodgrove** if the database is on a default instance of SQL Server.
-    2.  In the **Database Name** box, type the name of the System Center Configuration Manager site database. For example, type **SMS_CM1**.
+    1.  In the **Database Server Name** box, type the server name of the server that is hosting the Configuration Manager site database and the database named instance, if applicable. For example, at the hypothetical Woodgrove Bank, you might type **woodgrove\instance1** if the Configuration Manager database is on a named instance of Microsoft SQL Server, or type **woodgrove** if the database is on a default instance of SQL Server.
+    2.  In the **Database Name** box, type the name of the Configuration Manager site database. For example, type **SMS_CM1**.
     3.  In the **Credentials** area, select a Run As account, or create a new Run As account. The user account that you specify as the Run As account must be a member of the smsdbrole_extract and the db_datareader groups for the Configuration Manager site database.
     4.  In the **Credentials** area, click **Test Connection**.
     5.  In the **Credentials** dialog box, in the **Password** box, type the password for the account, and then click **OK**.
@@ -92,7 +92,7 @@ You can use the following procedures to create a connector to import data from C
     Then, click **Close**.
 
     > [!NOTE]
-    > The System Center Configuration Manager Connector Wizard may take several hours to import data from System Center Configuration Manager.
+    > The System Center Configuration Manager Connector Wizard may take several hours to import data from Configuration Manager.
 
 ### To validate the creation of a Configuration Manager connector
 
@@ -108,7 +108,7 @@ You can use the following procedures to create a connector to import data from C
 
 ## Disable and enable a Configuration Manager connector
 
-You can use the following procedures to disable or enable a System Center Configuration Manager connector and validate the status of the change.
+You can use the following procedures to disable or enable a Configuration Manager connector and validate the status of the change.
 
 ### To disable a Configuration Manager connector
 
