@@ -160,7 +160,7 @@ The following table captures the privileges that you need to assign to the user 
 | Datastore.AllocateSpace |   |   |
 | Datastore.Browse datastore | Datastore.AllocateSpace | Network.Assign |
 | Datastore.Low-level file operations | Global.Manage custom attributes | Datastore.AllocateSpace |
-| Datastore cluster.Configure a datatstore cluster | Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
+| Datastore cluster.Configure a datastore cluster | Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
 | Global.Disable methods | Host.Local operations.Create virtual machine | VirtualMachine.State.RemoveSnapshot |
 | Global.Enable methods | Network. Assign network | VirtualMachine.State.CreateSnapshot |
 | Global.Licenses | Resource. Assign virtual machine to resource pool | VirtualMachine.Provisioning.DiskRandomRead |
