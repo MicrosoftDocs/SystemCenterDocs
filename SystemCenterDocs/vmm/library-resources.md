@@ -5,7 +5,7 @@ description: This article describes management tasks for the VMM library
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -71,3 +71,28 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 1. You won't be able to delete an orphaned resource until templates that reference it are updated to valid references. To view the templates right-click the orphaned resource > **Properties**. To update the template click it and then in the **Properties** dialog, locate the resource that's missing > **Remove**.
 1. Add a new resource that's valid.
 1. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependencies right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
+
+## Manage replicated library shares
+
+>[!NOTE]
+>This feature is applicable for VMM 2019 UR1.
+
+VMM now supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR to replicate shares and manage the shares through VMM.
+
+For effective management of replicated shares using VMM, disable the usage of *alternate data stream* for both the source and destination library shares.  You can do this while adding new library shares or by editing properties of existing library shares. *Alternate data stream* is enabled by default. Disable this option only when using replication across library shares.
+
+VMM generates a GUID for all the library objects managed by VMM. This metadata is written into *Alternate Data Stream* of the file. VMM uses *Alternate Data Stream* to identify library objects as the same objects, while they are moved across folders in library shares or in scenarios where a library object is renamed. Disabled *Alternate Data stream* impacts the identification of object as the same object in the scenarios mentioned above.
+
+ However, for effective management of replicated library shares using VMM, it is required to disable the *Alternate Data Stream* option.
+
+  ![disable alternate data stream ](media/library-resources/disable-alternate-data-stream.png)
+
+### Rename/move library files in replicated library shares
+If you have opted to disable writing to *Alternate Data Stream*, some scenarios like rename/move to different library share might be effective. To ensure these scenarios work fine, use the following steps:
+
+1.	Ensure the file that you want to rename/move is replicated across all the library shares.
+2.	Refresh all the replicated library shares.
+3.	Rename/move the library file in the parent library share.
+
+>[!NOTE]
+>Storing VMs and VMWare VM templates is not supported on library shares with *UseAlternateDataStream* set to false.
