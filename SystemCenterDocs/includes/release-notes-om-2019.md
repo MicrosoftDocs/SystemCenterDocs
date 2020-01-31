@@ -4,7 +4,7 @@ description: include file that summarizes the release notes for Operations Manag
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 05/10/2019
+ms.date: 02/04/2020
 ms.prod: system-center
 ms.assetid: 56adc06e-4317-4622-83f2-cc44a5f40c78
 ms.technology: operations-manager
@@ -87,7 +87,7 @@ The following sections summarize the release notes for Operations Manager 2019 U
 
 **Description:** After you apply the 2019 update rollup (UR1), the agents to be updated are not listed in **Pending Management**, console view.
 
-**Workaround:** You need to identify the agents and update them manually. To do this, go to **Administration**> **Device Management**>**Agent Managed**, and update the agents that are of the older version. To view the correct version of the agent, after applying the management server patch, import the management pack as mentioned in the KB article for Operations Manager 2019 UR1. 
+**Workaround:** You need to identify the agents and update them manually. To do this, go to **Administration**> **Device Management**>**Agent Managed**, and update the agents that are of the older version. To view the correct version of the agent, after applying the management server patch, import the management pack as mentioned in the KB article for Operations Manager 2019 UR1.
 
 ### Version display
 

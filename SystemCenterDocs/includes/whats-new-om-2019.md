@@ -5,7 +5,7 @@ description: include file to describe the new features in operations manager 201
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 01/28/2020
+ms.date: 02/04/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager

@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 01/28/2020
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
