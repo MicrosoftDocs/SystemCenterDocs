@@ -24,8 +24,8 @@
 ### [Deploy the DPM protection agent](deploy-dpm-protection-agent.md)
 ### [Deploy protection groups](create-dpm-protection-groups.md)
 ### [Configure firewall settings](configure-firewall-settings-for-dpm.md)
-#### Offline backup
-##### [Using own disk](offline-backup-workflow.md)
+### Offline backup
+#### [Using own disk](offline-backup-workflow.md)
 ## Protect Workloads
 ### [Back up Hyper-V virtual machines](back-up-hyper-v-virtual-machines.md)
 ### [Back up Exchange with DPM](back-up-exchange.md)
