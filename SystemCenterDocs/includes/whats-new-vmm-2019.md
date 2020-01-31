@@ -1,18 +1,19 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: include file to detail the new features in virtual machine manager 2019.
+description: include file to detail the new features in virtual machine manager 2019 and 2019 UR1.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  03/14/2019
+ms.date:  01/28/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
 ---
 
+
 ## New features in VMM 2019
-See the following sections for detailed information about the new features/feature updates supported in VMM 2019.
+See the following sections for detailed information about the new features in VMM 2019.
 
 ## Compute
 
@@ -205,3 +206,33 @@ The primary HGS URLs will always be used in favor of the secondary.  If the prim
 Currently, the VMM Azure plugin supports only classic virtual machines (VMs) and public Azure regions.
 
 VMM 1801 supports management of Azure Resource Manager based VMs, Azure Active Directory (AD) based authentication that is created by using the new Azure portal and region-specific Azure subscriptions (namely, Germany, China, US Government Azure regions). [Learn more](../vmm/vms-manage-azure-ad-and-region-specific.md).
+
+## New features in VMM 2019 UR1
+
+See the following sections for information about the new features/feature updates supported in VMM 2019 UR1.
+
+## Compute
+### Support for management of replicated library shares
+
+Large enterprises, usually have multi-site datacenter deployments to cater to various offices across globe. These enterprises typically have a locally available library server to access files for VM deployment than accessing the library shares from a remote location. This is to avoid any network related issues one might experience. However, library files need to be consistent across all the datacenters to ensure uniform VM deployments. To maintain uniformity of library contents, organizations use replication technologies.
+
+VMM now supports the management of library servers, which are replicated. You can use any replication technologies such as DFSR and manage the replicated shares through VMM. [Learn more](../vmm/library-resources.md#manage-replicated-library-shares).
+
+## Storage
+### Configuration of DCB settings on S2D clusters
+
+Remote Direct Memory Access (RDMA) in conjunction with Data Center Bridging (DCB) helps to achieve similar level of performance and lossless ness in an Ethernet network as in fiber channel networks.  
+
+VMM 2019 UR1 supports configuration of data center bridging (DCB) on S2D clusters.
+
+>[!NOTE]
+>You must configure the DCB settings consistently across all the hosts and the fabric network (switches). A mis-configured DCB setting in any one of the host/fabric device is detrimental to the S2D performance.  [Learn more](../vmm/s2d-hyper-converged.md#step-3-configure-dcb-settings-on-the-s2d-cluster).
+
+## Network
+### User experience improvements in logical networks
+
+In VMM 2019 UR1, user's experience while creating logical networks has been enhanced. Logical networks are now grouped in product description, based on use-cases. Also, provided illustration for each logical network type and a dependency graph. [Learn more](../vmm/network-logical-ur1.md).
+
+### additional options to enable nested virtualization
+
+You can now enable nested virtualization while creating a new VM, deploying VMs through VM templates and service templates. In earlier releases, nested virtualization is supported only on deployed VMs. Learn more about [enabling nested virtualization](../vmm/vm-nested-virtualization.md).

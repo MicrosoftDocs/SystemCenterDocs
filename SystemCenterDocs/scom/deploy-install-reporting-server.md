@@ -21,6 +21,9 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 
 You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
 
+>[!NOTE]
+> Operations Manager 2019 UR1 supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
+
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]

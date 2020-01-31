@@ -5,7 +5,7 @@ description: This article describes options to administer and configure the UNIX
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: cfreemanwa
-ms.date: 11/15/2016
+ms.date: 01/28/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -167,6 +167,22 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 
 > [!NOTE]  
 > The OSAlias property should not be edited. All properties in this file (except for OSManufacturer) are mandatory and should not be null.  
+
+
+##	Performance and reliability improvements in the Linux agent  
+
+>[!NOTE]
+> This update is applicable for Operations Manager 2019 UR1.
+
+With Operations Manager 2019 UR1, to improve the reliability, a separate process is introduced to send the heartbeat. Earlier, the performance and heartbeat collection threads used to run under the same process context. Due to this, any delay in performance data collection was affecting the system availability.
+
+With this change, during heartbeat collection, you can now see an additional *omiagent* process running under *omi* user.
+
+To improve the performance, X-Plat Filter variable is introduced in override. You may override discovery/monitor behavior for X-Plat management pack by introducing SQL queries in *Filter* parameter. This helps in restricting the monitoring to entities of interest.
+
+Also, to avoid quick filling of disk space, SCX logging is decreased from *Information* to *Warning*.
+
+![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example.png)
 
 ## Next steps
 
