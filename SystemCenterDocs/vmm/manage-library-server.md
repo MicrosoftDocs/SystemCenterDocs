@@ -5,7 +5,7 @@ description: This article provides guidance for setting up the library in the VM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -37,7 +37,7 @@ Resource type | What can I add?
 **Stored VMs and services** | Users can store their VMs that aren't in use in the stored node of the cloud library.
 **Update catalog and baselines** | If you manage updates through VMM then WSUS update baselines are stored in the library.
 **Custom resources** | Add custom resources so that resources that would otherwise not be indexed show up in the library. To do this you create a folder with a .CR extension and save it to a library share. Folder contents are available to all users who can access the share. Examples for custom resources includes pre and post-execution scripts, and custom installation packages.
+**Manage replicated library shares** | You can manage library servers, which are replicated. You can use any replication technologies such as DFSR to manage the replicated shares through VMM. [Learn more](library-resources.md#manage-replicated-library-shares).
 
 ## Next steps
-
 [Learn about](library-files.md) adding file-based resources to the library.
