@@ -5,7 +5,7 @@ description: This article describes how to create a new HTML5 dashboards in Syst
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/19/2018
+ms.date: 02/04/2020
 ms.custom: na
 ms.prod: system-center
 monikerRange: '>sc-om-2016'
