@@ -191,7 +191,7 @@ Consider the following tips when you are working with a custom Configurations Ma
 
 -   To ensure a successful deletion of a management pack, you must delete any connectors that are configured to use the management pack that you want to delete and then delete the management pack.
 
-    When you delete a custom Configurations Manager Connector management pack, Service Managerr tries to delete all related staging tables that were created during the management pack import. Then, Service Manager runs any scripts that are defined in the **Uninstall** section of the management pack.
+    When you delete a custom Configurations Manager Connector management pack, Service Manager tries to delete all related staging tables that were created during the management pack import. Then, Service Manager runs any scripts that are defined in the **Uninstall** section of the management pack.
 
 -   Unlike other management packs, the custom Configuration Manager Connector management pack cannot be versioned. Importing a later version of the management pack will succeed. However, the connector configuration in the management pack will be ignored, or it might cause validation errors that are logged to the event log.
 
