@@ -15,7 +15,7 @@ ms.assetid:
 
 > [!NOTE]
 > The Semi-Annual Channel (SAC) for System Center has been discontinued. System Center 2019 will support upgrades from two prior SAC releases so customers running System Center 1801 or System Center 1807 will be able to upgrade to System Center 2019.
->System Center Configuration Manager (SCCM) is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](https://docs.microsoft.com/sccm/core/servers/manage/current-branch-versions-supported).
+>Configuration Manager is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](https://docs.microsoft.com/configmgr/core/servers/manage/current-branch-versions-supported).
 
 The information in this article applies to the following System Center technologies:
 
@@ -25,7 +25,7 @@ The information in this article applies to the following System Center technolog
 - Service Manager
 - Virtual Machine Manager
 
-For information on System Center Configuration Manager, see its [support article](https://docs.microsoft.com/sccm/core/servers/manage/current-branch-versions-supported).
+For information on Configuration Manager, see its [support article](https://docs.microsoft.com/configmgr/core/servers/manage/current-branch-versions-supported).
 
 Microsoft releases updates for System Center Semi-Annual Channel (SAC) a couple times per year. Each Semi-Annual Channel version is in support for 18 months from its general availability (GA) release date. Technical support is provided for the entire period of support. Microsoft's support structure has two phases:
 

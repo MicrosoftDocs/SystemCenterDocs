@@ -27,7 +27,7 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 
 Before you can install the Integration Pack for Configuration Manager, you must first install and configure the following listed software. For more information about how to install and configure Orchestrator and Active Directory, refer to the respective product documentation.
 
--   System Center integration packs require System Center - Orchestrator and System Center - Configuration Manager.
+-   System Center integration packs require System Center - Orchestrator and Configuration Manager.
 
 ## Downloading the Integration Pack
 

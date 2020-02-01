@@ -152,7 +152,7 @@ You will have to provide credentials for the accounts in the following table dur
 
 |Permissions|Best practices|  
 |-----------------|--------------------|  
-|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.|Domain account specifically created for this purpose that is only in the Users local security group, must be a member of the smsdbrole\_extract and db\_datareader on the System Center Configuration Manager database, and is in an Advanced Operator user role in Service Manager.|
+|-   Must be a domain account.<br />-   Must be a member of the Users local security group on the Service Manager management server.|Domain account specifically created for this purpose that is only in the Users local security group, must be a member of the smsdbrole\_extract and db\_datareader on the Configuration Manager database, and is in an Advanced Operator user role in Service Manager.|
 
 
 

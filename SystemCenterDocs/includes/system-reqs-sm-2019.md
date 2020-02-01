@@ -62,7 +62,7 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
 - **Operations Manager** - Service Manager has the capability to import alerts and configuration items from an Operations Manager environment. [Read about](../scsm/om-considerations.md) installing both Service Manager and Operations Manager in the same environment. You can create a data mart for Operations Manager.
 
-- **Configuration Manager** - Service Manager can import configuration items from a System Center - Configuration Manager environment.
+- **Configuration Manager** - Service Manager can import configuration items from a Configuration Manager environment.
 
 - **Network requirements** - To view external content from within knowledge articles, computers that host the Service Manager console must have Internet access, either directly or through a proxy server.  
 
