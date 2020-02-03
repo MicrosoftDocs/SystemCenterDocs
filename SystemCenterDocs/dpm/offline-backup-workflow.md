@@ -66,10 +66,12 @@ The information in this section helps you complete the offline-backup workflow s
 ### Initiate offline backup
 
 1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and Click **Next**.
-> [!NOTE]
-> To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
 
     ![Import screen](./media/backup-server/create-new-protection-group.png)
+
+
+  > [!NOTE]
+  > To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
 
 2. The Azure login page will open. Login using your Azure user account which has *owner* role permission on the Azure Subscription.
 
