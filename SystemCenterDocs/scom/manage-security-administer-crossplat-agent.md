@@ -178,11 +178,22 @@ With Operations Manager 2019 UR1, to improve the reliability, a separate process
 
 With this change, during heartbeat collection, you can now see an additional *omiagent* process running under *omi* user.
 
-To improve the performance, X-Plat Filter variable is introduced in override. You may override discovery/monitor behavior for X-Plat management pack by introducing SQL queries in *Filter* parameter. This helps in restricting the monitoring to entities of interest.
+To improve the performance, X-Plat Filter variable is introduced in override. You may override discovery/monitor behavior for X-Plat management pack by introducing WQL queries in *Filter* parameter. This helps in restricting the monitoring to entities of interest.
 
 Also, to avoid quick filling of disk space, SCX logging is decreased from *Information* to *Warning*.
 
-![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example.png)
+
+Here is an example of how you may configure an override by using the **Filter** variable:
+
+If you wish to get only the data for ‘loop200’ then use this query in the filter variable:
+
+select ***** from SCX_DiskDrive where DeviceID=’loop200’
+
+![override controlled parameters example1](media/manage-security-administer-crossplat-agent/override-example1.png)
+
+Now, you will see data only for the disk ‘loop200’ in the performance view.
+
+![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example2.png)
 
 ## Next steps
 
