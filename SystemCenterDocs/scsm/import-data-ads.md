@@ -27,7 +27,7 @@ If you are importing data from several OUs or subdomains, you have the option of
 
 If you must later perform maintenance operations on the Service Manager database, you can temporarily disable the connector and suspend the importation of data. Later, you can resume the importation of data by re-enabling the connector.
 
-When you import a large number of users from AD DS) or from System Center Configuration Manager, CPU utilization might increase to 100 percent. You will notice this on one core of the CPU. For example, if you import 20,000 users, CPU utilization might remain high for up to an hour. You can mitigate this issue by creating connectors and importing the users into Service Manager before you deploy the product in your enterprise and by scheduling connector synchronization during off hours. Installing Service Manager on a computer that has a multi-core CPU also minimizes the impact of importing a large number of users.
+When you import a large number of users from AD DS) or from Configuration Manager, CPU utilization might increase to 100 percent. You will notice this on one core of the CPU. For example, if you import 20,000 users, CPU utilization might remain high for up to an hour. You can mitigate this issue by creating connectors and importing the users into Service Manager before you deploy the product in your enterprise and by scheduling connector synchronization during off hours. Installing Service Manager on a computer that has a multi-core CPU also minimizes the impact of importing a large number of users.
 
 ## Create an Active Directory connector
 

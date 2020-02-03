@@ -25,7 +25,7 @@ You can also organize your computer groups into folders. Use the following steps
 
 2.  Right-click to select **New**, and then click **Folder**.  
 
-Use the following procedure to add a computer group. To add computers by using an Active Directory query or a System Center Configuration Manager collection, use the Active Directory Integration Pack or the Integration Pack for System Center Configuration Manager.  
+Use the following procedure to add a computer group. To add computers by using an Active Directory query or a Configuration Manager collection, use the Active Directory Integration Pack or the Integration Pack for Configuration Manager.  
 
 ### Add a computer group  
 
