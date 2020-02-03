@@ -35,7 +35,7 @@ With the offline-seeding capability of Azure Backup and Azure Import/Export, it 
 
 ## Prerequisites
 
-Ensure that the following prerequisites are met before initiating the Offline Backup workflow
+Ensure that the following prerequisites are met before initiating the Offline Backup workflow.
 
 * A [Recovery Services vault](https://docs.microsoft.com/azure/backup/backup-azure-recovery-services-vault-overview) has been created. To create one, refer to the steps in [this article](https://docs.microsoft.com/azure/backup/tutorial-backup-windows-server-to-azure#create-a-recovery-services-vault).
 * Ensure that only the [latest version of Microsoft Azure Recovery Services agent](https://aka.ms/azurebackup_agent) is installed on the SC DPM and registered to Recovery Services Vault.
@@ -112,7 +112,7 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
 
    * The copy computer can access the staging location for the offline-seeding workflow by using the same network path that was provided in the **Initiate offline backup** workflow.
    * BitLocker is enabled on the copy computer.
-   * Azure PowerShell 3.7.0 is installed on Copy computer (not required if you are running the AzureOfflineBackupDiskPrep utility on the DPM server ).
+   * Azure PowerShell 3.7.0 is installed on Copy computer (not required if you are running the AzureOfflineBackupDiskPrep utility on the DPM server).
    * The latest compatible browsers (Microsoft Edge or Internet Explorer 11) are installed and JavaScript is enabled.
    * The copy computer can access the Azure portal. If necessary, the copy computer can be the same as the source computer.
 
