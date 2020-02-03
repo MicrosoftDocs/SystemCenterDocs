@@ -1,6 +1,6 @@
 ---
 ms.assetid: a13cf51e-e6f0-4446-b00c-bf7516426d4f  
-title: Support for group managed service accounts
+title: Support for group managed service accounts in Operations Manager
 description: This article details the group managed service accounts feature, supported in System Center 2019 UR1 - Operations Manager.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -17,8 +17,8 @@ ms.topic: article
 Operations Manager 2019 UR1 supports group managed service accounts (gMSA). This article details the accounts used for gMSA, and the procedures involved with gMSA support.
 
 >[!NOTE]
-> >This article is applicable for System Center 2019 UR1 - Operations Manager.
->The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accountsS, see [gMSA accounts](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
+> This article is applicable for System Center 2019 UR1 - Operations Manager.
+>The article provides information on how to use gMSA in operations manager, does not include information on how to create these. For information on how to create gMSA accounts, see [gMSA accounts](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview).
 
 ## Accounts used for gMSA
 Currently, Operations Manager uses the following accounts and services :
@@ -48,6 +48,6 @@ Test-ADServiceAccount \<gMSA\_name\>
 ## Next steps
 To use gMSA, do the following:
 [Provide security rights](provide-security-rights.md)
-[change databases](database-changes.md)
-[service level account changes](service-level-changes.md)
-[console level changes](console-level-changes.md)
+[Change databases](database-changes.md)
+[Service level account changes](service-level-changes.md)
+[Console level changes](console-level-changes.md)

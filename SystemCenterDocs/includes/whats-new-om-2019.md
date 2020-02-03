@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
-description: include file to describe the new features in operations manager 2019 and 2019 UR1.
+description: include file to describe the new features in Operations Manager 2019 and 2019 UR1.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -212,7 +212,7 @@ The existing universal management packs are enhanced in Operations Manager 2019 
 
 The existing management packs for RHEL-7 and SLES-12 will continue to work. The universal management packs will support discovering and monitoring RHEL-8 and SLES-15, and any new platforms that we intend to support in the future.
 
-The existing SLES-15 MP has been removed from the download center and you are advised to use the new universal management pack for its discovery and monitoring. Download the updated management packs from [here](https://www.microsoft.com/en-us/download/details.aspx?id=58208) and follow these steps to discover and monitor RHEL 8 and SLES 15:
+The existing SLES-15 MP has been removed from the download center and you are advised to use the new universal management pack for its discovery and monitoring. Download the updated management packs from [here](https://www.microsoft.com/download/details.aspx?id=58208) and follow these steps to discover and monitor RHEL 8 and SLES 15:
 
 1.	Install Operations Manager 2019 UR1 Server and Console patch.
 2.	Import the following management packs from Microsoft System Center 2019 management pack for Unix and Linux Preview.msi:

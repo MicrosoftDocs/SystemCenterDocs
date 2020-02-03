@@ -1,6 +1,6 @@
 ---
 ms.assetid: 9c962b3f-8695-4da7-ab16-e152eef1ab2d
-title: Change databases
+title: Change databases in Operations Manager for gMSA.
 description: This article provides information on how to create users, assign roles and membership to the group managed service accounts (gMSA), a new feature supported in Operations Manager 2019 UR1.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -25,7 +25,7 @@ These roles are similar to the roles created for non-gMSA accounts:
 
 **System Databases: msdb**
 
-1. In the SQL Server Management Studio, navigate to Databases\>System Databases\>msb\>Security\>Users.
+1. In the SQL Server Management Studio, navigate to **Databases** \>**System Databases** \> **msb** \> **Security** \> **Users**.
 
 2. Create a new user.
 

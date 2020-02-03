@@ -1,6 +1,6 @@
 ---
-ms.assetid:
-title: Console level changes
+ms.assetid: 8ab415e9-b004-42eb-b12e-51d24f3f3de9
+title: Console level changes for gMSA in Operations Manager
 description: This article details the console level changes that are required to use group managed service accounts (gMSA), a new feature supported in Operations Manager 2019 UR1.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
@@ -21,7 +21,7 @@ This article details the console level changes that are required to use group Ma
 
 ## Change the credentials for Action accounts
 
-In Operations Manager console, navigate to Administration\>Run-as configuration\>accounts and do the following for the accounts specified.
+In Operations Manager console, navigate to **Administration** \> **Run-as configuration** \> **accounts** and do the following for the accounts specified.
 
 ### Default Action account
 
