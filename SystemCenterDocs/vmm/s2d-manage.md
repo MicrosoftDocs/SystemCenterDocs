@@ -1,6 +1,6 @@
 ---
 ms.assetid: d0f49f22-f145-4147-b66d-3bf384e2ac08
-title: Manage Storage Spaces Direct clusters in VMM 2016
+title: Manage Storage Spaces Direct clusters in VMM
 description: This article describes how to set up and manage Storage Spaces Direct in the VMM fabric
 author: rayne-wiselman
 ms.author: raynew
@@ -21,7 +21,7 @@ You can [view and configure cluster settings](hyper-v-cluster.md#configure-clust
 
 ## Add a node to a hyper-converged cluster
 
--	You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server, or a bare-metal physical server.
+You can [add a new node](hyper-v-cluster.md#add-a-node-to-the-cluster) on a hyper-converged S2D cluster in the VMM fabric. The new node can be an existing Hyper-V server, or a bare-metal physical server.
 
 > [!NOTE]
 > Typically, S2D node requires RDMA, QOS and SET settings. To configure these settings for a node using bare metal computers, you can use the post deployment script capability in PCP. Here is the  [sample PCP post deployment script](hyper-v-bare-metal.md#sample-script).
@@ -32,7 +32,7 @@ You can [view and configure cluster settings](hyper-v-cluster.md#configure-clust
 
 ## Control storage resources with QoS
 
-Quality-of-service (QoS) in [Windows Server ](https://technet.microsoft.com/windows-server-docs/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using SOFS storage. QoS mitigates *noisy neighbor* issues, and ensures that a single VM doesn't consume all storage resources.
+Quality-of-service (QoS) in [Windows Server](https://docs.microsoft.com/windows-server/storage/storage-qos/storage-qos-overview) provides a way to specify minimum and maximum resources that can be assigned to Hyper-V VMs using SOFS storage. QoS mitigates *noisy neighbor* issues, and ensures that a single VM doesn't consume all storage resources.
 
 [Set up QoS policies](sofs-settings.md#set-a-storage-qos-for-an-sofs) for a file server, or for specific virtual disks on the server.
 

@@ -47,7 +47,11 @@ Test-ADServiceAccount \<gMSA\_name\>
 
 ## Next steps
 To use gMSA, do the following:
+
 [Provide security rights](provide-security-rights.md)
+
 [Change databases](database-changes.md)
+
 [Service level account changes](service-level-changes.md)
+
 [Console level changes](console-level-changes.md)

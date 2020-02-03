@@ -21,7 +21,7 @@ This article details the console level changes that are required to use group Ma
 
 ## Change the credentials for Action accounts
 
-In Operations Manager console, navigate to **Administration** \> **Run-as configuration** \> **accounts** and do the following for the accounts specified.
+In Operations Manager console, navigate to **Administration** \> **Run-as configuration** \> **accounts** and do the following for the accounts specified:
 
 ### Default Action account
 
@@ -67,6 +67,6 @@ Post migration to gMSA, you might encounter an error while exporting a report in
 
 This error appears to be a persistent issue with SSRS in SQL Server 2017 and can be resolved by following these steps:
 
-  - Grant admin access to the *Execution* account on the report server
-  - Restart the Reporting Service and wait for 5 minutes
-  - Try to export the reports again
+  1. Grant admin access to the *Execution* account on the report server
+  2. Restart the Reporting Service and wait for 5 minutes
+  3. Try to export the reports again

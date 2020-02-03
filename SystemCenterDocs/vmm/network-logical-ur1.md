@@ -61,9 +61,9 @@ Before you start, it's important to understand how logical networks work in VMM.
 	![Virtualized network](media/network-logical/virtualized-network.png)
 
 	>[!NOTE]
-	- A typical setup might be an infrastructure network with no isolation or VLAN isolation, a load balancer backend and internet facing network with PVLAN, and tenant networks with isolation using network virtualization.
-	- You can only use one type of isolation on a single logical network. If you do need this, you'll need multiple logical networks.
-	- There's a practical limit of ~2000 tenants and ~4000 VM networks for a single VMM server.
+	>- A typical setup might be an infrastructure network with no isolation or VLAN isolation, a load balancer backend and internet facing network with PVLAN, and tenant networks with isolation using network virtualization.
+	>- You can only use one type of isolation on a single logical network. If you do need this, you'll need multiple logical networks.
+	>- There's a practical limit of ~2000 tenants and ~4000 VM networks for a single VMM server.
 
 - **Network sites**: If your organization has different locations and datacenters you can include information about those sites in your logical network settings. For example you could specify a New York site with and IP subnet and/or VLAN settings, and then a London site with different IP/VLAN settings. You can then assign IP address to VMs based on network, location, and VLAN settings.
 
@@ -80,10 +80,10 @@ If you want VMM to automatically create logical networks (and VM networks) you c
 2. Configure the **Logical network matching** setting.
 
 	>[!NOTE]
-	- For Hyper-V hosts you can use the entire DNS suffix label, or the first one. For example if the DNS suffix is corp.contoso.com the logical network will be corp-contoso.com or just corp. This isn't supported for VMware hosts.
-	- For Hyper-V and VMware hosts you can select the network connection name or the virtual network switch name (the name of the virtual network switch to which the physical adapter of the host is bound).
-	- By default VMware hosts use the virtual network switch option.
-	- You can also specify a fallback option if the first logical matching fails.
+	>- For Hyper-V hosts you can use the entire DNS suffix label, or the first one. For example if the DNS suffix is corp.contoso.com the logical network will be corp-contoso.com or just corp. This isn't supported for VMware hosts.
+	>- For Hyper-V and VMware hosts you can select the network connection name or the virtual network switch name (the name of the virtual network switch to which the physical adapter of the host is bound).
+	>- By default VMware hosts use the virtual network switch option.
+	>- You can also specify a fallback option if the first logical matching fails.
 
 If you don't want VMM to create logical and VM networks automatically, you can disable the global setting.
 
