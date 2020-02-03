@@ -53,7 +53,7 @@ Ensure that the following prerequisites are met before initiating the Offline Ba
     3. In the subscription menu, click **Resource Providers** to view the list of providers.
     4. In the list of providers scroll down to Microsoft.ImportExport. If the Status is NotRegistered, click **Register**.
 
-      ![registering the resource provider](./media/backup-server/registerimportexport.png)
+       ![registering the resource provider](./media/backup-server/registerimportexport.png)
 
 * A staging location, which might be a network share or any additional drive on the computer, internal or external, with enough disk space to hold your initial copy, is created. For example, if you are trying to back up a 500-GB file server, ensure that the staging area is at least 500 GB. (A smaller amount is used due to compression.)
 * With regards to disks that will be sent to Azure, ensure that only 2.5 inch SSD, or 2.5-inch or 3.5-inch SATA II/III internal hard drives are used. You can use hard drives up to 10 TB. Check the [Azure Import/Export service documentation](https://docs.microsoft.com/azure/storage/common/storage-import-export-requirements#supported-hardware) for the latest set of drives that the service supports.
@@ -67,7 +67,7 @@ The information in this section helps you complete the offline-backup workflow s
 
 1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and Click **Next**.
 > [!NOTE]
-> To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard. 
+> To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
 
     ![Import screen](./media/backup-server/create-new-protection-group.png)
 
@@ -130,7 +130,7 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
 
     When you run the command, the utility requests the selection of the Azure Import job that corresponds to the drives that need to be prepared. If only a single import job is associated with the provided staging location, you see a screen like the one that follows.
 
-    ![Azure Disk Preparation tool input](./media/backup-server/diskprepconsole.png) <br/>
+      ![Azure Disk Preparation tool input](./media/backup-server/diskprepconsole.png) <br/>
 
 3. Enter the drive letter without the trailing colon for the mounted disk that you want to prepare for transfer to Azure.
 4. Provide confirmation for the formatting of the drive when prompted.
@@ -145,7 +145,7 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
    2. You receive confirmation that your import job has been created. The import job uses the name you provided.
    3. The tool displays the shipping address for the Azure datacenter.
 
-      ![Azure disk preparation complete](./media/backup-server console.png)<br/>
+     ![Azure disk preparation complete](./media/backup-server/console.png)<br/>
 
 6. At the end of the command execution, you can update the shipping information.
 
