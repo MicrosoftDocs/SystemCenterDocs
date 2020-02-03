@@ -68,8 +68,8 @@ Before you start, it's important to understand how logical networks work in VMM.
 - **Network sites**: If your organization has different locations and datacenters you can include information about those sites in your logical network settings. For example you could specify a New York site with and IP subnet and/or VLAN settings, and then a London site with different IP/VLAN settings. You can then assign IP address to VMs based on network, location, and VLAN settings.
 
 	>[!NOTE]
-	- You need to assign an IP subnet to a site if VMM is going to distribute static IP addresses to VMs in the site. If you're using DHCP you don't need a subnet.
-	- You need to configure a VLAN if one's used in your physical site. If you're not using VLANs and you're using DHCP you don't need to define network sites in your logical network.
+	>- You need to assign an IP subnet to a site if VMM is going to distribute static IP addresses to VMs in the site. If you're using DHCP you don't need a subnet.
+	>- You need to configure a VLAN if one's used in your physical site. If you're not using VLANs and you're using DHCP you don't need to define network sites in your logical network.
 
 
 ## Create logical networks automatically
