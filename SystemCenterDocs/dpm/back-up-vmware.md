@@ -481,6 +481,11 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
 4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
 
+   > [!NOTE]
+   > Before running this command, stop the DPMRA service on the DPM server. Else, the script returns success, but does not update the exclusion list.
+
+
+
    **To add/remove the disk from exclusion, run the following command:**
 
     ```
