@@ -52,7 +52,7 @@ You can create a data mart for Operations Manager.
 
 ### Configuration Manager
 
-Service Manager can import configuration items from your Microsoft System Center Configuration Manager environment.
+Service Manager can import configuration items from your Configuration Manager environment.
 
 ### Network requirements
 

@@ -12,7 +12,7 @@ ms.technology: service-manager
 
 # Set up incident generation in Service Manager
 
-This article provides an example that shows how to inventory all computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in System Center Configuration Manager.
+This article provides an example that shows how to inventory all computers that might require an upgrade to Microsoft Exchange Server 2016. To do this, first define the appropriate configuration baseline in Configuration Manager.
 
 In Service Manager, you must create a Configuration Manager connector to import the baseline and configure incident management to automatically generate incidents based on desired configuration management. For information about how to create a Configuration Manager connector, see [About Importing Data from System Center Configuration Manager](admin-about-importing-data-from-system-center-configuration-manager.md).
 
@@ -22,7 +22,7 @@ In Service Manager, you can import configuration baselines from Configuration Ma
 
 Use the following procedure to configure incident management to automatically generate incidents based on desired configuration management.
 
-In Service Manager, you can import configuration baselines from System Center Configuration Manager by using a Configuration Manager connector. Then, you can configure Service Manager to create incidents for each Service Manager configuration item that is reported as noncompliant against the defined values.
+In Service Manager, you can import configuration baselines from Configuration Manager by using a Configuration Manager connector. Then, you can configure Service Manager to create incidents for each Service Manager configuration item that is reported as noncompliant against the defined values.
 
 You can use the following procedures to configure incident management to automatically generate desired configuration management-based incidents and validate that the desired configuration management is configured.
 
