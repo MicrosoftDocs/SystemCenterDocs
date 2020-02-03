@@ -63,7 +63,7 @@ Ensure that the following prerequisites are met before initiating the Offline Ba
 
 The information in this section helps you complete the offline-backup workflow so that your data can be delivered to an Azure datacenter and uploaded to Azure Storage. If you have questions about the Import service or any aspect of the process, see the [Import service overview](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) documentation referenced earlier.
 
-### Initiate offline backup
+## Initiate offline backup
 
 1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and Click **Next**.
 
@@ -71,7 +71,7 @@ The information in this section helps you complete the offline-backup workflow s
 
 
   > [!NOTE]
-  > To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
+  s> To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
 
 2. The Azure login page will open. Login using your Azure user account which has *owner* role permission on the Azure Subscription.
 
