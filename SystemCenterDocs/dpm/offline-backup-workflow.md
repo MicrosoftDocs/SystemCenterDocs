@@ -71,7 +71,7 @@ The information in this section helps you complete the offline-backup workflow s
 
 
   > [!NOTE]
-  s> To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
+  > To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
 
 2. The Azure login page will open. Login using your Azure user account which has *owner* role permission on the Azure Subscription.
 
