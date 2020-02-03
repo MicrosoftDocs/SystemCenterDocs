@@ -185,15 +185,15 @@ Also, to avoid quick filling of disk space, SCX logging is decreased from *Infor
 
 Here is an example of how you may configure an override by using the **Filter** variable:
 
-If you wish to get only the data for ‘loop200’ then use this query in the filter variable:
+If you wish to get only the data for *loop200*, then use the following query in the Filter variable:
 
-select ***** from SCX_DiskDrive where DeviceID=’loop200’
+select * from SCX_DiskDrive where DeviceID=loop200
 
-![override controlled parameters example1](media/manage-security-administer-crossplat-agent/override-example1.png)
+![override controlled parameters example1](media/manage-security-administer-crossplat-agent/override-example-1.png)
 
 Now, you will see data only for the disk ‘loop200’ in the performance view.
 
-![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example2.png)
+![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example-2.png)
 
 ## Next steps
 
