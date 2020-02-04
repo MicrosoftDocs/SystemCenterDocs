@@ -143,9 +143,9 @@ The *AzureOfflineBackupDiskPrep* utility prepares the SATA drives that are sent 
     The tool then begins to prepare the disk and copying the backup data. You may need to attach additional disks when prompted by the tool in case the provided disk does not have sufficient space for the backup data. <br/>
 
     At the end of successful execution of the tool, the command prompt provides three pieces of information:
-   1. One or more disks you provided are prepared for shipping to Azure.
-   2. You receive confirmation that your import job has been created. The import job uses the name you provided.
-   3. The tool displays the shipping address for the Azure datacenter.
+    - One or more disks you provided are prepared for shipping to Azure.
+    - You receive confirmation that your import job has been created. The  import job uses the name you provided.
+    - The tool displays the shipping address for the Azure datacenter.
 
      ![Azure disk preparation complete](./media/backup-server/console.png)<br/>
 
@@ -191,7 +191,7 @@ The following procedure updates the Azure Import job shipping details. This info
 
 The amount of time it takes to process an Azure import job varies depending on different factors such as shipping time, job type, type and size of the data being copied, and the size of the disks provided. The Azure Import/Export service does not have an SLA but after the disks are received the service strives to complete the backup data copy to your Azure storage account in 7 to 10 days. The next section details how you can monitor the status of the Azure import job.
 
-### Monitoring Azure Import Job status
+### Monitoring Azure Import job status
 
 You can monitor the status of your Import job from the Azure portal by navigating to the **Import/Export jobs** page and selecting your job. For more information on the status of the Import jobs, see the [Storage Import Export service](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) article.
 
