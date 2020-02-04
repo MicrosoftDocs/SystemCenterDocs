@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 04/30/2019
+ms.date: 01/28/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -160,12 +160,24 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### Deduplicated volumes support
 **Issue**: Deduplication support for DPM depends on operating system support.
 
+**For NTFS Volumes:**
+
 |Operating system of protected server|Operating system of DPM server|DPM version|Dedup support|
 |----------------------------------------|----------------------------------|---------------|-----------------|
 |Windows 2012|Windows Server 2012|DPM 2012 with SP1, DPM 2012 R2|Y|
 |Windows 2012|Windows Server 2012 R2|DPM 2012 R2|Y|
 |Windows Server 2012 R2|Windows Server 2012 R2|DPM 2012 R2|Y|
 |Windows Server 2012 R2|Windows Server 2012|DPM 2012 with SP1, DPM 2012 R2|N|
+
+**For ReFS Volumes:**
+
+> [!NOTE]
+> DPM 2019 UR1 supports protection of ReFS volumes with Dedup.
+
+|Operating system of protected server|Operating system of DPM server|DPM version|Dedup support|
+|----------------------------------------|----------------------------------|---------------|-----------------|
+|Windows Server 2012, 2012 R2, 2016 and 2019|Windows Server 2016, 2019|DPM 2019 UR1|Y|
+
 
 **Workaround**: Use within support limitations.
 
