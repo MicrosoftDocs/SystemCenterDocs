@@ -53,7 +53,7 @@ Before you start, it's important to understand how logical networks work in VMM.
 		**Example scenario**:
 		Woodgrove IT is a host. Woodgrove IT has *Contoso* and *Fabrikam* as it’s tenants. Both *Contoso* and *Fabrikam* needs a DevTest network. Contoso’s network should be isolated from that of Fabrikam. All VMs of Contoso should be connected to *Contoso-DevTest* VM network and VMs of Fabrikam should be connected to *Fabrikam-DevTest* VM network.
 
-		Woodgrove IT creates a logical network of type *Independent network* and names it *DevTest*. This logical network has two VLAN-subnet pairs. Two VM networks are created on top of this logical network with each VM network getting access to a specific VLAN-subnet. One VM network is named *Contoso-DevTest* and is provided to Contoso’s use and the other is named *Fabrikam-DevTest* and provided to Fabrikam’ s use.
+		Woodgrove IT creates a logical network of type *Independent network* and names it *DevTest*. This logical network has two VLAN-subnet pairs. Two VM networks are created on top of this logical network with each VM network getting access to a specific VLAN-subnet. One VM network is named *Contoso-DevTest* and is provided to Contoso’s use and the other is named *Fabrikam-DevTest* and provided to Fabrikam’s use.
 
 - **Virtualized network**:
 	This is the fabric network. Multiple virtualized VM networks can be created on top of this logical network. Each VM network will have its own virtualized address space.
