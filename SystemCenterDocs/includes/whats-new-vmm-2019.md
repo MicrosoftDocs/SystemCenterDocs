@@ -211,6 +211,8 @@ VMM 1801 supports management of Azure Resource Manager based VMs, Azure Active D
 
 See the following sections for information about the new features/feature updates supported in VMM 2019 UR1.
 
+For issues fixed in VMM 2019 UR1, see the [KB article]( https://support.microsoft.com/help/4533411).
+
 ## Compute
 ### Support for management of replicated library shares
 
