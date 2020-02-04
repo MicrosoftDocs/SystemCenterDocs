@@ -25,6 +25,12 @@
 #### [Configure antivirus exclusions](plan-security-antivirus.md)
 #### [Service, user, and security accounts](plan-security-accounts.md)
 #### [Run As accounts and Profiles](plan-security-runas-accounts-profiles.md)
+#### Group managed service accounts
+##### [Accounts used in gMSA](support-group-managed-service-accounts.md)
+##### [Provide security rights](provide-security-rights.md)
+##### [Database changes](database-changes.md)
+##### [Service level changes](service-level-changes.md)
+##### [Console level changes](console-level-changes.md)
 #### [Security credentials to access UNIX and Linux computers](plan-security-crossplat-credentials.md)
 #### [Authentication and data encryption in Operations Manager](plan-security-authentication-data-encryption.md)
 #### [Data encryption for Web console and Reporting server connections](plan-data-encryption-server-roles.md)

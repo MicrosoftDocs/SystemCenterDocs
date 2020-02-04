@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 03/14/2019
+ms.date: 01/28/2020
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -97,7 +97,7 @@ Once you have matching credentials in DPM, update the VMware server credentials 
    ![open Add Credentials dialog](./media/back-up-vmware/broken-credentials.png)
 4. On the Administrator console tool ribbon, click **Change Settings**.
     The Change Settings dialog opens. It displays all credentials on the DPM server. In the example image, *demovcenter_002* is the DPM credential to pair with demovcenter1.Contoso.com.
-   
+
     ![open Add Credentials dialog](./media/back-up-vmware/change-settings-dialog.png)
 5. From the list, select the credential on the DPM server to match the VMware credential and click **Update**.
     In the image, notice demovcenter_002 authenticates a production server, and demovcenter1.Contoso.com is now protected.
@@ -139,7 +139,7 @@ To fix the error, install a valid certificate on the DPM server and the VMware s
 4. On the **File to Export** screen, type a name for your certificate and click **Next**.
 5. Click **Finish** to complete the **Certificate Export Wizard**.
 6. Locate the exported certificate. Right-click the certificate and select **Install Certificate** to open the **Certificate Import Wizard**.
-    
+
     ![click install Certificate ](./media/back-up-vmware/install-certificate.png)
 7. In the **Certificate Import wizard**, click **Local Machine** and then click **Next**.
 8. To find the location where you want to place the certificateOn the **Certificate Store** screen, click **Place all certificates in the following store** and click **Browse**.
@@ -160,7 +160,7 @@ The following table captures the privileges that you need to assign to the user 
 | Datastore.AllocateSpace |   |   |
 | Datastore.Browse datastore | Datastore.AllocateSpace | Network.Assign |
 | Datastore.Low-level file operations | Global.Manage custom attributes | Datastore.AllocateSpace |
-| Datastore cluster.Configure a datatstore cluster | Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
+| Datastore cluster.Configure a datastore cluster | Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
 | Global.Disable methods | Host.Local operations.Create virtual machine | VirtualMachine.State.RemoveSnapshot |
 | Global.Enable methods | Network. Assign network | VirtualMachine.State.CreateSnapshot |
 | Global.Licenses | Resource. Assign virtual machine to resource pool | VirtualMachine.Provisioning.DiskRandomRead |
@@ -303,7 +303,7 @@ For long term retention on VMware backup data on-premises, you can now enable VM
     ![create new protection group ](./media/back-up-vmware/create-new-protection-group-wizard.png)
 4. In the **Select Group Members** screen, expand the **Available members** folders and select the folders to protect and click **Next**.
     Once you select a folder, the member is added to the Selected members list. Items already protected by a DPM server cannot be selected again. View the DPM server that protects an item by hovering over the item in the Available members list.
-   
+
     ![select members for the new protection group ](./media/back-up-vmware/select-group-members.png)
 5. On the **Select Data Protection Method** screen, type a **Protection group name**, and then select the protection method.
     For protection method, you can choose: short-term protection to a hard drive, long term backup to tape, or online protection to the cloud. Once you've selected your protection method, click **Next**.
@@ -372,7 +372,7 @@ You can restore individual files from a protected VM recovery point. This featur
     Use the **Path** pane to search the list of files or folders appearing in the **Recoverable Item** column. **Search list below** does not search into subfolders. To search through subfolders, double-click the folder. Use the **Up** button to move from a child folder into the parent folder. You can select multiple items (files and folders), but they must be in the same parent folder. You cannot recover items from multiple folders in the same recovery job.
 5. When you have selected the item(s) for recovery, in the Administrator Console tool ribbon, click **Recover** to open the **Recovery Wizard**.
     In the Recovery Wizard, the **Review Recovery Selection** screen shows the selected items to be recovered.
-    
+
      ![review Recovery points ](./media/back-up-vmware/review-recovery-point-selection.png)
 6. On the **Specify Recovery Options** screen, if you want to enable network bandwidth throttling, click **Modify**. To leave network throttling disabled, click **Next**. No other options on this wizard screen are available for VMware VMs.
     If you choose to modify the network bandwidth throttle, in the Throttle dialog, select **Enable network bandwidth usage throttling** to turn it on. Once enabled, configure the **Settings** and **Work Schedule**.
@@ -422,3 +422,110 @@ To backup vSphere 6.7 do the following:
   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001 s"SchUseStrongCrypto"=dword:00000001
 
 ::: moniker-end
+
+## Exclude disk from VMware VM backup
+
+> [!NOTE]
+> This feature is applicable for DPM 2019 UR1.
+
+With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
+
+To configure the disk exclusion, follow the steps below:
+
+**Identify the VMWare VM and disk details to be excluded**
+
+1. On the VMware console, go to VM settings for which, you want to exclude the disk.
+2. Select the disk that you want to exclude and note the path for that disk.
+
+   For example, to exclude the Hard Disk 2 from the TestVM4, the path for Hard Disk 2 is **[datastore1] TestVM4/TestVM4\_1.vmdk**.
+
+   ![test vm](./media/back-up-vmware/test-vm.png)
+
+**Configure DPM Server**
+
+Navigate to DPM server where the VMware VM is configured for protection to configure disk exclusion.
+
+1. Get the details of VMware host that is protected on the DPM server.
+
+   ```
+   PS C:\>$psInfo = get-DPMProductionServer
+   PS C:\> $psInfo
+
+   ServerName   ClusterName 	Domain 	 	   ServerProtectionState
+   ----------	  ----------- 	------ 		   ---------------------
+   Vcentervm1	              Contoso.COM  	  NoDatasourcesProtected
+   ```
+
+2. Select the VMware host and list the VMs protection for the VMware host.
+
+   ```
+   PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[0] -Inquire
+   PS C:\> $vmDsInfo
+
+   Computer     Name     ObjectType
+   --------     ----     ----------
+   Vcentervm1  TestVM2      VMware
+   Vcentervm1  TestVM1      VMware
+   Vcentervm1  TestVM4      VMware
+   ```
+
+3. Select the VM for which you want to exclude a disk.
+
+   ```
+   PS C:\>$vmDsInfo[2]
+
+   Computer     Name    ObjectType
+   --------     ----    ----------
+   Vcentervm1  TestVM4  VMware
+   ```
+
+4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
+
+   > [!NOTE]
+   > Before running this command, stop the DPMRA service on the DPM server. Else, the script returns success, but does not update the exclusion list. Ensure there are no jobs in progress before stopping the service.
+
+
+
+   **To add/remove the disk from exclusion, run the following command:**
+
+    ```
+    ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
+    ```
+
+   **Example: To add the disk exclusion for TestVM4, run the following command**
+
+    ```
+    PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
+    Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
+    Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
+    ```
+5. Verify that the disk has been added for exclusion
+
+   **To view the existing exclusion for specific VMs, run the following command:**
+
+    ```
+    ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
+    ```
+
+   **Example**
+
+    ```
+    PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -view
+    <VirtualMachine>
+    <UUID>52b2b1b6-5a74-1359-a0a5-1c3627c7b96a</UUID>
+    <ExcludeDisk>[datastore1] TestVM4/TestVM4\_1.vmdk</ExcludeDisk>
+    </VirtualMachine>
+    ```
+
+Once you configure the  protection for this VM,  excluded disk will not be listed during protection.
+
+> [!NOTE]
+> If you are performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
+
+**Remove the disk from exclusion**
+
+To remove the disk from exclusion run the following command:
+
+```
+PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
+```

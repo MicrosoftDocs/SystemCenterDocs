@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 02/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -35,6 +35,14 @@ The following tables describe the required UNIX and Linux operating systems and 
 |OS version|Version of operating system|7100-01-06-1241|
 |xlC.rte|XL C/C++ Runtime|11.1.0.2|
 |OpenSSL/openssl.base|OpenSSL Libraries; Secure Network Communications Protocol|1.0.0|
+
+## Red Hat Enterprise Linux Server 8 (applicable for 2019 UR1)
+
+|Required package|Description|Minimum version|
+|--------------------|---------------|-------------------|
+|glibc|C Standard Libraries|2.28|
+|Openssl|OpenSSL Libraries; Secure Network Communications Protocol|1.1.1c-fips|
+|PAM|Pluggable Authentication Modules|1.3.1-4|
 
 ## Red Hat Enterprise Linux Server 7
 

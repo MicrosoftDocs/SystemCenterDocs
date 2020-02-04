@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 03/06/2018
+ms.date: 02/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -14,7 +14,13 @@ ms.topic: article
 
 # How to install the Operations Manager Web console
 
-You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites. For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
+
+>[!NOTE]
+> Operations Manager 2019 UR1 supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
+
+
+ For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
 > [!IMPORTANT]
 > If you install a stand-alone web console on a server, you will not be able to add the management server feature to this server. If you want to install the management server and web console on the same server, you must either install both features simultaneously, or install the management server before you install the web console.
