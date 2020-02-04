@@ -204,7 +204,7 @@ The following components now have a single installer each for all supported lang
 ### Simplified management server patching
 Operations Manager 2019 UR1 introduces a frictionless way of patching the Operations Manager server.
 
-The improvised user interface guides you through the installation steps, which patch the management server, update the databases and update the management packs. See this article for more information on how integrated patching is done.
+The improvised user interface guides you through the installation steps, which patch the management server, update the databases and update the management packs. See [this article](https://support.microsoft.com/help/4538900/simplified-scom-2019-management-server-patching) for more information on how integrated patching is done.
 
 ### Distro-Agnostic management pack for Linux
 
