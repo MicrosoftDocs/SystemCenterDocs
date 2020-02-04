@@ -89,6 +89,8 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR1.   
 
+For issues fixed in 2019 UR1, see the [KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
+
 ### Support for ReFS volumes and ReFS volumes with Deduplication enabled
 
 With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the ReFS volume. You can back up the following workloads deployed on the ReFS volumes:
