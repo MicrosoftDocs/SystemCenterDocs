@@ -192,6 +192,8 @@ In previous versions of Operations Manager, you had to upgrade from the evaluati
 ## New features in Operations Manager 2019 UR1
 See the following sections for information about the new features/feature updates supported in operations Manager 2019 UR1.
 
+For issues fixed in 2019 UR1 Operations Manager, see the [KB article](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
+
 ### Multi-language installer for Operation Manager components
 
 The following components now have a single installer each for all supported languages, instead of language specific installers. The installer automatically selects the language based on the computer's language settings, where you are installing.
@@ -204,7 +206,7 @@ The following components now have a single installer each for all supported lang
 ### Simplified management server patching
 Operations Manager 2019 UR1 introduces a frictionless way of patching the Operations Manager server.
 
-The improvised user interface guides you through the installation steps, which patch the management server, update the databases and update the management packs. See this article for more information on how integrated patching is done.
+The improvised user interface guides you through the installation steps, which patch the management server, update the databases and update the management packs. See [this article](https://support.microsoft.com/help/4538900/simplified-scom-2019-management-server-patching) for more information on how integrated patching is done.
 
 ### Distro-Agnostic management pack for Linux
 
