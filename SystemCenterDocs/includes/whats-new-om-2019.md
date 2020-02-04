@@ -192,6 +192,8 @@ In previous versions of Operations Manager, you had to upgrade from the evaluati
 ## New features in Operations Manager 2019 UR1
 See the following sections for information about the new features/feature updates supported in operations Manager 2019 UR1.
 
+For issues fixed in 2019 UR1 Operations Manager, see the [KB article](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
+
 ### Multi-language installer for Operation Manager components
 
 The following components now have a single installer each for all supported languages, instead of language specific installers. The installer automatically selects the language based on the computer's language settings, where you are installing.
