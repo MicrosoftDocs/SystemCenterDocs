@@ -10,7 +10,7 @@ ms.date: 01/22/2018
 title: Author Automation Runbooks
 ms.technology: service-management-automation
 ---
-# Author Sevice Management Automation runbooks
+# Author Service Management Automation runbooks
 
 Runbooks in Service Management Automation and Microsoft Azure Automation are Windows PowerShell workflows or PowerShell scripts. They provide the ability to automate administrative processes for managing and deploying cloud servers or any other function that a Windows PowerShell script can perform.
 
@@ -269,10 +269,10 @@ The following runbooks ship with Service Management Automation as sample runbook
 |----------------|---------------|
 |Sample-Deleting-VMCloud-Subscription|Demonstrates a useful scenario for triggering a runbook when a user deletes a VM Clouds subscription.|
 |Sample-Managing-Azure|Shows how to connect to a Windows Azure subscription and perform basic operations using the Windows Azure PowerShell module.|
-|Sample-Managing-ConfigurationManager|Demonstrates the capability of Service Management Automation to connect into System Center Configuration Manager.|
+|Sample-Managing-ConfigurationManager|Demonstrates the capability of Service Management Automation to connect into Configuration Manager.|
 |Sample-Managing-DataProtectionManager|Demonstrates how to connect to a Data Protection Manager (DPM) server and view information about the disks found on the DPM server.|
 |Sample-Managing-MySQLServers|Demonstrates how to retrieve a security token which will be used to then retrieve a list of host servers.|
-|Sample-Managing-OperationsManager|Demonstrates the capability of Service Management Automationto connect to System Center Operations Manager.|
+|Sample-Managing-OperationsManager|Demonstrates the capability of Service Management Automation to connect to System Center Operations Manager.|
 |Sample-Managing-Orchestrator|Shows how to connect to System Center Orchestrator and start an Orchestrator runbook to leverage your existing infrastructure.|
 |Sample-Managing-Plans|Demonstrates how to create a new plan and add the SQL Server service with a defined quota to the new plan.|
 |Sample-Managing-ServiceBusClouds|Demonstrates how to connect to a Service Bus Cloud server and view information about the created namespaces.|
