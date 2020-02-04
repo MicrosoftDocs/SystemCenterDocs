@@ -5,7 +5,7 @@ description: This article details the known issues and workarounds in Operations
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 03/14/2019
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 ::: moniker range="sc-om-2019"
 
-This article lists the release notes for System Center 2019 - Operations Manager.
+This article lists the release notes for System Center 2019 and 2019 UR1 - Operations Manager.
 
 [!INCLUDE [release-notes-om-2019.md](../includes/release-notes-om-2019.md)]
 

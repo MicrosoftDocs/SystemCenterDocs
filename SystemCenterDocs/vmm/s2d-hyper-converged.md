@@ -5,7 +5,7 @@ description: This article describes how to deploy a Storage Spaces Direct hyper-
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -39,7 +39,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 
 ## Before you start
 
-- Make sure you're running VMM 2016.
+- Make sure you're running VMM 2016 or later.
 - Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed, and be configured to host VMs.
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
@@ -71,17 +71,93 @@ After these prerequisites are in place, you provision a cluster, and set up stor
 
 2.	Follow the instructions for [provisioning a cluster from bare-metal computers](hyper-v-bare-metal.md).
 
-
 ## Step 2: Set up networking for the cluster
 
 After the cluster is provisioned and managed in the VMM fabric, you need to set up networking for cluster nodes.
 
-
 1.	Start by [creating a logical network](network-logical.md) to mirror your physical management network.
-2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled, so that the switch is virtualization aware. This switch is connected to the management logical network, and has all of the host virtual adapters that are required to provide access to the management network, or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
+2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled, so that the switch is aware of virtualization. This switch is connected to the management logical network, and has all of the host virtual adapters that are required to provide access to the management network, or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
 3.	[Create VM networks](network-virtual.md).
 
-## Step 3: Manage the pool and create CSVs
+## Step 3: Configure DCB settings on the S2D cluster
+
+>[!NOTE]
+>This feature is applicable for VMM 2019 UR1. Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4, if you do not wish to configure DCB settings.
+
+### Recommendations
+- If you have vNICs deployed, for optimal performance, we recommend to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually override the assignment using the following PowerShell cmdlets:
+
+    >[!NOTE]
+    >These are Windows Server cmdlets and are currently not supported in VMM.
+
+    ```
+    PS> Set-VMNetworkAdapterTeamMapping -ManagementOS -VMNetworkAdapterName SMB1 -PhysicalNetAdapterName NIC1
+    PS> Set-VMNetworkAdapterTeamMapping -ManagementOS -VMNetworkAdapterName SMB2 -PhysicalNetAdapterName NIC2
+
+    ```
+
+- When you create a network adapter port profile, we recommend you to allow **IEEE priority**. [Learn more](network-port-profile.md#create-a-virtual-network-adapter-port-profile). You can also set the IEEE Priority by using the following PowerShell commands:
+
+    ```
+    PS> Set-VMNetworkAdapterVlan -VMNetworkAdapterName SMB2 -VlanId "101" -Access -ManagementOS
+    PS> Set-VMNetworkAdapter -ManagementOS -Name SMB2 -IeeePriorityTag on
+    ```
+
+
+
+### Before you begin
+
+Ensure the following:
+
+1. You are running VMM 2016 or later.
+2. Hyper-V hosts in the cluster are running Windows Server 2016 or later with the Hyper-V role installed, and configured to host VMs.
+
+    >[!NOTE]
+    >- You can configure DCB settings on both Hyper-V S2D cluster (Hyper-converged) and SOFS S2D cluster (disaggregated).
+    >- You can configure the DCB settings during cluster creation workflow or on an existing cluster.
+    >- You cannot configure DCB settings during SOFS cluster creation, you can only configure on an existing SOFS cluster. All the nodes of the SOFS cluster must be managed by VMM.
+    > - Configuration of DCB settings during cluster creation is supported only when the cluster is created with an existing windows server. It is not supported with bare metal/ operating system deployment workflow.
+
+**Use the following steps to configure DCB settings**:
+
+1. [Create a new Hyper-V cluster](hyper-v-standalone.md), select **Enable Storage Spaces Direct**.
+   *DCB Configuration* option gets added to the Hyper-V cluster creation workflow.
+
+    ![Hyper-V cluster](./media/s2d/create-hyperv-cluster-wizard.png)
+
+2. In **DCB configuration**, select **Configure Data Center Bridging**.
+
+3. Provide **Priority** and **Bandwidth** values for SMB-Direct and Cluster Heartbeat traffic.
+
+   > [!NOTE]
+   > Default values are assigned to Priority and Bandwidth. Customize these values based on your organization's environment needs.
+
+   ![Priority bandwidth](./media/s2d/assign-priority-bandwidth.png)
+
+   Default values:
+
+   | Traffic Class | Priority | Bandwidth (%) |
+   | --- | --- | --- |
+   | Cluster Heartbeat | 7 | 1 |
+   | SMB-Direct | 3 | 50 |
+
+4. Select the network adapters used for storage traffic. RDMA is enabled on these network adapters.
+
+    > [!NOTE]
+    > In a converged NIC scenario, select the storage vNICs. The underlying pNICs should be RDMA capable for vNICs to be displayed and available for selection.
+
+    ![Enable RMDS](./media/s2d/enable-rmds-storage-network.png)
+
+8. Review the summary and select **Finish**.
+
+    An S2D cluster will be created and the DCB parameters are configured on all the S2D Nodes.
+
+    > [!NOTE]
+    > - DCB settings can be configured on the existing Hyper-V S2D clusters by visiting the **Cluster Properties** page, and navigating to **DCB configuration** page.
+    > - Any out-of-band changes to DCB settings on any of the nodes will cause the S2D cluster to be non-compliant in VMM. A Remediate option will be provided in the **DCB configuration** page of cluster properties, which you can use to enforce the DCB settings configured in VMM on the cluster nodes.
+
+
+## Step 4: Manage the pool and create CSVs
 
 You can now modify the storage pool settings, and create virtual disks and CSVs.
 
@@ -100,11 +176,12 @@ You can now modify the storage pool settings, and create virtual disks and CSVs.
 
 5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
 
-If you use Powershell, the pool and the storage tier is automatically created with the "Enable-ClusterS2D autoconfig=true" option.
+If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
 
-## Step 4: Deploy VMs on the cluster
+## Step 5: Deploy VMs on the cluster
 
 In a hyper-converged topology VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
+
 
 ## Next steps
 

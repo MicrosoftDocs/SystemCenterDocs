@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 07/03/2019
+ms.date: 02/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -20,6 +20,9 @@ In this procedure, the Reporting server is installed on a stand-alone server tha
 > Although SQL Server Reporting Services is installed on the stand-alone server, Operations Manager reports are not accessed on this server; instead, they are accessed in the **Reporting** workspace in the Operations console.
 
 You must ensure that your server meets the minimum system requirement for Operations Manager. For more information, see [System Requirements for System Center - Operations Manager](plan-system-requirements.md).
+
+>[!NOTE]
+> Operations Manager 2019 UR1 supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
 
 ::: moniker range="sc-om-2016"
 
