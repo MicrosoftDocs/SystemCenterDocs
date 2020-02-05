@@ -220,7 +220,7 @@ The existing SLES-15 MP has been removed from the download center and you are ad
 2.	Import the following management packs from Microsoft System Center 2019 management pack for Unix and Linux Preview.msi:
 	- Microsoft.Unix.Library.mp
     - Microsoft.Linux.Library.mp
-    -Microsoft.Linux.Universal.Library.mp
+    - Microsoft.Linux.Universal.Library.mp
     - Microsoft.Linux.Universal.Monitoring.mp
     - Microsoft.Linux.UniversalR.1.mpb (Discover/Monitor RPM distros)
     - Microsoft.Linux.UniversalD.1.mpb (Discover/Monitor Debian distros)
