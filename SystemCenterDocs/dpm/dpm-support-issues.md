@@ -169,6 +169,8 @@ Both of these scenarios are unsupported. You can only select one of the followin
 |Windows Server 2012 R2|Windows Server 2012 R2|DPM 2012 R2|Y|
 |Windows Server 2012 R2|Windows Server 2012|DPM 2012 with SP1, DPM 2012 R2|N|
 
+::: moniker range="sc-dpm-2019"
+
 **For ReFS Volumes:**
 
 > [!NOTE]
@@ -177,6 +179,8 @@ Both of these scenarios are unsupported. You can only select one of the followin
 |Operating system of protected server|Operating system of DPM server|DPM version|Dedup support|
 |----------------------------------------|----------------------------------|---------------|-----------------|
 |Windows Server 2012, 2012 R2, 2016 and 2019|Windows Server 2016, 2019|DPM 2019 UR1|Y|
+
+::: moniker-end
 
 
 **Workaround**: Use within support limitations.
