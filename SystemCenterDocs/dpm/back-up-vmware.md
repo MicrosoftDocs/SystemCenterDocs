@@ -385,17 +385,18 @@ You can restore individual files from a protected VM recovery point. This featur
 
 ::: moniker range="sc-dpm-2019"
 
- ## VMware parallel backups
+## VMware parallel backups
 
-    With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
+With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
 
-    You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
+You can modify the number of jobs by using the registry key as shown below (not present by default, you need to add):
 
-    **Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
-    **Key Type** : DWORD (32-bit) value.
+**Key Path** : Software\Microsoft\Microsoft Data Protection Manager\Configuration\ MaxParallelIncrementalJobs\VMWare
+**Key Type** : DWORD (32-bit) value.
 
-    > [!NOTE]
-    >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
+> [!NOTE]
+>  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
+
 
 ::: moniker-end
 
@@ -428,27 +429,27 @@ To backup vSphere 6.7 do the following:
 
 ## Exclude disk from VMware VM backup
 
-     > [!NOTE]
-     > This feature is applicable for DPM 2019 UR1.
+> [!NOTE]
+> This feature is applicable for DPM 2019 UR1.
 
-     With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
+With DPM 2019 UR1, you can exclude the specific disk from VMware VM backup. The configuration script **ExcludeDisk.ps1** is located at C:\Program Files\Microsoft System Center\DPM\DPM\bin folder.
 
-     To configure the disk exclusion, follow the steps below:
+To configure the disk exclusion, follow the steps below:
 
-     **Identify the VMWare VM and disk details to be excluded**
+**Identify the VMWare VM and disk details to be excluded**
 
-     1. On the VMware console, go to VM settings for which, you want to exclude the disk.
-     2. Select the disk that you want to exclude and note the path for that disk.
+  1. On the VMware console, go to VM settings for which, you want to exclude the disk.
+  2. Select the disk that you want to exclude and note the path for that disk.
 
         For example, to exclude the Hard Disk 2 from the TestVM4, the path for Hard Disk 2 is **[datastore1] TestVM4/TestVM4\_1.vmdk**.
 
         ![test vm](./media/back-up-vmware/test-vm.png)
 
-     **Configure DPM Server**
+**Configure DPM Server**
 
-     Navigate to DPM server where the VMware VM is configured for protection to configure disk exclusion.
+Navigate to DPM server where the VMware VM is configured for protection to configure disk exclusion.
 
-     1. Get the details of VMware host that is protected on the DPM server.
+  1. Get the details of VMware host that is protected on the DPM server.
 
         ```
         PS C:\>$psInfo = get-DPMProductionServer
@@ -459,7 +460,7 @@ To backup vSphere 6.7 do the following:
         Vcentervm1	              Contoso.COM  	  NoDatasourcesProtected
         ```
 
-     2. Select the VMware host and list the VMs protection for the VMware host.
+  2. Select the VMware host and list the VMs protection for the VMware host.
 
         ```
         PS C:\> $vmDsInfo = get-DPMDatasource -ProductionServer $psInfo[0] -Inquire
@@ -472,7 +473,7 @@ To backup vSphere 6.7 do the following:
         Vcentervm1  TestVM4      VMware
         ```
 
-     3. Select the VM for which you want to exclude a disk.
+  3. Select the VM for which you want to exclude a disk.
 
         ```
         PS C:\>$vmDsInfo[2]
@@ -482,29 +483,29 @@ To backup vSphere 6.7 do the following:
         Vcentervm1  TestVM4  VMware
         ```
 
-     4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
+  4. To exclude disk, navigate to Bin folder and run the *ExcludeDisk.ps1* script with the following parameters:
 
         > [!NOTE]
         > Before running this command, stop the DPMRA service on the DPM server. Else, the script returns success, but does not update the exclusion list. Ensure there are no jobs in progress before stopping the service.
 
 
 
-        **To add/remove the disk from exclusion, run the following command:**
+**To add/remove the disk from exclusion, run the following command:**
 
-         ```
-         ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
-         ```
+   ```
+   ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
+   ```
 
-        **Example: To add the disk exclusion for TestVM4, run the following command**
+**Example: To add the disk exclusion for TestVM4, run the following command**
 
          ```
          PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
          Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
          Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
          ```
-     5. Verify that the disk has been added for exclusion
+5. Verify that the disk has been added for exclusion
 
-        **To view the existing exclusion for specific VMs, run the following command:**
+**To view the existing exclusion for specific VMs, run the following command:**
 
          ```
          ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
@@ -520,14 +521,15 @@ To backup vSphere 6.7 do the following:
          </VirtualMachine>
          ```
 
-     Once you configure the  protection for this VM,  excluded disk will not be listed during protection.
+  Once you configure the  protection for this VM,  excluded disk will not be listed during protection.
 
-     > [!NOTE]
-     > If you are performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
+  > [!NOTE]
+  > If you are performing these steps for already protected VM, you need to run the consistency check manually after adding the disk for exclusion.
 
-     **Remove the disk from exclusion**
 
-     To remove the disk from exclusion run the following command:
+**Remove the disk from exclusion**
+
+To remove the disk from exclusion run the following command:
 
      ```
      PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
