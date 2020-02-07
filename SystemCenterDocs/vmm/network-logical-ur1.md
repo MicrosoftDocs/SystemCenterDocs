@@ -9,6 +9,7 @@ ms.date: 02/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+monikerRange: '=sc-vmm-2019'
 ---
 
 # Set up logical networks in the VMM 2019 UR1 fabric
@@ -17,7 +18,8 @@ ms.technology: virtual-machine-manager
 
 Read this article to learn how to create logical networks in System Center 2019 UR1 - Virtual Machine Manager (VMM). VMM 2019 UR1 offers simplified flow of logical network creation supporting use case based network types and illustrations in the product.
 
-For information on creating logical networks in VMM 2019, see [logical networks in VMM 2019](network-logical.md).  
+>[!NOTE]
+>For information on creating logical networks in VMM 2019, see [logical networks in VMM 2019](network-logical.md).  
 
 You have different types of networks in your organization, including corporate networks, management networks, and others. In VMM each of these networks is defined as a logical network. Logical networks are logical objects that mirror your physical networks.
 
