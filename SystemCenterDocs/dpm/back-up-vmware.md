@@ -490,36 +490,36 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
 
 
-**To add/remove the disk from exclusion, run the following command:**
+     **To add/remove the disk from exclusion, run the following command:**
 
-   ```
-   ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
-   ```
+      ```
+      ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-Add|Remove] "[Datastore] vmdk/vmdk.vmdk"
+      ```
 
-**Example: To add the disk exclusion for TestVM4, run the following command**
+     **Example: To add the disk exclusion for TestVM4, run the following command**
 
-         ```
-         PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
-         Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
-         Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
-         ```
+       ```
+       PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Add "[datastore1] TestVM4/TestVM4\_1.vmdk"
+       Creating C:\Program Files\Microsoft System Center\DPM\DPM\bin\excludedisk.xml
+       Disk : [datastore1] TestVM4/TestVM4\_1.vmdk, has been added to disk exclusion list.
+       ```
 5. Verify that the disk has been added for exclusion
 
-**To view the existing exclusion for specific VMs, run the following command:**
+   **To view the existing exclusion for specific VMs, run the following command:**
 
-         ```
-         ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
-         ```
+    ```
+    ./ExcludeDisk.ps1 -Datasource $vmDsInfo[0] [-view]
+    ```
 
-        **Example**
+   **Example**
 
-         ```
-         PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -view
-         <VirtualMachine>
-         <UUID>52b2b1b6-5a74-1359-a0a5-1c3627c7b96a</UUID>
-         <ExcludeDisk>[datastore1] TestVM4/TestVM4\_1.vmdk</ExcludeDisk>
-         </VirtualMachine>
-         ```
+    ```
+    PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -view
+    <VirtualMachine>
+    <UUID>52b2b1b6-5a74-1359-a0a5-1c3627c7b96a</UUID>
+    <ExcludeDisk>[datastore1] TestVM4/TestVM4\_1.vmdk</ExcludeDisk>
+    </VirtualMachine>
+    ```
 
   Once you configure the  protection for this VM,  excluded disk will not be listed during protection.
 
@@ -531,8 +531,8 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
 To remove the disk from exclusion run the following command:
 
-     ```
-     PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
-     ```
+```
+PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
+```
 
 ::: moniker-end
