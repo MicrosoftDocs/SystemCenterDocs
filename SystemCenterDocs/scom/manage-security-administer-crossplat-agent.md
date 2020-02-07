@@ -168,6 +168,7 @@ The values of the **OSName**, **OSVersion**, and **OSFullName** properties can b
 > [!NOTE]  
 > The OSAlias property should not be edited. All properties in this file (except for OSManufacturer) are mandatory and should not be null.  
 
+::: moniker range="sc-om-2019"
 
 ##	Performance and reliability improvements in the Linux agent  
 
@@ -194,6 +195,8 @@ select * from SCX_DiskDrive where DeviceID=loop200
 Now, you will see data only for the disk ‘loop200’ in the performance view.
 
 ![override controlled parameters example](media/manage-security-administer-crossplat-agent/override-example-2.png)
+
+::: moniker-end
 
 ## Next steps
 

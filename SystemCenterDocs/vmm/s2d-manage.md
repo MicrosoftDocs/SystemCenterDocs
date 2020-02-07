@@ -36,6 +36,9 @@ Quality-of-service (QoS) in [Windows Server](https://docs.microsoft.com/windows-
 
 [Set up QoS policies](sofs-settings.md#set-a-storage-qos-for-an-sofs) for a file server, or for specific virtual disks on the server.
 
+
+::: moniker range="sc-vmm-2019"
+
 ## Configure DCB settings on S2D clusters
 
 >[!NOTE]
@@ -48,3 +51,5 @@ Remote Direct Memory Access (RDMA) in conjunction with Datacenter Bridging (DCB)
 The DCB settings must be consistent across all the hosts and the fabric network (switches). A misconfigured DCB setting in any one of the host/fabric device is detrimental to the S2D performance.
 
 You can [configure DCB setting using this procedure](s2d-hyper-converged.md#step-3-configure-dcb-settings-on-the-s2d-cluster).
+
+::: moniker-end

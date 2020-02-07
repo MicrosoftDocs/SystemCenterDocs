@@ -16,6 +16,7 @@ ms.topic: article
 # How to create a dashboard with the Custom widget in the Web console
 In System Center Operations Manager, the Web console provides a monitoring interface for a management group that can be opened on any computer using any browser that has connectivity to the Web console server. The following steps describe how to add a Custom widget to a dashboard in the new HTML5 Web console, which is using a new API based on REST.  It executes the HTML code specified and visualizes the desired output in a variety of visualizations.
 
+::: moniker range="sc-om-2019"
 
 >[!NOTE]
 > Operations Manager 2019 UR1 supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks.  If you are using Operations Manager 2019 UR1, you must initialize the CSRF token. HTML scrips do not work without the initialization of CSRF token.
@@ -47,6 +48,8 @@ var requestHeaders = {
 **Example:**
 
 ![CSRF token initialization](media/manage-create-web-dashboard-custom/initialize-csrf-token.png)
+
+::: moniker-end
 
 ## Using the Operations Manager REST API reference
 Use the REST API reference to learn about available operations you can perform with the custom widget to present operational data in the dashboard.  If you're new to REST API, take a look at the information on [getting started with this API](https://docs.microsoft.com/rest/operationsmanager), if you haven't already seen it.
