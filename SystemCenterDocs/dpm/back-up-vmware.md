@@ -385,7 +385,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
     ::: moniker range="sc-dpm-2019"
 
-## VMware parallel backups
+ ## VMware parallel backups
 
     With earlier versions of DPM, parallel backups were performed only across protection groups. With DPM 2019, all your VMWare VMs backup within a single protection group would be parallel, leading to faster VM backups. All VMWare delta replication jobs would run in parallel. By default, number of jobs to run in parallel is set to 8.
 
@@ -397,7 +397,7 @@ You can restore individual files from a protected VM recovery point. This featur
     > [!NOTE]
     >  You can modify the number of jobs to a higher value. If you set the jobs number  to 1, replication jobs run serially. To increase the number to a higher value, you must consider the VMWare performance. Considering the number of resources in use and additional usage required on VMWare vSphere Server, you should determine the number of delta replication jobs to run in parallel. Also, this change will affect only the newly created Protection Groups. For existing Protection groups you must temporarily add another VM to the protection group. This should update the Protection Group configuration accordingly. You can remove this VM from the Protection Group after the procedure is completed.
 
-## Exclude disk from VMware VM backup
+ ## Exclude disk from VMware VM backup
 
       > [!NOTE]
       > This feature is applicable for DPM 2019 UR1.
@@ -504,7 +504,7 @@ You can restore individual files from a protected VM recovery point. This featur
       PS C:\Program Files\Microsoft System Center\DPM\DPM\bin> ./ExcludeDisk.ps1 -Datasource $vmDsInfo[2] -Remove "[datastore1] TestVM4/TestVM4\_1.vmdk"
       ```
 
-    ::: moniker-end
+::: moniker-end
 
 ::: moniker range=">=sc-dpm-1807"
 
