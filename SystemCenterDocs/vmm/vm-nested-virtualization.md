@@ -56,9 +56,6 @@ Administrators/delegated administrators can configure nested virtualization by u
 - [Enable nested virtualization](#enable-nested-virtualization-on-an-existing-virtual-machine)
 - [Configure the VM as a host in VMM](#configure-the-nested-vm-as-a-host)
 
->[!NOTE]
-> With VMM 2019 UR1, you can enable nested virtualization while creating new VMs through VM templates, service templates or VM creation wizard on VMM console.
-
 ### Enable nested virtualization on an existing virtual machine
 
 
@@ -112,13 +109,16 @@ Administrators/delegated administrators can configure nested virtualization by u
 
 ## Nested virtualization in 2019 ur1
 
+>[!NOTE]
+> With VMM 2019 UR1, you can enable nested virtualization while creating new VMs through VM templates, service templates or through VM creation wizard on VMM console.
+
 VMM 2019 UR1 supports the following additional methods of enabling nested virtualization.
 
-    - [Enable nested virtualization through VM templates](#enable-nested-virtualization-through-vm-templates)
+- [Enable nested virtualization through VM templates](#enable-nested-virtualization-through-vm-templates)
 
-    - [Enable nested virtualization through *Create Virtual Machines wizard*](#enable-nested-virtualization-through-create-virtual-machines-wizard)
+- [Enable nested virtualization through *Create Virtual Machines wizard*](#enable-nested-virtualization-through-create-virtual-machines-wizard)
 
-    - [Enable nested virtualization through service templates](#enable-nested-virtualization-through-service-template)
+- [Enable nested virtualization through service templates](#enable-nested-virtualization-through-service-template)
 
 ### Enable nested virtualization through VM templates
 You can enable nested virtualization on VMs that are created through a VM template.
