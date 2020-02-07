@@ -87,6 +87,7 @@
 ## Manage networking
 ### [Network fabric overview](manage-networks.md)
 ### [Set up logical networks](network-logical.md)
+### [Set up logical networks in UR1](network-logical-ur1.md)
 ### [Set up VM networks](network-virtual.md)
 ### [Set up IP address pools](network-pool.md)
 ### [Add a network gateway](network-gateway.md)

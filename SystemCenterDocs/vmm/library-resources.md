@@ -72,6 +72,8 @@ To remove orphaned resources, modify the templates that reference the orphaned r
 1. Add a new resource that's valid.
 1. When you've completed these steps for all templates, closed the **Properties** dialog. To verify there aren't any dependencies right-click the orphaned resource > **Properties** > **Dependencies**. Then right-click the orphaned resource > **Delete**.
 
+::: moniker range="sc-vmm-2019"
+
 ## Manage replicated library shares
 
 >[!NOTE]
@@ -96,3 +98,5 @@ If you have opted to disable writing to *Alternate Data Stream*, some scenarios 
 
 >[!NOTE]
 >Storing VMs and VMWare VM templates is not supported on library shares with *UseAlternateDataStream* set to false.
+
+::: moniker-end

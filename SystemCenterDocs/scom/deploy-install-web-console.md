@@ -16,9 +16,12 @@ ms.topic: article
 
 You can install the web console when you install System Center - Operations Manager, or you can install it separately. You can install a stand-alone web console or install it on an existing management server that meets the prerequisites.
 
+::: moniker range="sc-om-2019"
+
 >[!NOTE]
 > Operations Manager 2019 UR1 supports a single installer for all supported languages, instead of language specific installers. The installer automatically selects the language, based on the computer's language settings, where you are installing it.
 
+::: moniker-end
 
  For information about the prerequisites, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
