@@ -51,13 +51,9 @@ Ensure the following prerequisites are met:
 
 ## Enable network virtualization
 
-Administrators/delegated administrators can configure nested virtualization by using VMM. Use the following two procedures:
+Administrators/delegated administrators can configure nested virtualization by using VMM. Use the following procedures:
 
-- Enable nested virtualization
-    - [Enable nested virtualization on an existing virtual machine](#enable-nested-virtualization-on-an-existing-virtual-machine)
-    - [Enable nested virtualization through VM templates](#enable-nested-virtualization-through-vm-templates)
-    - [Enable nested virtualization through *Create Virtual Machines wizard*](#enable-nested-virtualization-through-create-virtual-machines-wizard)
-    - [Enable nested virtualization through service templates](#enable-nested-virtualization-through-service-template)
+- [Enable nested virtualization](#enable-nested-virtualization-on-an-existing-virtual-machine)
 - [Configure the VM as a host in VMM](#configure-the-nested-vm-as-a-host)
 
 >[!NOTE]
@@ -75,39 +71,6 @@ Administrators/delegated administrators can configure nested virtualization by u
 ![vm properties](media/nested-vm/nested-vm-properties.png)
 4. On **General**, select **Enable Nested Virtualization**.
 ![enable nested virtualization](media/nested-vm/nested-virtualization-enable.png)
-
-
-### Enable nested virtualization through VM templates
-You can enable nested virtualization on VMs that are created through a VM template.
-
->[!NOTE]
-> Ensure the VMs that will be created using this templates meets the above [prerequisites](#before-you-start).
-
-To enable nested virtualization, on the **Create VM Template Wizard**, select **Select Source** and then select **Enable Nested Virtualization** on the right pane of the wizard.
-
-![enable nested virtualization through VM template](media/nested-vm/enable-nested-virtualizaton-vm-template.png)
-
-### Enable nested virtualization through create virtual machines wizard
-
-You can enable nested virtualization on VMs that are created through Create Virtual Machine wizard.
-
->[!NOTE]
-> Ensure the VMs that will be created using this wizard meets the above [prerequisites](#before-you-start).
-
-To enable nested virtualization, on the **Create Virtual Machines wizard**, select  **Select Source** and then select **Enable Nested Virtualization** on the right pane of the wizard.
-
-![enable nested virtualization through Create Virtual Machine wizard](media/nested-vm/enable-nested-virtualization-vm-wizard.png)
-
-### Enable nested virtualization through service template
-You can enable nested virtualization on VMs that are created through service templates.
-
->[!NOTE]
-> Ensure the VMs that will be created using this template meets the above [prerequisites](#before-you-start).
-
-To enable nested virtualization,  from  **Single Tier Properties**, select  **General** and then select **Enable Nested Virtualization** on the right pane of the wizard.
-
-![enable nested virtualization through Create VM Service template wizard](media/nested-vm/enable-nested-virtualization-vm-service-template.png)
-
 
 ## Configure the nested VM as a host
 1.	Enable the following inbound and outbound firewall rules on the nested VM that you want to configured as the host.
@@ -143,6 +106,52 @@ To enable nested virtualization,  from  **Single Tier Properties**, select  **Ge
 
     >[!NOTE]
     > Check the note at the bottom of the wizard page before you disable nested virtualization.
+
+::: moniker range="sc-vmm-2019"
+
+
+## Nested virtualization in 2019 ur1
+
+VMM 2019 UR1 supports the following additional methods of enabling nested virtualization.
+
+    - [Enable nested virtualization through VM templates](#enable-nested-virtualization-through-vm-templates)
+
+    - [Enable nested virtualization through *Create Virtual Machines wizard*](#enable-nested-virtualization-through-create-virtual-machines-wizard)
+
+    - [Enable nested virtualization through service templates](#enable-nested-virtualization-through-service-template)
+
+### Enable nested virtualization through VM templates
+You can enable nested virtualization on VMs that are created through a VM template.
+
+>[!NOTE]
+> Ensure the VMs that will be created using this templates meets the above [prerequisites](#before-you-start).
+
+To enable nested virtualization, on the **Create VM Template Wizard**, select **Select Source** and then select **Enable Nested Virtualization** on the right pane of the wizard.
+
+![enable nested virtualization through VM template](media/nested-vm/enable-nested-virtualizaton-vm-template.png)
+
+### Enable nested virtualization through create virtual machines wizard
+
+You can enable nested virtualization on VMs that are created through Create Virtual Machine wizard.
+
+>[!NOTE]
+> Ensure the VMs that will be created using this wizard meets the above [prerequisites](#before-you-start).
+
+To enable nested virtualization, on the **Create Virtual Machines wizard**, select  **Select Source** and then select **Enable Nested Virtualization** on the right pane of the wizard.
+
+![enable nested virtualization through Create Virtual Machine wizard](media/nested-vm/enable-nested-virtualization-vm-wizard.png)
+
+### Enable nested virtualization through service template
+You can enable nested virtualization on VMs that are created through service templates.
+
+>[!NOTE]
+> Ensure the VMs that will be created using this template meets the above [prerequisites](#before-you-start).
+
+To enable nested virtualization,  from  **Single Tier Properties**, select  **General** and then select **Enable Nested Virtualization** on the right pane of the wizard.
+
+![enable nested virtualization through Create VM Service template wizard](media/nested-vm/enable-nested-virtualization-vm-service-template.png)
+
+::: moniker-end
 
 ## Next steps
 [Run Hyper-V in a nested VM](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
