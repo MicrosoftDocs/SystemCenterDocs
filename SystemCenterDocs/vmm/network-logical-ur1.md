@@ -113,14 +113,14 @@ If you don't want VMM to create logical and VM networks automatically, you can d
 
 4. In **Network Site**, add network sites to the logical network. If you don't need to create network sites, select **Next**.
 
-In VMM 2019 UR1, IP pools can be created when you add network sites in the logical network creation wizard.
+	In VMM 2019 UR1, IP pools can be created when you add network sites in the logical network creation wizard.
 
-- **DHCP no VLAN**: If you're using DHCP to allocate IP addresses and you don't have VLANs you don't need a network site. Note that VMM automatically suggests a site name. Any network name shouldn't be longer than 64 characters.
-- **Static IP**: If you're using static IP addresses create at least one network site and associate at least one IP subnet with it.
-- **VLAN**: If you're using VLANs with static IP addressing create corresponding network site for the VLAN and subnet pairs. If you're using DHCP create corresponding network sites for VLAN information only.
-- **Network virtualization**: If you're using network virtualization create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
-- **Load balancer**: If the logical network will contain a load balancer create at least one network site with an associated IP subnet.
-5. If you're using an external network managed by a vendor network management console or virtual switch extension manager outside VMM you can configure settings in the vendor console and import them into VMM.
+	- **DHCP no VLAN**: If you're using DHCP to allocate IP addresses and you don't have VLANs, you don't need a network site. Note 	that VMM automatically suggests a site name. Any network name shouldn't be longer than 64 characters.
+	- **Static IP**: If you're using static IP addresses, create at least one network site and associate at least one IP subnet with it.
+	- **VLAN**: If you're using VLANs with static IP addressing, create corresponding network site for the VLAN and subnet pairs. If you're using DHCP, create corresponding network sites for VLAN information only.
+	- **Network virtualization**: If you're using network virtualization, create at least one network site with an associated IP subnet so that the logical network has an IP address pool.
+	- **Load balancer**: If the logical network will contain a load balancer, create at least one network site with an associated IP subnet.
+5. If you're using an external network managed by a vendor network management console or virtual switch extension manager outside VMM, you can configure settings in the vendor console and import them into VMM.
 6. In **Host groups that can use this network site**, select each host group to which you want to make the logical network available.
 7. In **Associated VLANs and IP subnets**, select **Insert Row** to specify the settings that you want to assign to the network site. If you selecting PVLAN you'll need to add a **SecondaryVLAN** for each VLAN. Ensure that the VLANs and subnets are available in your physical network. If you leave the VLAN field empty VMM assigns a value of 0 to indicate that VLANs aren't used. In trunk mode 0 indicates native VLAN.
 8.	If you created network sites and associated one or more IP subnets with them (when you're not using DHCP), you can create static IP address pools from those subnets. Then VMM can automatically allocate IP addresses to VMs in the network site. IP pools can be created within the logical network wizard.
