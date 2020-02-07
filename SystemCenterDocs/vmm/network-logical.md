@@ -19,7 +19,7 @@ Read this article to learn how to create logical networks in System Center - Vir
 ::: moniker range="sc-vmm-2019"
 
 >[!NOTE]
-> For information about logical networks in VMM 2019 UR1, [see this article](network-logical-ur1).
+> For information about logical networks in VMM 2019 UR1, [see this article](network-logical-ur1.md).
 
 ::: moniker-end
 
