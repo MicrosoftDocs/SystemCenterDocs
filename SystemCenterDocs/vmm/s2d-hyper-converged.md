@@ -79,6 +79,8 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 2.	You need to [set up a logical switch](network-switch.md) with Switch Embedded Teaming (SET) enabled, so that the switch is aware of virtualization. This switch is connected to the management logical network, and has all of the host virtual adapters that are required to provide access to the management network, or configure storage networking. S2D relies on a network to communicate between hosts. RDMA-capable adapters are recommended.
 3.	[Create VM networks](network-virtual.md).
 
+::: moniker range="sc-vmm-2019"
+
 ## Step 3: Configure DCB settings on the S2D cluster
 
 >[!NOTE]
@@ -182,6 +184,36 @@ If you use Powershell, the pool and the storage tier is automatically created wi
 
 In a hyper-converged topology VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
 
+::: moniker-end
+
+
+::: moniker range="<sc-vmm-2019"
+## Step 3: Manage the pool and create CSVs
+
+You can now modify the storage pool settings, and create virtual disks and CSVs.
+
+1. Click **Fabric** > **Storage** > **Arrays**.
+2. Right-click the cluster > **Manage Pool**, and select the storage pool that was created by default. You can change the default name, and add a classification.
+3. To create a CSV, right-click the cluster > **Properties** > **Shared Volumes**.
+4. In the Create Volume Wizard > **Storage Type**, specify the volume name, and select the storage pool.
+5. In **Capacity**, you can specify the volume size, file system, and resiliency settings.
+
+    ![Volume settings](./media/s2d/storage-spaces-volume-settings.png)
+
+6. Click **Configure advanced storage and tiering settings** to set up these options.
+
+    ![Volume settings](./media/s2d/storage-spaces-tiering.png)
+
+
+5. In **Summary**, verify settings and finish the wizard. A virtual disk will be created automatically when you create the volume.
+
+If you use Powershell, the pool and the storage tier is automatically created with the **Enable-ClusterS2D autoconfig=true** option.
+
+## Step 4: Deploy VMs on the cluster
+
+In a hyper-converged topology VMs can be directly deployed on the cluster. Their virtual hard disks are placed on the volumes you created using S2D. You [create and deploy these VMs](provision-vms.md) just as you would any other VM.
+
+::: moniker-end
 
 ## Next steps
 
