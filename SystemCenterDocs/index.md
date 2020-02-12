@@ -874,7 +874,7 @@ description: System Center documentation for versions 2016 and above. The docume
                                                     <div class="cardText">
                                                     <h3>System Center Release Notes</h3>
                                                     <p><a href="https://docs.microsoft.com/system-center/dpm/dpm-release-notes">DPM Release Notes</a></p>
-                                                    <p><a href="https://docs.microsoft.com/system-center/scom/release-notes-1807">SCOM Release Notes</a></p>
+                                                    <p><a href="https://docs.microsoft.com/system-center/scom/release-notes-om">SCOM Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/orchestrator/release-notes-orch">Orchestrator Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/scsm/release-notes-sm">SM Release Notes</a></p>
                                                     <p><a href="https://docs.microsoft.com/system-center/sma/release-notes-sma">SMA Release Notes</a></p>
@@ -917,15 +917,37 @@ description: System Center documentation for versions 2016 and above. The docume
                                                         <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
                                                     </div>
                                                 </div>
-                                                    <div class="cardText">
-                                                    <h3>System Center 2016 UR8</h3>
-                                                    <p><a href="https://support.microsoft.com/help/4519194/description-of-update-rollup-8-for-microsoft-system-center-2016">System Center</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4511102/update-rollup-8-for-system-center-2016-data-protection-manager">Data Protection Manager</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4514877/update-rollup-8-for-system-center-2016-operations-manager">Operations Manager</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4518887/update-rollup-8-for-system-center-2016-orchestrator">Orchestrator</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4516987/update-rollup-8-for-system-center-2016-service-manager">Service Manager</a></p>
-                                                    <p><a href="https://support.microsoft.com/help/4518885/update-rollup-8-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
-                                                    </div>
+                                                <div class="cardText">
+                                                <h3>System Center 2019 UR1</h3>
+                                                <p><a href="https://support.microsoft.com/en-us/help/4533413/update-rollup-1-for-system-center-2019">System Center</a></p>
+                                                <p><a href="https://support.microsoft.com/en-us/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager">Data Protection Manager</a></p>
+                                                <p><a href="https://support.microsoft.com/en-us/help/4533415/update-rollup-1-for-system-center-operations-manager-2019">Operations Manager</a></p>
+                                                <p><a href="https://support.microsoft.com/en-us/help/4533414/update-rollup-1-for-system-center-orchestrator-2019">Orchestrator</a></p>
+                                                <p><a href="https://support.microsoft.com/en-us/help/4532891/update-rollup-1-for-system-center-service-manager-2019">Service Manager</a></p>
+                                                <p><a href="https://support.microsoft.com/en-us/help/4533411/update-rollup-1-for-system-center-virtual-machine-manager-2019">Virtual Machine Manager</a></p>
+                                                </div>
+                                        </div>
+                                  </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                </div>
+                                            </div>
+                                                <div class="cardText">
+                                                <h3>System Center 2016 UR8</h3>
+                                                <p><a href="https://support.microsoft.com/help/4519194/description-of-update-rollup-8-for-microsoft-system-center-2016">System Center</a></p>
+                                                <p><a href="https://support.microsoft.com/help/4511102/update-rollup-8-for-system-center-2016-data-protection-manager">Data Protection Manager</a></p>
+                                                <p><a href="https://support.microsoft.com/help/4514877/update-rollup-8-for-system-center-2016-operations-manager">Operations Manager</a></p>
+                                                <p><a href="https://support.microsoft.com/help/4518887/update-rollup-8-for-system-center-2016-orchestrator">Orchestrator</a></p>
+                                                <p><a href="https://support.microsoft.com/help/4516987/update-rollup-8-for-system-center-2016-service-manager">Service Manager</a></p>
+                                                <p><a href="https://support.microsoft.com/help/4518885/update-rollup-8-for-system-center-2016-virtual-machine-manager">Virtual Machine Manager</a></p>
+                                                </div>
                                             </div>
                                       </div>
                                 </div>
