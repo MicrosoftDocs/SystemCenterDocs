@@ -77,7 +77,7 @@ For more information, see [Hardware and Software Requirements for Installing SQL
 ::: moniker range=">=sc-om-1801"
 
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server (https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql).
+For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql).
 
 ::: moniker-end
 
@@ -267,7 +267,7 @@ You can also refer to the guidance on MSDN for [SQL 2014](https://msdn.microsoft
 ::: moniker-end
 ::: moniker range=">=sc-om-1801"
 
-Leran more [about server memory configuration](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016)
+Leran more [about server memory configuration](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016).
 
 ::: moniker-end
 
