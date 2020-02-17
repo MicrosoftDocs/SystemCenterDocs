@@ -68,7 +68,18 @@ Additional hardware and software considerations apply in your design planning:
 -  .NET Framework 4 is required.
 -  Reporting Server is not supported on Windows Server Core.
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
+::: moniker range="=sc-om-2016"
+
+For more information, see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx)  
+
+::: moniker-end
+
+::: moniker range=">=sc-om-1801"
+
+
+For more information, see [Hardware and Software Requirements for Installing SQL Server (https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).
+
+::: moniker-end
 
 > [!NOTE]
 > During the initial installation of the operational database, only use Windows Authentication on the SQL Server that hosts the Operations Manager operational database. Do not use Mixed Mode (Windows Authentication and SQL Server Authentication) because using SQL Server Authentication mode during the initial installation of the operational database can cause issues. Although enabling Mixed Mode security is possible on the SQL Server hosting the Operations Manager operational database, it is not supported as all contact with the database is accomplished using Windows accounts only.  
@@ -247,7 +258,18 @@ Typically if the environment has excess memory for the buffer pool, the Page Lif
 
 Once you have your baseline for the environment, make a change to the sp_configure 'max server memory' option to reduce the size of the buffer pool by 1GB and then monitor the impact to the performance counters after things stabilize from the initial cache flushing that may typically occur when RECONFIGURE is run in the environment.  If the level of Page Life Expectancy remains acceptable for your environment (keeping in mind that a fixed target of >= 300 is ridiculous for servers with large amounts of RAM installed), and the number of SQL Server:Buffer Manager\Page reads/sec is within what the disk I/O subsystem can support without performance degradation, repeat the process of reducing the sp_configure value for 'max server memory' by 1GB and continuing to monitor the impact to the environment.
 
+
+::: moniker range="=sc-om-2016"
+
+
 You can also refer to the guidance on MSDN for [SQL 2014](https://msdn.microsoft.com/library/ms178067%28v=sql.120%29.aspx).
+
+::: moniker-end
+::: moniker range=">=sc-om-1801"
+
+[Leran more](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016)
+
+::: moniker-end
 
 ### Optimize TempDB
 
