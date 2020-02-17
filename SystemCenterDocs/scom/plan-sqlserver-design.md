@@ -77,7 +77,7 @@ For more information, see [Hardware and Software Requirements for Installing SQL
 ::: moniker range=">=sc-om-1801"
 
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql).
+For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-ver15).
 
 ::: moniker-end
 
