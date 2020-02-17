@@ -262,12 +262,12 @@ Once you have your baseline for the environment, make a change to the sp_configu
 ::: moniker range="=sc-om-2016"
 
 
-You can also refer to the guidance on MSDN for [SQL 2014](https://msdn.microsoft.com/library/ms178067%28v=sql.120%29.aspx).
+ Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2014).
 
 ::: moniker-end
 ::: moniker range=">=sc-om-1801"
 
-Leran more [about server memory configuration](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016).
+Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016).
 
 ::: moniker-end
 
