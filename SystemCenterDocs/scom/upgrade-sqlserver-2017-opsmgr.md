@@ -7,7 +7,7 @@ manager: carmonm
 ms.date: 02/18/2020
 ms.custom: na
 ms.prod: system-center
-monikerRange: '>sc-om-1807'
+monikerRange: '>sc-om-1801'
 ms.assetid:
 ms.technology: operations-manager
 ms.topic: conceptual
@@ -58,7 +58,7 @@ On all the management servers in the management group, stop the Operations Manag
 >
 >From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
->To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add *.* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+>To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
 
 To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
