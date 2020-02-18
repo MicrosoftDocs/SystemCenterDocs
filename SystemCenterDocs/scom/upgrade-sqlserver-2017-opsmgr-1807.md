@@ -1,21 +1,21 @@
 ---
-title: Upgrade Operations Manager 1807 databases to SQL Server 2017
-description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager 1807 databases to SQL Server 2017.
+title: Upgrade Operations Manager databases to SQL Server 2017
+description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2017.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/12/2018
+ms.date: 02/18/2020
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-1807'
+monikerRange: '>sc-om-1807'
 ms.assetid:
 ms.technology: operations-manager
 ms.topic: conceptual
 ---
 
-# How to upgrade Operations Manager 1807 databases to SQL Server 2017
+# How to upgrade Operations Manager databases to SQL Server 2017
 
-Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
+Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2017.  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
 >[!NOTE]
 >Upgrading to SQL Server 2017 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
@@ -58,7 +58,7 @@ On all the management servers in the management group, stop the Operations Manag
 >
 >From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
->To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add **.** to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+>To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add *.* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
 
 To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
