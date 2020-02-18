@@ -30,9 +30,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
+::: moniker range=">sc-om-1807"
 
-Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md).
+Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr.md).
 
 ::: moniker-end
 
@@ -68,7 +68,18 @@ Additional hardware and software considerations apply in your design planning:
 -  .NET Framework 4 is required.
 -  Reporting Server is not supported on Windows Server Core.
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server 2014](https://msdn.microsoft.com/library/ms143506%28v=sql.120%29.aspx) or [Hardware and Software Requirements for Installing SQL Server 2016](https://msdn.microsoft.com/library/ms143506%28v=sql.130%29.aspx).  
+::: moniker range="=sc-om-2016"
+
+For more information, see [Hardware and Software Requirements for Installing SQL Server 2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014)  
+
+::: moniker-end
+
+::: moniker range=">=sc-om-1801"
+
+
+For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-ver15).
+
+::: moniker-end
 
 > [!NOTE]
 > During the initial installation of the operational database, only use Windows Authentication on the SQL Server that hosts the Operations Manager operational database. Do not use Mixed Mode (Windows Authentication and SQL Server Authentication) because using SQL Server Authentication mode during the initial installation of the operational database can cause issues. Although enabling Mixed Mode security is possible on the SQL Server hosting the Operations Manager operational database, it is not supported as all contact with the database is accomplished using Windows accounts only.  
@@ -179,7 +190,7 @@ The recommended approach to work around this limitation when you have deployed s
 
 These settings allow, when fail over to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
-Run the following Powershell query on any one of the SQL nodes to modify its settings.
+Run the following PowerShell query on any one of the SQL nodes to modify its settings.
 
     Import-Module FailoverClusters
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
@@ -190,7 +201,7 @@ Run the following Powershell query on any one of the SQL nodes to modify its set
 
 If you are using Always On with a listener name, you should also make these configurations changes on the listener.
 
-Run the following Powershell query on the SQL node currently hosting the listener to modify its settings.
+Run the following PowerShell query on the SQL node currently hosting the listener to modify its settings.
 
     Import-Module FailoverClusters
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
@@ -247,7 +258,18 @@ Typically if the environment has excess memory for the buffer pool, the Page Lif
 
 Once you have your baseline for the environment, make a change to the sp_configure 'max server memory' option to reduce the size of the buffer pool by 1GB and then monitor the impact to the performance counters after things stabilize from the initial cache flushing that may typically occur when RECONFIGURE is run in the environment.  If the level of Page Life Expectancy remains acceptable for your environment (keeping in mind that a fixed target of >= 300 is ridiculous for servers with large amounts of RAM installed), and the number of SQL Server:Buffer Manager\Page reads/sec is within what the disk I/O subsystem can support without performance degradation, repeat the process of reducing the sp_configure value for 'max server memory' by 1GB and continuing to monitor the impact to the environment.
 
-You can also refer to the guidance on MSDN for [SQL 2014](https://msdn.microsoft.com/library/ms178067%28v=sql.120%29.aspx).
+
+::: moniker range="=sc-om-2016"
+
+
+ Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2014).
+
+::: moniker-end
+::: moniker range=">=sc-om-1801"
+
+Learn more [about server memory configuration](https://docs.microsoft.com/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-2016).
+
+::: moniker-end
 
 ### Optimize TempDB
 
@@ -356,6 +378,17 @@ The Reporting Services instance acts as a proxy for access to data in the Data W
 
 Behind the scenes of Reporting Services, there is a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
+
+
+::: moniker range=">sc-om-1801"
+
+>[!NOTE]
+>
+>From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+>
+>To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+::: moniker-end
 
 ## Next steps
 

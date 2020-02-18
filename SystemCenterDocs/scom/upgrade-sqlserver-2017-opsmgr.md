@@ -1,21 +1,21 @@
 ---
-title: Upgrade Operations Manager 1807 databases to SQL Server 2017
-description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager 1807 databases to SQL Server 2017.
+title: Upgrade Operations Manager databases to SQL Server 2017
+description: This article describes how to upgrade the SQL Server supporting System Center Operations Manager databases to SQL Server 2017.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/12/2018
+ms.date: 02/18/2020
 ms.custom: na
 ms.prod: system-center
-monikerRange: 'sc-om-1807'
+monikerRange: '>sc-om-1801'
 ms.assetid:
 ms.technology: operations-manager
 ms.topic: conceptual
 ---
 
-# How to upgrade Operations Manager 1807 databases to SQL Server 2017
+# How to upgrade Operations Manager databases to SQL Server 2017
 
-Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager version 1807 to SQL Server 2017.  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
+Use the steps in this article to perform an in-place upgrade of the databases supporting Operations Manager to SQL Server 2017.  Before proceeding, you should back up any custom authored reports, favorites, and schedules, which are stored in the report server database.  
 
 >[!NOTE]
 >Upgrading to SQL Server 2017 uninstalls SQL Reporting Services, as this is now a separately-installed feature.
@@ -50,9 +50,17 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
 
-2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 dcoumentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
+2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
 
 ## Install SQL Server 2017 Reporting services
+
+>[!NOTE]
+>
+>From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+>
+>To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+
 To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
 
 After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.  This is necessary to configure Reporting Services to:
