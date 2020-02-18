@@ -30,9 +30,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
+::: moniker range=">sc-om-1807"
 
-Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md).
+Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr.md).
 
 ::: moniker-end
 
