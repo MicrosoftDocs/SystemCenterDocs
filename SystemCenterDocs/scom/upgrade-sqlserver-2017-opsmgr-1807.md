@@ -53,6 +53,14 @@ On all the management servers in the management group, stop the Operations Manag
 2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 dcoumentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
 
 ## Install SQL Server 2017 Reporting services
+
+>[!NOTE]
+
+From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+
+To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**> **Advanced**, and add *.* to the list for “AllowedResourceExtensionsForUpload”. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+
 To download SQL Server 2017 Reporting services, go to the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55252).
 
 After a successful setup, select **Configure Report Server** to launch the Reporting Services Configuration Manager.  This is necessary to configure Reporting Services to:

@@ -379,6 +379,17 @@ The Reporting Services instance acts as a proxy for access to data in the Data W
 Behind the scenes of Reporting Services, there is a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
 
+
+::: moniker range=">sc-om-1801"
+
+>[!NOTE]
+
+From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+
+To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**> **Advanced**, and add *.* to the list for “AllowedResourceExtensionsForUpload”. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+::: moniker-end
+
 ## Next steps
 
 To understand how to configure hosting the Report data warehouse behind a firewall, see [Connect Reporting Data Warehouse Across a Firewall](deploy-connect-reportingdw-firewall.md).
