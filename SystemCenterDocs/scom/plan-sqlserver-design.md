@@ -30,9 +30,9 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 
 ::: moniker-end
 
-::: moniker range="sc-om-1807"
+::: moniker range=">sc-om-1807"
 
-Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr-1807.md).
+Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager databases to SQL Server 2017](upgrade-sqlserver-2017-opsmgr.md).
 
 ::: moniker-end
 
@@ -190,7 +190,7 @@ The recommended approach to work around this limitation when you have deployed s
 
 These settings allow, when fail over to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
-Run the following Powershell query on any one of the SQL nodes to modify its settings.
+Run the following PowerShell query on any one of the SQL nodes to modify its settings.
 
     Import-Module FailoverClusters
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
@@ -201,7 +201,7 @@ Run the following Powershell query on any one of the SQL nodes to modify its set
 
 If you are using Always On with a listener name, you should also make these configurations changes on the listener.
 
-Run the following Powershell query on the SQL node currently hosting the listener to modify its settings.
+Run the following PowerShell query on the SQL node currently hosting the listener to modify its settings.
 
     Import-Module FailoverClusters
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
@@ -378,6 +378,17 @@ The Reporting Services instance acts as a proxy for access to data in the Data W
 
 Behind the scenes of Reporting Services, there is a SQL Server Database instance that hosts the ReportServer and ReportServerTempDB databases. General recommendations regarding the performance tuning of this instance apply.
 
+
+
+::: moniker range=">sc-om-1801"
+
+>[!NOTE]
+>
+>From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+>
+>To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+::: moniker-end
 
 ## Next steps
 
