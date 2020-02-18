@@ -50,7 +50,7 @@ On all the management servers in the management group, stop the Operations Manag
 
     d. In the **Select features to remove** page, select **Reporting server**, and then click **Uninstall**. Click **Close** when the wizard finishes.
 
-2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 dcoumentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
+2. Perform the upgrade to SQL Server 2017 following the steps described in [SQL 2017 documentation](https://docs.microsoft.com/sql/database-engine/install-windows/upgrade-database-engine?view=sql-server-2017).
 
 ## Install SQL Server 2017 Reporting services
 

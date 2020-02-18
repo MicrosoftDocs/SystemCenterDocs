@@ -190,7 +190,7 @@ The recommended approach to work around this limitation when you have deployed s
 
 These settings allow, when fail over to a node in a different subnet, for quicker recovery and resolution of the cluster name with the new IP address.
 
-Run the following Powershell query on any one of the SQL nodes to modify its settings.
+Run the following PowerShell query on any one of the SQL nodes to modify its settings.
 
     Import-Module FailoverClusters
     Get-ClusterResource "Cluster Name"|Set-ClusterParameter RegisterAllProvidersIP 0
@@ -201,7 +201,7 @@ Run the following Powershell query on any one of the SQL nodes to modify its set
 
 If you are using Always On with a listener name, you should also make these configurations changes on the listener.
 
-Run the following Powershell query on the SQL node currently hosting the listener to modify its settings.
+Run the following PowerShell query on the SQL node currently hosting the listener to modify its settings.
 
     Import-Module FailoverClusters
     Get-ClusterResource <Listener Cluster Resource name> | Set-ClusterParameter RegisterAllProvidersIP 0
