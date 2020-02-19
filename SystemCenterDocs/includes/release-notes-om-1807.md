@@ -49,6 +49,12 @@ You can change the default values to support your requirements. The default conf
 
 **Workaround**: Before upgrading to SQL Server 2017, review the following article about the upgrade process - [Upgrade Operations Manager 1807 databases to SQL Server 2017](../scom/upgrade-sqlserver-2017-opsmgr.md).
 
+>[!NOTE]
+>
+>From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
+>
+>To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
 ## Supportability with Internet Explorer Compatibility View
 
 **Description**: The HTML5 Web console does not support Internet Explorer Compatibility View.  
