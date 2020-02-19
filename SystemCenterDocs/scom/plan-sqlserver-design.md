@@ -70,14 +70,14 @@ Additional hardware and software considerations apply in your design planning:
 
 ::: moniker range="=sc-om-2016"
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server [2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014) or [2016](https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016)
+For more information, see [Hardware and Software Requirements for Installing SQL Server [2014](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2014) or [2016](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016)
 
 ::: moniker-end
 
 ::: moniker range=">=sc-om-1801"
 
 
-For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016).
+For more information, see [Hardware and Software Requirements for Installing SQL Server](https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server?view=sql-server-2016).
 
 ::: moniker-end
 
