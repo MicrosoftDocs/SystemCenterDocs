@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 11/01/2016
+ms.date: 02/20/2020
 title: Prepare machines in workgroups and untrusted domains for backup
 ms.technology: data-protection-manager
 ms.assetid: e63b86d4-1f83-48ef-82bb-636b9dc745e2
@@ -14,13 +14,13 @@ ms.author: raynew
 
 # Prepare machines in workgroups and untrusted domains for backup
 
-System Center Data Protection Manager (DPM) can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account (NTLM authentication), or using certificates. For both types of authentication you'll need to prepare the infrastructure before you can set up a protection group that contains the sources you want to back up.
+System Center Data Protection Manager (DPM) can protect computers that are in untrusted domains or workgroups. You can authenticate these computers using a local user account (NTLM authentication), or using certificates. For both types of authentication, you'll need to prepare the infrastructure before you can set up a protection group that contains the sources you want to back up.
 
 1.  **Install a certificate**-If you want to use certificate authentication install a certificate on the DPM server and on the computer you want to protect.
 
 2.  **Install the agent**-Install the agent on the computer you want to protect.
 
-3.  **Recognize the DPM server**-Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
+3.  **Recognize the DPM server**-Configure the computer to recognize the DPM server for performing backups. To do this, you'll run the SetDPMServer command.
 
 4.  **Attach the computer**-Lastly you'll need to attach the protected computer to the DPM server.
 
@@ -31,17 +31,17 @@ Before you start, check the supported protection scenarios and required network 
 
 |Workload Type|Protected Server State and Support|
 |-|-----------|
-|Files|Workgroup: Supported<br /><br />Untrusted: Supported<br /><br />NTLM and certificate authentication for single server. Certificate authentication only for cluster.|
-|System State|Workgroup: Supported<br /><br />Untrusted: Supported<br /><br />NTLM authentication only|
-|SQL Server|Workgroup: Supported<br /><br />Untrusted: Supported<br /><br />Mirroring not supported.<br /><br />NTLM and certificate authentication for single server. Certificate authentication only for cluster.|
-|Hyper-V server|Workgroup: Supported<br /><br />Untrusted: Supported<br /><br />NTLM and certificate authentication|
-|Hyper-V cluster|Workgroup: Supported<br /><br />Untrusted: Supported<br /><br />CSV not supported.<br /><br />Certificate authentication only|
-|Exchange Server|Workgroup: Not applicable<br /><br />Untrusted: Supported for single server only. Cluster not supported. CCR, SCR, DAG not supported. LCR supported.<br /><br />NTLM authentication only|
-|Secondary DPM server (For backup of primary DPM server) <br /><br /> **Note:** Both Primary and Secondary DPM Servers must be in same or trusted domain. |Workgroup: Supported<br /><br />Untrusted: Supported<br /><br />Certificate authentication only|
-|SharePoint|Workgroup: Not supported<br /><br />Untrusted: Not supported|
-|Client computers|Workgroup: Not supported<br /><br />Untrusted: Not supported|
-|Bare metal recovery (BMR)|Workgroup: Not supported<br /><br />Untrusted: Not supported|
-|End-user recovery|Workgroup: Not supported<br /><br />Untrusted: Not supported|
+|Files|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM and certificate authentication for single server. Certificate authentication only for cluster.|
+|System State|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM authentication only|
+|SQL Server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Mirroring not supported.<br /><br />NTLM and certificate authentication for single server. Certificate authentication only for cluster.|
+|Hyper-V server|Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />NTLM and certificate authentication|
+|Hyper-V cluster|Workgroup: Not supported<br /><br />Untrusted Domain: Supported (Certificate authentication only)|
+|Exchange Server|Workgroup: Not applicable<br /><br />Untrusted Domain: Supported for single server only. Cluster not supported. CCR, SCR, DAG not supported. LCR supported.<br /><br />NTLM authentication only|
+|Secondary DPM server (For backup of primary DPM server) <br /><br /> **Note:** Both Primary and Secondary DPM Servers must be in same or trusted domain. |Workgroup: Supported<br /><br />Untrusted Domain: Supported<br /><br />Certificate authentication only|
+|SharePoint|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
+|Client computers|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
+|Bare metal recovery (BMR)|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
+|End-user recovery|Workgroup: Not supported<br /><br />Untrusted Domain: Not supported|
 
 ### Network settings
 
@@ -60,7 +60,7 @@ Here's what you'll need to do:
 
 1.  Install the agent - Install the agent on the computer you want to protect.
 
-2.  Configure the agent - Configure the computer to recognize the DPM server for performing backups. To do this you'll run the SetDPMServer command.
+2.  Configure the agent - Configure the computer to recognize the DPM server for performing backups. To do this, you'll run the SetDPMServer command.
 
 3.  Attach the computer - Lastly you'll need to attach the protected computer to the DPM server.
 
@@ -109,7 +109,7 @@ FQDN example: Protected computer: `SetDpmServer.exe -dpmServerName Server01.corp
 
 4.  Review the **Summary** page, and click **Attach**.
 
-You can optionally run the Windows PowerShell Attach-NonDomainServer.ps1 command instead of running the wizard. To do this take a look at the example in the next section.
+You can optionally run the Windows PowerShell Attach-NonDomainServer.ps1 command instead of running the wizard. To do this, take a look at the example in the next section.
 
 ### Examples
 **Example 1**
@@ -197,7 +197,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 2.  The certificate is placed in the User store. We need to move it to the Local Computer store.
 
-3.  To do this export the certificate from the User store. Make sure you export it with the private key. You can export it in the default .pfx format. Specify a password for the export.
+3.  To do this, export the certificate from the User store. Make sure you export it with the private key. You can export it in the default .pfx format. Specify a password for the export.
 
 4.  In Local Computer\Personal\Certificate run the Certificate Import Wizard to imported the exported file from its saved location. Specify the password you used to export it and make sure **Mark this key as exportable** is selected. On the Certificate Store page leave the default setting **Place all certificates in the following store**, and ensure **Personal** is displayed.
 
@@ -237,7 +237,7 @@ If you want to optionally configure the template for enrollment or autoenrollmen
 
 2.  The certificate is placed in the User store. We need to move it to the Local Computer store.
 
-3.  To do this export the certificate from the User store. Make sure you export it with the private key. You can export it in the default .pfx format. Specify a password for the export.
+3.  To do this, export the certificate from the User store. Make sure you export it with the private key. You can export it in the default .pfx format. Specify a password for the export.
 
 4.  In Local Computer\Personal\Certificate run the Certificate Import Wizard to imported the exported file from its saved location. Specify the password you used to export it and make sure **Mark this key as exportable** is selected. On the Certificate Store page leave the default setting **Place all certificates in the following store**, and ensure **Personal** is displayed.
 
@@ -266,7 +266,7 @@ Attach-ProductionServerWithCertificate.ps1 [-DPMServerName <String>] [-PSCredent
 
 -   -DPMServerName-Name of the DPM server
 
--   PSCredential-Name of the .bin file. If you placed it in the Windows\System32 folder you can specify the file name only. Be careful to specify the .bin file created o nthe protected server. If you specify the .bin file created on the DPM server you'll remove all the protected computers that are configured for certificate-based authentication.
+-   PSCredential-Name of the .bin file. If you placed it in the Windows\System32 folder you can specify the file name only. Be careful to specify the .bin file created on the protected server. If you specify the .bin file created on the DPM server you'll remove all the protected computers that are configured for certificate-based authentication.
 
 After the attach process completes the protected computer should appear in the DPM console.
 
