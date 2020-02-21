@@ -13,7 +13,7 @@ ms.technology: virtual-machine-manager
 
 # Plan VMM installation
 
-This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and incudes information for releases VMM 2016 and later. Please use these requirements as applicable for the VMM version you plan to install.
+This article helps you to plan all the elements required for a successful System Center - Virtual Machine Manager (VMM) installation and includes information for releases VMM 2016 and later. Use these requirements as applicable for the VMM version you plan to install.
 
 For additional information on the supported versions of hardware and software, see the system requirements article for the version you install.
 
@@ -32,7 +32,7 @@ Verify the following [system requirements](system-requirements.md):
 
 **Component** | **Details**
 --- | ---
-**Command line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=42295)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
+**Command-line utilities for SQL Server** | [SQL Server 2014 feature pack for release earlier to 2019, 2016/2017 feature pack for 2019](https://www.microsoft.com/download/details.aspx?id=42295)<br/><br/> If you want to deploy VMM services using SQL Server data-tier apps, install the related command-line utilities on the VMM management server. The version you install should match the SQL Server version. You don't have to install these to install VMM.
 **Windows Assessment and Deployment Kit (ADK)** | Windows ADK for Windows 10.<br/><br/> You can install from setup, or [download it](https://msdn.microsoft.com/windows/hardware/dn913721.aspx). You only need the **Deployment Tools** and **Windows Preinstallation Environment** options.
 **Guest operating system** | Windows operating systems [supported by Hyper-V](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/supported-windows-guest-operating-systems-for-hyper-v-on-windows).<br/><br/> Linux (CentOS, RHEL, Debian, Oracle Linux, SUSE, Ubuntu)
 **PowerShell** | [Supported versions](system-requirements.md)
@@ -59,7 +59,7 @@ If you can't do this, you can also register the SPN during VMM installation. A d
 
 1. Run adsiedit as a domain administrator.
 2. Navigate to find the VMM service user. Right-click **Properties** > **Security** > **Advanced**. Then click **Add**, and in **Select a principal**, specify user who will be granted the  permissions.
-3. Select **Write servicePrincipalName** > **OK** .
+3. Select **Write servicePrincipalName** > **OK**.
 
 When you install VMM with this user account SPN will be registered.
 
