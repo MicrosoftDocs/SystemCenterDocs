@@ -5,7 +5,7 @@ description: This article provides planning information for setting up VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -114,7 +114,10 @@ When you install VMM with this user account SPN will be registered.
 
 ## Account and domain requirements
 
-When you install VMM you need to configure the VMM service  to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
+When you install VMM you need to configure the VMM service to use either the Local System account or a domain account or a Group Managed Service Account (gMSA).
+
+>[!NOTE]
+> The service account should have *Allow log on locally* and *Allow log on through Remote Desktop Services* permissions on the VMM server.
 
 Ensure the following before you prepare an account:
 
