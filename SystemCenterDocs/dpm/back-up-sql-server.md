@@ -4,7 +4,7 @@ manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 11/01/2016
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
@@ -194,7 +194,7 @@ Configure self-service SQL Server recovery as follows:
 
 2.  In the DPM Self-Service Recovery Configuration Tool for SQL Server click **Create Role**.
 
-3.  On the **Security Groups** page, you'll create one or more groups that contain the users for whom you want to enable self-service reocvery.  Specify  security groups in the format domain\security group,  or an individual user in the format domain\user name. You can add multiple groups and users to a DPM role.
+3.  On the **Security Groups** page, you'll create one or more groups that contain the users for whom you want to enable self-service recovery.  Specify  security groups in the format domain\security group,  or an individual user in the format domain\user name. You can add multiple groups and users to a DPM role.
 
 4.  On the **Recovery Items** page you specify protected SQL Server instances and databases for which you want to allow self-service recovery. Specify instances in the format <computer name\instance name>. To specify a database  press the TAB key, and then type a database name. Alternatively, to enable role users to recover all databases on the instance, press the TAB key, and then press the spacebar to clear the text in the **Database Name** column.
 
@@ -205,7 +205,7 @@ Configure self-service SQL Server recovery as follows:
 6.  In addition on the computer from which self-service recovery will run make sure that at least .NET framework 3.5 is installed, and that the DPM Self-Service Recovery Tool is installed. The tool is available in the DPM product installation location, in the **DpmSqlEURInstaller** folder.
 
 ## Restore  SQL Server data
-You can recover SharePoint data as follows:
+You can recover SQL data as follows:
 
 -   Recover a database to the original location
 
