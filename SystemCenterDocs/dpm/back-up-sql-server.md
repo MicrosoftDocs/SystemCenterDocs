@@ -194,7 +194,7 @@ Configure self-service SQL Server recovery as follows:
 
 2.  In the DPM Self-Service Recovery Configuration Tool for SQL Server click **Create Role**.
 
-3.  On the **Security Groups** page, you'll create one or more groups that contain the users for whom you want to enable self-service reocvery.  Specify  security groups in the format domain\security group,  or an individual user in the format domain\user name. You can add multiple groups and users to a DPM role.
+3.  On the **Security Groups** page, you'll create one or more groups that contain the users for whom you want to enable self-service recovery.  Specify  security groups in the format domain\security group,  or an individual user in the format domain\user name. You can add multiple groups and users to a DPM role.
 
 4.  On the **Recovery Items** page you specify protected SQL Server instances and databases for which you want to allow self-service recovery. Specify instances in the format <computer name\instance name>. To specify a database  press the TAB key, and then type a database name. Alternatively, to enable role users to recover all databases on the instance, press the TAB key, and then press the spacebar to clear the text in the **Database Name** column.
 
