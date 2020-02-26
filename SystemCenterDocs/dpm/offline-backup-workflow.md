@@ -65,13 +65,13 @@ The information in this section helps you complete the offline-backup workflow s
 
 ## Initiate offline backup
 
-1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and Click **Next**.
+1. When you create a new protection group with online protection or add online protection to existing protection group, you see the following screen. To select Initial online Replication method, select **Transfer using my own disk** and click **Next**.
 
     ![Import screen](./media/backup-server/create-new-protection-group.png)
 
 
   > [!NOTE]
-  > To add online protection to an existing Protection Group, use Modify Protection Group option. Currently, we have a known issue with *Add online protection* wizard.
+  > > With DPM 2019 Update Roll Up 1, console might stall when you select **Add online protection** to an existing Protection group. To resolve this issue, apply the hotfix as detailed in the [KB article](https://support.microsoft.com/en-us/help/4547368/console-may-crash-when-you-select-add-online-protection-to-existing-pr).
 
 2. The Azure login page will open. Login using your Azure user account which has *owner* role permission on the Azure Subscription.
 
