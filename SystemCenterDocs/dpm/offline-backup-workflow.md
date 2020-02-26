@@ -71,9 +71,9 @@ The information in this section helps you complete the offline-backup workflow s
 
 
   > [!NOTE]
-  > > With DPM 2019 Update Roll Up 1, console might stall when you select **Add online protection** to an existing Protection group. To resolve this issue, apply the hotfix as detailed in the [KB article](https://support.microsoft.com/en-us/help/4547368/console-may-crash-when-you-select-add-online-protection-to-existing-pr).
+  > > With DPM 2019 Update Roll Up 1, console might stall when you select **Add online protection** for an existing Protection group. To resolve this issue, apply the hotfix as detailed in the [KB article](https://support.microsoft.com/en-us/help/4547368/console-may-crash-when-you-select-add-online-protection-to-existing-pr).
 
-2. The Azure login page will open. Login using your Azure user account which has *owner* role permission on the Azure Subscription.
+2. The Azure login page will open. Login using your Azure user account, which has *owner* role permission on the Azure Subscription.
 
     ![Backup now](./media/backup-server/choose-initial-online-replication.png)
 
