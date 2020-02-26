@@ -1,6 +1,6 @@
 ---
-title: How to Upgrade a Single Server Management Group
-description: This article describes how to upgrade a single server management group to the newest release of Operations Manager.
+title: How to Upgrade a single-server Management Group
+description: This article describes how to upgrade a single-server management group to the newest release of Operations Manager.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -12,11 +12,11 @@ ms.topic: article
 ms.assetid: 2f41a8e5-3ec1-4279-8c06-5e59ff27ef3d
 ---
 
-# How to upgrade a single server management group
+# How to upgrade a single-server management group
 
-When you upgrade a single server management group to System Center - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
+When you upgrade a single-server management group to System Center - Operations Manager, all features that are installed on the server are upgraded. Before you begin the upgrade process, make sure that your server meets the minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).
 
-### To upgrade a single server management group
+### To upgrade a single-server management group
 
 1. Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 
@@ -49,7 +49,7 @@ When you upgrade a single server management group to System Center - Operations 
 
 8. When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
-### To upgrade a single server management group from the Command Prompt
+### To upgrade a single-server management group from the Command Prompt
 
 1.  Log on to the server with an account that is a member of the Operations Manager Administrators role for your Operations Manager management group, a member of the SQL Server sysadmin fixed server role, and a local administrator on the computer.
 

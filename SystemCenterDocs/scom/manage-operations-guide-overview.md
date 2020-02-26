@@ -21,7 +21,7 @@ The Operations Guide is a comprehensive resource that can be used to understand 
 
 If you are new to Operations Manager, you should read [Key Concepts](key-concepts.md) to understand what a management group is and how Operations Manager works.  
 
-Read [What's New in Operations Manager](what-is-new.md) to review the differences between Operations Manager versions.
+Read [What's New in Operations Manager](what-is-new.md) to review the differences between Operations Manager 2016 and later versions.
 
 ## In the Operations Guide  
 
