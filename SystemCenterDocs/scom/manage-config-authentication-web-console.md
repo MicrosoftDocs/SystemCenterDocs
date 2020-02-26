@@ -44,7 +44,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 
 ## Configure FIPS compliance
 
-Follow these steps for the Operations Manager Web console server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS). Enabling FIPS compliance for System Center 2016 - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory, etc.), also be FIPS compliant.
+Follow these steps for the Operations Manager Web console server component to use algorithms that are compliant with Federal Information Processing Standards (FIPS). Enabling FIPS compliance for System Center - Operations Manager requires that the underlying infrastructure used (Server OS, Active Directory, etc.), also be FIPS compliant.
 
 ### To install the cryptography DLL
 
