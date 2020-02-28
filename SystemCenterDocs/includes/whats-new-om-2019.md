@@ -50,7 +50,7 @@ This behavior often led to closure of critical alerts without resolving the unde
 
 The existing alert notifications and subscription experience in Operations Manager now delivers more value to users. The enhancements can be broadly categorized into two areas:
 
-- **Intuitive email notifications**: Operations Manager 2019 supports email notifications in HTML format. For more information, see [Create an email notification in HTML format](../scom/manage-notifications-create-email-channel.md#create-an-email-notification-in-html-format).
+- **Intuitive Email notifications**: Operations Manager 2019 supports email notifications in HTML format. For more information, see [Create an email notification in HTML format](../scom/manage-notifications-create-email-channel.md#create-an-email-notification-in-html-format).
 - **Enhanced Criteria Builder**: You can now use the regular expressions to build a complex yet useful subscription criteria. For more information, see [Create notification subscriptions](../scom/manage-notifications-create-subscriptions.md).
 
 ### Management server failover support for Linux and UNIX monitoring
@@ -128,7 +128,7 @@ The following versions of SQL Server Enterprise & Standard Edition are supported
 - SQL Server 2017 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017%20)
 - SQL Server 2016 and service packs as detailed on [this website](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20)
 
-For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2016).
+For information about SQL Server design considerations, see [related documentation](https://docs.microsoft.com/system-center/scom/plan-sqlserver-design?view=sc-om-2019).
 
 ### In-place upgrade
 
@@ -142,13 +142,13 @@ For information about SQL Server design considerations, see [related documentati
 
 The existing URL monitoring capability is enhanced. With this improvement, Operations Manager won't ignore server certificate errors by default. Examples of certificate errors include server certificate CN, expiry date, untrusted CA, and wrong usage. If you want to monitor websites that don't have a valid SSL certificate, select the **Ignore Server Certificate Errors** check box in your web application properties. For more information, see [Web application properties](../scom/web-application-properties.md).
 
-### Updates and recommendations feature for Linux
+### Updates and Recommendations feature for Linux
 
-The updates and recommendations feature is now extended for Linux workloads. Previously, it was available only for Windows workloads. This feature helps you to proactively identify workloads deployed on your Linux computers that weren't monitored by Operations Manager. You can also identify workloads that aren't monitored by using the latest version of a management pack. For more information, see [Management pack assessment](../scom/manage-mp-mpassessment.md).
+The Updates and Recommendations feature is now extended for Linux workloads. Previously, it was available only for Windows workloads. This feature helps you to proactively identify workloads deployed on your Linux computers that weren't monitored by Operations Manager. You can also identify workloads that aren't monitored by using the latest version of a management pack. For more information, see [Management pack assessment](../scom/manage-mp-mpassessment.md).
 
 If there are management packs in the catalog that are designed to monitor those workloads, they appear on the **Updates and Recommendations** page. You'll also find updates that are available for the management packs installed in your management group.
 
-Administrators can now use the new Machine Details capability to view the agent computer's name and the operating system installed on it.
+A new capability, **Machine Details**, allows administrators to view the agent computer's name and the operating system installed on it.
 
 ### Support for the latest application servers
 
@@ -287,9 +287,9 @@ Operations Manager 2019 UR1 includes updates to the following management packs:
 - [Azure management pack](https://www.microsoft.com/download/details.aspx?id=58013)
 - [Storage spaces direct management pack](https://www.microsoft.com/download/details.aspx?id=100782)
 
-### Support for group managed service accounts
+### Support for group Managed Service Accounts
 
-Operations Manager 2019 UR1 supports group managed service accounts. For more information, see [Support for group managed service accounts](../scom/support-group-managed-service-accounts.md).
+Operations Manager 2019 UR1 supports group Managed Service Accounts. For more information, see [Support for group Managed Service Accounts](../scom/support-group-managed-service-accounts.md).
 
 ### Scalability improvement with UNIX or Linux agent monitoring
 
