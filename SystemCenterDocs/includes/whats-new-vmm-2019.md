@@ -30,7 +30,7 @@ VMM 2019 supports deduplication for ReFS volume on the Windows Server 2019 hyper
 
 ### Storage dynamic optimization
 
-This feature helps to prevent cluster shared storage (CSV and file shares) from becoming full due to expansion or new virtual hard discs (VHDs) being placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold. This situation might occur during a new disk placement or the automigration of VHDs to other shared storage in the cluster. For more information, see [Dynamic optimization](../vmm/vm-optimization.md#dynamic-optimization).
+This feature helps to prevent cluster shared storage (CSV and file shares) from becoming full due to expansion or new virtual hard discs (VHDs) being placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold. This situation might occur during a new disk placement. It also might occur when VHDs are automigrated to other shared storage in the cluster. For more information, see [Dynamic optimization](../vmm/vm-optimization.md#dynamic-optimization).
 
 ### Support for storage health monitoring
 
@@ -79,7 +79,7 @@ To address this issue, VMM 2019 supports a new role called Virtual Machine Admin
 
 ### Support for group Managed Service Account as a VMM service account
 
-Group Managed Service Account (gMSA) helps improve the security posture and provides convenience through automatic password management, simplified service principle name (SPN) management, and the ability to delegate the management to other administrators.
+The group Managed Service Account (gMSA) helps improve the security posture. It provides convenience through automatic password management, simplified service principle name management, and the ability to delegate the management to other administrators.
 
 VMM 2019 supports the use of gMSA for Management server service account. For more information, see [Install VMM](../vmm/install.md).
 
@@ -92,7 +92,7 @@ VMM 2019 supports the use of gMSA for Management server service account. For mor
 
 With VMM, you can select cluster shared volumes (CSVs) for placing a new VHD.
 
-In earlier versions of VMM, a new VHD on a VM, by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any problems related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after deploying the VHD.
+In earlier versions of VMM, by default a new VHD on a VM is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any problems related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after they deployed the VHD.
 
 With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](https://technet.microsoft.com/library/cc956004.aspx).
 
@@ -110,7 +110,7 @@ With VMM 1807, you can now choose any location to place the new disc. You can ma
 
 ### VMware host management
 
-VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information, see [System requirements for System Center Virtual Machine Manager](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported VMware server versions.
+VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements for System Center Virtual Machine Manager](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
 
 ### Support for S2D cluster update
 
@@ -142,7 +142,7 @@ The current VMM migration for VMware VMs to Hyper-V only supports migration of B
 
 VMM enables migration of EFI-based VMware VMs to Hyper-V generation 2 VMs. VMware VMs that you migrate to Microsoft Hyper-V platform can take advantage of the Hyper-V generation 2 features.
 
-As part of this release, the **Convert Virtual Machine** wizard enables the VM migration based on the firmware type (BIOS or EFI) and selects and defaults the Hyper-V VM generation appropriately. For more information, see [Convert a VMware VM to Hyper-V in the VMM fabric](../vmm/vm-convert-vmware.md). For example:
+As part of this release, the **Convert Virtual Machine** wizard enables the VM migration based on the firmware type (BIOS or EFI). It selects and defaults the Hyper-V VM generation appropriately. For more information, see [Convert a VMware VM to Hyper-V in the VMM fabric](../vmm/vm-convert-vmware.md). For example:
 
 * BIOS-based VMs are migrated to Hyper-V VM generation 1.
 * EFI-based VMs are migrated to Hyper-V VM generation 2.
@@ -153,7 +153,7 @@ We've also made improvements in the VMWare VM conversion process that makes the 
 
  VMM host refresher has undergone certain updates for performance improvement.
 
-With these updates, in scenarios where an organization manages a large number of hosts and VMs with checkpoints, you would be able to observe significant and noticeable improvements in the performance of the job.
+With these updates, in scenarios where an organization manages a large number of hosts and VMs with checkpoints, you can observe significant and noticeable improvements in the performance of the job.
 
 In our lab with VMM instances managing 20 hosts, and each host managing 45 to 100 VMs, we've measured up to 10 times performance improvement.
 
@@ -184,13 +184,13 @@ With the advent of the software-defined network in Windows Server 2016 and Syste
 
 With the introduction of the SDN, VMs that are connected to the virtual network by using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design and supports the floating IP functionality through the software load balancer (SLB) like Azure networking.
 
-VMM also supports the floating IP functionality through the SLB in the SDN scenarios. VMM 1801 supports guest clustering through an internal load balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB, and all the traffic directed to the VIP is routed to the active node. For more information, see [Configure guest clusters in SDN through VMM](../vmm/sdn-guest-clusters.md).
+VMM also supports the floating IP functionality through the SLB in the SDN scenarios. VMM 1801 supports guest clustering through an internal load balancer (ILB) VIP. The ILB uses probe ports, which are created on the guest cluster VMs to identify the active node. At any given time, the probe port of only the active node responds to the ILB. Then all the traffic directed to the VIP is routed to the active node. For more information, see [Configure guest clusters in SDN through VMM](../vmm/sdn-guest-clusters.md).
 
 ### Configuration of SLB VIPs through VMM service templates
 
 SDN in Windows 2016 can use SLB to evenly distribute network traffic among workloads managed by service provider and tenants. VMM 2016 currently supports deployment of SLB VIPs by using PowerShell.
 
- VMM supports configuration of SLB VIPs while deploying multitier applications by using the service templates. For more information, see [Configure SLB VIPs through VMM service templates](../vmm/sdn-configure-slb-vip.md).
+ VMM supports configuration of SLB VIPs when you deploy multitier applications by using the service templates. For more information, see [Configure SLB VIPs through VMM service templates](../vmm/sdn-configure-slb-vip.md).
 
 ### Configuration of encrypted VM networks through VMM
 
@@ -202,13 +202,13 @@ The control of encryption is at the subnet level. Encryption can be enabled or d
 
 ### Support to Linux shielded VMs
 
-Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based VMs. Shielded VMs provide protection against malicious administrator actions both when the VM's data is at rest or when untrusted software runs on Hyper-V hosts.
+Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based VMs. Shielded VMs protect against malicious administrator actions. They provide protection when the VM's data is at rest or when untrusted software runs on Hyper-V hosts.
 
 With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs. The same support is now extended to VMM. For more information, see [Create a Linux shielded VM template disk](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
 
 ### Configuration of fallback HGS
 
-Because the host guardian service (HGS) is at the heart of providing attestation and key protection services to run shielded VMs on Hyper-V hosts, it should operate even in situations of disaster. Windows Server 1709 added support for fallback HGS.
+The host guardian service (HGS) provides attestation and key protection services to run shielded VMs on Hyper-V hosts. It should operate even in situations of disaster. Windows Server 1709 added support for fallback HGS.
 
 Using VMM, a guarded host can be configured with a primary and a secondary pair of HGS URLS (an attestation and key protection URI). This capability enables scenarios such as guarded fabric deployments that span two datacenters for disaster recovery purposes and HGS running as shielded VMs.
 
@@ -247,7 +247,7 @@ VMM now supports the management of library servers, which are replicated. You ca
 
 ### Configuration of DCB settings on S2D clusters
 
-Remote Direct Memory Access (RDMA) in conjunction with data center bridging (DCB) helps to achieve a similar level of performance and losslessness in an Ethernet network as in fiber channel networks.
+Remote Direct Memory Access (RDMA) and data center bridging (DCB) help to achieve a similar level of performance and losslessness in an Ethernet network as in fiber channel networks.
 
 VMM 2019 UR1 supports configuration of DCB on S2D clusters.
 
