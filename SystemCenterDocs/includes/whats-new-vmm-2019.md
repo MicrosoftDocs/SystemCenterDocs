@@ -1,7 +1,7 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: This include file details the new features in Virtual Machine Manager 2019 and 2019 UR1.
+description: This include file describes the new features in Virtual Machine Manager 2019 and 2019 UR1.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
