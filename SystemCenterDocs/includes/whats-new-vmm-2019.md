@@ -30,7 +30,7 @@ VMM 2019 supports deduplication for ReFS volume on the Windows Server 2019 hyper
 
 ### Storage dynamic optimization
 
-This feature helps to prevent cluster shared storage (CSV and file shares) from becoming full due to expansion or new VHDs being placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold. This situation might occur during a new disk placement or the automigration of VHDs to other shared storage in the cluster. For more information, see [Dynamic optimization](../vmm/vm-optimization.md#dynamic-optimization).
+This feature helps to prevent cluster shared storage (CSV and file shares) from becoming full due to expansion or new virtual hard discs (VHDs) being placed on the cluster shared storage. You can now set a threshold value to trigger a warning when free storage space in the cluster shared storage falls below the threshold. This situation might occur during a new disk placement or the automigration of VHDs to other shared storage in the cluster. For more information, see [Dynamic optimization](../vmm/vm-optimization.md#dynamic-optimization).
 
 ### Support for storage health monitoring
 
@@ -43,7 +43,7 @@ You can monitor the storage health on the **Fabric** page of the VMM console. Fo
 
 ### Configuration of SLB VIPs through VMM service templates
 
-SDN in Windows 2016 can use software load balancing (SLB) to evenly distribute network traffic among workloads managed by service providers and tenants. VMM 2016 currently supports deployment of SLB virtual IPs (VIPs) by using PowerShell.
+Software-defined networks (SDNs) in Windows 2016 can use software load balancing (SLB) to evenly distribute network traffic among workloads managed by service providers and tenants. VMM 2016 currently supports deployment of SLB virtual IPs (VIPs) by using PowerShell.
 
 With VMM 2019, VMM supports configuration of SLB VIPs while deploying multitier applications by using the service templates. For more information, see [Configure SLB VIPs through VMM service templates](../vmm/sdn-configure-slb-vip.md).
 
@@ -71,7 +71,7 @@ VMM 2019 introduces the possibility of patching and updating on-premises VMs (ma
 
 ### New RBAC role: Virtual Machine Administrator
 
-In a scenario where enterprises want to create a user role for troubleshooting, it's necessary that the user has access to all the VMs. In this way, the user can make any required changes on the VMs to resolve an issue. There's also a need for the user to have access to the fabric to identify the root cause for an issue. For security reasons, this user shouldn't be given privileges to make any changes on the fabric like adding storage or hosts.
+In a scenario where enterprises want to create a user role for troubleshooting, the user needs access to all the VMs. In this way, the user can make any required changes on the VMs to resolve a problem. There's also a need for the user to have access to the fabric to identify the root cause for a problem. For security reasons, this user shouldn't be given privileges to make any changes on the fabric like adding storage or hosts.
 
 The current role-based access control (RBAC) in VMM doesn't have a role defined for this persona. The existing roles of Delegated admin and Fabric admin have too little or more than necessary permissions to perform troubleshooting.
 
@@ -90,9 +90,9 @@ VMM 2019 supports the use of gMSA for Management server service account. For mor
 
 ### Supports selection of CSV for placing a new VHD
 
-With VMM, you can select cluster shared volumes (CSVs) for placing a new virtual hard disc (VHD).
+With VMM, you can select cluster shared volumes (CSVs) for placing a new VHD.
 
-In earlier versions of VMM, a new VHD on a VM, by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any issues related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after deploying the VHD.
+In earlier versions of VMM, a new VHD on a VM, by default, is placed on the same CSV where the earlier VHDs associated with the VM are placed. There was no option to choose a different CSV/ folder. In case of any problems related to the CSV, such as storage that's full or over commitment, users had to migrate the VHD, but only after deploying the VHD.
 
 With VMM 1807, you can now choose any location to place the new disc. You can manage this disc easily, based on the storage availability of CSVs. For more information, see [Add a virtual hard disk to a virtual machine](https://technet.microsoft.com/library/cc956004.aspx).
 
@@ -106,11 +106,11 @@ With VMM 1807, you can now choose any location to place the new disc. You can ma
 
 ### Convert a SET switch to a logical switch
 
- With VMM, you can convert a switch embedded teaming (SET) switch to a logical switch by using the VMM console. In earlier versions, this feature was supported only through PowerShell script. For more information, see [Create logical switches](../vmm/network-switch.md).
+ You can convert a switch embedded teaming (SET) switch to a logical switch by using the VMM console. In earlier versions, this feature was supported only through PowerShell script. For more information, see [Create logical switches](../vmm/network-switch.md).
 
 ### VMware host management
 
-VMM supports VMware ESXi v6.5 servers in VMM fabric. This support facilitates the administrators with additional flexibility in managing multiple hypervisors in use. For more information, see [System requirements for System Center Virtual Machine Manager](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported VMware server versions.
+VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information, see [System requirements for System Center Virtual Machine Manager](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric) about the additional details of supported VMware server versions.
 
 ### Support for S2D cluster update
 
@@ -142,10 +142,10 @@ The current VMM migration for VMware VMs to Hyper-V only supports migration of B
 
 VMM enables migration of EFI-based VMware VMs to Hyper-V generation 2 VMs. VMware VMs that you migrate to Microsoft Hyper-V platform can take advantage of the Hyper-V generation 2 features.
 
-As part of this release, the **Convert Virtual machine** wizard enables the VM migration based on the firmware type (BIOS or EFI) and selects and defaults the Hyper-V VM generation appropriately. For more information, see [Convert a VMware VM to Hyper-V in the VMM fabric](../vmm/vm-convert-vmware.md).
+As part of this release, the **Convert Virtual Machine** wizard enables the VM migration based on the firmware type (BIOS or EFI) and selects and defaults the Hyper-V VM generation appropriately. For more information, see [Convert a VMware VM to Hyper-V in the VMM fabric](../vmm/vm-convert-vmware.md). For example:
 
-1.	BIOS-based VMs are migrated to Hyper-V VM generation 1.
-1.	EFI-based VMs are migrated to Hyper-V VM generation 2.
+* BIOS-based VMs are migrated to Hyper-V VM generation 1.
+* EFI-based VMs are migrated to Hyper-V VM generation 2.
 
 We've also made improvements in the VMWare VM conversion process that makes the conversion up to 50% faster.
 
@@ -159,7 +159,7 @@ In our lab with VMM instances managing 20 hosts, and each host managing 45 to 10
 
 ### Enhanced console session in VMM
 
-The console connect capability in VMM provides an alternative way to connect to the VM via remote desktop. This method is most useful when the VM doesn't have any network connectivity or when you want to change to a network configuration that could break the network connectivity. Currently, the console connect capability in VMM supports only a basic session where clipboard text can only be pasted through the **Type Clipboard Text** menu option.
+The console connect capability in VMM provides an alternative way to connect to the VM via remote desktop. This method is most useful when the VM doesn't have any network connectivity or when you want to change to a network configuration that could break the network connectivity. Currently, the console connect capability in VMM supports only a basic session where clipboard text can be pasted only by using the **Type Clipboard Text** menu option.
 
 VMM supports an enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard. As a result, **Copy** and **Paste** commands for text and files are possible from and to the VM. For more information, see [Enable enhanced console session in VMM](../vmm/enhanced-console-session.md).
 
@@ -180,7 +180,7 @@ VMM supports the following improvements in storage QoS:
 
 ### Configuration of guest clusters in SDN through VMM
 
-With the advent of the software-defined network (SDN) in Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
+With the advent of the software-defined network in Windows Server 2016 and System Center 2016, the configuration of guest clusters has undergone some change.
 
 With the introduction of the SDN, VMs that are connected to the virtual network by using SDN are only permitted to use the IP address that the network controller assigns for communication. The SDN design is inspired by Azure networking design and supports the floating IP functionality through the software load balancer (SLB) like Azure networking.
 
@@ -204,7 +204,7 @@ The control of encryption is at the subnet level. Encryption can be enabled or d
 
 Windows Server 2016 introduced the concept of a shielded VM for Windows OS-based VMs. Shielded VMs provide protection against malicious administrator actions both when the VM's data is at rest or when untrusted software runs on Hyper-V hosts.
 
-With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs, and the same support has been extended to VMM. For more information, see [Create a Linux shielded VM template disk](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
+With Windows Server 1709, Hyper-V introduces support for provisioning Linux shielded VMs. The same support is now extended to VMM. For more information, see [Create a Linux shielded VM template disk](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-create-a-linux-shielded-vm-template).
 
 ### Configuration of fallback HGS
 
@@ -239,7 +239,7 @@ For problems fixed in VMM 2019 UR1, see [Update Rollup 1 for System Center Virtu
 
 ### Support for management of replicated library shares
 
-Large enterprises usually have multisite datacenter deployments to cater to various offices across the globe. These enterprises typically have a locally available library server to access files for VM deployment rather than accessing the library shares from a remote location. This arrangement is to avoid any network-related issues users might experience. But library files must be consistent across all the datacenters to ensure uniform VM deployments. To maintain uniformity of library contents, organizations use replication technologies.
+Large enterprises usually have multisite datacenter deployments to cater to various offices across the globe. These enterprises typically have a locally available library server to access files for VM deployment rather than accessing the library shares from a remote location. This arrangement is to avoid any network-related problems users might experience. But library files must be consistent across all the datacenters to ensure uniform VM deployments. To maintain uniformity of library contents, organizations use replication technologies.
 
 VMM now supports the management of library servers, which are replicated. You can use any replication technologies, such as DFSR, and manage the replicated shares through VMM. For more information, see [Manage replicated library shares](../vmm/library-resources.md#manage-replicated-library-shares).
 
@@ -258,7 +258,7 @@ VMM 2019 UR1 supports configuration of DCB on S2D clusters.
 
 ### User experience improvements in logical networks
 
-In VMM 2019 UR1, the user experience while creating logical networks has been enhanced. Logical networks are now grouped by product description based on use cases. Also, an illustration for each logical network type and a dependency graph are provided. For more information, see [Set up logical networks in the VMM 2019 UR1 fabric](../vmm/network-logical-ur1.md).
+In VMM 2019 UR1, the user experience is enhanced for the process of creating logical networks. Logical networks are now grouped by product description based on use cases. Also, an illustration for each logical network type and a dependency graph are provided. For more information, see [Set up logical networks in the VMM 2019 UR1 fabric](../vmm/network-logical-ur1.md).
 
 ### Additional options to enable nested virtualization
 
