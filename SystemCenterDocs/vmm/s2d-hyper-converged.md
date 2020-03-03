@@ -19,7 +19,11 @@ Read this article to set up a hyper-converged cluster running Storage Spaces Dir
 
 You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts, or by provisioning from bare-metal servers.
 
+::: moniker range="sc-vmm-2016"
+
 You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
+
+::: moniker-end
 
 > [!NOTE]
 > You must enable S2D before adding the storage provider to VMM.
