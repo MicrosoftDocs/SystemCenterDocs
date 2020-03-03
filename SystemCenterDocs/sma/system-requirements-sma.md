@@ -23,7 +23,7 @@ This article details the system requirements for System Center 2019 - Service Ma
 
 ::: moniker range="sc-sma-1807"
 
-SMA 1801 system requirements are also applicable for SMA 1807, there are no changes. [Learn](https://review.docs.microsoft.com/system-center/sma/system-requirements-sma?view=sc-sma-1801&branch=master) about the system requirements.
+SMA 1801 system requirements are also applicable for SMA 1807, there are no changes. [Learn](/system-center/sma/system-requirements-sma?view=sc-sma-1801) about the system requirements.
 
 ::: moniker-end
 
