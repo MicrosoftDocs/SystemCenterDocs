@@ -40,7 +40,7 @@ Resource type | What can I add?
 **Manage replicated library shares** | You can manage library servers, which are replicated. You can use any replication technologies such as DFSR to manage the replicated shares through VMM.
 
 ::: moniker range="sc-vmm-2019"
-Learn more about (managing replicated library shares)[library-resources.md#manage-replicated-library-shares].
+Learn more about [managing replicated library shares](library-resources.md#manage-replicated-library-shares).
 ::: moniker-end
 
 ## Next steps
