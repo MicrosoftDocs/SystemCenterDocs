@@ -14,7 +14,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2019
 
-The following sections introduce new and updated features in Systems Center Operations Manager 2019.
+The following sections introduce new and updated features in System Center Operations Manager 2019.
 
 ### Service logon is enabled by default in Operations Manager 2019
 
