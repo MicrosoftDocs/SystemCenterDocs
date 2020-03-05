@@ -48,7 +48,7 @@ This behavior often led to closure of critical alerts without resolving the unde
 
 ### Notifications and subscriptions enhancement
 
-The existing alert notifications and subscription experience in Operations Manager now delivers more value to users. The enhancements can be broadly categorized into two areas:
+The existing alert notifications and subscription experience in Operations Manager now deliver more value to users. The enhancements can be broadly categorized into two areas:
 
 - **Intuitive Email notifications**: Operations Manager 2019 supports email notifications in HTML format. For more information, see [Create an email notification in HTML format](../scom/manage-notifications-create-email-channel.md#create-an-email-notification-in-html-format).
 - **Enhanced Criteria Builder**: You can now use the regular expressions to build a complex yet useful subscription criteria. For more information, see [Create notification subscriptions](../scom/manage-notifications-create-subscriptions.md).
