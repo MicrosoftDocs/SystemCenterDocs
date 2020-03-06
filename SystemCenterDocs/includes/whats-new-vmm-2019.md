@@ -18,7 +18,7 @@ The following sections introduce the new features in Virtual Machine Manager (VM
 
 ## Compute
 
-###	Cluster rolling upgrade for S2D clusters
+###    Cluster rolling upgrade for S2D clusters
 
 System Center 2019 Virtual Machine Manager supports a rolling upgrade of a Storage Spaces Direct (S2D) host cluster from Windows Server 2016 to Windows Server 2019. For more information, see [Perform a rolling upgrade](../vmm/hyper-v-rolling-upgrade.md).
 
@@ -73,9 +73,9 @@ VMM 2019 introduces the possibility of patching and updating on-premises VMs (ma
 
 In a scenario where enterprises want to create a user role for troubleshooting, the user needs access to all the VMs. In this way, the user can make any required changes on the VMs to resolve a problem. There's also a need for the user to have access to the fabric to identify the root cause for a problem. For security reasons, this user shouldn't be given privileges to make any changes on the fabric like adding storage or hosts.
 
-The current role-based access control (RBAC) in VMM doesn't have a role defined for this persona. The existing roles of Delegated admin and Fabric admin have too little or more than necessary permissions to perform troubleshooting.
+The current role-based access control (RBAC) in VMM doesn't have a role defined for this persona. The existing roles of Delegated Admin and Fabric Admin have too little or more than necessary permissions to perform troubleshooting.
 
-To address this issue, VMM 2019 supports a new role called Virtual Machine Administrator. The user of this role has read and write access to all VMs but read-only access to the fabric. For more information, see [Set up user roles in VMM](../vmm/account-user-role.md).
+To address this issue, VMM 2019 supports a new role called **Virtual Machine Administrator**. The user of this role has Read and Write access to all VMs but Read-only access to the fabric. For more information, see [Set up user roles in VMM](../vmm/account-user-role.md).
 
 ### Support for group Managed Service Account as a VMM service account
 
