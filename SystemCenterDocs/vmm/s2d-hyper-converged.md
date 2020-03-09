@@ -19,7 +19,11 @@ Read this article to set up a hyper-converged cluster running Storage Spaces Dir
 
 You can deploy a hyper-converged S2D cluster by provisioning a Hyper-V cluster and enable S2D from existing Hyper-V hosts, or by provisioning from bare-metal servers.
 
+::: moniker range="sc-vmm-2016"
+
 You can't currently enable S2D in a hyper-converged deployment on a Hyper-V cluster deployed from bare metal computers with the Nano operating system.
+
+::: moniker-end
 
 > [!NOTE]
 > You must enable S2D before adding the storage provider to VMM.
@@ -40,7 +44,7 @@ If you use PowerShell to create a hyper-converged cluster, the pool and the stor
 ## Before you start
 
 - Make sure you're running VMM 2016 or later.
-- Hyper-V hosts in a cluster should be running Windows Server 2016 with the Hyper-V Role installed, and be configured to host VMs.
+- Hyper-V hosts in a cluster should be running Windows Server 2016 or later with the Hyper-V Role installed, and be configured to host VMs.
 
 After these prerequisites are in place, you provision a cluster, and set up storage resources on it. You can then deploy VMs on the cluster, or export the storage to other resources using SOFS.
 
