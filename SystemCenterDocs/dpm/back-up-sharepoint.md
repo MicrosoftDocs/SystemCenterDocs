@@ -20,7 +20,7 @@ You can deploy System Center Data Protection Manager (DPM) to protect SharePoint
 
 -   [Restoring SharePoint with DPM](#restore-sharepoint-data)
 
-For information about troubleshooting, see [Backing up and troubleshooting SharePoint and DPM](https://techcommunity.microsoft.com/t5/system-center-blog/backing-up-sharepoint-with-data-protection-manager-and/ba-p/350563).
+For information about troubleshooting, see [Troubleshooting SharePoint and DPM](https://techcommunity.microsoft.com/t5/system-center-blog/backing-up-sharepoint-with-data-protection-manager-and/ba-p/350563).
 
 ## Prerequisites and limitations
 
