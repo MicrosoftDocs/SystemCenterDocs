@@ -86,7 +86,7 @@ Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Wa
 
 ## Update the Data Warehouse database
 
-1. Run the following SQL Query against your Data Warehouse database. Replace *DataWarehouseName* with the name of your Data Warehouse database.
+1. Run the following SQL query against your Data Warehouse database. Replace *DataWarehouseName* with the name of your Data Warehouse database.
 
     ```
     SELECT [ManagementGroupDefaultName],[WriterLoginName] FROM [DataWarehouseName].[dbo].[ManagementGroup]
