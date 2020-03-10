@@ -90,7 +90,7 @@ To configure Linux log file monitoring, do the following:
 
    - chown omsagent:omiusers /home/omsagent/fluent-logging
 
-    ![log file monitoring](./media/log-file-monitoring/log-file-monitoring.png)
+    ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
 
 ## Generate new client certificate for Fluentd
@@ -142,7 +142,7 @@ For more information on Fluentd configuration files, see [Fluentd Configuration 
 
 The following sections describe settings in different directives of the configuration file that are unique to log file monitoring. Each includes sample settings that you can paste into a configuration file and modify for your requirements.
 
-A complete [sample configuration file for log monitoring](manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.
+A complete [sample configuration file for log monitoring](../scom/manage-sample-configuration-file.md) is available for you to review and evaluate before creating your own.
 
 ### Source
 
