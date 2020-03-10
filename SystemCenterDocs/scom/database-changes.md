@@ -1,7 +1,7 @@
 ---
 ms.assetid: 9c962b3f-8695-4da7-ab16-e152eef1ab2d
 title: Change databases for gMSA in System Center Operations Manager
-description: This article provides information on how to create users, assign roles and membership to the group managed service accounts (gMSA), a new feature supported in Operations Manager 2019 UR1.
+description: This article provides information on how to create users, assign roles, and membership to the group Managed Service Accounts (gMSA), a new feature supported in Operations Manager 2019 UR1.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -14,42 +14,43 @@ ms.topic: article
 
 # Change databases
 
-This article provides information on how to create users, assign roles and membership to group Managed Service Accounts (gMSA).
+This article provides information on how to create users, assign roles, and membership to group Managed Service Accounts (gMSAs).
 
 >[!NOTE]
->This article is applicable for System Center 2019 UR1 - Operations Manager.
+>This article applies to System Center 2019 Update Rollup 1 (UR1) Operations Manager.
 
-These roles are similar to the roles created for non-gMSA accounts:
+These roles are similar to the roles created for non-gMSA accounts.
 
 ## Action account
 
-**System Databases: msdb**
+**System databases: msdb**
 
-1. In the SQL Server Management Studio, navigate to **Databases** \>**System Databases** \> **msb** \> **Security** \> **Users**.
+1. In the SQL Server Management Studio, go to **Databases** \>**System Databases** \> **msb** \> **Security** \> **Users**.
 
-2. Create a new user.
+1. Create a new user.
 
-3. Select the user type as **Windows User**.
+1. Select **Windows user** in the **User type** box.
 
-4. Select **Entire Directory** in the locations and **Service Accounts** in **Object Type**.
+1. Select **Entire Directory** in the **From the location** box. Select **Service Accounts** in the **Object types** box.
 
     ![Server management object types](media/gmsa/server-management-object-types.png)
 
-5. **Check Names** for *momActGMSA*, which is an example gMSA for the Action account, in the directory.
-*momActGMSA* is an example, use the name of the gMSA that you intend to use as the action account.      
+1. Check names for *momActGMSA*, which is an example gMSA for the Action account, in the directory.
+Because *momActGMSA* is an example, use the name of the gMSA that you intend to use as the Action account.
 
    ![Server management select user](media/gmsa/server-management-select-users.png)
 
 
-6. Assign the following roles for the action account:
+1. Assign the following roles for the Action account:
 
    - SQLAgentOperatorRole
    - SQLAgentReaderRole
    - SQLAgentUserRole
+   
    ![Database user membership](media/gmsa/database-user-membership.png)
 
 
-**Follow step 1 to 5 from the above procedure and assign the roles as per the details mentioned in the below table**:
+Follow steps 1 to 5 from the previous procedure. Assign the roles by using the information in this table.
 
 | Database|Roles|
 |---------|---------|
@@ -70,4 +71,4 @@ These roles are similar to the roles created for non-gMSA accounts:
 |  Report Server Temp Database       | db\_owner, RSExecRole      |
 
 ## Next steps
-  [Service level changes](service-level-changes.md)
+  [Service-level changes](service-level-changes.md)
