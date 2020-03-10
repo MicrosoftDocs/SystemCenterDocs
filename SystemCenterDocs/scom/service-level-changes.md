@@ -76,7 +76,7 @@ Select **Service Credentials** as **Authentication Type**, which is already spec
 
 ## Change the Data Warehouse Write account to use gMSA
 
-Operations Manager stores the credentials for the Data Warehouse Write account within a Run As account, called the Data Warehouse Action account.
+Operations Manager stores the credentials for the Azure SQL Data Warehouse Write account within a Run As account, called the Data Warehouse Action account.
 
 Change the credentials of this Action account to gMSA that you intend to use as a Data Warehouse Write account.
 
@@ -84,9 +84,9 @@ Change the credentials of this Action account to gMSA that you intend to use as 
 
 Validate that the *MonitoringHost.exe* uses the gMSA credentials for the Data Warehouse Write account.
 
-## Update the Data Warehouse database
+## Update your data warehouse database
 
-1. Run the following SQL Query against your Data Warehouse database. Replace *DataWarehouseName* with the name of your Data Warehouse database.
+1. Run the following SQL Query against your data warehouse database. Replace *DataWarehouseName* with the name of your data warehouse database.
 
     ```
     SELECT [ManagementGroupDefaultName],[WriterLoginName] FROM [DataWarehouseName].[dbo].[ManagementGroup]
