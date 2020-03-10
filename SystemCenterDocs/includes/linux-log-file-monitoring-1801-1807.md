@@ -20,6 +20,10 @@ The following steps are required to enable log file monitoring on Linux agents. 
 3. Copy configuration file to Linux agents.
 3. Create rules and monitors using the sample management pack to collect events from the log and create alerts.
 
+
+## Install the latest version of the Linux agent
+The latest version of the Linux agent supports Fluentd, which is required for enhanced log file monitoring.  You can get details and the installation process for the new agent at [Install agent on UNIX and Linux from command line](deploy-linux-agent-install.md).
+
 ## Configure Linux Log File monitoring
 The Linux Management pack bundle has the latest Operations Manager agent (with Fluentd). To configure Linux log file monitoring, users should perform the following:
 
