@@ -97,8 +97,8 @@ To configure Linux log file monitoring, do the following:
 
 1. /opt/microsoft/scx/bin/tools/scxsslconfig -c -g /etc/opt/microsoft/omsagent/scom/certs/
 
- > [!NOTE]
- > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using **scxcertconfig -sign**, and copy it back to the linux agent
+   > [!NOTE]
+   > New certificate must be signed by the Management Server. To do this, copy to management server, sign the certificate using **scxcertconfig -sign**, and copy it back to the linux agent
 
 2. Rename the certificates on the Linux side:
 
