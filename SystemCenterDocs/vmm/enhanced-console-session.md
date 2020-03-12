@@ -76,10 +76,11 @@ Ensure the following prerequisites:
 6. To switch back to basic session, click **Basic Session** at the top right.
 
 ::: moniker-end
-> [!NOTE]
->  Once Enhanced Session Mode policy is enabled on the host:
-> - Close any open console sessions to view the **Enhanced Session** option.
-> - For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
+
+Once Enhanced Session Mode policy is enabled on the host:
+
+- Close any open console sessions to view the **Enhanced Session** option.
+- For a VM that is booting for the first-time from a VHD/VHDX, the enhanced session option doesn’t show up when you attempt to connect through console. Restart the VM and refresh the VM properties in VMM for the Enhanced Session option to appear in console connect window.
 
 
 ## Next steps
