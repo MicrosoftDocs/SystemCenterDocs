@@ -86,6 +86,8 @@ VMM 2019 supports the use of gMSA for Management server service account. For mor
 > [!NOTE]
 > The following features or feature updates were introduced in VMM 1807 and are included in VMM 2019.
 
+## Features included in VMM 2019 - introduced in VMM 1807
+
 ## Storage
 
 ### Supports selection of CSV for placing a new VHD
@@ -124,6 +126,8 @@ VMM supports SQL Server 2017. You can upgrade SQL Server 2016 to SQL Server 2017
 
 > [!NOTE]
 > The following features or feature updates were introduced in VMM 1801 and are included in VMM 2019.
+
+## Features included in VMM 2019 - introduced in VMM 1801
 
 ## Compute
 
@@ -225,7 +229,7 @@ VMM 1801 supports management of:
 
 * Azure Resource Manager-based VMs.
 * Azure Active Directory-based authentication that's created by using the new Azure portal.
-* Region-specific Azure subscriptions, namely, Germany, China, and US Government Azure regions. 
+* Region-specific Azure subscriptions, namely, Germany, China, and US Government Azure regions.
 
 For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-specific.md).
 

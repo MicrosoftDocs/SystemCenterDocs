@@ -45,7 +45,7 @@ You must ensure that your server meets the minimum supported configurations for 
 4. On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
    > [!NOTE]
-   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+   > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807 and 2019), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
    >
 
 5. On the **Prerequisites** page, review and resolve any warnings or errors, and then click **Verify Prerequisites Again** to recheck the system.

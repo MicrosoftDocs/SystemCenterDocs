@@ -324,7 +324,7 @@ Note In this configuration, N represents the number of processors.
 -  For servers that have NUMA configured and hyperthreading enabled, the MAXDOP value should not exceed number of physical processors per NUMA node.
 
 You can monitor the number of parallel workers by querying sys.dm_os_tasks.  
-In one customer deployment of Operations Manager 2012, which was monitoring multiple datacenter infrastructure workloads across 5,000 Windows agent-managed systems, the SQL Server instance hosting the operational database exhibited significant performance degradation.  The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
+The hardware configuration of this server was an HP Blade G6 with 24 core processors and 196 GB of RAM.  The instance hosting the Operations Manager database had a MAXMEM setting of 64 GB.  After performing the suggested optimizations in this section, performance improved.  However, a query parallelism bottleneck still persisted.  After testing different values, the most optimal performance was found by setting MAXDOP=4.  
 
 ### Initial database sizing
 

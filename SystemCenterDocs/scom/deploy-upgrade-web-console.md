@@ -59,8 +59,8 @@ If you made changes after you set up your web console to either enable or disabl
 4.  On the **Select installation location** page, accept the default value, type in a new location, or browse to one. Then click **Next**.
 
     > [!NOTE]
-    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For current branch, the default path is C:\Program Files\Microsoft System Center\Operations Manager.
-    > 
+    > For System Center 2016 - Operations Manager, the default path is C:\Program Files\Microsoft System Center 2016\Operations Manager.  For all later releases (1801, 1807 and 2019), the default path is C:\Program Files\Microsoft System Center\Operations Manager.
+    >
 
 5.  On the **Prerequisites** page, review and address any warnings or errors that the Prerequisites checker returns, and then click **Verify Prerequisites Again** to recheck the system.
 
@@ -68,7 +68,7 @@ If you made changes after you set up your web console to either enable or disabl
 
 7.  When the **Ready to Upgrade** page appears, review the upgrade summary, and then click **Upgrade**.
 
-### To upgrade the Web console server from the Command Prompt 
+### To upgrade the Web console server from the Command Prompt
 
 1.  Log on to the computer that hosts the web console server with an Operations Manager Administrators role account for your Operations Manager management group.
 
@@ -80,7 +80,7 @@ If you made changes after you set up your web console to either enable or disabl
     > Use the `/WebConsoleUseSSL` parameter only if your website has Secure Sockets Layer (SSL) activated. For a default web installation, specify **Default Web Site** for the `/WebSiteName` parameter.
 
     ```
-    setup.exe /silent /AcceptEndUserLicenseAgreement:1 /upgrade 
+    setup.exe /silent /AcceptEndUserLicenseAgreement:1 /upgrade
     /WebsiteName: "<WebSiteName>" [/WebConsoleUseSSL]
     /WebConsoleAuthorizationMode: [Mixed|Network]
     ```
@@ -90,4 +90,3 @@ If you made changes after you set up your web console to either enable or disabl
 - To understand the post-upgrade tasks you should perform to complete the upgrade to your management group, see [Post-Upgrade Tasks When Upgrading to System Center Operations Manager](deploy-upgrade-post-tasks.md).
 
 - See [Distributed Deployment of Operations Manager](deploy-distributed-deployment.md) to understand the sequence and steps for installing the Operations Manager server roles across multiple servers in your management group.  
-
