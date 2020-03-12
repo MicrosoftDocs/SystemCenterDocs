@@ -14,7 +14,7 @@ ms.topic: article
 
 # High Availability and Disaster Recovery
 
-Various System Center – Operations Manager servers and features can potentially fail, impacting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to recover the failing feature.
+System Center – Operations Manager servers and features can potentially fail, impacting Operations Manager functionality.  The amount of data and functionality lost during a failure is different in each failure scenario. It depends on the role of the failing feature, the length of time it takes to recover the failing feature.
 
 ## High availability
 
@@ -25,7 +25,7 @@ The multiple servers, single management group configuration can make use of SQL 
 The RMS Emulator can be moved to another management server as well should the management server hosting the RMS Emulator become unavailable.
 
 Operations console connections can be made highly available by configuring high availability for the Data Access Services.  This can be done by installing Microsoft Network Load Balancing (NLB) or using a hardware-based load balancers, or DNS alias.  One or more management servers are added as members of the NLB pool and when opening either the console, you reference the virtual name registered in DNS, of the load-balanced management servers.  
- 
+
 > [!NOTE]  
 > A Network Load Balancer is not supported for the Operations Manager web console server.
 
