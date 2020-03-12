@@ -23,10 +23,10 @@ VMM 1801 and later supports enhanced console session. With console connected thr
 ## Before you start
 Ensure the following prerequisites:
 
-1.  The operating system of the host, on which the VM is running, should be Windows Server 2016 and above.
+1.  The operating system of the host, on which the VM is running, should be Windows Server 2012 R2 later.
 2.	The Hyper-V host must have Enhanced session mode policy setting turned ON.
 3.	The computer from which you connect to the VM must run on Windows 10, Windows 8.1, Windows Server, Windows Server 2016 or above.
-4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016 or Windows Server 2012 R2 as the guest operating system.
+4.	The virtual machine must have remote desktop services enabled and run Windows 10, Windows 8.1, Windows Server 2016 or Windows Server 2012 R2 or later as the guest operating system.
 
 ## Procedure - enable the enhanced console session
 
@@ -39,6 +39,10 @@ Ensure the following prerequisites:
 
 3. In VMM console, navigate to the VM on this host.
 4. Right-click the VM and click **Connect via Console**.
+
+
+::: moniker range="<sc-vmm-2019"
+
 5. Once you see the VM console, look for **Open Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
 
    ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status.png)
@@ -46,7 +50,32 @@ Ensure the following prerequisites:
    > [!NOTE]
    > This action will close the current session and opens a new session. You will be redirected to the login screen in the new session.
 
+ ::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+  5. Once you see the VM console, look for **Enhanced Session** option at the top right of the page. Click it to launch the enhanced Session window.
+
+      ![enhanced console session](media/enhanced-console/enhanced-console-enabled-status-2019.png)
+
+      > [!NOTE]
+      > This action will close the current session and opens a new session. You will be redirected to the login screen in the new session.
+
+
+::: moniker-end
+
+::: moniker range="<sc-vmm-2019"
+
 6. To switch back to basic session, click **Open Basic Session** at the top right.
+
+
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+
+6. To switch back to basic session, click **Basic Session** at the top right.
+
+::: moniker-end
 
    > [!NOTE]
    >  Once Enhanced Session Mode policy is enabled on the host:
