@@ -176,19 +176,6 @@ The following table captures the privileges that you need to assign to the user 
 | VirtualMachine.Provisioning.Allow Read-only Disk Access | Virtual machine.Snapshot management.Create snapshot |   |
 | VirtualMachine.Snapshot Management.Create Snapshot | Virtual machine.Snapshot management.Remove Snapshot |   |
 | VirtualMachine.Snapshot Management.Remove Snapshot |   |   |
-| Virtual machine .Interaction .Device connection |   |   |
-| Virtual machine .Interaction .Guest operating system management by VIX API |   |   |
-| Virtual machine .Inventory.Register |   |   |
-| Virtual machine .Inventory.Remove |   |   |
-| Virtual machine .Provisioning.Allow disk access |   |   |
-| Virtual machine .Provisioning.Allow read-only disk access |   |   |
-| Virtual machine .Provisioning.Allow virtual machine download          |   |   |
-| Virtual machine .Snapshot management. Create snapshot |   |   |
-| Virtual machine .Snapshot management.Remove Snapshot |   |   |
-| Virtual machine .Snapshot management.Revert to snapshot |   |   |
-| vApp.Add virtual machine |   |   |
-| vApp.Assign resource pool |   |   |
-| vApp.Unregister |   |   |
 
 The recommended steps for assigning these privileges:
 
