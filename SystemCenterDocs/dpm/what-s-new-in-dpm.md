@@ -117,7 +117,7 @@ With DPM 2019 UR1, an  additional a layer of authentication is added for  critic
 
 ### New cmdlet parameter
 
-DPM 2019 UR1 includes a new parameter **[-FragmentationPercentage]**. The new parameter, calculates the fragmentation percentage for a replica, and is included in the **Copy-DPMDatasourceReplica** cmdlet.
+DPM 2019 UR1 includes a new parameter **[-CheckReplicaFragmentation]**. The new parameter, calculates the fragmentation percentage for a replica, and is included in the **Copy-DPMDatasourceReplica** cmdlet.
 
 
 ::: moniker-end
