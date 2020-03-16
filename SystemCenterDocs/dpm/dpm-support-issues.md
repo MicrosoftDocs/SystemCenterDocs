@@ -155,6 +155,12 @@ Both of these scenarios are unsupported. You can only select one of the followin
 
 **Workaround**: None.
 
+### BitLocker
+**Issue**: Is enabling BitLocker on DPM Storage Pool supported?
+
+**Workaround**: Add the volume to DPM storage pool and then enable the BitLocker.
+
+
 ## <a name="BKMK_Dedup"></a>Deduplication issues
 
 ### Deduplicated volumes support
