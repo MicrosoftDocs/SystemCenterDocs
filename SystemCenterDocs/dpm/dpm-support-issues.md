@@ -158,7 +158,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### BitLocker
 **Issue**: Is enabling BitLocker on DPM Storage Pool supported?
 
-**Workaround**: Add the volume to DPM storage pool and then enable the BitLocker.
+**Workaround**: Do not enable the BitLocker before adding the disk to storage pool. You can enable the BitLocker once you add the disk to storage pool. 
 
 
 ## <a name="BKMK_Dedup"></a>Deduplication issues
