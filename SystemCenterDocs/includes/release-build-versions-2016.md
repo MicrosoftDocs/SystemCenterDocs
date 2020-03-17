@@ -1,6 +1,6 @@
 ---
 title: System Center 2016 - Operations Manager Release Build Versions
-description: This article shows the list of release builds for System Center 2016 - Operations Manager.
+description: Include file that shows the list of release builds for System Center 2016 - Operations Manager.
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
@@ -9,11 +9,11 @@ ms.custom: na
 ms.prod: system-center
 ms.assetid:
 ms.technology: operations-manager
-ms.topic: article
+ms.topic: include
 monikerRange: 'sc-om-2016'
 ---
 
-# System Center 2016 - Operations Manager build versions
+## System Center 2016 - Operations Manager build versions
 This article describes how to determine your current Microsoft System Center 2016 - Operations Manager version number and the corresponding update rollup.  Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 >[!NOTE]
@@ -33,7 +33,4 @@ The following table lists the release history for Operations Manager 2016.
 
 <sup>1</sup>
 All System Center Operations Manager update rollups are cumulative.  This means you do not need to apply them in order, you can always apply the latest update. However, there is one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.
-
-
-## Next steps
-See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.  
+  
