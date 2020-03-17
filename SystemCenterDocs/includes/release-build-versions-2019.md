@@ -9,7 +9,6 @@ ms.prod: system-center
 ms.assetid: de403c5d-a2c6-4a8f-ba90-c9cf2086fe26
 ms.technology: operations-manager
 ms.topic: include
-monikerRange: 'sc-om-2019'
 ---
 
 ## System Center 2019 - Operations Manager build versions

@@ -10,7 +10,6 @@ ms.prod: system-center
 ms.assetid:
 ms.technology: operations-manager
 ms.topic: include
-monikerRange: 'sc-om-2016'
 ---
 
 ## System Center 2016 - Operations Manager build versions
@@ -33,4 +32,3 @@ The following table lists the release history for Operations Manager 2016.
 
 <sup>1</sup>
 All System Center Operations Manager update rollups are cumulative.  This means you do not need to apply them in order, you can always apply the latest update. However, there is one exception to this upgrade behavior. If you want the ability to uninstall UR4, you should make sure you have previously applied UR2 or UR3, which fixed an uninstall issue. Update rollups subsequent to UR4 can be uninstalled without previous rollups being applied.
-  
