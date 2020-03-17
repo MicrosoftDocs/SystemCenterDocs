@@ -19,6 +19,9 @@ This article lists the build versions for System Center 2019 - Operations Manage
 
 [!INCLUDE [release-build-versions-2019.md](../includes/release-build-versions-2019.md)]
 
+## Next steps
+See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
+
 ::: moniker-end
 
 ::: moniker range="sc-om-2016"
@@ -27,8 +30,7 @@ This article lists the build versions for System Center 2016 - Operations Manage
 
 [!INCLUDE [release-build-versions-2016.md](../includes/release-build-versions-2016.md)]
 
-::: moniker-end
-
-
 ## Next steps
 See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
+
+::: moniker-end
