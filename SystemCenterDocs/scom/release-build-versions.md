@@ -8,6 +8,7 @@ manager: vvithal
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: system-center
+monikerRange: '< sc-om-1801 > sc-om-1807'
 ms.technology: operations-manager
 ---
 
