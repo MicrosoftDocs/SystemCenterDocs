@@ -8,8 +8,6 @@ manager: vvithal
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: system-center
-monikerRange: 'sc-om-2016'
-monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
 ---
 
@@ -30,8 +28,6 @@ This article lists the build versions for System Center 2016 - Operations Manage
 [!INCLUDE [release-build-versions-2016.md](../includes/release-build-versions-2016.md)]
 
 ::: moniker-end
-
-
 
 
 ## Next steps
