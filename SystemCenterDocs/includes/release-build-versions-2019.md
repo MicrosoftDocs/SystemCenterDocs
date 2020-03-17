@@ -11,14 +11,12 @@ ms.technology: operations-manager
 ms.topic: include
 ---
 
-## System Center 2019 - Operations Manager build versions
-This article describes how to determine your current Microsoft System Center 2019 - Operations Manager version number and the corresponding update rollup.  Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+## Operations Manager 2019 build versions
 
 >[!NOTE]
 >All System Center Operations Manager update rollups are cumulative. This means you do not need to apply them in order, you can always apply the latest update. If you have deployed System Center 2019 - Operations Manager and never applied an update rollup, you can go proceed to install the latest one available.
 >
 
-## Build versions
 The following table lists the release history for Operations Manager 2019.
 
 |Build Number |KB |Release Date |Description |
