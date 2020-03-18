@@ -80,6 +80,38 @@ This command will add the service user to the list of allowed users, who can acc
 **Workaround**: Ignore this. HPUX is removed from the latest pack on the DLC, [here]( https://www.microsoft.com/download/details.aspx?id=58208&WT.mc_id=rss_windows_allproducts).
 
 
+### Previous AD rules do not work after upgrading to Operations Manager 2019
+**Description:**  After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules do not work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 does not have this issue.
+
+**Workaround**: To resolve this, use the following steps:
+
+1.	After you upgrade to 2019, export the default management pack to a folder.
+2.	Open **Microsoft.SystemCenter.OperationsManager.DefaultUser.xml** from the exported folder.
+3.	Rename all the AD rules to use *<NetBIOS Domain Name of Management Server>* instead of *<FQDN of Management Server>*, example below.
+
+    >[!NOTE]
+    > Domain name is case-sensitive.
+
+    **Example:**
+
+    Before: Rule ID="_smx.net_MS1_contoso.com" Enabled="true"
+
+    After: Rule ID="_SMX_MS1_contoso.com" Enabled="true"
+
+4.	Import the updated management pack.
+
+    The rules are now visible on the console.
+
+    For detailed information about this issue, see [update an active directory integration with Operations Manager](https://techcommunity.microsoft.com/t5/system-center-blog/update-on-active-directory-integration-with-scom/ba-p/1226768).
+
+
+### REST API in Operations Manager does not return required values for classes
+
+**Description:** When called from Operations Manager 2019, REST API does not return className, path and fullname, information returned is empty.
+Also, ID is returned as className.
+
+**Workaround**: None
+
 ## Operations Manager 2019 UR1 release notes
 The following sections summarize the release notes for Operations Manager 2019 UR1, and include the known issues and workarounds.
 

@@ -318,6 +318,10 @@
      "redirect_url" : "/system-center/scom/release-notes-om"
 },
 {
+     "source_path" : "SystemCenterDocs/scom/release-build-versions-2016.md",
+     "redirect_url" : "/system-center/scom/release-build-versions"
+},
+{
      "source_path" : "SystemCenterDocs/om/manage/accessing-unix-and-linux-computers-in-operations-manager.md",
      "redirect_url" : "/system-center/scom/manage-security-authenticate-crossplat"
 },
