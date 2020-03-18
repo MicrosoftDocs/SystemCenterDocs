@@ -15,7 +15,7 @@ ms.technology: operations-manager
 
 ::: moniker range="sc-om-2019"
 
-This article describes how to determine your current Microsoft System Center 2019 - Operations Manager version number and the corresponding update rollup.  Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article lists Microsoft System Center 2019 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 [!INCLUDE [release-build-versions-2019.md](../includes/release-build-versions-2019.md)]
 
@@ -47,11 +47,13 @@ The following table lists the build version for Operation Manager 1801.
 
 ::: moniker range="sc-om-2016"
 
-This article describes how to determine your current Microsoft System Center 2016 - Operations Manager version number and the corresponding update rollup.  Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article lists Microsoft System Center 2016 - Operations Manager build versions. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 [!INCLUDE [release-build-versions-2016.md](../includes/release-build-versions-2016.md)]
 
 ::: moniker-end
 
 ## Next steps
-See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
+- See [How to monitor the health of the management group](manage-monitor-health-mg.md) to verify all components are operating normally after performing an update.
+
+- [What's New in Operations Manager](what-is-new.md)
