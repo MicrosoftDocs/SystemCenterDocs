@@ -81,7 +81,7 @@ This command will add the service user to the list of allowed users, who can acc
 
 
 ### Previous AD rules do not work after upgrading to Operations Manager 2019
-**Description:**  After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules do not work due to the change in format of Active Directory rules. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 does not have this issue.
+**Description:**  After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules do not work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 does not have this issue.
 
 **Workaround**: To resolve this, use the following steps:
 
