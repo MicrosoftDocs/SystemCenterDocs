@@ -14,7 +14,7 @@ ms.topic: article
 
 # Pre-Upgrade tasks when upgrading to System Center Operations Manager
 
-Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process to System Center 2016 - Operations Manager or version 1801.
+Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
 
 1. Review the Operations Manager Event Logs
 
