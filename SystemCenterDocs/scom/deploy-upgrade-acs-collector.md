@@ -14,7 +14,7 @@ ms.topic: article
 
 # How to upgrade an ACS Collector
 
-Perform this procedure to upgrade the Audit Collection Services (ACS) Collector locally. During this procedure, the ACS database is also upgraded without any additional steps.
+Perform this procedure to upgrade the Audit Collection Services (ACS) Collector locally, on the ACS collector. During this procedure, the ACS database is also upgraded without any additional steps.
 
 > [!WARNING]
 > A computer that hosts an ACS Collector must also be an Operations Manager management server or gateway server.
