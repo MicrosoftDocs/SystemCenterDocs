@@ -34,7 +34,7 @@ Use the following matrix for DPM 2019:
 
 - Workloads – The workload type of technology.
 
-- Version – Supported VMM version for the workloads.
+- Version – Supported DPM version for the workloads.
 
 - DPM installation – The computer/location where you wish to install DPM.
 
@@ -69,7 +69,7 @@ The following sections details the protection support matrix for DPM:
 |Workload|Version|DPM installation|Protection and recovery|
 |------------|-----------|--------------------|--------------------------------------------|--------------------------------|---------------------------|
 |Hyper-V host - DPM protection agent on Hyper-V host server, cluster, or VM| Windows Server 2019, 2016, 2012 R2, 2012|Physical server<br /><br />On-premises Hyper-V virtual machine|Protect: Hyper-V computers, Hyper-V VMs hosted on (cluster shared volumes) CSVs<br /><br />Recover: Virtual machine, Item-level recovery of files and folder, volumes, virtual hard drives|
-|VMware VMs | VMware server 6.0, or 6.5, 6.7 |Physical server<br /><br />On-premises Hyper-V virtual machine | VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br/>Item-level recovery of files and folders available only for Windows. VMware vApps not supported. |
+|VMware VMs | VMware server 6.0, or 6.5, 6.7 |Physical server<br /><br />On-premises Hyper-V virtual machine | Protect: VMware VMs on cluster-shared volumes (CSVs), NFS, and SAN storage. <br /><br />Recover: Virtual machine, Item-level recovery of files and folder available only for Windows, volumes, virtual hard drives.<br /><br />VMware vApps are not supported.|
 
 ### Linux
 
