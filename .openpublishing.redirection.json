@@ -613,6 +613,14 @@
      "source_path" : "SystemCenterDocs/OM/Manage/Management-Pack-Lifecycle.md",
      "redirect_url" : "/system-center/scom/manage-mp-lifecycle"
 },
+
+{
+     "source_path" : "SystemCenterDocs/scom/monitor-operations-manager-second-management-group.md",
+     "redirect_url" : "/system-center/scom/manage-monitoring-scenarios"
+},
+
+
+
 {
      "source_path" : "SystemCenterDocs/om/manage/management-packs-installed-with-operations-manager.md",
      "redirect_url" : "/system-center/scom/manage-mp-installed-during-seutp"
