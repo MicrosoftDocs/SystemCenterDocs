@@ -79,6 +79,9 @@ Sort alerts by the last-modified column to review the new alerts.
 
 Previous AD rules do not work after upgrading to Operations Manager 2019. After you upgrade to Operations Manager 2019 from Operations Manager 2016 (or 2016 URs earlier to UR7), 1801 or 1807, previous AD rules do not work due to the change in Active Directory rules' format. Upgrade to Operations Manager 2019 from Operations Manager 2016 UR7 and UR8 does not have this issue.
 
+>[!NOTE]
+In case of upgradation from 2012 R2, use this procedure if you are upgrading from 2012 R2 to 2016, 1801 or 1807. Upgrade to Operations Manager 2019 is not supported for 2012. 
+
 Use the following steps to fix this issue:
 
 1.	After you upgrade to 2019, export the default management pack to a folder.
