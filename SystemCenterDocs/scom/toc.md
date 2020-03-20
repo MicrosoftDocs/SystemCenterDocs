@@ -223,7 +223,6 @@
 #### [Running a service level tracking report](manage-monitor-sla-reports.md)
 ### [Connecting Operations Manager with other management systems](manage-integration-thirdparty-overview.md)
 #### [How to configure a product connector subscription](manage-integration-config-integration.md)
-### [Monitoring Operations Manager from a second management group](monitor-operations-manager-second-management-group.md)
 ### Manage Alerts
 #### [How heartbeats work](manage-agent-heartbeat-overview.md)
 #### [Resolving heartbeat alerts](manage-agent-resolve-heartbeat.md)
