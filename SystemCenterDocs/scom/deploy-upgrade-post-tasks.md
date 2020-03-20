@@ -14,7 +14,7 @@ ms.topic: article
 
 # Post-Upgrade tasks when upgrading to System Center Operations Manager
 
-After you have completed the upgrade process to System Center 2016 - Operations Manager or version 1801, you must perform a number of post-upgrade tasks.
+After you have completed the upgrade process, you must perform a number of post-upgrade tasks.
 
 ## Post-upgrade tasks
 
@@ -44,7 +44,7 @@ After the upgrade has finished, use the following procedure to re-enable subscri
 
 
 3. In the **Administration** pane, under **Notifications**, click **Subscriptions**.
-4. n the **Actions** pane, click **Enable** for each subscription listed that was enabled prior to performing the upgrade.
+4. In the **Actions** pane, click **Enable** for each subscription listed that was enabled prior to performing the upgrade.
 
 ### Restart or re-enable the connector services
 
