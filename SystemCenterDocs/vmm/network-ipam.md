@@ -26,7 +26,7 @@ An IPAM server helps you to plan, track, and manage the IP address space used in
 
 ## Before you start
 
-- Make sure you have an IPAM server. [Learn more](https://technet.microsoft.com/library/hh831353.aspx?f=255&MSPPError=-2147217396). The IPAM server can be running these versions of [Windows Servers](system-requirements.md). 
+- Make sure you have an IPAM server. [Learn more](https://technet.microsoft.com/library/hh831353.aspx?f=255&MSPPError=-2147217396). The IPAM server can be running these versions of [Windows Servers](system-requirements.md).
 - Create or identify a domain account and set it to never expire. On the IPAM server add the account to these groups:
 	- **IPAM ASM Administrators**: A local group that exists on all IPAM servers, and provides permissions for IP address space management (ASM). For more information, see [Assign Administrator Roles](https://technet.microsoft.com/library/jj878348.aspx).
 	- **Remote Management Users**: A built-in group that provides access to WMI resources through management protocols, such as WS-Management through the Windows Remote Management service.
@@ -59,6 +59,17 @@ Network site | VIRTUALIZED IP ADDRESS SPACE<br /> Provider IP Address Space: **N
 IP address subnet |IP Address Subnet (same name in IPAM as in VMM)
 IP address pool |IP Address Range
 VM network | VIRTUALIZED IP ADDRESS SPACE<br /> Customer IP Address Space: **VM Network** column
+
+## IP address reservation
+
+IP reservation in IPAM is honored by VMM. Please follow the steps below for reserving IP addresses.
+
+1. In IPAM, right-click **IP Address Range** for IP address reservation.
+2. Click **Edit IP Address Range** and a window opens.
+3. In the opened window, there is a **Reservations** tab on the left.
+3. In the **Reservations** tab you can reserve IP addresses for reservation or whether to use them as VIPs.
+4. Go to VMM console. Refresh the IPAM service in the network service section.
+5. Now, you can see the reserved IP addresses reflected in the pool section of the logical network.
 
 ## Next steps
 
