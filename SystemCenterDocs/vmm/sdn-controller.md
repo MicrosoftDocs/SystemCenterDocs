@@ -224,6 +224,13 @@ When you are done, refresh these folders and ensure that you have these certific
 > [!NOTE]
 > Ensure that the enterprise CA is configured for certificate auto enrollment.
 
+### Enhanced key usage
+
+1. If the Personal (My – cert:\localmachine\my) certificate store on the Hyper-V host has more than one X.509 certificate with Subject Name (CN) as the host Fully Qualified Domain Name (FQDN), ensure that the certificate that is used by SDN has an additional custom Enhanced Key Usage property with the OID 1.3.6.1.4.1.311.95.1.1.1. Otherwise, the communication between Network Controller and the host might not work.
+
+2. Ensure that certificate issued by CA for south bound communication has an additional custom Enhanced Key Usage property with the OID 1.3.6.1.4.1.311.95.1.1.1.
+
+
 ## Set up the service template
 
 Import the template, and update the parameters for your environment.
