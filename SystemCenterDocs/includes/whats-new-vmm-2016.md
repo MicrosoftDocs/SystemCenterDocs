@@ -46,6 +46,17 @@ You can now create production checkpoints for VMs. These checkpoints are based o
 
 The Server App-V application in service templates is no longer available in VMM 2016. You can't create new templates or deploy new services with the Server App-V app. If you upgrade from VMM 2012 R2 and have a service with the Server App-V application, the existing deployment will continue to work. However, after the upgrade you can't scale out the tier with Server App-V application. You can scale out other tiers.
 
+
+>[!NOTE]
+> The following feature is available from 2016 UR9.
+
+### Enhanced console session in VMM
+
+The console connect capability in VMM provides an alternative way to connect to the VM via remote desktop. This method is most useful when the VM doesn't have any network connectivity or when you want to change to a network configuration that could break the network connectivity. Currently, the console connect capability in VMM supports only a basic session where clipboard text can be pasted only by using the **Type Clipboard Text** menu option.
+
+VMM supports an enhanced console session that enables **Cut (Ctrl + X)**, **Copy (Ctrl + C)**, and **Paste (Ctrl + V)** operations on the ANSI text and files available on the clipboard. As a result, **Copy** and **Paste** commands for text and files are possible from and to the VM. For more information, see [Enable enhanced console session in VMM](../vmm/enhanced-console-session.md).
+
+
 ## Storage
 
 ### Deploy and manage storage clusters with Storage Spaces Direct (S2D)
