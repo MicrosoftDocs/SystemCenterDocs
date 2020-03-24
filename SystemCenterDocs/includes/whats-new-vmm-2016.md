@@ -47,7 +47,7 @@ You can now create production checkpoints for VMs. These checkpoints are based o
 The Server App-V application in service templates is no longer available in VMM 2016. You can't create new templates or deploy new services with the Server App-V app. If you upgrade from VMM 2012 R2 and have a service with the Server App-V application, the existing deployment will continue to work. However, after the upgrade you can't scale out the tier with Server App-V application. You can scale out other tiers.
 
 
->{!NOTE}
+>[!NOTE]
 > the following feature is available from 2016 UR9
 
 ### Enhanced console session in VMM
