@@ -48,7 +48,7 @@ The Server App-V application in service templates is no longer available in VMM 
 
 
 >[!NOTE]
-> the following feature is available from 2016 UR9
+> the following feature is available from 2016 UR9.
 
 ### Enhanced console session in VMM
 
