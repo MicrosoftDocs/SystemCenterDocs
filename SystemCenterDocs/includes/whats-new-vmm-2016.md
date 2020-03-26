@@ -5,7 +5,7 @@ description: include file to describe the new features in virtual machine manage
 author:  rayne-wiselman
 ms.author: raynew
 manager:  carmonm
-ms.date:  04/25/2018
+ms.date:  04/24/2020
 ms.topic:  include
 ms.prod:  system-center-2016
 ms.technology:  virtual-machine-manager
