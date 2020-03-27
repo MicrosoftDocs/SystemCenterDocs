@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 01/28/2020
+ms.date: 03/16/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -158,7 +158,7 @@ Both of these scenarios are unsupported. You can only select one of the followin
 ### BitLocker
 **Issue**: Is enabling BitLocker on DPM Storage Pool supported?
 
-**Workaround**: Do not enable the BitLocker before adding the disk to storage pool. You can enable the BitLocker once you add the disk to storage pool. 
+**Workaround**: Do not enable the BitLocker before adding the disk to storage pool. You can enable the BitLocker once you add the disk to storage pool.
 
 
 ## <a name="BKMK_Dedup"></a>Deduplication issues
