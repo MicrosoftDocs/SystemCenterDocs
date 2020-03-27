@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 01/28/2020
+ms.date: 03/19/2020
 title: What can System Center Data Protection Manager back up?
 ms.technology: data-protection-manager
 ms.assetid: 2ddbf72a-a82a-497e-afe1-672c8b253ed4
