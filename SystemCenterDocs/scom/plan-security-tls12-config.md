@@ -5,7 +5,7 @@ description: This article describes how to configure Transport Layer Security (T
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/28/2018
+ms.date: 03/30/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -18,6 +18,16 @@ This topic describes how to enable Transport Layer Security (TLS) protocol versi
 Perform the following steps to enable TLS protocol version 1.2:
 
 1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) on all management servers and the Web console server.  
+
+
+::: moniker range="sc-om-2016"
+
+>[!NOTE]
+> Operations Manager 2016 UR9 supports MSOLEDBSQL. We recommend you to [downlaod and install](https://www.microsoft.com/download/details.aspx?id=56730) MSOLEDBSQL. 
+
+::: moniker-end
+
+
 2. Install [.NET Framework 4.6](https://support.microsoft.com/help/3151800/the-net-framework-4-6-2-offline-installer-for-windows) on all management servers, gateway servers, Web console server, and SQL Server hosting the Operations Manager databases and Reporting server role.  
 3. Install the [Required SQL Server update](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) that supports TLS 1.2.  
 4. Install [ODBC 11.0](https://www.microsoft.com/download/details.aspx?id=36434) or [ODBC 13.0](https://www.microsoft.com/download/details.aspx?id=50420) on all management servers.  
