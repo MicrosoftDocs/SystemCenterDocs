@@ -20,7 +20,7 @@ Perform the following steps to enable TLS protocol version 1.2:
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
-> Operations Manager 2016 UR9 supports MSOLEDBSQL 18 (recommended). 
+> MSOLEDBSQL 18 (recommended) is supported with Operations Manager 2016 UR9 and later. 
 
 1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) or [MSOLEDBSQL 18](https://www.microsoft.com/download/details.aspx?id=56730) on all management servers and the Web console server.  
 ::: moniker-end
