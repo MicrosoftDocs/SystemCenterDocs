@@ -104,7 +104,6 @@ Repeat the preceding step on the following files:
 
 6. Save and close the file.
 
-::: moniker-end
 
 ### To edit the web.config file in MonitoringView folder
 
@@ -124,6 +123,8 @@ Repeat the preceding step on the following files:
      ```
 
 5. Save and close the file.
+
+::: moniker-end
 
 ::: moniker range="sc-om-2019"
 
