@@ -29,38 +29,6 @@ In Operations Manager 2019, install  **Microsoft.Linux.Log.Monitoring**  managem
 > [!NOTE]
 > If you have the OMS agent configured, and you try to uninstall UNIX and LINUX agent from the console, then OMS component will not be uninstalled from the agent.
 
-Do the following on the Linux agent:
-
-5. Create the folders in the following paths:
-
-      - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
-
-      - /etc/opt/microsoft/omsagent/scom/certs
-
-      - /var/opt/microsoft/omsagent/scom/log
-
-      - /var/opt/microsoft/omsagent/scom/run
-
-      - /var/opt/microsoft/omsagent/scom/state
-
-      - /var/opt/microsoft/omsagent/scom/tmp
-
-      - /home/omsagent/fluent-logging (used for log file position file)
-
-6. Set ownership of each of the above to omsagent:omiusers
-
-     - chown omsagent:omiusers state
-
-     - chown omsagent:omiusers run
-
-     - chown omsagent:omiusers log
-
-     - chown omsagent:omiusers tmp
-
-     - chown omsagent:omiusers /home/omsagent/fluent-logging
-
-      ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
-
 
 ## Configure Linux log file monitoring
 
@@ -78,11 +46,43 @@ To configure Linux log file monitoring, do the following:
 
    ```
 
-4. Enable the OMED service on each management server in the resource pool, managing the Linux agents.
+   Do the following on the Linux agent:
+
+ 4. Create the folders in the following paths:
+
+         - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
+
+         - /etc/opt/microsoft/omsagent/scom/certs
+
+         - /var/opt/microsoft/omsagent/scom/log
+
+         - /var/opt/microsoft/omsagent/scom/run
+
+         - /var/opt/microsoft/omsagent/scom/state
+
+         - /var/opt/microsoft/omsagent/scom/tmp
+
+         - /home/omsagent/fluent-logging (used for log file position file)
+
+ 5. Set ownership of each of the above to omsagent:omiusers
+
+        - chown omsagent:omiusers state
+
+        - chown omsagent:omiusers run
+
+        - chown omsagent:omiusers log
+
+        - chown omsagent:omiusers tmp
+
+        - chown omsagent:omiusers /home/omsagent/fluent-logging
+
+         ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
+
+ 6. Enable the OMED service on each management server in the resource pool, managing the Linux agents.
 
     The OMED service collects events from Fluentd and converts them to Operations Manager events. You import a custom management pack, which can generate alerts based on the events received from the Linux servers.
 
-    You enable the OMED service either from the Operations console or manually on the management server or gateway server.
+    You can enable the OMED service either from the Operations console or manually on the management server or gateway server.
 
 ### Enable the OMED service from Operations console
 
