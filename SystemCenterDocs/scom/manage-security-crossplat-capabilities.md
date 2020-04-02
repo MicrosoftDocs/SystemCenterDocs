@@ -14,13 +14,13 @@ ms.topic: article
 
 # Required capabilities for UNIX and Linux accounts
 
-Access to UNIX and Linux computers in System Center 2016 - Operations Manager uses three Run as profiles. One profile is associated with an unprivileged account while the other two accounts are associated with a privileged account or an unprivileged account that is elevated by using `sudo` or `su`.  
-  
+Access to UNIX and Linux computers in System Center - Operations Manager uses three Run as profiles. One profile is associated with an unprivileged account while the other two accounts are associated with a privileged account or an unprivileged account that is elevated by using `sudo` or `su`.  
+
 In the simplest case, a privileged account has capabilities equivalent to a UNIX and Linux root account, while an unprivileged account has capabilities equivalent to a normal user account. However, with some computer versions of UNIX and Linux, and when you use `sudo` for privilege elevation, you can assign more specific capabilities to accounts. In support of such specific assignments, the following table lists the specific capabilities required by accounts that are assigned to each of the three Run as profiles. These descriptions are somewhat generic because information, such as exact file system paths, can vary among different UNIX and Linux computer versions.  
-  
+
 > [!NOTE]  
 > The following table describes the required capabilities for accounts to communicate with the Operations Manager agent on a managed UNIX or Linux computer, but the agent itself must always run under the root account on the UNIX or Linux computer.  
-  
+
 |UNIX and Linux profile|Required capabilities|  
 |--------------------------|-------------------------|  
 |Action profile|- To log the UNIX or Linux computer on to the network, authenticated by the Pluggable Authentication Modules (PAM). Must have the ability to run a background shell (not connected to a TTY). Interactive logons are not required.<br> - To read any log file that was specified as unprivileged when a custom log file monitor was created, plus the ability to run **/opt/microsoft/scx/bin/scxlogfilereader**.<br> - To fully run any command shell command that was specified as unprivileged when a command\-line monitor, rule, or task was created.<br>- To run **/usr/bin/vmstat** for the **Run VMStat** task.|  
@@ -32,7 +32,7 @@ In the simplest case, a privileged account has capabilities equivalent to a UNIX
 The Operations Manager Linux/UNIX agent uses the standard PAM (Pluggable Authentication Module) mechanism on the Linux or UNIX computer to authenticate the user name and password specified in the Action Profile and Privilege Profile.  Any user name with a password that PAM authenticates can perform monitoring functions, including running command lines and scripts that collect monitoring data.  Such monitoring functions are always performed in the context of that user name (unless sudo elevation is explicitly enabled for that user name), so the Operations Manager agent provides no more capability than if the user name were to login to the Linux/UNIX system.
 
 However, the PAM authentication used by the Operations Manager agent does not require that the user name have an interactive shell associated with it.  If your Linux/UNIX account management practices include removing the interactive shell as a way to pseudo-disable an account, such removal does not prevent the account from being used to connect to the Operations Manager agent and perform monitoring functions.  In these cases, you should use additional PAM configuration to ensure that these pseudo-disabled accounts do not authenticate to the Operations Manager agent.
-  
+
 ## Next steps
 
 - To understand how to authenticate and monitor your UNIX and Linux computers, review [Credentials You Must Have to Access UNIX and Linux Computers](plan-security-crossplat-credentials.md)  
@@ -40,4 +40,3 @@ However, the PAM authentication used by the Operations Manager agent does not re
 - To understand how to elevate an unprivileged account for effective monitoring of UNIX and Linux computers, review [How to Configure sudo Elevation and SSH Keys](manage-security-create-crossplat-sudo-sshkeys.md)  
 
 - Review the [Configuring SSL Ciphers](manage-security-crossplat-config-sslcipher.md) if you need to reconfigure Operations Manager to use a different cipher.   
-  
