@@ -130,6 +130,8 @@ Repeat the preceding step on the following files:
 > To control the sign out key, add the following config changes:
 > \<add key="SessionTimeout" value="1440"/\>;
 
+::: moniker-end
+
 ## Next steps
 
 - To configure FIPS compliance for the Reporting server, see [Configure Authentication for Reporting server](manage-config-authentication-reporting-server.md)
