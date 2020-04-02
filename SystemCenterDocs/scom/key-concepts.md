@@ -141,6 +141,6 @@ For each agent, Operations Manager runs a *health service watcher*, which monito
 
 -   To learn how to use Operations Manager after the management group is set up, see [System Center - Operations Manager Operations Guide](manage-operations-guide-overview.md)
 
--   To learn how to create a management pack, see [Author’s Guide for Operations Manager for System Center ](https://go.microsoft.com/fwlink/p/?LinkID=212377)
+-   To learn how to create a management pack, see [Create management pack templates](create-management-pack-templates.md)
 
 -   [Operations Manager Community](https://go.microsoft.com/fwlink/p/?LinkID=221328)
