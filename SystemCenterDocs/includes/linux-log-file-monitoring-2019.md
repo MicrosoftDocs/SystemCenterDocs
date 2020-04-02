@@ -5,7 +5,7 @@ description: This include file details the Linux log file monitoring in Operatio
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  03/10/2020
+ms.date:  04/02/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  operations-manager
@@ -29,6 +29,39 @@ In Operations Manager 2019, install  **Microsoft.Linux.Log.Monitoring**  managem
 > [!NOTE]
 > If you have the OMS agent configured, and you try to uninstall UNIX and LINUX agent from the console, then OMS component will not be uninstalled from the agent.
 
+Do the following on the Linux agent:
+
+5. Create the folders in the following paths:
+
+      - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
+
+      - /etc/opt/microsoft/omsagent/scom/certs
+
+      - /var/opt/microsoft/omsagent/scom/log
+
+      - /var/opt/microsoft/omsagent/scom/run
+
+      - /var/opt/microsoft/omsagent/scom/state
+
+      - /var/opt/microsoft/omsagent/scom/tmp
+
+      - /home/omsagent/fluent-logging (used for log file position file)
+
+6. Set ownership of each of the above to omsagent:omiusers
+
+     - chown omsagent:omiusers state
+
+     - chown omsagent:omiusers run
+
+     - chown omsagent:omiusers log
+
+     - chown omsagent:omiusers tmp
+
+     - chown omsagent:omiusers /home/omsagent/fluent-logging
+
+      ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
+
+
 ## Configure Linux log file monitoring
 
 To configure Linux log file monitoring, do the following:
@@ -44,6 +77,7 @@ To configure Linux log file monitoring, do the following:
    sh onboard_agent.sh
 
    ```
+
 4. Enable the OMED service on each management server in the resource pool, managing the Linux agents.
 
     The OMED service collects events from Fluentd and converts them to Operations Manager events. You import a custom management pack, which can generate alerts based on the events received from the Linux servers.
@@ -62,36 +96,6 @@ To configure Linux log file monitoring, do the following:
 2. In the details pane, right-click the service **System Center Operations Manager External DataSource Service**, and then click **Properties**.
 3. On **General**, in **Startup** type, click **Automatic**, and then click **OK**.
 4. In the details pane, right-click **Service** and then click  **Start**.
-5. Create the folders in the following paths:
-
-    - /etc/opt/microsoft/omsagent/scom/conf/omsagent.d
-
-    - /etc/opt/microsoft/omsagent/scom/certs
-
-    - /var/opt/microsoft/omsagent/scom/log
-
-    - /var/opt/microsoft/omsagent/scom/run
-
-    - /var/opt/microsoft/omsagent/scom/state
-
-    - /var/opt/microsoft/omsagent/scom/tmp
-
-    - /home/omsagent/fluent-logging (used for log file position file)
-
-6. Set ownership of each of the above to omsagent:omiusers
-
-   - chown omsagent:omiusers state
-
-   - chown omsagent:omiusers run
-
-   - chown omsagent:omiusers log
-
-   - chown omsagent:omiusers tmp
-
-   - chown omsagent:omiusers /home/omsagent/fluent-logging
-
-    ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
-
 
 ## Generate new client certificate for Fluentd
 
@@ -112,13 +116,6 @@ To configure Linux log file monitoring, do the following:
 
    chown omsagent:omiusers /etc/opt/microsoft/omsagent/scom/certs/scom-key.pem
 
-4. Create the text file /etc/opt/microsoft/omsagent/scom/conf/omsagent.conf
-
-   With the following contents:
-   ```
-   #Include all configuration files
-   @include omsagent.d/*.conf
-   ```
 
 ## Create Fluentd configuration file
 
@@ -126,7 +123,7 @@ You configure Fluentd operation using a configuration file. For log monitoring, 
 
 The master Fluentd configuration file **omsagent.conf** is located in **/etc/opt/microsoft/omsagent/scom/conf/**. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
-For example, if you created **logmonitoring.conf** in **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d**, you would add one of the following lines to  **fluent.conf** :
+For example, if you created **logmonitoring.conf** in **/etc/opt/microsoft/omsagent/scom/conf/omsagent.d**, you would add one of the following lines to  **omsagent.d** file:
 
 ```
 #Include all configuration files
@@ -168,63 +165,6 @@ The following example shows syslog records collected and tagged for processing b
     format /(?<message>.*)/
 
 </source>
-```
-
-### Match
-
-The **match** directive defines how to process events collected from the source with matching tags. Only events with a **tag** matching the pattern are sent to the output destination. When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns. The **type** parameter  specifies the type of plugin to use for these events.
-
-This example processes events with tags matching **scom.log.** \*\* and  **scom.alert**  (\*\* matches zero or more tag parts). It specifies the  **out\_scom**  plugin which allows the events to be collected by the Operations Manager management pack.
-
-```
-<match scom.log.** scom.event>
-
-    # Output plugin to use
-     type out_scom
-
-    log_level trace
-    num_threads 5
-
-    # Size of the buffer chunk. If the top chunk exceeds this limit or the time limit flush\_interval, a new empty chunk is pushed to the top of the
-    queue and bottom chunk is written out.
-    buffer_chunk_limit 5m
-    flush_interval 15s
-
-    # Specifies the buffer plugin to use.
-    buffer_type file
-
-    # Specifies the file path for buffer. Fluentd must have write access to this directory.
-    buffer_path /var/opt/microsoft/omsagent/scom/state/out\_scom\_common\*.buffer
-
-    # If queue length exceeds the specified limit, events are rejected.
-    buffer_queue_limit 10
-
-    # Control the buffer behavior when the queue becomes full: exception, block, drop\_oldest\_chunk
-    buffer_queue_full_action drop_oldest_chunk
-
-    # Number of times Fluentd will attempt to write the chunk if it fails.
-    retry_limit 10
-
-    # If the bottom chunk fails to be written out, it will remain in the queue and Fluentd will retry after waiting retry\_wait seconds
-    retry_wait 30s
-
-    # The retry wait time doubles each time until max\_retry\_wait.
-    max_retry_wait 9m
-
-</match>
-```
-
-> [!NOTE]
-> To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter  **enable\_server\_auth false**  to the Operations Manager plugin for Fluentd, such as the following:
-
-```
-<match scom.log.** scom.event>
-type out_scom
-
-max_retry_wait 9m
-enable_server_auth false
-
-</match>
 ```
 
 ### Filter
@@ -319,6 +259,65 @@ Sends an event to Operations Manager for all records it receives. Sends the spec
     event_desc <event description>
 </filter>
 ```
+
+### Match
+
+The **match** directive defines how to process events collected from the source with matching tags. Only events with a **tag** matching the pattern are sent to the output destination. When multiple patterns are listed inside one **match** tag, events can match any of the listed patterns. The **type** parameter  specifies the type of plugin to use for these events.
+
+This example processes events with tags matching **scom.log.** \*\* and  **scom.alert**  (\*\* matches zero or more tag parts). It specifies the  **out\_scom**  plugin which allows the events to be collected by the Operations Manager management pack.
+
+```
+<match scom.log.** scom.event>
+
+    # Output plugin to use
+     type out_scom
+
+    log_level trace
+    num_threads 5
+
+    # Size of the buffer chunk. If the top chunk exceeds this limit or the time limit flush\_interval, a new empty chunk is pushed to the top of the
+    queue and bottom chunk is written out.
+    buffer_chunk_limit 5m
+    flush_interval 15s
+
+    # Specifies the buffer plugin to use.
+    buffer_type file
+
+    # Specifies the file path for buffer. Fluentd must have write access to this directory.
+    buffer_path /var/opt/microsoft/omsagent/scom/state/out\_scom\_common\*.buffer
+
+    # If queue length exceeds the specified limit, events are rejected.
+    buffer_queue_limit 10
+
+    # Control the buffer behavior when the queue becomes full: exception, block, drop\_oldest\_chunk
+    buffer_queue_full_action drop_oldest_chunk
+
+    # Number of times Fluentd will attempt to write the chunk if it fails.
+    retry_limit 10
+
+    # If the bottom chunk fails to be written out, it will remain in the queue and Fluentd will retry after waiting retry\_wait seconds
+    retry_wait 30s
+
+    # The retry wait time doubles each time until max\_retry\_wait.
+    max_retry_wait 9m
+
+</match>
+```
+
+> [!NOTE]
+> To disable Server Authentication on the Linux computers that are using Fluentd communication, add a parameter  **enable\_server\_auth false**  to the Operations Manager plugin for Fluentd, such as the following:
+
+```
+<match scom.log.** scom.event>
+type out_scom
+
+max_retry_wait 9m
+enable_server_auth false
+
+</match>
+```
+
+
 
 ## Copy configuration file to agent
 
