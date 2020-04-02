@@ -63,9 +63,7 @@ The problem of alerts and tickets that are created during failover or load balan
 
 With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer.
 
-If you want to use the log file monitoring feature, you must install the Linux log file monitoring management pack that's provided in Operations Manager 2019. This change ensures that the *omsagent* user is created only when you use the log file monitoring feature. For more information, see [Install agent on UNIX and Linux computers](../scom/manage-install-crossplat-agent-cmdline.md).
-
-To use the log file monitoring feature, you must install the Linux log file monitoring management pack. This management pack is included in Operations Manager 2019. For more information, see [Linux log file monitoring](../scom/manage-linux-logfiles.md).
+To use the log file monitoring feature, you must install the Linux log file monitoring management pack that's provided with Operations Manager 2019. This change ensures that the *omsagent* user is created only when you use the log file monitoring feature. For more information, see [Install agent on UNIX and Linux computers](../scom/manage-install-crossplat-agent-cmdline.md) and [Linux log file monitoring](../scom/manage-linux-logfiles.md).
 
 ### Improvement in agent-initiated maintenance mode
 
