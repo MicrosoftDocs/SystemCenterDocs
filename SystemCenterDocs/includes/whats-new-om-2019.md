@@ -61,11 +61,9 @@ The problem of alerts and tickets that are created during failover or load balan
 
 ### Linux agent installation changes
 
-With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer. If you want to use the log file monitoring feature, you must install the Linux log file monitoring management pack that's provided in Operations Manager 2019. 
+With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer.
 
-This change ensures that the *omsagent* user is created only when you use the log file monitoring feature. For more information, see [Install agent on UNIX and Linux computers](../scom/manage-install-crossplat-agent-cmdline.md).
-
-To use the log file monitoring feature, you must install the Linux log file monitoring management pack. This management pack is included in Operations Manager 2019. For more information, see [Linux log file monitoring](../scom/manage-linux-logfiles.md).
+To use the log file monitoring feature, you must install the Linux log file monitoring management pack that's provided with Operations Manager 2019. This change ensures that the *omsagent* user is created only when you use the log file monitoring feature. For more information, see [Install agent on UNIX and Linux computers](../scom/manage-install-crossplat-agent-cmdline.md) and [Linux log file monitoring](../scom/manage-linux-logfiles.md).
 
 ### Improvement in agent-initiated maintenance mode
 
@@ -253,7 +251,7 @@ The existing universal management packs are enhanced in Operations Manager 2019 
 
 The existing management packs for Red Hat Enterprise Linux (RHEL) 7 and SLES 12 continue to work. The universal management packs support discovering and monitoring RHEL 8, SLES 15, and any new platforms that we intend to support in the future.
 
-The existing SLES 15 management pack is no longer on the download center. Use the new universal management pack for discovery and monitoring. Download the updated management packs from [this website](https://www.microsoft.com/download/details.aspx?id=58208). 
+The existing SLES 15 management pack is no longer on the download center. Use the new universal management pack for discovery and monitoring. Download the updated management packs from [this website](https://www.microsoft.com/download/details.aspx?id=58208).
 
 Follow these steps to discover and monitor RHEL 8 and SLES 15.
 
@@ -266,7 +264,7 @@ Follow these steps to discover and monitor RHEL 8 and SLES 15.
    - Microsoft.Linux.Universal.Monitoring.mp
    - Microsoft.Linux.UniversalR.1.mpb (Discover/Monitor RPM distros)
    - Microsoft.Linux.UniversalD.1.mpb (Discover/Monitor Debian distros)
-  
+
 1. Run the **Discovery** wizard in the console.
 
 

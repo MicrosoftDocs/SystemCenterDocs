@@ -20,7 +20,7 @@ Perform the following steps to enable TLS protocol version 1.2:
 ::: moniker range="sc-om-2016"
 
 >[!NOTE]
-> Microsoft OLE DB Driver 18 for SQL Server (recommended) is supported with Operations Manager 2016 UR9 and later. 
+> Microsoft OLE DB Driver 18 for SQL Server (recommended) is supported with Operations Manager 2016 UR9 and later.
 
 1. Install [SQL Server 2012 Native Client 11.0](https://www.microsoft.com/download/details.aspx?id=50402&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) or [Microsoft OLE DB Driver 18 for SQL Server](https://www.microsoft.com/download/details.aspx?id=56730) on all management servers and the Web console server.  
 ::: moniker-end
@@ -37,10 +37,12 @@ Perform the following steps to enable TLS protocol version 1.2:
 
 Operations Manager generates SHA1 and SHA2 self-signed certificates.  This is required to enable TLS 1.2.  If CA-signed certificates are used, make sure that the certificates are either SHA1 or SHA2.
 
+::: moniker range="sc-om-2016"
 >[!NOTE]
 >If your security policies restrict TLS 1.0 and 1.1, installing a new Operations Manager 2016 management server, gateway server, Web console, and Reporting services role will fail because the setup media does not include the updates to support TLS 1.2.  The only way you can install these roles is by enabling TLS 1.0 on the system, apply Update Rollup 4, and then enable TLS 1.2 on the system.  This limitation does not apply to Operations Manager version 1801.
 >
 
+::: moniker-end
 ## Configure Windows to only use TLS 1.2 protocol
 Use one of the following methods to configure Windows to use only the TLS 1.2 protocol.
 
