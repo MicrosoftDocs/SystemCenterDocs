@@ -80,7 +80,7 @@ Repeat the preceding step on the following files:
 - %WinDir%\Microsoft.NET\Framework\v4.0.30319\Config\machine.config
 - %WinDir%\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config
 
-::: moniker range <="sc-om-2019"
+::: moniker range <="sc-om-1807"
 
 ### To edit the web.config file in WebHost folder
 
@@ -127,8 +127,8 @@ Repeat the preceding step on the following files:
 ::: moniker range="sc-om-2019"
 
 > [!NOTE]
-> To control the sign out key, add the following config changes:
-> \<add key="SessionTimeout" value="1440"/\>;
+> To control the sign out key, add the following config changes: <br>            
+> \<add key="SessionTimeout" value="1440"/\>
 
 ::: moniker-end
 
