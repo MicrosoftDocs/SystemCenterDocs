@@ -78,11 +78,12 @@ To configure Linux log file monitoring, do the following:
 
          ![log file monitoring](../scom/media/log-file-monitoring/log-file-monitoring.png)
 
- 6. Enable the OMED service on each management server in the resource pool, managing the Linux agents.
+## Enable the OMED service
+   Enable the OMED service on each management server in the resource pool, managing the Linux agents.
 
-    The OMED service collects events from Fluentd and converts them to Operations Manager events. You import a custom management pack, which can generate alerts based on the events received from the Linux servers.
+   The OMED service collects events from Fluentd and converts them to Operations Manager events. You import a custom management pack, which can generate alerts based on the events received from the Linux servers.
 
-    You can enable the OMED service either from the Operations console or manually on the management server or gateway server.
+   You can enable the OMED service either from the Operations console or manually on the management server or gateway server.
 
 ### Enable the OMED service from Operations console
 
