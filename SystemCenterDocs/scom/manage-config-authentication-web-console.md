@@ -80,7 +80,8 @@ Repeat the preceding step on the following files:
 - %WinDir%\Microsoft.NET\Framework\v4.0.30319\Config\machine.config
 - %WinDir%\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config
 
-::: moniker range <="sc-om-1807"
+
+::: moniker range="<sc-om-2019"
 
 ### To edit the web.config file in WebHost folder
 
