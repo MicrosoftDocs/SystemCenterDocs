@@ -80,6 +80,8 @@ Repeat the preceding step on the following files:
 - %WinDir%\Microsoft.NET\Framework\v4.0.30319\Config\machine.config
 - %WinDir%\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config
 
+::: moniker range <="sc-om-2019"
+
 ### To edit the web.config file in WebHost folder
 
 1.	Use a plain text editor to open the web.config file in `<Path>:\Program Files\System Center 2016\Operations Manager\WebConsole\WebHost\web.config`.
@@ -101,6 +103,8 @@ Repeat the preceding step on the following files:
 
 6. Save and close the file.
 
+::: moniker-end
+
 ### To edit the web.config file in MonitoringView folder
 
 1. Use a plain text editor to open the web.config file in `<PATH>:\Program Files\System Center 2012\Operations Manager\WebConsole\MonitoringView\web.config`.
@@ -119,6 +123,12 @@ Repeat the preceding step on the following files:
      ```
 
 5. Save and close the file.
+
+::: moniker range="sc-om-2019"
+
+> [!NOTE]
+> To control the sign out key, add the following config changes:
+> \<add key="SessionTimeout" value="1440"/\>;
 
 ## Next steps
 
