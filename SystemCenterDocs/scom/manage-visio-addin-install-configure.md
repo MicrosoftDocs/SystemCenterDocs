@@ -10,6 +10,7 @@ ms.prod: system-center
 ms.technology: operations-manager
 ms.topic: article
 ms.assetid: ac69f3db-00ab-4ca3-a2fc-f87d4503f1ed
+monikerRange: '<sc-om-1807'
 ---
 
 # Install the Visio Add-in
