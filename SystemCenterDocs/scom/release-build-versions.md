@@ -5,7 +5,7 @@ description: This article details the release builds in Operations Manager
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 03/17/2020
+ms.date: 04/08/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: operations-manager

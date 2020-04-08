@@ -120,7 +120,7 @@ To configure Linux log file monitoring, do the following:
 
 ## Create Fluentd configuration file
 
-You configure Fluentd operation using a configuration file. For log monitoring, create a configuration file that includes information such as source log file name, path and filters to define the date to collect.
+You configure Fluentd operation using a configuration file. For log monitoring, create a configuration file that includes information such as source log file name, path and filters to define the data to collect.
 
 The master Fluentd configuration file **omsagent.conf** is located in **/etc/opt/microsoft/omsagent/scom/conf/**. You can add log file monitoring configuration directly to this file, but should create a separate configuration file to better manage the different settings. You then use an @include directive in the master file to include your custom file.
 
