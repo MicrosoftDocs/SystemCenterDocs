@@ -1,0 +1,63 @@
+### YamlMime:Landing
+
+title: Service Manager documentation
+summary: Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
+
+metadata:
+  title: Service Manager documentation
+  description: Service Manager provides an integrated platform for automating and adapting your organization's IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.
+  ms.topic: landing-page
+  ms.service: system-center
+  author: JYOTHIRMAISURI 
+  ms.author: v-jysur
+  ms.date: 04/07/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: About Service Manager
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about Service Manager
+            url: service-manager.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in Service Manager?
+            url: whats-new-in-sm.md
+
+  # Card
+  - title: Get started
+    linkLists:            
+      - linkListType: how-to-guide
+        links:
+          - text: Plan for Service Manager
+            url: plan-sm.md
+          - text: Deploy Service Manager
+            url: deploy-sm.md
+          - text: Upgrade Service Manager
+            url: upgrade-sm.md
+          - text: Administer Service Manager
+            url: management-packs.md
+          - text: Author with Service Manager
+            url: author-with-sm.md 
+
+  # Card
+  - title: Reference
+    linkLists:            
+      - linkListType: reference
+        links:
+          - text: Authoring Tool workflow activity reference
+            url: workflow-activity-ref.md
+          - text: Languages supported by Service Manager
+            url: sm-languages.md
+          - text: Mapping Active Directory Domain Services attributes to properties in Service Manager
+            url: ad-ds-attribs.md
+          - text: Registry keys used by Service Manager
+            url: registry-keys.md
+          - text: User role profiles in Service Manager
+            url: user-role-profiles.md
+ 
