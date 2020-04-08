@@ -5,7 +5,7 @@ description: This article describes how to install the Web console for System Ce
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 04/08/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -178,7 +178,11 @@ The following steps are for configuring permission inheritance for the System Ce
 
 3.  On the **Permissions** tab, click **Change Permissions**.
 
-4.  Select the **Include inheritable permissions from this object's parent** checkbox.
+::: moniker range="<sc-om-2019"
+
+4.  Select the **Include inheritable permissions from this object's parent** checkbox. Skip this step for Windows 2016 and later.
+
+::: moniker-end
 
 5.  In **Permission entries**, click **Administrators**, and then click **Remove**. Repeat for the **SYSTEM** entry, and then click **OK**.
 
