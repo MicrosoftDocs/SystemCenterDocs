@@ -53,7 +53,7 @@ After you upgrade the management servers in your management group, you upgrade a
 
 2.  Under **Device Management**, click **Management Servers**.
 
-3.  In the **Management Servers** pane, verify the value listed in the **Version** column as per the details shared in [release build versions](release-build-versions.md).
+3.  In the **Management Servers** pane, verify the value listed in the **Version** column, as per the information available in [release build versions](release-build-versions.md).
 
 
 ## Next steps
