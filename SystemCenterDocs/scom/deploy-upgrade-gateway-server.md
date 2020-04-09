@@ -5,7 +5,7 @@ description: This article describes how to upgrade a Gateway server to the lates
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/15/2018
+ms.date: 04/09/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -53,7 +53,7 @@ After you upgrade the management servers in your management group, you upgrade a
 
 2.  Under **Device Management**, click **Management Servers**.
 
-3.  In the **Management Servers** pane, verify that the value listed in the **Version** column is 7.2.11469.0 for a System Center 2016 - Operations Manager gateway server.  For an Operations Manager version 1801 gateway server, the value listed in the **version** column is 8.0.13053.0.
+3.  In the **Management Servers** pane, verify the value listed in the **Version** column, as per the information available in [release build versions](release-build-versions.md).
 
 
 ## Next steps
