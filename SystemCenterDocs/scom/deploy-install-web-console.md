@@ -188,9 +188,13 @@ The following steps are for configuring permission inheritance for the System Ce
 
 ::: moniker-end
 
+::: moniker range="sc-om-2019"
+
 4.  In **Permission entries**, click **Administrators**, and then click **Remove**. Repeat for the **SYSTEM** entry, and then click **OK**.
 
 5.  Click **OK** to close **Advanced Security Settings for TempImages**, and then click **OK** to close **TempImages Properties**.
+
+::: moniker-end
 
 All information and content at https://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
