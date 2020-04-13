@@ -155,27 +155,72 @@ DPM uses your user name and password as credentials for communicating and authen
 
 The following table captures the privileges that you need to assign to the user account that you create:
 
-| Privileges for vCenter 6.5 and above user account | Privileges for vCenter 6.0 user account | Privileges for vCenter 5.5 user account |
-| --- | --- | --- |
-| Datastore.Allocate Space | Datastore.AllocateSpace | Network.Assign |
-| Global.Log Event | Global.Manage custom attributes | Datastore.AllocateSpace |
-| Global.Manage Custom Attributes | Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
-| Network.Assign| Host.Local operations.Create virtual machine | VirtualMachine.State.RemoveSnapshot |
-| Resource. Assign virtual Machine to Resource pool | Network. Assign network | VirtualMachine.State.CreateSnapshot |
-| VirtualMachine.Configuration.AddNewDisk | Resource. Assign virtual machine to resource pool | VirtualMachine.Provisioning.DiskRandomRead |
-| VirtualMachine.Configuration. Add Or Remove Device | Virtual machine.Configuration.Add new disk | VirtualMachine.Interact.PowerOff |
-| VirtualMachine.Configuration.Advanced | Virtual machine.Configuration.Advanced | VirtualMachine.Inventory.Create |
-| VirtualMachine.Configuration.Disk Change Tracking | Virtual machine.Configuration.Disk change tracking | VirtualMachine.Config.AddNewDisk |
-| VirtualMachine.Configuration.Host USB Device | Virtual machine.Configuration.Host USB device | VirtualMachine.Config.HostUSBDevice |
-| VirtualMachine.Configuration.Query Unowned Files | Virtual machine.Configuration.Query unowned files | VirtualMachine.Config.AdvancedConfig |
-| VirtualMachine.Configuration.Swapfile Placement | Virtual machine.Configuration.Swapfile placement | VirtualMachine.Config.SwapPlacement |
-| VirtualMachine.Interaction.Power Off | Virtual machine.Interaction.Power Off | Global.ManageCustomFields |
-| VirtualMachine.Inventory.Create New | Virtual machine.Inventory. Create new |   |
-| VirtualMachine.Provisioning.Allow Disk Access | Virtual machine.Provisioning.Allow disk access |   |
-| VirtualMachine.Provisioning.Allow File Access| Virtual machine.Provisioning. Allow read-only disk access |   |
-| VirtualMachine.Provisioning.Allow Read-only Disk Access | Virtual machine.Snapshot management.Create snapshot |   |
-| VirtualMachine.Snapshot Management.Create Snapshot | Virtual machine.Snapshot management.Remove Snapshot |   |
-| VirtualMachine.Snapshot Management.Remove Snapshot |   |   |
+| Privileges for vCenter 6.5 user account                          | Privileges for vCenter 6.7 user account                            |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Datastore cluster.Configure a datatstore cluster                           | Datastore cluster.Configure a datatstore cluster                           |
+| Datastore.AllocateSpace                                                    | Datastore.AllocateSpace                                                    |
+| Datastore.Browse datastore                                                 | Datastore.Browse datastore                                                 |
+| Datastore.Low-level file operations                                        | Datastore.Low-level file operations                                        |
+| Global.Disable methods                                                     | Global.Disable methods                                                     |
+| Global.Enable methods                                                      | Global.Enable methods                                                      |
+| Global.Licenses                                                            | Global.Licenses                                                            |
+| Global.Log event                                                           | Global.Log event                                                           |
+| Global.Manage custom attributes                                            | Global.Manage custom attributes                                            |
+| Global.Set custom attribute                                                | Global.Set custom attribute                                                |
+| Host.Local operations.Create virtual machine                               | Host.Local operations.Create virtual machine                               |
+| Network.Assign network                                                     | Network.Assign network                                                     |
+| Resource. Assign virtual machine to resource pool                          | Resource. Assign virtual machine to resource pool                          |
+| vApp.Add virtual machine                                                   | vApp.Add virtual machine                                                   |
+| vApp.Assign resource pool                                                  | vApp.Assign resource pool                                                  |
+| vApp.Unregister                                                            | vApp.Unregister                                                            |
+| VirtualMachine.Configuration. Add Or Remove Device                         | VirtualMachine.Configuration. Add Or Remove Device                         |
+| Virtual machine.Configuration.Disk lease                                   | Virtual machine.Configuration.Acquire disk lease                           |
+| Virtual machine.Configuration.Add new disk                                 | Virtual machine.Configuration.Add new disk                                 |
+| Virtual machine.Configuration.Advanced                                     | Virtual machine.Configuration.Advanced configuration                       |
+| Virtual machine.Configuration.Disk change tracking                         | Virtual machine.Configuration.Toggle disk change tracking                  |
+| Virtual machine.Configuration.Host USB device                              | Virtual machine.Configuration.Configure Host USB device                    |
+| Virtual machine.Configuration.Extend virtual disk                          | Virtual machine.Configuration.Extend virtual disk                          |
+| Virtual machine.Configuration.Query unowned files                          | Virtual machine.Configuration.Query unowned files                          |
+| Virtual machine.Configuration.Swapfile placement                           | Virtual machine.Configuration.Change Swapfile placement                    |
+| Virtual machine.Guest Operations.Guest Operation Program Execution         | Virtual machine.Guest Operations.Guest Operation Program Execution         |
+| Virtual machine.Guest Operations.Guest Operation Modifications             | Virtual machine.Guest Operations.Guest Operation Modifications             |
+| Virtual machine.Guest Operations.Guest Operation Queries                   | Virtual machine.Guest Operations.Guest Operation Queries                   |
+| Virtual machine .Interaction .Device connection                            | Virtual machine .Interaction .Device connection                            |
+| Virtual machine .Interaction .Guest operating system management by VIX API | Virtual machine .Interaction .Guest operating system management by VIX API |
+| Virtual machine .Interaction .Power Off                                    | Virtual machine .Interaction .Power Off                                    |
+| Virtual machine .Inventory.Create new                                      | Virtual machine .Inventory.Create new                                      |
+| Virtual machine .Inventory.Remove                                          | Virtual machine .Inventory.Remove                                          |
+| Virtual machine .Inventory.Register                                        | Virtual machine .Inventory.Register                                        |
+| Virtual machine .Provisioning.Allow disk access                            | Virtual machine .Provisioning.Allow disk access                            |
+| Virtual machine .Provisioning.Allow file access                            | Virtual machine .Provisioning.Allow file access                            |
+| Virtual machine .Provisioning.Allow read-only disk access                  | Virtual machine .Provisioning.Allow read-only disk access                  |
+| Virtual machine .Provisioning.Allow virtual machine download               | Virtual machine .Provisioning.Allow virtual machine download               |
+| Virtual machine .Snapshot management. Create snapshot                      | Virtual machine .Snapshot management. Create snapshot                      |
+| Virtual machine .Snapshot management.Remove Snapshot                       | Virtual machine .Snapshot management.Remove Snapshot                       |
+| Virtual machine .Snapshot management.Revert to snapshot                    | Virtual machine .Snapshot management.Revert to snapshot                    |
+
+
+| Privileges for vCenter 6.0 user account | Privileges for vCenter 5.5 user account |
+| --- | --- |
+| Datastore.AllocateSpace | Network.Assign |
+| Global.Manage custom attributes | Datastore.AllocateSpace |
+| Global.Set custom attribute | VirtualMachine.Config.ChangeTracking |
+| Host.Local operations.Create virtual machine | VirtualMachine.State.RemoveSnapshot |
+| Network. Assign network | VirtualMachine.State.CreateSnapshot |
+| Resource. Assign virtual machine to resource pool | VirtualMachine.Provisioning.DiskRandomRead |
+| Virtual machine.Configuration.Add new disk | VirtualMachine.Interact.PowerOff |
+| Virtual machine.Configuration.Advanced | VirtualMachine.Inventory.Create |
+| Virtual machine.Configuration.Disk change tracking | VirtualMachine.Config.AddNewDisk |
+| Virtual machine.Configuration.Host USB device | VirtualMachine.Config.HostUSBDevice |
+| Virtual machine.Configuration.Query unowned files | VirtualMachine.Config.AdvancedConfig |
+| Virtual machine.Configuration.Swapfile placement | VirtualMachine.Config.SwapPlacement |
+| Virtual machine.Interaction.Power Off | Global.ManageCustomFields |
+| Virtual machine.Inventory. Create new |   |
+| Virtual machine.Provisioning.Allow disk access |   |
+| Virtual machine.Provisioning. Allow read-only disk access |   |
+| Virtual machine.Snapshot management.Create snapshot |   |
+| Virtual machine.Snapshot management.Remove Snapshot |   |
+
 
 The recommended steps for assigning these privileges:
 
