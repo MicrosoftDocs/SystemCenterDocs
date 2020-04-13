@@ -199,8 +199,8 @@ The following table captures the privileges that you need to assign to the user 
 | Virtual machine .Snapshot management.Remove Snapshot                       | Virtual machine .Snapshot management.Remove Snapshot                       |
 | Virtual machine .Snapshot management.Revert to snapshot                    | Virtual machine .Snapshot management.Revert to snapshot                    |
 
-<br/>
-<br/>
+> [!NOTE]
+> The following table lists the privileges for vCenter 6.0 and vCenter 5.5 user accounts.
 
 | Privileges for vCenter 6.0 user account | Privileges for vCenter 5.5 user account |
 | --- | --- |
