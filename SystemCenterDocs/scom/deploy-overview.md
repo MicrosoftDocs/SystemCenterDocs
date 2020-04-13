@@ -16,7 +16,7 @@ ms.topic: article
 
 All System Center Operations Manager individual management group deployments will either be an "all-in-one" installation, where all features are loaded on a single server, or a distributed installation. Installations can then be combined together to form an overall Operations Manager infrastructure that consists of multiple management groups. These management groups can then relate to each other as your business needs require.
 
-This section of the Deployment Guide describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
+This section describes an individual management group deployment, where you have one management group, but the features of Operations Manager are either installed on a single server or distributed over several servers.
 
 -   [Single Server Deployment of Operations Manager](deploy-single-server.md)
 
