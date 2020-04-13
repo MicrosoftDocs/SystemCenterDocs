@@ -200,6 +200,8 @@ The following table captures the privileges that you need to assign to the user 
 | Virtual machine .Snapshot management.Revert to snapshot                    | Virtual machine .Snapshot management.Revert to snapshot                    |
 
 
+
+
 | Privileges for vCenter 6.0 user account | Privileges for vCenter 5.5 user account |
 | --- | --- |
 | Datastore.AllocateSpace | Network.Assign |
