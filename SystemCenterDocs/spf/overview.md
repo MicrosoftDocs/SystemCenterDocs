@@ -34,7 +34,7 @@ SPF provides a number of services:
 - Hosting service providers use the Admin web service to create and manage tenants, user roles, servers, stamps, and other administrative objects.
 - You can access the Admin web service by using the URL **https://server:8090/SC2012R2/Admin/Microsoft.Management.Odata.svc**
     >[!NOTE]
-    > This URL is applicable for SPF 2016 and later.
+    > The above URL is applicable for SPF 2016 and later.
 - The following credentials are required.
 
 **Credential** | **Requirement**
@@ -54,7 +54,7 @@ The VMM web service invokes VMM to perform requested operations, such as creatin
 You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register a VMM instance. You can access the VMM web service with the URL **https://server:8090/SC2012R2/VMM/Microsoft.Management.Odata.svc**
 
 >[!NOTE]
-> This URL is applicable for SPF 2016 and later.
+> The above URL is applicable for SPF 2016 and later.
 
 
 **Credential** | **Requirement**
@@ -93,7 +93,7 @@ SPF_Provider group in Computer Management | Must include a local user who is a m
 
 ### Service Management Automation web service.
 
-You can configure events in SPF that the Service Mmnagement Automation web service will use. To do this, the web service must have credentials to access the SPF web services. Alternatively, you can use PowerShell to automate runbooks.
+You can configure events in SPF that the Service Management Automation web service will use. To do this, the web service must have credentials to access the SPF web services. Alternatively, you can use PowerShell to automate runbooks.
 
 **Credential** | **Requirement**
 --- | ---
