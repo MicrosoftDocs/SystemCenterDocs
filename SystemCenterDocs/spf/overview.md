@@ -4,7 +4,7 @@ description: This article provides a broad overview of Service Provider Foundati
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 01/22/2018
+ms.date: 04/15/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: service-provider-foundation
@@ -32,8 +32,10 @@ SPF provides a number of services:
 ### Admin web service
 
 - Hosting service providers use the Admin web service to create and manage tenants, user roles, servers, stamps, and other administrative objects.
-- You can access the Admin web service by using the URL `**https://server:8090/SC2016/Admin/Microsoft.Management.Odata.svc**`
-- The following credentials are required
+- You can access the Admin web service by using the URL **https://server:8090/SC2012R2/Admin/Microsoft.Management.Odata.svc**
+    >[!NOTE]
+    > The above URL is applicable for SPF 2016 and later.
+- The following credentials are required.
 
 **Credential** | **Requirement**
 --- | ---
@@ -49,7 +51,10 @@ The VMM web service invokes VMM to perform requested operations, such as creatin
 - VMM shows changes that portal applications, other clients, and Service Provider Foundation made.
 - Service Provider Foundation reflects all changes that the participants made.
 
-You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register a VMM instance. You can access the VMM web service with the URL `https://server:8090/SC2016/VMM/Microsoft.Management.Odata.svc`
+You can use the T:Microsoft.SystemCenter.Foundation.Cmdlet.New-SCSPFServer PowerShell cmdlet to register a VMM instance. You can access the VMM web service with the URL **https://server:8090/SC2012R2/VMM/Microsoft.Management.Odata.svc**
+
+>[!NOTE]
+> The above URL is applicable for SPF 2016 and later.
 
 
 **Credential** | **Requirement**
@@ -88,7 +93,7 @@ SPF_Provider group in Computer Management | Must include a local user who is a m
 
 ### Service Management Automation web service.
 
-You can configure events in SPF that the Service Mmnagement Automation web service will use. To do this, the web service must have credentials to access the SPF web services. Alternatively, you can use PowerShell to automate runbooks.
+You can configure events in SPF that the Service Management Automation web service will use. To do this, the web service must have credentials to access the SPF web services. Alternatively, you can use PowerShell to automate runbooks.
 
 **Credential** | **Requirement**
 --- | ---
