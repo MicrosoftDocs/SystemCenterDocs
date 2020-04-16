@@ -588,34 +588,46 @@ DpmSync **-DataCopied**
 server.  
 Run the following command:
 
-**DpmSync –RestoreDb -DbLoc G:\\DPM\\Backups\\2005\\November\\DPMDB.bak**
+```
+DpmSync –RestoreDb -DbLoc G:\\DPM\\Backups\\2005\\November\\DPMDB.bak
+```
 
-After you restore the DPM database, to synchronize the databases, you run the
+After you restore the DPM database, to synchronize the databases, run the
 following command:
 
-**DpmSync -Sync**
+```
+DpmSync -Sync
+```
 
 After you restore and synchronize the DPM database and before you restore the
-replica, you run the following command to reallocate disk space for the replica:
+replica, run the following command to reallocate disk space for the replica:
 
-**DpmSync -ReallocateReplica**
+```
+DpmSync -ReallocateReplica
+```
 
 **Example 2:** To restore the DPM database from a remote database.  
 Run the following command on the remote computer:
 
-**DpmSync –RestoreDb -DbLoc G:\\DPM\\Backups\\2005\\November\\DPMDB.bak
-–InstanceName contoso\\ms\$dpm**
+```
+DpmSync –RestoreDb -DbLoc G:\\DPM\\Backups\\2005\\November\\DPMDB.bak
+–InstanceName contoso\\ms\$dpm
+```
 
-After you restore the DPM database, to synchronize the databases, you run the
+After you restore the DPM database, to synchronize the databases, run the
 following command on the DPM Server:
 
-**DpmSync -Sync**
+```
+DpmSync -Sync
+```
 
 After you restore and synchronize the DPM database and before you restore the
-replica, you run the following command on the DPM Server to reallocate disk
+replica, run the following command on the DPM Server to reallocate disk
 space for the replica:
 
-**DpmSync -ReallocateReplica**
+```
+DpmSync -ReallocateReplica
+```
 
 **Example 3:** To move a DPM database from the local DPM server to a remote SQL
 server.
