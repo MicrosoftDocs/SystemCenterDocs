@@ -629,5 +629,5 @@ The following steps illustrate the use of DPMSync in moving a DPM database
 | 2. | Uninstall DPM from DPMServer1 and choose to retain data. |
 | 3. | Delete DPMDB. You have to do this in order to reinstall DPM. |
 | 4. | Install DPM on DPMServer1 with the remote SQL Server instance installed on DPMRemoteSQL. |
-| 5. | Run the following command on DPMRemoteSQL  **dpmsync –restoredb –dbloc**  _\&lt;dbbackuplocation\&gt;_  **–instancename** _\&lt;instancename\&gt;_, where dbbackuplocation is the location of the backup taken in step 1 and instancename is the name of the remote SQL Server instance. |
+| 5. | Run the following command on DPMRemoteSQL  **dpmsync –restoredb –dbloc**  _\<dbbackuplocation\>_  **–instancename** _\<instancename\>_, where dbbackuplocation is the location of the backup taken in step 1 and instancename is the name of the remote SQL Server instance. |
 | 6. | Now run the following command on DPMServer1 Dpmsync –sync |
