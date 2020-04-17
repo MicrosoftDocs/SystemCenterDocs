@@ -25,15 +25,14 @@ the following steps to avoid conflicts:
     -   \\Temp\\MTA folder
 
     -   Replica and transfer logs—To do this, disable real-time monitoring of
-        dpmra.exe, which is located in the folder Program Files\\Microsoft Data
-        Protection Manager\\DPM\\bin. Real-time monitoring degrades performance
+        dpmra.exe, which is located in the folder **Program Files\\Microsoft Data Protection Manager\\DPM\\bin**. Real-time monitoring           degrades performance
         because the antivirus software scans the replicas each time DPM
         synchronizes with the protected server, and scans all affected files
         each time DPM applies changes to the replicas.
 
     -   Administrator console—To avoid an impact on performance disable
         real-time monitoring of the csc.exe process
-        (Windows\\Microsoft.net\\Framework\\v2.0.50727\\csc.exe). The csc.exe
+        (**Windows\\Microsoft.net\\Framework\\v2.0.50727\\csc.exe**). The csc.exe
         process is the C\# compiler and real-time monitoring can degrade
         performance because the antivirus software scans files that the csc.exe
         process emits when it generates XML messages.
@@ -45,4 +44,4 @@ the following steps to avoid conflicts:
     and quarantining might cause the antivirus software to modify files, making
     changes that DPM cannot detect.
 
-    You should run a manual synchronization with a consistency check job each time that the antivirus software deletes a file from the replica, even though the replica will not be marked as inconsistent.
+    You should run a manual synchronization with a consistency. Check job each time that the antivirus software deletes a file from the   replica, even though the replica is marked as inconsistent.
