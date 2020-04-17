@@ -41,8 +41,9 @@
 ### [Back up the DPM server](back-up-the-dpm-server.md)
 ## Monitor and Manage
 ### [Monitor DPM](monitor-dpm.md)
+### [Run antivirus software on the DPM server](run-antivirus-server.md)
 ### [Set up DPM logging](set-up-dpm-logging.md)
 ### [Generate DPM reports](generate-dpm-reports.md)
-### [Use SCOM to manage and monitor DPM servers](use-ops-manager-to-manage-monitor-dpm.md)
+### [Use Operations Manager to manage and monitor DPM servers](use-ops-manager-to-manage-monitor-dpm.md)
 ### [Improve replication performance](improve-replication-performance.md)
 ### [Use central console to manage DPM servers](use-central-console-to-manage-multiple-dpm-servers.md)
