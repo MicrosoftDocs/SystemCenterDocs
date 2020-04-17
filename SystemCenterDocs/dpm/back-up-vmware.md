@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 04/13/2020
+ms.date: 04/17/2020
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -393,6 +393,9 @@ This section explains how to use DPM to restore VMware VM [recovery points](http
    The **Recovery status** screen shows the progression of the recovery operation.
 
 ### Restore an individual file from a VM
+
+>[!Note]
+> Restore of an individual file from a VM backup is possible only from the disk recovery points.  
 
 You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
