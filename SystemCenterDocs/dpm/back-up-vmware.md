@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 04/13/2020
+ms.date: 04/17/2020
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -157,7 +157,7 @@ The following table captures the privileges that you need to assign to the user 
 
 | Privileges for vCenter 6.5 user account                          | Privileges for vCenter 6.7 user account                            |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Datastore cluster.Configure a datatstore cluster                           | Datastore cluster.Configure a datatstore cluster                           |
+| Datastore cluster.Configure a datastore cluster                           | Datastore cluster.Configure a datastore cluster                           |
 | Datastore.AllocateSpace                                                    | Datastore.AllocateSpace                                                    |
 | Datastore.Browse datastore                                                 | Datastore.Browse datastore                                                 |
 | Datastore.Low-level file operations                                        | Datastore.Low-level file operations                                        |
@@ -394,11 +394,14 @@ This section explains how to use DPM to restore VMware VM [recovery points](http
 
 ### Restore an individual file from a VM
 
+>[!NOTE]
+> Restore of an individual file from a VM backup is possible only from the disk recovery points.  
+
 You can restore individual files from a protected VM recovery point. This feature is only available for Windows Server VMs. Restoring individual files is similar to restoring the entire VM, except you browse into the VMDK and find the file(s) you want, before starting the recovery process. To recover an individual file or select files from a Windows Server VM:
 
 1. In the DPM Administrator Console, click **Recovery** view.
 2. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
-    ![open Recovery points ](./media/back-up-vmware/view-available-recovery-points.png)
+    ![open Recovery points ](./media/back-up-vmware/vmware-rp-disk.png)
 3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
     Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, make sure you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** drop-down menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
 4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
