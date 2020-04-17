@@ -617,31 +617,3 @@ space for the replica:
 ```
 DpmSync -ReallocateReplica
 ```
-
-**Example 3:** To move a DPM database from the local DPM server to a remote SQL
-server.
-
-The following steps illustrate the use of DPMSync in moving a DPM database
-(DPMDB) from the local DPM server (DPMServer1) to a remote SQL server
-(DPMRemoteSQL).
-
-1. Run the following command:  
-
-   ```
-   DPMBackup –db
-   ```
-   
-   This will create the file DPMDB.bak at  **\Program Files\Microsoft DPM\DPM\volumes\Shadowcopy\Database Backups**. Store this            backup in a secure location. 
-2. Uninstall DPM from DPMServer1 and choose to retain data. 
-3. Delete DPMDB. You have to do this in order to reinstall DPM.
-4. Install DPM on DPMServer1 with the remote SQL Server instance installed on DPMRemoteSQL.
-5. Run the following command on DPMRemoteSQL:  
-   
-   ```
-   dpmsync –restoredb –dbloc <dbbackuplocation> –instancename <instancename> 
-   ```
-   where dbbackuplocation is the location of the backup taken in step 1 and instancename is the name of the remote SQL Server instance. 
-6. Now run the following command on DPMServer1: 
-   ```
-   Dpmsync –sync
-   ```
