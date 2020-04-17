@@ -559,37 +559,27 @@ For example: mountvol X: \\?\Volume{\<PhysicalReplicaId\>}\
 
 **DpmSync** is a command-line tool that enables you to synchronize the DPM
 database with the state of the disks in the storage pool and with the installed
-protection agents. The DpmSync tool restores the DPM database, synchronizes the
+protection agents. DpmSync restores the DPM database, synchronizes the
 DPM database with the replicas in the storage pool, restores the Report
 database, and reallocates missing replicas.
 
-**DpmSync Syntax**
-
-DpmSync **–RestoreDb** **–DbLoc location** **–InstanceName server\\instance**]
-
-DpmSync **-Sync**
-
-DpmSync **-ReallocateReplica**
-
-DpmSync **-DataCopied**
-
 **Parameters**
 
-| Parameter                | Description                                                                                                                                                     |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **-RestoreDb**                       | Restores a DPM database from a specified location.                                                                                                                      |
+| Parameter      | Description    |
+|----------------|-----------------------------|
+| **-RestoreDb**                       | Restores a DPM database from a specified location.|
 | **-Sync**                            | Synchronizes restored databases. You must run DpmSync –Sync after you restore the databases. After you run DpmSync –Sync, some replicas may still be marked as missing. |
-| **-DbLoc** *location*                | Identifies the location of backup of DPM database.                                                                                                                      |
-| **-InstanceName** *server\\instance* | Instance to which DPMDB must be restored.                                                                                                                               |
-| **-ReallocateReplica**              | Reallocates all missing replica volumes without synchronization.                                                                                                        |
-| **-DataCopied**                      | Indicates that you have completed loading data into the newly allocated replica volumes. <br/>This is applicable for client computers only.                                  |
+| **-DbLoc** *location*                | Identifies the location of backup of DPM database.|
+| **-InstanceName** <br/>*server\\instance*     | Instance to which DPMDB must be restored.|
+| **-ReallocateReplica**           | Reallocates all missing replica volumes without synchronization. |
+| **-DataCopied**                      | Indicates that you have completed loading data into the newly allocated replica volumes. <br/>This is applicable for client computers only. |
 
 **Example 1:** To restore the DPM database from local backup media on the DPM
 server.  
 Run the following command:
 
 ```
-DpmSync –RestoreDb -DbLoc G:\\DPM\\Backups\\2005\\November\\DPMDB.bak
+DpmSync –RestoreDb -DbLoc G:\DPM\Backups\2005\November\DPMDB.bak
 ```
 
 After you restore the DPM database, to synchronize the databases, run the
@@ -610,8 +600,7 @@ DpmSync -ReallocateReplica
 Run the following command on the remote computer:
 
 ```
-DpmSync –RestoreDb -DbLoc G:\\DPM\\Backups\\2005\\November\\DPMDB.bak
-–InstanceName contoso\\ms\$dpm
+DpmSync –RestoreDb -DbLoc G:\DPM\Backups\2005\November\DPMDB.bak –InstanceName contoso\ms$dpm
 ```
 
 After you restore the DPM database, to synchronize the databases, run the
@@ -636,10 +625,23 @@ The following steps illustrate the use of DPMSync in moving a DPM database
 (DPMDB) from the local DPM server (DPMServer1) to a remote SQL server
 (DPMRemoteSQL).
 
-| 1. | Run the following command:  **DPMBackup –db**.This will create the file DPMDB.bak at  **\Program Files\Microsoft DPM\DPM\volumes\Shadowcopy\Database Backups**. <br/> Store this backup in a secure location. |
-| --- | --- |
-| 2. | Uninstall DPM from DPMServer1 and choose to retain data. |
-| 3. | Delete DPMDB. You have to do this in order to reinstall DPM. |
-| 4. | Install DPM on DPMServer1 with the remote SQL Server instance installed on DPMRemoteSQL. |
-| 5. | Run the following command on DPMRemoteSQL  **dpmsync –restoredb –dbloc**  _\<dbbackuplocation\>_  **–instancename** _\<instancename\>_, where dbbackuplocation is the location of the backup taken in step 1 and instancename is the name of the remote SQL Server instance. |
-| 6. | Now run the following command on DPMServer1 Dpmsync –sync |
+1. Run the following command:  
+
+   ```
+   DPMBackup –db
+   ```
+   
+   This will create the file DPMDB.bak at  **\Program Files\Microsoft DPM\DPM\volumes\Shadowcopy\Database Backups**. Store this            backup in a secure location. 
+2. Uninstall DPM from DPMServer1 and choose to retain data. 
+3. Delete DPMDB. You have to do this in order to reinstall DPM.
+4. Install DPM on DPMServer1 with the remote SQL Server instance installed on DPMRemoteSQL.
+5. Run the following command on DPMRemoteSQL:  
+   
+   ```
+   dpmsync –restoredb –dbloc <dbbackuplocation> –instancename <instancename> 
+   ```
+   where dbbackuplocation is the location of the backup taken in step 1 and instancename is the name of the remote SQL Server instance. 
+6. Now run the following command on DPMServer1: 
+   ```
+   Dpmsync –sync
+   ```
