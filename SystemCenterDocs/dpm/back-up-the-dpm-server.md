@@ -571,7 +571,7 @@ database, and reallocates missing replicas.
 | **-Sync**                            | Synchronizes restored databases. You must run DpmSync –Sync after you restore the databases. After you run DpmSync –Sync, some replicas may still be marked as missing. |
 | **-DbLoc** *location*                | Identifies the location of backup of DPM database.|
 | **-InstanceName** <br/>*server\\instance*     | Instance to which DPMDB must be restored.|
-| **-ReallocateReplica**           | Reallocates all missing replica volumes without synchronization. |
+| **-ReallocateReplica**         | Reallocates all missing replica volumes without synchronization. |
 | **-DataCopied**                      | Indicates that you have completed loading data into the newly allocated replica volumes. <br/>This is applicable for client computers only. |
 
 **Example 1:** To restore the DPM database from local backup media on the DPM
