@@ -19,7 +19,7 @@ In System Center Operations Manager, the Web console provides a monitoring inter
 ::: moniker range="sc-om-2019"
 
 >[!NOTE]
-> Operations Manager 2019 UR1 supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks.  If you are using Operations Manager 2019 UR1, you must initialize the CSRF token. HTML scrips do not work without the initialization of CSRF token.
+> Operations Manager 2019 UR1 supports Cross-Site Request Forgery (CSRF) tokens to prevent CSRF attacks.  If you are using Operations Manager 2019 UR1, you must initialize the CSRF token. HTML scripts do not work without the initialization of CSRF token.
 
 ## Initialize the CSRF token
 Required action, applicable for Operations Manager 2019 UR1.
