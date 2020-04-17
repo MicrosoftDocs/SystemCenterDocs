@@ -157,7 +157,7 @@ The following table captures the privileges that you need to assign to the user 
 
 | Privileges for vCenter 6.5 user account                          | Privileges for vCenter 6.7 user account                            |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Datastore cluster.Configure a datatstore cluster                           | Datastore cluster.Configure a datatstore cluster                           |
+| Datastore cluster.Configure a datastore cluster                           | Datastore cluster.Configure a datastore cluster                           |
 | Datastore.AllocateSpace                                                    | Datastore.AllocateSpace                                                    |
 | Datastore.Browse datastore                                                 | Datastore.Browse datastore                                                 |
 | Datastore.Low-level file operations                                        | Datastore.Low-level file operations                                        |
