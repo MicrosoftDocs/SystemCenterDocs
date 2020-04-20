@@ -401,7 +401,7 @@ You can restore individual files from a protected VM recovery point. This featur
 
 1. In the DPM Administrator Console, click **Recovery** view.
 2. Using the **Browse** pane, browse or filter to find the VM you want to recover. Once you select a VM or folder, the Recovery points for pane displays the available recovery points.
-    ![open Recovery points ](./media/back-up-vmware/vmware-rp-disk.png)
+    ![open Recovery points ](./media/back-up-vmware/vmware-recovery-point-disk.png)
 3. In the **Recovery Points for:** pane, use the calendar to select the date that contains the desired recovery point(s).
     Depending on how the backup policy has been configured, dates can have more than one recovery point. Once you've selected the day when the recovery point was taken, make sure you've chosen the correct Recovery time. If the selected date has multiple recovery points, choose your recovery point by selecting it in the **Recovery time** drop-down menu. Once you chose the recovery point, the list of recoverable items appears in the **Path:** pane.
 4. To find the files you want to recover, in the **Path** pane, double-click the item in the **Recoverable item** column to open it. Select the file, files, or folders you want to recover. To select multiple items, press the **Ctrl** key while selecting each item.
