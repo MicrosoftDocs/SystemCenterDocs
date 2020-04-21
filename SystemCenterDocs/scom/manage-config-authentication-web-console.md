@@ -21,6 +21,22 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 >[!NOTE]
 >When creating the certificate, you must provide the fully qualified domain name (FQDN) of the host and domain name in the **Common name** field to match the address users would enter in their web browser to access the Web console.  
 
+::: moniker range="sc-om-2019"
+
+1. Ensure that the SSL certificates are installed and configured on the management server.
+
+2. Add a https binding in the IIS website wherever the operations manager web console is installed.
+
+3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
+
+>[!NOTE]
+> Enable SSL check box in the installer only works if you are using a https binding for the web console. For more information, see [How to set up SSL on IIS 7](https://docs.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis).
+
+
+::: moniker-end
+
+::: moniker range="<sc-om-2019"
+
 1. Use a plain text editor to open the **web.config** in `<PATH>:\Program Files\Microsoft System Center 2016\Operations Manager\WebConsole\WebHost`.
 2. In the `<services>` root element, modify the following in the `<!– Logon Service –>`element:
 
@@ -40,6 +56,8 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 5. Under **HKEY_LOCAL_MACHINE\Software\Microsoft\System Center Operations Manager\12\Setup\WebConsole\\**, double-click the value **HTTP_GET_ENABLED** and change its value to **false**. Double-click the value **BINDING_CONFIGURATION** and change its value to **DefaultHttpsBinding**.
 
 6. After completing the above steps, reset the Web site hosting the Operations Manager Web console.  
+
+::: moniker-end
 
 
 ## Configure FIPS compliance
@@ -128,9 +146,18 @@ Repeat the preceding step on the following files:
 
 ::: moniker range="sc-om-2019"
 
-> [!NOTE]
-> To control the sign out key, add the following config changes: <br>            
-> \<add key="SessionTimeout" value="1440"/\>
+## Configure login session
+
+>[!NOTE]
+>The web console uses windows authentication by default, if available to login into the website. The default session timeout interval for web console is 1 day and this is the maximum value.
+
+1. To edit the value, use a plain text editor to open the web.config in `<PATH>:\Program Files\Microsoft System Center\Operations Manager\WebConsole\Dashboard`.
+2. In the `<appSettings>` root element, modify the following session time out value in minutes.
+  ```
+	<add key="SessionTimeout" value="1440"/>
+  ```
+3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
+
 
 ::: moniker-end
 
