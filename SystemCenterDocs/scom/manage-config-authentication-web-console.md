@@ -153,9 +153,9 @@ Repeat the preceding step on the following files:
 
 1. To edit the value, use a plain text editor to open the web.config in `<PATH>:\Program Files\Microsoft System Center\Operations Manager\WebConsole\Dashboard`.
 2. In the `<appSettings>` root element, modify the following session time out value in minutes.
-  ```
-	<add key="SessionTimeout" value="1440"/>
-  ```
+    ```
+	  <add key="SessionTimeout" value="1440"/>
+    ```
 3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
 
 
