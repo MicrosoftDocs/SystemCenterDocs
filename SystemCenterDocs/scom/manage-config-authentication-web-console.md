@@ -25,7 +25,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 
 1. Ensure that the SSL certificates are installed and configured on the management server.
 
-2. Add a https binding in the IIS website wherever the operations manager web console is installed.
+2. Add a https binding in the IIS website wherever the Operations Manager Web console is installed.
 
 3. After completing the above steps, reset the Web site hosting the Operations Manager Web console.
 
