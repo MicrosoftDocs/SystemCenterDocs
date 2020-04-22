@@ -21,7 +21,7 @@ The following VMM networking objects are used to build the basic networking infr
 
 - [Hosts and host groups](host-groups.md)
 
-  Hyper-V hosts that VMM manages organized into groups based on location or purpose.
+  Hyper-V hosts that VMM manages, organized into groups based on location or purpose.
 
 - [Logical networks](network-logical.md)
 
@@ -49,7 +49,7 @@ The following VMM networking objects are used to build the basic networking infr
 
 - [Uplink port profile](network-port-profile.md#define-uplink-port-profiles)
 
-  Defines the load balancing algorithm for an adapter, and specify how to team multiple network adapters on a host that use the same uplink port profile.
+  Defines the load balancing algorithm for an adapter, and specifies how to team multiple network adapters on a host that use the same uplink port profile.
 
 - [Virtual network adapter port profile](network-port-profile.md#create-a-virtual-network-adapter-port-profile)
 
@@ -68,4 +68,4 @@ For more information about Microsoft SDN, see [Software Defined Networking](depl
 
 ## Next steps
 
-To get started with VMM see [What's New](whats-new-in-vmm.md) and [Release Notes](release-notes-vmm.md).
+To get started with VMM see [What's New](whats-new-in-vmm.md) and [Install](install.md).
