@@ -5,7 +5,7 @@ description: This article describes how to reconfigure Operations Manager if you
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/29/2019
+ms.date: 02/19/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
