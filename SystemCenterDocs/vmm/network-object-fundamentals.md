@@ -5,7 +5,7 @@ description: This article describes about network object fundamentals.
 author: v-anesh
 ms.author: v-anesh
 manager: vvithal
-ms.date: 04/21/2020
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -47,7 +47,7 @@ The following VMM networking objects are used to build the basic networking infr
 
   A template used to create virtual switches consistently across many hosts.
 
-- [Uplink port profiles](network-port-profile.md)
+- [Uplink port profiles](network-port-profile.md#define-uplink-port-profiles)
 
   Defines the load balancing algorithm for an adapter, and specify how to team multiple network adapters on a host that use the same uplink port profile.
 
