@@ -5,7 +5,7 @@ description: This guide provides the pre-upgrade tasks you must perform before a
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 01/15/2018
+ms.date: 04/19/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -159,11 +159,9 @@ Before upgrading the first management server in your management group, it is rec
 
 To ensure the agents can queue data during the upgrade, update the following registry setting on the agents manually or automated with your configuration management or orchestration solution:
 
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups\<ManagementGroupName>\maximumQueueSizeKb
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups<ManagementGroupName>\maximumQueueSizeKb​
 
-The default decimal value of DWORD type is 15360 (15 MB) and the recommended value to change it to is 76800 (75 MB).
-
-Once you have completed the upgrade of the management group, you can reset it back to the default value.  
+The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying DWORD type registry key. ​Once you have completed the upgrade of the management group, you can reset it to default value. 
 
 ## Next steps
 

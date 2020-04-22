@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 05/14/2019
+ms.date: 04/22/2020
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -193,9 +193,9 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
 ## .Net Versions supported
 
-The following versions of .Net are supported for Service Manager.
+The following versions of .NET are supported for Service Manager.
 
-|System Center 1807 component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
+|System Center component|.NET 3.5 SP1|.NET 4|.NET 4.5|.NET 4.5.1|.NET 4.5.2|.NET 4.6|
 |-----------------------------------|----------------|----------|------------|--------------|--------------|------------|
 |**Service Manager** Management Server|&#8226;| | |&#8226;| | |
 |**Service Manager** Data Warehouse Management Server|&#8226;| | |&#8226;| | |
