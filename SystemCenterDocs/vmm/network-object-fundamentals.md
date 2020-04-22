@@ -68,5 +68,5 @@ For more information about Microsoft SDN, see [Software Defined Networking](depl
 
 ## See Also
 
-[Build Your Own Cloud: What You Need to Know](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/mt156973(v%3Dws.11))
-[Preparing the Fabric in VMM](plan-compute.md)
+- [Build Your Own Cloud: What You Need to Know](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/mt156973(v%3Dws.11))
+- [Preparing the Fabric in VMM](plan-compute.md)
