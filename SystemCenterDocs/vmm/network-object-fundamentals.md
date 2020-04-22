@@ -13,9 +13,9 @@ ms.technology: virtual-machine-manager
 
 # Virtual Machine Manager network object fundamentals
 
-System Center Virtual Machine Manager (VMM) is an essential tool used to deploy Microsoft private and public clouds. But before you begin building clouds, it is important to understand the fundamental networking objects in VMM. These networking objects form the network infrastructure of your cloud, including the virtual networks that you or your tenants create.
+System Center Virtual Machine Manager (VMM) is part of the System Center suite, used to configure, manage and transform traditional datacenters, and helping to provide a unified management experience across on-premises, service provider, and the Azure cloud.
 
-If you're new to VMM, all the new terms and concepts can be a little confusing at first. This topic covers just the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions, and planning and designing private and public clouds.
+This topic covers the basics that you need to understand before you move on to more complex topics, such as advanced VMM features and functions, and planning and designing private and public clouds.
 
 The following VMM networking objects are used to build the basic networking infrastructure of Microsoft's Software Defined Networking (SDN) used in private and public clouds:
 
@@ -45,28 +45,27 @@ The following VMM networking objects are used to build the basic networking infr
 
 - [Logical Switch](network-switch.md)
 
-  A template used to create virtual switches consistently across many hosts.
+  Brings virtual switch extensions, port profiles, and port classifications together.
 
-- [Uplink port profiles](network-port-profile.md#define-uplink-port-profiles)
+- [Uplink port profile](network-port-profile.md#define-uplink-port-profiles)
 
   Defines the load balancing algorithm for an adapter, and specify how to team multiple network adapters on a host that use the same uplink port profile.
 
-- [Virtual network adapter port profiles](network-port-profile.md#create-a-virtual-network-adapter-port-profile)
+- [Virtual network adapter port profile](network-port-profile.md#create-a-virtual-network-adapter-port-profile)
 
-  Define the virtual network adapter properties for the virtual network adapters available with the logical switch.
+  Defines the virtual network adapter properties for the virtual network adapters available with the logical switch.
 
-- [Port classifications](network-port-profile.md#create-port-classifications-for-virtual-network-adapter-port-profiles)
+- [Port classification](network-port-profile.md#create-port-classifications-for-virtual-network-adapter-port-profiles)
 
   A label to abstract the adapter port profile settings.
 
-- [Gateways](network-gateway.md)
+- [Gateway](network-gateway.md)
 
   Used to connect a Hyper-V Network Virtualization (HNV) VM network to an external network.
 
 For more information about Microsoft SDN, see [Software Defined Networking](deploy-sdn.md).
 
 
-## See Also
+## Next steps
 
-- [Build Your Own Cloud: What You Need to Know](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/mt156973(v%3Dws.11))
-- [Preparing the Fabric in VMM](plan-compute.md)
+To get started with VMM see [What's New](whats-new-in-vmm.md) and [Release Notes](release-notes-vmm.md).
