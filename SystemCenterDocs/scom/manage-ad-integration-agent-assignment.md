@@ -4,7 +4,7 @@ description: This article describes how to configure and use Active Directory in
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/29/2019
+ms.date: 04/23/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -177,6 +177,21 @@ You can use the following procedure to change the Active Directory integration s
 2.  On the **Operations Manager** tab, clear or select **Automatically update management group assignments from AD DS**. If you select this option, on agent startup, the agent will query Active Directory for a list of management groups to which it has been assigned. Those management groups, if any, will be added to the list. If you clear this option, all management groups assigned to the agent in Active Directory will be removed from the list.  
 
 3.  Click **OK**.  
+
+## Integrate Active Directory with untrusted domain
+
+1. Create a user in an untrusted domain, which has permission to read, write and delete objects in AD.  
+2. Create a security group (domain local or global).
+ a. Add the user (created in step 1) to this group.
+3. Run *MOMAdAdmin.exe* on the untrusted domain with the following parameters:
+    <path>\MOMADAdmin.exe <ManagementGroupName> <MOMAdminSecurityGroup> <RunAsAccount> <Domain>
+4. Create new run as account in Operations Manager, use the same account used in step 1. Make sure that the domain name is provided with FQDN, not NetBIOS name (For Ex: CONTOSO.COM\ADUser).
+5.  Distribute the account to the AD Assignment Resource Pool.
+5.  Create a new run as profile in the default management pack. If this profile is created in any other management pack, ensure to seal the management pack so that this can be referenced to other management pack.  
+6.  Add the newly created run as account to this profile and target it to the AD Assignment Resource Pool
+7.  Create the Active Directory integration rules in Operations Manager. 
+
+
 
 ## Next steps
 
