@@ -19,13 +19,31 @@ This topic covers the basics that you need to understand before you move on to m
 
 The following VMM networking objects are used to build the basic networking infrastructure of Microsoft's Software Defined Networking (SDN) used in private and public clouds:
 
-- [Hosts and host groups](host-groups.md)
+- [Hosts and host group](host-groups.md)
 
   Hyper-V hosts that VMM manages, organized into groups based on location or purpose.
 
-- [Logical networks](network-logical.md)
+- [Logical network](network-logical.md)
 
   Logical objects that mirror your physicals networks.
+
+   - [One connected logical network](network-logical-ur1.md)
+
+     A single VM network is created on top of this logical network, and this VM network provides access to all the underlying VLAN-subnet pairs.
+
+     ![Connected network](media/network-logical/connected-network.png)
+
+   - [Independent logical network](network-logical-ur1.md)
+
+     Multiple VM networks can be created on top of this logical network. Each VM network created provides access to a specific VLAN-subnet pair. The VM networks are independent of each other.
+
+     ![Independent network](media/network-logical/independent-network.png)
+
+   - [Virtualized network](network-logical-ur1.md)
+
+     This is the fabric network. Multiple virtualized VM networks can be created on top of this logical network. Each VM network has its own virtualized address space.
+
+     ![Virtualized network](media/network-logical/virtualized-network.png)
 
 - [Network sites](network-virtual.md)
 
@@ -43,13 +61,9 @@ The following VMM networking objects are used to build the basic networking infr
 
   A static pool of IP addresses for the VM network.
 
-- [Logical Switch](network-switch.md)
-
-  Brings virtual switch extensions, port profiles, and port classifications together.
-
 - [Uplink port profile](network-port-profile.md#define-uplink-port-profiles)
 
-  Defines the load balancing algorithm for an adapter, and specifies how to team multiple network adapters on a host that use the same uplink port profile.
+  Defines the load balancing algorithm and teaming mode for physical adapters. Uplink port profiles can be applied to physical network adapters when you deploy switches.
 
 - [Virtual network adapter port profile](network-port-profile.md#create-a-virtual-network-adapter-port-profile)
 
@@ -57,7 +71,11 @@ The following VMM networking objects are used to build the basic networking infr
 
 - [Port classification](network-port-profile.md#create-port-classifications-for-virtual-network-adapter-port-profiles)
 
-  A label to abstract the adapter port profile settings.
+  A label to abstract the virtual network adapter port profile settings.
+
+- [Logical Switch](network-switch.md)
+
+  Brings virtual switch extensions, port profiles, and port classifications together.
 
 - [Gateway](network-gateway.md)
 
