@@ -102,7 +102,7 @@ The local and remote parameters are as follows:
 10. On the **Configuration**, **Select an authentication mode for use with the Web console** page, select your option, and then click **Next**.
 
     > [!NOTE]
-    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](https://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx).
+    > If you install the management server on a server using a domain account for System Center Configuration service and System Center Data Access service, and then install the web console on a different server and select Mixed Authentication, you may need to register Service Principle Names and configure constraint delegations, as described in [Running the Web Console Server on a standalone server using Windows Authentication](https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345).
 
 10. On the **Diagnostic and Usage Data** page, please review data collection terms and then click **Next** to continue.  
 
