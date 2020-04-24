@@ -86,4 +86,4 @@ For more information about Microsoft SDN, see [Software Defined Networking](depl
 
 ## Next steps
 
-To get started with VMM see [What's New](whats-new-in-vmm.md) and [Install](install.md).
+To get started with VMM, see [What's New](whats-new-in-vmm.md) and [Install](install.md).
