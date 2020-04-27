@@ -18,8 +18,11 @@ The Self-Service portal provides web-based access to the features of System Cent
 
  - Windows Server 2016
  - Windows Server 2012 R2
- - Windows Server 2019
+ ::: moniker range="sc-sm-2019"
+  - Windows Server 2019
+ ::: moniker-end
 
+For more information, see [system requirements](system-requirements.md)
 ## Supported web browsers
 The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.
 
