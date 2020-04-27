@@ -28,7 +28,7 @@ The following VMM networking objects are used to build the basic networking infr
   Logical objects that mirror your physical networks.
 
   >[!NOTE]
-  > The logical network type terminologies (One connected, Independent and Virtualized) are changed for VMM 2019 UR1.
+  > The terminology for logical networks has changed from 2019 UR1. For more information, see [logical networks](network-logical-ur1.md)     in UR1.
 
    - [One connected logical network](network-logical-ur1.md)
 
