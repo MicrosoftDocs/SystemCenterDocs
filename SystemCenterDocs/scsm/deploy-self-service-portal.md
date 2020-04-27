@@ -1,6 +1,6 @@
 ---
-title: Deploy the Service Manager Self Service portal
-description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self Service portal.
+title: Deploy the Service Manager Self-Service portal
+description: This article describes prerequisites, installation steps, and configuration options for the Service Manager Self-Service portal.
 manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
@@ -28,7 +28,7 @@ The Self-Service portal provides web-based access to the features of System Cent
 
 For more information, see [system requirements](system-requirements.md)
 ## Supported web browsers
-The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.
+The Self-Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.
 
 -   Microsoft Edge
 
@@ -38,8 +38,8 @@ The Self Service portal needs a screen resolution above 1024 X 768. It is suppor
 
 -   Google Chrome 46 and later
 
-## Set up the Self Service portal
-You'll use the following sections to set up the Self Service portal.
+## Set up the Self-Service portal
+You'll use the following sections to set up the Self-Service portal.
 
 ### Set up the web server
 Join the Windows server machine to the same domain where the Service Manager SDK Service is running. Ideally, on the secondary server. Enable the IIS role and ASP.NET 4.5 on the server using following steps.
@@ -72,10 +72,10 @@ Join the Windows server machine to the same domain where the Service Manager SDK
 
         ![application development](./media/deploy-self-service-portal/sm-ssp03b.png)
 
-### Install the Self Service Portal Webapp using Setup
-Use the following steps to install the Self Service Portal WebApp using Setup.
+### Install the Self-Service Portal Webapp using Setup
+Use the following steps to install the Self-Service Portal WebApp using Setup.
 
-1.  Click **Service Manager Self Service Portal** in Service Manager setup wizard.
+1.  Click **Service Manager Self-Service Portal** in Service Manager setup wizard.
 
 
 2.  Go through the EULA and accept it.
@@ -88,7 +88,7 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
 4.  Review the System check results.
 
-5.  Configure the Self Service Portal server and type configuration details for your server.
+5.  Configure the Self-Service Portal server and type configuration details for your server.
 
     -   **WebSite Name** :   The name of the website to display in the IIS Management console.
 
@@ -98,11 +98,11 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
     -   **SSL Certificate:** (Optional) The SSL certificate to configure the website in secure mode (https://). This is the recommended setting if you are using Basic Authentication. The default is Windows  Authentication.
 
-    ![configure the Self Service Portal server](./media/deploy-self-service-portal/sm-ssp09.png)
+    ![configure the Self-Service Portal server](./media/deploy-self-service-portal/sm-ssp09.png)
 
-6.  Configure the account for the Self Service Portal. This is the account that the IIS instance will run under. This account should have the Service Manager Admin role.
+6.  Configure the account for the Self-Service Portal. This is the account that the IIS instance will run under. This account should have the Service Manager Admin role.
 
-    ![Self Service portal account](./media/deploy-self-service-portal/sm-ssp10.png)
+    ![Self-Service portal account](./media/deploy-self-service-portal/sm-ssp10.png)
 
 7.  The Diagnostic and usage data notification information is displayed, informing you that data is sent to Microsoft by default.   You can change this setting in the Service Manager console. Click **Next**.
 
@@ -116,8 +116,8 @@ Use the following steps to install the Self Service Portal WebApp using Setup.
 
     ![Finished](./media/deploy-self-service-portal/sm-ssp13.png)
 
-### Install the Self Service portal webapp using the command line
-You can modify the following example to install the Self Service portal.
+### Install the Self-Service portal webapp using the command line
+You can modify the following example to install the Self-Service portal.
 
 ```
 SetupWizard.exe /Install:SelfServicePortal /silent /accepteula /CustomerExperienceImprovementProgram:No /EnableErrorReporting:No /PortalWebSiteName:<Portal Name> /SMServerName:<SDK Server Name> /PortalWebSitePort:<PortNumber> /PortalAccount:<domain>\<user>\<pwd>
@@ -128,17 +128,17 @@ Use the following step to complete your installation.
 
 - Restart IIS. You can access the Web App (http://yourwebsite:port) in your browser. It will resemble the following image.
 
-  ![Self Service Portal](./media/deploy-self-service-portal/sm-sspdeploy-complete.png)
+  ![Self-Service Portal](./media/deploy-self-service-portal/sm-sspdeploy-complete.png)
 
-## Customize the Self Service portal
-The following section describes how you can customize the Self Service portal to suit your organization.
+## Customize the Self-Service portal
+The following section describes how you can customize the Self-Service portal to suit your organization.
 
 Before you install any Update Rollup for Service Manager, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml), then use the following steps to get started.
 
-1.	Create a new cshtml file named CustomSidebar.cshtml in the &lt;Self Service Portal install path&gt;\inetpub\wwwroot\SelfServicePortal\Views\Shared folder path.
+1.	Create a new cshtml file named CustomSidebar.cshtml in the &lt;Self-Service Portal install path&gt;\inetpub\wwwroot\SelfServicePortal\Views\Shared folder path.
 2.	Move your customizations from sidebar.cshtml to the new file, which is CustomSidebar.cshtml.
 
-In the future, you need to make all customizations to the Service Manager Self Service portal’s sidebar in the CustomSidebar.cshtml file.
+In the future, you need to make all customizations to the Service Manager Self-Service portal’s sidebar in the CustomSidebar.cshtml file.
 
 
 ### Basic customization
@@ -166,7 +166,7 @@ The `<appSettings>` tab in the Web.config file offers some standard settings to 
 ### Style customization
 Web page style, such as font, color, and background, is customized by adding the Custom.css file in the \Content\css website folder.
 
-Styles defined in the CSS file overrides the default styles of the Self Service Portal..
+Styles defined in the CSS file overrides the default styles of the Self-Service Portal..
 
 ### Customizing the left menu bar
 You can modify the content shown in the left navigation bar (menu) by editing the Sidebar.cshtml file which is in the \Views\Shared inside the website folder.
