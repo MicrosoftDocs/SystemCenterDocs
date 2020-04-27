@@ -5,7 +5,7 @@ manager: carmonm
 ms.prod: system-center
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 01/23/2018
+ms.date: 04/27/2020
 ms.technology: service-manager
 ms.topic: article
 ---
@@ -14,10 +14,11 @@ ms.topic: article
 
 The Self-Service portal provides web-based access to the features of System Center - Service Manager for end users. This article describes how you can deploy the Self-Service portal and customize it.
 
-## Supported operating systems 
- 
+## Supported operating systems
+
  - Windows Server 2016
  - Windows Server 2012 R2
+ - Windows Server 2019
 
 ## Supported web browsers
 The Self Service portal needs a screen resolution above 1024 X 768. It is supported on the following browsers.
@@ -67,7 +68,7 @@ Join the Windows server machine to the same domain where the Service Manager SDK
 ### Install the Self Service Portal Webapp using Setup
 Use the following steps to install the Self Service Portal WebApp using Setup.
 
-1.  Click on **Service Manager Self Service Portal** in Service Manager 2016 setup wizard.
+1.  Click **Service Manager Self Service Portal** in Service Manager setup wizard.
 
 
 2.  Go through the EULA and accept it.
@@ -125,12 +126,12 @@ Use the following step to complete your installation.
 ## Customize the Self Service portal
 The following section describes how you can customize the Self Service portal to suit your organization.
 
-Before you install Service Manager 2016 Update Rollup 2, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml), then use the following steps to get started.
+Before you install any Update Rollup for Service Manager, note that all customizations are made in the portal sidebar (CustomSidebar.cshtml), then use the following steps to get started.
 
 1.	Create a new cshtml file named CustomSidebar.cshtml in the &lt;Self Service Portal install path&gt;\inetpub\wwwroot\SelfServicePortal\Views\Shared folder path.
 2.	Move your customizations from sidebar.cshtml to the new file, which is CustomSidebar.cshtml.
 
-In the future, you need to make all customizations to the Service Manager 2016 Self Service portal’s sidebar in the CustomSidebar.cshtml file.
+In the future, you need to make all customizations to the Service Manager Self Service portal’s sidebar in the CustomSidebar.cshtml file.
 
 
 ### Basic customization
@@ -171,7 +172,7 @@ You can add or remove shortcuts from the menu, and you can customize them with d
 
 ### Additional UI customization
 
-For more information about UI customization, see [The Official System Center Service Manager Blog](https://blogs.technet.microsoft.com/servicemanager/2016/03/15/basic-ui-customization-in-new-self-service-portal-html5/).
+For more information about UI customization, see [The Official System Center Service Manager Blog](https://techcommunity.microsoft.com/t5/system-center-blog/basic-ui-customization-in-the-new-self-service-portal-html5/ba-p/351441).
 
 ## Next steps
 
