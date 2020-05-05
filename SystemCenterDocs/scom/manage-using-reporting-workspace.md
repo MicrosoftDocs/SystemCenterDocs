@@ -28,15 +28,6 @@ Authored reports are based on existing reports from the report library. You conf
 
 After you run a report, click **File**, and then click **Publish** to publish the report with the configured parameters to **Authored Reports**.  
 
-::: moniker range="sc-om-2016"
-
-## Favorite Reports  
-You can save configured reports to **Favorite Reports** to make them continually available to you and to save you the time of reconfiguring a report you run frequently.  
-
-After you run a report, click **File**, and then click **Save to favorites** to save the report.  
-
-::: moniker-end
-
 ## Scheduled Reports  
 You can schedule configured reports to run on a one-time or recurring basis.  
 
