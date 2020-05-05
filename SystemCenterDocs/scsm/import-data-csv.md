@@ -69,7 +69,7 @@ WG-Chi-5, 172.30.14.30, CHICAGO
 ```
 
 ## Create the format file
-A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Using the CSV import feature](https://go.microsoft.com/fwlink/p/?LinkID=159957) and download the file CSVImport.docx.
+A format file is now created that is suited to import the rows that are contained in the **newcomputers.csv** file. The first step in writing the format file is identifying the class type or projection type that must be used for the instances in the .csv file. For more information about class type or projection types, see the blog post [Using the CSV import feature](https://techcommunity.microsoft.com/t5/system-center-blog/using-the-csv-import-feature/ba-p/340736) and download the file CSVImport.docx.
 
 For the type of data being imported, you find that the **Microsoft.Windows.Computer** class is the best suited for the object type and property set. Start by declaring the class of the object that is being imported:
 
