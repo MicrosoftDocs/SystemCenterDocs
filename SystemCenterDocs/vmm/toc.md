@@ -1,5 +1,6 @@
 # Overview
 ## [What is VMM?](overview.md)
+## [VMM network object fundamentals](network-object-fundamentals.md)
 ## [What's new in VMM ](whats-new-in-vmm.md)
 # Get Started
 ## [Release notes - VMM](release-notes-vmm.md)
