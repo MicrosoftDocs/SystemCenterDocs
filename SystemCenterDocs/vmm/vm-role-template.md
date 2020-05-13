@@ -9,6 +9,7 @@ ms.date: 11/07/2017
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
+monikerRange: '<sc-vmm-2019'
 ---
 
 # Create VM templates using VMM and Windows Azure Pack
@@ -44,14 +45,14 @@ For gallery resources that use Resource Extensions, you need to import the exten
 
 1. At the command line, run the following:
 
-``` 
+```
 $libraryShare = Get-SCLibraryShare | Where-Object {$_.Name -eq 'MSSCVMMLibrary'}
 $resextpkg = $Env:SystemDrive + "\GalleryResources\My-VMRole-Pkg\MyVMRole.resextpkg"
 Import-CloudResourceExtension –ResourceExtensionPath $resextpkg -SharePath $libraryShare -AllowUnencryptedTransfer
 ```
 2. Verify that the import completed with the following cmdlet:
 
-``` 
+```
 Get-CloudResourceExtension
 ```
 
@@ -76,7 +77,7 @@ Set-scvirtualharddisk –virtualharddisk $myVHD –OperatingSystem $WS2012Datace
 
     - The Familyname property values should indicate the contents of the virtual hard disk, including the Windows Server release and edition. The Readme file of the Gallery Resource should include appropriate Familyname values.
     Release property values must conform to the Windows Azure versioning scheme of n.n.n.n. Examples include 1.0.0.0 and 1.0.0.1.
-    
+
 2. Set the property using the VMM console, or PowerShell. The following example shows how to set the virtual hard disk MyVirtualHardDisk to a Familyname "Windows Server 2012 Datacenter", and the Release property to "1.0.0.0". Your cmdlet with replace values with one of the values in the Readme file.
 
 ```
