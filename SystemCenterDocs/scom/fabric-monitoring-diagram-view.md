@@ -34,4 +34,4 @@ Follow these steps:
 
 ## Next steps
 
-[Monitor cloud fabric using System Center Advisor ](using-system-center-advisor.md)
+[Monitor cloud fabric using System Center Advisor ](use-system-center-advisor.md)
