@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
----
 # Set up an IPAM server in the VMM fabric
 
 

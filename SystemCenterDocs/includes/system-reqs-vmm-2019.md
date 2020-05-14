@@ -101,6 +101,8 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 
 ## Servers in the VMM fabric
+>[!NOTE]
+> Hyper-V server 2016 and 2019 are not supported.
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---

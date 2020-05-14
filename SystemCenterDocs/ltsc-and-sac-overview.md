@@ -11,16 +11,15 @@ title: Overview of System Center LTSC and SAC releases
 ms.assetid:
 ---
 
+# Overview of System Center release options
+
+System Center customers have their choice of release options: the Long-Term Servicing Channel (LTSC) or the new Semi-Annual Channel(SAC). The new Semi-Annual Channel is only offered for customers with Software Assurance.
+
+As a System Center customer, stay on the Long-Term Servicing Channel (LTSC) or move to the new Semi-Annual Channel. Choose a release channel that works best for your business. If your requirements change, switch to a different release channel.
+
 > [!NOTE]
 > The Semi-Annual Channel (SAC) for System Center has been discontinued. System Center 2019 will support upgrades from two prior SAC releases so customers running System Center 1801 or System Center 1807 will be able to upgrade to System Center 2019.
 > Configuration Manager is not impacted by the 2019 release change and will continue current branch release cadence of three times per year as detailed in [Support for Configuration Manager current branch versions](https://docs.microsoft.com/configmgr/core/servers/manage/current-branch-versions-supported).
-
-
-# Overview of System Center release options
-
-System Center customers have their choice of release options: the Long-Term Servicing Channel (LTSC) or the new Semi-Annual Channel. The new Semi-Annual Channel is only offered for customers with Software Assurance.
-
-As a System Center customer, stay on the Long-Term Servicing Channel (LTSC) or move to the new Semi-Annual Channel. Choose a release channel that works best for your business. If your requirements change, switch to a different release channel.
 
 ## Semi-Annual Channel
 

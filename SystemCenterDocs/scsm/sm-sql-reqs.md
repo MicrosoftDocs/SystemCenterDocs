@@ -6,10 +6,11 @@ ms.topic: reference
 ms.author: v-jysur
 author: JYOTHIRMAISURI
 ms.prod: system-center
-keywords: 
-ms.date: 02/02/2017
+keywords:
+ms.date: 05/13/2020
 ms.technology: service-manager
 ms.assetid: 26697203-df1e-4232-b9be-7c9976a362b8
+monikerRange: 'sc-sm-2016'
 ---
 
 # SQL Server requirements for System Center 2016 - Service Manager
@@ -22,8 +23,8 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 
 |**System Center 2016** component |SQL Server 2008 R2 SP1 Standard, Datacenter|SQL Server 2008 R2 SP2 Standard, Datacenter|SQL Server 2012 Enterprise, Standard (64-bit)|SQL Server 2012 SP1 Enterprise, Standard (64-bit)|SQL Server 2012 SP2 Enterprise, Standard (64 bit)|SQL Server 2014 Enterprise, Standard (64-bit)|SQL Server 2014 SP1 Enterprise, Standard (64-bit)|SQL Server 2014 SP2 Enterprise, Standard (64-bit)|SQL Server 2016, Enterprise, Standard  (64-bit)|
 |-------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------|------------------------------------------------|-------------------------------------|
-|**Service Manager** Database or Data Warehouse Database|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
-|**Service Management Automation** Web Service|||||&#8226;|&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Manager** Database or Data Warehouse Database||||||&#8226;|&#8226;|&#8226;|&#8226;|
+|**Service Management Automation** Web Service||||||&#8226;|&#8226;|&#8226;|&#8226;|
 
 > [!NOTE]
 > System Center 2016 - Service Manager requires SQL Server 2012 SP2 or later.
