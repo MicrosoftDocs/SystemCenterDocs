@@ -45,4 +45,4 @@ For example, if you saw a problem with the Network Node State, from the Fabric H
 ## Next steps
 
 - [Fabric Monitoring diagram view](fabric-monitoring-diagram-view.md)
-- [Monitor cloud fabric using System Center Advisor](using-system-center-advisor.md)
+- [Monitor cloud fabric using System Center Advisor](use-system-center-advisor.md)
