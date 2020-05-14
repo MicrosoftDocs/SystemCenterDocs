@@ -1,6 +1,6 @@
 ---
 ms.assetid: e0c24f1f-9457-49f6-8f65-069aa45dbbd8
-title: Scope the Fabric Health Dashboard to a Specific Cloud and Investigating Details in Operations Manager
+title: Scope the Fabric Health Dashboard to a Specific Cloud and Investigating Details in System Center Operations Manager
 description: This article provides an overview of scoping the Fabric Health Dashboard to a Specific Cloud and Investigating Details
 author: v-anesh
 ms.author: v-anesh
