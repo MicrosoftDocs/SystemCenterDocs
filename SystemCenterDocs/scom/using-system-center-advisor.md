@@ -1,6 +1,6 @@
 ---
 ms.assetid: d080e947-1fb9-4647-99a3-6449f39676e6
-title: Using System Center Advisor to Proactively Monitor Cloud Fabric
+title: Use System Center Advisor to Proactively Monitor Cloud Fabric
 description: This article provides an overview of using system center advisor to proactively monitor cloud fabric
 author: v-anesh
 ms.author: v-anesh
