@@ -19,8 +19,8 @@ This article describes the backup and recovery process in a System Center - Virt
 ## Before you start
 
 - Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents, nor do they copy data to a separate volume.
-- You can use a a checkpoint to serve as temporary backup, before updating an operating system on a virtual machine. This allows you to roll back the update if it has adverse effects.
-- You should use a backup application to back up and recover your data in case of catastrophic data loss. One option is System Center Data Protection Manager (DPM). 
+- You can use a checkpoint to serve as temporary backup, before updating an operating system on a virtual machine. This allows you to roll back the update if it has adverse effects.
+- You should use a backup application to back up and recover your data in case of catastrophic data loss. One option is System Center Data Protection Manager (DPM).
 - Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you reinstall VMM. However, some encrypted data such as Virtual Machine Roles cannot be reentered.
 - You can't back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM.
 - The data will be lost if the VMM management server fails.
@@ -211,8 +211,12 @@ Depending on your VMM configuration, you might need to do some of the following 
 
 If the VMM database was configured by using SQL Server Always On Availability Groups, you must complete a few tasks to ensure that the database is correctly configured with an availability group.
 
+::: moniker range="<sc-vmm-2019"
+
 ## Reinstall Windows Azure Pack
 If Windows Azure Pack (WAP) was deployed in your environment to support tenants by using VMM, then you"ll have to reinstall it after you restore the VMM environment. For more information about Windows Azure Pack for Windows Server, see [Windows Azure Pack for Windows Server](https://technet.microsoft.com/library/dn296435.aspx).
+
+::: moniker-end
 
 ## Install additional VMM consoles
 If you had to replace any servers on which VMM consoles were installed, re-install the consoles on those servers.
