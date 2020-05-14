@@ -19,7 +19,7 @@ This article describes the backup and recovery process in a System Center - Virt
 ## Before you start
 
 - Don't use checkpoints for disaster recovery. Checkpoints do not create full duplicates of the hard disk contents, nor do they copy data to a separate volume.
-- You can use a a checkpoint to serve as temporary backup, before updating an operating system on a virtual machine. This allows you to roll back the update if it has adverse effects.
+- You can use a checkpoint to serve as temporary backup, before updating an operating system on a virtual machine. This allows you to roll back the update if it has adverse effects.
 - You should use a backup application to back up and recover your data in case of catastrophic data loss. One option is System Center Data Protection Manager (DPM).
 - Data such as Remote Access Authorization (RAA) passwords and the product key can be entered when you reinstall VMM. However, some encrypted data such as Virtual Machine Roles cannot be reentered.
 - You can't back up and restore such data if you use the Data Protection application programming interface (DPAPI) for backing up VMM.
