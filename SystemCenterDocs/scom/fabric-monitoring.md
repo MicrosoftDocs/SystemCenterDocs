@@ -38,6 +38,6 @@ The VMM Fabric Health Dashboard management pack displays much of what the VMM ma
 
 ## Next steps
 
-- [Scoping the Fabric Health Dashboard to a specific cloud](scoping-fabric-health-dashboard.md)
+- [Scoping the Fabric Health Dashboard to a specific cloud](scope-fabric-health-dashboard.md)
 - [Fabric Monitoring diagram view](fabric-monitoring-diagram-view.md)
-- [Monitor cloud fabric using System Center Advisor](using-system-center-advisor.md)
+- [Monitor cloud fabric using System Center Advisor](use-system-center-advisor.md)
