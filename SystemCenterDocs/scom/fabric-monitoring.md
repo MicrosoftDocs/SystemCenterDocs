@@ -1,6 +1,6 @@
 ---
 ms.assetid: ea90aa0a-46e0-49f0-8560-5c35dd3a3c96
-title: Fabric Monitoring in Operation Manager
+title: Fabric Monitoring in System Center Operation Manager
 description: This article provides an overview of fabric monitoring
 author: v-anesh
 ms.author: v-anesh
