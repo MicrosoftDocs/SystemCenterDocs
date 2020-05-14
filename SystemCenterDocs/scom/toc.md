@@ -210,6 +210,11 @@
 #### [How to configure monitoring of network devices](manage-monitor-networkdevice-configure-monitoring.md)
 #### [Viewing network devices and data](manage-monitor-networkdevice-viewing-data.md)
 #### [Reports for network monitoring](manage-monitor-networkdevice-reports.md)
+### Fabric Monitoring
+#### [Fabric Monitoring](fabric-monitoring.md)
+#### [Scoping the Fabric Health Dashboard to a specific cloud](scope-fabric-health-dashboard.md)
+#### [The Fabric Monitoring Diagram view](fabric-monitoring-diagram-view.md)
+#### [Monitor cloud fabric using System Center Advisor](use-system-center-advisor.md)
 ### Monitoring Web application transactions
 #### [How to edit settings or requests for a web application](edit-web-application-settings.md)
 #### [Web application properties](web-application-properties.md)
