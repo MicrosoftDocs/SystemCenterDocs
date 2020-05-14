@@ -27,7 +27,7 @@ Use this information to evaluate if your SQL Server environment is ready to supp
 |**Service Management Automation** Web Service||||||&#8226;|&#8226;|&#8226;|&#8226;|
 
 > [!NOTE]
-> System Center 2016 - Service Manager requires SQL Server 2012 SP2 or later.
+> System Center 2016 - Service Manager requires SQL Server 2014 or later.
 >
 > System Center 2016 - Service Manager does not support setting the MultiSubnetFailover parameter. This parameter is not used in System Center 2016 - Service Manager connection strings.
 
