@@ -2,6 +2,7 @@
 ## [Service Manager](service-manager.md)
 ## [What's new in Service Manager ](whats-new-in-sm.md)
 # Get started
+## [Service Manager build versions](release-build-versions.md)
 ## [Evaluation and activation of Service Manager](sm-license.md)
 ## [Service Manager components](sm-parts.md)
 ## [Supported configurations](supported-configs.md)
