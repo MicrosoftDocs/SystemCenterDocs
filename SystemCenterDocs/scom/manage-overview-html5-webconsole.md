@@ -24,19 +24,19 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 2. Visualize monitoring data in HTML 5 dashboards with:
 
-   1. [Alert widget](manage-create-web-dashboard-alerts.md)
+    - [Alert widget](manage-create-web-dashboard-alerts.md)
 
-   2. [State widget](manage-create-web-dashboard-state.md)
+    - [State widget](manage-create-web-dashboard-state.md)
 
-   3. [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
+    - [Performance widget (also works like the Object by performance widget)](manage-create-web-dashboard-perf.md)  
 
-   4. [Topology widget](manage-create-web-dashboard-topology.md)
+    - [Topology widget](manage-create-web-dashboard-topology.md)
 
-   5. [Tile widget](manage-create-web-dashboard-tile.md)
+    - [Tile widget](manage-create-web-dashboard-tile.md)
 
-   6. [Custom widget](manage-create-web-dashboard-custom.md)
+    - [Custom widget](manage-create-web-dashboard-custom.md)
 
-   7. [PowerShell widget](manage-create-web-dashboard-posh.md) (available from 1807)
+    - [PowerShell widget](manage-create-web-dashboard-posh.md) (available from 1807)
 
 3. Perform create, edit and delete operations on the widgets.  
 
@@ -54,17 +54,17 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 10.	Visualize the following dashboards:
 
-    1. Web Application Status.
+    -  Web Application Status.
 
-    2. Management Group Health.
+    - Management Group Health.
 
-    3. Management Group Health Trend.
+    - Management Group Health Trend.
 
-    4. UNIX/Linux Computer Summary.
+    - UNIX/Linux Computer Summary.
 
-    5. Network Summary dashboard.
+    - Network Summary dashboard.
 
-    6. From 1807 and later, you can view Network Node and Network Interface Dashboard for Network Node/interface from the **Monitored Objects** page.
+    - From 1807 and later, you can view Network Node and Network Interface Dashboard for Network Node/interface from the **Monitored Objects** page.
 
 11. From 1807 and later, you can visualize the effective configuration of rules and monitors for a monitored object from the **Monitored objects** drill down page.
 
@@ -74,41 +74,41 @@ You can take advantage of the following HTML5 dashboard capabilities:
 
 14.	The following drill-down capabilities are available within the dashboards:
 
-    1. Analyze the issue by visualizing the relevant data for a monitored object, individual alert, rule, monitor, and class.
+    - Analyze the issue by visualizing the relevant data for a monitored object, individual alert, rule, monitor, and class.
 
-    2. Navigate from one object to another.
+    - Navigate from one object to another.
 
-    3. View the tasks associated with selected object.
+    - View the tasks associated with selected object.
 
 15. Explore the actions enabled in a widget:
 
-    1. Actions with **Alert** widget - Set resolution state on a single alert or select multiple alerts from within the widget.  View alert details delivering the same experience provided in the Operations console when viewing an alert - modify the alert resolution state and drill down to the monitoring object details page by selecting the alert source.
+    - Actions with **Alert** widget - Set resolution state on a single alert or select multiple alerts from within the widget.  View alert details delivering the same experience provided in the Operations console when viewing an alert - modify the alert resolution state and drill down to the monitoring object details page by selecting the alert source.
 
-    2. Export the data visible in the widget to Excel for further analysis.
+    - Export the data visible in the widget to Excel for further analysis.
 
-    3. Personalize by adding or removing columns to visualize and group alerts.
+    - Personalize by adding or removing columns to visualize and group alerts.
 
 16. Explore actions with **state** widget:
 
-    1. Export the data visible in the widget to an Excel format for further analysis.
+    - Export the data visible in the widget to an Excel format for further analysis.
 
-    2. Personalize by adding or removing columns to visualize and group objects.
+    - Personalize by adding or removing columns to visualize and group objects.
 
 17. Explore actions with **Topology** widget:
 
-    1. Edit state indicator layout and place object health icons anywhere on image.
+    - Edit state indicator layout and place object health icons anywhere on image.
 
 18. Explore actions with **Performance** widget:
 
-    1. Set vertical axis and specify the minimum and maximum values of vertical axis.
+    - Set vertical axis and specify the minimum and maximum values of vertical axis.
 
-    2. Export to Excel the legend data to Excel for further analysis.
+    - Export to Excel the legend data to Excel for further analysis.
 
-    3. Personalize by adding or removing columns for the legend, and enable or disable visualized objects by performance.
+    - Personalize by adding or removing columns for the legend, and enable or disable visualized objects by performance.
 
 19. Explore actions with **PowerShell** widget:
 
-    1. Export to Excel the legend data to Excel for further analysis.
+    - Export to Excel the legend data to Excel for further analysis.
 
 20.	Delete HTML5 dashboards from the Web console and in version 1807 and later, you can create dashboards or views to My workspace.  In version 1801, you add dashboards or views to My Workspace from the monitoring tree.
 
