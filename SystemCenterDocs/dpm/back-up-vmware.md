@@ -43,7 +43,7 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM cannot protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
 - DPM cannot detect or protect VMware vApps.
 - DPM cannot protect VMware VMs with existing snapshots.
-- Ensure that following network ports are open:
+- Ensure the following network ports are open:
     - TCP 443 between MABS and vCenter
     - TCP 443 and TCP 902 between MABS and ESXi host
 
