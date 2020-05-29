@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 04/17/2020
+ms.date: 05/29/2020
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -43,6 +43,9 @@ Before you start backing up a VMware virtual machine, review the following list 
 - DPM cannot protect VMware VMs with pass-through disks and physical raw device mappings (pRDM).
 - DPM cannot detect or protect VMware vApps.
 - DPM cannot protect VMware VMs with existing snapshots.
+- Ensure the following network ports are open:
+    - TCP 443 between MABS and vCenter
+    - TCP 443 and TCP 902 between MABS and ESXi host
 
 ## Configure DPM to protect VMware
 
