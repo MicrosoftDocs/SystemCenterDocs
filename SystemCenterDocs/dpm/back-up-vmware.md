@@ -78,7 +78,7 @@ Note the following details about credentials:
 
 You add a credential to the DPM server so you can pair it up with credential on the VMware server. Remember, the credential on the DPM server must be identical to the credential on the VMware server. To add a credential, in the **Manage Credentials** dialog:
 
-1. Click **Add** to open the Add Credential dialog.
+1. Click **Add** to open the **Add Credential** dialog.
    ![open Add Credentials dialog](./media/back-up-vmware/add-credential-dialog.png)
 
 2. Type your information in the **Name**, **Description**, **User name**, and **Password** fields. Once you've added text in the required fields, the **Add** button becomes active.
