@@ -17,7 +17,7 @@ ms.author: v-anesh
 DPM is compatible with most popular antivirus software products. We recommend
 the following steps to avoid conflicts:
 
-1.  **Disable real-time monitoring**—On the DPM server, disable real-time
+1.  **Disable real-time monitoring**— On the DPM server, disable real-time
     monitoring by the antivirus software for the following:
 
     -   \\XSD folder
