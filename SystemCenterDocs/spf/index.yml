@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Service Provider Foundation (SPF) documentation # < 60 chars
-summary: As a service provider you can use SPF to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your front-end portal. # < 160 chars
+title: Service Provider Foundation documentation # < 60 chars
+summary: As a service provider you can use Service Provider Foundation (SPF) to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your front-end portal. # < 160 chars
 
 metadata:
   title: Service Provider Foundation (SPF) documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
