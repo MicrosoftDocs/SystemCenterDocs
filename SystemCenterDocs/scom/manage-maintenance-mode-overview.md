@@ -43,9 +43,9 @@ You can either select one or more monitoring objects and place them into mainten
 > [!IMPORTANT]
 > See the following important Information about configuring and working with the Maintenance Schedule feature:
 > - You can change when a running schedule will end, but the change will only apply to the schedule that is running. If you want to edit the end time for future runs of that schedule, you must first stop the schedule and then apply your changes.
-> - When creating or editing a maintenance schedule, you cannot include more than 216 Objects at a time, you may receive the following error message:
+> - When creating or editing a maintenance schedule, you cannot include more than 216 Objects at a time. If the number of objects exceeds 216, you may receive the following error message:
 >  **The client has been disconnected from the server. Please call ManagementGroup.Reconnect() to reestablish the connection**
-> - To include more than 216 objects create single or multiple [groups](manage-create-manage-groups.md) with all of the objects you would like to add to the  maintenance schedule, and  create a maintenance schedule targeting the group(s). No more than 216 group objects can be added at a time.
+>  To include more than 216 objects, create  asingle or multiple [groups](manage-create-manage-groups.md) with all of the objects you would like to add to the  maintenance schedule, and  create/edit a maintenance schedule targeting the group(s). You cannot include more than 216 group objects at a time.
 >
 > - The time zone specified for the Windows computer hosting the Management Server role will be applied to the maintenance schedule.
 >
