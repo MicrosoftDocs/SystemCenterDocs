@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Operations Manager documentation # < 60 chars
-summary: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resloution. # < 160 chars
+summary: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resolution. # < 160 chars
 
 metadata:
   title: Operations Manager documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resloution. # Required; article description that is displayed in search results. < 160 chars.
+  description: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resolution. # Required; article description that is displayed in search results. < 160 chars.
   ms.prod: system-center
   ms.technology: operations-manager
   ms.topic: landing-page # Required
