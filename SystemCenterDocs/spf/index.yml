@@ -41,6 +41,10 @@ landingContent:
             url: plan-spf.md
           - text: Deploy SPF
             url: deploy-spf.md
+
+  # Card
+  - title: Upgrade SPF
+    linkLists:
       - linkListType: how-to-guide
         links:
           - text: Upgrade SPF
