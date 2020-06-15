@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Virtual Machine Manager documentation # < 60 chars
-summary: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds. # < 160 chars
+summary: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM, you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds. # < 160 chars
 
 metadata:
   title: Virtual Machine Manager documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds. # Required; article description that is displayed in search results. < 160 chars.
+  description: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM, you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds. # Required; article description that is displayed in search results. < 160 chars.
   ms.prod: system-center
   ms.technology: virtual-machine-manager
   ms.topic: landing-page # Required
