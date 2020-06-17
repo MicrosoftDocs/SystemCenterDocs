@@ -6,7 +6,7 @@ ms.custom: na
 ms.prod: system-center-2016
 author: JYOTHIRMAISURI
 ms.author: v-jysur
-ms.date: 04/22/2020
+ms.date: 06/09/2020
 ms.reviewer: na
 ms.suite: na
 ms.technology: service-manager
@@ -76,6 +76,8 @@ To help simplify upgrades, you can use Service Manager 2019 connectors with the 
 
  Use this information to evaluate if your SQL Server environment is ready to support the installation of or upgrade to System Center 2019. Use this information whether you are deploying one or multiple components of System Center.
 
+>[!NOTE]
+> During installation, select *SQL Server full-text search* on the computers running SQL Server that will host the Service Manager and data warehouse databases.
 
 ### SQL Server version support
 
