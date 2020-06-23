@@ -32,15 +32,15 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
 
     ![Log-on Service properties](media/gmsa/logon-service-properties.png)
 
-    Here are the account details shown in the above image:
+    Here are the account details:
 
-    **SMX\momActGMSA$**: Management Server Action account
+    - **SMX\momActGMSA$**: Management Server Action account
 
-    **SMX\momDASGMSA$**: Data Access Service account (SDK)
+    - **SMX\momDASGMSA$**: Data Access Service account (SDK)
 
-    **SMX\momDWGMSA$**: Data Warehouse Write account
-    
-    **SMX\momRepGMSA$**- Data Warehouse Read account
+    - **SMX\momDWGMSA$**: Data Warehouse Write account
+
+    - **SMX\momRepGMSA$**- Data Warehouse Read account
 
 
 ## Provide *Log on as a batch* right
