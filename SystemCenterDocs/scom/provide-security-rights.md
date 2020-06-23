@@ -35,8 +35,11 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
     Here are the account details shown in the above image:
 
     **SMX\momActGMSA$**: Management Server Action account
+
     **SMX\momDASGMSA$**: Data Access Service account (SDK)
+
     **SMX\momDWGMSA$**: Data Warehouse Write account
+    
     **SMX\momRepGMSA$**- Data Warehouse Read account
 
 
