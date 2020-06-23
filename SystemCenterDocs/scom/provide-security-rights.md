@@ -38,7 +38,7 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
 
     - **SMX\momDWGMSA$**: Data Warehouse Write account
 
-    - **SMX\momRepGMSA$**- Data Warehouse Read account
+    - **SMX\momRepGMSA$**: Data Warehouse Read account
 
         ![Log-on Service properties](media/gmsa/logon-service-properties.png)
 
