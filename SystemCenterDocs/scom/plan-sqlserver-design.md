@@ -175,9 +175,9 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
-- [Learn more](https://msdn.microsoft.com/library/ff878487.aspx) about Always On prerequisites
-- [Learn more](https://msdn.microsoft.com/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
-- [Learn more](https://msdn.microsoft.com/library/ff878265.aspx) about setting up an availability group
+- Learn more about [Always On prerequisites](https://msdn.microsoft.com/library/ff878487.aspx)
+- Learn more about [setting up a WSFC for Always On availability groups](https://msdn.microsoft.com/library/ff929171.aspx)
+- Learn more about [setting up an availability group](https://msdn.microsoft.com/library/ff878265.aspx)
 
 ### Multisubnet string
 
