@@ -5,7 +5,7 @@ description: This article provides information on how to provide security rights
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 06/23/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -30,7 +30,19 @@ To provide *log on as a service* right to gMSA accounts, follow these steps:
 3.	Double-click **Log on as a service** job under **Policy**.
 4.	Add the gMSAs to the list of accounts that are allowed to generate security audits.
 
-    ![Log-on Service properties](media/gmsa/logon-service-properties.png)
+    Here are the account details:
+
+    - **SMX\momActGMSA$**: Management Server Action account
+
+    - **SMX\momDASGMSA$**: Data Access Service account (SDK)
+
+    - **SMX\momDWGMSA$**: Data Warehouse Write account
+
+    - **SMX\momRepGMSA$**: Data Warehouse Read account
+
+        ![Log-on Service properties](media/gmsa/logon-service-properties.png)
+
+
 
 ## Provide *Log on as a batch* right
 To grant *log on as a batch right* to Data Writer and Data Reader gMSAs, follow these steps:
