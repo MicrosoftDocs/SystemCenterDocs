@@ -196,7 +196,7 @@ The following steps are for configuring permission inheritance for the System Ce
 
 ::: moniker-end
 
-All information and content at https://blogs.technet.com/b/momteam/archive/2008/01/31/running-the-web-console-server-on-a-standalone-server-using-windows-authentication.aspx is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
+All information and content at https://techcommunity.microsoft.com/t5/system-center-blog/running-the-web-console-server-on-a-standalone-server-using/ba-p/340345 is provided by the owner or the users of the website. Microsoft makes no warranties, express, implied or statutory, as to the information at this website.
 
 ## Next steps
 
