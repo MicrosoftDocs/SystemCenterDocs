@@ -1,0 +1,55 @@
+### YamlMime:Landing
+
+title: Data Protection Manager documentation # < 60 chars
+summary: Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data. # < 160 chars
+
+metadata:
+  title: Data Protection Manager documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Data Protection Manager (DPM) is a robust enterprise backup and recovery system that contributes to your BCDR strategy by facilitating the backup and recovery of enterprise data. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: system-center
+  ms.technology: data-protection-manager
+  ms.topic: landing-page # Required
+  author: rayne-wiselman #Required; your GitHub user alias, with correct capitalization.
+  ms.author: raynew #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/05/2017 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Data Protection Manager (DPM)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is DPM?
+            url: dpm-overview.md
+          - text: What's new in DPM
+            url: what-s-new-in-dpm.md
+      - linkListType: concept
+        links:
+          - text: How does DPM work?
+            url: how-dpm-protects-data.md
+          - text: What does DPM protect?
+            url: dpm-protection-matrix.md
+          - text: What DPM supports
+            url: dpm-support-issues.md
+
+  # Card (optional)
+  - title: Plan and deploy DPM
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Get ready to deploy DPM servers
+            url: plan-dpm-deployment.md
+          - text: Deploy the DPM protection agent
+            url: deploy-dpm-protection-agent.md
+
+  # Card
+  - title: Monitor DPM
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Monitor DPM
+            url: monitor-dpm.md

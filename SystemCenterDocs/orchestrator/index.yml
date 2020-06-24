@@ -1,0 +1,51 @@
+### YamlMime:Landing
+
+title: Orchestrator documentation # < 60 chars
+summary: Orchestrator is a workflow management solution for the data center. With Orchestrator you can automate the creation, monitoring, and deployment of resources in your environment. # < 160 chars
+
+metadata:
+  title: Orchestrator documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Orchestrator is a workflow management solution for the data center. With Orchestrator you can automate the creation, monitoring, and deployment of resources in your environment. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: system-center
+  ms.technology: orchestrator
+  ms.topic: landing-page # Required
+  author: rayne-wiselman #Required; your GitHub user alias, with correct capitalization.
+  ms.author: raynew #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/05/2017 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Orchestrator
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Orchestrator?
+            url: learn-about-orchestrator.md
+          - text: What's new in System Center Orchestrator
+            url: whats-new-in-orch.md
+      - linkListType: how-to-guide
+        links:
+          - text: Automate with runbooks
+            url: automate-runbooks.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Install Orchestrator
+            url: install.md
+          - text: Work with runbooks in the Orchestrator console
+            url: console-overview.md
+
+  # Card
+  - title: Design and build runbooks
+    linkLists:
+      - linkListType: how-to-guide
+        links:      
+          - text: Design and build runbooks
+            url: design-and-build-runbooks.md

@@ -1,0 +1,51 @@
+### YamlMime:Landing
+
+title: Service Provider Foundation documentation # < 60 chars
+summary: As a service provider you can use Service Provider Foundation (SPF) to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your front-end portal. # < 160 chars
+
+metadata:
+  title: Service Provider Foundation documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: As a service provider you can use Service Provider Foundation (SPF) to offer infrastructure as a service (IaaS) to your clients. Your clients can request IaaS resources managed by VMM through your front-end portal. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: system-center
+  ms.technology: service-provider-foundation
+  ms.topic: landing-page # Required
+  author: rayne-wiselman #Required; your GitHub user alias, with correct capitalization.
+  ms.author: raynew #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/10/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Service Provider Foundation (SPF)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is SPF?
+            url: overview.md
+          - text: What's new in SPF
+            url: whats-new-in-spf.md
+      - linkListType: reference
+        links:
+          - text: Release notes for SPF
+            url: release-notes-spf.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Plan SPF deployment
+            url: plan-spf.md
+          - text: Deploy SPF
+            url: deploy-spf.md
+
+  # Card
+  - title: Upgrade SPF
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Upgrade SPF
+            url: upgrade-spf.md
