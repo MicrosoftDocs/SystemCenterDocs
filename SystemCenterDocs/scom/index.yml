@@ -1,0 +1,51 @@
+### YamlMime:Landing
+
+title: Operations Manager documentation # < 60 chars
+summary: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resolution. # < 160 chars
+
+metadata:
+  title: Operations Manager documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Operations Manager monitors services, devices, and operations for many computers from a single console. With Operations Manager you can check the health, performance, and availability for all monitored objects in your environment, and identify problems for rapid resolution. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: system-center
+  ms.technology: operations-manager
+  ms.topic: landing-page # Required
+  author: JYOTHIRMAISURI #Required; your GitHub user alias, with correct capitalization.
+  ms.author: magoedte #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/05/2017 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Operations Manager
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Operation Manager overview
+            url: welcome.md
+          - text: Operations Manager key concepts
+            url: key-concepts.md
+
+  # Card (optional)
+  - title: Plan and deploy Operations Manager
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Plan your Operations Manager installation
+            url: plan-overview.md
+      - linkListType: deploy
+        links:
+          - text: Deploy System Center Operations Manager
+            url: deploy-overview.md
+
+  # Card
+  - title: Resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Quick reference to Operations Manager tasks
+            url: manage-quick-reference.md
+          - text: Learn about Management Packs
+            url: manage-overview-management-pack.md
