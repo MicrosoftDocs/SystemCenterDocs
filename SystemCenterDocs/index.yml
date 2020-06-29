@@ -1,0 +1,184 @@
+### YamlMime:Hub
+
+title: System Center documentation
+summary: System Center documentation for versions 2016 and above. The documentation covers the LTSC and SAC versions of System Center.
+
+metadata:
+  title: System Center documentation
+  description: System Center documentation for versions 2016 and above. The documentation covers the LTSC and SAC versions of System Center.
+  ms.topic: hub-page
+  author: JYOTHIRMAISURI
+  ms.author: apexprodleads
+  ms.date: 06/29/2020
+
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+  items:
+    - title: Microsoft Endpoint Configuration Manager
+      links:
+        - url: https://docs.microsoft.com/en-us/mem/configmgr/core/understand/introduction
+          itemType: overview
+          text: What is Configuration Manager?
+        - url: https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/changes/whats-new-incremental-versions
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/learn/modules/manage-windows-10-through-co-management-by-using-system-center-configuration-manager/
+          itemType: learn
+          text: Manage Windows 10 through co-management
+        - url: https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/configs/supported-configurations
+          itemType: concept
+          text: Supported configurations
+      footerLink:
+        url: https://docs.microsoft.com/en-us/mem/configmgr/
+        text: See more
+
+    - title: Data Protection Manager
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/dpm/dpm-overview
+          itemType: overview
+          text: What is Data Protection Manager?
+        - url: https://docs.microsoft.com/en-us/system-center/dpm/what-s-new-in-dpm
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/dpm/plan-dpm-deployment
+          itemType: how-to-guide
+          text: Get ready to deploy DPM servers
+        - url: https://docs.microsoft.com/en-us/powershell/module/dataprotectionmanager/
+          itemType: reference
+          text: PowerShell
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/dpm/
+        text: See more
+
+    - title: Operations Manager
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/scom/welcome
+          itemType: overview
+          text: What is Operations Manager?
+        - url: https://docs.microsoft.com/en-us/system-center/scom/whats-new-in-om
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/scom/plan-overview
+          itemType: how-to-guide
+          text: Plan your Operations Manager installation
+        - url: https://docs.microsoft.com/en-us/powershell/module/operationsmanager/
+          itemType: reference
+          text: PowerShell
+        - url: https://docs.microsoft.com/rest/operationsmanager
+          itemType: reference
+          text: REST API
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/scom/
+        text: See more
+
+    - title: Orchestrator
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/orchestrator/learn-about-orchestrator
+          itemType: overview
+          text: What is Orchestrator?
+        - url: https://docs.microsoft.com/en-us/system-center/orchestrator/whats-new-in-orch
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/orchestrator/install
+          itemType: how-to-guide
+          text: Install Orchestrator
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/orchestrator/
+        text: See more
+
+    - title: Service Manager
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/scsm/service-manager
+          itemType: overview
+          text: What is Service Manager?
+        - url: https://docs.microsoft.com/en-us/system-center/scsm/whats-new-in-sm
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/scsm/plan-sm
+          itemType: how-to-guide
+          text: Plan for Service Manager
+        - url: https://docs.microsoft.com/en-us/powershell/module/system.center.service.manager/
+          itemType: reference
+          text: PowerShell
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/scsm/
+        text: See more
+
+    - title: Service Management Automation
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/sma/overview-of-service-management-automation
+          itemType: overview
+          text: What is Service Management Automation?
+        - url: https://docs.microsoft.com/en-us/system-center/sma/whats-new-in-sma
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/sma/deploy
+          itemType: how-to-guide
+          text: Deploy Service Management Automation
+        - url: https://docs.microsoft.com/en-us/powershell/module/microsoft.systemcenter.servicemanagementautomation/
+          itemType: reference
+          text: PowerShell
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/sma/
+        text: See more
+
+    - title: Virtual Machine Manager
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/vmm/overview
+          itemType: overview
+          text: What is Virtual Machine Manager?
+        - url: https://docs.microsoft.com/en-us/system-center/vmm/whats-new-in-vmm
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/vmm/plan-install
+          itemType: how-to-guide
+          text: Plan Virtual Machine Manager installation
+        - url: https://docs.microsoft.com/en-us/powershell/module/virtualmachinemanager/
+          itemType: reference
+          text: PowerShell
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/vmm/
+        text: See more
+
+    - title: Service Provider Foundation
+      links:
+        - url: https://docs.microsoft.com/en-us/system-center/spf/overview
+          itemType: overview
+          text: What is Service Provider Foundation?
+        - url: https://docs.microsoft.com/en-us/system-center/spf/whats-new-in-spf
+          itemType: concept
+          text: What's new
+        - url: https://docs.microsoft.com/en-us/system-center/spf/plan-spf
+          itemType: how-to-guide
+          text: Plan Service Provider Foundation deployment
+        - url: https://docs.microsoft.com/en-us/powershell/module/spfadmin/
+          itemType: reference
+          text: PowerShell
+      footerLink:
+        url: https://docs.microsoft.com/en-us/system-center/spf/
+        text: See more
+
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Resources
+      summary: 
+      items:
+        # Card
+        - title: System Center
+          links:
+            - text: Get a free trial
+              url: https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-2019
+            - text: Watch System Center in Action
+              url: https://channel9.msdn.com/Blogs/hybrid-it-management
+            - text: Blog
+              url: https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog
+            - text: Conversations
+              url: https://techcommunity.microsoft.com/t5/system-center/bd-p/SystemCenter
+        # Card
+        - title: UserVoice
+          links:
+            - text: Operations Manager
+              url: https://systemcenterom.uservoice.com/forums/293064-general-operations-manager-feedback
+            - text: Virtual Machine Manager
+              url: https://systemcentervmm.uservoice.com/forums/280803-general-vmm-feedback

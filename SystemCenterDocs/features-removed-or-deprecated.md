@@ -62,7 +62,7 @@ You will not be able to either create or import a service templates with a Serve
 ## Next Steps
 
 See [Upgrade to System Center 2016](upgrade-to-system-center-2016.md).
-Go to the [System Center documentation center](index.md), to see all technologies in System Center 2016.
+Go to the [System Center documentation center](index.yml), to see all technologies in System Center 2016.
 See the introductory information or important concepts about each of the technologies in System Center 2016.
 
 * [Data Protection Manager](/system-center/dpm/dpm-overview)

@@ -240,7 +240,7 @@ Note: If the VMMM database is hosted on a SQL Server running in the "Always on" 
 
 ## Next steps
 
-See the introductory information or important concepts about each of the technologies in System Center 2016. To view all of the service landing pages, see the [System Center documentation page](index.md).
+See the introductory information or important concepts about each of the technologies in System Center 2016. To view all of the service landing pages, see the [System Center documentation page](index.yml).
 
 * [Data Protection Manager](/system-center/dpm/dpm-overview)
 * [Operations Manager](/system-center/scom/key-concepts)
