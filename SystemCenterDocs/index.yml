@@ -9,12 +9,12 @@ metadata:
   ms.topic: hub-page
   author: JYOTHIRMAISURI
   ms.author: apexprodleads
-  ms.date: 06/29/2020
+  ms.date: 06/30/2020
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
   items:
-    - title: Microsoft Endpoint Configuration Manager
+    - title: Configuration Manager
       links:
         - url: https://docs.microsoft.com/mem/configmgr/core/understand/introduction
           itemType: overview
@@ -22,9 +22,6 @@ conceptualContent:
         - url: https://docs.microsoft.com/mem/configmgr/core/plan-design/changes/whats-new-incremental-versions
           itemType: concept
           text: What's new
-        - url: https://docs.microsoft.com/learn/modules/manage-windows-10-through-co-management-by-using-system-center-configuration-manager/
-          itemType: learn
-          text: Manage Windows 10 through co-management
         - url: https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/supported-configurations
           itemType: concept
           text: Supported configurations
@@ -170,6 +167,8 @@ additionalContent:
               url: https://www.microsoft.com/evalcenter/evaluate-system-center-2019
             - text: Watch System Center in Action
               url: https://channel9.msdn.com/Blogs/hybrid-it-management
+            - text: Manage Windows 10 through co-management
+              url: https://docs.microsoft.com/learn/modules/manage-windows-10-through-co-management-by-using-system-center-configuration-manager/
             - text: Blog
               url: https://techcommunity.microsoft.com/t5/System-Center-Blog/bg-p/SystemCenterBlog
             - text: Conversations
