@@ -5,7 +5,7 @@ description: This article provides installation instructions for VMM
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/14/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -156,6 +156,9 @@ ForceHAVMMUninstall | 0: Do not force uninstallation if setup.exe cannot verify 
 Group Managed Service Account (gMSA) helps improve the security posture and provides convenience  through automatic password management, simplified service principle name (SPN) management and the ability to delegate the management to other administrators.
 
 VMM 2019 supports the use of gMSA for *Management server service account*.
+
+>[!NOTE]
+> gMSA, when used as VMM Service account, needs to have *logon as a service* and *Replace a process level token* permissions. 
 
 **Prerequisites**
 
