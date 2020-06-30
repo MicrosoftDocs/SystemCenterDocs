@@ -158,7 +158,7 @@ Group Managed Service Account (gMSA) helps improve the security posture and prov
 VMM 2019 supports the use of gMSA for *Management server service account*.
 
 >[!NOTE]
-> gMSA, when used as VMM Service account, needs to have *logon as a service* and *Replace process level* token permissions. Without these permissions, clusters cannot be created.   
+> gMSA, when used as VMM Service account, needs to have *logon as a service* and *Replace a process level token* permissions. 
 
 **Prerequisites**
 
