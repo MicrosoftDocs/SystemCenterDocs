@@ -21,7 +21,7 @@ The following steps are necessary to configure Secure Sockets Layer (SSL) encryp
 >[!NOTE]
 >When creating the certificate, you must provide the fully qualified domain name (FQDN) of the host and domain name in the **Common name** field to match the address users would enter in their web browser to access the Web console.  
 >
-> If you are experiencing issues with authentication prompts when attempting to access the Web console, ensure that the fully qualified domain name (FQDN) URL is included in **Local Intranet Sites** in Internet Explorer.
+> If you are experiencing issues with authentication prompts when attempting to access the Web console, check that the fully qualified domain name (FQDN) URL is included in **Local Intranet Sites** in Internet Explorer.
 
 ::: moniker range="sc-om-2019"
 
