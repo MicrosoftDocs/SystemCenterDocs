@@ -5,7 +5,7 @@ description: This article provides design guidance for anti-virus exclusions as 
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/06/2018
+ms.date: 07/06/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -16,15 +16,23 @@ ms.topic: article
 
 This article outlines antivirus exclusions as they pertain to System Center - Operations Manager.  For earlier versions of Operations Manager, see [Recommendations for antivirus exclusions](https://support.microsoft.com/en-us/help/975931/recommendations-for-antivirus-exclusions-that-relate-to-operations-man).
 
+For specific exclusion recommendations for supported versions of SQL Server, see [KB309422](https://support.microsoft.com/help/309422/choosing-antivirus-software-for-computers-that-run-sql-server).
+
 ## Exclusions by process executable
 
 If exclusions are configured based on process executable, exclude the following processes:
-* Monitoringhost.exe
+
+|Context | Process |
+|--------|---------|
+|**Management servers** |MonitoringHost.exe<br> HealthService.exe<br> Microsoft.Mom.Sdk.ServiceHost.exe<br> cshost.exe |
+|**Gateway server** |HealthService.exe<br> MonitoringHost.exe |
+|**Windows agent** |HealthService.ex<br> MonitoringHost.exe |
 
 >[!NOTE]
 >You must be careful when you add exclusions that are based on executables. Incorrectly configured exclusions may prevent some potentially dangerous programs from being detected.  Therefore, we do not recommend relying on exclusions that are based on any process executables for Operations Manager servers.
 
 ## Exclusions by directories
+
 The following directory-specific exclusions for Operations Manager includes real-time scans, scheduled scans, and local scans. The directories that are listed here are default application directories so you may have to modify these paths based on your specific environment. Only the following Operations Manager related directories should be excluded.
 
 >[!NOTE]
@@ -33,9 +41,11 @@ The following directory-specific exclusions for Operations Manager includes real
 |Component | Directory Exclusion |
 |----------|----------|
 |SQL Server database server | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, and the **master** and **tempdb** databases. |
-|Management server | C:\Program Files\Microsoft System Center 2016\Operations Manager\Server\Health Service State for Operations Manager 2016<br> C:\Program Files\Microsoft System Center\Operations Manager\Server\Health Service State for Operations Manager 1801 |
-| Gateway server | C:\Program Files\System Center Operations Manager\Gateway\Health Service State |
-| Agent | C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State |
+|Management server | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\Health Service State for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State for Operations Manager 1801 and higher. |
+|Gateway server | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
+|Agent |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
+|Reporting | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting for Operations Manager 1801 and higher. |
+|Web console |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole for Operations Manager 1801 and higher. |
 
 ## Exclusion of file type by extension
 
