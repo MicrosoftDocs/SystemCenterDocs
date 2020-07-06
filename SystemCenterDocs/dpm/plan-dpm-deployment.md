@@ -87,4 +87,4 @@ Before you begin a DPM deployment, verify that appropriate users have been grant
 |Recover SharePoint data|SharePoint farm admin that's also an admin on the front-end Web server on which the protection agent is installed.|
 
 >[!NOTE]
-> DPM server and protected computer communicates using DCOM. During DPMRA installation,  DPM server’s  account  is added to the Distributed COM Users security group on the protected computer.
+> DPM server and protected computer communicates using DCOM. During DPMRA installation,  DPM server’s  account is added to the *Distributed COM Users* security group on the protected computer.
