@@ -26,7 +26,7 @@ If exclusions are configured based on process executable, exclude the following 
 |--------|---------|
 |**Management servers** |MonitoringHost.exe<br> HealthService.exe<br> Microsoft.Mom.Sdk.ServiceHost.exe<br> cshost.exe |
 |**Gateway server** |HealthService.exe<br> MonitoringHost.exe |
-|**Windows agent** |HealthService.ex<br> MonitoringHost.exe |
+|**Windows agent** |HealthService.exe<br> MonitoringHost.exe |
 |**Web Console server** |HealthService.exe<br> MonitoringHost.exe |
 |**SQL Server**<sup>1</sup> |HealthService.exe<br> MonitoringHost.exe |
 
@@ -47,7 +47,7 @@ The following directory-specific exclusions for Operations Manager include real-
 |**SQL Server database server** | Exclude the directory containing the .ldf and .mdf files for all Operations Manager databases,<br>Report server databases, and the **master** and **tempdb** databases. |
 |**Management server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\Health Service State for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State for Operations Manager 1801 and higher. |
 |**Gateway server** | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
-|**Agent** |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
+|**Windows agent** |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
 |**Reporting server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting for Operations Manager 1801 and higher. |
 |**Web Console server** |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole for Operations Manager 1801 and higher. |
 
