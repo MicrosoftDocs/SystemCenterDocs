@@ -57,8 +57,8 @@ The following file name extension-specific exclusions for Operations Manager inc
 
 |Component | File Type Extension Exclusion |
 |----------|----------|
-| SQL Server database server | Exclude file type extension .ldf and .mdf.<br>These exclusions include SQL Server database files for all Operations Manager databases,<br>Report Server databases, and the system database files for **master** and **tempdb**. |
-| Management Servers<br>Gateway Servers<br>Agents | Exclude file type extensions .edb, .chk, and .log.<br>These exclusions includes the queue and log files used by Operations Manager. |
+| SQL Server database server | Exclude file type extension .ldf and .mdf.<br>These exclusions include SQL Server database files for all Operations Manager databases, Report Server databases, and the system database files for **master** and **tempdb**. |
+| Management Servers<br>Gateway Servers<br>Agents | Exclude file type extensions .edb, .chk, and .log. These exclusions includes the queue and log files used by Operations Manager. |
 
 ## Next steps
 
