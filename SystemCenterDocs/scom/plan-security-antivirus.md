@@ -48,7 +48,7 @@ The following directory-specific exclusions for Operations Manager include real-
 |**Management server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Server\Health Service State for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Server\Health Service State for Operations Manager 1801 and higher. |
 |**Gateway server** | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
 |**Agent** |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
-|**Reporting** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting for Operations Manager 1801 and higher. |
+|**Reporting server** | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting for Operations Manager 1801 and higher. |
 |**Web Console server** |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole for Operations Manager 1801 and higher. |
 
 ## Exclusion of file type by extension
