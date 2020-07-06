@@ -27,6 +27,10 @@ If exclusions are configured based on process executable, exclude the following 
 |**Management servers** |MonitoringHost.exe<br> HealthService.exe<br> Microsoft.Mom.Sdk.ServiceHost.exe<br> cshost.exe |
 |**Gateway server** |HealthService.exe<br> MonitoringHost.exe |
 |**Windows agent** |HealthService.ex<br> MonitoringHost.exe |
+|**Web Console server** |HealthService.exe<br> MonitoringHost.exe |
+|**SQL Server**<sup>1</sup> |HealthService.exe<br> MonitoringHost.exe |
+
+<sup>1</sup> For SQL Server servers hosting the Operations Manager databases (Operational, Data Warehouse, ACS) and Reporting server role.
 
 >[!NOTE]
 >You must be careful when you add exclusions that are based on executables. Incorrectly configured exclusions may prevent some potentially dangerous programs from being detected.  Therefore, we do not recommend relying on exclusions that are based on any process executables for Operations Manager servers.
@@ -45,7 +49,7 @@ The following directory-specific exclusions for Operations Manager includes real
 |Gateway server | %ProgramFiles%\System Center Operations Manager\Gateway\Health Service State |
 |Agent |%ProgramFiles%\Microsoft Monitoring Agent\Agent\Health Service State |
 |Reporting | %ProgramFiles%\Microsoft System Center 2016\Operations Manager\Reporting for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center\Operations Manager\Reporting for Operations Manager 1801 and higher. |
-|Web console |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole for Operations Manager 1801 and higher. |
+|Web Console server |%ProgramFiles%\Microsoft System Center 2016\Operations Manager\WebConsole for Operations Manager 2016<br> %ProgramFiles%\Microsoft System Center \Operations Manager\WebConsole for Operations Manager 1801 and higher. |
 
 ## Exclusion of file type by extension
 
