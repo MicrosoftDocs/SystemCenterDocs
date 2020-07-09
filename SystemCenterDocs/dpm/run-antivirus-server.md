@@ -45,20 +45,18 @@ the following steps to avoid conflicts:
         - C:\\Program Files\\Microsoft Azure Recovery Services Agent\\ folders
         - Scratch location (if you're not using the standard location)
 
+    The default DPM installation folders for DPM are as follows:
 
+    - For DPM 2016 - C:\\Program Files\\Microsoft System Center 2016\\DPM
+    - For DPM 2019 - C:\\Program Files\\Microsoft System Center\\DPM
+
+    You can also run the following command to find the install folder path:
+
+        ```
+        Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f "InstallPath"
+        ```
 2.  **Disable real-time monitoring on the Protected Server** — Disable the real time monitoring of **dpmra.exe**, which is located in the folder **C:\Program Files\Microsoft Data Protection Manager\DPM\bin**, on the protected server.
 
 3. **Configure anti-virus software to delete the infected files on protected servers and the DPM server** — To prevent data corruption of replicas and recovery points, configure the antivirus software to delete infected files, rather than automatically cleaning or quarantining them. Automatic cleaning and quarantining might cause the antivirus software to modify files, making changes that DPM cannot detect.
 
-You should run a manual synchronization with a consistency. Check the job each time that the antivirus software deletes a file from the replica, even though the replica is marked as inconsistent
-
-
-The default DPM installation folders for DPM are as follows:
-- For DPM 2016 - C:\\Program Files\\Microsoft System Center 2016\\DPM
-- For DPM 2019 - C:\\Program Files\\Microsoft System Center\\DPM
-
-You can also run the following command to find the install folder path:
-
-```
-Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f "InstallPath"
-```
+    You should run a manual synchronization with a consistency. Check the job each time that the antivirus software deletes a file from the replica, even though the replica is marked as inconsistent
