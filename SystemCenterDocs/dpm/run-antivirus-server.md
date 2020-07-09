@@ -20,9 +20,9 @@ the following steps to avoid conflicts:
 1.  **Disable real-time monitoring**— disable real-time
     monitoring by the antivirus software for the following:
 
-    -   C:\\Program Files\\<DPM Installation path>\XSD folder
+    -   C:\\Program Files\\<DPM Installation path>\\XSD folder
 
-    -  	C:\\Program Files\\<DPM Installation path>\Temp folder
+    -  	C:\\Program Files\\<DPM Installation path>\\Temp folder
 
     -   Drive letter of Modern Backup Storage volume
 
