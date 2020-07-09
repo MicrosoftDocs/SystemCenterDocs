@@ -15,8 +15,8 @@ monikerRange: 'sc-sm-2016'
 
 There are a couple of versions of the Self-Service portal:
 
-- The Sevice Manager 2012 R2 Silverlight-based version. 
-- The new HTML 5-based version. This replaces the Silverlight version. 
+- The Sevice Manager 2012 R2 Silverlight-based version.
+- The new HTML 5-based version. This replaces the Silverlight version.
 
 Follow the upgrade instructions based on the version your're running:
 
@@ -25,7 +25,7 @@ Follow the upgrade instructions based on the version your're running:
 
 The upgrade steps depend whether you're running the Self-Service Portal on a standalone machine, or colocated with Service Manager.
 
-### Upgrade from Silverlight on a standalone computer
+## Upgrade from Silverlight on a standalone computer
 
 1. On the Service Manager 2012 R2 Silverlight Self Service Portal, uninstall the Silverlight-based Self Service portal. Support for Silverlight was removed with Service Manager 2016.
 2. Install the new HTML5-based Self Service Portal with [these instructions](~/scsm/deploy-self-service-portal.md).
@@ -33,7 +33,7 @@ The upgrade steps depend whether you're running the Self-Service Portal on a sta
 
 ## Upgrade from Silverlight installed on the primary management server
 
-Installing the Self-Service Portal on the same computer as the primary management server is not recommended. However, if you've done this, use the following steps to upgrade to Service Manager 2016. 
+Installing the Self-Service Portal on the same computer as the primary management server is not recommended. However, if you've done this, use the following steps to upgrade to Service Manager 2016.
 
 1.	Add the secondary Service Manager 2012 R2 management server to a management group.
 2.	Promote the secondary management server to a primary management server role, which will move the current primary management server to a secondary role.
@@ -43,7 +43,7 @@ Installing the Self-Service Portal on the same computer as the primary managemen
 6.  Install the Service Manager 2016 version of the Self Service Portal (HTML5) on same computer as the secondary management server.
 
 
-# Upgrade from Silverlight installed on the secondary management server
+## Upgrade from Silverlight installed on the secondary management server
 1.  Uninstall Service Manager 2012 R2. This step uninstalls the management server role from the computer.
 2.  Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.
 3.  Install the secondary Management Server 2016 role on new computer.
@@ -61,7 +61,7 @@ Upgrade the Self Service Portal directly from Service Manager 2012 R2 to Service
 ## Upgrade from HTML5 installed on the management server
 
 Installing the Self Service portal on the same computer as the primary management server is not recommended.* However, if you've done this, use the following steps to upgrade to Service Manager 2016.
- 
+
 1.	Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state
 2.	Download the patch "SM2016SSP_UpgradeFix_20160601.exe" from [here](https://go.microsoft.com/fwlink/?LinkID=798214), and install it on the server where the 2012 R2 Self Service Portal is installed.
 3.	Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.

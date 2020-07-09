@@ -206,6 +206,6 @@ You can use the following procedures to validate the single\-computer installati
 
 9. Exit Microsoft SQL&nbsp;Server Management Studio.
 
-# Next steps
+## Next steps
 
 - Review [Install Service Manager on two computers](install-two-computers.md) to install Service Manager on two computers. This scenario is useful for testing Service Manager in a lab environment.
