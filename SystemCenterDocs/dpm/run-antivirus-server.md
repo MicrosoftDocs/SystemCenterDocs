@@ -51,7 +51,7 @@ the following steps to avoid conflicts:
 
     You should run a manual synchronization with a consistency. Check the job each time that the antivirus software deletes a file from the replica, even though the replica is marked as inconsistent
 
-## Default nstallation folders
+## Default installation folders
 
 The default installation folders for DPM are as follows:
 
