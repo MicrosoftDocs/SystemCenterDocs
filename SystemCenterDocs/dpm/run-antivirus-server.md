@@ -14,17 +14,15 @@ ms.author: v-anesh
 
 # Run antivirus software on the DPM server
 
-# Run antivirus software on the DPM server
-
 DPM is compatible with most popular antivirus software products. We recommend
 the following steps to avoid conflicts:
 
 1.  **Disable real-time monitoring**— disable real-time
     monitoring by the antivirus software for the following:
 
-    -   C:\\Program Files\\<DPM Installation path>\\XSD folder
+    -   C:\\Program Files\\<DPM Installation path>\XSD folder
 
-    -  	C:\\Program Files\\<DPM Installation path>\\Temp folder
+    -  	C:\\Program Files\\<DPM Installation path>\Temp folder
 
     -   Drive letter of Modern Backup Storage volume
 
@@ -40,8 +38,8 @@ the following steps to avoid conflicts:
         performance because the antivirus software scans files that the csc.exe
         process emits when it generates XML messages.**CSC.exe** is located in the following paths:
 
-            - \\Windows\\Microsoft.net\\Framework\\v2.0.50727\\csc.exe
-            - \\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe
+        - \\Windows\\Microsoft.net\\Framework\\v2.0.50727\\csc.exe
+        - \\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\csc.exe
 
 2.  **Disable real-time monitoring on the Protected Server** — Disable the real time monitoring of **dpmra.exe**, which is located in the folder C:\Program Files\Microsoft Data Protection Manager\DPM\bin, on the protected server.
 
@@ -56,6 +54,6 @@ The default DPM installation folders for DPM are as follows:
 
 You can also run the following command to find the install folder path:
 
-```powershell
+```
 Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup" /s /f "InstallPath"
 ```
