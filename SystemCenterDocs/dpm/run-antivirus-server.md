@@ -51,7 +51,7 @@ the following steps to avoid conflicts:
 
     You should run a manual synchronization with a consistency. Check the job each time that the antivirus software deletes a file from the replica, even though the replica is marked as inconsistent
 
-## Default installation folders
+## Default nstallation folders
 
 The default installation folders for DPM are as follows:
 
@@ -60,6 +60,6 @@ The default installation folders for DPM are as follows:
 
 You can also run the following command to find the install folder path:
 
-    ```
-    Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f "InstallPath"
-    ```
+```
+Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f "InstallPath"
+```
