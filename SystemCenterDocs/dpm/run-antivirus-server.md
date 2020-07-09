@@ -20,13 +20,13 @@ the following steps to avoid conflicts:
 1.  **Disable real-time monitoring**— disable real-time
     monitoring by the antivirus software for the following:
 
-    -   C:\\Program Files\\<DPM Installation path>\\XSD folder
+    -   C:\\Program Files\<DPM Installation path\>\XSD folder
 
-    -  	C:\\Program Files\\<DPM Installation path>\\Temp folder
+    -  	C:\\Program Files\<DPM Installation path\>\Temp folder
 
     -   Drive letter of Modern Backup Storage volume
 
-    -   Replica and transfer logs—To do this, disable real-time monitoring of
+    -   Replica and transfer logs — To do this, disable real-time monitoring of
         **dpmra.exe**, which is located in the folder **Program Files\\Microsoft Data Protection Manager\DPM\bin**. Real-time monitoring degrades performance
         because the antivirus software scans the replicas each time DPM
         synchronizes with the protected server, and scans all affected files
@@ -60,5 +60,5 @@ The default DPM installation folders for DPM are as follows:
 You can also run the following command to find the install folder path:
 
 ```
-Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup" /s /f "InstallPath"
+Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f "InstallPath"
 ```
