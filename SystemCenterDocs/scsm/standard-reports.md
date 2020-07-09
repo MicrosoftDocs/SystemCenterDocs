@@ -228,7 +228,7 @@ You can set up subscriptions to your reports in Service Manager through SQL&nbsp
 
 -   Complete the procedures in the [Subscriptions and Delivery \(Reporting Services\)](https://go.microsoft.com/fwlink/p/?LinkID=158830) topic.   
 
-# Schedule a standard report
+## Schedule a standard report
 
 In Service Manager, you can schedule a linked report to run on a regular basis to ensure that the information is up to date. To do this, use SQL&nbsp;Server Reporting Services \(SSRS\) Report Manager. In SSRS Report Manager, you can schedule reports to run one time or on a continuous basis at intervals of hours, days, weeks, or months. You can do the following:  
 
