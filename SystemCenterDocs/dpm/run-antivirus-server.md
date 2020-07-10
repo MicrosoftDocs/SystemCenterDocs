@@ -63,3 +63,6 @@ You can also run the following command to find the install folder path:
 ```
 Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"/s/f "InstallPath"
 ```
+
+## Next steps
+[Set up DPM logging](set-up-dpm-logging.md) 
