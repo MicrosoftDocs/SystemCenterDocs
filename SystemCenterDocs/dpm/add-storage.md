@@ -351,15 +351,15 @@ Follow these steps:
 
 2. In the **Protection** workspace, select the datasource you want to migrate.
 
-    ![Select target workload](./media/volume-volume-migration/select-workload.png)
+    ![Select target workload](./media/volume-volume-migration/select-the-workload.png)
 
 3. Click **Move disk storage**.
 
-   ![Move disk storage](./media/volume-volume-migration/move-disk-storage.png)
+   ![Move disk storage](./media/volume-volume-migration/move-the-disk-storage.png)
 
 4. Select the *target disk storage* that you want to migrate to and then click **OK**.
 
-   ![Select target disk storage](./media/volume-volume-migration/select-target-disk-storage.png)
+   ![Select target disk storage](./media/volume-volume-migration/select-the-target-disk-storage.png)
 
    This begins the migration process. For monitoring scheduled jobs, you can open another DPM console paralleled while the migration is in progress.
 

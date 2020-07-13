@@ -41,10 +41,10 @@ Here is the architecture to depict the movement of backup data.
 
 Here's the summary of architecture:
 
-1. DPM directly copies backup data to these preconfigured devices.
-2. You can then ship these devices back to an Azure datacenter.
-3. Azure Data Box copies the data onto a customer-owned storage account.
-4. Azure Backup automatically copies backup data from the storage account to the designated Recovery Services vault. Incremental online backups are scheduled.
+- DPM directly copies backup data to these preconfigured devices.
+- You can then ship these devices back to an Azure datacenter.
+- Azure Data Box copies the data onto a customer-owned storage account.
+- Azure Backup automatically copies backup data from the storage account to the designated Recovery Services vault. Incremental online backups are scheduled.
 
 For detailed procedure on how to use the offline backup using Azure Data Box, see [Offline backup using Azure Data Box](offline-seeding-azure-data-box.md).
 
@@ -58,11 +58,11 @@ Here is the architecture to depict the movement of backup data.
 
 Here's the summary of architecture:
 
-1. Instead of sending the backup data over the network, DPM writes the backup data to a staging location.
-2. The data in the staging location is written to one or more SATA disks by using a custom utility.
-3. As part of the preparatory work, the utility creates an Azure import job. The SATA drives are shipped to the nearest Azure datacenter and reference the import job to connect the activities.
-4. At the Azure datacenter, the data on the disks is copied to an Azure storage account.
-5. Azure Backup copies the backup data from the storage account to the Recovery Services vault. Incremental backups are scheduled.
+- Instead of sending the backup data over the network, DPM writes the backup data to a staging location.
+- The data in the staging location is written to one or more SATA disks by using a custom utility.
+- As part of the preparatory work, the utility creates an Azure import job. The SATA drives are shipped to the nearest Azure datacenter and reference the import job to connect the activities.
+- At the Azure datacenter, the data on the disks is copied to an Azure storage account.
+- Azure Backup copies the backup data from the storage account to the Recovery Services vault. Incremental backups are scheduled.
 
 For detailed procedure on how to use offline backup based on the Azure Import/Export service, see [Offline backup workflow in Azure Backup](offline-backup-workflow.md).
 

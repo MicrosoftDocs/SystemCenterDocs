@@ -60,7 +60,7 @@ DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsof
 
 **DPM version** | **SQL version**
 --- | ---
-DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202019%20on%20Windows%20(all%20editions))<br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202019%20on%20Windows%20(all%20editions))<br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
 
 ::: moniker-end
 
