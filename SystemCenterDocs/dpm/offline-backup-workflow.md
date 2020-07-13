@@ -11,7 +11,7 @@ ms.technology: data-protection-manager
 ms.assetid: 0c0f9a2e-494f-4fff-8889-ac3d70863e89
 ms.author: v-anesh
 ---
-# Offline-backup workflow for DPM
+# Offline seeding using own disk (using Azure Import/Export service)
 
 System Center Data Protection manager integrate with Azure Backup and utilizes several built-in efficiencies that save network and storage costs during the initial full backups of data to Azure. Initial full backups typically transfer large amounts of data and require more network bandwidth when compared to subsequent backups that transfer only the deltas/incrementals. Azure Backup compresses the initial backups. Through the process of offline seeding, Azure Backup can use disks to upload the compressed initial backup data offline to Azure.
 
@@ -84,9 +84,9 @@ The information in this section helps you complete the offline-backup workflow s
    The description of the inputs is as follows:
 
    * **Staging Location**: The temporary storage location to which the initial backup copy is written. Staging location might be on a network share or a local computer. If the copy computer and source computer are different, we recommended that you specify the full network path of the staging location.
-   * **Azure Resource Manager Storage Account**: The name of the Resource Manager type storage account (general purpose v1 or general purpose v2) in any Azure subscription.
-   * **Azure Storage Container**: The name of the destination blob storage container in the Azure storage account where the backup data is imported.
-   * **Azure Subscription ID**: The ID for the Azure subscription where the Azure storage account is created.
+   * **Azure Storage Account**: The name of the storage account in the Azure subscription associated with the Azure Publish settings file.
+   * **Azure Storage Container**: The name of the destination storage blob in the Azure storage account where the backup data is imported.
+   * **Azure Subscription ID**: The Azure subscription ID for the subscription from where you downloaded the Azure Publish settings file.
    * **Azure Import Job Name**: The unique name by which Azure Import service and Azure Backup track the transfer of data sent on disks to Azure.
 
      Save the *staging location* and the *Azure Import Job Name* you provided as it is required to prepare the disks.

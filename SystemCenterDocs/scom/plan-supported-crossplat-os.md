@@ -134,6 +134,8 @@ Debian 8, 9 and Ubuntu 16.04, 18.04 are supported
 
 CentOS 6 and 7, Oracle Linux 6, 7 are supported
 
+CentOS 8 is supported from 2019 UR2 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
+
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|
 |glibc|C Standard shared library|2.5-12|
