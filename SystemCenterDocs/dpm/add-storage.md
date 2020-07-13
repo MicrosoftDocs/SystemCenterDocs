@@ -361,7 +361,7 @@ Follow these steps:
 
    ![Select target disk storage](./media/volume-volume-migration/select-target-disk-storage.png)
 
-   This begins the migration process. For monitoring scheduled jobs, you can open another DPM console parallelly while the migration is in progress.
+   This begins the migration process. For monitoring scheduled jobs, you can open another DPM console paralleled while the migration is in progress.
 
 ::: moniker-end
 
