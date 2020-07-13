@@ -62,4 +62,4 @@ Use the following procedure to run favorite reports in Web console:
 
 ## Next steps
 
-To be added after SME inputs
+[How to run, save, and export a report](manage-reports-run-save-export.md)
