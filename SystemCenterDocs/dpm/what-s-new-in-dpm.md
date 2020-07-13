@@ -135,7 +135,7 @@ DPM 2019 UR2 supports optimized Volume to Volume Migration. The optimized Volume
 
 ### Offline Backup using Azure Data Box (Preview)
 
-DPM 2019 UR2 supports Offline backup using Azure Data Box. With [Microsoft Azure Data Box](https://azure.microsoft.com/services/databox/) integration, you can overcome the challenge of moving tera bytes of backup data from on-premises to Azure storage. Azure Data Box saves the effort required to procure your own Azure-compatible disks and connectors or to provision temporary storage as a staging location. Microsoft also handles the end-to-end transfer logistics, which you can track through the Azure portal. [Learn more](offline-seeding-azure-data-box.md).
+DPM 2019 UR2 supports Offline backup using Azure Data Box. With [Microsoft Azure Data Box](https://azure.microsoft.com/services/databox/) integration, you can overcome the challenge of moving terabytes of backup data from on-premises to Azure storage. Azure Data Box saves the effort required to procure your own Azure-compatible disks and connectors or to provision temporary storage as a staging location. Microsoft also handles the end-to-end transfer logistics, which you can track through the Azure portal. [Learn more](offline-seeding-azure-data-box.md).
 
 ### SQL Server 2019 support as DPM database
 
