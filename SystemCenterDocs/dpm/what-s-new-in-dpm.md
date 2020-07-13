@@ -1,11 +1,11 @@
 ---
-description: Descriptions of the new features in System Center DPM 2016, 1801, 1807 and 2019.
+description: Descriptions of the new features in System Center DPM 2016, 1801, 1807 and 2019
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 01/28/2020
+ms.date: 06/10/2020
 title: What's new in System Center DPM 2016, 1801, 1807 and 2019
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
@@ -119,6 +119,27 @@ With DPM 2019 UR1, an  additional a layer of authentication is added for  critic
 
 DPM 2019 UR1 includes a new parameter **[-CheckReplicaFragmentation]**. The new parameter, calculates the fragmentation percentage for a replica, and is included in the **Copy-DPMDatasourceReplica** cmdlet.
 
+## New features in DPM 2019 UR2
+
+See the following sections for information about the new features/feature updates supported in DPM 2019 UR2.
+
+For issues fixed in 2019 UR2, see the [KB article](Link to detailed content).
+
+### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
+
+DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You will be able to manage the underlying storage from any node as there is an abstraction to which node owns the disk. [Learn more](Link to detailed content).
+
+### Optimized Volume to Volume Migration
+
+DPM 2019 UR2 supports optimized Volume to Volume Migration. The optimized Volume to Volume Migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy. [Learn more](add-storage.md#optimized-volume-to-volume-migration).
+
+### Offline Backup using Azure Data Box (Preview)
+
+DPM 2019 UR2 supports Offline backup using Azure Data Box. With [Microsoft Azure Data Box](https://azure.microsoft.com/services/databox/) integration, you can overcome the challenge of moving tera bytes of backup data from on-premises to Azure storage. Azure Data Box saves the effort required to procure your own Azure-compatible disks and connectors or to provision temporary storage as a staging location. Microsoft also handles the end-to-end transfer logistics, which you can track through the Azure portal. [Learn more](offline-seeding-azure-data-box.md).
+
+### SQL Server 2019 support as DPM database
+
+DPM 2019 supports SQL server 2019 as DPM database. You can install SQL Server on a remote server, or on the DPM server. The database must be installed and running before you install DPM. [Learn more](prepare-environment-for-dpm.md#sql-server-database).
 
 ::: moniker-end
 

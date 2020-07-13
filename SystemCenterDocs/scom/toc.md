@@ -129,6 +129,7 @@
 #### [How to create reports](manage-reports-create-reports.md)
 #### [How to run, save, and export reports](manage-reports-run-save-export.md)
 #### [How to configure and modify report schedules](manage-reports-config-modify-schedules.md)
+#### [Favorite reports in Web console](favorite-reports-web-console.md)
 ### [Monitor failover clusters](manage-monitor-clusters-overview.md)
 ### [Not monitored and gray agents](manage-agents-not-healthy.md)
 ### [How to view all rules and monitors running on agent-managed computer](manage-agents-identify-all-running-workflows.md)

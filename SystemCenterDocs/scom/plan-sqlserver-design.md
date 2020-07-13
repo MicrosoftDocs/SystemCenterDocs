@@ -175,9 +175,9 @@ With System Center 2016 and later - Operations Manager, SQL Always On is preferr
 
 To set up an availability group you'll need to deploy a Windows Server Failover Clustering (WSFC) cluster to host the availability replica, and enable Always On on the cluster nodes. You can then add the Operations Manager SQL Server database as an availability database.
 
-- Learn more about [Always On prerequisites](https://msdn.microsoft.com/library/ff878487.aspx)
-- Learn more about [setting up a WSFC for Always On availability groups](https://msdn.microsoft.com/library/ff929171.aspx)
-- Learn more about [setting up an availability group](https://msdn.microsoft.com/library/ff878265.aspx)
+- [Learn more](https://msdn.microsoft.com/library/ff878487.aspx) about Always On prerequisites
+- [Learn more](https://msdn.microsoft.com/library/ff929171.aspx) about setting up a WSFC for Always On availability groups
+- [Learn more](https://msdn.microsoft.com/library/ff878265.aspx) about setting up an availability group
 
 ### Multisubnet string
 
@@ -389,6 +389,53 @@ Behind the scenes of Reporting Services, there is a SQL Server Database instance
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
 ::: moniker-end
+
+::: moniker range="=sc-om-2019"
+
+## SQL 2019 support
+
+Operations Manager 2019 supports SQL 2019, hosting Operations Manager’s databases. There is a Cumulative Update (CU5) planned from SQL team that will add support for Operations Manager databases, scheduled for later this year. In the meantime, follow these steps to use SQL 2019 server for Operations Manager’s databases.
+
+1. Install SQL 2019 RTM.
+
+2.	Disable Scalar UDF Inlining on model DB by running the below command:
+
+     ```
+     use model
+     go
+     ALTER DATABASE SCOPED CONFIGURATION SET TSQL_SCALAR_UDF_INLINING = OFF;
+
+     ```
+3.	Close SSMS; If SSMS is not closed, Operations Manager installation fails.
+
+4.	Install Operations Manager 2019.
+
+**Important Notes**
+
+- In the step#2, Scalar UDF Inlining was disabled on Model DB.
+- After Operations Manager installation is done, you can re-enable Scalar UDF Inlining for model database by running the following command:
+   ```
+   use model
+   go
+   ALTER DATABASE SCOPED CONFIGURATION SET TSQL_SCALAR_UDF_INLINING = ON;
+  ```
+
+- The following issue might occur for SQL 2019 (also applicable for SQL 2017):
+    <br>*Log Name:    Operations Manager
+     <br>Source:        Health Service Modules
+     <br>Event ID:      31567
+     <br>Task Category: Data Warehouse
+     <br>Description: Failed to deploy reporting component to the SQL Server Reporting Services server. The operation will be retried.
+     Exception 'DeploymentException': Failed to deploy reports for management pack with version dependent id '<ID>'. System.Web.Services.Protocols.SoapException: Uploading or saving files with .CustomConfiguration extension is not allowed*
+
+  If Operations Manager report fails to deploy and the above error is seen, then apply the resolution as detailed in this [article](https://support.microsoft.com/help/4519161/operations-manager-2019-and-1807-reports-fail-to-deploy).
+
+- For information on Scalar UDF Inlining, see [Scalar UDF Inlining](https://docs.microsoft.com/sql/relational-databases/user-defined-functions/scalar-udf-inlining?view=sql-server-ver15).
+
+
+::: moniker-end
+
+
 
 ## Next steps
 
