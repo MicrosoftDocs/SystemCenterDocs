@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 03/16/2020
+ms.date: 07/10/2020
 title: What's supported and what isn't for DPM
 ms.technology: data-protection-manager
 ms.assetid: 29d977b5-56de-4bc4-ba0b-2d45d02516a4
@@ -180,16 +180,11 @@ Both of these scenarios are unsupported. You can only select one of the followin
 **For ReFS Volumes:**
 
 > [!NOTE]
-> DPM 2019 UR1 supports protection of ReFS volumes with Dedup.
-
-|Operating system of protected server|Operating system of DPM server|DPM version|Dedup support|
-|----------------------------------------|----------------------------------|---------------|-----------------|
-|Windows Server 2012, 2012 R2, 2016 and 2019|Windows Server 2016, 2019|DPM 2019 UR1|Y|
+>We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
+>
+>DPM 2019 UR1 continues to support protection and recovery of normal ReFS volumes.
 
 ::: moniker-end
-
-
-**Workaround**: Use within support limitations.
 
 ### Windows deduplication isn't always supported on volumes hosting .VHD or .VHDX files
 **Issue**: Dedupe support
