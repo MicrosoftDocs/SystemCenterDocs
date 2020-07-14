@@ -8,6 +8,7 @@
 ## [DPM release notes](dpm-release-notes.md)
 ## [What's new in DPM](what-s-new-in-dpm.md)
 ## [What DPM supports](dpm-support-issues.md)
+## [Turn on/off telemetry settings](manage-telemetry.md)
 # How To
 ## Plan Your DPM Environment
 ### [Get ready to deploy DPM servers](plan-dpm-deployment.md)
