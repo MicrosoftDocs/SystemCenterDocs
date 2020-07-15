@@ -319,7 +319,7 @@ With 2019 UR2, if there is a conflict in maintenance mode end time, then the obj
 
 ### Favorite reports in web console
 
-With Operations Manager 2019 UR2, you can run and view favorite reports under **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2. [Learn more](https://review.docs.microsoft.com/en-us/system-center/scom/favorite-reports-web-console?view=sc-om-2019&branch=pr-en-us-2864).
+With Operations Manager 2019 UR2, you can run and view favorite reports under **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2. [Learn more](../scom/favorite-reports-web-console.md).
 
 ### Support for folders in monitoring view of web console
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-webconsole.md).

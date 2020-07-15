@@ -5,14 +5,12 @@ description: include article to detail the system requirements for VMM 2019
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  03/14/2019
+ms.date:  07/15/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
 ---
-
 ## VMM 2019 system requirements
-
 The following sections describe the scalability information, hardware, software, and SQL Server requirements for VMM 2019, and summarize the support for the servers managed in the VMM fabric.
 
 ## Capacity limits
