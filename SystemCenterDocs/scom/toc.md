@@ -105,6 +105,7 @@
 ##### [How to replace parameters in a URL request](how-to-replace-parameters-url-request.md)
 #### [Windows Service template](windows-service-template.md)
 #### [Using classes and groups for overrides](manage-mp-overview-override-targets.md)
+#### [How to track changes in management pack](management-pack-change-tracking.md)
 #### [How to import, export, and remove a management pack](manage-mp-import-remove-delete.md)
 #### [Create a management pack for overrides](manage-mp-create-unsealed-mp.md)
 #### [How to override a Rule or Monitor](manage-mp-override-rule-monitor.md)

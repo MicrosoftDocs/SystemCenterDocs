@@ -112,7 +112,7 @@ With VMM 1807, you can now choose any location to place the new disc. You can ma
 
 ### VMware host management
 
-VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements for System Center Virtual Machine Manager](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
+VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
 
 ### Support for S2D cluster update
 
@@ -267,3 +267,35 @@ In VMM 2019 UR1, the user experience is enhanced for the process of creating log
 ### Additional options to enable nested virtualization
 
 You can now enable nested virtualization while you create a new VM and deploy VMs through VM templates and service templates. In earlier releases, nested virtualization is supported only on deployed VMs. Learn more about [enabling nested virtualization](../vmm/vm-nested-virtualization.md).
+
+## New features in VMM 2019 UR2
+
+The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 2 (UR2).
+For problems fixed in VMM 2019 UR2, see the KB article. [add link to UR2 KB article].
+
+## Compute
+
+### Support for Windows 2012 R2 hosts
+
+VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [link to the applicable section]
+
+### Support for ESXi 6.7 hosts
+
+VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives additional flexibility to the administrators in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
+
+## Networking
+
+### Simplification in creating logical switches
+<content to be added>
+
+### Support for IPv6
+
+VMM 2019 UR2 supports IPv6 SDN deployment. Learn more. [add the link to detailed information]
+### Provision to set affinity between virtual network adapters and physical adapters
+
+VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](https://review.docs.microsoft.com/en-us/system-center/vmm/hyper-v-network?view=sc-vmm-2019&branch=pr-en-us-2869#set-affinity-between-vnics-and-pnics).
+
+## Others
+
+### Support for SQL Server 2019
+VMM 2019 RTM and later now supports SQL Server 2019.

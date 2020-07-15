@@ -5,7 +5,7 @@ description: This include file describes the new features in Operations Manager 
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 06/04/2020
 ms.prod: system-center
 monikerRange: 'sc-om-2019'
 ms.technology: operations-manager
@@ -14,7 +14,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2019
 
-The following sections introduce new and updated features in System Center Operations Manager 2019.
+The following sections introduce new and updated features in System Center Operations Manager 2019, [2019 UR1](#new-features-in-operations-manager-2019-ur1) and [2019 UR2](#new-features-in-operations-manager-2019-ur2).
 
 ### Service logon is enabled by default in Operations Manager 2019
 
@@ -296,3 +296,36 @@ Operations Manager 2019 UR1 includes improved scalability in UNIX or Linux agent
 -	Use of Async Windows Management Infrastructure APIs is a default functionality from Operations Manager 2019 UR1. The registry key *UseMIAPI* is created if it doesn't exist. The new registry value *Disable* is added to **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup\UseMIAPI**.
 -	As part of Operations Manager 2019 UR1 installation, the value of the registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup\UseMIAPI\Disable** is set as **0**.
 -	To use Sync Windows Management APIs, set the value of the registry key **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Operations Manager\3.0\Setup\UseMIAPI\Disable** as **1**. For any other scenario, the Async Windows Management Infrastructure API is used.
+
+
+## New features in Operations Manager 2019 UR2
+
+The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 2 (UR2).
+
+For problems fixed in Operations Manager 2019 UR2, see [Update Rollup 2 for System Center Operations Manager 2019](KB link to be added).
+
+### Change tracking for management packs
+
+Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects.
+
+Three new reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are now available to display the changes. These reports are available under Reporting > Microsoft Generic Report library .
+
+You can use the filters available in the reports to set the criteria and get the reports per your requirement. [Learn more](../scom/management-pack-change-tracking.md).
+
+### Improvements in scheduled maintenance mode
+In earlier releases, if there is a conflict in maintenance mode window for object(s), the newly updated end time overwrites the existing scheduled time. If this latest defined time is longer than previous value, then computer stays in maintenance mode for extended period. However, when the latest defined time is shorter, then the computer comes out of maintenance mode, earlier than expected, generating false alerts.
+
+With 2019 UR2, if there is a conflict in maintenance mode end time, then the object will exit maintenance mode at the furthest end time defined for the object. [Learn more](../scom/manage-maintenance-mode-overview.md).
+
+### Favorite reports in web console
+
+With Operations Manager 2019 UR2, you can run and view favorite reports under **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2. [Learn more](https://review.docs.microsoft.com/en-us/system-center/scom/favorite-reports-web-console?view=sc-om-2019&branch=pr-en-us-2864).
+
+### Support for folders in monitoring view of web console
+In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-webconsole.md).
+
+>[!NOTE]
+> Folders and views created from operations console are visible in web console, but the dashboards created from the web console are not visible in the operations console.        
+
+### Support for CentOS 8
+Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](https://docs.microsoft.com/system-center/scom/manage-install-crossplat-agent-cmdline?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
