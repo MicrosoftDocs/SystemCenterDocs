@@ -338,7 +338,9 @@ DPM supports two options to migrate data to new volume:
 
 - **Optimized migration**
 
-  This feature is applicable from DPM 2019 UR2 and later versions. [Learn more](volume-to-volume-migration.md)
+  This feature is applicable from DPM 2019 UR2 and later versions.
+
+  The optimized volume to volume migration allows you to move data sources to the new volume much faster. [Learn more](volume-to-volume-migration.md)
 
 Migration of data source should have all recovery points on Modern Storage.
 
