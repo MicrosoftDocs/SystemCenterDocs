@@ -330,7 +330,7 @@ Follow these steps:
 
 In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
 
-DPM supports two options to migrate data to new volume:
+DPM supports the following two options to migrate data to a new volume:
 
 - **Full migration (default)**
 
@@ -338,7 +338,7 @@ DPM supports two options to migrate data to new volume:
 
 - **Optimized migration**
 
-  This feature is applicable from DPM 2019 UR2 and later versions.
+  This option is applicable from DPM 2019 UR2 and later versions.
 
   The optimized volume to volume migration allows you to move data sources to the new volume much faster. [Learn more](volume-to-volume-migration.md)
 
