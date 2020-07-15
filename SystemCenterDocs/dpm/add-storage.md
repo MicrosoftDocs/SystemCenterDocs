@@ -330,40 +330,22 @@ Follow these steps:
 
 In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
 
+DPM supports two options to migrate data to new volume:
+
+- **Full migration (default)**
+
+  With this feature, all the data for a particular data source is migrated from current volume to the new volume. The time to complete the migration is based on the size of the protected data source, larger the data source, more time it takes to migrate to the other volume.
+
+- **Optimized migration**
+
+  This feature is applicable from DPM 2019 UR2 and later versions. [Learn more](volume-to-volume-migration.md)
+
 Migration of data source should have all recovery points on Modern Storage.
 
 > [!NOTE]
 > - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
 >- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
-::: moniker range="sc-dpm-2019"
-
-## Optimized volume to volume migration
-
-> [!NOTE]
-> This feature is applicable from UR2 and later.
-
-The optimized volume to volume migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy.
-
-Follow these steps:
-
-1. In the DPM Administrator Console, click **Protection**.
-
-2. In the **Protection** workspace, select the datasource you want to migrate.
-
-    ![Select target workload](./media/volume-volume-migration/select-the-workload.png)
-
-3. Click **Move disk storage**.
-
-   ![Move disk storage](./media/volume-volume-migration/move-the-disk-storage.png)
-
-4. Select the *target disk storage* that you want to migrate to and then click **OK**.
-
-   ![Select target disk storage](./media/volume-volume-migration/select-the-target-disk-storage.png)
-
-   This begins the migration process. For monitoring scheduled jobs, you can open another DPM console paralleled while the migration is in progress.
-
-::: moniker-end
 
 ## Configure workload-aware storage
 
