@@ -44,7 +44,7 @@ The report displays the following fields and values:
 
 **Sample report:**
 
-![MP versions](./media/change-tracking/mp-versions.png)
+![Management pack versions](./media/change-tracking/management-pack-versions.png)
 
 > [!NOTE]
 > - Any management packs, which were imported/deleted/updated prior to UR2 upgrade will be captured in the report, but user context will not be captured for these.
@@ -78,7 +78,7 @@ The management pack object report contains the following fields and values:
 | **Action Type** | Type of the action performed on the object such as add/delete/edit. |
 | **Username** | Name of the user who has performed the action. |
 
-![Test MP](./media/change-tracking/test-mp.png)
+![Test management pack](./media/change-tracking/test-management-pack.png)
 
 ## Overrides tracking
 

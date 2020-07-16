@@ -41,6 +41,7 @@
 #### [How to install an Operations Manager management server](deploy-install-mgmt-server.md)
 #### [How to install the Operations console](deploy-install-ops-console.md)
 #### [How to install the Operations Manager Web console](deploy-install-web-console.md)
+#### [How to create folders in Operations Manager Web console](support-folders-monitoring-view-web-console.md)
 #### [How  to install an Audit Collection Services(ACS) Collector and database](deploy-install-acs.md)
 #### [How to install the Operations Manager Reporting server](deploy-install-reporting-server.md)
 #### [Connect to the Data Warehouse across a firewall](deploy-connect-reportingdw-firewall.md)

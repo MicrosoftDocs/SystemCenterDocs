@@ -286,14 +286,15 @@ VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives
 ## Networking
 
 ### Simplification in creating logical switches
-<content to be added>
+With VMM 2019 UR2, we have introduced additional options in **Create Logical Switch**. [Learn more](../vmm/network-switch.md)
 
 ### Support for IPv6
 
 VMM 2019 UR2 supports IPv6 SDN deployment. Learn more. [add the link to detailed information]
+
 ### Provision to set affinity between virtual network adapters and physical adapters
 
-VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](https://review.docs.microsoft.com/en-us/system-center/vmm/hyper-v-network?view=sc-vmm-2019&branch=pr-en-us-2869#set-affinity-between-vnics-and-pnics).
+VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md).
 
 ## Others
 

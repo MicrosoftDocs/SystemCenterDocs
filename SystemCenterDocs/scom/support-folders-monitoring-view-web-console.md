@@ -1,7 +1,7 @@
 ---
 ms.assetid: b883945e-734a-4b04-a63c-54db9c8cb7d9
-title: Create folders from Web console
-description: This article describes the procedure on how to create folders using Operations Manager Web console, and store dashboards inside them.
+title: Create folders from web console in System Center Operations Manager
+description: This article describes the procedure on how to create folders using Operations Manager web console, and store dashboards inside them.
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
@@ -15,7 +15,7 @@ MonikerRange: 'sc-om-2019'
 
 # Create folders from Web console
 
-You can create folders using the web Console and save the dashboard inside them.
+You can create folders using the web console and save the dashboard inside them.
 
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside it using the Operations console. However, this feature is not available from the Web console. With 2019 UR2, using the web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs.
 
@@ -63,7 +63,7 @@ Use the following steps:
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
 
-## Next Steps
+## Next steps
 - [See standard views in management pack](manage-console-standard-views.md)
 
 - [Scope the views in management packs](manage-console-scope-views.md)

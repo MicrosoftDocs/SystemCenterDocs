@@ -34,7 +34,7 @@ The redesigned web console is now a fully functional HTML-based console. It no l
 * Capability to export and share dashboards.
 * A new **All** option to select all objects while creating or editing an alerts widget.
 
-Network authentication is enabled with the enhanced web console. For more information, see [Overview of HTML5 web console and dashboards](../scom/manage-overview-html5-webconsole.md).
+Network authentication is enabled with the enhanced web console. For more information, see [Overview of HTML5 web console and dashboards](../scom/manage-overview-html5-web-console.md).
 
 ### Enhanced experience for alerts raised by monitors
 
@@ -322,7 +322,7 @@ With 2019 UR2, if there is a conflict in maintenance mode end time, then the obj
 With Operations Manager 2019 UR2, you can run and view favorite reports under **Web Console** > **My Workspace**. This feature is available in Operations Manager 2012 web console, which is now supported in 2019 UR2. [Learn more](../scom/favorite-reports-web-console.md).
 
 ### Support for folders in monitoring view of web console
-In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-webconsole.md).
+In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
 >[!NOTE]
 > Folders and views created from operations console are visible in web console, but the dashboards created from the web console are not visible in the operations console.        
