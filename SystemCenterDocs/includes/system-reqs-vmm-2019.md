@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2019
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  03/14/2019
+ms.date:  07/15/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -75,9 +75,10 @@ Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 
 **SQL version** | **Supported**
 --- | ---
-SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
-SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
+SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
+SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) | Y
+SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202019) | Y
+SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=52676 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
 
 ## Virtualization
 
@@ -106,6 +107,7 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
+Windows Server 2012 R2 (supported from 2019 UR2 and later)| Y | Y | N | N
 Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
 Windows Server 2019 (Data Center) | Y | Y | Y | Y
@@ -115,7 +117,7 @@ Windows Server 2019 (Server Core) | Y | Y | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 (supported from 2019 UR2 and later)
 vCenter | 5.1, 5.5, 5.8, 6.0, 6.5
 Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 

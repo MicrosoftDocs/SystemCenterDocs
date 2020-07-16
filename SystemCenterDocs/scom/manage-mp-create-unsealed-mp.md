@@ -18,6 +18,12 @@ In System Center - Operations Manager, in a number of wizards and dialog boxes, 
 
 Management packs can be sealed or unsealed. A sealed management pack cannot be modified directly. Any changes to the workflows in the sealed management pack, such as an override for a monitor, must be saved to an unsealed management pack. The unsealed management pack references the sealed management pack that it modifies.  
 
+::: moniker range="sc-om-2019"
+>[!NOTE]
+> With Operations Manager 2019 UR2, you can track the changes done in management packs. [Learn more](management-pack-change-tracking.md).
+
+::: moniker-end
+
 The following illustration shows the unsealed management packs that are installed with Operations Manager.  
 
 ![Dropdown menu for selecting management pack](./media/manage-mp-create-unsealed-mp/om2016-save-override-to-mp.png)  
