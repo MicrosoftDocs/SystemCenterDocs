@@ -18,7 +18,7 @@ A dashboard has a particular layout, which specifies the arrangement of the cell
 
 ::: moniker range="sc-om-2019"
 
-Operations Manager 2019 UR2 supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-webconsole.md)
+Operations Manager 2019 UR2 supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
 
 ::: moniker-end
 
