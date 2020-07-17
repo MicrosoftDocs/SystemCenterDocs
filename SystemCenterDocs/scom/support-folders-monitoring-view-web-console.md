@@ -63,8 +63,63 @@ Use the following steps:
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
 
-## Next steps
+   > [!NOTE]
+   > This reference of the Representational State Transfer (REST) API is applicable to System Center Operations Manager 2019 UR2 and later versions.
+
+**Data/monitoringTreeForRootFolders**
+
+  - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders.
+
+All the data required in the calls mentioned below are obtained from this endpoint. All the calls mentioned below are POST requests.
+
+
+**monitoring/folder**
+
+  - Create a new folder inside a management pack.
+
+      Parameters required:
+
+      | Name | Type  | Definition |
+      |----|---|------|
+      |  path  | string  |Name of the new folder. |
+      | mpId|string| Id of the management pack where you want to create the new folder.  |
+
+  - Create a new folder inside a pre-existing folder
+
+      Parameters required:
+
+      | Name | Type  | Definition |
+      |----|---|------|
+      |  component Id  | string  |Folder id of the parent where you want to store the new folder. |
+      | path|string| Name of the new folder.  |
+
+**monitoring/dashboard/**
+
+  - Save a dashboard inside a new folder.
+
+     Parameters required:
+
+     | Name | Type  | Definition |
+     |----|------|-----|
+     |  name | string  |Name of the new dashboard. |
+     | path|string| Folder id where you want to save the new dashboard.  |
+
+
+  - Save a dashboard inside the root monitoring.
+
+     Parameters required:
+
+     | Name | Type  | Definition |
+     |----|----|-----|
+     |  mpId  | string  |Id of the management pack where you want to store the dashboard. |
+     | name |string| Name of the new dashboard.  |
+
+
+## Next Steps
 - [See standard views in management pack](manage-console-standard-views.md)
 
 - [Scope the views in management packs](manage-console-scope-views.md)
-  <SME to review and suggest>
+
+- [Data Retrieve Items In Monitoring Tree View](https://docs.microsoft.com/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
+
+- [Component - Add Dashboard](https://docs.microsoft.com/rest/api/operationsmanager/component/add%20dashboard)

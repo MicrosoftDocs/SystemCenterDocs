@@ -131,7 +131,7 @@ DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster S
 
 ### Optimized Volume to Volume Migration
 
-DPM 2019 UR2 supports optimized Volume to Volume Migration. The optimized Volume to Volume Migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy. [Learn more](add-storage.md#optimized-volume-to-volume-migration).
+DPM 2019 UR2 supports optimized Volume to Volume Migration. The optimized Volume to Volume Migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy. [Learn more](volume-to-volume-migration.md).
 
 ### Offline Backup using Azure Data Box (Preview)
 
