@@ -63,8 +63,8 @@ Use the following steps:
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
 
-> [!NOTE]
-> This reference of the Representational State Transfer (REST) API is applicable to System Center Operations Manager 2019 UR2 and later versions.
+   > [!NOTE]
+   > This reference of the Representational State Transfer (REST) API is applicable to System Center Operations Manager 2019 UR2 and later versions.
 
 **Data/monitoringTreeForRootFolders**
 
@@ -90,7 +90,7 @@ All the data required in the calls mentioned below are obtained from this endpoi
 
       | Name | Type  | Definition |
       |----|---|------|
-      |  componentId  | string  |Folder id of the parent where you want to store the new folder. |
+      |  component Id  | string  |Folder id of the parent where you want to store the new folder. |
       | path|string| Name of the new folder.  |
 
 **monitoring/dashboard/**
