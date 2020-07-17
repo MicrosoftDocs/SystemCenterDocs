@@ -120,6 +120,6 @@ All the data required in the calls mentioned below are obtained from this endpoi
 
 - [Scope the views in management packs](manage-console-scope-views.md)
 
-- [Data Retrieve Items In Monitoring Tree View](https://docs.microsoft.com/en-us/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
+- [Data Retrieve Items In Monitoring Tree View](https://docs.microsoft.com/rest/api/operationsmanager/data/retrieve%20items%20in%20monitoring%20tree%20view)
 
-- [Component - Add Dashboard](https://docs.microsoft.com/en-us/rest/api/operationsmanager/component/add%20dashboard)
+- [Component - Add Dashboard](https://docs.microsoft.com/rest/api/operationsmanager/component/add%20dashboard)
