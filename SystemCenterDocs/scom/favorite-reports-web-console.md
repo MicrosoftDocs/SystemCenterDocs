@@ -44,7 +44,7 @@ You can create a report in operations console and view them as favorite reports 
 
 **Use the following steps to configure Windows Authentication (Kerberos) between Operations Manager Report Server and Management Server**:
 
-1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS in a note pad, located at <PATH>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer.
+1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at <PATH>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
 
 2. Change the authentication type to *<RSWindowsNegotiate />* from *<RSWindowsNTLM />* and recycle the SQL reporting service.
 
@@ -69,10 +69,10 @@ You can create a report in operations console and view them as favorite reports 
 
 4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) is not installed on a Management Server, the (computer or domain), account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it is installed.
 
- >[!NOTE]
- > The domain administrator can also select the *Trust this computer for delegation to any service(kerberos only)* but the constraint delegation with protocol transition (shown in the image) is more secure.
+     >[!NOTE]
+     > The domain administrator can also select the *Trust this computer for delegation to any service(kerberos only)* but the constraint delegation with protocol transition (shown in the image) is more secure.
 
- ![Trust delegation](./media/favorite-reports/trust-delegation.png)
+     ![Trust delegation](./media/favorite-reports/trust-delegation.png)
 
 
 5.	Run *klist* purge command on both the report server and the management server or reboot the servers.
