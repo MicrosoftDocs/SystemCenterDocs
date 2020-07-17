@@ -75,44 +75,44 @@ All the data required in the calls mentioned below are obtained from this endpoi
 
 **monitoring/folder**
 
-      - Create a new folder inside a management pack.
+  - Create a new folder inside a management pack.
 
-        Parameters required:
+      Parameters required:
 
-        | Name | Type  | Definition |
-        |----|---|------|
-        |  path  | string  |Name of the new folder. |
-        | mpId|string| Id of the management pack where you want to create the new folder.  |
+      | Name | Type  | Definition |
+      |----|---|------|
+      |  path  | string  |Name of the new folder. |
+      | mpId|string| Id of the management pack where you want to create the new folder.  |
 
-      - Create a new folder inside a pre-existing folder
+  - Create a new folder inside a pre-existing folder
 
-         Parameters required:
+      Parameters required:
 
-         | Name | Type  | Definition |
-         |----|---|------|
-         |  componentId  | string  |Folder id of the parent where you want to store the new folder. |
-         | path|string| Name of the new folder.  |
+      | Name | Type  | Definition |
+      |----|---|------|
+      |  componentId  | string  |Folder id of the parent where you want to store the new folder. |
+      | path|string| Name of the new folder.  |
 
 **monitoring/dashboard/**
 
-      - Save a dashboard inside a new folder.
+  - Save a dashboard inside a new folder.
 
-        Parameters required:
+     Parameters required:
 
-         | Name | Type  | Definition |
-         |----|------|-----|
-         |  name | string  |Name of the new dashboard. |
-         | path|string| Folder id where you want to save the new dashboard.  |
+     | Name | Type  | Definition |
+     |----|------|-----|
+     |  name | string  |Name of the new dashboard. |
+     | path|string| Folder id where you want to save the new dashboard.  |
 
 
-      - Save a dashboard inside the root monitoring.
+  - Save a dashboard inside the root monitoring.
 
-        Parameters required:
+     Parameters required:
 
-        | Name | Type  | Definition |
-        |----|----|-----|
-        |  mpId  | string  |Id of the management pack where you want to store the dashboard. |
-        | name |string| Name of the new dashboard.  |
+     | Name | Type  | Definition |
+     |----|----|-----|
+     |  mpId  | string  |Id of the management pack where you want to store the dashboard. |
+     | name |string| Name of the new dashboard.  |
 
 
 ## Next Steps
