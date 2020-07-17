@@ -24,7 +24,7 @@ In Operations Manager 2019 UR2 and later, you can run and view favorite reports 
 
 You can create a report in operations console and view them as favorite reports in the HTML5 web console.
 
-**Before you begin**
+## Before you begin
 
 - Ensure you have any of the following five roles to login to the web console. These permissions remain the same as in earlier supported versions of Operations Manager.  
 
