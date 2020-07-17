@@ -16,7 +16,7 @@ ms.topic: article
 
 ::: moniker range="sc-om-2019"
 
-This article details the new features supported in System Center 2019 - Operations Manager.
+This article details the new features supported in System Center 2019, 2019 UR1 and 2019 UR - Operations Manager.
 
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
 

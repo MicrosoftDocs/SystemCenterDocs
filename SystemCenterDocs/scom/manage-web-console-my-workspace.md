@@ -48,6 +48,13 @@ For detailed steps, review the following articles:
 * Create dashboard with [Custom widget](manage-create-web-dashboard-custom.md)
 * Create dashboard with the [PowerShell widget](manage-create-web-dashboard-posh.md), available only with version 1807
 
+
+::: moniker range="sc-om-2019"
+>[!NOTE]
+>Operations Manager 2019 UR2 supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
+
+::: moniker-end
+
 ## Next steps
 
 For more information on using Health Explorer, see [Using Health Explorer to Investigate Problems](manage-health-using-healthexplorer.md).  
