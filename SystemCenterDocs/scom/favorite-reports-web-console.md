@@ -59,7 +59,7 @@ You can create a report in operations console and view them as favorite reports 
 
         ```
 
-    - If the SPNs are not set, run the following  command to register SPN for both NetBIOS and FQDN with SSRS account (include the Port only if it> is not using the default port 80):
+    - If the SPNs are not set, run the following  command to register SPN for both NetBIOS and FQDN with SSRS account (include the Port only if it is not using the default port 80):
         ```
         Setspn -s http/<computer-name> <domain-name>:<port> <domain-user-account-under-which-ssrs-is-running>
 
@@ -79,7 +79,7 @@ You can create a report in operations console and view them as favorite reports 
 
 ## Important notes
 
-1.	If Operations Management web console is installed on a Stand-alone server (not an Operations Manager Management  Server), then  add the SDK Account SPN (account under which System Center Data Access Service is running) to the Constraint Delegation allowed list for the Operations Manager Web Console server as well (as Kerberos Only).
+1.	If Operations Management web console is installed on a Stand-alone server (not an Operations Manager Management  Server), then  add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well (as Kerberos Only).
 2.	If you do not want to see the sign in prompt for web console, add the web console URL to intranet zone (**Internet Options** > **Security** > **Local Intranet**).
 
 
