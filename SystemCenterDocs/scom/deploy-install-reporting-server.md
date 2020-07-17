@@ -5,7 +5,7 @@ description: This article describes how to install the Operations Manager Report
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 07/06/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -38,7 +38,7 @@ You must ensure that your server meets the minimum system requirement for Operat
 
 ## Installing Operations Manager reporting
 
-No other applications that are using SQL Server Reporting Services can be installed on this instance of SQL Server.
+SQL Server Reporting Services installed on this instance of SQL Server can be used only by Operations Manager. If any reports exist on this SSRS instance, the System Center Operations Manager Reporting Services installer overrides all of the data/reports on it.
 
 Ensure that SQL Server Reporting Services has been correctly installed and configured. For more information about how to install and configure SQL Server Reporting Services, see [SQL Server Installation](https://go.microsoft.com/fwlink/p/?LinkId=146943).
 
