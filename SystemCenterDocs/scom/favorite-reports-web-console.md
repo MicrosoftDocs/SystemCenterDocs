@@ -26,15 +26,15 @@ You can create a report in operations console and view them as favorite reports 
 
 **Before you begin**
 
-- Ensure you have any of the following five roles to login to the web console. These permission remain the same as in earlier supported versions of Operations Manager.  
+- Ensure you have any of the following five roles to login to the web console. These permissions remain the same as in earlier supported versions of Operations Manager.  
 
    - Administrator
    - Author
    - Advance Operator
    - Operator
-   - Read Only Operator
+   - Read-only Operator
 
-- Ensure you have the following three roles to view reports on Web Console. These permission remain the same as in earlier supported versions of Operations Manager.  
+- Ensure you have the following three roles to view reports on Web Console. These permissions remain the same as in earlier supported versions of Operations Manager.  
 
    - Administrator
    - Report Operator
@@ -50,20 +50,20 @@ You can create a report in operations console and view them as favorite reports 
 
    ![Windows authentication](./media/favorite-reports/windows-authentication.png)
 
-3. SPNs registration: register the SPNs for the account under which the SQL Reporting service is running.
+3. SPNs' registration: register the SPNs for the account under which the SQL Reporting service is running.
 
     - To check if the SPN is created, run the following command in Command prompt or PowerShell:
 
         ```
-        setspn -L \< domain-user-account-under-which-ssrs-is-running>
+        setspn -L <domain-user-account-under-which-ssrs-is-running>
 
         ```
 
     - If the SPNs are not set, run the following  command to register SPN for both NetBIOS and FQDN with SSRS account (include the Port only if it> is not using the default port 80):
         ```
-        Setspn -s http\<computer-name>.\<domain-name>:\<port> \<domain-user-account-under-which-ssrs-is-running>
+        Setspn -s http/<computer-name> <domain-name>:<port> <domain-user-account-under-which-ssrs-is-running>
 
-        Setspn -s http\<computer-name>:\<port> \<domain-user-account-under-which-ssrs-is-running>
+        Setspn -s http/<computer-name> <port> <domain-user-account-under-which-ssrs-is-running>
 
         ```
 
