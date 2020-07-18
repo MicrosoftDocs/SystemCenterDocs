@@ -40,7 +40,7 @@ You can create a report in operations console and view them as favorite reports 
    - Report Operator
    - Report Security Administrator
 
-- If Operations Manager Report Server and Management Server are installed on different computers, ensure to set up Windows Authentication (Kerberos) to connect to SQL Reporting Services Web Service. For detailed information see, [configure windows authentication](#configure-windows-authentication-between-operations-manager-report-servers-and-managmenet-server).
+- If Operations Manager Report Server and Management Server are installed on different computers, ensure to set up Windows Authentication (Kerberos) to connect to SQL Reporting Services Web Service, [as detailed in the following section](#configure-windows-authentication-between-operations-manager-report-servers-and-managmenet-server).
 
 ## Save a report as favorite from Operations console
 
