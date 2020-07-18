@@ -61,7 +61,9 @@ Use the following procedure to run favorite reports in Web console:
 
     ![My workspace](./media/favorite-reports/my-workspace-fav-reports.png)
 
-## Configure Windows Authentication (Kerberos) between Operations Manager Report Server and Management Server
+## Configure Windows authentication
+
+Use the following procedure to configure Windows authentication (Kerberos) between Operations Manager Report Server and Management Server:
 
 1. On the Operations Manager Report Server, open *rsreportserver.config* file of SSRS, located at <PATH>: \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer, in a note pad.
 
@@ -88,10 +90,10 @@ Use the following procedure to run favorite reports in Web console:
 
 4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) is not installed on a Management Server, the (computer or domain), account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it is installed.
 
-         >[!NOTE]
-         > The domain administrator can also select the *Trust this computer for delegation to any service(kerberos only)* but the constraint delegation with protocol transition (shown in the image) is more secure.
+    >[!NOTE]
+    > The domain administrator can also select the *Trust this computer for delegation to any service(Kerberos only)* but the constraint delegation with protocol transition (shown in the image) is more secure.
 
-         ![Trust delegation](./media/favorite-reports/trust-delegation.png)
+    ![Trust delegation](./media/favorite-reports/trust-delegation.png)
 
 
 5.	Run *klist* purge command on both the report server and the management server or reboot the servers.
