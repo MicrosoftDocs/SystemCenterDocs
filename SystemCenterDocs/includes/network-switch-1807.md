@@ -63,8 +63,11 @@ You can set up a virtual switch extension manager (network manager) if you want 
 
     From VMM 2019 UR2, **Embedded Team** is the default Uplink mode.
 ::: moniker-end
+::: moniker range="=sc-vmm-1807"
 6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting you won't be able to add extensions to the switch.
+::: moniker-end
 ::: moniker range="=sc-vmm-2019"
+6. In **Settings**, select the minimum bandwidth mode. If you've deployed Microsoft network controller, you can specify that it should manage the switch. If you enable this setting you won't be able to add extensions to the switch.
     - **Weight** - Weight is the default minimum bandwidth mode. Weight specifies a percentage of bandwidth rather than a specific number of bits per second.  Minimum bandwidth is a value ranging from 1 to 100.
     - **Default** – The system sets the mode to **Weight**, if the switch is not IOV enabled, or **None** if the switch is IOV enabled.
     - **Absolute** – Minimum bandwidth  will be in bits per second.  
