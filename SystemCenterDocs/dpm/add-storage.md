@@ -340,7 +340,7 @@ Migration of data source should have all recovery points on Modern Storage.
 
 ::: moniker range="sc-dpm-2019"
 
-## Volume to volume Migration
+## Volume to volume migration
 
 DPM supports two types of volume to volume migration, Full migration and Optimized migration. [Learn more](volume-to-volume-migration.md).
 
