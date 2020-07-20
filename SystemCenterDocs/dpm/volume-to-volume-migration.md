@@ -32,8 +32,9 @@ DPM supports the following two options to migrate data to a new volume:
 
   The optimized volume to volume migration allows you to move data sources to the new volume much faster.
 
-The optimized volume to volume migration allows you to move data sources to the new volume much faster.
+  To use this option, you should first add following registry key:
 
+  \<Registry key needs to be added>
 
 
 Follow these steps to migrate data source from one volume to the other volume:
