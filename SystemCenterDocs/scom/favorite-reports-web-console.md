@@ -83,21 +83,22 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
         ```
 
-    - If the SPNs are not set, run the following  command to register SPN for both NetBIOS and FQDN with SSRS account (include the Port only if it is not using the default port 80):
+    - If the SPNs are not set, run the following command to register SPN for both NetBIOS and FQDN with SSRS account (include the port only if it is not using the default port 80):
         ```
         Setspn -s http/<computer-name> <domain-name>:<port> <domain-user-account-under-which-ssrs-is-running>
 
-        Setspn -s http/<computer-name> <port> <domain-user-account-under-which-ssrs-is-running>
+        Setspn -s http/<computer-name>:<port> <domain-user-account-under-which-ssrs-is-running>
 
         ```
 
+        **Example**:
+        *setspn -s http/scombeomdev0521.smx.net smx\momReporting*
+
+        - **Report server**:scombeomdev0521
+        - **Domain name**:smx.net
+        - **Domain user account under which SSRS is running**:smx\momReporting
+
 4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) is not installed on a Management Server, the (computer or domain), account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it is installed.
-
-    >[!NOTE]
-    > The domain administrator can also select the *Trust this computer for delegation to any service(Kerberos only)* but the constraint delegation with protocol transition (shown in the image) is more secure.
-
-    ![Trust delegation](./media/favorite-reports/trust-delegation.png)
-
 
 5.	Run *klist* purge command on both the report server and the management server or reboot the servers.
 
