@@ -91,12 +91,12 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
         ```
 
-        Example:
+        **Example**:
         *setspn -s http/scombeomdev0521.smx.net smx\momReporting*
 
-        - Report server:scombeomdev0521
-        - Domain name:smx.net
-        - Domain user account under which SSRS is running:smx\momReporting
+        - **Report server**:scombeomdev0521
+        - **Domain name**:smx.net
+        - **Domain user account under which SSRS is running**:smx\momReporting
 
 4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) is not installed on a Management Server, the (computer or domain), account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it is installed.
 
