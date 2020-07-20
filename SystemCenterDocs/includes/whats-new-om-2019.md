@@ -324,8 +324,5 @@ With Operations Manager 2019 UR2, you can run and view favorite reports under **
 ### Support for folders in monitoring view of web console
 In Operations Manager 2016 and later, you can create a folder and place dashboards/views inside them using operations console. However, this feature is not available from Web console. With 2019 UR2, using web console, you can create folders and place dashboards inside them. These folders can be saved in unsealed management packs. [Learn more](../scom/support-folders-monitoring-view-web-console.md).
 
->[!NOTE]
-> Folders and views created from operations console are visible in web console, but the dashboards created from the web console are not visible in the operations console.        
-
 ### Support for CentOS 8
 Operations Manager 2019 UR2 supports CentOS 8 under Universal Linux (RPM package). To install the agent on servers, see this [procedure](https://docs.microsoft.com/system-center/scom/manage-install-crossplat-agent-cmdline?view=sc-om-2019#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
