@@ -63,14 +63,18 @@ Use the following steps:
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
 
-   > [!NOTE]
-   > This reference of the Representational State Transfer (REST) API is applicable to System Center Operations Manager 2019 UR2 and later versions.
+## Create folders in Web console using REST API
+
+You can use the following REST APIs to create folders in Web console and save dashboards inside them.
+
+> [!NOTE]
+> This feature is applicable to System Center Operations Manager 2019 UR2 and later versions.
 
 **Data/monitoringTreeForRootFolders**
 
   - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders.
 
-All the data required in the calls mentioned below are obtained from this endpoint. All the calls mentioned below are POST requests.
+All the data required in the POST requests below can be obtained from this call. All the calls mentioned below are POST requests.
 
 
 **monitoring/folder**
