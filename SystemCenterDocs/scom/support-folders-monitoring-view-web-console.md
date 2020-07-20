@@ -72,14 +72,12 @@ You can use the following REST APIs to create folders in Web console and save da
 
 **Data/monitoringTreeForRootFolders**
 
-  - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders.
-
-All the data required in the POST requests below can be obtained from this call. All the calls mentioned below are POST requests.
+  - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders. The output of this request can be used for below POST requests.
 
 
 **monitoring/folder**
 
-  - Create a new folder inside a management pack.
+  - Request of type POST to create a new folder inside a management pack.
 
       Parameters required:
 
@@ -99,7 +97,7 @@ All the data required in the POST requests below can be obtained from this call.
 
 **monitoring/dashboard/**
 
-  - Save a dashboard inside a new folder.
+  - Request of type POST to save a dashboard inside a new folder.
 
      Parameters required:
 
