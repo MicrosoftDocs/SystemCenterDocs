@@ -16,9 +16,23 @@ monikerRange: '>=sc-dpm-2019'
 # Optimized volume to volume migration
 
 > [!NOTE]
-> This feature is applicable from UR2 and later.
+> This feature is applicable from DPM 2019 UR2 and later.
 
 The optimized volume to volume migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy.
+
+DPM supports the following two options to migrate data to a new volume:
+
+- **Full migration (default)**
+
+  With this feature, all the data for a particular data source is migrated from current volume to the new volume. The time to complete the migration is based on the size of the protected data source, larger the data source, more time it takes to migrate to the other volume.
+
+- **Optimized migration**
+
+  This option is applicable from DPM 2019 UR2 and later versions.
+
+  The optimized volume to volume migration allows you to move data sources to the new volume much faster.
+
+The optimized volume to volume migration allows you to move data sources to the new volume much faster.
 
 
 
@@ -28,13 +42,16 @@ Follow these steps to migrate data source from one volume to the other volume:
 
 2. In the **Protection** workspace, select the datasource you want to migrate.
 
-
+   ![Select target workload](./media/volume-volume-migration/move-disk-storage.png)
 
 3. Click **Move Disk Storage**.
 
+   ![Move disk storage](./media/volume-volume-migration/select-target-disk-storage.png)
 
 
 4. Select the *target disk storage* that you want to migrate to, and click **OK**.
+
+   ![Select target disk storage](./media/volume-volume-migration/select-workload.png)
 
 
 
