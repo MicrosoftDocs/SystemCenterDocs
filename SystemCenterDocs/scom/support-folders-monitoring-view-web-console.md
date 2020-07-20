@@ -86,7 +86,7 @@ You can use the following REST APIs to create folders in Web console and save da
       |  path  | string  |Name of the new folder. |
       | mpId|string| Id of the management pack where you want to create the new folder.  |
 
-  - Create a new folder inside a pre-existing folder
+  - Request of type POST to create a new folder inside a pre-existing folder
 
       Parameters required:
 
@@ -107,7 +107,7 @@ You can use the following REST APIs to create folders in Web console and save da
      | path|string| Folder id where you want to save the new dashboard.  |
 
 
-  - Save a dashboard inside the root monitoring.
+  - Request of type POST to save a dashboard inside the root monitoring.
 
      Parameters required:
 
