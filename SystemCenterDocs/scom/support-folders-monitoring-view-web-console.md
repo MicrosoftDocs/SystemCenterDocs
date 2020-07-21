@@ -63,55 +63,57 @@ Use the following steps:
    > [!NOTE]
    >  You can create a dashboard at the root monitoring level as before, by not selecting any folder and clicking the monitoring root.
 
-   > [!NOTE]
-   > This reference of the Representational State Transfer (REST) API is applicable to System Center Operations Manager 2019 UR2 and later versions.
+## Create folders in Web console using REST API
+
+You can use the following REST APIs to create folders in Web console and save dashboards inside them.
+
+> [!NOTE]
+> This feature is applicable to System Center Operations Manager 2019 UR2 and later versions.
 
 **Data/monitoringTreeForRootFolders**
 
-  - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders.
-
-All the data required in the calls mentioned below are obtained from this endpoint. All the calls mentioned below are POST requests.
+  - Data/monitoringTreeForRootfolders is a GET request that returns all the folders stored in unsealed management packs inside which users can store dashboards and folders. The output of this request can be used for below POST requests.
 
 
 **monitoring/folder**
 
-  - Create a new folder inside a management pack.
+  - Request of type POST to create a new folder inside a management pack.
 
       Parameters required:
 
       | Name | Type  | Definition |
       |----|---|------|
       |  path  | string  |Name of the new folder. |
-      | mpId|string| Id of the management pack where you want to create the new folder.  |
+      | mpId|string| ID of the management pack where you want to create the new folder.  |
 
-  - Create a new folder inside a pre-existing folder
+  - Request of type POST to create a new folder inside a pre-existing folder
 
       Parameters required:
 
       | Name | Type  | Definition |
       |----|---|------|
-      |  component Id  | string  |Folder id of the parent where you want to store the new folder. |
+      |  component Id  | string  |Folder ID of the parent where you want to store the new folder. |
       | path|string| Name of the new folder.  |
 
 **monitoring/dashboard/**
 
-  - Save a dashboard inside a new folder.
+  - Request of type POST to save a dashboard inside a new folder.
 
      Parameters required:
 
      | Name | Type  | Definition |
      |----|------|-----|
      |  name | string  |Name of the new dashboard. |
-     | path|string| Folder id where you want to save the new dashboard.  |
+     | path|string| Folder ID where you want to save the new dashboard.  |
 
 
-  - Save a dashboard inside the root monitoring.
+  - Request of type POST to save a dashboard inside the root monitoring.
 
      Parameters required:
 
      | Name | Type  | Definition |
      |----|----|-----|
-     |  mpId  | string  |Id of the management pack where you want to store the dashboard. |
+     |  mpId  | string  |ID of the management pack where you want to store the dashboard. |
      | name |string| Name of the new dashboard.  |
 
 

@@ -326,21 +326,12 @@ Follow these steps:
 
     ![Review Disk Storage Allocation](./media/add-storage/dpm2016-add-storage-7.png)
 
+::: moniker range="<=sc-dpm-1807"
+
 ## Migrate data to newly created volumes
 
 In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
 
-DPM supports the following two options to migrate data to a new volume:
-
-- **Full migration (default)**
-
-  With this feature, all the data for a particular data source is migrated from current volume to the new volume. The time to complete the migration is based on the size of the protected data source, larger the data source, more time it takes to migrate to the other volume.
-
-- **Optimized migration**
-
-  This option is applicable from DPM 2019 UR2 and later versions.
-
-  The optimized volume to volume migration allows you to move data sources to the new volume much faster. [Learn more](volume-to-volume-migration.md)
 
 Migration of data source should have all recovery points on Modern Storage.
 
@@ -348,6 +339,26 @@ Migration of data source should have all recovery points on Modern Storage.
 > - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
 >- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
 
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+## Migrate data to newly created volumes
+
+In case you had upgraded your existing storage to a tiered storage, you can migrate your data by using Volume Migration. You can use PowerShell or the user interface to migrate data sources. [Learn more](https://go.microsoft.com/fwlink/?linkid=861519).
+
+
+Migration of data source should have all recovery points on Modern Storage. For more details on volume migration with DPM, refer to the next section.
+
+> [!NOTE]
+> - Migration of  data sources with backups on disks and volumes (for example, DPM server upgrades when the disk backups haven't expired) is not supported.
+>- Migration is similar to modification of a protection group. While migration is in progress, you cannot trigger an ad hoc job. Scheduled jobs continue as configured. When the migration completes, current jobs in the protection group are preempted.
+
+## Volume to volume migration
+
+DPM supports two types of volume to volume migration, **Full migration** and **Optimized migration**. [Learn more](volume-to-volume-migration.md).
+
+::: moniker-end
 
 ## Configure workload-aware storage
 
