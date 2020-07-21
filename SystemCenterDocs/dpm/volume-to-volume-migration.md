@@ -48,5 +48,8 @@ Follow these steps to migrate data source from one volume to the other volume:
    ![Select target disk storage](./media/volume-volume-migration/select-workload.png)
 
 
-
    This begins the migration process. For monitoring scheduled jobs, you can open another DPM console in parallel, while the migration is in progress.
+
+## Next steps
+
+[Deduplicate DPM storage](deduplicate-dpm-storage.md)
