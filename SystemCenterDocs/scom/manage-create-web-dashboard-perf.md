@@ -61,7 +61,7 @@ In System Center Operations Manager version 1801 and higher, the Web console pro
 
 13. The widget can also be visualized as **Objects by performance widget**.  If you would wish to visualize object by performance widget then select **Visualize objects by performance**.
 
-14. Complete the configuration by providing a **Name**, **Description** and **Widget reefresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
+14. Complete the configuration by providing a **Name**, **Description** and **Widget refresh interval** (default interval is 5 minutes) for the widget.  Click **Save Widget** to save your new dashboard.  
 
 After the widget has been created, it displays a performance graph with the selected objects based on the scope and criteria defined. You see the name of the performance widget along with the number of objects in the header of the widget.
 

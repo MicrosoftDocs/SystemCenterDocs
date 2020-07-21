@@ -91,9 +91,9 @@ See the following sections for information about the new features/feature update
 
 For issues fixed in 2019 UR1, see the [KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
 
-### Support for ReFS volumes and ReFS volumes with Deduplication enabled
+### Support for ReFS volumes
 
-With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the ReFS volume. You can back up the following workloads deployed on the ReFS volumes:
+With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the ReFS volumes. You can back up the following workloads:
 
  - **Operating System (64 bit)**: Windows Server 2019, 2016, 2012 R2, 2012.
  - **SQL Server**: SQL Server 2019, SQL Server 2017, 2016.
@@ -102,6 +102,8 @@ With DPM 2019 UR1, you can backup the ReFS volumes and workloads deployed on the
 
  > [!NOTE]
  > Backup of Hyper-V VMs stored on ReFS volume is supported with DPM 2019 RTM.
+ >
+> We have identified a few issues with backup of deduplicated ReFS volumes. We are working on fixing these, and will update this section as soon as we have a fix available. Until then, we are removing the support for backup of deduplicated ReFS volumes from 2019 UR1.
 
 ### Windows Server Core support
 You can install DPM 2019 UR1 on Windows Server Core 2019 and 2016.
