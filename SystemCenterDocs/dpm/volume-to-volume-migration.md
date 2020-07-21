@@ -15,7 +15,7 @@ monikerRange: '>=sc-dpm-2019'
 
 # Moving datasources to new volumes
 
-There are various reasons why a volume migration is required: the underlying storage in the old volume can have fragmentation, or the old volume would have hit the limit of maximum allowed storage size or you want to run your workloads on a more high performant underlying storage.
+There are various reasons why a volume migration is required: the underlying storage in the old volume can have fragmentation, or the old volume would have reached the limit of maximum allowed storage size or you want to run your workloads on a more high performant underlying storage.
 
 DPM supports the following two options to migrate data to a new volume:
 
