@@ -27,7 +27,7 @@ DPM supports the following two options to migrate data to a new volume:
 
   This option is applicable from DPM 2019 UR2 and later versions.
 
-  The optimized volume to volume migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy. To use this option, you should first add following registry key: *OptimizedMigrate = 1* in the path HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage.
+  The optimized volume to volume migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy. To use this option, you should first add the registry key: *OptimizedMigrate = 1* in the path HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage.
 
 
 Follow these steps to migrate data source from one volume to the other volume:
