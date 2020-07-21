@@ -84,7 +84,7 @@ You can use the following REST APIs to create folders in Web console and save da
       | Name | Type  | Definition |
       |----|---|------|
       |  path  | string  |Name of the new folder. |
-      | mpId|string| Id of the management pack where you want to create the new folder.  |
+      | mpId|string| ID of the management pack where you want to create the new folder.  |
 
   - Request of type POST to create a new folder inside a pre-existing folder
 
@@ -92,7 +92,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
       | Name | Type  | Definition |
       |----|---|------|
-      |  component Id  | string  |Folder id of the parent where you want to store the new folder. |
+      |  component Id  | string  |Folder ID of the parent where you want to store the new folder. |
       | path|string| Name of the new folder.  |
 
 **monitoring/dashboard/**
@@ -104,7 +104,7 @@ You can use the following REST APIs to create folders in Web console and save da
      | Name | Type  | Definition |
      |----|------|-----|
      |  name | string  |Name of the new dashboard. |
-     | path|string| Folder id where you want to save the new dashboard.  |
+     | path|string| Folder ID where you want to save the new dashboard.  |
 
 
   - Request of type POST to save a dashboard inside the root monitoring.
@@ -113,7 +113,7 @@ You can use the following REST APIs to create folders in Web console and save da
 
      | Name | Type  | Definition |
      |----|----|-----|
-     |  mpId  | string  |Id of the management pack where you want to store the dashboard. |
+     |  mpId  | string  |ID of the management pack where you want to store the dashboard. |
      | name |string| Name of the new dashboard.  |
 
 
