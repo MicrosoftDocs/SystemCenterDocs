@@ -65,4 +65,4 @@ The following table displays the maintenance tasks and the time they are schedul
 - To learn more about the default retention period for the different data types stored in the Operations Manager operational database and how to modify those settings, please see
 [How to configure grooming settings for the Operations Manager database](manage-omdb-grooming-settings.md).
 
-- See also [Monitoring the Health of the Management Group](manage-monitor-health-mg.md) to understand how you can quickly asses the functional state of your management group.  
+- See also [Monitoring the Health of the Management Group](manage-monitor-health-mg.md) to understand how you can quickly assess the functional state of your management group.  
