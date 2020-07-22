@@ -5,7 +5,7 @@ description: This article describes how to Set up an SDN RAS gateway in the VMM 
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 06/12/2018
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -17,9 +17,14 @@ This article describes how to set up a Software Defined Networking (SDN) RAS gat
 
 An SDN RAS gateway is a data path element in SDN that enables site-to-site connectivity between two autonomous systems. Specifically, a RAS gateway enables site-to-site connectivity between remote tenant networks and your datacenter using IPSec, Generic Routing Encapsulation (GRE) or Layer 3 Forwarding. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
+::: moniker range="sc-vmm-2019"
+>[!Note]
+>- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**.
+>- VMM 2019 UR2 and later supports IPv6.
+
+::: moniker-end
 
 ## Before you start
-
 
 Ensure the following before you start:
 
@@ -55,6 +60,11 @@ Both the templates have a default count of three virtual machines which can be c
 
 1. In the VMM console, run the Create Logical Network Wizard. Type a **Name**, optionally provide a description, and  click **Next**.
 2. In **Settings**, select **One Connected Network**. Optionally you can select **Create a VM network with the same name**. This setting allows VMs to access this logical network directly. Select **Managed by the Network Controller**, and click **Next**.
+
+::: moniker range="sc-vmm-2019"
+- For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**, and click **Next**.
+::: moniker-end
+
 3. In **Network Site**, specify the settings:
 
     Here are the sample values:
@@ -64,21 +74,48 @@ Both the templates have a default count of three virtual machines which can be c
     - Mask: 24
     - VLAN ID on trunk: NA
     - Gateway: 31.30.30.1
-
+::: moniker range="<sc-vmm-2019"
 4. In **Summary**, review the settings and finish the wizard.
+::: moniker-end
+
+::: moniker range="sc-vmm-2019"
+4. To use IPv6, add both IPv4 and IPV6 subnet to the network site.
+    Here are the sample values:
+
+    - Network name: GRE VIP
+    - Subnet: FD4A:293D:184F:382C::
+    - Mask: 64
+    - VLAN ID on trunk: NA
+    - Gateway: FD4A:293D:184F:382C::1
+5. In **Summary**, review the settings and finish the wizard.
+::: moniker-end
+
 
 ### Create an IP address pool for GRE VIP addresses
+
+::: moniker range="=sc-vmm-2019"
+
+>[!NOTE]
+> From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
+
+::: moniker-end
 
 1. Right-click the GRE VIP logical network > **Create IP Pool**.
 2. Type a **Name** and optional description for the pool, and check that the VIP network is selected. Click **Next**.
 3. Accept the default network site and click **Next**.
-4. Choose a starting and ending IP address for your range.
-
-    **Note**: Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2.
-
+::: moniker range="<sc-vmm-2019"
+4. Choose a starting and ending IP address for your range.  Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2.
 5. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
 6. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
 7. In **Summary**, review the settings and finish the wizard.
+::: moniker-end
+::: moniker range="=sc-vmm-2019"
+4. If you had created IPv6 subnet, create a separate IPv6 GRE VIP address pool.
+5. Choose a starting and ending IP address for your range.  Start the range on the second address of your available subnet. For example, if your available subnet is from .1 to .254, start the range at .2. For specifying VIP range, don’t use the shortened form of IPv6 address; Use *2001:db8:0:200:0:0:0:7* format instead of *2001:db8:0:200::7*
+6. In the **IP addresses reserved for load balancer VIPs** box, type the IP addresses range in the subnet. This should match the range you used for starting and ending IP addresses.
+7. You don't need to provide gateway, DNS or WINS information as this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens.
+8. In **Summary**, review the settings and finish the wizard.
+::: moniker-end
 
 ## Import the service template
 
@@ -153,7 +190,34 @@ Now that the gateway service is deployed, you can configure the properties, and 
     **Note**: The Run as account must have Administrator privileges on the gateway VMs.
 
 5. In **GRE VIP subnet**, select the VIP subnet that you created previously.
+::: moniker range="<sc-vmm-2019"
 6. In **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
+::: moniker-end
+::: moniker range="=sc-vmm-2019"
+6. To enable IPv4 support, in **Public IPv4 pool**, select the pool you configured during SLB deployment. In **Public IPv4 address**, provide an IP address from the previous pool, and ensure you don't select the initial three IP addresses from the range.
+7. To enable IPv6 support, from **Network Controller Properties** > **Services**, select **Enable IPv6**’ checkbox, select the IPv6 GRE VIP subnet that you have created previously, and input the public IPv6 pool and public IPv6 address respectively. Also, select IPv6 frontend subnet that will be assigned to Gateway VMs.
+
+    ![IPv6 enable](media/sdn-gateway/configure-gateway-manager-role.png)
+
+8. In **Gateway Capacity**, configure the capacity settings.
+
+    The gateway capacity (Mbps) denotes the normal TCP bandwidth that is expected out of the gateway VM. You must set this parameter based on the underlying network speed you use.
+
+    IPsec tunnel bandwidth is limited to (3/20) of the gateway capacity. Which means, if the gateway capacity is set to 1000 Mbps, the equivalent IPsec tunnel capacity would be limited to 150 Mbps.
+
+    > [!NOTE]
+    > The bandwidth limit is the total value of  inbound bandwidth and outbound bandwidth.
+
+    The equivalent ratios For GRE, and L3 tunnels are 1/5 and 1/2 respectively.
+
+9. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
+10. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
+
+**Note**: You must configure the gateway BGP peers, if you plan to use GRE connections.
+
+The service instance you deployed is now associated with the gateway Manager role. You should see the gateway VM instance listed under it.
+::: moniker-end
+::: moniker range="<sc-vmm-2019"
 7. In **Gateway Capacity**, configure the capacity settings.
 
     The gateway capacity (Mbps) denotes the normal TCP bandwidth that is expected out of the gateway VM. You must set this parameter based on the underlying network speed you use.
@@ -167,6 +231,8 @@ Now that the gateway service is deployed, you can configure the properties, and 
 
 8. Configure the number of reserved nodes for back-up in **Nodes for reserved for failures field**.
 9. To configure individual gateway VMs, click each VM and select the IPv4 frontend subnet, specify the local ASN, and optionally add the peering device information for the BGP peer.
+
+::: moniker-end
 
 **Note**: You must configure the gateway BGP peers, if you plan to use GRE connections.
 

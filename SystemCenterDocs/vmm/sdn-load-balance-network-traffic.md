@@ -1,11 +1,11 @@
 ---
 ms.assetid: 6f0852f2-ba7a-4d99-9c57-f096460b4347
-title: Load balance network traffic in an SDN fabric using VMM 2016
+title: Load balance network traffic in an SDN fabric using VMM
 description: This article describes how to configure load balancing for the internal and external network traffic through a VIP.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 05/06/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -26,6 +26,13 @@ System Center Virtual Machine Manager (VMM) supports the following two scenarios
     > VMM 2016 supports configuration of load balancing by using PowerShell. Configuration through Service templates is currently not supported.
 
 This article provides information about how to configure the load balancing of workload VMs by using PowerShell.
+
+::: moniker range="sc-vmm-2019"
+>[!Note]
+>- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
+>- VMM 2019 UR2 and later supports IPv6.
+
+::: moniker-end
 
 ## Before you start
 
@@ -79,6 +86,9 @@ Create a VIP by using the following example scripts. Select the script based on 
 ### Script for creating VIP to load balance external network traffic
 
 The following example script creates the VIP from a public IP network to load balance the workload VMs WGB-001 & WGB-002 on port 80.
+::: moniker range="sc-vmm-2019"
+This script can be used to create load balancing VIP by passing IPv6 VIP address as well.
+::: moniker-end
 
 The workload VMs can be connected to a **no isolation** network or **network virtualization** enabled VM networks.
 
@@ -163,6 +173,10 @@ Write-Output "VIP created successfully " $vip;
 ### Script for creating VIP to load balance internal network traffic
 
 For the following example script, we created a new VIP template by name ILB-VIP-Template for load balancing the port 443 using the procedure detailed in the [previous section](#create-a-vip-template). The script creates a VIP from tenant VM network to load balance the VMs ILB-001 & ILB-002, which are part of the same tenant VM network.
+
+::: moniker range="sc-vmm-2019"
+This script can be used to create load balancing VIP by passing IPv6 VIP address as well.
+::: moniker-end
 
 > [!NOTE]
 > - In the Internal load balancing scenario, the VIP comes from the tenant VM network. So, the **$VipNetworkName** is the same tenant VM network name where the VMs are connected. Ensure that the tenant VM network IP pool has the IPs reserved for VIPs. The **$VipAddress** is one of the IP addresses from the reserved VIPs.
