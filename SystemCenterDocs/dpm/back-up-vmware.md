@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 06/29/2020
+ms.date: 07/22/2020
 title: Back up and restore VMware Virtual Machines
 ms.technology: data-protection-manager
 ms.assetid:
@@ -538,7 +538,7 @@ Navigate to DPM server where the VMware VM is configured for protection to confi
 
         > [!NOTE]
         > Before running this command, stop the DPMRA service on the DPM server. Else, the script returns success, but does not update the exclusion list. Ensure there are no jobs in progress before stopping the service.
-
+        > With DPM 2019 UR2, this experience is improved. You can run the script without stopping the DPMRA service.
 
 
      **To add/remove the disk from exclusion, run the following command:**
