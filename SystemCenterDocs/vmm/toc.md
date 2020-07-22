@@ -3,6 +3,7 @@
 ## [VMM network object fundamentals](network-object-fundamentals.md)
 ## [What's new in VMM ](whats-new-in-vmm.md)
 # Get Started
+## [VMM build versions](release-build-versions.md)
 ## [Release notes - VMM](release-notes-vmm.md)
 ## [Turn telemetry data on/off](manage-telemetry.md)
 ## [Deploy a VMM cloud](deploy-cloud.md)
