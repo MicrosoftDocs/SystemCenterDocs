@@ -365,7 +365,7 @@ You can optionally validate the network controller deployment. To do this:
 ::: moniker range="=sc-vmm-2019"
 2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
 
-    ![HNV network](media/sdn-controller/set-up-hnv-provider.png)
+    ![HNV network](media/sdn-controller/set-up-provider-network.png)
 
     >[!NOTE]
     > From VMM 2019 UR1,**One Connected Network** type is changed to **Connected Network**.
@@ -430,7 +430,7 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 >When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
 >
 
-![HNV network](media/sdn-controller/enble-ipv6-vm-network.png)
+![HNV network](media/sdn-controller/enable-ipv6.png)
 
 ::: moniker-end
 
