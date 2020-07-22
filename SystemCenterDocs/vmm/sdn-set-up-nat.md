@@ -44,8 +44,6 @@ Use the following procedure:
 1. In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network for which you want to create the NAT connection, and select **Properties**.
 2. Click **Connectivity** on the wizard page displayed.
 
-    ![nat connection](media/sdn-nat/nat-connection.png)
-
 3. In **Connectivity**, select **Connect directly to an additional logical network** and select **Network address translation (NAT)** under this option.   
 
     ![nat connection](media/sdn-nat/create-connection-directly.png)

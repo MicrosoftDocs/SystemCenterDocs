@@ -100,6 +100,9 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
 4.	Trust delegation: In case SQL Reporting Services (Operations Manager reporting services) is not installed on a Management Server, the (computer or domain), account under which the SQL Reporting Service is running needs to be trusted on the Management Server on which it is installed.
 
+>[!NOTE]
+>The domain administrator can select *Trust this computer for delegation to any service(kerberos only)*, or constraint delegation with protocol transition.
+
 5.	Run *klist* purge command on both the report server and the management server or reboot the servers.
 
 ### Important notes
