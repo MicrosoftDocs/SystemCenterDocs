@@ -115,11 +115,8 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 ::: moniker-end
 ::: moniker range="sc-vmm-2019"
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
-
-For UR1 and later, in **Settings**, select **connected Network** and select **Managed by the network controller**.
-
-![Private VIP](media/sdn-slb/create-a-private-vip.png)
-
+    For UR1 and later, in **Settings**, select **connected Network** and select **Managed by the network controller**.
+    ![Private VIP](media/sdn-slb/create-a-private-vip.png)
 ::: moniker-end
 3. In **Network Site**, add the network site information for your private VIP logical network.
 4. Review the **Summary** information and complete the wizard.
@@ -133,9 +130,9 @@ For UR1 and later, in **Settings**, select **connected Network** and select **Ma
 ::: moniker range="sc-vmm-2019"
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
 
-For UR1 and later, in **Settings**, select **connected Network** and select both **Managed by the network controller** and **Public IP address network**.
+    For UR1 and later, in **Settings**, select **connected Network** and select both **Managed by the network controller** and **Public IP address network**.
 
-![Public VIP](media/sdn-slb/create-a-public-vip.png)
+    ![Public VIP](media/sdn-slb/create-a-public-vip.png)
 
 ::: moniker-end
 3. In **Network Site**, add the network site information for your public VIP logical network.
@@ -149,9 +146,8 @@ For UR1 and later, in **Settings**, select **connected Network** and select both
 3. Accept the default network site, and click **Next**.
 ::: moniker range="<sc-vmm-2019"
 4. In **IP Address range** configure the starting and ending IP address.
-
->[!NOTE]
-> Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
+    >[!NOTE]
+    > Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 ::: moniker-end
 ::: moniker range="sc-vmm-2019"
 4. In **IP Address range** configure the starting and ending IP address. Specify IPv6 address pool if you are using IPv6 address space.

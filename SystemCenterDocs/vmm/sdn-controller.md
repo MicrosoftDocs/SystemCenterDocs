@@ -444,7 +444,7 @@ Now, you can create tenant virtual machines connected to the tenant virtual netw
 ::: moniker range="=sc-vmm-2019"
 - Ensure that your tenant virtual machines allow IPv4/IPv6 ICMP through their firewall. By default, Windows Server blocks this.
     - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
-    - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6**(applicable for 2019 UR2 and later).
+    - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6** (applicable for 2019 UR2 and later).
 ::: moniker-end
 
 1. If you want to create a VM from an existing hard disk, [follow these instructions](vm-existing-disk.md).
