@@ -13,7 +13,7 @@ ms.author: v-anesh
 monikerRange: '>=sc-dpm-2019'
 ---
 
-# Moving datasources to new volumes
+# Migrate datasources to new volumes
 
 There are various reasons why a volume migration is required: the underlying storage in the old volume can have fragmentation, or the old volume would have reached the limit of maximum allowed storage size or you want to run your workloads on a more high performant underlying storage.
 
