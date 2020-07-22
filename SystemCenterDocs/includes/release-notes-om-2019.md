@@ -115,7 +115,7 @@ Also, ID is returned as className.
 
 **Workaround**: None
 
->[!NOTE>
+>[!NOTE]
 >This issue is fixed in 2019 UR2.
 
 ## Operations Manager 2019 UR1 release notes
