@@ -104,6 +104,9 @@ This command will add the service user to the list of allowed users, who can acc
 
     For detailed information about this issue, see [update an active directory integration with Operations Manager](https://techcommunity.microsoft.com/t5/system-center-blog/update-on-active-directory-integration-with-scom/ba-p/1226768).
 
+    >[!NOTE]
+    >This issue is fixed in 2019 UR2.
+
 
 ### REST API in Operations Manager does not return required values for classes
 
@@ -111,6 +114,9 @@ This command will add the service user to the list of allowed users, who can acc
 Also, ID is returned as className.
 
 **Workaround**: None
+
+>[!NOTE>
+>This issue is fixed in 2019 UR2.
 
 ## Operations Manager 2019 UR1 release notes
 The following sections summarize the release notes for Operations Manager 2019 UR1, and include the known issues and workarounds.
