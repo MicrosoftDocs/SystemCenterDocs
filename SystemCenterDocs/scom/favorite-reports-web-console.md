@@ -104,7 +104,7 @@ Use the following procedure to configure Windows authentication (Kerberos) betwe
 
 ### Important notes
 
--	If Operations Management web console is installed on a Stand-alone server (not an Operations Manager Management  Server), then  add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well (as Kerberos Only).
+-	If Operations Management web console is installed on a Stand-alone server (not an Operations Manager Management  Server), then  add the SDK Account SPN (account under which System Center Data Access Service is running) to the *Constraint Delegation* allowed list for the Operations Manager Web Console server as well.
 -	If you do not want to see the sign in prompt for web console, add the web console URL to intranet zone (**Internet Options** > **Security** > **Local Intranet**).
 
 ## Next steps
