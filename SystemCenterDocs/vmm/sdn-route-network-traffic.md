@@ -5,7 +5,7 @@ description: This article describes about how to route the network traffic betwe
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 03/14/2019
+ms.date: 07/15/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -16,6 +16,13 @@ This article describes how to route traffic across networks in a software-define
 
 An SDN RAS gateway enables you to route network traffic between physical and virtual networks, regardless of where the resources are located. SDN RAS gateway is multitenant, Boarder Gateway Protocol (BGP) capable and supports connectivity using Site-to-Site virtual private network (VPN) using IPsec or Generic Routing Encapsulation (GRE) or Layer 3 Forwarding.  [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/ras-gateway-for-sdn).
 
+::: moniker range="sc-vmm-2019"
+
+>[!NOTE]
+> - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
+> - VMM 2019 UR2 and later supports IPv6.
+
+::: moniker-end
 ## Before you start
 
 Ensure the following:
@@ -29,6 +36,13 @@ Ensure the following:
 A site-to-site VPN connection allows you to securely connect two networks at different physical locations by using  Internet.
 
 For Cloud Service Providers (CSPs) that host many tenants in their datacenter, SDN RAS gateway provides a multi-tenant gateway solution that allows your tenants to access and manage their resources over Site-to-Site VPN connections from remote sites, which in turn allows network traffic between virtual resources in your datacenter and their physical network.
+
+::: moniker range="sc-vmm-2019"
+To enable IPv6 for site-to-site VPN connection, routing subnet must be both IPv4 and IPv6. For gateway to work in IPv6, provide IPv4 and IPv6 addresses separated by semicolon (**;**) and provide IPv6 address in the remote endpoint. For example, *192.0.2.1/23;2001:0db8:85a3:0000:0000:8a2e:0370::/64*.
+
+![Enable IPv6](media/sdn-route-network-traffic/configure-site-to-site-virtual-private-network.png)
+
+::: moniker-end
 
 ## Configure IPSec connection
 **Use the following procedure**:
@@ -89,7 +103,9 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 **Use the following steps to create the next-hop logical network in SCVMM:**
 
 1. On the VMM console, select **Logical Networks**, right-click, and select **Create Logical Network**.
+
 2. In the **Settings** page, choose **One connected network** and select the checkbox for **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**
+
 3. Create an IP Pool for this new logical network.
 
    IP address from this pool is required in the script for setting up L3 forwarding.
@@ -260,6 +276,10 @@ To learn more, check these articles: [Windows server gateway as a forwarding gat
 2. In the **Settings** page, choose **One connected network** and select  **Create a VM network with the same name to allow virtual machines to access this logical network directly** and **Managed by Microsoft Network Controller**.
 
     ![one connected network](./media/sdn-route-network-traffic/one-connected-network.png)
+
+    >[!NOTE]
+    > From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
+
 
 3. Create an IP Pool for this new logical network. IP address from this pool is required for setting up L3 forwarding.
 
