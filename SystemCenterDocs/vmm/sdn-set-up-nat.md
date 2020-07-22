@@ -48,7 +48,7 @@ Use the following procedure:
 
 3. In **Connectivity**, select **Connect directly to an additional logical network** and select **Network address translation (NAT)** under this option.   
 
-    ![nat connection](media/sdn-nat/create-nat-connection.png)
+    ![nat connection](media/sdn-nat/create-connection-directly.png)
 
 4. In the **IP address pool**, choose the IP pool from which the VIP should come from. In IP address, choose an IP address from the pool selected. Click **OK**.
 ::: moniker range="sc-vmm-2019"
