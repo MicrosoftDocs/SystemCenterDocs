@@ -141,11 +141,11 @@ Specify alternate source: *WIM:D:\Sources\Install.wim:4*
 
      > [!NOTE]
      > First time login takes longer than usual. The Azure PowerShell module gets installed in the background, and also the Azure AD Application is registered:
-     >  - The following PowerShell modules are installed.
-          - AzureRM.Profile     "5.8.3"
-          - AzureRM.Resources   "6.7.3"
-          - AzureRM.Storage     "5.2.0"
-          - Azure.Storage       "4.6.1"
+     >  - The following PowerShell modules are installed.<br>
+          - AzureRM.Profile     "5.8.3"<br>
+          - AzureRM.Resources   "6.7.3"<br>
+          - AzureRM.Storage     "5.2.0"<br>
+          - Azure.Storage       "4.6.1"<br>
      >  - The Azure AD application is registered as *AzureOfflineBackup_\<object GUID of the user>*
 
 
