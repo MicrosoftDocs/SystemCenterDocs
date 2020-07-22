@@ -118,7 +118,7 @@ Windows Server 2019 (Server Core) | Y | Y | N | N
 **VMware** | **Supported**
 --- | ---
 ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 (supported from 2019 UR2 and later)
-vCenter | 5.1, 5.5, 5.8, 6.0, 6.5
+vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
 Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric
