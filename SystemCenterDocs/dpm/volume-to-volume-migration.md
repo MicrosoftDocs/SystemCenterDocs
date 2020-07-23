@@ -28,10 +28,18 @@ DPM supports the following two options to migrate data to a new volume:
    > [!NOTE]
    > This option is applicable from DPM 2019 UR2 and later versions.
 
-  The optimized volume to volume migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy. To use this option, you should first add the registry key: *OptimizedMigrate = 1* in the path HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage.
+  The optimized volume to volume migration allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (Active Replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume and are purged as per the retention policy.
 
+  To use this option, first add the registry key as per the details below:
 
-Follow these steps to migrate data source from one volume to the other volume:
+  - **Key Path**: HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Configuration\DiskStorage <br>
+  - **Type**: DWORD <br>
+  - **Name**: OptimizedMigrate <br>
+  - **Value**: 1
+
+## Migrate datasource from one volume to the other volume using console
+
+Follow these steps:
 
 1. In the DPM Administrator Console, click **Protection**.
 
@@ -50,3 +58,21 @@ Follow these steps to migrate data source from one volume to the other volume:
 
 
    This begins the migration process. For monitoring scheduled jobs, you can open another DPM console in parallel, while the migration is in progress.
+
+## Migrate datasource from one volume to the other volume using PowerShell
+
+   Here is an example for migrating data source from one volume to the other volume using PowerShell:
+
+```powershell
+   Create a modifiable Protection Group the of the PG the datasource is in.
+   $pg = Get-DPMProtectionGroup
+   $mpg = Get-DPMModifiableProtectionGroup $pg[0]
+   Get the datasource you wish to migrate, and the volume you wish to migrate it to.
+   $ds = Get-DPMDatasource $mpg
+   $vols = Get-DPMDiskStorage -Volumes
+   Modify the disk allocation for the datasource, and save the PG.
+   Set-DPMDatasourceDiskAllocation -ProtectionGroup $mpg -Datasource $ds[0] -TargetStorage $vols[0] -MigrateDatasourceDataFromDPM
+   Set-ProtectionGroup $mpg
+```
+
+   These steps enable you to have more control over your storage while giving you the freedom to balance storage utilization across volumes.
