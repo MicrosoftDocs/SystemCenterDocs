@@ -285,8 +285,8 @@ VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives
 
 ## Networking
 
-### Support for additional options while creating logical switch
-With VMM 2019 UR2, we have introduced additional options in **Create Logical Switch** wizard . [Learn more](../vmm/network-switch.md)
+### User experience improvements in creating logical switches
+With VMM 2019 UR2, the user experience is enhanced for the process of creating logical switches. 2019 UR2 includes smart defaults, provides clear text explanation for various options along with visual representations, and a topology diagram for logical switch. [Learn more](../vmm/network-switch.md)
 
 ### Support for IPv6
 
