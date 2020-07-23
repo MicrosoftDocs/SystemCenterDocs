@@ -15,7 +15,7 @@ monikerRange: '>=sc-dpm-2019'
 
 # Migrate datasources to new volumes
 
-There are various reasons why a volume migration is required: the underlying storage in the old volume can have fragmentation, or the old volume would have reached the limit of maximum allowed storage size or you want to store your backups on a high-performance underlying storage.
+There are various reasons why a [volume migration](add-storage.md#migrate-data-to-newly-created-volumes) is required: the underlying storage in the old volume can have fragmentation, or the old volume would have reached the limit of maximum allowed storage size or you want to store your backups on a high-performance underlying storage.
 
 DPM supports the following two options to migrate data to a new volume:
 
@@ -64,13 +64,13 @@ Follow these steps:
    Here is an example for migrating data source from one volume to the other volume using PowerShell:
 
 ```powershell
-   Create a modifiable Protection Group the of the PG the datasource is in.
+   #Create a modifiable Protection Group of the PG the datasource is in.
    $pg = Get-DPMProtectionGroup
    $mpg = Get-DPMModifiableProtectionGroup $pg[0]
-   Get the datasource you wish to migrate, and the volume you wish to migrate it to.
+   #Get the datasource you wish to migrate, and the volume you wish to migrate it to.
    $ds = Get-DPMDatasource $mpg
    $vols = Get-DPMDiskStorage -Volumes
-   Modify the disk allocation for the datasource, and save the PG.
+   #Modify the disk allocation for the datasource, and save the PG.
    Set-DPMDatasourceDiskAllocation -ProtectionGroup $mpg -Datasource $ds[0] -TargetStorage $vols[0] -MigrateDatasourceDataFromDPM
    Set-ProtectionGroup $mpg
 ```
