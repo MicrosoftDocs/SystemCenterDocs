@@ -43,7 +43,7 @@ var requestHeaders = {
         }
 ```
 
-2. In the onload function, change the header value as **requestHeaders**.
+2. In the onload function, change the header value as **requestHeaders** or if the header value does not exist, add it as shown below.
 
 **Example:**
 
