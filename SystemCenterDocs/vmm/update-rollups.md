@@ -77,8 +77,8 @@ Use the following procedure to check if an update rollup is successfully install
 1. Verify that an update entry was created after the update rollup was installed.
     - For example, the Update Rollup 2 was released as update 3209586. You should be able to see this detail under **View installed updates** if you have installed this update rollup and if it was successfully installed.
 1. Verify that the binary's version has the correct build number. 
-1. See the following website to check the build number for a specific update rollup:
-    - [List of build numbers for VMM](https://social.technet.microsoft.com/wiki/contents/articles/15361.system-center-virtual-machine-manager-list-of-build-numbers.aspx)
+1. See the following to check the build number for a specific update rollup:
+    - [List of build numbers for VMM](release-build-versions.md)
 
 > [!NOTE]
 > Not all the binaries have the current update rollup build number. However, if you do not have the binaries listed with the relevant update rollup build number, it is likely that the update rollup did not install successfully.

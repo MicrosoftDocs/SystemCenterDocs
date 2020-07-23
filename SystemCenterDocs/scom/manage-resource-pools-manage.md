@@ -94,7 +94,7 @@ To configure high availability, each management server in the resource pool must
 
 3.  Run the following command, specifying a file name of your choosing such as **Server3.cert**:
 
-    `scxcertconfig.exe - export <filename>`
+    `scxcertconfig.exe -export <filename>`
 
 4.  Copy the exported file to a shared directory that is accessible by all the management servers in the resource pool.
 
