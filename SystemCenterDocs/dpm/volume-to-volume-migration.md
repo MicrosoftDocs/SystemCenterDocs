@@ -37,7 +37,7 @@ DPM supports the following two options to migrate data to a new volume:
   - **Name**: OptimizedMigrate <br>
   - **Value**: 1
 
-## Migrate datasource from volume to volume using console
+## Migrate datasource to new volumes using console
 
 Follow these steps:
 
@@ -59,7 +59,7 @@ Follow these steps:
 
    This begins the migration process. For monitoring scheduled jobs, you can open another DPM console in parallel, while the migration is in progress.
 
-## Migrate datasource from volume to volume using PowerShell
+## Migrate datasources to new volumes using PowerShell
 
    Here is an example for migrating data source from one volume to the other volume using PowerShell:
 
