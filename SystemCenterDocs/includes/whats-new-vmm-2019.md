@@ -277,7 +277,7 @@ For problems fixed in VMM 2019 UR2, see the KB article. [add link to UR2 KB arti
 
 ### Support for Windows 2012 R2 hosts
 
-VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [link to the applicable section]
+VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [System requirements](../vmm/system-requirements.md#servers-in-the-vmm-fabric).
 
 ### Support for ESXi 6.7 hosts
 
@@ -290,7 +290,7 @@ With VMM 2019 UR2, the user experience is enhanced for the process of creating l
 
 ### Support for IPv6
 
-VMM 2019 UR2 supports IPv6 SDN deployment. Learn more. [add the link to detailed information]
+VMM 2019 UR2 supports IPv6 SDN deployment. [Learn more](../vmm/sdn-controller.md).
 
 ### Provision to set affinity between virtual network adapters and physical adapters
 
@@ -300,3 +300,23 @@ VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual
 
 ### Support for SQL Server 2019
 VMM 2019 RTM and later now supports SQL Server 2019.
+
+### Support for Linux Operating system
+
+VMM 2019 UR2 supports Red Hat 8.0, CentOS 8, Debian 10, Ubuntu 20.04 Linux Operating systems.
+
+## Updates to PowerShell cmdlets
+
+VMM 2019 UR2 includes the following cmdlet updates:
+
+1. New cmdlet - **Update-SCVMMCertificate**, this cmdlet updates the VMM certificate on the VMM server.
+
+2. New parameters:
+   - **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
+   - **[-PhysicalNetworkAdapterName]** - specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+
+3. Updates to parameters in existing cmdlets
+   - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
+   - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
+
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
