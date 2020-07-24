@@ -37,7 +37,7 @@ DPM supports the following two options to migrate data to a new volume:
   - **Name**: OptimizedMigrate <br>
   - **Value**: 1
 
-## Migrate datasource to new volumes using console
+## Migrate datasources to new volumes using console
 
 Follow these steps:
 
