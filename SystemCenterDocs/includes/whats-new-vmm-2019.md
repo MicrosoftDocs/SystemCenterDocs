@@ -301,16 +301,22 @@ VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual
 ### Support for SQL Server 2019
 VMM 2019 RTM and later now supports SQL Server 2019.
 
-### New cmdlet and parameters
+### Support for Linux Operating system
 
-VMM 2019 UR2 includes a new cmdlet **Update-SCVMMCertificate**. The new cmdlet, updates the SCVMM certificate on the VMM server.
+VMM 2019 UR2 supports Red Hat 8.0, CentOS 8, Debian 10, Ubuntu 20.04 Linux Operating systems.
 
-VMM 2019 UR2 includes the following new parameters:
+## Updates to PowerShell cmdlets
 
-- **[-IPv6Subnet]**: The new parameter specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
-- **[-PhysicalNetworkAdapterName]**: The new parameter specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+VMM 2019 UR2 includes the following cmdlet updates:
 
-VMM 2019 UR2 includes the following changes to the existing cmdlets:
+1. New cmdlet - **Update-SCVMMCertificate**, this cmdlet updates the VMM certificate on the VMM server.
 
-- IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
-- IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
+2. New parameters:
+   - **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
+   - **[-PhysicalNetworkAdapterName]** - specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+
+3. Updates to parameters in existing cmdlets
+   - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
+   - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
+
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
