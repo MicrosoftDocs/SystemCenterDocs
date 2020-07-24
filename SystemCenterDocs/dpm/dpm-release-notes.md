@@ -163,7 +163,7 @@ Follow these steps to replace the existing report files:
     ![Reports folder](media/release-notes/reports-folder.png)
 
      >[!NOTE]
-     >There is always only one folder seen with this naming convention. If DPM >is upgraded from a previous version, the previous folder might still >exist,  but you can’t open it.
+     > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist, but you can’t open it.
 
 3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
 
