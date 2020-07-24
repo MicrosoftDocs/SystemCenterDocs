@@ -239,7 +239,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - **ManageStorageInfo:** - Specifies the kind of operation needed.
 
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes.
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
 
     - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
 
@@ -347,7 +347,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - **ManageStorageInfo:** - Specifies the kind of operation needed.
 
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes.
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
 
     - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
 
@@ -460,7 +460,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - **ManageStorageInfo:** - Specifies the kind of operation needed.
 
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes.
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
 
     - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
 
