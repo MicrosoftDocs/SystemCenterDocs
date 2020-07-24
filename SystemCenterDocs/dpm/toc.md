@@ -22,6 +22,7 @@
 ### [Add Modern Backup storage](add-storage.md)
 #### [Migrate datasources to new volumes](volume-to-volume-migration.md)
 ### [Deduplicate DPM storage](deduplicate-dpm-storage.md)
+### [Deploy and manage update rollups](update-rollups.md)
 ## Deploy DPM
 ### [Deploy the DPM protection agent](deploy-dpm-protection-agent.md)
 ### [Deploy protection groups](create-dpm-protection-groups.md)
