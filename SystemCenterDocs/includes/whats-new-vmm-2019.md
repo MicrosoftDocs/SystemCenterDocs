@@ -277,7 +277,7 @@ For problems fixed in VMM 2019 UR2, see the KB article. [add link to UR2 KB arti
 
 ### Support for Windows 2012 R2 hosts
 
-VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [link to the applicable section]
+VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [System requirements](../vmm/system-requirements.md#servers-in-the-vmm-fabric).
 
 ### Support for ESXi 6.7 hosts
 
@@ -285,12 +285,12 @@ VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives
 
 ## Networking
 
-### Support for additional options while creating logical switch
-With VMM 2019 UR2, we have introduced additional options in **Create Logical Switch** wizard . [Learn more](../vmm/network-switch.md)
+### User experience improvements in creating logical switches
+With VMM 2019 UR2, the user experience is enhanced for the process of creating logical switches. 2019 UR2 includes smart defaults, provides clear text explanation for various options along with visual representations, and a topology diagram for logical switch. [Learn more](../vmm/network-switch.md)
 
 ### Support for IPv6
 
-VMM 2019 UR2 supports IPv6 SDN deployment. Learn more. [add the link to detailed information]
+VMM 2019 UR2 supports IPv6 SDN deployment. [Learn more](../vmm/sdn-controller.md).
 
 ### Provision to set affinity between virtual network adapters and physical adapters
 
@@ -300,3 +300,17 @@ VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual
 
 ### Support for SQL Server 2019
 VMM 2019 RTM and later now supports SQL Server 2019.
+
+### New cmdlet and parameters
+
+VMM 2019 UR2 includes a new cmdlet **Update-SCVMMCertificate**. The new cmdlet, updates the SCVMM certificate on the VMM server.
+
+VMM 2019 UR2 includes the following new parameters:
+
+- **[-IPv6Subnet]**: The new parameter specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
+- **[-PhysicalNetworkAdapterName]**: The new parameter specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+
+VMM 2019 UR2 includes the following changes to the existing cmdlets:
+
+- IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
+- IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
