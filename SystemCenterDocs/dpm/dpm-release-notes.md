@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 01/28/2020
+ms.date: 07/24/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019 - Data Protection Manager (DPM).
+This article lists the release notes for System Center 2019, 2019 UR2 - Data Protection Manager (DPM).
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 
 ## DPM 2019 release notes
 
-The following sections summarize the release notes for DPM 2019 and include the following known issues and workarounds.
+The following sections summarize the release notes for DPM 2019 and include the applicable known issues and workarounds.
 
 ### DPM console crashes due to MSDPM Service crash
 
@@ -130,6 +130,59 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Description**: With DPM 2019 central console you cannot manage any DPM 1801 or DPM 1807 servers.
 
 **Workaround**: Upgrade your DPM server to version 2019.
+
+### Protection group details are not displayed in DPM console
+
+This issue is applicable to DPM 2019 UR2.
+
+**Description**: After installing DPM 2019 UR2, sometimes, DPM console might not display Protection Group details in the **Details** pane.
+
+![console with no details for Protection Group](media/release-notes/admin-console.png)
+
+**Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
+
+### Latest report files are not automatically updated
+
+**Description**: With DPM 2019 UR2, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
+
+**Workaround**:
+Follow these steps to replace the existing report files:
+
+#### Replace the ReportSRV10.dll
+1. Stop the SQL Server Reporting service
+2.	Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
+    - For SQL Server 2017 and later -  C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin
+    - For SQL Server 2016 -  C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin
+3.	Start the SQL Server Reporting service.
+
+#### Replace the RDL files
+
+1.	On DPM, open the SQL Reporting Services portal URL.
+2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+
+    ![Reports folder](media/release-notes/reports-folder.png)
+
+ >[!NOTE]
+ >There is always only one folder seen with this naming convention. If DPM >is upgraded from a previous version, the previous folder might still >exist,  but you can’t open it.
+
+3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+
+    ![List of individual report files](media/release-notes/individual-report-files.png)
+
+4.	Select the report files that don't end with *Report*, right-click   **Option**, and then select **Manage**.
+
+    ![Manage report files](media/release-notes/manage-report-files.png)
+
+5.	In the new page, select **Replace** to replace with the latest report files.
+
+    ![Replace report files](media/release-notes/replace-report-files.png)
+
+    The latest report files are available in the DPM installation path:
+
+    For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
+
+6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+7.	Restart DPM and use the report files.
 
 ::: moniker-end
 
