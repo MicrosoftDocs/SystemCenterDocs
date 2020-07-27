@@ -1,0 +1,67 @@
+### YamlMime:Landing
+
+title: Virtual Machine Manager documentation # < 60 chars
+summary: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM, you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds. # < 160 chars
+
+metadata:
+  title: Virtual Machine Manager documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Virtual Machine Manager (VMM) provides a unified management experience across on-premises, service provider, and the Azure cloud. With VMM, you can configure and manage your datacenter components as a single fabric. VMM provisions and manages the resources needed to create and deploy virtual machines and services to private clouds. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: system-center
+  ms.technology: virtual-machine-manager
+  ms.topic: landing-page # Required
+  author: rayne-wiselman #Required; your GitHub user alias, with correct capitalization.
+  ms.author: raynew #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/09/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Virtual Machine Manager (VMM)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is VMM?
+            url: overview.md
+          - text: What's new in VMM
+            url: whats-new-in-vmm.md
+
+  # Card
+  - title: Plan and deploy VMM
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Plan a VMM installation
+            url: plan-install.md
+          - text: Plan a highly available VMM deployment
+            url: plan-ha-install.md
+          - text: Plan the VMM compute fabric
+            url: plan-compute.md
+      - linkListType: deploy
+        links:
+          - text: Install VMM
+            url: install.md
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Create a VMM cloud
+            url: cloud-create.md
+          - text: Deploy a guarded host fabric
+            url: deploy-guarded-host-fabric.md
+          - text: Deploy and manage a software defined network (SDN) infrastructure
+            url: deploy-sdn.md
+
+  # Card
+  - title: Manage the Networking & Storage fabric
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set up the VMM networking fabric
+            url: manage-networks.md
+          - text: Set up the VMM storage fabric
+            url: manage-storage.md

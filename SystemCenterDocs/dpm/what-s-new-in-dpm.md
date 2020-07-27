@@ -1,5 +1,5 @@
 ---
-description: Descriptions of the new features in System Center DPM 2016, 1801, 1807 and 2019
+description: Descriptions of the new features in System Center DPM
 manager: carmonm
 ms.topic: article
 author: rayne-wiselman
@@ -125,7 +125,7 @@ DPM 2019 UR1 includes a new parameter **[-CheckReplicaFragmentation]**. The new 
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR2.
 
-For issues fixed and installation instructions for UR2, see the KB article for Update Rollup 2.
+For issues fixed in UR2, and the installation instructions for UR2, see the KB article.
 
 ### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
 

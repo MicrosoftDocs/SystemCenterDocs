@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1b8afb6f-9caf-455a-ad51-546a17fd47a4
 title: include file
-description: This include file describes the new features in Operations Manager 2019 and 2019 UR1.
+description: This include file describes the new features in Operations Manager 2019, 2019 UR1 and 2019 UR2.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
@@ -229,7 +229,7 @@ In previous versions of Operations Manager, you had to upgrade from the evaluati
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 1 (UR1).
 
-For problems fixed and  installation instructions for UR1, see [Update Rollup 1 for System Center Operations Manager 2019](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
+For problems fixed in UR1 and the installation instructions for UR1, see [the KB article](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
 
 ### Multi-language installer for Operation Manager components
 
@@ -302,7 +302,7 @@ Operations Manager 2019 UR1 includes improved scalability in UNIX or Linux agent
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 2 (UR2).
 
-For problems fixed, and installation instructions for UR2, see Update Rollup 2 for System Center Operations Manager 2019.
+For problems fixed in UR2 and the installation instructions for UR2, see the KB article.
 
 ### Change tracking for management packs
 

@@ -1,7 +1,7 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: This include file describes the new features in Virtual Machine Manager 2019 and 2019 UR1.
+description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1 and 2019 UR2.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
@@ -237,7 +237,7 @@ For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-spe
 
 The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 1 (UR1).
 
-For problems fixed in VMM 2019 UR1, see [Update Rollup 1 for System Center Virtual Machine Manager 2019](https://support.microsoft.com/help/4533411).
+For problems fixed in UR1, and the installation instructions for UR1, see [the KB article](https://support.microsoft.com/help/4533411).
 
 ## Compute
 
@@ -271,7 +271,7 @@ You can now enable nested virtualization while you create a new VM and deploy VM
 ## New features in VMM 2019 UR2
 
 The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 2 (UR2).
-For problems fixed in VMM 2019 UR2, see the KB article. [add link to UR2 KB article].
+For problems fixed in VMM 2019 UR2, and installation instructions for UR2, see the KB article. [add link to UR2 KB article].
 
 ## Compute
 
