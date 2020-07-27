@@ -14,7 +14,7 @@ ms.topic: include
 
 ## New features in Operations Manager 2019
 
-The following sections introduce new and updated features in System Center Operations Manager 2019, [2019 UR1](#new-features-in-operations-manager-2019-ur1) and [2019 UR2](#new-features-in-operations-manager-2019-ur2).
+The following sections introduce new and updated features in System Center Operations Manager 2019 - Operations Manager.
 
 ### Service logon is enabled by default in Operations Manager 2019
 
@@ -229,7 +229,7 @@ In previous versions of Operations Manager, you had to upgrade from the evaluati
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 1 (UR1).
 
-For problems fixed in Operations Manager 2019 UR1, see [Update Rollup 1 for System Center Operations Manager 2019](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
+For problems fixed and  installation instructions for UR1, see [Update Rollup 1 for System Center Operations Manager 2019](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
 
 ### Multi-language installer for Operation Manager components
 
@@ -287,7 +287,7 @@ Operations Manager 2019 UR1 includes updates to the following management packs:
 
 ### Support for group Managed Service Accounts
 
-Operations Manager 2019 UR1 supports group Managed Service Accounts. For more information, see [Support for group Managed Service Accounts](../scom/support-group-managed-service-accounts.md).
+Operations Manager 2019 UR1 supports group Managed Service Accounts. For more information, see [Support for group Managed Service Accounts](../scom/support-group-managed-service-accounts.md).UR
 
 ### Scalability improvement with UNIX or Linux agent monitoring
 
@@ -302,7 +302,7 @@ Operations Manager 2019 UR1 includes improved scalability in UNIX or Linux agent
 
 The following sections introduce the new features or feature updates supported in Operations Manager 2019 Update Rollup 2 (UR2).
 
-For problems fixed in Operations Manager 2019 UR2, see [Update Rollup 2 for System Center Operations Manager 2019](KB link to be added).
+For problems fixed, and installation instructions for UR2, see Update Rollup 2 for System Center Operations Manager 2019.
 
 ### Change tracking for management packs
 

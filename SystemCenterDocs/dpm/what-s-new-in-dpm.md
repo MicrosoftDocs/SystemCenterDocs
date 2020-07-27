@@ -89,7 +89,7 @@ With earlier versions of DPM, parallel backups were performed only across protec
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR1.   
 
-For issues fixed in 2019 UR1, see the [KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
+For issues fixed and the installation instructions for UR1, see [KB article for Update Rollup 1](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
 
 ### Support for ReFS volumes
 
@@ -125,7 +125,7 @@ DPM 2019 UR1 includes a new parameter **[-CheckReplicaFragmentation]**. The new 
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR2.
 
-For issues fixed in 2019 UR2, see the KB article.
+For issues fixed and installation instructions for UR2, see the KB article for Update Rollup 2.
 
 ### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
 
