@@ -61,7 +61,7 @@ The problem of alerts and tickets that are created during failover or load balan
 
 ### Linux agent installation changes
 
-With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer. However, you can choose to create user **omi** in advance, according to the specifics of user policies.
+With Operations Manager 2019, there are changes in the Linux agent package bundling. This bundle now consists of **scx** and **omi** shell bundles only. Post agent installation, a new user called *omi* is created on the agent computer. However, you can choose to create user **omi** in advance, according to the specifics of your user policies.
 
 We recommend that user **omi** be a system user with no login shell, password and home directory.
 
