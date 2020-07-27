@@ -331,4 +331,4 @@ To give permissions to the share
 ## Next steps
 - [Install DPM](install-dpm.md)
 - [Upgrade your DPM installation](upgrade-dpm.md)
-- [know about deploying and managing Update Rollups](update-rollups.md)
+- [Know about deploying and managing Update Rollups](update-rollups.md)

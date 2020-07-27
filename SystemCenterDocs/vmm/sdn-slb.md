@@ -148,8 +148,7 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 4. In **IP Address range** configure the starting and ending IP address.
     >[!NOTE]
     > Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
-    >
-    >The maximum number of addresses allowed in a single VIP range is 1024.
+
 ::: moniker-end
 ::: moniker range="sc-vmm-2019"
 4. In **IP Address range** configure the starting and ending IP address. Specify IPv6 address pool if you are using IPv6 address space.

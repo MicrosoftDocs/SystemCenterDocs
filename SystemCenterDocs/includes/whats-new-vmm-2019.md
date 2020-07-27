@@ -271,7 +271,7 @@ You can now enable nested virtualization while you create a new VM and deploy VM
 ## New features in VMM 2019 UR2
 
 The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 2 (UR2).
-For problems fixed in VMM 2019 UR2, and installation instructions for UR2, see the KB article. [add link to UR2 KB article].
+For problems fixed in VMM 2019 UR2, and installation instructions for UR2, see the KB article. 
 
 ## Compute
 

@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2019
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  07/15/2020
+ms.date:  08/04/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -49,11 +49,12 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-Windows Server 2012 R2 (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
-Windows Server 2016 (Server Core)| Y | N | If supported by SQL Server version
-Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
-Windows Server 2019 (with desktop experience)| Y | Y | If supported by SQL Server version
-Windows Server 2019 (Server Core)| Y | Y | If supported by SQL Server version
+Windows Server 2012 R2 Server Core (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
+Windows Server 2012 R2 with Desktop experience (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
+Windows Server 2016 Server Core| Y | N | If supported by SQL Server version
+Windows Server 2016 with desktop experience | Y | Y | If supported by SQL Server version
+Windows Server 2019 with desktop experience| Y | Y | If supported by SQL Server version
+Windows Server 2019 Server Core| Y | Y | If supported by SQL Server version
 
 > [!NOTE]
 > Ensure that VMM server operating system  is same as the managed host operating system in case of deployment of  Hyper Converged Infrastructure.
