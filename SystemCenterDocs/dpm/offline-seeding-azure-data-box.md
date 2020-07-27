@@ -70,7 +70,7 @@ Ensure the following:
 Ensure that the required Data Box devices are in *Delivered* state before triggering Offline backup. See [Backup Data Size and supported Data Box SKUs](#backup-data-size-and-supported-data-box-skus) to order the most suitable SKU for your requirement. Follow the steps in [this article](https://docs.microsoft.com/azure/databox/data-box-disk-deploy-ordered) to order and receive your Data Box devices.
 
 > [!IMPORTANT]
-> Do not select *BlobStorage* for **the Account kind**. The DPM server requires an account that supports Page Blobs which is not supported when *BlobStorage* is selected. We recommend you to select  **Storage V2 (general purpose v2**) as the **Account kind** when creating the target storage account for your Azure Data Box job.
+> Do not select *BlobStorage* for **the Account kind**. The DPM server requires an account that supports Page Blobs which is not supported when *BlobStorage* is selected. Select  **Storage V2 (general purpose v2**) as the **Account kind** when creating the target storage account for your Azure Data Box job.
 
 ![Setup azure databox](./media/databox/setup-azure-databox.png)
 
@@ -211,7 +211,7 @@ We use Azure PowerShell for creating and uploading the certificate to the Azure 
 
 ### Issue
 
-At the time of configuring offline backup, due to a bug in the Azure PowerShell cmdlet you are unable to add multiple certificates to the same Azure AD Application created by the MAB agent. This will impact you if you have configured offline seeding policy for the same or a different server.
+At the time of configuring offline backup, due to a known code defect in the Azure PowerShell cmdlet you are unable to add multiple certificates to the same Azure AD Application created by the MAB agent. This will impact you if you have configured offline seeding policy for the same or a different server.
 
 ### Verify if the issue is caused by this specific root cause
 

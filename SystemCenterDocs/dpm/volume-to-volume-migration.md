@@ -21,7 +21,7 @@ There are various reasons why a [volume migration](add-storage.md#migrate-data-t
 
 DPM supports the following two options to migrate data to a new volume:
 
-- **Full migration (default)** - all the data for a particular data source is migrated from current volume to the new volume. The time to complete the migration is based on the size of the protected data source. Larger the data source, more time it takes to migrate to the other volume.
+- **Full migration (default)** - all the data for a particular data source is migrated from current volume to the new volume. The time to complete the migration is based on the size of the protected data source and the number and size of the recovery points. Larger data sources or data sources with a large number of recovery points takes more time to migrate to the other volume.
 
 - **Optimized migration** - allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (active replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume, and are purged as per the retention policy.
 
