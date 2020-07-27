@@ -16,7 +16,7 @@ ms.topic: article
 
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1--release-notes),and DPM [2019 UR2](#dpm-2019-ur2--release-notes), as applicable.
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
 ::: moniker-end
 
