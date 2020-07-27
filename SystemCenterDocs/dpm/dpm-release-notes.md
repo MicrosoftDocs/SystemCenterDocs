@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 07/24/2020
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019, 2019 UR2 - Data Protection Manager (DPM).
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
 ::: moniker-end
 
@@ -131,9 +131,13 @@ The following sections summarize the release notes for DPM 2019 and include the 
 
 **Workaround**: Upgrade your DPM server to version 2019.
 
-### Protection group details are not displayed in DPM console
+## DPM 2019 UR1 release notes
+No known issues for DPM 2019 UR1.
 
-This issue is applicable to DPM 2019 UR2.
+## DPM 2019 UR2 release notes
+The following sections detail the known issues and workarounds for DPM 2019 UR2.
+
+### Protection group details are not displayed in DPM console
 
 **Description**: After installing DPM 2019 UR2, sometimes, DPM console might not display Protection Group details in the **Details** pane.
 
