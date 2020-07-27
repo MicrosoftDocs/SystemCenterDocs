@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.prod: system-center
 keywords:
 ms.date: 06/10/2020
-title: What's new in System Center DPM 2016, 1801, 1807 and 2019
+title: What's new in System Center DPM
 ms.technology: data-protection-manager
 ms.assetid: a5e81bf0-43a6-4099-af2e-dfb0c1aa7ed8
 ms.author: raynew
@@ -16,7 +16,7 @@ ms.author: raynew
 
 ::: moniker range="sc-dpm-2019"
 
-This article details the new features supported in System Center 2019 and 2019 UR1 - Data Protection Manager (DPM).
+This article details the new features supported in System Center - Data Protection Manager (DPM), includes the new features/feature updates supported in [DPM 2019](#new-features-in-dpm-2019) , [2019 UR1](#new-features-in-dpm-2019-ur1) and [2019 UR2](#new-features-in-dpm-2019-ur2).
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ DPM 2019 UR1 includes a new parameter **[-CheckReplicaFragmentation]**. The new 
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR2.
 
-For issues fixed in 2019 UR2, see the [KB article](Link to detailed content).
+For issues fixed in 2019 UR2, see the KB article.
 
 ### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
 
@@ -331,3 +331,4 @@ To give permissions to the share
 ## Next steps
 - [Install DPM](install-dpm.md)
 - [Upgrade your DPM installation](upgrade-dpm.md)
+- [know about deploying and managing Update Rollups](update-rollups.md)
