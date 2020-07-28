@@ -5,7 +5,7 @@ description: This article describes about Favorite reports in Web console
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: vvithal
-ms.date: 07/17/2020
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 monikerRange: 'sc-om-2019'

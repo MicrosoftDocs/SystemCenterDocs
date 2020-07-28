@@ -5,7 +5,7 @@ description: This include file describes the new features in Virtual Machine Man
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  02/20/2020
+ms.date:  08/04/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -271,7 +271,7 @@ You can now enable nested virtualization while you create a new VM and deploy VM
 ## New features in VMM 2019 UR2
 
 The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 2 (UR2).
-For problems fixed in VMM 2019 UR2, and installation instructions for UR2, see the KB article. 
+For problems fixed in VMM 2019 UR2, and installation instructions for UR2, see the KB article.
 
 ## Compute
 
