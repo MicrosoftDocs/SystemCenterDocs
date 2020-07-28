@@ -44,20 +44,28 @@ Follow these steps on a computer that has DPM installed, and latest updates are 
 
 To manually download the update rollups from the Microsoft download center, [visit](https://www.catalog.update.microsoft.com/Home.aspx) the Microsoft Download Center, search for the desired KB, and manually download the update rollup packages.
 
-### Install update rollups through command prompt
+### Install update rollups manually through command prompt
 
-To manually install an update rollup package through an elevated command prompt, run the following command:
+To manually install an update rollup package through an elevated command prompt, do the following steps:
 
-```
-msiexec.exe/update <package_name>
-```
+1.  Run the following command to extract the package, select the path for extraction, when prompted.  
+    ```
+    <DPMUR exe name> /x
+    ```
+2. From the extracted location,  run the following command to run the update without database backup:  
+    ```
+    c:\temp\RunDPMpatch.exe SKIPDBBACKUP=1 /lvx
+    ```
+3. From the extracted location, run the following command to install the Update Rollup:
+    ```
+    msiexec.exe/update <package_name>
 
-For example, to install the Update Rollup 2 for DPM (KB4563392), run the following command:
+    ```
+    For example, to install the Update Rollup 2 for DPM (KB4563392), run the following command:
 
-```
-msiexec.exe/update kb4563392_DPMserver_amd64.msp
-
-```
+    ```
+    msiexec.exe/update kb4563392_DPMserver_amd64.msp
+    ```
 
 >[!NOTE]
 > There may be additional installation steps specific to an UR. Check the relevant KB article to ensure you complete all the installation steps.
