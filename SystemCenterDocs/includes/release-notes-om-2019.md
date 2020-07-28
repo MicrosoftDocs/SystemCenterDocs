@@ -13,7 +13,8 @@ ms.topic: include
 
 ## Operations Manager 2019 release notes
 
-The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds. This article also includes the release notes for Operations Manager [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](operations-manager-2019-ur2-release-notes).
+The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds.
+Also see [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](#operations-manager-2019-ur2-release-notes) release notes.
 
 ### Health Service with Log on type as *Service* by default
 
