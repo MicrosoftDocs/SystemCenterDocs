@@ -96,6 +96,6 @@ After you have completed the optimized volume migration, you can see the total a
 
      ![Storage consumed](./media/volume-volume-migration/storage-consumed.png)
 
- - On the existing volume the data source is displayed under **Inactive data sources on this disk**. As per the retention policies the inactive data source and the recovery points are purged.
+ - On the existing volume, the data source is displayed under **Inactive data sources on this disk**. As per the retention policies, the inactive data source and the recovery points are purged.
 
      ![Protected datasources](./media/volume-volume-migration/protected-datasource-on-disk.png)
