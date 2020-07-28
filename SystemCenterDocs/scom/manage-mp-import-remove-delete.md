@@ -5,7 +5,7 @@ description: This article describes how to import, export and remove an Operatio
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 06/15/2020
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
