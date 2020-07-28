@@ -57,7 +57,7 @@ To manually install an update rollup package through an elevated command prompt,
     msiexec.exe/update <package_name>
 
     ```
-    For example, to install the Update Rollup 2 for DPM (KB4563392), run the following command:
+    For example, to install the Update Rollup 2 (KB4563392) for DPM 2019, run the following command:
 
     ```
     msiexec.exe/update kb4563392_DPMserver_amd64.msp
