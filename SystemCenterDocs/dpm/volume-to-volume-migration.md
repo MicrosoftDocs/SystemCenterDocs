@@ -6,7 +6,7 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 06/16/2020
+ms.date: 08/04/2020
 ms.technology: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
 ms.author: v-anesh
@@ -76,3 +76,26 @@ Follow these steps:
 ```
 
    These steps give you more control over your storage while giving you the flexibility to balance storage utilization across volume.
+
+## Monitor Storage Consumption of migrated data source using Optimized migration
+
+After you have completed the optimized volume migration, you can see the total amount of storage being consumed by the data source and recovery points details.
+
+- In the **Protection** tab:
+
+   - **Storage consumed** – displays storage consumed across both the existing and new volume.
+   - **Latest recovery point** – displays the latest recovery point on the new volume.
+   - **Oldest recovery point** – displays the oldest recovery point across both the volumes.
+   - **Total recovery point** – displays the sum of recovery points on both the volumes.
+
+   ![Inactive datasources](./media/volume-volume-migration/inactive-datasources-on-disk.png)
+
+- In the **Management** tab:
+
+   - Migrated data source is listed under **Protected data sources on this disk** option on the new volume.
+
+     ![Storage consumed](./media/volume-volume-migration/storage-consumed.png)
+
+ - On the existing volume the data source is displayed under **Inactive data sources on this disk**. As per the retention policies the inactive data source and the recovery points are purged.
+
+     ![Protected datasources](./media/volume-volume-migration/protected-datasource-on-disk.png)
