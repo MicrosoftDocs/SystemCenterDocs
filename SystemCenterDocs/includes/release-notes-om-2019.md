@@ -13,7 +13,7 @@ ms.topic: include
 
 ## Operations Manager 2019 release notes
 
-The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds.
+The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds. This article also includes the release notes for Operations Manager [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](operations-manager-2019-ur2-release-notes).
 
 ### Health Service with Log on type as *Service* by default
 
@@ -150,3 +150,6 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 >From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+Operations Manager 2019 UR2 release notes
+No known issues in Operations Manager 2019 UR2.

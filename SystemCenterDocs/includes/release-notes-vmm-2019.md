@@ -14,6 +14,7 @@ ms.technology:  virtual-machine-manager
 ## VMM 2019 release notes
 
 The following sections summarize the release notes for VMM 2019 and include the known issues and workarounds.
+No known issues in VMM 2019 UR1 and UR2.
 
 ## Removal of cluster node fails with CleanUpDisks flag
 
