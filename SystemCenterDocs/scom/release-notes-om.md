@@ -15,7 +15,8 @@ ms.technology: operations-manager
 
 ::: moniker range="sc-om-2019"
 
-This article lists the release notes for System Center 2019 and 2019 UR1 - Operations Manager.
+This article lists the release notes for System Center 2019 - Operations Manager.  This article also includes the release notes for Operations Manager 2019 UR1 and 2019 UR2.
+
 
 [!INCLUDE [release-notes-om-2019.md](../includes/release-notes-om-2019.md)]
 
