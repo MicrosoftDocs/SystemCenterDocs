@@ -52,11 +52,7 @@ To manually install an update rollup package through an elevated command prompt,
     ```
     <DPMUR exe name> /x
     ```
-2. From the extracted location,  run the following command to run the update without database backup:  
-    ```
-    c:\temp\RunDPMpatch.exe SKIPDBBACKUP=1 /lvx
-    ```
-3. From the extracted location, run the following command to install the Update Rollup:
+2. From the extracted location, run the following command to install the Update Rollup:
     ```
     msiexec.exe/update <package_name>
 
