@@ -5,7 +5,7 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 06/25/2020
+ms.date: 08/04/2020
 title: Overview of online backup
 ms.technology: data-protection-manager
 ms.assetid: 87b6a324-15df-41ae-86a3-546901bdd369

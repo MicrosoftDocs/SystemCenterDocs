@@ -5,7 +5,7 @@ description: This article describes how to set up networking for Hyper-V hosts a
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 06/08/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager

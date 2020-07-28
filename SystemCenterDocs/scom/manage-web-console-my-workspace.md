@@ -4,7 +4,7 @@ description: This article describes how to use My Workspace in the Operations Ma
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 07/20/2018
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
