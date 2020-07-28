@@ -19,13 +19,13 @@ This article provides information about how to determine your current Microsoft 
 > [!NOTE]
 > All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
-## **Build versions**
+## Build versions
 
 ::: moniker range="sc-sm-2019"
 
 The following table lists the build versions for Service Manager 2019.
 
-| **Build Number** | **KB** | **Description** |
+| Build Number | KB | Description |
 | --- | --- |--- |
 | 10.19.1035.0 | n/a | System Center 2019 Service Manager RTM     |
 | 10.19.1035.73	 | [4532891](https://support.microsoft.com/help/4532891/update-rollup-1-for-system-center-service-manager-2019) | Update Rollup 1 for System Center 2019 Service Manager    |
@@ -37,7 +37,7 @@ The following table lists the build versions for Service Manager 2019.
 
 The following table lists the build versions for Service Manager 2016.
 
-| **Build Number** | **KB** | **Description** |
+| Build Number | KB | Description |
 | --- | --- |--- |
 | 7.5.7487.0 | n/a  | System Center 2016 Service Manager RTM  |
 | 7.5.7487.37| [3209594](https://support.microsoft.com/help/3209594) | Update Rollup 2 for System Center 2016 Service Manager  |
@@ -54,7 +54,7 @@ The following table lists the build versions for Service Manager 2016.
 
 The following table lists the build versions for Service Manager 1801.
 
-| **Build Number** | **KB** |**Description** |
+| Build Number | KB | Description |
 | --- | --- |--- |
 | 7.7.16.0 | n/a | Version 1801 |
 
@@ -64,7 +64,7 @@ The following table lists the build versions for Service Manager 1801.
 
 The following table lists the build versions for Service Manager 1807.
 
-| **Build Number** | **KB** |**Description** |
+| Build Number | KB | Description |
 | --- | --- |--- |
 | 7.7.16.34 | [4338239](https://support.microsoft.com/help/4338239/system-center-service-manager-version-1807) | Version 1807 |
 
