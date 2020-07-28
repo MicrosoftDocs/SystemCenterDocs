@@ -20,7 +20,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   A SQL Server Failover Cluster instance (FCI)
 
-:: moniker range="sc-dpm-2019"
+::: moniker range="sc-dpm-2019"
 
    > [!NOTE]
    > DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV).
