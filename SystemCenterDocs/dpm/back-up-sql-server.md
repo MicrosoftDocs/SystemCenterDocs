@@ -259,7 +259,6 @@ Recover a database from the DPM console as follows:
 
 7.  On the **Summary** page, review the recovery settings, and then click **Recover**.
 
-If you want to restore data to a non-functioning SharePoint farm you'll need to create a new farm that uses the same SQL Server instance and same front-end web server  as the original farm. Then you'll run this command on the front-end web server that DPM uses to recover farm data: `ConfigureSharePoint-EnableSharePointProtection`.   Open the Recovery Wizard and in Protected Data expand the server that contains the farm you want to recovery and click **All Protected Farm Data**. Select the recovery point date and time, and recover. Note that you can't recover an entire farm to an alternate location. After recovery is finished, on  the main front-end Web server for the server farm, run the SharePoint  Configuration Wizard and disconnect the front-end Web server from the farm.
 
 Users with self-service recovery permissions should recover as follows:
 
