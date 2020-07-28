@@ -6,7 +6,7 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 06/16/2020
+ms.date: 08/04/2020
 ms.technology: data-protection-manager
 ms.assetid: 6595b781-554d-4807-b035-d0eccd35deb3
 ms.author: v-anesh
@@ -23,7 +23,7 @@ DPM supports the following two options to migrate data to a new volume:
 
 - **Full migration (default)** - all the data for a particular data source is migrated from current volume to the new volume. The time to complete the migration is based on the size of the protected data source and the number and size of the recovery points. Larger data sources or data sources with a large number of recovery points takes more time to migrate to the other volume.
 
-- **Optimized migration** - allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (active replica) to the new volume. All the new recovery points are created on the new volume while existing recovery points are maintained on the existing volume, and are purged as per the retention policy.
+- **Optimized migration** - allows you to move data sources to the new volume much faster. The enhanced migration process migrates only the active backup copy (active replica) to the new volume. All the new recovery points are created on the new volume, while existing recovery points are maintained on the existing volume, and are purged as per the retention policy.
 
    > [!NOTE]
    > This option is applicable from DPM 2019 UR2 and later versions.
@@ -75,4 +75,29 @@ Follow these steps:
    Set-ProtectionGroup $mpg
 ```
 
-   These steps give you more control over your storage while giving you the flexibility to balance storage utilization across volume.
+   These steps give you more control over your storage, while giving you the flexibility to balance storage utilization across volume.
+
+## Monitor storage consumption of migrated data source using optimized migration
+
+After you complete the optimized volume migration, you can view the details of the total amount of storage consumed by the data source, and the details of the recovery points.
+
+Use the following tabs to view the required information:
+
+- In the **Protection** tab:
+
+   - **Storage consumed** – displays the storage consumed across both the existing and new volume.
+   - **Latest recovery point** – displays the latest recovery point on the new volume.
+   - **Oldest recovery point** – displays the oldest recovery point across both the volumes.
+   - **Total recovery point** – displays the sum of recovery points on both the volumes.
+
+   ![Inactive datasources](./media/volume-volume-migration/inactive-datasources-on-disk.png)
+
+- In the **Management** tab:
+
+   - Migrated data source is listed under **Protected data sources on this disk** on the new volume.
+
+     ![Storage consumed](./media/volume-volume-migration/storage-consumed.png)
+
+   - On the existing volume, the data source is displayed under **Inactive data sources on this disk**. As per the retention policies, the inactive data source and the recovery points are purged.
+
+     ![Protected datasources](./media/volume-volume-migration/protected-datasource-on-disk.png)
