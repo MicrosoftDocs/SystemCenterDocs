@@ -67,8 +67,8 @@ To manually install an update rollup package through an elevated command prompt,
     msiexec.exe/update kb4563392_DPMserver_amd64.msp
     ```
 
->[!NOTE]
-> There may be additional installation steps specific to an UR. Check the relevant KB article to ensure you complete all the installation steps.
+    >[!NOTE]
+    > There may be additional installation steps specific to an UR. Check the relevant KB article to ensure you complete all the installation steps.
 
 
 ### Check the installation of an update rollup
