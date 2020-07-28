@@ -6,7 +6,7 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 03/01/2019
+ms.date: 08/04/2020
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: v-anesh
@@ -30,6 +30,7 @@ The following table lists the build versions for Data Protection Manager 2019.
 | --- | --- | --- |
 | 10.19.58.0  | n/a | System Center 2019 Data Protection Manager RTM     |
 | 10.19.260.0 | [4533416](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager) | Update Rollup 1 for System Center 2019 Data Protection Manager    |
+|10.19.379.0 | [4563392](https://support.microsoft.com/help/4563392) | Update Rollup 2 for System Center 2019 Data Protection Manager |
 
 
 ::: moniker-end
