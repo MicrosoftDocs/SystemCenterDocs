@@ -14,7 +14,7 @@ monikerRange: '>=sc-sm-2016'
 
 # System Center – Service Manager build versions
 
-This article describes how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
+This article provides information about how to determine your current Microsoft System Center – Service Manager version number and the corresponding update rollup. Each update rollup (UR) release has a link to a support article describing the UR changes as well as links to the package downloads.
 
 > [!NOTE]
 > All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Service Manager and never applied an update rollup, you can  proceed to install the latest one available.
