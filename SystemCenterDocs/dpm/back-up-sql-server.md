@@ -5,7 +5,7 @@ ms.topic: article
 author: rayne-wiselman
 ms.prod: system-center
 keywords:
-ms.date: 02/24/2020
+ms.date: 08/04/2020
 title: Back up SQL Server with DPM
 ms.technology: data-protection-manager
 ms.assetid: 3718b565-9640-4c3f-9d44-aa969041e0e6
@@ -14,13 +14,22 @@ ms.author: raynew
 
 # Back up SQL Server with DPM
 
-System Center Data Protection Manager (DPM) provides backup and recovery for SQL Server databases. In addition to backing up SQL Server databases you can run a system backup or full bare-metal  backup of the SQL Server computer. Here's what DPM can protect:
+System Center Data Protection Manager (DPM) provides backup and recovery for SQL Server databases. In addition to backing up SQL Server databases you can run a system backup or full bare-metal backup of the SQL Server computer. Here's what DPM can protect:
 
 -   A standalone SQL Server instance
 
 -   A SQL Server Failover Cluster instance (FCI)
 
+:: moniker range="sc-dpm-2019"
+
+   > [!NOTE]
+   > DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV).
+
+::: moniker-end
+
 -   A SQL Server AlwaysOn availability group with theses preferences:
+
+    -   Prefer Secondary
 
     -   Secondary only
 
@@ -50,11 +59,13 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 -   DPM cannot protect databases that are stored on remote SMB shares.
 
--   Ensure that the availability group replicas are configured as read-only.
+-   Ensure that the [availability group replicas are configured as read-only](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/configure-read-only-access-on-an-availability-replica-sql-server?view=sql-server-ver15).
 
 -   You must explicitly add the system account NTAuthority\System to the Sysadmin group on SQL Server.
 
--   When you perform an alternate location recovery for a partially contained database, you must ensure that the target SQL instance has the Contained Databases feature enabled.
+-   When you perform an alternate location recovery for a partially contained database, you must ensure that the target SQL instance has the [Contained Databases](https://docs.microsoft.com/sql/relational-databases/databases/migrate-to-a-partially-contained-database?view=sql-server-ver15#enable) feature enabled.
+
+-   When you perform an alternate location recovery for a file stream database, you must ensure that the target SQL instance has the [file stream database](https://docs.microsoft.com/sql/relational-databases/blob/enable-and-configure-filestream?view=sql-server-ver15) feature enabled.
 
 -   Protection for SQL Server AlwaysOn:
 
@@ -88,11 +99,11 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
         -   Recovery to the original location is not supported.
 
--   SQL Server 2014 backup issues:
+-   SQL Server 2014 or above backup issues:
 
-    -   SQL server 2014 added a new feature to create a database for on-premises SQL Server in Windows Azure Blob storage. DPM cannot be used to protect this configuration.
+    -   SQL server 2014 added a new feature to create a [database for on-premises SQL Server in Windows Azure Blob storage](https://docs.microsoft.com/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure?view=sql-server-ver15). DPM cannot be used to protect this configuration.
 
-    -   There are some known issues with "Prefer secondary" backup preference for the SQL AlwaysOn option, DPM always takes a backup from secondary; if no secondary can be found then the backup fails.
+    -   There are some known issues with *Prefer secondary* backup preference for the SQL AlwaysOn option, DPM always takes a backup from secondary; if no secondary can be found then the backup fails.
 
 ## Before you start
 
@@ -131,6 +142,9 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 5.  In **Select short-term goals**, specify how you want to back up to short-term storage on disk. In **Retention range**, you specify how long you want to keep the data on disk. In **Synchronization frequency**,  you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval, you can select **Just before a recovery point** so that DPM will run an express full backup just before each recovery point is scheduled.
 
+    > [!NOTE]
+    > SQL Server databases that are log-shipped, in read-only mode, or that use the simple recovery model do not support incremental backup. Recovery points are created for each express full backup only. For all other SQL Server databases, synchronization transfers a transaction log backup, and recovery points are created for each incremental synchronization and express full backup. The transaction log is a serial record of all the transactions that have been performed against the database since the transaction log was last backed up.
+
 6.  If you want to store data on tape for long-term storage, in **Specify long-term goals**, indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
     -   When the retention range is 1-99 years, you can select backups to occur daily, weekly, bi-weekly, monthly, quarterly, half-yearly, or yearly.
@@ -157,7 +171,7 @@ System Center Data Protection Manager (DPM) provides backup and recovery for SQL
 
 12. In **Specify online retention policy**, you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
-13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. For more information, see [Offline-backup workflow in Azure Backup](https://azure.microsoft.com/documentation/articles/backup-azure-backup-import-export/).
+13. In **Choose online replication**, specify how the initial full replication of data will occur. You can replicate over the network, or do an offline backup (offline seeding). Offline backup uses the Azure Import feature. For more information, see [Offline seeding using Azure Data Box](offline-seeding-azure-data-box.md).
 
 14. On the  **Summary** page, review your settings. After you click **Create Group** initial replication of the data occurs. When it finishes the protection group status will show as **OK** on the **Status** page. Backup then takes place in line with the protection group settings.
 
@@ -230,6 +244,8 @@ Recover a database from the DPM console as follows:
 4.  On the **Review recovery selection** page, click **Next**.  Note that:
 
     -   Select where you want to recover the database. If you select **Recover to any SQL instance** enter the recovery path. You can specify a new name for the recovered database. Note that this option isn't available with the setting **Latest recovery point**.
+
+    -  The default recovery path is original location path. You must enter appropriate recovery path.
 
     -   You can't recover a newer version SQL Server database to an older version SQL Server instance.
 
