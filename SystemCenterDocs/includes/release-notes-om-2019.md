@@ -152,5 +152,5 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
 
-Operations Manager 2019 UR2 release notes
+## Operations Manager 2019 UR2 release notes
 No known issues in Operations Manager 2019 UR2.
