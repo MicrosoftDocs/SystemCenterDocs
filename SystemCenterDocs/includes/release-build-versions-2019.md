@@ -23,4 +23,4 @@ The following table lists the release history for Operations Manager 2019.
 |-------------|---|-------------|------------|
 |10.19.10050.0||March 2019 |General Availability release|
 |10.19.10311.0|[KB4533415](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019) |February 2020 |Update Rollup 1 |
-|10.19.10407.0|[KB4558752](https://support.microsoft.com/help/4533415/update-rollup-2-for-system-center-operations-manager-2019) |February 2020 |Update Rollup 2 |
+|10.19.10407.0|[KB4558752](https://support.microsoft.com/help/4558752/update-rollup-2-for-system-center-operations-manager-2019) |August  2020 |Update Rollup 2 |
