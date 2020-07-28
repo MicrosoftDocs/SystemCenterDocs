@@ -5,7 +5,7 @@ description: This article describes the new features supported in Operations Man
 author: JYOTHIRMAISURI
 ms.author: V-jysur
 manager: vvithal
-ms.date: 02/04/2020
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 ::: moniker range="sc-om-2019"
 
-This article details the new features supported in System Center 2019 - Operations Manager. Also includes the new features in Operations Manager 2019 UR1 and 2019 UR2. 
+This article details the new features supported in System Center 2019 - Operations Manager. Also includes the new features in Operations Manager 2019 UR1 and 2019 UR2.
 
 [!INCLUDE [whats-new-om-2019.md](../includes/whats-new-om-2019.md)]
 

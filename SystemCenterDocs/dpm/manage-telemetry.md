@@ -5,7 +5,7 @@ description: This article provides information about how to manage the telemetry
 author:  v-anesh
 ms.author: v-anesh
 manager:  vvithal
-ms.date:  07/07/2020
+ms.date:  08/04/2020
 ms.topic:  article
 ms.prod:  system-center
 ms.technology: data-protection-manager
