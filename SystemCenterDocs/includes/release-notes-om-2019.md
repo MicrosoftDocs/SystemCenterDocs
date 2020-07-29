@@ -122,6 +122,8 @@ Also, ID is returned as className.
 ## Operations Manager 2019 UR1 release notes
 The following sections summarize the release notes for Operations Manager 2019 UR1, and include the known issues and workarounds.
 
+For the problems fixed in UR1, and the installation instructions for UR1, [see the KB article](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
+
 ### Pending management after patching
 
 **Description:** After you apply the 2019 update rollup (UR1), the agents to be updated are not listed in **Pending Management**, console view.
@@ -154,3 +156,5 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 
 ## Operations Manager 2019 UR2 release notes
 No known issues in Operations Manager 2019 UR2.
+
+For the problems fixed in UR2, and the installation instructions for UR2, [see the KB article](https://support.microsoft.com/help/4558752).
