@@ -125,11 +125,11 @@ DPM 2019 UR1 includes a new parameter **[-CheckReplicaFragmentation]**. The new 
 
 See the following sections for information about the new features/feature updates supported in DPM 2019 UR2.
 
-For issues fixed in UR2, and the installation instructions for UR2, see the KB article.
+For issues fixed in UR2, and the installation instructions for UR2, see the [KB article](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager).
 
 ### Support for SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV)
 
-DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You will be able to manage the underlying storage from any node as there is an abstraction to which node owns the disk. [Learn more](Link to detailed content).
+DPM 2019 UR2 supports SQL Server Failover Cluster Instance (FCI) using Cluster Shared Volume (CSV). With CSV, the management of your SQL Server Instance is simplified. You will be able to manage the underlying storage from any node as there is an abstraction to which node owns the disk. [Learn more](back-up-sql-server.md).
 
 ### Optimized Volume to Volume Migration
 
