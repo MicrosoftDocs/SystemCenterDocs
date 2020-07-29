@@ -49,17 +49,17 @@ To manually download the update rollups from the Microsoft download center, [vis
 To manually install an update rollup package through an elevated command prompt, do the following steps:
 
 1.  Run the following command to extract the package, select the path for extraction, when prompted.  
-    ```
+    ```console
     <DPMUR exe name> /x
     ```
 2. From the extracted location, run the following command to install the Update Rollup:
-    ```
+    ```console
     msiexec.exe/update <package_name>
 
     ```
     For example, to install the Update Rollup 2 (KB4563392) for DPM 2019, run the following command:
 
-    ```
+    ```console
     msiexec.exe/update kb4563392_DPMserver_amd64.msp
     ```
 
@@ -72,9 +72,13 @@ To manually install an update rollup package through an elevated command prompt,
 Use the following procedure to check if an update rollup is successfully installed:
 
 1. Under **Control Panel** > **Programs and Features** > **View installed updates**.
+
 2. Verify that an update entry was created after the update rollup was installed.
-    - For example, the 2019 update rollup 2 was released as 4563392. You should be able to see this detail under **View installed updates**, if you have installed this update rollup and if it was successfully installed.
+
+   For example, the 2019 update rollup 2 was released as 4563392. You should be able to see this detail under **View installed updates**, if you have installed this update rollup and if it was successfully installed.
+   
 3. Verify that the binary's version has the correct build number. 
+
 4. See the [list of build numbers for DPM](release-build-versions.md) to check the build number for a specific update rollup.
 
 > [!NOTE]
