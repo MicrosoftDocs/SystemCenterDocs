@@ -5,7 +5,7 @@ description: This article summarizes supported storage arrays for VMM.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 12/15/2019
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
