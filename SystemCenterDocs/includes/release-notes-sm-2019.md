@@ -17,7 +17,7 @@ The following sections detail the release notes for Service Manager 2019 and inc
 
 - For issues fixed in SM 2019 UR1, see the [KB article](https://support.microsoft.com/help/4532891).
 
-- For issues fixed in SM 2019 UR2, see the [KB article](http://support.microsoft.com/help/4558753).
+- For issues fixed in SM 2019 UR2, see the [KB article](https://support.microsoft.com/help/4558753).
 
 ## Known issues and workarounds
 
