@@ -310,7 +310,7 @@ For the problems fixed in UR2, and the installation instructions for UR2, [see t
 
 Change tracking is enabled by default in 2019 UR2 to track and report the changes on the management packs and management pack objects.
 
-Three new reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are now available to display the changes. These reports are available under Reporting > Microsoft Generic Report library .
+Three new reports **Management Pack History**, **Management Pack Objects** and **Overrides tracking** are now available to display the changes. These reports are available under **Reporting** > **Microsoft Generic Report library**.
 
 You can use the filters available in the reports to set the criteria and get the reports per your requirement. [Learn more](../scom/management-pack-change-tracking.md).
 
