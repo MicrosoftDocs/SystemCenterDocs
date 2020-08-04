@@ -287,7 +287,7 @@ VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives
 ## Networking
 
 ### User experience improvements in creating logical switches
-With VMM 2019 UR2, the user experience is enhanced for the process of creating logical switches. 2019 UR2 includes smart defaults, provides clear text explanation for various options along with visual representations, and a topology diagram for logical switch. [Learn more](../vmm/network-switch.md)
+With VMM 2019 UR2, the user experience is enhanced for the process of creating logical switches. 2019 UR2 includes smart defaults, provides clear text explanation for various options along with visual representations, and a topology diagram for logical switch. [Learn more](../vmm/network-switch.md).
 
 ### Support for IPv6
 
@@ -295,7 +295,7 @@ VMM 2019 UR2 supports IPv6 SDN deployment. [Learn more](../vmm/sdn-controller.md
 
 ### Provision to set affinity between virtual network adapters and physical adapters
 
-VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md).
+VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
 ## Others
 
@@ -316,7 +316,7 @@ VMM 2019 UR2 includes the following cmdlet updates:
    - **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
    - **[-PhysicalNetworkAdapterName]** - specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
 
-3. Updates to parameters in existing cmdlets
+3. Updates to parameters in existing cmdlets:
    - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
    - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
 

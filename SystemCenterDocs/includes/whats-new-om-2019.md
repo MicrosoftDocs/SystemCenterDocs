@@ -317,7 +317,7 @@ You can use the filters available in the reports to set the criteria and get the
 ### Improvements in scheduled maintenance mode
 In earlier releases, if there is a conflict in maintenance mode window for object(s), the newly updated end time overwrites the existing scheduled time. If this latest defined time is longer than previous value, then computer stays in maintenance mode for extended period. However, when the latest defined time is shorter, then the computer comes out of maintenance mode, earlier than expected, generating false alerts.
 
-With 2019 UR2, if there is a conflict in maintenance mode end time, then the object will exit maintenance mode at the furthest end time defined for the object. [Learn more](../scom/manage-maintenance-mode-overview.md).
+With 2019 UR2, if there is a conflict in maintenance mode end time, then the object will exit maintenance mode at the furthest end time defined for the object. [Learn more](../scom/manage-maintenance-mode-overview.md#furthest-end-time-during-schedule-overlap).
 
 ### Favorite reports in web console
 
