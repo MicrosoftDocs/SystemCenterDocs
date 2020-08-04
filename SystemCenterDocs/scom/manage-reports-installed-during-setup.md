@@ -5,7 +5,7 @@ description: This article summarizes the default reports included with Operation
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/13/2018
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,12 +15,12 @@ ms.topic: article
 # Operations Manager reports library
 
 System Center Operations Manager provides the reports described in the following tables. For more information on a report, in the **Reporting** workspace, click the report and view the **Report Details**. For information on reports that are provided by other management packs, see the respective management pack guides.  
-  
+
 > [!NOTE]  
 > When you first install Operations Manager, it may take several minutes for all report libraries to appear in **Reporting**.  
-  
+
 ## Microsoft Generic Report Library  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Alert Logging Latency|This report helps to isolate issues in monitoring with Operations Manager by showing the logging latency of an alert for selected objects over time.|  
@@ -37,27 +37,29 @@ System Center Operations Manager provides the reports described in the following
 |Performance|This report shows selected objects and performance counter values graphically over time.|  
 |Performance Detail|This report shows selected objects and performance counter values graphically over time.|  
 |Performance Top Instances|This report shows the top or bottom "N" instances for selected objects and a specific performance counter rule.|  
-|Performance Top Objects|This report shows the top or bottom "N" objects for selected objects and a specific performance counter rule.|  
-  
+|Management pack history (available from 2019 UR2)|This report generates the list of all the management packs, which are either imported or deleted on any management server in your management group. You can filter the report by date, action and username.|  
+| Management pack objects (available from 2019 UR2)|This report tracks and generates the list of all management pack objects, which are newly created or deleted from the management server. This report also tracks edits on management pack objects such as renaming a group/monitor/rule or adding/deleting a member in the group etc.|  
+|Overrides tracking (available from 2019 UR2)|This report tracks the overrides in detail, and supports fields such as Management pack name, Object name, Object type, Affected Property, Old value, New value, Target of the object type and Date.|  
+
 ## Client Monitoring Views Library  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Top N Applications|This report shows the top "N" applications based on their crash count and provides details for each application.|  
 |Top N Applications Growth and Resolution|This report shows the top "N" applications based on their growth percentile computed against two specified time intervals.|  
 |Top N Error Groups|This report shows the top "N" error groups based on their crash count.|  
 |Top N Error Groups Growth and Resolution|This report shows the top "N" error groups based on their growth percentile computed against two specified time intervals.|  
-  
+
 ## Microsoft Data Warehouse Reports  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Data Warehouse Availability|This report shows the availability of the data warehouse components based on the monitor "Data Warehouse Connectivity and Processes State".|  
 |Data Warehouse Events|This report shows data warehouse\-related events to help determine data warehouse health.|  
 |Data Warehouse Properties|This report shows data warehouse properties and grooming settings.|  
-  
+
 ## Microsoft ODR Report Library  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Alerts Per Day|This report shows the number of alerts generated per day from each rule or monitor that alerted within the report period \(by default one week\).|  
@@ -65,32 +67,32 @@ System Center Operations Manager provides the reports described in the following
 |Management Group|This report shows the operating system version used in the Operations Manager infrastructure \(management servers\).|  
 |Management Packs|This report shows the versions of each management pack that is installed in your environment. It also summarizes all the overrides you have defined in your environment, as well as custom rules and monitors you have authored.|  
 |Most Common Alerts|This report shows the most common alerts generated within the report period \(by default one week\). It also shows this data by management pack.|  
-  
+
 ## System Center Core Monitoring Reports  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Agent Counts by Date, Management Group and Version|This report shows detail information for agent accounts during specified time interval.|  
 |Agents by Health State|This report shows lists of agents organized by health state.|  
 |Data Volume by Management Pack|This report shows the volume of data generated by management packs. The purpose of this report is to provide insight into which management packs are driving the data volumes in your environment so that you can establish baselines and identify opportunities for tuning.&nbsp; From this report, you can obtain more specific details per management pack by clicking one of the counts cells in the table at the top of the report to open the Data Volume by Workflow and Instance report for the management packs.|  
 |Data Volume by Workflow and Instance|This report shows the volume of data generated, organized by workflows \(discoveries, rules, monitors, etc.\), as well as by instances.|  
-  
+
 ## Microsoft Service Level Report Library  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Service Level Tracking Summary Report|This report shows whether the configured Service Level Objectives \(SLOs\) met their respective goals, for selected service levels.|  
-  
+
 ## Web Application Availability Monitoring Solutions Library  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Test Availability|This report shows availability reported by an individual test &nbsp;over time.|  
 |Test Performance|This report shows selected objects and performance counter values over time to relate how well a web application has performed.|  
 |Web Application Availability|This report shows how available the web application was.&nbsp; The web application availability is the rollup of all tests defined in your web application.|  
-  
+
 ## Application Monitoring Reports  
-  
+
 |Report|Description|  
 |----------|---------------|  
 |Application Failure Analysis|This report provides detailed failure analysis for a selected application.|  
@@ -125,12 +127,18 @@ System Center Operations Manager provides the reports described in the following
 |\(Resource Utilization Analysis\) Computer CPU Utilization Analysis|This report highlights servers that have the heaviest CPU utilization and provides a breakdown of CPU utilization based on the monitored applications running on each server.|  
 |\(Resource Utilization Analysis\) Computer IO Utilization Analysis|This report highlights servers that have the heaviest IO utilization and provides a breakdown of IO utilization by monitored applications running on each server.|  
 |\(Resource Utilization Analysis\) Computer Memory Utilization Analysis|This report highlights servers that have the heaviest memory utilization and provides a breakdown of memory utilization based on the monitored applications running on each server.|  
-  
+
+::: moniker range="sc-om-2019"
+>[!NOTE]
+> With Operations Manager 2019 UR2, you can track the changes done in management packs using the *management pack history*, *management pack objects* and *Overrides tracking* reports. [Learn more](management-pack-change-tracking.md).
+
+::: moniker-end
+
+
 ## Next steps
 
-- Review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md) to learn how create reports for your operational needs. 
+- Review [How to create reports in Operations Manager](~/scom/manage-reports-create-reports.md) to learn how create reports for your operational needs.
 
 - [How to Run, Save, and Export a Report](manage-reports-run-save-export.md) walks you through how to preview your reports, save them with specific report parameters to minimize repeated entry of information or to simplify the experience for your report users, and how to export the report to different file formats.  
 
 - See [How to Configure and Modify Report Schedules](manage-reports-config-modify-schedules.md) to learn how to schedule report delivery for reports available in Operations Manager.  
-  

@@ -5,7 +5,7 @@ description: This article describes how to import, export and remove an Operatio
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 11/28/2018
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -15,6 +15,13 @@ ms.topic: article
 # How to import, export, and remove an Operations Manager management pack
 
 There are numerous management packs available for System Center Operations Manager. A management pack must be installed for use by Operations Manager in order to discover and monitor one or more components depending on its complexity, and the overall health of the IT service delivered by the organization. Over time, the knowledge of what to discover and monitor, and how to monitor and report on the operational data is updated in newer releases of a management pack.  These management packs must be reimported into the management group when updated by the vendor or internally if developed by the team responsible for it.  When the management pack is no longer required to monitor , you can remove it from the management group.
+
+
+::: moniker range="sc-om-2019"
+>[!NOTE]
+> With Operations Manager 2019 UR2, you can track the changes done in management packs. [Learn more](management-pack-change-tracking.md).
+
+::: moniker-end
 
 ## Importing a management pack
 
@@ -29,9 +36,9 @@ You have several options for importing management packs:
 -   Download a management pack by using an Internet browser to import at a later time.
 
 > [!NOTE]
-> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**. If the computer running Operations Manager Operations console cannot connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible from the console. 
+> Using the management pack catalog service requires an Internet connection and your firewall needs to allow access to the the following URL - **https://www.microsoft.com/mpdownload/ManagementPackCatalogWebService.asmx?**. If the computer running Operations Manager Operations console cannot connect to the Internet, use another computer to download the management pack, and then copy the files to a shared folder that is accessible from the console.
 
-The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk). 
+The Operations Manager community maintains a list of management packs developed by Microsoft on the following web site [Microsoft Management Pack List](https://go.microsoft.com/fwlink/?LinkId=82105). You can obtain third-party management packs directly from those companies and import them by following the procedure [Import a management pack from disk](#import-a-management-pack-from-disk).
 
 > [!NOTE]
 > Microsoft neither endorses nor provides support for third-party products. Please contact the specific provider for support issues.
@@ -145,46 +152,46 @@ You should always review the management pack guide before you import a managemen
 
     > [!NOTE]
     > Some management pack download pages contain a download link for the management pack .msi file and a download link for the management pack guide. Download both the .msi and the guide.
-    > 
+    >
     > Before you can import the management pack in Operations Manager, you must run the .msi file to extract the files.
 
 ## How to export an Operations Manager management pack
 
 Exporting a management pack allows customizations to a sealed management pack to be saved to a writeable management pack. Because sealed management packs cannot be changed, the modifications made to a management pack are saved to a separate, unsealed management pack file. The unsealed management pack can then be imported into a different management group or the same management group depending on the situation. This unsealed management pack is dependent on the original sealed management pack and can be imported only to management groups that have the original sealed management pack.  
-  
+
 > [!NOTE]  
 > Using the Operations Console, you can only export unsealed management packs. To export a sealed management pack, you must use the Export-SCOMManagementPack cmdlet. See [Operations Manager Cmdlet Reference](https://technet.microsoft.com/library/hh545244%28v=sc.20%29.aspx) for more information.  
-  
+
 ### To export an unsealed management pack   
-  
+
 1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role.  
-  
+
 2.  In the Operations console, click **Administration**.  
-  
+
 3.  In **Administration**, click **Management Packs** to display the list of imported management packs.  
-  
+
 4.  In the **Management Packs** pane, right\-click the management pack you want to export, and then click **Export Management Pack**.  
-  
+
 5.  In the **Browse For Folder** dialog box, expand the path for the location to save the file, and then click **OK**.  
-  
+
     The management pack is saved as an Operations Manager XML management pack file and is ready for importing into another management group.  
 
 ## How to Remove an Operations Manager Management Pack
 
 When you no longer need a management pack, you can delete it using the Operations console. When you delete a management pack, all the settings and thresholds associated with it are removed from the management group. Also, the .mp or .xml file for that management pack is deleted from the hard disk of the management server. You can delete a management pack only if you have first deleted dependent management packs.  
-  
+
 ### To remove a management pack  
-  
+
 1.  Log on to the computer with an account that is a member of the Operations Manager Administrators role.  
-  
+
 2.  In the Operations console, click **Administration**.  
-  
+
 3.  In **Administration**, click **Management Packs.**  
-  
+
 4.  In the **Management Packs** pane, right\-click the management pack you would like to remove and then click **Delete**.  
-  
+
 5.  On the message stating that deleting the management pack might affect the scoping of some user roles, click **Yes**.  
-  
+
 > [!NOTE]  
 > If any other imported management packs depend on the management pack you are trying to remove, the **Dependent Management Packs** error message is displayed. You must remove the dependent management packs before you can continue.  
 
@@ -193,5 +200,5 @@ When you no longer need a management pack, you can delete it using the Operation
 - To learn how to create a custom writeable management pack to store your overrides, see [How to Create a Management Pack for Overrides](manage-mp-create-unsealed-mp.md)
 
 - If you want to create your own custom knowledge for specific alerts generated by rules or monitors from a sealed management pack, review [How to Add Knowledge to a Management Pack](manage-mp-add-knowledge.md)  
-  
+
 - To understand the basic concepts for managing the monitoring configuration of an application or service defined in a management pack, see [Management Pack Lifecycle](manage-mp-lifecycle.md)  

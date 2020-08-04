@@ -6,7 +6,7 @@ ms.topic: article
 author: v-anesh
 ms.prod: system-center
 keywords:
-ms.date: 03/01/2019
+ms.date: 08/04/2020
 ms.technology: data-protection-manager
 ms.assetid: de5e4948-f1bf-4205-93ea-083447bc0e4d
 ms.author: v-anesh
@@ -20,17 +20,17 @@ This article describes how to determine your current Microsoft System Center –
 > [!NOTE]
 > All System Center Data Protection Manager update rollups are cumulative. This means, you do not need to apply the URs in order, you can always apply the latest update. If you have deployed System Center 2016 – Data Protection Manager and never applied an update rollup, you can  proceed to install the latest one available.
 
-## **Build versions**
+## Build versions
 
 ::: moniker range="sc-dpm-2019"
 
 The following table lists the build versions for Data Protection Manager 2019.
 
-| **Build Number** | **KB** | **Description** |
+| Build Number | KB | Description |
 | --- | --- | --- |
 | 10.19.58.0  | n/a | System Center 2019 Data Protection Manager RTM     |
 | 10.19.260.0 | [4533416](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager) | Update Rollup 1 for System Center 2019 Data Protection Manager    |
-
+| 10.19.379.0 | [4563392](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager) | Update Rollup 2 for System Center 2019 Data Protection Manager    |
 
 ::: moniker-end
 
@@ -38,7 +38,7 @@ The following table lists the build versions for Data Protection Manager 2019.
 
 The following table lists the build versions for Data Protection Manager 2016.
 
-| **Build Number** | **KB** | **Description** |
+| Build Number | KB | Description |
 | --- | --- | --- |
 | 4.3.1012.0  | n/a | System Center 2016 Technical Preview Data Protection Manager    |
 | 4.3.1071.0 | n/a | System Center 2016 Technical Preview 2 Data Protection Manager    |
@@ -61,7 +61,7 @@ The following table lists the build versions for Data Protection Manager 2016.
 
 The following table lists the build versions for Data Protection Manager 1801.
 
-| **Build Number** | **KB** | **Description** |
+| Build Number | KB | Description |
 | --- | --- | --- |
 | 5.1.363.0 | n/a | System Center 2016 1801 |
 
@@ -71,7 +71,7 @@ The following table lists the build versions for Data Protection Manager 1801.
 
 The following table lists the build versions for Data Protection Manager 1807.
 
-| **Build Number** | **KB** | **Description** |
+| Build Number | KB | Description |
 | --- | --- | --- |
 | 5.1.378.0 | [KB4339950](https://support.microsoft.com/help/4339950) | System Center 2016 1807 |
 

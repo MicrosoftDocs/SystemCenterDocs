@@ -1,11 +1,11 @@
 ---
 ms.assetid: b421d3b9-3ac5-4e02-b810-7dc8de8008c2
 title: include file
-description: This include file describes the new features in Virtual Machine Manager 2019 and 2019 UR1.
+description: This include file describes the new features in Virtual Machine Manager 2019, 2019 UR1 and 2019 UR2.
 author:  JYOTHIRMAISURI
 ms.author: V-jysur
 manager:  vvithal
-ms.date:  02/20/2020
+ms.date:  08/04/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -112,7 +112,7 @@ With VMM 1807, you can now choose any location to place the new disc. You can ma
 
 ### VMware host management
 
-VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements for System Center Virtual Machine Manager](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
+VMM supports VMware ESXi v6.5 servers in VMM fabric. This support gives administrators additional flexibility in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
 
 ### Support for S2D cluster update
 
@@ -237,7 +237,7 @@ For more information, see [Manage VMs](../vmm/vms-manage-azure-ad-and-region-spe
 
 The following sections introduce the new features or feature updates supported in VMM 2019 Update Rollup 1 (UR1).
 
-For problems fixed in VMM 2019 UR1, see [Update Rollup 1 for System Center Virtual Machine Manager 2019](https://support.microsoft.com/help/4533411).
+For problems fixed in UR1, and the installation instructions for UR1, see [the KB article](https://support.microsoft.com/help/4533411).
 
 ## Compute
 
@@ -267,3 +267,57 @@ In VMM 2019 UR1, the user experience is enhanced for the process of creating log
 ### Additional options to enable nested virtualization
 
 You can now enable nested virtualization while you create a new VM and deploy VMs through VM templates and service templates. In earlier releases, nested virtualization is supported only on deployed VMs. Learn more about [enabling nested virtualization](../vmm/vm-nested-virtualization.md).
+
+## New features in VMM 2019 UR2
+
+The following sections introduce the new features and feature updates supported in VMM 2019 Update Rollup 2 (UR2).
+
+For problems fixed in VMM 2019 UR2, and installation instructions for UR2, [see the KB article](https://support.microsoft.com/help/4569533).
+
+## Compute
+
+### Support for Windows 2012 R2 hosts
+
+VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [System requirements](../vmm/system-requirements.md#servers-in-the-vmm-fabric).
+
+### Support for ESXi 6.7 hosts
+
+VMM 2019 UR2 supports VMware ESXi v6.7 servers in VMM fabric. This support gives additional flexibility to the administrators in managing multiple hypervisors in use. For more information about supported VMware server versions, see [System requirements](../vmm/system-requirements.md#vmware-servers-in-the-vmm-fabric).
+
+## Networking
+
+### User experience improvements in creating logical switches
+With VMM 2019 UR2, the user experience is enhanced for the process of creating logical switches. 2019 UR2 includes smart defaults, provides clear text explanation for various options along with visual representations, and a topology diagram for logical switch. [Learn more](../vmm/network-switch.md)
+
+### Support for IPv6
+
+VMM 2019 UR2 supports IPv6 SDN deployment. [Learn more](../vmm/sdn-controller.md).
+
+### Provision to set affinity between virtual network adapters and physical adapters
+
+VMM 2019 UR2 supports affinity between vNICs and pNICs. Affinity between virtual network adapters and physical adapters brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic. [Learn more](../vmm/hyper-v-network.md).
+
+## Others
+
+### Support for SQL Server 2019
+VMM 2019 RTM and later now supports SQL Server 2019.
+
+### Support for Linux Operating system
+
+VMM 2019 UR2 supports Red Hat 8.0, CentOS 8, Debian 10, Ubuntu 20.04 Linux Operating systems.
+
+## Updates to PowerShell cmdlets
+
+VMM 2019 UR2 includes the following cmdlet updates:
+
+1. New cmdlet - **Update-SCVMMCertificate**, this cmdlet updates the VMM certificate on the VMM server.
+
+2. New parameters:
+   - **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
+   - **[-PhysicalNetworkAdapterName]** - specifies the name of the physical network adapter, and is included in **New-SCVirtualNetworkAdapter** and **Set-SCVirtualNetworkAdapter** cmdlets.
+
+3. Updates to parameters in existing cmdlets
+   - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
+   - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
+
+For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).

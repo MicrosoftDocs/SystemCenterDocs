@@ -5,7 +5,7 @@ description: This article describes how to set up a Software Defined Network (SD
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 03/23/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -18,6 +18,14 @@ This article describes how to set up a Software Defined Networking (SDN) network
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-controller/network-controller).
 
 For a great introduction, [watch a video](https://channel9.msdn.com/Blogs/hybrid-it-management/Demo-Deploy-Network-Controller) (~ five minutes) that provides an overview of network controller deployment.
+
+::: moniker range="=sc-vmm-2019"
+
+>[!NOTE]
+> - From VMM 2019 UR1, **One Connected** network type is changed as **Connected Network**.
+> - VMM 2019 UR2 and later supports IPv6.
+
+::: moniker-end
 
 ## Prerequisites
 • Plan for a Software Defined Network (SDN). [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/plan/plan-a-software-defined-network-infrastructure).
@@ -124,16 +132,32 @@ You create a management logical network in VMM, to mirror your physical manageme
 - We recommend that you create this logical network specifically to provide connectivity for infrastructure VMs that are managed by the network controller.
 - If you already have a VMM logical network that's configured with **Create a VM Network with the same name to allow virtual machines to access this logical network directly**, then you can reuse this logical network to provide management connectivity to network controller.
 
-**use the following procedure to create management logical network**:
+**Use the following procedure to create management logical network**:
 
 1.  Click **Fabric** > **Networking**. Right-click **Logical Networks**  > **Create Logical Network**.
 2.  Specify a **Name** and optional **Description**.
+::: moniker range="<sc-vmm-2019"
 3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
+::: moniker-end
+::: moniker range="=sc-vmm-2019"
+3.  In **Settings** select **One Connected Network**. All management networks need to have routing and connectivity between all hosts in that network. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly** to automatically create a VM network for your management network.
+
+    >[!NOTE]
+    > From VMM 2019 UR1,**One Connected Network** type is changed to **Connected Network**.
+
+::: moniker-end
+
 4.  Click **Network Site** > **Add**. Select the host group for the hosts that will be managed by the network controller. Insert your management network IP subnet details. This network should already exist and be configured in your physical switch.
 5.  Review the **Summary** information and click **Finish** to complete.
 
 
 ###  Create an IP address pool
+::: moniker range="=sc-vmm-2019"
+
+>[!NOTE]
+> From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
+
+::: moniker-end
 
 If you want to allocate static IP addresses to network controller VMs, create an IP address pool in the management logical network. If you're using DHCP you can skip this step.
 
@@ -221,8 +245,8 @@ When you are done, refresh these folders and ensure that you have these certific
 4. Copy the .CER file to the NCCertificate.cr folder.
 5. Copy the public key of the CA in .CER format to TrustedRootCertificate.cr.
 
-> [!NOTE]
-> Ensure that the enterprise CA is configured for certificate auto enrollment.
+    > [!NOTE]
+    > Ensure that the enterprise CA is configured for certificate auto enrollment.
 
 ### Enhanced key usage
 
@@ -264,10 +288,9 @@ As an example, here are the steps to enter the product key, enable DHCP and high
 5.  To enable high availability, click **Hardware configuration** > **Availability**, select the **Make the Virtual machine highly available** check box.
 5.  To enable dynamic IP configuration and leverage DHCP for network controller management, click network adapter on the designer, and change the IPV4 address type to **Dynamic**.
 
-
-> [!NOTE]
-> - If you customize the template for high availability, ensure you deploy this on clustered nodes.
-> - While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying the NC by using the SDN Express or VMM Express script.
+    > [!NOTE]
+    > - If you customize the template for high availability, ensure you deploy this on clustered nodes.
+    > - While configuring your Network Controller and specifying FQDN as the REST name, don’t pre-create Host A record for your primary NC node in your DNS. This may impact Network Controller connectivity once primary NC node changes. This is applicable even if you are deploying the NC by using the SDN Express or VMM Express script.
 
 ## Deploy the network controller
 
@@ -336,17 +359,46 @@ You can optionally validate the network controller deployment. To do this:
 ### Create the HNV provider network
 
 1.  Start the **Create Logical Network Wizard**. Type a name and optional description for this network.
-2. In **Settings** verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition check **Managed by the network controller**.
-3. In **Network Site** add the network site information for your HNV Provider network. This should include the host group, subnet, and VLAN information for the network.
+::: moniker range="<sc-vmm-2019"
+2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
+::: moniker-end
+::: moniker range="=sc-vmm-2019"
+2. In **Settings**, verify that **One Connected Network** is selected, since all HNV Provider networks need to have routing and connectivity between all hosts in that network. Ensure you check **Allow new VM networks created on this logical network to use network virtualization**. In addition, check **Managed by the network controller**.
+
+    ![HNV network](media/sdn-controller/set-up-provider-network.png)
+
+    >[!NOTE]
+    > From VMM 2019 UR1,**One Connected Network** type is changed to **Connected Network**.
+
+::: moniker-end
+
+3. In **Network Site**, add the network site information for your hnv provider network. This should include the host group, subnet, and VLAN information for the network.
 4. Review the **Summary** information and complete the wizard.
 
 ### Create the IP address pool
 
-The HNV provider logical network needs an IP address pool, even if DHCP is available on this network. If you have more than one subnet on the HNV provider network, create a pool for each subnet.
+::: moniker range="=sc-vmm-2019"
 
-1.  Right-click the HNV Provider logical network > **Create IP Pool**.
+>[!NOTE]
+> From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
+
+::: moniker-end
+
+The configure hnv logical network needs an IP address pool, even if DHCP is available on this network. If you have more than one subnet on the configure hnv network, create a pool for each subnet.
+
+1.  Right-click the configure hnv logical network > **Create IP Pool**.
 2.  Provide a name and optional description, and ensure that the HNV Provider logical network is selected for the logical network.
-3.  In **Network Site** you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
+::: moniker range="<sc-vmm-2019"
+3.  In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
+::: moniker-end
+::: moniker range="=sc-vmm-2019"
+3. In **Network Site**, you need to select the subnet that this IP address pool will service. If you have more than one subnet as part of your HNV provider network, you need to create a static IP address pool for each subnet. If you have only one site (for example, like the sample topology) then you can just click **Next**.
+
+    >[!NOTE]
+    >To enable IPv6 support, add an IPv6 subnet and create IPv6 address pool.
+
+::: moniker-end
+
 4.  In **IP Address range** configure the starting and ending IP address. Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 5.  Next, configure the default gateway address. Click **Insert** next to the **Default gateways** box, type the address and use the default metric. Optionally configure DNS and WINS.
 6.  Review the summary information and click **Finish** to complete the wizard.
@@ -363,20 +415,41 @@ Now, create two VM networks and IP pools for two tenants in your SDN infrastruct
 > [!NOTE]
 > - Do not use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 > - Currently you can’t create a VM network with **No Isolation** for logical networks that are managed by the network controller. You must choose the **Isolate using Hyper-V Network Virtualization** isolation option when creating VM Networks associated with HNV Provider logical networks.
+>::: moniker range="<sc-vmm-2019"
 > - Since the network controller is not yet tested with IPv6, use IPv4 for both the logical network and the VM network when you create a VM network.
+>::: moniker-end
 
 1. [Create a VM network](network-virtual.md) for each tenant.
+
 2. [Create an IP address pool](network-pool.md) for each VM network.
+
+::: moniker range="=sc-vmm-2019"
+
+>[!NOTE]
+>
+>When you create VM network, to enable IPv6 support, select IPv6 from the **IP address protocol for the VM network** drop-down menu.
+>
+
+![HNV network](media/sdn-controller/enable-ipv6.png)
+
+::: moniker-end
 
 ### Create tenant virtual machines
 
-Now you can create tenant virtual machines connected to the tenant virtual network. Note that:
-
+Now, you can create tenant virtual machines connected to the tenant virtual network.
+::: moniker range="<sc-vmm-2019"
 - Ensure that your tenant virtual machines allow IPv4 ICMP through their firewall. By default, Windows Server blocks this.
-- You can run the following PowerShell cmdlet to allow ICMPv4 in through the firewall with **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**
+- To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
+::: moniker-end
+::: moniker range="=sc-vmm-2019"
+- Ensure that your tenant virtual machines allow IPv4/IPv6 ICMP through their firewall. By default, Windows Server blocks this.
+    - To allow IPv4 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4**.
+    - To allow IPv6 ICMP through the firewall, run the command **New-NetFirewallRule –DisplayName “Allow ICMPv6-In” –Protocol ICMPv6** (applicable for 2019 UR2 and later).
+::: moniker-end
 
 1. If you want to create a VM from an existing hard disk, [follow these instructions](vm-existing-disk.md).
 2. After you deploy at least two VMs connected to the network, you can ping one tenant virtual machine from the other tenant virtual machine to validate that the network controller has been deployed as a network service successfully, and that it can manage the HNV Provider network so that tenant virtual machines can ping each other.
+
 
 ## Remove the network controller from the SDN fabric
 

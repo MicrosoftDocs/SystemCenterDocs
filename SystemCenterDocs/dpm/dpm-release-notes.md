@@ -5,7 +5,7 @@ description: Release notes about the DPM 2016, 1801, 1807 and 2019 releases.
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 01/28/2020
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: data-protection-manager
@@ -16,7 +16,7 @@ ms.topic: article
 
 ::: moniker range="sc-dpm-2019"
 
-This article lists the release notes for System Center 2019 - Data Protection Manager (DPM).
+This article lists the release notes for System Center 2019 - Data Protection Manager (DPM), includes the known issues and workarounds for DPM [2019](#dpm-2019-release-notes) DPM [2019 UR1](#dpm-2019-ur1-release-notes),and DPM [2019 UR2](#dpm-2019-ur2-release-notes), as applicable.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ This article lists the release notes for System Center 2016 - Data Protection Ma
 
 ## DPM 2019 release notes
 
-The following sections summarize the release notes for DPM 2019 and include the following known issues and workarounds.
+The following sections summarize the release notes for DPM 2019 and include the applicable known issues and workarounds.
 
 ### DPM console crashes due to MSDPM Service crash
 
@@ -117,7 +117,7 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Workaround**: Use Alternate Location Recovery as a VM, and then transfer those files to the desired location.
 
 >[!NOTE]
-> This feature is fixed in DPM 2019 UR1. You can upgrade to DPM 2019 UR1 <add link to KB article> to fix this issue.
+> This feature is fixed in DPM 2019 UR1. You can install UR1 to get this issue fixed. For detailed information about installing UR1, [see the KB article for UR1](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
 
 ### DPM 2019 does not support file server end user recovery with Modern Backup Storage (MBS)
 
@@ -130,6 +130,67 @@ The following sections summarize the release notes for DPM 2019 and include the 
 **Description**: With DPM 2019 central console you cannot manage any DPM 1801 or DPM 1807 servers.
 
 **Workaround**: Upgrade your DPM server to version 2019.
+
+## DPM 2019 UR1 release notes
+No known issues for DPM 2019 UR1.
+
+For issues fixed in DPM 2019 UR1, [see the KB article](https://support.microsoft.com/help/4533416/update-rollup-1-for-system-center-2019-data-protection-manager).
+
+## DPM 2019 UR2 release notes
+The following sections detail the known issues and workarounds for DPM 2019 UR2.
+
+For issues fixed in DPM 2019 UR2, [see the KB article](https://support.microsoft.com/help/4563392/update-rollup-2-for-system-center-2019-data-protection-manager).
+
+### Protection group details are not displayed in DPM console
+
+**Description**: After installing DPM 2019 UR2, sometimes, DPM console might not display Protection Group details in the **Details** pane.
+
+![console with no details for Protection Group](media/release-notes/admin-console.png)
+
+**Workaround**: Use *Get-DPMProtectionGroup* PowerShell command to view the Protection Group details.
+
+### Latest report files are not automatically updated
+
+**Description**: With DPM 2019 UR2, issue with DPM report formatting and volume to volume migration reporting is fixed. However, the existing  report files are not automatically replaced with the updated files.
+
+**Workaround**:
+Follow these steps to replace the existing report files:
+
+#### Replace the ReportSRV10.dll
+1. Stop the SQL Server Reporting service
+2.	Select the updated *ReportSRV10.dll* file present in *C:\Program Files\Microsoft System Center\DPM\DPM\bin* and replace the existing DLL  files in the following folders:
+    - For SQL Server 2017 and later -  C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin
+    - For SQL Server 2016 -  C:\Program Files\Microsoft SQL Server\MSRS13.MSDPM2012\Reporting Services\ReportServer\bin
+3.	Start the SQL Server Reporting service.
+
+#### Replace the RDL files
+
+1.	On DPM, open the SQL Reporting Services portal URL.
+2.	On the portal, the DPMReports folder is present in the format  **DPMReports_\<GUID>**.
+
+    ![Reports folder](media/release-notes/reports-folder.png)
+
+     >[!NOTE]
+     > You can see only one folder with this naming convention. If DPM is upgraded from a previous version, the previous folder might still exist, but you can’t open it.
+
+3.	Select and open the **DPMReports_\<GUID>** folder. The individual report files are displayed.
+
+    ![List of individual report files](media/release-notes/individual-report-files.png)
+
+4.	Select the report files that don't end with *Report*, right-click   **Option**, and then select **Manage**.
+
+    ![Manage report files](media/release-notes/manage-report-files.png)
+
+5.	In the new page, select **Replace** to replace with the latest report files.
+
+    ![Replace report files](media/release-notes/replace-report-files.png)
+
+    The latest report files are available in the DPM installation path:
+
+    For example: C:\Program Files\Microsoft System Center\DPM\DPM\bin\DpmReports
+
+6.	After the files are replaced, ensure that the **Name** and **Description** are intact and aren't empty.
+7.	Restart DPM and use the report files.
 
 ::: moniker-end
 
@@ -186,7 +247,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - **ManageStorageInfo:** - Specifies the kind of operation needed.
 
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes.
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
 
     - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
 
@@ -294,7 +355,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - **ManageStorageInfo:** - Specifies the kind of operation needed.
 
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes.
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
 
     - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
 
@@ -407,7 +468,7 @@ Use a PowerShell script to turn on size calculation. The following script runs c
 
 - **ManageStorageInfo:** - Specifies the kind of operation needed.
 
-    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and Powershell will not report sizes.
+    - ***StopSizeAutoUpdate:*** Stops the size calculations completely. Both UI and PowerShell will not report sizes.
 
     - ***StartSizeAutoUpdate:*** Resumes the size calculations. Immediately after enabling size calculations, use ```UpdateSizeInfo``` (in the following options) to recalculate sizes for all the datasources, until which sizes reported in PowerShell and UI may not be correct.
 

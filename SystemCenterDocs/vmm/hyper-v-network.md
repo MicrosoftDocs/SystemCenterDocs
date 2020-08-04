@@ -5,7 +5,7 @@ description: This article describes how to set up networking for Hyper-V hosts a
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/01/2017
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -47,6 +47,54 @@ Regardless of any port profiles and logical switches you are using in your netwo
     - Click **Fabric**> **Networking** > **Logical Switches** > **Home** > **Show** > **Hosts**.
     - In **Logical Switch Information for Hosts** verify the settings. **Fully compliant** indicates that the host settings are compliant with the logical switch. **Partially compliant** indicates some issues. Check the reasons in **Compliance errors**. **Non compliant** indicates that none of the IP subnets and VLANs defined for the logical network are assigned to the physical adapter. Click the switch > **Remediate** to fix this.
     - If you have a cluster, check each node.
+
+::: moniker range="=sc-vmm-2019"
+
+## Set affinity between vNICs and pNICs
+
+>[!NOTE]
+> This feature is applicable for 2019 UR2 and later.
+
+This section provides the information on how to set affinity between virtual network adapters (vNICs) and physical network adapters (pNICs). Affinity between pNICs and vNICs  brings in flexibility to route network traffic across teamed pNICs. With this feature, you can increase throughput by mapping RDMA capable physical adapter with a RDMA settings enabled vNIC. Also, you can route specific type of traffic (e.g. live migration) to a  higher-bandwidth physical adapter. In HCI deployment scenarios, by specifying affinity, you can leverage SMB multichannel to meet high throughput for SMB traffic.
+
+### Before you begin
+
+Ensure the following:
+
+1. Logical switch is deployed on a host.
+2. SET teaming property is enabled in the logical switch.
+
+**Follow these steps:**
+
+For a host, affinity between vNIC and pNIC can be set at virtual switch level. You can define affinity either when you add a new virtual network adapter to the virtual switch or when you modify the properties of an existing virtual network adapter.
+
+1. Open **Fabric** > **Servers** > **All Hosts** > **host group** > **Hosts** > **Host**. Right-click **Host**, select **Properties**, and navigate to **Virtual Switches** tab.
+2. Verify that the physical adapters to be teamed are added here. Affinity can be mapped only for physical adapters that are added here.
+
+    ![Virtual network adapter](./media/set-affinity-vnic-pnic/virtual-network-adapter.png)
+
+3. Click **New virtual network adapter** to add a new vNIC to the virtual switch.
+4. By default, the affinity value is set as **None**. This setting corresponds to the existing behavior, where the operating system distributes the traffic from vNIC to any of the teamed physical NICs.
+
+    ![Physical vNIC](./media/set-affinity-vnic-pnic/physical-nic-none.png)
+
+5. Set the affinity between a vNIC and physical NIC by selecting a physical adapter from the drop-down menu.
+
+    ![Affinity NIC](./media/set-affinity-vnic-pnic/affinity-physical-nic.png)
+
+6. Once the affinity is defined, traffic from the vNIC is routed to the mapped physical adapter.
+
+    > [!NOTE]
+    >- We recommend you not to remove any of the physical adapter post teaming, as it could break the assigned affinity mappings.
+    >- Affinity cannot be defined for vNICs that handles management traffic, for the option **This virtual adapter inherits the properties from the physical management adapter**.
+
+### Frequently asked questions
+
+**Q**: I have deployed a SET enabled switch and teamed three physical adapters pNIC1, pNIC2 and pNIC3. I have set affinity between vNIC1 and pNIC1. For some reasons, if pNIC1 goes down, will there be no traffic flow from vNIC1?
+
+**A**: No, traffic will continue to flow from vNIC1 to any of physical adapters (pNIC2 and pNIC3). When a physical adapter for which you have defined an affinity goes down, the default behavior of SET switch overrides affinity behavior. This means, operating system will map the traffic from vNIC1 to any of the active physical adapters (pNIC2 or pNIC3).
+
+::: moniker-end
 
 ::: moniker range=">=sc-vmm-1807"
 

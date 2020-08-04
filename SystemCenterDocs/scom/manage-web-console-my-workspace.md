@@ -4,7 +4,7 @@ description: This article describes how to use My Workspace in the Operations Ma
 author: JYOTHIRMAISURI
 ms.author: magoedte
 ms.manager: carmonm
-ms.date: 07/20/2018
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -47,6 +47,13 @@ For detailed steps, review the following articles:
 * Create dashboard with [Tile widget](manage-create-web-dashboard-tile.md)
 * Create dashboard with [Custom widget](manage-create-web-dashboard-custom.md)
 * Create dashboard with the [PowerShell widget](manage-create-web-dashboard-posh.md), available only with version 1807
+
+
+::: moniker range="sc-om-2019"
+>[!NOTE]
+>Operations Manager 2019 UR2 supports folders' creation in web console, inside which, you can place dashboards. For more information, see [create a folder in web console](support-folders-monitoring-view-web-console.md)
+
+::: moniker-end
 
 ## Next steps
 

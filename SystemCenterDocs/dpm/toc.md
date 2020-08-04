@@ -8,6 +8,7 @@
 ## [DPM release notes](dpm-release-notes.md)
 ## [What's new in DPM](what-s-new-in-dpm.md)
 ## [What DPM supports](dpm-support-issues.md)
+## [Turn on/off telemetry settings](manage-telemetry.md)
 # How To
 ## Plan Your DPM Environment
 ### [Get ready to deploy DPM servers](plan-dpm-deployment.md)
@@ -19,13 +20,17 @@
 ### [Install DPM ](install-dpm.md)
 ### [Upgrade your DPM installation](upgrade-dpm.md)
 ### [Add Modern Backup storage](add-storage.md)
+#### [Migrate datasources to new volumes](volume-to-volume-migration.md)
 ### [Deduplicate DPM storage](deduplicate-dpm-storage.md)
+### [Deploy and manage update rollups](update-rollups.md)
 ## Deploy DPM
 ### [Deploy the DPM protection agent](deploy-dpm-protection-agent.md)
 ### [Deploy protection groups](create-dpm-protection-groups.md)
 ### [Configure firewall settings](configure-firewall-settings-for-dpm.md)
 ### Offline backup
-#### [Using own disk](offline-backup-workflow.md)
+#### [Overview](offline-backup-overview.md)
+#### [Offline seeding using Azure Data Box](offline-seeding-azure-data-box.md)
+#### [Offline seeding using own disk](offline-backup-workflow.md)
 ## Protect Workloads
 ### [Back up Hyper-V virtual machines](back-up-hyper-v-virtual-machines.md)
 ### [Back up Exchange with DPM](back-up-exchange.md)

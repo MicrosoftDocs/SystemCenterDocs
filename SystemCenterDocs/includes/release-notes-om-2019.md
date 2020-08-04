@@ -14,6 +14,7 @@ ms.topic: include
 ## Operations Manager 2019 release notes
 
 The following sections summarize the release notes for Operations Manager 2019, and include the known issues and workarounds.
+See also, [2019 UR1](#operations-manager-2019-ur1-release-notes) and [2019 UR2](#operations-manager-2019-ur2-release-notes) release notes.
 
 ### Health Service with Log on type as *Service* by default
 
@@ -104,6 +105,9 @@ This command will add the service user to the list of allowed users, who can acc
 
     For detailed information about this issue, see [update an active directory integration with Operations Manager](https://techcommunity.microsoft.com/t5/system-center-blog/update-on-active-directory-integration-with-scom/ba-p/1226768).
 
+    >[!NOTE]
+    >This issue is fixed in 2019 UR2.
+
 
 ### REST API in Operations Manager does not return required values for classes
 
@@ -112,8 +116,13 @@ Also, ID is returned as className.
 
 **Workaround**: None
 
+>[!NOTE]
+>This issue is fixed in 2019 UR2.
+
 ## Operations Manager 2019 UR1 release notes
 The following sections summarize the release notes for Operations Manager 2019 UR1, and include the known issues and workarounds.
+
+For the problems fixed in UR1, and the installation instructions for UR1, [see the KB article](https://support.microsoft.com/help/4533415/update-rollup-1-for-system-center-operations-manager-2019).
 
 ### Pending management after patching
 
@@ -144,3 +153,8 @@ This is specifically observed for SQL Server Reporting Services on SQL Server 20
 >From SQL Server Reporting Services (SSRS) 2017 version 14.0.600.1274 and later, the default security settings do not allow resource extension uploads. This leads to **ResourceFileFormatNotAllowedException** exceptions in Operations Manager during deployment of reporting components.
 >
 >To fix this, open SQL Management Studio, connect to your Reporting Services instance, open **Properties**>**Advanced**, and add \*.\* to the list for *AllowedResourceExtensionsForUpload*. Alternatively, you can add the full list of Operations Manager's reporting extensions to the *allow list* in SSRS.
+
+## Operations Manager 2019 UR2 release notes
+No known issues in Operations Manager 2019 UR2.
+
+For the problems fixed in UR2, and the installation instructions for UR2, [see the KB article](https://support.microsoft.com/help/4558752).
