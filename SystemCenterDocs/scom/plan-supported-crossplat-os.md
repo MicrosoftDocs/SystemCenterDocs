@@ -5,7 +5,7 @@ description: This article lists the supported versions of Linux and UNIX operati
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 02/04/2020
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -133,6 +133,8 @@ Debian 8, 9 and Ubuntu 16.04, 18.04 are supported
 ## Universal Linux (RPM package)
 
 CentOS 6 and 7, Oracle Linux 6, 7 are supported
+
+CentOS 8 is supported from 2019 UR2 and later in XPlat agent under Universal Linux (RPM package). To install the agent on servers, see [Install the agent on RPM based Universal Linux Servers](manage-install-crossplat-agent-cmdline.md#to-install-the-agent-on-rpm-based-universal-linux-servers-oracle-and-centos).
 
 |Required package|Description|Minimum version|
 |--------------------|---------------|-------------------|

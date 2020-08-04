@@ -5,7 +5,7 @@ description: This article describes how to create a writeable management pack to
 author: JYOTHIRMAISURI
 ms.author: magoedte
 manager: carmonm
-ms.date: 04/29/2019
+ms.date: 08/04/2020
 ms.custom: na
 ms.prod: system-center
 ms.technology: operations-manager
@@ -17,6 +17,12 @@ ms.topic: article
 In System Center - Operations Manager, in a number of wizards and dialog boxes, you select a destination management pack in which to store the settings. You can select any unsealed management pack file in your management group or create a new one.  
 
 Management packs can be sealed or unsealed. A sealed management pack cannot be modified directly. Any changes to the workflows in the sealed management pack, such as an override for a monitor, must be saved to an unsealed management pack. The unsealed management pack references the sealed management pack that it modifies.  
+
+::: moniker range="sc-om-2019"
+>[!NOTE]
+> With Operations Manager 2019 UR2, you can track the changes done in management packs. [Learn more](management-pack-change-tracking.md).
+
+::: moniker-end
 
 The following illustration shows the unsealed management packs that are installed with Operations Manager.  
 

@@ -5,7 +5,7 @@ description: include article to detail the system requirements for VMM 2019
 author:  JYOTHIRMAISURI
 ms.author: v-jysur
 manager:  vvithal
-ms.date:  03/14/2019
+ms.date:  08/04/2020
 ms.topic:  include
 ms.prod:  system-center
 ms.technology:  virtual-machine-manager
@@ -49,10 +49,12 @@ Library Objects (templates, profiles)| 100
 
 **Operating system** | **VMM server** | **Remote VMM library** | **Remote VMM database**
 --- | --- | --- | ---
-Windows Server 2016 (Server Core)| Y | N | If supported by SQL Server version
-Windows Server 2016 (with desktop experience) | Y | Y | If supported by SQL Server version
-Windows Server 2019 (with desktop experience)| Y | Y | If supported by SQL Server version
-Windows Server 2019 (Server Core)| Y | Y | If supported by SQL Server version
+Windows Server 2012 R2 Server Core (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
+Windows Server 2012 R2 with Desktop experience (supported from 2019 UR2 and later)| Y | Y |If supported by SQL Server version
+Windows Server 2016 Server Core| Y | N | If supported by SQL Server version
+Windows Server 2016 with desktop experience | Y | Y | If supported by SQL Server version
+Windows Server 2019 with desktop experience| Y | Y | If supported by SQL Server version
+Windows Server 2019 Server Core| Y | Y | If supported by SQL Server version
 
 > [!NOTE]
 > Ensure that VMM server operating system  is same as the managed host operating system in case of deployment of  Hyper Converged Infrastructure.
@@ -75,9 +77,10 @@ Window Server 2019 Standard, Datacenter, Server Core with FOD | Y
 
 **SQL version** | **Supported**
 --- | ---
-SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
-SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017) | Y
-SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/en-us/download/details.aspx?id=52676 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
+SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) | Y
+SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) | Y
+SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202019) | Y
+SQL Server command line utilities | Install the SQL Server 2016 Command-Line Utilities from the [Microsoft® SQL Server® 2016 Feature Pack](https://www.microsoft.com/download/details.aspx?id=52676 )<br/> or <br/>   Install the SQL Server 2017 Command-Line Utilities from the Microsoft® SQL Server® 2017 Feature Pack. <br/><br/> Not required for VMM installation..
 
 ## Virtualization
 
@@ -106,6 +109,7 @@ PowerShell | PowerShell 5.0 | PowerShell 4.0, 5.0
 
 **Operating system** | **Hyper-V host** | **SOFS** | **Update server** | **PXE server**
 --- | --- | --- | --- | ---
+Windows Server 2012 R2 (supported from 2019 UR2 and later)| Y | Y | N | N
 Windows Server 2016 | Y | Y | N | N
 Windows Server 2016 (with desktop experience) | Y | Y | Y | Y
 Windows Server 2019 (Data Center) | Y | Y | Y | Y
@@ -115,8 +119,8 @@ Windows Server 2019 (Server Core) | Y | Y | N | N
 
 **VMware** | **Supported**
 --- | ---
-ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5
-vCenter | 5.1, 5.5, 5.8, 6.0, 6.5
+ESX | ESX/ESXi 5.1, 5.5, 6.0, 6.5 , 6.7 (supported from 2019 UR2 and later)
+vCenter | 5.1, 5.5, 5.8, 6.0, 6.5, 6.7 (supported from 2019 UR2 and later)
 Supported | [Features and limitations](../vmm/manage-vmware-hosts.md)
 
 ## VMs in the VMM fabric

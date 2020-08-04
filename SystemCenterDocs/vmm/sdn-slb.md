@@ -5,7 +5,7 @@ description: This article describes how to set up a SDN software load balancer i
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -21,6 +21,13 @@ This article describes how to deploy a Software Defined Networking (SDN) softwar
 The SLB enables even distribution of tenant and tenant customer network traffic among virtual network resources, so that multiple servers can host the same workload to provide high availability and scalability. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-function-virtualization/software-load-balancing--slb--for-sdn).
 
 You can use VMM to deploy a network controller and a software load balancer. After you set up the SLB, you can leverage the multiplexing and NAT capabilities in your SDN infrastructure.
+
+::: moniker range="sc-vmm-2019"
+>[!Note]
+>- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
+>- VMM 2019 UR2 and later supports IPv6.
+
+::: moniker-end
 
 ## Before you start
 Ensure the following:
@@ -58,16 +65,26 @@ The download contains Two templates:
 
 Both the templates have a default count of three virtual machines which can be changed in the service template designer.
 
+We recommend to use simplified SDN topology (2 physical network) for SLB deployments. Skip creating transit logical network when simplified SDN topology template is used.
+
 ## Create the transit logical network
 
 1. Open the **Create logical network Wizard**, and type a **Name** and optional description.
 2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name** box to allow virtual machines to access this logical network directly, and **Managed by the network controller**.
+::: moniker range="sc-vmm-2019"
+- For VMM 2019 UR1 and later, in **Settings**, select **Connected Network**, and select **Managed by the Network Controller**.
+::: moniker-end
 3. In **Network Site**, add the network site information for your subnet.
 4. Review the **Summary** information and complete the logical network wizard.
 
 ### Create an IP address pool for the transit logical network
-
+::: moniker range="<sc-vmm-2019"
 This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed).
+::: moniker-end
+
+::: moniker range="=sc-vmm-2019"
+This is the IP address pool where DIPs are assigned to the SLB/MUX virtual machines and BGP Peer virtual machine (if deployed). From VMM 2019 UR1, you can create IP address pool using **Create Logical Network** wizard.
+::: moniker-end
 
 **Note**:
 - Ensure you use the IP address range that corresponds to your transit network IP address space. Don't include the first IP address of your subnet in the IP pool you are about to create. For example, if your available subnet is from .1 to .254, start your range at .2.
@@ -92,14 +109,32 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 **Create a private VIP**:
 
 1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
+::: moniker range="<sc-vmm-2019"
 2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
+
+::: moniker-end
+::: moniker range="sc-vmm-2019"
+2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
+    For UR1 and later, in **Settings**, select **connected Network** and select **Managed by the network controller**.
+    ![Private VIP](media/sdn-slb/create-private.png)
+::: moniker-end
 3. In **Network Site**, add the network site information for your private VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
 **Create a public VIP**:
 
 1. Start the **Create logical network Wizard**. Type a **Name** and optional description for this network.
+::: moniker range="<sc-vmm-2019"
 2. In **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller** and **Public IP Address Network**.
+::: moniker-end
+::: moniker range="sc-vmm-2019"
+2. In  **Settings**, select **One Connected Network**. Select **Create a VM network with the same name to allow virtual machines to access this logical network directly**. Select **Managed by the network controller**.
+
+    For UR1 and later, in **Settings**, select **connected Network** and select both **Managed by the network controller** and **Public IP address network**.
+
+    ![Public VIP](media/sdn-slb/create-public.png)
+
+::: moniker-end
 3. In **Network Site**, add the network site information for your public VIP logical network.
 4. Review the **Summary** information and complete the wizard.
 
@@ -109,9 +144,19 @@ You need a private VIP address pool to assign a VIP, and a public VIP, to the SL
 1. Right-click the private VIP logical network > **Create IP Pool**.
 2. Provide a **Name** and optional description for the IP Pool and ensure that the correct logical network is selected.
 3. Accept the default network site, and click **Next**.
+::: moniker range="<sc-vmm-2019"
 4. In **IP Address range** configure the starting and ending IP address.
+    >[!NOTE]
+    > Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
 
-    **Note**: Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater.
+::: moniker-end
+::: moniker range="sc-vmm-2019"
+4. In **IP Address range** configure the starting and ending IP address. Specify IPv6 address pool if you are using IPv6 address space.
+    >[!NOTE]
+    > Don't use the first IP address of your available subnet. For example, if your available subnet is from .1 to .254, start your range at .2 or greater. To specify the VIP range, don’t use the shortened form of IPv6 address; Use *2001:db8:0:200:0:0:0:7* format instead of *2001:db8:0:200::7*.
+    >
+    >The maximum number of addresses allowed in a single VIP range is 1024.
+::: moniker-end
 
 5. In **IP addresses reserved for load balancer VIPs**, type the IP address range in the subnet. It should match the start and end addresses you specified.
 6. You don't need to provide gateway, DNS or WINS information because this pool is used to allocate IP addresses for VIPs through the network controller only. Click **Next** to skip these screens. type the address and use the default metric. Optionally configure DNS and WINS.
@@ -143,7 +188,9 @@ Now deploy an SLB/MUX service instance.
 1. Select the **SLB Production Generation 2 VM.xml** service template > **Configure Deployment**. Type a **Name** and optional destination for the service instance. The destination must map to a host group that contains the hosts you've configured.
 2. In the **Network Settings** section, map **TransitNetwork** to your transit VM network and **ManagementNetwork** to your management VM network.
 
-    **Note**: The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
+    >[!NOTE]
+    >- Transit network is not applicable when you are using simplified topology templates.
+    >- The **Deploy Service** dialog appears after mapping is complete. It is normal for the virtual machine instances to be initially Red. Click **Refresh Preview** to automatically find suitable hosts for the virtual machine.
 
 3. On the left of the **Configure Deployment** window, configure the settings as detailed in the following table:
 

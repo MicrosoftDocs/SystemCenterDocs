@@ -1,19 +1,17 @@
 ---
 ms.assetid: d174e976-e265-4acc-9ef5-1c92b602f761
-title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM 2016.
+title: Set up NAT for traffic forwarding in SDN infrastructure by using VMM.
 description: This article describes how to configure NAT connection and NAT rules for traffic forwarding in the SDN infrastructure.
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 manager: riyazp
-ms.date: 11/07/2017
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
 ---
 
 # Set up NAT for traffic forwarding in the SDN infrastructure
-
-
 
 This article describes how to set up Network Address Translation (NAT) for traffic forwarding in a software-defined network (SDN) infrastructure set up in the System Center Virtual Machine Manager (VMM) fabric.
 
@@ -25,6 +23,13 @@ The following two NAT types are supported by VMM.
 - **Inbound NAT** - Forwards the external traffic to a specific VM in a virtual network.
 
 This article provides information about how to configure a NAT connection for SDN virtual networks using VMM.
+
+::: moniker range="sc-vmm-2019"
+>[!Note]
+>- From VMM 2019 UR1, **One Connected** network type is changed to **Connected Network**
+>- VMM 2019 UR2 and later supports IPv6.
+
+::: moniker-end
 
 ## Before you start
 
@@ -39,13 +44,14 @@ Use the following procedure:
 1. In VMM console, click **VMs and Services** > **VM Networks**. Right-click the selected VM network for which you want to create the NAT connection, and select **Properties**.
 2. Click **Connectivity** on the wizard page displayed.
 
-    ![nat connection](media/sdn-nat/nat-connection.png)
-
 3. In **Connectivity**, select **Connect directly to an additional logical network** and select **Network address translation (NAT)** under this option.   
 
-    ![nat connection](media/sdn-nat/nat-ip.png)
+    ![nat connection](media/sdn-nat/create-connection-directly.png)
 
 4. In the **IP address pool**, choose the IP pool from which the VIP should come from. In IP address, choose an IP address from the pool selected. Click **OK**.
+::: moniker range="sc-vmm-2019"
+5. To enable IPv6, select an IPv6 address pool and provide an IPv6 address.
+::: moniker-end
 
 A NAT connection will be created for this VM network.
 

@@ -6,8 +6,8 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 07/06/2020
-title: Data Protection Manager
+ms.date: 08/04/2020
+title: Preparing your environment for System Center Data Protection Manager
 ms.technology: data-protection-manager
 ms.assetid: e2a65d9d-5038-4a86-a495-f4745b78d040
 ---
@@ -45,12 +45,24 @@ DPM uses SQL Server as a database to store backup information for workloads, ser
 
 **SQL Server - supported versions**
 
+::: moniker range="<sc-dpm-2019"
+
 **DPM version** | **SQL version**
 --- | ---
 DPM 2016 | SQL Server 2014 SP2;  SQL Server 2012 SP4.
-DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
-DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/en-in/lifecycle/search?alpha=SQL%20server%202017)
+DPM 2016 UR2 and later| SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 1801 |  SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+DPM 1807 | - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack) <br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017)
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+**DPM version** | **SQL version**
+--- | ---
+DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20Server%202019%20on%20Windows%20(all%20editions))<br/><br/> - SQL Server 2017 as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202017) <br/><br/> - SQL Server 2016 and SPs as detailed [here](https://support.microsoft.com/lifecycle/search?alpha=SQL%20server%202016%20service%20pack)
+
+::: moniker-end
 
 
 **SQL Server requirements**
@@ -59,7 +71,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |-----------|----------|
 |RAM|4 GB minimum, 8 GB recommended|
 |Disk|1 GB minimum, 3 GB recommended|
-|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017)<br/><br/>**Note** <br/><br/> - For Remote SQL, database engine and reporting services must be on the same computer. .<br/><br/> - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
+|Required features|Database Engine Services, Reporting Services (for DPM 2019, install SSRS with SQL 2017 or later)<br/><br/>**Note** <br/><br/> - For Remote SQL, database engine and reporting services must be on the same computer. .<br/><br/> - For remote clustered SQL instance, Database Engine must be on the cluster and SSRS must be on a separate computer, which can be the DPM server or any other computer)|
 |Collations|SQL_Latin1_General_CP1_CI_AS|
 |Dynamic ports|Supported|
 |AlwaysOn|Not supported|
@@ -67,8 +79,20 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Remote installation|Install in the same domain and time zone as the DPM server.<br/> When used to support DPM, a SQL Server can't share a server with a domain controller.<br/> Read about [Setting up a remote SQL Server instance](~/dpm/back-up-sql-server.md).<br/> If you're deploying DPM as an Azure virtual machine, you can specify an Azure virtual machine running SQL Server as a remote SQL Server instance. You can't use an on-premises SQL Server. Using an Azure SQL Database isn't currently supported.|
 |Clustered SQL Server|Supported|
 
+::: moniker range="<sc-dpm-2019"
+
 > [!NOTE]
 > If you are upgrading SQL Database to SQL 2017, ensure you install SQL SSRS post SQL upgrade.
+
+::: moniker-end
+
+::: moniker range="sc-dpm-2019"
+
+> [!NOTE]
+> If you are upgrading SQL Database to SQL 2017 or later, ensure you install SQL SSRS post SQL upgrade.
+
+::: moniker-end
+
 
 ## DPM server
 
@@ -113,7 +137,7 @@ DPM 1807 and DPM 2019 | - SQL Server 2016 and SPs as detailed [here](https://sup
 |Requirement|Details|
 |-----------|-------|
 |Domain|The DPM server should be in a Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012|
-|Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. To protect computers in workgroups or untrusted domains, see [Back up and restore workloads in workgroups and untrusted domains](back-up-machines-in-workgroups-and-untrusted-domains.md).|
+|Domain trust|DPM supports data protection across forests as long as you establish a forest-level, two-way trust between the separate forests.<br/> <br/>DPM can protect servers and workstations across domains within a forest that has a two-way trust relationship with the DPM server domain. Without two-way trust, DPM can't protect computers in workgroups or untrusted domains. For more information, see [Back up and restore workloads in workgroups and untrusted domains](back-up-machines-in-workgroups-and-untrusted-domains.md).|
 |Network configuration|If you're protecting data over a wide area network (WAN), you'll need a minimum bandwidth of 512 kilobits per second (Kbps).<br/> DPM doesn't support disjointed namespaces.|
 
 ## Remote management
