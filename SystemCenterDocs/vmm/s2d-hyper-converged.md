@@ -93,9 +93,9 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 ### Recommendations
 - If you have vNICs deployed, for optimal performance, we recommend to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually override the assignment using the following PowerShell cmdlets:
 
-    >[!NOTE]
-    >- These are Windows Server cmdlets and are not supported in VMM 2019 UR1.
-    >- From VMM 2019 UR2 and later supports these cmdlets.
+    > [!NOTE]
+    > - These are Windows Server cmdlets and are not supported in VMM 2019 UR1.
+    > - From VMM 2019 UR2 and later supports these cmdlets.
 
     **Windows server cmdlets for UR1**
 
