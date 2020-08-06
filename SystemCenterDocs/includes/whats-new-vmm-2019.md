@@ -341,10 +341,10 @@ VMM 2019 UR2 includes the following cmdlet updates for the respective features:
 
 3. Support for IPv6
 
-  - New parameter **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
+    - New parameter **[-IPv6Subnet]** - specifies an IPv6 subnet, and is included in **Add-SCFabricRoleResource** cmdlet.
 
-  - Updates to parameters in existing cmdlets:
-    - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
-    - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
+    - Updates to parameters in existing cmdlets:
+      - IPv4 and IPv6 address separated by ‘;’ can be passed to **[-RoutingIPSubnet]** parameter in **Add-SCVMNetworkGateway** cmdlet.
+     - IPv6 addresses can also be added to **[-PublicIPAddresses]** parameter in **New-SCGatewayRoleConfiguration** cmdlet.
 
 For more information about these updates, see [VMM PowerShell articles](https://docs.microsoft.com/powershell/module/virtualmachinemanager/?view=systemcenter-ps-2019).
