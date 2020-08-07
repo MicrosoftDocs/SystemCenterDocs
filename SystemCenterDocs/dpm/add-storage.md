@@ -155,15 +155,21 @@ Modern Backup Storage (MBS) was introduced in System Center Data Protection Mana
 
 DPM 2019 accepts volumes/disks for storage. Once you add a volume, DPM formats the volume to ReFS to use the new features of Modern Backup Storage. Volumes cannot reside on a dynamic disk, use only a basic disk.
 
-You can directly give a volume to DPM, however, you may have issues in extending the volume if a need arises later. You can create additional volumes using storage pools, which could be exposed to DPM and extended as needed.   The following sections provide the details on how to create a tiered volume, add a volume to DPM, and expand it later
+> [!NOTE]
+> If the physical disk is or will be larger than 2TB, the disk must be converted to GPT before creating the volume(s) for DPM.
+
+You can directly give a volume to DPM, however, you may have issues in extending the volume if a need arises later. You can create additional volumes using storage pools, which could be exposed to DPM and extended as needed. The following sections provide the details on how to create a tiered volume, add a volume to DPM, and expand it later
 
 ## Set up MBS with Tiered Storage
 
 DPM 2016 introduced Modern Backup Storage (MBS), improving storage utilization and performance. MBS uses ReFS as underlying filesystem. MBS is designed to make use of hybrid storage such as tiered storage. To achieve the scale and performance claimed by MBS, we recommend using a small percentage (4% of overall storage) of flash storage (SSD) with DPM 2019 as a tiered volume in combination with HDD for DPM native storage.
 
+Once you configure tiered storage, the ReFs file system has the intelligence to store File System Metadata on the SSD tier. This improves the overall backup job time significantly. There is no further configuration required while configuring the protection groups, etc.
+
 > [!NOTE]
 > - Tiering is recommended for faster backups. However, this is not a mandatory requirement to configure DPM storage.
->- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.    
+>- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.  
+> - When deploying DPM in a virtual machine, DPM 2019 can be deployed in a VM running on Windows Server 2016 or Windows Server 2019. For best performance we strongly recommend DPM 2019 installed on Windows 2019 with the latest Windows update installed.  
 
 Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
 
@@ -192,7 +198,7 @@ The tiered storage is configured using [Windows Storage Spaces](https://docs.mic
 |HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br><br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br><br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
 
 > [!NOTE]
-> Windows tiering requires the SSD disk size must be 32GB or greater.
+> To configure tiered storage, Windows Storage Spaces requires minimum SSD disk size of 32 GB.
 
 For more information on prerequisites for using Storage Spaces on a stand-alone server, see [Prerequisites to use Storage Spaces on a stand-alone server](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
@@ -200,33 +206,31 @@ For more information on prerequisites for using Storage Spaces on a stand-alone 
 
 To configure tiered storage, the storage can be directly attached to the DPM server or it can be from the external storage like SAN. The combination of directly attached storage and external storage can also be used.
 
-- Physical server
-  - Internal SSD and HDD
-  - External SSD and HDD
-  - Internal SSD, External HDD
+Here are the possible storage combinations that are supported in both Physical DPM server or Virtual DPM Server scenario.
 
+- Internal SSD and HDD
+- External SSD and HDD
+- Internal SSD, External HDD
 
-- Virtual Server
-  - Hyper-V host presents both virtual SSD and HHD to the Virtual machine
-  - The Physical SSD can be local and the HDD is hosted on SAN or SOFS
 
 > [!NOTE]
 > - For DPM running on virtual machines, configuring tiered storage using Windows Storage Spaces is supported.
-> - Expose the VHDs carved out of physical SSDs & HDDs of required size from the host computer to the VM, and use them as a tiered storage.
+> - Hyper-V host presents both, the virtual SSD and HHD to the Virtual machine.
+> - Virtual SSD should be carved out of physical SSD which could be directly attached to the Hyper-V host or from connected external storage.  
 
 ![Physical server deployment](./media/add-storage/physical-server-deployment.png)
 
 ### Resiliency
 
-DPM supports all the three resiliency types supported by Windows Storage spaces. To configure mirror or parity mode resiliency for tiered volume multiple SSDs are required along with HDDs. When you configure SIMPLE resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
+DPM supports all the three resiliency types supported by Windows Storage spaces. To configure mirror or parity mode resiliency for tiered volume multiple SSDs are required along with HDDs. When you configure simple resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
 
 The below chart highlights some pros and cons of the three types of resiliency, supported by Windows Storage Spaces.
 
 | TYPE | PRO | CON | Min Disks |
 | --- | --- | --- | --- |
-| Simple | - Max disk capacity (100%). <br><br> - Increased throughput. <br><br> - Stripes data across physical disks if applicable. | No resiliency. <br> Data loss guaranteed in case of physical disk failure.| 1 |
-| Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | Reduced capacity (50%). <br>Not supported on Iscsi or FC connected SAN. | 2 or 5 |
-| Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | Reduced capacity, but not as much as mirroring. <br> Not supported on Iscsi or FC connected SAN. Slightly reduced performance. | 3 |
+| Simple | - Max disk capacity (100%). <br><br> - Increased throughput. <br><br> - Stripes data across physical disks if applicable. | - No resiliency. <br><br> - Data loss guaranteed in case of physical disk failure.| 1 |
+| Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | - Reduced capacity (50%). <br><br> - Not supported on Iscsi or FC connected SAN. | 2 or 5 |
+| Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | - Reduced capacity, but not as much as mirroring. <br><br> - Not supported on Iscsi or FC connected SAN.br><br> -  Slightly reduced performance. | 3 |
 
 For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
