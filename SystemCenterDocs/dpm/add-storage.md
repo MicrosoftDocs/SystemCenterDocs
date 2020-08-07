@@ -6,7 +6,7 @@ author: rayne-wiselman
 ms.author: raynew
 ms.prod: system-center
 keywords:
-ms.date: 02/04/2020
+ms.date: 08/07/2020
 title: Add Modern Backup Storage to DPM
 ms.technology: data-protection-manager
 ms.assetid: faebe568-d991-401e-a8ff-5834212f76ce
@@ -181,6 +181,55 @@ Follow the steps in the procedures below to set up MBS with tiered storage. Foll
     > Applicable only if you have migrated your earlier backups in Step 1.
 
 4.  Configure workload-aware storage.
+
+## Prerequisites
+
+The tiered storage is configured using [Windows Storage Spaces](https://docs.microsoft.com/windows-server/storage/storage-spaces/overview). Following are the prerequisites for Windows Storage Spaces.
+
+|Area | Requirement | Notes |
+|---- |--------------|----|
+|Disk bus types|- Serial Attached SCSI (SAS)<br> - Serial Advanced Technology Attachment (SATA) <br> - iSCSI and Fibre Channel Controllers.| When you configure Storage Spaces utilizing iSCSI and Fibre Channel (FC) disk controllers,  only non-resilient virtual disks (simple with any number of columns) are supported.|
+|HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
+
+> [!NOTE]
+> Windows tiering requires the SSD disk size must be 32GB or greater.
+
+For more information on prerequisites for using Storage Spaces on a stand-alone server, see [Prerequisites to use Storage Spaces on a stand-alone server](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
+
+## Supported topology
+
+To configure tiered storage, the storage can be directly attached to the DPM server or it can be from the external storage like SAN. The combination of directly attached storage and external storage can also be used.
+
+- Physical server
+  - Internal SSD and HDD
+  - External SSD and HDD
+  - Internal SSD, External HDD
+
+
+- Virtual Server
+  - Hyper-V host presents both virtual SSD and HHD to the Virtual machine
+  - The Physical SSD can be local and the HDD is hosted on SAN or SOFS
+
+> [!NOTE]
+> - For DPM running on virtual machines, configuring tiered storage using Windows Storage Spaces is supported.
+> - Expose the VHDs carved out of physical SSDs & HDDs of required size from the host computer to the VM, and use them as a tiered storage.
+
+![Physical server deployment](./media/add-storage/physical-server-deployment.png)
+
+### Resiliency
+
+DPM supports all the three resiliency types supported by Windows Storage spaces. To configure mirror or parity mode resiliency for tiered volume multiple SSDs are required along with HDDs. When you configure SIMPLE resiliency type using a single SSD option, there might be data loss if the SSD becomes unavailable.
+
+The below chart highlights some pros and cons of the three types of resiliency, supported by Windows Storage Spaces.
+
+| TYPE | PRO | CON | Min Disks |
+| --- | --- | --- | --- |
+| Simple | - Max disk capacity (100%). <br> - Increased throughput. <br> - Stripes data across physical disks if applicable. | No resiliency. <br> Data loss guaranteed in case of physical disk failure.| 1 |
+| Mirror | - Increased reliability.<br> - Greater data throughput and lower access latency than parity. <br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | Reduced capacity (50%). <br>Not supported on Iscsi or FC connected SAN. | 2 or 5 |
+| Parity | - Stripes data and parity information across physical disks. <br> - Increased reliability. <br> - Increases resiliency through journaling. | Reduced capacity, but not as much as mirroring. <br> Not supported on Iscsi or FC connected SAN. Slightly reduced performance. | 3 |
+
+For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
+
 
 ## Configure DPM Storage
 
