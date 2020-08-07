@@ -208,9 +208,9 @@ To configure tiered storage, the storage can be directly attached to the DPM ser
 
 Here are the possible storage combinations that are supported in both Physical DPM server or Virtual DPM Server scenario.
 
-- Internal SSD and HDD
-- External SSD and HDD
-- Internal SSD, External HDD
+- SSD and HDD directly attached to DPM Server
+- SSD and HDD from external storage
+- SSD directly attached to DPM Server and HDD from external storage
 
 
 > [!NOTE]
@@ -230,7 +230,7 @@ The below chart highlights some pros and cons of the three types of resiliency, 
 | --- | --- | --- | --- |
 | Simple | - Max disk capacity (100%). <br><br> - Increased throughput. <br><br> - Stripes data across physical disks if applicable. | - No resiliency. <br><br> - Data loss guaranteed in case of physical disk failure.| 1 |
 | Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | - Reduced capacity (50%). <br><br> - Not supported on Iscsi or FC connected SAN. | 2 or 5 |
-| Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | - Reduced capacity, but not as much as mirroring. <br><br> - Not supported on Iscsi or FC connected SAN.br><br> -  Slightly reduced performance. | 3 |
+| Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | - Reduced capacity, but not as much as mirroring. <br><br> - Not supported on Iscsi or FC connected SAN.<br><br> -  Slightly reduced performance. | 3 |
 
 For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
