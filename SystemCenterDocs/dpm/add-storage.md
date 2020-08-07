@@ -188,8 +188,8 @@ The tiered storage is configured using [Windows Storage Spaces](https://docs.mic
 
 |Area | Requirement | Notes |
 |---- |--------------|----|
-|Disk bus types|- Serial Attached SCSI (SAS)<br> - Serial Advanced Technology Attachment (SATA) <br> - iSCSI and Fibre Channel Controllers.| When you configure Storage Spaces utilizing iSCSI and Fibre Channel (FC) disk controllers,  only non-resilient virtual disks (simple with any number of columns) are supported.|
-|HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
+|Disk bus types|- Serial Attached SCSI (SAS)<br><br> - Serial Advanced Technology Attachment (SATA) <br><br> - iSCSI and Fibre Channel Controllers.| When you configure Storage Spaces utilizing iSCSI and Fibre Channel (FC) disk controllers,  only non-resilient virtual disks (simple with any number of columns) are supported.|
+|HBA considerations|- Simple host bus adapters (HBAs) that do not support RAID functionality are recommended <br><br> - If RAID-capable, HBAs must be in non-RAID mode with all RAID functionality disabled <br><br> - Adapters must not abstract the physical disks, cache data, or obscure any attached devices. This includes enclosure services that are provided by attached just-a-bunch-of-disks (JBOD) devices.|Storage Spaces is compatible only with HBAs where you can completely disable all RAID functionality.|
 
 > [!NOTE]
 > Windows tiering requires the SSD disk size must be 32GB or greater.
@@ -224,9 +224,9 @@ The below chart highlights some pros and cons of the three types of resiliency, 
 
 | TYPE | PRO | CON | Min Disks |
 | --- | --- | --- | --- |
-| Simple | - Max disk capacity (100%). <br> - Increased throughput. <br> - Stripes data across physical disks if applicable. | No resiliency. <br> Data loss guaranteed in case of physical disk failure.| 1 |
-| Mirror | - Increased reliability.<br> - Greater data throughput and lower access latency than parity. <br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | Reduced capacity (50%). <br>Not supported on Iscsi or FC connected SAN. | 2 or 5 |
-| Parity | - Stripes data and parity information across physical disks. <br> - Increased reliability. <br> - Increases resiliency through journaling. | Reduced capacity, but not as much as mirroring. <br> Not supported on Iscsi or FC connected SAN. Slightly reduced performance. | 3 |
+| Simple | - Max disk capacity (100%). <br><br> - Increased throughput. <br><br> - Stripes data across physical disks if applicable. | No resiliency. <br> Data loss guaranteed in case of physical disk failure.| 1 |
+| Mirror | - Increased reliability.<br><br> - Greater data throughput and lower access latency than parity. <br><br> - Stripes the data across multiple physical drives. Can be configured for 2 or 3 copies of data. | Reduced capacity (50%). <br>Not supported on Iscsi or FC connected SAN. | 2 or 5 |
+| Parity | - Stripes data and parity information across physical disks. <br><br> - Increased reliability. <br><br> - Increases resiliency through journaling. | Reduced capacity, but not as much as mirroring. <br> Not supported on Iscsi or FC connected SAN. Slightly reduced performance. | 3 |
 
 For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
