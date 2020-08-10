@@ -171,22 +171,7 @@ Once you configure tiered storage, the ReFs file system has the intelligence to 
 >- You cannot attach locally created VHD (VHDX) files, and use them as storage on a physical DPM server. Make sure you are running DPM 2019 or later deployed on a VM running on Windows Server 2016 or later.  
 > - When deploying DPM in a virtual machine, DPM 2019 can be deployed in a VM running on Windows Server 2016 or Windows Server 2019. For best performance we strongly recommend DPM 2019 installed on Windows 2019 with the latest Windows update installed.  
 
-Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
 
-1. Configure DPM storage.
-    > [!NOTE]
-    > Migrate your current backups to a temporary volume using [Volume Migration](#migrate-data-to-newly-created-volumes), in case you wish to modify your existing storage to tiered storage.
-
-    - Create a storage pool.
-    - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
-    - Create tiered/simple volumes on the virtual disk.
-
-2.  Add the volumes to DPM.
-3.  Migrate your data back to the newly created volumes using Volume Migration performed in Step 1.
-    > [!NOTE]
-    > Applicable only if you have migrated your earlier backups in Step 1.
-
-4.  Configure workload-aware storage.
 
 ## Prerequisites
 
@@ -234,6 +219,22 @@ The below chart highlights some pros and cons of the three types of resiliency, 
 
 For more information to help plan for the number of physical disks and the desired resiliency type for a stand-alone server deployment, use the guidelines documented [here](https://docs.microsoft.com/windows-server/storage/storage-spaces/deploy-standalone-storage-spaces#prerequisites).
 
+Follow the steps in the procedures below to set up MBS with tiered storage. Follow the procedures in sequence, as listed below.
+
+1. Configure DPM storage.
+    > [!NOTE]
+    > Migrate your current backups to a temporary volume using [Volume Migration](#migrate-data-to-newly-created-volumes), in case you wish to modify your existing storage to tiered storage.
+
+    - Create a storage pool.
+    - Create a virtual disk from the storage pool, with layout set to Simple. You can then add additional disks, or extend the virtual disk.
+    - Create tiered/simple volumes on the virtual disk.
+
+2.  Add the volumes to DPM.
+3.  Migrate your data back to the newly created volumes using Volume Migration performed in Step 1.
+    > [!NOTE]
+    > Applicable only if you have migrated your earlier backups in Step 1.
+
+4.  Configure workload-aware storage.
 
 ## Configure DPM Storage
 
