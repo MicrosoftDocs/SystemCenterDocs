@@ -18,7 +18,7 @@ The following sections summarize the release notes for Operations Manager 2016 a
 ## SharePoint integration with Operations Manager has to be recreated
 **Description:** While using SharePoint to view Operations Manager data, the existing Web Console Dashboard URLs provided will not work and these Web parts have to be recreated with the  steps below.
 
-**Workaround:** Perform the following steps to set up SharePoint to view Operations manager data:
+**Workaround:** Perform the following steps to set up SharePoint to view Operations Manager data:
 1.	Create a new page on SharePoint in which you want to display the Dashboard.
 2.	Open the page and click edit and insert a new Web Part.
 3.	In Web Part, under categories select “Media and Content” and under that select “Page Viewer” and click add.
@@ -111,7 +111,7 @@ System Center Operations Manager management server is not affected.
 
 ## Telemetry data may be erroneously sent when the "Usage and Connectivity Data" setting is set to "False"
 
-**Description:** If two operators have Operations Manager consoles open and one sets the Usage and Connectivity Data setting to "Do not send data" data may continue to flow to Microsoft until the second user closes and reopens their instance of the Operations manager console.
+**Description:** If two operators have Operations Manager consoles open and one sets the Usage and Connectivity Data setting to "Do not send data" data may continue to flow to Microsoft until the second user closes and reopens their instance of the Operations Manager console.
 
 **Workaround:** Restart all Operations Manager console sessions after making changes to the Usage and Connectivity setting.
 
