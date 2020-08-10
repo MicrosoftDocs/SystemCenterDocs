@@ -295,9 +295,9 @@ For problems fixed in VMM 2019 UR2, and installation instructions for UR2, [see 
 
 ## Compute
 
-### Support for Windows 2012 R2 hosts
+### Support for Windows Server 2012 R2 hosts
 
-VMM 2019 UR2 supports windows 2012 R2 hosts. For more information about the supported hosts, see [System requirements](../vmm/system-requirements.md#servers-in-the-vmm-fabric).
+VMM 2019 UR2 supports windows server 2012 R2 hosts. For more information about the supported hosts, see [System requirements](../vmm/system-requirements.md#servers-in-the-vmm-fabric).
 
 ### Support for ESXi 6.7 hosts
 
