@@ -7,7 +7,6 @@ author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
 ms.date: 01/23/2018
-title: Service Manager
 ms.technology: service-manager
 ---
 
