@@ -62,7 +62,7 @@ For more information on how to run and save a report, see [How to Run, Save, and
 
 ## How to Email scheduled reports
 
-The report server e-mail delivery extension is not configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For additional  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](https://technet.microsoft.com/library/ms159155%28v=sql.120%29.aspx).
+The report server e-mail delivery extension is not configured by default. You must use the Reporting Services Configuration Manager to minimally configure the extension.  For additional  information on how to configure SQL Server Reporting Services for e-mail delivery, see [Configure a Report Server for E-Mail Delivery (SSRS Configuration Manager)](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager).
 
 
 ### Configure email settings in the SQL Server Report Server  
