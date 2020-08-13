@@ -104,6 +104,8 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 
 ::: moniker range="<sc-dpm-2019"
 
+## DPM server
+
 |Requirement|Details|
 |-----------|-------|
 |Operating System|Windows Server 2016, Datacenter, and Standard editions<br/>Windows Server 2012 R2, Datacenter, and Standard editions |
