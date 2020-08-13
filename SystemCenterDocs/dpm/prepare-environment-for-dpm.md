@@ -97,7 +97,7 @@ DPM 2019 | - SQL Server 2019 as detailed [here](https://support.microsoft.com/li
 |Requirement|Details|
 |-----------|-------|
 |Operating System|Windows Server 2019, Datacenter, and Standard editions (Windows Server Core 2019 is supported)<br/> Windows Server 2016, Datacenter, and Standard editions|
-|Installation prerequisites|Microsoft .NET Framework 4.5 or later <br/>Microsoft .NET Framework 4.0<br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (Need to be installed explicitly if you SQL Server is on remote server)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
+|Installation prerequisites|Microsoft .NET Framework 4.5 or later <br/> Windows Installer 4.5 or later versions<br/> Windows PowerShell 3.0<br/> Windows Single Instance Store (SIS)<br/> Microsoft Application Error Reporting<br/> SQL management tools (install explicitly if your SQL Server is on remote server)<br/><br/> Setup automatically installs the prerequisites if they aren't already installed.|
 |Limitations|You can install DPM on the operation system volume or on a different volume.<br/> DPM is designed to run on a dedicated, single-purpose server. Don't install DPM on:<br/> - a server running Application Server role<br/> - An Operations Manager Management server<br/> - A server running Exchange<br/> - A server running on a cluster node<br/> DPM isn't supported on the Turkish language version of any of the supported Windows Server versions.|
 
 ::: moniker-end
