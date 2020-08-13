@@ -44,7 +44,7 @@ This article provides the system requirements and steps to install the Orchestra
 
 #### To install the Orchestrator Integration Toolkit  
 
-1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=39622), and then run the installer. The welcome page displays.  
+1.  Download System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe from the [Microsoft download center](https://www.microsoft.com/download), and then run the installer. The welcome page displays.  
 
 2.  Click **Next**. The License Agreement page displays. To continue, you must select the checkbox next to **I accept the terms in the License Agreement**, then click **Next**.  
 

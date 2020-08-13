@@ -24,7 +24,7 @@ With the release of Nano Server you can  monitor the basic operations of the Ser
 - Domain Name System (DNS) server
 - Internet Information Services (IIS)
   
-You can download these management packs for Nano Server from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=48256).  
+You can download these management packs for Nano Server from the [Microsoft Download Center](https://www.microsoft.com/download).  
 
 Monitoring a Nano Server installation is similar to monitoring any other installation of Windows Server, however, there are some key differences in how you install the agent on a Nano Server.
 
