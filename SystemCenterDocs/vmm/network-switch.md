@@ -5,7 +5,7 @@ description: This article describes how to create logical switches in the VMM fa
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 07/24/2018
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
