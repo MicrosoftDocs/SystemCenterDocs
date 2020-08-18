@@ -91,16 +91,8 @@ After the cluster is provisioned and managed in the VMM fabric, you need to set 
 >This feature is applicable for VMM 2019 UR1. Configuration of DCB settings is an optional step to achieve high performance during S2D cluster creation workflow. Skip to step 4, if you do not wish to configure DCB settings.
 
 ### Recommendations
-- If you have vNICs deployed, for optimal performance, we recommend to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually override the assignment using the following PowerShell cmdlets:
+- If you have vNICs deployed, for optimal performance, we recommend to map all your vNICs with the corresponding pNICs. Affinities between vNIC and pNIC are set randomly by the operating system, and there could be scenarios where multiple vNICs are mapped to the same pNIC. To avoid such scenarios, we recommend you to manually set affinity between vNIC and pNIC by following the steps listed [here](hyper-v-network.md#set-affinity-between-vnics-and-pnics).
 
-    >[!NOTE]
-    >These are Windows Server cmdlets and are currently not supported in VMM.
-
-    ```
-    PS> Set-VMNetworkAdapterTeamMapping -ManagementOS -VMNetworkAdapterName SMB1 -PhysicalNetAdapterName NIC1
-    PS> Set-VMNetworkAdapterTeamMapping -ManagementOS -VMNetworkAdapterName SMB2 -PhysicalNetAdapterName NIC2
-
-    ```
 
 - When you create a network adapter port profile, we recommend you to allow **IEEE priority**. [Learn more](network-port-profile.md#create-a-virtual-network-adapter-port-profile). You can also set the IEEE Priority by using the following PowerShell commands:
 
