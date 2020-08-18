@@ -35,6 +35,9 @@ Before you deploy DPM to protect Exchange 2013 and Exchange 2016, verify the dep
 
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
 
+  > [!NOTE]
+  > The *Eseutil* is not forward or backward compatible. If you protect two different versions of Exchange Server database using single DPM server the integrity check will work only with the compatible version of *Eseutil*, and it will fail for all other Exchange Server version. To avoid this, we recommend to either use separate DPM server for protecting each version of Exchange Server with respective *Eseutil* version installed on the DPM server. If that is not feasible, you need to turn on the integrity check for only one version of Exchange Server databases with respective version of *Eseutil*.
+
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
 -  To protect an Exchange 2013 and Exchange 2016 Database Availability Group (DAG) node, install the DPM protection agent on the node. Note that you can protect different DAG nodes from different DPM servers, only one node can be protected by one DPM server only.
@@ -315,6 +318,11 @@ Before you deploy DPM to protect Exchange 2016 and Exchange 2019, verify the dep
     2.  Type the fsutil command as follows to create a hard link for eseutil.exe: `fsutil hardlink create <link> <target>`
 
         For example, in a typical installation type: `fsutil hardlink create "c:\program files\microsoft\dpm\bin\eseutil.exe" "c:\program files\microsoft\Exchange\bin\eseutil.exe"`
+
+   > [!NOTE]
+   > The *Eseutil* is not forward or backward compatible. If you protect two different versions of Exchange Server database using single DPM server the integrity check will work only with the compatible version of *Eseutil*, and it will fail for all other Exchange Server version.
+   To avoid this, we recommend to either use separate DPM server for protecting each version of Exchange Server with respective *Eseutil* version installed on the DPM server. If that is not feasible, you need to turn on the integrity check for only one version of Exchange Server databases with respective version of *Eseutil*. 
+
 
 -  Install the latest [Visual C++ Redistributable for Visual Studio 2012 Update](https://www.microsoft.com/download/details.aspx?id=30679).
 
