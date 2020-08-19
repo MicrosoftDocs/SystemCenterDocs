@@ -22,11 +22,15 @@ This article details the new features supported in System Center - Data Protecti
 
 ::: moniker range="sc-dpm-1807"
 
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
 DPM 1807 is the latest release in the System Center Semi Annual Channel (SAC). You can update to System Center Data Protection Manager (DPM) version 1807 only from DPM 1801. If you're upgrading to DPM 1807, see the [Release Notes for 1807](dpm-release-notes.md#dpm-1807-release-notes).
 
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1801"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
 
 System Center DPM 1801 provides the following new features:
 

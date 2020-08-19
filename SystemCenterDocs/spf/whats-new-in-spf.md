@@ -22,11 +22,14 @@ This article details the new features supported in System Center 2019 - Service 
 
 ::: moniker range="sc-spf-1807"
 
+[!INCLUDE [eos-notes-service-provide-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
 No new features are introduced with System Center 1807 - Service Provider Foundation (SPF).
 
 ::: moniker-end
 
 ::: moniker range="sc-spf-1801"
+
+[!INCLUDE [eos-notes-service-provider-foundation.md](../includes/eos-notes-service-provider-foundation.md)]
 
 This article details the new features supported in System Center 1801 - Service Provider Foundation (SPF).
 
