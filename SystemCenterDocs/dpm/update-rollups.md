@@ -13,6 +13,12 @@ ms.technology: data-protection-manager
 
 # Deploy and manage update rollups in Data Protection Manager
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 
 This article provides information about how to install and verify update rollups (UR) for System Center - Data Protection Manager (DPM).
 
@@ -76,7 +82,7 @@ Use the following procedure to check if an update rollup is successfully install
 2. Verify that an update entry was created after the update rollup was installed.
 
    For example, the 2019 update rollup 2 was released as 4563392. You should be able to see this detail under **View installed updates**, if you have installed this update rollup and if it was successfully installed.
-   
+
 3. Verify that the binary's version has the correct build number. 
 
 4. See the [list of build numbers for DPM](release-build-versions.md) to check the build number for a specific update rollup.

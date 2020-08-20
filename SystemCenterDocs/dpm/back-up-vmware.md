@@ -15,6 +15,12 @@ monikerRange: '>sc-dpm-2016'
 
 # Use DPM to back up and restore VMware virtual machines
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 This article explains how to use Data Protection Manager (DPM) version 1801 and later, to back up virtual machines running on the 5.5, 6.0, 6.5 or 6.7 versions of VMware vCenter and vSphere Hypervisor (ESXi).
 
 ## Supported VMware features

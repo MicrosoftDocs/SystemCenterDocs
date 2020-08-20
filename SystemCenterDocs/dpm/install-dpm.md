@@ -12,6 +12,12 @@ ms.technology: data-protection-manager
 
 # Get DPM installed
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 Here's what you need to do to set up System Center Data Protection Manager (DPM):
 
 1. Read the [Setup prerequisites](#setup-prerequisites)
