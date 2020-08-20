@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Supported storage arrays
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="<sc-vmm-2019"
 
  Virtualized workloads in System Center - Virtual Machine Manager (VMM) need storage resources that meet capacity and performance requirements. VMM recognizes local and remote storage. It supports storage on block-level storage devices that expose logical unit numbers (LUNs) using fiber channel, iSCSCI, and SAS connections, and network file shares.
