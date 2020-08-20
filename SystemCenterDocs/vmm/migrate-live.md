@@ -5,7 +5,7 @@ description: This article describes how to run a live migration in the VMM fabri
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
-ms.date: 11/07/2017
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: system-center
 ms.technology: virtual-machine-manager
@@ -35,7 +35,9 @@ Migrate a virtual machine from one stand-alone Hyper-V host to another stand-alo
 
 ## Migrate a VM between clusters
 
-Migrate a VM between clusters. Note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration between clusters, you should use SMB 3.0 file shares as the storage location. Because the storage does not have to be migrated, the time in which high availability status cannot be guaranteed is very short.
+### Live migration with shared storage:
+
+When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. Because the storage does not have to be migrated, the time in which high availability status cannot be guaranteed is very short.
 
 1.  In **VMs and Services** > **All Hosts**, click the cluster node from which you want to migrate.
 2.  In **VMs**, click the running VM that you want to migrate. Start the machine if it's not running.
@@ -44,6 +46,24 @@ Migrate a VM between clusters. Note that the VM temporarily loses its high avail
 5.  Click a node on a different cluster, and then click **Next**.
 6.  In **Summary**, click **Move**. To track the job status, open the **Jobs** workspace.
 7. To verify that the virtual machine was migrated, check the **VMs** list on the destination node to make sure the VM is running.
+
+### Live migration with no shared infrastructure
+
+When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. For live migration with no shared infrastructure, you must use two different SMB 3.0 shares. First, synchronize the source and destination virtual hard disks completely, then initiate the live migration for the virtual machine. [Read more](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831435(v=ws.11)) about virtual machine storage migration.
+
+Follow these steps:
+
+1.  In **VMs and Services** > **All Hosts**, click the cluster node from which you want to migrate.
+2.  In **VMs**, click the running VM that you want to migrate. Start the machine if it's not running.
+3.  In **Virtual Machine**, click **Migrate Virtual Machine** to start the Migrate Virtual Machine Wizard.
+     >[!NOTE]
+     > The Live (VSM) transfer type is available for any destination cluster nodes that are configured to connect to a different SMB 3.0 file share from the one on which the VM was originally created.
+
+4.  Click a node on a different cluster, and then click **Next**.
+5.  In **Summary**, click **Move**. To track the job status, open the **Jobs** workspace.
+6.  To verify that the virtual machine was migrated, check the **VMs** list on the destination node to make sure the VM is running.
+
+
 
 ## Migrate storage between two locations on a standalone host
 
