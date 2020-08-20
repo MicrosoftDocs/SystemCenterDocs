@@ -24,6 +24,8 @@ This article provides the upgrade information for System Center 2019 - Data Prot
 
 ::: moniker range="sc-dpm-1807"
 
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
 This article provides the upgrade information for System Center 1807 - Data Protection Manager (DPM).
 
 [!INCLUDE [upgrade-to-dpm-1807.md](../includes/upgrade-to-dpm-1807.md)]
@@ -31,6 +33,8 @@ This article provides the upgrade information for System Center 1807 - Data Prot
 ::: moniker-end
 
 ::: moniker range="sc-dpm-1801"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
 
 This article provides the upgrade information for System Center 1801 - Data Protection Manager (DPM).
 
