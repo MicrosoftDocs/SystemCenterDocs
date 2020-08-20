@@ -31,6 +31,8 @@ This article details the system requirements for System Center 2016 - Operations
 
 ::: moniker range="sc-om-1801"
 
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
 This article details the system requirements for System Center 1801 - Operations Manager.
 
 [!INCLUDE [plan-system-requriements.md](../includes/plan-system-requirements.md)]
@@ -38,6 +40,8 @@ This article details the system requirements for System Center 1801 - Operations
 ::: moniker-end
 
 ::: moniker range="sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
 
 This article details the system requirements for System Center 1807 - Operations Manager.
 

@@ -14,6 +14,12 @@ ms.topic: article
 
 # Select a management pack file
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 When you create any monitoring in the Operations console, you have to specify a management pack file for the elements that you are creating. This topic describes a basic strategy that you can follow and provides additional details to help you understand the logic of the recommended strategy.
 
 ## General strategy

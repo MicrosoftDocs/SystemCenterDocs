@@ -14,15 +14,21 @@ ms.topic: article
 
 # User Roles for Application Performance Monitoring
 
- 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
+
 ## .NET Application Performance Monitoring tasks and user roles  
 
 This table shows the System Center Operations Manager .NET Application Performance Monitoring tasks and the user roles with their permissions.  
-  
+
 Legend:  
-  
+
 -   Yes = Can always use the feature  
-  
+
 -   No = Cannot use the feature unless the user also belongs to a group that grants access to functionality.  
 
 
@@ -35,4 +41,3 @@ Legend:
 
 > [!NOTE]  
 > The Application Monitoring Operator role and Report Operator role are both required to access Application Advisor.  
-  

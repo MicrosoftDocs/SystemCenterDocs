@@ -13,6 +13,13 @@ ms.assetid: 69f2c1e7-4732-49f0-8643-4d95bdbb144c
 ---
 
 # Working with sensitive data for .NET applications
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Here are some ways to work with sensitive data and .NET Application Performance Monitoring in System Center - Operations Manager.  
 
 ## Masking sensitive data for .NET applications  

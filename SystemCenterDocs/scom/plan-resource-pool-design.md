@@ -14,6 +14,12 @@ ms.topic: article
 
 # Resource pool design considerations
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 A Resource Pool is a logical grouping of management servers and/or gateway servers used to distribute work among themselves and take over work from a failed member.  In other words, they provide high availability and scalability for workflows.  When designing a management group, considerations must be made for monitoring of network devices, Linux/UNIX systems, and other workloads that are designed to take advantage of a resource pool.  
 
 ## Overview
