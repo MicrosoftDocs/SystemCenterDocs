@@ -14,11 +14,6 @@ ms.technology: virtual-machine-manager
 
 # Create Run As accounts in VMM
 
-::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
-
-[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
-
-::: moniker-end
 
 This article describes how to create and manage Run As accounts in System Center - Virtual Machine Manager (VMM).
 
