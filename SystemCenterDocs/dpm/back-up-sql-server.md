@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Back up SQL Server with DPM
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 System Center Data Protection Manager (DPM) provides backup and recovery for SQL Server databases. In addition to backing up SQL Server databases you can run a system backup or full bare-metal backup of the SQL Server computer. Here's what DPM can protect:
 
 -   A standalone SQL Server instance
