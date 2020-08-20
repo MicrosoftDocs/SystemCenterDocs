@@ -12,7 +12,11 @@ ms.technology: virtual-machine-manager
 ---
 # Deploy SQL Server for VMM high availability
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes the steps for deploying a highly available SQL Server database for System Center - Virtual Machine Manager (VMM). You set up a SQL Server cluster, configure the SQL Server VMM database with Always On Availability Groups.
 

@@ -14,7 +14,11 @@ ms.technology: virtual-machine-manager
 
 # Add Windows servers as Hyper-V hosts or clusters in the VMM compute fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Read this article to learn about adding an existing Windows server as a Hyper-V host server or cluster to the System Center - Virtual Machine Manager (VMM) fabric, and configuring the host and cluster properties.
 

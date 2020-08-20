@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Create a guest cluster from a VMM service template
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Use this article if you want to create a guest failover cluster using a System Center - Virtual Machine Manager (VMM) service template.
 
