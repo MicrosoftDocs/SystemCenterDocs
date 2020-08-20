@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Manage VMM cloud settings
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article describes how to manage System Center - Virtual Machine Manager (VMM) cloud settings.
 
 ## Manage cloud capacity
