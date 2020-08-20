@@ -17,6 +17,12 @@ ms.assetid: 9140312b-4d0b-4f22-a466-85887485e066
 
 # Customize and author forms with the Service Manager Authoring Tool
 
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
+
 
 This article provides guidelines about how to customize and author forms with the Service Manager Authoring Tool and it describes how to accomplish common authoring tasks.
 
