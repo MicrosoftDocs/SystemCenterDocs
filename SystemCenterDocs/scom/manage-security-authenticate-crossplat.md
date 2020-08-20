@@ -14,6 +14,12 @@ ms.topic: article
 
 # Accessing UNIX and Linux computers in Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 In System Center - Operations Manager, the management server uses two protocols to communicate with the UNIX or Linux computer:  
 
 -   Secure Shell (SSH)  

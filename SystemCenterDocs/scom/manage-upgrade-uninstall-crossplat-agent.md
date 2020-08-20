@@ -14,6 +14,12 @@ ms.topic: article
 
 # Upgrading and uninstalling agents on UNIX and Linux computers
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This topic describes how to upgrade and uninstall agents on UNIX and Linux computers, using the **UNIX/Linux Agent Upgrade Wizard** and the **UNIX/Linux Agent Uninstall Wizard**. These wizards are similar in how you select the target computers and provide credentials. Both wizards require privileged credentials on the UNIX or Linux computers to complete their tasks, for more information see [Planning Security Credentials for Accessing Unix and Linux Computers](plan-security-crossplat-credentials.md).
 
 ## Upgrading agents
@@ -77,6 +83,3 @@ You can uninstall an agent from the targeted computer by using the **UNIX/Linux 
 - To learn how to configure object discovery rules and disable discovery of a specific object, see [Applying Overrides to Object Discoveries](~/scom/manage-apply-overrides-object-discovery.md).
 
 - Review [Manually Uninstalling Agents from UNIX and Linux Computers](manage-uninstall-crossplat-agent.md) to understand what options and steps need to be performed to properly uninstall the agent from your UNIX and Linux computers.
-
-
-

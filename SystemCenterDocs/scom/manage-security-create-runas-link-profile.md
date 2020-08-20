@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to create a Run As account and associate with a Run As profile
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This procedure describes how you create a Run As Account by using a set of Windows credentials as an example. Then it shows you how to edit the properties of the Run As Account to modify the security level and distribution of the credentials. You use this same procedure for all other account types. Once you are completed creating the Run As account, you will associate it with a Run As Profile.  
 
 The credentials that you provide in a Run As Account are used to run tasks, rules, monitors and discoveries as defined by the management pack that they are in. The management pack guide has the settings that you need for configuring the Run As Account and the Run As Profile.
@@ -36,7 +42,7 @@ Both distribution and targeting of Run As accounts must be correctly configured 
 
     a. Select **Windows** in the **Run As Account** type: list.
 
-    b. Type a display name in the **Display Name** text box. 
+    b. Type a display name in the **Display Name** text box.
 
     c. Optionally, type a description in the **Description** box.
 
@@ -63,11 +69,11 @@ Both distribution and targeting of Run As accounts must be correctly configured 
 
 4. On the **Run As Account Properties** page, you can edit values on the **General Properties**, **Credentials**, or the **Distribution** tabs. In this case, select the **Distribution** tab.
 
-5. On the **Distribution** tab, in the Selected computers: area, click **Add** to open the **Computer Search** tool. 
+5. On the **Distribution** tab, in the Selected computers: area, click **Add** to open the **Computer Search** tool.
 
 6. On the **Computer Search** page, click the Option: list and select one of the following options:
 
-    a. **Search by computer name (Default)**, then type in the computer name in the **Filter by: (Optional)** box. 
+    a. **Search by computer name (Default)**, then type in the computer name in the **Filter by: (Optional)** box.
 
     b. **Show suggested computers**, if you have already associated the Run As Account object with a Run As profile, a list of discovered computers that host the monitored service are presented here.
 
@@ -90,7 +96,7 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
 2. In the Operations console, click **Administration**.
 
-3. In the **Administration** workspace, click **Profiles**. 
+3. In the **Administration** workspace, click **Profiles**.
 
 4. In the results pane, double-click the Run As profile that you want to configure. The **Run As Profile Wizard** opens.
 
@@ -102,11 +108,11 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
 8. Select **All targeted objects** or **A selected class, group, or object**. If you select **A selected class, group, or object**, click **Select**, and then locate and select the class, group, or object that you want the Run As account to be used for. For more information, see [Distribution and Targeting for Run As Accounts and Profiles](manage-security-dist-target-runas-profiles.md).
 
-9. Click **OK** to close the **Add a Run As Account** window. 
+9. Click **OK** to close the **Add a Run As Account** window.
 
 10. On the **Run As Accounts** page, click **Save**.
 
-11. On the **Run As Profile Wizard Completion** page, if every account you associated is configured for **Less Secure distribution**, click **Close**. If you associated a Run As account that is configured for **More Secure distribution**, you will see the Run As account listed as a link. Click the link to configure credential distribution, using the following procedure. 
+11. On the **Run As Profile Wizard Completion** page, if every account you associated is configured for **Less Secure distribution**, click **Close**. If you associated a Run As account that is configured for **More Secure distribution**, you will see the Run As account listed as a link. Click the link to configure credential distribution, using the following procedure.
 
 
 ### Configure distribution of a Run As account
@@ -124,11 +130,11 @@ This procedure can be used for creating and configuring a new Run As profile, or
 
     c. Click **Search**. The result set is returned in the **Available items** box.
 
-    d. Select the computers you want from the result set, and click **Add**. This adds the selected computers to the **Selected objects** box. 
+    d. Select the computers you want from the result set, and click **Add**. This adds the selected computers to the **Selected objects** box.
 
     e. Click **OK**.
 
-3. Click **OK**. 
+3. Click **OK**.
 
 
 ## Next steps
