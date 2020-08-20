@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Set up an SDN network controller in the VMM fabric
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 This article describes how to set up a Software Defined Networking (SDN) network controller in the System Center - Virtual Machine Manager (VMM) fabric.
 
 The SDN network controller is a scalable and highly available server role that enables you to automate network infrastructure configuration instead of performing manual network device configuration. [Learn more](https://technet.microsoft.com/windows-server-docs/networking/sdn/technologies/network-controller/network-controller).
