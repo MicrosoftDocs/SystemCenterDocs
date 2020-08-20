@@ -14,6 +14,12 @@ ms.author: raynew
 
 # Deduplicate DPM storage
 
+::: moniker range=">= sc-dpm-1801 <= sc-dpm-1807"
+
+[!INCLUDE [eos-notes-data-protection-manager.md](../includes/eos-notes-data-protection-manager.md)]
+
+::: moniker-end
+
 System Center Data Protection Manager (DPM) can use data deduplication.
 
 Data deduplication \(dedup\) finds and removes duplicated data in a volume  while ensuring data remains correct and complete.   Learn more about [deduplication planning](https://go.microsoft.com/fwlink/?LinkId=522614).
