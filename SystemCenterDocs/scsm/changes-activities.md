@@ -1,5 +1,3 @@
-
-
 ---
 title: Manage changes and activities
 description: Provides an example scenario and details about how to managing changes and activities in Service Manager.
