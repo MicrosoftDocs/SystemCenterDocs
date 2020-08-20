@@ -69,9 +69,9 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 3.  In **Select Group Members** expand the VMM machine and select **VMM Express Writer**.
 
-4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
+4.  In **Select data protection method**  specify how you want to handle short and long-term backup. Short-term back-up is always to disk first, with the option of backing up from the disk to the Azure cloud with Azure backup (for short or long-term). As an alternative to long-term backup to the cloud you can also configure long-term back up to a standalone tape device or tape library connected to the DPM server.
 
-5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back up interval you can check Just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
+5.  In **Select short-term goals** specify how you want to back up to short-term storage on disk.   In Retention range you specify how long you want to keep the data on disk. In **Synchronization frequency** you specify how often you want to run an incremental backup to disk. If you don't want to set a back-up interval you can check just before  a recovery point so that DPM will run an express full backup just before each recovery point is scheduled.
 
 6.  If you want to store data on tape for long-term storage in **Specify long-term goals** indicate how long you want to keep tape data (1-99 years). In Frequency of backup specify how often backups to tape should run. The frequency is based on the retention range you've specified:
 
@@ -93,7 +93,7 @@ Before setting up a DPM backup for VMM using VMM Express Writer note the followi
 
 10. If you've selected to back up to the cloud with Azure Backup, on the **Specify online protection data** page make sure the workloads you want to back up to Azure are selected.
 
-11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back up runs a data recovery point is created in Azure from the copy of the backed up data stored on the DPM disk.
+11. In **Specify online backup schedule** specify how often incremental backups to Azure should occur. You can schedule backups to run every day/week/month/year and the time/date at which they should run. Backups can occur up to twice a day. Each time a back-up runs a data recovery point is created in Azure from the copy of the backed-up data stored on the DPM disk.
 
 12. In **Specify online retention policy** you can specify how the recovery points created from the daily/weekly/monthly/yearly backups are retained in Azure.
 
