@@ -13,6 +13,13 @@ ms.assetid:
 ---
 
 # Operations Manager Monitoring Scenarios
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager supports a variety of methods to actively monitor different services and the components and devices that support them.  This article summarizes each scenario supported with a link to the detailed supporting documentation describing how to plan and configure monitoring each scenario.  
 
 ## Operations Manager monitoring scenarios topics
