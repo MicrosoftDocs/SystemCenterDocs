@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Deploy and manage update rollups in VMM
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article provides information about how to install, verify, and remove update rollups for System Center Virtual Machine Manager (VMM).
 
