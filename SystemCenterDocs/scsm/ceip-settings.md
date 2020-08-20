@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 4bb2487c-5a91-44d2-9a85-f4112aff40ac
 ---
 
 # Configure your preference for sharing Service Manager diagnostic and usage data
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 During setup in Service Manager, on the **Diagnostic and usage data** page, for sharing your Service Manager diagnostic and usage data with Microsoft. This feature is on by default. Administrators can turn off this feature anytime by using the choice options in Service Manager Console and Self Service Portal’s Web.config file (may also require service restart)
 
