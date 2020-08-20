@@ -14,6 +14,12 @@ ms.topic: article
 
 # Pre-Upgrade tasks when upgrading to System Center Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Perform the following pre-upgrade tasks in the order presented before you begin the upgrade process.
 
 1. Review the Operations Manager Event Logs
@@ -161,7 +167,7 @@ To ensure the agents can queue data during the upgrade, update the following reg
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlsSet\Services\HealthService\Parameters\Management Groups<ManagementGroupName>\maximumQueueSizeKb​
 
-The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying DWORD type registry key. ​Once you have completed the upgrade of the management group, you can reset it to default value. 
+The default value of queue size is 100 MB. It can be increased up to 1500 MB by adding or modifying DWORD type registry key. ​Once you have completed the upgrade of the management group, you can reset it to default value.
 
 ## Next steps
 

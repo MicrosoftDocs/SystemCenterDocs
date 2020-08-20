@@ -14,6 +14,12 @@ ms.topic: article
 
 # Distributed deployment of Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The distributed management group installation will form the foundation of 99 percent of Operations Manager deployments. It allows for the distribution of features and services across multiple servers to allow for scalability. It can include all Operations Manager server roles and supports the monitoring of devices across trust boundaries through the use of the gateway server.
 
 ## System Center - Operations Manager features
@@ -74,8 +80,3 @@ This section of the Deployment Guide contains the following topics:
 -   [How to install the Operations Manager Reporting server](deploy-install-reporting-server.md)
 
 -   [How to deploy a gateway server](deploy-install-gateway-server.md)
-
-
-
-
-

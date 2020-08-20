@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to install an Audit Collection Services (ACS) collector and database
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Use the following procedures to install an Audit Collection Services (ACS) collector and database and to start the service for the ACS collector computer. Both procedures are performed on the computer that is designated as your ACS collector.
 
 ::: moniker range="sc-om-2019"

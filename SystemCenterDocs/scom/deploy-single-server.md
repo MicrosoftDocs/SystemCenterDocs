@@ -14,6 +14,12 @@ ms.topic: article
 
 # Single server deployment of Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The single server management group scenario combines all the management group roles that can coexist onto a single server running as a member server in an Active Directory domain. This instance can be on dedicated hardware or on a virtual computer. You can deploy the Operations console to computers other than the single server, and access the web console  with a browser.
 
 You deploy Operations Manager in a single-server management group when you want to use it for evaluation, testing, and management pack development, usually in a lab, development, or non-production environment.
@@ -99,6 +105,3 @@ For a complete listing of ports used, the direction of the communication, and if
 ## Next steps
 
 - To deploy Operations Manager in a single server management group, see [Walkthrough: Installing Operations Manager on a Single Server](quickstart-install-single-server.md).
-
-
-

@@ -14,6 +14,11 @@ ms.topic: article
 ---
 
 # Install agent and certificate on Linux computers using the command line
+
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+
 This article provides details of the latest version of the Linux agent for System Center Operations Manager 1801 and the process for installing it.
 
 This version of the Linux agent supports [Fluentd](https://www.fluentd.org/), an open source data collector for Linux that collects data from a variety of sources.  The existing OMI based monitoring for currently supported Linux workloads will continue to work without change.

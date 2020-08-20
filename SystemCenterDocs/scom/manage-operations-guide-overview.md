@@ -13,6 +13,13 @@ ms.assetid: c2b63b0a-4c6e-40b3-a75e-2ca514df3bc4
 ---
 
 # Operations Guide for System Center Operations Manager
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Operations Manager, a component of System Center, enables you to monitor services, devices, and operations for many computers in a single console. Operators can gain rapid insight into the state of the IT environment and the IT services running across different systems and workloads by receiving alerts and using numerous views providing insight into health, security, performance, or configuration issues affecting the health of the service.  
 
 The Operations Guide is a comprehensive resource that can be used to understand and use Operations Manager. The Operations Guide covers administrative, monitoring, reporting, and operating tasks typically performed by an administrator or operator. It follows the Operations Manager Deployment Guide in order of use during an Operations Manager implementation project, but does not assume that the administrator or operator participated in the installation of the Operations Manager infrastructure.  

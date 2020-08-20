@@ -14,6 +14,12 @@ ms.topic: article
 
 # Authoring strategies for .NET application monitoring
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Here are some scenarios and settings to change during authoring that can help you receive the monitoring experience and data that is most helpful for you.
 
 ## Monitoring a new application
@@ -26,7 +32,7 @@ Defining a targeted group allows you to limit monitoring to a specific set of se
 
 For large application deployments, you typically do not need to monitor all instances of the application. A representative sample is enough to get the data you need. Using only a representative sample will keep the amount of data collected and stored lower.
 
-## Reduce the "Noise" 
+## Reduce the "Noise"
 
 Increasing the sensitivity threshold allows you to filter out fast-running methods, which reduce overall "noise", or how deep the call stack is going to go, making it easier for you to determine where the problem is. It also reduces network bandwidth usage.
 

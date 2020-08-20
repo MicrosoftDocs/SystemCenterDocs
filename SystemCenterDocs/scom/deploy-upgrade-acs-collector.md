@@ -14,6 +14,12 @@ ms.topic: article
 
 # How to upgrade an ACS Collector
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Perform this procedure to upgrade the Audit Collection Services (ACS) Collector locally, on the ACS collector. During this procedure, the ACS database is also upgraded without any additional steps.
 
 > [!WARNING]

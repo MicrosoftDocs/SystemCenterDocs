@@ -14,6 +14,12 @@ ms.assetid: d143420f-3e65-43f1-a710-0b0e983b57f5
 
 # How to configure and use Active Directory Integration for agent assignment
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager allows you to take advantage of your investment in Active Directory Domain Services (AD DS) by enabling you to use it to assign agent-managed computers to management groups. This topic will help you create and manage the configuration of the container in Active Directory, and agent assignment of management servers agents should report to.
 
 ## Create an Active Directory Domain Services Container for a management group
