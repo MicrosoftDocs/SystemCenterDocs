@@ -34,8 +34,9 @@ Migrate a virtual machine from one stand-alone Hyper-V host to another stand-alo
 
 
 ## Migrate a VM between clusters
+You can migrate a VM between clusters by using shared storage or with no shared infrastructure. See the following sections for detailed information.
 
-### Live migration with shared storage:
+### Live migration with shared storage
 
 When you migrate a VM between clusters, note that the VM temporarily loses its high availability status. Therefore, a host failure during the migration causes the virtual machine to become unavailable. For live migration with shared storage, you must use SMB 3.0 file shares as the storage location. Because the storage does not have to be migrated, the time in which high availability status cannot be guaranteed is very short.
 
