@@ -1,7 +1,7 @@
 ---
 ms.assetid: bed9e382-7a24-48d2-a15c-cb3413756236
 title: Create a guest cluster from a service template
-description: This article provides guidance about creating a guest cluster from a service tempalte
+description: This article provides guidance about creating a guest cluster from a service template
 author: rayne-wiselman
 ms.author: raynew
 manager: carmonm
@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Create a guest cluster from a VMM service template
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 Use this article if you want to create a guest failover cluster using a System Center - Virtual Machine Manager (VMM) service template.
 

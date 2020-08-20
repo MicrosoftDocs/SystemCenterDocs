@@ -15,6 +15,12 @@ ms.assetid:
 
 # Using My Workspace in the Web console
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 With System Center Operations Manager version 1801 and higher, in the new HTML5 Web console you can customize how you view monitoring data for your specific needs differently than previous versions of Operations Manager.  
 
 Using My Workspace allows you to create folders to organize dashboards, add existing views and dashboards from the Monitoring workspace, and create custom dashboards only visible to you in the Web console.    

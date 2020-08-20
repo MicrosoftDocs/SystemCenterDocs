@@ -14,6 +14,12 @@ ms.topic: article
 
 # Operations Manager Planning Guide
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 By deploying System Center Operations Manager in your environment, you can provide your organization with a monitoring service that ensures IT and business service owners are able to effectively monitor and report on the availability and performance metrics of their services across on-premises, service provider, and cloud environments.  After you identify the deployment tasks and current environment for your organization, you can create the Operations Manager deployment strategy that meets your organization’s service operations needs.  
 
 ## About this guide
@@ -29,13 +35,13 @@ The strategies that are presented in this guide are appropriate for many common 
 
 - [System Requirements for Operations Manager](plan-system-requirements.md)
 
-    Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager. 
+    Provides information about the supported operating systems, hardware configurations, software requirements, installation combinations, and other important design planning considerations that are summarized and recommended for Operations Manager.
 
 - [Supported Versions of Linux and UNIX](plan-supported-crossplat-os.md)
 
     Provides the supported and required UNIX and Linux operating systems and package dependencies for Operations Manager.  
 
-- [Review the Cloud Monitoring guide](https://docs.microsoft.com/azure/architecture/cloud-adoption/operations/monitor/) 
+- [Review the Cloud Monitoring guide](https://docs.microsoft.com/azure/architecture/cloud-adoption/operations/monitor/)
 
     Provides information to help you plan your cloud monitoring strategy, which includes monitoring platform considerations and recommendations, in order to  effectively monitor workloads transitioning to Azure.
 
@@ -66,7 +72,3 @@ The strategies that are presented in this guide are appropriate for many common 
 - [Security Design](plan-security-accounts.md)
 
     This section provides you with security-related information as it pertains to the planning of security accounts, roles and privileges required for your deployment of Operations Manager.
-
-
-
-

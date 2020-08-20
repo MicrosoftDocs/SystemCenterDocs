@@ -14,6 +14,12 @@ ms.topic: article
 
 # Post-Upgrade tasks when upgrading to System Center Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 After you have completed the upgrade process, you must perform a number of post-upgrade tasks.
 
 ## Post-upgrade tasks

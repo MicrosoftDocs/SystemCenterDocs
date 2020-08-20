@@ -14,6 +14,12 @@ ms.assetid: eb68582d-fe83-4d79-9017-55673f7f65b9
 
 # How to enable an email notification channel
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 To configure alert notifications for System Center - Operations Manager, your first task is to enable a notification channel. This topic describes how to configure a channel that will send alert notifications to subscribers from an email server either within the domain of the organization or external email authentication.  
 
 Before you begin, gather the following information:  

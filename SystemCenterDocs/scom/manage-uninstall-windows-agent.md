@@ -14,6 +14,12 @@ ms.topic: article
 
 # Uninstall Agent from Windows-based Computers
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 Use one of the following procedures to uninstall an System Center Operations Manager agent from an agent-managed computer.
 
 ## Uninstall the agent by using the Operations console

@@ -14,6 +14,12 @@ ms.assetid: b23cc152-e396-4499-bf7c-cf208bf3741f
 
 # How to discover network devices in Operations Manager
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center Operations Manager performs network discovery by running discovery rules that you create. Each time the rule runs, it will attempt to find new devices within its definition or changes to devices that were previously discovered.
 
 > [!NOTE]

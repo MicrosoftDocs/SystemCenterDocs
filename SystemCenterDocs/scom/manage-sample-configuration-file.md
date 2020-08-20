@@ -14,6 +14,13 @@ ms.topic: article
 ---
 
 # Sample configuration file for collecting Linux log files
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This article details a sample configuration for collecting log files from Linux with System Center Operations Manager version 1801 and later.
 
 ## Sample configuration

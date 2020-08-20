@@ -13,6 +13,12 @@ ms.technology: virtual-machine-manager
 
 # Provision a Hyper-V host or cluster from bare metal computers
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
+
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
+
 Use this article to provision a Hyper-V host or cluster from bare metal computers with nothing installed on them, in the System Center - Virtual Machine Manager (VMM) fabric.
 
 In addition to adding existing Windows servers to the fabric as Hyper-V hosts and clusters, VMM can discover physical bare-metal machines, automatically install an operating system, and provision them as Hyper-V server hosts  and clusters.

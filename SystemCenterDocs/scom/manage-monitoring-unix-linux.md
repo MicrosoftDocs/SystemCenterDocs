@@ -14,6 +14,12 @@ ms.assetid: 6afa5807-9393-4fc9-92c2-aa7427d72f2f
 
 # Troubleshooting monitoring of UNIX and Linux computers
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 System Center - Operations Manager provides monitoring of UNIX and Linux computers similar to monitoring of Windows computers. You can monitor health, performance, obtain reports, run tasks, and implement custom monitoring instrumentation.  
 
 You can monitor the following aspects of UNIX and Linux computers:  

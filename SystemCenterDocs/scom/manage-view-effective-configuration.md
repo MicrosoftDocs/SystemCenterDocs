@@ -14,6 +14,13 @@ ms.topic: article
 ---
 
 # How to view the effective configuration of a monitored object
+
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
  In System Center Operations Manager version 1807 and later, the Web console has been enhanced to allow an operator to view the monitoring details for a selected object and show all the rules and monitors that target it.     
 
 From the results, you are able to see the following details:

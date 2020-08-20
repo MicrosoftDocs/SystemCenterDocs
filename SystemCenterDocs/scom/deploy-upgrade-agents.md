@@ -15,6 +15,12 @@ ms.topic: article
 
 # How to upgrade an Operations Manager agent
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 ::: moniker range="sc-om-2019"
 
 Use the following procedures to upgrade an agent running on Windows or Linux to System Center Operations Manager 2019. You should first verify that the agents meet minimum supported configurations. For more information, see [System Requirements for System Center Operations Manager](plan-system-requirements.md).

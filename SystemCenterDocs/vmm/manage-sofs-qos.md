@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Set QoS for storage resources
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes how to set up quality-of-service (QoS) policies, to control IOPS for a scale-out file server (SOFS) in the System Center - Virtual Machine Manager (VMM) fabric.
 

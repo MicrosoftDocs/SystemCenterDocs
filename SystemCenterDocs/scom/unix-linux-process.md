@@ -14,6 +14,12 @@ ms.topic: article
 
 # UNIX or Linux process
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 The _UNIX/Linux Process Monitoring_ template lets you monitor that a particular process installed on an UNIX or Linux computer runs.
 
 ## Scenarios

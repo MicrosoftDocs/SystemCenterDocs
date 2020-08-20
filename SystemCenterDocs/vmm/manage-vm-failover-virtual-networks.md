@@ -13,7 +13,11 @@ ms.technology: virtual-machine-manager
 
 # Configure VM failover between virtual networks
 
+::: moniker range=">= sc-vmm-1801 <= sc-vmm-1807"
 
+[!INCLUDE [eos-notes-virtual-machine-manager.md](../includes/eos-notes-virtual-machine-manager.md)]
+
+::: moniker-end
 
 This article describes how to handle replication and failover of VMs in System Center - Virtual Machine Manager (VMM), between virtual networks when you're not using the Azure Site Recovery service to manage disaster recovery.
 

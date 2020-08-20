@@ -13,6 +13,12 @@ ms.topic: article
 
 # Identifying the computer experiencing a problem
 
+::: moniker range=">= sc-om-1801 <= sc-om-1807"
+
+[!INCLUDE [eos-notes-operations-manager.md](../includes/eos-notes-operations-manager.md)]
+
+::: moniker-end
+
 This topic helps you answer questions such as "I see an alert that says logical disk defragmentation is high. Where is it high?"  
 
 ## How to identify the computer experiencing a problem  
