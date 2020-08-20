@@ -6,13 +6,19 @@ ms.topic: article
 author: JYOTHIRMAISURI
 ms.author: v-jysur
 ms.prod: system-center
-keywords: 
+keywords:
 ms.date: 10/12/2016
 ms.technology: service-manager
 ms.assetid: 399ef0ce-7ebe-4c30-8f8a-d10f475ad49d
 ---
 
 # Configure change and activity management in Service Manager
+
+::: moniker range=">= sc-sm-1801 <= sc-sm-1807"
+
+[!INCLUDE [eos-notes-service-manager.md](../includes/eos-notes-service-manager.md)]
+
+::: moniker-end
 
 As part of your initial configuration of Service Manager, you have to configure settings and workflows for change and activity management. Create a change request template that you can use later when new change requests are submitted.
 
